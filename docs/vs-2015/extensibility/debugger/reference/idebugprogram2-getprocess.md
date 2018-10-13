@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetProcess | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5e40776af6011d612d4af79eca70928b6c39edb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a272e809edcdb564aedc386448338d6d2426e68f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222351"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IDebugProgram2::GetProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getprocess).  
-  
 Rufen Sie den Prozess, den dieses Programm ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  

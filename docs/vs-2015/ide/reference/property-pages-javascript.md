@@ -1,7 +1,7 @@
 ---
 title: Eigenschaftenseiten, JavaScript | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1491c904be7cf44d739add233a05ba5f01b5df1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206829"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaftenseiten, JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/property-pages-javascript).  
-  
   
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.  
   

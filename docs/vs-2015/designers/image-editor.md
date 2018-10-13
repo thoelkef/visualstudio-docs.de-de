@@ -1,7 +1,7 @@
 ---
 title: Bild-Editor | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185769"
 ---
 # <a name="image-editor"></a>Bildbearbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Bildbearbeitung](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Bild-Editor verwenden, um Textur- und Bildressourcen anzuzeigen und zu ändern.  
   
  Sie können in der Bildbearbeitung mit den umfassenden Textur- und Bildformaten arbeiten, die in der Entwicklung von DirectX-Apps verwendet werden. Hierzu gehört die Unterstützung gängiger Bilddateiformate und Farbcodierungen, von Funktionen wie Alphakanäle und MIP-Zuordnung sowie von vielen der hochkomprimierten, hardwarebeschleunigten Texturformate, die DirectX unterstützt.  

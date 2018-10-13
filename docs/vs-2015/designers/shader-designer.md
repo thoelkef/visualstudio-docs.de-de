@@ -1,7 +1,7 @@
 ---
 title: Shader-Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182793"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Shader-Designer](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader-Designer benutzerdefinierte visuelle Effekte, auch als *Shader* bekannt, erstellt, bearbeitet und exportiert werden können.  
   
  Sie können Shader-Designer dazu verwenden, benutzerdefinierte visuelle Effekte für Ihr Spiel oder Ihre App zu erstellen, selbst wenn Sie sich nicht mit der HLSL-Programmierung auskennen. Um einen Shader im Shader-Designer zu erstellen, ordnen Sie ihn als Diagramm an. Das heißt, Sie fügen der Entwurfsoberfläche *Knoten* hinzu, die Daten und Vorgänge darstellen, und stellen dann Verbindungen zwischen ihnen her, um zu definieren, wie die Vorgänge die Daten verarbeiten. An jedem Vorgangsknoten wird eine Vorschau des Effekts bis zu diesem Zeitpunkt bereitgestellt, sodass Sie das Ergebnis visuell darstellen können. Daten fließen über die Knoten in Richtung eines letzten Knotens, der die Ausgabe des Shaders darstellt.  

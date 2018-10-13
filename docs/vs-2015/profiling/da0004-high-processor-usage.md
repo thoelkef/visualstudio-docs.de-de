@@ -1,7 +1,7 @@
 ---
 title: 'DA0004: Hohe Prozessorauslastung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 759ba305335c75591bf975e40f011f31edd1bdb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 681905b5d57991bb647335184a334e82cbec4df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179207"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Hohe Prozessorauslastung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [DA0004: hohe prozessorauslastung](https://docs.microsoft.com/visualstudio/profiling/da0004-high-processor-usage).  
-  
 Regel-Id | DA0004 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Instrumentation Sampling |  

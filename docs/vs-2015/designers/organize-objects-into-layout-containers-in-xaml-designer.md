@@ -1,7 +1,7 @@
 ---
 title: Organisieren von Objekten in Layout-Containern | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219556"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Organisieren von Objekten in Layoutcontainern im XAML-Designer](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekte wie Bilder, Schaltflächen und Videos. Möglicherweise sollen sie in Zeilen und Spalten in einer einzigen Zeile, vertikal oder horizontal oder an festen Positionen anzeigt werden.  
   
  Nachdem Sie die Möglichkeit gehabt haben, darüber nachzudenken, wie die Seite angezeigt werden kann, wählen Sie ein LayoutPanel-Element. Alle Seiten starten mit einem, da Ihre Objekte zu etwas hinzugefügt werden müssen. Standardmäßig ist eine **Raster** aber Sie können es ändern.  
@@ -109,7 +107,7 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
   
 -   [Randbereich](#Border)  
   
--   [Kontextmenü](#Popup)  
+-   [Popup](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

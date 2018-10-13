@@ -1,7 +1,7 @@
 ---
 title: Managed Extensibility Framework im Editor | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c27b710e6d01c6aa378b00ef4c3b40afb12b14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215669"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Managed Extensibility Framework im Editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor).  
-  
 Der Editor wird mit Komponenten des Managed Extensibility Framework (MEF) erstellt. Können Sie Ihre eigenen MEF-Komponenten, um den Editor zu erweitern, erstellen und Ihren Code kann auch Komponenten-Editors nutzen.  
   
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Übersicht über das Managed Extensibility Framework  

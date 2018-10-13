@@ -1,7 +1,7 @@
 ---
 title: Typ der Schnellansicht und den benutzerdefinierten Viewer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201889"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typschnellansicht und benutzerdefinierter Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Typschnellansicht und benutzerdefinierte Viewer](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer).  
-  
 Eine typschnellansicht ist eine Komponente, die einen Teil der Daten in ein sehr spezifisches Format angezeigt. Dieses Format ist vollständig hängt von der Implementierung der Schnellansicht, sei es dem Endbenutzer oder einem Drittanbieter von Schnellansichten.  
   
  Ein benutzerdefinierter Viewer ist der Teil einer benutzerdefinierten ausdrucksauswertung, der ein Datenelement in einem sehr spezifischen Format angezeigt. Dieses Format ist vollständig hängt von der Implementierung der benutzerdefinierten Viewer, was bedeutet, dass das Format hängt von der Implementierung von der ausdrucksauswertung (EE) ist.  

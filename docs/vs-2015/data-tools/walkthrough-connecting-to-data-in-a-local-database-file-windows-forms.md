@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verbinden mit Daten in einer lokalen Datenbankdatei (Windows Forms) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9b2d17c5ed86e37d3c674ef9238702cd8557a90f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71898c88a8d7a1d4a119a7e7a932e295ae12eb34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176162"
 ---
 # <a name="walkthrough-connecting-to-data-in-a-local-database-file-windows-forms"></a>Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in einer lokalen Datenbankdatei (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Sie können Daten aus einer lokalen Datenbankdatei in der Anwendung schnell und 
   
 -   [Hinzufügen von datengebundenen Steuerelementen](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md#BKMK_AddCtrls)  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie Zugriff auf die SampleDatabase.mdf-Datenbank, die Sie erstellen [erstellen Sie eine SQL­Datenbank mithilfe eines Designers](../data-tools/create-a-sql-database-by-using-a-designer.md).  
   
 ##  <a name="BKMK_CreateDataset"></a> Erstellen und Konfigurieren eines Datasets  
