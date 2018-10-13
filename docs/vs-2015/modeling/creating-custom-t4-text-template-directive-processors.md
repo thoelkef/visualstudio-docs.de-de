@@ -1,7 +1,7 @@
 ---
 title: Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Text-Vorlage | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176929"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors).  
-  
 Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und erzeugt eine Textdatei, die als Ausgabe. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und die Engine interagiert mit einer Textvorlagen-Transformationshost und mindestens eine Textvorlage *anweisungsprozessoren* zum Abschließen der der Prozess. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).  
   
- Zum Erstellen eines benutzerdefinierten Direktivenprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
+ Zum Erstellen eines benutzerdefinierten Anweisungsprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
   
  Der Unterschied zwischen diesen beiden besteht darin, die <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementiert die minimale Schnittstelle ist erforderlich, um die Parameter des Benutzers abrufen und zum Generieren des Codes, der die Vorlagendatei für die Ausgabe erzeugt. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementiert das Entwurfsmuster erfordert/bietet. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> verarbeitet zwei spezielle Parameter `requires` und `provides`.  Z. B. ein benutzerdefiniertes anweisungsprozessors akzeptieren einen Dateinamen vom Benutzer, öffnen und Lesen Sie die Datei und klicken Sie dann den Text der Datei in einer Variablen mit dem Namen speichern möglicherweise `fileText`. Eine Unterklasse von der <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> -Klasse kann vom Benutzer einen Dateinamen verwenden, als Wert für die `requires` Parameter und den Namen der Variablen zum Speichern von Text als Wert für die `provides` Parameter. Dieser Prozessor würde öffnen und Lesen Sie die Datei und klicken Sie dann den Text der Datei in der angegebenen Variablen zu speichern.  
   

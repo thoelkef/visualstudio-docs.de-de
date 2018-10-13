@@ -1,7 +1,7 @@
 ---
 title: Content-Definition (Dialogfeld) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c1ef7dfa925f0f658edb981725d2a5dd8847412b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c0fffed6bbb8d9690f96679d910d5ac4a3b631e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176116"
 ---
 # <a name="content-definition-dialog-box"></a>Inhaltsdefinition (Dialogfeld)
 Die **Inhaltsdefinition** Dialogfeld wird verwendet, [!INCLUDE[wfd1](../includes/wfd1-md.md)] so konfigurieren Sie die **Content** Eigenschaften der <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, und <xref:System.ServiceModel.Activities.ReceiveReply> Aktivitäten. [!INCLUDE[crabout](../includes/crabout-md.md)] die Aktivitäts-Designer, die dieses Dialogfeld verwenden, finden Sie unter den [senden](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), und [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) Themen.  

@@ -1,7 +1,7 @@
 ---
 title: Hilfsprogrammknoten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa242e6c2f609c8ac6214fcbd20d210f7c794b77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174420"
 ---
 # <a name="utility-nodes"></a>Hilfsprogrammknoten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hilfsprogrammknoten](https://docs.microsoft.com/visualstudio/designers/utility-nodes).  
-  
 Im Shader-Designer stellen Hilfsprogrammknoten allgemeine, nützliche Shader-Berechnungen dar, die sich den anderen Kategorien nicht eindeutig zuordnen lassen. Einige Hilfsprogrammknoten führen einfache Operationen durch, z.B. Anfügen von Vektoren oder bedingte Auswahl von Ergebnissen, während andere komplexe Vorgänge ausführen, z.B. Lichteinwirkungen entsprechend den gängigen Beleuchtungsmodellen berechnen.  
   
 ## <a name="utility-node-reference"></a>Übersicht über Hilfeprogrammknoten  

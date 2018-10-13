@@ -1,7 +1,7 @@
 ---
 title: MSBuild-Aufgaben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d80e08a198b954e4530e7c39b2741eb955552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176697"
 ---
 # <a name="msbuild-tasks"></a>MSBuild-Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MSBuild-Aufgaben](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks).  
-  
   
 Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von Aktionen auszuführen können. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet dazu *Aufgaben*. Eine Aufgabe ist eine Einheit von ausführbarem Code, der von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet wird, um atomische Buildoperationen auszuführen.  
   

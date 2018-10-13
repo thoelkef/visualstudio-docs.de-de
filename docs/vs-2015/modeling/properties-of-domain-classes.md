@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften von Domänenklassen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d5ea3d5cad378a476c9080cd56143b1600b7b4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9f84290ca8155cb2cf2b48a5d9b3f5f68c7ce9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172626"
 ---
 # <a name="properties-of-domain-classes"></a>Eigenschaften von Domänenklassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaften von Domänenklassen](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-classes).  
-  
 Domänenklassen werden die Eigenschaften in der folgenden Tabelle sind. Weitere Informationen zu den Domänenklassen, finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Eigenschaft|Beschreibung|Standard|  

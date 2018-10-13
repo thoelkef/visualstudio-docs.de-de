@@ -1,7 +1,7 @@
 ---
 title: Anfügen an laufende Prozesse mit Visual Studio-Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d0f92e857122b0fe23f5f1afe80b4d86f8b8af7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176773"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einer lokal
 
 ## <a name="additional-info"></a>Zusätzliche Informationen
 
-Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm auf der Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen des aktuellen Programms](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm auf der Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen des aktuellen Programms](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
 Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann riskant sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
@@ -138,10 +138,10 @@ Für einige app-Typen (z. B. Windows Store-apps), Sie nicht direkt mit dem Namen
 |Debuggen einer Windows Universal (UWP), OneCore, HoloLens und IoT-app, die Sie in Visual Studio starten nicht|App-Paket Debuggen installiert|Nicht zutreffend|Verwendung **Debuggen / andere Debugziele / Debuggen Installed App-Pakets** anstelle von **an den Prozess anhängen**|
   
 > [!WARNING]
->  Zum Anhängen an eine in JavaScript geschriebene universelle Windows-App müssen Sie zuerst das Debuggen für die App aktivieren. Finden Sie unter [Anfügen des Debuggers](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Dev Center.  
+>  Zum Anhängen an eine in JavaScript geschriebene universelle Windows-App müssen Sie zuerst das Debuggen für die App aktivieren. Weitere Informationen hierzu finden Sie unter [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Developer Center.  
   
 > [!NOTE]
->  Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dies Ihrem Code hinzufügen automatisch durch eine Verknüpfung mit der [ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) -Linkeroption.
+>  Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) -Linkeroption herstellen.
 
 ## <a name="what-debugger-features-can-i-use"></a>Welche Debuggerfunktionen kann ich verwenden?
 
@@ -183,7 +183,7 @@ In einigen Szenarien für lokalen Debuggen, können Sie Debuggen in Visual Studi
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen Sie mehrerer Prozesse](../debugger/debug-multiple-processes.md)   
  [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

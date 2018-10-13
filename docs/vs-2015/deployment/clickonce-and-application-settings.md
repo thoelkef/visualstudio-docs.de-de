@@ -1,7 +1,7 @@
 ---
 title: ClickOnce und Anwendungseinstellungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176980"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ClickOnce und Anwendungseinstellungen](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Anwendungseinstellungen für Windows Forms erleichtert das Erstellen, speichern und Verwalten von benutzerdefinierten Anwendungs- und benutzereinstellungen auf dem Client. Das folgende Dokument beschreibt die Funktionsweise der Anwendung-Dateien für konformitätseinstellungen in eine ClickOnce-Anwendung und wie ClickOnce Einstellungen migriert, wenn der Benutzer ein Upgrade auf die nächste Version.  
   
  Die folgenden Informationen gelten nur für der Application Settings-Standardanbieter der <xref:System.Configuration.LocalFileSettingsProvider> Klasse. Wenn Sie einen benutzerdefinierten Anbieter angeben, wird dieses Anbieters bestimmen, wie die Daten gespeichert und wie sie die Einstellungen zwischen den Versionen aktualisiert. Weitere Informationen zum Anbieter von Anwendungseinstellungen, finden Sie unter [Architektur der Anwendungseinstellungen](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  

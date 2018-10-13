@@ -1,7 +1,7 @@
 ---
 title: Schaltflächen des Eigenschaftenfensters | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176799"
 ---
 # <a name="properties-window-buttons"></a>Schaltflächen des Eigenschaftenfensters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schaltflächen des Eigenschaftenfensters](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons).  
-  
 Abhängig von der Entwicklungssprache und Produkttyp, bestimmte Schaltflächen werden standardmäßig angezeigt werden auf der Symbolleiste für den **Eigenschaften** Fenster. In allen Fällen die **nach Kategorien**, **Alphabetized**, **Eigenschaften**, und **Eigenschaftenseiten** Schaltflächen werden angezeigt. In Visual c# und Visual Basic die **Ereignisse** Schaltfläche wird ebenfalls angezeigt. In bestimmten Visual C++-Projekten die **VC++-Nachrichten** und **VC überschreibt** Schaltflächen werden angezeigt. Zusätzliche Schaltflächen möglicherweise für andere Projekttypen angezeigt. Weitere Informationen zu Schaltflächen in der **Eigenschaften** Fenster finden Sie unter [Fenster "Eigenschaften"](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implementierung der Schaltflächen des Eigenschaftenfensters  

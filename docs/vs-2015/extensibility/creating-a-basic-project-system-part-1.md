@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines grundlegenden Projektsystems, Teil 1 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8735ed6760df7d9b4ad21c673bdda75cddb6f7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da91c08e42604bdcf5d8f0471acdd7d74992a5e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173824"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen eines grundlegenden Projektsystems, Teil 1](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-1).  
-  
 In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quellcodedateien und anderen Ressourcen zu organisieren. Projekte werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Quellcode bereitstellen und Verweise auf die Web Services, Datenbanken und andere Ressourcen erstellen.  
   
  Projekte werden in Projektdateien, z. B. einer CSPROJ-Datei für ein Visual C#-Projekt definiert. Sie können Ihren eigenen Projekttyp erstellen, die Ihre eigenen Projekt-Dateierweiterung aufweist. Weitere Informationen zu Projekttypen, finden Sie unter [Projekttypen](../extensibility/internals/project-types.md).  
@@ -64,7 +62,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
   
 -   Implementieren Sie die parameterersetzung Basisvorlage.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
  Sie müssen auch herunterladen, den Quellcode für die [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Extrahieren Sie die Datei an einem Speicherort, der mit der Lösung zugänglich ist, die zu erstellen.  

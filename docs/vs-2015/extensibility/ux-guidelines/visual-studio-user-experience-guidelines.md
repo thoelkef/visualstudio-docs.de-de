@@ -1,7 +1,7 @@
 ---
 title: Richtlinien zur Benutzerfreundlichkeit von Visual Studio-Benutzer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5773bdbd493b29281d148066306daf5ad9d2d2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172002"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Studio User Experience Guidelines](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines).  
-  
 Die Visual Studio Richtlinien dienen für diejenigen, die neue Funktionen für Visual Studio entwickeln. Diese Richtlinien enthalten Informationen über allgemeine Benutzer-Modelle und interaktionsmustern, damit Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die nahtlose und einheitliche, in der Entwicklungsumgebung sind.  
   
  Entwicklung von Software für Microsoft-Produkte bedeutet, dass verstehen die Anleitung, die von Windows bereitgestellt. Es gibt drei wichtige Ressourcen, zu berücksichtigen:  

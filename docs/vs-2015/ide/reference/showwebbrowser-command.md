@@ -1,7 +1,7 @@
 ---
 title: Befehl „ShowWebBrowser“ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de730650216f67d3f620fa85cad0a98148ce2ee3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bf9668a690347988e3148cf90da69ec3b33ca2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171950"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Befehl "ShowWebBrowser"](https://docs.microsoft.com/visualstudio/ide/reference/showwebbrowser-command).  
-  
   
 Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.  
   
@@ -65,7 +63,7 @@ View.ShowWebBrowser URL [/new][/ext]
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

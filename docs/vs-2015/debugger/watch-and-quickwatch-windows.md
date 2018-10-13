@@ -1,7 +1,7 @@
 ---
 title: Überwachen und Schnellüberwachung Windows | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173627"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Fenster "Überwachen" und "Schnellüberwachung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Festlegen eines Überwachungselements für Variablen in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Sie können die **sehen Sie sich** (**Debuggen / Windows / überwachen / überwachen (1, 2, 3, 4)**) und **Schnellüberwachung** (mit der rechten Maustaste auf die Variable / **Debuggen / Schnellüberwachung**) Windows Variablen und Ausdrücke während einer Debugsitzung zu überwachen.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Beobachten einer einzelnen Variable im Fenster "Schnellüberwachung"  
@@ -104,7 +102,7 @@ static void Main(string[] args)
   
 5.  Debuggen fortsetzen.  
   
- Sie sollten sehen, wie sich die Variablenwerte ändern, während Sie die `for` -Schleife durchlaufen.  
+ Sie sollten sehen, wie sich die Variablenwerte ändern, während Sie die `for`-Schleife durchlaufen.  
   
  Wenn Sie in systemeigenen Code programmieren, müssen Sie in einigen Fällen den Kontext eines Variablennamens oder eines Ausdruck qualifizieren, der einen Variablennamen enthält. Mit dem Kontext sind die Funktion, die Quelldatei und das Modul gemeint, in denen eine Variable enthalten ist. Falls Sie den Kontext qualifizieren müssen, können Sie dazu die Kontextoperatorsyntax verwenden. Weitere Informationen finden Sie unter "Ausdrücke (C++)".  
   
