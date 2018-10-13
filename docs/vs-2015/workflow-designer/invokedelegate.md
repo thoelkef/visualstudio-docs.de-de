@@ -1,7 +1,7 @@
 ---
 title: InvokeDelegate | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0abb68a1cb123be7463d0fe3ec102f438eb8a2ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b47a975c12cfcfd02b01925685b47cba47cc1fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228851"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.InvokeDel
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Standardwert lautet InvokeDelegate.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Der Name des <xref:System.Activities.ActivityDelegate>, der bei Ausführung der Aktivität aufgerufen werden soll. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden. Dies ist eine obligatorische Eigenschaft.|
-|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Die Argumentauflistung des aufgerufenen Delegaten. Die Schlüssel sind die Namen der <xref:System.Activities.DelegateArgument>-Objekte auf dem <xref:System.Activities.ActivityDelegate>, und die Werte sind die Argumente, deren Ausdrücke ausgewertet werden und  den entsprechenden <xref:System.Activities.DelegateArgument>-Objekten zugewiesen werden. Klicken Sie im Eigenschaftenraster auf die Schaltfläche mit den Auslassungspunkten, in der **DelegateArguments** -Feld die **DelegateArguments** Dialogfeld Sie diese Eigenschaft festlegen können. Klicken Sie auf die **Argument erstellen** Feld, um die Argumente hinzuzufügen.|
+|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Die Argumentauflistung des aufgerufenen Delegaten. Die Schlüssel sind die Namen der <xref:System.Activities.DelegateArgument>-Objekte auf dem <xref:System.Activities.ActivityDelegate>, und die Werte sind die Argumente, deren Ausdrücke ausgewertet werden und den entsprechenden <xref:System.Activities.DelegateArgument>-Objekten zugewiesen werden. Klicken Sie im Eigenschaftenraster auf die Schaltfläche mit den Auslassungspunkten, in der **DelegateArguments** -Feld die **DelegateArguments** Dialogfeld Sie diese Eigenschaft festlegen können. Klicken Sie auf die **Argument erstellen** Feld, um die Argumente hinzuzufügen.|
 
 ## <a name="see-also"></a>Siehe auch
 

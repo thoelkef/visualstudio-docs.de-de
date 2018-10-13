@@ -1,7 +1,7 @@
 ---
 title: ClickOnce-Bereitstellung unter Windows Vista | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224509"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>ClickOnce-Bereitstellung unter Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ClickOnce-Bereitstellung unter Windows Vista](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
-  
 Erstellen von Anwendungen in Visual Studio, für die Benutzerkontensteuerung (UAC) unter Windows Vista normalerweise ein eingebettetes Manifest, generiert codiert als binary XML-Daten in die ausführbare Datei der Anwendung. Da ClickOnce und registrierungsfreiem COM-Anwendungen ein externes Manifest erforderlich sind, generiert Visual Studio eine Datei für diese Arten von Projekten, die mit den UAC-Daten, statt ein eingebettetes Manifest an. Standardmäßig verwendet Visual Studio Informationen aus einer Datei namens "App.manifest", zum Generieren von externen UAC-Manifestinformationen (für die Bereitstellung von ClickOnce und registrierungsfreiem COM) oder um sie in der Anwendung die ausführbare Datei (bei allen anderen Fällen) einbetten. Visual Studio bietet die folgenden Optionen für die manifestgenerierung auf:  
   
 -   Verwenden Sie ein eingebettetes Manifest. UAC-Daten in die ausführbare Datei der Anwendung einbetten, und als normaler Benutzer ausführen.  

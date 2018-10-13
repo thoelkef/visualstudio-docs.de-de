@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -40,18 +40,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137c85f5433343327cf677ef76c1116bd6ef6821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e0dae046e02685e7ce1d6ce7f744b568e47c5eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243125"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Gewusst wie: Festlegen von Debug- und Releasekonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations).  
-  
 Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  
   
  Die Debugkonfiguration des Programms wird mit vollständigen symbolischen Debuginformationen und ohne Optimierung kompiliert. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.  

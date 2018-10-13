@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Symbolen zu Menübefehlen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184514"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands).  
-  
 Befehle können in sowohl Menüs und Symbolleisten angezeigt werden. Auf der Symbolleiste ist es üblich, dass ein Befehl aus, um mit nur einem Symbol (um Platz zu sparen) und in Menüs angezeigt werden, dass ein Befehl in der Regel mit einem Symbol und die Text angezeigt wird.  
   
  Symbole können sind 16 Pixel Breite x 16 Pixel hoch und entweder 8-Bit Farbtiefe (256 Farben) oder 32-Bit Farbtiefe ("true" Farbe). 32-Bit-Farbsymbole werden bevorzugt. Symbole werden in einer einzelnen horizontalen Zeile in einer einzelnen Bitmap, in der Regel angeordnet werden, obwohl mehrere Bitmaps zulässig sind. Diese Bitmap wird in der VSCT-Datei zusammen mit die einzelnen Symbole verfügbar sind, in der Bitmap deklariert. Finden Sie in der Referenz für die [Bitmaps-Element](../extensibility/bitmaps-element.md) Weitere Details.  

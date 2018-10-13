@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Leistungssitzungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242813"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Übersicht über Leistungssitzungen](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entwickler, die wenig Erfahrung mit Leistungsarbeit haben, werden lernen, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools ihnen helfen, schnell produktiv zu werden und die Leistung ihres Codes zu steigern. Entwickler, die bereits Erfahrung mit der Profilerstellung haben, erhalten eine Übersicht über besondere Features und Vorgänge der Profilerstellungstools.  
   
  Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools helfen Ihnen, Leistungsprobleme im Quellcode zu identifizieren und die Leistung von möglichen Lösungen zu vergleichen. Die Assistenten und Standardeinstellungen für Profierstellungen geben Ihnen unmittelbaren Einblick in viele Leistungsprobleme. Die Features und Optionen des Profilerstellungstools stellen eine exakte Kontrolle über den Profilerstellungsvorgang zur Verfügung. Diese Kontrolle umfasst das präzise Ansteuern von Codeabschnitten, das Erfassen von Zeitinformationen auf Blockebene und die Aufnahme zusätzlicher Prozessor- und Systemleistungsdaten in Ihre Daten.  

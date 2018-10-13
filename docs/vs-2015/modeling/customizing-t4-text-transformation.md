@@ -1,7 +1,7 @@
 ---
 title: Anpassen der T4-TextTransformation | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200238"
 ---
 # <a name="customizing-t4-text-transformation"></a>Anpassen der T4-Texttransformation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anpassen der T4-TextTransformation](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation).  
-  
 Textvorlagen sind ein Feature von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , mit denen Sie Programmcode oder anderen Textdateien über ein Transformationsprozess zu generieren. Mithilfe von [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], Sie können die Standard-Transformationsprozess erweitern, indem Anpassen der Textvorlagen-Direktivenprozessor oder die Textvorlagenhosts.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

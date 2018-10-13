@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234194"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
  Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für Windows Store-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  

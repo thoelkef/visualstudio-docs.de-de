@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines SDKS mit C++ | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c6e8996ebf670fbe0c3b64de25a25aef1dc131
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243710"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mit C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines SDK mit C++](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-an-sdk-using-cpp).  
-  
 Dieser exemplarischen Vorgehensweise erstellen eine native C++ Mathematikbibliothek SDK Paket das SDK als ein Visual Studio-Erweiterung (VSIX), und klicken Sie dann zum Erstellen einer app verwenden. Die exemplarische Vorgehensweise ist in Schritte unterteilt:  
   
 -   [Zum Erstellen des systemeigenen und Windows-Runtime-Bibliotheken](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -33,7 +31,7 @@ Dieser exemplarischen Vorgehensweise erstellen eine native C++ Mathematikbibliot
   
 -   [Zum Erstellen einer Beispielapp verwendet, die die Bibliothek.](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ##  <a name="createClassLibrary"></a> Zum Erstellen des systemeigenen und Windows-Runtime-Bibliotheken  

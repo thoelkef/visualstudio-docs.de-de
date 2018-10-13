@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findinjectedsource | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73f40f2536b72c900e20ff49492ff741e3ca927d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa844e54e925421b11acd5b7280a86711ae1d6ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227728"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [idiasession:: Findinjectedsource](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinjectedsource).  
-  
 Ruft eine Liste der Datenquellen, die in den Symbolspeicher vom Attributanbieter abgelegt wurden, oder andere Komponenten des im Verlauf des Vorgangs ab.  
   
 ## <a name="syntax"></a>Syntax  

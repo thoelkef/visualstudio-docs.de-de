@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250210"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Gewusst wie: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit visuelle Stile aktiviert](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled).  
-  
 Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Grundlage des vom Benutzer ausgewählten Designs geändert werden. Standardmäßig werden keine visuellen Stile für WPF-Anwendungen (Windows Presentation Foundation) aktiviert. Daher müssen Sie sie manuell aktivieren. Allerdings tritt bei der Veröffentlichung der Projektmappe ein Fehler auf, wenn visuelle Stile für eine WPF-Anwendung aktiviert sind. In diesem Thema wird beschrieben, wie dieser Fehler zu beheben ist und wie eine WPF-Anwendung mit aktivierten visuellen Stilen veröffentlicht werden kann. Weitere Informationen zu visuellen Stilen finden Sie unter [visuelle Stile Übersicht](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Weitere Informationen zur Fehlermeldung finden Sie unter [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Um den Fehler zu beheben und die Projektmappe zu veröffentlichen, müssen Sie die folgenden Aufgaben ausführen:  
@@ -156,7 +154,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
     ```  
   
     > [!NOTE]
-    >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass alle Dateien in diesem Verzeichnis umbenannt werden, die zuvor die Dateinamenerweiterung `.deploy` hatten.  
+    >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass alle Dateien in diesem Verzeichnis umbenannt werden, die zuvor die Dateierweiterung `.deploy` hatten.  
   
 4.  Geben Sie an der Eingabeaufforderung den folgenden Befehl zum Signieren des Verteilungsmanifests ein:  
   

@@ -1,7 +1,7 @@
 ---
 title: Regeln propagieren Änderungen im Modell | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222715"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model).  
-  
 Sie können eine Store-Regel, um eine Änderung von einem Element zu einem anderen im Visualisierungs- und Modellierungs-SDK (VMSDK) weitergegeben werden erstellen. Wenn eine Änderung auf ein Element in der Store erfolgt, werden Regeln ausgeführt werden, in der Regel, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzugefügt oder gelöscht wird. Sie können Regeln auf bestimmte Typen von Elementen, Formen und Diagrammen anfügen. Viele integrierte Features durch Regeln definiert werden: z. B. Regeln stellen sicher, dass ein Diagramm aktualisiert wird, wenn das Modell geändert wird. Sie können Ihrer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.  
   
  Store-Regeln sind besonders nützlich, für die Weitergabe von Änderungen in den Speicher – d. h. an Modellelementen, Beziehungen, Formen oder Konnektoren und ihrer Domäne Eigenschaften. Regeln werden nicht ausgeführt werden, wenn der Benutzer die Befehle zum Rückgängigmachen oder Wiederholen aufruft. Stattdessen stellt der Transaktions-Manager sicher, dass es sich bei den Store-Inhalt auf den richtigen Zustand wiederhergestellt werden. Wenn Sie Änderungen an Ressourcen außerhalb des Speichers weitergeben möchten, verwenden Sie die Store-Ereignisse. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  

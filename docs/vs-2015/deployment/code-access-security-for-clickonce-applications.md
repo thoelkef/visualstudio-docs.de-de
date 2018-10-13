@@ -1,7 +1,7 @@
 ---
 title: Codezugriffssicherheit für ClickOnce-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197976"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Codezugriffssicherheit für ClickOnce-Anwendungen](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssicherheits-Einschränkungen. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von ClickOnce-Anwendungen anwenden.  
   
  Mithilfe der Codezugriffssicherheit in .NET Framework wird der Zugriff von Code auf geschützte Ressourcen und Operationen beschränkt. Sie sollten die Codezugriffsberechtigungen für Ihre ClickOnce-Anwendung so konfigurieren, dass die Zone verwendet wird, die für den Speicherort des Installationsprogramms der Anwendung geeignet ist. In den meisten Fällen können Sie die Zone **Internet** für einen begrenzten Satz von Berechtigungen oder die Zone **Lokales Intranet** für einen umfangreicheren Satz von Berechtigungen verwenden.  
@@ -105,7 +103,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
  [How to: Enable ClickOnce Security Settings (Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen)](../deployment/how-to-enable-clickonce-security-settings.md)   
  [How to: Set a Security Zone for a ClickOnce Application (Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung)](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [How to: Set Custom Permissions for a ClickOnce Application (Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions (Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen)](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
  [Seite „Sicherheit“, Projekt-Designer](../ide/reference/security-page-project-designer.md)
 

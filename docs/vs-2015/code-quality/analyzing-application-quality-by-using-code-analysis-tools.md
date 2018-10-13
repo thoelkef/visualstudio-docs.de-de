@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Anwendungsqualität mit Codeanalysetools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1b62ac482d18bc8844045d90d32f4d48416daeca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515012"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216688"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analysieren der Anwendungsqualität mit Codeanalysetools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Analysieren der Anwendungsqualität mit Codeanalysetools](https://docs.microsoft.com/visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools).  
-  
 In diesem Abschnitt  
  [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  Die Visual Studio Codeanalyse für verwalteten Code stellt Informationen zu verwalteten Assemblys bereit, z. B. über Verletzungen der in den Microsoft .NET Framework-Entwurfsrichtlinien dargelegten Programmierungs- und Entwurfsregeln. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.  

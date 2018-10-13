@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235936"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Gewusst wie: Debuggen für ASP.NET-Anwendungen aktivieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Debuggen für ASP.NET-Anwendungen aktivieren](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Wenn Sie das Debuggen aktivieren möchten, müssen Sie es auf der Seite **Projekteigenschaften** und in der Datei Web.config der Anwendung aktivieren.  
   
 > [!NOTE]  
@@ -92,7 +90,7 @@ Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalt
   
 So können Sie z. B. in www.microsoft.com/aaa/Web.config `debug="true"` angeben, und alle Anwendungen im Ordner aaa und in jedem Unterordner von aaa erben diese Einstellung. Wenn sich die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung also unter www.microsoft.com/aaa/bbb befindet, erbt sie diese Einstellung ebenso wie alle [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen unter www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd usw. Die einzige Ausnahme stellen Anwendungen dar, die die Einstellungen mit einer eigenen Web.config-Datei auf einer niedrigeren Ebene überschreiben.  
   
-Das Aktivieren des Debugmodus wirkt sich entscheidend auf die Leistung der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung aus. Vergessen Sie nie, den Debugmodus zu deaktivieren, bevor Sie die Releaseversion einer Anwendung bereitstellen oder Leistungsmessungen durchführen.  
+Das Aktivieren des Debugmodus wirkt sich entscheidend auf die Leistung der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung aus. Vergessen Sie nie, den Debugmodus zu deaktivieren, bevor Sie die Releaseversion einer Anwendung bereitstellen oder Leistungsmessungen durchführen.  
   
 ## <a name="see-also"></a>Siehe auch  
 [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)  

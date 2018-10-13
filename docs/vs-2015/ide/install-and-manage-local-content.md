@@ -1,7 +1,7 @@
 ---
 title: Installieren und Verwalten von lokalen Inhalten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193835"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [installieren und Verwalten von lokalen Inhalten](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf dem Computer installiert ist, hinzufügen, entfernen, aktualisieren oder verschieben, um ihn an die Softwareanforderungen anzupassen.  
   
  Um Inhalt auf dem lokalen Computer zu verwalten, müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Außerdem können Sie möglicherweise keine lokalen Inhalte verwalten, wenn Sie in einer Unternehmensumgebung arbeiten, da diese Entscheidungen möglicherweise von Systemadministratoren für Ihre Organisation getroffen werden. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  

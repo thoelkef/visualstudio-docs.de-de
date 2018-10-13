@@ -1,7 +1,7 @@
 ---
 title: Direktfenster | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3bd020a66b29180bdfb3430d1710e8f3c29a9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203670"
 ---
 # <a name="immediate-window"></a>Direktfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Direktfenster](https://docs.microsoft.com/visualstudio/ide/reference/immediate-window).  
-  
   
 Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.  
   

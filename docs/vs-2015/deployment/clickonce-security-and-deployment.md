@@ -1,7 +1,7 @@
 ---
 title: ClickOnce-Sicherheit und-Bereitstellung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: be076232ee9214ad0039421c7c5610fad3f4c3b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232101"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ClickOnce-Sicherheit und Bereitstellung](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist eine bereitstellungstechnologie, mit dem Sie selbst aktualisierende Windows-basierte Anwendungen erstellen, die installiert und mit minimalem Benutzereingriff ausgeführt werden können. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung löst drei grundlegende Probleme:  
@@ -107,9 +105,9 @@ Die neueste Version dieses Themas finden Sie unter [ClickOnce-Sicherheit und Ber
 |[Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)|Generiert und bearbeitet die Anwendungs- und Bereitstellungsmanifeste für Visual Basic und Visual C#-Anwendungen.|  
 |[Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generiert die Anwendungs- und Bereitstellungsmanifeste für Visual Basic, Visual c# und Visual C++-Anwendungen.<br /><br /> Meldet, und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.<br /><br /> Können von batchskripten und der Eingabeaufforderung ausgeführt werden.|  
 |[MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Wird generiert, und die Anwendungs- und Bereitstellungsmanifeste bearbeitet.<br /><br /> Meldet, und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.|  
-|[GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)|Generiert das Anwendungsmanifest an.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild-Referenz](../msbuild/msbuild-reference.md).|  
-|[GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)|Generiert das Bereitstellungsmanifest.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild-Referenz](../msbuild/msbuild-reference.md).|  
-|[SignFile-Aufgabe](../msbuild/signfile-task.md)|Meldet die Anwendungs- und Bereitstellungsmanifeste.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild-Referenz](../msbuild/msbuild-reference.md).|  
+|[GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)|Generiert das Anwendungsmanifest an.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild Reference (MSBuild-Referenz)](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)|Generiert das Bereitstellungsmanifest.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild Reference (MSBuild-Referenz)](../msbuild/msbuild-reference.md).|  
+|[SignFile-Aufgabe](../msbuild/signfile-task.md)|Meldet die Anwendungs- und Bereitstellungsmanifeste.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild Reference (MSBuild-Referenz)](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Entwickeln Sie Ihre eigene Anwendung aus, um die Anwendungs- und Bereitstellungsmanifeste zu generieren.|  
   
  Die folgende Tabelle zeigt die .NET Framework-Version erforderlich, um die ClickOnce-Anwendungen in den folgenden Browsern unterstützt.  

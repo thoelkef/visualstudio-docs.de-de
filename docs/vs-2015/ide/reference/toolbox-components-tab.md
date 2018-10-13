@@ -1,7 +1,7 @@
 ---
 title: Toolbox, Registerkarte „Komponenten“ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b253e170adc8510aebd9c96a468169058d2a87fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 405c7db0ca437aa5462068e2be3cfcc2d76c1cae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203124"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [in der Toolbox, Registerkarte "Komponenten"](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-components-tab).  
-  
   
 Zeigt die Komponenten, die Sie zu [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]- und [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Designern hinzufügen können. Zusätzlich zu den [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]-Komponenten, die in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthalten sind, wie z.B. die Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>, können Sie eigene Komponenten oder Drittanbieter-Komponenten zu dieser Registerkarte hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Registerkarten der Toolbox](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
   

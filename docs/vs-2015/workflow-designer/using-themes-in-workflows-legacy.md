@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Designs in Workflows (Vorgängerversion) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c1bb0392054717844cc9f0943f57aaa33d0c887c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233013"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Verwenden von Designs in Workflows (Vorgängerversion)
 In diesem Thema wird beschrieben, wie bei Verwendung der Vorgängerversion von [!INCLUDE[wf](../includes/wf-md.md)], die auf [!INCLUDE[wfd1](../includes/wfd1-md.md)] oder [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] abzielt, Designs in [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet werden.  

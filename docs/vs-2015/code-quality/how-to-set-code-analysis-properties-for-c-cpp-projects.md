@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C / C++-Projekte | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c0b396394e003f97c60a65ee37b94810e692e28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224821"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte](https://docs.microsoft.com/visualstudio/code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects).  
-  
 Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet, um den Code in jede Konfiguration des Projekts zu analysieren. Darüber hinaus können Sie weiterleiten, Codeanalyse, um Warnungen zu Code zu unterdrücken, die generiert und von einem Drittanbieter-Tool zu Ihrem Projekt hinzugefügt wurde.  
   
 ## <a name="code-analysis-property-page"></a>Code Analysis-Eigenschaftenseite  

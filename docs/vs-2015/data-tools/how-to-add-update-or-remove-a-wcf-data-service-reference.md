@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: hinzufügen, aktualisieren oder entfernen ein WCF-Datendienstverweises | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8af59a4a33c0ac86c6e15e43d655cbf4f79b3406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b14a83b195809dff89fa89bb6fcf91050e2f8a0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192256"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: hinzufügen, aktualisieren oder Entfernen eines WCF-Datendienstverweises](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).  
-  
   
 Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in der aktuellen Projektmappe lokal auf einem lokalen Netzwerk oder im Internet.  
   

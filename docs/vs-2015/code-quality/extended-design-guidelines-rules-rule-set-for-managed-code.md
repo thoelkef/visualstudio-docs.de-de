@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Regelsatz Entwurfsrichtlinienregeln für verwalteten Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207817"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Regelsatz erweiterten Entwurfsrichtlinienregeln für verwalteten Code](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf die grundlegenden Regeln für Entwurfsrichtlinien, die Fehler bezüglich Verwendbarkeit und wartbarkeit zu maximieren, die gemeldet werden. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.  
   
  Die erweiterten Entwurfsrichtlinienregeln umfassen alle von der Microsoft grundlegenden Regeln für Entwurfsrichtlinien. Die grundlegenden Regeln für Entwurfsrichtlinien umfassen alle Microsoft-Mindestregeln. Weitere Informationen finden Sie unter [Regelsatz einfachen Entwurfsrichtlinienregeln für verwalteten Code](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

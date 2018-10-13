@@ -1,7 +1,7 @@
 ---
 title: Referenz für die WPF-MSBuild-Task |Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3423d08777cc19a29fcb145e4394866ce445aec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185470"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Aufgaben für WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [WPF-MSBuild-Aufgabenreferenz](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-task-reference).  
-  
   
 Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch einen zusätzlichen Satz an Buildtasks, einschließlich Tasks zum Kompilieren von Markup- und Prozessressourcen.  
   

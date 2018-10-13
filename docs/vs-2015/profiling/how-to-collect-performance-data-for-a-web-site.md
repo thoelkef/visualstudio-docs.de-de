@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185898"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE geöffnet ist.  
   
 > [!NOTE]
@@ -87,13 +85,13 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 5.  Geben Sie im Feld **Auf welcher URL oder welchem Pfad wird die Webanwendung ausgeführt?** auf der dritten Seite des Assistenten die URL der Startseite der Anwendung ein und klicken Sie dann auf **Weiter**.  
   
-    -   Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
+    -   Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
   
     -   Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.  
   
     -   Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).  
   
-     Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Zielbinärdatei.  
+     Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Zielbinärdatei.  
   
 6.  Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   

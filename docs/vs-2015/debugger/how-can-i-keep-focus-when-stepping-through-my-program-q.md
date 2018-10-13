@@ -1,7 +1,7 @@
 ---
 title: Wie kann der Fokus beim Durchlaufen des Programms beibehalten werden? | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7598e25a6e436702b88b7e10d6cde7968a8cc61d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29704c2543981ffd8276575d7f4ecf4fb2cbf957
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211951"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Wie kann der Fokus beim Durchlaufen des Programms beibehalten werden?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie kann ich behalten den Fokus beim Stepping über Mein Programm?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-keep-focus-when-stepping-through-my-program-q).  
-  
 Beschreibung  
  Das Programm hat Probleme mit der Aktivierung von Fenstern. Beim Durchlaufen des Programms mit dem Debugger kann das Problem nicht reproduziert werden, da das Programm den Fokus verliert. Wie kann dies vermieden werden?  
   

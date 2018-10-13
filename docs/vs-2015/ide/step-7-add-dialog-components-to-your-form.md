@@ -1,7 +1,7 @@
 ---
 title: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192945"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form).  
-  
 In diesem Schritt fügen Sie dem Formular eine **OpenFileDialog**- und eine **ColorDialog**-Komponente hinzu, damit das Programm Bilddateien öffnen und eine Hintergrundfarbe auswählen kann.  
   
  Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Sie fügen dem Formular mithilfe der Toolbox eine Komponente hinzu, und legen die Eigenschaften im **Eigenschaftenfenster** fest. Aber im Gegensatz zu einem Steuerelement wird dem Formular beim Hinzufügen einer Komponente kein für den Benutzer sichtbares Element hinzugefügt. Stattdessen stellt die Komponente bestimmte Verhalten bereit, die Sie mit Code auslösen können. Es handelt sich dabei um eine Komponente, die das Dialogfeld **Datei öffnen** anzeigt.  

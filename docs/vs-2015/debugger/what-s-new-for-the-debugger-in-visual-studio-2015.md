@@ -1,7 +1,7 @@
 ---
 title: Neues im Debugger in Visual Studio 2015 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188616"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Neues im Debugger in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [neues im Debugger](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio).  
-  
 Informationen zu allen Neuerungen hinsichtlich Debugging und Diagnose in Visual Studio 2015 Update 1 finden Sie in den [Anmerkungen zur Version Visual Studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Informationen zu allen Neuerungen hinsichtlich Debugging und Diagnose in Visual Studio 2015 RTM finden Sie in den [Anmerkungen zur Version Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#debug).  
@@ -43,7 +41,7 @@ Informationen zu allen Neuerungen hinsichtlich Debugging und Diagnose in Visual 
 ## <a name="visual-studio-2015-update-1-changes"></a>Visual Studio 2015 Update 1 – Änderungen  
  „Bearbeiten und Fortfahren“ von C++ unterstützt weitere Features. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- Zum Debuggen von Visual C++-Zugriffsverletzungen gibt ein neues Dialogfeld für Ausnahmen den Zeiger an, der die Ausnahme ausgelöst hat. Weitere Informationen finden Sie unter [wie kann eine Zugriffsverletzung gedebuggt?](../debugger/how-can-i-debug-an-access-violation-q.md) und [Verbesserung beim Debuggen von C++-Zugriffsverletzungen in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ Zum Debuggen von Visual C++-Zugriffsverletzungen gibt ein neues Dialogfeld für Ausnahmen den Zeiger an, der die Ausnahme ausgelöst hat. Weitere Informationen finden Sie unter [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) und [Verbesserung beim Debuggen von C++-Zugriffsverletzungen in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Visual Studio 2015 RTM – Debugger-Benutzeroberfläche und Hotkey-Änderungen  
  An der Benutzeroberfläche der Ausnahme- und Haltepunkteinstellungen wurden erhebliche Änderungen vorgenommen.  

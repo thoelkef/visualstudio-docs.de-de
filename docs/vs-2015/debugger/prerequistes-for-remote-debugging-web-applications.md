@@ -1,7 +1,7 @@
 ---
 title: Voraussetzungen für das Remotedebuggen von Webanwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 197a6e9b433173f1de13e3506db79e7edf53bade
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 448e6e7705e4df7330abce0e919adc705721102c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227291"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>Voraussetzungen für das Remotedebuggen von Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Voraussetzungen für das Debuggen von ASP.NET-Webanwendungen](https://docs.microsoft.com/visualstudio/debugger/prerequistes-for-remote-debugging-web-applications).  
-  
 Mit dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger können Sie Webanwendungen auf dem lokalen Computer oder einem Remoteserver transparent debuggen. Das bedeutet, dass der Debugger auf jedem Computer auf die gleiche Weise funktioniert und Ihnen dieselben Features zur Verfügung stehen. Damit das Remotedebuggen richtig funktioniert, müssen jedoch einige vorbereitende Maßnahmen getroffen werden.  
   
 -   Die Komponenten zum Remotedebuggen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] müssen auf dem Server, auf dem das Debuggen durchgeführt werden soll, installiert sein. Weitere Informationen finden Sie unter [Einrichten des Remotedebuggens](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  

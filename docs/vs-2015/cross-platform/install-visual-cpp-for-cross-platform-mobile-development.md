@@ -1,7 +1,7 @@
 ---
 title: Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 6f341ad8c750286f8f15297c15dcdc8340ee7596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203860"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Install Visual C++ for Cross-Platform Mobile Development](https://docs.microsoft.com/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development).  
-  
   
 Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.microsoft.com/fwlink/p/?LinkId=536383) ist eine installierbare Komponente von Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
@@ -90,7 +88,7 @@ Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.micr
     > [!NOTE]
     >  Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
   
-5.  Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
+5.  Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
   
 ##  <a name="InstallForiOS"></a> Install tools for iOS  
  Sie können Visual C++ für die plattformübergreifende mobile Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Mac erstellt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent auf Ihrem Mac einrichten und konfigurieren. Detaillierte Informationen zur Installation, Voraussetzungen und Konfigurationsoptionen finden Sie unter [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Wenn Sie keinen Code für iOS erstellen, können Sie diesen Schritt überspringen.  

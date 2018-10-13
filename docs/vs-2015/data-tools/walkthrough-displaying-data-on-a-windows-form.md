@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Daten in einem Windows Form | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3decf0da6dd6d16c0128fdaeedf2fcd0cea94871
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f623f639458a9f5c9c055b5d6de384f6fd39cad1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201201"
 ---
 # <a name="walkthrough-displaying-data-on-a-windows-form"></a>Exemplarische Vorgehensweise: Anzeigen von Daten in einem Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Eines der häufigsten Szenarios bei der Anwendungsentwicklung ist das Anzeigen v
   
 -   Erstellen eines datengebundenen Steuerelements durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Zugriff auf die Beispieldatenbank Northwind. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  

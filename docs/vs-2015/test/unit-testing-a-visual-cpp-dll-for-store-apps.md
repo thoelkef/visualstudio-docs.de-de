@@ -1,7 +1,7 @@
 ---
 title: Unittests bei einer Visual C++-DLL für Store-Apps | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510555"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244360"
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Komponententest bei einer Visual C++-DLL für Store-Apps
+# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Unittests bei einer Visual C++-DLL für Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [einer Visual C++-DLL für Store-apps für die Komponententests](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps).  
-  
 Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für Windows Store-Apps. Die RooterLib-DLL implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar auf eine Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine Windows Store-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.  
   
  In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.  
@@ -71,7 +69,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
   
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.  
   
-    -   Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}` verwendet wird.  
+    -   Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.  
   
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in der MSDN Library.  
   

@@ -1,7 +1,7 @@
 ---
 title: Projekt Untertypen Entwurf | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243819"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Entwurf von Projektuntertypen](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design).  
-  
 Projektuntertypen können VSPackages, Projekte, die basierend auf der Microsoft Build Engine (MSBuild) zu erweitern. Die Verwendung der Aggregation ermöglicht Ihnen die Wiederverwendung der größte Teil das verwaltete Core-Projektsystem implementiert [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] noch immer noch das Verhalten für ein bestimmtes Szenario anpassen.  
   
  In den folgenden Themen beschreiben den grundlegenden Aufbau und die Implementierung von Projektuntertypen:  

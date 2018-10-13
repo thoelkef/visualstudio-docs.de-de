@@ -1,7 +1,7 @@
 ---
 title: Combo-Element | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a65391ad0bd294c847d1474d1aee63e26f41ca5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c6255fade6658ed6244caf81a356586b4c5f57b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213550"
 ---
 # <a name="combo-element"></a>Combo-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Combo-Element](https://docs.microsoft.com/visualstudio/extensibility/combo-element).  
-  
 Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Es gibt vier Arten von Kombinationsfelder, die folgenden: Kombinationsfeld, DynamicCombo, IndexCombo und MRUCombo.  
   
 ## <a name="syntax"></a>Syntax  

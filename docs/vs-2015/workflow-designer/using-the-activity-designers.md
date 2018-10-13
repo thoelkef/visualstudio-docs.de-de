@@ -1,7 +1,7 @@
 ---
 title: Verwenden der Aktivitätsdesigner | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224236"
 ---
 # <a name="using-the-activity-designers"></a>Verwenden der Aktivitätsdesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Aktivitäten und Workflows verwenden können. In diesem Abschnitt werden die Kategorien der vom System bereitgestellten Aktivitäten und den hierfür verfügbaren Designern beschrieben. In Themen zu den einzelnen Aktivitäten und den jeweiligen Designern in jeder dieser Kategorien wird die Wirkung dieser Aktivitäten beschrieben und erläutert, wie sie verwendet werden.  

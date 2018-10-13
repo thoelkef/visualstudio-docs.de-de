@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Bearbeiten eines Registerwerts | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 465ecd4e8003b82a0a7dfbab33004ef2b80d7f32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6846fc8ae093f3f63a0b9caceee7d0a0c23767f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196156"
 ---
 # <a name="how-to-edit-a-register-value"></a>Gewusst wie: Bearbeiten eines Registerwerts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Bearbeiten eines Registerwerts](https://docs.microsoft.com/visualstudio/debugger/how-to-edit-a-register-value).  
-  
 Das Fenster Register ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten.  
   
 ### <a name="to-change-the-value-of-a-register"></a>So ändern Sie den Wert eines Registers  

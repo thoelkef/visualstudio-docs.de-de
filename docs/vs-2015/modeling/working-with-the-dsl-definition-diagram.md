@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit dem DSL-Definitionsdiagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0874d5eff99b7e37807daee7115e66740d2661d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208584"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [arbeiten mit dem DSL-Definitionsdiagramm](https://docs.microsoft.com/visualstudio/modeling/working-with-the-dsl-definition-diagram).  
-  
 Das Diagramm ein [!INCLUDE[dsl](../includes/dsl-md.md)] Definition ist ein wichtiges Tool für die Definition einer domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.  
   
 ## <a name="the-layout-of-the-diagram"></a>Das Layout des Diagramms  

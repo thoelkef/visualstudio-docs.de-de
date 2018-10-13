@@ -1,7 +1,7 @@
 ---
 title: Barrierefreie Produkte und Dienste (Zusammenstellung) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197820"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Barrierefreie Produkte und Dienste (Zusammenstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [barrierefreiheitsprodukte und Dienste (Zusammenstellung)](https://docs.microsoft.com/visualstudio/designers/accessibility-products-and-services-blend).  
-  
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. In den folgenden Abschnitten finden Sie Informationen zu den Funktionen, Produkten und Diensten, die den Zugriff auf Microsoft Windows für Personen mit Behinderungen vereinfachen:  
   
 -   "Barrierefreiheitfunktionen in Windows"  

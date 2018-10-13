@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verteilen von Codeausschnitten | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185704"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Gewusst wie: Verteilen von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Verteilen von Codeausschnitten](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets).  
-  
 Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die Ausschnitte mithilfe des Codeausschnitt-Managers auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, fügen Sie die Ausschnittdatei in eine Visual Studio-Erweiterung ein, die Benutzer von Visual Studio installieren können.  
   
  Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Suchen Sie die Version des VSSDK, die auf Visual Studio-Installation entspricht [Visual Studio 2015 Downloads](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  

@@ -1,7 +1,7 @@
 ---
 title: Unterstützung für Benutzereinstellungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215656"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Unterstützung für Benutzereinstellungen](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings).  
-  
 Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer wählt definieren die **Import-/Exporteinstellungen** Befehl die **Tools** Menü. Zum Aktivieren der dieser Persistenz, die Sie verwenden der Einstellungen-APIs in der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  Ein Registrierungseintrag, der als eines benutzerdefinierten Einstellungspunkts und einer GUID bezeichnet wird definiert, eine VSPackage Einstellungskategorie. Eine VSPackage kann mehrere Einstellungskategorien unterstützen, die jeweils durch einen benutzerdefinierten Einstellungspunkt definiert.  

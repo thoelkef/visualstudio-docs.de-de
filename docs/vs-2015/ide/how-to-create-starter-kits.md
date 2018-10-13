@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen von Starter Kits | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9bafe28889bf652b3c66f04e9489a3042a1621
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522860"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243385"
 ---
 # <a name="how-to-create-starter-kits"></a>Gewusst wie: Erstellen von Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Erstellen von Starter Kits](https://docs.microsoft.com/visualstudio/ide/how-to-create-starter-kits).  
-  
 Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentation darüber, wie die Anwendung geändert oder erweitert wird. Das Erstellen eines Starter Kits erfolgt fast genauso wie das Erstellen einer normalen Projektvorlage. Der einzige Unterschied besteht darin, dass ein Starter Kit Dokumentationsdateien enthält, die geöffnet werden, wenn ein Projekt basierend auf dem Starter Kit erstellt wird.  
   
 ## <a name="designing-and-developing-a-starter-kit"></a>Entwerfen und Entwickeln eines Starter Kits  

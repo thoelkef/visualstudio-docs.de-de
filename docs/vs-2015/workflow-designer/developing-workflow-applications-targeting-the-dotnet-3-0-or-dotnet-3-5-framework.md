@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von Workflowanwendungen, die für .NET 3.0 oder .NET 3.5 Framework | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 80695d4a31f80e02a52c49ec73f56351a3475947
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658d1050cae8469d8b8b05e08f5d97815764de4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245309"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Anwendungen zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bereit, die auf [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.  

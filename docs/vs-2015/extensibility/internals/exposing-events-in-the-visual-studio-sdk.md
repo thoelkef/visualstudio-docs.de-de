@@ -1,7 +1,7 @@
 ---
 title: Verfügbarmachen von Ereignissen im Visual Studio SDK | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5b68428d419b3608781ee9525ae107a7239b53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195571"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Verfügbarmachen von Ereignissen im Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verfügbarmachen von Ereignissen in Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-events-in-the-visual-studio-sdk).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] können Sie mithilfe der Automatisierung Ereignissen der Datenquelle. Es wird empfohlen, dass Sie Ereignisse für Projekte und Projektelemente Datenquelle.  
   
  Ereignisse werden abgerufen, indem die Automatisierung von Kunden aus der <xref:EnvDTE.DTEClass.Events%2A> Objekt oder <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). Die Umgebung ruft `IDispatch::Invoke` mithilfe der `DISPATCH_METHOD` oder `DISPATCH_PROPERTYGET` Flags, die ein Ereignis zurück.  

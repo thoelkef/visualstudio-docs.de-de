@@ -1,7 +1,7 @@
 ---
 title: Schreiben von Code im Code- und Text-Editor | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220531"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Schreiben von Code im Code- und Text-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Schreiben von Code im Code- und Text-Editor](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und die Verwaltung von Code erleichtern. Sie können mithilfe der Gliederung verschiedene Codeblöcke reduzieren und erweitern. Wenn Sie IntelliSense, den **Objektkatalog**und die Aufrufhierarchie verwenden, können Sie mehr über Ihren Code erfahren. Sie können im Code navigieren, indem Sie Funktionen wie **Navigieren zu**, **Gehe zu Definition**und **Alle Verweise suchen**verwenden. Mit Codeausschnitten können Sie Codeblöcke einfügen und Code mithilfe von Funktionen wie **Generate From Usage**generieren. Wenn Sie noch nie mit dem Visual Studio 2015-Editor gearbeitet haben, finden Sie eine schnelle Übersicht unter [Codebearbeitung](https://www.visualstudio.com/features/ide-vs) .  
 
  Code kann auf unterschiedliche Weise angezeigt werden. Öffnen Sie zum Anzeigen einer Projektmappe der Klassenansicht das Fenster **Klassenansicht** , oder erweitern Sie die Knoten im **Projektmappen-Explorer** unter den Klassendateien.  

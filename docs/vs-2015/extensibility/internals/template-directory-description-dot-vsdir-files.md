@@ -1,7 +1,7 @@
 ---
 title: Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201975"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Eine Vorlage Directory-Beschreibungsdatei (VSDIR) ist eine Textdatei, die es ermöglicht die integrierte Entwicklungsumgebung (IDE) zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben werden, alle VSDIR-Dateien an einem Ort auf die verwiesen wird zusammengeführt.  
   
  Ordner (Unterverzeichnisse), Dateien, die in der VSDIR-Datei, und der VSDIR-Datei selbst verwiesen wird im gleichen Verzeichnis befinden. Wenn die IDE führt einen Assistenten, oder zeigt einen Ordner oder eine Datei in die **neues Projekt** oder **neues Element hinzufügen** Dialogfelder, die IDE untersucht das Verzeichnis mit den ausgeführten Dateien aus, um zu bestimmen, ob eine VSDIR-Datei ist vorhanden. Wenn eine VSDIR-Datei gefunden wird, liest die IDE, um zu ermitteln, ob es sich um einen Eintrag für die ausgeführte oder angezeigten Ordner oder die Datei enthält. Wenn ein Eintrag gefunden wird, verwendet die IDE die Informationen in die Ausführung des Assistenten oder Anzeige des Inhalts an.  

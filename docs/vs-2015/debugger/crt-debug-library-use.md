@@ -1,7 +1,7 @@
 ---
 title: Verwenden der CRT-Debugbibliothek | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b0923153d5e4d0a3c5e4eb33a97e31fd3b2802
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199515"
 ---
 # <a name="crt-debug-library-use"></a>Verwenden der CRT-Debugbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [verwenden der CRT Debug](https://docs.microsoft.com/visualstudio/debugger/crt-debug-library-use).  
-  
 Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-Debugbibliotheken verwenden zu können, müssen Sie eine Verknüpfung mit [/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) und kompilieren Sie mit **/MDd**, **/MTd**, oder **"/ LDD"**.  
   
 ## <a name="remarks"></a>Hinweise  

@@ -1,7 +1,7 @@
 ---
 title: Abfragedatasets | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52ccf91d349bc298c5be3fb020ad42ed78699e9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219296"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Abfragedatasets](https://docs.microsoft.com/visualstudio/data-tools/query-datasets).  
-  
   
 Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die FindBy-Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Schleife über der Tabelle Zeilensammlung oder verwenden Sie [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   

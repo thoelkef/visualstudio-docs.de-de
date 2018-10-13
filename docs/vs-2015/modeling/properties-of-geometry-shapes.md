@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften Geometrischer Formen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 70424ef2b3ce091b1c1290db2c4962481c9f68ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a531dadba426bc04a788d7c75516afd581d1722f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178892"
 ---
 # <a name="properties-of-geometry-shapes"></a>Eigenschaften geometrischer Formen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [von Eigenschaften Geometrischer Formen](https://docs.microsoft.com/visualstudio/modeling/properties-of-geometry-shapes).  
-  
 Sie können Geometrie-Formen verwenden, um anzugeben, wie Instanzen von Domänenklassen in einer domänenspezifischen Sprache angezeigt werden. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Geometrischer Formen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.  

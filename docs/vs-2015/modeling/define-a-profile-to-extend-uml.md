@@ -1,7 +1,7 @@
 ---
 title: Definieren eines Profils zum Erweitern von UML | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221259"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definieren eines Profils zum Erweitern von UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Definieren eines Profils zum Erweitern von UML](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemente für bestimmte Zwecke anzupassen. Ein Profil definiert eine oder mehrere *UML-Stereotype*. Ein Stereotyp kann verwendet werden, um einen Typ als Darstellung einer bestimmten Art Objekt zu markieren. Ein Stereotyp kann außerdem verwendet werden, um die Liste der Eigenschaften eines Elements zu erweitern.  
   
  Mehrere Profile werden mit unterstützten Editionen von Visual Studio installiert. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Weitere Informationen zu diesen Profilen und zur Anwendung von Stereotypen finden Sie unter [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
@@ -54,7 +52,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
 #### <a name="to-define-a-uml-profile"></a>So definieren Sie ein UML-Profil  
   
-1.  Erstellen Sie eine neue XML-Datei mit der Dateinamenerweiterung `.profile`.  
+1.  Erstellen Sie eine neue XML-Datei mit der Dateierweiterung `.profile`.  
   
 2.  Fügen Sie Stereotypdefinitionen gemäß den Richtlinien unter [die Struktur eines Profils](#Schema).  
   
@@ -175,7 +173,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
      Wählen Sie im Windows-Explorer die drei Dateien, mit der rechten Maustaste, zeigen Sie auf **senden an**, und klicken Sie dann auf **komprimierten (gezippten) Ordner**.  
   
-5.  Benennen Sie die ZIP-Datei um, und ändern Sie die Dateinamenerweiterung von `.zip` in `.vsix`.  
+5.  Benennen Sie die ZIP-Datei um, und ändern Sie die Dateierweiterung von `.zip` in `.vsix`.  
   
 6.  Um das Profil auf einem Computer mit den geeigneten Editionen von Visual Studio zu installieren, doppelklicken Sie auf die `.vsix`-Datei.  
   
@@ -358,7 +356,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
     -   Wenn die Erweiterung nicht angezeigt wird, gehen Sie wie im Folgenden beschrieben vor.  
   
-5.  Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
+5.  Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
  Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, sie erneut zu installieren, wird die folgende Meldung angezeigt: **die Erweiterung bereits für alle entsprechenden Produkte installiert ist.**  
  1.  Entfernen Sie die Erweiterungsdatei aus einem Unterordner des *LocalAppData*\Microsoft\VisualStudio\\[Version] \Extensions\  
@@ -367,7 +365,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
     -   *LocalAppData* umfasst i. d. r. C:\Users\\*Benutzername*\AppData\Local\  
   
-2.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
+2.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md)   

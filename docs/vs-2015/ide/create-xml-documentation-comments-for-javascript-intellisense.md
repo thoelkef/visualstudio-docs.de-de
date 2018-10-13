@@ -1,7 +1,7 @@
 ---
 title: Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220557"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dokumentation zu Visual Studio 2017](/visualstudio/).  
-  
 *XML-Dokumentationskommentare* werden Kommentare von JavaScript, dass Sie ein Skript zum Bereitstellen von Informationen zu Codeelementen wie z. B. Funktionen, Felder und Variablen hinzufügen. In Visual Studio werden diese textbeschreibungen mit IntelliSense angezeigt, wenn Sie die Skriptfunktion verweisen.  
   
  Dieses Thema enthält ein Lernprogramm zur Verwendung von XML-Dokumentationskommentare. Informationen zur Verwendung von anderen Elementen wie z. B. [ \<Var >](../ide/var-javascript.md) und [ \<Wert >](../ide/value-javascript.md), und Weitere Codebeispiele, finden Sie unter [XML-Dokumentationskommentare ](../ide/xml-documentation-comments-javascript.md). Weitere Informationen zum Bereitstellen von IntelliSense-Informationen für einen asynchronen Rückruf wie z. B. eine `Promise`, finden Sie unter [ \<gibt >](../ide/returns-javascript.md).  

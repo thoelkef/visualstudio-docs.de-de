@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften von Verantwortlichkeitsbereichen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd274d1de99ab4a9dac6dd6c045ef6d313fe9bb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189931"
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaften von Verantwortlichkeitsbereichen](https://docs.microsoft.com/visualstudio/modeling/properties-of-swimlanes).  
-  
 Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche teilen ein Diagramms in vertikale oder horizontale Bereiche. Sie können andere Formen, die innerhalb von Verantwortlichkeitsbereichen angezeigt werden, definieren. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Verantwortlichkeitsbereiche haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.  

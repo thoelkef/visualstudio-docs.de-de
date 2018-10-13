@@ -1,7 +1,7 @@
 ---
 title: Einschränkungen für Zeichenfolgenlängen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa5517445930b5d543148af68df7eeeb29fa8a22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f600ef47526c3b2d9e703781c8f20ddb563dcf4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206224"
 ---
 # <a name="restrictions-on-string-lengths"></a>Einschränkungen für die Längen von Zeichenfolgen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Einschränkungen für Zeichenfolgenlängen](https://docs.microsoft.com/visualstudio/extensibility/restrictions-on-string-lengths).  
-  
 Die Source-Plug-in-API schränkt die Längen der Zeichenfolgen, die in verschiedenen Funktionen verwendet.  
   
 ## <a name="string-length-values"></a>Länge-Zeichenfolgenwerten  

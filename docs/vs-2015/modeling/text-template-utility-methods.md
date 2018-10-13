@@ -1,7 +1,7 @@
 ---
 title: Hilfsprogrammmethoden für Textvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98506212abe977b16a2c580ae16075b557eb3c2a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520573"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186302"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hilfsprogrammmethoden für Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/text-template-utility-methods).  
-  
 Es gibt mehrere Methoden, die immer verfügbar, Sie beim Schreiben von Code sind einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Textvorlage. Diese Methoden werden in definiert <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]

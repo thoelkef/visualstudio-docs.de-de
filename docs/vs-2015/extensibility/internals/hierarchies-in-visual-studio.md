@@ -1,7 +1,7 @@
 ---
 title: Hierarchien in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250652"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchien in Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hierarchien in Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio).  
-  
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) zeigt ein Projekt als eine *Hierarchie*. In der IDE ist eine Hierarchie eine Struktur von Knoten, in dem jeder Knoten über einen Satz zugeordneter Eigenschaften verfügt. Ein *Projekt Hierarchie* ist ein Container, die Elemente des Projekts, die Elemente Beziehungen und zugeordneten Eigenschaften der Elemente und Befehle enthält.  
   
  In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], verwalten Sie projekthierarchien, über die hierarchienschnittstelle, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle leitet Befehle, die Sie auf der entsprechenden hierachiefenster anstelle beim standardbefehlshandler von Projektelementen aufrufen.  

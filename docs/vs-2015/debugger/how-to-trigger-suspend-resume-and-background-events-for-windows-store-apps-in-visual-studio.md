@@ -1,7 +1,7 @@
 ---
 title: Wie Sie auslösen, anhalten, fortsetzen und hintergrundereignissen für Windows Store-apps in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214759"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen für Windows Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie Sie auslösen, anhalten, fortsetzen und hintergrundereignissen für Windows Store-apps in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio).  
-  
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
   
  Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben**beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.  
@@ -135,7 +133,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
  [Testen von Store-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Anwendungslebenszyklus](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Starten, fortsetzen und multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
 
 
 

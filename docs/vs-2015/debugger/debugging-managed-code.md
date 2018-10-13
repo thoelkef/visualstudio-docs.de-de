@@ -1,7 +1,7 @@
 ---
 title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211587"
 ---
 # <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von verwaltetem Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahrensweisen für verwaltete Anwendungen bzw. Anwendungen erörtert, die in Sprachen für die Common Language Runtime geschrieben wurden, z. B. Visual Basic, C# und C++. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. Weitere Informationen finden Sie unter [mithilfe des Debuggers](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -56,7 +54,7 @@ In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahre
  [Debuggen der OnStart-Methode](../debugger/how-to-debug-the-onstart-method.md)  
  Dieser Abschnitt enthält Codebeispiele zum Debuggen der `OnStart`-Methode eines verwalteten Windows-Diensts. Um die `OnStart`-Methode eines Windows-Diensts zu debuggen, müssen Sie ein paar Codezeilen hinzufügen, mit denen der Dienst simuliert wird.  
   
- [Debuggen im gemischten Modus](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die nativen Code mit verwaltetem Code kombinieren.  
   
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -76,9 +74,9 @@ In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahre
  Fehler werden einfacher und schneller gefunden, da der Ausführungsverlauf mit IntelliTrace aufgezeichnet wird. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Erfordert Visual Studio Ultimate.  
   
  [Ablaufverfolgung und Instrumentieren von Anwendungen](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
- Hier werden die Ablaufverfolgung (eine Methode zum Überwachen der Ausführung einer Anwendung) und die Instrumentation (das Platzieren von Ablaufverfolgungsanweisungen an strategischen Stellen im Code) beschrieben. Die Links in diesem Abschnitt bringen Sie zu den folgenden Themen: Einführung in die Instrumentation und die Ablaufverfolgung, Ablaufverfolgungsschalter, Ablaufverfolgungslistener, Ablaufverfolgung für Code in einer Anwendung, Hinzufügen von Ablaufverfolgungsanweisungen zu Anwendungscode und bedingte Kompilierung mit <xref:System.Diagnostics.Debug> und <xref:System.Diagnostics.Trace>.  
+ Hier werden die Ablaufverfolgung (eine Methode zum Überwachen der Ausführung einer Anwendung) und die Instrumentation (das Platzieren von Ablaufverfolgungsanweisungen an strategischen Stellen im Code) beschrieben. Die Links in diesem Abschnitt bringen Sie zu den folgenden Themen: Einführung in die Instrumentierung und die Ablaufverfolgung, Ablaufverfolgungsschalter, Ablaufverfolgungslistener, Ablaufverfolgung für Code in einer Anwendung, Hinzufügen von Ablaufverfolgungsanweisungen zu Anwendungscode und bedingte Kompilierung mit <xref:System.Diagnostics.Debug> und <xref:System.Diagnostics.Trace>.  
   
- [/ ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Beschreibt eine Linkeroption, die hinzufügt <xref:System.Diagnostics.DebuggableAttribute> mit C++ geschriebenem Code. Dieses Attribut wird für die Verwendung von Debugfunktionen, wie das Anhängen, mit C++ benötigt.  
   
  [Debuggen von Windows-Dienstanwendungen](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
@@ -91,7 +89,7 @@ In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahre
  Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.  
   
  [Neues im Debugger in Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
- Hier finden Sie eine Beschreibung der neuen Debugfeatures im aktuellen Release von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Hier finden Sie eine Beschreibung der neuen Debugfunktionen im aktuellen Release von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Debuggen-Homepage](../debugger/debugging-in-visual-studio.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Zu den behandelten Themen gehören neue Funktionen im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, die Funktion Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von Visual C++-Projekten, Debuggen von COM und ActiveX, Debuggen von DLLs, Debuggen von SQL und Verweise auf die Benutzeroberfläche.  

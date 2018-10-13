@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Befehle | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28d7bcbb9f25667ba3e03cbad8935e8eef203036
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b1c3756075bb4a5892b9d57c0e6ba497eea3d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228136"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Studio-Befehle](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-commands).  
-  
   
 Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , das Fenster **Direkt** oder das Feld **Suchen/Befehl** aufrufen. In jedem Fall wird das Größer-als-Zeichen (`>`) verwendet, um anzugeben, dass ein Befehl folgt und kein Such- oder Debugvorgang.  
   
@@ -78,7 +76,7 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 |[Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md)|Ermöglicht die Anzeige eines bestimmten Stapelrahmens.|  
 |[Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md)|Ermöglicht die Anzeige eines bestimmten Threads.|  
 |[Basis festlegen](../../ide/reference/set-radix-command.md)|Legt die Zahl der anzuzeigenden Bytes fest.|  
-|[Shell](../../ide/reference/shell-command.md)|Startet Programme in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], als ob der Befehl in der Befehlszeile ausgeführt würde.|  
+|[Shell](../../ide/reference/shell-command.md)|Startet Programme in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde.|  
 |[Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md)|Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.|  
 |[Starten](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|  
 |[Pfad](../../ide/reference/symbol-path-command.md)|Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.|  
@@ -88,7 +86,7 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 ## <a name="see-also"></a>Siehe auch  
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

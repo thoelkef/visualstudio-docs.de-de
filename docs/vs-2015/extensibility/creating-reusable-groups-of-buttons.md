@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Wiederverwendbaren Gruppen von Schaltflächen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bf0e2f0fd80e5d6cc4dee56b5c7c87dd7cfd8e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b248543fa68e700ab978270c5cdb7bbd908c39d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232966"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Erstellen von wiederverwendbaren Gruppen von Schaltflächen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](https://docs.microsoft.com/visualstudio/extensibility/creating-reusable-groups-of-buttons).  
-  
 Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem Menü oder Symbolleiste angezeigt werden. Alle Befehlsgruppe kann erneut verwendet werden, von verschiedenen übergeordneten Menüs im Abschnitt CommandPlacements der VSCT-Datei zuweisen.  
   
  Befehlsgruppen Schaltflächen in der Regel enthalten, aber sie können auch die anderen Menüs oder Kombinationsfelder enthalten.  

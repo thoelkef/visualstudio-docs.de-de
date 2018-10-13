@@ -1,7 +1,7 @@
 ---
 title: '&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214919"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment).  
-  
 Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendungsmanifests.  
   
 ## <a name="syntax"></a>Syntax  
@@ -97,7 +95,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 |`size`|Dies ist optional. Die Größe des Anwendungsmanifests, in Bytes.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly`-Elements. Der Inhalt des `assemblyIdentity` muss genau wie beschrieben in der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Die folgende Tabelle zeigt die Attribute der `assemblyIdentity` Element.  
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements. Der Inhalt des `assemblyIdentity` muss genau wie beschrieben in der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Die folgende Tabelle zeigt die Attribute der `assemblyIdentity` Element.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -109,12 +107,12 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 |`type`|Dies ist optional. Abwärtskompatibilität der Kompatibilität mit Windows-Seite-an-Seite-Technologie installieren. Der einzige zulässige Wert ist `win32`.|  
   
 ## <a name="hash"></a>hash  
- Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Die `hash` Element besitzt keine Attribute.  
+ Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Das `hash` -Element weist keine Attribute auf.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
- Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die `dsig:Transforms` Element besitzt keine Attribute.  
+ Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
   
 ## <a name="dsigtransform"></a>dsig  
  Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Die folgende Tabelle zeigt die Attribute der `dsig:Transform` Element.  
@@ -131,7 +129,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig: DigestValue  
- Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die `dsig:DigestValue` Element besitzt keine Attribute. Der Textwert ist der berechnete Hash für die angegebene Datei.  
+ Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
   
 ## <a name="remarks"></a>Hinweise  
  Bereitstellungsmanifeste verfügen in der Regel über eine einzige `assemblyIdentity` -Element, das den Namen und die Version des Anwendungsmanifests bezeichnet.  

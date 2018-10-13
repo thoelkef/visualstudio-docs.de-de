@@ -1,7 +1,7 @@
 ---
 title: Inkrementelle Builds | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6285b0283a477ec7d658c89cf44c29e386def466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251451"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [inkrementelle Builds](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds).  
-  
   
 Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden. Zielelemente können über ein `Inputs`-Attribut, das die Elemente angibt, die das Ziel als Eingabe erwartet, sowie ein `Outputs`-Attribut verfügen, das die Elemente angibt, die es als Ausgabe erzeugt. MSBuild versucht, zwischen den Werten dieser Attribute eine 1:1-Zuordnung zu erzielen. Wenn eine 1:1-Zuordnung vorhanden ist, vergleicht MSBuild den Zeitstempel jedes Eingabeelements mit dem Zeitstempel des zugehörigen Ausgabeelements. Ausgabedateien ohne 1:1-Zuordnung werden mit allen Eingabedateien verglichen. Ein Element wird als aktuell betrachtet, wenn dessen Ausgabedatei genau so alt oder neuer als seine Eingabedatei oder -dateien ist.  
   
@@ -79,7 +77,7 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
  Ab MSBuild 3.5 wird der Ausgaberückschluss automatisch für Element- und Eigenschaftengruppen in einem Ziel ausgeführt. `CreateItem`-Aufgaben sind in einem Ziel nicht erforderlich und sollten vermieden werden. Zudem sollten `CreateProperty`-Aufgaben in einem Ziel nur verwendet werden, um zu bestimmen, ob dieses ausgeführt wurde.  
   
 ## <a name="determining-whether-a-target-has-been-run"></a>Bestimmen, ob ein Ziel ausgeführt wurde  
- Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-Aufgabe hinzufügen, um Eigenschaften und Elemente untersuchen und so bestimmen zu können, ob das Ziel ausgeführt wurde. Fügen Sie dem Ziel die Aufgabe `CreateProperty` hinzu, und weisen Sie dieser ein `Output`-Element zu, dessen `TaskParameter` auf "ValueSetByTask" festgelegt ist.  
+ Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-Aufgabe hinzufügen, um Eigenschaften und Elemente untersuchen und so bestimmen zu können, ob das Ziel ausgeführt wurde. Fügen Sie dem Ziel die Aufgabe `CreateProperty` hinzu, und weisen Sie dieser ein `Output`-Element zu, dessen `TaskParameter` auf „ValueSetByTask“ festgelegt ist.  
   
 ```  
 <CreateProperty Value="true">  

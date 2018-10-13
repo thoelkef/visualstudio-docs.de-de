@@ -1,7 +1,7 @@
 ---
 title: Verfügbarmachen von Typen für visuelle Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242007"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Verfügbarmachen von Typen für visuelle Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verfügbarmachen von Typen für visuelle Designer](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zugriff auf Klasse und Typdefinitionen erforderlich zur Entwurfszeit um einen visuellen Designer anzuzeigen. Klassen werden aus einem vordefinierten Satz von Assemblys geladen, die die vollständige Abhängigkeit des aktuellen Projekts (Verweise sowie deren Abhängigkeiten) enthalten. Es kann auch erforderlich sein für visuelle Designer zum Zugriff auf Klassen und Typen, die in Dateien, die von benutzerdefinierten Tools erzeugt definiert werden.  
   
  Die [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] und [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Projektsystemen bieten Unterstützung für den Zugriff auf generierte Klassen und Typen über temporäre Portable ausführbare Dateien (temporäre PE-Dateien). Jede Datei, die von einem benutzerdefinierten Tool generierten kann in eine temporäre Assembly kompiliert werden, sodass Typen aus diesen Assemblys geladen und für den Designer verfügbar gemacht werden können. Die Ausgabe der einzelnen benutzerdefinierten Tools in einer separaten temporäre PE-Datei kompiliert, und den Erfolg oder Misserfolg von dieser temporären Kompilierung nur davon abhängig, ob die generierte Datei kompiliert werden kann. Auch wenn ein Projekt nicht als Ganzes erstellen kann, möglicherweise einzelne temporäre PE-Dateien immer noch für Designer zur Verfügung.  

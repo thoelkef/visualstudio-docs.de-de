@@ -1,7 +1,7 @@
 ---
 title: 'UML-Anwendungsfalldiagramme: Richtlinien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c907dc4f1fe2a9d393fb5e92ca64490f7eeb54d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214239"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
-  
 Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefasst, die Ihre Anwendung oder das System verwendet und wie sie es verwenden können. Erstellen Sie ein UML-Anwendungsfalldiagramm, auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
   
  Eine Videodemo finden Sie unter [Organisieren von Funktionen in Anwendungsfällen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).  

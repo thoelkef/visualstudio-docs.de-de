@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Auswählen von Samplingereignissen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228415"
 ---
 # <a name="how-to-choose-sampling-events"></a>Gewusst wie: Auswählen von Samplingereignissen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events).  
-  
 Die Profilerstellungstools [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:  
   
 -   Taktzyklen: bei CPU-Problemen  

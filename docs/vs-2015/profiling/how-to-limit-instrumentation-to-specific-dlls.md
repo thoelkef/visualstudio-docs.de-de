@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234519"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Gewusst wie: Beschränken der Instrumentation auf bestimmte DLLs
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Gewusst wie: Beschränken der Instrumentierung auf bestimmte DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [How to: Limit Instrumentation auf bestimmte DLLs](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistung von Profilerstellungsdaten auf eine oder mehrere DLLs in einer Anwendung beschränken. Erstellen Sie eine Leistungssitzung, die die DLL-Datei als Ziel enthält, um das Profil von einer oder mehreren DLLs in einer Anwendung zu erstellen. Sie können die DLLS, für die Sie ein Profil erstellen möchten, als Projekt in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe oder als unabhängige Binärdateien angeben.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>So beschränken Sie die Instrumentation auf bestimme DLLS in einer Visual Studio-Projektmappe  

@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Anpassen von Suchergebnissen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f25465e9977efb9d3bfa2f017a4df8ce7c848a16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 033dc1cac295e0a4c0a42724eaf91ebdf123abb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212601"
 ---
 # <a name="how-to-customize-search-results"></a>Gewusst wie: Anpassen von Suchergebnissen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Anpassen von Suchergebnissen](https://docs.microsoft.com/visualstudio/ide/how-to-customize-search-results).  
-  
 Sie können auf verschiedene Weise anpassen, wie Suchergebnisse auf der Registerkarte **Suche** angezeigt werden.  
   
 ## <a name="change-the-number-of-topics-that-appear-on-a-search-results-page"></a>Ändern der Anzahl der Themen, die auf einer Suchergebnisseite angezeigt werden  

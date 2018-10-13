@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer app (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca647572eac68dcf70d21b7ed687212a0229568f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c38083a1a8e0255891b29ae23e5cf36d066e27a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180569"
 ---
 # <a name="refresh-an-app-javascript"></a>Aktualisieren einer App (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Aktualisieren einer app (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/refresh-an-app-javascript).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
  Sie können Änderungen am Code vornehmen, während Sie debuggen möchten, und aktualisieren Sie eine Store-app mit JavaScript durch Auswählen der **Aktualisieren von Windows-app** Schaltfläche der **Debuggen** Symbolleiste. Durch Auswählen dieser Schaltfläche wird die App erneut geladen, ohne den Debugger zu beenden und erneut zu starten. Die Aktualisierungsfunktion ermöglicht es Ihnen, HTML, CSS und JavaScript-Code zu ändern und das Ergebnis schnell anzuzeigen. Diese Funktion wird sowohl für Windows Store- als auch für Windows Phone Store-Apps unterstützt.  

@@ -1,7 +1,7 @@
 ---
 title: 'UML-Klassendiagramme: Referenz | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 239b5427c4e19b15e44d683def0e2d6c82dccdfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220126"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML-Klassendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Klassendiagramme: Referenz](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-reference).  
-  
 Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, die sowohl intern als auch bei der Kommunikation mit Benutzern von der Anwendung verwendet werden. Die Informationen werden ohne Verweis auf eine bestimmte Implementierung beschrieben. Die Klassen und Beziehungen können auf viele verschiedene Arten implementiert werden, z. B. Datenbanktabellen, XML-Knoten oder Zusammenstellungen von Softwareobjekten.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: XSLT-Profiler | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a52682dbbec3f4e1cdc50027ca365cd9a1ca44b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229449"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Exemplarische Vorgehensweise: XSLT-Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: XSLT-Profiler](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-xslt-profiler).  
-  
   
 Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, Messung und Bewertung leistungsbezogener Probleme im XSLT-Code. Der XSLT-Profiler enthält nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen. Für XSLT-Anwendungen, bei denen maximale Leistung erforderlich ist, ist dieses Tool unentbehrlich.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Verfahren in der folgenden exemplarischen Vorgehensweise sind Visual Studio 2010 und .NET Framework Version 4.0 erforderlich. Der XSLT-Profiler ist nur in Microsoft Visual Studio Team System mit installierten Profilerstellungstools verfügbar.  
   
 ### <a name="create-the-performance-report"></a>Erstellen des Leistungsberichts  

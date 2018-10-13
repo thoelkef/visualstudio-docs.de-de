@@ -1,7 +1,7 @@
 ---
 title: GetReferenceAssemblyPaths-Task | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 619a533e1bdbdec00e631aac64d6ddf84bf161c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b885443fba9b92e1d4004987988e4d743f3921d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244480"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [GetReferenceAssemblyPaths-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/getreferenceassemblypaths-task).  
-  
   
 Gibt den Verweisassemblypfad der verschiedenen Frameworks zurück  
   

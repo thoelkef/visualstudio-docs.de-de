@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Kommentaren Sperrverhalten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f34eb22d56cc6a1e47e07229a5b3e922aee5c386
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 881fa2a0355c1524855008d508163a3012f95dff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187505"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Sperrverhalten kommentieren](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior).  
-  
 Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führen Sie eine entsprechende Sperren Disziplin immer, und Verwenden von SAL-Anmerkungen an.  
   
  Fehler bei der Parallelität sind bekanntermaßen schwierig zu reproduzieren, diagnostizieren und zu debuggen, da sie nicht deterministisch sind. Argumentation Thread überlappen ist bestenfalls schwierig und unpraktisch wird, wenn Sie einen Codeabschnitt entwerfen, die mehr als ein paar Threads hat. Aus diesem Grund ist es empfiehlt sich, eine Sperre Disziplin in Ihre Multithreadprogramme zu folgen. Z. B. eine Sperre Reihenfolge obeying, während mehrere Sperren kann Deadlocks zu vermeiden, und die richtige guarding Sperre abrufen, bevor Sie den Zugriff auf eine freigegebene Ressource verhindert, dass Racebedingungen.  

@@ -1,7 +1,7 @@
 ---
 title: Analysieren des Energieverbrauchs in Store-Apps | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b204a31e5efe9c7870a02e9eb7a0a48c19d4c6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189253"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analysieren des Energieverbrauchs in Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Analysieren des Energieverbrauchs in Store-apps](https://docs.microsoft.com/visualstudio/profiling/analyze-energy-use-in-store-apps).  
-  
 Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und Energieverbrauch von Windows Store-Apps auf Tabletgeräten mit geringer Leistung zu analysieren, die die ganze Zeit oder zeitweilig von eigenen Akkus betrieben werden. Auf einem akkubetriebenen Gerät kann eine App, die zu viel Energie verbraucht, die Kundenzufriedenheit so sehr beeinträchtigen, dass sie von den Kunden möglicherweise sogar deinstalliert wird. Ein optimierter Energieverbrauch kann die Akzeptanz Ihrer App und deren Nutzung durch die Kunden erhöhen.  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Beschreibung, Funktionsweise und Messwerte des Energieverbrauchsprofilers  

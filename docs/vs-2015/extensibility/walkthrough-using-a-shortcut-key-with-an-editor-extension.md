@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8497b4b8192c4ad888c850b9ec2ab37c89f334
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232413"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: verwenden eine Tastenkombination mit einer Editor-Erweiterung](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension).  
-  
 Sie können in die editorerweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Zusatzelement auf eine Textansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Zusatzelement-Editor-Vorlage, und es Ihnen, fügen das Zusatzelement mit den Zeichen +.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  

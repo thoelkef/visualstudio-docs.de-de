@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden Sie das GPU-Threadfenster | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a747ec02e8b47649e42ec8fcb600de97f549c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236807"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Gewusst wie: Verwenden des Fensters "GPU-Threads"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von GPU-Threads im Debugger](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-gpu-threads-window).  
-  
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf dem GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  Das GPU-Threadfenster enthält eine Tabelle, in der jede Zeile einen Satz GPU-Threads darstellt, die in allen Spalten über die gleichen Werte verfügen. Sie können Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads aus dem GPU-Threadfenster heraus kennzeichnen, die Kennzeichnung aufheben, sie einfrieren (anhalten), und reaktivieren (fortsetzen). Die folgenden Spalten werden im GPU-Threadfenster angezeigt:  

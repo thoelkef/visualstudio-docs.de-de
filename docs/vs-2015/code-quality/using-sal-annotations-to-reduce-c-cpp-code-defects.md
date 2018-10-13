@@ -1,7 +1,7 @@
 ---
 title: Verwenden von SAL-Anmerkungen zum Reduzieren von C / C++-Codefehlern | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207011"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
 SAL ist die Microsoft Source Code Annotation-Sprache. Mithilfe von Code quellanmerkungen können Sie die Absicht hinter Ihrem Code explizit machen. Diese Anmerkungen ermöglichen auch die automatisierte statische Analyse-Tools zum Analysieren von Code genauer gesagt mit deutlich weniger falsch positive Ergebnisse und falschen negativen Ergebnissen.  
   
  Die Artikel in diesem Abschnitt der Dokumentation erläutert die Aspekte von SAL, Verweis bereitstellen, die für die Syntax für SAL und Beispielen für deren Verwendung geben.  

@@ -1,7 +1,7 @@
 ---
 title: Fenster Meldungssuche (Dialogfeld) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179971"
 ---
 # <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dialogfeld Fenstersuche](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box).  
-  
 Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für ein bestimmtes Intervall in [Windows-Ansicht](../debugger/windows-view.md). Zum Anzeigen dieses Dialogfeld können Sie Sie mit den Fokus auf das Fenster "Windows". Wählen Sie dann **Fenster Suchen** aus der **Suche** Menü.  
   
  Sie können die **Suchtool** , wählen Sie ein Fenster, oder Sie können das Fensterhandle oder das Fenster von Titel und die Klasse identifizieren.  

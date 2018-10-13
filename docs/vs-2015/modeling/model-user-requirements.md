@@ -1,7 +1,7 @@
 ---
 title: Modellieren von benutzeranforderungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215825"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Modellieren von benutzeranforderungen](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
-  
 Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Modellieren der Geschäftsdomäne) .  
   
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -143,7 +141,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|  
 |Entwickeln von Code aus konzeptionellen Klassen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
- In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Die folgenden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung einrichten nicht direktionale Pfeile als Standard: [Sample: UML Domain Modeling Features](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)(Beispiel zu Funktionen für die UML-Domänenmodellierung).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.  
