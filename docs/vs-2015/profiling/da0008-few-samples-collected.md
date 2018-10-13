@@ -1,7 +1,7 @@
 ---
 title: 'DA0008: Es wurden nur wenige Beispiele aufgelistet | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 205bedf2baa7c9fa1e1c5f40ccbaa4041427074b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e294c03f958259f26938865a3e26c6fb7669d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289808"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Es wurden nur wenige Beispiele aufgelistet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [DA0008 es wurden nur: wenige Beispiele aufgelistet](https://docs.microsoft.com/visualstudio/profiling/da0008-few-samples-collected).  
-  
 Regel-Id | DA0008 ES WURDEN NUR |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  

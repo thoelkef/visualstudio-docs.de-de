@@ -1,7 +1,7 @@
 ---
 title: Legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d869f226206923a6e45646611b715786bfc5995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293682"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
-  
   
 Sie können datengebundene Steuerelemente durch Ziehen von Elementen aus der **Datenquellen** Fenster in den WPF- oder Windows Forms-Designer. Jedes Element in der **Datenquellen** verfügt über ein Standardsteuerelement, das erstellt wird, wenn Sie es in den Designer ziehen. Sie können jedoch ein anderes Steuerelement erstellen.  
   

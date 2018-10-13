@@ -1,7 +1,7 @@
 ---
 title: Definieren ein linkhandlers für Arbeitsaufgaben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523536"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290419"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definieren eines Linkhandlers für Arbeitselemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [definieren ein linkhandlers für Arbeitsaufgaben](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Sie können eine Visual Studio Integration Extension erstellen, die auf das Erstellen oder Löschen eines Links zwischen einem UML-Modellelement und einem Arbeitselement durch den Benutzer reagiert. Wenn Benutzer eine neue Arbeitsaufgabe mit einem Modellelement verknüpfen, können beispielsweise im Code die Felder der Arbeitsaufgabe aus Werten im Modell initialisiert werden.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Einrichten einer UML-Erweiterungsprojektmappe  
@@ -167,7 +165,7 @@ namespace WorkItems
   
      **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet wird, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt ist.  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
+2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
   
 3.  Erstellen Sie ein Modellelement (z. B. eine UML-Klasse), und legen Sie dessen Namen fest.  
   

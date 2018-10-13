@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann nicht an diesem Computer herstellen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27ae98de5ac5062bd55a3818b82e1f6ba771b612
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1c9e52c700f83b3da56bb7db82e1e4cd7976767
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297756"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio-Remotedebugdienst auf dem Zielcomputer kann keine Rückverbindung mit diesem Computer herstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: die Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann keine Verbindung hergestellt, rückverbindung mit diesem Computer](https://docs.microsoft.com/visualstudio/debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer).  
-  
 Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benutzerkonto ausgeführt wird, das beim Versuch, eine Verbindung zu dem Computer herzustellen, von dem aus Sie debuggen, nicht authentifiziert werden kann.  
   
  Die folgende Tabelle zeigt, welche Konten auf den Computer zugreifen können:  
@@ -85,7 +83,7 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

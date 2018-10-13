@@ -1,7 +1,7 @@
 ---
 title: ClickOnce und Authenticode | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289483"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce und Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ClickOnce und Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
-Authenticode * ist eine Microsoft-Technologie, die mithilfe von Industriestandard-Kryptografie Anwendungscode mit digitalen Zertifikaten signiert, die die Echtheit des Herausgebers der Anwendung zu überprüfen. Durch die Verwendung von Authenticode bei der Bereitstellung einer Anwendung [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reduziert das Risiko eines trojanischen Pferdes. Ein trojanisches Pferd ist ein Virus oder ein schädliches Programm, das ein böswilliger Drittanbieter als sicheres Programm aus einer bekannten und vertrauenswürdigen Quelle darstellt. Signieren von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellungen mit einem digitalen Zertifikat ist ein optionaler Schritt, um sicherzustellen, dass die Assemblys und Dateien nicht manipuliert wurden.  
+Authenticode * ist eine Microsoft-Technologie, die mithilfe von Industriestandard-Kryptografie Anwendungscode mit digitalen Zertifikaten signiert, die die Echtheit des Herausgebers der Anwendung zu überprüfen. Durch die Verwendung von Authenticode bei der Bereitstellung einer Anwendung reduziert [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] das Risiko eines trojanischen Pferdes. Ein trojanisches Pferd ist ein Virus oder ein schädliches Programm, das ein böswilliger Drittanbieter als sicheres Programm aus einer bekannten und vertrauenswürdigen Quelle darstellt. Signieren von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellungen mit einem digitalen Zertifikat ist ein optionaler Schritt, um sicherzustellen, dass die Assemblys und Dateien nicht manipuliert wurden.  
   
  In den folgenden Abschnitten sind die verschiedenen Typen von digitalen Zertifikaten beschrieben, die in Authenticode verwendet werden, wie Zertifikate durch Zertifizierungsstellen (CAs) überprüft werden, die Rolle des Zeitstempels in Zertifikaten und die Methoden des verfügbaren Speichers für Zertifikate.  
   
 ## <a name="authenticode-and-code-signing"></a>Authenticode und Codesignatur  
  Ein *digitales Zertifikat* ist eine Datei, die ein öffentliches/privates kryptografisches Schlüsselpaar enthält sowie Metadaten über den Herausgeber, für den das Zertifikat ausgestellt wurde, und die Agentur, die das Zertifikat ausgestellt hat.  
   
- Es gibt viele verschiedene Arten von Authenticode-Zertifikaten. Jedes ist für unterschiedliche Arten von Signaturen konfiguriert. Für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungen benötigen Sie ein Authenticode-Zertifikat, das zum Signieren von Code gültig ist. Wenn Sie versuchen, sich ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mit einem anderen Typ des Zertifikats ein, z.B. einem digitalen Zertifikat für E-mail, funktioniert dies nicht. Weitere Informationen finden Sie unter [Einführung in die Codesignatur](http://go.microsoft.com/fwlink/?LinkId=179452).  
+ Es gibt viele verschiedene Arten von Authenticode-Zertifikaten. Jedes ist für unterschiedliche Arten von Signaturen konfiguriert. Für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen benötigen Sie ein Authenticode-Zertifikat, das zum Signieren von Code gültig ist. Wenn Sie versuchen, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mit einem anderen Typ von Zertifikat zu signieren, z.B. einem digitalen Zertifikat für E-Mail, funktioniert dies nicht. Weitere Informationen finden Sie unter [Einführung in die Codesignatur](http://go.microsoft.com/fwlink/?LinkId=179452).  
   
  Sie können ein Zertifikat für Codesignaturen auf eine von drei Arten abrufen:  
   
@@ -76,7 +74,7 @@ Authenticode * ist eine Microsoft-Technologie, die mithilfe von Industriestandar
   
 ### <a name="storing-certificates"></a>Speichern von Zertifikaten  
   
--   Sie können Zertifikate als PFX-Datei im Dateisystem speichern oder in einem Schlüsselcontainer speichern. Ein Benutzer auf einer Windows-Domäne kann über mehrere Schlüsselcontainer verfügen. Standardmäßig werden MakeCert.exe Zertifikate in Ihrem persönlichen Schlüsselcontainer gespeichert, es sei denn, Sie geben an, dass sie in einer PFX-Datei gespeichert werden sollen. Mage.exe und MageUI.exe, die [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Tools zum Erstellen von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellungen, ermöglichen es Ihnen, auf beide Arten gespeicherte Zertifikate zu verwenden.  
+-   Sie können Zertifikate als PFX-Datei im Dateisystem speichern oder in einem Schlüsselcontainer speichern. Ein Benutzer auf einer Windows-Domäne kann über mehrere Schlüsselcontainer verfügen. Standardmäßig werden MakeCert.exe Zertifikate in Ihrem persönlichen Schlüsselcontainer gespeichert, es sei denn, Sie geben an, dass sie in einer PFX-Datei gespeichert werden sollen. Mage.exe und MageUI.exe, die [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Tools zum Erstellen von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellungen, ermöglichen es Ihnen, auf beide Arten gespeicherte Zertifikate zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   

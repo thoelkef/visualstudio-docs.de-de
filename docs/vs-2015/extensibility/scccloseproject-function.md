@@ -1,7 +1,7 @@
 ---
 title: SccCloseProject-Funktion | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebc9d43ebf712d8add7e2aee4f7884ef2754da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06f4e1e4ed8d59ce040c9bcfb531d16908d26c43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290783"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [SccCloseProject-Funktion](https://docs.microsoft.com/visualstudio/extensibility/scccloseproject-function).  
-  
 Diese Funktion schließt ein Projekt, das das Ende einer bestimmten Sitzung markiert.  
   
 ## <a name="syntax"></a>Syntax  

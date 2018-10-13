@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Anwendungseinstellungen (.NET) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289509"
 ---
 # <a name="managing-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwalten von Einstellungen (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 Anwendungseinstellungen ermöglichen ein dynamisches Speichern von Anwendungsinformationen. Mit Einstellungen können Sie Informationen über den Clientcomputer speichern, die nicht im Anwendungscode enthalten sein sollen (beispielsweise eine Verbindungszeichenfolge). Außerdem können Benutzereinstellungen und andere zur Laufzeit benötigte Informationen gespeichert werden.  
   
  Durch Anwendungseinstellungen werden die dynamischen Eigenschaften ersetzt, die in früheren Versionen von Visual Studio verwendet wurden.  

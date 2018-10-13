@@ -1,7 +1,7 @@
 ---
 title: Grundlagen zu Leistungserfassungsmethoden | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512923"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295723"
 ---
 # <a name="understanding-performance-collection-methods"></a>Grundlagen zu Leistungserfassungsmethoden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Grundlagen zu Profilerstellungsmethoden](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Sammeln von Leistungsdaten bereitgestellt. In diesem Thema werden die verschiedenen Methoden beschrieben sowie einige Szenarien aufgeführt, in denen die Datensammlung mithilfe einer bestimmten Methode erfolgen kann.  
   
 > [!NOTE]

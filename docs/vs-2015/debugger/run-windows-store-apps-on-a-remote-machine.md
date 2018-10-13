@@ -1,7 +1,7 @@
 ---
 title: Führen Sie Windows Store-apps auf einem Remotecomputer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289574"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ausführen von Windows Store-Apps auf einem Remotecomputer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Run Windows Store-apps auf einem Remotecomputer](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_content")  
   
  Mit der App "Visual Studio-Remotetools" können Sie eine auf einem Gerät ausgeführte Windows Store-App von einem zweiten Computer, auf dem Visual Studio ausgeführt wird, ausführen, debuggen, für die Profilerstellung verwenden und testen. Die Ausführung auf einem Remotegerät kann besonders dann effektiv sein, wenn der Visual Studio-Computer keine für Windows Store-Apps spezifischen Funktionalitäten wie Fingereingabe, Geolocation und physische Ausrichtung unterstützt. In diesem Thema wird beschrieben, wie Sie eine Remotesitzung konfigurieren und starten.  
@@ -81,7 +79,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 ##  <a name="BKMK_Installing_the_Remote_Tools"></a> Installieren der Remotetools  
   
 > [!NOTE]
->  **Versionen und updates**  
+>  **Versionen und Updates**  
 >   
 >  Die **Remotetools für Visual Studio 2015** werden für frühere Versionen von Visual Studio nicht unterstützt.  
 >   

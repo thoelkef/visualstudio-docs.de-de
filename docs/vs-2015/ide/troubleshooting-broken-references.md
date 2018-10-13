@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung bei fehlerhaften Verweisen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292941"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Problembehandlung bei fehlerhaften verweisen](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein Ausnahmefehler generiert. Der Fehler wird in erster Linie dadurch ausgelöst, dass die Komponente, auf die verwiesen wird, nicht gefunden wurde. In anderen Fällen kann jedoch davon ausgegangen werden, dass der Verweis fehlerhaft ist. Diese Fälle werden im Folgenden aufgeführt:  
   
 -   Der Verweispfad des Projekts ist falsch oder unvollständig.  

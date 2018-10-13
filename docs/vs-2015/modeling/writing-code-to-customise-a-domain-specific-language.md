@@ -1,7 +1,7 @@
 ---
 title: Schreiben von Code zum Anpassen einer domänenspezifischen Sprache | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d22bc992da094ea592f508f3d9e0662977e7e534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9debc18c9d99c9b44b66116ff2f956296fdc19f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293344"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](https://docs.microsoft.com/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language).  
-  
 In diesem Abschnitt erfahren Sie, wie Sie mit benutzerdefinierten Code zugreifen, ändern oder erstellen ein Modell in einer domänenspezifischen Sprache.  
   
  Es gibt mehrere Kontexte, in denen Sie Code schreiben können, die mit einer DSL funktioniert:  

@@ -1,7 +1,7 @@
 ---
 title: Binden von WPF-Steuerelementen zu einem Dataset | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e04e8ec9ae181a7cb894b22efecab0ad6ba68b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289561"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Binden von WPF-Steuerelemente zu einem Dataset](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-a-dataset).  
-  
   
 In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie fügen außerdem Schaltflächen hinzu, mit denen es möglich ist, Produkte zu durchsuchen und Änderungen an Produktdatensätzen zu speichern.  
   
@@ -48,7 +46,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
      [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
@@ -205,14 +203,14 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]  
   
-3.  Fügen Sie dem `backButton_Click`-Ereignishandler folgenden Code hinzu:  
+3.  Fügen Sie dem `backButton_Click` -Ereignishandler folgenden Code hinzu:  
   
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]  
   
 4.  Zurück zu den Designer und doppelklicken Sie auf die **>** Schaltfläche.  
   
-5.  Fügen Sie dem `nextButton_Click`-Ereignishandler folgenden Code hinzu:  
+5.  Fügen Sie dem `nextButton_Click` -Ereignishandler folgenden Code hinzu:  
   
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]  
@@ -226,7 +224,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
      Visual Studio öffnet die CodeBehind-Datei und erstellt ein neues `saveButton_Click` -Ereignishandler für die <xref:System.Windows.Controls.Primitives.ButtonBase.Click> Ereignis.  
   
-2.  Fügen Sie dem `saveButton_Click`-Ereignishandler folgenden Code hinzu:  
+2.  Fügen Sie dem `saveButton_Click` -Ereignishandler folgenden Code hinzu:  
   
      [!code-csharp[Data_WPFDATASET#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  

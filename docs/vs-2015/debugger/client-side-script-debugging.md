@@ -1,7 +1,7 @@
 ---
 title: Debuggen von clientseitigen Skripts | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288027"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von clientseitigen Skripts](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging).  
-  
 Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und Beheben von Fehlern in clientseitigen Skripts auf ASP.NET-Seiten bereit.  
   
 ## <a name="opening-script-documents"></a>Öffnen von Skriptdokumenten  
@@ -45,7 +43,7 @@ Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und B
 ## <a name="manually-or-automatically-attaching-to-script"></a>Manuelles oder automatisches Anhängen an Skripts  
  Um mit dem Debuggen von Skripts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu beginnen, muss der Debugger an das Skript anhängt werden, das Sie debuggen möchten. Dies kann manuell oder automatisch geschehen.  
   
- Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  Der Debugger wird automatisch an das Skript angehängt, wenn eine der folgenden Bedingungen zutrifft:  
   
@@ -67,7 +65,7 @@ Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und B
 ## <a name="debugging-ajax-script-applications"></a>Debuggen von AJAX-Skriptanwendungen  
  AJAX-fähige Webanwendungen machen umfangreichen Gebrauch von Skriptcode und stellen besondere Anforderungen an das Debuggen. Weitere Informationen zu den Verfahrensweisen beim AJAX-Debuggen finden Sie unter  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)öffnen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   

@@ -1,7 +1,7 @@
 ---
 title: Nicht unterstützte Bearbeitungen in Visual Basic bearbeiten und fortfahren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296321"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [in Visual Basic zu bearbeiten und Fortfahren nicht unterstützte bearbeitet](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 "Bearbeiten und Fortfahren" bietet im Unterbrechungsmodus die Möglichkeit, die Programmausführung anzuhalten, Änderungen im Ausführungscode vorzunehmen und die Programmausführung mit den neu eingefügten Änderungen wieder aufzunehmen. Bearbeitungen von deklarativem Code, die die öffentliche Struktur einer Klasse beeinflussen, sind generell unzulässig. Viele der Bearbeitungen, die Sie ggf. an einer Methode, an Eigenschaftentext oder an privaten Deklarationen in einer Klasse vornehmen, sind dagegen zulässig.  
   
  Wenn Sie eine nicht unterstützte Änderungen vornehmen möchten, müssen Sie das Debuggen unterbrechen, die Änderungen vornehmen und eine neue Debugsitzung starten.  

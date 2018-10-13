@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Visual Studio-Grafikdiagnose | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2321e590591d6c3d80b41c58147820cf0248f403
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285739"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Übersicht der Visual Studio-Grafikdiagnose](https://docs.microsoft.com/visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics).  
-  
 Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicken Sie dann Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Verwenden der Grafikdiagnose zum Debuggen von Renderingproblemen  

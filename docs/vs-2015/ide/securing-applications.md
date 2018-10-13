@@ -1,7 +1,7 @@
 ---
 title: Sichern von Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57de571a778724a5bb951039c92b7d358c7824bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291277"
 ---
 # <a name="securing-applications"></a>Sichern von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Sichern von Anwendungen](https://docs.microsoft.com/visualstudio/ide/securing-applications).  
-  
 Während bei den meisten Anwendungen die Sicherheitsprobleme gleich sind, bringt jede Anwendungsdomäne eigene Probleme mit sich.  
   
 ## <a name="general-security-considerations"></a>Allgemeine Überlegungen zur Sicherheit  

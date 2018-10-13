@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47591022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289915"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Meine erste WPF-Desktop Application2](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2).  
-  
 ein Name = "Einführung in" ></a> diese exemplarische Vorgehensweise enthält eine Einführung in Windows Presentation Foundation (WPF)-Entwicklung. Sie erstellen eine Basisanwendung mit Elementen, die für die meisten WPF-Desktopanwendung verwendet werden: XAML-Markup, CodeBehind, Anwendungsdefinitionen, Steuerelemente, Layout, Datenbindung und Stile.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Erstellen des Anwendungsprojekts  

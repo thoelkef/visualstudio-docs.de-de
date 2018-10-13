@@ -1,7 +1,7 @@
 ---
 title: Installieren und Konfigurieren von Tools zum Erstellen mit iOS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 84ff5fbd829fa47452ba258d431dcc0d0148ebf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295281"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [installieren und Konfigurieren von Tools zum Erstellen mit iOS](https://docs.microsoft.com/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios).  
-  
   
 Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
   

@@ -1,14 +1,14 @@
 ---
 title: Verwenden von Modellen im Entwicklungsprozess | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285999"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Modellen im Entwicklungsprozess](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process).  
-  
 In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung oder eine Komponente zu verstehen und zu ändern. Mit einem Modell können Sie das Umfeld des Systems visuell darstellen, Anforderungen der Benutzer verdeutlichen, die Architektur des Systems definieren, den Code analysieren und sicherstellen, dass der Code die Anforderungen erfüllt. Finden Sie unter [Channel 9-Video: Verbessern der Architektur durch Modellierung](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -145,7 +143,7 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden von Modellen in Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
  [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)   
