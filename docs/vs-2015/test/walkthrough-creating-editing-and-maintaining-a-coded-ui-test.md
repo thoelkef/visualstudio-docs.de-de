@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c438d507a404f75e77c7a4d9434b273a9d5c5876
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257529"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: erstellen, bearbeiten und Verwalten von Tests der programmierten UI](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test).  
-  
 In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Presentation Foundation (WPF)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für diese exemplarische Vorgehensweise benötigen Sie:  
   
 -   Visual Studio Enterprise  

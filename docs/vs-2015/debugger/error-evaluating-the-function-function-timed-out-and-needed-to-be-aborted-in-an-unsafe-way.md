@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Die Funktion auswerten &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78d4b8f433c925521a978ab5c3a5076f329c407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5505597c156302f0799667a45239935914fa2fa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255283"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Die Funktion auswerten &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: die Funktion auswerten &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen](https://docs.microsoft.com/visualstudio/debugger/error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way).  
-  
 Vollständiger Nachrichtentext: Timeout beim Auswerten der Funktion 'Funktion', und musste auf unsichere Weise abgebrochen werden. Dies kann den Zielprozess beschädigt. 
 
 Zum Überprüfen des Status von Objekten für .NET zu vereinfachen, wird der Debugger automatisch den gedebuggten Prozess zum Ausführen von zusätzlichen Codes (in der Regel die Eigenschaft Getter-Methoden und Funktionen mit ToString) erzwungen. In den meisten Szenarien alle diese Funktionen schnell ausführen und Debuggen deutlich vereinfacht. Der Debugger nicht jedoch die Anwendung in einer Sandbox ausgeführt wird. Daher kann eine Abruf- oder die ToString-Methode, die eine native Funktion aufruft, das hängt zu lange Timeouts führen, die nicht wiederhergestellt werden kann. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.

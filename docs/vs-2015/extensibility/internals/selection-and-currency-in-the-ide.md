@@ -1,7 +1,7 @@
 ---
 title: Auswahl und Aktualität in der IDE | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87796930b8b1f76e7601bfd2dbffdddcf8d32da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270923"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Auswahl und Aktualität in der IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Auswahl und Aktualität in der IDE](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-and-currency-in-the-ide).  
-  
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu Benutzer ausgewählte Objekte derzeit mit der Auswahl *Kontext*. Mit Auswahlkontext können VSPackages Teil in der Währung, die nachverfolgung auf zwei Arten ausführen:  
   
 -   Verbreiten Sie Informationen zu Währungen finden Informationen zu den VSPackages in der IDE.  

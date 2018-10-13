@@ -1,7 +1,7 @@
 ---
 title: Feedback an den Benutzer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3462edb539822cd856cd7281566674b4ed0c4def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb2942d0449e69ef25e26e6194d67bc7b0484e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263839"
 ---
 # <a name="feedback-to-the-user"></a>Feedback an den Benutzer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Feedback an den Benutzer](https://docs.microsoft.com/visualstudio/extensibility/internals/feedback-to-the-user).  
-  
 In der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE), visuelles Feedback in Bezug auf verfügbare Funktionalität auf der aktuellen Auswahl und globale Auswahlkontext des Benutzers basiert. Die folgende Tabelle enthält die Funktionalität, die in andere Auswahl Kontexten verfügbar ist.  
   
 |Auswahlkontext|Verfügbaren Funktionen|  

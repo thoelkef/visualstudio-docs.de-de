@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252992"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und diese Informationen beibehalten Branding](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information).  
-  
 Bei der Erstellung einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird der Kunde musste früher das Bereitstellungsmanifest aktualisieren und erneut signieren. Weiterhin ist die bevorzugte Methode in den meisten Fällen .NET Framework 3.5 ermöglicht Ihnen die Erstellung [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungen, die von Kunden bereitgestellt werden können, ohne dass ein neues Bereitstellungsmanifest erneut zu generieren. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
  Bei der Erstellung einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird die Anwendung des Kunden Brandinginformationen verwenden oder Ihr branding beibehalten kann. Z. B., wenn die Anwendung eine einzelne geschützte Anwendung ist, möchten Sie Ihr branding beibehalten. Wenn die Anwendung hoch für jeden Kunden angepasst wird, empfiehlt es sich mit branding des Kunden. .NET Framework 3.5 können Sie Ihr branding beibehalten, Herausgeberinformationen und Security-Signatur, wenn Sie eine bereitzustellende Anwendung für eine Organisation geben. Weitere Informationen finden Sie unter [Erstellen von ClickOnce-Anwendungen für andere bereitstellen](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
@@ -47,7 +45,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 
 > [!NOTE]
 >  In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell mithilfe der entweder das Befehlszeilentool Mage.exe oder MageUI.exe über das grafische Tool. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Ausführen der Schritte in dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Eine Windows Forms-Anwendung, die Sie bereitstellen möchten. Diese Anwendung wird als WindowsFormsApp1 bezeichnet werden.  

@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen eines Befehls zur Symbolleiste Projektmappen-Explorer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254379"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen eines Befehls zur Symbolleiste Projektmappen-Explorer](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche zum Hinzufügen der **Projektmappen-Explorer** Symbolleiste.  
   
  Jeder Befehl in einer Symbolleiste oder jedem Menü wird eine Schaltfläche in Visual Studio aufgerufen werden. Wenn die Schaltfläche geklickt wird, wird der Code in den Befehlshandler ausgeführt. In der Regel sind verwandte Befehle gruppiert, um eine Gruppe zu bilden. Menüs oder Symbolleisten fungieren als Container für Gruppen. Priorität bestimmt die Reihenfolge, in der einzelnen Befehle in einer Gruppe im Menü oder auf der Symbolleiste angezeigt werden. Sie können verhindern, dass eine Schaltfläche auf der Symbolleiste oder im Menü angezeigt wird, indem Sie deren Sichtbarkeit steuern. Ein Befehl, der in aufgelistet ist eine `<VisibilityConstraints>` Abschnitt der VSCT-Datei wird nur in den zugeordneten Kontext angezeigt. Die Sichtbarkeit kann nicht auf Gruppen angewendet werden.  
@@ -38,7 +36,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
 > [!NOTE]
 >  Verwenden Sie XML-Command Table (.vsct)-Dateien anstelle von Befehlsdateien Tabelle-Konfigurationsdatei (.ctc) definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl  

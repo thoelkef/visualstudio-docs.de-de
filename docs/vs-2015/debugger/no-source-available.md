@@ -1,7 +1,7 @@
 ---
 title: Keine Quelle verfügbar | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266083"
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [keine Quelle verfügbar](https://docs.microsoft.com/visualstudio/debugger/no-source-available).  
-  
 Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Normalerweise ist die Ursache ist ein Modul, das nicht Quellcode, in verfügt durch Doppelklicken auf die **Call Stack Window** oder **Fensters "Threads"**. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt festlegen möchten, verwenden Sie die **Disassemblyfenster** stattdessen.  
   
  Auf den Eigenschaftenseiten für Projektmappen können Sie die Verzeichnisse ändern, in denen der Debugger nach Quelldateien sucht, und den Debugger anweisen, die ausgewählten Quelldateien zu ignorieren. Finden Sie unter [Debuggen Quelle-Dateien, allgemeine Eigenschaften, Lösung Property Pages Dialog Box](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  

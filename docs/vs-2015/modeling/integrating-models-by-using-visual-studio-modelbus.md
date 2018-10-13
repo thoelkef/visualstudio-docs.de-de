@@ -1,7 +1,7 @@
 ---
 title: Integrieren von Modellen mit Visual Studio-Modelbus | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cbc89ae03e96a574e3d63a8448628d29ecf163f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aa105ea43eaee0c82ee4572c21beb2e7b74315a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256255"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrieren von Modellen mit Visual Studio-ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](https://docs.microsoft.com/visualstudio/modeling/integrating-models-by-using-visual-studio-modelbus).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus stellt eine Methode zum Erstellen von Links zwischen Modellen und von anderen Tools in Modelle bereit. Sie können z. B. einer domänenspezifischen Sprache (DSL) Modelle und UML-Modelle verknüpfen. Sie können einen integrierten Satz von DSLs erstellen.  
   
  Mit ModelBus können Sie einen eindeutigen Verweis auf ein Modell oder ein bestimmtes Element in einem Modell erstellen. Dieser Verweis kann außerhalb des Modells gespeichert werden, beispielweise in einem Element eines anderen Modells. Wenn zu einem späteren Zeitpunkt ein Tool Zugriff auf das Element benötigt, wird das entsprechende Modell in der Modellbusinfrastruktur geladen und das Element zurückgegeben. Bei Bedarf können Sie das Modell dem Benutzer zeigen. Wenn am vorherigen Speicherort kein Zugriff auf die Datei möglich ist, wird der Benutzer von ModelBus aufgefordert, nach der Datei zu suchen. Findet der Benutzer die Datei, korrigiert ModelBus alle Verweise auf die Datei.  

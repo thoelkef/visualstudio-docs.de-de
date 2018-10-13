@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e10c19480004345d4a5df1d628972a788794e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254474"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt + F12)](https://docs.microsoft.com/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).  
-  
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.  
   
  Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic **"Definition einsehen"** zeigt eine Verknüpfung mit der **Objektkatalog** für Symbole ohne Definition Metadaten (z. B. .NET Framework-Typen, die integriert sind).  

@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Software Development Kits | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a1fb90707a14ff010c74cfee1f7e0dde854aa6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268347"
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen eines Software Development Kits](https://docs.microsoft.com/visualstudio/extensibility/creating-a-software-development-kit).  
-  
 Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein einzelnes Element in Visual Studio verweisen können. Die **Verweis-Manager** Dialogfeld listet alle SDKs, die für das Projekt relevant sind. Wenn Sie ein Projekt eine SDK hinzufügen, sind die APIs in Visual Studio verfügbar.  
   
  Es gibt zwei Arten von SDKs:  

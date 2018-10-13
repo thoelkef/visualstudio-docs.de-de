@@ -1,7 +1,7 @@
 ---
 title: RC-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ff118a6d32a182d1060cc051f24352b16037039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259347"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [RC-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/rc-task).  
-  
   
 Umschließt das Microsoft Windows-Ressourcencompilertool („rc.exe“). Die **RC**-Aufgabe kompiliert Ressourcen in eine RES-Datei, z.B. Cursors, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter „Ressourcencompiler“ auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website.  
   

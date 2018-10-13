@@ -1,7 +1,7 @@
 ---
 title: Ressourcenkonfliktansicht – Konfliktdaten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3f18cf1131e61ba88832d59e0e77f462c088bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6db867b582c4d1f5b0722d085e8a2eac48d182f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253018"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ressourcenkonfliktansicht – Konfliktdaten](https://docs.microsoft.com/visualstudio/profiling/resource-contentions-view-contention-data).  
-  
 Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Ressourcen auf, die die Quelle der Konfliktereignisse waren. Ein Konfliktereignis tritt auf, wenn eine Funktion in einem Thread gezwungen wird, auf den Zugriff auf die Ressource zu warten, da eine Funktion in einem anderen Thread exklusiven Zugriff auf die Ressource abgerufen hat. Jede Ressource ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, die die Konfliktereignisse geführt haben.  
   
 ## <a name="data-values"></a>Datenwerte  

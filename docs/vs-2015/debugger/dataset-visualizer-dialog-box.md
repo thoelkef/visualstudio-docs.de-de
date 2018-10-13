@@ -1,7 +1,7 @@
 ---
 title: DataSet-Schnellansicht (Dialogfeld) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffee1a0dce220ffaa0834781497a0e1cdd6f61e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fd4fb907ddbfab2803491d742227653a5e919fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255735"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset-Schnellansicht (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dataset-Schnellansicht (Dialogfeld)](https://docs.microsoft.com/visualstudio/debugger/dataset-visualizer-dialog-box).  
-  
 Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen. Sie können auf diese Schnellansicht zugreifen, indem Sie auf das Symbol mit dem Vergrößerungsglas klicken, das neben dem Wert eines dieser Objekte in einem Debuggervariablenfenster oder in einem DataTip angezeigt wird.  
   
  Sie können in dieser Schnellansicht Änderungen an den Objekten vornehmen. Die Änderungen werden gespeichert, sobald Sie für eine Zeile einen Commit ausführen.  

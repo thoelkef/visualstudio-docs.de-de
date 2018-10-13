@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen eines Benutzersteuerelements zur Startseite | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259986"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Hinzufügen eines Benutzersteuerelements zur Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Benutzersteuerelement hinzufügen, um die Startseite](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page).  
-  
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Verweises auf eine benutzerdefinierte Startseite. Im Beispiel wird ein Benutzersteuerelement mit der Lösung, das Benutzersteuerelement erstellt, und klicken Sie dann verweist auf die erstellte Assembly, die von der Startseite XAML-Datei hinzugefügt. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen als einfachen Webbrowser.  
   
  Sie können den gleichen Prozess verwenden, eine beliebige Assembly hinzufügen, die von einer XAML-Datei aufgerufen werden kann.  

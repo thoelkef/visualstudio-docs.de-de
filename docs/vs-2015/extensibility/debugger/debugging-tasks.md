@@ -1,7 +1,7 @@
 ---
 title: Debuggingaufgaben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64a9a55a659b4aaa81a1e491445400d18de30a40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab02c40911f4dbeb2d4452bebfd42c13ec232fc4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254059"
 ---
 # <a name="debugging-tasks"></a>Debuggingaufgaben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen Aufgaben](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugging-tasks).  
-  
 Um ein Programm zu debuggen, es muss gestartet werden und eine Debug-Engine (DE) angefügt werden muss, andernfalls die DE muss an eine bereits gestartete Programm angefügt werden. Nach dem Anfügen, muss die DE bestimmte Startup-Ereignisse generieren. Das debugpaket versucht, in der Antwort die Haltepunkte, die in der IDE zu binden. Wenn das Programm einen gebundenen Haltepunkt trifft, hält und Benutzereingaben wartet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

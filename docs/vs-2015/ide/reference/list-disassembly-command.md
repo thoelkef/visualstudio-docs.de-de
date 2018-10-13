@@ -1,7 +1,7 @@
 ---
 title: Befehl „Disassembly auflisten“ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6834bc8f6c9bc3aacb95ae3705195fde32c4d6cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cbdc3ee566135fe86301deefe1e8be8db431f9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256658"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Befehl "Disassemblierung auflisten"](https://docs.microsoft.com/visualstudio/ide/reference/list-disassembly-command).  
-  
   
 Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.  
   
@@ -75,7 +73,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,17 +12,17 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: 16803e9019928da5676850899025b190df08a30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269293"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Gewusst wie: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
-Sie können ein VSIX-Paket zu umschließende erstellen eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung für die Bereitstellung. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
+Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
   
--   Erstellen Sie ein VSIX-paketprojekt mithilfe einer der Erweiterungsvorlagen, die in enthalten sind die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Dies ist die einfachste Möglichkeit für die meisten Szenarien.  
+-   Erstellen Sie mithilfe einer der Erweiterungsvorlagen, die im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK enthalten sind, ein VSIX-Paketprojekt. Dies ist die einfachste Möglichkeit für die meisten Szenarien.  
   
 -   Packen Sie die Ausgabe des Erweiterungsprojekts in ein leeres [VSIX-Projekt](../extensibility/vsix-project-template.md). Wir empfehlen diese Option für Vorlagen, nicht unterstützte Assemblys und benutzerdefinierte Typen.  
   
@@ -31,7 +31,7 @@ Sie können ein VSIX-Paket zu umschließende erstellen eine [!INCLUDE[vsprvs](..
  In diesem Dokument wird die dritte Option erläutert:  
   
 ## <a name="creating-a-vsix-package"></a>Erstellen eines VSIX-Pakets  
- Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss von einem Typ sein, die von unterstützt wird die [VSIX-Schema](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
 >  Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  

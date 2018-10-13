@@ -1,7 +1,7 @@
 ---
 title: '&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 96978ec8329ddf31b2cc641bf02d2b38a9e98f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259947"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Assembly&gt; -Element (ClickOnce-Bereitstellung)](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-deployment).  
-  
 Das Element der obersten Ebene für das Bereitstellungsmanifest.  
   
 ## <a name="syntax"></a>Syntax  
@@ -48,7 +46,7 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
  Die `assembly` -Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Manifestelemente muss in den folgenden Namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, und `http://www.w3.org/2000/09/xmldsig#`. Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, die durch Vererbung oder durch markieren.  
   
- Die `assembly` Element weist das folgende Attribut.  
+ Das `assembly` -Element hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

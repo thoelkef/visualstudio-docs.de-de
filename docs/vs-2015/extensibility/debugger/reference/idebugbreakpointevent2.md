@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointEvent2 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e1f583bca6127aaf9e8b1eb81d9226301b1db60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93748b8c11ce88a101f02ba152cb743747b708f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254240"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IDebugBreakpointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointevent2).  
-  
 Die Debug-Engine (DE) sendet diese Schnittstelle für die Sitzung Debug-Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.  
   
 ## <a name="syntax"></a>Syntax  

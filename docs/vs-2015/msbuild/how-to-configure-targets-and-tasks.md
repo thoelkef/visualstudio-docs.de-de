@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Konfigurieren von Zielen und Aufgaben | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29de3172a68aa9b975dfc54e6162c11228db049
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce147a9a393b30111f3f76f605e327b70206ad7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264051"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Gewusst wie: Konfigurieren von Zielen und Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Konfigurieren von Zielen und Aufgaben](https://docs.microsoft.com/visualstudio/msbuild/how-to-configure-targets-and-tasks).  
-  
   
 Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.  
   

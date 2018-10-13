@@ -1,7 +1,7 @@
 ---
 title: Designer-Initialisierung und Metadatenkonfiguration | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260877"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Metadatenkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [-Designer-Initialisierung und Metadatenkonfiguration](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration).  
-  
 Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten und Filter Attribute bietet einen Mechanismus für Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um andere zu behandeln <xref:System.Type> Objekte (z. B. Datenstrukturen Klassen oder grafische Entitäten), wenn der Designer verfügbar ist, und wie die vom Designer unterstützt für Visual Studio-IDE konfiguriert ist (für die Instanz die **Toolbox** -Kategorie oder-Registerkarte zur Verfügung steht).  
   
  Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet verschiedene Mechanismen, um das Steuerelement eine des Designers oder des Designerkomponente Initialisierung und die Bearbeitung seiner Metadaten von einem VSPackage zu erleichtern.  

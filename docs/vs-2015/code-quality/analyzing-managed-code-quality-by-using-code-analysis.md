@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Qualität von verwaltetem Code mithilfe von Codeanalyse | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e0538c47dec2dd11b9488a80dd4f71baddc487f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e034db6fc7383ea5f944900713dffe1cc3e78473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263889"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Analysieren der Qualität von verwaltetem Code mit der Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [analysieren verwaltet Qualität von Code mit der Codeanalyse](https://docs.microsoft.com/visualstudio/code-quality/analyzing-managed-code-quality-by-using-code-analysis).  
-  
 Sie können die Codeanalysetools in Visual Studio verwenden, um potenzielle Probleme im Code, wie z. B. nicht sicheren Datenzugriff, Verwendungsverstöße oder Probleme mit dem Entwurf, zu ermitteln. Die Codeanalyse funktioniert in .NET Framework-Anwendungen, systemeigenen Anwendungen (C und C++) und Datenbankanwendungen. Codeanalyse für verwalteten Code organisiert Regeln in *-Regelsätze* , auf bestimmte Codeprobleme abzielen.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  

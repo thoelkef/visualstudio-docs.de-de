@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257516"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Unterdrücken von Dateiänderungsbenachrichtigungen](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld anzeigt, mit der Meldung **möchten Sie die folgenden Elemente speichern?** Dies wird als dateiänderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld können Sie immer wieder anzeigen schnell lästig werden.  
   
  Sie können dieses Dialogfeld können Sie mit dem folgenden Verfahren programmgesteuert unterdrücken. Auf diese Weise können Sie eine Datei direkt erneut laden ohne den Benutzer auffordern, die Änderungen jedes Mal zu speichern.  

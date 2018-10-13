@@ -1,7 +1,7 @@
 ---
 title: FlowSwitch&lt;T&gt; Aktivitäts-Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 446c1104ff0bd0ce44baa2aafc6e4ca8cd3caa82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed39806fdca8eec3deccf5383c2386d07f0af929
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254752"
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>FlowSwitch&lt;T&gt; Aktivitäts-Designer
-Die <xref:System.Activities.Statements.FlowSwitch%601>-Aktivität ist ein bedingter Knoten, der eine Verzweigung auf der Grundlage von Übereinstimmungskriterien für den Steuerungsverlauf bereitstellt, wenn mehr als zwei alternative Verzweigungen erforderlich sind. Wenn der Steuerungsverlauf nur zwei Pfade erfordert, verwenden Sie stattdessen die <xref:System.Activities.Statements.FlowDecision>-Aktivität.  
+Die <xref:System.Activities.Statements.FlowSwitch%601>-Aktivität ist ein bedingter Knoten, der einen Branch auf der Grundlage von Übereinstimmungskriterien für den Steuerungsverlauf bereitstellt, wenn mehr als zwei alternative Branches erforderlich sind. Wenn der Steuerungsverlauf nur zwei Pfade erfordert, verwenden Sie stattdessen die <xref:System.Activities.Statements.FlowDecision>-Aktivität.  
   
 ## <a name="the-flowswitcht-activity"></a>Die FlowSwitch\<T >-Aktivität  
  Die <xref:System.Activities.Statements.FlowSwitch%601> Aktivität enthält eine <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> , der einen Wert vom Typ zurückgibt *T* (angegeben durch den generischen Parameter) bei der Auswertung. Die Aktivität enthält auch einen Satz von <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Fällen, der eine eindeutige Zuordnung von möglichen Ergebnissen dieser Auswertung zu einem Satz von <xref:System.Activities.Statements.FlowNode>-Objekten angibt. Die <xref:System.Activities.Statements.FlowNode> ausgeführt wird, dessen Objekt des Typs *T* entspricht dem Wert, der den ausgewerteten <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Ein <xref:System.Activities.Statements.FlowSwitch%601.Default%2A>-Fall kann (optional) für den Fall bereitgestellt werden, in dem keine Übereinstimmung gefunden wird.  

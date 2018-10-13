@@ -1,7 +1,7 @@
 ---
 title: IDebugPointerField | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8dd3e0a817de4b86bc6fae83bcdfa88d510c953
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30f78829fa13fef1083826998729a5d38c8d2211
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263993"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IDebugPointerField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpointerfield).  
-  
 Diese Schnittstelle stellt einen Zeiger dar.  
   
 ## <a name="syntax"></a>Syntax  
