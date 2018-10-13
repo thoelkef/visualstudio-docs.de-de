@@ -1,7 +1,7 @@
 ---
 title: Erstellen Sie eine SQL­Datenbank mithilfe eines Designers | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220752"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erstellen Sie eine SQL­Datenbank mithilfe eines Designers](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).  
-  
   
 Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen und Definieren von Spalten mithilfe von Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB. Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie erweiterte Funktionen ermitteln, indem Sie die lokale Datenbank als Ausgangspunkt für andere exemplarische Vorgehensweisen verwenden, in denen sie erforderlich ist.  
   
@@ -53,7 +51,7 @@ Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen 
   
 -   [Füllen Sie die Tabellen mit Daten](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise abgeschlossen haben, stellen Sie sicher, dass Sie SQL Server Data Tools installiert haben. Auf der **Ansicht** Menü sollte **Objekt-Explorer von SQL Server**. Wenn sie nicht vorhanden ist, fahren Sie mit **Programme hinzufügen oder entfernen**, klicken Sie auf **Visual Studio 2015**wählen **ändern**, und aktivieren Sie das Kontrollkästchen neben **SQL Server Data Tools**.  
   
 ##  <a name="BKMK_CreateNewSQLDB"></a> Erstellen eines Projekts und einer lokalen Datenbankdatei  

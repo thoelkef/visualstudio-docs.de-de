@@ -1,7 +1,7 @@
 ---
 title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b1c147073a36fb12139ed428ef003b4f1e704e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a6409680021652262ff427316ef6028d795999c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211379"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [PORT_SUPPLIER_DESCRIPTION_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/port-supplier-description-flags).  
-  
 Definiert die Metadaten, die über eines portanbieters abgerufen werden kann.  
   
 ## <a name="syntax"></a>Syntax  

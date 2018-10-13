@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften von Vorgängen in UML-Klassendiagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207024"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Eigenschaften von Vorgängen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaften von Vorgängen in UML-Klassendiagrammen](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams).  
-  
 Sie können in einem UML-Klassendiagramm hinzufügen *Vorgänge* Klassen und Schnittstellen. Ein Vorgang ist eine Methode oder Funktion, die von einer Instanz einer Klasse oder Schnittstelle ausgeführt werden kann.  
   
  Um einen Vorgang hinzuzufügen, mit der rechten Maustaste die Klasse oder Schnittstelle, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Vorgang**.  

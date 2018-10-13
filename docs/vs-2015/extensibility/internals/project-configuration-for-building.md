@@ -1,7 +1,7 @@
 ---
 title: Projektkonfiguration für die Erstellung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221116"
 ---
 # <a name="project-configuration-for-building"></a>Projektkonfiguration beim Erstellen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projektkonfiguration für das Erstellen von](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Projektmappenkonfigurationen verwaltet.  
   
  Ein Benutzer kann weitere Projektmappenkonfigurationen, jeweils mit eigenen eindeutigen Namen erstellen. Wenn der Benutzer eine neue Projektmappenkonfiguration erstellt, standardmäßig die IDE auf den Namen der entsprechenden in den Projekten oder Debuggen, wenn keine entsprechenden Namen vorhanden ist. Der Benutzer kann die Auswahl, um die jeweiligen Anforderungen zu erfüllen, bei Bedarf ändern. Die einzige Ausnahme für dieses Verhalten ist, wenn es sich bei das Projekt eine Konfiguration unterstützt, die den Namen der neuen Projektmappenkonfiguration entspricht. Nehmen wir beispielsweise an, dass eine Projektmappe Projekt1 und "Projekt2" enthält. Projekt1 hat Projektkonfigurationen MyConfig1, Retail- und Debug. "Projekt2" hat die Projektkonfigurationen MyConfig2, Retail- und Debug.  

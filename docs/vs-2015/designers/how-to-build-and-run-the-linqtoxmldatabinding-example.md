@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63b82af28599683f739c98314a9d4f71ad474a25
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e299000cd8477ccc36829e806072cb25e115f8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522152"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237912"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Gewusst wie: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels](https://docs.microsoft.com/visualstudio/designers/how-to-build-and-run-the-linqtoxmldatabinding-example).  
-  
 In diesem Thema wird gezeigt, wie Sie das Visual Studio-<legacyBold>LinqToXmlDataBinding</legacyBold>-Projekt erstellen und das resultierende WPF-<legacyBold>LinqToXmlDataBinding</legacyBold>-Beispielprogramm ausführen können.  
   
  Weitere Informationen zum Verwenden von Visual Studio für das Erstellen von Projekten finden Sie unter [Anwendungsentwicklung in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68).  

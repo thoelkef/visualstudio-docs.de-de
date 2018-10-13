@@ -1,7 +1,7 @@
 ---
 title: Standardstereotype für UML-Modellen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3e5cabed5b2b75d9a97c74dd58d87ea387df8f8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212159"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardstereotype für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Standardstereotype für UML-Modelle](https://docs.microsoft.com/visualstudio/modeling/standard-stereotypes-for-uml-models).  
-  
 Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Informationen für den Leser oder für die maschinelle Verarbeitung bereitzustellen. Stereotype werden in Profilen definiert, und jedes Profil stellt Sätze von Stereotypen bereit. In Visual Studio werden mehrere Profile bereitgestellt. Sie können auch eigene Profile definieren, die eigene Stereotype enthalten können. Weitere Informationen finden Sie unter [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210170"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Debuggen von Rendern von Fehlern aufgrund von Schattierung](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading).  
-  
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose, um ein Objekt zu untersuchen, die aufgrund eines shaderfehlers falsche Farbe hat.  
+Diese exemplarische Vorgehensweise veranschaulicht, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose verwendet wird, um ein Objekt zu untersuchen, das aufgrund eines Shaderfehlers eine falsche Farbe hat.  
   
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:  
   
@@ -48,7 +46,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], laden Sie ein grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Ein neues grafikprotokoll-Dokumentfenster angezeigt wird, im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Im oberen Teil dieses Fensters befindet sich die Renderzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
+1.  Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Ein neues Grafikprotokoll-Dokumentfenster wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Im oberen Teil dieses Fensters befindet sich die Renderzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
 2.  Wählen Sie in der **Frameliste**einen Frame aus, in dem das Objekt nicht richtig dargestellt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht das Grafikprotokolldokumentfenster wie folgt aus:  
   

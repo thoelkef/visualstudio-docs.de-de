@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Debuggen kann nicht auf dem Webserver | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410b180d7b533c925aa183d01bd8f64463225629
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccfce76d1cedacecdc467971151a6f9a66d5af68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217879"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: Debuggen starten, auf dem Webserver nicht](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-start-debugging-on-the-web-server).  
-  
 Wenn Sie versuchen, eine ASP.NET-Anwendung auf einem Webserver zu debuggen, erhalten Sie möglicherweise folgende Fehlermeldung: „Das Debuggen kann auf dem Webserver nicht gestartet werden“.
   
 In vielen Fällen tritt dieser Fehler auf, da IIS nicht ordnungsgemäß konfiguriert ist.

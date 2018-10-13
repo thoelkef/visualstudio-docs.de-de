@@ -1,7 +1,7 @@
 ---
 title: '&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231542"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment).  
-  
 Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
@@ -68,7 +66,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `deployment`-Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1`-Namespace. Das-Element weist die folgenden Attribute.  
+ Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das-Element weist die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -81,12 +79,12 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
  Die `deployment` -Element auch die folgenden untergeordneten Elemente enthält.  
   
 ## <a name="subscription"></a>subscription  
- Dies ist optional. Enthält die `update` Element. Die `subscription` Element besitzt keine Attribute. Wenn die `subscription` Element ist nicht vorhanden, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung nie nach Updates gesucht wird. Wenn die `install` Attribut der `deployment` Element ist `false`, `subscription` -Elements ignoriert, da eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung, die immer über das Netzwerk gestartet wird, verwendet die neueste Version.  
+ Dies ist optional. Enthält die `update` Element. Das `subscription` -Element weist keine Attribute auf. Wenn die `subscription` Element ist nicht vorhanden, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung nie nach Updates gesucht wird. Wenn die `install` Attribut der `deployment` Element ist `false`, `subscription` -Elements ignoriert, da eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung, die immer über das Netzwerk gestartet wird, verwendet die neueste Version.  
   
 ## <a name="update"></a>aktualisieren  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des der `subscription` Element und enthält entweder die `beforeApplicationStartup` oder `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
   
- Die `update` Element besitzt keine Attribute.  
+ Das `update` -Element weist keine Attribute auf.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` Element und weist keine Attribute. Wenn die `beforeApplicationStartup` Element vorhanden ist, wird die Anwendung blockiert, wenn [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sucht nach Updates, wenn der Client online ist. Wenn dieses Element nicht vorhanden ist, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scannt zunächst nach Updates, die basierend auf die Werte für die `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
@@ -104,7 +102,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ## <a name="deploymentprovider"></a>deploymentProvider  
  Für .NET Framework 2.0, dieses Element ist erforderlich, wenn das Bereitstellungsmanifest enthält eine `subscription` Abschnitt. Für .NET Framework 3.5 und höher, wird dieses Element ist optional und wird standardmäßig mit dem Server und Pfad der Datei, die in der das Bereitstellungsmanifest erkannt wurde.  
   
- Dieses Element ist ein untergeordnetes Element des `deployment`-Elements und weist folgende Attribute auf.  
+ Dieses Element ist ein untergeordnetes Element des `deployment` -Elements und weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

@@ -1,7 +1,7 @@
 ---
 title: Generieren von Code aus UML-Klassendiagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222832"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Generieren von Code aus UML-Klassendiagrammen](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen in Visual Studio die **Code generieren** Befehl. Standardmäßig generiert der Befehl einen C#-Typ für jeden UML-Typ, den Sie auswählen. Sie können dieses Verhalten ändern oder erweitern, indem Sie die Textvorlagen ändern oder kopieren, mit denen der Code generiert wird. Sie können ein anderes Verhalten für die Typen angeben, die in anderen Paketen im Modell enthalten sind.  
   
  Die **Code generieren** Befehl ist besonders geeignet, zum Generieren von Code aus der Auswahl des Benutzers, der Elemente, und klicken Sie zum Generieren einer Datei für jede UML-Klasse oder ein anderes Element. Das folgende Bildschirmfoto zeigt z. B. zwei C#-Dateien, die aus zwei UML-Klassen generiert wurden.  
@@ -173,9 +171,9 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
     |------------------|---------------------|  
     |name|Ein Name für diese Bindung. Um eine von einem enthaltenden Paket oder Modell geerbte Bindung zu überschreiben, verwenden Sie den gleichen Namen wie die Bindung, die Sie überschreiben möchten.|  
     |Overwrite|Bei "true" wird jeder vorhandener Code überschrieben.|  
-    |Target Name|Der Name der generierten Datei.<br /><br /> Sie können Ausdrücke wie z. B. in dieser Zeichenfolge einfügen `{Name}` oder `{Owner.Name}`. Sie können z. B. schreiben: `{Owner.Name}_{Name}`. Der Ausdruck wird für das Modellelement ausgewertet. Eigenschaften von Elementen, jedoch keine Methoden können verwendet werden. Welche Eigenschaften verwendet werden können, finden Sie unter den Eigenschaften der Typen in **Microsoft.VisualStudio.Uml.\*** . **Wichtig:** `{Name}` oder `{Owner.Name}` kann verwendet werden, nur in der **Zielname** Eigenschaft.   Um den Namen der generierten Klasse zu ändern, müssen Sie die Vorlage ändern. Weitere Informationen finden Sie unter [Schreiben einer Textvorlage](#writing).|  
+    |Target Name|Der Name der generierten Datei.<br /><br /> Sie können Ausdrücke wie z. B. in dieser Zeichenfolge einfügen `{Name}` oder `{Owner.Name}`. Sie können z. B. schreiben: `{Owner.Name}_{Name}`. Der Ausdruck wird für das Modellelement ausgewertet. Eigenschaften von Elementen, jedoch keine Methoden können verwendet werden. Welche Eigenschaften verwendet werden können, finden Sie unter den Eigenschaften der Typen in **Microsoft.VisualStudio.Uml.\*** . **Wichtig:** `{Name}` oder `{Owner.Name}` kann verwendet werden, nur in der **Zielname** Eigenschaft. Um den Namen der generierten Klasse zu ändern, müssen Sie die Vorlage ändern. Weitere Informationen finden Sie unter [Schreiben einer Textvorlage](#writing).|  
     |Project Path|Gibt den Pfad zum [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt an, das die Ausgabedateien der Transformation enthält. Verwenden Sie typisierte Werte, um ein neues Projekt zu erstellen. Wählen Sie die Schaltfläche mit den Auslassungspunkten (**[...]** ) auf ein vorhandenes Projekt auszuwählen.<br /><br /> Falls noch nicht vorhanden, wird ein neues Projekt erstellt. Es ist ein C#-Klassenbibliotheksprojekt.<br /><br /> Hierzu müssen Sie das Projekt direkt eingeben. Sie können Umgebungsvariablenmakros wie %ProgramFiles% oder %LocalAppData% einschließen.|  
-    |Target Directory|Der Ordner, in dem die Zieldatei generiert wird. Der Pfad ist relativ zum Projektordner.<br /><br /> Sie können mithilfe des `{PackageStructure}`-Ausdrucks einen Pfad einfügen, der den Namen der enthaltenden Pakete entspricht. Der Standardwert ist `\GeneratedCode\{PackageStructure}`. Sie können auch Umgebungsvariablen wie %TEMP% oder %HomePath% einschließen. **Wichtig:** `{PackageStructure}` kann verwendet werden, nur in der **Zielverzeichnis** Eigenschaft.  |  
+    |Target Directory|Der Ordner, in dem die Zieldatei generiert wird. Der Pfad ist relativ zum Projektordner.<br /><br /> Sie können mithilfe des `{PackageStructure}`-Ausdrucks einen Pfad einfügen, der den Namen der enthaltenden Pakete entspricht. Der Standardwert ist `\GeneratedCode\{PackageStructure}`. Sie können auch Umgebungsvariablen wie %TEMP% oder %HomePath% einschließen. **Wichtig:** `{PackageStructure}` kann verwendet werden, nur in der **Zielverzeichnis** Eigenschaft.|  
     |Vorlagendatei-Pfad|Die Vorlage, mit der die Transformation ausgeführt wird.<br /><br /> Sie können entweder die bereitgestellten Vorlagen verwenden oder eigene erstellen. Sie finden die bereitgestellten Vorlagen am folgenden Speicherort:<br /><br /> …\Programme\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  Sie können einem Element beliebig viele Bindungen anfügen.  
@@ -219,7 +217,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
   
  Die folgenden Punkte können beim Schreiben der Textvorlage hilfreich sein. Diese Informationen werden ausführlich im [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).  
   
--   Sie können die Dateinamenerweiterung des Ergebnisses in der `Output`-Direktive festlegen. Eine `Output`-Direktive ist in jeder Textvorlage erforderlich.  
+-   Sie können die Dateinamenerweiterung des Ergebnisses in der `Output`-Anweisung festlegen. Eine `Output`-Direktive ist in jeder Textvorlage erforderlich.  
   
 -   Die Vorlage verweist automatisch auf einige Assemblys. Diese Assemblys schließen z. B. "System.dll" und "Microsoft.VisualStudio.Uml.Interfaces.dll" ein.  
   
@@ -233,7 +231,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
   
      `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`  
   
--   Verwenden Sie die `Include`-Direktive, um auf den Text einer anderen Datei zu verweisen.  
+-   Verwenden Sie die `Include`-Anweisung, um auf den Text einer anderen Datei zu verweisen.  
   
 -   Die Teile der Vorlage, die in Klammern eingeschlossene `<# ... #>` werden ausgeführt, indem die **Code generieren** Befehl. Teile der Vorlage außerhalb dieser Klammern werden in die Ergebnisdatei kopiert. Es ist wichtig, zwischen dem generierenden Code und dem generierten Text zu unterscheiden. Der generierte Text kann jeder Sprache aufweisen.  
   

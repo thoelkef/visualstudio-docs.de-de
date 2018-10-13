@@ -1,7 +1,7 @@
 ---
 title: CvIsEnabled-Funktion | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0919e8792743c7d1d953faad88ae6e8385b03993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4349d42309482622ae57ba27bb3e675bbdd6a403
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222468"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [CvIsEnabled-Funktion](https://docs.microsoft.com/visualstudio/profiling/cvisenabled-function).  
-  
 Ermittelt, ob der angegebene ETW-Anbieter durch eine Sitzung aktiviert wurde.  
   
 ## <a name="syntax"></a>Syntax  

@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines TableAdapter mit mehreren Abfragen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: e48750cf876f561b25802fd20b1e270215a1b605
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4226fc805ed0335109d0a6b98f1235ae46de1664
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206699"
 ---
 # <a name="walkthrough-creating-a-tableadapter-with-multiple-queries"></a>Exemplarische Vorgehensweise: Erstellen eines TableAdapter mit mehreren Abfragen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie einen TableAdapter in ein 
   
 -   Hinzufügen von Abfragen zum TableAdapter mit dem **Konfigurations-Assistenten für TableAdapter-Abfragen**.  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Zugriff auf die Beispieldatenbank Northwind (SQL Server- oder Access-Version). Weitere Informationen finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
@@ -79,7 +79,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie einen TableAdapter in ein 
   
 4.  Auf der **wählen Sie Ihre Datenverbindung** Seite führen Sie einen der folgenden:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.  
+    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
          - oder -   
   

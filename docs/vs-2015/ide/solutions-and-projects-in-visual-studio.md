@@ -1,7 +1,7 @@
 ---
 title: Projektmappen und Projekte in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211145"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projektmappen und Projekte in Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-ins usw. in Visual Studio beginnen Sie mit einem *Projekt*. In funktionaler Hinsicht enthält ein Projekt alle Quellcodedateien, Symbole, Bilder, Datendateien und alles andere, was zu einem ausführbaren Programm, einer Website o. Ä. kompiliert werden soll oder für die Kompilierung benötigt wird.  Ein Projekt enthält außerdem alle Compilereinstellungen und andere Konfigurationsdateien, die möglicherweise von verschiedenen Diensten und Komponenten benötigt werden, mit denen Ihr Programm kommuniziert.  
   
  Auf struktureller Ebene handelt es sich bei einem Projekt um eine XML-Datei (*.vbproj, \*.csproj, \*.vcxproj), die eine virtuelle Ordnerhierarchie mit Pfaden zu allen Elementen, die es enthält, und den Buildeinstellungen definiert. In Visual Studio wird die Projektdatei im Projektmappen-Explorer verwendet, um Projektinhalte und Einstellungen anzuzeigen. Wenn Sie das Projekt kompilieren, verwendet die MSBuild-Engine die Projektdatei, um die ausführbare Datei zu erstellen. Sie können Projekts auch so anpassen, dass andere Arten von Ausgaben produziert werden.  

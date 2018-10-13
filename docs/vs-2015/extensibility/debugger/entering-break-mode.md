@@ -1,7 +1,7 @@
 ---
 title: In den Unterbrechungsmodus | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25adcc12e6d474899165c1a486fd550f34dd99a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4fe6dc7e2739e9f41e43e0f90ec9257c18b9fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233661"
 ---
 # <a name="entering-break-mode"></a>Eintreten in den Unterbrechungsmodus
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [eingeben im Unterbrechungsmodus](https://docs.microsoft.com/visualstudio/extensibility/debugger/entering-break-mode).  
-  
 Im folgenden wird beschrieben, den Prozess, der tritt auf, wenn ein Breakpoint erreicht wird, nach dem Einzelschritt in eine Funktion, in die Zeile des Quellcodes, die den Cursor enthält, oder führen zu einem Breakpoint.  
   
 ## <a name="break-mode-process"></a>Modus Prozess anhalten  

@@ -1,7 +1,7 @@
 ---
 title: In der Übersicht über die Quelle Unterdrückung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209039"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [In Unterdrückung Quellenübersicht](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview).  
-  
 Unterdrückung im Quellcode ist die Möglichkeit, unterdrücken oder ignorieren Verletzungen der Codeanalyse in verwaltetem Code durch Hinzufügen der **SuppressMessage** -Attribut auf die Codesegmente, die dazu führen, die Verstöße dass. Die **SuppressMessage** -Attribut ist ein conditional-Attribut die in der IL-Metadaten einer Assembly mit verwaltetem Code enthalten ist, nur dann, wenn das Symbol für die CODE_ANALYSIS-Kompilierung zum Zeitpunkt der Kompilierung definiert wird.  
   
  In C++ / CLI, verwenden Sie die Makros, CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.  

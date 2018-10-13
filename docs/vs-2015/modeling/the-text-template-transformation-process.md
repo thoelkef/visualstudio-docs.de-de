@@ -1,7 +1,7 @@
 ---
 title: Das Textvorlagen-Transformationsprozess | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203774"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [das Textvorlagen-Transformationsprozess](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Eingabe und eine neue Textdatei als Ausgabe generiert. Beispielsweise können Sie Textvorlagen um Visual Basic- oder C#-Code zu generieren, oder Sie können einen HTML-Bericht generieren.  
   
  Drei Komponenten nehmen Sie Teil, in diesem Prozess: das Modul, dem Host und anweisungsprozessoren. Die Engine steuert, den Prozess; er interagiert mit dem Host und der anweisungsprozessor aus, um die Ausgabedatei zu erstellen. Vom Host bereitgestellten jegliche Interaktion mit der Umgebung, z. B. die Suche von Dateien und Assemblys. Der anweisungsprozessor fügt Funktionen, wie z. B. das Lesen von Daten aus einer XML-Datei oder eine Datenbank hinzu.  

@@ -1,7 +1,7 @@
 ---
 title: Referenz zur Benutzeroberfläche Debuggen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8059274914093f0beaa22b3e4841c7b2cf44e6a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d872d338bd44a561b71266243a07faa607bdcdaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206322"
 ---
 # <a name="debugging-user-interface-reference"></a>Referenz zur Debugger-Benutzeroberfläche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Benutzeroberflächenreferenz Debuggen](https://docs.microsoft.com/visualstudio/debugger/debugging-user-interface-reference).  
-  
 Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angezeigt.  
   
  Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfunktionen automatisieren. Weitere Informationen finden Sie unter Visual Studio Debugging-SDK.  

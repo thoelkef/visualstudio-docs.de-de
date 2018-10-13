@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205620"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: anhalten und Fortsetzen der Sammlung von Leistungsdaten](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection).  
-  
 Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.  
   
  Durch Steuerung der Datensammlung können Sie die Größe der Profildatendatei reduzieren sowie Daten nur für relevante Vorgänge sammeln. Sie können die Profilerstellung in einer Leistungssitzung mehrmals anhalten und fortsetzen.  

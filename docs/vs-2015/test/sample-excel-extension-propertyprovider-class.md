@@ -1,7 +1,7 @@
 ---
 title: 'Beispiel für Excel-Erweiterung: PropertyProvider-Klasse | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 075d9b8d-8658-4fca-8711-08304dbac1c5
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d421f4f5b2f5fbdb2f78c6b72830ac8722e56aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 513d54fd9779bb4148e00d0839ef75b1a4637545
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203657"
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>Beispiel für Excel-Erweiterung: PropertyProvider-Klasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Beispiel für Excel-Erweiterung: PropertyProvider-Klasse](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-propertyprovider-class).  
-  
 Diese interne Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>-Klasse und stellt Eigenschaftendienste für [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]-Elemente zur Aufzeichnung und Wiedergabe von Tests Benutzeroberfläche bereit.  
   
 ## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel-Methode  

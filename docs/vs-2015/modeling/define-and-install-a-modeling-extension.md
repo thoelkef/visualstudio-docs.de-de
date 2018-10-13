@@ -1,7 +1,7 @@
 ---
 title: Definieren und installieren eine modellierungserweiterung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234402"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [definieren und Installieren einer modellierungserweiterung](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen definieren. Auf diese Weise können Sie die Diagramme und Modelle Ihren eigenen Anforderungen anpassen. Sie können z. B. Menübefehle, UML-Profile, Validierungseinschränkungen und Toolboxelemente definieren. In einer Erweiterung können mehrere Komponenten definiert werden. Sie können diese Erweiterungen auch anderen Visual Studio-Benutzern in Form einer [Visual Studio Integration Extension (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780)bereitstellen. Eine VSIX können Sie mithilfe eines VSIX-Projekts in Visual Studio erstellen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-modeling-extension-solution"></a>Erstellen einer Modellierungserweiterungs-Projektmappe  
  Zum Definieren einer Modellierungserweiterung müssen Sie eine Projektmappe erstellen, die die folgenden Projekte enthält:  
@@ -102,7 +100,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-run-an-extension-during-its-development"></a>So führen Sie eine Erweiterung während ihrer Entwicklung aus  
   
-1.  In der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** Menü wählen **Debuggen starten**.  
+1.  Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.  
   
      Das Projekt wird erstellt, und eine neue Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird im Testmodus gestartet.  
   

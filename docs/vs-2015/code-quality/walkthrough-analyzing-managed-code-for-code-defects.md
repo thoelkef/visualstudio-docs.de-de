@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Analysieren von verwaltetem Code Codefehler | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217479"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code Codefehler](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt Codefehler, mit dem Code Analysetool.  
   
  Diese exemplarische Vorgehensweise führt Sie durch den Prozess mit der Codeanalyse analysiert Ihre .NET-verwaltete Codeassemblys auf Übereinstimmung mit den Microsoft .NET Framework-Entwurfsrichtlinien ausführlich.  
@@ -38,9 +36,9 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
 -   Analysieren Sie und beheben Sie Fehler für Code (Warnungen).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]  
+-   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek  
   

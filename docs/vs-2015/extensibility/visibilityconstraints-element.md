@@ -1,7 +1,7 @@
 ---
 title: VisibilityConstraints-Element | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fd6d6968984f0640dd73067c286a4259ade6745
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5b290884a2377cdaba573788f0881ec82a19cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222377"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [VisibilityConstraints-Element](https://docs.microsoft.com/visualstudio/extensibility/visibilityconstraints-element).  
-  
 VisibilityConstraints-Element bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten. Die Sichtbarkeit wird zuerst gesteuert, von der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) ohne das VSPackage zu laden.  
   
 ## <a name="syntax"></a>Syntax  
