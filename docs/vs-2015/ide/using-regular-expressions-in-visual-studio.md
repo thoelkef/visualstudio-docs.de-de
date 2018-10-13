@@ -1,7 +1,7 @@
 ---
 title: Verwenden von regulären Ausdrücken in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,15 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c74ed503b13e9f5efab3e6bf0df2fab75d34e7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4edf0add3e29dd7fe4156a220fe0edc60e47f117
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285466"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio).
-
 Visual Studio verwendet reguläre Ausdrücke von .NET Framework zum Suchen und Ersetzen von Text. Weitere Informationen zu regulären Ausdrücken von .NET finden Sie unter [Reguläre Ausdrücke von .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für reguläre Ausdrücke in den Fenstern "Suchen" und "Ersetzen". Unter [Visual Studio Regular Expression Conversions (Visual Studio-Konvertierungen mit regulären Ausdrücken)](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) finden Sie eine Erklärung, wie einige der häufiger verwendeten benutzerdefinierten regulären Ausdruckssymbole in die Versionen von .NET konvertiert werden.

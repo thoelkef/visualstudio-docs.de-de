@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Unterdrücken von Compilerwarnungen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286090"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compiler-Warnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Unterdrücken von Compilerwarnungen](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings).  
-  
 Sie können ein Buildprotokoll von Clutter befreien, indem Sie angeben, dass eine oder mehrere Arten von Compilerwarnungen nicht enthalten sein sollen. Beispielsweise können Sie diese Technik verwenden, um einige, aber nicht alle Informationen zu überprüfen, die automatisch erzeugt werden, wenn Sie die Ausführlichkeit des Buildprotokolls auf „Normal“, „Detailliert“ oder „Diagnose“ festlegen. Weitere Informationen zur Ausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>So unterdrücken Sie bestimmte Warnungen für Visual C# oder F#  

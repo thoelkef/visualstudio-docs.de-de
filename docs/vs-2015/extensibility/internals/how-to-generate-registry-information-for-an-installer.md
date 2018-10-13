@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Generieren von Registrierungsinformationen für einen Installer | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9d23c0c4c6dab73be10425291c9623bf8c01553
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15e5d71786b64b9224d89ca6a84eb7186cb12437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294788"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Vorgehensweise: Generieren von Registrierungsinformationen für einen Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Generieren von Registrierungsinformationen für einen Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-generate-registry-information-for-an-installer).  
-  
 Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die Registrierung für ein verwaltetes VSPackage zu generieren. Das Manifest kann in einer Windows Installer-Paket integriert werden. RegPkg auch kann eine Datei generieren, die in einer Setup-Quelldatei, die basierend auf aufgenommen werden kann die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]

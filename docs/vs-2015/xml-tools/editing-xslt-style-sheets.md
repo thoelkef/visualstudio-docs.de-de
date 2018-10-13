@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von XSLT-Stylesheets | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,23 +14,21 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc7cb28171711de757708b80f6a2745c1187151b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dd25a531682c74284a74f065dc729f37ac7fb1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287000"
 ---
 # <a name="editing-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Bearbeiten von XSLT-Stylesheets](https://docs.microsoft.com/visualstudio/xml-tools/editing-xslt-style-sheets).  
-  
   
 Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können die Vorteile der Standardfeatures des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Features, die die Entwicklung in XSLT erleichtern.  
   
 ## <a name="xslt-features"></a>XSLT-Features  
- In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifischen Features beschrieben.  
+ In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifischen Funktionen beschrieben.  
   
  **Farben für Syntax**  
  XSLT-Schlüsselwörter, wie z. B. `template`, `match`usw., werden angezeigt, in der XSLT-Schlüsselwort Farbe, die gemäß der **Schriftarten und Farben** Einstellungen.  

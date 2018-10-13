@@ -1,7 +1,7 @@
 ---
 title: Arbeitsspeicher Windows | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297193"
 ---
 # <a name="memory-windows"></a>Fenster "Arbeitsspeicher"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von Arbeitsspeicher für Variablen im Debugger](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der von der Anwendung verwendet wird. Die **Überwachen** Fenster **Schnellüberwachung** Dialogfeld **"Auto"** Fenster und **"lokal"** Fenster zeigen Sie den Inhalt von Variablen, die an bestimmten Orten im Arbeitsspeicher gespeichert. Aber die **Arbeitsspeicher** Fenster erfahren Sie, das umfangreiche Bild. Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen (beispielsweise Puffer oder umfangreiche Zeichenfolgen), die in den anderen Fenstern nicht gut dargestellt werden. Allerdings die **Arbeitsspeicher** Fenster ist nicht auf die Anzeige von Daten beschränkt. Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
   
  Die **Arbeitsspeicher** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen**Dialogfeld**Debuggen** Knoten. Die **Arbeitsspeicher** Fenster ist nicht verfügbar für Skriptsprachen oder SQL, die Sprachen das Speicherkonzept nicht erkennen.  

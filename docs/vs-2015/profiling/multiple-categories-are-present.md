@@ -1,7 +1,7 @@
 ---
 title: Es sind mehrere Kategorien vorhanden | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 438dd5b3639f7783d24ef8f21a68da837be92452
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 471934642bba9e9fe31b8c1b010de83dc9d13a06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285492"
 ---
 # <a name="multiple-categories-are-present"></a>Es sind mehrere Kategorien vorhanden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [mehrere Kategorien sind vorhanden](https://docs.microsoft.com/visualstudio/profiling/multiple-categories-are-present).  
-  
 Es wurde ein Abschnitt ausgewählt, der mehr als eine Art der Aktivität für einen bestimmten Zeitraum enthält. Beachten Sie, dass zwei Farbbalken angezeigt werden, einer vertikal auf den anderen gestapelt. Diese Farben stellen nur die beiden häufigsten Aktivitäten im angegebenen Zeitraum dar. Die Häufigkeit dieser zwei Aktivitäten wird relativ zueinander als Drittel oder Hälften des vertikalen Balkens angezeigt. Um weitere Details anzuzeigen, vergrößern Sie diesen Abschnitt der Threadansicht.  
   
 ## <a name="see-also"></a>Siehe auch  

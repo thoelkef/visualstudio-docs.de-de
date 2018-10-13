@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293526"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Fehlende Objekte aufgrund von falsch konfigurierte Pipeline](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline).  
-  
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose-Tools zum Untersuchen eines Objekts, das aufgrund eines nicht festgelegten Pixelshaders fehlt.  
+Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:  
   
@@ -50,7 +48,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit der [!
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], laden Sie ein grafikprotokolldokument, das einen Frame enthält, der das fehlende Objekt aufzeigt. Eine neue grafikprotokoll-Registerkarte wird im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
+1.  Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Grafikprotokolldokument, das einen Frame enthält, der das Problem des fehlenden Objekts aufweist. Eine neue Grafikprotokoll-Registerkarte wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
 2.  Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   

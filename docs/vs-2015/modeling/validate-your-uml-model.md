@@ -1,7 +1,7 @@
 ---
 title: Überprüfen des UML-Modells | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292694"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Überprüfen des UML-Modells](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihrem Projekt möglicherweise als ungültig betrachtet. So kann es beispielsweise erforderlich sein, dass ein Anwendungsfall immer mit einem Sequenzdiagramm verknüpft ist, das über Lebenslinien verfügt, die die Akteure des Anwendungsfalls darstellen. Sie installieren können, oder definieren *Einschränkungen* , mit denen Ihr Team, um derartige Anforderungen zu entsprechen. Einschränkungen können angewendet werden, wenn der Benutzer ein Modell speichert oder öffnet, und können über einen Menübefehl aufgerufen werden.  
   
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] werden keine Einschränkungen bereitgestellt, da sie davon abhängen, auf welche Weise UML-Modelle von Ihrem Team interpretiert und genutzt werden. Sie können jedoch eigene Einschränkungen definieren und von anderen Benutzern definierte Einschränkungen installieren. Um weitere Informationen zum Definieren von Einschränkungen und für die Verteilung Verpacken, finden Sie unter [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md).  
@@ -71,7 +69,7 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
   
      Klicken Sie auf **Deinstallieren** auf die Erweiterung zu entfernen.  
   
-3.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
+3.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)   

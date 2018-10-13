@@ -1,7 +1,7 @@
 ---
 title: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 879ae4e11fb51b63ed1a154eadcdb67ce87b2435
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294488"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schritt 5: Hinzufügen Enter-Ereignishandlern für die NumericUpDown-Steuerelemente](https://docs.microsoft.com/visualstudio/ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls).  
-  
 Im fünften Teil dieses Lernprogramms fügen Sie Enter-Ereignishandler hinzu, um die Eingabe von Antworten auf Quizfragen zu vereinfachen. Mit diesem Code wird der aktuelle Wert in den einzelnen NumericUpDown-Steuerelementen markiert und gelöscht, sobald ein Quizteilnehmer das Steuerelement ausgewählt und einen anderen Wert eingibt.  
   
 > [!NOTE]

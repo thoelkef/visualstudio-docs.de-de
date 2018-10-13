@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit Roslyn-Analysetools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178826bbb1a5f920af0c6d20527e4e004b1918cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 337aec1b68759102d9e2a50bd4a23c13ddde7739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284738"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analyzern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erste Schritte mit Roslyn-Analysetools](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-roslyn-analyzers).  
-  
 Mit live-projektbasierten codeanalysemodulen in Visual Studio können die API-Autoren domänenspezifische Codeanalyse als Teil ihrer NuGet-Pakete schicken.  Da diese Analysemodule durch das .NET Compiler Platform (Codename "Roslyn") unterstützt werden, können sie Warnungen in Ihrem Code führen, während der Eingabe, bevor Sie die Zeile (nicht mehr darauf warten, erstellen Sie Ihren Code, um Probleme zu ermitteln) abgeschlossen haben.  Analyzer können auch über die Visual Studio-Glühbirne-Eingabeaufforderung, bereinigen Sie Ihren Code sofort können Sie einen automatischen Codefix Oberfläche.  
   
 ## <a name="getting-started"></a>Erste Schritte  

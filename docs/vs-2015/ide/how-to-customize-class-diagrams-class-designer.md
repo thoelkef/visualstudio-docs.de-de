@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296178"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Anpassen von Klassendiagrammen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer).  
-  
 Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen angezeigt werden. Sie können das gesamte Diagramm oder die einzelnen Typen auf der Entwurfsoberfläche anpassen.  
   
  Beispielsweise können Sie den Zoomfaktor eines gesamten Klassendiagramms einstellen, die Gruppierung und Sortierung einzelner Typmember ändern, Beziehungen anzeigen oder ausblenden, und einzelne Typen oder mehrere Typen gemeinsam an eine beliebige Position auf dem Diagramm verschieben.  

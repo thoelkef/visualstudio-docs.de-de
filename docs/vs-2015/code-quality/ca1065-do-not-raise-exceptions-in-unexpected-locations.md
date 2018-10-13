@@ -1,7 +1,7 @@
 ---
 title: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 93be7e14bd095fb7f25c7dcce90eba3d724b05f0
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284686"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1065: keine Ausnahmen an unerwarteten Speicherorten auslösen](https://docs.microsoft.com/visualstudio/code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations).
-
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|

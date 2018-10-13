@@ -1,7 +1,7 @@
 ---
 title: Debuggen mehrerer Prozesse | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f573a677d1c74613bb66219a0ac75aa5bf267f12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3bbd49aeab7df414d558a8841a55d982d8d2595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289873"
 ---
 # <a name="debug-multiple-processes"></a>Debuggen mehrerer Prozesse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen mehrerer Prozesse](https://docs.microsoft.com/visualstudio/debugger/debug-multiple-processes).  
-  
 Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechseln zwischen Prozessen, Unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen des Quellcodes, Anhalten des Debuggings sowie Beenden und Abtrennen von Prozessen.  
   
 ##  <a name="BKMK_Contents"></a> Inhalt  

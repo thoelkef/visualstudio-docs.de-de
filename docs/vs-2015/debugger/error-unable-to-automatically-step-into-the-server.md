@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Automatischer Einzelschritt auf dem Server nicht möglich | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d75ed4ddb42705b95a5ddd834596bc828e0f3ec2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42f97ac229eedacf0bb26730127ae0f35dfd1346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288085"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Fehler: Automatischer Einzelschritt auf dem Server nicht möglich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: nicht Schritt in der Server automatisch](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-automatically-step-into-the-server).  
-  
 Der Fehler lautet:  
   
  Automatischer Einzelschritt auf dem Server nicht möglich. Der Debugger wurde vor der Ausführung der Remoteprozedur nicht benachrichtigt.  
@@ -47,13 +45,13 @@ Der Fehler lautet:
   
  Mögliche Ursachen sind:  
   
--   Die Datei "Web.config" für Ihre [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung ist Debug auf "True" in nicht festgelegt (finden Sie unter [Debugmodus in ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+-   In der Datei web.config der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung ist debug nicht auf "true" festgelegt (siehe [Debugmodus in ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Eine Version von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nach der Installation von Visual Studio installiert wurde. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] muss vor Visual Studio installiert werden. Verwenden Sie zum Beheben dieses Problem in der Windows- **Systemsteuerung**die Option **Programme und Funktionen** , um die Visual Studio-Installation zu reparieren.  
+-   Eine Version von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] wurde nach der Installation von Visual Studio installiert. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] muss vor Visual Studio installiert werden. Verwenden Sie zum Beheben dieses Problem in der Windows- **Systemsteuerung**die Option **Programme und Funktionen** , um die Visual Studio-Installation zu reparieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 
