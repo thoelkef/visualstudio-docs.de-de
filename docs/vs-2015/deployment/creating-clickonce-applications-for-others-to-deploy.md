@@ -1,7 +1,7 @@
 ---
 title: Erstellen von ClickOnce-Anwendungen für andere bereitstellen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b8f4736066501324d5428fd2634dfacd8c6537a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181518"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von ClickOnce-Anwendungen für andere bereitstellen](https://docs.microsoft.com/visualstudio/deployment/creating-clickonce-applications-for-others-to-deploy).  
-  
 Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickler, die ClickOnce-Bereitstellungen erstellen möchten. Viele von ihnen Packen Sie einfach ihre Anwendung mithilfe von ClickOnce und leiten dann die Dateien für einen Kunden, wie z. B. ein großes Unternehmen. Der Kunde ist dafür verantwortlich sind, zum Hosten der Anwendung im Netzwerk. Dieses Thema behandelt einige der Probleme, die sich solche Bereitstellungen in Versionen von .NET Framework vor Version 3.5. Klicken Sie dann beschrieben eine neue Projektmappe, die mithilfe der neuen "Verwenden von Manifest für die Vertrauensstellung"-Funktion in .NET Framework 3.5. Schließlich endet er mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.  
   
 ## <a name="issues-involved-in-creating-deployments-for-customers"></a>Probleme im Zusammenhang mit Bereitstellungen für Kunden erstellen  

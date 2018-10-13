@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren der Benutzeroberfläche | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181039"
 ---
 # <a name="updating-the-user-interface"></a>Aktualisieren der Benutzeroberfläche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Aktualisieren der Benutzeroberfläche](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 Nachdem Sie einen Befehl implementiert haben, können Sie Code zum Aktualisieren der Benutzeroberfläche mit dem Status der Ihre neue Befehle hinzufügen.  
   
  In einer typischen Win32-Anwendung der Befehlssatz ständig abgefragt werden kann, und der Status der einzelnen Befehle angepasst werden kann, wie die Benutzer diese anzeigt. Aber da die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shell kann eine unbegrenzte Anzahl von VSPackages, umfangreiche Abruf verringert möglicherweise die Reaktionsfähigkeit, insbesondere über zwischen verwaltetem Code und COM-interop-Assemblys abrufen  
