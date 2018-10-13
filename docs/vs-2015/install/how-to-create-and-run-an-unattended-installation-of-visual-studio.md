@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,20 +17,20 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173848"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] als unbeaufsichtigte Installation (d. h. benutzerdefinierte automatische Installation) über ein Intranet anstatt von Medien wie DVDs ausführen. In diesem Thema wird beschrieben, wie vorbereiten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] für diese Art der Installation von einer Netzwerkfreigabe.  
+Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] als unbeaufsichtigte Installation (d. h. benutzerdefinierte automatische Installation) über ein Intranet anstatt von Medien wie DVDs ausführen. In diesem Thema wird beschrieben, wie vorbereiten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] für diese Art der Installation von einer Netzwerkfreigabe.  
   
 ## <a name="creating-a-network-image"></a>Erstellen eines Netzwerkabbilds  
- Erstellen Sie zuerst ein Netzwerkabbild der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Medien.  
+ Erstellen Sie zuerst ein Netzwerkabbild der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Medien.  
   
 #### <a name="to-create-a-network-image"></a>So erstellen Sie ein Netzwerkabbild  
   
@@ -60,7 +60,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 >  Eine weitere Möglichkeit besteht darin, die optionalen untergeordneten Elemente eines übergeordneten Elements einfach auszuschließen, d. h., keine mit "Selected="no"" markierten Elemente einzuschließen. Allerdings müssen alle Elemente mit "Selected="yes"" weiterhin am Ende der Datei "AdminDeployment.xml" platziert werden.  
   
 > [!IMPORTANT]
->  Während der Installation startet der Computer möglicherweise mehrere Male erneut. Nach dem Neustart müssen Sie zum Ausführen der Installation sich wieder mit demselben Benutzerkonto anmelden, mit dem Sie angemeldet waren, bevor der Computer neu gestartet wurde. Automatische Neustarts können vermieden werden, indem die erforderlichen Komponenten vor dem Ausführen einer unbeaufsichtigten Installation vorinstalliert werden. Weitere Informationen finden Sie im Abschnitt: "Vermeiden eines Neustarts während des Setups" im der [Administratorhandbuch für Visual Studio](../install/visual-studio-administrator-guide.md).  
+>  Während der Installation startet der Computer möglicherweise mehrere Male erneut. Nach dem Neustart müssen Sie zum Ausführen der Installation sich wieder mit demselben Benutzerkonto anmelden, mit dem Sie angemeldet waren, bevor der Computer neu gestartet wurde. Automatische Neustarts können vermieden werden, indem die erforderlichen Komponenten vor dem Ausführen einer unbeaufsichtigten Installation vorinstalliert werden. Weitere Informationen finden Sie im Abschnitt: "Vermeiden eines Neustarts während des Setups" im [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
   
  Das AdminDeployment-Dateischema enthält die folgenden Elemente:  
   
@@ -111,7 +111,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
   
 -   Öffnen Sie **Systemsteuerung**, und wählen Sie dann **Programme und Funktionen**aus.  
   
--   Wählen Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und wählen Sie dann **Änderung**.  
+-   Wählen Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]und dann **Ändern**aus.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Ändern der AdminDeployment-Einstellungen auf einem Clientcomputer nach der Installation von Visual Studio  
   
@@ -170,7 +170,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
         4.  Das neueste Update sollte auf der Seite "Features" angezeigt werden. Wählen Sie die anderen Funktionen, die Sie installieren möchten, klicken Sie auf **Weiter**, und klicken Sie dann auf **aktualisieren** sowohl für das Update als auch für die neuen Features zu installieren.  
   
 ## <a name="registering-the-product"></a>Das Produkt registrieren  
- Nachdem die Installation abgeschlossen ist, können Sie Ihre Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] heraus registrieren.  
+ Nachdem die Installation abgeschlossen ist, können Sie Ihre Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]heraus registrieren.  
   
 #### <a name="to-register"></a>Zum Registrieren führen Sie Folgendes aus:  
   

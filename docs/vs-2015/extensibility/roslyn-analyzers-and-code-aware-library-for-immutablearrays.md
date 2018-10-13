@@ -1,7 +1,7 @@
 ---
 title: Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173354"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 Die [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") hilft Ihnen, Code unterstützende Bibliotheken zu erstellen.  Eine codeabhängige Bibliothek bietet Funktionen, die Sie verwenden können, und der Tools (Roslyn-Analysetools) können Sie die Bibliothek verwenden, auf die bestmögliche Weise oder Fehler zu vermeiden.  In diesem Thema erfahren Sie, wie zum Erstellen eines Roslyn-Analyzers Praxis, um häufige Fehler abzufangen, bei Verwendung der [NIB: unveränderliche Sammlungen](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet-Paket.  Darüber hinaus wird veranschaulicht, wie eine Codefehlerbehebung für ein Codeproblem gefunden, die vom Analyzer bereitgestellt werden.  Benutzer sehen codefehlerbehebungen in der Visual Studio-Glühbirne Benutzeroberfläche und eine Korrektur für den Code automatisch anwenden können.  
   
 ## <a name="getting-started"></a>Erste Schritte  

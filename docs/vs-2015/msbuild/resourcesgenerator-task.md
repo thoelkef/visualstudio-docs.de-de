@@ -1,7 +1,7 @@
 ---
 title: ResourcesGenerator-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ee00754683156dad2bd34a93ff43f820eb37c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d470c91d6303976e5afcbffc7f4eff968ea04
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173302"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ResourcesGenerator-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/resourcesgenerator-task).  
-  
   
 Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindestens eine Ressource (JPG, ICO, BMP, [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] im Binärformat und andere Erweiterungstypen) in eine RESOURCES-Datei ein.  
   

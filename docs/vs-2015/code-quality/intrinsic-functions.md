@@ -1,7 +1,7 @@
 ---
 title: Systeminterne Funktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174485"
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [systeminterne Funktionen](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions).  
-  
 Ein Ausdruck in SAL kann ein C-/C++-Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, die keine Nebeneffekte haben, wird – z. B. ++,--, und Funktionsaufrufe, die alle haben Nebenwirkungen in diesem Kontext.  SAL bietet jedoch einige funktionsähnliches-Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als bezeichnet *systeminterne Funktionen*.  
   
 ## <a name="general-purpose"></a>Allgemeine Verwendung  
@@ -44,7 +42,7 @@ Ein Ausdruck in SAL kann ein C-/C++-Ausdruck sein, vorausgesetzt, dass es sich u
 |`_Inexpressible_(expr)`|Gibt eine Situation, in dem die Größe eines Puffers zu komplex für den darstellen, indem Sie mithilfe eines Ausdrucks für die Anmerkung ist – z. B. wenn er berechnet wird, durch das Scannen von ein Eingabedataset, und klicken Sie dann zählen Mitglieder ausgewählt.|  
 |`_Nullterm_length_(param)`|`param` ist die Anzahl der Elemente im Puffer bis zur, aber nicht einschließlich einen null-Terminator. Sie können auf alle Puffer von nicht-aggregierte, nicht-Void-Typ angewendet werden.|  
 |`_Old_(expr)`|Bei der Auswertung in Vorbedingung, `_Old_` gibt den Eingabewert zurück `expr`.  Wenn sie nach der Bedingung ausgewertet wird, wird der Wert `expr` wie es in Vorbedingung ausgewertet worden wären.|  
-|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, die Zählung von 1 bis `n`, und `n` eine literale integrale Konstante ist. Wenn der Parameter benannt ist, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die werden durch eine Ellipse definiert, oder können verwendet werden in Funktionsprototypen, in dem Namen nicht verwendet werden.  |  
+|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, die Zählung von 1 bis `n`, und `n` eine literale integrale Konstante ist. Wenn der Parameter benannt ist, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die werden durch eine Ellipse definiert, oder können verwendet werden in Funktionsprototypen, in dem Namen nicht verwendet werden.|  
 |`return`|Die C/C++-reserviertes Schlüsselwort `return` können in eine SAL-Ausdruck verwendet werden, um den Rückgabewert einer Funktion anzugeben.  Der Wert ist nur verfügbar, im Post-Zustand. Es ist ein Syntaxfehler für die Verwendung in der Pre-Zustand.|  
   
 ## <a name="string-specific"></a>Spezifisches für Zeichenfolgen  

@@ -1,7 +1,7 @@
 ---
 title: Stifttool-Zusatztasten in Blend | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e393f6014d6541378f32a13b7bbb76618b6308b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172106"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Stifttool-Zusatztasten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Stifttool-Zusatztasten in Blend](https://docs.microsoft.com/visualstudio/designers/pen-tool-modifier-keys-in-blend).  
-  
 In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie einen Pfad bearbeiten können, während Sie ihn mit dem Tool **Stift**  ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") erstellen. Sie können mit dem Tool **Stift** auch Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen, oder zwei vorhandene Pfade verbinden.  
   
 |Aktion|Vorgehensweise|Zeiger|  

@@ -1,7 +1,7 @@
 ---
 title: Devenv-Befehlszeilenschalter für die Entwicklung von VSPackage | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb10653a784b6d481717965e68b445c24b3f3db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80f67d2c640106d0956f4feda06c4969bbeadeac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172054"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages](https://docs.microsoft.com/visualstudio/extensibility/devenv-command-line-switches-for-vspackage-development).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ermöglicht es Entwicklern, die zum Automatisieren von Aufgaben über die Befehlszeile beim Ausführen von devenv.exe, die Datei, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio startet.  
   
  Tasks gehört Folgendes:  
