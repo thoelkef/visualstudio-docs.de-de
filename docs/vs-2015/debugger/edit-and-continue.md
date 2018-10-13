@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten und fortfahren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175720"
 ---
 # <a name="edit-and-continue"></a>Bearbeiten und Fortfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [bearbeiten und Fortfahren](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue).  
-  
 Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms mit einem Ausführungsbefehl wie **Fortfahren** oder **Schrittweise** fortsetzen, übernimmt „Bearbeiten und Fortfahren“ automatisch die Codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.  
   
  Dieser Abschnitt schließt folgende Themen ein:  

@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Emulatoren zum Isolieren von Komponententests für SharePoint 2010-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178307"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Verwenden Emulatoren zum Insolieren von Komponententests für SharePoint 2010-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Emulatoren zum Isolieren von Komponententests für Sharepoint 2010-Anwendungen](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 Das Microsoft.SharePoint.Emulators-Paket stellt eine Reihe von Bibliotheken bereit, die Ihnen helfen, isolierte Komponententests für Microsoft SharePoint 2010-Anwendungen zu erstellen. Emulatoren verwenden [Shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) aus dem Isolationsframework [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md), um einfache Objekte im Arbeitsspeicher zu erstellen, die die gängigsten Objekte und Methoden der SharePoint-API imitieren. Wenn eine SharePoint-Methode nicht emuliert wird oder wenn Sie das Standardverhalten eines Emulators ändern möchten, können Sie Fakes-Shims erstellen, um die gewünschten Ergebnisse bereitzustellen.  
   
  Vorhandene Testmethoden und Klassen können problemlos konvertiert werden, um im Emulatorkontext ausgeführt zu werden. Diese Funktion ermöglicht die Erstellung von zweifach verwendbarenTests. Ein zweifach verwendbarer Test kann zwischen Integrationstests für die tatsächliche SharePoint-API und isolierten Komponententests wechseln, die die Emulatoren verwenden.  

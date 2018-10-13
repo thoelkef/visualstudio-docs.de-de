@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cfb82c00c0a20c490aa3b5e5a9f78bf2384a40c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c86132b2ad4677733eebbb50c78f185ff0c9871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175364"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile](https://docs.microsoft.com/visualstudio/profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line).  
-  
 Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools hängen von verschiedenen Faktoren ab, beispielsweise von der Art der Anwendung, für die ein Profil erstellt werden soll, von der Profilerstellungsmethode, die Sie verwenden möchten, sowie davon, ob die Zielanwendung in nativem Code oder in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Code geschrieben ist.  
   
  In diesem Thema sind die Themen über Verfahren mittels Befehlszeile gemäß der ausgewählten Profilerstellungsmethode aufgeführt.  

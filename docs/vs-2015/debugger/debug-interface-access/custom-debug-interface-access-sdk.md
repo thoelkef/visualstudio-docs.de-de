@@ -1,7 +1,7 @@
 ---
 title: Benutzerdefiniert (Debug Interface Access SDK) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81889dda51c603b7a4e1c56805efb657108b9a5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0427c095c6ced00e093091a42eb9d31425bccfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175525"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Benutzerdefiniert (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Benutzerdefiniert (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/custom-debug-interface-access-sdk).  
-  
 Einige Compiler führen Sie Symbole, die nicht von einem standard lexikalische Symboltypen identifiziert werden. Diese Symbole werden identifiziert, indem eine `SymTagCustom` Tag.  
   
 ## <a name="properties"></a>Eigenschaften  

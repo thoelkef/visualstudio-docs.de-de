@@ -1,7 +1,7 @@
 ---
 title: Persistenz Projekt | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5c44fde30720fe17f4b9f3a5d679750ccb78ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177101"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projektpersistenz](https://docs.microsoft.com/visualstudio/extensibility/internals/project-persistence).  
-  
 Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten Projekte verwenden Projektelemente, die Dateien darstellen. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt auch Projekte, deren Daten nicht dateibasierte sind. Alle Dateien im Besitz des Projekts und die Projektdatei müssen beibehalten werden. Die IDE weist das Projekt, um sich selbst oder ein Projektelement speichern.  
   
  Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions.md).  
