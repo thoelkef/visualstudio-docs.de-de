@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f10cc65d30f8d9b2d58fa02822494ae7e6a6940
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aaeb8046ae83b6a53dc40e411a907f7dcf7a1a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205919"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-identify-symbols-in-a-library).  
-  
 Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbolen. Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.  
   
  Jedes Symbol in der Hierarchie identifiziert werden kann, durch die Navigationsinformationen durch die Symbolbibliothek zum Übergeben der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Objekt-Manager über die folgenden Schnittstellen:  
@@ -36,7 +34,7 @@ Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbole
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
  Der Speicherort des Symbols in der Hierarchie unterscheidet es sich um ein Symbol. Sie können die Tools zum Durchsuchen von Symbol, um auf ein bestimmtes Symbol zu navigieren. Die eindeutige, vollqualifizierte Pfad zur symbolspeicherfreigabe bestimmt den Speicherort an. Jedes Element im Pfad ist ein Knoten. Der Pfad mit den obersten Knoten beginnt und endet mit dem spezifischen Symbol. Wenn die Methode M1 ein Element der C1-Klasse ist, und C1 befindet sich im N1-Namespace, lautet der vollständige Pfad der Methode M1 N1. C1. M1. Dieser Pfad enthält drei Knoten: N1, C1 und M1.  
   

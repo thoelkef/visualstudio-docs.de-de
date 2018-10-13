@@ -1,7 +1,7 @@
 ---
 title: Debuggen von nativem Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a4c8d5c19ea397f8fc23a962a045645740a1164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e04540f1ed9def4e1c292a165982bf53f9439096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217658"
 ---
 # <a name="debugging-native-code"></a>Debuggen von nativem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von nativem Code](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code).  
-  
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

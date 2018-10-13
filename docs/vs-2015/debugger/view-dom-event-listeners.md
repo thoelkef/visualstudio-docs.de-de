@@ -1,7 +1,7 @@
 ---
 title: Anzeigen von DOM-Ereignislistenern | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223300"
 ---
 # <a name="view-dom-event-listeners"></a>Anzeigen von DOM-Ereignislistenern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von DOM-Ereignislistenern](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
  Die **Ereignisse** DOM Explorer auf der Registerkarte zeigt die Ereignisse, die ein DOM-Element zugeordnet sind. Jeder oberste Knoten in der **Ereignisse** Registerkarte stellt ein Ereignis, das aktive Abonnenten verfügt. Der oberste Knoten enthält untergeordnete Knoten, die die registrierten Ereignislistener für das spezifische Ereignis darstellen. Zusätzlich zur Anzeige der Ereignislistener können Sie mithilfe dieser Registerkarte zum Speicherort des Ereignislisteners im JavaScript-Code navigieren. Die Informationen in diesem Thema gelten für Store-Apps, die mit HTML und JavaScript erstellt werden.  

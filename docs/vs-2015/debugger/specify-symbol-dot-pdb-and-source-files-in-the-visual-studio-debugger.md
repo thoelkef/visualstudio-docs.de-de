@@ -1,7 +1,7 @@
 ---
 title: Angeben von Symbol-(PDB-) und Quelldateien im Visual Studio-Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226979"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [angeben von Symbol(PDB)- und Quelldateien im Debugger](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).  
-  
 Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet die Bezeichner zu, die Sie in Quelldateien für Klassen, Methoden und anderen Code für Bezeichner erstellen, die in den kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei wichtige Informationen zu bestimmen: die Quelldatei und die Zeilennummer, die in der Visual Studio-IDE und im Speicherort der ausführbaren Datei angezeigt werden, an denen angehalten wird, wenn Sie einen Haltepunkt festgelegt haben. Eine Symboldatei enthält auch den ursprünglichen Speicherort der Quelldateien und optional den Speicherort eines Quellservers, von dem die Quelldateien abgerufen werden können.  
   
  Wenn Sie ein Projekt in der Visual Studio-IDE debuggen, kennt der Debugger den Standartspeicherort für die PDB-Dateien und die Quelldateien für den Code. Wenn Sie den Code außerhalb des Projektquellcodes, wie den Windows-Code oder den Code eines Drittanbieters für die Projektaufrufe, debuggen möchten, müssen Sie den Speicherort der PDB-Dateien (und optional die Quelldateien des externen Codes) angeben. Diese Dateien müssen exakt mit dem Build der ausführbaren Dateien übereinstimmen.  
@@ -101,16 +99,16 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
   
  Wenn Sie diese Option wählen, werden DLL‑Exporttabellen geladen. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.  
   
- Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen finden Sie unter [Dumpbin/exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
 ###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Verwenden Sie Symbolserver, um Symboldateien zu suchen, die sich nicht auf dem lokalen Computer befinden.  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kann Debugsymboldateien von Symbolservern herunterladen, die das symsrv-Protokoll implementieren. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugging-Tools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver implementieren können. Geben Sie die zu verwendenden Symbolserver im VS-Dialogfeld **Optionen** an.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kann Debugsymboldateien von Symbolservern herunterladen, die das symsrv-Protokoll implementieren. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugtools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver implementieren können. Geben Sie die zu verwendenden Symbolserver im VS-Dialogfeld **Optionen** an.  
   
  Folgende Symbolserver können verwendet werden:  
   
  **Öffentliche Microsoft-Symbolserver**  
   
- Um einen Absturz zu debuggen, der beim Aufruf einer System-DLL oder der Bibliothek eines Drittanbieters auftritt, benötigen Sie oftmals PDB-Systemdateien, die Symbole für DLL-Dateien, EXE-Dateien und Gerätetreiber von Windows enthalten. Sie können diese Symbole von den öffentlichen Microsoft-Symbolservern abrufen. Die öffentlichen Microsoft-Symbolserver, die zusätzlich zu MDAC, IIS, ISA und [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Symbole für Windows-Betriebssysteme bereitstellen.  
+ Um einen Absturz zu debuggen, der beim Aufruf einer System-DLL oder der Bibliothek eines Drittanbieters auftritt, benötigen Sie oftmals PDB-Systemdateien, die Symbole für DLL-Dateien, EXE-Dateien und Gerätetreiber von Windows enthalten. Sie können diese Symbole von den öffentlichen Microsoft-Symbolservern abrufen. Die öffentlichen Microsoft-Symbolserver, die zusätzlich zu MDAC, IIS, ISA und [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]Symbole für Windows-Betriebssysteme bereitstellen.  
   
  Um die Microsoft-Symbolserver zu verwenden, wählen Sie im Menü **Debuggen** das Menüelement **Optionen und Einstellungen** , und klicken Sie dann auf **Symbole**. Wählen Sie **Microsoft-Symbolserver**aus.  
   
@@ -146,7 +144,7 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
   
 -   Um die Suchpfade zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **Neu** aus und geben einen neuen Pfad ein. Wählen Sie **Laden** , um die Pfade erneut zu suchen und die Symboldatei zu laden, sofern sie gefunden wurde.  
   
--   Wählen Sie **navigieren und suchen Sie nach**_Name der ausführbaren Datei_**...**  alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der Datei-Explorer wird geöffnet, in dem Sie die Symboldatei manuell auswählen können.  
+-   Wählen Sie **Durchsuchen nach**_Name der ausführbaren Datei_**...** aus, um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der Datei-Explorer wird geöffnet, in dem Sie die Symboldatei manuell auswählen können.  
   
 -   Wählen Sie **Symboleinstellungen ändern...** , um die Seite **Optionen** / **Symbole** im VS-Dialogfeld "Optionen" anzuzeigen.  
   
@@ -172,9 +170,9 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
   
  **C++-Optionen**  
   
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei erstellt wird, während des Buildvorgangs mit [/Zi oder/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (für C/C++-).  
+ Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird bei einem Build mit [/ZI oder /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (für C/C++) erstellt.  
   
- In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/FD](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) -Option benannt, die vom Compiler erstellte PDB-Datei. Beim Erstellen eines Projekts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mithilfe von Assistenten, der **/FD** Option wird festgelegt, zum Erstellen einer PDB-Datei mit dem Namen *Projekt*PDB-Datei.  
+ In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]wird die vom Compiler erstellte PDB-Datei von der [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) -Option benannt. Wenn Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Projekt mithilfe von Assistenten erstellen, wird durch die **/Fd** -Option eine PDB-Datei mit dem Namen *project*.pdb erstellt.  
   
  Wird Sie die C/C++-Anwendung mithilfe einer Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd**angegeben, erhalten Sie zwei PDB-Dateien:  
   
@@ -186,13 +184,13 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
   
  Der Linker erstellt die Datei "project.pdb", die Debuginformationen für die EXE-Datei des Projekts enthält. Die Datei "project.pdb" enthält nicht nur die in VC*x*.pdb gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. Beide PDB-Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zur PDB-Datei in die erstellte EXE- bzw. DLL-Datei ein.  
   
- Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei nicht vom Debugger am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist (z. B. weil das Projekt auf einen anderen Computer verschoben wurde), durchsucht der Debugger den Pfad mit der EXE-Datei sowie die Symbolpfade, die im Dialogfeld **Optionen** (Ordner**Debugging** , Knoten **Symbole** ) angegeben sind. Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
+ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei nicht vom Debugger am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist (z. B. weil das Projekt auf einen anderen Computer verschoben wurde), durchsucht der Debugger den Pfad mit der EXE-Datei sowie die Symbolpfade, die im Dialogfeld **Optionen** (Ordner**Debugging** , Knoten **Symbole** ) angegeben sind. Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
   
  **.NET Framework-Optionen**  
   
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/Debug (C#-Compileroptionen)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) oder ["/ Debug" (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).  
+ Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) oder [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).  
   
- Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
+ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
   
  **Webanwendungen**  
   

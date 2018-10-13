@@ -1,7 +1,7 @@
 ---
 title: JIT-Optimierung und-Debuggen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201979"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-Optimierung und -Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [JIT-Optimierung und Debugging](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Beim Debuggen einer verwalteten Anwendung [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Optimierung von just-in-Time (JIT)-Code standardmäßig unterdrückt. Die Unterdrückung der JIT-Optimierung hat daher zur Folge, dass Sie nicht optimierten Code debuggen. Der Code wird etwas langsamer ausgeführt, da er nicht optimiert ist. Das Debuggen ist dafür jedoch weitaus gründlicher. Das Debuggen von optimiertem Code ist schwieriger und wird nur für den Fall empfohlen, dass Sie im optimierten Code auf einen Fehler stoßen, der sich in der nicht optimierten Version nicht reproduzieren lässt.  
   
  JIT-Optimierung wird gesteuert, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch die **unterdrücken JIT-Optimierung beim Laden von Modulen** Option. Finden Sie diese Option auf der **allgemeine** Seite die **Debuggen** Knoten in der **Optionen** Dialogfeld.  

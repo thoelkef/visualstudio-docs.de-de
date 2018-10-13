@@ -1,7 +1,7 @@
 ---
 title: T4 Import-Anweisung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,19 +12,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2b0b4332f9c156bc9690ef94f8670e963203b5a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204334"
 ---
 # <a name="t4-import-directive"></a>T4-Import-Anweisung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [T4-Import-Direktive](https://docs.microsoft.com/visualstudio/modeling/t4-import-directive).  
-  
-In den Codeblöcken einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage ermöglicht die `import`-Direktive das Erstellen von Verweisen auf Elemente in einem anderen Namespace, ohne einen vollqualifizierten Namen anzugeben. Dies entspricht `using` in C# oder `imports` in [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)].  
+In den Codeblöcken einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage ermöglicht die `import`-Anweisung das Erstellen von Verweisen auf Elemente in einem anderen Namespace, ohne einen vollqualifizierten Namen anzugeben. Dies entspricht `using` in C# oder `imports` in [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)].  
   
  Eine allgemeine Übersicht über das Schreiben von T4-Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: Verbinden mit Daten in Windows Forms-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,12 +42,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d1132ee07e892886e49fbaa4670b309afc448da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8da35b32f3dd25bd7ed47b25f722c6b0aa21ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208948"
 ---
 # <a name="connecting-to-data-in-windows-forms-applications"></a>Herstellen einer Verbindung mit Daten in Windows Forms-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "47523007"
   
 |Aktion|Beschreibung|  
 |------------|-----------------|  
-|Führen Sie die [Datenquellen-Assistenten](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).|Verbindungen werden konfiguriert, wenn der Pfad der Datenbank, in ausgewählt wird der **Assistenten zur Datenquellenkonfiguration**. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in einer Datenbank](../data-tools/how-to-connect-to-data-in-a-database.md).|  
+|Führen Sie die [Datenquellen-Assistenten](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).|Verbindungen werden konfiguriert, wenn der Pfad der Datenbank, in ausgewählt wird der **Assistenten zur Datenquellenkonfiguration**. Weitere Informationen finden Sie unter [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).|  
 |Führen Sie die [TableAdapter-Konfigurations-Assistenten](http://msdn.microsoft.com/library/3a373dd9-7b34-4d3c-a48b-69414512bac8).|Verbindungen werden erstellt, in der **TableAdapter-Konfigurations-Assistenten**. Weitere Informationen finden Sie unter [erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md).|  
 |Führen Sie die [Bearbeiten von TableAdapters](../data-tools/editing-tableadapters.md).|Verbindungen werden erstellt, in der **Konfigurations-Assistenten für TableAdapter-Abfragen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von TableAdapter-Abfragen](../data-tools/how-to-create-tableadapter-queries.md).|  
 |Ziehen Sie Elemente aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf ein Formular oder die [Component Designer](http://msdn.microsoft.com/library/61a3a450-5b15-465e-bd9a-72a6c8c2b282).|Verbindungsobjekte werden erstellt, wenn das Ziehen von Elementen aus der **Datenquellen** Fenster auf die **Windows Forms-Designer** oder **Component Designer**. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).|  

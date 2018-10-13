@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Profiler-Berichten über die Befehlszeile | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d94a2c6c025ada73e1d43e041c2bf6e30f8b66c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238770"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Erstellen von Profiler-Berichten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von Profiler-Berichten über die Befehlszeile](https://docs.microsoft.com/visualstudio/profiling/creating-profiler-reports-from-the-command-line).  
-  
 Mit dem Befehlszeilentool **VSPerfReport** können Sie Berichte im XML- oder CSV-Format aus Profilerstellungsdateien (.vsp) erstellen. VSPerfReport-Berichtstypen entsprechen in den tabellenbasierten Ansichten der Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sie können den Bericht filtern, sodass nur Ihr Code und nur ein Teil der Profilerstellungs-Datendatei angezeigt wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
   
  Sie können die Freigabe der Profilerstellungs-Datendateien auch vereinfachen, indem Sie Symbole in die VSP-Dateien einbetten und bereits voranalysierte Berichtdateien (.vsps) erstellen, die kleiner sind und sich schneller öffnen lassen.  

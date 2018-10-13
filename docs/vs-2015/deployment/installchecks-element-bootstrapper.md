@@ -1,7 +1,7 @@
 ---
 title: '&lt;InstallChecks&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c4f5dde151993e7844cd9295d7aa16f7fd73327b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2d004d02ce886095d73004ee9b282d7d24ab9cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217203"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;InstallChecks&gt; -Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/installchecks-element-bootstrapper).  
-  
 Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Tests mit dem lokalen Computer aus, um sicherzustellen, dass alle erforderlichen Komponenten für eine Anwendung installiert wurden.  
   
 ## <a name="syntax"></a>Syntax  
@@ -112,7 +110,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`Property`|Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
 |`FileName`|Erforderlich. Der Name des zu suchenden Datei.|  
 |`SearchPath`|Erforderlich. Der Datenträger oder ein Ordner, in dem nach der Datei gesucht werden soll. Dies muss ein relativer Pfad sein, wenn `SpecialFolder` zugewiesen ist; andernfalls, muss es sich um einen absoluten Pfad.|  
-|`SpecialFolder`|Dies ist optional. Ein Ordner, der besondere Bedeutung, entweder auf Windows oder hat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Der Standardwert ist, interpretiert `SearchPath` als absoluter Pfad. Folgende Werte sind gültig:<br /><br /> `AppDataFolder` Der Anwendungsdatenordner für diesen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung; für den aktuellen Benutzer spezifisch.<br /><br /> `CommonAppDataFolder` Der Anwendungsdatenordner, die von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder` Im Ordner "Gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder` Der Datenordner für Anwendungen kein roaming.<br /><br /> `ProgramFilesFolder` Die standardmäßigen Ordner "Programme" für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder` Der Ordner, der enthält alle Anwendungen, die beim Systemstart gestartet.<br /><br /> `SystemFolder` Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder` Der Ordner, der die Windows-System-Installation enthält.<br /><br /> `WindowsVolume` Das Laufwerk oder Partition, die die Windows-System-Installation enthält.|  
+|`SpecialFolder`|Dies ist optional. Ein Ordner, der besondere Bedeutung, entweder auf Windows oder hat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Der Standardwert ist, interpretiert `SearchPath` als absoluter Pfad. Folgende Werte sind gültig:<br /><br /> `AppDataFolder`. Der Anwendungsdatenordner für diesen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung; für den aktuellen Benutzer spezifisch.<br /><br /> `CommonAppDataFolder`. Der Anwendungsdatenordner, die von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Im Ordner "Gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für Anwendungen kein roaming.<br /><br /> `ProgramFilesFolder`. Die standardmäßigen Ordner "Programme" für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der enthält alle Anwendungen, die beim Systemstart gestartet.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-System-Installation enthält.<br /><br /> `WindowsVolume`. Das Laufwerk oder Partition, die die Windows-System-Installation enthält.|  
 |`SearchDepth`|Dies ist optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche auf den Ordner der obersten Ebene in beschränkt `SpecialFolder` und **SearchPath**.|  
   
 ## <a name="msiproductcheck"></a>MsiProductCheck  

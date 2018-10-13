@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Elementtools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 91866f93f5a5a10f3a4295c21ee5e2046853ff4c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220505"
 ---
 # <a name="customizing-element-tools"></a>Anpassen von Elementtools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anpassen von Elementtools](https://docs.microsoft.com/visualstudio/modeling/customizing-element-tools).  
-  
 In einigen DSL-Definitionen stellen Sie ein einmaliges Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell erstellen, in dem eine Komponente über einen festen Satz von Ports verfügt, z. B. Sie immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie das Tool zur Erstellung von Element anpassen, sodass eine Gruppe von Elementen statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.  
   
  Sie können auch überschreiben, was geschieht, wenn das Tool auf das Diagramm oder ein Element gezogen wird.  

@@ -1,7 +1,7 @@
 ---
 title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225354"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [unterstützt-Code-Änderungen (C++)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp).  
-  
 Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Codeänderungen behandelt werden. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.  
   
  Weitere Informationen zum Arbeiten mit „Bearbeiten und Fortfahren“ für C++ in Visual Studio finden Sie unter [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
@@ -77,7 +75,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  
   
--   Debuggen von systemeigenen apps, die mit kompiliert  [ /zo (optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
   
 -   Debuggen von Windows Store-Apps oder -Komponenten in Versionen von Visual Studio vor Visual Studio 2015 Update 1 Ab Visual Studio 2015 Update 1 können Sie „Bearbeiten und Fortfahren“ in Windows Store C++- und DirectX-Apps verwenden, da jetzt der `/ZI` -Compilerschalter mit dem  `/bigobj` -Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
   

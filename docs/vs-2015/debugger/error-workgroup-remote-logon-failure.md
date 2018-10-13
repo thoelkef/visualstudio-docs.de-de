@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Fehler bei Remoteanmeldung von Arbeitsgruppe | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46d7043eba9d357f410d1a05655870ef5e1121d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 489fb331f08c95bf26a9b99c1143575aaa44257f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236027"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Fehler: Fehler bei Remoteanmeldung von Arbeitsgruppe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: Anmeldefehler der Arbeitsgruppe Remote](https://docs.microsoft.com/visualstudio/debugger/error-workgroup-remote-logon-failure).  
-  
 Inhalt dieses Fehlers:  
   
  Fehler bei der Anmeldung: Unbekannter Benutzername oder ungültiges Kennwort.  
@@ -91,7 +89,7 @@ Inhalt dieses Fehlers:
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

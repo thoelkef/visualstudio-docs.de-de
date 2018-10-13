@@ -1,7 +1,7 @@
 ---
 title: In der Kern-Editor | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2d9ec83c700f9166dc6b73860547bcacd265a15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc91a228fd788074a543678b281288e043f9385c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227727"
 ---
 # <a name="inside-the-core-editor"></a>In der Kern-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [innerhalb der Kern-Editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-core-editor).  
-  
 Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von mehreren Komponenten, mit denen Sie ändern und Abfragen von Textinformationen. Wenn Sie die Kern-Editor mit der legacy-API angepasst haben, können Sie weiterhin diesen Anpassungen verwenden, die über den Editor für Adapter weitergeleitet werden. Es wird jedoch empfohlen, dass Sie Ihre Anpassungen an den neuen Editor API anpassen.  
   
  Die folgenden Bereiche sind einige wichtige Aspekte bei der die Kern-Editor:  

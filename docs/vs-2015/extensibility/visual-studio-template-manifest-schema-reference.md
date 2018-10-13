@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Vorlage Manifest Schemareferenz | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b079e6b7356cdd84a98314beef95f4b1a8fbc5ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28301729091333191bcb0c381e37e20d3d9c53aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217092"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Schemareferenz zum Visual Studio-Vorlagenmanifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Studio-Manifest Schemareferenz zu Vorlagen](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).  
-  
 Dieses Schema beschreibt das Format für die Visual Studio-Manifest (vstman) Vorlagendateien für Visual Studio Projekt- oder Elementvorlagen generiert und beschreibt den Speicherort und andere relevante Informationen zur Vorlage.  
   
  : Da es sich um eine separate Element und den Projektverzeichnissen-Vorlage vorhanden sind, müssen ein Manifest noch nie eine Kombination von Element- und Projektvorlagen.  

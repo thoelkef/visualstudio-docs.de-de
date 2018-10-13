@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Elementerstellung und-Verschiebung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203527"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement).  
-  
 Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der Toolbox oder in einem einfügen bzw. Verschiebevorgang ab. Sie haben die verschobenen Elemente, die auf die Zielelemente verknüpft mit den Beziehungen, die Sie angeben.  
   
  Eine Direktive für elementzusammenführungen (EMD) gibt an, was geschieht, wenn ein Modellelement *zusammengeführte* in ein anderes Modellelement. Dies geschieht, wenn:  

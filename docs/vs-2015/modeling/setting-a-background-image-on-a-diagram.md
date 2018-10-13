@@ -1,7 +1,7 @@
 ---
 title: Festlegen eines Hintergrundbilds in einem Diagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240551"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Festlegen eines Hintergrundbilds in einem Diagramm](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.  
   
 ## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes  
@@ -52,7 +50,7 @@ Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../includes/vspr
   
 11. Wenn "Resources.Designer.cs" fehlt, klicken Sie auf die Datei "Resources.resx" im **Projektmappen-Explorer**.  
   
-12. In der **Eigenschaften** legen die `Custom Tool` Eigenschaft `ResXFileCodeGenerator`.  
+12. Legen Sie im Fenster **Eigenschaften** die Eigenschaft `Custom Tool` auf `ResXFileCodeGenerator`fest.  
   
 13. In **Projektmappen-Explorer**, mit der rechten Maustaste in des Dsl-Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie auf **neuer Ordner**.  
   

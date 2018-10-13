@@ -1,7 +1,7 @@
 ---
 title: Objektlebensdaueransicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202851"
 ---
 # <a name="object-lifetime-view"></a>Objektlebensdaueransicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Objektlebensdaueransicht](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 Die Objektlebensdaueransicht ist verfügbar, wenn **Lebensdauerinformationen für .NET-Objekt erfassen** auf der Eigenschaftenseite „Leistungssitzung“ aktiviert ist.  
   
  Der Garbage Collector von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verwaltet die Belegung und Freigabe von Arbeitsspeicher für die Anwendung. Zur Optimierung der Leistung des Garbage Collectors wird der verwaltete Heap in drei Generationen unterteilt: 0, 1 und 2. Vom Garbage Collector der Runtime werden neue Objekte in Generation 0 gespeichert. Objekte, die nach den Garbage Collections noch vorhanden sind, werden höhergestuft und in den Generationen 1 und 2 gespeichert.  

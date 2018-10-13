@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen Sie ein. VSCT-Datei aus einem vorhandenen. CTO-Datei | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82cf711d33b3b3ca5150378e7111a2a21c8c03cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235741"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Gewusst wie: Erstellen einer VSCT-Datei anhand einer vorhandenen CTO-Datei
 Sie können eine XML-basierte VSCT-Datei anhand einer vorhandenen binären CTO-Datei erstellen. Diese Vorgehensweise ermöglicht es Ihnen, das neue Befehlstabellen-Compilerformat zu nutzen. Dies funktioniert sogar, wenn die CTO-Datei aus einer CTC-Datei kompiliert wurde. Sie können die VSCT-Datei bearbeiten und in eine andere CTO-Datei kompilieren.  
@@ -32,9 +32,9 @@ Sie können eine XML-basierte VSCT-Datei anhand einer vorhandenen binären CTO-D
   
 3.  Navigieren Sie an der Visual Studio-Eingabeaufforderung zu dem Verzeichnis, das die CTO- und die CTSYM-Datei enthält.  
   
-4.  Typ **vsct.exe** _Ctofilename_**CTO** _Vsctfilename_**.vsct-s**  _Symfilename_**.ctsym**.  
+4.  Geben Sie **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**ein.  
   
-     `ctofilename` Der Name der CTO-Datei, `vsctfilename` ist der Name der Vsct-Datei, die Sie erstellen möchten, und `symfilename` ist der Name der ctsymdatei.  
+     `ctofilename` ist der Name der CTO-Datei, `vsctfilename` ist der Name der VSCT-Datei, die Sie erstellen möchten, und `symfilename` ist der Name der CTSYMDatei.  
   
      Bei diesem Vorgang wird eine neue VSCT-XML-Befehlstabellen-Compilerdatei erstellt. Sie können die Datei mit „vsct.exe“, dem vsct-Compiler, wie jede andere VSCT-Datei bearbeiten und kompilieren.  
   

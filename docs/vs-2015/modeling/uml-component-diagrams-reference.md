@@ -1,7 +1,7 @@
 ---
 title: 'UML-Komponentendiagramme: Verweisen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206739"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML-Komponentendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Komponentendiagramme: Referenz](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 In Visual Studio eine *Komponentendiagramm* zeigt die Teile eines Entwurfs für ein Softwaresystem. Ein Komponentendiagramm unterstützt Sie bei der Darstellung der allgemeinen Struktur des Systems und des Dienstverhaltens, das diese Teile bieten und über Schnittstellen nutzen. Zum Erstellen eines UML-Komponentendiagramms, auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

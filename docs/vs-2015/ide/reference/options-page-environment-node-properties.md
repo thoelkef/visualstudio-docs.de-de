@@ -1,7 +1,7 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens „Umgebung“ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acc91b6588e7e999f0390a3bc7d7108b4e6af2b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239641"
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Seite "Optionen", Umgebungsknoteneigenschaften](https://docs.microsoft.com/visualstudio/ide/reference/options-page-environment-node-properties).  
-  
   
 In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Umgebung**, `DTE.Properties("Environment", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.  
   
@@ -71,7 +69,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (boolesch)|Speichert Dokumente als Unicode, wenn Daten nicht in der Codepage gespeichert werden können.|  
 |DontShowGlobalUndoChangeLossDialog|Get/Set (boolesch)|Zeigt eine Warnung an, wenn andere bearbeitete Dateien durch globales Rückgängigmachen geändert werden.|  
 |AllowEditingReadOnlyFiles|Get/Set (boolesch)|Ermöglicht das Bearbeiten schreibgeschützter Dateien, gibt jedoch eine Warnung aus, wenn versucht wird, die Dateien zu speichern.|  
-|DocumentDockPreference|Get/Set (Enumeration)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions> Die Position in der Gruppe der Registerkarten, an der das geöffnete Dokument eingefügt wird.|  
+|DocumentDockPreference|Get/Set (Enumeration)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Die Position in der Gruppe der Registerkarten, an der das geöffnete Dokument eingefügt wird.|  
   
 ## <a name="extension-manager"></a>Erweiterungs-Manager  
  `DTE.Properties("Environment", "ExtensionManager")`  

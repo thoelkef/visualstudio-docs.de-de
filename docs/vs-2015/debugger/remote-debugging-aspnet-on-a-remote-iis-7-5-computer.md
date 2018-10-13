@@ -1,31 +1,29 @@
 ---
 title: Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS 7.5 Computer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239849"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS-Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer).  
-  
 Sie können eine ASP.NET-Webanwendung auf einem Windows Server-Computer mit IIS bereitstellen und für das Remotedebuggen einrichten. Dieses Handbuch wird erläutert, wie einrichten und konfigurieren Sie eine Visual Studio 2015 MVC 4.5.2-Anwendung, in IIS bereitstellen, und fügen Sie den Remotedebugger in Visual Studio.
 
 Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
@@ -38,7 +36,7 @@ Die meisten der Informationen in diesem Artikel gilt auch für das Remotedebugge
 
 Anweisungen dazu, wie Sie den Remotedebugger auf dem Windows Server-Computer herunterladen, finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
-Zum Remotedebuggen von ASP.NET-Anwendungen, können Sie die remotedebuggeranwendung als Administrator ausführen oder den Remotedebugger als Dienst gestartet. Ausführliche Informationen zum auszuführen des Remotedebuggers als Dienst Sie unter finden [Remotedebuggen](../debugger/remote-debugging.md).
+Zum Remotedebuggen von ASP.NET-Anwendungen, können Sie die remotedebuggeranwendung als Administrator ausführen oder den Remotedebugger als Dienst gestartet. Ausführliche Informationen zum Ausführen des Remotedebuggers als Dienst finden Sie unter [Remote Debugging](../debugger/remote-debugging.md).
 
 Nachdem sie installiert ist, stellen Sie sicher, dass der Remotedebugger auf dem Zielcomputer ausgeführt wird. (Wenn es nicht der Fall ist, suchen Sie nach **Remotedebugger** in die **starten** Menü. ) Das Remotedebugger-Fenster sieht wie folgt aus. (4020 ist die Standardportnummer)
 

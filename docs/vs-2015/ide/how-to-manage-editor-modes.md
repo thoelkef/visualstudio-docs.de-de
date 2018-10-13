@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwalten von Editormodi | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e679c751f5d4e8aa23bb843f812476f2f9e9f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229215"
 ---
 # <a name="how-to-manage-editor-modes"></a>Gewusst wie: Verwalten von Editormodi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Verwalten von Editormodi](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-modes).  
-  
 Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden.  
   
 > [!NOTE]

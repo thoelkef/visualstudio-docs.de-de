@@ -1,7 +1,7 @@
 ---
 title: Assistenten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224301"
 ---
 # <a name="wizards"></a>Assistenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Assistenten](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Nachdem Sie einen Assistenten erstellen, in der Regel damit hinzufügen möchten die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Entwicklungsumgebung (IDE) integriert, sodass andere sie verwenden können. Die hinzugefügten dann erscheint der Assistent die **neues Projekt hinzufügen** oder **neues Element hinzufügen** Dialogfelder. Anzeigen der **neues Projekt hinzufügen** oder **neues Element hinzufügen** Dialogfeld Felder mit der rechten Maustaste in einer geöffneten Projektmappe **Projektmappen-Explorer**, zeigen Sie auf **hinzufügen**, und Klicken Sie dann auf **neues Projekt** oder **neues Element**.  
   
  Assistenten können implementiert werden, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer informieren, wählen Sie aus der Strukturansicht der verfügbaren Werte, die beim Öffnen der **neues Projekt hinzufügen** Dialogfeld oder **neues Element hinzufügen** im Dialogfeld oder wenn sie mit der rechten Maustaste ein Element im **Projektmappen-Explorer**.  
@@ -61,5 +59,5 @@ Nachdem Sie einen Assistenten erstellen, in der Regel damit hinzufügen möchten
  Veranschaulicht, wie zum Erstellen eines Assistenten.  
   
  [Erweitern von Projekten](../../extensibility/extending-projects.md)  
- Beschreibt, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projekte und Projektmappen, die zum Organisieren von Codedateien und Ressourcendateien und wie Sie Datenquellen-Steuerelement zu implementieren.
+ Beschreibt, wie Codedateien und Ressourcendateien mithilfe von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten und -Projektmappen organisiert werden und wie die Quellcodeverwaltung implementiert wird.
 

@@ -1,7 +1,7 @@
 ---
 title: Modell für Quellcodeverwaltungspakete | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220d8596827c637b578e4ccb52796607b9bfd413
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b67274702906b4e1c778dd66e2cac2b96a84b6e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237158"
 ---
 # <a name="model-for-source-control-packages"></a>Modell für Quellcodeverwaltungspakete
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Modell für Quellcodeverwaltungspakete](https://docs.microsoft.com/visualstudio/extensibility/internals/model-for-source-control-packages).  
-  
 Das folgende Modell stellt ein Beispiel für eine Source-Control-Implementierung dar. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die umgebungsdienste, die aufgerufen werden muss. Wie alle Dienste rufen Sie tatsächlich die Methoden der einer bestimmten Schnittstelle, die Sie über den Dienst zu erhalten. Die Namen der Klassen werden identifiziert, damit leichter das finden Sie unter wie Datenquellen-Steuerelement ausgeführt wird.  
   
  ![SCC&#95;KRIPT Beispiele](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  

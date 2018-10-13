@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ac1d941fb206b6567084ea657280dc2b35ccf365
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211496"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendung für Zustandsautomatworkflows mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] zu erstellen, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  

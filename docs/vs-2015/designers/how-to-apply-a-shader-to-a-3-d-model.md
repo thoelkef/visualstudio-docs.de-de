@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 277711a0dd2a106c8770b2b7d720666589e65d86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3268bd37a0fd0038901e3e815dba290a605638c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212692"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Gewusst wie: Anwenden eines Shaders auf ein 3D-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](https://docs.microsoft.com/visualstudio/designers/how-to-apply-a-shader-to-a-3-d-model).  
-  
 In diesem Dokument wird gezeigt, wie der Modell-Editor verwendet wird, um einen Directed Graph Shader Language (DGSL)-Shader auf ein 3-D-Modell anzuwenden.  
   
  In diesem Dokument wird die folgende Aktivität veranschaulicht:  

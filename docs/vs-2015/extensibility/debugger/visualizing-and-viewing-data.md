@@ -1,7 +1,7 @@
 ---
 title: Visualisieren und Anzeigen von Daten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202773"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisieren und Anzeigen von Daten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [visualisieren und Anzeigen von Daten](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data).  
-  
 Typschnellansichten und benutzerdefinierten Viewern Darstellung der Daten in einer Weise, die schnell für Entwickler relevant ist. Die ausdrucksauswertung (EE) kann Drittanbieter-Typ-Schnellansichten unterstützen als auch einen eigenen benutzerdefinierten Viewer angeben.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Bestimmt, wie viele typschnellansichten und benutzerdefinierten Viewern den Typ des Objekts zugeordnet, durch den Aufruf sind der [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) Methode. Wenn Sie mindestens einen typschnellansicht oder in benutzerdefinierten Viewer verfügbar ist, ruft Visual Studio die [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Methode zum Abrufen einer Liste dieser Schnellansichten und-Viewer (tatsächlich eine Liste der `CLSID`s, die implementiert die Schnellansichten und Viewer) und präsentiert diese dem Benutzer.  

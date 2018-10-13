@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229371"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates).  
-  
 Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert ist und problemlos geändert werden, wenn sich das Quellmodell ändert. Vergleichen Sie dies mit der alternativen Technik für ein vollkommen generisches Programm, das eine Konfigurationsdatei akzeptiert, was flexibler ist, aber zu Code führt, der nicht so einfach zu lesen und zu ändern ist und keine so gute Leistung aufweist. In dieser exemplarischen Vorgehensweise wird dieser Vorteil veranschaulicht.  
   
 ## <a name="typed-code-for-reading-xml"></a>Typisierter Code zum Lesen von XML  

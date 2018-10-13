@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Darstellung im Diagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98d6dca27976d2400e3eb2676478324a1bcf4c8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63cfb09bfdc08cdc709bcdaf9ca9803bc95610f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229273"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anpassen der Darstellung im Diagramm](https://docs.microsoft.com/visualstudio/modeling/customizing-presentation-on-the-diagram).  
-  
 Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprach-Designers. Normalerweise konstruieren die Benutzer ihre Modelle mit dem Diagramm. Sie können das Diagramm wie in den folgenden Themen beschrieben anpassen.  
   
 -   [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)  

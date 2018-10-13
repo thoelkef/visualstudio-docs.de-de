@@ -1,7 +1,7 @@
 ---
 title: Messen von Komplexität und verwaltbarkeit verwalteten Codes | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214219"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Messen von Komplexität und Verwaltbarkeit verwalteten Codes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code).  
-  
 Die höhere Komplexität der modernen Anwendungen erhöht sich auch die Schwierigkeit den Code zuverlässig und verwaltbar zu machen. In den letzten Jahren viele Softwaremeasures, bekannt als Codemetrik entwickelt wurden, können Entwickler verstehen, in denen ihr Code Überarbeitungen und mehr Tests benötigt.  
   
  Entwickler können [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] zum Generieren von Codemetrikdaten werden, die die Komplexität und verwaltbarkeit ihrer verwalteten Codes messen. Codemetrikdaten können für eine gesamte Projektmappe oder ein einzelnes Projekt generiert werden.  

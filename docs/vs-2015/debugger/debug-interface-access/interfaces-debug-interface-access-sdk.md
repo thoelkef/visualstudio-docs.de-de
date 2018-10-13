@@ -1,7 +1,7 @@
 ---
 title: Schnittstellen (Debug Interface Access SDK) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 430d310b4a42440d827dcefd209579b36eda9807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40934ff90ea794c0bc86c7d3a9d8fbe4fe1d3703
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233316"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Schnittstellen (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schnittstellen (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/interfaces-debug-interface-access-sdk).  
-  
 Methoden sind unter jeder Schnittstelle in der Tabelle des Inhalts, und klicken Sie auf der Seite der Benutzeroberfläche in Vtable-Reihenfolge alphabetisch aufgeführt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -141,7 +139,7 @@ Methoden sind unter jeder Schnittstelle in der Tabelle des Inhalts, und klicken 
  Beschreibt die Konstanten, die in die DIA-SDK zur Verfügung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+ [Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 
 
 

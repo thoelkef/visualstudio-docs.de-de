@@ -1,7 +1,7 @@
 ---
 title: Neue Verbindung hinzufügen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13398a1b0aebc921c9600518c87888bd2b5cdea7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218504"
 ---
 # <a name="add-new-connections"></a>Neue Verbindung hinzufügen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [neue Verbindungen hinzufügen](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections).  
-  
   
 Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und Durchsuchen von Inhalt von Datenbanken und Schemas, mithilfe von **Server-Explorer**, **Cloud-Explorer**, oder **SQL Server-Objekt-Explorer**. Die Funktionalität dieser Windows überschneidet sich zu einem gewissen Grad. Die grundlegenden Unterschiede sind:  
   

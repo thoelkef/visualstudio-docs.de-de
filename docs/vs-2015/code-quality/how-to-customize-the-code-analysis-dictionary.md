@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anpassen des Codeanalysewörterbuchs | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227912"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Anpassen des Codeanalysewörterbuchs](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary).  
-  
 Codeanalyse verwendet ein integriertes Wörterbuch zum Überprüfen der Bezeichner im Code Fehler Rechtschreibung, grammatische Groß-/Kleinschreibung und andere Benennungskonventionen für von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Richtlinien. Sie können eine benutzerdefiniertes Wörterbuch XML-Datei hinzufügen, entfernen oder Ändern der Begriffe, Abkürzungen und Akronyme, die dem integrierten Wörterbuch erstellen.  
   
  Nehmen wir beispielsweise an, die Ihren Code enthalten, eine Klasse namens **DoorKnokker**. Codeanalyse würde den Namen identifiziert, als eine Zusammensetzung von zwei Wörtern: **Tür** und **Knokker**. Klicken Sie dann eine Warnung auslösen würde, **Knokker** nicht korrekt geschrieben ist. Um die Codeanalyse erkennen die Schreibweise zu erzwingen, können Sie den Begriff hinzufügen **Knokker** dem benutzerdefinierten Wörterbuch.  

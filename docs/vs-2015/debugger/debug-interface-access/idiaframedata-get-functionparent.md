@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: Get_functionparent | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83ff939c4185dbb5fc9b15a976a2280609539050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4182e389f4918895a98d7e1ea2e51bf1e8b6c8a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207661"
 ---
 # <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [idiaframedata:: Get_functionparent](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-functionparent).  
-  
 Ruft eine Schnittstelle für den Rahmen für die einschließende Funktion ab.  
   
 ## <a name="syntax"></a>Syntax  
