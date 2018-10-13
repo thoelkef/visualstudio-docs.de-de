@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden des Fensters Threads | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306253"
 ---
 # <a name="how-to-use-the-threads-window"></a>Gewusst wie: Verwenden des Fensters Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen einer Multithread-App mithilfe des Fensters Threads](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können.  
   
  Die **Threads** Fenster enthält eine Tabelle, in dem jede Zeile stellt einen Thread in der Anwendung dar. Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgeführt. Sie können die Liste jedoch filtern, sodass nur die gewünschten Threads angezeigt werden. Jede Spalte enthält einen anderen Typ von Informationen. Sie können auch einige Spalten ausblenden. Wenn alle Spalten eingeblendet sind, werden die folgenden Informationen angezeigt (von links nach rechts):  

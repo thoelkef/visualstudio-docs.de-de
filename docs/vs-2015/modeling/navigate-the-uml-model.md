@@ -1,7 +1,7 @@
 ---
 title: Navigieren im UML-Modell | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6c5190e1ec273ac0e0b20855c1d0764b58dda65b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 827a0f7b79f3973b98710de0fb13565145ffb1e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300260"
 ---
 # <a name="navigate-the-uml-model"></a>Navigieren im UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Navigieren im UML-Modell](https://docs.microsoft.com/visualstudio/modeling/navigate-the-uml-model).  
-  
 In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.  
   
 ## <a name="the-model-elements-model-and-model-store"></a>Modellelemente, Modell und Modellspeicher  

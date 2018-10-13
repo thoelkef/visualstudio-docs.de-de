@@ -1,14 +1,14 @@
 ---
 title: 'Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,21 +22,19 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303042"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfüllt, indem Sie die Visualisierungs- und Modellierungstools in Visual Studio verwenden. Verwenden Sie Tools wie z. B. UML-Diagramme (Unified Modeling Language), Code Maps, Ebenendiagramme und Klassendiagramme für folgende Aufgaben:  
   
- Informationen dazu, welche Versionen von Visual Studio die einzelnen Tools unterstützen, finden Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Informationen dazu, welche Versionen von Visual Studio die einzelnen Tools unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 -   Ermitteln der Anforderungen und Geschäftsprozesse von Benutzern  
   
@@ -292,7 +290,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 |**Diagramm**|**Beschreibt**|  
 |-----------------|-------------------|  
-|*Ebenendiagramm*<br /><br /> Thema<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Ebenendiagramm organisiert und ordnet die Elemente in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung für die abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|  
+|*Ebenendiagramm*<br /><br /> Thema<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Mit einem Ebenendiagramm werden die Artefakte in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe organisiert und abstrakten Gruppen, genannt *Ebenen*, zugeordnet. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|  
   
  Das folgende Ebenendiagramm beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Artefakte, die jeder Ebene zugeordnet sind:  
   
@@ -306,7 +304,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 -   [Definieren des Buildprozesses](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Verwenden Sie einen Buildprozess mit abgegrenztem Eincheckvorgang zur Überprüfung von Änderungen](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+-   [Verwenden eines abgegrenzten Eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
 -   [Anpassen der Buildprozessvorlage](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
@@ -347,7 +345,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 -   [Verknüpfen von Modellelementen und Arbeitselementen](../modeling/link-model-elements-and-work-items.md)  
   
--   [Diagramme, Dashboards und Berichten für Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+-   [Diagramme, Dashboards und Berichte für Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
 -   [Erstellen von Backlog und Aufgaben mit Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
@@ -650,7 +648,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
      Erstellen Sie für eine schnelle Übersicht über kompilierten Code eine leere Code Map, und ziehen Sie dann Assemblydateien oder Binärdateien auf die Oberfläche der Code Map.  
   
--   Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
+-   Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Um die Code Map einfacher zu untersuchen, können Sie das Layout den auszuführenden Aufgaben entsprechend neu anordnen.  
   
@@ -895,7 +893,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
  [Visualisieren von code](../modeling/visualize-code.md)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
- [Verwenden von Modellen in Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
 

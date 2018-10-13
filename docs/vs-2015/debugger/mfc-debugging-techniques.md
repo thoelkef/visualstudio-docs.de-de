@@ -1,7 +1,7 @@
 ---
 title: MFC Debugtechniken | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4828b7b5ee5d0812c8a9b1afa2ff2def783c3d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303913"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MFC-Debugverfahren](https://docs.microsoft.com/visualstudio/debugger/mfc-debugging-techniques).  
-  
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:  
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
@@ -92,7 +90,7 @@ _asm int 3
  [Inhalt](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro  
- Zum Anzeigen von Nachrichten von Ihrem Programm im Debugger [Fenster "Ausgabe"](../ide/reference/output-window.md), können Sie die [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [ABLAUFVERFOLGUNG](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) Makro. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.  
+ Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.  
   
  Die folgenden Beispiele zeigen einige Verwendungsmöglichkeiten für das **TRACE** -Makro auf. Ähnlich wie `printf`ist das **TRACE** -Makro in der Lage, mehrere Argumente zu verarbeiten.  
   
@@ -120,7 +118,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- Weitere Informationen zu den **ABLAUFVERFOLGUNG** Makro verwenden, finden Sie unter [Diagnosedienste](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8).  
+ Weitere Informationen zum **TRACE** -Makro finden Sie unter [Diagnosedienste](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8).  
   
  [Inhalt](#BKMK_In_this_topic)  
   
@@ -128,7 +126,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermittelt werden können, die belegt, jedoch nicht wieder freigegeben werden.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung  
- In MFC können Sie das Makro [DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) anstelle von der **neue** Operator zum Auffinden von Speicher zu Speicherverlusten. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.  
+ In MFC können Sie anstelle des Operators [new](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.  
   
  Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:  
   
@@ -147,17 +145,17 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **So aktivieren oder deaktivieren Sie die Speicherdiagnose**  
   
--   Rufen Sie die globale Funktion [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) aktivieren oder Deaktivieren der Diagnose-Speicherbelegungsfunktion. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.  
+-   Rufen Sie die globale [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) -Funktion auf, um die Diagnose-Speicherbelegungsfunktion zu aktivieren oder zu deaktivieren. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.  
   
  **So wählen Sie spezifische Speicherdiagnosefeatures mit "afxMemDF" aus**  
   
--   Wenn Sie die Speicherdiagnosefeatures präzisen steuern möchten, können Sie gezielt aktivieren einzelner Speicherdiagnosefeatures ein- und ausschalten durch Festlegen des Werts der globalen MFC-Variablen [AfxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:  
+-   Wenn Sie die Speicherdiagnosefeatures präziser steuern möchten, können Sie einzelne Features gezielt aktivieren und deaktivieren, indem Sie den Wert der globalen MFC-Variablen [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)festlegen. Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:  
   
     |Wert|Beschreibung|  
     |-----------|-----------------|  
     |**allocMemDF**|Aktivieren der Diagnose-Speicherbelegungsfunktion (Standard).|  
     |**delayFreeMemDF**|Verzögern der Speicherfreigabe nach dem Aufrufen von `delete` oder `free` bis zum Programmende. Auf diese Weise belegt das Programm den größtmöglichen Speicherplatz.|  
-    |**checkAlwaysMemDF**|Rufen Sie [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) jedes Mal, wenn Speicher belegt oder freigegeben ist.|  
+    |**checkAlwaysMemDF**|Aufrufen von [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) bei jeder Speicherbelegung oder -freigabe.|  
   
      Diese Werte können mit logischen OR-Operationen auch kombiniert werden, z. B.:  
   
@@ -169,11 +167,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen  
   
-1.  Erstellen Sie eine [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) Objekt, und rufen die [CMemoryState:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) Member-Funktion. Dadurch wird die erste Speichermomentaufnahme erstellt.  
+1.  Erstellen Sie ein [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) -Objekt, und rufen Sie die [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) -Memberfunktion auf. Dadurch wird die erste Speichermomentaufnahme erstellt.  
   
 2.  Nachdem das Programm alle Speicherbelegungen und -freigaben vorgenommen hat, erstellen Sie ein weiteres `CMemoryState` -Objekt und rufen `Checkpoint` für dieses Objekt auf. Dadurch wird eine zweite Momentaufnahme erstellt, die Aufschluss über die Arbeitsspeichernutzung gibt.  
   
-3.  Erstellen Sie eine dritte `CMemoryState` Objekt, und rufen die [CMemoryState:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) Member-Funktion und als Argumente die vorherigen beiden `CMemoryState` Objekte. Wenn sich die beiden Speicherzustände unterscheiden, gibt die `Difference` -Funktion einen Wert ungleich 0 (Null) zurück. Dies deutet darauf hin, dass einige Speicherblöcke nicht freigegeben wurden.  
+3.  Erstellen Sie ein drittes `CMemoryState` -Objekt, rufen Sie die zugehörige [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) -Memberfunktion auf, und übergeben Sie die ersten beiden `CMemoryState` -Objekte als Argumente. Wenn sich die beiden Speicherzustände unterscheiden, gibt die `Difference` -Funktion einen Wert ungleich 0 (Null) zurück. Dies deutet darauf hin, dass einige Speicherblöcke nicht freigegeben wurden.  
   
      Dieses Beispiel veranschaulicht den dazugehörigen Code:  
   
@@ -198,14 +196,14 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     Beachten Sie, die die Speicher-Überprüfung-Anweisungen in, indem Klammern stehen `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blockiert, sodass sie nur in Debugversionen des Programms kompiliert werden.  
+     Beachten Sie, dass die Speicherüberprüfungsanweisungen in `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** -Blöcke eingeschlossen sind und daher nur in Debugversionen des Programms kompiliert werden.  
   
-     Jetzt wissen Sie, ein Speicherverlust auftritt können Sie eine andere Memberfunktion namens [CMemoryState:: DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) wird, mit denen Sie die Datei zu suchen.  
+     Da Sie nun wissen, dass ein Speicherverlust auftritt, können Sie eine andere Memberfunktion namens [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) verwenden, um die Stelle zu lokalisieren.  
   
  [Inhalt](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Anzeigen einer Speicherstatistik  
- Die [CMemoryState:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) Funktion zwei Speicherzustand Objekte und ermittelt alle Objekte aus dem Heap zwischen dem Anfang und dem Endzustand nicht aufgehoben. Nachdem Sie Speichermomentaufnahmen aufgezeichnet und diese verglichen mit `CMemoryState::Difference`, rufen Sie [CMemoryState:: DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) zum Abrufen von Informationen zu den Objekten, die nicht freigegeben wurden.  
+ Durch die [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) -Funktion werden die beiden Speicherzustandsobjekte verglichen und alle Objekte ermittelt, die zwischen dem Anfangs- und dem Endzustand nicht vom Heap freigegeben wurden. Nachdem Sie Speichermomentaufnahmen aufgezeichnet und diese mithilfe von `CMemoryState::Difference`verglichen haben, können Sie [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) aufrufen, um Informationen über die nicht freigegebenen Objekte zu erhalten.  
   
  Betrachten Sie das folgende Beispiel:  
   
@@ -240,10 +238,10 @@ Total allocations: 67 bytes
  [Inhalt](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> Nachverfolgen von Objektabbildern  
- Sie können in einem MFC-Programm verwenden [CMemoryState](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` Sichert alle seit dem letzten [CMemoryState:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.  
+ Sie können in einem MFC-Programm verwenden [CMemoryState](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.  
   
 > [!NOTE]
->  Bevor Sie die MFC-Objektdumps verwenden können, müssen Sie [Aktivieren von diagnoseablaufverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics).  
+>  Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)aktiviert werden.  
   
 > [!NOTE]
 >  In MFC wird von allen Objekten, die Speicherverluste verursachen, beim Beenden des Programms automatisch ein Dump erstellt. Daher ist kein Code zum Erstellen von Objektdumps am Programmende erforderlich.  
@@ -281,7 +279,7 @@ Phone #: 581-0215
   
  Sie können einen Haltepunkt für eine bestimmte Speicherbelegung festlegen, indem Sie für die globale `_afxBreakAlloc` -Variable den in geschweiften Klammern angegebenen Wert festlegen. Wenn das Programm erneut ausgeführt wird, unterbricht der Debugger die Ausführung, sobald diese Reservierung erfolgt. Sie können dann die Aufrufliste durchsehen, um festzustellen, wie das Programm zu diesem Punkt gelangt ist.  
   
- Die C-Laufzeitbibliothek verfügt über eine vergleichbare Funktion, [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), dass Sie für C-laufzeitbelegungen verwenden können.  
+ Die C-Laufzeitbibliothek verfügt über eine vergleichbare Funktion, [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), die Sie für C-Laufzeitbelegungen verwenden können.  
   
  [Inhalt](#BKMK_In_this_topic)  
   
@@ -312,7 +310,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  Der `CPerson` -Konstruktor hat drei Argumente, die Zeiger auf `char`darstellen. Sie werden zur Initialisierung von `CString` -Membervariablen verwendet. Im Speicherdump ist das `CPerson` -Objekt zusammen mit drei Elementen, die keine Objekte darstellen (3, 4 und 5), aufgeführt. Diese enthalten die Zeichen für die `CString` -Membervariablen und werden beim Aufrufen des `CPerson` -Objektdestruktors nicht gelöscht.  
   
- Block 2 ist das `CPerson` -Objekt selbst. `$51A4` Stellt die Adresse des Blocks dar und wird gefolgt von den Inhalt des Objekts, das von Objektinhalt `CPerson`::`Dump` beim Aufruf von [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2).  
+ Block 2 ist das `CPerson` -Objekt selbst. `$51A4` stellt die Adresse des Speicherblocks dar. Es folgt der Objektinhalt, der durch `CPerson`::`Dump` ausgegeben wurde, sofern der Aufruf durch [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)erfolgt ist.  
   
  Block Nummer 1 kann der `CString` -Framevariablen zugeordnet werden. Dies lässt sich aus seiner Größe (entspricht der Anzahl der Zeichen in der `CString` -Variablen) und der Sequenznummer schließen. Reservierungen für Framevariablen werden automatisch freigegeben, wenn die Framevariable den Gültigkeitsbereich verlässt.  
   
@@ -369,9 +367,9 @@ Phone #: 581-0215
  [Inhalt](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps  
- Beim Ableiten einer Klasse von [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), können Sie überschreiben die `Dump` Member-Funktion, um zusätzliche Informationen bereitzustellen, bei der Verwendung [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) für den Objektdump der [Fenster "Ausgabe"](../ide/reference/output-window.md).  
+ Wenn Sie eine Klasse von [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)ableiten, können Sie die Memberfunktion `Dump` überschreiben, um bei Verwendung von [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) für den Objektdump zusätzliche Informationen im [Ausgabefenster](../ide/reference/output-window.md)anzuzeigen.  
   
- Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators (**<<**) können Sie Daten an einen `CDumpContext`aufgerufen.  
+ Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)) aus. Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators (**<<**) können Sie Daten an einen `CDumpContext`aufgerufen.  
   
  Wenn Sie die `Dump` -Funktion überschreiben, sollten Sie zunächst die Basisklassenversion von `Dump` aufrufen, um den Inhalt des Basisklassenobjekts auszugeben. Lassen Sie für jede Membervariable der abgeleiteten Klasse eine Textdarstellung und einen Wert ausgeben.  
   
@@ -489,7 +487,7 @@ pMyPerson->Dump( afxDump );
   
 7.  Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.  
   
- Alternativ zu dem in diesem Thema beschriebenen Verfahren können Sie auch ein externes Makefile verwenden, um die einzelnen Optionen für jede Datei zu definieren. In diesem Fall um eine Verknüpfung mit den MFC-Debugbibliotheken, Sie müssen definieren die [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) Flag für jedes Modul. Wenn Sie die MFC-Releasebibliotheken verwenden möchten, muss NDEBUG definiert sein. Weitere Informationen zum Schreiben von externen Makefiles finden Sie unter den [NMAKE-Referenz](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
+ Alternativ zu dem in diesem Thema beschriebenen Verfahren können Sie auch ein externes Makefile verwenden, um die einzelnen Optionen für jede Datei zu definieren. In diesem Fall muss zum Herstellen einer Verknüpfung mit den MFC-Debugbibliotheken ein [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) -Flag für jedes Modul definiert werden. Wenn Sie die MFC-Releasebibliotheken verwenden möchten, muss NDEBUG definiert sein. Weitere Informationen über das Schreiben von externen Makefiles finden Sie in der [NMAKE-Referenz](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
  [Inhalt](#BKMK_In_this_topic)  
   

@@ -1,7 +1,7 @@
 ---
 title: Threadansicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306266"
 ---
 # <a name="threads-view"></a>Threadansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ansicht "Threads"](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 In der Threadansicht wird eine flache Liste aller Threads, die Windows auf Ihrem System zugeordnet. Die Thread-ID und den Modulnamen für jeden Thread werden angezeigt. Prozesse sind nicht enthalten, aber Sie finden den Prozess, der einen ausgewählten Thread besitzt.  
   
 ## <a name="procedures"></a>Verfahren  

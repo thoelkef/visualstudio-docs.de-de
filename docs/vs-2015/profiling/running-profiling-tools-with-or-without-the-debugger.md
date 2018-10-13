@@ -1,7 +1,7 @@
 ---
 title: Ausführen von Profilerstellungstools mit oder ohne den Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301482"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne den Debugger](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
-  
 Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige (z.B. **CPU-Auslastung** und **Speicherauslastung**) mit oder ohne den Debugger ausgeführt werden können. Leistungstools ohne Debugger sind für Releasekonfigurationen gedacht, während die Tools mit integriertem Debugger zur Ausführung auf Debugkonfigurationen vorgesehen sind.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Sollte ich das Tool mit oder ohne Debugger ausführen?  

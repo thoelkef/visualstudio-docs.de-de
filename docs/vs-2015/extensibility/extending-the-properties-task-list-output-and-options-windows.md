@@ -1,7 +1,7 @@
 ---
 title: Erweitern die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für Windows | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aff8da28ecdf91ffa2b21ddb03a62315e2943d6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302652"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster für Eigenschaften, Aufgabenlisten, Ausgaben und Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erweitern die Eigenschaften, Aufgabenliste, Ausgabe und Optionen Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-the-properties-task-list-output-and-options-windows).  
-  
 Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vorgehensweise zeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite sowie das Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-an-extension-with-a-tool-window"></a>Erstellen Sie eine Erweiterung mit einem Toolfenster  

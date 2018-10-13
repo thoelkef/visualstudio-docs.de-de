@@ -1,7 +1,7 @@
 ---
 title: MarkupCompilePass1-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adef6f05be4c3c4bf24a3f5a232fff082ea69a2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189357"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MarkupCompilePass1-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/markupcompilepass1-task).  
-  
   
 Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nicht lokalisierte [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Projektdateien in kompiliertes Binärformat.  
   

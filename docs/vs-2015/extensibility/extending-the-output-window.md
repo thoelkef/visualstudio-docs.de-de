@@ -1,7 +1,7 @@
 ---
 title: Erweitern im Ausgabefenster | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 127ea733594f9ed4b7da38719f517f9edc1fcef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0608d8f6c4c9d9c0ae1454110e6db212f16bfe9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300546"
 ---
 # <a name="extending-the-output-window"></a>Erweitern des Ausgabefensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweitern des Ausgabefensters](https://docs.microsoft.com/visualstudio/extensibility/extending-the-output-window).  
-  
 Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff. Visual Studio verfügt über diesen integrierten Bereichen: **erstellen**, Nachrichten zu Builds, welche Projekte kommunizieren und **allgemeine**, in dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Nachrichten über die IDE kommuniziert. Projekte Abrufen eines Verweises auf die **erstellen** Bereich automatisch über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellenmethoden und Visual Studio bietet direkten Zugriff auf die **allgemeine** Bereich über die <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> -Dienst. Zusätzlich zu den integrierten Bereichen können Sie erstellen und verwalten Ihre eigenen benutzerdefinierten Bereiche.  
   
  Sie können steuern, die **Ausgabe** Fenster direkt über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstellen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> -Schnittstelle, die von angeboten wird die <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> service, definiert Methoden zum Erstellen, abrufen und Zerstören von **Ausgabe** Fensterbereichen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Schnittstelle definiert Methoden für die Bereiche einblenden, Ausblenden von Bereichen und Bearbeiten von ihrem Text. Eine alternative Möglichkeit zum Steuern der **Ausgabe** Fenster ist über die <xref:EnvDTE.OutputWindow> und <xref:EnvDTE.OutputWindowPane> Objekte im Objektmodell Visual Studio-Automatisierung. Diese Objekte zu kapseln, fast alle Funktionen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstellen. Darüber hinaus die <xref:EnvDTE.OutputWindow> und <xref:EnvDTE.OutputWindowPane> Objekte hinzufügen, einige auf höherer Ebene Funktionen zum Auflisten von erleichtern die **Ausgabe** Fensterbereiche und zum Abrufen von Text aus den Bereichen.  

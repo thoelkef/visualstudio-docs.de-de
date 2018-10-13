@@ -1,7 +1,7 @@
 ---
 title: Persistenz und die Ausführung zu dokumentieren Tabelle | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f8025bd20fe6522ec0f835e299a2a9efd9ca1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c85f8d579b3c2cae6ca10f217c1dabd72dfc3a53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301332"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistenz und die aktive Dokumenttabelle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Persistenz und der aktiven Dokumenttabelle](https://docs.microsoft.com/visualstudio/extensibility/internals/persistence-and-the-running-document-table).  
-  
 In der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE-Projekte sind vollständig verantwortlich für die Verwaltung von Projektelementen, die sie mit dem Dienst zu erreichen, die Persistenz <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumente sind die grundlegende Einheit der Persistenz in Visual Studio-Umgebung. Projekte koordiniert das Öffnen, speichern und Umbenennen von Dokumenten mit der aktiven Dokumenttabelle (RDT), eine Ressource, die den Status aller geöffneten Dokumente nachverfolgt werden.  
   
 ## <a name="managing-persistence"></a>Verwalten der Persistenz  

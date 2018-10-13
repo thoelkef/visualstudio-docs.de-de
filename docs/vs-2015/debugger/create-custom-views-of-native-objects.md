@@ -1,7 +1,7 @@
 ---
 title: Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236534"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Erstellen Sie benutzerdefinierter Ansichten von systemeigenen Objekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
 Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, wie in Visual Studio systemeigene Typen in den Variablenfenstern des Debuggers angezeigt werden, beispielsweise die Fenster **Überwachen**, **Lokal**und **Datentipps** .  
   
  Natvis ersetzt die **autoexp.dat** -Datei, die in früheren Versionen von Visual Studio verwendet wurde, und bietet XML-Syntax, bessere Diagnosefunktionen, eine bessere Versionskontrolle und Unterstützung mehrerer Dateien.  
@@ -356,7 +354,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 -   Wenn ein `Expand` -Knoten ohne untergeordnete Knoten angegeben wird, kann der Typ in den Debuggerfenstern nicht erweitert werden.  
   
 ####  <a name="BKMK_Item_expansion"></a> Item-Erweiterung  
- Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect` -Klasse mit `top`, `left`, `right`und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
+ Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect`-Klasse mit `top`, `left`, `right` und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
   
 ```xml  
 <Type Name="CRect">  

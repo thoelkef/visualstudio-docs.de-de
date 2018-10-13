@@ -1,7 +1,7 @@
 ---
 title: Angeben, wann und wo eine Anmerkung gültig | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303354"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [angeben, wenn und wo eine Anmerkung gültig](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies).  
-  
 Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen an, die an die Analyse erforderlich.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein können, die Funktion verhält sich wie folgt: In den synchronen Fall immer schließlich erfolgreich ist, aber bei asynchronen Vorgängen einen Fehler gemeldet, wenn er sofort nicht ordnungsgemäß ausgeführt werden. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert, der Code-Analyzer, da er würde nicht zurückgegeben haben.  Wenn die Funktion wird asynchron aufgerufen, und das Ergebnis der Funktion nicht aktiviert ist, kann jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschriebenen – zu aktivieren.  
   
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen  

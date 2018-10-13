@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262261"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstellung können Sie für eine Reihe von Voraussetzungen, die auf dem Clientcomputer für verfügbar sein müssen die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ausgeführt. Dazu gehören die erforderliche Mindestversion von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], kann jedoch nicht installiert diese erforderlichen Komponenten selbst Wenn eine erforderliche Komponente nicht gefunden wird, wird die Installation angehalten es einfach an und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation an.  
   
  Es gibt zwei Methoden zum Installieren der erforderlichen Komponenten. Sie können sie mit der eine Bootstrapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die für Benutzer im Dialogfeld angezeigt wird, wenn die erforderliche Komponente nicht gefunden wird. Die Seite, die auf diese URL verweist, kann Links zu Anweisungen zum Installieren der erforderlichen Komponente enthalten. Wenn eine Anwendung eine Support-URL für eine einzelne erforderliche Komponente, nicht angeben, wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zeigt die Support-URL in das Bereitstellungsmanifest für die Anwendung als Ganzes angegeben, wenn er definiert ist.  

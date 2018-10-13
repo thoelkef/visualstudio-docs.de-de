@@ -1,7 +1,7 @@
 ---
 title: Erstellen von benutzerdefinierten Projekt- und Elementvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304628"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 Visual Studio SDK umfasst Projektvorlagen, die eine benutzerdefinierte Projektvorlage und eine benutzerdefinierte Elementvorlage zu erstellen. Diese Vorlagen enthalten einige allgemeine Ersetzen von Parametern, und erstellen als Zip-Dateien. Sie werden nicht automatisch bereitgestellt, und sie sind nicht verfügbar, in der experimentellen Instanz. Kopieren Sie die ZIP-Datei auf den Speicherort Datei  
   
  Die Vorlage erstellen Vorlagen können Sie die Vorlagen in größeren Erweiterungen enthalten. Dadurch können Sie die Versionskontrolle für die Quelldateien implementieren, und erstellen eine Gruppe von Vorlagenprojekten in einem VSIX-Paket.  

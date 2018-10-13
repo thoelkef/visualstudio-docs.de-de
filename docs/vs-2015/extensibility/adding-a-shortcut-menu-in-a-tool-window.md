@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen eines Kontextmenüs in einem Toolfenster | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217983"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen eines Kontextmenüs in einem Toolfenster](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window).  
-  
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü wird ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, im Textfeld oder Fensterhintergrund klickt. Befehle im Kontextmenü der Verhalten sich wie die Befehle auf anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der VSCT-Datei, und als Reaktion auf der rechten Maustaste anzuzeigen.  
   
  Ein Toolfenster besteht aus einer WPF-Benutzersteuerelement in ein benutzerdefiniertes Tool-Fenster-Klasse, die von erbt <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
@@ -38,7 +36,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
   
  Wenn Ihr Kontextmenü nicht Visual Studio-Funktionen zugreifen, Sie können auch die <xref:System.Windows.FrameworkElement.ContextMenu%2A> Eigenschaft eines XAML-Elements im Steuerelement. Weitere Informationen finden Sie unter [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>Erstellen die Verknüpfung im Menü-Fensterpakets  

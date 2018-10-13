@@ -1,7 +1,7 @@
 ---
 title: VSTextView-Objekt | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a09a4911eca71565b39ffdfab3cc31ec92233e06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d35b1bae49769bd9a804ae958057c34ba6e410f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198496"
 ---
 # <a name="vstextview-object"></a>VSTextView-Objekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [VSTextView-Objekt](https://docs.microsoft.com/visualstudio/extensibility/vstextview-object).  
-  
 Die Textansicht ist ein Fenster, können Benutzern das Anzeigen und bearbeiten Sie den Unicode-Text des Textpuffers. Im Wesentlichen ist die Ansicht, was die meisten Benutzer als Editor bezeichnet. Da die Ansicht aus dem Puffer von verschiedenen Textebenen (Zeilenumbruch, Gliederung, Text usw.) getrennt ist, wird die Sicht nicht garantiert eine genaue Darstellung des Texts im Puffer. Weitere Informationen zu der Textansicht, finden Sie unter [TheText Ansicht zugreifen, mit der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
   
  Die folgende Tabelle zeigt die Schnittstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Objekt.  

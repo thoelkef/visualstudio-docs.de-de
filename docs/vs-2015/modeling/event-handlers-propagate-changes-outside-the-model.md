@@ -1,7 +1,7 @@
 ---
 title: Ereignishandler propagieren Änderungen außerhalb des Modells | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303198"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 Sie können im Visualisierungs- und Modellierungs-SDK, Store-Ereignishandler zum Weitergeben von Änderungen an Ressourcen außerhalb des Speichers an, wie z. B. nicht über den Store-Variablen, die Dateien, die Modelle in anderen Datenspeichern oder andere definieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen das auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang zum Rückgängigmachen oder Wiederholen-Vorgang ausgeführt. Aus diesem Grund sind im Gegensatz zu Regeln für Store Speicherereignissen besonders hilfreich für das Aktualisieren der Werte, die außerhalb des Speichers. Im Gegensatz zu .NET Ereignissen, Store-Ereignishandler registriert sind, um eine Klasse zu überwachen: Sie müssen keinen separaten Handler für jede Instanz registrieren. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Verarbeiten von Änderungen, finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).  
   
  Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind Beispiele von externen Ressourcen, die von Store-Ereignisse behandelt werden können.  

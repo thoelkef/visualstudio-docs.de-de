@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Graustufentextur-Shaders | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509421"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304797"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Gewusst wie: Erstellen eines Graustufentextur-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Erstellen eines Graustufentextur-Shaders](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader).  
-  
 In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Graustufentextur-Shaders verwendet wird. Dieser Shader verändert die RGB-Farbwerte des Textursamples und verwendet es anschließend zusammen mit dem unveränderten Alphawert, um die endgültige Farbe festzulegen.  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>Erstellen eines Graustufentextur-Shaders  

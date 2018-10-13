@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: ändern ein Standardmenübefehls in einer domänenspezifischen Sprache | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 740e26434190857907af61170222922180abc9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302145"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Ändern Sie einen Befehl in einer domänenspezifischen Sprache Standard](https://docs.microsoft.com/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language).  
-  
 Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DSL definiert sind. Sie könnten z. B. ändern **Ausschneiden** , damit sie vertrauliche Informationen ausschließt. Hierzu überschreiben Sie Methoden in einer festgelegten Klasse des Befehls. Diese Klassen sind in der CommandSet.cs-Datei im DslPackage-Projekt definiert und von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.  
   
  Alles in allem ändern Sie einen Befehl folgendermaßen:  
@@ -141,7 +139,7 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes  
  Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:  
   
--   `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
+-   `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
   
 -   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
   

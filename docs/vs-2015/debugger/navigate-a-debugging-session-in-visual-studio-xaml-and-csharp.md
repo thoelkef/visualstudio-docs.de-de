@@ -1,7 +1,7 @@
 ---
 title: Navigieren in einer Debugsitzung in Visual Studio (Xaml und c#) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306305"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Navigieren von einer Debugsitzung in Visual Studio (Xaml und c#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual Studio navigiert und wie der Programmzustand einer Sitzung angezeigt und geändert wird.  
   
  Dieser Schnellstart richtet sich an Entwickler, die mit dem Debuggen in Visual Studio nicht vertraut sind, sowie an Entwickler, die mehr zum Navigieren in einer Debugsitzung in Visual Studio erfahren möchten. Das Debuggen selbst wird in diesem Schnellstart nicht erläutert. Anhand der Methoden des Beispielcodes sollen lediglich die in diesem Thema beschriebenen Debuggingsprozeduren aufgezeigt werden. Die Methoden stellen keine bewährte Methoden für das Entwerfen von Apps oder Funktionen dar. Tatsächlich werden Sie rasch feststellen, dass die Methoden und die App selbst nicht besonders viele Aufgaben erfüllen.  

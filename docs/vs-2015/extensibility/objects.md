@@ -1,7 +1,7 @@
 ---
 title: Objekte | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 732e4270d1e3325c66a44e13bde25cf831973642
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a113e0240fae8c4cd34e8c1632a5244a3711575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299610"
 ---
 # <a name="objects"></a>erzwingen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Objekte](https://docs.microsoft.com/visualstudio/extensibility/objects).  
-  
 Die folgenden Referenzinformationen wird erläutert, Objekte, die zum Erstellen einer Instanz des Texteditors Core verwendet werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

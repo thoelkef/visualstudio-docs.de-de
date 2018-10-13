@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Datentools für C++ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306188"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio-Datentools für C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Studio-Datentools für C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 Systemeigener C++-Code kann oft die schnellste beim Zugreifen auf Datenquellen verwendet werden. Data Tools für C++-Anwendungen in Visual Studio ist jedoch nicht so umfangreich wie es für .NET-Anwendungen ist. Z. B. können nicht die Daten-Datenquellen-Fenster verwendet werden, ziehen und Ablegen von Datenquellen auf einer Entwurfsoberfläche C++. Wenn Sie eine objektrelationale Ebene benötigen, müssen Sie einen eigenen Handler erstellen, oder verwenden Sie ein Produkt von Drittanbietern.  Dies gilt auch für die Datenbindung Funktionalität, obwohl Anwendungen, die die Microsoft Foundation Class-Bibliothek verwenden einige Datenbankklassen mit Dokumenten und Ansichten, verwenden können, um Daten im Arbeitsspeicher speichern und für den Benutzer anzuzeigen. Weitere Informationen finden Sie unter [-Datenzugriff in Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

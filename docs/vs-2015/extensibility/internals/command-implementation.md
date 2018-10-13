@@ -1,7 +1,7 @@
 ---
 title: Befehl Implementierung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40f53683f33e712a75368ea99aad401345dd76c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305370"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Befehlsimplementierung](https://docs.microsoft.com/visualstudio/extensibility/internals/command-implementation).  
-  
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:  
   
 1.  In der VSCT-Datei eine Befehlsgruppe richten Sie ein, und fügen Sie den Befehl hinzu. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)"  

@@ -1,7 +1,7 @@
 ---
 title: Legacysprachdienste | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aa3fdcbdb40dca34e17b675478b23d1fd2eef6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f5a060776126756b104b7f24c7b216ac881d1b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302704"
 ---
 # <a name="legacy-language-service-overview"></a>Übersicht über Legacysprachdienste
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Legacy-Sprache-Dienstübersicht](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-overview).  
-  
 Einen Sprachdienst bereitstellt, Editor-Unterstützung, die bestimmte implementiert werden kann [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Funktionen. Die Managed Package Framework (MPF) Sprache Dienstklassen bieten vollständige Unterstützung für häufig verwendete Funktionen und teilweise Unterstützung für andere Funktionen.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Vollständig unterstützte Funktionen in das MPF  

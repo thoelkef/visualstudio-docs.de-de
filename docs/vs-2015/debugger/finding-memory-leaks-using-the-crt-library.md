@@ -1,7 +1,7 @@
 ---
 title: Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198080"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [suchen Arbeitsspeicher Ressourcenlecks mithilfe der CRT-Bibliothek](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuvor vorgenommenen Speicherbelegung) zählen zu den heikelsten und am schwierigsten zu erkennenden Fehlern in C/C++-Anwendungen. Ein kleiner Arbeitsspeicherverlust würde möglicherweise zuerst nicht bemerkt werden. Im Laufe der Zeit kann ein fortschreitender Arbeitsspeicherverlust jedoch Symptome verursachen, die von verringerter Leistung bis hin zu einem Absturz reichen, wenn der Anwendung kein Arbeitsspeicher mehr zur Verfügung steht. Schwerwiegender ist hierbei jedoch, dass eine Anwendung mit Arbeitsspeicherverlusten, die den gesamten verfügbaren Arbeitsspeicher aufbraucht, einen Absturz anderer Anwendungen verursachen kann, wodurch das Identifizieren der für den Fehler verantwortlichen Anwendung erschwert wird. Auch scheinbar harmlose Arbeitsspeicherverluste können ein Symptom für andere Probleme sein, die korrigiert werden sollten.  
   
  Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger und die C-Laufzeitbibliotheken (CRT) enthalten die notwendigen Mittel zum Erkennen und Identifizieren von Arbeitsspeicherverlusten.  

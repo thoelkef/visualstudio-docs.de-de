@@ -1,7 +1,7 @@
 ---
 title: MSBuild-Batchverarbeitung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d868beddd498b112fa2f5a4de52f473c8ba3041
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304173"
 ---
 # <a name="msbuild-batching"></a>MSBuild-Batchverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MSBuild-Batchverarbeitung](https://docs.microsoft.com/visualstudio/msbuild/msbuild-batching).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann Elementlisten basierend auf den Elementmetadaten in verschiedene Kategorien oder Batches unterteilen und ein Ziel oder eine Aufgabe einmal mit jedem Batch ausführen.  
   

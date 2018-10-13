@@ -1,7 +1,7 @@
 ---
 title: Erweitern von Eigenschaften | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303705"
 ---
 # <a name="extending-properties"></a>Erweitern von Eigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweitern von Eigenschaften](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Eigenschaften** Fenster ist eine universelle Eigenschaftenbrowser für COM- und COM+-Komponenten und unterstützt alle [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Produkte. Die **Eigenschaften** Fenster arbeitet mit `ITypeInfo` geben Informationen und COM+-Metadaten zum Auflisten der Eigenschaften zur Entwurfszeit für das aktuell ausgewählte Objekt in einem anderen Fenster in der integrierten Entwicklungsumgebung (IDE).  
   
  Die **Eigenschaften** Fenster, die geöffnet werden kann, indem Sie auf der Tastatur die Taste F4 drücken, oder wählen **Fenster "Eigenschaften"** auf die **Ansicht** Menübefehl, dient zum Anzeigen und bearbeiten während der Entwurfszeit konfigurationsunabhängigen Eigenschaften und Ereignissen ausgewählter Objekte. Konfigurationsabhängigen Eigenschaften für Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen finden Sie unter [NIB: Projekteigenschaften](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md), und [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
@@ -96,5 +94,5 @@ Eigenschaftenfenster
  Erläutert, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] effizient verwaltet die Elemente wie z. B. Verweise, datenverbindungen, Ordner und Dateien, die von der Entwicklung über Projektmappen und Projekte erforderlich sind.  
   
  [Erweitern anderer Teile von Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Erläutert, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Dienste zum Erstellen von UI-Elemente, die den Rest der entsprechen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ Erläutert, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Dienste zum Erstellen von Benutzeroberflächenelementen verwendet werden, die zu den übrigen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Komponenten passen.
 

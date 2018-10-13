@@ -1,7 +1,7 @@
 ---
 title: Datenquelle der Architektur des VSPackage-Steuerelements | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190462"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektur von Quellcodeverwaltungs-VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Architektur von Quellcodeverwaltungs-VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Ein Paket für die quellcodeverwaltung ist eine VSPackage, das verwendet Dienste, die die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE bietet. Im Gegenzug stellt ein Paket für die quellcodeverwaltung seine Funktionalität als einen quellcodeverwaltungsdienst bereit. Darüber hinaus ist ein Paket für die quellcodeverwaltung als ein Quellcodeverwaltungs-Plug-In für die Integration der quellcodeverwaltung in eine stärker ausbauen Alternative [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Hält einen strengen Vertrag ein Quellcodeverwaltungs-Plug-in, der die Source-Plug-in-API implementiert. Beispielsweise ein plug-in kann nicht ersetzen Sie die standardmäßige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche (UI). Darüber hinaus kann nicht die Source-Plug-in-API für ein plug-in, um eine eigene quellcodeverwaltungmodell implementieren werden. Ein Paket quellcodeverwaltung überwindet jedoch diese beiden Einschränkungen. Ein Paket für die quellcodeverwaltung hat vollständige Kontrolle über die Quelle Steuerelement benutzerfreundlichkeit ein [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer. Darüber hinaus kann ein Paket für die quellcodeverwaltung verwenden, eigene quellcodeverwaltungmodell und Logik, und es kann alle vorhandenen Benutzer-Quellschnittstellen definieren.  

@@ -1,7 +1,7 @@
 ---
 title: Steuern der Datensammlung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6170ee5e93bcb8faeadd1d918468a44c4badb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306591"
 ---
 # <a name="controlling-data-collection"></a>Steuern der Datenauflistung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Steuern der Datensammlung](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection).  
-  
 Mit den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools können Sie steuern, wann Profilerstellungsdaten während einer Leistungssitzung gesammelt werden, und die Funktionen angeben, für die ein Profil erstellt wird. Dieser Abschnitt beschreibt, wie Sie über das Fenster des **Leistungs- Explorers** und der **Steuerung der Datensammlung** das Sammeln von Daten starten und beenden und wie Sie die Anzahl der Objekte beschränken, für die Profilerstellungsdaten gesammelt werden sollen.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  

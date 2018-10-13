@@ -1,7 +1,7 @@
 ---
 title: Entwerfen von XML-Befehlstabelle (. VSCT)-Dateien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b72438998b75fcebc7cccae082e3e9db4ac13b69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229384"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabelle (. VSCT)-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Entwerfen von XML-Command Table (. VSCT) Dateien](https://docs.microsoft.com/visualstudio/extensibility/internals/designing-xml-command-table-dot-vsct-files).  
-  
 Eine XML-Befehlstabellen (VSCT) Befehlsdatei beschreibt das Layout und die Darstellung der Befehl-Elemente für ein VSPackage. Befehls-Elemente enthalten, Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Gruppen von Elementen für Befehl. Dieses Thema beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl-Elemente und Menüs auswirken und zu deren Erstellung.  
   
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Befehle, Menüs, Gruppen und der VSCT-Datei  

@@ -1,7 +1,7 @@
 ---
 title: XML-Schemata (Dialogfeld) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d388dc928b2f15c084034831a4b05f9d6420a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251692"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML-Schemata (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [XML-Schemata (Dialogfeld)](https://docs.microsoft.com/visualstudio/xml-tools/xml-schemas-dialog-box).  
-  
   
 Die **XML-Schemas** Dialogfeld wird verwendet, um Wählen Sie die XML-Schema Definition Language (XSD)-Schemas ein XML-Dokument zugeordnet werden soll. Es kann ein Schema aus dem Schemacache ausgewählt oder ein Schema angegeben werden, das sich nicht im Cache befindet. Ausgewählte Schemas werden als Teil eines Schemasatzes behandelt. Das Schemaset wird für IntelliSense und zur Validierung von XML-Dokumenten verwendet.  
   

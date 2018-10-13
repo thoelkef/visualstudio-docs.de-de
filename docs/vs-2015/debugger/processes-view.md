@@ -1,7 +1,7 @@
 ---
 title: Prozessansicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288989"
 ---
 # <a name="processes-view"></a>Prozessansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Prozessansicht](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 Die Prozessansicht zeigt eine Struktur aller aktiven Prozesse auf Ihrem System. Die Prozess-ID und-Modul werden angezeigt. Verwenden Sie die Systemprozesse angezeigt, wenn Sie möchten, um ein bestimmtes System-Prozess zu überprüfen, die zum Ausführen eines Programms in der Regel entspricht. Prozesse werden identifiziert, von dem Modulnamen oder sie sind vorgesehen, "Systemprozesse".  
   
  Microsoft Windows unterstützt mehrere Prozesse. Jeder Prozess kann eine oder mehrere Threads aufweisen, und jeder Thread kann über eine oder mehrere Fenster der obersten Ebene zugeordnet. Jedes Fenster auf oberster Ebene kann eine Reihe von Windows besitzen. Ein + Symbol gibt an, dass eine Ebene reduziert ist. Die reduzierte Ansicht besteht aus einer Zeile pro Prozess. Klicken Sie auf das Plussymbol, um die Ebene erweitert.  

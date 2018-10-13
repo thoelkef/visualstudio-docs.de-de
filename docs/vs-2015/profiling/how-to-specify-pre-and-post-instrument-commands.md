@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305462"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Festlegen von Präinstrumentations-und Postinstrumentationsbefehlen](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands).  
-  
 Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.  
   
  Sie können Befehle für alle instrumentierten Binärdateien in der Profilerstellung oder für einzelne Binärdateien angeben. Sie können jedoch nur jeweils ein Präinstrumentationsbefehl vor dem Ausführen und nur ein Postinstrumentationsbefehl zum Ausführen nach dem Instrumentationsprozess angeben. Sie können keine Befehle für jeweils alle und für einzelne Binärdateien angeben. Wenn Sie Befehle für alle Binärdateien angeben, werden die Befehle vor oder nach der Instrumentation jeder Binärdatei in der Sitzung ausgeführt.  

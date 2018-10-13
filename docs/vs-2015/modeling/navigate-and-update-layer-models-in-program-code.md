@@ -1,7 +1,7 @@
 ---
 title: Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214923"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code).  
-  
 In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zu Ebenendiagrammen aus Sicht des Benutzers, finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) und [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).  
   
  Das in diesem Thema beschriebene <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>-Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel>-Modells. Wenn Sie schreiben eine [menüerweiterung Befehls- oder Gestenhandlerprojekts](../modeling/add-commands-and-gestures-to-layer-diagrams.md), verwenden Sie die `Layer` Modell. Wenn Sie schreiben eine [layer validierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es ist einfacher zu verwenden die `GraphModel`.  
