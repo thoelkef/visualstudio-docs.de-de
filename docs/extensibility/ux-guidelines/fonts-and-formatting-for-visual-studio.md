@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273090"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Ruft einen Boolschen Wert? (NULL-Werte zulässt, Boolean) mit der `DialogResult`, die bei Bedarf verwendet werden kann. Der zurückgegebene Wert ist true, wenn das Dialogfeld geschlossen wurde **OK**.  
   
- Wenn Sie eine WPF-UI, die kein Dialogfeld und gehostet wird in einem eigenen anzeigen müssen `HwndSource`, z. B. ein Popup-Fenster oder ein WPF-untergeordnetes Fenster von einem übergeordneten Fenster Fenster von Win32/WinForms, Sie müssen Festlegen der `FontFamily` und `FontSize` für das Stammelement des WPF-e Element. (Die Shell, um die Eigenschaften für das Hauptfenster festgelegt, aber sie werden nicht nach geerbt eine `HWND`). Die Shell bietet Ressourcen, die an die die Eigenschaften können, wie folgt gebunden werden:  
+ Wenn Sie eine WPF-UI, die kein Dialogfeld und gehostet wird in einem eigenen anzeigen müssen `HwndSource`, z. B. ein Popup-Fenster oder ein WPF-untergeordnetes Fenster von einem übergeordneten Win32/WinForms-Fenster, Sie müssen Festlegen der `FontFamily` und `FontSize` für das Stammelement der WPF-Elements. (Die Shell, um die Eigenschaften für das Hauptfenster festgelegt, aber sie werden nicht nach geerbt eine `HWND`). Die Shell bietet Ressourcen, die an die die Eigenschaften können, wie folgt gebunden werden:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

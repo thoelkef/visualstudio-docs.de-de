@@ -1,7 +1,7 @@
 ---
 title: TASK_STATE_CANCELED-Feld | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 869553b18f16135fe81d1a33e64eba1d33f0990b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef127626cf59d2a66d7119faf8f65d4bfe973c18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278095"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [TASK_STATE_CANCELED-Feld](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-canceled-field).  
-  
 Der Task wurde abgebrochen, bevor er den ausgeführten Zustand erreicht, oder er bestätigt die Abbruch und ohne Ausnahme abgeschlossen wurde.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

@@ -1,7 +1,7 @@
 ---
 title: Einführung in Spy++ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276262"
 ---
 # <a name="introducing-spy"></a>Einführung in Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Einführung in Spy++](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment).  
-  
 Mit Spy++ können Sie die folgenden Aufgaben ausführen:  
   
 -   eine grafische Struktur von Beziehungen zwischen Systemobjekten anzeigen. Dazu gehören [Prozesse](../debugger/processes-view.md), [Threads](../debugger/threads-view.md)und [Fenster](../debugger/windows-view.md).  
@@ -40,7 +38,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
   
 -   das [Suchtool](../debugger/how-to-use-the-finder-tool.md) verwenden, um Fenster über die Positionierung des Mauszeigers auszuwählen  
   
--   Legen Sie **Meldungsoptionen** mit komplexen Parametern für die Auswahl.  
+-   **Meldungsoptionen** über komplexe Auswahlparameter für die Nachrichtenprotokollierung festlegen  
   
  Spy++ verfügt über eine Symbolleiste und Hyperlinks, um Ihnen die Arbeit zu erleichtern. Darüber hinaus stellt es den Befehl **Aktualisieren** bereit, um die aktive Ansicht zu aktualisieren, ein **Tool zum Suchen von Fenstern** für leichteres Nachverfolgen und das Dialogfeld **Schriftart** zum Anpassen der Ansichtsfenster. Darüber hinaus können Sie mit Spy++ Benutzereinstellungen speichern und wiederherstellen.  
   

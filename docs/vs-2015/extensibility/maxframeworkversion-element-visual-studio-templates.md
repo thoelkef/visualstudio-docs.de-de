@@ -1,7 +1,7 @@
 ---
 title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be6bf858130310f3b7a13078482746edf74a65a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b12af3d2b0c455ae321b3329b1f90d2ab35fb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521356"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276821"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MaxFrameworkVersion-Element (Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/maxframeworkversion-element-visual-studio-templates).  
-  
 Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich sind. Es bestimmt, ob die Vorlage, in angezeigt wird der **Vorlagen** Teil der **neues Projekt hinzufügen** basierend auf dem Wert, der ausgewählt wird im Dialogfeld der **Zielframeworkversion** im Feld der **neues Projekt hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  

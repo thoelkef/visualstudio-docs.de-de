@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Layout mithilfe von DOM Explorer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272614"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von Layout mithilfe von DOM Explorer](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
- Die **Layout** Registerkarte DOM Explorer wird die [CSS-Verschachtelungsmodell](http://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Element in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -app, Windows Phone Store-app oder einer erstellten mit Visual Studio-Tools für Apache Cordova-app. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
+ Die Registerkarte **Layout** des DOM Explorer teigt das [CSS-Verschachtelungsmodell](http://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App, Windows Phone Store-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   
 > [!TIP]
 >  Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
