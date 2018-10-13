@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176305"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Ändern von "Web.config"-Dateien zu instrumentieren und Profil dynamisch kompilierte ASP.NET-Webanwendungen](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen zu sammeln.  
   
  In diesem Thema wird beschrieben, wie die Konfigurationsdatei „web.config“ zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen geändert werden kann.  
@@ -148,7 +146,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**Wert**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
@@ -157,7 +155,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**Wert**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdatei. Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert ist im Standardspeicherort installiert ist, entspricht der Wert **C:\Program Files\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools**  
   

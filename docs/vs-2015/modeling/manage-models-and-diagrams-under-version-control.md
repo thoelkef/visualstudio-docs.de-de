@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Modellen und Diagrammen unter Versionskontrolle | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187554"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwalten von Modellen und Diagrammen unter Versionskontrolle](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
-Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und Diagrammen, einschließlich Code Maps (DGML-Dateien), mit [Team Foundation-Versionskontrolle oder Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit einem lokalen Team Foundation Server oder in der Cloud mit visuellen Element Studio Team Services.  
+Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Besondere Sorgfalt ist erforderlich, wenn mehrere Benutzer am gleichen Modellierungsprojekt arbeiten. Erfahren Sie, wie Sie [Modelle in mittelgroßen oder großen Projekten organisieren](../modeling/structure-your-modeling-solution.md).  
+>  Besondere Sorgfalt ist erforderlich, wenn mehrere Benutzer am gleichen Modellierungsprojekt arbeiten. Erfahren Sie, wie Sie [Modelle in mittelgroßen oder großen Projekten organisieren](../modeling/structure-your-modeling-solution.md)können.  
   
 ##  <a name="ModelingProjects"></a> Dateien in einem Modellierungsprojekt  
  Mehrere Benutzer können gleichzeitig an einem Modellierungsprojekt arbeiten, solange sie an unterschiedlichen Dateien arbeiten.  
@@ -66,7 +64,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und Diagramm
   
 -   Benennen Sie als Hilfe beim Nachverfolgen der Pakete die Paketdateien um, um die tatsächlichen Paketnamen widerzuspiegeln.  
   
--   In [!INCLUDE[esprscc](../includes/esprscc-md.md)], führen immer **Einchecken** und **neuste Version abrufen** Vorgänge für das gesamte Modellierungsprojekt aus, niemals für einzelne Dateien.  
+-   Führen Sie in [!INCLUDE[esprscc](../includes/esprscc-md.md)]die Vorgänge **Einchecken** und **Neuste Version abrufen** immer für das gesamte Modellierungsprojekt aus, niemals für einzelne Dateien.  
   
 -   Führen Sie direkt vor dem Einchecken in das Modellierungsprojekt immer einen **Get** -Vorgang aus.  
   
@@ -82,7 +80,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und Diagramm
   
 -   Ändern der Eigenschaften von Beziehungen, die über Paketbegrenzungen hinweg gelten  
   
--   Weitere Informationen zu Auschecksperren finden Sie unter [überprüfen Auschecken und Bearbeiten von Dateien](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+-   Informationen zu Auschecksperren finden Sie unter [Auschecken und Bearbeiten von Dateien](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>So verschieben Sie eine Diagrammdatei in einen oder aus einem Projektordner  
   

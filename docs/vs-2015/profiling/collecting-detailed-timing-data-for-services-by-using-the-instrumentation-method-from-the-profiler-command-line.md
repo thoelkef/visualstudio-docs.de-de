@@ -1,7 +1,7 @@
 ---
 title: Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a522872e5f422638635550b816ef20050e800ef9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27856554630bcdedc162023a9a1fa3e80a5f1e8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180452"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Sammeln von ausführlichen Zeitsteuerdaten für Dienste mithilfe der Instrumentationsmethode über die Profiler-Befehlszeile](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line).  
-  
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für Windows-Dienste unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
@@ -50,7 +48,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten für eine ASP.NET-Webanwendung über die Befehlszeile mit der Profiler-Instrumentationsmethode](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
+|**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
 |**Profilerstellung für ASP.NET-Webanwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analysieren von Instrumentationsdatenansichten und -berichten  

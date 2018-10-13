@@ -1,7 +1,7 @@
 ---
 title: Interaktionsmuster für Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192061"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Interaktionsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Interaktionsmuster für Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Übersicht  
  Ein Entwurfsmuster, ist im Allgemeinen den Kern eines Entwurfs, die in bestimmten Situationen zum Lösen von Problemen mit ähnlichen Sätzen von Einschränkungen angewendet werden können. Feature und System-Designer verwenden Sie diese Entwurfsmuster als Ausgangspunkt, die dann an ihre spezifische Situation angepasst werden können.  
   

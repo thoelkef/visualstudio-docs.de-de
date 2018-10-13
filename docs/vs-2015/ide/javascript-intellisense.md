@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194713"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schreiben, indem Sie relevante Informationen direkt bei der Eingabe von Code zur Hand haben. Während Sie mit Clientskripts in JavaScript-Editor arbeiten, listet IntelliSense die Objekte, Funktionen, Eigenschaften und Parameter, die im aktuellen Kontext für Sie verfügbar sind, direkt auf. Sie können eine Codierungsoption aus der von IntelliSense bereitgestellten Popupliste auswählen, um den Code zu vervollständigen.  
   
  IntelliSense vereinfacht die Ausführung folgender Aufgaben:  
@@ -167,9 +165,9 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
  IntelliSense bietet zusätzlich Unterstützung für Skriptdateien, die als Ressourcen in einer Assembly in ASP.NET-AJAX-Webanwendungen eingebettet sind. Weitere Informationen zu eingebetteten Skriptressourcen finden Sie unter [Exemplarische Vorgehensweise: Einbetten einer JavaScript-Datei als Ressource in einer Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
   
 ####  <a name="ReferenceDirectives"></a> Reference-Anweisungen  
- Mithilfe einer `reference`-Direktive kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen. Die `reference`-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen. Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.  
+ Mithilfe einer `reference`-Anweisung kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen. Die `reference`-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen. Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.  
   
- Sie erstellen eine `reference`-Direktive in Form eines XML-Kommentars. Die Direktive muss in der Datei vor allen möglichen Skripts deklariert werden. Eine `reference`-Direktive kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.  
+ Sie erstellen eine `reference`-Anweisung in Form eines XML-Kommentars. Die Direktive muss in der Datei vor allen möglichen Skripts deklariert werden. Eine `reference`-Direktive kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.  
   
  Im Folgenden wird anhand verschiedener Beispiele die Verwendung datenträgerbasierter Reference-Anweisungen veranschaulicht. Im ersten Beispiel sucht der Sprachdienst nach der Datei in dem Ordner, der die Projektdatei enthält (z. B. JSPROJ).  
   
@@ -208,7 +206,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
   
  `/// <reference path="~/Admin/Default.aspx" />`  
   
- Die folgenden Regeln beziehen sich auf eine `reference`-Direktive.  
+ Die folgenden Regeln beziehen sich auf eine `reference`-Anweisung.  
   
 -   Der `reference`-XML-Kommentar muss vor allen möglichen Skripts deklariert werden.  
   

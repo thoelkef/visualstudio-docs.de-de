@@ -1,7 +1,7 @@
 ---
 title: Erweitern von Benutzereinstellungen und Optionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84bfc4f7aaf8065fe6776cd0e058c79730674e29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: defc56dc9ebe924a4aee660c1d73072a2c3df7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177631"
 ---
 # <a name="extending-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweitern von Benutzereinstellungen und Optionen](https://docs.microsoft.com/visualstudio/extensibility/extending-user-settings-and-options).  
-  
 Es gibt zwei Hauptmethoden zum Beibehalten von benutzereinstellungen, in Visual Studio. Die **Extras / Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festgelegt. Benutzereinstellungen können Benutzer allgemeine Eigenschaften für die Konfiguration von Visual Studio angeben. Weitere Informationen zu den Seiten für Optionen, finden Sie unter [Optionen und Optionsseiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  
   
  [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)  

@@ -1,7 +1,7 @@
 ---
 title: Definieren von validierungseinschränkungen für UML-Modellen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,26 +14,24 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176539"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Definieren von validierungseinschränkungen für UML-Modelle](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.  
   
  Sie können auch Einschränkungen definieren, mit denen das Modell anhand externer Ressourcen (z. B. Datenbanken) überprüft wird. Wenn Sie Programmcode anhand eines Ebenendiagramms überprüfen möchten, finden Sie unter [Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- Welche Versionen von Visual Studio UML-Modelle unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +118,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Dieses Verfahren ist nicht erforderlich, wenn Sie eine Validierungsklasse mit einer eigenen VSIX aus der Validierungsprojektvorlage erstellt haben.  
   
-2.  Fügen Sie im Projekt der Validierungsklasse Verweise auf die folgenden [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]-Assemblys hinzu:  
+2.  Fügen Sie im Projekt der Validierungsklasse Verweise auf die folgenden [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] -Assemblys hinzu:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -192,15 +190,15 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
-     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
+     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
   
     -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
-    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge in die **externes Programm starten** Feld ist der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in der Regel:  
+    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
+2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
   
 3.  So richten Sie einen Test für die Beispieleinschränkung aus dem vorherigen Abschnitt ein  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- Finden Sie unter [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md) Informationen zu den Methoden und Typen zum Navigieren und das Modell lesen können.  
+ Weitere Informationen zu den Methoden und Typen zum Navigieren im Modell und Lesen des Modells finden Sie unter [Programming with the UML API](../modeling/programming-with-the-uml-api.md) .  
   
 ### <a name="about-validation-constraint-methods"></a>Informationen zu Validierungseinschränkungsmethoden  
  Jede Validierungseinschränkung wird von einer Methode der folgenden Form definiert:  
@@ -270,7 +268,7 @@ public void ValidateSomething
  Sie können beliebig viele Validierungsmethoden mit unterschiedlichen Typen im zweiten Parameter definieren. Wenn die Validierung aufgerufen wird, wird jede Validierungsmethode für jedes dem Parametertyp entsprechende Modellelement aufgerufen.  
   
 ### <a name="reporting-validation-errors"></a>Melden von Validierungsfehlern  
- Um einen Fehlerbericht zu erstellen, verwenden Sie die von `ValidationContext`bereitgestellten Methoden:  
+ Um einen Fehlerbericht zu erstellen, verwenden Sie die von `ValidationContext` bereitgestellten Methoden:  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
@@ -369,7 +367,7 @@ context.LogError(... , usecase);
 |`Context.GetValue<T>()`|Abrufen eines Werts des angegebenen Typs|  
   
 ##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
- Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
+ Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
   
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung  
   
@@ -381,7 +379,7 @@ context.LogError(... , usecase);
   
 2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-    -   Der Zielcomputer müssen eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , die Sie angegeben, **"Source.Extension.vsixmanifest"**.  
+    -   Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
   
 3.  Öffnen Sie auf dem Zielcomputer die **.vsix** -Datei.  
   

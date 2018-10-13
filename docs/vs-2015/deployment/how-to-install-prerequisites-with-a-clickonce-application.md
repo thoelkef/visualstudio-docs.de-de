@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 31319b0d04ff68649996ca374e3961d8fa67c833
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196286"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](https://docs.microsoft.com/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application).  
-  
 Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen erfordern, dass die richtige Version von .NET Framework auf einem Computer installiert ist, bevor sie ausgeführt werden können; viele Anwendungen verfügen über sowie andere erforderliche Komponenten. Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung können Sie eine Reihe von Komponenten, die für die zusammen mit der Anwendung verpackt werden. Bei der Installation wird eine Überprüfung ausgeführt werden, für jede erforderliche Komponente, um festzustellen, ob sie bereits vorhanden ist; Wenn nicht es vor der Installation von installiert die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.  
   
  Anstatt Verpacken und veröffentlichen die Voraussetzungen, können Sie auch einen Downloadspeicherort für die Komponenten angeben. Z. B. statt, einschließlich Voraussetzungen, die mit jeder Anwendung, die Sie veröffentlichen, können einer zentralen Dateifreigabe oder die Webadresse an, die die Installationsprogramme für alle Ihre Komponenten enthält, bei der Installation werden die Komponenten heruntergeladen und aus diesem Speicherort installiert.  

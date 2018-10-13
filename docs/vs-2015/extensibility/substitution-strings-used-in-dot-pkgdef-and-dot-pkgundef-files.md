@@ -1,7 +1,7 @@
 ---
 title: Ersetzen von Zeichenfolgen verwendet. PKGDEF und. Pkgundef-Dateien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24996e4e32ab86af46fce5280947719f906ffc3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175291"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Ersetzen von Zeichenfolgen verwendet. PKGDEF und. Pkgundef-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ersetzung in Zeichenfolgen verwendet. PKGDEF und. Pkgundef-Dateien](https://docs.microsoft.com/visualstudio/extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files).  
-  
 Sie können die unten aufgeführten, in der PKGDEF Ersatzzeichenfolgen verwenden und pkgundef-Dateien, die Sie definieren, für Visual Studio isolierte Shell-Anwendung.  
   
 ## <a name="substitution-strings"></a>Ersetzen von Zeichenfolgen  

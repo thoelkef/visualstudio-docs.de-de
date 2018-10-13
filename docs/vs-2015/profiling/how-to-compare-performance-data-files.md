@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0574c518342ea24ad2bd3aaf4fd3df9a4ee34a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a4860296945c623052efd6c5817215401210783
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190566"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Vergleichen von Leistungsdatendateien](https://docs.microsoft.com/visualstudio/profiling/how-to-compare-performance-data-files).  
-  
 Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp oder .vsps) vergleichen, indem Sie einen Vergleichsbericht („Diff“) oder eine Ansicht erstellen. Der Vergleich zeigt die Unterschiede, Leistungsabnahmen und -verbesserungen, die von einer Profilerstellungssitzung in die andere aufgetreten sind.  
   
  Der Unterschiedsbericht enthält eine Tabellenansicht der Daten. In der Tabelle wird das Delta bzw. die Abweichung von der Baseline dargestellt. Zur Berechnung wird der Unterschied zwischen dem alten Wert, dem Baselinewert und dem Ergebniswert aus der neuen Analyse ermittelt.  

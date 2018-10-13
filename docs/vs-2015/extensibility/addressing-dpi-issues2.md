@@ -1,7 +1,7 @@
 ---
 title: Adressierung DPI wichtigsten Themen2 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194057"
 ---
 # <a name="addressing-dpi-issues"></a>Behandeln von DPI-Problemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wichtigsten DPI-Adressierung-Themen2](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2).  
-  
 Eine zunehmende Anzahl von Geräten, die mit "hochauflösende" Bildschirme geliefert werden. Diese Seiten müssen in der Regel mehr als 200 Pixel pro Zoll (Ppi). Inhalt hochskaliert werden, auf die Anforderungen zum Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät wird das Arbeiten mit einer Anwendung auf diesen Computern erforderlich. Seit 2014 ist die primäre Zielgruppe für anzeigen mit hoher Dichte mobiler Geräte (Tablets, Schalenkoffer Laptops und Smartphones) zu berechnen.  
   
  Windows 8.1 und höher enthält zahlreiche Funktionen, die diese Computer angezeigt und Umgebungen, in dem der Computer verbunden ist, sowohl mit hoher Dichte und Standard-Dichte angezeigt wird, zur gleichen Zeit, zu aktivieren.  

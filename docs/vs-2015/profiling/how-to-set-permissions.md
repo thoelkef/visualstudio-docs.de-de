@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187542"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Festlegen von Berechtigungen](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions).  
-  
 In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erforderlichen Sicherheitsberechtigungen für die Profilerstellung für einen Benutzer oder eine Gruppe, die keine Administratorberechtigungen auf diesem Computer haben, gewährt.  
   
  Ein grundlegendes Sicherheitsprinzip gibt an, dass die Anwendung mit nicht mehr als den Berechtigungen ausgeführt werden soll, die sie benötigen. Dieses Prinzip gilt auch für Benutzer. Wenn Benutzer vollständig wirksam werden können, wenn sie als Mitglieder der Benutzergruppe anstelle der Administratorgruppe angemeldet sind, sollten sie keine Administratorberechtigungen erteilt bekommen. Die erste Prozedur, "So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen", beschreibt das Erstellen eines Benutzerkontos für ein Mitglied der Benutzergruppe.  

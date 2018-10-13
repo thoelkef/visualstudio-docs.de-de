@@ -1,7 +1,7 @@
 ---
 title: Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83e7d59e17b91e3a47625917de4ec7366f8389d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4483fef9c200f6814c247f14ee956bfef4582e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197924"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Vorbereiten von Erweiterungen für die Windows Installer-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](https://docs.microsoft.com/visualstudio/extensibility/preparing-extensions-for-windows-installer-deployment).  
-  
 Ein Windows Installer-Paket (MSI) können Sie ein VSIX-Paket bereitstellen. Allerdings können Sie den Inhalt einer VSIX-Pakets für die Bereitstellung der MSI-Datei extrahieren. Diesem Dokument wird erläutert, wie Sie ein Projekt vorbereiten, deren Standardausgabe ein VSIX-Paket für die Aufnahme in ein Setup-Projekt ist.  
   
 ## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>Vorbereiten von ein Projekt für die Windows Installer-Bereitstellung  

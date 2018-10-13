@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c1300da37893a9203aee173180711f0ecc2e288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58c86c3273de8224c84229f6291a371a9c3ff215
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188007"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code).  
-  
 Sie können die Codeanalyse ausgeführt vor jedem Build von einem Projekt mit verwaltetem Code konfigurieren. Sie können verschiedene Code Analysis-Eigenschaften festlegen, für die einzelnen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Konfiguration.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>So aktivieren oder Deaktivieren der automatischen Codeanalyse  

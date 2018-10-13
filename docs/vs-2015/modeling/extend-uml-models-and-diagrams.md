@@ -1,7 +1,7 @@
 ---
 title: Erweitern von UML-Modellen und-Diagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179126"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweitern von UML-Modellen und Diagrammen](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
-In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie die UML-Modellierungstools von Visual Studio erweitern können. Welche Versionen von Visual Studio die einzelnen Modelltypen und Tools unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie die UML-Modellierungstools von Visual Studio erweitern können. Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen und Tools unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Im folgenden Beispielszenario entwirft und installiert das Unternehmen Fabrikam Gepäckbeförderungssysteme für Flughäfen. Flughafenprojekte weisen viele Ähnlichkeiten auf, was die Grundausrüstung und die Steuersoftware angeht. Allerdings gibt es mehrere Faktoren, die stark variieren können, z. B. die Konfiguration von Fließbändern, Check-in-Schalter, Aufbewahrungsbehälter und andere Ausrüstung für die Gepäckbeförderung.  
   

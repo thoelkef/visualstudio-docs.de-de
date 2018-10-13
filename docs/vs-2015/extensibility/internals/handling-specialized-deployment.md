@@ -1,7 +1,7 @@
 ---
 title: Behandeln spezielle Bereitstellung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f72b6daa075bb1b9127e357d072efb89b007373a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191578"
 ---
 # <a name="handling-specialized-deployment"></a>Behandlung einer speziellen Bereitstellung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [spezielle Bereitstellung behandeln](https://docs.microsoft.com/visualstudio/extensibility/internals/handling-specialized-deployment).  
-  
 Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unterstützt ein Webprojekt eine Bereitstellung können Sie ein Projekt, das einen Webserver zu aktualisieren. Ebenso eine **intelligente Geräte** Projekt unterstützt eine Bereitstellung aus, um eine integrierte Anwendung auf dem Zielgerät zu kopieren. Projektuntertypen können spezielle bereitstellungsverhalten angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle. Diese Schnittstelle definiert einen vollständigen Satz von Bereitstellungsvorgänge:  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  

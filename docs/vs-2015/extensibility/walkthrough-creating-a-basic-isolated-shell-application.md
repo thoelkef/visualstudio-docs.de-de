@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68b4fb6f7bb07cbb25d2fa8552e92875c5c242bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199536"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-basic-isolated-shell-application).  
-  
 In dieser exemplarischen Vorgehensweise zeigt, wie Sie eine isolierte Shell-Lösung erstellen, das Toolfenster Info anpassen und erstellen ein Setup-Programm, das die isolated Shell installiert.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Um der isolated Shell bereitstellen zu können, müssen Sie auch das Visual Studio Shell (isoliert) Redistributable Package verwenden.  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Erstellen einer isolierten Shell-Lösung  

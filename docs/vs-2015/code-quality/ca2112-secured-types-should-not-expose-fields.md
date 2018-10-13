@@ -1,7 +1,7 @@
 ---
 title: 'CA2112: Gesicherte Typen sollten keine Felder verfügbar | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a904109e8308eb6984cc00222f2b7861bc0a4f6f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3c42de78a75a689b2f248edd66df8109bcd00583
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189658"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA2112: gesicherte Typen sollten keine Felder verfügbar](https://docs.microsoft.com/visualstudio/code-quality/ca2112-secured-types-should-not-expose-fields).
-
 |||
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|

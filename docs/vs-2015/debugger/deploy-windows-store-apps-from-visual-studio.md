@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Windows Store-apps aus Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196104"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Bereitstellen von Windows Store-Apps aus Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Deploy Windows Store-apps aus Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_content")  
   
  Die Bereitstellungsfunktion von Visual Studio erstellt und registriert Windows Store-Apps, die mit Visual Studio erstellt wurden, auf einem Zielgerät. Wie genau die App registriert wird, hängt davon ob, ob sich das Zielgerät lokal oder remote befindet:  
@@ -112,7 +110,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
  Sie können die folgenden Bereitstellungsoptionen auf der Debugeigenschaftenseite für das Startprojekt festlegen.  
   
  **Netzwerkloopback zulassen**  
- Aus Sicherheitsgründen wird einer im Standardverfahren installierten [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] senden, sollten Sie die App ohne die Ausnahme testen.  
+ Aus Sicherheitsgründen wird einer im Standardverfahren installierten [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]senden, sollten Sie die App ohne die Ausnahme testen.  
   
  So entfernen Sie die Netzwerkloopbackausnahme aus der App:  
   

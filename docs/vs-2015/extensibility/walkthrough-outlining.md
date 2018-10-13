@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Gliedern | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181973"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Gliedern](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining).  
-  
 Sie können die Sprache basierenden Funktionen wie z. B. durch Definieren der Arten von Textbereiche, die Sie erweitern oder reduzieren möchten Gliederung implementieren. Können Sie Regionen in den Kontext für den Sprachdienst definieren können definieren Sie eigene Datei Name-Erweiterung und der Inhalt Typ und die Definition für die Region, nur diesen Typ gelten oder Sie können die Definitionen für die Region auf einem vorhandenen Inhaltstyp (z. B. "Text") anwenden. Diese exemplarische Vorgehensweise veranschaulicht das Definieren und Anzeigen von Gliederungsbereiche.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  
