@@ -1,7 +1,7 @@
 ---
 title: Erstellen von UML-Modellierungsprojekten und-Diagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250483"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu entwerfen. Visual Studio stellt Vorlagen für fünf der am häufigsten verwendeten UML-Diagramme bereit: Aktivität, Klasse, Komponente, Sequenz und Anwendungsfall. Darüber hinaus können Sie Ebenendiagramme erstellen, mit deren Hilfe Sie die Struktur des Systems definieren.  
   
  UML-Modellierungsdiagramme und Ebenendiagramme können nur in einem Modellierungsprojekt vorhanden sein. Jedes Modellierungsprojekt enthält ein freigegebenes UML-Modell und mehrere UML-Diagramme. Jedes Diagramm ist eine Teilansicht des Modells. Das UML-Modell enthält alle Elemente der UML-Diagramme und kann mit dem UML-Modell-Explorer angezeigt werden. Weitere Informationen über Modelle und ihre Beziehungen zu Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md). Weitere Informationen zu Modellierungsprojekten unter Versionskontrolle finden Sie unter [Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md) und [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 -   Klassendiagramme, die als Ansichten des Quellcodes erstellt werden. Diese beziehen sich nicht auf UML-Klassendiagramme. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Code Maps. Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
+-   Code Maps. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Diagramme, die keine UML-Diagramme oder Ebenendiagramme sind, z. B. domänenspezifische Sprachen.  
   

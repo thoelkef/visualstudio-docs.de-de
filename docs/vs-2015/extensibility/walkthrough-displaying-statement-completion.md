@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,25 +15,23 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280580"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion).  
-  
 Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren die Bezeichner für die Sie die Vervollständigung bereitstellen möchten, und klicken Sie dann auszulösen eine vervollständigungssitzung implementieren. Anweisungsvervollständigung im Kontext von einem Sprachdienst zu definieren, definieren Sie Ihre eigenen Dateinamenerweiterung und Content-Type und -Vervollständigung für nur diesen Typ dann anzeigen, oder -Vervollständigung für einem vorhandenen Inhaltstyp auslösen, z. B. "nur-Text". In dieser exemplarischen Vorgehensweise zeigt, wie Anweisungsvervollständigung für den Inhaltstyp "nur-Text", den Inhaltstyp der Textdateien handelt, ausgelöst wird. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code und XML-Dateien.  
   
  Anweisungsvervollständigung in der Regel durch die Eingabe bestimmter Zeichen ausgelöst wird – z. B. durch den Anfang eines Bezeichners, z. B. "using" eingeben. Sie ist normalerweise geschlossen, durch Drücken der LEERTASTE, Tab oder EINGABETASTE-Taste, um eine Auswahl zu übernehmen. Können Sie die IntelliSense-Funktionen, die ausgelöst werden, geben Sie ein Zeichen mit einem Befehlshandler für die Tastatureingaben implementieren (die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle) und ein Handler für Anbieter, implementiert die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> Schnittstelle. Zum Erstellen der abschlussquelle, die die Liste der Bezeichner, die in der Anweisungsvervollständigung beteiligt sind ist, implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Schnittstelle und einen Vervollständigungsanbieter für die Quelle (die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> Schnittstelle). Die Anbieter sind Komponenten des Managed Extensibility Framework (MEF). Sie sind zuständig für das Exportieren von der Quell- und Controller-Klassen aus, und Importieren von Diensten und Brokern – z. B. die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, dem ermöglicht die Navigation im Textpuffer, und die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, die löst der vervollständigungssitzung.  
   
  Diese exemplarische Vorgehensweise veranschaulicht das Implementieren der Anweisungsvervollständigung für einen hartcodierten Satz von Bezeichnern. In vollständige Implementierungen sind der Sprachdienst und in der sprachdokumentation für die Bereitstellung, dass der Inhalt verantwortlich.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts  

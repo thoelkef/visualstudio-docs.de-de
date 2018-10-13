@@ -1,7 +1,7 @@
 ---
 title: Erweiterbarkeits-API für Dumpdateizusammenfassung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7230886147d3e594dffa27b776efb995391d635b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e0bab08cdbfb28aed77ebb90c5c0fb67f92c726
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279421"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Erweiterbarkeits-API für Dumpdateizusammenfassung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweiterbarkeits-API für Datei Zusammenfassung Dump](https://docs.microsoft.com/visualstudio/debugger/dump-file-summary-extensibility-api).  
-  
 Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt an, Sie können erweitern die. EXE-Projektsystem und die **Dumpzusammenfassung** Seite für die Verwendung mit Ihren eigenen benutzerdefinierten Debug-Engine.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

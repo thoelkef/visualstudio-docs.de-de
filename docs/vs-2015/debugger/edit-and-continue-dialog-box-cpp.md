@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten und Fortfahren (Dialogfeld) (C++) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511608"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280176"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [bearbeiten und Fortfahren-Dialogfeld-Feld (C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp).  
-  
 Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit „Bearbeiten und Fortfahren“ Änderungen an nativem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  
   
  Sie können den Code während des Debuggens bearbeiten, um den Fehler zu beheben. Alternativ können Sie den Fehler ignorieren und mit dem Debuggen fortfahren. Wenn Sie fortfahren, ohne den Fehler zu beheben, werden Ihre Codeänderungen nicht sofort übernommen.  

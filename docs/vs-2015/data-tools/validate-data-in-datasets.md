@@ -1,7 +1,7 @@
 ---
 title: Überprüfen von Daten in Datasets | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 728c496548a195acb98e0b5082d862d6dc8db241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279018"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Überprüfen von Daten in Datasets](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets).  
-  
   
 Überprüfen von Daten ist der Prozess der Bestätigung der Werte, die in Datenobjekte eingegeben werden, die die Einschränkungen in einer Dataset Schema entsprechen. Der Überprüfungsprozess wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es hat sich bewährt, überprüfen Sie die Daten vor dem Senden von Aktualisierungen an der zugrunde liegenden Datenbank. Dies verringert sowohl Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.  
   

@@ -1,7 +1,7 @@
 ---
 title: Verwalten des Ladens von Projekten in einer Projektmappe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281384"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Verwalten des Ladens von Projekten in einer Projektmappe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [laden-Projekt in einer Projektmappe verwalten](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Visual Studio-Projektmappen können es sich um eine große Anzahl von Projekten enthalten. Das Standardverhalten für Visual Studio ist beim Laden alle Projekte in einer Projektmappe zum Zeitpunkt der Projektmappe geöffnet wird und nicht, damit Benutzer auf keinem der Projekte zugreifen, bis alle abgeschlossen sind. Wenn der Prozess des Ladens von Projekten mit mehr als zwei Minuten dauern wird, wird eine Statusanzeige zeigt die Anzahl der Projekte, die geladen und die Gesamtzahl der Projekte angezeigt. Der Benutzer kann Projekte entladen, während der Arbeit in einer Projektmappe mit mehreren Projekten, aber dieses Verfahren hat einige Nachteile: die entladenen Projekte werden nicht als Teil eines Befehls für die Projektmappe neu erstellen erstellt und IntelliSense-Beschreibungen von Typen und Member von geschlossen Projekte werden nicht angezeigt.  
   
  Entwickler können für geringere Ladezeiten von Projektmappen und das Verhalten von erstellen einen Ladevorgang für Projektmappen Manager Laden des Projekts zu verwalten. Die projektmappenlastmanager können anderen Projekt Laden von Prioritäten für bestimmte Projekte oder Projekttypen festlegen, stellen Sie sicher, dass die Projekte geladen werden, vor dem Starten eines Builds Hintergrund, verzögern Hintergrund zu laden, bis andere Aufgaben im Hintergrund abgeschlossen sind und ausführen andere Verwaltungsaufgaben für den Projekt laden.  

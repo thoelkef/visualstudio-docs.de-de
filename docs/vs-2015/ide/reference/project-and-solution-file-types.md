@@ -1,7 +1,7 @@
 ---
 title: Projekt- und Projektmappen-Dateitypen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 748590118220c47a6d217156e1130417485aa885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283034"
 ---
 # <a name="project-and-solution-file-types"></a>Projekt- und Projektmappen-Dateitypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projekt- und Projektmappen-Dateitypen](https://docs.microsoft.com/visualstudio/ide/reference/project-and-solution-file-types).  
-  
   
 Von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird eine Vielzahl von Dateitypen unterstützt. In einer bestimmten Installation wird durch die installierten Komponenten ermittelt, welche Dateitypen unterstützt werden. In diesem Thema werden die Arten von Projektmappen und Projektdateitypen aufgeführt, die in typischen Installationen unterstützt werden. Weitere Informationen zu andere Dateitypen erhalten Sie durch die Suche mithilfe der Dateinamenerweiterungen für jeden Typ.  
   

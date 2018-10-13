@@ -1,7 +1,7 @@
 ---
 title: Ausführen von Komponententests auf UML-Erweiterungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,23 +12,21 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205063"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ausführen von Komponententests auf UML-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ausführen von Komponententests auf UML-Erweiterungen](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen, dass Sie Komponententests erstellen und diese im Rahmen des normalen Buildprozesses ausführen. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md). Zum Einrichten von Tests für Visual Studio-Modellierungserweiterungen sind einige wichtige Informationen erforderlich. Zusammenfassung:  
   
 -   [Das Einrichten eines Komponententests für VSIX-Erweiterungen](#Host)  
   
-     Ausführen von Tests mit dem VS IDE-Hostadapter Stellen Sie jeder Testmethode `[HostType("VS IDE")]`als Präfix voran. Dieser Hostadapter startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], wenn Ihre Tests ausgeführt werden.  
+     Ausführen von Tests mit dem VS IDE-Hostadapter Stellen Sie jeder Testmethode `[HostType("VS IDE")]`als Präfix voran. Dieser Hostadapter startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Ihre Tests ausgeführt werden.  
   
 -   [Zugreifen auf DTE und Modellspeicher](#DTE)  
   
@@ -51,7 +49,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
  Ein Beispiel einer UML-Erweiterung mit Komponententest finden Sie in der Code-Beispielgalerie unter [UML – Schnelle Eingabe mithilfe von Text](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -66,7 +64,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
   
     2.  **Ein Komponententestprojekt.** Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).  
   
-2.  Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung, die ein UML-Modellierungsprojekt enthält. Sie werden diese Lösung als Ausgangszustand für Ihre Tests verwenden. Sie sollte von der Lösung getrennt sein, in der Sie die UML-Erweiterung und ihre Komponententests erstellen. Weitere Informationen finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2.  Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Lösung, die ein UML-Modellierungsprojekt enthält. Sie werden diese Lösung als Ausgangszustand für Ihre Tests verwenden. Sie sollte von der Lösung getrennt sein, in der Sie die UML-Erweiterung und ihre Komponententests erstellen. Weitere Informationen finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 3.  **Im UML-Erweiterungsprojekt**bearbeiten Sie die CSPROJ-Datei als Text und stellen sicher, dass die folgenden Zeilen den Wert `true`anzeigen:  
   

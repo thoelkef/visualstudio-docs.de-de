@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283061"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Hinzufügen von Features zu einem benutzerdefinierten Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor).  
-  
 Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie weitere Features, hinzufügen.  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>Beim Erstellen eines Editors für ein VSPackage  
@@ -128,7 +126,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie weitere
   
 13. Machen Sie ein Automation-Objektmodell aus Ihrem Editor durch die Implementierung der `IDispatch` Schnittstelle.  
   
-     Weitere Informationen finden Sie unter [mitwirken am Automatisierungsmodell](../extensibility/internals/contributing-to-the-automation-model.md).  
+     Weitere Informationen finden Sie unter [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
   

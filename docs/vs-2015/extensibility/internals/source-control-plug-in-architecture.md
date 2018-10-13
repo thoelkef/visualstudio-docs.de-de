@@ -1,7 +1,7 @@
 ---
 title: Source Control Plug-in-Architektur | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282346"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektur von Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Architektur von Quellcodeverwaltungs-Plug-Ins](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture).  
-  
 Sie können die Unterstützung des Datenquellen-Steuerelement zum Hinzufügen der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) von Implementierung und Anfügen eines Quellcodeverwaltungs-Plug-in. Die IDE eine Verbindung mit das Quellcodeverwaltungs-Plug-in über die klar definierte Quelle-Plug-in-API. Die IDE stellt Funktionen für die Version von Quellcode-Verwaltungssystem durch Bereitstellen einer Benutzeroberfläche (UI), die der Symbolleisten und Befehle im Menü besteht. Das Quellcodeverwaltungs-Plug-in implementiert die Quellcodeverwaltungsfunktionen.  
   
 ## <a name="source-control-plug-in-resources"></a>Source Control-Plug-in-Ressourcen  

@@ -1,7 +1,7 @@
 ---
 title: Benutzerdefinierte Tools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278407"
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte Tools
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [benutzerdefinierte Tools](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools).  
-  
 *Benutzerdefinierte Tools* können Sie ein Tool mit einem Element in einem Projekt verknüpfen und das Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei-Generatoren*, werden häufig zum Konvertierer implementieren, das Generieren von Code aus und umgekehrt verwendet. Beispielsweise Erstellen von Einzeldatei-Generatoren [!INCLUDE[csprcs](../../includes/csprcs-md.md)] und [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] Quellcode aus dem Settings und RESX-Dateien. Der generierte Quellcode enthält die stark typisierten Zugriff auf die Daten in den Settings und RESX-Dateien. Die [!INCLUDE[csprcs](../../includes/csprcs-md.md)] und [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.  
   
  Benutzerdefinierte Tools sind registrierte Komponenten, implementieren die `IVsSingleFileGenerator` Schnittstelle.  
@@ -63,5 +61,5 @@ Die neueste Version dieses Themas finden Sie unter [benutzerdefinierte Tools](ht
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erweitern von Projekten](../../extensibility/extending-projects.md)  
- Beschreibt, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projekte und Projektmappen, die zum Organisieren von Codedateien und Ressourcendateien und wie Sie Datenquellen-Steuerelement zu implementieren.
+ Beschreibt, wie Codedateien und Ressourcendateien mithilfe von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten und -Projektmappen organisiert werden und wie die Quellcodeverwaltung implementiert wird.
 

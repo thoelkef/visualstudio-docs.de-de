@@ -1,7 +1,7 @@
 ---
 title: Assign-Aktivitätsdesigner | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0b4f62b8eb542dcc077915d5914e5d178dd4fc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c27d70f7dbff9d7f9d30d7dda34c5c2c98bfe891
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281267"
 ---
 # <a name="assign-activity-designer"></a>Assign-Aktivitätsdesigner
 Die **weisen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Assign> Aktivität.  

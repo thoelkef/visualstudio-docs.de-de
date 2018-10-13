@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anzeigen von Spy++-Ansichten | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbb4043dbbed22bef38db30b52ce62a948c16ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6947bf1ac93658827da61c4031fdb2376b35ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185893"
 ---
 # <a name="how-to-display-spy-views"></a>Gewusst wie: Anzeigen von Spy++-Ansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Anzeigen Spy++-Ansichten](https://docs.microsoft.com/visualstudio/debugger/how-to-display-spy-increment-views).  
-  
 Wenn Spy++ gestartet wird, öffnet es im [Windows-Ansicht](../debugger/windows-view.md), eine Strukturansicht aller Windows und Steuerelemente, die auf Ihrem Computer verfügbar. Diese stammfenster Indexe ist "Windows-1." Es gibt auch drei weitere Spy++-Ansichten verfügbar: [Meldungsansicht](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md), und [Ansicht "Threads"](../debugger/threads-view.md). Sie können anzeigen, die gewünschte Ansicht aus der **Spy** Menü. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -1,7 +1,7 @@
 ---
 title: Formatbezeichner in c# | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c3dcf59068ca511f52850e328ef186c22b3dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281189"
 ---
 # <a name="format-specifiers-in-c"></a>Formatbezeichner in C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Formatbezeichner in c#](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-csharp).  
-  
 Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird. Formatbezeichner können im Fenster **Direkt** , im Fenster **Befehl** und sogar in den Quellcodefenstern verwendet werden. Wenn Sie in einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem DataTip angezeigt. DataTips geben den Formatbezeichner in der DataTip-Anzeige wieder.  
   
  Zum Verwenden eines Formatbezeichners geben Sie den von einem Komma gefolgten Ausdruck ein. Fügen Sie nach dem Komma den entsprechenden Bezeichner hinzu.  
@@ -68,7 +66,7 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Anzeige|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind. Finden Sie unter [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Meldung "Implizite Funktionsevaluierung durch den Benutzer deaktiviert"|\<value>|  
+|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind. Siehe [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Meldung "Implizite Funktionsevaluierung durch den Benutzer deaktiviert"|\<value>|  
 |T|Ganze Dezimalzahl|0x0065|101|  
 |dynamic|Zeigt das angegebene Objekt mit einer dynamischen Ansicht an.|Zeigt alle Member des Objekts einschließlich der dynamischen Ansicht an.|Zeigt nur die dynamische Ansicht an.|  
 |h|Ganze Hexadezimalzahl|61541|0x0000F065|  

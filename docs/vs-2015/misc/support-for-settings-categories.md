@@ -1,7 +1,7 @@
 ---
 title: Unterstützung für Einstellungskategorien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: douge
-ms.openlocfilehash: 474537895af5c51c7abd7439b58f8ef5994bdc11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244932"
 ---
 # <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien
-Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um den **Assistent zum Importieren und Exportieren von Einstellungen**zu starten. Der Assistent bietet drei Optionen zur Auswahl: Exportieren, Importieren oder Zurücksetzen der Einstellungen. Durch die Auswahl von beispielsweise „Exportieren“ wird die Seite **Einstellungen für den Export auswählen** des Assistenten aufgerufen.  
   

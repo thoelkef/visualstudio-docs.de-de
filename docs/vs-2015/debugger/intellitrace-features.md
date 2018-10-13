@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace-Funktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278550"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IntelliTrace-Funktionen](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features).  
-  
 Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das debugging wie gewohnt – IntelliTrace ist standardmäßig aktiviert, und Sie sehen, die von IntelliTrace erfassten Informationen in der neuen **Diagnosetools** Fenster unter dem **Ereignisse** Registerkarte. Wählen Sie ein Ereignis aus, und klicken Sie auf **verlaufsbezogenes Debugging aktivieren** um die Aufrufliste und lokal erfasste Informationen für dieses Ereignis anzuzeigen.  
   
  Eine detaillierte Beschreibung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  

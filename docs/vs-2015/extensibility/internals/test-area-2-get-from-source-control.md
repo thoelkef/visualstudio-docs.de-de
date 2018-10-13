@@ -1,7 +1,7 @@
 ---
 title: 'Testbereich 2: Abrufen aus der Quellcodeverwaltung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d30b4a246085fe3a1339e057e516a9a727af1cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284179"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Abrufen aus der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Test Bereich 2: Abrufen von Quellcodeverwaltung](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control).  
-  
 Test Hierunter Testfälle für das Abrufen von Elementen aus dem Versionsspeicher über den Get-Befehl. Diese Testfälle können sowohl lokale Pipes und Webprojekte angewendet werden.  
   
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  

@@ -1,7 +1,7 @@
 ---
 title: Debuggen von GPU-Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279265"
 ---
 # <a name="debugging-gpu-code"></a>Debuggen von GPU-Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von GPU-Code](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird. Die GPU-Debugunterstützung in Visual Studio umfasst die Raceerkennung, das Starten von Prozessen bzw. Anfügen an Prozesse sowie die Integration in die Debugfenster.  
   
 ## <a name="supported-platforms"></a>Unterstützte Plattformen  
@@ -70,7 +68,7 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 -   [Gewusst wie: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Ausnahmen bei Datensynchronisierung  
- Der Debugger kann mehrere Datensynchronisierungsbedingungen während der Ausführung erkennen. Wenn eine Bedingung erkannt wird, wechselt der Debugger in den Unterbrechungszustand. Sie haben zwei Optionen:**unterbrechen** oder **Weiter**. Mithilfe der **Ausnahmen** im Dialogfeld können Sie konfigurieren, ob der Debugger diese Bedingungen erkennen und auch die Bedingungen, diese Unterbrechung ausgelöst werden soll. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md). Sie können auch die **Optionen** im Dialogfeld, um anzugeben, dass der Debugger Ausnahmen ignorieren soll, wenn die Daten, die geschrieben werden, nicht den Wert der Daten ändert. Weitere Informationen finden Sie unter [Allgemein, Debuggen, Dialogfeld Optionen](../debugger/general-debugging-options-dialog-box.md).  
+ Der Debugger kann mehrere Datensynchronisierungsbedingungen während der Ausführung erkennen. Wenn eine Bedingung erkannt wird, wechselt der Debugger in den Unterbrechungszustand. Sie haben zwei Optionen:**unterbrechen** oder **Weiter**. Mithilfe der **Ausnahmen** im Dialogfeld können Sie konfigurieren, ob der Debugger diese Bedingungen erkennen und auch die Bedingungen, diese Unterbrechung ausgelöst werden soll. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md). Sie können auch die **Optionen** im Dialogfeld, um anzugeben, dass der Debugger Ausnahmen ignorieren soll, wenn die Daten, die geschrieben werden, nicht den Wert der Daten ändert. Weitere Informationen finden Sie unter [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Problembehandlung  
   

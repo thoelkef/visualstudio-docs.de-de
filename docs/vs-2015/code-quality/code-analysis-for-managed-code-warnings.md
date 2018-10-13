@@ -1,7 +1,7 @@
 ---
 title: Codeanalyse für verwalteten Code (Warnungen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278907"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Warnungen bei der Analyse von verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
-  
 Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.  
   
  Die folgende Tabelle zeigt die Art der Informationen, die für jede Warnung bereitgestellt werden.  
@@ -56,17 +54,17 @@ Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverle
 |-|-|  
 |[Warnungen nach CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Listet alle Warnungen nach CheckId auf|  
 |[Kryptografiewarnungen](../code-quality/cryptography-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen durch die korrekte Verwendung von Kryptografie unterstützen.|  
-|[Entwurfswarnungen](../code-quality/design-warnings.md)|Warnungen, die korrektes Bibliotheksdesign entsprechend den Angaben von unterstützen die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Entwurfsrichtlinien.|  
+|[Entwurfswarnungen](../code-quality/design-warnings.md)|Warnungen, die ein korrektes Bibliotheksdesign entsprechend den [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Entwurfsrichtlinien unterstützen.|  
 |[Globalisierungswarnungen](../code-quality/globalization-warnings.md)|Warnungen, die global verwendbare Bibliotheken und Anwendungen unterstützen.|  
 |[Interoperabilitätswarnungen](../code-quality/interoperability-warnings.md)|Warnungen, die die Interaktion mit COM-Clients unterstützen.|  
 |[Verwaltbarkeitswarnungen](../code-quality/maintainability-warnings.md)|Warnungen, die die Bibliotheks- und Anwendungswartung unterstützen.|  
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|Warnungen, die einen effizienten Stromverbrauch unterstützen.|  
-|[Benennungswarnungen](../code-quality/naming-warnings.md)|Warnungen, die Einhaltung der Namenskonventionen der unterstützen die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Entwurfsrichtlinien.|  
+|[Benennungswarnungen](../code-quality/naming-warnings.md)|Warnungen, die die Einhaltung der Namenskonventionen der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Entwurfsrichtlinien unterstützen.|  
 |[Leistungswarnungen](../code-quality/performance-warnings.md)|Warnungen, die leistungsstarke Bibliotheken und Anwendungen unterstützen.|  
 |[Portability Warnings](../code-quality/portability-warnings.md)|Warnungen, die Portabilität auf verschiedenen Plattformen unterstützen.|  
 |[Zuverlässigkeitswarnungen](../code-quality/reliability-warnings.md)|Warnungen, die Bibliotheks- und Anwendungszuverlässigkeit unterstützen, wie z. B. die richtige Speicher- und Threadverwendung.|  
 |[Sicherheitswarnungen](../code-quality/security-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen unterstützen.|  
-|[Verwendungswarnungen](../code-quality/usage-warnings.md)|Warnungen, die angemessene Verwendung von unterstützen die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
+|[Verwendungswarnungen](../code-quality/usage-warnings.md)|Warnungen, die die angemessene Verwendung von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]unterstützen.|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Fehler die auftreten, wenn die Codeanalyserichtlinie beim Einchecken nicht erfüllt wird.|
 
 

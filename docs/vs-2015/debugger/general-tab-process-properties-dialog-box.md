@@ -1,7 +1,7 @@
 ---
 title: Registerkarte "Allgemein", verarbeiten Sie im Dialogfeld Eigenschaften von | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5043d5250c6ce26807379d6cef25077480dbc344
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1acc3826521ca6bd15b60563f9bd5e99ba70988e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282073"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Prozesseigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Registerkarte "Allgemein", im Dialogfeld "Eigenschaften" Process](https://docs.microsoft.com/visualstudio/debugger/general-tab-process-properties-dialog-box).  
-  
 Verwenden der **allgemeine** Tab, um weitere Informationen zu einem bestimmten Prozess. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), verschieben Sie den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die folgenden Einstellungen stehen auf der **allgemeine** Registerkarte:  
