@@ -1,14 +1,14 @@
 ---
 title: Verwenden von Haltepunkten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304888"
 ---
 # <a name="using-breakpoints"></a>Verwenden von Haltepunkten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Haltepunkten](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints). 
-
 Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppen möchten, um möglicherweise den Status der Codevariablen oder die Aufrufliste anzuzeigen. Sie sind eine der wichtigsten Debugverfahren in der Toolbox eines Entwicklers.
   
 ##  <a name="BKMK_Overview"></a> Festlegen eines Funktionshaltepunkts im Quellcode  
@@ -175,7 +172,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
  Die Bedingung kann ein beliebiger gültiger Ausdruck sein, der vom Debugger erkannt wird. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Verwenden von Objekt-IDs in Haltepunktbedingungen (C# und F#)  
- Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Sie möchten z. B. herausfinden, warum ein Objekt mehr als einmal in eine Auflistung eingefügt wurde. In c# und f# können Sie Objekt-IDs für bestimmte Instanzen erstellen können [Verweistypen](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) und in haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  Um eine Objekt-ID zu erstellen, führen Sie folgende Schritte aus:  
+ Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Sie möchten z. B. herausfinden, warum ein Objekt mehr als einmal in eine Auflistung eingefügt wurde. In C# und F# können Sie Objekt-IDs für bestimmte Instanzen von [Verweistypen](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) erstellen und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  Um eine Objekt-ID zu erstellen, führen Sie folgende Schritte aus:  
   
 1.  Legen Sie im Code nach der Erstellung des Objekts einen Haltepunkt fest.  
   

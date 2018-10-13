@@ -1,7 +1,7 @@
 ---
 title: 'Schritt 6: Hinzufügen eines Timers | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02ec36c9dbb6f659e3cc5c59d7ee82abffcac34d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293374"
 ---
-# <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen eines Zeitgebers
+# <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen eines Timers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schritt 6: Hinzufügen eines Timers](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-timer).  
-  
 Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.  
   
 ### <a name="to-add-a-timer"></a>So fügen Sie einen Timer hinzu  
@@ -57,7 +55,7 @@ Zeitgeber
   
      Der Code am Anfang der Methode ermittelt durch Überprüfung des Werts der **Enabled**-Eigenschaft, ob der Timer gestartet wurde. Wenn der Spieler also das erste und zweite `Label`-Steuerelement wählt und der Timer gestartet wird, hat die Auswahl eines dritten Steuerelements keinerlei Auswirkungen.  
   
-     Mit dem Code am Ende der Methode wird die `secondClicked`-Verweisvariable festgelegt, um das zweite `Label`-Steuerelement zu ermitteln, das der Spieler gewählt hat. Anschließend wird die Farbe des Symbols im Bezeichnungsfeld auf Schwarz festgelegt, um es sichtbar zu machen. Dann startet der Code den Zeitgeber im Einmalmodus, sodass dieser 750 Millisekunden lang wartet und dann ein einzelnes Tick-Ereignis auslöst. Der Tick-Ereignishandler des Zeitgebers blendet dann die beiden Symbole aus und setzt die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit das Formular dafür bereit ist, dass der Spieler ein anderes Symbol wählt.  
+     Mit dem Code am Ende der Methode wird die `secondClicked`-Verweisvariable festgelegt, um das zweite `Label`-Steuerelement zu ermitteln, das der Spieler gewählt hat. Anschließend wird die Farbe des Symbols im Bezeichnungsfeld auf Schwarz festgelegt, um es sichtbar zu machen. Dann startet der Code den Timer im Einmalmodus, sodass dieser 750 Millisekunden lang wartet und dann ein einzelnes Tick-Ereignis auslöst. Der Tick-Ereignishandler des Zeitgebers blendet dann die beiden Symbole aus und setzt die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit das Formular dafür bereit ist, dass der Spieler ein anderes Symbol wählt.  
   
 5.  Speichern Sie das Programm, und führen Sie es aus. Wenn Sie ein Symbol wählen, wird es sichtbar.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA2153: Verhindern, dass Ausnahmen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff16046a115a7a21939ef33fa06f6a81ec56921c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3f6ac08b9e71dcd9d1a84cb770e4774a7b914132
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297985"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA2153: vermeiden Sie Handling Corrupted State Exceptions](https://docs.microsoft.com/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions).
-
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
@@ -33,10 +30,10 @@ Die neueste Version dieses Themas finden Sie unter [CA2153: vermeiden Sie Handli
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- [(State Exceptions, CSE) beschädigt](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Speicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
+ [Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. In der Standardeinstellung die [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) wird kein Catch-Handler für CSEs aufgerufen.
+ CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. Von der [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) werden standardmäßig keine Catch-Handler für CSEs aufgerufen.
 
  Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Ausnahmetypen abzufangen, da selbst das Protokollieren von Code Angreifer in die Lage versetzen kann, Schwachstellen durch Speicherbeschädigungen auszunutzen.
 
@@ -45,7 +42,7 @@ Die neueste Version dieses Themas finden Sie unter [CA2153: vermeiden Sie Handli
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Zur Behebung des Problems sollten Sie eine der folgenden Aktionen ausführen:
 
- 1. Entfernen Sie die `HandleProcessCorruptedStateExceptions` Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
+ 1. Entfernen Sie das `HandleProcessCorruptedStateExceptions`-Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
 
  2. Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen.  Dazu können auch CSEs gehören, vorausgesetzt, dass sie vom Handlercode sicher behandelt werden können (sehr selten).
 

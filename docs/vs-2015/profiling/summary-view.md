@@ -1,7 +1,7 @@
 ---
 title: Zusammenfassungsansicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301534"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Zusammenfassungsansicht](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen oder Objekte in einem Profilerstellungslauf an. In dieser Ansicht wird anhand der Leistungsmetriken der Profilerstellungsmethode ein Zeitachsendiagramm und mindestens zwei Listen mit den leistungsintensivsten Funktionen oder Objekten dargestellt. Die Daten in dieser Ansicht sind von der verwendeten Profilerstellungsmethode abhängig (Sampling, Instrumentierung oder Parallelität) und davon, ob die .NET-Speicherreservierung erfasst wurde.  
   
  Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt für alle Zusammenfassungsansichten, außer der der Parallelitätsdaten, die Auslastung des Prozessors (CPU) während der Profilerstellung durch die profilierte Anwendung an.  

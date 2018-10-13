@@ -1,7 +1,7 @@
 ---
 title: Document-Tabelle mit | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293071"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Running Document Table](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table).  
-  
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur der ausgeführten Dokumententabelle (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument ist ein Element, das gespeichert wird, einschließlich der Dateien in einem Projekt oder der Hauptprojektdatei (z. B. eine VCXPROJ-Datei).  
   
 ## <a name="elements-of-the-running-document-table"></a>Elemente der die aktive Dokumenttabelle  

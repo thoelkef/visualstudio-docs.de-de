@@ -1,7 +1,7 @@
 ---
 title: Nur eigenen Code (Threadansicht) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be1c495a9bf3becc36f23508ac71f40b42bf7600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f08b9cfe7a0fd0d455d548f3685dbbea6160af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523596"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296854"
 ---
 # <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [nur mein Code (Threadansicht)](https://docs.microsoft.com/visualstudio/profiling/just-my-code-threads-view).  
-  
 Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.  
   
  Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.  

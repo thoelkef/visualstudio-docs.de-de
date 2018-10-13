@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Toolfensters mit mehreren Instanzen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286363"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Erstellen eines Toolfensters mit mehreren Instanzen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen eines Toolfensters mit mehreren Instanzen](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Sie können ein Toolfenster programmieren, sodass sie mehrere Instanzen gleichzeitig geöffnet sein können. Standardmäßig haben die Toolfenster nur eine Instanz zu öffnen.  
   
  Wenn Sie ein Mehrfachinstanz-Toolfenster verwenden, können Sie mehrere verwandte Informationsquellen zur gleichen Zeit anzeigen. Beispielsweise könnten Sie ein mehrzeiliges einfügen <xref:System.Windows.Forms.TextBox> Steuerelement in einem Toolfenster mit mehreren Instanzen, sodass mehrere Codeausschnitte während einer Sitzung Programmierung gleichzeitig zur Verfügung gestellt werden. Sie könnten auch z. B. Einfügen einer <xref:System.Windows.Forms.DataGrid> Steuerelement und ein Dropdown-Liste im Feld ein Mehrfachinstanz-Toolfenster, damit mehrere Echtzeit-Datenquellen gleichzeitig überwacht werden können.  

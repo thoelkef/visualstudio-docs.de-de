@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Lösungen mit | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0512178d3c47853c9eba7c900a57738da6bed05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292659"
 ---
 # <a name="solutions-overview"></a>Übersicht über Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Übersicht über Lösungen](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions-overview).  
-  
 Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Projekt- und Status Informationen zu der Projektmappe werden in zwei verschiedenen Projektmappendateien gespeichert. Die Projektmappendatei (.sln) textbasiert ist und unter quellcodeverwaltung gestellt und von Benutzern gemeinsam genutzt werden können. Die Lösung Benutzer-Optionsdatei (.suo) ist binär. Daher wird die SUO-Datei kann nicht unter quellcodeverwaltung platziert werden und benutzerspezifische Informationen enthält.  
   
  Jedem VSPackage kann in beide Arten von Projektmappendatei schreiben. Aufgrund der Natur der Dateien es gibt zwei unterschiedliche Schnittstellen implementiert, um in diese schreiben. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Schnittstelle schreibt Textinformationen in der SLN-Datei und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> Schnittstelle binäre Datenströmen in der SUO-Datei geschrieben.  

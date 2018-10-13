@@ -1,7 +1,7 @@
 ---
 title: Toolboxelemente auswählen, WPF-Komponenten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 057f354b06002c9b1708478f3e3a9592a47a7065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c36c34f637993354b131430394e5980c9266d03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299688"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Toolboxelemente auswählen, WPF-Komponenten](https://docs.microsoft.com/visualstudio/ide/reference/choose-toolbox-items-wpf-components).  
-  
   
 Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird eine Liste der Windows Presentation Foundation (WPF)-Steuerelemente angezeigt, die auf dem lokalen Computer verfügbar sind. Um diese Liste anzuzeigen, wählen Sie im Menü **Extras** die Option **Toolboxelemente auswählen** aus, um das Dialogfeld **Toolboxelemente auswählen** aufzurufen. Wählen Sie anschließend die Registerkarte **WPF-Komponenten** aus. Klicken Sie zum Sortieren der aufgeführten Komponenten auf eine beliebige Spaltenüberschrift.  
   

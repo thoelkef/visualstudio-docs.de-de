@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287156"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer von der Erweiterung sie ihren eigenen Code hinzufügen können.  
   
  Ein Codeausschnitt ist ein Fragment von Code oder Text, der in einer Datei eingebunden werden kann. Um alle Codeausschnitte anzuzeigen, die für bestimmte Programmiersprachen erfasst wurden, auf die **Tools** Menü klicken Sie auf **Codeausschnitt-Manager**. Klicken Sie zum Einfügen eines Ausschnitts in einer Datei mit der rechten Maustaste, Sie den Ausschnitt möchten, auf **Ausschnitt einfügen** oder **Umschließen mit**suchen den gewünschten Codeausschnitt, und doppelklicken Sie darauf. Drücken Sie die Registerkarte oder UMSCHALT + TAB, ändern die relevanten Teile des Ausschnitts ein, und drücken dann die EINGABETASTE oder ESC, um es zu akzeptieren. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
@@ -41,7 +39,7 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
   
  Diese exemplarische Vorgehensweise basiert auf [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-and-registering-code-snippets"></a>Erstellen und Registrieren von Codeausschnitten  

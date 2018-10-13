@@ -1,7 +1,7 @@
 ---
 title: 'CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte werden Groß-/Kleinschreibung korrekt | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 525f08cfd69b8ebac30b4b3455b71b0ebb16c90e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e33b73ddc37bb00bc4a095b58a5f7d0832f8e9ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291160"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1701: zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte werden Groß-/Kleinschreibung korrekt](https://docs.microsoft.com/visualstudio/code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly).
-
 |||
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|

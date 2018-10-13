@@ -1,7 +1,7 @@
 ---
 title: Übersicht der Konfigurationsoptionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294293"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Übersicht über Konfigurationsoptionen](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Projekte in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützen mehrere Konfigurationen, die debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration ist ein Build mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Lösungen enthalten standardmäßig zwei Konfigurationen, Debug und Release. Diese Konfigurationen können angewendet werden, verwenden die Standardeinstellungen, oder geändert, um spezifische Lösung und/oder Anforderungen zu erfüllen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine Komponente des direktes. Projekte müssen nicht mehrere Konfigurationen, jedoch zu unterstützen. Wenn nur eine Konfiguration vorhanden ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  
   
  Konfigurationen in der Regel besteht aus zwei Teilen – den Namen (z. B. Debug oder Release) und die Einstellungen der Plattform. Ein Konfigurationsname Plattform identifiziert, die Umgebung, die die Konfiguration ausgerichtet ist, z. B. eine API festlegen oder die Plattform des Betriebssystems. Benutzer von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] eine Plattform; kann nicht erstellt werden aus der Auswahl müssen sie ein Projekt ermöglicht das VSPackage auswählen. Wenn ein Benutzer installiert ein VSPackage, die Delivery-Plattform, die während der Entwicklung des Pakets erstellt alle gewünschten Plattformname auftreten kann Basis auf von Kriterien festlegen, durch den Paketersteller. Der Benutzer kann dann auswählen, aus der Liste der Plattformen, die über das VSPackage verfügbar gemacht, wenn die Eigenschaftenseiten instanziiert werden.  

@@ -1,7 +1,7 @@
 ---
 title: GetFrameworkSdkPath-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3e35cac8399ab97ae3825e35de5b249db7e23a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca047d35ec914833d2044cb2ae9fd4f7cf322a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301781"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [GetFrameworkSdkPath-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/getframeworksdkpath-task).  
-  
   
 Ruft den Pfad zu [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ab  
   

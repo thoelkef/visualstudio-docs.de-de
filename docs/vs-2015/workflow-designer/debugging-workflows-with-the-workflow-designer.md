@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Workflows mit Workflow-Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c7c57243bb0bab73c1007287c7d274f8bb57c13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f60eb95d9aa29b01ae20b8c0edb73e7c205a4f8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300572"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Debuggen von Workflows mit dem Workflow-Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] bietet die Möglichkeit, Workflows und benutzerdefinierte Aktivitäten zu debuggen. Vorgang und Verhalten sind dem des [!INCLUDE[vs2010](../includes/vs2010-md.md)]-Standarddebuggers ähnlich. In den Themen in diesem Abschnitt wird beschrieben, wie Sie die gewohnten Debugprozeduren ausführen sowie XAML und Ausdrücke debuggen können.  

@@ -1,7 +1,7 @@
 ---
 title: Erstellen eine Windows Forms-Toolbox-Steuerelement | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294215"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen eines Windows Forms-Toolbox-Steuerelements](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird, die Toolbox-Steuerelement von Windows Forms-Elementvorlage, die in Visual Studio-Erweiterbarkeitstools (VS SDK) enthalten ist das **Toolbox** beim Installieren der Erweiterung. In diesem Thema wird gezeigt, wie die Vorlage zu verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie für andere Benutzer verteilen können.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements  
@@ -67,7 +65,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
     |`Button1`|**Text**|Zurücksetzen|  
   
 ### <a name="coding-the-user-control"></a>Codieren des Benutzersteuerelements  
- Das `Counter` -Steuerelement macht folgende Elemente verfügbar: eine Methode zum Erhöhen des Zählerwerts, ein Ereignis, das immer dann ausgelöst wird, wenn der Zählerwert erhöht wird, eine `Reset` -Schaltfläche sowie drei Eigenschaften, mit denen die aktuelle Anzahl und der Anzeigetext gespeichert werden bzw. festgelegt wird, ob die `Reset` -Schaltfläche ein- oder ausgeblendet wird. Die `ProvideToolboxControl` Attribut bestimmt den Speicherort in der **Toolbox** der `Counter` -Steuerelement angezeigt wird.  
+ Das `Counter` -Steuerelement macht folgende Elemente verfügbar: eine Methode zum Erhöhen des Zählerwerts, ein Ereignis, das immer dann ausgelöst wird, wenn der Zählerwert erhöht wird, eine `Reset` -Schaltfläche sowie drei Eigenschaften, mit denen die aktuelle Anzahl und der Anzeigetext gespeichert werden bzw. festgelegt wird, ob die `Reset` -Schaltfläche ein- oder ausgeblendet wird. Das `ProvideToolboxControl` -Attribut bestimmt, an welcher Stelle in der **Toolbox** das `Counter` -Steuerelement angezeigt wird.  
   
 ##### <a name="to-code-the-user-control"></a>Codieren des Benutzersteuerelements  
   
@@ -145,7 +143,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
   
     ```  
   
-8.  Direkt über der Klassendefinition in der `ProvideToolboxControl` -Attributdeklaration, ändern Sie den Wert des ersten Parameters von `"MyWinFormsControl.Counter"` zu `"General"`. Dadurch wird der Name der Elementgruppe festgelegt, die das Steuerelement in der **Toolbox**hostet.  
+8.  Ändern Sie direkt oberhalb der Klassendefinition in der `ProvideToolboxControl` -Attributdeklaration den Wert des ersten Parameters von `"MyWinFormsControl.Counter"` in `"General"`. Dadurch wird der Name der Elementgruppe festgelegt, die das Steuerelement in der **Toolbox**hostet.  
   
      Das folgende Beispiel zeigt das `ProvideToolboxControl` -Attribut und die angepasste Klassendefinition.  
   
@@ -171,7 +169,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
   
 5.  Ziehen Sie eine `Counter` -Steuerelement zu Ihrem Formular ein, und wählen Sie ihn. Die `Value`, `Message`, und `ShowReset` werden Eigenschaften angezeigt werden, der **Eigenschaften** Fenster zusammen mit den Eigenschaften, die von geerbt werden <xref:System.Windows.Forms.UserControl>.  
   
-6.  Legen Sie die `Message`-Eigenschaft auf `Count:` fest.  
+6.  Legen Sie die `Message` -Eigenschaft auf `Count:`fest.  
   
 7.  Ziehen Sie eine <xref:System.Windows.Forms.Button> -Steuerelement auf das Formular, und legen die Eigenschaften für Name und Text der Schaltfläche auf `Test`.  
   

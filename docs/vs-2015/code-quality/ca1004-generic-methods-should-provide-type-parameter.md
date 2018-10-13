@@ -1,7 +1,7 @@
 ---
 title: 'CA1004: Generische Methoden müssen den Typparameter angeben | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bb32ab837ce7431f90c6a7ccdc178aa62b8145cf
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 26fa2296625c9fae66c29c76b26b6cc4abf6f37e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288183"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1004: generische Methoden müssen den Typparameter angeben](https://docs.microsoft.com/visualstudio/code-quality/ca1004-generic-methods-should-provide-type-parameter).
-
 |||
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|

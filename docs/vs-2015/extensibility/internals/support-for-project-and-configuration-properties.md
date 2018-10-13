@@ -1,7 +1,7 @@
 ---
 title: Unterstützung für Projekt- und Konfigurationseigenschaften | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294345"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Unterstützung für Projekt- und Konfigurationseigenschaften](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties).  
-  
 Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) kann Projekt- und Eigenschaften anzuzeigen. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, sodass der Benutzer die Eigenschaften für die Anwendung festlegen kann.  
   
  Wählen Sie einen Projektknoten **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** auf die **Projekt** Menü können Sie ein Dialogfeld, das Projekt und die Konfiguration enthält öffnen Eigenschaften. In [!INCLUDE[csprcs](../../includes/csprcs-md.md)] und [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], und Projekttypen abgeleitet diese Sprachen dieses Dialogfeld wird angezeigt, als eine Seite im Registerformat, in der [Allgemein, Umgebung, Dialogfeld Optionen](../../ide/reference/general-environment-options-dialog-box.md). Weitere Informationen finden Sie unter [nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (c#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  

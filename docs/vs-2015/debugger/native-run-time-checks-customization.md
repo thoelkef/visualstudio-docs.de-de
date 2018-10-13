@@ -1,7 +1,7 @@
 ---
 title: Systemeigene Laufzeitüberprüfungen Anpassung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65aaef84c96605eb0ac5a4836c637c2990a15477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300884"
 ---
 # <a name="native-run-time-checks-customization"></a>Anpassen der systemeigenen Laufzeitüberprüfung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Native zur Laufzeit überprüft Anpassung](https://docs.microsoft.com/visualstudio/debugger/native-run-time-checks-customization).  
-  
 Beim Kompilieren mit **/RTC** (laufzeitfehlerüberprüfungen), oder Verwenden der `runtime_checks` Pragma stellt die C-Laufzeitbibliothek systemeigene laufzeitüberprüfungen bereit. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:  
   
 -   Zum Weiterleiten von Meldungen der Laufzeitüberprüfung an eine Datei oder an ein vom Standardziel abweichendes Ziel.  

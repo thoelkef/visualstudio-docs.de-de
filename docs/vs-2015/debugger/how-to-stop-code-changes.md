@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anhalten von Codeänderungen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35d368d5489c08df2f267870d7f0221789fb7b6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306344"
 ---
 # <a name="how-to-stop-code-changes"></a>Gewusst wie: Anhalten von Codeänderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Anhalten von Codeänderungen](https://docs.microsoft.com/visualstudio/debugger/how-to-stop-code-changes).  
-  
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.  
   
 > [!CAUTION]

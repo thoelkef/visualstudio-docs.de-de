@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramCreateEvent2 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb1cf67cc10925323d6995c5b3816e949347a79c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd69afea6723050478f1b91d9b298a893b6ceceb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302600"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IDebugProgramCreateEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramcreateevent2).  
-  
 Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn ein Programm angefügt ist.  
   
 ## <a name="syntax"></a>Syntax  
