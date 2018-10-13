@@ -1,7 +1,7 @@
 ---
 title: Installieren eines UML-Profils | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47346af32cf1b86ddf2f526e271127e4bde2da95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b72c87f79ce5bafbc655fade59d6a8b7570f694
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275209"
 ---
 # <a name="install-a-uml-profile"></a>Installieren eines UML-Profils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Installieren eines UML-Profils](https://docs.microsoft.com/visualstudio/modeling/install-a-uml-profile).  
-  
 Sie können Visual Studio mit einem UML-Profil erweitern. Mit einem Profil können Sie den Elementen, die Sie in UML-Modellen erstellen können, Stereotypen und zusätzliche Eigenschaften hinzufügen. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Wenn Sie ein UML-Modell erhalten, das mit Profilen erstellt wurde, werden einige Eigenschaften nur dann angezeigt, wenn Sie die gleichen Profile installieren.  

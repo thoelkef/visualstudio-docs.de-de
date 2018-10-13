@@ -1,7 +1,7 @@
 ---
 title: Color-Tools für Farbdesigns | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ceabdef6a0c470fdc8551d6e8595858d90bd4c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 876823e7accf832274a4cdaa039010b928d84a58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307728"
 ---
 # <a name="color-theming-tools"></a>Tools für Farbdesigns
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Tools für Farbdesigns](https://docs.microsoft.com/visualstudio/extensibility/internals/color-theming-tools).  
-  
 Das VS-SDK stellt mehrere Tools, mit denen Sie das Erstellen und Verwalten von Farbdesigns bereit.  
   
 -   Die [VSIX-Farb-Editor](../../extensibility/internals/vsix-color-editor.md) Tool erstellen und Bearbeiten von Farben für Visual Studio.  

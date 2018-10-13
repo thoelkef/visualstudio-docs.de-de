@@ -1,7 +1,7 @@
 ---
 title: Suchen und Ersetzen von Text | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273441"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [suchen und Ersetzen von Text](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text).  
-  
 Die Funktion zum Suchen und Ersetzen von Text lässt sich im Visual Studio Code-Editor und bestimmten textbasierten Ausgabefenstern verwenden, z.B. dem Fenster **Suchergebnisse**. Rufen Sie sie über das Steuerelement **Suchen und Ersetzen** oder über **Suchen/Ersetzen in Dateien** auf. Sie können das Suchen und Ersetzen auch in einigen Designerfenstern, wie dem XAML-Designer, dem Windows Forms-Designer und den Toolfenstern, durchführen.  
   
  Sie können den Suchbereich auf das aktuelle Dokument, die aktuelle Projektmappe oder auf eine benutzerdefinierten Ordnersatz festlegen. Ebenfalls können Sie einen Satz mit Dateinamenerweiterungen für Mehrdateiensuchen angeben. Die Suchsyntax kann mit regulären .NET-Ausdrücken angepasst werden.  

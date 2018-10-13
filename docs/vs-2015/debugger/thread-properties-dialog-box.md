@@ -1,7 +1,7 @@
 ---
 title: Im Dialogfeld Eigenschaften von Thread | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00cf70e0373f6791397234d9a5a329e57a5d46ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37eee1a82fab77238b992ee391a782c5af34d7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271699"
 ---
 # <a name="thread-properties-dialog-box"></a>Dialogfeld "Threadeigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaftendialogfeld Thread](https://docs.microsoft.com/visualstudio/debugger/thread-properties-dialog-box).  
-  
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread zu erhalten. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Ansicht "Threads"](../debugger/threads-view.md) Fenster, oder Sie öffnen [Meldungsansicht](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die **allgemeine** Registerkarte ist die einzige Registerkarte angezeigt. Auf Windows 98 und Windows 95-Betriebssystemen ist eine geänderte Version des auf dieser Registerkarte angezeigt.  

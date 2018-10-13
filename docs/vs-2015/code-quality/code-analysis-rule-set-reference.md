@@ -1,7 +1,7 @@
 ---
 title: Codeanalyse-Regelsätze ressourcensatzverweis | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279161"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Codeanalyse-Regelsätze ressourcensatzverweis](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference).  
-  
 Beim Konfigurieren der Codeanalyse für Projekte mit verwaltetem Code in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], oder [!INCLUDE[vsPro](../includes/vspro-md.md)]werden Ihnen eine Liste mit integrierten *-Regelsätze*. Sie können entweder einen der Standardregelsätze verwenden oder einen Regelsatz an Ihre Projektanforderungen anpassen.  
   
 ## <a name="available-rule-sets"></a>Verfügbare Regelsätze  

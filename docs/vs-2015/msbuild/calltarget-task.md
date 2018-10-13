@@ -1,7 +1,7 @@
 ---
 title: CallTarget-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d12fde1654c4645a6b543e44f8c48f273f32349b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc3c5822732a4ae584500bfe1c48d7ba9e29b038
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307676"
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [CallTarget-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/calltarget-task).  
-  
   
 Ruft die angegebenen Ziele in der Projektdatei ab.  
   

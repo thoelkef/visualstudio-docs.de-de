@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57da25f02b8771188c5372966709222c765b26a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6feb9f65789ea401b1ee79e2b23f265798fcd18e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276795"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [BP_LOCATION_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-type).  
-  
 Gibt den Typ des Haltepunkts für eine Haltepunkt-Anforderung an.  
   
 ## <a name="syntax"></a>Syntax  

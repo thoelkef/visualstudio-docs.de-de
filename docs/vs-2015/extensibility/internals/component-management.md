@@ -1,7 +1,7 @@
 ---
 title: Verwaltung von Komponenten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280331"
 ---
 # <a name="component-management"></a>Verwaltung von Komponenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Komponentenverwaltung](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management).  
-  
 Einheiten von Aufgaben in der Windows Installer werden als Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, wird die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die Windows Installer verwenden.  
   
  Obwohl Sie mehrere Produkte verwenden können, um Ihre VSPackage-Installationsprogramm zu erstellen, wird für diese Diskussion von Windows Installer (MSI)-Dateien. Wenn Sie das Installationsprogramm zu erstellen, müssen Sie die Bereitstellung, damit die richtige verweiszählung jederzeit geschieht ordnungsgemäß verwalten. Daher verschiedene Versionen des Produkts nicht beeinträchtigen oder Unterbrechung der jeweils anderen eine Mischung aus installieren und Deinstallieren von Szenarien.  

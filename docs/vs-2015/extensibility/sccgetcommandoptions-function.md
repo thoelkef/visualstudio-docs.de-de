@@ -1,7 +1,7 @@
 ---
 title: SccGetCommandOptions-Funktion | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7838ffaccbef6e4bdcde97313f118e7aa13b4d1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b3efc963c71b6dfb18a014a46ae2f3442ef2524
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271582"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [SccGetCommandOptions-Funktion](https://docs.microsoft.com/visualstudio/extensibility/sccgetcommandoptions-function).  
-  
 Diese Funktion wird der Benutzer für die erweiterten Optionen für einen bestimmten Befehl aufgefordert.  
   
 ## <a name="syntax"></a>Syntax  

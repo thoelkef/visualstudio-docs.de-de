@@ -1,7 +1,7 @@
 ---
 title: Zeichenfolgen-Element | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12e6b1cbc12e7b0deff97a239db08977ac38144c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280942"
 ---
 # <a name="strings-element"></a>Strings-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Strings-Element](https://docs.microsoft.com/visualstudio/extensibility/strings-element).  
-  
 Das Zeichenfolgen-Element muss mindestens einen enthalten **ButtonText** untergeordnetes Element. Alle anderen untergeordneten Elemente sind optional. Ungültiges XML-Zeichen wie '&' und ' <' codiert werden als Entitäten ("&amp;'und'&lt;" und so weiter).  
   
  Ein kaufmännisches und-Zeichen in der Textzeichenfolge gibt an, die Tastenkombination für den Befehl.  

@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277068"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Übersicht über die Visual Studio-Zielversionen](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie die Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] angeben, die für die Anwendung erforderlich ist. Wenn Sie diese Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden möchten, um die Entwicklung eines Projekts fortzusetzen, das Sie in einer früheren Version begonnen haben, müssen Sie das Frameworkziel nicht ändern. Sie können auch eine Projektmappe mit Projekten erstellen, die andere Versionen des Frameworks als Ziel verwenden. Durch Frameworkziele wird gewährleistet, dass die Anwendung nur Funktionen verwendet, die in der angegebenen Version des Frameworks verfügbar sind.  
   
 > [!TIP]
