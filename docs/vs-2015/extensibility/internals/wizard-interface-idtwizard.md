@@ -1,7 +1,7 @@
 ---
 title: Assistentenschnittstelle (IDTWizard) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb811f0ea6ae3d1be01b5d00f6359503d8f0d581
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f50dc747e04e909644a6b74f2f4af0d7551248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266856"
 ---
 # <a name="wizard-interface-idtwizard"></a>Assistentenschnittstelle (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Assistentenschnittstelle (IDTWizard)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-interface-idtwizard).  
-  
 Die integrierte Entwicklungsumgebung (IDE) verwendet die <xref:EnvDTE.IDTWizard> Schnittstelle für die Kommunikation mit dem Assistenten. Assistenten müssen diese Schnittstelle implementieren, um in der IDE installiert werden.  
   
  Die <xref:EnvDTE.IDTWizard.Execute%2A> Methode ist die einzige Methode, die zugeordneten der <xref:EnvDTE.IDTWizard> Schnittstelle. Diese Methode implementieren, Assistenten und die IDE Ruft die Methode für die Schnittstelle. Das folgende Beispiel zeigt die Signatur der Methode.  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumdebugstreams:: Item | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d7f73cc76674accbfbe6e349006a6f298a77de5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ed356b092d4f5e9048e92fabc139cb0e6642d91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267435"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [idiaenumdebugstreams:: Item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreams-item).  
-  
 Ruft eine Debugstream über einen Index oder Name ab.  
   
 ## <a name="syntax"></a>Syntax  

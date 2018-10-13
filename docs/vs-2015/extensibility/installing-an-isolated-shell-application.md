@@ -1,7 +1,7 @@
 ---
 title: Installieren einer Isolated Shell-Anwendung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7b1ba12f39accf863b051ec7096ee835a03ff64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257347"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Installieren einer Isolated Shell-Anwendung](https://docs.microsoft.com/visualstudio/extensibility/installing-an-isolated-shell-application).  
-  
 Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.  
   
 -   Bereiten Sie Ihre Lösung vor.  
@@ -38,7 +36,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
  Alle dem Beispielcode in diesem Dokument stammen aus der [Beispiel für die Anwendungsbereitstellung Shell](http://go.microsoft.com/fwlink/?LinkId=262245), die Sie in der Code Gallery auf der MSDN-Website herunterladen können. Das Beispiel zeigt die Ergebnisse der einzelnen Schritte durchführen.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen der Schritte, die in diesem Thema wird beschrieben, müssen die folgenden Tools auf Ihrem Computer installiert werden.  
   
 -   Visual Studio SDK  

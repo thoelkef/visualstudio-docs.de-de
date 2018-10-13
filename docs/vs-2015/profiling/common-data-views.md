@@ -1,7 +1,7 @@
 ---
 title: Allgemeine Datenansichten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255878"
 ---
 # <a name="common-data-views"></a>Allgemeine Datenansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [allgemeine Datenansichten](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte von Profiler-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

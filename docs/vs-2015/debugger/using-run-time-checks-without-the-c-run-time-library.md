@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 864e21d2c2ec2a9922d70e6b69192d9268556737
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02d5128a3d80b7fabe3fd8cf774d5891a66fc20c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263060"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [mithilfe von zur Laufzeit überprüft, ohne die C-Laufzeitbibliothek](https://docs.microsoft.com/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).  
-  
 Wenn Sie das Programm ohne die C-Laufzeitbibliothek verknüpfen, **/NODEFAULTLIB**, und Überprüfungen zur Laufzeit verwendet werden soll, müssen Sie mit RunTmChk.lib verknüpfen.  
   
  `_RTC_Initialize` initialisiert das Programm für Laufzeitüberprüfungen. Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek erstellen, müssen Sie sicherstellen, dass das Programm mit Laufzeitüberprüfungen kompiliert wurde, bevor Sie `_RTC_Initialize` aufrufen:  
