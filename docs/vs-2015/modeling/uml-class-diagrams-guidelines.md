@@ -1,7 +1,7 @@
 ---
 title: 'UML-Klassendiagramme: Richtlinien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181778"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Klassendiagramme: Richtlinien](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre Beziehungen getrennt von ihrer Implementierung zu beschreiben. Das Diagramm wird verwendet, um die Konzentration auf die logischen Aspekte der Klassen zu leiten, anstatt auf ihre Implementierung.  
   
  Erstellen Sie ein UML-Klassendiagramm auf die **Architektur** Menü wählen **neues UML- oder Ebenendiagramm**.  

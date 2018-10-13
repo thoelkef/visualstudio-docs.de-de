@@ -1,7 +1,7 @@
 ---
 title: Verarbeiten Sie im Dialogfeld Eigenschaften von | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180942"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogfeld "Prozesseigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [im Dialogfeld "Eigenschaften" Process](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Verwenden Sie das Dialogfeld zu öffnen, um mehr zu einem bestimmten Prozess zu erfahren. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Unter Windows 98 und Windows 95 Betriebssystemen, nur eine geänderte Version des der **allgemeine** Registerkarte wird angezeigt.  

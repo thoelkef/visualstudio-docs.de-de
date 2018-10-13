@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Debug-Beispiele | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591bcb7808ed7429a3b663f7d18adf50a6c753b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b5c47c769901455b02d6b08f859562846a0c0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183208"
 ---
 # <a name="visual-studio-debugging-samples"></a>Beispiele für Visual Studio-Debuggen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Studio-Beispiele zum Debuggen](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugging-samples).  
-  
 Zwei Beispiele zeigen, wie mithilfe von Visual Studio-Debugger erweitert [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
 -   Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **c#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.  
