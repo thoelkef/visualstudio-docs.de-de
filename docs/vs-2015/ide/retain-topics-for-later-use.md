@@ -1,7 +1,7 @@
 ---
 title: Speichern von Themen zur späteren Verwendung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a457a27be79f925039031ebcf2657085ab1b4a5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2df1a95dacf7dc57817a6167cebc48d42d275cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275118"
 ---
 # <a name="retain-topics-for-later-use"></a>Speichern von Themen zur späteren Verwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [beibehalten von Themen für die später Verwendung](https://docs.microsoft.com/visualstudio/ide/retain-topics-for-later-use).  
-  
 Wenn Sie ein nützliches Thema gefunden haben, können Sie zu einem späteren Zeitpunkt darauf zugreifen, indem Sie es kopieren und in eine Textdatei einfügen und ausdrucken, oder Sie speichern das Thema als Favorit. Sie können beispielsweise Inhalte für die spätere Verwendung beibehalten, indem Sie das Kontextmenü für Themen öffnen und die Option **Kopieren**, **Drucken**, **Druckvorschau** oder **Zu Favoriten hinzufügen** auswählen.  
   
 ## <a name="using-the-favorites-tab"></a>Verwenden der Registerkarte "Favoriten"  

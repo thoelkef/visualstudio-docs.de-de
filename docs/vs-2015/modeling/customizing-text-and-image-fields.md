@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Text- und Image-Feldern | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271127"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anpassen von Text- und Image-Feldern](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch einen TextField dargestellt. Beispiele für die Initialisierung von TextFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.  
   
  Ein Textfeld handelt es sich um ein Objekt, das einen Bereich innerhalb einer Form, wie z. B. den Speicherplatz, die eine Bezeichnung zugewiesen verwaltet. Viele Formen der gleichen Klasse wird ein Textfeld-Instanz gemeinsam genutzt. TextField-Instanz nicht den Text der Bezeichnung für jede Instanz separat gespeichert: stattdessen die `GetDisplayText(ShapeElement)` Methode nimmt die Form als Parameter und der Text abhängig von den aktuellen Status der Form sowie ihres Modellelements suchen können.  

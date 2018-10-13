@@ -1,7 +1,7 @@
 ---
 title: Grundlegendes zu SAL | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253252"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Grundlegendes zu SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 Die Microsoft-Quellcode Annotation Language (SAL) bietet einen Satz von Anmerkungen, die Sie zum Beschreiben, wie eine Funktion verwendet die Parameter, die Annahmen, die über diese vereinfacht und die Garantien sie gewährleistet, wenn er abgeschlossen ist, verwenden können. Die Anmerkungen werden in der Headerdatei definiert `<sal.h>`. Visual Studio-Codeanalyse für C++ wird SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2.0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2.0 Anmerkungen für die Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  C- und C++ bieten systemintern, nur eingeschränkte Möglichkeiten für Entwickler zum Zweck und Invarianz konsistent Ausdrücken auf. Verwenden von SAL-Anmerkungen, können Sie Ihre Funktionen ausführlicher beschreiben, damit Entwickler, die sie verwendet werden wie ihre Verwendung besser verstehen können.  

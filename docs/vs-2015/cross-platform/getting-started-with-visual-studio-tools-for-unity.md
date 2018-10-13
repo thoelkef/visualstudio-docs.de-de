@@ -1,38 +1,36 @@
 ---
 title: Erste Schritte mit Visual Studio-Tools für Unity | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6b5e2ea493e4b923ab8c73cacaeaf243aef07dbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4075da9288e6b9c05e3eec9abee0ae4cbe86bea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234740"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erste Schritte mit Visual Studio-Tools für Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity).  
-  
   
 In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Tools für Unity installieren und Ihr Unity-Projekt für die Zusammenarbeit mit Visual Studio konfigurieren.  
   
 > [!IMPORTANT]
 >  In Unity 5.2 ist die Unterstützung von Visual Studio-Tools für Unity 2.1 bereits integriert, wodurch die Projekterstellung vereinfacht wird. Um diesen Vorteil zu nutzen, benötigen Sie Unity 5.2.0 oder höher unter Windows sowie Visual Studio-Tools für Unity 2.1 oder höher.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Sie benötigen die folgenden Komponenten, um Visual Studio-Tools für Unity nutzen zu können:  
   
 -   Eine Version von **Visual Studio** , die Erweiterungen unterstützt (z. B. Visual Studio Community, Professional, Premium oder Enterprise). Visual Studio Community können Sie kostenlos herunterladen.  

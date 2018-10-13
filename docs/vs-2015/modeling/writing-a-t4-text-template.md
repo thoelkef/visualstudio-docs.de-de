@@ -1,7 +1,7 @@
 ---
 title: Schreiben einer T4-Textvorlage | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231633"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schreiben einer T4-Textvorlage](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template).  
-  
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. In der Vorlage eingefügt werden *Kontrollblöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.  
   
  Diese Struktur vereinfacht das Entwickeln einer Vorlage, da Sie mit einem Prototyp der generierten Datei beginnen und nach und nach Kontrollblöcke zum Verändern des Ergebnisses einfügen können.  
@@ -220,11 +218,11 @@ private void WriteSquareLine(int i)
  Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).  
   
 ###  <a name="Include"></a> Einschließlich Code und text  
- Die `include`-Direktive fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.  
+ Die `include`-Anweisung fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.  
   
  `<#@ include file="c:\test.txt" #>`  
   
- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.  
+ Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Anweisung normale Text- und Standardkontrollblöcke eingefügt werden.  
   
  Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).  
   
@@ -254,7 +252,7 @@ private void WriteSquareLine(int i)
  **Verwenden Sie ein UML-Modell**. Sie können Code aus einem UML-Modell generieren. Dies hat den Vorteil, dass das Modell als Diagramm in einer gewohnten Darstellungsweise bearbeitet werden kann. Zudem müssen Sie das Diagramm nicht entwerfen. Weitere Informationen finden Sie unter [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen  
- In einem [während der Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md), wenn Sie eine Datei an einem Speicherort relativ zur Textvorlage ist, verwenden verweisen möchten `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Direktive festlegen:  
+ In einem [während der Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md), wenn Sie eine Datei an einem Speicherort relativ zur Textvorlage ist, verwenden verweisen möchten `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

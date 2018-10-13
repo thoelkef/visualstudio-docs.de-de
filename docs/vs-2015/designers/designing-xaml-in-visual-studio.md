@@ -1,7 +1,7 @@
 ---
 title: Entwerfen von XAML-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0501fa97b69bda7d032c92ade6e3f150eb106fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad02192ba8e66bba6bc728104b3e90f33a0a9f5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248190"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Entwerfen von XAML-Code in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Entwerfen von XAML in Visual Studio](https://docs.microsoft.com/visualstudio/designers/designing-xaml-in-visual-studio).  
-  
 Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ansprechender Benutzeroberflächen und Rich-Media-Umgebungen für XAML-basierte Windows-Desktop-, Web-, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)- und [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) -Apps. Beide Dienste verwenden einen gemeinsamen Satz Entwurf und Toolfenster sowie nd einen XAML-Editor, Blend für Visual Studio bietet jedoch zusätzliche Entwurfstools für fortgeschrittene Aufgaben, wie z. B. Animation und Verhaltensweisen.  
   
 ## <a name="choosing-the-right-tool"></a>Auswählen des richtigen Tools  

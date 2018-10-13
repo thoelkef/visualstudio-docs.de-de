@@ -1,7 +1,7 @@
 ---
 title: 'UML-Anwendungsfalldiagramme: Verweisen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256307"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML-Anwendungsfalldiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Anwendungsfalldiagramme: Referenz](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 In Visual Studio eine *Anwendungsfalldiagramm* zusammengefasst, die Ihre Anwendung oder das System verwendet und wie sie es verwenden können. Erstellen Sie ein UML-Anwendungsfalldiagramm, auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
   
  Ein Anwendungsfalldiagramm dient als zentraler Punkt für die Beschreibung von Benutzeranforderungen. Es beschreibt die Beziehungen zwischen Anforderungen, Benutzern und den Hauptkomponenten. Die Anforderungen werden nicht ausführlich beschrieben. Sie können in separaten Diagrammen oder in Dokumenten beschrieben werden, die mit den einzelnen Anwendungsfällen verknüpft werden können. Informationen, wie Anwendungsfalldiagramme Ihnen zu verstehen helfen können, diskutieren und kommunizieren der benutzeranforderungen, finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  

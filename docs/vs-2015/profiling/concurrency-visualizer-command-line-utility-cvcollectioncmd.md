@@ -1,7 +1,7 @@
 ---
 title: Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8b872cf09a4b8ead730f13335fa8e2b7db43186a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262326"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Concurrency Visualizer-Befehlszeilenprogramm (CVCollectionCmd)](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd).  
-  
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
 > [!NOTE]

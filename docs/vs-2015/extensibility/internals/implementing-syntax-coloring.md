@@ -1,7 +1,7 @@
 ---
 title: Implementieren von Syntaxfarben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259249"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [implementieren Syntax Färbung](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array der kolorierbaren Elemente, und gibt die Typen von Sicherheitstoken für diese kolorierbaren Elemente zurück. Der Parser sollte Tokentypen zurückgeben, die eine Liste der kolorierbaren Elemente angehören. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zeigt jede kolorierbaren Elements im Code-Fenster gemäß der Attribute, die von der Farbauswahl-Objekt zugeordnet wird, dem entsprechenden Tokentyp an.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gibt keine Parser-Schnittstelle, und der Parser-Implementierung steht Ihnen völlig frei. Allerdings wird eine Standardimplementierung der Parser in das Sprachpaket für Visual Studio-Projekt bereitgestellt. Für verwalteten Code bietet das managed Package Framework (MPF) vollständige Unterstützung für die farbliche Kennzeichnung von Text an.  

@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen einer Liste der Codeausschnitte (Legacyimplementierung) installiert | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb5aea9af28ec455688176fa1d0f3a4e45acc038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2074000e2e77f842f63e1cb00e2fa7c25f42836b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248136"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [abrufen eine Liste der installierten Codeausschnitte (Legacy)](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation).  
-  
 Ein Codeausschnitt ist ein Codeabschnitt, der eingefügt werden können, in den Quellpuffer mit einem Menübefehl (mit der können eine Liste der installierten Codeausschnitte Auswahl) oder durch eine ausschnittsverknüpfung aus einer IntelliSense-Vervollständigungsliste auswählen.  
   
  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Methode ruft alle Codeausschnitte für eine bestimmte Sprache GUID ab. Die Tastenkombinationen für diese Codeausschnitte können in einer IntelliSense-Vervollständigungsliste eingefügt werden.  

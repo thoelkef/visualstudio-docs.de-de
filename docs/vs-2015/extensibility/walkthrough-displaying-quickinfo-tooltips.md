@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von QuickInfos | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237652"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen von QuickInfos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips).  
-  
 QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Beschreibungen, wenn ein Benutzer den Mauszeiger über einen Methodennamen. Sie können die Sprache basierenden Features wie QuickInfo implementieren, definieren die Bezeichner für die Sie die QuickInfo-Beschreibungen bereitstellen möchten, und erstellen dann eine QuickInfo, in dem den Inhalt angezeigt. Sie können die QuickInfo im Kontext von einem Sprachdienst definieren oder können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateinamentyp und Anzeigen der QuickInfo für nur diesen Typ, oder Sie können die QuickInfo anzeigen, für die einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von QuickInfos für den Inhaltstyp "Text".  
   
  Das QuickInfo-Beispiel in dieser exemplarischen Vorgehensweise zeigt die QuickInfo an, wenn ein Benutzer den Zeiger über einen Methodennamen. Dieser Entwurf erfordert, dass Sie diese vier Schnittstellen implementieren:  
@@ -43,7 +41,7 @@ QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Be
   
  In diesem Beispiel die QuickInfo-Quelle verwendet eine hartcodierte Liste mit Namen und Beschreibungen, aber in vollständige Implementierungen der Sprachdienst und der zugehörigen Dokumentation sind dafür verantwortlich, dass der Inhalt.  
   
-## <a name="prerequisites"></a>Voraussetzungen  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts  
@@ -160,7 +158,7 @@ QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Be
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  Importieren der <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> als Eigenschaft.  
+2.  Importieren Sie <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> als Eigenschaft.  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

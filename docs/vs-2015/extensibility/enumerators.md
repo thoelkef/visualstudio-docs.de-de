@@ -1,7 +1,7 @@
 ---
 title: Enumeratoren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6dcbd3dea8ad932aec5890bc085873ce3d20a8f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dcc660ba5aacf1b8014e7c4ca15443f2fdf881b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258499"
 ---
 # <a name="enumerators"></a>Enumeratoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Enumeratoren](https://docs.microsoft.com/visualstudio/extensibility/enumerators).  
-  
 Dieser Abschnitt enthält die Datentypen der Enumerator in der Quelle Steuerelement-Plug-in-API, die das Quellcodeverwaltungs-Plug-in zu kennen müssen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

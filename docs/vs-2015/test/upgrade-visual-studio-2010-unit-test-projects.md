@@ -1,7 +1,7 @@
 ---
 title: Upgrade der Komponententestprojekte von Visual Studio 2010 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e06a58e6015a99db83bf729d16196551c5126d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 114a34f09e2693edd9aa1c30b74891a84790578b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273480"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Upgrade der Komponententestprojekte von Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,5 +51,5 @@ Zu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] gehört die Testpr
 ## <a name="see-also"></a>Siehe auch  
  [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
- [Upgrading Tests from Earlier Versions of Visual Studio (Upgrade der Tests von früheren Visual Studio-Versionen)](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
+ [Upgrade der Tests von früheren Visual Studio-Versionen](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Upgrade der Tests der programmierten UI von Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)

@@ -1,7 +1,7 @@
 ---
 title: Design-Time Code Generation mithilfe von T4-Textvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268332"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates).  
-  
 T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Dateien im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen der Anwendung enthält.  
   
  In einem Modell kann z. B. ein Workflow entweder als Tabelle oder Diagramm definiert sein. Anhand des Modells können Sie die Software generieren, die den Workflow ausführt. Wenn sich die Anforderungen der Benutzer ändern, kann der neue Workflow problemlos mit den Benutzern besprochen werden. Die erneute Generierung des Codes anhand des Workflows ist zuverlässiger als die manuelle Aktualisierung des Codes.  
@@ -130,7 +128,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   
  Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
- Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.  
+ Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Anweisung `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit  
  So debuggen Sie eine Textvorlage  
@@ -227,7 +225,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 <#@ import namespace="System.IO" #>  
 ```  
   
- Die `assembly`-Direktive macht die angegebene Assembly auf die gleiche Weise für den Vorlagencode verfügbar wie der Abschnitt "Verweise" eines [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts. Sie müssen keinen Verweis auf "System.dll" einschließen, da automatisch darauf verwiesen wird. Die `import`-Direktive ermöglicht wie die `using`-Direktive in einer normalen Programmdatei die Verwendung von Typen ohne ihre vollqualifizierten Namen.  
+ Die `assembly`-Direktive macht die angegebene Assembly auf die gleiche Weise für den Vorlagencode verfügbar wie der Abschnitt "Verweise" eines [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts. Sie müssen keinen Verweis auf "System.dll" einschließen, da automatisch darauf verwiesen wird. Die `import`-Anweisung ermöglicht wie die `using`-Anweisung in einer normalen Programmdatei die Verwendung von Typen ohne ihre vollqualifizierten Namen.  
   
  Beispielsweise nach dem Importieren von **System.IO**, könnten Sie schreiben:  
   

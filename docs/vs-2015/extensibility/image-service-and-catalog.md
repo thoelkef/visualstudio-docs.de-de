@@ -1,7 +1,7 @@
 ---
 title: Image-Dienst und -Katalog | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265212"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und -katalog
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Bilddienst und-Katalog](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg auf den Dienst für Visual Studio-Images und Image-Katalog, die in Visual Studio 2015 eingeführt.  
   
  Der Image-Dienst, eingeführt in Visual Studio 2015 ermöglicht Entwicklern die besten Bilder für das Gerät und das ausgewählte Design des Benutzers, zum Anzeigen des Bilds an, einschließlich des richtigen Designs für den Kontext, in dem sie angezeigt werden. Einführung des Diensts für Images können wichtige Problembereiche im Zusammenhang mit Asset-Wartung, HDPI Skalierung und Designs zu vermeiden.  

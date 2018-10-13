@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Ausführen von Komponententests für Store-Apps in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249508"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Erstellen und Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erstellen und Ausführen von Komponententests für eine Store-app in Visual Studio](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Die Komponententesttools von Visual Studio 2012 Express für Windows 8 sind darauf ausgelegt, Entwickler und Teams zu unterstützen, die Komponententests in ihre Softwareentwicklungsverfahren einbinden. Mit Komponententests erhalten Entwickler und Tester eine effiziente, leicht verwaltbare Methode für die Suche nach logischen Fehlern in den Methoden von Klassen in Visual C#-, Visual Basic- und Visual C++-Projekten.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Direkte Aktivierung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232192"
 ---
 # <a name="in-place-activation"></a>Direkte Aktivierung
 Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müssen Sie die Editor-Ansicht entweder als ActiveX-Steuerelement oder als aktives Dokumentdatenobjekt mithilfe des Modells für die direkte Aktivierung implementieren.  
@@ -41,7 +41,7 @@ Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müss
 Editor für die direkte Aktivierung  
   
 > [!NOTE]
->  Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory` -Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).  
+>  Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory`-Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).  
   
  Alle Schnittstellen, die zum Erstellen eines Editors für die direkte Aktivierung implementiert werden, werden an einem einzelnen `CYourEditorDocument` -Objekt angezeigt. Diese Konfiguration unterstützt jedoch nur eine einzige Ansicht der Dokumentdaten. Weitere Informationen zur Unterstützung von mehreren Ansichten der Dokumentdaten finden Sie unter [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
@@ -51,7 +51,7 @@ Editor für die direkte Aktivierung
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Ansicht|Basismethode, mit der ein eingebettetes Objekt die Basisfunktionalität für den Container bereitstellt und mit ihm kommuniziert.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|Ansicht|Verwaltet die Aktivierung und Deaktivierung von direkten Objekten und bestimmt, wie viel des direkten Objekts angezeigt werden soll.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|Ansicht|Stellt einen direkten Kanal für die Kommunikation zwischen einem direkten Objekt, dem äußersten Rahmenfenster der zugehörigen Anwendung und dem Dokumentfenster in der Anwendung bereit, die das eingebettete Objekt enthält.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Ansicht|Implementiert ein ActiveX-Objekt. Beachten Sie, dass die Methoden der <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> und `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` , dass die Trennung der Dokumentdaten und Ansicht in der IDE nicht verwendet werden.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Ansicht|Implementiert ein ActiveX-Objekt. Die Methoden <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> und `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` , die für die Trennung der Dokumentdaten und deren Ansicht sorgen, werden in der IDE nicht verwendet.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ansicht/Daten|Bietet die Möglichkeit, das Dokumentdatenobjekt oder das Dokumentansichtsobjekt an der Behandlung von Befehlen zu beteiligen.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Ansicht|Ermöglicht Aktualisierungen der Statusleiste.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ansicht|Ermöglicht das Hinzufügen von Elementen zur Toolbox.|  

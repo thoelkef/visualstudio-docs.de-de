@@ -1,7 +1,7 @@
 ---
 title: Verwenden den eigenständigen IntelliTrace Collector | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267474"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [mit den eigenständigen IntelliTrace Collector](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.  
   
  So funktioniert IntelliTrace: [Visual Studio Ultimate 2012: Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](http://go.microsoft.com/fwlink/?LinkID=251851)  
@@ -88,7 +86,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 1.  Erstellen Sie das Collector-Verzeichnis auf dem Server der App, beispielsweise: **C:\IntelliTraceCollector**  
   
-2.  Sie finden den Collector im Microsoft Download Center oder dem Installationsordner von Visual Studio 2103 Update 3. [IntelliTrace Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2.  Sie finden den Collector im Microsoft Download Center oder dem Installationsordner von Visual Studio 2103 Update 3. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):  
   
     -   **Microsoft Download Center**:  
   
@@ -390,7 +388,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 -   Aus einer IntelliTrace Debugsitzung in Visual Studio Enterprise, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
--   Aus einer testsitzung in Microsoft Test Manager, finden Sie unter [Vorgehensweise: Sammeln von IntelliTrace-Daten zum Debuggen schwieriger Probleme helfen](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
+-   Weitere Informationen finden Sie aus einer Testsitzung in Microsoft Test Manager heraus unter [Gewusst wie: Sammeln von IntelliTrace-Daten zum Debuggen schwieriger Probleme helfen](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
   
 ## <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?  
  [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)  

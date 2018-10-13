@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren von Projektelementen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: douge
-ms.openlocfilehash: 10005b38f01c3cad97cf8c7aab391e4546737295
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9bf5307e2eabc2ba15c8e2dc8e1b1e0fadb11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224093"
 ---
 # <a name="upgrading-project-items"></a>Aktualisieren von Projektelementen
 Wenn Sie hinzufügen oder Verwalten von Elementen im Projektsystemen, die Sie nicht implementieren, müssen Sie möglicherweise zur Teilnahme an des Projekt-Upgrade-Prozess. Crystal Reports ist ein Beispiel für ein Element, das an das Projektsystem hinzugefügt werden kann.  

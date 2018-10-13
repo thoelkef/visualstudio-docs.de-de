@@ -1,7 +1,7 @@
 ---
 title: Leistungs-Explorer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248481"
 ---
 # <a name="performance-explorer"></a>Leistungs-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Leistungs-Explorer](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 Mit den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools können Entwickler leistungsbezogene Codeprobleme messen, auswerten und beheben. Die Tools sind vollständig in die IDE integriert, wodurch dem Benutzer eine einfache Verwendung ermöglicht wird.  
   
  Die Profilerstellung einer Anwendung ist einfach. Zunächst erstellen Sie eine neue Leistungssitzung. In der Visual Studio Team System Development Edition können Sie mithilfe des Leistungs-Assistenten eine neue Leistungssitzung erstellen. Bei Beendigung einer Leistungssitzung werden die während der Profilerstellung erfassten Daten in einer VSP-Datei gespeichert. Sie können die VSP-Datei in der IDE anzeigen. Es stehen mehrere Berichtsansichten zur Verfügung, in denen Sie die erfassten Daten visuell darstellen und auf Leistungsprobleme untersuchen können.  

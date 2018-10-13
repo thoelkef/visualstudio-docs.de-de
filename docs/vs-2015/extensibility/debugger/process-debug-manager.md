@@ -1,7 +1,7 @@
 ---
 title: Verarbeiten von Debug-Manager | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf3c90b87f994e308d347e573f38156489b273dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5171a40f7fb5ee28769be41b8674ad5f88de3253
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276665"
 ---
 # <a name="process-debug-manager"></a>Prozessbasierter Debug-Manager
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [prozessbasierten Debugmanager](https://docs.microsoft.com/visualstudio/extensibility/debugger/process-debug-manager).  
-  
 Prozessbasierter Debug-Manager (PDM) ist eine Komponente von Visual Studio, die Programme verwaltet, und Prozesse, sodass sie für die Sitzung verfügbar Debuggen, Manager und die Debug-Engines.  
   
  Das PDM verwaltet alle Prozesse, die debuggt werden können. Um gedebuggt zu werden, muss ein Programm mit der PDM registriert werden. Dies erfolgt zum Zeitpunkt, die das Programm, indem Sie entweder einen Port oder einer Debug-Engine gestartet wird.  

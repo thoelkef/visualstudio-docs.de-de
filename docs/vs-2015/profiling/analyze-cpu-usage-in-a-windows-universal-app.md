@@ -1,7 +1,7 @@
 ---
 title: Analysieren der CPU-Auslastung in einer universellen Windows-App | Windows-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250717"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analysieren der CPU-Auslastung in einer universellen Windows-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Analysieren der CPU-Auslastung in einer universellen Windows-App](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
  Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit damit verbringt, Code auszuführen. Zur Fokussierung auf bestimmte Szenarios, CPU-Auslastung ausgeführt werden können, mit der [XAML-UI-Reaktionsfähigkeit](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) -Tool, das [Energieverbrauch](../profiling/analyze-energy-use-in-store-apps.md) Tool oder beiden in einer einzigen diagnosesitzung.  

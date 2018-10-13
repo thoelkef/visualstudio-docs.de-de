@@ -1,7 +1,7 @@
 ---
 title: Auswählen zwischen freigegebenen und mit versionsverwaltung durch das VSPackages | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263691"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Auswählen zwischen freigegebenen VSPackages und VSPackages mit Versionsangabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [auswählen zwischen freigegebenen "und" mit versionsverwaltung durch das VSPackages](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages).  
-  
 Verschiedene Versionen von Visual Studio können auf demselben Computer gleichzeitig vorhanden sein. VSPackages kann eine beliebige Kombination von unterstützen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Versionen.  
   
  Sie können die Seite-an-Seite-Installationen von VSPackages durch eine von zwei Strategien, die gemeinsam genutzten Strategie oder die Strategie mit versionsverwaltung durch das aktivieren. Sowohl das Vorhandensein mehrerer Versionen von aufzunehmen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und die zugehörigen Versionen der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

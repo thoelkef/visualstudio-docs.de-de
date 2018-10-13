@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit XML-Daten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b86ba9a44efc4f0cf8dc9c23e0c0b5d833015bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233470"
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [arbeiten mit XML-Daten](https://docs.microsoft.com/visualstudio/xml-tools/working-with-xml-data).  
-  
   
 XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio eine große Rolle. Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.  
   

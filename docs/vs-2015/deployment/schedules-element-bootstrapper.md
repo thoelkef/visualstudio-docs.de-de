@@ -1,7 +1,7 @@
 ---
 title: '&lt;Zeitpläne&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250990"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Zeitpläne&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Zeitpläne&gt; -Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper).  
-  
 Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten, auf welche Befehle, die definiert, durch Definieren der `Command` Element ausgeführt werden soll.  
   
 ## <a name="syntax"></a>Syntax  
@@ -50,7 +48,7 @@ Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Schedules` Element ist ein untergeordnetes Element des der `Product` Element. Jede `Product` Element möglicherweise mindestens eine `Schedules` Element. Die `Schedules` Element besitzt keine Attribute.  
+ Die `Schedules` Element ist ein untergeordnetes Element des der `Product` Element. Jede `Product` Element möglicherweise mindestens eine `Schedules` Element. Das `Schedules` -Element weist keine Attribute auf.  
   
 ## <a name="schedule"></a>Zeitplan  
  Die `Schedule` Element ist ein untergeordnetes Element des der `Schedules` Element. Ein `Schedules` Element benötigen mindestens einen `Schedule` Element.  

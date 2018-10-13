@@ -1,7 +1,7 @@
 ---
 title: Willkommen bei Visual Studio 2015 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231232"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
   
  Laden Sie [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)finden Sie mehr Features.)  
   
- Legen Sie gleich los, erstellen Sie ein neues Projekt, und beginnen Sie mit dem Schreiben von Code. Wählen Sie den Typ der zu erstellenden App aus. Alternativ können Sie [Tour durch](./ide/visual-studio-ide.md) der Visual Studio-IDE mit den Tools vertraut machen.  
+ Legen Sie gleich los, erstellen Sie ein neues Projekt, und beginnen Sie mit dem Schreiben von Code. Wählen Sie den Typ der zu erstellenden App aus. Sie können auch eine [Tour](./ide/visual-studio-ide.md) durch die Visual Studio-IDE unternehmen, um sich mit den Tools vertraut zu machen.  
   
  Sehen Sie sich auch die [Codebeispiele](https://code.msdn.microsoft.com/) an, und suchen Sie nach Beispielen, die Ihnen beim schnelleren Schreiben der App helfen.  
   
@@ -57,15 +57,15 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
   
  Wählen Sie die benötigten Tools auf Grundlage Ihrer App-Anforderungen und der zu verwendenden Sprache aus.  
   
-1.  [Xamarin für Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): eine gemeinsame Codebasis in c# für alle Geräte  
+1.  [Xamarin für Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)– eine gemeinsame Codebasis in C# für alle Geräte  
   
-2.  [Apache Cordova mit Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript  
+2.  [Apache Cordova mit Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)– eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript  
   
 3.  [Visual Studio-Tools für Unity](./cross-platform/visual-studio-tools-for-unity.md): Entwicklung von 2D/3D-SPIELEN in c#  
   
-4.  [C++ für plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): freigegebene Codebibliotheken und apps in C++  
+4.  [C++ für plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)– freigegebene Codebibliotheken und Apps in C++  
   
-5.  [Visual Studio-Emulator für Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio-Emulator für Android: Debuggen und Testen Ihrer Android-apps unabhängig von der IDE  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)Visual Studio-Emulator für Android: Debuggen und Testen Ihrer Android-Apps, unabhängig von der IDE  
   
 ## <a name="connect-your-apps-to-services"></a>Verbinden der Apps mit Diensten  
  Sie können standardmäßig eine Verbindung mit folgenden Diensten herstellen (vorausgesetzt, Sie verfügen über ein Konto für den jeweiligen Dienst):  
@@ -82,7 +82,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 ## <a name="build-test-and-manage-your-code"></a>Erstellen, Testen und Verwalten von Code  
   
 ### <a name="check-in-your-code"></a>Einchecken von Code  
- Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Erfahren Sie mehr darüber, welches Versionskontrollsystem System für Ihre Anforderungen am besten geeignet ist: [verwenden der Versionskontrolle](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+ Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Informationen darüber, welches Versionskontrollsystem für Ihre Anforderungen am besten geeignet ist, finden Sie unter [Verwenden der Versionskontrolle](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 ### <a name="build-your-app"></a>Erstellen der App  
  Sie können Ihre [App lokal erstellen](./ide/compiling-and-building-in-visual-studio.md) und sicherstellen, dass sie ordnungsgemäß funktioniert. Dann verwenden Sie die [Debugtools](./debugger/debugging-in-visual-studio.md) , um Probleme mit der App zu beheben. Sie können auch Projekte auf freigegebenen Buildservern oder in der Cloud erstellen. Automatisieren Sie den Buildprozess, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen.  

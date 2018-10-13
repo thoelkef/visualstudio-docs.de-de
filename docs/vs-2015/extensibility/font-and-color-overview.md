@@ -1,7 +1,7 @@
 ---
 title: Schriftart und Farbe (Übersicht) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4321619f249a992d9cdd044f621a21d85a6c380
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9fdc81a3fddd4458a54d35c9e5a1b943726b101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245193"
 ---
 # <a name="font-and-color-overview"></a>Schriftart und Farbe (Übersicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schriftart und Farbe (Übersicht)](https://docs.microsoft.com/visualstudio/extensibility/font-and-color-overview).  
-  
 In diesem Thema wird erläutert, Text-Schriftart und Farbe Einstellungen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE). Es stellt auch die Konzepte der Kategorien "und" Elemente anzeigen, und es wird beschrieben, wie VSPackages und den Haupteditor von Text-Attribute.  
   
 ## <a name="the-fonts-and-colors-property-page"></a>Die Schriftarten und Farben-Eigenschaftenseite  

@@ -1,7 +1,7 @@
 ---
 title: JavaScript-Konsolenbefehle | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0bc4597c5be26e25f79edc0784bb1fddd9baa76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263418"
 ---
-# <a name="javascript-console-commands"></a>JavaScript-Konsolenbefehle
+# <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [JavaScript-Konsolenbefehle](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps finden Sie unter [Debuggen Ihrer Anwendung](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   
@@ -63,13 +61,13 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |`error(message)`|Sendet `message` an das Konsolenfenster. Der Meldungstext ist rot, und ein Fehlersymbol wird vorangestellt.<br /><br /> Objekte, die mit dem Befehl übergeben werden, werden in einen Zeichenfolgenwert konvertiert.|`console.error("error message");`|  
 |`group(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.<br /><br /> In einigen Szenarien, z. B. wenn ein Komponentenmodell verwendet wird, können die group*-Befehle die Ausgabenanzeige im Konsolenfenster vereinfachen.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
 |`groupCollapsed(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen, die mit `groupCollapsed` gesendet werden, werden standardmäßig in einer reduzierten Ansicht angezeigt. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.|Die Verwendung ist identisch mit dem `group` -Befehl.<br /><br /> Siehe Beispiel für den `group` -Befehl.|  
-|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
+|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
 |`info(message)`|Sendet `message` an das Konsolenfenster. Der Meldung wird ein Informationssymbol vorangestellt.|`console.info("info message");`<br /><br /> Weitere Beispiele finden Sie unter [Formatting console.log output](#ConsoleLog) weiter unten in diesem Thema.|  
 |`log(message)`|Sendet `message` an das Konsolenfenster.<br /><br /> Wenn Sie ein Objekt übergeben, sendet der Befehl dieses Objekt an das Konsolenfenster und zeigt es in einer Objektschnellansicht an. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`console.log("logging message");`|  
 |`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. Wird in Store-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|  
 |`profile(reportName)`|Wird in Web-Apps verwendet. Wird in Store-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|  
 |`profileEnd()`|Wird in Web-Apps verwendet. Wird in Store-Apps mit JavaScript nicht unterstützt.|Wird nicht unterstützt.|  
-|`select(element)`|Wählt das angegebene HTML- `element` in die [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Wählt das angegebene HTML- `element` im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md)aus.|console.select(element);|  
 |`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentierung von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Stoppt einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Siehe den Konsolenbefehl `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Sendet eine Stapelverfolgung an das Konsolenfenster. Die Ablaufverfolgung umfasst die vollständige Aufrufliste, z. B. Dateiname, Zeilennummer und Spaltennummer.|`console.trace();`|  
@@ -84,7 +82,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |`$(id)`|Gibt ein Element anhand der ID zurück. Dies ist ein Kurzbefehl für `document.getElementById(id)`, wobei `id` eine Zeichenfolge ist, die die Element-ID darstellt.|`$("contenthost")`|  
 |`$$(selector)`|Gibt ein Array von Elementen, die dem angegebenen Selektor entsprechen, mithilfe der CSS-Selektor-Syntax zurück. Dies ist ein Kurzbefehl für `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Ermöglicht es Ihnen, den Kontext für Ausdrucksauswertung vom Standardfenster der obersten Ebene der Seite in das Fenster des angegebenen Rahmens zu ändern. Ein Aufruf von `cd()` ohne Parameter gibt den Kontext zum Fenster der obersten Ebene zurück.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Wählt das angegebene Element im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Wählt das angegebene Element im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md)aus.|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Gibt eine Schnellansicht für das angegebene Objekt zurück. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Überprüfen des Vorhandenseins eines Konsolenbefehls  

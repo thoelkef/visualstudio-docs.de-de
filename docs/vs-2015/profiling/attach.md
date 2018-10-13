@@ -1,7 +1,7 @@
 ---
 title: Attach | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7724aa0691e26f35c429a46f570f3f80ed8dd06f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c102b00fa8ab66d5f86111a8749fcbbc23c75d6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251680"
 ---
 # <a name="attach"></a>Anfügen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anfügen](https://docs.microsoft.com/visualstudio/profiling/attach).  
-  
 Die VSPerfCmd.exe-Option **Attach** beginnt die Samplingprofilerstellung für den laufenden Prozess, der von der Prozess-ID (PID) angegeben wird.  
   
  Um **Attach** zu verwenden, müssen Sie die Methode **Sample** in der Option „Start“ angeben.  

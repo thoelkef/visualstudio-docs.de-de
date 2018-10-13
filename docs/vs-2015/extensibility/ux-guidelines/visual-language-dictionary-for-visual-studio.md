@@ -1,7 +1,7 @@
 ---
 title: Visuelles Sprachwörterbuch für Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267630"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visuelles Sprachwörterbuch für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Visual Sprachwörterbuch für Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der Konzepte, die die Bausteine von die ikonographie und andere Bilder sind. Wenn Sie neue Symbole zu entwerfen, verwenden Sie dieses Wörterbuch die Konzepte zu identifizieren, die Sie in Ihr eigenes Image übermitteln möchten.  
   
  **Allgemeine Richtlinien**  
@@ -297,7 +295,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Aufklappen**|![Klappen Sie Symbol](../../extensibility/ux-guidelines/media/vld-c-popout.png "VLD_C_PopOut")|![Im Symbol POP](../../extensibility/ux-guidelines/media/vld-c-popout-popin.png "VLD_C_PopOut_PopIn") Einklappen|  
 |**Potenz**|![Symbol "Power"](../../extensibility/ux-guidelines/media/vld-c-power.png "VLD_C_Power")|![Symbol für unterbrechungsfreie Supply](../../extensibility/ux-guidelines/media/vld-c-power-uninterruptiblepowersupply.png "VLD_C_Power_UninterruptiblePowerSupply") unterbrechungsfreie Stromversorgung|  
 |**Vorherige**|![Symbol "zurück"](../../extensibility/ux-guidelines/media/vld-c-previous.png "VLD_C_Previous")|![Symbol "Lesezeichen" vorherige](../../extensibility/ux-guidelines/media/vld-c-previous-previousbookmark.png "VLD_C_Previous_PreviousBookmark") Vorherige Textmarke ![Find Symbol "zurück"](../../extensibility/ux-guidelines/media/vld-c-previous-findprevious.png "VLD_C_Previous_FindPrevious") suchen Vorherige|  
-|**Drucken**|![Drucken-Symbol](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Direkte Drucksymbol](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") drucken Direct ![Symbol für Drucken-Dialogfeld](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") Druckdialogfelds ![drucken Symbol für Steuerelement Dokument](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") Dokumentsteuerelement drucken|  
+|**Print**|![Drucken-Symbol](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Direkte Drucksymbol](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") drucken Direct ![Symbol für Drucken-Dialogfeld](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") Druckdialogfelds ![drucken Symbol für Steuerelement Dokument](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") Dokumentsteuerelement drucken|  
 |**Prozedur** Interactive-Fenster|![Symbol "Prozedur"](../../extensibility/ux-guidelines/media/vld-c-procedure.png "VLD_C_Procedure")|![Symbol für Python interactive-Fenster](../../extensibility/ux-guidelines/media/vld-c-procedure-pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow") Interaktives Python-Fenster ![Prozedur-Warnsymbol](../../extensibility/ux-guidelines/media/vld-c-procedure-procedurewarning.png "VLD_C_Procedure_ ProcedureWarning") Prozedur Warnung ![Symbol "gespeicherte Prozedur"](../../extensibility/ux-guidelines/media/vld-c-procedure-storedprocedure.png "VLD_C_Procedure_StoredProcedure") gespeicherten Prozedur|  
 |**Eigenschaft** Einstellungen, Konfigurationen|![Symbol "Eigenschaft"](../../extensibility/ux-guidelines/media/vld-c-property.png "VLD_C_Property")|![Symbol zum Hinzufügen von Eigenschaft](../../extensibility/ux-guidelines/media/vld-c-property-addproperty.png "VLD_C_Property_AddProperty") Eigenschaft hinzufügen ![erweiterte Eigenschaft Warnsymbol](../../extensibility/ux-guidelines/media/vld-c-property-extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning") Erweiterte Eigenschaft – Warnung ![Symbol "neue Eigenschaft"](../../extensibility/ux-guidelines/media/vld-c-property-newproperty.png "VLD_C_Property_NewProperty") neue Eigenschaft|  
   

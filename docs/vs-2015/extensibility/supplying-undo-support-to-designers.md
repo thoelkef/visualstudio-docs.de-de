@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Rückgängig-Unterstützung für Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267357"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Bereitstellen von Rückgängig-Unterstützung für Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Angabe Rückgängig: Unterstützung für Designer](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers).  
-  
 Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unterstützen müssen, damit Benutzer ihren letzten Änderungen umgekehrt werden können, wenn Sie ein Codeelement zu ändern.  
   
  Den meisten Designern in Visual Studio implementiert haben, Rückgängig-Unterstützung, die automatisch von der Umgebung bereitgestellt wird.  
@@ -87,7 +85,7 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
 -   Dies <xref:System.IServiceProvider> Klasse muss die folgenden Dienste bereitstellen:  
   
-    -   <xref:System.ComponentModel.Design.IDesignerHost>  
+    -   <xref:System.ComponentModel.Design.IDesignerHost>.  
   
     -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   

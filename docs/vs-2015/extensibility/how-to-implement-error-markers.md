@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Implementieren von Fehlermarker | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b09696cb8419fe763e62047ff179cb6f6338f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242956"
 ---
 # <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehlermarker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Implementieren von Fehlermarker](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-error-markers).  
-  
 Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-Editor Anpassungen implementieren. Die Vorteile, die sie für Benutzer Ihres VSPackage erhalten, können jedoch weit zunichte machen die Kosten für die sie angeben. Fehlermarker markieren etwas Text, der Ihre Sprachenparser mit eine Wellenlinie oder wellenförmige rote Linie falsch erachtet. Dieser Indikator kann Programmierer, indem Sie visuelle Anzeige von falschen Code.  
   
  Verwenden Sie Textmarkierungen, um die roten wellenförmigen unterstreichungen zu implementieren. Als Faustregel gilt hinzufügen Sprachdienste rote wellenförmige unterstreichungen auf den Textpuffer als bestanden Hintergrund zur Zeit im Leerlauf oder in einem Hintergrundthread.  

@@ -1,7 +1,7 @@
 ---
 title: Parameterknoten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276289"
 ---
 # <a name="parameter-nodes"></a>Parameterknoten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Parameterknoten](https://docs.microsoft.com/visualstudio/designers/parameter-nodes).  
-  
 Im Shader-Designer stellen die Parameterknoten Eingaben für den Shader dar, die unter der Kontrolle der Anwendung auf einer pro-Zeichnen Grundlage sind, z.B. Materialeigenschaften, direktionale Beleuchtung, Kameraposition und Zeit. Da Sie diese Parameter mit jedem Zeichenaufruf ändern können, können Sie den gleichen Shader verwenden, um einem Objekt eine andere Darstellung zu geben.  
   
 ## <a name="parameter-node-reference"></a>Parameterknotenverweis  

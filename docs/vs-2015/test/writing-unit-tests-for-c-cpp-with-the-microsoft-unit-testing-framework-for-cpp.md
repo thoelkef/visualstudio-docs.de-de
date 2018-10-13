@@ -1,7 +1,7 @@
 ---
 title: Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententest-Framework für C++ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250535"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententestframework für C++](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).  
-  
 In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht verwalteten Code erstellen. Nicht verwalteter Code wird gelegentlich als „systemeigener Code“ bezeichnet.  
   
  Das folgende Verfahren enthält wichtige Informationen, die Ihnen den Einstieg erleichtern. Die späteren Abschnitte enthalten eine exemplarische Vorgehensweise, in der die ersten Schritte ausführlicher beschrieben werden.  

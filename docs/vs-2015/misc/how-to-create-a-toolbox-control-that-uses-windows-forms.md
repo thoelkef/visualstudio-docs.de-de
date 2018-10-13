@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: erstellen ein Toolbox-Steuerelements, das Windows Forms verwendet | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: f052c881bc9ca7180d5d9132b1acd4377bf5f6da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263717"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Gewusst wie: Erstellen eines Toolbox-Steuerelements, das Windows Forms verwendet
-Die Toolbox-Steuerelement von Windows Forms-Vorlage, die in enthalten ist das [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] können Sie die Windows Forms-Steuerelemente zu erstellen, die automatisch hinzugefügt werden, die **Toolbox** beim Installieren der Erweiterung. Dieses Thema veranschaulicht, wie Sie die Vorlage verwenden, um ein **Toolbox** -Steuerelement zu erstellen, das Sie an andere Benutzer verteilen können.  
+Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] enthalten ist, können Sie die Windows Forms-Steuerelemente erstellen, die beim Installieren der Extension automatisch zur **Toolbox** hinzugefügt werden. Dieses Thema veranschaulicht, wie Sie die Vorlage verwenden, um ein **Toolbox** -Steuerelement zu erstellen, das Sie an andere Benutzer verteilen können.  
   
 > [!NOTE]
 >  Informationen zum Herunterladen des Visual Studio SDK finden Sie im [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?linkid=121964) auf der MSDN-Website.  

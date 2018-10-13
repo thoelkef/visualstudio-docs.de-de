@@ -1,7 +1,7 @@
 ---
 title: Codegenerierung und T4-Textvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229819"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Codegenerierung und T4-Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
-In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], *T4-Textvorlage* ist eine Mischung von Textblöcken und steuernder Logik, eine Textdatei generiert werden kann. Die steuernde Logik wird als programmcodefragmente in geschrieben [!INCLUDE[csprcs](../includes/csprcs-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art enthalten, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache.  
+In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]besteht eine *T4-Textvorlage* aus einer Mischung von Textblöcken und steuernder Logik, über die eine Textdatei generiert werden kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../includes/csprcs-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art enthalten, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache.  
   
  Es gibt zwei Arten von T4-Textvorlagen:  
   
@@ -58,14 +56,14 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- Die Anwendung kann auf einem Computer, die nicht ausgeführt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert.  
+ Ihre Anwendung kann auf einem Computer ausgeführt werden, auf dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht installiert ist.  
   
  Um eine Laufzeitvorlage zu erstellen, fügen Sie Ihrem Projekt eine **Vorverarbeitete Textvorlage** -Datei hinzu. Alternativ können Sie eine Nur-Text-Datei hinzufügen und deren Eigenschaft **Benutzerdefiniertes Tool** auf **TextTemplatingFilePreprocessor**festlegen.  
   
  Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
- **Während der Entwurfszeit T4-Textvorlagen** ausgeführt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Teil des Quellcodes sowie andere Ressourcen Ihrer Anwendung zu definieren.  
- Üblicherweise verwenden Sie mehrere Vorlagen, über die die Daten aus einer einzelnen Eingabedatei oder Datenbank gelesen und einige Ihrer `.cs`-, `.vb`- oder sonstigen Quelldateien generiert werden. Aus jeder Vorlage wird eine Datei generiert. Sie werden ausgeführt, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ **T4-Entwurfszeit-Textvorlagen** werden in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausgeführt, um einen Teil des Quellcodes sowie andere Ressourcen Ihrer Anwendung zu definieren.  
+ Üblicherweise verwenden Sie mehrere Vorlagen, über die die Daten aus einer einzelnen Eingabedatei oder Datenbank gelesen und einige Ihrer `.cs`-, `.vb`- oder sonstigen Quelldateien generiert werden. Aus jeder Vorlage wird eine Datei generiert. Jede dieser Dateien wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]ausgeführt.  
   
  Ihre Eingabedaten könnten beispielsweise Konfigurationsdaten in einer XML-Datei sein. Immer dann, wenn Sie die XML-Datei während der Entwicklung bearbeitet haben, würden mit den Textvorlagen Teile des Anwendungscodes neu generiert. Eine der Vorlagen könnte so wie im folgenden Beispiel aussehen:  
   
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  Die Generierung von Code und anderen Ressourcen aus einem Modell ermöglicht es Ihnen, Ihre Anwendung durch Aktualisieren des Modells zu aktualisieren.  
   
  [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md)  
- Wenn Sie installiert haben [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs- und Modellierungs-SDK können Sie sicherstellen, die generierte Software stets aktuell bleibt mit Änderungen im Modell.  
+ Wenn Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK installiert haben, können Sie sicherstellen, dass die generierte Software stets aktuell bleibt, wenn das Modell geändert wird.  
   
  [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)  
  Die Syntax einer Textvorlagendatei.  

@@ -1,7 +1,7 @@
 ---
 title: Tipps und Tricks zu Barrierefreiheit | Microsoft Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241019"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Barrierefreiheit Tipps und Tricks](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Barrierefreiheit sowie nützliche Tastenkombinationen.  
   
@@ -51,10 +49,10 @@ Die neueste Version dieses Themas finden Sie unter [Barrierefreiheit Tipps und T
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Ausgeblendete Visual Studio-Tastenkombinationen  
  Für einige Features stehen Tastenkombinationen zur Verfügung, die nicht im Bereich „Umgebung/Tastatur“ des Dialogfelds „Optionen“ aufgeführt sind. Zu diesen Tastenkombinationen gehören:  
   
-|Funktion|Beschreibung|Tastenkombination|  
+|Feature|Beschreibung|Tastenkombination|  
 |-------------|-----------------|---------------------|  
 |Fenster "Toolbox"|Zwischen Toolboxregisterkarten wechseln|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|  
-|Fenster "Toolbox"|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|  
+|Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|  
 |Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**RÜCKTASTE**|  
 |Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT** + **ALT**|  
 |IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **TAB** **Hinweis:** Drücken Sie **STRG** + **TAB** erneut, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Workflow-Windows (Legacy) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: bd54e54965a6a6b936b24e1ca13151e3754d9390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273168"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio-Workflowfenster (Vorgängerversion)
 Die von [!INCLUDE[wfd2](../includes/wfd2-md.md)] bereitgestellte Vorgängerversion von [!INCLUDE[vs2010](../includes/vs2010-md.md)] kann verwendet werden, um auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzuzielen. Der Legacydesigner ist ein visueller Designer, mit dem Sie einen Workflow erstellen können. Sie können Aktivitäten über Ziehen die **Toolbox** auf die Entwurfsoberfläche, und diese dann dort konfigurieren. Als [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor-Fenster nimmt dieses den Bereich des Hauptfensters ein, der von anderen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Editor-Fenstern verwendet wird. Der Name des Workflows wird in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenstertitelleiste angezeigt.  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;Zusammenfassung&gt; (JavaScript) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6b4808112e746e30f0e40d4626f546c3f99b193
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8ee08ed1e2a5feb1f5a87f7d6337a4b5f1e47a22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252407"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;Zusammenfassung&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dokumentation zu Visual Studio 2017](/visualstudio/).  
-  
 Gibt die Beschreibung für eine Funktion oder Methode an.  
   
 ## <a name="syntax"></a>Syntax  

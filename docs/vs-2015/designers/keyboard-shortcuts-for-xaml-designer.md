@@ -1,7 +1,7 @@
 ---
 title: Tastenkombinationen für XAML-Designer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd5fb40534c2c1f55ae5f18c63fcf0ec7ab6b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271400"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Tastenkombinationen für XAML-Designer](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-for-xaml-designer).  
-  
 Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird.  
   
 ## <a name="element-shortcuts"></a>Tastenkombinationen für Elemente  

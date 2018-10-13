@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von UML-Modellen und-Diagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0620f0a1212d7abd864a9428492d95067098ef16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245818"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Bearbeiten von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](https://docs.microsoft.com/visualstudio/modeling/edit-uml-models-and-diagrams).  
-  
 Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen bereitgestellten Ansichten erstellen und bearbeiten. Durch Bereitstellen von unterschiedlichen Perspektiven auf Ihrem System helfen Ihnen diese Diagramme dabei, verschiedene Aspekte des Degins und Anforderungen zu verstehen. Visual Studio stellt Vorlagen für fünf der am häufigsten verwendeten UML-Diagrammtypen bereit:  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

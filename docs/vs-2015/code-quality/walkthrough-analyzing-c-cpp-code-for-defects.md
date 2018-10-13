@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Analysieren von C / C++-Code auf Fehler | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c944a50330f458240b3da2fea8952abb5b8f02b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5c2f6bfeabb80c03b1940ada2f57abbefb60173
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272643"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-c-cpp-code-for-defects).  
-  
 In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Fehler zu analysieren, indem Sie mit dem Code Analysis-Tool für C/C++-Code veranschaulicht.  
   
  In dieser exemplarischen Vorgehensweise Schritt für Schritt durch den Prozess mit der Codeanalyse von C/C++-Code potenzielle Fehler zu analysieren.  
@@ -45,7 +43,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
   
 -   Kommentieren Sie Quellcode, um Fehler der Codeanalyse zu verbessern.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
 -   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
