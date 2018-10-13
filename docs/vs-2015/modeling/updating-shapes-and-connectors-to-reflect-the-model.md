@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren von Formen und Konnektoren zur Darstellung des Modells | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 99539a417ea61073cb4826d6a1e94e96564a108f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192451"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](https://docs.microsoft.com/visualstudio/modeling/updating-shapes-and-connectors-to-reflect-the-model).  
-  
 In einer domänenspezifischen Sprache im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Sie können die Darstellung einer Form, die den Zustand der zugrunde liegenden Modell widerspiegeln vornehmen.  
   
  Die Codebeispiele in diesem Thema hinzugefügt werden sollen eine `.cs` Datei Ihre `Dsl` Projekt. Sie benötigen diese Anweisungen in jeder Datei ein:  

@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Firewall und ohne Authentifizierung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca0d4421cb8b8b5e720ca079547f13ec75e3705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8907dac5310e2f70ff5a7053cc564e72b0b2cd98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186042"
 ---
 # <a name="error-firewall-no-authentication"></a>Fehler: Firewall und "Keine Authentifizierung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: Firewall keine Authentifizierung](https://docs.microsoft.com/visualstudio/debugger/error-firewall-no-authentication).  
-  
 Die Internetverbindungsfirewall auf dem Remotecomputer wurde nicht für das Remotedebuggen eingerichtet. Für das Remotedebuggen mit `No Authentication` muss der Ausnahmenliste die Datei msvsmon.exe hinzugefügt werden. Es ist möglicherweise auch erforderlich, einige IPSEC-Anschlüsse zu öffnen.  
   
 > [!NOTE]

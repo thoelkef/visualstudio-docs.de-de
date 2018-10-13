@@ -1,7 +1,7 @@
 ---
 title: Debugger – Grundlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69197e3eca71398872343eff3e5d36e9649ead6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c54038d662acb772e5437cdc6ab9443634d33b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208168"
 ---
 # <a name="debugger-basics"></a>Debugger – Grundlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Debugger – Grundlagen](https://docs.microsoft.com/visualstudio/debugger/debugger-basics). 
-
 Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Logikfehler lokalisieren. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mit dem Debugger können Sie die Ausführung unterbrechen, um den Code schrittweise durchzugehen und Variablen in Ihrer Anwendung auszuwerten.
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

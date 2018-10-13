@@ -1,7 +1,7 @@
 ---
 title: Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert. | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cabac4997480b626714c129daef0511643ae2a50
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215799"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [beim Kontaktieren des Remotecomputers ein DCOM-Fehler aufgetreten. Zugriff wird verweigert. ](https://docs.microsoft.com/visualstudio/debugger/a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied).  
-  
 Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und dem Remotecomputer, wenn eine der folgenden Situationen vorliegt:  
   
 -   Der Debugger ist auf **Systemeigenen Kompatibilitätsmodus verwenden** festgelegt, oder auf der Seite **Extras / Optionen / Debugging** ist **Verwalteter Kompatibilitätsmodus** aktiviert.  
@@ -60,7 +58,7 @@ Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und d
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

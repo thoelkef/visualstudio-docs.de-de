@@ -1,7 +1,7 @@
 ---
 title: Laufzeit-Textgenerierung mithilfe von T4-Textvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214746"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Sie können Zeichenfolgen, die in Ihrer Anwendung zur Laufzeit generieren, mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Laufzeit-Textvorlagen. Der Computer, auf dem die Anwendung ausgeführt, wird keine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Runtime-Vorlagen werden manchmal als "vorverarbeitete Textvorlagen" bezeichnet, weil zum Zeitpunkt der Kompilierung die Vorlage Code generiert, die zur Laufzeit ausgeführt wird.  
   
  Jede Vorlage ist eine Mischung des Texts, wie er in das generierte Zeichenfolge, und die Fragmente des Programmcodes angezeigt wird. Die Programmfragmente Geben Sie Werte für die Variablen Teile der Zeichenfolge ein, und auch steuern, bedingte und wiederholte Teile.  

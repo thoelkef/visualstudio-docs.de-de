@@ -1,7 +1,7 @@
 ---
 title: Von der IDE implementierte Rückruffunktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2293640ebb0cc788d104f02f790c32bb47ced6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84533d95eb6bc0f6433d0b021d429c13e504c13d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212783"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Von der IDE implementierte Rückruffunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Rückruf Funktionen implementiert, von der IDE](https://docs.microsoft.com/visualstudio/extensibility/callback-functions-implemented-by-the-ide).  
-  
 Um die Integration in die integrierte Entwicklungsumgebung (IDE) als nahtlos wie möglich und eine einheitliche benutzererfahrung, das Quellcodeverwaltungs-Plug-in Rückruffunktionen können, die von der IDE implementiert werden. Das plug-in kann diese Funktionen zu geeigneten Zeitpunkten während einen Quellcodeverwaltungsvorgang Weiterleiten von Informationen an die IDE aufrufen. die IDE kann dann diese Informationen als eingebettete Elemente in der systemeigenen Benutzeroberfläche angezeigt. Der Benutzer hat eine weniger fragmenthaften Erfahrung in diesem Szenario als, wenn das plug-in eine eigene Benutzeroberfläche verwendet.  
   
  Die erforderlichen Header-Datei ist scc.h. Der Standardspeicherort ist \Program Files\VSIP 8.0\EnvSDK\common\inc\\. Es ist auch in der VSIP-Ordner mit dem Datenquellen-Steuerelement-Plug-in Beispiel am \Program Files\VSIP 8.0\MSSCCI\\.  

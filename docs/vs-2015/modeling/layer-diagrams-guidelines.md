@@ -1,7 +1,7 @@
 ---
 title: 'Ebenendiagramme: Richtlinien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202578"
 ---
 # <a name="layer-diagrams-guidelines"></a>Ebenendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Abhängigkeitsdiagramme: Richtlinien](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebenendiagramme* in Visual Studio. Stellen Sie sicher, dass Code und Entwurf konsistent bleiben, indem Sie den Code mit einem Ebenendiagramm validieren. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -162,7 +160,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 > [!NOTE]
 >  Beim Entwickeln oder Umgestalten des Codes müssen Sie möglicherweise neue Artefakte mit dem Ebenendiagramm verknüpfen. Dies ist jedoch möglicherweise nicht erforderlich, wenn Ebenen z. B. vorhandene Namespaces darstellen und diesen Namespaces mit dem neuen Code lediglich weitere Elemente hinzugefügt werden.  
   
- Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../includes/esprfound-md.md)] eine Arbeitsaufgabe zu protokollieren. Um diese Aufgabe ausführen zu können, finden Sie unter [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md).  
+ Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../includes/esprfound-md.md)] ein Arbeitselement zu protokollieren. Um diese Aufgabe ausführen zu können, finden Sie unter [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md).  
   
 ##  <a name="BuildValidation"></a> Schließen Sie ebenenvalidierung im Buildprozess  
  Schließen Sie Ebenenvalidierung in den standardmäßigen Buildprozess der Projektmappe ein, um sicherzustellen, dass zukünftige Änderungen im Code den Ebenendiagrammen entsprechen. Jedes Mal, wenn andere Teammitglieder die Projektmappe erstellen, werden Unterschiede zwischen den Abhängigkeiten im Code und dem Ebenendiagramm als Buildfehler gemeldet. Weitere Informationen zum Einschließen von ebenenvalidierung im Buildprozess finden Sie unter [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md).  

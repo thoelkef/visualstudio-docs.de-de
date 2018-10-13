@@ -1,7 +1,7 @@
 ---
 title: Programmieren mit der UML-API | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,19 +15,17 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aff07c444b6dac85144b06c0430ad1d9a2a497c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7e7fe3a58b1e21b116b3afcfff022cf19ba9af1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206297"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmieren mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Programmieren mit der UML-API](https://docs.microsoft.com/visualstudio/modeling/programming-with-the-uml-api).  
-  
-Die UML-API von Visual Studio können Sie das Schreiben von Code zum Erstellen, lesen und Aktualisieren von UML-Modellen und Diagrammen. Welche Versionen von Visual Studio UML-Modelle unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Die UML-API von Visual Studio können Sie das Schreiben von Code zum Erstellen, lesen und Aktualisieren von UML-Modellen und Diagrammen. Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  In den folgenden Themen werden die API und die API-Referenzseiten beschrieben.  
   

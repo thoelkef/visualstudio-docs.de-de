@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Registrieren Sie die Editor-Dateitypen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198314"
 ---
 # <a name="how-to-register-editor-file-types"></a>Vorgehensweise: Registrieren Sie die Editor-Dateitypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Registrieren von Editor-Dateitypen](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den Registrierung-Attributen, die als Teil der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], Sie können auch eine Registrierungsdatei, der den Editor und den verbundenen nebenanschlüssen registriert schreiben.  
   
 ## <a name="registration-using-mpf-classes"></a>Registrierung mithilfe von MPF-Klassen  
@@ -50,7 +48,7 @@ Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den 
   
      `NameResourceID` in der Datei Resources.h der BasicEditorUI-Projekts definiert ist, und gibt den Editor als "Meine-Editor".  
   
-2.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode.  
+2.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode.  
   
      In der Implementierung von der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode, rufen die <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> Methode und übergeben Sie die Instanz Ihrer Editor-Factory, wie unten veranschaulicht.  
   

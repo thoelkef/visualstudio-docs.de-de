@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2d55dde85bd5a1b18d4424515ef58e7c4c3273f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212341"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schnellstart: testgesteuerte Entwicklung mit dem Test-Explorer](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer).  
-  
 Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen Schritten der inkrementellen Entwicklung ordnungsgemäß funktioniert. Es gibt mehrere Frameworks, die Sie nutzen können, um Komponententests zu schreiben, darunter auch einige von Drittanbietern. Einige Testframeworks wurden speziell zum Testen in verschiedenen Sprachen oder Plattformen entwickelt. Der Test-Explorer stellt eine zentrale Oberfläche für Komponententests in einem dieser Frameworks bereit. Für die am häufigsten verwendeten Frameworks sind Adapter verfügbar. Sie können auch eigene Adapter für andere Frameworks schreiben.  
   
  Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:  

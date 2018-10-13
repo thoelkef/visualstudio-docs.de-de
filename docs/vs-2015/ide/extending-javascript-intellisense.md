@@ -1,7 +1,7 @@
 ---
 title: Erweitern von JavaScript IntelliSense | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214252"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Dokumentation zu Visual Studio 2017](/visualstudio/).  
-  
 Die JavaScript-IntelliSense-Erweiterbarkeit-Funktion können Sie zum Anpassen des IntelliSense-Ergebnisse in der JavaScript-Editor für Drittanbieter-Bibliotheken. Dies kann Entwickler die benutzerfreundlichkeit verbessern, die diese Bibliotheken verwenden.  
   
  JavaScript Language Service bietet IntelliSense-Funktionen für JavaScript-Bibliotheken von Drittanbietern, die zu einem Projekt hinzugefügt werden. Für die meisten Bibliotheken verwenden wird die Anweisungsvervollständigung automatisch vom Sprachdienst bereitgestellt. Die folgende Abbildung zeigt ein Beispiel für Anweisungsvervollständigung:  

@@ -1,7 +1,7 @@
 ---
 title: Befehl „In Dateien ersetzen“ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8df474b7ca65983d7bf7203e2d3e2146fbede6f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eba6dfcf95c006fb05d4faaa0c370c9dba56e4e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197664"
 ---
 # <a name="replace-in-files-command"></a>Befehl "In Dateien ersetzen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ersetzen In Dateien Befehl](https://docs.microsoft.com/visualstudio/ide/reference/replace-in-files-command).  
-  
   
 Ersetzt Text in Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** verfügbar sind.  
   
@@ -107,7 +105,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

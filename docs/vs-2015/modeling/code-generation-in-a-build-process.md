@@ -1,7 +1,7 @@
 ---
 title: Codegenerierung in einem Buildprozess | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208649"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Codegenerierung in einem Buildprozess](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process).
-
 TextTransformation kann als Teil des Buildprozesses des Visual Studio-Projektmappe aufgerufen werden. Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
 
 Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projektmappe in Visual Studio erstellen, eine Textvorlage kann zugreifen, die Visual Studio-API (EnvDTE) Wenn die [Hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Dies gilt jedoch nicht, wenn Sie die Projektmappe aus der Befehlszeile erstellen oder wenn Sie einen Serverbuild mit Visual Studio starten. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet.
@@ -232,7 +229,7 @@ Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. Buil
 </ItemGroup>
 ```
 
-Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
+Legen Sie in einer Textvorlage `hostspecific` in der template-Anweisung fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
 
 ```
 <#@template language="c#" hostspecific="true"#>
