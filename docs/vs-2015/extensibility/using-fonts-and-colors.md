@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Schriftarten und Farben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6db4f030a3367a5fd2fb449b3515643fe6cd6033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6ed3c7a67ca8463c2afef38fc39e28e3d81fd58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245972"
 ---
 # <a name="using-fonts-and-colors"></a>Verwenden von Schriftarten und Farben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Schriftarten und Farben](https://docs.microsoft.com/visualstudio/extensibility/using-fonts-and-colors).  
-  
 Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet Unterstützung für die Verwendung von Schriftarten und Farben zum Anzeigen von Text.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -81,5 +79,5 @@ Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet Unterstützung für di
  Descries wie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor verwendet Sprachdienste zum Implementieren von Syntaxfarben.  
   
  [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Erläutert, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zum Erstellen von UI-Elemente, die den Rest der entsprechen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Erläutert, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zum Erstellen von Benutzeroberflächenelementen verwendet werden, die zu den übrigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Komponenten passen.
 

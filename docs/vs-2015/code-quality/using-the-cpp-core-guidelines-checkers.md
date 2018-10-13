@@ -1,7 +1,7 @@
 ---
 title: Verwenden den C++ Core Guidelines-Überprüfungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194089"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden den C++ Core Guidelines-Überprüfungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [mithilfe der C++ Core Guidelines-Überprüfungen](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).  
-  
 Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und bewährten Methoden zum Schreiben von Code in C++, die von Experten für C++ und Designern erstellt.  Visual Studio unterstützt jetzt die Add-in-Pakete, die zusätzliche Regeln für den Code Analysetools erstellen, überprüfen Sie Ihren Code für die Kompatibilität mit den C++ Core Guidelines und Verbesserungen vorschlagen.  
   
 ## <a name="the-c-core-guidelines-project"></a>Projizieren den C++ Core Guidelines  

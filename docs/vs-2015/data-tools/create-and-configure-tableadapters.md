@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Konfigurieren eines TableAdapters | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199250"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erstellen und Konfigurieren eines TableAdapters](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters).  
-  
   
 TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Datenbank. Sie verbinden, in der Datenbank, die Abfragen ausführen oder die gespeicherten Prozeduren und entweder einen neuen Daten zurückgeben Tabellen- oder geben Sie eine vorhandene <xref:System.Data.DataTable> mit den zurückgegebenen Daten. TableAdapter-Steuerelemente können auch aktualisierte Daten aus Ihrer Anwendung an die Datenbank senden.  
   

@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen eines benutzerdefinierten Eigenschaftenfensters | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 88ba48a4cf04d0ad5efb59939c57f021926dfd2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186276"
 ---
 # <a name="providing-a-custom-properties-window"></a>Bereitstellen eines benutzerdefinierten Eigenschaftenfensters
 Es ist möglich, geben Sie Ihre eigenen **Eigenschaften** Fenster für eine bestimmte Projektsystem, anstatt zu erweitern die **Eigenschaften** Fenster durch die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE). Die häufigsten auftretenden Szenario ist selbst implementieren, dass das Objekt im Fensterrahmen positioniert.  

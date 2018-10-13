@@ -1,7 +1,7 @@
 ---
 title: Anzeigen von Typen und Beziehungen (Klassen-Designer) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240759"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Anzeigen von Typen und Beziehungen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von Typen und Beziehungen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 Klassen-Designer informiert Sie mithilfe von Klassendiagrammen über Typdetails wie etwa zugehörige Member und deren Beziehungen zueinander. Die Visualisierung dieser Entitäten stellt eine dynamische Codeansicht dar. Dies bedeutet, dass Sie Typen in Klassen-Designer bearbeiten können und sich diese Änderungen im Quellcode der Entität anzeigen lassen können. Analog dazu wird das Klassendiagramm mit Änderungen synchronisiert, die Sie an Entitäten im Code vornehmen.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen eines Toolfensters | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d484dc6c7d66284034d29162b19ab45a16fd23f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd8c6efd96d8b70f2f23f526041f2f83867bbd2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245426"
 ---
 # <a name="adding-a-tool-window"></a>Hinzufügen eines Toolfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen eines Toolfensters](https://docs.microsoft.com/visualstudio/extensibility/adding-a-tool-window).  
-  
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie zum Erstellen eines Toolfensters und integrieren in Visual Studio auf folgende Weise:  
   
 -   Fügen Sie ein Steuerelement, um das Fenster.  
@@ -40,7 +38,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie zum Erstellen eines To
   
 -   Legen Sie die Standardposition für das Toolfenster an.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-tool-window"></a>Erstellen eines Toolfensters  

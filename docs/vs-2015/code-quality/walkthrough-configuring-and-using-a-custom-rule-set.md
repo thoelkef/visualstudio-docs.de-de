@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Konfigurieren und verwenden einen benutzerdefinierten Regelsatz | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221636"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Konfigurieren und verwenden einen benutzerdefinierten Regelsatz](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools verwenden, die einen angepassten konfiguriert wurden *Regelsatz* auf eine Klassenbibliothek. Sie können einen Regelsatz auswählen, der bezieht sich auf den Projekttyp, den Sie für Ihre Lösung angegeben haben, oder Sie können auswählen, dass alternative von Regelsätzen zum Erfüllen der benötigen z.B. die Überprüfung von legacy-Code für Probleme, die in eine nicht unterbrechende Weise behoben werden können. In beiden Fällen können die Regelsätze auch angepasst werden, um sie optimieren, die Anforderungen Ihres Projekts.  
   
  In dieser exemplarischen Vorgehensweise werden Sie diese Prozesse durchlaufen:  
@@ -45,7 +43,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 -   Führen Sie der Codeanalyse aus aus, und sehen Sie, wie den Regelsatz Anpassung Verhalten funktioniert.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
 -   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   

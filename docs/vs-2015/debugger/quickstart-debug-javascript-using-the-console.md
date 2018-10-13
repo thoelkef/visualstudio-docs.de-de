@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Debuggen von JavaScript mithilfe der Konsole | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205516"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Schnellstart: Debuggen von JavaScript mit der Konsole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schnellstart: Debuggen von JavaScript mithilfe der Konsole](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console).  
-  
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
- Sie können das JavaScript-Konsolenfenster zur Interaktion und zum Debuggen von Store-Apps verwenden, die mit JavaScript erstellt wurden. Diese Features werden unterstützt, für die [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps, Windows Phone Store-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Sie können das JavaScript-Konsolenfenster zur Interaktion und zum Debuggen von Store-Apps verwenden, die mit JavaScript erstellt wurden. Diese Features werden für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps, Windows Phone Store-Apps und Apps unterstützt, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  Im JavaScript-Konsolenfenster können Sie:  
   
@@ -168,15 +166,15 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Die App wird ausgeführt, aber es fehlen Bilder. APPHOST-Fehler im JavaScript-Konsolenfenster geben an, dass Bilder fehlen.  
   
-9. Mit der `FlipView` -app im Simulator oder Windows Phone-Emulator, Typ `Data.items` in der Eingabeaufforderung des Konsolenfensters (neben der ">>" Symbol), und drücken Sie die EINGABETASTE.  
+9. Geben Sie bei laufender `FlipView`-App im Simulator oder Phone-Emulator die Zeichenfolge `Data.items` an der Eingabeaufforderung des Konsolenfensters (neben dem Symbol ">>") ein, und drücken Sie die EINGABETASTE.  
   
-     Im Konsolenfenster wird eine Schnellansicht für das `items` -Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
+     Im Konsolenfenster wird eine Schnellansicht für das `items`-Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
   
      ![JavaScript-Konsolenfenster](../debugger/media/js-console-window.png "JS_Console_Window")  
   
      Außerdem gibt es viel mehr Elemente im Objekt `items._data` als erwartet.  
   
-10. Geben Sie an der Eingabeaufforderung `Data.items.push` ein, und drücken Sie die EINGABETASTE. Im Konsolenfenster wird eine Schnellansicht für die `push`-Funktion angezeigt, die in einer [!INCLUDE[winjs_long](../includes/winjs-long-md.md)]-Projektdatei implementiert ist. In diesem App-Code verwenden wir `push` , um die richtigen Elemente hinzuzufügen. Mit einer Prüfung mithilfe von IntelliSense lässt sich erkennen, dass zum Ersetzen der Standardbilder `setAt` verwendet werden sollte.  
+10. Geben Sie an der Eingabeaufforderung `Data.items.push` ein, und drücken Sie die EINGABETASTE. Im Konsolenfenster wird eine Schnellansicht für die `push` -Funktion angezeigt, die in einer [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] -Projektdatei implementiert ist. In diesem App-Code verwenden wir `push` , um die richtigen Elemente hinzuzufügen. Mit einer Prüfung mithilfe von IntelliSense lässt sich erkennen, dass zum Ersetzen der Standardbilder `setAt` verwendet werden sollte.  
   
 11. Um dieses Problem interaktiv und ohne Anhalten der Debugsitzung zu korrigieren, öffnen Sie "default.js", und wählen Sie diesen Code aus der `updateImages` -Funktion aus:  
   
@@ -280,11 +278,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 -   Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)] ausgeführt  
   
--   Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)] ausgeführt  
+-   Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)]ausgeführt  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   

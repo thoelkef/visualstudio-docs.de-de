@@ -1,7 +1,7 @@
 ---
 title: Auswählen einer Strategie für die ClickOnce-Aktualisierung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a4db43fd289aab969ec2d4c4031cdfbe1a3a18ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191346"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Auswählen einer Strategie für die ClickOnce-Aktualisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-update-strategy).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kann automatische Anwendungsupdates bereitstellen. Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung liest in regelmäßigen Abständen die Bereitstellungsmanifestdatei, um festzustellen, ob Updates für die Anwendung verfügbar sind. Falls verfügbar, wird die neue Version der Anwendung heruntergeladen und ausgeführt. Aus Leistungsgründen werden nur die Dateien heruntergeladen, die sich geändert haben.  
   
  Beim Entwerfen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung müssen Sie bestimmen, welche Strategie die Anwendung bei der Suche nach verfügbaren Updates verfolgen soll. Es gibt drei grundlegende Strategien: Suchen nach Updates beim Anwendungsstart, Suchen nach Updates nach dem Anwendungsstart (in einem Thread im Hintergrund) oder Bereitstellen einer Benutzeroberfläche für Updates.  

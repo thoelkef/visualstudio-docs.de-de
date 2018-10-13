@@ -1,7 +1,7 @@
 ---
 title: Was&#39;neues beim Entwurf in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204281"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [was&#39;neues beim Entwurf in Visual Studio](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio).
-
 Dieses Release von Visual Studio bietet die folgenden Verbesserungen, sodass Sie Code besser verstehen und entwerfen können.
 
  **Code Maps und Abhängigkeitsdiagramme**
@@ -62,7 +59,7 @@ Dieses Release von Visual Studio bietet die folgenden Verbesserungen, sodass Sie
 
 -   **Erstellen Sie Diagrammen aus der Klassenansicht und im Objektbrowser**. Das Ziehen und Ablegen von Dateien und Assemblys in einer neuen oder vorhandenen Zuordnung funktioniert aus den Klassenansicht- und Objektbrowser-Fenstern.
 
- Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).
+ Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
  **Andere Entwurfs- und modellierungsänderungen ändert sich in dieser Version:**
 

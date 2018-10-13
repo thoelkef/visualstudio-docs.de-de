@@ -1,7 +1,7 @@
 ---
 title: 'DA0012: Starke Reflektion | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458f1bc74d8660e640139bff2f379a66eafa2919
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dfe5e163d0ecf40001c4d5151d000e00789f12b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250561"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Starke Reflektion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [DA0012: viel Reflektion](https://docs.microsoft.com/visualstudio/profiling/da0012-significant-amount-of-reflection).  
-  
 Regel-Id | DA0012 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  

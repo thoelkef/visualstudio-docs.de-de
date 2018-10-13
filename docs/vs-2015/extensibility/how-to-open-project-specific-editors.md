@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Öffnen von projektspezifischen Editoren | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a529237b8aa77fbb909278d5a7accd2e9a45265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 255d95d92aae3f73e4c5f77a6f7a5a4219d73d19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198145"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Vorgehensweise: Öffnen von projektspezifischen Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Öffnen von projektspezifischen Editoren](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-project-specific-editors).  
-  
 Wenn eine Elementdatei, die von einem Projekt geöffnet wird systemintern auf den bestimmten Editor für das Projekt gebunden ist, muss das Projekt die Datei öffnen, mit einem projektspezifischen-Editor. Die Datei kann nicht auf den Mechanismus der IDE für das Auswählen eines Editors delegiert werden. Anstatt einen standard-Bitmap-Editor zu verwenden, können Sie z. B. diese projektspezifischer Editor-Option verwenden, an einem bestimmten Bitmap-Editor, der Informationen in der Datei, die dem Projekt eindeutig ist, erkennt.  
   
  Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode, wenn er feststellt, dass eine Datei von einem bestimmten Projekt geöffnet werden soll. Weitere Informationen finden Sie unter [Anzeigen von Dateien mithilfe des Befehls der geöffneten Datei](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Verwenden Sie die folgenden Richtlinien zum Implementieren der `OpenItem` Methode, um Ihr Projekt eine Datei mit einem projektspezifischen-Editor zu öffnen.  

@@ -1,7 +1,7 @@
 ---
 title: Leistungstools für Windows 8- und Windows Server 2012-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195519"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Leistungstools für Windows 8 und Windows Server 2012-Anwendungen](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung der Visual Studio-Leistungstools auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. In diesem Thema werden die Änderungen für die Leistungstools auf Windows 8- und Windows Server 2012-Plattformen beschrieben.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  **Sammeln von TIP-Daten auf einem Remotecomputer**  
   
- Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie kopieren die **Vs\_Profiler\_**_\<Plattform >_ **\_**  _\<Sprache >_**.exe** -Datei aus dem _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**Ordner eines Visual Studio-Computers auf dem Remotecomputer und installieren Sie es. Sie können nicht die Profilerstellungstools im Verwenden der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Downloadpaket.  
+ Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie kopieren die **Vs\_Profiler\_**_\<Plattform >_ **\_**  _\<Sprache >_**.exe** -Datei aus dem _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**Ordner eines Visual Studio-Computers auf dem Remotecomputer und installieren Sie es. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
   
  Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.  
   

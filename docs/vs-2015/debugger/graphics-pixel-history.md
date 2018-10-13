@@ -1,7 +1,7 @@
 ---
 title: Grafikpixelverlauf | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b37dab129c5eb19825746177cb30a5e20493399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ac64d352bfb6d6a35ea1bd9027d30f527aab116
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208363"
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Grafikpixelverlauf](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pixel-history).  
-  
 Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie sich Direct3D-Ereignisse, die während eines Frames Ihres Spiels oder Ihre App auftreten, auf ein bestimmtes Pixel auswirken.  
   
  Im Folgenden finden Sie das Pixelverlaufsfenster:  

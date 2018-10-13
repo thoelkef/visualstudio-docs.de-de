@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Nicht auf die Debugschnittstelle von SQL Server zugreifen. | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b2499081daaff60b128c67558990e15f248a6f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5d4780ece4ae00b2fb0b8c59bc84f3e48980b30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200888"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Fehler: nicht auf die Debugschnittstelle von SQL Server zugreifen](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-access-the-sql-server-debugging-interface).  
-  
 Diese Meldung wird angezeigt, wenn Sie SQL-Debuggen auf einem Computer versuchen, bei dem SQL-Debuggen nicht aktiviert ist.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild-Inlineaufgaben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7030a83203acaae71366f2a196cd3599c25b6072
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "47591016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223456"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [MSBuild-Inlineaufgaben](https://docs.microsoft.com/visualstudio/msbuild/msbuild-inline-tasks).  
-  
   
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
   

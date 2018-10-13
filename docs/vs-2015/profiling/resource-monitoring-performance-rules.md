@@ -1,7 +1,7 @@
 ---
 title: Leistungsregeln für die Ressourcenüberwachung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2bd11b8b18e5dd4e3f6625b1b269d104a6fd5a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21de8db42b172f82caf4901169f0bbb603057724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248975"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Leistungsregeln für die Ressourcenüberwachung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Resource Monitoring Leistungsregeln](https://docs.microsoft.com/visualstudio/profiling/resource-monitoring-performance-rules).  
-  
 Über Leistungsmeldungen in der Kategorie „Ressourcenüberwachung“ erhalten Sie zusätzliche Informationen zur Leistung Ihrer Anwendung. Sie können diese Daten verwenden, um Probleme mit der Leistung zu analysieren. Diese Regeln haben einen informativen Charakter und werden bei jeder Profilerstellung angezeigt.  
   
 |||  

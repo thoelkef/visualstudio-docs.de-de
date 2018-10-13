@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Spy++ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e7600447e84ec1181d608c2d54a3ebbaa6136d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a787eb2e5963454239da27605e7e6cf6893f6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210352"
 ---
 # <a name="using-spy"></a>Verwenden von Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwenden von Spy++](https://docs.microsoft.com/visualstudio/debugger/using-spy-increment).  
-  
 Spy++ (SPYXX. EXE-Datei) ist ein Win32-basierte-Hilfsprogramm, die Ihnen ermöglicht, dass eine grafische Ansicht der Prozesse, Threads, Windows und Windows-Meldungen des Systems. In diesem Abschnitt der Spy++-Hilfe umfasst die folgenden Hilfethemen:  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

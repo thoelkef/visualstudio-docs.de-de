@@ -1,7 +1,7 @@
 ---
 title: Benutzerdefinierte kolorierbare Elemente | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a04d2f20d89bba477e85f802a66dbe287bb7ea1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192083"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte einfärbbare Elemente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [benutzerdefinierten kolorierbaren Elemente](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-colorable-items).  
-  
 Sie können die Liste der Typen überschreiben, durch die Implementierung der benutzerdefinierten kolorierbaren Elemente als Teil Ihrer Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  
   
 ## <a name="user-settings-of-colorable-items"></a>Benutzereinstellungen der kolorierbaren Elemente  

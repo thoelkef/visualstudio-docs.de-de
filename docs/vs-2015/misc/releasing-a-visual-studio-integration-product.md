@@ -1,7 +1,7 @@
 ---
 title: Freigeben eines Visual Studio-Integrationsprodukts | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: douge
-ms.openlocfilehash: 24f4b4c01dcd00de8a258e90e310dc7e4b98bf11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c571a01aab27e56375d92f9abbced386a12bce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197495"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>Freigeben eines Visual Studio-Integrationsprodukts
 In den Themen in diesem Abschnitt wird erläutert, wie Sie Ihr Visual Studio-Integrationsprodukt durch Erstellen und Installieren von VSPackages und mithilfe des Visual Studio-Integrationstests (VSIT) freigeben.  
@@ -37,4 +37,4 @@ In den Themen in diesem Abschnitt wird erläutert, wie Sie Ihr Visual Studio-Int
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Anpassen für Tests mit Visual Studio SDK](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
- Beschreibt, wie die [!INCLUDE[esprtest](../includes/esprtest-md.md)] Suite zu erstellen, verwalten, bearbeiten und Ausführen von Tests, und auch abrufen und Speichern von Testergebnissen.
+ Beschreibt, wie die [!INCLUDE[esprtest](../includes/esprtest-md.md)] -Suite zum Erstellen, Verwalten, Bearbeiten und Ausführen von Tests sowie zum Abrufen und Speichern von Testergebnissen verwendet wird.

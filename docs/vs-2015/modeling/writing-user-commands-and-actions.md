@@ -1,7 +1,7 @@
 ---
 title: Schreiben von Benutzerbefehlen und-Aktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3aa86a1b08f121c8ddc95cca5029e75e7a103a1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1b38dada5b36bf6d02fd7d7dc175761d2147ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230411"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](https://docs.microsoft.com/visualstudio/modeling/writing-user-commands-and-actions).  
-  
 Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Befehle zum Diagramm hinzufügen und indem eine Reaktion auf Gesten wie etwa bei Drag & Drop-, Klick- oder Doppelklickereignissen vorgesehen wird.  
   
 ## <a name="user-actions"></a>Benutzeraktionen  

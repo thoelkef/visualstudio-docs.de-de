@@ -1,31 +1,29 @@
 ---
 title: Erste Schritte mit C++ in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30bed5ac15038a91c95b4383d9dbd8c519095569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240447"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erste Schritte mit C++ in Visual Studio](https://docs.microsoft.com/visualstudio/ide/getting-started-with-cpp-in-visual-studio).  
-  
 Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools und Dialogfeldern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine einfache "Hello, World"-Anwendung und lernen dabei die Arbeiten in der integrierten Entwicklungsumgebung (IDE) kennen.  
   
  Dieses Thema enthält folgende Abschnitte:  

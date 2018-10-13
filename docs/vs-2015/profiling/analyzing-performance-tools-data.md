@@ -1,7 +1,7 @@
 ---
 title: Analysieren der durch Leistungstools erstellten Daten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 46
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb70fa86ac54c14d8105a0481b3a09b5aa777f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca00f13a6b15d934e6be9eb1a379de04ea5fc0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229137"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analysieren der durch Leistungstools erstellten Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Analysieren von Daten aus Leistungstools](https://docs.microsoft.com/visualstudio/profiling/analyzing-performance-tools-data).  
-  
 Leistungsberichte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools ermöglichen es Ihnen, Leistungsprobleme der Anwendung einzusehen und zu analysieren. Dieser Bereich gibt Ihnen einen Überblick über Leistungsberichte und -ansichten, die Sie verwenden können, um Leistungsdaten zu untersuchen.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  

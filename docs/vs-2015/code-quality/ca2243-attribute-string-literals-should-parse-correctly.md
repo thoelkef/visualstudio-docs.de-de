@@ -1,7 +1,7 @@
 ---
 title: 'CA2243: Attribute-Zeichenfolgenliterale müssen analysiert ordnungsgemäß | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6e1e90ccfefad3b73a950849643009a92f074d4f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a139bcb1c87b2cf716212f5608fea74f0bb6255d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47524992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184755"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert](https://docs.microsoft.com/visualstudio/code-quality/ca2243-attribute-string-literals-should-parse-correctly).
-
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|

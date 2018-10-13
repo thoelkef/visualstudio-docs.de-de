@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften von Elementen in UML-Sequenzdiagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,22 +18,20 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b1f83999f3859583c4429ff3bf19482f01d90546
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7af657496fc95b07c7149f75fa03087eb1988606
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245218"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Eigenschaften von Elementen in UML-Sequenzdiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Eigenschaften von Elementen in UML-Sequenzdiagrammen](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-sequence-diagrams).  
-  
 Jedes Element in einem UML-Diagramm hat Eigenschaften. Um die Eigenschaften eines Elements anzuzeigen, die Maustaste des Elements im Diagramm oder im **UML-Modell-Explorer** , und klicken Sie dann auf **Eigenschaften**. Die Eigenschaften werden in der **Eigenschaften** Fenster.  
   
 > [!NOTE]
->  In diesem Thema werden die Eigenschaften von Elementen in UML-Sequenzdiagrammen behandelt. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen über das Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  In diesem Thema werden die Eigenschaften von Elementen in UML-Sequenzdiagrammen behandelt. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen zum Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Eigenschaften von Elementen  
   

@@ -1,7 +1,7 @@
 ---
 title: Erstellen eine einfachen datenanwendung mit ADO.NET | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204307"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erstellen eine einfachen datenanwendung mit ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus, beispielsweise Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.  
   
@@ -51,7 +49,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
 -   [Testen Sie Ihre Anwendung](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Erstellen der Anwendung benötigen Sie:  
   
 -   Visual Studio Communityedition.  
@@ -221,7 +219,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
     |Kommentar|Beschreibung|  
     |-------------|-----------------|  
-    |Util-1|Fügen Sie den `System.Configuration`-Namespace hinzu.|  
+    |Util-1|Fügen Sie den `System.Configuration` -Namespace hinzu.|  
     |Util-2|Definieren Sie die Variable `returnValue`, und initialisieren Sie sie mit `null` (C#) oder `Nothing` (Visual Basic).|  
     |Util-3|Obwohl Sie eingegeben haben `connString` als Namen für die Verbindungszeichenfolge in der **Eigenschaften** Fenster müssen Sie angeben `"SimpleDataApp.Properties.Settings.connString"` (c#) oder `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) im Code.|  
   

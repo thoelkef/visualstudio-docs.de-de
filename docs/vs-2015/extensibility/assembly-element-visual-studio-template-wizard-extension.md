@@ -1,7 +1,7 @@
 ---
 title: Assembly-Element (Erweiterung für Visual Studio-Vorlagen-Assistenten) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2314bfebcfd86b4df96e43bf7e3e798de731c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e4f5b57a94043b702d5b85c13745ec298e20c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224535"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly-Element (Assistentenerweiterung für Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Assembly-Element (Assistentenerweiterung für Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/assembly-element-visual-studio-template-wizard-extension).  
-  
 Gibt den Namen oder der starke Name der Assembly, implementiert die `IWizard` Schnittstelle.  
   
  \<VSTemplate>  

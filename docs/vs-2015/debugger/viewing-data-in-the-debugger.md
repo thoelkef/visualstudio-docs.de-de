@@ -1,7 +1,7 @@
 ---
 title: Anzeigen von Daten im Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,19 +28,17 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204359"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Anzeigen von Daten im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von Daten im Debugger](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger).  
-  
-Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger bietet eine Vielzahl von Tools zum Überprüfen und Ändern des Zustands des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.  
+Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger bietet eine Vielzahl von Tools zum Überprüfen und Ändern des Zustands des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.  
   
 ## <a name="datatips"></a>DataTips  
  DataTips sind mit die nützlichsten Werkzeuge zum Anzeigen von Informationen über Variablen und Objekte während des Debuggens. Wenn sich der Debugger im Unterbrechungsmodus befindet, können Sie den Wert einer Variablen innerhalb des aktuellen Gültigkeitsbereichs anzeigen, indem Sie den Mauszeiger in einem Quellcodefenster über der Variablen platzieren. Weitere Informationen finden Sie unter [Anzeigen von Datenwerten als Datentipps](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  

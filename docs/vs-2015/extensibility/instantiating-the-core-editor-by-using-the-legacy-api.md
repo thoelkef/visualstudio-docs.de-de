@@ -1,7 +1,7 @@
 ---
 title: Instanziieren die Kern-Editor mit der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaed9c7860153beee6d02bd02242697f10647e0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246037"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanziieren die Kern-Editor mit der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Instanziieren der Kern-Editor durch Verwenden der Legacy-API](https://docs.microsoft.com/visualstudio/extensibility/instantiating-the-core-editor-by-using-the-legacy-api).  
-  
 Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. einfügen, löschen, kopieren und einfügen. Es kombiniert diese Funktionen, mit denen von Diensten für Sprache, z. B. Text, Farben, die Einzüge und IntelliSense-Anweisungsvervollständigung bereitgestellt werden.  
   
  Sie können eine Instanz von der Kern-Editor in einer von drei Methoden instanziieren:  

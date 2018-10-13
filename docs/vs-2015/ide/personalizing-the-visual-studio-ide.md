@@ -1,7 +1,7 @@
 ---
 title: Personalisieren der Visual Studio-IDE | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219991"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalisieren von Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Personalisieren der Visual Studio-IDE](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 In diesem Abschnitt wird beschrieben, wie Visual Studio auf verschiedene Arten personalisiert wird, sodass Ihr eigener Entwicklungsstil und Ihre Anforderungen am besten unterstützt werden. Sie können mehrere Fensterlayouts definieren und speichern und zwischen diesen wechseln. Beispielsweise können Sie ein Layout für die Codierung und ein Layout für das Debuggen definieren. Sie können Farben, Schriftarten und Formatierungen im Code-Editor für jede Sprache anpassen. Sie können das blaue, dunkle oder helle Umgebungsfarbschema auswählen oder benutzerdefinierte Designs durch Herunterladen und Installieren des Visual Studio Design-Editors in der Visual Studio Code Gallery erstellen. Viele weitere Optionen sind auch über das [Dialogfeld „Umgebungsoptionen“](../ide/reference/environment-options-dialog-box.md) verfügbar.  
   
  Viele Ihrer Einstellungen sind auch über die Visual Studio-Instanzen zugänglich. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md).  

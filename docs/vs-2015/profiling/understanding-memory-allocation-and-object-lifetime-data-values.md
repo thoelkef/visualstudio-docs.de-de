@@ -1,7 +1,7 @@
 ---
 title: Datenwerte zur Speicherbelegung und Objektlebensdauer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1470e8c279ac47191a8bc91182c67df19a083339
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c18a7c078e647f6feef152d3f4f185cb6026c32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194213"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Datenwerte zur Speicherbelegung und Objektlebensdauer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Kenntnisse zur Speicherbelegung und zur Lebensdauer-Objektdatenwerten](https://docs.microsoft.com/visualstudio/profiling/understanding-memory-allocation-and-object-lifetime-data-values).  
-  
 Die Profilerstellungsmethode *.NET-Speicherbelegung* der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools sammelt Informationen zu Größe und Anzahl von Objekten, die in einer Zuordnung erstellt oder bei einer Garbage Collection zerstört wurden, sowie weitere Informationen zur *Aufrufliste* der Funktion zu dem Zeitpunkt, als das Ereignis aufgetreten ist. Eine *Aufrufliste* ist eine dynamische Struktur, die Informationen über die Funktionen speichert, die auf dem Prozessor ausgeführt werden.  
   
  **Anforderungen**  

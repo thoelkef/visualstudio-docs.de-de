@@ -1,7 +1,7 @@
 ---
 title: Gewusst wie... mit Textvorlagen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231503"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Gewusst... mit Textvorlagen](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates).  
-  
 Textvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bieten eine gute Möglichkeit zum Generieren von Text beliebiger Art. Sie können Textvorlagen verwenden, um Text zu generieren, zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit aus, um einige der Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellte "Gewusst...?" Fragen.  
   
  In diesem Thema werden mehrere Antworten, die Nummerierung vorangestellt werden alternative Vorschläge.  
@@ -49,7 +47,7 @@ Textvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bieten eine gute M�
 ### <a name="read-another-project-file-from-a-template"></a>Lesen Sie eine andere Projektdatei aus einer Vorlage  
  Zum Lesen einer Datei aus der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt als Vorlage:  
   
--   Fügen Sie `hostSpecific="true"` in die `<#@template#>`-Direktive ein.  
+-   Fügen Sie `hostSpecific="true"` in die `<#@template#>`-Anweisung ein.  
   
      Verwenden Sie in Ihrem Code `this.Host.ResolvePath(filename)` zum Abrufen des vollständigen Pfads der Datei.  
   

@@ -1,7 +1,7 @@
 ---
 title: Zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218835"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
-  
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.  
   
 ## <a name="local-data"></a>Lokale Daten  
@@ -53,7 +51,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 >  Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z. B. Dokumente, zu speichern.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Markieren von Datendateien in einer ClickOnce-Verteilung  
- Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Lesen aus der und Schreiben in die Registrierung  
  Zum Lesen aus dem Datenverzeichnis muss Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung eine Leseberechtigung anfordern; analog dazu erfordert das Schreiben in das Verzeichnis eine Schreibberechtigung. Ihre Anwendung verfügt automatisch über diese Berechtigung, wenn sie für die Ausführung mit voller Vertrauenswürdigkeit konfiguriert ist. Weitere Informationen zum Erhöhen von Berechtigungen für die Anwendung unter Verwendung der Berechtigungserweiterung oder der Bereitstellung vertrauenswürdiger Anwendungen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
@@ -77,14 +75,14 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
   
  Wenn eine Datendatei in der alten Version der Anwendung über einen anderen Hash-Wert als in der neuen Version verfügt, ersetzt [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] die ältere Version der Datei durch die neuere Version des Servers. Auch wenn die frühere Version der Anwendung eine neue Datei mit demselben Namen wie dem einer Datei in der Bereitstellung der neuen Version erstellt hat, überschreibt [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] die Datei der alten Version. In beiden Fällen werden die alten Dateien in ein Unterverzeichnis des Datenverzeichnisses mit dem Namen `.pre`eingeschlossen, sodass die Anwendung zu Migrationszwecken weiterhin auf die alten Daten zugreifen kann.  
   
- Wenn Sie eine umfassendere Migration von Daten benötigen, können Sie die API für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung verwenden, um eine benutzerdefinierte Migration vom alten zum neuen Datenverzeichnis durchzuführen. Dabei suchen Sie zunächst mithilfe von <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>einen verfügbaren Download, laden das Update mit <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> oder <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>herunter und führen nach abgeschlossenem Update die benutzerdefinierten Schritte zur Datenmigration selbst aus.  
+ Wenn Sie eine umfassendere Migration von Daten benötigen, können Sie die API für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung verwenden, um eine benutzerdefinierte Migration vom alten zum neuen Datenverzeichnis durchzuführen. Dabei suchen Sie zunächst mithilfe von <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>einen verfügbaren Download, laden das Update mit <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> oder <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>herunter und führen nach abgeschlossenem Update die benutzerdefinierten Schritte zur Datenmigration selbst aus.  
   
 ### <a name="isolated-storage"></a>Isolierte Speicherung  
  Die isolierte Speicherung stellt eine API für das Erstellen und den Zugriff auf Dateien über eine einfache API bereit. Der tatsächliche Speicherort der Dateien wird für den Entwickler und Benutzer ausgeblendet.  
   
  Isolierte Speicherung funktioniert in allen Versionen von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isolierte Speicherung funktioniert auch in teilweise vertrauenswürdigen Anwendungen, ohne dass zusätzliche Berechtigungen gewährt werden müssen. Sie sollten isolierte Speicherung verwenden, wenn Ihre Anwendung unter teilweiser Vertrauenswürdigkeit ausgeführt werden, dabei aber anwendungsspezifische Daten verwalten muss.  
   
- Weitere Informationen finden Sie unter [isolierten Speicher](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Weitere Informationen finden Sie unter [Isolierte Speicherung](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Andere lokale Dateien  
  Wenn Ihre Anwendung mit Daten von Endbenutzern wie z. B. Berichten, Bildern, Musik usw. arbeiten oder solche Daten speichern muss, benötigt sie <xref:System.Security.Permissions.FileIOPermission> , um Daten im lokalen Dateisystem zu lesen oder in dieses zu schreiben.  
@@ -93,7 +91,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  An einem gewissen Punkt wird die Anwendung wahrscheinlich Informationen von einer Remotewebsite, wie z. B. Kundendaten oder Marktinformationen, abrufen müssen. Dieser Abschnitt beschreibt die am häufigsten verwendeten Techniken für das Abrufen von Remotedaten.  
   
 ### <a name="accessing-files-by-using-http"></a>Zugreifen auf Dateien über HTTP  
- Sie können auf Daten von einem Webserver zugreifen, indem Sie entweder den <xref:System.Net.WebClient> oder die <xref:System.Net.HttpWebRequest> -Klasse im <xref:System.Net> -Namespace verwenden. Bei den Daten kann es sich entweder um statische Dateien oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen handeln, die unformatierten Text oder XML-Daten zurückgeben. Daten im XML-Format können Sie am schnellsten mithilfe der <xref:System.Xml.XmlDocument> -Klasse abrufen, deren <xref:System.Xml.XmlDocument.Load%2A> -Methode eine URL als Argument verwendet. Ein Beispiel finden Sie unter [Einlesen eines XML-Dokuments in das DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Sie können auf Daten von einem Webserver zugreifen, indem Sie entweder den <xref:System.Net.WebClient> oder die <xref:System.Net.HttpWebRequest> -Klasse im <xref:System.Net> -Namespace verwenden. Bei den Daten kann es sich entweder um statische Dateien oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen handeln, die unformatierten Text oder XML-Daten zurückgeben. Daten im XML-Format können Sie am schnellsten mithilfe der <xref:System.Xml.XmlDocument> -Klasse abrufen, deren <xref:System.Xml.XmlDocument.Load%2A> -Methode eine URL als Argument verwendet. Ein Beispiel finden Sie unter [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Wenn die Anwendung über HTTP auf Remotedaten zugreift, spielt auch Sicherheit eine Rolle. Der Zugriff der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung auf Netzwerkressourcen ist möglicherweise standardmäßig beschränkt. Dies hängt davon ab, wie die Anwendung bereitgestellt wurde. Diese Beschränkungen sollen verhindern, dass bösartige Programme Zugriff auf privilegierte Remotedaten erhalten oder über einen Benutzercomputer andere Computer im Netzwerk angreifen.  
   
@@ -105,7 +103,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 |Installation von Dateifreigabe|Kann auf keine Webserver zugreifen.|  
 |Installation von CD-ROM|Kann auf jeden beliebigen Webserver zugreifen.|  
   
- Wenn die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung aufgrund von Sicherheitsbeschränkungen nicht auf einen Webserver zugreifen kann, muss die Anwendung <xref:System.Net.WebPermission> für diese Website bestätigen. Weitere Informationen zum Erhöhen von Sicherheitsberechtigungen für eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
+ Wenn die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung aufgrund von Sicherheitsbeschränkungen nicht auf einen Webserver zugreifen kann, muss die Anwendung <xref:System.Net.WebPermission> für diese Website bestätigen. Weitere Informationen zum Erhöhen von Sicherheitsberechtigungen für eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>Zugreifen auf Daten über einen XML-Webdienst  
  Wenn Sie Daten als XML-Webdienst verfügbar machen, können Sie mithilfe eines XML-Webdienstproxys auf die Daten zugreifen. Der Proxy ist eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Klasse, die Sie mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellen. Die Vorgänge des XML-Webdienstes, z. B. Abrufen von Kunden, Aufgeben von Bestellungen usw., werden als Methoden für den Proxy verfügbar gemacht. Dadurch sind Webdienste viel benutzerfreundlicher als unformatierter Text oder XML-Dateien.  

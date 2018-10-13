@@ -1,7 +1,7 @@
 ---
 title: Anzeigen von XML-Codekommentaren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185457"
 ---
 # <a name="supplying-xml-code-comments"></a>Anzeigen von XML-Codekommentaren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen von XML-Codekommentaren](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 Sie können die Kommentare in Quellcodedateien als IntelliSense zur Verfügung stellen. Wenn Sie der Visual Basic-, C#- oder C++-Compilerbefehlszeile den Schalter „/doc“ hinzufügen, wird eine XML-Datei generiert, die als Basis für die IntelliSense-Dokumentation dient.  
   
  Weitere Informationen zum Dokumentieren von Code in Visual Basic, finden Sie unter [Vorgehensweise: Erstellen von XML-Dokumentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
