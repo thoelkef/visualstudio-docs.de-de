@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263119"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Synchronisieren Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckrichtlinie für das Teamprojekt durch Angabe eines Regelsatzes, das mindestens die Regeln enthält, die in der Regel legen Sie für den Check-in-Richtlinie angegeben werden. Der leitende Entwickler können Sie mit dem Namen und Speicherort der Regel legen Sie für den Check-in-Richtlinie informieren. Sie können eine der folgenden Optionen verwenden, um sicherzustellen, dass die Codeanalyse für das Projekt den richtigen Satz an Regeln verwendet:  
   
 -   Wenn eine der integrierten Regelsätzen Microsoft die Check-in-Richtlinie verwendet wird, öffnen Sie das Dialogfeld "Eigenschaften" für das Codeprojekt, zeigt die Codeanalyse-Seite und wählen Sie die Regel, die auf der Seite "Codeanalyse" von den projekteinstellungen Code festgelegt. Die Microsoft-Standardregelsätze automatisch mit Visual Studio installiert werden auf schreibgeschützt festgelegt werden und sollte nicht bearbeitet werden. Wenn die Regelsätze nicht bearbeitet werden, garantiert die Regeln in der Richtlinie und eine Regel für das lokale Gruppen entsprechen.  

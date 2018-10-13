@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245478"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 Sie können die Deklaration einer Klasse oder Struktur auf mehrere Deklarationen aufteilen, indem Sie das `Partial`-Schlüsselwort in Visual Basic oder das `partial`-Schlüsselwort in Visual C# verwenden. Sie können beliebig viele partielle Deklarationen in beliebig vielen verschiedenen Quelldateien oder in einer Quelldatei verwenden. Alle Deklarationen müssen jedoch in der gleichen Assembly und dem gleichen Namespace enthalten sein.  
   
  Partielle Klassen sind in vielen Situationen nützlich. Wenn Sie z.B. an großen Projekten arbeiten, können durch Aufteilen einer Klasse in mehr als eine Datei mehrere Programmierer gleichzeitig an diesem Projekt arbeiten. Wenn Sie mit Code arbeiten, der von Visual Studio erstellt wird, können Sie die Klasse ändern, ohne die Quelldatei erneut erstellen zu müssen. (Beispiele von Code, der von Visual Studio erstellt sind u.A. Windows Forms-Code und Webdienst-Wrappercode.) Sie können deshalb Code erstellen, der diese automatisch generierte Klassen verwendet, ohne die von Visual Studio erstellte Datei ändern zu müssen.  

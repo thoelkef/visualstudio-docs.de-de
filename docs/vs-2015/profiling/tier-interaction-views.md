@@ -1,7 +1,7 @@
 ---
 title: Ebeneninteraktions-Ansicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b163642e27bfdc3e07c296eec72a6b61fa0bffc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9483767c3e16fb39bece2d61e8384d80de9d3026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257594"
 ---
 # <a name="tier-interaction-views"></a>Ebeneninteraktions-Ansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ebeneninteraktions-Ansicht](https://docs.microsoft.com/visualstudio/profiling/tier-interaction-views).  
-  
 Die Profilerstellung für Ebeneninteraktion bietet weitere Informationen zu den Ausführungszeiten von Funktionen in Anwendungen mit mehreren Ebenen, die über [!INCLUDE[vstecado](../includes/vstecado-md.md)] mit Datenbanken kommunizieren. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einschließen.  
   
  **Anforderungen**  

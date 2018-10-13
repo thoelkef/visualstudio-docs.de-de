@@ -1,7 +1,7 @@
 ---
 title: Eine oder mehrere der ausgewählten Datenbankobjekte gibt ein Schema, das nicht das Schema der Zielklasse entspricht zurück | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 516d7c30345b66fe2c57879db5ff6ab1f38fdd4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f59583c1ab8bd38c1e1fb3207970ac9478d498
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272674"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [eine oder mehrere der ausgewählten Datenbankobjekte gibt ein Schema, das nicht das Schema der Zielklasse entspricht zurück](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class).  
-  
   
 Mindestens ein ausgewähltes Datenbankobjekt gibt ein Schema zurück, das nicht dem Schema der Zielklasse entspricht. Dem Designer wurden keine Elemente hinzugefügt.  
   

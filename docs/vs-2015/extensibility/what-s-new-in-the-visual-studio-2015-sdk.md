@@ -1,7 +1,7 @@
 ---
 title: Was&#39;Neues in Visual Studio 2015 SDK | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38281327c6a3d343418a74c85f61b9b1175b5d01
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 0968dd4a66fc6130e8987fb7bf18a1ed064e2f0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233336"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Was&#39;Neues in Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [was&#39;s New in Visual Studio 2015 SDK](https://docs.microsoft.com/visualstudio/extensibility/what-s-new-in-the-visual-studio-2015-sdk).  
-  
 Visual Studio SDK hat die folgenden neuen und aktualisierten Funktionen für Visual Studio 2015, Visual Studio 2015, aktualisiert und Visual Studio "15".  
   
 ## <a name="visual-studio-15-preview-2"></a>Visual Studio „15“ Preview 2  

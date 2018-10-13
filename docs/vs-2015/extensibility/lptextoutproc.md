@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266943"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 Wenn der Benutzer einen Quellcodeverwaltungsvorgang von innerhalb der integrierten Entwicklungsumgebung (IDE) ausgeführt wird, sollten das Quellcodeverwaltungs-Plug-Ins Fehler oder Status-Meldungen, die im Zusammenhang mit der Operation zu vermitteln. Das plug-in kann eine eigene Meldungsfeldern zu diesem Zweck werden angezeigt. Allerdings können für die weitere nahtlose Integration der Plug-in-Zeichenfolgen der IDE übergeben, die klicken Sie dann auf native Weise zum Anzeigen von Statusinformationen werden angezeigt. Der Mechanismus hierfür ist die `LPTEXTOUTPROC` Funktionszeiger. Die IDE implementiert diese Funktion, die (im folgenden ausführlicher beschrieben), für die Anzeige von Fehler- und statusmeldungen.  
   
  Die IDE übergibt und der Quellcode-Plug-in einen Funktionszeiger zu dieser Funktion, als die `lpTextOutProc` Parameter beim Aufrufen der [SccOpenProject](../extensibility/sccopenproject-function.md). Während eines SCC-Vorgangs, z. B. in der Mitte einen Aufruf der [SccGet](../extensibility/sccget-function.md) im Zusammenhang mit vielen Dateien, die-Plug-in Aufrufen der `LPTEXTOUTPROC` Funktion, die in regelmäßigen Abständen übergeben von Zeichenfolgen, die zum Anzeigen. Diese Zeichenfolgen möglicherweise eine Statusleiste, die in einem Fenster "Ausgabe" oder in einem separaten Meldungsfeld, entsprechend der IDE angezeigt. Optional die IDE möglicherweise können Sie bestimmte Nachrichten mit einem **Abbrechen** Schaltfläche. Dadurch kann der Benutzer, den Vorgang abzubrechen, und es bietet der IDE auf die Möglichkeit, diese Informationen zurück an das plug-in übergeben.  

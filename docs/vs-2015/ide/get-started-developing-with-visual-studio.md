@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit der Entwicklung in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261507"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio).  
-  
 Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/community) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.  
   
 -   **[Erstellen von Web-Apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.  
@@ -40,7 +38,7 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
   
 -   **[Erstellen von plattformübergreifenden mobilen Apps in C# oder Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Finden Sie den Einstieg in Visual Studio und Tools für Xamarin, um mobile Apps zu erstellen, die von einer gemeinsamen Codebasis aus auf der Android-, der iOS- und der universellen Windows-Plattform ausgeführt werden können.  
   
-     Beispiel laden:[Tasky Portable-](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (native Benutzeroberfläche) oder [Xamarin Forms Todo-Beispiel](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms gemeinsame Benutzeroberfläche) &#124; [Lernprogramm](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [durchsuchen die Dokumentation](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [Video ansehen                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Beispiel laden:[Tasky Portable-](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (native Benutzeroberfläche) oder [Xamarin Forms Todo-Beispiel](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms gemeinsame Benutzeroberfläche) &#124; [Lernprogramm](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [durchsuchen die Dokumentation](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [Video ansehen](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[Erstellen von plattformübergreifenden Apps und Bibliotheken in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Hier finden Sie den Einstieg in das Erstellen von C++-Apps und -Bibliotheken für die Android-, die iOS- und die universelle Windows-Plattform.  
   

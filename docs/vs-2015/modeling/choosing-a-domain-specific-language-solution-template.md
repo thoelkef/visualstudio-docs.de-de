@@ -1,7 +1,7 @@
 ---
 title: Auswählen einer Lösungsvorlage für die Domain-Specific Languge | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268483"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template).  
-  
 Um eine DSL-Projektmappe zu erstellen, wählen Sie eine der Lösungsvorlagen, die in den Designer-Assistenten in einer domänenspezifischen Sprache verfügbar sind. Durch Auswählen der Vorlage, die am ehesten entspricht von der Sprache, die Sie erstellen möchten, können Sie den Änderungsaufwand verringern, die Sie an der Lösung ab.  
   
  Die folgenden Vorlagen stehen in den Designer-Assistenten in einer domänenspezifischen Sprache zur Verfügung.  
@@ -33,7 +31,7 @@ Um eine DSL-Projektmappe zu erstellen, wählen Sie eine der Lösungsvorlagen, di
 > [!NOTE]
 >  Der Zweck der Vorlagen ist, geben Sie eine DSL ab. Die Vorlagen, die mit dem Namen-Klasse, Komponente Diagramme sind nicht vollständige UML-Diagramme. Wenn Sie ein UML-Modell erstellen möchten, sollten Sie die UML-Modellierungstools, die einen Satz von Diagrammen zu bieten, die um ein einzelnes Modell herum integriert sind. Sie sind erweiterbar und können über ModelBus in Ihre DSL integriert werden. Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
-|Vorlage|Funktionen|Beschreibung|  
+|Vorlage|Features|Beschreibung|  
 |--------------|--------------|-----------------|  
 |Klassendiagramme|-Depot Formen<br />-Vererbung von Klasse<br />-Der beziehungsvererbung<br />-Form-Vererbung<br />-Die Beziehung Eigenschaften|Verwenden Sie diese Vorlage aus, wenn die domänenspezifischen Sprache enthält, Entitäten und Beziehungen, die über Eigenschaften verfügen. Diese Vorlage erstellt eine domänenspezifische Sprache, die UML-Klassendiagrammen ähnelt. Die wichtigsten Entitäten sind die Klassen und Schnittstellen zusammen mit der Zuordnung, Generalisierung und die Implementierung von Beziehungen. Eine Klasse oder Schnittstelle wird angezeigt, als ein Feld, das eine Liste der Attribute enthält.|  
 |Komponentendiagramme|-Ports|Verwenden Sie diese Vorlage, wenn Ihre DSL-Komponenten, d. h., Teile eines Softwaresystems umfasst. Diese Vorlage erstellt eine domänenspezifische Sprache, die UML-Komponentendiagramme ähnelt. Die wichtigsten Entitäten sind die Komponenten und Ports, die als kleine Formen außerhalb der Komponenten angezeigt werden.|  

@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden Sie das Fenster "Register" | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238965"
 ---
 # <a name="how-to-use-the-registers-window"></a>Gewusst wie: Verwenden des Fensters "Register"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ansicht registrieren Werte im Debugger in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window).  
-  
 Das Fenster Register ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **allgemeine** Kategorie.  
   
  Die **registriert** im Fenster Register angezeigt. Wenn Sie behalten die **registriert** Fenster geöffnet, denn Sie des Programms durchgehen, sehen Sie registrieren Sie sich Werte ändern, wie Ihr Code ausgeführt wird. Kürzlich geänderte Werte werden rot angezeigt. Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten eines Registerwerts](../debugger/how-to-edit-a-register-value.md).  

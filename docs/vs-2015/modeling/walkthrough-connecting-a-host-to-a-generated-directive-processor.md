@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251932"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts auf einen generierten Richtlinie Prozessor](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor).  
-  
 Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einfacher benutzerdefinierter Host wird im veranschaulicht [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md). Sie können diesem Host zum Hinzufügen von Funktionen, z. B. das Generieren von mehreren Ausgabedateien erweitern.  
   
  In dieser exemplarischen Vorgehensweise erweitern Sie Ihren benutzerdefinierten Host, damit sie Textvorlagen unterstützt, die anweisungsprozessoren aufrufen. Wenn Sie eine domänenspezifische Sprache definieren, generiert er eine *anweisungsprozessor* für das Domänenmodell. Der anweisungsprozessor erleichtert es Benutzern Zugriff auf das Modell, mindert die Notwendigkeit, schreiben die Assembly und import-Direktiven in den Vorlagen Vorlagen schreiben.  
@@ -42,7 +40,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
   
 -   Testen des benutzerdefinierten Hosts mit der generierten Direktivenprozessor an.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  

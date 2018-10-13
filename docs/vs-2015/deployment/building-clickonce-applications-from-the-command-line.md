@@ -1,7 +1,7 @@
 ---
 title: Erstellen von ClickOnce-Anwendungen über die Befehlszeile | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271026"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von ClickOnce-Anwendungen über die Befehlszeile](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line).  
-  
 In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>Verwenden von MSBuild für die Bereitstellung von ClickOnce-Anwendungen zu reproduzieren.  

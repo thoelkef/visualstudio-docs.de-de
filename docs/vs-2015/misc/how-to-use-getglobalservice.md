@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden von GetGlobalService | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: douge
-ms.openlocfilehash: bd0a82281d2271f9badfbda9a7b32d20edf0c12c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ce0d5657fa65cd727da2b97b3dd24735a81937a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276122"
 ---
 # <a name="how-to-use-getglobalservice"></a>Gewusst wie: Verwenden von GetGlobalService
 Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus. Weitere Informationen zu diesen und andere Szenarien finden Sie unter [wie: Problembehandlung bei Diensten](../extensibility/how-to-troubleshoot-services.md).  

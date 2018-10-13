@@ -1,7 +1,7 @@
 ---
 title: '&lt;Datei&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf5f0c803c9c60c9a4846aeba960cbdbf4c8129b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270737"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Datei&gt; -Element (ClickOnce-Anwendung)](https://docs.microsoft.com/visualstudio/deployment/file-element-clickonce-application).  
-  
 Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung verwendet.  
   
 ## <a name="syntax"></a>Syntax  
@@ -122,7 +120,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |---------------|-----------------|  
 |`clsid`|Erforderlich. Die Klassen-ID der COM-Komponente als eine GUID.|  
 |`description`|Dies ist optional. Der Klassenname.|  
-|`threadingModel`|Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft auf null festgelegt ist, wird kein threading-Modell verwendet. Die Komponente wird auf dem Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden für diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
+|`threadingModel`|Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft auf null festgelegt ist, wird kein threading-Modell verwendet. Die Komponente wird auf dem Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden für diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Apartment`, `Free`, `Both`und `Neutral`.|  
 |`tlbid`|Dies ist optional. Die GUID für die Typbibliothek der COM-Komponente.|  
 |`progid`|Dies ist optional. Versionsabhängige programmatische Bezeichner der COM-Komponente zugeordnet. Das Format einer `ProgID` ist `<vendor>.<component>.<version>`.|  
 |`miscStatus`|Dies ist optional. Duplikate in der Assembly manifest die Informationen der `MiscStatus` Registrierungsschlüssel. Wenn Werte für die `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, oder `miscStatusThumbnail` Attribute nicht gefunden werden, wird der zugehörige Standardwert aufgeführt, `miscStatus` wird für die fehlenden Attribute verwendet. Der Wert kann es sich um eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse, die erforderlich sind `MiscStatus` Registrierungsschlüsselwerte.|  
@@ -154,7 +152,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`Name`|Dies ist optional. Der Name der Schnittstelle, wie sie wird im Code angezeigt.|  
 |`Tlbid`|Dies ist optional. Die Typbibliothek, die die Beschreibung der die angegebene Schnittstelle enthält die `iid` Attribut.|  
 |`proxyStubClass32`|Dies ist optional. Ordnet eine IID CLSID in 32-Bit-Proxy-DLLs.|  
-|`threadingModel`|Dies ist optional. Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft auf null festgelegt ist, wird kein threading-Modell verwendet. Die Komponente wird auf dem Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden für diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
+|`threadingModel`|Dies ist optional. Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft auf null festgelegt ist, wird kein threading-Modell verwendet. Die Komponente wird auf dem Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden für diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Apartment`, `Free`, `Both`und `Neutral`.|  
   
 ## <a name="windowclass"></a>windowClass  
  Der `windowClass` Element ist ein optionales untergeordnetes Element des der `file` -Element, wenn möglicherweise erforderlich, aber der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung enthält eine COM-Komponente, die Sie mithilfe von COM ohne Registrierung bereitstellen möchte Das Element bezieht sich auf eine Fensterklasse, definiert durch die COM-Komponente, die eine Version, die angewendet werden muss. Das Element enthält die folgenden Attribute.  
@@ -164,31 +162,31 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`versioned`|Dies ist optional. Steuert, ob der interne Name der Fensterklasse in der Registrierung verwendete die Version der Assembly enthält, die Fensterklasse. Der Wert dieses Attributs kann sein `yes` oder `no`. Die Standardeinstellung ist `yes`. Der Wert `no` sollte nur verwendet werden, wenn die gleichen Fensterklasse wird durch eine Seite-an-Seite-Komponente und einer entsprechenden nicht-Seite-an-Seite-Komponente definiert, und Sie sie als der gleichen Fensterklasse behandeln möchten. Beachten Sie, die die üblichen Regeln zur fensterklassenregistrierung gelten – nur die erste Komponente, der die Fensterklasse registriert werden, registrieren, da es eine Version, angewendetes keine.|  
   
 ## <a name="hash"></a>hash  
- Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Die `hash` Element besitzt keine Attribute.  
+ Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Das `hash` -Element weist keine Attribute auf.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
   
  Ein Manifest enthält eine Datei, die nicht in der Hashwert berechnet wird, dieses nicht digital signiert werden, da der Benutzer den Inhalt der gehashter Dateien nicht überprüfen können.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
- Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die `dsig:Transforms` Element besitzt keine Attribute.  
+ Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
   
 ## <a name="dsigtransform"></a>dsig  
- Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Die `dsig:Transform` Element weist folgende Attribute.  
+ Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ## <a name="dsigdigestmethod"></a>DigestMethod  
- Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die `dsig:DigestMethod` Element weist folgende Attribute.  
+ Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig: DigestValue  
- Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die `dsig:DigestValue` Element besitzt keine Attribute. Der Textwert ist der berechnete Hash für die angegebene Datei.  
+ Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
   
 ## <a name="remarks"></a>Hinweise  
  Dieses Element identifiziert alle Nichtassemblydateien, aus denen die Anwendung besteht, und insbesondere die Hashwerte für die Überprüfung der Datei. Dieses Element kann auch mit Component Object Model (COM) Isolationsdaten, die mit der Datei verknüpften enthalten. Wenn eine Datei geändert wird, muss die Anwendungsmanifestdatei ebenfalls aktualisiert werden, um die Änderung zu übernehmen.  
@@ -209,7 +207,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

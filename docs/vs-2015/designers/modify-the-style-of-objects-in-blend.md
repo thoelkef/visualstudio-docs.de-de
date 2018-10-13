@@ -1,7 +1,7 @@
 ---
 title: Ändern des Stils von Objekten in Blend | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240149"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ändern des Stils von Objekten in Blend](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend).  
-  
 Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eigenschaften im Bereich **Eigenschaften**.  
   
  Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, erstellen Sie eine wieder verwendbare Ressource. Dies könnte ein *Stil*, eine *Vorlage* oder etwas so einfaches wie eine benutzerdefinierte Farbe sein. Sie können auch ein Steuerelement unterschiedlich basierend auf seine Status anzeigen. Beispielsweise wird eine Schaltfläche grün, wenn der Benutzer darauf klickt.  

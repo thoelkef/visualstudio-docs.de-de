@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit Leistungstools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249483"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [erste Schritte mit Leistungstools](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools).  
-  
 Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die beim Erfassen, Anzeigen und Analysieren der Codeleistung mithilfe der Visual Studio-Leistungstools angewendet werden.  
   
  In diesen Tools können Leistungsdaten auf unterschiedliche Weise erfasst und analysiert werden. In vielen Fällen ist die beste Methode, um zu beginnen, jedoch die Standardeinstellungen des Leistungs-Assistenten zu verwenden, der es Ihnen ermöglicht, Anwendungsstatistiken zu sammeln, die auf Leistungsprobleme in Ihrem Code zeigen können.  

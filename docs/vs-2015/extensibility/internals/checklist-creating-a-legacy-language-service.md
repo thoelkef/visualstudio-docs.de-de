@@ -1,7 +1,7 @@
 ---
 title: 'Prüfliste: Erstellen eines Legacysprachdiensts | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d04e163e45c9a5932375ffec0f0e75ef8254cfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eaf68ccc9a40e0ead91ab6d46cde0ec2cf5cbce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242787"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Checkliste: Erstellen eines Legacysprachdiensts](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-a-legacy-language-service).  
-  
 Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müssen zum Erstellen eines Sprachdiensts für die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Kern-Editor. Integrieren Sie Ihren Sprachdienst in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in die [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  

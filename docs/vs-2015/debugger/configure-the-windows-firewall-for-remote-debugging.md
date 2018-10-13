@@ -1,7 +1,7 @@
 ---
 title: Die Windows-Firewall für Remotedebuggen konfigurieren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273883"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [der Windows-Firewall für Remotedebuggen konfigurieren](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging).  
-  
 In diesem Thema wird die Konfiguration der Firewall für das Remotedebuggen auf Computern mit folgenden Betriebssystemen beschrieben:  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ In diesem Thema wird die Konfiguration der Firewall für das Remotedebuggen auf 
 8.  Daraufhin sollte die neue Regel in der Liste **Eingehende Regeln** bzw. **Ausgehende Regeln** angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

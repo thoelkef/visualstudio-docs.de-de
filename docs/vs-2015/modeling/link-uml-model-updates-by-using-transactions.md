@@ -1,7 +1,7 @@
 ---
 title: Verknüpfen von UML-modellaktualisierungen mithilfe von Transaktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274260"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Verknüpfen von UML-Modellaktualisierungen mithilfe von Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
-Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, können Sie verschiedene Änderungen in einer einzelnen Transaktion aufgerufen Gruppieren einer *verknüpften Rückgängig-Kontext*. Welche Versionen von Visual Studio UML-Modelle unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, können Sie verschiedene Änderungen in einer einzelnen Transaktion aufgerufen Gruppieren einer *verknüpften Rückgängig-Kontext*. Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Standardmäßig kann jede Änderung, die der Code an einem Modell vornimmt, vom Benutzer einzeln rückgängig gemacht werden. Wenn Sie z. B. einen Menübefehl definieren, der die Namen von zwei UML-Klassen vertauscht, kann ein Benutzer den Befehl aufrufen und dann einen einzelnen Rückgängig-Vorgang ausführen. Dabei wird die Änderung eines Namens rückgängig gemacht, nicht jedoch die Änderung des anderen Namens, sodass sich das Modell dann in einem unbeabsichtigten Zustand befindet.  
   

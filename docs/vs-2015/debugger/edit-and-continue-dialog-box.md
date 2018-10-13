@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten und Fortfahren (Dialogfeld) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3e2dc09bdd40902f934e6f29067f4cb88cbbe48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250470"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogfeld „Bearbeiten und Fortsetzen“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [bearbeiten und Fortfahren (Dialogfeld)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box).  
-  
 Nur systemeigen) dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und **bearbeiten und Fortfahren** erkennt, dass Änderungen am Code angewendet werden können. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  
   
  **Ich dieses Dialogfeld nicht mehr anzeigen**  

@@ -1,7 +1,7 @@
 ---
 title: Starten eines Programms | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242546"
 ---
 # <a name="launching-a-program"></a>Starten eines Programms
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Starten eines Programms](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program).  
-  
 Benutzer, die ein Programm debuggen möchten, können F5 zum Ausführen des Debuggers in der IDE drücken. Dies beginnt mit einer Reihe von Ereignissen, die letztlich in der IDE mit einer Debug-Engine (DE), die wiederum verbunden ist, oder angefügt, um die Anwendung wie folgt:  
   
 1.  Die IDE ruft zuerst das Projektpaket, um Einstellungen zum Debuggen von aktiven Projekt der Projektmappe zu erhalten. Die Einstellungen umfassen das Startverzeichnis, die Umgebungsvariablen, den Port an, in dem das Programm ausgeführt wird, und die DE zu verwenden, um das Programm erstellen, wenn angegeben. Diese Einstellungen werden an das debugpaket übergeben.  

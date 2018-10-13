@@ -1,7 +1,7 @@
 ---
 title: WizardData-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ddb4b4e96ca587f6fe5d6d76ad98e1be3ed88ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7177ee0ef338bed815e0f92c7353dcc9b30c957
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257789"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [WizardData-Element (Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/wizarddata-element-visual-studio-templates).  
-  
 Gibt an, benutzerdefinierte XML-Datei  
   
  \<VSTemplate>  

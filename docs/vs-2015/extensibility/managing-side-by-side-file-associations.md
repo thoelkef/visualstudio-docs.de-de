@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Seite-an-Seite Dateizuordnungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253980"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Verwalten von parallelen Dateizuordnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verwalten von Seite-an-Seite-Dateizuordnungen](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations).  
-  
 Wenn das VSPackage dateizuordnungen bereitstellt, müssen Sie entscheiden, das Durchführen von Seite-an-Seite-Installationen, in denen eine bestimmte Version [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum Öffnen einer Datei aufgerufen werden soll. Nicht kompatiblen Dateiformate zusammengesetzte das Problem.  
   
  Benutzer erwarten, dass eine neue Version eines Produkts, die mit früheren Versionen kompatibel sein, damit vorhandene Dateien in einer neuen Version geladen werden können, ohne dass Daten verloren gehen. Im Idealfall kann Ihr VSPackage sowohl laden und speichern die Dateiformate von früheren Versionen haben. Wenn dies nicht "true" ist, sollte Sie bieten das Dateiformat auf die neue Version Ihres VSPackage zu aktualisieren. Der Nachteil dieses Ansatzes ist, dass die aktualisierte Datei in der früheren Version geöffnet werden kann.  

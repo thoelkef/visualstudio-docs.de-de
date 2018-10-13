@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3227329f972dcb8d3aba4380ca816f137ef06f6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274481"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](https://docs.microsoft.com/visualstudio/profiling/walkthrough-identifying-performance-problems).  
-  
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil einer Anwendung erstellt wird, um Leistungsprobleme zu erkennen.  
   
  In dieser exemplarischen Vorgehensweise werden Sie Schritt für Schritt durch den Vorgang der Profilerstellung einer verwalteten Anwendung geleitet, wobei mithilfe von Sampling und Instrumentierung Leistungsprobleme in der Anwendung isoliert und identifiziert werden.  
@@ -45,7 +43,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 -   Analysieren der Ergebnisse der Profilerstellung, für die eine Instrumentation durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
 -   Grundlegende Kenntnisse über C#.  
   

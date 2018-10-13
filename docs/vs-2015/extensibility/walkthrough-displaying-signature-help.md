@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,25 +15,23 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247922"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help).  
-  
 Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Zeichen für den Parameter Liste (in der Regel eine öffnende Klammer) eingibt. Wie ein Parameter und das Parametertrennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, und den nächsten Parameter in Fettschrift angezeigt wird. Sie können die Signaturhilfe definieren, im Kontext von einem Sprachdienst, können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateinamentyp und Anzeigen von Signaturhilfe für nur diesen Typ, oder Sie können die Signaturhilfe anzeigen, für die einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von Signaturhilfe für den Inhaltstyp "Text".  
   
  Signaturhilfe wird in der Regel ausgelöst werden, geben Sie ein bestimmtes Zeichen, z. B. "(" (Klammer), und geben Sie ein anderes Zeichen, z. B. geschlossen ")" (schließende Klammer). IntelliSense-Funktionen, die ausgelöst werden, durch Eingabe eines Zeichens können implementiert werden, indem ein Befehlshandler für die Tastatureingaben (die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle) und ein Handler für Anbieter, implementiert die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> Schnittstelle. Um die Quelle Signaturhilfe zu erstellen, die die Liste der Signaturen in der Signatur zu Hilfe nehmen, implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> Schnittstelle und eine Quellenanbieter, der implementiert die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> Schnittstelle. Die Anbieter sind Komponenten des Managed Extensibility Framework (MEF) und sind zuständig für die Quell- und Controller-Klassen exportieren und Importieren von Diensten und Makler, z. B. die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, mit dem Sie im Textpuffer navigieren, und die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, die die Sitzung Signaturhilfe ausgelöst.  
   
  Diese exemplarische Vorgehensweise veranschaulicht das Implementieren von Signatur-Hilfe für einen hartcodierten Satz von Bezeichnern. In vollständige Implementierungen ist die Sprache für die Bereitstellung, dass der Inhalt verantwortlich.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts  

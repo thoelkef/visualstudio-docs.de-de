@@ -1,7 +1,7 @@
 ---
 title: GUIDs und IDs der Visual Studio-Symbolleisten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24e406f0d7e4fe9782ccba56aa33dfbb4b658fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa336f6187611a8ad54866f18cc1f46996daf07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275079"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs der Visual Studio-Symbolleisten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [GUIDs und IDs der Visual Studio-Symbolleisten](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-toolbars).  
-  
 Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'CA2240: Implementieren ISerializable ordnungsgemäß | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c383f42e7667a3f822298c14f29e81d22a309b
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8613e4ea5fedec9e5c95d6cfde3a61bc37f2cd92
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272453"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: ISerializable ordnungsgemäß implementieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA2240: ISerializable implementieren ordnungsgemäß](https://docs.microsoft.com/visualstudio/code-quality/ca2240-implement-iserializable-correctly).
-
 |||
 |-|-|
 |TypeName|ImplementISerializableCorrectly|

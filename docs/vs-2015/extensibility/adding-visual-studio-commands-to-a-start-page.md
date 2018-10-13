@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Visual Studio-Befehlen zu einer Startseite | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3625f64686265123cd0b7e6f432db47cd978ae3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a301357765f85d80afb71985d51044227204997
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256238"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen von Visual Studio-Befehle auf einer Startseite](https://docs.microsoft.com/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page).  
-  
 Wenn Sie eine benutzerdefinierte Startseite erstellen, können Sie Visual Studio-Befehle, hinzufügen. Dieses Dokument erläutert die verschiedenen Möglichkeiten, Visual Studio-Befehle für XAML-Objekte auf einer Startseite zu binden.  
   
  Weitere Informationen über Befehle in XAML finden Sie unter [Befehlsübersicht](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  

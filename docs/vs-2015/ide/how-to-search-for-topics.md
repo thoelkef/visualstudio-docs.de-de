@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Suchen nach Themen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248287"
 ---
 # <a name="how-to-search-for-topics"></a>Gewusst wie: Suchen nach Themen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [wie: Suchen nach Themen](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics).  
-  
 Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort enthalten. Sie haben außerdem die Möglichkeit, die Suche mithilfe von Platzhalterausdrücken, logischen Operatoren und erweiterten Suchoperatoren einzugrenzen und anzupassen.  
   
 ### <a name="to-open-the-search-tab"></a>Öffnen Sie die Registerkarte "Suchen"  

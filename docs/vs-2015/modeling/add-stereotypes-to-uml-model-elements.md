@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Stereotypen zu UML-Modellelementen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259713"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Hinzufügen von Stereotypen zu UML-Modellelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen von Stereotypen zu UML-Modellelemente](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu kommentieren und spezielle Eigenschaften bereitzustellen.  Um einem Modellelement einen Stereotypen hinzuzufügen, muss der Stereotyp in einem Profil definiert werden, und Sie müssen das Profil mit einem Paket oder dem Modell verknüpfen, das das Modellelement enthält. Jeder Stereotyp kann nur bestimmten Arten von Modellelementen hinzugefügt werden, z. B. UML-Klassen, Anwendungsfällen oder Komponenten.  
   
  Wenn Sie beispielsweise eine UML-Klasse mit dem Stereotyp «Specification» definieren möchten, müssen Sie ihn in einem Paket oder einem Modell erstellen, das mit dem Standardprofil L2 verknüpft ist.  

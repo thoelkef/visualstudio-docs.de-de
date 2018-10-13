@@ -1,7 +1,7 @@
 ---
 title: ProjectSubType-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3b51174948104dd8e5bf67d90f967f028cc6773
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259317"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ProjectSubType-Element (Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/projectsubtype-element-visual-studio-templates).  
-  
 Klassifiziert die Vorlage in einer Unterkategorie in angegebene Wert der `ProjectType` Element.  
   
  \<VSTemplate>  

@@ -1,7 +1,7 @@
 ---
 title: Implementieren von benutzerdefiniertem Code Codeanalyse-Eincheckrichtlinien für verwalteten Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268969"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Implementieren von benutzerdefinierten-Codeanalyse-Eincheckrichtlinien für verwalteten Code](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder eines Teamprojekts im Quellcode ausgeführt werden müssen, bevor sie die Versionskontrolle eingecheckt ist. Microsoft bietet eine Reihe von *-Regelsätze* dieser Gruppe Codeanalyseregeln in mehrere Funktionsbereiche. *Benutzerdefinierte Eincheckrichtlinien-Regelsätze* Geben Sie einen Satz von Codeanalyseregeln, die für ein Teamprojekt spezifisch sind. Ein Regelsatz wird in eine RULESET-Datei gespeichert.  
   
  Check-in-Richtlinien werden auf Teamprojektebene festgelegt und durch den Speicherort des eine RULESET-Datei in der Steuerelementstruktur Version angegeben. Es gibt keine Einschränkungen für den Speicherort der Versionskontrolle von der Team-Richtliniensatz benutzerdefinierte Regel.  

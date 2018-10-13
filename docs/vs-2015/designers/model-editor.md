@@ -1,7 +1,7 @@
 ---
 title: Modell-Editor | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264038"
 ---
 # <a name="model-editor"></a>Modell-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Modell-Editor](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model-Editor 3D-Modelle anzuzeigen, erstellen und ändern können.  
   
  Sie können den Model-Editor verwenden, um einfache 3D-Modelle von Grund auf zu erstellen, oder komplexere 3D-Modelle, die mithilfe vollwertiger 3D-Modellierungstools erstellt wurden, anzuzeigen und zu ändern. Der Model-Editor unterstützt mehrere 3D-Modellformate, die in der Entwicklung von DirectX-Apps verwendet werden.  
@@ -275,7 +273,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |-------------|------------------------|  
 |In den Modus **Auswählen** wechseln|STRG+G, STRG+Q<br /><br /> S|  
 |In den Modus **Zoom** wechseln|STRG+G, STRG+Z<br /><br /> Z|  
-|In den Modus **Schwenken** wechseln|STRG+G, STRG+P<br /><br /> B|  
+|In den Modus **Schwenken** wechseln|STRG+G, STRG+P<br /><br /> K|  
 |Alles auswählen|STRG + A|  
 |Die aktuelle Auswahl löschen|Löschen|  
 |Brechen Sie die aktuelle Auswahl ab.|Escape|  
@@ -317,7 +315,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
-|[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
+|[Image Editor](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader-Designers zur Arbeit mit Shadern.|
 
 

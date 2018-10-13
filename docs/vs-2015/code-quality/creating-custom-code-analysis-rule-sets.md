@@ -1,7 +1,7 @@
 ---
 title: Erstellen von benutzerdefiniertem Code, Codeanalyse-Regelsätze | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273584"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Erstellen benutzerdefinierter Codeanalyse-Regelsätze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erstellen von benutzerdefinierten Code Codeanalyse-Regelsätze](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Sie können Regeln für die Codeanalyse auf ein Projekt mit verwaltetem Code anwenden, durch Angeben eines Regelsatzes, das eine oder mehrere Regeln enthält. Der Standardregelsatz von Microsoft bieten Gruppen von Regeln, die von der Funktion und der Tiefe organisiert sind. Beispielsweise enthalten die grundlegende Microsoft Richtlinien-Regeln und die erweiterten Entwurfsrichtlinienregeln der Microsoft-Regeln, die benutzerfreundlichkeit und verwaltbarkeit Probleme mit hinzugefügten Schwerpunkt auf Benennungsregeln im Regelsatz erweiterte konzentrieren.  
   
  Sie können auch Erstellen eines benutzerdefinierten Regelsatzes, das kombiniert zwei oder mehr standard Regelsätze oder, legt die Regeln in eine oder mehrere Standardregelsätze. Sie speichern die benutzerdefinierte Regel werden eine RULESET-Datei, und Sie können diese in mehrere Codeprojekte angeben.  

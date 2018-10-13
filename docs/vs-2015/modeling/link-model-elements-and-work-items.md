@@ -1,7 +1,7 @@
 ---
 title: Verknüpfen von Modellelementen und Arbeitsaufgaben | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 603438fda4c2f883376292b68896309a4e669be5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263918"
 ---
 # <a name="link-model-elements-and-work-items"></a>Verknüpfen von Modellelementen und Arbeitselementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](https://docs.microsoft.com/visualstudio/modeling/link-model-elements-and-work-items).  
-  
 Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere Arbeiten, die mit dem Modell verknüpft sind, indem Sie Modellelemente in Visual Studio und Arbeitsaufgaben in Team Foundation Server oder Visual Studio Team Services miteinander verknüpfen. Fügen Sie Dokumente an verknüpfte Arbeitsaufgaben an, um sie Modellelementen zuzuordnen.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -145,7 +143,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 1.  Vergewissern Sie sich in **Team Explorer**, dass eine Verbindung mit dem Teamprojekt hergestellt wurde, in dem die Modellelemente mit der Arbeitsaufgabe verknüpft sind.  
   
     > [!NOTE]
-    >  Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Finden Sie unter [Problembehandlung](#Troubleshooting) und [erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    >  Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Weitere Informationen finden Sie unter [Problembehandlung](#Troubleshooting) und [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2.  Öffnen Sie die Arbeitsaufgabe, und wählen Sie **Links**aus. Öffnen Sie unter **Modelllink**das Kontextmenü für das verknüpfte Modellelement. Wählen Sie **Verknüpftes Element öffnen**aus.  
   
@@ -173,7 +171,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
   
 |**Problem**|**Mögliche Ursache**|**Auflösung**|  
 |---------------|------------------------|--------------------|  
-|Das Modellelement, das Sie verknüpfen möchten, kann nicht gefunden werden.|Das Element könnte sich in einem Diagramm eines Modellierungsprojekts in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden. Sie verfügen möglicherweise über keinen Arbeitsbereich, der dem Diagramm zugeordnet ist.|Ordnen Sie den Arbeitsbereich dem Modellierungsprojekt und dem Diagramm zu. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen.<br /><br /> Die für dieses Problem angezeigte Fehlermeldung enthält den Pfad, mit dem Sie den Arbeitsbereich zuordnen können.<br /><br /> Finden Sie unter [erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Das Modellelement, das Sie verknüpfen möchten, kann nicht gefunden werden.|Das Element könnte sich in einem Diagramm eines Modellierungsprojekts in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden. Sie verfügen möglicherweise über keinen Arbeitsbereich, der dem Diagramm zugeordnet ist.|Ordnen Sie den Arbeitsbereich dem Modellierungsprojekt und dem Diagramm zu. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen.<br /><br /> Die für dieses Problem angezeigte Fehlermeldung enthält den Pfad, mit dem Sie den Arbeitsbereich zuordnen können.<br /><br /> Siehe [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Das verknüpfte Modellelement kann nicht gefunden werden.|Das verknüpfte Element könnte sich in einem Diagramm befinden, das verschoben, umbenannt oder gelöscht wurde.|1.  Löschen Sie in dem Arbeitselement den Link zum Modellelement.<br />2.  Erstellen Sie einen neuen Link vom Modellelement zum Arbeitselement.|  
 |Die Arbeitsaufgabe hat nicht die von Ihnen erwarteten verknüpften Modellelemente.|Eine Arbeitsaufgabe zeigt ein verknüpftes Ebenenelement nur an, wenn der Link von der Arbeitsaufgabe erstellt wurde. Wenn das Team [!INCLUDE[esprscc](../includes/esprscc-md.md)] nicht verwendet, wird der lokale Pfad der Diagramme zum Erstellen der Links verwendet. Wenn sich das Modellierungsprojekt und seine Diagramme in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden, können alle Teammitglieder, die auf das Projekt zugreifen können, verknüpfte Elemente in Arbeitsaufgaben anzeigen.|Versuchen Sie, die Arbeitsaufgabe zu aktualisieren.|  
 |Das Löschen eines Links aus einer Arbeitsaufgabe zu einem Modellelement entfernt den Link von dem Modellelement zur Arbeitsaufgabe nicht.||Löschen Sie den Link zur Arbeitsaufgabe ausgehend vom Modellelement.|  

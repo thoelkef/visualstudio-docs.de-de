@@ -1,7 +1,7 @@
 ---
 title: ResolveAssemblyReference-Task | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1405b9675827e01628c8bb976500bfcba34ec99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6260032b5e8c8a59df8026c0438da17ae9c1c23c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259115"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ResolveAssemblyReference-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/resolveassemblyreference-task).  
-  
   
 Bestimmt alle Assemblys, die von den angegebenen Assemblys abhängig sind. Dies schließt Abhängigkeiten zweiter und `n`-ter Ordnung ein.  
   
@@ -70,7 +68,7 @@ Bestimmt alle Assemblys, die von den angegebenen Assemblys abhängig sind. Dies 
 |`InstalledAssemblyTables`|Optionaler `String` -Parameter.<br /><br /> Enthält eine Liste von XML-Dateien, die auf dem Zielcomputer als installiert erwartet werden.<br /><br /> Wenn `InstalledAssemblyTables` festgelegt ist, werden frühere Versionen der Assemblys in der Liste mit den in der XML-Datei aufgelisteten neueren Versionen zusammengeführt. Ferner werden Assemblys mit der Einstellung „InGAC='true'“ als erforderliche Komponenten angesehen und auf „CopyLocal='false'“ festgelegt, wenn dies nicht explizit außer Kraft gesetzt wird.<br /><br /> Optional können für Elemente in dieser Liste die FrameworkDirectory-Metadaten angegeben werden, um eine `InstalledAssemblyTable` einem bestimmtem Frameworkverzeichnis zuzuordnen.  Diese Einstellung wird jedoch ignoriert, es sei denn, der Redist-Name mit beginnt mit<br /><br /> „Microsoft-Windows-CLRCoreComp“.<br /><br /> Wenn nur ein `TargetFrameworkDirectories` -Element vorhanden ist, werden alle Elemente in dieser Liste, für die keine FrameworkDirectory-Metadaten angegeben sind, behandelt, als ob sie auf einen eindeutigen Wert festgelegt wären. Dieser wird übergeben<br /><br /> an `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|Optionaler `String[]` -Parameter.<br /><br /> Gibt eine Liste von Verzeichnissen an, die die Redist-Listen für das aktuellste Framework enthalten, das auf dem Computer als Ziel festgelegt werden kann. Wenn der Parameter nicht festgelegt ist, wird die höchste auf dem Computer für einen angegebenen Zielframework-Bezeichner installierte Frameworkversion verwendet.|  
 |`ProfileName`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> - Gibt den Namen des als Ziel zu verwendenden Frameworkprofils an. Beispielsweise „Client“, „Web“ oder „Netzwerk“.|  
-|`RelatedFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Enthält verknüpfte Dateien als Verweis, wie etwa XML- und PDB-Dateien, die den gleichen Basisnamen aufweisen.<br /><br /> Die in diesem Parameter aufgelisteten Dateien können optional die folgenden Elementmetadaten enthalten:<br /><br /> -   `Primary`: `Boolean` -Wert. Bei `true`wurde das Dateielement mithilfe des `Assemblies` -Parameter. Der Standardwert ist `false`sein.<br />-   `CopyLocal`: `Boolean` -Wert. Gibt an, ob der angegebene Verweis in das Ausgabeverzeichnis kopiert werden soll.|  
+|`RelatedFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Enthält verknüpfte Dateien als Verweis, wie etwa XML- und PDB-Dateien, die den gleichen Basisnamen aufweisen.<br /><br /> Die in diesem Parameter aufgelisteten Dateien können optional die folgenden Elementmetadaten enthalten:<br /><br /> -   `Primary`: `Boolean` -Wert. Bei `true`wurde das Dateielement mithilfe des `Assemblies` -Parameter. Der Standardwert ist `false`sein.<br />-   `CopyLocal`: `Boolean` -Wert. Gibt an, ob der angegebene Verweis in das Ausgabeverzeichnis kopiert werden soll.|  
 |`ResolvedDependencyFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Enthält die Pfade der *n*-ten Ordnung zu Abhängigkeiten. Dieser Parameter enthält keine primären Verweise der ersten Ordnung, die im `ResolvedFiles` -Parameter enthalten sind.<br /><br /> Die Elemente in diesem Parameter können optional die folgenden Elementmetadaten enthalten:<br /><br /> -   `CopyLocal`: `Boolean` -Wert. Gibt an, ob der angegebene Verweis in das Ausgabeverzeichnis kopiert werden soll.<br />-   `FusionName`: `String` -Wert. Gibt den Namen für diese Abhängigkeit an.<br />-   `ResolvedFrom`: `String` -Wert. Gibt den literalen Suchpfad an, aus dem diese Datei aufgelöst wurde.|  
 |`ResolvedFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Enthält eine Liste aller in vollständige Pfade aufgelösten primären Verweise.<br /><br /> Die Elemente in diesem Parameter können optional die folgenden Elementmetadaten enthalten:<br /><br /> -   `CopyLocal`: `Boolean` -Wert. Gibt an, ob der angegebene Verweis in das Ausgabeverzeichnis kopiert werden soll.<br />-   `FusionName`: `String` -Wert. Gibt den Namen für diese Abhängigkeit an.<br />-   `ResolvedFrom`: `String` -Wert. Gibt den literalen Suchpfad an, aus dem diese Datei aufgelöst wurde.|  
 |`SatelliteFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt alle gefundenen Satellitendateien an. Für diese gilt „CopyLocal=true“, wenn der Verweis oder die Abhängigkeit, der bzw. die das Vorhandensein dieses Elements verursacht hat, ebenfalls „CopyLocal=true“ ist.<br /><br /> Die Elemente in diesem Parameter können optional die folgenden Elementmetadaten enthalten:<br /><br /> -   `CopyLocal`: `Boolean` -Wert. Gibt an, ob der angegebene Verweis in das Ausgabeverzeichnis kopiert werden soll. Dieser Wert ist `true` , wenn der Verweis oder die Abhängigkeit, der bzw. die das Vorhandensein dieses Elements verursacht hat, den `CopyLocal` -Wert `true`sein.<br />-   `DestinationSubDirectory`: `String` -Wert. Gibt das relative Zielverzeichnis an, in das dieses Element kopiert werden soll.|  

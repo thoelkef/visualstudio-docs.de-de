@@ -1,7 +1,7 @@
 ---
 title: Überprüfen des Systems während der Entwicklung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262183"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Überprüfen des Systems während der Entwicklung](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Benutzer und der Architektur des Systems in Einklang zu bringen.  
   
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Funktionen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -37,7 +35,7 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
   
 |**Aufgaben**|**Verwandte Themen**|  
 |---------------|---------------------------|  
-|**Stellen Sie sicher, dass das Modell konsistent ist:**<br /><br /> Abhängig davon, wie Modelle im Projekt verwendet und interpretiert werden, kann es sinnvoll sein, einige Kombinationen von Elementen nicht zuzulassen. Sie können z.B. durch eine Einschränkung festlegen, dass UML-Klassen immer [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]-kompatible Namen haben müssen. Solche Einschränkungen können in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen definiert werden.|-   [Überprüfen des UML-Modells](../modeling/validate-your-uml-model.md)<br />-   [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)|  
+|**Stellen Sie sicher, dass das Modell konsistent ist:**<br /><br /> Abhängig davon, wie Modelle im Projekt verwendet und interpretiert werden, kann es sinnvoll sein, einige Kombinationen von Elementen nicht zuzulassen. Sie können z.B. durch eine Einschränkung festlegen, dass UML-Klassen immer [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]-kompatible Namen haben müssen. Solche Einschränkungen können in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterungen definiert werden.|-   [Überprüfen des UML-Modells](../modeling/validate-your-uml-model.md)<br />-   [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)|  
 |**Stellen Sie sicher, dass die Software die Anforderungen der Benutzer erfüllt**:<br /><br /> Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Durch diese Vorgehensweise können Sie sicherstellen, dass die Anforderungen, die für die Benutzer und andere Projektbeteiligte wichtig sind, getestet werden. Außerdem können Sie dadurch die Tests schneller aktualisieren, wenn sich die Anforderungen ändern.|-   [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)|  
 |**Stellen Sie sicher, dass die Software mit dem vorgesehenen Entwurf des Systems konsistent bleibt:**<br /><br /> Ebenendiagramme beschreiben die vorgesehenen Abhängigkeiten zwischen den Komponenten der Anwendung. Während der Entwicklung können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Code dem vorgesehenen Entwurf entsprechen.|-   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|  
   

@@ -1,7 +1,7 @@
 ---
 title: Profilerstellungstools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244036"
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Profilerstellung in Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen.  
   
  Lesen Sie die nachfolgende Zusammenfassung, um zu sehen, welche Tools für Ihren Projekttyp (z.B. Desktop, UWP, ASP.NET) verfügbar sind.  
@@ -48,7 +46,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="cpu-usage"></a>CPU-Auslastung  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- Das Tool **CPU-Auslastung** Tool zeigt Ihnen, wo die CPU Zeit für die Ausführung von C++-, C#-/VB- und JavaScript-Code verbringt.  Sie können dieses Tool sowohl mit Desktop- als auch universellen Windows-Apps ausführen sowie mit Azure App Service-Apps. Das Tool **CPU-Auslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers (**Debuggen &gt; Leistungsanalyse...**). Finden Sie unter [CPU-Auslastung](../profiling/cpu-usage.md) für Weitere Informationen.  
+ Das Tool **CPU-Auslastung** Tool zeigt Ihnen, wo die CPU Zeit für die Ausführung von C++-, C#-/VB- und JavaScript-Code verbringt.  Sie können dieses Tool sowohl mit Desktop- als auch universellen Windows-Apps ausführen sowie mit Azure App Service-Apps. Das Tool **CPU-Auslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers (**Debuggen &gt; Leistungsanalyse...**). Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [CPU-Auslastung](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Leistungs-Explorer  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

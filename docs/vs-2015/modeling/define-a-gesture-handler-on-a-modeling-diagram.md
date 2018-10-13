@@ -1,7 +1,7 @@
 ---
 title: Definieren eines gestenhandlers in einem Modellierungsdiagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,26 +15,24 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248075"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Definieren eines gestenhandlers in einem Modellierungsdiagramm](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Benutzer auf Elemente doppelklicken oder Elemente in ein UML-Diagramm ziehen. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.  
   
  Wenn bereits ein integriertes Verhalten für den Diagrammtyp und den Elementtyp vorhanden ist, das gezogen werden soll, können Sie dieses Verhalten möglicherweise nicht hinzufügen oder überschreiben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-gesture-handler"></a>Erstellen eines Gestenhandlers  
  Um für einen UML-Designer einen Gestenhandler zu definieren, müssen Sie eine Klasse erstellen, die das Verhalten des Gestenhandlers definiert, und diese Klasse in eine Visual Studio-Integrationserweiterung (VSIX) einbetten. Die VSIX fungiert als Container, der den Handler installieren kann. Es gibt zwei alternative Methoden, um einen Gestenhandler zu definieren:  
@@ -59,7 +57,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>So erstellen Sie ein separates Klassenbibliotheksprojekt (DLL) für den Gestenhandler  
   
-1.  Erstellen Sie in einer neuen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe oder in einer vorhandenen Projektmappe ein Klassenbibliotheksprojekt.  
+1.  Erstellen Sie in einer neuen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe oder in einer vorhandenen Projektmappe ein Klassenbibliotheksprojekt.  
   
     1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
@@ -244,15 +242,15 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
-     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
+     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
   
     -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
-    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge in die **externes Programm starten** Feld ist der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in der Regel:  
+    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Gestenhandlerklasse aufgeführt sind.  
+2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Gestenhandlerklasse aufgeführt sind.  
   
 3.  Doppelklicken Sie auf eine beliebige Stelle im Diagramm. Der Doppelklickhandler sollte aufgerufen werden.  
   
@@ -327,7 +325,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
      Wenn das Quellobjekt ein aus UML-Modell-Explorer oder einem anderen UML-Diagramm gezogenes UML-Element ist, finden Sie unter [Abrufen von UML-Modellelementen aus IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes  
- Weitere Informationen über das Schreiben des Codes zum Lesen und aktualisieren Sie das Modell finden Sie unter [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md).  
+ Weitere Informationen über das Schreiben des Codes zum Lesen und Aktualisieren des Modells finden Sie unter [Programming with the UML API](../modeling/programming-with-the-uml-api.md).  
   
  Informationen zum Zugreifen auf Modellinformationen in einem Ziehvorgang finden Sie unter [Abrufen von UML-Modellelementen aus IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -354,7 +352,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
  Weitere Informationen finden Sie unter [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md).  
   
 ##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
- Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
+ Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
   
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung  
   
@@ -366,7 +364,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-     Der Zielcomputer müssen eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , die Sie angegeben, **"Source.Extension.vsixmanifest"**.  
+     Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
   
 3.  Öffnen Sie auf dem Zielcomputer die **.vsix** -Datei.  
   

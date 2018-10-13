@@ -1,7 +1,7 @@
 ---
 title: Unterstützte Codeänderungen (c#) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 655d80792bf1a2ab6c1af658bcfb6fb3648f5d10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02777efc206fed14c32a2cc73d31e475fd9e2064
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262561"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Supported Code Changes (c#)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-csharp).  
-  
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.  
   
  Folgende Änderungen am C#-Code können während einer Debugsitzung nicht übernommen werden:  
@@ -49,7 +47,7 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
   
 -   Hinzufügen, Entfernen oder Ändern von Attributen.  
   
--   Hinzufügen, Entfernen oder Ändern von `using`-Direktiven.  
+-   Hinzufügen, Entfernen oder Ändern von `using`-Anweisungen.  
   
 -   Hinzufügen von `foreach`, `using` oder `lock` zu der aktiven Anweisung.  
   

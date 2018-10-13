@@ -1,7 +1,7 @@
 ---
 title: IDE-definierte Befehle zum Erweitern von Projektsystemen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b00a83774185b4fe65ee2b7171e25492320b5bfb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ac4cb73c5875a37d25a1eb8f4fe8600657c4b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270770"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE-definierte Befehle zum Erweitern von Projektsystemen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [IDE-Defined-Befehle zum Erweitern von Projektsystemen](https://docs.microsoft.com/visualstudio/extensibility/internals/ide-defined-commands-for-extending-project-systems).  
-  
 Beim Erweitern von Projektsystemen werden sollen, können Sie Befehle verwenden und Gruppen, die von bereitgestellte Befehl die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
  Befehls-Elemente, die besonders nützlich zum Erweitern von Projektsystemen sind Sie in den folgenden Abschnitten.  

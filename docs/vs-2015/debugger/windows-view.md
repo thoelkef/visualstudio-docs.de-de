@@ -1,7 +1,7 @@
 ---
 title: Windows-Ansicht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261702"
 ---
 # <a name="windows-view"></a>Fensteransicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Windows-Ansicht](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 Wenn Sie erstmalig Spy++ öffnen, zeigt Windows-Ansicht eine Struktur mit allen Windows- und Steuerelemente im System. Werden die Fenster-Handle und die Klasse angezeigt. Das aktuelle Desktopfenster ist am Anfang der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops, und anhand der Hierarchie Standardfenster aufgeführt sind. Gleichgeordnete Fenster werden im erweiterbaren Listen unter der übergeordneten Elemente eingezogen angezeigt.  
   
  Die folgende Abbildung zeigt eine typische Spy++-Windows-Ansicht mit den obersten Knoten erweitert.  
