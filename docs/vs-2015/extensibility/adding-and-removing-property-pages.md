@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen und Entfernen von Eigenschaftenseiten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221987"
 ---
 # <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [hinzufügen und Entfernen von Eigenschaftenseiten](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages).  
-  
 Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaften, Einstellungen und Ressourcen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sie wird als ein einzelnes Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) und enthält eine Reihe von Bereichen auf der rechten Seite, die über die Registerkarten auf der linken Seite zugegriffen wird. Die Bereiche (häufig als Eigenschaftenseiten bezeichnet) im Projekt-Designer variieren je nach Projekttyp und Sprache. Projekt-Designer kann zugegriffen werden, mit der **Eigenschaften** Befehl die **Projekt** Menü.  
   
  Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-Designer angezeigt. Ebenso möglicherweise einige Projektuntertypen integrierte Eigenschaftenseiten entfernt werden müssen. Dazu entweder muss Ihre Projektuntertyp implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle, und überschreiben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode. Indem Sie diese Methode überschreiben und `propId` mit einem der Werte der Parameter der <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> -Enumeration können Sie filtern, hinzufügen oder entfernen Sie die Projekteigenschaften. Beispielsweise müssen Sie eine Seite mit den konfigurationsabhängigen Eigenschaftenseiten hinzugefügt. Zu diesem Zweck müssen Sie zum Filtern von konfigurationsabhängigen Eigenschaftenseiten, und fügen eine neue Seite klicken Sie dann auf die vorhandene Liste.  

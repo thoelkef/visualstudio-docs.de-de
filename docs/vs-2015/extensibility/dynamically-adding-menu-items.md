@@ -1,7 +1,7 @@
 ---
 title: Dynamisches Hinzufügen von Menüelementen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300197"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamisches Hinzufügen von Menüelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Menüelemente dynamisch hinzufügen](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 Sie können Menüelemente zur Laufzeit hinzufügen, durch Angabe der `DynamicItemStart` Befehl Flag für die Definition eines Platzhalter-Schaltfläche in der Visual Studio-Befehl-Befehlstabellen (VSCT)-Datei (im Code) definieren, die Anzahl der im Menü für die Anzeige und die Befehle behandeln Elemente. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamische Menüelemente ersetzt.  
   
  Visual Studio verwendet dynamische Listen in die **zuletzt verwendet** (MRU)-Liste, in dem die Namen der Dokumente angezeigt werden, die vor kurzem geöffnet wurden, und die **Windows** Liste, die die Namen von Windows zeigt die gerade geöffnet sind.   Die `DynamicItemStart` -Flag auf eine Befehlsdefinition gibt an, dass der Befehl ein Platzhalter ist, bis das VSPackage geöffnet wird. Wenn das VSPackage geöffnet wird, wird der Platzhalter ersetzt, mit 0 oder mehr Befehle, die zur Laufzeit erstellt und die dynamische Liste hinzugefügt. Sie können möglicherweise nicht die Position im Menü angezeigt, in denen die dynamische Liste angezeigt wird, bis das VSPackage geöffnet wird.  Um die dynamische Liste aufzufüllen, fragt Visual Studio das VSPackage, um einen Befehl mit der ID suchen, deren erste Zeichen, die die ID des Platzhalters identisch sind. Wenn Visual Studio einen entsprechenden Befehl gefunden wird, fügt es der Name des Befehls Liste mit den dynamischen hinzu. Anschließend inkrementiert die ID und sucht nach einer anderen entsprechenden Befehl aus, um die dynamische Liste hinzugefügt werden soll, bis keine weiteren dynamischer Befehle vorhanden sind.  

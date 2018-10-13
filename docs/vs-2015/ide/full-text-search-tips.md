@@ -1,7 +1,7 @@
 ---
 title: Tipps zur Volltextsuche | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f5fe5e4d4e1f5e1c071bd4da89588022bde9831
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303432"
 ---
 # <a name="full-text-search-tips"></a>Tipps zur Volltextsuche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Suchtipps für die Volltext-](https://docs.microsoft.com/visualstudio/ide/full-text-search-tips).  
-  
 Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hilfe ist das Ausführen einer Volltextsuche. Um Ihre Ergebnisse einzugrenzen und anzupassen, müssen Sie verstehen, welchen Einfluss Syntax auf Ihre Abfrage hat. Dieses Thema stellt Tipps, Vorgehensweisen und detaillierte Syntaxinformationen vor, mit denen Sie bessere Abfragen erstellen können.  
   
 ## <a name="full-text-search-tips"></a>Tipps zur Volltextsuche  

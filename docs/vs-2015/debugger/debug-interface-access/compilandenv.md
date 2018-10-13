@@ -1,7 +1,7 @@
 ---
 title: CompilandEnv | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af2eddcf6c1abebdd829297bf196fd7b8503d2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c0579595814e882cb7cab73cf7fd20ae6f267e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199263"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [CompilandEnv](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilandenv).  
-  
 Der Compiler kann zusätzliche Umgebungsvariablen mit Symbolen enthalten. Es gibt ein `SymTagCompilandEnv` Symbol für jede dieser Variablen.  
   
 ## <a name="properties"></a>Eigenschaften  

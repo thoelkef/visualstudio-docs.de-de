@@ -1,7 +1,7 @@
 ---
 title: Sicherheitsbibliographie | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea84f9875c2aff543e604e87f8829970589e9c54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0634c07d18fc9bac782eb2ccd2407afd86089e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178710"
 ---
 # <a name="security-bibliography"></a>Sicherheitsbibliographie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Sicherheitsbibliographie](https://docs.microsoft.com/visualstudio/ide/security-bibliography).  
-  
 Nachfolgend sind ausgewählte Ressourcen zum Entwickeln sicherer Anwendungen und Konfigurieren sicherer Umgebungen aufgeführt, die sowohl online als auch in gedruckter Form verfügbar sind:  
   
 ## <a name="microsoft-web-sites"></a>Microsoft-Websites  

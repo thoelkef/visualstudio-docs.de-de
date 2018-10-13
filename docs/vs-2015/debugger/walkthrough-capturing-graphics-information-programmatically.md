@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298154"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Erfassen von Grafiken Informationen programmgesteuert](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically).  
-  
-Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
+Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
   
  Programmgesteuerte Erfassung ist in Szenarien wie den folgenden nützlich:  
   
@@ -113,7 +111,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Grafikdiagnose zur 
     ```  
   
     > [!NOTE]
-    >  Wenn `DXGIGetDebugInterface1` gibt `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), stellen Sie sicher, dass die app ausgeführt wird, unter der Grafikdiagnose (Alt + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    >  Wenn `DXGIGetDebugInterface1` den Wert `E_NOINTERFACE` zurückgibt (`error: E_NOINTERFACE No such interface supported`), müssen Sie sicherstellen, dass die App unter der Grafikdiagnose (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen  
  Wenn Sie nun über eine gültige `IDXGraphicsAnalysis` -Schnittstelle verfügen, können Sie `BeginCapture` und `EndCapture` verwenden, um Grafikinformationen zu erfassen.  
@@ -207,7 +205,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Grafikdiagnose zur 
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erfassen von Grafikinformationen](../debugger/walkthrough-capturing-graphics-information.md)   
- [Erfassen von Grafikinformationen](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Befehlszeilen-Erfassungstool](../debugger/command-line-capture-tool.md)
 
 

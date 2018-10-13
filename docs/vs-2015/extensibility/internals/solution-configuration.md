@@ -1,7 +1,7 @@
 ---
 title: Projektmappenkonfiguration | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245794"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projektmappenkonfiguration](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration).  
-  
 Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. Sie leiten das Verhalten der **starten** (F5) Schlüssel und **erstellen** Befehle. Standardmäßig werden diese Befehle erstellen und die Debug-Konfiguration zu starten. Führen Sie beide Befehle im Kontext einer Projektmappenkonfiguration. Dies bedeutet, dass der Benutzer F5 erwarten kann, zu starten und zu erstellen, die beliebige die aktive Projektmappe über die Einstellungen konfiguriert ist. Die Umgebung für Lösungen anstelle von Projekten zu optimieren, wenn es darum geht, erstellen und ausführen soll.  
   
  Der standardmäßige Visual Studio-Symbolleiste enthält eine Schaltfläche "Start" und eine Projektmappenkonfiguration-Dropdownliste rechts neben der Schaltfläche "Start". Dieser Liste kann Benutzer wählen die Konfiguration gestartet werden soll, wenn F5 gedrückt wird, ihre eigenen Projektmappenkonfigurationen erstellen oder Bearbeiten einer vorhandenen Konfigurations.  

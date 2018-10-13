@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Bereitstellen von Kontext für Editoren | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9509dfeef5af4866531af96fce6f4c1717100a94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214609"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Bereitstellen von Kontext für Editoren](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-context-for-editors).  
-  
 Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt, oder vor der Fokus sofort der Fokus zu einem Toolfenster verschoben wurde. Sie können die Kontext für einen Editor wie folgt angeben:  
   
 1.  Erstellen Sie eine Kontextsammlung.  

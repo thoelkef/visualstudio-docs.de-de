@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit Klassendiagrammen (Klassen-Designer) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306708"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Arbeiten mit Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [arbeiten mit Klassendiagrammen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten, die von anderen geschrieben wurden (oder die Sie vor langer Zeit geschrieben haben). Sie können sie zur Anpassung, gemeinsamen Nutzung und Präsentieren von Projektinformationen mit anderen verwenden.  
   
  Der erste Schritt beim Präsentieren von Projektinformationen ist das Erstellen eines Klassendiagramms, das anzeigt, was Sie anzeigen möchten. Weitere Informationen finden Sie unter [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md). Sie können für ein Projekt mehrere Klassendiagramme erstellen, mit denen eine andere Ansicht des Projekts, eine ausgewählte Teilmenge der Projekttypen oder eine ausgewählte Teilmenge der Mitgliedstypen angezeigt werden.  

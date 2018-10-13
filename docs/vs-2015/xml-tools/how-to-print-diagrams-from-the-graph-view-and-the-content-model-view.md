@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Ausdrucken von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ad1742c234de542273ace700e9cd06e9c2e86f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53774a410a05244f4b005fac1b14fe5776794a68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305468"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Gewusst wie: Ausdrucken von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Drucken von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht](https://docs.microsoft.com/visualstudio/xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view).  
-  
   
 In diesem Thema wird beschrieben, wie ein Diagramm in der Diagramm- oder Inhaltsmodellansicht ausgedruckt wird.  
   

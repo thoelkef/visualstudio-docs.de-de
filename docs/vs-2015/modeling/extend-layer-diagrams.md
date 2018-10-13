@@ -1,7 +1,7 @@
 ---
 title: Erweitern von Ebenendiagrammen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301833"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Erweitern von Abhängigkeitsdiagrammen](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams).  
-  
 Sie können Code schreiben, um Ebenendiagramme zu erstellen und zu aktualisieren, und um die Struktur Ihres Programmcodes mit Ebenendiagrammen in Visual Studio abzugleichen. Sie können Befehle hinzufügen, die im Kontextmenü der Diagramme angezeigt werden, Drag & Drop-Gesten anpassen und über Textvorlagen auf das Ebenenmodell zugreifen. Sie können diese Erweiterung in einer Visual Studio Integration Extension (VSIX) verpacken und sie an andere Visual Studio-Benutzer verteilen.  
   
  Weitere Informationen zu Ebenendiagrammen finden Sie unter:  
@@ -52,7 +50,7 @@ Sie können Code schreiben, um Ebenendiagramme zu erstellen und zu aktualisieren
   
  Sie müssen die passende Visual Studio-Version auf dem Computer installiert haben, auf dem Sie die Ebenenerweiterungen ausführen möchten. Weitere Informationen finden Sie unter [bereitstellen eine ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md).  
   
- Welche Versionen von Visual Studio Ebenendiagramme unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio Ebenendiagramme unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Hinzufügen von Befehlen und Bewegungen zu Ebenendiagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

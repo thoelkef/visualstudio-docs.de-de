@@ -1,7 +1,7 @@
 ---
 title: LINQ to SQL-Tools in Visual Studio2 | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195376"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [LINQ to SQL-Tools in Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 LINQ to SQL war die erste objektrelationales Mapping-Technologie von Microsoft veröffentlicht. Es funktioniert gut in grundlegenden Szenarien und weiterhin in Visual Studio unterstützt werden, aber es ist nicht mehr in der aktiven Entwicklung. Verwenden Sie LINQ to SQL, wenn eine ältere Anwendung verwaltet, die es bereits verwendet wird, oder in einfache Anwendungen, die SQL Server verwenden und erfordern keine mit mehreren Tabellen zuordnen. Neue Anwendungen sollten im Allgemeinen das Entity Framework verwenden, wenn eine objektrelationale Zuordnung-Ebene erforderlich ist.  
   

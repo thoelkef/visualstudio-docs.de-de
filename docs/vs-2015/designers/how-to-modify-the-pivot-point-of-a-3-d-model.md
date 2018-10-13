@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19864f98df2b10d06362969d82752b68b6ba26c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300390"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Gewusst wie: Ändern des Pivotpunkts eines 3D-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells](https://docs.microsoft.com/visualstudio/designers/how-to-modify-the-pivot-point-of-a-3-d-model).  
-  
 In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpunkts* eines 3D-Modells verwendet wird. Der Pivotpunkt ist der Punkt im Raum, der das mathematische Zentrum des Objektes für Rotation und Skalierung definiert.  
   
  In diesem Dokument wird die folgende Aktivität veranschaulicht:  

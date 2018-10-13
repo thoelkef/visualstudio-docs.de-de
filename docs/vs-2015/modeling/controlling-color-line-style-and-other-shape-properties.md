@@ -1,7 +1,7 @@
 ---
 title: Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1722a3f8a5ff05589cfad987fff6448d44e96ec8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5694e81721bcc16b13c1857a07072fcaef00a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285479"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen](https://docs.microsoft.com/visualstudio/modeling/controlling-color-line-style-and-other-shape-properties).  
-  
 Einige Eigenschaften der Form, wie z. B. Farbe "verfügbar gemacht werden kann' – verknüpft, d. h. einer Domäneneigenschaft der Form. Andere haben direkt gesteuert werden.  
   
 ## <a name="exposing-a-property"></a>Verfügbarmachen einer Eigenschaft  
