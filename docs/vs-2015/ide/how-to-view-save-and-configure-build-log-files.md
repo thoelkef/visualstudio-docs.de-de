@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d30e2b571e0a46afa10c8100085e6c23513159e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207401"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: anzeigen, speichern und Konfigurieren von Buildprotokolldateien](https://docs.microsoft.com/visualstudio/ide/how-to-view-save-and-configure-build-log-files).  
-  
 Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben. Bei C++-Projekten werden die gleichen Informationen in einer TXT-Datei angezeigt, die automatisch erstellt und gespeichert wird. Bei Projekten mit verwaltetem Code können Sie die Informationen aus dem Fenster **Ausgabe** kopieren, in eine TXT-Datei kopieren und diese manuell speichern. Sie können die IDE ebenfalls verwenden, um anzugeben, welche Informationen zu jedem Build angezeigt werden sollen.  
   
  Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine TXT-Datei erstellen, um Informationen zum Build zu speichern. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).  

@@ -1,7 +1,7 @@
 ---
 title: Überlegungen zum Entladen und Neuladen von geschachtelten Projekten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277557"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Überlegungen für das Entladen und Neuladen von geschachtelten Projekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Überlegungen zum Entladen und Neuladen geschachtelte Projekte](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects).  
-  
 Wenn Sie geschachtelte Projekttypen implementieren, müssen Sie zusätzliche Schritte ausführen, wenn Sie entladen und Laden Sie die Projekte erneut. Sie müssen ordnungsgemäß auslösen, um Listener zu Projektmappenereignissen ordnungsgemäß zu benachrichtigen, die `OnBeforeUnloadProject` und `OnAfterLoadProject` Ereignisse.  
   
  Ein Grund, Sie müssen diese Ereignisse auf diese Weise ausgelöst wird, dass Sie die quellcodeverwaltung (SCC), löschen die Elemente auf dem Server, und klicken Sie dann als ein neues Element hinzufügen, wenn Sie vorhanden ist, nicht wünschen eine `Get` Vorgang aus SCC. In diesem Fall wird eine neue Datei aus SCC geladen werden, und Sie entladen und laden alle Dateien aus, für den Fall, dass sich die Werte unterscheiden müssen. SCC-Aufrufe `ReloadItem`. Die Implementierung von diesem Aufruf wird auf das Projekt zu löschen und erneut durch die Implementierung neu erstellen `IVsFireSolutionEvents` aufzurufende `OnBeforeUnloadProject` und `OnAfterLoadProject`. Beim Ausführen dieser Implementierung wird die SCC darüber informiert, dass das Projekt wurde vorübergehend gelöscht und erneut hinzugefügt. Aus diesem Grund kann die SCC nicht auf das Projekt ausgeführt werden, als ob das Projekt tatsächlich vom Server gelöscht wurde, und klicken Sie dann erneut hinzugefügt werden.  

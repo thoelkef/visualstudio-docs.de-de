@@ -1,7 +1,7 @@
 ---
 title: 'Ebenendiagramme: Verweisen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248312"
 ---
 # <a name="layer-diagrams-reference"></a>Ebenendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Abhängigkeitsdiagramme: Referenz](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 In Visual Studio können Sie eine *Ebenendiagramm* um die hochrangige, logische Architektur des Systems zu visualisieren. Ein Ebenendiagramm organisiert die physischen Artefakte in Ihrem System in logischen, abstrakten Gruppen, die sog. *Ebenen*. Diese Ebenen beschreiben die Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder die Hauptkomponenten des Systems. Jede Ebene kann außerdem geschachtelte Ebenen enthalten, die ausführlichere Aufgaben beschreiben.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

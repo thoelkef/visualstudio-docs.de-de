@@ -1,7 +1,7 @@
 ---
 title: Codeanalyse für verwalteten Code (Übersicht) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f48bb0e1832ef92a4d03a775123a062090936090
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279369"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Übersicht über die Analyse von verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Codeanalyse für verwalteten Code Overview](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-overview).  
-  
 Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstellt einen Bericht mit Informationen zu diesen Assemblys, in dem z. B. Verletzungen der in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegten Programmierungs- und Entwurfsregeln gemeldet werden.  
   
  Das Analysetool stellt die während einer Analyse durchgeführten Prüfungen als Warnmeldungen dar. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.  

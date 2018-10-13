@@ -1,7 +1,7 @@
 ---
 title: Zugreifen auf den Textpuffer mithilfe der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277211"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Zugreifen auf den Textpuffer mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [den Zugriff auf den Textpuffer mithilfe der Legacy-API](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api).  
-  
 Der Text ist für die Verwaltung von Text-Streams und dateipersistenz zuständig. Auch wenn der Puffer Lese- oder Schreibzugriff auf andere Formate, erfolgt die gesamte normale Kommunikation mit dem Puffer mithilfe von Unicode. In die legacy-APIs können das den Textpuffer entweder ein- oder einem zweidimensionalen Koordinatensystem um Zeichen im Puffer zu identifizieren.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>1 und 2-Dimension Koordinatensysteme  

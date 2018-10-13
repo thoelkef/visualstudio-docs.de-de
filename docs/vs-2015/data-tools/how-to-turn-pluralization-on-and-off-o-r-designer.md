@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Aktivieren/Deaktivieren der Pluralisierung (O / R Designer) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02fa8b50b28f967a0835f68e85d146ca1eea514b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279109"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Gewusst wie: Aktivieren/Deaktivieren der Pluralisierung (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O / R Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-turn-pluralization-on-and-off-o-r-designer).  
-  
   
 Standardmäßig wird beim Ziehen Datenbankobjekte, deren Namen auf s oder ies enden, aus **Server-Explorer**/**Datenbank-Explorer** auf die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), die Namen der generierten Entitätsklassen sind von der plural-in die Singularform geändert. Damit soll verdeutlicht werden, dass die instanziierte Entitätsklasse einem einzigen Datensatz zugeordnet ist. Wird dem [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] beispielsweise die Tabelle Customers hinzugefügt, erhält die Entitätsklasse den Namen Customer, da die Klasse die Daten eines einzigen Kunden enthält.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 73be28ac28b02280b1ae66baa2c76c6226f1fbed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fbf85c9a64c08aab69672b9e0a005745df44540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283009"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/how-to-add-comments-to-class-diagrams-class-designer).  
-  
 Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramme verwenden. Eine Kommentarform verfügt über eine Eigenschaft, **Text**, in die Sie Text eingeben können. Kommentarformen existieren nur auf der Diagrammoberfläche und nicht im Code.  
   
  Ein Kommentar befindet sich in der Diagrammansicht der Klasse im **Klassen-Designer**; wenn Sie ein zweites Klassendiagramm im selben Projekt öffnen, sind Kommentare, die Sie in der ersten Ansicht erstellt haben, nicht sichtbar. Wenn Sie ein Diagramm löschen, werden auch alle in diesem Diagramm enthaltenen Kommentare gelöscht.  

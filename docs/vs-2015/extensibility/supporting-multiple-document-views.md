@@ -1,7 +1,7 @@
 ---
 title: Unterstützen mehrerer Dokumentansichten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282698"
 ---
 # <a name="supporting-multiple-document-views"></a>Unterstützen mehrerer Dokumentansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Supporting Multiple Document Views](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views).  
-  
 Sie können mehr als eine Ansicht eines Dokuments angeben, durch die Trennung der Dokumentdaten und dokumentenansichtsobjekten für den Editor erstellen. Einige Fälle, in denen ein zusätzlicher Dokumentenansicht sinnvoll wäre, sind:  
   
 -   Unterstützung für das neue Fenster: sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  

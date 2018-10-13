@@ -1,7 +1,7 @@
 ---
 title: Befehls-Routing in VSPackages | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e945b16134debce8ec23ed15e5c9b0ca436e5bd8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ba68c04d95dfec7644a0a900134750db96c85bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279616"
 ---
 # <a name="command-routing-in-vspackages"></a>Befehlsrouting in VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Befehlsrouting in VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/command-routing-in-vspackages).  
-  
 Ein Befehl ist im weitergeleitet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] basierend auf dem Kontext, in dem er ausgeführt wird. Es wird auf den globalen Kontext aus dem ersten Kontext nach außen weitergeleitet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

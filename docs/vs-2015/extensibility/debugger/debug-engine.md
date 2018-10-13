@@ -1,7 +1,7 @@
 ---
 title: Debug-Engine | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282684"
 ---
 # <a name="debug-engine"></a>Debug-Engine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [-Debug-Engine](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine).  
-  
 Ein Debugmodul (DE) arbeitet mit den Interpreter oder das Betriebssystem wie z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung Debugdienste bereit. Die DE ist verantwortlich für die Überwachung des Status eines gedebuggten Programms. Zu diesem Zweck führen Sie die DE unabhängig Methoden, in der unterstützten Runtime verfügbar sein sollen, ob von der CPU oder von APIs durch die Common Language Runtime bereitgestellt wird verwendet.  
   
  Beispielsweise stellt die common Language Runtime (CLR) Mechanismen zum Überwachen von eines laufenden Programms über die ICorDebugXXX-Schnittstellen bereit. Eine bereitgestellten Kompatibilitätsrichtlinie, die die CLR unterstützt werden die entsprechenden ICorDebugXXX Schnittstellen zum Nachverfolgen einer verwalteten Code zu debuggende Programm wird verwendet. Es kommuniziert dann alle Änderungen des Zustands für die Sitzung Debug-Manager (SDM), der solche Informationen an weiterleitet der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  

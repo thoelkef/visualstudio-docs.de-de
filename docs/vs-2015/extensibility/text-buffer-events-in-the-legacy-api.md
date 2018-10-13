@@ -1,7 +1,7 @@
 ---
 title: Text-Puffer-Ereignisse in der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218724"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Text-Puffer-Ereignisse in der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Text Puffern von Ereignissen in der Legacy-API](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 Das Textpufferobjekt gibt verschiedene Ereignisse, mit die Sie auf den verschiedenen Situationen reagieren können.  
   
  Wenn Sie die legacy-API verwenden, sollten Sie die folgenden Schnittstellen implementieren, zum Empfangen von Benachrichtigungen über Änderungen an den Textpuffer. Schnittstellen verfügbar, die den Puffer mithilfe der `IConnectionPointContainer` Schnittstelle für den Textpuffer zum Empfangen von Benachrichtigungen über Zeile ändert, aus dem Puffer. Weitere Informationen finden Sie unter [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Im Fall von `IVsTextStreamEvents` oder `IVsTextLinesEvents` Schnittstellen, Änderungen in zurückgegeben werden entweder ein- oder zweidimensionalen Koordinaten entsprechend.  

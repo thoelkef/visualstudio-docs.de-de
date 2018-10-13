@@ -1,7 +1,7 @@
 ---
 title: Festlegen einer bestimmten .NET-Framework-Zielversion | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277926"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Festlegen einer bestimmten .NET-Framework-Zielversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [für eine bestimmte .NET Framework-Version](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 In Visual Studio können Sie die Version oder das Profil von .NET Framework angeben, auf die bzw. das Sie das Projekt ausrichten möchten. Damit eine Anwendung auf einem anderen Computer ausgeführt werden kann, muss die Version von .NET Framework, auf die die Anwendung ausgerichtet ist, mit der Version von .NET Framework, die auf dem Computer installiert ist, kompatibel sein.  
   
  In den Themen in diesem Abschnitt wird beschrieben, wie bestimmte Versionen von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in den Projekten als Ziel festgelegt werden können.  

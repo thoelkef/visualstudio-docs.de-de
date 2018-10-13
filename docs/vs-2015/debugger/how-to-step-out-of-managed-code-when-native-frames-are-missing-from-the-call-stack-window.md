@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Prozedurschritt aus verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 682d4f9c8973f8deee65efa0cd8c0d78061ee00a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2648d73887f79f9b71770164a620bb1a8d674622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279434"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Gewusst wie: Ausführen von verwaltetem Code bis zum Rücksprung, wenn systemeigene Rahmen im Aufruflistenfenster fehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Prozedurschritt aus verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](https://docs.microsoft.com/visualstudio/debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window).  
-  
 Wenn Ihr Code systemeigene Rahmen enthält, die in werden die **Aufrufliste** Fenster, die beim Ausführen von verwaltetem Code kann zu unerwarteten Ergebnissen führen. Dieses Problem zu umgehen, können Sie einen Haltepunkt anstelle von **Ausführen bis Rücksprung**.  
   
 > [!NOTE]

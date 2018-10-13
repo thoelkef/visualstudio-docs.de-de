@@ -1,7 +1,7 @@
 ---
 title: 'CA1059: Member sollten bestimmte konkreten Typen nicht machen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 073d55a9a5ae6caa573a2c3db282aaa5e5ea4e57
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 12a4c546827eef418dc3ad0bf4749cf613780f2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279044"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1059: Member sollten bestimmte konkreten Typen nicht verfügbar](https://docs.microsoft.com/visualstudio/code-quality/ca1059-members-should-not-expose-certain-concrete-types).
-
 |||
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
@@ -51,7 +48,7 @@ Die neueste Version dieses Themas finden Sie unter [CA1059: Member sollten besti
 
 |Konkreten Typ|Ersetzung|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> Mithilfe der Benutzeroberfläche entkoppelt das Element aus einer bestimmten Implementierung von einer XML-Datenquelle.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Mithilfe der Benutzeroberfläche entkoppelt das Element aus einer bestimmten Implementierung von einer XML-Datenquelle.|
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den konkreten Typ, auf die vorgeschlagene Schnittstelle.

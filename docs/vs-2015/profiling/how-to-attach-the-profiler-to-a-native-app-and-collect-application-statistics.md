@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anfügen des Profilers an eine native, eigenständige Anwendung und Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0534686b5cb90bde9bf846c62ea82ffa56bf0249
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9e618065a20edf6294bc86297558e294606f3da7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204930"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine systemeigene, eigenständige .NET Framework-Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Fügen Sie den Profiler an eine Native eigenständige Anwendung und Sammeln von Anwendungsstatistiken über die Befehlszeile](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line).  
-  
 In diesem Thema wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools verwendet werden, um den Profiler an eine ausgeführte eigenständige und systemeigene .NET Framework-(Client-)Anwendung anzufügen und Leistungsstatistik mithilfe der Samplingmethode zu sammeln.  
   
 > [!NOTE]

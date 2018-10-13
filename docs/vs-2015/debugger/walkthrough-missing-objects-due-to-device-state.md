@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280838"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: Fehlende Objekte aufgrund von Gerätestatus](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state).  
-  
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose, um ein Objekt zu untersuchen, die aufgrund von fehlt, falsch konfigurierten Gerätestatus.  
+Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Grafikdiagnose ein Objekt untersucht werden kann, das wegen eines falsch konfigurierten Gerätestatus fehlt.  
   
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:  
   
@@ -45,14 +43,14 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
  ![Die Anwendung vor Behebung des Problems](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- Informationen zum Erfassen von Grafikproblemen in einem grafikprotokoll finden Sie unter [Erfassen von Grafikinformationen](../debugger/capturing-graphics-information.md).  
+ Informationen zum Erfassen von Grafikproblemen in einem Grafikprotokoll finden Sie unter [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Untersuchung  
  Mithilfe der Grafikdiagnosetools können Sie die Grafikprotokolldatei laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], laden Sie ein grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Eine neue Grafikdiagnose-Registerkarte wird im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
+1.  Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Eine neue Grafikdiagnose-Registerkarte wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
 2.  Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Modell nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   
@@ -104,7 +102,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
 1.  Öffnen Sie das Fenster **Grafikobjekttabelle** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die Option **Objekttabelle**aus.  
   
-2.  Suchen Sie in der **Grafikobjekttabelle** nach dem **D3D10-Gerät**-Objekt, und öffnen Sie dann das **D3D10-Gerät** -Objekt. Ein neues **d3d10-Gerät** Registerkarte wird geöffnet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Um dies zu vereinfachen, können Sie die **Grafikobjekttabelle** nach dem **Typ**sortieren:  
+2.  Suchen Sie in der **Grafikobjekttabelle** nach dem **D3D10-Gerät**-Objekt, und öffnen Sie dann das **D3D10-Gerät** -Objekt. Eine neue Registerkarte **d3d10-Gerät** wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]geöffnet. Um dies zu vereinfachen, können Sie die **Grafikobjekttabelle** nach dem **Typ**sortieren:  
   
      ![Grafikobjekttabelle und der zugehörige Gerätezustand](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

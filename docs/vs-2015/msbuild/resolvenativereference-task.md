@@ -1,7 +1,7 @@
 ---
 title: ResolveNativeReference-Task | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06171281706b2395cbac0c98b5b8a76c4da363c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a874055e5af1a0aafd48296a99f12a83d56369f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281308"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ResolveNativeReference-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/resolvenativereference-task).  
-  
   
 Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.ResolveNativeReference>-Klasse. Diese Klasse unterstützt die .NET Framework-Infrastruktur, die nicht für eine direkte Verwendung im Code vorgesehen ist.  
   

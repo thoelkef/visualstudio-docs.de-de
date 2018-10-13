@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183000"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hinzufügen einer Eigenschaft nachverfolgen zu einer domänenspezifischen Sprachdefinition](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition).  
-  
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverfolgungseigenschaft zu einem Domänenmodell.  
   
  Ein *Domäne nachverfolgen* Eigenschaft ist eine Eigenschaft, die vom Benutzer aktualisiert werden können, aber das hat es sich um einen Standardwert, der mit den Werten anderer Eigenschaften von Domänen oder die Elemente berechnet wird.  
@@ -50,7 +48,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
   
 -   In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in der aktualisierten ist ihr Wert durch den Benutzerstatus in fett formatierter Schrift angezeigt wird.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie zunächst diese Komponenten installieren:  
   
 |||  

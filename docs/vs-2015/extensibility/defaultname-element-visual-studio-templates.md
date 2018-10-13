@@ -1,7 +1,7 @@
 ---
 title: DefaultName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 967bc0a21d9cf860baaff9fa9185c4f4bd81f463
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5290f6c5096980451cc008a1ea80ec514366d769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223027"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [DefaultName-Element (Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/defaultname-element-visual-studio-templates).  
-  
 Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird für das Projekt oder Element an, bei der Erstellung.  
   
  \<VSTemplate>  

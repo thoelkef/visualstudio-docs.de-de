@@ -1,7 +1,7 @@
 ---
 title: AL (Assembly Linker)-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280474"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker)-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [AL (Assembly Linker)-Aufgabe](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task).  
-  
   
 Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ausgeliefert wird. Mit dem Assembly Linker-Tool wird eine Assembly mit einem Manifest aus einer oder mehreren Dateien erstellt, bei denen es sich um Module oder Ressourcendateien handelt. Compiler und Entwicklungsumgebungen könnten diese Funktionen möglicherweise bereits bieten, daher ist es häufig nicht erforderlich, diese Aufgabe direkt zu verwenden. Der Assembly Linker ist besonders nützlich für Entwickler, die eine einzelne Assembly aus mehreren Komponentendateien erstellen müssen, z.B. solche, die möglicherweise bei einer Entwicklung in verschiedenen Sprachen produziert werden. Diese Aufgabe kombiniert die Module nicht in einer einzelnen Assemblydatei; die einzelnen Module müssen weiterhin verteilt werden und in der richtigen Reihenfolge verfügbar sein, damit die resultierende Assembly ordnungsgemäß geladen wird. Weitere Informationen zu „AL.exe“ finden Sie unter [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   

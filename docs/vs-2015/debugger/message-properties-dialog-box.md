@@ -1,7 +1,7 @@
 ---
 title: Im Dialogfeld Eigenschaften von Nachrichten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278903"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [im Dialogfeld "Eigenschaften" Nachricht](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einer bestimmten Nachricht. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Meldungsansicht](../debugger/messages-view.md) Fenster. Wählen Sie einen in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die **allgemeine** Registerkarte ist die einzige Registerkarte angezeigt. Die folgenden Einstellungen sind verfügbar:  
