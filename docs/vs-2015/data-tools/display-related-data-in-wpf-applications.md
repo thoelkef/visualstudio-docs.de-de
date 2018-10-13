@@ -1,7 +1,7 @@
 ---
 title: Anzeigen verknüpfter Daten in WPF-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4068bcbf3ead7114013b93f02a784d682e5b4d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174141"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zeigen Sie verknüpfter Daten in WPF-Anwendungen an
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Anzeigen verknüpfter Daten in WPF-Anwendungen](https://docs.microsoft.com/visualstudio/data-tools/display-related-data-in-wpf-applications).  
-  
   
 In einigen Anwendungen empfiehlt es sich zum Arbeiten mit Daten, die stammen aus mehreren Tabellen oder Entitäten, die in einer über-/ unterordnungsbeziehung miteinander verknüpft sind. Beispielsweise möchten Sie ein Raster anzuzeigen, die Kunden aus einem `Customers` Tabelle. Wenn der Benutzer einen bestimmten Kunden auswählt, handelt es sich bei einem anderen Raster zeigt die Aufträge dieses Kunden aus einem verbundenen `Orders` Tabelle.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'UML-Sequenzdiagramme: Referenz | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195129"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML-Sequenzdiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Sequenzdiagramme: Referenz](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 In Visual Studio eine *Sequenzdiagramm* zeigt eine Interaktion, die die Sequenz von Meldungen zwischen Instanzen von Klassen, Komponenten, Subsystemen oder Akteuren darstellt. Zeit verläuft im Diagramm abwärts und zeigt die Ablaufsteuerung von einem Teilnehmer zu einem anderen. Verwenden Sie Sequenzdiagramme, um Instanzen und Ereignisse zu visualisieren, anstatt Klassen und Methoden. Mehr als eine Instanz des gleichen Typs kann im Diagramm angezeigt werden. Auch kann mehr als ein Vorkommen der gleichen Meldung angezeigt werden.  
   
  UML-Sequenzdiagramme sind Teil eines UML-Modells und nur innerhalb von UML-Modellierungsprojekten vorhanden. Erstellen Sie ein UML-Sequenzdiagramm können auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**. Erfahren Sie mehr über das Erstellen und zeichnen [UML-Sequenzdiagramme](../modeling/uml-sequence-diagrams-guidelines.md) oder [UML-Modellierungsdiagrammen](../modeling/edit-uml-models-and-diagrams.md) im Allgemeinen.  

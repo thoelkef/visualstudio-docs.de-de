@@ -1,7 +1,7 @@
 ---
 title: XML-Schema-Explorer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fe09ca80bd9a5f4d94942adcfd98c139acdc6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196613"
 ---
 # <a name="xml-schema-explorer"></a>XML-Schema-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [XML-Schema-Explorer](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-explorer).  
-  
   
 Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor integriert, um die Arbeit mit XSD-Schemas (XML-Schemadefinitionssprache) zu ermöglichen. Wenn Sie eine XML-Schemadatei öffnen die **Schemaset** Knoten im XML-Schema-Explorer angezeigt wird. Alle enthaltenen, importierten oder neu definierten Schemas für die Zieldatei und alle Dateien, auf die durch eine `include`- oder `import`-Anweisung verwiesen wird, werden auch im XML-Schema-Explorer angezeigt.  
   

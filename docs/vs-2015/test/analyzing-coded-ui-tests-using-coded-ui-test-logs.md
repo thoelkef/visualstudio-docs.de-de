@@ -1,7 +1,7 @@
 ---
 title: Analysieren von Tests der programmierten Benutzeroberfläche mithilfe der Testprotokolle der programmierten Benutzeroberfläche | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,19 +13,17 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8da6f37e36dd249c6b458b31870259f30a00f883
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e492f3bfaf725c157060a23778e1f1725bb88ee3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188726"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der codierten UI mithilfe der Testprotokolle für codierte UI
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [analysieren Coded UI Tests mithilfe von der programmierten UI Testprotokolle](https://docs.microsoft.com/visualstudio/test/analyzing-coded-ui-tests-using-coded-ui-test-logs).  
-  
-Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten Test der codierten UI und zeichnen diese auf.  
+Testprotokolle für programmierten UI filtern wichtige Informationen zu den Ausführungen Ihrer Tests der programmierten UI und zeichnen diese auf.  
   
  **Anforderungen**  
   

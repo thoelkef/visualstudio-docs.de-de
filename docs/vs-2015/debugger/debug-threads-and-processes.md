@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Threads und Prozessen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191489"
 ---
 # <a name="debug-threads-and-processes"></a>Debuggen von Threads und Prozessen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von Threads und Prozessen](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes).  
-  
 Threads * und *Prozesse* sind verwandte Konzepte in Computerwissenschaften absolvierte. Beide stellen Folgen von Anweisungen dar, die in einer bestimmten Reihenfolge ausgeführt werden müssen. Anweisungen von verschiedenen Threads oder Prozessen können aber parallel ausgeführt werden.  
   
  Prozesse werden im Betriebssystem verwaltet und entsprechen dem, was Benutzer als Programme oder Anwendungen sehen. Ein Thread hingegen wird von einem Prozess verwaltet. Aus diesem Grund Threads werden manchmal auch bezeichnet als *Lightweightprozesse*. Jeder Prozess besteht aus einem oder mehreren Threads.  

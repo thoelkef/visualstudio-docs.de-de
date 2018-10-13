@@ -1,7 +1,7 @@
 ---
 title: Einen Dienstkontext für die Sprache bereitstellt, mit der Legacy-API | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72bcd275fab0ae8380167dbbc8a9fae21c28a36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195727"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Einen Dienstkontext für die Sprache bereitstellt, mit der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [einen Dienstkontext für die Sprache bereitstellt, mit der Legacy-API](https://docs.microsoft.com/visualstudio/extensibility/providing-a-language-service-context-by-using-the-legacy-api).  
-  
 Es gibt zwei Optionen für einen Sprachdienst zu Benutzer-Kontext verwenden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor: Text Markers Kontext bereitzustellen, oder geben Sie alle Benutzerkontext. Hier werden die Unterschiede zwischen den einzelnen beschrieben.  
   
  Weitere Informationen zum Bereitstellen von Kontext für einen Sprachdienst an, die mit Ihren eigenen Editor verbunden ist, finden Sie unter [Vorgehensweise: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md).  

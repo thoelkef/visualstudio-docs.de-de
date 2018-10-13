@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Visual Studio Tools für Unity | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199211"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [mit Visual Studio-Tools für Unity](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity).  
-  
   
 In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsfunktionen von Visual Studio-Tools für Unity und den Visual Studio-Debugger für die Unity-Entwicklung einsetzen.  
   
@@ -104,7 +102,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
 |Den Quick MonoBehavior-Assistenten öffnen|**STRG+UMSCHALT+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Den Unity-Projekt-Explorer öffnen|**ALT+UMSCHALT+E**|**View.UnityProjectExplorer**|  
 |Auf Unity-Dokumentation zugreifen|**STRG+ALT+M, STRG+H**|**Help.UnityAPIReference**|  
-|An Unity-Debugger (Player oder Editor) anfügen|**_kein Standardwert_**|**Debug.AttachUnityDebugger**|  
+|An Unity-Debugger (Player oder Editor) anfügen|**_Kein Standard_**|**Debug.AttachUnityDebugger**|  
   
  Sie können die Tastenkombinationen ändern, wenn Ihnen die Standardeinstellung nicht gefällt. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
   

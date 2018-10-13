@@ -1,7 +1,7 @@
 ---
 title: Projekteinstellungen für eine C++-Debugkonfiguration | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -117,18 +117,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f92b7e61de269ab12794055870d51f99f3c7995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05667c982daa35910bb1d4e1d895fb2bef50fb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193465"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Projekteinstellungen für eine C++-Debugkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).  
-  
 Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Dialogfeld wie in beschrieben [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo Sie debuggerspezifischen Einstellungen im finden die **Eigenschaftenseiten** Dialogfeld.  
   
 > [!WARNING]

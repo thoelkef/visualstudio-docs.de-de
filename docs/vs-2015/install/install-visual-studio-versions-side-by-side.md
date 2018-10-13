@@ -1,7 +1,7 @@
 ---
 title: Installieren Sie Visual Studio-Versionen Seite-an-Seite | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199900"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installieren Sie Visual Studio-Versionen Seite-an-Seite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47523201"
 Sie können diese Visual Studio-Version auf einem Computer installieren, auf dem bereits eine frühere Version von Visual Studio installiert ist. Im Falle eines Installationsfehlers können Sie das [Protokollerfassungstool](http://go.microsoft.com/fwlink/?LinkId=262077) nutzen, um Informationen über die Fehler zu erfassen, sodass Sie Probleme selber beheben können.  
   
 > [!NOTE]
->  Es wird empfohlen, die Sie installieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Versionen in der Reihenfolge, in dem sie veröffentlicht wurden. Installieren Sie beispielsweise Visual Studio 2013, bevor Sie Visual Studio 2015 installieren.  
+>  Es wird empfohlen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Versionen in der Reihenfolge installieren, in der sie veröffentlicht wurden. Installieren Sie beispielsweise Visual Studio 2013, bevor Sie Visual Studio 2015 installieren.  
   
  Bevor Sie Versionen parallel installieren, sollten Sie die folgenden Bedingungen kennen:  
   
--   Wenn Sie Visual Studio 2015 verwenden, um eine Projektmappe öffnen, die erstellt wurde [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], können Sie später öffnen und die Projektmappe erneut in der älteren Version zu ändern, solange Sie keine Funktionen implementiert haben, die von Visual Studio 2015 spezifisch sind.  
+-   Wenn Sie Visual Studio 2015 verwenden, um eine Projektmappe zu öffnen, die in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]erstellt wurde, können Sie die Projektmappe später erneut in der früheren Version öffnen und ändern, sofern Sie keine Funktionen implementiert haben, die für Visual Studio 2015 spezifisch sind.  
   
--   Wenn Sie versuchen, Visual Studio 2015 zu verwenden, um eine Projektmappe öffnen, die erstellt wurde [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oder einer früheren Version müssen ggf. so ändern Sie Ihre Projekte und Dateien mit Visual Studio 2015 kompatibel. Weitere Informationen finden Sie unter den [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) Seite.  
+-   Wenn Sie versuchen, eine Projektmappe mit Visual Studio 2015 zu öffnen, die mit [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oder einer früheren Version erstellt wurde, müssen Sie gegebenenfalls ihre Projekte und Dateien ändern, damit diese mit Visual Studio 2015 kompatibel sind. Weitere Informationen finden Sie unter den [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) Seite.  
   
--   Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Dateizuordnungen für alle Versionen entfernt. Sie können diesen dateizuordnungen neu zuordnen, mit der **Dateizuordnungen wiederherstellen** Schaltfläche der **Umgebung**, **Allgemein** auf der Seite der [Optionen](../ide/reference/general-environment-options-dialog-box.md) Dialogfeld.  
+-   Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dateizuordnungen für alle Versionen entfernt. Sie können diesen Dateizuordnungen mit der Schaltfläche **Dateizuordnungen wiederherstellen** auf der Seite **Umgebung**, **Allgemein** des Dialogfelds [Optionen](../ide/reference/general-environment-options-dialog-box.md) neu vornehmen.  
   
 -   Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Herausgeber der Software.  
   

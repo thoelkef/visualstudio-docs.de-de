@@ -1,7 +1,7 @@
 ---
 title: 'CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a71462661c577bebbd76e7fa05aeca9d613c4c23
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a63a757177ebf807b73bc06465a6ab860c94e72c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191788"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden](https://docs.microsoft.com/visualstudio/code-quality/ca1033-interface-methods-should-be-callable-by-child-types).
-
 |||
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|

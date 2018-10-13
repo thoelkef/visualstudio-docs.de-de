@@ -1,7 +1,7 @@
 ---
 title: Definieren eines Menübefehls in einem Modellierungsdiagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193153"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Definieren eines Menübefehls in einem Modellierungsdiagramm](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs eines UML-Diagramms definieren. Sie können steuern, ob der Menübefehl angezeigt wird und im Kontextmenü für alle Elemente des Diagramms verfügbar ist, und Sie können Code schreiben, der bei Auswahl des Menüelements ausgeführt wird. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -72,7 +70,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
   
     |Verweis|Optionen|  
     |---------------|--------------------------------|  
-    |System.ComponentModel.Composition|Definieren von Komponenten mit [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).|  
+    |System.ComponentModel.Composition|Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).|  
     |Microsoft.VisualStudio.Uml.Interfaces|Lesen und Ändern der Eigenschaften von Modellelementen|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Erstellen von Modellelementen, Ändern von Formen in Diagrammen|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md).|  
@@ -223,15 +221,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
-     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
+     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
   
     -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
-    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge in die **externes Programm starten** Feld ist der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in der Regel:  
+    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Menübefehlsklasse aufgeführt sind.  
+2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Menübefehlsklasse aufgeführt sind.  
   
 3.  Öffnen Sie das Kontextmenü an einer beliebigen Stelle im Diagramm. Der Befehl muss im Menü angezeigt werden.  
   
@@ -246,7 +244,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
     -   Der verwendete Modelldiagrammtyp (UML-Klasse, Sequenz usw.) ist als eines der Menübefehlsklassen-Attribute `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` usw. aufgeführt.  
   
 ##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
- Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
+ Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
   
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung  
   
@@ -258,7 +256,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-     Der Zielcomputer müssen eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , die Sie angegeben, **"Source.Extension.vsixmanifest"**.  
+     Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
   
 3.  Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
   
@@ -279,7 +277,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
  *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[Version] \Extensions**  
   
 ##  <a name="MenuExample"></a> Beispiel  
- Das folgende Beispiel zeigt den Code für einen Menübefehl, der die Namen von zwei Elementen eines Klassendiagramms austauscht. Dieser Code muss in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsprojekt erstellt und wie in den vorherigen Abschnitten beschrieben installiert werden.  
+ Das folgende Beispiel zeigt den Code für einen Menübefehl, der die Namen von zwei Elementen eines Klassendiagramms austauscht. Dieser Code muss in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterungsprojekt erstellt und wie in den vorherigen Abschnitten beschrieben installiert werden.  
   
 ```  
 using System.Collections.Generic; // for IEnumerable  

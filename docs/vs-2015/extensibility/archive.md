@@ -1,7 +1,7 @@
 ---
 title: Archiv | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: eb92f40d-c0f0-42a9-8388-97ba0476efdf
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e54133d110eeb042aebd15c3317c241d7d5d8646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f990854b23bae9d193173fceb37b0e3f2a13a9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191034"
 ---
 # <a name="archive"></a>Archiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Archiv](https://docs.microsoft.com/visualstudio/extensibility/archive).  
-  
 Dieser Abschnitt enthält erläuterungen zu Visual Studio-Erweiterbarkeit Technologien, werden weiterhin unterstützt, aber deren Ersetzung-Technologien, die neuer sind.  
   
 ## <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im Editor  

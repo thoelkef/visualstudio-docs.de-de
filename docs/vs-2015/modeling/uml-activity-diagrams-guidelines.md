@@ -1,7 +1,7 @@
 ---
 title: 'UML-Aktivitätsdiagramme: Richtlinien | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 23665bb9e3241f9fe32913bbd5816a39404d0842
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521265"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176643"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-guidelines).  
-  
 In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder einen Softwarealgorithmus als Arbeitsfluss zu beschreiben, der eine Reihe von Aktionen durchläuft. Diese Aktionen können von Personen, Softwarekomponenten oder Geräten ausgeführt werden. Eine Videodemo finden Sie unter: [Erfassen von Geschäftsworkflows mithilfe von Aktivitätsdiagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

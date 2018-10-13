@@ -1,7 +1,7 @@
 ---
 title: Abrufen eines Ports | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 809757df7d3a69eaf82bcda9fce78a45cece4e70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183065"
 ---
 # <a name="getting-a-port"></a>Abrufen eines Ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Abrufen eines Ports](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port).  
-  
 Ein Port stellt eine Verbindung mit einem Computer, die für den Prozesse ausgeführt werden. Kann es sich bei diesen Computer dem lokalen Computer oder einem Remotecomputer (die konnte möglicherweise ein nicht-Windows-basierten Betriebssystem ausführen, finden Sie unter [Ports](../../extensibility/debugger/ports.md) Informationen).  
   
  Ein Port wird dargestellt, durch die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle. Es wird zum Abrufen von Informationen zu Prozessen, die auf dem Computer, dem der Port verbunden ist.  

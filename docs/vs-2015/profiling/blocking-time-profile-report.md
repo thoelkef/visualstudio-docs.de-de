@@ -1,7 +1,7 @@
 ---
 title: Blockierungszeit-Profilbericht | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180803"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Zeit Profilbericht blockieren](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report).  
-  
 Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische Aufruflisten zu den einzelnen Blockierungskategorien (wie „E/A“ oder „Synchronisierung“). Der Bericht zur vorzeitigen Entfernung listet die Prozesse auf, die den aktuellen Prozess vorzeitig entfernt haben, und gibt die Anzahl der Instanzen für die vorzeitige Entfernung an. Um den Blockierungsprofilbericht zu erstellen, sammelt das Tool blockierende API-Aufrufe und stellt sie in einer Struktur von Aufruflisten zusammen. In diesen Berichten angezeigte Daten hängen vom aktuellen Zeitraum, von ausgeblendeten Threads und den beiden folgenden Filtern ab, die angewendet werden können:  
   
 -   Wenn „Nur eigenen Code“ ausgewählt ist, werden nur Stapelrahmen mit Benutzercode sowie die Ebene direkt unter dem Benutzercode angezeigt.  

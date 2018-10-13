@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61021e902befc29d90505e3e9c28f1b9dde3ded3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc832be84dfaef1b4f7d47cd2c18cb2526c43170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187126"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Gewusst wie: Wiederherstellen von ausgeblendeten Debuggerbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Wiederherstellen von ausgeblendete Debuggerbefehle](https://docs.microsoft.com/visualstudio/debugger/how-to-restore-hidden-debugger-commands).  
-  
 Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeinstellungen für Ihre bevorzugte Programmiersprache festzulegen. Möglicherweise blenden die IDE-Standardeinstellungen für einige Sprachen bestimmte Debuggerbefehle aus.  
   
  Falls Sie eine Debuggerfunktion verwenden möchten, das durch Ihre IDE-Standardeinstellungen ausgeblendet ist, können Sie dem Menü den Befehl durch folgende Prozedur wieder hinzufügen.  

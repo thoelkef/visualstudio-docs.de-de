@@ -1,7 +1,7 @@
 ---
 title: Tipps zum Debuggen von Threads in nativem Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02343da30e4f185a5b4aa236ed9b0b3ef823c4bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06e8690583794c23ce95fb52ef6cab3ab6667afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184924"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Tipps zum Debuggen von Threads in nativem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Tipps zum Debuggen von Threads in nativem Code](https://docs.microsoft.com/visualstudio/debugger/tips-for-debugging-threads-in-native-code).  
-  
 Im Folgenden finden Sie einige Tipps, die beim Debuggen von Threads in nativem Code hilfreich sein können:  
   
 -   Sie können den Inhalt des Blocks Thread Informationen anzeigen, indem Sie die Eingabe `@TIB` in der **Watch** Fenster oder **Schnellüberwachung** im Dialogfeld.  

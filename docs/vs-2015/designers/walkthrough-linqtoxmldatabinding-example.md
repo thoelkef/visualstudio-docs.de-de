@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 723f6b121d844fa5a8e504e8106fdcfc6c58f012
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182284"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiels](https://docs.microsoft.com/visualstudio/designers/walkthrough-linqtoxmldatabinding-example).  
-  
 In dieser exemplarischen Vorgehensweise wird das <legacyBold>LinqToXmlDataBinding</legacyBold>-Beispiel beschrieben, und es werden einige wichtige Aspekte seiner beiden primären Quelldateien <legacyBold>L2DBForm.xaml</legacyBold> und <legacyBold>L2DBForm.xaml.cs</legacyBold> erläutert.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Bevor Sie sich diese exemplarische Vorgehensweise durchlesen, wird dringend empfohlen, das LinqToXmlDataBinding-Programm, wie in [Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md) beschrieben, zu erstellen und auszuführen.  
   
 ## <a name="remarks"></a>Hinweise  

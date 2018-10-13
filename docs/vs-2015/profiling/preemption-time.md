@@ -1,7 +1,7 @@
 ---
 title: Zeit für die vorzeitige Entfernung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 614b049bf7aa881ce4454d8f832190b0391ff342
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943111386539ddb9ac686b0551dfe176f9e2d320
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194076"
 ---
 # <a name="preemption-time"></a>Zeit für die vorzeitige Entfernung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Zeit für die vorzeitige Entfernung](https://docs.microsoft.com/visualstudio/profiling/preemption-time).  
-  
 Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Speicherverwaltungszeit kategorisiert ist. Diese Kategorie impliziert, dass ein Thread aus einem der folgenden Gründe deaktiviert wird:  
   
 -   Der Planer hat ihn durch einen Thread mit höherer Priorität ersetzt  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dd14e5bf24262d7f6c16245c74d093ca556cc2fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514250"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175564"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)](https://docs.microsoft.com/visualstudio/deployment/trustinfo-element-clickonce-application).  
-  
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
   
 ## <a name="syntax"></a>Syntax  
@@ -167,7 +165,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.  
+ Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.  
   
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.  
   
@@ -279,7 +277,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
 ## <a name="see-also"></a>Siehe auch  
  [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

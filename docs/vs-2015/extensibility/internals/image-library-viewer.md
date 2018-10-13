@@ -1,7 +1,7 @@
 ---
 title: Bildbibliotheks-Viewer Bild | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184105"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Bildbibliotheks-Viewer](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer).  
-  
 Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bildmanifesten, damit der Benutzer sie auf die gleiche Weise bearbeiten wie Visual Studio. Der Benutzer kann es sich um Hintergrund, Größen, DPI-Wert, hoher Kontrast und andere Einstellungen ändern. Das Tool zeigt beim Laden der Informationen für jedes Image Manifest auch und zeigt Quellinformationen für jedes Bild im Image-Manifest. Dieses Tool eignet sich für:  
   
 1.  Diagnostizieren von Fehlern  

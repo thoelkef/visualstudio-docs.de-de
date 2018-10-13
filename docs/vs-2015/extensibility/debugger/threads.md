@@ -1,7 +1,7 @@
 ---
 title: Threads | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8070107a1befab999f2edd47d32e25e84266b86d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bda2bc0c79f766b4c6322850a22d2a830499ff58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188267"
 ---
 # <a name="threads"></a>Threads
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Threads](https://docs.microsoft.com/visualstudio/extensibility/debugger/threads).  
-  
 Im Hinblick auf die Debugger-Architektur eine **Thread**:  
   
 -   Ist die grundlegende Einheit für die Berechnung an. Ein Thread führt nacheinander die Anweisungen innerhalb des Kontexts von einer einzigen Aufrufliste, die aus einem Codekontext mit dem nächsten fortgefahren.  

@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8a3b85af8e3852985125e41e3ef3727e59e3269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a79bbcbba412c008d4f4641f01ff23c9c4f9952f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187303"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ein-Kern-Editor erstellen und registrieren einen Dateityp-Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type).  
-  
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage zu erstellen, die beginnt die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kern-Editor, wenn eine Datei mit der Erweiterung .myext geladen wird.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die Visual Studio-Paketprojekt-Vorlage  

@@ -1,7 +1,7 @@
 ---
 title: Benutzeroptionen bei Projektmappen (. Suo)-Datei | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186789"
 ---
 # <a name="solution-user-options-suo-file"></a>Datei mit Benutzeroptionen in Projektmappen (SUO)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Benutzeroptionen bei Projektmappen (. Suo)-Datei](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file).  
-  
 Der Projektmappen-Benutzeroptionendatei (.suo) enthält Projektmappenoptionen pro Benutzer. Diese Datei sollte nicht auf die quellcodeverwaltung eingecheckt werden.  
   
  Der Projektmappen-Benutzeroptionendatei (.suo) ist eine strukturierte Speicherung oder zusammengesetzte, Datei, die in einem binären Format gespeichert. Sie speichern Benutzerinformationen in Streams mit dem Namen des Datenstroms wird der Schlüssel, der verwendet wird, um die Informationen in der SUO-Datei zu identifizieren. Die projektmappenbenutzer-Optionsdatei wird verwendet, um die bevorzugten benutzereinstellungen speichern und wird automatisch erstellt, wenn eine Projektmappe von Visual Studio gespeichert.  

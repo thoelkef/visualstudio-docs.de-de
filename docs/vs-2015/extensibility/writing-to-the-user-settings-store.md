@@ -1,7 +1,7 @@
 ---
 title: Schreiben in den Store Benutzer Einstellungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fc5f38f8831dec53b907d83571574742f3d491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90d34ebf751ee62fd7779a92214f42779cf84b59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202045"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Schreiben in die Benutzer Einstellungen Store](https://docs.microsoft.com/visualstudio/extensibility/writing-to-the-user-settings-store).  
-  
 Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extras / Optionen** Dialogfeld Eigenschaften von Windows und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen, die diese verwenden können, um kleine Mengen von Daten zu speichern. Diese exemplarische Vorgehensweise veranschaulicht das Editor Visual Studio als externes Tool hinzufügen, indem aus lesen und Schreiben in den Speicher für benutzereinstellungen.  
   
 ### <a name="backing-up-your-user-settings"></a>Sichern der Benutzereinstellungen  

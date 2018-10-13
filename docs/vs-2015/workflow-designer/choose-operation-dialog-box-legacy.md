@@ -1,7 +1,7 @@
 ---
 title: Dialogfeld "Vorgang" (Vorgängerversion) auswählen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 717fb2918c0532d85985a7b63f03a2e8bb397355
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75b553bd79936db7b6d8aa2f8fe361650d4ef03e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189623"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Dialogfeld "Vorgang auswählen" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Vorgang auswählen** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  

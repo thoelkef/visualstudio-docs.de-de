@@ -1,7 +1,7 @@
 ---
 title: Durchsuchen, und wählen Sie ein Dialogfeld | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9347ee1d06e07f983b023e0bb67f1147b91e9adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192530"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 In der **Eigenschaften** Fenster, Dialogfelder und Designern, z. B. den Variablen-Designer, bei der Auswahl **nach Typen suchen...** eine Liste der Datentypen, stammt die **durchsuchen, und wählen Sie einen .NET** (Dialogfeld) (in abgekürzter Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.  

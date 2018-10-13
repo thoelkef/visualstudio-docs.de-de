@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anzeigen der Vererbung zwischen Typen (Klassen-Designer) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 090f2475a095607f22b30a328f6ab3c9ed4fc8e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202015"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Gewusst wie: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorgehensweise: Anzeigen Vererbung zwischen Typen (Klassen-Designer)](https://docs.microsoft.com/visualstudio/ide/how-to-view-inheritance-between-types-class-designer).  
-  
 Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im Klassen-Designer finden. Falls keine Vererbungsbeziehung zwischen zwei Typen vorhanden ist, Sie aber eine erstellen möchten, finden Sie Informationen dazu unter [How to: Create Inheritance Between Types (Class Designer) (Vorgehensweise: Erstellen von Vererbung zwischen Typen (Klassen-Designer))](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>So finden Sie den Basistyp  

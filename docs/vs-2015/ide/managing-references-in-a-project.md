@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Verweisen in einem Projekt | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa9b96370d6b0e1b39b414eeee737a32bfefcd34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195597"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,9 +99,9 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 >  Alle Projekte in Visual Studio 2010 enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit  
- Zur Laufzeit müssen Komponenten werden entweder im Ausgabepfad des Projekts oder in der [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Wenn das Projekt einen Verweis auf ein Objekt enthält, der sich nicht an einem dieser Orte befindet, müssen Sie den Verweis beim Erstellen des Projekts in den Ausgabepfad des Projekts kopieren. Die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft gibt an, ob diese Kopie erstellt werden muss. Wenn der Wert **True**lautet, wird der Verweis beim Erstellen des Projekts in das Projektverzeichnis kopiert. Wenn der Wert **False**ist, wird der Verweis nicht kopiert.  
+ Zur Laufzeit müssen sich Komponenten entweder im Ausgabepfad des Projekts oder im [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) befinden. Wenn das Projekt einen Verweis auf ein Objekt enthält, der sich nicht an einem dieser Orte befindet, müssen Sie den Verweis beim Erstellen des Projekts in den Ausgabepfad des Projekts kopieren. Die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft gibt an, ob diese Kopie erstellt werden muss. Wenn der Wert **True**lautet, wird der Verweis beim Erstellen des Projekts in das Projektverzeichnis kopiert. Wenn der Wert **False**ist, wird der Verweis nicht kopiert.  
   
- Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registrierte benutzerdefinierte Komponente enthält, wird die Komponente unabhängig von der <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Einstellung nicht mit der Anwendung bereitgestellt. In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] konnten Sie die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>-Eigenschaft für einen Verweis festlegen, um sicherzustellen, dass die Assembly bereitgestellt wird. Jetzt müssen Sie die Assembly manuell dem Ordner \Bin hinzufügen. Dadurch wird der gesamte benutzerdefinierte Code einer Prüfung unterzogen, und das Risiko der Veröffentlichung von unbekanntem benutzerdefinierten Code wird vermindert.  
+ Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registrierte benutzerdefinierte Komponente enthält, wird die Komponente unabhängig von der <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Einstellung nicht mit der Anwendung bereitgestellt. In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]konnten Sie die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft für einen Verweis festlegen, um sicherzustellen, dass die Assembly bereitgestellt wird. Jetzt müssen Sie die Assembly manuell dem Ordner \Bin hinzufügen. Dadurch wird der gesamte benutzerdefinierte Code einer Prüfung unterzogen, und das Risiko der Veröffentlichung von unbekanntem benutzerdefinierten Code wird vermindert.  
   
  Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder eine .NET Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft standardmäßig auf **False** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.  
   
@@ -124,5 +124,5 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ## <a name="see-also"></a>Siehe auch  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Programmieren mit Assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Gewusst wie: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 
