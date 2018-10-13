@@ -1,7 +1,7 @@
 ---
 title: Zugreifen auf Visual Studio oder andere Hosts von einer Textvorlage | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298479"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Zugreifen auf Visual Studio oder andere Hosts von einer Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [den Zugriff auf Visual Studio oder andere Hosts von einer Textvorlage](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template).  
-  
 Sie können in einer Textvorlage verwenden, Methoden und Eigenschaften verfügbar gemacht werden, von dem Host, der die Vorlage, wie z. B. führt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Dies gilt für Textvorlagen reguläre, nicht vorverarbeitete Textvorlagen.  

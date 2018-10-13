@@ -1,7 +1,7 @@
 ---
 title: CPU-Auslastungsdiagramm | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: defa2f16a18c97a10f74e8d351152442ccc0907f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc7dace6156cbb0909c2a54294a82f848fcb5b5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292220"
 ---
 # <a name="cpu-utilization-graph"></a>CPU-Auslastungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [CPU-Auslastungsdiagramm](https://docs.microsoft.com/visualstudio/profiling/cpu-utilization-graph).  
-  
 Das CPU-Auslastungsdiagramm veranschaulicht den Grad der Auslastung in einer App im Zeitverlauf. Die x-Achse stellt die Dauer der Ablaufverfolgung dar, die y-Achse die Anzahl der logischen Kerne im System. Im Diagramm ist nicht ersichtlich, welcher bestimmte Kern zu einem bestimmten Zeitpunkt aktiv ist. Wenn beispielsweise zwei Kerne mit einer Kapazität von 50 % während eines bestimmten Zeitraums ausgeführt werden, zeigt diese Ansicht einen logischen Kern, der verwendet wird.  
   
 ## <a name="cpu-utilization-graph-colors"></a>Farben des CPU-Auslastungsdiagramms  

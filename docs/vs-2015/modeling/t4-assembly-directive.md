@@ -1,7 +1,7 @@
 ---
 title: T4-Assemblydirektive | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,24 +12,22 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 072f2fe9ff82a99370677c50c6c97929c8e0b330
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301001"
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [T4-Assemblydirektive](https://docs.microsoft.com/visualstudio/modeling/t4-assembly-directive).  
-  
-In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt vergleichbar.  
+In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Anweisung eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt vergleichbar.  
   
  Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Die `assembly`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt.  
+>  Die `assembly`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt.  
   
 ## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung  
  Die Syntax der Direktive lautet wie folgt:  

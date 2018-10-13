@@ -1,7 +1,7 @@
 ---
 title: 'Vorbereitung zum Debuggen: Visual C++-Projekt Typen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 592232277dd8eda337bf90e6df114c2a03e75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304940"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung zum Debuggen: Visual C++-Projekttypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorbereitung zum Debuggen: Visual C++-Projekttypen](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-visual-cpp-project-types).  
-  
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projektvorlagen erstellt wurden.  
   
  Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
@@ -115,7 +113,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- Eine weitere Möglichkeit zum Debuggen einer Windows Forms-Anwendung besteht darin, die Anwendung außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu starten und dann eine Verbindung zu ihr herzustellen. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm oder an mehrere Programme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Eine weitere Möglichkeit zum Debuggen einer Windows Forms-Anwendung besteht darin, die Anwendung außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu starten und anschließend eine Verbindung zu ihr herzustellen. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm oder an mehrere Programme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
  [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   

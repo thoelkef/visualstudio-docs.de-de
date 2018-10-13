@@ -1,7 +1,7 @@
 ---
 title: Vergleich von Eigenschaften und Elementen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ff56531eea960523cfa7fad7275dfdf20d0cf9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292395"
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vergleich von Eigenschaften und Elemente](https://docs.microsoft.com/visualstudio/msbuild/comparing-properties-and-items).  
-  
   
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   

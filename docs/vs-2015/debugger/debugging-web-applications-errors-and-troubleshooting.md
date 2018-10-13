@@ -1,7 +1,7 @@
 ---
 title: 'Debuggen von Webanwendungen: Fehler und Problembehandlung | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52a1659d77e87ae18354e26fc3f2dbb79b30c218
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d23aad5c4754e9602fda0ec34fb2b5f0a6f704
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297077"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von Webanwendungen: Fehler und Problembehandlung](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-errors-and-troubleshooting).  
-  
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.  
   
 -   [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)  

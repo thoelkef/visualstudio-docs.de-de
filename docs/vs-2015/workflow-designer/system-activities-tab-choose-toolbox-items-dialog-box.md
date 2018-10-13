@@ -1,7 +1,7 @@
 ---
 title: System.Activities (Registerkarte), wählen Sie im Dialogfeld "Elemente" Toolbox | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292044"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)
 Auf dieser Registerkarte des der **Toolboxelemente** Dialogfeld zeigt eine Liste der [!INCLUDE[wf](../includes/wf-md.md)] Aktivitäten, Vorlagen und Elemente, die Ihnen zur Verfügung. Um diese Liste anzuzeigen, wählen **Toolboxelemente auswählen** aus der **Tools** Menü oder durch Rechtsklick auf die **Toolbox** , und wählen **Elemente auswählen**zum Anzeigen der **Toolboxelemente auswählen** (Dialogfeld), und wählen Sie dann die **System.Activities** Registerkarte. Standardmäßig enthält die Liste Workflowaktivitäten aus den Assemblys System.Activities, System.ServiceModel.Activities und System.Activities.Core.Presentation; allerdings nur die vom System bereitgestellten Aktivitäten und Aktivitäten hinzugefügt, die durch andere Assemblys angezeigt, der **Toolbox** sind standardmäßig aktiviert. Vor kurzem hinzugefügt Aktivitäten werden automatisch markiert und werden in der **Toolbox** beim Klicken auf **OK** im Dialogfeld. Darüber hinaus diese Elemente werden in der **Toolbox** in einer neuen Kategorie, die dem Namespace entspricht, auf dem die Aktivität/Element/die Vorlage gespeichert.  

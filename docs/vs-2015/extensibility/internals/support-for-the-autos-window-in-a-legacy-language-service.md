@@ -1,7 +1,7 @@
 ---
 title: Unterstützung für das Fenster "Auto" in einem Legacysprachdienst | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d9266ce81da0819bbf0f17c06409afcb02083f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05a3181206f9e73ffe7800a581fc93c3712c4afa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283620"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützen des Auto-Fensters in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Unterstützung für das Fenster "Auto" in einem Legacysprachdienst](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service).  
-  
 Die **"Auto"** Fenster werden Ausdrücke wie z. B. Variablen und Parametern, die im Gültigkeitsbereich befinden, wenn die zu debuggende Programm wird (entweder aufgrund eines Haltepunkts oder einer Ausnahme) angehalten wird angezeigt. Die Ausdrücke können einschließen, lokalen oder globalen Variablen und Parametern, die im lokalen Bereich geändert wurden. Die **"Auto"** Fenster kann auch Instanziierungen von einer Klasse, Struktur oder einem anderen Typ enthalten. Alle Elemente, die eine ausdrucksauswertung auswerten kann potenziell angezeigt werden die **"Auto"** Fenster.  
   
  Das managed Package Framework (MPF) bietet keine direkte Unterstützung für die **"Auto"** Fenster. Jedoch wenn Sie außer Kraft setzen der <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> -Methode, Sie können eine Liste von Ausdrücken, die angezeigt werden sollen Zurückgeben der **"Auto"** Fenster.  

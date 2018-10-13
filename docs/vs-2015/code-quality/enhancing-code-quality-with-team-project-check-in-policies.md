@@ -1,7 +1,7 @@
 ---
 title: Verbessern der Codequalität mit der Team Project Check-in-Richtlinien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b76793a2be80e194f9056280614a9e9646c462d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299025"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt](https://docs.microsoft.com/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies).  
-  
 Wenn Sie Team Foundation-Versionskontrolle (TFVC) verwenden, können Sie Eincheckrichtlinien für Teamprojekte erstellen, um Vorgehensweisen für besseren Code und eine effizientere Gruppenentwicklung zu erzwingen. Eincheckrichtlinien sind Regeln, die auf Teamprojektebene festgelegt und auf Entwicklercomputern erzwungen werden, bevor Code eingecheckt werden kann.  
   
  Sie können diese Eincheckrichtlinien für das Teamprojekt angeben:  
@@ -42,13 +40,13 @@ Wenn Sie Team Foundation-Versionskontrolle (TFVC) verwenden, können Sie Einchec
 -   **Arbeitsaufgaben**: Erfordert, dass dem Eincheckvorgang mindestens eine Arbeitsaufgabe zugeordnet ist.  
   
 > [!IMPORTANT]
->  Eincheckrichtlinien können nur verwendet werden, wenn eine Verbindung mit [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)] besteht.  
+>  Eincheckrichtlinien können nur verwendet werden, wenn eine Verbindung mit [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]besteht.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Unterstützender Inhalt|  
 |----------|------------------------|  
-|**Erstellen und Verwenden von Eincheckrichtlinien:** Sie Check-in-Richtlinien erstellen, mit den Teamprojekteinstellungen von [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Festlegen und Erzwingen von Quality Gates](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Eincheckrichtlinien erstellen und verwenden:** Eincheckrichtlinien werden mit den Teamprojekteinstellungen von [!INCLUDE[esprscc](../includes/esprscc-md.md)]erstellt.|[Festlegen und Erzwingen von Quality Gates](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Eincheckrichtlinien für die Codeanalyse erstellen und verwenden:** Sie können aus einem Standardsatz von Codeanalyseregeln auswählen, oder Sie können einen benutzerdefinierten Satz erstellen.|[Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben  

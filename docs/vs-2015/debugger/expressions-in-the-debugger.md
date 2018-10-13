@@ -1,14 +1,14 @@
 ---
 title: Ausdrücke im Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289327"
 ---
 # <a name="expressions-in-the-debugger"></a>Ausdrücke im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Ausdrücke im Debugger](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.  
   
  Die folgenden Abschnitte enthalten Informationen zu Ausdrücken in verschiedenen Sprachen.  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# – Nicht unterstützte Ausdrücke  
   
 ### <a name="dynamic-objects"></a>Dynamische Objekte  
- Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, implementieren die <xref:System.Dynamic.IDynamicMetaObjectProvider> werden ausgewertet, in dem Fenster "überwachen", eine dynamische Ansicht hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
+ Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, die die <xref:System.Dynamic.IDynamicMetaObjectProvider> implementieren, im Überwachungsfenster ausgewertet werden, wird ein dynamischer Ansichtsknoten hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
   
  Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic – Nicht unterstützte Ausdrücke  
   
 ### <a name="dynamic-objects"></a>Dynamische Objekte  
- Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, implementieren die <xref:System.Dynamic.IDynamicMetaObjectProvider> werden ausgewertet, in dem Fenster "überwachen", eine dynamische Ansicht hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
+ Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, die die <xref:System.Dynamic.IDynamicMetaObjectProvider> implementieren, im Überwachungsfenster ausgewertet werden, wird ein dynamischer Ansichtsknoten hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
   
  Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>Siehe auch  
  [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)   
- [Kontextoperator (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariablen](../debugger/pseudovariables.md)
 

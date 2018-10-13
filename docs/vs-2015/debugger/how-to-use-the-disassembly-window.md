@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden des Disassembierungsfensters | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287754"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Gewusst wie: Verwenden des Fensters Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Disassembly-Code im Debugger in Visual Studio anzeigen](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Dieses Feature ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert, ist die **Optionen** Dialogfeld **Debuggen** Knoten. Es ist jedoch nicht für das Skript- oder SQL-Debuggen verfügbar.  
   
  Die **Disassembly** Fenster zeigt Assemblycode, der den vom Compiler erstellten Anweisungen entspricht. Beim Debuggen von verwaltetem Code entsprechen diese Assemblyanweisungen nicht der durch den Visual Studio-Compiler generierten Microsoft Intermediate Language (MSIL), sondern dem durch den Just-In-Time-Compiler (JIT) erstellten nativen Code.  

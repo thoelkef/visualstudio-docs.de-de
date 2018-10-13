@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einem Windows Form | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: be86fa89cd35ff55ed9e454c9453b4d2684f311d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 882c8229c105920efe247a54e9525a262e6a3246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282671"
 ---
 # <a name="walkthrough-displaying-related-data-on-a-windows-form"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einem Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ In vielen Anwendungsszenarios ist die Verwendung von Daten aus mehreren Tabellen
   
 -   Testen der Anwendung durch Auswählen verschiedener Kunden und Überprüfen der Anzeige der richtigen Aufträge für den ausgewählten Kunden.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Zugriff auf die Beispieldatenbank Northwind. Zum Installieren von Beispieldatenbanken finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  

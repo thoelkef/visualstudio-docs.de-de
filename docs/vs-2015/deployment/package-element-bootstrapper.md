@@ -1,7 +1,7 @@
 ---
 title: '&lt;Paket&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65523e419e10612a09324f9e33ac3ae147e94bbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298674"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [ &lt;Paket&gt; -Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/package-element-bootstrapper).  
-  
 Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei.  
   
 ## <a name="syntax"></a>Syntax  

@@ -1,7 +1,7 @@
 ---
 title: Speicherorte für Symboldateien | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dffab87abed5bb8187a5340955dea84f77ccab8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88d8fd37babea18aa385598cad12436b414f5ff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284634"
 ---
 # <a name="symbol-locations"></a>Symbolspeicherorte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Orte für Symboldateien](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbol-locations).  
-  
 Die meisten Symbole haben einen definierten Speicherort in der Abbilddatei an. Ein Symbol für den Speicherort wird angegeben, mit einem Wert aus der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) Enumeration. Das Symbol unterstützen möglicherweise weitere Eigenschaften abhängig von ihrem Speicherort.  
   
  Die folgende Tabelle zeigt die am häufigsten Typen und deren zusätzlichen Eigenschaften verwendeten.  

@@ -1,7 +1,7 @@
 ---
 title: Beibehalten der Eigenschaft eines Projektelements | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47511239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285102"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Beibehalten der Eigenschaft eines Projektelements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [beibehalten der Eigenschaft eines Projektelements](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item).  
-  
 Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzu. Dies ist möglich, indem die Eigenschaft in der Projektdatei gespeichert.  
   
  Der erste Schritt beim Beibehalten einer Eigenschaft in einer Projektdatei zum Abrufen der Hierarchie des Projekts wird ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle. Sie können diese Schnittstelle abrufen, entweder mithilfe der Automatisierung oder mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Nachdem Sie die Schnittstelle abgerufen haben, können Sie es verwenden, um zu bestimmen, welche Projektelement derzeit ausgewählt ist. Nachdem Sie die Projekt-ID haben, können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> die Eigenschaft hinzugefügt.  

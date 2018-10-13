@@ -1,7 +1,7 @@
 ---
 title: Tastenkombinationen und Zusatztasten in Blend | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283893"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Tastenkombinationen und Zusatztasten in Blend](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend).  
-  
 Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird. Bei Tastenkombinationen gibt es in [!INCLUDE[blend_first](../includes/blend-first-md.md)] die beiden folgenden Kategorien:  
   
 -   **Zugriffstasten** Mit Zugriffstasten können Sie auf einen Menübefehl oder auf einen Bereich eines Dialogfelds zugreifen, indem Sie eine bestimmte Taste auf der Tastatur drücken. Zugriffstasten werden im momentan ausgewählten Befehl oder in Dialogfeldern durch einen Unterstrich angezeigt.  

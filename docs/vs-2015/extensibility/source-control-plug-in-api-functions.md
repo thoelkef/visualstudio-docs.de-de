@@ -1,7 +1,7 @@
 ---
 title: Source-Control-Plug-in-API-Funktionen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293027"
 ---
 # <a name="source-control-plug-in-api-functions"></a>API-Funktionen von Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [-Plug-in-API Quellcodeverwaltungsfunktionen](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions).  
-  
 Die Source-Plug-in-API bietet die folgenden Funktionen, die durch das Quellcodeverwaltungs-Plug-in in Übereinstimmung mit dieser API implementiert werden muss. Die Signaturen für jede Funktion und die Semantik von die Bitflags zugeordnet, und andere Parameter sind in dieser Referenz ausführlich beschrieben.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>Initialisierung und Verwaltungsfunktionen  

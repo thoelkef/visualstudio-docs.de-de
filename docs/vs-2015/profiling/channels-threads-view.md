@@ -1,7 +1,7 @@
 ---
 title: Kanäle (Threadansicht) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b67d4c4b2f3faf6147942b78a23999fdebb294
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16903851ce014a889d386acaadf2b8b86e82b909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286898"
 ---
 # <a name="channels-threads-view"></a>Kanäle (Threadansicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Kanäle (Threadansicht)](https://docs.microsoft.com/visualstudio/profiling/channels-threads-view).  
-  
 Die Parallelitätsschnellansicht zeigt vier Arten von Kanälen an: Threadkanäle, Datenträgerkanäle, Markerkanäle und GPU-Kanäle.  
   
 ## <a name="thread-channels"></a>Threadkanäle  

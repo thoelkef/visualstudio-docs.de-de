@@ -1,7 +1,7 @@
 ---
 title: Testen einer großen Anwendung mit mehreren UI-Zuordnungen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 40dae630f39597549f27c0aa77685d00e5ddd7ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b8b18c93e96e9b7fddeafc06df970e541f84d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47512185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291927"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testing a Large Application with Multiple UI Maps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](https://docs.microsoft.com/visualstudio/test/testing-a-large-application-with-multiple-ui-maps).  
-  
 In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test einer großen Anwendung mithilfe mehrerer UI-Zuordnungen einsetzen lassen.  
   
  **Anforderungen**  

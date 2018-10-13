@@ -1,7 +1,7 @@
 ---
 title: Debuggen in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296445"
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [Debuggen in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).
-
 Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mithilfe des Debuggers können Sie die Ausführung des Programms unterbrechen, um den Code zu untersuchen, Variablen im Programm zu untersuchen und zu bearbeiten, Register anzuzeigen, die aus dem Quellcode erstellten Anweisungen zu lesen und den von der Anwendung belegten Speicherplatz anzuzeigen.  
   
  Eine kurze Einführung in das Debuggen und die Diagnose in Visual Studio finden Sie unter [Debugging, Profilerstellung und Diagnose](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).  

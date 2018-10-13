@@ -1,7 +1,7 @@
 ---
 title: Steuern der Ausführung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14fcbc6a27c5d4d6b44460671756c871374491b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31584a0f59369def8a1a89ad2544b94ef9633366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47513171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302379"
 ---
 # <a name="control-of-execution"></a>Steuern der Ausführung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Steuern der Ausführung von](https://docs.microsoft.com/visualstudio/extensibility/debugger/control-of-execution).  
-  
 Die Debug-Engine (DE) wird in der Regel eines der folgenden Ereignisse als das letzte Startup-Ereignis gesendet:  
   
 -   Das punktereignis Eintrag, wenn Anfügen an einen neu gestarteten Programms  

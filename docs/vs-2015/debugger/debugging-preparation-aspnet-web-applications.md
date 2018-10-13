@@ -1,7 +1,7 @@
 ---
 title: 'Vorbereitung zum Debuggen: ASP.NET-Webanwendungen | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292889"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Vorbereitung zum Debuggen: ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Vorbereitung zum Debuggen: ASP.NET-Webanwendungen](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
 Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Websitevorlage erstellt eine Web Forms-Anwendung. Wenn Sie mit dieser Vorlage eine Website erstellen, legt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die Standardeinstellungen für das Debuggen fest. In der **Projekteigenschaften** im Dialogfeld können Sie angeben, ob Sie die Webseite als Startseite einrichten möchten. Beim Starten des Debugvorgangs einen [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Website mit diesen Standardeinstellungen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] startet Internet Explorer, und fügt den Debugger an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Workerprozess (aspnet_wp.exe oder w3wp.exe). Weitere Informationen finden Sie unter [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>So erstellen Sie eine Web Forms-Anwendung  

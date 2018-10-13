@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Multithreadanwendungen in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff0030baec409ae54dc5ebb219f5419e583a0efd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47521768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298141"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Debuggen von Multithreadanwendungen in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio).  
-  
 Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessorzeit reserviert. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.  
   
  Auf Computern mit mehreren Prozessoren, Mehrkernprozessoren oder Hyperthreadingprozessen können mehrere Threads gleichzeitig ausgeführt werden. Die parallele Verarbeitung mehrerer Threads kann sich äußerst positiv auf die Programmleistung auswirken, andererseits aber auch das Debuggen erschweren, da in diesem Fall mehrere Threads verfolgt werden müssen.  
@@ -74,7 +72,7 @@ Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessor
  Benennen Sie Ihr Thread in der angezeigten der **Threads** Fenster.  
   
  [Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung](../debugger/walkthrough-debugging-a-multithreaded-application.md).  
- Eine Einführung in die Features für das Threaddebuggen, wobei der Schwerpunkt auf den Gewusst wie-Features von [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] liegt.  
+ Eine Einführung in die Funktionen für das Threaddebuggen, wobei der Schwerpunkt auf den Gewusst wie-Funktionen von [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] liegt.  
   
  [Gewusst wie: Debuggen eines Hochleistungsclusters](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniken zum Debuggen einer Anwendung, die auf einem Hochleistungscluster ausgeführt wird.  
@@ -114,7 +112,7 @@ Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessor
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

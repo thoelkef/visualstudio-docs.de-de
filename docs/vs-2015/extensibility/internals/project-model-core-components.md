@@ -1,7 +1,7 @@
 ---
 title: Hauptkomponenten eines Projekt | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47510624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283334"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Hauptkomponenten eines Projektmodells](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zeigen kurze Beschreibungen der Schnittstellen und -Dienste, die in das Modell und die Schnittstellen und Dienste im Zusammenhang mit der bestimmte Objekte identifiziert. Darüber hinaus Informationen in den Tabellen andere Schnittstellen, die in Project-Erstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.  
   
  Weitere Informationen finden Sie unter [Tools zum Durchsuchen von Symbolen unterstützen](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
