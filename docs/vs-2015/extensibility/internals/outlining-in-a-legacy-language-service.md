@@ -1,7 +1,7 @@
 ---
 title: Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263223"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Gliederung in einem Legacysprachdienst](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service).  
-  
 Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die Gliederung zu reduzieren. In c# können z. B. alle Methoden einer einzelnen Zeile zeigt nur die Signatur der Methode reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. In einer einzelnen Methode, komplexer Logik reduziert werden kann, um den Gesamtablauf anzeigen, indem Sie nur die erste Zeile von Anweisungen wie z. B. mit `foreach`, `if`, und `while`.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  

@@ -1,7 +1,7 @@
 ---
 title: CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b74b32b3134dbbb2fefdf9fc7d1913a36efbdb5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01fa2b214f878a2b834f78a1c78cfd7d3651a609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47523921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190748"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [CustomParameters-Element (Visual Studio-Vorlagen)](https://docs.microsoft.com/visualstudio/extensibility/customparameters-element-visual-studio-templates).  
-  
 Gruppiert die benutzerdefinierten Parameter ab, die Vorlagen-Assistenten übergeben werden, wenn der Assistent Parameter Ersetzungen vornimmt.  
   
 ## <a name="syntax"></a>Syntax  

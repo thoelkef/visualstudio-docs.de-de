@@ -1,7 +1,7 @@
 ---
 title: API-Referenz für UML-Modellierungserweiterbarkeit | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,17 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: db042d59ce5f7363d9ed45e2baebbea45d3a0de4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7109c85781c6a69e9b2db9f1f8734b9f2d1efc46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47515875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301328"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>API-Referenz für UML-Modellierungserweiterbarkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [-API-Referenz für UML-UML-Modellierungserweiterbarkeit](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-uml-modeling-extensibility).  
-  
-Sie können Programmcode schreiben,um die Modelle, die Sie in Visual Studio erstellen, zu lesen und zu bearbeiten. Die API-Referenz enthält Informationen zu den spezifischen Klassen, die Sie dabei unterstützen. Aufgabenorientierte Informationen finden Sie unter [Erweitern von UML-Modellen und Diagrammen](../modeling/extend-uml-models-and-diagrams.md). Welche Versionen von Visual Studio UML-Modelle unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Sie können Programmcode schreiben,um die Modelle, die Sie in Visual Studio erstellen, zu lesen und zu bearbeiten. Die API-Referenz enthält Informationen zu den spezifischen Klassen, die Sie dabei unterstützen. Aufgabenorientierte Informationen finden Sie unter [Erweitern von UML-Modellen und Diagrammen](../modeling/extend-uml-models-and-diagrams.md). Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="assemblies"></a>Assemblys  
   

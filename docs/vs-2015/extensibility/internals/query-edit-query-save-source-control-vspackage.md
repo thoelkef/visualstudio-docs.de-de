@@ -1,7 +1,7 @@
 ---
 title: Fragen Sie die Abfrage speichern (Quellcodeverwaltungs-VSPackage) bearbeiten | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172392"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>QueryEditQuerySave (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Abfrage bearbeiten Abfrage speichern (Quellcodeverwaltungs-VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Editoren können die Abfrage bearbeiten Abfrage speichern (QEQS) Ereignisse senden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Quellcode-Verwaltungsstub implementiert den QEQS-Dienst, sodass der Empfänger von Ereignissen von QEQS. Diese Ereignisse werden dann an das derzeit aktive Quellcodeverwaltungs-VSPackage delegiert. Die aktiven Datenquellen-Steuerelement, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave-Ereignisse  

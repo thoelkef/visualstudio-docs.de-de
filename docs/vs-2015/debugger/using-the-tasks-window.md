@@ -1,7 +1,7 @@
 ---
 title: Verwenden das Fenster "Aufgaben" | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47524709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226199"
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [verwenden das Fenster "Aufgaben"](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 Die **Aufgaben** Fenster ähnelt der **Threads** Fenster mit dem Unterschied, dass die It Informationen über zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) -Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. Finden Sie unter [asynchrone Programmierung in JavaScript (Windows Store-apps)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.  
   
  In verwaltetem Code können Sie die **Aufgaben** Fenster bei der Arbeit mit <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte oder mit der **"await"** und **Async** Schlüsselwörter (**"await"** und **Async** in Visual Basic). Weitere Informationen zu Aufgaben in verwaltetem Code finden Sie unter [zur parallelen Programmierung](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  

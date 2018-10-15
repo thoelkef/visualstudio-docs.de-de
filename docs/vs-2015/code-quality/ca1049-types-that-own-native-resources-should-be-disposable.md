@@ -1,7 +1,7 @@
 ---
 title: 'CA1049: Typen, die systemeigene Ressourcen besitzen, sollten gelöscht werden | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a3a9e2bb8030fe5273e70da03e6df14bb9dd5607
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: fc832894d693cb7431c29a0f216dc533a0a5eeeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300663"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Die neueste Version dieses Themas finden Sie unter [CA1049: Typen, deren Besitzer Sie sind, sollten systemeigene Ressourcen gelöscht werden](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).
-
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
