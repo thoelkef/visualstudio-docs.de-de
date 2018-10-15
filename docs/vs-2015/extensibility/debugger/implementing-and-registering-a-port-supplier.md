@@ -1,7 +1,7 @@
 ---
 title: Implementieren und Registrieren eines Portanbieters | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe8e5cac0b1737d7c3dbd7e9301e0ca25d778db4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86490e3d7df07008f23b9a12f1167b2004972a1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47522148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205217"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementieren und Registrieren eines Portanbieters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [implementieren und Registrieren eines Portanbieters](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-and-registering-a-port-supplier).  
-  
 Die Rolle eines portanbieters wird zum Nachverfolgen und Bereitstellen von Ports, die wiederum Prozesse zu verwalten. Zum Zeitpunkt ein Ports erstellt werden muss, ist die Anschlusslieferanten mit CoCreate mit den Anschlusslieferanten-GUID (sitzungsbasierter Debug-Manager [SDM] Anschlusslieferanten vom Benutzer ausgewählten oder Anschlusslieferanten angegeben, die vom Projektsystem verwenden) instanziiert. Ruft dann die SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) um festzustellen, ob alle Ports hinzugefügt werden können. Wenn ein Port hinzugefügt werden kann, ein neuer Port von Aufrufen angefordert wird [Port hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) und an Sie übergeben eine [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , die den Port beschreibt. `AddPort` Gibt einen neuen Port, dargestellt durch ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle.  
   
 ## <a name="discussion"></a>Diskussion  

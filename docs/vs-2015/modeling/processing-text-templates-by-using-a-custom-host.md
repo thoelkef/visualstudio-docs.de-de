@@ -1,7 +1,7 @@
 ---
 title: Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47514390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303458"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host).  
-  
 Die *Textvorlagen-Transformationsprozess* wird eine *Textvorlage* Datei als Eingabe und erzeugt eine Textdatei, die als Ausgabe. Sie können die Texttransformations-Engine in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder einer eigenständigen Anwendung aufrufen, die auf einem Computer mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausgeführt wird. Sie müssen jedoch Bereitstellen einer *Textvorlagenhost*. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.  
   
 > [!TIP]

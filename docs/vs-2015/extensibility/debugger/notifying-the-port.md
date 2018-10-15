@@ -1,7 +1,7 @@
 ---
 title: Benachrichtigen des Ports | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81b27b4da563c01c809203690c05702530f58416
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47509202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263548"
 ---
 # <a name="notifying-the-port"></a>Benachrichtigen des Ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die neueste Version dieses Themas finden Sie unter [Benachrichtigen des Ports](https://docs.microsoft.com/visualstudio/extensibility/debugger/notifying-the-port).  
-  
 Nach dem Starten eines Programms, muss der Port, wie folgt benachrichtigt werden:  
   
 1.  Bei ein Port einen neuen Knoten für die Anwendung empfängt, sendet er ein Programm Erstellungsereignis zurück an die Debug-Sitzung. Das Ereignis enthält eine Schnittstelle, die Anwendung darstellt.  
