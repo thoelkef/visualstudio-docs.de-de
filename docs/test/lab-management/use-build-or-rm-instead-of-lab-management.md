@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Build- oder Releaseverwaltung für automatisierte Tests in Visual Studio
+title: Verwenden von Build- oder Releaseverwaltung für automatische Tests
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320617"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135602"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Verwenden von Build und Release Management anstelle von Lab Management für automatische Tests
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Verwenden von Azure Test Plans anstelle von Lab Management für automatisierte Tests
 
 Wenn Sie Microsoft Test Manager (MTM) und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features in Team Foundation Server (TFS) und Azure Test Plans das gleiche Ergebnis erzielen können.
 
@@ -64,7 +64,7 @@ Die folgende Tabelle enthält die typischen Aktivitäten, die Sie im Lab-Center 
 | Verbinden mit Computern. | Öffnen Sie die Lab-Umgebung im Umgebungs-Viewer. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um eine Verbindung mit dem virtuellen Computer herzustellen. Verwenden Sie alternativ die IP-Adresse oder den DNS-Namen der virtuellen Computer, um Remotedesktopsitzungen zu öffnen. |
 | Erstellen Sie einen Prüfpunkt einer Umgebung oder stellen Sie eine Umgebung an einem sauberen Prüfpunkt wieder her. | Öffnen Sie die Lab-Umgebung im Umgebungs-Viewer. Wählen Sie die Option zur Erstellung eines Prüfpunkts oder zur Wiederherstellung an einem vorherigen Prüfpunkt aus. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um diese Vorgänge auf virtuellen Computern auszuführen. Oder, um diese Schritte als Teil einer größeren Automatisierung ausführen zu können, schließen Sie die Prüfpunkttasks aus der [SCVMM-Integrationserweiterung](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) als Teil der Umgebung in die Releasedefinition ein. |
 
-## <a name="creation-of-network-isolated-environments"></a>Erstellung von netzwerkisolierten Umgebungen
+## <a name="create-network-isolated-environments"></a>Erstellen von netzwerkisolierten Umgebungen
 
 Eine netzwerkisolierte Lab-Umgebung ist eine Gruppe von virtuellen SCVMM-Computern, die sicher geklont werden kann, ohne dass es zu Netzwerkkonflikten kommt. Dies erfolgte in MTM mit einer Reihe von Anweisungen, welche die virtuellen Computer in einem privaten Netzwerk mit einem Satz von Netzwerk-Schnittstellenkarten konfigurierten und einen anderen Satz von Netzwerk-Schnittstellenkarten verwendeten, um die virtuellen Computer in einem öffentlichen Netzwerk zu konfigurieren.
 

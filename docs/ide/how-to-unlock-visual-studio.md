@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280622"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542376"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Vorgehensweise: Entsperren von Visual Studio
 
@@ -27,14 +27,14 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Durch Anmelden b
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>So entsperren Sie Visual Studio mithilfe eines Onlineabonnements
 
-Gehen Sie folgendermaßen vor, um Visual Studio mithilfe eines Visual Studio-Abonnements oder einer Azure DevOps Services-Organisation zu entsperren, der ein Microsoft-Konto oder ein Geschäfts-, Schul- oder Unikonto zugeordnet ist:
+Gehen Sie folgendermaßen vor, um Visual Studio mithilfe eines Visual Studio-Abonnements oder einer Azure DevOps-Organisation verfügbar zu machen, denen ein Microsoft-Konto oder ein Geschäfts-, Schul- oder Unikonto zugeordnet ist:
 
 1. Klicken Sie auf die Schaltfläche **Anmelden** in der rechten oberen Ecke der IDE (oder wechseln Sie zu **Datei** >  **Kontoeinstellungen**, um das Dialogfeld **Kontoeinstellungen** zu öffnen, und klicken Sie auf die Schaltfläche **Anmelden**).
 
-1. Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht daraufhin nach einem Visual Studio-Abonnement oder einer Azure DevOps Services-Organisation, die Ihrem Konto zugeordnet ist.
+1. Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht daraufhin nach einem Visual Studio-Abonnement oder einer Azure DevOps-Organisation, die Ihrem Konto zugeordnet sind.
 
 > [!IMPORTANT]
-> Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einer Azure DevOps Services-Organisation im **Team Explorer**-Toolfenster herstellen. Wenn Sie eine Verbindung mit einer Azure DevOps Services-Organisation herstellen, können Sie sich sowohl mithilfe von Microsoft- als auch mit Geschäfts-, Schul- oder Unikonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
+> Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einer Azure DevOps-Organisation im **Team Explorer**-Toolfenster herstellen. Wenn Sie eine Verbindung mit einer Azure DevOps-Organisation herstellen, können Sie sich sowohl mithilfe von Microsoft- als auch mit Geschäfts-, Schul- oder Unikonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>So entsperren Sie Visual Studio mit einem Product Key
 

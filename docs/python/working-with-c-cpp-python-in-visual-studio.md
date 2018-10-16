@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995975"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549468"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -100,6 +100,8 @@ Weitere Informationen finden Sie unter [Install Python Support for Visual Studio
 ## <a name="create-the-core-c-projects"></a>Erstellen der C++-Hauptprojekte
 
 Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte namens „superfastcode“ und „superfastcode2“ zu erstellen. Später verwenden Sie in jedem Projekt verschiedene Methoden, um den C++-Code in Python verfügbar zu machen.
+
+1. Stellen Sie sicher, dass die Umgebungsvariable `PYTHONHOME` auf den Python-Interpreter festgelegt ist, den Sie verwenden möchten. Die C++-Projekte in Visual Studio basieren auf dieser Variable, um Dateien zu suchen, z.B. *python.h*, die bei der Erstellung von Python-Erweiterungen verwendet werden.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** > **Neues Projekt** aus. Eine Visual Studio-Projektmappe kann sowohl Python- als auch C++-Projekte zusammen enthalten (was einer der Vorteile von Visual Studio für Python ist).
 
@@ -263,9 +265,9 @@ Wenn Sie die Schritte im vorherigen Abschnitt abgeschlossen haben, haben Sie sic
 
 Beim C++-Modul treten möglicherweise aus den folgenden Gründen Fehler beim Kompilieren auf:
 
-- *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden.)** und/oder **C1083: Cannot open include file: „Python.h“: No such file or directory (C1083: Die Includedatei „Python.h“ kann nicht geöffnet werden: Datei oder Verzeichnis nicht vorhanden.)**): Stellen Sie sicher, dass der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *include*-Ordner Ihrer Python-Installation festgelegt ist. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-project).
+- *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden.)** und/oder **C1083: Cannot open include file: „Python.h“: No such file or directory (C1083: Die Includedatei „Python.h“ kann nicht geöffnet werden: Datei oder Verzeichnis nicht vorhanden.)**): Stellen Sie sicher, dass der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *include*-Ordner Ihrer Python-Installation festgelegt ist. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
 
-- Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den *libs*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-project).
+- Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den *libs*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
 
 - Linker-Fehler im Zusammenhang mit der Zielarchitektur: Ändern Sie die Zielarchitektur des C++-Projekts so, dass sie mit der Ihrer Python-Installation übereinstimmt. Wenn Sie z.B. mit dem C++-Projekt auf x64 abzielen, aber Ihre Python-Installation ein x86-System ist, ändern Sie das C++-Projekt auf x86 ab.
 
@@ -406,7 +408,7 @@ Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erste
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funktioniert mit nur nahezu jedem C++-Compiler. | Große und komplexe Sammlung von Bibliotheken; enthält viele Problemumgehungen für alte Compiler. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
 
 ## <a name="see-also"></a>Siehe auch
 
