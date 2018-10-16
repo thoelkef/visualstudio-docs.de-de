@@ -13,10 +13,10 @@ Die Dokumentationen für Visual Basic und Visual C# befinden sich in einem separ
 
 ## <a name="contributing-to-the-documentation"></a>Zur Dokumentation beitragen
 
-Weitere Informationen zum Beitragen zur Dokumentation finden Sie im [Contributing Guide (Leitfaden für Mitwirkende)](CONTRIBUTING.md).
+Weitere Informationen zum Beitragen zur Dokumentation finden Sie im [Contributing Guide (Leitfaden für Mitwirkende)](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
 Wir freuen uns auf Ihre Beiträge, mit denen wir die Visual Studio-Dokumentation verbessern können. Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown.
 
-Mehrere Funktionsbereiche von Visual Studio verfügen über eigene Ordner in diesem Repository wie z.B. **Debugger** für Themen zum Debuggen, **ide** für Themen zur interaktiven Entwicklungsumgebung (Interactive Development Environment, IDE) von Visual Studio und so weiter. Der Unterordner **/media** in jedem Ordner enthält ClipArt-Dateien für die Themen. Weitere Informationen finden Sie im [Contributing guide (Leitfaden für Mitwirkende)](CONTRIBUTING.md).
+Mehrere Funktionsbereiche von Visual Studio verfügen über eigene Ordner in diesem Repository wie z.B. **Debugger** für Themen zum Debuggen, **ide** für Themen zur interaktiven Entwicklungsumgebung (Interactive Development Environment, IDE) von Visual Studio und so weiter. Der Unterordner **/media** in jedem Ordner enthält ClipArt-Dateien für die Themen. Weitere Informationen finden Sie im [Contributing guide (Leitfaden für Mitwirkende)](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
 
 Dieses Projekt hat die [Microsoft Open Source Code of Conduct (Microsoft Open Source-Verhaltensregeln)](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Code of Conduct FAQ (Häufig gestellte Fragen zu den Verhaltensregeln)](https://opensource.microsoft.com/codeofconduct/faq/), oder indem Sie sich mit weiteren Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
 
