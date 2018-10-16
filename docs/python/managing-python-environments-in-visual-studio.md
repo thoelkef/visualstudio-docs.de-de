@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320825"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551260"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio 2017, Version 15.7 und höher, erkannt Conda-Umgebungen automatisc
 ## <a name="the-python-environments-window"></a>Das Fenster „Python-Umgebungen“
 
 > [!Note]
-> Auf den Screenshots in diesem Abschnitt ist Visual Studio 15.8 zu sehen. Je nach verwendeter Visual Studio-Version wird möglicherweise eine etwas andere Benutzeroberfläche angezeigt.
+> Auf den Screenshots in diesem Abschnitt ist Visual Studio 15.8 zu sehen. Je nach verwendeter Visual Studio-Version wird möglicherweise eine andere Benutzeroberfläche angezeigt.
 
 Die Umgebungen, die Visual Studio bekannt sind, werden im Fenster **Python-Umgebungen** angezeigt. Zum Öffnen dieses Fensters können Sie eine der folgenden Methoden verwenden:
 
