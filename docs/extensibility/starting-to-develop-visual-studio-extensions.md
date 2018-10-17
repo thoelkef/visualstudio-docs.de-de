@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c91ec9343aeb8b20d6140135becd6905c85adda
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758177"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321267"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
 Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahrscheinlich einige Fragen. Wir haben einige der am häufigsten verwendeten Tools hier aufgeführt. Wenn Sie die Informationen nicht wird Sie suchen angezeigt, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms), bitten Sie den gewünschten.
@@ -76,7 +76,7 @@ Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahr
 
 -   Grundlegende VSPackages: [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX-Projektvorlage: [erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md) 
+-   VSIX-Projektvorlage: [erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Wie erhalte ich die my-Erweiterung zu Visual Studio aussehen?
  Erhalten Sie nützliche Tipps zum Entwerfen der Benutzeroberflächenautomatisierungs für die Erweiterung im [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -87,4 +87,4 @@ Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahr
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich die my-Erweiterung verteilen?
  Sie können die Erweiterung auf einem anderen Computer installieren oder als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken an Freunde senden. Finden Sie weitere Informationen zu VSIX-Pakete auf [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).
 
- Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/vsts/integrate/ide/extensions/overview).
+ Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).

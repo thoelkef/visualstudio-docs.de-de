@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915335"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546888"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31915335"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Name eines extern sichtbaren Members übereinstimmt, in Groß-und Kleinschreibung unterschieden, den Namen einer seiner Parameter.
+ Der Name eines extern sichtbaren Members übereinstimmt, in einem Groß-/Kleinschreibung Vergleich, der den Namen des einen seiner Parameter.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein Parametername sollte die Bedeutung eines Parameters vermitteln, und ein Membername sollte die Bedeutung eines Members vermitteln. Diese stimmen in der Regel nicht überein. Wenn ein Parameter mit dem Namen des zugehörigen Members benannt wird, ist dies nicht intuitiv, und es erschwert die Verwendung der Bibliothek.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wählen Sie einen Parameternamen an, der den Membernamen nicht übereinstimmen.
+ Wählen Sie einen Parameternamen an, der den Namen des Members nicht übereinstimmen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Für neue Entwicklungen keine bekannten Szenarien auftreten, in dem Sie eine Warnung dieser Regel unterdrücken müssen. Für den Protokollversand Bibliotheken, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Für neue Entwicklungen keine bekannte Szenarios auftreten, in dem Sie eine Warnung dieser Regel unterdrücken müssen. Um den rückversand für Bibliotheken, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

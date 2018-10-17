@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6952408611bfdd59a3d488db2a7f34524588edf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37f2dd735b7deb2d4fed1232c2ba690b26a9fde0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668904"
 ---
 # <a name="span-markers"></a>Bereichsmarker
 Ein Bereichsmarker stellt eine sinnvolle Phase einer Anwendung dar. Sie können beispielsweise mit einem Bereich ein Zeitintervall darstellen, in dem eine Arbeitsaufgabe verarbeitet wird. Seine Länge stellt die Dauer der Phase der entsprechenden Anwendung dar. Diese Abbildung zeigt einen Bereich in der Parallelitätsschnellansicht an:  
@@ -37,5 +38,5 @@ Die Farben der ersten fünf Bereichskategorien
 Span-Aggregationsmarker  
   
 ## <a name="see-also"></a>Siehe auch  
- [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)   
+ [Concurrency Visualizer markers (Parallelitätsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)   
  [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

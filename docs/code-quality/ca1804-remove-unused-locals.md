@@ -14,16 +14,20 @@ ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9212d4fd11a13e9905d0327e3c4c91413e2a8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916770"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545462"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Nicht verwendete lokale Variablen entfernen
+
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|
@@ -32,16 +36,16 @@ ms.locfileid: "31916770"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode deklariert eine lokale Variable verwendet jedoch nicht die Variable außer möglicherweise als Empfänger einer zuweisungsanweisung. Für die Analyse durch diese Regel muss die getestete Assembly mit Debuginformationen erstellt werden, und die zugehörigen Programmdatenbankdatei (.pdb) muss verfügbar sein.
+ Eine Methode deklariert eine lokale Variable verwendet jedoch nicht die Variable außer möglicherweise als Empfänger einer zuweisungsanweisung. Für die Analyse durch diese Regel muss der getestete Assembly mit Debuginformationen erstellt werden, und die zugehörigen Programmdatenbankdatei (.pdb) muss verfügbar sein.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Nicht verwendete lokale Variablen und unnötige Zuweisungen vergrößern die Assembly unnötig und beeinträchtigen die Leistung.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie, oder verwenden Sie die lokale Variable. Beachten Sie, dass der C#-Compiler enthalten ist [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] entfernt nicht verwendete lokale Variablen bei der `optimize` aktiviert ist.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie, oder verwenden Sie die lokale Variable. Beachten Sie, dass der C#-Compiler, der in enthalten ist [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] entfernt nicht verwendete lokale Variablen bei der `optimize` aktiviert ist.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn die Variable vom Compiler ausgegeben wurde. Sie können ruhig auch zum Unterdrücken einer Warnung dieser Regel, oder um die Regel deaktivieren, wenn Leistung und Wartung des Programmcodes nicht vorrangiger sind.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel, wenn die Variable vom Compiler ausgegeben wurde. Es ist auch sicher, unterdrücken Sie eine Warnung dieser Regel oder die Regel deaktivieren, wenn Leistung und Wartung des Programmcodes nicht im Vordergrund stehen.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt mehrere nicht verwendete lokale Variablen.

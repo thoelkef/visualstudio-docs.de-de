@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138421"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280583"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -119,7 +119,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
 | Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Wird zum Herstellen einer Verbindung mit VSTS verwendet |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Behandlung netzwerkbezogener Fehler

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778293"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101087"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -47,47 +47,6 @@ Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und all
 ## <a name="download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Entsperren Sie den Download der Remotetools unter Windows Server
-
-Die standardsicherheitseinstellungen in Internet Explorer unter Windows Server können zum Herunterladen von Komponenten wie z. B. die Remotetools zeitaufwändige gestalten.
-
-* Durch die verstärkte Sicherheitskonfiguration für Internet Explorer, der verhindert, dass Sie von Websites öffnen und den Zugriff auf Webressourcen, es sei denn, die Domäne, die mit der Ressource explizit zugelassen wird aktiviert ist (d. h. vertrauenswürdig). Obwohl Sie diese Einstellung deaktivieren können, empfehlen wir nicht, dass es da es kann ein Sicherheitsrisiko darstellt.
-
-* Unter Windows Server 2016 eine Standardeinstellung in **Internetoptionen** > **Sicherheit** > **Internet**  >   **Stufe** > **Downloads** auch deaktiviert Dateidownloads. Wenn Sie die Remoteserver-Verwaltungstools unter Windows Server direkt herunterladen möchten, müssen Sie die Datei zum Herunterladen aktivieren.
-
-Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
-
-* Laden Sie die Remoteserver-Verwaltungstools auf einem anderen Computer wie die einer ausgeführten Visual Studio, und kopieren Sie die *.exe* -Datei mit Windows Server.
-
-* Ausführen des Remotedebuggers [aus einer Dateifreigabe](#fileshare_msvsmon) auf Ihrem Computer Visual Studio.
-
-* Laden Sie die Remoteserver-Verwaltungstools direkt auf Windows Server, und akzeptieren Sie die aufforderungen, um den vertrauenswürdigen Sites hinzufügen. Moderne Websites enthalten häufig viele Ressourcen von Drittanbietern, damit dies in vielen Anweisungen führen kann. Darüber hinaus müssen alle umgeleiteten Links manuell hinzugefügt werden. Sie können auch einige der vertrauenswürdigen Sites hinzufügen, bevor Sie den Download ab. Wechseln Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Websites** und fügen Sie den folgenden Websites hinzu.
-
-  * VisualStudio.Microsoft.com
-  * download.visualstudio.microsoft.com
-  * Informationen zu: leer
-
-  Fügen Sie bei älteren Versionen des Debuggers auf my.visualstudio.com wird diese zusätzliche Websites hinzu, stellen Sie sicher, dass diese Anmeldung erfolgreich ist:
-
-  * microsoft.com
-  * go.microsoft.com
-  * 0download.microsoft.com
-  * My.VisualStudio.com
-  * "Login.microsoftonline.com"
-  * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.Microsoft.com
-  * auth.GFX.ms
-  * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.Prod.CMS.RT.Microsoft.com
-
-    Wenn Sie diese Domänen, die beim Herunterladen der Remoteserver-Verwaltungstools hinzufügen möchten, und wählen Sie dann **hinzufügen** Aufforderung.
-
-    ![Blockierte Content (Dialogfeld)](../debugger/media/remotedbg-blocked-content.png)
-
-    Wenn Sie die Software herunterladen, erhalten Sie einige zusätzlichen Anforderungen zum Laden von verschiedenen Website-Skripts und Ressourcen berechtigt zu gewähren. Auf my.visualstudio.com empfehlen wir, dass Sie, die zusätzlichen Domänen hinzufügen an, stellen Sie sicher, dass diese Anmeldung erfolgreich ist.
 
 ## <a name="requirements_msvsmon"></a> Anforderungen
 

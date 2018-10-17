@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aa6fe4cf38d89e76fc7151f493aac414179064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923376"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551937"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden
+
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
@@ -32,33 +33,34 @@ ms.locfileid: "31923376"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein Attribut Zeichenfolgenliteral-Parameter wird für eine URL, GUID oder Version nicht ordnungsgemäß analysiert.
+ Ein Attribut des Zeichenfolgenliteral-Parameter wird für eine URL, GUID oder Version nicht ordnungsgemäß analysiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Da Attribute abgeleitet sind <xref:System.Attribute?displayProperty=fullName>, und Attribute werden zum Zeitpunkt der Kompilierung verwendet, nur konstante Werte an ihre Konstruktoren übergeben werden können. Attributparameter, die URLs, die GUIDs und -Versionen darstellen müssen nicht typisiert werden, als <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, und <xref:System.Version?displayProperty=fullName>, da diese Typen nicht als Konstanten dargestellt werden können. Stattdessen müssen sie durch Zeichenfolgen dargestellt werden.
+ Da Attribute abgeleitet werden <xref:System.Attribute?displayProperty=fullName>, und Attribute werden zum Zeitpunkt der Kompilierung verwendet, nur konstante Werte, die an ihre Konstruktoren übergeben werden können. Zuordnen von Parametern, die URLs, GUIDs und -Versionen darstellen müssen, können nicht als eingegeben werden <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, und <xref:System.Version?displayProperty=fullName>, da diese Typen als Konstanten dargestellt werden können. Sie müssen stattdessen durch Zeichenfolgen dargestellt werden.
 
- Da der Parameter als Zeichenfolge typisiert ist, ist es möglich, dass zum Zeitpunkt der Kompilierung ein falsch formatierter Parameter übergeben werden könnte.
+ Da der Parameter als Zeichenfolge typisiert ist, ist es möglich, dass zum Zeitpunkt der Kompilierung ein falsch formatierter Parameter übergeben werden kann.
 
- Diese Regel verwendet eine Benennungskonvention Heuristik, um Parameter zu finden, die einen uniform Resource Identifier (URI), eine GUID (GLOBALLY Unique Identifier) oder eine Version darstellen und stellt sicher, dass der übergebene Wert richtig ist.
+ Mit dieser Regel wird eine Benennungskonvention Heuristik verwendet wird, um Parameter zu suchen, die einen uniform Resource Identifier (URI), eine GUID (GLOBALLY Unique Identifier) oder eine Version darstellen, und stellt sicher, dass der übergebene Wert richtig ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Ändern Sie die Parameterzeichenfolge eine ordnungsgemäß formatierte URL, GUID oder Version.
+ Ändern Sie die Zeichenfolge in eine ordnungsgemäß formatierte URL, GUID oder Version an.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn der Parameter keine URL, GUID oder Version darstellt.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn der Parameter keine URL, GUID oder Version darstellt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt den Code für die AssemblyFileVersionAttribute, die mit dieser Regel verletzt.
+ Das folgende Beispiel zeigt Code für die AssemblyFileVersionAttribute, die gegen diese Regel verstößt.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- Die Regel wird durch die folgenden ausgelöst:
+ Die Regel wird ausgelöst, durch die folgenden Parameter:
 
--   Parameter, die "Version" enthalten und können nicht analysiert werden, um System.Version.
+- Parameter, 'Version' enthalten und können nicht analysiert werden, um System.Version.
 
--   Parameter, "Guid" enthalten und können nicht analysiert werden, um System.Guid.
+- Parameter, "Guid" enthalten und können nicht analysiert werden, um System.Guid.
 
--   Parameter, die "Uri", "Urn" oder "Url" enthalten und können nicht in System.Uri analysiert werden.
+- Parameter, "Uri", "Urn" oder "Url" enthalten und können nicht analysiert werden, in System.Uri.
 
 ## <a name="see-also"></a>Siehe auch
- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+
+- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

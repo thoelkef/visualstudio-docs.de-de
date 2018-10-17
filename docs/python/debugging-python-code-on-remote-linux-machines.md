@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code auf Linux-Remotecomputern
 description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remote-Computern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341662"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549310"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -99,7 +99,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<secret>@<ip_address>:5678` ein, wobei `<secret>` für die übergebene Zeichenfolge `enable_attach` im Python-Code, `<ip_address>` für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht.
 
     > [!Warning]
-    > Wenn Sie eine Verbindung über das öffentliche Internet herstellen, sollten Sie stattdessen `tcps` verwenden und die nachstehende Anweisung zum [Sichern der Debuggerverbindung mit SSL](#securing-the-debugger-connection-with-ssl) befolgen.
+    > Wenn Sie eine Verbindung über das öffentliche Internet herstellen, sollten Sie stattdessen `tcps` verwenden und die nachstehende Anweisung zum [Sichern der Debuggerverbindung mit SSL](#secure-the-debugger-connection-with-ssl) befolgen.
 
 1. Drücken Sie die **EINGABETASTE**, um die Liste der auf diesem Computer verfügbaren ptvsd-Prozesse aufzufüllen:
 
@@ -126,6 +126,9 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
     | Visual Studio-Version | Python-Tools/ptvsd-Version |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9 (Legacydebugger: 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (Legacydebugger: 3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |
@@ -145,7 +148,7 @@ In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nu
 
     Verwenden Sie den Hostnamen oder die IP-Adresse (je nachdem, was Sie beim Verbinden verwenden) als **gemeinsamen Namen**, wenn Sie von OpenSSL dazu aufgefordert werden.
 
-    (Weitere Informationen finden Sie unter [Self-signed certificates (Selbstsignierte Zertifikate)](http://docs.python.org/3/library/ssl.html#self-signed-certificates) im Python-Modul `ssl`. Beachten Sie, dass der Befehl in dieser Dokumentation nur eine einzige kombinierte Datei generiert.)
+    (Weitere Informationen finden Sie unter [Self-signed certificates (Selbstsignierte Zertifikate)](https://docs.python.org/3/library/ssl.html#self-signed-certificates) im Python-Modul `ssl`. Beachten Sie, dass der Befehl in dieser Dokumentation nur eine einzige kombinierte Datei generiert.)
 
 1. Ändern Sie im Code den Aufruf von `enable_attach` so, dass er `certfile`- und `keyfile`-Argumente mit den Dateinamen als Werte enthält (diese Argumente haben dieselbe Bedeutung wie bei der standardmäßigen Python-Funktion `ssl.wrap_socket`):
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054555"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775103"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054555"
 
   Erstellen Sie das Projekt, und vergewissern Sie sich, dass unter **Extras** > **Optionen** > **Test** die assemblybasierte Ermittlung aktiviert ist.
 
-  Bei der [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt ermittelt werden. In den 15.6-Vorschauen wird die assemblybasierte Ermittlung (die herkömmliche Ermittlung) nur nach Builds ausgeführt. Diese Einstellung bedeutet, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich ermittelt, und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
+  Bei der [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt ermittelt werden. In Visual Studio 2017 Version 15.6 und höher wird die assemblybasierte Ermittlung (die übliche Ermittlung) erst nach Builds ausgeführt. Mit dieser Einstellung wird festgelegt, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich ermittelt und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
 
 ## <a name="test-explorer--plus-symbol"></a>Pluszeichen (+) im Test-Explorer
 **Was bewirkt das Symbol „+“ (Pluszeichen), das in der obersten Zeile des Test-Explorers angezeigt wird?**
@@ -93,6 +93,31 @@ Alle Testprojekte müssen den entsprechenden NuGet-Verweis auf den .NET-Testadap
 Das **Testprojekt{} verweist auf keinen NuGet-Adapter für .NET. Die Testermittlung oder -ausführung funktioniert für dieses Projekt möglicherweise nicht. Es wird empfohlen, in jedem .NET-Testprojekt in der Projektmappe auf NuGet-Testadapter zu verweisen.**
 
 Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pakete für Testadapter verwenden. Dies führt zu einer erheblichen Leistungsverbesserung und verursacht weniger Continuous Integration-Probleme. Weitere Informationen zur Einstellung der .NET-Testadaptererweiterung finden Sie in den [Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> Wenn Sie den NUnit 2-Testadapter verwenden und nicht zum NUnit 3-Testadapter migrieren können, haben Sie die Möglichkeit, dieses neue Ermittlungsverhalten in Visual Studio Version 15.8 unter **Extras** > **Optionen** > **Test** zu deaktivieren. 
+
+  ![Test-Explorer-Adapterverhalten unter „Extras > Optionen“](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>UWP-TestContainer wurde nicht gefunden
+**Meine UWP-Tests werden nicht mehr in Visual Studio 2017 Version 15.7 und höher ausgeführt.**
+
+In aktuellen UWP-Testprojekten wird für die Testplattform eine Buildeigenschaft festgelegt, die eine höhere Leistung bei der Ermittlung von Test-Apps ermöglicht. Wenn Sie über ein UWP-Testprojekt verfügen, das vor Visual Studio Version 15.7 initialisiert wurde, wird möglicherweise der folgende Fehler unter **Ausgabe** > **Tests** angezeigt:
+
+**System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()** (System.AggregateException: Mindestens ein Fehler ist aufgetreten. ---> System.InvalidOperationException: Der folgende TestContainer wurde nicht {} in d__61.MoveNext() innerhalb von Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider gefunden.)
+  
+Gehen Sie wie folgt vor, um das Problem zu beheben:
+- Legen Sie für die Buildeigenschaft Ihres Testprojekts Folgendes fest:
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- Legen Sie für die TestPlatform-SDK-Version Folgendes fest:
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Verwenden von Featureflags
 **Wie kann ich Featureflags aktivieren, um neue Testfunktionen auszuprobieren?**

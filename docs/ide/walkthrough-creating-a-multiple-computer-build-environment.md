@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 392b2b5a129afe9504f306378103862d631d456e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425711"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371055"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer
 
@@ -27,43 +27,27 @@ Dieses Dokument berichtigt nicht zur externen Weiterverteilung der Software oder
 
 > Haftungsausschluss<br /><br /> Dieses Dokument wird wie besehen bereitgestellt. Obwohl die aufgeführten Schritte getestet wurden, kann nicht jede Konfiguration vollständig getestet werden. Wir bemühen uns, das Dokument mit jeder neugewonnenen Information aktuell zu halten. Die in diesen Unterlagen zum Ausdruck gebrachten Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Microsoft gibt keine Garantie, weder ausdrücklich noch impliziert, hinsichtlich der hier bereitgestellten Informationen. Sie tragen das alleinige Verwendungsrisiko.<br /><br /> Dieses Dokument stellt keinerlei Rechtsansprüche auf geistiges Eigentum in Microsoft-Produkten jeglicher Art bereit. Sie dürfen Dokument für interne Informationszwecke kopieren.<br /><br /> Sie unterliegen keinerlei Verpflichtung, Microsoft Vorschläge, Kommentare oder anderes Feedback ("Feedback") in Bezug auf dieses Dokument zu unterbreiten. Jegliches von Ihnen freiwillig bereitstellte Feedback kann in Microsoft-Produkten und zugehöriger Spezifikation oder weiterer Dokumentationen (zusammen, "Microsoft-Angebote") die möglicherweise wiederum von weiteren Drittanbietern für die Entwicklung eigener Produkte genutzt werden. Bei Abgabe von Feedback an Microsoft zu jeglicher Version dieses Dokuments oder den Microsoft-Angeboten, für die diese gelten, stimmen Sie folgenden Punkten zu: (a) Microsoft darf Ihr Feedback frei verwenden, reproduzieren, lizenzieren verteilen und Ihr Feedback in jeglichen Microsoft-Angeboten auf andere Weise kommerziell im Handel nutzen; (b) Sie gewähren auch Drittanbietern gratis nur solche Patentrechte, die erforderlich sind, um anderen Produkte die Verwendung von bzw. das Herstellen einer Verbindung mit jeglichen spezifischen Teilen eines Microsoft-Produkts, für das Ihr Feedback genutzt wird, zu ermöglichen; und (c) Sie geben Microsoft kein Feedback, bei dem Sie (i) Anlass zur Annahme haben, dass es einem Patent, Urheberrecht, geistigem Eigentum oder den Rechten eines Drittanbieters unterliegt; oder dass es (ii) Lizenzbedingungen unterliegt, die erfordern, dass ein dieses Feedback integrierendes oder davon abgeleitetes Microsoft-Angebot, oder anderes geistiges Eigentum von Microsoft, lizenziert oder auf andere Art und Weise für Drittanbieter freigegeben wird.
 
-Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überprüft worden, indem MSBuild auf der Befehlszeile ausgeführt und mit Team Foundation Build verwendet wurde.
+Diese exemplarische Vorgehensweise wurde für die folgenden Betriebssysteme geprüft:
 
 - Windows 8 (x86 und x64)
 - Windows 7 Ultimate
 - Windows Server 2008 R2 Standard
 
- Nachdem Sie die Schritte in dieser exemplarischen Vorgehensweise abgeschlossen haben, können Sie die Mehrcomputerumgebung zum Erstellen dieser Arten von Apps verwenden:
+Nachdem Sie die Schritte in dieser exemplarischen Vorgehensweise abgeschlossen haben, können Sie die Mehrcomputerumgebung zum Erstellen dieser Arten von Apps verwenden:
 
 - C++-Desktop-Apps, die das Windows 8-SDK verwenden
 - Visual Basic- oder C#-Desktop-Apps, die auf .NET Framework 4.5 ausgerichtet sind
 
- Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwendet werden:
+Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwendet werden:
 
 - UWP-Apps. Zum Erstellen von UWP-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.
 - Desktop-Apps, die auf .NET Framework 4 oder früher ausgerichtet sind. Um diese Arten von Apps zu erstellen, müssen Sie Visual Studio oder die .NET-Verweisassemblys und - Tools (aus dem Windows 7.1-SDK) auf dem Buildcomputer installieren.
 
- Diese exemplarische Vorgehensweise ist in folgende Teile gegliedert:
-
-- [Installieren von Software auf den Computern](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
-
-- [Kopieren von Dateien vom Hostcomputer zum Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
-
-- [Erstellen von Registrierungseinstellungen](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
-
-- [Festlegen von Umgebungsvariablen auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
-
-- [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
-
-- [Erstellen von Projekten](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
-
-- [Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
-
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio mit installierter .NET-Desktopentwicklungsworkload
+- Visual Studio mit installierter **.NET-Desktopentwicklungsworkload**
 
-## <a name="InstallingSoftware"></a> Installieren von Software auf den Computern
+## <a name="install-software-on-the-computers"></a>Installieren von Software auf den Computern
 
 Richten Sie zunächst den Hostcomputer ein, und installieren Sie anschließend den Buildcomputer.
 
@@ -73,7 +57,7 @@ Mit der Installation von Visual Studio auf dem Hostcomputer werden die Dateien u
 
 2. Installieren Sie .NET Framework 4.5 auf dem Buildcomputer. Um sicherzustellen, dass die Installation durchgeführt wurde, vergewissern Sie sich, dass der Wert des Registrierungsschlüssels **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version** mit „4.5“ beginnt.
 
-## <a name="CopyingFiles"></a> Kopieren von Dateien vom Hostcomputer zum Buildcomputer
+## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Kopieren von Dateien vom Hostcomputer zum Buildcomputer
 
 In diesem Abschnitt wird das Kopieren bestimmter Dateien, Compilern, Buildtools, MSBuild-Ressourcen und von Registrierungseinstellungen vom Hostcomputer zum Buildcomputer behandelt. Bei diesen Anweisungen wird vorausgesetzt, dass Visual Studio auf dem Hostcomputer im Standardspeicherort installiert wurde. Wurde es in einem anderen Speicherort installiert, passen Sie die Schritte entsprechend an.
 
@@ -85,7 +69,7 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 > [!NOTE]
 > Auf dem Buildcomputer müssen sich alle relevanten Dateien auf dem gleichen Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.
 
-#### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Kopieren der Windows SDK-Dateien auf den Buildcomputer
+### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Kopieren der Windows SDK-Dateien auf den Buildcomputer
 
 1. Ist nur das Windows SDK für Windows 8 installiert, kopieren Sie diese Ordner rekursiv vom Hostcomputer auf den Buildcomputer:
 
@@ -103,7 +87,7 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - %ProgramFiles%\Windows Kits\8.0\References\
 
-     Wenn Sie über weitere Windows 8-Kits verfügen...
+    Wenn Sie über weitere Windows 8-Kits verfügen...
 
     - Microsoft Windows Assessment and Deployment Kit
 
@@ -111,7 +95,7 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - Microsoft Windows Hardware Certification Kit
 
-     ...wurden möglicherweise Dateien in die Ordner *%ProgramFiles%\Windows Kits\8.0* installiert, die im vorherigen Schritt aufgeführt wurden, und ihre Lizenzbedingungen gestatten möglicherweise keine Buildserverrechte für diese Dateien. Überprüfen Sie die Lizenzbestimmungen für jedes installierte Windows-Kit, um zu überprüfen, ob möglicherweise Dateien auf den Buildcomputer kopiert wurden. Wenn die Lizenzbestimmungen keine Buildserverrechte ermöglichen, entfernen Sie die Dateien vom Buildcomputer.
+    ...wurden möglicherweise Dateien in die Ordner *%ProgramFiles%\Windows Kits\8.0* installiert, die im vorherigen Schritt aufgeführt wurden, und ihre Lizenzbedingungen gestatten möglicherweise keine Buildserverrechte für diese Dateien. Überprüfen Sie die Lizenzbestimmungen für jedes installierte Windows-Kit, um zu überprüfen, ob möglicherweise Dateien auf den Buildcomputer kopiert wurden. Wenn die Lizenzbestimmungen keine Buildserverrechte ermöglichen, entfernen Sie die Dateien vom Buildcomputer.
 
 2. Kopieren Sie die folgenden Ordner rekursiv vom Hostcomputer auf den Buildcomputer:
 
@@ -205,8 +189,9 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-##  <a name="CreatingRegistry"></a> Erstellen von Registrierungseinstellungen
- Sie müssen zum Konfigurieren von Einstellungen für MSBuild Registrierungseinträge erstellen.
+## <a name="create-registry-settings"></a>Erstellen von Registrierungseinstellungen
+
+Sie müssen zum Konfigurieren von Einstellungen für MSBuild Registrierungseinträge erstellen.
 
 1. Identifizieren Sie den übergeordneten Ordner für Registrierungseinträge. Alle Registrierungseinträge werden unter dem gleichen übergeordneten Schlüssel erstellt. Auf einem x86-Computer lautet der übergeordnete Schlüssel **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Auf einem x64-Computer lautet der übergeordnete Schlüssel **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Ungeachtet der Systemarchitektur wird der übergeordnete Schlüssel in dieser exemplarischen Vorgehensweise als "%RegistryRoot%" bezeichnet.
 
@@ -251,11 +236,11 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-     Auf einem x64-Buildcomputer erstellen Sie zudem folgenden Registrierungseintrag und beachten den Hostcomputer, um zu bestimmen, wie diese festzulegen sind.
+    Auf einem x64-Buildcomputer erstellen Sie zudem folgenden Registrierungseintrag und beachten den Hostcomputer, um zu bestimmen, wie diese festzulegen sind.
 
     - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
 
-     Wenn es sich um einen x64-Buildcomputer handelt und Sie die 64-Bit-Version von MSBuild verwenden möchten, oder wenn Sie einem Team Foundation Server-Builddienst auf einem x64-Computer verwenden, müssen die folgenden Registrierungseinträgen in der nativen 64-Bit-Registrierung erstellt werden. Beziehen Sie sich auf den Hostcomputer, um zu bestimmen, wie diese Einträge festzulegen sind.
+    Wenn es sich um einen x64-Buildcomputer handelt und Sie die 64-Bit-Version von MSBuild verwenden möchten, oder wenn Sie einem Team Foundation Server-Builddienst auf einem x64-Computer verwenden, müssen die folgenden Registrierungseinträgen in der nativen 64-Bit-Registrierung erstellt werden. Beziehen Sie sich auf den Hostcomputer, um zu bestimmen, wie diese Einträge festzulegen sind.
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
 
@@ -265,23 +250,23 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-## <a name="SettingEnvVariables"></a> Festlegen von Umgebungsvariablen auf dem Buildcomputer
+## <a name="set-environment-variables-on-the-build-computer"></a>Festlegen von Umgebungsvariablen auf dem Buildcomputer
 
 Um MSBuild auf dem Buildcomputer zu verwenden, müssen die PATH-Umgebungsvariablen festgelegt werden. Sie können *vcvarsall.bat* zum Festlegen der Variablen verwenden, oder Sie können diese manuell konfigurieren.
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Verwenden von „vcvarsall.bat“ zum Festlegen der Umgebungsvariablen
 
-- Öffnen Sie auf dem Buildcomputer ein **Eingabeaufforderungsfenster**, und führen Sie *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat* aus. Sie können ein Befehlszeilenargument verwenden, um das Toolset, das Sie verwenden möchten, anzugeben: "x86", "systemeigenes x64" oder "x64-Cross-Compiler". Wenn Sie kein Befehlszeilenargument angeben, wird das x86-Toolset verwendet.
+Öffnen Sie auf dem Buildcomputer ein **Eingabeaufforderungsfenster**, und führen Sie *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat* aus. Sie können ein Befehlszeilenargument verwenden, um das Toolset, das Sie verwenden möchten, anzugeben: "x86", "systemeigenes x64" oder "x64-Cross-Compiler". Wenn Sie kein Befehlszeilenargument angeben, wird das x86-Toolset verwendet.
 
-     In dieser Tabelle werden die unterstützten Argumente für *vcvarsall.bat* beschrieben:
+In dieser Tabelle werden die unterstützten Argumente für *vcvarsall.bat* beschrieben:
 
-    |Vcvarsall.bat-Argument|Compiler|Buildcomputerarchitektur|Buildausgabearchitektur|
-    |----------------------------|--------------|---------------------------------|-------------------------------|
-    |x86 (Standard)|32-Bit systemeigen|x86, x64|x86|
-    |x86_amd64|x64 Cross|x86, x64|x64|
-    |amd64|x64 (Systemeigen)|x64|x64|
+|Vcvarsall.bat-Argument|Compiler|Buildcomputerarchitektur|Buildausgabearchitektur|
+|----------------------------|--------------|---------------------------------|-------------------------------|
+|x86 (Standard)|32-Bit systemeigen|x86, x64|x86|
+|x86_amd64|x64 Cross|x86, x64|x64|
+|amd64|x64 (Systemeigen)|x64|x64|
 
-     Wenn *vcvarsall.bat* erfolgreich (d.h. ohne Anzeigen einer Fehlermeldung) ausgeführt wurde, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.
+Wenn *vcvarsall.bat* erfolgreich (d.h. ohne Anzeigen einer Fehlermeldung) ausgeführt wurde, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.
 
 ### <a name="manually-set-environment-variables"></a>Manuelles Festlegen von Umgebungsvariablen
 
@@ -291,19 +276,19 @@ Um MSBuild auf dem Buildcomputer zu verwenden, müssen die PATH-Umgebungsvariabl
 
 2. Optional können Sie der PATH-Variable auch die folgenden Pfade hinzufügen, um die Verwendung von MSBuild zum Erstellen der Lösungen zu vereinfachen.
 
-     Wenn Sie das systemeigene MSBuild mit 32-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:
+    Wenn Sie das systemeigene MSBuild mit 32-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
     - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-     Wenn Sie das native MSBuild mit 64-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:
+    Wenn Sie das native MSBuild mit 64-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
     - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Installieren von MSBuild-Assemblys für den globalen Assemblycache auf dem Buildcomputer
 
 Für MSBuild ist die Installation einiger zusätzlicher Assemblys zum GAC auf dem Buildcomputer erforderlich.
 
@@ -324,9 +309,9 @@ Für MSBuild ist die Installation einiger zusätzlicher Assemblys zum GAC auf de
     > [!NOTE]
     > Möglicherweise ist zum vollständigen Installieren einer Assembly in den GAC ein Neustart erforderlich.
 
-## <a name="BuildingProjects"></a> Erstellen von Projekten
+## <a name="build-projects"></a>Erstellen von Projekten
 
-Sie können Team Foundation Build zum Erstellen von [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Projekten und Projektmappen verwenden, oder Sie können sie in der Befehlszeile erstellen. Bei der Verwendung von Team Foundation Build zum Erstellen von Projekten wird die der Systemarchitektur entsprechende ausführbare MSBuild-Datei aufgerufen. In der Befehlszeile können Sie entweder die MSBuild-Version mit 32-Bit oder mit 64-Bit verwenden, und Sie können die MSBuild-Architektur auswählen, indem Sie die PATH-Umgebungsvariable festlegen oder direkt die architekturspezifische ausführbare MSBuild-Datei aufrufen.
+Sie können Visual Studio-Projekte und -Lösungen mit Azure Pipelines oder in der Befehlszeile erstellen. Wenn Sie Azure Pipelines zum Erstellen von Projekten verwenden, wird die der Systemarchitektur entsprechende ausführbare MSBuild-Datei aufgerufen. In der Befehlszeile können Sie entweder die MSBuild-Version mit 32-Bit oder mit 64-Bit verwenden, und Sie können die MSBuild-Architektur auswählen, indem Sie die PATH-Umgebungsvariable festlegen oder direkt die architekturspezifische ausführbare MSBuild-Datei aufrufen.
 
 Führen Sie zum Verwenden von *msbuild.exe* an der Eingabeaufforderung den folgenden Befehl aus, wobei *solution.sln* ein Platzhalter für den Namen Ihrer Projektmappe ist.
 
@@ -334,14 +319,9 @@ Führen Sie zum Verwenden von *msbuild.exe* an der Eingabeaufforderung den folge
 
 Weitere Informationen zum Verwenden von MSBuild an der Befehlszeile finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
 
-> [!NOTE]
-> Zum Erstellen von [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Projekten müssen Sie die "v110"-Plattform Toolsets verwenden. Wenn Sie die [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Projektdateien nicht bearbeiten möchten, können Sie die Plattform Toolset mithilfe dieses Befehlszeilenarguments festlegen:
->
-> **msbuild** *solution.sln* **/p:PlatformToolset=v110**
+## <a name="create-the-build-environment-so-that-it-can-be-checked-into-source-control"></a>Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung
 
-## <a name="CreatingForSourceControl"></a> Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung
-
-Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereitgestellt werden kann, ohne dass Dateien in den GAC installiert oder Registrierungseinstellungen geändert werden müssen. Die folgenden Schritte stellen nur eine Möglichkeit dar, das zu erreichen. Passen Sie diese Schritte den eindeutigen Eigenschaften der aktuellen Buildumgebung an.
+Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereitgestellt werden kann, ohne dass Dateien im globalen Assemblycache gespeichert oder Registrierungseinstellungen geändert werden müssen. Die folgenden Schritte stellen nur eine Möglichkeit dar, das zu erreichen. Passen Sie diese Schritte den eindeutigen Eigenschaften der aktuellen Buildumgebung an.
 
 > [!NOTE]
 > Sie müssen den inkrementellen Buildvorgang deaktivieren, sodass von der Datei *tracker.exe* während eines Builds kein Fehler ausgelöst wird. Legen Sie zum Deaktivieren des inkrementellen Buildvorgangs diesen Buildparameter fest:
@@ -407,9 +387,9 @@ Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereit
 
     - Set Depot=*Speicherort des Depot-Verzeichnisses, das Sie in Schritt 1 erstellt haben*
 
-    - Set path=%path%;*Ort von MSBuild auf dem Computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\
+    - Set path=%path%;*MSBuild-Speicherort auf dem Computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-         Für systemeigenes Erstellen mit 64-Bit, zeigen Sie auf MSBuild mit 64-Bit.
+       Für systemeigenes Erstellen mit 64-Bit, zeigen Sie auf MSBuild mit 64-Bit.
 
 ## <a name="see-also"></a>Siehe auch
 

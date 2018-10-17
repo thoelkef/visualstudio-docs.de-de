@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694073"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668802"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
@@ -128,7 +128,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. Anschließend muss die **AutomationID** der [UWP-App](#create-a-simple-universal-windows-app) abgerufen werden, die getestet werden soll. Öffnen Sie das **Windows-Startmenü**, um die Kachel der App zu sehen. Ziehen Sie dann das Fadenkreuztool ![Zielsymbol](media/target-icon.png) vom Dialogfeld **Coded UI Test Builder** (Generator für Tests der programmierten UI) zur Kachel Ihrer App. Wenn ein blauer Rahmen die Kachel umgibt, lassen Sie die Maus los.
+1. Anschließend muss die **AutomationID** der [UWP-App](#create-a-uwp-app-to-test) abgerufen werden, die getestet werden soll. Öffnen Sie das **Windows-Startmenü**, um die Kachel der App zu sehen. Ziehen Sie dann das Fadenkreuztool ![Zielsymbol](media/target-icon.png) vom Dialogfeld **Coded UI Test Builder** (Generator für Tests der programmierten UI) zur Kachel Ihrer App. Wenn ein blauer Rahmen die Kachel umgibt, lassen Sie die Maus los.
 
    ![Fadenkreuztool](media/cross-hair-tool.png)
 

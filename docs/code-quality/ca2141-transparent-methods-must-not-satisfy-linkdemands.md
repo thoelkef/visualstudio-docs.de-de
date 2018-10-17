@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb38d11ca7312a7eda2ec4b516ab384741f9ab7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a11c5bdf6cd5d2c1e278d7e8943aa672621672cd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917291"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551648"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: Transparente Methoden dürfen keine LinkDemands erfüllen
 |||
@@ -31,17 +31,17 @@ ms.locfileid: "31917291"
  Eine sicherheitstransparente Methode ruft eine Methode in einer Assembly, die nicht mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) oder eine sicherheitstransparente Methode erfüllt einen <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` für einen Typ oder eine Methode.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- LinkDemand erfüllen ist einen sicherheitsrelevanten Vorgang, der unbeabsichtigten Ausweitung von Berechtigungen verursachen kann. Sicherheitstransparenter Code muss LinkDemands, nicht erfüllen, da sie nicht gelten die gleichen sicherheitsanforderungen für die Überwachung als sicherheitsrelevanten Code ist. Transparente Methoden in Security Regel Satz Assemblys der Ebene 1 verursachen alle LinkDemands erfüllen, um vollständige Anforderungen zur Laufzeit konvertiert werden, die zu Leistungsproblemen führen kann. In Assemblys mit Sicherheit Regel Satz Ebene 2 werden transparente Methoden nicht in der Just-in-Time (JIT)-Compiler kompiliert werden soll, wenn sie versuchen, einen LinkDemand zu erfüllen.
+ Erfüllt einen LinkDemand ist einen sicherheitsrelevanten Vorgang, der unbeabsichtigten Ausweitung von Berechtigungen verursachen können. Sicherheitstransparenter Code dürfen keine LinkDemands, erfüllen, da er nicht gelten die gleichen sicherheitsanforderungen für die Überwachung als sicherheitskritischem Code ist. Transparente Methoden in Sicherheit Regel Satz Assemblys der Ebene 1 führt alle LinkDemands sie erfüllen, um die in vollständige Anforderungen zur Laufzeit konvertiert werden, was zu Leistungsproblemen führen kann. In Assemblys mit Sicherheit Regel Satz Ebene 2 können transparente Methoden nicht in der just-in-Time-Compiler (JIT) kompiliert werden soll, wenn sie versuchen, einen LinkDemand zu erfüllen.
 
- In Assemblys, mit Level 2-Sicherheit, Versuche durch eine sicherheitstransparente Methode erfüllt einen LinkDemand oder eine Methode in einer nicht-APTCA-Assembly aufrufen löst eine <xref:System.MethodAccessException>; in Assemblys der Ebene 1 LinkDemand wird zu einer vollständigen Anforderung.
+ In Assemblys, die Sicherheit der Ebene 2 zu verwenden, versuchen, eine sicherheitstransparente Methode erfüllt einen LinkDemand oder Aufrufen einer Methode in einer nicht-APTCA-Assembly löst eine <xref:System.MethodAccessException>; in Assemblys der Ebene 1 die LinkDemand-Anweisung wird eine vollständige Anforderung.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Zugriffsmethode mit der <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie die LinkDemand aus der Methode zugegriffen.
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Zugriffsmethode mit der <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie die LinkDemand-Anweisung aus der verwendete Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird versucht, eine transparente Methode zum Aufrufen einer Methode, die über einen LinkDemand verfügt. Mit dieser Regel wird für diesen Code ausgelöst werden.
+ In diesem Beispiel versucht, eine transparente Methode zum Aufrufen einer Methode, die einen LinkDemand aufweist. Mit dieser Regel wird ausgelöst, in diesem Code.
 
  [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]

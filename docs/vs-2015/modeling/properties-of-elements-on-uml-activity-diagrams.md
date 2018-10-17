@@ -1,0 +1,68 @@
+---
+title: Eigenschaften von Elementen in UML-Aktivitätsdiagramme | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-tfs-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.teamarch.activitydiagram.shapes.properties
+helpviewer_keywords:
+- UML, element properties
+- activity diagrams, properties
+ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
+caps.latest.revision: 19
+author: alexhomer1
+ms.author: gewarren
+manager: douge
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269979"
+---
+# <a name="properties-of-elements-on-uml-activity-diagrams"></a>Eigenschaften von Elementen in UML-Aktivitätsdiagrammen
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Bei einem UML-Aktivitätsdiagramm besitzt jedes Element des Diagramms Eigenschaften. Um die Eigenschaften eines Elements anzuzeigen, die Maustaste des Elements im Diagramm oder im **UML-Modell-Explorer** , und klicken Sie dann auf **Eigenschaften**. Die Eigenschaften werden in der **Eigenschaften** Fenster.  
+  
+> [!NOTE]
+>  In diesem Thema werden die Eigenschaften von Elementen in UML-Aktivitätsdiagrammen behandelt. Informationen über das Lesen von UML-Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md). Weitere Informationen über das Zeichnen von UML-Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md).  
+  
+## <a name="properties-of-elements"></a>Eigenschaften von Elementen  
+  
+|Eigenschaft|Standard|Element|Beschreibung|  
+|--------------|-------------|-------------|-----------------|  
+|**Name**|Ein Standardname|Alle|Bezeichnet das Element.|  
+|**Qualifizierter Name**|Paket :: Name|Alle|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|  
+|**Typen von Arbeitselementen**|0 zugeordnet|Alle|Die Anzahl von Arbeitsaufgaben, die diesem Element zugeordnet sind. Um Arbeitsaufgaben zu verknüpfen, finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).|  
+|**Beschreibung**|(keine)|Alle|Hier können Sie allgemeine Anmerkungen zum Element eingeben.|  
+|**Farbe**|(Standardeinstellung für den Typ)|Alle|Die Farbe der Form.|  
+|**Text**|(keine)|Aktion|Gibt die Aktion ausführlich an.|  
+|**Sprache**|(keine)|Aktion|Die Sprache des Ausdrucks in Body.|  
+|**Lokale Nachbedingungen**|(keine)|Aktion, Senden, Akzeptieren, Aufrufverhalten, Aufrufvorgang|Einschränkungen, die am Ende Beginn der Ausführung erfüllt sein müssen. Das von der Aktion erreichte Ziel.|  
+|**Lokale Vorbedingungen**|(keine)|Aktion, Senden, Akzeptieren, Aufrufverhalten, Aufrufvorgang|Einschränkungen, die vor Beginn der Ausführung erfüllt sein müssen.|  
+|**Ist synchron**|True|Aufrufverhalten, Aufrufvorgang|-Wenn "true", wartet die Aktion auf, bis die Aktivität beendet wird.|  
+|**Verhalten**|(keine)|Aufrufverhalten|– Die Aktivität wurde aufgerufen.|  
+|**Vorgang**|(keine)|Aufrufvorgang|-Der Vorgang, der aufgerufen wird.|  
+|**Ist Unmarshall**|False|Ereignis akzeptieren|-Wenn "true", können mehrere typisierte Ausgabepins vorhanden sein, und Daten auf diese Marshalling. Bei „False“ werden alle Daten auf einem Pin angezeigt.|  
+|**Obergrenze**|**\***|Objektknoten, Aktivitätsparameter|**0** gibt an, dass Daten direkt entlang des Flusses übergeben werden müssen.<br /><br /> **\*** Gibt an, dass die Daten im Fluss gespeichert werden können.|  
+|**Auswahl**|(keine)|Objekt-Knoten, Aktivitätsparameter, Eingabeparameter, Ausgabepin, Objektfluss|Ruft einen Prozess auf, der die Daten filtert. Dieser Vorgang kann in einem anderen Diagramm definiert werden.|  
+|**Sortierung**|(keine)|Objektknoten, Aktivitätsparameter, Eingabepin, Ausgabepin|– Wie mehrere Token gespeichert werden.|  
+|**Ist-Steuerelement**|False|Eingabe-, Ausgabepin|– Wenn "true", ist der Fluss an diesem Pin ein Kontrollfluss. Bei „False“ ist es ein Objektfluss.|  
+|**Type**|(keine)|Eingabepin, Ausgabepin, Objektknoten, Aktivitätsparameter|– Der Typ der übertragenen Objekte.<br />-Der Typ kann ein primitiver Typ wie z. B. ganze Zahl sein, oder eine Klassifizierung an anderer Stelle im Modell definiert. Wenn Sie den Namen eines Typs, die nicht definiert ist eingeben, erscheint der **nicht spezifizierte Typen** Abschnitt des UML-Modell-Explorer.|  
+|**Multiplizität**|1|Eingabe-, Ausgabepin|– Sie können einen einzelnen Wert oder einen Bereich sein `[n..m]`.<br />-Untergrenze `n` : die Aktion kann nicht starten (für einen Eingabepin) oder stoppen (für einen Ausgabepin) bis `n` Objekte, die auf den Pin warten.<br />-Obergrenze `m` -Aktion nutzt oder erzeugt kann nicht mehr als `m` Objekte in einer einzigen Ausführung. * Dies bedeutet, dass keine Begrenzung definiert ist.|  
+|**Transformation**|(keine)|Objektfluss|-Ruft einen Prozess, der die Daten transformiert. Dieser Vorgang kann in einem anderen Diagramm definiert werden.|  
+|**Ist Multicast**|False|Objektfluss|: Gibt an, dass mehrere Empfängerobjekte oder-Komponenten vorhanden sein können.|  
+|**Ist MultiReceive**|False|Objektfluss|: Gibt an, dass mehrere Empfängerobjekte oder-Komponenten vorhanden sein können.|  
+|**Ist die einzige Ausführung**|False|Aktivitätsdiagramm|-If festgelegt ist, es gibt höchstens eine Ausführung des Diagramms zu einem Zeitpunkt.|  
+  
+## <a name="see-also"></a>Siehe auch  
+ [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)   
+ [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)
+
+
+

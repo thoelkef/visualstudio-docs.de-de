@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Testcontrollern und Test-Agents in Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381119"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371029"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -41,17 +41,15 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
     > [!NOTE]
     > Ein Test-Agent muss bereits installiert sein, um ihn einem Testcontroller hinzufügen zu können. Weitere Informationen zum Installieren eines Test-Agents finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
-2. Wenn Sie die Ausführungsmethode des Test-Agents ändern möchten, klicken Sie auf **Ausführungsoptionen**.
+2. Ihnen werden zwei Optionen für die Ausführung des Test-Agents angezeigt:
 
-     Ihnen werden zwei Optionen für die Ausführung des Test-Agents angezeigt:
+   - **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
 
-     **Dienst:** Wenn Sie keine automatisierten Tests ausführen müssen, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie unter **Test-Agent ausführen als** die Option **Dienst** aus. Der Test-Agent wird als Dienst gestartet. Wählen Sie **Weiter** aus.
+      Wenn der Test-Agent als Dienst gestartet wird, können Sie jetzt die Details zum Benutzer eingeben.
 
-     Wenn der Test-Agent als Dienst gestartet wird, können Sie jetzt die Details zum Benutzer eingeben.
+      1. Geben Sie in **Benutzername** den Namen ein.
 
-    1. Geben Sie in **Benutzername** den Namen ein.
-
-    2. Geben Sie in **Kennwort** das Kennwort ein.
+      2. Geben Sie in **Kennwort** das Kennwort ein.
 
         |**Wichtige Benutzerkontoinformationen**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
         |– Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.|
         |– Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht anhand des Controllers ausgeführt werden.|
 
-     **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
+   - **Interaktiver Prozess:** Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren (z.B. Tests der programmierten UI oder Erstellung einer Videoaufzeichnung während der Testläufe), wählen Sie **Interaktiver Prozess** aus. Der Test-Agent wird nicht als Dienst, sondern als interaktiver Prozess gestartet.
 
-     Wenn der Test-Agent als Prozess gestartet wird, können Sie auf der nächsten Seite die Details zum Benutzer eingeben und weitere Optionen festlegen.
+      Wenn der Test-Agent als Prozess gestartet wird, können Sie auf der nächsten Seite die Details zum Benutzer eingeben und weitere Optionen festlegen.
 
-    1. Geben Sie in **Benutzername** den Namen ein.
+      1. Geben Sie in **Benutzername** den Namen ein.
 
-    2. Geben Sie in **Kennwort** das Kennwort ein.
+      2. Geben Sie in **Kennwort** das Kennwort ein.
 
         > [!NOTE]
         > Wenn Sie den Test-Agent mit einem anderen Benutzer (nicht der momentan aktive Benutzer) zur Ausführung als interaktiver Prozess konfigurieren, müssen Sie den Computer neu starten und sich als dieser andere Benutzer anmelden, um den Agent starten zu können. Zudem werden NULL-Kennwörter nicht für Benutzerkonten unterstützt. Wenn Sie den IntelliTrace-Sammler oder die Netzwerkemulation verwenden möchten, muss das Benutzerkonto Mitglied der Gruppe "Administratoren" sein.
 
-        |**Wichtige Benutzerkontoinformationen**|
-        |--------------------------------------------|
-        |– NULL-Kennwörter werden für Benutzerkonten nicht unterstützt.|
-        |– Wenn Sie den Datenadapter und Adapter für diagnostische Daten für IntelliTrace oder die Netzwerkemulation verwenden möchten, muss das Benutzerkonto Mitglied der Gruppe „Administratoren“ sein. – Wenn der Computer, auf dem der Test-Agent ausgeführt wird, ein Betriebssystem verwendet, das ein Benutzerkonto mit den geringsten Berechtigungen aufweist, müssen Sie es ebenfalls als Administrator (mit erhöhten Rechten) ausführen.|
-        |– Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.|
-        |– Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht anhand des Controllers ausgeführt werden.|
+      3. Um sicherzustellen, dass ein Computer mit einem Test-Agent nach dem Neustart Tests ausführen kann, können Sie den Computer für die automatische Anmeldung als Test-Agent-Benutzer einrichten. Klicken Sie auf **Automatisch anmelden**. Dadurch werden der Benutzername und das Kennwort in verschlüsselter Form in der Registrierung gespeichert.
 
-    3. Um sicherzustellen, dass ein Computer mit einem Test-Agent nach dem Neustart Tests ausführen kann, können Sie den Computer für die automatische Anmeldung als Test-Agent-Benutzer einrichten. Klicken Sie auf **Automatisch anmelden**. Dadurch werden der Benutzername und das Kennwort in verschlüsselter Form in der Registrierung gespeichert.
-
-    4. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
+      4. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
 
         > [!WARNING]
         > Durch die automatische Anmeldung und das Deaktivieren des Bildschirmschoners entstehen Sicherheitsrisiken. Wenn Sie die automatische Anmeldung aktivieren, ermöglichen Sie es anderen Benutzern, den betreffenden Computer zu starten und das Konto zu verwenden, das automatisch angemeldet wird. Wenn Sie den Bildschirmschoner deaktivieren, wird der Benutzer möglicherweise nicht aufgefordert, sich anzumelden, um die Sperre des Computers aufzuheben. So kann jede Person mit physikalischem Zugang zum Computer auf den Computer zugreifen. Wenn Sie diese Funktionen auf einem Computer aktivieren, sollten Sie sicherstellen, dass der Computer physikalisch sicher ist. Ein solcher Computer befindet sich z. B. in einem physikalisch sicheren Labor. (Durch Deaktivieren des Kontrollkästchens **Sicherstellen, dass der Bildschirmschoner deaktiviert ist** wird der Bildschirmschoner nicht aktiviert.)
@@ -104,7 +95,7 @@ Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinde
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>So entfernen Sie einen Test-Agent aus einem Testcontroller
 
-1. Wenn der Testcontroller bei keinem Teamprojekt registriert ist, führen Sie die folgenden Schritte aus:
+1. Wenn der Testcontroller bei keinem Projekt registriert ist, führen Sie die folgenden Schritte aus.
 
     1. Öffnen Sie die Testeinstellungsdatei in Visual Studio für Ihr Testprojekt, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 
@@ -117,7 +108,7 @@ Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinde
         > [!NOTE]
         > Durch Entfernen eines Test-Agents wird nur die Zuordnung zum Testcontroller aufgehoben. Unter **Programme und Funktionen** auf dem Test-Agent-Computer können Sie den Test-Agent vollständig deinstallieren.
 
-2. Wenn der Testcontroller mit einem Teamprojekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
+2. Wenn der Testcontroller bei einem Projekt registriert ist, entfernen Sie den Agent mithilfe von Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Ändern der Einstellungen für einen Test-Agent
 
@@ -135,7 +126,7 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 ### <a name="to-change-the-settings-of-a-test-agent"></a>So ändern Sie die Einstellungen eines Test-Agents
 
 > [!NOTE]
-> Wenn der Test-Agent bei einem Testcontroller registriert ist, der mit einem Teamprojekt registriert ist, ändern Sie die Einstellungen in Microsoft Test Manager.
+> Wenn der Test-Agent bei einem Testcontroller registriert ist, der bei einem Projekt registriert ist, ändern Sie die Einstellungen in Microsoft Test Manager.
 
 1. Wählen Sie zum Konfigurieren und Überwachen des Testcontrollers und der registrierten Agents für einen Auslastungstest das Menü **Auslastungstest** in Visual Studio aus, und klicken Sie dann auf **Testcontroller verwalten**. Öffnen Sie für andere Test die Testeinstellungsdatei für Ihr Testprojekt in Visual Studio, und wählen Sie **Rolle** und **Testcontroller verwalten** aus dem Dropdownmenü für das Feld **Controller** aus.
 
@@ -153,27 +144,27 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 |-------------------------|-----------------|
 |**Gewichtung**|Wird bei Verwendung von Test-Agents mit unterschiedlicher Leistungsfähigkeit zum Verteilen der Last verwendet. Ein Test-Agent mit einer Gewichtung von 100 erhält beispielsweise doppelt so viel Last wie ein Test-Agent mit einer Gewichtung von 50.|
 |**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis:** Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
-|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis:** Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Teamprojekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
+|**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis:** Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|
 
 Änderungen der Test-Agent-Gewichtung und der Test-Agent-Attribute werden sofort wirksam, haben jedoch keine Auswirkungen auf laufende Tests. Änderungen des IP-Adressbereichs werden nach einem Neustart des Testcontrollers wirksam.
 
 (Optional) Um den Status eines Test-Agents zu ändern, wählen Sie den Agent in der Liste aus, und wählen Sie dann je nach aktuellem Status des Agents in den verfügbaren Optionen die gewünschte Aktion aus.
 
 > [!NOTE]
-> Wenn der Test-Agent als Prozess ausgeführt wird, verwalten Sie dessen Status über das Infobereichssymbol auf dem Computer, auf dem dieser installiert ist. Darauf wird der Status des Test-Agents angezeigt. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird. Klicken sie zum Starten des Test-Agents als Prozess, wenn dieser nicht ausgeführt wird, auf **Start** > **Alle Programme** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Damit wird das Infobereichssymbol hinzugefügt.
+> Wenn der Test-Agent als Prozess ausgeführt wird, verwalten Sie dessen Status über das Infobereichssymbol auf dem Computer, auf dem dieser installiert ist. Darauf wird der Status des Test-Agents angezeigt. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird.
 
 ## <a name="configure-a-test-controller"></a>Konfigurieren eines Testcontrollers
 
-Einen Testcontroller konfigurieren Sie im **Konfigurationstool für Team-Testcontroller**. Beim Konfigurieren des Testcontrollers können Sie diesen bei einer anderen Teamprojektsammlung registrieren oder die Registrierung des Testcontrollers bei einer Teamprojektsammlung aufheben.
+Einen Testcontroller konfigurieren Sie im **Konfigurationstool für Team-Testcontroller**. Beim Konfigurieren des Testcontrollers können Sie diesen bei einer anderen Projektsammlung registrieren oder die Registrierung des Testcontrollers bei einer Projektsammlung aufheben.
 
-Wenn Sie den Testcontroller bei Ihrer Team Foundation Server-Projektsammlung registrieren möchten, muss das für den Testcontrollerdienst verwendete Konto ein Mitglied der Gruppe „Testdienstkonten für Projektauflistung“ für die Teamprojektsammlung sein oder das zum Ausführen des Testcontroller-Konfigurationstools verwendete Konto der Gruppe „Projektauflistungsadministratoren“ angehören.
+Wenn Sie den Testcontroller bei Ihrer Team Foundation Server-Projektsammlung registrieren möchten, muss das für den Testcontrollerdienst verwendete Konto ein Mitglied der Gruppe „Testdienstkonten für Projektsammlung“ für die Projektsammlung sein, oder das zum Ausführen des Testcontroller-Konfigurationstools verwendete Konto muss ein Projektsammlungsadministrator sein.
 
 > [!NOTE]
-> Wenn Sie die Registrierung eines Testcontrollers bei einer Teamprojektsammlung aufheben, die vorhandene Umgebungen in einer Teamprojektsammlung besitzt, werden die Umgebungen nach wie vor beibehalten, wenn Sie diese Teamprojektsammlung verschoben haben und erneut den Testcontroller für die verschobene Teamprojektsammlung registrieren.
+> Wenn Sie die Registrierung eines Testcontrollers bei einer Projektsammlung aufheben, die vorhandene Umgebungen in einer Projektsammlung besitzt, werden die Umgebungen nach wie vor beibehalten, wenn Sie diese Projektsammlung verschoben haben und erneut den Testcontroller für die verschobene Projektsammlung registrieren.
 
 ### <a name="to-configure-a-test-controller"></a>So konfigurieren Sie einen Testcontroller
 
-1. Sie können den Testcontroller jederzeit rekonfigurieren. Klicken Sie dazu auf **Start** > **Alle Programme** >  **Microsoft Visual Studio** > **Konfigurationstool für Microsoft Visual Studio Test-Controller**.
+1. Sie können den Testcontroller jederzeit neu konfigurieren. Klicken Sie dazu auf **Start** > **Test Controller-Konfigurationstool**.
 
      Das Dialogfeld **Testcontroller konfigurieren** wird angezeigt.
 
@@ -182,9 +173,9 @@ Wenn Sie den Testcontroller bei Ihrer Team Foundation Server-Projektsammlung reg
     > [!NOTE]
     > NULL-Kennwörter werden für Benutzerkonten nicht unterstützt.
 
-4. (Optional) Wenn Sie den Testcontroller nicht in einer Lab-Umgebung verwenden, sondern lediglich Tests in Visual Studio ausführen möchten, deaktivieren Sie **Bei Teamprojektsammlung registrieren**.
+4. (Optional) Wenn Sie den Testcontroller nicht in einer Laborumgebung verwenden, sondern lediglich Tests in Visual Studio ausführen möchten, deaktivieren Sie **Testcontroller bei Teamprojektauflistung registrieren**.
 
-5. (Optional) Zum Konfigurieren des Testcontrollers für Auslastungstests wählen Sie **Für Auslastungstests konfigurieren** aus. Geben Sie dann die SQL Server-Instanz unter **Datenbank für Auslastungstestergebnisse in folgender SQL Server-Instanz erstellen** ein.
+5. (Optional) Wählen Sie zum Konfigurieren des Testcontrollers für Auslastungstests **Testcontroller für Auslastungstests konfigurieren** aus. Geben Sie dann die SQL Server-Instanz unter **Datenbank für Auslastungstestergebnisse in folgender SQL Server-Instanz erstellen** ein.
 
 > [!NOTE]
 > Weitere Informationen zur Problembehandlung finden Sie unter [Install and configure test agents (Installieren und Konfigurieren von Test-Agents)](../test/lab-management/install-configure-test-agents.md).

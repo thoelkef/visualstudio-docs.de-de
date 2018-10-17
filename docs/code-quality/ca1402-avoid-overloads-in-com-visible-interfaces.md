@@ -14,16 +14,20 @@ ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1e0f13d3d26973dc2dc46c6a41a2dc962c91bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4360ff6c6355827a77d165c9a4975ffa8bdc89a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897840"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549010"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden
+
 |||
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
@@ -32,35 +36,35 @@ ms.locfileid: "31897840"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Component Object Model (COM) sichtbare Schnittstelle deklariert überladene Methoden.
+ Einem Component Object Model (COM) Schnittstelle deklariert überladener Methoden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn für COM-Clients überladene Methoden verfügbar gemacht werden, behält nur die erste Methodenüberladung ihren Namen. Nachfolgende Überladungen werden eindeutig umbenannt, indem auf den Namen angefügt wird, einen Unterstrich "_" und eine ganze Zahl, die Reihenfolge der Deklaration der Überladung entspricht. Betrachten Sie beispielsweise die folgenden Methoden aus.
+ Wenn für COM-Clients überladene Methoden verfügbar gemacht werden, behält nur die erste Methodenüberladung ihren Namen. Nachfolgende Überladungen werden eindeutig umbenannt, indem Sie auf den Namen anfügen, einen Unterstrich "_" und eine ganze Zahl, die Reihenfolge der Deklaration der Überladung entspricht. Betrachten Sie beispielsweise die folgenden Methoden:
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
- Diese Methoden werden für COM-Clients wie folgt verfügbar gemacht.
+Diese Methoden werden für COM-Clients wie folgt verfügbar gemacht.
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- Visual Basic 6-COM-Clients können keine Schnittstellenmethoden implementieren, mit einem Unterstrich im Namen.
+Visual Basic 6-COM-Clients können keine Schnittstellenmethoden implementieren, mit einem Unterstrich im Namen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, benennen Sie die überladenen Methoden, damit die Namen eindeutig sind. Alternativ können Sie die Schnittstelle für COM sichtbar machen durch ändern den Zugriff auf `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder durch Anwenden der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> -Attributsatz zur `false`.
+ Um einen Verstoß gegen diese Regel zu beheben, benennen Sie die überladenen Methoden, sodass die Namen eindeutig sind. Sie können auch die Schnittstelle für COM sichtbar machen durch Ändern der Zugriff auf `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder durch Anwenden der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> -Attributsatz auf `false`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Schnittstelle, die die Regel verletzt und eine Schnittstelle, die die Regel erfüllt.
+ Das folgende Beispiel zeigt eine Schnittstelle, die gegen die Regel verstößt und eine Schnittstelle, die die Regel erfüllt.
 
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
  [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
@@ -73,4 +77,6 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Interoperation mit nicht verwaltetem Code](/dotnet/framework/interop/index) [Long-Datentyp](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+
+- [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+- [Long-Datentyp](/dotnet/visual-basic/language-reference/data-types/long-data-type)

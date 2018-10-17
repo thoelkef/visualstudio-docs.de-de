@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755936"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860211"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T >-Aktivitätsdesigner
 
@@ -33,13 +33,13 @@ Zugriff die **RemoveFromCollection\<T >** Aktivitäts-Designer in der **Auflistu
 
 ### <a name="the-removefromcollectiont-properties"></a>Die RemoveFromCollection < T\> Eigenschaften
 
-In der folgenden Tabelle werden die <xref:System.Activities.Statements.RemoveFromCollection%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
+Die folgende Tabelle zeigt die <xref:System.Activities.Statements.RemoveFromCollection%601> Eigenschaften und beschreibt, wie sie im Designer verwendet werden:
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.Activities.Statements.RemoveFromCollection%601>-Aktivität. Der Standardname lautet RemoveFromCollection < Int32\>.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Das Element, das Hinzufügen der **Auflistung\<T >**. Dieses Element ist vom Typ *T*, vom Typ *TypeArgument*. Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um das Element anzugeben.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Die Auflistung, zu der das Element hinzugefügt werden soll. Diese Sammlung wird vom Typ **ICollection < TypeArgument\>.** Um die Sammlung anzugeben, geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Das Element, das Entfernen aus der **Auflistung\<T >**. Dieses Element ist vom Typ *T*, vom Typ *TypeArgument*. Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um das Element anzugeben.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Die Auflistung, aus der das Element entfernt werden soll. Diese Sammlung wird vom Typ **ICollection < TypeArgument\>.** Um die Sammlung anzugeben, geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck.|
 |*TypeArgument*|True|Der Typ T der in der <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente. In der Standardeinstellung dies *TypeArgument* Typ nastaven NA hodnotu **Int32**. Um den Typ zu ändern, ändern Sie den Wert des der *TypeArgument* im Eigenschaftenraster im Kombinationsfeld.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Ein Wert, der angibt, ob das angegebene Element aus der Auflistung entfernt wurde. Um eine Variable anzugeben, die an das Ergebnis gebunden werden soll, geben Sie im Eigenschaftenraster eine Variable ein.|
 

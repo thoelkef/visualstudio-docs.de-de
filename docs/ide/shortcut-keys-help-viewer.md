@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954258"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775218"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tastenkombinationen (Help Viewer)
 
@@ -61,7 +61,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Thema|**STRG**+**TAB**|Wechselt von links nach rechts zwischen Registerkarten|
 |Thema|**STRG**+**UMSCHALT**+**TAB**|Wechselt von rechts nach links zwischen Registerkarten|
 |Thema|**STRG**+**W**|Schließt die aktuelle Registerkarte|
-|Thema|**STRG**+***Nummer***|Wechselt zu einer bestimmten Registerkarte, wobei ***Zahl*** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
+|Thema|**STRG**+**_Nummer_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
 |Thema|**STRG**+**ALT**+**F4**|Schließt andere Inhaltsregisterkarten|
 |Thema|**STRG**+**UMSCHALT**+**Pluszeichen**|Zoomt um 10 % heran|
 |Thema|**STRG**+**Minuszeichen**|Zoomt um 10 % heraus|
@@ -83,7 +83,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Viewer-Optionen|**ALT**+**E**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**, wenn es aktiviert ist.|
 |Viewer-Optionen|**ALT**+**O**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|
 |Find|**EINGABETASTE**|Ändert den Fokus auf das nächste Element|
-|Find|**SHIFT**+**EINGABETASTE**|Ändert den Fokus auf das vorherige Element|
+|Find|**UMSCHALT**+**EINGABETASTE**|Ändert den Fokus auf das vorherige Element|
 |Find|**ESC**|Verbirgt das Textfeld **Suchen**.|
 |Statusleiste|**ALT**+**E**|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|
 |Statusleiste|**ALT**+**U**|Lädt Inhalt herunter, wenn die Statusleiste anzeigt, das Updates verfügbar sind|

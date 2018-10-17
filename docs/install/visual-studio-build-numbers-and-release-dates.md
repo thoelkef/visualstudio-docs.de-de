@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/20/2018
+ms.date: 09/20/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62980f3e6eca10732502fa97c453628e4e33b1
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 30e176c7094a303560f1d7cb81732bfd7b62f1d9
+ms.sourcegitcommit: a2d8a662601e61614ac5332391e64ee011fba28a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138466"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46501155"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
 
@@ -25,6 +25,12 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.5 | Release | 20. September 2018 | 15.8.28010.2036 |
+| 15.9.0 Vorschauversion 2 | Vorschau | 11. September 2018 | 15.9.28107.0 |
+| 15.8.4 | Release | 11. September 2018 | 15.8.28010.2026 |
+| 15.8.3 | Release | 6. September 2018 | 15.8.28010.2019 |
+| 15.8.2 | Release | 28. August 2018 | 15.8.28010.2016 |
+| 15.0.18 | Release | 28. August 2018 | 15.0.26228.52 |
 | 15.9.0 Vorschauversion 1 | Vorschau | 20. August 2018 | 15.9.28016.0 |
 | 15.8.1 | Release | 17. August 2018 | 15.8.28010.2003 |
 | 15.8.0 | Release | 14. August 2018 | 15.8.28010.0 |

@@ -9,16 +9,19 @@ description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281650"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283287"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
 Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten.
+
+> [!NOTE]
+> Wenn Sie ein mehrjähriges Abonnement durch Volumenlizenzierung erwerben, ist der EMS-Vorteil derzeit nur im ersten Jahr verfügbar.  
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -27,24 +30,24 @@ Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereit
 1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
 2.  Suchen Sie im Abschnitt „Tools“ die Kachel „Enterprise Mobility & Security“, und klicken Sie im unteren Bereich der Kachel auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-
-    ![EMS-Kachel](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „EMS“](_img\vs-ems\vs-ems-tile.png)
 
 2.  Auf der Seite von Enterprise Mobility + Security E5 können Sie sich mit einem bestehenden Abonnement anmelden oder ein neues erstellen.  Um ein neues zu erstellen, vervollständigen Sie die angeforderten Informationen, und klicken Sie auf **Next** (Weiter).
-
-    ![Konto für EMS erstellen](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS-Vorteil: Konto erstellen](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Klicken Sie auf **Create my account** (Mein Konto erstellen), um den Vorgang fortzusetzen.
-
-    ![EMS: Benutzer-ID erstellen](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS-Vorteil: Benutzer-ID erstellen](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  Geben Sie als Nächstes eine Telefonnummer an, an die der Prüfcode per Anruf oder SMS übermittelt wird.  Geben Sie den Code ein, und klicken Sie auf **Next** (Weiter).
-
-    ![EMS-Prüfung](_img\vs-ems\vs-ems-robot-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS-Vorteil: Überprüfung](_img\vs-ems\vs-ems-robot-cropped.png)
 
 5.  Auf der nächsten Seite ist die Anmeldeseite, auf der Ihre Benutzer-ID angezeigt wird.  Notieren Sie die Informationen zur späteren Verwendung.  Klicken Sie auf **You’re ready to go…** (Sie sind startbereit…).
-
-    ![EMS: Konto erstellt](_img\vs-ems\vs-ems-save-info-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS-Vorteil: Konto erstellt](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  Für EMS ist Zugriff auf das [Microsoft Azure-Portal](https://azure.microsoft.com) erforderlich.  Führen Sie die drei Schritte auf der EMS-Angebotsseite aus. So aktivieren Sie Ihr Azure-Abonnement, fügen Benutzer hinzu und konfigurieren EMS.
 
@@ -68,4 +71,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 -  Benötigen Sie Hilfe bei EMS?  Lesen Sie die [Onlinedokumentation zu EMS](/enterprise-mobility-security/).
 -  Besuchen Sie https://support.microsoft.com/allproducts, und wählen Sie das Produkt aus, um technischen Support für EMS-Komponenten zu erhalten.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

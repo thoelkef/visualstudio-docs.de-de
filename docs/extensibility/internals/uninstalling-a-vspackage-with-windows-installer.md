@@ -1,5 +1,5 @@
 ---
-title: Deinstallieren eine VSPackage mit Windows Installer | Microsoft Docs
+title: Deinstallieren eines VSPackage mit Windows Installer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a62692003b26afcd5b7814bdc03320fa1c453a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c619cdeffccb6e5da37eaaf15e5542fe78c44f79
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141095"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495309"
 ---
-# <a name="uninstalling-a-vspackage-with-windows-installer"></a>Deinstallieren eine VSPackage mit Windows Installer
-Meistens, Windows Installer können deinstallieren das VSPackage nur durch "Rückgängig", was es geschehen ist, um Ihr VSPackage zu installieren. Die benutzerdefinierten Aktionen, die in beschriebenen [Befehle, muss werden führen Sie nach der Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) nach einer Deinstallation ebenfalls ausgeführt werden muss. Da die Aufrufe von devenv.exe unmittelbar vor der InstallFinalize Standardaktionen für die Installation und Deinstallation ausgeführt werden, dienen die CustomAction und InstallExecuteSequence Tabelleneinträge beide Fälle.  
+# <a name="uninstalling-a-vspackage-with-windows-installer"></a>Deinstallieren eines VSPackage mit Windows Installer
+Zum größten Teil, Windows Installer können deinstallieren, das VSPackage nur durch "rückgängig zu machen, was dabei durchgeführt wurde, um Ihr VSPackage zu installieren. Die benutzerdefinierten Aktionen, die in beschriebenen [Befehle, muss sein ausführen nach der Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) muss nach einer Deinstallation ebenfalls ausgeführt werden. Da die Aufrufe von devenv.exe direkt vor die InstallFinalize Standardaktionen für die Installation und Deinstallation ausgeführt werden, dienen die CustomAction und InstallExecuteSequence Tabelleneinträge beiden Fällen.  
   
 > [!NOTE]
 >  Führen Sie `devenv /setup` nach der Deinstallation eines MSI-Pakets.  
   
- Als allgemeine Regel Wenn Sie ein Windows Installer-Paket, benutzerdefinierte Aktionen hinzufügen müssen diese Aktionen während der Deinstallation und Rollback behandelt werden. Wenn Sie benutzerdefinierte Aktionen zum Registrieren Ihres VSPackages hinzufügen, z. B. müssen Sie die benutzerdefinierte Aktionen zum aufheben zu hinzufügen.  
+ Als allgemeine Regel Wenn Sie ein Windows Installer-Paket, benutzerdefinierte Aktionen hinzufügen müssen Sie diese Aktionen während der Deinstallation und Rollback behandeln. Wenn Sie benutzerdefinierte Aktionen zum Registrieren Ihres VSPackages hinzufügen, beispielsweise müssen Sie benutzerdefinierte Aktionen aus, um es zu Aufheben der Registrierung hinzufügen.  
   
 > [!NOTE]
->  Es ist möglich, dass ein Benutzer auf Ihr VSPackage zu installieren und deinstallieren Sie die Versionen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit dem er integriert wird. Können Sie sicherstellen, dass Ihr VSPackage Deinstallation in diesem Szenario funktioniert durch die Beseitigung von benutzerdefinierter Aktionen, die Code mit Abhängigkeiten ausgeführt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+>  Es ist möglich, dass ein Benutzer aus, um Ihr VSPackage zu installieren und deinstallieren Sie die Versionen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit der er integriert ist. Sie können, stellen Sie sicher, dass Ihre VSPackage Deinstallation in diesem Szenario funktioniert Gerätetreiberschnittstellen einzufügen, benutzerdefinierte Aktionen, die auf Code mit Abhängigkeiten ausgeführt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="handling-launch-conditions-at-uninstall-time"></a>Startbedingungen zur Behandlung der Deinstallation  
- Die Standardaktionen LaunchConditions liest die Zeilen der Tabelle LaunchCondition Fehler angezeigt werden soll, wenn die Bedingung nicht erfüllt sind. Wie Startbedingungen in der Regel verwendet werden, um sicherzustellen, dass die Systemanforderungen erfüllt sind, können Sie in der Regel Startbedingungen während der Deinstallation durch Hinzufügen der Bedingung überspringen `NOT Installed`, auf die LaunchConditions Zeile der Tabelle LaunchCondition.  
+## <a name="handling-launch-conditions-at-uninstall-time"></a>Behandlung von Startbedingungen am Zeitpunkt der Deinstallation  
+ Die Standardaktionen LaunchConditions liest die Zeilen der Tabelle LaunchCondition, Fehler angezeigt werden soll, wenn die Bedingungen nicht erfüllt sind. Wie Starten von Bedingungen in der Regel verwendet werden, um sicherzustellen, dass die Systemanforderungen erfüllt sind, können Sie in der Regel Startbedingungen bei der Deinstallation durch Hinzufügen der Bedingung, `NOT Installed`, auf die LaunchConditions Zeile der Tabelle LaunchCondition.  
   
- Eine Alternative besteht darin, hinzufügen `OR Installed` um Bedingungen zu starten, die bei der Deinstallation nicht wichtig sind. Hierdurch wird sichergestellt, dass die Bedingung wird immer "true" bei der Deinstallation und Start Bedingung Fehlermeldung wird nicht angezeigt.  
+ Eine Alternative besteht darin hinzufügen `OR Installed` zum Starten von Bedingungen, die bei der Deinstallation nicht wichtig sind. Damit wird sichergestellt, dass die Bedingung ist bei der Deinstallation immer "true", und die Fehlermeldung des Start-Bedingung wird nicht angezeigt.  
   
 > [!NOTE]
->  `Installed` ist die Eigenschaft, die Windows Installer legt fest, wenn er erkennt, dass Ihr VSPackage bereits auf dem System installiert wurde.  
+>  `Installed` ist die Eigenschaft, die Windows Installer legt fest, wenn er erkennt, dass das VSPackage auf dem System bereits installiert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Windows Installer](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md)

@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586577"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551260"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -38,7 +38,7 @@ Wenn Sie Pakete in einer Umgebung installieren möchten, verwenden Sie die [Refe
 
 ### <a name="global-environments"></a>Globale Umgebungen
 
-Jede Python-Installation (z.B. Python 2.7, Python 3.6, Anaconda 4.4.0, usw., wie in [Installieren von Python-Interpretern](installing-python-interpreters.md) beschrieben) verwaltet ihre eigene globale Umgebung. Jede Umgebung besteht aus dem spezifischen Python-Interpreter, einer Standardbibliothek und einer Reihe von vorinstallierten Paketen. Das Installieren eines Pakets in einer globalen Umgebung macht das Paket für alle Projekte verfügbar, die dieselbe Umgebung verwenden. Wenn sich die Umgebung in einem geschützten Bereich des Dateisystems befindet (z.B. in *C:\Programme*), sind für die Installation von Paketen Administratorrechte erforderlich.
+Jede Python-Installation (z.B. Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0 usw.; siehe [Installieren von Python-Interpretern](installing-python-interpreters.md)) verwaltet ihre eigene globale Umgebung. Jede Umgebung besteht aus dem spezifischen Python-Interpreter, einer Standardbibliothek und einer Reihe von vorinstallierten Paketen. Das Installieren eines Pakets in einer globalen Umgebung macht das Paket für alle Projekte verfügbar, die dieselbe Umgebung verwenden. Wenn sich die Umgebung in einem geschützten Bereich des Dateisystems befindet (z.B. in *C:\Programme*), sind für die Installation von Paketen Administratorrechte erforderlich.
 
 Globale Umgebungen sind für alle Projekte auf dem Computer verfügbar. Wählen Sie in Visual Studio eine globale Umgebung als Standardumgebung aus, die für alle Projekte genutzt wird, wenn Sie keine spezifische Umgebung für ein Projekt aussuchen. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Für Visual Studio-2017, Version 15.6 und früher, können Sie Conda-Umgebungen 
 Visual Studio 2017, Version 15.7 und höher, erkannt Conda-Umgebungen automatisch und zeigt sie im Fenster **Python-Umgebungen** an, wie im nächsten Abschnitt beschrieben.
 
 ## <a name="the-python-environments-window"></a>Das Fenster „Python-Umgebungen“
+
+> [!Note]
+> Auf den Screenshots in diesem Abschnitt ist Visual Studio 15.8 zu sehen. Je nach verwendeter Visual Studio-Version wird möglicherweise eine andere Benutzeroberfläche angezeigt.
 
 Die Umgebungen, die Visual Studio bekannt sind, werden im Fenster **Python-Umgebungen** angezeigt. Zum Öffnen dieses Fensters können Sie eine der folgenden Methoden verwenden:
 

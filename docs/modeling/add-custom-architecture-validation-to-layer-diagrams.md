@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
+title: Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2599a0c9e4390ed3d25cfc6393a32d72d803bd0e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ffb018e590b95a13e811180e88d1906bf5f703b0
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952543"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370834"
 ---
-# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
-In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren, damit sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Diagramm Abhängigkeit entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.
+# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
+In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells überprüfen, sodass sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Abhängigkeitsdiagramm entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.
 
- Wenn der Benutzer wählt die **Architektur überprüfen** Befehl in einem Diagramm Abhängigkeit die Standardvalidierungsmethode aufgerufen, anschließend folgen alle, die installiert wurden.
+ Wenn der Benutzer wählt die **Architektur überprüfen** Befehl in einem Abhängigkeitsdiagramm wird die Standardvalidierungsmethode aufgerufen, anschließend folgen alle, die installiert wurden.
 
 > [!NOTE]
->  Der Hauptzweck der Überprüfung werden in einem Diagramm Abhängigkeit das Diagramm mit dem Programmcode in anderen Teilen der Projektmappe zu vergleichen.
+>  Der Hauptzweck der Validierung werden in einem Abhängigkeitsdiagramm mit im Diagramm mit dem Programmcode in anderen Teilen der Lösung zu vergleichen.
 
  Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können. Sie können entweder das Validierungssteuerelement allein in eine VSIX einfügen, oder Sie können es in der gleichen VSIX mit anderen Erweiterungen kombinieren. Schreiben Sie den Code für das Validierungssteuerelement in einem eigenen Visual Studio-Projekt und nicht im gleichen Projekt wie andere Erweiterungen.
 
@@ -46,10 +46,10 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
      Mit dieser Vorlage wird ein Projekt mit einem kleinen Beispiel erstellt.
 
     > [!WARNING]
-    >  Makethe Vorlage ordnungsgemäß arbeiten:
+    >  Makethe Vorlage ordnungsgemäß funktioniert:
     >
     >  -   Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.
-    > -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im genannten [Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeit Diagramme](../modeling/add-custom-properties-to-layer-diagrams.md).
+    > -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).
 
 3.  Bearbeiten Sie den Code, um die Validierung zu definieren. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).
 
@@ -58,7 +58,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     > [!NOTE]
     >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).
 
-5.  Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei **"bin"\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .
+5.  Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer installieren, suchen die **VSIX** Datei **Bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Hinzufügen eines Ebenenvalidierungssteuerelements zu einer separaten VSIX
  Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Befehle und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen.
@@ -115,7 +115,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     > [!NOTE]
     >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).
 
-8.  Um VSIX-Pakete in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** in der Datei die **"bin"** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
+8.  Um die VSIX-Datei in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei die **Bin** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
 
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .
 
@@ -160,7 +160,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
  Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.
 
 > [!NOTE]
->  Dies ist nicht identisch mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.
+>  Dies ist nicht identisch mit dem Validierungsprozess, der in einer domänenspezifischen Sprachen verwendet werden kann.
 
  Validierungsmethoden sollten das zu überprüfende Ebenenmodell oder den Code nicht ändern.
 
@@ -194,26 +194,27 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test mit einer Projektmappe, die Abhängigkeiten enthält
  Die Validierung wird erst ausgeführt, wenn die folgenden Eigenschaften vorhanden sind:
 
--   Es gibt mindestens einen Abhängigkeitslink im Diagramm Abhängigkeit.
+-   Es gibt mindestens einen Abhängigkeitslink im Diagramm der Abhängigkeit.
 
 -   Es gibt Ebenen im Modell, die Codeelementen zugeordnet sind.
 
- Die erste Mal, dass Sie eine experimentelle Instanz von Visual Studio zum Testen der validierungserweiterung Starten öffnen oder erstellen eine Lösung, die diese Eigenschaften aufweist.
+ Beim ersten, dass Sie eine experimentelle Instanz von Visual Studio zum Testen der validierungserweiterung Starten öffnen oder erstellen eine Lösung, die diese Eigenschaften aufweist.
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>Ausführen einer Projektmappenbereinigung vor dem Überprüfen der Architektur
- Verwenden Sie bei jeder Aktualisierung des Validierungscodes im Menü **Erstellen** der experimentellen Instanz den Befehl **Projektmappe bereinigen** , bevor Sie den Befehl "Überprüfen" testen. Dies ist notwendig, da die Ergebnisse der Validierung zwischengespeichert werden. Wenn Sie das Test-Abhängigkeit Diagramm oder sein Code nicht aktualisiert haben, werden die Validierungsmethoden nicht ausgeführt werden.
+ Verwenden Sie bei jeder Aktualisierung des Validierungscodes im Menü **Erstellen** der experimentellen Instanz den Befehl **Projektmappe bereinigen** , bevor Sie den Befehl "Überprüfen" testen. Dies ist notwendig, da die Ergebnisse der Validierung zwischengespeichert werden. Wenn Sie den Test-Abhängigkeitsdiagramm oder den Code nicht aktualisiert haben, werden die Validierungsmethoden nicht ausgeführt werden.
 
 ### <a name="launch-the-debugger-explicitly"></a>Explizites Starten des Debuggers
  Die Validierung wird in einem separaten Prozess ausgeführt. Daher werden die Haltepunkte in der Überprüfungsmethode nicht ausgelöst. Sie müssen den Debugger explizit dem Prozess anfügen, wenn die Validierung gestartet wurde.
 
  Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von Visual Studio.
 
- Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von Visual Studio und auf die **Debuggen** klicken Sie im Menü **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.
+ Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von Visual Studio und klicken Sie auf die **Debuggen** klicken Sie im Menü **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.
 
  Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debugging**).
 
 ### <a name="deploying-a-validation-extension"></a>Bereitstellen einer Validierungserweiterung
- Um die Validierungserweiterung auf einem Computer zu installieren, auf dem eine geeignete Version von Visual Studio installiert ist, öffnen Sie die VSIX-Datei auf dem Zielcomputer. Um die Installation auf einem Computer mit [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] auszuführen, müssen Sie den VSIX-Inhalt manuell in einen Ordner "Extensions" extrahieren. Weitere Informationen finden Sie unter [bereitstellen eine ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md).
+
+Um die Validierungserweiterung auf einem Computer zu installieren, auf dem eine geeignete Version von Visual Studio installiert ist, öffnen Sie die VSIX-Datei auf dem Zielcomputer.
 
 ##  <a name="example"></a> Example code
 

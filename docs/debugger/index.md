@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 68dfbdab841e425926268e40345d0370e4aeee87
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303295"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542363"
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
@@ -110,7 +110,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/view-historical-application-state">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -120,7 +120,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Anzeigen von IntelliTrace-Momentaufnahmen (Visual Studio Enterprise)</h3>
+                        <h3>Untersuchen vorheriger App-Zustände (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b4bf86df74a60dbeabef5c6f375354c5a945aa
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 84865bf354bd1822ca872ed5f0df89a4330fb690
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636687"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371042"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Gewusst wie: hinzufügen eine Abhängigkeit zu einem VSIX-Paket
 
@@ -52,6 +52,6 @@ Die VSIX-Installationsprogramm erkennt von früheren Versionen von Visual Studio
 
 ## <a name="see-also"></a>Siehe auch
 
- [Referenz zum VSIX-Erweiterung Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
  [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

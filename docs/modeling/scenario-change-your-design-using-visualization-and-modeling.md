@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280223"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860510"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 
@@ -112,7 +112,7 @@ Beide Teams verwenden außerdem abhängigkeitsüberprüfung, um sicherzustellen,
 - [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Einige Versionen von Visual Studio unterstützen abhängigkeitsüberprüfung und schreibgeschützte Versionen von Code Maps, zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Einige Versionen von Visual Studio unterstützen abhängigkeitsüberprüfung und schreibgeschützte Versionen von Code Maps, zur Visualisierung und Modellierung. Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Verstehen und kommunizieren von Informationen zum system
 
@@ -169,12 +169,12 @@ Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. 
 |------------------|-------------------|
 |*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|
 
-###  <a name="ValidatingCode"></a> Halten Sie den Code mit dem Entwurf konsistent
+### <a name="ValidatingCode"></a> Halten Sie den Code mit dem Entwurf konsistent
  Dinner Now muss sicherstellen, dass der aktualisierte Code konsistent mit dem Entwurf bleibt. Sie erstellen Sie Abhängigkeitsdiagramme, die die Funktionsebenen im System beschreiben, die erlaubten Abhängigkeiten zwischen diesen Ebenen zuordnen und diese Lösungsartefakte angeben.
 
 |**Diagramm**|**Beschreibt**|
 |-----------------|-------------------|
-|*Abhängigkeitsdiagramm*<br /><br /> Thema<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />- [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Abhängigkeitsdiagramm organisiert und ordnet die Elemente in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung für die abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|
+|*Abhängigkeitsdiagramm*<br /><br /> Thema<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />- [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Abhängigkeitsdiagramm organisiert und ordnet die Elemente in Visual Studio-Projektmappe, abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|
 
  Die folgende Abhängigkeitsdiagramm beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Elemente, die jeder Ebene zugeordnet sind:
 
@@ -182,7 +182,7 @@ Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. 
 
  **Abhängigkeitsdiagramm**
 
-Um sicherzustellen, während der Codeentwicklung keine Konflikte mit dem Entwurf auftreten, werden die Teams verwendet, für die abhängigkeitsüberprüfung für builds auf Team Foundation Build ausgeführt. Außerdem erstellen Sie eine benutzerdefinierte MSBuild-Aufgabe zum abhängigkeitsüberprüfung in ihre-Check-in-Vorgänge erfordern. Mithilfe von Buildberichten werden Validierungsfehler erfasst.
+Um sicherzustellen, während der Codeentwicklung keine Konflikte mit dem Entwurf auftreten, werden die Teams verwendet, für die abhängigkeitsüberprüfung für builds auf Azure DevOps ausgeführt. Außerdem erstellen Sie eine benutzerdefinierte MSBuild-Aufgabe zum abhängigkeitsüberprüfung in ihre-Check-in-Vorgänge erfordern. Mithilfe von Buildberichten werden Validierungsfehler erfasst.
 
 Thema
 
@@ -224,7 +224,7 @@ Thema
 
 ### <a name="TestValidateCheckInCode"></a> Testen, überprüfen und Einchecken von Code
 
-Beim Abschließen der einzelnen Aufgaben wird der Code von den Teams in der Team Foundation-Versionskontrolle eingecheckt. Wird dies vergessen, werden von Team Foundation Server entsprechende Erinnerungen angezeigt. Bevor Team Foundation Server ihr Einchecken akzeptiert, führen die Teams Komponententests und abhängigkeitsüberprüfung, die den Code anhand der Testfälle und des Entwurfs zu überprüfen. Sie verwenden Team Foundation Server zum Ausführen von Builds, automatisierte Komponententests und regelmäßig abhängigkeitsüberprüfung. Dadurch wird sichergestellt, dass der Code die folgenden Kriterien erfüllt:
+Wie die Teams Abschließen der einzelnen Aufgaben, die sie ihren Code in quellcodeverwaltung Einchecken und Erinnerungen von Team Foundation Server, wenn sie vergessen haben. Bevor Team Foundation Server ihr Einchecken akzeptiert, führen die Teams Komponententests und abhängigkeitsüberprüfung, die den Code anhand der Testfälle und des Entwurfs zu überprüfen. Sie verwenden Team Foundation Server zum Ausführen von Builds, automatisierte Komponententests und regelmäßig abhängigkeitsüberprüfung. Dadurch wird sichergestellt, dass der Code die folgenden Kriterien erfüllt:
 
 - Er funktioniert.
 
@@ -234,7 +234,7 @@ Beim Abschließen der einzelnen Aufgaben wird der Code von den Teams in der Team
 
 Dinner Now verfügt über eine große Auflistung automatisierter Tests, die Lucerne wiederverwenden kann, da fast alle weiterhin gültig sind. Lucerne kann außerdem auf diesen Tests aufbauen und neue hinzufügen, um neue Funktionen abzudecken. Beide verwenden auch Visual Studio, um manuelle Tests auszuführen.
 
-Um sicherzustellen, dass der Code dem Entwurf entspricht, konfigurieren die Teams ihre Builds in Team Foundation Build abhängigkeitsüberprüfung enthalten. Wenn Konflikte auftreten, wird ein Bericht mit den Details generiert.
+Um sicherzustellen, dass der Code dem Entwurf entspricht, konfigurieren die Teams ihre Builds in Azure DevOps abhängigkeitsüberprüfung einschließen. Wenn Konflikte auftreten, wird ein Bericht mit den Details generiert.
 
 Thema
 
@@ -244,7 +244,7 @@ Thema
 
 - [Verwenden der Versionskontrolle](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Azure-Pipelines](/azure/devops/pipelines/index)
+- [Azure-Pipelines](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aktualisieren des Systems mithilfe von Visualisierung und Modellierung
 

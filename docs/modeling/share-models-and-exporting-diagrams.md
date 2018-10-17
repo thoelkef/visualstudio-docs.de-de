@@ -12,38 +12,36 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3aa9a3157731d70971d15c514a088af761360848
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948300"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858353"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.
 
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Arbeiten an einem Modell als Team
- Benutzer von Visual Studio können erstellen und Bearbeiten von Modellen, Abhängigkeit und gerichtete Diagramme.
+ Benutzer von Visual Studio können erstellen und Bearbeiten von Modellen, Abhängigkeitsdiagramme und gerichtete Diagramme.
 
- Andere Benutzer können gleichzeitig an einem Modell arbeiten, aber sollte auf verschiedenen Paketen funktionieren.
+ Andere Benutzer können gleichzeitig auf einem Modell arbeiten, aber an verschiedenen Paketen arbeiten sollten.
 
- Wir empfehlen die Verwendung von [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)].
-
- Vorschläge zum Organisieren von in einem Projekt mittlere oder große Modelle, finden Sie unter [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md).
+ Vorschläge zum Organisieren von Modellen in einem mittleren oder großen Projekt finden Sie unter [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Lesen und Überprüfen von Modellen
- Teammitglieder, die mit einigen Versionen von Visual Studio (die Modelle erstellen können) können Modelle, lesen Modellierungsdiagramme und gerichtete Diagramme, aber nicht bearbeiten.  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Teammitglieder, die mit bestimmten Versionen von Visual Studio (die Modelle erstellt werden können) können lesen Modelle, Modellierungsdiagramme und gerichtete Diagramme, aber nicht bearbeiten.  Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Eine Abhängigkeit Diagramm kann nur innerhalb des Modells geöffnet werden, in dem es erstellt wurde. Um Zugriff auf ein Diagramm zu gewähren, müssen Sie daher Zugriff auf alle Modellierungsprojektdateien oder auf Kopien von diesen gewähren.
+ Ein Abhängigkeitsdiagramm kann nur innerhalb des Modells geöffnet werden, in dem es erstellt wurde. Um Zugriff auf ein Diagramm zu gewähren, müssen Sie daher Zugriff auf alle Modellierungsprojektdateien oder auf Kopien von diesen gewähren.
 
  Weitere Informationen finden Sie unter [Lesen von Modellen und Diagrammen in anderen Visual Studio-Versionen](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>Verwenden von Diagrammen in Dokumenten und Präsentationen
  Sie können Teile von Diagrammen in Dokumente oder Präsentationen kopieren. Sie können Diagramme auch drucken, z. B. in XPS-Dateien.
 
- Weitere Informationen finden Sie unter [Exportieren von Diagrammen als Bilder](../modeling/export-diagrams-as-images.md).
+ Weitere Informationen finden Sie unter [Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

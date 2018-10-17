@@ -14,16 +14,21 @@ ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eaa68b6046fd2d3cfb6370b18de2b478b16db9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898452"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549429"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Basistypen als Parameter übergeben
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -32,27 +37,27 @@ ms.locfileid: "31898452"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methodendeklaration enthält einen formalen Parameter, der ein abgeleiteter Typ ist, und die Methode ruft nur Member des Basistyps des Parameters.
+ Eine Methodendeklaration enthält einen formalen Parameter, der ein abgeleiteter Typ ist, und die Methode ruft nur Member der Basisklasse des Parameters.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn in einer Methodendeklaration ein Basistyp als Parameter angegeben wird, kann jeder Typ, der von diesem Basistyp abgeleitet ist, als entsprechendes Argument an die Methode übergeben werden. Wenn das Argument innerhalb des Methodentexts verwendet wird, hängt die jeweilige Methode, die ausgeführt wird der Typ des Arguments ab. Wenn die zusätzliche Funktionalität, die vom abgeleiteten Typ bereitgestellt wird, nicht erforderlich ist, ermöglicht die Verwendung des Basistyps eine allgemeinere Nutzung der Methode.
+ Wenn in einer Methodendeklaration ein Basistyp als Parameter angegeben wird, kann jeder Typ, der von diesem Basistyp abgeleitet ist, als entsprechendes Argument an die Methode übergeben werden. Wenn das Argument innerhalb des Methodentexts verwendet wird, hängt die spezifische Methode, die ausgeführt wird, der den Typ des Arguments. Wenn die zusätzliche Funktionalität, die vom abgeleiteten Typ bereitgestellt wird, nicht erforderlich ist, ermöglicht die Verwendung des Basistyps allgemeinere Nutzung der Methode.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ des Parameters mit seinem Basistyp.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ des Parameters in den Basistyp.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können zum Unterdrücken einer Warnung dieser Regel ruhig
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel
 
--   Wenn die Methode die spezifische Funktionalität benötigt, die vom abgeleiteten Typ bereitgestellt wird
+- Wenn die Methode, die bestimmte Funktionen erfordert, die vom abgeleiteten Typ bereitgestellt wird
 
      \- oder –
 
--   um zu erzwingen, dass nur der abgeleitete Typ oder einen stärker abgeleiteten Typ. an die Methode übergeben wird.
+- um zu erzwingen, dass nur der abgeleitete Typ oder einen stärker abgeleiteten Typ, an die Methode übergeben wird.
 
- In diesen Fällen wird der Code sein eine robustere aufgrund der starken typüberprüfung, die durch den Compiler und die Common Language Runtime bereitgestellt wird.
+ In diesen Fällen wird der Code sein stabiler aufgrund der starken typüberprüfung, die vom Compiler und Laufzeit bereitgestellt wird.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode `ManipulateFileStream`, die verwendet werden kann, nur mit einem <xref:System.IO.FileStream> -Objekt, das mit dieser Regel verletzt. Einer zweiten Methode `ManipulateAnyStream`, der durch Ersetzen der Regel entspricht der <xref:System.IO.FileStream> Parameter, indem eine <xref:System.IO.Stream>.
+ Das folgende Beispiel zeigt eine Methode, `ManipulateFileStream`, die verwendet werden kann, nur mit einem <xref:System.IO.FileStream> -Objekt, das gegen diese Regel verstößt. Eine zweite Methode, `ManipulateAnyStream`, verstößt die Regel, und Ersetzen Sie dabei die <xref:System.IO.FileStream> Parameter, indem eine <xref:System.IO.Stream>.
 
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]

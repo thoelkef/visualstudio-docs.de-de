@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b7c8de18ba0083d31287fe862ab0015cb210bce1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709830"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279634"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Anzeigen aktueller Auftragsergebnisse und Details
 Sobald die Aufträge übermittelt wurden, können Sie die Liste der Aufträge einsehen, um deren Status, Dauer und vieles mehr anzuzeigen.
@@ -17,4 +17,4 @@ Sobald die Aufträge übermittelt wurden, können Sie die Liste der Aufträge ei
 
 ![Überwachen von Aufträgen](media\job-details\monitor-jobs.png)
 
-> Der an Linux-VMs übermittelte Auftragsverlauf wird auf der VM im Verzeichnis „/tmp“ gespeichert. Daher wird bei jedem Neustart der Auftragsverlauf gelöscht. Für eine permanente Aufzeichnung Ihres Auftragsverlaufs konfigurieren Sie Ihre VM als Computekontext in Azure Machine Learning, und bermitteln Sie dann den Auftrag an Azure Machine Learning (wählen Sie dabei Ihre VM als Computekontext aus).
+> Der an Linux-VMs übermittelte Auftragsverlauf wird auf der VM im Verzeichnis „/tmp“ gespeichert. Daher wird bei jedem Neustart der Auftragsverlauf gelöscht. Für eine permanente Aufzeichnung Ihres Auftragsverlaufs konfigurieren Sie Ihre VM als Computekontext in Azure Machine Learning, und übermitteln Sie dann den Auftrag an Azure Machine Learning (wählen Sie dabei Ihre VM als Computekontext aus).

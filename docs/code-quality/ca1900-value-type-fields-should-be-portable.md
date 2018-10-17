@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9add21d932f7685a2dee214f396b2cbda089a5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4608812c85764125e9cf33dba0e4b0d0b80bbaed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917214"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550549"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Werttypfelder sollten portabel sein
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31917214"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Kategorie|Microsoft.Portability|
-|Unterbrechende Änderung|Unterbrechend – Wenn das Feld außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend – Wenn das Feld nicht außerhalb der Assembly sichtbar ist.|
+|Unterbrechende Änderung|Unterbrechend – Wenn das Feld außerhalb der Assembly angezeigt werden.<br /><br /> Nicht unterbrechend – Wenn das Feld nicht außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
- Diese Regel überprüft, dass die mit explizitem Layout deklarierten Strukturen korrekt, beim Marshallen an nicht verwalteten Code auf 64-Bit-Betriebssystemen ausgerichtet werden. IA-64 lässt nicht zu, nicht ausgerichteten Speicherzugriffe und stürzt der Prozess, wenn der Verstoß nicht behoben wird.
+ Diese Regel überprüft, dass mit explizitem Layout deklarierten Strukturen korrekt, beim Marshallen an nicht verwalteten Code auf 64-Bit-Betriebssystemen ausgerichtet werden. IA-64 lässt nicht korrekt ausgerichteten Speicher zugreift und der Prozess stürzt ab, wenn diese Verletzung nicht behoben wurde.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Strukturen mit explizitem Layout, das falsch ausgerichtete Felder Ursache Abstürze (crashes) auf 64-Bit-Betriebssystemen enthält.
+ Strukturen mit explizitem Layout, das falsch ausgerichtete Felder verursachen auf 64-Bit-Betriebssystemen Systemabstürze enthält.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Alle Felder, die kleiner als 8 Bytes müssen Offsets, die ein Vielfaches von ihrer Größe und Felder, die 8 Bytes sind oder Offsets, die ein Vielfaches von 8 müssen aufweisen. Eine andere Lösung besteht darin, verwenden Sie `LayoutKind.Sequential` anstelle von `LayoutKind.Explicit`, sofern angemessen.
+ Müssen alle Felder, die kleiner als 8 Bytes, Offsets, die ein Vielfaches von ihrer Größe und Felder, die 8 Bytes sind, oder benötigen mehr Offsets, die ein Vielfaches von 8 sind. Eine andere Lösung ist die Verwendung `LayoutKind.Sequential` anstelle von `LayoutKind.Explicit`, bei Bedarf.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Diese Warnung unterdrückt werden sollen, nur, wenn diese Fehler auftreten.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Nur, wenn Fehler auftreten, sollte diese Warnung unterdrückt werden.

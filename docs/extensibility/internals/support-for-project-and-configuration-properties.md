@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902622"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496037"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) kann Projekt- und Eigenschaften anzuzeigen. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, sodass der Benutzer die Eigenschaften für die Anwendung festlegen kann.  
   
- Wählen Sie einen Projektknoten **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** auf die **Projekt** Menü können Sie ein Dialogfeld, das Projekt und die Konfiguration enthält öffnen Eigenschaften. In [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], und Projekttypen abgeleitet diese Sprachen dieses Dialogfeld wird angezeigt, als eine Seite im Registerformat, in der [Allgemein, Umgebung, Dialogfeld Optionen](../../ide/reference/general-environment-options-dialog-box.md). Weitere Informationen finden Sie unter [nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (c#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Wählen Sie einen Projektknoten **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** auf die **Projekt** Menü können Sie ein Dialogfeld, das Projekt und die Konfiguration enthält öffnen Eigenschaften. In [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], und Projekttypen abgeleitet diese Sprachen dieses Dialogfeld wird angezeigt, als eine Seite im Registerformat, in der [Allgemein, Umgebung, Dialogfeld Optionen](../../ide/reference/general-environment-options-dialog-box.md). Weitere Informationen finden Sie unter [nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (c#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Das Managed Package Framework for Projects (MPFProj) stellt Hilfsklassen zum Erstellen und Verwalten von neuen Projektsystem bereit. Anweisungen finden Sie die Quelle Code und die Kompilierung auf [MPF für Visual Studio 2013-Projekte –](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Dauerhaftigkeit von Projekt- und Konfigurationseigenschaften  
  Projekt- und Eigenschaften werden in einer Projektdatei beibehalten, die über eine beliebige Dateinamenerweiterung, die vom Projekttyp zugeordnet sind, z. B., csproj, vbproj und .myproj verfügt. Sprachprojekte verwenden in der Regel eine Vorlagendatei, um die Datei zu generieren. Es gibt jedoch tatsächlich mehrere Möglichkeiten zum Zuordnen von Projekttypen und Vorlagen. Weitere Informationen finden Sie unter [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Projekt- und Eigenschaften werden durch Hinzufügen von Elementen in die Vorlagendatei erstellt. Diese Eigenschaften werden dann für jedes Projekt erstellt, mit der Projekttyp, der diese Vorlage verwendet. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekte und die MPFProj beide verwenden die [nicht im Build: Übersicht über MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) Schema für die Vorlagendateien. Diese Dateien haben einen Abschnitt "PropertyGroup" für jede Konfiguration. Eigenschaften von Projekten werden in den ersten Abschnitt "PropertyGroup", mit einer konfigurationsargument, das auf eine null-Zeichenfolge festgelegt, in der Regel beibehalten.  
+ Projekt- und Eigenschaften werden durch Hinzufügen von Elementen in die Vorlagendatei erstellt. Diese Eigenschaften werden dann für jedes Projekt erstellt, mit der Projekttyp, der diese Vorlage verwendet. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekte und die MPFProj beide verwenden die [nicht im Build: Übersicht über MSBuild](/previous-versions/visualstudio/visual-studio-2008/ms171452(v=vs.90)) Schema für die Vorlagendateien. Diese Dateien haben einen Abschnitt "PropertyGroup" für jede Konfiguration. Eigenschaften von Projekten werden in den ersten Abschnitt "PropertyGroup", mit einer konfigurationsargument, das auf eine null-Zeichenfolge festgelegt, in der Regel beibehalten.  
   
  Der folgende Code zeigt den Anfang einer einfachen MSBuild-Projektdatei.  
   

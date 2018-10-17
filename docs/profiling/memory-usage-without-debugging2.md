@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265723"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668820"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analysieren der Arbeitsspeicherauslastung ohne Visual Studio-Debugger
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
@@ -32,7 +32,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine UWP-XAML-App zu analysieren. Wenn Sie die Speichernutzung in UWP-Apps, die JavaScript und HTML verwenden, analysieren möchten, lesen Sie [Analysieren der Speicherauslastung (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Starten einer Diagnosesitzung zur Speicherauslastung  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Diagnosesitzung zur Speicherauslastung starten  
   
 1.  Öffnen Sie ein universelles Windows-C#-Projekt in Visual Studio.  
   
@@ -42,7 +42,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
      ![Starten einer Diagnosesitzung zur Speicherauslastung](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Speicherverwendung überwachen  
+## <a name="monitor-memory-use"></a>Speicherverwendung überwachen  
  Sie können das Tool **Speicherauslastung** verwenden, um detaillierte Berichte zu erstellen, mit denen Sie Probleme finden und beheben, aber Sie können dieses Tool auch verwenden, um die Echtzeit-Speicherauswirkungen eines Szenarios zu untersuchen, das Sie gerade entwickeln.  
   
  Wenn Sie eine Diagnosesitzung starten, startet Ihre App, und das Fenster **Diagnosetools** zeigt eine Zeitachse der Speicherauslastung Ihrer App an.  
@@ -56,12 +56,12 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Um einen Bericht zu generieren, wenn Sie Momentaufnahmen erstellt haben, wählen Sie **Beenden** aus.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Momentaufnahmen des Speicherzustands Ihrer App erstellen  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Erstellen von Momentaufnahmen des Speicherzustands Ihrer App  
  Wenn Sie auf ein Speicherproblem stoßen und es untersuchen möchten, können Sie während der Diagnosesitzung Momentaufnahmen erstellen, um Speicherobjekte zu bestimmten Zeitpunkten zu erfassen. Da eine App eine Vielzahl verschiedener Arten von Objekten verwendet, sollten Sie Ihre Analyse auf ein Szenario ausrichten. Empfehlenswert ist es auch, vor dem Auftreten eines Speicherproblems eine Baselinemomentaufnahme der App zu erstellen, nach dem ersten Auftreten des Problems eine weitere Momentaufnahme zu erstellen und eine oder mehrere zusätzliche, wenn Sie das Szenario wiederholen.  
   
  Um Momentaufnahmen zu erstellen, starten Sie eine neue Diagnosesitzung. Wählen Sie **Momentaufnahme erstellen** aus, wenn Sie mit dem Erfassen der Speicherdaten beginnen möchten. Um einen Bericht zu erstellen, wählen Sie **Beenden** aus.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Übersichtsseite Speicherauslastung  
+##  <a name="memory-usage-overview-page"></a>Übersichtsseite Speicherauslastung  
  Wenn Sie die Datenerfassung beenden, hält das Speicherauslastungstool die App an und zeigt die Übersicht an.  
   
  ![Übersichtsseite „Speicherauslastung“](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -69,9 +69,9 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Ansichten der Momentaufnahmen zur Speicherauslastung  
  Die Ansichten der Momentaufnahmen dienen dazu, detaillierte Berichte in neuen Visual Studio-Fenstern zu öffnen. Es gibt zwei zwei Arten von Ansichten:  
   
--   Ein [Momentaufnahmedetailbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
+-   Ein [Momentaufnahmedetailbericht](#snapshot-reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
   
--   Ein [Momentaufnahmevergleichsbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
+-   Ein [Momentaufnahmevergleichsbericht](#snapshot-difference-diff-reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
   
  ![Links Snapshot-Ansicht](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -84,7 +84,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Der Text des Links zeigt den Unterschied zwischen der Gesamtgröße der Objekte im Speicher zum Zeitpunkt dieser Momentaufnahme und der Gesamtgröße der vorhergehenden Momentaufnahme.<br /><br /> Er zeigt eine positive Zahl, wenn die Speichergröße dieser Momentaufnahme größer ist als die der vorhergehenden, und eine negative Zahl, wenn die Speichergröße kleiner ist. Der Linktext **Baseline** weist darauf hin, dass diese Momentaufnahme die erste in dieser Diagnosesitzung ist, **No Difference** bedeutet, dass die Differenz null ist.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtgröße der Typinstanzen geordnet ist.|  
 |![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Der Text des Links zeigt den Unterschied zwischen der Gesamtzahl an Speicherobjekten in dieser Momentaufnahme und der Zahl der Objekte in der vorhergehenden Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtzahl der Typinstanzen geordnet ist.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Momentaufnahmenberichte  
+## <a name="snapshot-reports"></a>Momentaufnahmenberichte  
  ![Speicherauslastung Snapshot-Bericht](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Strukturen der Momentaufnahmenberichte  
@@ -119,7 +119,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ####  <a name="BKMK_Just_My_Code"></a> Nur mein Code  
  Der Filter **Nur mein Code** verbirgt die meisten Instanzen, die durch externen Code generiert werden. Externe Typen gehören zum Betriebssystem oder zu Framework-Komponenten oder werden durch den Compiler generiert.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Berichte über Momentaufnahmendetails  
+## <a name="snapshot-details-reports"></a>Berichte über Momentaufnahmendetails  
  Berichte über Momentaufnahmendetails werden verwendet, um sich auf eine Momentaufnahme aus einer Diagnosesitzung zu konzentrieren. Um einen Detailbericht zu öffnen, wählen Sie einen der Links aus der Ansicht der Momentaufnahme, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. In beiden Fällen können Sie die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
  ![Links zum Snapshot-Bericht in einer Snapshot-Ansicht](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -158,7 +158,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |**Größe (Byte)**|Für Typen: Die Größe aller Instanzen des Typs ohne die Größe der in dem Typ enthaltenen Objekte.<br /><br /> Für Instanzen: Die Größe des Objekts ohne die Größe der in dem Objekt enthaltenen Objekte.|  
 |**Inklusive Größe (Bytes)**|Die Gesamtgröße der Instanzen des Typs oder die Größe der Instanz, einschließlich der Größe der enthaltenen Objekte.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Bericht über Momentaufnahmenunterschiede  
+## <a name="snapshot-difference-diff-reports"></a>Bericht über Momentaufnahmenunterschiede  
  Ein Bericht über Momentaufnahmenunterschiede zeigt die Unterschiede zwischen der primären Momentaufnahme und der direkt davor erstellten Momentaufnahme. Um einen solchen Bericht zu öffnen, wählen Sie einen der Links in der Momentaufnahmenansicht, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. Sie können die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
  ![Links zum Unterschiedebericht in einer Snapshot-Ansicht](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -203,6 +203,6 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)  
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
  [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d402bec5bf9c79b845f3bfa643c65fc07359a09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4dac6beddf43e88d47a54ddf2b0e0d56e387038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900118"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547202"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Doppelte Zugriffstasten vermeiden
+
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
@@ -32,23 +33,26 @@ ms.locfileid: "31900118"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ erweitert <xref:System.Windows.Forms.Control?displayProperty=fullName> und enthält zwei oder mehr Steuerelemente der obersten Ebene, die identische Zugriffstasten verfügen, die in einer Ressourcendatei gespeichert werden.
+ Ein Typ erweitert <xref:System.Windows.Forms.Control?displayProperty=fullName> und enthält zwei oder mehr Steuerelemente der obersten Ebene, die gleichen Zugriffstasten verfügen, die in einer Ressourcendatei gespeichert werden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement unter Verwendung der ALT-TASTE. Wenn mehrere Steuerelemente über doppelte Zugriffstasten verfügen, ist das Verhalten der Zugriffstaste nicht stringent. Der Benutzer möglicherweise nicht auf das gewünschte Steuerelement mit der Zugriffstaste zugreifen und möglicherweise ein Steuerelement als diejenige, die vorgesehen ist aktiviert.
 
- Die aktuelle Implementierung von dieser Regel werden die Menüelemente ignoriert. Menüelemente im gleichen Untermenü sollten jedoch nicht identischen Zugriffstasten haben.
+Eine Zugriffstaste, auch bekannt als Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement mit dem **Alt** Schlüssel. Wenn mehrere Steuerelemente über den gleichen Zugriffsschlüssel haben, ist das Verhalten des Zugriffsschlüssels nicht klar definiert. Der Benutzer möglicherweise nicht auf das gewünschte Steuerelement mit dem Zugriffsschlüssel zugreifen, und aktiviert ein Steuerelement als diejenige, die vorgesehen ist.
+
+Die aktuelle Implementierung von dieser Regel werden, Menüelemente ignoriert. Menüelemente im gleichen Untermenü sollten jedoch nicht identischen Zugriffsschlüssel haben.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, definieren Sie eindeutige Zugriffstasten für alle Steuerelemente.
+ Definieren Sie eindeutige Zugriffstasten für alle Steuerelemente, um einen Verstoß gegen diese Regel zu beheben.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein minimale Formular, das zwei Steuerelemente enthält, die identische Zugriffstasten verfügen. Die Schlüssel werden in einer Ressourcendatei gespeichert, die nicht angezeigt wird; jedoch erscheinen ihre Werte in der kommentierten out `checkBox.Text` Zeilen. Das Verhalten der doppelte Zugriffstasten untersucht werden kann, durch den Austausch der `checkBox.Text` Zeilen mit den jeweiligen Entsprechungen der als Kommentare formatiert. Allerdings wird in diesem Fall das Beispiel nicht generiert eine Warnung von der Regel.
+ Das folgende Beispiel zeigt ein minimale Formular, das zwei Steuerelemente enthält, die über identische Zugriffsschlüssel verfügen. Der Schlüssel werden in einer Ressourcendatei gespeichert, der nicht angezeigt wird. Allerdings erscheinen ihre Werte in den auskommentierten out `checkBox.Text` Zeilen. Das Verhalten der doppelte Zugriffstasten untersucht werden kann, durch den Austausch von der `checkBox.Text` Zeilen mit den jeweiligen Entsprechungen auskommentierten. Allerdings wird in diesem Fall im Beispiel wird keine Warnung aus der Regel generiert.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [Ressourcen in Desktop-Apps](/dotnet/framework/resources/index)
+
+- <xref:System.Resources.ResourceManager?displayProperty=fullName>
+- [Ressourcen in Desktop-Apps](/dotnet/framework/resources/index)

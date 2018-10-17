@@ -1,7 +1,7 @@
 ---
-title: Visual Studio-Leitfäden für Erfahrung | Microsoft Docs
+title: Richtlinien zur Benutzerfreundlichkeit von Visual Studio-Benutzer | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/05/2018
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa7e90e04cc81443a38cb1c6cbc06644e2426499
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed7488702bd19e8a0e8576d2cdc21e4350e8443b
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139863"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863984"
 ---
-# <a name="visual-studio-user-experience-guidelines"></a>Visual Studio-Leitfäden für Erfahrung
-Der Visual Studio-Umgebung Leitfäden sind für Benutzer vorgesehen, die neue Features für Visual Studio entwickeln. Diese Richtlinien enthalten Informationen über allgemeine Benutzer Modelle und interaktionsmustern, sodass Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die eine nahtlose und in der Entwicklungsumgebung konsistent sind.  
+# <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
+Führen Sie den Visual Studio User Experience Guidelines, wenn Sie neue Funktionen für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen über allgemeine Benutzer-Modelle und interaktionsmustern, damit Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die nahtlose und einheitliche, in der Entwicklungsumgebung sind.  
   
- Entwickeln von Software für Microsoft-Produkte bedeutet, dass verstehen die Anleitungen, die von Windows aus. Es gibt drei wichtige Ressourcen zu berücksichtigen:  
+Wenn Sie Software für Microsoft-Produkte entwickeln, erfahren Sie, diese Ressourcen zu verwenden:
   
--   Die [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/en-us/library/aa511258.aspx). Diese Richtlinien werden die Grundlagen für den Windows-desktop-Verhalten und aussehen.  
+-   Die [Windows User Experience Interaction Guidelines](https://developer.microsoft.com/windows/desktop) sind die Grundlagen für Windows desktop-Verhalten und aussehen.  
   
--   Diese Visual Studio-Richtlinien, plattformspezifischen Leitfäden, die die allgemeinen Windows-Richtlinien wo für unsere Umgebung geeigneten ablösen.  
+-   Diese Visual Studio-Richtlinien, plattformspezifischen Leitfäden, die die allgemeinen Windows-Richtlinien in unserer Umgebung ggf. ersetzen.  
   
--   Die [Muster und Anleitungen für Windows Store-apps](https://dev.windows.com/en-us/design/interaction-ux) sind eine Referenz für den so entstehenden Mustern, die in einigen Fällen in Visual Studio verwendet werden kann.  
+-   Die [Muster und Anleitungen für Windows Store-apps](https://dev.windows.com/en-us/design/interaction-ux) sind eine Referenz für die zukünftigen Muster, die in einigen Fällen, in Visual Studio verwendet werden kann.  
   
- Diese Richtlinien bieten Ihnen die Informationen zur Vorgehensweise beim Entwerfen von Visual Studio, und in einigen Fällen auch Informationen zu diesem Zweck enthalten ist. Weitere Einzelheiten Implementierung und erfahren Sie mehr über bestimmte Anwendungsprogrammierschnittstellen (APIs), mit denen Sie das Schreiben von Code für Lösungen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio integrieren, verwenden Sie die [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/en-us/library/bb166441.aspx).
+Diese Richtlinien bieten Ihnen die Informationen darüber, was Sie beim Entwerfen von Visual Studio, und in einigen Fällen auch Informationen darüber, wie es enthalten ist. Ausführlichere Informationen der Implementierung und erfahren Sie mehr über bestimmte Anwendungsprogrammierschnittstellen (APIs), mit denen Sie schreiben Code für Lösungen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio integrieren, verwenden Sie die [Visual Studio Software Development Kit (SDK)](../visual-studio-sdk.md).

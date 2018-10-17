@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit C++ und Python
-description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, einschließlich Informationen zum Debuggen im gemischten Modus.
-ms.date: 06/27/2018
+description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, CPython und PyBind11 einschließlich Informationen zum Debuggen im gemischten Modus.
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627188"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549468"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -28,7 +28,12 @@ Module, die in C++ (oder C#) geschrieben werden, werden häufig verwendet, um di
 
 Dieser Artikel führt Sie durch die Erstellung eines C++-Erweiterungsmoduls für CPython, das einen Hyperbeltangens berechnet und diesen aus dem Python-Code abruft. Die Routine wird zuerst in Python implementiert, um den relativen Leistungsgewinn durch Implementieren derselben Routine in C++ zu veranschaulichen.
 
-Der Ansatz hier gilt für CPython-Standarderweiterungen, so wie in der [Python-Dokumentation](https://docs.python.org/3/c-api/) beschrieben. Ein Vergleich zwischen dieser und anderen Maßnahmen ist unter [Alternative Ansätze](#alternative-approaches) am Ende dieses Artikels beschrieben.
+Dieser Artikel veranschaulicht auch zwei Möglichkeiten zum Verfügbarmachen von C++ in Python:
+
+- Die CPython-Standarderweiterungen, die in der [Python-Dokumentation](https://docs.python.org/3/c-api/) beschrieben werden.
+- [PyBind11](https://github.com/pybind/pybind11), das aufgrund der Einfachheit für C++ 11 empfohlen wird.
+
+Ein Vergleich dieser beiden und anderer Maßnahmen finden Sie unter [Alternative Ansätze](#alternative-approaches) am Ende dieses Artikels.
 
 Das abgeschlossene Beispiel aus dieser exemplarischen Vorgehensweise finden Sie unter [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
 
@@ -72,15 +77,6 @@ Weitere Informationen finden Sie unter [Install Python Support for Visual Studio
         tanh_x = sinh(x) / cosh(x)
         return tanh_x
 
-    def sequence_tanh(data):
-        '''Applies the hyperbolic tangent function to map all values in
-        the sequence to a value between -1.0 and 1.0.
-        '''
-        result = []
-        for x in data:
-            result.append(tanh(x))
-        return result
-
     def test(fn, name):
         start = perf_counter()
         result = fn(DATA)
@@ -93,18 +89,23 @@ Weitere Informationen finden Sie unter [Install Python Support for Visual Studio
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
 
-        test(sequence_tanh, 'sequence_tanh')
-
-        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
+        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. Führen Sie das Programm mit **Debuggen** > **Starten ohne Debuggen** (**STRG**+**F5**) aus, um die Ergebnisse anzuzeigen. Sie können die `COUNT`-Variable anpassen, um die Ausführungsdauer der Benchmarks zu ändern. Legen Sie für diese exemplarische Vorgehensweise die „Count“-Variable für jeden Benchmark fest, sodass diese jeweils etwa zwei Sekunden benötigen.
+1. Führen Sie das Programm mit **Debuggen** > **Starten ohne Debuggen** (**STRG**+**F5**) aus, um die Ergebnisse anzuzeigen. Sie können die `COUNT`-Variable anpassen, um die Ausführungsdauer des Benchmarks zu ändern. Legen Sie für diese exemplarische Vorgehensweise die „Count“-Variable fest, sodass die Benchmarks jeweils etwa zwei Sekunden benötigen.
 
-## <a name="create-the-core-c-project"></a>Erstellen des wesentlichen C++-Projekts
+> [!TIP]
+> Wenn Sie Benchmarks ausführen, sollten Sie immer **Debuggen** > **Ohne Debuggen starten** verwenden, um den Mehraufwand zu vermeiden, der anfällt, wenn Code innerhalb des Visual Studio-Debuggers ausgeführt wird.
+
+## <a name="create-the-core-c-projects"></a>Erstellen der C++-Hauptprojekte
+
+Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte namens „superfastcode“ und „superfastcode2“ zu erstellen. Später verwenden Sie in jedem Projekt verschiedene Methoden, um den C++-Code in Python verfügbar zu machen.
+
+1. Stellen Sie sicher, dass die Umgebungsvariable `PYTHONHOME` auf den Python-Interpreter festgelegt ist, den Sie verwenden möchten. Die C++-Projekte in Visual Studio basieren auf dieser Variable, um Dateien zu suchen, z.B. *python.h*, die bei der Erstellung von Python-Erweiterungen verwendet werden.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** > **Neues Projekt** aus. Eine Visual Studio-Projektmappe kann sowohl Python- als auch C++-Projekte zusammen enthalten (was einer der Vorteile von Visual Studio für Python ist).
 
-1. Suchen Sie nach „C++“, klicken Sie auf **Leeres Projekt**, geben Sie einen Namen an (in diesem Artikel wird „superfastcode“ verwendet), und klicken Sie auf **OK**.
+1. Suchen Sie nach „C++“, wählen Sie **Leeres Projekt** aus, geben Sie den Namen „superfastcode“ (bzw. „superfastcode2“ für das zweite Projekt) ein, und klicken Sie dann auf **OK**.
 
     > [!Tip]
     > Wenn **Native Python-Entwicklungstools** in Visual Studio 2017 installiert ist, können Sie stattdessen mit der Vorlage **Python-Erweiterungsmodul** beginnen, die bereits vieles von dem enthält, was im Folgenden beschrieben wird. In dieser Vorgehensweise zeigt jedoch der Start mit einem leeren Projekt ausführlich die Erstellung des Erweiterungsmoduls. Sobald Sie den Prozess verstanden haben, spart Ihnen die Vorlage Zeit beim Schreiben Ihrer eigenen Erweiterungen.
@@ -163,15 +164,21 @@ Weitere Informationen finden Sie unter [Install Python Support for Visual Studio
 
 1. Erstellen Sie das C++-Projekt erneut, um zu bestätigen, dass Ihr Code korrekt ist.
 
-## <a name="convert-the-c-project-to-an-extension-for-python"></a>Konvertieren des C++-Projekts in eine Erweiterung für Python
+1. Sofern Sie dies noch nicht getan haben, wiederholen Sie die oben genannten Schritte, um ein zweites Projekt mit dem Namen "superfastcode2" mit identischem Inhalt zu erstellen.
+
+## <a name="convert-the-c-projects-to-extensions-for-python"></a>Konvertieren von C++-Projekten in Erweiterungen für Python
 
 Sie müssen die exportierten Methoden zunächst so anpassen, dass Sie mit den Python-Typen interagieren, um die C++-DLL in eine Python-Erweiterung konvertieren zu können. Anschließend fügen Sie eine Funktion hinzu, die das Modul zusammen mit den Definitionen der Modulmethoden exportiert.
+
+In den folgenden Abschnitten wird erläutert, wie diese Schritte unter Verwendung von CPython-Erweiterungen und PyBind11 durchgeführt werden.
+
+### <a name="cpython-extensions"></a>CPython-Erweiterungen
 
 Hintergrundinformationen zu dem, was in diesem Abschnitt für Python 3.x gezeigt wird, finden Sie im [Python/C++-API-Referenzhandbuch](https://docs.python.org/3/c-api/index.html) und insbesondere in den [Modulobjekten](https://docs.python.org/3/c-api/module.html) auf python.org. (Denken Sie daran, Ihre Python-Version oben rechts im Dropdownmenü auszuwählen, um die richtige Dokumentation anzuzeigen).
 
 Beziehen Sie sich bei der Arbeit mit Python 2.7 stattdessen auf die Artikel [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html) (Erweitern von Python 2.7 mit C oder C++) und [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html) (Portierung von Erweiterungsmodulen auf Python 3) (python.org).
 
-1. Fügen Sie *Python.h* oben zur C++-Datei hinzu:
+1. Fügen Sie am Anfang der *module.cpp*-Datei *Python.h* ein:
 
     ```cpp
     #include <Python.h>
@@ -220,20 +227,59 @@ Beziehen Sie sich bei der Arbeit mit Python 2.7 stattdessen auf die Artikel [Ext
     }
     ```
 
-1. Legen Sie die Zielkonfiguration auf **Release** fest, und erstellen Sie das C++-Projekt erneut, um Ihren Code zu überprüfen. Wenn Fehler auftreten, überprüfen Sie Folgendes:
-    - *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden.)** und/oder **C1083: Cannot open include file: „Python.h“: No such file or directory (C1083: Die Includedatei „Python.h“ kann nicht geöffnet werden: Datei oder Verzeichnis nicht vorhanden.)**): Stellen Sie sicher, dass der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *include*-Ordner Ihrer Python-Installation festgelegt ist. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-project).
-    - Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den *libs*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-project).
-    - Linker-Fehler im Zusammenhang mit der Zielarchitektur: Ändern Sie die Zielarchitektur des C++-Projekts so, dass sie mit der Ihrer Python-Installation übereinstimmt. Wenn Sie z.B. mit dem C++-Projekt auf x64 abzielen, aber Ihre Python-Installation ein x86-System ist, ändern Sie das C++-Projekt auf x86 ab.
+1. Legen Sie die Zielkonfiguration auf **Release** fest, und erstellen Sie das C++-Projekt erneut, um Ihren Code zu überprüfen. Informationen zur [Problembehandlung](#troubleshooting) finden Sie im folgenden Abschnitt.
+
+### <a name="pybind11"></a>PyBind11
+
+Wenn Sie die Schritte im vorherigen Abschnitt abgeschlossen haben, haben Sie sicher bemerkt, dass Sie zum Erstellen der erforderlichen Modulstrukturen für den C++-Code viele Codebausteine verwendet haben. PyBind11 vereinfacht den Prozess mithilfe von Makros in einer C++-Headerdatei, sodass mit weniger Code das gleiche Ergebnis erzielt werden kann. Hintergrundinformationen zum Inhalt dieses Abschnitts finden Sie unter [PyBind11-Grundlagen](https://github.com/pybind/pybind11/blob/master/docs/basics.rst) (github.com).
+
+1. Installieren Sie PyBind11 unter Verwendung von „pip“: `pip install pybind11` oder `py -m pip install pybind11`.
+
+1. Fügen Sie am Anfang der *module.cpp*-Datei *pybind11.h* ein.
+
+    ```cpp
+    #include <pybind11/pybind11.h>
+    ```
+
+1. Verwenden Sie am Ende der *module.cpp*-Datei das Makro `PYBIND11_MODULE`, um den Einstiegspunkt zur C++-Funktion zu definieren.
+
+    ```cpp
+    namespace py = pybind11;
+
+    PYBIND11_MODULE(superfastcode2, m) {
+        m.def("fast_tanh2", &tanh_impl, R"pbdoc(
+            Compute a hyperbolic tangent of a single argument expressed in radians.
+        )pbdoc");
+
+    #ifdef VERSION_INFO
+        m.attr("__version__") = VERSION_INFO;
+    #else
+        m.attr("__version__") = "dev";
+    #endif
+    }
+    ```
+
+1. Legen Sie die Zielkonfiguration auf **Release** fest, und erstellen Sie das C++-Projekt, um Ihren Code zu überprüfen. Besuchen Sie zur Problembehandlung den nächsten Abschnitt, wenn Fehler auftreten.
+
+### <a name="troubleshooting"></a>Problembehandlung
+
+Beim C++-Modul treten möglicherweise aus den folgenden Gründen Fehler beim Kompilieren auf:
+
+- *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden.)** und/oder **C1083: Cannot open include file: „Python.h“: No such file or directory (C1083: Die Includedatei „Python.h“ kann nicht geöffnet werden: Datei oder Verzeichnis nicht vorhanden.)**): Stellen Sie sicher, dass der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *include*-Ordner Ihrer Python-Installation festgelegt ist. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
+
+- Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den *libs*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
+
+- Linker-Fehler im Zusammenhang mit der Zielarchitektur: Ändern Sie die Zielarchitektur des C++-Projekts so, dass sie mit der Ihrer Python-Installation übereinstimmt. Wenn Sie z.B. mit dem C++-Projekt auf x64 abzielen, aber Ihre Python-Installation ein x86-System ist, ändern Sie das C++-Projekt auf x86 ab.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testen des Codes und Vergleichen der Ergebnisse
 
-Da Sie nun die DLL als Python-Erweiterung strukturiert haben, können Sie sich vom Python-Projekt auf sie beziehen, das Modul importieren und die Methoden verwenden.
+Da Sie nun die DLLs als Python-Erweiterungen strukturiert haben, können Sie sich vom Python-Projekt auf sie beziehen, die Module importieren und ihre Methoden verwenden.
 
 ### <a name="make-the-dll-available-to-python"></a>Verfügbarmachen der DLL für Python
 
 Es gibt zwei Methoden, um die DLL Python zur Verfügung zu stellen.
 
-Die erste Methode funktioniert, wenn das Python-Projekt und das C++-Projekt sich in derselben Projektmappe befinden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verweise** Ihres Python-Projekts, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie in dem angezeigten Dialogfeld auf die Registerkarte **Projekte** und anschließend auf das**superfastcode**-Projekt (oder den von Ihnen festgelegten Namen) und **OK**.
+Die erste Methode funktioniert, wenn das Python-Projekt und das C++-Projekt sich in derselben Projektmappe befinden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verweise** Ihres Python-Projekts, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie in dem angezeigten Dialogfeld auf die Registerkarte **Projekte**, wählen Sie anschließend die Projekte **superfastcode** und **superfastcode2** aus, und klicken Sie dann auf **OK**.
 
 ![Hinzufügen eines Verweises auf das superfastcode-Projekt](media/cpp-add-reference.png)
 
@@ -241,7 +287,9 @@ Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, 
 
 1. Wenn Sie Visual Studio 2017 verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** und anschließend **Einzelne Komponenten** > **Compiler, Buildtools und Runtimes** > **Visual C++ 2015.3 v140-Toolset** aus. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
 
-1. Erstellen Sie in Ihrem C++-Projekt eine Datei mit dem Namen *setup.py*, indem Sie mit der rechten Maustaste auf Projekt klicken und anschließend auf **Hinzufügen** > **Neues Element**. Wählen Sie dann **C++-Datei (.cpp)** aus, benennen Sie die Datei `setup.py`, und wählen Sie anschließend auf **OK** aus (wenn Sie die Datei mit der *.py*-Erweiterung benennen, erkennt Visual Studio sie als Python an, obwohl die C++-Dateivorlage verwendet wird). Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden Code ein:
+1. Erstellen Sie im C++-Projekt eine Datei mit dem Namen *setup.py*, indem Sie mit der rechten Maustaste auf Projekt klicken und anschließend auf **Hinzufügen** > **Neues Element**. Wählen Sie dann **C++-Datei (.cpp)** aus, benennen Sie die Datei `setup.py`, und wählen Sie anschließend auf **OK** aus (wenn Sie die Datei mit der *.py*-Erweiterung benennen, erkennt Visual Studio sie als Python an, obwohl die C++-Dateivorlage verwendet wird). Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden für die Erweiterungsmethode geeigneten Code ein:
+
+    **CPython-Erweiterungen (superfastcode-Projekt):**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -256,41 +304,78 @@ Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, 
 
     Weitere Informationen zur Dokumentation für dieses Skript finden Sie unter [Building C and C++ Extensions (Erstellen von C- und C++-Erweiterungen)](https://docs.python.org/3/extending/building.html) (python.org).
 
+    **PyBind11 (superfastcode2-Projekt):**
+
+    ```python
+    import os, sys
+
+    from distutils.core import setup, Extension
+    from distutils import sysconfig
+
+    cpp_args = ['-std=c++11', '-stdlib=libc++', '-mmacosx-version-min=10.7']
+
+    sfc_module = Extension(
+        'superfastcode2', sources = ['module.cpp'],
+        include_dirs=['pybind11/include'],
+        language='c++',
+        extra_compile_args = cpp_args,
+        )
+
+    setup(
+        name = 'superfastcode2',
+        version = '1.0',    
+        description = 'Python package with superfastcode2 C++ extension (PyBind11)',
+        ext_modules = [sfc_module],
+    )
+    ```
+
 1. Der *setup.py*-Code weist Python an, die Erweiterung mithilfe des C++-Toolsets von Visual Studio 2015 zu erstellen, wenn Sie auf der Befehlszeile verwendet wird. Öffnen Sie eine Eingabeaufforderung mit erhöhten Rechten, navigieren Sie zum Ordner mit dem C++-Projekt (d.h. der Ordner, der *setup.py* enthält), und geben Sie den folgenden Befehl ein:
 
     ```command
     pip install .
     ```
 
+    oder:
+
+    ```command
+    py -m pip install .
+    ```
+
 ### <a name="call-the-dll-from-python"></a>Aufrufen der DLL von Python
 
-Wenn Sie eine der oben genannten Methoden abgeschlossen haben, können Sie die `fast_tanh`-Funktion aus dem Python-Code aufrufen und deren Leistung mit der Python-Implementierung vergleichen:
+Nachdem Sie die DLL wie im vorherigen Abschnitt beschrieben für Python verfügbar gemacht haben, können Sie nun die Funktionen `superfastcode.fast_tanh` und `superfastcode2.fast_tanh2` aus dem Python-Code aufrufen und deren Leistung mit der Python-Implementierung vergleichen.
 
-1. Fügen Sie die folgenden Zeilen zu der *setup.py*-Datei hinzu, um die `fast_tanh`-Methode aufzurufen, die aus der DLL exportiert wurde, und zeigen Sie deren Ausgabe an.
+1. Fügen Sie die folgenden Zeilen zu der *.py*-Datei hinzu, um aus den DLLs exportierte Methoden aufzurufen und deren Ausgaben anzuzeigen:
 
     ```python
     from superfastcode import fast_tanh
-    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
+    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d] (CPython C++ extension)')
+
+    from superfastcode2 import fast_tanh2
+    test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. Wenn Sie das Python-Programm ausführen (**Debuggen** > **Starten ohne Debuggen** oder **STRG**+**F5**), können Sie beobachten, dass die C++-Routine fünf- bis zwanzigmal schneller als die Python-Implementierung ausgeführt wird. Eine typische Ausgabe sieht wie folgt aus:
+1. Wenn Sie das Python-Programm ausführen (**Debuggen** > **Starten ohne Debuggen** oder **STRG**+**F5**), können Sie beobachten, dass die C++-Routinen ca. fünf- bis zwanzigmal schneller als die Python-Implementierung ausgeführt wird. Eine typische Ausgabe sieht wie folgt aus:
 
     ```output
     Running benchmarks with COUNT = 500000
-    sequence_tanh took 1.542 seconds
+    [tanh(x) for x in d] (Python implementation) took 0.758 seconds
 
-    [tanh(x) for x in d] took 1.087 seconds
+    [fast_tanh(x) for x in d] (CPython C++ extension) took 0.076 seconds
 
-    [fast_tanh(x) for x in d] took 0.158 seconds
+    [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
     Wenn der Befehl **Ohne Debuggen starten** deaktiviert ist, klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf das Python-Projekt, und wählen Sie **Set as Startup Project (Als Startprojekt festlegen)** aus.
 
 1. Versuchen Sie die `COUNT`-Variable zu vergrößern, sodass die Unterschiede deutlicher werden. Beachten Sie, dass ein **Debugbuild** des C++-Moduls zudem langsamer als ein **Releasebuild** ausgeführt wird, da der **Debugbuild** weniger optimiert ist und verschiedene Fehlerprüfungen enthält. Sie können zum Vergleich zwischen diesen Konfigurationen wechseln.
 
+> [!NOTE]
+> In der Ausgabe können Sie sehen, dass die PyBind11-Erweiterung zwar nicht so schnell wie die CPython-Erweiterung, aber dennoch deutlich schneller als die normale Python-Implementierung ist. Der Unterschied ist auf geringen aufrufspezifischen Aufwand zurückzuführen, der von PyBind11 verursacht wird, um die C++-Schnittstelle erheblich zu vereinfachen. Dieser aufrufspezifische Unterschied ist tatsächlich ziemlich gering: Da der Testcode die Erweiterungsfunktionen 500.000 Mal aufruft, erhöhen die hier angezeigten Ergebnisse diesen Aufwand. In der Regel leistet eine C++-Funktion mehr Arbeit als die hier verwendeten normalen `fast_tanh[2]`-Methoden, bei denen der Aufwand nicht von Bedeutung ist. Dennoch führt die Verwendung des CPython-Ansatzes beim Implementieren von Methoden, die möglicherweise tausendfach pro Minute aufgerufen werden, zu einer besseren Leistung als die Verwendung des PyBind11-Ansatzes.
+
 ## <a name="debug-the-c-code"></a>Debuggen des C++-Codes
 
-Visual Studio unterstützt das gemeinsame Debuggen von Python- und C++-Code.
+Visual Studio unterstützt das gemeinsame Debuggen von Python- und C++-Code. Dieser Abschnitt veranschaulicht den Prozess mithilfe des Projekts **superfastcode**. Die Schritte für das Projekt **superfastcode2** sind identisch.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Python-Projekt, wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus, und wählen Sie anschließend die Option **Debuggen** > **Debuggen von nativem Code aktivieren** aus.
 
@@ -313,17 +398,17 @@ Visual Studio unterstützt das gemeinsame Debuggen von Python- und C++-Code.
 
 ## <a name="alternative-approaches"></a>Alternative Ansätze
 
-Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erstellen von Python-Erweiterungen. Der erste Eintrag für CPython wurde in diesem Artikel bereits behandelt.
+Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erstellen von Python-Erweiterungen. Die ersten beiden Einträge für CPython und PyBind11 enthalten den bereits in diesem Artikel beschriebenen Inhalt.
 
 | Ansatz | Generation | Rechtsvertreter | Pro(s) | Kon(s) |
 | --- | --- | --- | --- | --- |
 | C/C++-Erweiterungsmodule für CPython | 1991 | Standardbibliothek | [Ausführliche Dokumentation und Tutorials](https://docs.python.org/3/c-api/) Vollständige Kontrolle. | Kompilierung, Portabilität, Verweisverwaltung Hohe C-Kenntnisse. |
-| [pybind11](https://github.com/pybind/pybind11) (empfohlen für C++) | 2015 |  | Einfache, reine Headerbibliothek zur Erstellung von Python-Bindungen von bestehendem C++-Code Wenige Abhängigkeiten PyPy-Kompatibilität | Neuer, weniger ausgefeilt Vermehrter Einsatz von C++11-Features Kurze Liste unterstützter Compiler (Visual Studio ist enthalten) |
+| [PyBind11](https://github.com/pybind/pybind11) (empfohlen für C++) | 2015 |  | Einfache, reine Headerbibliothek zur Erstellung von Python-Bindungen von bestehendem C++-Code Wenige Abhängigkeiten PyPy-Kompatibilität | Neuer, weniger ausgefeilt Vermehrter Einsatz von C++11-Features Kurze Liste unterstützter Compiler (Visual Studio ist enthalten) |
 | Cython (empfohlen für C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python-ähnlich. Sehr fortgeschrittenen. Hohe Leistung. | Kompilierung, neue Syntax, neue Toolkette. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funktioniert mit nur nahezu jedem C++-Compiler. | Große und komplexe Sammlung von Bibliotheken; enthält viele Problemumgehungen für alte Compiler. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
 
 ## <a name="see-also"></a>Siehe auch
 

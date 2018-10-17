@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566550"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860419"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
 
- Aus einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Erweiterung können Sie ModelBus für diesen Zweck. ModelBus stellt Standardmechanismus zum Verweisen auf ein Modell oder Elemente in einem Modell, und klicken Sie für die Suche nach dem Modell, wenn es verschoben wurde. Weitere Informationen finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Aus einer Visual Studio-Erweiterung können Sie ModelBus zu diesem Zweck verwenden. ModelBus stellt Standardmechanismus zum Verweisen auf ein Modell oder Elemente in einem Modell, und klicken Sie für die Suche nach dem Modell, wenn es verschoben wurde. Weitere Informationen finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Zielframework
  Legen Sie die **Zielframework** Ihres Anwendungsprojekts zum **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Um das Zielframework festzulegen.
 
-1.  Öffnen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt für die Anwendung, in dem Sie ein DSL-Modell lesen möchten.
+1.  Öffnen Sie Visual Studio-Projekt für die Anwendung, in der Sie ein DSL-Modell lesen möchten.
 
 2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
 
@@ -36,7 +36,7 @@ Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
 >  Müssen Sie möglicherweise dazu, auch wenn Sie **.NET Framework 4** in das Dialogfeld für die Erstellung des Projekts. Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Verweise
- Sie müssen diese Verweise hinzufügen Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Anwendungsprojekt:
+ Sie müssen diese Verweise zu Ihrem Visual Studio-Webanwendungsprojekt hinzuzufügen:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

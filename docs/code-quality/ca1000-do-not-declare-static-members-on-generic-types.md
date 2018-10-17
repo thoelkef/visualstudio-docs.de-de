@@ -14,16 +14,20 @@ ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b491d49a6bd9a7ffc1164c6cfa45b5260b339192
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ec0e60302e1d6bff813a7bf0f39e1b71a6f1653
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899377"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548380"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Statische Member nicht in generischen Typen deklarieren
+
 |||
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
@@ -32,10 +36,10 @@ ms.locfileid: "31899377"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer generischer Typ enthält eine `static` (`Shared` in Visual Basic) Member.
+ Ein generischer extern sichtbarer Typ enthält eine `static` (`Shared` in Visual Basic) Member.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn eine `static` Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. Die Syntax zum Angeben des Typarguments in diesen beiden Fällen ist unterschiedlich und leicht zu verwechseln, wie in der folgenden Aufrufe veranschaulicht:
+ Wenn eine `static` Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. Die Syntax zum Angeben des Typarguments in diesen beiden Fällen ist unterschiedlich und leicht zu verwechseln, wie die folgenden Aufrufe zeigen:
 
 ```vb
 ' Shared method in a generic type.
@@ -53,13 +57,13 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
- Im Allgemeinen sollten beide vorherigen Deklarationen vermieden werden, damit das Typargument nicht angegeben werden, wenn das Element aufgerufen wird. Dadurch wird eine Syntax zum Aufrufen von Membern in Generika, die nicht von der Syntax für nicht generische Typen unterscheidet. Weitere Informationen finden Sie unter [CA1004: generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
+ Beide vorherigen Deklarationen sollten im Allgemeinen vermieden werden, damit das Typargument nicht angegeben werden, wenn der Member aufgerufen wird. Dies führt eine Syntax zum Aufrufen von Membern in Generika, die die Syntax für nicht generische Typen nicht unterscheidet. Weitere Informationen finden Sie unter [CA1004: generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das statische Element, oder ändern Sie ihn in einen Instanzmember.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den statischen Member aus, oder ändern Sie ihn in ein Instanzmember.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in eine Syntax, die leicht zu verstehen und zu verwenden ist, verringert sich die Zeit, die ist erforderlich, um zu erfahren und erhöht die Annahme-Rate der neue Bibliotheken aus.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel. Bereitstellen von Generika in einer Syntax, die einfach zu verstehen und einzusetzen, verkürzt die Zeit, die ist erforderlich, um zu erfahren und erhöht sich die Übernahmerate von neuen Bibliotheken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

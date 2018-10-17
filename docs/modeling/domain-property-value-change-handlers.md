@@ -1,5 +1,5 @@
 ---
-title: Domäne Eigenschaft Wert ändern Ereignishandler in Visual Studio
+title: Domäne Handler für Wertänderungen in Visual Studio
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +11,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f1244bed2057de3e9a3dc3ddb7fd61a989e18ded
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c889aff3a2def732d5cf45e76ba3d716ad3e3ad3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950789"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859587"
 ---
-# <a name="domain-property-value-change-handlers"></a>Handler für Domäne Eigenschaft Wert ändern
+# <a name="domain-property-value-change-handlers"></a>Handler für wertänderungen von Domäne
 
-Wenn in einer domänenspezifischen Sprache von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] der Wert einer Domäneneigenschaft geändert wird, werden die Methoden `OnValueChanging()` und `OnValueChanged()` im Domäneneigenschaftenhandler aufgerufen. Als Reaktion auf diese Änderung können Sie diese Methoden überschreiben.
+In einer Visual Studio einer domänenspezifischen Sprache, wenn der Wert einer Domäneneigenschaft geändert wird die `OnValueChanging()` und `OnValueChanged()` Methoden werden im domäneneigenschaftenhandler aufgerufen. Als Reaktion auf diese Änderung können Sie diese Methoden überschreiben.
 
-## <a name="override-the-property-handler-methods"></a>Überschreiben Sie die Property Handler-Methoden
+## <a name="override-the-property-handler-methods"></a>Überschreiben der eigenschaftenhandlermethoden
 
-Jede Domäneneigenschaft Ihrer domänenspezifischen Sprache wird von einer Klasse verarbeitet, die in der übergeordneten Domänenklasse geschachtelt ist. Der Name weist das folgende Format *PropertyName*PropertyHandler. Sie können prüfen, dass diese Eigenschaft Handler-Klasse in der Datei **Dsl\Generated Code\DomainClasses.cs**. In der Klasse wird `OnValueChanging()` unmittelbar vor der Wertänderung aufgerufen, und `OnValueChanged()` wird unmittelbar nach der Wertänderung aufgerufen.
+Jede Domäneneigenschaft Ihrer domänenspezifischen Sprache wird von einer Klasse verarbeitet, die in der übergeordneten Domänenklasse geschachtelt ist. Der Name weist das Format *PropertyName*propertyhandler auf. Sie können diese Eigenschaft Handler-Klasse in der Datei untersuchen **Dsl\Generated Code\DomainClasses.cs**. In der Klasse wird `OnValueChanging()` unmittelbar vor der Wertänderung aufgerufen, und `OnValueChanged()` wird unmittelbar nach der Wertänderung aufgerufen.
 
-Nehmen wir beispielsweise an, Sie verfügen über eine Domänenklasse, die mit dem Namen `Comment` , die eine Eigenschaft "Domain" Zeichenfolge mit dem Namen hat `Text` und eine Ganzzahleigenschaft, die mit dem Namen `TextLengthCount`. Bewirken `TextLengthCount` immer auf die Länge des enthalten die `Text` Zeichenfolge ist, könnten Sie den folgenden Code schreiben, in einer separaten Datei im Projekt Dsl:
+Nehmen wir beispielsweise an, Sie haben eine Domänenklasse, die mit dem Namen `Comment` Listenfeldsteuerelement mit eine Zeichenfolge-Domäneneigenschaft namens `Text` und eine Ganzzahleigenschaft, die mit dem Namen `TextLengthCount`. Verursachen `TextLengthCount` immer auf die Länge des enthalten die `Text` Zeichenfolge ist, können Sie den folgenden Code schreiben, in einer separaten Datei im Dsl-Projekt:
 
 ```csharp
 // Domain Class "Comment":
@@ -62,13 +62,13 @@ Beachten Sie die folgenden Punkte zu Eigenschaftenhandlern:
 
 -   Sie können einen Änderungshandler nicht verwenden, um den neuen Wert zu ändern. Wenn Sie dies tun möchten, um beispielsweise den Wert auf einen bestimmten Bereich zu beschränken, definieren Sie `ChangeRule`.
 
--   Sie können einen Änderungshandler keiner Eigenschaft hinzufügen, die für eine Rolle einer Beziehung steht. Definieren Sie stattdessen `AddRule` und `DeleteRule` für die Beziehungsklasse. Diese Regeln werden ausgelöst, wenn die Links erstellt oder geändert werden. Weitere Informationen finden Sie unter [weitergeben Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+-   Sie können einen Änderungshandler keiner Eigenschaft hinzufügen, die für eine Rolle einer Beziehung steht. Definieren Sie stattdessen `AddRule` und `DeleteRule` für die Beziehungsklasse. Diese Regeln werden ausgelöst, wenn die Links erstellt oder geändert werden. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Änderungen innerhalb und außerhalb des Speichers
 
 Eigenschaftenhandlermethoden werden innerhalb der Transaktion aufgerufen, die die Änderung initiiert hat. Daher können Sie weitere Änderungen im Speicher vornehmen, ohne eine neue Transaktion zu öffnen. Ihre Änderungen können zu weiteren Handleraufrufen führen.
 
-Wenn eine Transaktion rückgängig gemacht wird wird, wiederholt oder ein Rollback nicht nehmen Sie Änderungen im Windows Store ändert, also Modellelemente, Beziehungen, Formen, Connectors Diagramme oder ihre Eigenschaften.
+Wenn eine Transaktion rückgängig gemacht, wiederholt oder zurückgesetzt, Sie sollten keine Änderungen vornehmen, also Änderungen im Speicher, an Modellelementen, Beziehungen, Formen, Konnektoren, Diagrammen oder deren Eigenschaften.
 
 Des Weiteren würden Sie normalerweise Werte nicht aktualisieren, wenn das Modell aus der Datei geladen wird.
 
@@ -81,9 +81,9 @@ if (!store.InUndoRedoOrRollback && !store. InSerializationTransaction)
 }
 ```
 
-Im Gegensatz dazu, der Handler für die Eigenschaft ändert sich außerhalb des Informationsspeichers verteilt, sollten z. B. in einer Datei, Datenbank oder Variablen keine Store, klicken Sie dann Sie immer diese Änderungen vornehmen, damit, dass die externe Werte aktualisiert werden, wenn der Benutzer zum Rückgängigmachen aufruft bzw. wiederholen.
+Im Gegensatz dazu, wenn der Eigenschaftenhandler Änderungen außerhalb des Speichers überträgt, sollte z. B. in einer Datei, die Datenbank oder die nicht über den Store-Variablen, Sie dann immer diese Änderungen vornehmen, damit, dass die externen Werte aktualisiert werden, wenn der Benutzer zum Rückgängigmachen aufruft oder wiederholen.
 
-### <a name="cancel-a-change"></a>Eine Änderung abbrechen
+### <a name="cancel-a-change"></a>Abbrechen einer Änderung
 
 Wenn Sie eine Änderung verhindern möchten, können Sie die aktuelle Transaktion zurücksetzen. Sie könnten beispielsweise sicherstellen, dass eine Eigenschaft in einem bestimmten Bereich bleibt.
 
@@ -99,19 +99,19 @@ if (newValue > 10)
 
 Das vorherige Beispiel veranschaulicht, wie mit "OnValueChanged()" Werte von einer Domäneneigenschaft an eine andere übertragen werden können. Jede Eigenschaft verfügt über einen eigenen gespeicherten Wert.
 
-Sie könnten stattdessen die abgeleitete Eigenschaft als berechnete Eigenschaft definieren. In diesem Fall hat die Eigenschaft keinen eigenen Speicher und die definierende Funktion wird ausgewertet, wenn der Wert erforderlich ist. Weitere Informationen finden Sie unter [berechnet und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).
+Sie könnten stattdessen die abgeleitete Eigenschaft als berechnete Eigenschaft definieren. In diesem Fall hat die Eigenschaft keinen eigenen Speicher und die definierende Funktion wird ausgewertet, wenn der Wert erforderlich ist. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
-Statt im vorherigen Beispiel konnten Sie setzen die **Art** Feld `TextLengthCount` werden **berechnete** in der DSL-Definition. Würde eine eigene bieten **abrufen** Methode für diese Eigenschaft "Domain". Die **abrufen** Methodenrückgabewert die aktuelle Länge der `Text` Zeichenfolge.
+Statt des vorherigen Beispiels, legen Sie fest, die **Art** Feld `TextLengthCount` sein **berechnete** in der DSL-Definition. Sie würden Geben Sie eine eigene **erhalten** -Methode für diese Domäneneigenschaft. Die **erhalten** Methode würde die aktuelle Länge der Zurückgeben der `Text` Zeichenfolge.
 
 Ein möglicher Nachteil berechneter Eigenschaften ist jedoch, dass der Ausdruck bei jeder Verwendung des Werts ausgewertet wird. Dies kann ein Leistungsproblem darstellen. Auch gibt es "OnValueChanging()" und "OnValueChanged()" nicht für eine berechnete Eigenschaft.
 
 ### <a name="alternative-technique-change-rules"></a>Alternative Technik: Änderungsregeln
 
-Wenn Sie eine ChangeRule definieren, wird es am Ende einer Transaktion ausgeführt, in dem der Wert einer Eigenschaft ändert.  Weitere Informationen finden Sie unter [weitergeben Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+Wenn Sie eine ChangeRule definieren, wird es am Ende einer Transaktion ausgeführt, in dem der Wert einer Eigenschaft ändert.  Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
-Wenn in einer Transaktion mehrere Änderungen vorgenommen werden, wird die ChangeRule ausgeführt, wenn alle Änderungen abgeschlossen sind. Im Gegensatz dazu die OnValue... Methoden ausgeführt werden, wenn einige der Änderungen nicht ausgeführt wurden. Abhängig von Ihren Zielen kann eine ChangeRule daher für Sie vorteilhaft sein.
+Wenn in einer Transaktion mehrere Änderungen vorgenommen werden, wird die ChangeRule ausgeführt, wenn alle Änderungen abgeschlossen sind. Im Gegensatz dazu die OnValue...-Methoden ausgeführt, wenn einige der Änderungen nicht vorgenommen wurden. Abhängig von Ihren Zielen kann eine ChangeRule daher für Sie vorteilhaft sein.
 
-Eine ChangeRule können auch Anpassen der neue Wert der Eigenschaft, um innerhalb eines bestimmten Bereichs zu gewährleisten.
+Sie können auch eine ChangeRule verwenden, der neue Eigenschaftswert innerhalb eines bestimmten Bereichs ausgedrückt anpassen.
 
 > [!WARNING]
 > Wenn eine Regel Änderungen am Speicherinhalt vornimmt, können andere Regeln und Eigenschaftenhandler ausgelöst werden. Wenn eine Regel die Eigenschaft ändert, von der die Regeln ausgelöst wurde, wird die Regel erneut aufgerufen. Sie müssen darauf achten, dass Ihre Regeldefinitionen nicht zu endlosem Auslösen führen.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915961"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550504"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle"
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915961"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Mit dieser Regel tritt auf, wenn Prozesse, um festgelegt sind `ProcessPriorityClass.Idle`.
+ Mit dieser Regel tritt auf, wenn Prozesse, um festgelegt werden `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit `System.Diagnostics.ProcessPriorityClass.Idle` belegen die CPU, wenn diese andernfalls im Leerlauf werden würde, und daher den Standbymodus blockieren.
+ Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit `System.Diagnostics.ProcessPriorityClass.Idle` belegen die CPU, wenn sie andernfalls im Leerlauf sein würde, und daher den Standbymodus blockieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Legen Sie Prozesse auf `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Mit dieser Regel sollen nur, wenn im Leerlauf Prozesspriorität erforderlich ist und Mobilität Überlegungen gefahrlos ignoriert werden können unterdrückt werden.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Diese Regel sollte unterdrückt werden, nur, wenn im Leerlauf Prozesspriorität erforderlich ist und Mobilität Überlegungen sicher ignoriert werden können.

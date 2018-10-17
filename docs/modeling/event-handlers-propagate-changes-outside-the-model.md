@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776170"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859276"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 
-Sie können im Visualisierungs- und Modellierungs-SDK, Store-Ereignishandler zum Weitergeben von Änderungen an Ressourcen außerhalb des Speichers an, wie z. B. nicht über den Store-Variablen, die Dateien, die Modelle in anderen Datenspeichern oder andere definieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen das auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang zum Rückgängigmachen oder Wiederholen-Vorgang ausgeführt. Aus diesem Grund sind im Gegensatz zu Regeln für Store Speicherereignissen besonders hilfreich für das Aktualisieren der Werte, die außerhalb des Speichers. Im Gegensatz zu .NET Ereignissen, Store-Ereignishandler registriert sind, um eine Klasse zu überwachen: Sie müssen keinen separaten Handler für jede Instanz registrieren. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Verarbeiten von Änderungen, finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).
+Im Visualisierungs- und Modellierungs-SDK können Sie die Store-Ereignishandler zum Weitergeben von Änderungen an Ressourcen außerhalb des Speichers an, wie z. B. nicht über den Store-Variablen, die Dateien, die Modelle in anderen Datenspeichern oder anderen Visual Studio-Erweiterungen definieren. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen das auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang zum Rückgängigmachen oder Wiederholen-Vorgang ausgeführt. Aus diesem Grund sind im Gegensatz zu Regeln für Store Speicherereignissen besonders hilfreich für das Aktualisieren der Werte, die außerhalb des Speichers. Im Gegensatz zu .NET Ereignissen, Store-Ereignishandler registriert sind, um eine Klasse zu überwachen: Sie müssen keinen separaten Handler für jede Instanz registrieren. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Verarbeiten von Änderungen, finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).
 
 Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind Beispiele von externen Ressourcen, die von Store-Ereignisse behandelt werden können.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627011"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547931"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -53,7 +53,7 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 | **\_\_init\_\_.py** | Die Datei, die die App als Paket identifiziert. |
 | **Migrations** | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei *\_\_init\_\_.py* (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
 | **Templates** (Vorlagen) | Ein Ordner für Django-Seitenvorlagen, der eine einzelne *index.html*-Datei in einem Ordner enthält, dessen Name mit dem der App übereinstimmt. (In Visual Studio 2017 Version 15.7 und früher ist die Datei direkt unter *Vorlagen* enthalten und Schritt 2-4 weist Sie an, den Unterordner zu erstellen.) Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in *index.html*, sind Platzhalter für dynamische Werte, wie später in diesem Artikel (Schritt 2) erläutert wird. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
-| **admin.py** | Python-Datei, in die Sie die Verwaltungsschnittstelle (siehe Schritt 6) der App erweitern, mit der Sie Daten in einer Datenbank sehen und bearbeiten. Diese Datei enthält zunächst nur die Anweisung `from django.contrib import admin`. Django enthält standardmäßig eine Standard-Verwaltungsschnittstelle über Einträge in der Datei *settings.py* des Django-Projekts, die Sie durch Auskommentieren vorhandener Einträge in *urls.py* aktivieren können. |
+| **admin.py** | Python-Datei, in die Sie die Verwaltungsschnittstelle (siehe Schritt 6) der App erweitern, mit der Sie ein Seeding für Daten in einer Datenbank ausführen und Daten in einer Datenbank bearbeiten können. Diese Datei enthält zunächst nur die Anweisung `from django.contrib import admin`. Django enthält standardmäßig eine Standard-Verwaltungsschnittstelle über Einträge in der Datei *settings.py* des Django-Projekts, die Sie durch Auskommentieren vorhandener Einträge in *urls.py* aktivieren können. |
 | **apps.py** | Ein Python-Datei, die eine Konfigurationsklasse für die App definiert (weitere Informationen finden Sie im Anschluss an die Tabelle). |
 | **models.py** | Modelle sind Datenobjekte, die von Funktionen identifiziert werden, über die Ansichten mit der zugrunde liegenden Datenbank der App interagieren (siehe Schritt 6). Django stellt die Datenbankverbindungsschicht bereit, sodass sich Apps nicht selbst mit diesen Details befassen müssen. Die Datei *models.py* ist ein Standard-Ausgangspunkt für die Erstellung Ihrer Modelle und enthält zunächst nur die Anweisung `from django.db import models`. |
 | **tests.py** | Python-Datei, die die grundlegende Struktur der Komponententests enthält. |
@@ -125,7 +125,7 @@ Antwort: In regulären Ausdrücken, die URL-Muster definieren, bedeutet „^“ 
 
 Wenn Sie in einem regulären Ausdruck kein nachgestelltes „$“ verwenden, wie z.B. bei `^home`, stimmt das URL-Muster mit *allen* URLs überein, die mit „home“ beginnen, z.B. „home“, „homework“, „homestead“ und „home192837“.
 
-Zum Experimentieren mit anderen regulären Ausdrücken verwenden Sie Onlinetools, wie z.B. [regex101.com](https://regex101.com) auf [pythex.org](http://www.pythex.org).
+Zum Experimentieren mit anderen regulären Ausdrücken verwenden Sie Onlinetools, wie z.B. [regex101.com](https://regex101.com) auf [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Schritt 2-3: Rendern einer Ansicht mithilfe von HTML
 

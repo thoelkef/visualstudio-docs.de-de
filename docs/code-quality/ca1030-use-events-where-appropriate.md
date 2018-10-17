@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9349321319b8bab81a2d9e7b52e7f2d25e87f796
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900057"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859731"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31900057"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine öffentlich, geschützt oder privat Methodenname beginnt mit einer der folgenden:
+ Namen einer öffentlichen, geschützten oder privaten Methode beginnt mit einer der folgenden:
 
--   AddOn
+- -Add-On
 
--   RemoveOn
+- RemoveOn
 
--   Auslösen
+- Auslösen
 
--   Auslösen
+- Auslösen
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse folgen das Entwurfsmuster "Beobachter" oder veröffentlichen-abonnieren. Sie werden verwendet, wenn eine statusänderung in einem Objekt auf andere Objekte übertragen werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.
+ Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse befolgen das Entwurfsmuster "Beobachter" oder "Veröffentlichen-Abonnieren"; Sie werden verwendet, wenn eine Zustandsänderung bei einem Objekt auf andere Objekte übertragen werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.
 
- Einige gängige Beispiele von Ereignissen werden in Benutzeroberflächenanwendungen erörtert, in denen eine Benutzeraktion wie das Klicken auf eine Schaltfläche führt dazu, ein Segment der dass auszuführenden Code. Die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell ist nicht auf Benutzeroberflächen beschränkt; er sollte überall dort verwendet werden Sie kommunizieren müssen, Zustand ändert, um ein oder mehrere Objekte.
+ Einige allgemeine Beispiele für Ereignisse werden in Benutzeroberflächenanwendungen gefunden, in denen eine Benutzeraktion wie das Klicken auf eine Schaltfläche führt dazu, ein Segment des Codes dass ausgeführt. Das Ereignismodell für die .NET Framework ist nicht auf Benutzeroberflächen beschränkt; Sie sollten überall dort verwendet werden, mit denen Sie kommunizieren müssen, dass Zustandsänderungen auf eine oder mehrere Objekte.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wenn die Methode aufgerufen wird, wenn sich der Zustand eines Objekts ändert, sollten Sie erwägen, den Entwurf zu verwenden, ändern die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell.
+ Wenn die Methode aufgerufen wird, wenn sich der Zustand eines Objekts ändert, sollten Sie den Entwurf zu verwenden, das .NET Framework-Ereignismodell ändern.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Eine Warnung dieser Regel zu unterdrücken, sofern die Methode funktioniert nicht mit der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel, wenn die Methode nicht mit dem .NET Framework-Ereignismodell funktioniert.

@@ -1,0 +1,69 @@
+---
+title: 'Gewusst wie: Konfigurieren der Vererbung mit dem O / R-Designer | Microsoft-Dokumentation'
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
+caps.latest.revision: 7
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222689"
+---
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Gewusst wie: Konfigurieren der Vererbung mit dem O/R-Designer
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+  
+Der [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) unterstützt das häufig in relationalen Systemen implementierte Konzept der Vererbung einer einzelnen Tabelle. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält. Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der bestimmt, welche Klasse Datensatz gehört.  
+  
+ Betrachten Sie beispielsweise die Tabelle "Persons", die alle in einem Unternehmen beschäftigten Personen enthält. Einige Personen sind Mitarbeiter, andere Führungskräfte. Die Tabelle "Persons" enthält die Spalte `EmployeeType`, die für Führungskräfte den Wert 1 und für Mitarbeiter den Wert 2 enthält. Diese Spalte dient als Unterscheidungsspalte. In diesem Szenario können Sie eine Unterklasse von Mitarbeitern erstellen und die Klasse nur mit Datensätzen füllen, die einen `EmployeeType`-Wert von 2 aufweisen. Sie können aus der jeweiligen Klasse auch die nicht zutreffenden Spalten entfernen.  
+  
+ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relationale Daten bezieht), kann etwas verwirrend sein. Im folgenden Verfahren werden die erforderlichen Schritte zum Konfigurieren von Vererbung mit dem O/R-Designer dargestellt. Da es möglicherweise schwierig ist, generische Schritte nachzuvollziehen, ohne sich auf eine vorhandene Tabelle und die zugehörigen Spalten zu beziehen, wird auch eine exemplarische Vorgehensweise zur Verfügung gestellt, in der echte Daten verwendet werden. Weitere schrittweise Anleitungen zum Konfigurieren der Vererbung mithilfe der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], finden Sie unter [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen, indem Sie mithilfe von Vererbung einer einzelnen Tabelle (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+  
+### <a name="to-create-inherited-data-classes"></a>So erstellen Sie geerbte Datenklassen  
+  
+1.  Öffnen der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] durch Hinzufügen einer **LINQ to SQL-Klassen** Element zu einem vorhandenen Visual Basic- oder C#-Projekt.  
+  
+2.  Ziehen Sie die Tabelle, die Sie als Basisklasse verwenden möchten, auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+  
+3.  Ziehen Sie eine zweite Kopie der Tabelle auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] und benennen Sie sie. Sie dient als abgeleitete Klasse bzw. Unterklasse.  
+  
+4.  Klicken Sie auf **Vererbung** in die **Object Relational Designer** Registerkarte die **Toolbox**, und klicken Sie auf die Unterklasse (die umbenannte Tabelle), und verbinden Sie sie mit der Basisklasse.  
+  
+    > [!NOTE]
+    >  Klicken Sie auf die **Vererbung** Element in der **Toolbox** und Loslassen der Maustaste, klicken Sie auf die zweite Kopie von der Klasse, die Sie in Schritt 3 erstellt haben, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben. Der Pfeil der Vererbungslinie zeigt dann auf die erste Klasse.  
+  
+5.  Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Sie erhalten einen Fehler auf, wenn Sie versuchen, die für Zuordnungen verwendete Objekteigenschaften zu löschen: [Eigenschaft \<Eigenschaftenname > kann nicht gelöscht werden, da sie in der Zuordnung teilnimmt \<Zuordnungsname >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+  
+    > [!NOTE]
+    >  Da eine abgeleitete Klasse die in der Basisklasse definierten Eigenschaften erbt, dürfen in den Klassen nicht dieselben Spalten definiert sein. (Spalten werden als Eigenschaften implementiert.) Sie können die Erstellung von Spalten in der abgeleiteten Klasse ermöglichen, indem Sie in der Basisklasse den Vererbungsmodifizierer für die entsprechende Eigenschaft festlegen. Weitere Informationen finden Sie unter [nicht im BUILD: Überschreiben von Eigenschaften und Methoden](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+  
+6.  Wählen Sie im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] die Vererbungslinie aus.  
+  
+7.  In der **Eigenschaften** legen die **Unterscheidungseigenschaft** auf den Namen der Spalte, die verwendet wird, um die Datensätze in Ihren Klassen zu unterscheiden.  
+  
+8.  Legen Sie die **abgeleiteter Klassendiskriminatorwert** -Eigenschaft auf den Wert in der Datenbank, die den Datensatz als den geerbten Typ kennzeichnet. (Dies ist der Wert, der in der Unterscheidungsspalte gespeichert und mit dem die geerbte Klasse gekennzeichnet wird.)  
+  
+9. Legen Sie die **Basisklassen-Diskriminatorwert** Eigenschaft, um den Wert, der den Datensatz als Basistyp kennzeichnet. (Dies ist der eigentliche Wert, der in der Unterscheidungsspalte gespeichert und mit dem die Basisklasse gekennzeichnet wird.)  
+  
+10. Optional können Sie auch Festlegen der **Vererbungsstandard** Eigenschaft um einen Typ in einer Vererbungshierarchie zu bestimmen, die beim Laden von Zeilen, die keine entsprechen Vererbungscode definierten verwendet wird. Das heißt, wenn ein Datensatz einen Wert in der Unterscheidungsspalte enthält, die entspricht nicht der Werte in der **abgeleiteter Klassendiskriminatorwert** oder **Basisklassen-Diskriminatorwert** Eigenschaften, die den Datensatz in den Typ als lädt die **Vererbungsstandard**.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [PAVE Neues in den Daten-Anwendungsentwicklung in Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+ [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O/R-Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
+ [NICHT IM BUILD: Vererbung in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [Vererbung](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
+

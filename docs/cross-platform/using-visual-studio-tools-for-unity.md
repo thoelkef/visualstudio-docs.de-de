@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251717"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496063"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio-Tools für Unity
 
@@ -94,14 +94,6 @@ So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendef
 - Wählen Sie in Visual Studio im Hauptmenü **Ansicht > Unity-Projektexplorer** aus. Tastenkombination: **ALT**+**UMSCHALT**+**E**
 
      ![Das Fenster für den Unity-Projektexplorer anzeigen](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity-Fehlerliste
-
- Sie können Meldungen in der Unity-Konsole innerhalb von Visual Studio anzeigen, wenn eine Verbindung mit einer Unity-Instanz besteht. Dies schließt Fehler und Warnungen von Unity ein. Die Meldungen werden im Visual Studio-Fenster **Fehlerliste** angezeigt. Fehlermeldungen von Unity werden auf der Registerkarte **Fehler** angezeigt. Warnmeldungen werden auf der Registerkarte **Warnungen** angezeigt. Andere Meldungen, z.B. von der Debug.Log Unity-API gesendete, werden auf der Registerkarte **Meldungen** angezeigt.
-
- Zum Anzeigen der Meldungen muss wie im Abschnitt [Debuggen von Unity](#unity-debugging) beschrieben eine Verbindung Ihres Unity-Projekts mit Visual Studio hergestellt werden.
-
- Wenn Sie keine Fehler, Warnungen und Meldungen von Unity in Visual Studio im Fenster **Fehlerliste** anzeigen möchten, deaktivieren Sie die Anzeige im Menü „Konfiguration“.
 
 ## <a name="unity-debugging"></a>Debuggen von Unity
 
@@ -188,7 +180,7 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>So debuggen Sie ein in Ihrem Unity-Projekt verwendetes verwaltetes DLL-Projekt
 
-1. Fügen Sie Ihr vorhandenes DLL-Projekt der Visual Studio-Projektmappe hinzu, die von Visual Studio-Tools für Unity generiert wurde. Möglicherweise starten Sie auch, was weniger üblich ist, mit einem neuen verwalteten DLL-Projekt als Container für die Codekomponenten Ihres Unity-Projekts. Ist dies der Fall, können Sie stattdessen der Visual Studio-Projektmappe ein neues verwaltetes DLL-Projekt hinzufügen. Weitere Informationen zum Hinzufügen eines neuen oder vorhandenen Projekts zu einer Projektmappe finden Sie unter [Vorgehensweise: Hinzufügen von Projekten zu einer Projektmappe](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).
+1. Fügen Sie Ihr vorhandenes DLL-Projekt der Visual Studio-Projektmappe hinzu, die von Visual Studio-Tools für Unity generiert wurde. Möglicherweise starten Sie auch, was weniger üblich ist, mit einem neuen verwalteten DLL-Projekt als Container für die Codekomponenten Ihres Unity-Projekts. Ist dies der Fall, können Sie stattdessen der Visual Studio-Projektmappe ein neues verwaltetes DLL-Projekt hinzufügen. Weitere Informationen zum Hinzufügen eines neuen oder vorhandenen Projekts zu einer Projektmappe finden Sie unter [Vorgehensweise: Hinzufügen von Projekten zu einer Projektmappe](https://msdn.microsoft.com/library/ff460187.aspx).
 
      ![Hinzufügen des vorhandenen DLL-Projekts zur Projektmappe](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -196,7 +188,7 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 
 1. Verweisen Sie im DLL-Projekt auf das richtige Unity-Frameworkprofil. Legen Sie in Visual Studio in den Eigenschaften des DLL-Projekts die Eigenschaft **Zielframework** auf das von Ihnen verwendete Unity-Framework fest. Dies ist die Unity-Basisklassenbibliothek, die der gewünschten API-Kompatibilität Ihres Projekts entspricht, wie z. B. die Unity-Klassenbibliothek "full", "micro" oder "web". Dies verhindert, dass Ihre DLL Frameworkmethoden aufruft, die in anderen Frameworks oder auf anderen Kompatibilitätsstufen, aber nicht in der Unity-Frameworkversion vorhanden sind, die Sie verwenden.
 
-     ![Das Zielframework der DLL auf Unity-Framework festlegen] (../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+     ![Das Zielframework der DLL auf Unity-Framework festlegen](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 1. Kopieren Sie die DLL in den Ordner "Assets" Ihres Unity-Projekts. In Unity sind "Assets" Dateien, die in Paketen zusammen mit Ihrer Unity-App so bereitgestellt werden, dass sie zur Laufzeit geladen werden können. Da DLLs zur Laufzeit verknüpft werden, müssen die DLLs als Assets bereitgestellt werden. Um als Asset bereitgestellt zu werden, verlangt der Unity-Editor, dass die DLLs dem Ordner "Assets" in Ihrem Unity-Projekt hinzugefügt werden. Dazu stehen zwei Möglichkeiten zur Verfügung:
 
@@ -217,6 +209,6 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 |Den MonoBehavior-Assistenten öffnen|**STRG**+**UMSCHALT**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Den Unity-Projekt-Explorer öffnen|**ALT**+**UMSCHALT**+**E**|**View.UnityProjectExplorer**|
 |Auf Unity-Dokumentation zugreifen|**STRG**+**ALT**+**M > STRG**+**H**|**Help.UnityAPIReference**|
-|An Unity-Debugger (Player oder Editor) anfügen|***Kein Standard***|**Debug.AttachUnityDebugger**|
+|An Unity-Debugger (Player oder Editor) anfügen|**_Kein Standard_**|**Debug.AttachUnityDebugger**|
 
  Sie können die Tastenkombinationen ändern, wenn Ihnen die Standardeinstellung nicht gefällt. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

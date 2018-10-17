@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bc8ecdbbbed1d7d128a5102141c7130dcaef026
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775774"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859808"
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfalls gelöscht. Alle mit dem Element verbundenen Beziehungen und alle ihm untergeordneten Elemente werden gelöscht. Dieses Verhalten ist mit dem Namen *Löschweitergabe*. Sie können die Löschweitergabe anpassen, um beispielsweise zu veranlassen, dass zusätzliche verwandte Elemente gelöscht werden. Durch Schreiben von Programmcode können Sie die Löschweitergabe vom Zustand des Modells abhängig machen. Sie können auch andere Änderungen als Reaktion auf eine Löschung veranlassen.
@@ -35,11 +35,11 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
 
 -   [Löschregeln](#rules) -Regeln verwenden, um Aktualisierungen beliebiger Art innerhalb des Speichers weiterzugeben, wenn eine Änderung an andere Personen führen kann.
 
--   [Ereignisse beim Löschen von](#rules) -verwenden Sie Speicherereignisse um Aktualisierungen außerhalb des Speichers, zum Beispiel an andere weiterzugeben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dokumente.
+-   [Ereignisse beim Löschen von](#rules) -verwenden Sie Speicherereignisse Aktualisierungen außerhalb des Speichers, z. B. zu anderen Visual Studio-Dokumenten weitergegeben werden.
 
 -   [UnMerge](#unmerge) -verwenden Sie den UnMerge-Vorgang, um die Zusammenführung rückgängig gemacht, die ein untergeordnetes Element an sein übergeordnetes Element angefügt.
 
-##  <a name="default"></a> Standardmäßiges Löschverhalten
+## <a name="default"></a> Standardmäßiges Löschverhalten
  Standardmäßig wird die Löschweitergabe durch folgende Regeln gesteuert:
 
 -   Beim Löschen eines Elements werden auch alle eingebetteten Elemente gelöscht. Die eingebetteten Elemente sind die Elemente, die Ziele einbettender Beziehungen sind, deren Quelle das Element darstellt. Angenommen, es gibt eine einbettende Beziehung von **Album** zu **"Song"**, und klicken Sie dann beim Löschen eines bestimmten Albums alle zugehörigen Songs ebenfalls gelöscht werden.
@@ -52,7 +52,7 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
 
 -   Alle Beziehungen, die mit dem Element verbunden sind, sei es über die Quellrolle oder die Zielrolle, werden gelöscht. Die Rolleneigenschaft des Elements in der entgegengesetzten Rolle enthält das gelöschte Element nicht mehr.
 
-##  <a name="property"></a> Festlegen der Löschweitergabeoption einer Rolle
+## <a name="property"></a> Festlegen der Löschweitergabeoption einer Rolle
  Sie können die Weitergabe der Löschung entlang einer Verweisbeziehung oder von einem eingebetteten untergeordneten Element an sein übergeordnetes Element veranlassen.
 
 #### <a name="to-set-delete-propagation"></a>So legen Sie die Löschweitergabe fest
@@ -77,7 +77,7 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
 > [!NOTE]
 >  Um Ihrer DSL-Definition Programmcode hinzuzufügen, erstellen Sie eine separate Codedatei in die **Dsl** Projekt, und Schreiben partielle Definitionen, um die Klassen im Ordner generierter Code zu erweitern. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-##  <a name="closure"></a> Definieren eines Löschabschlusses
+## <a name="closure"></a> Definieren eines Löschabschlusses
  Beim Löschvorgang wird anhand die Klasse _Ihrmodell_**DeleteClosure** , welche Elemente ausgehend von einer Anfangsauswahl gelöscht werden. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. ShouldVisitRolePlayer wird mit der Identität eines Links und das Element an eine der Rollen des Links bereitgestellt. Es sollte einen der folgenden Werte zurückgeben:
 
 -   **VisitorFilterResult.Yes**: das Element gelöscht werden soll, und der Walker soll, wiederholen die anderen Links des Elements.
@@ -130,7 +130,7 @@ partial class MusicLibDeleteClosure
 
  Die Technik setzt allerdings voraus, dass die Löschung nur die Nachbarn im Diagramm der Beziehungen betrifft: Sie können mit dieser Technik kein Element in einem anderen Teil des Modells löschen. Sie können sie nicht verwenden, wenn Sie auf eine Löschung hin Elemente hinzufügen oder andere Änderungen ausführen möchten.
 
-##  <a name="ondeleting"></a> Verwenden von "OnDeleting" und "OnDeleted"
+## <a name="ondeleting"></a> Verwenden von "OnDeleting" und "OnDeleted"
  Sie können `OnDeleting()` oder `OnDeleted()` in einer Domänenklasse oder in einer Domänenbeziehung überschreiben.
 
 1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> wird aufgerufen, wenn ein Element im Begriff ist gelöscht zu werden, aber bevor seine Beziehungen getrennt wurden. Die Navigation zwischen dem Element und anderen Elementen ist noch möglich, und es befindet sich noch in `store.ElementDirectory`.
@@ -197,7 +197,7 @@ partial class Artist
 
  Wenn Sie für ein Element <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> ausführen, werden "OnDeleting" und "OnDeleted" aufgerufen. Diese Methoden werden immer Inline ausgeführt – d. h. unmittelbar vor und nach der tatsächlichen Löschung. Wenn im Code mindestens zwei Elemente gelöscht werden, werden "OnDeleting" und "OnDeleted" abwechselnd für alle Elemente aufgerufen.
 
-##  <a name="rules"></a> Löschregeln und-Ereignisse
+## <a name="rules"></a> Löschregeln und-Ereignisse
  Als Alternative zu OnDelete-Handlern können Sie Löschregeln und Löschereignisse definieren.
 
 1.  **Löschen von** und **löschen** Regeln ausgelöst werden, nur in einer Transaktion und nicht in einen Rückgängig- oder wiederholen. Sie können festlegen, dass sie in die Warteschlange gestellt und am Ende der Transaktion ausgeführt werden, in der die Löschung erfolgt. "Deleting"-Regeln werden immer vor "Deleted"-Regeln ausgeführt, die sich in der Warteschlange befinden.
@@ -206,7 +206,7 @@ partial class Artist
 
      Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
-2.  **Gelöschte** -Speicherereignis wird am Ende einer Transaktion aufgerufen und wird aufgerufen, nachdem ein Rückgängig- oder wiederholen. Es kann daher verwendet werden, um Löschungen von Objekten außerhalb des Speichers weiterzugeben, wie Dateien, Datenbankeinträge oder andere Objekte in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2.  **Gelöschte** -Speicherereignis wird am Ende einer Transaktion aufgerufen und wird aufgerufen, nachdem ein Rückgängig- oder wiederholen. Es kann daher verwendet werden, löschungen von Objekten außerhalb des Speichers, z. B. Dateien, Datenbankeinträge oder andere Objekte in Visual Studio weitergegeben werden.
 
      Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
@@ -287,7 +287,7 @@ partial class NestedShapesSampleDocData
 
 ```
 
-##  <a name="unmerge"></a> Zusammenführung aufheben
+## <a name="unmerge"></a> Zusammenführung aufheben
  Der Vorgang, der ein untergeordnetes Element an sein übergeordnetes Element angefügt wird aufgerufen, *Merge*. Er tritt auf, wenn ein neues Element oder eine neue Gruppe von Elementen über den Werkzeugkasten erstellt, aus einem anderen Teil des Modells verschoben oder aus der Zwischenablage kopiert wird. Neben dem Erstellen einer einbettenden Beziehung zwischen dem übergeordneten und dem neuen untergeordneten Element können beim Zusammenführungsvorgang weitere Beziehungen eingerichtet, Hilfselemente erstellt und Eigenschaftenwerte in den Elementen festgelegt werden. Der Zusammenführungsvorgang ist in eine Elementzusammenführungsdirektive (Element Merge Directive, EMD) eingebettet.
 
  Eine EMD kapselt auch den komplementären *unmerge* oder `MergeDisconnect` Vorgang. Soll aus einem durch Zusammenführung erstellten Cluster ein Element entfernt werden, wird empfohlen den zugehörigen Vorgang zum Aufheben der Zusammenführung zu verwenden, wenn die verbleibenden Elemente in einem konsistenten Zustand hinterlassen werden sollen. Beim Vorgang zum Aufheben der Zusammenführung werden üblicherweise die Techniken verwendet, die in den vorherigen Abschnitten beschrieben wurden.

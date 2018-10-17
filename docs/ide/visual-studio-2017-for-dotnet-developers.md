@@ -2,7 +2,7 @@
 title: Steigern Ihrer Produktivität für die .NET-Entwicklung
 description: Überblick über die Navigation, die Codeanalyse, Unittests und andere Funktionen, um schneller besseren .NET Code zu schreiben
 author: kuhlenh
-ms.author: kaseyu
+ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626754"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495790"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 

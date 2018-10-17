@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901484"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495634"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -24,7 +24,7 @@ Testlaufeinstellungsdateien sind optional. Wenn keine spezielle Konfiguration er
 
 ## <a name="specify-a-run-settings-file"></a>Angeben einer Testlaufeinstellungsdatei
 
-Testlaufeinstellungsdateien können verwendet werden, um Tests zu konfigurieren, die über die [Befehlszeile](vstest-console-options.md), in der IDE oder in einem [Buildworkflow ](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) mit Visual Studio Team Services (VSTS) oder Team Foundation Server (TFS) ausgeführt werden.
+Laufzeiteinstellungsdateien können verwendet werden, um Tests zu konfigurieren, die über die [Befehlszeile](vstest-console-options.md), in der IDE oder in einem [Buildworkflow ](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) mit Azure Test Plans oder Team Foundation Server (TFS) ausgeführt werden.
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Angeben einer Testlaufeinstellungsdatei in der IDE
 
@@ -114,8 +114,8 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
         </Configuration>
       </DataCollector>
 
-      <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
+        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       </DataCollector>
 
     </DataCollectors>
@@ -256,4 +256,4 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 ## <a name="see-also"></a>Siehe auch
 
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio-Testtask (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

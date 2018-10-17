@@ -1,5 +1,5 @@
 ---
-title: Über das Automatisierungsmodell | Microsoft Docs
+title: Über das Automatisierungsmodell | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679e9966e66de1c79cb3c6394f1d80ab6d6733bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6633aefe783cf163ee27f8a0c4a879aec898d325
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136535"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495439"
 ---
-# <a name="using-the-automation-model"></a>Mithilfe des Automatisierungsmodells
-Nachdem Sie Ihr VSPackage für die Automatisierung verbunden haben, erhalten Sie die Eigenschaften und Methoden durch Aufrufen der <xref:EnvDTE.DTEClass.GetObject%2A> Methode für die <xref:EnvDTE._DTE> Objekt auf und übergibt eine Zeichenfolge, die das Objekt, das Sie abrufen möchten.  
+# <a name="using-the-automation-model"></a>Verwenden des Automatisierungsmodells
+Nachdem Sie Ihr VSPackage in Automation verbunden haben, Sie erhalten die Eigenschaften und Methoden durch Aufrufen der <xref:EnvDTE.DTEClass.GetObject%2A> Methode für die <xref:EnvDTE._DTE> Objekts auf und übergibt eine Zeichenfolge, die das Objekt, das Sie abrufen möchten.  
   
-## <a name="obtaining-project-objects"></a>Abrufen von Project-Objekte  
- Es folgen zwei Codebeispielen, die veranschaulichen, wie ein Consumer Automatisierung des Projekts Automatisierungsobjekte erhält. Informationen zum Abrufen des DTE-Objekts, finden Sie unter [Vorgehensweise: Abrufen der Verweise auf den DTE und DTE2-Objekten](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+## <a name="obtaining-project-objects"></a>Abrufen von Projektobjekten  
+ Es folgen zwei Codebeispiele, die zeigen, wie ein automatisierungsbenutzer das Projekt Automatisierungsobjekte erhält. Weitere Informationen zum Abrufen des DTE-Objekts, finden Sie unter [wie: Abrufen von Verweisen auf die DTE und DTE2-Objekt](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
 ```vb  
 Sub DoAutomation()  
@@ -48,7 +48,7 @@ void DoAutomation(void)
   
  An diesem Punkt können Sie die standard-Projekt-Objekte, die Teil eines bestimmten VSPackage, um das Hierarchiemodell zu verschieben.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Objekt abgerufen, die eine Eigenschaft eines benutzerdefinierten Projekttyps.:  
+ Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Objekt erhalten, um eine Eigenschaft eines benutzerdefinierten Projekttyps.:  
   
 ```vb  
 Dim MyPrj As Project  

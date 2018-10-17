@@ -11,11 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: ec988b9739dfbec60fe19b41145ae0de1b3d3f77
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667924"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service für Linux
 
@@ -23,14 +24,14 @@ Remote R Service für Linux ist derzeit als Paket des Typs „rtvs-daemon“ ver
 
 Nachdem Sie den Remotecomputer konfiguriert haben, werden die R Tools für Visual Studio (RTVS) durch folgende Schritte mit diesem Dienst verbunden:
 
-1. Wählen Sie **R Tools > Windows > Arbeitsbereiche**, um das Fenster **Arbeitsbereiche** zu öffnen.
+1. Klicken Sie auf **R Tools** > **Windows** > **Arbeitsbereiche**, um das Fenster **Arbeitsbereiche** zu öffnen.
 1. Wählen Sie **Verbindung hinzufügen** aus.
 1. Geben Sie der Verbindung einen Namen und ihre URL an, z.B. `https://localhost:5444` (Windows-Subsystem für Linux) oder `https://public-ip:5444` (Azure-Container). Wählen Sie **Speichern** aus, sobald Sie fertig sind.
 1. Klicken Sie auf das Verbindungssymbol, oder doppelklicken Sie auf das Verbindungselement.
 1. Geben Sie Anmeldeinformationen an. Dem Benutzernamen muss `<<unix>>\` wie in `<<unix>>\ruser1` vorangestellt werden (was für alle Verbindungen mit Linux-Remotecomputern erforderlich ist).
 1. Wenn Sie ein selbstsigniertes Zertifikat verwenden, wird möglicherweise eine Warnung angezeigt. Die Meldung enthält Anweisungen, wie Sie die Warnung vermeiden können.
 
-## <a name="setting-up-remote-r-service"></a>Einrichten von Remote R Service
+## <a name="set-up-remote-r-service"></a>Einrichten von Remote R Service
 
 In diesem Abschnitt werden die folgenden Optionen beschrieben:
 
@@ -68,7 +69,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
     sudo systemctl start rtvsd
     ```
 
-1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert-snakeoil.pem`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine `.pfx`-Datei und ein optionales Importkennwort in `/etc/rtvs/rtvsd.config.json` angegeben werden.
+1. Konfigurieren Sie das SSL-Zertifikat (das für eine Produktionsumgebung erforderlich ist). Standardmäßig verwendet rtvs-daemon die vom `ssl-cert`-Paket generierten Dateien `ssl-cert-snakeoil.pem` und `ssl-cert-snakeoil.pem`. Während der Installation werden diese zu `ssl-cert-snakeoil.pfx` kombiniert. Verwenden Sie für Produktionszwecke das von Ihrem Administrator bereitgestellte SSL-Zertifikat. Das SSL-Zertifikat kann konfiguriert werden, indem eine *PFX*-Datei und ein optionales Importkennwort in */etc/rtvs/rtvsd.config.json* angegeben werden.
 
 1. (Optional) Überprüfen Sie, ob der Dienst ausgeführt wird:
 
@@ -100,7 +101,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
 
 #### <a name="configure-the-vm"></a>Konfigurieren der VM
 
-1. Fügen Sie im Abschnitt **Netzwerk** der VM als erlaubten eingehenden Port 5444 hinzu. Wenn Sie einen anderen Port verwenden möchten, ändern Sie die Einstellung in der Konfigurationsdatei des RTVS-Daemons (`/etc/rtvs/rtvsd.config.json`).
+1. Fügen Sie im Abschnitt **Netzwerk** der VM als erlaubten eingehenden Port 5444 hinzu. Wenn Sie einen anderen Port verwenden möchten, ändern Sie die Einstellung in der Konfigurationsdatei des RTVS-Daemons (*/etc/rtvs/rtvsd.config.json*).
 1. (Optional) Legen Sie einen DNS-Namen fest. Sie können auch die IP-Adresse verwenden.
 1. Stellen Sie eine Verbindung mit der VM über einen SSH-Client wie z.B. PuTTY for Windows her.
 1. Befolgen Sie die vorherigen Anweisungen für einen [physischen Ubuntu-Computer](#physical-ubuntu-computer).
@@ -155,7 +156,7 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
     docker run -p 5444:5444 myrimage rtvsd
     ```
 
-1. Um in RTVS eine Verbindung mit dem Container herzustellen, verwenden Sie `https://localhost:5444` als Pfad, den Benutzernamen `<<unix>>\ruser1` und das Kennwort `foobar`. Wenn der Container auf einem Remotecomputer ausgeführt wird, verwenden Sie als Pfad stattdessen `https://remote-host-name:5444`. Der Port kann geändert werden, indem Sie `/etc/rtvs/rtvsd.config.json` aktualisieren.
+1. Um in RTVS eine Verbindung mit dem Container herzustellen, verwenden Sie `https://localhost:5444` als Pfad, den Benutzernamen `<<unix>>\ruser1` und das Kennwort `foobar`. Wenn der Container auf einem Remotecomputer ausgeführt wird, verwenden Sie als Pfad stattdessen `https://remote-host-name:5444`. Der Port kann durch die Anpassung von */etc/rtvs/rtvsd.config.json* geändert werden.
 
 ### <a name="container-running-on-azure-container-instances"></a>In Azure Container Instances ausgeführter Container
 

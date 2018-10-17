@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5adb5f5177afc59f560a988f9c86e1ebbede759
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691224"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669024"
 ---
 # <a name="concurrency-visualizer"></a>Parallelitätsschnellansicht
 > [!NOTE]
@@ -43,7 +43,7 @@ ms.locfileid: "34691224"
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|description|  
+|Titel|Beschreibung |  
 |-----------|-----------------|  
 |[Auslastungsansicht](../profiling/utilization-view.md)|Beschreibt, wie Systemaktivitäten über alle Prozessoren hinweg angezeigt und analysiert werden.|  
 |[Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)|Beschreibt, wie die Interaktionen zwischen Threads in Ihrem Programm analysiert werden.|  
@@ -56,4 +56,4 @@ ms.locfileid: "34691224"
   
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

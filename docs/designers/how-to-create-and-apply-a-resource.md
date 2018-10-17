@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923999"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282789"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
-Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [Quickstart: Styling controls (Schnellstart: Formatieren von Steuerelementen)](http://go.microsoft.com/fwlink/?LinkID=248239) und [QuickStart: Control templates (Schnellstart: Steuerelementvorlagen)](http://go.microsoft.com/fwlink/?LinkID=247982).
+Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [Quickstart: Styling controls (Schnellstart: Formatieren von Steuerelementen)](http://go.microsoft.com/fwlink/?LinkID=248239) und [QuickStart: Control templates (Schnellstart: Steuerelementvorlagen)](http://go.microsoft.com/fwlink/?LinkID=247982).
 
- Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, [Formatvorlage](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) oder `ControlTemplate` erstellen, können Sie im Dialogfeld **Ressource erstellen** die Ressource auf Anwendungs-, Dokument- oder Elementebene definieren. Diese Ebenen bestimmen, wo Sie die Ressource verwenden können. Wenn Sie beispielsweise die Ressource auf der Elementebene definieren, kann die Ressource nur auf das Element angewendet werden, für das sie erstellt wurde. Sie können die Ressource auch in einem Ressourcenverzeichnis speichern. Hierbei handelt es sich um eine eigene Datei, die in anderen Projekten wieder verwendet werden kann.
+ Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, [Formatvorlage](/uwp/api/Windows.UI.Xaml.Style) oder `ControlTemplate` erstellen, können Sie im Dialogfeld **Ressource erstellen** die Ressource auf Anwendungs-, Dokument- oder Elementebene definieren. Diese Ebenen bestimmen, wo Sie die Ressource verwenden können. Wenn Sie beispielsweise die Ressource auf der Elementebene definieren, kann die Ressource nur auf das Element angewendet werden, für das sie erstellt wurde. Sie können die Ressource auch in einem Ressourcenverzeichnis speichern. Hierbei handelt es sich um eine eigene Datei, die in anderen Projekten wieder verwendet werden kann.
 
 ### <a name="to-create-a-new-resource"></a>So erstellen Sie eine neue Ressource
 

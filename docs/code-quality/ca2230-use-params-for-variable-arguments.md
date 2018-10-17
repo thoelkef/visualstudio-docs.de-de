@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70492152e75d3d257b63e014e854c4b0b431d2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2dbb5ba3fe1f16f5a05d01d25040de39370cddc8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917717"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548317"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: params für Variablenargumente verwenden
 |||
@@ -32,23 +32,25 @@ ms.locfileid: "31917717"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ enthält eine öffentliche oder geschützte Methode, verwendet die `VarArgs` Aufrufkonvention.
+ Ein öffentlicher oder geschützter Typ enthält eine öffentliche oder geschützte Methode, verwendet der `VarArgs` Aufrufkonvention.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die `VarArgs` -Aufrufkonvention mit bestimmten Methodendefinitionen, die eine Variable von Parametern Anzahl verwendet wird. Eine Methode mit dem `VarArgs` Aufrufkonvention Common Language Specification (CLS) kompatibel ist und möglicherweise nicht in verschiedenen Programmiersprachen zugegriffen werden.
+ Die `VarArgs` -Aufrufkonvention bei bestimmten Methodendefinitionen, die eine Variable Anzahl von Parametern akzeptieren verwendet wird. Eine Methode mit dem `VarArgs` -Aufrufkonvention wird keine Common Language Specification (CLS) kompatibel und kann nicht in verschiedenen Programmiersprachen zugegriffen werden.
 
- In c# ist die `VarArgs` -Aufrufkonvention wird verwendet, wenn die Parameterliste einer Methode mit endet die `__arglist` Schlüsselwort. Visual Basic unterstützt nicht die `VarArgs` Aufrufkonvention und Visual C++ können Sie dessen Verwendung nur in nicht verwaltetem Code, das die Ellipse verwendet `...` Notation.
+ In c# die `VarArgs` -Aufrufkonvention wird so lange verwendet, wenn die Parameterliste einer Methode endet die `__arglist` Schlüsselwort. Visual Basic unterstützt nicht die `VarArgs` Aufrufkonvention und Visual C++ können Sie die Verwendung nur in nicht verwaltetem Code, der die Ellipse verwendet `...` Notation.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel in c# zu beheben, verwenden Sie die [Params](/dotnet/csharp/language-reference/keywords/params) -Schlüsselwort anstelle von `__arglist`.
+ Um einen Verstoß gegen diese Regel in C# -Code zu beheben, verwenden die [Params](/dotnet/csharp/language-reference/keywords/params) -Schlüsselwort anstelle von `__arglist`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt zwei Methoden, die die Regel verletzt und eine, die die Regel erfüllt.
+ Das folgende Beispiel zeigt zwei Methoden, die gegen die Regel verstößt und eine, die die Regel erfüllt.
 
  [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Sprachenunabhängigkeit und sprachunabhängige Komponenten](/dotnet/standard/language-independence-and-language-independent-components)
+
+- <xref:System.Reflection.CallingConventions?displayProperty=fullName>
+- [Sprachunabhängigkeit und sprachunabhängige Komponenten](/dotnet/standard/language-independence-and-language-independent-components)

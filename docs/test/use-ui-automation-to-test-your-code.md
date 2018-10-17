@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381158"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371081"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -35,7 +35,7 @@ Wie in der folgenden Abbildung dargestellt, könnte es sich bei einer typischen 
 
 Das Erstellen eines Tests der programmierten UI ist einfach. Sie können den Test einfach manuell durchführen, während der **Generator für Tests der programmierten UI** im Hintergrund ausgeführt wird. Sie können außerdem angeben, welche Werte in bestimmten Feldern angezeigt werden sollen. Der **Generator für Tests der programmierten UI** zeichnet Ihre Aktionen auf und generiert entsprechenden Code. Nach dem Erstellen des Tests können Sie diesen in einem spezialisierten Editor bearbeiten und die Sequenz der Aktionen ändern.
 
-Alternativ können Sie aus einem Testfall, der in Microsoft Test Manager aufgezeichnet wurde, Code generieren. Weitere Informationen finden Sie unter [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](/vsts/test/mtm/record-play-back-manual-tests).
+Alternativ können Sie aus einem Testfall, der in Microsoft Test Manager aufgezeichnet wurde, Code generieren. Weitere Informationen finden Sie unter [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Mit dem spezialisierten Editor und **Generator für Tests der programmierten UI** können Sie einfach Tests der programmierten UI erstellen und bearbeiten, selbst wenn Ihr Hauptaugenmerk anstelle der Codierung auf Tests liegt. Wenn Sie jedoch Entwickler sind und den Test auf anspruchsvollere Weise erweitern möchten, bietet die einfache Struktur des Codes Möglichkeiten zum Kopieren und Anpassen. Sie können beispielsweise einen Test zu einem Kauf über eine Website aufzeichnen und den generierten Code anschließend bearbeiten, um eine Schleife zum Kaufen vieler Elemente hinzufügen.
 
@@ -437,11 +437,11 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 ## <a name="whats-next"></a>Ausblick
 
-**Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI direkt in Visual Studio ausführen, wie weiter oben in diesem Thema beschrieben. Zusätzlich können Sie automatisierte UI-Tests über den Microsoft Test Manager oder aus einem Team Foundation-Build ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
+**Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI direkt in Visual Studio ausführen, wie weiter oben in diesem Thema beschrieben. Außerdem können Sie automatisierte Benutzeroberflächentests mit Microsoft Test Manager oder Azure Pipelines ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
 
-- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Informationen zu manuellen Tests finden Sie unter [Run manual tests with Microsoft Test Manager (Ausführen manueller Tests mit Microsoft Test Manager)](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Weitere Informationen zu automatisierten Tests finden Sie unter [Testtools in Visual Studio](../test/improve-code-quality.md).
+Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Informationen zu manuellen Tests finden Sie unter [Run manual tests with Microsoft Test Manager (Ausführen manueller Tests mit Microsoft Test Manager)](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Weitere Informationen zu automatisierten Tests finden Sie unter [Testtools in Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Siehe auch
 

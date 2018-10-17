@@ -14,16 +14,21 @@ ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6ea87a1a84f5c9f527b0d0c2550093d8824152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e720bf4e0bd613b5f31b82e7c50084b1b6d3c1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899143"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548555"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Assemblys mit ComVisibleAttribute markieren
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
@@ -35,20 +40,22 @@ ms.locfileid: "31899143"
  Eine Assembly verfügt nicht über die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> angewendet werden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut bestimmt, wie COM-Clients für verwalteten Code zugreifen. Gute Entwurfsprinzipien verlangen, dass die COM-Sichtbarkeit durch Assemblys explizit angegeben wird. COM-Sichtbarkeit kann für eine gesamte Assembly festgelegt und anschließend für einzelne Typen und Typmember überschrieben werden. Wenn das Attribut nicht vorhanden ist, ist der Inhalt der Assembly für COM-Clients sichtbar.
+ Die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut bestimmt, wie COM-Clients für verwalteten Code zugreifen. Gute Entwurfsprinzipien verlangen, dass die COM-Sichtbarkeit durch Assemblys explizit angegeben wird. COM-Sichtbarkeit für eine gesamte Assembly festgelegt, und klicken Sie dann für einzelne Typen und Typmember überschrieben werden kann. Wenn das Attribut nicht vorhanden ist, sind die Inhalte der Assembly für COM-Clients sichtbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie das Attribut auf die Assembly hinzu. Wenn Sie nicht, dass die Assembly für COM-Clients sichtbar sein sollen möchten, wenden Sie das Attribut, und legen Sie dessen Wert auf `false`.
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie das Attribut auf die Assembly ein. Wenn Sie nicht, dass die Assembly für COM-Clients sichtbar ist möchten, wenden Sie das Attribut, und setzen ihren Wert auf `false`.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Wenn Sie die Assembly sichtbar sein soll, wenden Sie das Attribut, und legen Sie dessen Wert auf `true`.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel. Wenn Sie die Assembly sichtbar sein soll, wenden Sie das Attribut, und setzen ihren Wert auf `true`.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Assembly, die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut angewendet, um zu verhindern, dass er für COM-Clients nicht angezeigt.
+ Das folgende Beispiel zeigt eine Assembly, die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut angewendet, um zu verhindern, dass es für COM-Clients nicht angezeigt werden.
 
  [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
  [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- [Interoperation mit nicht verwaltetem Code](/dotnet/framework/interop/index) [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+
+- [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+- [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

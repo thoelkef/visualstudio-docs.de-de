@@ -14,16 +14,20 @@ ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7efc13eaee32662688593ff0cb94d9c0cb7a8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8629262da35b9897b789b2fae853bff4eea1aa8f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920082"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551730"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Markieren von ISerializable-Typen mit SerializableAttribute
+
 |||
 |-|-|
 |TypeName|MarkISerializableTypesWithSerializable|
@@ -32,19 +36,19 @@ ms.locfileid: "31920082"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ implementiert den <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle und der Typ ist nicht mit markiert die <xref:System.SerializableAttribute?displayProperty=fullName> Attribut. Die Regel ignoriert abgeleitete Typen, dessen Basistyp nicht serialisierbar ist.
+ Ein extern sichtbarer Typ implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> -Schnittstelle und der Typ ist nicht mit markiert die <xref:System.SerializableAttribute?displayProperty=fullName> Attribut. Die Regel ignoriert die abgeleitete Typen, dessen Basistyp nicht serialisierbar ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Um die von der common Language Runtime als serialisierbar erkannt werden, müssen mit dem Typen gekennzeichnet werden die <xref:System.SerializableAttribute> Attribut, selbst wenn der Typ eine benutzerdefinierte Serialisierungsroutine Implementierung verwendet die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle.
+ Um die von der common Language Runtime als serialisierbar erkannt werden, müssen Typen mit markiert werden die <xref:System.SerializableAttribute> Attribut, selbst wenn der Typ durch die Implementierung der eine benutzerdefinierte Serialisierungsroutine verwendet die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, gelten die <xref:System.SerializableAttribute> -Attribut auf den Typ.
+ Um einen Verstoß gegen diese Regel zu beheben, wenden die <xref:System.SerializableAttribute> -Attribut auf den Typ.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel für Ausnahmeklassen, da diese ordnungsgemäß funktioniert über Anwendungsdomänen hinweg serialisierbar sein müssen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel für Ausnahmeklassen nicht, da diese über Anwendungsdomänen hinweg ordnungsgemäße serialisierbar sein müssen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der die Regel verletzt. Heben Sie die auskommentierung der <xref:System.SerializableAttribute> -Attribut Zeile auf die Regel erfüllen.
+ Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt. Heben Sie die auskommentierung der <xref:System.SerializableAttribute> Attribut Zeile in der Regel entsprechen.
 
  [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
  [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]

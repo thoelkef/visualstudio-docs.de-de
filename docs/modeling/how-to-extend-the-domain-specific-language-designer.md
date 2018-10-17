@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176075"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860367"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 
@@ -68,19 +68,19 @@ Richten Sie ein Projekt, das den Code Ihrer Erweiterung enthält, und ein VSIX-P
 
 ## <a name="test-and-deployment"></a>Test und Bereitstellung
 
-Um eine der Erweiterungen in diesem Thema zu testen, erstellen Sie, und führen Sie die Projektmappe. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird geöffnet. Öffnen Sie in diesem Fall eine DSL-Projektmappe ein. Bearbeiten des Diagramms, DslDefinition an. Das Verhalten von Erweiterungen kann angezeigt werden.
+Um eine der Erweiterungen in diesem Thema zu testen, erstellen Sie, und führen Sie die Projektmappe. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen Sie in diesem Fall eine DSL-Projektmappe ein. Bearbeiten des Diagramms, DslDefinition an. Das Verhalten von Erweiterungen kann angezeigt werden.
 
-Die Erweiterungen für den Hauptknoten bereitstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], und auf andere Computer, gehen Sie folgendermaßen vor:
+Um die Erweiterungen zu den wichtigsten Visual Studio, und klicken Sie auf anderen Computern bereitzustellen, gehen Sie folgendermaßen vor:
 
 1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
 
 2.  Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.
 
-     Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.
+     Der Visual Studio-Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.
 
 Um die Erweiterung zu deinstallieren, gehen Sie folgendermaßen vor:
 
-1.  in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
 2.  Wählen Sie die Erweiterung, oder löschen.
 

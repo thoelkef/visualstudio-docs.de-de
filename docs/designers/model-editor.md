@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627072"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029133"
 ---
 # <a name="model-editor"></a>Modell-Editor
 
-In diesem Dokument wird beschrieben, wie Sie mit dem Visual Studio-Modell-Editor 3D-Modelle anzeigen, erstellen und ändern können.
+Dieses Dokument beschreibt, wie Sie mit dem Visual Studio-**Modell-Editor** 3D-Modelle anzeigen, erstellen und ändern können.
 
-Sie können den Modell-Editor verwenden, um einfache 3D-Modelle von Grund auf neu zu erstellen oder komplexere 3D-Modelle, die mithilfe vollwertiger 3D-Modellierungstools erstellt wurden, anzuzeigen und zu ändern. Der Modell-Editor unterstützt mehrere 3D-Modellformate, die bei der Entwicklung von DirectX-Apps verwendet werden.
+Sie können den **Modell-Editor** verwenden, um einfache 3D-Modelle von Grund auf neu zu erstellen oder komplexere 3D-Modelle, die mithilfe vollwertiger 3D-Modellierungstools erstellt wurden, anzuzeigen und zu ändern.
 
 ## <a name="supported-formats"></a>Unterstützte Formate
 
-Der Modell-Editor unterstützt folgende Modellformate:
+Der **Modell-Editor** unterstützt mehrere 3D-Modellformate, die bei der Entwicklung von DirectX-Apps verwendet werden:
 
 |Formatname|Dateierweiterung|Unterstützte Vorgänge (Anzeigen, Bearbeiten, Erstellen)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ Der Modell-Editor unterstützt folgende Modellformate:
 
 ## <a name="get-started"></a>Erste Schritte
 
-In diesem Abschnitt wird beschrieben, wie Sie Ihrem Visual Studio-Projekt ein 3D-Modell hinzufügen. Außerdem erhalten Sie grundlegende Informationen über die ersten Schritte bei der Erstellung von 3D-Modellen.
+In diesem Abschnitt erfahren Sie, wie Sie Ihrem Visual Studio C++-Projekt ein 3D-Modell hinzufügen und wie die ersten Schritte aussehen.
+
+> [!NOTE]
+> Die automatische Buildintegration von grafischen Elementen wie 3D-Szenen (FBX-Dateien) wird nur für C++-Projekte unterstützt.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>So fügen Sie Ihrem Projekt ein 3D-Modell hinzu
 
-1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Bild hinzufügen möchten, und wählen Sie anschließend **Hinzufügen** > **Neues Element** aus.
+1. Überprüfen Sie, ob die erforderliche Visual Studio-Komponente installiert ist, die Sie für die Verwendung von Grafiken benötigen. Die Komponente heißt **Bild- und 3D-Modell-Editoren**.
 
-2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** unter der Kategorie **Grafiken** auf **3D-Szene (.fbx)**.
+   Öffnen Sie für die Installation den Visual Studio-Installer, indem Sie in der Menüleiste **Tools** > **Tools und Features abrufen** auswählen und dann die Registerkarte **Einzelne Komponenten** auswählen. Wählen Sie in der Kategorie **Spiele und Grafiken** die Komponente **Bild- und 3D-Modell-Editoren** und dann **Ändern** aus.
+
+   ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
+
+   Die Installation der Komponente wird gestartet.
+
+2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des C++-Projekts aus, dem Sie das Bild hinzufügen möchten, und wählen Sie dann **Hinzufügen** > **Neues Element** aus.
+
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** unter der Kategorie **Grafiken** auf **3D-Szene (.fbx)**.
 
    ![Dialogfeld „Neues Element hinzufügen“ mit aktivierter 3D-Szene](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Wenn im Dialogfeld **Neues Element hinzufügen** nicht die Kategorie **Grafiken** angezeigt wird, müssen Sie möglicherweise die Komponente **Bild- und 3D-Modell-Editoren** installieren. Schließen Sie den Dialog, und klicken Sie in der Menüleiste auf **Extras** > **Get Tools and Features** (Extras und Features abrufen), um den **Visual Studio-Installer** herunterzuladen. Klicken Sie erst auf die Registerkarte **Einzelne Komponenten** und dann unter der Kategorie **Spiele und Grafiken** auf die Komponente **Bild- und 3D-Modell-Editoren**. Klicken Sie auf **Ändern**.
-   >
-   > ![Komponente „Bild- und 3D-Modell-Editoren“](media/image-3d-model-editors-component.png)
-   >
-   > Möglicherweise ist die Komponente **Bild- und 3D-Modell-Editoren** zwar installiert, jedoch wird die Vorlagenkategorie **Grafiken** trotzdem nicht angezeigt. Beachten Sie in diesem Fall, dass diese Kategorie nur für bestimmte Projekttypen wie Konsolenanwendungen angezeigt wird.
+   > Wenn die Kategorie **Grafiken** im Dialogfeld **Neues Element hinzufügen** nicht angezeigt wird, und die Komponente **Bild- und 3D-Modell-Editoren** installiert ist, werden grafische Elemente für Ihren Projekttyp nicht unterstützt.
 
-3. Geben Sie den **Namen** der Modelldatei ein, und klicken Sie auf **Hinzufügen**.
+4. Geben Sie den **Namen** der Modelldatei ein, und klicken Sie auf **Hinzufügen**.
 
 ### <a name="axis-orientation"></a>Achsenausrichtung
 
@@ -159,7 +166,7 @@ Sie können ein Objekt *transformieren*, indem Sie die Eigenschaften **Drehung**
 
 Sie können ein Objekt entweder mithilfe der Modellierungstools transformieren oder, indem Sie Eigenschaften festlegen.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>So transformieren Sie ein Objekt mithilfe der Modellingtools
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Transformieren von Objekten mit Modellingtools
 
 1. Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.
 
@@ -167,7 +174,7 @@ Sie können ein Objekt entweder mithilfe der Modellierungstools transformieren o
 
 3. Verwenden Sie den Manipulator, um die Transformation durchzuführen. Der Manipulator für Übersetzungs- und Skalierungstransformationen ist ein Achsenindikator. Sie können eine Achse nacheinander ändern oder, mithilfe des weißen Würfels in der Mitte des Indikators, alle Achsen gleichzeitig. Der Manipulator für Drehung ist eine Kugel aus farbcodierten Kreisen, entsprechend der x-Achse (rot), der y-Achse (grün) und der z-Achse (blau). Für eine gewünschte Drehung müssen Sie jede Achse einzeln ändern.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>So transformieren Sie ein Objekt durch Festlegen der Eigenschaften
+#### <a name="transform-an-object-by-setting-its-properties"></a>Transformieren von Objekten durch Festlegen der Eigenschaften
 
 1. Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.
 
@@ -196,7 +203,7 @@ Die Tools „Übersetzung“ und „Drehung“ lassen sich im lokalen Koordinate
 
 Sie können die Form eines 3D-Objekts ändern, indem Sie die Schnittpunkte, Ränder und Flächen verschieben oder löschen. Standardmäßig ist der Modell-Editor auf den *Objektmodus* eingestellt, damit Sie komplette Objekte auswählen und transformieren können. Wählen Sie Punkte, Ränder oder Flächen mithilfe des entsprechenden Auswahlmodus aus. Klicken Sie auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Selection modes** (Auswahlmodi), und wählen Sie dann den gewünschten Modus aus.
 
- Mithilfe von Extrusionen oder Unterteilungen können Sie zusätzliche Schnittpunkte erstellen. Extrusion dupliziert die Vertices einer Fläche (ein koplanarer Satz von Vertices), die durch die duplizierten Vertices verbunden bleiben. Mit Unterteilung werden Schnittpunkte hinzugefügt, um aus einer Fläche mehrere Flächen zu erstellen. Zum Erstellen der neuen Flächen werden neue Schnittpunkte hinzugefügt. Einer im Mittelpunkt der ursprünglichen Fläche und jeweils ein weiterer mitten auf jedem Rand. Sie werden dann mit den ursprünglichen Schnittpunkten verknüpft. Die Anzahl der hinzugefügten Flächen entspricht der Anzahl Rändern der ursprünglichen Fläche. In beiden Fällen können Sie die neuen Schnittpunkte übersetzen, drehen und anpassen, um die Geometrie des Objekts zu ändern.
+Mithilfe von Extrusionen oder Unterteilungen können Sie zusätzliche Schnittpunkte erstellen. Extrusion dupliziert die Vertices einer Fläche (ein koplanarer Satz von Vertices), die durch die duplizierten Vertices verbunden bleiben. Mit Unterteilung werden Schnittpunkte hinzugefügt, um aus einer Fläche mehrere Flächen zu erstellen. Zum Erstellen der neuen Flächen werden neue Schnittpunkte hinzugefügt. Einer im Mittelpunkt der ursprünglichen Fläche und jeweils ein weiterer mitten auf jedem Rand. Sie werden dann mit den ursprünglichen Schnittpunkten verknüpft. Die Anzahl der hinzugefügten Flächen entspricht der Anzahl Rändern der ursprünglichen Fläche. In beiden Fällen können Sie die neuen Schnittpunkte übersetzen, drehen und anpassen, um die Geometrie des Objekts zu ändern.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>So extrudieren Sie eine Fläche aus einem Objekt
 
@@ -210,21 +217,21 @@ Sie können die Form eines 3D-Objekts ändern, indem Sie die Schnittpunkte, Rän
 
 2. Wählen Sie in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Tools** > **Unterteilen** aus.
 
- Sie können Flächen auch triangulieren, Objekte zusammenfügen und ausgewählte Polygone in neue Objekte konvertieren. Triangulation erstellt zusätzliche Ränder, indem Flächen, die nicht dreieckig sind, in die optimale Anzahl von Dreiecken konvertiert werden. Es werden jedoch keine zusätzlichen geometrischen Details bereitgestellt. Zusammenführen kombiniert die ausgewählten Objekte in einem Objekt. Neue Objekte können aus einer Polygon-Auswahl erstellt werden.
+Sie können Flächen auch triangulieren, Objekte zusammenfügen und ausgewählte Polygone in neue Objekte konvertieren. Triangulation erstellt zusätzliche Ränder, indem Flächen, die nicht dreieckig sind, in die optimale Anzahl von Dreiecken konvertiert werden. Es werden jedoch keine zusätzlichen geometrischen Details bereitgestellt. Zusammenführen kombiniert die ausgewählten Objekte in einem Objekt. Neue Objekte können aus einer Polygon-Auswahl erstellt werden.
 
-#### <a name="to-triangulate-a-face"></a>So triangulieren Sie eine Fläche
+#### <a name="triangulate-a-face"></a>Triangulieren von Flächen
 
 1. Wählen Sie im Flächenauswahlmodus die Fläche aus, die Sie triangulieren möchten.
 
 2. Wählen Sie in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Tools** > **Triangulieren** aus.
 
-#### <a name="to-merge-objects"></a>So führen Sie Objekte zusammen
+#### <a name="merge-objects"></a>Zusammenführen von Objekten
 
 1. Wählen Sie im Modus "Objektauswahl" die Objekte, die Sie zusammenführen möchten.
 
 2. Wählen Sie in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Tools** > **Objekte zusammenführen** aus.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>So erstellen Sie ein Objekt aus einer Polygon-Auswahl
+#### <a name="create-an-object-from-a-polygon-selection"></a>Erstellen eines Objekts aus einer Polygonauswahl
 
 1. Wählen Sie im Flächenauswahlmodus die Fläche aus, aus der Sie in ein neues Objekt erstellen möchten.
 
@@ -268,13 +275,13 @@ Sie können Szenen wie eine Hierarchie von Objekten verwalten. Werden mehrere Ob
 
 Sie können eine Hierarchie von Objekten entweder erstellen, indem Sie eins davon als übergeordnetes Element festlegen oder indem Sie alle unter einem Platzhalterknoten, der als übergeordnetes Element auftritt, als gleichgeordnete Elemente gruppieren.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>So erstellen Sie eine Hierarchie mit übergeordnetem Objekt
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Erstellen einer Hierarchie mit übergeordneten Objekten
 
 1. Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Das erste Objekt, das Sie auswählen, wird zum übergeordneten Objekt.
 
 2. Wählen Sie in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Szenenverwaltung** > **Attach to Parent** (An übergeordnetes Element anfügen) aus.
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>So erstellen Sie eine Hierarchie gleichgeordneter Objekte
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Erstellen einer Hierarchie mit gleichgeordneten Objekten
 
 1. Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Ein Platzhalterobjekt wird erstellt und wird zum übergeordneten Objekt.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 1'
 description: Eine exemplarische Vorgehensweise zu Grundlagen von Flask im Kontext von Visual Studio-Projekten.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586403"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029065"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -36,7 +36,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 Im Zuge dieser Tutorialschritte erstellen Sie eine Visual Studio-Projektmappe, die drei unterschiedliche Projekte enthält. Sie erstellen das Projekt mithilfe verschiedener Flask-Projektvorlagen, die in Visual Studio enthalten sind. Da sich die Projekte in derselben Projektmappe befinden, können Sie einfach zwischen den unterschiedlichen Dateien hin- und herwechseln, um sie zu vergleichen.
 
 > [!Note]
-> Dieses Tutorial unterscheidet sich vom [Flask-Schnellstart](../ide/quickstart-python.md?context=visualstudio/python/default), in dem Sie einen tieferen Einblick in Flask erhalten sowie in die Verwendung der unterschiedlichen Flask-Projektvorlagen, die einen umfangreicheren Startpunkt für Ihre eigenen Projekte bereitstellen. Beispielsweise installieren die Projektvorlagen automatisch das Flask-Paket, wenn ein Projekt erstellt wird. Sie selbst müssen das Paket also nicht selbst installieren, so wie im Schnellstart gezeigt wird.
+> Dieses Tutorial unterscheidet sich vom [Flask-Schnellstart](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json), in dem Sie einen tieferen Einblick in Flask erhalten sowie in die Verwendung der unterschiedlichen Flask-Projektvorlagen, die einen umfangreicheren Startpunkt für Ihre eigenen Projekte bereitstellen. Beispielsweise installieren die Projektvorlagen automatisch das Flask-Paket, wenn ein Projekt erstellt wird. Sie selbst müssen das Paket also nicht selbst installieren, so wie im Schnellstart gezeigt wird.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -95,7 +95,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
     ![„Team Explorer“-Fenster für die Übertragung per Push in ein vorhandenes Remoterepository](media/flask/step01-push-to-github.png)
 
-    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Visual Studio Team Services übertragen** direkt in Visual Studio ein Repository erstellen.
+    Wenn Sie über kein vorhandenes Repository verfügen, können Sie über die Optionen **In GitHub veröffentlichen** und **Per Push in Azure DevOps übertragen** direkt in Visual Studio ein Repository erstellen.
 
 1. Machen Sie sich während der Arbeit mit diesem Tutorial mit der Verwendung der Steuerelemente zur Übertragung von Änderungen per Push oder per Commit in Visual Studio vertraut. Daran werden Sie in diesem Tutorial auch zu geeigneter Zeit erinnert.
 

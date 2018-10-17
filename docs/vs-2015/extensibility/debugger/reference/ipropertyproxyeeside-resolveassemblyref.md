@@ -1,0 +1,80 @@
+---
+title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::ResolveAssemblyRef
+helpviewer_keywords:
+- IPropertyProxyEESide::ResolveAssemblyRef
+ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
+caps.latest.revision: 13
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 06ea7d3140c293630d380aa5d4682cc17e861042
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222936"
+---
+# <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+Bestimmt die Position des angegebenen verwalteten Assemblyverweises.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT ResolveAssemblyRef(  
+   BSTR*                  assemName,  
+   IEEDataStorage**       assemBytes,  
+   IEEDataStorage**       assemPdb,  
+   BSTR*                  assemLocation,  
+   ASSEMBLYLOCRESOLUTION* alr  
+);  
+```  
+  
+```csharp  
+int ResolveAssemblyRef(  
+   ref string                     assemName,  
+   out IEEDataStorage             assemBytes,  
+   out IEEDataStorage             assemPdb,  
+   out string                     assemLocation,  
+   out enum_ASSEMBLYLOCRESOLUTION alr  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `assemName`  
+ [in] Der Name der Assembly auflösen.  
+  
+ `assemBytes`  
+ [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, enthält die Assemblybytes, die dem Verweis zugeordnet.  
+  
+ `assemPdb`  
+ [out] Gibt eine `IEEDataStorage` -Objekt, das das Symbol enthält Daten, die mit dieser Anforderung verknüpfte speichern.  
+  
+ `assemLocation`  
+ [out] Gibt den Speicherort des dieses Verweises zurück.  
+  
+ `alr`  
+ [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, der angibt, der des Speicherortes der Assembly des Verweises.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist nicht in der Regel von einem benutzerdefinierten ausdrucksauswertung implementiert.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
+ [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
+ [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
+

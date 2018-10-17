@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668928"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-Die „VSPerfCmd.exe“-Option **Sys** legt das Profilerstellungereignis fest, für das ein Sampling für Aufrufereignisse (Funktionsaufrufe des Betriebssystems der Anwendung mit einem Profil) durchgeführt werden soll, und ändert optional die Anzahl der Systemaufrufe (standardmäßig 10) in einem Samplingintervall.  
+Die *VSPerfCmd.exe*-Option **Sys** legt das Profilerstellungsereignis fest, für das ein Sampling für Aufrufereignisse (Funktionsaufrufe des Betriebssystems der Anwendung mit einem Profil) durchgeführt werden soll, und ändert optional die Anzahl der Systemaufrufe (standardmäßig 10) in einem Samplingintervall.  
   
  **Sys** kann nur in einer Befehlszeile verwendet werden, die auch die Optionen **Launch** (Starten) und **Attach** (Anfügen) enthält.  
   
@@ -71,4 +72,4 @@ VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

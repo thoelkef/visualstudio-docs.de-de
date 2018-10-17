@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0378d4c8c021cb47362220b49c8d7cb5a4ebc82
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2a90d7d900054ee1ba8dec1a278d37d5898985dd
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079786"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495426"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Verwenden Sie den TextManager zum Überwachen von globaler Einstellungen
 Wenn Sie einen Kern-Editor implementieren, müssen Sie die Änderungen, die an globale Einstellungen vorgenommen werden überwachen, da diese Änderungen auf Ihre Instanz des Editors auswirken können. Sie können die Änderungen verfolgen, durch Lauschen auf Ereignisse, die durch den TextManager ausgelöst. Beispielsweise, wenn Sie eine globale Einstellung für die Darstellung oder das Verhalten einer Komponente in der Kern-Editor, z. B. die dokumentendatenobjekt, angeben TextManager speichert diese Informationen und wird für alle betroffenen Clients kommuniziert.  
@@ -43,4 +43,4 @@ Wenn Sie einen Kern-Editor implementieren, müssen Sie die Änderungen, die an g
   
 ## <a name="see-also"></a>Siehe auch  
  [In der Kern-editor](../extensibility/inside-the-core-editor.md)   
- [Editor-Funktionen](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+ [Editor-Funktionen](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

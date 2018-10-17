@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267801"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668610"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analysieren der Netzwerkauslastung in UWP-Apps
 Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.Web.Http-API](/uwp/api/windows.web.http) Daten zu Netzwerkoperationen. Durch Analysieren der Daten können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung in den Griff bekommen.  
@@ -77,4 +77,4 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
  [Visual Studio-Blog: Einführung in den Netzwerk-Inspektor von Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

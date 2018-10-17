@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 481f03cc9f1699a794c0f34159afd7faa6a50c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4df271f5427d005ef94c4c09d6c0a1eb05c850b0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915065"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548863"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Sichtbare Ereignishandler überprüfen
+
 |||
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
@@ -35,32 +36,34 @@ ms.locfileid: "31915065"
  Eine öffentliche oder geschützte Ereignisbehandlungsmethode wurde erkannt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine extern sichtbare Methode für die Ereignisbehandlung präsentiert ein Sicherheitsproblem, die Überprüfung erfordert.
+ Eine extern sichtbare Methode für die Ereignisbehandlung stellt ein Sicherheitsproblem, das eine Überprüfung erforderlich ist.
 
- Ereignisbehandlungsmethoden sollten nur dann verfügbar gemacht werden, wenn dies absolut notwendig ist. Ein Ereignishandler, ein Delegattyp, der verfügbar gemachte Methode aufruft, kann zu jedem beliebigen Ereignis hinzugefügt werden, solange die Signaturen für Ereignishandler und Ereignis übereinstimmen. Ereignisse können von jedem Code ausgelöst werden und häufig von absolut vertrauenswürdigen Systemcode Reaktion auf Benutzeraktionen wie das Klicken auf eine Schaltfläche ausgelöst werden. Eine Ereignisbehandlungsmethode eine sicherheitsüberprüfung hinzugefügt wird nicht verhindert Code registrieren einen Ereignishandler, der die Methode aufruft.
+Ereignisbehandlungsmethoden nicht verfügbar, es sei denn, absolut notwendig. Ein Ereignishandler, der ein Delegattyp, der verfügbar gemachte Methode aufruft kann zu jedem beliebigen Ereignis hinzugefügt werden, solange die Signaturen für Ereignishandler und Ereignis übereinstimmen. Ereignisse können von jedem Code ausgelöst werden und werden häufig von hochgradig vertrauenswürdigen Systemcode als Reaktion auf Benutzeraktionen wie das Klicken auf eine Schaltfläche ausgelöst. Hinzufügen eine sicherheitsüberprüfung auf eine Methode zur Verarbeitung von Ereignissen verhindert nicht Code aus der Registrierung eines ereignishandlers, das die Methode aufruft.
 
- Eine Anforderung kann keine Methode aufgerufen, indem ein Ereignishandler zuverlässig geschützt werden. Security fordert Hilfe Code von nicht vertrauenswürdigen Aufrufern zu schützen, mithilfe der Aufrufer in der Aufrufliste. Code, der ein Ereignis einen Ereignishandler hinzugefügt ist nicht unbedingt in der Aufrufliste vorhanden, wenn der Ereignishandler Methoden ausführen. Aus diesem Grund die Aufrufliste möglicherweise nur hoch vertrauenswürdige Aufrufer, wenn die Ereignishandlermethode aufgerufen wird. Dies bewirkt, dass Anforderungen, die durch die Ereignishandlermethode vorgenommen wird, erfolgreich ausgeführt werden kann. Darüber hinaus kann die geforderte Berechtigung übergeben werden, wenn die Methode aufgerufen wird. Aus diesen Gründen kann das Risiko eines nicht korrigieren und einen Verstoß gegen diese Regel nur nach dem Überprüfen der Ereignisbehandlungsmethode bewertet werden. Wenn Sie den Code überprüfen, sollten Sie die folgenden Probleme:
+ Eine Anforderung kann nicht zuverlässig zu schützen eine Methode, die von einem Ereignishandler aufgerufen. Sicherheit fordert Hilfe durch Untersuchen der Aufrufer in der Aufrufliste Code aus nicht vertrauenswürdigen Aufrufern zu schützen. Code, der ein Ereignis einen Ereignishandler hinzugefügt ist nicht unbedingt in der Aufrufliste vorhanden, wenn es sich bei der Ereignishandler Methoden ausgeführt werden. Aus diesem Grund die Aufrufliste möglicherweise nur sehr vertrauenswürdige Aufrufer, wenn die Ereignishandlermethode aufgerufen wird. Dies bewirkt, dass Anforderungen, die von der Ereignishandlermethode für erfolgreich ausgeführt werden. Darüber hinaus kann die geforderte Berechtigung übergeben werden, wenn die Methode aufgerufen wird. Aus diesen Gründen kann das Risiko nicht beheben einen Verstoß gegen diese Regel nur nach dem Überprüfen der Ereignisbehandlungsmethode bewertet werden. Wenn Sie den Code überprüfen, die folgenden Punkte:
 
--   Möglich Ihre Ereignishandler keine Vorgänge, die gefährliche oder ausgenutzt werden können, z. B. die Assertion der Berechtigungen oder Unterdrücken von nicht verwaltetem Code eine Berechtigung sind?
+- Führt Ihr Ereignishandler alle Vorgänge, die gefährliche oder ausgenutzt werden können, z. B. berechtigungserteilung oder Unterdrücken von nicht verwaltetem Codeberechtigung sind?
 
--   Was die Sicherheitsrisiken zu und von Ihrem Code sind, da es zu einem beliebigen Zeitpunkt mit nur hoch ausgeführt werden kann, vertrauenswürdige Aufrufer auf dem Stapel?
+- Gibt den Sicherheitsrisiken, die in und aus Ihrem Code, da es zu einem beliebigen Zeitpunkt mit hoher nur ausgeführt werden kann, vertrauenswürdige Aufrufer auf dem Stapel?
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Methode, und die folgenden ausgewertet:
+ Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Methode aus, und bewerten Sie die folgenden:
 
--   Können Sie die Ereignisbehandlungsmethode nicht öffentlichen vornehmen?
+- Können Sie die Methode zur Verarbeitung von Ereignissen nicht öffentlichen vornehmen?
 
--   Können Sie alle gefährliche Funktionen aus der Ereignishandler verschieben?
+- Können Sie alle gefährlichen Funktionalität aus den Ereignishandler verschieben?
 
--   Wenn eine sicherheitsforderung erzwungen wird, kann dies auf eine andere Weise werden erreicht?
+- Wenn eine sicherheitsforderung festgelegt wurde, kann dies auf andere Weise werden erreicht?
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel erst nach einer sorgfältigen sicherheitsreview, um sicherzustellen, dass Ihr Code kein Sicherheitsrisiko.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel erst nach einer sorgfältigen sicherheitsreview, um sicherzustellen, dass Ihr Code kein Sicherheitsrisiko darstellt.
 
 ## <a name="example"></a>Beispiel
- Der folgende Code zeigt eine Ereignisbehandlungsmethode, die durch bösartigen Code missbraucht werden kann.
+ Der folgende Code zeigt eine Ereignisbehandlung-Methode, die durch bösartigen Code missbraucht werden kann.
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
+
+- <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>
+- <xref:System.EventArgs?displayProperty=fullName>

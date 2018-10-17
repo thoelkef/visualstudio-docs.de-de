@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73a2257174199a574e3be7566eb0c2631310cd7
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231094"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074116"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.
 Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine passende Instanz des Visual Studio-Remotedebugmonitors finden konnte. Der Visual Studio-Remotedebugmonitor muss installiert werden, damit das Remotedebuggen funktioniert. Informationen zum Herunterladen und Einrichten des Remotedebuggers finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
@@ -30,7 +30,7 @@ Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine pa
 >  Wenn Sie glauben, Sie diese Meldung aufgrund eines Produktfehlers erhalten haben dass, wenden Sie [melden Sie das Problem in Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Ich habe diese Meldung beim Debuggen in Visual Studio 2010 oder einer früheren Version erhalten  
- Wenn Sie Visual Studio 2010 oder eine frühere Version von Visual Studio verwenden, kann dieser Fehler auch darauf hinweisen, dass die Datei- und Druckerfreigabe nicht aktiviert ist. Weitere Informationen zu diesem Problem finden, finden Sie in der Visual Studio 2010-Version dieser Dokumentation: [Fehler: der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON. EXE-Datei) wird nicht angezeigt, auf dem Remotecomputer ausgeführt werden. – Visual Studio 2010](https://msdn.microsoft.com/en-us/library/ms164726\(v=vs.100\).aspx)  
+ Wenn Sie Visual Studio 2010 oder eine frühere Version von Visual Studio verwenden, kann dieser Fehler auch darauf hinweisen, dass die Datei- und Druckerfreigabe nicht aktiviert ist. Weitere Informationen zu diesem Problem finden, finden Sie in der Visual Studio 2010-Version dieser Dokumentation: [Fehler: der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON. EXE-Datei) wird nicht angezeigt, auf dem Remotecomputer ausgeführt werden. – Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Ich habe diese Meldung beim lokalen Debuggen erhalten  
  Wenn Sie diese Meldung beim lokalen Debuggen erhalten, kann dies an Ihrer Antivirussoftware oder einer Drittanbieter-Firewall liegen. Visual Studio ist eine 32-Bit-Anwendung, die zum Debuggen von 64-Bit-Anwendungen die 64-Bit-Version des Remotedebuggers verwendet. Die beiden Prozesse kommunizieren über das lokale Netzwerk innerhalb des lokalen Computers. Kein Datenverkehr verlässt den Computer, aber es ist möglich, dass Drittanbieter-Sicherheitssoftware die Kommunikation blockiert.  
@@ -38,13 +38,13 @@ Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine pa
  In den folgenden Abschnitten sind einige andere Gründe aufgelistet, warum Sie diese Meldung erhalten haben und wie Sie das Problem beheben können.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>Der Remotecomputer ist nicht erreichbar.  
- Versuchen Sie, eine [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) -Anforderung an den Remotecomputer zu senden. Wenn sie auf die Ping-Nachricht Antworten nicht, nicht die Remotetools keine Verbindung herstellen. Versuchen Sie, den Remotecomputer neu zu starten, und stellen Sie sicher, dass er ordnungsgemäß im Netzwerk konfiguriert ist.  
+ Versuchen Sie, eine [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) -Anforderung an den Remotecomputer zu senden. Wenn sie auf die Ping-Nachricht Antworten nicht, nicht die Remotetools keine Verbindung herstellen. Versuchen Sie, den Remotecomputer neu zu starten, und stellen Sie sicher, dass er ordnungsgemäß im Netzwerk konfiguriert ist.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Die Version des Remotedebuggers stimmt nicht mit die Version von Visual Studio überein.  
  Die lokal ausgeführte Version von Visual Studio muss mit der Version des Remotedebugmonitors übereinstimmen, der auf dem Remotecomputer ausgeführt wird. Um dieses Problem zu beheben, laden Sie die passende Version des Remotedebugmonitors herunter, und installieren Sie sie. Wechseln Sie zum [Download Center](http://www.microsoft.com/en-us/download) , um die richtige Version des Remotedebuggers zu finden.  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Der lokale Computer und der Remotecomputer weisen unterschiedliche Authentifizierungsmodi auf  
- Der lokale Computer und der Remotecomputer müssen den gleichen Authentifizierungsmodus verwenden. Um dieses Problem zu beheben, müssen Sie sicherstellen, dass beide Computer den gleichen Authentifizierungsmodus verwenden. Weitere Informationen zu den Authentifizierungsmodi finden Sie unter [Übersicht über die Windows-Authentifizierung](https://technet.microsoft.com/en-us/library/hh831472.aspx).  
+ Der lokale Computer und der Remotecomputer müssen den gleichen Authentifizierungsmodus verwenden. Um dieses Problem zu beheben, müssen Sie sicherstellen, dass beide Computer den gleichen Authentifizierungsmodus verwenden. Weitere Informationen zu den Authentifizierungsmodi finden Sie unter [Übersicht über die Windows-Authentifizierung](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Der Remotedebugger wird unter einem anderen Benutzerkonto ausgeführt  
  Mit einer der folgenden Möglichkeiten können Sie dieses Problem beheben:  

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626631"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548230"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“
 
@@ -118,7 +118,7 @@ Wie Sie sehen, hat eine „Umfrage“ eine Beschreibung im Feld `text` und ein V
 
 Die vollständige Liste der Feldtypen ist `CharField` (begrenzter Text) `TextField` (unbegrenzter Text), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` und `ManyToMany`. Jedes Feld hat einige Attribute, wie z.B. `max_length`. Das Attribut `blank=True` bedeutet, dass das Feld optional ist. `null=true` bedeutet, dass ein Wert optional ist. Es gibt auch ein Attribut `choices`, das die Werte auf Werte in einem Array von Datenwert/Anzeigewert-Tupeln beschränkt. (Weitere Informationen finden Sie unter [Model field reference (Modellfeldverweis)](https://docs.djangoproject.com/en/2.0/ref/models/fields/) in der Django-Dokumentation.)
 
-Sie können genau bestätigen, was in der Datenbank gespeichert wird, indem Sie die Datei *db.sqlite3* im Projekt mithilfe eines Tools wie dem [SQLite-Browser](http://sqlitebrowser.org/) untersuchen. In der Datenbank sehen Sie, dass ein Fremdschlüsselfeld wie `poll` im Auswahlmodell als `poll_id` gespeichert ist. Django verarbeitet die Zuordnung automatisch.
+Sie können genau bestätigen, was in der Datenbank gespeichert wird, indem Sie die Datei *db.sqlite3* im Projekt mithilfe eines Tools wie dem [SQLite-Browser](https://sqlitebrowser.org/) untersuchen. In der Datenbank sehen Sie, dass ein Fremdschlüsselfeld wie `poll` im Auswahlmodell als `poll_id` gespeichert ist. Django verarbeitet die Zuordnung automatisch.
 
 Wenn Sie mit Ihrer Datenbank in Django arbeiten, bedeutet dies normalerweise, dass Sie ausschließlich über Ihre Modelle arbeiten, sodass Django die zugrunde liegende Datenbank in Ihrem Namen verwalten kann.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu überzeugen, dass noch keine App vorhanden ist. Besuchen Sie dann die „/seed“-URL. Wenn die App zur Startseite zurückkehrt, sollten Sie feststellen, dass die Umfragen nun verfügbar sind. Sie können hier die unformatierte Datei *db.sqlite3* mit einem Tool wie dem [SQLite-Browser](http://sqlitebrowser.org/) untersuchen.
+Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu überzeugen, dass noch keine App vorhanden ist. Besuchen Sie dann die „/seed“-URL. Wenn die App zur Startseite zurückkehrt, sollten Sie feststellen, dass die Umfragen nun verfügbar sind. Sie können hier die unformatierte Datei *db.sqlite3* mit einem Tool wie dem [SQLite-Browser](https://sqlitebrowser.org/) untersuchen.
 
 ![App „Fragt ein Django-Webprojekt ab“ mit einer per Seeding hinzugefügten Datenbank](media/django/step06-app-with-seeded-database.png)
 
@@ -376,8 +376,8 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Ändern Sie die App von SQLite in einen Datenspeicher auf Produktionsebene, wie z.B. MySQL, PostgreSQL und SQL Server (können alle in Azure gehostet werden). Wie in [When to use SQLite (Empfohlene Verwendung von SQLite)](https://www.sqlite.org/whentouse.html) (sqlite.org) beschrieben, ist SQLite hervorragend für Standorte mit niedrigem bis mittleren Verkehrsaufkommen und weniger als 100.000 Treffern/Tag geeignet, wird aber bei einem höheren Verkehrsaufkommen nicht empfohlen. Da SQLite zudem auf einen einzelnen Computer beschränkt ist, kann es nicht in jedem Szenario mit mehreren Servern, z.B. Lastenausgleich und geografische Replikation, verwendet werden. Informationen über die Unterstützung von Django für andere Datenbanken finden Sie unter [Database setup (Datenbankeinrichtung)](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Sie können auch die [Azure SDK für Python](azure-sdk-for-python.md) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs zu arbeiten.
 
-- Richten Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) auf einem Dienst wie Visual Studio Team Services (VSTS) ein. Zusätzlich zum Arbeiten mit dem Datenquellen-Steuerelement (in VSTS, GitHub oder anderweitig) können Sie VSTS automatisch Ihre Komponententests als Voraussetzung für die Freigabe ausführen lassen und die Pipeline so konfigurieren, dass sie vor der Bereitstellung in der Produktionsumgebung auf einem Stagingserver bereitstellt, um weitere Tests zu ermöglichen. VSTS wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter:
+- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure Pipelines ein. Zusätzlich zum Arbeiten mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie Azure Test Plans automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps Services ist zudem in Überwachungslösungen wie z.B. App Insights integriert und ergänzt den Gesamtzyklus um agile Planungstools. Weitere Informationen finden Sie unter:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-CD-Pipeline für Python mit dem Azure-DevOps-Projekt)](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Create a CI/CD pipeline for Python with Azure DevOps Projects (Erstellen einer CI-/CD-Pipeline für Python mit Azure DevOps Projects)](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Python development in Azure with Visual Studio Team Services (Python-Entwicklung in Azure mit Visual Studio Team Services) (Video, 11 Min. 21 Sek.)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

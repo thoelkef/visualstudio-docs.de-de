@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd52c97d78c4b2b08244e7f4a8f626a536c8d04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668703"
 ---
-# <a name="saving-and-exporting-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
-Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungsdaten enthalten.  
+# <a name="save-and-export-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
+In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien beschrieben.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Vorgehensweise: Speichern von Leistungsdatendateien als analysierte Berichtsdateien  
- Sie können gefilterte oder ungefilterte Ansichten der Profilerstellungsdaten-Dateien (.vsp) als analysierte Berichtsdateien (.vsps) speichern. Eine analysierte Berichtsdatei kann im Berichtsansichtsfenster angezeigt werden und ist erheblich kleiner als die ursprüngliche VSP-Datei. Sie können jedoch keine Filter auf die Daten einer VSPS-Datei anwenden. Sie können über den Leistungs-Explorer eine analysierte Berichtsdatei erstellen, ohne die Datei in der integrierten Entwicklungsumgebung (integrated development environment; IDE) zu müssen, oder Sie öffnen und filtern die VSP-Datei und speichern anschließend die Ergebnisse.  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Vorgehensweise: Speichern von Leistungsdatendateien als analysierte Berichtsdateien  
+ Sie können gefilterte oder ungefilterte Ansichten der Profilerstellungs-Datendateien (*VSP*) als analysierte Berichtsdateien (*VSPS*) speichern. Eine analysierte Berichtsdatei kann im Berichtsansichtsfenster angezeigt werden und ist erheblich kleiner als die ursprüngliche *VSP*-Datei. Sie können jedoch keine Filter auf die Daten einer *VSPS*-Datei anwenden. Sie können über den Leistungs-Explorer eine analysierte Berichtsdatei erstellen, ohne die Datei in der integrierten Entwicklungsumgebung (IDE) öffnen zu müssen, oder Sie öffnen und filtern die *VSP*-Datei und speichern anschließend die Ergebnisse.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Speichern eines analysierten Leistungsberichts über den Leistungs-Explorer  
   
@@ -34,9 +35,9 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Speichern eines analysierten Leistungsberichts über das Fenster „Berichtsansicht“  
   
-1.  Öffnen Sie die Profilerstellungs-Datendatei (.vsp) im Fenster „Berichtsansicht“.  
+1.  Öffnen Sie die Profilerstellungs-Datendatei (*VSP*) im Berichtsansichtsfenster.  
   
-2.  (Optional) Wenden Sie einen Filter auf die Daten an. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtansicht](../profiling/performance-report-view-filter.md).  
+2.  (Optional) Wenden Sie einen Filter auf die Daten an. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtsansicht](../profiling/performance-report-view-filter.md).  
   
 3.  Klicken Sie auf der Symbolleiste der Berichtsanzeige auf **Analysierte Daten speichern** .  
   
@@ -44,8 +45,8 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 5.  Klicken Sie auf **Speichern**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren Berichte für Profilerstellungstools zu einer XML- oder CSV-Datei  
- Sie können eine oder mehrere Berichtsansichten aus einer VSP-Datei oder einer VSP-Profilerstellungsdatendatei als eine durch Trennzeichen getrennte Datei oder als XML-Datei exportieren. Sie können die Daten im Fenster „Berichtsansicht“ filtern, bevor Sie exportieren, oder Sie können Berichtsansichten der gesamten Datendatei aus dem Fenster **Leistungs-Explorer** exportieren.  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren von Berichten der Profilerstellungstools in eine XML- oder CSV-Datei  
+ Sie können eine oder mehrere Berichtsansichten aus einer *VSP*-Datei oder einer *VSPS*-Profilerstellungs-Datendatei als eine durch Trennzeichen getrennte Datei oder als XML-Datei exportieren. Sie können die Daten im Fenster „Berichtsansicht“ filtern, bevor Sie exportieren, oder Sie können Berichtsansichten der gesamten Datendatei aus dem Fenster **Leistungs-Explorer** exportieren.  
   
 > [!NOTE]
 >  Sie können auch ausgewählte Zeilen aus dem Fenster „Berichtsanzeige“ als durch Tabstopps getrennte Werte kopieren und einfügen.  
@@ -70,9 +71,9 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>So exportieren Sie Leistungsberichte aus dem Fenster „Berichtsansicht“  
   
-1.  Öffnen Sie die VSP-Datei im Fenster „Berichtsansicht“.  
+1.  Öffnen Sie die *VSP*-Datei im Berichtsansichtsfenster.  
   
-2.  (Optional) Wenden Sie einen Filter auf die Daten an. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtansicht](../profiling/performance-report-view-filter.md).  
+2.  (Optional) Wenden Sie einen Filter auf die Daten an. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtsansicht](../profiling/performance-report-view-filter.md).  
   
 3.  Klicken Sie auf der Symbolleiste der Berichtsanzeige auf **Bericht exportieren** .  
   

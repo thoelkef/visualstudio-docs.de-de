@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281454"
+ms.locfileid: "44321098"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 
@@ -60,7 +60,7 @@ Um eine benutzerdefinierte Regel für ein Azure DevOps-Projekt zu erstellen, Sie
 
 1. In **Quellcodeverwaltungs-Explorer**mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann auf **Elemente zu Ordner hinzufügen**.
 
-     Weitere Informationen finden Sie unter [Git und Azure-Repositorys](/azure/devops/repos/git/overview).
+     Weitere Informationen finden Sie unter [Git und Azure-Repositorys](/azure/devops/repos/git/overview?view=vsts).
 
 2. Klicken Sie auf den Regelsatz-Datei, die Sie erstellt haben, und klicken Sie dann auf **Fertig stellen**.
 

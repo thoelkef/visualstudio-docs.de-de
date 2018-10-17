@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: d60603ae9a94e843920f00dc8c8fc2ebb40c8861
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138764"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168382"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
-Wir haben nicht nur das Personalisieren von Visual Studio entsprechend Ihren Aufgaben erleichtert, sondern haben es außerdem für Sie einfacher gemacht, Visual Studio anzupassen. Hierzu starten Sie den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
+Wir haben nicht nur das Personalisieren von Visual Studio erleichtert, um den Dienst entsprechend Ihren Aufgaben einzurichten, sondern auch die generelle Anpassung von Visual Studio. Hierzu starten Sie den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
 
 Gehen Sie folgendermaßen vor:
 

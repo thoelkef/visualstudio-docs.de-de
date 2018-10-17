@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280558"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283157"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
@@ -26,12 +26,12 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 1.  Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um Ihren Parasoft Virtualize/SOAtest Professional Desktop-Vorteil zu nutzen.
 
 2.  Suchen Sie im Abschnitt „Tools“ die Kachel „Parasoft“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-
-    ![Kachel „Parasoft-Vorteil“](_img\vs-parasoft\vs-parasoft-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „Parasoft“](_img\vs-parasoft\vs-parasoft-tile.png)
 
 2.  Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**.
-
-    ![Parasoft-Vorteil: Konto erstellen](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Parasoft-Vorteil: Konto erstellen](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Sobald Sie ein Konto erstellt haben, wird Ihnen eine Benachrichtigung angezeigt, dass die Anweisungen zum Herunterladen Ihnen per E-Mail gesendet wurden.  (Denken Sie daran, Ihren Spamordner oder Junk-E-Mail-Ordner zu überprüfen, wenn die E-Mail in Ihrem Posteingang nicht angezeigt wird.)
@@ -39,8 +39,8 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 4.  Öffnen Sie die E-Mail, und kopieren Sie den **Aktivierungscode** in die Zwischenablage.
 
 5.  Klicken Sie auf den Link, der Ihrem Betriebssystem entspricht.
-
-    ![Parasoft-Vorteil: Begrüßungs-E-Mail](_img\vs-parasoft\vs-parasoft-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Parasoft-Vorteil: Begrüßungs-E-Mail](_img\vs-parasoft\vs-parasoft-email.png)
 
 6.  Je nachdem, welchen Browser Sie verwenden, können Ihnen unterschiedliche Dialogfelder angezeigt werden, über die Sie den Installer ausführen können.  In Internet Explorer wird Ihnen beispielsweise eine Liste der letzten Downloads angezeigt, bei der „parasoft_soavirt_9.10.2_win32_x86_64.exe“ ganz oben aufgeführt ist. Klicken Sie auf **Ausführen**, um den Installer zu starten.
 
@@ -49,8 +49,8 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 8.  Wählen Sie die gewünschte Sprache aus, und klicken Sie auf **OK**.
 
 9.  Der Parasoft Virtualize/SOAtest-Setup-Assistent wird gestartet.  Klicken Sie auf **Weiter**.
-
-    ![Parasoft-Vorteil: Installation starten](_img\vs-parasoft\vs-parasoft-start-install.png)
+    > [!div class="mx-imgBorder"]
+    >![Parasoft-Vorteil: Installation starten](_img\vs-parasoft\vs-parasoft-start-install.png)
 
 10. Klicken Sie auf **Ich stimme der Vereinbarung zu**, und klicken Sie dann auf **Weiter**.
 
@@ -61,14 +61,14 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 13. Geben Sie an, wo die Verknüpfung für die Anwendung installiert werden soll, und klicken Sie auf **Weiter**.
 
 14. Das SOAtest-Webstammzertifikat der Zertifizierungsstelle ist für bestimmte Funktionstests auf HTTPS-Websites erforderlich.  Wählen Sie aus, ob Sie das Stammzertifikat der Zertifizierungsstelle installieren möchten, und klicken Sie auf **Weiter**.
-
-    ![Parasoft-Vorteil: Stammzertifikat der Zertifizierungsstelle](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
+    > [!div class="mx-imgBorder"]
+    > ![Parasoft-Vorteil: Stammzertifikat der Zertifizierungsstelle](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
 15. Wählen Sie aus, ob während der Installation Desktop- oder Schnellstartsymbole erstellt werden sollen, und klicken Sie auf **Weiter**.
 
 16. Bestätigen Sie die Optionen, die Sie ausgewählt haben, und klicken Sie auf **Installieren**, um mit dem Installieren der Software zu beginnen.
-
-    ![Parasoft-Vorteil: Bereit für die Installation](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![Parasoft-Vorteil: Bereit für die Installation](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
 17. Wenn das Setup abgeschlossen wurde, klicken Sie auf **Fertig stellen**. Sie können nun mit der Verwendung des Parasoft Virtualize/SOAtest Professional Desktop-Vorteils beginnen.
 
@@ -91,4 +91,4 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
     - Technischer Support: https://www.parasoft.com/support/
     - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

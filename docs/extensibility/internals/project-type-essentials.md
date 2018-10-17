@@ -1,5 +1,5 @@
 ---
-title: Projekt Typ Essentials | Microsoft Docs
+title: Grundlagen zu Projekt | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e12081c34b57ae10e57352139e0e0cccf60b6b8
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134420"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495777"
 ---
-# <a name="project-type-essentials"></a>Projekt Typ Essentials
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält einige Projekttypen für Sprachen wie z. B. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Außerdem können Sie eigene Projekttypen erstellen.  
+# <a name="project-type-essentials"></a>Grundlagen zu Projekttypen
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält einige Projekttypen für Sprachen wie z. B. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Außerdem können Sie eigene Projekttypen zu erstellen.  
   
- Wenn Sie nur benutzerdefinierte Befehle, Editoren und Toolfenster, hinzufügen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], können Sie dies tun, ohne einen neuen Projekttyp erstellen. Weitere Informationen finden Sie unter den folgenden Themen:  
+ Wenn Sie nur benutzerdefinierte Befehle, Editoren oder Toolfenster, hinzufügen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], können Sie dies tun, ohne dass einen neuer Projekttyp erstellt. Weitere Informationen finden Sie unter den folgenden Themen:  
   
 -   [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
@@ -31,9 +31,9 @@ ms.locfileid: "31134420"
   
 -   [Erweitern und Anpassen von Toolfenstern](../../extensibility/extending-and-customizing-tool-windows.md)  
   
- Ebenso, wenn Sie das Verhalten des angegebenen anpassen möchten [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen, erreichen Sie mit Project Untertypen. Weitere Informationen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).  
+ Ebenso sollten Sie das Verhalten des angegebenen anpassen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen möglich Projektuntertypen verwenden. Weitere Informationen finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).  
   
- Müssen Sie einen neuen Projekttyp für Projekte, die auf einer anderen Sprache als erstellen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , wenn Sie eine oder mehrere der folgenden unterstützen möchten:  
+ Sie müssen einen neuen Projekttyp für Projekte, die nicht auf einer anderen Sprache basieren erstellen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sollten Sie eine oder mehrere der folgenden zu unterstützen:  
   
 -   Build  
   
@@ -47,25 +47,25 @@ ms.locfileid: "31134420"
   
 -   Projektelemente im Projektmappen-Explorer  
   
--   Die **Projekt öffnen** oder **neues Projekt** Dialogfelder  
+-   Die **geöffneten Projekt** oder **neues Projekt** Dialogfelder  
   
 -   Projekt Schachtelung  
   
 -   Weitere Informationen zu den Funktionen der Projekttypen finden Sie hier:  
   
--   Projekttypen sind Objekte in einem VSPackage, die den Satz von Schnittstellen implementieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erwartet. Wenn Sie c# verwenden, einen Projekttyp entwickeln, wird die Managed Package Framework Projektklassen implementieren Sie die erforderlichen Schnittstellen für Sie und ermöglichen es Ihnen, dass diese Implementierung erben. Weitere Informationen finden Sie unter [mithilfe des Managed Package Framework einen Projekttyp (c#) implementieren](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
+-   Projekttypen sind Objekte in einem VSPackage, die den Satz von Schnittstellen implementieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erwartet. Wenn Sie c# verwenden, um einen Projekttyp zu entwickeln, wird die Managed Package Framework-Projekt-Klassen für Sie erforderlichen Schnittstellen zu implementieren und können Sie, dass diese Implementierung erben. Weitere Informationen finden Sie unter [mit dem Managed Package Framework zum Implementieren eines Projekttyps (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
--   Für C++-Entwickler arbeiten die Klassen in der Bibliothek HierUtil auf ähnliche Weise aus. Weitere Informationen finden Sie unter [nicht im Build: verwenden HierUtil7 Projektklassen zum Implementieren von einem Project-Typs (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+-   Arbeiten für C++-Entwickler die Klassen in der Bibliothek HierUtil auf ähnliche Weise. Weitere Informationen finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
--   Projekttypen können Daten als normale Quellcodedateien unterstützen, die in eine Assembly .exe oder .dll erstellen. Beispielsweise [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenbankprojekte enthalten Verweise auf Skripts und Abfrage-Dateien, die auf dem Datenträger gespeichert und Befehle hinzufügen **Projektmappen-Explorer** zum Ausführen der Skripts und Abfragen für eine Datenbank, aber die Projekte nicht unterstützt Erstellen Sie Verhalten. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
+-   Projekttypen können Daten als typische Quellcodedateien unterstützen, die in eine .exe oder .dll-Assembly zu erstellen. Z. B. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenbankprojekte enthalten Verweise auf Dateien, die sich auf Skripts und Abfragen auf dem Datenträger gespeichert und Hinzufügen von Befehlen zum **Projektmappen-Explorer** zum Ausführen der Skripts und Abfragen einer Datenbank, aber die Projekte nicht unterstützen Erstellen Sie Verhalten. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Ein Projekt ist keine Dateien überhaupt nicht verwendet. Beispielsweise konnte ein Projekttyp alle ihre Daten in einer Datenbank speichern. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet Projekttypen vollständig selbst bestimmen, wie sie Daten für die Projekte und Projektelemente beizubehalten. Weitere Informationen finden Sie unter [Projekt Typ Entwurfsentscheidungen](../../extensibility/internals/project-type-design-decisions.md).  
+-   Ein Projekt muss keine Dateien überhaupt nicht verwenden. Beispielsweise könnte ein Projekttyp sämtlicher Daten in einer Datenbank speichern. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erhalten Projekttypen vollständig kontrollieren, wie sie Daten für Projekte und Projektelemente erhalten bleiben. Weitere Informationen finden Sie unter [Entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md).  
   
--   Projekttypen müssen Bereitstellen einer *Projekt Factory*, ist ein Objekt, das eine Instanz des Projekts erstellt geben bei jedem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird geöffnet oder erstellt ein Projekt, das basierend auf diesen Projekttyp mitgeteilt. Weitere Informationen finden Sie unter [erstellen Instanzen von mithilfe von Project Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
+-   Projekttypen müssen Bereitstellen einer *Projektzuordnungsinstanz*, dies ist ein Objekt, das eine Instanz des Projekts erstellt Geben Sie jedes Mal, wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird beim Öffnen oder erstellen ein Projekt, das basierend auf diesen Projekttyp mitgeteilt. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Projekttypen müssen Vorlagen für Projekte und Projektelemente angeben. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Vorlagen werden verwendet, wenn Benutzer neue Projekte erstellen und neuer Elemente zu vorhandenen Projekten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Projekttypen müssen Vorlagen für Projekte und Projektelemente angeben. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Vorlagen verwendet, wenn Benutzer neue Projekte erstellen und neuer Elemente zu vorhandenen Projekten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
--   Projekttypen können mehrere Konfigurationen, z. B. Debug- und unterstützen. Benutzer können die verschiedenen Konfigurationen eines Projekts ändern, mithilfe von Eigenschaftenseiten, die Sie angeben. Weitere Informationen finden Sie unter [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md).  
+-   Projekttypen können mehrere Konfigurationen, wie Debug und Release unterstützen. Benutzer können mithilfe von Eigenschaftenseiten, mit denen Sie angeben, die verschiedenen Konfigurationen eines Projekts ändern. Weitere Informationen finden Sie unter [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Projekttypen](../../extensibility/internals/deploying-project-types.md)

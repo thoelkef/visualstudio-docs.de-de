@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zum Xamarin University-Schulungsabonnements, das 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281143"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280349"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -28,12 +28,12 @@ Visual Studio Dev Essentials-Mitglieder sind berechtigt, ein kostenloses Konto z
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 2.  Suchen Sie im Abschnitt „Berufliche Entwicklung“ die Kachel „Xamarin University Training“, und klicken Sie im unteren Bereich der Kachel „Vorteile“ auf den Link **Aktivieren**.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „Xamarin University-Schulung“](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  Sie werden auf eine Xamarin University-Webseite namens „Xamarin University Mobile Training for Microsoft Visual Studio“ (Xamarin University-Schulung für mobile Technologien für Microsoft Visual Studio) umgeleitet.  Klicken Sie auf **Activate My Subscription Now** (Abonnement jetzt aktivieren).
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Eigenes Abonnement jetzt aktivieren](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > Je nach Bildschirmauflösung und Zoomfaktor müssen Sie möglicherweise nach unten scrollen, um die Schaltfläche **Activate My Subscription Now** sehen zu können.
@@ -47,24 +47,24 @@ Visual Studio Dev Essentials-Mitglieder sind berechtigt, ein kostenloses Konto z
     > 5. Aktivieren Sie den Xamarin University-Trainingsvorteil erneut.
 
 4.  Sie sehen eine Anmeldeseite mit dem Hinweis, dass Xamarin vor Kurzem zu Microsoft-Authentifizierung verschoben wurde.  Klicken Sie auf **Connect with Microsoft** (Mit Microsoft verbinden).
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Mit Microsoft verbinden](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. Als nächstes werden Sie aufgefordert, Xamarin University die Berechtigung zu erteilen, Sie anzumelden und Zugriff auf Ihre E-Mail-Adresse und Ihr Basisprofil zu gewähren.  Klicken Sie zur Bestätigung auf **Ja**. Sie können die Berechtigungen der Anwendung später bei Bedarf ändern.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Zugriff genehmigen](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Die Anmeldung ist notwendig, um den Xamarin University-Vorteil zu nutzen. Wenn Sie auf **Nein** klicken, werden Sie wieder zur vorherigen Seite geleitet und können Ihr Training nicht fortsetzen.
 
 
 6. Sie sehen eine Begrüßungsnachricht über Ihr neues Konto.  Klicken Sie auf **Start Learning** (Lernprogramm starten).
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Willkommensnachricht](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. Das ist alles!  Sie sehen jetzt das Xamarin University-Portal und können loslegen.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University-Portal](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
@@ -88,4 +88,4 @@ A: Ihr Xamarin University-Konto und Fortschritt bleiben erhalten, und Ihr Abonne
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Xamarin University?  Unter [https://university.xamarin.com/support](https://university.xamarin.com/support) finden Sie eine Vielzahl von Supportressourcen.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e21ae36795d866be76c6caaf9d01388621348d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a30e3581101b1065f26d01e70657981a5220e56c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919369"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548739"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen
 |||
@@ -28,15 +28,15 @@ ms.locfileid: "31919369"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode ruft eine systemeigene Funktion durch einen Methodenstub, z. B. P/Invoke.
+ Eine Methode aufruft, eine native Funktion durch einen Methodenstub wie z. B. P/Invoke.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird für jede transparente Methode ausgelöst, die einen direkten Aufruf in systemeigenem Code ausführt, z. B. mit P/Invoke. Verstöße gegen diese Regel führen zu einem <xref:System.MethodAccessException> im Transparenzmodell der Ebene 2 zu einer vollständigen Anforderung für <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> im Transparenzmodell Ebene 1.
+ Mit dieser Regel wird für jede transparente Methode, die direkt in nativen Code, z. B. mit P/Invoke aufruft ausgelöst. Verstöße gegen diese Regel führen zu einem <xref:System.MethodAccessException> im Transparenzmodell der Ebene 2 und einer vollständigen Anforderung für <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> im Transparenzmodell Ebene 1.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode, die Aufrufe von systemeigenem Code mit der <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode, die mit den systemeigenen Code Ruft die <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel

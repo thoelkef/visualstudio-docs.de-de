@@ -9,18 +9,18 @@ description: Weitere Informationen zum Priority Support-Vorteil, der in Visual S
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567154"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282949"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
 
 Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.
 
-Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.
+Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.  Klicken Sie auf einen der nachfolgenden Links, um direkt zu diesem Forum zu wechseln.  
 
 ## <a name="included-forums"></a>Enthaltene Foren
 
@@ -245,4 +245,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

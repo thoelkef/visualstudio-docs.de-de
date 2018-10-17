@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6689e6f0be6db4b14f03006d1aa784ae70642ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 681b2916ef6e6e5c90d98b7a88874a7fb0166549
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915694"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546706"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein
 |||
@@ -28,19 +28,19 @@ ms.locfileid: "31915694"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ beteiligt, Typäquivalenz und der Typ selbst oder ein Member oder Feld des Typs ist mit markiert die <xref:System.Security.SecurityCriticalAttribute> Attribut.
+ Ein Typ, beteiligt von Typäquivalenz und der Typ selbst oder ein Member oder Feld des Typs wird mit markiert die <xref:System.Security.SecurityCriticalAttribute> Attribut.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen derartigen Typ erkennt, ein Fehler auftritt, laden Sie es mit einem <xref:System.TypeLoadException> zur Laufzeit. In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
+ Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen derartigen Typ erkennt, ein Fehler auftritt, laden es mit einem <xref:System.TypeLoadException> zur Laufzeit. In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das SecurityCritical-Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Die folgenden Beispiele veranschaulichen eine Schnittstelle, eine Methode und ein Feld, das mit dieser Regel Auslösung bewirkt.
+ Die folgenden Beispiele veranschaulichen eine Schnittstelle, eine Methode und ein Feld, das diese Regel ausgelöst zu werden.
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 

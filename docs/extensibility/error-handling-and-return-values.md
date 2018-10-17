@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 128326b869f9a1e09ffb28118af1073b1a7e57b1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 97e5fbd68a82a74112f884a8091992c1fd6ba6ae
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638630"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370743"
 ---
 # <a name="error-handling-and-return-values"></a>Fehlerbehandlung und Rückgabewerte
 VSPackages und COM-verwenden die gleiche Architektur auf Fehler. Die `SetErrorInfo` und `GetErrorInfo` Funktionen sind Teil der Win32-Anwendungsprogrammierschnittstelle (API). Jedem VSPackage in der integrierten Entwicklungsumgebung (IDE) kann diese globale Win32-APIs, um aussagekräftige Fehlerinformationen Datensatz aufrufen, wenn Sie empfangen eine Fehlermeldung angezeigt. Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] interop-Assemblys zum Verwalten von Fehlerinformationen enthält.  
@@ -58,6 +58,6 @@ VSPackages und COM-verwenden die gleiche Architektur auf Fehler. Die `SetErrorIn
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo (Komponentenautomatisierung)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [SetErrorInfo (Komponentenautomatisierung)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)   
  [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
  [ISupportErrorInfo-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

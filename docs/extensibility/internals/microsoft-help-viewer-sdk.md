@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513373"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495998"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer Integratoren:  
@@ -822,13 +822,13 @@ Um dies zu testen, als ob bereitgestellt:
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen  
 Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Weitere Informationen zum Nutzen der Hilfe-API finden Sie unter [Hilfe-Viewer-Codebeispiele](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Weitere Informationen zum Nutzen der Hilfe-API finden Sie unter [Hilfe-Viewer-Codebeispiele](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Um Feedback zu diesen Komponenten bereitzustellen, verwenden [Microsoft Connect](http://connect.microsoft.com/).  
   
 Bitte senden Sie Vorschläge für Features zum [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Um zusätzliche Hilfe erhalten, versuchen Sie es der [MSDN Developer Documentation and Help System-Foren](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Um zusätzliche Hilfe erhalten, versuchen Sie es der [MSDN Developer Documentation and Help System-Foren](https://social.msdn.microsoft.com/Forums)  
   
 Updates zu wichtigen Problem finden Sie unter den [Hilfe-Viewer-Infodatei](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

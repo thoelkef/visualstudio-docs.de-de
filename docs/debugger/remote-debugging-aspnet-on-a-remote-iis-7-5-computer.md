@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780987"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101085"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS-Computer
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie die Remoteserver-Verwaltungstools auf dem Computer, in dem Sie Ihre app bereitgestellt haben, und fügen Sie dann auf der ausgeführten app in Visual Studio.
@@ -166,12 +166,7 @@ Sie können auch veröffentlichen und Bereitstellen der app, die über das Datei
 
 In diesem Tutorial verwenden wir Visual Studio 2017.
 
-Wenn Sie Probleme beim Öffnen der Seite mit dem Remotedebugger Download haben, finden Sie unter [entsperren Sie den Dateidownload](../debugger/remote-debugging.md#unblock_msvsmon) um Hilfe zu erhalten.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> In einigen Szenarien kann es am effizientesten zum auszuführen des Remotedebuggers aus einer Dateifreigabe sein. Weitere Informationen finden Sie unter [Ausführen des Remotedebuggers aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Richten Sie den Remotedebugger unter Windows Server
 

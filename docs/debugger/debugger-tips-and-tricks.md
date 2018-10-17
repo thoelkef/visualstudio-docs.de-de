@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303080"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612726"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -145,7 +145,7 @@ Wählen Sie einen Vorgang in der Ansicht „Zusammenfassung“ aus, um mehr Deta
 
 Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network-usage.md).
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt
+## <a name="modules_window"></a> Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt
 
 Zum Anfügen an der ausgeführten app lädt der Debugger Symboldateien (.pdb) generierte Dateien für die exakt demselben Build von der app, die Sie debuggen möchten. In einigen Fällen kann ein wenig wissen von Symboldateien hilfreich sein. Sie können überprüfen, wie Symboldateien, die mithilfe von Visual Studio lädt die **Module** Fenster.
 

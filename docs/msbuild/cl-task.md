@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd871508d4e77cd165626ab4ce3727abf9a2006
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152616"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775396"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
@@ -752,7 +752,7 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Weitere Informationen finden Sie unter der Option **/W***n* in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/W**_n_ in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

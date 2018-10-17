@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232243"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228772"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung eines Befehls. Beispielsweise sollten Sie einen Befehl anders aussehen, wenn sie nicht verfügbar ist. Sie können Befehle stellen, verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.  
@@ -58,7 +58,7 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
     {  
         var command = sender as OleMenuCommand;  
         if (command.Text == "New Text")  
-            ChangeMyCommand(command.CommandID.ID, false);}  
+            ChangeMyCommand(command.CommandID.ID, false);
     }  
     ```  
   
@@ -77,7 +77,7 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
             mc.Enabled = enableCmd;  
             cmdUpdated = true;  
         }  
-        return cmdUpdated;    }  
+        return cmdUpdated;
     }  
     ```  
   

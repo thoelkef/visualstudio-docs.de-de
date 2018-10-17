@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566767"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859093"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
-Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualisierungs- und Modellierungs-SDK können Sie ein Programm, um die Sperre Teils oder aller ein Modell einer domänenspezifischen Sprache (DSL), damit sie zwar gelesen, aber nicht geändert. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer lassen Kollegen mit Anmerkungen versehen, und überprüfen eine DSL-Modell, jedoch kann verhindern, dass sie die ursprüngliche ändern.
+Die Unveränderlichkeit-API der Visual Studio-Visualisierungs und Modellierungs-SDK können ein Programm, um ein Modell einer domänenspezifischen Sprache (DSL) ganz oder teilweise zu sperren, sodass sie zwar gelesen, aber nicht geändert. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer lassen Kollegen mit Anmerkungen versehen, und überprüfen eine DSL-Modell, jedoch kann verhindern, dass sie die ursprüngliche ändern.
 
  Sie können darüber hinaus als Autor einer DSL und definieren eine *Sperrrichtlinie.* Eine Sperrrichtlinie definiert, welche Sperren zulässigen, nicht zulässig oder erforderlich sind. Wenn Sie eine DSL veröffentlichen, können Sie z. B. Drittanbieter-Entwickler so erweitern, mit neuen Befehlen empfehlen. Aber Sie können auch eine Sperrrichtlinie verwenden, um zu verhindern, dass Sie den schreibgeschützten Status des angegebenen Teile des Modells ändern.
 

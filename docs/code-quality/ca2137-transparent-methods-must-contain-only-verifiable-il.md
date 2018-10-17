@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fdbf907d851ee3772b917ea6ca4adcd2b81404
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 536072f8dc019921fecd1fc6f53d255a1a0ae0d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918690"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551544"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten
 |||
@@ -33,12 +33,12 @@ ms.locfileid: "31918690"
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel wird für Versuche durch sicherheitstransparenten Code ausgelöst, nicht überprüfbare MSIL (Microsoft Intermediate Language) auszuführen. Die Regel enthält jedoch kein vollständiges IL-Prüfmodul und verwendet stattdessen Heuristik, um die meisten Verletzungen der MSIL-Überprüfung abzufangen.
 
- Um sicher zu sein, dass Ihr Code nur überprüfbare MSIL enthält, führen Sie [Peverify.exe (PEVerify-Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) auf die Assembly. Führen Sie PEVerify mit der **/ transparente** -Option mit der die Ausgabe nur nicht überprüfbare transparente Methoden beschränkt, die einen Fehler verursachen würde. Wenn die / transparent-Option nicht verwendet wird, überprüft PEVerify auch wichtige Methoden, die nicht überprüfbaren Code enthalten dürfen.
+ Um sicherzustellen, dass der Code nur überprüfbare MSIL enthält, führen Sie [Peverify.exe (PEVerify-Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) auf die Assembly. Führen Sie PEVerify mit der **/ transparent** Option aus, die die Ausgabe nur nicht überprüfbare transparente Methoden beschränkt, die einen Fehler verursachen würden. Wenn die / Option "transparent" nicht verwendet wird, überprüft PEVerify auch wichtige Methoden, die nicht überprüfbaren Code enthalten dürfen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode mit dem <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie den nicht überprüfbaren Code.
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode mit dem <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, oder entfernen Sie die nicht überprüfbaren Code.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel

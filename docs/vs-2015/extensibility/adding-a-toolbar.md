@@ -1,0 +1,101 @@
+---
+title: Hinzufügen einer Symbolleiste | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- toolbars [Visual Studio], adding to IDE
+- IDE, adding toolbars
+ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
+caps.latest.revision: 39
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222910"
+---
+# <a name="adding-a-toolbar"></a>Hinzufügen einer Symbolleiste
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Diese exemplarische Vorgehensweise zeigt, wie Visual Studio-IDE eine Symbolleiste hinzugefügt wird.  
+  
+ Eine Symbolleiste ist eine horizontale oder vertikale entfernen, die Schaltflächen enthält, die auf Befehle gebunden sind. Abhängig von der Implementierung kann eine Symbolleiste in der IDE neu angeordnet, auf jeder Seite des Hauptfensters der IDE angedockt, oder gemacht werden vor anderen Fenstern zu bleiben.  
+  
+ Darüber hinaus können Benutzer hinzufügen von Befehlen zu einer Symbolleiste oder diese daraus entfernen, mit der **anpassen** Dialogfeld. Symbolleisten in VSPackages sind in der Regel Benutzer anpassbar. Verarbeitet die IDE-Anpassungen, und das VSPackage auf Befehle reagiert. Das VSPackage muss nicht wissen, wo sich ein Befehl physisch befindet.  
+  
+ Weitere Informationen zu Menüs, finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
+  
+## <a name="prerequisites"></a>Vorraussetzungen  
+ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+  
+## <a name="creating-an-extension-with-a-toolbar"></a>Erstellen einer Erweiterung mit einer Symbolleiste  
+ Erstellen Sie ein VSIX-Projekt mit dem Namen `IDEToolbar`. Fügen Sie eine Elementvorlage der Menü-Befehl mit dem Namen **ToolbarTestCommand**. Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+  
+## <a name="creating-a-toolbar-for-the-ide"></a>Zum Erstellen einer Symbolleiste für die IDE  
+  
+1.  Suchen Sie in ToolbarTestCommandPackage.vsct nach dem Abschnitt "Symbols". Fügen Sie im GuidSymbol-Element mit dem Namen GuidToolbarTestCommandPackageCmdSet Deklarationen für eine Symbolleiste und einer Symbolleistengruppe wie folgt hinzu.  
+  
+    ```xml  
+    <IDSymbol name="Toolbar" value="0x1000" />  
+    <IDSymbol name="ToolbarGroup" value="0x1050" />  
+  
+    ```  
+  
+2.  Am oberen Rand im Abschnitt-Befehle erstellen Sie einen Abschnitt des Menüs. Fügen Sie ein Menüelement im im Menüs Abschnitt definieren Sie eine Symbolleiste hinzu.  
+  
+    ```xml  
+    <Menus>  
+        <Menu guid="guidToolbarTestCommandPackageCmdSet" id="Toolbar"  
+            type="Toolbar" >  
+            <CommandFlag>DefaultDocked</CommandFlag>  
+            <Strings>  
+                <ButtonText>Test Toolbar</ButtonText>  
+                <CommandName>Test Toolbar</CommandName>  
+            </Strings>  
+          </Menu>  
+    </Menus>  
+    ```  
+  
+     Symbolleisten können nicht geschachtelt werden, wie die Untermenüs. Aus diesem Grund müssen Sie keine übergeordneten Gruppe zuweisen. Darüber hinaus müssen Sie keinen zum Festlegen einer Priorität, da der Benutzer die Symbolleisten wechseln kann. In der Regel anfängliche Platzierung einer Symbolleiste programmgesteuert definiert ist, aber nachfolgende Änderungen durch den Benutzer beibehalten werden.  
+  
+3.  In der [Gruppen](../extensibility/groups-element.md) Abschnitt definieren Sie nach den vorhandenen Gruppeneintrag eine [Gruppe](../extensibility/group-element.md) Element enthält die Befehle für die Symbolleiste.  
+  
+    ```xml  
+    <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
+          priority="0x0000">  
+      <Parent guid="guidToolbarTestCommandPackageCmdSet" id="Toolbar"/>  
+    </Group>  
+    ```  
+  
+4.  Stellen Sie die Schaltfläche mit den auf der Symbolleiste angezeigt. Ersetzen Sie im Abschnitt "Schaltflächen" den übergeordneten Block in der Schaltfläche auf der Symbolleiste aus. Die daraus resultierenden Befehlsblock der Schaltfläche sollte wie folgt aussehen:  
+  
+    ```xml  
+    <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
+        <Parent guid= "guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup" />  
+                <Icon guid="guidImages" id="bmpPic1" />  
+        <Strings>  
+            <ButtonText>Invoke ToolbarTestCommand</ButtonText>  
+        </Strings>  
+    </Button>  
+    ```  
+  
+     In der Standardeinstellung Wenn eine Symbolleiste keine Befehle, wird es nicht angezeigt.  
+  
+5.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
+  
+6.  Mit der rechten Maustaste in der Menüleiste von Visual Studio zum Abrufen der Liste der Symbolleisten. Wählen Sie **testen Symbolleiste**.  
+  
+7.  Eine Symbolleiste sollte jetzt als Symbol rechts neben der Suche in Dateien Symbol angezeigt werden. Wenn Sie das Symbol klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **ToolbarTestCommandPackage. In IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
+

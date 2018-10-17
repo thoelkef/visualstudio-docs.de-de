@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Erstellen einer ersten Vue.js-App mit Visual Studio'
 description: In dieser Schnellstartanleitung erstellen Sie mit den Node.js-Tools für Visual Studio eine Vue.js-App in Visual Studio
-ms.date: 11/15/2017
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131907"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168356"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen einer ersten Vue.js-App mit Visual Studio
 
 Mithilfe dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (Integrated, Development Environment, IDE) von Visual Studio können Sie eine einfache Vue.js-Webanwendung erstellen und ausführen. Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
 
 > [!IMPORTANT]
-> Für diesen Artikel ist die Vue.js-Vorlage erforderlich, die in Visual Studio 2017 ab Version 15.8 Preview 3 verfügbar ist.
+> Für diesen Artikel ist die Vue.js-Vorlage erforderlich, die in Visual Studio 2017 ab Version 15.8 verfügbar ist.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 

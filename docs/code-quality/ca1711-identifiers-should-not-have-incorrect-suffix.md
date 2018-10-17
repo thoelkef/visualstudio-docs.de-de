@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faed3f5d49c6c08ca0a9bc90465f4e21ef3fec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916945"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549731"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -32,12 +33,14 @@ ms.locfileid: "31916945"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Bezeichner weist ein falsches Suffix auf.
+
+Ein Bezeichner weist ein falsches Suffix auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Nur die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen bzw. Typen implementieren, die von diesen Typen abgeleitet werden, sollten stets mit bestimmten reservierten Suffixen enden. Für andere Typnamen sollten diese reservierten Suffixe nicht verwendet werden.
 
- In der folgenden Tabelle werden die reservierten Suffixe sowie die Basistypen und die Schnittstellen aufgeführt, denen die Suffixe zugeordnet sind.
+Nur die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen bzw. Typen implementieren, die von diesen Typen abgeleitet werden, sollten stets mit bestimmten reservierten Suffixen enden. Für andere Typnamen sollten diese reservierten Suffixe nicht verwendet werden.
+
+In der folgenden Tabelle werden die reservierten Suffixe sowie die Basistypen und die Schnittstellen aufgeführt, denen die Suffixe zugeordnet sind.
 
 |Suffix|Basistyp/Schnittstelle|
 |------------|--------------------------|
@@ -52,26 +55,31 @@ ms.locfileid: "31916945"
 |Stapel|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Darüber hinaus sollten die folgenden Suffixe **nicht** verwendet werden:
+Darüber hinaus sollten die folgenden Suffixe **nicht** verwendet werden:
 
--   delegate
+- `Delegate`
 
--   Enum
+- `Enum`
 
--   Impl – Verwenden Sie stattdessen 'Core'.
+- `Impl` (verwenden Sie `Core` stattdessen)
 
--   "Ex" oder ein ähnliches Suffix zur Unterscheidung von einer früheren Version desselben Typs
+- `Ex` oder ein ähnliches Suffix zur Unterscheidung von einer früheren Version desselben Typs
 
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
+Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie das Suffix aus dem Typnamen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, das Suffix hat eine eindeutige Bedeutung in der Anwendungsdomäne.
+Entfernen Sie das Suffix aus dem Typnamen.
+
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+
+Unterdrücken Sie keine Warnung dieser Regel, es sei denn, das Suffix hat eine eindeutige Bedeutung in der Anwendungsdomäne.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+- [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Attribute](/dotnet/standard/design-guidelines/attributes) [behandeln und Auslösen von Ereignissen](/dotnet/standard/events/index)
+
+- [Attribute](/dotnet/standard/design-guidelines/attributes)
+- [Behandeln und Auslösen von Ereignissen](/dotnet/standard/events/index)

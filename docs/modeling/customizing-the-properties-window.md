@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567167"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859301"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
-Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL) anpassen, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
+Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
 
 ## <a name="names-descriptions-and-categories"></a>Namen, Beschreibungen und Kategorien
  **Name und Anzeigename**. In die Definition einer Domäneneigenschaft ist der Anzeigename der Eigenschaft den Namen, der zur Laufzeit in das Fenster "Eigenschaften" angezeigt wird. Im Gegensatz dazu wird der Name verwendet, beim Schreiben von Programmcode, der Eigenschaft zu aktualisieren. Der Name muss eine richtige CLR alphanumerischer Name sein, aber der Anzeigename darf Leerzeichen enthalten.

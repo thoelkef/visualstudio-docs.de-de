@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f24b0f4c6358da459525288a2812446c1c73f3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915231"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549637"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen
 |||
@@ -31,18 +31,18 @@ ms.locfileid: "31915231"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ implementiert einen Finalizer, der leer ist, ruft nur die Finalizer des Basistyps oder nur bedingt ausgegebene Methoden aufruft.
+ Ein Typ implementiert einen Finalizer, der leer ist, nur den Basistypfinalizer aufruft, oder ruft nur bedingt ausgegebene Methoden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Finalizer sollten möglichst vermieden werden, da durch Verfolgung der Objektlebensdauer zusätzliche Leistung beansprucht wird. Der Garbage Collector wird den Finalizer ausgeführt werden, bevor sie das Objekt erfasst. Dies bedeutet, dass zwei Sammlungen erforderlich, um das Objekt zu erfassen. Ein leerer Finalizer verursacht dieses zusätzlichen Mehraufwand ohne nutzen.
+ Finalizer sollten möglichst vermieden werden, da durch Verfolgung der Objektlebensdauer zusätzliche Leistung beansprucht wird. Der Garbage Collector wird den Finalizer ausgeführt werden, bevor das Objekt freigegeben. Dies bedeutet, dass zwei Sammlungen erforderlich, um das Objekt gesammelt werden. Ein leerer Finalizer verursacht dies zusätzlichen Mehraufwand ohne nutzen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie den leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Direktiven.
+ Entfernen Sie die leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Anweisungen.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Meldung von dieser Regel. Der Abschluss unterdrückt, wird die Leistung verringert, und bietet keine Vorteile.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Meldung von dieser Regel. Abschluss nicht unterdrückt wird die Leistung verringert, und bietet keine Vorteile.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein leerer Finalizer, die entfernt werden soll, einen Finalizer, der im eingeschlossen werden soll, `#if DEBUG / #endif` -Direktiven und einen Finalizer, bei der `#if DEBUG / #endif` Direktiven ordnungsgemäß.
+ Das folgende Beispiel zeigt ein leerer Finalizer, der entfernt werden soll, einen Finalizer, der in eingeschlossen werden soll `#if DEBUG / #endif` -Direktiven und einen Finalizer, der verwendet die `#if DEBUG / #endif` Direktiven ordnungsgemäß.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

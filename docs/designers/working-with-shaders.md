@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Shadern
+title: Arbeiten mit Shaders
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078315"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280198"
 ---
 # <a name="work-with-shaders"></a>Arbeiten mit Shadern
 
@@ -33,7 +33,7 @@ Sie können den Shader-Designer verwenden, um Pixelshader interaktiv statt durch
 
 Der Shader-Designer speichert Shader im DGSL-Format (Directed Graph Shader Language). Dabei handelt es sich um ein XML-Format, das auf DGML (Directed Graph Markup Language) basiert. Sie können DGSL-Shader direkt auf 3D-Modelle im Modell-Editor anwenden. Bevor Sie einen DGSL-Shader in Ihrer App verwenden können, müssen Sie diesen in ein Format exportieren, das DirectX verarbeiten kann (z.B. HLSL).
 
-Da DGSL mit DGML kompatibel ist, können Sie Tools verwenden, die für das Analysieren von DGML-Dokumenten entwickelt wurden, um Ihre DGSL-Shader zu analysieren. Weitere Informationen zu DGML finden Sie unter [Grundlegendes zu Directed Graph Markup Language (DGML)](http://msdn.microsoft.com/library/ee842619.aspx).
+Da DGSL mit DGML kompatibel ist, können Sie Tools verwenden, die für das Analysieren von DGML-Dokumenten entwickelt wurden, um Ihre DGSL-Shader zu analysieren. Weitere Informationen zu DGML finden Sie unter [Grundlegendes zu Directed Graph Markup Language (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

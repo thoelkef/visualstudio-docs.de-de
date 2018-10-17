@@ -1,7 +1,7 @@
 ---
 title: Angeben von Symbol(PDB)- und Quelldateien im Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2017
+ms.date: 04/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,232 +29,240 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281727"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880278"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
-Eine Programmdatenbankdatei (.pdb) Programmdatei, auch als Symboldatei, bezeichnet, ordnet die Bezeichner, die Sie erstellen im Quellcode für Klassen, Methoden und anderer Code die Bezeichner, die in die kompilierten ausführbaren Dateien des Projekts verwendet werden. Die PDB-Datei ordnet die Anweisungen im Quellcode auch den Ausführungsanweisungen in den ausführbaren Dateien zu. Der Debugger nutzt diese Informationen, um zwei wichtige Informationen zu bestimmen:
 
-* Name der Quelle Quelldatei- und Zeileninformationen Zahl, die in der Visual Studio-IDE angezeigt werden
-* Speicherort der ausführbaren Datei um aufhören, wenn Sie einen Haltepunkt festlegen
+Programmdatenbank (*PDB*) Dateien, Symboldateien, so genannte zuordnen, Bezeichner und die Anweisungen im Quellcode Ihres Projekts, zu der entsprechenden IDs und die Anweisungen im kompilierten apps. 
 
-Eine Symboldatei enthält auch den ursprünglichen Speicherort der Quelldateien und optional den Speicherort eines Quellservers, von dem die Quelldateien abgerufen werden können.
+Wenn Sie ein Projekt aus Visual Studio-IDE mit dem Standard Debugbuild-Konfiguration erstellen, erstellt der Compiler die entsprechenden Symboldateien. Sie können auch [Symboloptionen im Code festlegen](#compiler-symbol-options). 
+
+Die *PDB* -Datei enthält, Debuggen und projekstatusinformationen, die inkrementelle Verknüpfung einer Debugkonfiguration Ihrer App ermöglichen. Visual Studio-Debugger verwendet *PDB* Dateien auf zwei wichtige Informationen während des Debuggens zu bestimmen:
+
+* Die Quelle und die Zeilennummer Dateinummer in der Visual Studio-IDE angezeigt.
+* Die Position, in der app für einen Haltepunkt zu beenden.
+
+Symboldateien zeigen auch den Speicherort der Quelldateien und optional den Server aus, um daraus abzurufen.
   
+Der Debugger nur lädt *PDB-Datei* Dateien, die genau entsprechen der *PDB-Datei* Dateien erstellt, wenn eine app erstellt wurde (d. h. das Original *PDB-Datei* Dateien oder Kopien). Diese genaue Duplizierung ist erforderlich, da das Layout von apps ändern kann, selbst wenn der Code selbst nicht geändert hat. Weitere Informationen finden Sie unter [Why Visual Studio require Debugger Symbol-Dateien zu genau den Binärdateien bereitgestellt, die mit der sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+
 > [!TIP]
-> Wenn Sie Code von außerhalb den Projektquellcode debuggen möchten, z. B. Windows-Code oder Code von Drittanbietern die projektaufrufe, müssen Sie den Speicherort der PDB-Datei (und optional die Quelldateien des externen Codes) angeben und diese Dateien müssen exakt mit den Build von t übereinstimmen er ausführbare Dateien.  
- 
-##  <a name="BKMK_Find_symbol___pdb__files"></a> Gesucht der Debugger, in denen nach Symboldateien? 
-  
-1.  Der Speicherort, der in der DLL-Datei oder der ausführbaren Datei angegeben ist.  
-  
-     (Wenn Sie eine DLL-Datei oder eine ausführbare Datei auf dem Computer erstellt haben, platziert der Linker standardmäßig den vollständigen Pfad und Dateinamen der zugehörigen PDB-Datei in die DLL-Datei oder ausführbare Datei. Der Debugger überprüft zuerst, ob die Symboldatei am Speicherort vorhanden ist, der in der DLL-Datei oder der ausführbaren Datei angegeben ist. Dies ist hilfreich, da Sie immer über Symbole für den Code verfügen, den Sie auf dem Computer kompiliert haben.)  
-  
-2.  PDB-Dateien, die im gleichen Ordner wie die DLL oder ausführbare Datei vorhanden sind.
+> Zum Debuggen von Code außerhalb von Projekt-Quellcode, z. B. Windows-Code oder Drittanbieter-code die projektaufrufe müssen Sie den Speicherort des externen Codes angeben *PDB* (und optional die Quelldateien), die muss genau übereinstimmen. die Builds in Ihrer app. 
 
-3. Überall [angegeben, die in den Debuggeroptionen](#BKMK_Specify_symbol_locations_and_loading_behavior) nach Symboldateien. 
-  
-    * Alle lokalen Symbolcache-Ordner.  
-  
-    * Alle Netzwerk, Internet oder lokale Symbolserver und Speicherorte, die angegeben sind, z. B. die Microsoft-Symbolserver (sofern aktiviert). 
+## <a name="symbol-file-locations-and-loading-behavior"></a>Speicherorte für Symboldateien und des Ladeverhaltens
 
 > [!NOTE]
-> Wenn Sie vor Visual Studio 2012 verwalteten Code auf einem Remotegerät debuggt haben, mussten Sie die Symboldateien auf dem Remotecomputer ablegen. Ab Visual Studio 2012, alle Symboldateien muss sich auf dem lokalen Computer oder an einem Ort [angegeben, die in den Debuggeroptionen](#BKMK_Specify_symbol_locations_and_loading_behavior).  
+> Beim Debuggen von verwalteten Codes auf einem Remotegerät alle Symboldateien muss sich entweder auf dem lokalen Computer oder an einem Ort [angegeben, die in den Debuggeroptionen](#BKMK_Specify_symbol_locations_and_loading_behavior).  
   
-##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Warum müssen die Symboldateien genau mit den ausführbaren Dateien übereinstimmen?  
-Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Da der Compiler neben seiner Hauptaufgabe der Erstellung des richtigen und effizienten Codes für Kompilierungsgeschwindigkeit optimiert wurde, kann das tatsächliche Layout einer ausführbaren Datei geändert werden, auch wenn sich der Code selbst nicht geändert hat. Weitere Informationen finden unter [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
-  
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Konfigurieren Sie, in denen der Debugger nach Symboldateien und symbolladeverhaltens sucht
- Wenn Sie ein Projekt in Visual Studio-IDE debuggen, lädt der Debugger automatisch Symboldateien, die im Projektverzeichnis befinden. Sie können Geben Sie die alternativen Suchpfade und Symbolserver für Microsoft, Windows oder Komponenten von Drittanbietern in **Tools > Optionen > Debugging > Symbole**. Sie können auch bestimmte Module angeben, dass der Debugger automatisch Symbole laden soll. Sie können diese Einstellungen dann manuell ändern, während Sie aktiv debuggen.  
-  
-1.  Öffnen Sie in Visual Studio die **Tools > Optionen > Debugging > Symbole** Seite.  
-  
-     ![Tools &#45; Optionen &#45; Debuggen &#45; Seite "Symbole"](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
-  
-2.  Wählen Sie den Ordner ![Tools&#47; Optionen&#47; Debuggen&#47;symbolordnersymbol](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") Symbol. Im Feld **Orte für Symboldateien (.pdb)** wird Text angezeigt, der bearbeitet werden kann.  
-  
-3.  Geben Sie die URL oder den Verzeichnispfad des Symbolservers oder des Symbolspeicherorts ein. Durch Anweisungsvervollständigung wird Ihnen die Bestimmung des richtigen Formats erleichtert.
+Wenn Sie ein Projekt in Visual Studio-IDE debuggen, lädt der Debugger automatisch Symboldateien, die im Projektordner befinden. 
 
-    Sie können **STRG + nach-oben** und **STRG + nach-unten** so ändern Sie die Ladereihenfolge für Speicherorte für Symboldateien. Drücken Sie **F2** so bearbeiten Sie eine URL oder den Verzeichnispfad.
+Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
+
+1. Der Speicherort, der in die DLL oder ausführbaren Datei angegeben ist (*.exe*) Datei.  
+   
+   In der Standardeinstellung, wenn Sie eine DLL-Datei erstellt haben oder ein *.exe* Datei auf Ihrem Computer, die der Linker platziert, den vollständigen Pfad und Dateiname der zugeordneten *PDB* -Datei in die DLL oder *.exe* Datei. Der Debugger überprüft, um festzustellen, ob die Symboldatei an diesem Speicherort vorhanden ist.  
+   
+1. Im gleichen Ordner wie die DLL oder *.exe* Datei.
+   
+1. Alle Standorte in den Debuggeroptionen nach Symboldateien angegeben. Zum Hinzufügen und aktivieren die Speicherorte für Symboldateien, finden Sie unter [Orte für Symboldateien konfigurieren, und Laden Sie die Optionen](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+   
+    - Alle lokalen Symbolcache-Cacheordner.  
   
-4.  Um die Ladeleistung von Symbolen zu verbessern, geben Sie im Feld **Symbole in diesem Verzeichnis zwischenspeichern** den Pfad eines lokalen Verzeichnisses ein, in das Symbole von Symbolservern kopiert werden können.  
+    - Netzwerk, Internet oder lokale Symbolserver und Speicherorte, z. B. die Microsoft-Symbolserver angegeben werden, wenn ausgewählt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann Debugsymboldateien von Symbolservern, die implementieren Herunterladen der `symsrv` Protokoll. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugging-Tools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver verwenden können. 
+      
+      Sind Symbolserver, die Sie verwenden können:  
+      
+      **Öffentliche Microsoft-Symbolserver**: um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern. 
+      
+      **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer. 
+      
+      **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet bereitstellen. 
+    
+    > [!WARNING]
+    > Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, stellen Sie sicher, dass der Symbolserver und den Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie in Bezug auf Sicherheitsrisiken verfügbar gemacht werden.  
+
+<a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
+### <a name="configure-symbol-locations-and-loading-options"></a>Konfigurieren Sie die Speicherorte für Symboldateien und Optionen für das Laden
+
+Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
+
+- Geben Sie an, und wählen Sie die Suchpfade und Symbolserver für Microsoft, Windows oder Komponenten von Drittanbietern.
+- Geben Sie die Module, oder keine der Debugger automatisch Symbole laden soll.
+- Ändern Sie diese Einstellungen, während Sie aktiv Debuggen. Finden Sie unter [Verwaltung von Symbolen beim Debuggen](#manage-symbols-while-debugging). 
+  
+**Um die Orte für Symboldateien und die Optionen für das Laden angeben:**
+
+1. Öffnen Sie in Visual Studio **Tools** > **Optionen** > **Debuggen** > **Symbole** (oder **Debuggen** > **Optionen** > **Symbole**).  
+   
+   ![Tools &#45; Optionen &#45; Debuggen &#45; Seite "Symbole"](media/dbg-options-symbols.png "Tools &#45; Optionen &#45; Debuggen &#45; Seite \"Symbole\"")  
+   
+1. Klicken Sie unter **Symboldateien (.pdb) Orte für Symboldateien**,
+   - Verwenden der **Microsoft-Symbolserver**, aktivieren Sie das Kontrollkästchen.  
+   
+   - Um einen neuen Speicherort der Symbol-Server hinzufügen,
+     1. Wählen Sie die **+** in der Symbolleiste. 
+     1. Geben Sie die URL oder Ordner-Pfad des Symbolservers oder des symbolspeicherorts in das Textfeld ein. Durch Anweisungsvervollständigung wird Ihnen die Bestimmung des richtigen Formats erleichtert.
+     
+     >[!NOTE]
+     >Nur die angegebene Ordner wird durchsucht. Sie müssen die Einträge für alle Unterordner hinzufügen, die Sie suchen möchten.  
+   
+   - Um einen neuen Speicherort für den VSTS-Symbolserver hinzufügen 
+     1. Wählen Sie die ![Tools&#47; Optionen&#47; Debuggen&#47;Symbole neues Symbol "Server"](media/dbg_tools_options_foldersicon.png "Tools &#45; Optionen &#45; Debuggen &#45; Symbole neues Symbol \"Server\"") Symbol auf der Symbolleiste. 
+     1. In der **Herstellen einer Verbindung mit VSTS-Symbolserver** Dialogfeld Wählen Sie eines der verfügbaren Symbolserver und **Connect**.  
+   
+   - Verwenden Sie zum Ändern der Reihenfolge geladen, für die Orte für Symboldateien **STRG**+**einrichten** und **STRG**+**unten**, oder die **einrichten** und **unten** Pfeilsymbole angezeigt. 
+   - Um eine URL oder einen Pfad bearbeiten möchten, doppelklicken Sie auf den Eintrag, oder wählen Sie ihn aus, und drücken Sie **F2**.  
+   - Um einen Eintrag zu entfernen, wählen Sie ihn, und wählen Sie dann die **-** Symbol.
+  
+1.  (Optional) Zur Verbesserung der Leistung beim Laden Symbol, unter **Symbole in diesem Verzeichnis zwischenspeichern**, Typ, der ein lokalen Ordnerpfad an, die Symbolserver kopieren können, Symbole.  
   
     > [!NOTE]
-    >  Platzieren Sie den Symbolcache nicht in einem geschützten Ordner (z. B. im C:\Windows-Ordner oder einem Unterordner). Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.  
+    > Platzieren Sie den lokalen Symbolcache nicht in einem geschützten Ordner, z. B. C:\Windows oder einen Unterordner. Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.  
   
     > [!NOTE]
-    >  Für C++-Projekte, wenn man die Umgebungsvariable _NT_SYMBOL_PATH festgelegt, wird der Wert überschrieben unter Gruppe **Symbole in diesem Verzeichnis zwischenspeichern**.
+    > Für C++-Projekte, wenn Sie haben die `_NT_SYMBOL_PATH` -Umgebungsvariable festgelegt, wird der Wert unter Gruppe überschrieben **Symbole in diesem Verzeichnis zwischenspeichern**.
+  
+1. Geben Sie die Module, die der Debugger beim Laden aus soll die **Symboldateien (.pdb) Orte für Symboldateien** Wenn gestartet wurde.  
+  
+  -  Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.  
+  
+  -  Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.  
+  
+1.  Klicken Sie auf **OK**.
 
-### <a name="specify-symbol-loading-behavior"></a>Angeben des Symbolladeverhaltens 
+## <a name="other-symbol-options-for-debugging"></a>Andere Symboloptionen für das Debuggen
   
-Sie können die Dateien angeben, die von den im Feld **Orte für Symboldateien (.pdb)** angegebenen Speicherorten automatisch geladen werden sollen, wenn Sie das Debugging starten. Symboldateien im Projektverzeichnis werden immer geladen.  
+Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen** > **Debuggen** > **Allgemein** (oder **Debuggen** > **Optionen** > **allgemeine**):  
+
+- **DLL-Exporte laden (nur systemeigen)**  
   
-1.  Wählen Sie **Alle nicht ausgeschlossenen Module** , um alle Symbole für alle Module zu laden, außer die Module, die Sie beim Auswählen des Links **Ausgeschlossene Module angeben** festlegen.  
+  C/C++-export Tabellen geladen. Weitere Informationen finden Sie unter [DLL-Exporttabellen](#use-dumpbin-exports). Lesen von DLL-Exportinformationen umfasst ein gewisser Overhead –, damit das Laden von Exporttabellen in der Standardeinstellung deaktiviert ist. Sie können auch `dumpbin /exports` in einer C/C++-Build-Befehlszeile.  
   
-2.  Wählen Sie die Option **Nur angegebene Module** , und klicken Sie dann auf **Module angeben** , um die Module aufzulisten, die automatisch in die Symboldateien geladen werden sollen. Die Symboldateien für andere Module werden ignoriert.  
+- **Auf Adressebene aktivieren** und **Disassembly anzeigen, wenn die Quelle nicht verfügbar.**  
   
-### <a name="specify-additional-symbol-options"></a>Angeben zusätzlicher Symboloptionen 
+  Zeigt die Disassembly immer an, wenn Quell-oder Symboldateien nicht gefunden werden.  
   
-Sie können auch die folgenden Optionen festlegen, auf die **Tools > Optionen > Debugging > Allgemein** Seite:  
+  ![Optionen &#47; Debuggen &#47; allgemeine disassemblyoptionen](../debugger/media/dbg_options_general_disassembly_checkbox.png "Optionen &#47; Debuggen &#47; allgemeine disassemblyoptionen")  
+  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
+- **Quellserverunterstützung aktivieren**  
   
-**DLL-Exporte laden (nur systemeigen)**  
+  Verwendet von Source Server können Sie eine app zu debuggen, wenn kein Quellcode vorhanden, auf dem lokalen Computer ist oder die *PDB* Datei entspricht nicht den Quellcode. Source Server akzeptiert Anforderungen für Dateien und gibt die tatsächlichen Dateien aus der quellcodeverwaltung. Quellserver wird ausgeführt, indem Sie eine DLL, die mit dem Namen *srcsrv.dll* , Lesen der app *PDB* Datei. Die *PDB* Datei enthält Verweise auf das Quellcoderepository sowie Befehle zum Abrufen von Quellcode aus dem Repository verwendet. 
   
-Wenn Sie diese Option wählen, werden DLL‑Exporttabellen geladen. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.  
+  Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.  
   
-Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](/cpp/build/reference/dash-exports).  
+  >[!IMPORTANT]
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Jeder Versuch zum Ausführen eines Befehls, die nicht in der *srcsvr.ini* Datei bewirkt, dass ein Bestätigungsdialogfeld angezeigt werden. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >
+  >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.  
   
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Verwenden Sie Symbolserver, um Symboldateien zu suchen, die sich nicht auf dem lokalen Computer befinden.  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann Debugsymboldateien von Symbolservern herunterladen, die das symsrv-Protokoll implementieren. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugtools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver implementieren können. Geben Sie die zu verwendenden Symbolserver im VS-Dialogfeld **Optionen** an.  
+  Wählen Sie dieses Element aus, und die gewünschten untergeordneten Elemente. **Quellserver für teilweise vertrauenswürdige Assemblys (nur verwaltet) zulassen** und **immer, die nicht vertrauenswürdigen Quellserverbefehle ohne Aufforderung ausführen** Sicherheitsrisiken erhöhen können.  
   
- Folgende Symbolserver können verwendet werden:  
+  ![Quellserveroptionen aktivieren](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+
+## <a name="compiler-symbol-options"></a>Compilerfehler Symboloptionen  
+
+Wenn Sie ein Projekt erstellen, aus der Visual Studio-IDE mit dem Standard **Debuggen** Buildkonfiguration, die C++- und verwalteten Compiler, erstellen Sie die entsprechenden Symboldateien für Ihren Code. Sie können Compileroptionen auch im Code festlegen. 
+
+### <a name="cc-options"></a>C/C++-Optionen 
+
+- *VC\<x > pdb* und  *\<Projekt > pdb* Dateien
   
- **Öffentliche Microsoft-Symbolserver**  
+  Ein *PDB* Datei C/C++ erstellt wird, während des Buildvorgangs mit [/Zi oder/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/FD](/cpp/build/reference/fd-program-database-file-name) option Namen der *PDB* Datei, die der Compiler erstellt. Beim Erstellen eines Projekts in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe der IDE, die **/FD** Option wird festgelegt, zum Erstellen einer *PDB-Datei* Datei mit dem Namen  *\<Projekt > pdb*.  
   
- Um einen Absturz zu debuggen, der beim Aufruf einer System-DLL oder der Bibliothek eines Drittanbieters auftritt, benötigen Sie oftmals PDB-Systemdateien, die Symbole für DLL-Dateien, EXE-Dateien und Gerätetreiber von Windows enthalten. Sie können diese Symbole von den öffentlichen Microsoft-Symbolservern abrufen. Die öffentlichen Microsoft-Symbolserver, die zusätzlich zu MDAC, IIS, ISA und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]Symbole für Windows-Betriebssysteme bereitstellen.  
+  Wenn Sie die C/C++-Anwendung mithilfe einer Makefile erstellen, und Sie geben **"/ Zi"** oder **"/ Zi"** ohne **/FD**, erstellt der Compiler zwei *PDB*Dateien:  
   
- Um die Microsoft-Symbolserver zu verwenden, wählen Sie im Menü **Debuggen** das Menüelement **Optionen und Einstellungen** , und klicken Sie dann auf **Symbole**. Wählen Sie **Microsoft-Symbolserver**aus.  
+  - *VC\<x > pdb*, wobei  *\<x >* steht für die Version von Visual C++, z. B. *VC11.pdb* 
+    
+    Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >*, die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügte Informationen Typinformationen enthält, jedoch keine Symbolinformationen, wie Funktionsdefinitionen.  
   
- **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**  
+  - *\<Projekt > PDB-Datei* 
+    
+    Die  *\<Projekt > pdb* Datei werden alle Debuginformationen für des Projekts des *.exe* Datei, und befindet sich in der *\debug* Unterverzeichnis. Die  *\<Projekt > pdb* -Datei enthält Debuginformationen, einschließlich der Funktionsprototypen nicht nur die Typinformationen finden Sie in *VC\<x > pdb*. 
   
- Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer. Sie können im VS-Dialogfeld **Optionen**/**Symbole** / **Symbole**(Warum benötigt Visual Studio Debuggersymboldateien um die binären Dateien, mit denen sie gebaut wurden, *exakt* anzupassen).  
+  Sowohl die *VC\<x > pdb* und  *\<Projekt > pdb* Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zu der *PDB-Datei* Dateien in die *.exe* oder *DLL* Datei, die sie erstellt.  
   
- **Symbolserver von Drittanbietern**  
+- <a name="use-dumpbin-exports"></a>DLL-Exporttabellen
   
- Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet gewähren. Sie können die URL dieser Symbolserver auch auf der Seite **Optionen**/**Symbole** eingeben.  
+  Verwendung `dumpbin /exports` auf die Symbole in der Exporttabelle einer DLL verfügbar sind, finden Sie unter. Symbolinformationen aus DLL-Exporttabellen kann für die Arbeit mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder einer DLL, die Ihnen keine Symbole für nützlich sein. Symbole sind für alle 32-Bit-System-DLLs verfügbar. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. 
   
-> [!NOTE]
->  Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, vergewissern Sie sich, dass der Symbolserver und der zugehörige Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie möglicherweise Sicherheitsbedrohungen ausgesetzt sein.  
+  Durch Lesen der `dumpbin /exports` auszugeben, sehen Sie die genaue Funktionsnamen, einschließlich nicht alphanumerischer Zeichen. Sehen die genaue Funktionsnamen ist hilfreich, für das Festlegen eines Haltepunkts in einer Funktion, da es sich bei Funktionsnamen an anderer Stelle im Debugger abgeschnitten werden können. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Suchen und Laden von Symbolen beim Debuggen  
- Wenn sich der Debugger im Unterbrechungsmodus befindet, können Sie Symbole für ein Modul laden, das vorher durch Debuggeroptionen ausgeschlossen wurde oder das der Compiler nicht finden konnte. Sie können Symbole von den Kontextmenüs in den Fenstern "Aufrufliste", "Module", "Lokal" und "Auto" sowie in allen Überwachungsfenstern laden. Wenn der Debugger einen Code unterbricht, der keine verfügbaren Symbol- oder Quelldateien hat, wird ein Dokumentfenster geöffnet. Hier können Sie Informationen zu fehlenden Dateien suchen und Aktionen ausführen, um sie zu finden und zu laden.
+### <a name="net-framework-options"></a>.NET Framework-Optionen 
   
- **Suchen von Symbolen mit der Dokumentseite "Keine Symbole geladen"**  
+Erstellen Sie mit **/debug** zum Erstellen einer *PDB* Datei. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Erstellen von Builds mit **/Debug: pdbonly** generiert *PDB* -Dateien, nicht jedoch die `DebuggableAttribute` zeigt dem JIT-Compiler, dass Debuginformationen verfügbar sind. Verwendung **/Debug: pdbonly** , wenn Sie generieren möchten *PDB* für eine Freigabe erstellen, dass Sie nicht, debugfähig sein soll möchten. Weitere Informationen finden Sie unter [/Debug (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder ["/ Debug" (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- Es gibt mehrere Methoden, damit der Debugger im Code unterbrochen wird, der keine verfügbaren Symbole hat:  
+### <a name="web-applications"></a>Webanwendungen  
   
-1.  Ausführen von Code in Einzelschritten  
-  
-2.  Unterbrechen im Code von einem Haltepunkt oder einer Ausnahme  
-  
-3.  Wechseln zu einem anderen Thread  
-  
-4.  Ändern des Stapelrahmens durch Doppelklicken auf einen Rahmen im Aufruflistenfenster  
-  
- Wenn eines dieser Ereignisse eintritt, wird im Debugger die Seite **Keine Symbole geladen** angezeigt, auf der Sie die erforderlichen Symbole suchen und laden können.  
-  
- ![Keine Symbole geladen Seite](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
-  
--   Um die Suchpfade zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **Neu** aus und geben einen neuen Pfad ein. Wählen Sie **Laden** , um die Pfade erneut zu suchen und die Symboldatei zu laden, sofern sie gefunden wurde.  
-  
--   Wählen Sie **navigieren und suchen Sie nach**_Name der ausführbaren Datei_**...**  alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der Datei-Explorer wird geöffnet, in dem Sie die Symboldatei manuell auswählen können.  
-  
--   Wählen Sie **Symboleinstellungen ändern...**  zum Anzeigen der **Debuggen** > **Symbole** auf der Seite des Dialogfelds für Visual Studio-Optionen.  
-  
--   Wählen Sie **Disassembly anzeigen** , um die Disassembly einmal in einem neuen Fenster anzuzeigen.  
-  
--   Um die Disassembly immer anzuzeigen, wenn die Quell- oder Symboldateien nicht gefunden werden, klicken Sie auf den Link **Optionsdialogfeld** , und wählen Sie die Optionen **Debugging auf Adressebene aktivieren** und **Disassembly anzeigen, wenn die Quelle nicht verfügbar ist**aus.  
-  
-     ![Optionen &#47; Debuggen &#47; allgemeine disassemblyoptionen](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
-  
- **Ändern der Symboloptionen im Kontextmenü**  
-  
- Wenn Sie sich im Unterbrechungsmodus befinden, können Sie Symbole für Elemente suchen und laden, die in den Fenstern "Aufrufliste", "Module", "Lokal" und "Auto" sowie in allen Überwachungsfenstern angezeigt werden. Wählen Sie ein Element im Fenster aus, öffnen Sie das Kontextmenü, und wählen Sie eine der folgenden Optionen:  
+Legen Sie die *"Web.config"* Datei der ASP.NET-Anwendung auf den Debugmodus. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.  
+
+##  <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen 
+
+Können Sie die **Module**, **Aufrufliste**, **"lokal"**, **"Auto"**, oder ein beliebiges **Watch** Fenster geladen Symbole, oder Ändern der Symboloptionen während des Debuggens. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
+
+### <a name="use-the-modules-window"></a>Verwenden des Modulfensters
+
+Während des Debuggens die **Module** Fenster zeigt die Codemodule, die der Debugger wird als Benutzercode oder mein Code und die Laden der Status der Symbole behandelt. Sie können auch Überwachen des Status der Symbol-Laden von Symbole laden und Ändern der Symboloptionen in der **Module** Fenster.
+
+**Um zu überwachen, oder Ändern von Optionen oder Speicherorte für Symboldateien während des Debuggens:**
+
+1. Zum Öffnen der **Module** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **Module**. 
+1. In der **Module** Fenster mit der rechten Maustaste die **Symbolstatus** oder **Symboldatei** Header oder jedes Modul. 
+1. Wählen Sie im Kontextmenü eine der folgenden Optionen aus:  
   
 |Option|Beschreibung|  
 |------------|-----------------|  
-|**Symbole laden**|Lädt Symbole von den Speicherorten auf dem **Debuggen**/**Symbole** auf der Seite die **Optionen** Dialogfeld. Wenn die Symboldatei nicht gefunden werden kann, wird der Datei-Explorer gestartet, in dem Sie einen neuen zu suchenden Speicherort angeben können.|  
-|**Symbolladeinformationen**|Bietet Informationen, die auf den Speicherort einer geladenen Symboldatei oder auf die Speicherorte hinweisen, die durchsucht wurden, wenn der Debugger die Datei nicht finden kann.|  
-|**Symboleinstellungen...**|Öffnet die **Debuggen**/**Symbole** auf der Seite der Visual Studio **Optionen** Dialogfeld.|  
-|**Immer automatisch laden**|Fügt die Symboldatei zur Liste der Dateien hinzu, die automatisch vom Debugger geladen werden.|  
+|**Symbole laden**|Wird für Module mit wurde übersprungen, wurde nicht gefunden oder nicht geladenen Symbole angezeigt. Lädt Symbole von den Speicherorten auf dem **Optionen** > **Debuggen** > **Symbole** Seite. Wenn die Symboldatei wurde nicht gefunden oder nicht geladen wird, startet **Datei-Explorer** damit Sie einen neuen zu suchenden Speicherort angeben können.|  
+|**Symbolladeinformationen**|Zeigt den Speicherort einer geladenen Symboldatei oder die Speicherorte, die durchsucht wurden, wenn der Debugger die Datei nicht finden.|  
+|**Symboleinstellungen**|Öffnet die **Optionen** > **Debuggen** > **Symbole** Seite können Sie bearbeiten und Symbolspeicherorte hinzufügen.|  
+|**Immer automatisch laden**|Fügt die ausgewählte Symboldatei zur Liste der Dateien, die automatisch vom Debugger geladen werden.|  
+
+### <a name="use-the-no-symbols-loadedno-source-loaded-pages"></a>Verwenden Sie die Seiten keine Symbole Loaded/No Quelle geladen
+
+Es gibt mehrere Möglichkeiten für den Debugger zu unterbrechen im Code, der keine verfügbaren Symbol- oder Quelldateien Dateien:  
+
+-  Code in Einzelschritten ausführen.  
+-  Unterbrechen Sie im Code von einem Haltepunkt oder einer Ausnahme.  
+-  Wechseln Sie zu einem anderen Thread.  
+-  Ändern Sie den Stapelrahmen durch Doppelklicken auf einen Frame in der **Aufrufliste** Fenster.  
+   
+In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Quelle geladen** Seiten können Sie ermitteln und laden die erforderlichen Symbole oder Quelle aus.  
   
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Festlegen der Compileroptionen für Symboldateien  
- Wenn Sie das Projekt aus der VS IDE erstellen und die standardmäßige **Debug** -Buildkonfiguration verwenden, erstellen die Compiler für C++-Code und verwalteten Code die entsprechenden Symboldateien für den Code. Sie können Compileroptionen auch in der Befehlszeile festlegen, um Symboldateien zu erstellen.  
+ ![Keine Symbole geladen Seite](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
- **C++-Optionen**  
+**So verwenden Sie die Dokumentseite keine Symbole geladen, ermitteln und Laden Symbole fehlen:**  
   
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird bei einem Build mit [/ZI oder /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (für C/C++) erstellt.  
+-   Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.  
+-   Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.  
+-   Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.  
+-   Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden. 
+-   Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**. 
+
+Wenn der Debugger sucht nach der *PDB-Datei* Datei, nachdem Sie eine der Optionen ausführen und können abrufen, die Quelldatei, die anhand der Informationen in der *PDB-Datei* -Datei, es zeigt die Quelle. Andernfalls zeigt er eine **keine Quelle geladen** Seite das Problem, mit Links zu Aktionen beschrieben, die das Problem möglicherweise behoben.
+
+**Zum Hinzufügen von quelldateisuchpfaden zu einer Projektmappe:**
   
- In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]wird die vom Compiler erstellte PDB-Datei von der [/Fd](/cpp/build/reference/fd-program-database-file-name) -Option benannt. Wenn Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt mithilfe von Assistenten erstellen, wird durch die **/Fd** -Option eine PDB-Datei mit dem Namen *project*.pdb erstellt.  
-  
- Wird Sie die C/C++-Anwendung mithilfe einer Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd**angegeben, erhalten Sie zwei PDB-Dateien:  
-  
--   VC*x*.pdb, wobei *x* die Visual C++-Version darstellt, beispielsweise VC11.pdb. In dieser Datei werden alle Debuginformationen für die einzelnen OBJ-Dateien gespeichert; sie wird im selben Verzeichnis wie das Projektmakefile abgelegt.  
-  
--   project.pdb   In dieser Datei werden alle Debuginformationen für die EXE-Datei gespeichert. Bei C/C++ befindet sich die Datei im Unterverzeichnis \debug.  
-  
- Wenn eine OBJ-Datei erstellt wird, führt der C/C++-Compiler Debuginformationen mit VC*x*.pdb zusammen. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch keine Symbolinformationen, wie Funktionsdefinitionen. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise \<windows.h >, die Typdefinitionen aus diesen Headerdateien nur einmal anstatt in jeder OBJ-Datei gespeichert.  
-  
- Der Linker erstellt die Datei "project.pdb", die Debuginformationen für die EXE-Datei des Projekts enthält. Die Datei "project.pdb" enthält nicht nur die in VC*x*.pdb gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. Beide PDB-Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zur PDB-Datei in die erstellte EXE- bzw. DLL-Datei ein.  
-  
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei nicht vom Debugger am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist (z. B. weil das Projekt auf einen anderen Computer verschoben wurde), durchsucht der Debugger den Pfad mit der EXE-Datei sowie die Symbolpfade, die im Dialogfeld **Optionen** (Ordner**Debugging** , Knoten **Symbole** ) angegeben sind. Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
-  
- **.NET Framework-Optionen**  
-  
- Eine Programmdatenbankdatei (PDB-Datei) enthält Debug- und Projekstatusinformationen, die die inkrementelle Verknüpfung einer Debugkonfiguration des Programms ermöglichen. Eine PDB-Datei wird während des Buildvorgangs mit **/debug**erstellt. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden PDB-Dateien generiert, nicht jedoch das `DebuggableAttribute` -Attribut. Dieses Attribut zeigt dem JIT-Compiler sonst an, dass Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly** , wenn Sie PDB-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
-  
- Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger verwendet den Pfad zur PDB-Datei in der EXE- bzw. DLL-Datei, um die Datei "project.pdb" zu finden. Wenn die PDB-Datei vom Debugger nicht am angegebenen Speicherort gefunden wird oder der Pfad ungültig ist, durchsucht der Debugger den Pfad mit der EXE-Datei und anschließend die Symbolpfade, die im Dialogfeld **Optionen** angegeben sind. Dieser Pfad ist im Allgemeinen der Ordner **Debuggen** im Knoten **Symbole** . Der Debugger lädt keine PDB-Datei, die nicht mit der debuggten, ausführbaren Datei übereinstimmt. Wenn der Debugger keine PDB-Datei finden kann, wird das Dialogfeld **Symbole suchen** angezeigt, in dem Sie nach Symbolen suchen oder zusätzliche Speicherorte zum Suchpfad hinzufügen können.  
-  
- **Webanwendungen**  
-  
- In der Konfigurationsdatei der Anwendung (Web.config) muss der Debugmodus festgelegt sein. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.  
-  
-##  <a name="BKMK_Find_source_files"></a> Suchen der Quelldateien  
-  
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Speicherort, an dem der Debugger nach Quelldateien sucht  
- Der Debugger sucht an den folgenden Speicherorten nach Quelldateien:  
-  
-1.  Die in der Visual Studio-Instanz der IDE geöffneten Dateien, die der Debugger gestartet hat.  
-  
-2.  Dateien in der Projektmappe, die in der Visual Studio-Instanz geöffnet sind.  
-  
-3.  Verzeichnisse, die im angegebenen die **allgemeine Eigenschaften**/**Quelldateien debuggen** Seite in den Eigenschaften der Lösung. (Wählen Sie im **Projektmappen-Explorer**den Projektmappenknoten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Eigenschaften**aus. )  
-  
-4.  Die Quellinformationen der PDB-Datei des Moduls. Dies kann der Speicherort der Quelldatei sein, als das Modul erstellt wurde, oder es kann ein Befehl für einen Quellserver sein.  
-  
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Suchen und Laden von Quelldateien mit der Seiten keine Source/No Symbole geladen  
- Wenn der Debugger die Ausführung an einem Speicherort unterbricht, an dem die Quelldatei nicht verfügbar ist, wird die Seite für **Keine Quelle geladen** oder die Seite **Keine Symbole geladen** geöffnet, auf der Sie die Quelldatei suchen können. Die Seite **Keine Symbole geladen** wird angezeigt, wenn der Debugger eine Symboldatei (PDB-Datei) für die ausführbare Datei nicht finden kann, um die Suche abzuschließen. Die Seite "Keine Symbole geladen" enthält Optionen zur Suche nach der Datei. Wenn die PDB-Datei gefunden wird, nachdem Sie eine der Optionen ausgeführt haben und der Debugger die Quelldatei mithilfe der Informationen in der Symboldatei abrufen kann, wird die Quelldatei angezeigt. Andernfalls wird die Seite für **Keine Quelle geladen** angezeigt, auf der das Problem beschrieben wird. Die Seite enthält Optionslinks zum Ausführen von Aktionen, mit denen das Problem möglicherweise behoben wird.  
-  
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Hinzufügen von Quelldateisuchpfaden zu einer Projektmappe  
- Sie können ein Netzwerk oder lokale Verzeichnisse angeben, in denen nach Quelldateien gesucht werden soll.  
-  
-1.  Wählen Sie die Projektmappe im Projektmappen-Explorer aus, und klicken Sie dann im Kontextmenü auf **Eigenschaften** .  
-  
-2.  Wählen Sie unter dem Knoten **Allgemeine Eigenschaften** die Option **Quelldateien debuggen**aus.  
-  
-3.  Klicken Sie auf den Ordner ![Tools&#47; Optionen&#47; Debuggen&#47;symbolordnersymbol](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") Symbol. Bearbeitbarer Text wird in der Liste **Verzeichnisse mit Quellcode** angezeigt.  
-  
-4.  Fügen Sie den Pfad ein, den Sie durchsuchen möchten.  
-  
- Beachten Sie, dass nur das angegebene Verzeichnis durchsucht wird. Sie müssen Einträge für alle Unterverzeichnisse hinzufügen, die durchsucht werden sollen.  
-  
-###  <a name="BKMK_Use_source_servers"></a> Verwenden von Quellservern  
- Wenn es auf dem lokalen Computer keinen Quellcode gibt oder die PDB-Datei nicht mit dem Quellcode übereinstimmt, können Sie eine Anwendung mithilfe des Quellservers debuggen. Der Quellserver nimmt Dateianforderungen entgegen und gibt die entsprechenden Dateien zurück. Quellserver wird mittels einer DLL-Datei mit der Bezeichnung srcsrv.dll ausgeführt. Der Quellserver liest die PDB-Datei der Anwendung. Diese Datei enthält Verweise auf das Quellcoderepository sowie Befehle zum Abrufen von Quellcode aus dem Repository. Sie können einschränken, welche Befehle aus der PDB-Datei der Anwendung ausgeführt werden dürfen, indem Sie die zulässigen Befehle in der Datei "srcsrv.ini" auflisten. Diese Datei muss sich im selben Verzeichnis befinden wie die Dateien "srcsrv.dll" und "devenv.exe".  
-  
-> [!IMPORTANT]
->  In der PDB-Datei der Anwendung können beliebige Befehle eingebettet sein. Deshalb sollten Sie sicherstellen, dass Sie der Datei "srcsrv.ini" nur die Befehle hinzufügen, die ausführt werden dürfen. Beim Versuch, einen nicht in der Datei srcsvr.ini enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Beispielsweise kann bei Vertrauenswürdigkeit für den Befehl cmd.exe ein böswilliger Benutzer Parameter angeben, die den Befehl gefährlich machen.  
-  
- **So aktivieren Sie die Verwendung eines Quellservers**  
-  
-1.  Stellen Sie sicher, dass Sie die im vorherigen Abschnitt beschriebenen Sicherheitsmaßnahmen ergriffen haben.  
-  
-2.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
-  
-     Das Dialogfeld **Optionen** wird angezeigt.  
-  
-3.  Wählen Sie im Knoten **Debugging** die Option **Allgemein**aus.  
-  
-4.  Aktivieren Sie das Kontrollkästchen **Quellserverunterstützung aktivieren** .  
-  
-     ![Quellserveroptionen aktivieren](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
-  
-5.  (Optional) Wählen Sie die gewünschten untergeordneten Optionen aus.  
-  
-     Beachten Sie, dass die Option **Quellserver für teilweise vertrauenswürdige Assemblys (nur verwaltet) zulassen** und die Option **Alle nicht vertrauenswürdigen Quellserverbefehle ohne Aufforderung ausführen** die oben erläuterten Sicherheitsrisiken erhöhen können.  
-  
+Sie können Geben Sie die Speicherorte, die der Debugger nach Quelldateien sucht, und schließen Sie bestimmte Dateien von der Suche.
+
+1. Wählen Sie die Projektmappe in **Projektmappen-Explorer**, und wählen Sie dann die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+   
+1. Wählen Sie **Quelldateien debuggen**.
+   
+1. Klicken Sie unter **Verzeichnisse mit Quellcode**ein, oder wählen Sie die quellspeicherorte dann Code zu suchen. Verwenden der **Zeilenumbruch** Symbol zum Hinzufügen von mehreren Standorten, die **einrichten** und **nach unten** Pfeilsymbole auf, die sie neu anzuordnen oder **X** Symbol, um sie zu löschen.
+   
+   >[!NOTE]
+   >Der Debugger durchsucht nur das angegebene Verzeichnis. Sie müssen Einträge für alle Unterverzeichnisse hinzufügen, die durchsucht werden sollen.
+   
+1. Klicken Sie unter **Quelldateien nicht suchen**, geben Sie die Namen der Quelldateien, Suche ausgeschlossen werden sollen. 
+   
+1. Wählen Sie **OK** oder **anwenden**.
+
+
 ## <a name="see-also"></a>Siehe auch  
-[Grundlegendes zu Symboldateien und Einstellungen von Visual Studio-Symbol](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Grundlegendes zu Symboldateien und symboleinstellungen für Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 [.NET remote Symbol-Laden von Änderungen in Visual Studio 2012 und 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668607"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
-In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Benutzeroberflächen-Reaktionsfähigkeits-Profilers beschrieben, einem Leistungstool für universelle Windows-Apps.  
+In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.  
   
  Mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler können Sie Probleme mit der Reaktionsfähigkeit der Benutzeroberfläche oder Plattformnebeneffekte isolieren, die normalerweise mit den folgenden Symptomen auftreten:  
   
@@ -34,12 +35,12 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 -   Visuelle Updates, die seltener sind als erwartet. Dies tritt auf, wenn der UI-Thread ausgelastet ist, damit eine angemessene Framerate beibehalten wird. Frames könnten z. B. abgelegt werden, wenn der UI-Thread ausgelastet ist. Einige von UI-Threads unabhängige Aufgaben können auch die Häufigkeit von visuellen Updates einschränken, z. B. Netzwerkanforderungen, Decodierung von Images und Paint-Ereignisse. (Nicht alle Paint-Ereignisse werden im UI-Thread ausgeführt).  
   
-##  <a name="RunningProfiler"></a> Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
  Wenn Sie eine funktionierende UWP-App in Visual Studio geöffnet haben, können Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.  
   
 1.  Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** ein Bereitstellungsziel wie **Lokaler Computer** oder **Gerät** aus.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler**.  
   
      Wenn Sie das Ziel der Analyse ändern möchten, wählen Sie**Ziel ändern**aus.  
   
@@ -67,7 +68,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 6.  Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.  
   
-##  <a name="IsolateAnIssue"></a> Isolieren eines Problems  
+## <a name="isolate-an-issue"></a>Isolieren eines Problems  
  Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
@@ -75,11 +76,11 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 1.  Öffnen Sie die App in Visual Studio.  
   
-2.  Testen Sie die App auf Probleme mit der Reaktionsfähigkeit der Benutzeroberfläche. (Drücken Sie STRG+F5, um die App zu starten ohne sie zu debuggen.)  
+2.  Testen Sie die App auf Probleme mit der Reaktionsfähigkeit der Benutzeroberfläche. (Drücken Sie **STRG**+**F5**, um die App zu starten ohne sie zu debuggen.)  
   
      Wenn ein Problem auftritt, setzen Sie das Testen fort und versuchen Sie, den Zeitrahmen, in dem das Problem auftritt einzugrenzen, oder versuchen Sie, mögliche Auslöser zu identifizieren, die zu dem Verhalten führen.  
   
-3.  Wechseln Sie zu Visual Studio (drücken Sie ALT+TAB), und beenden Sie die App (UMSCHALT+F5).  
+3.  Wechseln Sie zu Visual Studio (drücken Sie **ALT**+**TAB**), und beenden Sie die App (**UMSCHALT**+**F5**).  
   
 4.  Optional können Sie dem Code mit [Markieren von Code zur Analyse](#ProfileMark).  
   
@@ -118,7 +119,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
     -   Seiten oder URL-Ressourcen, die von der App geladen werden, z. B. Skriptauswertungen für HTML-Analyseereignisse. Der Dateiname oder die Ressource wird bereitgestellt.  
   
-    -   Andere in der [Profiler event reference](#ProfilerEvents)angegebene Ereignisse.  
+    -   Andere in der [Profiler event reference](#profiler-event-reference)angegebene Ereignisse.  
   
     > [!TIP]
     >  Die nützlichsten Informationen im Profiler werden im Zeitachsendetaildiagramm angezeigt.  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Benutzer-Messgrößenereignis in der Zeitachsendetailansicht](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analysieren von Daten  
+## <a name="analyze-data"></a>Analysieren von Daten  
  In den folgenden Abschnitten sind Informationen enthalten, die Ihnen das Interpretieren der im Profiler angezeigten Daten erleichtern sollen.  
   
 ###  <a name="Ruler"></a> Anzeigen einer Zeitachse für die Diagnosesitzung  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.  
   
 ###  <a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung  
- Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#ProfilerEvents) in diesem Thema.  
+ Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.  
   
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  Wenn ein Teil der Zeitachse für das Diagramm der CPU-Auslastung und das Diagramm des visuellen Durchsatzes (FPS) ausgewählt ist, zeigt das Zeitachsendetaildiagramm ausführliche Informationen für den ausgewählten Zeitraum an.  
   
- Die Ereignisse im Zeitachsendetaildiagramm sind farbcodiert und stellen dieselben Kategorien von Aufgaben dar, die im CPU-Auslastungsdiagramm angezeigt werden. Weitere Informationen über die Ereigniskategorien und die spezifischen Ereignisse finden Sie unter [Profiler event reference](#ProfilerEvents) in diesem Thema.  
+ Die Ereignisse im Zeitachsendetaildiagramm sind farbcodiert und stellen dieselben Kategorien von Aufgaben dar, die im CPU-Auslastungsdiagramm angezeigt werden. Weitere Informationen über die Ereigniskategorien und die spezifischen Ereignisse finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.  
   
  Verwendungszwecke des Zeitachsendetaildiagramms:  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Zeitachsenereignisse gruppiert nach Rahmen](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Speichern einer Diagnosesitzung  
+## <a name="save-a-diagnostic-session"></a>Speichern einer Diagnosesitzung  
  In Visual Studio können Sie eine Diagnosesitzung speichern, wenn Sie die Registerkarte schließen, die der Sitzung zugeordnet ist. Gespeicherte Sitzungen können zu einem späteren Zeitpunkt erneut geöffnet werden.  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  Profilerereignisse sind kategorisiert und im Benutzeroberflächen-Reaktionsfähigkeits-Profiler farbcodiert. Beispiele für Ereigniskategorien:  
   
 -   **Ladevorgang.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Frame|Nicht zutreffend|Es wurden optische Änderungen am DOM vorgenommen, durch die ein Neuzeichnen der betroffenen Teile der Seite erforderlich wurde. Dies ist ein toolgeneriertes Ereignis für die Gruppierung.|  
 |Benutzermaß|Nicht zutreffend|Ein App-spezifisches Szenario wurde während der Verwendung der `performance.measure` -Methode gemessen. Dies ist ein toolgeneriertes Ereignis, das für die Analyse von Code verwendet wird.|  
   
-##  <a name="Tips"></a> Zusätzliche Informationen  
+## <a name="additional-information"></a>Zusätzliche Informationen  
   
 -   Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
@@ -357,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Profilerstellungstools](../profiling/profiling-tools.md)
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204205"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370964"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installieren von Test-Agents und Testcontrollern
 
-Für Testszenarios, die Visual Studio und Visual Studio Team Services (VSTS) oder Team Foundation Server (TFS) verwenden, benötigen Sie keinen Testcontroller. Agents für Visual Studio behandeln die Orchestrierung durch Kommunikation mit VSTS oder TFS. In einem möglichen Szenario führen Sie fortlaufende Tests für Build-und-Release-Workflows in VSTS oder TFS durch.
+Für Testszenarios, in denen Visual Studio und Azure Test Plans oder Team Foundation Server (TFS) verwendet wird, ist kein Testcontroller erforderlich. Agents für Visual Studio führen die Orchestrierung durch Kommunikation mit Azure Test Plans oder TFS aus. Ein mögliches Szenario könnte darin bestehen, dass Sie regelmäßige Tests für Build und Release-Workflows in Azure Test Plans oder TFS durchführen.
 
 Sie könnten auch erwägen, ob es besser wäre, stattdessen [Build- oder Releaseverwaltung](use-build-or-rm-instead-of-lab-management.md) zu verwenden.
 
@@ -36,7 +36,7 @@ Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des T
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installieren von Testcontroller und Test-Agents
 
-Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio 2017 herunterladen. Scrollen Sie auf der Seite nach unten, und suchen Sie nach *Agents für Visual Studio 2017*. Wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie dann auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
+Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio 2017 herunterladen. Suchen Sie nach *Agents für Visual Studio 2017*, wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
 
 Sie können Agents für Visual Studio 2015 und Visual Studio 2013 von der Seite mit [älteren Downloads](https://visualstudio.microsoft.com/vs/older-downloads/) herunterladen.
 
@@ -58,13 +58,13 @@ Sie können verschiedene Versionen von TFS, Microsoft Test Manager (MTM), Testco
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Aktualisieren von Visual Studio 2013-Test-Agents
 
-Sie sollten Agents für Visual Studio in allen neuen automatisierten Testszenarios verwenden. Sie können die Aufgabe *Test-Agent bereitstellen* in einer Builddefinition verwenden, um die Test-Agents auf Ihren Computer herunterzuladen und zu installieren.
+Sie sollten Agents für Visual Studio in allen neuen automatisierten Testszenarios verwenden. Sie können die Aufgabe *Deploy Test Agents* (Test-Agents bereitstellen) in einer Buildpipeline verwenden, um die Test-Agents auf Ihren Computer herunterzuladen und zu installieren.
 
-In der folgenden Tabelle werden die von Agents für Visual Studio 2013 unterstützten Szenarios und die Alternativen für Team Foundation Server (TFS) 2015 und VSTS dargestellt:
+In der folgenden Tabelle werden die von Agents für Visual Studio 2013 unterstützten Szenarios und die Alternativen für Team Foundation Server (TFS) 2015 und Azure Test Plans dargestellt:
 
-| Szenarios, die von Agents für Visual Studio 2013 unterstützt werden | Alternativen in TFS und VSTS |
-| --- | --- |
-| Erstellen-Bereitstellen-Testen-Workflow in Visual Studio | Benutzer können eine [Builddefinition](/vsts/build-release/) (kein XAML-Build) für Szenarios zum Erstellen, Bereitstellen und Testen in TFS verwenden. |
+| Szenarios, die von Agents für Visual Studio 2013 unterstützt werden | Alternativen in TFS und Azure Test Plans |
+| - | - |
+| Erstellen-Bereitstellen-Testen-Workflow in Visual Studio | Benutzer können eine [Buildpipeline](/azure/devops/pipelines/index?view=vsts) (kein XAML-Build) für Szenarios zum Erstellen, Bereitstellen und Testen in TFS verwenden. |
 | Auslastungstests (Leistungstests) mit lokalen Remotecomputern | Verwenden Sie das Testcontroller und Test-Agents 2013 Update 5, um Auslastungstests lokal auszuführen. |
 | Remoteausführung von automatisierten Tests von Microsoft Test Manager mit einer Laborumgebung | Es gibt aktuell keine Alternative für dieses Szenario. Es wird empfohlen, dass Sie den Task „Funktionstests ausführen“ in Build- und Releasedefinitionen verwenden (nicht in XAML-Builds), um Tests remote auszuführen. |
 | Entwickler, die Remotetests in Visual Studio ausführen | Wird nicht mehr unterstützt. |

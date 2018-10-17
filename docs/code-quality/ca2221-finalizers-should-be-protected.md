@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917868"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551284"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizer sollten geschützt sein
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -32,19 +33,19 @@ ms.locfileid: "31917868"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ implementiert einen Finalizer, der kein (geschützten) Zugriff angegeben ist.
+ Ein öffentlicher Typ implementiert einen Finalizer, der keine (geschützten) Zugriff angibt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Finalizer müssen den Familienzugriffsmodifizierer verwenden. Diese Regel wird vom C#-, Visual Basic und Visual C++-Compiler erzwungen.
+ Finalizer müssen den Familienzugriffsmodifizierer verwenden. Mit dieser Regel wird durch die C#-, Visual Basic und Visual C++-Compiler erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer Familie zugegriffen werden.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer als Familie zugegriffen werden kann.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Diese Regel kann nicht in jeder .NET-Sprache auf hoher Ebene verletzt; Es kann verletzt werden, wenn Sie Microsoft Intermediate Language schreiben.
+ Der Verstoß gegen diese Regel kann nicht in einer beliebigen .NET-Sprache auf hoher Ebene werden; Sie können verletzt werden, wenn Sie Microsoft Intermediate Language schreiben.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,4 +81,5 @@ ms.locfileid: "31917868"
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

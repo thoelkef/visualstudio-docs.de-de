@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627203"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320786"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Willkommen in der Visual Studio-IDE
 
@@ -50,7 +50,7 @@ Damit Sie eine visuelle Übersicht von Visual Studio bekommen, zeigt die folgend
 
 - Das Fenster [Ausgabe](../ide/reference/output-window.md) (Mitte unten) ist der Ort, an den Visual Studio Benachrichtigungen sendet, z.B. Debug- und Fehlermeldungen, Compilerwarnungen, Nachrichten zum Veröffentlichungsstatus und mehr. Jede Nachrichtenquelle verfügt über eine eigene Registerkarte.
 
-- Im [Team Explorer](/vsts/user-guide/work-team-explorer) (unten rechts) können Sie Arbeitselemente nachverfolgen und Code mithilfe von Techniken zur Versionskontrolle, wie etwa [Git](https://git-scm.com/) und [Team Foundation-Versionskontrolle (Team Foundation Version Control, TFVC)](/vsts/tfvc/overview), mit anderen teilen.
+- Im [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (unten rechts) können Sie Arbeitselemente nachverfolgen und Code mithilfe von Techniken zur Versionskontrolle, wie etwa [Git](https://git-scm.com/) und [Team Foundation-Versionskontrolle (Team Foundation Version Control, TFVC)](/azure/devops/repos/tfvc/overview?view=vsts), mit anderen teilen.
 
 ### <a name="popular-productivity-features"></a>Gängige Features zur Steigerung der Produktivität
 
@@ -273,6 +273,8 @@ Wenn Sie sich ausführlicher mit dem Codieren beschäftigen möchten, erhalten S
 - [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](quickstart-python.md)
 
 - [Use Visual Studio to create your first C# web app (Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten C#-Web-App)](quickstart-aspnet-core.md)
+
+- [Use Visual Studio to create your first F# web app (Verwenden von Visual Studio zum Erstellen Ihrer ersten F#-Web-App)](quickstart-fsharp.md)
 
 - [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](quickstart-nodejs.md)
 

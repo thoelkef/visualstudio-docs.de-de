@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381969"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321072"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen
 
@@ -28,7 +28,7 @@ Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für 
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>So konfigurieren Sie Bildschirm- und Stimmenaufzeichnung für Ihre Testeinstellungen
 
-1.  Öffnen Sie die Testeinstellungen, die Sie für die Bildschirm- und Stimmenaufzeichnung konfigurieren möchten. Weitere Informationen finden Sie unter [Erfassen von Diagnosedaten beim Testen (VSTS)](/vsts/manual-test/collect-diagnostic-data) oder [Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Öffnen Sie die Testeinstellungen, die Sie für die Bildschirm- und Stimmenaufzeichnung konfigurieren möchten. Weitere Informationen finden Sie unter [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts) oder [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  Wählen Sie in den Testeinstellungen die **Rolle** aus, die für die Bildschirm- und Stimmaufzeichnung verwendet werden soll.
 
@@ -63,7 +63,7 @@ Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect diagnostic data while testing (VSTS) (Sammeln von Diagnosedaten beim Testen (VSTS))](/vsts/manual-test/collect-diagnostic-data)
-- [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
-- [Run manual tests (VSTS) (Ausführen manueller Tests (VSTS))](/vsts/manual-test/getting-started/run-manual-tests)
+- [Ausführen manueller Tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

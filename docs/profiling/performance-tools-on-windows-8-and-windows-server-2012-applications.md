@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069d5fa2f4f4b67e8095593a03d9a37d085195a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8ad5cc6dc41fb3c9b481eef717ccc3ad07b5e2e9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780699"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 
@@ -22,7 +23,7 @@ Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erfordert
 > [!NOTE]
 > Leistungstools für andere unterstützte Versionen von Windows (Windows 7, Windows Server 2008 R2) haben sich nicht geändert.
 
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Erfassen von Daten für UWP-Apps in der Visual Studio-IDE
+## <a name="collect-data-on-uwp-apps-from-the-visual-studio-ide"></a>Erfassen von Daten für UWP-Apps in der Visual Studio-IDE
 
 Wenn Sie das Profil für eine UWP-App erstellen, die in JavaScript und HTML 5 geschrieben ist, erfassen Sie Instrumentationsdaten für den JavaScript-Code. Wenn Sie das Profil für eine UWP-App oder -Komponente erstellen, die in Visual C++, Visual C# oder Visual Basic geschrieben ist, erfassen Sie Samplingdaten für den nativen und verwalteten Code. Sie können das Profil für die App lokal oder auf einem Remotecomputer erstellen.
 
@@ -40,19 +41,19 @@ Weitere Informationen zur Profilerstellung für UWP-Apps finden Sie in den folge
 
 - [Run UWP apps on the local machine (Ausführen von UWP-Apps auf einem lokalen Computer)](../debugger/run-windows-store-apps-on-the-local-machine.md)
 - [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md)
-- [Profilerstellungstools](profiling-tools.md)
-- [JavaScript-Memory](../profiling/javascript-memory.md)
+- [Einführung in Profilerstellungstools](profiling-feature-tour.md)
+- [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
 - [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem lokalen Computer](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
 - [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem Remotegerät](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
 - [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Verwenden der Visual Studio-IDE zum Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden
 
 Die Profilerstellung mithilfe der Instrumentationsmethode hat sich unter Windows 8 nicht geändert.
 
 Die Profilerstellung für die Ebeneninteraktion wird nicht mit der Samplingmethode unterstützt.
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio IDE
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a>Verwenden von Sampling in der Visual Studio-IDE zum Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden
 
 Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows 8-Desktopanwendungen oder Windows Server 2012-Anwendungen mithilfe der Samplingmethode erstellt werden:
 
@@ -60,11 +61,11 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 - Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.
 
-## <a name="BKMK_Profiling_from_the_command_line"></a> Profilerstellung mithilfe der Befehlszeile
+## <a name="profile-from-the-command-line"></a>Profilen über die Befehlszeile
 
 Sie verwenden zwei Befehlszeilentools, um Profilerstellungsdaten auf Windows 8- und Windows Server 2012-Geräten zu erfassen, einschließlich Geräte, auf denen kein Visual Studio installiert ist:
 
-|Toolname|description|
+|Toolname|Beschreibung |
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Erfasst Profilerstellungsdaten von UWP-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Sammelt Instrumentations-, Parallelitäts- und Ebeneninteraktionsprofilerstellungsdaten von Apps, die unter Windows 8-Desktop oder Windows Server 2012 ausgeführt werden. Sammelt alle Arten von Profilerstellungsdaten von früheren Versionen von Windows.|
@@ -75,7 +76,7 @@ Um Profile für Anwendungen auf Geräten zu erstellen, auf denen Visual Studio n
 
 - Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](http://go.microsoft.com/fwlink/?LinkID=219549)herunter.
 
-- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.
+- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.
 
 > [!NOTE]
 > Um Profilerstellungsdaten für die Ebeneninteraktion (TIP-Daten) zu erfassen, müssen Sie den eigenständigen Profiler vom Visual Studio-Computer auf dem Remotecomputer installieren.
@@ -88,7 +89,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 - Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.
 
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Sammeln von Ebeneninteraktionsdaten (TIP-Daten)
+## <a name="collect-tier-interaction-tip-data"></a>Sammeln von Ebeneninteraktionsdaten (TIP-Daten)
 
 Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den Ausführungszeiten der Funktionen von Anwendungen mit mehreren Ebenen, die über ADO.NET-Dienste mit Datenbanken kommunizieren, bereit. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.
 
@@ -106,11 +107,11 @@ Profilerstellungsdaten für die Ebeneninteraktion können mit einer beliebigen V
 
 **Leistungs-Assistent und Leistungs-Explorer**
 
-Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profilerstellung vom Leistungs-Explorer hinzufügen. Sie müssen das Projekt, die ausführbare Datei oder die Website außerdem dem Zielknoten des Leistungs-Explorers hinzufügen. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md).
+Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profilerstellung vom Leistungs-Explorer hinzufügen. Sie müssen das Projekt, die ausführbare Datei oder die Website außerdem dem Zielknoten des Leistungs-Explorers hinzufügen. Siehe [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md).
 
 **Sammeln von TIP-Daten auf einem Remotecomputer**
 
-Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs_profiler_***\<Plattform>***_***\<Sprache>***.exe** aus dem Ordner *%VSInstallDir%***\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
+Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups* eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
 
 Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.
 
@@ -122,4 +123,4 @@ Ebeneninteraktionsdaten können nur in Visual Studio Enterprise angezeigt werden
 
 [Leistungs-Explorer](../profiling/performance-explorer.md)
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
-[Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Profilen über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

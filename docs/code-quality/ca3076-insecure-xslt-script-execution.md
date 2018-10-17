@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919842"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546391"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
 
@@ -31,23 +31,23 @@ Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-**XSLT** ist ein Standard World Wide Web Consortium (W3C) zum Transformieren von XML-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate (z. B.in HTML, Text fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
+**XSLT** ist ein Standard World Wide Web Consortium (W3C) zum Transformieren von XML-Daten. XSLT wird normalerweise verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate wie HTML, Text mit fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
-Um sicherzustellen, können Sie keine Angriffsfläche, dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
+Um sicherzustellen, können Sie keine Angriffsfläche, mit dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokumentfunktion und Skript deaktiviert wurde.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings an.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokument-Funktion und Skript die Ausführung deaktiviert wurde.
 
 - Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
 Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind ganz sicher, dass die Eingabe von einer vertrauenswürdigen Quelle stammt.
 
 ## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Verletzung&mdash;XsltSettings.TrustedXslt verwendet
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Verletzung, die XsltSettings.TrustedXslt verwendet.
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Lösung&mdash;XsltSettings.Default verwenden
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Lösung, die XsltSettings.Default verwendet.
 
 ```csharp
 using System.Xml;
@@ -114,7 +114,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Lösung&mdash;Deaktivieren der Dokumentfunktion und Skript
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Lösung&mdash;Dokument Dokumentfunktion und skriptausführung ausführen deaktivieren
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Siehe auch
 
-[XSLT-Sicherheitsaspekte (Handbuch für die .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT-Sicherheitsaspekte (Handbuch für die .NET)](/dotnet/standard/data/xml/xslt-security-considerations)

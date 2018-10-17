@@ -14,16 +14,20 @@ ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9dec006f3684259541811e905eaf75a790c3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900287"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547827"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Der Enumerationsspeicher sollte Int32 sein.
+
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
@@ -35,13 +39,13 @@ ms.locfileid: "31900287"
  Der zugrunde liegende Typ eine öffentliche Enumeration ist nicht <xref:System.Int32?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Wird standardmäßig die <xref:System.Int32?displayProperty=fullName> zum Speichern des konstanten Werts-Datentyp verwendet wird. Obwohl Sie diese ändern können zugrunde liegender Typ, ist es nicht notwendig oder empfehlenswert für die meisten Szenarien. Beachten Sie, dass keine signifikanten Leistungsgewinn erreicht wird, indem Sie einen Datentyp, der kleiner ist als <xref:System.Int32>. Wenn Sie den Standarddatentyp verwenden können, verwenden Sie eine von der Common Language System (CLS)-kompatiblen ganzzahligen Typen ist, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, oder <xref:System.Int64> um sicherzustellen, dass alle Werte der Enumeration dargestellt werden können CLS-kompatible Programmiersprachen.
+ Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. In der Standardeinstellung die <xref:System.Int32?displayProperty=fullName> -Datentyp wird verwendet, um den konstanten Wert zu speichern. Auch wenn Sie dies zugrunde liegende Typ ändern können, ist es nicht notwendig oder empfehlenswert für die meisten Szenarien. Beachten Sie, dass keine erhebliche Leistungszunahme erreicht wird, indem Sie einen Datentyp, der kleiner ist als <xref:System.Int32>. Wenn Sie den Standarddatentyp verwenden können, verwenden Sie eine von der Common Language-System (CLS)-kompatiblen ganzzahligen Typen <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, oder <xref:System.Int64> um sicherzustellen, dass alle Werte der Enumeration dargestellt werden können CLS-kompatible Programmiersprachen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, es sei denn, Größe oder Kompatibilitätsprobleme vorhanden sind, verwenden Sie <xref:System.Int32>. Für Situationen, in denen <xref:System.Int32> ist nicht groß genug, um die Werte enthalten, verwenden Sie <xref:System.Int64>. Wenn Abwärtskompatibilität einen kleineren Datentyp erfordert, verwenden Sie <xref:System.Byte> oder <xref:System.Int16>.
+ Um einen Verstoß gegen diese Regel zu beheben, wenn Probleme mit der Größe oder Kompatibilität vorhanden sind, verwenden Sie <xref:System.Int32>. Für Situationen, in denen <xref:System.Int32> ist nicht groß genug, um die Werte aufnehmen, verwenden Sie <xref:System.Int64>. Wenn die Abwärtskompatibilität mit einen kleineren Datentyp erforderlich ist, verwenden Sie <xref:System.Byte> oder <xref:System.Int16>.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel nur, wenn Sie Abwärtskompatibilität erforderlich ist. In Anwendungen ist in der Regel mit dieser Regel eingehalten keine Probleme verursachen. In Bibliotheken, in denen sprachübergreifende Interoperabilität erforderlich ist, kann Ihre Benutzer mit dieser Regel eingehalten beeinträchtigen.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie eine Warnung dieser Regel nur, wenn Sie Abwärtskompatibilität erforderlich ist. In Anwendungen ist nicht in der Regel mit dieser Regel entsprechen keine Probleme verursachen. Bibliotheken, in denen Interoperabilität erforderlich ist, kann der Fehler, die mit dieser Regel kompatibel Ihre Benutzer beeinträchtigen.
 
 ## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes
 
@@ -52,7 +56,7 @@ ms.locfileid: "31900287"
  [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
  [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Beispiel für die Korrektur
+## <a name="example-of-how-to-fix"></a>Beispiel für die Fehlerbehebung
 
 ### <a name="description"></a>Beschreibung
  Im folgenden Beispiel wird der vorherige Verstoß durch ändern den zugrunde liegenden Datentyp, korrigiert <xref:System.Int32>.
@@ -73,4 +77,8 @@ ms.locfileid: "31900287"
  [CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> <xref:System.Int64?displayProperty=fullName>
+
+- <xref:System.Byte?displayProperty=fullName>
+- <xref:System.Int16?displayProperty=fullName>
+- <xref:System.Int32?displayProperty=fullName>
+- <xref:System.Int64?displayProperty=fullName>

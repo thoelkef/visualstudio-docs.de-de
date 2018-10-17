@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anhalten von Codeänderungen | Microsoft Docs'
+title: 'Vorgehensweise: Anhalten von Codeänderungen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481943"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282366"
 ---
 # <a name="how-to-stop-code-changes"></a>Gewusst wie: Anhalten von Codeänderungen
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.  
@@ -42,4 +42,4 @@ Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den V
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und fortfahren](../debugger/edit-and-continue.md)   
- [Bearbeiten Sie und fortfahren Sie, Debuggen, Optionen (Dialogfeld)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)

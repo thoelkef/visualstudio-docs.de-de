@@ -9,12 +9,12 @@ description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303321"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283300"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 
@@ -26,9 +26,9 @@ Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](
 A: Nein. Alle Visual Studio-Cloudabonnements müssen mithilfe eines Azure-Abonnements gekauft werden. (Betrachten Sie dieses als Ihr Azure-Rechnungskonto.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>F: Welche Azure-Abonnements können verwendet werden, um Visual Studio-Cloudabonnements zu kaufen?
-A: Fast alle Azure-Abonnements können verwendet werden. Es werden Azure-Abonnements unterstützt, die mit [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) verknüpft sind, Azure-Abonnements, die von Cloud Solution Providers (CSPs) eingerichtet wurden, Azure-Abonnements, die über Microsoft Open License-Händler eingerichtet wurden sowie Azure-Abonnements mit nutzungsbasierter Bezahlung. Sie können den Kauf sogar mit Azure-Abonnements durchführen, die Visual Studio-Abonnenten als Vorteil für Abonnenten einrichten. Sie können jedoch nicht Ihre monatliche Gutschrift verwenden, um weitere Visual Studio-Abonnements zu bezahlen.
+A: Die meisten Azure-Abonnements können verwendet werden. Es werden Azure-Abonnements unterstützt, die mit Ihrem [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) verbunden sind, Azure-Abonnements, die von Cloud Solution Providers (CSPs) eingerichtet wurden, Azure-Abonnements, die über Microsoft Open License-Reseller eingerichtet wurden, und Azure-Abonnements mit nutzungsbasierter Zahlung.
 
-Sie können lediglich die [kostenlose Azure-Testversion](https://azure.microsoft.com/pricing/free-trial/) nicht verwenden.
+Einige Arten von Azure-Abonnements, einschließlich der [kostenlosen Testversion von Azure](https://azure.microsoft.com/pricing/free-trial/) und Abonnements, die als Abonnentenvorteile in Visual Studio-Abonnements enthalten sind, können nicht verwendet werden.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>F: Muss ich andere Azure-Dienste kaufen?
 A: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen möchten, können Sie dies tun.
@@ -92,7 +92,7 @@ Bevor Sie Käufe tätigen, müssen Sie [Ihr Ausgabenlimit entfernen](https://azu
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>F: Welche Unterschiede bestehen zwischen jährlichen und monatlichen Cloudabonnements?
 
-A: Monatliche Cloudabonnements enthalten Visual Studio und ermöglichen die Verwendung von VSTS und TFS. Dies gilt auch für jährliche Cloudabonnements, diese enthalten jedoch zusätzlich Vorteile für Abonnenten, einschließlich der Verwendung von Windows und anderer Microsoft-Software, die installiert und für das Entwickeln und Testen verwendet werden kann, einer monatliche Azure-Gutschrift, die für das Experimentieren mit Azure-Diensten sowie für das Entwickeln und Testen in der Cloud verwendet werden kann, sowie Training, Support und vieles mehr.
+A: Monatliche Cloudabonnements enthalten Visual Studio und ermöglichen die Verwendung von Azure DevOps Services und TFS. Dies gilt auch für jährliche Cloudabonnements, diese enthalten jedoch zusätzlich Vorteile für Abonnenten, einschließlich der Verwendung von Windows und anderer Microsoft-Software, die installiert und für das Entwickeln und Testen verwendet werden kann, einer monatliche Azure-Gutschrift, die für das Experimentieren mit Azure-Diensten sowie für das Entwickeln und Testen in der Cloud verwendet werden kann, sowie Training, Support und vieles mehr.
 [Vergleich der Vorteile und Preise von Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>F: Erhalte ich neue Versionen von Visual Studio, wenn ich ein Visual Studio-Cloudabonnement kaufe?

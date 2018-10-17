@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573179"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668814"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung von **Sampling**-Daten.
@@ -41,7 +41,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
 ## <a name="create-and-run-a-performance-session"></a>Erstellen und Ausführen einer Leistungssitzung  
  Zum Abrufen der zu analysierenden Daten muss zunächst eine Leistungssitzung erstellt und ausgeführt werden. Diese beiden Schritte können mithilfe des **Leistungs-Assistenten** ausgeführt werden.  
   
- Wenn Sie kein Profil für eine Windows-Desktop-Anwendung oder ASP.NET-Anwendung erstellen, müssen Sie eines der anderen Profilerstellungstools verwenden. Weitere Informationen finden Sie unter [Einführung in Profilerstellungstools](../profiling/profiling-tools.md)  
+ Wenn Sie kein Profil für eine Windows-Desktop-Anwendung oder ASP.NET-Anwendung erstellen, müssen Sie eines der anderen Profilerstellungstools verwenden. Weitere Informationen finden Sie unter [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
   
 #### <a name="to-create-and-run-a-performance-session"></a>So können Sie eine Leistungssitzung erstellen und ausführen  
   
@@ -64,7 +64,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
   
      Nach Beendigung der Anwendung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** mit den Profilerstellungsdaten angezeigt, und im Fenster **Leistungs-Explorer** erscheint ein Symbol für die neue Sitzung.  
   
-## <a name="step-2-analyze-sampling-data"></a>Schritt 2: Analysieren der Samplingdaten  
+## <a name="step-2-analyze-sampling-data"></a>Schritt 2: Analysieren der Samplingdaten  
  Nach Beendigung einer Leistungssitzung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** des Profilerstellungsberichts angezeigt.  
   
  Beginnen Sie bei der Datenanalyse am besten mit dem **Langsamsten Pfad**, fahren Sie mit der Liste der Funktionen fort, von denen die meisten Aufgaben ausgeführt werden, und richten Sie Ihr Augenmerk schließlich mithilfe der **Zeitachsenübersicht** auf andere Funktionen. Sie können auch Profilerstellungsvorschläge und Warnungen im Fenster **Fehlerliste** anzeigen.  
@@ -129,4 +129,4 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
  [Erste Schritte](../profiling/getting-started-with-performance-tools.md)   
  [Übersichten](../profiling/overviews-performance-tools.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)
+ [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

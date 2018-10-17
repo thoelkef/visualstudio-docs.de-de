@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380496"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320955"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
@@ -59,7 +59,7 @@ In diesem Abschnitt wird das Erstellen eines Auslastungstestprojekts in C# erlä
 
    Der **Assistent für neuen Auslastungstest** wird geöffnet.
 
-1. Wählen Sie die Option **Lokaler Auslastungstest** aus, und klicken Sie dann auf **Weiter**. Weitere Informationen über cloudbasierte Auslastungstests finden Sie [hier](/vsts/load-test/get-started-simple-cloud-load-test).
+1. Wählen Sie die Option **Lokaler Auslastungstest** aus, und klicken Sie dann auf **Weiter**. Weitere Informationen über cloudbasierte Auslastungstests finden Sie [hier](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
    ![Erste Seite des Assistenten für neuen Auslastungstest](media/load-test-wizard-page-1.png)
 

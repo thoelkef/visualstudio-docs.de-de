@@ -9,39 +9,39 @@ description: Informationen zur ModernRequirements-Suite von Produkten, die in au
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21a7d1a9ef072f13d53698a7fc09a83d7041e1bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280480"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279023"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Der MODERNRequirements4TFS-Vorteil in Visual Studio-Abonnements
 
-Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement für MODERNRequirements SmartOffice4TFS und ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS erweitert die Möglichkeiten von TFS oder Visual Studio Team Services um Berichtfunktionen auf Basis von Microsoft Word und eine schnelle, vereinfachte Rich-Text-Bearbeitung.  ModernRequirements4TFS stellt Baselining für Arbeitselemente und Möglichkeiten zur HTML5-Simulation zur Verfügung.
+Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement für MODERNRequirements SmartOffice4TFS und ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS erweitert die Möglichkeiten von TFS und Azure DevOps Services um Berichtfunktionen auf Basis von Microsoft Word und eine schnelle, vereinfachte Rich-Text-Bearbeitung.  ModernRequirements4TFS stellt Baselining für Arbeitselemente und Möglichkeiten zur HTML5-Simulation zur Verfügung.
 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, damit Sie Ihren MODERNRequirementsTFS-Vorteil nutzen können.
 2.  Suchen Sie im Abschnitt „Tools“ die Kachel „MODERNRequirements4TFS“, und klicken Sie im linken unteren Bereich der Kachel auf den Link **Code abrufen**.
-
-    ![Kachel „ModernRequirements-Vorteile“](_img\vs-modernreq\vs-modernreq-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kachel des Vorteils „ModernRequirements“](_img\vs-modernreq\vs-modernreq-tile.png)
 
 2.  Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
 
 3.  Sie werden auf die Website von ModernRequirements geleitet, um Ihr Konto zu erstellen und die Software herunterzuladen.  Stellen Sie auf der Startseite die erforderlichen Kontaktinformationen zur Verfügung, und klicken Sie auf **Get License Key and Download** (Lizenzschlüssel abrufen und herunterladen).
-
-    ![ModernRequirements-Startseite](_img\vs-modernreq\vs-modernreq-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements-Angebotsseite](_img\vs-modernreq\vs-modernreq-landing.png)
 
 
 4.  Auf der nächsten Seite wird Ihr Lizenzschlüssel angegeben.  Bitte lesen Sie sich die auf der Seite zur Verfügung gestellten Informationen durch, und klicken Sie anschließend auf den blauen Link **To download the software please click here (Klicken Sie hier, um die Software herunterzuladen)**.
-
-    ![ModernRequirements-Lizenzschlüssel](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements-Lizenzschlüssel](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
 
 
 5.  Auf der Downloadseite haben Sie die Möglichkeit, entweder die MODERNRequirements-Suites oder individuelle Module aus der SMARTOffice4TFS-Suite zu installieren.  Welche für Sie die richtige Option ist, hängt von Ihren Vorlieben ab und davon, welche TFS-Version Sie installiert haben.  Machen Sie sich mit der Informationsseite vertraut, damit Sie entscheiden können, welche Produktversionen für Sie die richtigen sind.
-
-    ![ModernRequirement-Downloadoptionen](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement-Downloadoptionen](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  Für dieses Beispiel wird SMARTOffice4TFS ausgewählt.  Das Dialogfeld „Herunterladen“ erscheint, und es werden drei Optionen zum Herunterladen und Speichern von ZIP-Dateien bereitgestellt.  Klicken Sie auf **Speichern**, damit eine Kopie des Pakets im Ordner „Downloads“ des Computers gespeichert wird.
 
@@ -57,7 +57,8 @@ Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement f
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
-    ![ModernRequirement-Downloadoptionen](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement-Downloadoptionen](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
 11. Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie auf **Extract All** (Alles extrahieren).  Geben Sie einen Ort an, an dem die extrahierten Dateien gespeichert werden sollen, und klicken Sie auf **Extrahieren**.
 
@@ -100,4 +101,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei ModernRequirements-Produkten?  Besuchen Sie https://www.modernrequirements.com/support-2/.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zu Visual Studio IDE, Visual Studio Team Services oder anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 223535ef0b90869db191327abc7a757b5b79ae6b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477105"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668787"
 ---
 # <a name="utilization-view"></a>Auslastungsansicht
 In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu anderen Systemressourcen angezeigt, die vom aktuellen Prozess beansprucht werden (wählen Sie **Analysieren** > **Nebenläufigkeitsschnellansicht** aus, um die Nebenläufigkeitsschnellansicht zu starten). Hier wird die durchschnittliche Kernauslastung durch den analysierten Prozess, den Leerlaufprozess, den Systemprozess und andere Prozesse angezeigt, die auf dem System im Verlauf der Zeit ausgeführt werden. Es wird jedoch nicht angezeigt, welcher Kern zu einem bestimmten Zeitpunkt aktiv ist. Wenn beispielsweise zwei Kerne mit einer Kapazität von 50% während eines bestimmten Zeitraums aktiv sind, zeigt diese Ansicht einen logischen Kern, der verwendet wird. Die Ansicht wird generiert, indem die Profilerstellungszeit in kurze Zeitsegmente unterteilt wird. Für jedes Segment wird im Diagramm die durchschnittliche Anzahl von Prozessthreads ausgegeben, die während des Intervalls auf logischen Kernen ausgeführt werden.  
@@ -48,8 +48,8 @@ In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu and
  Wenn Sie die GPU mithilfe von C++ AMP oder DirectX verwenden, möchten Sie möglicherweise die Anzahl der ausgelasteten GPU-Engines oder die Bereiche ermitteln, in denen sich die GPU unerwartet im Leerlauf befindet.  
   
 ## <a name="zoom"></a>Zoom  
- Wählen Sie zum Vergrößern der Ansicht des CPU-Auslastungsdiagramms oder des GPU-Aktivitätsdiagramms einen Abschnitt aus oder verwenden Sie den Zoomschieberegler über dem Diagramm. Die Zoomeinstellung bleibt erhalten, wenn Sie zu anderen Ansichten wechseln. Wenn Sie die Ansicht wieder verkleinern möchten, verwenden Sie den Zoomschieberegler. Alternativ können Sie auch Zoomen, indem Sie die STRG-TASTE drücken und Scrollen.  
+ Wählen Sie zum Vergrößern der Ansicht des CPU-Auslastungsdiagramms oder des GPU-Aktivitätsdiagramms einen Abschnitt aus oder verwenden Sie den Zoomschieberegler über dem Diagramm. Die Zoomeinstellung bleibt erhalten, wenn Sie zu anderen Ansichten wechseln. Wenn Sie die Ansicht wieder verkleinern möchten, verwenden Sie den Zoomschieberegler. Alternativ können Sie auch durch **STRG**+**Scrollen** Zoomen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Concurrency Visualizer (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-visualizer.md)   
- [Cores View (Kernansicht)](../profiling/cores-view.md)
+ [Kernansicht](../profiling/cores-view.md)

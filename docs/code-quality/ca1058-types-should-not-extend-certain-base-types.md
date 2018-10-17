@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c1e4635a654cac608985766884ddb66e353d03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 506b9b014b375b60491161c49925d49c45c79ef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898275"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860237"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern
 |||
@@ -32,31 +32,31 @@ ms.locfileid: "31898275"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Diese Regel meldet derzeit, Typen, die von den folgenden Typen abgeleitet werden:
+ Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Diese Regel meldet derzeit Typen, die von der folgenden Typen abgeleitet werden:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+- <xref:System.Xml.XmlDocument?displayProperty=fullName>
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.Queue?displayProperty=fullName>
+- <xref:System.Collections.Queue?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Stack?displayProperty=fullName>
+- <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , Version 1, wurde empfohlen, neue Ausnahmen von abzuleiten <xref:System.ApplicationException>. Die Empfehlung hat sich geändert und eine neue Ausnahmen sollten Ableitung <xref:System.Exception?displayProperty=fullName> oder einer seiner Unterklassen in der <xref:System> Namespace.
+ Für .NET Framework, Version 1, wurde empfohlen, leiten Sie die neue Ausnahmen von <xref:System.ApplicationException>. Die Empfehlung wurde geändert und neue Ausnahmen sollten abgeleitet <xref:System.Exception?displayProperty=fullName> oder eine ihrer Unterklassen in die <xref:System> Namespace.
 
- Erstellen Sie eine Unterklasse von nicht <xref:System.Xml.XmlDocument> , wenn Sie eine XML-Sicht der zugrunde liegenden Modell oder die Datenquelle erstellen möchten.
+ Erstellen Sie eine Unterklasse von nicht <xref:System.Xml.XmlDocument> sollten Sie eine XML-Ansicht der zugrunde liegenden Modell oder die Datenquelle zu erstellen.
 
 ### <a name="non-generic-collections"></a>Nicht generische Auflistungen
- Erweitern Sie generische Auflistungen möglichst und/oder verwendet. Nicht generische Auflistungen in Ihrem Code können nicht erweitert werden, es sei denn, die Sie zuvor exportiert haben.
+ Verwenden Sie und/oder Erweitern von generischen Auflistungen, wann immer möglich. Nicht generische Auflistungen in Ihrem Code können nicht erweitert werden, es sei denn, die Sie bereits geliefert haben.
 
  **Beispiele für die falsche Verwendung**
 
@@ -83,7 +83,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ in einen anderen Basistyp oder einer generischen Auflistung ein.
+ Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem unterschiedlichen Basistyp oder einer generischen Auflistung ein.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel Verstöße zu <xref:System.ApplicationException>. Unterdrücken Sie eine Warnung dieser Regel Verstöße zu kann gefahrlos <xref:System.Xml.XmlDocument>. Sie können ruhig So unterdrücken Sie eine Warnung über eine nicht generische Auflistung, wenn der Code zuvor veröffentlicht wurden.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel für Verstöße zu <xref:System.ApplicationException>. Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel Verstöße zu <xref:System.Xml.XmlDocument>. Es ist sicher, um eine Warnung über eine nicht generische Auflistung zu unterdrücken, wenn der Code zuvor veröffentlicht wurden.

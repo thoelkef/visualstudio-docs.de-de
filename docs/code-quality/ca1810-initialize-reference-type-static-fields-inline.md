@@ -14,16 +14,20 @@ ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a0bbea244d5d196364517b5c5a2ca8d7a53a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6fdfebe506fb2edb1814e18d3d090025c665fa
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914639"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549442"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Statische Felder von Verweistypen inline initialisieren
+
 |||
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
@@ -35,35 +39,43 @@ ms.locfileid: "31914639"
  Ein Verweistyp deklariert einen expliziten statischen Konstruktor.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein Typ einen expliziten statischen Konstruktor deklariert, überprüft der JIT-Compiler (Just in Time) jede statische Methode und jeden Instanzenkonstruktor des Typs. Dadurch wird sichergestellt, dass der statische Konstruktor zuvor aufgerufen wurde. Statischen Initialisierung wird ausgelöst, wenn auf ein statischer Member zugegriffen wird, oder wenn eine Instanz des Typs erstellt wird. Statischen Initialisierung wird jedoch nicht ausgelöst, wenn Sie eine Variable des Typs deklarieren, aber nicht verwenden, was wichtig, wenn die Initialisierung globalen Zustand ändert sein kann.
+ Wenn ein Typ einen expliziten statischen Konstruktor deklariert, überprüft der JIT-Compiler (Just in Time) jede statische Methode und jeden Instanzenkonstruktor des Typs. Dadurch wird sichergestellt, dass der statische Konstruktor zuvor aufgerufen wurde. Statischen Initialisierung wird ausgelöst, wenn Sie einen statischer Member zugegriffen wird, oder wenn eine Instanz des Typs erstellt wird. Statischen Initialisierung wird jedoch nicht ausgelöst, wenn Sie eine Variable des Typs deklarieren, aber nicht verwenden, die kann wichtig sein, wenn die Initialisierung globalen Zustand ändert.
 
- Wenn alle statische Daten Inline initialisiert und ein expliziter statischer Konstruktor nicht deklariert ist, Hinzufügen von Microsoft intermediate Language (MSIL)-Compiler die `beforefieldinit` Flag und einen impliziten statischen Konstruktor, der initialisiert die statischen Daten, die in den MSIL-Typ Definition. Wenn der JIT-Compiler erkennt die `beforefieldinit` kennzeichnen, in den meisten Fällen die Überprüfung statischer Konstruktoren nicht hinzugefügt werden. Statischen Initialisierung ist garantiert, einige Zeit stattfinden, bevor statische Felder zugegriffen werden, aber nicht, bevor ein statische Methode oder die Instanz-Konstruktor aufgerufen wird. Beachten Sie, dass die statische Initialisierung zu einem beliebigen Zeitpunkt nach dem Deklarieren einer Variablen des Typs auftreten kann.
+ Wenn alle statische Daten Inline initialisiert und ein expliziter statischer Konstruktor ist nicht deklariert, Hinzufügen von Microsoft intermediate Language (MSIL)-Compiler die `beforefieldinit` Flag und einen impliziten statischen Konstruktor, der initialisiert die statischen Daten in den MSIL-Typ die Definition. Wenn der JIT-Compiler erkennt die `beforefieldinit` kennzeichnen, in den meisten Fällen die Überprüfung statischer Konstruktoren nicht hinzugefügt werden. Statischen Initialisierung ist garantiert, zu einem Zeitpunkt ausgeführt werden soll, bevor ein statisches Feld zugegriffen werden, aber nicht, bevor Sie ein statische Methode oder die Instanz-Konstruktor aufgerufen wird. Beachten Sie, dass die statische Initialisierung zu einem beliebigen Zeitpunkt nach dem Deklarieren einer Variablen des Typs auftreten kann.
 
- Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. Ein statischer Konstruktor wird häufig verwendet, nur für statische Felder zu initialisieren, in dem Fall Sie nur sicherstellen, dass die statische Initialisierung, müssen vor dem ersten Zugriff eines statischen Felds tritt auf. Die `beforefieldinit` Verhalten eignet sich für diese und die meisten anderen Projekttypen. Es ist nur dann ungeeignet, bei der statischen Initialisierung wirkt sich auf die globalen Status und eine der folgenden ist "true":
+ Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. Ein statischer Konstruktor wird häufig verwendet, nur für die nach dem Initialisieren von statischen Feldern, in denen Fall, die Sie nur sicherstellen, dass die statische Initialisierung, müssen vor der ersten Zugriff auf ein statisches Feld auftritt. Die `beforefieldinit` Verhalten eignet sich für diese und die meisten anderen Projekttypen. Es ist nur dann ungeeignet, wenn statische Initialisierung wirkt sich auf die globalen Zustand und eine der folgenden zutrifft:
 
--   Die Auswirkung auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
+- Die Auswirkungen auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
 
--   Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf statische Felder des Typs.
+- Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf ein statisches Feld des Typs.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, initialisieren Sie alle statischen Daten nach deren Deklaration und entfernen den statischen Konstruktor.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, sofern die Leistung nicht relevant ist; oder wenn der globale Status für Änderungen, die von der statischen Initialisierung verursacht werden aufwendig oder müssen sichergestellt werden, um auftreten, bevor eine statische Methode des Typs aufgerufen wird, oder es wird eine Instanz des Typs erstellt haben.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, wenn Leistung nicht relevant ist; oder wenn globale Zustandsänderungen, die durch statische Initialisierung verursacht werden, teuer sind oder müssen garantiert auftreten, bevor Sie eine statische Methode des Typs aufgerufen wird, oder eine Instanz des Typs erstellt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `StaticConstructor`, die die Regel und einen Typ verletzt `NoStaticConstructor`, die den statischen Konstruktor mit Inline-Initialisierung die Regel erfüllen ersetzt.
 
- [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)]
- [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]
+Das folgende Beispiel zeigt einen Typ, `StaticConstructor`, die gegen die Regel und einen Typ, `NoStaticConstructor`, ersetzt den statischen Konstruktor mit Inline-Initialisierung, um die Regel zu erfüllen.
 
- Beachten Sie das Hinzufügen der `beforefieldinit` -Flag auf der MSIL-Definition für die `NoStaticConstructor` Klasse.
+[!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)]
+[!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]
 
- **auto-.class öffentlich Ansi StaticConstructor** **erweitert [mscorlib**
- **{**
- **} / / Ende der Klasse StaticConstructor** 
- **.class automatisch öffentlich Ansi Beforefieldinit NoStaticConstructor** **erweitert [mscorlib**
- **{** 
- **} / / Ende der Klasse NoStaticConstructor**
+Beachten Sie das Hinzufügen der `beforefieldinit` Flag für die MSIL-Definition für die `NoStaticConstructor` Klasse.
+
+```
+.class public auto ansi StaticConstructor
+extends [mscorlib]System.Object
+{
+} // end of class StaticConstructor
+
+.class public auto ansi beforefieldinit NoStaticConstructor
+extends [mscorlib]System.Object
+{
+} // end of class NoStaticConstructor
+```
+
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2207: Statische Felder für Werttyp inline initialisieren](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+
+- [CA2207: Statische Felder für Werttyp inline initialisieren](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

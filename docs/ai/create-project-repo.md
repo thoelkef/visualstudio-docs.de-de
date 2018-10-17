@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708773"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283521"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -17,9 +17,9 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 2. Starten Sie Visual Studio.
 
-3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
+3. Klicken Sie auf **Ansicht > Team Explorer...**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
 
-    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media\create-project-repo\team-explorer.png)
+    ![Team Explorer-Fenster, in dem Azure DevOps, GitHub und das Klonen eines Repositorys gezeigt werden](media\create-project-repo\team-explorer.png)
 
 4. Geben Sie `https://github.com/Microsoft/samples-for-ai` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 

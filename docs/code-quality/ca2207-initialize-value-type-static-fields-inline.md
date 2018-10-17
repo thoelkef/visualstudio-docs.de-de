@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883e5d842346a0821b54b2b4eacad3cbc92028b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5730acf02cf12dce6d98e7cbd1b6f38f7ece05e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917685"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550569"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Statische Felder für Werttyp inline initialisieren
 |||
@@ -35,14 +35,14 @@ ms.locfileid: "31917685"
  Ein Werttyp deklariert einen expliziten statischen Konstruktor.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein Werttyp deklariert wurde, unterliegt es standardmäßig initialisiert, wenn alle Werttyp-Feld auf 0 (null) festgelegt werden, und alle Felder von Verweistypen festgelegt sind `null` (`Nothing` in Visual Basic). Ein expliziter statischer Konstruktor ist nur garantiert, bevor ein Instanzkonstruktor oder statischer Member des Typs aufgerufen wird. Aus diesem Grund Wenn der Typ erstellt wurde, ohne einen Instanzkonstruktor und aufrufen, wird der statische Konstruktor möglicherweise nicht ausgeführt.
+ Wenn ein Werttyp deklariert wird, durchläuft er standardmäßig initialisiert, wenn alle Felder für Werttyp auf 0 (null) festgelegt werden, und alle Verweistypfelder festgelegt sind `null` (`Nothing` in Visual Basic). Ein expliziter statischer Konstruktor ist nur garantiert vor einem Instanzenkonstruktor ausgeführt werden, oder statische Member des Typs aufgerufen wird. Aus diesem Grund, wenn der Typ erstellt wird, ohne einen Instanzkonstruktor aufrufen, wird der statische Konstruktor Ausführung nicht garantiert.
 
- Wenn alle statische Daten Inline initialisiert und keine expliziter statischer Konstruktor deklariert, die C#- und Visual Basic-Compiler Hinzufügen der `beforefieldinit` Flag für die Definition der MSIL-Klasse. Der Compiler belaufen sich auch einen privaten statischen Konstruktor, der den statischen Initialisierungscode enthält. Dieser private statische Konstruktor ist garantiert, ausführen, damit alle statischen Felder des Typs zugegriffen werden.
+ Wenn alle statische Daten Inline initialisiert und keine expliziter statischer Konstruktor deklariert ist, fügen die C#- und Visual Basic-Compiler die `beforefieldinit` Flag, um die Definition der MSIL-Klasse. Der Compiler fügen auch einen privaten, statischen Konstruktor mit dem statischen Initialisierungscode hinzu. Diese private statische Konstruktor ist garantiert ausgeführt werden, bevor ein statisches Feld des Typs zugegriffen werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Zur Behebung ein Verstoß gegen diese Regel initialisieren alle statischen Daten nach wird deklariert, und entfernen den statischen Konstruktor.
+ Zur Behebung wird ein Verstoß gegen diese Regel alle statische Daten initialisieren, wenn sie deklariert ist, und entfernen den statischen Konstruktor.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln

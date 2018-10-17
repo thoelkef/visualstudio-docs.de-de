@@ -10,57 +10,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512628"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028987"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer einfachen Textur
-In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Basistextur verwendet wird.
 
- In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
+Dieser Artikel zeigt, wie Sie mit der Bildbearbeitung eine grundlegende Textur erstellen. Dazu gehören die folgenden Aktivitäten:
 
--   Festlegen der Texturgröße
+- Festlegen der Texturgröße
 
--   Festlegen der Vorder -und Hintergrundfarben
+- Festlegen der Vorder -und Hintergrundfarben
 
--   Verwenden des Alphakanals (Transparenz)
+- Verwenden des Alphakanals (Transparenz)
 
--   Verwenden der Tools **Füllung** und **Ellipse**
+- Verwenden der Tools **Füllung** und **Ellipse**
 
--   Festlegen der Tooleigenschaften
+- Festlegen der Tooleigenschaften
 
-## <a name="creating-a-basic-texture"></a>So erstellen Sie eine Basistextur
- Sie können die Bildbearbeitung zum Erstellen und Ändern von Bildern und Texturen Ihre Spiele und Anwendungen verwenden.
+## <a name="create-a-basic-texture"></a>Erstellen einer Basistextur
 
- In den folgenden Schritten wird veranschaulicht, wie Sie eine Textur erstellen, die eine Zielscheibe darstellt. Wenn Sie diesen Vorgang abgeschlossen haben, sollte die Textur der folgenden Abbildung entsprechen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
+Sie können die Bildbearbeitung zum Erstellen und Ändern von Bildern und Texturen Ihre Spiele und Anwendungen verwenden.
 
- ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png)
+In den folgenden Schritten wird veranschaulicht, wie Sie eine Textur erstellen, die eine Zielscheibe darstellt. Wenn Sie diesen Vorgang abgeschlossen haben, sollte die Textur der folgenden Abbildung entsprechen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
 
- Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften**, um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
+![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png)
 
-#### <a name="to-create-a-bullseye-target-texture"></a>So erstellen Sie eine Textur der Zielscheibe
+Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften**, um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
 
-1.  Erstellen Sie eine Textur, mit der Sie arbeiten. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).
+### <a name="create-a-bullseye-target-texture"></a>Erstellen der Textur „Zielscheibe“
 
-2.  Legen Sie die Bildgröße auf 512 x 512 Pixel fest. Geben Sie im Fenster **Eigenschaften** die Werte der Eigenschaften **Breite** und **Höhe** für `512` an.
+1. Erstellen Sie eine Textur, mit der Sie arbeiten. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie unter [Bildbearbeitung](../designers/image-editor.md#get-started).
 
-3.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Das Fenster **Eigenschaften** zeigt nun die Eigenschaften des Tools **Füllung** zusammen mit den Bildeigenschaften an.
+2. Legen Sie die Bildgröße auf 512 x 512 Pixel fest. Geben Sie im Fenster **Eigenschaften** die Werte der Eigenschaften **Breite** und **Höhe** für `512` an.
 
-4.  Legen Sie die Vordergrundfarbe auf vollständig transparentes schwarz fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Vordergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** neben dem Farbwähler auf `0` fest.
+3. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Das Fenster **Eigenschaften** zeigt nun die Eigenschaften des Tools **Füllung** zusammen mit den Bildeigenschaften an.
 
-5.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllen**. Halten Sie anschließend die **UMSCHALTTASTE** gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Durch Verwendung der **UMSCHALTTASTE** ersetzt der Alphawert der Füllfarbe die Farbe im Bild. Andernfalls wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.
+4. Legen Sie die Vordergrundfarbe auf vollständig transparentes schwarz fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Vordergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** neben dem Farbwähler auf `0` fest.
+
+5. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllen**. Halten Sie anschließend die **UMSCHALTTASTE** gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Durch Verwendung der **UMSCHALTTASTE** ersetzt der Alphawert der Füllfarbe die Farbe im Bild. Andernfalls wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.
 
     > [!IMPORTANT]
     > Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.
 
-6.  Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
+6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
 
-7.  Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B** `0` sowie den Wert der Eigenschaft **A** auf `255` fest.
+7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B** `0` sowie den Wert der Eigenschaft **A** auf `255` fest.
 
-8.  Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** auf `255` fest.
+8. Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** auf `255` fest.
 
 9. Legen Sie die Breite der Kontur der Ellipse fest. Legen Sie in der Eigenschaftengruppe **Aussehen** im Fenster **Eigenschaften** den Wert der Eigenschaft **Breite** auf `8` fest.
 
@@ -69,7 +69,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 11. Zeichnen Sie mithilfe des Tools **Ellipse** einen Kreis von Pixelkoordinate `(3, 3)` bis Pixelkoordinate `(508, 508)`. Sie können während dem Zeichnen die **UMSCHALTTASTE** gedrückt halten, um den Kreis einfacher zu zeichnen.
 
     > [!NOTE]
-    > Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt.
+    > Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Visual Studio-Statusleiste angezeigt.
 
 12. Ändern Sie die Hintergrundfarbe. Legen Sie **R** auf `44`, **G** auf `165`, **B** auf `211` und **A** auf `255` fest.
 
@@ -83,11 +83,11 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
 17. Zeichnen Sie einen weiteren Kreis von Pixelkoordinate `(192, 192)` bis Pixelkoordinate `(320, 320)`.
 
- Die vollständige Textur der Zielscheibe Hier ist das endgültige Bild, das mit Transparenz gezeigt wird.
+Die vollständige Textur der Zielscheibe Hier ist das endgültige Bild, das mit Transparenz gezeigt wird.
 
- ![Die vollständige Textur der Zielscheibe](../designers/media/gfx_image_demo_bullseye.png)
+![Die vollständige Textur der Zielscheibe](../designers/media/gfx_image_demo_bullseye.png)
 
- Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
+Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Siehe auch
 

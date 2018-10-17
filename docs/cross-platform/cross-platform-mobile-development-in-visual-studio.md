@@ -5,17 +5,17 @@ ms.date: 05/24/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635602"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496141"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende Mobile-Entwicklung in Visual Studio
 
@@ -34,7 +34,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |**Weitere Informationen**|
 |--------------------|
 |[Installieren von Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Informationen zu Xamarin in Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Informationen zu Xamarin in Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin mobile app development documentation (Dokumentation zur Entwicklung mobiler Apps mit Xamarin)](/xamarin/) |
 |[DevOps mit Xamarin-Apps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[Informationen zu universellen Windows-Apps in Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
@@ -82,7 +82,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |[Einführung in die universelle Windows-Plattform](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Erstellen der ersten App](/windows/uwp/get-started/your-first-app)|
 |[Entwickeln von Apps für die universelle Windows-Plattform (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
+|[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a>Erstellen einer App für Android, iOS und Windows (HTML/JavaScript)
 
@@ -136,9 +136,9 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |**Weitere Informationen**|
 |--------------------|
 |[Visual Studio herunterladen](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Tools für Visual C++ für die plattformübergreifende Entwicklung installieren](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[Tools für Visual C++ für die plattformübergreifende Entwicklung installieren](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
 |[Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installieren der erforderlichen Tools und anschließendes Erstellen einer App mit systemeigener Aktivität für Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[Installieren der erforderlichen Tools und anschließendes Erstellen einer App mit systemeigener Aktivität für Android](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
 |[Learn more about sharing C++ code with Android and Windows apps (Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps)](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Beispiele für plattformübergreifende mobile Entwicklung](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Weitere Beispiele für plattformübergreifende mobile Entwicklung für C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
@@ -158,12 +158,12 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |[Weitere Informationen über das Erstellen von Unity-Spielen mit Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Weitere Informationen zu Visual Studio Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Erste Schritte mit Visual Studio-Tools für Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Informationen zu den neusten Verbesserungen von Visual Studio Tools für Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio-Blog)|
+|[Informationen zu den neusten Verbesserungen von Visual Studio Tools für Unity 2.0 Preview](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio-Blog)|
 |[Videoeinführung in Visual Studio Tools für Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
 |[Informationen zu Unity](http://unity3d.com/) (Unity-Website)|
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Add Office 365 APIs to a Visual Studio project (Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt)](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Add Office 365 APIs to a Visual Studio project (Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt)](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [Azure App Services - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

@@ -9,26 +9,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774777"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859353"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
-Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muss bereits auf dem Zielcomputer installiert sein.
+Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. Visual Studio muss bereits auf dem Zielcomputer installiert werden.
 
-##  <a name="which"></a> Auswählen zwischen VSIX-als auch MSI-Bereitstellung
+## <a name="which"></a> Auswählen zwischen VSIX-als auch MSI-Bereitstellung
  Es gibt zwei Methoden zum Bereitstellen einer domänenspezifischen Sprache:
 
 |Methode|Vorteile|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterung)|Sehr leicht bereitzustellen: kopieren, und führen Sie die **VSIX** Datei aus dem DslPackage-Projekt.<br /><br /> Weitere Informationen finden Sie unter [installieren und Deinstallieren eine DSL mithilfe der VSX](#Installing).|
-|MSI-Datei (Installationsdatei)|– Ermöglicht es dem Benutzer zum Öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durch Doppelklicken auf eine DSL-Datei.<br />: Ordnet ein Symbol mit dem Typ des DSL-Datei auf dem Zielcomputer an.<br />: Ordnet ein XSD-Schema (XML-Schema) mit dem DSL-Dateityp an. Dadurch werden Warnungen vermieden, wenn in die Datei geladen werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Sie müssen ein Setup-Projekt zu Ihrer Lösung erstellen Sie eine MSI-Datei hinzufügen.<br /><br /> Weitere Informationen finden Sie unter [mithilfe einer MSI-Datei für die Bereitstellung einer DSL](#msi).|
+|VSX (Visual Studio-Erweiterung)|Sehr leicht bereitzustellen: kopieren, und führen Sie die **VSIX** Datei aus dem DslPackage-Projekt.<br /><br /> Weitere Informationen finden Sie unter [installieren und Deinstallieren eine DSL mithilfe der VSX](#Installing).|
+|MSI-Datei (Installationsdatei)|: Ermöglicht dem Benutzer zu Visual Studio durch Doppelklicken auf eine DSL-Datei zu öffnen.<br />: Ordnet ein Symbol mit dem Typ des DSL-Datei auf dem Zielcomputer an.<br />: Ordnet ein XSD-Schema (XML-Schema) mit dem DSL-Dateityp an. Dadurch werden die Warnungen vermieden, wenn die Datei in Visual Studio geladen werden.<br /><br /> Sie müssen ein Setup-Projekt zu Ihrer Lösung erstellen Sie eine MSI-Datei hinzufügen.<br /><br /> Weitere Informationen finden Sie unter [mithilfe einer MSI-Datei für die Bereitstellung einer DSL](#msi).|
 
-##  <a name="Installing"></a> Installieren und Deinstallieren eine DSL mithilfe der VSX
- Wenn Ihre DSL, die von dieser Methode installiert wird, kann der Benutzer innerhalb eine DSL-Datei öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aber die Datei kann nicht aus dem Windows-Explorer nicht geöffnet werden.
+## <a name="Installing"></a> Installieren und Deinstallieren eine DSL mithilfe der VSX
+ Wenn Ihre DSL, die von dieser Methode installiert wird, kann der Benutzer eine DSL-Datei aus Visual Studio öffnen, aber die Datei kann nicht aus dem Windows-Explorer nicht geöffnet werden.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>So installieren Sie eine DSL mithilfe der VSX
 
@@ -42,7 +42,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
     -   Der Zielcomputer müssen eine der Editionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , die DSLs zur Laufzeit unterstützt. Weitere Informationen finden Sie unter [unterstützt Visual Studio-Editionen für das Visualisierungs- und Modellierungs-SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   Der Zielcomputer müssen eine der Editionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im angegebenen **DslPackage\source.extensions.manifest**.
+    -   Der Zielcomputer müssen eine der Editionen von Visual Studio, die im angegebenen **DslPackage\source.extensions.manifest**.
 
 3.  Doppelklicken Sie auf dem Zielcomputer auf die **VSIX** Datei.
 
@@ -50,7 +50,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
 4.  Starten Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], bzw. starten Sie die Anwendung neu.
 
-5.  Verwenden Sie zum Testen der DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Erstellen einer neuen Datei mit der Dateierweiterung an, die Sie für Ihre DSL definiert.
+5.  Um die DSL zu testen, verwenden Sie Visual Studio zum Erstellen einer neuen Datei, die mit der Dateierweiterung an, die Sie für Ihre DSL definiert.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>So deinstallieren Sie eine DSL, die sich mit VSX installiert wurde
 
@@ -64,12 +64,12 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Bereitstellung einer DSL in eine MSI-Datei
+## <a name="msi"></a> Bereitstellung einer DSL in eine MSI-Datei
  Definieren Sie eine MSI-Datei (Windows Installer)-Datei für Ihre DSL, können Sie Benutzern das Öffnen von DSL-Dateien aus dem Windows-Explorer von erlauben. Sie können auch ein Symbol und eine kurze Beschreibung Ihrer Dateinamenerweiterung zuordnen. Darüber hinaus kann die MSI-Datei ein XSD-Schema installieren, die zum Überprüfen der DSL-Dateien verwendet werden kann. Wenn Sie möchten, können Sie andere Komponenten in die MSI-Datei hinzufügen, die zur selben Zeit installiert werden.
 
  Weitere Informationen zu MSI-Dateien und andere Bereitstellungsoptionen finden Sie unter [Bereitstellen von Anwendungen, Dienste und Komponenten](../deployment/deploying-applications-services-and-components.md).
 
- Um eine MSI-Datei zu erstellen, die Sie Hinzufügen eines Setup-Projekts zu Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Die einfachste Methode zum Erstellen eines Setupprojekts ist die Verwendung die Vorlage CreateMsiSetupProject.tt, das Sie herunterladen können die [VMSDK-Website](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Um eine MSI-Datei zu erstellen, fügen Sie ein Setup-Projekt der Visual Studio-Projektmappe hinzu. Die einfachste Methode zum Erstellen eines Setupprojekts ist die Verwendung die Vorlage CreateMsiSetupProject.tt, das Sie herunterladen können die [VMSDK-Website](http://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Bereitstellen eine DSL in eine MSI-Datei
 
@@ -101,7 +101,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
 5.  Hinzufügen **CreateMsiSetupProject.tt** zu Ihrem Dsl-Projekt.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt eine Datei mit dem Namen **CreateMsiSetupProject.vdproj**.
+     Visual Studio erstellt eine Datei namens **CreateMsiSetupProject.vdproj**.
 
 6.  Kopieren Sie im Windows-Explorer Dsl\\\*.vdproj in einen neuen Ordner mit dem Namen Setup.
 
@@ -125,7 +125,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 
     -   In Windows Explorer-Listenansicht wird die Datei angezeigt, mit dem Symbol und eine Beschreibung ein, die Sie definiert.
 
-    -   Wenn Sie die Datei doppelklicken, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] beginnt, und die DSL-Datei in Ihrem DSL-Editor geöffnet.
+    -   Wenn Sie doppelklicken Sie auf die Datei, die Visual Studio gestartet und die DSL-Datei in Ihrem DSL-Editor geöffnet.
 
  Falls gewünscht, können Sie das Setup-Projekt manuell erstellen, anstatt die Textvorlage. Eine exemplarische Vorgehensweise, die diese Prozedur umfasst finden Sie in Kapitel 5 des der [Visualisierungs- und Modellierungs-SDK-Lab](http://go.microsoft.com/fwlink/?LinkId=208878).
 

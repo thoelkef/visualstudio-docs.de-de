@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381985"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280921"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“
 
 In diesem Thema werden die öffentlichen Member des Namespace `Microsoft::VisualStudio::CppUnitTestFramework` aufgeführt. Mit diesen APIs können Sie C++-Komponententests auf Grundlage des nativen Microsoft-Komponententest-Frameworks schreiben. Am Ende des Artikels finden Sie ein [Beispiel für die Verwendung](#example).
 
- Die Headerdateien befinden sich im Ordner *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include**.
+ Die Headerdateien befinden sich im Ordner _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
 
- Die Bibliotheksdateien befinden sich im Ordner *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib**.
+ Die Bibliotheksdateien befinden sich im Ordner _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
 
 Header- und Bibliothekspfade werden automatisch in einem nativen Testprojekt konfiguriert.
 

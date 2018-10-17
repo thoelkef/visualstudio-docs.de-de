@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379831"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278321"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trainieren von KI-Modellen in Azure Batch AI
 
@@ -34,9 +34,9 @@ Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Tra
 
     ![Beispielkatalog](media\train-model\batchai.png)
 
-3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
+3. Klicken Sie auf **Ansicht > Team Explorer...**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
 
-    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media\train-model\team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media\train-model\team-explorer.png)
 
 4. Geben Sie `https://github.com/Microsoft/samples-for-ai` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 5'
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu den Features der Vorlagen „Fragt ein Flask-Webprojekt ab“ und „Fragt ein Flask/Jade-Webprojekt ab“.
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637616"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280093"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
@@ -356,7 +356,7 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Fügen Sie eine Repositoryimplementierung hinzu, die einen anderen Datenspeicher auf Produktionsebene verwendet, z.B. MySQL, PostgreSQL und SQL Server (alle können in Azure gehostet werden). Sie können auch die [Azure SDK für Python](azure-sdk-for-python.md) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs sowie mit Cosmos DB zu arbeiten.
 
-- Richten Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) auf einem Dienst wie Visual Studio Team Services (VSTS) ein. Zusätzlich zum Arbeiten mit dem Datenquellen-Steuerelement (in VSTS, GitHub oder anderweitig) können Sie VSTS automatisch Ihre Komponententests als Voraussetzung für die Freigabe ausführen lassen und die Pipeline so konfigurieren, dass sie vor der Bereitstellung in der Produktionsumgebung auf einem Stagingserver bereitstellt, um weitere Tests zu ermöglichen. VSTS wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter:
+- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure Pipelines ein. Zusätzlich zum Arbeiten mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie Azure Test Plans automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps Services wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-CD-Pipeline für Python mit dem Azure-DevOps-Projekt)](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-/CD-Pipeline für Python mit Azure DevOps-Projekten)](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Python development in Azure with Visual Studio Team Services (Python-Entwicklung in Azure mit Visual Studio Team Services) (Video, 11 Min. 21 Sek.)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b968ead26d632c70f0b1adc8864600769629a90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3236530c1a7b92fd1cba1bdd61e3e1c0973b58c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668694"
 ---
 # <a name="synchronization-time"></a>Synchronisierungszeit
 Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Synchronisierung kategorisiert sind. Wenn ein Thread bei der Synchronisierung als „blockiert“ markiert wird, wird eine der folgenden Optionen impliziert:  
@@ -30,4 +31,4 @@ Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als 
  Überprüfen Sie die Liste der blockierten Aufrufe und die Profilberichte sorgfältig, um die Ursache für die Blockierung des Threads nachzuvollziehen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+ [Threadansicht](../profiling/threads-view-parallel-performance.md)

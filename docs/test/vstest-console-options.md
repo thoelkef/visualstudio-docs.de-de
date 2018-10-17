@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2821e785d0caf504cd64eb90a6538b1a69e9a26
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978652"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612661"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/Framework: [*Frameworkversion*]**|.NET Framework-Zielversion, in der der Test ausgeführt wird.<br />Gültige Werte sind Framework35, Framework40, Framework45 und FrameworkUap10.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
 |**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Ausdruck\> entspricht dem Format <Eigenschaft\>=<Wert\>[&#124;<Ausdruck\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
-|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Teamprojekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Teamprojektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*Dateiname*]**|Listet gefundene Tests aus dem angegebenen Testcontainer auf.|
 |**/ListDiscoverers**|Listet alle installierten Test-Discoverer auf.|
 |**/ListExecutors**|Listet alle installierten Test-Executors auf.|
@@ -54,6 +54,10 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/ListSettingsProviders**|Listet alle installierten Testeinstellungsanbieter auf.|
 |**/Blame**|Verfolgt die Tests während ihrer Ausführung und verfolgt, ob der Test-Hostprozess abstürzt, gibt die Testnamen in der Reihenfolge ihrer Ausführung einschließlich des spezifischen Tests aus, der zum Zeitpunkt des Absturzes ausgeführt wurde. Durch diese Ausgabe kann der betreffende Test besser isoliert und weiter diagnostiziert werden. [Weitere Informationen](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*Dateiname*]**|Schreibt Protokolle zur Diagnoseablaufverfolgung für die angegebene Datei.|
+|**/ResultsDirectory:[*path*]**|Das Verzeichnis mit den Testergebnissen wird am angegebenen Pfad erstellt, falls es noch nicht vorhanden ist.<br />Ein Beispiel: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|Prozess-ID des übergeordneten Prozesses, der für den Start des aktuellen Prozesses verantwortlich ist.|
+|**/Port:[*port*]**|Der Port für die Socketverbindung und den Empfang der Ereignismeldungen.|
+|**/Collect:[*dataCollector friendlyName*]**|Aktiviert den Datensammler für den Testlauf. [Weitere Informationen](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Bei den Optionen und Werten muss die Groß-/Kleinschreibung nicht beachtet werden.

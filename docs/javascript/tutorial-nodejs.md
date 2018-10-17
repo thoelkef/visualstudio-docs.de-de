@@ -2,7 +2,7 @@
 title: Erstellen einer Node.js- und Express-App
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132267"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168343"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://visualstudio.microsoft.com) gratis herunterladen.
@@ -85,7 +85,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
 
     (3) Der NPM-Knoten zeigt alle installierten NPM-Pakete an. Sie können mit der rechten Maustaste auf den NPM-Knoten klicken, um mithilfe eines Dialogfelds nach NPM-Paketen zu suchen und diese zu installieren.Sie können Pakete auch installieren oder aktualisieren, indem Sie die Einstellungen in *package.json* und die Optionen verwenden, die Sie über einen Rechtsklick auf den NPM-Knoten erreichen.
 
-    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird.
+    (4) *package.json* ist eine Datei, die von NPM zum Verwalten von Paketabhängigkeiten und Paketversionen von lokal installierten Paketen verwendet wird. Weitere Informationen zu dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
 
     (5) Projektdateien wie *app.js* werden unter dem Projektknoten angezeigt. *app.js* ist die Projektstartdatei. Deshalb wird Sie **fett** angezeigt. Sie können die Startdatei festlegen, indem Sie mit der rechten Maustaste auf eine Datei im Projekt klicken und **Als Node.js-Startdatei festlegen** auswählen.
 
@@ -192,9 +192,11 @@ Als Nächstes führen Sie die App mit dem angefügten Visual Studio-Debugger aus
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-1. Wählen Sie das Debugziel in der Debug-Symbolleiste aus.
+1. Wählen Sie das Debugziel in der Debug-Symbolleiste aus, z.B. Edge oder Chrome.
 
     ![Debugziel auswählen](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Browserauswahl** aus, und klicken Sie dann auf Chrome, um diesen Browser als Standardbrowser festzulegen (wählen Sie dazu **Als Standard festlegen** aus).
 
 1. Drücken Sie **F5** (**Debuggen** > **Debuggen starten**), um die Anwendung auszuführen.
 

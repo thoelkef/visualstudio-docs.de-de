@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510665"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495933"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage-Setupszenarien
 
@@ -31,7 +31,7 @@ Die in diesem Thema behandelten Szenarien sind nicht Ihre einzigen Möglichkeite
 
 ### <a name="make-your-components-independent"></a>Stellen Sie Ihre Komponenten unabhängig
 
-Nachdem Sie identifizieren, und füllen Sie eine Komponente, weisen eine `GUID`, und stellen Sie die Komponente, die Zusammensetzung kann nicht geändert werden. Wenn Sie einer Komponente Komposition ändern, muss die resultierende Komponente eine neue Komponente mit einem neuen `GUID`. Wenn diese Fakten, ist die größte Flexibilität für die versionsverwaltung verfügbaren machen jede Komponente unabhängig, selbständig einen detaillierten Einheit. Weitere Informationen zu Regeln für die Komponenten, finden Sie unter [Ändern des Codes für die Komponente](/windows/desktop/Msi/changing-the-component-code) und [was geschieht, wenn die Komponente Regeln werden unterteilt?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Nachdem Sie identifizieren, und füllen Sie eine Komponente, weisen eine `GUID`, und stellen Sie die Komponente, die Zusammensetzung kann nicht geändert werden. Wenn Sie einer Komponente Komposition ändern, muss die resultierende Komponente eine neue Komponente mit einem neuen `GUID`. Wenn diese Fakten, ist die größte Flexibilität für die versionsverwaltung verfügbaren machen jede Komponente unabhängig, selbständig einen detaillierten Einheit. Weitere Informationen zu Regeln für die Komponenten, finden Sie unter [Ändern des Codes für die Komponente](/windows/desktop/Msi/changing-the-component-code) und [was geschieht, wenn die Komponente Regeln werden unterteilt?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Mischen Sie freigegebene und private Ressourcen in eine Komponente nicht
 
@@ -77,7 +77,7 @@ In diesem Fall ist das VSPackage ein verwaltetes VSPackage, die im globalen Asse
 
 ![VS Update Seite-an-Seite der Visual Studio-Installer](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Weitere Informationen zur Bereitstellung von Seite-an-Seite-Assemblys finden Sie unter [Bereitstellung vereinfachen und Beheben von DLL-Hölle mit .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Weitere Informationen zur Bereitstellung von Seite-an-Seite-Assemblys finden Sie unter [Bereitstellung vereinfachen und Beheben von DLL-Hölle mit .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Siehe auch
 

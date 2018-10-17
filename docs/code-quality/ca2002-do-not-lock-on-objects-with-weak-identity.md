@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916553"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548464"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Auf Objekten mit schwacher Identität nicht sperren
 
@@ -36,7 +36,7 @@ ms.locfileid: "31916553"
 
 ## <a name="cause"></a>Ursache
 
-Ein Thread versucht, eine Sperre für ein Objekt zu erhalten, die eine schwache Identität verfügt.
+Ein Thread versucht, eine Sperre für ein Objekt abzurufen, die eine schwache Identität verfügt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -64,9 +64,9 @@ Die folgenden Typen haben eine schwache Identität und werden von der Regel geke
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie ein Objekt von einem Typ, der nicht in der Liste im Abschnitt "Beschreibung" ist.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie ein Objekt von einem Typ, der nicht in der Liste in der Beschreibung des Ereignisses ist.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
@@ -83,7 +83,7 @@ Das folgende Beispiel zeigt einige Objektsperren, die die Regel verletzen.
 
 ## <a name="see-also"></a>Siehe auch
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[lock-Anweisung (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock-Anweisung (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [lock-Anweisung (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock-Anweisung (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

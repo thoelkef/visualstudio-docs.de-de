@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586807"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495686"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz
 Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörigen Namespaces und anderen Bereichen von Interesse für Entwickler, die Visual Studio-SDK verwenden.  
@@ -223,7 +223,7 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
  <xref:Microsoft.VisualStudio.Threading>  
  Für Visual Studio threading verwendet.  
   
- [Microsoft.VisualStudio.ConnectedServices Namespace](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) für Visual Studio verbundene Dienste verwendet.  
+ [Microsoft.VisualStudio.ConnectedServices Namespace](/dotnet/api/microsoft.visualstudio.connectedservices) für Visual Studio verbundene Dienste verwendet.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) Enumeration  
  Gibt die IntelliSense-hostflags an.  
@@ -240,7 +240,7 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)  
  Links zu Themen, die für die Source-Plug-in-API.  
   
- [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md)  
+ [Befehlszeilenparameter](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Enthält Links zu Themen, die beschreiben, wie Entwickler mehrere Aufgaben über die Befehlszeile automatisieren können.  
   
  [Fehlerbehandlung und Rückgabewerte](../extensibility/error-handling-and-return-values.md)  

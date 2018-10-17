@@ -1,26 +1,26 @@
 ---
-title: Testtools für Entwickler in Visual Studio
+title: Testtools für Entwickler
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302929"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370639"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testtools, -szenarios und -funktionen für Entwickler
 
-Aufrechterhalten der Codeintegrität mit Unittests Visual Studio bietet eine Vielzahl an leistungsstarken Tools und Techniken, die Entwickler beim Testen von Anwendungen verwenden können:
+Aufrechterhalten der Codeintegrität mit Unittests Visual Studio bietet eine Vielzahl an leistungsstarken Tools und Methoden, die Entwickler beim Testen von Anwendungen verwenden können.
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Verhindern von Regressionen und Erreichen von Code Coverage mit IntelliTest
 
@@ -38,9 +38,7 @@ Verbessern Sie die Abdeckung und vermeiden Sie Regressionen mit IntelliTest. Mit
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testen der Benutzeroberfläche mit programmierter UI und Selenium
 
-Testen Sie Ihre Benutzeroberfläche mit branchenführenden oder von der Community als gut befundenen UI-Tests.
-Tests für programmierte UI bieten die Möglichkeit, vollautomatisierte Tests zu erstellen, um die Funktionalität und das Verhalten der Benutzeroberfläche Ihrer Anwendung zu überprüfen.
-Sie können Benutzeroberflächentests für eine Vielzahl von Technologien automatisieren, so z.B. für XAML-basierte UWP-Apps, Browser-Apps und SharePoint-Apps.
+Testen Sie Ihre Benutzeroberfläche mit branchenführenden oder von der Community als gut befundenen UI-Tests. Tests für programmierte UI bieten die Möglichkeit, vollautomatisierte Tests zu erstellen, um die Funktionalität und das Verhalten der Benutzeroberfläche Ihrer Anwendung zu überprüfen. Sie können Benutzeroberflächentests für eine Vielzahl von Technologien automatisieren, so z.B. für XAML-basierte UWP-Apps, Browser-Apps und SharePoint-Apps.
 
 Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für generische, browserbasierte UI-Tests mit Selenium entscheiden: Visual Studio stellt Ihnen alle Tools bereit, die Sie benötigen.
 
@@ -60,24 +58,22 @@ Die Code Coverage-Analyse kann sowohl in verwaltetem als auch in nicht verwaltet
 
 Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
-![Testen mit Visual Studio Team Services und Team Foundation Server](media/devtest-codecoverage.png)
-
 * [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Unittest, Code Coverage und Codeklonanalyse mit Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Anpassen der Code Coverage-Analyse](customizing-code-coverage-analysis.md)
 
-## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Unittests mit jeden Framework mithilfe des leistungsstarken Test-Explorers
+## <a name="test-explorer"></a>Test-Explorer
 
-Der Test-Explorer hilft Entwicklern beim Erstellen, Verwalten und Ausnutzen von Unittests.
+Der **Test-Explorer** hilft Entwicklern beim Erstellen, Verwalten und Ausführen von Komponententests.
 
 ![Visual Studio Team Explorer](media/devtest-testexplorer.png)
 
 * [Erste Schritte mit Unittests](unit-test-your-code.md)
 * [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
-* [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
+* [Häufig gestellte Fragen zum Test-Explorer](test-explorer-faq.md)
 * [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md)
 
-Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter von Drittanbietern wie NUnit und xUnit.net. Zusätzlich arbeitet die Codeklonfunktion Hand in Hand mit dem Bereitstellen hochwertiger Software. Mit ihr können Sie Blöcke von semantisch ähnlichem Code identifizieren, die Kandidaten für gängige Fehlerbehebungen und Refactoring sein können.
+Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter von Drittanbietern wie NUnit und xUnit.net. Zusätzlich geht die Codeklonfunktion mit der Bereitstellung hochwertiger Software einher. Mit ihr können Sie Blöcke semantisch ähnlichen Codes identifizieren, die Kandidaten für gängige Fehlerbehebungen und Refactoring sein können.
 
 ![Integrationspakete von Drittanbietern](media/devtest-thirdparty.png)
 
@@ -87,3 +83,4 @@ Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter 
 * [Speed up Unit Test Execution in Team Foundation Server (Beschleunigen der Ausführung von Unittests in Team Foundation Server)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Parallel and context sensitive unit test execution (Parallele und kontextsensitive Ausführung von Unittests)](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Unittest, Code Coverage und Codeklonanalyse mit Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)

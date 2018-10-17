@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468656"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549650"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -46,7 +46,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | **Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen**| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
 | **Beim Installieren oder Entfernen von Paketen das Ausgabefenster anzeigen** | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
 | **„Pip“ immer als Administrator ausführen** | Aus | Erhöht `pip install`-Vorgänge immer in allen Umgebungen Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereich des Dateisystems wie z.B. *c:\Programme* befindet. In dieser Aufforderung können Sie auswählen, dass `pip install` immer für diese eine Umgebung erhöht ist. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
-| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md). |
+| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Registerkarte „IntelliSense“](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Systemweite PYTHONPATH-Variablen ignorieren** | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Suchpfade](search-paths.md). |
 | **Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren** | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](search-paths.md) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
 | **Warnen, wenn das importierte Modul nicht gefunden wird** | Ein | Deaktivieren Sie diese Option, um Warnungen zu unterdrücken, wenn Sie wissen, dass ein importiertes Modul aktuell nicht verfügbar ist, den Codevorgang aber ansonsten nicht beeinträchtigt. |
@@ -90,8 +90,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | --- | --- | --- |
 | **Skripts** | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf **interaktive** Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments-window-tab-reference.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | **NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs** | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im **interaktiven** Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im **interaktiven** Fenster zu verwenden. |
-| **Vervollständigungsmodus** | **Nur Ausdrücke ohne Funktionsaufrufe auswerten** | Für das Bestimmen der verfügbaren Member in einem Ausdruck im **interaktiven** Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung **Nur Ausdrücke ohne Funktionsaufrufe auswerten** schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  
-  **Ausdrücke nie auswerten** verhindert alle Nebenwirkungen, indem nur die gängige IntelliSense-Engine für Vorschläge verwendet wird. **Alle Ausdrücke auswerten** wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
+| **Vervollständigungsmodus** | **Nur Ausdrücke ohne Funktionsaufrufe auswerten** | Für das Bestimmen der verfügbaren Member in einem Ausdruck im **interaktiven** Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung **Nur Ausdrücke ohne Funktionsaufrufe auswerten** schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  **Ausdrücke nie auswerten** verhindert alle Nebenwirkungen, indem nur die gängige IntelliSense-Engine für Vorschläge verwendet wird. **Alle Ausdrücke auswerten** wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
 | **Vorschläge zur statischen Analyse ausblenden** | Aus | Wenn diese Option aktiviert ist, werden nur Vorschläge angezeigt, die durch das Abrufen von Ausdrücken entstanden sind. Wenn diese Option mit dem Wert **Ausdrücke nie auswerten** für den **Vervollständigungsmodus** kombiniert wird, werden keine brauchbaren Vervollständigungen im **interaktiven** Fenster angezeigt. |
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Interaktives Fenster“](media/options-interactive-windows.png)
@@ -112,7 +111,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 | Option | Standard | Beschreibung  |
 | --- | --- | --- |
-| **Commit bei Eingabe der folgenden Zeichen** | **{}[]().,:;+-*/%&&#124;^~=<>#@\\** | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
+| **Commit bei Eingabe der folgenden Zeichen** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | **Bei EINGABE wird die aktuelle Vervollständigung übernommen** | Ein | Wenn diese Option aktiviert ist, wählt die **EINGABETASTE** die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für **EINGABE**, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
 | **Mit Eingabe neue Zeile nach jedem ganzen Wort** | Aus | Wenn Sie das gesamte Wort eingeben, das im Vervollständigungspopupfenster angezeigt wird, und dann **EINGABE** drücken, wird diese Vervollständigung standardmäßig committet. Wenn Sie diese Option festlegen, committen Sie Vervollständigungen mit Abschluss der Eingabe des Bezeichners, sodass **EINGABE** eine neue Zeile einfügt. |
 

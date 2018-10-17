@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279090"
+ms.locfileid: "44320812"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Übersicht über die Codeanalyse für verwalteten code
 
@@ -75,7 +75,7 @@ Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrich
 
 ## <a name="team-build-integration"></a>Team Build-integration
 
-Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index).
+Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

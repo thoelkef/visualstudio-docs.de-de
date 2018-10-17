@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627186"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384239"
 ---
 # <a name="find-and-replace-text"></a>Suchen und Ersetzen von Text
 
-Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) oder mit [In Dateien suchen/In Dateien ersetzen](#find-replace-in-files) suchen und ersetzen. Ab Version 15.8 von Visual Studio 2017 können Sie *bestimmte* Musterinstanzen mithilfe des *[Auswählens mehrerer Caretzeichen](#multi-caret-selection)* suchen und ersetzen.
+Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) oder mit [In Dateien suchen/In Dateien ersetzen](#find-in-files-and-replace-in-files) suchen und ersetzen. Ab Version 15.8 von Visual Studio 2017 können Sie *bestimmte* Musterinstanzen mithilfe des *[Auswählens mehrerer Caretzeichen](#multi-caret-selection)* suchen und ersetzen.
 
 > [!TIP]
 > Wenn Sie Codesymbole wie Variablen und Methoden umbenennen, ist es besser, anstelle von Suchen und Ersetzen eine *[Umgestaltung](../ide/reference/rename.md)* zu verwenden. Die Umgestaltung ist eine intelligente Funktion, die den Projektumfang berücksichtigt, während Suchen und Ersetzen alle Instanzen blind ersetzt.

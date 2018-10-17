@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379288"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321046"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten
 
@@ -46,7 +46,7 @@ Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt hab
     > [!NOTE]
     > Obwohl der Adapter für diagnostische Daten und der Konfigurations-Editor im gleichen Projekt erstellt und in die gleiche Assembly integriert werden können, besteht die Möglichkeit, auf Wunsch gesonderte Projekte zu verwenden und gesonderte Assemblys dafür zu erstellen.
 
-     Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data in manual tests (VSTS) (Sammeln von Diagnosedaten in manuellen Tests (VSTS))](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Sie müssen zunächst eine vorhandene Testeinstellung auswählen oder eine neue in Microsoft Test Manager oder Visual Studio erstellen, und dann müssen Sie Ihren Adapter für diagnostische Daten auf der Registerkarte **Daten und Diagnose** der ausgewählten Testeinstellungen auswählen, um den Adapter für diagnostische Daten für einen Test auszuwählen.
 
@@ -61,7 +61,7 @@ Wenn Sie einen benutzerdefinierten Adapter für diagnostische Daten erstellt hab
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten im Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
 - [Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

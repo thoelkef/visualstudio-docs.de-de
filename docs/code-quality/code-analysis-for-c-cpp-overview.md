@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280986"
+ms.locfileid: "44320708"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Codeanalyse für C/C++-Übersicht
 
@@ -64,7 +64,7 @@ Sie möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien 
 
 ## <a name="team-build-integration"></a>Team Build-integration
 
-Sie können die integrierten Funktionen des Buildsystems verwenden, zur Ausführung von Code Analysetool als einen Schritt des der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index).
+Sie können die integrierten Funktionen des Buildsystems verwenden, zur Ausführung von Code Analysetool als einen Schritt des der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

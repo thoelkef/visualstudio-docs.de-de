@@ -1,0 +1,68 @@
+---
+title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft-Dokumentation
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+dev_langs:
+- C++
+ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
+caps.latest.revision: 6
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6c0de4fe32b549b33940bbd14b0e5aaf0f8ae8a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282118"
+---
+# <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+Gibt eine Enumeration von Symbolen für Inlineframes, die entsprechen zum Speicherort angegebenen Quelle zurück.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT findAcceleratorInlineeLinesByName (   
+   IDiaSymbol*           parent,  
+   IDiaSourceFile*       file,  
+   DWORD                 linenum,  
+   DWORD                 colnum,  
+   IDiaEnumLineNumbers** ppResult  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `parent`  
+ [in] Ein `IDiaSymbol` , entspricht die Accelerator-Stub-Funktion, die durchsucht werden soll.  
+  
+ `file`  
+ [in] Die `IDiaSourceFile` des Quellspeicherorts.  
+  
+ `linenum`  
+ [in] Die Nummer der Zeile des Quellspeicherorts.  
+  
+ `colnum`  
+ [in] Die Spaltennummer des Quellspeicherorts.  
+  
+ `ppResult`  
+ [out] Ein Zeiger auf ein `IDiaEnumLineNumbers` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+
+
+

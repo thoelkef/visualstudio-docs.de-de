@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915583"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860159"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden
 |||
@@ -32,18 +32,18 @@ ms.locfileid: "31915583"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Die Namen von zwei Typen, Member, Parameter oder vollständig qualifizierte Namespaces sind identisch, wenn sie in Kleinbuchstaben konvertiert wurden.
+ Die Namen von zwei Typen, Member, Parameter oder den vollqualifizierten Namespaces sind identisch, wenn sie in Kleinbuchstaben konvertiert wurden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Bezeichner für Namespaces, Typen, Member und Parameter dürfen sich nicht nur durch die Groß-/Kleinschreibung unterscheiden, weil Sprachen, die auf die Common Language Runtime abzielen, nicht zwischen Groß- und Kleinschreibung unterscheiden müssen. Beispielsweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ist eine weit verbreitete Sprache, Groß-/Kleinschreibung.
+ Bezeichner für Namespaces, Typen, Member und Parameter dürfen sich nicht nur durch die Groß-/Kleinschreibung unterscheiden, weil Sprachen, die auf die Common Language Runtime abzielen, nicht zwischen Groß- und Kleinschreibung unterscheiden müssen. Z. B. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ist eine weit verbreitete Sprache, Groß-/Kleinschreibung.
 
- Mit dieser Regel wird für nur öffentlich sichtbare Elemente ausgelöst.
+ Mit dieser Regel wird für öffentlich sichtbaren Member nur ausgelöst werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wählen Sie einen Namen, der eindeutig ist, wenn es mit anderen Bezeichnern in Groß-und Kleinschreibung verglichen wird.
+ Wählen Sie einen Namen, der eindeutig ist, wenn er mit anderen Bezeichnern in Groß-und Kleinschreibung verglichen wird.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek ist möglicherweise nicht verwendbar in allen verfügbaren Sprachen in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek kann nicht in allen verfügbaren Sprachen in .NET Framework verwendet werden.
 
 ## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes
  Das folgende Beispiel zeigt einen Verstoß gegen diese Regel.

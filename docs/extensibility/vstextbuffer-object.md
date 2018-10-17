@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586301"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495348"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer-Objekt
 Der TextBuffer-Objekt stellt einen Stream von Unicode-Text, der in der Regel von einer Datei zugeordnet ist. Ein <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt außerhalb des Kontexts der Kern-Editor, z. B. einen Assistenten verwendet werden kann.  
@@ -30,9 +30,9 @@ Der TextBuffer-Objekt stellt einen Stream von Unicode-Text, der in der Regel von
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Standard-OLE-Schnittstelle. Für Rückgängigmachen/Wiederholen-Behandlung im Puffer verwendet.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Standard-OLE-Schnittstelle.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Standard-OLE-Schnittstelle.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Standard-OLE-Schnittstelle. Für Rückgängigmachen/Wiederholen-Behandlung im Puffer verwendet.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Standard-OLE-Schnittstelle.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Standard-OLE-Schnittstelle.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von Aktionen für zusammengesetzte Wörter (d. h. Aktionen, die in einer einzelnen Rückgängig-/Wiederholen-Einheit gruppiert sind).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Ermöglicht die Persistenz der Dokumentdaten, die vom Textpuffer verwaltet.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Stellt die grundlegenden Dienste. wird von vielen Clients verwendet.|  
@@ -49,4 +49,4 @@ Der TextBuffer-Objekt stellt einen Stream von Unicode-Text, der in der Regel von
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Abbildungen bearbeiten](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Abbildungen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)

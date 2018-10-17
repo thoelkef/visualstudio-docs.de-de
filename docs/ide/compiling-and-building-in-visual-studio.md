@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 0c1e911dad2b4abe2fb092b2adb221c4aebec136
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341675"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370769"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -28,15 +28,15 @@ Indem Sie Ihren Code häufig erstellen, können Sie Kompilierzeitfehler wie zum 
 
 Ein erfolgreicher Build ist im Wesentlichen eine Überprüfung, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst wurden. Hierdurch wird eine ausführbare Datei erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.md) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung in diesen Vorgang finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).
 
-Innerhalb der Visual Studio-Produktfamilie gibt es drei Methoden, die Sie zum Erstellen einer Anwendung verwenden können: die Visual Studio-IDE, die MSBuild-Befehlszeilentools und Team Foundation Build in Visual Studio Team Services:
+Sie können mit der Visual Studio-IDE, MSBuild-Befehlszeilentools und Azure Pipelines eine Anwendung erstellen:
 
 | Erstellungsmethode | Vorteile |
 | --- |--- | --- |
 | IDE |- Direktes Erstellen von Builds und Testen in einem Debugger<br />- Ausführen von Multiprozessorbuilds für C++- und C#-Projekte<br />- Anpassen verschiedener Aspekte des Buildsystems |
 | MSBuild-Befehlszeile| - Erstellen von Projekten, ohne Visual Studio zu installieren<br />- Ausführen von Multiprozessorbuilds für alle Projekttypen<br />- Anpassen der meisten Bereiche des Buildsystems|
-| Team Foundation Build | - Automatisieren des Buildprozesses als Teil einer fortlaufenden Integration oder einer fortlaufenden Zustellpipeline<br />- Anwenden von automatisierten Tests mit jedem Build<br />– Verwenden der nahezu unbegrenzten cloudbasierten Ressourcen für Buildprozesse<br />- Anpassen des Buildworkflows und Erstellen von Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben|
+| Azure Pipelines | - Automatisieren des Buildprozesses als Teil einer fortlaufenden Integration oder einer fortlaufenden Zustellpipeline<br />- Anwenden von automatisierten Tests mit jedem Build<br />– Verwenden der nahezu unbegrenzten cloudbasierten Ressourcen für Buildprozesse<br />- Anpassen des Buildworkflows und Erstellen von Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben|
 
-Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Continuous integration and deployment (Fortlaufende Integration und Bereitstellung)](/vsts/pipelines/index?view=vsts).
+Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="overview-of-building-from-the-ide"></a>Überblick: Erstellen aus der IDE
 

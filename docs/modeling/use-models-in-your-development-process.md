@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623596"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859392"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -48,7 +48,7 @@ In beiden Fällen lassen sich durch das Erstellen eines Modells mangelnde Übere
 
 ## <a name="use-models-with-other-artifacts"></a>Verwenden von Modellen mit anderen Artefakten
 
-Ein Modell allein ist noch keine Anforderungsspezifikation oder Architektur. Es ist ein Werkzeug, um einige Aspekte klarer darzustellen, jedoch können nicht alle während des Softwareentwurfs erforderlichen Aspekte dargestellt werden. Die Modelle sollten daher zusammen mit anderen Kommunikationsmitteln, z. B. OneNote-Seiten oder -Absätzen, Microsoft Office-Dokumenten, Arbeitsaufgaben in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] oder Haftnotizen an der Wand des Projektraums, verwendet werden. Außer dem letzten Element können alle diese Objekttypen mit Elementteilen des Modells verknüpft werden.
+Ein Modell allein ist noch keine Anforderungsspezifikation oder Architektur. Es ist ein Werkzeug, um einige Aspekte klarer darzustellen, jedoch können nicht alle während des Softwareentwurfs erforderlichen Aspekte dargestellt werden. Die Modelle sollten daher zusammen mit anderen Kommunikationsmitteln, z. B. OneNote-Seiten oder Absätze, Microsoft Office-Dokumenten, Arbeitsaufgaben in Team Foundation oder Haftnotizen an der Wand des Projektraums verwendet werden. Außer dem letzten Element können alle diese Objekttypen mit Elementteilen des Modells verknüpft werden.
 
 Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte verwendet. Je nach Umfang und Art des Projekts verwenden Sie eventuell mehrere oder keinen dieser Aspekte:
 
@@ -88,7 +88,7 @@ Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der
 
 - Veranstalten Sie gegen Ende jeder Iteration einen Anforderungsworkshop, um die Details der Anforderungen oder User Stories zu definieren, die in der nächsten Iteration entwickelt werden. Laden Sie Benutzer und Projektbeteiligte, die Entscheidungen zu Prioritäten treffen können, sowie Entwickler und Systemtester zur Teilnahme ein. Planen Sie zum Definieren der Anforderungen für eine Iteration von 2 Wochen eine Workshopdauer von 3 Stunden ein.
 
-- Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Das Ergebnis des Workshops ist ein Iterationsrückstand. Dabei handelt es sich um eine Liste von Entwicklungsaufgaben in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] und von Testsammlungen in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Das Ergebnis des Workshops ist ein Iterationsrückstand: d. h. eine Liste von Entwicklungsaufgaben in Team Foundation und Testsammlungen in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - Besprechen Sie im Anforderungsworkshop den Entwurf nur insoweit, als Sie die Entwicklungsaufgaben schätzungsweise bestimmen müssen. Begrenzen Sie ansonsten die Besprechung auf Systemverhalten, das Benutzer direkt wahrnehmen können. Halten Sie das Anforderungsmodell vom Architekturmodell getrennt.
 
@@ -96,7 +96,7 @@ Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der
 
 ### <a name="link-model-to-work-items"></a>Verknüpfen Sie das Modell mit Arbeitsaufgaben
 
-Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Sie können zu diesem Zweck Arbeitsaufgaben in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] mit Elementen im Modell verknüpfen.
+Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Dies ist möglich, durch das Verknüpfen von Arbeitsaufgaben in Team Foundation auf Elemente im Modell.
 
 Sie können jedes Element mit Arbeitsaufgaben verknüpfen, die zweckmäßigsten Elemente lauten jedoch wie folgt:
 

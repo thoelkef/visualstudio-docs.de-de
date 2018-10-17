@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ba776cb423773ca6c5a4646bbf30531cd2d27f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59a1bd75ce2e9f437661fa2b2034f8e31f729ef9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897355"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546719"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31897355"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ ist versiegelt und deklariert eine Methode, die sowohl `virtual` (`Overridable` in Visual Basic) und nicht die letzte. Diese Regel meldet keine Verstöße für Delegattypen, die diesem Muster folgen müssen.
+ Ein öffentlicher Typ ist versiegelt und deklariert eine Methode, die sowohl `virtual` (`Overridable` in Visual Basic) und nicht. Diese Regel meldet keine Verstöße für Delegattypen, die diesem Muster folgen müssen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Typen deklarieren Methoden als virtuell, damit erbende Typen die Implementierung der virtuellen Methode überschreiben können. Sie können nicht per Definition aus einem versiegelten Typ, indem eine virtuelle Methode für einen versiegelten Typ bedeutungslos erben.
+ Typen deklarieren Methoden als virtuell, damit erbende Typen die Implementierung der virtuellen Methode überschreiben können. Sie können nicht per Definition aus einem versiegelten Typ eine virtuelle Methode für einen versiegelten Typ bedeutungslos erben.
 
- Die Visual Basic- und C#-Compiler lassen sich nicht auf Typen, die diese Regel verletzen aus.
+ Die Visual Basic- und C#-Compiler gestatten keine Typen, die gegen diese Regel verstoßen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie die Methode nicht virtuell oder nutzen Sie vererbbar.
+ Um einen Verstoß gegen diese Regel zu beheben, stellen Sie die Methode nicht virtuell, oder ändern Sie den Typ geerbt.
 
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Verlassen den Typ im aktuellen Zustand kann dazu führen, dass Problemen bei der Wartung und bietet keine Vorteile.
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+ Unterdrücken Sie keine Warnung dieser Regel. Verlassen den Typ im aktuellen Zustand kann dazu führen, dass Wartungsprobleme und bietet keine Vorteile.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der mit dieser Regel verletzt.
+ Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.
 
  [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

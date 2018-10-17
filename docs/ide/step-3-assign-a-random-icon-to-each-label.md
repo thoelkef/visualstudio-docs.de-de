@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8aac613f4fe8a93ebd31127e26bcd92218b6300
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748243"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775850"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Schritt 3: Zuweisen eines zufällig ausgewählten Symbols zu jeder Bezeichnung
 Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen erscheinen. Um dies zu vermeiden, weisen Sie die Symbole mithilfe einer `AssignIconsToSquares()`-Methode zufällig den Bezeichnungsfeldern des Formulars zu.
@@ -49,7 +49,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
 
      Vergessen Sie nicht: Wenn Sie sich über die Funktionsweise eines Codeabschnitts nicht sicher sind, können Sie den Mauszeiger über einem Codeelement positionieren und erhalten eine entsprechende QuickInfo. Mithilfe des Visual Studio-Debuggers können Sie auch während der Programmausführung jede Codezeile untersuchen. Weitere Informationen finden Sie unter [Wie setze ich den Debugger in Visual Studio ein?](http://msdn.microsoft.com/vstudio/ee672313.aspx) oder [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-3.  Um das Spielbrett mit Symbolen zu füllen, müssen Sie die `AssignIconsToSquares()`-Methode aufrufen, sobald das Programm startet. Wenn Sie Visual C# verwenden, fügen Sie direkt unterhalb des Aufrufs der `InitializeComponent()`-Methode im **Form1***constructor* eine Anweisung hinzu, mit der das Formular die neue Methode aufruft und sich entsprechend einrichtet, bevor es angezeigt wird. Konstruktoren werden aufgerufen, wenn Sie ein neues Objekt erstellen, beispielsweise eine Klasse oder eine Struktur. Weitere Informationen finden Sie unter [Konstruktoren (C#-Programmierhandbuch)](http://msdn.microsoft.com/library/ace5hbzh.aspx) oder [Verwenden von Konstruktoren und Destruktoren](http://msdn.microsoft.com/library/2z08e49e.aspx) in Visual Basic.
+3.  Um das Spielbrett mit Symbolen zu füllen, müssen Sie die `AssignIconsToSquares()`-Methode aufrufen, sobald das Programm startet. Wenn Sie Visual C# verwenden, fügen Sie direkt unterhalb des Aufrufs der `InitializeComponent()`-Methode im **Form1**_constructor_ eine Anweisung hinzu, mit der das Formular die neue Methode aufruft und sich entsprechend einrichtet, bevor es angezeigt wird. Konstruktoren werden aufgerufen, wenn Sie ein neues Objekt erstellen, beispielsweise eine Klasse oder eine Struktur. Weitere Informationen finden Sie unter [Konstruktoren (C#-Programmierhandbuch)](http://msdn.microsoft.com/library/ace5hbzh.aspx) oder [Verwenden von Konstruktoren und Destruktoren](http://msdn.microsoft.com/library/2z08e49e.aspx) in Visual Basic.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

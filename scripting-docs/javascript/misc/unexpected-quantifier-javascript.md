@@ -1,5 +1,5 @@
 ---
-title: Unerwarteter Quantifizierer (JavaScript) | Microsoft Docs
+title: Unerwarteter Quantifizierer (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,39 +20,39 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb6d6d3129057c399dd7369c6f69eb7396f07ab4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633250"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282262"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Unerwarteter Quantifizierer (JavaScript)
-Beim Verfassen Ihre Suche Musters eines regulären Ausdrucks, haben Sie ein Muster-Element mit einer unzulässige Wiederholung Authentifizierungsstufe erstellt. Zum Beispiel das Muster  
+Beim Verfassen Ihrer Musters für reguläre Ausdrücke suchen, haben Sie ein Muster-Element mit einem Faktor unzulässige Wiederholung erstellt. Zum Beispiel das Muster  
   
 ```  
 /^+/  
 ```  
   
- ist nicht zulässig da das Element ^ (Anfang Eingabe) sind keine Wiederholung Faktor. Die folgende Tabelle enthält die Elemente, die Wiederholung Faktoren haben dürfen.  
+ ist nicht zulässig da das Element ^ (Beginn der Eingabe) sind keine Wiederholung Faktor. Die folgende Tabelle enthält die Elemente, die Wiederholung Faktoren haben können.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|^|Der Anfang der Eingabe|  
+|^|Beginn der Eingabe|  
 |$|Ende der Eingabe|  
 |\b|Wortgrenze|  
 |\B|Nicht-Wortgrenze|  
 |*|NULL oder mehr Wiederholungen|  
 |+|Eine oder mehrere Wiederholungen|  
-|?|NULL oder eins Wiederholungen|  
+|?|NULL oder einem Wiederholungen|  
 |{n}|n Wiederholungen|  
-|{n}|n oder weitere Wiederholungen|  
-|{n, m}|Von n zu m Wiederholungen, inklusive|  
+|{n}|n oder mehrere Wiederholungen|  
+|{n, m}|Von n bis m Wiederholungen, inklusive|  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass Ihre Suche Muster Element nur zulässige Wiederholung Faktoren enthält.  
+-   Stellen Sie sicher, dass Ihre Suche Muster-Element nur zulässige Wiederholung Faktoren enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntax regulärer Ausdrücke (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

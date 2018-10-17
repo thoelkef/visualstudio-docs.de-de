@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512222"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495985"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zeigen kurze Beschreibungen der Schnittstellen und -Dienste, die in das Modell und die Schnittstellen und Dienste im Zusammenhang mit der bestimmte Objekte identifiziert. Darüber hinaus Informationen in den Tabellen andere Schnittstellen, die in Project-Erstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.  
@@ -105,6 +105,6 @@ In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zei
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Nicht im Build: verwenden HierUtil7-Projekt-Klasse zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Nicht im Build: verwenden HierUtil7-Projekt-Klasse zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)

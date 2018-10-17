@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749459"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668583"
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
-Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-tools.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
+Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-feature-tour.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
 
 Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
 
@@ -155,8 +155,8 @@ Das Standardheap *NT-Heap* sieht genauso aus wie vorher, außer dass das `CHeapT
 Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwenden, um Momentaufnahmen zu vergleichen und um nach Verlusten und Beschädigung in Ihrem benutzerdefinierten Heap zu suchen, das in der Hauptdokumentation [Speicherauslastung](../profiling/memory-usage.md) beschrieben wird.
 
 > [!TIP]
-> Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen**>**Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen**>**Windows**>**Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
+> Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen** > **Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen** > **Windows** > **Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
-[Profilerstellungstools](../profiling/profiling-tools.md)  
+[Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
 [Speicherauslastung](../profiling/memory-usage.md)
