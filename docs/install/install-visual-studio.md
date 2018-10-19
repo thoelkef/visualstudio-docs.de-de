@@ -94,7 +94,7 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 
 |         |         |
 |---------|---------|
-|  ![Kamerasymbol für video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171), in dem erläutert wird, wie Sie den Visual Studio-Installer und danach eine Arbeitsauslastung installieren. |
+|  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171), in dem erläutert wird, wie Sie den Visual Studio-Installer und anschließend eine Arbeitsauslastung installieren. |
 
 ## <a name="step-5---select-individual-components-optional"></a>Schritt 5: Auswählen einzelner Komponenten (optional)
 
