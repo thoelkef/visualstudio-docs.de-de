@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825414"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 
 ## <a name="IntelliTraceSupport"></a> Welche apps kann ich mit IntelliTrace Debuggen?
 
-|||
-|-|-|
-|**Vollständige Unterstützung**|– Visual Basic und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Eingeschränkte Unterstützung**|-Native-apps für Windows-Unterstützung, Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück. Es werden nur Debugger- und Ausnahmeereignissen Ereignisse unterstützt.<br />– .NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur (MVC-Controller, ADO.NET und HTTPClicent) beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- oder ASP.NET Core-apps nicht unterstützt.<br />– F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|
-|**Nicht unterstützt**|-Andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|
+| | |
+|---------------------| - |
+| **Vollständige Unterstützung** | – Visual Basic und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Eingeschränkte Unterstützung** | -Native-apps für Windows-Unterstützung, Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück. Es werden nur Debugger- und Ausnahmeereignissen Ereignisse unterstützt.<br />– .NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur (MVC-Controller, ADO.NET und HTTPClicent) beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- oder ASP.NET Core-apps nicht unterstützt.<br />– F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt |
+| **Nicht unterstützt** | -Andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps |
 
 > [!NOTE]
 > Wenn Sie möchten einen Prozess zu debuggen, der bereits ausgeführt wird, können Sie nur IntelliTrace-Ereignisse (keine Aufrufinformationen) erfassen. Sie können zu einem 32-Bit oder 64-Bit-Prozess nur auf dem lokalen Computer anfügen. Ereignisse, die auftreten, bevor Sie sich an den Prozess anfügen, werden nicht gesammelt.
@@ -77,7 +77,7 @@ IntelliTrace-Daten können aus den folgenden Quellen gespeichert werden:
 
 - Auf IIS gehostete ASP.NET-Anwendungen oder SharePoint 2010- und SharePoint 2013-Anwendungen, die bei der Bereitstellung ausgeführt werden, wenn Sie Microsoft Monitoring Agent verwenden, entweder allein oder mit System Center 2012. Finden Sie unter [verwenden Sie den eigenständigen IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md) und [Überwachen mit Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- Im Folgenden werden einige Beispiele aufgeführt, die den Nutzen von IntelliTrace beim Debuggen veranschaulichen:
+  Im Folgenden werden einige Beispiele aufgeführt, die den Nutzen von IntelliTrace beim Debuggen veranschaulichen:
 
 - Ihre Anwendung hat eine Datendatei beschädigt, doch Sie wissen nicht, wann das passiert ist.
 
@@ -111,11 +111,11 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
      In der Standardeinstellung keine optimale Leistung, IntelliTrace alle möglichen Werte für ein Debuggerereignis aufgezeichnet. Stattdessen werden folgende Werte aufgezeichnet:
 
-    - Werte in der **"lokal"** Fenster. Behalten Sie die **"lokal"** Fenster geöffnet, um diese Werte anzuzeigen.
+  - Werte in der **"lokal"** Fenster. Behalten Sie die **"lokal"** Fenster geöffnet, um diese Werte anzuzeigen.
 
-    - Werte in der **"Auto"** Fenster, wenn die **"Auto"** Fenster geöffnet ist.
+  - Werte in der **"Auto"** Fenster, wenn die **"Auto"** Fenster geöffnet ist.
 
-    - Werte in DataTips, die angezeigt werden, wenn Sie den Mauszeiger über eine Variable im Quellcodefenster bewegen, um den Wert anzuzeigen. IntelliTrace erfasst keine Werte in angehefteten DataTips.
+  - Werte in DataTips, die angezeigt werden, wenn Sie den Mauszeiger über eine Variable im Quellcodefenster bewegen, um den Wert anzuzeigen. IntelliTrace erfasst keine Werte in angehefteten DataTips.
 
     Wenn IntelliTrace-Ereignisse und Momentaufnahmen-Modus aktiviert ist, IntelliTrace wird eine Momentaufnahme der der Anwendungsprozess an jeden Debugger **Haltepunkt** und **Schritt** Ereignis. Dies wird aufgezeichnet, Werte in der **"lokal"**, **"Auto"**, und **Überwachen** Windows, unabhängig davon, ob die Fenster geöffnet oder nicht sind. Datenwerten als Datentipps alle angehefteten werden ebenfalls erfasst.
 

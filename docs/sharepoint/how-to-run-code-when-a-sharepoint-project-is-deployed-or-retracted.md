@@ -15,36 +15,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4fa7d2652e65e26686a5058fcb2c8f5130fbbdde
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832445"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Gewusst wie: Ausführen von Code beim Bereitstellen oder Zurückziehen ein SharePoint-Projekts
   Wenn Sie beim Bereitstellen oder Zurückziehen ein SharePoint-Projekts weitere Aufgaben ausführen möchten, können Sie Ereignisse behandeln, die von Visual Studio ausgelöst werden. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Zum Ausführen von Code, wenn ein SharePoint-Projekt bereitstellen oder Zurückziehen  
   
-1.  Erstellen Sie eine projektelementerweiterung, ein projekterweiterung oder einen neuen Projektelementtyp eine Definition. Weitere Informationen finden Sie unter den folgenden Themen:  
+1. Erstellen Sie eine projektelementerweiterung, ein projekterweiterung oder einen neuen Projektelementtyp eine Definition. Weitere Informationen finden Sie unter den folgenden Themen:  
   
-    -   [Gewusst wie: erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [Gewusst wie: erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Gewusst wie: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [Gewusst wie: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Gewusst wie: definieren ein SharePoint-Projektelementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [Gewusst wie: definieren ein SharePoint-Projektelementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2.  In der Erweiterung, Zugriff auf die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekt. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen des SharePoint-Projektdiensts](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+2. In der Erweiterung, Zugriff auf die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekt. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen des SharePoint-Projektdiensts](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
-3.  Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> und <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> Ereignisse des Projektdiensts.  
+3. Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> und <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> Ereignisse des Projektdiensts.  
   
-4.  In den Ereignisdaten Ereignishandlern, verwendet der <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> Parameter, um Informationen zu der aktuellen bereitstellungssitzung. Sie können beispielsweise bestimmen, welches Projekt in der aktuellen bereitstellungssitzung und gibt an, ob es gerade bereitgestellt oder zurückgezogen.  
+4. In den Ereignisdaten Ereignishandlern, verwendet der <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> Parameter, um Informationen zu der aktuellen bereitstellungssitzung. Sie können beispielsweise bestimmen, welches Projekt in der aktuellen bereitstellungssitzung und gibt an, ob es gerade bereitgestellt oder zurückgezogen.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie behandelt die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> und <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> Ereignisse in einer projekterweiterung. Diese Erweiterung schreibt eine weitere Nachricht an die **Ausgabe** anzeigen, wenn die Bereitstellung gestartet oder beendet werden, für eine SharePoint-Projekt.  
+   Im folgenden Codebeispiel wird veranschaulicht, wie behandelt die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> und <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> Ereignisse in einer projekterweiterung. Diese Erweiterung schreibt eine weitere Nachricht an die **Ausgabe** anzeigen, wenn die Bereitstellung gestartet oder beendet werden, für eine SharePoint-Projekt.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]  
+   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
+   [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]  
   
 ## <a name="compile-the-code"></a>Kompilieren des Codes  
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:  

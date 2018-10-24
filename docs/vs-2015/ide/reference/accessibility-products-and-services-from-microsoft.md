@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826985"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 ##  <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs  
  Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:  
   
--   Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.  
+- Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.  
   
--   Technische Unterstützung in den USA bietet der Produktsupport von Microsoft, den Sie unter der Rufnummer (800) 892-5234 montags bis freitags von 06:00 bis 18:00 Uhr (Pacific Time) erreichen, außer an Feiertagen. In Kanada ist die Rufnummer (905) 568-9641 montags bis freitags von 08:00 bis 20:00 Uhr (Eastern Standard Time) erreichbar, außer an Feiertagen.  
+- Technische Unterstützung in den USA bietet der Produktsupport von Microsoft, den Sie unter der Rufnummer (800) 892-5234 montags bis freitags von 06:00 bis 18:00 Uhr (Pacific Time) erreichen, außer an Feiertagen. In Kanada ist die Rufnummer (905) 568-9641 montags bis freitags von 08:00 bis 20:00 Uhr (Eastern Standard Time) erreichbar, außer an Feiertagen.  
   
- Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.  
+  Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.  
   
 ##  <a name="moreinfo"></a> Weitere Informationen  
  Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).  

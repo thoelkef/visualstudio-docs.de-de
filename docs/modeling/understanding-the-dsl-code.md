@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813317"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
@@ -110,25 +110,25 @@ Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Si
 
  Jede Domänenklasse enthält Folgendes:
 
--   Eine Eigenschaftendefinition und eine geschachtelte Handlerklasse für jede Domäneneigenschaft. Sie können OnValueChanging() und OnValueChanged() überschreiben. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md).
+- Eine Eigenschaftendefinition und eine geschachtelte Handlerklasse für jede Domäneneigenschaft. Sie können OnValueChanging() und OnValueChanged() überschreiben. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md).
 
-     In der Beispiel-DSL enthält die `Comment`-Klasse eine `Text`-Eigenschaft und eine `TextPropertyHandler`-Handlerklasse.
+   In der Beispiel-DSL enthält die `Comment`-Klasse eine `Text`-Eigenschaft und eine `TextPropertyHandler`-Handlerklasse.
 
--   Accessoreigenschaften für die Beziehungen mit Beteiligung dieser Domänenklasse. (Es gibt keine geschachtelte Klasse für Rolleneigenschaften.)
+- Accessoreigenschaften für die Beziehungen mit Beteiligung dieser Domänenklasse. (Es gibt keine geschachtelte Klasse für Rolleneigenschaften.)
 
-     In der Beispiel-DSL weist die `Comment`-Klasse Accessoren auf, die über die Einbettungsbeziehung `ComponentModelHasComments` auf das übergeordnete Modell zugreifen.
+   In der Beispiel-DSL weist die `Comment`-Klasse Accessoren auf, die über die Einbettungsbeziehung `ComponentModelHasComments` auf das übergeordnete Modell zugreifen.
 
--   Konstruktoren. Wenn Sie diese außer Kraft setzen möchten, legen Sie **hat benutzerdefinierten Konstruktor** in der Domänenklasse.
+- Konstruktoren. Wenn Sie diese außer Kraft setzen möchten, legen Sie **hat benutzerdefinierten Konstruktor** in der Domänenklasse.
 
--   EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer kann *Merge* (hinzufügen) ein anderes Element in Instanzen dieser Klasse. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
+- EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer kann *Merge* (hinzufügen) ein anderes Element in Instanzen dieser Klasse. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
 
-     In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
+   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
 
-     Die EGP-Handlermethoden in der Komponentenklasse lassen es zu, dass eine Komponente Ports akzeptiert, aber keine Kommentare. Der EGP-Handler in der Stammmodellklasse akzeptiert Kommentare und Komponenten, aber keine Ports.
+   Die EGP-Handlermethoden in der Komponentenklasse lassen es zu, dass eine Komponente Ports akzeptiert, aber keine Kommentare. Der EGP-Handler in der Stammmodellklasse akzeptiert Kommentare und Komponenten, aber keine Ports.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- Die Klasse, die das Domänenmodell darstellt. Sie wird von <xref:Microsoft.VisualStudio.Modeling.DomainModel> abgeleitet.
+  Die Klasse, die das Domänenmodell darstellt. Sie wird von <xref:Microsoft.VisualStudio.Modeling.DomainModel> abgeleitet.
 
 > [!NOTE]
 >  Sie ist nicht mit der Stammklasse des Modells identisch.
@@ -161,31 +161,31 @@ Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Si
 
  `SerializationHelper.cs`
 
--   Eine Validierungsmethode, mit der sichergestellt wird, dass ein Moniker nicht auf zwei Elemente verweist. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+- Eine Validierungsmethode, mit der sichergestellt wird, dass ein Moniker nicht auf zwei Elemente verweist. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
--   SerializationHelper-Klasse, die Funktionen bereitstellt, die von Serialisierungsklassen gemeinsam verwendet werden.
+- SerializationHelper-Klasse, die Funktionen bereitstellt, die von Serialisierungsklassen gemeinsam verwendet werden.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- Eine Serialisierungsklasse für alle Domänenklassen, Beziehungen, Formen, Konnektoren, Diagramme und Modelle.
+  Eine Serialisierungsklasse für alle Domänenklassen, Beziehungen, Formen, Konnektoren, Diagramme und Modelle.
 
- Viele der Funktionen dieser Klassen können gesteuert werden, indem Sie die Einstellungen im DSL-Explorer unter **XML-Serialisierungsverhalten**.
+  Viele der Funktionen dieser Klassen können gesteuert werden, indem Sie die Einstellungen im DSL-Explorer unter **XML-Serialisierungsverhalten**.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- Eine Klasse für jede Formklasse in der DSL-Definition. Formen werden von <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> abgeleitet. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Eine Klasse für jede Formklasse in der DSL-Definition. Formen werden von <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> abgeleitet. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
- Um die generierten Methoden mit eigenen Methoden in einer partiellen Klasse überschreiben, legen **generiert doppelte Ableitungen** für den Connector in der DSL-Definition. Um einen Konstruktor durch eigenen Code ersetzen, legen Sie **hat benutzerdefinierten Konstruktor**.
+  Um die generierten Methoden mit eigenen Methoden in einer partiellen Klasse überschreiben, legen **generiert doppelte Ableitungen** für den Connector in der DSL-Definition. Um einen Konstruktor durch eigenen Code ersetzen, legen Sie **hat benutzerdefinierten Konstruktor**.
 
- Um die Farbe und einige andere Stil Features Variable zur Laufzeit zu machen, mit der rechten Maustaste in der Klasse im DSL-Definitionsdiagramm, und zeigen Sie auf **verfügbare hinzufügen**.
+  Um die Farbe und einige andere Stil Features Variable zur Laufzeit zu machen, mit der rechten Maustaste in der Klasse im DSL-Definitionsdiagramm, und zeigen Sie auf **verfügbare hinzufügen**.
 
- Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
+  Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- Richtet die Toolbox ein, indem Elementgruppenprototypen in den Elementtools installiert werden. Kopien dieser Prototypen werden mit den Zielelementen zusammengeführt, wenn der Benutzer das Tool ausführt.
+  Richtet die Toolbox ein, indem Elementgruppenprototypen in den Elementtools installiert werden. Kopien dieser Prototypen werden mit den Zielelementen zusammengeführt, wenn der Benutzer das Tool ausführt.
 
- Sie könnten `CreateElementPrototype()` überschreiben, um ein Toolboxelement zu definieren, mit dem eine Gruppe aus mehreren Objekten erstellt wird. Sie könnten z. B. ein Element definieren, das Objekte mit Unterkomponenten darstellt. Setzen Sie nach den codeänderungen die experimentelle Instanz von Visual Studio, um den Toolboxcache zu leeren zurück.
+  Sie könnten `CreateElementPrototype()` überschreiben, um ein Toolboxelement zu definieren, mit dem eine Gruppe aus mehreren Objekten erstellt wird. Sie könnten z. B. ein Element definieren, das Objekte mit Unterkomponenten darstellt. Setzen Sie nach den codeänderungen die experimentelle Instanz von Visual Studio, um den Toolboxcache zu leeren zurück.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Generierte Dateien im DslPackage-Projekt
  "Dslpackage" verbindet das DSL-Modell für die Visual Studio-Shell, das Fenster, Toolbox und Menübefehle verwalten können. Die meisten der Klassen werden doppelt abgeleitet, sodass Sie deren Methoden überschreiben können.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`

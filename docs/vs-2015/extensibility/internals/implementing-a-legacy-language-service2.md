@@ -15,31 +15,31 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831379"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementieren eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Um einen Sprachdienst mithilfe des managed Package Frameworks (MPF) zu implementieren, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und implementieren Sie die folgenden abstrakten Methoden und Eigenschaften:  
   
--   Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> -Methode  
+- Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> -Methode  
   
--   Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>-Methode  
+- Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>-Methode  
   
--   Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>-Methode  
+- Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>-Methode  
   
--   Die <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>-Eigenschaft.  
+- Die <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>-Eigenschaft.  
   
- Finden Sie unter den entsprechenden Abschnitten weiter unten Weitere Informationen zum Implementieren dieser Methoden und Eigenschaften ein.  
+  Finden Sie unter den entsprechenden Abschnitten weiter unten Weitere Informationen zum Implementieren dieser Methoden und Eigenschaften ein.  
   
- Um zusätzliche Funktionen zu unterstützen, möglicherweise der Sprachdienst Ableiten einer Klasse von einer der die MPF-Language-Dienstklassen; beispielsweise, um zusätzliche Menübefehle zu unterstützen, muss, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben Sie mehrere des Befehls im Umgang mit Methoden (finden Sie unter <xref:Microsoft.VisualStudio.Package.ViewFilter> Einzelheiten). Die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bietet eine Reihe von Methoden, die aufgerufen werden, um neue Instanzen verschiedener Klassen zu erstellen, und Sie überschreiben die entsprechenden Erstellungsmethode, um eine Instanz der Klasse bereitstellen. Beispielsweise müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer Instanz Ihrer eigenen <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse. Finden Sie im Abschnitt "Instanziieren benutzerdefinierte Klassen" Weitere Details.  
+  Um zusätzliche Funktionen zu unterstützen, möglicherweise der Sprachdienst Ableiten einer Klasse von einer der die MPF-Language-Dienstklassen; beispielsweise, um zusätzliche Menübefehle zu unterstützen, muss, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben Sie mehrere des Befehls im Umgang mit Methoden (finden Sie unter <xref:Microsoft.VisualStudio.Package.ViewFilter> Einzelheiten). Die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bietet eine Reihe von Methoden, die aufgerufen werden, um neue Instanzen verschiedener Klassen zu erstellen, und Sie überschreiben die entsprechenden Erstellungsmethode, um eine Instanz der Klasse bereitstellen. Beispielsweise müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer Instanz Ihrer eigenen <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse. Finden Sie im Abschnitt "Instanziieren benutzerdefinierte Klassen" Weitere Details.  
   
- Der Sprachdienst kann auch eigene Symbole, angeben, die an vielen Stellen verwendet werden. Z. B. wenn eine IntelliSense-Vervollständigungsliste angezeigt wird, kann jedes Element in der Liste ein Symbol zugeordnet, markieren das Element als Methode, Klasse, Namespace, Eigenschaft oder was für Ihre Sprache nötig ist. Diese Symbole werden verwendet, in allen IntelliSense-Listen, die **Navigationsleiste**, und klicken Sie in der **Fehlerliste** Aufgabenfenster. Finden Sie unter "Language Service Images" weiter unten im Abschnitt Details.  
+  Der Sprachdienst kann auch eigene Symbole, angeben, die an vielen Stellen verwendet werden. Z. B. wenn eine IntelliSense-Vervollständigungsliste angezeigt wird, kann jedes Element in der Liste ein Symbol zugeordnet, markieren das Element als Methode, Klasse, Namespace, Eigenschaft oder was für Ihre Sprache nötig ist. Diese Symbole werden verwendet, in allen IntelliSense-Listen, die **Navigationsleiste**, und klicken Sie in der **Fehlerliste** Aufgabenfenster. Finden Sie unter "Language Service Images" weiter unten im Abschnitt Details.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences-Methode  
  Die <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Methode gibt immer die gleiche Instanz von einem <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Sie können die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse, wenn Sie zusätzlichen Einstellungen für den Sprachdienst nicht erforderlich ist. Die MPF-Language-Dienstklassen davon aus, das Vorhandensein von mindestens die Basis <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  

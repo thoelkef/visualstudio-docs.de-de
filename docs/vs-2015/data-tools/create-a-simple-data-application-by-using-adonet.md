@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824281"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Erstellen der Anwendung benötigen Sie:  
   
--   Visual Studio Communityedition.  
+- Visual Studio Communityedition.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   Die kleine Beispieldatenbank, die Sie erstellen, indem Sie die Schritte in [erstellen Sie eine SQL­Datenbank mithilfe eines Skripts](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- Die kleine Beispieldatenbank, die Sie erstellen, indem Sie die Schritte in [erstellen Sie eine SQL­Datenbank mithilfe eines Skripts](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   Die Verbindungszeichenfolge für die Datenbank, nachdem Sie sie eingerichtet haben. Sie finden diesen Wert durch Öffnen **Objekt-Explorer von SQL Server**, öffnen Sie das Kontextmenü für die Datenbank, indem **Eigenschaften**, und klicken Sie dann ein Bildlauf der **"ConnectionString"** Eigenschaft.  
+- Die Verbindungszeichenfolge für die Datenbank, nachdem Sie sie eingerichtet haben. Sie finden diesen Wert durch Öffnen **Objekt-Explorer von SQL Server**, öffnen Sie das Kontextmenü für die Datenbank, indem **Eigenschaften**, und klicken Sie dann ein Bildlauf der **"ConnectionString"** Eigenschaft.  
   
- In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio IDE vertraut sind und eine Windows Forms-Anwendung erstellen, diesem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in diesen Formularen einfügen, Eigenschaften für diese Steuerelemente einrichten und einfache Ereignisse programmieren können. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) vor der Installation in diesem Thema.  
+  In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio IDE vertraut sind und eine Windows Forms-Anwendung erstellen, diesem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in diesen Formularen einfügen, Eigenschaften für diese Steuerelemente einrichten und einfache Ereignisse programmieren können. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) vor der Installation in diesem Thema.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Die Beispieldatenbank einrichten  
  Die Beispieldatenbank für diese exemplarische Vorgehensweise besteht aus den Tabellen "Customer" und "Orders". Die Tabellen enthalten anfangs keine Daten, aber Sie fügen Daten hinzu, wenn Sie die von Ihnen erstellte Anwendung ausführen. Die Datenbank hat auch fünf einfache gespeicherte Prozeduren. [Erstellen Sie eine SQL­Datenbank mithilfe eines Skripts](../data-tools/create-a-sql-database-by-using-a-script.md) enthält ein Transact-SQL-Skript, das die Tabellen, die Primär- und Fremdschlüssel-Schlüssel, die Einschränkungen und die gespeicherten Prozeduren erstellt.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Die Formulare erstellen und Hinzufügen von Steuerelementen  
   
-1.  Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie SimpleDataApp.  
+1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie SimpleDataApp.  
   
-     Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars namens "Form1".  
+    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars namens "Form1".  
   
-2.  Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:  
+2. Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:  
   
-    -   Navigation  
+   -   Navigation  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.  
+3. Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.  
   
-    > [!NOTE]
-    >  Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.  
+   > [!NOTE]
+   >  Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.  
   
- **Navigationsformular**  
+   **Navigationsformular**  
   
- ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Steuerelemente für das Navigationsformular|Eigenschaften|  
 |--------------------------------------|----------------|  

@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818327"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Schnellstart: Debuggen von JavaScript mit der Konsole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Im JavaScript-Konsolenfenster können Sie:  
   
--   Objekte, Werte und Meldungen von der App an das Konsolenfenster senden.  
+- Objekte, Werte und Meldungen von der App an das Konsolenfenster senden.  
   
--   Werte lokaler und globaler Variablen in der ausgeführten App anzeigen und ändern.  
+- Werte lokaler und globaler Variablen in der ausgeführten App anzeigen und ändern.  
   
--   Objektschnellansichten anzeigen.  
+- Objektschnellansichten anzeigen.  
   
--   JavaScript-Code im aktuellen Skriptkontext ausführen.  
+- JavaScript-Code im aktuellen Skriptkontext ausführen.  
   
--   JavaScript-Fehler und Ausnahmen, Document Objekt Model- (DOM) und Windows-Runtime-Ausnahmen anzeigen.  
+- JavaScript-Fehler und Ausnahmen, Document Objekt Model- (DOM) und Windows-Runtime-Ausnahmen anzeigen.  
   
--   Durchführen weiterer Aufgaben, wie z. B. das Löschen des Fensters. Unter [JavaScript Console commands](../debugger/javascript-console-commands.md) finden Sie eine vollständige Liste der Befehle.  
+- Durchführen weiterer Aufgaben, wie z. B. das Löschen des Fensters. Unter [JavaScript Console commands](../debugger/javascript-console-commands.md) finden Sie eine vollständige Liste der Befehle.  
   
- In diesem Thema:  
+  In diesem Thema:  
   
--   [Debuggen mithilfe des JavaScript-Konsolenfensters](#InteractiveConsole)  
+- [Debuggen mithilfe des JavaScript-Konsolenfensters](#InteractiveConsole)  
   
--   [Interaktiver Debug- und Unterbrechungsmodus](#InteractiveDebuggingBreakMode)  
+- [Interaktiver Debug- und Unterbrechungsmodus](#InteractiveDebuggingBreakMode)  
   
--   [Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster](#SinglelineMultilineMode)  
+- [Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster](#SinglelineMultilineMode)  
   
--   [Ändern des Skriptausführungskontexts](#Switching)  
+- [Ändern des Skriptausführungskontexts](#Switching)  
   
 > [!TIP]
 >  Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**>**Windows** > **JavaScript-Konsole** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  

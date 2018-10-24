@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c190606c860a2a9d9711f0636420c34a38c8d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813595"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,60 +46,60 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
  Der folgende Abschnitt beschreibt das lokale Debuggen. Informationen zum Debuggen auf einem Gerät oder zum Remotedebuggen erhalten Sie in späteren Abschnitten.  
   
-1.  Öffnen Sie das Projekt, das Sie debuggen möchten, und klicken Sie anschließend auf **Debuggen / Debugging starten** (oder klicken Sie auf der Symbolleiste auf **Starten** , oder drücken Sie **F5**).  
+1. Öffnen Sie das Projekt, das Sie debuggen möchten, und klicken Sie anschließend auf **Debuggen / Debugging starten** (oder klicken Sie auf der Symbolleiste auf **Starten** , oder drücken Sie **F5**).  
   
-2.  Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.  
+2. Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.  
   
-3.  Führen Sie die Szenarien aus, für die Sie Daten erfassen möchten.  
+3. Führen Sie die Szenarien aus, für die Sie Daten erfassen möchten.  
   
-     Während der Debuggingsitzung können Sie Informationen zu Ereignissen, Prozessarbeitsspeicher und CPU-Auslastung anzeigen.  
+    Während der Debuggingsitzung können Sie Informationen zu Ereignissen, Prozessarbeitsspeicher und CPU-Auslastung anzeigen.  
   
-     Folgende Abbildung zeigt das Fenster **Diagnosetools** in Visual Studio 2015 Update 1:  
+    Folgende Abbildung zeigt das Fenster **Diagnosetools** in Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Mithilfe der Einstellung **Tools auswählen** auf der Symbolleiste können Sie auswählen, ob Sie die **Speicherauslastung** oder die **CPU-Auslastung** (oder beides) anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Tools / Optionen / IntelliTrace** aktivieren oder deaktivieren.  
+4. Mithilfe der Einstellung **Tools auswählen** auf der Symbolleiste können Sie auswählen, ob Sie die **Speicherauslastung** oder die **CPU-Auslastung** (oder beides) anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Tools / Optionen / IntelliTrace** aktivieren oder deaktivieren.  
   
-5.  Die Diagnosesitzung endet, wenn Sie das Debugging beenden.  
+5. Die Diagnosesitzung endet, wenn Sie das Debugging beenden.  
   
- In Visual Studio 2015 Update 1 können Sie sich im Fenster **Diagnosetools** einfach auf die Ereignisse konzentrieren, die für Sie von Interesse sind.   Die Ereignisnamen werden nun mit den Kategoriepräfixen (**Bewegung**, **Programmausgabe**, **Haltepunkt**, **Datei** usw.) angezeigt, damit Sie die Liste schnell nach einer bestimmten Kategorie durchsuchen oder die Kategorien überspringen können, die Sie nicht interessieren.  
+   In Visual Studio 2015 Update 1 können Sie sich im Fenster **Diagnosetools** einfach auf die Ereignisse konzentrieren, die für Sie von Interesse sind.   Die Ereignisnamen werden nun mit den Kategoriepräfixen (**Bewegung**, **Programmausgabe**, **Haltepunkt**, **Datei** usw.) angezeigt, damit Sie die Liste schnell nach einer bestimmten Kategorie durchsuchen oder die Kategorien überspringen können, die Sie nicht interessieren.  
   
- Das Fenster hat jetzt ein Suchfeld, damit Sie nach einer bestimmten Zeichenfolge in der Ereignisliste suchen können. Folgende Abbildung zeigt beispielsweise die Ergebnisse der Suche nach der Zeichenfolge "install", der vier Ereignisse entsprechen:  
+   Das Fenster hat jetzt ein Suchfeld, damit Sie nach einer bestimmten Zeichenfolge in der Ereignisliste suchen können. Folgende Abbildung zeigt beispielsweise die Ergebnisse der Suche nach der Zeichenfolge "install", der vier Ereignisse entsprechen:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Sie können in dem Fenster Ereignisse auch in die Ansicht hineinfiltern bzw. aus dieser herausfiltern. In der Dropdownliste **Filtern** können Sie bestimmte Kategorien von Ereignissen aktivieren bzw. deaktivieren: Die Kategorienamen entsprechen den Präfixnamen.  
+   Sie können in dem Fenster Ereignisse auch in die Ansicht hineinfiltern bzw. aus dieser herausfiltern. In der Dropdownliste **Filtern** können Sie bestimmte Kategorien von Ereignissen aktivieren bzw. deaktivieren: Die Kategorienamen entsprechen den Präfixnamen.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Sammeln von Profilerstellungsdaten ohne das Debuggen  
  Für die Ausführung einiger Profilerstellungstools sind Administratorrechte erforderlich. Führen Sie daher entweder Visual Studio als Administrator aus, oder führen Sie die Tools als Administrator aus, wenn Sie die Diagnosesitzung starten.  
   
-1.  Öffnen Sie das Projekt in Visual Studio.  
+1. Öffnen Sie das Projekt in Visual Studio.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: Alt + F2).  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: Alt + F2).  
   
-3.  Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
+3. Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   
-     ![Diagnosetools auswählen](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Diagnosetools auswählen](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4.  Klicken Sie zum Starten der Diagnosesitzung auf **Start**.  
+4. Klicken Sie zum Starten der Diagnosesitzung auf **Start**.  
   
-5.  Führen Sie die Szenarien aus, für die Sie Daten auflisten möchten.  
+5. Führen Sie die Szenarien aus, für die Sie Daten auflisten möchten.  
   
-     Während Sie die Sitzung ausführen, zeigen einige Tools Grafiken der Echtzeitdaten auf der Startseite der Diagnosetools an.  
+    Während Sie die Sitzung ausführen, zeigen einige Tools Grafiken der Echtzeitdaten auf der Startseite der Diagnosetools an.  
   
-     ![Daten auf der Seite „Leistung und Diagnose“ erfassen](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Daten auf der Seite „Leistung und Diagnose“ erfassen](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6.  Klicken Sie zum Beenden der Diagnosesitzung auf **Auflistung anhalten**.  
+6. Klicken Sie zum Beenden der Diagnosesitzung auf **Auflistung anhalten**.  
   
- Nachdem Sie das Sammeln von Daten in einer Diagnosesitzung beendet haben, werden die Daten analysiert, und der Bericht wird auf der Seite "Diagnose" angezeigt.  
+   Nachdem Sie das Sammeln von Daten in einer Diagnosesitzung beendet haben, werden die Daten analysiert, und der Bericht wird auf der Seite "Diagnose" angezeigt.  
   
- Sie können auch gespeicherte DIAGNOSTIC-Sitzungsdateien über die Liste der zuvor geöffneten Elemente auf der Startseite für die Diagnosetools öffnen.  
+   Sie können auch gespeicherte DIAGNOSTIC-Sitzungsdateien über die Liste der zuvor geöffneten Elemente auf der Startseite für die Diagnosetools öffnen.  
   
- ![Öffnen einer gespeicherten Diagnosesitzungsdatei](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Öffnen einer gespeicherten Diagnosesitzungsdatei](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Der Profilerstellungsbericht  
  ![Diagnosetools-Bericht](../profiling/media/diag-report.png "DIAG_Report")  

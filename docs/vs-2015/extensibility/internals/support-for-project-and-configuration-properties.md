@@ -16,12 +16,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8ca8cd0fdb112214cd2d0f5088bf745c2643570
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827310"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,14 +65,14 @@ Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.
   
  Die `SettingsPage` Klasse und die `Microsoft.VisualStudio.Package.ProjectNode` bieten diese Methoden Projekt-und Konfiguration beibehalten werden:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` und `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` Projekteigenschaften beibehalten.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` und `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` Projekteigenschaften beibehalten.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` und `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` Konfigurationseigenschaften beibehalten.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` und `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` Konfigurationseigenschaften beibehalten.  
   
-    > [!NOTE]
-    >  Die Implementierungen der `Microsoft.VisualStudio.Package.SettingsPage` und `Microsoft.VisualStudio.Package.ProjectNode` Klassen geben mit der `Microsoft.Build.BuildEngine` (MSBuild) Methoden zum Abrufen und Festlegen der Projekt- und Eigenschaften aus der Projektdatei.  
+  > [!NOTE]
+  >  Die Implementierungen der `Microsoft.VisualStudio.Package.SettingsPage` und `Microsoft.VisualStudio.Package.ProjectNode` Klassen geben mit der `Microsoft.Build.BuildEngine` (MSBuild) Methoden zum Abrufen und Festlegen der Projekt- und Eigenschaften aus der Projektdatei.  
   
- Die Klasse, die Sie eine von Ableitung `SettingsPage` müssen implementieren `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` und `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` Projekt oder die Konfiguration von Eigenschaften der Projektdatei beibehalten werden.  
+  Die Klasse, die Sie eine von Ableitung `SettingsPage` müssen implementieren `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` und `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` Projekt oder die Konfiguration von Eigenschaften der Projektdatei beibehalten werden.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute und Registrierungspfad  
  Von abgeleiteten Klassen `SettingsPage` VSPackages gemeinsam verwendet werden sollen. Und es für ein VSPackage erstellen Sie eine Klasse, die von abgeleiteten `SettingsPage`, Hinzufügen einer `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` auf eine Klasse, die von abgeleiteten `Microsoft.VisualStudio.Shell.Package`.  

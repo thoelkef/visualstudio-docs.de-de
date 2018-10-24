@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826544"
 ---
 # <a name="supporting-multiple-document-views"></a>Unterstützen mehrerer Dokumentansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mehr als eine Ansicht eines Dokuments angeben, durch die Trennung der Dokumentdaten und dokumentenansichtsobjekten für den Editor erstellen. Einige Fälle, in denen ein zusätzlicher Dokumentenansicht sinnvoll wäre, sind:  
   
--   Unterstützung für das neue Fenster: sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
+- Unterstützung für das neue Fenster: sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
   
--   Form "und" Code anzeigen Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
+- Form "und" Code anzeigen Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
   
- Weitere Informationen hierzu finden Sie im Verfahren "CreateEditorInstance" in der Datei EditorFactory.cs im benutzerdefinierten Editor-Projekt, das von der Visual Studio-Paketvorlage erstellt. Weitere Informationen zu diesem Projekt finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Weitere Informationen hierzu finden Sie im Verfahren "CreateEditorInstance" in der Datei EditorFactory.cs im benutzerdefinierten Editor-Projekt, das von der Visual Studio-Paketvorlage erstellt. Weitere Informationen zu diesem Projekt finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Ansichten werden synchronisiert  
  Wenn Sie mehrere Ansichten implementieren, ist das dokumentendatenobjekt selbst dafür verantwortlich, alle Ansichten, die mit den Daten synchron. Können Sie die Ereignisbehandlung-Schnittstellen auf <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> mehrere Ansichten mit den Daten zu synchronisieren.  

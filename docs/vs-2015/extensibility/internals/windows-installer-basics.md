@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829312"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
 ## <a name="authoring-a-vspackage"></a>Erstellen eine VSPackage  
  Windows Installer verwendet Installationspakete, die Informationen, die Windows Installer installieren enthalten, deinstallieren oder Reparieren eines Produkts und die Setup-Benutzeroberfläche (UI) ausführen. Jedem Installationspaket enthält eine MSI-Datei, die eine Installationsdatenbank, einen Stream zusammenfassende Informationen und Datenströme für die verschiedenen Teilen der Installation enthält. Um das Installationsprogramm zu verwenden, müssen Sie eine Installation erstellen. Da das Installationsprogramm Installationen auf dem Konzept von Komponenten organisiert und Informationen zur Installation in einer relationalen Datenbank speichert, umfasst der Prozess der Erstellung von einem Installationspaket Allgemein die folgenden Schritte aus:  
   
-1.  Planen Sie Ihr Setup erstellen, um Ihrer Seite-an-Seite-Strategien und versionsverwaltung zu unterstützen.  
+1. Planen Sie Ihr Setup erstellen, um Ihrer Seite-an-Seite-Strategien und versionsverwaltung zu unterstützen.  
   
-2.  Identifizieren Sie die Funktionen, die Benutzern angezeigt werden.  
+2. Identifizieren Sie die Funktionen, die Benutzern angezeigt werden.  
   
-3.  Organisieren Sie das VSPackage und Abhängigkeiten in Komponenten.  
+3. Organisieren Sie das VSPackage und Abhängigkeiten in Komponenten.  
   
-4.  Füllen Sie die Installationsdatenbank mit Informationen.  
+4. Füllen Sie die Installationsdatenbank mit Informationen.  
   
-5.  Überprüfen Sie das Installationspaket ein.  
+5. Überprüfen Sie das Installationspaket ein.  
   
- Diese Dokumentation ist in erster Linie mit der erste und dritte Schritt des Prozesses befasst. Beim Ausführen dieser Schritte Sie organisieren Sie Ihre VSPackage-Funktionen in WICs, damit Sie Ihre versionsverwaltung und Wartung von Strategie zum Konto für nachfolgende Versionen der frame können [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Die verbleibenden drei Schritte werden in der Dokumentation zu Windows Installer im Platform SDK ausführlich behandelt.  
+   Diese Dokumentation ist in erster Linie mit der erste und dritte Schritt des Prozesses befasst. Beim Ausführen dieser Schritte Sie organisieren Sie Ihre VSPackage-Funktionen in WICs, damit Sie Ihre versionsverwaltung und Wartung von Strategie zum Konto für nachfolgende Versionen der frame können [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Die verbleibenden drei Schritte werden in der Dokumentation zu Windows Installer im Platform SDK ausführlich behandelt.  
   
 ## <a name="key-terms"></a>Wichtige Begriffe  
  Folgendes sind Definitionen der wichtigsten Begriffe im Zusammenhang mit der Windows Installer-Technologie.  

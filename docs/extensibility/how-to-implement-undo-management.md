@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd77ce3cbb0b262e3ab56fef4f3456fecd3cab28
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830014"
 ---
 # <a name="how-to-implement-undo-management"></a>Gewusst wie: Implementieren von Rückgängig-Verwaltung
 Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, die von der Umgebung implementiert wird. Rückgängig-Verwaltung unterstützen, implementieren separate Rückgängig-Komponenten (d. h. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, mehrere einzelne Schritte enthalten kann.  
@@ -43,39 +43,39 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
   
 ### <a name="to-hook-your-undo-manager-into-the-environment"></a>Um Ihre rückgängig-Manager in der Umgebung zu verknüpfen.  
   
-1.  Rufen Sie `QueryInterface` auf das von zurückgegebene Objekt <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> für `IID_IOleUndoManager`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1. Rufen Sie `QueryInterface` auf das von zurückgegebene Objekt <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> für `IID_IOleUndoManager`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IOleCommandTarget`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IOleCommandTarget`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Relay Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Aufrufe in den gespeicherten `IOleCommandTarget` Schnittstelle für die folgenden StandardCommandSet97-Befehle:  
+3. Relay Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Aufrufe in den gespeicherten `IOleCommandTarget` Schnittstelle für die folgenden StandardCommandSet97-Befehle:  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IVsChangeTrackingUndoManager`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4. Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IVsChangeTrackingUndoManager`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
-     Verwenden Sie den Zeiger zu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> zum Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>, und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> Methoden.  
+    Verwenden Sie den Zeiger zu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> zum Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>, und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> Methoden.  
   
-5.  Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IVsLinkCapableUndoManager`.  
+5. Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IVsLinkCapableUndoManager`.  
   
-6.  Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> der sollten auch implementieren, mit dem Dokument, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> Schnittstelle. Wenn das Dokument geschlossen ist, rufen Sie `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
+6. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> der sollten auch implementieren, mit dem Dokument, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> Schnittstelle. Wenn das Dokument geschlossen ist, rufen Sie `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
   
-7.  Wenn das Dokument geschlossen ist, rufen Sie `QueryInterface` auf Ihre rückgängig-Manager für `IID_IVsLifetimeControlledObject`.  
+7. Wenn das Dokument geschlossen ist, rufen Sie `QueryInterface` auf Ihre rückgängig-Manager für `IID_IVsLifetimeControlledObject`.  
   
-8.  Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> auf.  
+8. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> auf.  
   
 9. Wenn das Dokument geändert wird, rufen Sie <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> für den Manager mit einer `OleUndoUnit` Klasse. Die <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> Methode behält einen Verweis auf das Objekt, sodass Sie im Allgemeinen wird direkt nach der <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- Die `OleUndoManager` Klasse stellt eine einzelnen Rückgängig-Stack-Instanz dar. Es ist daher ein Rückgängig-Manager-Objekt pro Datenentität, die für das Rückgängigmachen oder Wiederholen nachverfolgt wird.  
+   Die `OleUndoManager` Klasse stellt eine einzelnen Rückgängig-Stack-Instanz dar. Es ist daher ein Rückgängig-Manager-Objekt pro Datenentität, die für das Rückgängigmachen oder Wiederholen nachverfolgt wird.  
   
 > [!NOTE]
 >  Während die rückgängig-Manager-Serverobjekt umfassend von Text-Editor verwendet wird, ist es eine allgemeine Komponente, die keine bestimmte Unterstützung für den Text-Editor verfügt. Wenn Sie mehrstufige rückgängig- oder Wiederholen-Vorgang unterstützen möchten, können Sie dieses Objekt, zu diesem Zweck.  

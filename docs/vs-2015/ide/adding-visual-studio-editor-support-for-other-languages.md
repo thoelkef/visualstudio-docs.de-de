@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823774"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
   
  Über die farbige Syntaxhervorhebung und einfache Anweisungsvervollständigung hinaus bietet Visual Studio noch eine Funktion mit dem Namen [Navigieren zu](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Mithilfe dieses Features können Sie schnell Codedateien, Dateipfade und Codesymbole durchsuchen. Visual Studio bietet Unterstützung für Navigieren zu für die folgenden Sprachen.  
   
--   Gehe zu  
+- Gehe zu  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- Alle diese Dateitypen verfügen über die zuvor beschriebenen Funktionen, auch wenn der Support für eine bestimmte Sprache noch nicht installiert wurde. Das Installieren der besonderen Unterstützung für einige Sprachen stellt möglicherweise weitergehende Unterstützung für die betreffende Sprache bereit, wie etwa IntelliSense oder andere erweiterte Sprachfunktionen, wie etwa Glühbirnen.  
+  Alle diese Dateitypen verfügen über die zuvor beschriebenen Funktionen, auch wenn der Support für eine bestimmte Sprache noch nicht installiert wurde. Das Installieren der besonderen Unterstützung für einige Sprachen stellt möglicherweise weitergehende Unterstützung für die betreffende Sprache bereit, wie etwa IntelliSense oder andere erweiterte Sprachfunktionen, wie etwa Glühbirnen.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Hinzufügen von Unterstützung für nicht unterstützte Sprachen  
  Visual Studio 2015 Update 1 und spätere Versionen bieten Sprachunterstützung im Editor mithilfe von [TextMate-Grammatiken](https://manual.macromates.com/en/language_grammars). Wenn Ihre bevorzugte Programmiersprache aktuell nicht im Visual Studio-Editor unterstützt wird, suchen Sie zuerst im Web – es ist gut möglich, dass bereits ein TextMate-Paket für die Sprache verfügbar ist. Wenn Sie allerdings keins finden können, können Sie in Visual Studio 2015 Update 1 oder später selbst Unterstützung hinzufügen, indem Sie ein TextMate-Paketmodell für die Sprachgrammatik und Codeausschnitte erstellen.  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824327"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType-Element (Visual Studio-Vorlagen)
 Klassifiziert die Vorlage in einer Unterkategorie in angegebene Wert der `ProjectType` Element.  
@@ -61,15 +61,15 @@ Klassifiziert die Vorlage in einer Unterkategorie in angegebene Wert der `Projec
   
  Die `ProjectSubType` -Element bietet eine Unterkategorie für die [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) Element. Dieser Wert kann Folgendes enthalten:  
   
--   `SmartDevice-NETCFv1`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 1.0.  
+- `SmartDevice-NETCFv1`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 1.0.  
   
--   `SmartDevice-NETCFv2`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
+- `SmartDevice-NETCFv2`: Gibt an, dass die Projektvorlage ausgerichtet ist die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
   
- Wenn die Vorlage enthält einen `ProjectType` Element mit einem Wert von `Web`, `ProjectSubType` Element gibt die Programmiersprache der Vorlage an. Dieses Element kann die folgenden Werte aufweisen:  
+  Wenn die Vorlage enthält einen `ProjectType` Element mit einem Wert von `Web`, `ProjectSubType` Element gibt die Programmiersprache der Vorlage an. Dieses Element kann die folgenden Werte aufweisen:  
   
--   `CSharp`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Webprojekt oder-Element.  
+- `CSharp`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Webprojekt oder-Element.  
   
--   `VisualBasic`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Webprojekt oder-Element.  
+- `VisualBasic`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Webprojekt oder-Element.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Anwendung der Zielgeräte der [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2.0.  
