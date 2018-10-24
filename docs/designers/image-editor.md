@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878374"
 ---
 # <a name="image-editor"></a>Grafik-Editor
 
@@ -30,7 +30,7 @@ Mit der **Bildbearbeitung** können Sie mit aufwändigen Textur- und Bildformate
 Folgende Bildformate werden von der **Bildbearbeitung** unterstützt:
 
 |Formatname|Dateinamenerweiterung|
-|-----------------|-------------------------|
+|-----------------| - |
 |Portable Network Graphics|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Direct Draw Surface|*.dds*|
@@ -245,7 +245,7 @@ In der folgenden Tabelle werden die Tooleigenschaften beschrieben:
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 |Befehl|Tastenkombinationen|
-|-------------|------------------------|
+|-------------| - |
 |In den Modus **Auswählen** wechseln|**S**|
 |In den Modus **Zoom** wechseln|**Z**|
 |In den Modus **Schwenken** wechseln|**K**|

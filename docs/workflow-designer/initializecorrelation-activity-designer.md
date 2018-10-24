@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879882"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation-Aktivitätsdesigner
 
@@ -42,7 +42,7 @@ Zum Anzeigen der **Korrelation initialisieren** Dialogfeld, in dem Sie angeben k
 Die folgende Tabelle zeigt die <xref:System.ServiceModel.Activities.InitializeCorrelation> Eigenschaften und beschreibt, wie sie im Designer verwendet werden. Diese Eigenschaften können bearbeitet werden, **Eigenschaften** Fenster oder Workflow-Designer-Oberfläche.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität. Der Standardwert lautet InitializeCorrelation.<br /><br /> Obwohl die Verwendung von einem nicht standardmäßigen Wert für den Anzeigenamen <xref:System.Activities.Activity.DisplayName%2A> ist nicht zwingend erforderlich, es wird empfohlen.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt, das verwendet wurde, um Workflowaktivitäten in der Korrelation zuzuordnen.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Ein Wörterbuch von Korrelationsdaten, die Nachrichten mit der Workflowinstanz verknüpft.<br /><br /> Verwenden der **Korrelation initialisieren** Dialogfeld zum Konfigurieren der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Weitere Informationen zur Verwendung dieses Dialogfelds finden Sie unter den [Auflistung-Editor (Dialogfeld)](../workflow-designer/type-collection-editor-dialog-box.md) Artikel.|
@@ -50,8 +50,8 @@ Die folgende Tabelle zeigt die <xref:System.ServiceModel.Activities.InitializeCo
 ## <a name="see-also"></a>Siehe auch
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Empfangen](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Senden](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

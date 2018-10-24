@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880506"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.  
   
--   Bereiten Sie Ihre Lösung vor.  
+- Bereiten Sie Ihre Lösung vor.  
   
--   Erstellen Sie eine Windows Installer (MSI)-Paket für Ihre Anwendung.  
+- Erstellen Sie eine Windows Installer (MSI)-Paket für Ihre Anwendung.  
   
--   Erstellen Sie einen Setup-Bootstrapper.  
+- Erstellen Sie einen Setup-Bootstrapper.  
   
- Alle dem Beispielcode in diesem Dokument stammen aus der [Beispiel für die Anwendungsbereitstellung Shell](http://go.microsoft.com/fwlink/?LinkId=262245), die Sie in der Code Gallery auf der MSDN-Website herunterladen können. Das Beispiel zeigt die Ergebnisse der einzelnen Schritte durchführen.  
+  Alle dem Beispielcode in diesem Dokument stammen aus der [Beispiel für die Anwendungsbereitstellung Shell](http://go.microsoft.com/fwlink/?LinkId=262245), die Sie in der Code Gallery auf der MSDN-Website herunterladen können. Das Beispiel zeigt die Ergebnisse der einzelnen Schritte durchführen.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen der Schritte, die in diesem Thema wird beschrieben, müssen die folgenden Tools auf Ihrem Computer installiert werden.  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   Die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) Version 3.6  
+- Die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) Version 3.6  
   
- Das Beispiel erfordert auch die Microsoft Visualization und Modellierungs-SDK, die nicht alle Shells erforderlich ist.  
+  Das Beispiel erfordert auch die Microsoft Visualization und Modellierungs-SDK, die nicht alle Shells erforderlich ist.  
   
 ## <a name="preparing-your-solution"></a>Ihre Projektmappe wird vorbereitet  
  In der Standardeinstellung Shell-Vorlagen zum VSIX-Pakete erstellen, aber dieses Verhalten ist in erster Linie für Debugzwecke vorgesehen. Wenn Sie eine Shell-Anwendung bereitstellen, müssen Sie die MSI-Pakete verwenden, um für den Zugriff auf die Registrierung und Neustart während der Installation zu ermöglichen. Um Ihre Anwendung für die MSI-Bereitstellung vorzubereiten, führen Sie die folgenden Schritte aus.  

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877295"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287481"
 ## <a name="cause"></a>Ursache
  `IDisposable` ist nicht ordnungsgemäß implementiert werden. Einige Ursachen dieses Problems sind hier aufgeführt:
 
--   "IDisposable" ist neu in der Klasse implementiert.
+- "IDisposable" ist neu in der Klasse implementiert.
 
--   Finalize-erneut überschrieben wird.
+- Finalize-erneut überschrieben wird.
 
--   Dispose wird überschrieben.
+- Dispose wird überschrieben.
 
--   Dispose() ist nicht öffentlich, versiegelt oder mit dem Namen Dispose.
+- Dispose() ist nicht öffentlich, versiegelt oder mit dem Namen Dispose.
 
--   Dispose(bool) ist nicht geschützten, virtuellen oder unversiegelte.
+- Dispose(bool) ist nicht geschützten, virtuellen oder unversiegelte.
 
--   Nicht versiegelte Typen muss Dispose(true) Dispose() aufrufen.
+- Nicht versiegelte Typen muss Dispose(true) Dispose() aufrufen.
 
--   Für nicht versiegelte Typen aufrufen die Finalize-Implementierung nicht eine oder beide Dispose(bool) oder den Basisklassen-Finalizer.
+- Für nicht versiegelte Typen aufrufen die Finalize-Implementierung nicht eine oder beide Dispose(bool) oder den Basisklassen-Finalizer.
 
- Verstoß gegen eine der folgenden Muster wird diese Warnung ausgelöst.
+  Verstoß gegen eine der folgenden Muster wird diese Warnung ausgelöst.
 
- Jeder unversiegelte "IDisposable"-Typ muss es sich um eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() muss Dipose(true) und Finalize Dispose(false) sollten aufrufen kann. Wenn Sie einen unversiegelte "IDisposable"-Typ erstellen, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) in die [Framework-Entwurfsrichtlinien](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) Abschnitt der .NET Framework-Dokumentation.
+  Jeder unversiegelte "IDisposable"-Typ muss es sich um eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() muss Dipose(true) und Finalize Dispose(false) sollten aufrufen kann. Wenn Sie einen unversiegelte "IDisposable"-Typ erstellen, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) in die [Framework-Entwurfsrichtlinien](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) Abschnitt der .NET Framework-Dokumentation.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.

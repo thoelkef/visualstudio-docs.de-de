@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877418"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244869"
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein CatchBlock, behandelt <xref:System.Exception> fängt alle Common Language Specification (CLS) kompatibel Ausnahmen ab. Allerdings ist nicht CLS-kompatiblen Ausnahmen abgefangen werden. Nicht CLS-kompatible Ausnahmen ausgelöst werden können, von nativem Code oder von verwaltetem Code, die von Microsoft generiert wurde, intermediate Language (MSIL) Assembler. Beachten Sie, dass die C#- und [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Compiler lassen nicht nicht mit CLS kompatible Ausnahmen ausgelöst werden und [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] keine nicht-CLS kompatiblen Ausnahmen abgefangen. Ist die Absicht des Catch-Blocks alle Ausnahmen behandeln, verwenden Sie die folgenden allgemeinen Catch-Block Syntax.
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C++: `catch(...) {}` oder `catch(Object^) {}`
+- C++: `catch(...) {}` oder `catch(Object^) {}`
 
- Eine nicht behandelte nicht CLS-kompatible Ausnahme wird ein Sicherheitsproblem, wenn zuvor zulässige Berechtigungen im Catch-Block entfernt werden. Da nicht CLS-kompatiblen Ausnahmen abgefangen werden, kann eine böswillige-Methode, die eine nicht CLS-kompatible Ausnahme ausgelöst mit erweiterten Berechtigungen ausgeführt.
+  Eine nicht behandelte nicht CLS-kompatible Ausnahme wird ein Sicherheitsproblem, wenn zuvor zulässige Berechtigungen im Catch-Block entfernt werden. Da nicht CLS-kompatiblen Ausnahmen abgefangen werden, kann eine böswillige-Methode, die eine nicht CLS-kompatible Ausnahme ausgelöst mit erweiterten Berechtigungen ausgeführt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, bei der die Absicht ist, zum Abfangen aller Ausnahmen, ersetzen, oder fügen Sie einen allgemeinen Catch-Block hinzu, oder markieren Sie die Assembly `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Berechtigungen im Catch-Block entfernt, doppelte die Funktionalität in den allgemeinen catch-Block. Ist dies nicht der Absicht, alle Ausnahmen behandeln, ersetzen Sie den Catch-Block, der verarbeitet <xref:System.Exception> Catch-Blöcke, die bestimmte Ausnahmetypen behandelt.

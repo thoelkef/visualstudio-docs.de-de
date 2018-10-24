@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881717"
 ---
 # <a name="how-to-install-sample-databases"></a>Gewusst wie: Installieren von Beispieldatenbanken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Viele Datenbeispiele setzen die Möglichkeit voraus, eine Verbindung mit den Bei
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>So installieren Sie die Beispieldatenbank Northwind für Microsoft Access  
   
-1.  In Microsoft Access 2010 oder höher Northwind online-Vorlagen suchen, und wählen **Beispieldatenbank Desktop Northwind 2007**.  
+1. In Microsoft Access 2010 oder höher Northwind online-Vorlagen suchen, und wählen **Beispieldatenbank Desktop Northwind 2007**.  
   
-2.  Speichern Sie die Datenbankdatei in Microsoft Access als Northwind.accdb.  
+2. Speichern Sie die Datenbankdatei in Microsoft Access als Northwind.accdb.  
   
- Die neue Erweiterung für Access-Datenbanken ist ".accdb". Finden Sie unter [Datenprogrammierung mit Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Zur Verbindung mit der Northwind-Datenbank mithilfe von Access finden Sie unter [Vorgehensweise: Verbinden mit der Datenbank Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   Die neue Erweiterung für Access-Datenbanken ist ".accdb". Finden Sie unter [Datenprogrammierung mit Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Zur Verbindung mit der Northwind-Datenbank mithilfe von Access finden Sie unter [Vorgehensweise: Verbinden mit der Datenbank Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
  Die Beispieldatenbanken dienen nur zu Illustrationszwecken und zeigen nicht unbedingt die besten Sicherheitsmaßnahmen.  

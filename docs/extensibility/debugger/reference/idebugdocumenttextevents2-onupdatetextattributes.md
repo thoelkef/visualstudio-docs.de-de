@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
+title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d809a5f06be6facd43265fb00e25fc08aabd1f81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ceb40f54c4af0285576545efb0d228e65af493
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876073"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Benachrichtigt dem debugpaket an, dass Textattribute im Dokument aktualisiert wurden.  
+Benachrichtigt dem debugpaket, Text-Attribute im Dokument aktualisiert wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,13 +43,13 @@ int onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parameter  
  `pos`  
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, der angibt, wo die Textattribute aktualisiert wurden.  
+ [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in denen die Textattribute aktualisiert wurden.  
   
  `dwNumToUpdate`  
  [in] Gibt die Anzahl der Zeichen des Texts, die aktualisiert wurden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

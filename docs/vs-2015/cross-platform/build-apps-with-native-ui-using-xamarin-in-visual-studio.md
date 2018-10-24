@@ -13,12 +13,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2f1971f2c9ed3cb7742c7144cf35708789f4a92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879310"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit nativer Benutzeroberfläche über Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,62 +42,62 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
 > [!TIP]
 >  Den vollständigen Quellcode für dieses Projekt finden Sie im [Repository „Mobile Samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
->
+> 
 >   Wenn Sie Probleme haben oder Fehler auftreten, posten Sie Ihre Fragen bitte auf [forums.xamarin.com](http://forums.xamarin.com). Viele Fehler können behoben werden, indem ein Update auf die neuesten von Xamarin erforderlichen SDKs durchgeführt wird. Diese werden unter [Xamarin Release Notes (Xamarin-Versionshinweise)](https://developer.xamarin.com/releases/) für die einzelnen Plattformen beschrieben.    
-  
+> 
 > [!NOTE]
 >  Die Xamarin-Entwicklerdokumentation bietet außerdem, wie nachstehend aufgelistet, eine Reihe von exemplarischen Vorgehensweisen mit Schnellstart- und vertiefenden Abschnitten. Achten Sie für jede dieser Seiten darauf, dass „Visual Studio“ oben rechts auf der Seite ausgewählt ist, damit Visual Studio-spezifische exemplarische Vorgehensweisen angezeigt werden.  
->   
->  -   Xamarin-Apps mit systemeigener Benutzeroberfläche:  
->   
->      -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (einfache App mit einem Bildschirm)  
->     -   [Hello, Android multiscreen](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (App mit Navigation zwischen Bildschirmen)  
->     -   [Android Fragments Walkthrough](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)  
->     -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Hello, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   Xamarin-Apps mit Xamarin.Forms (gemeinsame Benutzeroberfläche)  
->   
->      -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+> 
+> - Xamarin-Apps mit systemeigener Benutzeroberfläche:  
+> 
+>   -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (einfache App mit einem Bildschirm)  
+>   -   [Hello, Android multiscreen](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (App mit Navigation zwischen Bildschirmen)  
+>   -   [Android Fragments Walkthrough](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (u. a. für die Demonstration von Haupt-/Detailbildschirmen verwendet)  
+>   -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
+>   -   [Hello, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
+>   -   Xamarin-Apps mit Xamarin.Forms (gemeinsame Benutzeroberfläche)  
+> 
+>   -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>   -   [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a> Einrichten Ihrer Projektmappe  
  Mit diesen Schritten erstellen Sie eine Xamarin-Projektmappe mit nativer Benutzeroberfläche, die eine PCL für freigegebenen Code und zwei zusätzliche NuGet-Pakete enthält.  
   
-1.  Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)**, und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.  
+1. Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)**, und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.  
   
-     Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie dies unter [Setup und Installation](../cross-platform/setup-and-install.md)beschrieben wird.  
+    Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie dies unter [Setup und Installation](../cross-platform/setup-and-install.md)beschrieben wird.  
   
-2.  Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Reihe einzelner Projekte:  
+2. Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Reihe einzelner Projekte:  
   
-    -   **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.  
+   - **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.  
   
-    -   **WeatherApp.Droid**: das Projekt, das den systemeigenen Android-Code enthält. Dieses wird als Standardstartprojekt festgelegt.  
+   - **WeatherApp.Droid**: das Projekt, das den systemeigenen Android-Code enthält. Dieses wird als Standardstartprojekt festgelegt.  
   
-    -   **WeatherApp.iOS**: das Projekt, das den systemeigenen iOS-Code enthält.  
+   - **WeatherApp.iOS**: das Projekt, das den systemeigenen iOS-Code enthält.  
   
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**: das Projekt, das den nativen Phone-Code enthält.  
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**: das Projekt, das den nativen Phone-Code enthält.  
   
      Innerhalb eines jeden nativen Projekts haben Sie Zugriff auf den nativen Designer für die entsprechende Plattform und können so plattformspezifische Bildschirme implementieren.  
   
-3.  Fügen Sie das NuGet-Paket **Newtonsoft.Json** zum PCL-Projekt hinzu, das Sie zum Verarbeiten der von einem Wetterdatendienst abgerufenen Informationen verwenden:  
+3. Fügen Sie das NuGet-Paket **Newtonsoft.Json** zum PCL-Projekt hinzu, das Sie zum Verarbeiten der von einem Wetterdatendienst abgerufenen Informationen verwenden:  
   
-    -   Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'**, und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.  
+   -   Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'**, und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.  
   
-         Wählen Sie im NuGet-Fenster die Registerkarte **Durchsuchen** aus, und suchen Sie nach **Newtonsoft**.  
+        Wählen Sie im NuGet-Fenster die Registerkarte **Durchsuchen** aus, und suchen Sie nach **Newtonsoft**.  
   
-    -   Wählen Sie **Newtonsoft.Json**aus.  
+   -   Wählen Sie **Newtonsoft.Json**aus.  
   
-    -   Aktivieren Sie auf der rechten Seite des Fensters das Projekt **WeatherApp** (das einzige Projekt, in dem Sie das Paket installieren müssen).  
+   -   Aktivieren Sie auf der rechten Seite des Fensters das Projekt **WeatherApp** (das einzige Projekt, in dem Sie das Paket installieren müssen).  
   
-    -   Stellen Sie sicher, dass das **Version** -Feld auf die **neueste stabile** Version festgelegt ist.  
+   -   Stellen Sie sicher, dass das **Version** -Feld auf die **neueste stabile** Version festgelegt ist.  
   
-    -   Klicken Sie auf **Installieren**.  
+   -   Klicken Sie auf **Installieren**.  
   
-    -   ![Suchen und Installieren des Newtonsoft.Json NuGet-Pakets](../cross-platform/media/crossplat-xamarin-formsguide-5.png "Plattformübergreifender Xamarin-FormsGuide 5")  
+   -   ![Suchen und Installieren des Newtonsoft.Json NuGet-Pakets](../cross-platform/media/crossplat-xamarin-formsguide-5.png "Plattformübergreifender Xamarin-FormsGuide 5")  
   
-4.  Wiederholen Sie Schritt 3, um das **Microsoft.Net.Http**-Paket zu suchen und zu installieren.  
+4. Wiederholen Sie Schritt 3, um das **Microsoft.Net.Http**-Paket zu suchen und zu installieren.  
   
-5.  Erstellen Sie die Projektmappe, und vergewissern Sie sich, dass keine Buildfehler aufgetreten sind.  
+5. Erstellen Sie die Projektmappe, und vergewissern Sie sich, dass keine Buildfehler aufgetreten sind.  
   
 ##  <a name="dataservice"></a> Schreiben von freigegebenem Datendienstcode  
  Im Projekt **WeatherApp (Portable)** schreiben Sie Code für die portable Klassenbibliothek (portable class library; PCL), die plattformübergreifend verwendet wird. In App-Paketen, die von iOS-, Android- und Windows Phone-Projekten erstellt werden, ist die PCL automatisch enthalten.  

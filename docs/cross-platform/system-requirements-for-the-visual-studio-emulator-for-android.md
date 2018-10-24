@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1ea73057992447016b1b9ac68c98b79b68f70c17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881611"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systemvoraussetzungen für den Visual Studio-Emulator für Android
 Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer ausgeführt, die Virtualisierungstechnologie für Windows 8 und höhere Versionen. Um den Emulator ausführen, muss der Computer die in diesem Thema beschriebenen Voraussetzungen zum Ausführen von Hyper-V erfüllen.  
@@ -44,76 +44,76 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
   
  Systemanforderungen  
   
--   Unterstützung für Hyper-V (siehe nachstehende Anforderungen für Hyper-V)  
+- Unterstützung für Hyper-V (siehe nachstehende Anforderungen für Hyper-V)  
   
--   6 GB RAM oder mehr.  
+- 6 GB RAM oder mehr.  
   
--   64-Bit-Version der Pro-Edition von Windows 8, Windows 8.1, Windows 10 oder höher.  
+- 64-Bit-Version der Pro-Edition von Windows 8, Windows 8.1, Windows 10 oder höher.  
   
--   Prozessor, der SSSE3 oder höher unterstützt.  
+- Prozessor, der SSSE3 oder höher unterstützt.  
   
- Netzwerkanforderungen  
+  Netzwerkanforderungen  
   
--   DHCP  
+- DHCP  
   
--   Automatisch konfigurierte DNS- und Gateway-Einstellungen  
+- Automatisch konfigurierte DNS- und Gateway-Einstellungen  
   
- Hyper-V-Anforderungen  
+  Hyper-V-Anforderungen  
   
--   Das BIOS muss folgende Funktionen unterstützen:  
+- Das BIOS muss folgende Funktionen unterstützen:  
   
-    -   Hardwareunterstützte Virtualisierung  
+  -   Hardwareunterstützte Virtualisierung  
   
-    -   SLAT (Second Level Address Translation)  
+  -   SLAT (Second Level Address Translation)  
   
-    -   Datenausführungsverhinderung (DEP, Data Execution Prevention)  
+  -   Datenausführungsverhinderung (DEP, Data Execution Prevention)  
   
--   Unter Windows muss Hyper-V aktiviert ist und ausgeführt werden.  
+- Unter Windows muss Hyper-V aktiviert ist und ausgeführt werden.  
   
--   Sie müssen ein Mitglied der lokalen Administratorengruppe von Hyper-V sein.  
+- Sie müssen ein Mitglied der lokalen Administratorengruppe von Hyper-V sein.  
   
 ##  <a name="System"></a> Systemanforderungen  
  Ihr Computer muss die folgenden Anforderungen erfüllen:  
   
--   Hyper-V-Unterstützung (siehe [Hyper-V-Anforderungen](#HyperV))  
+- Hyper-V-Unterstützung (siehe [Hyper-V-Anforderungen](#HyperV))  
   
--   6 GB RAM oder mehr.  
+- 6 GB RAM oder mehr.  
   
--   64-Bit-Version der Pro-Edition von Windows 8, Windows 8.1, Windows 10 oder höher.  
+- 64-Bit-Version der Pro-Edition von Windows 8, Windows 8.1, Windows 10 oder höher.  
   
- Zum Überprüfen der Anforderungen an RAM und Windows wählen Sie in der Systemsteuerung die System- und Sicherheitseinstellungen, und anschließend System.  
+  Zum Überprüfen der Anforderungen an RAM und Windows wählen Sie in der Systemsteuerung die System- und Sicherheitseinstellungen, und anschließend System.  
   
- ![Überprüfung der Systemanforderungen](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+  ![Überprüfung der Systemanforderungen](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Netzwerkanforderungen  
  Ihr Netzwerk muss folgende Anforderungen erfüllen:  
   
--   DHCP  
+- DHCP  
   
-     Der Emulator benötigt DHCP, da er sich selbst als separates Gerät im Netzwerk mit eigener IP-Adresse konfiguriert.  
+   Der Emulator benötigt DHCP, da er sich selbst als separates Gerät im Netzwerk mit eigener IP-Adresse konfiguriert.  
   
--   Automatisch konfigurierte DNS- und Gateway-Einstellungen  
+- Automatisch konfigurierte DNS- und Gateway-Einstellungen  
   
-     Es ist nicht möglich, DNS und Gateway-Einstellungen für den Emulator manuell zu konfigurieren.  
+   Es ist nicht möglich, DNS und Gateway-Einstellungen für den Emulator manuell zu konfigurieren.  
   
- Informationen zum Beheben von Netzwerkproblemen im Emulator finden Sie unter den folgenden Themen:  
+  Informationen zum Beheben von Netzwerkproblemen im Emulator finden Sie unter den folgenden Themen:  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V-Anforderungen  
  Hyper-V-Anforderungen im BIOS  
   
  Das BIOS des Computers muss folgende Anforderungen unterstützen, und muss aktiviert sein:  
   
--   Hardwareunterstützte Virtualisierung  
+- Hardwareunterstützte Virtualisierung  
   
--   SLAT (Second Level Address Translation)  
+- SLAT (Second Level Address Translation)  
   
--   Datenausführungsverhinderung (DEP, Data Execution Prevention)  
+- Datenausführungsverhinderung (DEP, Data Execution Prevention)  
   
- Hyper-V-Anforderungen in Windows  
+  Hyper-V-Anforderungen in Windows  
   
- Wenn Ihr Computer und die BIOS-Einstellungen bereits zur Unterstützung von Hyper-V konfiguriert sind, wird das Setupprogramm aktiviert und Hyper-V gestartet. Andernfalls müssen Sie diese Voraussetzungen möglicherweise manuell aktivieren.  
+  Wenn Ihr Computer und die BIOS-Einstellungen bereits zur Unterstützung von Hyper-V konfiguriert sind, wird das Setupprogramm aktiviert und Hyper-V gestartet. Andernfalls müssen Sie diese Voraussetzungen möglicherweise manuell aktivieren.  
   
 |Anforderung|Überprüfen und Aktivieren dieser Anforderung|  
 |-----------------|----------------------------------------------|  
@@ -127,11 +127,11 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
  Wenn Sie den Emulator ausführen, und noch kein Mitglied der Gruppe der Hyper-V-Administratoren sind, werden Sie aufgefordert, Der Gruppe beizutreten (das Dialogfeld bezieht sich auf den Windows Phone-Emulator). Für den Beitritt zu dieser Gruppe sind Administratorrechte erforderlich.  
   
 > [!IMPORTANT]
->  Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.  
+> Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.  
   
  ![Beitritt zur Hyper&#45;V-Administratorsicherheitsgruppe](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
- Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen. Weitere Informationen finden Sie unter [Hinzufügen eines Benutzerkontos zu einer Gruppe](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Dieses Windows 7-Thema gilt auch für Windows 8).  
+ Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen.  
   
 ##  <a name="BootableVHD"></a> Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt  
  Wenn Sie versuchen, eine App im Visual Studio-Emulator für Android auszuführen, während Sie Windows von einer startbaren virtuellen Festplatte ausführen, dauert es in der Regel einige Minuten, bis der Emulator startet, oder beim Start einen Fehler ausgibt. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: Fehler bei der Bereitstellung der App. Versuchen Sie es erneut.  
@@ -141,15 +141,15 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 ##  <a name="Files"></a> Hyper-V benötigt nicht komprimierte und nicht verschlüsselte Dateien  
  Auf einer mit dem NTFS-Dateisystem konfigurierten Festplatte müssen die virtuellen Festplattendateien, die von Hyper-V verwendet werden, dekomprimiert und entschlüsselt werden. Stellen Sie sicher, dass die folgenden Verzeichnisse nicht komprimiert oder verschlüsselt werden:  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- Im Dateisystem ReFS darf bei den virtuellen Festplattendateien nicht das Integritätsbit festgelegt sein.  
+  Im Dateisystem ReFS darf bei den virtuellen Festplattendateien nicht das Integritätsbit festgelegt sein.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Hardwareanforderungen für das Weiterleiten von Grafiken (OpenGL ES-Unterstützung)  
  Damit der Emulator Aufrufe an die GPU simulieren kann, wie z. B. von OpenGL-ES, muss Ihr Computer eine DirectX-kompatible GPU besitzen und die entsprechenden DirectX-Treiber müssen installiert sein.  

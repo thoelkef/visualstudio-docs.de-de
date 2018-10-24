@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881676"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
  Beachten Sie Folgendes:  
   
--   Der #else-Branch in Zeile 8 ist ausgegraut und stellt den aktiven Bereich dar, da __ANDROID\_\_ für das Android-Projekt definiert ist.  
+- Die #else-Branch in Zeile 8 ist ausgegraut inaktiven Bereich, da `__ANDROID__` für Android-Projekt definiert ist.  
   
--   Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der eine violette Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell inaktiven iOS-Projekt definiert ist. Während im Android-Projekt Zeile 11 kompilieren wird, ist dies im iOS-Projekt nicht der Fall. Da es sich um freigegebenen Code handelt, sollten Sie diesen auch dann ändern, wenn er in der aktuell aktiven Konfiguration kompiliert wird.  
+- Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der eine violette Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell inaktiven iOS-Projekt definiert ist. Während im Android-Projekt Zeile 11 kompilieren wird, ist dies im iOS-Projekt nicht der Fall. Da es sich um freigegebenen Code handelt, sollten Sie diesen auch dann ändern, wenn er in der aktuell aktiven Konfiguration kompiliert wird.  
   
--   Zeile 12 weist eine rote Wellenlinie am BYE-Bezeichner auf; dieser Bezeichner ist in dem aktuell ausgewählten aktiven Projekt nicht definiert.  
+- Zeile 12 weist eine rote Wellenlinie am BYE-Bezeichner auf; dieser Bezeichner ist in dem aktuell ausgewählten aktiven Projekt nicht definiert.  
   
- Ändern Sie nun das aktive Projekt in iOS.StaticLibrary, und achten Sie auf die Änderungen an den Wellenlinien.  
+  Ändern Sie nun das aktive Projekt in iOS.StaticLibrary, und achten Sie auf die Änderungen an den Wellenlinien.  
   
- ![iOS ist als aktives Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS ist als aktives Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Beachten Sie Folgendes:  
+  Beachten Sie Folgendes:  
   
--   Der #ifdef-Branch in Zeile 6 ist ausgegraut und stellt den inaktiven Bereich dar, da __ANDROID\_\_ für das iOS-Projekt nicht definiert ist.  
+- Der #ifdef-Branch in Zeile 6 ist ausgegraut inaktiven Bereich, da *_ANDROID\\*  \_ für iOS-Projekt nicht definiert ist.  
   
--   Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der nun eine rote Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell aktiven iOS-Projekt definiert ist.  
+- Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der nun eine rote Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell aktiven iOS-Projekt definiert ist.  
   
--   Zeile 12 weist der BYE-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven Android.NativeActivity-Projekt nicht definiert.  
+- Zeile 12 weist der BYE-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven Android.NativeActivity-Projekt nicht definiert.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense mit Einzeldatei  
  Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

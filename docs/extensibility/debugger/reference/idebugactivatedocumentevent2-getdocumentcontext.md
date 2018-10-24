@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
+title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03fbc1499372221a815eb639442af586f7020cf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3eaf98fe0c60a23f519bd6ec86ae6c674ac3b4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877035"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-Ruft den Dokumentenkontext, der die Position im Dokument wird beschrieben, die durch das debugpaket active vorgenommen werden soll.  
+Ruft ab, der Dokumentenkontext, der die Position im Dokument wird beschrieben, die durch das debugpaket ausgeführt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,13 +42,13 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>Parameter  
  `ppDocContext`  
- [out] Gibt eine [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das eine Position in einer Datei-Quelldokument darstellt.  
+ [out] Gibt eine [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das eine Position in einem Quelldokument für die Datei darstellt.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Position kann verwendet werden, um z. B. die Einfügemarke anzuzeigen.  
+ Diese Position kann verwendet werden, um die Einfügemarke, z. B. anzuzeigen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

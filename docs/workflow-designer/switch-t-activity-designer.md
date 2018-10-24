@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878186"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T >-Aktivitätsdesigner
 
@@ -39,7 +39,7 @@ Nachfolgend werden die Eigenschaften des **Switch < T\>**  Designer. Alle diese 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.Switch%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen des <xref:System.Activities.Statements.Switch%601>-Aktivitätsdesigners an. Der Standardwert ist Switch < Int32\>. Der Wert kann bearbeitet werden, der **Eigenschaften** Fenster oder direkt im Header.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Gibt den Ausdruck an, mit dem die Schlüssel in der Auflistung der Fälle verglichen wurden, um zu bestimmen, welcher Fall auszuführen ist.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Gibt die Aktivität an, die ausgeführt werden soll, wenn keine Übereinstimmung gefunden wird. Klicken Sie auf die **Hinzufügen einer Aktivität** Designer auf die Schaltfläche zum Öffnen der **Standard** Feld, in dem die Aktivität abgelegt werden kann.|

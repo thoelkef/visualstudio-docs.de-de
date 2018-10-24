@@ -1,5 +1,5 @@
 ---
-title: Speichern eines Dokuments Standard | Microsoft Docs
+title: Speichern eines Standarddokuments | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,48 +15,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45fa2c5acfad8195ed2853d7e21413b77262a6b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 251a9a7632a9d9615302cd3c5c1bf2a406529caf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875605"
 ---
-# <a name="saving-a-standard-document"></a>Speichern eines Dokuments Standard
-Die Umgebung ist für die speichern, speichern unter, und speichern Sie alle Befehle. Wenn ein Benutzer wählt **speichern**, **speichern unter**, oder **alle speichern** aus der **Datei** Menü oder schließt die Projektmappe, wodurch eine  **Speichern Sie alle**, der folgende Prozess tritt.  
+# <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
+Die Umgebung verarbeitet die speichern, speichern unter, und speichern Sie alle Befehle. Wenn ein Benutzer auswählt **speichern**, **speichern unter**, oder **alle speichern** aus der **Datei** Menü oder schließt die Projektmappe, wodurch eine  **Speichern Sie alle**, der folgende Prozess durchgeführt.  
   
  ![Standard-Editor](../../extensibility/internals/media/public.gif "öffentliche")  
-Speichern Sie, speichern unter, und speichern Sie alle befehlsbehandelung für einen standard-editor  
+Speichern Sie, speichern und Klassenbehandlung für ein standard-Editor-Befehl Alle speichern  
   
- Dabei werden in den folgenden Schritten beschrieben:  
+ Dieser Prozess wird in den folgenden Schritten beschrieben:  
   
-1.  Wenn die **speichern** und **speichern unter** Befehle aktiviert sind, verwendet der umgebungs der <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service, um zu bestimmen, das aktive Fenster, und daher welche Elemente gespeichert werden soll. Nachdem das aktive Fenster bekannt ist, sucht die Umgebung für das Dokument in der Dokumenttabelle der ausgeführten Hierarchie Zeiger und Element-ID (ItemID). Weitere Informationen finden Sie unter [Document-Tabelle ausgeführt](../../extensibility/internals/running-document-table.md).  
+1. Wenn die **speichern** und **speichern** Befehle aktiviert sind, ist die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service, um zu bestimmen, das das aktive Fenster, und somit welche Elemente gespeichert werden soll. Nachdem das aktive Dokumentfenster bekannt ist, sucht die Umgebung für das Dokument in der ausgeführten Dokumententabelle Hierarchie Zeiger und Elementbezeichner (Element-ID). Weitere Informationen finden Sie unter [Running Document Table](../../extensibility/internals/running-document-table.md).  
   
-     Wenn die **alle speichern** Befehl ausgewählt ist, wird die Umgebung verwendet die Informationen in der Dokumenttabelle der ausgeführten kompilieren Sie die Liste aller Elemente zu speichern.  
+    Wenn die **Alles speichern** Befehl aktiviert ist, wird die Umgebung verwendet die Informationen in der ausgeführten Dokumententabelle, um die Liste der zu speichernden alle Elemente zu kompilieren.  
   
-2.  Wenn empfängt die Lösung eine <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> aufrufen, wird die Gruppe von ausgewählten Elementen durchlaufen (d. h. die Mehrfachauswahl von verfügbar gemacht werden die <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> Service).  
+2. Wenn die Lösung empfängt eine <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> aufrufen, wird der Satz von ausgewählten Elementen durchlaufen (, also die Mehrfachauswahl von verfügbar gemacht werden die <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> Service).  
   
-3.  Für jedes Element in der Auswahl, die Lösung verwendet den Hierarchie-Zeiger zum Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> Methode, um zu bestimmen, ob die **speichern** Menübefehl aktiviert werden soll. Wenn ein oder mehrere Elemente geändert, sind die **speichern** Befehl ist aktiviert. Wenn die Hierarchie ein standard-Editors verwendet wird, klicken Sie dann die Hierarchie-Delegaten, die für Abfragen modifizierte Status in den Editor durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> Methode.  
+3. Die Lösung verwendet für jedes Element in der Auswahl den Hierarchie Zeiger aufrufen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> Methode, um zu bestimmen, ob die **speichern** Menübefehl aktiviert werden soll. Wenn eine oder mehrere Elemente geändert, und klicken Sie dann die **speichern** Befehl ist aktiviert. Wenn die Hierarchie ein standard-Editors verwendet wird, klicken Sie dann die Hierarchie-Delegaten, die für Abfragen dirty-Status in den Editor durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> Methode.  
   
-4.  Für jedes ausgewählte Element, das geändert wurde, verwendet die Lösung den Hierarchie-Zeiger zum Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> -Methode für die entsprechenden Hierarchien.  
+4. Für jedes ausgewählte Element, das geändert wurde, verwendet die Lösung den Hierarchie Zeiger zum Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> Methode auf die entsprechenden Hierarchien.  
   
-     Es ist üblich, für die Hierarchie auf einen standard-Editor verwenden, um das Dokument zu bearbeiten. In diesem Fall die Dokumentdaten-Objekt für diesen Editor zu unterstützen, sollte die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> Schnittstelle. Nach dem Empfang der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> -Methodenaufruf, informiert das Projekt sollte Editors, die durch Aufrufen des Dokuments gespeichert wurde die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> Methode für das Dokument-Datenobjekt. Der Editor können die Umgebung, behandeln die **speichern unter** (Dialogfeld), durch den Aufruf `Query Service` für die <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> Schnittstelle. Dies gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle. Der Editor muss dann rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> -Methode, die Übergabe eines Zeigers auf des Editors <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Implementierung mithilfe von der `pPersistFile` Parameter. Die Umgebung führt den Speichervorgang, und bietet die **speichern unter** Dialogfeld für den Editor. Die Umgebung ruft dann wieder in den Editor mit <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
+    Es ist üblich, für die Hierarchie mit einem standard-Editor zum Bearbeiten des Dokuments. In diesem Fall die Daten des Objekts, für Editor unterstützen soll die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> Schnittstelle. Bei Empfang der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> -Methodenaufruf, das Projekt sollte darüber zu informieren den Editor, das das Dokument durch Aufrufen gespeichert wird der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> Methode für das dokumentendatenobjekt. Der Editor können die Umgebung, Behandeln der **speichern unter** Dialogfeld durch Aufrufen von `Query Service` für die <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> Schnittstelle. Gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle. Der Editor müssen Sie die Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> Methode auf und übergibt einen Zeiger auf die Anmerkung der Redaktion <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Implementierung von der `pPersistFile` Parameter. Die Umgebung anschließend den Speichervorgang ausgeführt, und die **speichern** im Dialogfeld für den Editor. Die Umgebung ruft dann wieder in den Editor mit <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
   
-5.  Wenn der Benutzer versucht, ein unbenanntes Dokument (d. h. ein bisher nicht gespeicherten Dokument) gespeichert ist, wird ein Befehl Speichern unter tatsächlich ausgeführt.  
+5. Wenn der Benutzer versucht, ein unbenanntes Dokument (d. h. ein zuvor nicht gespeicherte Dokument) gespeichert ist, klicken Sie dann ein Befehl Speichern unter tatsächlich erfolgt.  
   
-6.  Für den Befehl Speichern unter zeigt die Umgebung das Dialogfeld Speichern unter, der Benutzer einen Dateinamen aufgefordert.  
+6. Für den Befehl Speichern unter zeigt die Umgebung das Dialogfeld Speichern unter, der Benutzer zum Eingeben eines Dateinamens aufgefordert.  
   
-     Wenn der Name der Datei wurde geändert, und klicken Sie dann die Hierarchie verantwortlich ist für des Dokumentframe aktualisiert Informationen durch Aufrufen zwischengespeicherte <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).  
+    Wenn der Name der Datei wurde geändert, und klicken Sie dann die Hierarchie verantwortlich ist für Informationen durch Aufrufen des Dokument-Frames aktualisieren zwischengespeicherte <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).  
   
- Wenn die **speichern unter** Befehl verschiebt den Speicherort des Dokuments, die Hierarchie ist empfindlich gegenüber der Speicherort des Dokuments, und die Hierarchie ist verantwortlich für die Übergabe des Besitzes des Fensters geöffneten Dokument an einer anderen Hierarchie. Dies geschieht beispielsweise, wenn das Projekt verfolgt nach, ob die Datei eine interne oder externe Datei (Verschiedenes) in Bezug auf das Projekt. Verwenden Sie wie folgt vor, um den Besitzer einer Datei zum Projekt verschiedene Dateien zu ändern.  
+   Wenn die **speichern** Befehl verschiebt die Position des Dokuments und die Hierarchie ist anfällig für den Speicherort des Dokuments, und die Hierarchie für die Übergabe des Besitzes der geöffneten Dokumentfenster an einer anderen Hierarchie verantwortlich ist. Dies geschieht beispielsweise, wenn das Projekt verfolgt nach, ob die Datei eine interne oder externe Datei (sonstige) in Bezug auf das Projekt. Verwenden Sie wie folgt vor, um den Besitz einer Datei auf das Projekt verschiedene Dateien zu ändern.  
   
-## <a name="changing-file-ownership"></a>Dateibesitz ändern  
+## <a name="changing-file-ownership"></a>Ändern der Dateibesitz  
   
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>So ändern Sie Dateibesitz dem Projekt verschiedene Dateien  
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>So ändern Sie den Besitzer auf das Projekt verschiedene Dateien  
   
-1.  Abfrage-Dienst für die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.  
+1.  Dienst für die Abfrage die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.  
   
-     Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> wird zurückgegeben.  
+     Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> zurückgegeben wird.  
   
 2.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) Methode, um das Dokument an die neue Hierarchie übertragen. Diese Methode wird von die Hierarchie Ausführen den Befehl Speichern unter aufgerufen.  
   

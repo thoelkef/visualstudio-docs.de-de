@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddataforexe | Microsoft Docs'
+title: 'Idiadatasource:: Loaddataforexe | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce90f3f46b040662f0b0dc1026dbbed0b5c1166
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c5c3850eaeb1ce7e97fdeb2473fb707e66be1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880013"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
-Wird geöffnet, und bereitet die Debugdaten der.exe/.dll-Datei zugeordnet.  
+Wird geöffnet, und bereitet die Debug-Daten, die der Datei.exe/.dll zugeordnet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT loadDataForExe (
  [in] Pfad zur .exe oder .dll-Datei.  
   
  searchPath  
- [in] Alternativpfad Debugdaten gesucht.  
+ [in] Alternativen Pfad für die Debug-Daten zu suchen.  
   
  pCallback  
- [in] Ein `IUnknown` Schnittstelle für ein Objekt, das eine Rückrufschnittstelle Debuggen, z. B. unterstützt die [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), und/oder die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstellen.  
+ [in] Ein `IUnknown` Schnittstelle für ein Objekt, das eine Debug-Rückrufschnittstelle,, z. B. unterstützt die [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), bzw. die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstellen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt einige der möglichen Fehlercodes für diese Methode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt einige der möglichen Fehlercodes für diese Methode.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -54,18 +54,18 @@ HRESULT loadDataForExe (
 |E_PDB_INVALID_SIG|Signatur stimmt nicht überein.|  
 |E_PDB_INVALID_AGE|Alter stimmt nicht überein.|  
 |E_INVALIDARG|Ungültiger Parameter.|  
-|E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet wurde.|  
+|E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der debugheader der Datei.exe/.dll benennt den Speicherort des zugeordneten Debuggen.  
+ Die debugheader der Datei.exe/.dll benennt den Speicherort der zugeordneten Debuggen.  
   
- Diese Methode liest die debugheader und sucht dann nach und bereitet die Debugdaten vor. Der Fortschritt der Suche kann optional gemeldet, und mithilfe von Rückrufen gesteuert. Z. B. die [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) wird aufgerufen, wenn die `IDiaDataSource::loadDataForExe` Methode findet und ein Debugverzeichnis verarbeitet.  
+ Diese Methode liest den debugheader und sucht dann nach und bereitet die Debug-Daten. Der Status der Suche kann optional gemeldet und durch Rückrufe gesteuert werden. Z. B. die [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) wird aufgerufen, wenn die `IDiaDataSource::loadDataForExe` Methode findet und ein Debugverzeichnis verarbeitet.  
   
- Die [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) und [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstellen erlauben es die Clientanwendung, geben Sie alternative Methoden zum Lesen von Daten aus der ausführbaren Datei Datei, wenn die Datei kann nicht direkt über standard-Datei-e/a zugegriffen werden.  
+ Die [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) und [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstellen können von der Clientanwendung, geben Sie alternative Methoden zum Lesen von Daten aus der ausführbaren Datei Datei, wenn die Datei kann nicht direkt über standard-Datei-e/a zugegriffen werden.  
   
  Verwenden Sie zum Laden einer PDB-Datei ohne Überprüfung der [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) Methode.  
   
- Verwenden Sie zum Überprüfen der PDB-Datei anhand bestimmter Kriterien die [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) Methode.  
+ Verwenden Sie zum Überprüfen der PDB-Datei anhand bestimmter Kriterien der [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) Methode.  
   
  Um eine PDB-Datei direkt aus dem Arbeitsspeicher zu laden, verwenden die [idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) Methode.  
   

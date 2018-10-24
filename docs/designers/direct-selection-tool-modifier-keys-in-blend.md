@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876229"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Direktauswahlwerkzeug-Zusatztasten in Blend
 In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die Form eines vorhandenen Pfads mit dem **Direktauswahl**-Tool ![Direktauswahl-Tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) bearbeiten können. Sie können mit dem **Stiftwerkzeug** Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen oder zwei vorhandene Pfade verbinden.
 
 |Aktion|Vorgehensweise|Zeiger|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Tangentensteuerpunkte für einen Punkt auf einem Pfad anzeigen|Klicken Sie auf einen Punkt auf einem Pfad.|![Tangentensteuerpunkte für einen Punkt auf einem Pfad anzeigen](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Zeiger zum Verschieben von Punkten|
 |Einen Punkt auf einem Pfad verschieben|Ziehen Sie einen Punkt auf einen Pfad|![Einen Punkt auf einem Pfad verschieben](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Zeiger zum Verschieben von Punkten|
 |Tangentensteuerpunkte für ein Segment zwischen zwei Punkten auf einem Pfad anzeigen|Klicken Sie auf ein Segment auf einem Pfad.|![Tangentensteuerpunkte für ein Segment zwischen zwei Punkten auf einem Pfad anzeigen](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Zeiger zum Verschieben von Segmenten|

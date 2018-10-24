@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+title: IDebugCoreServer3::GetServerFriendlyName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811292ff5f7dd95e127e63d30bf14ee06269ff7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bfc596bd1b77c77ea5b54a66ca349a66e50915c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875787"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Ruft einen Anzeigenamen für den Server ab.  
@@ -44,15 +44,15 @@ int GetServerFriendlyName(
  [out] Gibt einen Anzeigenamen für den Server zurück.  
   
 > [!NOTE]
->  Der Aufrufer ist verantwortlich für die Freigabe der Zeichenfolge.  
+>  Der Aufrufer ist verantwortlich für das Freigeben der Zeichenfolge.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
   
 ## <a name="remarks"></a>Hinweise  
- Bei Servern Benutzer gestartet werden ist der Name, die von dieser Methode zurückgegebene den vollständigen Namen des Servers. Bei Servern automatisch gestartet werden ist der Name des Computers an den Server ausgeführt wird, auf.  
+ Für Benutzer-gestartet-Server ist der Name, der von dieser Methode zurückgegebene den vollständigen Namen des Servers. Bei Servern automatisch gestartet werden ist der Name des Computers an den Server ausgeführt wird, auf.  
   
- Rufen Sie für den Namen eines Computers orientierten der [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) Methode.  
+ Rufen Sie für den Namen der Computer-orientierten der [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

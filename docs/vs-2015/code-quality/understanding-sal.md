@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874279"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ void * memcpy(
   
  Die Dokumentation enthält eine Reihe von Bits von Informationen, die wird empfohlen, dass der Code hat bestimmte Eigenschaften aus, um die Richtigkeit des Programms beibehalten:  
   
--   `memcpy` kopiert die `count` von Bytes aus dem Quellarray in den Zielpuffer.  
+- `memcpy` kopiert die `count` von Bytes aus dem Quellarray in den Zielpuffer.  
   
--   Der Zielpuffer muss mindestens so groß wie der Quellpuffer.  
+- Der Zielpuffer muss mindestens so groß wie der Quellpuffer.  
   
- Der Compiler kann nicht jedoch die Dokumentation oder in informellen Kommentare lesen. Nicht, dass eine Beziehung zwischen zwei Puffern vorhanden ist, und `count`, und es auch kann nicht effektiv zu einer Beziehung. SAL kann mehr Klarheit darüber, wie die Eigenschaften und die Implementierung der Funktion bereitstellen, wie hier gezeigt:  
+  Der Compiler kann nicht jedoch die Dokumentation oder in informellen Kommentare lesen. Nicht, dass eine Beziehung zwischen zwei Puffern vorhanden ist, und `count`, und es auch kann nicht effektiv zu einer Beziehung. SAL kann mehr Klarheit darüber, wie die Eigenschaften und die Implementierung der Funktion bereitstellen, wie hier gezeigt:  
   
 ```cpp  
   
@@ -117,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  
   
-1.  Öffnen Sie in Visual Studio ein C++-Projekt, SAL-Anmerkungen enthält.  
+1. Öffnen Sie in Visual Studio ein C++-Projekt, SAL-Anmerkungen enthält.  
   
-2.  Wählen Sie auf der Menüleiste **erstellen**, **Codeanalyse für Lösung ausführen**.  
+2. Wählen Sie auf der Menüleiste **erstellen**, **Codeanalyse für Lösung ausführen**.  
   
-     Betrachten Sie die _In\_ Beispiel in diesem Abschnitt. Wenn Sie die Codeanalyse darauf ausführen, wird diese Warnung angezeigt:  
+    Betrachten Sie die \_In\_ Beispiel in diesem Abschnitt. Wenn Sie die Codeanalyse darauf ausführen, wird diese Warnung angezeigt:  
   
-    > **C6387 Ungültiger Parameterwert**   
-    > "pInt" kann "0" sein: dies nicht der Spezifikation für die Funktion 'InCallee' entsprechen.  
+   > **C6387 Ungültiger Parameterwert**   
+   > "pInt" kann "0" sein: dies nicht der Spezifikation für die Funktion 'InCallee' entsprechen.  
   
-### <a name="example-the-in-annotation"></a>Beispiel: Die _In\_ Anmerkung  
+### <a name="example-the-in-annotation"></a>Beispiel: Die \_In\_ Anmerkung  
  Die `_In_` Anmerkung gibt an, dass:  
   
 -   Der Parameter muss gültig sein und wird nicht geändert werden.  
@@ -164,7 +164,7 @@ void BadInCaller()
   
  Wenn Sie Visual Studio-Codeanalyse in diesem Beispiel verwenden, es wird überprüft, ob der Aufrufer einen nicht-Null-Zeiger auf ein initialisiertes Puffer für übergeben `pInt`. In diesem Fall `pInt` Zeiger darf nicht NULL sein.  
   
-### <a name="example-the-inopt-annotation"></a>Beispiel: Die _In_opt\_ Anmerkung  
+### <a name="example-the-inopt-annotation"></a>Beispiel: Die \_In_opt\_ Anmerkung  
  `_In_opt_` entspricht dem `_In_`, außer dass input-Parameters NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
@@ -192,7 +192,7 @@ void InOptCaller()
   
  Visual Studio-Codeanalyse überprüft, dass die Funktion auf NULL prüft, bevor er auf den Puffer zugreift.  
   
-### <a name="example-the-out-annotation"></a>Beispiel: Die _Out\_ Anmerkung  
+### <a name="example-the-out-annotation"></a>Beispiel: Die \_Out\_ Anmerkung  
  `_Out_` Ein häufiges Szenario, in dem ein nicht-NULL-Zeiger, der auf einen Puffer Element verweist übergeben wird, und die Funktion initialisiert das Element, wird unterstützt. Initialisiert den Puffer vor dem Aufruf muss der Aufrufer keine; die aufgerufene Funktion verspricht sie zu initialisieren, bevor sie zurückkehrt.  
   
 ```cpp  
@@ -219,7 +219,7 @@ void OutCaller()
   
  Visual Studio Code Analysis Tool überprüft, dass der Aufrufer einen nicht-NULL-Zeiger auf einen Puffer für übergibt `pInt` und, die der Puffer wird von der Funktion initialisiert, vor dem zurückgeben.  
   
-### <a name="example-the-outopt-annotation"></a>Beispiel: Die _Out_opt\_ Anmerkung  
+### <a name="example-the-outopt-annotation"></a>Beispiel: Die \_Out_opt\_ Anmerkung  
  `_Out_opt_` entspricht dem `_Out_`, außer dass der Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
@@ -247,7 +247,7 @@ void OutOptCaller()
   
  Visual Studio-Codeanalyse überprüft, dass diese Funktion prüft, ob NULL vor `pInt` dereferenziert wird, und wenn `pInt` ist nicht NULL, dass der Puffer von der Funktion initialisiert wird, bevor sie zurückkehrt.  
   
-### <a name="example-the-inout-annotation"></a>Beispiel: Die _Inout\_ Anmerkung  
+### <a name="example-the-inout-annotation"></a>Beispiel: Die \_Inout\_ Anmerkung  
  `_Inout_` wird verwendet, um einen Zeigerparameter zu kommentieren, der von der Funktion geändert werden kann. Der Zeiger muss auf gültige initialisierte Daten vor dem Aufruf zeigen, und auch wenn es geändert wird, noch muss einen gültigen Wert bei der Rückgabe. Die Anmerkung gibt an, dass die Funktion kann frei auslesen und in den Puffer einem Element schreiben. Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
   
 > [!NOTE]
@@ -279,7 +279,7 @@ void BadInOutCaller()
   
  Visual Studio-Codeanalyse überprüft, dass der Aufrufer einen nicht-NULL-Zeiger auf ein initialisiertes Puffer für übergeben `pInt`, und vor der Rückgabe `pInt` weiterhin ungleich NULL ist und der Puffer initialisiert wird.  
   
-### <a name="example-the-inoutopt-annotation"></a>Beispiel: Die _Inout_opt\_ Anmerkung  
+### <a name="example-the-inoutopt-annotation"></a>Beispiel: Die \_Inout_opt\_ Anmerkung  
  `_Inout_opt_` entspricht dem `_Inout_`, außer dass input-Parameters NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
@@ -309,7 +309,7 @@ void InOutOptCaller()
   
  Visual Studio-Codeanalyse überprüft, dass diese Funktion auf NULL überprüft werden, bevor er auf den Puffer zugreift, und wenn `pInt` ist nicht NULL, dass der Puffer von der Funktion initialisiert wird, bevor sie zurückkehrt.  
   
-### <a name="example-the-outptr-annotation"></a>Beispiel: Die _Outptr\_ Anmerkung  
+### <a name="example-the-outptr-annotation"></a>Beispiel: Die \_Outptr\_ Anmerkung  
  `_Outptr_` wird verwendet, um einen Parameter mit Anmerkungen versehen, die einen Zeiger zurückgibt.  Der Parameter selbst darf nicht NULL sein und die aufgerufene Funktion einen nicht-NULL-Zeiger zurückgegeben, es aus, und diese Zeiger verweist auf die initialisierte Daten.  
   
 ```cpp  
@@ -340,7 +340,7 @@ void OutPtrCaller()
   
  Visual Studio-Codeanalyse überprüft, dass der Aufrufer einen nicht-NULL-Zeiger übergeben wird, für die `*pInt`, und die der Puffer wird von der Funktion initialisiert, vor dem zurückgeben.  
   
-### <a name="example-the-outptropt-annotation"></a>Beispiel: Die _Outptr_opt\_ Anmerkung  
+### <a name="example-the-outptropt-annotation"></a>Beispiel: Die \_Outptr_opt\_ Anmerkung  
  `_Outptr_opt_` entspricht dem `_Outptr_`, außer dass der Parameter optional ist — der Aufrufer kann ein NULL-Zeiger für den Parameter übergeben.  
   
 ```cpp  
@@ -373,7 +373,7 @@ void OutPtrOptCaller()
   
  Visual Studio-Codeanalyse überprüft, dass diese Funktion prüft, ob NULL vor `*pInt` dereferenziert wird, und die der Puffer wird von der Funktion initialisiert, vor dem zurückgeben.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Beispiel: Die _Success\_ Anmerkung in Kombination mit _Out\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Beispiel: Die \_Erfolg\_ Anmerkung in Kombination mit \_Out\_  
  Anmerkungen können auf die meisten Objekte angewendet werden.  Insbesondere können Sie eine gesamte Funktion versehen.  Eine der offensichtlichsten Eigenschaften einer Funktion ist, dass es erfolgreich ausgeführt werden oder fehlschlagen kann. Aber wie die Zuordnung zwischen einem Puffer und seiner Größe, C/C++-Funktion Erfolg oder Misserfolg express kann nicht. Mithilfe der `_Success_` Anmerkung, Sie können angeben, welche Erfolg für eine Funktion aussieht.  Der Parameter für die `_Success_` Anmerkung ist nur ein Ausdruck, wann ist "true" gibt an, dass die Funktion erfolgreich war. Der Ausdruck kann alles sein, der die Anmerkung Parser verarbeiten kann. Die Auswirkungen der Anmerkungen, nachdem die Funktion gelten nur, wenn die Funktion erfolgreich ist. Dieses Beispiel zeigt, wie `_Success_` interagiert mit `_Out_` auf das richtige tun. Sie können mithilfe des Schlüsselworts `return` zur Darstellung des zurückgegeben Wert.  
   
 ```cpp  
@@ -403,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>Wann sollte ich Anmerkungen einfügen?  
  Es folgen einige Richtlinien:  
   
--   Versehen Sie alle Zeigerparameter.  
+- Versehen Sie alle Zeigerparameter.  
   
--   Versehen Sie Wertebereich Anmerkungen, um die Codeanalyse Puffer und Zeiger-Sicherheit gewährleisten können.  
+- Versehen Sie Wertebereich Anmerkungen, um die Codeanalyse Puffer und Zeiger-Sicherheit gewährleisten können.  
   
--   Versehen von Regeln und Sperren Nebeneffekte. Weitere Informationen finden Sie unter [Sperrverhalten kommentieren](../code-quality/annotating-locking-behavior.md).  
+- Versehen von Regeln und Sperren Nebeneffekte. Weitere Informationen finden Sie unter [Sperrverhalten kommentieren](../code-quality/annotating-locking-behavior.md).  
   
--   Kommentieren Sie Treibereigenschaften und andere domänenspezifische-Eigenschaften.  
+- Kommentieren Sie Treibereigenschaften und andere domänenspezifische-Eigenschaften.  
   
- Oder Sie können alle Parameter, die Ihre beabsichtigte löschen während des gesamten vornehmen und zu vereinfachen, um zu überprüfen, dass Anmerkungen ausgeführt wird, mit Anmerkungen versehen.  
+  Oder Sie können alle Parameter, die Ihre beabsichtigte löschen während des gesamten vornehmen und zu vereinfachen, um zu überprüfen, dass Anmerkungen ausgeführt wird, mit Anmerkungen versehen.  
   
 ## <a name="related-resources"></a>Verwandte Ressourcen  
  [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
