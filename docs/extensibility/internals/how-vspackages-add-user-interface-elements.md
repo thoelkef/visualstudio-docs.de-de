@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839114"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Wie VSPackages Benutzeroberflächenelemente hinzufügen
 Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, Symbolleisten und Toolfenster in Visual Studio mit der die *VSCT* Datei.  
@@ -90,15 +90,15 @@ Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, 
 #### <a name="menus"></a>Menüs  
  Jedes Menü wird definiert, wie eine [Menu-Element](../../extensibility/menu-element.md) in die `Menus` Abschnitt. Menüs müssen `guid`, `id`, und `priority` Attribute, und ein `Parent` -Element, und auch die folgenden zusätzlichen Attribute und untergeordnete Elemente:  
   
--   Ein `type` Attribut, das angibt, ob Sie im Menü in der IDE als eine Art von Menü oder eine Symbolleiste angezeigt werden soll.  
+- Ein `type` Attribut, das angibt, ob Sie im Menü in der IDE als eine Art von Menü oder eine Symbolleiste angezeigt werden soll.  
   
--   Ein [Strings-Element](../../extensibility/strings-element.md) , enthält eine [ButtonText-Element](../../extensibility/buttontext-element.md), dem gibt den Titel des Menüs an, in der IDE und ein [CommandName-Element](../../extensibility/commandname-element.md), die angibt, dass der Name, ist verwendet die **Befehl** Fenster aus, um das Menü zuzugreifen.  
+- Ein [Strings-Element](../../extensibility/strings-element.md) , enthält eine [ButtonText-Element](../../extensibility/buttontext-element.md), dem gibt den Titel des Menüs an, in der IDE und ein [CommandName-Element](../../extensibility/commandname-element.md), die angibt, dass der Name, ist verwendet die **Befehl** Fenster aus, um das Menü zuzugreifen.  
   
--   Optionale Kennzeichen. Ein [CommandFlag-Element](../../extensibility/command-flag-element.md) kann in einem menüdefinition so ändern Sie seine Darstellung oder Verhalten in der IDE angezeigt werden.  
+- Optionale Kennzeichen. Ein [CommandFlag-Element](../../extensibility/command-flag-element.md) kann in einem menüdefinition so ändern Sie seine Darstellung oder Verhalten in der IDE angezeigt werden.  
   
- Jede `Menu` Element muss eine Gruppe als übergeordnetes aufweisen, es sei denn, es sich um ein andockbares Element wie z. B. eine Symbolleiste ist. Ein andockbares Menü ist eigenes übergeordnetes Element. Weitere Informationen zu Menüs und Werte für die `type` Attribut, finden Sie unter den [Menu-Element](../../extensibility/menu-element.md) Dokumentation.  
+  Jede `Menu` Element muss eine Gruppe als übergeordnetes aufweisen, es sei denn, es sich um ein andockbares Element wie z. B. eine Symbolleiste ist. Ein andockbares Menü ist eigenes übergeordnetes Element. Weitere Informationen zu Menüs und Werte für die `type` Attribut, finden Sie unter den [Menu-Element](../../extensibility/menu-element.md) Dokumentation.  
   
- Das folgende Beispiel zeigt eine im angezeigten Menü auf der Menüleiste von Visual Studio neben der **Tools** Menü.  
+  Das folgende Beispiel zeigt eine im angezeigten Menü auf der Menüleiste von Visual Studio neben der **Tools** Menü.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos werden definiert, der `Combos` Abschnitt. Jede `Combo` -Element stellt ein Dropdown-Listenfeld, das in der IDE dar. Im Listenfeld können oder nicht beschreibbaren von Benutzern, abhängig vom Wert der `type` Attribut des Kombinationsfeld. Combos haben die gleichen Elemente und Verhalten, die Schaltflächen, und können auch die folgenden zusätzlichen Attribute:  
   
--   Ein `defaultWidth` Attribut, das Breite in Pixel angibt.  
+- Ein `defaultWidth` Attribut, das Breite in Pixel angibt.  
   
--   Ein `idCommandList` -Attribut, das eine Liste gibt an, die die Elemente enthält, die Sie im Listenfeld angezeigt werden. Die Befehlsliste muss deklariert werden, in der gleichen `GuidSymbol` Knoten, der das Kombinationsfeld enthält.  
+- Ein `idCommandList` -Attribut, das eine Liste gibt an, die die Elemente enthält, die Sie im Listenfeld angezeigt werden. Die Befehlsliste muss deklariert werden, in der gleichen `GuidSymbol` Knoten, der das Kombinationsfeld enthält.  
   
- Das folgende Beispiel definiert einen Combo-Element.  
+  Das folgende Beispiel definiert einen Combo-Element.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  Die folgenden Regeln steuern, wie ein Element auf ein anderes Element als übergeordnetes aufrufen kann.  
   
 |Element|In diesem Abschnitt der Befehlstabelle definierten|Möglicherweise enthalten sein (als übergeordnetes Element oder durch Platzierung in der `CommandPlacements` Abschnitt oder beides)|Darf (bezeichnet als übergeordnetes Element)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Gruppieren|[Groups-Element](../../extensibility/groups-element.md), die IDE, die anderen VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|  
 |Menü|[Menus-Element](../../extensibility/menus-element.md), die IDE, die anderen VSPackages|1 bis *n* Gruppen|0 bis *n* Gruppen|  
 |Symbolleiste|[Menus-Element](../../extensibility/menus-element.md), die IDE, die anderen VSPackages|Das Element selbst|0 bis *n* Gruppen|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Darstellung der Benutzeroberfläche-element  
  Überlegungen zur Auswahl, und Positionieren von befehlselementen lauten wie folgt aus:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Elemente der Benutzeroberfläche, die je nach Platzierung unterschiedlich angezeigt werden.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Elemente der Benutzeroberfläche, die je nach Platzierung unterschiedlich angezeigt werden.  
   
--   Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder eine VSPackage-Implementierung des angezeigt der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder für einen bestimmten UI-Kontext, in der `VisibilityConstraints` Abschnitt.  
+- Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder eine VSPackage-Implementierung des angezeigt der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder für einen bestimmten UI-Kontext, in der `VisibilityConstraints` Abschnitt.  
   
--   Sogar ein erfolgreich positionierte-Befehl kann nicht angezeigt werden. Dies ist da die IDE automatisch ausgeblendet oder einige Befehle, abhängig von Schnittstellen, die das VSPackage hat zeigt (oder nicht) implementiert. Z. B. eine VSPackage Implementierung einiger erstellen Schnittstellen bewirkt, dass auf Builds bezogene Menüelemente automatisch angezeigt werden.  
+- Sogar ein erfolgreich positionierte-Befehl kann nicht angezeigt werden. Dies ist da die IDE automatisch ausgeblendet oder einige Befehle, abhängig von Schnittstellen, die das VSPackage hat zeigt (oder nicht) implementiert. Z. B. eine VSPackage Implementierung einiger erstellen Schnittstellen bewirkt, dass auf Builds bezogene Menüelemente automatisch angezeigt werden.  
   
--   Anwenden der `CommandWellOnly` Flag in der Definition der UI-Element bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.  
+- Anwenden der `CommandWellOnly` Flag in der Definition der UI-Element bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.  
   
--   Befehle können nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. verfügbar sein, nur, wenn ein Dialogfeld angezeigt wird, wenn die IDE in der Entwurfsansicht befindet.  
+- Befehle können nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. verfügbar sein, nur, wenn ein Dialogfeld angezeigt wird, wenn die IDE in der Entwurfsansicht befindet.  
   
--   Um die dazu führen, dass bestimmte Elemente der Benutzeroberfläche, die in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.  
+- Um die dazu führen, dass bestimmte Elemente der Benutzeroberfläche, die in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

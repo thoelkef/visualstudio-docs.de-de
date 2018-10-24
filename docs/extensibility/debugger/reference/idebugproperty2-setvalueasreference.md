@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft Docs
+title: IDebugProperty2::SetValueAsReference | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f8d871e6193835b51336a48355fde78fe95e103
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f31ba2bff7effce91232fd7e5cfc6f96afd9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833862"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises fest.  
+Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,19 +47,19 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Parameter  
  `rgpArgs`  
- [in] Ein Array von Argumenten, die an den Eigenschaftensetter verwalteten Code übergeben. Wenn der Setter für eine Eigenschaft keine Argumente akzeptiert, oder wenn diese [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt verweist nicht auf solche ein Eigenschaftensetter `rgpArgs` sollte ein null-Wert sein. Dieser Parameter ist in der Regel einen null-Wert.  
+ [in] Ein Array von Argumenten, die an den Eigenschaftensetter für verwalteten Code übergeben werden sollen. Wenn Setter für die Eigenschaft über keine Argumente akzeptiert, oder wenn diese [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt verweist nicht auf solche einen Eigenschaften-Setter `rgpArgs` sollte ein null-Wert sein. Dieser Parameter ist in der Regel einen null-Wert.  
   
  `dwArgCount`  
  [in] Die Anzahl der Argumente in der `rgpArgs` Array.  
   
  `pValue`  
- [in] Ein Verweis in Form einer [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekt, auf den Wert für diese Eigenschaft festgelegt.  
+ [in] Ein Verweis in Form einer [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Wert, der zum Festlegen dieser Eigenschaft.  
   
  `dwTimeout`  
- [in] Wie lange zu treffen, um den Wert in Millisekunden festgelegt. Ein häufig angegebener Wert ist `INFINITE`. Dies wirkt sich auf die Länge der Zeit, die alle möglichen Auswertung.  
+ [in] Wie lange ausführen, um den Wert in Millisekunden festgelegt. Ein typischer Wert `INFINITE`. Dies wirkt sich auf die Länge der Zeit, die alle möglichen Auswertung aus.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls einen Fehler code wird zurückgegeben, in der Regel eine der folgenden:  
+ Wenn erfolgreich, wird `S_OK`; andernfalls ein Fehler code wird zurückgegeben, in der Regel eine der folgenden:  
   
 |Fehler|Beschreibung|  
 |-----------|-----------------|  

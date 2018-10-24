@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844704"
 ---
 # <a name="switchlttgt-activity-designer"></a>Switch&lt;T&gt; Aktivitäts-Designer
 Die <xref:System.Activities.Statements.Switch%601>-Aktivität wertet einen angegebenen Ausdruck aus und führt diejenige Aktivität aus einer Auflistung von Aktivitäten aus, deren zugeordneter Schlüssel dem Wert entspricht, der aus der Auswertung hervorging.  
@@ -50,11 +50,11 @@ Die <xref:System.Activities.Statements.Switch%601>-Aktivität wertet einen angeg
   
  Es gibt zwei Möglichkeiten, einen Fall zu löschen:  
   
-1.  Wählen Sie den Fall aus, und löschen Sie ihn.  
+1. Wählen Sie den Fall aus, und löschen Sie ihn.  
   
-2.  Wählen Sie die Groß-/Kleinschreibung, mit der rechten Maustaste das Kontextmenü anzuzeigen, und wählen Sie **löschen**.  
+2. Wählen Sie die Groß-/Kleinschreibung, mit der rechten Maustaste das Kontextmenü anzuzeigen, und wählen Sie **löschen**.  
   
- Beachten Sie, dass Sie den Fall selbst markieren müssen, um ihn zu löschen. Wenn Sie die Aktivität in einem Fall markieren und löschen, wird nur Aktivität, nicht der Fall gelöscht.  
+   Beachten Sie, dass Sie den Fall selbst markieren müssen, um ihn zu löschen. Wenn Sie die Aktivität in einem Fall markieren und löschen, wird nur Aktivität, nicht der Fall gelöscht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)

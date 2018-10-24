@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839907"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. In der Vorlage eingefügt werden *Kontrollblöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
@@ -209,13 +209,13 @@ private void WriteSquareLine(int i)
  Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).
 
 ### <a name="Include"></a> Einschließlich Code und text
- Die `include`-Direktive fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.
+ Die `include`-Anweisung fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.
 
 ```
 <#@ include file="c:\test.txt" #>
 ```
 
- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.
+ Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Anweisung normale Text- und Standardkontrollblöcke eingefügt werden.
 
  Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).
 
@@ -243,7 +243,7 @@ private void WriteSquareLine(int i)
  **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet Tools, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. Die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellen auch einen Satz stark typisierter Klassen, die die Struktur des Modells wiedergeben. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen
- In einem [während der Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md), wenn Sie eine Datei an einem Speicherort relativ zur Textvorlage ist, verwenden verweisen möchten `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Direktive festlegen:
+ In einem [während der Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md), wenn Sie eine Datei an einem Speicherort relativ zur Textvorlage ist, verwenden verweisen möchten `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio oder andere Hosts aus einer Vorlage](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
@@ -272,7 +271,7 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Aufgabe|Thema|
-|----------|-----------|
+|-|-|
 |Schreiben einer Textvorlage.|[Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generieren Sie Text mithilfe von Programmcode.|[Text-Vorlagen: Struktur](../modeling/writing-a-t4-text-template.md)|
 |Generieren von Dateien in Visual Studio-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

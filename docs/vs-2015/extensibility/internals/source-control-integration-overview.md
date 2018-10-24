@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836768"
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Dieser Abschnitt vergleicht zwei Möglichkeiten, die in Visual Studio-quellcodev
   
  Gehen Sie folgendermaßen vor, um ein Quellcodeverwaltungs-Plug-in mit der Source-Plug-in-API zu implementieren:  
   
-1.  Erstellen Sie eine DLL, die die angegebenen Funktionen implementiert [Quellcodeverwaltung-Plug-ins](../../extensibility/source-control-plug-ins.md).  
+1. Erstellen Sie eine DLL, die die angegebenen Funktionen implementiert [Quellcodeverwaltung-Plug-ins](../../extensibility/source-control-plug-ins.md).  
   
-2.  Die DLL registrieren, indem Sie die entsprechenden Registrierungseinträge vornehmen (beschrieben [Vorgehensweise: eine Source-Control-Plug-in installieren](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Die DLL registrieren, indem Sie die entsprechenden Registrierungseinträge vornehmen (beschrieben [Vorgehensweise: eine Source-Control-Plug-in installieren](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Erstellen Sie eine Hilfsprogramm, Benutzeroberfläche und anzeigen, wenn Sie aufgefordert werden, durch den Adapter Quellcodeverwaltungspaket (der Visual Studio-Komponente, verarbeitet der Quellcodeverwaltungsfunktionen über den Quellcodeverwaltungs-Plug-ins)  
+3. Erstellen Sie eine Hilfsprogramm, Benutzeroberfläche und anzeigen, wenn Sie aufgefordert werden, durch den Adapter Quellcodeverwaltungspaket (der Visual Studio-Komponente, verarbeitet der Quellcodeverwaltungsfunktionen über den Quellcodeverwaltungs-Plug-ins)  
   
- Als Reaktion auf ein Steuerelement-Befehl "Quelle" Visual Studio-IDE bietet eine standardmäßige Benutzeroberfläche für die grundlegenden Vorgänge und übergibt dann die Informationen an das Quellcodeverwaltungs-Plug-in über die Funktionen, die in der Quelle-Plug-in-API definiert. Um erweiterte Optionen kann das Quellcodeverwaltungs-Plug-in auf aufgerufen werden, um eine eigene Benutzeroberfläche, anzuzeigen, z. B. für ein Projekt der quellcodeverwaltung unterliegende durchsuchen. Dies bedeutet, dass dem Benutzer zwei möglicherweise verschiedene Arten der Benutzeroberfläche kann beim Umgang mit den Datenquellen-Steuerelement angezeigt werden: die Benutzeroberfläche, die Visual Studio stellt und die Benutzeroberfläche, in dem das Quellcodeverwaltungs-Plug-in dargestellt. Dies ist am deutlichsten für erweiterte Quellcodeverwaltungsvorgänge.  
+   Als Reaktion auf ein Steuerelement-Befehl "Quelle" Visual Studio-IDE bietet eine standardmäßige Benutzeroberfläche für die grundlegenden Vorgänge und übergibt dann die Informationen an das Quellcodeverwaltungs-Plug-in über die Funktionen, die in der Quelle-Plug-in-API definiert. Um erweiterte Optionen kann das Quellcodeverwaltungs-Plug-in auf aufgerufen werden, um eine eigene Benutzeroberfläche, anzuzeigen, z. B. für ein Projekt der quellcodeverwaltung unterliegende durchsuchen. Dies bedeutet, dass dem Benutzer zwei möglicherweise verschiedene Arten der Benutzeroberfläche kann beim Umgang mit den Datenquellen-Steuerelement angezeigt werden: die Benutzeroberfläche, die Visual Studio stellt und die Benutzeroberfläche, in dem das Quellcodeverwaltungs-Plug-in dargestellt. Dies ist am deutlichsten für erweiterte Quellcodeverwaltungsvorgänge.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Nachteile der Implementierung eines Quellcodeverwaltungs-Plug-in  
   

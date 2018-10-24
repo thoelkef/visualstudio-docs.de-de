@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837179"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
   
  Dieses Kontrollkästchen ist nur verfügbar, wenn die folgenden Bedingungen zutreffen:  
   
--   Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.  
+- Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.  
   
--   Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.  
+- Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.  
   
--   Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.  
+- Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.  
   
- **Unsicheren Code zulassen**  
- Ermöglicht das Kompilieren von Code, der das [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Unsicheren Code zulassen**  
+  Ermöglicht das Kompilieren von Code, der das [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Code optimieren**  
- Aktiviert oder deaktiviert die vom Compiler durchgeführten Optimierungen, damit Ihre Ausgabedatei kleiner, schneller und effizienter wird. Weitere Informationen finden Sie unter [/optimize (C# Compiler Options)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Code optimieren**  
+  Aktiviert oder deaktiviert die vom Compiler durchgeführten Optimierungen, damit Ihre Ausgabedatei kleiner, schneller und effizienter wird. Weitere Informationen finden Sie unter [/optimize (C# Compiler Options)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Fehler und Warnungen  
  Die folgenden Einstellungen werden verwendet, um Optionen zu Fehlern und Warnungen für den Buildvorgang zu konfigurieren.  

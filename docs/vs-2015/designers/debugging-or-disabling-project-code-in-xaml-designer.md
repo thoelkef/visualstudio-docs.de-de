@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837580"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
   
  Der Projektcode umfasst Folgendes:  
   
--   Benutzerdefinierte Steuerelemente und Benutzersteuerelemente  
+- Benutzerdefinierte Steuerelemente und Benutzersteuerelemente  
   
--   Klassenbibliotheken  
+- Klassenbibliotheken  
   
--   Wertkonverter  
+- Wertkonverter  
   
--   Bindungen für Entwurfszeitdaten, die aus Projektcode generiert werden  
+- Bindungen für Entwurfszeitdaten, die aus Projektcode generiert werden  
   
- Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter – z. B. den Namen der Eigenschaft für eine Bindung, in der die Daten nicht mehr verfügbar sind – oder einen Platzhalter für ein Steuerelement an, das nicht mehr ausgeführt wird.  
+  Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter – z. B. den Namen der Eigenschaft für eine Bindung, in der die Daten nicht mehr verfügbar sind – oder einen Platzhalter für ein Steuerelement an, das nicht mehr ausgeführt wird.  
   
- ![Dialogfeld für nicht behandelte Ausnahmen](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Dialogfeld für nicht behandelte Ausnahmen](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>So ermitteln Sie, ob das Projektcode eine Ausnahme verursacht  
   

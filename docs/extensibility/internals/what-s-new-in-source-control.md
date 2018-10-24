@@ -1,5 +1,5 @@
 ---
-title: Was&#39;s in Quellcodeverwaltung | Microsoft Docs
+title: Was&#39;Neues in der Quellcodeverwaltung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb63f8654db4e7bb17cbd0e46f5592b88eb2fcac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843001"
 ---
-# <a name="what39s-new-in-source-control"></a>Was&#39;s in Datenquellen-Steuerelements
-In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Sie können eine hochgradig Source Control-Lösung bereitstellen, indem ein Datenquellen-Steuerelement VSPackage implementieren. Dieser Abschnitt beschreibt die Funktionen des Datenquellen-Steuerelements VSPackages und bietet eine Übersicht über die Schritte für die Implementierung.  
+# <a name="what39s-new-in-source-control"></a>Was&#39;Neues in der Quellcodeverwaltung
+In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] können Sie eine vollständig integriert Source-Control-Lösung bereitstellen, durch die Implementierung eines Quellcodeverwaltungs-VSPackage. Dieser Abschnitt beschreibt die Funktionen der quellcodeverwaltung VSPackages und bietet eine Übersicht über die Schritte für die Implementierung.  
   
-## <a name="the-source-control-vspackage"></a>Das Source Control VSPackage  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten von Datenquellen-Steuerelement-Lösungen. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können weiterhin integrieren, Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-in. Sie können auch eine VSPackage für die Datenquellen-Steuerelements die bietet eine umfassende Integration erstellen [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Datenquellen-Steuerelement-Lösungen, die ein hohes Maß an Komplexität und Autonomie erfordern geeignet ist.  
+## <a name="the-source-control-vspackage"></a>Der Quellcodeverwaltungs-VSPackage  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten von Quellcode-Kontrollmechanismen. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können weiterhin integrieren, eine Source-Control-Plug-in-API-basierte-Plug-in. Sie können auch eine VSPackage für die quellcodeverwaltung bietet eine umfassende-Integration erstellen [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Quellcode-Kontrollmechanismen, die ein hohes Maß an Komplexität und Autonomie erfordern geeignet ist.  
   
- Eine VSPackage kann nahezu jede Art von Funktionen zum Hinzufügen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein Datenquellen-Steuerelement VSPackage bietet eine umfassende Quelle Steuerelement für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], über die Benutzeroberfläche für den Benutzer auf die Back-End-Kommunikation mit dem Quellcodeverwaltungssystem dargestellt.  
+ Eine VSPackage kann nahezu jede Art von Funktionalität hinzufügen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein Quellcodeverwaltungs-VSPackage bietet vollständige Quellcodeverwaltungsfeature für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], über die Benutzeroberfläche, die dem Benutzer auf die Back-End-Kommunikation mit dem Quellcodeverwaltungssystem angezeigt.  
   
- Implementieren ein VSPackage des Datenquellen-Steuerelement erfordert eine Strategie für die "" alle "oder" nichts ". Der Ersteller des ein Datenquellen-Steuerelement VSPackage muss eine beträchtliche Menge an Aufwand bei der Implementierung einer Reihe von Datenquellen-Steuerelement-Schnittstellen und neue Elemente der Benutzeroberfläche (Dialogfelder, Menüs und Symbolleisten), um die gesamte Quellcodeverwaltungsfunktion abzudecken sowie Schnittstellen investieren müssen. erforderlich für jedes Paket erfolgreich integriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Implementierung eines Quellcodeverwaltungs-VSPackage ist eine Strategie für die "Alles oder nichts" erforderlich. Der Ersteller eines Quellcodeverwaltungs-VSPackage muss sehr viel Aufwand bei der Implementierung einer Reihe von Steuerelement-Schnittstellen und neue Benutzeroberflächenelemente (Dialogfelder, Menüs und Symbolleisten) die gesamte Quelle Listensteuerelement-Funktionalität abgedeckt und Schnittstellen investieren. der hinzugefügten Pakete erforderlich werden, um die erfolgreiche Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Die folgenden Schritte bieten einen allgemeinen Überblick darüber, was benötigt wird, um ein Source Control-Paket zu implementieren. Weitere Informationen finden Sie unter [Erstellen eines Source Control VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+ Die folgenden Schritte bieten einen allgemeinen Überblick darüber, was benötigt wird, um ein Quellcodeverwaltungspaket zu implementieren. Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
-1.  Erstellen eines VSPackages, das einen privaten quellcodeverwaltungsdienst proffers an.  
+1. Erstellen Sie eine VSPackage, das einen privaten quellcodeverwaltungsdienst anbietet.  
   
-2.  Implementieren von Schnittstellen in der Quelle Steuerelement-bezogene Dienste, die von angeboten werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (z. B. die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> Schnittstelle).  
+2. Implementieren von Schnittstellen in Quelle Steuerelement-bezogenen Diensten, die durch, die angeboten werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (z. B. die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> Schnittstelle).  
   
-3.  Registrieren Sie die quellcodeverwaltung VSPackage ein.  
+3. Registrieren Sie Ihre quellcodeverwaltung VSPackage ein.  
   
-4.  Alle Datenquellen-Steuerelement-Benutzeroberfläche, z. B. Menüelemente, Dialogfelder, Symbolleisten und Kontextmenüs zu implementieren.  
+4. Implementieren Sie alle Datenquellen-Steuerelement-Benutzeroberfläche, auch werden, Menüelemente, Dialogfelder, Symbolleisten und Kontextmenüs.  
   
-5.  Alle Datenquellen-Steuerelement-bezogene Ereignisse werden der quellcodeverwaltung VSackage übergeben, wenn er aktiv ist und von Ihrem VSPackage behandelt werden muss.  
+5. Alle Datenquellen-Steuerelement-bezogene Ereignisse werden der quellcodeverwaltung VSackage übergeben, wenn er aktiv ist, und vom VSPackage behandelt werden muss.  
   
-6.  Die quellcodeverwaltung VSPackage muss auf Ereignisse, z. B. die implementierende lauschen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> sowie Ereignisse nachverfolgen Projekt Dokument (TPD)-Schnittstelle (wie von implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle) und erforderliche Maßnahmen.  
+6. Ihre quellcodeverwaltung VSPackage muss auf Ereignisse, z. B. die implementierende lauschen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> sowie die Ereignisse des Track-Project-Dokument (TPD)-Schnittstelle (entsprechend der Implementierung durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle) und erforderliche Maßnahmen.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

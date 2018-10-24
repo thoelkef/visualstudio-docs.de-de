@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840986"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
 ##  <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
  Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
   
--   Die meisten Änderungen an globalen oder statischen Daten.  
+- Die meisten Änderungen an globalen oder statischen Daten.  
   
--   Änderungen an ausführbaren Dateien, die von einem anderen Computer kopiert und nicht lokal erstellt wurden.  
+- Änderungen an ausführbaren Dateien, die von einem anderen Computer kopiert und nicht lokal erstellt wurden.  
   
--   Änderungen an Datentypen, die das Layout eines Objekts beeinflussen (z. B. Datenmember einer Klasse).  
+- Änderungen an Datentypen, die das Layout eines Objekts beeinflussen (z. B. Datenmember einer Klasse).  
   
--   Hinzufügen von mehr als 64 KB neuen Codes oder neuer Daten.  
+- Hinzufügen von mehr als 64 KB neuen Codes oder neuer Daten.  
   
--   Hinzufügen von Variablen, die an einer Stelle vor dem Anweisungszeiger einen Konstruktor benötigen.  
+- Hinzufügen von Variablen, die an einer Stelle vor dem Anweisungszeiger einen Konstruktor benötigen.  
   
--   Änderungen, die sich auf Code auswirken, der eine Laufzeitinitialisierung benötigt.  
+- Änderungen, die sich auf Code auswirken, der eine Laufzeitinitialisierung benötigt.  
   
--   Das Hinzufügen von Ausnahmehandlern in bestimmten Instanzen.  
+- Das Hinzufügen von Ausnahmehandlern in bestimmten Instanzen.  
   
--   Änderungen an Ressourcendateien.  
+- Änderungen an Ressourcendateien.  
   
--   Änderungen an Code in schreibgeschützten Dateien.  
+- Änderungen an Code in schreibgeschützten Dateien.  
   
--   Änderungen am Code ohne entsprechende PDB-Datei.  
+- Änderungen am Code ohne entsprechende PDB-Datei.  
   
--   Änderungen an Code ohne Objektdatei.  
+- Änderungen an Code ohne Objektdatei.  
   
- Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
+  Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
   
--   Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
+- Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838340"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Erste Schritte beim Anpassen des Menübands
   Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.  
@@ -32,45 +32,45 @@ ms.locfileid: "35254604"
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Hinzufügen eine Multifunktionsleiste zu einem Projekt  
   
-1.  Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen**.  
+1. Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen**.  
   
-2.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)** oder **Menüband (XML)**. Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)** oder **Menüband (XML)**. Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
-3.  In der **Namen** geben einen Namen für das Element "Menüband".  
+3. In der **Namen** geben einen Namen für das Element "Menüband".  
   
-     Dürfen enthalten keine die folgenden Zeichen:  
+    Dürfen enthalten keine die folgenden Zeichen:  
   
-    -   Nummernzeichen (#)  
+   -   Nummernzeichen (#)  
   
-    -   Prozentzeichen (%)  
+   -   Prozentzeichen (%)  
   
-    -   Kaufmännisches und-Zeichen (&)  
+   -   Kaufmännisches und-Zeichen (&)  
   
-    -   Sternchen (*)  
+   -   Sternchen (*)  
   
-    -   Senkrechter Strich (|)  
+   -   Senkrechter Strich (|)  
   
-    -   Umgekehrter Schrägstrich (\\)  
+   -   Umgekehrter Schrägstrich (\\)  
   
-    -   Doppelpunkt (:)  
+   -   Doppelpunkt (:)  
   
-    -   Doppeltes Anführungszeichen (")  
+   -   Doppeltes Anführungszeichen (")  
   
-    -   Kleiner als (\<)  
+   -   Kleiner als (\<)  
   
-    -   Größer als (>)  
+   -   Größer als (>)  
   
-    -   Fragezeichen (?)  
+   -   Fragezeichen (?)  
   
-    -   Schrägstrich (/)  
+   -   Schrägstrich (/)  
   
-    -   Führende oder nachfolgende Leerzeichen ("")  
+   -   Führende oder nachfolgende Leerzeichen ("")  
   
-    -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen  
+   -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
- Das Element "Menüband" wird im **Projektmappen-Explorer**. Weitere Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
+   Das Element "Menüband" wird im **Projektmappen-Explorer**. Weitere Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
