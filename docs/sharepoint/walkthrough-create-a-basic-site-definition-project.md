@@ -18,29 +18,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844409"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts definition
   In dieser exemplarischen Vorgehensweise veranschaulicht eine grundlegende Definition zu erstellen, die ein visuelles Webpart mit Steuerelementen darauf enthält. Aus Gründen der Klarheit hat das visuelle Webpart, das Sie erstellen nur wenige Steuerelemente. Allerdings können Sie komplexere Websitedefinitionen für SharePoint erstellen, die weitere Funktionen enthalten.  
   
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   Erstellen eine Sitedefinition mithilfe der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projektvorlage.  
+- Erstellen eine Sitedefinition mithilfe der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projektvorlage.  
   
--   Erstellen einer SharePoint-Websites mit einer Websitedefinition in SharePoint.  
+- Erstellen einer SharePoint-Websites mit einer Websitedefinition in SharePoint.  
   
--   Die Lösung wird ein visuelles Webpart hinzugefügt.  
+- Die Lösung wird ein visuelles Webpart hinzugefügt.  
   
--   Anpassen der Seite "default.aspx" der Website durch das neue visuelle Webpart hinzugefügt wird.  
+- Anpassen der Seite "default.aspx" der Website durch das neue visuelle Webpart hinzugefügt wird.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint. Weitere Informationen finden Sie unter Anforderungen für SharePoint-Lösungen entwickeln.  
@@ -52,29 +52,29 @@ ms.locfileid: "37119189"
   
 #### <a name="to-create-a-site-definition-project"></a>Sitedefinitionsprojekt erstellen  
   
-1.  Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wenn Ihre IDE auf der Menüleiste mit Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei** > **neues Projekt**.  
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wenn Ihre IDE auf der Menüleiste mit Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei** > **neues Projekt**.  
   
-     Das Dialogfeld **Neues Projekt** wird angezeigt.  
+    Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
+2. Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-3.  In der **Vorlagen** wählen die **SharePoint 2010-Projekt** Vorlage.  
+3. In der **Vorlagen** wählen die **SharePoint 2010-Projekt** Vorlage.  
   
-4.  In der **Namen** geben **"TestSiteDef" ein**, und wählen Sie dann die **OK** Schaltfläche.  
+4. In der **Namen** geben **"TestSiteDef" ein**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     Die **SharePoint Customization Wizard** angezeigt wird.  
+    Die **SharePoint Customization Wizard** angezeigt wird.  
   
-5.  Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://*Systemname*/).  
+5. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://<em>Systemname</em>/).  
   
-6.  In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
+6. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
   
-     Alle Projekte der Website-Definition müssen als farmlösungen bereitgestellt werden. Weitere Informationen über sandkastenlösungen im Vergleich zu farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+    Alle Projekte der Website-Definition müssen als farmlösungen bereitgestellt werden. Weitere Informationen über sandkastenlösungen im Vergleich zu farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Wählen Sie die **Fertig stellen** Schaltfläche.  
+7. Wählen Sie die **Fertig stellen** Schaltfläche.  
   
-     Das Projekt wird im **Projektmappen-Explorer**.  
+    Das Projekt wird im **Projektmappen-Explorer**.  
   
-8.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.  
+8. In **Projektmappen-Explorer**, wählen Sie den Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.  
   
 9. Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   

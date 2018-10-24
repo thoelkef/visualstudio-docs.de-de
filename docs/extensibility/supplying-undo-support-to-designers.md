@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df387259ed7a8623ba176ba09d0ceb1bba66bc0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: ba86f77219329c0e34edecf10aca69e8bedf2226
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843235"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Bereitstellen von Rückgängig-Unterstützung für Designer
 Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unterstützen müssen, damit Benutzer ihren letzten Änderungen umgekehrt werden können, wenn Sie ein Codeelement zu ändern.  
@@ -27,17 +27,17 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
  Designer-Implementierungen, die für die Rückgängig-Funktion zu unterstützen:  
   
--   Bereitstellen von Rückgängig-Verwaltung durch die Implementierung der abstrakten Basisklasse <xref:System.ComponentModel.Design.UndoEngine>  
+- Bereitstellen von Rückgängig-Verwaltung durch die Implementierung der abstrakten Basisklasse <xref:System.ComponentModel.Design.UndoEngine>  
   
--   Geben Persistenz und CodeDOM-Unterstützung durch die Implementierung der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Klassen.  
+- Geben Persistenz und CodeDOM-Unterstützung durch die Implementierung der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Klassen.  
   
- Weitere Informationen zum Schreiben von Designern, die mit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], finden Sie unter [Extending Design-Time Support](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Weitere Informationen zum Schreiben von Designern, die mit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], finden Sie unter [Extending Design-Time Support](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
- Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bietet eine standardmäßige rückgängig-Infrastruktur durch:  
+  Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bietet eine standardmäßige rückgängig-Infrastruktur durch:  
   
--   Bereitstellen von Rückgängig-Verwaltung-Implementierungen über die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> und <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> Klassen.  
+- Bereitstellen von Rückgängig-Verwaltung-Implementierungen über die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> und <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> Klassen.  
   
--   Angeben von Persistenz und CodeDOM-Unterstützung durch die Standardeinstellung <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Implementierungen.  
+- Angeben von Persistenz und CodeDOM-Unterstützung durch die Standardeinstellung <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Implementierungen.  
   
 ## <a name="obtaining-undo-support-automatically"></a>Erhalten automatisch Rückgängig-Unterstützung  
  Alle Designer erstellt, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatische und vollständige Rückgängig-Unterstützung wurde If, den Designer:  
@@ -64,44 +64,44 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
  Visual Studio bietet die folgenden Funktionen ab, der Designer Rückgängig:  
   
--   Verknüpften Rückgängig-Funktion über mehrere Designer.  
+- Verknüpften Rückgängig-Funktion über mehrere Designer.  
   
--   Untergeordnete Einheiten in einem Designer können mit ihren übergeordneten Elementen interagieren, durch die Implementierung <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> auf <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
+- Untergeordnete Einheiten in einem Designer können mit ihren übergeordneten Elementen interagieren, durch die Implementierung <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> auf <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
   
- Das SDK-Umgebung bietet CodeDOM und Persistenz durch Angabe:  
+  Das SDK-Umgebung bietet CodeDOM und Persistenz durch Angabe:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> als ein Implementierungen von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> als ein Implementierungen von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
- Ein <xref:System.ComponentModel.Design.IComponentChangeService> gebotenen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' Entwurfshost.  
+  Ein <xref:System.ComponentModel.Design.IComponentChangeService> gebotenen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' Entwurfshost.  
   
 ## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Umgebung SDK-Funktionen mithilfe von Rückgängig-Unterstützung bereitstellen.  
  Um Rückgängig-Unterstützung zu erhalten, müssen ein Objekt, das einen Designer implementieren:  
   
--   Instanziieren und initialisieren eine Instanz von der <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasse mit einer gültigen <xref:System.IServiceProvider> Implementierung.  
+- Instanziieren und initialisieren eine Instanz von der <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasse mit einer gültigen <xref:System.IServiceProvider> Implementierung.  
   
--   Dies <xref:System.IServiceProvider> Klasse muss die folgenden Dienste bereitstellen:  
+- Dies <xref:System.IServiceProvider> Klasse muss die folgenden Dienste bereitstellen:  
   
-    -   <xref:System.ComponentModel.Design.IDesignerHost>  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-    -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-         Mithilfe von Designern [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CodeDOM-Serialisierung verwenden möchten <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> im Lieferumfang der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] als eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
+     Mithilfe von Designern [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CodeDOM-Serialisierung verwenden möchten <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> im Lieferumfang der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] als eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
-         In diesem Fall die <xref:System.IServiceProvider> Klasse bereitgestellt, um die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Konstruktor muss dieses Objekt zurückgeben, wie eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> Klasse.  
+     In diesem Fall die <xref:System.IServiceProvider> Klasse bereitgestellt, um die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Konstruktor muss dieses Objekt zurückgeben, wie eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> Klasse.  
   
-    -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-         Designer, die über das standardmäßige <xref:System.ComponentModel.Design.DesignSurface> gebotenen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Entwurfshost sind garantiert eine Standardimplementierung von der <xref:System.ComponentModel.Design.IComponentChangeService> Klasse.  
+     Designer, die über das standardmäßige <xref:System.ComponentModel.Design.DesignSurface> gebotenen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Entwurfshost sind garantiert eine Standardimplementierung von der <xref:System.ComponentModel.Design.IComponentChangeService> Klasse.  
   
- Implementieren von Designern eine <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> basierend rückgängig-Mechanismus wird automatisch Änderungen nachverfolgt, wenn:  
+  Implementieren von Designern eine <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> basierend rückgängig-Mechanismus wird automatisch Änderungen nachverfolgt, wenn:  
   
--   Eigenschaftenänderungen erfolgen über die <xref:System.ComponentModel.TypeDescriptor> Objekt.  
+- Eigenschaftenänderungen erfolgen über die <xref:System.ComponentModel.TypeDescriptor> Objekt.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService> Ereignisse werden manuell generiert, wenn eine Änderung rückgängig zu machen, ein Commit ausgeführt wird.  
+- <xref:System.ComponentModel.Design.IComponentChangeService> Ereignisse werden manuell generiert, wenn eine Änderung rückgängig zu machen, ein Commit ausgeführt wird.  
   
--   Änderung im Designer erstellt wurde, im Kontext einer <xref:System.ComponentModel.Design.DesignerTransaction>.  
+- Änderung im Designer erstellt wurde, im Kontext einer <xref:System.ComponentModel.Design.DesignerTransaction>.  
   
--   Der Designer wählt explizit Rückgängig-Komponenten, die entweder die standardmäßige Rückgängig-Komponente, die durch eine Implementierung der bereitgestellten erstellen <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> oder die Visual Studio-spezifische Implementierung <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, die sich daraus ableitet <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> und bietet außerdem eine Implementierung von sowohl <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
+- Der Designer wählt explizit Rückgängig-Komponenten, die entweder die standardmäßige Rückgängig-Komponente, die durch eine Implementierung der bereitgestellten erstellen <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> oder die Visual Studio-spezifische Implementierung <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, die sich daraus ableitet <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> und bietet außerdem eine Implementierung von sowohl <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ComponentModel.Design.UndoEngine>   

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842260"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 
@@ -71,21 +71,21 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
 ##  <a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
 
-1.  Klicken Sie in einem Klassendiagramm auf die Form des Typs.
+1. Klicken Sie in einem Klassendiagramm auf die Form des Typs.
 
-2.  Klicken Sie unter **Eigenschaften** neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit dem Auslassungszeichen (…).
+2. Klicken Sie unter **Eigenschaften** neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit dem Auslassungszeichen (…).
 
-3.  Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.
+3. Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.
 
    Die benutzerdefinierten Attribute werden auf den Typ angewendet.
 
 ##  <a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
 
-1.  Klicken Sie in einem Klassendiagramm in der Form des entsprechenden Typs auf den Namen des Members oder im Klassendetailsfenster auf die entsprechende Zeile.
+1. Klicken Sie in einem Klassendiagramm in der Form des entsprechenden Typs auf den Namen des Members oder im Klassendetailsfenster auf die entsprechende Zeile.
 
-2.  Suchen Sie unter **Eigenschaften** die Eigenschaft **Benutzerdefinierte Attribute** für den Member.
+2. Suchen Sie unter **Eigenschaften** die Eigenschaft **Benutzerdefinierte Attribute** für den Member.
 
-3.  Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.
+3. Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.
 
    Die benutzerdefinierten Attribute werden auf den Typ angewendet.
 

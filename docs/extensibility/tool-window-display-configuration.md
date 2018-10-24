@@ -1,5 +1,5 @@
 ---
-title: Tool Anzeigekonfiguration Fenster | Microsoft Docs
+title: Tool-Fenster-Anzeigekonfiguration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839699"
 ---
 # <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
-Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert, wird in optionale Werte angegeben. Weitere Informationen zum Tool Fenster Registrierung, finden Sie unter [Toolfenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
-  
+Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert wird optional Werte angegeben werden. Weitere Informationen zum Tool-Fenster-Registrierung, finden Sie unter [Tool Windows in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
+
 ## <a name="window-display-information"></a>Anzeigeinformationen für Fenster  
- Grundlegende Anzeigekonfiguration ein Toolfenster werden in bis zu sechs optionale Werte gespeichert:  
-  
+ Grundlegende Anzeigekonfiguration ein Toolfenster werden in bis zu sechs optionalen Werte gespeichert:  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -37,21 +37,22 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\  
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
-  
-|name|Typ|Daten|Beschreibung|  
-|----------|----------|----------|-----------------|  
-|name|REG_SZ|"Kurze Name goes here"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2, ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
-|Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Im Registerkartenformat"<br /><br /> "AlwaysFloat"|Ein Schlüsselwort, das Angeben der ursprüngliche Zustand des Toolfensters anzeigen<br /><br /> "MDI" = mit MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in der Eintrag im Fenster).<br /><br /> "Im Registerformat" = zusammen mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = kann nicht angedockt werden kann.<br /><br /> Weitere Informationen finden Sie unter folgenden Abschnitt "Kommentare".|  
-|Fenster|REG_SZ|*\<GUID &GT;*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID kann eine eigene Fenster oder ein Fenster in gehören die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
-|Ausrichtung|REG_SZ|"Links"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Unten"|Finden Sie im Abschnitt Kommentare.|  
-|DontForceCreate|REG_DWORD|0 oder 1|Wenn dieser Eintrag vorhanden ist, und der Wert nicht 0 (null ist), wird das Fenster geladen, aber nicht sofort angezeigt.|  
-  
+
+
+| name | Typ | Daten | Beschreibung |
+|-----------------|-----------| - | - |
+| name | REG_SZ | "Kurzen Namen hier einfügen" | Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet. |
+| Float | REG_SZ | "X1, Y1, X2, Y2" | Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2 ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten. |
+| Stil | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Registerkarten"<br /><br /> "AlwaysFloat" | Ein Schlüsselwort, das Angeben der anfänglichen anzeigenzustand des Toolfensters.<br /><br /> "MDI" = MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in den Fenster-Eintrag).<br /><br /> "Registerkarten" = in Kombination mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = nicht angedockt werden.<br /><br /> Weitere Informationen finden Sie unter den folgenden Kommentarabschnitt. |
+| Fenster | REG_SZ | *\<GUID &GT;* | Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID möglicherweise gehört, um eine eigene Windows oder eines der Fenster in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Ausrichtung | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Unten" | Finden Sie unter den folgenden Kommentarabschnitt. |
+| DontForceCreate | REG_DWORD | 0 oder 1 | Wenn dieser Eintrag vorhanden ist und dessen Wert nicht 0 (null), wird das Fenster geladen, aber nicht sofort angezeigt. |
+
 ### <a name="comments"></a>Kommentare  
- Der Eintrag Ausrichtung definiert die Position, in dem das Toolfenster dockt an, wenn die Titelleiste doppelgeklickt wird. Die Position ist relativ zum angegebenen Fensters im Fenster Eintrag. Wenn der Style-Eintrag auf "(verknüpft)" festgelegt ist, kann der Eintrag für die Ausrichtung "Links", "Right", "Top" oder "Ende" sein. Wenn der Style-Eintrag ist "Im Registerformat", die Ausrichtung Eintrag "bleiben kann" oder "Mit der rechten Maustaste" und gibt an, wo die Registerkarte hinzugefügt wird. Wenn der Style-Eintrag ist "Float", wird das Toolfenster zuerst verschoben. Wenn auf die Titelleiste doppelgeklickt wird, gelten die Ausrichtung und Fenster-Einträge und das Fenster verwendet die Formatvorlage "Im Registerformat". Wenn der Style-Eintrag "AlwaysFloat" ist, kann nicht im Toolfenster angedockt werden. Wenn der Style-Eintrag "MDI" ist, ist das Toolfenster in den Bereich des MDI-verknüpft, und der Eintrag im Fenster wird ignoriert.  
-  
+ Der Eintrag Ausrichtung definiert die Position, in dem das Toolfenster angedockt wird, wenn dessen eigener Titelleiste doppelgeklickt wird. Die Position ist relativ zum angegebenen Fensters im Eintrag im Fenster. Wenn der Style-Eintrag auf "Verknüpft" festgelegt ist, kann der Eintrag für die Ausrichtung "Left", "Right", "Top" und "Bottom" sein. Wenn der Style-Eintrag "Im Registerformat", der die Ausrichtung Eintrag "beibehalten werden sollen" oder "Rechte" und gibt an, wo die Registerkarte hinzugefügt wird. Wenn der Style-Eintrag ist "Float", wird das Toolfenster zuerst verschoben. Wenn auf die Titelleiste doppelgeklickt wird, gelten die Ausrichtung und Fenster-Einträge und das Fenster verwendet das Format "Im Registerformat". Wenn der Style-Eintrag "AlwaysFloat" ist, kann nicht das Toolfenster angedockt werden. Wenn der Style-Eintrag "MDI" ist, wird das Toolfenster mit der MDI-Bereich verknüpft ist, und der Eintrag im Fenster wird ignoriert.  
+
 ### <a name="example"></a>Beispiel  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -68,10 +69,10 @@ HKEY_LOCAL_MACHINE\
               Style           = reg_sz: Tabbed  
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
-  
-## <a name="tool-window-visibility"></a>Sichtbarkeit der Tool-Fenster  
- Die Werte im optionalen Sichtbarkeit Unterschlüssel bestimmen eines Toolfensters sichtbarkeitseinstellungen für. Die Namen der Werte werden verwendet, um die GUIDs der Befehle zu speichern, die Sichtbarkeit des Fensters erfordern. Wenn der Befehl ausgeführt wird, garantiert die IDE an, dass das Toolfenster erstellt und sichtbar gemacht wird.  
-  
+
+## <a name="tool-window-visibility"></a>Toolfenstersichtbarkeit  
+ Werte in den optional Sichtbarkeit Unterschlüssel bestimmen die sichtbarkeitseinstellungen des Toolfensters. Die Namen der Werte werden verwendet, um die GUIDs der Befehle zu speichern, die die Sichtbarkeit des Fensters zu erfordern. Wenn der Befehl ausgeführt wird, garantiert die IDE an, dass das Toolfenster erstellt und sichtbar gemacht wird.  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -86,14 +87,14 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_dword:  
                 <GUID>    = reg_sz:  
 ```  
-  
+
 |name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|(Standard)|REG_SZ|Keiner|Leer sein.|  
-|*\<GUID &GT;*|REG_DWORD oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls, die Sichtbarkeit erfordern. Der Wert enthält nur eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
-  
+|(Standard)|REG_SZ|Keiner|Lassen Sie leer.|  
+|*\<GUID &GT;*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
+
 ### <a name="example"></a>Beispiel  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -108,6 +109,6 @@ HKEY_LOCAL_MACHINE\
                 {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)

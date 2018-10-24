@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839543"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin-Schnittstelle
   Implementieren von IManagedAddin-Schnittstelle, um eine Komponente zu erstellen, die lädt verwaltete VSTO-Add-ins. Diese Schnittstelle wurde in 2007 Microsoft Office System hinzugefügt.  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>Wie verwaltete Add-Ins geladen werden  
  Die folgenden Schritte werden beim Start einer Anwendung ausgeführt:  
   
-1.  Die Anwendung ermittelt VSTO-Add-Ins, indem sie Einträge unter dem folgenden Registrierungsschlüssel sucht:  
+1. Die Anwendung ermittelt VSTO-Add-Ins, indem sie Einträge unter dem folgenden Registrierungsschlüssel sucht:  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Anwendungsname >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Anwendungsname >* \Addins\\**  
   
-     Jeder Eintrag unter diesem Registrierungsschlüssel entspricht einer eindeutigen ID des VSTO-Add-Ins. In der Regel ist dies der Name der VSTO-Add-In-Assembly.  
+    Jeder Eintrag unter diesem Registrierungsschlüssel entspricht einer eindeutigen ID des VSTO-Add-Ins. In der Regel ist dies der Name der VSTO-Add-In-Assembly.  
   
-2.  Die Anwendung sucht unter dem Eintrag für jedes VSTO-Add-In nach einem `Manifest` -Eintrag.  
+2. Die Anwendung sucht unter dem Eintrag für jedes VSTO-Add-In nach einem `Manifest` -Eintrag.  
   
-     Verwaltete VSTO-Add-ins können den vollständigen Pfad eines Manifests im Speichern der `Manifest` Eintrag unter **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Anwendungsname >_ \Addins\\  _\<Add-in-ID >_**. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.  
+    Verwaltete VSTO-Add-ins können den vollständigen Pfad eines Manifests im Speichern der `Manifest` Eintrag unter **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Anwendungsname >_ \Addins\\  _\<Add-in-ID >_**. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.  
   
-3.  Wenn die Anwendung einen `Manifest` -Eintrag findet, versucht sie, eine Ladekomponenten für verwaltete VSTO-Add-Ins zu laden. Die Anwendung wird versucht, ein COM-Objekt zu erstellen, die IManagedAddin-Schnittstelle implementiert.  
+3. Wenn die Anwendung einen `Manifest` -Eintrag findet, versucht sie, eine Ladekomponenten für verwaltete VSTO-Add-Ins zu laden. Die Anwendung wird versucht, ein COM-Objekt zu erstellen, die IManagedAddin-Schnittstelle implementiert.  
   
-     Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] enthält ein VSTO-Add-in-Ladekomponente (*"VSTOLoader.dll"*), oder Sie erstellen Ihre eigenen, indem die IManagedAddin-Schnittstelle implementieren.  
+    Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] enthält ein VSTO-Add-in-Ladekomponente (*"VSTOLoader.dll"*), oder Sie erstellen Ihre eigenen, indem die IManagedAddin-Schnittstelle implementieren.  
   
-4.  Die Anwendung ruft die [IManagedAddin::Load](../vsto/imanagedaddin-load.md) -Methode auf und übergibt den Wert des `Manifest` -Eintrags.  
+4. Die Anwendung ruft die [IManagedAddin::Load](../vsto/imanagedaddin-load.md) -Methode auf und übergibt den Wert des `Manifest` -Eintrags.  
   
-5.  Die [IManagedAddin::Load](../vsto/imanagedaddin-load.md) -Methode führt zum Laden des VSTO-Add-Ins erforderliche Aufgaben wie das Konfigurieren der Anwendungsdomäne und der Sicherheitsrichtlinie für das VSTO-Add-In aus, das geladen wird.  
+5. Die [IManagedAddin::Load](../vsto/imanagedaddin-load.md) -Methode führt zum Laden des VSTO-Add-Ins erforderliche Aufgaben wie das Konfigurieren der Anwendungsdomäne und der Sicherheitsrichtlinie für das VSTO-Add-In aus, das geladen wird.  
   
- Weitere Informationen zu den Registrierungsschlüsseln verwalteten Schlüsseln, die Microsoft Office-Anwendungen verwenden, um zu ermitteln und Laden von VSTO-Add-ins, finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
+   Weitere Informationen zu den Registrierungsschlüsseln verwalteten Schlüsseln, die Microsoft Office-Anwendungen verwenden, um zu ermitteln und Laden von VSTO-Add-ins, finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>Anleitungen zum Implementieren von IManagedAddin  
  Wenn Sie IManagedAddin implementieren, müssen Sie die DLL registrieren, die die Implementierung enthält, mithilfe der folgenden CLSID:  

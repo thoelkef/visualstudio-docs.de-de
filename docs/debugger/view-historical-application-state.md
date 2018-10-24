@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846862"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Überprüfen Sie die vorherigen app-Status, die mithilfe von IntelliTrace Rückschritt in Visual Studio
 
@@ -106,17 +106,17 @@ Die Auswirkungen auf die gesamtleistung der schrittweisen Ausführung hängt von
 * Wenn Sie IntelliTrace-Ereignisse und-Momentaufnahmen-Modus auf Versionen von Windows, die älter als Windows 10 Fall Creators Update (RS3) verwenden und wenn das Debugziel für die Plattform der Anwendung auf X86 festgelegt ist, nimmt IntelliTrace keine Momentaufnahmen an.
 
     Problemumgehungen:
-    * Wenn Sie auf das Windows 10 Anniversary Update (RS1) und aktuellere 10.0.14393.2273, [installieren KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Wenn Sie auf dem Windows 10 Creators Update (RS2) und aktuellere 10.0.15063.1112, [installieren KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Installieren oder ein upgrade auf Windows 10 Fall Creators Update (RS3). 
-    * Alternativ: 
-        1. Installieren Sie das Toolset VC++ 2015.3 v140 für Desktop (x86, x64) aus dem Visual Studio-Installer.
-        2. Erstellen Sie die Zielanwendung.
-        3. Verwenden Sie das Editbin-Tool über die Befehlszeile, Festlegen der `Largeaddressaware` Flag für die ausführbare Zieldatei. Beispielsweise können Sie diesen Befehl verwenden, (nach der Aktualisierung des Pfads): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
-        4. Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Jetzt werden Momentaufnahmen in Einzelschritten des Debuggers und Haltepunkten erstellt.
+  * Wenn Sie auf das Windows 10 Anniversary Update (RS1) und aktuellere 10.0.14393.2273, [installieren KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Wenn Sie auf dem Windows 10 Creators Update (RS2) und aktuellere 10.0.15063.1112, [installieren KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Installieren oder ein upgrade auf Windows 10 Fall Creators Update (RS3). 
+  * Alternativ: 
+    1. Installieren Sie das Toolset VC++ 2015.3 v140 für Desktop (x86, x64) aus dem Visual Studio-Installer.
+    2. Erstellen Sie die Zielanwendung.
+    3. Verwenden Sie das Editbin-Tool über die Befehlszeile, Festlegen der `Largeaddressaware` Flag für die ausführbare Zieldatei. Beispielsweise können Sie diesen Befehl verwenden, (nach der Aktualisierung des Pfads): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
+    4. Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Jetzt werden Momentaufnahmen in Einzelschritten des Debuggers und Haltepunkten erstellt.
 
-        > [!Note]
-        > Die `Largeaddressaware` Flag muss festgelegt werden jedes Mal, die die ausführbare Datei mit Änderungen neu erstellt wird.
+       > [!Note]
+       > Die `Largeaddressaware` Flag muss festgelegt werden jedes Mal, die die ausführbare Datei mit Änderungen neu erstellt wird.
 
 * Wenn eine Momentaufnahme der Prozess der Anwendung für eine Anwendung, die eine permanente Speicher abgebildete Datei verwendet erstellt wird, hält der Prozess mit der Momentaufnahme eine exklusive Sperre auf die Datei mit zugewiesenem Speicher, (auch nach der übergeordnete Prozess die Sperre aufgehoben hat). Andere Prozesse können immer noch gelesen, aber nicht in der Datei mit zugewiesenem Speicher schreiben.
 

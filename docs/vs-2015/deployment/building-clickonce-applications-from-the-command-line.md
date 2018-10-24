@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836787"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,39 +49,39 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], Sie können
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Erstellen und Veröffentlichen einer ClickOnce-Projekt  
   
-1.  Klicken Sie auf **neues Projekt** aus der **Datei** Menü. Das Dialogfeld **Neues Projekt** wird angezeigt.  
+1. Klicken Sie auf **neues Projekt** aus der **Datei** Menü. Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Wählen Sie **Windows-Anwendung** und nennen Sie sie `CmdLineDemo`.  
+2. Wählen Sie **Windows-Anwendung** und nennen Sie sie `CmdLineDemo`.  
   
-3.  Von der **erstellen** Menü klicken Sie auf die **veröffentlichen** Befehl.  
+3. Von der **erstellen** Menü klicken Sie auf die **veröffentlichen** Befehl.  
   
-     Dadurch wird sichergestellt, dass das Projekt ordnungsgemäß konfiguriert ist, erzeugt eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung.  
+    Dadurch wird sichergestellt, dass das Projekt ordnungsgemäß konfiguriert ist, erzeugt eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung.  
   
-     Der Webpublishing-Assistent wird angezeigt.  
+    Der Webpublishing-Assistent wird angezeigt.  
   
-4.  Klicken Sie im Assistenten für das Veröffentlichen auf **Fertig stellen**.  
+4. Klicken Sie im Assistenten für das Veröffentlichen auf **Fertig stellen**.  
   
-     Visual Studio generiert und zeigt die Standardwebseite Publish.htm aufgerufen.  
+    Visual Studio generiert und zeigt die Standardwebseite Publish.htm aufgerufen.  
   
-5.  Speichern Sie das Projekt, und notieren Sie sich den Speicherort des Ordners, in dem es gespeichert ist.  
+5. Speichern Sie das Projekt, und notieren Sie sich den Speicherort des Ordners, in dem es gespeichert ist.  
   
- Erstellen Sie die oben genannten Schritte eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Projekt, das zum ersten Mal veröffentlicht wurde. Jetzt können Sie den Build außerhalb der IDE reproduzieren.  
+   Erstellen Sie die oben genannten Schritte eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Projekt, das zum ersten Mal veröffentlicht wurde. Jetzt können Sie den Build außerhalb der IDE reproduzieren.  
   
 #### <a name="to-reproduce-the-build-from-the-command-line"></a>Zum Reproduzieren des Builds über die Befehlszeile  
   
-1.  Beenden Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+1. Beenden Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-2.  Aus dem Windows **starten** im Menü klicken Sie auf **Programme**, klicken Sie dann **Microsoft Visual Studio**, klicken Sie dann **Visual Studio-Tools**, und klicken Sie dann **Visual Studio-Eingabeaufforderung**. Im Stammordner des aktuellen Benutzers sollte eine Eingabeaufforderung geöffnet werden.  
+2. Aus dem Windows **starten** im Menü klicken Sie auf **Programme**, klicken Sie dann **Microsoft Visual Studio**, klicken Sie dann **Visual Studio-Tools**, und klicken Sie dann **Visual Studio-Eingabeaufforderung**. Im Stammordner des aktuellen Benutzers sollte eine Eingabeaufforderung geöffnet werden.  
   
-3.  In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie z. B. `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie z. B. `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
-4.  So entfernen Sie die vorhandenen Dateien in der erstellten "zum Erstellen und Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Projekt" Typ `rmdir /s publish`.  
+4. So entfernen Sie die vorhandenen Dateien in der erstellten "zum Erstellen und Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Projekt" Typ `rmdir /s publish`.  
   
-     Dieser Schritt ist optional, aber es wird sichergestellt, dass die neuen Dateien von der Befehlszeile erzeugt wurden.  
+    Dieser Schritt ist optional, aber es wird sichergestellt, dass die neuen Dateien von der Befehlszeile erzeugt wurden.  
   
-5.  Geben Sie `msbuild /target:publish` ein.  
+5. Geben Sie `msbuild /target:publish` ein.  
   
- Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen P**veröffentlichen**. CmdLineDemo.application ist die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungsmanifest. Der Ordner CmdLineDemo_1.0.0.0 enthält die Dateien CmdLineDemo.exe und CmdLineDemo.exe.manifest, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Setup.exe ist der Bootstrapper, die standardmäßig konfiguriert ist, installieren die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Der Ordner DotNetFX enthält die verteilbaren Komponenten für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.  
+   Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen P**veröffentlichen**. CmdLineDemo.application ist die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungsmanifest. Der Ordner CmdLineDemo_1.0.0.0 enthält die Dateien CmdLineDemo.exe und CmdLineDemo.exe.manifest, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Setup.exe ist der Bootstrapper, die standardmäßig konfiguriert ist, installieren die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Der Ordner DotNetFX enthält die verteilbaren Komponenten für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.  
   
 ## <a name="publishing-properties"></a>Veröffentlichungseigenschaften  
  Wenn Sie die Anwendung in den oben genannten Verfahren veröffentlichen, werden die folgenden Eigenschaften in der Projektdatei, durch den Veröffentlichungs-Assistenten eingefügt. Diese Eigenschaften direkt beeinflussen, wie die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung erzeugt wird.  
@@ -116,51 +116,51 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Veröffentlichungseigenschaften werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus der **veröffentlichen**, **Sicherheit**, und **Signierung** Eigenschaftenseiten der **Projekt-Designer** . Im folgenden finden Sie eine Beschreibung der die Veröffentlichungseigenschaften, sowie einen Überblick darüber, wie jede in den verschiedenen Eigenschaftenseiten der Anwendungs-Designer festgelegt wird:  
   
--   `AssemblyOriginatorKeyFile` Bestimmt die Schlüsseldatei zum Signieren Ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifeste. Dieser Schlüssel kann auch verwendet werden, Ihre Assemblys einen starken Namen zuweisen. Diese Eigenschaft wird festgelegt, auf die **Signierung** auf der Seite die **Projekt-Designer**.  
+- `AssemblyOriginatorKeyFile` Bestimmt die Schlüsseldatei zum Signieren Ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifeste. Dieser Schlüssel kann auch verwendet werden, Ihre Assemblys einen starken Namen zuweisen. Diese Eigenschaft wird festgelegt, auf die **Signierung** auf der Seite die **Projekt-Designer**.  
   
- Die folgenden Eigenschaften werden festgelegt, auf die **Sicherheit** Seite:  
+  Die folgenden Eigenschaften werden festgelegt, auf die **Sicherheit** Seite:  
   
--   **Aktivieren von ClickOnce-Sicherheitseinstellungen** bestimmt, ob [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifeste generiert werden. Wenn ein Projekt erstmalig erstellt wird, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestgenerierung ist standardmäßig deaktiviert. Der Assistent wird automatisch aktivieren Sie dieses Flag auf, wenn Sie sich zum ersten Mal veröffentlichen.  
+- **Aktivieren von ClickOnce-Sicherheitseinstellungen** bestimmt, ob [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifeste generiert werden. Wenn ein Projekt erstmalig erstellt wird, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestgenerierung ist standardmäßig deaktiviert. Der Assistent wird automatisch aktivieren Sie dieses Flag auf, wenn Sie sich zum ersten Mal veröffentlichen.  
   
--   **TargetZone** bestimmt die Ebene der Vertrauenswürdigkeit in ausgegeben werden Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Mögliche Werte sind "Internet", "LocalIntranet" und "Benutzerdefiniert". Internet und LocalIntranet bewirkt, dass einen Standardberechtigungssatz, der in ausgegeben werden Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. LocalIntranet ist die Standardeinstellung, und es bedeutet im Grunde volle Vertrauenswürdigkeit. Benutzerdefinierte gibt an, dass nur die Berechtigungen, die in der Datei "base" app.manifest "explizit angegeben, die in ausgegeben werden die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Die Datei "app.manifest" wird eine partielle Manifestdatei, die nur die Definitionen der Vertrauensstellung Informationen enthält. Es ist eine versteckte Datei, die automatisch zu Ihrem Projekt hinzugefügt werden, wenn Sie Berechtigungen konfigurieren, die sich auf die **Sicherheit** Seite.  
+- **TargetZone** bestimmt die Ebene der Vertrauenswürdigkeit in ausgegeben werden Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Mögliche Werte sind "Internet", "LocalIntranet" und "Benutzerdefiniert". Internet und LocalIntranet bewirkt, dass einen Standardberechtigungssatz, der in ausgegeben werden Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. LocalIntranet ist die Standardeinstellung, und es bedeutet im Grunde volle Vertrauenswürdigkeit. Benutzerdefinierte gibt an, dass nur die Berechtigungen, die in der Datei "base" app.manifest "explizit angegeben, die in ausgegeben werden die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Die Datei "app.manifest" wird eine partielle Manifestdatei, die nur die Definitionen der Vertrauensstellung Informationen enthält. Es ist eine versteckte Datei, die automatisch zu Ihrem Projekt hinzugefügt werden, wenn Sie Berechtigungen konfigurieren, die sich auf die **Sicherheit** Seite.  
   
- Die folgenden Eigenschaften werden festgelegt, auf die **veröffentlichen** Seite:  
+  Die folgenden Eigenschaften werden festgelegt, auf die **veröffentlichen** Seite:  
   
--   `PublishUrl` ist der Speicherort, in der IDE, in dem die Anwendung veröffentlicht wird. Dieser wird eingefügt, in der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifest, wenn weder die `InstallUrl` oder `UpdateUrl` -Eigenschaft angegeben wird.  
+- `PublishUrl` ist der Speicherort, in der IDE, in dem die Anwendung veröffentlicht wird. Dieser wird eingefügt, in der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifest, wenn weder die `InstallUrl` oder `UpdateUrl` -Eigenschaft angegeben wird.  
   
--   `ApplicationVersion` Gibt die Version des der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Dies ist eine vierstellige Versionsnummer. Wenn die letzte Ziffer ist ein "*", die `ApplicationRevision` durch ersetzt, den Wert, der zum Zeitpunkt der Erstellung in das Manifest eingefügt.  
+- `ApplicationVersion` Gibt die Version des der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Dies ist eine vierstellige Versionsnummer. Wenn die letzte Ziffer ist ein "*", die `ApplicationRevision` durch ersetzt, den Wert, der zum Zeitpunkt der Erstellung in das Manifest eingefügt.  
   
--   `ApplicationRevision` Gibt die Version an. Dies ist eine ganze Zahl, wobei jedes Mal erhöht wird, die Sie in der IDE veröffentlichen. Beachten Sie, dass für Builds ausgeführt werden, an der Befehlszeile nicht automatisch erhöht wird.  
+- `ApplicationRevision` Gibt die Version an. Dies ist eine ganze Zahl, wobei jedes Mal erhöht wird, die Sie in der IDE veröffentlichen. Beachten Sie, dass für Builds ausgeführt werden, an der Befehlszeile nicht automatisch erhöht wird.  
   
--   `Install` Bestimmt, ob die Anwendung eine installierte Anwendung oder eine Anwendung über das Web ausgeführt wird.  
+- `Install` Bestimmt, ob die Anwendung eine installierte Anwendung oder eine Anwendung über das Web ausgeführt wird.  
   
--   `InstallUrl` (nicht dargestellt) ist der Speicherort, in dem Benutzer die Anwendung installiert wird. Wenn angegeben, ist dieser Wert in die setup.exe-Bootstrapper geschrieben, wenn die `IsWebBootstrapper` -Eigenschaft aktiviert ist. Es wird auch in die Manifestdatei bei der Anwendung eingefügt der `UpdateUrl` nicht angegeben ist.  
+- `InstallUrl` (nicht dargestellt) ist der Speicherort, in dem Benutzer die Anwendung installiert wird. Wenn angegeben, ist dieser Wert in die setup.exe-Bootstrapper geschrieben, wenn die `IsWebBootstrapper` -Eigenschaft aktiviert ist. Es wird auch in die Manifestdatei bei der Anwendung eingefügt der `UpdateUrl` nicht angegeben ist.  
   
--   `SupportUrl` (nicht dargestellt) ist der Speicherort in verknüpft die **Programme hinzufügen/entfernen** im Dialogfeld für eine installierte Anwendung.  
+- `SupportUrl` (nicht dargestellt) ist der Speicherort in verknüpft die **Programme hinzufügen/entfernen** im Dialogfeld für eine installierte Anwendung.  
   
- Die folgenden Eigenschaften werden festgelegt, der **Anwendungsupdates** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
+  Die folgenden Eigenschaften werden festgelegt, der **Anwendungsupdates** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
   
--   `UpdateEnabled` Gibt an, ob die Anwendung nach Updates suchen soll.  
+- `UpdateEnabled` Gibt an, ob die Anwendung nach Updates suchen soll.  
   
--   `UpdateMode` Gibt an, entweder Updates im Vordergrund oder im Hintergrund erfolgen.  
+- `UpdateMode` Gibt an, entweder Updates im Vordergrund oder im Hintergrund erfolgen.  
   
--   `UpdateInterval` Gibt an, wie häufig die Anwendung nach Updates suchen soll.  
+- `UpdateInterval` Gibt an, wie häufig die Anwendung nach Updates suchen soll.  
   
--   `UpdateIntervalUnits` Gibt an, ob die `UpdateInterval` Wert wird in Einheiten von Stunden, Tage oder Wochen.  
+- `UpdateIntervalUnits` Gibt an, ob die `UpdateInterval` Wert wird in Einheiten von Stunden, Tage oder Wochen.  
   
--   `UpdateUrl` (nicht dargestellt) ist der Speicherort, der die Anwendung aus dem Updates erhält. Wenn angegeben, wird dieser Wert in das Anwendungsmanifest eingefügt.  
+- `UpdateUrl` (nicht dargestellt) ist der Speicherort, der die Anwendung aus dem Updates erhält. Wenn angegeben, wird dieser Wert in das Anwendungsmanifest eingefügt.  
   
--   Die folgenden Eigenschaften werden festgelegt, der **Veröffentlichungsoptionen** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
+- Die folgenden Eigenschaften werden festgelegt, der **Veröffentlichungsoptionen** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
   
--   `PublisherName` Gibt den Namen des Verlegers in der Eingabeaufforderung angezeigt, wenn die Installation oder Ausführung der Anwendung angezeigt. Im Falle einer installierten Anwendung, es wird auch zum Geben Sie den Namen des Ordners auf dem **starten** Menü.  
+- `PublisherName` Gibt den Namen des Verlegers in der Eingabeaufforderung angezeigt, wenn die Installation oder Ausführung der Anwendung angezeigt. Im Falle einer installierten Anwendung, es wird auch zum Geben Sie den Namen des Ordners auf dem **starten** Menü.  
   
--   `ProductName` Gibt den Namen des Produkts in die Eingabeaufforderung angezeigt, wenn die Installation oder Ausführung der Anwendung angezeigt. Im Falle einer installierten Anwendung, es wird auch zum Geben Sie den Namen der Verknüpfung auf die **starten** Menü.  
+- `ProductName` Gibt den Namen des Produkts in die Eingabeaufforderung angezeigt, wenn die Installation oder Ausführung der Anwendung angezeigt. Im Falle einer installierten Anwendung, es wird auch zum Geben Sie den Namen der Verknüpfung auf die **starten** Menü.  
   
--   Die folgenden Eigenschaften werden festgelegt, der **Voraussetzungen** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
+- Die folgenden Eigenschaften werden festgelegt, der **Voraussetzungen** klicken Sie im Dialogfeld auf das Sie über die **veröffentlichen** Seite.  
   
--   `BootstrapperEnabled` Bestimmt, ob die setup.exe-Bootstrapper generiert.  
+- `BootstrapperEnabled` Bestimmt, ob die setup.exe-Bootstrapper generiert.  
   
--   `IsWebBootstrapper` Bestimmt, ob sich die setup.exe-Bootstrapper über das Internet oder in datenträgerbasierte Modus funktioniert.  
+- `IsWebBootstrapper` Bestimmt, ob sich die setup.exe-Bootstrapper über das Internet oder in datenträgerbasierte Modus funktioniert.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL "," SupportUrl "," PublishURL "und" UpdateURL  
  Die folgende Tabelle zeigt die vier URL-Optionen für die ClickOnce-Bereitstellung.  

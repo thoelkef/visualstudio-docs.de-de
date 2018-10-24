@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842663"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Entwicklungsübersicht für Office-Projektmappen (VSTO)
   Wenn Sie Microsoft Office als Front-End für Projektmappen verwenden, können Sie die vertrauten Microsoft Office-Benutzeroberflächen und -Tools verwenden, z. B. die Textverarbeitungsfunktionen in Word, die Datenanalysefunktionen von Excel und die E-Mail-Verwaltungsfunktionen von Outlook. Sie können Projektmappen in Visual Studio entwickeln, um Office-Anwendungen anzupassen und die speziellen Funktionen hinzuzufügen, die Sie für Ihre Geschäftsprozesse benötigen. Beispielsweise können Sie Word in einen Vertragsgenerator verwandeln, mit dem Verträge aus bereits vorhandenen Teilen zusammengestellt werden können. Die Teile können dabei bearbeitbar oder nicht bearbeitbar sein. Mit Excel können Sie ein automatisiertes Budgetarbeitsblatt erstellen, das für unterschiedliche Projekte angepasst werden kann. Ihre Benutzer können Bürolösungen auch offline verwenden. Dies ist bei komplexen Lösungen praktikabler als die Verwendung einer webbasierten Architektur.  
@@ -31,13 +31,13 @@ ms.locfileid: "35672338"
 ## <a name="choose-an-office-project-type"></a>Wählen Sie eine Office-Projekttyps  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] stellt die folgenden Arten von Projektvorlagen für die VSTO-basierte Office-Entwicklung bereit:  
   
--   **Anpassungen auf Dokumentebene** sind mit einem bestimmten Dokument verknüpft.  
+- **Anpassungen auf Dokumentebene** sind mit einem bestimmten Dokument verknüpft.  
   
--   **VSTO Add-ins** sind mit der Anwendung selbst verknüpft.  
+- **VSTO Add-ins** sind mit der Anwendung selbst verknüpft.  
   
- Für die Entscheidung, welche dieser Projekttypen für Ihre Lösung am besten geeignet ist, sollten Sie sich folgende Frage stellen: Möchten Sie, dass Ihr Code nur ausgeführt wird, wenn ein bestimmtes Dokument geöffnet ist, oder soll der Code immer verfügbar sein, wenn die Anwendung ausgeführt wird. Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).  
+  Für die Entscheidung, welche dieser Projekttypen für Ihre Lösung am besten geeignet ist, sollten Sie sich folgende Frage stellen: Möchten Sie, dass Ihr Code nur ausgeführt wird, wenn ein bestimmtes Dokument geöffnet ist, oder soll der Code immer verfügbar sein, wenn die Anwendung ausgeführt wird. Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).  
   
- Welche Typen von Projekten Sie erstellen können, hängt davon ab, welche Office-Anwendungen Sie auf dem Entwicklungscomputer installiert haben. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../vsto/features-available-by-office-application-and-project-type.md).  
+  Welche Typen von Projekten Sie erstellen können, hängt davon ab, welche Office-Anwendungen Sie auf dem Entwicklungscomputer installiert haben. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Anpassungen auf Dokumentebene  
  Anpassungen auf Dokumentebene bestehen aus einer Assembly, die einem einzelnen Dokument, einer Arbeitsmappe oder einer Vorlage in Microsoft Office Word oder Microsoft Office Excel zugeordnet ist. Dies Assembly wird geladen, wenn das zugeordnete Dokument geöffnet wird. Funktionen in von Ihnen erstellten Anpassungen sind nur verfügbar, wenn das zugeordnete Dokument geöffnet ist. Mit Anpassungen können keine anwendungsweiten Änderungen vorgenommen werden, z. B. das Anzeigen eines neuen Menüelements oder einer Menübandregisterkarte, wenn ein Dokument geöffnet ist.  
@@ -91,7 +91,7 @@ ms.locfileid: "35672338"
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)   
- [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  

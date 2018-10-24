@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839335"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren di
   
 #### <a name="to-implement-the-completion-command-handler"></a>Um den Abschlusshandler-Befehl zu implementieren.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestCompletionCommandHandler` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestCompletionCommandHandler` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  Fügen Sie private Felder für den nächsten Befehlshandler (zu dem Sie den Befehl übergeben), die Textansicht, die Handler-Befehlsanbieter (wodurch der Zugriff auf verschiedene Dienste), und eine vervollständigungssitzung:  
+2. Fügen Sie private Felder für den nächsten Befehlshandler (zu dem Sie den Befehl übergeben), die Textansicht, die Handler-Befehlsanbieter (wodurch der Zugriff auf verschiedene Dienste), und eine vervollständigungssitzung:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  Fügen Sie einen Konstruktor, der festlegt, der Textansicht und die Anbieterfelder und die Befehlskette fügt den Befehl hinzu:  
+3. Fügen Sie einen Konstruktor, der festlegt, der Textansicht und die Anbieterfelder und die Befehlskette fügt den Befehl hinzu:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode und übergeben den Befehl an:  
+4. Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode und übergeben den Befehl an:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  Implementieren Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>-Methode. Wenn diese Methode eine Tastatureingabe empfängt, müssen sie eine der folgenden Optionen:  
+5. Implementieren Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>-Methode. Wenn diese Methode eine Tastatureingabe empfängt, müssen sie eine der folgenden Optionen:  
   
-    -   Ermöglichen Sie das Zeichen, das den Puffer geschrieben werden und lösen Sie dann oder Abschluss zu filtern. (Druckbaren Zeichen hierzu.)  
+   - Ermöglichen Sie das Zeichen, das den Puffer geschrieben werden und lösen Sie dann oder Abschluss zu filtern. (Druckbaren Zeichen hierzu.)  
   
-    -   Committen Sie die Vervollständigung zu, aber lassen Sie nicht das Zeichen, das in den Puffer geschrieben werden. (Leerzeichen, Registerkarte und geben Sie dies eine vervollständigungssitzung angezeigt wird.)  
+   - Committen Sie die Vervollständigung zu, aber lassen Sie nicht das Zeichen, das in den Puffer geschrieben werden. (Leerzeichen, Registerkarte und geben Sie dies eine vervollständigungssitzung angezeigt wird.)  
   
-    -   Ermöglichen Sie den Befehl aus, um an den nächsten Handler übergeben werden. (Alle anderen Befehle.)  
+   - Ermöglichen Sie den Befehl aus, um an den nächsten Handler übergeben werden. (Alle anderen Befehle.)  
   
      Da diese Methode auf Benutzeroberfläche anzeigen kann, rufen <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> um sicherzustellen, dass sie nicht in einem Automation-Kontext aufgerufen wird:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  Dieser Code ist eine private Methode, die die vervollständigungssitzung auslöst:  
+6. Dieser Code ist eine private Methode, die die vervollständigungssitzung auslöst:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  Im nächste Beispiel wird eine private Methode, die von kündigt das Abonnement der <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> Ereignis:  
+7. Im nächste Beispiel wird eine private Methode, die von kündigt das Abonnement der <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> Ereignis:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
  Um diesen Code zu testen, erstellen Sie die Projektmappe CompletionTest, und führen Sie es in der experimentellen Instanz.  

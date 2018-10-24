@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835942"
 ---
 # <a name="t4-include-directive"></a>T4-Include-Anweisung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` kann absolut oder relativ zur aktuellen Vorlagendatei sein.  
+- `filePath` kann absolut oder relativ zur aktuellen Vorlagendatei sein.  
   
-     Außerdem können bestimmte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen eigene Verzeichnisse angeben, in denen nach Includedateien gesucht werden soll. Z. B., wenn Sie die Visualisierungs- und Modellierungs-SDK (DSL-Tools) installiert haben, der folgende Ordner wird hinzugefügt, der Include-Liste: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
+   Außerdem können bestimmte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen eigene Verzeichnisse angeben, in denen nach Includedateien gesucht werden soll. Z. B., wenn Sie die Visualisierungs- und Modellierungs-SDK (DSL-Tools) installiert haben, der folgende Ordner wird hinzugefügt, der Include-Liste: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Diese zusätzlichen Includeordner können von der Dateierweiterung der einschließenden Datei abhängen. Zum Beispiel können nur einschließende Dateien mit der Dateierweiterung `.tt` auf den Includeordner der DSL-Tools zugreifen.  
+   Diese zusätzlichen Includeordner können von der Dateierweiterung der einschließenden Datei abhängen. Zum Beispiel können nur einschließende Dateien mit der Dateierweiterung `.tt` auf den Includeordner der DSL-Tools zugreifen.  
   
--   `filePath` kann durch "%" begrenzte Umgebungsvariablen einschließen. Zum Beispiel:  
+- `filePath` kann durch "%" begrenzte Umgebungsvariablen einschließen. Zum Beispiel:  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   Für einen Namen einer eingeschlossenen Datei muss nicht die Erweiterung `".tt"` verwendet werden.  
+- Für einen Namen einer eingeschlossenen Datei muss nicht die Erweiterung `".tt"` verwendet werden.  
   
-     Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass beim Hinzufügen einer `.tt` Datei zu einem Projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] legt automatisch die **benutzerdefiniertes Tool** Eigenschaft, um `TextTemplatingFileGenerator`. Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.  
+   Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass beim Hinzufügen einer `.tt` Datei zu einem Projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] legt automatisch die **benutzerdefiniertes Tool** Eigenschaft, um `TextTemplatingFileGenerator`. Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.  
   
-     Andererseits sollten Sie beachten, dass die Dateierweiterung in einigen Fällen Einfluss darauf hat, welche zusätzlichen Ordner nach Includedateien durchsucht werden. Dies könnte wichtig sein, wenn eine eingeschlossene Datei andere Dateien enthält.  
+   Andererseits sollten Sie beachten, dass die Dateierweiterung in einigen Fällen Einfluss darauf hat, welche zusätzlichen Ordner nach Includedateien durchsucht werden. Dies könnte wichtig sein, wenn eine eingeschlossene Datei andere Dateien enthält.  
   
--   Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der `include`-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.  
+- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der `include`-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.  
   
--   Verwenden Sie `once="true"`, um sicherzustellen, dass eine Vorlage nur einmal eingeschlossen wird, auch wenn sie von mehr als einer Includedatei aufgerufen wird.  
+- Verwenden Sie `once="true"`, um sicherzustellen, dass eine Vorlage nur einmal eingeschlossen wird, auch wenn sie von mehr als einer Includedatei aufgerufen wird.  
   
-     Dieses Feature macht es einfach, um eine Bibliothek mit wiederverwendbaren T4-Ausschnitten zu erstellen, die Sie am einschließen können wird, ohne sich Gedanken machen, die verfügt über einige andere Codeausschnitt bereits diese enthalten.  Nehmen wir beispielsweise an, dass Sie eine Bibliothek mit sehr differenzierten Ausschnitten verfügen, die mit dem Verarbeiten der Vorlage und C#-Generierung zu behandeln.  Diese dienen wiederum durch einige mehr aufgabenspezifische-Hilfsprogramme, z. B. das Generieren von Ausnahmen, die Sie über eine beliebige weitere anwendungsspezifische-Vorlage verwenden können. Wenn Sie das Abhängigkeitsdiagramm zeichnen, sehen Sie, dass einige Ausschnitte mehrmals eingeschlossen würden. Die Parameter `once` verhindert aber die darauffolgenden Einschlüsse.  
+   Dieses Feature macht es einfach, um eine Bibliothek mit wiederverwendbaren T4-Ausschnitten zu erstellen, die Sie am einschließen können wird, ohne sich Gedanken machen, die verfügt über einige andere Codeausschnitt bereits diese enthalten.  Nehmen wir beispielsweise an, dass Sie eine Bibliothek mit sehr differenzierten Ausschnitten verfügen, die mit dem Verarbeiten der Vorlage und C#-Generierung zu behandeln.  Diese dienen wiederum durch einige mehr aufgabenspezifische-Hilfsprogramme, z. B. das Generieren von Ausnahmen, die Sie über eine beliebige weitere anwendungsspezifische-Vorlage verwenden können. Wenn Sie das Abhängigkeitsdiagramm zeichnen, sehen Sie, dass einige Ausschnitte mehrmals eingeschlossen würden. Die Parameter `once` verhindert aber die darauffolgenden Einschlüsse.  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  
