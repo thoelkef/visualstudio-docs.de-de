@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813764"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;"PackageFiles"&gt; -Element (Bootstrapper)
 Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für die Installation ausgeführt wird, als Ergebnis des definieren die `Command` Element.  
-  
+
 ## <a name="syntax"></a>Syntax  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `PackageFiles` Element weist das folgende Attribut.  
-  
+ Das `PackageFiles` -Element hat das folgende Attribut.  
+
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Dies ist optional. Wenn auf festgelegt `false`, das Installationsprogramm wird nur aus referenzierten Dateien herunterladen der `Command` Element. Wenn auf festgelegt `true`, werden alle Dateien heruntergeladen.<br /><br /> Wenn auf festgelegt `IfNotHomesite`, das Installationsprogramm wird dasselbe Verhalten wie `False` Wenn `ComponentsLocation` nastaven NA hodnotu `HomeSite`, und andernfalls verhält sich identisch wie `True`. Diese Einstellung kann hilfreich sein, damit Pakete, die selbst sind Bootstrapper, um ihr eigenes Verhalten in einem Szenario mit HomeSite auszuführen.<br /><br /> Die Standardeinstellung ist `true`.|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  Die `PackageFile` Element ist ein untergeordnetes Element des der `PackageFiles` Element. Ein `PackageFiles` Element benötigen mindestens einen `PackageFile` Element.  
-  
+
  `PackageFile` hat die folgenden Attribute an.  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`Name`|Erforderlich. Der Name der Paketdatei. Dies ist der Name, der die `Command` Element verweist, wenn sie die Bedingungen definiert, unter denen ein Paket installiert. Dieser Wert dient auch als Schlüssel für die `Strings` Tabelle, die den lokalisierten Namen abrufen, die tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Paket beschreiben.|  
-|`HomeSite`|Dies ist optional. Der Speicherort des Pakets auf dem Remoteserver auf, wenn er nicht mit dem Installationsprogramm enthalten ist.|  
-|`CopyOnBuild`|Dies ist optional. Gibt an, ob der Bootstrapper die Paketdatei auf den Datenträger zum Zeitpunkt der Erstellung kopieren soll. Der Standardwert ist "True".|  
-|`PublicKey`|Der verschlüsselte öffentliche Schlüssel des Signaturgebers der Paket-Zertifikat. Erforderlich, wenn `HomeSite` wird verwendet, andernfalls optional.|  
-|`Hash`|Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden.|  
-  
+
+
+| Attribut | Beschreibung |
+|---------------| - |
+| `Name` | Erforderlich. Der Name der Paketdatei. Dies ist der Name, der die `Command` Element verweist, wenn sie die Bedingungen definiert, unter denen ein Paket installiert. Dieser Wert dient auch als Schlüssel für die `Strings` Tabelle, die den lokalisierten Namen abrufen, die tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Paket beschreiben. |
+| `HomeSite` | Dies ist optional. Der Speicherort des Pakets auf dem Remoteserver auf, wenn er nicht mit dem Installationsprogramm enthalten ist. |
+| `CopyOnBuild` | Dies ist optional. Gibt an, ob der Bootstrapper die Paketdatei auf den Datenträger zum Zeitpunkt der Erstellung kopieren soll. Der Standardwert ist "True". |
+| `PublicKey` | Der verschlüsselte öffentliche Schlüssel des Signaturgebers der Paket-Zertifikat. Erforderlich, wenn `HomeSite` wird verwendet, andernfalls optional. |
+| `Hash` | Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden. |
+
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel definiert die Pakete für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable-Paket und seine Abhängigkeiten, z. B. den Windows Installer.  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [\<Produkt >-Element](../deployment/product-element-bootstrapper.md)   
  [\<Package >-Element](../deployment/package-element-bootstrapper.md)   

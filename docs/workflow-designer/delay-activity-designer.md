@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832984"
 ---
 # <a name="delay-activity-designer"></a>Delay-Aktivitätsdesigner
 
@@ -38,14 +38,14 @@ Die **Verzögerung** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox
 Die folgende Tabelle zeigt die <xref:System.Activities.Statements.Delay> Eigenschaften und beschreibt, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, und einige davon können auf der Oberfläche des Workflow-Designer bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Delay>-Aktivität. Der Standardwert lautet Delay. Obwohl die <xref:System.Activities.Activity.DisplayName%2A> Wert ist nicht unbedingt erforderlich, es hat sich bewährt, eine zu verwenden.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|Die Zeitspanne, um die der Workflow verzögert werden soll. Diese Eigenschaft wird im Eigenschaftenraster festgelegt. Geben Sie in entweder einen literalen <xref:System.TimeSpan>-Wert im Format 00:00:00 oder einem Visual Basic-Ausdruck ein, um die Zeitspanne anzugeben.|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Primitive](../workflow-designer/primitives-activity-designers.md)
-- [Weisen Sie](../workflow-designer/assign-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay-Aktivitätsdesigner](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

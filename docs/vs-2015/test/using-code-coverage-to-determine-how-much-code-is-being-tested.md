@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834057"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
 > [!TIP]
 >  So erhalten Sie genaue Ergebnisse:  
->   
->  -   Überprüfen Sie, ob Compileroptimierung deaktiviert ist.  
->   
->      Wenn Sie mit nicht verwaltetem (systemeigenen) Code arbeiten, verwenden Sie einen Debugbuild.  
-> -   Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.  
->   
->  Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md). sein. Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.  
+> 
+> - Überprüfen Sie, ob Compileroptimierung deaktiviert ist.  
+> 
+>   Wenn Sie mit nicht verwaltetem (systemeigenen) Code arbeiten, verwenden Sie einen Debugbuild.  
+>   -   Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.  
+> 
+>   Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md). sein. Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Berichterstellung in Blöcken oder in Zeilen  
  Die Codeabdeckung wird in *Blöcken* gezählt. Ein Block ist ein Stück Code mit genau einem Einstiegs- und Endpunkt.  Wenn die Ablaufsteuerung des Programms einen Block während eines Testlaufs durchläuft, wird dieser Block als abgedeckt gezählt. Wie oft der Block verwendet wird, hat keinen Einfluss auf das Ergebnis.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analysieren der Code Coverage im Builddienst  
  Wenn Sie Code einchecken, werden Ihre Tests zusammen mit allen anderen Tests von anderen Teammitgliedern auf dem Buildserver ausgeführt. (Wenn Sie dies noch nicht eingerichtet haben, finden Sie unter [Ausführen von Tests im Buildprozess](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38) Informationen hierzu.) Es ist hilfreich, die Code Coverage für den Builddienst zu analysieren, da Sie dadurch das aktuellste und umfassendste Bild der Code Coverage für das gesamte Projekt erhalten. Dazu gehören auch automatisierte Systemtests und andere codierte Tests, die Sie normalerweise nicht auf Entwicklungscomputern ausführen.  
   
-1.  Öffnen Sie im Team Explorer **Builds**, und fügen Sie dann eine Builddefinition hinzu oder bearbeiten Sie diese.  
+1. Öffnen Sie im Team Explorer **Builds**, und fügen Sie dann eine Builddefinition hinzu oder bearbeiten Sie diese.  
   
-2.  Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Legen Sie die Option **Code Coverage Enabled**(Code Coverage aktiviert) für den **Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) fest.  
+2. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Legen Sie die Option **Code Coverage Enabled**(Code Coverage aktiviert) für den **Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) fest.  
   
-     Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
+    Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-    -   *Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File** (Typ der Laufzeiteinstellungsdatei) vorhanden.*  
+   - <em>Es ist jedoch kein Feld mit dem Namen **ausführen Einstellungen Dateityp</em>*. *  
   
-         Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
+      Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   
- ![Festlegen der Builddefinition für Code Coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+   ![Festlegen der Builddefinition für Code Coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
- Nach Ausführung des Builds werden die Code Coverage-Ergebnisse an den Testlauf angefügt und in der Buildzusammenfassung angezeigt.  
+   Nach Ausführung des Builds werden die Code Coverage-Ergebnisse an den Testlauf angefügt und in der Buildzusammenfassung angezeigt.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analysieren der Codeabdeckung in einer Befehlszeile  
  Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option in diesem Hilfsprogramm. Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  

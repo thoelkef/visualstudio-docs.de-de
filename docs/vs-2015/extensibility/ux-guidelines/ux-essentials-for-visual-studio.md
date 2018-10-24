@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848656"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303310"
 ### <a name="hyperlink-anti-patterns"></a>Antimuster für Hyperlink  
  Das folgende Beispiel enthält zwei Antimuster.  
   
-1.  Im Vordergrund roten aktivieren, wenn darauf gezeigt wird also nicht die richtige freigegebene Farbe aus dem Schriftartdienst verwendet wird.  
+1. Im Vordergrund roten aktivieren, wenn darauf gezeigt wird also nicht die richtige freigegebene Farbe aus dem Schriftartdienst verwendet wird.  
   
-2.  "Weitere Informationen" ist nicht den entsprechenden Text einen Link auf ein grundlegendes Thema. Des Benutzers Ziel ist nicht mehr, erfahren, um die Auswirkungen ihrer Wahl zu verstehen ist.  
+2. "Weitere Informationen" ist nicht den entsprechenden Text einen Link auf ein grundlegendes Thema. Des Benutzers Ziel ist nicht mehr, erfahren, um die Auswirkungen ihrer Wahl zu verstehen ist.  
   
- ![Hyperlink anti-&#45;Muster](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102-J_HyperlinkIncorrect")  
+   ![Hyperlink anti-&#45;Muster](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102-J_HyperlinkIncorrect")  
   
- **Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio.**  
+   **Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio.**  
   
- **Bessere Lösung:** stellten die Frage, die der Benutzer auf den Link bitten würden.  
+   **Bessere Lösung:** stellten die Frage, die der Benutzer auf den Link bitten würden.  
   
 -   Wie funktionieren die Windows Azure-Dienste?  
   

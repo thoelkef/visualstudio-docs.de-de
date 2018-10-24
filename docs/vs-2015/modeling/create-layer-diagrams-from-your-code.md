@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833485"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Erstellen von Ebenendiagrammen aus Ihrem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
 > [!NOTE]
 >  Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Um anzuzeigen, welche Elemente über Abhängigkeiten verfügen, können Sie die Reverse-Engineering, öffnen Sie das Kontextmenü für eine oder mehrere Ebenen aus, und wählen Sie dann **Links anzeigen**. In **Ebenen-Explorer**, überprüfen Sie die **unterstützt die Validierung** Spalte. Abhängigkeiten werden nicht für Elemente, die für die in dieser Spalte wird Reverse Engineering **"false"**.  
   
--   Wählen Sie eine oder mehrere Ebenen, öffnen Sie das Kontextmenü für die ausgewählte Ebene, und wählen Sie dann **Abhängigkeiten generieren**.  
+- Wählen Sie eine oder mehrere Ebenen, öffnen Sie das Kontextmenü für die ausgewählte Ebene, und wählen Sie dann **Abhängigkeiten generieren**.  
   
- In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
+  In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
   
 ##  <a name="EditDependencies"></a> Bearbeiten von Ebenen und Abhängigkeiten auf den vorgesehenen Entwurf anzeigen  
  Um die geplanten Änderungen an Ihrem System oder der vorgesehenen Architektur zu beschreiben, bearbeiten Sie das Ebenendiagramm:  

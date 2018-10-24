@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_lengthprolog | Microsoft Docs'
+title: 'Idiastackframe:: Get_lengthprolog | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c46c4ae4c5400ce94c34c448756cba5e013354
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d2cfa5d621ebc01468ed74a4185ffd31c8afdfe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847789"
 ---
 # <a name="idiastackframegetlengthprolog"></a>IDiaStackFrame::get_lengthProlog
 Ruft die Anzahl der Bytes der Prolog-Code im Block.  
@@ -34,10 +34,10 @@ HRESULT get_lengthProlog (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Anzahl der Bytes des prologcodes zurück.  
+ [out] Gibt die Anzahl von Bytes des prologcodes.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

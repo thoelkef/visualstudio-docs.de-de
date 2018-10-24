@@ -14,27 +14,27 @@ caps.latest.revision: 19
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a23cdd24ad696795127a4469c447f12e9d191930
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848552"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps in die universelle Windows-Plattform (UWP)
 Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projektdateien für Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps vor, damit sie mit Visual Studio 2015 RTM verwendet werden können. (Wenn Sie über eine universelle Windows 8.1-App mit einem Windows-Anwendungsprojekt und einem Windows Phone-Projekt verfügen, müssen Sie die Schritte befolgen, um jedes Projekt zu migrieren).  
   
  Mit der universellen Windows-Plattform können Sie Ihre App auf mindestens eine Gerätefamilie abzielen. Weitere Informationen zu universellen Windows-Apps finden Sie in diesem [Plattform-Handbuch](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
--   [Migrieren Sie Ihre vorhandenen C#/VB-Windows Store 8.1- oder -Windows Phone 8.1-Apps](#MigrateCSharp) , um die universelle Windows-Plattform zu verwenden.  
+- [Migrieren Sie Ihre vorhandenen C#/VB-Windows Store 8.1- oder -Windows Phone 8.1-Apps](#MigrateCSharp) , um die universelle Windows-Plattform zu verwenden.  
   
--   [Migrieren Sie Ihre vorhandenen C++-Windows Store 8.1- oder -Windows Phone 8.1-Apps](#MigrateCPlusPlus) , um die universelle Windows-Plattform zu verwenden.  
+- [Migrieren Sie Ihre vorhandenen C++-Windows Store 8.1- oder -Windows Phone 8.1-Apps](#MigrateCPlusPlus) , um die universelle Windows-Plattform zu verwenden.  
   
--   [Erforderliche Änderungen für vorhandene mit Visual Studio 2015 RC erstellte universelle Windows-Apps](#PreviousVersions).  
+- [Erforderliche Änderungen für vorhandene mit Visual Studio 2015 RC erstellte universelle Windows-Apps](#PreviousVersions).  
   
--   [Erforderliche Änderungen für vorhandene Komponententestprojekte für mit Visual Studio 2015 RC erstellte universelle Windows-Apps](#MigrateUnitTest).  
+- [Erforderliche Änderungen für vorhandene Komponententestprojekte für mit Visual Studio 2015 RC erstellte universelle Windows-Apps](#MigrateUnitTest).  
   
- Wenn Sie diese Änderungen nicht alle vornehmen möchten, erfahren Sie hier mehr über das [Portieren Ihrer vorhandenen Apps](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in ein neues universelles Windows-Projekt.  
+  Wenn Sie diese Änderungen nicht alle vornehmen möchten, erfahren Sie hier mehr über das [Portieren Ihrer vorhandenen Apps](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in ein neues universelles Windows-Projekt.  
   
 ##  <a name="MigrateCSharp"></a> Migrieren Sie Ihrer C#/VB Windows Store 8.1 oder Windows Phone 8.1-apps zur Verwendung der universellen Windows-Plattform  
   
@@ -333,121 +333,121 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 #### <a name="update-your-package-manifest-file"></a>Aktualisieren der Paketmanifestdatei  
   
-1.  Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer. Sie müssen die Datei „Package.AppxManifest“ für jedes Windows Store- und Windows Phone-Projekt bearbeiten.  
+1. Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer. Sie müssen die Datei „Package.AppxManifest“ für jedes Windows Store- und Windows Phone-Projekt bearbeiten.  
   
-2.  Müssen Sie aktualisieren die \<Package >-Element mit den neuen Schemas basierend auf dem vorhandenen Projekttyp. Entfernen Sie zuerst die folgenden Schemas, je nachdem, ob Sie über ein Windows Store- oder ein Windows Phone-Projekt verfügen.  
+2. Müssen Sie aktualisieren die \<Package >-Element mit den neuen Schemas basierend auf dem vorhandenen Projekttyp. Entfernen Sie zuerst die folgenden Schemas, je nachdem, ob Sie über ein Windows Store- oder ein Windows Phone-Projekt verfügen.  
   
-     **ALT für Windows Store-Projekt:** Ihre \<Package >-Element sieht in etwa wie folgt.  
+    **ALT für Windows Store-Projekt:** Ihre \<Package >-Element sieht in etwa wie folgt.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-        xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+       xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
   
-    ```  
+   ```  
   
-     **ALT für Windows Phone-Projekt:** Ihre \<Package >-Element sieht in etwa wie folgt.  
+    **ALT für Windows Phone-Projekt:** Ihre \<Package >-Element sieht in etwa wie folgt.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-    xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
-    xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
-    ```  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+   xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
+   xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
+   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
+   ```  
   
-     **NEU für universelle Windows-Plattform:** fügen Sie die unten stehenden Schemas zu Ihrem \<Paket > Element. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Die neue \<Package >-Element sollte etwa wie folgt aussehen.  
+    **NEU für universelle Windows-Plattform:** fügen Sie die unten stehenden Schemas zu Ihrem \<Paket > Element. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Die neue \<Package >-Element sollte etwa wie folgt aussehen.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
-        xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
-        xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
-       IgnorableNamespaces= "uap mp">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
+       xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
+       xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
+      IgnorableNamespaces= "uap mp">  
   
-    ```  
+   ```  
   
-3.  Hinzufügen einer \<Abhängigkeiten > untergeordnete Elemente der \<Paket > Element. Fügen Sie dann eine \<TargetDeviceFamily > untergeordnetes Element dieser \<Dependencies >-Element mit den Namen, "MinVersion" und "maxversiontested". Weisen Sie dem Name-Attribut den Wert „Windows.Universal“ zu. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:  
+3. Hinzufügen einer \<Abhängigkeiten > untergeordnete Elemente der \<Paket > Element. Fügen Sie dann eine \<TargetDeviceFamily > untergeordnetes Element dieser \<Dependencies >-Element mit den Namen, "MinVersion" und "maxversiontested". Weisen Sie dem Name-Attribut den Wert „Windows.Universal“ zu. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:  
   
-    ```xml  
-    <Dependencies>  
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
-    </Dependencies>  
-    ```  
+   ```xml  
+   <Dependencies>  
+   <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
+   </Dependencies>  
+   ```  
   
-4.  **Für Windows Store nur:** Sie hinzufügen müssen eine \<Mp:PhoneIdentity > untergeordnete Elemente der \<Paket > Element. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Legen Sie "phoneproductid" haben den gleichen Wert wie die Name-Attribut in der \<Identität > Element. Legen Sie den „PhonePublishedId“-Wert auf Folgendes fest: 00000000-0000-0000-0000-000000000000. Und zwar so:  
+4. **Für Windows Store nur:** Sie hinzufügen müssen eine \<Mp:PhoneIdentity > untergeordnete Elemente der \<Paket > Element. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Legen Sie "phoneproductid" haben den gleichen Wert wie die Name-Attribut in der \<Identität > Element. Legen Sie den „PhonePublishedId“-Wert auf Folgendes fest: 00000000-0000-0000-0000-000000000000. Und zwar so:  
   
-    ```xml  
-    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
-    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
-    ```  
+   ```xml  
+   <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
+   <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
+   ```  
   
-5.  Suchen der \<Voraussetzungen > Element, und löschen Sie dieses Element und alle untergeordneten Elemente.  
+5. Suchen der \<Voraussetzungen > Element, und löschen Sie dieses Element und alle untergeordneten Elemente.  
   
-6.  Hinzufügen der **Uap** Namespace die folgende \<Ressource >-Elemente: Scale, DXFeatureLevel. Zum Beispiel:  
+6. Hinzufügen der **Uap** Namespace die folgende \<Ressource >-Elemente: Scale, DXFeatureLevel. Zum Beispiel:  
   
-    ```xml  
-    <Resources>  
-      <Resource Language="en-us"/>  
-     <Resource uap:Scale="180"/>  
-     <Resource uap:DXFeatureLevel="dx11"/>  
-    </Resources>  
+   ```xml  
+   <Resources>  
+     <Resource Language="en-us"/>  
+    <Resource uap:Scale="180"/>  
+    <Resource uap:DXFeatureLevel="dx11"/>  
+   </Resources>  
   
-    ```  
+   ```  
   
-7.  Hinzufügen der **Uap** Namespace die folgende \<Funktion > Elemente: DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, RemovableStorage, Appointments und Contacts. Zum Beispiel:  
+7. Hinzufügen der **Uap** Namespace die folgende \<Funktion > Elemente: DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, RemovableStorage, Appointments und Contacts. Zum Beispiel:  
   
-    ```xml  
-    <Capabilities>  
-      <uap:Capability Name="documentsLibrary"/>  
-      <uap:Capability Name="removableStorage"/>  
-    </Capabilities>  
+   ```xml  
+   <Capabilities>  
+     <uap:Capability Name="documentsLibrary"/>  
+     <uap:Capability Name="removableStorage"/>  
+   </Capabilities>  
   
-    ```  
+   ```  
   
-8.  Hinzufügen der **Uap** Namespace, um die \<VisualElements >-Element und seine untergeordneten Elemente. Zum Beispiel:  
+8. Hinzufügen der **Uap** Namespace, um die \<VisualElements >-Element und seine untergeordneten Elemente. Zum Beispiel:  
   
-    ```xml  
-    <uap:VisualElements  
-        DisplayName="My WWA App"  
-        Square150x150Logo="images/150x150.png"  
-        Square44x44Logo="images/44x44.png"  
-        Description="My WWA App"  
-        BackgroundColor="#777777">  
-      <uap:SplashScreen Image="images/splash.png"/>  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       DisplayName="My WWA App"  
+       Square150x150Logo="images/150x150.png"  
+       Square44x44Logo="images/44x44.png"  
+       Description="My WWA App"  
+       BackgroundColor="#777777">  
+     <uap:SplashScreen Image="images/splash.png"/>  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
-     **Gilt nur für Windows Store:** Die Namen der Kachelgröße wurden geändert. Ändern Sie die Attribute in der \<VisualElements >-Element entsprechend den neuen zusammengeführten kachelgrößen. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.  
+    **Gilt nur für Windows Store:** Die Namen der Kachelgröße wurden geändert. Ändern Sie die Attribute in der \<VisualElements >-Element entsprechend den neuen zusammengeführten kachelgrößen. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.  
   
-     **ALT:** Kachelgrößennamen  
+    **ALT:** Kachelgrößennamen  
   
-    ```xml  
-    <m2:VisualElements  
-        …  
-        Square30x30Logo="Assets\SmallLogo.png"  
-        …>  
-     <m2:DefaultTile  
-          …  
-          Square70x70Logo="images/70x70.png">  
-    </m2:VisualElements>  
+   ```xml  
+   <m2:VisualElements  
+       …  
+       Square30x30Logo="Assets\SmallLogo.png"  
+       …>  
+    <m2:DefaultTile  
+         …  
+         Square70x70Logo="images/70x70.png">  
+   </m2:VisualElements>  
   
-    ```  
+   ```  
   
-     **NEU:** Kachelgrößennamen  
+    **NEU:** Kachelgrößennamen  
   
-    ```xml  
-    <uap:VisualElements  
-        …  
-        Square44x44Logo="Assets\SmallLogo.png"  
-        …>  
-     <uap:DefaultTile  
-          …  
-          Square71x71Logo="images/70x70.png">  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       …  
+       Square44x44Logo="Assets\SmallLogo.png"  
+       …>  
+    <uap:DefaultTile  
+         …  
+         Square71x71Logo="images/70x70.png">  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
 9. Hinzufügen der **Uap** Namespace, um die \<ApplicationContentUriRules > und alle seine untergeordneten Elemente. Zum Beispiel:  
   
@@ -563,28 +563,28 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 15. Entfernen Sie alle veralteten Elemente.  
   
-    1.  Diese Attribute für \<VisualElements > sind veraltet und sollte entfernt werden:  
+    1. Diese Attribute für \<VisualElements > sind veraltet und sollte entfernt werden:  
   
-        -   Die \<VisualElements > Attribute: ForegroundText, ToastCapable  
+       - Die \<VisualElements > Attribute: ForegroundText, ToastCapable  
   
-        -   Die \<DefaultTile >-Attribut "DefaultSize"  
+       - Die \<DefaultTile >-Attribut "DefaultSize"  
   
-        -   Die \<ApplicationView >-Element  
+       - Die \<ApplicationView >-Element  
   
          Zum Beispiel:  
   
-        ```xml  
-        <m2:VisualElements  
-            …  
-            ForegroundText="dark"  
-            ToastCapable="true">  
-        <m2:DefaultTile DefaultSize="square150x150Logo"/>  
-          <m2:ApplicationView MinWidth="width320"/>  
-        </m2:VisualElements>  
+       ```xml  
+       <m2:VisualElements  
+           …  
+           ForegroundText="dark"  
+           ToastCapable="true">  
+       <m2:DefaultTile DefaultSize="square150x150Logo"/>  
+         <m2:ApplicationView MinWidth="width320"/>  
+       </m2:VisualElements>  
   
-        ```  
+       ```  
   
-    2.  Entfernen Sie die Erweiterungen „Windows.contact“ und „windows.contactPicker“ und alle Elemente unter diesen Erweiterungen.  
+    2. Entfernen Sie die Erweiterungen „Windows.contact“ und „windows.contactPicker“ und alle Elemente unter diesen Erweiterungen.  
   
 16. Speichern Sie die Datei „Package.appxmanifest“. Schließen Sie dann Visual Studio.  
   
@@ -618,113 +618,113 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 ##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>Aktualisieren der C#/VB-Projekte zur Verwendung der neuesten universellen Windows-Plattform  
   
-1.  Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.  
+1. Um zu erfahren, welche universelle Windows-Plattform installiert ist, öffnen Sie diesen Ordner: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Er enthält eine Liste der Ordner für jede universelle Windows-Plattform, die installiert ist. Der Ordnername ist die Version der universellen Windows-Plattform, die installiert ist. Auf diesem Windows 10-Gerät beispielsweise ist die Version 10.0.10240.0 der universellen Windows-Plattform installiert.  
   
-     ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
+    ![Öffnen Sie den Ordner, um die installierten Versionen anzuzeigen](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
-     Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.  
+    Es kann mehr als eine Version der universellen Windows-Plattform installiert sein. Es wird empfohlen, dass Sie die neueste Version für Ihre App verwenden.  
   
-2.  Wechseln Sie mithilfe des Datei-Explorers zum Ordner, in dem Ihr UWP-Projekt gespeichert ist. Löschen Sie die Datei „packages.config“, und erstellen Sie eine neue JSON-Datei in diesem Ordner. Benennen Sie die Datei „project.json“, und fügen Sie der Datei anschließend den folgenden Inhalt hinzu:  
+2. Wechseln Sie mithilfe des Datei-Explorers zum Ordner, in dem Ihr UWP-Projekt gespeichert ist. Löschen Sie die Datei „packages.config“, und erstellen Sie eine neue JSON-Datei in diesem Ordner. Benennen Sie die Datei „project.json“, und fügen Sie der Datei anschließend den folgenden Inhalt hinzu:  
   
-    ```json  
+   ```json  
   
-    {  
-      "dependencies": {  
-        "Microsoft.ApplicationInsights": "1.0.0",  
-        "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
-        "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
-        "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
-      },  
-      "frameworks": {  
-        "uap10.0": {}  
-      },  
-      "runtimes": {  
-        "win10-arm": {},  
-        "win10-arm-aot": {},  
-        "win10-x86": {},  
-        "win10-x86-aot": {},  
-        "win10-x64": {},  
-        "win10-x64-aot": {}  
-      }  
-    }  
+   {  
+     "dependencies": {  
+       "Microsoft.ApplicationInsights": "1.0.0",  
+       "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
+       "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
+       "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
+     },  
+     "frameworks": {  
+       "uap10.0": {}  
+     },  
+     "runtimes": {  
+       "win10-arm": {},  
+       "win10-arm-aot": {},  
+       "win10-x86": {},  
+       "win10-x86-aot": {},  
+       "win10-x64": {},  
+       "win10-x64-aot": {}  
+     }  
+   }  
   
-    ```  
+   ```  
   
-3.  Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihre universelle C#-/VB-Windows-App enthält. Sie sehen, dass die Projektdatei (CSPROJ- oder VBPROJ-Datei) aktualisiert werden muss. Klicken Sie mit der rechten Maustaste auf die Projektdatei, und wählen Sie die Option zum Bearbeiten der Datei.  
+3. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihre universelle C#-/VB-Windows-App enthält. Sie sehen, dass die Projektdatei (CSPROJ- oder VBPROJ-Datei) aktualisiert werden muss. Klicken Sie mit der rechten Maustaste auf die Projektdatei, und wählen Sie die Option zum Bearbeiten der Datei.  
   
-     ![Klicken Sie mit der rechten Maustaste auf das Projekt, und "Bearbeiten" auswählen](../misc/media/uap-editproject.png "UAP_EditProject")  
+    ![Klicken Sie mit der rechten Maustaste auf das Projekt, und "Bearbeiten" auswählen](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-4.  Suchen der \<PropertyGroup >-Element mit den \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elemente. Ändern Sie den vorhandenen Wert von der \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elementen, die die gleiche Version der universellen Windows-Plattform sein, die Sie installiert haben.  
+4. Suchen der \<PropertyGroup >-Element mit den \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elemente. Ändern Sie den vorhandenen Wert von der \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elementen, die die gleiche Version der universellen Windows-Plattform sein, die Sie installiert haben.  
   
-     Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-5.  Wenn Sie Verweise zu den SDKs für die UWP-Erweiterung (wie das Windows Mobile SDK) hinzugefügt haben, müssen Sie die SDK-Version aktualisieren. Zum Beispiel dies \<SDKReference >-Element:  
+5. Wenn Sie Verweise zu den SDKs für die UWP-Erweiterung (wie das Windows Mobile SDK) hinzugefügt haben, müssen Sie die SDK-Version aktualisieren. Zum Beispiel dies \<SDKReference >-Element:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-     sollte wie folgt geändert werden:  
+    sollte wie folgt geändert werden:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-6.  Suchen der \<Target >-Element mit einem Namensattribut mit dem Wert: "ensurenugetpackagebuildimports". Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.  
+6. Suchen der \<Target >-Element mit einem Namensattribut mit dem Wert: "ensurenugetpackagebuildimports". Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.  
   
-    ```xml  
-    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
-        <PropertyGroup>  
-          <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
-        </PropertyGroup>  
-        <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
-        <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
-    </Target>  
-    ```  
+   ```xml  
+   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
+       <PropertyGroup>  
+         <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
+       </PropertyGroup>  
+       <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
+       <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
+   </Target>  
+   ```  
   
-7.  Suchen und löschen die \<Import >-Elemente mit den Attributen von Projekt und die Bedingung, die "Microsoft.Diagnostics.Tracing.EventSource" und "Microsoft.applicationinsights", verweisen wie folgt aus:  
+7. Suchen und löschen die \<Import >-Elemente mit den Attributen von Projekt und die Bedingung, die "Microsoft.Diagnostics.Tracing.EventSource" und "Microsoft.applicationinsights", verweisen wie folgt aus:  
   
-    ```xml  
-    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
-    <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
+   ```xml  
+   <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
+   <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
   
-    ```  
+   ```  
   
-8.  Suchen der \<ItemGroup >, bei dem \<Verweis > untergeordnete Elemente für NuGet-Pakete. Notieren Sie sich die NuGet-Pakete, die referenziert wurden, da Sie diese Informationen in einem künftigen Schritt benötigen. Ein entscheidender Unterschied zwischen dem Windows 10-Projektformat zwischen Visual Studio 2015 RC und Visual Studio 2015 RTM besteht darin, dass das RTM-Format [NuGet](http://docs.nuget.org/) Version 3 verwendet.  
+8. Suchen der \<ItemGroup >, bei dem \<Verweis > untergeordnete Elemente für NuGet-Pakete. Notieren Sie sich die NuGet-Pakete, die referenziert wurden, da Sie diese Informationen in einem künftigen Schritt benötigen. Ein entscheidender Unterschied zwischen dem Windows 10-Projektformat zwischen Visual Studio 2015 RC und Visual Studio 2015 RTM besteht darin, dass das RTM-Format [NuGet](http://docs.nuget.org/) Version 3 verwendet.  
   
-     Entfernen Sie die \<ItemGroup > und alle untergeordneten Elemente. Beispielsweise weist ein mit Visual Studio RC erstelltes UWP-Projekt die folgenden zu löschenden NuGet-Pakete auf:  
+    Entfernen Sie die \<ItemGroup > und alle untergeordneten Elemente. Beispielsweise weist ein mit Visual Studio RC erstelltes UWP-Projekt die folgenden zu löschenden NuGet-Pakete auf:  
   
-    ```xml  
-    <ItemGroup>  
-        <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-      </ItemGroup>  
+   ```xml  
+   <ItemGroup>  
+       <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+     </ItemGroup>  
   
-    ```  
+   ```  
   
 9. Suchen der \<ItemGroup >-Element mit einem \<AppxManifest > Element. Liegt eine \<keine >-Element mit einem Include-Attribut festgelegt: "Packages.config", löschen Sie sie. Darüber hinaus hinzufügen eine \<None >-Element mit einer Einbeziehung Attribut, und setzen ihren Wert auf: "Project.JSON".  
   
@@ -746,9 +746,9 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 14. Verwenden Sie den NuGet-Manager zum Hinzufügen der Pakete, die Sie im vorherigen Schritt gelöscht haben. Ein entscheidender Unterschied zwischen dem Windows 10-Projektformat zwischen Visual Studio 2015 RC und Visual Studio 2015 RTM besteht darin, dass das RTM-Format [NuGet](http://docs.nuget.org/) Version 3 verwendet.  
   
- Sie können Ihre App nun codieren, erstellen und debuggen.  
+    Sie können Ihre App nun codieren, erstellen und debuggen.  
   
- Wenn Sie über Komponententestprojekte für Ihre universellen Windows-Apps verfügen, müssen Sie zudem die [diese Schritte](#MigrateUnitTest)befolgen.  
+    Wenn Sie über Komponententestprojekte für Ihre universellen Windows-Apps verfügen, müssen Sie zudem die [diese Schritte](#MigrateUnitTest)befolgen.  
   
 ###  <a name="RCUpdate10CPlusPlus"></a> Aktualisieren der C++-Projekte zur Verwendung von der neuesten universellen Windows-Plattform  
   
@@ -826,176 +826,176 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> Aktualisieren Sie Ihrer C#/VB-Komponententestprojekte  
   
-1.  Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihr C#-/VB-Komponententestprojekt enthält. Ändern Sie den Wert, der die \<OuttputType >-Element: AppContainerExe.  
+1. Öffnen Sie unter Verwendung von Visual Studio Ihre Projektmappe, die Ihr C#-/VB-Komponententestprojekt enthält. Ändern Sie den Wert, der die \<OuttputType >-Element: AppContainerExe.  
   
-    ```xml  
+   ```xml  
   
-    <OutputType>AppContainerExe</OutputType>  
+   <OutputType>AppContainerExe</OutputType>  
   
-    ```  
+   ```  
   
-2.  Ersetzen Sie dieses Element \<EnableCoreRuntime > false\</EnableCoreRuntime > mit dem folgenden Element:  
+2. Ersetzen Sie dieses Element \<EnableCoreRuntime > false\</EnableCoreRuntime > mit dem folgenden Element:  
   
-    ```xml  
+   ```xml  
   
-    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
+   <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
   
-    ```  
+   ```  
   
-3.  Entfernen Sie die folgenden Zeilen:  
+3. Entfernen Sie die folgenden Zeilen:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup>  
-        <AppXPackage>True</AppXPackage>  
-        <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
-     <PlatformTarget>AnyCPU</PlatformTarget>  
-     <DebugSymbols>true</DebugSymbols>  
-     <DebugType>full</DebugType>  
-     <Optimize>false</Optimize>  
-     <OutputPath>bin\Debug\</OutputPath>  
-     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-     <ErrorReport>prompt</ErrorReport>  
-     <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
-        <PlatformTarget>AnyCPU</PlatformTarget>  
-        <DebugType>pdbonly</DebugType>  
-        <Optimize>true</Optimize>  
-        <OutputPath>bin\Release\</OutputPath>  
-        <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-        <ErrorReport>prompt</ErrorReport>  
-        <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
+   <PropertyGroup>  
+       <AppXPackage>True</AppXPackage>  
+       <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
+    <PlatformTarget>AnyCPU</PlatformTarget>  
+    <DebugSymbols>true</DebugSymbols>  
+    <DebugType>full</DebugType>  
+    <Optimize>false</Optimize>  
+    <OutputPath>bin\Debug\</OutputPath>  
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+    <ErrorReport>prompt</ErrorReport>  
+    <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
+       <PlatformTarget>AnyCPU</PlatformTarget>  
+       <DebugType>pdbonly</DebugType>  
+       <Optimize>true</Optimize>  
+       <OutputPath>bin\Release\</OutputPath>  
+       <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+       <ErrorReport>prompt</ErrorReport>  
+       <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
   
-    ```  
+   ```  
   
-4.  Fügen Sie dieses Element \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > als untergeordnetes Element zu diesen Eigenschaftsgruppen:  
+4. Fügen Sie dieses Element \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > als untergeordnetes Element zu diesen Eigenschaftsgruppen:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
   
-    ```  
+   ```  
   
-5.  Löschen Sie die folgenden \<ItemGroup > Elemente:  
+5. Löschen Sie die folgenden \<ItemGroup > Elemente:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="packages.config" />  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\Default.rd.xml" />  
-       <Content Include="Assets\Logo.scale-240.png" />  
-       <Content Include="Assets\SmallLogo.scale-240.png" />  
-       <Content Include="Assets\SplashScreen.scale-240.png" />  
-       <Content Include="Assets\Square71x71Logo.scale-240.png" />  
-       <Content Include="Assets\StoreLogo.scale-240.png" />  
-       <Content Include="Assets\WideLogo.scale-240.png" />  
-    </ItemGroup>  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="packages.config" />  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\Default.rd.xml" />  
+      <Content Include="Assets\Logo.scale-240.png" />  
+      <Content Include="Assets\SmallLogo.scale-240.png" />  
+      <Content Include="Assets\SplashScreen.scale-240.png" />  
+      <Content Include="Assets\Square71x71Logo.scale-240.png" />  
+      <Content Include="Assets\StoreLogo.scale-240.png" />  
+      <Content Include="Assets\WideLogo.scale-240.png" />  
+   </ItemGroup>  
   
-    ```  
+   ```  
   
-     Ersetzen Sie sie durch die folgenden Elemente:  
+    Ersetzen Sie sie durch die folgenden Elemente:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTestApp.xaml.cs">  
-          <DependentUpon>UnitTestApp.xaml</DependentUpon>  
-       </Compile>  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <ApplicationDefinition Include="UnitTestApp.xaml">  
-          <Generator>MSBuild:Compile</Generator>  
-          <SubType>Designer</SubType>  
-       </ApplicationDefinition>  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\UnitTestApp.rd.xml" />  
-       <Content Include="Assets\LockScreenLogo.scale-200.png" />  
-       <Content Include="Assets\SplashScreen.scale-200.png" />  
-       <Content Include="Assets\Square150x150Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
-       <Content Include="Assets\StoreLogo.png" />  
-       <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
-    </ItemGroup>  
-    ```  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTestApp.xaml.cs">  
+         <DependentUpon>UnitTestApp.xaml</DependentUpon>  
+      </Compile>  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <ApplicationDefinition Include="UnitTestApp.xaml">  
+         <Generator>MSBuild:Compile</Generator>  
+         <SubType>Designer</SubType>  
+      </ApplicationDefinition>  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\UnitTestApp.rd.xml" />  
+      <Content Include="Assets\LockScreenLogo.scale-200.png" />  
+      <Content Include="Assets\SplashScreen.scale-200.png" />  
+      <Content Include="Assets\Square150x150Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
+      <Content Include="Assets\StoreLogo.png" />  
+      <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
+   </ItemGroup>  
+   ```  
   
-6.  Erstellen Sie ein neues Komponententestprojekt, und kopieren Sie die Dateien „UnitTestApp.xaml“ und „UnitTestApp.xaml.cs“ aus dem neuen Projekt zum vorhandenen Komponententestprojekt, welches Sie aktualisieren.  
+6. Erstellen Sie ein neues Komponententestprojekt, und kopieren Sie die Dateien „UnitTestApp.xaml“ und „UnitTestApp.xaml.cs“ aus dem neuen Projekt zum vorhandenen Komponententestprojekt, welches Sie aktualisieren.  
   
-7.  Kopieren Sie die Datei „UnitTestApp.rd.xml“ aus dem Eigenschaftsordner des neuen Komponententestprojekts zum Eigenschaftsordner des vorhandenen Komponententestprojekts, welches Sie aktualisieren.  
+7. Kopieren Sie die Datei „UnitTestApp.rd.xml“ aus dem Eigenschaftsordner des neuen Komponententestprojekts zum Eigenschaftsordner des vorhandenen Komponententestprojekts, welches Sie aktualisieren.  
   
-8.  Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer. Löschen Sie anschließen diese Elemente daraus:  
+8. Öffnen Sie die Datei „Package.appxmanifest“ im Projektmappen-Explorer. Löschen Sie anschließen diese Elemente daraus:  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"  
-             Executable="vstest.executionengine.appcontainer.uap.exe"  
-             EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
-          <uap:VisualElements  
-             DisplayName="UnitTestProject1"  
-             Square150x150Logo="Assets\Logo.png"  
-             Square44x44Logo="Assets\SmallLogo.png"  
-             Description="UnitTestProject1"  
-             BackgroundColor="#464646">  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClientServer" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"  
+            Executable="vstest.executionengine.appcontainer.uap.exe"  
+            EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
+         <uap:VisualElements  
+            DisplayName="UnitTestProject1"  
+            Square150x150Logo="Assets\Logo.png"  
+            Square44x44Logo="Assets\SmallLogo.png"  
+            Description="UnitTestProject1"  
+            BackgroundColor="#464646">  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClientServer" />  
+   </Capabilities>  
+   ```  
   
-     Ersetzen Sie diese gelöschten Elemente durch die folgenden Elemente. Verwenden Sie den entsprechenden Wert für „ProjectName“ auf Grundlage des Namens Ihres Projekts und nicht „UnitTestProject1“ in den unten aufgeführten Elementen.  
+    Ersetzen Sie diese gelöschten Elemente durch die folgenden Elemente. Verwenden Sie den entsprechenden Wert für „ProjectName“ auf Grundlage des Namens Ihres Projekts und nicht „UnitTestProject1“ in den unten aufgeführten Elementen.  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"   
-             Executable="$targetnametoken$.exe"  
-             EntryPoint="UnitTestProject1.App">  
-          <uap:VisualElements  
-                DisplayName="UnitTestProject1"  
-                Square150x150Logo="Assets\Square150x150Logo.png"  
-                Square44x44Logo="Assets\Square44x44Logo.png"  
-                Description="UnitTestProject1"  
-                BackgroundColor="transparent">  
-             <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClient" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"   
+            Executable="$targetnametoken$.exe"  
+            EntryPoint="UnitTestProject1.App">  
+         <uap:VisualElements  
+               DisplayName="UnitTestProject1"  
+               Square150x150Logo="Assets\Square150x150Logo.png"  
+               Square44x44Logo="Assets\Square44x44Logo.png"  
+               Description="UnitTestProject1"  
+               BackgroundColor="transparent">  
+            <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClient" />  
+   </Capabilities>  
+   ```  
   
- Sie können nun die Komponententests ausführen.  
+   Sie können nun die Komponententests ausführen.  
   
 ###  <a name="UnitTestRCUpdate10CPlusPlus"></a> Aktualisieren der C++-Projekte zur Verwendung von der neuesten universellen Windows-Plattform  
   

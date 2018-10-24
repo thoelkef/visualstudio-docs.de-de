@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af8904db6d1c07f9c805a21975101d7728456eec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837099"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -59,15 +60,15 @@ ms.locfileid: "49218308"
 
  Darüber hinaus sollten die folgenden Suffixe **nicht** verwendet werden:
 
--   delegate
+- delegate
 
--   Enum
+- Enum
 
--   Impl – Verwenden Sie stattdessen 'Core'.
+- Impl – Verwenden Sie stattdessen 'Core'.
 
--   "Ex" oder ein ähnliches Suffix zur Unterscheidung von einer früheren Version desselben Typs
+- "Ex" oder ein ähnliches Suffix zur Unterscheidung von einer früheren Version desselben Typs
 
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
+  Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Entfernen Sie das Suffix aus dem Typnamen.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName | Microsoft Docs
+title: IDebugProgram2::GetName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7190e1af4bdd3304884e516a0af3610c7da47efc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45b30aa1935535f6a275f9507b53f2a914ae2a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820564"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 Ruft den Namen des Programms.  
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Der Name des Programms zurückgegeben.  
+ [out] Gibt den Namen des Programms.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Name, der von dieser Methode zurückgegebene ist immer einen Anzeigenamen, Benutzer angezeigten Namen, der die Anwendung beschreibt.  
+ Der von dieser Methode zurückgegebene Name ist immer einen Anzeigenamen, Benutzer angezeigten Namen, der die Anwendung beschreibt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

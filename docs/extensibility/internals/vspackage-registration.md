@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828423"
 ---
 # <a name="vspackage-registration"></a>VSPackage-Registrierung
 VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , dass diese installiert werden und sollte geladen werden. Dieser Prozess erfolgt durch das Schreiben von Informationen in der Registrierung. Das ist ein typischer Auftrag eines Installationsprogramms.  
@@ -48,15 +48,15 @@ VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
   
  Bei gut in der Theorie hat die selbstregistrierung einige Mängel, die für die VSPackage-Installation nicht mehr geeignet sind:  
   
--   Unterstützung von Installation, Deinstallation, Rollback der Installation und Deinstallation Rollback richtig, müssen Sie vier benutzerdefinierte Aktionen für alle verwalteten VSPackage zu erstellen, die selbst werden durch Aufrufen von regpkg entsprechend registriert.  
+- Unterstützung von Installation, Deinstallation, Rollback der Installation und Deinstallation Rollback richtig, müssen Sie vier benutzerdefinierte Aktionen für alle verwalteten VSPackage zu erstellen, die selbst werden durch Aufrufen von regpkg entsprechend registriert.  
   
--   Ihr Ansatz zur Unterstützung von Seite-an-Seite ist möglicherweise, dass Sie vier benutzerdefinierte Aktionen erstellen, die für jede unterstützte Version von RegSvr32 oder RegPkg Aufrufen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- Ihr Ansatz zur Unterstützung von Seite-an-Seite ist möglicherweise, dass Sie vier benutzerdefinierte Aktionen erstellen, die für jede unterstützte Version von RegSvr32 oder RegPkg Aufrufen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   Eine Installation mit Self registrierten Module kann nicht sicher zurückgesetzt werden, da es gibt keine Möglichkeit, der anzeigt, ob die Schlüssel selbst registrierten durch eine andere Funktion oder eine Anwendung verwendet werden.  
+- Eine Installation mit Self registrierten Module kann nicht sicher zurückgesetzt werden, da es gibt keine Möglichkeit, der anzeigt, ob die Schlüssel selbst registrierten durch eine andere Funktion oder eine Anwendung verwendet werden.  
   
--   Selbst registrierten DLLs verknüpft manchmal mit zusätzlichen DLLs, die nicht vorhanden sind, oder die falsche Version. Im Gegensatz dazu können die Windows Installer DLLs, die keine Abhängigkeit von den aktuellen Zustand des Systems mit den Registrierungstabellen registrieren.  
+- Selbst registrierten DLLs verknüpft manchmal mit zusätzlichen DLLs, die nicht vorhanden sind, oder die falsche Version. Im Gegensatz dazu können die Windows Installer DLLs, die keine Abhängigkeit von den aktuellen Zustand des Systems mit den Registrierungstabellen registrieren.  
   
--   Selbstregistrierungscodes kann verweigert werden, den Zugriff auf Netzwerkressourcen, wie z. B. Bibliotheken, wenn eine Komponente ist sowohl als angegeben ausführen-aus-Source- und finden Sie in der Tabelle SelfReg. Dadurch kann die Installation der Komponente eine Administratorinstallation fehlschlägt.  
+- Selbstregistrierungscodes kann verweigert werden, den Zugriff auf Netzwerkressourcen, wie z. B. Bibliotheken, wenn eine Komponente ist sowohl als angegeben ausführen-aus-Source- und finden Sie in der Tabelle SelfReg. Dadurch kann die Installation der Komponente eine Administratorinstallation fehlschlägt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   

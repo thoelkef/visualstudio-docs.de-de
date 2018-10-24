@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847577"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Projektmappen
   Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35673248"
 ### <a name="application-level-projects"></a>Anwendungsebene  
  Wenn Sie ein VSTO-Add-in-Projekt erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:  
   
--   Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.  
+- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.  
   
--   Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
+- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
   
--   Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
+- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Eine Programmdatenbank (*PDB*)-Datei für die Projektassembly.  
+- Eine Programmdatenbank (*PDB*)-Datei für die Projektassembly.  
   
- Der Buildprozess für VSTO-Add-In-Projekte erstellt auch einen Satz von Registrierungseinträgen auf dem Entwicklungscomputer, die zum Laden des VSTO-Add-Ins erforderlich sind. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
+  Der Buildprozess für VSTO-Add-In-Projekte erstellt auch einen Satz von Registrierungseinträgen auf dem Entwicklungscomputer, die zum Laden des VSTO-Add-Ins erforderlich sind. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Wenn Sie ein VSTO-Add-In-Projekt für Outlook erstellen, das Formularbereiche enthält, werden die folgenden Informationen vom Buildprozess zur Registrierung hinzugefügt:  
+  Wenn Sie ein VSTO-Add-In-Projekt für Outlook erstellen, das Formularbereiche enthält, werden die folgenden Informationen vom Buildprozess zur Registrierung hinzugefügt:  
   
--   Einen Schlüssel für jede Nachrichtenklasse, die mindestens einem Formularbereich zugeordnet ist.  
+- Einen Schlüssel für jede Nachrichtenklasse, die mindestens einem Formularbereich zugeordnet ist.  
   
--   Einen Eintrag für jeden Formularbereich und einen zugeordneten Wert, der den Namen des Outlook VSTO-Add-Ins darstellt.  
+- Einen Eintrag für jeden Formularbereich und einen zugeordneten Wert, der den Namen des Outlook VSTO-Add-Ins darstellt.  
   
- Outlook benötigt diese Informationen zum Laden der Formularbereiche.  
+  Outlook benötigt diese Informationen zum Laden der Formularbereiche.  
   
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird  
  Sie können aus Ihrem Projekt „Erstellen von Office-Projektmappen“ auf Assemblys verweisen (einschließlich Klassenbibliotheksprojekte). Jede referenzierte Assembly enthält eine Eigenschaft namens **Lokale Kopie**. **Lokale Kopie** gibt an, ob die Assembly in das Ausgabeverzeichnis kopiert wird. In der Standardeinstellung ist die Eigenschaft auf **true**festgelegt. Jede referenzierte Assembly, bei der **Lokale Kopie** auf **true** festgelegt ist, wird in das Ausgabeverzeichnis kopiert.  

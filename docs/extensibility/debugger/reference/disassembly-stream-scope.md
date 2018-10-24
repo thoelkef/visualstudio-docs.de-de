@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
+title: DISASSEMBLY_STREAM_SCOPE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0c72d0f14da9840c0a77d5ae88cb0acb5b54cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 860d563abd5922ecf0461ed5f03ffa231ba9450f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831158"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Gibt den Bereich des Datenstroms Disassembly.  
@@ -48,21 +48,21 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
   
 ## <a name="members"></a>Member  
  DSS_HUGE  
- Gibt an, dass die Disassemblierung der Codekontext Ausgabewerte erzeugt würde mehr als ein Client in der Regel in einem einzigen Aufruf abrufen möchten.  
+ Gibt an, dass die Disassemblierung der Codekontext würde mehr Ausgabedaten als ein Client in der Regel in einem einzigen Aufruf abrufen möchten.  
   
  DSS_FUNCTION  
- Gibt an, dass die Funktion enthaltenen Codekontext disassembliert werden sollte. Gibt an, dass die Disassembly-Datenstrom eine Funktion darstellt, wenn vom der [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) Methode.  
+ Gibt an, dass die Funktion der Codekontext enthaltenen disassembliert werden soll. Gibt an, dass es sich bei den Disassembly-Stream eine Funktion darstellt, nach der Rückkehr von der [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) Methode.  
   
  DSS_MODULE  
- Nach der Rückgabe durch die `IDebugDisassemblyStream2::GetScope` -Methode, gibt an, dass die Disassembly Stream ein Moduls darstellt.  
+ Bei Rückgabe durch die `IDebugDisassemblyStream2::GetScope` -Methode gibt an, dass der Disassembly Stream ein Moduls darstellt.  
   
  DSS_ALL  
- Gibt die Disassembly für im gesamten Adressraum.  
+ Gibt die Disassembly für den gesamten Adressraum an.  
   
 ## <a name="remarks"></a>Hinweise  
  Übergeben als Argument an die [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) Methode und zurückgegeben, indem die [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) Methode.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

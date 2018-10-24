@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812425"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen eines Entity Data Models, das aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.  
+- Erstellen eines Entity Data Models, das aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.  
   
--   Erstellen einer [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , der die Daten im Entity Data Model zu einer WPF-Anwendung verfügbar macht.  
+- Erstellen einer [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , der die Daten im Entity Data Model zu einer WPF-Anwendung verfügbar macht.  
   
--   Erstellen eines Satzes von datengebundene Steuerelemente durch Ziehen von Elementen aus der **Datenquellen** in den WPF-Designer.  
+- Erstellen eines Satzes von datengebundene Steuerelemente durch Ziehen von Elementen aus der **Datenquellen** in den WPF-Designer.  
   
--   Erstellen von Schaltflächen, mit denen die Navigation vorwärts und rückwärts durch die Kundendatensätze möglich ist.  
+- Erstellen von Schaltflächen, mit denen die Navigation vorwärts und rückwärts durch die Kundendatensätze möglich ist.  
   
--   Erstellen eine Schaltfläche, die für das Speichern von Änderungen an Daten in den Steuerelementen der [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] und der zugrunde liegenden Datenquelle.  
+- Erstellen eine Schaltfläche, die für das Speichern von Änderungen an Daten in den Steuerelementen der [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] und der zugrunde liegenden Datenquelle.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+  Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Datenmodelle in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Datenmodelle in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Erstellen Sie das Dienstprojekt  
  Beginnen Sie diese exemplarische Vorgehensweise, indem Sie ein Projekt für einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] erstellen.  
@@ -207,39 +207,39 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
 #### <a name="to-create-the-data-bound-controls"></a>So erstellen Sie ein datengebundene Steuerelemente  
   
-1.  In der **Datenquellen** Fenster, klicken Sie auf das Dropdownmenü für die **SalesOrderHeaders** Knoten, und wählen **Details**.  
+1. In der **Datenquellen** Fenster, klicken Sie auf das Dropdownmenü für die **SalesOrderHeaders** Knoten, und wählen **Details**.  
   
-2.  Erweitern Sie die **SalesOrderHeaders** Knoten.  
+2. Erweitern Sie die **SalesOrderHeaders** Knoten.  
   
-3.  In diesem Beispiel einige Felder werden nicht angezeigt, daher klicken Sie auf das Dropdownmenü neben den folgenden Knoten und anschließend auf **keine**:  
+3. In diesem Beispiel einige Felder werden nicht angezeigt, daher klicken Sie auf das Dropdownmenü neben den folgenden Knoten und anschließend auf **keine**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **"ModifiedDate"**  
+   - **"ModifiedDate"**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
      Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. In dieser exemplarischen Vorgehensweise wird davon ausgegangen Sie, dass der Endbenutzer nicht, diese Daten anzuzeigen.  
   
-4.  Von der **Datenquellen** ziehen Sie die **SalesOrderHeaders** Knoten auf das Raster unter der Zeile, die die Schaltflächen enthält.  
+4. Von der **Datenquellen** ziehen Sie die **SalesOrderHeaders** Knoten auf das Raster unter der Zeile, die die Schaltflächen enthält.  
   
-     Visual Studio generiert XAML und Code, der einen Satz von Steuerelementen erstellt, die an Daten gebunden sind, die **Produkt** Tabelle. Weitere Informationen zu den generierten XAML und Code finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio generiert XAML und Code, der einen Satz von Steuerelementen erstellt, die an Daten gebunden sind, die **Produkt** Tabelle. Weitere Informationen zu den generierten XAML und Code finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  Im Designer, klicken Sie auf das Textfeld neben der **Kunden-ID** Bezeichnung.  
+5. Im Designer, klicken Sie auf das Textfeld neben der **Kunden-ID** Bezeichnung.  
   
-6.  In der **Eigenschaften** wählen Sie im Fenster das Kontrollkästchen neben den **IsReadOnly** Eigenschaft.  
+6. In der **Eigenschaften** wählen Sie im Fenster das Kontrollkästchen neben den **IsReadOnly** Eigenschaft.  
   
-7.  Legen Sie die **IsReadOnly** Eigenschaft für die einzelnen die folgenden Textfelder ein:  
+7. Legen Sie die **IsReadOnly** Eigenschaft für die einzelnen die folgenden Textfelder ein:  
   
-    -   **Bestellnummer**  
+   -   **Bestellnummer**  
   
-    -   **Auftrags-ID**  
+   -   **Auftrags-ID**  
   
-    -   **Auftragsnummer**  
+   -   **Auftragsnummer**  
   
 ## <a name="load-the-data-from-the-service"></a>Laden Sie die Daten aus dem Dienst  
  Verwenden Sie den Webdienstproxy-Objekts, um die Umsatzdaten aus dem Dienst zu laden. Klicken Sie dann die Datenquelle für die zurückgegebenen Daten weisen die <xref:System.Windows.Data.CollectionViewSource> im WPF-Fenster.  

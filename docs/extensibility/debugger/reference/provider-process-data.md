@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Microsoft Docs
+title: PROVIDER_PROCESS_DATA | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819731"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-Diese Struktur enthält Informationen zu Prozessen, die auf einem Computer ausgeführt.  
+Diese Struktur bietet Informationen zu Prozessen, die auf einem Computer ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,16 +45,16 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Member  
  Felder  
- Eine Kombination aus Flags aus der [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Enumeration, der angibt, welche Felder ausgefüllt werden.  
+ Eine Kombination von Flags aus der [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Enumeration, der angibt, welche Felder ausgefüllt werden.  
   
  ProgramNodes  
- Ein [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) -Struktur, die ein Array von Programm-Knoten enthält.  
+ Ein [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) -Struktur, die ein Array von programmknoten enthält.  
   
  fIsDebuggerPresent  
- Ungleich Null (`TRUE`) Wenn die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger ausgeführt wird, wird 0 (null) (`FALSE`) wird jedoch nicht.  
+ Ungleich Null (`TRUE`) Wenn die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger ausgeführt wird, wird 0 (null) (`FALSE`) ist dies nicht.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) Methode, wo in gefüllt.  
+ Diese Struktur wird zum Übergeben der [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) Methode, in denen es ausgefüllt wird.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

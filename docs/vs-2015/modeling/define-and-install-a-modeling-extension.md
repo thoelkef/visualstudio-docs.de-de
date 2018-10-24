@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827479"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 ## <a name="creating-a-modeling-extension-solution"></a>Erstellen einer Modellierungserweiterungs-Projektmappe  
  Zum Definieren einer Modellierungserweiterung müssen Sie eine Projektmappe erstellen, die die folgenden Projekte enthält:  
   
--   Ein VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension)-Projekt. Dadurch wird eine Datei generiert, die als Installationsprogramm für die Komponenten der Erweiterung fungiert.  
+- Ein VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension)-Projekt. Dadurch wird eine Datei generiert, die als Installationsprogramm für die Komponenten der Erweiterung fungiert.  
   
--   Ein Klassenbibliotheksprojekt, das für Komponenten benötigt wird, die Programmcode enthalten.  
+- Ein Klassenbibliotheksprojekt, das für Komponenten benötigt wird, die Programmcode enthalten.  
   
- Wenn Sie eine Erweiterung mit mehreren Komponenten erstellen möchten, können Sie diese in einer einzigen Projektmappe entwickeln. Sie benötigen lediglich ein VSIX-Projekt.  
+  Wenn Sie eine Erweiterung mit mehreren Komponenten erstellen möchten, können Sie diese in einer einzigen Projektmappe entwickeln. Sie benötigen lediglich ein VSIX-Projekt.  
   
- Komponenten, für die kein Code erforderlich ist (beispielsweise benutzerdefinierte Toolboxelemente und benutzerdefinierte UML-Profile) können dem VSIX-Projekt direkt hinzugefügt werden, ohne dass separate Klassenbibliothekprojekte benötigt werden. Komponenten, für die Programmcode erforderlich ist, können viel leichter in einem separaten Klassenbibliothekprojekt definiert werden. Komponenten, die Code wie beispielsweise Gestenhandler, Menübefehle oder Überprüfungscode benötigen.  
+  Komponenten, für die kein Code erforderlich ist (beispielsweise benutzerdefinierte Toolboxelemente und benutzerdefinierte UML-Profile) können dem VSIX-Projekt direkt hinzugefügt werden, ohne dass separate Klassenbibliothekprojekte benötigt werden. Komponenten, für die Programmcode erforderlich ist, können viel leichter in einem separaten Klassenbibliothekprojekt definiert werden. Komponenten, die Code wie beispielsweise Gestenhandler, Menübefehle oder Überprüfungscode benötigen.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Erstellen eines Klassenbibliothekprojekts für Menübefehle, Gestenhandler oder Überprüfung  
   
@@ -133,15 +133,15 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
   
-1.  Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.  
+1. Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.  
   
-2.  Erweitern Sie **Installierte Erweiterungen**.  
+2. Erweitern Sie **Installierte Erweiterungen**.  
   
-3.  Wählen Sie die Erweiterung aus, und klicken Sie dann auf **Deinstallieren**.  
+3. Wählen Sie die Erweiterung aus, und klicken Sie dann auf **Deinstallieren**.  
   
- In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
   
- *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)   

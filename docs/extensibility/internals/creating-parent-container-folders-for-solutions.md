@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830690"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten containerordnern für Projektmappen
 In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben. Diese einzelne Stamm ist eine Super Unified-Stamm (SUR) aufgerufen.  
@@ -50,7 +50,7 @@ In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein e
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.  
   
 |Feature|Datenquellen Sie-Steuerelement-Plug-in-API-Version 1.1|Datenquellen Sie-Steuerelement-Plug-in API-Version 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Hinzufügen der Lösung zum SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Projekt der quellcodeverwaltung unterliegende Projektmappe hinzufügen|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Hinweis:** Visual Studio wird davon ausgegangen, dass eine Projektmappe direkt untergeordnetes Element von der (Süd).|  
   

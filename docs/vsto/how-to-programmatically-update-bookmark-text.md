@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833017"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Gewusst wie: Programmgesteuertes Aktualisieren von Lesezeichentext
   Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -31,15 +31,15 @@ ms.locfileid: "35671954"
   
  Das Lesezeichenobjekt kann einem von zwei Typen entsprechen:  
   
--   Einem <xref:Microsoft.Office.Tools.Word.Bookmark>-Hoststeuerelement.  
+- Einem <xref:Microsoft.Office.Tools.Word.Bookmark>-Hoststeuerelement.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente erweitern systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte, indem sie die Datenbindung aktivieren und Ereignisse verfügbar machen. Weitere Informationen zu Hoststeuerelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).  
+   <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente erweitern systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte, indem sie die Datenbindung aktivieren und Ereignisse verfügbar machen. Weitere Informationen zu Hoststeuerelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).  
   
--   Einem systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt.  
+- Einem systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte verfügen über keine Ereignisse oder Datenbindungsfunktionen.  
+   <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte verfügen über keine Ereignisse oder Datenbindungsfunktionen.  
   
- Wenn Sie einem Lesezeichen Text zuordnen, unterscheidet sich das Verhalten zwischen <xref:Microsoft.Office.Interop.Word.Bookmark> und <xref:Microsoft.Office.Tools.Word.Bookmark>. Weitere Informationen finden Sie unter [Bookmark-Steuerelement](../vsto/bookmark-control.md).  
+  Wenn Sie einem Lesezeichen Text zuordnen, unterscheidet sich das Verhalten zwischen <xref:Microsoft.Office.Interop.Word.Bookmark> und <xref:Microsoft.Office.Tools.Word.Bookmark>. Weitere Informationen finden Sie unter [Bookmark-Steuerelement](../vsto/bookmark-control.md).  
   
 ## <a name="use-host-controls"></a>Verwenden von Hoststeuerelementen  
   

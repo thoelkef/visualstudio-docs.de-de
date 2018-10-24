@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e61c86e553672ac619f71a27f8a651b417700c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825490"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Gewusst wie: Erstellen eines 3D-Basismodells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,37 +49,37 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ba
   
 #### <a name="to-create-a-simplified-3-d-model-of-a-house"></a>So erstellen Sie ein vereinfachtes 3D-Modell eines Hauses  
   
-1.  Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).  
+1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).  
   
-2.  Fügen Sie einen Würfel in die Szene ein. Wählen Sie im Fenster **Toolbox** unter **Formen** **Würfel** aus und verschieben Sie ihn auf die Entwurfsoberfläche.  
+2. Fügen Sie einen Würfel in die Szene ein. Wählen Sie im Fenster **Toolbox** unter **Formen** **Würfel** aus und verschieben Sie ihn auf die Entwurfsoberfläche.  
   
-3.  Wechseln Sie zur Flächenauswahl. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche auswählen**.  
+3. Wechseln Sie zur Flächenauswahl. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche auswählen**.  
   
-4.  Unterteilen Sie die Oberseite des Würfels. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn auswählen zu können. Klicken Sie anschließend auf die Oberfläche des Würfels, um die Anfangsfläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche des Würfels hinzugefügt, die ihn in vier gleichgroße Teile aufteilen.  
+4. Unterteilen Sie die Oberseite des Würfels. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn auswählen zu können. Klicken Sie anschließend auf die Oberfläche des Würfels, um die Anfangsfläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche des Würfels hinzugefügt, die ihn in vier gleichgroße Teile aufteilen.  
   
-     ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx-model-demo-house-subdiv.png "gfx_model_demo_house_subdiv")  
+    ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx-model-demo-house-subdiv.png "gfx_model_demo_house_subdiv")  
   
-5.  Extrudieren Sie zwei angrenzende Seiten des Würfels, z.B. die Vorderseite und die rechte Seite. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn zu aktivieren, und klicken Sie anschließend auf eine Seite des Würfels. Drücken und halten Sie die STRG-Taste gedrückt, klicken Sie auf eine andere Seite des Würfels, die an der zuerst ausgewählten Seite angrenzt, und klicken anschließend auf der Symbolleiste des Editors auf **Fläche extrudieren**.  
+5. Extrudieren Sie zwei angrenzende Seiten des Würfels, z.B. die Vorderseite und die rechte Seite. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn zu aktivieren, und klicken Sie anschließend auf eine Seite des Würfels. Drücken und halten Sie die STRG-Taste gedrückt, klicken Sie auf eine andere Seite des Würfels, die an der zuerst ausgewählten Seite angrenzt, und klicken anschließend auf der Symbolleiste des Editors auf **Fläche extrudieren**.  
   
-     ![Die Würfelseiten wurden extrudiert ](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")  
+    ![Die Würfelseiten wurden extrudiert ](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")  
   
-6.  Erweitern Sie eine der Extrusionen. Wählen Sie eine der Flächen aus, die sie gerade extrudiert haben, und klicken in der Symbolleiste des Modell-Editors anschließend auf das Tool **Verschieben**. Bewegen Sie den Verschiebungsmanipulator in die gleiche Richtung wie die Extrusion.  
+6. Erweitern Sie eine der Extrusionen. Wählen Sie eine der Flächen aus, die sie gerade extrudiert haben, und klicken in der Symbolleiste des Modell-Editors anschließend auf das Tool **Verschieben**. Bewegen Sie den Verschiebungsmanipulator in die gleiche Richtung wie die Extrusion.  
   
-     ![Eine Würfelseite wurde noch weiter extrudiert](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")  
+    ![Eine Würfelseite wurde noch weiter extrudiert](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")  
   
-7.  Triangulieren Sie das Modell. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Erweitert** > **Tools** > **Triangulieren**.  
+7. Triangulieren Sie das Modell. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Erweitert** > **Tools** > **Triangulieren**.  
   
-8.  Erstellen Sie das Dach des Hauses. Wechseln Sie zum Kantenauswahlmodus, indem Sie auf der Symbolleiste des Modell-Editors auf **Kante auswählen** klicken. Klicken Sie anschließend auf den Würfel, um ihn zu aktivieren. Halten Sie die STRG-Taste gedrückt, während Sie die Kanten auswählen, die hier gezeigt werden:  
+8. Erstellen Sie das Dach des Hauses. Wechseln Sie zum Kantenauswahlmodus, indem Sie auf der Symbolleiste des Modell-Editors auf **Kante auswählen** klicken. Klicken Sie anschließend auf den Würfel, um ihn zu aktivieren. Halten Sie die STRG-Taste gedrückt, während Sie die Kanten auswählen, die hier gezeigt werden:  
   
-     ![Die Kanten, die die Dachspitze bilden werden](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")  
+    ![Die Kanten, die die Dachspitze bilden werden](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")  
   
-     Nachdem die Kanten ausgewählt sind klicken sie auf der Symbolleiste des Modell-Editors auf **Verschieben** und bewegen Sie den Verschiebungsmanipulator nach oben, um das Dach des Hauses zu erstellen.  
+    Nachdem die Kanten ausgewählt sind klicken sie auf der Symbolleiste des Modell-Editors auf **Verschieben** und bewegen Sie den Verschiebungsmanipulator nach oben, um das Dach des Hauses zu erstellen.  
   
- Das Modell des vereinfachten Hauses ist abgeschlossen. Hier ist noch einmal das fertige Modell, bei dem eine flache Schattierung angewandt wurde.  
+   Das Modell des vereinfachten Hauses ist abgeschlossen. Hier ist noch einmal das fertige Modell, bei dem eine flache Schattierung angewandt wurde.  
   
- ![Das fertige Modell des vereinfachten Hauses](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
+   ![Das fertige Modell des vereinfachten Hauses](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
- Im nächsten Schritt können Sie einen Shader auf diese 3D-Modell anwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+   Im nächsten Schritt können Sie einen Shader auf diese 3D-Modell anwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md)   

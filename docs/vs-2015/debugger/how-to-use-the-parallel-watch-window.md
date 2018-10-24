@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837073"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Gewusst wie: Verwenden des parallelen Überwachungsfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, die ein Ausdruck auf mehreren Threads enthält. Jede Zeile stellt einen Thread in einer Anwendung ausgeführten dar. Allerdings wird ein Thread möglicherweise in mehreren Zeilen angezeigt werden. Genauer gesagt stellt jede Zeile einen Funktionsaufruf dar, dessen Funktionssignatur der Funktion auf dem aktuellen Stapelrahmen entspricht. Sie können die Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads kennzeichnen bzw. die Kennzeichnung aufheben, ihn einfrieren (anhalten) und reaktivieren (fortsetzen). Die folgenden Spalten werden angezeigt, der **parallele Überwachung** Fenster:  
   
--   Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  
+- Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  
   
--   Die Framespalte, in der ein Pfeil den ausgewählten Frame angibt.  
+- Die Framespalte, in der ein Pfeil den ausgewählten Frame angibt.  
   
--   Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.  
+- Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.  
   
-    > [!TIP]
-    >  Müssen Sie öffnen die **parallele Aufgabe** Fenster aus, um die Aufgabeninformationen im Anzeigen der **parallele Überwachung** Fenster.  
+  > [!TIP]
+  >  Müssen Sie öffnen die **parallele Aufgabe** Fenster aus, um die Aufgabeninformationen im Anzeigen der **parallele Überwachung** Fenster.  
   
--   Die  **\<Überwachung hinzufügen >** Spalte, in dem Sie Ausdrücke zur Überwachung eingeben können.  
+- Die  **\<Überwachung hinzufügen >** Spalte, in dem Sie Ausdrücke zur Überwachung eingeben können.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>So zeigen Sie das parallele Überwachungsfenster an  
   
