@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872279"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 ## <a name="how-to-use-models"></a>Verwenden von Modellen  
  Modelle können auf verschiedene Weise von Nutzen sein:  
   
--   Durch das Zeichnen von Modellierungsdiagrammen können Sie die Konzepte für Anforderungen, Architektur und allgemeinen Entwurf verdeutlichen. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+- Durch das Zeichnen von Modellierungsdiagrammen können Sie die Konzepte für Anforderungen, Architektur und allgemeinen Entwurf verdeutlichen. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
--   Durch das Arbeiten mit Modellen können Sie mangelnde Übereinstimmungen in den Anforderungen aufzeigen.  
+- Durch das Arbeiten mit Modellen können Sie mangelnde Übereinstimmungen in den Anforderungen aufzeigen.  
   
--   Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
+- Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
   
--   Manchmal können Sie mithilfe von Modellen Code oder andere Artefakte generieren, z. B. Datenbankschemas oder Dokumente. Beispielsweise werden die Modellierungskomponenten von [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] aus einem Modell generiert.  Weitere Informationen finden Sie unter [generieren und Konfigurieren von Apps aus Modellen](../modeling/generate-and-configure-your-app-from-models.md).  
+- Manchmal können Sie mithilfe von Modellen Code oder andere Artefakte generieren, z. B. Datenbankschemas oder Dokumente. Beispielsweise werden die Modellierungskomponenten von [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] aus einem Modell generiert.  Weitere Informationen finden Sie unter [generieren und Konfigurieren von Apps aus Modellen](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Sie können Modelle in einer Vielzahl von Prozessen verwenden: von äußerst agilen bis zu sehr förmlichen Prozessen.  
+  Sie können Modelle in einer Vielzahl von Prozessen verwenden: von äußerst agilen bis zu sehr förmlichen Prozessen.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Verwenden von Modellen zum Auflösen von Mehrdeutigkeiten  
  Die Modellierungssprache ist weniger mehrdeutig als natürliche Sprache, und sie ist zum Darstellen der Konzepte vorgesehen, die normalerweise während der Softwareentwicklung erforderlich sind.  

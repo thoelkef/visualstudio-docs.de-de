@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872433"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -95,25 +95,25 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
  Wenn Sie den Remotedebugger als Dienst konfigurieren möchten, gehen Sie wie folgt vor.
 
-1.  Suchen Sie den **Konfigurations-Assistenten für Remote Debugger** (rdbgwiz.exe). (Dies ist eine vom Remotedebugger getrennte Anwendung.) Der Konfigurations-Assistent steht nur zur Verfügung, wenn Sie die Remotetools installieren, und wird nicht mit Visual Studio installiert.
+1. Suchen Sie den **Konfigurations-Assistenten für Remote Debugger** (rdbgwiz.exe). (Dies ist eine vom Remotedebugger getrennte Anwendung.) Der Konfigurations-Assistent steht nur zur Verfügung, wenn Sie die Remotetools installieren, und wird nicht mit Visual Studio installiert.
 
-2.  Starten Sie den Konfigurations-Assistenten. Wenn die erste Seite angezeigt wird, klicken Sie auf **Weiter**.
+2. Starten Sie den Konfigurations-Assistenten. Wenn die erste Seite angezeigt wird, klicken Sie auf **Weiter**.
 
-3.  Aktivieren Sie das Kontrollkästchen **Visual Studio 2015 Remote Debugger als Dienst ausführen** .
+3. Aktivieren Sie das Kontrollkästchen **Visual Studio 2015 Remote Debugger als Dienst ausführen** .
 
-4.  Fügen Sie den Namen des Benutzerkontos und das Kennwort hinzu.
+4. Fügen Sie den Namen des Benutzerkontos und das Kennwort hinzu.
 
-     Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **Local Security Policy** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Hinzufügen des Benutzerkontos, das die **Eigenschaften** Fenster, und klicken Sie auf **OK**). Klicken Sie auf **Weiter**.
+    Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **Local Security Policy** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Hinzufügen des Benutzerkontos, das die **Eigenschaften** Fenster, und klicken Sie auf **OK**). Klicken Sie auf **Weiter**.
 
-5.  Wählen Sie den Typ des Netzwerks aus, über das die Remotetools kommunizieren sollen. Es muss mindestens ein Netzwerktyp ausgewählt werden. Wenn die Computer über eine Domäne verbunden sind, sollten Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, sollten Sie das zweite bzw. dritte Element auswählen. Klicken Sie auf **Weiter**.
+5. Wählen Sie den Typ des Netzwerks aus, über das die Remotetools kommunizieren sollen. Es muss mindestens ein Netzwerktyp ausgewählt werden. Wenn die Computer über eine Domäne verbunden sind, sollten Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, sollten Sie das zweite bzw. dritte Element auswählen. Klicken Sie auf **Weiter**.
 
-6.  Wenn der Dienst gestartet werden kann, wird **Der Konfigurations-Assistent für Visual Studio Remote Debugger wurde erfolgreich abgeschlossen**angezeigt. Wenn der Dienst nicht gestartet werden kann, wird **Fehler beim Abschließen des Assistenten zum Konfigurieren von Visual Studio Remote Debugger**angezeigt. Die Seite bietet auch Tipps, wie Sie den Dienst ans Laufen bringen können.
+6. Wenn der Dienst gestartet werden kann, wird **Der Konfigurations-Assistent für Visual Studio Remote Debugger wurde erfolgreich abgeschlossen**angezeigt. Wenn der Dienst nicht gestartet werden kann, wird **Fehler beim Abschließen des Assistenten zum Konfigurieren von Visual Studio Remote Debugger**angezeigt. Die Seite bietet auch Tipps, wie Sie den Dienst ans Laufen bringen können.
 
-7.  Klicken Sie auf **Fertig stellen**.
+7. Klicken Sie auf **Fertig stellen**.
 
- An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie zu **Systemsteuerung > Dienste** nach **Visual Studio 2015 Remote Debugger**.
+   An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie zu **Systemsteuerung > Dienste** nach **Visual Studio 2015 Remote Debugger**.
 
- Sie können auch beenden und starten Sie den Remotedebugger-Dienst von **Systemsteuerung > Dienste**.
+   Sie können auch beenden und starten Sie den Remotedebugger-Dienst von **Systemsteuerung > Dienste**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
 

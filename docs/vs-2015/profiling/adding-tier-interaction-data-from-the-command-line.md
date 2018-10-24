@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872069"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Beispiel für die Profilerstellung einer Windows-Desktopanwendung  
   
-1.  Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten. Klicken Sie auf **Start**, zeigen Sie auf **Alle Programme**, und zeigen Sie dann auf **Zubehör**. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und klicken Sie dann auf **Als Administrator ausführen**.  
+1. Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten. Klicken Sie auf **Start**, zeigen Sie auf **Alle Programme**, und zeigen Sie dann auf **Zubehör**. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und klicken Sie dann auf **Als Administrator ausführen**.  
   
-2.  Initialisieren Sie die .TIP-Umgebungsvariablen für die .NET-Profilerstellung. Geben Sie folgende Befehle ein:  
+2. Initialisieren Sie die .TIP-Umgebungsvariablen für die .NET-Profilerstellung. Geben Sie folgende Befehle ein:  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Starten Sie den Profiler. Geben Sie folgenden Befehl ein:  
+3. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Starten Sie die Anwendung mit VSPerfCmd. Geben Sie folgenden Befehl ein:  
+4. Starten Sie die Anwendung mit VSPerfCmd. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Führen Sie die Anwendung aus, um Profilerstellungsdaten zu erfassen; schließen Sie dann die Anwendung wie gewohnt.  
+5. Führen Sie die Anwendung aus, um Profilerstellungsdaten zu erfassen; schließen Sie dann die Anwendung wie gewohnt.  
   
-6.  Löschen Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:  
+6. Löschen Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Weitere Informationen finden Sie unter [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Weitere Informationen finden Sie unter [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Erstellen von Dienstprofilen  
  Um Dienstprofile, einschließlich [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen, zu erstellen,verwenden Sie die Option **VSPerfClrEnv /GlobalInteractionOn**, um Umgebungsvariablen festzulegen, und verwenden Sie die Option **VSPerfClrEnv /GlobalInteractionOff**, um diese zu entfernen.  
@@ -95,33 +95,33 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
 ##### <a name="profiling-a-windows-service-example"></a>Profilerstellung für einen Windows-Dienst  
   
-1.  Installieren Sie den Dienst, falls notwendig.  
+1. Installieren Sie den Dienst, falls notwendig.  
   
-2.  Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten. Klicken Sie auf **Start**, zeigen Sie auf **Alle Programme**, und zeigen Sie dann auf **Zubehör**. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und klicken Sie dann auf **Als Administrator ausführen**.  
+2. Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten. Klicken Sie auf **Start**, zeigen Sie auf **Alle Programme**, und zeigen Sie dann auf **Zubehör**. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und klicken Sie dann auf **Als Administrator ausführen**.  
   
-3.  Initialisieren Sie die .NET-Umgebungsvariablen für die Profilerstellung. Geben Sie folgenden Befehl ein:  
+3. Initialisieren Sie die .NET-Umgebungsvariablen für die Profilerstellung. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Initialisieren Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:  
+4. Initialisieren Sie die TIP-Umgebungsvariablen. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Starten Sie den Computer neu, damit die Umgebungsvariablen registriert werden.  
+5. Starten Sie den Computer neu, damit die Umgebungsvariablen registriert werden.  
   
-6.  Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten.  
+6. Öffnen Sie die Eingabeaufforderungsfenster mit Administratorrechten.  
   
-7.  Starten Sie den Profiler. Geben Sie folgenden Befehl ein:  
+7. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  Starten Sie den Dienst bei Bedarf.  
+8. Starten Sie den Dienst bei Bedarf.  
   
 9. Fügen Sie den Profiler an den Dienst an. Geben Sie folgenden Befehl ein:  
   
@@ -143,11 +143,11 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
 13. Starten Sie den Computer neu, damit die gelöschten Umgebungsdaten registriert werden.  
   
- Weitere Informationen finden Sie in einem der folgenden Themen:  
+    Weitere Informationen finden Sie in einem der folgenden Themen:  
   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)  
+    [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfASPNETCmd  
  Mit dem Befehlszeilentool VSPerfASPNETCmd können Sie problemlos Profile für [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen erstellen. Verglichen mit dem Befehlszeilentool **VSPerfCmd** stehen weniger Optionen zur Verfügung, es müssen keine Umgebungsvariablen festgelegt werden, und ein Neustart des Computers ist nicht erforderlich. Die Features von VSPerfASPNETCmd ermöglichen ein besonders einfaches Erfassen von Ebeneninteraktionsdaten.  

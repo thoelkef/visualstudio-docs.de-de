@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871289"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer-Administratorhandbuch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
  Anforderungen:  
   
--   Clientcomputer müssen Zugriff auf das Internet haben.  
+- Clientcomputer müssen Zugriff auf das Internet haben.  
   
--   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
+- Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
   
- Zu beachten:  
+  Zu beachten:  
   
--   Die Hilfe bleibt standardmäßig online gespeichert.  
+- Die Hilfe bleibt standardmäßig online gespeichert.  
   
-    > [!TIP]
-    >  Sie können die standardmäßige Quelle für Hilfe ändern, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Sie können die standardmäßige Quelle für Hilfe ändern, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
--   Clients werden weiterhin aufgefordert, den grundlegenden Hilfeinhalt beim ersten Start von Visual Studio zu installieren. Sie können diese Eingabeaufforderung deaktivieren, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
+- Clients werden weiterhin aufgefordert, den grundlegenden Hilfeinhalt beim ersten Start von Visual Studio zu installieren. Sie können diese Eingabeaufforderung deaktivieren, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
 ### <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden englische Inhalte für Visual Studio auf einem Clientcomputer installiert.  
@@ -78,47 +78,47 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
  Anforderungen:  
   
--   Der Computer, auf dem Sie den Inhalt installieren, muss mit dem Internet verbunden sein.  
+- Der Computer, auf dem Sie den Inhalt installieren, muss mit dem Internet verbunden sein.  
   
--   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
+- Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
   
-    > [!TIP]
-    >  Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
- Zu beachten:  
+  Zu beachten:  
   
--   Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+- Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
--   Die Hilfe bleibt standardmäßig online gespeichert.  
+- Die Hilfe bleibt standardmäßig online gespeichert.  
   
--   Clients werden weiterhin aufgefordert, den grundlegenden Hilfeinhalt beim ersten Start von Visual Studio zu installieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+- Clients werden weiterhin aufgefordert, den grundlegenden Hilfeinhalt beim ersten Start von Visual Studio zu installieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>Erstellen der Inhalte  
  Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen Visual Studio-Inhalte auf dem Zielcomputer deinstallieren.  
   
 ##### <a name="to-uninstall-local-help"></a>So deinstallieren Sie die lokale Hilfe  
   
-1.  Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
+1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
   
-2.  Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Visual Studio-Dokumenten.  
+2. Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Visual Studio-Dokumenten.  
   
-3.  Klicken Sie neben den einzelnen Unterelementen auf **Entfernen**.  
+3. Klicken Sie neben den einzelnen Unterelementen auf **Entfernen**.  
   
-4.  Wählen Sie **starten** deinstallieren  
+4. Wählen Sie **starten** deinstallieren  
   
-5.  Navigieren Sie zu *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12, und stellen Sie sicher, dass der Ordner nur die Datei "catalogtype.xml" enthält.  
+5. Navigieren Sie zu *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12, und stellen Sie sicher, dass der Ordner nur die Datei "catalogtype.xml" enthält.  
   
- Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.  
+   Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.  
   
 ##### <a name="to-download-the-content"></a>So laden Sie die Inhalte herunter  
   
-1.  Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
+1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
   
-2.  Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Dokumentationen, die Sie herunterladen möchten und wählen Sie dann **hinzufügen**.  
+2. Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Dokumentationen, die Sie herunterladen möchten und wählen Sie dann **hinzufügen**.  
   
-3.  Wählen Sie **Start** aus.  
+3. Wählen Sie **Start** aus.  
   
- Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.  
+   Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.  
   
 ##### <a name="to-package-the-content"></a>So verpacken Sie die Inhalte  
   

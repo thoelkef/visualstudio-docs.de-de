@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented | Microsoft Docs
+title: IDebugClassField::EnumInterfacesImplemented | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a8a313be7c24b4e3778a4e4890eaf2c5eb67b4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9119668cf4eb8ddb6196aec774acf171db04e868
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872680"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstellen.  
@@ -44,10 +44,10 @@ int EnumInterfacesImplemented(
  [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der implementierten Schnittstellen darstellt. Gibt einen null-Wert zurück, wenn keine Schnittstellen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei Erfolg S_OK zurück oder gibt "S_FALSE" zurück, wenn es keine von dieser Klasse implementierten Schnittstellen sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn keine Schnittstellen implementiert, die für diese Klasse vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Jedes Element der Enumeration ist ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt, das eine Schnittstelle beschreibt. Beachten Sie, die nicht verwaltete [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] Code verwendet keine Schnittstellen als diskrete Entität, damit diese Methode immer einen null-Wert gibt bei nicht verwalteten [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] Code.  
+ Jedes Element der Enumeration ist ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das eine Schnittstelle beschreibt. Beachten Sie, die nicht verwaltete [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] Code verwendet keine Schnittstellen als diskrete Entität, damit diese Methode immer einen null-Wert gibt für nicht verwaltete [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] Code.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
+title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ae2716fc76d77d1c670bb206168826c66c48ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41add9a334dd6e78a476134845db7d31664755c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871081"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Initialisiert die Quelldaten für dieses Objekt und gibt ein Objekt, das die ursprünglichen Daten enthält.  
@@ -44,10 +44,10 @@ int InitSourceDataProvider(
  [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Objekt  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode führt nach Belieben ist erforderlich, um ein Objekt zu initialisieren, damit es zurückgeben kann ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Schnittstelle auf die Daten des Objekts. Dadurch können Daten angezeigt und, wenn zugelassen wird, geändert werden, indem eine Schnellansicht Typ des Objekts.  
+ Diese Methode führt, was ist erforderlich, ein Objekt zu initialisieren, damit es zurückgeben kann ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Schnittstelle für die Daten des Objekts. Dadurch können Daten anzeigen und, wenn zulässig, geändert werden, indem eine typschnellansicht des Objekts.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

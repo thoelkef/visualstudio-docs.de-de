@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872654"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 Überschreibt die Multi-Sample Anti-Aliasing (MSAA)-Einstellungen auf allen Renderzielen und Swapketten.  
@@ -33,23 +33,23 @@ ms.locfileid: "37433314"
 ## <a name="remarks"></a>Hinweise  
  Diese Varianten überschreiben die Samplinganzahl- und die Samplingqualitäts-Argumente auf Aufrufen von `ID3DDevice::CreateTexture2D`, die Renderziele erstellen. Diese Parameter werden insbesondere überschrieben, wenn:  
   
--   Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt ein Renderziel mit folgenden Eigenschaften beschreibt:  
+- Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt ein Renderziel mit folgenden Eigenschaften beschreibt:  
   
-    -   Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
+  -   Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
   
-    -   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
+  -   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
   
-    -   Das CPUAccessFlags-Member ist auf 0 gesetzt.  
+  -   Das CPUAccessFlags-Member ist auf 0 gesetzt.  
   
-    -   Das MipLevels-Member ist auf 1 gesetzt.  
+  -   Das MipLevels-Member ist auf 1 gesetzt.  
   
--   Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.  
+- Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.  
   
- Wenn für das Member D3D11_TEXTURE2D_DESC::BindFlags das Flag D3D_BIND_SHADER_RESOURCE oder das Flag D3D11_BIND_UNORDERED_ACCESS gesetzt ist, werden zwei Versionen der Textur erstellt: In der ersten sind diese Flags für eine Verwendung als Renderziel gelöscht, und die zweite ist eine Nicht-MSAA-Textur, in der diese Flags intakt sind und die als Auflösungspuffer für die erste Version erstellt wird. Dies ist notwendig, da die Verwendung einer MSAA-Textur als Shaderressource oder für ungeordneten Zugriff wahrscheinlich nicht gültig ist - ein Shader, der auf sie einwirkt, würde unkorrekte Ergebnisse erzeugen, da er eine Nicht-MSAA-Textur erwarten würde. Wenn die Variante die sekundäre Nicht-MSAA-Textur erstellt hat, wird immer dann, wenn das MSAA-Renderziel aus dem Gerätekontext gelöst wird, sein Inhalt in die Nicht-MSAA-Textur aufgelöst. Auf ähnliche Weise wird, wenn das MSAA-Renderziel als Shaderressource gebunden werden sollte oder in einer Ansicht mit ungeordnetem Ziel verwendet wird, stattdessen die Nicht-MSAA-Textur gebunden.  
+  Wenn für das Member D3D11_TEXTURE2D_DESC::BindFlags das Flag D3D_BIND_SHADER_RESOURCE oder das Flag D3D11_BIND_UNORDERED_ACCESS gesetzt ist, werden zwei Versionen der Textur erstellt: In der ersten sind diese Flags für eine Verwendung als Renderziel gelöscht, und die zweite ist eine Nicht-MSAA-Textur, in der diese Flags intakt sind und die als Auflösungspuffer für die erste Version erstellt wird. Dies ist notwendig, da die Verwendung einer MSAA-Textur als Shaderressource oder für ungeordneten Zugriff wahrscheinlich nicht gültig ist - ein Shader, der auf sie einwirkt, würde unkorrekte Ergebnisse erzeugen, da er eine Nicht-MSAA-Textur erwarten würde. Wenn die Variante die sekundäre Nicht-MSAA-Textur erstellt hat, wird immer dann, wenn das MSAA-Renderziel aus dem Gerätekontext gelöst wird, sein Inhalt in die Nicht-MSAA-Textur aufgelöst. Auf ähnliche Weise wird, wenn das MSAA-Renderziel als Shaderressource gebunden werden sollte oder in einer Ansicht mit ungeordnetem Ziel verwendet wird, stattdessen die Nicht-MSAA-Textur gebunden.  
   
- Diese Varianten überschreiben auch MSAA-Einstellungen auf allen durch Verwendung von `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` und `ID3D11CreateDeviceAndSwapChain` erstellten Swapketten.  
+  Diese Varianten überschreiben auch MSAA-Einstellungen auf allen durch Verwendung von `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` und `ID3D11CreateDeviceAndSwapChain` erstellten Swapketten.  
   
- Der Nettoeffekt dieser Änderungen ist, dass das gesamte Rendering in ein MSAA-Renderziel geht, aber wenn Ihre Anwendung eines dieser Renderziele oder einen dieser Swapketten-Puffer als Ansicht für eine Shaderressource oder für einen ungeordneten Zugang verwendet, dann werden die Daten aus der aufgelösten MSAA-Kopie des Renderziels gesampelt.  
+  Der Nettoeffekt dieser Änderungen ist, dass das gesamte Rendering in ein MSAA-Renderziel geht, aber wenn Ihre Anwendung eines dieser Renderziele oder einen dieser Swapketten-Puffer als Ansicht für eine Shaderressource oder für einen ungeordneten Zugang verwendet, dann werden die Daten aus der aufgelösten MSAA-Kopie des Renderziels gesampelt.  
   
 ## <a name="restrictions-and-limitations"></a>Einschränkungen  
  In Direct3D11 sind MSAA-Texturen mehr eingeschränkt als Nicht-MSAA-Texturen. Sie können z. B. `ID3D11DeviceContext::UpdateSubresource` nicht auf einer MSAA-Textur aufrufen, und der Aufruf von `ID3D11DeviceContext::CopySubresourceRegion` schlägt fehl, wenn die Samplinganzahl und die Samplingqualität der Quellressource und der Zielressource nicht übereinstimmen, was passieren kann, wenn die Variante die MSAA-Einstellungen einer, aber nicht der anderen Ressource überschreibt.  

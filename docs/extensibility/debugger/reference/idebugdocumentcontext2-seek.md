@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft Docs
+title: IDebugDocumentContext2::Seek | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ba99005bfe64782bcbaf655e659ae015a6d5c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41db3997ef078976a9e419e014ae9717d2d3d019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873538"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 Verschiebt den Dokumentenkontext durch eine angegebene Anzahl von Anweisungen oder Zeilen an.  
@@ -43,13 +43,13 @@ int Seek(
   
 #### <a name="parameters"></a>Parameter  
  `nCount`  
- [in] Die Anzahl der Anweisungen oder Zeilen, je nach Dokumentenkontext springen.  
+ [in] Die Anzahl der Anweisungen oder Zeilen, je nach Dokumentenkontext verschieben.  
   
  `ppDocContext`  
- [out] Gibt eine neue [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt mit der die neue Position.  
+ [out] Gibt eine neue [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt mit der die neue Position.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
