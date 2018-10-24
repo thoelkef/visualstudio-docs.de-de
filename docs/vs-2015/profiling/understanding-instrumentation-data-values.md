@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949232"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Grundlagen zu Instrumentierungsdatenwerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ Die Profilerstellungsmethode *Instrumentation* von [!INCLUDE[vsprvs](../includes
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Die Instrumentierungsmethode fügt Code am Anfang und Ende der Zielfunktionen in der profilierten Binärdatei ein sowie vor und nach jedem Aufruf von diesen Funktionen an andere Funktionen. Der eingefügte Code zeichnet Folgendes auf:  
+  Die Instrumentierungsmethode fügt Code am Anfang und Ende der Zielfunktionen in der profilierten Binärdatei ein sowie vor und nach jedem Aufruf von diesen Funktionen an andere Funktionen. Der eingefügte Code zeichnet Folgendes auf:  
   
--   Das Intervall zwischen diesem Auflistungsereignis und dem vorherigen.  
+- Das Intervall zwischen diesem Auflistungsereignis und dem vorherigen.  
   
--   Ob das Betriebssystem während des Intervalls einen Vorgang ausgeführt hat. Das Betriebssystem könnte z.B. von der Festplatte lesen oder auf die Festplatte schreiben oder zwischen dem Zielthread und einem anderen Thread in einem anderen Prozess wechseln.  
+- Ob das Betriebssystem während des Intervalls einen Vorgang ausgeführt hat. Das Betriebssystem könnte z.B. von der Festplatte lesen oder auf die Festplatte schreiben oder zwischen dem Zielthread und einem anderen Thread in einem anderen Prozess wechseln.  
   
- **Voraussetzungen**  
+  **Voraussetzungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Für jedes Intervall rekonstruiert die Profileranalyse die Aufrufliste, die am Ende des Intervalls vorhanden war. Eine Aufrufliste ist die Liste der Funktionen, die zu einem bestimmten Zeitpunkt auf einem Prozessor aktiv sind. Nur eine Funktion (die aktuelle Funktion) führt Code aus. Die anderen Funktionen sind die Kette von Funktionsaufrufen, die zum Aufruf der aktuellen Funktion (der Aufrufliste) geführt haben.  
+  Für jedes Intervall rekonstruiert die Profileranalyse die Aufrufliste, die am Ende des Intervalls vorhanden war. Eine Aufrufliste ist die Liste der Funktionen, die zu einem bestimmten Zeitpunkt auf einem Prozessor aktiv sind. Nur eine Funktion (die aktuelle Funktion) führt Code aus. Die anderen Funktionen sind die Kette von Funktionsaufrufen, die zum Aufruf der aktuellen Funktion (der Aufrufliste) geführt haben.  
   
- Für jede Funktion in der Aufrufliste fügt die Profileranalyse beim Aufzeichnen des Intervalls das Intervall zu einem oder mehreren von vier Datenwerten für die Funktion hinzu. Die Analyse fügt das Intervall einem Datenwert für eine Funktion anhand von zwei Kriterien hinzu:  
+  Für jede Funktion in der Aufrufliste fügt die Profileranalyse beim Aufzeichnen des Intervalls das Intervall zu einem oder mehreren von vier Datenwerten für die Funktion hinzu. Die Analyse fügt das Intervall einem Datenwert für eine Funktion anhand von zwei Kriterien hinzu:  
   
--   Ob das Intervall im Code der Funktion oder in einer *untergeordneten Funktion* (einer durch die Funktion aufgerufenen Funktion) aufgetreten ist.  
+- Ob das Intervall im Code der Funktion oder in einer *untergeordneten Funktion* (einer durch die Funktion aufgerufenen Funktion) aufgetreten ist.  
   
--   Ob ein Betriebssystemereignis im Intervall aufgetreten ist.  
+- Ob ein Betriebssystemereignis im Intervall aufgetreten ist.  
   
- Die Datenwerte für ein Intervall einer Funktion oder eines Datenbereichs heißen *Verstrichene inklusive Zeit*, *Verstrichene exklusive Zeit*, *Inklusive Anwendungszeit* und *Exklusive Anwendungszeit*:  
+  Die Datenwerte für ein Intervall einer Funktion oder eines Datenbereichs heißen *Verstrichene inklusive Zeit*, *Verstrichene exklusive Zeit*, *Inklusive Anwendungszeit* und *Exklusive Anwendungszeit*:  
   
--   Alle Intervalle einer Funktion werden dem Datenwert „Verstrichene inklusive Zeit“ hinzugefügt.  
+- Alle Intervalle einer Funktion werden dem Datenwert „Verstrichene inklusive Zeit“ hinzugefügt.  
   
--   Wenn das Intervall im Code der Funktion und nicht in einer untergeordneten Funktion aufgetreten ist, wird das Intervall dem Datenwert „Verstrichene exklusive Zeit“ der Funktion hinzugefügt.  
+- Wenn das Intervall im Code der Funktion und nicht in einer untergeordneten Funktion aufgetreten ist, wird das Intervall dem Datenwert „Verstrichene exklusive Zeit“ der Funktion hinzugefügt.  
   
--   Wenn im Intervall kein Betriebssystemereignis aufgetreten ist, wird das Intervall dem Datenwert „Inklusive Anwendungszeit“ hinzugefügt.  
+- Wenn im Intervall kein Betriebssystemereignis aufgetreten ist, wird das Intervall dem Datenwert „Inklusive Anwendungszeit“ hinzugefügt.  
   
--   Wenn im Intervall kein Betriebssystemereignis aufgetreten ist und das Intervall bei der direkten Ausführung des Funktionscodes (d.h. nicht in einer untergeordneten Funktion) aufgetreten ist, wird das Intervall dem Datenwert „Exklusive Anwendungszeit“ hinzugefügt.  
+- Wenn im Intervall kein Betriebssystemereignis aufgetreten ist und das Intervall bei der direkten Ausführung des Funktionscodes (d.h. nicht in einer untergeordneten Funktion) aufgetreten ist, wird das Intervall dem Datenwert „Exklusive Anwendungszeit“ hinzugefügt.  
   
- In den Berichten der Profilerstellungstools werden die Gesamtwerte der Funktionen in der Profilerstellungssitzung sowie die Prozesse, Threads und binären Dateien der Sitzung aggregiert.  
+  In den Berichten der Profilerstellungstools werden die Gesamtwerte der Funktionen in der Profilerstellungssitzung sowie die Prozesse, Threads und binären Dateien der Sitzung aggregiert.  
   
 ## <a name="elapsed-inclusive-values"></a>Werte für „Verstrichene inklusive Zeit“  
  Die Gesamtzeit, die für die Ausführung einer Funktion und deren untergeordneter Funktionen aufgewendet wurde.  

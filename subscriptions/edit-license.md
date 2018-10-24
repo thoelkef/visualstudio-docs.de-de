@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d5d781f682372203e118fc6aaf1bfb51ea8bf652
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 588568521b52b6c21c93b6488829b5055d12048b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942464"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 
@@ -25,7 +25,7 @@ Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben 
 
 Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. Sie können ebenfalls auf die Zeile des Abonnenten im Raster doppelklicken, um das Bearbeitungsfenster zu öffnen.
 > [!div class="mx-imgBorder"]
-> ![Auswählen des zu bearbeitenden Abonnenten](_img\edit-license\select-subscriber.png)
+> ![Auswählen des zu bearbeitenden Abonnenten](_img/edit-license/select-subscriber.png)
 
 Sie können den Vornamen, den Nachnamen, das Land, die Sprache und die Downloads des Abonnenten aktualisieren. Bearbeiten Sie die Informationen des Abonnenten, und klicken Sie dann auf **Speichern**.
 
@@ -39,17 +39,17 @@ Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearb
    > [!IMPORTANT]
    > Abonnementebenen (d.h. Enterprise, Professional usw.) und Abonnement-GUIDs können nicht geändert werden.  Wenn Sie etwas hochladen möchten und diese Elemente verändert wurden, schlägt der Upload fehl.  
 
-1.  Navigieren Sie zur Registerkarte „Abonnenten“, um mehrere Abonnenten gleichzeitig zu bearbeiten. Klicken Sie im oberen Bereich des Menübands auf **Massenbearbeitung**. 
+1. Navigieren Sie zur Registerkarte „Abonnenten“, um mehrere Abonnenten gleichzeitig zu bearbeiten. Klicken Sie im oberen Bereich des Menübands auf **Massenbearbeitung**. 
 
-2.  Die Massenbearbeitung verwendet eine Excel-Vorlage, um Änderungen an Abonnenteninformationen vorzunehmen. Klicken Sie im Feld „Massenbearbeitung“ auf **Export this Excel** (Diese Excel-Datei exportieren), um die aktuelle Liste der Abonnenten einschließlich aller Informationen herunterzuladen. 
-    > [!div class="mx-imgBorder"]
-    > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img\edit-license\edit-license-bulk-edit-export.png)
+2. Die Massenbearbeitung verwendet eine Excel-Vorlage, um Änderungen an Abonnenteninformationen vorzunehmen. Klicken Sie im Feld „Massenbearbeitung“ auf **Export this Excel** (Diese Excel-Datei exportieren), um die aktuelle Liste der Abonnenten einschließlich aller Informationen herunterzuladen. 
+   > [!div class="mx-imgBorder"]
+   > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img/edit-license/edit-license-bulk-edit-export.png)
 
-3.  Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload sollten Sie **die Abonnementebene oder Abonnement-GUID nicht bearbeiten**, da dies dazu führt, dass der Upload fehlschlägt. 
+3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload sollten Sie **die Abonnementebene oder Abonnement-GUID nicht bearbeiten**, da dies dazu führt, dass der Upload fehlschlägt. 
 
-4.  Wechseln Sie zum Administratorportal für Visual Studio-Abonnements, und klicken Sie im Dialogfeld „Massenbearbeitung“ auf **Durchsuchen**. Wählen Sie die Excel-Datei aus, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt.
-    > [!div class="mx-imgBorder"]    
-    > ![Bearbeiten einer Lizenz: Massenbearbeitungen – Dateiupload](_img\edit-license\edit-license-bulk-file-upload1.png)
+4. Wechseln Sie zum Administratorportal für Visual Studio-Abonnements, und klicken Sie im Dialogfeld „Massenbearbeitung“ auf **Durchsuchen**. Wählen Sie die Excel-Datei aus, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt.
+   > [!div class="mx-imgBorder"]    
+   > ![Bearbeiten einer Lizenz: Massenbearbeitungen – Dateiupload](_img/edit-license/edit-license-bulk-file-upload1.png)
 
-5.  Sobald Sie die Datei hochgeladen haben, wird Ihnen eine Benachrichtigung angezeigt, dass der Upload erfolgreich war. Jetzt sind Ihre Änderungen in den Abonnenteninformationen zu enthalten. 
+5. Sobald Sie die Datei hochgeladen haben, wird Ihnen eine Benachrichtigung angezeigt, dass der Upload erfolgreich war. Jetzt sind Ihre Änderungen in den Abonnenteninformationen zu enthalten. 
 

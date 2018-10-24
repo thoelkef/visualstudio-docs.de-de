@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_typeids | Microsoft Docs'
+title: 'Idiasymbol:: Get_typeids | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ad4aae54096ea2fdcbcac1a68d32fc3b386ad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942594"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Ruft ein Array von Werten compilerspezifisch Bezeichner für dieses Symbol ab.  
+Ruft ein Array von Compiler-spezifischer Typ-ID-Werten für dieses Symbol ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,13 +42,13 @@ HRESULT get_typeIds (
  [out] Gibt die Anzahl der `typeIds` geschrieben, oder wenn `typeIds` ist `NULL`, klicken Sie dann die Gesamtzahl der Typ-IDs zur Verfügung.  
   
  `typeIds[]`  
- [out] Ein Array, das mit dem Typ-IDs ausgefüllt werden.  
+ [out] Ein Array, das sich mit dem Typ-IDs gefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

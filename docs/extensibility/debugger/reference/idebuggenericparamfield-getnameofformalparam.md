@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetNameOfFormalParam | Microsoft Docs
+title: IDebugGenericParamField::GetNameOfFormalParam | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f810c857793e02357df7057b5dd0b0c5a2d76f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93a5faa477534f5572bcc8d548a2399a414698f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949570"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
-Ruft den Namen dieses generischen Parameters ab.  
+Ruft den Namen dieser generische Parameter ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int GetNameOfFormalParam (
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Der Name dieses generischen Parameters.  
+ [out] Name der dieser generische Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)  
