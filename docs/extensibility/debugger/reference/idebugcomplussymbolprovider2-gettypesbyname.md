@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
+title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098c04615629b844fae8022058d47455db9cd98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882435"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Ruft einen Typ mit dem angegebenen Namen ab.  
@@ -50,16 +50,16 @@ int GetTypesByName(
  [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.  
   
  `ppEnum`  
- [out] Ein Enumerator, der den Typ oder die Typen mit dem angegebenen Namen enthält.  
+ [out] Ein Enumerator, der den Typ oder Typen mit dem angegebenen Namen enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Bei generischen Typen den Namen, sehen sich für "Liste\<Int >" oder "Liste\<" Int "," Int > "wäre"Liste". Wenn in mehreren Modulen, Typen mit demselben Namen angezeigt werden die `ppEnum` des Installationsparameters für alle Kopien enthält. Müssen Sie [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
+ Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter enthält alle Kopien. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

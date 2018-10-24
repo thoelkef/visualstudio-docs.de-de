@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883069"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren von Text beliebiger Art. Sie können Textvorlagen verwenden, um Text zu generieren, zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit aus, um einige der Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellte "Gewusst...?" Fragen.
@@ -42,28 +42,28 @@ Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren 
 ### <a name="read-another-project-file-from-a-template"></a>Lesen Sie eine andere Projektdatei aus einer Vorlage
  Um eine Datei aus demselben Visual Studio-Projekt als Vorlage zu lesen:
 
--   Fügen Sie `hostSpecific="true"` in die `<#@template#>`-Direktive ein.
+-   Fügen Sie `hostSpecific="true"` in die `<#@template#>`-Anweisung ein.
 
      Verwenden Sie in Ihrem Code `this.Host.ResolvePath(filename)` zum Abrufen des vollständigen Pfads der Datei.
 
 ### <a name="invoke-methods-from-a-template"></a>Aufrufen von Methoden aus einer Vorlage
  Wenn die Methoden, z. B. im Standard vorhanden [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Klassen:
 
--   Verwenden der \<#@assembly#> Richtlinie zum Laden der Assembly, und verwenden Sie \<#@import#> um den Namespacekontext einzurichten. Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).
+- Verwenden der \<#@assembly#> Richtlinie zum Laden der Assembly, und verwenden Sie \<#@import#> um den Namespacekontext einzurichten. Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).
 
-     Wenn Sie häufig der gleichen Assembly mithilfe und-Direktiven Import, sollten Sie einen anweisungsprozessor schreiben. In den einzelnen Vorlagen können Sie des anweisungsprozessors komplizierter, aufrufen, die die Assemblys und der Model-Dateien laden und Festlegen des Kontexts des Namespace können. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
+   Wenn Sie häufig der gleichen Assembly mithilfe und-Direktiven Import, sollten Sie einen anweisungsprozessor schreiben. In den einzelnen Vorlagen können Sie des anweisungsprozessors komplizierter, aufrufen, die die Assemblys und der Model-Dateien laden und Festlegen des Kontexts des Namespace können. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
- Wenn Sie die Methoden selbst schreiben:
+  Wenn Sie die Methoden selbst schreiben:
 
--   Wenn Sie eine Laufzeit-Textvorlage schreiben, Schreiben Sie eine partielle Klassendefinition, die den gleichen Namen wie die Laufzeit-Textvorlage. Fügen Sie die zusätzlichen Methoden in dieser Klasse hinzu.
+- Wenn Sie eine Laufzeit-Textvorlage schreiben, Schreiben Sie eine partielle Klassendefinition, die den gleichen Namen wie die Laufzeit-Textvorlage. Fügen Sie die zusätzlichen Methoden in dieser Klasse hinzu.
 
--   Schreiben Sie ein Klassenfunktionskontrollblock `<#+ ... #>` in dem Sie Methoden, Eigenschaften und private Klassen deklarieren können. Wenn die Textvorlage kompiliert wird, wird sie auf eine Klasse umgewandelt. Die Standardkontrollblöcke `<#...#>` Text werden an eine einzelne Methode transformiert und Klassenfunktionsblöcke werden als separate Elemente eingefügt. Weitere Informationen finden Sie unter [Kontrollblöcke für Textvorlagen](../modeling/text-template-control-blocks.md).
+- Schreiben Sie ein Klassenfunktionskontrollblock `<#+ ... #>` in dem Sie Methoden, Eigenschaften und private Klassen deklarieren können. Wenn die Textvorlage kompiliert wird, wird sie auf eine Klasse umgewandelt. Die Standardkontrollblöcke `<#...#>` Text werden an eine einzelne Methode transformiert und Klassenfunktionsblöcke werden als separate Elemente eingefügt. Weitere Informationen finden Sie unter [Kontrollblöcke für Textvorlagen](../modeling/text-template-control-blocks.md).
 
-     Methoden, die definiert, wie Funktionen auch eingebettete Textblöcke enthalten können.
+   Methoden, die definiert, wie Funktionen auch eingebettete Textblöcke enthalten können.
 
-     Sie Klassenfunktionen in einer separaten Datei, die Sie ggf. `<#@include#>` in eine oder mehrere Vorlagendateien.
+   Sie Klassenfunktionen in einer separaten Datei, die Sie ggf. `<#@include#>` in eine oder mehrere Vorlagendateien.
 
--   Schreiben Sie die Methoden in einer separaten Assembly (Klassenbibliothek), und rufen Sie sie aus Ihrer Vorlage. Verwenden der `<#@assembly#>` Direktive, um die Assembly zu laden und `<#@import#>` um den Namespacekontext einzurichten. Beachten Sie, um die Assembly neu erstellen, während Sie Debuggen, müssen Sie möglicherweise beenden und starten Sie Visual Studio neu. Weitere Informationen finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).
+- Schreiben Sie die Methoden in einer separaten Assembly (Klassenbibliothek), und rufen Sie sie aus Ihrer Vorlage. Verwenden der `<#@assembly#>` Direktive, um die Assembly zu laden und `<#@import#>` um den Namespacekontext einzurichten. Beachten Sie, um die Assembly neu erstellen, während Sie Debuggen, müssen Sie möglicherweise beenden und starten Sie Visual Studio neu. Weitere Informationen finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generieren Sie viele Dateien aus einem Modellschema
  Wenn Sie häufig Dateien aus Modellen, die das gleiche XML oder Schema aufweisen generiert:
@@ -91,7 +91,6 @@ Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren 
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Ausführen von Textvorlagen im Buildprozess
