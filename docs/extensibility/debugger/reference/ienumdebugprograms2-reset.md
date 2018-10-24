@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Reset | Microsoft Docs
+title: IEnumDebugPrograms2::Reset | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d10fc7975f3e3624b00dcb77f77ba82fa8956cce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 881ecd1dcec9bc05bcb5e99ad6691bd3b0e7f42e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942659"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 Setzt die Enumeration auf das erste Element zurück.  
@@ -38,10 +38,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Nachdem diese Methode wird aufgerufen, den beim nächsten Aufruf der [Weiter](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md) Methode gibt das erste Element der Enumeration.  
+ Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md) Methode gibt das erste Element der Enumeration.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
