@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Microsoft Docs
+title: IDebugObject::GetValue | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f65cba807abf4e8a0d7bc85ed28c765f7c6849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7b0f063e64649a07954367105df6a20d997033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868416"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Ruft den Wert des Objekts als eine fortlaufende Folge von Bytes ab.  
+Ruft den Wert des Objekts als eine aufeinanderfolgende Reihe von Bytes ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,16 +43,16 @@ int GetValue(
   
 #### <a name="parameters"></a>Parameter  
  `pValue`  
- [in, out] Ein Array, das mit einer aufeinander folgenden Folge von Bytes, die den Wert des Objekts darstellt ausgefüllt ist.  
+ [in, out] Ein Array, das mit der eine aufeinanderfolgende Reihe von Bytes, die den Wert des Objekts gefüllt ist.  
   
  `nSize`  
- [in] Die maximale Anzahl von Bytes, die abgerufen werden.  
+ [in] Die maximale Anzahl der Bytes, die abgerufen werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Abrufen der Gesamtanzahl der Bytes Wert, der durch den Aufruf abgerufen werden können die [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) Methode.  
+ Erhalten Sie die Gesamtzahl der Bytes Wert, der durch den Aufruf abgerufen werden, können die [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
