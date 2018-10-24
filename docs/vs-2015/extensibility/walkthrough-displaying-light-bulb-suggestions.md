@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869053"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen von mit einer Glühbirne gekennzeichneten Vorschlägen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
   
  In der Visual c# und Visual Basic-Editoren können Sie auch das .NET Compiler Platform ("Roslyn") verwenden, schreiben und Packen Ihren eigenen Code-Analyzer mit Aktionen, die automatisch angezeigt werden Glühbirnen. Weitere Informationen finden Sie unter:  
   
--   [Gewusst wie: Schreiben Sie eine C#-Diagnose und die Codefehlerbehebung](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Gewusst wie: Schreiben Sie eine C#-Diagnose und die Codefehlerbehebung](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Gewusst wie: Schreiben Sie eine Visual Basic-Diagnose und die Codefehlerbehebung](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Gewusst wie: Schreiben Sie eine Visual Basic-Diagnose und die Codefehlerbehebung](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Andere Sprachen wie C++ bieten auch Glühbirnen für einige schnellen Aktion verwenden, z. B. einen Vorschlag zum Erstellen einer Stubimplementierung dieser Funktion.  
+  Andere Sprachen wie C++ bieten auch Glühbirnen für einige schnellen Aktion verwenden, z. B. einen Vorschlag zum Erstellen einer Stubimplementierung dieser Funktion.  
   
- Hier ist, wie eine Glühbirne aussieht. In einem Visual Basic oder Visual C#-Projekt wird eine rote Wellenlinie unter dem Namen einer Variablen angezeigt, wenn er ungültig ist. Wenn Sie den Mauszeiger über einem ungültigen Bezeichner, wird eine Glühbirne neben dem Cursor angezeigt.  
+  Hier ist, wie eine Glühbirne aussieht. In einem Visual Basic oder Visual C#-Projekt wird eine rote Wellenlinie unter dem Namen einer Variablen angezeigt, wenn er ungültig ist. Wenn Sie den Mauszeiger über einem ungültigen Bezeichner, wird eine Glühbirne neben dem Cursor angezeigt.  
   
- ![Glühbirne](../extensibility/media/lightbulb.png "Glühbirne")  
+  ![Glühbirne](../extensibility/media/lightbulb.png "Glühbirne")  
   
- Wenn Sie den Pfeil nach unten durch die Glühbirne klicken, wird ein Satz von Vorschlägen für Aktionen, sowie eine Vorschau der ausgewählten Aktion angezeigt. In diesem Fall wird die Änderungen, die an Ihrem Code vorgenommen werden, wenn Sie den Vorgang auszuführen.  
+  Wenn Sie den Pfeil nach unten durch die Glühbirne klicken, wird ein Satz von Vorschlägen für Aktionen, sowie eine Vorschau der ausgewählten Aktion angezeigt. In diesem Fall wird die Änderungen, die an Ihrem Code vorgenommen werden, wenn Sie den Vorgang auszuführen.  
   
- ![Light Bulb-Vorschau](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Light Bulb-Vorschau](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Glühbirnen können Sie Ihre eigenen Vorschlägen für Aktionen bieten. Beispielsweise können Sie Aktionen zum Öffnen von geschweiften Klammern in eine neue Zeile zu verschieben, oder verschieben Sie sie am Ende der vorherigen Zeile bereitstellen. Die folgende exemplarische Vorgehensweise veranschaulicht, wie erstellen Sie eine Glühbirne, die angezeigt wird, für das aktuelle Wort und verfügt über zwei empfohlene Aktionen beinhaltet: **in Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
+  Glühbirnen können Sie Ihre eigenen Vorschlägen für Aktionen bieten. Beispielsweise können Sie Aktionen zum Öffnen von geschweiften Klammern in eine neue Zeile zu verschieben, oder verschieben Sie sie am Ende der vorherigen Zeile bereitstellen. Die folgende exemplarische Vorgehensweise veranschaulicht, wie erstellen Sie eine Glühbirne, die angezeigt wird, für das aktuelle Wort und verfügt über zwei empfohlene Aktionen beinhaltet: **in Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

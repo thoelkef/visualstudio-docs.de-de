@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7829408a2cb4cee74c4059d03567c3fc7f6c8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: abf531b6b509afc15da057105b014e2c2b41a2cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871471"
 ---
 # <a name="utilization-navigator"></a>Auslastungsnavigator
 Mit dem Auslastungsnavigator können Sie in der Nebenläufigkeitsschnellansicht ein Zeitintervall in einer Ablaufverfolgung auswählen. In der Nebenläufigkeitsschnellansicht wird die Auslastung der CPU-Kerne durch den Zielprozess im Verlauf der Zeit angezeigt. Damit lassen sich CPU-Auslastungsmuster leichter erkennen. Zudem können die Auslastungsdaten mit den Daten in anderen Ansichten verglichen werden. Der Auslastungsnavigator wird in der Nebenläufigkeitsschnellansicht in allen Ansichten im oberen Bereich angezeigt. Der Auslastungsnavigator ist in der folgenden Abbildung dargestellt.  
@@ -29,8 +29,8 @@ Auslastungsnavigator mit ausgewähltem Zeitrahmen
   
  So können Sie mithilfe des Auslastungsnavigators den angezeigten Zeitbereich bearbeiten:  
   
--   Sie können ihn schwenken, indem Sie den Thumb nach links oder rechts ziehen. (Tastatur: Verschieben Sie den Fokus auf den Thumb, und drücken Sie anschließend die Pfeiltaste nach links oder rechts.)  
+- Sie können ihn schwenken, indem Sie den Thumb nach links oder rechts ziehen. (Tastatur: Verschieben Sie den Fokus auf den Thumb, und drücken Sie anschließend die Pfeiltaste nach links oder rechts.)  
   
--   Sie können die Größe des Zeitintervalls ändern, indem Sie einen der Ziehpunkte ziehen. (Tastatur: Verschieben Sie den Fokus auf einen Ziehpunkt, und drücken Sie anschließend die Pfeiltaste nach rechts oder links.)  
+- Sie können die Größe des Zeitintervalls ändern, indem Sie einen der Ziehpunkte ziehen. (Tastatur: Verschieben Sie den Fokus auf einen Ziehpunkt, und drücken Sie anschließend die Pfeiltaste nach rechts oder links.)  
   
- Wenn Sie das Intervall mit einem anderen Zoomsteuerelement der Nebenläufigkeitsschnellansicht ändern, wird die Änderung vom Auslastungsnavigator übernommen.
+  Wenn Sie das Intervall mit einem anderen Zoomsteuerelement der Nebenläufigkeitsschnellansicht ändern, wird die Änderung vom Auslastungsnavigator übernommen.

@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868429"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elemente der Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Sie können die registrierungseinstellungen, Laufzeiteinstellungen und Einstiegs
 ## <a name="run-time-settings"></a>Laufzeiteinstellungen  
  Wenn ein Benutzer die isolated Shell-Anwendung startet, ruft er den Einstiegspunkt der Start von Visual Studio-Shell. Anwendungseinstellungen werden definiert, wenn die Anwendung gestartet, wie folgt wird:  
   
-1.  Die Visual Studio-Shell überprüft die anwendungsregistrierung bestimmte Schlüssel. Wenn die Einstellung für einen Schlüssel im Aufruf an den Ausgangspunkt für den Eintrag angegeben ist, überschreibt dieser Wert den Wert in der Registrierung.  
+1. Die Visual Studio-Shell überprüft die anwendungsregistrierung bestimmte Schlüssel. Wenn die Einstellung für einen Schlüssel im Aufruf an den Ausgangspunkt für den Eintrag angegeben ist, überschreibt dieser Wert den Wert in der Registrierung.  
   
-2.  Wenn weder für die Registrierung als auch für den Eintrag zeigen Parameter gibt den Wert einer Einstellung, wird der Standardwert für die Einstellung verwendet.  
+2. Wenn weder für die Registrierung als auch für den Eintrag zeigen Parameter gibt den Wert einer Einstellung, wird der Standardwert für die Einstellung verwendet.  
   
- Wenn ein Benutzer Ihrer Anwendung über die Befehlszeile gestartet wird, werden alle Befehlszeilenoptionen an der Visual Studio-Shell, übergeben sie auf die gleiche Weise behandelt, die Devenv ausführt. Weitere Informationen zu den Devenv-Schalter, finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) und [Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Weitere Informationen dazu, wie ein Paket für Befehlszeilen-Switches registriert wird, finden Sie unter [Befehlszeilenoptionen hinzufügen](../extensibility/adding-command-line-switches.md).  
+   Wenn ein Benutzer Ihrer Anwendung über die Befehlszeile gestartet wird, werden alle Befehlszeilenoptionen an der Visual Studio-Shell, übergeben sie auf die gleiche Weise behandelt, die Devenv ausführt. Weitere Informationen zu den Devenv-Schalter, finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) und [Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Weitere Informationen dazu, wie ein Paket für Befehlszeilen-Switches registriert wird, finden Sie unter [Befehlszeilenoptionen hinzufügen](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Der Einstiegspunkt für den Start  
  Die Appenvstub.dll-Datei enthält die Einstiegspunkte für den Zugriff auf die isolated Shell. Wenn die Anwendung gestartet wird, ruft er den Start Eintrag Punkt der Appenvstub.dll.  
