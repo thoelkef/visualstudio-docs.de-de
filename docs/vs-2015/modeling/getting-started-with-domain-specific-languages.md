@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877766"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,42 +53,42 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 #### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe  
   
-1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.  
+2. Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.  
   
-3.  Klicken Sie auf **domänenspezifischen Sprachdesigner**.  
+3. Klicken Sie auf **domänenspezifischen Sprachdesigner**.  
   
-     ![DSL-Dialogfeld "erstellen"](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+    ![DSL-Dialogfeld "erstellen"](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-4.  In der **Namen** geben **FamilyTree**. Klicken Sie auf **OK**.  
+4. In der **Namen** geben **FamilyTree**. Klicken Sie auf **OK**.  
   
-     Die **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.  
+    Die **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.  
   
-     Klicken Sie auf die einzelnen Vorlagen, um eine Beschreibung anzuzeigen,  
+    Klicken Sie auf die einzelnen Vorlagen, um eine Beschreibung anzuzeigen,  
   
-     Die Vorlagen eignen sich Startpunkte. Jedes davon bietet es sich um eine vollständig funktionsfähige DSL, die Sie bearbeiten können, um Ihren Anforderungen entsprechend. Normalerweise würden Sie durch auswählen die Vorlage am nächsten liegt, was Sie erstellen möchten.  
+    Die Vorlagen eignen sich Startpunkte. Jedes davon bietet es sich um eine vollständig funktionsfähige DSL, die Sie bearbeiten können, um Ihren Anforderungen entsprechend. Normalerweise würden Sie durch auswählen die Vorlage am nächsten liegt, was Sie erstellen möchten.  
   
-5.  Wählen Sie in dieser exemplarischen Vorgehensweise die **minimale Sprache** Vorlage.  
+5. Wählen Sie in dieser exemplarischen Vorgehensweise die **minimale Sprache** Vorlage.  
   
-6.  Geben Sie auf der entsprechenden Seite des Assistenten eine Dateinamenerweiterung für die DSL ein. Diese Erweiterung wird für Dateien mit Instanzen Ihrer DSL verwendet.  
+6. Geben Sie auf der entsprechenden Seite des Assistenten eine Dateinamenerweiterung für die DSL ein. Diese Erweiterung wird für Dateien mit Instanzen Ihrer DSL verwendet.  
   
-    -   Wählen Sie eine Erweiterung, die nicht in der bezieht sich auf jede Anwendung auf Ihrem Computer oder auf einem Computer, in dem Sie die DSL installieren möchten. Z. B. **Docx** und **Htm** wäre akzeptablen Dateinamenerweiterungen.  
+   -   Wählen Sie eine Erweiterung, die nicht in der bezieht sich auf jede Anwendung auf Ihrem Computer oder auf einem Computer, in dem Sie die DSL installieren möchten. Z. B. **Docx** und **Htm** wäre akzeptablen Dateinamenerweiterungen.  
   
-    -   Der Assistent warnt Sie, wenn die eingegebene Erweiterung bereits als DSL verwendet wird. Verwenden Sie nach Möglichkeit eine andere Dateinamenerweiterung. Sie können die experimentelle Instanz des Visual Studio SDK auch zurücksetzen, um alte experimentelle Designer zu löschen. Klicken Sie auf **starten**, klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Microsoft zurücksetzen Instanz von Visual Studio 2010 experimentell**.  
+   -   Der Assistent warnt Sie, wenn die eingegebene Erweiterung bereits als DSL verwendet wird. Verwenden Sie nach Möglichkeit eine andere Dateinamenerweiterung. Sie können die experimentelle Instanz des Visual Studio SDK auch zurücksetzen, um alte experimentelle Designer zu löschen. Klicken Sie auf **starten**, klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Microsoft zurücksetzen Instanz von Visual Studio 2010 experimentell**.  
   
-7.  Überprüfen Sie die anderen Seiten, und klicken Sie dann auf **Fertig stellen**.  
+7. Überprüfen Sie die anderen Seiten, und klicken Sie dann auf **Fertig stellen**.  
   
-     Eine Projektmappe wird generiert, die zwei Projekte enthält. Sie werden Dsl "und" DslPackage bezeichnet. Eine Diagrammdatei wird geöffnet, auf benannte "DslDefinition.DSL" aus.  
+    Eine Projektmappe wird generiert, die zwei Projekte enthält. Sie werden Dsl "und" DslPackage bezeichnet. Eine Diagrammdatei wird geöffnet, auf benannte "DslDefinition.DSL" aus.  
   
-    > [!NOTE]
-    >  Großteil des Codes, die Sie in den Ordnern in beiden Projekten sehen können, wird aus "DslDefinition.DSL" generiert. Aus diesem Grund sind die meisten Änderungen an Ihrer DSL in dieser Datei hergestellt.  
+   > [!NOTE]
+   >  Großteil des Codes, die Sie in den Ordnern in beiden Projekten sehen können, wird aus "DslDefinition.DSL" generiert. Aus diesem Grund sind die meisten Änderungen an Ihrer DSL in dieser Datei hergestellt.  
   
- Die Benutzeroberfläche gleicht nun der folgenden Abbildung.  
+   Die Benutzeroberfläche gleicht nun der folgenden Abbildung.  
   
- ![DSL-Designers](../modeling/media/dsl-designer.png "Dsl_designer")  
+   ![DSL-Designers](../modeling/media/dsl-designer.png "Dsl_designer")  
   
- Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
+   Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Die wichtigen Teile der DSL-Projektmappe  
  Beachten Sie die folgenden Aspekte der neuen Projektmappe ein.  
@@ -104,41 +104,41 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 #### <a name="to-experiment-with-the-dsl"></a>Zum Experimentieren mit der DSL  
   
-1.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Dies wird erneut die meisten der Quellcode von "DslDefinition.DSL" generiert.  
+1. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Dies wird erneut die meisten der Quellcode von "DslDefinition.DSL" generiert.  
   
-    > [!NOTE]
-    >  Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > [!NOTE]
+   >  Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
-2.  Drücken Sie F5, oder auf die **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
+2. Drücken Sie F5, oder auf die **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
   
-     Die DSL erstellt und ist in der experimentellen Instanz von installiert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    Die DSL erstellt und ist in der experimentellen Instanz von installiert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Die experimentelle Instanz nimmt seine Einstellungen aus der Registrierung, eine separate Unterstruktur, in denen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen zu Debugzwecken registriert sind. Normale Instanzen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben keinen Zugriff auf Erweiterungen, die es registriert.  
+    Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Die experimentelle Instanz nimmt seine Einstellungen aus der Registrierung, eine separate Unterstruktur, in denen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungen zu Debugzwecken registriert sind. Normale Instanzen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben keinen Zugriff auf Erweiterungen, die es registriert.  
   
-3.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], öffnen Sie die Modelldatei mit dem Namen **Test** aus **Projektmappen-Explorer**.  
+3. In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], öffnen Sie die Modelldatei mit dem Namen **Test** aus **Projektmappen-Explorer**.  
   
-     \- oder –  
+    \- oder –  
   
-     Mit der rechten Maustaste in den Debugging-Projekt, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Element**. In der **Element hinzufügen** wählen Sie im Dialogfeld Geben Sie die Datei Ihrer DSL.  
+    Mit der rechten Maustaste in den Debugging-Projekt, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Element**. In der **Element hinzufügen** wählen Sie im Dialogfeld Geben Sie die Datei Ihrer DSL.  
   
-     Die Modelldatei wird als ein leeres Diagramm geöffnet.  
+    Die Modelldatei wird als ein leeres Diagramm geöffnet.  
   
-     Die Toolbox wird geöffnet und zeigt Tools, die das Diagramm entspricht.  
+    Die Toolbox wird geöffnet und zeigt Tools, die das Diagramm entspricht.  
   
-4.  Verwenden Sie die Tools, um Formen und Konnektoren im Diagramm zu erstellen.  
+4. Verwenden Sie die Tools, um Formen und Konnektoren im Diagramm zu erstellen.  
   
-    1.  Ziehen Sie aus dem Beispiel-Shape-Tool auf das Diagramm, um Formen zu erstellen.  
+   1.  Ziehen Sie aus dem Beispiel-Shape-Tool auf das Diagramm, um Formen zu erstellen.  
   
-    2.  Um zwei Formen verbinden, klicken Sie auf die Beispiel-Connector-Tool, klicken Sie auf der ersten Form, und klicken Sie dann auf die zweite Form.  
+   2.  Um zwei Formen verbinden, klicken Sie auf die Beispiel-Connector-Tool, klicken Sie auf der ersten Form, und klicken Sie dann auf die zweite Form.  
   
-5.  Klicken Sie auf die Bezeichnungen der Formen ändern.  
+5. Klicken Sie auf die Bezeichnungen der Formen ändern.  
   
- Gleicht die experimentelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird im folgende Beispiel ähneln:  
+   Gleicht die experimentelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird im folgende Beispiel ähneln:  
   
- ![](../modeling/media/dsl-min.png "DSL_min")  
+   ![](../modeling/media/dsl-min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>Der Inhalt eines Modells  
- Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modell ** Elemente* und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.  
+ Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modellelementen* und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.  
   
  Die DSL-Definition kann angeben, wie das Modell in einem Diagramm angezeigt wird. Sie können aus verschiedensten Arten von Formen und Konnektoren auswählen. Sie können angeben, dass einige Formen innerhalb anderer Formen angezeigt werden.  
   
@@ -161,17 +161,17 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Text-Dateien neu generieren, nach dem Ändern der Modelldatei  
   
-1.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], speichern Sie das Modell.  
+1. In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], speichern Sie das Modell.  
   
-2.  Stellen Sie sicher, dass die File-Name-Parameter in den einzelnen TT-Dateien auf die Modelldatei bezieht, die Sie für Experimente verwenden. Speichern Sie die TT-Datei.  
+2. Stellen Sie sicher, dass die File-Name-Parameter in den einzelnen TT-Dateien auf die Modelldatei bezieht, die Sie für Experimente verwenden. Speichern Sie die TT-Datei.  
   
-3.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.  
+3. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.  
   
-     \- oder –  
+    \- oder –  
   
-     Mit der rechten Maustaste in der Vorlagen, die Sie verwenden möchten, generieren, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
+    Mit der rechten Maustaste in der Vorlagen, die Sie verwenden möchten, generieren, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
- Sie können eine beliebige Anzahl von Textvorlagendateien zu einem Projekt hinzufügen. Jede Vorlage generiert eine Ergebnisdatei an.  
+   Sie können eine beliebige Anzahl von Textvorlagendateien zu einem Projekt hinzufügen. Jede Vorlage generiert eine Ergebnisdatei an.  
   
 > [!NOTE]
 >  Wenn Sie die DSL-Definition ändern, funktioniert der Textvorlagencode Beispiel nicht, sofern die Aktualisierung.  
@@ -238,39 +238,39 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 ##### <a name="to-add-properties-and-display-them"></a>Hinzufügen von Eigenschaften und anzeigen  
   
-1.  Fügen Sie die Eigenschaften an.  
+1. Fügen Sie die Eigenschaften an.  
   
-    1.  In der DSL-Definitionsdiagramm mit der Maustaste der **Person** Domänenklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Domäneneigenschaft**.  
+   1.  In der DSL-Definitionsdiagramm mit der Maustaste der **Person** Domänenklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Domäneneigenschaft**.  
   
-    2.  Geben Sie eine Liste der neuen Eigenschaftennamen, z. B. **Geburtsdatum** und **Tod**. Drücken Sie **EINGABETASTE** nach jeder Eingabe.  
+   2.  Geben Sie eine Liste der neuen Eigenschaftennamen, z. B. **Geburtsdatum** und **Tod**. Drücken Sie **EINGABETASTE** nach jeder Eingabe.  
   
-2.  Hinzufügen von Decorator-Elemente, die die Eigenschaften in der Form angezeigt werden.  
+2. Hinzufügen von Decorator-Elemente, die die Eigenschaften in der Form angezeigt werden.  
   
-    1.  Führen Sie die graue Linie, die von der Person-Domänenklasse der anderen Seite des Diagramms erweitert. Dies ist einer diagrammelementzuordnung. Die Domänenklasse verknüpft mit einer formklasse.  
+   1.  Führen Sie die graue Linie, die von der Person-Domänenklasse der anderen Seite des Diagramms erweitert. Dies ist einer diagrammelementzuordnung. Die Domänenklasse verknüpft mit einer formklasse.  
   
-    2.  Mit der rechten Maustaste in dieser formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**.  
+   2.  Mit der rechten Maustaste in dieser formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**.  
   
-    3.  Fügen Sie zwei Decorator-Elemente mit Namen wie z. B. **BirthDecorator** und **DeathDecorator**.  
+   3.  Fügen Sie zwei Decorator-Elemente mit Namen wie z. B. **BirthDecorator** und **DeathDecorator**.  
   
-    4.  Wählen Sie jedes neue Decorator-Element, und legen Sie im Fenster Eigenschaften die **Position** Feld. Dies bestimmt, in der Eigenschaftswert für die Domäne in der Form angezeigt werden soll. Legen Sie z. B. **InnerBottomLeft** und **InnerBottomRight**.  
+   4.  Wählen Sie jedes neue Decorator-Element, und legen Sie im Fenster Eigenschaften die **Position** Feld. Dies bestimmt, in der Eigenschaftswert für die Domäne in der Form angezeigt werden soll. Legen Sie z. B. **InnerBottomLeft** und **InnerBottomRight**.  
   
-         ![Depot-formdefinition](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
+        ![Depot-formdefinition](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
-3.  Ordnen Sie die Eigenschaften der Decorator-Elemente.  
+3. Ordnen Sie die Eigenschaften der Decorator-Elemente.  
   
-    1.  Öffnen Sie das Fenster "DSL-Details" ein. Es ist in der Regel auf einer Registerkarte neben dem Fenster "Ausgabe". Wenn Sie es nicht angezeigt der **Ansicht** , zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.  
+   1.  Öffnen Sie das Fenster "DSL-Details" ein. Es ist in der Regel auf einer Registerkarte neben dem Fenster "Ausgabe". Wenn Sie es nicht angezeigt der **Ansicht** , zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.  
   
-    2.  Klicken Sie auf die DSL-Definitionsdiagramm auf der Verbindungslinie der **Person** Domänenklasse der Shape-Klasse.  
+   2.  Klicken Sie auf die DSL-Definitionsdiagramm auf der Verbindungslinie der **Person** Domänenklasse der Shape-Klasse.  
   
-    3.  In **DSL-Details**auf die **Decorator-Zuordnungen** Registerkarte, klicken Sie auf das Kontrollkästchen auf einem nicht zugeordneten Decorator-Element. In **Anzeigeeigenschaft**, wählen Sie die Eigenschaft "Domain", er zugeordnet soll. Beispielsweise **BirthDecorator** zu **Geburtsdatum**.  
+   3.  In **DSL-Details**auf die **Decorator-Zuordnungen** Registerkarte, klicken Sie auf das Kontrollkästchen auf einem nicht zugeordneten Decorator-Element. In **Anzeigeeigenschaft**, wählen Sie die Eigenschaft "Domain", er zugeordnet soll. Beispielsweise **BirthDecorator** zu **Geburtsdatum**.  
   
-4.  Speichern Sie die DSL, klicken Sie auf alle Vorlagen transformieren, und drücken Sie F5.  
+4. Speichern Sie die DSL, klicken Sie auf alle Vorlagen transformieren, und drücken Sie F5.  
   
-5.  In einem Diagramm für den Beispiel-Modell stellen Sie sicher, dass Sie können jetzt klicken Sie auf die Positionen, die Sie ausgewählt haben, und geben Sie Werte in diesen. Darüber hinaus bei der Auswahl einer **Person** Form, die Fenster "Eigenschaften" zeigt die neuen Eigenschaften, Geburtsdatum und Tod.  
+5. In einem Diagramm für den Beispiel-Modell stellen Sie sicher, dass Sie können jetzt klicken Sie auf die Positionen, die Sie ausgewählt haben, und geben Sie Werte in diesen. Darüber hinaus bei der Auswahl einer **Person** Form, die Fenster "Eigenschaften" zeigt die neuen Eigenschaften, Geburtsdatum und Tod.  
   
-6.  In einer TT-Datei können Sie Code hinzufügen, die die Eigenschaften jeder Person erhält.  
+6. In einer TT-Datei können Sie Code hinzufügen, die die Eigenschaften jeder Person erhält.  
   
- ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")  
+   ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")  
   
 ### <a name="define-new-classes"></a>Neue Klassen definieren  
  Sie können die Domänenklassen und Beziehungen zu einem Modell hinzufügen. Beispielsweise könnten Sie eine neue Klasse zum Darstellen von Metropolen und eine neue Beziehung aus, um darzustellen, dass eine Person in einer Stadt kurzlebig erstellen.  

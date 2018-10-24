@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881702"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer
 
@@ -39,67 +39,67 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Akti
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>So überprüfen Sie eine bestimmte Benutzeraktivität im Diagramm für Aktivitäten virtueller Benutzer
 
-1.  Verwenden Sie das Tool „Zoom zum Zeitraum“ unten im **Diagramm für die Aktivitäten virtueller Benutzer**, um einen Bereich im Diagramm auszuwählen, in dem Sie die Details zu einem bestimmten Benutzer überprüfen möchten.
+1. Verwenden Sie das Tool „Zoom zum Zeitraum“ unten im **Diagramm für die Aktivitäten virtueller Benutzer**, um einen Bereich im Diagramm auszuwählen, in dem Sie die Details zu einem bestimmten Benutzer überprüfen möchten.
 
-2.  Zeigen Sie mit der Maus auf ein Detail im Diagramm. Die folgenden Informationen werden in der QuickInfo angezeigt:
+2. Zeigen Sie mit der Maus auf ein Detail im Diagramm. Die folgenden Informationen werden in der QuickInfo angezeigt:
 
-    -   **Benutzer-ID**
+   - **Benutzer-ID**
 
-    -   **Szenario**
+   - **Szenario**
 
-    -   **Test**
+   - **Test**
 
-    -   **URL** (wird nicht in einem Test oder einer Transaktion angezeigt)
+   - **URL** (wird nicht in einem Test oder einer Transaktion angezeigt)
 
-    -   **Ergebnis**
+   - **Ergebnis**
 
-    -   **Browser** (wird nicht in einem Test oder einer Transaktion angezeigt)
+   - **Browser** (wird nicht in einem Test oder einer Transaktion angezeigt)
 
-    -   **Network**
+   - **Network**
 
-    -   **Startzeit**
+   - **Startzeit**
 
-    -   **Dauer**
+   - **Dauer**
 
-    -   **Agent**
+   - **Agent**
 
-    -   **Testprotokoll** (Link zum Testprotokoll)
+   - **Testprotokoll** (Link zum Testprotokoll)
 
-        > [!NOTE]
-        > Wenn Sie auf den Link für das **Testprotokoll** klicken, wird zur Unterstützung des Debuggings der Anwendung das Webtestergebnis oder das Komponententestergebnis geöffnet, das dem Protokoll zugeordnet ist.
+     > [!NOTE]
+     > Wenn Sie auf den Link für das **Testprotokoll** klicken, wird zur Unterstützung des Debuggings der Anwendung das Webtestergebnis oder das Komponententestergebnis geöffnet, das dem Protokoll zugeordnet ist.
 
      Anschließend können Sie die Filter- und Hervorhebungsfunktionen für das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>So verwenden Sie Filteroptionen im Diagramm für Aktivitäten virtueller Benutzer
 
-1.  Wählen Sie aus der Dropdownliste in der **Detaillegende** entweder **Test**, **Seite** oder **Transaktion** aus.
+1. Wählen Sie aus der Dropdownliste in der **Detaillegende** entweder **Test**, **Seite** oder **Transaktion** aus.
 
-     **Bereich „Detaillegende“**
+    **Bereich „Detaillegende“**
 
-     ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
+    ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
 
-2.  Aktivieren oder deaktivieren Sie die Kontrollkästchen für die Fehler, Protokolle, Tests, Suchvorgänge und ASPX-Seiten, die dem Auslastungstest zugeordnet sind.
+2. Aktivieren oder deaktivieren Sie die Kontrollkästchen für die Fehler, Protokolle, Tests, Suchvorgänge und ASPX-Seiten, die dem Auslastungstest zugeordnet sind.
 
-     Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
+    Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
 
-     Das **Diagramm für Aktivitäten virtueller Benutzer** bietet die Möglichkeit, Tests, Seiten und Transaktionen auf Grundlage verschiedener Kriterien herauszufiltern. Sie können bestimmte Tests, alle erfolgreich verlaufenen Tests oder fehlgeschlagene Tests mit bestimmten Fehlern aus der Ansicht entfernen. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
+    Das **Diagramm für Aktivitäten virtueller Benutzer** bietet die Möglichkeit, Tests, Seiten und Transaktionen auf Grundlage verschiedener Kriterien herauszufiltern. Sie können bestimmte Tests, alle erfolgreich verlaufenen Tests oder fehlgeschlagene Tests mit bestimmten Fehlern aus der Ansicht entfernen. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
 
-     Sie können z.B. die Option **(Fehler hervorheben)** auswählen, durch die alle Fehler im Diagramm rot angezeigt werden. Sie können auch die Option **(Ergebnisse mit Protokollen hervorheben)** auswählen, um alle Testergebnisse mit Protokollen im Diagramm grün anzuzeigen.
+    Sie können z.B. die Option **(Fehler hervorheben)** auswählen, durch die alle Fehler im Diagramm rot angezeigt werden. Sie können auch die Option **(Ergebnisse mit Protokollen hervorheben)** auswählen, um alle Testergebnisse mit Protokollen im Diagramm grün anzuzeigen.
 
-     **Bereich „Filterergebnisse“**
+    **Bereich „Filterergebnisse“**
 
-     ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
+    ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
 
-3.  Aktivieren bzw. deaktivieren Sie in den **Filterergebnissen** die Kontrollkästchen für die folgenden Filteroptionen:
+3. Aktivieren bzw. deaktivieren Sie in den **Filterergebnissen** die Kontrollkästchen für die folgenden Filteroptionen:
 
-    -   **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
+   - **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
 
-    -   **Erfolgreiche Ergebnisse anzeigen**: zeigt erfolgreiche Ergebnisse an.
+   - **Erfolgreiche Ergebnisse anzeigen**: zeigt erfolgreiche Ergebnisse an.
 
-    -   **Ergebnisse mit Fehlern anzeigen** Zeigt Ergebnisse mit Fehlern an, die beim Debuggen hilfreich sein können.
+   - **Ergebnisse mit Fehlern anzeigen** Zeigt Ergebnisse mit Fehlern an, die beim Debuggen hilfreich sein können.
 
-        > [!NOTE]
-        > Die unter dem Knoten **Ergebnisse mit Fehlern anzeigen** aufgeführte Liste von Fehlertypen kann genauer untersucht werden, indem Sie auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** auf die Schaltfläche **Tabellen** klicken. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > [!NOTE]
+     > Die unter dem Knoten **Ergebnisse mit Fehlern anzeigen** aufgeführte Liste von Fehlertypen kann genauer untersucht werden, indem Sie auf der Symbolleiste des **Webleistungstest-Ergebnisviewers** auf die Schaltfläche **Tabellen** klicken. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Das **Diagramm für Aktivitäten virtueller Benutzer** wird entsprechend aktualisiert.
 

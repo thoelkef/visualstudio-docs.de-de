@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Microsoft Docs
+title: BP_REQUEST_INFO | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877769"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Enthält die Informationen erforderlich, um einen Haltepunkt zu implementieren.  
@@ -59,39 +59,39 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>Member  
  `dwFields`  
- Eine Kombination aus Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der angibt, welche Felder ausgefüllt sind.  
+ Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.  
   
  `guidLanguage`  
- Die Sprach-GUID.  
+ Die Sprachen-GUID.  
   
  `bpLocation`  
- Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) -Struktur, die den Typ des der Position des Haltepunkts angibt.  
+ Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) -Struktur, die den Typ der Haltepunktposition angibt.  
   
  `pProgram`  
  Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung darstellt, in dem sich der Breakpoint auftritt.  
   
  `bstrProgramName`  
- Der Name der Anwendung, in der sich der Breakpoint auftritt.  
+ Der Name der Anwendung in der der Breakpoint auftritt.  
   
  `pThread`  
  Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem sich der Breakpoint auftritt.  
   
  `bstrThreadName`  
- Der Name des Threads, in dem sich der Breakpoint auftritt.  
+ Der Name des Threads in der der Breakpoint auftritt.  
   
  `bpCondition`  
- Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die die Bedingungen beschrieben werden, unter dem der Haltepunkt ausgelöst wird.  
+ Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die beschreibt die Bedingungen, unter dem der Haltepunkt ausgelöst wird.  
   
  `bpPassCount`  
- Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur, die die Anzahl übergeben von Informationen des Haltepunkts enthält.  
+ Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die die Pass-Count-Informationen des Haltepunkts enthält.  
   
  `dwFlags`  
- Eine Kombination aus Flags aus der [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) -Enumeration, der die Flags für die angeforderte Breakpoint angibt.  
+ Eine Kombination von Flags aus der [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration, die die Flags für den angeforderten Haltepunkt angibt.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur wird zurückgegeben, durch die [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) Methode.  
   
- Wenn Sie müssen den Anbieter des Debug-Moduls GUID abzurufen, die Einschränkung Haltepunkt oder der Ablaufverfolgungspunkt finden Sie unter der [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.  
+ Um die Debug-Engine-Anbieter-GUID zu erhalten, die Haltepunkt-Einschränkung oder der Ablaufverfolgungspunkt, finden Sie unter den [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879297"
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
   Ersetzbare Parameter oder *Token*, kann in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte werden nicht zur Entwurfszeit bekannt. Sie sind ähnlich wie in der Funktion die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](/visualstudio/ide/template-parameters).  
@@ -34,17 +34,17 @@ ms.locfileid: "37119236"
 ## <a name="token-rules"></a>Token-Regeln
  Die folgenden Regeln gelten für Token:  
   
--   Token können eine beliebige Stelle in einer Zeile angegeben werden.  
+- Token können eine beliebige Stelle in einer Zeile angegeben werden.  
   
--   Token können nicht mehrere Zeilen umfassen.  
+- Token können nicht mehrere Zeilen umfassen.  
   
--   Das gleiche Token kann mehr als einmal in der gleichen Zeile und in der gleichen Datei angegeben werden.  
+- Das gleiche Token kann mehr als einmal in der gleichen Zeile und in der gleichen Datei angegeben werden.  
   
--   Unterschiedliche Token können in der gleichen Zeile angegeben werden.  
+- Unterschiedliche Token können in der gleichen Zeile angegeben werden.  
   
- Token, die diese Regeln nicht folgen werden ignoriert, und nicht dazu, dass eine Warnung oder einen Fehler.  
+  Token, die diese Regeln nicht folgen werden ignoriert, und nicht dazu, dass eine Warnung oder einen Fehler.  
   
- Die Ersetzung des Token durch Zeichenfolgenwerte erfolgt sofort nach der manifest-Transformation. Diese Ersetzung ermöglicht die Benutzer, die Manifestdateien Vorlagen mit Token zu bearbeiten.  
+  Die Ersetzung des Token durch Zeichenfolgenwerte erfolgt sofort nach der manifest-Transformation. Diese Ersetzung ermöglicht die Benutzer, die Manifestdateien Vorlagen mit Token zu bearbeiten.  
   
 ### <a name="token-name-resolution"></a>Token-Namen auflösen
  In den meisten Fällen löst auf ein Token auf einen bestimmten Wert, unabhängig davon, in dem es enthalten ist. Wenn das Token auf ein Paket oder eine Funktion verknüpft ist, hängt jedoch des Tokens-Wert, in dem es enthalten ist. Beispielsweise ist eine Funktion im Paket ein, und klicken Sie dann das Token `$SharePoint.Package.Name$` ergibt den Wert "Paket A." Wenn dasselbe Feature im Paket B, dann ist `$SharePoint.Package.Name$` zu "Paket b" aufgelöst.  
@@ -75,19 +75,19 @@ ms.locfileid: "37119236"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Erweiterungen der tokenersetzung Datei Extensions-Liste hinzufügen
  Obwohl das Token theoretisch durch eine beliebige Datei verwendet werden können, die zu einem SharePoint-Projekt, das Element im Paket enthalten sind, in der Standardeinstellung gehört [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sucht Token nur in Paketdateien, manifest-Dateien und Dateien, die die folgenden Erweiterungen aufweisen:  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX-DATEI  
+- ASCX-DATEI  
   
--   ASPX  
+- ASPX  
   
--   Webpart  
+- Webpart  
   
--   DWP  
+- DWP  
   
- Diese Erweiterungen werden durch definiert die `<TokenReplacementFileExtensions>` Element in der Datei Microsoft.VisualStudio.SharePoint.targets befindet sich in der... \\< Programmdateien\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools-Ordner.  
+  Diese Erweiterungen werden durch definiert die `<TokenReplacementFileExtensions>` Element in der Datei Microsoft.VisualStudio.SharePoint.targets befindet sich in der... \\< Programmdateien\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools-Ordner.  
   
- Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Hinzufügen einer `<TokenReplacementFileExtensions>` Element alle PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.  
+  Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Hinzufügen einer `<TokenReplacementFileExtensions>` Element alle PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.  
   
 > [!NOTE]  
 >  Da tokenersetzung tritt auf, nachdem ein Projekt kompiliert wurde, sollten Sie keine Dateierweiterungen für Dateitypen, die, wie z. B. kompiliert werden, hinzufügen *cs*, *vb* oder *resx*. Token werden nur in Dateien ersetzt, die nicht kompiliert werden.  

@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875072"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
 Fügen Sie hier eine Einleitung ein.  
@@ -48,10 +48,10 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  -   für die Erstellung eines benutzerdefinierten Menüs  
   
--   für eine neue Benutzeroberflächenkomponente, die auf die Visual Studio-Menüs abgestimmt werden soll.  
+- für eine neue Benutzeroberflächenkomponente, die auf die Visual Studio-Menüs abgestimmt werden soll.  
   
- Nicht empfohlen...  
- als ausschließliche Hintergrundfarbe. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe.  
+  Nicht empfohlen...  
+  als ausschließliche Hintergrundfarbe. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe.  
   
 ##### <a name="menu-title"></a>Menütitel  
  Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie einer optionalen Glyphe, die normalerweise für Menüs in einer Befehlsleiste verwendet wird.  
@@ -64,9 +64,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Elemente, die nicht grundsätzlich auf den Menütitel abgestimmt sein sollen  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Dropdownlisten, die in einem anderen Kontext vorkommen  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Befehlsleiste aufweisen  
   
--   für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
+- für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
   
- **Standard** (kein weiterer Zustand)  
+  **Standard** (kein weiterer Zustand)  
   
 |Element|Tokenname: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Steuerelemente, die ihren eigenen Tokennamen haben  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  -   für die Erstellung benutzerdefinierter Kombinationsfelder  
   
--   für die Erstellung eines Befehlsleisten-Steuerelements, das Ähnlichkeit mit einem Kombinationsfeld hat.  
+- für die Erstellung eines Befehlsleisten-Steuerelements, das Ähnlichkeit mit einem Kombinationsfeld hat.  
   
- Nicht empfohlen...  
- -   für Elemente, die nicht grundsätzlich auf die Befehlsleisten-Benutzeroberfläche abgestimmt sein müssen  
+  Nicht empfohlen...  
+  -   für Elemente, die nicht grundsätzlich auf die Befehlsleisten-Benutzeroberfläche abgestimmt sein müssen  
   
--   wenn Sie Zugriff auf ein formatiertes Kombinationsfeld haben  
+- wenn Sie Zugriff auf ein formatiertes Kombinationsfeld haben  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Elemente, die keine Ähnlichkeit mit einer Dropdownliste haben  
   
--   für Kombinationsfelder oder unterteilte Schaltflächen  
+- für Kombinationsfelder oder unterteilte Schaltflächen  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für alle anderen Arten von Schaltflächen  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Fügen Sie hier eine Einleitung ein.
 ##### <a name="open-document-tabs"></a>Geöffnete Dokumentregisterkarten  
  Jedes geöffnete Dokument verfügt über eine Registerkarte im Dokument-Registerkartenkanal, auf der der Name angezeigt wird. Dokumente können entweder ausgewählt oder im Hintergrund geöffnet sein. Ihre Registerkarten können folgende Zustände haben:  
   
--   Die ausgewählte Registerkarte stellt das Dokument dar, das aktuell im Dokumentursprung angezeigt wird. Eine ausgewählte Registerkarte verfügt über einen Dokumentrahmen, der sich über den oberen Rand des Dokumentursprungs erstreckt.  
+- Die ausgewählte Registerkarte stellt das Dokument dar, das aktuell im Dokumentursprung angezeigt wird. Eine ausgewählte Registerkarte verfügt über einen Dokumentrahmen, der sich über den oberen Rand des Dokumentursprungs erstreckt.  
   
--   Hintergrundregisterkarten sind Dokumentregisterkarten, die nicht der aktuell ausgewählten Registerkarte entsprechen. Sobald auf die Registerkarte geklickt wird, wird sie zur ausgewählten Registerkarte, die alle Hintergrund-, Rahmen- und Textfarben von den Tokennamen übernimmt.  
+- Hintergrundregisterkarten sind Dokumentregisterkarten, die nicht der aktuell ausgewählten Registerkarte entsprechen. Sobald auf die Registerkarte geklickt wird, wird sie zur ausgewählten Registerkarte, die alle Hintergrund-, Rahmen- und Textfarben von den Tokennamen übernimmt.  
   
- ![(Rote Linie) der Registerkarte "Dokument öffnen"](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
+  ![(Rote Linie) der Registerkarte "Dokument öffnen"](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
- Empfohlen...  
- für die Erstellung benutzerdefinierter Dokumentregisterkarten  
+  Empfohlen...  
+  für die Erstellung benutzerdefinierter Dokumentregisterkarten  
   
- Nicht empfohlen...  
- -   für vorläufige Registerkarten (Vorschau)  
+  Nicht empfohlen...  
+  -   für vorläufige Registerkarten (Vorschau)  
   
--   für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
+- für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
 ##### <a name="selected-tab"></a>Ausgewählte Registerkarte  
  **Mit Fokus**  
@@ -611,9 +611,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für alle Arten von Dokumenten oder Registerkarten, die nicht vorläufig sind (Vorschau)  
   
--   für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
+- für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
- **Ausgewählte vorschauregisterkarte: mit Fokus**  
+  **Ausgewählte vorschauregisterkarte: mit Fokus**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Benutzeroberflächen, die keine Ähnlichkeit mit einer Überlaufschaltfläche haben  
   
--   für Überlaufschaltflächen auf der Befehlsleiste  
+- für Überlaufschaltflächen auf der Befehlsleiste  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Schaltflächen, die an anderer Stelle angezeigt werden  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Fügen Sie hier eine Einleitung ein.
   
  Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige gegenseitig ausschließen:  
   
--   "Mit Fokus" oder "Ohne Fokus" bezieht sich darauf, ob sich der Cursor im Textfeld befindet oder nicht.  
+- "Mit Fokus" oder "Ohne Fokus" bezieht sich darauf, ob sich der Cursor im Textfeld befindet oder nicht.  
   
--   "Aktiv" oder "Inaktiv" bezieht sich darauf, ob der Benutzer eine Suchabfrage in das Textfeld eingegeben hat.  
+- "Aktiv" oder "Inaktiv" bezieht sich darauf, ob der Benutzer eine Suchabfrage in das Textfeld eingegeben hat.  
   
--   "Darauf zeigen" bedeutet, dass der Benutzer mit der Maus auf das Suchfeld zeigt (durch diesen Zustand werden alle anderen Zustände überschrieben).  
+- "Darauf zeigen" bedeutet, dass der Benutzer mit der Maus auf das Suchfeld zeigt (durch diesen Zustand werden alle anderen Zustände überschrieben).  
   
--   "Deaktiviert" bedeutet, dass die Suchfunktion für den aktuellen Kontext deaktiviert ist.  
+- "Deaktiviert" bedeutet, dass die Suchfunktion für den aktuellen Kontext deaktiviert ist.  
   
- ![Suchfeld (rote Linie,)](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
+  ![Suchfeld (rote Linie,)](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
   
- Empfohlen...  
- für das Entwerfen eines benutzerdefinierten Suchfelds  
+  Empfohlen...  
+  für das Entwerfen eines benutzerdefinierten Suchfelds  
   
- Nicht empfohlen...  
- -   für Elemente, die kein Suchfeld darstellen  
+  Nicht empfohlen...  
+  -   für Elemente, die kein Suchfeld darstellen  
   
--   für Elemente, die nicht generell auf die Suchfeld-Benutzeroberfläche abgestimmt sein sollen  
+- für Elemente, die nicht generell auf die Suchfeld-Benutzeroberfläche abgestimmt sein sollen  
   
- **Mit Fokus**  
+  **Mit Fokus**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  -   für die Erstellung einer benutzerdefinierten Dropdownliste im Suchfeld  
   
--   bei Verwendung der richtigen Tokennamen für die entsprechenden Listenkomponenten  
+- bei Verwendung der richtigen Tokennamen für die entsprechenden Listenkomponenten  
   
- Nicht empfohlen...  
- -   für Dropdownlisten, die in anderen Kontexten angezeigt werden  
+  Nicht empfohlen...  
+  -   für Dropdownlisten, die in anderen Kontexten angezeigt werden  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Standard (kein weiterer Zustand)**  
+  **Standard (kein weiterer Zustand)**  
   
 |Element|Tokenname: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Elemente, die keine Ähnlichkeit mit einer Strukturansicht haben  
   
--   für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
+- für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  -   für Benutzeroberflächenelemente, die keine Dropdownliste und kein Kombinationsfeld sind  
   
--   für eine [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste  
+- für eine [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste  
   
- **Default**  
+  **Default**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  -   für Designer, die Ähnlichkeit mit dem Manifest-Designer haben.  
   
--   anstelle allgemeiner Registerkarten-Steuerelemente, die im oberen Bereich eines Editors im Dokumentursprung angezeigt werden.  
+- anstelle allgemeiner Registerkarten-Steuerelemente, die im oberen Bereich eines Editors im Dokumentursprung angezeigt werden.  
   
- Nicht empfohlen...  
- -   bei Verwendung von mehr als sechs Registerkarten  
+  Nicht empfohlen...  
+  -   bei Verwendung von mehr als sechs Registerkarten  
   
--   für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
+- für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
   
 |Zustand|Komponente|Element|Tokenname: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  -   für Bereiche, in denen Menüs oder Symbolleisten platziert werden.  
   
--   mit der richtigen Hintergrund-/Vordergrundfarbe Tokenname-Kombination.  
+- mit dem richtigen Hintergrund / Vordergrund token Kombination aus.  
   
- Nicht empfohlen...  
- für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen  
+  Nicht empfohlen...  
+  für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  

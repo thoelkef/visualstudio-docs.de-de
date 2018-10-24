@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879323"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen Anweisungsvervollständigung
 Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren die Bezeichner für die Sie die Vervollständigung bereitstellen möchten, und klicken Sie dann auszulösen eine vervollständigungssitzung implementieren. Sie können Anweisungsvervollständigung im Kontext von einem Sprachdienst zu definieren, Definieren eigener Dateinamenerweiterung und Content-Type und -Vervollständigung für nur diesen Typ dann anzeigen. Oder Sie können die Vervollständigung für einem vorhandenen Inhaltstyp auslösen, z. B. "nur-Text". In dieser exemplarischen Vorgehensweise zeigt, wie Anweisungsvervollständigung für den Inhaltstyp "nur-Text", den Inhaltstyp der Textdateien handelt, ausgelöst wird. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code und XML-Dateien.  
@@ -27,7 +27,7 @@ Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren di
   
  Diese exemplarische Vorgehensweise veranschaulicht das Implementieren der Anweisungsvervollständigung für einen hartcodierten Satz von Bezeichnern. In vollständige Implementierungen sind der Sprachdienst und in der sprachdokumentation für die Bereitstellung, dass der Inhalt verantwortlich.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts  
@@ -148,48 +148,48 @@ Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren di
   
 #### <a name="to-implement-the-completion-command-handler"></a>Um den Abschlusshandler-Befehl zu implementieren.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestCompletionCommandHandler` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestCompletionCommandHandler` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Fügen Sie private Felder für den nächsten Befehlshandler (zu dem Sie den Befehl übergeben), die Textansicht, die Handler-Befehlsanbieter (wodurch der Zugriff auf verschiedene Dienste), und eine vervollständigungssitzung:  
+2. Fügen Sie private Felder für den nächsten Befehlshandler (zu dem Sie den Befehl übergeben), die Textansicht, die Handler-Befehlsanbieter (wodurch der Zugriff auf verschiedene Dienste), und eine vervollständigungssitzung:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Fügen Sie einen Konstruktor, der festlegt, der Textansicht und die Anbieterfelder und die Befehlskette fügt den Befehl hinzu:  
+3. Fügen Sie einen Konstruktor, der festlegt, der Textansicht und die Anbieterfelder und die Befehlskette fügt den Befehl hinzu:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode und übergeben den Befehl an:  
+4. Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode und übergeben den Befehl an:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implementieren Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>-Methode. Wenn diese Methode eine Tastatureingabe empfängt, müssen sie eine der folgenden Optionen:  
+5. Implementieren Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>-Methode. Wenn diese Methode eine Tastatureingabe empfängt, müssen sie eine der folgenden Optionen:  
   
-    -   Ermöglichen Sie das Zeichen, das den Puffer geschrieben werden und lösen Sie dann oder Abschluss zu filtern. (Druckbaren Zeichen hierzu.)  
+   - Ermöglichen Sie das Zeichen, das den Puffer geschrieben werden und lösen Sie dann oder Abschluss zu filtern. (Druckbaren Zeichen hierzu.)  
   
-    -   Committen Sie die Vervollständigung zu, aber lassen Sie nicht das Zeichen, das in den Puffer geschrieben werden. (Leerzeichen, **Registerkarte**, und **EINGABETASTE** dies geschieht, wenn eine vervollständigungssitzung angezeigt wird.)  
+   - Committen Sie die Vervollständigung zu, aber lassen Sie nicht das Zeichen, das in den Puffer geschrieben werden. (Leerzeichen, **Registerkarte**, und **EINGABETASTE** dies geschieht, wenn eine vervollständigungssitzung angezeigt wird.)  
   
-    -   Ermöglichen Sie den Befehl aus, um an den nächsten Handler übergeben werden. (Alle anderen Befehle.)  
+   - Ermöglichen Sie den Befehl aus, um an den nächsten Handler übergeben werden. (Alle anderen Befehle.)  
   
      Da diese Methode auf Benutzeroberfläche anzeigen kann, rufen <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> um sicherzustellen, dass sie nicht in einem Automation-Kontext aufgerufen wird:  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Dieser Code ist eine private Methode, die die vervollständigungssitzung auslöst:  
+6. Dieser Code ist eine private Methode, die die vervollständigungssitzung auslöst:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  Im nächste Beispiel wird eine private Methode, die von kündigt das Abonnement der <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> Ereignis:  
+7. Im nächste Beispiel wird eine private Methode, die von kündigt das Abonnement der <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> Ereignis:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Erstellen und Testen des Codes  
  Um diesen Code zu testen, erstellen Sie die Projektmappe CompletionTest, und führen Sie es in der experimentellen Instanz.  
