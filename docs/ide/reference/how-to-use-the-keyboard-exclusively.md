@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818262"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949918"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>So können Sie über die Tastatur Steuerelemente aus der Toolbox einem Designer hinzufügen
 
-1.  Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.
+1. Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.
 
-2.  Wechseln Sie mit STRG+NACH-OBEN-TASTE oder STRG+NACH-UNTEN-TASTE zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.
+2. Wechseln Sie mit STRG+NACH-OBEN-TASTE oder STRG+NACH-UNTEN-TASTE zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.
 
-3.  Wechseln Sie mit den Tasten NACH-OBEN oder **NACH-UNTEN** zwischen den Steuerelementen.
+3. Wechseln Sie mit den Tasten NACH-OBEN oder **NACH-UNTEN** zwischen den Steuerelementen.
 
-4.  Drücken Sie die EINGABETASTE, wenn das Steuerelement ausgewählt ist.
+4. Drücken Sie die EINGABETASTE, wenn das Steuerelement ausgewählt ist.
 
- Das Steuerelement wird dem Formular oder dem Designer hinzugefügt.
+   Das Steuerelement wird dem Formular oder dem Designer hinzugefügt.
 
 ## <a name="dialog-box-options"></a>Dialogfeld „Optionen“
 

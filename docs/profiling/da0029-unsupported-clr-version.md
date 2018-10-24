@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818444"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nicht unterstützte CLR-Version
+
 |||  
 |-|-|  
 |Regel-ID|DA0029|  
@@ -32,12 +33,12 @@ ms.locfileid: "34765738"
 |Profilerstellungsmethode|Profilerstellung mithilfe der Befehlszeile|  
 |Meldung|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|  
 |Regeltyp|Information|  
-  
+
 ## <a name="cause"></a>Ursache  
  Sie versuchen, das Profil für eine Anwendung zu erstellen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] verwendet, was nicht von den Profilerstellungstools unterstützt wird.  
-  
+
 ## <a name="rule-description"></a>Regelbeschreibung  
  Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.  
-  
+
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Keine

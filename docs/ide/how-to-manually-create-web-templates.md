@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826400"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Vorgehensweise: Manuelles Erstellen von Webvorlagen
 
@@ -30,33 +30,33 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
 
 1. Erstellen Sie ein Webprojekt.
 
-1. Ändern Sie die Dateien im Projekt, oder löschen Sie sie. Alternativ können Sie auch neue Dateien zum Projekt hinzufügen.
+2. Ändern Sie die Dateien im Projekt, oder löschen Sie sie. Alternativ können Sie auch neue Dateien zum Projekt hinzufügen.
 
-1. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *vstemplate* in demselben Verzeichnis wie das Projekt. Fügen Sie sie nicht zu dem Projekt in Visual Studio hinzu.
+3. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *vstemplate* in demselben Verzeichnis wie das Projekt. Fügen Sie sie nicht zu dem Projekt in Visual Studio hinzu.
 
-1. Bearbeiten Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Projektvorlagen bereitzustellen. Weitere Informationen finden Sie im [folgenden Beispiel](#example).
+4. Bearbeiten Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Projektvorlagen bereitzustellen. Weitere Informationen finden Sie im [folgenden Beispiel](#example).
 
-1. Suchen Sie das `ProjectType`-Element in der *VSTEMPLATE*-Datei, und legen Sie den Textwert auf `Web` fest.
+5. Suchen Sie das `ProjectType`-Element in der *VSTEMPLATE*-Datei, und legen Sie den Textwert auf `Web` fest.
 
-1. Fügen Sie nach dem `ProjectType`-Element ein `ProjectSubType`-Element hinzu, und legen Sie den Textwert auf die Programmiersprache der Vorlage fest. Die Programmiersprache kann einer der folgenden sein:
+6. Fügen Sie nach dem `ProjectType`-Element ein `ProjectSubType`-Element hinzu, und legen Sie den Textwert auf die Programmiersprache der Vorlage fest. Die Programmiersprache kann einer der folgenden sein:
 
-    - CSharp
-    - Visual Basic
+   - CSharp
+   - Visual Basic
 
-    Zum Beispiel:
+     Zum Beispiel:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Wählen Sie die Dateien in der Vorlage aus (einschließlich der *VSTEMPLATE*-Datei), klicken Sie mit der rechten Maustaste auf die Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die Dateien werden in eine *ZIP*-Datei komprimiert.
+7. Wählen Sie die Dateien in der Vorlage aus (einschließlich der *VSTEMPLATE*-Datei), klicken Sie mit der rechten Maustaste auf die Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die Dateien werden in eine *ZIP*-Datei komprimiert.
 
-1. Legen Sie die *ZIP*-Vorlagendatei im Visual Studio-Projektvorlagenverzeichnis ab. Standardmäßig handelt es sich dabei um das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
+8. Legen Sie die *ZIP*-Vorlagendatei im Visual Studio-Projektvorlagenverzeichnis ab. Standardmäßig handelt es sich dabei um das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
 
 ## <a name="example"></a>Beispiel
 

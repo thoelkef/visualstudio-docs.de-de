@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813985"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testcontroller- und Test-Agent-Anforderungen für Auslastungstests
 
@@ -31,7 +31,7 @@ Sowohl für den Testcontrollercomputer als auch für die Test-Agent-Computer bes
 Die folgende Tabelle enthält die empfohlenen Hardwareanforderungen zum Bereitstellen eines Testcontrollers und von Test-Agents:
 
 |**Konfiguration**|**Komponente**|**CPU**|**Festplatte**|**Arbeitsspeicher**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 virtuelle Benutzer|Test-Agent|2,6 GHz|10 GB|2 GB|
 |< 1000 virtuelle Benutzer|Test-Agent|Dualprozessor, 2,6 GHz|10 GB|2 GB|
 |N x 1.000 virtuelle Benutzer|Test-Agent|Skalieren auf N Agents mit jeweils einem Dualprozessor mit 2,6 GHz|10GB|2GB|
@@ -39,7 +39,7 @@ Die folgende Tabelle enthält die empfohlenen Hardwareanforderungen zum Bereitst
 |N x 30 Computer in der Testumgebung. Dies schließt zu testende Agents und Server ein.|Testcontroller|N 2,6 GHz-Prozessoren|||
 
 > [!NOTE]
-> Die Anzahl virtueller Benutzer kann von Test zu Test sehr unterschiedlich sein. Eine Hauptursache für diese Unterschiede besteht in der Abweichung der *Reaktionszeiten* oder Benutzerverzögerungen. Weitere Informationen finden Sie unter [Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites](../test/edit-think-times-in-load-test-scenarios.md). In einem Auslastungstest sind Webtests im Allgemeinen effizienter und generieren mehr Auslastung als Komponententests. Die Zahlen in der vorangehenden Tabelle gelten für die Ausführung von Webtests mit einer Reaktionszeit von 3 bis 5 Sekunden in einer typischen Webanwendung.
+> Die Anzahl virtueller Benutzer kann von Test zu Test sehr unterschiedlich sein. Eine Hauptursache für diese Unterschiede besteht in der Abweichung der *Reaktionszeiten* oder Benutzerverzögerungen. Weitere Informationen finden Sie unter [Editing Think Times to Simulate Website Human Interaction Delays (Bearbeiten von Reaktionszeiten zum Simulieren von Website-Interaktionsverzögerungen des Benutzers)](../test/edit-think-times-in-load-test-scenarios.md). In einem Auslastungstest sind Webtests im Allgemeinen effizienter und generieren mehr Auslastung als Komponententests. Die Zahlen in der vorangehenden Tabelle gelten für die Ausführung von Webtests mit einer Reaktionszeit von 3 bis 5 Sekunden in einer typischen Webanwendung.
 
 Die hier aufgeführten Richtlinien stellen Richtwerte für die Hardwareplanung dar. Die Testleistung kann je nach Menge der Testdaten und Anzahl der Test-Agents sehr unterschiedlich sein. Die Testauslastung eines Test-Agents ist durch die CPU-Geschwindigkeit und den verfügbaren Arbeitsspeicher eingeschränkt. Testcontroller benötigen je nach Anzahl der Test-Agents und der in den Test einbezogenen Datenmenge größere Ressourcen.
 
