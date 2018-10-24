@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_addressoffset | Microsoft Docs'
+title: 'Idialinenumber:: Get_addressoffset | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e8911e1c1a1cce764775850520593efe4be9f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 96accb2f62c2a92b6e48eb9d8a70434381ad9cfe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828064"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Ruft den Offset Teil die Speicheradresse, an ein Block beginnt.  
+Ruft den Zeitzonenoffset-Teil der Speicheradresse, an dem ein Block beginnt, ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT get_addressOffset (
  [out] Gibt den Zeitzonenoffset-Teil der Speicheradresse, wo beginnt einen Block.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

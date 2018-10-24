@@ -14,33 +14,33 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1661788c010d55586413060d1e79b3630fa2d89e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f90a844d3e4e4d02a2e2eddd64e62d8fce59407c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825296"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Gewusst wie: Angeben von Symboldateispeicherorten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:  
   
--   Angegeben Pfade in der **/SymbolPath**-Option oder in der **_NT_SYMBOL_PATH**-Umgebungsvariable.  
+- Angegeben Pfade in der **/SymbolPath**-Option oder in der **_NT_SYMBOL_PATH**-Umgebungsvariable.  
   
--   Der genaue lokale Pfad, in dem eine Komponente kompiliert wurde.  
+- Der genaue lokale Pfad, in dem eine Komponente kompiliert wurde.  
   
--   Das Verzeichnis, das die Profilerstellungsdatendatei (.vsp oder .vsps) enthält.  
+- Das Verzeichnis, das die Profilerstellungsdatendatei (.vsp oder .vsps) enthält.  
   
- Microsoft stellt die PDB-Dateien für viele seiner Produkte online auf einem Symbolserver bereit. Wenn der Computer, den Sie für die Berichterstattung verwenden, mit dem Internet verbunden ist, verbindet sich VSPerfReport mit dem Online-Symbolserver, um automatisch nach Symbolinformationen zu suchen und die Dateien in einem lokalen Speicher zu speichern.  
+  Microsoft stellt die PDB-Dateien für viele seiner Produkte online auf einem Symbolserver bereit. Wenn der Computer, den Sie für die Berichterstattung verwenden, mit dem Internet verbunden ist, verbindet sich VSPerfReport mit dem Online-Symbolserver, um automatisch nach Symbolinformationen zu suchen und die Dateien in einem lokalen Speicher zu speichern.  
   
- Sie können den Speicherort der Symboldateien und den Microsoft-Symbolserver folgendermaßen angeben:  
+  Sie können den Speicherort der Symboldateien und den Microsoft-Symbolserver folgendermaßen angeben:  
   
--   Legen Sie die **_NT_SYMBOL_PATH**-Umgebungsvariable fest.  
+- Legen Sie die **_NT_SYMBOL_PATH**-Umgebungsvariable fest.  
   
--   Fügen Sie die **/SymbolPath**-Option zur VSPerfReport-Befehlszeile hinzu.  
+- Fügen Sie die **/SymbolPath**-Option zur VSPerfReport-Befehlszeile hinzu.  
   
- Sie können auch beide Methoden verwenden.  
+  Sie können auch beide Methoden verwenden.  
   
 > [!NOTE]
 >  Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf dem lokalen Computer installiert ist, wurde wahrscheinlich bereits ein Speicherort für die Windows-Symboldateien angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md). Sie müssen VSPerfReport dennoch konfigurieren, um den Speicherort und den Server, wie weiter unten in diesem Thema beschrieben, zu verwenden.  
@@ -49,13 +49,13 @@ Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, be
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>So konfigurieren Sie die Verwendung des Windows-Symbolservers  
   
-1.  Falls erforderlich, erstellen Sie ein Verzeichnis, um die Symboldateien lokal zu speichern.  
+1. Falls erforderlich, erstellen Sie ein Verzeichnis, um die Symboldateien lokal zu speichern.  
   
-2.  Verwenden Sie die folgende Syntax zum Festlegen der **_NT_SYMBOL_PATH**-Umgebungsvariable oder die VSPerfReport /SymbolPath-Option:  
+2. Verwenden Sie die folgende Syntax zum Festlegen der **_NT_SYMBOL_PATH**-Umgebungsvariable oder die VSPerfReport /SymbolPath-Option:  
   
-     **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
-     wobei *LocalStore* der Pfad des lokalen Verzeichnisses ist, das Sie erstellt haben.  
+    wobei *LocalStore* der Pfad des lokalen Verzeichnisses ist, das Sie erstellt haben.  
   
 ## <a name="specifying-component-symbol-files"></a>Angeben von Komponentensymboldateien  
  Profilerstellungstools suchen nach den PDB-Dateien der Komponenten, die Sie in ihren ursprünglichen Speicherorten erstellen möchten, die in den Komponenten oder in den Ordnern mit der Profilerstellungsdatendatei gespeichert werden. Sie können andere Speicherorte zum Suchen angeben, indem Sie eine oder mehrere Pfade zu **_NT_SYMBOL_PATH** oder der **/SymbolPath**-Option hinzufügen. Separate Pfade mit Semikolons.  

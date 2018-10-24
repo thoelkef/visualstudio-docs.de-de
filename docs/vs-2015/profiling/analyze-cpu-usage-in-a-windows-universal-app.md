@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833602"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analysieren der CPU-Auslastung in einer universellen Windows-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
  ![Releasebuild der App im Simulator ausführen](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  Stellen Sie das Bereitstellungsziel in Visual Studio auf **Simulator** und die Projektmappenkonfigurierung auf **Release** ein.  
+1. Stellen Sie das Bereitstellungsziel in Visual Studio auf **Simulator** und die Projektmappenkonfigurierung auf **Release** ein.  
   
-    -   Wenn Sie die App im Simulator ausführen, können Sie einfach zwischen der App und der Visual Studio IDE wechseln.  
+   -   Wenn Sie die App im Simulator ausführen, können Sie einfach zwischen der App und der Visual Studio IDE wechseln.  
   
-    -   Die Ausführung dieser App im **Release**-Modus gibt Ihnen eine bessere Ansicht der tatsächlichen Leistung Ihrer App.  
+   -   Die Ausführung dieser App im **Release**-Modus gibt Ihnen eine bessere Ansicht der tatsächlichen Leistung Ihrer App.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
-3.  Wählen Sie im Leistungs- und Diagnosehub **CPU-Auslastung** und dann **Starten** aus.  
+3. Wählen Sie im Leistungs- und Diagnosehub **CPU-Auslastung** und dann **Starten** aus.  
   
-     ![Diagnosesitzung der CPU-Auslastung starten](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Diagnosesitzung der CPU-Auslastung starten](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Klicken Sie nach dem Start der App auf **Maximale Anzahl abrufen**. Warten Sie nach Anzeige der Ausgabe etwa eine Minute, und klicken Sie dann auf **Maximale Anzahl asynchron abrufen**. Das Warten zwischen Schaltflächenklicks vereinfacht das Isolieren der Schaltflächenklickroutinen im Diagnosebericht.  
+4. Klicken Sie nach dem Start der App auf **Maximale Anzahl abrufen**. Warten Sie nach Anzeige der Ausgabe etwa eine Minute, und klicken Sie dann auf **Maximale Anzahl asynchron abrufen**. Das Warten zwischen Schaltflächenklicks vereinfacht das Isolieren der Schaltflächenklickroutinen im Diagnosebericht.  
   
-5.  Nachdem die zweite Ausgabezeile angezeigt wird, wählen Sie im Leistungs- und Diagnosehub **Auflistung beenden** aus.  
+5. Nachdem die zweite Ausgabezeile angezeigt wird, wählen Sie im Leistungs- und Diagnosehub **Auflistung beenden** aus.  
   
- ![Datenerfassung der CPU-Auslastung beenden](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Datenerfassung der CPU-Auslastung beenden](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Das CPU-Auslastungstool analysiert die Daten und zeigt den Bericht an.  
+   Das CPU-Auslastungstool analysiert die Daten und zeigt den Bericht an.  
   
- ![CPU-Auslastungsbericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CPU-Auslastungsbericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analysieren des CPU-Auslastungsberichts  
   

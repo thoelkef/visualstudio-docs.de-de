@@ -15,12 +15,12 @@ ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6044928f6c97d5b550c326c247128eb561d0cce8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3dc021923cebb276932071e290642daf8907ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826610"
 ---
 # <a name="properties-display-grid"></a>Anzeigeraster für Eigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Die **Eigenschaften** Fenster werden die Felder in einem Raster angezeigt. Die l
   
  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> besteht aus drei Methoden, die von der IDE aufgerufen werden:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> enthält die Anzahl der Objekte, die in angezeigt werden sollen die **Eigenschaften** Fenster.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> enthält die Anzahl der Objekte, die in angezeigt werden sollen die **Eigenschaften** Fenster.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Gibt die `IDispatch` Objekte, die in angezeigt werden sollen die **Eigenschaften** Fenster.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Gibt die `IDispatch` Objekte, die in angezeigt werden sollen die **Eigenschaften** Fenster.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> ermöglicht es eines der Objekte, die vom <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> vom Benutzer ausgewählt werden. Dadurch wird das VSPackage, um die Auswahl, die dem Benutzer in der Benutzeroberfläche angezeigten visuell zu aktualisieren.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> ermöglicht es eines der Objekte, die vom <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> vom Benutzer ausgewählt werden. Dadurch wird das VSPackage, um die Auswahl, die dem Benutzer in der Benutzeroberfläche angezeigten visuell zu aktualisieren.  
   
- Die **Eigenschaften** Fenster extrahiert Informationen aus der `IDispatch` Objekte zum Abrufen der Eigenschaften, die durchsucht werden. Verwendet den Eigenschaftenbrowser `IDispatch` , bitten Sie dem Objekt Eigenschaften unterstützt durch Abfragen `ITypeInfo`, erhalten Sie vom `IDispatch::GetTypeInfo`. Der Browser verwendet dann diese Werte zum Auffüllen der **Eigenschaften** Fenster und ändern Sie die Werte für die einzelnen Eigenschaften, die im Raster angezeigt. Die Informationen zu den Ausführungseigenschaften wird innerhalb des Objekts selbst verwaltet.  
+  Die **Eigenschaften** Fenster extrahiert Informationen aus der `IDispatch` Objekte zum Abrufen der Eigenschaften, die durchsucht werden. Verwendet den Eigenschaftenbrowser `IDispatch` , bitten Sie dem Objekt Eigenschaften unterstützt durch Abfragen `ITypeInfo`, erhalten Sie vom `IDispatch::GetTypeInfo`. Der Browser verwendet dann diese Werte zum Auffüllen der **Eigenschaften** Fenster und ändern Sie die Werte für die einzelnen Eigenschaften, die im Raster angezeigt. Die Informationen zu den Ausführungseigenschaften wird innerhalb des Objekts selbst verwaltet.  
   
- Da die zurückgegebenen Objekte unterstützen `IDispatch`, der Aufrufer erhalten Informationen wie z. B. den Namen des Objekts durch Aufrufen von entweder `IDispatch::Invoke` oder `ITypeInfo::Invoke` mit einer vordefinierten Dispatch-ID (DISPID), die die gewünschte Informationen darstellt. Deklarierte DISPIDs ist negativ, um sicherzustellen, dass sie nicht mit den benutzerdefinierten Bezeichnern in Konflikt stehen.  
+  Da die zurückgegebenen Objekte unterstützen `IDispatch`, der Aufrufer erhalten Informationen wie z. B. den Namen des Objekts durch Aufrufen von entweder `IDispatch::Invoke` oder `ITypeInfo::Invoke` mit einer vordefinierten Dispatch-ID (DISPID), die die gewünschte Informationen darstellt. Deklarierte DISPIDs ist negativ, um sicherzustellen, dass sie nicht mit den benutzerdefinierten Bezeichnern in Konflikt stehen.  
   
- Die **Eigenschaften** verschiedene Typen von Feldern, die Abhängigkeit von den Attributen der bestimmte Eigenschaften eines ausgewählten Objekts angezeigt. Diese Felder umfassen Bearbeitungsfelder, Dropdownlisten und Links zu benutzerdefinierten Editor-Dialogfeldern.  
+  Die **Eigenschaften** verschiedene Typen von Feldern, die Abhängigkeit von den Attributen der bestimmte Eigenschaften eines ausgewählten Objekts angezeigt. Diese Felder umfassen Bearbeitungsfelder, Dropdownlisten und Links zu benutzerdefinierten Editor-Dialogfeldern.  
   
--   In der eine Aufzählungsliste enthaltenen Werte werden abgerufen, indem eine <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> nach Abfragen `IDispatch`. Werte aus einer nummerierten Liste können durch Doppelklicken auf den Namen des Felds oder durch Klicken auf den Wert ein, und wählen den neuen Wert aus der Dropdown-Liste im Eigenschaftenraster geändert werden. Bei Eigenschaften, die Einstellungen aus Aufzählungslisten vordefinierte verfügen, durchläuft die verfügbaren Optionen durch Doppelklicken auf den Eigenschaftennamen in der Eigenschaftenliste. Doppelklicken Sie für vordefinierte Eigenschaften mit nur zwei Auswahlmöglichkeiten gibt, wie z. B. wahr/falsch auf den Namen der Eigenschaft, um zwischen den Optionen wechseln.  
+- In der eine Aufzählungsliste enthaltenen Werte werden abgerufen, indem eine <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> nach Abfragen `IDispatch`. Werte aus einer nummerierten Liste können durch Doppelklicken auf den Namen des Felds oder durch Klicken auf den Wert ein, und wählen den neuen Wert aus der Dropdown-Liste im Eigenschaftenraster geändert werden. Bei Eigenschaften, die Einstellungen aus Aufzählungslisten vordefinierte verfügen, durchläuft die verfügbaren Optionen durch Doppelklicken auf den Eigenschaftennamen in der Eigenschaftenliste. Doppelklicken Sie für vordefinierte Eigenschaften mit nur zwei Auswahlmöglichkeiten gibt, wie z. B. wahr/falsch auf den Namen der Eigenschaft, um zwischen den Optionen wechseln.  
   
--   Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> ist `false`, gibt an, dass der Wert geändert wurde, der Wert wird in Fettdruck angezeigt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> wird verwendet, um festzustellen, ob der Wert auf den ursprünglichen Wert zurückgesetzt werden kann. Wenn also, Sie wieder auf den Standardwert ändern können, indem mit der rechten Maustaste in des Werts und **zurücksetzen** im Menü angezeigt. Andernfalls müssen Sie den Wert manuell wieder auf den Standardwert zu ändern. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> ermöglicht auch lokalisieren und blenden die Namen der Eigenschaften, die während der Entwurfszeit angezeigt, jedoch wirkt sich nicht auf die Eigenschaftennamen, die während der Laufzeit angezeigt.  
+- Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> ist `false`, gibt an, dass der Wert geändert wurde, der Wert wird in Fettdruck angezeigt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> wird verwendet, um festzustellen, ob der Wert auf den ursprünglichen Wert zurückgesetzt werden kann. Wenn also, Sie wieder auf den Standardwert ändern können, indem mit der rechten Maustaste in des Werts und **zurücksetzen** im Menü angezeigt. Andernfalls müssen Sie den Wert manuell wieder auf den Standardwert zu ändern. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> ermöglicht auch lokalisieren und blenden die Namen der Eigenschaften, die während der Entwurfszeit angezeigt, jedoch wirkt sich nicht auf die Eigenschaftennamen, die während der Laufzeit angezeigt.  
   
--   Klicken auf die Schaltfläche mit den Auslassungspunkten (...) zeigt eine Liste der Eigenschaftswerte, die in denen der Benutzer (z. B. eine Farbauswahl angezeigt oder Schriftartenliste) auswählen kann. <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> Diese Werte bereitgestellt werden.  
+- Klicken auf die Schaltfläche mit den Auslassungspunkten (...) zeigt eine Liste der Eigenschaftswerte, die in denen der Benutzer (z. B. eine Farbauswahl angezeigt oder Schriftartenliste) auswählen kann. <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> Diese Werte bereitgestellt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

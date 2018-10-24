@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837560"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
   
  Alles in allem ändern Sie einen Befehl folgendermaßen:  
   
-1.  [Ermitteln, welche Befehle Sie ändern können](#what).  
+1. [Ermitteln, welche Befehle Sie ändern können](#what).  
   
-2.  [Erstellen Sie eine partielle Deklaration der festgelegten Klasse des entsprechenden Befehls](#extend).  
+2. [Erstellen Sie eine partielle Deklaration der festgelegten Klasse des entsprechenden Befehls](#extend).  
   
-3.  [Überschreiben Sie die Methoden ProcessOnStatus und ProcessOnMenu](#override) für den Befehl.  
+3. [Überschreiben Sie die Methoden ProcessOnStatus und ProcessOnMenu](#override) für den Befehl.  
   
- In diesem Thema wird diese Vorgehensweise erläutert.  
+   In diesem Thema wird diese Vorgehensweise erläutert.  
   
 > [!NOTE]
 >  Wenn Sie eigene Menübefehle erstellen möchten, finden Sie unter [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes  
  Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:  
   
--   `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
+- `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
   
--   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
+- `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` -der Benutzer hat nicht mehrere Formen ausgewählt  
+- `this.IsSingleSelection()` -der Benutzer hat nicht mehrere Formen ausgewählt  
   
--   `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat  
+- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat  
   
--   `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird  
+- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird  
   
- Weitere Informationen zur Verwendung von Element zu Element navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Weitere Informationen zur Verwendung von Element zu Element navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ComponentModel.Design.MenuCommand>   

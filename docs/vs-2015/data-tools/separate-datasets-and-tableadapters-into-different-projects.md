@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824322"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,29 +42,29 @@ Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://ms
   
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>So separieren Sie das DataSet in ein anderes Projekt  
   
-1.  Öffnen Sie eine Projektmappe, die ein DataSet (XSD-Datei) enthält.  
+1. Öffnen Sie eine Projektmappe, die ein DataSet (XSD-Datei) enthält.  
   
-    > [!NOTE]
-    >  Wenn die Projektmappe das Projekt keinen ist in dem Sie den Dataset-Code zu trennen möchten, erstellen Sie das Projekt oder fügen Sie ein vorhandenes Projekt zur Projektmappe hinzu.  
+   > [!NOTE]
+   >  Wenn die Projektmappe das Projekt keinen ist in dem Sie den Dataset-Code zu trennen möchten, erstellen Sie das Projekt oder fügen Sie ein vorhandenes Projekt zur Projektmappe hinzu.  
   
-2.  Doppelklicken Sie auf ein typisiertes Dataset-Datei (XSD-Datei) in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.  
+2. Doppelklicken Sie auf ein typisiertes Dataset-Datei (XSD-Datei) in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.  
   
-3.  Wählen Sie einen leeren Bereich der **Dataset-Designer**.  
+3. Wählen Sie einen leeren Bereich der **Dataset-Designer**.  
   
-4.  In der **Eigenschaften** Fenster Suchen der **DataSet-Projekt** Knoten.  
+4. In der **Eigenschaften** Fenster Suchen der **DataSet-Projekt** Knoten.  
   
-5.  In der **DataSet-Projekt** Liste, wählen Sie den Namen des Projekts, in dem Sie den Dataset-Code generieren möchten.  
+5. In der **DataSet-Projekt** Liste, wählen Sie den Namen des Projekts, in dem Sie den Dataset-Code generieren möchten.  
   
-     Nachdem Sie das Projekt auswählen, in dem Sie den Dataset-Code generieren möchten, die **Datasetdatei** -Eigenschaft mit einem standardmäßigen Dateinamen aufgefüllt. Sie können diesen Namen bei Bedarf ändern. Darüber hinaus, wenn Sie den Dataset-Code in einem bestimmten Verzeichnis generieren möchten, legen Sie die **Projektordner** -Eigenschaft auf den Namen eines Ordners.  
+    Nachdem Sie das Projekt auswählen, in dem Sie den Dataset-Code generieren möchten, die **Datasetdatei** -Eigenschaft mit einem standardmäßigen Dateinamen aufgefüllt. Sie können diesen Namen bei Bedarf ändern. Darüber hinaus, wenn Sie den Dataset-Code in einem bestimmten Verzeichnis generieren möchten, legen Sie die **Projektordner** -Eigenschaft auf den Namen eines Ordners.  
   
-    > [!NOTE]
-    >  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.  
+   > [!NOTE]
+   >  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.  
   
-6.  Speichern Sie das DataSet.  
+6. Speichern Sie das DataSet.  
   
-     Der Dataset-Code wird generiert, in dem ausgewählten Projekt im der **DataSet-Projekt** -Eigenschaft, und die **TableAdapter** Code in das aktuelle Projekt generiert wird.  
+    Der Dataset-Code wird generiert, in dem ausgewählten Projekt im der **DataSet-Projekt** -Eigenschaft, und die **TableAdapter** Code in das aktuelle Projekt generiert wird.  
   
- Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code eine separate Klassendatei in jedem Projekt angelegt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen dem Namen DatasetName.Designer.vb (oder DatasetName.Designer.cs), enthält die `TableAdapter` Code. Das Projekt, das angegeben die **Dataset-Projekt** Eigenschaft verfügt über eine Datei mit dem Namen dem Namen DatasetName.DataSet.Designer.vb (oder DatasetName.DataSet.Designer.cs), die den Dataset-Code enthält.  
+   Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code eine separate Klassendatei in jedem Projekt angelegt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen dem Namen DatasetName.Designer.vb (oder DatasetName.Designer.cs), enthält die `TableAdapter` Code. Das Projekt, das angegeben die **Dataset-Projekt** Eigenschaft verfügt über eine Datei mit dem Namen dem Namen DatasetName.DataSet.Designer.vb (oder DatasetName.DataSet.Designer.cs), die den Dataset-Code enthält.  
   
 > [!NOTE]
 >  Um die generierte Klassendatei anzuzeigen, wählen Sie das Dataset oder `TableAdapter` Projekt. Klicken Sie auf **Projektmappen-Explorer**Option **alle Dateien anzeigen** .  

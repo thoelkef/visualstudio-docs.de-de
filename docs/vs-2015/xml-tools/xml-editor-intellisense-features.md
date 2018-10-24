@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830742"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Funktionen des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
 ## <a name="intellisense-in-an-xslt-document"></a>IntelliSense in einem XSLT-Dokument  
  Nachdem Sie dem XSLT-Dokument eine benannte Vorlage oder ein Attribut hinzugefügt haben, können Sie mithilfe von IntelliSense Folgendes einfügen:  
   
--   Attributsatznamen  
+- Attributsatznamen  
   
--   Vorlagenmodi  
+- Vorlagenmodi  
   
--   Vorlagennamen  
+- Vorlagennamen  
   
--   Parameternamen für einen angegebenen Modus  
+- Parameternamen für einen angegebenen Modus  
   
--   Parameternamen für eine angegebene benannte Vorlage  
+- Parameternamen für eine angegebene benannte Vorlage  
   
- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) Thema.  
+  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) Thema.  
   
 ## <a name="auto-completion"></a>Automatische Vervollständigung  
  Durch den XML-Editor wird das Bearbeiten von XML erleichtert, weil die erforderliche XML-Syntax automatisch eingefügt wird. Angenommen, Sie geben folgendes Starttag ein:  
@@ -72,19 +72,19 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
   
  Ebenso fügt der XML-Editor auch die folgende XML-Syntax automatisch für Sie ein:  
   
--   Beenden einer Verarbeitungsanweisung: `?>`  
+- Beenden einer Verarbeitungsanweisung: `?>`  
   
--   Beenden eines CDATA-Blocks: `]]>`  
+- Beenden eines CDATA-Blocks: `]]>`  
   
--   Beenden eines Kommentars: `-->`  
+- Beenden eines Kommentars: `-->`  
   
--   Beenden einer DTD-Deklaration: `>`  
+- Beenden einer DTD-Deklaration: `>`  
   
- Der XML-Editor verfügt auch über die Fähigkeit, eine Namespacedeklaration einzufügen, wenn Sie ein durch einen Namespace qualifiziertes Element oder Attribut aus einer IntelliSense-Liste auswählen und der Namespace für dieses Element oder Attribut sich noch nicht im Gültigkeitsbereich befindet.  
+  Der XML-Editor verfügt auch über die Fähigkeit, eine Namespacedeklaration einzufügen, wenn Sie ein durch einen Namespace qualifiziertes Element oder Attribut aus einer IntelliSense-Liste auswählen und der Namespace für dieses Element oder Attribut sich noch nicht im Gültigkeitsbereich befindet.  
   
- Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und das Präfix an den `http://books`-Namespace gebunden ist, der im Dokument noch nicht deklariert wurde, wird die erforderliche Namespacedeklaration vom XML-Editor automatisch eingefügt. Daraus ergibt sich der folgende XML-Text:  
+  Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und das Präfix an den `http://books`-Namespace gebunden ist, der im Dokument noch nicht deklariert wurde, wird die erforderliche Namespacedeklaration vom XML-Editor automatisch eingefügt. Daraus ergibt sich der folgende XML-Text:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Überprüfung des Klammergleichgewichts  
  Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch mithilfe der Tastenkombination (STRG+]) von einer Klammer zur zugehörigen Klammer springen.  

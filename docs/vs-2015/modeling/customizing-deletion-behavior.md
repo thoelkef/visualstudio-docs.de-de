@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837558"
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
   
 #### <a name="to-set-delete-propagation"></a>So legen Sie die Löschweitergabe fest  
   
-1.  Wählen Sie auf die DSL-Definitionsdiagramm die *Rolle* , die Löschung weitergegeben werden soll. Die Rolle wird durch die Linie auf der linken oder rechten Seite eines Domänenbeziehungsfelds dargestellt.  
+1. Wählen Sie auf die DSL-Definitionsdiagramm die *Rolle* , die Löschung weitergegeben werden soll. Die Rolle wird durch die Linie auf der linken oder rechten Seite eines Domänenbeziehungsfelds dargestellt.  
   
-     Wenn Sie z. B. angeben möchten, dass beim Löschen eines Albums die zugehörigen Interpreten ebenfalls gelöscht werden, wählen Sie die Rolle aus, die mit der Domänenklasse "Interpret" verbunden ist.  
+    Wenn Sie z. B. angeben möchten, dass beim Löschen eines Albums die zugehörigen Interpreten ebenfalls gelöscht werden, wählen Sie die Rolle aus, die mit der Domänenklasse "Interpret" verbunden ist.  
   
-2.  Legen Sie im Fenster Eigenschaften die **löschen weitergeben** Eigenschaft.  
+2. Legen Sie im Fenster Eigenschaften die **löschen weitergeben** Eigenschaft.  
   
-3.  Drücken Sie F5, und überprüfen Sie, ob Folgendes zutrifft:  
+3. Drücken Sie F5, und überprüfen Sie, ob Folgendes zutrifft:  
   
-    -   Wird eine Instanz der Beziehung gelöscht, wird auch das Element in der ausgewählten Rolle gelöscht.  
+   -   Wird eine Instanz der Beziehung gelöscht, wird auch das Element in der ausgewählten Rolle gelöscht.  
   
-    -   Wird ein Element in der entgegengesetzten Rolle gelöscht, werden Instanzen der Beziehung sowie die verwandten Elemente in dieser Rolle gelöscht.  
+   -   Wird ein Element in der entgegengesetzten Rolle gelöscht, werden Instanzen der Beziehung sowie die verwandten Elemente in dieser Rolle gelöscht.  
   
- Sie sehen auch die **löschen weitergeben** option die **DSL-Details** Fenster. Wählen Sie eine Domänenklasse und öffnen Sie im Fenster "DSL-Details", die **Löschverhalten** Seite, indem Sie auf die Schaltfläche auf der Seite des Fensters. Die **Propagate** Option wird für die entgegengesetzte Rolle jeder Beziehung angezeigt. Die **Löschstil** Spalte gibt an, ob die **Propagate** Option ist die Standardeinstellung, aber keinen besonderen Effekt.  
+   Sie sehen auch die **löschen weitergeben** option die **DSL-Details** Fenster. Wählen Sie eine Domänenklasse und öffnen Sie im Fenster "DSL-Details", die **Löschverhalten** Seite, indem Sie auf die Schaltfläche auf der Seite des Fensters. Die **Propagate** Option wird für die entgegengesetzte Rolle jeder Beziehung angezeigt. Die **Löschstil** Spalte gibt an, ob die **Propagate** Option ist die Standardeinstellung, aber keinen besonderen Effekt.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Löschweitergabe mithilfe von Programmcode  
  Über die Optionen in der DSL-Definitionsdatei können Sie nur wählen, ob die Löschung an einen unmittelbaren Nachbarn weitergegeben wird. Um ein komplexeres Schema für die Löschweitergabe zu implementieren, können Sie Programmcode schreiben.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> Verwenden von "OnDeleting" und "OnDeleted"  
  Sie können `OnDeleting()` oder `OnDeleted()` in einer Domänenklasse oder in einer Domänenbeziehung überschreiben.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> wird aufgerufen, wenn ein Element im Begriff ist gelöscht zu werden, aber bevor seine Beziehungen getrennt wurden. Die Navigation zwischen dem Element und anderen Elementen ist noch möglich, und es befindet sich noch in `store.ElementDirectory`.  
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> wird aufgerufen, wenn ein Element im Begriff ist gelöscht zu werden, aber bevor seine Beziehungen getrennt wurden. Die Navigation zwischen dem Element und anderen Elementen ist noch möglich, und es befindet sich noch in `store.ElementDirectory`.  
   
-     Wenn mehrere Elemente gleichzeitig gelöscht werden, wird OnDeleting für alle aufgerufen, bevor die Löschungen ausgeführt werden.  
+    Wenn mehrere Elemente gleichzeitig gelöscht werden, wird OnDeleting für alle aufgerufen, bevor die Löschungen ausgeführt werden.  
   
-     `IsDeleting` hat den Wert "True".  
+    `IsDeleting` hat den Wert "True".  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> wird aufgerufen, nachdem das Element gelöscht wurde. Es verbleibt im CLR-Heap, sodass ggf. ein "Undo" ausgeführt werden kann, aber es ist nicht mehr mit anderen Elementen verbunden und wurde aus `store.ElementDirectory` entfernt. Für Beziehungen verweisen die Rollen immer noch die alten Rolleninhaber.`IsDeleted` ist true.  
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> wird aufgerufen, nachdem das Element gelöscht wurde. Es verbleibt im CLR-Heap, sodass ggf. ein "Undo" ausgeführt werden kann, aber es ist nicht mehr mit anderen Elementen verbunden und wurde aus `store.ElementDirectory` entfernt. Für Beziehungen verweisen die Rollen immer noch die alten Rolleninhaber.`IsDeleted` ist true.  
   
-3.  "OnDeleting" und "OnDeleted" werden aufgerufen, wenn der Benutzer nach dem Erstellen eines Elements "Undo" aufruft und wenn eine frühere Löschung in "Redo" wiederholt wird. Verwenden Sie `this.Store.InUndoRedoOrRollback`, um die Aktualisierung von Speicherelementen in diesen Fällen zu vermeiden. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. "OnDeleting" und "OnDeleted" werden aufgerufen, wenn der Benutzer nach dem Erstellen eines Elements "Undo" aufruft und wenn eine frühere Löschung in "Redo" wiederholt wird. Verwenden Sie `this.Store.InUndoRedoOrRollback`, um die Aktualisierung von Speicherelementen in diesen Fällen zu vermeiden. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Im folgenden Code wird z. B. ein Album gelöscht, wenn der letzte untergeordnete Song des Albums gelöscht wird:  
+   Im folgenden Code wird z. B. ein Album gelöscht, wenn der letzte untergeordnete Song des Albums gelöscht wird:  
   
 ```  
   

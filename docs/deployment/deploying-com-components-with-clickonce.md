@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868d9107edcc3490902bf677e364d9ad58c35d95
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820461"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige Aufgabe. Komponenten müssen global registriert werden und daher können dazu führen, dass unerwünschte Nebeneffekte zwischen überlappende Anwendungen. Dies ist in der Regel kein Problem in .NET Framework-Anwendungen, da Komponenten vollständig isoliert zu einer Anwendung werden oder Seite-an-Seite kompatibel sind. Visual Studio können Sie isolierte COM-Komponenten auf dem Windows XP oder neueren Betriebssystemen bereitgestellt.  
@@ -85,46 +85,46 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Zum Erstellen einer Windows-basierten Anwendung mit einer COM-Komponente  
   
-1.  Mit Visual Basic, aus der **Datei** Menü klicken Sie auf **neu**, klicken Sie dann **Projekt**.  
+1. Mit Visual Basic, aus der **Datei** Menü klicken Sie auf **neu**, klicken Sie dann **Projekt**.  
   
-2.  In der **neues Projekt** wählen Sie im Dialogfeld die **Visual Basic** Knoten, und wählen **Windows-Anwendung**. Geben Sie im Feld **Name** `RegFreeComDemo`ein.  
+2. In der **neues Projekt** wählen Sie im Dialogfeld die **Visual Basic** Knoten, und wählen **Windows-Anwendung**. Geben Sie im Feld **Name** `RegFreeComDemo`ein.  
   
-3.  In **Projektmappen-Explorer**, klicken Sie auf die **alle Dateien anzeigen** Schaltfläche, um die Projektverweise anzuzeigen.  
+3. In **Projektmappen-Explorer**, klicken Sie auf die **alle Dateien anzeigen** Schaltfläche, um die Projektverweise anzuzeigen.  
   
-4.  Mit der rechten Maustaste die **Verweise** Knoten, und wählen **Verweis hinzufügen** aus dem Kontextmenü.  
+4. Mit der rechten Maustaste die **Verweise** Knoten, und wählen **Verweis hinzufügen** aus dem Kontextmenü.  
   
-5.  In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **Durchsuchen** Registerkarte, navigieren Sie zu VB6Hello.dll, und wählen Sie diese.  
+5. In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **Durchsuchen** Registerkarte, navigieren Sie zu VB6Hello.dll, und wählen Sie diese.  
   
-     Ein **VB6Hello** Verweis wird in der Liste der Verweise angezeigt.  
+    Ein **VB6Hello** Verweis wird in der Liste der Verweise angezeigt.  
   
-6.  Zeigen Sie auf die **Toolbox**, wählen eine **Schaltfläche** steuern, und ziehen Sie dann auf die **Form1** Formular.  
+6. Zeigen Sie auf die **Toolbox**, wählen eine **Schaltfläche** steuern, und ziehen Sie dann auf die **Form1** Formular.  
   
-7.  In der **Eigenschaften** Fenster legen Sie die **Text** Eigenschaft **Hello**.  
+7. In der **Eigenschaften** Fenster legen Sie die **Text** Eigenschaft **Hello**.  
   
-8.  Doppelklicken Sie auf die Schaltfläche, um Ereignishandlercode hinzufügen, und fügen Sie in der Codedatei Code hinzu, so, dass der Handler wie folgt aussieht:  
+8. Doppelklicken Sie auf die Schaltfläche, um Ereignishandlercode hinzufügen, und fügen Sie in der Codedatei Code hinzu, so, dass der Handler wie folgt aussieht:  
   
-    ```vb  
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-        Dim VbObj As New VB6Hello.Class1  
-        VbObj.SayHello()  
-    End Sub  
-    ```  
+   ```vb  
+   Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
+       Dim VbObj As New VB6Hello.Class1  
+       VbObj.SayHello()  
+   End Sub  
+   ```  
   
 9. Führen Sie die Anwendung aus. Von der **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
   
- Als Nächstes müssen Sie das Steuerelement zu isolieren. Jede COM-Komponente, die Ihre Anwendung verwendet wird als COM-Verweis in Ihrem Projekt dargestellt. Diese Verweise werden unter der **Verweise** Knoten in der **Projektmappen-Explorer** Fenster. (Beachten Sie, die Sie hinzufügen können die Verweise entweder direkt die **Verweis hinzufügen** Befehl die **Projekt** Menü oder indirekt durch ein ActiveX-Steuerelement auf das Formular ziehen.)  
+   Als Nächstes müssen Sie das Steuerelement zu isolieren. Jede COM-Komponente, die Ihre Anwendung verwendet wird als COM-Verweis in Ihrem Projekt dargestellt. Diese Verweise werden unter der **Verweise** Knoten in der **Projektmappen-Explorer** Fenster. (Beachten Sie, die Sie hinzufügen können die Verweise entweder direkt die **Verweis hinzufügen** Befehl die **Projekt** Menü oder indirekt durch ein ActiveX-Steuerelement auf das Formular ziehen.)  
   
- Die folgenden Schritte zeigen, wie zum Isolieren von COM-Komponente, und veröffentlichen die aktualisierte Anwendung mit dem isolierten Steuerelement:  
+   Die folgenden Schritte zeigen, wie zum Isolieren von COM-Komponente, und veröffentlichen die aktualisierte Anwendung mit dem isolierten Steuerelement:  
   
 ##### <a name="to-isolate-a-com-component"></a>Um eine COM-Komponente zu isolieren.  
   
-1.  In **Projektmappen-Explorer**in die **Verweise** Knoten die **VB6Hello** Verweis.  
+1. In **Projektmappen-Explorer**in die **Verweise** Knoten die **VB6Hello** Verweis.  
   
-2.  In der **Eigenschaften** Fenster ändern Sie den Wert von der **isoliert** Eigenschaft **"false"** zu **"true"**.  
+2. In der **Eigenschaften** Fenster ändern Sie den Wert von der **isoliert** Eigenschaft **"false"** zu **"true"**.  
   
-3.  Von der **erstellen** Menü klicken Sie auf **Projektmappe**.  
+3. Von der **erstellen** Menü klicken Sie auf **Projektmappe**.  
   
- Jetzt auf, wenn Sie F5 drücken, wird die Anwendung funktioniert wie erwartet, aber es wird jetzt unter registrierungsfreies COM ausgeführt Um nachzuweisen, Aufheben der Registrierung der Komponente VB6Hello.dll, und führen RegFreeComDemo1.exe außerhalb von Visual Studio-IDE. Dieses Mal, wenn die Schaltfläche geklickt wird, funktioniert es weiterhin aus. Wenn Sie vorübergehend das Anwendungsmanifest umbenennen, tritt ein Fehler erneut.  
+   Jetzt auf, wenn Sie F5 drücken, wird die Anwendung funktioniert wie erwartet, aber es wird jetzt unter registrierungsfreies COM ausgeführt Um nachzuweisen, Aufheben der Registrierung der Komponente VB6Hello.dll, und führen RegFreeComDemo1.exe außerhalb von Visual Studio-IDE. Dieses Mal, wenn die Schaltfläche geklickt wird, funktioniert es weiterhin aus. Wenn Sie vorübergehend das Anwendungsmanifest umbenennen, tritt ein Fehler erneut.  
   
 > [!NOTE]
 >  Sie können das Fehlen einer COM-Komponente simulieren, indem Sie vorübergehend deren Registrierung aufheben. Öffnen Sie eine Eingabeaufforderung, wechseln Sie zu Ihrem Ordner "System", durch Eingabe `cd /d %windir%\system32`, dann heben Sie die Komponente, indem Sie eingeben `regsvr32 /u VB6Hello.dll`. Sie können es erneut registrieren, indem Sie die Eingabe `regsvr32 VB6Hello.dll`.  
@@ -133,15 +133,15 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Veröffentlichen Sie ein Anwendungsupdate mit dem eine isolierte COM-Komponente  
   
-1.  Von der **erstellen** Menü klicken Sie auf **veröffentlichen RegFreeComDemo**.  
+1. Von der **erstellen** Menü klicken Sie auf **veröffentlichen RegFreeComDemo**.  
   
-     Der Webpublishing-Assistent wird angezeigt.  
+    Der Webpublishing-Assistent wird angezeigt.  
   
-2.  Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem lokalen Computer, Datenträger, in dem Sie zugreifen können, und überprüfen die veröffentlichten Dateien.  
+2. Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem lokalen Computer, Datenträger, in dem Sie zugreifen können, und überprüfen die veröffentlichten Dateien.  
   
-3.  Klicken Sie auf **Fertig stellen** zum Veröffentlichen der Anwendung.  
+3. Klicken Sie auf **Fertig stellen** zum Veröffentlichen der Anwendung.  
   
- Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei dann enthalten ist. Das Steuerelement ist völlig isoliert ist, klicken Sie auf diese Anwendung, was bedeutet, dass wenn der Endbenutzer-Computer eine andere Version des Steuerelements mit einer anderen Anwendung verfügt, sie mit dieser Anwendung beeinflusst werden kann.  
+   Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei dann enthalten ist. Das Steuerelement ist völlig isoliert ist, klicken Sie auf diese Anwendung, was bedeutet, dass wenn der Endbenutzer-Computer eine andere Version des Steuerelements mit einer anderen Anwendung verfügt, sie mit dieser Anwendung beeinflusst werden kann.  
   
 ## <a name="reference-native-assemblies"></a>Native Verweisassemblys  
  Visual Studio unterstützt es sich um Verweise auf systemeigene Visual Basic 6.0- oder C++-Assemblys. solche Verweise werden als native Verweise bezeichnet. Aufschluss darüber, ob ein Verweis native ist, indem Sie überprüfen, die die **Dateityp** -Eigenschaftensatz auf **Native** oder **ActiveX**.  
@@ -155,23 +155,23 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
  Nicht jede Komponente ist ein geeigneter Kandidat für die registrierungsfreie COM Eine Komponente ist nicht gut geeignet, wenn eine der folgenden Bedingungen zutrifft:  
   
--   Die Komponente ist ein Out-of-Process-Server. EXE-Server werden nicht unterstützt. nur die DLLs werden unterstützt.  
+- Die Komponente ist ein Out-of-Process-Server. EXE-Server werden nicht unterstützt. nur die DLLs werden unterstützt.  
   
--   Die Komponente ist Teil des Betriebssystems oder einer Systemkomponente ein, z. B. XML, Internet Explorer oder Microsoft Data Access Components (MDAC) ist. Befolgen Sie die Richtlinie Redistribution des Autors der Komponente ein; Überprüfen Sie den Anbieter.  
+- Die Komponente ist Teil des Betriebssystems oder einer Systemkomponente ein, z. B. XML, Internet Explorer oder Microsoft Data Access Components (MDAC) ist. Befolgen Sie die Richtlinie Redistribution des Autors der Komponente ein; Überprüfen Sie den Anbieter.  
   
--   Die Komponente ist Teil einer Anwendung, z. B. Microsoft Office. Beispielsweise sollten Sie nicht versuchen, Microsoft Excel-Objektmodell zu isolieren. Dies ist Teil von Office und kann nur auf einem Computer mit dem vollständigen Office-Produkt installiert verwendet werden.  
+- Die Komponente ist Teil einer Anwendung, z. B. Microsoft Office. Beispielsweise sollten Sie nicht versuchen, Microsoft Excel-Objektmodell zu isolieren. Dies ist Teil von Office und kann nur auf einem Computer mit dem vollständigen Office-Produkt installiert verwendet werden.  
   
--   Die Komponente dient zur Verwendung als ein Add-in oder einem Snap-in, z. B. von einem Office-Add-in oder ein Steuerelement in einem Webbrowser. Solche Komponenten erfordern in der Regel eine Art der Registrierung des Partitionsschemas definiert, die von der hostumgebung, die das Manifest selbst nicht eingegangen ist.  
+- Die Komponente dient zur Verwendung als ein Add-in oder einem Snap-in, z. B. von einem Office-Add-in oder ein Steuerelement in einem Webbrowser. Solche Komponenten erfordern in der Regel eine Art der Registrierung des Partitionsschemas definiert, die von der hostumgebung, die das Manifest selbst nicht eingegangen ist.  
   
--   Die Komponente verwaltet einen physischen oder virtuellen Gerät für das System, z. B. einen Gerätetreiber für eine Druckwarteschlange.  
+- Die Komponente verwaltet einen physischen oder virtuellen Gerät für das System, z. B. einen Gerätetreiber für eine Druckwarteschlange.  
   
--   Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
- In einigen Fällen kann es möglich, dass der Entwickler es für die registrierungsfreie COM Umgestalten der Komponente sein Wenn dies nicht möglich ist, können Sie weiterhin erstellen und Veröffentlichen von Anwendungen, die über das standard-Registrierung-Schema mithilfe des Bootstrappers abhängig. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
+  In einigen Fällen kann es möglich, dass der Entwickler es für die registrierungsfreie COM Umgestalten der Komponente sein Wenn dies nicht möglich ist, können Sie weiterhin erstellen und Veröffentlichen von Anwendungen, die über das standard-Registrierung-Schema mithilfe des Bootstrappers abhängig. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   
- Eine COM-Komponente kann nur einmal pro Anwendung isoliert sein. Angenommen, Sie die gleiche COM-Komponente aus zwei verschiedenen isolieren können nicht **Klassenbibliothek** Projekte, die Teil derselben Anwendung sind. Dies führt zu einer Warnung, und die Anwendung kann nicht zur Laufzeit geladen. Um dieses Problem zu vermeiden, empfiehlt Microsoft, dass Sie die COM-Komponenten in einer einzigen Klassenbibliothek einkapseln.  
+  Eine COM-Komponente kann nur einmal pro Anwendung isoliert sein. Angenommen, Sie die gleiche COM-Komponente aus zwei verschiedenen isolieren können nicht **Klassenbibliothek** Projekte, die Teil derselben Anwendung sind. Dies führt zu einer Warnung, und die Anwendung kann nicht zur Laufzeit geladen. Um dieses Problem zu vermeiden, empfiehlt Microsoft, dass Sie die COM-Komponenten in einer einzigen Klassenbibliothek einkapseln.  
   
- Es gibt mehrere Szenarios, die auf die COM-Registrierung auf dem Computer des Entwicklers, erforderlich ist, obwohl die Bereitstellung der Anwendung des keine Registrierung erforderlich ist. Die `Isolated` Eigenschaft ist erforderlich, dass die COM-Komponente auf dem Computer des Entwicklers registriert werden, um das Manifest während des Buildvorgangs automatisch generieren. Sind keine Registrierung-Erfassen von Funktionen, die die selbstregistrierung während des Buildvorgangs aufrufen. Darüber hinaus werden alle Klassen, die nicht explizit definiert, in der Typbibliothek nicht im Manifest übernommen. Bei Verwendung eine COM-Komponente mit einem bereits vorhandenen Manifest, z. B. einen systemeigenen Verweis müssen die Komponente möglicherweise nicht zum Zeitpunkt der Entwicklung registriert werden. Registrierung ist jedoch erforderlich, wenn die Komponente ein ActiveX-Steuerelement ist, und es in die enthalten sein sollen die **Toolbox** und Windows Forms-Designer.  
+  Es gibt mehrere Szenarios, die auf die COM-Registrierung auf dem Computer des Entwicklers, erforderlich ist, obwohl die Bereitstellung der Anwendung des keine Registrierung erforderlich ist. Die `Isolated` Eigenschaft ist erforderlich, dass die COM-Komponente auf dem Computer des Entwicklers registriert werden, um das Manifest während des Buildvorgangs automatisch generieren. Sind keine Registrierung-Erfassen von Funktionen, die die selbstregistrierung während des Buildvorgangs aufrufen. Darüber hinaus werden alle Klassen, die nicht explizit definiert, in der Typbibliothek nicht im Manifest übernommen. Bei Verwendung eine COM-Komponente mit einem bereits vorhandenen Manifest, z. B. einen systemeigenen Verweis müssen die Komponente möglicherweise nicht zum Zeitpunkt der Entwicklung registriert werden. Registrierung ist jedoch erforderlich, wenn die Komponente ein ActiveX-Steuerelement ist, und es in die enthalten sein sollen die **Toolbox** und Windows Forms-Designer.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
