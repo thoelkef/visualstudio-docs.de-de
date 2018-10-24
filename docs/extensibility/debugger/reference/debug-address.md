@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Microsoft Docs
+title: DEBUG_ADDRESS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07312208967aeccfbd81f44587f84a43dfebf4c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d5851fd9fe7224d060b1454a7123b98f77216b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813478"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 Diese Struktur stellt eine Adresse dar.  
@@ -47,26 +47,26 @@ public struct DEBUG_ADDRESS {
   
 ## <a name="terms"></a>Begriffe  
  ulAppDomainID  
- Die Prozess-ID  
+ Die Prozess-ID.  
   
  guidModule  
  Die GUID des Moduls, das diese Adresse enthält.  
   
  tokClass  
- Das Token, die Klasse oder der Typ dieser Adresse identifizieren.  
+ Das Token identifiziert die Klasse oder eines Typs dieser Adresse.  
   
 > [!NOTE]
->  Dieser Wert gilt nur für ein Symbol-Anbieter und hat daher keine allgemeine Bedeutung außer als Bezeichner für einen Klassentyp.  
+>  Dieser Wert richtet sich nach einem symbolanbieter und hat daher keine allgemein Bedeutung außer als Bezeichner für einen Klassentyp.  
   
- addr  
- Ein [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) -Struktur, die eine Union von Strukturen enthält, die den einzelnen Adresstypen beschreiben. Der Wert `addr`.`dwKind` ergibt sich aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) -Enumeration, die erläutert, wie die Union zu interpretieren.  
+ Addr  
+ Ein [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, die eine Vereinigung von Strukturen enthält, in denen einzelne Adresse beschrieben. Der Wert `addr`.`dwKind` stammt aus dem [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) -Enumeration, die erläutert, wie die Union zu interpretieren.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode ausgefüllt werden.  
+ Diese Struktur wird zum Übergeben der [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode gefüllt werden soll.  
   
- **Warnung [nur C++]**  
+ **Warnung [nur für C++]**  
   
- Wenn `addr.dwKind` ist `ADDRESS_KIND_METADATA_LOCAL` und `addr.addr.addrLocal.pLocal` ist keine null-Wert, und dann Sie aufrufen müssen `Release` für den token auf:  
+ Wenn `addr.dwKind` ist `ADDRESS_KIND_METADATA_LOCAL` und, wenn `addr.addr.addrLocal.pLocal` nicht ist ein null-Wert, wird Sie aufrufen müssen `Release` für den token auf:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  

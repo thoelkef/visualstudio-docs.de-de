@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824437"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
   
  Für Folgendes werden Haltepunkte häufig verwendet:  
   
-1.  Zum Eingrenzen der Ursache eines Absturzes oder einer Blockade können Sie im gesamten Code Haltepunkte verteilen. Außerdem können Sie in der Nähe des Codes für den Methodenaufruf, von dem Sie annehmen, dass er den Fehler verursacht, ebenfalls Haltepunkte platzieren. Wenn Sie den Code durchlaufen, entfernen Sie die Haltepunkte und platzieren sie dann näher beieinander, um die fehlerhafte Codezeile einzugrenzen.  
+1. Zum Eingrenzen der Ursache eines Absturzes oder einer Blockade können Sie im gesamten Code Haltepunkte verteilen. Außerdem können Sie in der Nähe des Codes für den Methodenaufruf, von dem Sie annehmen, dass er den Fehler verursacht, ebenfalls Haltepunkte platzieren. Wenn Sie den Code durchlaufen, entfernen Sie die Haltepunkte und platzieren sie dann näher beieinander, um die fehlerhafte Codezeile einzugrenzen.  
   
-2.  Wenn Sie neuen Code einführen, platzieren Sie einen Haltepunkt am Anfang dieses Codes und durchlaufen diesen dann, um sicherzustellen, dass er sich wie erwartet verhält.  
+2. Wenn Sie neuen Code einführen, platzieren Sie einen Haltepunkt am Anfang dieses Codes und durchlaufen diesen dann, um sicherzustellen, dass er sich wie erwartet verhält.  
   
-3.  Wenn Sie kompliziertes Verhalten implementiert haben, legen Sie Haltepunkte für den algorithmischen Code fest, damit Sie die Werte von Variablen und die Daten überprüfen können, wenn das Programm unterbrochen wird.  
+3. Wenn Sie kompliziertes Verhalten implementiert haben, legen Sie Haltepunkte für den algorithmischen Code fest, damit Sie die Werte von Variablen und die Daten überprüfen können, wenn das Programm unterbrochen wird.  
   
-4.  Wenn Sie Code in C# oder C++ schreiben, verwenden Sie Haltepunkte zum Anhalten des Codes, um die Adresswerte (Suche nach NULL) und Verweiszähler beim Debuggen von speicherbezogenen Fehlern zu überprüfen.  
+4. Wenn Sie Code in C# oder C++ schreiben, verwenden Sie Haltepunkte zum Anhalten des Codes, um die Adresswerte (Suche nach NULL) und Verweiszähler beim Debuggen von speicherbezogenen Fehlern zu überprüfen.  
   
- Weitere Informationen zur Verwendung von Haltepunkten finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
+   Weitere Informationen zur Verwendung von Haltepunkten finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
 ### <a name="setting-conditional-breakpoints"></a>Festlegen bedingter Haltepunkte  
  Verwenden Sie bei Haltepunkten in einer Schleife oder Rekursion oder bei sehr vielen Haltepunkten, die Sie häufig schrittweise durchlaufen, einen bedingten Haltepunkt, damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Andernfalls müssen Sie sehr häufig F11 drücken.  

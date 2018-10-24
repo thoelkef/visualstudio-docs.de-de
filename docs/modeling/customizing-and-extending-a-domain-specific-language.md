@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816697"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen, die an dem Sie die Tools zur Modellierung definieren können:
@@ -35,7 +35,7 @@ Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen,
 ## <a name="customShapes"></a> In diesem Abschnitt
 
 |Um diesen Effekt zu erzielen.|In diesem Thema finden Sie unter|
-|----------------------------|-------------------------|
+|-|-|
 |Ermöglicht dem Benutzer zum Festlegen der Eigenschaften für Farbe und den Stil einer Form.|Mit der rechten Maustaste der Form oder einen Verbinder-Klasse, zeigen Sie auf **verfügbare hinzufügen**, und klicken Sie auf ein Element.<br /><br /> Finden Sie unter [Anpassen der Darstellung im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
 |Verschiedene Klassen von Modellelement in etwa wie im Diagramm, das Freigeben von Eigenschaften wie die ursprüngliche Höhe und Breite, Farbe, QuickInfos aussehen.|Verwenden Sie die Vererbung zwischen Formen oder die Connector-Klassen. Zuordnungen zwischen abgeleiteten Formen und abgeleiteter Domänenklassen, die Details der Zuordnung von den übergeordneten Elementen erben.<br /><br /> Oder anderen Domänenklassen die gleiche formklasse zuordnen.|
 |Eine Klasse von Modellelement wird durch verschiedene Formen Kontexten angezeigt.|Ordnen Sie mehr als eine formklasse, mit der gleichen Domänenklasse. Wenn Sie die Projektmappe erstellen, führen Sie den Fehlerbericht, und geben Sie den angeforderten Code, um zu entscheiden, welche Form verwenden.|

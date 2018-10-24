@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831810"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
 
@@ -42,7 +42,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
     > [!NOTE]
     > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt, als in den folgenden Anweisungen aufgeführt werden. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -98,9 +98,9 @@ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansich
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-    - Doppelklicken Sie im Designer auf die **Update** Schaltfläche.
+   - Doppelklicken Sie im Designer auf die **Update** Schaltfläche.
 
-    - In der **Eigenschaften** Fenster für die **Update** Schaltfläche der **Ereignisse** Schaltfläche. In der **klicken Sie auf** -Eigenschaft, geben Sie **Button1_Click**, und wählen Sie dann die EINGABETASTE.
+   - In der **Eigenschaften** Fenster für die **Update** Schaltfläche der **Ereignisse** Schaltfläche. In der **klicken Sie auf** -Eigenschaft, geben Sie **Button1_Click**, und wählen Sie dann die EINGABETASTE.
 
      Die Benutzersteuerelement-Codedatei wird im Code-Editor geöffnet, und der `Button1_Click`-Ereignishandler wird angezeigt. Später fügen Sie Code an diesen Ereignishandler.
 
@@ -116,11 +116,11 @@ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansich
 
 4. Ersetzen Sie die `Page_Load`-Methode der `VisualWebPart1`-Klasse durch folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Fügt dem Benutzersteuerelement eine monatliche Kalenderansicht hinzu.
+   - Fügt dem Benutzersteuerelement eine monatliche Kalenderansicht hinzu.
 
-    - Fügt ein Kontrollkästchen für jede Kalenderliste der Website hinzu.
+   - Fügt ein Kontrollkästchen für jede Kalenderliste der Website hinzu.
 
-    - Gibt eine Vorlage für jeden Typ von Element an, das in der Kalenderansicht angezeigt wird.
+   - Gibt eine Vorlage für jeden Typ von Element an, das in der Kalenderansicht angezeigt wird.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

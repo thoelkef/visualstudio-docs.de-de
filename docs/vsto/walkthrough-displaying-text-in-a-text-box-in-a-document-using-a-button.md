@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822558"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Schaltflächen und Textfeldern in einer Anpassung auf Dokumentebene für Microsoft Office Word beschrieben.  
@@ -29,13 +29,13 @@ ms.locfileid: "35257910"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Hinzufügen von Steuerelementen zum Word-Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit  
+- Hinzufügen von Steuerelementen zum Word-Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit  
   
--   Auffüllen eines Textfelds beim Klicken auf eine Schaltfläche  
+- Auffüllen eines Textfelds beim Klicken auf eine Schaltfläche  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -58,25 +58,25 @@ ms.locfileid: "35257910"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>So fügen Sie eine Schaltfläche und ein Textfeld hinzu  
   
-1.  Stellen Sie sicher, dass das Dokument im Visual Studio-Designer geöffnet ist.  
+1. Stellen Sie sicher, dass das Dokument im Visual Studio-Designer geöffnet ist.  
   
-2.  Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, ziehen Sie eine <xref:Microsoft.Office.Tools.Word.Controls.TextBox> Steuerelement auf das Dokument.  
+2. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, ziehen Sie eine <xref:Microsoft.Office.Tools.Word.Controls.TextBox> Steuerelement auf das Dokument.  
   
-    > [!NOTE]  
-    >  In Word werden Steuerelemente standardmäßig in einer Reihe mit Text abgelegt. Sie können anpassen, wie Steuerelemente und Formobjekte eingefügt werden, indem Sie auf die Standardeinstellung ändern der **bearbeiten** Registerkarte die **Optionen** in Word im Dialogfeld.  
+   > [!NOTE]  
+   >  In Word werden Steuerelemente standardmäßig in einer Reihe mit Text abgelegt. Sie können anpassen, wie Steuerelemente und Formobjekte eingefügt werden, indem Sie auf die Standardeinstellung ändern der **bearbeiten** Registerkarte die **Optionen** in Word im Dialogfeld.  
   
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.  
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.  
   
-4.  Suchen **TextBox1** in die **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds in **DisplayText**.  
+4. Suchen **TextBox1** in die **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds in **DisplayText**.  
   
-5.  Ziehen Sie eine **Schaltfläche** -Steuerelement auf das Dokument, und ändern Sie die folgenden Eigenschaften.  
+5. Ziehen Sie eine **Schaltfläche** -Steuerelement auf das Dokument, und ändern Sie die folgenden Eigenschaften.  
   
-    |Eigenschaft|Wert|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Text**|**Einfügen von Text**|  
+   |Eigenschaft|Wert|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**Text**|**Einfügen von Text**|  
   
- Jetzt können Sie den Code schreiben, der beim Klicken auf die Schaltfläche ausgeführt wird.  
+   Jetzt können Sie den Code schreiben, der beim Klicken auf die Schaltfläche ausgeführt wird.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Füllen Sie im Textfeld aus, wenn die Schaltfläche geklickt wird  
  Jedes Mal, wenn der Benutzer auf die Schaltfläche klickt **Hello World!** wird in das Textfeld hinzugefügt.  

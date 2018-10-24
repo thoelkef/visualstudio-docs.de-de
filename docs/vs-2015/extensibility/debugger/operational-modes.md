@@ -15,25 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817457"
 ---
 # <a name="operational-modes"></a>Betriebsmodi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Es gibt drei Modi, die in denen IDE, wie folgt verwendet werden kann:  
   
--   [Entwurfsmodus](#vsconoperationalmodesanchor1)  
+- [Entwurfsmodus](#vsconoperationalmodesanchor1)  
   
--   [Ausführungsmodus](#vsconoperationalmodesanchor2)  
+- [Ausführungsmodus](#vsconoperationalmodesanchor2)  
   
--   [Unterbrechungsmodus](#vsconoperationalmodesanchor3)  
+- [Unterbrechungsmodus](#vsconoperationalmodesanchor3)  
   
- Wie Ihre benutzerdefinierten Debug-Engine (DE) zwischen diesen Modus wechselt, ist eine implementierungsentscheidung, die Sie mit der übergangsmechanismen vertraut sein muss. Die DE kann oder dieser Modi kann nicht direkt implementieren. Diese Modi sind tatsächlich Debug Paket Modi, die Schalter basierend auf der Benutzeraktion oder Ereignisse aus dem DE. Der Übergang vom ausführungs-in den Unterbrechungsmodus ist z. B. durch eine Beenden-Ereignis aus dem DE ausgelöst hat. Der Übergang von Unterbrechung entweder oder Schritt Modus ausgeführt wird durch den Benutzer, die Vorgänge wie z. B. Schritt oder Execute ausgelöst hat. Weitere Informationen zu DE Übergänge, finden Sie unter [Steuern der Ausführung von](../../extensibility/debugger/control-of-execution.md).  
+  Wie Ihre benutzerdefinierten Debug-Engine (DE) zwischen diesen Modus wechselt, ist eine implementierungsentscheidung, die Sie mit der übergangsmechanismen vertraut sein muss. Die DE kann oder dieser Modi kann nicht direkt implementieren. Diese Modi sind tatsächlich Debug Paket Modi, die Schalter basierend auf der Benutzeraktion oder Ereignisse aus dem DE. Der Übergang vom ausführungs-in den Unterbrechungsmodus ist z. B. durch eine Beenden-Ereignis aus dem DE ausgelöst hat. Der Übergang von Unterbrechung entweder oder Schritt Modus ausgeführt wird durch den Benutzer, die Vorgänge wie z. B. Schritt oder Execute ausgelöst hat. Weitere Informationen zu DE Übergänge, finden Sie unter [Steuern der Ausführung von](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Entwurfsmodus  
  Im Entwurfsmodus ist der nonrunning Zustand Visual Studio zu debuggen, während dieses, den Zeitraums Debugfunktionen in Ihrer Anwendung festlegen können.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638172"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410987"
 ---
 # <a name="register-and-unregister-vspackages"></a>An- und Abmelden von VSPackages
 Verwenden Sie Attribute, zum Registrieren von einer VSPackages, aber  
@@ -33,7 +33,9 @@ Verwenden Sie Attribute, zum Registrieren von einer VSPackages, aber
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
-{. . .}  
+{
+    // ...
+}  
 ```  
   
 ## <a name="unregister-an-extension"></a>Aufheben der Registrierung einer Erweiterungs  
@@ -63,9 +65,9 @@ Der folgende Code zeigt, wie Sie ein neues Registrierungsattribut zu erstellen.
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
-    public class CustomRegistrationAttribute : RegistrationAttribute  
-    {  
-    }  
+public class CustomRegistrationAttribute : RegistrationAttribute  
+{  
+}  
 ```  
   
  Die <xref:System.AttributeUsageAttribute> auf Attributklassen verwendet, um das Programmelement in der das Attribut gehört, gibt an, ob es mehr als einmal verwendet werden kann, und gibt an, ob es geerbt werden kann (Klasse, Methode usw.) anzugeben.  
@@ -113,7 +115,7 @@ public override void Register(RegistrationAttribute.RegistrationContext context)
     {  
         if (packageKey != null)  
             packageKey.Close();  
-                }  
+    }  
 }  
   
 public override void Unregister(RegistrationContext context)  

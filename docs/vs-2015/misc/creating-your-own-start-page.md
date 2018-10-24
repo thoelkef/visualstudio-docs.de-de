@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815038"
 ---
 # <a name="creating-your-own-start-page"></a>Erstellen einer eigenen Startseite
 Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für Startseiten oder auf Grundlage einer leeren Startseite erstellen.  
@@ -57,52 +57,52 @@ Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für 
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>So erstellen Sie eine leere Startseite mithilfe der Projektvorlage für Startseiten  
   
-1.  Erstellen Sie ein Startseitenprojekt mithilfe der Projektvorlage für Startseiten, wie in der vorherigen Vorgehensweise beschrieben.  
+1. Erstellen Sie ein Startseitenprojekt mithilfe der Projektvorlage für Startseiten, wie in der vorherigen Vorgehensweise beschrieben.  
   
-2.  Öffnen Sie "StartPage.xaml".  
+2. Öffnen Sie "StartPage.xaml".  
   
-3.  Entfernen Sie den gesamten Seiteninhalt, und behalten Sie nur die äußeren XML-Elemente und das enthaltende <xref:System.Windows.Controls.Grid>-Element bei, sodass die XAML-Datei folgendem Beispiel ähnelt.  
+3. Entfernen Sie den gesamten Seiteninhalt, und behalten Sie nur die äußeren XML-Elemente und das enthaltende <xref:System.Windows.Controls.Grid>-Element bei, sodass die XAML-Datei folgendem Beispiel ähnelt.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Entfernen Sie alle Hilfsdateien, die Sie nicht benötigen.  
+4. Entfernen Sie alle Hilfsdateien, die Sie nicht benötigen.  
   
-     Behalten Sie für die Bereitstellung die VSIX-Datei und die PKGDEF-Datei.  
+    Behalten Sie für die Bereitstellung die VSIX-Datei und die PKGDEF-Datei.  
   
- Alternativ können Sie eine leere Startseite erstellen, indem Sie eine XAML-Datei mit der korrekten, von Visual Studio zu erkennenden Tagstruktur erstellen. Sie können dann Markup und CodeBehind hinzufügen, um die gewünschte Darstellung und die erforderlichen Funktionen zu erhalten. Weitere Informationen finden Sie unter [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
+   Alternativ können Sie eine leere Startseite erstellen, indem Sie eine XAML-Datei mit der korrekten, von Visual Studio zu erkennenden Tagstruktur erstellen. Sie können dann Markup und CodeBehind hinzufügen, um die gewünschte Darstellung und die erforderlichen Funktionen zu erhalten. Weitere Informationen finden Sie unter [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Testen und Anwenden der benutzerdefinierten Startseite  
  Legen Sie zum Ausführen der benutzerdefinierten Startseite die primäre Instanz erst fest, wenn Sie sicher sind, dass kein Absturz erfolgt. Wenn Sie die benutzerdefinierte Startseite getestet haben, können Sie sie für Ihr System übernehmen. Dazu führen Sie die letzten drei Schritte dieser Vorgehensweise in der primären Visual Studio-Instanz aus.  
   
 #### <a name="to-test-a-custom-start-page"></a>So testen Sie eine benutzerdefinierte Startseite  
   
-1.  Drücken Sie F5.  
+1. Drücken Sie F5.  
   
-     Die experimentelle Visual Studio-Instanz wird mit der neuen installierten Startseite geöffnet, sie ist aber nicht ausgewählt.  
+    Die experimentelle Visual Studio-Instanz wird mit der neuen installierten Startseite geöffnet, sie ist aber nicht ausgewählt.  
   
-2.  Klicken Sie in der experimentellen Visual Studio-Instanz im Menü **Extras** auf **Optionen**.  
+2. Klicken Sie in der experimentellen Visual Studio-Instanz im Menü **Extras** auf **Optionen**.  
   
-3.  Wählen Sie im Dialogfeld **Optionen** unter **Umgebung**die Option **Start**aus. Wählen Sie dann in der Liste **Startseite anpassen** die XAML-Datei aus, und klicken Sie auf **OK**.  
+3. Wählen Sie im Dialogfeld **Optionen** unter **Umgebung**die Option **Start**aus. Wählen Sie dann in der Liste **Startseite anpassen** die XAML-Datei aus, und klicken Sie auf **OK**.  
   
-4.  Klicken Sie im Menü **Ansicht** auf **Startseite**.  
+4. Klicken Sie im Menü **Ansicht** auf **Startseite**.  
   
-     Die Arbeitsstartseite wird angezeigt. Sie müssen die experimentelle Instanz schließen, alle geänderten Dateien erneut kopieren und dann die experimentelle Instanz erneut öffnen, damit die Änderungen angezeigt werden.  
+    Die Arbeitsstartseite wird angezeigt. Sie müssen die experimentelle Instanz schließen, alle geänderten Dateien erneut kopieren und dann die experimentelle Instanz erneut öffnen, damit die Änderungen angezeigt werden.  
   
- Sie können die benutzerdefinierte Startseite freigeben. Dazu laden Sie die VSIX-Datei aus dem Verzeichnis "bin\debug" in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website bzw. eine andere Website oder eine Intranetfreigabe. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Sie können die benutzerdefinierte Startseite freigeben. Dazu laden Sie die VSIX-Datei aus dem Verzeichnis "bin\debug" in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website bzw. eine andere Website oder eine Intranetfreigabe. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   

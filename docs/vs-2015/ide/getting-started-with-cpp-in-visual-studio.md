@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816596"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 #### <a name="to-create-a-console-app"></a>Erstellen einer Konsolen-App  
   
-1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
-     ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  Wählen Sie in der **Visual C++** Kategorie die Vorlage **Win32-Konsolenanwendung** aus, und nennen Sie das Projekt `GreetingsConsoleApp`.  
+2. Wählen Sie in der **Visual C++** Kategorie die Vorlage **Win32-Konsolenanwendung** aus, und nennen Sie das Projekt `GreetingsConsoleApp`.  
   
-     ![Vorlage für eine Win32-Konsolenanwendung](../ide/media/c-ide-newprojectdlg.png "C++IDE_DialogNeuesProjekt")  
+    ![Vorlage für eine Win32-Konsolenanwendung](../ide/media/c-ide-newprojectdlg.png "C++IDE_DialogNeuesProjekt")  
   
-3.  Wenn der Win32-Anwendungs-Assistent angezeigt wird, wählen Sie die Schaltfläche **Fertig stellen** aus.  
+3. Wenn der Win32-Anwendungs-Assistent angezeigt wird, wählen Sie die Schaltfläche **Fertig stellen** aus.  
   
-     ![Assistent für Win32-Konsolenanwendung](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Assistent für Win32-Konsolenanwendung](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- Das Projekt und die Projektmappe "GreetingsConsoleApp", mit den grundlegenden Dateien für eine Win32-Konsolen-App, werden erstellt und in **Projektmappen-Explorer**automatisch geladen. Die Datei "GreetingsConsoleApp.cpp" wird im Code-Editor geöffnet. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
+   Das Projekt und die Projektmappe "GreetingsConsoleApp", mit den grundlegenden Dateien für eine Win32-Konsolen-App, werden erstellt und in **Projektmappen-Explorer**automatisch geladen. Die Datei "GreetingsConsoleApp.cpp" wird im Code-Editor geöffnet. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
- Abbildung 4: Projektelemente  
+   Abbildung 4: Projektelemente  
   
- ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> Hinzufügen von Code zur Anwendung  
  Als Nächstes fügen Sie Code hinzu, um das Wort "Hello" im Konsolenfenster anzuzeigen.  
@@ -117,40 +117,40 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 #### <a name="to-add-a-breakpoint"></a>Hinzufügen eines Haltepunktes  
   
-1.  Fügen Sie über die Menüleiste in der Zeile `return 0;`einen Haltepunkt hinzu. Sie können auch einfach in den linken Rand klicken, um einen Haltepunkt zu setzen.  
+1. Fügen Sie über die Menüleiste in der Zeile `return 0;`einen Haltepunkt hinzu. Sie können auch einfach in den linken Rand klicken, um einen Haltepunkt zu setzen.  
   
-     ![Befehl „Haltepunkt umschalten“ im Menü „Debuggen“](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-StartDebugging")  
+    ![Befehl „Haltepunkt umschalten“ im Menü „Debuggen“](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-StartDebugging")  
   
-     Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.  
+    Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.  
   
-2.  Drücken Sie die F5-TASTE, um das Debuggen zu starten.  
+2. Drücken Sie die F5-TASTE, um das Debuggen zu starten.  
   
-     Der Debugger wird gestartet, und ein Konsolenfenster mit dem Wort **Hello**wird angezeigt.  
+    Der Debugger wird gestartet, und ein Konsolenfenster mit dem Wort **Hello**wird angezeigt.  
   
-     ![„Hello“-Text im Windows-Befehlseingabeaufforderungsfenster](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![„Hello“-Text im Windows-Befehlseingabeaufforderungsfenster](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  Drücken Sie UMSCHALT + F5, um den Debugvorgang zu beenden.  
+3. Drücken Sie UMSCHALT + F5, um den Debugvorgang zu beenden.  
   
- Weitere Informationen finden Sie unter [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md).  
+   Weitere Informationen finden Sie unter [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a>Erstellen einer Releaseversion der App  
  Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releasebuild der Anwendung vorbereiten.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Bereinigen der Projektmappendateien und Erstellen einer Releaseversion  
   
-1.  Löschen Sie in der Menüleiste Zwischendateien und Ausgabedateien, die bei vorherigen Builds erstellt wurden.  
+1. Löschen Sie in der Menüleiste Zwischendateien und Ausgabedateien, die bei vorherigen Builds erstellt wurden.  
   
-     ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  Ändern Sie die Buildkonfiguration für GreetingsConsoleApp von **Debuggen** zu **Version**.  
+2. Ändern Sie die Buildkonfiguration für GreetingsConsoleApp von **Debuggen** zu **Version**.  
   
-     ![Erstellen einer Releaseversion der Anwendung](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![Erstellen einer Releaseversion der Anwendung](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  Erstellen Sie die Projektmappe.  
+3. Erstellen Sie die Projektmappe.  
   
-     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio Samples](../ide/visual-studio-samples.md).  
+   Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
