@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849398"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn und ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Die Unterbefehle **ProcessOff** und **ProcessOn** von „VSPerfCmd.exe“ halten
   
  Die Unterbefehle **ProcessOff** und **ProcessOn** haben außerdem Auswirkungen auf die Start/Stop-Zähler von Prozessen, der von den Profiler-API-Funktionen bearbeitet wird.  
   
--   **ProcessOff** legt die Start/Stop-Zähler sofort auf 0 (null) fest und hält die Profilerstellung daher an.  
+- **ProcessOff** legt die Start/Stop-Zähler sofort auf 0 (null) fest und hält die Profilerstellung daher an.  
   
--   **ProcessOff** legt die Start/Stop-Zähler sofort auf 1 fest und setzt die Profilerstellung daher fort.  
+- **ProcessOff** legt die Start/Stop-Zähler sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
- Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
+  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntax  
   

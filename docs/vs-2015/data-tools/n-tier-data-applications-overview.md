@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852920"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über N-Tier-Datenanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-Tarif *--datenanwendungen sind datenanwendungen, die in mehrere voneinander *E
 ## <a name="presentation-tier"></a>Präsentationsebene  
  Die *Präsentationsebene* ist die Ebene, in dem Benutzer, die mit einer Anwendung interagieren. Sie enthält oft auch zusätzliche Anwendungslogik. Zu den typischen Komponenten einer Präsentationsebene gehören:  
   
--   Komponenten zur Datenbindung, etwa <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator>.  
+- Komponenten zur Datenbindung, etwa <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen für die Verwendung in der Präsentationsebene.  
+- Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen für die Verwendung in der Präsentationsebene.  
   
- Die Präsentationsebene greift der mittleren Ebene in der Regel mithilfe eines Dienstverweises auf (z. B. eine [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenschicht unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.  
+  Die Präsentationsebene greift der mittleren Ebene in der Regel mithilfe eines Dienstverweises auf (z. B. eine [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenschicht unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.  
   
 ## <a name="middle-tier"></a>Mittlere Ebene  
  Die *mittleren Ebene* ist die Ebene, die die Präsentationsebene und Datenebene für die Kommunikation miteinander verwenden. Zu den typischen Komponenten einer mittleren Ebene gehören:  
   
--   Geschäftslogik, z. B. Geschäftsregeln und Datenvalidierung.  
+- Geschäftslogik, z. B. Geschäftsregeln und Datenvalidierung.  
   
--   Komponenten und Logik für den Datenzugriff, wie beispielsweise:  
+- Komponenten und Logik für den Datenzugriff, wie beispielsweise:  
   
-    -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und ["DataAdapters" und "DataReaders"](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und ["DataAdapters" und "DataReaders"](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen.  
+  -   Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen.  
   
-    -   Allgemeine Anwendungsdienste wie Authentifizierung, Autorisierung und Personalisierung.  
+  -   Allgemeine Anwendungsdienste wie Authentifizierung, Autorisierung und Personalisierung.  
   
- In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der mittleren Ebene einer N-Tier-Anwendung dargestellt.  
+  In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der mittleren Ebene einer N-Tier-Anwendung dargestellt.  
   
- ![Mittlere Ebene Komponenten](../data-tools/media/ntiermid.png "NtierMid")  
-Mittlere Ebene  
+  ![Mittlere Ebene Komponenten](../data-tools/media/ntiermid.png "NtierMid")  
+  Mittlere Ebene  
   
- Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.  
+  Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.  
   
 ## <a name="data-tier"></a>Datenschicht  
  Die *Datenebene* ist im Grunde der Server, die Daten einer Anwendung gespeichert (z. B. einem Server mit [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 67148180fab5c712ee15551cf60a8874f427dc0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845638"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854844"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht: Samplingdaten zum .NET-Speicher
 In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die die Samplingmethode verwenden, werden die Anweisungen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben. Die Spalten enthalten auch die Größe und Anzahl der Zuordnungen.  
@@ -26,21 +26,21 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
   
  Eine Anweisung wird mit dem Folgenden identifiziert:  
   
--   Die Quelldatei, die die Funktionsanweisung enthält.  
+- Die Quelldatei, die die Funktionsanweisung enthält.  
   
--   Die Funktion, die die Anweisung enthält.  
+- Die Funktion, die die Anweisung enthält.  
   
--   Die Quellzeile, an der die Anweisung beginnt.  
+- Die Quellzeile, an der die Anweisung beginnt.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
   
--   Die Quellzeile, an der die Anweisung endet.  
+- Die Quellzeile, an der die Anweisung endet.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
- Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
   
- Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
+  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
   
 |Spalte|Beschreibung |  
 |------------|-----------------|  

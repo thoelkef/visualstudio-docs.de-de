@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 2739a72fa356d9845b5e76304e101819b7e263d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852205"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Gibt an, ob nur Benutzercode, die mit nur mein Code in Visual Studio debuggen
 Sie können konfigurieren, dass Visual Studio für das automatische System-, Framework- und andere Aufrufe überspringen und diese Aufrufe in das Aufruflistenfenster zu reduzieren. Das Feature, das aktiviert oder deaktiviert dieses Verhalten wird aufgerufen, *nur mein Code*. In diesem Thema wird beschrieben, wie nur mein Code in c#, Visual Basic, C++ und JavaScript-Projekten verwendet wird.
@@ -49,13 +49,13 @@ Die **Module** Fenster können Sie ermitteln, welche Codemodule, die der Debugge
   
  Drei Attribute beeinflussen außerdem, was der Debugger als eigenen Code ansieht:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> teilt dem Debugger mit, dass der Code, auf den er angewendet wird, kein eigener Code ist.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> teilt dem Debugger mit, dass der Code, auf den er angewendet wird, kein eigener Code ist.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> blendet den Code für den Debugger aus, auch wenn Nur mein Code deaktiviert wird.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> blendet den Code für den Debugger aus, auch wenn Nur mein Code deaktiviert wird.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> veranlasst den Debugger, den vorliegenden Code nicht in Einzelschritten, sondern in Prozedurschritten zu durchlaufen.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> veranlasst den Debugger, den vorliegenden Code nicht in Einzelschritten, sondern in Prozedurschritten zu durchlaufen.  
   
- Der übrige Code wird als Benutzercode angesehen.  
+  Der übrige Code wird als Benutzercode angesehen.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Schrittverhalten  
  Wenn Sie **Einzelschritt** (Tastenkombination: F11) nicht benutzerseitiger Code, überspringt der Debugger den Code an die nächste benutzeranweisung. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger, die in die nächste Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
@@ -79,17 +79,17 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
   
  Standardmäßig behandelt der Debugger diese Funktionen als Nichtbenutzercode in Aufruflistenfenstern:  
   
--   Funktionen mit entfernten Quellinformationen in ihrer Symboldatei.  
+- Funktionen mit entfernten Quellinformationen in ihrer Symboldatei.  
   
--   Funktionen, bei denen die Symboldateien angeben, dass keine Quelldatei vorhanden ist, die dem Stapelrahmen entspricht.  
+- Funktionen, bei denen die Symboldateien angeben, dass keine Quelldatei vorhanden ist, die dem Stapelrahmen entspricht.  
   
--   Die Funktionen sind in den `*.natjmc`-Dateien im Ordner `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` definiert.  
+- Die Funktionen sind in den `*.natjmc`-Dateien im Ordner `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` definiert.  
   
- **Stepping**  
+  **Stepping**  
   
- Standardmäßig werden nur Funktionen, die in `*.natstepfilter`-Dateien im `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`-Ordner festgelegt sind, als Nichhtbenutzercode angesehen.  
+  Standardmäßig werden nur Funktionen, die in `*.natstepfilter`-Dateien im `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`-Ordner festgelegt sind, als Nichhtbenutzercode angesehen.  
   
- Sie können Ihre eigenen `.natstepfilter` und `.natjmc` erstellen, um das Schrittverhalten und das Verhalten der Aufruflistenfenster in `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` anzupassen.  
+  Sie können Ihre eigenen `.natstepfilter` und `.natjmc` erstellen, um das Schrittverhalten und das Verhalten der Aufruflistenfenster in `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` anzupassen.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Schrittverhalten  
  Wenn Sie **Einzelschritt** (Tastenkombination: F11) Nichtbenutzercode aus Benutzercode, überspringt der Debugger den Code in die nächste Zeile von Benutzercode. Wenn Sie **Ausführen bis Rücksprung** (Tastatur: UMSCHALT + F11), der Debugger, die in die nächste Zeile des Benutzercodes ausgeführt wird. Wenn kein Benutzercode festgestellt wird, wird die Ausführung wird, bis die app fortgeführt beendet wird, ein Haltepunkt erreicht wird, oder eine Ausnahme auftritt.  
@@ -102,11 +102,11 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen des schrittverhaltens  
  Sie können Funktionen angeben, die zu überspringen sind, indem Sie sie als Nichtbenutzercode in `*.natstepfilter`-Dateien auflisten.  
   
--   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natstepfilter-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
+- Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natstepfilter-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
   
--   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natstepfilter-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
+- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natstepfilter-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
   
- NATSTEPFILTER-Dateien sind XML-Dateien mit folgender Syntax:  
+  NATSTEPFILTER-Dateien sind XML-Dateien mit folgender Syntax:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -134,11 +134,11 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen des aufruflistenverhaltens  
  Sie können Module, Quelldateien und Funktionen angeben, die als Nichtbenutzercode in Aufruflisten behandelt werden, indem sie in `*.natjmc`-Dateien angegeben werden.  
   
--   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natjmc-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
+- Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen Sie die natjmc-Datei, um die `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` Ordner.  
   
--   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natjmc-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
+- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen Sie die natjmc-Datei, um die `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` Ordner.  
   
- NATJMC-Dateien sind XML-Dateien mit folgender Syntax:  
+  NATJMC-Dateien sind XML-Dateien mit folgender Syntax:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -196,19 +196,19 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
   
  Der JavaScript-Debugger klassifiziert automatisch diese Codetypen:  
   
--   Skript, das ausgeführt wird, indem Sie die Übergabe einer Zeichenfolge an der vom Host bereitgestellten `eval` Funktion wird als klassifiziert **MyCode**.  
+- Skript, das ausgeführt wird, indem Sie die Übergabe einer Zeichenfolge an der vom Host bereitgestellten `eval` Funktion wird als klassifiziert **MyCode**.  
   
--   Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `Function` Konstruktor wird als klassifiziert **LibraryCode**.  
+- Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `Function` Konstruktor wird als klassifiziert **LibraryCode**.  
   
--   Skript, das in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK enthalten ist, wird als klassifiziert **LibraryCode**.  
+- Skript, das in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK enthalten ist, wird als klassifiziert **LibraryCode**.  
   
--   Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Funktionen als klassifiziert **UnrelatedCode**.  
+- Skript, das ausgeführt wird, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Funktionen als klassifiziert **UnrelatedCode**.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` legt anderen Benutzer- und Nichtbenutzercode für alle Visual Studio-JavaScript-Projekte fest.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` legt anderen Benutzer- und Nichtbenutzercode für alle Visual Studio-JavaScript-Projekte fest.  
   
- Sie können die Standardklassifizierungen ändern und bestimmte Dateien und URLs klassifizieren, indem Sie dem Stammordner eines Projekts eine JSON-Datei mit dem Namen `mycode.json` hinzufügen.  
+  Sie können die Standardklassifizierungen ändern und bestimmte Dateien und URLs klassifizieren, indem Sie dem Stammordner eines Projekts eine JSON-Datei mit dem Namen `mycode.json` hinzufügen.  
   
- Alle anderen Code als klassifiziert **MyCode**.  
+  Alle anderen Code als klassifiziert **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Schrittverhalten  
   
@@ -233,30 +233,30 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
 ###  <a name="BKMK_JS_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn ein Ausnahmefehler auftritt in:  
   
--   **MyCode** oder **LibraryCode** Code, unterbricht der Debugger immer.  
+- **MyCode** oder **LibraryCode** Code, unterbricht der Debugger immer.  
   
--   **UnrelatedCode** Code und **MyCode** oder **LibraryCode** Code befindet sich in der Aufrufliste befindet, unterbricht der Debugger.  
+- **UnrelatedCode** Code und **MyCode** oder **LibraryCode** Code befindet sich in der Aufrufliste befindet, unterbricht der Debugger.  
   
- Wenn Ausnahmen der ersten Chance für die Ausnahme im Dialogfeld "Ausnahmen" aktiviert sind, und die Ausnahme, in ausgelöst wird **LibraryCode** oder **UnrelatedCode** Code:  
+  Wenn Ausnahmen der ersten Chance für die Ausnahme im Dialogfeld "Ausnahmen" aktiviert sind, und die Ausnahme, in ausgelöst wird **LibraryCode** oder **UnrelatedCode** Code:  
   
--   Wenn die Ausnahme behandelt wird, unterbrochen nicht der Debugger.  
+- Wenn die Ausnahme behandelt wird, unterbrochen nicht der Debugger.  
   
--   Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.  
+- Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Nur mein Code anpassen  
  Um Benutzer- und Nichtbenutzercode für ein einzelnes Visual Studio-Projekt zu kategorisieren, fügen Sie dem Stammordner des Projekts eine JSON-Datei mit dem Namen `mycode.json` hinzu.  
   
  Klassifizierungen werden in dieser Reihenfolge ausgeführt:  
   
-1.  Standardklassifizierungen  
+1. Standardklassifizierungen  
   
-2.  Klassifizierungen in der `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Datei  
+2. Klassifizierungen in der `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Datei  
   
-3.  Klassifizierungen in der Datei `mycode. json` des aktuellen Projekts  
+3. Klassifizierungen in der Datei `mycode. json` des aktuellen Projekts  
   
- Jeder Klassifizierungsschritt überschreibt die vorherigen Schritte. Eine JSON-Datei muss nicht alle Schlüsselwertpaare auflisten und die **MyCode**, **Bibliotheken**, und **Unrelated** Werte können leere Arrays sein.  
+   Jeder Klassifizierungsschritt überschreibt die vorherigen Schritte. Eine JSON-Datei muss nicht alle Schlüsselwertpaare auflisten und die **MyCode**, **Bibliotheken**, und **Unrelated** Werte können leere Arrays sein.  
   
- JSON-Dateien für eigenen Code verwenden folgende Syntax:  
+   JSON-Dateien für eigenen Code verwenden folgende Syntax:  
   
 ```json  
 {  
@@ -294,15 +294,15 @@ Ab Visual Studio 2017 15.8, Sie können angeben, ob nur mein Code für die Verwe
   
  Sie können den Wert auf eines dieser Schlüsselwörter ändern:  
   
--   `MyCode`  klassifiziert das Skript als **MyCode**.  
+- `MyCode`  klassifiziert das Skript als **MyCode**.  
   
--   `Library`  klassifiziert das Skript als **LibraryCode**.  
+- `Library`  klassifiziert das Skript als **LibraryCode**.  
   
--   `Unrelated`  klassifiziert das Skript als **UnrelatedCode**.  
+- `Unrelated`  klassifiziert das Skript als **UnrelatedCode**.  
   
- **MyCode, Libraries und Unrelated**  
+  **MyCode, Libraries und Unrelated**  
   
- Die **MyCode**, **Bibliotheken**, und **Unrelated** Schlüssel-Wert-Paare angeben, die Urls oder Dateien, die Sie in eine Klassifikation einschließen möchten:  
+  Die **MyCode**, **Bibliotheken**, und **Unrelated** Schlüssel-Wert-Paare angeben, die Urls oder Dateien, die Sie in eine Klassifikation einschließen möchten:  
   
 |||  
 |-|-|  

@@ -25,21 +25,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f0a0822dc99eccea4ddd621ae622a112e0909bb
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: cdcde5a0a597d038015c80f5d26add66158542ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850931"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Gemischter Code und fehlende Daten im Fenster "Aufrufliste"
 Da es zwischen den Aufruflisten von verwaltetem Code und nativem Code Unterschiede gibt, kann der Debugger bei vermischten Codetypen nicht immer die vollständige Aufrufliste anzeigen. Wenn nativer Code verwalteten Code aufruft, können Sie feststellen, dass die folgenden Diskrepanzen in den **Aufrufliste** Fenster:  
   
--   Der systemeigene Rahmen direkt über den verwalteten Code möglicherweise fehlen die **Aufrufliste** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Prozedurschritt aus verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+- Der systemeigene Rahmen direkt über den verwalteten Code möglicherweise fehlen die **Aufrufliste** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Prozedurschritt aus verwaltetem Code, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Anwendungen außerhalb des Debuggers im gemischten Modus die **Aufrufliste** Fenster kann nur den verwalteten Code anzuzeigen und der systemeigenen Rahmen nicht sichtbar.  
+- Anwendungen außerhalb des Debuggers im gemischten Modus die **Aufrufliste** Fenster kann nur den verwalteten Code anzuzeigen und der systemeigenen Rahmen nicht sichtbar.  
   
- Beide Fälle treten relativ selten ein. In den meisten Fällen, in denen verwalteter Code durch systemeigenen Code aufgerufen wird, werden die Aufruflisten richtig angezeigt.  
+  Beide Fälle treten relativ selten ein. In den meisten Fällen, in denen verwalteter Code durch systemeigenen Code aufgerufen wird, werden die Aufruflisten richtig angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Verwenden des Fensters „Aufrufliste“](../debugger/how-to-use-the-call-stack-window.md)

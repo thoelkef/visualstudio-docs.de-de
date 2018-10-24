@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852179"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
   
  ![Eine Klasse, eine Enumeration und eine Schnittstelle](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Verwendung **Klassen** (1), um die meisten Zwecke Daten oder Objekttypen darzustellen.  
+- Verwendung **Klassen** (1), um die meisten Zwecke Daten oder Objekttypen darzustellen.  
   
--   Verwendung **Schnittstellen** (2) in einem Kontext, in dem Sie zwischen reinen Schnittstellen und konkreten Klassen, die über interne Implementierungen unterscheiden müssen. Dieser Unterschied ist nützlich, wenn der Zweck des Diagramms darin besteht, eine Softwareimplementierung zu beschreiben. Er ist weniger nützlich, wenn Sie passive Daten modellieren oder wenn Sie Konzepte definieren, die zum Beschreiben der Benutzeranforderungen verwendet werden.  
+- Verwendung **Schnittstellen** (2) in einem Kontext, in dem Sie zwischen reinen Schnittstellen und konkreten Klassen, die über interne Implementierungen unterscheiden müssen. Dieser Unterschied ist nützlich, wenn der Zweck des Diagramms darin besteht, eine Softwareimplementierung zu beschreiben. Er ist weniger nützlich, wenn Sie passive Daten modellieren oder wenn Sie Konzepte definieren, die zum Beschreiben der Benutzeranforderungen verwendet werden.  
   
--   Verwenden einer **Enumeration** (3), um einen Typ darzustellen, die eine begrenzte Anzahl von Literalwerten, z. B. `Stop` und `Go`.  
+- Verwenden einer **Enumeration** (3), um einen Typ darzustellen, die eine begrenzte Anzahl von Literalwerten, z. B. `Stop` und `Go`.  
   
-    -   Fügen Sie die Literalwerte der Enumeration hinzu. Geben Sie jedem Wert einen anderen Namen.  
+  -   Fügen Sie die Literalwerte der Enumeration hinzu. Geben Sie jedem Wert einen anderen Namen.  
   
-    -   Sie können bei Bedarf auch einen numerischen Wert für jeden Literalwert angeben. Öffnen Sie das Kontextmenü für das Literal in der Enumeration, wählen **Eigenschaften**, und geben Sie eine Zahl in die **Wert** -Feld in der **Eigenschaften** Fenster.  
+  -   Sie können bei Bedarf auch einen numerischen Wert für jeden Literalwert angeben. Öffnen Sie das Kontextmenü für das Literal in der Enumeration, wählen **Eigenschaften**, und geben Sie eine Zahl in die **Wert** -Feld in der **Eigenschaften** Fenster.  
   
- Geben Sie jedem Typ einen eindeutigen Namen.  
+  Geben Sie jedem Typ einen eindeutigen Namen.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Abrufen von Typen aus anderen Diagrammen  
  Sie können festlegen, dass Typen aus einem anderen Diagramm in Ihrem UML-Klassendiagramm angezeigt werden.  
@@ -166,7 +166,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
   
  Um ihre Eigenschaften anzuzeigen, öffnen Sie das Kontextmenü für das Attribut oder den Vorgang, und wählen Sie dann **Eigenschaften**. Die Eigenschaften werden in der **Eigenschaften** Fenster.  
   
- Wählen Sie zum Anzeigen der Eigenschaften der Parameter eines Vorgangs **[...]** in die **Parameter** Eigenschaft. Ein neues Eigenschaftendialogfeld wird angezeigt.  
+ Wählen Sie zum Anzeigen der Eigenschaften der Parameter eines Vorgangs <strong>[...]</strong> in die **Parameter** Eigenschaft. Ein neues Eigenschaftendialogfeld wird angezeigt.  
   
  Ausführliche Informationen zu allen Eigenschaften, die Sie festlegen können, finden Sie unter den folgenden Themen:  
   
@@ -177,15 +177,15 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
 ### <a name="types-of-attributes-and-operations"></a>Typen von Attributen und Vorgängen  
  Jede *Typ* eines Attributs oder Vorgangs und jeder Parametertyp, kann eine der folgenden sein:  
   
--   **(keine)**  -Lassen Sie einen Typ, der nicht in der Signatur angegeben, indem Sie den vorangestellten Doppelpunkt auslassen (`:`).  
+- **(keine)**  -Lassen Sie einen Typ, der nicht in der Signatur angegeben, indem Sie den vorangestellten Doppelpunkt auslassen (`:`).  
   
--   Eine der standardmäßigen primitiven Typen: **booleschen**, **Ganzzahl**, **Zeichenfolge**.  
+- Eine der standardmäßigen primitiven Typen: **booleschen**, **Ganzzahl**, **Zeichenfolge**.  
   
--   Einen Typ, der im Modell definiert ist.  
+- Einen Typ, der im Modell definiert ist.  
   
--   Ein parametrisierter Wert eines Vorlagentyps der Form geschrieben Vorlage\<Parameter >. Finden Sie unter [Vorlagentypen](#Templates).  
+- Ein parametrisierter Wert eines Vorlagentyps der Form geschrieben Vorlage\<Parameter >. Finden Sie unter [Vorlagentypen](#Templates).  
   
- Sie können auch den Namen eines Typs schreiben, den Sie im Modell noch nicht definiert haben. Der Name wird er unter **nicht spezifizierte Typen** im UML-Modell-Explorer.  
+  Sie können auch den Namen eines Typs schreiben, den Sie im Modell noch nicht definiert haben. Der Name wird er unter **nicht spezifizierte Typen** im UML-Modell-Explorer.  
   
 > [!NOTE]
 >  Wenn Sie anschließend im Modell eine Klasse oder Schnittstelle mit diesem Namen definieren, verweisen ältere Attribute und Operationen weiterhin auf das Element in "Nicht spezifizierte Typen". Wenn Sie diese älteren Komponenten ändern möchten, damit sie auf die neue Klasse verweisen, müssen Sie für jedes Attribut bzw. jede Operation den Typ zurücksetzen und die neue Klasse im Dropdownmenü auswählen.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Einige Eigenschaften jeder Rolle sind direkt im Diagramm sichtbar. Dies sind:  
   
--   Der Rollenname. Er wird am entsprechenden Ende der Zuordnung im Diagramm angezeigt. Sie können es entweder auf das Diagramm oder im Festlegen der **Eigenschaften** Fenster.  
+- Der Rollenname. Er wird am entsprechenden Ende der Zuordnung im Diagramm angezeigt. Sie können es entweder auf das Diagramm oder im Festlegen der **Eigenschaften** Fenster.  
   
--   **Multiplizität**, die standardmäßig auf **1**. Diese Eigenschaft wird auch am entsprechenden Ende der Zuordnung im Diagramm angezeigt.  
+- **Multiplizität**, die standardmäßig auf **1**. Diese Eigenschaft wird auch am entsprechenden Ende der Zuordnung im Diagramm angezeigt.  
   
--   **Aggregation**. Wird an einem Ende des Konnektors in Rautenform angezeigt. Damit können Sie angeben, dass die Aggregierungsrolle Instanzen der anderen besitzt oder enthält.  
+- **Aggregation**. Wird an einem Ende des Konnektors in Rautenform angezeigt. Damit können Sie angeben, dass die Aggregierungsrolle Instanzen der anderen besitzt oder enthält.  
   
--   **Navigierbar**. Wenn nur für eine Rolle "true" gilt, wird ein Pfeil angezeigt, der in die navigierbare Richtung zeigt. Sie können dies nutzen, um die Navigierbarkeit von Links und Datenbankbeziehungen in der Software anzugeben.  
+- **Navigierbar**. Wenn nur für eine Rolle "true" gilt, wird ein Pfeil angezeigt, der in die navigierbare Richtung zeigt. Sie können dies nutzen, um die Navigierbarkeit von Links und Datenbankbeziehungen in der Software anzugeben.  
   
- Einzelheiten zu diesen und anderen Eigenschaften, finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Einzelheiten zu diesen und anderen Eigenschaften, finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Navigierbarkeit  
  Eine gezeichnete Zuordnung weist an einem Ende einen Pfeil auf, der angibt, dass die Zuordnung in dieser Richtung navigierbar ist. Dies ist hilfreich, wenn das Klassendiagramm Softwareklassen darstellt und die Zuordnungen Zeiger oder Verweise darstellen. Wenn Sie jedoch ein Klassendiagramm zum Darstellen von Entitäten und Beziehungen oder Geschäftskonzepten verwenden, ist es weniger wichtig, die Navigierbarkeit darzustellen. In diesem Fall kann es ratsam sein, Zuordnungen ohne Pfeile zu zeichnen. Sie erreichen dies durch Festlegen der **Is Navigable** -Eigenschaft an beiden Enden der Zuordnung auf "true". Um dies zu vereinfachen, können Sie das Codebeispiel herunterladen [UML-Domänenmodellierung](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Vererbung  
  Verwenden der **Vererbung** Tool, um die folgenden Beziehungen zu erstellen:  
   
--   Ein *Generalisierung* Beziehung zwischen einem spezialisierten Typ und einen allgemeinen Typ  
+- Ein *Generalisierung* Beziehung zwischen einem spezialisierten Typ und einen allgemeinen Typ  
   
-     \- oder –  
+   \- oder –  
   
--   Ein *Realisierung* Beziehung zwischen einer Klasse und eine Schnittstelle, die er implementiert.  
+- Ein *Realisierung* Beziehung zwischen einer Klasse und eine Schnittstelle, die er implementiert.  
   
- Sie können in Vererbungsbeziehungen keine Schleifen erstellen.  
+  Sie können in Vererbungsbeziehungen keine Schleifen erstellen.  
   
 ### <a name="generalization"></a>Generalisierung  
  Generalisierung bedeutet, dass der spezialisierende oder abgeleitete Typ Attribute, Vorgänge und Zuordnungen des allgemeinen Typs oder Basistyps erbt.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>So überschreiben Sie die Definition eines Vorgangs in einem spezialisierenden Typ  
   
-1.  Klicken Sie auf die Generalisierungsbeziehung.  
+1. Klicken Sie auf die Generalisierungsbeziehung.  
   
-     Sie wird markiert, und daneben wird ein Aktionstag angezeigt.  
+    Sie wird markiert, und daneben wird ein Aktionstag angezeigt.  
   
-2.  Klicken Sie auf das Aktionstag und dann auf **Vorgänge überschreiben**.  
+2. Klicken Sie auf das Aktionstag und dann auf **Vorgänge überschreiben**.  
   
-     Die **Vorgänge überschreiben** Dialogfeld wird angezeigt.  
+    Die **Vorgänge überschreiben** Dialogfeld wird angezeigt.  
   
-3.  Wählen Sie die Vorgänge, die Sie verwenden möchten, im spezialisierenden Typ angezeigt, und klicken Sie dann auf **OK**.  
+3. Wählen Sie die Vorgänge, die Sie verwenden möchten, im spezialisierenden Typ angezeigt, und klicken Sie dann auf **OK**.  
   
- Die ausgewählten Vorgänge werden jetzt im spezialisierenden Typ angezeigt.  
+   Die ausgewählten Vorgänge werden jetzt im spezialisierenden Typ angezeigt.  
   
 ### <a name="realization"></a>Realisierung  
  Realisierung bedeutet, dass eine Klasse die Attribute und Vorgänge implementiert, die von der Schnittstelle angegeben werden. Die Schnittstelle befindet sich am Pfeilende des Konnektors.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>So erstellen Sie einen Vorlagentyp  
   
-1.  Erstellen Sie eine Klasse oder eine Schnittstelle. Dies wird zu Ihrem Vorlagentyp. Benennen Sie diesen entsprechend, z. B. `Dictionary`.  
+1. Erstellen Sie eine Klasse oder eine Schnittstelle. Dies wird zu Ihrem Vorlagentyp. Benennen Sie diesen entsprechend, z. B. `Dictionary`.  
   
-2.  Öffnen Sie das Kontextmenü für den neuen Typ aus, und wählen Sie dann **Eigenschaften**.  
+2. Öffnen Sie das Kontextmenü für den neuen Typ aus, und wählen Sie dann **Eigenschaften**.  
   
-3.  In der **Eigenschaften** Fenster, klicken Sie auf **[...]**  in die **Vorlagenparameter** Feld.  
+3. In der **Eigenschaften** Fenster, klicken Sie auf **[...]**  in die **Vorlagenparameter** Feld.  
   
-     Die **Vorlage Parameterauflistungs-Editor** Dialogfeld wird angezeigt.  
+    Die **Vorlage Parameterauflistungs-Editor** Dialogfeld wird angezeigt.  
   
-4.  Wählen Sie **Hinzufügen** aus.  
+4. Wählen Sie **Hinzufügen** aus.  
   
-5.  Legen Sie die Namenseigenschaft auf einen Parameternamen für den Vorlagentyp fest, z. B. `Key`.  
+5. Legen Sie die Namenseigenschaft auf einen Parameternamen für den Vorlagentyp fest, z. B. `Key`.  
   
-6.  Legen Sie **Parameterart**. Der Standardwert ist **Klasse**.  
+6. Legen Sie **Parameterart**. Der Standardwert ist **Klasse**.  
   
-7.  Wenn Sie den Parameter nur abgeleitete Klassen einer bestimmten Basisklasse akzeptieren soll, legen Sie **eingeschränkter Wert** auf die Basisklasse, die Sie möchten.  
+7. Wenn Sie den Parameter nur abgeleitete Klassen einer bestimmten Basisklasse akzeptieren soll, legen Sie **eingeschränkter Wert** auf die Basisklasse, die Sie möchten.  
   
-8.  Fügen Sie so viele Parameter, wie Sie benötigen, wählen Sie dann, **OK**.  
+8. Fügen Sie so viele Parameter, wie Sie benötigen, wählen Sie dann, **OK**.  
   
 9. Fügen Sie dem Vorlagentyp Attribute und Vorgänge hinzu, wie Sie dies auch bei anderen Klassen tun.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      Sie können einen Parameter vom Typ **Ganzzahl** als Grenze einer Multiplizität. Beispielsweise kann ein Parameter mit einer ganzen Zahl und einem Maximalwert verwendet werden, um die Multiplizität eines Attributs als `[0..max]` zu definieren.  
   
- Wenn Sie Vorlagentypen erstellt haben, können Sie diese zum Definieren von Vorlagenbindungen verwenden:  
+   Wenn Sie Vorlagentypen erstellt haben, können Sie diese zum Definieren von Vorlagenbindungen verwenden:  
   
- ![Aus Wörterbuchvorlage gebundene Klasse](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Aus Wörterbuchvorlage gebundene Klasse](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>So verwenden Sie einen Vorlagentyp  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852740"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Ein
   
  Die wichtigste `DirectiveProcessor` Methoden, die Sie implementieren müssen, sind wie folgt.  
   
--   `bool IsDirectiveSupported(string directiveName)` -Return `true` , wenn die benannte Direktive der anweisungsprozessor behandeln kann.  
+- `bool IsDirectiveSupported(string directiveName)` -Return `true` , wenn die benannte Direktive der anweisungsprozessor behandeln kann.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Die Vorlagen-Engine ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage. Der Prozessor sollten die Ergebnisse zu speichern.  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Die Vorlagen-Engine ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage. Der Prozessor sollten die Ergebnisse zu speichern.  
   
- Die Vorlagen-Engine wird diese Methoden aufrufen, nachdem alle Aufrufe von ProcessDirective():  
+  Die Vorlagen-Engine wird diese Methoden aufrufen, nachdem alle Aufrufe von ProcessDirective():  
   
--   `string[] GetReferencesForProcessingRun()` -Die Namen der Assemblys, die den Code der Vorlage erfordert zurück.  
+- `string[] GetReferencesForProcessingRun()` -Die Namen der Assemblys, die den Code der Vorlage erfordert zurück.  
   
--   `string[] GetImportsForProcessingRun()` -Gibt die Namespaces zurück, die verwendet werden können im Vorlagencode.  
+- `string[] GetImportsForProcessingRun()` -Gibt die Namespaces zurück, die verwendet werden können im Vorlagencode.  
   
--   `string GetClassCodeForProcessingRun()` -Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die den Code der Vorlage verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge, die mit der C#- oder Visual Basic-Code zu erstellen. Damit den anweisungsprozessor aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet wird, können Sie die Anweisungen als eine CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.  
+- `string GetClassCodeForProcessingRun()` -Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die den Code der Vorlage verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge, die mit der C#- oder Visual Basic-Code zu erstellen. Damit den anweisungsprozessor aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet wird, können Sie die Anweisungen als eine CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.  
   
--   Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Bereitstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/deploying-a-custom-directive-processor.md)  

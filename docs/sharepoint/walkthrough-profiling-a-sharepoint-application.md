@@ -18,57 +18,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852744"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.  
   
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   [Hinzufügen einer Funktion und den Funktionsereignisempfänger](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Hinzufügen einer Funktion und den Funktionsereignisempfänger](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Konfigurieren und Bereitstellen der SharePoint-Anwendung](#BKMK_ConfigSharePointApp).  
+- [Konfigurieren und Bereitstellen der SharePoint-Anwendung](#BKMK_ConfigSharePointApp).  
   
--   [Ausführen der SharePoint-Anwendung](#BKMK_RunSPApp).  
+- [Ausführen der SharePoint-Anwendung](#BKMK_RunSPApp).  
   
--   [Anzeigen und Interpretieren der Profilerstellungsergebnisse](#BKMK_ViewResults).  
+- [Anzeigen und Interpretieren der Profilerstellungsergebnisse](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint.
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
 ## <a name="create-a-sharepoint-project"></a>Erstellen Sie ein SharePoint-Projekt
  Erstellen Sie zunächst eine SharePoint-Projekt.  
   
 #### <a name="to-create-a-sharepoint-project"></a>So erstellen Sie ein SharePoint-Projekt  
   
-1.  Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.  
+1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.  
   
-2.  Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.  
+2. Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.  
   
-3.  Wählen Sie im Vorlagenbereich die **SharePoint 2010-Projekt** Vorlage.  
+3. Wählen Sie im Vorlagenbereich die **SharePoint 2010-Projekt** Vorlage.  
   
-4.  In der **Namen** geben **ProfileTest**, und wählen Sie dann die **OK** Schaltfläche.  
+4. In der **Namen** geben **ProfileTest**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     Die **SharePoint Customization Wizard** angezeigt wird.  
+    Die **SharePoint Customization Wizard** angezeigt wird.  
   
-5.  Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Server-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://*Systemname*/) .  
+5. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Server-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://<em>Systemname</em>/) .  
   
-6.  In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
+6. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
   
-     Zurzeit können Sie Farmlösungsprofile erstellen. Weitere Informationen über sandkastenlösungen im Vergleich zu farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+    Zurzeit können Sie Farmlösungsprofile erstellen. Weitere Informationen über sandkastenlösungen im Vergleich zu farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt wird im **Projektmappen-Explorer**.  
+7. Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt wird im **Projektmappen-Explorer**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Fügen Sie eine Funktion und den Funktionsereignisempfänger hinzu
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.  
@@ -215,7 +215,7 @@ ms.locfileid: "42634705"
      Der Assistent ermöglicht die anwendungsprofilerstellung auf dem Server, zeigt der **Leistungs-Explorer** Fenster erstellt, bereitgestellt und die SharePoint-Anwendung ausgeführt wird.  
   
 ## <a name="run-the-sharepoint-application"></a>Führen Sie die SharePoint-Anwendung
- Aktivieren Sie das Feature in SharePoint, wodurch die Auslösung des `FeatureActivation`-Ereigniscodes ausgelöst wird.  
+ Aktivieren Sie die Funktion in SharePoint, wodurch die Auslösung des `FeatureActivation`-Ereigniscodes ausgelöst wird.  
   
 #### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus  
   

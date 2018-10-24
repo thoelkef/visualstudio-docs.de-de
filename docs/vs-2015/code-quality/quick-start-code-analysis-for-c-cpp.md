@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851061"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
  Zum Ausführen der Codeanalyse in einer Projektmappe:  
   
--   Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.  
+- Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.  
   
- Zum Ausführen der Codeanalyse in einem Projekt:  
+  Zum Ausführen der Codeanalyse in einem Projekt:  
   
--   Wählen Sie im Projektmappen-Explorer den Namen des Projektes aus.  
+- Wählen Sie im Projektmappen-Explorer den Namen des Projektes aus.  
   
--   Auf der **erstellen** Menü wählen **Ausführen der Codeanalyse für** *Projektname*.  
+- Auf der **erstellen** Menü wählen **Ausführen der Codeanalyse für** *Projektname*.  
   
- Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
+  Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
   
 ##  <a name="BKMK_Analyze"></a> Analysieren und Auflösen von codeanalysewarnungen  
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um weitere Informationen zu diesem Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummern und Analyselogik, die zu der Warnung geführt hat. Ausführliche Informationen zur Warnung, einschließlich der möglichen Lösungen für das Problem, wählen Sie die Warnungs-Id, um das Hilfethema für diese Meldung in der MSND Bibliothek anzuzeigen.  
@@ -106,13 +106,13 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
  Zum Unterdrücken einer Warnung:  
   
-1.  Wenn die ausführliche Information nicht angezeigt wird, wählen Sie den Titel der Warnung, um sie zu erweitern.  
+1. Wenn die ausführliche Information nicht angezeigt wird, wählen Sie den Titel der Warnung, um sie zu erweitern.  
   
-2.  Wählen Sie unten in der Warnung den Link **Aktionen** aus.  
+2. Wählen Sie unten in der Warnung den Link **Aktionen** aus.  
   
-3.  Wählen Sie **Meldung unterdrücken** und wählen Sie dann **In Quelle**.  
+3. Wählen Sie **Meldung unterdrücken** und wählen Sie dann **In Quelle**.  
   
- Unterdrücken einer Meldung fügt `#pragma warning (disable:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.  
+   Unterdrücken einer Meldung fügt `#pragma warning (disable:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Erstellen von Arbeitselementen für codeanalysewarnungen  
  Funktionen für die Arbeitsaufgabenverfolgung können Sie in Visual Studio protokollieren. Um diese Funktion verwenden zu können, müssen Sie sich mit einer Instanz von Team Foundation Server verbinden.  

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852413"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Übersicht über WPF-Datenbindung mit LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Dieses Thema enthält eine Einführung in die Funktionen zur dynamischen Datenbi
   
  Für die Interaktion von XAML und LINQ to XML gibt es zwei generelle Möglichkeiten:  
   
--   Da XAML-Dateien wohlgeformtes XML sind, können sie mit XML-Technologien, wie LINQ to XML, abgefragt und bearbeitet werden.  
+- Da XAML-Dateien wohlgeformtes XML sind, können sie mit XML-Technologien, wie LINQ to XML, abgefragt und bearbeitet werden.  
   
--   Da LINQ to XML-Abfragen eine Datenquelle darstellen, können diese Abfragen als Datenquelle für die Datenbindung bei WPF-Benutzeroberflächenelementen verwendet werden.  
+- Da LINQ to XML-Abfragen eine Datenquelle darstellen, können diese Abfragen als Datenquelle für die Datenbindung bei WPF-Benutzeroberflächenelementen verwendet werden.  
   
- In dieser Dokumentation wird das zweite Szenario beschrieben.  
+  In dieser Dokumentation wird das zweite Szenario beschrieben.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Datenbindung in Windows Presentation Foundation  
  Die WPF-Datenbindung ermöglicht es einem Benutzeroberflächenelement, eine seiner Eigenschaften einer Datenquelle zuzuordnen. Ein einfaches Beispiel dafür ist ein <xref:System.Windows.Controls.Label>, dessen Text den Wert einer öffentlichen Eigenschaft in einem benutzerdefinierten Objekt angibt. Die WPF-Datenbindung basiert auf den folgenden Komponenten:  
@@ -52,13 +52,13 @@ Dieses Thema enthält eine Einführung in die Funktionen zur dynamischen Datenbi
 ### <a name="dynamic-data-binding-in-wpf"></a>Dynamische Datenbindung in WPF  
  Standardmäßig erfolgt die Datenbindung nur, wenn das Zielbenutzeroberflächenelement initialisiert wird. Dieser Prozess wird als *einmalige* Bindung bezeichnet. Für die meisten Zwecke reicht dies nicht aus. In der Regel erfordert eine Datenbindungslösung, dass die Änderungen zur Laufzeit mit einer der folgenden Bindungen dynamisch weitergegeben werden:  
   
--   *Unidirektionale* Bindung: Diese Form der Bindung bewirkt, dass einseitige Änderungen automatisch weitergegeben werden. In den allermeisten Fällen werden so Änderungen an der Quelle im Ziel wiedergegeben, mitunter ist aber auch der umgekehrte Weg hilfreich.  
+- *Unidirektionale* Bindung: Diese Form der Bindung bewirkt, dass einseitige Änderungen automatisch weitergegeben werden. In den allermeisten Fällen werden so Änderungen an der Quelle im Ziel wiedergegeben, mitunter ist aber auch der umgekehrte Weg hilfreich.  
   
--   *Bidirektionale Bindung*: Änderungen an der Quelle werden automatisch an das Ziel weitergegeben, und Änderungen am Ziel werden automatisch an die Quelle weitergegeben.  
+- *Bidirektionale Bindung*: Änderungen an der Quelle werden automatisch an das Ziel weitergegeben, und Änderungen am Ziel werden automatisch an die Quelle weitergegeben.  
   
- Sowohl für die unidirektionale als auch für die bidirektionale Bindung muss die Quelle einen Änderungsbenachrichtigungsmechanismus implementieren. Dies kann z.B. durch die Implementierung der <xref:System.ComponentModel.INotifyPropertyChanged>-Schnittstelle oder durch die Verwendung eines *PropertyNameChanged*-Musters für jede unterstützte Eigenschaft erfolgen.  
+  Sowohl für die unidirektionale als auch für die bidirektionale Bindung muss die Quelle einen Änderungsbenachrichtigungsmechanismus implementieren. Dies kann z.B. durch die Implementierung der <xref:System.ComponentModel.INotifyPropertyChanged>-Schnittstelle oder durch die Verwendung eines *PropertyNameChanged*-Musters für jede unterstützte Eigenschaft erfolgen.  
   
- Weitere Informationen zur Datenbindung in WPF finden Sie unter Übersicht über [Datenbindung (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  Weitere Informationen zur Datenbindung in WPF finden Sie unter Übersicht über [Datenbindung (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Dynamische Eigenschaften in LINQ to XML-Klassen  
  Die meisten LINQ to XML-Klassen eignen sich nicht als richtige dynamische WPF-Datenquellen: Einige der nützlichsten Informationen sind nur über Methoden (und nicht über Eigenschaften) verfügbar, und Eigenschaften in diesen Klassen implementieren keine Änderungsbenachrichtigungen. Zur Unterstützung der WPF-Datenbindung macht LINQ to XML einen Satz *dynamischer Eigenschaften* verfügbar.  
@@ -71,13 +71,13 @@ Dieses Thema enthält eine Einführung in die Funktionen zur dynamischen Datenbi
 ### <a name="accessing-dynamic-properties"></a>Zugreifen auf dynamische Eigenschaften  
  Auf die dynamischen Eigenschaften in den Klassen <xref:System.Xml.Linq.XAttribute> und <xref:System.Xml.Linq.XElement> kann nicht wie auf Standardeigenschaften zugegriffen werden. So gilt z. B. für CLR-kompatible Sprachen wie C# Folgendes:  
   
--   Auf die Eigenschaften kann zur Kompilierzeit nicht direkt zugegriffen werden. Dynamische Eigenschaften sind für den Compiler und Visual Studio IntelliSense nicht sichtbar.  
+- Auf die Eigenschaften kann zur Kompilierzeit nicht direkt zugegriffen werden. Dynamische Eigenschaften sind für den Compiler und Visual Studio IntelliSense nicht sichtbar.  
   
--   Die Eigenschaften können zur Laufzeit mit .NET-Reflektion weder gefunden noch verwendet werden. Selbst zur Laufzeit handelt es sich bei ihnen nicht um Eigenschaften im eigentlichen CLR-Sinn.  
+- Die Eigenschaften können zur Laufzeit mit .NET-Reflektion weder gefunden noch verwendet werden. Selbst zur Laufzeit handelt es sich bei ihnen nicht um Eigenschaften im eigentlichen CLR-Sinn.  
   
- In C# ist der Zugriff auf dynamische Eigenschaften zur Laufzeit nur über die vom <xref:System.ComponentModel>-Namespace bereitgestellten Funktionen möglich.  
+  In C# ist der Zugriff auf dynamische Eigenschaften zur Laufzeit nur über die vom <xref:System.ComponentModel>-Namespace bereitgestellten Funktionen möglich.  
   
- Im Unterschied dazu kann auf die dynamischen Eigenschaften in einer XML-Quelle über eine unkomplizierte Notation in der folgenden Form zugegriffen werden:  
+  Im Unterschied dazu kann auf die dynamischen Eigenschaften in einer XML-Quelle über eine unkomplizierte Notation in der folgenden Form zugegriffen werden:  
   
 ```  
 <object>.<dynamic-property>  
