@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthsavedregisters | Microsoft Docs'
+title: 'Idiaframedata:: Get_lengthsavedregisters | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e214cacdf9e2a58d3d97311107b9ff20967b723
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4ff9ab2fb5550cb2b127224865e4b248657456a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872160"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgelegt.  
@@ -37,10 +37,10 @@ HRESULT get_lengthSavedRegisters (
  [out] Gibt die Anzahl der Bytes der gespeicherten Register zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Von dieser Methode zurückgegebene Wert wird üblicherweise in die Interpretation einer Zeichenfolge für die Anwendung verwendet (finden Sie unter der [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) Methode für die Definition einer Anwendung Zeichenfolge).  
+ Der von dieser Methode zurückgegebene Wert wird normalerweise verwendet, bei der Interpretation einer Programm-Zeichenfolge (finden Sie unter den [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) -Methode für die Definition einer Programm-Zeichenfolge).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

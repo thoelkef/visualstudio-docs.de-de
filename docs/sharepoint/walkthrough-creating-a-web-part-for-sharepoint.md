@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872407"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint
 
@@ -47,7 +47,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
     > [!NOTE]
     > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
@@ -94,38 +94,38 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Fügen Sie der `WebPart1`-Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
+3. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
 
-    - Ein Datenraster, um Mitarbeiter im Webpart anzuzeigen.
+   - Ein Datenraster, um Mitarbeiter im Webpart anzuzeigen.
 
-    - Text, der auf dem Steuerelement angezeigt wird, das zum Filtern des Datenrasters verwendet wird.
+   - Text, der auf dem Steuerelement angezeigt wird, das zum Filtern des Datenrasters verwendet wird.
 
-    - Eine Bezeichnung, die einen Fehler anzeigt, wenn das Datenraster keine Daten anzeigen kann.
+   - Eine Bezeichnung, die einen Fehler anzeigt, wenn das Datenraster keine Daten anzeigen kann.
 
-    - Eine Zeichenfolge, die den Pfad zur Mitarbeiterdatendatei enthält.
+   - Eine Zeichenfolge, die den Pfad zur Mitarbeiterdatendatei enthält.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Fügen Sie der `WebPart1`-Klasse folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
+4. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Ersetzen Sie die `CreateChildControls`-Methode durch folgenden Code: Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+5. Ersetzen Sie die `CreateChildControls` -Methode durch folgenden Code: Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Fügt das Datenraster und die Bezeichnung hinzu, die Sie im vorherigen Schritt deklariert haben.
+   - Fügt das Datenraster und die Bezeichnung hinzu, die Sie im vorherigen Schritt deklariert haben.
 
-    - Bindet das Datenraster an eine XML-Datei, die Mitarbeiterdaten enthält.
+   - Bindet das Datenraster an eine XML-Datei, die Mitarbeiterdaten enthält.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Fügen Sie der `WebPart1`-Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+6. Fügen Sie der `WebPart1` -Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Erstellt ein Verb, das im Verbmenü des gerenderten Webparts angezeigt wird.
+   - Erstellt ein Verb, das im Verbmenü des gerenderten Webparts angezeigt wird.
 
-    - Behandelt das Ereignis, das ausgelöst wird, wenn der Benutzer im Verbmenü das Verb auswählt. In diesem Code wird die Liste der Mitarbeiter gefiltert, die im Datenraster angezeigt wird.
+   - Behandelt das Ereignis, das ausgelöst wird, wenn der Benutzer im Verbmenü das Verb auswählt. In diesem Code wird die Liste der Mitarbeiter gefiltert, die im Datenraster angezeigt wird.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

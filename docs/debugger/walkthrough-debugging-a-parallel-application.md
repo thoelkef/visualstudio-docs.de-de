@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872641"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallele Aufgaben** und **parallele Stapel** Windows zum Debuggen einer parallelen Anwendung. Diese Fenster unterstützen Sie besser verstehen und prüfen das Laufzeitverhalten von Code, verwendet der [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Nachdem der Code unterbrochen wird, in der exemplarischen Vorgehensweise veranschaulicht, wie die **Parallele Aufgaben** und **parallele Stapel** Windows zu untersuchen.  
@@ -46,7 +46,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
 -   Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  In dieser exemplarischen Vorgehensweise wird vorausgesetzt, dass **nur mein Code** aktiviert ist (er ist in neueren Versionen von Visual Studio standardmäßig aktiviert). Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie die **Debuggen** Knoten **allgemeine**, und wählen Sie dann **aktivieren Nur mein Code (nur verwaltet)**. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
   
 ## <a name="c-sample"></a>C#-Beispiel  
@@ -63,25 +63,25 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
 #### <a name="to-create-the-sample-project"></a>So erstellen Sie das Beispielprojekt  
   
-1.  Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
+1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
   
-2.  Wählen Sie entweder **Visual C#-**, **Visual Basic**, oder **Visual C++**. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] angezeigt wird.  
+2. Wählen Sie entweder **Visual C#-**, **Visual Basic**, oder **Visual C++**. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] angezeigt wird.  
   
-3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
+3. Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
   
-4.  Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.  
+4. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.  
   
-5.  Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.  
+5. Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+6. Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
   
-2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
+7. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
   
-     Beachten Sie, dass es vier Aufrufe zu `Debugger.Break` (`DebugBreak` im C++-Beispiel) gibt. Daher müssen keine Haltepunkte eingefügt werden; wenn nur die Anwendung ausgeführt wird, hat dies bis zu vier Unterbrechungen im Debugger zur Folge.  
+    Beachten Sie, dass es vier Aufrufe zu `Debugger.Break` (`DebugBreak` im C++-Beispiel) gibt. Daher müssen keine Haltepunkte eingefügt werden; wenn nur die Anwendung ausgeführt wird, hat dies bis zu vier Unterbrechungen im Debugger zur Folge.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Verwenden des Fensters Parallele Stapel: Threadansicht  
  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**. Warten Sie, bis der erste Haltepunkt erreicht wird.  
@@ -211,7 +211,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
 5.  Auf der **Debuggen** Startmenü **Windows**, und klicken Sie dann auf **Aufgaben**. Die folgende Abbildung zeigt die **Aufgaben** Fenster.  
   
-     ![Vier mit Aufgaben im Fenster "Aufgaben"](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Vier Aufgaben im Aufgabenfenster](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
   
      Für jede ausgeführte Aufgabe können Sie die zugehörige ID lesen. Diese wird zusammen mit der gleichnamigen Eigenschaft, der ID und dem Namen des ausführenden Threads und ihrer Position zurückgegeben (wenn Sie mit dem Mauszeiger darauf zeigen, wird eine QuickInfo mit der gesamten Aufrufliste angezeigt). Darüber hinaus unter der **Aufgabe** Spalte sehen Sie die Methode, die an die Aufgabe übergeben wurde; das heißt, der Ausgangspunkt.  
   
@@ -227,7 +227,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
      Zuvor die **Status** Artikel haben Sie alle Aufgaben als aktiv, aber jetzt werden zwei Aufgaben blockiert. Aufgaben können aus vielen anderen Gründen blockiert werden. In der **Status** Spalte, zeigen Sie auf eine wartende Aufgabe, um zu erfahren, warum er blockiert wird. In der folgenden Abbildung wartet beispielsweise Aufgabe 3 auf Aufgabe 4.  
   
-     ![2 wartende Aufgaben im Fenster "Aufgaben"](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
+     ![Zwei wartenden Aufgaben im Aufgabenfenster](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
      Aufgabe 4 wiederum wartet auf einen Monitor, der zu dem Thread gehört, der Aufgabe 2 zugewiesen ist. (Mit der rechten Maustaste in der Kopfzeile, und wählen Sie **Spalten** > **Threadzuweisung** an den Thread-Zuweisung-Wert für die Aufgabe 2).
   
@@ -239,7 +239,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
      Sie bei Verwendung der **parallele Stapel** Fenster oben haben Sie die Anwendungsthreads angezeigt. Anzeigen der **parallele Stapel** Fenster erneut, aber dieses Mal anzeigen Aufgaben der Anwendung. Hierzu **Aufgaben** in das Feld auf der linken oberen Ecke. In der folgenden Abbildung wird die Aufgabenansicht dargestellt.  
   
-     ![Aufgabenansicht im Fenster "Parallele Stapel"](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Aufgabenansicht im Fenster parallele Stapel](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
      Threads, die derzeit keine Aufgaben ausführen, werden werden nicht angezeigt, in der Aufgabenansicht des der **parallele Stapel** Fenster. Auch für Threads, die Aufgaben ausführen, werden einige der für Aufgaben irrelevanten Stapelrahmen im Stapel von oben und unten gefiltert.  
   
@@ -255,7 +255,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
      Um die über-/ unterordnungsbeziehung besser zu visualisieren, mit der rechten Maustaste der Spaltenkopfzeile, und klicken Sie dann auf **übergeordneten untergeordneten Ansicht**. Die Anzeige entspricht der folgenden Abbildung:  
   
-     ![Übergeordnete&#45;untergeordnete Ansicht im Fenster "Aufgaben"](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
+     ![Übergeordnete&#45;Kind Aufgabenfenster auf](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
      Beachten Sie, dass Aufgabe 4 und Aufgabe 5 im selben Thread ausgeführt werden (Anzeigen der **Threadzuweisung** Spalte, wenn es ausgeblendet ist). Diese Informationen werden nicht angezeigt, der **Threads** Fenster; sehen sie hier ein weiterer Vorteil ist die **Aufgaben** Fenster. Um dies zu bestätigen, zeigen Sie die **parallele Stapel** Fenster. Stellen Sie sicher, dass Ihnen eingesehene **Aufgaben**. Suchen Sie die Aufgaben 4 und 5 durch Doppelklicken in der **Aufgaben** Fenster. Wenn Sie so vorgehen, die blaue Hervorhebung der **parallele Stapel** Fenster wird aktualisiert. Sie können die Aufgaben 4 und 5 auch suchen, durch das Scannen von QuickInfos für die **parallele Stapel** Fenster.  
   
@@ -283,7 +283,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
      Sie können die Aufgaben nach Spalten gruppieren. In der **Aufgaben** Fenster mit der rechten Maustaste die **Status** Spaltenüberschrift, und klicken Sie dann auf **Gruppieren nach Status**. Die folgende Abbildung zeigt die **Aufgaben** nach Status gruppierte Fenster.  
   
-     ![Gruppiert Aufgaben im Fenster "Aufgaben"](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
+     ![Gruppiert Aufgaben im Aufgabenfenster](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
      Sie können auch nach einer beliebigen anderen Spalte gruppieren. Durch das Gruppieren von Aufgaben können sich auf eine Teilmenge von Aufgaben konzentrieren. Jede reduzierbare Gruppe weist eine Anzahl von Elementen auf, die zu einer Gruppe gehören.
   

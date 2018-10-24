@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870773"
 ---
 # <a name="content-definition-dialog-box"></a>Inhaltsdefinition (Dialogfeld)
 
@@ -26,7 +26,7 @@ Die **Inhaltsdefinition** Dialogfeld wird im Workflow-Designer verwendet, so kon
 Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Korrelation initialisieren** Dialogfeld:
 
 |Benutzeroberflächenelement|Beschreibung|
-|----------------|-----------------|
+|-|-----------------|
 |**Meldung**|Gibt an, den Nachrichteninhalt mit dem **Message Data** Ausdruckstextfeld und den Typ mit der **Nachrichtentyp** im Dropdown Listenfeld. Standardmäßig die **Inhaltsdefinition** verwendet die <xref:System.ServiceModel.Activities.ReceiveMessageContent>, der erwartet, dass eine <xref:System.ServiceModel.Channels.Message> oder einen Nachrichtenvertragstyp innerhalb der workflowdienstdefinition.|
 |**Parameter**|Klicken Sie auf die **Parameter** Optionsfeld mit <xref:System.ServiceModel.Activities.ReceiveParametersContent>, der einen Datenvertrag erwartet. Legen Sie mithilfe des Datenrasters eine generische Auflistung von <xref:System.Activities.OutArgument>-Schlüssel-Wert-Paaren fest, deren Werte variablen Parametern im aktuellen Workflow zugewiesen werden.|
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de351e019c4daacc61bbbdd2757b0f0d9a46e584
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2c189afe9051d0f85c7f5f24a928d475d0eaca9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872849"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 
@@ -28,11 +28,11 @@ Sie können Ihre Suche im Hilfe-Inhalt in **Help Viewer** mit logischen Operator
 
 Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer Suchabfrage kombiniert werden sollen. In der folgenden Tabelle werden die logischen Operatoren AND, OR, NOT und NEAR veranschaulicht.
 
-|Suchen nach|Verwenden|Beispiel|Ergebnis|
+|Suchen nach|Mit|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
-|Beide Begriffe im gleichen Artikel|AND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
-|Einer der Begriffe in einem Artikel|OR|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
-|Erster Begriff ohne den zweiten Begriff im gleichen Artikel|NOT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
+|Beide Begriffe im gleichen Artikel|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
+|Einer der Begriffe in einem Artikel|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
+|Erster Begriff ohne den zweiten Begriff im gleichen Artikel|NICHT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
 |Beide Begriffe nah beieinander in einem Artikel|NAH|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
 
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 
 Mit erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalt optimieren, indem Sie festlegen, in welchem Bereich des Artikels nach dem Suchbegriff gesucht werden soll. In der folgenden Tabelle werden die vier verfügbaren erweiterten Suchoperatoren veranschaulicht.
 
-|Suchen nach|Verwenden|Beispiel|Ergebnis|
+|Suchen nach|Mit|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
 |Ein Begriff im Titel des Artikels|`title:`|`title:binaryreader`|Themen, die „Binaryreader“ im Titel enthalten.|
 |Eine Benennung in einem Codebeispiel|`code:`|`code:readdouble`|Themen, die „readdouble“ in einem Codebeispiel enthalten.|
@@ -57,7 +57,7 @@ Mit erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalt optimieren, in
 Mit dem Operator `code:` können Sie nach Inhalt von einer der Programmiersprachen suchen. Verwenden Sie einen der folgenden Programmiersprachenwerte, um Beispiele für eine bestimmte Programmiersprache zurückzugeben:
 
 |Programmiersprache|Suchoperatorsyntax|
-|--------------------|---------|
+| - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
 |C++|`code:cpp`<br/>`code:c++`<br/>`code:cplusplus`|

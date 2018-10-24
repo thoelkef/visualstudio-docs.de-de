@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873784"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und die Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden, die dieses Verhalten zu gestatten, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob gewähren der Berechtigung für die Anwendung zum automatischen Aktualisieren verwendet wird. Wenn die Anwendung nicht zulässig ist, automatisch zu aktualisieren, wird es nicht installiert.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Visual Studio 2010.  
@@ -43,23 +43,23 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 #### <a name="to-create-a-consent-dialog-box"></a>Um ein Dialogfeld "Zustimmung" zu erstellen.  
   
-1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld klicken Sie auf **Windows**, und klicken Sie dann auf **WindowsFormsApplication**.  
+2. In der **neues Projekt** Dialogfeld klicken Sie auf **Windows**, und klicken Sie dann auf **WindowsFormsApplication**.  
   
-3.  Für die **Namen**, Typ **ConsentDialog**, und klicken Sie dann auf **OK**.  
+3. Für die **Namen**, Typ **ConsentDialog**, und klicken Sie dann auf **OK**.  
   
-4.  Klicken Sie im Designer auf das Formular.  
+4. Klicken Sie im Designer auf das Formular.  
   
-5.  In der **Eigenschaften** Ändern der **Text** Eigenschaft **Update-Zustimmungsdialogfeld**.  
+5. In der **Eigenschaften** Ändern der **Text** Eigenschaft **Update-Zustimmungsdialogfeld**.  
   
-6.  In der **Toolbox**, erweitern Sie **alle Windows Forms**, und ziehen Sie eine **Bezeichnung** -Steuerelement auf das Formular.  
+6. In der **Toolbox**, erweitern Sie **alle Windows Forms**, und ziehen Sie eine **Bezeichnung** -Steuerelement auf das Formular.  
   
-7.  Klicken Sie im Designer auf das Label-Steuerelement.  
+7. Klicken Sie im Designer auf das Label-Steuerelement.  
   
-8.  In der **Eigenschaften** Ändern der **Text** Eigenschaft **Darstellung** folgt:  
+8. In der **Eigenschaften** Ändern der **Text** Eigenschaft **Darstellung** folgt:  
   
-     Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Indem Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung zu suchen und installieren Sie Updates automatisch über das Internet.  
+    Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Indem Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung zu suchen und installieren Sie Updates automatisch über das Internet.  
   
 9. In der **Toolbox**, ziehen Sie eine **Kontrollkästchen** Steuerelement in die Mitte des Formulars.  
   
@@ -112,28 +112,28 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
      Visual Basic nur für Entwickler:  
   
-    1.  In **Projektmappen-Explorer**, klicken Sie auf **ConsentDialog**.  
+    1. In **Projektmappen-Explorer**, klicken Sie auf **ConsentDialog**.  
   
-    2.  Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
+    2. Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
   
-    3.  In der *"Module1.vb"* Codedatei, fügen Sie den folgenden Code hinzu.  
+    3. In der *"Module1.vb"* Codedatei, fügen Sie den folgenden Code hinzu.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Auf der **Projekt** Menü klicken Sie auf **ConsentDialog Eigenschaften**, und klicken Sie dann auf die **Anwendung** Registerkarte.  
+    4. Auf der **Projekt** Menü klicken Sie auf **ConsentDialog Eigenschaften**, und klicken Sie dann auf die **Anwendung** Registerkarte.  
   
-    5.  Deaktivieren Sie **Anwendungsframework aktivieren**.  
+    5. Deaktivieren Sie **Anwendungsframework aktivieren**.  
   
-    6.  In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.  
+    6. In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.  
   
-        > [!NOTE]
-        >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# -Code nur für Entwickler:  
+       Visual C# -Code nur für Entwickler:  
   
-     Öffnen der *"Program.cs"* Codedatei, und fügen Sie den folgenden Code hinzu.  
+       Öffnen der *"Program.cs"* Codedatei, und fügen Sie den folgenden Code hinzu.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Auf der **erstellen** Menü klicken Sie auf **BuildSolution**.  
   
@@ -150,7 +150,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Erstellen Sie das Bootstrapperverzeichnis  
   
-1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in die *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
+1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in der *SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft*.  
   
     > [!NOTE]
     >  Möglicherweise Administratorrechte verfügen, um diesen Ordner zu erstellen.  

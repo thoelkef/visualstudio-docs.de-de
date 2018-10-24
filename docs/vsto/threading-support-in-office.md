@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5c2a0a8623228091e2acee184fa0272c2bbf311
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871107"
 ---
 # <a name="threading-support-in-office"></a>Threading-Unterstützung in Office
   Dieser Artikel enthält Informationen darüber, wie die threading in Microsoft Office-Objektmodell unterstützt wird. Das Office-Objektmodell ist nicht threadsicher, aber es ist möglich, die Arbeit mit mehreren Threads in einer Office-Projektmappe. Office-Anwendungen sind Component Object Model (COM)-Servern. COM ermöglicht Clients, die zum Aufrufen von COM-Server in beliebigen Threads. Für COM-Server, die nicht threadsicher sind, bietet COM über einen Mechanismus, um gleichzeitige Aufrufe zu serialisieren, sodass nur einen logischen Thread zu einem beliebigen Zeitpunkt auf dem Server ausgeführt wird. Dieser Mechanismus wird als das Singlethread-Apartment (STA)-Modell bezeichnet. Da Aufrufe serialisiert werden, möglicherweise Aufrufer für einen Zeitraum blockiert, während der Server ausgelastet ist oder andere Aufrufe in einem Hintergrundthread behandelt wird.  
@@ -33,19 +33,19 @@ ms.locfileid: "37059262"
 ## <a name="knowledge-required-when-using-multiple-threads"></a>Erforderliche Kenntnisse für die Verwendung von mehreren threads  
  Um mit mehreren Threads zu arbeiten, benötigen Sie mindestens über grundlegende Kenntnisse in die folgenden Aspekte von multithreading:  
   
--   Windows-APIs  
+- Windows-APIs  
   
--   COM Multithread-Konzepte  
+- COM Multithread-Konzepte  
   
--   Parallelität  
+- Parallelität  
   
--   Synchronisierung  
+- Synchronisierung  
   
--   Marshalling  
+- Marshalling  
   
- Allgemeine Informationen zum multithreading finden Sie unter [Managed threading](/dotnet/standard/threading/).  
+  Allgemeine Informationen zum multithreading finden Sie unter [Managed threading](/dotnet/standard/threading/).  
   
- Office wird in die wichtigsten im STA ausgeführt. Kenntnis der Auswirkungen dieser ermöglicht es, zu verstehen, wie die Verwendung mehrerer Threads in Office.  
+  Office wird in die wichtigsten im STA ausgeführt. Kenntnis der Auswirkungen dieser ermöglicht es, zu verstehen, wie die Verwendung mehrerer Threads in Office.  
   
 ## <a name="basic-multithreading-scenario"></a>Grundlegende multithreading-Szenario  
  Code in Office-Projektmappen wird immer auf dem Hauptbenutzeroberflächen-Thread ausgeführt. Möglicherweise möchten die Leistung der Anwendung glätten, indem Sie einen gesonderten Task in einem Hintergrundthread ausführen. Das Ziel besteht darin, zwei scheinbar gleichzeitig statt einer Aufgabe, gefolgt von der anderen Aufgaben, die reibungslose Ausführung (der Hauptgrund Verwendung mehrerer Threads) führen soll. Beispielsweise Sie möglicherweise Ihre Ereigniscode im Excel-UI-Hauptthread, und in einem Hintergrundthread können Sie eine Aufgabe, die sammelt Daten von einem Server, und aktualisiert Zellen in der Excel-Benutzeroberfläche mit den Daten auf dem Server, ausführen.  
@@ -53,15 +53,15 @@ ms.locfileid: "37059262"
 ## <a name="background-threads-that-call-into-the-office-object-model"></a>Hintergrundthreads, die in der Office-Objektmodell aufgerufen werden soll.  
  Wenn ein Hintergrundthread der Office-Anwendung aufruft, wird der Aufruf automatisch über die STA-Grenze hinweg gemarshallt. Allerdings besteht keine Garantie, dass die Office-Anwendung den Aufruf zum Zeitpunkt, dass der Hintergrundthread vereinfacht verarbeiten kann. Es gibt mehrere Möglichkeiten:  
   
-1.  Die Office-Anwendung muss Nachrichten für die Gelegenheit haben, geben den Aufruf senden. Wenn das Programm wird konnte Arbeitsprozessen ausgelastet dies Zeit in Anspruch nehmen.  
+1. Die Office-Anwendung muss Nachrichten für die Gelegenheit haben, geben den Aufruf senden. Wenn das Programm wird konnte Arbeitsprozessen ausgelastet dies Zeit in Anspruch nehmen.  
   
-2.  Wenn Sie einen anderen logischen Thread bereits im Apartment vorhanden ist, kann keine der neue Thread eingeben. Dies geschieht häufig, wenn Sie ein logischer Thread wechselt von der Office-Anwendung und anschließend einen reeentrant-Aufruf zurück an den Aufrufer des Apartment. Die Anwendung wird blockiert, Aufrufs warten.  
+2. Wenn Sie einen anderen logischen Thread bereits im Apartment vorhanden ist, kann keine der neue Thread eingeben. Dies geschieht häufig, wenn Sie ein logischer Thread wechselt von der Office-Anwendung und anschließend einen reeentrant-Aufruf zurück an den Aufrufer des Apartment. Die Anwendung wird blockiert, Aufrufs warten.  
   
-3.  Excel kann in einem Zustand sein, dass sie keinen eingehenden Anruf sofort verarbeiten kann. Beispielsweise könnte die Office-Anwendung ein modales Dialogfeld anzeigen.  
+3. Excel kann in einem Zustand sein, dass sie keinen eingehenden Anruf sofort verarbeiten kann. Beispielsweise könnte die Office-Anwendung ein modales Dialogfeld anzeigen.  
   
- Möglichkeiten, 2 und 3, COM stellt die [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) Schnittstelle. Wenn es sich bei der Server implementiert wird, geben Sie alle Aufrufe über die [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) Methode. Möglichkeit, 2 werden die Aufrufe automatisch zurückgewiesen. Möglichkeit, 3 kann der Server den Aufruf, je nach den Umständen zurückweisen. Wenn der Aufruf abgelehnt wird, muss der Aufrufer bei Ihrer Entscheidung. In der Regel implementiert die Aufrufer [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), in diesem Fall über die Ablehnung von nicht benachrichtigt werden sollen die [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) Methode.  
+   Möglichkeiten, 2 und 3, COM stellt die [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) Schnittstelle. Wenn es sich bei der Server implementiert wird, geben Sie alle Aufrufe über die [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) Methode. Möglichkeit, 2 werden die Aufrufe automatisch zurückgewiesen. Möglichkeit, 3 kann der Server den Aufruf, je nach den Umständen zurückweisen. Wenn der Aufruf abgelehnt wird, muss der Aufrufer bei Ihrer Entscheidung. In der Regel implementiert die Aufrufer [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), in diesem Fall über die Ablehnung von nicht benachrichtigt werden sollen die [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) Methode.  
   
- COM-Interop konvertiert jedoch im Fall von Lösungen, die mithilfe von Office-Entwicklungstools in Visual Studio erstellt werden, alle abgelehnten Aufrufe an eine <xref:System.Runtime.InteropServices.COMException> ("der Meldungsfilter gibt an, dass die Anwendung ausgelastet ist."). Jedes Mal, wenn Sie ein Objektmodell, rufen Sie stellen in einem Hintergrundthread, Sie müssen darauf vorbereitet sein, diese Ausnahme zu behandeln. In der Regel umfasst, die für einen bestimmten Zeitraum wiederholen, und klicken Sie dann ein Dialogfeld angezeigt wird. Allerdings können Sie auch erstellen, den Hintergrundthread als STA und einen Nachrichtenfilter für diesen Thread in diesem Fall registriert.  
+   COM-Interop konvertiert jedoch im Fall von Lösungen, die mithilfe von Office-Entwicklungstools in Visual Studio erstellt werden, alle abgelehnten Aufrufe an eine <xref:System.Runtime.InteropServices.COMException> ("der Meldungsfilter gibt an, dass die Anwendung ausgelastet ist."). Jedes Mal, wenn Sie ein Objektmodell, rufen Sie stellen in einem Hintergrundthread, Sie müssen darauf vorbereitet sein, diese Ausnahme zu behandeln. In der Regel umfasst, die für einen bestimmten Zeitraum wiederholen, und klicken Sie dann ein Dialogfeld angezeigt wird. Allerdings können Sie auch erstellen, den Hintergrundthread als STA und einen Nachrichtenfilter für diesen Thread in diesem Fall registriert.  
   
 ## <a name="start-the-thread-correctly"></a>Der Thread wird korrekt gestartet.  
  Wenn Sie einen neuen STA-Thread erstellen, werden festlegen Sie den Apartmentzustand auf STA, bevor Sie den Thread zu starten. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:  
