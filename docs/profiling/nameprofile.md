@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819588"
 ---
 # <a name="nameprofile"></a>NameProfile
 Die `NameProfile`-Funktion weist dem angegebenen Prozess oder Thread eine Zeichenfolge zu.  
@@ -39,17 +39,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Der Name des Profilerstellungselements. Ein Name ist ungültig (wodurch NAME_ERROR_INVALID_NAME von NameProfileA zurückgegeben wird), wenn:  
   
--   Der an NameProfileA übergebene Zeiger ein NULL-Wert ist  
+- Der an NameProfileA übergebene Zeiger ein NULL-Wert ist  
   
--   Die Zeichenfolgendaten von pszName mit einer Zahl beginnt  
+- Die Zeichenfolgendaten von pszName mit einer Zahl beginnt  
   
--   Die Zeichenfolgendaten von pszName einen Leerraum enthalten  
+- Die Zeichenfolgendaten von pszName einen Leerraum enthalten  
   
--   Die Zeichenfolgendaten von pszName eines der folgenden Zeichen enthalten: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Die Zeichenfolgendaten von pszName eines der folgenden Zeichen enthalten: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Werte können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:  
+  Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Werte können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:  
   
 |Enumerator|Beschreibung |  
 |----------------|-----------------|  

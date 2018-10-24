@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747351"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459672"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -151,7 +151,7 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 Sobald dieser Build fertiggestellt ist, haben Sie eine App erstellt, die Sie in jedes Eingabeaufforderungsfenster kopieren und dort ausführen können. Sie macht zwar nicht viel, aber sie ist der Ausgangspunkt von vielem Anderen.
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio-Beispiele](../ide/visual-studio-samples.md).
+Damit haben Sie den Schnellstart erfolgreich abgeschlossen.
 
 ## <a name="see-also"></a>Siehe auch
 

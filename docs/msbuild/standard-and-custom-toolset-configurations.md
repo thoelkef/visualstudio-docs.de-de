@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815480"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie verwenden können, um ein Anwendungsprojekt zu erstellen. MSBuild umfasst ein Standardtoolset, Sie können jedoch auch benutzerdefinierte Toolsets erstellen. Informationen zum Angeben eines Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
@@ -27,7 +27,7 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
  MSBuild 15.0 umfasst die folgenden Standardtoolsets:  
   
 |ToolsVersion|Toolsetpfad (wie in der MSBuildToolsPath- oder MSBuildBinPath-Eigenschaft des Builds angegeben)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|*\<Windows-Installationspfad>\Microsoft.Net\Framework\v2.0.50727\\*|  
 |3.5|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v3.5\\*|  
 |4.0|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
   
 |Registrierungsschlüssel|Schlüsselname|Zeichenfolgen-Schlüsselwert|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**.NET Framework 2.0-Installationspfad**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**.NET Framework 3.5-Installationspfad**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**.NET Framework 4-Installationspfad**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**.NET Framework 2.0-Installationspfad**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET Framework 3.5-Installationspfad**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4-Installationspfad**|  
   
 ### <a name="sub-toolsets"></a>Unter-Toolsets  
  Wenn der Registrierungsschlüssel in der vorherigen Tabelle über einen Unterschlüssel verfügt, verwendet MSBuild diesen, um den Pfad eines Untertoolsets zu bestimmen, der den Pfad im übergeordneten Toolset überschreibt. Der folgende Unterschlüssel ist ein Beispiel:  
@@ -91,11 +91,11 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
   
  Die folgenden Eigenschaften sind für den Wert der `ToolsVersion`, die in Projekten verwendet wird, spezifisch:  
   
--   **$(MSBuildBinPath)** ist auf den `ToolsPath`-Wert festgelegt, der entweder in der Registrierung oder in der Konfigurationsdatei festgelegt ist, in der `ToolsVersion` definiert ist. Die `$(MSBuildToolsPath)`-Einstellung in der Registrierung oder die Konfigurationsdatei gibt den Speicherort der Kernaufgaben und Ziele an. In der Projektdatei wird dies der $(MSBuildBinPath)-Eigenschaft sowie der $(MSBuildToolsPath)-Eigenschaft zugeordnet.  
+- **$(MSBuildBinPath)** ist auf den `ToolsPath`-Wert festgelegt, der entweder in der Registrierung oder in der Konfigurationsdatei festgelegt ist, in der `ToolsVersion` definiert ist. Die `$(MSBuildToolsPath)`-Einstellung in der Registrierung oder die Konfigurationsdatei gibt den Speicherort der Kernaufgaben und Ziele an. In der Projektdatei wird dies der $(MSBuildBinPath)-Eigenschaft sowie der $(MSBuildToolsPath)-Eigenschaft zugeordnet.  
   
--   `$(MSBuildToolsPath)` ist eine reservierte Eigenschaft von der MSBuildToolsPath-Eigenschaft, die in der Konfigurationsdatei festgelegt ist. (Diese Eigenschaft ersetzt `$(MSBuildBinPath)`. `$(MSBuildBinPath)` steht aus Kompatibilitätsgründen weiterhin zur Verfügung.) Ein benutzerdefiniertes Toolset muss entweder `$(MSBuildToolsPath)` oder `$(MSBuildBinPath)` definieren, jedoch nicht beides, es sei denn, beide haben denselben Wert.  
+- `$(MSBuildToolsPath)` ist eine reservierte Eigenschaft von der MSBuildToolsPath-Eigenschaft, die in der Konfigurationsdatei festgelegt ist. (Diese Eigenschaft ersetzt `$(MSBuildBinPath)`. `$(MSBuildBinPath)` steht aus Kompatibilitätsgründen weiterhin zur Verfügung.) Ein benutzerdefiniertes Toolset muss entweder `$(MSBuildToolsPath)` oder `$(MSBuildBinPath)` definieren, jedoch nicht beides, es sei denn, beide haben denselben Wert.  
   
- Sie können auch benutzerdefinierte, Toolsversion-spezifische Eigenschaften zur Konfigurationsdatei hinzufügen, indem Sie die gleiche Syntax verwenden wie zum Hinzufügen der MSBuildToolsPath-Eigenschaft. Damit diese benutzerdefinierten Eigenschaften der Projektdatei zur Verfügung stehen, müssen Sie den gleichen Namen wie der des in der Konfigurationsdatei angegebenen Werts verwenden. In der Konfigurationsdatei können Sie Toolsets, nicht jedoch Unter-Toolsets definieren.  
+  Sie können auch benutzerdefinierte, Toolsversion-spezifische Eigenschaften zur Konfigurationsdatei hinzufügen, indem Sie die gleiche Syntax verwenden wie zum Hinzufügen der MSBuildToolsPath-Eigenschaft. Damit diese benutzerdefinierten Eigenschaften der Projektdatei zur Verfügung stehen, müssen Sie den gleichen Namen wie der des in der Konfigurationsdatei angegebenen Werts verwenden. In der Konfigurationsdatei können Sie Toolsets, nicht jedoch Unter-Toolsets definieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224225"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881071"
 ---
 # <a name="javascript-support"></a>JavaScript-Unterstützung
 
@@ -34,7 +34,7 @@ Wählen Sie im Dialogfeld „Neue Datei“ **Web > Empty JS file** (Leere JS-Dat
 
 ## <a name="intellisense"></a>Intellisense
 
-Visual Studio für Mac verwendet den [JavaScript-Sprachdienst](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) für die Bereitstellung von IntelliSense. Auf diese Weise verfügen Sie beim Schreiben von Code über eine intelligente Codevervollständigung, Parameterinfos und Memberlisten.
+Visual Studio für Mac verwendet den [JavaScript-Sprachdienst](/visualstudio/ide/javascript-intellisense) für die Bereitstellung von IntelliSense. Auf diese Weise verfügen Sie beim Schreiben von Code über eine intelligente Codevervollständigung, Parameterinfos und Memberlisten.
 
 JavaScript-IntelliSense in Visual Studio für Mac kann auf einem Typrückschluss, einem JSDoc oder einer TypeScript-Deklaration basieren.
 

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775090"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880528"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
 
@@ -50,7 +50,7 @@ Visual Studio-Tools für Unity unterstützt die robusten [Debuggingfunktionen](u
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio für Mac-Tools für Unity
 
-Visual Studio für Mac unterstützt auch Unity-Projekte. Weitere Informationen finden Sie in der [Dokumentation zu Visual Studio für Mac-Tools für Unity](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+Visual Studio für Mac unterstützt auch Unity-Projekte. Weitere Informationen finden Sie in der [Dokumentation zu Visual Studio für Mac-Tools für Unity](/visualstudio/mac/unity-tools).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

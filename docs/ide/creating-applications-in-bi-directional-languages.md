@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176709"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863633"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 
@@ -30,9 +30,9 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen
 
--  Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
+-  Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+-  Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 -  Konsolenanwendungen Konsolenanwendungen unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.
 
@@ -89,6 +89,6 @@ Die Lesefolge von rechts nach links wird jedoch nicht überall in Visual Studio 
 ## <a name="see-also"></a>Siehe auch
 
 - [Bidirektionale Unterstützung für Windows Forms-Anwendungen](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [Bidirektionale Unterstützung für ASP.NET-Webanwendungen](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [Bidirektionale Unterstützung für ASP.NET-Webanwendungen](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
 - [Globalisieren von Anwendungen](../ide/globalizing-applications.md)
 - [Lokalisieren von Anwendungen](../ide/localizing-applications.md)

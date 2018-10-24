@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916999"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863568"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Kulturspezifische Klassen für globale Windows Forms und Web Forms
 
@@ -46,7 +46,7 @@ Jede Kultur verfügt über unterschiedliche Konventionen für die Anzeige von Da
 
 ## <a name="using-the-culture-setting"></a>Verwenden der Kultureinstellung
 
-Verwenden Sie die Kultureinstellung, die entweder in der App oder in der Systemsteuerung unter **Regionale Einstellungen** gespeichert ist, um die Kulturkonventionen zur Laufzeit zu ermitteln und die Informationen entsprechend zu formatieren. Weitere Informationen zum Festlegen der Kultur finden Sie unter [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für die Globalisierung von ASP.NET-Webseiten](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Klassen, die die Informationen automatisch entsprechend der Kultureinstellung formatieren, werden als *kulturspezifisch* bezeichnet. Einige kulturspezifische Methoden sind
+Verwenden Sie die Kultureinstellung, die entweder in der App oder in der Systemsteuerung unter **Regionale Einstellungen** gespeichert ist, um die Kulturkonventionen zur Laufzeit zu ermitteln und die Informationen entsprechend zu formatieren. Weitere Informationen zum Festlegen der Kultur finden Sie unter [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für die Globalisierung von ASP.NET-Webseiten](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Klassen, die die Informationen automatisch entsprechend der Kultureinstellung formatieren, werden als *kulturspezifisch* bezeichnet. Einige kulturspezifische Methoden sind
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

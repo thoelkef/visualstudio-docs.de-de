@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827960"
 ---
 # <a name="setting-up-a-git-repository"></a>Einrichten eines Git-Repository
 
@@ -38,7 +38,7 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
     ![Adresse anzeigen und kopieren](media/version-control-git3.png)
 
-  Sie benötigen die HTTPS-Adresse, um Visual Studio für Mac auf dieses Repository zu verweisen.
+   Sie benötigen die HTTPS-Adresse, um Visual Studio für Mac auf dieses Repository zu verweisen.
 
 
 ## <a name="publishing-an-existing-project"></a>Veröffentlichen eines vorhandenen Projekts
@@ -108,7 +108,7 @@ Es ist sehr wahrscheinlich, dass Sie mit einem GitHub-Repository arbeiten müsse
 5. Geben Sie das Verzeichnis ein, in das das Repository geklont werden soll, und klicken Sie auf **Check-Out**.
 
 > [!NOTE]
-Möglicherweise treten Probleme auf, wenn das Repository größer als 4 GB ist.
+> Möglicherweise treten Probleme auf, wenn das Repository größer als 4 GB ist.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
