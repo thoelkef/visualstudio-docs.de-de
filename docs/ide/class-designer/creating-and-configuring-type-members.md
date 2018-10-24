@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938798"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
 Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese Member im Fenster **Klassendetails** konfigurieren:
 
 |**Type**|**Member, die der Typ enthalten kann**|
-|--------------|--------------------------------|
+|--------------| - |
 |Klasse|Methode, Eigenschaft (bei C# und Visual Basic), Feld, Ereignis (bei C# und Visual Basic), Konstruktor (Methode), Destruktor (Methode), Konstante|
 |Enum|Member|
 |Interface|Methode, Eigenschaft, Ereignis (bei C# und Visual Basic)|
@@ -58,7 +58,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
 |Aufgabe|Unterstützender Inhalt|
-|----------|------------------------|
+|----------| - |
 |**Erste Schritte:** Bevor Sie Typmembers erstellen und konfigurieren, müssen Sie das Fenster **Klassendetails** öffnen.|- [Öffnen des Fensters „Klassendetails“](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Hinweise zur Verwendung von Klassendetails](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Anzeigen von schreibgeschützten Informationen](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Erstellen und Ändern von Typmembern:** Sie können neue Members erstellen, Members ändern und einer Methode Parameter hinzufügen, indem Sie das Fenster **Klassendetails** verwenden.|- [Erstellen von Membern](creating-and-configuring-type-members.md#create-members)<br />- [Ändern von Typmembern](creating-and-configuring-type-members.md#modify-type-members)<br />- [Hinzufügen von Parametern zu Methoden](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
