@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835987"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated oder Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Sie können Ihre eigene Anwendung mit Visual Studio-basierten isolierten oder in
   
 > [!IMPORTANT]
 >  Die [(Endbenutzer-Lizenzvertrag)](https://www.visualstudio.com/en-us/support/legal/mt171552) für Visual Studio integrated und isolated Shells Abschnitt enthält, die Datensammlung (**Abschnitt 3. Daten**).  Es wird beschrieben, die Nutzung der Kundendaten, die von Microsoft Benutzer, der entweder integriert oder isolierte Shell-Software gesammelt werden können, die Sie in Ihrer Anwendung zu erstellen. Weitere Informationen finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Wenn Sie separate Nutzungsdaten aus Ihrer Kunden durch Ihre Anwendung erfassen, müssen Sie die entsprechenden Beachten Sie, dass für Benutzer Ihrer Anwendung der Gegenstand der Sammlung bereitstellen.  Wenn Sie entweder die isolated oder integrated Shell-Software als Teil Ihrer Anwendung entsprechend der Visual Studio Software Development Kit-Lizenz, verteilen, müssen Sie eine der folgenden einschließen:  
->   
->  -   der Endbenutzer-Lizenzvertrag als Teil Ihrer Anwendung-Lizenz  
-> -   Ihre eigenen Endbenutzer-Lizenzvertrag, die Ihre Kunden zu den Bedingungen zustimmen, die Visual Studio schützen erfordert integriert oder isoliert Shell mindestens so viel wie die Microsoft-Endbenutzer-Lizenzbedingungen für die Shell-software  
+> 
+> - der Endbenutzer-Lizenzvertrag als Teil Ihrer Anwendung-Lizenz  
+>   -   Ihre eigenen Endbenutzer-Lizenzvertrag, die Ihre Kunden zu den Bedingungen zustimmen, die Visual Studio schützen erfordert integriert oder isoliert Shell mindestens so viel wie die Microsoft-Endbenutzer-Lizenzbedingungen für die Shell-software  
   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
  Weitere Informationen zu den verteilbaren Paketen finden Sie unter den [Downloads zu Visual Studio-Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkID=119298) Website.  

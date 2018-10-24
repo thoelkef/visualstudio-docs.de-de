@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843641"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   
  Um einen Stil zu erstellen, wählen Sie das Objekt, und wählen Sie dann im Menü **Objekt** **Stil bearbeiten** und dann **Eine Kopie bearbeiten** oder **Leer erstellen**.  
   
--   Wählen Sie **Kopie bearbeiten**, um mit dem Standardstil oder der Vorlage des Steuerelements zu beginnen.  
+- Wählen Sie **Kopie bearbeiten**, um mit dem Standardstil oder der Vorlage des Steuerelements zu beginnen.  
   
--   Wählen Sie **Leere erstellen**, um von Grund auf neu zu starten.  
+- Wählen Sie **Leere erstellen**, um von Grund auf neu zu starten.  
   
- Die **aktuelle bearbeiten** Option nur angezeigt, wenn Sie bearbeiten, einen Stil oder eine Vorlage, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
+  Die **aktuelle bearbeiten** Option nur angezeigt, wenn Sie bearbeiten, einen Stil oder eine Vorlage, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
   
- Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die Vorlage so benennen, dass sie später verwendet werden kann, oder Sie können den Stil oder die Vorlage auf alle Steuerelemente des Typs anwenden.  
+  Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die Vorlage so benennen, dass sie später verwendet werden kann, oder Sie können den Stil oder die Vorlage auf alle Steuerelemente des Typs anwenden.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Sie können keine Stile oder Vorlagen für jede Art von Steuerelement erstellen. Wenn ein Steuerelement diese nicht unterstützt,  wird die Breadcrumb-Schaltfläche nicht oberhalb der Zeichenfläche angezeigt.  
