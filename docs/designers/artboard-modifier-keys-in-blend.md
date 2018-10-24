@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861110"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Zusatztasten der Zeichenflächen in Blend
 Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können daher nicht über die [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]-Benutzeroberfläche ermittelt werden. In der folgenden Tabelle werden Tastenkombinationen aufgeführt, die eine Aktion ändern wie z. B. die Anpassung der Größe eines Objekts.
 
 |Aktion|Vorgehensweise|
-|-----------------------|-------------|
+| - |-------------|
 |Wählen Sie vorübergehend das **Auswahl**tool aus, solange ein anderes Tool ausgewählt ist (dadurch verringern Sie die Anzahl der Klicks im Bereich **Tools**, indem Sie zwischen dem **Auswahl**tool und anderen Tools wechseln)|Halten Sie die **STRG-TASTE** gedrückt.|
 |Ausgewählte Objekte bewegen, während das **Auswahl**tool ausgewählt ist|Drücken Sie die Pfeiltasten|
 |Schwenken der Zeichenfläche|Halten Sie die **LEERTASTE** gedrückt, und ziehen Sie die Zeichenfläche.|

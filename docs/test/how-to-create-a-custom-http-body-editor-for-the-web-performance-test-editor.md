@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862462"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -33,31 +33,31 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Erstellen eines Benutzersteuerelements mithilfe eines Windows-Steuerelementbibliothek-Projekts
 
-1.  Klicken Sie in Visual Studio im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Klicken Sie in Visual Studio im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-2.  Wählen Sie unter **Installierte Vorlagen** je nach Programmieranforderungen entweder **Visual Basic** oder **Visual C#** aus, und wählen Sie dann **Windows** aus.
+2. Wählen Sie unter **Installierte Vorlagen** je nach Programmieranforderungen entweder **Visual Basic** oder **Visual C#** aus, und wählen Sie dann **Windows** aus.
 
-    > [!NOTE]
-    > In diesem Beispiel wird Visual C# verwendet.
+   > [!NOTE]
+   > In diesem Beispiel wird Visual C# verwendet.
 
-3.  Wählen Sie in der Liste der Vorlagen den Eintrag **Windows Forms-Steuerelementbibliothek** aus.
+3. Wählen Sie in der Liste der Vorlagen den Eintrag **Windows Forms-Steuerelementbibliothek** aus.
 
-4.  Geben Sie in das Textfeld **Name** einen Namen ein (z.B. `MessageEditors`), und klicken Sie auf **OK**.
+4. Geben Sie in das Textfeld **Name** einen Namen ein (z.B. `MessageEditors`), und klicken Sie auf **OK**.
 
-    > [!NOTE]
-    > In diesem Beispiel wird "MessageEditors" verwendet.
+   > [!NOTE]
+   > In diesem Beispiel wird "MessageEditors" verwendet.
 
-     Das Projekt wird zur neuen Projektmappe hinzugefügt, und im Designer wird ein <xref:System.Windows.Forms.UserControl>-Objekt mit dem Namen *UserControl1.cs* präsentiert.
+    Das Projekt wird zur neuen Projektmappe hinzugefügt, und im Designer wird ein <xref:System.Windows.Forms.UserControl>-Objekt mit dem Namen *UserControl1.cs* präsentiert.
 
-5.  Ziehen Sie von der **Toolbox** unter der Kategorie **Allgemeine Steuerelemente** ein <xref:System.Windows.Forms.RichTextBox>-Element auf die Oberfläche von „UserControl1“.
+5. Ziehen Sie von der **Toolbox** unter der Kategorie **Allgemeine Steuerelemente** ein <xref:System.Windows.Forms.RichTextBox>-Element auf die Oberfläche von „UserControl1“.
 
-6.  Wählen Sie das Aktionstagsymbol (![Smarttag-Glyphe](../test/media/vs_winformsmttagglyph.gif)) in der oberen rechten Ecke des <xref:System.Windows.Forms.RichTextBox>-Steuerelements aus, und klicken Sie dann auf **In übergeordnetem Container andocken**.
+6. Wählen Sie das Aktionstagsymbol (![Smarttag-Glyphe](../test/media/vs_winformsmttagglyph.gif)) in der oberen rechten Ecke des <xref:System.Windows.Forms.RichTextBox>-Steuerelements aus, und klicken Sie dann auf **In übergeordnetem Container andocken**.
 
-7.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Windows Forms-Bibliotheksprojekt, und wählen Sie **Eigenschaften** aus.
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Windows Forms-Bibliotheksprojekt, und wählen Sie **Eigenschaften** aus.
 
-8.  Wählen Sie unter **Eigenschaften** die Registerkarte **Anwendung** aus.
+8. Wählen Sie unter **Eigenschaften** die Registerkarte **Anwendung** aus.
 
 9. Wählen Sie in der Dropdownliste **Zielframework** den Eintrag **.NET Framework 4** aus.
 
@@ -95,9 +95,9 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 18. Fügen Sie die folgenden Eigenschaften hinzu, um das Abrufen und Festlegen des Texts in "RichTextBox1" zu aktivieren. Die <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle verwendet EditString, und <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> verwendet EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Hinzufügen einer Klasse zum Projekt der Windows-Steuerelementbibliothek
 

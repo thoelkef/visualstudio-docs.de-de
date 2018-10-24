@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950016"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Verwalten von Auslastungstestergebnissen im Repository für Auslastungstestergebnisse
 
@@ -44,7 +44,7 @@ Informationen, die während eines Auslastungstests erfasst wurden, können im *E
 ## <a name="load-test-analyzer-tasks"></a>Aufgaben des Auslastungstest-Analyzers
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Einrichten eines Repositorys für Auslastungstestergebnisse:** Sie können ein Repository für Auslastungstestergebnisse in einer SQL-Datenbank einrichten. **Hinweis:** Ein Auslastungstestrepository kann auch erstellt werden, wenn Sie einen Testcontroller installieren. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).||
 |**Auswählen und Anzeigen eines Ergebnisrepositorys:** Sie können ein bestimmtes Ergebnisrepository auswählen. Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Testergebnisse von den Agents oder den lokalen Computern können auf einem beliebigen SQL-Server gespeichert werden, auf dem Sie einen Auslastungstest-Ergebnisspeicher erstellt haben. In jedem Fall müssen Sie mithilfe des Fensters **Testcontroller verwalten** angeben, wo die Ergebnisse des Auslastungstests gespeichert werden sollen.|-   [Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests](../test/how-to-select-a-load-test-results-repository.md)<br />-   [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Löschen eines Auslastungstestergebnisses aus dem Repository:** Sie können ein Auslastungstestergebnis aus dem **Auslastungstest-Editor** mithilfe des Dialogfelds **Auslastungstestergebnisse öffnen und verwalten** entfernen.|-   [Vorgehensweise: Löschen von Auslastungstestergebnissen aus einem Repository](../test/how-to-delete-load-test-results-from-a-repository.md)|

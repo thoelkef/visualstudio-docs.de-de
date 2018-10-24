@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930543"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.
@@ -28,7 +28,7 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
 
 
 |Vorgehensweise|Siehe|
-|----------------------------------|---------|
+| - |---------|
 |Anpassen der Darstellung und des Verhaltens von Fenstern, Menüs und anderen IDE-Elementen|[Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)|
 |Ändern der Einstellungen für das automatische Speichern und Wiederherstellen von Dateien|[AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Festlegen der Anzeige von Dokumenten und Verwaltungseinstellungen, z. B. das Verhalten von Sonstige Dateien|[Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)|

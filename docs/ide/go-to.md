@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907052"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
@@ -27,10 +27,10 @@ Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in I
 
 ## <a name="how-to-use-it"></a>Verwendungsweise
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Drücken Sie **STRG**+**T** oder **STRG**+**,**
-**Maus**    | Klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**.
+**Maus** | Klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**.
 
 Ein kleines Fenster wird oben rechts in Ihrem Code-Editor angezeigt.
 
@@ -56,7 +56,7 @@ Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie
 
 Präfix | Symbol | Verknüpfung | Beschreibung 
 :-: | - | - | -
-:| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G**         | Zur angegebenen Zeilennummer wechseln
+:| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G** | Zur angegebenen Zeilennummer wechseln
 f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
 b| ![Symbol „Zuletzt verwendete Dateien“](media/gotoall-recent-files-icon.png) | **STRG**+**1**, **STRG**+**R** | Zur angegebenen zuletzt besuchten Datei wechseln
 t| ![Symbol „Typen“](media/gotoall-types-icon.png) | **STRG**+**1**, **STRG**+**T** | Zum angegebenen Typ wechseln
@@ -85,8 +85,8 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 Einstellung | Beschreibung 
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
-Details anzeigen    | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
-Fenster zentrieren   | Verschieben Sie dieses Fenster in die Mitte des Code-Editors, statt an die Standardposition.
+Details anzeigen | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
+Fenster zentrieren | Verschieben Sie dieses Fenster in die Mitte des Code-Editors, statt an die Standardposition.
 
 ## <a name="see-also"></a>Siehe auch
 

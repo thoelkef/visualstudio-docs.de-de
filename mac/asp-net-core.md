@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942945"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
- * `UseKestrel`: gibt an, dass der Kestrel-Server von der Anwendung verwendet wird
- * `UseContentRoot(Directory.GetCurrentDirectory())`: verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird
- * `.UseIISIntegration()`: gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
- * `.UseStartup<Startup>()`: gibt die Startup-Klasse an
+* `UseKestrel`: gibt an, dass der Kestrel-Server von der Anwendung verwendet wird
+* `UseContentRoot(Directory.GetCurrentDirectory())`: verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird
+* `.UseIISIntegration()`: gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
+* `.UseStartup<Startup>()`: gibt die Startup-Klasse an
 
- Die Methoden zum Erstellen und Ausführen erstellen den IWebHost, der die App hostet und startet, während er auf eingehende HTTP-Anforderungen lauscht.
+  Die Methoden zum Erstellen und Ausführen erstellen den IWebHost, der die App hostet und startet, während er auf eingehende HTTP-Anforderungen lauscht.
 
 ### <a name="startupcs"></a>Startup.cs
 

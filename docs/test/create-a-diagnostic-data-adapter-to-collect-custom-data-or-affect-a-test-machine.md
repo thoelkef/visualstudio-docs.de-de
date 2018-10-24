@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0839bbf95b701f1104ab5c9fb1c66318ac4707c9
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: e0a7815b57fa49239a0895e6733a13c5c83e99e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860890"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers
 
@@ -31,7 +31,7 @@ Wenn Sie die Tests aus Visual Studio ausführen, müssen Sie für diese Testeins
  In den folgenden Themen wird veranschaulicht, wie Sie Adapter für diagnostische Daten erstellen können:
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Erstellen eines Adapters für diagnostische Daten:** Sie erstellen einen Adapter für diagnostische Daten, indem Sie eine Klassenbibliothek erstellen, und Sie können dann die APIs des Adapters für diagnostische Daten verwenden, um die gewünschten Informationen zu sammeln oder das Testsystem zu beeinflussen, das Sie zum Ausführen der Tests verwenden.|-   [Vorgehensweise: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Installieren eines benutzerdefinierten Adapters für diagnostische Daten:** Sie können den Adapter für diagnostische Daten oder einen von anderer Seite bereitgestellten Adapter installieren, indem Sie diesen in das richtige Verzeichnis kopieren.|-   [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Auswählen eines benutzerdefinierten Adapters für diagnostische Daten, der beim Ausführen der Tests verwendet wird:** Sie können den Adapter für diagnostische Daten auswählen, der für die Testeinstellungen verwendet werden soll, d.h. den Adapter, der zum Ausführen der Tests verwendet wird.|-   [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|

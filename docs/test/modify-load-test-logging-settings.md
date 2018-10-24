@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909693"
 ---
 # <a name="modify-load-test-logging-settings"></a>Ändern von Einstellungen für die Auslastungstestprotokollierung
 
@@ -24,7 +24,7 @@ Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Le
 Der *Testcontroller* spoolt während der Testausführung alle gesammelten Beispieldaten des Auslastungstests in ein Datenbankprotokoll. Weitere Daten, z. B. Details zur zeitlichen Steuerung und Fehlerdetails, werden nach Abschluss des Tests in die Datenbank geladen.
 
 |Aufgabe|Verwandte Themen|
-|----------|-----------------------|
+|-|-----------------------|
 |**Festlegen der Häufigkeit, mit der Protokolle während eines Auslastungstestlaufs gespeichert werden:** Sie können angeben, wie oft das Testprotokoll bei der Ausführung des Auslastungstests gespeichert werden soll.|-   [Vorgehensweise: Angeben, wie häufig Testprotokolle gespeichert werden](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Speichern von Protokollen bei einem Auslastungstestfehler:** Sie können angeben, ob das Testprotokoll gespeichert werden soll, wenn ein Auslastungstest fehlschlägt.|-   [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Festlegen der maximalen Dateigröße für die Protokolldatei:** Sie können die XML-Konfigurationsdatei für den Testcontrollerdienst bearbeiten, um die gewünschte maximale Dateigröße für die Protokolldatei anzugeben.|[Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|

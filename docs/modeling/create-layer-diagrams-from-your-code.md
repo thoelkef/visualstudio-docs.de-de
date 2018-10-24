@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951170"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
@@ -88,7 +88,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
  Um festzustellen, ob ein verknüpftes Element die Validierung unterstützt, öffnen Sie **Ebenen-Explorer** und untersuchen Sie die **unterstützt die Validierung** -Eigenschaft des Elements. Finden Sie unter [Verwalten von Links zu Artefakten](#Managing).
 
 |**Aktion**|**Gehen Sie folgendermaßen vor**|
-|------------|----------------------------|
+|-|-|
 |Erstellen einer Ebene für ein einzelnes Artefakt|<ol><li>Ziehen Sie das Element in dem Abhängigkeitsdiagramm aus diesen Quellen:<br /><br /> <ul><li>**Projektmappen-Explorer**<br /><br />         Beispiele: Dateien oder Projekte.</li><li>Codezuordnungen<br /><br />         Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md) und [Verwenden von Code maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Klassenansicht** oder **Objektkatalog**</li></ul><br />     Im Diagramm wird eine Ebene angezeigt und mit dem Artefakt verknüpft.</li><li>Ändern Sie den Namen der Ebene, um die Aufgaben des zugeordneten Codes oder der Artefakte widerzuspiegeln.</li></ol> **Wichtig:** durch Ziehen der Binärdateien in das Abhängigkeitsdiagramm wird nicht automatisch hinzugefügt ihre Verweise dem Modellierungsprojekt. Sie müssen die Binärdateien manuell hinzufügen, die Sie für das Modellierungsprojekt überprüfen möchten. **Das Modellierungsprojekt Binärdateien hinzu** <ol><li>In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Modellierungsprojekt aus, und wählen Sie dann **vorhandenes Element hinzufügen**.</li><li>In der **vorhandenes Element hinzufügen** navigieren Sie zu den Binärdateien bereitgestellt, wählen Sie sie aus und wählen Sie dann im Dialogfeld **OK**.     Die Binärdateien werden im Modellierungsprojekt angezeigt.</li><li>In **Projektmappen-Explorer**, wählen Sie eine binäre Datei, die Sie hinzugefügt haben, und drücken Sie dann die **F4** zum Öffnen der **Eigenschaften** Fenster.</li><li>Legen Sie für jeder Binärdatei die **Buildvorgang** Eigenschaft **überprüfen**.</li></ol>|
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Elemente in dem Abhängigkeitsdiagramm zur gleichen Zeit.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|
 |Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** gedrückt, während Sie alle Artefakte gleichzeitig dem Dependency-Diagramm ziehen. **Hinweis:** bei Verwendung der **UMSCHALT** -Taste, um einen Bereich von Elementen auswählen, lassen Sie die Taste aus, nachdem Sie die Elemente ausgewählt. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
@@ -118,7 +118,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 2.  Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
 
 |**Aktion**|**Im Ebenen-Explorer**|
-|------------|---------------------------|
+|-|-|
 |Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **löschen**.|
 |Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1.  Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **Ausschneiden**.<br />2.  Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **einfügen**.|
 |Kopieren des Links von einer Ebene auf eine andere Ebene|1.  Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **Kopie**.<br />2.  Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **einfügen**.|
@@ -131,15 +131,15 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 > [!NOTE]
 > Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Um anzuzeigen, welche Elemente über Abhängigkeiten verfügen, können Sie die Reverse-Engineering, öffnen Sie das Kontextmenü für eine oder mehrere Ebenen aus, und wählen Sie dann **Links anzeigen**. In **Ebenen-Explorer**, überprüfen Sie die **unterstützt die Validierung** Spalte. Abhängigkeiten werden nicht für Elemente, die für die in dieser Spalte wird Reverse Engineering **"false"**.
 
--   Wählen Sie eine oder mehrere Ebenen, öffnen Sie das Kontextmenü für die ausgewählte Ebene, und wählen Sie dann **Abhängigkeiten generieren**.
+- Wählen Sie eine oder mehrere Ebenen, öffnen Sie das Kontextmenü für die ausgewählte Ebene, und wählen Sie dann **Abhängigkeiten generieren**.
 
- In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.
+  In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.
 
 ## <a name="EditDependencies"></a> Bearbeiten von Ebenen und Abhängigkeiten auf den vorgesehenen Entwurf anzeigen
  Beschreibung die Änderungen, die Sie an Ihrem System oder der vorgesehenen Architektur vornehmen möchten, bearbeiten Sie das Abhängigkeitsdiagramm:
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
-|------------|-----------------------------|
+|-|-|
 |Ändern oder Einschränken der Richtung einer Abhängigkeit|Legen Sie dessen **Richtung** Eigenschaft.|
 |Erstellen von neuen Abhängigkeiten|Verwenden der **Abhängigkeit** und **bidirektionale Abhängigkeit** Tools.<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. Wenn Sie fertig sind, wählen Sie die **Zeiger** Tool, oder drücken Sie die **ESC** Schlüssel.|
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in der Ebene des **verboten Namespace Dependencies** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|

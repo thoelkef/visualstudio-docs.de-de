@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855533"
 ---
 # <a name="model-editor"></a>Modell-Editor
 
@@ -31,7 +31,7 @@ Sie können den **Modell-Editor** verwenden, um einfache 3D-Modelle von Grund au
 Der **Modell-Editor** unterstützt mehrere 3D-Modellformate, die bei der Entwicklung von DirectX-Apps verwendet werden:
 
 |Formatname|Dateierweiterung|Unterstützte Vorgänge (Anzeigen, Bearbeiten, Erstellen)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |AutoDesk-FBX-Austauschdatei|*FBX*|Anzeigen, Bearbeiten, Erstellen|
 |Collada DAE-Datei|*DAE*|Anzeigen, Bearbeiten (Änderungen an Collada DAE-Dateien werden im FBX-Format gespeichert).|
 |OBJ|*OBJ*|Anzeigen, Bearbeiten (Änderungen an OBJ-Dateien werden im FBX-Format gespeichert).|
@@ -254,7 +254,7 @@ Jedes dieser Materialien stellt eine Textur auf der Oberfläche eines Objekts. S
 Um die Reaktion eines bestimmten Objekts auf verschiedenen Lichtquellen in der Szene zu ändern, können Sie die Beleuchtungseigenschaften des Materials unabhängig von anderen Objekten ändern, bei denen das Material verwendet wird. Die folgende Tabelle beschreibt allgemeine Beleuchtungseigenschaften:
 
 |Beleuchtungseigenschaft|Beschreibung |
-|-----------------------|-----------------|
+| - |-----------------|
 |**Umgebend**|Beschreibt die Auswirkung von umgebenden Beleuchtung auf die Oberfläche.|
 |**Diffus**|Beschreibt die Auswirkung direktionaler Punktlichter auf die Oberfläche.|
 |**Selbstleuchtend**|Beschreibt die Abgabe von Licht durch die Oberfläche unabhängig von anderer Beleuchtung.|
@@ -294,7 +294,7 @@ Wenn Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekte
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 |Befehl|Tastenkombinationen|
-|-------------|------------------------|
+|-------------| - |
 |In den Modus **Auswählen** wechseln|**STRG**+**G**, **STRG**+**Q**<br /><br /> **S**|
 |In den Modus **Zoom** wechseln|**STRG**+**G**, **STRG**+**Z**<br /><br /> **Z**|
 |In den Modus **Schwenken** wechseln|**STRG**+**G**, **STRG**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Wenn Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekte
 |Titel|Beschreibung |
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikobjekten wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
-|[Bildbearbeitung](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
+|[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des Shader-Designers von Visual Studio zur Arbeit mit Shadern.|

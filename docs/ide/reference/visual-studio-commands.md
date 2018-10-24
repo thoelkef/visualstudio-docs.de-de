@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879004"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , das Fenster **Direkt** oder das Feld **Suchen/Befehl** aufrufen. In jedem Fall wird das Größer-als-Zeichen (`>`) verwendet, um anzugeben, dass ein Befehl folgt und kein Such- oder Debugvorgang.
@@ -40,43 +40,44 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 
  Die folgenden Befehle verwenden Argumente und/oder Schalter.
 
-|Befehlsname|Beschreibung |
-|------------------|-----------------|
-|[Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md)|Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.|
-|[Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md)|Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.|
-|[Neues Element hinzufügen](../../ide/reference/add-new-item-command.md)|Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses.|
-|[Alias](../../ide/reference/alias-command.md)|Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder sogar für einen anderen Alias.|
-|[Anweisung auswerten](../../ide/reference/evaluate-statement-command.md)|Wertet die angegebene Anweisung aus und zeigt sie an.|
-|[Find](../../ide/reference/find-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
-|[Suchen in Dateien](../../ide/reference/find-in-files-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md).|
-|[Gehe zu](../../ide/reference/go-to-command.md)|Bewegt den Cursor in die angegebene Zeile.|
-|[Aufrufliste auflisten](../../ide/reference/list-call-stack-command.md)|Zeigt die aktuelle Aufrufliste an.|
-|[Disassembly auflisten](../../ide/reference/list-disassembly-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
-|[Arbeitsspeicher auflisten](../../ide/reference/list-memory-command.md)|Zeigt den Inhalt des angegebenen Speicherbereichs an.|
-|[Module auflisten](../../ide/reference/list-modules-command.md)|Listet die Module für den aktuellen Prozess auf.|
-|[Registrierungen auflisten](../../ide/reference/list-registers-command.md)|Zeigt eine Liste mit Registrierungen an.|
-|[Quelle auflisten](../../ide/reference/list-source-command.md)|Zeigt die angegebenen Quellcodezeilen an.|
-|[Threads auflisten](../../ide/reference/list-threads-command.md)|Zeigt eine Liste der Threads im aktuellen Programm an.|
-|[Befehlsfensterausgaben protokollieren](../../ide/reference/log-command-window-output-command.md)|Kopiert die gesamte Ein- und Ausgabe aus dem Befehlsfenster in eine Datei.|
-|[Neue Datei](../../ide/reference/new-file-command.md)|Erstellt eine neue Datei und fügt sie dem aktuell ausgewählten Projekt hinzu.|
-|[Datei öffnen](../../ide/reference/open-file-command.md)|Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors.|
-|[Projekt öffnen](../../ide/reference/open-project-command.md)|Öffnet ein vorhandenes Projekt und ermöglicht das Hinzufügen des Projekts zur aktuellen Projektmappe.|
-|[Print](../../ide/reference/print-command.md)|Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an.|
-|[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an.|
-|[Ersetzen](../../ide/reference/replace-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
-|[In Dateien ersetzen](../../ide/reference/replace-in-files-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md).|
-|[Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md)|Ermöglicht die Anzeige eines bestimmten Stapelrahmens.|
-|[Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md)|Ermöglicht die Anzeige eines bestimmten Threads.|
-|[Basis festlegen](../../ide/reference/set-radix-command.md)|Legt die Zahl der anzuzeigenden Bytes fest.|
-|[Shell](../../ide/reference/shell-command.md)|Startet Programme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde.|
-|[Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md)|Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.|
-|[Starten](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
-|[Pfad](../../ide/reference/symbol-path-command.md)|Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.|
-|[Haltepunkt ein/aus](../../ide/reference/toggle-breakpoint-command.md)|Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.|
-|[Befehl "Überwachung"](../../ide/reference/watch-command.md)|Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** .|
+
+| Befehlsname | Beschreibung  |
+| - | - |
+| [Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md) | Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese. |
+| [Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md) | Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu. |
+| [Neues Element hinzufügen](../../ide/reference/add-new-item-command.md) | Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses. |
+| [Alias](../../ide/reference/alias-command.md) | Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder sogar für einen anderen Alias. |
+| [Anweisung auswerten](../../ide/reference/evaluate-statement-command.md) | Wertet die angegebene Anweisung aus und zeigt sie an. |
+| [Find](../../ide/reference/find-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind. |
+| [Suchen in Dateien](../../ide/reference/find-in-files-command.md) | Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md). |
+| [Gehe zu](../../ide/reference/go-to-command.md) | Bewegt den Cursor in die angegebene Zeile. |
+| [Aufrufliste auflisten](../../ide/reference/list-call-stack-command.md) | Zeigt die aktuelle Aufrufliste an. |
+| [Disassembly auflisten](../../ide/reference/list-disassembly-command.md) | Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen. |
+| [Arbeitsspeicher auflisten](../../ide/reference/list-memory-command.md) | Zeigt den Inhalt des angegebenen Speicherbereichs an. |
+| [Module auflisten](../../ide/reference/list-modules-command.md) | Listet die Module für den aktuellen Prozess auf. |
+| [Registrierungen auflisten](../../ide/reference/list-registers-command.md) | Zeigt eine Liste mit Registrierungen an. |
+| [Quelle auflisten](../../ide/reference/list-source-command.md) | Zeigt die angegebenen Quellcodezeilen an. |
+| [Threads auflisten](../../ide/reference/list-threads-command.md) | Zeigt eine Liste der Threads im aktuellen Programm an. |
+| [Befehlsfensterausgaben protokollieren](../../ide/reference/log-command-window-output-command.md) | Kopiert die gesamte Ein- und Ausgabe aus dem Befehlsfenster in eine Datei. |
+| [Neue Datei](../../ide/reference/new-file-command.md) | Erstellt eine neue Datei und fügt sie dem aktuell ausgewählten Projekt hinzu. |
+| [Datei öffnen](../../ide/reference/open-file-command.md) | Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors. |
+| [Projekt öffnen](../../ide/reference/open-project-command.md) | Öffnet ein vorhandenes Projekt und ermöglicht das Hinzufügen des Projekts zur aktuellen Projektmappe. |
+| [Print](../../ide/reference/print-command.md) | Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an. |
+| [Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md) | Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an. |
+| [Ersetzen](../../ide/reference/replace-command.md) | Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind. |
+| [In Dateien ersetzen](../../ide/reference/replace-in-files-command.md) | Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md). |
+| [Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md) | Ermöglicht die Anzeige eines bestimmten Stapelrahmens. |
+| [Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md) | Ermöglicht die Anzeige eines bestimmten Threads. |
+| [Basis festlegen](../../ide/reference/set-radix-command.md) | Legt die Zahl der anzuzeigenden Bytes fest. |
+| [Shell](../../ide/reference/shell-command.md) | Startet Programme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde. |
+| [Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md) | Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an. |
+| [Starten](../../ide/reference/start-command.md) | Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen. |
+| [Pfad](../../ide/reference/symbol-path-command.md) | Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht. |
+| [Haltepunkt ein/aus](../../ide/reference/toggle-breakpoint-command.md) | Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei. |
+| [Befehl "Überwachung"](../../ide/reference/watch-command.md) | Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** . |
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

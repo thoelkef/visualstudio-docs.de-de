@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914826"
 ---
 # <a name="task-element-msbuild"></a>Task-Element (MSBuild)
 Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. Der Elementname wird durch den Namen der erstellten Aufgabe bestimmt.  
@@ -60,9 +60,9 @@ Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung |  
-|-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben.|  
+| Element | Beschreibung  |
+| - | - |
+| [Target](../msbuild/target-element-msbuild.md) | Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben. |
 
 ## <a name="remarks"></a>Hinweise  
  Ein `Task`-Element in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei erstellt eine Instanz einer Aufgabe, legt entsprechende Eigenschaften fest und führt sie aus. Das `Output`-Element speichert Ausgabeparameter in Eigenschaften oder Elementen, damit sie an anderer Stelle in der Projektdatei verwendet werden können.  

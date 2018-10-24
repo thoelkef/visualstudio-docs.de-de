@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890048"
 ---
 # <a name="lines-view---contention-data"></a>Zeilenansicht: Konfliktdaten
 In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweisungen aufgeführt, die ausgeführt wurden, als die Samplings bei der Profilerstellung erfasst wurden. In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten.  
   
  Eine Anweisung wird mit den folgenden Daten identifiziert:  
   
--   Die Quelldatei, die die Funktionsanweisung enthält.  
+- Die Quelldatei, die die Funktionsanweisung enthält.  
   
--   Die Funktion, die die Anweisung enthält.  
+- Die Funktion, die die Anweisung enthält.  
   
--   Die Quellzeile, an der die Anweisung beginnt.  
+- Die Quellzeile, an der die Anweisung beginnt.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
   
--   Die Quellzeile, an der die Anweisung endet.  
+- Die Quellzeile, an der die Anweisung endet.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
- Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
   
- In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.  
+  In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.  
   
 |Spalte|Beschreibung |  
 |------------|-----------------|  

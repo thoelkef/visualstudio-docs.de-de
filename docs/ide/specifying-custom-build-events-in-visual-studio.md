@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908733"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Festlegen von benutzerdefinierten Buildereignissen in Visual Studio
 
@@ -37,24 +37,24 @@ Buildereignisse folgen derselben Syntax wie DOS-Befehle, Sie können aber außer
 
  Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
 
--   Fügen Sie allen Buildereignissen, die *BAT-Dateien* ausführen, eine `call`-Anweisung hinzu.
+- Fügen Sie allen Buildereignissen, die *BAT-Dateien* ausführen, eine `call`-Anweisung hinzu.
 
-     Ein Beispiel: `call C:\MyFile.bat`
+   Ein Beispiel: `call C:\MyFile.bat`
 
-     Ein Beispiel: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Ein Beispiel: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Schließen Sie Dateipfade in Anführungszeichen ein.
+- Schließen Sie Dateipfade in Anführungszeichen ein.
 
-     Beispiel (für [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   Beispiel (für [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Trennen Sie mehrere Befehle durch Zeilenumbrüche.
+- Trennen Sie mehrere Befehle durch Zeilenumbrüche.
 
--   Verwenden Sie Platzhalterzeichen nach Bedarf.
+- Verwenden Sie Platzhalterzeichen nach Bedarf.
 
-     Beispiel: `for %I in (*.txt *.doc *.html) do copy %I c:\`*meinverzeichnis*`\`
+   Beispiel: `for %I in (*.txt *.doc *.html) do copy %I c:\`*meinverzeichnis*`\`
 
-    > [!NOTE]
-    >  `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
+  > [!NOTE]
+  >  `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928671"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht des Auslastungstest-Analyzers
 
@@ -51,7 +51,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
  In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von Auslastungstestläufen verfügbar sind.
 
 |Tabellenname|Beschreibung |
-|----------------|-----------------|
+|-|-|
 |Fehler|Zeigt eine Liste mit Fehlern an, die während des Auslastungstestlaufs aufgetreten sind. Weitere Informationen finden Sie unter [Die Tabelle „Errors“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in diesem Artikel sowie unter [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Seiten|Zeigt eine Liste mit Seiten an, auf die während eines Auslastungstestlaufs zugegriffen wurde. Einige Daten dieser Tabelle sind nur nach Abschluss eines Auslastungstests verfügbar. Weitere Informationen finden Sie unter [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Websites)](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Anforderungen|Zeigt ausführliche Informationen zu einzelnen Anforderungen an, die während eines Auslastungstests ausgegeben wurden. Dies schließt alle HTTP-Anforderungen und abhängige Anforderungen, z. B. Bilder, ein. Weitere Informationen finden Sie unter [Die Tabelle „Requests“](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in diesem Artikel.|
@@ -73,7 +73,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
  In der folgenden Tabelle sind die Spalten der Tabelle **Anforderungen** aufgelistet:
 
 |Spalte|Beschreibung |In der Standardeinstellung angezeigt|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Anforderung**|Die URL der Anforderung. Beispiel: *home.html* oder *orange-arrow.gif*.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
 |**Test**|Der Name des Tests.|Ja|
@@ -95,7 +95,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
  In der folgenden Tabelle sind die Spalten der Tabelle **Tests** aufgelistet.
 
 |Spalte|Beschreibung |In der Standardeinstellung angezeigt|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Der Name des Tests.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
 |**Gesamt**|Wie oft der Test in diesem Szenario ausgeführt wurde. Dieser Wert beinhaltet die Anzahl der erfolgreichen und fehlgeschlagenen Tests.|Ja|
@@ -119,7 +119,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 > Sie müssen zum Anzeigen aller Spalten die Eigenschaft "Speicher für Details der zeitlichen Steuerung" aktivieren, die der aktiven Testlaufeinstellung zugeordnet ist. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Spalte|Beschreibung |Sichtbar ohne zeitliche Steuerungsdetails|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transaktion**|Der Name der Transaktion.|Ja|
 |**Szenario**|Der Name des Szenarios.|Ja|
 |**Test**|Der Name des Tests.|Ja|
@@ -145,7 +145,7 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
  Die Tabelle Errors enthält folgende Spalten:
 
 |Spalte|Beschreibung |Standardmäßig angezeigt|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Typ|Der Typ des Fehlers. Beispielsweise HttpError.|Ja|
 |SubType|Der Untertyp des Fehlers. Beispielsweise LoadTestException.|Ja|
 |Count|Die Anzahl der Fehler dieses Typs, die während des Auslastungstests auftraten. Die Einträge in dieser Spalte werden als Links angezeigt. Sie können jeden Link wählen, um eine Liste der einzelnen Fehler anzuzeigen.|Ja|
@@ -163,7 +163,7 @@ In der Tabelle Errors sind die Fehler nach Typ und Untertyp gruppiert. Zeigen Si
 Die Tabelle **Auslastungstestfehler** enthält folgende Spalten:
 
 |Spalte|Beschreibung |
-|------------|-----------------|
+|-|-|
 |**Zeit**|Der Zeitpunkt während des Auslastungstests, zu dem der Fehler auftrat|
 |**Agent**|Der Name des Agent-Computers, auf dem der Fehler auftrat. Dies ist wichtig, wenn Sie Auslastungstests mithilfe von Testcontrollern und Test-Agents ausführen. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Der Name des Webleistungstests, in dem der Fehler auftrat.|

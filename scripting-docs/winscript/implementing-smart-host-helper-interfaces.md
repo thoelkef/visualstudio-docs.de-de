@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909821"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementieren von Smart Host-Hilfsprogrammschnittstellen
 Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthelper-interface.md) vereinfacht das Erstellen eines Smarthosts für aktives Debuggen immens, da sie Implementierungen für viele Schnittstellen bereitstellt, die für Smarthosts benötigt werden.  
   
  Eine Hostanwendung muss nur drei Funktionen haben, um als Smart Host zu gelten, der einen `IDebugDocumentHelper` verwendet:  
   
-1.  Führen Sie `CoCreate` für den prozessbasierten Debugmanager durch, und verwenden Sie die [IProcessDebugManager-Schnittstelle](../winscript/reference/iprocessdebugmanager-interface.md), um Ihre Anwendung der Liste von debugfähigen Anwendungen hinzuzufügen.  
+1. Führen Sie `CoCreate` für den prozessbasierten Debugmanager durch, und verwenden Sie die [IProcessDebugManager-Schnittstelle](../winscript/reference/iprocessdebugmanager-interface.md), um Ihre Anwendung der Liste von debugfähigen Anwendungen hinzuzufügen.  
   
-2.  Erstellen Sie ein Hilfprogramm zum Debuggen eines Dokuments für alle Skriptobjekte über die [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)-Methode. Stellen Sie sicher, dass der Dokumentname, das übergeordnete Dokument, der Text und die Skriptblöcke definiert sind.  
+2. Erstellen Sie ein Hilfprogramm zum Debuggen eines Dokuments für alle Skriptobjekte über die [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)-Methode. Stellen Sie sicher, dass der Dokumentname, das übergeordnete Dokument, der Text und die Skriptblöcke definiert sind.  
   
-3.  Implementieren Sie die [IActiveScriptSiteDebug-Schnittstelle](../winscript/reference/iactivescriptsitedebug-interface.md) in Ihr Objekt, in das bereits die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle implementiert wurde (erforderlich für Active Scripting). Die einzige nicht triviale Methode für die `IActiveScriptSiteDebug`-Schnittstelle delegiert nur an das Hilfsprogramm.  
+3. Implementieren Sie die [IActiveScriptSiteDebug-Schnittstelle](../winscript/reference/iactivescriptsitedebug-interface.md) in Ihr Objekt, in das bereits die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle implementiert wurde (erforderlich für Active Scripting). Die einzige nicht triviale Methode für die `IActiveScriptSiteDebug`-Schnittstelle delegiert nur an das Hilfsprogramm.  
   
- Der Host kann optional die [IDebugDocumentHost-Schnittstelle](../winscript/reference/idebugdocumenthost-interface.md) implementieren, wenn er zusätzliche Kontrolle über die Syntaxfarbe, die Erstellung des Dokumentkontexts und andere erweiterte Funktionen benötigt.  
+   Der Host kann optional die [IDebugDocumentHost-Schnittstelle](../winscript/reference/idebugdocumenthost-interface.md) implementieren, wenn er zusätzliche Kontrolle über die Syntaxfarbe, die Erstellung des Dokumentkontexts und andere erweiterte Funktionen benötigt.  
   
- Die größte Einschränkung des Smart Host-Hilfsprogramms ist, dass es nur Dokumente verarbeiten kann, deren Inhalte geändert oder verringert werden, nachdem sie hinzugefügt wurden (obwohl Dokumente auch erweitert werden können). Für die meisten Smart Hosts sind die Funktionen des Hilfsprogramms allerdings ausreichend.  
+   Die größte Einschränkung des Smart Host-Hilfsprogramms ist, dass es nur Dokumente verarbeiten kann, deren Inhalte geändert oder verringert werden, nachdem sie hinzugefügt wurden (obwohl Dokumente auch erweitert werden können). Für die meisten Smart Hosts sind die Funktionen des Hilfsprogramms allerdings ausreichend.  
   
- In den folgenden Abschnitten wird jeder Schritt im Detail erläutert.  
+   In den folgenden Abschnitten wird jeder Schritt im Detail erläutert.  
   
 ## <a name="create-an-application-object"></a>Erstellen eines Anwendungsobjekts  
  Bevor das Smart Host-Hilfsprogramm verwendet wird, muss ein [IDebugApplication-Schnittstellenobjekt](../winscript/reference/idebugapplication-interface.md) erstellt werden, das Ihre Anwendung im Debugger darstellt.  
@@ -75,7 +75,7 @@ Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthe
   
 4.  Rufen Sie [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) oder [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md), um den Text des Dokuments zu definieren. (Diese können mehrmals aufgerufen werden, wenn das Dokument, wie im Fall des Browsers, inkrementell herunterladen wird.)  
   
-5.  Rufen Sie [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) auf, um die Geltungsbereiche der Skriptblöcke und die zugehörigen Skriptmodule zu definieren.  
+5.  Rufen Sie [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) auf, um die Geltungsbereiche der Skriptblöcke und die zugehörigen Skript-Engines zu definieren.  
   
 ## <a name="implementing-iactivescriptsitedebug"></a>Implementieren von IActiveScriptSiteDebug  
  Rufen Sie zum Implementieren von [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md) das der vorhanden Website zugehörige Hilfsprogramm auf, und rufen Sie anschließend wie folgt den Offset des Startdokuments für den vorhandenen Quellkontext auf:  

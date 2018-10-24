@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926942"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML, im Code oder mit dem XAML-Designer hinzufügen. Dieses Thema beschreibt, wie Elemente im XAML-Designer in Visual Studio oder in Blend für Visual Studio verwendet werden.
@@ -40,21 +40,21 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 #### <a name="to-change-the-layering-order"></a>So ändern Sie die Ebenenreihenfolge
 
--   Führen Sie einen der folgenden Schritte aus:
+- Führen Sie einen der folgenden Schritte aus:
 
-    -   Ziehen Sie im Fenster **Dokumentgliederung** die Elemente nach oben oder unten, um die gewünschte Ebenenreihenfolge zu erstellen.
+  - Ziehen Sie im Fenster **Dokumentgliederung** die Elemente nach oben oder unten, um die gewünschte Ebenenreihenfolge zu erstellen.
 
-    -   Klicken Sie mit der rechten Maustaste auf das Element im Dokumentgliederungsfenster oder auf der Zeichenfläche, für das Sie die Ebenenreihenfolge ändern möchten, zeigen Sie auf **Reihenfolge**, und klicken Sie dann auf eine der folgenden Optionen:
+  - Klicken Sie mit der rechten Maustaste auf das Element im Dokumentgliederungsfenster oder auf der Zeichenfläche, für das Sie die Ebenenreihenfolge ändern möchten, zeigen Sie auf **Reihenfolge**, und klicken Sie dann auf eine der folgenden Optionen:
 
-        -   **In den Vordergrund**, um das Element in der Reihenfolge ganz nach vorne zu verschieben.
+    -   **In den Vordergrund**, um das Element in der Reihenfolge ganz nach vorne zu verschieben.
 
-        -   **Eine Ebene nach vorne**, um das Objekt eine Ebene in der Reihenfolge nach vorne zu holen.
+    -   **Eine Ebene nach vorne**, um das Objekt eine Ebene in der Reihenfolge nach vorne zu holen.
 
-        -   **Eine Ebene nach hinten**, um das Objekt eine Ebene in der Reihenfolge nach hinten zu verschieben.
+    -   **Eine Ebene nach hinten**, um das Objekt eine Ebene in der Reihenfolge nach hinten zu verschieben.
 
-        -   **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
+    -   **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
 
-     Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
+    Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Ändern der Ausrichtung eines Elements
  Sie können Elemente auf der Zeichenfläche mit Menübefehlen oder durch Ziehen von Elementen an Ausrichtungslinien ausrichten.
@@ -109,9 +109,9 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>So heben Sie die Gruppierung von Elementen auf und löschen das Layout
 
--   Klicken Sie mit der rechten Maustaste auf die Gruppierung, die Sie aufheben möchten, und klicken Sie auf **Gruppierung aufheben**.
+- Klicken Sie mit der rechten Maustaste auf die Gruppierung, die Sie aufheben möchten, und klicken Sie auf **Gruppierung aufheben**.
 
- Sie können Elemente auch durch einen Rechtsklick auf ausgewählte Elemente im Dokumentgliederungsfenster und durch Klicken auf **Gruppieren in** oder **Gruppierung aufheben** gruppieren bzw. die Gruppierung aufheben.
+  Sie können Elemente auch durch einen Rechtsklick auf ausgewählte Elemente im Dokumentgliederungsfenster und durch Klicken auf **Gruppieren in** oder **Gruppierung aufheben** gruppieren bzw. die Gruppierung aufheben.
 
 ## <a name="resetting-the-element-layout"></a>Zurücksetzen des Elementlayouts
  Sie können Standardwerte für bestimmte Layouteigenschaften eines Elements wiederherstellen, indem Sie die Befehlen zum Zurücksetzen von Layouts verwenden. Mit diesem Befehl können Sie Rand, Ausrichtung, Breite, Höhe und Größe eines Elements einzeln oder gemeinsam zurücksetzen.
