@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820095"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Mic
   
  Die Symbolleiste im Help Viewer-Fenster umfasst die folgenden Schaltflächen:  
   
--   Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.  
+- Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.  
   
--   Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.  
+- Mit der Schaltfläche **Zu Favoriten hinzufügen** wird das aktuelle Thema der Registerkarte **Favoriten** hinzugefügt.  
   
--   Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.  
+- Mit der Schaltfläche **In Thema suchen** wird Suchtext im aktiven Thema hervorgehoben.  
   
--   Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.  
+- Mit der Schaltfläche **Drucken** wird eine Vorschau des aktiven Themas gedruckt oder angezeigt.  
   
--   Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.  
+- Mit der Schaltfläche **Viewer-Optionen** werden Einstellungen angezeigt, z.B. wie groß der Text angezeigt wird, wie viele Suchergebnisse zurückgegeben werden, wie viele Themen im Verlauf angezeigt werden und ob auf vorhandene Onlineupdates überprüft wird.  
   
--   Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.  
+- Durch die Schaltfläche **Inhalt verwalten** wird die Registerkarte **Inhalt verwalten** aktiv.  
   
--   Über das kleine Dreieck wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können diese Registerkarten aktivieren, indem Sie sie auswählen.  
+- Über das kleine Dreieck wird eine Liste mit Registerkarten geöffnet, darunter auch Themenregisterkarten und die Registerkarte **Inhalt verwalten**. Sie können diese Registerkarten aktivieren, indem Sie sie auswählen.  
   
- Der untere Bereich des Help Viewer-Fensters enthält Informationen zur Gesamtgröße der ausstehenden Downloads. Weiterhin sind Informationen zum erforderlichen Speicherplatz und zum verfügbaren Speicherplatz enthalten. Dieser Bereich enthält außerdem Informationen zu Fehlern, die möglicherweise aufgetreten sind, und einen Link, den Sie für die Aktualisierung des installierten Inhalts auswählen können, wenn Updates verfügbar sind.  
+  Der untere Bereich des Help Viewer-Fensters enthält Informationen zur Gesamtgröße der ausstehenden Downloads. Weiterhin sind Informationen zum erforderlichen Speicherplatz und zum verfügbaren Speicherplatz enthalten. Dieser Bereich enthält außerdem Informationen zu Fehlern, die möglicherweise aufgetreten sind, und einen Link, den Sie für die Aktualisierung des installierten Inhalts auswählen können, wenn Updates verfügbar sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)   

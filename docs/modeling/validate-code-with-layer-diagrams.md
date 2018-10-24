@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835708"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -115,41 +115,41 @@ Wenn Sie ein Abhängigkeitsdiagramm öffnen-, das mit Projektmappenelementen ver
 
 ### <a name="validate-code-at-the-command-prompt"></a>Überprüfen von Code an der Eingabeaufforderung
 
-1.  Öffnen Sie die Visual Studio-Eingabeaufforderung.
+1. Öffnen Sie die Visual Studio-Eingabeaufforderung.
 
-2.  Wählen Sie eine der folgenden Optionen aus:
+2. Wählen Sie eine der folgenden Optionen aus:
 
-    - Wenn Sie um Code anhand eines bestimmten Modellierungsprojekts in der Lösung zu überprüfen, führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft aus.
+   - Wenn Sie um Code anhand eines bestimmten Modellierungsprojekts in der Lösung zu überprüfen, führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft aus.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - ODER
+     - ODER
 
-         Navigieren Sie zu dem Ordner, der das Modellierungsprojekt (.modelproj) enthält Datei- und die Abhängigkeit, und führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft:
+       Navigieren Sie zu dem Ordner, der das Modellierungsprojekt (.modelproj) enthält Datei- und die Abhängigkeit, und führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Um den Code anhand aller Modellierungsprojekte in der Projektmappe überprüfen möchten, führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft aus:
+   - Um den Code anhand aller Modellierungsprojekte in der Projektmappe überprüfen möchten, führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft aus:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - ODER
+     - ODER
 
-         Navigieren Sie in den Projektmappenordner, der ein Modellierungsprojekt, das ein Abhängigkeitsdiagramm enthält, und führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft:
+       Navigieren Sie in den Projektmappenordner, der ein Modellierungsprojekt, das ein Abhängigkeitsdiagramm enthält, und führen Sie MSBuild mit der folgenden benutzerdefinierten Eigenschaft:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu MSBuild finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
 
- Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
+   Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Validierungsfehler verwalten
 
@@ -165,7 +165,7 @@ Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdr
 Mit diesen Tasks können Validierungsfehler im der **Fehlerliste** Fenster:
 
 |**Aktion**|**Gehen Sie folgendermaßen vor**|
-|------------|----------------------------|
+|-|-|
 |Unterdrücken von ausgewählten Fehlern während der Validierung|Mit der rechten Maustaste in die eine oder mehrere ausgewählte Fehler, zeigen Sie auf **Validierungsfehler**, und klicken Sie dann auf **Fehler unterdrücken**.<br /><br /> Die unterdrückten Fehler werden durchgestrichen dargestellt. Beim nächsten Ausführen der Validierung werden diese Fehler nicht mehr angezeigt.<br /><br /> Unterdrückten Fehler werden in einer suppressions-Datei für die entsprechende Abhängigkeitseigenschaft Diagrammdatei nachverfolgt.|
 |Beenden der Unterdrückung von ausgewählten Fehlern|Mit der rechten Maustaste den oder die ausgewählten unterdrückten Fehler, zeigen Sie auf **Validierungsfehler**, und klicken Sie dann auf **Fehler nicht mehr unterdrücken**.<br /><br /> Beim nächsten Ausführen der Validierung werden die ausgewählten unterdrückten Fehler wieder angezeigt.|
 |Wiederherstellen aller unterdrückten Fehler in der **Fehlerliste** Fenster|Mit der rechten Maustaste an einer beliebigen Stelle der **Fehlerliste** Fenster, zeigen Sie auf **Validierungsfehler**, und klicken Sie dann auf **Unterdrückte Fehler anzeigen**.|
@@ -204,7 +204,7 @@ Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierung
 In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Lösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
 |**Problem**|**Mögliche Ursache**|**Auflösung**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Validierungsfehler treten nicht wie erwartet auf.|Validierung funktioniert in von Abhängigkeitsdiagrammen, die aus anderen Abhängigkeitsdiagramme im Projektmappen-Explorer kopiert werden und, nicht, die sich im gleichen Modellierungsprojekt. Abhängigkeitsdiagramme, die auf diese Weise kopiert werden, enthalten die gleichen Verweise wie das ursprüngliche Abhängigkeitsdiagramm.|Fügen Sie dem Modellierungsprojekt ein neues Abhängigkeitsdiagramm hinzu.<br /><br /> Kopieren Sie die Elemente aus dem Dependency-Quelldiagramm in das neue Diagramm ein.|
 
 ## <a name="resolve-layer-validation-errors"></a>Lösen von Ebenenvalidierungsfehlern
@@ -220,20 +220,20 @@ Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung ke
 Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwendet wird. Außerdem wird die Bedeutung dieser Fehler erläutert, und es werden Vorschläge zur deren Behebung bzw. Verwaltung gegeben.
 
 |**Syntax**|**Beschreibung**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* ist ein Artefakt, das einer Ebene im Diagramm für die Abhängigkeitseigenschaft zugeordnet ist.<br /><br /> *ArtifactTypeN* ist der Typ des *ArtifactN*, z. B. eine **Klasse** oder **Methode**, z.B.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Der Name eines Namespace.|
 |*LayerNameN*|Der Name einer Ebene im Diagramm der Abhängigkeit.|
 |*DependencyType*|Der Typ der abhängigkeitsbeziehung zwischen *"Element1"* und *"Element2"*. Z. B. *"Element1"* verfügt über eine **Aufrufe** Beziehung mit *"Element2"*.|
 
-|**Fehlersyntax**|**Fehlerbeschreibung**|
-|----------------------|---------------------------|
-|DV0001: **ungültige Abhängigkeit**|Dieses Problem wird gemeldet, wenn ein Codeelement (Namespace-, Typ-, Memberbereich) eine Ebenenverweise ein Codeelement in eine andere Ebene zugeordnet zugeordnet, aber es keine Abhängigkeitspfeil zwischen diesen Schichten in der abhängigkeitsvalidierungsdiagramm gibt, die diese Ebenen enthält. Dies ist eine einschränkungsverletzung Abhängigkeit.|
-|DV1001: **Ungültiger Namespacename**|Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene der "Darf der Namespace-Namen"-Eigenschaft nicht den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Syntax des "Darf der Namespace-Namen" eine durch Semikolons Liste von Namespaces, in denen Elemente, die zu Ebene sind, sein dürfen definiert werden.|
-|DV1002: **Abhängigkeit unreferenceable Namespace**|Dieses Problem wird gemeldet, auf ein Codeelement einer Ebene zugeordnete und verweisen auf ein anderes Codeelement definiert, die in einem Namespace das in der Eigenschaft "Unreferenceable Namespace" die Ebene definiert wird. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Unreferenceable Namespaces" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, die in dieser Ebene zugeordnete Codeelemente nicht verwiesen werden soll.|
-|DV1003: **Namespacename nicht erlaubt**|Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene die "Namespace-Namen nicht zulässig"-Eigenschaft den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Nicht erlaubt-Namespace-Name" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, in denen dieser Ebene zugeordneten Elemente nicht definiert werden soll.|
-|DV3001: **fehlender Link**|Ebene '*LayerName*"enthält links zu"*Artefakt*", der nicht gefunden werden. Möglicherweise fehlt ein Assemblyverweis.|*LayerName* Verknüpfung mit einem Artefakt, das nicht gefunden werden kann. Ein Link zu einer Klasse kann beispielsweise fehlen, wenn im Modellierungsprojekt ein Verweis auf die Assembly mit der Klasse fehlt.|
-|DV9001: **Architektur Analyse interner Fehler gefunden**|Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster.|Weitere Einzelheiten finden Sie im Buildereignisprotokoll oder im Ausgabefenster.|
+| **Fehlersyntax** | **Fehlerbeschreibung** |
+|-|-|
+| DV0001: **ungültige Abhängigkeit** | Dieses Problem wird gemeldet, wenn ein Codeelement (Namespace-, Typ-, Memberbereich) eine Ebenenverweise ein Codeelement in eine andere Ebene zugeordnet zugeordnet, aber es keine Abhängigkeitspfeil zwischen diesen Schichten in der abhängigkeitsvalidierungsdiagramm gibt, die diese Ebenen enthält. Dies ist eine einschränkungsverletzung Abhängigkeit. |
+| DV1001: **Ungültiger Namespacename** | Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene der "Darf der Namespace-Namen"-Eigenschaft nicht den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Syntax des "Darf der Namespace-Namen" eine durch Semikolons Liste von Namespaces, in denen Elemente, die zu Ebene sind, sein dürfen definiert werden. |
+| DV1002: **Abhängigkeit unreferenceable Namespace** | Dieses Problem wird gemeldet, auf ein Codeelement einer Ebene zugeordnete und verweisen auf ein anderes Codeelement definiert, die in einem Namespace das in der Eigenschaft "Unreferenceable Namespace" die Ebene definiert wird. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Unreferenceable Namespaces" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, die in dieser Ebene zugeordnete Codeelemente nicht verwiesen werden soll. |
+| DV1003: **Namespacename nicht erlaubt** | Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene die "Namespace-Namen nicht zulässig"-Eigenschaft den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Nicht erlaubt-Namespace-Name" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, in denen dieser Ebene zugeordneten Elemente nicht definiert werden soll. |
+| DV3001: **fehlender Link** | Ebene '*LayerName*"enthält links zu"*Artefakt*", der nicht gefunden werden. Möglicherweise fehlt ein Assemblyverweis. |
+| DV9001: **Architektur Analyse interner Fehler gefunden** | Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster. |
 
 ## <a name="see-also"></a>Siehe auch
 

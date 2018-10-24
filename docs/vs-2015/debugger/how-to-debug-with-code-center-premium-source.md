@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824164"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Gewusst wie: Debuggen mit Code Center Premium-Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>So bereiten Sie Debuggen mit Code Center Premium vor  
   
-1.  Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1. Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
   
-2.  Starten Sie Visual Studio.  
+2. Starten Sie Visual Studio.  
   
-3.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+3. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-4.  In der **Optionen** öffnen Sie im Dialogfeld die **Debuggen** Knoten, und klicken Sie auf **allgemeine**.  
+4. In der **Optionen** öffnen Sie im Dialogfeld die **Debuggen** Knoten, und klicken Sie auf **allgemeine**.  
   
-5.  Deaktivieren der **nur eigenen Code aktivieren (nur verwaltet)** Kontrollkästchen.  
+5. Deaktivieren der **nur eigenen Code aktivieren (nur verwaltet)** Kontrollkästchen.  
   
-6.  Wählen Sie **Quellserverunterstützung aktivieren**.  
+6. Wählen Sie **Quellserverunterstützung aktivieren**.  
   
-7.  Klare **Quelldateien müssen genau mit übereinstimmen, die ursprüngliche Version**.  
+7. Klare **Quelldateien müssen genau mit übereinstimmen, die ursprüngliche Version**.  
   
-8.  Unter den **Debuggen** Knoten, klicken Sie auf **Symbole**.  
+8. Unter den **Debuggen** Knoten, klicken Sie auf **Symbole**.  
   
 9. In der **Symboldateien (PDB) Speicherorte** das Kontrollkästchen der **Microsoft Server-Symbole** das Kontrollkästchen, und fügen Sie die folgenden Speicherorte:  
   
@@ -60,18 +60,18 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich**/** am Ende des Pfads.  
+   > [!NOTE]
+   >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
   
      Verschieben Sie diese Orte an den Anfang der Liste, um sicherzustellen, dass diese Symbole zuerst geladen werden.  
   
-    > [!NOTE]
-    >  Diese Code Center Premium-Orte müssen zuerst aufgeführt werden, damit sie als erste Orte geladen werden. In Visual Studio 2010 können nicht verschoben werden alle oben aufgeführten Server die **Microsoft-Symbolserver** Eintrag, weshalb Sie das Kontrollkästchen deaktiviert werden muss.  
-    >   
-    >  Um während einer Debugsitzung Symbole aus den Microsoft-Symbolen zu laden, folgen Sie diesen Schritten:  
-    >   
-    >  1.  Auf der **Debuggen** Menü wählen **Windows** und wählen Sie dann **Module**.  
-    > 2.  Wählen Sie das Modul aus, für dass Sie Symbole möchten, und öffnen Sie dann das Kontextmenü. Wählen Sie **Symbole laden aus** und wählen Sie dann **Microsoft-Symbolserver**.  
+   > [!NOTE]
+   >  Diese Code Center Premium-Orte müssen zuerst aufgeführt werden, damit sie als erste Orte geladen werden. In Visual Studio 2010 können nicht verschoben werden alle oben aufgeführten Server die **Microsoft-Symbolserver** Eintrag, weshalb Sie das Kontrollkästchen deaktiviert werden muss.  
+   > 
+   >  Um während einer Debugsitzung Symbole aus den Microsoft-Symbolen zu laden, folgen Sie diesen Schritten:  
+   > 
+   > 1. Auf der **Debuggen** Menü wählen **Windows** und wählen Sie dann **Module**.  
+   >    2.  Wählen Sie das Modul aus, für dass Sie Symbole möchten, und öffnen Sie dann das Kontextmenü. Wählen Sie **Symbole laden aus** und wählen Sie dann **Microsoft-Symbolserver**.  
   
 10. In der **Symbole vom Symbolserver in diesem Verzeichnis zwischenspeichern** Geben Sie einen Speicherort wie z. B. `C:\symbols` Code Center Premium können, wo die Symbole zwischengespeichert. Das Zwischenspeichern von Symbolen kann die Leistung während des Debuggens erheblich verbessern.  
   
@@ -109,22 +109,22 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>So debuggen Sie Quellcode von einer vorhandenen Lösung aus  
   
-1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Projektmappe, und wählen Sie dann **Eigenschaften**.  
+1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Projektmappe, und wählen Sie dann **Eigenschaften**.  
   
-2.  Wählen Sie im Dialogfeld Eigenschaftenseiten für Projektmappen **Quelldateien debuggen** in die **allgemeine Eigenschaften** Knoten.  
+2. Wählen Sie im Dialogfeld Eigenschaftenseiten für Projektmappen **Quelldateien debuggen** in die **allgemeine Eigenschaften** Knoten.  
   
-3.  Hinzufügen von folgendem Speicherort auf dem **Verzeichnisse mit Quelldateien** Liste:  
+3. Hinzufügen von folgendem Speicherort auf dem **Verzeichnisse mit Quelldateien** Liste:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich**/** am Ende des Pfads.  
+   > [!NOTE]
+   >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
   
-4.  Führen Sie für jedes verwaltete Projekte in der Projektmappe Folgendes aus:  
+4. Führen Sie für jedes verwaltete Projekte in der Projektmappe Folgendes aus:  
   
-    1.  Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
+   1.  Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
   
-    2.  Wählen Sie **Debuggen** und wählen Sie dann **nicht verwaltetes Codedebuggen aktivieren**.  
+   2.  Wählen Sie **Debuggen** und wählen Sie dann **nicht verwaltetes Codedebuggen aktivieren**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>So erstellen Sie die Lösung mit der Code Center Premium-Quelle  
   

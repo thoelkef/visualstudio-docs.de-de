@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835983"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 
@@ -41,7 +41,7 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
 - Einige Benutzer könnten den Zugriff auf Profilerstellung für alle anderen Benutzer verweigern.
 
- Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und in den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).
+  Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und in den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Profilerstellung für ein Websiteprojekt
 
@@ -79,11 +79,11 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
 5. Geben Sie im Feld **Auf welcher URL oder welchem Pfad wird die Webanwendung ausgeführt?** auf der dritten Seite des Assistenten die URL der Startseite der Anwendung ein und klicken Sie dann auf **Weiter**.
 
-    - Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.
+   - Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **<http://localhost/MySite/default.aspx>** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.
 
-    - Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.
+   - Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.
 
-    - Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).
+   - Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).
 
      Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Zielbinärdatei.
 

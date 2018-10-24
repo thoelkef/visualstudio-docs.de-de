@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Microsoft Docs
+title: IDebugField::GetKind | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45a11810143a8cbd8e15b2fdfd3480f84e576fa8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ac82c39ac4f49a90593411b26684a8d8e52f31f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829728"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Diese Methode ruft die Art des Felds ab.  
@@ -44,7 +44,7 @@ int GetKind(
  [out] Gibt die Art des Felds als eine Kombination von [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

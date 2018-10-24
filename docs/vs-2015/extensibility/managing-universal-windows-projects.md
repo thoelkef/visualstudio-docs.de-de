@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837944"
 ---
 # <a name="managing-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Erkennen von Änderungen in die Plattform und freigegebene Projekte  
   
-1.  Sie können die Hierarchie und Projekt-Ereignisse verwenden, zum Erkennen von Änderungen in freigegebene Projekte, ebenso wie für Plattformprojekte. Allerdings sind die Projektelemente im freigegebenen Projekt nicht sichtbar ist, was bedeutet, dass bestimmte Ereignisse nicht ausgelöst werden, wenn freigegebene Projektelemente geändert werden.  
+1. Sie können die Hierarchie und Projekt-Ereignisse verwenden, zum Erkennen von Änderungen in freigegebene Projekte, ebenso wie für Plattformprojekte. Allerdings sind die Projektelemente im freigegebenen Projekt nicht sichtbar ist, was bedeutet, dass bestimmte Ereignisse nicht ausgelöst werden, wenn freigegebene Projektelemente geändert werden.  
   
-     Beachten Sie die Abfolge der Ereignisse, die beim Umbenennen einer Datei in einem Projekt ein:  
+    Beachten Sie die Abfolge der Ereignisse, die beim Umbenennen einer Datei in einem Projekt ein:  
   
-    1.  Der Dateiname wird auf dem Datenträger geändert.  
+   1. Der Dateiname wird auf dem Datenträger geändert.  
   
-    2.  Die Projektdatei wird aktualisiert, um den neuen Namen der Datei einzuschließen.  
+   2. Die Projektdatei wird aktualisiert, um den neuen Namen der Datei einzuschließen.  
   
-     Hierarchienereignisse (z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) in der Regel verfolgen die Änderungen, die in der Benutzeroberfläche angezeigt wird, wie in der **Projektmappen-Explorer**. Hierarchienereignisse sollten Sie ein Umbenennungsvorgang für eine Datei aus einer Datei löschen und dann auf Hinzufügen einer Datei bestehen. Allerdings wenn nicht sichtbare Elemente geändert werden, löst das System Hierarchie eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> Ereignis jedoch keiner <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignis. Aus diesem Grund, wenn Sie eine Datei in ein Plattform-Projekt umbenennen, erhalten Sie beide <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, aber wenn Sie eine Datei in einem freigegebenen Projekt umbenennen, erhalten Sie nur <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      Hierarchienereignisse (z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) in der Regel verfolgen die Änderungen, die in der Benutzeroberfläche angezeigt wird, wie in der **Projektmappen-Explorer**. Hierarchienereignisse sollten Sie ein Umbenennungsvorgang für eine Datei aus einer Datei löschen und dann auf Hinzufügen einer Datei bestehen. Allerdings wenn nicht sichtbare Elemente geändert werden, löst das System Hierarchie eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> Ereignis jedoch keiner <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignis. Aus diesem Grund, wenn Sie eine Datei in ein Plattform-Projekt umbenennen, erhalten Sie beide <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, aber wenn Sie eine Datei in einem freigegebenen Projekt umbenennen, erhalten Sie nur <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Sie können zum Nachverfolgen von Änderungen in Projektelementen DTE-Projekt-Elementereignisse behandeln (diejenigen finden Sie im <xref:EnvDTE.ProjectItemsEventsClass>). Aber wenn Sie große Mengen von Ereignissen verarbeiten, erhalten Sie eine bessere Leistung, die Verarbeitung der Ereignisse in <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. In dieser exemplarischen Vorgehensweise wird nur die Hierarchie und das DTE-Ereignisse beschrieben. In diesem Verfahren fügen Sie ein freigegebenes Projekt und ein Plattform-Projekt einen Ereignislistener hinzu. Klicken Sie dann, wenn Sie eine Datei in einem freigegebenen Projekt und eine andere Datei in ein Plattform-Projekt umbenennen, die Ereignisse sehen Sie, die für jeden Umbenennungsvorgang ausgelöst werden.  
+      Sie können zum Nachverfolgen von Änderungen in Projektelementen DTE-Projekt-Elementereignisse behandeln (diejenigen finden Sie im <xref:EnvDTE.ProjectItemsEventsClass>). Aber wenn Sie große Mengen von Ereignissen verarbeiten, erhalten Sie eine bessere Leistung, die Verarbeitung der Ereignisse in <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. In dieser exemplarischen Vorgehensweise wird nur die Hierarchie und das DTE-Ereignisse beschrieben. In diesem Verfahren fügen Sie ein freigegebenes Projekt und ein Plattform-Projekt einen Ereignislistener hinzu. Klicken Sie dann, wenn Sie eine Datei in einem freigegebenen Projekt und eine andere Datei in ein Plattform-Projekt umbenennen, die Ereignisse sehen Sie, die für jeden Umbenennungsvorgang ausgelöst werden.  
   
-     In diesem Verfahren fügen Sie ein freigegebenes Projekt und ein Plattform-Projekt einen Ereignislistener hinzu. Klicken Sie dann, wenn Sie eine Datei in einem freigegebenen Projekt und eine andere Datei in ein Plattform-Projekt umbenennen, die Ereignisse sehen Sie, die für jeden Umbenennungsvorgang ausgelöst werden.  
+      In diesem Verfahren fügen Sie ein freigegebenes Projekt und ein Plattform-Projekt einen Ereignislistener hinzu. Klicken Sie dann, wenn Sie eine Datei in einem freigegebenen Projekt und eine andere Datei in ein Plattform-Projekt umbenennen, die Ereignisse sehen Sie, die für jeden Umbenennungsvorgang ausgelöst werden.  
   
-2.  Fügen Sie einen Ereignislistener hinzu. Fügen Sie dem Projekt eine neue Klassendatei hinzu und nenne HierarchyEventListener.cs.  
+2. Fügen Sie einen Ereignislistener hinzu. Fügen Sie dem Projekt eine neue Klassendatei hinzu und nenne HierarchyEventListener.cs.  
   
-3.  Öffnen Sie die HierarchyEventListener.cs-Datei, und fügen Sie die folgenden using-Anweisungen:  
+3. Öffnen Sie die HierarchyEventListener.cs-Datei, und fügen Sie die folgenden using-Anweisungen:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  Haben die `HierarchyEventListener` implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. Haben die `HierarchyEventListener` implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Implementieren Sie die Mitglieder der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, wie im folgenden Code.  
+5. Implementieren Sie die Mitglieder der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, wie im folgenden Code.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  Fügen Sie einem anderen Ereignishandler für das DTE-Ereignis hinzu, in der gleichen Klasse <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, Dies tritt ein, ein Projektelement umbenannt wird.  
+6. Fügen Sie einem anderen Ereignishandler für das DTE-Ereignis hinzu, in der gleichen Klasse <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, Dies tritt ein, ein Projektelement umbenannt wird.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Registrieren Sie sich für die hierarchienereignisse an. Sie müssen separat für jedes Projekt registrieren, die nachverfolgt werden. Fügen Sie den folgenden Code in `ShowMessageBox`, eine für das freigegebene Projekt, und die andere für eines der Plattformprojekte.  
+7. Registrieren Sie sich für die hierarchienereignisse an. Sie müssen separat für jedes Projekt registrieren, die nachverfolgt werden. Fügen Sie den folgenden Code in `ShowMessageBox`, eine für das freigegebene Projekt, und die andere für eines der Plattformprojekte.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  Melden Sie sich für das DTE-Projekt-Elementereignis <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Fügen Sie den folgenden Code aus, nachdem Sie den zweiten Listener einbinden.  
+8. Melden Sie sich für das DTE-Projekt-Elementereignis <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Fügen Sie den folgenden Code aus, nachdem Sie den zweiten Listener einbinden.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Ändern Sie das freigegebene Element an. Sie können freigegebene Elemente in ein Plattform-Projekt nicht ändern; Stattdessen müssen Sie sie im freigegebenen Projekt ändern, die die tatsächlichen Kontoinhaber dieser Elemente ist. Sie erhalten die entsprechenden Element-ID im freigegebenen Projekt mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, legen sie den vollständigen Pfad des freigegebenen Elements. Dann können Sie das freigegebene Element ändern. Die Änderung wird an die Plattformprojekte weitergegeben.  
   

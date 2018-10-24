@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft Docs
+title: CONNECTION_PROTOCOL | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832765"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Gibt an, das Protokoll für die Kommunikation zwischen einem Debug-Server und das debugpaket (DE) verwendet wird.  
+Gibt an, das Protokoll für die Kommunikation zwischen einem debugserver und das debugpaket (DE) verwendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,10 +53,10 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Parameter  
  CONNECTION_NONE  
- Mit einem Server hat keine Verbindung hergestellt wurde.  
+ Auf einem Server hat keine Verbindung hergestellt wurde.  
   
  CONNECTION_UNKNOWN  
- Eine Verbindung hergestellt wurde, jedoch einen unbekannten Typ ist.  
+ Eine Verbindung hergestellt wurde, aber es weist einen unbekannten Typ.  
   
  CONNECTION_LOCAL  
  Verbindung ist mit einem lokalen Server.  
@@ -71,7 +71,7 @@ public enum CONNECTION_PROTOCOL {
  Verbindung wird HTTP (über einen Webserver) verwendet.  
   
  CONNECTION_OTHER  
- Eine andere Art von Verbindung hergestellt wurde (dieser Wert wird derzeit nicht verwendet).  
+ Eine andere Art von Verbindung eingerichtet wurde (dieser Wert wird derzeit nicht verwendet).  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Werte werden zurückgegeben, aus der [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) Methode.  

@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831431"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -42,11 +42,11 @@ Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite 
 
 Wenn Sie die Seite [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) aufrufen, werden Ihnen beliebte Downloads angezeigt, die nach Produkttyp in Gruppen angeordnet sind.  Sie können einen der angezeigten beliebten Downloads auswählen oder nach einem beliebigen Produkt über die Suchleiste im oberen Bereich der Seite suchen.
 > [!div class="mx-imgBorder"]
-> ![Downloadseite für Abonnenten](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> ![Downloadseite für Abonnenten](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
 Wenn Sie z.B. **Visual Studio 2017** aus der Liste mit den Entwicklertools auswählen, wird Ihnen eine Liste mit verfügbaren Visual Studio 2017-Downloads angezeigt.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017: Downloads](_img\subscriber-downloads\vs2017-new-UI.png)
+> ![Visual Studio 2017: Downloads](_img/subscriber-downloads/vs2017-new-UI.png)
 
 Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architektur, Ihre bevorzugte Sprache und den Dateityp auswählen. Wählen Sie Ihre bevorzugten Optionen aus, und klicken Sie dann auf **Herunterladen**, um mit dem Herunterladen des Produkts zu beginnen.
 
@@ -54,13 +54,13 @@ Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architekt
 
 Durch das Klicken auf den Produktnamen oder auf den Link **Informationen** werden die Details für diesen Download angezeigt, die einen Link zu den Anmerkungen zu dieser Version des Produkts enthalten.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Professional: Downloaddetails](_img\subscriber-downloads\vs2017-pro-details.png)
+> ![Visual Studio 2017 Professional: Downloaddetails](_img/subscriber-downloads/vs2017-pro-details.png)
 
 Im Bereich „Details“ können Sie auf die Registerkarte **Schlüssel** klicken, um den Status Ihrer Product Keys zu überprüfen.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Professional: Product Keys](_img\subscriber-downloads\vs2017-pro-keys.png)
+> ![Visual Studio 2017 Professional: Product Keys](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Abrufen von Product Keys
 Sie können auf den blauen Schlüssel **Schlüssel abrufen** klicken, um einen Product Key für den Download abzurufen. Alternativ können Sie, wenn Sie sich bereits im Bereich „Details“ befinden, auf der Registerkarte **Schlüssel** auf **Claim key** (Schlüssel beanspruchen) klicken.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Professional: Product Keys in Anspruch nehmen](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> ![Visual Studio 2017 Professional: Product Keys in Anspruch nehmen](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

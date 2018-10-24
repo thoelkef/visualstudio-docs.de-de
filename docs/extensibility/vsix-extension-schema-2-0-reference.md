@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831925"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterung Schema 2.0
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.  
@@ -162,33 +162,33 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
 ### <a name="assets-element"></a>Ressourcen-element  
  Dieses Element enthält eine Liste der `<Asset>` Tags für jedes Element Erweiterung oder des Inhalts, die von diesem Paket verfügbar gemacht.  
   
--   `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
+- `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
   
-    -   `Type` -Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
+  - `Type` -Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
   
-        1.  "Microsoft.VisualStudio.VSPackage"  
+    1. "Microsoft.VisualStudio.VSPackage"  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Sie können eigene Typen erstellen, und geben sie eindeutige Namen. Zur Laufzeit in Visual Studio kann Ihr Code auflisten und Zugriff auf diese benutzerdefinierte Typen über die Erweiterungs-Manager-API.  
+       Sie können eigene Typen erstellen, und geben sie eindeutige Namen. Zur Laufzeit in Visual Studio kann Ihr Code auflisten und Zugriff auf diese benutzerdefinierte Typen über die Erweiterungs-Manager-API.  
   
-    -   `Path` -der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
+  - `Path` -der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
     
-    -   `TargetVersion` -der Versionsbereich für die das angegebene Objekt gilt. Wird verwendet, um den rückversand für mehrere Versionen der Objekte auf verschiedene Versionen von Visual Studio. Erfordert Visual Studio 2017.3 oder höher angewendet werden kann.
+  - `TargetVersion` -der Versionsbereich für die das angegebene Objekt gilt. Wird verwendet, um den rückversand für mehrere Versionen der Objekte auf verschiedene Versionen von Visual Studio. Erfordert Visual Studio 2017.3 oder höher angewendet werden kann.
   
-    -   `AnyAttribute*` -Einen offenen Satz von Attributen, der zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht wird.  
+  - `AnyAttribute*` -Einen offenen Satz von Attributen, der zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht wird.  
   
-         `<AnyElement>*` – Beliebige strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
+     `<AnyElement>*` – Beliebige strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
   
 ### <a name="sample-manifest"></a>Beispielmanifest  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839569"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 
@@ -36,7 +36,7 @@ Zugriff die **InvokeMethod** Aktivitäts-Designer in der **primitive** Kategorie
 Die folgende Tabelle zeigt die <xref:System.Activities.Statements.InvokeMethod> Eigenschaften und beschreibt, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, und einige auf die Oberfläche des Workflow-Designer bearbeitet werden kann.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.InvokeMethod>-Aktivität. Der Standardwert lautet InvokeMethod.<br /><br /> Obwohl die <xref:System.Activities.Activity.DisplayName%2A> ist nicht zwingend erforderlich, es wird empfohlen, einen verwenden.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|Der Name der Methode, die bei Ausführung der Aktivität aufgerufen werden soll. Die aufgerufene Methode muss deklariert werden, als **öffentliche**. Diese Eigenschaft auf der Designeroberfläche bearbeitet werden kann, und es ist zwingend erforderlich.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Die Parameterauflistung der aufgerufenen Methode. Die Parameter müssen der Auflistung in derselben Reihenfolge wie in der Methodensignatur hinzugefügt werden. Zum Anzeigen der **Parameter** Dialogfeld, in dem Sie diese Eigenschaft festlegen können, klicken Sie auf die Schaltfläche mit den Auslassungspunkten, in der **Parameter** Feld des Eigenschaftenrasters. Klicken Sie auf die **Argument erstellen** , um die Parameter hinzuzufügen.|
@@ -64,6 +64,6 @@ Diese Einschränkung gilt nicht für <xref:System.Activities.Statements.InvokeMe
 ## <a name="see-also"></a>Siehe auch
 
 - [Primitive](../workflow-designer/primitives-activity-designers.md)
-- [Weisen Sie](../workflow-designer/assign-activity-designer.md)
-- [Verzögerung](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

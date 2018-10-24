@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haslongjump | Microsoft Docs'
+title: 'Idiasymbol:: Get_haslongjump | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e98b5178c08f95e1da4d2bee1affc0c200d2ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835814"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl (gepaart mit einem [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl diese bilden die C-Format-Methode der Ausnahmebehandlung).  
+Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl (mit gekoppelten eine [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl bilden die C-Stil-Methode der Ausnahmebehandlung).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_hasLongJump
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion enthält einen `longjmp` Befehl zurück, andernfalls, `FALSE`.  
+ [out] Gibt `TRUE` , wenn die Funktion enthält einen `longjmp` Befehl; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   

@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834298"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -48,15 +49,15 @@ ms.locfileid: "49186696"
 ## <a name="rule-description"></a>Regelbeschreibung
  Wenn eine <xref:System.Globalization.CultureInfo?displayProperty=fullName> oder <xref:System.IFormatProvider> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Membern die Standardkultur Auswahl und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code ordnungsgemäß für Ihre Szenarien funktioniert, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
 
--   Wenn der Wert für den Benutzer angezeigt wird, wird verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+- Wenn der Wert für den Benutzer angezeigt wird, wird verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
--   Wenn der Wert gespeichert und von Software (persistent in einer Datei oder Datenbank) zugegriffen werden, die verwenden Sie die invariante Kultur. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Wenn der Wert gespeichert und von Software (persistent in einer Datei oder Datenbank) zugegriffen werden, die verwenden Sie die invariante Kultur. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
--   Wenn Sie nicht, dass das Ziel des Werts wissen, haben Sie den Datenconsumer oder Anbieter die Kultur angeben.
+- Wenn Sie nicht, dass das Ziel des Werts wissen, haben Sie den Datenconsumer oder Anbieter die Kultur angeben.
 
- Beachten Sie, dass <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> wird nur verwendet, um lokalisierte Ressourcen abruft, mit einer Instanz von der <xref:System.Resources.ResourceManager?displayProperty=fullName> Klasse.
+  Beachten Sie, dass <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> wird nur verwendet, um lokalisierte Ressourcen abruft, mit einer Instanz von der <xref:System.Resources.ResourceManager?displayProperty=fullName> Klasse.
 
- Auch wenn das Standardverhalten des überladenen Member für Ihre Anforderungen geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufrufen, so, dass der Code selbsterklärend und einfacher zu verwalten ist.
+  Auch wenn das Standardverhalten des überladenen Member für Ihre Anforderungen geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufrufen, so, dass der Code selbsterklärend und einfacher zu verwalten ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die Überladung mit einem <xref:System.Globalization.CultureInfo> oder <xref:System.IFormatProvider> , und geben Sie das Argument, gemäß den Richtlinien, die weiter oben aufgeführt wurden.
