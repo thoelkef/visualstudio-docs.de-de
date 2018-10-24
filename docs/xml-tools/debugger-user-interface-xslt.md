@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847382"
 ---
 # <a name="debugger-user-interface-xslt"></a>Debugger-Benutzeroberfläche (XSLT)
 
@@ -41,7 +41,7 @@ Weitere Informationen finden Sie unter den [Debuggen Benutzeroberflächenreferen
  Im Lokalfenster werden auch die vordefinierten Kontextvariablen angezeigt, mit denen der Kontext der XSLT-Transformation verfolgt wird. In der folgenden Tabelle werden die vom XSLT-Debugger verwendeten vordefinierten Kontextvariablen beschrieben.
 
 |Name|Beschreibung|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|Die Kontextgröße.|
 |`position()`|Die Position bzw. Indexnummer des Kontextknotens in Bezug auf die Kontextgröße.|
 |`self::node()`|Der Wert des Kontextknotens.|

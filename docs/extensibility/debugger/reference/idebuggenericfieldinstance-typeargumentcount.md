@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs
+title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2fb72a486c58c0213361eb983371493f7ebafc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 066084853c63f7f824b27b365e9abf0f2d695970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822233"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Gibt die Anzahl der Parameterargumente für diese Instanz zurück.  
@@ -43,10 +43,10 @@ int TypeArgumentCount(
  [in, out] Die Anzahl von Typargumenten für Parameter für diese Instanz.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Z. B. wenn Liste\<Int >, diese Methode gibt 1 zurück, und wenn Liste\<"Int", "float2 > Diese Methode gibt 2 zurück. Diese Methode gibt 0 zurück, wenn es keine Typargumente sind.  
+ Z. B. wenn Liste\<Int >, diese Methode gibt 1 zurück, und, falls Liste\<Int, float2 > Diese Methode gibt 2 zurück. Diese Methode gibt 0 zurück, wenn keine Argumente des Typs vorhanden sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

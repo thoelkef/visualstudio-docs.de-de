@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824502"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können einen Anwendungsfall in einem Anwendungsfalldiagramm mit einem anderen Diagramm oder Dokument verknüpfen. Beispielsweise können Sie den Anwendungsfall mit den folgenden Diagrammen und Dokumenten verknüpfen:  
   
--   Einem Sequenzdiagramm, das zeigt, wie die Ziele des Anwendungsfalls durch Interaktionen zwischen Benutzern und dem System oder seinen Hauptkomponenten realisiert werden.  
+- Einem Sequenzdiagramm, das zeigt, wie die Ziele des Anwendungsfalls durch Interaktionen zwischen Benutzern und dem System oder seinen Hauptkomponenten realisiert werden.  
   
--   Einem Aktivitätsdiagramm, das die genauen Aktionen der Benutzer und des Systems oder seiner Hauptkomponenten bei der Ausführung des Anwendungsfalls zeigt.  
+- Einem Aktivitätsdiagramm, das die genauen Aktionen der Benutzer und des Systems oder seiner Hauptkomponenten bei der Ausführung des Anwendungsfalls zeigt.  
   
--   Einer OneNote-Seite oder einem OneNote-Absatz, auf der bzw. in dem der Anwendungsfall ausführlich beschrieben wird.  
+- Einer OneNote-Seite oder einem OneNote-Absatz, auf der bzw. in dem der Anwendungsfall ausführlich beschrieben wird.  
   
--   Einem Word-Dokument oder einer PowerPoint-Präsentation, in dem bzw. der der Anwendungsfall detailliert beschrieben wird. Sie können solche Dokumente in der Projektmappe oder an einem Ort aufbewahren, der für das Team zugänglich ist, wie z. B. eine SharePoint-Website.  
+- Einem Word-Dokument oder einer PowerPoint-Präsentation, in dem bzw. der der Anwendungsfall detailliert beschrieben wird. Sie können solche Dokumente in der Projektmappe oder an einem Ort aufbewahren, der für das Team zugänglich ist, wie z. B. eine SharePoint-Website.  
   
- Um einen Anwendungsfall mit einem Dokument zu verknüpfen, erstellen Sie im Anwendungsfalldiagramm ein Artefakt, und verbinden den Anwendungsfall mit dem Artefakt. In den Eigenschaften des Artefakts legen Sie den Dateipfad des anderen Diagramms oder Dokuments fest. Wenn Sie auf das Artefakt doppelklicken, wird das andere Diagramm oder Dokument geöffnet.  
+  Um einen Anwendungsfall mit einem Dokument zu verknüpfen, erstellen Sie im Anwendungsfalldiagramm ein Artefakt, und verbinden den Anwendungsfall mit dem Artefakt. In den Eigenschaften des Artefakts legen Sie den Dateipfad des anderen Diagramms oder Dokuments fest. Wenn Sie auf das Artefakt doppelklicken, wird das andere Diagramm oder Dokument geöffnet.  
   
- Sie können mit den einzelnen Anwendungsfällen beliebig viele Artefakte verknüpfen. Sie können Artefakte auch mit anderen Arten von Elementen in einem Anwendungsfalldiagramm verknüpfen.  
+  Sie können mit den einzelnen Anwendungsfällen beliebig viele Artefakte verknüpfen. Sie können Artefakte auch mit anderen Arten von Elementen in einem Anwendungsfalldiagramm verknüpfen.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>So öffnen Sie ein mit einem Artefakt verknüpftes Dokument  
   

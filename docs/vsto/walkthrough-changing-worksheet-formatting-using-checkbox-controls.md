@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843534"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern Sie arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Kontrollkästchen in einem Microsoft Office Excel-Arbeitsblatt zum Ändern der Formatierung. Verwenden Sie Office-Entwicklungstools in Visual Studio erstellen, und fügen Sie Code zum Projekt hinzu. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -40,7 +40,7 @@ ms.locfileid: "38778369"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -101,24 +101,24 @@ ms.locfileid: "38778369"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Hinzufügen von Text an ein NamedRange-Steuerelement  
   
-1.  Von der **Excel-Steuerelemente** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **B9**.  
+1. Von der **Excel-Steuerelemente** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **B9**.  
   
-2.  Überprüfen Sie, ob **$B$ 9** wird in der editierbares Textfeld, und dieser Zelle **B9** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **B9** um es auszuwählen.  
+2. Überprüfen Sie, ob **$B$ 9** wird in der editierbares Textfeld, und dieser Zelle **B9** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **B9** um es auszuwählen.  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
-4.  Zelle **B9** wird zu einem Bereich mit dem Namen `NamedRange1`.  
+4. Zelle **B9** wird zu einem Bereich mit dem Namen `NamedRange1`.  
   
-     Gibt es dafür keinen sichtbaren Hinweis auf dem Arbeitsblatt aber `NamedRange1` wird in der **Namenfeld** (direkt über dem Arbeitsblatt auf der linken Seite) Wenn Zelle **B9** ausgewählt ist.  
+    Gibt es dafür keinen sichtbaren Hinweis auf dem Arbeitsblatt aber `NamedRange1` wird in der **Namenfeld** (direkt über dem Arbeitsblatt auf der linken Seite) Wenn Zelle **B9** ausgewählt ist.  
   
-5.  Achten Sie darauf, **NamedRange1** sichtbar ist, in der im Listenfeld Namen Objekt die **Eigenschaften** Fenster, und ändern Sie die folgenden Eigenschaften:  
+5. Achten Sie darauf, **NamedRange1** sichtbar ist, in der im Listenfeld Namen Objekt die **Eigenschaften** Fenster, und ändern Sie die folgenden Eigenschaften:  
   
-    |Eigenschaft|Wert|  
-    |--------------|-----------|  
-    |**Name**|**Name textFont**|  
-    |**Wert2**|**Klicken Sie auf das Kontrollkästchen, um die Formatierung von Text zu ändern.**|  
+   |Eigenschaft|Wert|  
+   |--------------|-----------|  
+   |**Name**|**Name textFont**|  
+   |**Wert2**|**Klicken Sie auf das Kontrollkästchen, um die Formatierung von Text zu ändern.**|  
   
- Als Nächstes schreiben Sie den Code, um den Text zu formatieren, wenn eine Option ausgewählt ist.  
+   Als Nächstes schreiben Sie den Code, um den Text zu formatieren, wenn eine Option ausgewählt ist.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Formatieren Sie den Text ein, wenn eine Option ausgewählt ist  
  In diesem Abschnitt werden Sie Code schreiben, sodass Wenn der Benutzer eine Formatierungsoption aus auswählt, die das Format des Texts im Arbeitsblatt geändert wird.  

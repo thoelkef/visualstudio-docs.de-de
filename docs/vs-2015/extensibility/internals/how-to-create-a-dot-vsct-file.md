@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847846"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen Sie ein. VSCT-Datei
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Es gibt mehrere Möglichkeiten, eine XML-basierte Visual Studio Command Table-Konfigurationsdatei (VSCT) zu erstellen.  
   
--   Sie können in ein neues VSPackage erstellen, die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Paket-Vorlage.  
+- Sie können in ein neues VSPackage erstellen, die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Paket-Vorlage.  
   
--   Sie können den XML-basierten Befehl Table Configuration-Compiler Vsct.exe, verwenden, um eine Datei aus einer vorhandenen CTC-Datei zu generieren.  
+- Sie können den XML-basierten Befehl Table Configuration-Compiler Vsct.exe, verwenden, um eine Datei aus einer vorhandenen CTC-Datei zu generieren.  
   
--   Sie können die Vsct.exe verwenden, um eine VSCT-Datei aus einer vorhandenen CTO-Datei zu generieren.  
+- Sie können die Vsct.exe verwenden, um eine VSCT-Datei aus einer vorhandenen CTO-Datei zu generieren.  
   
--   Sie können eine neue VSCT-Datei manuell erstellen.  
+- Sie können eine neue VSCT-Datei manuell erstellen.  
   
- In diesem Thema wird erläutert, wie Sie eine neue VSCT-Datei manuell zu erstellen.  
+  In diesem Thema wird erläutert, wie Sie eine neue VSCT-Datei manuell zu erstellen.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>So erstellen Sie eine neue VSCT-Datei manuell  
   

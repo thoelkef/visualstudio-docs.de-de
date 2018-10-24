@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832718"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen zur Schriftart und Farbe für die farbliche Kennzeichnung von Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Ben
   
  Eine VSPackage benötigen zum farbigen Anzeigen von, aktuelle **Schriftarten und Farben** Einstellungen. Eine VSPackage kann dies gibt folgende Möglichkeiten, nach Bedarf zu erreichen:  
   
--   Verwenden Sie den Schriftart- und farbeinstellungen Dauerhaftigkeitsmechanismus zum Abrufen des gespeicherten oder der aktuellen Status. Weitere Informationen finden Sie unter [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
+- Verwenden Sie den Schriftart- und farbeinstellungen Dauerhaftigkeitsmechanismus zum Abrufen des gespeicherten oder der aktuellen Status. Weitere Informationen finden Sie unter [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> Benutzeroberfläche eines Diensts Bereitstellen von Schriftart- und farbeinstellungen Daten zum Abrufen einer Instanz von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage auch nicht den Schriftart- und farbeinstellungen-Anbieter ist.  
+- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> Benutzeroberfläche eines Diensts Bereitstellen von Schriftart- und farbeinstellungen Daten zum Abrufen einer Instanz von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage auch nicht den Schriftart- und farbeinstellungen-Anbieter ist.  
   
--   Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>-Schnittstelle.  
+- Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>-Schnittstelle.  
   
- Um sicherzustellen, dass die Ergebnisse der Abfrage werden auf dem neuesten Stand, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update erforderlich ist, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
+  Um sicherzustellen, dass die Ergebnisse der Abfrage werden auf dem neuesten Stand, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update erforderlich ist, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
   
- Nachdem Sie Schriftart und Farbinformationen abgerufen haben, Analysieren des Texts, der angezeigt werden, um das Identifizieren von Elementen, die farbliche Kennzeichnung erfordern, und klicken Sie dann den Text in dem Fenster mithilfe der entsprechenden Schriftarten und Farben anzeigen.  
+  Nachdem Sie Schriftart und Farbinformationen abgerufen haben, Analysieren des Texts, der angezeigt werden, um das Identifizieren von Elementen, die farbliche Kennzeichnung erfordern, und klicken Sie dann den Text in dem Fenster mithilfe der entsprechenden Schriftarten und Farben anzeigen.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

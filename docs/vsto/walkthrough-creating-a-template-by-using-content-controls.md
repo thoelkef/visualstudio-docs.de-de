@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833186"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word-Vorlage verwendet.  
@@ -35,19 +35,19 @@ ms.locfileid: "35672864"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen von Tabellen, die Inhaltssteuerelemente in einer Word-Vorlage enthalten, zur Entwurfszeit  
+- Erstellen von Tabellen, die Inhaltssteuerelemente in einer Word-Vorlage enthalten, zur Entwurfszeit  
   
--   Programmgesteuertes Auffüllen eines Kombinationsfeld-Inhaltssteuerelements und eines Dropdownlisten-Inhaltssteuerelements  
+- Programmgesteuertes Auffüllen eines Kombinationsfeld-Inhaltssteuerelements und eines Dropdownlisten-Inhaltssteuerelements  
   
--   Verhindern, dass Benutzer eine bestimmte Tabelle bearbeiten  
+- Verhindern, dass Benutzer eine bestimmte Tabelle bearbeiten  
   
--   Hinzufügen von Tabellen zur Bausteinauflistung einer Vorlage  
+- Hinzufügen von Tabellen zur Bausteinauflistung einer Vorlage  
   
--   Erstellen eines Inhaltssteuerelements, das die verfügbaren Bausteine in der Vorlage anzeigt  
+- Erstellen eines Inhaltssteuerelements, das die verfügbaren Bausteine in der Vorlage anzeigt  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -68,31 +68,31 @@ ms.locfileid: "35672864"
   
 ### <a name="to-create-the-employee-table"></a>So erstellen Sie die Mitarbeitertabelle  
   
-1.  In der Word-Vorlage, die in gehostet ist die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] auf dem Menüband-Designer, klicken Sie auf die **einfügen** Registerkarte.  
+1. In der Word-Vorlage, die in gehostet ist die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] auf dem Menüband-Designer, klicken Sie auf die **einfügen** Registerkarte.  
   
-2.  In der **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit zwei Spalten und vier Zeilen.  
+2. In der **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit zwei Spalten und vier Zeilen.  
   
-3.  Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
+3. Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
   
-    ||  
-    |-|  
-    |**Name des Mitarbeiters**|  
-    |**Einstellungsdatum**|  
-    |**Titel**|  
-    |**Bild**|  
+   ||  
+   |-|  
+   |**Name des Mitarbeiters**|  
+   |**Einstellungsdatum**|  
+   |**Titel**|  
+   |**Bild**|  
   
-4.  Klicken Sie in der ersten Zelle in der zweiten Spalte (neben **Mitarbeiternamen**).  
+4. Klicken Sie in der ersten Zelle in der zweiten Spalte (neben **Mitarbeiternamen**).  
   
-5.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
+5. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
   
-    > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  In der **Steuerelemente** gruppieren, klicken Sie auf die **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
+6. In der **Steuerelemente** gruppieren, klicken Sie auf die **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
   
-7.  Klicken Sie auf der zweiten Zelle in der zweiten Spalte (neben **Hire Date**).  
+7. Klicken Sie auf der zweiten Zelle in der zweiten Spalte (neben **Hire Date**).  
   
-8.  In der **Steuerelemente** gruppieren, klicken Sie auf die **Datumsauswahl** Schaltfläche ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") eine Hinzufügen<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> der zweiten Zelle.  
+8. In der **Steuerelemente** gruppieren, klicken Sie auf die **Datumsauswahl** Schaltfläche ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") eine Hinzufügen<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> der zweiten Zelle.  
   
 9. Klicken Sie auf die dritte Zelle in der zweiten Spalte (neben **Titel**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35672864"
   
 ### <a name="to-create-the-customer-feedback-table"></a>So erstellen Sie die Kundenfeedback-Tabelle  
   
-1.  Klicken Sie in der Word-Vorlage, klicken Sie in der Zeile nach der Employee-Tabelle, die Sie zuvor hinzugefügt haben, und drücken Sie **EINGABETASTE** um einen neuen Absatz hinzuzufügen.  
+1. Klicken Sie in der Word-Vorlage, klicken Sie in der Zeile nach der Employee-Tabelle, die Sie zuvor hinzugefügt haben, und drücken Sie **EINGABETASTE** um einen neuen Absatz hinzuzufügen.  
   
-2.  Klicken Sie auf dem Menüband auf die **einfügen** Registerkarte.  
+2. Klicken Sie auf dem Menüband auf die **einfügen** Registerkarte.  
   
-3.  In der **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit zwei Spalten und drei Zeilen.  
+3. In der **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit zwei Spalten und drei Zeilen.  
   
-4.  Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
+4. Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
   
-    ||  
-    |-|  
-    |**Kundenname**|  
-    |**Die Zufriedenheit**|  
-    |**Kommentare**|  
+   ||  
+   |-|  
+   |**Kundenname**|  
+   |**Die Zufriedenheit**|  
+   |**Kommentare**|  
   
-5.  Klicken Sie in der ersten Zelle der zweiten Spalte (neben **Kundenname**).  
+5. Klicken Sie in der ersten Zelle der zweiten Spalte (neben **Kundenname**).  
   
-6.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
+6. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .  
   
-7.  In der **Steuerelemente** gruppieren, klicken Sie auf die **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
+7. In der **Steuerelemente** gruppieren, klicken Sie auf die **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
   
-8.  Klicken Sie in der zweiten Zelle der zweiten Spalte (neben **Satisfaction Rating**).  
+8. Klicken Sie in der zweiten Zelle der zweiten Spalte (neben **Satisfaction Rating**).  
   
 9. In der **Steuerelemente** gruppieren, klicken Sie auf die **Dropdown-Listenfeld** Schaltfläche ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> der zweiten Zelle.  
   
@@ -142,7 +142,7 @@ ms.locfileid: "35672864"
   
 1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **ThisDocument.cs** oder **ThisDocument.vb**, und klicken Sie dann auf **Ansichtscode**.  
   
-2.  Fügen Sie der `ThisDocument`-Klasse folgenden Code hinzu. Dieser Code deklariert mehrere Objekte, die Sie später in dieser exemplarischen Vorgehensweise verwenden.  
+2.  Fügen Sie der `ThisDocument` -Klasse folgenden Code hinzu. Dieser Code deklariert mehrere Objekte, die Sie später in dieser exemplarischen Vorgehensweise verwenden.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  

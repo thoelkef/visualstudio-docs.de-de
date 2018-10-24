@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812283"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Unabhängig davon, ob Sie `_CRTDBG_MAP_ALLOC` definieren, werden die folgenden Informationen im Arbeitsspeicherverlust-Bericht angezeigt:  
   
--   Die Speicherbelegungsnummer (in diesem Beispiel `18` )  
+- Die Speicherbelegungsnummer (in diesem Beispiel `18` )  
   
--   Der [Blocktyp](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
+- Der [Blocktyp](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
   
--   Der hexadezimale Speicherbereich (in diesem Beispiel `0x00780E80` )  
+- Der hexadezimale Speicherbereich (in diesem Beispiel `0x00780E80` )  
   
--   Die Größe des Blocks (in diesem Beispiel `64 bytes` )  
+- Die Größe des Blocks (in diesem Beispiel `64 bytes` )  
   
--   Die ersten 16 Bytes Daten im Block im Hexadezimalformat  
+- Die ersten 16 Bytes Daten im Block im Hexadezimalformat  
   
- Im Arbeitsspeicherverlust-Bericht wird ein Speicherblock als normaler Block, Clientblock oder CRT-Block angegeben. Ein *normaler Block* ist gewöhnlicher, durch das Programm belegter Speicher. Ein *Clientblock* ist ein spezieller Speicherblocktyp, der von MFC-Programmen für Objekte verwendet wird, die einen Destruktor erfordern. Durch den MFC-Operator `new` wird entsprechend dem zu erstellenden Objekt ein normaler Block oder ein Clientblock erstellt. Ein *CRT-Block* wird von der CRT-Bibliothek zur eigenen Verwendung belegt. Die CRT-Bibliothek behandelt die Freigabe der Speicherbelegung für diese Blöcke. Daher werden diese Blöcke nur dann im Arbeitsspeicherverlust-Bericht angezeigt, wenn ein bedeutender Fehler vorliegt, z. B. eine Beschädigung der CRT-Bibliothek.  
+  Im Arbeitsspeicherverlust-Bericht wird ein Speicherblock als normaler Block, Clientblock oder CRT-Block angegeben. Ein *normaler Block* ist gewöhnlicher, durch das Programm belegter Speicher. Ein *Clientblock* ist ein spezieller Speicherblocktyp, der von MFC-Programmen für Objekte verwendet wird, die einen Destruktor erfordern. Durch den MFC-Operator `new` wird entsprechend dem zu erstellenden Objekt ein normaler Block oder ein Clientblock erstellt. Ein *CRT-Block* wird von der CRT-Bibliothek zur eigenen Verwendung belegt. Die CRT-Bibliothek behandelt die Freigabe der Speicherbelegung für diese Blöcke. Daher werden diese Blöcke nur dann im Arbeitsspeicherverlust-Bericht angezeigt, wenn ein bedeutender Fehler vorliegt, z. B. eine Beschädigung der CRT-Bibliothek.  
   
- Zwei weitere Speicherblocktypen werden nie in Arbeitsspeicherverlust-Berichten angezeigt. Ein *freier Block* ist ein Speicherblock, der freigegeben wurde. Dies bedeutet definitionsgemäß, dass kein Verlust vorliegt. Ein *ignorierter Block* ist ein Speicherblock, der von Ihnen explizit markiert wurde, damit er vom Arbeitsspeicherverlust-Bericht ausgeschlossen wird.  
+  Zwei weitere Speicherblocktypen werden nie in Arbeitsspeicherverlust-Berichten angezeigt. Ein *freier Block* ist ein Speicherblock, der freigegeben wurde. Dies bedeutet definitionsgemäß, dass kein Verlust vorliegt. Ein *ignorierter Block* ist ein Speicherblock, der von Ihnen explizit markiert wurde, damit er vom Arbeitsspeicherverlust-Bericht ausgeschlossen wird.  
   
- Diese Methoden funktionieren für Speicher, der mithilfe der CRT-Standardfunktion `malloc` belegt wird. Wenn Ihr Programm Speicher mithilfe des C++ zuordnet `new` -Operator, allerdings können nur sehen Sie die Anzahl und die Zeilennummer, in denen die Implementierung der globalen `operator new` Aufrufe `_malloc_dbg` im Arbeitsspeicherverlust-Bericht. Da dieses Verhalten nicht sehr nützlich ist, können Sie ändern, um die Zeile zu melden, die die Zuordnung vorgenommen, mit der ein Makro, das wie folgt aussieht: 
+  Diese Methoden funktionieren für Speicher, der mithilfe der CRT-Standardfunktion `malloc` belegt wird. Wenn Ihr Programm Speicher mithilfe des C++ zuordnet `new` -Operator, allerdings können nur sehen Sie die Anzahl und die Zeilennummer, in denen die Implementierung der globalen `operator new` Aufrufe `_malloc_dbg` im Arbeitsspeicherverlust-Bericht. Da dieses Verhalten nicht sehr nützlich ist, können Sie ändern, um die Zeile zu melden, die die Zuordnung vorgenommen, mit der ein Makro, das wie folgt aussieht: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Dadurch sehen Sie, dass die kompromittierte Zuordnung in Zeile 20 des debug_new.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>So legen Sie einen Haltepunkt für die Speicherbelegung im Überwachungsfenster fest  
   
-1.  Legen Sie am Anfang der Anwendung einen Haltepunkt fest, und starten Sie dann die Anwendung.  
+1. Legen Sie am Anfang der Anwendung einen Haltepunkt fest, und starten Sie dann die Anwendung.  
   
-2.  Wenn die Anwendung am Haltepunkt unterbrochen wird, wird das **Überwachungsfenster** angezeigt.  
+2. Wenn die Anwendung am Haltepunkt unterbrochen wird, wird das **Überwachungsfenster** angezeigt.  
   
-3.  In der **Watch** geben `_crtBreakAlloc` in die **Namen** Spalte.  
+3. In der **Watch** geben `_crtBreakAlloc` in die **Namen** Spalte.  
   
-     Bei Verwendung der Multithread-DLL-Version der CRT-Bibliothek (/MD-Option) schließen Sie den Kontextoperator ein: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Bei Verwendung der Multithread-DLL-Version der CRT-Bibliothek (/MD-Option) schließen Sie den Kontextoperator ein: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Drücken Sie die **EINGABETASTE**.  
+4. Drücken Sie die **EINGABETASTE**.  
   
-     Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Wenn Sie keine Haltepunkte für Speicherbelegungen festgelegt haben, lautet dieser Wert –1.  
+    Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Wenn Sie keine Haltepunkte für Speicherbelegungen festgelegt haben, lautet dieser Wert –1.  
   
-5.  Ersetzen Sie den angezeigten Wert in der Spalte **Wert** durch die Speicherbelegungsnummer, bei der die Unterbrechung erfolgen soll.  
+5. Ersetzen Sie den angezeigten Wert in der Spalte **Wert** durch die Speicherbelegungsnummer, bei der die Unterbrechung erfolgen soll.  
   
- Nachdem Sie einen Haltepunkt für eine Speicherbelegungsnummer festgelegt haben, können Sie mit dem Debuggen fortfahren. Das Programm muss unter denselben Bedingungen wie zuvor ausgeführt werden, damit die Speicherbelegung in derselben Reihenfolge erfolgt. Wenn das Programm bei der angegebenen Speicherbelegung unterbrochen wird, können Sie im Fenster **Aufrufliste** und in anderen Debuggerfenstern überprüfen, unter welchen Bedingungen der Speicher belegt wurde. Anschließend können Sie die Ausführung fortsetzen, um zu beobachten, was mit dem Objekt geschieht, und festzustellen, warum es nicht ordnungsgemäß freigegeben wird.  
+   Nachdem Sie einen Haltepunkt für eine Speicherbelegungsnummer festgelegt haben, können Sie mit dem Debuggen fortfahren. Das Programm muss unter denselben Bedingungen wie zuvor ausgeführt werden, damit die Speicherbelegung in derselben Reihenfolge erfolgt. Wenn das Programm bei der angegebenen Speicherbelegung unterbrochen wird, können Sie im Fenster **Aufrufliste** und in anderen Debuggerfenstern überprüfen, unter welchen Bedingungen der Speicher belegt wurde. Anschließend können Sie die Ausführung fortsetzen, um zu beobachten, was mit dem Objekt geschieht, und festzustellen, warum es nicht ordnungsgemäß freigegeben wird.  
   
- Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Using Breakpoints](../debugger/using-breakpoints.md).  
+   Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Using Breakpoints](../debugger/using-breakpoints.md).  
   
- Sie können auch Speicherbelegungshaltepunkte im Code festlegen. Hierfür gibt es zwei Möglichkeiten:  
+   Sie können auch Speicherbelegungshaltepunkte im Code festlegen. Hierfür gibt es zwei Möglichkeiten:  
   
 ```  
 _crtBreakAlloc = 18;  

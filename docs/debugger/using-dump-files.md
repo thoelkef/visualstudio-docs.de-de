@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847849"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Verwenden von Dumpdateien mit Visual Studio
 Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei; Öffnen einer Dumpdatei; Suchen Sie die Binärdateien, die PDB Datei und die Quelldatei für eine Dumpdatei.
@@ -64,11 +64,11 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei; Öffnen einer
 ##  <a name="BKMK_Create_a_dump_file"></a> Erstellen einer Dumpdatei
  So erstellen Sie eine Dumpdatei mit Visual Studio
 
--   Beim Debuggen eines Prozesses in Visual Studio können Sie eine Dumpdatei speichern, wenn der Debugger an einer Ausnahme oder an einem Haltepunkt angehalten wurde. Wählen Sie **Debuggen**, klicken Sie dann **Dump speichern unter**, klicken Sie dann **Debuggen**. In der **Dump speichern unter** Dialogfeld die **Dateityp** Liste können Sie auswählen, **Minidump** oder **Minidump mit Heap** (Standard).
+- Beim Debuggen eines Prozesses in Visual Studio können Sie eine Dumpdatei speichern, wenn der Debugger an einer Ausnahme oder an einem Haltepunkt angehalten wurde. Wählen Sie **Debuggen**, klicken Sie dann **Dump speichern unter**, klicken Sie dann **Debuggen**. In der **Dump speichern unter** Dialogfeld die **Dateityp** Liste können Sie auswählen, **Minidump** oder **Minidump mit Heap** (Standard).
 
--   Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aktiviert, Sie können das Anfügen des Debuggers an einen abgestürzten Prozess, der außerhalb des Debuggers ausgeführt wird und dann eine Dumpdatei speichern. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aktiviert, Sie können das Anfügen des Debuggers an einen abgestürzten Prozess, der außerhalb des Debuggers ausgeführt wird und dann eine Dumpdatei speichern. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) können Dumpdateien zu Prozessabstürzen anhand von Triggern oder bei Bedarf erstellen. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in dieses Thema enthält zusätzliche Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
+  Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) können Dumpdateien zu Prozessabstürzen anhand von Triggern oder bei Bedarf erstellen. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in dieses Thema enthält zusätzliche Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei
 
@@ -85,31 +85,31 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei; Öffnen einer
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Suchen von Binär-, Symbol-(PDB-) und Quelldateien
  Um die vollständigen Funktionen von Visual Studio zum Debuggen von Dumpdateien zu nutzen, benötigen Sie Zugriff auf die folgenden Dateien:
 
--   Die EXE-Datei, für die der Dump erstellt wurde, sowie andere Binärdateien (DLLs, usw.), die im Dumpprozess verwendet wurden.
+- Die EXE-Datei, für die der Dump erstellt wurde, sowie andere Binärdateien (DLLs, usw.), die im Dumpprozess verwendet wurden.
 
-     Wenn Sie eine Dumpdatei mit Heapdaten debuggen, kann Visual Studio mit fehlenden Binärdateien für einige Module umgehen, es müssen jedoch Binärdateien für genügend Module vorhanden sein, um gültige Aufruflisten generieren zu können. Visual Studio schließt die systemeigenen Module in einer Dumpdatei mit Heapinformationen ein.
+   Wenn Sie eine Dumpdatei mit Heapdaten debuggen, kann Visual Studio mit fehlenden Binärdateien für einige Module umgehen, es müssen jedoch Binärdateien für genügend Module vorhanden sein, um gültige Aufruflisten generieren zu können. Visual Studio schließt die systemeigenen Module in einer Dumpdatei mit Heapinformationen ein.
 
--   Symboldateien (PDB-Dateien) für die EXE-Datei und andere Binärdateien.
+- Symboldateien (PDB-Dateien) für die EXE-Datei und andere Binärdateien.
 
--   Quelldateien für die Module, die Sie interessieren.
+- Quelldateien für die Module, die Sie interessieren.
 
-     Die ausführbaren Dateien und die PDB-Dateien müssen exakt mit der Version und dem Build der Dateien übereinstimmen, die für die Erstellung der Dumpdatei verwendet wurden.
+   Die ausführbaren Dateien und die PDB-Dateien müssen exakt mit der Version und dem Build der Dateien übereinstimmen, die für die Erstellung der Dumpdatei verwendet wurden.
 
-     Sie können Debuggen, mithilfe der disassemblys der Module aus, wenn Sie die Quelldateien nicht finden,
+   Sie können Debuggen, mithilfe der disassemblys der Module aus, wenn Sie die Quelldateien nicht finden,
 
- **Standardsuchpfade für ausführbare Dateien**
+  **Standardsuchpfade für ausführbare Dateien**
 
- Visual Studio sucht automatisch diese Speicherorte für ausführbare Dateien, die nicht in der Dumpdatei enthalten sind:
+  Visual Studio sucht automatisch diese Speicherorte für ausführbare Dateien, die nicht in der Dumpdatei enthalten sind:
 
-1.  Das Verzeichnis mit der Dumpdatei.
+1. Das Verzeichnis mit der Dumpdatei.
 
-2.  Der Pfad des Moduls, der in der Dumpdatei angegeben ist. Dies ist der Modulpfad auf dem Computer, auf dem das Speicherabbild erfasst wurde.
+2. Der Pfad des Moduls, der in der Dumpdatei angegeben ist. Dies ist der Modulpfad auf dem Computer, auf dem das Speicherabbild erfasst wurde.
 
-3.  Die Symbolpfade, die im angegebenen die **Debuggen**, **Optionen**, **Symbole** auf der Seite der Visual Studio **Tools**, **Optionen**  Dialogfeld. Sie können mehr Speicherorte für die Suche auf dieser Seite hinzufügen.
+3. Die Symbolpfade, die im angegebenen die **Debuggen**, **Optionen**, **Symbole** auf der Seite der Visual Studio **Tools**, **Optionen**  Dialogfeld. Sie können mehr Speicherorte für die Suche auf dieser Seite hinzufügen.
 
- **Verwenden keine binären > Symbol > Quelle von Seiten**
+   **Verwenden keine binären > Symbol > Quelle von Seiten**
 
- Wenn Visual Studio zum Debuggen eines Moduls im Dump erforderlichen Dateien nicht finden kann, wird eine entsprechende Seite angezeigt (**keine Binärdatei gefunden**, **keine Symbole gefunden**, oder **Quelle nicht gefunden**). Diese Seiten enthalten ausführliche Informationen zu den Ursachen des Problems und stellen Aktionslinks bereit, mit denen Sie den richtigen Speicherort der Dateien identifizieren können. Weitere Informationen finden Sie unter [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+   Wenn Visual Studio zum Debuggen eines Moduls im Dump erforderlichen Dateien nicht finden kann, wird eine entsprechende Seite angezeigt (**keine Binärdatei gefunden**, **keine Symbole gefunden**, oder **Quelle nicht gefunden**). Diese Seiten enthalten ausführliche Informationen zu den Ursachen des Problems und stellen Aktionslinks bereit, mit denen Sie den richtigen Speicherort der Dateien identifizieren können. Weitere Informationen finden Sie unter [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Siehe auch
 

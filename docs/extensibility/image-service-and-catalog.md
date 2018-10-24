@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823761"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und-Katalog
 Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg auf den Dienst für Visual Studio-Images und Image-Katalog, die in Visual Studio 2015 eingeführt.  
@@ -32,46 +32,46 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
   
  Warum einführen den Image-Dienst?  
   
--   Erhalten Sie immer das neueste "pixelgenauen" Image aus Visual Studio  
+- Erhalten Sie immer das neueste "pixelgenauen" Image aus Visual Studio  
   
--   Sie senden können, und verwenden Sie Ihre eigenen images  
+- Sie senden können, und verwenden Sie Ihre eigenen images  
   
--   Nicht erforderlich, Testen Ihre Images, wenn Windows neue DPI-Skalierung fügt  
+- Nicht erforderlich, Testen Ihre Images, wenn Windows neue DPI-Skalierung fügt  
   
--   Alte Architektur Hürden in Ihrer Implementierung zu beheben  
+- Alte Architektur Hürden in Ihrer Implementierung zu beheben  
   
- Der Visual Studio Shell-Symbolleiste, vor und nach der Verwendung des Image-Diensts:  
+  Der Visual Studio Shell-Symbolleiste, vor und nach der Verwendung des Image-Diensts:  
   
- ![Bilddienst vorher – nachher](../extensibility/media/image-service-before-and-after.png "Bilddienst vorher – nachher")  
+  ![Bilddienst vorher – nachher](../extensibility/media/image-service-before-and-after.png "Bilddienst vorher – nachher")  
   
 ## <a name="how-it-works"></a>So funktioniert es
  Der Image-Dienst kann auf ein Bitmapbild geeignet für alle unterstützten UI-Frameworks angeben:  
   
--   WPF: "BitmapSource"  
+- WPF: "BitmapSource"  
   
--   Windows Forms: System.Drawing.Bitmap  
+- Windows Forms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- Bilddienst-Flussdiagramm  
+  Bilddienst-Flussdiagramm  
   
- ![Image-Flussdiagramm](../extensibility/media/image-service-flow-diagram.png "Image-Flussdiagramm")  
+  ![Image-Flussdiagramm](../extensibility/media/image-service-flow-diagram.png "Image-Flussdiagramm")  
   
- **Image-Moniker**  
+  **Image-Moniker**  
   
- Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID-ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.  
+  Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID-ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.  
   
- **Bekannte Moniker**  
+  **Bekannte Moniker**  
   
- Der Satz von Image-Moniker, die in der Visual Studio-Image-Katalog und öffentlich verwendet werden können von Visual Studio-Komponente oder Erweiterung enthalten.  
+  Der Satz von Image-Moniker, die in der Visual Studio-Image-Katalog und öffentlich verwendet werden können von Visual Studio-Komponente oder Erweiterung enthalten.  
   
- **Image-Manifestdateien**  
+  **Image-Manifestdateien**  
   
- Bildmanifest (*.imagemanifest*)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.  
+  Bildmanifest (*.imagemanifest*)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.  
   
- **Image-manifest-schema**  
+  **Image-manifest-schema**  
   
- Ein Abschließen des Images Manifest sieht folgendermaßen aus:  
+  Ein Abschließen des Images Manifest sieht folgendermaßen aus:  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  Hierbei handelt es sich um den Schlüssel stellen Moniker in einem Toolfenster verwenden. Befolgen Sie die Anweisungen für die einzelnen:  
   
-1.  Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).  
+1. Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).  
   
-     Fügen Sie diese Zeile an den Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:  
+    Fügen Sie diese Zeile an den Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  Der Befehl, um das Fenster zu öffnen.  
+2. Der Befehl, um das Fenster zu öffnen.  
   
-     In der *VSCT* -Datei für das Paket, das Toolfenster Befehlsschaltfläche "Bearbeiten":  
+    In der *VSCT* -Datei für das Paket, das Toolfenster Befehlsschaltfläche "Bearbeiten":  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **Wie verwende ich die Image-Moniker in ein vorhandenes Toolfenster?**  
+   **Wie verwende ich die Image-Moniker in ein vorhandenes Toolfenster?**  
   
- Aktualisiert ein vorhandenes Toolfenster zum Image-Moniker verwenden, entspricht die Schritte zum Erstellen eines neuen Toolfensters.  
+   Aktualisiert ein vorhandenes Toolfenster zum Image-Moniker verwenden, entspricht die Schritte zum Erstellen eines neuen Toolfensters.  
   
- Hierbei handelt es sich um den Schlüssel stellen Moniker in einem Toolfenster verwenden. Befolgen Sie die Anweisungen für die einzelnen:  
+   Hierbei handelt es sich um den Schlüssel stellen Moniker in einem Toolfenster verwenden. Befolgen Sie die Anweisungen für die einzelnen:  
   
-1.  Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).  
+3. Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).  
   
-    1.  Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:  
+   1.  Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  Finden Sie in Schritt #1, der die "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.  
+   2.  Finden Sie in Schritt #1, der die "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.  
   
-2.  Der Befehl, um das Fenster zu öffnen.  
+4. Der Befehl, um das Fenster zu öffnen.  
   
-    -   Finden Sie in Schritt #2 von der "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.  
+   -   Finden Sie in Schritt #2 von der "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Wie verwende ich die Image-Moniker in einer VSCT-Datei?  
  Aktualisieren Ihrer *VSCT* Datei wie in den kommentierten Zeilen, die unten angegeben:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Wie wird die Portieren ein Projektsystem  
  **Gewusst wie: Angeben von ImageMonikers für ein Projekt**  
   
-1.  Implementieren **VSHPROPID_SupportsIconMonikers** auf des Projekts **IVsHierarchy**, und geben Sie "true" zurück.  
+1. Implementieren **VSHPROPID_SupportsIconMonikers** auf des Projekts **IVsHierarchy**, und geben Sie "true" zurück.  
   
-2.  Implementieren entweder **VSHPROPID_IconMonikerImageList** (wenn das ursprüngliche Projekt verwendet **VSHPROPID_IconImgList**) oder **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt verwendet  **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle**).  
+2. Implementieren entweder **VSHPROPID_IconMonikerImageList** (wenn das ursprüngliche Projekt verwendet **VSHPROPID_IconImgList**) oder **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt verwendet  **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Ändern Sie die Implementierung von der ursprünglichen VSHPROPIDs für Symbole, "legacy" Versionen der Symbole zu erstellen, wenn Erweiterungspunkte, die sie anfordern. **IVsImageService2** bietet Funktionen zum Abrufen der entsprechenden Symbole  
+3. Ändern Sie die Implementierung von der ursprünglichen VSHPROPIDs für Symbole, "legacy" Versionen der Symbole zu erstellen, wenn Erweiterungspunkte, die sie anfordern. **IVsImageService2** bietet Funktionen zum Abrufen der entsprechenden Symbole  
   
- **Zusätzliche Anforderungen für VB / c#-Projekt Sorten**  
+   **Zusätzliche Anforderungen für VB / c#-Projekt Sorten**  
   
- Nur implementieren **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt ist das **äußersten Flavor**. Andernfalls die tatsächliche Konfiguration des äußerste unterstützen möglicherweise keine Image Moniker in der Praxis, und Ihre Basis Flavor kann effektiv "ausblenden" benutzerdefinierte Images.  
+   Nur implementieren **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt ist das **äußersten Flavor**. Andernfalls die tatsächliche Konfiguration des äußerste unterstützen möglicherweise keine Image Moniker in der Praxis, und Ihre Basis Flavor kann effektiv "ausblenden" benutzerdefinierte Images.  
   
- **Wie verwende ich die Image-Moniker in CPS?**  
+   **Wie verwende ich die Image-Moniker in CPS?**  
   
- Festlegen von benutzerdefinierten Images in CPS (Common Project System) kann durchgeführt werden, manuell oder über eine Item-Vorlage, die mit der Projekt-System-Erweiterbarkeit SDK geliefert wird.  
+   Festlegen von benutzerdefinierten Images in CPS (Common Project System) kann durchgeführt werden, manuell oder über eine Item-Vorlage, die mit der Projekt-System-Erweiterbarkeit SDK geliefert wird.  
   
- **Verwenden die System-Projekterweiterbarkeit SDK**  
+   **Verwenden die System-Projekterweiterbarkeit SDK**  
   
- Befolgen Sie die Anweisungen unter [Geben Sie benutzerdefinierte Symbole für den Typ der Projekt-/Elementvorlagen](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) Ihre Images CPS anpassen. Weitere Informationen zu CPS finden Sie unter [Dokumentation zur Erweiterbarkeit von Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem)  
+   Befolgen Sie die Anweisungen unter [Geben Sie benutzerdefinierte Symbole für den Typ der Projekt-/Elementvorlagen](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) Ihre Images CPS anpassen. Weitere Informationen zu CPS finden Sie unter [Dokumentation zur Erweiterbarkeit von Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem)  
   
- **Verwenden Sie ImageMonikers manuell**  
+   **Verwenden Sie ImageMonikers manuell**  
   
-1.  Implementieren und exportieren Sie die **IProjectTreeModifier** Schnittstelle in Ihrem Projektsystem.  
+4. Implementieren und exportieren Sie die **IProjectTreeModifier** Schnittstelle in Ihrem Projektsystem.  
   
-2.  Bestimmen, welche **KnownMoniker** oder benutzerdefiniertes Image-Moniker, die Sie verwenden möchten.  
+5. Bestimmen, welche **KnownMoniker** oder benutzerdefiniertes Image-Moniker, die Sie verwenden möchten.  
   
-3.  In der **ApplyModifications** -Methode, gehen Sie folgendermaßen vor an einer beliebigen Stelle in der Methode vor der Rückgabe der neuen Struktur ähnelt dem folgenden Beispiel:  
+6. In der **ApplyModifications** -Methode, gehen Sie folgendermaßen vor an einer beliebigen Stelle in der Methode vor der Rückgabe der neuen Struktur ähnelt dem folgenden Beispiel:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  Wenn Sie eine neue Struktur erstellen, können Sie benutzerdefinierte Images festlegen, übergeben die gewünschten Moniker an die Methode "NewTree", die ähnlich wie das folgende Beispiel:  
+7. Wenn Sie eine neue Struktur erstellen, können Sie benutzerdefinierte Images festlegen, übergeben die gewünschten Moniker an die Methode "NewTree", die ähnlich wie das folgende Beispiel:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Wie konvertiere ich von einem echten Bildstreifen auf einen Moniker-basiertes Image entfernen?  
  **Ich möchte HIMAGELISTs unterstützen.**  
   
  Ist ein bereits vorhandene Bildstreifen für Ihren Code, den Sie zur Verwendung des Diensts Image aktualisieren möchten, jedoch begrenzt durch die APIs, die Weitergabe von Bildlisten erfordern, können Sie weiterhin die Vorteile der Image-Dienst abrufen. Um ein Streifen Moniker-basiertes Image zu erstellen, die unten angegebenen Schritte zum Erstellen eines Manifests aus vorhandenen Moniker.  
   
-1.  Führen Sie die **ManifestFromResources** -Tool, und übergeben sie den Bildstreifen. Dadurch wird ein Manifest für den Bereichsstreifen.  
+1. Führen Sie die **ManifestFromResources** -Tool, und übergeben sie den Bildstreifen. Dadurch wird ein Manifest für den Bereichsstreifen.  
   
-    -   Empfohlen: Geben Sie einen nicht standardmäßigen-Namen für das Manifest an deren Verwendung anpassen.  
+   -   Empfohlen: Geben Sie einen nicht standardmäßigen-Namen für das Manifest an deren Verwendung anpassen.  
   
-2.  Wenn Sie nur verwenden **KnownMonikers**, führen Sie Folgendes:  
+2. Wenn Sie nur verwenden **KnownMonikers**, führen Sie Folgendes:  
   
-    -   Ersetzen Sie die \<Images >-Abschnitt des Manifests mit \<Bilder / >.  
+   -   Ersetzen Sie die \<Images >-Abschnitt des Manifests mit \<Bilder / >.  
   
-    -   Entfernen Sie alle Teilbild-IDs (alles, was \<Imagestrip-Name > _ ##).  
+   -   Entfernen Sie alle Teilbild-IDs (alles, was \<Imagestrip-Name > _ ##).  
   
-    -   Empfohlen: Benennen Sie die AssetsGuid und Image Strip-Symbol an die Verwendung anpassen.  
+   -   Empfohlen: Benennen Sie die AssetsGuid und Image Strip-Symbol an die Verwendung anpassen.  
   
-    -   Ersetzen Sie jeden **ContainedImage**GUID mit $(ImageCatalogGuid), ersetzen Sie jeden **ContainedImage**ID mit der $(\<Moniker >), und fügen Sie das externe = "true"-Attribut, um jede **ContainedImage**  
+   -   Ersetzen Sie jeden **ContainedImage**GUID mit $(ImageCatalogGuid), ersetzen Sie jeden **ContainedImage**ID mit der $(\<Moniker >), und fügen Sie das externe = "true"-Attribut, um jede **ContainedImage**  
   
-        -   \<der Moniker > ersetzt werden soll, mit der **KnownMoniker** , entspricht das Bild jedoch mit der "KnownMonikers". Entfernt aus dem Namen.  
+       -   \<der Moniker > ersetzt werden soll, mit der **KnownMoniker** , entspricht das Bild jedoch mit der "KnownMonikers". Entfernt aus dem Namen.  
   
-    -   Hinzufügen < Import Manifest="$(ManifestFolder)\\< Relative Installationspfad Dir, *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> am Anfang der \<Symbole > Abschnitt.  
+   -   Hinzufügen < Import Manifest="$(ManifestFolder)\\< Relative Installationspfad Dir, *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> am Anfang der \<Symbole > Abschnitt.  
   
-        -   Der relative Pfad wird durch den Speicherort für die Bereitstellung während der Einrichtung für das Manifest erstellen definierten bestimmt.  
+       -   Der relative Pfad wird durch den Speicherort für die Bereitstellung während der Einrichtung für das Manifest erstellen definierten bestimmt.  
   
-3.  Führen Sie die **ManifestToCode** Wrapper generieren, damit der vorhandene Code einen Moniker verfügt, können mit den Image-Dienst für den Bildstreifen abzufragen.  
+3. Führen Sie die **ManifestToCode** Wrapper generieren, damit der vorhandene Code einen Moniker verfügt, können mit den Image-Dienst für den Bildstreifen abzufragen.  
   
-    -   Empfohlen: Geben Sie nicht standardmäßige Namen für den Wrapper und Namespaces zu ihrer Verwendung entsprechen.  
+   -   Empfohlen: Geben Sie nicht standardmäßige Namen für den Wrapper und Namespaces zu ihrer Verwendung entsprechen.  
   
-4.  Alle der hinzufügt, Erstellung, Setup und Bereitstellung und anderen Änderungen am Code, mit der Image-Dienst und die neuen Dateien arbeiten.  
+4. Alle der hinzufügt, Erstellung, Setup und Bereitstellung und anderen Änderungen am Code, mit der Image-Dienst und die neuen Dateien arbeiten.  
   
- Das beispielmanifest einschließlich internen und externen Images, um anzuzeigen, wie es aussehen sollte:  
+   Das beispielmanifest einschließlich internen und externen Images, um anzuzeigen, wie es aussehen sollte:  
   
 ```xml  
 <?xml version="1.0"?>  

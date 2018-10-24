@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841883"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.  
@@ -32,15 +32,15 @@ ms.locfileid: "38781669"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Hinzufügen einer Datenquelle zu Ihrem Arbeitsmappenprojekt an.  
+- Hinzufügen einer Datenquelle zu Ihrem Arbeitsmappenprojekt an.  
   
--   Hinzufügen von datengebundenen Steuerelementen zu einem Arbeitsblatt.  
+- Hinzufügen von datengebundenen Steuerelementen zu einem Arbeitsblatt.  
   
--   Speichern von datenänderungen in der Datenbank.  
+- Speichern von datenänderungen in der Datenbank.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -67,25 +67,25 @@ ms.locfileid: "38781669"
   
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
+1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
   
-2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-3.  Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
+3. Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
   
-4.  Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
+4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
   
-5.  Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **Weiter**.  
+5. Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **Weiter**.  
   
-6.  Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-7.  Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
+7. Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
   
-8.  Aktivieren Sie das Kontrollkästchen neben den **Mitarbeiter** Tabelle.  
+8. Aktivieren Sie das Kontrollkästchen neben den **Mitarbeiter** Tabelle.  
   
 9. Klicken Sie auf **Fertig stellen**.  
   
- Der Assistent fügt die **Mitarbeiter** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
+   Der Assistent fügt die **Mitarbeiter** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
  Ein Arbeitsblatt zeigt die **Mitarbeiter** Tabelle, wenn die Arbeitsmappe geöffnet wird. Benutzer werden Änderungen an den Daten vornehmen und speichern Sie diese Änderungen in der Datenbank durch Klicken auf eine Schaltfläche.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781669"
   
 ### <a name="to-add-a-button"></a>Hinzufügen eine Schaltfläche  
   
-1.  Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A4** des Arbeitsblatts.  
+1. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A4** des Arbeitsblatts.  
   
- Der nächste Schritt ist zum Hinzufügen von Text auf die Schaltfläche, wenn das Arbeitsblatt geöffnet wird.  
+   Der nächste Schritt ist zum Hinzufügen von Text auf die Schaltfläche, wenn das Arbeitsblatt geöffnet wird.  
   
 ## <a name="initialize-the-control"></a>Das Steuerelement initialisiert  
  Hinzufügen von Text auf die Schaltfläche in der <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> -Ereignishandler.  
   
 ### <a name="to-initialize-the-control"></a>Um das Steuerelement zu initialisieren.  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.  
   
-2.  Fügen Sie den folgenden Code der `Sheet1_Startup` Methode, um den Text für den b festzulegen`utton`.  
+2. Fügen Sie den folgenden Code der `Sheet1_Startup` Methode, um den Text für den b festzulegen`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Nur für c#, fügen Sie einen Ereignishandler für die <xref:System.Windows.Forms.Control.Click> Ereignis, um die `Sheet1_Startup` Methode.  
+3. Nur für c#, fügen Sie einen Ereignishandler für die <xref:System.Windows.Forms.Control.Click> Ereignis, um die `Sheet1_Startup` Methode.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Fügen Sie jetzt Code für die Behandlung der <xref:System.Windows.Forms.Control.Click> -Ereignis der Schaltfläche.  
+   Fügen Sie jetzt Code für die Behandlung der <xref:System.Windows.Forms.Control.Click> -Ereignis der Schaltfläche.  
   
 ## <a name="save-changes-to-the-database"></a>Speichern Sie Änderungen an der Datenbank  
  Alle Änderungen vorgenommen wurden die Daten sind nur im lokalen Dataset vorhanden, bis sie explizit wieder in der Datenbank gespeichert werden.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781669"
   
 ### <a name="to-add-new-rows"></a>Zum Hinzufügen von neuer Zeilen  
   
-1.  Wählen Sie eine Zelle innerhalb des List-Objekts.  
+1. Wählen Sie eine Zelle innerhalb des List-Objekts.  
   
-     Es wird eine neue Zeile am unteren Rand der Liste mit einem Sternchen (**\***) in der ersten Zelle der neuen Zeile.  
+    Es wird eine neue Zeile am unteren Rand der Liste mit einem Sternchen (**\\***) in der ersten Zelle der neuen Zeile.  
   
-2.  Fügen Sie die folgenden Informationen in der leeren Zeile.  
+2. Fügen Sie die folgenden Informationen in der leeren Zeile.  
   
-    |EmployeeID|LastName|FirstName|Titel|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Fest|ERwin|Vertriebsleiter|  
+   |EmployeeID|LastName|FirstName|Titel|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Fest|ERwin|Vertriebsleiter|  
   
 ### <a name="to-delete-rows"></a>Zum Löschen von Zeilen  
   

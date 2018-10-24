@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830599"
 ---
 # <a name="how-to-debug-native-dlls"></a>Gewusst wie: Debuggen von systemeigenen DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244425"
   
  Das Debuggen einer DLL kann über die folgenden Projekte gestartet werden:  
   
--   Über das Projekt, das zum Erstellen der ausführbaren Datei verwendet wurde, durch die die DLL aufgerufen wird.  
+- Über das Projekt, das zum Erstellen der ausführbaren Datei verwendet wurde, durch die die DLL aufgerufen wird.  
   
- \- oder –  
+  \- oder –  
   
--   Über das Projekt, durch das die DLL selbst erstellt wurde.  
+- Über das Projekt, durch das die DLL selbst erstellt wurde.  
   
- Falls das Projekt, mit dem die ausführbare Datei erstellt wurde, verfügbar ist, starten Sie den Debugvorgang über dieses Projekt. Sie können dann eine Quelldatei für die DLL öffnen und in dieser Datei Haltepunkte festlegen. Dies gilt auch, wenn die Datei nicht dem Projekt angehört, mit dem die ausführbare Datei erstellt wurde. Weitere Informationen finden Sie unter [Haltepunkte](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Falls das Projekt, mit dem die ausführbare Datei erstellt wurde, verfügbar ist, starten Sie den Debugvorgang über dieses Projekt. Sie können dann eine Quelldatei für die DLL öffnen und in dieser Datei Haltepunkte festlegen. Dies gilt auch, wenn die Datei nicht dem Projekt angehört, mit dem die ausführbare Datei erstellt wurde. Weitere Informationen finden Sie unter [Haltepunkte](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Wenn Sie den Debugvorgang über das Projekt starten, mit dem die DLL erstellt wird, müssen Sie die ausführbare Datei angeben, die beim Debuggen der DLL verwendet werden soll.  
+  Wenn Sie den Debugvorgang über das Projekt starten, mit dem die DLL erstellt wird, müssen Sie die ausführbare Datei angeben, die beim Debuggen der DLL verwendet werden soll.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>So legen Sie eine ausführbare Datei für die Debugsitzung fest  
   
-1.  In **Projektmappen-Explorer**, wählen Sie das Projekt, das die DLL erstellt.  
+1. In **Projektmappen-Explorer**, wählen Sie das Projekt, das die DLL erstellt.  
   
-2.  Von der **Ansicht** Menü wählen**Eigenschaftenseiten**.  
+2. Von der **Ansicht** Menü wählen**Eigenschaftenseiten**.  
   
-3.  In der **Eigenschaftenseiten** öffnen Sie im Dialogfeld die **Konfigurationseigenschaften** Ordner, und wählen die **Debuggen** Kategorie.  
+3. In der **Eigenschaftenseiten** öffnen Sie im Dialogfeld die **Konfigurationseigenschaften** Ordner, und wählen die **Debuggen** Kategorie.  
   
-4.  In der **Befehl** geben den Pfadnamen für den Container. Beispielsweise C:\Programme\MeineAnwendung\MEINEANW.EXE.  
+4. In der **Befehl** geben den Pfadnamen für den Container. Beispielsweise C:\Programme\MeineAnwendung\MEINEANW.EXE.  
   
-5.  In der **Befehlsargumente** geben erforderlichen Argumente für die ausführbare Datei.  
+5. In der **Befehlsargumente** geben erforderlichen Argumente für die ausführbare Datei.  
   
- Wenn Sie nicht die ausführbare Datei in angeben der _Projekt_**Eigenschaftenseiten** im Dialogfeld die [ausführbare für Dialogfeld "Sitzung" Debuggen](../debugger/executable-for-debugging-session-dialog-box.md) angezeigt wird, wenn Sie das Debuggen starten.  
+   Wenn Sie nicht die ausführbare Datei in angeben der _Projekt_**Eigenschaftenseiten** im Dialogfeld die [ausführbare für Dialogfeld "Sitzung" Debuggen](../debugger/executable-for-debugging-session-dialog-box.md) angezeigt wird, wenn Sie das Debuggen starten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   

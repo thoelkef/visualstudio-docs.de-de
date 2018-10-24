@@ -1,5 +1,5 @@
 ---
-title: 'Neue Projektgenerierung: Hinter den Kulissen Teil 2 | Microsoft Docs'
+title: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2 | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69174be20a0961a6074650471bcb4b9d1df9fa98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837528"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Hinter den Kulissen Teil 2
-In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) wurde erläutert, wie die **neues Projekt** Dialogfeld Feld wird aufgefüllt. Angenommen, Sie haben ausgewählt, eine **Visual C#-Windows-Anwendung**, ausgefüllten der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2
+In [Generieren neuer Projekte: Under the Hood, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) erläutert, wie die **neues Projekt** Dialogfeld Feld wird gefüllt. Angenommen, Sie haben ausgewählt eine **Visual C#-Windows-Anwendung**, ausgefülltes der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  
   
-## <a name="generating-the-solution-files"></a>Generieren die Projektmappendateien  
- Auswählen einer Anwendungsvorlage leitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] extrahieren und öffnen Sie die entsprechenden VSTEMPLATE-Datei, und starten Sie eine Vorlage, um die XML-Befehle in dieser Datei zu interpretieren. Diese Befehle werden in der neuen oder vorhandenen Projektmappe Projekte und Projektelemente erstellen.  
+## <a name="generating-the-solution-files"></a>Zum Erstellen der Projektmappendateien  
+ Auswählen einer Anwendungsvorlage leitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entzippen und öffnen die entsprechende VSTEMPLATE-Datei, und starten Sie eine Vorlage, um die XML-Befehle in dieser Datei zu interpretieren. Diese Befehle erstellen Projekte und Projektelemente in der neuen oder vorhandenen Projektmappe ein.  
   
- Die Vorlage entpackt Quelldateien, Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält aufgerufen. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen.  
+ Die Vorlage entpackt Quelldateien namens Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen.  
   
-### <a name="template-parameter-replacement"></a>Vorlage Parameterersetzung  
- Wenn die Vorlage zu einem neuen Projekt eine Elementvorlage kopiert, ersetzt es, Vorlagenparameter mit Zeichenfolgen, um die Datei anzupassen. Ein Vorlagenparameter ist eine spezielle Token, das vorangestellt ist, und ein Dollarzeichen gefolgt sind, z. B. $date$.  
+### <a name="template-parameter-replacement"></a>Vorlage Parameter ersetzt  
+ Wenn die Vorlage eine Item-Vorlage in ein neues Projekt kopiert, ersetzt Vorlagenparameter durch Zeichenfolgen zum Anpassen der das. Ein Vorlagenparameter ist eine spezielle Token, das vorangestellt ist, und ein Dollarzeichen gefolgt sind, z. B. $date$.  
   
- Sehen wir uns einen typischen Projektelementvorlage an. Extrahieren Sie und untersuchen Sie die Datei "Program.cs" im Ordner "Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
+ Betrachten Sie eine typische Projektelementvorlage aus. Extrahieren Sie und untersuchen Sie die Datei "Program.cs" im Ordner "Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
   
 ```  
 using System;  
@@ -67,7 +67,7 @@ namespace Simple
  Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../../ide/template-parameters.md).  
   
 ## <a name="a-look-inside-a-vstemplate-file"></a>Ein Einblick in ein. VSTemplate-Datei  
- Eine einfache VSTEMPLATE-Datei hat dieses format  
+ Eine einfache VSTEMPLATE-Datei weist Folgendes Format auf  
   
 ```  
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
@@ -78,9 +78,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Erläutert die \<TemplateData > im Abschnitt der [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Die Tags in diesem Abschnitt werden verwendet, um die Darstellung der steuern die **neues Projekt** (Dialogfeld).  
+ Wir haben uns über die \<TemplateData > im Abschnitt der [Generieren neuer Projekte: Under the Hood, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Die in diesem Abschnitt werden verwendet, um die Darstellung der steuern die **neues Projekt** Dialogfeld.  
   
- Die Tags in der \<TemplateContent >-Abschnitt Steuerelement die Generierung von neuen Projekten und Projektelementen. So sieht die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
+ Die Tags in der \<TemplateContent > im Abschnitt Steuerelement der Generierung von neuen Projekten und Projektelementen. Hier ist die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
   
 ```  
 <TemplateContent>  
@@ -114,26 +114,26 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- Die \<Projekt > Tag steuert die Generierung eines Projekts, und die \<ProjectItem >-Tag steuert die Generierung des ein Projektelement. Wenn der Parameter ReplaceParameters auf "true" festgelegt ist, wird die Vorlage alle Vorlagenparameter in der Projektdatei oder Element anpassen. In diesem Fall werden alle Projektelemente angezeigt, mit Ausnahme von Settings.settings angepasst.  
+ Die \<Projekt >-Tag steuert die Generierung von ein Projekt, und die \<ProjectItem > Tag steuert die Generierung eines Projektelements. Wenn der Parameter ReplaceParameters auf "true" festgelegt ist, wird die Vorlage alle Vorlagenparameter in der Projektdatei oder das Element anpassen. In diesem Fall werden alle Projektelemente, mit Ausnahme von Settings.settings angepasst.  
   
- Der TargetFileName-Parameter gibt den Namen und den relativen Pfad der resultierenden Datei des Projekts oder des Elements. Dadurch können Sie eine Ordnerstruktur für das Projekt zu erstellen. Wenn Sie dieses Argument nicht angeben, wird das Projektelement den gleichen Namen wie die Projektelementvorlage haben.  
+ Der TargetFileName-Parameter gibt den Namen und den relativen Pfad der resultierende Projektdatei oder des Elements. Dadurch können Sie eine Ordnerstruktur für das Projekt zu erstellen. Wenn Sie dieses Argument nicht angeben, müssen das Projektelement den gleichen Namen wie der Projektelementvorlage.  
   
- Die resultierende Windows-Anwendung-Ordnerstruktur sieht folgendermaßen aus:  
+ Windows-Anwendung Ordnerstruktur sieht folgendermaßen aus:  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- Die erste und einzige \<Projekt >-Tag in die Vorlage lautet:  
+ Die erste und einzige \<Projekt >-Tag in die Vorlage liest:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
 ```  
   
- Dadurch wird die neue Projektvorlage So erstellen Sie die Projektdatei Simple.csproj kopieren und Anpassen der Vorlage Element windowsapplication.csproj angewiesen.  
+ Dies weist die neuen Projektvorlage die Projektdatei Simple.csproj durch Kopieren und Anpassen der Vorlage Element windowsapplication.csproj erstellen.  
   
 ### <a name="designers-and-references"></a>Designer und Verweise  
- Im Projektmappen-Explorer sehen Sie, dass der Ordner "Konfigurationseigenschaften" vorhanden ist und die erwarteten Dateien enthält. Aber was Projekt verweist, und Designerdatei Abhängigkeiten, z. B. Resources.Designer.cs auf "Resources.resx" und "Form1.Designer.cs" auf "Form1.cs"?  Diese werden in der Datei Simple.csproj eingerichtet, wenn sie generiert werden.  
+ Sie können im Projektmappen-Explorer sehen, dass der Ordner "Properties" vorhanden ist und die erwarteten Dateien enthält. Aber wie sieht es mit Projekt verweist, und Designer-dateiabhängigkeiten, z. B. "Resources.Designer.cs", "Resources.resx" und "Form1.Designer.cs" auf "Form1.cs"?  Diese werden in der Datei Simple.csproj eingerichtet, wenn sie erstellt wird.  
   
- So sieht die \<ItemGroup > von Simple.csproj, die die Projektverweisen erstellt:  
+ Hier ist die \<ItemGroup > von Simple.csproj, die die Projektverweisen erstellt:  
   
 ```  
 <ItemGroup>  
@@ -146,7 +146,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- Sie sehen, dass die sechs Projektverweise handelt, die im Projektmappen-Explorer angezeigt werden. Hier ist ein Abschnitt von einem anderen \<ItemGroup >. Viele Codezeilen wurden aus Gründen der Übersichtlichkeit gelöscht. In diesem Abschnitt werden die Settings.Designer.cs Settings.settings abhängig:  
+ Sie können sehen, dass diese die sechs Projektverweise, die im Projektmappen-Explorer angezeigt werden. Hier ist ein Abschnitt von einem anderen \<ItemGroup >. Viele Codezeilen wurden aus Gründen der Übersichtlichkeit gelöscht. In diesem Abschnitt werden die Settings.Designer.cs Settings.settings abhängig:  
   
 ```  
 <ItemGroup>  

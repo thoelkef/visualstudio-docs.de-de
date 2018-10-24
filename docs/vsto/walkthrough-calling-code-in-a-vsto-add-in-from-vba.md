@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843820"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.  
@@ -37,15 +37,15 @@ ms.locfileid: "39513619"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Definieren einer Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
+- Definieren einer Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
   
--   Verfügbarmachen der Klasse für andere Office-Projektmappen  
+- Verfügbarmachen der Klasse für andere Office-Projektmappen  
   
--   Aufrufen einer Methode der Klasse aus VBA-Code  
+- Aufrufen einer Methode der Klasse aus VBA-Code  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -64,7 +64,7 @@ ms.locfileid: "39513619"
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definieren Sie eine Klasse, die Sie verfügbar machen können, für andere Office-Projektmappen  
  Der Zweck dieser exemplarischen Vorgehensweise besteht im Aufrufen der `ImportData` -Methode einer Klasse mit dem Namen `AddInUtilities` in Ihrem VSTO-Add-In aus VBA-Code. Mit dieser Methode wird eine Zeichenfolge in die Zelle A1 des aktiven Arbeitsblatts geschrieben.  
   
- Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, müssen Sie die Klasse öffentlich und für COM sichtbar machen. Sie müssen auch verfügbar machen die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) Schnittstelle in der Klasse. Mit dem Code in der folgenden Prozedur wird eine Möglichkeit zum Erfüllen dieser Anforderungen veranschaulicht. Weitere Informationen finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, müssen Sie die Klasse öffentlich und für COM sichtbar machen. Außerdem müssen Sie die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle in der Klasse verfügbar machen. Mit dem Code in der folgenden Prozedur wird eine Möglichkeit zum Erfüllen dieser Anforderungen veranschaulicht. Weitere Informationen finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>So definieren Sie eine Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann  
   
@@ -84,7 +84,7 @@ ms.locfileid: "39513619"
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     Mit diesem Code wird die `AddInUtilities` -Klasse für COM sichtbar, und die `ImportData` -Methode wird der Klasse hinzugefügt. Um verfügbar zu machen die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle, die `AddInUtilities` -Klasse verfügt auch über die <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut und implementiert eine Schnittstelle, die für COM sichtbar ist  
+     Mit diesem Code wird die `AddInUtilities` -Klasse für COM sichtbar, und die `ImportData` -Methode wird der Klasse hinzugefügt. Zum Verfügbarmachen der [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle verfügt die `AddInUtilities` -Klasse auch über das <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut und implementiert eine Schnittstelle, die für COM sichtbar ist.  
   
 ## <a name="expose-the-class-to-other-office-solutions"></a>Machen Sie die Klasse für andere Office-Projektmappen  
  Um die `AddInUtilities` -Klasse für andere Office-Projektmappen verfügbar zu machen, setzen Sie die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode in der `ThisAddIn` -Klasse außer Kraft. Geben Sie bei der Außerkraftsetzung eine Instanz der `AddInUtilities` -Klasse zurück.  
@@ -158,7 +158,7 @@ ms.locfileid: "39513619"
  [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
  [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

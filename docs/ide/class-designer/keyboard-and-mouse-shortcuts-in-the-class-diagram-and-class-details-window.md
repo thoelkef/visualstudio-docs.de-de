@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848500"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“
 
@@ -30,8 +30,8 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im **Klassen-Designe
 
 Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:
 
-|Mauskombination|Kontext|description|
-|-----------------------|-------------|-----------------|
+|Mauskombination|Kontext|Beschreibung |
+| - |-------------|-----------------|
 |Doppelklicken|Shape-Elemente|Öffnet den Code-Editor.|
 |Doppelklicken|Lollipop-Connector|Lollipop erweitern/reduzieren.|
 |Doppelklicken|Lollipop-Connectorbezeichnung|Ruft den Befehl **Schnittstelle anzeigen** auf|
@@ -58,7 +58,7 @@ Mit einer Maus können Sie die Darstellung des Fensters **Klassendetails** und d
 
 Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 
-|Key|Kontext|description|
+|Key|Kontext|Beschreibung |
 |---------|-------------|-----------------|
 |**Pfeiltasten**|In Typformen|Navigation im Strukturstil in Forminhalten (Umschließen einer Form wird unterstützt). Nach-links- und Nach-rechts-Taste erweitern/reduzieren das aktuelle Element, sofern es erweiterbar ist, und navigieren andernfalls zum übergeordneten Element (ausführliches Verhalten entsprechend Navigation in Strukturansicht).|
 |**Pfeiltasten**|Formen der obersten Ebene|Verschieben von Formen im Diagramm.|
