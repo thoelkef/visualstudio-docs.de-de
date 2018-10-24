@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914813"
 ---
 # <a name="lines-view---sampling-data"></a>Zeilenansicht: Samplingdaten
 In der Zeilenansicht der Samplingdaten werden die Leistungsdaten für die Anweisungen aufgeführt, die ausgeführt wurden, als die Samplings bei der Profilerstellung erfasst wurden.  
@@ -27,21 +27,21 @@ In der Zeilenansicht der Samplingdaten werden die Leistungsdaten für die Anweis
   
  In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten. Eine Anweisung wird mit dem Folgenden identifiziert:  
   
--   Die Quelldatei, die die Funktionsanweisung enthält.  
+- Die Quelldatei, die die Funktionsanweisung enthält.  
   
--   Die Funktion, die die Anweisung enthält.  
+- Die Funktion, die die Anweisung enthält.  
   
--   Die Quellzeile, an der die Anweisung beginnt.  
+- Die Quellzeile, an der die Anweisung beginnt.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
   
--   Die Quellzeile, an der die Anweisung endet.  
+- Die Quellzeile, an der die Anweisung endet.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
- Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
   
- Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
+  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
   
 |Spalte|Beschreibung |  
 |------------|-----------------|  

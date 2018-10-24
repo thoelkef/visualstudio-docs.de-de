@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919064"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generieren einer Überschreibung in Visual Studio
 
@@ -36,13 +36,13 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-    ![Überschreiben mit IntelliSense in C#](media/override-intellisense-cs.png)
+      ![Überschreiben mit IntelliSense in C#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![Überschreiben mit IntelliSense in Visual Basic](media/override-intellisense-vb.png)
+      ![Überschreiben mit IntelliSense in Visual Basic](media/override-intellisense-vb.png)
 
-1. Wählen Sie die zu überschreibende Methode aus der Basisklasse.
+2. Wählen Sie die zu überschreibende Methode aus der Basisklasse.
 
    > [!TIP]
    > - Verwenden Sie das Eigenschaftssymbol, ![Eigenschaftssymbol](media/override-property-cs.png) um Eigenschaften in der Liste anzuzeigen oder auszublenden.
@@ -52,11 +52,11 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-      ![Ergebnis der Überschreibung in C#](media/override-result-cs.png)
+       ![Ergebnis der Überschreibung in C#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![Ergebnis der Überschreibung in Visual Basic](media/override-result-vb.png)
+       ![Ergebnis der Überschreibung in Visual Basic](media/override-result-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 

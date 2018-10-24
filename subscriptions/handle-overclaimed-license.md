@@ -9,22 +9,22 @@ description: Erfahren Sie, wie Administratoren mit zu häufig in Anspruch genomm
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 308ef6d310d87340c18b4f2da1e118c6859ec89e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e571f47abccbd725c5ee19f214726296b9dabb71
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909093"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Umgang mit zu häufig in Anspruch genommenen Abonnements
 
 Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt wurden, wodurch es dazu kommen kann, dass mehr Abonnements zugewiesen wurden als Lizenzen für Ihr Unternehmen vorhanden sind. Wenn dies der Fall ist, wird in der Registerkarte „Abonnenten“ eine Warnung mit zusätzlichen Informationen angezeigt. 
 
-> [!NOTE] 
+> [!NOTE]
 > In Open License-Programmen können Abonnements nicht zu häufig beansprucht werden.  Außerdem werden diese Informationen im Portal möglicherweise von anderen Programmen unterschiedlich angezeigt. 
-
+> 
 > [!div class="mx-imgBorder"]
-> ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img\over-claimed\over-claimed-alert.png)
+> ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img/over-claimed/over-claimed-alert.png)
 
 
 1.  Klicken Sie auf den Warnungstext, um eine Lösung für Lizenzen zu finden, die zu häufig in Anspruch genommen wurden. Dann werden eine filterbare Liste mit den Abonnenten, die der Abonnementstufe zugewiesen sind, und das zu häufig in Anspruch genommene Ablaufdatum angezeigt. 

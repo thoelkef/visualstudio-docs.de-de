@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908907"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Schnellstart: Erstellen Ihrer ersten Anwendung für die universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -46,9 +46,9 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 
    ![Übernehmen Sie die Standardeinstellungen für Zielversion und Mindestversion im Dialogfeld „Neues UWP-Projekt (Universelle Windows-Plattform)“.](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > Wenn Sie Visual Studio erstmals zum Erstellen einer UWP-App verwenden, wird möglicherweise ein Dialogfeld **Einstellungen** angezeigt. Wählen Sie **Entwicklermodus**, und wählen Sie dann **Ja**.<br><br>
- ![Aktivieren Sie den Entwicklermodus im Dialogfeld mit UWP-Einstellungen.](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installiert für Sie ein zusätzliches Entwicklermoduspaket. Wenn die Paketinstallation abgeschlossen ist, schließen Sie das Dialogfeld **Einstellungen**.
+   > [!NOTE]
+   > Wenn Sie Visual Studio erstmals zum Erstellen einer UWP-App verwenden, wird möglicherweise ein Dialogfeld **Einstellungen** angezeigt. Wählen Sie **Entwicklermodus**, und wählen Sie dann **Ja**.<br><br>
+   ![Aktivieren Sie den Entwicklermodus im Dialogfeld mit UWP-Einstellungen.](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installiert für Sie ein zusätzliches Entwicklermoduspaket. Wenn die Paketinstallation abgeschlossen ist, schließen Sie das Dialogfeld **Einstellungen**.
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
 
@@ -58,29 +58,29 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
 1. Doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *MainPage.xaml*, um eine geteilte Ansicht zu öffnen.
 
-  ![Öffnen Sie im Projektmappen-Explorer die Datei „MainPage.xaml“. ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![Öffnen Sie im Projektmappen-Explorer die Datei „MainPage.xaml“. ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Sie sehen zwei Bereiche: den **XAML-Designer** mit einer Entwurfs-Canvas und den **XAML-Editor** zum Hinzufügen oder Ändern von Code.
+   Sie sehen zwei Bereiche: den **XAML-Designer** mit einer Entwurfs-Canvas und den **XAML-Editor** zum Hinzufügen oder Ändern von Code.
 
-  ![Der XAML-Designer-Bereich im XAML-Editor](../ide/media/uwp-xaml-editor.png)
+   ![Der XAML-Designer-Bereich im XAML-Editor](../ide/media/uwp-xaml-editor.png)
 
 2. Klicken Sie auf **Toolbox**, um das Toolbox-Flyoutfenster zu öffnen.
 
-  ![Klicken Sie auf „Toolbox“, um das Toolbox-Flyoutfenster zu öffnen.](../ide/media/uwp-toolbox.png)
+   ![Klicken Sie auf „Toolbox“, um das Toolbox-Flyoutfenster zu öffnen.](../ide/media/uwp-toolbox.png)
 
-  (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Hierzu wählen Sie **Ansicht** > **Symbolleiste**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
+   (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Hierzu wählen Sie **Ansicht** > **Symbolleiste**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
 
 3. Klicken Sie auf das **Stecknadelsymbol**, um das Toolbox-Fenster anzudocken.
 
-  ![Klicken Sie auf das Stecknadelsymbol, um das Toolbox-Fenster anzudocken.](../ide/media/uwp-toolbox-autohide.png)
+   ![Klicken Sie auf das Stecknadelsymbol, um das Toolbox-Fenster anzudocken.](../ide/media/uwp-toolbox-autohide.png)
 
 4. Klicken Sie auf das Steuerelement **Schaltfläche**, und ziehen Sie es auf die Entwurfs-Canvas.
 
    ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Wenn Sie den Code im **XAML-Editor** betrachten, sehen Sie, dass die Schaltfläche auch dort hinzugefügt wurde:
+   Wenn Sie den Code im **XAML-Editor** betrachten, sehen Sie, dass die Schaltfläche auch dort hinzugefügt wurde:
 
-  ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](../ide/media/uwp-xaml-control-code-window.png)
+   ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Hinzufügen einer Bezeichnung zur Schaltfläche
 
@@ -100,18 +100,18 @@ Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für
 
 2. Bearbeiten Sie den Ereignishandlercode in *MainPage.Xaml.cs*, der CodeBehind-Seite.
 
- An dieser Stelle wird es interessant. Der Standardereignishandler sieht folgendermaßen aus:
+   An dieser Stelle wird es interessant. Der Standardereignishandler sieht folgendermaßen aus:
 
    ![Der Standardereignishandler für „Button_Click“ ](../ide/media/uwp-button-click-code.png)
 
- Wir ändern ihn folgendermaßen:
+   Wir ändern ihn folgendermaßen:
 
     ![Der neue asynchrone Ereignishandler für „Button_Click“ ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  Hier finden Sie den Code zum Kopieren und Einfügen:
+   Hier finden Sie den Code zum Kopieren und Einfügen:
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>Was haben wir gerade getan?
 
@@ -141,7 +141,7 @@ Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und star
 
 3. Klicken Sie auf die Schaltfläche **Hallo Welt**.
 
- Ihr Windows 10-Gerät sagt laut „Hallo Welt!“.
+   Ihr Windows 10-Gerät sagt laut „Hallo Welt!“.
 
 4. Klicken Sie in der Symbolleiste auf die Schaltfläche **Debuggen beenden**, um die App zu schließen. (Alternativ können Sie in der Menüleiste auf **Debuggen** > **Debuggen beenden** klicken oder **UMSCHALTTASTE**+**F5** drücken.)
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862501"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -56,32 +56,32 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
  Ein schrittweises Auslastungsmuster kann zum Erhöhen der Auslastung auf den Servern während der Ausführung des Auslastungstests verwendet werden, um zu verdeutlichen, wie sich die Leistung bei Erhöhen der Benutzerauslastung ändert. Um beispielsweise die Leistung der Server beim Erhöhen der Benutzerauslastung auf 2.000 Benutzer anzuzeigen, könnten Sie einen 10-Stunden-Auslastungstest mit einem schrittweisen Auslastungsmuster mit den folgenden Eigenschaften ausführen:
 
--   **Benutzeranzahl (ursprünglich)**: 100
+- **Benutzeranzahl (ursprünglich)**: 100
 
--   **Maximale Benutzeranzahl**: 2.000
+- **Maximale Benutzeranzahl**: 2.000
 
--   **Schrittdauer (Sekunden)**: 1.800
+- **Schrittdauer (Sekunden)**: 1.800
 
--   **Schrittverlaufszeit (Sekunden)**: 20
+- **Schrittverlaufszeit (Sekunden)**: 20
 
--   **Benutzeranzahl pro Schritt**: 100
+- **Benutzeranzahl pro Schritt**: 100
 
- Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im **Assistenten für neue Auslastungstests** nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im **Assistenten für neue Auslastungstests** nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Zielbasiert
 
  Ein Muster für zielbasierte Auslastung ähnelt dem schrittweisen Muster, passt jedoch die Benutzerauslastung auf Grundlage eines Vergleichs von Schwellenwerten für Leistungsindikatoren und den regelmäßigen Anpassungen der Benutzerauslastung an. Zielbasierte Auslastungen sind nützlich für eine Reihe von Aufgaben:
 
--   Maximieren der Ausgabe der Agents: Messen Sie die Eckdaten der Agents, um die Ausgabe zu maximieren. In der Regel handelt es sich hierbei um die Prozessorleistung, aber auch eine Messung des Arbeitsspeichers kann von Nutzen sein.
+- Maximieren der Ausgabe der Agents: Messen Sie die Eckdaten der Agents, um die Ausgabe zu maximieren. In der Regel handelt es sich hierbei um die Prozessorleistung, aber auch eine Messung des Arbeitsspeichers kann von Nutzen sein.
 
--   Erreichen eines bestimmten Ressourcenwerts auf dem Zielserver (in der Regel Prozessorauslastung) und anschließende Messung des Durchsatzes bei diesem Wert. Auf diese Weise können Sie Run-To-Run-Vergleiche des Durchsatzes bei vorgegebener, gleichbleibender Verwendung der Serverressourcen durchführen.
+- Erreichen eines bestimmten Ressourcenwerts auf dem Zielserver (in der Regel Prozessorauslastung) und anschließende Messung des Durchsatzes bei diesem Wert. Auf diese Weise können Sie Run-To-Run-Vergleiche des Durchsatzes bei vorgegebener, gleichbleibender Verwendung der Serverressourcen durchführen.
 
--   Erreichen eines bestimmten Durchsatzwerts auf dem Server
+- Erreichen eines bestimmten Durchsatzwerts auf dem Server
 
- Das Beispiel in der folgenden Tabelle veranschaulicht ein zielbasiertes Muster mit den folgenden Eigenschafteneinstellungen:
+  Das Beispiel in der folgenden Tabelle veranschaulicht ein zielbasiertes Muster mit den folgenden Eigenschafteneinstellungen:
 
 |Eigenschaftengruppe|Eigenschaft|Wert|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Leistungsindikator|Kategorie|Prozessor|
 |Leistungsindikator|Computer|ContosoServer1|
 |Leistungsindikator|Zähler|% Prozessorzeit|
@@ -109,7 +109,7 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem **Assistenten für neue Auslastungstests** einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im **Auslastungstest-Editor** bearbeiten.|-   [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

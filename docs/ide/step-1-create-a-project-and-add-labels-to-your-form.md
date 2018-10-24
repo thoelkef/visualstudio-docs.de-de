@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925115"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
+
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.
 
 > [!NOTE]
->  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>So erstellen Sie ein Projekt und legen Eigenschaften für ein Formular fest
 
@@ -68,8 +69,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
      Sie können einige Schriftarteigenschaften ändern, wie im folgenden Bild gezeigt.
 
-     ![Schriftgrad im Eigenschaftenfenster](../ide/media/express_setfontsize.png)
- Schriftgrad im **Eigenschaftenfenster**
+     ![Eigenschaftenfenster mit Schriftgrad](../ide/media/express_setfontsize.png)
 
 8.  Fügen Sie ein weiteres Label-Steuerelement aus der **Toolbox** hinzu, und legen Sie dessen Schriftgrad auf **15,75** fest.
 
@@ -117,7 +117,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
      Sie haben die erste Zeile erstellt, wie im folgenden Bild dargestellt.
 
-     ![Erste Zeile des Mathetests](../ide/media/express_firstrow.png) Erste Zeile des Mathetests
+     ![Erste Zeile des Mathequiz](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>So fügen Sie weitere Steuerelemente für die Subtraktion-, Multiplikations- und Divisionsaufgaben hinzu
 
@@ -144,7 +144,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 9. Führen Sie für die vierte Zeile folgende Schritte aus: Nennen Sie die erste Bezeichnung **dividedLeftLabel**, ändern Sie die **Text**-Eigenschaft der zweiten Eigenschaft in **÷** (Divisionszeichen), nennen Sie die dritte Bezeichnung **dividedRightLabel**, und nennen Sie das NumericUpDown-Steuerelement **Quotient**.
 
     > [!NOTE]
-    >  Sie können das Multiplikationszeichen × und das Divisionszeichen ÷ aus diesem Lernprogramm kopieren und in das Formular einfügen.
+    > Sie können das Multiplikationszeichen × und das Divisionszeichen ÷ aus diesem Lernprogramm kopieren und in das Formular einfügen.
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>So fügen Sie einen Startknopf hinzu und legen die Aktivierreihenfolge fest
 
@@ -161,13 +161,13 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 6.  Legen Sie den Wert der **TabIndex**-Eigenschaft für das **startButton**-Steuerelement auf **1** fest.
 
     > [!NOTE]
-    >  Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, wenn der Quizteilnehmer die **TAB-TASTE** drückt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z.B. in der Menüleiste **Datei** > **Öffnen** aus), und drücken Sie dann mehrmals die **TAB-TASTE**. Der Cursor springt jedes Mal, wenn Sie die **TAB-TASTE** drücken, von Steuerelement zu Steuerelement. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.
+    > Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, wenn der Quizteilnehmer die **TAB-TASTE** drückt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z.B. in der Menüleiste **Datei** > **Öffnen** aus), und drücken Sie dann mehrmals die **TAB-TASTE**. Der Cursor springt jedes Mal, wenn Sie die **TAB-TASTE** drücken, von Steuerelement zu Steuerelement. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.
 
 7.  Legen Sie den Wert der Eigenschaft **TabIndex** für das NumericUpDown-Steuerelement „Summe“ auf **2**, für das Differenzsteuerelement auf **3**, für das Produktsteuerelement auf **4** und für das Quotientsteuerelement auf **5** fest.
 
      Das fertige Formular sollte der folgenden Abbildung ähneln.
 
-     ![Anfängliches Formular für den Mathetest](../ide/media/express_formlaidout.png) Anfängliches Formular für den Mathetest
+     ![Anfängliches Mathequizformular](../ide/media/express_formlaidout.png)
 
 8.  Um sicherzustellen, dass die Eigenschaft **TabIndex** wie erwartet funktioniert, speichern Sie das Programm, und führen Sie es durch Drücken der **F5-TASTE** oder durch Klicken auf **Debuggen** > **Debuggen starten** in der Menüleiste aus. Drücken Sie anschließend einige Male die **TAB-TASTE**.
 

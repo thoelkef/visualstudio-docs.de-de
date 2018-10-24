@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907520"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Willkommen in der Visual Studio-IDE
 
@@ -94,11 +94,11 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 - [Gehe zu Definition](../ide/go-to-and-peek-definition.md)
 
-  Mit der Funktion „Gehe zu Definition“ gelangen Sie direkt zu der Stelle, an der eine Funktion oder ein Typ definiert ist.
+   Mit der Funktion „Gehe zu Definition“ gelangen Sie direkt zu der Stelle, an der eine Funktion oder ein Typ definiert ist.
 
    ![Zur Definition wechseln](../ide/media/go-to-definition-menu.png)
 
-- [Definitionsvorschau](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Definition einsehen](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    Im Fenster **Definitionsvorschau** wird die Definition einer Methode oder eines Typs angezeigt, ohne eine separate Datei zu öffnen.
 
@@ -112,14 +112,14 @@ Darum werden wir mit Ihnen jetzt ein neues, einfaches Programm erstellen.
 
    ![„Datei“ > „Neu“ > „Projekt“ in der Menüleiste](../ide/media/file-new-project-menu.png)
 
-1. Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind. Wählen Sie unterhalb von **Visual C#**die Kategorie**.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
+2. Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind. Wählen Sie unterhalb von **Visual C#**die Kategorie**.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
 
    ![.NET Core-App-Vorlage](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio erstellt daraufhin das Projekt. Die Vorlage erstellt eine einfache „Hello World“-Anwendung, mit der die <xref:System.Console.WriteLine?displayProperty=nameWithType>-Methode aufgerufen wird, um die Literalzeichenfolge „Hello World!“ im Konsolenfenster (Programmausgabe).
 
-  > [!NOTE]
-  > Wenn die Kategorie **.NET Core** nicht angezeigt wird, müssen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren. Klicken Sie hierfür im Dialogfeld **Neues Projekt** unten links auf den Link **Visual Studio-Installer öffnen**. Nachdem der Visual Studio-Installer geöffnet wurde, wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
+   > [!NOTE]
+   > Wenn die Kategorie **.NET Core** nicht angezeigt wird, müssen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren. Klicken Sie hierfür im Dialogfeld **Neues Projekt** unten links auf den Link **Visual Studio-Installer öffnen**. Nachdem der Visual Studio-Installer geöffnet wurde, wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
    Kurz darauf sollte nun etwa Folgendes angezeigt werden:
 
@@ -127,21 +127,21 @@ Darum werden wir mit Ihnen jetzt ein neues, einfaches Programm erstellen.
 
    Der C#-Code für Ihre Anwendung wird im Editor-Fenster angezeigt, der den meisten Raum einnimmt. Beachten Sie, dass der Text automatisch farbig hervorgehoben wird, um verschiedene Bestandteile des Codes anzuzeigen, z.B. Schlüsselwörter und Typen. Darüber hinaus zeigen kleine, vertikale gestrichelte Linien im Code an, welche geschweiften Klammern zusammengehören, und anhand der Zeilennummern können Sie sich später im Code orientieren. Sie können die kleinen Minuszeichen in Kästchen auswählen, um Codeblöcke ein- oder auszublenden. Mit dieser Codegliederungsfunktion können Sie Code ausblenden, den Sie nicht benötigen, um die Übersichtlichkeit des Bildschirms zu optimieren. Auf der rechten Seite werden im Fenster **Projektmappen-Explorer** die Projektdateien aufgelistet.
 
-  ![Visual Studio-IDE mit roten Markierungen](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![Visual Studio-IDE mit roten Markierungen](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  Es sind noch mehr Menüs und Toolfenster verfügbar, aber für den Moment wenden wir uns Anderem zu.
+   Es sind noch mehr Menüs und Toolfenster verfügbar, aber für den Moment wenden wir uns Anderem zu.
 
-1. Starten Sie nun die App. Wählen Sie hierzu auf der Menüleiste im Menü **Debuggen** die Option **Ohne Debuggen starten** aus. Alternativ können Sie auch die Tastenkombination **STRG**+**F5** drücken.
+3. Starten Sie nun die App. Wählen Sie hierzu auf der Menüleiste im Menü **Debuggen** die Option **Ohne Debuggen starten** aus. Alternativ können Sie auch die Tastenkombination **STRG**+**F5** drücken.
 
-  ![Menü „Debuggen“ > „Ohne Debuggen starten“](../ide/media/overview-start-without-debugging.png)
+   ![Menü „Debuggen“ > „Ohne Debuggen starten“](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio erstellt die App, und es wird ein Konsolenfenster mit der Meldung **Hello World!** geöffnet. Sie haben nun eine funktionierende App!
+   Visual Studio erstellt die App, und es wird ein Konsolenfenster mit der Meldung **Hello World!** geöffnet. Sie haben nun eine funktionierende App!
 
-  ![Konsolenfenster](../ide/media/overview-console-window.png)
+   ![Konsolenfenster](../ide/media/overview-console-window.png)
 
-1. Drücken Sie eine beliebige Taste auf der Tastatur, um das Konsolenfenster zu schließen.
+4. Drücken Sie eine beliebige Taste auf der Tastatur, um das Konsolenfenster zu schließen.
 
-1. Fügen wir der App weiteren Code hinzu. Fügen Sie vor der Zeile `Console.WriteLine("Hello World!");` den folgenden Code ein:
+5. Fügen wir der App weiteren Code hinzu. Fügen Sie vor der Zeile `Console.WriteLine("Hello World!");` den folgenden Code ein:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Darum werden wir mit Ihnen jetzt ein neues, einfaches Programm erstellen.
 
    Der Code zeigt **What is your name?** (Wie heißen Sie?) im Konsolenfenster an und wartet, bis der Benutzer Text eingegeben und die **EINGABETASTE** gedrückt hat.
 
-1. Ändern Sie die Zeile `Console.WriteLine("Hello World!");` in den folgenden Code:
+6. Ändern Sie die Zeile `Console.WriteLine("Hello World!");` in den folgenden Code:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
+7. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
-1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE**.
+8. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE**.
 
    ![Konsolenfenstereingabe](media/overview-console-input.png)
 
-1. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen und das ausgeführte Programm zu beenden.
+9. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen und das ausgeführte Programm zu beenden.
 
 ## <a name="use-refactoring-and-intellisense"></a>Verwenden von Refactoring und IntelliSense
 
@@ -174,11 +174,11 @@ Benennen Sie zunächst die Variable `name` um:
 
 1. Doppelklicken Sie auf die Variable `name`, um sie auszuwählen.
 
-1. Geben Sie den neuen Namen (**username**) der Variable ein.
+2. Geben Sie den neuen Namen (**username**) der Variable ein.
 
    Achten Sie auf das graue Feld, das die Variable umgibt und auf die Glühbirne, die am Rand angezeigt wird.
 
-1. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen**.
+3. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen**.
 
    ![Umbenennen einer Aktion in Visual Studio](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Benennen Sie zunächst die Variable `name` um:
 
    ![Animiertes GIF, das das Refactoring „Umbenennen“ in Visual Studio anzeigt](media/rename-refactoring.gif)
 
-1. Im Folgenden wird IntelliSense näher erläutert. Geben Sie **DateTime now = DateTime.** unterhalb der Zeile `Console.WriteLine($"\nHello {username}!");` ein.
+4. Im Folgenden wird IntelliSense näher erläutert. Geben Sie **DateTime now = DateTime.** unterhalb der Zeile `Console.WriteLine($"\nHello {username}!");` ein.
 
    Ein Feld zeigt die Members der Klasse <xref:System.DateTime> an. Darüber hinaus wird die Beschreibung des aktuell ausgewählten Members in einem separaten Feld angezeigt.
 
    ![Auflistung von Members durch IntelliSense in Visual Studio](media/intellisense-list-members.png)
 
-1. Wählen Sie den Member **Now** aus, bei dem es sich um eine Eigenschaft der Klasse handelt, indem Sie auf diesen doppelklicken oder die **TAB-Taste** drücken. Vervollständigen Sie die Codezeile, indem Sie ein Semikolon (**;**) hinzufügen.
+5. Wählen Sie den Member **Now** aus, bei dem es sich um eine Eigenschaft der Klasse handelt, indem Sie auf diesen doppelklicken oder die **TAB-Taste** drücken. Vervollständigen Sie die Codezeile, indem Sie ein Semikolon (**;**) hinzufügen.
 
-1. Geben Sie darunter folgende Codezeilen ein, oder kopieren Sie diese:
+6. Geben Sie darunter folgende Codezeilen ein, oder kopieren Sie diese:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Benennen Sie zunächst die Variable `name` um:
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> ist ein wenig anders als <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, denn es fügt nach dem Einfügen kein Zeilenabschlusszeichen hinzu. Das bedeutet, dass der nächste Textabschnitt, der an die Ausgabe gesendet wird, in der gleichen Zeile ausgegeben wird. Sie können auf jede dieser Methoden in Ihrem Code zeigen, um deren Beschreibung anzuzeigen.
 
-1. Anschließend wird erneut ein Refactoring durchgeführt, um den Code etwas präziser zu gestalten. Klicken Sie in der Zeile `DateTime now = DateTime.Now;` auf die Variable `now`.
+7. Anschließend wird erneut ein Refactoring durchgeführt, um den Code etwas präziser zu gestalten. Klicken Sie in der Zeile `DateTime now = DateTime.Now;` auf die Variable `now`.
 
    Beachten Sie, dass ein kleines Schraubendrehersymbol am Rand dieser Zeile angezeigt wird.
 
-1. Klicken Sie auf das Schraubendrehersymbol, um zu sehen, welche Vorschläge Visual Studio macht. In diesem Fall zeigt es das Refactoring [Inline temporär variabel](reference/inline-temporary-variable.md) an, um eine Codezeile zu entfernen, ohne das gesamte Verhalten zu ändern:
+8. Klicken Sie auf das Schraubendrehersymbol, um zu sehen, welche Vorschläge Visual Studio macht. In diesem Fall zeigt es das Refactoring [Inline temporär variabel](reference/inline-temporary-variable.md) an, um eine Codezeile zu entfernen, ohne das gesamte Verhalten zu ändern:
 
    ![Refactoring „Inline temporär variabel“ in Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-1. Klicken Sie auf **Inline temporär variabel**, um den Code umzugestalten.
+9. Klicken Sie auf **Inline temporär variabel**, um den Code umzugestalten.
 
-1. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
+10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
 
    ![Konsolenfenster mit Programmausgabe](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispi
 
 1. Klicken Sie auf der Menüleiste auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen.
 
-1. Ändern Sie auf der Optionsseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
+2. Ändern Sie auf der Optionsseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 

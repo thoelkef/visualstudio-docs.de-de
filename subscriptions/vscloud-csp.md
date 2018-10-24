@@ -9,12 +9,12 @@ description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899460"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -75,6 +75,7 @@ Wenn ein Abonnent sein Visual Studio-Abonnement nicht aktiviert hat, ist dies m�
 Melden Sie sich in [Partner Center](https://partnercenter.microsoft.com) an, um die Visual Studio-Preise für CSP-Partner anzuzeigen.  Klicken Sie im linken Navigationsbereich auf **Pricing and offers** (Preise und Angebote).  Wählen Sie die Preisdatei des aktuellen Monats unter **usage-based services** (Nutzungsbasierte Dienste) im oberen rechten Bereich aus. Sobald die Excel-Arbeitsmappe heruntergeladen wurde, wechseln Sie zum Blatt **Azure Price List** (Azure-Preisliste), und filtern Sie die Spalte **Meter Category** (Kategorie für Messung) nach **Visual Studio**.
 
 So sind die Inhalte der Arbeitsmappe zu interpretieren:
+
 | Kategorie für Messung    |   name                 |  Einheiten                                |           Beschreibung                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonnement                         | Monatliches Visual Studio Enterprise-Abonnement   |

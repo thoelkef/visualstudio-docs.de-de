@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906850"
 ---
 # <a name="code-snippets"></a>Codeausschnitte 
 
@@ -28,11 +28,11 @@ Es gibt verschiedene Möglichkeiten, Codeausschnitte hinzuzufügen, einige davon
 
 * **Toolbox**: Verwenden Sie das Pad „Toolbox“, um eine Liste aller Codeausschnitte anzuzeigen. Ziehen Sie eine beliebige Vorlage aus der Toolbox an die richtige Stelle im Quellcode:
 
- ![Codeausschnitte in der Toolbox](media/source-editor-image14.png)
+  ![Codeausschnitte in der Toolbox](media/source-editor-image14.png)
 
 * **Befehl „Vorlagen einfügen“**: Derzeit ist keine standardmäßige Tastenbindung festgelegt, um eine Vorlage einzufügen. Navigieren Sie zu **Visual Studio > Einstellungen > Tastenbindungen** und suchen Sie nach `template`, um eine Tastenbindung zu erstellen. Dadurch können Sie die gewünschte Tastenbindung in das Feld „Bindung bearbeiten“ hinzufügen und dann auf **Übernehmen** klicken:
 
- ![Befehl „Vorlagen einfügen“](media/source-editor-image15.png)
+  ![Befehl „Vorlagen einfügen“](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Erstellen einer neuen Vorlage
 

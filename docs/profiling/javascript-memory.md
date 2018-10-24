@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4c29855cb9a771660fa5070f6d34a4d10c557a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911316"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -101,31 +101,31 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Öffnen Sie die App in Visual Studio.  
+1. Öffnen Sie die App in Visual Studio.  
   
-2.  Ausführen der JavaScript-Speicheranalyse Weitere Informationen finden Sie unter [Ausführen der JavaScript-Speicheranalyse](#run-the-JavaScript-memory-analyzer).  
+2. Ausführen der JavaScript-Speicheranalyse Weitere Informationen finden Sie unter [Ausführen der JavaScript-Speicheranalyse](#run-the-JavaScript-memory-analyzer).  
   
-3.  Führen Sie Ihre App für das Szenario aus, das Sie testen möchten. Dies kann z. B. eine große DOM-Veränderung sein, wenn eine bestimmte Seite geladen oder die App gestartet wird.  
+3. Führen Sie Ihre App für das Szenario aus, das Sie testen möchten. Dies kann z. B. eine große DOM-Veränderung sein, wenn eine bestimmte Seite geladen oder die App gestartet wird.  
   
-4.  Wiederholen Sie das Szenario noch ein- bis viermal.  
+4. Wiederholen Sie das Szenario noch ein- bis viermal.  
   
-    > [!TIP]
-    >  Indem Sie das Testszenario mehrmals wiederholen, können Sie sicherstellen, dass die Initialisierungsarbeit aus den Ergebnissen herausgefiltert werden kann.  
+   > [!TIP]
+   >  Indem Sie das Testszenario mehrmals wiederholen, können Sie sicherstellen, dass die Initialisierungsarbeit aus den Ergebnissen herausgefiltert werden kann.  
   
-5.  Wechseln Sie zu Visual Studio (drücken Sie **ALT**+**TAB**).  
+5. Wechseln Sie zu Visual Studio (drücken Sie **ALT**+**TAB**).  
   
-6.  Nehmen Sie eine Momentaufnahme des Baselineheaps auf, indem Sie **Heap-Momentaufnahme erstellen**auswählen.  
+6. Nehmen Sie eine Momentaufnahme des Baselineheaps auf, indem Sie **Heap-Momentaufnahme erstellen**auswählen.  
   
-     In der folgenden Abbildung ist ein Beispiel für eine Momentaufnahme eines Baselineheaps dargestellt:  
+    In der folgenden Abbildung ist ein Beispiel für eine Momentaufnahme eines Baselineheaps dargestellt:  
   
-     ![Momentaufnahme eines Baselineheaps ](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Momentaufnahme eines Baselineheaps ](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Zur genaueren zeitlichen Steuerung bei Momentaufnahmen verwenden Sie den Befehl [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) im Code.  
+   > [!TIP]
+   >  Zur genaueren zeitlichen Steuerung bei Momentaufnahmen verwenden Sie den Befehl [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) im Code.  
   
-7.  Wechseln Sie zu Ihrer App, und wiederholen Sie das Szenario, das Sie testen (nur einmal).  
+7. Wechseln Sie zu Ihrer App, und wiederholen Sie das Szenario, das Sie testen (nur einmal).  
   
-8.  Wechseln Sie zu Visual Studio, und nehmen Sie eine zweite Momentaufnahme auf.  
+8. Wechseln Sie zu Visual Studio, und nehmen Sie eine zweite Momentaufnahme auf.  
   
 9. Wechseln Sie zu Ihrer App, und wiederholen Sie das Szenario, das Sie testen (nur einmal).  
   
@@ -139,11 +139,11 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 11. Wählen Sie in der dritten Momentaufnahme einen Link zu einer der Differenzansichten:  
   
-    -   Differenzielle Heapgröße (Link links unter der Heapgröße). Der Linktext gibt die Differenz zwischen der Heapgröße der aktuellen Momentaufnahme und der Heapgröße der vorherigen Momentaufnahme an.  
+    - Differenzielle Heapgröße (Link links unter der Heapgröße). Der Linktext gibt die Differenz zwischen der Heapgröße der aktuellen Momentaufnahme und der Heapgröße der vorherigen Momentaufnahme an.  
   
-    -   Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext gibt zwei Werte an (z. B. +1858/-1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
+    - Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext gibt zwei Werte an (z. B. +1858/-1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
   
-     Über diese Links wird eine Detailansicht der Differenzen zwischen den Momentaufnahmen für die Heaptypen geöffnet, die entweder nach beibehaltener Größe oder nach Objektanzahl sortiert ist, abhängig davon, auf welchen Link Sie geklickt haben.  
+      Über diese Links wird eine Detailansicht der Differenzen zwischen den Momentaufnahmen für die Heaptypen geöffnet, die entweder nach beibehaltener Größe oder nach Objektanzahl sortiert ist, abhängig davon, auf welchen Link Sie geklickt haben.  
   
 12. Wählen Sie eine der folgenden Filteroptionen für den **Bereich** , damit Sie Probleme bei der Speichernutzung einfacher finden können:  
   
@@ -212,29 +212,29 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  In der Ansicht der Momentaufnahmedetails können Sie Daten zur Speicherauslastung nach Typ, Stamm oder Dominator überprüfen, indem Sie eine Option aus der Symbolleiste auswählen:  
   
--   **Typen** Zeigt die Instanzenanzahl und die Gesamtgröße der Objekte im Heap, gruppiert nach Objekttyp. Standardmäßig werden diese nach Instanzenanzahl sortiert.  
+- **Typen** Zeigt die Instanzenanzahl und die Gesamtgröße der Objekte im Heap, gruppiert nach Objekttyp. Standardmäßig werden diese nach Instanzenanzahl sortiert.  
   
-    > [!TIP]
-    >  In der Regel sind die Differenzansichten der Typen im Objektheap am nützlichsten, um einen Speicherverlust zu identifizieren. Diese Ansichten verfügen über einen **Bereichsfilter** , mit dem übrig gebliebene Objekte ermittelt werden können.  
+  > [!TIP]
+  >  In der Regel sind die Differenzansichten der Typen im Objektheap am nützlichsten, um einen Speicherverlust zu identifizieren. Diese Ansichten verfügen über einen **Bereichsfilter** , mit dem übrig gebliebene Objekte ermittelt werden können.  
   
--   **Stammelemente**. Zeigt eine hierarchische Ansicht von Objekten von den Stammobjekten bis zu den untergeordneten Verweisen an. Standardmäßig werden die untergeordneten Knoten nach der Spalte "Beibehaltene Größe" sortiert, beginnend mit dem größten Knoten.  
+- **Stammelemente**. Zeigt eine hierarchische Ansicht von Objekten von den Stammobjekten bis zu den untergeordneten Verweisen an. Standardmäßig werden die untergeordneten Knoten nach der Spalte "Beibehaltene Größe" sortiert, beginnend mit dem größten Knoten.  
   
--   **Dominatoren** Zeigt eine Liste von Objekten im Heap an, die exklusive Verweise auf andere Objekte haben. Dominatoren werden nach beibehaltener Größe sortiert.  
+- **Dominatoren** Zeigt eine Liste von Objekten im Heap an, die exklusive Verweise auf andere Objekte haben. Dominatoren werden nach beibehaltener Größe sortiert.  
   
-    > [!TIP]
-    >  Wenn Sie einen Dominator aus dem Arbeitsspeicher entfernen, geben Sie den gesamten Speicherplatz frei, den das Objekt besetzt. Bei einigen Apps kann die Dominatorenansicht dabei helfen, die Größe von beibehaltenem Speicher zu ermitteln, da Sie hiermit die vollständige Objektbezugskette untersuchen können.  
+  > [!TIP]
+  >  Wenn Sie einen Dominator aus dem Arbeitsspeicher entfernen, geben Sie den gesamten Speicherplatz frei, den das Objekt besetzt. Bei einigen Apps kann die Dominatorenansicht dabei helfen, die Größe von beibehaltenem Speicher zu ermitteln, da Sie hiermit die vollständige Objektbezugskette untersuchen können.  
   
- Alle drei Ansichten zeigen ähnliche Werttypen an, darunter:  
+  Alle drei Ansichten zeigen ähnliche Werttypen an, darunter:  
   
--   **Bezeichner** Der Name, der das Objekt am besten identifiziert. Zum Beispiel zeigen bei HTML-Elementen die Momentaufnahmendetails den ID-Attributwert an, sofern einer verwendet wird.  
+- **Bezeichner** Der Name, der das Objekt am besten identifiziert. Zum Beispiel zeigen bei HTML-Elementen die Momentaufnahmendetails den ID-Attributwert an, sofern einer verwendet wird.  
   
--   **Typ**. Objekttyp (z. B. HTML-Linkelement oder div-Element).  
+- **Typ**. Objekttyp (z. B. HTML-Linkelement oder div-Element).  
   
--   **Größe** Größe des Objekts, ohne die Größe aller referenzierten Objekte.  
+- **Größe** Größe des Objekts, ohne die Größe aller referenzierten Objekte.  
   
--   **Beibehaltene Größe**. Objektgröße plus die Größe aller untergeordneten Objekte, die über keine weiteren übergeordneten Objekte verfügen. Aus praktischen Gründen handelt es sich bei dieser Summe um die Menge an Arbeitsspeicher, die vom Objekt beibehalten wird, sodass dieser Arbeitsspeicher wieder freigegeben wird, sobald Sie das Objekt löschen.  
+- **Beibehaltene Größe**. Objektgröße plus die Größe aller untergeordneten Objekte, die über keine weiteren übergeordneten Objekte verfügen. Aus praktischen Gründen handelt es sich bei dieser Summe um die Menge an Arbeitsspeicher, die vom Objekt beibehalten wird, sodass dieser Arbeitsspeicher wieder freigegeben wird, sobald Sie das Objekt löschen.  
   
--   **Anzahl** Zahl Objektinstanzen. Dieser Wert wird nur in der Typansicht angezeigt.  
+- **Anzahl** Zahl Objektinstanzen. Dieser Wert wird nur in der Typansicht angezeigt.  
   
 ## <a name="view-a-snapshot-diff"></a>Anzeigen eines Momentaufnahmevergleichs  
  In der JavaScript-Speicheranalyse können Sie in den Ansichten "Momentaufnahmevergleich" eine Momentaufnahme mit einer vorherigen vergleichen.  
@@ -249,22 +249,22 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Im Fenster mit der Momentaufnahmendifferenz werden Ansichten von Dominatoren, Typen und Stämme genau so dargestellt wie im Fenster [Anzeigen von Momentaufnahmedetails](#view-snapshot-details) . Die Ansicht "Momentaufnahmevergleich" zeigen die gleichen Informationen wie die Momentaufnahmedetails an, und zusätzlich folgende Werte:  
   
--   **Größenunterschied**. Der Unterschied zwischen der Größe des Objekts in der aktuellen Momentaufnahme und seiner Größe in der vorherigen Momentaufnahme, ohne die Größe aller referenzierten Objekte.  
+- **Größenunterschied**. Der Unterschied zwischen der Größe des Objekts in der aktuellen Momentaufnahme und seiner Größe in der vorherigen Momentaufnahme, ohne die Größe aller referenzierten Objekte.  
   
--   **Unterschied beibehaltene Größe**. Der Unterschied zwischen der beibehaltenen Größe des Objekts in der aktuellen Momentaufnahme und seiner beibehaltenen Größe in der vorherigen Momentaufnahme. Die beibehaltene Größe umfasst die Objektgröße sowie die Größe aller untergeordneten Objekte, die über keine anderen übergeordneten Objekte verfügen. Aus praktischen Gründen handelt es sich bei der beibehaltenen Größe um die Menge an Arbeitsspeicher, der vom Objekt beibehalten wird, sodass dieser Arbeitsspeicher wieder freigegeben wird, sobald Sie das Objekt löschen.  
+- **Unterschied beibehaltene Größe**. Der Unterschied zwischen der beibehaltenen Größe des Objekts in der aktuellen Momentaufnahme und seiner beibehaltenen Größe in der vorherigen Momentaufnahme. Die beibehaltene Größe umfasst die Objektgröße sowie die Größe aller untergeordneten Objekte, die über keine anderen übergeordneten Objekte verfügen. Aus praktischen Gründen handelt es sich bei der beibehaltenen Größe um die Menge an Arbeitsspeicher, der vom Objekt beibehalten wird, sodass dieser Arbeitsspeicher wieder freigegeben wird, sobald Sie das Objekt löschen.  
   
- Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.  
+  Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.  
   
--   **Übrige Objekte der Momentaufnahme #\<Zahl>**. Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
+- **Übrige Objekte der Momentaufnahme #\<Zahl>**. Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
   
-    > [!TIP]
-    >  Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#isolate-a-memory-leak)beschriebenen Schritte.  
+  > [!TIP]
+  >  Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#isolate-a-memory-leak)beschriebenen Schritte.  
   
--   **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.  
+- **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.  
   
--   **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
+- **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
- Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
+  Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
 > [!TIP]
 >  Es wird empfohlen, dass Sie die Schritte unter [Isolate a memory leak](#isolate-a-memory-leak) befolgen und dann anhand der übrigen Objekte, die mit dem **Bereichsfilter** herausgefiltert wurden, die Objekte ermitteln, die für den Speicherverlust verantwortlich sind.  
@@ -282,7 +282,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
  Jede Ansicht hat ihren eigenen Filter, sodass der Filter nicht beibehalten wird, wenn Sie zu einer anderen Ansicht wechseln.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Suchen eines Objekts in der Objektstruktur  
- In den Typen- und Dominatorenansichten wird die Beziehung eines bestimmten Objekts zum `Global` -Objekt sichtbar. Für Objekte, die mit dem `Global` -Objekt als Stamm verknüpft sind, wird keine Garbage Collection durchgeführt. Sie können ein bekanntes Objekt leicht in der Stammansicht finden, ohne die Objektstruktur `Global` zu durchsuchen. Öffnen Sie hierzu das Kontextmenü für ein Objekt in der Ansicht "Dominatoren" oder "Typen", und wählen Sie dann **In Stammansicht anzeigen**aus.  
+ In den Typen- und Dominatorenansichten wird die Beziehung eines bestimmten Objekts zum `Global`-Objekt sichtbar. Für Objekte, die mit dem `Global` -Objekt als Stamm verknüpft sind, wird keine Garbage Collection durchgeführt. Sie können ein bekanntes Objekt leicht in der Stammansicht finden, ohne die Objektstruktur `Global` zu durchsuchen. Öffnen Sie hierzu das Kontextmenü für ein Objekt in der Ansicht "Dominatoren" oder "Typen", und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
 ## <a name="view-shared-object-references"></a>Anzeigen von freigegebenen Objektverweisen  
  In den Typen- und Dominatorenansichten enthält der untere Bereich eine Objektverweisliste, in der die freigegebenen Verweise angezeigt werden. Wenn Sie ein Objekt im oberen Bereich auswählen, werden in der Objektverweisliste alle Objekte angezeigt, die auf dieses Objekt verweisen.  
@@ -315,11 +315,11 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 - Fügen Sie Speicheranalysebefehle zum Quellcode hinzu.  
   
- Sie können die folgenden Befehle im Quellcode verwenden:  
+  Sie können die folgenden Befehle im Quellcode verwenden:  
   
--   `console.takeHeapSnapshot` akzeptiert eine in der JavaScript-Arbeitsspeicheranalyse angezeigte Heapmomentaufnahme. Dieser Befehl ist einer der [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` akzeptiert eine in der JavaScript-Arbeitsspeicheranalyse angezeigte Heapmomentaufnahme. Dieser Befehl ist einer der [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` legt eine Benutzermarkierung fest (das umgekehrte Dreieck), die in der Zusammenfassungsansicht in der Zeitachse des Arbeitsspeicherdiagramms angezeigt wird, während die App ausgeführt wird. Dieser Befehl akzeptiert ein Zeichenfolgenargument, mit dem das Ereignis beschrieben und als QuickInfo im Arbeitsspeicherdiagramm angezeigt wird. Diese Beschreibung darf 100 Zeichen nicht übersteigen.  
+- `performance.mark` legt eine Benutzermarkierung fest (das umgekehrte Dreieck), die in der Zusammenfassungsansicht in der Zeitachse des Arbeitsspeicherdiagramms angezeigt wird, während die App ausgeführt wird. Dieser Befehl akzeptiert ein Zeichenfolgenargument, mit dem das Ereignis beschrieben und als QuickInfo im Arbeitsspeicherdiagramm angezeigt wird. Diese Beschreibung darf 100 Zeichen nicht übersteigen.  
   
 > [!TIP]
 >  Verwenden Sie `console.takeHeapSnapshot` , um die Analyse bei der Überprüfung von Speicherauslastungsszenarien zu beschleunigen.  

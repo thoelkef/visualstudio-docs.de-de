@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861578"
 ---
 # <a name="refactor-python-code"></a>Umgestalten von Python-Code
 
@@ -30,27 +30,27 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 ## <a name="rename"></a>Umbenennen
 
 1. Klicken Sie mit der rechten Maustaste auf den Bezeichner, den Sie umbenennen möchten, und wählen Sie **Umbenennen** aus. Alternativ dazu platzieren Sie den Textcursor in diesem Bezeichner und wählen den Menübefehl (**F2**) **Bearbeiten** > **Umgestalten** > **Umbenennen** aus.
-1. Geben Sie in dem **Umbenennen**-Dialogfeld, das geöffnet wird, den neuen Namen für den Bezeichner ein, und wählen Sie **OK**:
+2. Geben Sie in dem **Umbenennen**-Dialogfeld, das geöffnet wird, den neuen Namen für den Bezeichner ein, und wählen Sie **OK**:
 
-  ![Eingabe des neuen Bezeichnernamens](media/code-refactor-rename-1.png)
+   ![Eingabe des neuen Bezeichnernamens](media/code-refactor-rename-1.png)
 
-1. Wählen Sie im nächsten Dialogfeld die Dateien und Instanzen in Ihrem Code aus, auf die die Umbenennung angewendet werden soll. Wählen Sie eine beliebige einzelne Instanz aus, um eine Vorschau der Änderung anzuzeigen:
+3. Wählen Sie im nächsten Dialogfeld die Dateien und Instanzen in Ihrem Code aus, auf die die Umbenennung angewendet werden soll. Wählen Sie eine beliebige einzelne Instanz aus, um eine Vorschau der Änderung anzuzeigen:
 
-  ![Dialogfeld zum Auswählen der zu ändernden Elemente](media/code-refactor-rename-2.png)
+   ![Dialogfeld zum Auswählen der zu ändernden Elemente](media/code-refactor-rename-2.png)
 
-1. Wählen Sie **Anwenden** aus, um die Änderungen für Ihre Quellcodedateien zu übernehmen. (Diese Aktion kann rückgängig gemacht werden.)
+4. Wählen Sie **Anwenden** aus, um die Änderungen für Ihre Quellcodedateien zu übernehmen. (Diese Aktion kann rückgängig gemacht werden.)
 
 ## <a name="extract-method"></a>Methode extrahieren
 
 1. Wählen Sie die Codezeilen oder den Ausdruck aus, die in eine separate Methode extrahiert werden soll(en).
-1. Wählen Sie den Menübefehl **Bearbeiten** > **Umgestalten** > **Methode extrahieren** aus, oder drücken Sie die Tasten **STRG**+**R** > **M**.
-1. Geben Sie im angezeigten Dialogfeld einen neuen Methodennamen ein, geben Sie an, wo die Methode extrahiert werden soll, und wählen Sie Abschlussvariablen. Nicht zum Abschließen ausgewählte Variablen werden in Methodenargumente umgewandelt:
+2. Wählen Sie den Menübefehl **Bearbeiten** > **Umgestalten** > **Methode extrahieren** aus, oder drücken Sie die Tasten **STRG**+**R** > **M**.
+3. Geben Sie im angezeigten Dialogfeld einen neuen Methodennamen ein, geben Sie an, wo die Methode extrahiert werden soll, und wählen Sie Abschlussvariablen. Nicht zum Abschließen ausgewählte Variablen werden in Methodenargumente umgewandelt:
 
-  ![Dialogfeld „Methode extrahieren“](media/code-refactor-extract-method-1.png)
+   ![Dialogfeld „Methode extrahieren“](media/code-refactor-extract-method-1.png)
 
-1. Wählen Sie **OK** aus, und der Code wird entsprechend geändert:
+4. Wählen Sie **OK** aus, und der Code wird entsprechend geändert:
 
-  ![Auswirkungen des Befehls „Methode extrahieren“](media/code-refactor-extract-method-2.png)
+   ![Auswirkungen des Befehls „Methode extrahieren“](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Import hinzufügen
 

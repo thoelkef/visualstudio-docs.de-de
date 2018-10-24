@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885758"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -31,7 +31,7 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 Sie können fast jeden Vorgang in der Visual Studio-IDE als normaler Benutzer durchführen. Sie benötigen Administratorberechtigungen, um folgende Aufgaben durchzuführen:
 
 |Bereich|Aufgabe|Weitere Informationen|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../ide/install-and-manage-local-content.md)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|

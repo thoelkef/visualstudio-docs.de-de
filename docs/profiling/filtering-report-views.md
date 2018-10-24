@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919168"
 ---
 # <a name="filter-report-views"></a>Filtern von Berichtsansichten
 Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberichtansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken. Sie können einen Bericht auf die Daten zwischen Zeitstempelwerten einschränken, Sie können die Daten aber auch auf bestimmte Prozesse und Threads einschränken. Sie können Filter in einer Datei speichern und dann durch Importieren des gespeicherten Filters einen Filter für eine andere Profilerstellungs-Datendatei erstellen.  
@@ -36,7 +36,7 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 2.  Für jede Klausel, die Sie einem Filter hinzufügen möchten, wählen Sie Werte in den folgenden Feldern einer Zeile aus oder geben diese ein.  
   
-    |Feld|description|  
+    |Feld|Beschreibung |  
     |-----------|-----------------|  
     |**Und/Oder**|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
     |**Feld**|Wählen Sie das in der Filterklausel zu verwendende Berichtsfeld in der angezeigten Liste der Datenfelder aus.|  
@@ -46,19 +46,19 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>So erstellen Sie in der Ansicht für Markierungsberichte einen Profilerberichtsfilter  
   
-1.  Wählen Sie auf der Symbolleiste „Leistungsberichtansicht“ in der Liste **Aktuelle Ansicht** den Eintrag **Markierungen** aus.  
+1. Wählen Sie auf der Symbolleiste „Leistungsberichtansicht“ in der Liste **Aktuelle Ansicht** den Eintrag **Markierungen** aus.  
   
-     Der Profilerbericht Markierungen wird angezeigt.  
+    Der Profilerbericht Markierungen wird angezeigt.  
   
-2.  Wählen Sie das ETW- oder Samplingereignis aus, die Sie als Ausgangspunkt des Berichts verwenden möchten.  
+2. Wählen Sie das ETW- oder Samplingereignis aus, die Sie als Ausgangspunkt des Berichts verwenden möchten.  
   
-3.  Halten Sie STRG gedrückt, und klicken Sie auf das Ereignis, das Sie als Endpunkt des Berichts verwenden möchten.  
+3. Halten Sie STRG gedrückt, und klicken Sie auf das Ereignis, das Sie als Endpunkt des Berichts verwenden möchten.  
   
-4.  Klicken Sie mit der rechten Maustaste, und wählen Sie eine der folgenden Optionen aus:  
+4. Klicken Sie mit der rechten Maustaste, und wählen Sie eine der folgenden Optionen aus:  
   
-    -   Mit **Filter für Markierungen hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Markierung“ als Filterfeld verwendet wird.  
+   - Mit **Filter für Markierungen hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Markierung“ als Filterfeld verwendet wird.  
   
-    -   Mit **Filter für Timestamps hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Timestamp in Millisekunden“ als Filterfeld verwendet wird.  
+   - Mit **Filter für Timestamps hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Timestamp in Millisekunden“ als Filterfeld verwendet wird.  
   
      Mit den beiden Optionen filtern Sie die aktuelle Datendatei an den gleichen Ausgangs- und Endpunkten. Wenn Sie den Filter zur Verwendung in anderen Berichten exportieren, können sich beide Optionen besser eignen.  
   
