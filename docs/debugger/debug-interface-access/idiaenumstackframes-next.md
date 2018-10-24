@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumstackframes:: Next | Microsoft Docs'
+title: 'Idiaenumstackframes:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e84c31cb98cdbbe69e62aa1e572386100277a0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42d096ce41c5ff9f254e7f44d595159130e43548
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949850"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT Next(
  [in] Die Anzahl der StackFrame-Elemente im Enumerator abgerufen werden sollen.  
   
  rgelt  
- [out] Ein Array, das mit der angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
+ [out] Ein Array, das mit dem angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
   
  pceltFetched  
- [out] Gibt die Anzahl der Stapel Frameelemente in der abgerufenen Enumerator zurück.  
+ [out] Gibt die Anzahl der Stack-Rahmenelemente enthält in der abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn es keine weiteren Stapelrahmen sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` treten keine weiteren Stapelrahmen. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
