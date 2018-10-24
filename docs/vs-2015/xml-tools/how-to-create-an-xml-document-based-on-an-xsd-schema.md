@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884224"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Die **Beispiel-XML generieren** Funktion generiert eine XML-Beispieldatei, die b
   
  Diese Option kann für die folgenden Szenarien verwendet werden :  
   
--   Um die Verwendung verschiedener Konstrukte im Schema zu verstehen.  
+- Um die Verwendung verschiedener Konstrukte im Schema zu verstehen.  
   
--   Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.  
+- Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.  
   
- Die **Beispiel-XML generieren** Feature ist nur für globale Elemente verfügbar und erfordert ein gültiges XML-Schemaset.  
+  Die **Beispiel-XML generieren** Feature ist nur für globale Elemente verfügbar und erfordert ein gültiges XML-Schemaset.  
   
- Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch eines der folgenden Elemente enthält, ist das Beispiel möglicherweise nicht gültig:  
+  Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch eines der folgenden Elemente enthält, ist das Beispiel möglicherweise nicht gültig:  
   
--   Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`  
+- Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`  
   
--   `xs:pattern`-Facets  
+- `xs:pattern`-Facets  
   
--   Enumerationen des `xs:QName`-Typs  
+- Enumerationen des `xs:QName`-Typs  
   
--   `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen  
+- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen  
   
- Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.  
+  Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>So generieren Sie ein XML-Instanzdokument auf Grundlage der XSD-Datei  
   

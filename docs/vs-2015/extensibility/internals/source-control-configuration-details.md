@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884159"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgem
   
  Als Reaktion auf die `IVsQueryEditQuerySave2::QueryEditFiles` aufrufen, die Umgebung folgende Möglichkeiten:  
   
--   Ändern Sie den Aufruf zurückweisen, in diesem Fall den Editor oder Projekt (bereinigen) unverändert bleiben muss.  
+- Ändern Sie den Aufruf zurückweisen, in diesem Fall den Editor oder Projekt (bereinigen) unverändert bleiben muss.  
   
--   Geben Sie an, dass die Dokumentendaten erneut geladen werden soll. Für ein Projekt wird in die Umgebung die Daten für das Projekt neu geladen. Ein Editor muss erneut laden, die Daten vom Datenträger über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung. In beiden Fällen kann im Kontext des Projekts oder -Editor ändern, wenn die Daten erneut geladen werden.  
+- Geben Sie an, dass die Dokumentendaten erneut geladen werden soll. Für ein Projekt wird in die Umgebung die Daten für das Projekt neu geladen. Ein Editor muss erneut laden, die Daten vom Datenträger über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung. In beiden Fällen kann im Kontext des Projekts oder -Editor ändern, wenn die Daten erneut geladen werden.  
   
- Es ist eine komplex und schwierig Aufgabe geeignete überarbeiten `IVsQueryEditQuerySave2::QueryEditFiles` Anrufe an eine bereits vorhandene Codebasis. Daher sollte diese Aufrufe während der Erstellung des Projekts oder der-Editor integriert werden.  
+  Es ist eine komplex und schwierig Aufgabe geeignete überarbeiten `IVsQueryEditQuerySave2::QueryEditFiles` Anrufe an eine bereits vorhandene Codebasis. Daher sollte diese Aufrufe während der Erstellung des Projekts oder der-Editor integriert werden.  
   
 ## <a name="request-permission-to-save-a-file"></a>Berechtigung zum Speichern einer Datei  
  Bevor ein Projekt oder der Editor eine Datei gespeichert wird, muss er Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Für Projektdateien werden diese Aufrufe automatisch von der Lösung durchgeführt, die weiß, wann eine Projektdatei zu speichern. Editoren sind dafür verantwortlich, dass diese Aufrufe, es sei denn, die Implementierung von `IVsPersistDocData2` verwendet die Hilfsfunktion <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Wenn Ihr Editor implementiert `IVsPersistDocData2` in auf diese Weise, und klicken Sie dann auf den Aufruf von `IVsQueryEditQuerySave2::QuerySaveFile` oder `IVsQueryEditQuerySave2::QuerySaveFiles` für Sie vorgenommen wird.  

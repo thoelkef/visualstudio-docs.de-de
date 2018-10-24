@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883298"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
 
@@ -49,13 +49,13 @@ Um zu ermöglichen, größerer, komplexerer Workflows zu erstellen, kann .NET Fr
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Anzeigen einer Anmerkung im Designer einer Aktivität
 
-1.  Ein Aktivitäts-Designer mit einer Anmerkung, die außerhalb der Aktivität angezeigt, und klicken Sie auf die **Pin** Symbol im anmerkungsadorner.
+1. Ein Aktivitäts-Designer mit einer Anmerkung, die außerhalb der Aktivität angezeigt, und klicken Sie auf die **Pin** Symbol im anmerkungsadorner.
 
    Die Anmerkung wird im Aktivitäts Designer angezeigt. Im unten stehenden Screenshot wird eine Anmerkung für die Startaktivität im Workflow im Aktivitäts-Designer angezeigt.
 
    ![Im Aktivitäts-Designer angezeigte Anmerkung](../workflow-designer/media/annotationindesigner.png)
 
-1. Wenn die Anmerkung außerhalb der Aktivitäts Designer anzeigen möchten, zeigen Sie auf den anmerkungsbereich im Aktivitäts Designer, und klicken Sie auf die **Unpin** Symbol
+2. Wenn die Anmerkung außerhalb der Aktivitäts Designer anzeigen möchten, zeigen Sie auf den anmerkungsbereich im Aktivitäts Designer, und klicken Sie auf die **Unpin** Symbol
 
    ![Außerhalb einer Aktivitäts Designer angezeigte Anmerkung](../workflow-designer/media/annotationoutsidedesigner.png)
 
