@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852855"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
   
  Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer zum Rückgängigmachen oder Wiederholen aufruft, oder wenn eine Transaktion ein Rollback ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ist "true", die Set-Methode sollte Verhalten sich wie folgt:  
   
--   Es sollten keine Änderungen im Speicher, z. B. das Zuweisen von Werten zu einer anderen Domäneneigenschaften vornehmen. Der annullierungsmanager, werden ihre Werte festgelegt.  
+- Es sollten keine Änderungen im Speicher, z. B. das Zuweisen von Werten zu einer anderen Domäneneigenschaften vornehmen. Der annullierungsmanager, werden ihre Werte festgelegt.  
   
--   Sie sollten jedoch alle externen Ressourcen, z. B. Datenbank bzw. des Dateiinhalts oder Objekten außerhalb des Speichers aktualisieren. Dadurch wird sichergestellt, die sie in Synchronism mit den Werten im Speicher gehalten werden.  
+- Sie sollten jedoch alle externen Ressourcen, z. B. Datenbank bzw. des Dateiinhalts oder Objekten außerhalb des Speichers aktualisieren. Dadurch wird sichergestellt, die sie in Synchronism mit den Werten im Speicher gehalten werden.  
   
- Zum Beispiel:  
+  Zum Beispiel:  
   
 ```  
 void SetAgeValue(int value)  

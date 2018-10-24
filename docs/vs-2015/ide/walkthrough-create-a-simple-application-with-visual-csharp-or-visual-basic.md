@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851685"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 #### <a name="to-change-the-color-theme-of-the-ide"></a>Ändern des Farbschemas der IDE  
   
-1.  Öffnen Sie das Dialogfeld **Optionen** durch Auswählen des Menüs **Extras** am oberen Rand, und klicken Sie dann auf **Optionen...** .  
+1. Öffnen Sie das Dialogfeld **Optionen** durch Auswählen des Menüs **Extras** am oberen Rand, und klicken Sie dann auf **Optionen...** .  
   
-     ![Befehl „Optionen“ im Menü „Tools“](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
+    ![Befehl „Optionen“ im Menü „Tools“](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
   
-2.  Ändern Sie das **Farbschema** zu **Dunkel**, und klicken Sie anschließend auf **OK**.  
+2. Ändern Sie das **Farbschema** zu **Dunkel**, und klicken Sie anschließend auf **OK**.  
   
-     ![Dunkles Farbschema ausgewählt](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE-Darkthemeoptionsdlgbox")  
+    ![Dunkles Farbschema ausgewählt](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE-Darkthemeoptionsdlgbox")  
   
- Die Farben in Visual Studio sollten mit dem folgenden Bild übereinstimmen:  
+   Die Farben in Visual Studio sollten mit dem folgenden Bild übereinstimmen:  
   
- ![IDE mit dunklem Farbschema übernommen](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
+   ![IDE mit dunklem Farbschema übernommen](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
- Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
   
@@ -81,67 +81,67 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="to-create-the-wpf-project"></a>So erstellen Sie das WPF-Projekt  
   
-1.  Erstellen Sie ein neues Projekt. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1. Erstellen Sie ein neues Projekt. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-     ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-     Sie können auch **Neues Projekt** im Feld **Schnellstart** eingeben, um ein neues Projekt zu erstellen.  
+    Sie können auch **Neues Projekt** im Feld **Schnellstart** eingeben, um ein neues Projekt zu erstellen.  
   
-     ![Neues Projekt im Feld „Schnellstart“ eingeben](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
+    ![Neues Projekt im Feld „Schnellstart“ eingeben](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
   
-2.  Wählen Sie die Visual Basic- oder Visual C# WPF-Anwendungsvorlage, in dem Sie z. B. im linken Bereich **Installiert**, **Vorlagen**, **Visual C#**, **Windows**auswählen und dann im mittleren Bereich "WPF-Anwendung" auswählen.  Geben Sie dem Projekt am unteren Rand des Dialogfelds "Neues Projekt" den Namen "HelloWPFApp".  
+2. Wählen Sie die Visual Basic- oder Visual C# WPF-Anwendungsvorlage, in dem Sie z. B. im linken Bereich **Installiert**, **Vorlagen**, **Visual C#**, **Windows**auswählen und dann im mittleren Bereich "WPF-Anwendung" auswählen.  Geben Sie dem Projekt am unteren Rand des Dialogfelds "Neues Projekt" den Namen "HelloWPFApp".  
   
-     ![Visual Basic-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectvb.png "ExploreIDE-NewProjectVB")  
+    ![Visual Basic-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectvb.png "ExploreIDE-NewProjectVB")  
   
-     ODER  
+    ODER  
   
-     ![Visual C#-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
+    ![Visual C#-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
+   Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
- Abbildung 5: Projektelemente  
+   Abbildung 5: Projektelemente  
   
- ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+   ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern. Auf den Projekteigenschafts- und die Eigenschaftsseiten können Sie Optionen für Projekte und Projektmappen anzeigen und ändern.  
+   Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern. Auf den Projekteigenschafts- und die Eigenschaftsseiten können Sie Optionen für Projekte und Projektmappen anzeigen und ändern.  
   
 ##### <a name="to-change-the-name-of-mainwindowxaml"></a>Ändern des Namens der Datei "MainWindow.xaml"  
   
-1.  In der folgenden Prozedur geben Sie "MainWindow" einen genaueren Namen. Wählen Sie in **Projektmappen-Explorer**MainWindow.xaml aus. Es sollte das Fenster **Eigenschaften** angezeigt werden; wenn dies nicht der Fall ist, wählen Sie das Menü **Ansicht** und das **Eigenschaftenfenster** -Element aus. Ändern Sie die Eigenschaft **Dateiname** in `Greetings.xaml`  
+1. In der folgenden Prozedur geben Sie "MainWindow" einen genaueren Namen. Wählen Sie in **Projektmappen-Explorer**MainWindow.xaml aus. Es sollte das Fenster **Eigenschaften** angezeigt werden; wenn dies nicht der Fall ist, wählen Sie das Menü **Ansicht** und das **Eigenschaftenfenster** -Element aus. Ändern Sie die Eigenschaft **Dateiname** in `Greetings.xaml`  
   
-     ![Eigenschaftenfenster mit hervorgehobenem Dateinamen](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
+    ![Eigenschaftenfenster mit hervorgehobenem Dateinamen](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
   
-     Im**Projektmappen-Explorer** wird jetzt als Name der Datei "Greetings.xaml" angezeigt, und wenn Sie den Knoten "MainWindow.xaml" erweitern (durch Aktivieren des Knotens und Drücken des Rechtspfeils) sehen Sie, dass der Name der Datei "MainWindow.xaml.vb" bzw. "MainWindow.xaml.cs" jetzt "Greetings.xaml.vb" bzw. "Greetings.xaml.cs" ist. Diese Codedatei ist unter dem XAML-Datei-Knoten geschachtelt, um deren enge Verbindung miteinander darzustellen.  
+    Im**Projektmappen-Explorer** wird jetzt als Name der Datei "Greetings.xaml" angezeigt, und wenn Sie den Knoten "MainWindow.xaml" erweitern (durch Aktivieren des Knotens und Drücken des Rechtspfeils) sehen Sie, dass der Name der Datei "MainWindow.xaml.vb" bzw. "MainWindow.xaml.cs" jetzt "Greetings.xaml.vb" bzw. "Greetings.xaml.cs" ist. Diese Codedatei ist unter dem XAML-Datei-Knoten geschachtelt, um deren enge Verbindung miteinander darzustellen.  
   
-    > [!WARNING]
-    >  Diese Änderung verursacht einen Fehler. In einem späteren Schritt werden Sie lernen, wie dieser Fehler erkannt und korrigiert wird.  
+   > [!WARNING]
+   >  Diese Änderung verursacht einen Fehler. In einem späteren Schritt werden Sie lernen, wie dieser Fehler erkannt und korrigiert wird.  
   
-2.  Öffnen Sie im **Projektmappen-Explorer**die Datei "Greetings.xaml" in der Entwurfsansicht (durch Drücken der EINGABETASTE bei ausgewähltem Knoten), und wählen Sie die Titelleiste des Fensters mit der Maus aus.  
+2. Öffnen Sie im **Projektmappen-Explorer**die Datei "Greetings.xaml" in der Entwurfsansicht (durch Drücken der EINGABETASTE bei ausgewähltem Knoten), und wählen Sie die Titelleiste des Fensters mit der Maus aus.  
   
-3.  Ändern Sie im Fenster **Eigenschaften** den Wert der **Titel** -Eigenschaft in `Greetings`.  
+3. Ändern Sie im Fenster **Eigenschaften** den Wert der **Titel** -Eigenschaft in `Greetings`.  
   
- Die Titelleiste für MainWindow.xaml lautet jetzt Greetings.  
+   Die Titelleiste für MainWindow.xaml lautet jetzt Greetings.  
   
 ### <a name="design-the-user-interface-ui"></a>Entwerfen der Benutzeroberfläche (UI)  
  Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein TextBlock-Steuerelement, zwei RadioButton-Steuerelemente und ein Button-Steuerelement.  
   
 ##### <a name="to-add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements  
   
-1.  Öffnen Sie den **Werkzeugkasten** durch Auswählen des Menüs **Ansicht** und der Option **Werkzeugkasten** .  
+1. Öffnen Sie den **Werkzeugkasten** durch Auswählen des Menüs **Ansicht** und der Option **Werkzeugkasten** .  
   
-2.  Suchen Sie im **Werkzeugkasten**nach dem TextBlock-Steuerelement.  
+2. Suchen Sie im **Werkzeugkasten**nach dem TextBlock-Steuerelement.  
   
-     ![Toolbox mit hervorgehobenem TextBlock-Steuerelement](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE-TextBlockToolbox")  
+    ![Toolbox mit hervorgehobenem TextBlock-Steuerelement](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE-TextBlockToolbox")  
   
-3.  Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das TextBlock-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen.  Zentrieren Sie das Steuerelement im oberen Bereich des Fensters.  
+3. Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das TextBlock-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen.  Zentrieren Sie das Steuerelement im oberen Bereich des Fensters.  
   
- Das Fenster sollte der folgenden Abbildung entsprechen:  
+   Das Fenster sollte der folgenden Abbildung entsprechen:  
   
- Abbildung 7: Greetings-Fenster mit TextBlock-Steuerelement  
+   Abbildung 7: Greetings-Fenster mit TextBlock-Steuerelement  
   
- ![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
+   ![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
- Das XAML-Markup sollte in etwa der folgenden Darstellung entsprechen:  
+   Das XAML-Markup sollte in etwa der folgenden Darstellung entsprechen:  
   
 ```  
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
@@ -149,55 +149,55 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="to-customize-the-text-in-the-text-block"></a>Anpassen des Texts im Textblock  
   
-1.  Suchen Sie in der XAML-Ansicht das Markup für TextBlock, und ändern Sie das Textattribut: `Text=”Select a message option and then choose the Display button.”`  
+1. Suchen Sie in der XAML-Ansicht das Markup für TextBlock, und ändern Sie das Textattribut: `Text=”Select a message option and then choose the Display button.”`  
   
-2.  Wenn der Textblock nicht so erweitert wird, dass er in die Entwurfsansicht passt, vergrößern Sie das TextBlock-Steuerelement (mit den Handles an den Kanten), sodass es den gesamten Text anzeigt.  
+2. Wenn der Textblock nicht so erweitert wird, dass er in die Entwurfsansicht passt, vergrößern Sie das TextBlock-Steuerelement (mit den Handles an den Kanten), sodass es den gesamten Text anzeigt.  
   
-3.  Speichern Sie die Änderungen durch Drücken von STRG + S oder mithilfe des Menüelements **Datei** .  
+3. Speichern Sie die Änderungen durch Drücken von STRG + S oder mithilfe des Menüelements **Datei** .  
   
- Anschließend fügen Sie dem Formular zwei [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b)-Steuerelemente hinzu.  
+   Anschließend fügen Sie dem Formular zwei [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b)-Steuerelemente hinzu.  
   
 ##### <a name="to-add-radio-buttons"></a>Hinzufügen von Optionsfeldern  
   
-1.  Suchen Sie im **Werkzeugkasten**nach dem RadioButton-Steuerelement.  
+1. Suchen Sie im **Werkzeugkasten**nach dem RadioButton-Steuerelement.  
   
-     ![Toolboxfenster mit aktiviertem RadioButton-Steuerelement](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE-RadioButtonToolbox")  
+    ![Toolboxfenster mit aktiviertem RadioButton-Steuerelement](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE-RadioButtonToolbox")  
   
-2.  Fügen Sie der Entwurfsoberfläche zwei RadioButton-Steuerelemente hinzu, indem Sie das RadioButton-Element auswählen und es zweimal in das Fenster auf der Entwurfsoberfläche ziehen, und verschieben Sie die Schaltflächen (indem Sie sie auswählen und die Pfeiltasten drücken), damit die Schaltflächen unter dem TextBlock-Steuerelement nebeneinander angezeigt werden.  
+2. Fügen Sie der Entwurfsoberfläche zwei RadioButton-Steuerelemente hinzu, indem Sie das RadioButton-Element auswählen und es zweimal in das Fenster auf der Entwurfsoberfläche ziehen, und verschieben Sie die Schaltflächen (indem Sie sie auswählen und die Pfeiltasten drücken), damit die Schaltflächen unter dem TextBlock-Steuerelement nebeneinander angezeigt werden.  
   
-     Das Fenster sieht wie folgt aus:  
+    Das Fenster sieht wie folgt aus:  
   
-     Abbildung 8: RadioButtons im Greetings-Fenster.  
+    Abbildung 8: RadioButtons im Greetings-Fenster.  
   
-     ![Greetings-Formular mit Textblock und zwei RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
+    ![Greetings-Formular mit Textblock und zwei RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
-3.  Ändern Sie im Fenster **Eigenschaften** für das linke RadioButton-Steuerelement die Eigenschaft **Name** (die Eigenschaft oben im Fenster **Eigenschaften** ) in `RadioButton1`.  Stellen Sie sicher, dass Sie im Formular das Optionsfeld (RadioButton) und nicht das Hintergrundraster ausgewählt haben; im Feld "Typ" des Eigenschaftenfensters sollte unter dem Feld "Name" der Begriff "RadioButton" angezeigt werden.  
+3. Ändern Sie im Fenster **Eigenschaften** für das linke RadioButton-Steuerelement die Eigenschaft **Name** (die Eigenschaft oben im Fenster **Eigenschaften** ) in `RadioButton1`.  Stellen Sie sicher, dass Sie im Formular das Optionsfeld (RadioButton) und nicht das Hintergrundraster ausgewählt haben; im Feld "Typ" des Eigenschaftenfensters sollte unter dem Feld "Name" der Begriff "RadioButton" angezeigt werden.  
   
-4.  Ändern Sie im Fenster **Eigenschaften** des rechten RadioButton-Steuerelements die Eigenschaft **Name** in `RadioButton2`. Speichern Sie dann die Änderungen durch Drücken von STRG + S oder über das Menü **Datei** .  Stellen Sie sicher, dass Sie "RadioButton" ausgewählt haben, bevor Sie Änderungen vornehmen und speichern.  
+4. Ändern Sie im Fenster **Eigenschaften** des rechten RadioButton-Steuerelements die Eigenschaft **Name** in `RadioButton2`. Speichern Sie dann die Änderungen durch Drücken von STRG + S oder über das Menü **Datei** .  Stellen Sie sicher, dass Sie "RadioButton" ausgewählt haben, bevor Sie Änderungen vornehmen und speichern.  
   
- Sie können jetzt Anzeigetext für jedes RadioButton-Steuerelement hinzufügen. Die folgende Prozedur aktualisiert die Eigenschaft **Inhalt** für ein RadioButton-Steuerelement.  
+   Sie können jetzt Anzeigetext für jedes RadioButton-Steuerelement hinzufügen. Die folgende Prozedur aktualisiert die Eigenschaft **Inhalt** für ein RadioButton-Steuerelement.  
   
 ##### <a name="to-add-display-text-for-each-radio-button"></a>Hinzufügen von Anzeigetext für jedes Optionsfeld  
   
-1.  Öffnen Sie auf der Entwurfsoberfläche das Kontextmenü für RadioButton1, indem Sie mit der rechten Maustaste bei ausgewähltem "RadioButton1" klicken, wählen Sie **Text bearbeiten**, und geben Sie dann `Hello`ein.  
+1. Öffnen Sie auf der Entwurfsoberfläche das Kontextmenü für RadioButton1, indem Sie mit der rechten Maustaste bei ausgewähltem "RadioButton1" klicken, wählen Sie **Text bearbeiten**, und geben Sie dann `Hello`ein.  
   
-2.  Öffnen Sie das Kontextmenü für RadioButton2, indem Sie mit der rechten Maustaste bei ausgewähltem RadioButton2 klicken, wählen Sie **Text bearbeiten**, und geben Sie dann `Goodbye`ein.  
+2. Öffnen Sie das Kontextmenü für RadioButton2, indem Sie mit der rechten Maustaste bei ausgewähltem RadioButton2 klicken, wählen Sie **Text bearbeiten**, und geben Sie dann `Goodbye`ein.  
   
- Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098)-Steuerelement.  
+   Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098)-Steuerelement.  
   
 ##### <a name="to-add-the-button-control"></a>Hinzufügen eines Button-Steuerelements  
   
-1.  Suchen Sie im **Werkzeugkasten**nach dem **Button** -Steuerelement, und fügen Sie es auf der Entwurfsoberfläche unter den RadioButton-Steuerelementen ein, indem Sie "Button" auswählen und es in der Entwurfsansicht in das Formular ziehen.  
+1. Suchen Sie im **Werkzeugkasten**nach dem **Button** -Steuerelement, und fügen Sie es auf der Entwurfsoberfläche unter den RadioButton-Steuerelementen ein, indem Sie "Button" auswählen und es in der Entwurfsansicht in das Formular ziehen.  
   
-2.  Ändern Sie in der XAML-Ansicht den Wert von **Inhalt** für das Button-Steuerelement von `Content=”Button”` in `Content=”Display”`. Speichern Sie dann die Änderungen (STRG + S oder Menü **Datei** ).  
+2. Ändern Sie in der XAML-Ansicht den Wert von **Inhalt** für das Button-Steuerelement von `Content=”Button”` in `Content=”Display”`. Speichern Sie dann die Änderungen (STRG + S oder Menü **Datei** ).  
   
-     Das Markup sollte in etwa dem folgenden Beispiel entsprechen: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
+    Das Markup sollte in etwa dem folgenden Beispiel entsprechen: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
   
- Das Fenster sollte der folgenden Abbildung entsprechen.  
+   Das Fenster sollte der folgenden Abbildung entsprechen.  
   
- Abbildung 9: Abschließende Benutzeroberfläche von Greetings  
+   Abbildung 9: Abschließende Benutzeroberfläche von Greetings  
   
- ![Greetings-Formular mit Steuerelementbezeichnungen](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
+   ![Greetings-Formular mit Steuerelementbezeichnungen](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Hinzufügen von Code zur Anzeigeschaltfläche  
  Wenn die Anwendung ausgeführt wird, wird ein Meldungsfeld angezeigt, nachdem ein Benutzer zunächst ein Optionsfeld aktiviert und anschließend die Schaltfläche **Anzeigen** auswählt hat. Ein Meldungsfeld wird für die Begrüßung ("Hello") und ein anderes für die Verabschiedung ("Goodbye") angezeigt. Um dieses Verhalten zu erstellen, fügen Sie Code zum Button_Click-Ereignis in Greetings.xaml.vb oder in Greetings.xaml.cs hinzu.  
@@ -260,25 +260,25 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="to-start-debugging-and-find-the-error"></a>Starten des Debugging und Suchen des Fehlers  
   
-1.  Starten Sie den Debugger, indem Sie **Debuggen**, dann **Debugging starten**auswählen.  
+1. Starten Sie den Debugger, indem Sie **Debuggen**, dann **Debugging starten**auswählen.  
   
-     ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+    ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-     Ein Dialogfeld wird angezeigt, das angibt, dass ein IOException aufgetreten ist: Ressource "mainwindow.xaml" kann nicht gefunden werden.  
+    Ein Dialogfeld wird angezeigt, das angibt, dass ein IOException aufgetreten ist: Ressource "mainwindow.xaml" kann nicht gefunden werden.  
   
-2.  Wählen Sie die Schaltfläche **OK** aus, und beenden Sie anschließend den Debugger.  
+2. Wählen Sie die Schaltfläche **OK** aus, und beenden Sie anschließend den Debugger.  
   
-     ![Befehl „Debugging beenden“ im Menü „Debuggen“](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
+    ![Befehl „Debugging beenden“ im Menü „Debuggen“](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- Zu Beginn dieser exemplarischen Vorgehensweise haben wir "Mainwindow.xaml" in "Greetings.xaml" umbenannt. Da der Code jedoch weiterhin auf "Mainwindow.xaml" als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.  
+   Zu Beginn dieser exemplarischen Vorgehensweise haben wir "Mainwindow.xaml" in "Greetings.xaml" umbenannt. Da der Code jedoch weiterhin auf "Mainwindow.xaml" als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.  
   
 ##### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Angeben von Greetings.xaml als Start- URI  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**die Datei "App.xaml" (im C#-Projekt) oder die Datei "Application.xaml" (im Visual Basic-Projekt) in der XAML-Ansicht (sie kann nicht in der Entwurfsansicht geöffnet werden), indem Sie die Datei auswählen und die EINGABETASTE drücken oder indem Sie darauf doppelklicken.  
+1. Öffnen Sie im **Projektmappen-Explorer**die Datei "App.xaml" (im C#-Projekt) oder die Datei "Application.xaml" (im Visual Basic-Projekt) in der XAML-Ansicht (sie kann nicht in der Entwurfsansicht geöffnet werden), indem Sie die Datei auswählen und die EINGABETASTE drücken oder indem Sie darauf doppelklicken.  
   
-2.  Ändern Sie `StartupUri="MainWindow.xaml"` in `StartupUri="Greetings.xaml"`, und speichern Sie dann die Änderungen mit STRG + S.  
+2. Ändern Sie `StartupUri="MainWindow.xaml"` in `StartupUri="Greetings.xaml"`, und speichern Sie dann die Änderungen mit STRG + S.  
   
- Starten Sie den Debugger erneut (Taste F5). Sie sollten das Greetings-Fenster der Anwendung sehen.  
+   Starten Sie den Debugger erneut (Taste F5). Sie sollten das Greetings-Fenster der Anwendung sehen.  
   
 ### <a name="to-debug-with-breakpoints"></a>Debuggen mit Haltepunkten  
  Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debuggens testen. Sie können Haltepunkte hinzufügen, indem Sie im Hauptmenü **Debuggen** und dann **Haltepunkt umschalten** auswählen oder indem Sie am linken Rand des Editors neben der Codezeile klicken, in der die Unterbrechung stattfinden soll.  
@@ -322,19 +322,19 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Bereinigen der Projektmappendateien und Erstellen einer Releaseversion  
   
-1.  Wählen Sie im Hauptmenü **Erstellen**und dann **Projektmappe bereinigen** aus, um Zwischendateien und Ausgabedateien zu löschen, die bei vorherigen Durchläufen erstellt wurden.  Dies ist nicht erforderlich, bereinigt jedoch die Ausgaben des Builddebugvorgangs.  
+1. Wählen Sie im Hauptmenü **Erstellen**und dann **Projektmappe bereinigen** aus, um Zwischendateien und Ausgabedateien zu löschen, die bei vorherigen Durchläufen erstellt wurden.  Dies ist nicht erforderlich, bereinigt jedoch die Ausgaben des Builddebugvorgangs.  
   
-     ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  Ändern Sie die Build-Konfiguration für HelloWPFApp über das Dropdown-Steuerelement in der Symbolleiste (derzeit "Debug") von **Debug** in **Release** .  
+2. Ändern Sie die Build-Konfiguration für HelloWPFApp über das Dropdown-Steuerelement in der Symbolleiste (derzeit "Debug") von **Debug** in **Release** .  
   
-     ![Standardsymbolleiste mit ausgewähltem Release](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
+    ![Standardsymbolleiste mit ausgewähltem Release](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
   
-3.  Erstellen Sie die Projektmappe durch Auswahl von **Erstellen**und dann **Projektmappe erstellen** , oder drücken Sie die Taste F6.  
+3. Erstellen Sie die Projektmappe durch Auswahl von **Erstellen**und dann **Projektmappe erstellen** , oder drücken Sie die Taste F6.  
   
-     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Sie finden die EXE-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (…\HelloWPFApp\HelloWPFApp\bin\Release\\). Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio-Beispiele](../ide/visual-studio-samples.md).  
+   Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Sie finden die EXE-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (…\HelloWPFApp\HelloWPFApp\bin\Release\\). Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio-Beispiele](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Neues in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851594"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definieren eines Profils zum Erweitern von UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
  Sie können eigene Profile definieren, um UML an Ihren eigenen Geschäftsbereich oder Ihre Architektur anzupassen und bei Bedarf zu erweitern. Zum Beispiel:  
   
--   Wenn Sie häufig Websites definieren, können Sie ein eigenes Profil definieren, das ein Stereotyp "Webseite" bereitstellt, das in Klassendiagrammen auf Klassen angewendet werden kann. Sie können mithilfe von Klassendiagrammen dann eine Website planen. Jede "Webseite"-Klasse enthält zusätzliche Eigenschaften für Seiteninhalt, Format usw.  
+- Wenn Sie häufig Websites definieren, können Sie ein eigenes Profil definieren, das ein Stereotyp "Webseite" bereitstellt, das in Klassendiagrammen auf Klassen angewendet werden kann. Sie können mithilfe von Klassendiagrammen dann eine Website planen. Jede "Webseite"-Klasse enthält zusätzliche Eigenschaften für Seiteninhalt, Format usw.  
   
--   Wenn Sie Banksoftware entwickeln, können Sie ein Profil definieren, das ein "Konto"-Stereotyp bereitstellt. Sie können dann Klassendiagramme verwenden, um andere Kontotypen zu definieren und die Beziehungen zwischen ihnen anzuzeigen.  
+- Wenn Sie Banksoftware entwickeln, können Sie ein Profil definieren, das ein "Konto"-Stereotyp bereitstellt. Sie können dann Klassendiagramme verwenden, um andere Kontotypen zu definieren und die Beziehungen zwischen ihnen anzuzeigen.  
   
- Sie können eigene Profile an das Team verteilen. Jedes Teammitglied kann das Profil installieren. Auf diese Weise können die Teammitglieder Modelle bearbeiten und erstellen, die die Stereotype verwenden.  
+  Sie können eigene Profile an das Team verteilen. Jedes Teammitglied kann das Profil installieren. Auf diese Weise können die Teammitglieder Modelle bearbeiten und erstellen, die die Stereotype verwenden.  
   
 > [!NOTE]
 >  Wenn Sie die Stereotype eines Profils in einem Modell anwenden, das Sie bearbeiten, und das Modell dann für andere Personen freigeben, sollten diese Personen auf ihren Computern das gleiche Profil installieren. Andernfalls sind sie nicht in der Lage, die Stereotype anzuzeigen, die Sie verwendet haben.  
@@ -83,56 +83,56 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>So definieren Sie ein Profil in einer neuen Visual Studio-Erweiterung  
   
-1.  Erstellen Sie ein Visual Studio-Erweiterungsprojekt.  
+1. Erstellen Sie ein Visual Studio-Erweiterungsprojekt.  
   
-    > [!NOTE]
-    >  Um dieses Verfahren durchführen zu können, muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.  
+   > [!NOTE]
+   >  Um dieses Verfahren durchführen zu können, muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.  
   
-    1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+   1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-    2.  In der **neues Projekt** Dialogfeld **installierte Vorlagen**, erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann auf  **VSIX-Projekt**. Legen Sie den Namen des Projekts, und klicken Sie auf **OK**.  
+   2.  In der **neues Projekt** Dialogfeld **installierte Vorlagen**, erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann auf  **VSIX-Projekt**. Legen Sie den Namen des Projekts, und klicken Sie auf **OK**.  
   
-2.  Fügen Sie das Profil dem Projekt hinzu.  
+2. Fügen Sie das Profil dem Projekt hinzu.  
   
-    -   Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**. Suchen Sie im Dialogfeld nach der Profildatei.  
+   -   Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**. Suchen Sie im Dialogfeld nach der Profildatei.  
   
-3.  Legen Sie der Profildatei **in Ausgabeverzeichnis kopieren** Eigenschaft.  
+3. Legen Sie der Profildatei **in Ausgabeverzeichnis kopieren** Eigenschaft.  
   
-    1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in der Profildatei, und klicken Sie dann auf **Eigenschaften**.  
+   1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in der Profildatei, und klicken Sie dann auf **Eigenschaften**.  
   
-    2.  Legen Sie im Fenster Eigenschaften die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.  
+   2.  Legen Sie im Fenster Eigenschaften die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.  
   
-4.  Öffnen Sie im Projektmappen-Explorer die Erweiterung `source.extension.vsixmanifest`.  
+4. Öffnen Sie im Projektmappen-Explorer die Erweiterung `source.extension.vsixmanifest`.  
   
-     Die Datei wird im Erweiterungsmanifest-Editor geöffnet.  
+    Die Datei wird im Erweiterungsmanifest-Editor geöffnet.  
   
-5.  Auf der **Assets** Seite, fügen Sie eine Zeile, die das Profil beschreibt:  
+5. Auf der **Assets** Seite, fügen Sie eine Zeile, die das Profil beschreibt:  
   
-    -   Klicken Sie auf **neue**. Legen Sie die Felder in der **neue Anlage hinzufügen** Dialogfeld wie folgt.  
+   -   Klicken Sie auf **neue**. Legen Sie die Felder in der **neue Anlage hinzufügen** Dialogfeld wie folgt.  
   
-    -   Legen Sie **Typ** auf `Microsoft.VisualStudio.UmlProfile`  
+   -   Legen Sie **Typ** auf `Microsoft.VisualStudio.UmlProfile`  
   
-         Dies ist keine der Dropdown-Auswahlmöglichkeiten. Geben Sie diesen Namen über die Tastatur ein.  
+        Dies ist keine der Dropdown-Auswahlmöglichkeiten. Geben Sie diesen Namen über die Tastatur ein.  
   
-    -   Klicken Sie auf **Datei im Dateisystem** , und wählen Sie den Namen der Profildatei aus, z. B. `MyProfile.profile`  
+   -   Klicken Sie auf **Datei im Dateisystem** , und wählen Sie den Namen der Profildatei aus, z. B. `MyProfile.profile`  
   
-6.  Erstellen Sie das Projekt.  
+6. Erstellen Sie das Projekt.  
   
-7.  **So debuggen Sie das Profil**, drücken Sie F5.  
+7. **So debuggen Sie das Profil**, drücken Sie F5.  
   
-     Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen Sie in dieser Instanz ein Modellierungsprojekt. Wählen Sie im UML-Explorer das Stammelement des Modells und im Eigenschaftenfenster das Profil aus. Wählen Sie dann Elemente innerhalb der Modell- und Satzstereotypen aus, die Sie dafür definiert haben.  
+    Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen Sie in dieser Instanz ein Modellierungsprojekt. Wählen Sie im UML-Explorer das Stammelement des Modells und im Eigenschaftenfenster das Profil aus. Wählen Sie dann Elemente innerhalb der Modell- und Satzstereotypen aus, die Sie dafür definiert haben.  
   
-8.  **Extrahieren Sie VSIX für die Bereitstellung**  
+8. **Extrahieren Sie VSIX für die Bereitstellung**  
   
-    1.  Öffnen Sie im Windows-Explorer den Ordner **.\bin\Debug** oder **.\bin\Release** finden die **VSIX** Datei. Dies ist eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterungsdatei. Sie kann auf dem Computer installiert und an andere Visual Studio-Benutzer gesendet werden.  
+   1.  Öffnen Sie im Windows-Explorer den Ordner **.\bin\Debug** oder **.\bin\Release** finden die **VSIX** Datei. Dies ist eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterungsdatei. Sie kann auf dem Computer installiert und an andere Visual Studio-Benutzer gesendet werden.  
   
-    2.  So installieren Sie die Erweiterung:  
+   2.  So installieren Sie die Erweiterung:  
   
-        1.  Doppelklicken Sie auf die `.vsix`-Datei. Der Installer für Visual Studio-Erweiterungen wird gestartet.  
+       1.  Doppelklicken Sie auf die `.vsix`-Datei. Der Installer für Visual Studio-Erweiterungen wird gestartet.  
   
-        2.  Starten Sie alle Instanzen von Visual Studio neu, die ausgeführt werden.  
+       2.  Starten Sie alle Instanzen von Visual Studio neu, die ausgeführt werden.  
   
- Sie können das folgende alternative Verfahren für kleine Erweiterungen verwenden, falls Sie [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] nicht installiert haben.  
+   Sie können das folgende alternative Verfahren für kleine Erweiterungen verwenden, falls Sie [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] nicht installiert haben.  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>So definieren Sie eine Profilerweiterung ohne Visual Studio SDK  
   
@@ -348,24 +348,24 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
  Der folgende Fehler angezeigt wird, beim Öffnen eines UML-Modells: **VS1707: die folgenden Profile können nicht geladen werden, weil Fehler bei der Serialisierung: MyProfile.profile**  
  1.  Überprüfen Sie, ob die grundlegende XML-Syntax der PROFILE-Datei korrekt ist.  
   
-2.  Stellen Sie sicher, dass jeder Monikername das Format "/Profilname/Knotenname" besitzt. Der "Profilname" ist der Wert des name-Attributs im Stammprofilknoten. Der "Knotenname" ist der Wert des name-Attributs einer Metaklasse (metaclass), eines externen Typs (externalType) oder eines Enumerationstyps (enumerationType).  
+2. Stellen Sie sicher, dass jeder Monikername das Format "/Profilname/Knotenname" besitzt. Der "Profilname" ist der Wert des name-Attributs im Stammprofilknoten. Der "Knotenname" ist der Wert des name-Attributs einer Metaklasse (metaclass), eines externen Typs (externalType) oder eines Enumerationstyps (enumerationType).  
   
-3.  Sicherstellen, dass die Syntax ist, wie hier beschrieben und wie in _Laufwerk_**: \Programme\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. Sicherstellen, dass die Syntax ist, wie hier beschrieben und wie in _Laufwerk_**: \Programme\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  Deinstallieren Sie die fehlerhafte Erweiterung. Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.  
+4. Deinstallieren Sie die fehlerhafte Erweiterung. Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.  
   
-    -   Wenn die Erweiterung nicht angezeigt wird, gehen Sie wie im Folgenden beschrieben vor.  
+   -   Wenn die Erweiterung nicht angezeigt wird, gehen Sie wie im Folgenden beschrieben vor.  
   
-5.  Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
+5. Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
- Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, sie erneut zu installieren, wird die folgende Meldung angezeigt: **die Erweiterung bereits für alle entsprechenden Produkte installiert ist.**  
- 1.  Entfernen Sie die Erweiterungsdatei aus einem Unterordner des *LocalAppData*\Microsoft\VisualStudio\\[Version] \Extensions\  
+   Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, sie erneut zu installieren, wird die folgende Meldung angezeigt: **die Erweiterung bereits für alle entsprechenden Produkte installiert ist.**  
+   1.  Entfernen Sie die Erweiterungsdatei aus einem Unterordner des *LocalAppData*\Microsoft\VisualStudio\\[Version] \Extensions\  
   
-    -   Um finden Sie unter *LocalAppData*, müssen Sie versteckte Dateien und Ordner in der Registerkarte Ansicht der Optionen für die Windows-Explorer festlegen.  
+   -   Um finden Sie unter *LocalAppData*, müssen Sie versteckte Dateien und Ordner in der Registerkarte Ansicht der Optionen für die Windows-Explorer festlegen.  
   
-    -   *LocalAppData* umfasst i. d. r. C:\Users\\*Benutzername*\AppData\Local\  
+   -   *LocalAppData* umfasst i. d. r. C:\Users\\*Benutzername*\AppData\Local\  
   
-2.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
+6. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md)   

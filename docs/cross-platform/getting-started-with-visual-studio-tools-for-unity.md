@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855208"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 
@@ -47,7 +47,7 @@ Die Version von Visual Studio, die in der Installation von Unity enthalten ist, 
 
 Wenn Sie Visual Studio 2017 bereits installiert haben, oder Sie die manuelle Installation bevorzugen, führen Sie den Visual Studio-Installer aus.
 
-1. [Laden Sie den Visual Studio-Installer herunter](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio), oder öffnen Sie ihn, wenn er bereits installiert ist.
+1. [Laden Sie den Visual Studio-Installer herunter](/visualstudio/install/install-visual-studio), oder öffnen Sie ihn, wenn er bereits installiert ist.
 
 1. Klicken Sie für die gewünschte Version von Visual Studio auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
 
@@ -63,21 +63,21 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 1. Wählen Sie im Menü **Bearbeiten** die Option **Einstellungen...** aus.
 
-  ![Auswählen von Einstellungen](media/vstu_unity-preferences.png)
+   ![Auswählen von Einstellungen](media/vstu_unity-preferences.png)
 
-1. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
+2. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
 
-1. Wählen Sie in der Dropdownliste **Externer Skript-Editor** Ihre gewünschte Version von Visual Studio aus, falls diese aufgelistet ist, oder andernfalls **Durchsuchen...**
+3. Wählen Sie in der Dropdownliste **Externer Skript-Editor** Ihre gewünschte Version von Visual Studio aus, falls diese aufgelistet ist, oder andernfalls **Durchsuchen...**
 
-  ![Auswählen von Visual Studio](media/vstu_unity-external-tools.png)
+   ![Auswählen von Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen**.
+4. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen**.
 
-  ![Auswählen von „Öffnen“](media/vstu_browse-for-application.png)
+   ![Auswählen von „Öffnen“](media/vstu_browse-for-application.png)
 
-1. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
+5. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
 
-1. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
+6. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
 
 ## <a name="support-for-older-versions"></a>Unterstützung älterer Versionen
 

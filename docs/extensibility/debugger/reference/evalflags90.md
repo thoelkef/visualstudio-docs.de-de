@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
+title: EVALFLAGS90 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849424"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Listet die gültigen Werte für die Flags, die Auswertung von Ausdrücken zu steuern. Diese Enumeration erweitert die [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Enumeration.  
+Listet die gültigen Werte für die Flags, die Auswertung des Ausdrucks steuern. Diese Enumeration erweitert die [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -69,22 +69,22 @@ public enum enum_EVALFLAGS90
  Gibt an, dass der Rückgabewert, sofern vorhanden, ausgewertet werden.  
   
  EVAL90_NOSIDEEFFECTS  
- Gibt an, dass Nebeneffekte nicht zulässig.  
+ Gibt an, dass Nebenwirkungen nicht zugelassen werden.  
   
  EVAL90_ALLOWBPS  
- Gibt den Beenden an Haltepunkten an.  
+ Gibt die für Haltepunkte wird beendet.  
   
  EVAL90_ALLOWERRORREPORT  
- Gibt an, Fehlerberichte an den Host zugelassen werden. In erster Linie verwendet für die Auswertung von Ausdrücken im Skript in Internet Explorer.  
+ Gibt an, Fehlerberichte an den Host, zulässig sein soll. In erster Linie verwendet für die Auswertung des Ausdrucks im Skript in Internet Explorer.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- Erzwingt, dass Funktionen, die als Adressen, statt den Funktionsaufruf ausgewertet werden.  
+ Erzwingt, dass Funktionen wie Adressen, anstelle von Aufrufen der Funktion ausgewertet werden soll.  
   
  EVAL90_NOFUNCEVAL  
- Verhindern Sie, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, jedoch nicht als Wert richtig ausgewertet werden.  
+ Verhindert, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, aber nicht als Wert ordnungsgemäß ausgewertet werden.  
   
  EVAL90_NOEVENTS  
- Kennzeichen Sie, um anzugeben, dass Ereignisse während der Auswertung von Ausdrücken nicht zu der Sitzung Debug-Manager (SDM) oder der IDE gesendet werden sollen.  
+ Flag, um anzugeben, dass Ereignisse während der Auswertung des Ausdrucks nicht sitzungsbasierter Debug-Manager (SDM) oder die IDE gesendet werden sollen.  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
  Ermöglicht die ausdrucksauswertung zur Entwurfszeit.  
@@ -93,7 +93,7 @@ public enum enum_EVALFLAGS90
  Ermöglicht implizite Variable erstellen.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- Erzwingt die Auswertung sofort durchgeführt. Dies ist hilfreich, wenn eine Anforderung, z. B. eine benutzeranforderung Wartung.  
+ Erzwingt die Auswertung sofort durchgeführt. Dies ist nützlich, wenn eine Anforderung, z. B. eine benutzeranforderung zu verarbeiten.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Msdbg90.h  
