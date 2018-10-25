@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910692"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,28 +33,28 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
   
  Die folgenden Schritte bilden den grundlegenden Vorgang der Verwendung von Profilerstellungstools:  
   
-1.  Konfigurieren der Leistungssitzung durch Angabe der Auflistungsmethode und der Daten, die Sie sammeln möchten  
+1. Konfigurieren der Leistungssitzung durch Angabe der Auflistungsmethode und der Daten, die Sie sammeln möchten  
   
-2.  Erfassen von Profildaten durch Ausführen der Anwendung in der Leistungssitzung  
+2. Erfassen von Profildaten durch Ausführen der Anwendung in der Leistungssitzung  
   
-3.  Analysieren der Daten zur Ermittlung von Leistungsproblemen  
+3. Analysieren der Daten zur Ermittlung von Leistungsproblemen  
   
-4.  Ändern des Codes in die integrierte Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Erhöhung der Leistung des Anwendungscodes  
+4. Ändern des Codes in die integrierte Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Erhöhung der Leistung des Anwendungscodes  
   
-5.  Erfassen von Profilerstellungsdaten zum geänderten Code, und Vergleichen der Profilerstellungsdaten der ursprünglichen und geänderten Daten  
+5. Erfassen von Profilerstellungsdaten zum geänderten Code, und Vergleichen der Profilerstellungsdaten der ursprünglichen und geänderten Daten  
   
-6.  Erstellen eines Berichts, der die Leistungszunahme dokumentiert  
+6. Erstellen eines Berichts, der die Leistungszunahme dokumentiert  
   
- Um mit den Informationen zu arbeiten, die durch Profilerstellung bereitgestellt werden, sollten Sie Symbolinformationen für die Binärdateien, für die Sie ein Profil erstellen möchten, und für die Binärdateien der Windows-Betriebssysteme zur Verfügung haben.  
+   Um mit den Informationen zu arbeiten, die durch Profilerstellung bereitgestellt werden, sollten Sie Symbolinformationen für die Binärdateien, für die Sie ein Profil erstellen möchten, und für die Binärdateien der Windows-Betriebssysteme zur Verfügung haben.  
   
 ## <a name="configure-the-performance-session"></a>Konfigurieren der Leistungssitzung  
  Um eine Profilerstellungssitzung zu konfigurieren, wählen Sie die Profilerstellungsmethode aus, die Sie verwenden und die Daten, die Sie sammeln möchten. Die Profilerstellungstools **Leistungsassistent** können Sie durch die grundlegende Konfiguration führen, und Sie können Eigenschaftenseiten der Leistungssitzung verwenden, um weitere Optionen hinzuzufügen:  
   
--   Profilerstellungsmethoden enthalten Sampling, Verfolgung und Speicherreservierung.  
+- Profilerstellungsmethoden enthalten Sampling, Verfolgung und Speicherreservierung.  
   
--   Datenwerte umfassen Zeit, Prozessor, Betriebssystemleistungsindikatoren und Anwendungsereignisse wie z.B. Seitenfehler und Kernelübergänge.  
+- Datenwerte umfassen Zeit, Prozessor, Betriebssystemleistungsindikatoren und Anwendungsereignisse wie z.B. Seitenfehler und Kernelübergänge.  
   
- Sie können eine Leistungssitzung in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt als Teil der Projektlösung oder beliebige Binärdateien durch ein Profil der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE konfigurieren. Sie können auf den Eigenschaftenseiten der Leistungssitzung Sitzungseigenschaften angeben oder Sie können den Assistent der Profilerstellungstools verwenden.  
+  Sie können eine Leistungssitzung in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt als Teil der Projektlösung oder beliebige Binärdateien durch ein Profil der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE konfigurieren. Sie können auf den Eigenschaftenseiten der Leistungssitzung Sitzungseigenschaften angeben oder Sie können den Assistent der Profilerstellungstools verwenden.  
   
 ## <a name="collect-profiling-data"></a>Sammeln von Profilerstellungsdaten  
  Sie starten die Erfassung der Profilerstellungsdaten aus dem **Leistungs-Explorer**. Sie können die Profilerstellung anhalten und fortsetzen, um die Menge der Daten, die Sie erfassen, einzuschränken. Sie können auch einen Prozess anfügen, der bereits ausgeführt wird.  
@@ -66,11 +66,11 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analysieren der Daten zur Ermittlung von Leistungsproblemen  
  Wenn Sie eine Profilerstellung beenden, werden die Daten analysiert und in den Ansichtsfenstern **Leistungsbericht** der Profilerstellungstools wird eine Zusammenfassung angezeigt. Es werden Profilerstellungsdaten für die Aufrufliste und einzelne Funktionen der Anwendung gesammelt. Berichtansichten zeigen Leistungsanalysen für Datenbereiche der Prozesse, Threads, Module, Funktionen und Quellcodezeilen der Anwendung an. Profilerstellungsdatenwerte für eine Funktion enthalten:  
   
--   Die gesamte Zeit in der Funktion und in untergeordneten Funktionen, die von der Funktion (inklusive Werte) aufgerufen wurden  
+- Die gesamte Zeit in der Funktion und in untergeordneten Funktionen, die von der Funktion (inklusive Werte) aufgerufen wurden  
   
--   Die Zeit für die Ausführung des Codes in der Funktion (exklusive Werte)  
+- Die Zeit für die Ausführung des Codes in der Funktion (exklusive Werte)  
   
- Über zwölf verschiedene Ansichten ermöglichen Ihnen die Analyse der Profilerstellungsdaten auf möglichst effiziente Weise. Durch Ansichtsanpassungen können Sie die Daten filtern und sortieren, um die Funktionen zu suchen, die Leistungsprobleme verursachen könnten. Das Filtern des langsamsten Pfads markiert die aktivsten Pfade unmittelbar in der Aufrufstruktur und der Modulansicht.  
+  Über zwölf verschiedene Ansichten ermöglichen Ihnen die Analyse der Profilerstellungsdaten auf möglichst effiziente Weise. Durch Ansichtsanpassungen können Sie die Daten filtern und sortieren, um die Funktionen zu suchen, die Leistungsprobleme verursachen könnten. Das Filtern des langsamsten Pfads markiert die aktivsten Pfade unmittelbar in der Aufrufstruktur und der Modulansicht.  
   
 ## <a name="modify-the-application-code"></a>Ändern des Anwendungscodes  
  Nachdem Sie eines oder mehrere relevante Leistungsprobleme isoliert haben, können Sie den Code mit der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE ändern, und dann die Profilerstellungsdaten für Ihre Änderungen sammeln.  

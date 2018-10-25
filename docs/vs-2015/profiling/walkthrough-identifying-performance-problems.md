@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896138"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
--   Grundlegende Kenntnisse über C#.  
+- Grundlegende Kenntnisse über C#.  
   
--   Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md).  
+- Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  
+  Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Profilerstellung mithilfe der Samplingmethode  
  Das Sampling ist eine Methode der Profilerstellung, bei der der betreffende Prozess periodisch zum Bestimmen der aktiven Funktion überprüft wird. Die resultierenden Daten enthalten Angaben dazu, wie häufig die betreffende Funktion sich während des Samplings des Prozesses in der Aufrufliste ganz oben befunden hat.  
@@ -139,29 +139,29 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>So analysieren Sie die Ergebnisse der instrumentierten Profilerstellung  
   
-1.  Das Zeitachsendiagramm der Ansicht **Zusammenfassung** des Berichts enthält die CPU-Auslastung des Programms während der Profilerstellung. Bei dem Exportvorgang der Daten muss es sich um die große Spitze oder den Ausschlag rechts im Diagramm handeln. Die Leistungssitzung kann gefiltert werden, um nur die Daten anzuzeigen und zu analysieren, die im Rahmen des Exportvorgangs erfasst wurden. Klicken Sie im Diagramm auf eine Position links des Punkts, an dem der Exportvorgang der Daten beginnt. Klicken Sie auf eine Position rechts des Vorgangs. Klicken Sie anschließend rechts neben der Zeitachse in der Liste mit den Links auf **Nach Auswahl filtern**.  
+1. Das Zeitachsendiagramm der Ansicht **Zusammenfassung** des Berichts enthält die CPU-Auslastung des Programms während der Profilerstellung. Bei dem Exportvorgang der Daten muss es sich um die große Spitze oder den Ausschlag rechts im Diagramm handeln. Die Leistungssitzung kann gefiltert werden, um nur die Daten anzuzeigen und zu analysieren, die im Rahmen des Exportvorgangs erfasst wurden. Klicken Sie im Diagramm auf eine Position links des Punkts, an dem der Exportvorgang der Daten beginnt. Klicken Sie auf eine Position rechts des Vorgangs. Klicken Sie anschließend rechts neben der Zeitachse in der Liste mit den Links auf **Nach Auswahl filtern**.  
   
-     In der Struktur **Langsamster Pfad** wird ersichtlich, dass die <xref:System.String.Concat%2A>-Methode, die von der PeopleTrax.Form1.ExportData-Methode aufgerufen wird, sehr zeitaufwändig ist. Da sich **System.String.Concat** auch am Anfang der Liste **Funktionen mit den meisten einzelnen Aufgaben** befindet, stellt eine Verringerung der für die Funktion aufgewendeten Zeit mit großer Wahrscheinlichkeit eine Optimierung dar.  
+    In der Struktur **Langsamster Pfad** wird ersichtlich, dass die <xref:System.String.Concat%2A>-Methode, die von der PeopleTrax.Form1.ExportData-Methode aufgerufen wird, sehr zeitaufwändig ist. Da sich **System.String.Concat** auch am Anfang der Liste **Funktionen mit den meisten einzelnen Aufgaben** befindet, stellt eine Verringerung der für die Funktion aufgewendeten Zeit mit großer Wahrscheinlichkeit eine Optimierung dar.  
   
-2.  Doppelklicken Sie in einer der Zusammenfassungstabellen auf **System.String.Concat**, um in der Ansicht „Funktionsdetails“ weitere Informationen anzuzeigen.  
+2. Doppelklicken Sie in einer der Zusammenfassungstabellen auf **System.String.Concat**, um in der Ansicht „Funktionsdetails“ weitere Informationen anzuzeigen.  
   
-3.  Wie Sie sehen, ist "PeopleTrax.Form1.ExportData" die einzige Methode, von der "Concat" aufgerufen wird. Klicken Sie in der Liste **Aufrufende Funktionen** auf **PeopleTrax.Form1.ExportData**, um die Methode als Ziel der Ansicht „Funktionsdetails“ auszuwählen.  
+3. Wie Sie sehen, ist "PeopleTrax.Form1.ExportData" die einzige Methode, von der "Concat" aufgerufen wird. Klicken Sie in der Liste **Aufrufende Funktionen** auf **PeopleTrax.Form1.ExportData**, um die Methode als Ziel der Ansicht „Funktionsdetails“ auszuwählen.  
   
-4.  Untersuchen Sie die Methode im Fenster "Funktionscodeansicht". Beachten Sie, dass es keine literalen Aufrufe von **System.String.Concat** gibt. Stattdessen wird mehrmals der Operand „+=“ verwendet, der vom Compiler durch Aufrufe von **System.String.Concat** ersetzt wird. Änderungen an einer Zeichenfolge in .NET Framework führen dazu, dass eine neue Zeichenfolge zuordnet wird. .NET Framework enthält eine <xref:System.Text.StringBuilder>-Klasse, die für die Zeichenfolgenverkettung optimiert ist.  
+4. Untersuchen Sie die Methode im Fenster "Funktionscodeansicht". Beachten Sie, dass es keine literalen Aufrufe von **System.String.Concat** gibt. Stattdessen wird mehrmals der Operand „+=“ verwendet, der vom Compiler durch Aufrufe von **System.String.Concat** ersetzt wird. Änderungen an einer Zeichenfolge in .NET Framework führen dazu, dass eine neue Zeichenfolge zuordnet wird. .NET Framework enthält eine <xref:System.Text.StringBuilder>-Klasse, die für die Zeichenfolgenverkettung optimiert ist.  
   
-5.  Um diesen Problembereich durch optimierten Code zu ersetzen, fügen Sie dem Projekt PeopleTrax OPTIMIZED_EXPORTDATA als Symbol für die bedingte Kompilierung hinzu.  
+5. Um diesen Problembereich durch optimierten Code zu ersetzen, fügen Sie dem Projekt PeopleTrax OPTIMIZED_EXPORTDATA als Symbol für die bedingte Kompilierung hinzu.  
   
-6.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt „PeopleTrax“, und klicken Sie dann auf **Eigenschaften**.  
+6. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt „PeopleTrax“, und klicken Sie dann auf **Eigenschaften**.  
   
-     Das Eigenschaftenformular des Projekts PeopleTrax wird angezeigt.  
+    Das Eigenschaftenformular des Projekts PeopleTrax wird angezeigt.  
   
-7.  Klicken Sie auf die Registerkarte **Erstellen**.  
+7. Klicken Sie auf die Registerkarte **Erstellen**.  
   
-8.  Geben Sie im Textfeld **Symbole für bedingte Kompilierung** den Text **OPTIMIZED_EXPORTDATA** ein.  
+8. Geben Sie im Textfeld **Symbole für bedingte Kompilierung** den Text **OPTIMIZED_EXPORTDATA** ein.  
   
 9. Schließen Sie das Eigenschaftenformular des Projekts, und wählen Sie **Alle speichern** aus, wenn Sie dazu aufgefordert werden.  
   
- Wenn Sie die Anwendung erneut ausführen, stellen Sie bei der Leistung merkliche Verbesserungen fest. Es wird empfohlen, die Profilerstellungssitzung auch dann erneut auszuführen, wenn sich in der Leistung für den Benutzer erkennbare Verbesserungen eingestellt haben. Der erneute Review der Daten nach Behebung eines Problems ist überaus wichtig, da unter Umständen noch andere Probleme vorhanden sind, die aufgrund des ersten Problems nicht ersichtlich waren.  
+   Wenn Sie die Anwendung erneut ausführen, stellen Sie bei der Leistung merkliche Verbesserungen fest. Es wird empfohlen, die Profilerstellungssitzung auch dann erneut auszuführen, wenn sich in der Leistung für den Benutzer erkennbare Verbesserungen eingestellt haben. Der erneute Review der Daten nach Behebung eines Problems ist überaus wichtig, da unter Umständen noch andere Probleme vorhanden sind, die aufgrund des ersten Problems nicht ersichtlich waren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   

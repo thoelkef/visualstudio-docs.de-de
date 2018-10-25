@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Microsoft Docs
+title: SEEK_START | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55be60c35ea3af97cb9129670ef422d1a649fead
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a10d749022757860c6f7cc620091c2ac10623976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905213"
 ---
 # <a name="seekstart"></a>SEEK_START
-Gibt die Position, ab dem Suchvorgänge in einem Datenstrom Disassembly beginnen.  
+Gibt die Position, ab dem mit dem Sie suchen, die in einem Stream Disassembly.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,19 +50,19 @@ public enum enum_SEEK_START {
   
 ## <a name="members"></a>Member  
  SEEK_START_BEGIN  
- Das Element beginnt am Anfang des aktuellen Dokuments Suchvorgänge.  
+ Beginnt die Suche am Anfang des aktuellen Dokuments.  
   
  SEEK_START_END  
- Das Element beginnt am Ende des aktuellen Dokuments Suchvorgänge.  
+ Beginnt die Suche am Ende des aktuellen Dokuments.  
   
  SEEK_START_CURRENT  
- Das Element beginnt an der aktuellen Position des aktuellen Dokuments Suchvorgänge.  
+ Beginnt die Suche an der aktuellen Position des aktuellen Dokuments.  
   
  SEEK_START_CODECONTEXT  
- Startet die Suchvorgänge in den angegebenen Codekontext des aktuellen Dokuments.  
+ Startet die Suchvorgänge in den angegebenen Code-Kontext des aktuellen Dokuments.  
   
  SEEK_START_CODELOCID  
- Das Element beginnt am angegebenen Speicherortbezeichner Suchvorgänge. Durch Aufrufen von Code Position-Bezeichner erhalten [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Wird gestartet, an der angegebenen Code Standortbezeichner suchen. Speicherort der Codebezeichner erhalten Sie durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
 ## <a name="remarks"></a>Hinweise  
  Übergeben als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.  
@@ -76,5 +76,5 @@ public enum enum_SEEK_START {
   
 ## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [Suchen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

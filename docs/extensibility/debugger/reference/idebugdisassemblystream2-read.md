@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: IDebugDisassemblyStream2::Read | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9143abac4ce10a2b7305889e1d1a5236c1e9b07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5e59ea6c5ab01485b3c022f0504aeae55c3882a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902631"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Liest die Anweisungen, die von der aktuellen Position im Disassemblyfenster Datenstrom ab.  
+Liest die Anleitung beginnend mit der aktuellen Position im Stream Disassembly.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,26 +47,26 @@ int Read(
   
 #### <a name="parameters"></a>Parameter  
  `dwInstructions`  
- [in] Die Anzahl der Anweisungen, die disassembliert werden soll. Dieser Wert ist auch die maximale Länge von der `prgDisassembly` Array.  
+ [in] Die Anzahl der Anweisungen zum disassemblieren. Dieser Wert ist auch die maximale Länge von der `prgDisassembly` Array.  
   
  `dwFields`  
- [in] Eine Kombination aus Flags aus der [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Enumeration, die angeben, welche Felder der `prgDisassembly` sind ausgefüllt werden.  
+ [in] Eine Kombination von Flags aus der [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Enumeration, die angeben, welche Felder der `prgDisassembly` ausgefüllt werden müssen.  
   
  `pdwInstructionsRead`  
- [out] Gibt die Anzahl der Anweisungen tatsächlich disassembliert.  
+ [out] Gibt die Anzahl von Anweisungen, die tatsächlich disassembliert.  
   
  `prgDisassembly`  
- [out] Ein Array von [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen, die mit den disassemblierten Code, einer Struktur pro disassemblierten Anweisung ausgefüllt ist. Die Länge dieses Arrays wird vorgegeben, durch die `dwInstructions` Parameter.  
+ [out] Ein Array von [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen, die mit der disassemblierte Code, eine Struktur pro disassemblierten Anweisung gefüllt wird. Die Länge dieses Arrays hängt von der `dwInstructions` Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Die maximale Anzahl von Anweisungen, die im aktuellen Bereich verfügbar sind, erhalten Sie durch Aufrufen der [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) Methode.  
   
- Die aktuelle Position, in dem die nächste Anweisung wird aus der gelesen, kann geändert werden, durch Aufrufen der [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.  
+ Die aktuelle Position, in dem die nächste Anweisung wird aus der gelesen, kann geändert werden, durch den Aufruf der [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.  
   
- Die `DSF_OPERANDS_SYMBOLS` Flag hinzugefügt werden können die `DSF_OPERANDS` -flag in der `dwFields` Parameter, um anzugeben, dass Anweisungen Disassemblierung Symbolnamen verwendet werden soll.  
+ Die `DSF_OPERANDS_SYMBOLS` Flag hinzugefügt werden kann die `DSF_OPERANDS` -flag in der `dwFields` Parameter, um anzugeben, dass Symbolnamen dürfen bei der Disassemblierung Anweisungen verwendet werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

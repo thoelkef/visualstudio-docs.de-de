@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905310"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.
@@ -33,22 +33,22 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
  **Anforderungen**
 
--   .NET Framework 3.5, 4 oder 4.5
+- .NET Framework 3.5, 4 oder 4.5
 
--   Visual Studio Enterprise (nicht Professional oder Community Editions) auf einem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien
+- Visual Studio Enterprise (nicht Professional oder Community Editions) auf einem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien
 
-    > [!NOTE]
-    >  Achten Sie darauf, die Symboldateien (.pdb) zu speichern. Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Finden Sie unter [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
+  > [!NOTE]
+  >  Achten Sie darauf, die Symboldateien (.pdb) zu speichern. Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Finden Sie unter [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
- **FAQ**
+  **FAQ**
 
--   [Welche Apps arbeiten mit dem Collector?](#WhatApps)
+- [Welche Apps arbeiten mit dem Collector?](#WhatApps)
 
--   [Wie fange ich an?](#GetStarted)
+- [Wie fange ich an?](#GetStarted)
 
--   [Wie kann ich möglichst viele Daten abrufen, ohne die App zu verlangsamen?](#Minimizing)
+- [Wie kann ich möglichst viele Daten abrufen, ohne die App zu verlangsamen?](#Minimizing)
 
--   [Wo kann ich IntelliTrace-Daten außerdem abrufen?](#WhereElse)
+- [Wo kann ich IntelliTrace-Daten außerdem abrufen?](#WhereElse)
 
 ##  <a name="WhatApps"></a> Welche Apps arbeiten mit dem Collector?
 
@@ -78,40 +78,40 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installieren von Collector
 
-1.  Erstellen Sie auf dem Server der app, die Collector-Verzeichnis, z. B.: **C:\IntelliTraceCollector**
+1. Erstellen Sie auf dem Server der app, die Collector-Verzeichnis, z. B.: **C:\IntelliTraceCollector**
 
-2.  Finden Sie den Collector im Microsoft Download Center oder aus dem Installationsordner von Visual Studio 2013 Update 3. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
+2. Finden Sie den Collector im Microsoft Download Center oder aus dem Installationsordner von Visual Studio 2013 Update 3. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
-    -   **Microsoft Download Center**:
+   - **Microsoft Download Center**:
 
-        1.  Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
+     1. Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
 
-        2.  Speichern Sie IntelliTraceCollector.exe im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
+     2. Speichern Sie IntelliTraceCollector.exe im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
-        3.  Führen Sie die IntelliTraceCollector.exe aus. Dadurch wird die IntelliTraceCollection.cab-Datei extrahiert.
+     3. Führen Sie die IntelliTraceCollector.exe aus. Dadurch wird die IntelliTraceCollection.cab-Datei extrahiert.
 
-         \- oder –
+        \- oder –
 
-    -   **Visual Studio-Installationsordner**:
+   - **Visual Studio-Installationsordner**:
 
-        1.  Kopieren Sie die Datei "IntelliTraceCollection.cab" aus dem folgenden Ordner:
+     1.  Kopieren Sie die Datei "IntelliTraceCollection.cab" aus dem folgenden Ordner:
 
-             **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-        2.  Legen Sie IntelliTraceCollection.cab im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
+     2.  Legen Sie IntelliTraceCollection.cab im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
 
-3.  Erweitern Sie die Datei "IntelliTraceCollection.cab":
+3. Erweitern Sie die Datei "IntelliTraceCollection.cab":
 
-    1.  Öffnen Sie auf dem Server der app ein Eingabeaufforderungsfenster als Administrator aus.
+   1.  Öffnen Sie auf dem Server der app ein Eingabeaufforderungsfenster als Administrator aus.
 
-    2.  Wechseln Sie zum Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
+   2.  Wechseln Sie zum Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
-    3.  Verwenden Sie den Befehl **expand** , einschließlich des Punkts (**.**) am Ende, zum Erweitern der IntelliTraceCollection.cab-Datei:
+   3.  Verwenden Sie den Befehl **expand** , einschließlich des Punkts (**.**) am Ende, zum Erweitern der IntelliTraceCollection.cab-Datei:
 
-         `expand  /f:* IntelliTraceCollection.cab .`
+        `expand  /f:* IntelliTraceCollection.cab .`
 
-        > [!NOTE]
-        >  Durch den Punkt (**.**) werden die Unterordner mit den lokalisierten Auflistungsplänen beibehalten.
+       > [!NOTE]
+       >  Durch den Punkt (**.**) werden die Unterordner mit den lokalisierten Auflistungsplänen beibehalten.
 
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Berechtigungen für das Sammlungsverzeichnis
 
@@ -167,47 +167,47 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Berechtigungen für das ITRACE-Dateiverzeichnis einrichten
 
-1.  Erstellen Sie auf dem Server der app, die ITRACE-Dateiverzeichnis, z. B.: **C:\IntelliTraceLogFiles**
+1. Erstellen Sie auf dem Server der app, die ITRACE-Dateiverzeichnis, z. B.: **C:\IntelliTraceLogFiles**
 
-    > [!NOTE]
-    >  -   Um zu vermeiden, Verlangsamung der app, wählen Sie einen Speicherort auf einem lokalen Hochgeschwindigkeitsdatenträger, der nicht sehr aktiv ist.
-    > -   Die ITRACE-Dateien und die Collector-Dateien können am selben Speicherort abgelegt werden. Achten Sie aber bei einer Web App oder SharePoint-Anwendung darauf, dass der Speicherort außerhalb des Verzeichnisses liegt, indem die Anwendung gehostet wird.
+   > [!NOTE]
+   > - Um zu vermeiden, Verlangsamung der app, wählen Sie einen Speicherort auf einem lokalen Hochgeschwindigkeitsdatenträger, der nicht sehr aktiv ist.
+   >   -   Die ITRACE-Dateien und die Collector-Dateien können am selben Speicherort abgelegt werden. Achten Sie aber bei einer Web App oder SharePoint-Anwendung darauf, dass der Speicherort außerhalb des Verzeichnisses liegt, indem die Anwendung gehostet wird.
+   > 
+   > [!IMPORTANT]
+   > - Beschränken Sie den Zugriff auf das Verzeichnis der ITRACE-Datei auf die Identitäten, die den Collector für ihre Arbeit benötigen. Eine ITRACE-Datei kann möglicherweise vertrauliche Informationen enthalten, wie beispielsweise Daten von Benutzern, Datenbanken, anderen Quellspeicherorten und von den Verbindungszeichenfolgen, da IntelliTrace sowohl alle Daten, die an Methodenparameter übergeben werden, aufzeichnen kann, als auch als Rückgabewerte.
+   >   -   Stellen Sie sicher, dass die Personen, die ITRACE-Dateien öffnen können, über die Befugnis verfügen, vertraulichen Daten einzusehen. Seien Sie bei der Freigabe von ITRACE-Dateien vorsichtig. Wenn andere Personen Zugriff benötigen, kopieren Sie die Dateien an einen sicheren freigegebenen Speicherort.
 
-    > [!IMPORTANT]
-    >  -   Beschränken Sie den Zugriff auf das Verzeichnis der ITRACE-Datei auf die Identitäten, die den Collector für ihre Arbeit benötigen. Eine ITRACE-Datei kann möglicherweise vertrauliche Informationen enthalten, wie beispielsweise Daten von Benutzern, Datenbanken, anderen Quellspeicherorten und von den Verbindungszeichenfolgen, da IntelliTrace sowohl alle Daten, die an Methodenparameter übergeben werden, aufzeichnen kann, als auch als Rückgabewerte.
-    > -   Stellen Sie sicher, dass die Personen, die ITRACE-Dateien öffnen können, über die Befugnis verfügen, vertraulichen Daten einzusehen. Seien Sie bei der Freigabe von ITRACE-Dateien vorsichtig. Wenn andere Personen Zugriff benötigen, kopieren Sie die Dateien an einen sicheren freigegebenen Speicherort.
+2. Für eine Web App oder SharePoint-Anwendung geben Sie dem Anwendungspool vollständige Berechtigungen zum ITRACE-Dateiverzeichnis. Sie können den Windows-Befehl **icacls** oder den Windows-Explorer (bzw. den Datei-Explorer) verwenden.
 
-2.  Für eine Web App oder SharePoint-Anwendung geben Sie dem Anwendungspool vollständige Berechtigungen zum ITRACE-Dateiverzeichnis. Sie können den Windows-Befehl **icacls** oder den Windows-Explorer (bzw. den Datei-Explorer) verwenden.
+    Zum Beispiel:
 
-     Zum Beispiel:
+   - So legen Sie Berechtigungen mit dem Windows-Befehl **icacls** fest:
 
-    -   So legen Sie Berechtigungen mit dem Windows-Befehl **icacls** fest:
+     - Für eine Web App im **DefaultAppPool** -Anwendungspool:
 
-        -   Für eine Web App im **DefaultAppPool** -Anwendungspool:
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
+     - Für eine SharePoint-Anwendung im **SharePoint - 80** -Anwendungspool:
 
-        -   Für eine SharePoint-Anwendung im **SharePoint - 80** -Anwendungspool:
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
+       - oder - 
 
-         - oder - 
+   - So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:
 
-    -   So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:
+     1.  Öffnen Sie die **Eigenschaften** für das ITRACE-Dateiverzeichnis.
 
-        1.  Öffnen Sie die **Eigenschaften** für das ITRACE-Dateiverzeichnis.
+     2.  Wählen Sie auf der Registerkarte **Sicherheit** die Option **Bearbeiten**, **Hinzufügen**aus.
 
-        2.  Wählen Sie auf der Registerkarte **Sicherheit** die Option **Bearbeiten**, **Hinzufügen**aus.
+     3.  Stellen Sie sicher, dass im Feld **Diesen Objekttyp auswählen** die Option **Integrierte Sicherheitsprinzipale** angezeigt wird. Wenn sie nicht vorhanden ist, wählen **Objekttypen** hinzugefügt.
 
-        3.  Stellen Sie sicher, dass im Feld **Diesen Objekttyp auswählen** die Option **Integrierte Sicherheitsprinzipale** angezeigt wird. Wenn sie nicht vorhanden ist, wählen **Objekttypen** hinzugefügt.
+     4.  Versichern Sie sich, dass der lokale Computer im Feld **Aus diesem Speicherort** angezeigt wird. Wenn sie nicht vorhanden ist, wählen **Speicherorte** , ihn zu ändern.
 
-        4.  Versichern Sie sich, dass der lokale Computer im Feld **Aus diesem Speicherort** angezeigt wird. Wenn sie nicht vorhanden ist, wählen **Speicherorte** , ihn zu ändern.
+     5.  Fügen Sie im Feld **Geben Sie die Namen der auszuwählenden Objekte ein** den Anwendungspool für die Web App oder die SharePoint-Anwendung hinzu.
 
-        5.  Fügen Sie im Feld **Geben Sie die Namen der auszuwählenden Objekte ein** den Anwendungspool für die Web App oder die SharePoint-Anwendung hinzu.
+     6.  Wählen Sie **Namen überprüfen** aus, um den Namen aufzulösen. Klicken Sie auf **OK**.
 
-        6.  Wählen Sie **Namen überprüfen** aus, um den Namen aufzulösen. Klicken Sie auf **OK**.
-
-        7.  Stellen Sie sicher, dass der Anwendungspool über **Vollzugriff**verfügt.
+     7.  Stellen Sie sicher, dass der Anwendungspool über **Vollzugriff**verfügt.
 
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Daten von einer Webapp oder SharePoint-Anwendung sammeln
 
@@ -291,98 +291,95 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
  Es gibt folgende Möglichkeiten, möglichst viele Daten abzurufen, ohne die App zu verlangsamen:
 
--   Führen Sie den Collector nur, wenn Sie denken, dass ein Problem auftritt oder wenn Sie das Problem reproduzieren können.
+- Führen Sie den Collector nur, wenn Sie denken, dass ein Problem auftritt oder wenn Sie das Problem reproduzieren können.
 
-     Starten Sie die Sammlung, reproduzieren Sie das Problem, und beenden Sie dann Sammlung. Öffnen Sie die ITRACE-Datei in Visual Studio Enterprise, und überprüfen Sie die Daten. Siehe [Öffnen der ITRACE-Datei in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
+   Starten Sie die Sammlung, reproduzieren Sie das Problem, und beenden Sie dann Sammlung. Öffnen Sie die ITRACE-Datei in Visual Studio Enterprise, und überprüfen Sie die Daten. Siehe [Öffnen der ITRACE-Datei in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
 
--   Für Web Apps und für SharePoint-Anwendungen zeichnet der Collector Daten für alle Anwendungen auf, die den angegebenen Anwendungspool gemeinsam verwenden. Dies verlangsamt möglicherweise die Leistung jeder App, die den gleichen Anwendungspool verwendet, obwohl Sie nur Module für eine einzelne App in einem Sammlungsplan angeben können.
+- Für Web Apps und für SharePoint-Anwendungen zeichnet der Collector Daten für alle Anwendungen auf, die den angegebenen Anwendungspool gemeinsam verwenden. Dies verlangsamt möglicherweise die Leistung jeder App, die den gleichen Anwendungspool verwendet, obwohl Sie nur Module für eine einzelne App in einem Sammlungsplan angeben können.
 
-     Um zu verhindern, dass der Collector andere Apps verlangsamt, hosten Sie jede App in ihrem eigenen Anwendungspool.
+   Um zu verhindern, dass der Collector andere Apps verlangsamt, hosten Sie jede App in ihrem eigenen Anwendungspool.
 
--   Überprüfen Sie die Ereignisse im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nicht relevante Ereignisse zu deaktivieren.
+- Überprüfen Sie die Ereignisse im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nicht relevante Ereignisse zu deaktivieren.
 
-     Um ein Ereignis zu deaktivieren, legen Sie das `enabled` -Attribut für das `<DiagnosticEventSpecification>` -Element auf `false`fest:
+   Um ein Ereignis zu deaktivieren, legen Sie das `enabled` -Attribut für das `<DiagnosticEventSpecification>` -Element auf `false`fest:
 
-     `<DiagnosticEventSpecification enabled="false">`
+   `<DiagnosticEventSpecification enabled="false">`
 
-     Wenn das `enabled` -Attribut nicht vorhanden ist, wird das Ereignis aktiviert.
+   Wenn das `enabled` -Attribut nicht vorhanden ist, wird das Ereignis aktiviert.
 
-     *Wie wird dadurch die Leistung verbessert?*
+   *Wie wird dadurch die Leistung verbessert?*
 
-    -   Sie können die Startzeit reduzieren, indem Sie Ereignisse deaktivieren, die für die App nicht relevant sind. Deaktivieren Sie beispielsweise Windows Workflow-Ereignisse für Apps, die Windows Workflow nicht verwenden.
+  -   Sie können die Startzeit reduzieren, indem Sie Ereignisse deaktivieren, die für die App nicht relevant sind. Deaktivieren Sie beispielsweise Windows Workflow-Ereignisse für Apps, die Windows Workflow nicht verwenden.
 
-    -   Sie können die Start- und Laufzeitleistung verbessern, indem Sie Registrierungsereignisse für Apps deaktivieren, die auf die Registrierung zugreifen, aber keine Probleme mit Registrierungseinstellungen anzeigen.
+  -   Sie können die Start- und Laufzeitleistung verbessern, indem Sie Registrierungsereignisse für Apps deaktivieren, die auf die Registrierung zugreifen, aber keine Probleme mit Registrierungseinstellungen anzeigen.
 
--   Überprüfen Sie die Module im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nur für Sie interessante Module einzuschließen:
+- Überprüfen Sie die Module im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nur für Sie interessante Module einzuschließen:
 
-    1.  Öffnen Sie den Sammlungsplan. Suchen Sie das `<ModuleList>` -Element.
+  1. Öffnen Sie den Sammlungsplan. Suchen Sie das `<ModuleList>` -Element.
 
-    2.  Legen Sie in `<ModuleList>`das `isExclusionList` -Attribut auf `false`fest.
+  2. Legen Sie in `<ModuleList>`das `isExclusionList` -Attribut auf `false`fest.
 
-    3.  Verwenden Sie das `<Name>`-Element, um jedes Modul mit einer der folgenden Informationen anzugeben: Dateiname, Zeichenfolgenwert, um jedes Modul einzuschließen, das diese Zeichenfolge enthält, oder öffentlicher Schlüssel.
+  3. Verwenden Sie das `<Name>`-Element, um jedes Modul mit einer der folgenden Informationen anzugeben: Dateiname, Zeichenfolgenwert, um jedes Modul einzuschließen, das diese Zeichenfolge enthält, oder öffentlicher Schlüssel.
 
      Um beispielsweise nur Daten aus dem Haupt-Webmodul der Fabrikam Fiber-Webanwendung zu sammeln, erstellen Sie eine Liste wie diese:
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>FabrikamFiber.Web.dll</Name>
-    </ModuleList>
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>FabrikamFiber.Web.dll</Name>
+  </ModuleList>
+  ```
 
-    ```
+   Um Daten aus jedem Modul zu sammeln, dessen Name "Fabrikam" enthält, erstellen Sie eine Liste wie diese:
 
-     Um Daten aus jedem Modul zu sammeln, dessen Name "Fabrikam" enthält, erstellen Sie eine Liste wie diese:
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>Fabrikam</Name>
+  </ModuleList>
+  ```
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>Fabrikam</Name>
-    </ModuleList>
+   Um Daten aus Modulen zu sammeln, indem Sie deren öffentliche Schlüsseltoken angeben, erstellen Sie eine Liste wie diese:
 
-    ```
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>PublicKeyToken:B77A5C561934E089</Name>
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>
+  </ModuleList>
+  ```
 
-     Um Daten aus Modulen zu sammeln, indem Sie deren öffentliche Schlüsseltoken angeben, erstellen Sie eine Liste wie diese:
+   *Wie wird dadurch die Leistung verbessert?*
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>PublicKeyToken:B77A5C561934E089</Name>
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>
-    </ModuleList>
+   Dadurch wird die Menge der Methodenaufrufinformationen und anderer Instrumentationsdaten reduziert, die IntelliTrace sammelt, wenn die Anwendung gestartet und ausgeführt wird. Diese Daten bieten folgende Möglichkeiten:
 
-    ```
+  - Durchlaufen von Code nach dem Sammeln der Daten.
 
-     *Wie wird dadurch die Leistung verbessert?*
+  - Überprüfen von Werten, die an Funktionsaufrufe übergeben und von diesen zurückgegeben wurden.
 
-     Dadurch wird die Menge der Methodenaufrufinformationen und anderer Instrumentationsdaten reduziert, die IntelliTrace sammelt, wenn die Anwendung gestartet und ausgeführt wird. Diese Daten bieten folgende Möglichkeiten:
+    *Warum sollten Module nicht stattdessen ausgeschlossen werden?*
 
-    -   Durchlaufen von Code nach dem Sammeln der Daten.
+    Standardmäßig schließen Sammlungspläne Module aus, indem das `isExclusionList` -Attribut auf `true`festgelegt wird. Das Ausschließen von Modulen kann jedoch dazu führen, dass Daten aus Modulen gesammelt werden, die die Kriterien in der Liste nicht erfüllen und für Sie nicht relevant sind, wie etwa Drittanbieter- oder Quellenmodule.
 
-    -   Überprüfen von Werten, die an Funktionsaufrufe übergeben und von diesen zurückgegeben wurden.
+- *Gibt es dabei Daten, die von IntelliTrace nicht gesammelt werden?*
 
-     *Warum sollten Module nicht stattdessen ausgeschlossen werden?*
+   Ja. Um Leistungseinbußen zu reduzieren, beschränkt IntelliTrace die Datensammlung auf die Werte primitiver Datentypen, die an Methoden übergeben und von ihnen zurückgegebenen werden, und auf Werte primitiver Datentypen in Feldern von Objekten der obersten Ebene, die an Methoden übergeben und von ihnen zurückgegeben werden.
 
-     Standardmäßig schließen Sammlungspläne Module aus, indem das `isExclusionList` -Attribut auf `true`festgelegt wird. Das Ausschließen von Modulen kann jedoch dazu führen, dass Daten aus Modulen gesammelt werden, die die Kriterien in der Liste nicht erfüllen und für Sie nicht relevant sind, wie etwa Drittanbieter- oder Quellenmodule.
+   Angenommen, Sie verfügen über eine `AlterEmployee`-Methodensignatur, die eine Ganzzahl-`id` und ein `Employee`-Objekt `oldemployee` akzeptiert:
 
--   *Gibt es dabei Daten, die von IntelliTrace nicht gesammelt werden?*
+   `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-     Ja. Um Leistungseinbußen zu reduzieren, beschränkt IntelliTrace die Datensammlung auf die Werte primitiver Datentypen, die an Methoden übergeben und von ihnen zurückgegebenen werden, und auf Werte primitiver Datentypen in Feldern von Objekten der obersten Ebene, die an Methoden übergeben und von ihnen zurückgegeben werden.
+   Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee` - und dem `Address` -Typ.
 
-     Angenommen, Sie verfügen über eine `AlterEmployee`-Methodensignatur, die eine Ganzzahl-`id` und ein `Employee`-Objekt `oldemployee` akzeptiert:
+   ![Zusammenhang zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-     `public Employee AlterEmployee(int id, Employee oldemployee)`
-
-     Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee` - und dem `Address` -Typ.
-
-     ![Zusammenhang zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
-
-     Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.
+   Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.
 
 ##  <a name="WhereElse"></a> Wo kann ich IntelliTrace-Daten außerdem abrufen?
 
 -   Aus einer IntelliTrace Debugsitzung in Visual Studio Enterprise, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
--   Aus einer testsitzung in Microsoft Test Manager, finden Sie unter [Vorgehensweise: Sammeln von IntelliTrace-Daten zum Debuggen schwieriger Probleme helfen](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
+-   Weitere Informationen finden Sie aus einer Testsitzung in Microsoft Test Manager heraus unter [Gewusst wie: Sammeln von IntelliTrace-Daten zum Debuggen schwieriger Probleme helfen](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?
  [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)

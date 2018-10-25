@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894377"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
   
  In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die einen Namespace, die Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells verfügt. Weitere Informationen zu überwachen – Eigenschaften, finden Sie unter [nachverfolgung Eigenschaften](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   Die DSL-Tools unterstützen, Nachverfolgen von Eigenschaftendeskriptoren. Allerdings kann nicht der DSL-Designer verwendet werden, zum Hinzufügen einer Nachverfolgungseigenschaft zu einer Sprache. Aus diesem Grund müssen Sie benutzerdefinierten Code zum Definieren und implementieren Sie die änderungsverfolgungseigenschaft hinzufügen.  
+- Die DSL-Tools unterstützen, Nachverfolgen von Eigenschaftendeskriptoren. Allerdings kann nicht der DSL-Designer verwendet werden, zum Hinzufügen einer Nachverfolgungseigenschaft zu einer Sprache. Aus diesem Grund müssen Sie benutzerdefinierten Code zum Definieren und implementieren Sie die änderungsverfolgungseigenschaft hinzufügen.  
   
- Eine Nachverfolgungseigenschaft verfügt über zwei Zustände: nachzuverfolgen und vom Benutzer aktualisiert. Eigenschaften der nachrichtenüberwachung weisen die folgenden Funktionen:  
+  Eine Nachverfolgungseigenschaft verfügt über zwei Zustände: nachzuverfolgen und vom Benutzer aktualisiert. Eigenschaften der nachrichtenüberwachung weisen die folgenden Funktionen:  
   
--   Klicken Sie in den Status der änderungsnachverfolgung, der Wert der Nachverfolgungseigenschaft wird berechnet, und der Wert wird aktualisiert, wie andere Eigenschaften in das Modell ändern.  
+- Klicken Sie in den Status der änderungsnachverfolgung, der Wert der Nachverfolgungseigenschaft wird berechnet, und der Wert wird aktualisiert, wie andere Eigenschaften in das Modell ändern.  
   
--   Wenn in der aktualisierten von Benutzerstatus, behält der Wert der Nachverfolgungseigenschaft den Wert, der auf den der Benutzer zuletzt die Eigenschaft festgelegt.  
+- Wenn in der aktualisierten von Benutzerstatus, behält der Wert der Nachverfolgungseigenschaft den Wert, der auf den der Benutzer zuletzt die Eigenschaft festgelegt.  
   
--   In der **Eigenschaften** Fenster die **zurücksetzen** Befehl für die änderungsverfolgungseigenschaft nur aktiviert werden, ist wenn die Eigenschaft in der aktualisierten von Benutzerzustand. Die **zurücksetzen** Befehl wird die änderungsverfolgungseigenschaft Status nachverfolgen.  
+- In der **Eigenschaften** Fenster die **zurücksetzen** Befehl für die änderungsverfolgungseigenschaft nur aktiviert werden, ist wenn die Eigenschaft in der aktualisierten von Benutzerzustand. Die **zurücksetzen** Befehl wird die änderungsverfolgungseigenschaft Status nachverfolgen.  
   
--   In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in den Zustand "Überwachung" der Wert ist, wird in ein normaler Schrift angezeigt.  
+- In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in den Zustand "Überwachung" der Wert ist, wird in ein normaler Schrift angezeigt.  
   
--   In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in der aktualisierten ist ihr Wert durch den Benutzerstatus in fett formatierter Schrift angezeigt wird.  
+- In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in der aktualisierten ist ihr Wert durch den Benutzerstatus in fett formatierter Schrift angezeigt wird.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie zunächst diese Komponenten installieren:  

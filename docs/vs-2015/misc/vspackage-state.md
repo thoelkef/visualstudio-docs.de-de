@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895209"
 ---
 # <a name="vspackage-state"></a>VSPackage-Status
 Viele Faktoren ermitteln, welche persistenten Werte oder Zustand, der eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendung.  
   
--   Projekte verfügen über Projekt-und Konfiguration.  
+- Projekte verfügen über Projekt-und Konfiguration.  
   
--   Lösungen verfügen über Eigenschaften.  
+- Lösungen verfügen über Eigenschaften.  
   
--   Einstellungen des Benutzers bestimmen die Größe und Position von Dokumentfenstern, Toolfenster, Andockstatus und Tastenkombinationen in Visual Studio.  
+- Einstellungen des Benutzers bestimmen die Größe und Position von Dokumentfenstern, Toolfenster, Andockstatus und Tastenkombinationen in Visual Studio.  
   
--   Anwendungen können Optionen haben die Benutzer festlegen.  
+- Anwendungen können Optionen haben die Benutzer festlegen.  
   
--   Objekte, die eine Anwendung erstellt haben ihre eigenen Eigenschaften.  
+- Objekte, die eine Anwendung erstellt haben ihre eigenen Eigenschaften.  
   
- Hier sind einige der Möglichkeiten, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendungszustand verwaltet werden kann:  
+  Hier sind einige der Möglichkeiten, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendungszustand verwaltet werden kann:  
   
--   Über die Eigenschaftenseiten Projekt- und Projektmappendateien.  
+- Über die Eigenschaftenseiten Projekt- und Projektmappendateien.  
   
--   Über die **-Import / Export-Assistenten-Einstellungen**, wodurch einen Benutzer Einstellungen von einem Computer auf einen anderen zu verschieben.  
+- Über die **-Import / Export-Assistenten-Einstellungen**, wodurch einen Benutzer Einstellungen von einem Computer auf einen anderen zu verschieben.  
   
--   Durch die **Optionen** Dialogfeld, das Optionen, die im Zusammenhang mit Anwendungen enthält.  
+- Durch die **Optionen** Dialogfeld, das Optionen, die im Zusammenhang mit Anwendungen enthält.  
   
--   Durch die **Eigenschaften** Fenster, in dem Eigenschaften von Objekten verfügbar macht.  
+- Durch die **Eigenschaften** Fenster, in dem Eigenschaften von Objekten verfügbar macht.  
   
--   Durch die Automatisierung. Eine Anwendung kann es sich um VSPackage und Objekteigenschaften zugreifen, die für die Benutzeroberflächenautomatisierung verfügbar gemacht wurden.  
+- Durch die Automatisierung. Eine Anwendung kann es sich um VSPackage und Objekteigenschaften zugreifen, die für die Benutzeroberflächenautomatisierung verfügbar gemacht wurden.  
   
- Zugrunde liegende Zustand der Anwendung sind verschiedene Persistenz-Mechanismen, mit die Zustand der Anwendung gespeichert und wiederhergestellt werden können.  
+  Zugrunde liegende Zustand der Anwendung sind verschiedene Persistenz-Mechanismen, mit die Zustand der Anwendung gespeichert und wiederhergestellt werden können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Unterstützung von Statuspersistenz](../misc/support-for-state-persistence.md)  

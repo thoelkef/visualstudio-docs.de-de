@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913409"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,37 +29,37 @@ Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form 
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Steuern der Sichtbarkeit des ein Symbol oder Text-Decorator-Element  
   
-1.  Fügen Sie in der DSL-Definitionsdiagramm hinzu, die Shape-Klasse, die Symbole oder Text-Decorator-Elemente, die angezeigt werden sollen.  
+1. Fügen Sie in der DSL-Definitionsdiagramm hinzu, die Shape-Klasse, die Symbole oder Text-Decorator-Elemente, die angezeigt werden sollen.  
   
-    1.  Mit der rechten Maustaste der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den erforderlichen Typ des Decorator-Elements.  
+   1.  Mit der rechten Maustaste der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den erforderlichen Typ des Decorator-Elements.  
   
-    2.  Festlegen des Decorator-Elements **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise können Sie Symbole für "Männlich" und "weiblich", die gemeinsame Nutzung der gleichen Position haben.  
+   2.  Festlegen des Decorator-Elements **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise können Sie Symbole für "Männlich" und "weiblich", die gemeinsame Nutzung der gleichen Position haben.  
   
-    3.  Legen Sie die **Standardsymbol** Eigenschaft ein Symbol für Decorator-Elements.  
+   3.  Legen Sie die **Standardsymbol** Eigenschaft ein Symbol für Decorator-Elements.  
   
-2.  Wählen Sie die diagrammelementzuordnung, d.h. die graue Linie zwischen der Shape-Klasse und der Domänenklasse im DSL-Definitionsdiagramm.  
+2. Wählen Sie die diagrammelementzuordnung, d.h. die graue Linie zwischen der Shape-Klasse und der Domänenklasse im DSL-Definitionsdiagramm.  
   
-3.  Im Fenster "DSL-Details" in der **Decorator-Zuordnungen** wählen ein Decorator-Element. Beispiel: die MaleDecorator.  
+3. Im Fenster "DSL-Details" in der **Decorator-Zuordnungen** wählen ein Decorator-Element. Beispiel: die MaleDecorator.  
   
-4.  Überprüfen Sie die **Sichtbarkeitsfilter** Feld.  
+4. Überprüfen Sie die **Sichtbarkeitsfilter** Feld.  
   
-5.  Wenn die Eigenschaft "Domain", die die Sichtbarkeit zu steuern, sollten in der unmittelbaren Domänenklasse ist, lassen Sie **Pfad zur Filter-Eigenschaft** leer.  
+5. Wenn die Eigenschaft "Domain", die die Sichtbarkeit zu steuern, sollten in der unmittelbaren Domänenklasse ist, lassen Sie **Pfad zur Filter-Eigenschaft** leer.  
   
-     Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu die Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.  
+    Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu die Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.  
   
-    -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht über eine Beziehung mit markierten navigieren "*" in das Navigationstool.  
+   -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht über eine Beziehung mit markierten navigieren "*" in das Navigationstool.  
   
-6.  Legen Sie die **Filtereigenschaft** an einer Domäneneigenschaft. Beispielsweise Geschlecht.  
+6. Legen Sie die **Filtereigenschaft** an einer Domäneneigenschaft. Beispielsweise Geschlecht.  
   
-7.  In der **Sichtbarkeitseinträge** aufzulisten, fügen Sie die Werte dieser Domäneneigenschaft, die für die das Decorator-Element angezeigt werden. Beispiel: "Männlich".  
+7. In der **Sichtbarkeitseinträge** aufzulisten, fügen Sie die Werte dieser Domäneneigenschaft, die für die das Decorator-Element angezeigt werden. Beispiel: "Männlich".  
   
-8.  Wiederholen Sie die Schritte für jedes Symbol ein.  
+8. Wiederholen Sie die Schritte für jedes Symbol ein.  
   
 9. **Alle Vorlagen transformieren**, erstellen und auszuführen, und öffnen Sie ein Diagramm.  
   
 10. Wenn Sie steuern den Wert der Eigenschaft ändern, sollte die Decorator-Elemente angezeigt werden und nicht mehr angezeigt.  
   
- In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links von einem bestimmten Typ abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren an.  
+    In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links von einem bestimmten Typ abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren an.  
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Um die Sichtbarkeit eines Decorator-Elements anhand einer Formel zu steuern.  
   

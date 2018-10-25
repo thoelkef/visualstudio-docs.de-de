@@ -22,12 +22,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2077e9ff3e4e637e0dbc27b8976a9205556b74a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867066"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,52 +36,52 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Tools unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
--   Ermitteln der Anforderungen und Geschäftsprozesse von Benutzern  
+- Ermitteln der Anforderungen und Geschäftsprozesse von Benutzern  
   
--   Visualisieren und Untersuchen von vorhandenem Code  
+- Visualisieren und Untersuchen von vorhandenem Code  
   
--   Beschreiben der Änderungen an einem vorhandenen System  
+- Beschreiben der Änderungen an einem vorhandenen System  
   
--   Sicherstellen, dass das System die Anforderungen erfüllt  
+- Sicherstellen, dass das System die Anforderungen erfüllt  
   
--   Sicherstellen, dass der Code konsistent mit dem Entwurf ist  
+- Sicherstellen, dass der Code konsistent mit dem Entwurf ist  
   
- Diese exemplarische Vorgehensweise:  
+  Diese exemplarische Vorgehensweise:  
   
--   Beschreibt den Nutzen dieser Tools für Ihr Softwareprojekt  
+- Beschreibt den Nutzen dieser Tools für Ihr Softwareprojekt  
   
--   Zeigt, wie Sie diese Tools unabhängig von Ihrem Entwicklungsansatz in einem Beispielszenario verwenden können  
+- Zeigt, wie Sie diese Tools unabhängig von Ihrem Entwicklungsansatz in einem Beispielszenario verwenden können  
   
- Weitere Informationen zu diesen Tools und den Szenarien, die sie unterstützen, finden Sie unter:  
+  Weitere Informationen zu diesen Tools und den Szenarien, die sie unterstützen, finden Sie unter:  
   
--   [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)  
+- [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)  
   
--   [Visualisieren von Code](../modeling/visualize-code.md)  
+- [Visualisieren von Code](../modeling/visualize-code.md)  
   
--   [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)  
+- [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)  
   
 ##  <a name="ScenarioOverview"></a> Übersicht über das Szenario  
  Dieses Szenario beschreibt Episoden in den Lebenszyklen der Softwareentwicklung von zwei fiktiven Unternehmen: Dinner Now und Lucerne Publishing. Dinner Now bietet einen webbasierten Essenslieferdienst in Seattle an. Kunden können Essen bestellen auf der Dinner Now-Website bezahlen. Die Bestellungen werden dann an das entsprechende örtliche Restaurant für die Lieferung gesendet. Lucerne Publishing, ein Unternehmen in New York, unterhält mehrere Geschäfte sowohl im Internet als auch außerhalb des Internets. Beispielsweise wird eine Website betrieben, auf der Kunden Restaurantkritiken veröffentlichen können.  
   
  Lucerne hat vor kurzem Dinner Now übernommen und möchte die folgenden Änderungen vornehmen:  
   
--   Integrieren der Websites durch Hinzufügen von Restaurantkritikfunktionen zu Dinner Now  
+- Integrieren der Websites durch Hinzufügen von Restaurantkritikfunktionen zu Dinner Now  
   
--   Ersetzen des Zahlungssystems von Dinner Now durch das System von Lucerne  
+- Ersetzen des Zahlungssystems von Dinner Now durch das System von Lucerne  
   
--   Ausweiten der Dienstleistung von Dinner Now auf die gesamte Region.  
+- Ausweiten der Dienstleistung von Dinner Now auf die gesamte Region.  
   
- Dinner Now verwendet SCRUM- und eXtreme-Programmierung. Sie verfügen über eine sehr hohe Testabdeckung und nur wenig nicht unterstützten Code. Risiken werden minimiert, indem kleine, funktionierende Versionen eines Systems erstellt und dann schrittweise Funktionen hinzugefügt werden. Der Code wird über kurze und regelmäßige Iterationen entwickelt. Dadurch werden Änderungen auf sichere Weise eingeführt, der Code wird häufig umgestaltet, und ein "Big Design Up Front" wird vermieden.  
+  Dinner Now verwendet SCRUM- und eXtreme-Programmierung. Sie verfügen über eine sehr hohe Testabdeckung und nur wenig nicht unterstützten Code. Risiken werden minimiert, indem kleine, funktionierende Versionen eines Systems erstellt und dann schrittweise Funktionen hinzugefügt werden. Der Code wird über kurze und regelmäßige Iterationen entwickelt. Dadurch werden Änderungen auf sichere Weise eingeführt, der Code wird häufig umgestaltet, und ein "Big Design Up Front" wird vermieden.  
   
- Lucerne unterhält eine überaus umfangreichere und komplexe Auflistung von Systemen, die teilweise über 40 Jahre alt sind. Aufgrund von Komplexität und Umfang des älteren Codes werden Änderungen nur mit größter Vorsicht vorgenommen. Lucerne verfolgt einen rigoroseren Entwicklungsprozess und zieht es vor, detaillierte Lösungen zu entwerfen und den Entwurf und sowie während der Entwicklung auftretende Änderungen zu dokumentieren.  
+  Lucerne unterhält eine überaus umfangreichere und komplexe Auflistung von Systemen, die teilweise über 40 Jahre alt sind. Aufgrund von Komplexität und Umfang des älteren Codes werden Änderungen nur mit größter Vorsicht vorgenommen. Lucerne verfolgt einen rigoroseren Entwicklungsprozess und zieht es vor, detaillierte Lösungen zu entwerfen und den Entwurf und sowie während der Entwicklung auftretende Änderungen zu dokumentieren.  
   
- Beide Teams verwenden Modellierungsdiagramme in Visual Studio, die sie dabei unterstützen, Systeme zu entwickeln, die die Anforderungen der Benutzer erfüllen. Sie verwenden Team Foundation Server zusammen mit anderen Tools zum Planen, Organisieren und Verwalten ihrer Arbeit.  
+  Beide Teams verwenden Modellierungsdiagramme in Visual Studio, die sie dabei unterstützen, Systeme zu entwickeln, die die Anforderungen der Benutzer erfüllen. Sie verwenden Team Foundation Server zusammen mit anderen Tools zum Planen, Organisieren und Verwalten ihrer Arbeit.  
   
- Weitere Informationen über Team Foundation Server finden Sie unter:  
+  Weitere Informationen über Team Foundation Server finden Sie unter:  
   
--   [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
+- [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
   
--   [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
+- [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
   
 ##  <a name="ModelingDiagramsTools"></a> Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung  
  In der folgenden Tabelle werden Rollen beschrieben, die diese Tools während verschiedener Phasen des Lebenszyklus der Softwareentwicklung spielen können:  
@@ -102,73 +102,73 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Thema  
   
--   [Erstellen von UML-Modellierungsprojekten und -Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)  
+- [Erstellen von UML-Modellierungsprojekten und -Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)  
   
--   [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+- [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
- Um alternative Ansichten der Architektur anzuzeigen, können Sie bestimmte Elemente aus demselben Modell in verschiedenen Diagrammen wiederverwenden. Beispielsweise können Sie eine Komponente in ein anderes Komponentendiagramm oder in ein Sequenzdiagramm ziehen, damit es als Akteur fungieren kann. Finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+  Um alternative Ansichten der Architektur anzuzeigen, können Sie bestimmte Elemente aus demselben Modell in verschiedenen Diagrammen wiederverwenden. Beispielsweise können Sie eine Komponente in ein anderes Komponentendiagramm oder in ein Sequenzdiagramm ziehen, damit es als Akteur fungieren kann. Finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
- Beide Teams verwenden außerdem Ebenenvalidierung, um sicherzustellen, dass Code in der Entwicklung mit dem Entwurf konsistent bleibt.  
+  Beide Teams verwenden außerdem Ebenenvalidierung, um sicherzustellen, dass Code in der Entwicklung mit dem Entwurf konsistent bleibt.  
   
- Thema  
+  Thema  
   
--   [Sicherstellen der Konsistenz von Code und Entwurf](#ValidatingCode)  
+- [Sicherstellen der Konsistenz von Code und Entwurf](#ValidatingCode)  
   
--   [Beschreiben der logischen Architektur: Ebenendiagramme](#DescribeLayers)  
+- [Beschreiben der logischen Architektur: Ebenendiagramme](#DescribeLayers)  
   
--   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
+- [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
   
-    > [!NOTE]
-    >  Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > [!NOTE]
+  >  Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ##  <a name="UnderstandingCommunicating"></a> Verstehen und Kommunizieren von Informationen zum System  
  Es gibt keine vorgeschriebene Reihenfolge zum Verwenden der Visual Studio-Modellierungsdiagramme. Daher können Sie sie ganz Ihren Anforderungen oder dem Ansatz entsprechend verwenden. Normalerweise rufen Teams ihre Modelle im Verlauf des Projekts wiederholt und häufig auf. Jedes Diagramm bietet bestimmte Vorteile, um verschiedene Aspekte des Systems in der Entwicklung zu verstehen, zu beschreiben und zu kommunizieren.  
   
  Dinner Now und Lucerne kommunizieren untereinander sowie mit Projektbeteiligten anhand von Diagrammen als einheitliche Sprache. Beispielsweise verwendet Dinner Now Diagramme, um folgende Aufgaben auszuführen:  
   
--   Visualisieren von vorhandenem Code  
+- Visualisieren von vorhandenem Code  
   
--   Kommunizieren mit Lucerne über neue oder aktualisierte User Storys  
+- Kommunizieren mit Lucerne über neue oder aktualisierte User Storys  
   
--   Identifizieren von Änderungen, die für die Unterstützung neuer oder aktualisierter User Storys erforderlich sind  
+- Identifizieren von Änderungen, die für die Unterstützung neuer oder aktualisierter User Storys erforderlich sind  
   
- Lucerne verwendet Diagramme, um folgende Aufgaben auszuführen:  
+  Lucerne verwendet Diagramme, um folgende Aufgaben auszuführen:  
   
--   Aneignung von Kenntnissen über den Geschäftsprozess von Dinner Now  
+- Aneignung von Kenntnissen über den Geschäftsprozess von Dinner Now  
   
--   Verstehen des Systementwurfs  
+- Verstehen des Systementwurfs  
   
--   Kommunizieren mit Dinner Now über neue oder aktualisierte Benutzeranforderungen  
+- Kommunizieren mit Dinner Now über neue oder aktualisierte Benutzeranforderungen  
   
--   Dokumentieren von Aktualisierungen am System  
+- Dokumentieren von Aktualisierungen am System  
   
- Die Diagramme sind in Team Foundation Server integriert, sodass die Teams ihre Arbeit leichter planen, verwalten und verfolgen können. Beispielsweise verwenden sie Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, sodass sie den Fortschritt überwachen sowie sicherstellen können, dass das System die Anforderungen der Benutzer erfüllt. Beispielsweise werden Anwendungsfälle mit Testfallarbeitsaufgaben verknüpft, um sehen zu können, dass Anwendungsfälle erfüllt werden, wenn alle Tests erfolgreich verlaufen.  
+  Die Diagramme sind in Team Foundation Server integriert, sodass die Teams ihre Arbeit leichter planen, verwalten und verfolgen können. Beispielsweise verwenden sie Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, sodass sie den Fortschritt überwachen sowie sicherstellen können, dass das System die Anforderungen der Benutzer erfüllt. Beispielsweise werden Anwendungsfälle mit Testfallarbeitsaufgaben verknüpft, um sehen zu können, dass Anwendungsfälle erfüllt werden, wenn alle Tests erfolgreich verlaufen.  
   
- Bevor Teams ihre Änderungen einchecken, überprüfen sie den Code anhand der Tests und des Entwurfs durch das Ausführen von Builds, die Ebenenvalidierung und automatisierte Tests beinhalten. Dadurch wird sichergestellt, dass der aktualisierte Code dem Entwurf nicht widerspricht und Funktionen, die bereits funktionieren, nicht beeinträchtigt werden.  
+  Bevor Teams ihre Änderungen einchecken, überprüfen sie den Code anhand der Tests und des Entwurfs durch das Ausführen von Builds, die Ebenenvalidierung und automatisierte Tests beinhalten. Dadurch wird sichergestellt, dass der aktualisierte Code dem Entwurf nicht widerspricht und Funktionen, die bereits funktionieren, nicht beeinträchtigt werden.  
   
- Thema  
+  Thema  
   
--   [Grundlegendes zur Rolle des Systems im Geschäftsprozess.](#UnderstandingBPMandSystemDesign)  
+- [Grundlegendes zur Rolle des Systems im Geschäftsprozess.](#UnderstandingBPMandSystemDesign)  
   
--   [Beschreiben neuer oder aktualisierter benutzeranforderungen](#DescribingURM)  
+- [Beschreiben neuer oder aktualisierter benutzeranforderungen](#DescribingURM)  
   
--   [Erstellen von Tests aus Modellen](#CreatingTests)  
+- [Erstellen von Tests aus Modellen](#CreatingTests)  
   
--   [Identifizieren von Änderungen am vorhandenen System](#DeterminingChanges)  
+- [Identifizieren von Änderungen am vorhandenen System](#DeterminingChanges)  
   
--   [Keeping code consistent with the design](#ValidatingCode)  
+- [Keeping code consistent with the design](#ValidatingCode)  
   
--   [Allgemeine Tipps zum Erstellen und Verwenden von Modellen](#GeneralTips)  
+- [Allgemeine Tipps zum Erstellen und Verwenden von Modellen](#GeneralTips)  
   
--   [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
+- [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
   
--   [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
+- [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
   
 ###  <a name="UnderstandingBPMandSystemDesign"></a> Grundlegendes zur Rolle des Systems im Geschäftsprozess.  
  Lucerne möchte mehr über den Geschäftsprozess von Dinner Now erfahren. Die folgenden Diagramme werden erstellt, um den Kenntnisstand mit Dinner Now leichter abzuklären:  
@@ -227,19 +227,19 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 ###  <a name="CreatingTests"></a> Erstellen von Tests aus Modellen  
  Beide Teams stimmen darin überein, dass sie einen vollständigen Satz von Tests für das System und seine Komponenten benötigen, bevor sie Änderungen vornehmen können. Lucerne verfügt über ein spezialisiertes Team, das Tests auf System- und Komponentenebene durchführt. Die von Dinner Now erstellten Tests werden wiederverwendet und mithilfe von UML-Diagrammen strukturiert:  
   
--   Jeder Anwendungsfall wird durch einen oder mehrere Tests dargestellt. Die Elemente im Anwendungsfalldiagramm sind mit Testfallarbeitsaufgaben in Team Foundation Server verknüpft.  
+- Jeder Anwendungsfall wird durch einen oder mehrere Tests dargestellt. Die Elemente im Anwendungsfalldiagramm sind mit Testfallarbeitsaufgaben in Team Foundation Server verknüpft.  
   
--   Jeder Ablauf in einem Aktivitätsdiagramm oder einem Sequenzdiagramm auf Systemebene wird mindestens mit einem Test verknüpft. Das Testteam stellt systematisch sicher, dass jeder mögliche Pfad durch das Aktivitätsdiagramm getestet wird.  
+- Jeder Ablauf in einem Aktivitätsdiagramm oder einem Sequenzdiagramm auf Systemebene wird mindestens mit einem Test verknüpft. Das Testteam stellt systematisch sicher, dass jeder mögliche Pfad durch das Aktivitätsdiagramm getestet wird.  
   
--   Die zum Beschreiben der Tests verwendeten Begriffe basieren auf den Begriffen, die durch Anwendungsfall-, Klassen- und Aktivitätsdiagramme definiert werden.  
+- Die zum Beschreiben der Tests verwendeten Begriffe basieren auf den Begriffen, die durch Anwendungsfall-, Klassen- und Aktivitätsdiagramme definiert werden.  
   
- Mit der Änderung von Anforderungen und der entsprechenden Aktualisierung der Diagramme werden auch die Tests aktualisiert. Eine Anforderung wird nur als erfüllt betrachtet, wenn die Tests bestanden werden. Wenn es möglich oder praktikabel ist, werden die Tests auf Grundlage von UML-Diagrammen definiert, bevor mit der Implementierung begonnen wird.  
+  Mit der Änderung von Anforderungen und der entsprechenden Aktualisierung der Diagramme werden auch die Tests aktualisiert. Eine Anforderung wird nur als erfüllt betrachtet, wenn die Tests bestanden werden. Wenn es möglich oder praktikabel ist, werden die Tests auf Grundlage von UML-Diagrammen definiert, bevor mit der Implementierung begonnen wird.  
   
- Thema  
+  Thema  
   
--   [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)  
+- [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)  
   
--   [Überprüfen des UML-Modells](../modeling/validate-your-uml-model.md)  
+- [Überprüfen des UML-Modells](../modeling/validate-your-uml-model.md)  
   
 ###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler die folgenden Code Maps und Diagramme aus vorhandenem Code:  
@@ -310,144 +310,144 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 ###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
--   Die meisten Diagramme bestehen aus Knoten, die durch Linien verbunden sind. Für jeden Diagrammtyp stellt die Toolbox verschiedene Arten von Knoten und Linien bereit.  
+- Die meisten Diagramme bestehen aus Knoten, die durch Linien verbunden sind. Für jeden Diagrammtyp stellt die Toolbox verschiedene Arten von Knoten und Linien bereit.  
   
-     Zum Öffnen der Toolbox klicken Sie im Menü **Ansicht** auf **Toolbox**.  
+   Zum Öffnen der Toolbox klicken Sie im Menü **Ansicht** auf **Toolbox**.  
   
--   Um einen Knoten zu erstellen, ziehen Sie ihn von der Toolbox in das Diagramm. Bestimmte Arten von Knoten müssen auf vorhandene Knoten gezogen werden. In einem Komponentendiagramm muss einer vorhandenen Komponente z. B. ein neuer Port hinzugefügt werden.  
+- Um einen Knoten zu erstellen, ziehen Sie ihn von der Toolbox in das Diagramm. Bestimmte Arten von Knoten müssen auf vorhandene Knoten gezogen werden. In einem Komponentendiagramm muss einer vorhandenen Komponente z. B. ein neuer Port hinzugefügt werden.  
   
--   Um eine Linie oder Verbindung zu erstellen, klicken Sie in der Toolbox auf das entsprechende Tool, klicken Sie auf den Quellknoten und dann auf den Zielknoten. Einige Linien können nur zwischen bestimmten Arten von Knoten erstellt werden. Wenn Sie den Mauszeiger über mögliche Quellen oder Ziele bewegen, wird angezeigt, ob Sie eine Verbindung erstellen können.  
+- Um eine Linie oder Verbindung zu erstellen, klicken Sie in der Toolbox auf das entsprechende Tool, klicken Sie auf den Quellknoten und dann auf den Zielknoten. Einige Linien können nur zwischen bestimmten Arten von Knoten erstellt werden. Wenn Sie den Mauszeiger über mögliche Quellen oder Ziele bewegen, wird angezeigt, ob Sie eine Verbindung erstellen können.  
   
--   Wenn Sie Elemente in UML-Diagrammen erstellen, werden diese auch einem allgemeinen Modell hinzugefügt. Die UML-Diagramme in einem Modellierungsprojekt sind Ansichten dieses Modells. Elemente in einem Ebenendiagramm sind Teil des Modellierungsprojekts, obwohl sie nicht im allgemeinen Modell gespeichert werden.  
+- Wenn Sie Elemente in UML-Diagrammen erstellen, werden diese auch einem allgemeinen Modell hinzugefügt. Die UML-Diagramme in einem Modellierungsprojekt sind Ansichten dieses Modells. Elemente in einem Ebenendiagramm sind Teil des Modellierungsprojekts, obwohl sie nicht im allgemeinen Modell gespeichert werden.  
   
-     Um das Modell anzuzeigen, zeigen Sie im Menü **Architektur** auf  **Fenster**, und klicken Sie dann auf **UML-Modell-Explorer**.  
+   Um das Modell anzuzeigen, zeigen Sie im Menü **Architektur** auf  **Fenster**, und klicken Sie dann auf **UML-Modell-Explorer**.  
   
--   In einigen Fällen können Sie bestimmte Elemente aus dem **UML-Modell-Explorer** in ein UML-Diagramm ziehen. Einige Elemente innerhalb des gleichen Modells können in verschiedenen Diagrammen verwendet werden, um alternative Ansichten der Architektur anzuzeigen. Sie können z. B. eine Komponente in ein anderes Komponentendiagramm oder ein Sequenzdiagramm ziehen, um sie als Akteur zu verwenden.  
+- In einigen Fällen können Sie bestimmte Elemente aus dem **UML-Modell-Explorer** in ein UML-Diagramm ziehen. Einige Elemente innerhalb des gleichen Modells können in verschiedenen Diagrammen verwendet werden, um alternative Ansichten der Architektur anzuzeigen. Sie können z. B. eine Komponente in ein anderes Komponentendiagramm oder ein Sequenzdiagramm ziehen, um sie als Akteur zu verwenden.  
   
--   Visual Studio unterstützt UML 2.1.2. In dieser Übersicht werden nur die Hauptfunktionen der UML-Diagramme in dieser Version beschrieben. Es gibt jedoch viele Bücher, die UML und dessen Verwendung im Detail behandeln.  
+- Visual Studio unterstützt UML 2.1.2. In dieser Übersicht werden nur die Hauptfunktionen der UML-Diagramme in dieser Version beschrieben. Es gibt jedoch viele Bücher, die UML und dessen Verwendung im Detail behandeln.  
   
- Finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
+  Finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
 ###  <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, sodass Sie Arbeit leichter planen, verwalten und nachverfolgen können. Beide Teams verwenden Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne erstellt und verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, wie z. B. Anwendungsfälle oder Komponenten. Auf diese Weise kann der Status überwacht werden, und die Arbeit kann bis zu den Benutzeranforderungen zurückverfolgt werden. Somit wird sichergestellt, dass die Änderungen stets den Anforderungen entsprechen.  
   
  Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitsaufgaben, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:  
   
--   Tägliche *Burndownberichte* , die angeben, ob die geplante Arbeit in der erwarteten Zeit angeschlossen wird. Es werden andere ähnliche Berichte in Team Foundation Server generiert, um den Status von Fehlern zu verfolgen.  
+- Tägliche *Burndownberichte* , die angeben, ob die geplante Arbeit in der erwarteten Zeit angeschlossen wird. Es werden andere ähnliche Berichte in Team Foundation Server generiert, um den Status von Fehlern zu verfolgen.  
   
--   Ein *Iterationsarbeitsblatt* , das Microsoft Excel verwendet, mit dem das Team die Arbeitsauslastung überwachen und zwischen den Mitgliedern ausgleichen kann. Dieses Arbeitsblatt ist mit Team Foundation Server verknüpft und bietet eine Diskussionsbasis bei den regelmäßigen Statusbesprechungen.  
+- Ein *Iterationsarbeitsblatt* , das Microsoft Excel verwendet, mit dem das Team die Arbeitsauslastung überwachen und zwischen den Mitgliedern ausgleichen kann. Dieses Arbeitsblatt ist mit Team Foundation Server verknüpft und bietet eine Diskussionsbasis bei den regelmäßigen Statusbesprechungen.  
   
--   Ein *Entwicklungsdashboard* , das Office Project verwendet, um das Team mit wichtigen Projektinformationen auf dem neuesten Stand zu halten.  
+- Ein *Entwicklungsdashboard* , das Office Project verwendet, um das Team mit wichtigen Projektinformationen auf dem neuesten Stand zu halten.  
   
- Thema  
+  Thema  
   
--   [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [Verknüpfen von Modellelementen und Arbeitselementen](../modeling/link-model-elements-and-work-items.md)  
+- [Verknüpfen von Modellelementen und Arbeitselementen](../modeling/link-model-elements-and-work-items.md)  
   
--   [Diagramme, Dashboards und Berichte für Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Diagramme, Dashboards und Berichte für Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [Erstellen von Backlog und Aufgaben mit Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Erstellen von Backlog und Aufgaben mit Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> Testen, Überprüfen und Einchecken von Code  
  Beim Abschließen der einzelnen Aufgaben wird der Code von den Teams in der Team Foundation-Versionskontrolle eingecheckt. Wird dies vergessen, werden von Team Foundation Server entsprechende Erinnerungen angezeigt. Bevor Team Foundation Server das Einchecken akzeptiert, führen die Teams Komponententests und Ebenenvalidierung aus, um den Code anhand der Testfälle und des Entwurfs zu überprüfen. Mit Team Foundation Server werden regelmäßig Builds, automatisierte Komponententests und eine Ebenenvalidierung ausgeführt. Dadurch wird sichergestellt, dass der Code die folgenden Kriterien erfüllt:  
   
--   Er funktioniert.  
+- Er funktioniert.  
   
--   Bereits funktionierender Code wird dadurch nicht beeinträchtigt.  
+- Bereits funktionierender Code wird dadurch nicht beeinträchtigt.  
   
--   Er steht nicht in Konflikt mit dem Entwurf.  
+- Er steht nicht in Konflikt mit dem Entwurf.  
   
- Dinner Now verfügt über eine große Auflistung automatisierter Tests, die Lucerne wiederverwenden kann, da fast alle weiterhin gültig sind. Lucerne kann außerdem auf diesen Tests aufbauen und neue hinzufügen, um neue Funktionen abzudecken. Beide verwenden auch Visual Studio, um manuelle Tests auszuführen.  
+  Dinner Now verfügt über eine große Auflistung automatisierter Tests, die Lucerne wiederverwenden kann, da fast alle weiterhin gültig sind. Lucerne kann außerdem auf diesen Tests aufbauen und neue hinzufügen, um neue Funktionen abzudecken. Beide verwenden auch Visual Studio, um manuelle Tests auszuführen.  
   
- Um sicherzustellen, dass der Code dem Entwurf entspricht, konfigurieren die Teams ihre Builds zum Einbinden der Ebenenvalidierung in Team Foundation Build. Wenn Konflikte auftreten, wird ein Bericht mit den Details generiert.  
+  Um sicherzustellen, dass der Code dem Entwurf entspricht, konfigurieren die Teams ihre Builds zum Einbinden der Ebenenvalidierung in Team Foundation Build. Wenn Konflikte auftreten, wird ein Bericht mit den Details generiert.  
   
- Thema  
+  Thema  
   
--   [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
--   [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)  
+- [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)  
   
--   [Verwenden der Versionskontrolle](http://go.microsoft.com/fwlink/?LinkID=525605)  
+- [Verwenden der Versionskontrolle](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [Erstellen der Anwendung](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Erstellen der Anwendung](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne und Dinner Now müssen ihre Zahlungssysteme integrieren. Die folgenden Abschnitte zeigen die Modellierungsdiagramme in Visual Studio, die beim Ausführen dieser Aufgabe helfen:  
   
--   [Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme](#UnderstandUseCases)  
+- [Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme](#UnderstandUseCases)  
   
--   [Verstehen des Geschäftsprozesses: Aktivitätsdiagramme](#UnderstandActivities)  
+- [Verstehen des Geschäftsprozesses: Aktivitätsdiagramme](#UnderstandActivities)  
   
--   [Beschreiben der Systemstruktur: Komponentendiagramme](#DescribeComponents)  
+- [Beschreiben der Systemstruktur: Komponentendiagramme](#DescribeComponents)  
   
--   [Beschreiben der Interaktionen: Sequenzdiagramme](#DescribeSequence)  
+- [Beschreiben der Interaktionen: Sequenzdiagramme](#DescribeSequence)  
   
--   [Visualisieren von vorhandenem Code: Code Maps](#VisualizeCode)  
+- [Visualisieren von vorhandenem Code: Code Maps](#VisualizeCode)  
   
--   [Definieren eines Glossars der Typen: Klassendiagramme](#DefineClasses)  
+- [Definieren eines Glossars der Typen: Klassendiagramme](#DefineClasses)  
   
--   [Beschreiben der logischen Architektur: Ebenendiagramme](#DescribeLayers)  
+- [Beschreiben der logischen Architektur: Ebenendiagramme](#DescribeLayers)  
   
- Thema  
+  Thema  
   
--   [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)  
+- [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)  
   
--   [Visualisieren von Code](../modeling/visualize-code.md)  
+- [Visualisieren von Code](../modeling/visualize-code.md)  
   
--   [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)  
+- [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)  
   
--   [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)  
+- [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)  
   
--   [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)  
+- [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)  
   
 ###  <a name="UnderstandUseCases"></a> Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme  
  Anwendungsfalldiagramme fassen zusammen, welche Aktivitäten ein System unterstützt und von wem diese ausgeführt werden. Lucerne verwendet ein Anwendungsfalldiagramm, um die folgenden Informationen über das Dinner Now-System zu erhalten:  
   
--   Kunden geben Bestellungen auf.  
+- Kunden geben Bestellungen auf.  
   
--   Restaurants empfangen Bestellungen.  
+- Restaurants empfangen Bestellungen.  
   
--   Das externe Zahlungsverarbeitungsgateway, das vom Dinner Now-Zahlungssystem zum Überprüfen von Zahlungen verwendet wird, liegt außerhalb des Projektumfangs der Website.  
+- Das externe Zahlungsverarbeitungsgateway, das vom Dinner Now-Zahlungssystem zum Überprüfen von Zahlungen verwendet wird, liegt außerhalb des Projektumfangs der Website.  
   
- Das Diagramm zeigt auch, wie einige der Hauptanwendungsfälle in kleinere Anwendungsfälle unterteilt sind. Lucerne möchte sein eigenes Zahlungssystem verwenden. Der Anwendungsfall "Process Payment" (Zahlung verarbeiten) wird in einer anderen Farbe hervorgehoben, um auf erforderliche Änderungen hinzuweisen:  
+  Das Diagramm zeigt auch, wie einige der Hauptanwendungsfälle in kleinere Anwendungsfälle unterteilt sind. Lucerne möchte sein eigenes Zahlungssystem verwenden. Der Anwendungsfall "Process Payment" (Zahlung verarbeiten) wird in einer anderen Farbe hervorgehoben, um auf erforderliche Änderungen hinzuweisen:  
   
- ![Markieren in einem Anwendungsfalldiagramm Zahlung verarbeiten](../modeling/media/uml-processpay.png "UML_ProcessPay")  
+  ![Markieren in einem Anwendungsfalldiagramm Zahlung verarbeiten](../modeling/media/uml-processpay.png "UML_ProcessPay")  
   
- **Markieren in das Anwendungsfalldiagramm Zahlung verarbeiten**  
+  **Markieren in das Anwendungsfalldiagramm Zahlung verarbeiten**  
   
- Wenn die Entwicklungszeit knapp wäre, könnte das Team erwägen, dass Kunden die Restaurants direkt bezahlen. Um dies zu verdeutlichen, würden sie den Anwendungsfall "Process Payment" (Zahlung verarbeiten) durch einen Anwendungsfall außerhalb der Dinner Now-Systemgrenze ersetzen. Anschließend würde der Kunde direkt mit dem Restaurant verknüpft, um anzugeben, dass Dinner Now nur die Bestellungen verarbeitet:  
+  Wenn die Entwicklungszeit knapp wäre, könnte das Team erwägen, dass Kunden die Restaurants direkt bezahlen. Um dies zu verdeutlichen, würden sie den Anwendungsfall "Process Payment" (Zahlung verarbeiten) durch einen Anwendungsfall außerhalb der Dinner Now-Systemgrenze ersetzen. Anschließend würde der Kunde direkt mit dem Restaurant verknüpft, um anzugeben, dass Dinner Now nur die Bestellungen verarbeitet:  
   
- ![Neudefinition des Projektumfangs zum Bezahlen der Restaurants im Anwendungsfalldiagramm](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
+  ![Neudefinition des Projektumfangs zum Bezahlen der Restaurants im Anwendungsfalldiagramm](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
   
- **Neudefinition des Projektumfangs zum Bezahlen der Restaurants im Anwendungsfalldiagramm**  
+  **Neudefinition des Projektumfangs zum Bezahlen der Restaurants im Anwendungsfalldiagramm**  
   
- Thema  
+  Thema  
   
--   [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Zeichnen eines Anwendungsfalldiagramms  
  Ein Anwendungsfalldiagramm umfasst die folgenden Hauptfunktionen:  
   
--   *Akteure* stellen Rollen dar, die Personen, Organisationen, Maschinen oder Softwaresysteme spielen. Bespielsweise sind Kunde, Restaurant und das Dinner Now-Zahlungssystem Akteure.  
+- *Akteure* stellen Rollen dar, die Personen, Organisationen, Maschinen oder Softwaresysteme spielen. Bespielsweise sind Kunde, Restaurant und das Dinner Now-Zahlungssystem Akteure.  
   
--   *Anwendungsfälle* stellen Interaktionen zwischen Akteuren und dem System in der Entwicklung dar.  Sie können eine beliebige Skala der Interaktion von einem einzelnen Mausklick oder einer Meldung bis hin zu einer mehrtägigen Transaktion darstellen.  
+- *Anwendungsfälle* stellen Interaktionen zwischen Akteuren und dem System in der Entwicklung dar.  Sie können eine beliebige Skala der Interaktion von einem einzelnen Mausklick oder einer Meldung bis hin zu einer mehrtägigen Transaktion darstellen.  
   
--   *Zuordnungen* verknüpfen Akteure mit Anwendungsfällen.  
+- *Zuordnungen* verknüpfen Akteure mit Anwendungsfällen.  
   
--   Ein größerer Anwendungsfall kann kleinere *einschließen* , z. B. ist "Select Restaurant" (Restaurant auswählen) in "Create Order" (Bestellung aufgeben) enthalten. Sie können einen Anwendungsfall *erweitern* . Einem erweiterten Anwendungsfall werden Ziele und Schritte hinzugefügt, um anzugeben, dass der Anwendungsfall nur unter bestimmten Bedingungen auftritt. Anwendungsfälle können auch voneinander erben.  
+- Ein größerer Anwendungsfall kann kleinere *einschließen* , z. B. ist "Select Restaurant" (Restaurant auswählen) in "Create Order" (Bestellung aufgeben) enthalten. Sie können einen Anwendungsfall *erweitern* . Einem erweiterten Anwendungsfall werden Ziele und Schritte hinzugefügt, um anzugeben, dass der Anwendungsfall nur unter bestimmten Bedingungen auftritt. Anwendungsfälle können auch voneinander erben.  
   
--   Ein *Subsystem* stellt das Softwaresystem dar, das sich in der Entwicklung befindet, oder eine seiner Komponenten. Dabei handelt es sich um ein großes Feld, das Anwendungsfälle enthält. Ein Anwendungsfalldiagramm klärt ab, was sich innerhalb oder außerhalb der Subsystemgrenze befindet. Um anzugeben, dass der Benutzer bestimmte Ziele auf andere Weise erreichen muss, zeichnen Sie diese Anwendungsfälle außerhalb der Subsystemgrenze.  
+- Ein *Subsystem* stellt das Softwaresystem dar, das sich in der Entwicklung befindet, oder eine seiner Komponenten. Dabei handelt es sich um ein großes Feld, das Anwendungsfälle enthält. Ein Anwendungsfalldiagramm klärt ab, was sich innerhalb oder außerhalb der Subsystemgrenze befindet. Um anzugeben, dass der Benutzer bestimmte Ziele auf andere Weise erreichen muss, zeichnen Sie diese Anwendungsfälle außerhalb der Subsystemgrenze.  
   
--   *Artefakte* verknüpfen Elemente im Diagramm mit anderen Diagrammen oder Dokumenten.  
+- *Artefakte* verknüpfen Elemente im Diagramm mit anderen Diagrammen oder Dokumenten.  
   
- Thema  
+  Thema  
   
--   [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Zusammenfassung: Vorteile von Anwendungsfalldiagrammen  
  Mit Anwendungsfalldiagrammen können Sie Folgendes visualisieren:  
@@ -492,27 +492,27 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="drawing-an-activity-diagram"></a>Zeichnen eines Aktivitätsdiagramms  
  Ein Aktivitätsdiagramm umfasst die folgenden Hauptfunktionen:  
   
--   Einen *Startknoten* , der die erste Aktion der Aktivität angibt.  
+- Einen *Startknoten* , der die erste Aktion der Aktivität angibt.  
   
-     Das Diagramm sollte immer einen dieser Knoten enthalten.  
+   Das Diagramm sollte immer einen dieser Knoten enthalten.  
   
--   *Aktionen* , die Schritte beschreiben, bei denen der Benutzer oder die Software eine Aufgabe ausführt.  
+- *Aktionen* , die Schritte beschreiben, bei denen der Benutzer oder die Software eine Aufgabe ausführt.  
   
--   *Kontrollflüsse* , die den Ablauf zwischen Aktionen anzeigen.  
+- *Kontrollflüsse* , die den Ablauf zwischen Aktionen anzeigen.  
   
--   *Entscheidungsknoten* , die bedingte Verzweigungen im Ablauf darstellen.  
+- *Entscheidungsknoten* , die bedingte Verzweigungen im Ablauf darstellen.  
   
--   *Gabelungsknoten* , die einzelne Abläufe in gleichzeitige Abläufe teilen.  
+- *Gabelungsknoten* , die einzelne Abläufe in gleichzeitige Abläufe teilen.  
   
--   *Aktivitätsendknoten* , die Enden der Aktivität anzeigen.  
+- *Aktivitätsendknoten* , die Enden der Aktivität anzeigen.  
   
-     Obwohl diese Knoten optional sind, ist deren Aufnahme in das Diagramm nützlich, um zu verdeutlichen, wo die Aktivität endet.  
+   Obwohl diese Knoten optional sind, ist deren Aufnahme in das Diagramm nützlich, um zu verdeutlichen, wo die Aktivität endet.  
   
- Thema  
+  Thema  
   
--   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)  
+- [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Zusammenfassung: Vorteile von Aktivitätsdiagrammen  
  Mit Aktivitätsdiagrammen können Sie den Steuerungsablauf und die Informationen zwischen den Aktionen eines Geschäfts, Systems oder Programms visuell darstellen und beschreiben. Dabei handelt es sich um eine einfache und hilfreiche Möglichkeit, anderen Personen den Workflow zu erläutern.  
@@ -539,50 +539,50 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Das folgende Diagramm zeigt eine spezielle Konfiguration der Komponenten für die Dinner Now-Website. Diese Konfiguration gibt an, dass jede Instanz der Website aus vier *Teilen*besteht:  
   
--   CustomerProcessing  
+- CustomerProcessing  
   
--   OrderProcessing  
+- OrderProcessing  
   
--   ReviewProcessing  
+- ReviewProcessing  
   
--   PaymentProcessing  
+- PaymentProcessing  
   
- Diese Teile sind Instanzen der angegebenen Komponententypen und sind wie folgt verbunden:  
+  Diese Teile sind Instanzen der angegebenen Komponententypen und sind wie folgt verbunden:  
   
- ![Komponenten innerhalb der Dinner Now-Website](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
+  ![Komponenten innerhalb der Dinner Now-Website](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
   
- **Komponenten innerhalb der Dinner Now-Website**  
+  **Komponenten innerhalb der Dinner Now-Website**  
   
- Die Dinner Now-Website delegiert sein Verhalten an diese Teile, die die Funktionen der Website behandeln. Die Pfeile zwischen der übergeordneten Komponente und ihren Mitgliedskomponenten weisen auf *Delegierungen* hin, mit denen angegeben wird, welche Teile die Nachricht behandeln, die das übergeordnete Element über die Schnittstellen empfängt oder sendet.  
+  Die Dinner Now-Website delegiert sein Verhalten an diese Teile, die die Funktionen der Website behandeln. Die Pfeile zwischen der übergeordneten Komponente und ihren Mitgliedskomponenten weisen auf *Delegierungen* hin, mit denen angegeben wird, welche Teile die Nachricht behandeln, die das übergeordnete Element über die Schnittstellen empfängt oder sendet.  
   
- In dieser Konfiguration werden die Kundenzahlungen von der PaymentProcessing-Komponente verarbeitet. Daher muss sie für die Integration mit dem Zahlungssystem von Lucerne aktualisiert werden. In anderen Szenarien können mehrere Instanzen eines Komponententyps in derselben übergeordneten Komponente vorhanden sein.  
+  In dieser Konfiguration werden die Kundenzahlungen von der PaymentProcessing-Komponente verarbeitet. Daher muss sie für die Integration mit dem Zahlungssystem von Lucerne aktualisiert werden. In anderen Szenarien können mehrere Instanzen eines Komponententyps in derselben übergeordneten Komponente vorhanden sein.  
   
- Thema  
+  Thema  
   
--   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)  
+- [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Zeichnen eines Komponentendiagramms  
  Ein Komponentendiagramm umfasst die folgenden Hauptfunktionen:  
   
--   *Komponenten* , die trennbare Stücke der Systemfunktionalität darstellen.  
+- *Komponenten* , die trennbare Stücke der Systemfunktionalität darstellen.  
   
--   *Bereitgestellte Schnittstellenports* , die Gruppen von Nachrichten oder Aufrufen darstellen, die von Komponenten implementiert und von anderen Komponenten oder externen Systemen verwendet werden.  
+- *Bereitgestellte Schnittstellenports* , die Gruppen von Nachrichten oder Aufrufen darstellen, die von Komponenten implementiert und von anderen Komponenten oder externen Systemen verwendet werden.  
   
--   *Erforderliche Schnittstellenports* , die Gruppen von Nachrichten oder Aufrufen darstellen, die von Komponenten an andere Komponenten oder externe Systeme gesendet werden. Diese Art von Port beschreibt die Vorgänge, die eine Komponente von anderen Komponenten oder externen Systemen mindestens erwartet.  
+- *Erforderliche Schnittstellenports* , die Gruppen von Nachrichten oder Aufrufen darstellen, die von Komponenten an andere Komponenten oder externe Systeme gesendet werden. Diese Art von Port beschreibt die Vorgänge, die eine Komponente von anderen Komponenten oder externen Systemen mindestens erwartet.  
   
--   *Teile* sind Elemente von Komponenten und üblicherweise Instanzen anderer Komponenten. Ein Teil ist ein Stück des internen Entwurfs der übergeordneten Komponente.  
+- *Teile* sind Elemente von Komponenten und üblicherweise Instanzen anderer Komponenten. Ein Teil ist ein Stück des internen Entwurfs der übergeordneten Komponente.  
   
--   *Abhängigkeiten* , die angeben, dass Komponenten die Funktionalität anderer Komponenten erfordern.  
+- *Abhängigkeiten* , die angeben, dass Komponenten die Funktionalität anderer Komponenten erfordern.  
   
--   *Delegierungen* , die angeben, dass Teile einer Komponente Nachrichten behandeln, die von der übergeordneten Komponente gesendet oder empfangen werden.  
+- *Delegierungen* , die angeben, dass Teile einer Komponente Nachrichten behandeln, die von der übergeordneten Komponente gesendet oder empfangen werden.  
   
- Thema  
+  Thema  
   
--   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)  
+- [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Zusammenfassung: Vorteile von Komponentendiagrammen  
  Mit Komponentendiagramme können Sie Folgendes visualisieren:  
@@ -604,41 +604,41 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 ###  <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Code Maps  
  Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links*dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:  
   
--   Untersuchen von unbekanntem Code  
+- Untersuchen von unbekanntem Code  
   
--   Verstehen, wo und wie sich eine vorgeschlagene Änderung auf vorhandenen Code auswirken könnte  
+- Verstehen, wo und wie sich eine vorgeschlagene Änderung auf vorhandenen Code auswirken könnte  
   
--   Auffinden von Bereichen mit Komplexität, natürlichen Ebenen oder Mustern sowie anderen Bereichen, die von Verbesserungen profitieren könnten  
+- Auffinden von Bereichen mit Komplexität, natürlichen Ebenen oder Mustern sowie anderen Bereichen, die von Verbesserungen profitieren könnten  
   
- Dinner Now muss z. B. die Kosten für die Aktualisierung der PaymentProcessing-Komponente schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler Code Maps aus dem Code und richtet den Fokus des Projektumfangs auf die Bereiche aus, die durch die Änderung betroffen sein könnten.  
+  Dinner Now muss z. B. die Kosten für die Aktualisierung der PaymentProcessing-Komponente schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler Code Maps aus dem Code und richtet den Fokus des Projektumfangs auf die Bereiche aus, die durch die Änderung betroffen sein könnten.  
   
- Die folgende Code Map zeigt die Abhängigkeiten zwischen der PaymentProcessing-Klasse und anderen Teilen des Dinner Now-Systems, die markiert dargestellt werden:  
+  Die folgende Code Map zeigt die Abhängigkeiten zwischen der PaymentProcessing-Klasse und anderen Teilen des Dinner Now-Systems, die markiert dargestellt werden:  
   
- ![Abhängigkeitsdiagramm für das Zahlungssystem von Dinner Now](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
+  ![Abhängigkeitsdiagramm für das Zahlungssystem von Dinner Now](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
   
- **Code Map für das Zahlungssystem von Dinner Now**  
+  **Code Map für das Zahlungssystem von Dinner Now**  
   
- Der Entwickler untersucht die Code Map, indem er die PaymentProcessing-Klasse erweitert und die zugehörigen Member auswählt, um die potenziell betroffenen Bereiche anzuzeigen:  
+  Der Entwickler untersucht die Code Map, indem er die PaymentProcessing-Klasse erweitert und die zugehörigen Member auswählt, um die potenziell betroffenen Bereiche anzuzeigen:  
   
- ![Methoden in der PaymentProcessing-Klasse und Abhängigkeiten](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
+  ![Methoden in der PaymentProcessing-Klasse und Abhängigkeiten](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
   
- **Methoden in der PaymentProcessing-Klasse und ihre Abhängigkeiten**  
+  **Methoden in der PaymentProcessing-Klasse und ihre Abhängigkeiten**  
   
- Für das Zahlungssystem von Lucerne wird die folgende Code Map generiert, um die zugehörigen Klassen, Methoden und Abhängigkeiten zu untersuchen. Das Team erkennt, dass das Lucerne-System auch Arbeit erfordern könnte, damit es mit anderen Teilen von Dinner Now interagieren kann:  
+  Für das Zahlungssystem von Lucerne wird die folgende Code Map generiert, um die zugehörigen Klassen, Methoden und Abhängigkeiten zu untersuchen. Das Team erkennt, dass das Lucerne-System auch Arbeit erfordern könnte, damit es mit anderen Teilen von Dinner Now interagieren kann:  
   
- ![Abhängigkeitsdiagramm für das Zahlungssystem von Lucerne](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
+  ![Abhängigkeitsdiagramm für das Zahlungssystem von Lucerne](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
   
- **Code Map für das Zahlungssystem von Lucerne**  
+  **Code Map für das Zahlungssystem von Lucerne**  
   
- Beide Teams arbeiten zusammen, um die Änderungen zu ermitteln, die zum Integrieren der beiden Systeme erforderlich sind. Es wird entschieden, einen Teil des Codes umzugestalten, damit er einfacher zu aktualisieren ist. Die PaymentApprover-Klasse wird in den DinnerNow.Business-Namespace verschoben und erfordert einige neue Methoden. Die Dinner Now-Klassen, die Transaktionen behandeln, erhalten einen eigenen Namespace. Die Teams erstellen und verwenden Arbeitsaufgaben, um ihre Arbeit zu planen, zu organisieren und nachzuverfolgen. Wo sinnvoll, werden Arbeitsaufgaben mit Modellelementen verknüpft.  
+  Beide Teams arbeiten zusammen, um die Änderungen zu ermitteln, die zum Integrieren der beiden Systeme erforderlich sind. Es wird entschieden, einen Teil des Codes umzugestalten, damit er einfacher zu aktualisieren ist. Die PaymentApprover-Klasse wird in den DinnerNow.Business-Namespace verschoben und erfordert einige neue Methoden. Die Dinner Now-Klassen, die Transaktionen behandeln, erhalten einen eigenen Namespace. Die Teams erstellen und verwenden Arbeitsaufgaben, um ihre Arbeit zu planen, zu organisieren und nachzuverfolgen. Wo sinnvoll, werden Arbeitsaufgaben mit Modellelementen verknüpft.  
   
- Nach der Neuorganisation des Codes generieren die Teams eine neue Code Map, um die aktualisierte Struktur und die Beziehungen anzuzeigen:  
+  Nach der Neuorganisation des Codes generieren die Teams eine neue Code Map, um die aktualisierte Struktur und die Beziehungen anzuzeigen:  
   
- ![Abhängigkeitsdiagramm mit neu organisiertem Code](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
+  ![Abhängigkeitsdiagramm mit neu organisiertem Code](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
   
- **Code Map mit neu organisiertem Code**  
+  **Code Map mit neu organisiertem Code**  
   
- Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Business-Namespace befindet und über ein paar neue Methoden verfügt. Die Dinner Now-Transaktionsklassen verfügen jetzt über einen eigenen PaymentSystem-Namespace, mit dem der Code später leichter behandelt werden kann.  
+  Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Business-Namespace befindet und über ein paar neue Methoden verfügt. Die Dinner Now-Transaktionsklassen verfügen jetzt über einen eigenen PaymentSystem-Namespace, mit dem der Code später leichter behandelt werden kann.  
   
 #### <a name="creating-a-code-map"></a>Erstellen einer Code Map  
   
@@ -696,21 +696,21 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="drawing-a-sequence-diagram"></a>Zeichnen eines Sequenzdiagramms  
  Ein Sequenzdiagramm umfasst die folgenden Hauptfunktionen:  
   
--   Vertikale *Lebenslinien* stellen Akteure oder Instanzen von Softwareobjekten dar.  
+- Vertikale *Lebenslinien* stellen Akteure oder Instanzen von Softwareobjekten dar.  
   
-     Klicken Sie auf die Lebenslinie, um ein Akteursymbol hinzuzufügen, mit dem angegeben wird, dass sich ein Teilnehmer außerhalb des Systems in der Entwicklung befindet. Legen Sie im Fenster **Eigenschaftenfenster** die Option **Akteur** auf **Wahr**fest. Wenn das Fenster **Eigenschaften** nicht angezeigt wird, drücken Sie **F4**.  
+   Klicken Sie auf die Lebenslinie, um ein Akteursymbol hinzuzufügen, mit dem angegeben wird, dass sich ein Teilnehmer außerhalb des Systems in der Entwicklung befindet. Legen Sie im Fenster **Eigenschaftenfenster** die Option **Akteur** auf **Wahr**fest. Wenn das Fenster **Eigenschaften** nicht angezeigt wird, drücken Sie **F4**.  
   
--   Horizontale *Meldungen* stellen Methodenaufrufe, Webdienstmeldungen oder eine andere Kommunikationsarten dar. *Vorkommnisausführungen* sind vertikal schraffierte Rechtecke, die auf Lebenslinien angezeigt werden und die Zeiträume darstellen, in denen Objektprozessaufrufe empfangen werden.  
+- Horizontale *Meldungen* stellen Methodenaufrufe, Webdienstmeldungen oder eine andere Kommunikationsarten dar. *Vorkommnisausführungen* sind vertikal schraffierte Rechtecke, die auf Lebenslinien angezeigt werden und die Zeiträume darstellen, in denen Objektprozessaufrufe empfangen werden.  
   
--   Während einer *synchrone* Nachricht-Sender-Objekt wartet das Steuerelement <\<zurückgeben >> wie ein normaler Funktionsaufruf. Bei einer *asynchronen* Meldung kann der Absender unmittelbar fortfahren.  
+- Während einer *synchrone* Nachricht-Sender-Objekt wartet das Steuerelement <\<zurückgeben >> wie ein normaler Funktionsaufruf. Bei einer *asynchronen* Meldung kann der Absender unmittelbar fortfahren.  
   
--   Mit <\<erstellen >> Meldungen über die Erstellung von Objekten, die von anderen Objekten. Dies sollte die erste an das Objekt gesendete Meldung sein.  
+- Mit <\<erstellen >> Meldungen über die Erstellung von Objekten, die von anderen Objekten. Dies sollte die erste an das Objekt gesendete Meldung sein.  
   
- Thema  
+  Thema  
   
--   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Zusammenfassung: Vorteile von Sequenzdiagrammen  
  Mit Sequenzdiagrammen können Sie Folgendes visualisieren:  
@@ -753,43 +753,43 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="drawing-a-class-diagram"></a>Zeichnen eines Klassendiagramms  
  Ein Klassendiagramm umfasst die folgenden Hauptfunktionen:  
   
--   Typen wie z. B. Klassen, Schnittstellen und Enumerationen:  
+- Typen wie z. B. Klassen, Schnittstellen und Enumerationen:  
   
-    -   Eine *Klasse* ist die Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen.  
+  -   Eine *Klasse* ist die Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen.  
   
-    -   Eine *Schnittstelle* definiert einen Teil des extern sichtbaren Verhaltens eines Objekts.  
+  -   Eine *Schnittstelle* definiert einen Teil des extern sichtbaren Verhaltens eines Objekts.  
   
-    -   Eine *Enumeration* ist eine Klassifizierung, die eine Liste von literalen Werten enthält.  
+  -   Eine *Enumeration* ist eine Klassifizierung, die eine Liste von literalen Werten enthält.  
   
--   *Attribute* sind Werte eines bestimmten Typs, der die einzelnen Instanzen einer *Klassifizierung*beschreiben. Eine Klassifizierung ist ein allgemeiner Name für Typen, Komponenten, Anwendungsfälle und sogar Akteure.  
+- *Attribute* sind Werte eines bestimmten Typs, der die einzelnen Instanzen einer *Klassifizierung*beschreiben. Eine Klassifizierung ist ein allgemeiner Name für Typen, Komponenten, Anwendungsfälle und sogar Akteure.  
   
--   *Vorgänge* sind Methoden oder Funktionen, die Instanzen einer Klassifizierung ausführen können.  
+- *Vorgänge* sind Methoden oder Funktionen, die Instanzen einer Klassifizierung ausführen können.  
   
--   Eine *Zuordnung* gibt eine Art von Beziehung zwischen zwei Klassifizierern an.  
+- Eine *Zuordnung* gibt eine Art von Beziehung zwischen zwei Klassifizierern an.  
   
-    -   Eine *Aggregation* ist eine Zuordnung, die einen gemeinsamen Besitz zwischen Klassifizierungen angibt.  
+  - Eine *Aggregation* ist eine Zuordnung, die einen gemeinsamen Besitz zwischen Klassifizierungen angibt.  
   
-    -   Eine *Komposition* ist eine Zuordnung, die eine ganzteilige Beziehung zwischen Klassifizierungen angibt.  
+  - Eine *Komposition* ist eine Zuordnung, die eine ganzteilige Beziehung zwischen Klassifizierungen angibt.  
   
-     Um Aggregationen oder Kompositionen anzuzeigen, legen Sie die Eigenschaft **Aggregation** für eine Zuordnung fest. Mit**Freigegeben** werden Aggregationen und mit **Verbund** werden Kompositionen angezeigt.  
+    Um Aggregationen oder Kompositionen anzuzeigen, legen Sie die Eigenschaft **Aggregation** für eine Zuordnung fest. Mit**Freigegeben** werden Aggregationen und mit **Verbund** werden Kompositionen angezeigt.  
   
--   Eine *Abhängigkeit* gibt an, dass durch Änderungen an der Definition einer Klassifizierung möglicherweise auch die Definition einer anderen Klassifizierung geändert wird.  
+- Eine *Abhängigkeit* gibt an, dass durch Änderungen an der Definition einer Klassifizierung möglicherweise auch die Definition einer anderen Klassifizierung geändert wird.  
   
--   Eine *Generalisierung* gibt an, dass eine bestimmte Klassifizierung einen Teil ihrer Definition von einer allgemeinen Klassifizierung erbt. Eine *Realisierung* gibt an, dass eine Klasse die Vorgänge und Attribute implementiert, die von einer Schnittstelle bereitgestellt werden.  
+- Eine *Generalisierung* gibt an, dass eine bestimmte Klassifizierung einen Teil ihrer Definition von einer allgemeinen Klassifizierung erbt. Eine *Realisierung* gibt an, dass eine Klasse die Vorgänge und Attribute implementiert, die von einer Schnittstelle bereitgestellt werden.  
   
-     Verwenden Sie das Tool **Vererbung** , um diese Beziehungen zu erstellen. Alternativ kann eine Realisierung als *Lollipop*dargestellt werden.  
+   Verwenden Sie das Tool **Vererbung** , um diese Beziehungen zu erstellen. Alternativ kann eine Realisierung als *Lollipop*dargestellt werden.  
   
--   *Pakete* sind Gruppen von Klassifizierern, Zuordnungen, Lebenslinien, Komponenten und anderen Paketen. *Importbeziehungen* geben an, dass ein Paket alle Definitionen eines anderen Pakets enthält.  
+- *Pakete* sind Gruppen von Klassifizierern, Zuordnungen, Lebenslinien, Komponenten und anderen Paketen. *Importbeziehungen* geben an, dass ein Paket alle Definitionen eines anderen Pakets enthält.  
   
- Als Ausgangspunkt für die Untersuchung und Besprechung bestehender Klassen können Sie mit dem Klassen-Designer Klassendiagramme aus Code erstellen.  
+  Als Ausgangspunkt für die Untersuchung und Besprechung bestehender Klassen können Sie mit dem Klassen-Designer Klassendiagramme aus Code erstellen.  
   
- Thema  
+  Thema  
   
--   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
+- [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Zusammenfassung: Vorteile von Klassendiagrammen  
  Mit Klassendiagrammen können Sie Folgendes definieren:  
@@ -839,35 +839,35 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="drawing-a-layer-diagram"></a>Zeichnen eines Ebenendiagramms  
  Ein Ebenendiagramm umfasst die folgenden Hauptfunktionen:  
   
--   *Ebenen* beschreiben logische Gruppen von Artefakten.  
+- *Ebenen* beschreiben logische Gruppen von Artefakten.  
   
--   Ein *Link* ist eine Zuordnung zwischen einer Ebene und einem Artefakt.  
+- Ein *Link* ist eine Zuordnung zwischen einer Ebene und einem Artefakt.  
   
-     Um Ebenen aus Artefakten zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, aus Code Maps, der Klassenansicht oder dem Objektkatalog. Um neue Ebenen zu zeichnen und sie dann mit Artefakten zu verknüpfen, verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um die Ebenen zu erstellen, und ziehen Sie dann Elemente in diese Ebenen.  
+   Um Ebenen aus Artefakten zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, aus Code Maps, der Klassenansicht oder dem Objektkatalog. Um neue Ebenen zu zeichnen und sie dann mit Artefakten zu verknüpfen, verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um die Ebenen zu erstellen, und ziehen Sie dann Elemente in diese Ebenen.  
   
-     Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein. Beachten Sie folgendes, wenn Sie die Anzahl der Artefakte in einer Ebene interpretieren:  
+   Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein. Beachten Sie folgendes, wenn Sie die Anzahl der Artefakte in einer Ebene interpretieren:  
   
-    -   Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
+  - Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
   
-         Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.  
+     Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.  
   
-    -   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
+  - Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
   
-     Klicken Sie mit der rechten Maustaste auf die Ebene, um die mit der Ebene verknüpften Artefakte anzuzeigen, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.  
+    Klicken Sie mit der rechten Maustaste auf die Ebene, um die mit der Ebene verknüpften Artefakte anzuzeigen, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.  
   
--   Eine *Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt. Eine *bidirektionale Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.  
+- Eine *Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt. Eine *bidirektionale Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.  
   
-     Um vorhandene Abhängigkeiten in einem Ebenendiagramm anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten zu beschreiben, zeichnen Sie neue.  
+   Um vorhandene Abhängigkeiten in einem Ebenendiagramm anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten zu beschreiben, zeichnen Sie neue.  
   
- Thema  
+  Thema  
   
--   [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)  
+- [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)  
   
--   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)  
+- [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)  
   
--   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
+- [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
   
 #### <a name="summary-strengths-of-layer-diagrams"></a>Zusammenfassung: Vorteile von Ebenendiagrammen  
  Mit Ebenendiagrammen können Sie Folgendes ausführen:  

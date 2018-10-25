@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: IDebugCoreServer3::CreateInstanceInServer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71995e38cf58c23437cbb9a6d6973fbd09cab8ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171eda8b7c1b206ea54839366686ad43f690afe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886473"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Erstellt eine Instanz von Debugging-Modul auf dem Server.  
+Erstellt eine Instanz von einer Debug-Engine auf dem Server.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,23 +49,23 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Parameter  
  `szDll`  
- [in] Pfad zur Dll, die die im angegebenen CLSID implementiert die `clsidObject` Parameter. Ist dies `NULL`, klicken Sie dann COM `CoCreateInstance` Funktion aufgerufen wird.  
+ [in] Pfad zur Dll, die in angegebene CLSID implementiert die `clsidObject` Parameter. Ist dies `NULL`, klicken Sie dann COM `CoCreateInstance` -Funktion aufgerufen wird.  
   
  `wLangId`  
- [in] Gebietsschema der Debugging-Modul. Dies kann 0 sein, wenn die [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) Methode sollte nicht aufgerufen werden.  
+ [in] Gebietsschema der Debug-Engine. Dies kann 0 sein, wenn die [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) -Methode nicht aufgerufen werden soll.  
   
  `clsidObject`  
- [in] Die CLSID der Debugging-Modul erstellen.  
+ [in] Die CLSID der Debug-Engine zu erstellen.  
   
  `riid`  
- [in] Schnittstellen-ID der Schnittstelle zum Abrufen von das Klassenobjekt.  
+ [in] Schnittstellen-ID der Schnittstelle aus dem Klassenobjekt abrufen.  
   
  `ppvObject`  
- [out] `IUnknown` Schnittstelle aus dem instanziierten Objekt. Umgewandelt oder dieses Objekt auf die gewünschte Schnittstelle zu marshallen.  
+ [out] `IUnknown` Schnittstelle aus dem instanziierten Objekt. Wandeln Sie aus, oder Marshallen Sie dieses Objekt auf die gewünschte Schnittstelle zu.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
- [setLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)
+ [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

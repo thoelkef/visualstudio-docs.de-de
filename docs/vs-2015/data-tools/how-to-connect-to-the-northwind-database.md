@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897629"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Gewusst wie: Verbinden mit der Datenbank Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ Während Sie das Erstellen von Datenbankanwendungen mithilfe von Visual Studio l
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>So erstellen Sie eine Datenverbindung mit der Northwind-Datenbank (SQL Server)  
   
-1.  Auf der **Ansicht** Menü wählen **Server-Explorer**/**Datenbank-Explorer**.  
+1. Auf der **Ansicht** Menü wählen **Server-Explorer**/**Datenbank-Explorer**.  
   
-2.  In **Server-Explorer**/**Datenbank-Explorer**, öffnen Sie das Kontextmenü für **Datenverbindungen** , und wählen Sie **"Verbindung hinzufügen"**.  
+2. In **Server-Explorer**/**Datenbank-Explorer**, öffnen Sie das Kontextmenü für **Datenverbindungen** , und wählen Sie **"Verbindung hinzufügen"**.  
   
-     Nach der Auswahl **Verbindung hinzufügen**, entweder die **Datenquelle auswählen** Dialogfeld oder **Verbindung hinzufügen** Dialogfeld wird angezeigt.  
+    Nach der Auswahl **Verbindung hinzufügen**, entweder die **Datenquelle auswählen** Dialogfeld oder **Verbindung hinzufügen** Dialogfeld wird angezeigt.  
   
-3.  Wenn die **Datenquelle auswählen** wählen Sie im angezeigten Dialogfeld **Microsoft SQL Server**, und wählen Sie dann **OK**.  
+3. Wenn die **Datenquelle auswählen** wählen Sie im angezeigten Dialogfeld **Microsoft SQL Server**, und wählen Sie dann **OK**.  
   
-     Wenn die **Verbindung hinzufügen** Dialogfeld wird angezeigt, und die **Datenquelle** ist nicht **Microsoft SQL Server (SqlClient)**, wählen Sie die **Änderung** die Schaltfläche, um die **Datenquelle wechseln** wählen Sie im Dialogfeld **Microsoft SQL Server**, und wählen Sie dann die **OK** Schaltfläche.  
+    Wenn die **Verbindung hinzufügen** Dialogfeld wird angezeigt, und die **Datenquelle** ist nicht **Microsoft SQL Server (SqlClient)**, wählen Sie die **Änderung** die Schaltfläche, um die **Datenquelle wechseln** wählen Sie im Dialogfeld **Microsoft SQL Server**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  In der **Servernamen** aufzulisten, geben Sie den Namen des Servers, auf dem die Northwind-Datenbank gespeichert ist.  
+4. In der **Servernamen** aufzulisten, geben Sie den Namen des Servers, auf dem die Northwind-Datenbank gespeichert ist.  
   
-5.  Wählen Sie je nach den Anforderungen Ihrer Version von SQL Server und der Northwind-Datenbank, **Windows-Authentifizierung verwenden** oder **SQL Server-Authentifizierung** , und geben Sie einen Benutzernamen und Kennwort zum Anmelden auf des Computers mit SQL Server.  
+5. Wählen Sie je nach den Anforderungen Ihrer Version von SQL Server und der Northwind-Datenbank, **Windows-Authentifizierung verwenden** oder **SQL Server-Authentifizierung** , und geben Sie einen Benutzernamen und Kennwort zum Anmelden auf des Computers mit SQL Server.  
   
-6.  Wählen Sie die Northwind-Datenbank in der **auswählen oder Eingeben eines Datenbanknamens** Liste.  
+6. Wählen Sie die Northwind-Datenbank in der **auswählen oder Eingeben eines Datenbanknamens** Liste.  
   
-7.  Wählen Sie **Testverbindung** um die Verbindung zur Northwind-Datenbank überprüfen.  
+7. Wählen Sie **Testverbindung** um die Verbindung zur Northwind-Datenbank überprüfen.  
   
-8.  Klicken Sie auf **OK**.  
+8. Klicken Sie auf **OK**.  
   
-     Eine Datenverbindung zur Northwind-Datenbank wird hinzugefügt, um **Server-Explorer**/**Datenbank-Explorer**.  
+    Eine Datenverbindung zur Northwind-Datenbank wird hinzugefügt, um **Server-Explorer**/**Datenbank-Explorer**.  
   
- Außer dem Herstellen einer Verbindung mit einer Remoteinstanz einer SQL Server-Datenbank können Sie auch eine Verbindung direkt zu den eigentlichen Dateien herstellen, in denen sich die Datenbank befindet. Auf diese Weise können Sie die Datenbankdateien direkt einem Projekt hinzufügen, wo sie dann als Teil der Anwendung bereitgestellt werden können. Die folgenden lokalen Datenbankdateien werden derzeit unterstützt: SQL Server Compact-Datenbankdateien (.sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] und SQL Server Express-Datenbankdateien (.mdf) und Microsoft Access-Datenbankdateien (.mdb oder .accdb).  
+   Außer dem Herstellen einer Verbindung mit einer Remoteinstanz einer SQL Server-Datenbank können Sie auch eine Verbindung direkt zu den eigentlichen Dateien herstellen, in denen sich die Datenbank befindet. Auf diese Weise können Sie die Datenbankdateien direkt einem Projekt hinzufügen, wo sie dann als Teil der Anwendung bereitgestellt werden können. Die folgenden lokalen Datenbankdateien werden derzeit unterstützt: SQL Server Compact-Datenbankdateien (.sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] und SQL Server Express-Datenbankdateien (.mdf) und Microsoft Access-Datenbankdateien (.mdb oder .accdb).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>So erstellen Sie eine Datenverbindung zur Datenbank Northwind – MDF-Datenbankdatei (SQL Server)  
   

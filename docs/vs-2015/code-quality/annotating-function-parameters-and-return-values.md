@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900162"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
   
  **Anmerkungen und Beschreibungen**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Parameter darf nicht null sein, und klicken Sie im Zustand "POST" der Speicherort verweist, darf nicht null sein, und muss gültig sein.  
+   Parameter darf nicht null sein, und klicken Sie im Zustand "POST" der Speicherort verweist, darf nicht null sein, und muss gültig sein.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     Parameter kann null sein, aber im Zustand "POST" der Speicherort verweist, darf nicht null sein und muss gültig sein.  
+   Parameter kann null sein, aber im Zustand "POST" der Speicherort verweist, darf nicht null sein und muss gültig sein.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Parameter darf nicht null sein, und im Zustand "nach" kann der Speicherort auf null sein.  
+   Parameter darf nicht null sein, und im Zustand "nach" kann der Speicherort auf null sein.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     Parameter kann null sein, und im Zustand "nach" kann der Speicherort auf null sein.  
+   Parameter kann null sein, und im Zustand "nach" kann der Speicherort auf null sein.  
   
- In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname, der die Bedeutung der Anmerkung genauer bestimmen eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.  
+  In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname, der die Bedeutung der Anmerkung genauer bestimmen eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.  
   
 > [!IMPORTANT]
 >  Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.  
   
  **Anmerkungen und Beschreibungen**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     Der zurückgegebene Zeiger wurde die `_Null_terminated_` Anmerkung.  
+   Der zurückgegebene Zeiger wurde die `_Null_terminated_` Anmerkung.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     Der zurückgegebene Zeiger verfügt über eine COM-Semantik, und Sie aus diesem Grund enthält ein `_On_failure_` nach der Bedingung, dass der zurückgegebene Zeiger null ist.  
+   Der zurückgegebene Zeiger verfügt über eine COM-Semantik, und Sie aus diesem Grund enthält ein `_On_failure_` nach der Bedingung, dass der zurückgegebene Zeiger null ist.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer der Größe `s` Elemente oder Bytes.  
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer der Größe `s` Elemente oder Bytes.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     Der zurückgegebene Zeiger verweist auf einen Puffer der Größe `s` Elemente oder Bytes, von denen die erste `c` gültig sind.  
+   Der zurückgegebene Zeiger verweist auf einen Puffer der Größe `s` Elemente oder Bytes, von denen die erste `c` gültig sind.  
   
- Bestimmte Konventionen für die Schnittstelle wird davon ausgegangen, dass die Output-Parameter bei einem Fehler sitzungstokenwert sind.  Mit Ausnahme der explizit COM-Code werden die Formulare in der folgenden Tabelle bevorzugt.  Verwenden Sie für COM-Code die entsprechenden COM-Formate, die aufgeführt sind, im vorherigen Abschnitt.  
+  Bestimmte Konventionen für die Schnittstelle wird davon ausgegangen, dass die Output-Parameter bei einem Fehler sitzungstokenwert sind.  Mit Ausnahme der explizit COM-Code werden die Formulare in der folgenden Tabelle bevorzugt.  Verwenden Sie für COM-Code die entsprechenden COM-Formate, die aufgeführt sind, im vorherigen Abschnitt.  
   
- **Anmerkungen und Beschreibungen**  
+  **Anmerkungen und Beschreibungen**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Ändert die andere Anmerkungen. Das Resultset ist null, wenn die Funktion fehlerhaft ist.  
+   Ändert die andere Anmerkungen. Das Resultset ist null, wenn die Funktion fehlerhaft ist.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Ändert die andere Anmerkungen. Das Ergebnis wird auf 0 (null) festgelegt, wenn die Funktion fehlschlägt.  
+   Ändert die andere Anmerkungen. Das Ergebnis wird auf 0 (null) festgelegt, wenn die Funktion fehlschlägt.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen nicht optionale Parameter.  
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen nicht optionale Parameter.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen optionalen Parameter.  
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen optionalen Parameter.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen Verweisparameter.  
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen Verweisparameter.  
   
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter  
  Eine häufige Verwendung des Verweisparameters ist für Output-Parameter.  Für einfache ausgabeverweisparametern – z. B. `int&`–`_Out_` liefert die Semantik richtig.  Wenn der Ausgabewert ist jedoch ein Zeiger, z. B. `int *&`– wie die entsprechende Zeiger Anmerkungen `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Die Semantik der ausgabeverweisparametern für Zeigertypen präzise ausgedrückt werden, verwenden Sie diese zusammengesetzten Anmerkungen:  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_nopad | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_nopad | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26005e6e7062fcf5a3a6f0a9aba4ac7a79b92f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0cd7069b9b84ba088c7a40255a8805fc8bb2c394
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858042"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Ruft ein Flag, das angibt, ob im Abschnitt auf die nächste Begrenzung des Arbeitsspeichers nicht aufgefüllt werden soll.  
+Ruft ein Flag, der angibt, ob der Abschnitt nicht soll, können Sie auf die nächsten Begrenzung des Arbeitsspeichers aufgefüllt werden ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_nopad(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn Abschnitt nicht auf die nächste Begrenzung des Arbeitsspeichers; aufgefüllt werden soll, andernfalls zurückgegeben `FALSE`.  
+ [out] Gibt `TRUE` , wenn der Abschnitt nicht soll, können Sie bis zur nächsten Arbeitsspeicher Begrenzung aufgefüllt werden; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Dies ist eine Eigenschaft, die in der Regel nur bei älteren Dateien angezeigt.  
+ Dies ist eine Eigenschaft, die in der Regel nur für ältere Dateien angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

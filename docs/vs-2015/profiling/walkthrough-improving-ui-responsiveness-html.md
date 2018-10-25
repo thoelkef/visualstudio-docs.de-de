@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893376"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 ### <a name="analyzing-performance-data"></a>Analysieren der Leistungsdaten  
   
-1.  Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** einen Windows Phone-Emulator oder den **Simulator** aus.  
+1. Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** einen Windows Phone-Emulator oder den **Simulator** aus.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistung und Diagnose**.  
+2. Klicken Sie im Menü **Debuggen** auf **Leistung und Diagnose**.  
   
-3.  Wählen Sie unter **Verfügbare Tools** **HTML-UI-Reaktionsfähigkeit** aus, und wählen Sie dann **Starten** aus.  
+3. Wählen Sie unter **Verfügbare Tools** **HTML-UI-Reaktionsfähigkeit** aus, und wählen Sie dann **Starten** aus.  
   
-     In diesem Lernprogramm fügen Sie den Profiler an das Startprojekt an. Informationen zu anderen Optionen, wie dem Anfügen des Profilers an eine installierte App, finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).  
+    In diesem Lernprogramm fügen Sie den Profiler an das Startprojekt an. Informationen zu anderen Optionen, wie dem Anfügen des Profilers an eine installierte App, finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).  
   
-     Beim Start des Profilers wird möglicherweise eine Benutzerkontensteuerung die Berechtigung zum Ausführen der Datei "VsEtwCollector.exe" abfragen. Klicken Sie auf **Ja**.  
+    Beim Start des Profilers wird möglicherweise eine Benutzerkontensteuerung die Berechtigung zum Ausführen der Datei "VsEtwCollector.exe" abfragen. Klicken Sie auf **Ja**.  
   
-4.  Wählen Sie in der ausgeführten App **Waiting for values** (Warten auf Werte) aus, und warten Sie ca. 10 Sekunden. Überprüfen Sie, ob Text und Farbe der Schaltfläche ungefähr einmal pro Sekunde aktualisiert werden.  
+4. Wählen Sie in der ausgeführten App **Waiting for values** (Warten auf Werte) aus, und warten Sie ca. 10 Sekunden. Überprüfen Sie, ob Text und Farbe der Schaltfläche ungefähr einmal pro Sekunde aktualisiert werden.  
   
-5.  Wechseln Sie aus der ausgeführten App zu Visual Studio (ALT+TAB).  
+5. Wechseln Sie aus der ausgeführten App zu Visual Studio (ALT+TAB).  
   
-6.  Wählen Sie **Sammlung beenden** aus.  
+6. Wählen Sie **Sammlung beenden** aus.  
   
-     Der Profiler zeigt Informationen auf einer neuen Registerkarte in Visual Studio an. Wenn Sie die Daten zu CPU-Auslastung und visuellem Durchsatz (FPS) betrachten, können Sie leicht einige Trends ermitteln:  
+    Der Profiler zeigt Informationen auf einer neuen Registerkarte in Visual Studio an. Wenn Sie die Daten zu CPU-Auslastung und visuellem Durchsatz (FPS) betrachten, können Sie leicht einige Trends ermitteln:  
   
-    -   Die CPU-Auslastung erhöht sich nach ungefähr 3 Sekunden deutlich (wenn Sie auf die Schaltfläche **Waiting for values** (Warten auf Werte) geklickt haben) und zeigt ab diesem Punkt ein klares Muster von Ereignissen an (eine gleichmäßige Mischung aus Skripterstellung, Formatieren und Rendern).  
+   - Die CPU-Auslastung erhöht sich nach ungefähr 3 Sekunden deutlich (wenn Sie auf die Schaltfläche **Waiting for values** (Warten auf Werte) geklickt haben) und zeigt ab diesem Punkt ein klares Muster von Ereignissen an (eine gleichmäßige Mischung aus Skripterstellung, Formatieren und Rendern).  
   
-    -   Der visuelle Durchsatz ist nicht betroffen, und der FPS-Wert bleibt bei einem Durchsatz von 60 (d. h., es gibt keine verworfenen Rahmen).  
+   - Der visuelle Durchsatz ist nicht betroffen, und der FPS-Wert bleibt bei einem Durchsatz von 60 (d. h., es gibt keine verworfenen Rahmen).  
   
      Sehen wir uns einen typischen Abschnitt des CPU-Auslastungsdiagramms an, um festzustellen, welche Vorgänge die App in diesem Zeitraum hoher Aktivität ausführt.  
   
-7.  Wählen Sie einen ein- bis zweisekündigen Teil in der Mitte des CPU-Auslastungsdiagramms aus (entweder durch Klicken und Ziehen oder mithilfe der Registerkarte und der Pfeiltasten). Die folgende Abbildung zeigt das CPU-Auslastungsdiagramm, nachdem eine Auswahl getroffen wurde. Die Auswahl ist der nicht freigegebene Bereich.  
+7. Wählen Sie einen ein- bis zweisekündigen Teil in der Mitte des CPU-Auslastungsdiagramms aus (entweder durch Klicken und Ziehen oder mithilfe der Registerkarte und der Pfeiltasten). Die folgende Abbildung zeigt das CPU-Auslastungsdiagramm, nachdem eine Auswahl getroffen wurde. Die Auswahl ist der nicht freigegebene Bereich.  
   
-     ![CPU-Auslastungsdiagramm](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU-Auslastungsdiagramm](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Wählen Sie **Vergrößern** aus.  
+8. Wählen Sie **Vergrößern** aus.  
   
-     Das Diagramm wird geändert, um den ausgewählten Zeitraum ausführlicher anzuzeigen. Die folgende Abbildung zeigt das CPU-Auslastungsdiagramm, nachdem es vergrößert wurde. (Die spezifischen Daten können abweichen, aber das allgemeine Muster ist erkennbar.)  
+    Das Diagramm wird geändert, um den ausgewählten Zeitraum ausführlicher anzuzeigen. Die folgende Abbildung zeigt das CPU-Auslastungsdiagramm, nachdem es vergrößert wurde. (Die spezifischen Daten können abweichen, aber das allgemeine Muster ist erkennbar.)  
   
-     ![Vergrößerte Ansicht](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Vergrößerte Ansicht](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Die Zeitachsendetails im unteren Bereich zeigen ein Beispiel mit Details für den ausgewählten Zeitraum an.  
+    Die Zeitachsendetails im unteren Bereich zeigen ein Beispiel mit Details für den ausgewählten Zeitraum an.  
   
-     ![Zeitachsendetails](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Zeitachsendetails](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Die Ereignisse in den Zeitachsedetails bestätigen sichtbare Entwicklungen im CPU-Auslastungsdiagramm: Es gibt viele Ereignisse, die innerhalb kurzer Zeiträume stattfinden. Die Zeitachsendetailansicht zeigt, dass diese Ereignisse `Timer`, `Layout`- und `Paint`-Ereignisse sind.  
+    Die Ereignisse in den Zeitachsedetails bestätigen sichtbare Entwicklungen im CPU-Auslastungsdiagramm: Es gibt viele Ereignisse, die innerhalb kurzer Zeiträume stattfinden. Die Zeitachsendetailansicht zeigt, dass diese Ereignisse `Timer`, `Layout`- und `Paint`-Ereignisse sind.  
   
 9. Verwenden Sie das Kontextmenü für eines der `Timer`-Ereignisse im unteren Bereich (bzw. klicken Sie mit der rechten Maustaste darauf), und wählen Sie **Für Ereignis filtern** aus. Die folgende Abbildung zeigt ein Beispiel für Details, die typisch für eines der `Timer`-Ereignisse in dieser Test-App sind.  
   

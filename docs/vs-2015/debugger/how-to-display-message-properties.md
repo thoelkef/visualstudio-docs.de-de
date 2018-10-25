@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a58396756456d025f978ca101076c921d4d2772
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 948edbfbef7d3de0ace7c6e33e88d63dadc4dee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897446"
 ---
 # <a name="how-to-display-message-properties"></a>Gewusst wie: Anzeigen von Meldungseigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Um weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Eigenschaften der Nachricht  
   
-1.  Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
+1. Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
   
-2.  Von der **Ansicht** Menü wählen **Eigenschaften**.  
+2. Von der **Ansicht** Menü wählen **Eigenschaften**.  
   
- Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
+   Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
 
 
 

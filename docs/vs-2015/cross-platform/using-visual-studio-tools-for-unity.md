@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b99999c3a075b6e79f2b98fc70cf50a9d01a84d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892830"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>So erstellen Sie mit dem MonoBehavior-Assistenten leere "MonoBehavior"-Methodendefinitionen  
   
-1.  Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG+UMSCHALT+M**, um den MonoBehavior-Assistenten zu starten. Wenn Sie die neuen Methoden alternativ hinter einer bereits implementierten Methode einfügen möchten, können Sie dies später angeben. Drücken Sie einfach **STRG+UMSCHALT+M**.  
+1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG+UMSCHALT+M**, um den MonoBehavior-Assistenten zu starten. Wenn Sie die neuen Methoden alternativ hinter einer bereits implementierten Methode einfügen möchten, können Sie dies später angeben. Drücken Sie einfach **STRG+UMSCHALT+M**.  
   
-2.  Wählen Sie die Methoden aus, die Sie überladen möchten. Aktivieren Sie im Fenster **Create script methods** (Skriptmethoden erstellen) unter **Select methods to create** (Zu erstellende Methoden auswählen) das Kontrollkästchen neben dem Namen der einzelnen Methoden, die überladen werden sollen.  
+2. Wählen Sie die Methoden aus, die Sie überladen möchten. Aktivieren Sie im Fenster **Create script methods** (Skriptmethoden erstellen) unter **Select methods to create** (Zu erstellende Methoden auswählen) das Kontrollkästchen neben dem Namen der einzelnen Methoden, die überladen werden sollen.  
   
-3.  Stellen Sie sicher, dass die Frameworkversion, die in der Dropdownliste **Framework version** (Frameworkversion) angezeigt wird, der Version entspricht, die Sie verwenden. Falls keine Übereinstimmung vorliegt, ändern Sie den Wert in der Dropdownliste in die Version, die Sie verwenden möchten.  
+3. Stellen Sie sicher, dass die Frameworkversion, die in der Dropdownliste **Framework version** (Frameworkversion) angezeigt wird, der Version entspricht, die Sie verwenden. Falls keine Übereinstimmung vorliegt, ändern Sie den Wert in der Dropdownliste in die Version, die Sie verwenden möchten.  
   
-4.  Wählen Sie aus, wo die Methoden eingefügt werden sollen. Standardmäßig werden die Methoden an der Position des Cursors eingefügt. Wenn Sie sie an anderer Stelle einfügen möchten, können Sie sie nach jeder Methode einfügen, die bereits in Ihrer Klasse implementiert ist. Um eine dieser Stellen auszuwählen, ändern Sie den Wert in der Dropdownliste **Einfügemarke** in die gewünschte Stelle.  
+4. Wählen Sie aus, wo die Methoden eingefügt werden sollen. Standardmäßig werden die Methoden an der Position des Cursors eingefügt. Wenn Sie sie an anderer Stelle einfügen möchten, können Sie sie nach jeder Methode einfügen, die bereits in Ihrer Klasse implementiert ist. Um eine dieser Stellen auszuwählen, ändern Sie den Wert in der Dropdownliste **Einfügemarke** in die gewünschte Stelle.  
   
-5.  Wenn Sie möchten, dass der Assistent Kommentare für die Methoden generiert, die Sie ausgewählt haben, markieren Sie das Kontrollkästchen **Methodenkommentare generieren**. Diese Kommentare sollen Ihnen helfen zu verstehen, wann die Methode aufgerufen wird und was ihre allgemeinen Aufgaben sind.  
+5. Wenn Sie möchten, dass der Assistent Kommentare für die Methoden generiert, die Sie ausgewählt haben, markieren Sie das Kontrollkästchen **Methodenkommentare generieren**. Diese Kommentare sollen Ihnen helfen zu verstehen, wann die Methode aufgerufen wird und was ihre allgemeinen Aufgaben sind.  
   
-6.  Klicken Sie auf die Schaltfläche **OK**, um den Assistenten zu beenden und die Methoden in Ihren Code einzufügen.  
+6. Klicken Sie auf die Schaltfläche **OK**, um den Assistenten zu beenden und die Methoden in Ihren Code einzufügen.  
   
- Der MonoBehavior-Assistent ist besonders hilfreich, solange Sie sich noch mit der Unity-API vertraut machen oder wenn Sie eine Methode überladen müssen, die Sie noch nicht kennen. Sobald Sie mehr Erfahrung mit der Unity-API haben, empfiehlt es sich ggf., den Quick MonoBehavior-Assistenten für das schnelle Erstellen von Methoden zu verwenden, mit denen Sie bereits vertraut sind.  
+   Der MonoBehavior-Assistent ist besonders hilfreich, solange Sie sich noch mit der Unity-API vertraut machen oder wenn Sie eine Methode überladen müssen, die Sie noch nicht kennen. Sobald Sie mehr Erfahrung mit der Unity-API haben, empfiehlt es sich ggf., den Quick MonoBehavior-Assistenten für das schnelle Erstellen von Methoden zu verwenden, mit denen Sie bereits vertraut sind.  
   
 #### <a name="quick-monobehavior-scripting-wizard"></a>Quick MonoBehavior-Assistent für das Erstellen von Skripts  
  Wenn Sie bereits mit der Unity-API vertraut sind, können Sie mithilfe des Quick MonoBehavior-Assistenten überladene Methoden sogar noch schneller implementieren. Mit diesem Assistenten können Sie die gewünschte Methode angeben, die ohne Methodenkommentare an der Cursorposition eingefügt wird.  
@@ -80,11 +80,11 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ##### <a name="to-view-the-unity-project-explorer"></a>So zeigen Sie den Unity-Projekt-Explorer an  
   
--   Wählen Sie in Visual Studio im Hauptmenü **Ansicht** den **Unity-Projektexplorer** aus. Tastatur: **ALT+UMSCHALT+E**  
+- Wählen Sie in Visual Studio im Hauptmenü **Ansicht** den **Unity-Projektexplorer** aus. Tastatur: **ALT+UMSCHALT+E**  
   
-     ![Das Fenster für den Unity-Projektexplorer anzeigen](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_unity_project_explorer")  
+   ![Das Fenster für den Unity-Projektexplorer anzeigen](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_unity_project_explorer")  
   
- Im Unity-Projekt-Explorer werden alle Unity-Projektdateien und -verzeichnisse auf die gleiche Weise wie im Unity-Editor angezeigt. Dies unterscheidet sich vom Navigieren durch Ihre Unity-Skripts im Projektmappen-Explorer, der nur Ihre Skriptdateien enthält und diese als die Projekte und Projektmappen so angezeigt, wie sie von Visual Studio Tools für Unity generiert und organisiert werden. Besonders bei großen Projekten ist es oft einfacher, das zu ändernde Skript im Unity-Projekt-Explorer zu suchen, der auch das Ändern anderer Dateitypen in Visual Studio vereinfacht, z. B. textbasierter Konfigurationsdateien, ohne diese einem der Projekte in der Visual Studio-Projektmappe hinzuzufügen.  
+  Im Unity-Projekt-Explorer werden alle Unity-Projektdateien und -verzeichnisse auf die gleiche Weise wie im Unity-Editor angezeigt. Dies unterscheidet sich vom Navigieren durch Ihre Unity-Skripts im Projektmappen-Explorer, der nur Ihre Skriptdateien enthält und diese als die Projekte und Projektmappen so angezeigt, wie sie von Visual Studio Tools für Unity generiert und organisiert werden. Besonders bei großen Projekten ist es oft einfacher, das zu ändernde Skript im Unity-Projekt-Explorer zu suchen, der auch das Ändern anderer Dateitypen in Visual Studio vereinfacht, z. B. textbasierter Konfigurationsdateien, ohne diese einem der Projekte in der Visual Studio-Projektmappe hinzuzufügen.  
   
 ### <a name="unity-error-list"></a>Unity-Fehlerliste  
  Sie können Meldungen in der Unity-Konsole innerhalb von Visual Studio anzeigen, wenn eine Verbindung mit einer Unity-Instanz besteht. Dies schließt Fehler und Warnungen von Unity ein. Die Meldungen werden im Visual Studio-Fenster **Fehlerliste** angezeigt. Fehlermeldungen von Unity werden auf der Registerkarte **Fehler** angezeigt. Warnmeldungen werden auf der Registerkarte **Warnungen** angezeigt. Andere Meldungen, z.B. von der Debug.Log Unity-API gesendete, werden auf der Registerkarte **Meldungen** angezeigt.  
@@ -149,20 +149,20 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>So aktivieren Sie das Skriptdebugging in einem Unity-Player  
   
--   Stellen Sie sicher, dass Sie einen Development Build mit aktiviertem Skriptdebugging erstellen. Aktivieren Sie in den Buildeinstellungen Ihres Unity-Projekts die Kontrollkästchen **Development Build** und **Script Debugging** (Skriptdebugging).  
+- Stellen Sie sicher, dass Sie einen Development Build mit aktiviertem Skriptdebugging erstellen. Aktivieren Sie in den Buildeinstellungen Ihres Unity-Projekts die Kontrollkästchen **Development Build** und **Script Debugging** (Skriptdebugging).  
   
- ![Konfigurieren Sie die Unity-Buildeinstellungen für das Debuggen](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings").  
+  ![Konfigurieren Sie die Unity-Buildeinstellungen für das Debuggen](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings").  
   
- Um darüber hinaus eine Unity-App im **Unity Web Player** zu debuggen, müssen Sie sie auch für das Verwenden des **Development Release Channel** (Releasekanal für Entwicklungen) konfigurieren.  
+  Um darüber hinaus eine Unity-App im **Unity Web Player** zu debuggen, müssen Sie sie auch für das Verwenden des **Development Release Channel** (Releasekanal für Entwicklungen) konfigurieren.  
   
 ##### <a name="to-configure-the-development-release-channel-in-unity-web-player"></a>So konfigurieren Sie den Development Release Channel im Unity Web Player  
   
--   Wählen Sie im Unity Web Player im Kontextmenü **Release Channel** (Releasekanal) aus, und stellen Sie sicher, dass die Option **Development** (Entwicklung) aktiviert ist.  
+- Wählen Sie im Unity Web Player im Kontextmenü **Release Channel** (Releasekanal) aus, und stellen Sie sicher, dass die Option **Development** (Entwicklung) aktiviert ist.  
   
-    > [!IMPORTANT]
-    >  Ab Unity 4.2 ist das Kontextmenüelement **Release Channel** nur im Web Player-Kontextmenü verfügbar, wenn beim Öffnen des Kontextmenüs die **ALT**-Taste gedrückt wird. Wenn der Web Player unter Mac OS X ausgeführt wird, drücken Sie stattdessen die **Optionstaste**.  
+  > [!IMPORTANT]
+  >  Ab Unity 4.2 ist das Kontextmenüelement **Release Channel** nur im Web Player-Kontextmenü verfügbar, wenn beim Öffnen des Kontextmenüs die **ALT**-Taste gedrückt wird. Wenn der Web Player unter Mac OS X ausgeführt wird, drücken Sie stattdessen die **Optionstaste**.  
   
- Stellen Sie sicher, dass Sie mit der Unity-Instanz verbunden sind, die Sie debuggen möchten. Informationen hierzu finden Sie im Abschnitt [Verbinden von Visual Studio mit Unity](#connecting-visual-studio-to-unity).  
+  Stellen Sie sicher, dass Sie mit der Unity-Instanz verbunden sind, die Sie debuggen möchten. Informationen hierzu finden Sie im Abschnitt [Verbinden von Visual Studio mit Unity](#connecting-visual-studio-to-unity).  
   
 ### <a name="debugging-a-dll-in-your-unity-project"></a>Debuggen einer DLL im Unity-Projekt  
  Viele Unity-Entwickler schreiben Codekomponenten als externe DLLs, damit die Funktionalität, die sie entwickeln, einfach mit anderen Projekten gemeinsam genutzt werden kann. Durch Visual Studio-Tools für Unity wird das reibungslose Debuggen von Code in diese DLLs mit anderem Code in Ihrem Unity-Projekt erleichtert.  
@@ -174,23 +174,23 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>So debuggen Sie ein in Ihrem Unity-Projekt verwendetes verwaltetes DLL-Projekt  
   
-1.  Fügen Sie Ihr vorhandenes DLL-Projekt der Visual Studio-Projektmappe hinzu, die von Visual Studio-Tools für Unity generiert wurde. Möglicherweise starten Sie auch, was weniger üblich ist, mit einem neuen verwalteten DLL-Projekt als Container für die Codekomponenten Ihres Unity-Projekts. Ist dies der Fall, können Sie stattdessen der Visual Studio-Projektmappe ein neues verwaltetes DLL-Projekt hinzufügen. Weitere Informationen zum Hinzufügen eines neuen oder vorhandenen Projekts zu einer Projektmappe finden Sie unter [Vorgehensweise: Hinzufügen von Projekten zu einer Projektmappe](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Fügen Sie Ihr vorhandenes DLL-Projekt der Visual Studio-Projektmappe hinzu, die von Visual Studio-Tools für Unity generiert wurde. Möglicherweise starten Sie auch, was weniger üblich ist, mit einem neuen verwalteten DLL-Projekt als Container für die Codekomponenten Ihres Unity-Projekts. Ist dies der Fall, können Sie stattdessen der Visual Studio-Projektmappe ein neues verwaltetes DLL-Projekt hinzufügen. Weitere Informationen zum Hinzufügen eines neuen oder vorhandenen Projekts zu einer Projektmappe finden Sie unter [Vorgehensweise: Hinzufügen von Projekten zu einer Projektmappe](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
-     ![Hinzufügen des vorhandenen DLL-Projekts zur Projektmappe](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
+    ![Hinzufügen des vorhandenen DLL-Projekts zur Projektmappe](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
-     In beiden Fällen verwaltet Visual Studio-Tools für Unity den Projektverweis, selbst wenn die Projekt- und Projektmappendateien neu generiert werden müssen. Daher müssen Sie diese Schritte nur einmal ausführen.  
+    In beiden Fällen verwaltet Visual Studio-Tools für Unity den Projektverweis, selbst wenn die Projekt- und Projektmappendateien neu generiert werden müssen. Daher müssen Sie diese Schritte nur einmal ausführen.  
   
-2.  Verweisen Sie im DLL-Projekt auf das richtige Unity-Frameworkprofil. Legen Sie in Visual Studio in den Eigenschaften des DLL-Projekts die Eigenschaft **Zielframework** auf das von Ihnen verwendete Unity-Framework fest. Dies ist die Unity-Basisklassenbibliothek, die der gewünschten API-Kompatibilität Ihres Projekts entspricht, wie z. B. die Unity-Klassenbibliothek "full", "micro" oder "web". Dies verhindert, dass Ihre DLL Frameworkmethoden aufruft, die in anderen Frameworks oder auf anderen Kompatibilitätsstufen, aber nicht in der Unity-Frameworkversion vorhanden sind, die Sie verwenden.  
+2. Verweisen Sie im DLL-Projekt auf das richtige Unity-Frameworkprofil. Legen Sie in Visual Studio in den Eigenschaften des DLL-Projekts die Eigenschaft **Zielframework** auf das von Ihnen verwendete Unity-Framework fest. Dies ist die Unity-Basisklassenbibliothek, die der gewünschten API-Kompatibilität Ihres Projekts entspricht, wie z. B. die Unity-Klassenbibliothek "full", "micro" oder "web". Dies verhindert, dass Ihre DLL Frameworkmethoden aufruft, die in anderen Frameworks oder auf anderen Kompatibilitätsstufen, aber nicht in der Unity-Frameworkversion vorhanden sind, die Sie verwenden.  
   
-     ![Das Zielframework der DLL auf Unity-Framework festlegen](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
+    ![Das Zielframework der DLL auf Unity-Framework festlegen](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
-3.  Kopieren Sie die DLL in den Ordner "Assets" Ihres Unity-Projekts. In Unity sind "Assets" Dateien, die in Paketen zusammen mit Ihrer Unity-App so bereitgestellt werden, dass sie zur Laufzeit geladen werden können. Da DLLs zur Laufzeit verknüpft werden, müssen die DLLs als Assets bereitgestellt werden. Um als Asset bereitgestellt zu werden, verlangt der Unity-Editor, dass die DLLs dem Ordner "Assets" in Ihrem Unity-Projekt hinzugefügt werden. Dazu stehen zwei Möglichkeiten zur Verfügung:  
+3. Kopieren Sie die DLL in den Ordner "Assets" Ihres Unity-Projekts. In Unity sind "Assets" Dateien, die in Paketen zusammen mit Ihrer Unity-App so bereitgestellt werden, dass sie zur Laufzeit geladen werden können. Da DLLs zur Laufzeit verknüpft werden, müssen die DLLs als Assets bereitgestellt werden. Um als Asset bereitgestellt zu werden, verlangt der Unity-Editor, dass die DLLs dem Ordner "Assets" in Ihrem Unity-Projekt hinzugefügt werden. Dazu stehen zwei Möglichkeiten zur Verfügung:  
   
-    -   Ändern Sie die Buildeinstellungen Ihres DLL-Projekts so, dass eine im Anschluss an den Build erfolgende Aufgabe hinzugefügt wird, die die DLL- und PDB-Ausgabedateien aus ihrem Ausgabeordner in den Ordner **Assets** Ihres Unity-Projekts kopiert.  
+   - Ändern Sie die Buildeinstellungen Ihres DLL-Projekts so, dass eine im Anschluss an den Build erfolgende Aufgabe hinzugefügt wird, die die DLL- und PDB-Ausgabedateien aus ihrem Ausgabeordner in den Ordner **Assets** Ihres Unity-Projekts kopiert.  
   
-    -   Ändern Sie die Buildeinstellungen Ihres DLL-Projekts so, dass der Ausgabeordner auf den Ordner **Assets** Ihres Unity-Projekts festgelegt wird. Sowohl DLL- als auch PDB-Dateien werden im Ordner **Assets** abgelegt.  
+   - Ändern Sie die Buildeinstellungen Ihres DLL-Projekts so, dass der Ausgabeordner auf den Ordner **Assets** Ihres Unity-Projekts festgelegt wird. Sowohl DLL- als auch PDB-Dateien werden im Ordner **Assets** abgelegt.  
   
      Die PDB-Dateien sind für das Debuggen erforderlich, da sie Debugsymbole der DLL enthalten und den DLL-Code seiner Quellcodeform zuordnen. Visual Studio-Tools für Unity verwendet Informationen aus der DLL- und PDB-Datei, um eine DLL.MDB-Datei zu erstellen. Dies ist das Debugsymbolformat, das von der Unity-Skript-Engine verwendet wird.  
   
-4.  Debuggen Sie Ihren Code. Sie können jetzt Ihren DLL-Quellcode zusammen mit dem Quellcode Ihres Unity-Projekts debuggen und alle vertrauten Debuggingfunktionen nutzen, d. h. Haltepunkte setzen und Code schrittweise durchlaufen.
+4. Debuggen Sie Ihren Code. Sie können jetzt Ihren DLL-Quellcode zusammen mit dem Quellcode Ihres Unity-Projekts debuggen und alle vertrauten Debuggingfunktionen nutzen, d. h. Haltepunkte setzen und Code schrittweise durchlaufen.
 

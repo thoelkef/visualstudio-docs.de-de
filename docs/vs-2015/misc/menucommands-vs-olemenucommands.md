@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911907"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
 Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
@@ -41,90 +41,90 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 #### <a name="to-add-a-command-to-the-ide"></a>So fügen Sie der IDE einen Befehl hinzu  
   
-1.  Öffnen Sie die VSCT-Datei.  
+1. Öffnen Sie die VSCT-Datei.  
   
-2.  Suchen Sie im `Symbols` -Abschnitt nach dem [GuidSymbol](../extensibility/guidsymbol-element.md) -Element, das die Gruppen und Befehle enthält.  
+2. Suchen Sie im `Symbols` -Abschnitt nach dem [GuidSymbol](../extensibility/guidsymbol-element.md) -Element, das die Gruppen und Befehle enthält.  
   
-3.  Erstellen Sie ein [IDSymbol](../extensibility/idsymbol-element.md) -Element für jedes Menü, jede Gruppe oder jeden Befehl, das, die oder den Sie hinzufügen möchten (siehe folgendes Beispiel).  
+3. Erstellen Sie ein [IDSymbol](../extensibility/idsymbol-element.md) -Element für jedes Menü, jede Gruppe oder jeden Befehl, das, die oder den Sie hinzufügen möchten (siehe folgendes Beispiel).  
   
-    ```xml
-    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidMyCommand" value="0x0100" />
-    </GuidSymbol>
-    ```
+   ```xml
+   <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
+     <IDSymbol name="MyMenuGroup" value="0x1020" />
+     <IDSymbol name="cmdidMyCommand" value="0x0100" />
+   </GuidSymbol>
+   ```
       
-     Die `name` -Attribute des `GuidSymbol` - und des `IDSymbol` -Elements stellen das GUID:ID-Paar für jedes neue Menü, jede neue Gruppe oder jeden neuen Befehl bereit. Die `guid` entspricht einem Befehlssatz, der für Ihr VSPackage definiert ist. Sie können mehrere Befehlssätze definieren. Jedes GUID:ID-Paar muss eindeutig sein.  
+    Die `name` -Attribute des `GuidSymbol` - und des `IDSymbol` -Elements stellen das GUID:ID-Paar für jedes neue Menü, jede neue Gruppe oder jeden neuen Befehl bereit. Die `guid` entspricht einem Befehlssatz, der für Ihr VSPackage definiert ist. Sie können mehrere Befehlssätze definieren. Jedes GUID:ID-Paar muss eindeutig sein.  
   
-4.  Erstellen Sie im [Buttons](../extensibility/buttons-element.md) -Abschnitt ein [Button](../extensibility/button-element.md) -Element, um den Befehl zu definieren (siehe folgendes Beispiel).  
+4. Erstellen Sie im [Buttons](../extensibility/buttons-element.md) -Abschnitt ein [Button](../extensibility/button-element.md) -Element, um den Befehl zu definieren (siehe folgendes Beispiel).  
   
-    ```xml
-    <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-      <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      <Icon guid="guidImages" id="bmpPic1" />
-      <Strings>
-        <CommandName>cmdidMyCommand</CommandName>
-        <ButtonText>My Command name</ButtonText>
-      </Strings>
-    </Button>
-    ``` 
+   ```xml
+   <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
+     <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     <Icon guid="guidImages" id="bmpPic1" />
+     <Strings>
+       <CommandName>cmdidMyCommand</CommandName>
+       <ButtonText>My Command name</ButtonText>
+     </Strings>
+   </Button>
+   ``` 
      
-    1.  Legen Sie die Felder `guid` und `id` so fest, dass sie dem GUID:ID-Paar des neuen Befehls entsprechen.  
+   1.  Legen Sie die Felder `guid` und `id` so fest, dass sie dem GUID:ID-Paar des neuen Befehls entsprechen.  
   
-    2.  Legen Sie das `priority`-Attribut fest.  
+   2.  Legen Sie das `priority`-Attribut fest.  
   
-         Das `priority` -Attribut wird von der VSCT-Datei dazu verwendet, die Position der Schaltfläche zwischen den anderen Objekten in ihrer übergeordneten Gruppe zu bestimmen.  
+        Das `priority` -Attribut wird von der VSCT-Datei dazu verwendet, die Position der Schaltfläche zwischen den anderen Objekten in ihrer übergeordneten Gruppe zu bestimmen.  
   
-         Befehle, die niedrigere Prioritätswerte haben, werden über oder links von Befehlen angezeigt, die höhere Prioritätswerte haben. Doppelte Prioritätswerte sind zulässig, aber die relativen Positionen von Befehlen, die dieselbe Priorität haben, werden durch die Reihenfolge bestimmt, in der VSPackages zur Laufzeit verarbeitet werden, und diese Reihenfolge kann nicht vorherbestimmt werden.  
+        Befehle, die niedrigere Prioritätswerte haben, werden über oder links von Befehlen angezeigt, die höhere Prioritätswerte haben. Doppelte Prioritätswerte sind zulässig, aber die relativen Positionen von Befehlen, die dieselbe Priorität haben, werden durch die Reihenfolge bestimmt, in der VSPackages zur Laufzeit verarbeitet werden, und diese Reihenfolge kann nicht vorherbestimmt werden.  
   
-         Ist das `priority`-Attribut nicht angegeben, wird sein Wert auf 0 festgelegt.  
+        Ist das `priority`-Attribut nicht angegeben, wird sein Wert auf 0 festgelegt.  
   
-    3.  Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie unter [Button Element](../extensibility/button-element.md).  
+   3.  Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie unter [Button Element](../extensibility/button-element.md).  
   
-5.  Erstellen Sie in der Schaltflächendefinition ein [Strings](../extensibility/strings-element.md) -Element, das Folgendes enthält: ein [ButtonText](../extensibility/buttontext-element.md) -Element, in dem sich der Name des Menüs so befindet, wie er in der IDE angezeigt wird, sowie ein [CommandName](../extensibility/commandname-element.md) -Element, in dem sich der Name des Befehls befindet, über den im Fenster **Befehl** auf das Menü zugegriffen wird.  
+5. Erstellen Sie in der Schaltflächendefinition ein [Strings](../extensibility/strings-element.md) -Element, das Folgendes enthält: ein [ButtonText](../extensibility/buttontext-element.md) -Element, in dem sich der Name des Menüs so befindet, wie er in der IDE angezeigt wird, sowie ein [CommandName](../extensibility/commandname-element.md) -Element, in dem sich der Name des Befehls befindet, über den im Fenster **Befehl** auf das Menü zugegriffen wird.  
   
-     Enthält die Schaltflächenzeichenfolge das Zeichen „&“, kann das Menü geöffnet werden, indem ALT sowie das Zeichen gedrückt werden, das unmittelbar auf „&“ folgt.  
+    Enthält die Schaltflächenzeichenfolge das Zeichen „&“, kann das Menü geöffnet werden, indem ALT sowie das Zeichen gedrückt werden, das unmittelbar auf „&“ folgt.  
   
-     Wird ein `Tooltip` -Element hinzugefügt, wird der darin enthaltene Text angezeigt, wenn mit dem Mauszeiger auf die Schaltfläche gezeigt wird.  
+    Wird ein `Tooltip` -Element hinzugefügt, wird der darin enthaltene Text angezeigt, wenn mit dem Mauszeiger auf die Schaltfläche gezeigt wird.  
   
-6.  Fügen Sie ein [Icon](../extensibility/icon-element.md) -Element hinzu, um das Symbol anzugeben, das mit dem Befehl angezeigt werden soll. Symbole sind für Schaltflächen in Symbolleisten, jedoch nicht für Menüelemente erforderlich. Die `guid` und die `id` des `Icon` -Elements müssen mit denjenigen eines [Bitmap](../extensibility/bitmap-element.md) -Elements übereinstimmen, das im `Bitmaps` -Abschnitt definiert ist.  
+6. Fügen Sie ein [Icon](../extensibility/icon-element.md) -Element hinzu, um das Symbol anzugeben, das mit dem Befehl angezeigt werden soll. Symbole sind für Schaltflächen in Symbolleisten, jedoch nicht für Menüelemente erforderlich. Die `guid` und die `id` des `Icon` -Elements müssen mit denjenigen eines [Bitmap](../extensibility/bitmap-element.md) -Elements übereinstimmen, das im `Bitmaps` -Abschnitt definiert ist.  
   
-7.  Fügen Sie nach Bedarf Befehlsflags hinzu, um das Aussehen und Verhalten der Schaltfläche zu ändern. Fügen Sie zu diesem Zweck ein [CommandFlag](../extensibility/command-flag-element.md) -Element in der Menüdefinition hinzu.  
+7. Fügen Sie nach Bedarf Befehlsflags hinzu, um das Aussehen und Verhalten der Schaltfläche zu ändern. Fügen Sie zu diesem Zweck ein [CommandFlag](../extensibility/command-flag-element.md) -Element in der Menüdefinition hinzu.  
   
-8.  Legen Sie die übergeordnete Gruppe des Befehls fest. Die übergeordnete Gruppe kann Folgendes sein: eine Gruppe, die Sie erstellen, eine Gruppe aus einem anderen Paket oder eine Gruppe aus der IDE. Soll der Befehl beispielsweise zur Visual Studio-Bearbeitungssymbolleiste neben den Schaltflächen **Kommentar** und **Kommentare entfernen** hinzugefügt werden, legen Sie das übergeordnete Element auf „guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT“ fest. Ist die übergeordnete Gruppe eine benutzerdefinierte Gruppe, muss sie untergeordnetes Element eines Menüs, einer Symbolleiste oder eines Toolfensters sein, die oder das in der IDE angezeigt wird.  
+8. Legen Sie die übergeordnete Gruppe des Befehls fest. Die übergeordnete Gruppe kann Folgendes sein: eine Gruppe, die Sie erstellen, eine Gruppe aus einem anderen Paket oder eine Gruppe aus der IDE. Soll der Befehl beispielsweise zur Visual Studio-Bearbeitungssymbolleiste neben den Schaltflächen **Kommentar** und **Kommentare entfernen** hinzugefügt werden, legen Sie das übergeordnete Element auf „guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT“ fest. Ist die übergeordnete Gruppe eine benutzerdefinierte Gruppe, muss sie untergeordnetes Element eines Menüs, einer Symbolleiste oder eines Toolfensters sein, die oder das in der IDE angezeigt wird.  
   
-     Sie erreichen dies, abhängig von Ihrem Entwurf, durch eine von zwei Möglichkeiten:  
+    Sie erreichen dies, abhängig von Ihrem Entwurf, durch eine von zwei Möglichkeiten:  
   
-    -   Erstellen Sie im `Button` -Element ein [Parent](../extensibility/parent-element.md) -Element, und legen Sie dessen Felder `guid` und `id` auf die Guid und die ID der Gruppe fest, in der der Befehl gehostet wird. Diese Gruppe wird auch als die *primäre übergeordnete Gruppe*bezeichnet.  
+   -   Erstellen Sie im `Button` -Element ein [Parent](../extensibility/parent-element.md) -Element, und legen Sie dessen Felder `guid` und `id` auf die Guid und die ID der Gruppe fest, in der der Befehl gehostet wird. Diese Gruppe wird auch als die *primäre übergeordnete Gruppe*bezeichnet.  
   
-         Im folgenden Beispiel wird ein Befehl definiert, der in einem benutzerdefinierten Menü angezeigt wird.  
+        Im folgenden Beispiel wird ein Befehl definiert, der in einem benutzerdefinierten Menü angezeigt wird.  
   
-        ```xml
-        <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
-          <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
-          <Icon guid="guidImages" id="bmpPic1" />
-          <Strings>
-            <CommandName>cmdidTestCommand</CommandName>
-            <ButtonText>Test Command</ButtonText>
-              </Strings>
-        </Button>
-        ```
+       ```xml
+       <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
+         <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
+         <Icon guid="guidImages" id="bmpPic1" />
+         <Strings>
+           <CommandName>cmdidTestCommand</CommandName>
+           <ButtonText>Test Command</ButtonText>
+             </Strings>
+       </Button>
+       ```
       
-    -   Sie können auf das `Parent` -Element verzichten, wenn der Befehl durch Befehlsplatzierung positioniert wird. Erstellen Sie ein [CommandPlacements](../extensibility/commandplacements-element.md) -Element vor dem `Symbols` -Abschnitt, und fügen Sie ein [CommandPlacement](../extensibility/commandplacement-element.md) -Element hinzu, das die `guid` und die `id` des Befehls, einen `priority`-Wert und ein übergeordnetes Element hat (siehe folgendes Beispiel).  
+   -   Sie können auf das `Parent` -Element verzichten, wenn der Befehl durch Befehlsplatzierung positioniert wird. Erstellen Sie ein [CommandPlacements](../extensibility/commandplacements-element.md) -Element vor dem `Symbols` -Abschnitt, und fügen Sie ein [CommandPlacement](../extensibility/commandplacement-element.md) -Element hinzu, das die `guid` und die `id` des Befehls, einen `priority`-Wert und ein übergeordnetes Element hat (siehe folgendes Beispiel).  
   
-    ```xml
-    <CommandPlacements>
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
-        <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      </CommandPlacement>
-    </CommandPlacements>
-    ```
+   ```xml
+   <CommandPlacements>
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
+       <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     </CommandPlacement>
+   </CommandPlacements>
+   ```
       
-         Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
   
-     Weitere Informationen zu Befehlsgruppen und Überordnung finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Weitere Informationen zu Befehlsgruppen und Überordnung finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
   
- An diesem Punkt ist der Befehl in der IDE sichtbar, hat aber noch keine Funktionalität. Wurde der Befehl über die Paketvorlage erstellt, hat er standardmäßig einen Click-Handler, der eine Meldung angezeigt.  
+   An diesem Punkt ist der Befehl in der IDE sichtbar, hat aber noch keine Funktionalität. Wurde der Befehl über die Paketvorlage erstellt, hat er standardmäßig einen Click-Handler, der eine Meldung angezeigt.  
   
 ## <a name="handling-the-new-command"></a>Behandeln des neuen Befehls  
  Die meisten Befehle in verwaltetem Code können durch das Managed Package Framework (MPF) behandelt werden, indem der Befehl einem <xref:System.ComponentModel.Design.MenuCommand> -Objekt oder einem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugeordnet und dessen Ereignishandler implementiert werden.  
@@ -175,29 +175,29 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 #### <a name="to-implement-querystatus"></a>So implementieren Sie „QueryStatus“  
   
-1.  Das QueryStatus-Ereignis tritt auf, bevor ein Befehl angezeigt wird. Dadurch wird es möglich, Eigenschaften dieses Befehls im Ereignishandler festzulegen, bevor der Befehl den Benutzer erreicht. Nur Befehle, die als <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekte hinzugefügt werden, können auf diese Methode zugreifen.  
+1. Das QueryStatus-Ereignis tritt auf, bevor ein Befehl angezeigt wird. Dadurch wird es möglich, Eigenschaften dieses Befehls im Ereignishandler festzulegen, bevor der Befehl den Benutzer erreicht. Nur Befehle, die als <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekte hinzugefügt werden, können auf diese Methode zugreifen.  
   
-     Fügen Sie ein `EventHandler` -Objekt zum <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis im <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt hinzu, das erstellt wird, um den Befehl zu behandeln, wie im folgenden Beispiel gezeigt (`menuItem` ist die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Instanz).  
+    Fügen Sie ein `EventHandler` -Objekt zum <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis im <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt hinzu, das erstellt wird, um den Befehl zu behandeln, wie im folgenden Beispiel gezeigt (`menuItem` ist die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Instanz).  
   
-     [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
-     [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
+    [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
+    [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
   
-     Dem `EventHandler`-Objekt wird der Name einer Methode übergeben, die aufgerufen wird, wenn der Status des Menübefehls abgefragt wird.  
+    Dem `EventHandler`-Objekt wird der Name einer Methode übergeben, die aufgerufen wird, wenn der Status des Menübefehls abgefragt wird.  
   
-2.  Implementieren Sie die Abfragestatus-Handlermethode für den Befehl. Der `object` `sender` -Parameter kann in ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt umgewandelt werden, das dazu verwendet wird, die verschiedenen Attribute des Menübefehls, so auch den Text, festzulegen. In der folgenden Tabelle sind die Eigenschaften der <xref:System.ComponentModel.Design.MenuCommand> -Klasse (aus der die MPF-Klasse <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> abgeleitet wird) aufgeführt, die den <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Flags entsprechen.  
+2. Implementieren Sie die Abfragestatus-Handlermethode für den Befehl. Der `object` `sender` -Parameter kann in ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt umgewandelt werden, das dazu verwendet wird, die verschiedenen Attribute des Menübefehls, so auch den Text, festzulegen. In der folgenden Tabelle sind die Eigenschaften der <xref:System.ComponentModel.Design.MenuCommand> -Klasse (aus der die MPF-Klasse <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> abgeleitet wird) aufgeführt, die den <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Flags entsprechen.  
   
-    |MenuCommand-Eigenschaft|OLECMDF-Flag|  
-    |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |MenuCommand-Eigenschaft|OLECMDF-Flag|  
+   |--------------------------|------------------|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
   
-     Wenn Sie den Text eines Menübefehls ändern möchten, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> -Eigenschaft des <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekts (siehe folgendes Beispiel).  
+    Wenn Sie den Text eines Menübefehls ändern möchten, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> -Eigenschaft des <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekts (siehe folgendes Beispiel).  
   
-     [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
-     [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
+    [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
+    [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
   
- Das MPF behandelt automatisch den Fall nicht unterstützter oder unbekannter Gruppen. Ein Befehl wird nur dann unterstützt, wenn er dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> über die <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> -Methode hinzugefügt wurde.  
+   Das MPF behandelt automatisch den Fall nicht unterstützter oder unbekannter Gruppen. Ein Befehl wird nur dann unterstützt, wenn er dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> über die <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> -Methode hinzugefügt wurde.  
   
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Behandeln von Befehlen über die IOleCommandTarget-Schnittstelle  
  Für Code, in dem die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle direkt verwendet wird, muss das VSPackage sowohl die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> - als auch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle implementieren. Wird in dem VSPackage eine Projekthierarchie implementiert, müssen stattdessen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> - und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> -Methode der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle implementiert werden.  
@@ -208,45 +208,45 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 ##### <a name="to-implement-the-querystatus-method"></a>So implementieren Sie die QueryStatus-Methode  
   
-1.  Geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK> für gültige Befehle zurück.  
+1. Geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK> für gültige Befehle zurück.  
   
-2.  Legen Sie das `cmdf`-Element des `prgCmds`-Parameters fest.  
+2. Legen Sie das `cmdf`-Element des `prgCmds`-Parameters fest.  
   
-     Der Wert des `cmdf` -Elements ist die logische Vereinigung von Werten aus der <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Enumeration, die über den logischen ODER-Operator (`|`) kombiniert werden.  
+    Der Wert des `cmdf` -Elements ist die logische Vereinigung von Werten aus der <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Enumeration, die über den logischen ODER-Operator (`|`) kombiniert werden.  
   
-     Verwenden Sie die geeignete Enumeration entsprechend dem Status des Befehls:  
+    Verwenden Sie die geeignete Enumeration entsprechend dem Status des Befehls:  
   
-    -   Wenn der Befehl unterstützt wird:  
+   - Wenn der Befehl unterstützt wird:  
   
-         `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
+      `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
   
-    -   Wenn der Befehl im Moment nicht sichtbar sein soll:  
+   - Wenn der Befehl im Moment nicht sichtbar sein soll:  
   
-         `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
+      `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
   
-    -   Wenn der Befehl eingeschaltet ist und es so aussieht, als wurde auf ihn geklickt:  
+   - Wenn der Befehl eingeschaltet ist und es so aussieht, als wurde auf ihn geklickt:  
   
-         `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
+      `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-         Bei einer Verarbeitung von Befehlen, die in einem Menü des Typs `MenuControllerLatched`gehostet werden, ist der erste Befehl, der durch das `OLECMDF_LATCHED` -Flag markiert ist, der Standardbefehl, der im Menü beim Start angezeigt wird. Weitere Informationen zu `MenuController` -Menütypen finden Sie unter [Menu Element](../extensibility/menu-element.md)verwenden.  
+      Bei einer Verarbeitung von Befehlen, die in einem Menü des Typs `MenuControllerLatched`gehostet werden, ist der erste Befehl, der durch das `OLECMDF_LATCHED` -Flag markiert ist, der Standardbefehl, der im Menü beim Start angezeigt wird. Weitere Informationen zu `MenuController` -Menütypen finden Sie unter [Menu Element](../extensibility/menu-element.md)verwenden.  
   
-    -   Wenn der Befehl derzeit aktiviert ist:  
+   - Wenn der Befehl derzeit aktiviert ist:  
   
-         `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
+      `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
   
-    -   Wenn der Befehl zu einem Kontextmenü gehört und standardmäßig ausgeblendet ist:  
+   - Wenn der Befehl zu einem Kontextmenü gehört und standardmäßig ausgeblendet ist:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+      `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   Wenn für den Befehl das `TEXTCHANGES`-Flag verwendet wird, legen Sie das `rgwz`-Element des `pCmdText`-Parameters auf den neuen Text des Befehls und das `cwActual`-Element des `pCmdText`Parameters auf die Länge der Befehlszeichenfolge fest.  
+   - Wenn für den Befehl das `TEXTCHANGES`-Flag verwendet wird, legen Sie das `rgwz`-Element des `pCmdText`-Parameters auf den neuen Text des Befehls und das `cwActual`-Element des `pCmdText`Parameters auf die Länge der Befehlszeichenfolge fest.  
   
      Hinsichtlich Fehlerbedingungen muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode die folgenden Fehlerfälle behandeln:  
   
-    -   Wenn die GUID unbekannt ist oder nicht unterstützt wird, geben Sie `OLECMDERR_E_UNKNOWNGROUP`zurück.  
+   - Wenn die GUID unbekannt ist oder nicht unterstützt wird, geben Sie `OLECMDERR_E_UNKNOWNGROUP`zurück.  
   
-    -   Wenn die GUID bekannt ist, aber die Befehls-ID unbekannt ist oder nicht unterstützt wird, geben Sie `OLECMDERR_E_NOTSUPPORTED`zurück.  
+   - Wenn die GUID bekannt ist, aber die Befehls-ID unbekannt ist oder nicht unterstützt wird, geben Sie `OLECMDERR_E_NOTSUPPORTED`zurück.  
   
- Die VSPackage-Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode muss außerdem abhängig davon, ob der Befehl unterstützt wird und ob er erfolgreich behandelt wurde, bestimmte Fehlercodes zurückgeben.  
+   Die VSPackage-Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode muss außerdem abhängig davon, ob der Befehl unterstützt wird und ob er erfolgreich behandelt wurde, bestimmte Fehlercodes zurückgeben.  
   
 ##### <a name="to-implement-the-exec-method"></a>So implementieren Sie die Exec-Methode  
   

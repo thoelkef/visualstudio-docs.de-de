@@ -12,25 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 033eaa4a946ac344ac0cbc13e0f8da64dd914b92
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913929"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, damit Benutzer für die DSL typische Aufgaben ausführen können. Die Befehle werden im Kontextmenü angezeigt, wenn Benutzer mit der rechten Maustaste auf das Diagramm klicken. Sie können einen Befehl so definieren, dass er nur unter bestimmten Bedingungen im Menü angezeigt wird. Sie können beispielsweise angeben, dass der Befehl nur sichtbar ist, wenn der Benutzer auf bestimmte Typen von Elementen oder auf Elemente in bestimmten Zuständen klickt.
 
  Zusammenfassend werden die Schritte im Paket "DslPackage" wie folgt ausgeführt:
 
-1.  [Deklarieren des Befehls in Commands.vsct](#VSCT)
+1. [Deklarieren des Befehls in Commands.vsct](#VSCT)
 
-2.  [Aktualisieren Sie die paketversionsnummer in Package.tt](#version). Dies müssen Sie nach jeder Änderung von Commands.vsct tun.
+2. [Aktualisieren Sie die paketversionsnummer in Package.tt](#version). Dies müssen Sie nach jeder Änderung von Commands.vsct tun.
 
-3.  [Schreiben von Methoden in der CommandSet-Klasse](#CommandSet) um den Befehl sichtbar zu machen und was soll der Befehl, um zu definieren.
+3. [Schreiben von Methoden in der CommandSet-Klasse](#CommandSet) um den Befehl sichtbar zu machen und was soll der Befehl, um zu definieren.
 
- Beispiele finden Sie in der [Visualisierungs- und Modellierungs-SDK-Website](http://go.microsoft.com/fwlink/?LinkID=185579).
+   Beispiele finden Sie in der [Visualisierungs- und Modellierungs-SDK-Website](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 >  Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -40,15 +40,15 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 
  Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
-1.  Sie möchten Menübefehle in anderen Menüs als dem Rechtsklick-Kontextmenü definieren.
+1. Sie möchten Menübefehle in anderen Menüs als dem Rechtsklick-Kontextmenü definieren.
 
-2.  Sie möchten bestimmte Gruppierungen von Befehlen im Menü definieren.
+2. Sie möchten bestimmte Gruppierungen von Befehlen im Menü definieren.
 
-3.  Sie möchten nicht, dass andere Personen die DSL mit ihren eigenen Befehlen erweitern können.
+3. Sie möchten nicht, dass andere Personen die DSL mit ihren eigenen Befehlen erweitern können.
 
-4.  Sie möchten nur einen einzelnen Befehl definieren.
+4. Sie möchten nur einen einzelnen Befehl definieren.
 
- In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
+   In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ##  <a name="VSCT"></a> Deklarieren des Befehls in Commands.Vsct
  Menübefehle werden in "DslPackage\Commands.vsct" deklariert. Diese Definitionen definieren die Bezeichnungen der Menüelemente und ihre Position in den Menüs.
@@ -221,21 +221,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Die folgenden Fragmente sind häufig in OnStatus-Methoden nützlich:
 
--   `this.CurrentSelection` Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
+- `this.CurrentSelection`. Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
 
--   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` – der Benutzer hat nur ein einzelnes Objekt ausgewählt
+- `this.IsSingleSelection()` – der Benutzer hat nur ein einzelnes Objekt ausgewählt
 
--   `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
 
--   `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
+- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
 
- Generell sollten Sie die `Visible`-Eigenschaft davon abhängig machen, was ausgewählt ist, und die `Enabled`-Eigenschaft vom Zustand der ausgewählten Elemente abhängig machen.
+  Generell sollten Sie die `Visible`-Eigenschaft davon abhängig machen, was ausgewählt ist, und die `Enabled`-Eigenschaft vom Zustand der ausgewählten Elemente abhängig machen.
 
- Eine OnStatus-Methode sollte nicht den Zustand des Speichers ändern.
+  Eine OnStatus-Methode sollte nicht den Zustand des Speichers ändern.
 
 ### <a name="define-what-the-command-does"></a>Definieren der Aktionen des Befehls
  Definieren Sie für jeden Befehl eine `OnMenu...`-Methode, die die erforderliche Aktion ausführt, wenn der Benutzer auf den Menübefehl klickt.
@@ -333,34 +333,34 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Problembehandlung
  **Der Befehl wird nicht im Menü angezeigt:**
 
--   Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
+- Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
 
--   Stellen Sie sicher, dass Ihr experimentelles Beispiel die richtige Dateinamenerweiterung für diese DSL hat. Öffnen Sie "DslDefinition.dsl" in der Hauptinstanz von Visual Studio, um die Dateinamenerweiterung zu überprüfen. Klicken Sie dann in DSL Explorer mit der rechten Maustaste auf den Editor-Knoten, und klicken Sie auf "Eigenschaften". Untersuchen Sie im Eigenschaftenfenster die Eigenschaft "FileExtension".
+- Stellen Sie sicher, dass Ihr experimentelles Beispiel die richtige Dateinamenerweiterung für diese DSL hat. Öffnen Sie "DslDefinition.dsl" in der Hauptinstanz von Visual Studio, um die Dateinamenerweiterung zu überprüfen. Klicken Sie dann in DSL Explorer mit der rechten Maustaste auf den Editor-Knoten, und klicken Sie auf "Eigenschaften". Untersuchen Sie im Eigenschaftenfenster die Eigenschaft "FileExtension".
 
--   Haben Sie [die paketversionsnummer erhöht](#version)?
+- Haben Sie [die paketversionsnummer erhöht](#version)?
 
--   Setzen Sie am Anfang der OnStatus-Methode einen Haltepunkt. Er sollte die Verarbeitung anhalten, wenn Sie mit der rechten Maustaste auf einen Bereich des Diagramms klicken.
+- Setzen Sie am Anfang der OnStatus-Methode einen Haltepunkt. Er sollte die Verarbeitung anhalten, wenn Sie mit der rechten Maustaste auf einen Bereich des Diagramms klicken.
 
-     **OnStatus-Methode wird nicht aufgerufen.**:
+   **OnStatus-Methode wird nicht aufgerufen.**:
 
-    -   Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
+  -   Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
 
-    -   Überprüfen Sie in Commands.vsct, ob die GUID und ID in jedem Parent-Knoten die richtige übergeordnete Gruppe identifizieren.
+  -   Überprüfen Sie in Commands.vsct, ob die GUID und ID in jedem Parent-Knoten die richtige übergeordnete Gruppe identifizieren.
 
-    -   Geben Sie an einer Visual Studio-Eingabeaufforderung Folgendes ein: devenv /rootsuffix exp /setup. Starten Sie dann die Debuginstanz von Visual Studio neu.
+  -   Geben Sie an einer Visual Studio-Eingabeaufforderung Folgendes ein: devenv /rootsuffix exp /setup. Starten Sie dann die Debuginstanz von Visual Studio neu.
 
--   Durchlaufen Sie die OnStatus-Methode schrittweise, um zu überprüfen, ob "command.Visible" und "command.Enabled" auf True festgelegt sind.
+- Durchlaufen Sie die OnStatus-Methode schrittweise, um zu überprüfen, ob "command.Visible" und "command.Enabled" auf True festgelegt sind.
 
- **Falscher Menütext wird angezeigt, oder der Befehl erscheint, in der falschen Stelle**:
+  **Falscher Menütext wird angezeigt, oder der Befehl erscheint, in der falschen Stelle**:
 
--   Stellen Sie sicher, dass die Kombination von GUID und ID für diesen Befehl eindeutig ist.
+- Stellen Sie sicher, dass die Kombination von GUID und ID für diesen Befehl eindeutig ist.
 
--   Stellen Sie sicher, dass frühere Versionen des Pakets deinstalliert wurden.
+- Stellen Sie sicher, dass frühere Versionen des Pakets deinstalliert wurden.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Vorgehensweise: ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Vorgehensweise: Ändern eines Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)
 - [Beispielcode: Schaltpläne](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

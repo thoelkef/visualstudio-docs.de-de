@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867070"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Sie können Handler für die folgenden Ereignistypen in Ihrem Erweiterungscode erstellen, mit `addEventListener`:  
   
--   `statementcompletion`, einen Handler für ein Abschlussereignis Anweisung hinzugefügt. Anweisungsvervollständigung enthält eine Liste von Elementen für einen bestimmten Typ, der angezeigt wird, nachdem Sie ein Sonderzeichen wie z. B. einen Punkt (.) eingeben, oder eine Liste der Bezeichner, die angezeigt wird, während der Eingabe, oder drücken Sie STRG + J. Der Handler empfängt ein Ereignisobjekt des Typs `CompletionEvent`, unterstützt die folgenden Member: [-Elementeigenschaft](#Items), [Zieleigenschaft](#Target), [TargetName Eigenschaft](#TargetName), und [Bereich Eigenschaft](#Scope).  
+- `statementcompletion`, einen Handler für ein Abschlussereignis Anweisung hinzugefügt. Anweisungsvervollständigung enthält eine Liste von Elementen für einen bestimmten Typ, der angezeigt wird, nachdem Sie ein Sonderzeichen wie z. B. einen Punkt (.) eingeben, oder eine Liste der Bezeichner, die angezeigt wird, während der Eingabe, oder drücken Sie STRG + J. Der Handler empfängt ein Ereignisobjekt des Typs `CompletionEvent`, unterstützt die folgenden Member: [-Elementeigenschaft](#Items), [Zieleigenschaft](#Target), [TargetName Eigenschaft](#TargetName), und [Bereich Eigenschaft](#Scope).  
   
--   `signaturehelp`, die Fügt einen Ereignishandler für die IntelliSense-Parameterinformationen. Informationen zu den Parametern erhalten Sie Informationen zu Anzahl, Namen und Typen der Parameter, die von einer Funktion erforderlich. Der Handler empfängt ein Ereignisobjekt des Typs `SignatureHelpEvent`, unterstützt die folgenden Member: [Zieleigenschaft](#Target), [ParentObject Eigenschaft](#ParentObject), [FunctionComments-Eigenschaft](#FunctionComments), [FunctionHelp Eigenschaft](#FunctionHelp).  
+- `signaturehelp`, die Fügt einen Ereignishandler für die IntelliSense-Parameterinformationen. Informationen zu den Parametern erhalten Sie Informationen zu Anzahl, Namen und Typen der Parameter, die von einer Funktion erforderlich. Der Handler empfängt ein Ereignisobjekt des Typs `SignatureHelpEvent`, unterstützt die folgenden Member: [Zieleigenschaft](#Target), [ParentObject Eigenschaft](#ParentObject), [FunctionComments-Eigenschaft](#FunctionComments), [FunctionHelp Eigenschaft](#FunctionHelp).  
   
--   `statementcompletionhint`, die für IntelliSense-QuickInfo Fügt einen Handler hinzu. Das QuickInfo-Popupfeld zeigt die vollständige Deklaration für Bezeichner in Ihrem Code. Der Handler empfängt ein Ereignisobjekt des Typs `CompletionHintEvent`, unterstützt die folgenden Member: [CompletionItem Eigenschaft](#CompletionItem), und [SymbolHelp Eigenschaft](#SymbolHelp).  
+- `statementcompletionhint`, die für IntelliSense-QuickInfo Fügt einen Handler hinzu. Das QuickInfo-Popupfeld zeigt die vollständige Deklaration für Bezeichner in Ihrem Code. Der Handler empfängt ein Ereignisobjekt des Typs `CompletionHintEvent`, unterstützt die folgenden Member: [CompletionItem Eigenschaft](#CompletionItem), und [SymbolHelp Eigenschaft](#SymbolHelp).  
   
- Beispiele, die IntelliSense-Features wie Anweisungsvervollständigung, Informationen zu den Parametern und QuickInfo anzeigen, finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).  
+  Beispiele, die IntelliSense-Features wie Anweisungsvervollständigung, Informationen zu den Parametern und QuickInfo anzeigen, finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  In JavaScript bezieht sich auf das Popup-Feld, das rechts vom eine Vervollständigungsliste angezeigt wird. "QuickInfo". Sie können keine QuickInfo manuell aufrufen.  

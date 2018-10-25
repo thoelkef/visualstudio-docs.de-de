@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_length | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_length | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 389204a8eae61bf5cd713ccd0c0d2dc29b88f656
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59fa6304572f2c951bdd16e30cbace8441dc6b97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908378"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 Ruft die Anzahl der Bytes in einem Abschnitt ab.  
@@ -37,7 +37,7 @@ HRESULT get_length (
  [out] Gibt die Anzahl der Bytes in einem Abschnitt zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

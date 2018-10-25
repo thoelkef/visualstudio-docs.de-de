@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::ResumeProcess | Microsoft Docs
+title: IDebugPortEx2::ResumeProcess | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d1b0dec7c165162645f30d4734f05885047083
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47364a88ca5e49a691120b198ce32b74e9d895d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905544"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Setzt die Ausführung eines Prozesses.  
@@ -41,10 +41,10 @@ int ResumeProcess(
   
 #### <a name="parameters"></a>Parameter  
  `pPortProcess`  
- [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Objekt, durch die der Prozess fortgesetzt werden soll.  
+ [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Objekt, das den Prozess, bis die Wiederaufnahme erfolgt darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

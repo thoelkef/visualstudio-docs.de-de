@@ -1,5 +1,5 @@
 ---
-title: SccUncheckout Funktion | Microsoft Docs
+title: SccUncheckout-Funktion | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c363da795e588963c234af05a856f3352a7b2815
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905921"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout-Funktion
-Diese Funktion macht einen vorherigen Auscheckvorgang, wiederherstellen und den Inhalt der ausgewählten Datei oder Dateien in den Zustand vor dem Auschecken rückgängig. Alle an der Datei seit dem Auschecken vorgenommenen Änderungen gehen verloren.  
+Diese Funktion macht eine vorherige Auscheckvorgang, wiederherstellen und den Inhalt der ausgewählten Datei oder Dateien in den Zustand vor dem Auschecken rückgängig. Alle in die Datei seit dem Auschecken vorgenommene Änderungen gehen verloren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,39 +40,39 @@ SCCRTN SccUncheckout (
   
 #### <a name="parameters"></a>Parameter  
  pvContext  
- [in] Datenquellen-Steuerelement-Plug-in-Context-Struktur.  
+ [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
   
  hWnd  
- [in] Ein Handle für die IDE-Fenster, das das Quellsteuerelement-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
   
  nFiles  
- [in] Anzahl der angegebenen Dateien in den `lpFileNames` Array.  
+ [in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.  
   
  lpFileNames  
  [in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien für das Auschecken rückgängig gemacht.  
   
- fOptions  
- [in] Befehl Flags (nicht verwendet).  
+ Bestanden  
+ [in] Befehls-Flags (nicht verwendet).  
   
  pvOptions  
  [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Auschecken rückgängig war erfolgreich.|  
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, wahrscheinlich aufgrund eines Netzwerk-oder Konflikte. Eine Wiederholung wird empfohlen.|  
-|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers. Rückgängig: Auschecken war nicht erfolgreich.|  
-|SCC_E_NOTCHECKEDOUT|Der Benutzer besitzt nicht die Datei ausgecheckt.|  
+|SCC_OK|"Auschecken rückgängig" war erfolgreich.|  
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung befindet.|  
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Rückgängig: Auschecken nicht erfolgreich war.|  
+|SCC_E_NOTCHECKEDOUT|Der Benutzer besitzt nicht die Datei ausgecheckt haben.|  
 |SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
 |SCC_E_PROJNOTOPEN|Das Projekt wurde nicht aus der quellcodeverwaltung geöffnet.|  
-|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Nach diesem Vorgang die `SCC_STATUS_CHECKEDOUT` und `SCC_STATUS_MODIFIED` Flags werden sowohl für die Dateien für die das Auschecken rückgängig durchgeführt wurde gelöscht werden.  
+ Nach diesem Vorgang die `SCC_STATUS_CHECKEDOUT` und `SCC_STATUS_MODIFIED` Flags werden sowohl für die Dateien auf dem die "Auschecken rückgängig" ausgeführt wurde gelöscht werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

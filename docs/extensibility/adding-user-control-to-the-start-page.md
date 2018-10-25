@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddd64829f1e9f04c1e7634537818f3b6a081db8f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910487"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Die Startseite Benutzersteuerelement hinzufügen
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Verweises auf eine benutzerdefinierte Startseite. Das Beispiel fügt der Projektmappe ein Benutzersteuerelement hinzu, das Benutzersteuerelement erstellt und anschließend verweist auf die erstellte Assembly aus der Startseite *XAML* Datei. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen als einfachen Webbrowser.  
@@ -137,41 +137,41 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
 ## <a name="add-the-user-control-to-the-start-page"></a>Fügen Sie das Benutzersteuerelement an die Startseite  
  Fügen Sie einen Verweis auf die neue Steuerelementbibliothek hinzu, um dieses Steuerelement in der Projektdatei der Startseite auf die Startseitenprojekt verfügbar zu machen. Anschließend können Sie das Steuerelement an das Starten der Seite "-XAML-Markup hinzufügen.  
   
-1.  In **Projektmappen-Explorer**, in dem Projekt Startseite mit der Maustaste **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.  
+1. In **Projektmappen-Explorer**, in dem Projekt Startseite mit der Maustaste **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.  
   
-2.  Auf der **Projekte** Registerkarte **WebUserControl** , und klicken Sie dann auf **OK**.  
+2. Auf der **Projekte** Registerkarte **WebUserControl** , und klicken Sie dann auf **OK**.  
   
-3.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+3. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
-     Erstellen der Projektmappe stellt das Benutzersteuerelement zur Verfügung IntelliSense für andere Dateien in der Projektmappe.  
+    Erstellen der Projektmappe stellt das Benutzersteuerelement zur Verfügung IntelliSense für andere Dateien in der Projektmappe.  
   
- Um das Starten der Seite "-XAML-Markup des Steuerelements hinzuzufügen, fügen Sie einen Namespaceverweis auf die Assembly, und fügen Sie das Steuerelement auf der Seite.  
+   Um das Starten der Seite "-XAML-Markup des Steuerelements hinzuzufügen, fügen Sie einen Namespaceverweis auf die Assembly, und fügen Sie das Steuerelement auf der Seite.  
   
 ### <a name="to-add-the-control-to-the-markup"></a>Das Markup des Steuerelements hinzu  
   
-1.  In **Projektmappen-Explorer**, öffnen Sie die Startseite *XAML* Datei.  
+1. In **Projektmappen-Explorer**, öffnen Sie die Startseite *XAML* Datei.  
   
-2.  In der **XAML** Bereich fügen Sie die folgende Namespacedeklaration hinzu, auf der obersten Ebene <xref:System.Windows.Controls.Grid> Element.  
+2. In der **XAML** Bereich fügen Sie die folgende Namespacedeklaration hinzu, auf der obersten Ebene <xref:System.Windows.Controls.Grid> Element.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  In der **XAML** einen Bildlauf zum Bereich der \<Raster > Abschnitt.  
+3. In der **XAML** einen Bildlauf zum Bereich der \<Raster > Abschnitt.  
   
-     Der Abschnitt enthält eine <xref:System.Windows.Controls.TabControl> Element in einem <xref:System.Windows.Controls.Grid> Element.  
+    Der Abschnitt enthält eine <xref:System.Windows.Controls.TabControl> Element in einem <xref:System.Windows.Controls.Grid> Element.  
   
-4.  Hinzufügen einer \<TabControl > mit einer \<TabItem >, der einen Verweis auf das Benutzersteuerelement enthält.  
+4. Hinzufügen einer \<TabControl > mit einer \<TabItem >, der einen Verweis auf das Benutzersteuerelement enthält.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Jetzt können Sie das Steuerelement testen.  
+   Jetzt können Sie das Steuerelement testen.  
   
 ## <a name="test-a-manually-created-custom-start-page"></a>Testen einer manuell erstellten benutzerdefinierten Startseite  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904192"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,26 +73,26 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  **Zu startender Debugger**  
  Gibt den Standardhost für den Debugger an.  
   
--   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Anwendung starten**  
- Gibt an, ob die Anwendung gestartet wird, wenn Sie F5 drücken oder auf **Debuggen**, **Debuggen starten** klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.  
+  **Anwendung starten**  
+  Gibt an, ob die Anwendung gestartet wird, wenn Sie F5 drücken oder auf **Debuggen**, **Debuggen starten** klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.  
   
- **Debuggertyp**  
- Gibt die zu debuggenden Codetypen an. Klicken Sie auf **Nur Skript**, um JavaScript-Code zu debuggen. Klicken Sie auf **Nur verwaltet**, um Code zu debuggen, der von der Common Language Runtime verwaltet wird. Klicken Sie auf **Nur nativ**, um C++-Code zu debuggen. Klicken Sie auf **Nativ mit Skript**, um C++ und JavaScript zu debuggen. Klicken Sie auf **Gemischt (verwaltet und nativ)** aus, um sowohl verwalteten als auch C++-Code zu debuggen.  
+  **Debuggertyp**  
+  Gibt die zu debuggenden Codetypen an. Klicken Sie auf **Nur Skript**, um JavaScript-Code zu debuggen. Klicken Sie auf **Nur verwaltet**, um Code zu debuggen, der von der Common Language Runtime verwaltet wird. Klicken Sie auf **Nur nativ**, um C++-Code zu debuggen. Klicken Sie auf **Nativ mit Skript**, um C++ und JavaScript zu debuggen. Klicken Sie auf **Gemischt (verwaltet und nativ)** aus, um sowohl verwalteten als auch C++-Code zu debuggen.  
   
- **Lokales Netzwerkloopback zulassen**  
- Gibt an, ob Zugriff auf die IP-Loopbackadresse für App-Tests zulässig ist. Klicken Sie auf **Ja**, um die Verwendung der Loopbackadresse zuzulassen, wenn sich die Client-App auf dem gleichen Computer befindet, auf dem die Serveranwendung ausgeführt wird. Klicken Sie ansonsten auf **Nein**. Diese Eigenschaft ist nur verfügbar, wenn die Eigenschaft **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
+  **Lokales Netzwerkloopback zulassen**  
+  Gibt an, ob Zugriff auf die IP-Loopbackadresse für App-Tests zulässig ist. Klicken Sie auf **Ja**, um die Verwendung der Loopbackadresse zuzulassen, wenn sich die Client-App auf dem gleichen Computer befindet, auf dem die Serveranwendung ausgeführt wird. Klicken Sie ansonsten auf **Nein**. Diese Eigenschaft ist nur verfügbar, wenn die Eigenschaft **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
   
- **Computername**  
- Gibt den Namen des Remotecomputers an, auf dem der Debugger gehostet wird. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
+  **Computername**  
+  Gibt den Namen des Remotecomputers an, auf dem der Debugger gehostet wird. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
   
- **Authentifizierung erforderlich**  
- Gibt an, ob für den Remotecomputer eine Authentifizierung erforderlich ist. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.
+  **Authentifizierung erforderlich**  
+  Gibt an, ob für den Remotecomputer eine Authentifizierung erforderlich ist. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.
 
 
 

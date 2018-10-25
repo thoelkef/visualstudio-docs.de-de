@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893389"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 #### <a name="to-create-a-consent-dialog-box"></a>Um ein Dialogfeld "Zustimmung" zu erstellen.  
   
-1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld klicken Sie auf **Windows**, und klicken Sie dann auf **WindowsFormsApplication**.  
+2. In der **neues Projekt** Dialogfeld klicken Sie auf **Windows**, und klicken Sie dann auf **WindowsFormsApplication**.  
   
-3.  Für die **Namen**, Typ **ConsentDialog**, und klicken Sie dann auf **OK**.  
+3. Für die **Namen**, Typ **ConsentDialog**, und klicken Sie dann auf **OK**.  
   
-4.  Klicken Sie im Designer auf das Formular.  
+4. Klicken Sie im Designer auf das Formular.  
   
-5.  In der **Eigenschaften** Ändern der **Text** Eigenschaft **Update-Zustimmungsdialogfeld**.  
+5. In der **Eigenschaften** Ändern der **Text** Eigenschaft **Update-Zustimmungsdialogfeld**.  
   
-6.  In der **Toolbox**, erweitern Sie **alle Windows Forms**, und ziehen Sie eine **Bezeichnung** -Steuerelement auf das Formular.  
+6. In der **Toolbox**, erweitern Sie **alle Windows Forms**, und ziehen Sie eine **Bezeichnung** -Steuerelement auf das Formular.  
   
-7.  Klicken Sie im Designer auf das Label-Steuerelement.  
+7. Klicken Sie im Designer auf das Label-Steuerelement.  
   
-8.  In der **Eigenschaften** Ändern der **Text** Eigenschaft **Darstellung** folgt:  
+8. In der **Eigenschaften** Ändern der **Text** Eigenschaft **Darstellung** folgt:  
   
-     Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Indem Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung zu suchen und installieren Sie Updates automatisch über das Internet.  
+    Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Indem Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung zu suchen und installieren Sie Updates automatisch über das Internet.  
   
 9. In der **Toolbox**, ziehen Sie eine **Kontrollkästchen** Steuerelement in die Mitte des Formulars.  
   
@@ -118,28 +118,28 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
      Visual Basic nur für Entwickler:  
   
-    1.  In **Projektmappen-Explorer**, klicken Sie auf **ConsentDialog**.  
+    1. In **Projektmappen-Explorer**, klicken Sie auf **ConsentDialog**.  
   
-    2.  Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
+    2. Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
   
-    3.  Fügen Sie in der Datei "Module1.vb" Code den folgenden Code ein.  
+    3. Fügen Sie in der Datei "Module1.vb" Code den folgenden Code ein.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  Auf der **Projekt** Menü klicken Sie auf **ConsentDialog Eigenschaften**, und klicken Sie dann auf die **Anwendung** Registerkarte.  
+    4. Auf der **Projekt** Menü klicken Sie auf **ConsentDialog Eigenschaften**, und klicken Sie dann auf die **Anwendung** Registerkarte.  
   
-    5.  Deaktivieren Sie **Anwendungsframework aktivieren**.  
+    5. Deaktivieren Sie **Anwendungsframework aktivieren**.  
   
-    6.  In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.  
+    6. In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.  
   
-        > [!NOTE]
-        >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# -Code nur für Entwickler:  
+       Visual C# -Code nur für Entwickler:  
   
-     Öffnen Sie die Codedatei "Program.cs", und fügen Sie den folgenden Code hinzu.  
+       Öffnen Sie die Codedatei "Program.cs", und fügen Sie den folgenden Code hinzu.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. Auf der **erstellen** Menü klicken Sie auf **BuildSolution**.  
   

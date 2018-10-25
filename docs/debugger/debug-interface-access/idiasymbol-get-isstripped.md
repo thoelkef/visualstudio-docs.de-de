@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isstripped | Microsoft Docs'
+title: 'Idiasymbol:: Get_isstripped | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79204e0082fdfb1920959e1c1b143bf04529ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772310c03bef7c645829bbe5c5877a5aa6cd22d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917504"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
-Ruft-Flag, das angibt, ob private Symbole aus der Symboldatei entfernt wurden.  
+Ruft-Flag gibt an, ob private Symbole aus der Symboldatei entfernt wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ HRESULT get_isStripped(
  [out] Gibt `TRUE` wenn private Symbole aus der Symboldatei; entfernt wurden, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft steht über den `SymTagExe` sprachsymboltyps fort (finden Sie unter [Exe](../../debugger/debug-interface-access/exe.md)).  
+ Diese Eigenschaft ist verfügbar, aus der `SymTagExe` sprachsymboltyps fort (finden Sie unter [Exe](../../debugger/debug-interface-access/exe.md)).  
   
 ## <a name="requirements"></a>Anforderungen  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68259200bbd89f851e75a5ca097b248153a2399e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 9f6823b564b7ec3da1585810c27db2f97c1b16ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906532"
 ---
 # <a name="confirm-activity-designer"></a>Confirm-Aktivitätsdesigner
 
@@ -37,7 +37,7 @@ Die **bestätigen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren e
  In der folgenden Tabelle werden die <xref:System.Activities.Statements.Confirm>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A> -Eigenschaft bearbeitet werden können, im Eigenschaftenraster oder Workflow-Designer-Oberfläche, aber die <xref:System.Activities.Statements.Confirm.Target%2A> Eigenschaft muss im Eigenschaftenraster bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.CancellationScope>-Aktivität an. Der Standardwert lautet Confirm.|
 |<xref:System.Activities.Statements.Confirm.Target%2A>|True|Gibt das <xref:System.Activities.InArgument%601>-Argument an, welches das <xref:System.Activities.Statements.CompensationToken>-Token für diese <xref:System.Activities.Statements.Confirm>-Aktivität enthält.|
 
@@ -46,5 +46,5 @@ Die **bestätigen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren e
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Kompensieren](../workflow-designer/compensate-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

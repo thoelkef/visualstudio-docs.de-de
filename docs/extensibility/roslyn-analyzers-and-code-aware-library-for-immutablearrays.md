@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907481"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 
@@ -82,7 +82,6 @@ Sie können einen Analyzer mit Visual Basic, die c#-Code abzielt implementieren 
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Öffnen Sie eine neue Zeile in dieser Methode, und geben "Context". eine IntelliSense-Vervollständigungsliste angezeigt.  Sehen Sie in der Liste stehen viele `Register...` Methoden, um die verschiedenen Arten von Ereignissen behandeln.  Z. B. dem ersten Beispiel, `RegisterCodeBlockAction`, Aufrufe zurück an Ihren Code für einen Block, in der Regel Code zwischen den geschweiften Klammern.  Registrieren für einen Block ruft auch wieder zu Ihrem Code für die Initialisierung eines Felds, den Wert eines Attributs oder der Wert von einem optionalen Parameter.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Ich den Abriss abgeleiteten Elemente.** Jetzt Zirkumflexzeichen des Editors im Bezeichner `CodeFixProvider` , und drücken Sie **STRG**+**.** (Punkt), um die Implementierung dieser abstrakten Basisklasse stub.  Dadurch wird eine Eigenschaft und eine Methode für Sie generiert.

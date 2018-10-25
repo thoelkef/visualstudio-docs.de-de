@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899928"
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
 #### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1. Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **Native-Activity Application (Android)** aus.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **Native-Activity Application (Android)** aus.  
   
-3.  Vergeben Sie an die App einen Namen wie etwa `MyAndroidApp`(ohne Leerzeichen), und wählen Sie dann **OK**.  
+3. Vergeben Sie an die App einen Namen wie etwa `MyAndroidApp`(ohne Leerzeichen), und wählen Sie dann **OK**.  
   
-     ![Erstellen eines Native Activity-Projekts](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Erstellen eines Native Activity-Projekts](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio erstellt die neue Projektmappe und öffnet den Projektmappen-Explorer.  
+    Visual Studio erstellt die neue Projektmappe und öffnet den Projektmappen-Explorer.  
   
-     ![Native Activity-Projekt im Projektmappen-Explorer](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Native Activity-Projekt im Projektmappen-Explorer](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- Die neue Android Native Activity-App-Projektmappe enthält zwei Projekte:  
+   Die neue Android Native Activity-App-Projektmappe enthält zwei Projekte:  
   
 -   **MyAndroidApp.NativeActivity** enthält die Verweise und den Verbindungscode, damit Ihre App als eine systemeigene Aktivität auf Android ausgeführt werden kann. Die Implementierung der Einstiegspunkte aus dem Verbindungscode befindet sich in "main.cpp". Vorkompilierte Header befinden sich in "pch.h". Das Native Activity-App-Projekt wird in eine freigegebene Bibliotheksdatei (SO) kompiliert, die durch das Paketprojekt ausgewählt wird.  
   

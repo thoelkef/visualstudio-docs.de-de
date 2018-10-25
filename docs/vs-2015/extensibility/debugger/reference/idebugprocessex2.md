@@ -17,12 +17,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89eb4a770371d19e0c7b422fcac2a08d142f731
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c91f0ee5df47f2bb57ecd3c5faece13fb17384f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912291"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
  Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle auf dasselbe Objekt wie die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) um Schnittstelle:  
   
--   Unterstützung der nachverfolgung von Sitzungen, die an einen Prozess verbunden  
+- Unterstützung der nachverfolgung von Sitzungen, die an einen Prozess verbunden  
   
--   Unterstützung für das automatische Anhängen über mehrere Debug-engines  
+- Unterstützung für das automatische Anhängen über mehrere Debug-engines  
   
- Benutzerdefinierte Anschlusslieferanten kann diese Schnittstelle implementieren, wenn er entscheidet.  
+  Benutzerdefinierte Anschlusslieferanten kann diese Schnittstelle implementieren, wenn er entscheidet.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
   

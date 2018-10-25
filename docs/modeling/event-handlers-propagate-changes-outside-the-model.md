@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910627"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 
@@ -173,7 +173,7 @@ Wenn Sie ein Ereignis, die den Speicher aktualisiert schreiben:
 Jeder Ereignistyp entspricht einer Auflistung in Store.EventManagerDirectory. Sie können das Hinzufügen oder Entfernen von Ereignishandlern zu einem beliebigen Zeitpunkt, aber es ist üblich, um sie hinzuzufügen, wenn das Dokument geladen wird.
 
 |`EventManagerDirectory` Eigenschaftenname|Ausgeführt, wenn|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Eine Instanz einer Domänenklasse, die domänenbeziehung, Form, Connector oder Diagramm wird erstellt.|
 |ElementDeleted|Ein Modellelement aus Element-Speicherverzeichnis entfernt wurde, und es ist nicht mehr, Quelle oder Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, aber bei einem zukünftigen rückgängig beibehalten wird.|
 |ElementEventsBegun|Am Ende einer äußeren Transaktion aufgerufen.|

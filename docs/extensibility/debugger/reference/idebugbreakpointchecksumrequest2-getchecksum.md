@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecd6d0ed9c69cad1275a399ffacf402529eebf4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b78c5f44d8f73aa9bb2af5a5b2aa43d5b15bd7db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910523"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Ruft die Prüfsumme Dokument für eine Anforderung Haltepunkt zu verwenden, erhält den eindeutigen Bezeichner des Prüfsummenalgorithmus ab.  
+Ruft die Dokument-Prüfsumme für eine Haltepunkt-Anforderung den eindeutigen Bezeichner des Prüfsummenalgorithmus ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,13 +44,13 @@ public int GetChecksum(
  [in] Eindeutiger Bezeichner des Prüfsummenalgorithmus.  
   
  `pChecksumData`  
- [out] Dokument-Prüfsumme für die Anforderung Haltepunkt.  
+ [out] Dokument-Prüfsumme für die Haltepunkt-Anforderung.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme eines Dokuments, also ungefähr gebunden werden, über die Benutzeroberfläche übereinstimmt.  
+ Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme der ein Dokument, das zu bindenden ist, über die Benutzeroberfläche übereinstimmt.  
   
 ```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902476"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Optionen, Text-Editor, Standard (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
  **Automatische Strukturierung und Einrückung des Programmcodes**  
  Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:  
   
--   Ausrichten des Codes an der richtigen Tabulatorposition  
+- Ausrichten des Codes an der richtigen Tabulatorposition  
   
--   Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise  
+- Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise  
   
--   Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung  
+- Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung  
   
--   Hinzufügen von Klammern zu Funktionsaufrufen  
+- Hinzufügen von Klammern zu Funktionsaufrufen  
   
--   Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen  
+- Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen  
   
--   Neuformatieren der exponentiellen Notation  
+- Neuformatieren der exponentiellen Notation  
   
--   Neuformatieren von Datumsangaben  
+- Neuformatieren von Datumsangaben  
   
- **Gliederungsmodus aktivieren**  
- Wenn Sie eine Datei im Code-Editor öffnen, können Sie das Dokument im Gliederungsmodus anzeigen. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Ist diese Option ausgewählt, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.  
+  **Gliederungsmodus aktivieren**  
+  Wenn Sie eine Datei im Code-Editor öffnen, können Sie das Dokument im Gliederungsmodus anzeigen. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Ist diese Option ausgewählt, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.  
   
- **Schnittstellen- und MustOverride-Member automatisch einfügen**  
- Wenn Sie ein Commit für eine `Implements`-Anweisung oder eine `Inherits`-Anweisung für eine Klasse ausführen, fügt der Text-Editor Prototypen für die Member ein, die implementiert bzw. überschrieben werden müssen.  
+  **Schnittstellen- und MustOverride-Member automatisch einfügen**  
+  Wenn Sie ein Commit für eine `Implements`-Anweisung oder eine `Inherits`-Anweisung für eine Klasse ausführen, fügt der Text-Editor Prototypen für die Member ein, die implementiert bzw. überschrieben werden müssen.  
   
- **Zeilentrennzeichen zwischen Prozeduren anzeigen**  
- Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:  
+  **Zeilentrennzeichen zwischen Prozeduren anzeigen**  
+  Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:  
   
 |Position in der VB-Quelldatei|Beispiel für die Linienposition|  
 |---------------------------------|------------------------------|  

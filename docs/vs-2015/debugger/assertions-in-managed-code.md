@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917699"
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  Andernfalls funktionieren die <xref:System.Diagnostics.Trace>-Methoden nur dann, wenn im Programm am Anfang der Quelldatei Folgendes steht:  
   
--   `#Const TRACE = True` in Visual Basic  
+- `#Const TRACE = True` in Visual Basic  
   
--   `#define TRACE` in Visual C# und C++  
+- `#define TRACE` in Visual C# und C++  
   
- Oder das Programm muss mit der TRACE-Option erstellt werden:  
+  Oder das Programm muss mit der TRACE-Option erstellt werden:  
   
--   `/d:TRACE=True` in Visual Basic  
+- `/d:TRACE=True` in Visual Basic  
   
--   `/d:TRACE` in Visual C# und C++  
+- `/d:TRACE` in Visual C# und C++  
   
- Wenn Debug-Methoden in einem C#- oder Visual Basic-Releasebuild verwendet werden sollen, müssen Sie das DEBUG-Symbol in der Releasekonfiguration definieren.  
+  Wenn Debug-Methoden in einem C#- oder Visual Basic-Releasebuild verwendet werden sollen, müssen Sie das DEBUG-Symbol in der Releasekonfiguration definieren.  
   
- C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Erreichen Sie denselben Effekt mit der <xref:System.Diagnostics.Trace> -Klasse mit der bedingten Kompilierung, z. B. `#ifdef DEBUG`... `#endif`. Sie können diese Symbole im Definieren der  **\<Projekt > Eigenschaftenseiten** Dialogfeld. Weitere Informationen finden Sie unter [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) oder [Projekteinstellungen für eine C- oder C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Erreichen Sie denselben Effekt mit der <xref:System.Diagnostics.Trace> -Klasse mit der bedingten Kompilierung, z. B. `#ifdef DEBUG`... `#endif`. Sie können diese Symbole im Definieren der  **\<Projekt > Eigenschaftenseiten** Dialogfeld. Weitere Informationen finden Sie unter [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) oder [Projekteinstellungen für eine C- oder C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert-Argumente  
  Die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methoden nehmen bis zu drei Argumente an. Das erste Argument, das obligatorisch ist, bezieht sich auf die zu überprüfende Bedingung. Aufrufen <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> oder <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> mit nur einem Argument, das `Assert` Methode überprüft die Bedingung und, wenn das Ergebnis "false" gibt den Inhalt der Aufrufliste, die **Ausgabe** Fenster. Im folgenden Beispiel werden die <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>-Methoden veranschaulicht:  

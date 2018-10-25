@@ -13,12 +13,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900903"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installieren von Frameworks für Komponententests von Drittanbietern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,34 +34,34 @@ Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponentente
   
 ### <a name="installing-from-visual-studio"></a>Installieren in Visual Studio  
   
-1.  Wählen Sie im Standardmenü **Tools** und dort **Erweiterungen und Updates** aus.  
+1. Wählen Sie im Standardmenü **Tools** und dort **Erweiterungen und Updates** aus.  
   
-2.  Erweitern Sie **Online**, **Visual Studio Gallery**, **Tools**. Wählen Sie **Test** aus.  
+2. Erweitern Sie **Online**, **Visual Studio Gallery**, **Tools**. Wählen Sie **Test** aus.  
   
-3.  Suchen Sie das Framework in der Liste.  
+3. Suchen Sie das Framework in der Liste.  
   
-4.  Wählen Sie das Framework und dann **Herunterladen** aus.  
+4. Wählen Sie das Framework und dann **Herunterladen** aus.  
   
- Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
+   Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ### <a name="installing-from-the-web"></a>Installation aus dem Web  
  Wenn Sie das Framework kennen, für das Sie sich interessieren:  
   
-1.  Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
+1. Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
   
-2.  Geben Sie den Namen des Frameworks im Feld **Suchen** ein.  
+2. Geben Sie den Namen des Frameworks im Feld **Suchen** ein.  
   
-3.  Wählen Sie in der Ergebnisliste das Framework aus, um zur Seite für das Tool in der Visual Studio Gallery zu navigieren.  
+3. Wählen Sie in der Ergebnisliste das Framework aus, um zur Seite für das Tool in der Visual Studio Gallery zu navigieren.  
   
- So durchsuchen Sie eine Liste der Frameworks und anderer Testtools:  
+   So durchsuchen Sie eine Liste der Frameworks und anderer Testtools:  
   
-1.  Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
+4. Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
   
-2.  Wählen Sie **Durchsuchen** aus.  
+5. Wählen Sie **Durchsuchen** aus.  
   
-3.  Erweitern Sie in der Liste **Kategorie** den Knoten **Tools**, und wählen Sie dann **Test** aus.  
+6. Erweitern Sie in der Liste **Kategorie** den Knoten **Tools**, und wählen Sie dann **Test** aus.  
   
-4.  Wählen Sie in der Ergebnisliste ein Framework aus, um in Visual Studio Gallery zu der Seite für das Tool zu gelangen.  
+7. Wählen Sie in der Ergebnisliste ein Framework aus, um in Visual Studio Gallery zu der Seite für das Tool zu gelangen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Komponententest für Code](../test/unit-test-your-code.md)

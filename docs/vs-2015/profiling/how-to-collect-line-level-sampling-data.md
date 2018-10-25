@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893415"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Gewusst wie: Sammeln von Samplingdaten auf Zeilenebene
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine proze
 ### <a name="available-data"></a>Verfügbare Daten  
  Verfügbare Samplingdaten auf Zeilenebene umfassen die folgenden Informationen:  
   
--   Funktionsname  
+- Funktionsname  
   
--   Funktionsadresse  
+- Funktionsadresse  
   
--   Zeilenanfang: Zeilennummer des Samplingcodes.  
+- Zeilenanfang: Zeilennummer des Samplingcodes.  
   
--   Zeilenende: Endquellzeilennummer. Dies ist normalerweise identisch mit den Daten „Line begin“, außer ein einzelner Programmauszug umfasst mehrere Quellcodezeilen.  
+- Zeilenende: Endquellzeilennummer. Dies ist normalerweise identisch mit den Daten „Line begin“, außer ein einzelner Programmauszug umfasst mehrere Quellcodezeilen.  
   
--   Zeichenanfang: Anfangsspalte der aggregierten Stichprobe. Dies ist normalerweise 0, außer eine einzelne Zeile enthält mehrere Programmauszüge.  
+- Zeichenanfang: Anfangsspalte der aggregierten Stichprobe. Dies ist normalerweise 0, außer eine einzelne Zeile enthält mehrere Programmauszüge.  
   
--   Zeilenende: Endspalte der aggregierten Stichprobe.  
+- Zeilenende: Endspalte der aggregierten Stichprobe.  
   
--   IP: Adresse, von der die aggregierte Stichprobe (nur IP-Ansicht) erfasst wurde.  
+- IP: Adresse, von der die aggregierte Stichprobe (nur IP-Ansicht) erfasst wurde.  
   
- Wenn eine Funktion über Statistiken auf Zeilenebene in der Ansicht **Module** verfügt, schachteln sich die Statistiken unter jeder Funktion ein. Darüber hinaus werden Statistiken auf IP-Ebene angezeigt, die unter jeder Zeile geschachtelt werden.  
+  Wenn eine Funktion über Statistiken auf Zeilenebene in der Ansicht **Module** verfügt, schachteln sich die Statistiken unter jeder Funktion ein. Darüber hinaus werden Statistiken auf IP-Ebene angezeigt, die unter jeder Zeile geschachtelt werden.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Deaktivieren Sie das Sampling auf Zeilenebene für verwalteten Code  
  Sampling auf Zeilenebene ist standardmäßig aktiviert. Sie können die Datensammlung auf Zeilenebene für verwalteten Code deaktivieren, indem Sie einen der folgenden Schritte durchführen:  

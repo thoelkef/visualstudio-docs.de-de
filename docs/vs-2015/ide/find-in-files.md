@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902138"
 ---
 # <a name="find-in-files"></a>Suchen in Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Suchen in Dateien ** können Sie einen bestimmten Satz Dateien durchsuchen. Die 
   
 ### <a name="to-display-find-in-files"></a>So rufen Sie die Option "In Dateien suchen" auf  
   
-1.  Wählen Sie in der Menüleiste **Bearbeiten** und **Suchen und Ersetzen** aus.  
+1. Wählen Sie in der Menüleiste **Bearbeiten** und **Suchen und Ersetzen** aus.  
   
-2.  Wählen Sie die Option **Suchen in Dateien** aus.  
+2. Wählen Sie die Option **Suchen in Dateien** aus.  
   
- Drücken Sie zum Abbrechen eines Suchvorgangs STRG+UNTBR.  
+   Drücken Sie zum Abbrechen eines Suchvorgangs STRG+UNTBR.  
   
 > [!NOTE]
 >  Das Tool zum Suchen und Ersetzen durchsucht keine Verzeichnisse, für die das `Hidden`-Attribut oder das `System`-Attribut festgelegt wurden.  

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903815"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Textvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bieten eine gute M�
 ### <a name="invoke-methods-from-a-template"></a>Aufrufen von Methoden aus einer Vorlage  
  Wenn die Methoden, z. B. im Standard vorhanden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Klassen:  
   
--   Verwenden der \<#@assembly#> Richtlinie zum Laden der Assembly, und verwenden Sie \<#@import#> um den Namespacekontext einzurichten. Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).  
+- Verwenden der \<#@assembly#> Richtlinie zum Laden der Assembly, und verwenden Sie \<#@import#> um den Namespacekontext einzurichten. Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).  
   
-     Wenn Sie häufig der gleichen Assembly mithilfe und-Direktiven Import, sollten Sie einen anweisungsprozessor schreiben. In den einzelnen Vorlagen können Sie des anweisungsprozessors komplizierter, aufrufen, die die Assemblys und der Model-Dateien laden und Festlegen des Kontexts des Namespace können. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Wenn Sie häufig der gleichen Assembly mithilfe und-Direktiven Import, sollten Sie einen anweisungsprozessor schreiben. In den einzelnen Vorlagen können Sie des anweisungsprozessors komplizierter, aufrufen, die die Assemblys und der Model-Dateien laden und Festlegen des Kontexts des Namespace können. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Wenn Sie die Methoden selbst schreiben:  
+  Wenn Sie die Methoden selbst schreiben:  
   
--   Wenn Sie eine Laufzeit-Textvorlage schreiben, Schreiben Sie eine partielle Klassendefinition, die den gleichen Namen wie die Laufzeit-Textvorlage. Fügen Sie die zusätzlichen Methoden in dieser Klasse hinzu.  
+- Wenn Sie eine Laufzeit-Textvorlage schreiben, Schreiben Sie eine partielle Klassendefinition, die den gleichen Namen wie die Laufzeit-Textvorlage. Fügen Sie die zusätzlichen Methoden in dieser Klasse hinzu.  
   
--   Schreiben Sie ein Klassenfunktionskontrollblock `<#+ ... #>` in dem Sie Methoden, Eigenschaften und private Klassen deklarieren können. Wenn die Textvorlage kompiliert wird, wird sie auf eine Klasse umgewandelt. Die Standardkontrollblöcke `<#...#>` Text werden an eine einzelne Methode transformiert und Klassenfunktionsblöcke werden als separate Elemente eingefügt. Weitere Informationen finden Sie unter [Kontrollblöcke für Textvorlagen](../modeling/text-template-control-blocks.md).  
+- Schreiben Sie ein Klassenfunktionskontrollblock `<#+ ... #>` in dem Sie Methoden, Eigenschaften und private Klassen deklarieren können. Wenn die Textvorlage kompiliert wird, wird sie auf eine Klasse umgewandelt. Die Standardkontrollblöcke `<#...#>` Text werden an eine einzelne Methode transformiert und Klassenfunktionsblöcke werden als separate Elemente eingefügt. Weitere Informationen finden Sie unter [Kontrollblöcke für Textvorlagen](../modeling/text-template-control-blocks.md).  
   
-     Methoden, die definiert, wie Funktionen auch eingebettete Textblöcke enthalten können.  
+   Methoden, die definiert, wie Funktionen auch eingebettete Textblöcke enthalten können.  
   
-     Sie Klassenfunktionen in einer separaten Datei, die Sie ggf. `<#@include#>` in eine oder mehrere Vorlagendateien.  
+   Sie Klassenfunktionen in einer separaten Datei, die Sie ggf. `<#@include#>` in eine oder mehrere Vorlagendateien.  
   
--   Schreiben Sie die Methoden in einer separaten Assembly (Klassenbibliothek), und rufen Sie sie aus Ihrer Vorlage. Verwenden der `<#@assembly#>` Direktive, um die Assembly zu laden und `<#@import#>` um den Namespacekontext einzurichten. Beachten Sie, dass um die Assembly neu erstellen, während Sie Debuggen, müssen Sie möglicherweise beenden und neu starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).  
+- Schreiben Sie die Methoden in einer separaten Assembly (Klassenbibliothek), und rufen Sie sie aus Ihrer Vorlage. Verwenden der `<#@assembly#>` Direktive, um die Assembly zu laden und `<#@import#>` um den Namespacekontext einzurichten. Beachten Sie, dass um die Assembly neu erstellen, während Sie Debuggen, müssen Sie möglicherweise beenden und neu starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Generieren Sie viele Dateien aus einem Modellschema  
  Wenn Sie häufig Dateien aus Modellen, die das gleiche XML oder Schema aufweisen generiert:  

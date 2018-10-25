@@ -24,31 +24,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900123"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.  
   
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:  
   
--   [Erstellen benutzerdefinierte Websitespalten](#BKMK_CreatingCustSiteCols).  
+- [Erstellen benutzerdefinierte Websitespalten](#BKMK_CreatingCustSiteCols).  
   
--   [Erstellen einen benutzerdefinierten Inhaltstyp](#BKMK_CreateCustContType).  
+- [Erstellen einen benutzerdefinierten Inhaltstyp](#BKMK_CreateCustContType).  
   
--   [Erstellen Sie eine Liste von](#BKMK_CreateList).  
+- [Erstellen Sie eine Liste von](#BKMK_CreateList).  
   
--   [Erstellen Sie eine Liste von](#BKMK_CreateList).  
+- [Erstellen Sie eine Liste von](#BKMK_CreateList).  
   
--   [Testen der Anwendung](#BKMK_TestApp).  
+- [Testen der Anwendung](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von Windows und SharePoint.

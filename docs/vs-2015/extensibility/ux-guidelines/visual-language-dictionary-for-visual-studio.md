@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886395"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visuelles Sprachwörterbuch für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
   
  **Allgemeine Richtlinien**  
   
--   Diese visual Konzepte müssen mit ihren Wörterbuchdefinition einheitlich verwendet werden. Andernfalls riskieren Sie verwirrend erscheinen Ihre Benutzer erwarten, gemeinsame Elemente dass zu konsistenten Bedeutung haben.  
+- Diese visual Konzepte müssen mit ihren Wörterbuchdefinition einheitlich verwendet werden. Andernfalls riskieren Sie verwirrend erscheinen Ihre Benutzer erwarten, gemeinsame Elemente dass zu konsistenten Bedeutung haben.  
   
--   Wählen Sie nur die relevantesten oder wichtigen Konzepte zur Verwendung in Ihrer Symbole, sodass die Bilder gestochen scharfe und leicht zu unterscheiden ist.  
+- Wählen Sie nur die relevantesten oder wichtigen Konzepte zur Verwendung in Ihrer Symbole, sodass die Bilder gestochen scharfe und leicht zu unterscheiden ist.  
   
--   Verwenden Sie nur ein oder zwei Konzepte in jedem Bild.  
+- Verwenden Sie nur ein oder zwei Konzepte in jedem Bild.  
   
--   Weitere Strategien zum Entwerfen von Symbolen, finden Sie unter [Symbol Entwurf](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Weitere Strategien zum Entwerfen von Symbolen, finden Sie unter [Symbol Entwurf](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Wechseln Sie zu Abschnitt:**  
+  **Wechseln Sie zu Abschnitt:**  
   
 1.  [Konzepte von A bis Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

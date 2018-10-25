@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863957"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  Ein Anforderungsmodell hilft Ihnen bei Folgendem:  
   
--   Konzentration auf das externe Verhalten des Systems, unabhängig von seinem internen Entwurf.  
+- Konzentration auf das externe Verhalten des Systems, unabhängig von seinem internen Entwurf.  
   
--   Beschreiben der Anforderungen von Benutzern und Projektbeteiligten mit deutlich weniger Mehrdeutigkeiten als in der natürlichen Sprache.  
+- Beschreiben der Anforderungen von Benutzern und Projektbeteiligten mit deutlich weniger Mehrdeutigkeiten als in der natürlichen Sprache.  
   
--   Definieren eines konsistenten Glossars von Begriffen, das von Benutzern, Entwicklern und Testern verwendet werden kann.  
+- Definieren eines konsistenten Glossars von Begriffen, das von Benutzern, Entwicklern und Testern verwendet werden kann.  
   
--   Reduzieren von Lücken und Inkonsistenzen hinsichtlich der Anforderungen.  
+- Reduzieren von Lücken und Inkonsistenzen hinsichtlich der Anforderungen.  
   
--   Reduzieren der für die Reaktion auf Anforderungsänderungen notwendigen Arbeit.  
+- Reduzieren der für die Reaktion auf Anforderungsänderungen notwendigen Arbeit.  
   
--   Planen der Reihenfolge, in der Funktionen entwickelt werden.  
+- Planen der Reihenfolge, in der Funktionen entwickelt werden.  
   
--   Verwenden der Modelle als Grundlage für Systemtests, um eine klare Beziehung zwischen den Tests und den Anforderungen herzustellen. Wenn sich die Anforderungen ändern, hilft Ihnen diese Beziehung beim ordnungsgemäßen Aktualisieren der Tests. Dadurch wird sichergestellt, dass das System die neuen Anforderungen erfüllt.  
+- Verwenden der Modelle als Grundlage für Systemtests, um eine klare Beziehung zwischen den Tests und den Anforderungen herzustellen. Wenn sich die Anforderungen ändern, hilft Ihnen diese Beziehung beim ordnungsgemäßen Aktualisieren der Tests. Dadurch wird sichergestellt, dass das System die neuen Anforderungen erfüllt.  
   
- Ein Anforderungsmodell bietet den größten Vorteil, wenn Sie es für die Ausrichtung von Besprechungen mit den Benutzern oder ihren Vertretern einsetzen und es am Anfang jeder Iteration überdenken. Sie müssen es nicht im Detail fertigstellen, bevor Sie Code schreiben. Eine teilweise funktionierende Anwendung bildet in der Regel, auch wenn sie sehr vereinfacht ist, die anregendste Grundlage für die Besprechung der Anforderungen mit den Benutzern. Das Modell ist eine effektive Methode, um die Ergebnisse solcher Diskussionen zusammenzufassen. Weitere Informationen finden Sie unter [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md).  
+  Ein Anforderungsmodell bietet den größten Vorteil, wenn Sie es für die Ausrichtung von Besprechungen mit den Benutzern oder ihren Vertretern einsetzen und es am Anfang jeder Iteration überdenken. Sie müssen es nicht im Detail fertigstellen, bevor Sie Code schreiben. Eine teilweise funktionierende Anwendung bildet in der Regel, auch wenn sie sehr vereinfacht ist, die anregendste Grundlage für die Besprechung der Anforderungen mit den Benutzern. Das Modell ist eine effektive Methode, um die Ergebnisse solcher Diskussionen zusammenzufassen. Weitere Informationen finden Sie unter [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  In diesen Themen meint „System“ das System oder die Anwendung, das bzw. die Sie entwickeln. Es kann sich um eine umfangreiche Sammlung von vielen Software- und Hardwarekomponenten, eine einzelne Anwendung oder eine Softwarekomponente in einem größeren System handeln. In jedem Fall beschreibt das Anforderungsmodell das Verhalten, das über eine Benutzeroberfläche oder eine API von außerhalb Ihres Systems sichtbar ist.  
@@ -84,11 +84,11 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  Das Zeichnen eines Anwendungsfalldiagramms unterstützt Ihr Team bei Folgendem:  
   
--   Konzentration darauf, was der Benutzer mit dem System tun möchte, ohne von Details der Implementierung abgelenkt zu werden  
+- Konzentration darauf, was der Benutzer mit dem System tun möchte, ohne von Details der Implementierung abgelenkt zu werden  
   
--   Besprechen des Umfangs des Systems oder bestimmter Versionen des Systems  
+- Besprechen des Umfangs des Systems oder bestimmter Versionen des Systems  
   
- Weitere Informationen finden Sie unter den folgenden Themen:  
+  Weitere Informationen finden Sie unter den folgenden Themen:  
   
 |Thema|Thema|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 ##  <a name="RequirementsClasses"></a> Definieren von Begriffen verwendet, um Anforderungen beschreiben.  
  Sie können anhand von UML-Klassendiagrammen ein einheitliches Vokabular der Business-Konzepte entwickeln, das für folgende Zwecke verwendet werden kann:  
   
--   Von den Benutzern selbst, zur Besprechung des Geschäfts, in dem das System eingesetzt wird  
+- Von den Benutzern selbst, zur Besprechung des Geschäfts, in dem das System eingesetzt wird  
   
--   Zum Beschreiben der Anforderungen der Benutzer, z.B. bei der Beschreibung von Anwendungsfällen, Geschäftsregeln und User Storys  
+- Zum Beschreiben der Anforderungen der Benutzer, z.B. bei der Beschreibung von Anwendungsfällen, Geschäftsregeln und User Storys  
   
--   Die Typen von Informationen, die an der API des Systems oder über die Benutzeroberfläche ausgetauscht werden  
+- Die Typen von Informationen, die an der API des Systems oder über die Benutzeroberfläche ausgetauscht werden  
   
--   Beschreibungen von System-oder Akzeptanztests  
+- Beschreibungen von System-oder Akzeptanztests  
   
- Wenn sie für diesen Zweck verwendet werden, wird der Inhalt eines UML-Klassendiagramms als konzeptionelles Klassendiagramm bezeichnet. (Es wird auch als *Domänenmodell* oder *Analyseklassenmodell*bezeichnet.)  
+  Wenn sie für diesen Zweck verwendet werden, wird der Inhalt eines UML-Klassendiagramms als konzeptionelles Klassendiagramm bezeichnet. (Es wird auch als *Domänenmodell* oder *Analyseklassenmodell*bezeichnet.)  
   
- In einem konzeptionellen Klassendiagramm zeigen Sie nur die Klassen an, die in der Beschreibung der Anforderungen erforderlich sind, ohne Details des internen Entwurfs des Systems. Das Diagramm zeigt keine Details des internen Entwurfs des Systems. Sie zeigen in der Regel keine Vorgänge oder Schnittstellen in konzeptionellen Klassen an.  
+  In einem konzeptionellen Klassendiagramm zeigen Sie nur die Klassen an, die in der Beschreibung der Anforderungen erforderlich sind, ohne Details des internen Entwurfs des Systems. Das Diagramm zeigt keine Details des internen Entwurfs des Systems. Sie zeigen in der Regel keine Vorgänge oder Schnittstellen in konzeptionellen Klassen an.  
   
- Sie könnten beispielsweise die folgenden konzeptionellen Klassen für das Dinner Now-System zeichnen:  
+  Sie könnten beispielsweise die folgenden konzeptionellen Klassen für das Dinner Now-System zeichnen:  
   
- ![Klassenmenü, Bestellung, Menüelement, Order-Element. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Klassenmenü, Bestellung, Menüelement, Order-Element. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Ein konzeptionelles Klassendiagramm bietet das Vokabular, das Sie im gesamten Anforderungsmodell verwenden. Beispielsweise könnten Sie in der detaillierten Beschreibung des Anwendungsfalls zum Bestellen einer Mahlzeit Folgendes schreiben:  
+  Ein konzeptionelles Klassendiagramm bietet das Vokabular, das Sie im gesamten Anforderungsmodell verwenden. Beispielsweise könnten Sie in der detaillierten Beschreibung des Anwendungsfalls zum Bestellen einer Mahlzeit Folgendes schreiben:  
   
- Der Kunde wählt eine *Speisekarte* , aus der er eine *Bestellung*vornehmen möchte, und erstellt dann *Bestellpositionen* in der *Bestellung* , indem er *Gerichte* aus der *Speisekarte*auswählt.  
+  Der Kunde wählt eine *Speisekarte* , aus der er eine *Bestellung*vornehmen möchte, und erstellt dann *Bestellpositionen* in der *Bestellung* , indem er *Gerichte* aus der *Speisekarte*auswählt.  
   
- Beachten Sie, dass die in dieser Beschreibung verwendeten Begriffe den Namen der Klassen im Modell entsprechen. Das Diagramm entfernt Mehrdeutigkeiten aus Beziehungen zwischen solchen Klassen. Beispielsweise zeigt es deutlich, dass jede Bestellung mit nur einer Speisekarte verknüpft ist.  
+  Beachten Sie, dass die in dieser Beschreibung verwendeten Begriffe den Namen der Klassen im Modell entsprechen. Das Diagramm entfernt Mehrdeutigkeiten aus Beziehungen zwischen solchen Klassen. Beispielsweise zeigt es deutlich, dass jede Bestellung mit nur einer Speisekarte verknüpft ist.  
   
- Missverständnisse im Hinblick auf die Benutzeranforderungen sind häufig auf Missverständnisse hinsichtlich der genauen Bedeutungen von Worten zurückzuführen. Beispielsweise werden die meisten Restaurants die Begriffe Speisekarte und Bestellung auf gleiche Weise verstehen, jedoch ist der Unterschied zwischen einer Position auf einer Bestellung und einem Gericht auf einer Speisekarte weniger klar. Wenn die Anforderungen mit den Projektbeteiligten besprochen werden, müssen solche Unterschiede geklärt werden. Das Klassendiagramm ist ein nützliches Tool für das Klären von Begriffen und ihren Beziehungen.  
+  Missverständnisse im Hinblick auf die Benutzeranforderungen sind häufig auf Missverständnisse hinsichtlich der genauen Bedeutungen von Worten zurückzuführen. Beispielsweise werden die meisten Restaurants die Begriffe Speisekarte und Bestellung auf gleiche Weise verstehen, jedoch ist der Unterschied zwischen einer Position auf einer Bestellung und einem Gericht auf einer Speisekarte weniger klar. Wenn die Anforderungen mit den Projektbeteiligten besprochen werden, müssen solche Unterschiede geklärt werden. Das Klassendiagramm ist ein nützliches Tool für das Klären von Begriffen und ihren Beziehungen.  
   
- Das konzeptionelle Klassenmodell kann das Grundvokabular bilden, mit dem die Geschäftslogik Ihres Systems beschrieben werden kann. Doch die Klassen in der Software sind in der Regel viel komplexer als das konzeptionelle Modell, da bei der Implementierung Aspekte wie die Leistung, Verteilung, Flexibilität und andere Faktoren berücksichtigt werden müssen. Häufig umfasst ein System mehrere unterschiedliche Implementierungen einer konzeptionellen Klasse.  
+  Das konzeptionelle Klassenmodell kann das Grundvokabular bilden, mit dem die Geschäftslogik Ihres Systems beschrieben werden kann. Doch die Klassen in der Software sind in der Regel viel komplexer als das konzeptionelle Modell, da bei der Implementierung Aspekte wie die Leistung, Verteilung, Flexibilität und andere Faktoren berücksichtigt werden müssen. Häufig umfasst ein System mehrere unterschiedliche Implementierungen einer konzeptionellen Klasse.  
   
- Beispielsweise können Bestellungen in XML, SQL, HTML und C# in unterschiedlichen Teilen des Systems und an unterschiedlichen Schnittstellen zwischen den Teilen dargestellt werden. Die Zuordnung zwischen einer Bestellung und einer Speisekarte könnte auf viele verschiedene Arten dargestellt werden, etwa als Verweise in C#-Code, Beziehungen in einer Datenbank oder übergreifende IDs in XML. Doch trotz dieser Abweichungen bietet das konzeptionelle Model wichtige Informationen, die für jeden Teil der Software gelten. Das Klassendiagramm im Beispiel gibt an, dass in jeder Implementierung nur eine Speisekarte mit jeder Bestellung verknüpft ist.  
+  Beispielsweise können Bestellungen in XML, SQL, HTML und C# in unterschiedlichen Teilen des Systems und an unterschiedlichen Schnittstellen zwischen den Teilen dargestellt werden. Die Zuordnung zwischen einer Bestellung und einer Speisekarte könnte auf viele verschiedene Arten dargestellt werden, etwa als Verweise in C#-Code, Beziehungen in einer Datenbank oder übergreifende IDs in XML. Doch trotz dieser Abweichungen bietet das konzeptionelle Model wichtige Informationen, die für jeden Teil der Software gelten. Das Klassendiagramm im Beispiel gibt an, dass in jeder Implementierung nur eine Speisekarte mit jeder Bestellung verknüpft ist.  
   
- Durch das Zeichnen eines Klassendiagramms wird Ihr Team bei Folgendem unterstützt:  
+  Durch das Zeichnen eines Klassendiagramms wird Ihr Team bei Folgendem unterstützt:  
   
--   Definieren und Standardisieren der grundlegenden Begriffe, die in Besprechungen der Benutzeranforderungen verwendet werden  
+- Definieren und Standardisieren der grundlegenden Begriffe, die in Besprechungen der Benutzeranforderungen verwendet werden  
   
--   Klären der Beziehungen zwischen diesen Begriffen  
+- Klären der Beziehungen zwischen diesen Begriffen  
   
- Weitere Informationen finden Sie unter den folgenden Themen:  
+  Weitere Informationen finden Sie unter den folgenden Themen:  
   
 |Thema|Thema|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.  
   
- Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese schreiben *statische ** Geschäftsregeln* als Kommentare, die mit den entsprechenden Klassen in einem konzeptionellen Diagramm verknüpft ist. Zum Beispiel:  
+ Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese schreiben *statischer Geschäftsregeln* als Kommentare, die mit den entsprechenden Klassen in einem konzeptionellen Diagramm verknüpft ist. Zum Beispiel:  
   
  ![Die Regel innerhalb eines Kommentars an Order-Klasse angefügt ist. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 ##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:  
   
--   Leistung  
+- Leistung  
   
--   Sicherheit  
+- Sicherheit  
   
--   Verwendbarkeit  
+- Verwendbarkeit  
   
--   Zuverlässigkeit  
+- Zuverlässigkeit  
   
--   Stabilität  
+- Stabilität  
   
- Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:  
+  Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:  
   
- Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestellt, werden Bestellpositionen, die sich auf dieses Gericht beziehen, rot angezeigt.  
+  Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestellt, werden Bestellpositionen, die sich auf dieses Gericht beziehen, rot angezeigt.  
   
- Weitere Informationen finden Sie in den folgenden Themen:  
+  Weitere Informationen finden Sie in den folgenden Themen:  
   
 |Thema|Lesen|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  Sie werden merken, dass viele Fragen zur Geschäftsdomäne auf natürliche Weise aufkommen, während Sie ein Modell erstellen. Indem Sie diese Fragen den Benutzern stellen, reduzieren Sie die Notwendigkeit von Änderungen in späteren Projektphasen. Nachfolgend finden Sie einige spezifische Fragen, die Sie sich zunächst selbst und anschließend den Projektbeteiligten stellen können, wenn die Antwort nicht klar ist:  
   
--   Fragen Sie für jede Klasse im Anforderungsmodell: „Welcher Anwendungsfall erstellt Instanzen dieser Klasse?“. Bei einem Onlinebestelldienst für Mahlzeiten beispielsweise könnten Sie fragen: „Welcher Anwendungsfall erstellt Instanzen der Klasse der Restaurantspeisekarten?“. Dies würde zu einer Diskussion darüber führen, wie ein neues Restaurants für den Dienst registriert wird und seine Speisekarte beisteuert. Sie können ähnliche Fragen darüber stellen, was Attribute und Zuordnungen erstellt oder ändert.  
+- Fragen Sie für jede Klasse im Anforderungsmodell: „Welcher Anwendungsfall erstellt Instanzen dieser Klasse?“. Bei einem Onlinebestelldienst für Mahlzeiten beispielsweise könnten Sie fragen: „Welcher Anwendungsfall erstellt Instanzen der Klasse der Restaurantspeisekarten?“. Dies würde zu einer Diskussion darüber führen, wie ein neues Restaurants für den Dienst registriert wird und seine Speisekarte beisteuert. Sie können ähnliche Fragen darüber stellen, was Attribute und Zuordnungen erstellt oder ändert.  
   
--   Versuchen Sie für jeden Anwendungsfall im Anforderungsmodell, das Endergebnis oder die Nachbedingung der einzelnen Anwendungsfälle in Worten zu beschreiben, die Sie in den Klassendiagrammen finden. Es ist häufig nützlich, die Wirkung eines Anwendungsfalls zu zeigen, indem Sie Instanzen der Klassen vor und nach einem Auftreten des Anwendungsfalls skizzieren. Wenn die Nachbedingung des Anwendungsfalls beispielsweise „Ein Gericht wird der Kundenbestellung hinzugefügt“ lautet, skizzieren Sie Instanzen der Klassen „Bestellung“ und „Gericht“. Zeigen Sie die Wirkungen des Anwendungsfalls, etwa eine neue Verknüpfung oder ein neues Objekt, in einer anderen Farbe oder in einer neuen Zeichnung an. Dies führt häufig zu Diskussionen darüber, welche Informationen im Modell notwendig sind. Obwohl Anforderungsklassen nicht direkt mit der Implementierung zu tun haben, beschreiben sie die Informationen, die das System zum Speichern und Übertragen benötigt.  
+- Versuchen Sie für jeden Anwendungsfall im Anforderungsmodell, das Endergebnis oder die Nachbedingung der einzelnen Anwendungsfälle in Worten zu beschreiben, die Sie in den Klassendiagrammen finden. Es ist häufig nützlich, die Wirkung eines Anwendungsfalls zu zeigen, indem Sie Instanzen der Klassen vor und nach einem Auftreten des Anwendungsfalls skizzieren. Wenn die Nachbedingung des Anwendungsfalls beispielsweise „Ein Gericht wird der Kundenbestellung hinzugefügt“ lautet, skizzieren Sie Instanzen der Klassen „Bestellung“ und „Gericht“. Zeigen Sie die Wirkungen des Anwendungsfalls, etwa eine neue Verknüpfung oder ein neues Objekt, in einer anderen Farbe oder in einer neuen Zeichnung an. Dies führt häufig zu Diskussionen darüber, welche Informationen im Modell notwendig sind. Obwohl Anforderungsklassen nicht direkt mit der Implementierung zu tun haben, beschreiben sie die Informationen, die das System zum Speichern und Übertragen benötigt.  
   
--   Fragen Sie nach den Einschränkungen bei Attributen und Zuordnungen, insbesondere nach Einschränkungen, die mehr als ein Attribut oder eine Zuordnung betreffen.  
+- Fragen Sie nach den Einschränkungen bei Attributen und Zuordnungen, insbesondere nach Einschränkungen, die mehr als ein Attribut oder eine Zuordnung betreffen.  
   
--   Fragen Sie nach gültigen und ungültigen Sequenzen von Anwendungsfällen, und zeichnen Sie Sequenz- oder Aktivitätsdiagramme, um sie darzustellen.  
+- Fragen Sie nach gültigen und ungültigen Sequenzen von Anwendungsfällen, und zeichnen Sie Sequenz- oder Aktivitätsdiagramme, um sie darzustellen.  
   
- Durch Untersuchen der Beziehungen zwischen den Ansichten, die von verschiedenen Diagrammen bereitstellt werden, können Sie schnell die wichtigsten Konzepte verstehen, mit denen die Benutzer arbeiten, und ihnen helfen, zu verstehen, was sie aus dem System benötigen. Sie können auch besser verstehen, bei welchen Anforderungen sich die Projektbeteiligten am unsichersten sind. Sie können planen, diese Features zumindest in vereinfachter Form in einem frühen Stadium des Projekts zu entwickeln, damit Benutzer mit ihnen experimentieren können.  
+  Durch Untersuchen der Beziehungen zwischen den Ansichten, die von verschiedenen Diagrammen bereitstellt werden, können Sie schnell die wichtigsten Konzepte verstehen, mit denen die Benutzer arbeiten, und ihnen helfen, zu verstehen, was sie aus dem System benötigen. Sie können auch besser verstehen, bei welchen Anforderungen sich die Projektbeteiligten am unsichersten sind. Sie können planen, diese Features zumindest in vereinfachter Form in einem frühen Stadium des Projekts zu entwickeln, damit Benutzer mit ihnen experimentieren können.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   

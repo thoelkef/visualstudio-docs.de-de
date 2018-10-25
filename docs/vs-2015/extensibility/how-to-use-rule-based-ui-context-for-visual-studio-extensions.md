@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884094"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
   
  Regelbasierte UI-Kontext kann verwendet werden, in einer Vielzahl von Möglichkeiten:  
   
-1.  Geben Sie die Sichtbarkeit von Einschränkungen für Befehle und Toolfenster. Sie können die Windows-Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.  
+1. Geben Sie die Sichtbarkeit von Einschränkungen für Befehle und Toolfenster. Sie können die Windows-Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.  
   
-2.  Als Auto serverlastbeschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist  
+2. Als Auto serverlastbeschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist  
   
-3.  Verzögerte Aufgabe: verzögert geladen werden, bis ein angegebenes Intervall ist verstrichen, und weiterhin die Regel erfüllt ist.  
+3. Verzögerte Aufgabe: verzögert geladen werden, bis ein angegebenes Intervall ist verstrichen, und weiterhin die Regel erfüllt ist.  
   
- Der Mechanismus kann von jedem Visual Studio-Erweiterung verwendet werden.  
+   Der Mechanismus kann von jedem Visual Studio-Erweiterung verwendet werden.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Erstellen Sie einen regelbasierten UI-Kontext  
  Angenommen, Sie haben es sich um eine Erweiterung TestPackage, das einen Menübefehl bietet die gilt nur für Dateien mit der Dateierweiterung ".config" aufgerufen. Vor Visual Studio 2015, wurde die beste Option zum Laden von TestPackage beim <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI-Kontext wurde aktiviert. Dies ist nicht effizient, da die geladene Projektmappe auch eine config-Datei möglicherweise keinen enthält. Lassen Sie uns finden Sie unter wie regelbasierten Benutzeroberflächenkontexts verwendet werden kann, um einen UI-Kontext nur, wenn eine Datei mit der Dateierweiterung .config aktivieren ausgewählt ist, und TestPackage zu laden, wenn diese UI-Kontext aktiviert ist.  
   
-1.  Definieren Sie eine neue UIContext-GUID und die VSPackage-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Definieren Sie eine neue UIContext-GUID und die VSPackage-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Beispielsweise nehmen wir an einer neuen UIContext "UIContextGuid" wird hinzugefügt werden. Die GUID erstellt (Sie können eine GUID erstellen, indem Sie die Tools auf -> Guid erstellen) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" ist. Sie fügen dann Folgendes in der Paketklasse:  
+    Beispielsweise nehmen wir an einer neuen UIContext "UIContextGuid" wird hinzugefügt werden. Die GUID erstellt (Sie können eine GUID erstellen, indem Sie die Tools auf -> Guid erstellen) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" ist. Sie fügen dann Folgendes in der Paketklasse:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Fügen Sie für die Attribute können Folgendes hinzu: (Details zu diesen Attributen werden weiter unten erläutert)  
+    Fügen Sie für die Attribute können Folgendes hinzu: (Details zu diesen Attributen werden weiter unten erläutert)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Diese Metadaten definieren, die neue UIContext-GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) und einen Ausdruck verweisen auf einen einzelnen Begriff "DotConfig". Der Begriff "DotConfig" auf "true" ausgewertet wird, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen verfügt, das Muster des regulären Ausdrucks entspricht "\\config$" (mit ".config" endet). Der Wert (Standard) definiert einen optionalen Namen für die Regel, die beim Debuggen nützlich.  
+    Diese Metadaten definieren, die neue UIContext-GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) und einen Ausdruck verweisen auf einen einzelnen Begriff "DotConfig". Der Begriff "DotConfig" auf "true" ausgewertet wird, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen verfügt, das Muster des regulären Ausdrucks entspricht "\\config$" (mit ".config" endet). Der Wert (Standard) definiert einen optionalen Namen für die Regel, die beim Debuggen nützlich.  
   
-     Die Werte des Attributs werden generiert, bei der Erstellung danach Pkgdef hinzugefügt.  
+    Die Werte des Attributs werden generiert, bei der Erstellung danach Pkgdef hinzugefügt.  
   
-2.  Fügen Sie in der VSCT-Datei für die TestPackage Befehle auf den entsprechenden Befehlen das Flag "DynamicVisibility" hinzu:  
+2. Fügen Sie in der VSCT-Datei für die TestPackage Befehle auf den entsprechenden Befehlen das Flag "DynamicVisibility" hinzu:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  Klicken Sie im Abschnitt Sichtbarkeiten des der VSCT verknüpfen Sie die entsprechenden Befehle, um die neue UIContext-GUID in #1 definiert:  
+3. Klicken Sie im Abschnitt Sichtbarkeiten des der VSCT verknüpfen Sie die entsprechenden Befehle, um die neue UIContext-GUID in #1 definiert:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:  
+4. Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Die Kontextmenübefehle für *.config-Dateien werden nun sichtbar sein, nur, wenn das ausgewählte Element im Projektmappen-Explorer eine Datei ".config ist" und das Paket wird nicht geladen werden, bis eines dieser Befehle ausgewählt ist.  
+    Die Kontextmenübefehle für *.config-Dateien werden nun sichtbar sein, nur, wenn das ausgewählte Element im Projektmappen-Explorer eine Datei ".config ist" und das Paket wird nicht geladen werden, bis eines dieser Befehle ausgewählt ist.  
   
- Als Nächstes verwenden wir einen Debugger, um sicherzustellen, dass das Paket lädt nur wenn sie voraussichtlich. So debuggen Sie TestPackage:  
+   Als Nächstes verwenden wir einen Debugger, um sicherzustellen, dass das Paket lädt nur wenn sie voraussichtlich. So debuggen Sie TestPackage:  
   
-1.  Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+5. Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
-2.  Erstellen Sie die TestPackage, und starten Sie das Debuggen.  
+6. Erstellen Sie die TestPackage, und starten Sie das Debuggen.  
   
-3.  Erstellen Sie ein Projekt oder öffnen Sie eine.  
+7. Erstellen Sie ein Projekt oder öffnen Sie eine.  
   
-4.  Wählen Sie alle Dateien mit einer anderen Erweiterung als config. Der Haltepunkt sollte nicht erreicht werden.  
+8. Wählen Sie alle Dateien mit einer anderen Erweiterung als config. Der Haltepunkt sollte nicht erreicht werden.  
   
-5.  Wählen Sie die Datei "App.config".  
+9. Wählen Sie die Datei "App.config".  
   
- Die TestPackage lädt und die Ausführung am Haltepunkt beendet.  
+   Die TestPackage lädt und die Ausführung am Haltepunkt beendet.  
   
 ## <a name="adding-more-rules-for-ui-context"></a>Hinzufügen von weiteren Regeln für die UI-Kontext  
  Da die UI-Kontext Regeln boolesche Ausdrücke sind, können Sie restriktivere Regeln für einen UI-Kontext hinzufügen. In den oben genannten UI-Kontext, können Sie beispielsweise angeben, dass die Regel gilt nur, wenn eine Projektmappe mit einem Projekt geladen wird. Auf diese Weise werden die Befehle angezeigt, wenn Sie eine Datei ".config" als eigenständige Datei und nicht als Teil eines Projekts öffnen.  

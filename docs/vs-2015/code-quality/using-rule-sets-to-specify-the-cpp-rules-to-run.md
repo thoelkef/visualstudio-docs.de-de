@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859667"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz  
   
-1.  Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
+1. Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
   
-2.  Auf der **Eigenschaften** Registerkarte **Codeanalyse**.  
+2. Auf der **Eigenschaften** Registerkarte **Codeanalyse**.  
   
-3.  In der **Regelsatz** Dropdown-Listenfeld, führen Sie einen der folgenden:  
+3. In der **Regelsatz** Dropdown-Listenfeld, führen Sie einen der folgenden:  
   
-    -   Wählen Sie den Regelsatz, den Sie anpassen möchten.  
+   - Wählen Sie den Regelsatz, den Sie anpassen möchten.  
   
      \- oder –  
   
-    -   Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.  
+   - Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.  
   
-4.  Wählen Sie **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.  
+4. Wählen Sie **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>So ändern Sie einen Regelsatz im Regelsatz-Editor  
   

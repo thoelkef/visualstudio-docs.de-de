@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Next | Microsoft Docs
+title: IEnumDebugPortSuppliers2::Next | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2811fb69cab56a8e4e11461436527c70152bbc8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46d75eae038692fc759e56b5dac5da005414c6d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910640"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.  
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der abzurufenden Elemente. Außerdem gibt die maximale Größe von der `rgelt` Array.  
+ [in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.  
   
  `rgelt`  
- [in, out] Array von [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) Elemente ausgefüllt werden.  
+ [in, out] Array von [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) Elementen gefüllt werden soll.  
   
  `pceltFetched`  
- [out] Gibt die Anzahl der Elemente, die tatsächlich im zurückgegebenen `rgelt`.  
+ [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte; andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)   

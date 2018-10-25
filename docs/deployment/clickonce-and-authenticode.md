@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907442"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce und Authenticode
 *Authenticode* ist eine Microsoft-Technologie, die mithilfe von Industriestandard-Kryptografie Anwendungscode mit digitalen Zertifikaten signiert, die die Echtheit des Herausgebers der Anwendung bestätigen. Durch die Verwendung von Authenticode bei der Bereitstellung einer Anwendung reduziert [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] das Risiko eines trojanischen Pferdes. Ein trojanisches Pferd ist ein Virus oder ein schädliches Programm, das ein böswilliger Drittanbieter als sicheres Programm aus einer bekannten und vertrauenswürdigen Quelle darstellt. Signieren von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellungen mit einem digitalen Zertifikat ist ein optionaler Schritt, um sicherzustellen, dass die Assemblys und Dateien nicht manipuliert wurden.  
@@ -39,11 +39,11 @@ ms.locfileid: "39512209"
   
  Sie können ein Zertifikat für Codesignaturen auf eine von drei Arten abrufen:  
   
--   Sie erwerben es von einem Zertifikatsanbieter.  
+- Sie erwerben es von einem Zertifikatsanbieter.  
   
--   Sie erhalten es von einer Abteilung in Ihrem Unternehmen, die für das Erstellen von digitalen Zertifikaten verantwortlich ist.  
+- Sie erhalten es von einer Abteilung in Ihrem Unternehmen, die für das Erstellen von digitalen Zertifikaten verantwortlich ist.  
   
--   Generieren Sie Ihr eigenes Zertifikat mithilfe des New-SelfSignedCertificate-PowerShell-Cmdlets oder mithilfe von *MakeCert.exe*, das ist im Lieferumfang der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
+- Generieren Sie Ihr eigenes Zertifikat mithilfe des New-SelfSignedCertificate-PowerShell-Cmdlets oder mithilfe von *MakeCert.exe*, das ist im Lieferumfang der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Wie der Verwendung von Zertifizierungsstellen Benutzern hilft  
  Ein mit New-SelfSignedCertificate generiertes Zertifikat oder die *MakeCert.exe* Hilfsprogramm wird eine *selbst signiertes Zertifikat* oder ein *Testzertifikat*. Diese Art von Zertifikat funktioniert sehr ähnlich wie eine *snk* Datei funktioniert in .NET Framework. Es besteht ausschließlich aus einem kryptografischen öffentlichen/privaten Schlüsselpaar und enthält keine überprüfbaren Informationen zum Herausgeber. Sie können selbst signierte Zertifikate zum Bereitstellen von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen mit hoher Vertrauenswürdigkeit in einem Intranet verwenden. Beim Ausführen dieser Anwendungen auf einem Clientcomputer wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sie jedoch als von einem unbekannten Herausgeber stammend identifizieren. In der Standardeinstellung können [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Applikationen, die mit selbst signierten Zertifikaten signiert und über das Internet bereitgestellt sind, keine vertrauenswürdige Anwendungsbereitstellung nutzen.  
@@ -68,7 +68,7 @@ ms.locfileid: "39512209"
   
 ### <a name="store-certificates"></a>Store-Zertifikate  
   
--   Sie können Zertifikate als speichern eine *PFX* -Datei auf Ihrem Dateisystem, oder Sie können in einem Schlüsselcontainer speichern. Ein Benutzer auf einer Windows-Domäne kann über mehrere Schlüsselcontainer verfügen. In der Standardeinstellung *MakeCert.exe* Zertifikate werden in Ihrem persönlichen Schlüsselcontainer gespeichert werden, es sei denn, die Sie angeben, dass sie sie speichern sollten eine *PFX* stattdessen. *Mage.exe* und *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Tools zum Erstellen von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellungen ermöglichen es Ihnen, beide Arten gespeicherte Zertifikate zu verwenden.  
+- Sie können Zertifikate als speichern eine *PFX* -Datei auf Ihrem Dateisystem, oder Sie können in einem Schlüsselcontainer speichern. Ein Benutzer auf einer Windows-Domäne kann über mehrere Schlüsselcontainer verfügen. In der Standardeinstellung *MakeCert.exe* Zertifikate werden in Ihrem persönlichen Schlüsselcontainer gespeichert werden, es sei denn, die Sie angeben, dass sie sie speichern sollten eine *PFX* stattdessen. *Mage.exe* und *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Tools zum Erstellen von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellungen ermöglichen es Ihnen, beide Arten gespeicherte Zertifikate zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Microsoft Docs
+title: IDebugCoreServer2::GetPort | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f889e44895faf9b5afdc2186adc5baadd5a578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14172972c77218663da59d36e3e94ffd3c07c2d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887339"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Ruft einen bestimmten Port ab.  
@@ -43,13 +43,13 @@ int GetPort(
   
 #### <a name="parameters"></a>Parameter  
  `guidPort`  
- [in] Die GUID des Ports abgerufen werden sollen.  
+ [in] GUID des Ports, die abgerufen werden.  
   
  `ppPort`  
  [out] Gibt eine [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Objekt, das den gewünschten Port darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_PORTSUPPLIER_NO_PORT` Wenn kein Port mit dem angegebenen Bezeichner vorhanden ist.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_PORTSUPPLIER_NO_PORT` Wenn wurde kein Port mit dem angegebenen Bezeichner.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

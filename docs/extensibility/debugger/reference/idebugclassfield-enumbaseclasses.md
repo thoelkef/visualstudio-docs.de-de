@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Microsoft Docs
+title: IDebugClassField::EnumBaseClasses | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5210859115947115bce6525cd5b6cd15c4d59d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5938809aa7fcd2e913743fc778c66205e39988e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901098"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Erstellt einen Enumerator für die Basisklassen dieser Klasse.  
@@ -44,10 +44,10 @@ int EnumBaseClasses(
  [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Basisklassen darstellt. Gibt einen null-Wert zurück, wenn keine Basisklassen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei Erfolg S_OK zurückgibt, gibt S_SH_NO_BASE_CLASSES zurück, wenn es sind keine Basisklassen (und die `ppEnum` Parameter auf einen null-Wert festgelegt ist), andernfalls wird ein Fehlercode zurückgegeben.  
+ Im Erfolgsfall gibt S_OK zurück, gibt S_SH_NO_BASE_CLASSES zurück, wenn keine Basisklassen vorhanden sind (und die `ppEnum` -Parameter auf einen null-Wert festgelegt ist), andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Basisklassen im Enumerator-Objekt werden in der Reihenfolge der aktuellste (oder am stärksten abgeleitete) Basisklasse für die meisten remote Basisklasse angegeben. Angenommen, die C++-Klassen:  
+ Die Basisklassen im Enumerator-Objekt werden in der Reihenfolge der Basisklasse am unmittelbarsten (oder am stärksten abgeleiteten) auf die meisten RAS Basisklasse angegeben. Angenommen, die C++-Klassen:  
   
 ```  
 class Root { }  
@@ -56,7 +56,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- Die Enumeration würde die Basisklassen zurückgeben, in der Reihenfolge `Level2`, `Level1`, `Root`.  
+ Die Basisklassen in der Reihenfolge die Enumeration zurück `Level2`, `Level1`, `Root`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

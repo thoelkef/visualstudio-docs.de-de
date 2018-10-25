@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_ismsilnetmodule | Microsoft Docs'
+title: 'Idiasymbol:: Get_ismsilnetmodule | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c902252e250c78e5712f5e91b8cc5404851cc6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904687"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-Ruft ein Flag, das angibt, ob das Modul ist eine NETMODULE-Datei (ein Microsoft Intermediate Language (MSIL)-Modul, das nur die Metadaten und keine systemeigenen Symbole enthält) ab.  
+Ruft ein Flag, der angibt, ob das Modul ist eine NETMODULE-Datei (ein Microsoft Intermediate Language (MSIL)-Modul, das nur die Metadaten und enthält keine systemeigenen Symbole enthält) ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,16 +34,16 @@ HRESULT get_isMSILNetmodule(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn das Modul MSIL; ist, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn das Modul MSIL; ist andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft steht über den `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+ Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Anforderungen  
   

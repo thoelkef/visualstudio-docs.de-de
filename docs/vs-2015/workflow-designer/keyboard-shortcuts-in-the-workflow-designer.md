@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895339"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)] kann über die Tastatur zugegriffen werden.  
@@ -49,29 +49,29 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 ### <a name="flowchart"></a>Flussdiagramm  
  In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Wie in den restlichen Teilen von [!INCLUDE[wfd2](../includes/wfd2-md.md)] werden der Designeroberfläche Aktivitäten mit den globalen Toolbox-Tastenkombinationen, die in [!INCLUDE[vs2010](../includes/vs2010-md.md)] verfügbar sind, hinzugefügt.  
   
--   Um eine Aktivität zu verschieben, markieren Sie die Aktivität, und ordnen Sie sie mithilfe der PFEILTASTEN neu an.  
+- Um eine Aktivität zu verschieben, markieren Sie die Aktivität, und ordnen Sie sie mithilfe der PFEILTASTEN neu an.  
   
--   Um die Größe eines Flussdiagramms zu ändern, schieben Sie eine Aktivität mit den PFEILTASTEN über den aktuellen Rahmen des Flussdiagramms hinaus. Die Größe des Flussdiagramms wird automatisch geändert.  
+- Um die Größe eines Flussdiagramms zu ändern, schieben Sie eine Aktivität mit den PFEILTASTEN über den aktuellen Rahmen des Flussdiagramms hinaus. Die Größe des Flussdiagramms wird automatisch geändert.  
   
--   Um eine Aktivität als Startknoten festzulegen, verwenden die **als Startknoten festlegen** im Kontextmenü den Befehl.  
+- Um eine Aktivität als Startknoten festzulegen, verwenden die **als Startknoten festlegen** im Kontextmenü den Befehl.  
   
--   So verbinden Sie Aktivitäten:  
+- So verbinden Sie Aktivitäten:  
   
-    1.  Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.  
+  1.  Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.  
   
-    2.  Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.  
+  2.  Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.  
   
-    3.  Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.  
+  3.  Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.  
   
-    4.  Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.  
+  4.  Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.  
   
- Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:  
+  Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:  
   
--   Sie können gleichzeitig mehrere Verbindungen herstellen, indem Sie der Auswahl mehrere Aktivitäten hinzufügen, bevor Sie STRG+E, F drücken. Die Verbindungen werden in der Reihenfolge hergestellt, in der die Aktivitäten der Auswahl hinzugefügt wurden.  
+- Sie können gleichzeitig mehrere Verbindungen herstellen, indem Sie der Auswahl mehrere Aktivitäten hinzufügen, bevor Sie STRG+E, F drücken. Die Verbindungen werden in der Reihenfolge hergestellt, in der die Aktivitäten der Auswahl hinzugefügt wurden.  
   
--   Selbst wenn ein Aktivitätenpaar nicht verbunden werden kann, z. B. wenn die Quellaktivität bereits über eine ausgehende Verbindung verfügt, werden die anderen Verbindungen zwischen Aktivitäten in der Auswahl noch hergestellt, sofern dies möglich ist.  
+- Selbst wenn ein Aktivitätenpaar nicht verbunden werden kann, z. B. wenn die Quellaktivität bereits über eine ausgehende Verbindung verfügt, werden die anderen Verbindungen zwischen Aktivitäten in der Auswahl noch hergestellt, sofern dies möglich ist.  
   
--   Wenn eine **FlowDecision** befindet sich in der Auswahl und die **FlowDecision** keine ausgehenden Connectors besitzt, der Connector befindet sich auf die **"true"** Branch.  
+- Wenn eine **FlowDecision** befindet sich in der Auswahl und die **FlowDecision** keine ausgehenden Connectors besitzt, der Connector befindet sich auf die **"true"** Branch.  
   
 ### <a name="expression-editing"></a>Ausdrucksbearbeitung  
  Standardmäßig sind die Standardtastenkombinationen für die Textbearbeitung in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] auch im Ausdrucks-Editor in [!INCLUDE[wfd2](../includes/wfd2-md.md)] gültig, wobei den folgenden Einschränkungen gelten:  

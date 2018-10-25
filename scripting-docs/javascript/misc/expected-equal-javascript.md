@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39; = &#39; (JavaScript) | Microsoft Docs
+title: Erwartet &#39;=&#39; (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,23 +21,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909996"
 ---
-# <a name="expected-3939-javascript"></a>Erwartete &#39; = &#39; (JavaScript)
-Sie versucht haben, erstellen eine Variable, die in bedingten kompilierungsanweisungen verwendet werden, jedoch nicht platziert werden, ein Gleichheitszeichen zwischen Variablen und der Wert, den Sie zuweisen möchten.  
+# <a name="expected-3939-javascript"></a>Erwartet &#39;=&#39; (JavaScript)
+Sie hat versucht, erstellen eine Variable, die mit bedingten kompilierungsanweisungen verwendet werden, aber platzieren Sie nicht an ein Gleichheitszeichen zwischen Variablen und den Wert an, die, den Sie zuweisen möchten.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie ein Gleichheitszeichen ein. Zum Beispiel:  
+-   Fügen Sie ein Gleichheitszeichen. Zum Beispiel:  
   
     ```JavaScript  
     @set @myvar1 = 1  
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [Für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)
