@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4b5a818a75399fc4ce29fb7f2bec6332dac0585
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930595"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring des Extrahierens einer Methode
 
@@ -41,21 +41,21 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/extractmethod-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code – Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Hervorgehobener Code – Visual Basic](media/extractmethod-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+R** und dann **STRG+M**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
+      - Drücken Sie **STRG+R** und dann **STRG+M**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
    - **Maus**
-     - Wählen Sie **Bearbeiten > Umgestalten > Methode extrahieren** aus.
-     - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umgestalten > Extrahieren > Methode extrahieren**.
-     - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie das Menü **Schnellaktionen und Refactorings** sowie im Popupvorschaufenster **Methode extrahieren** aus.
+      - Wählen Sie **Bearbeiten > Umgestalten > Methode extrahieren** aus.
+      - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umgestalten > Extrahieren > Methode extrahieren**.
+      - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie das Menü **Schnellaktionen und Refactorings** sowie im Popupvorschaufenster **Methode extrahieren** aus.
 
    Die Methode wird sofort erstellt. In dieser Ansicht können Sie nun die Methode umbenennen, indem Sie einfach den neuen Namen eingeben.
 
@@ -64,13 +64,13 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Umbenennen einer Methode – C#](media/extractmethod-rename-cs.png)
+      ![Umbenennen einer Methode – C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-    ![Umbenennen einer Methode – Visual Basic](media/extractmethod-rename-vb.png)
+      ![Umbenennen einer Methode – Visual Basic](media/extractmethod-rename-vb.png)
 
-1. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
+3. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
 ## <a name="see-also"></a>Siehe auch
 

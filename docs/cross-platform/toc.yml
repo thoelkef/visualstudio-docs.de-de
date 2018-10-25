@@ -1,23 +1,9 @@
 items:
 - name: Plattformübergreifende, mobile Entwicklung in Visual Studio
   href: cross-platform-mobile-development-in-visual-studio.md
-- name: Visual Studio und Xamarin
-  href: visual-studio-and-xamarin.md
-  items:
-  - name: Setup und Installation
-    href: setup-and-install.md
-  - name: Erfahren Sie mehr über die Entwicklung für mobile Plattformen mit Xamarin
-    href: learn-about-mobile-development-with-xamarin.md
-  - name: Überprüfen Ihrer Xamarin-Umgebung
-    href: verify-your-xamarin-environment.md
-  - name: Erlernen von Grundlagen der App-Erstellung mit Xamarin.Forms in Visual Studio
-    href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
-  - name: Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
-    href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
-  - name: DevOps mit Xamarin-Apps
-    href: application-lifecycle-management-alm-with-xamarin-apps.md
-  - name: Setup, Installation und Überprüfungen für Mac-Benutzer
-    href: setup-install-and-verifications-for-mac-users.md
+- name: Visual Studio-Tools für Xamarin
+  displayName: .NET Mobile Developer Tools (Android & iOS)
+  href: /xamarin/
 - name: Visual Studio-Tools für Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools für Unity
@@ -88,9 +74,9 @@ items:
     href: system-requirements-for-the-visual-studio-emulator-for-android.md
   - name: Problembehandlung beim Visual Studio-Emulator für Android
     href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: d0c4b3ba48784ec7b168a167373816c652a5f11b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224974"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991522"

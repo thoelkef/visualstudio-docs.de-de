@@ -17,30 +17,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933676"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der Profilerstellung erstellt wurden. Jeder Typ ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, anhand derer die Speicherbelegung des Typs bestimmt wurde.  
   
  Die Daten in einem Zeilentyp geben die Gesamtanzahl der Objekte des Typs an, die bei der Profilerstellung erstellt wurden, und der dem Objekt für diesen Typ zugeordneten Bytes. Inklusive und exklusive Werte für einen Typ sind immer gleich.  
   
--   Inklusive Werte gelten für Objekte, die in den Instanzen der Funktion erstellt wurden, und für deren untergeordnete Funktionen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden.  
+- Inklusive Werte gelten für Objekte, die in den Instanzen der Funktion erstellt wurden, und für deren untergeordnete Funktionen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden.  
   
--   Exklusive Werte gelten für Objekte, die von der Funktion direkt erstellt wurden, als sie von der übergeordneten Funktion aufgerufen wurden. Objekte, die in untergeordneten Funktionen erstellt werden, werden nicht berücksichtigt.  
+- Exklusive Werte gelten für Objekte, die von der Funktion direkt erstellt wurden, als sie von der übergeordneten Funktion aufgerufen wurden. Objekte, die in untergeordneten Funktionen erstellt werden, werden nicht berücksichtigt.  
   
- In den Daten einer Funktion wird die Anzahl der erstellten Objekte sowie der dem Objekt des übergeordneten Typs zugeordneten Bytes angezeigt.  
+  In den Daten einer Funktion wird die Anzahl der erstellten Objekte sowie der dem Objekt des übergeordneten Typs zugeordneten Bytes angezeigt.  
   
 ## <a name="highlight-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Sie können den Ausführungspfad der Aufrufliste ermitteln, der die meisten Objekte des übergeordneten Typs erstellt hat.  
   
 -   Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Name**|Der Name des zugeordneten Typs oder der zugeordneten Funktion.|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  

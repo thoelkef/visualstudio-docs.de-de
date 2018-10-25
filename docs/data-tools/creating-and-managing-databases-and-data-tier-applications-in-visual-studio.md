@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942529"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Datenbankprojekte und Data-Tier-Anwendungen in Visual Studio
 
@@ -30,11 +30,11 @@ Eine Liste der Datenbankfunktionen ein, die von Data-Tier-Anwendungen unterstüt
 
 ## <a name="common-high-level-tasks"></a>Allgemeine Aufgaben
 
-|Übergeordnete Aufgabe|Unterstützender Inhalt|
-|----------------------|------------------------|
-|**Starten Sie die Entwicklung einer Anwendung von datenebenenanwendungen:** eine DAC ist ein neues Konzept eingeführt, mit [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] , enthält die Definition für eine [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] -Datenbank und die unterstützenden Instanzobjekte, die von einem Client / Server oder 3 Ebenen verwendet werden die Anwendung. Eine DAC enthält Datenbankobjekte, z. B. Tabellen und Sichten, zusammen mit Instanz-Entitäten, z. B. Anmeldenamen. Sie können Visual Studio verwenden, um ein DAC-Projekt erstellen, eine DAC-Paketdatei erstellen und senden die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz von der [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] Datenbank-Engine.|-   [Erstellen und Verwalten von Data-Tier-Anwendungen](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Ausführen von iterativen Datenbankentwicklung:** , wenn Sie ein Entwickler oder Tester sind, wird Sie Teile des Projekts Auschecken und aktualisieren Sie diese in einer isolierten Entwicklungsumgebung. Mithilfe dieser Art von Umgebung zu verwenden, können Sie Ihre Änderungen testen, ohne Auswirkungen auf andere Mitglieder des Teams. Nachdem die Änderungen abgeschlossen sind, überprüfen Sie die Dateien wieder in die Versionskontrolle, in denen andere Teammitglieder können Ihre Änderungen zu erhalten und erstellen und auf einem Testserver bereitstellen.|-   [Abfrage- und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Transact-SQL-Debugger](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**Erstellen von Prototypen, Überprüfen der Ergebnisse zu erzielen, und Ändern von Datenbankskripts und Objekten zu testen:** können Sie die [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] -Editor, um eine der folgenden allgemeinen Aufgaben ausführen.|-   [Abfrage- und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| Übergeordnete Aufgabe | Unterstützender Inhalt |
+| - | - |
+| **Starten Sie die Entwicklung einer Anwendung von datenebenenanwendungen:** eine DAC ist ein neues Konzept eingeführt, mit [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] , enthält die Definition für eine [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] -Datenbank und die unterstützenden Instanzobjekte, die von einem Client / Server oder 3 Ebenen verwendet werden die Anwendung. Eine DAC enthält Datenbankobjekte, z. B. Tabellen und Sichten, zusammen mit Instanz-Entitäten, z. B. Anmeldenamen. Sie können Visual Studio verwenden, um ein DAC-Projekt erstellen, eine DAC-Paketdatei erstellen und senden die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz von der [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] Datenbank-Engine. | -   [Erstellen und Verwalten von Data-Tier-Anwendungen](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **Ausführen von iterativen Datenbankentwicklung:** , wenn Sie ein Entwickler oder Tester sind, wird Sie Teile des Projekts Auschecken und aktualisieren Sie diese in einer isolierten Entwicklungsumgebung. Mithilfe dieser Art von Umgebung zu verwenden, können Sie Ihre Änderungen testen, ohne Auswirkungen auf andere Mitglieder des Teams. Nachdem die Änderungen abgeschlossen sind, überprüfen Sie die Dateien wieder in die Versionskontrolle, in denen andere Teammitglieder können Ihre Änderungen zu erhalten und erstellen und auf einem Testserver bereitstellen. | -   [Abfrage- und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Transact-SQL-Debugger](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **Erstellen von Prototypen, Überprüfen der Ergebnisse zu erzielen, und Ändern von Datenbankskripts und Objekten zu testen:** können Sie die [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] -Editor, um eine der folgenden allgemeinen Aufgaben ausführen. | -   [Abfrage- und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>Siehe auch
 
