@@ -18,29 +18,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915697"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt
-  Sie können einem beliebigen geöffneten Arbeitblatt Steuerelemente mithilfe eines Excel-VSTO-Add-In hinzufügen. Diese exemplarische Vorgehensweise veranschaulicht, wie Benutzer einem Arbeitsblatt mithilfe des Menübands ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können. Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Sie können einem beliebigen geöffneten Arbeitblatt Steuerelemente mithilfe eines Excel-VSTO-Add-In hinzufügen. Diese exemplarische Vorgehensweise veranschaulicht, wie Benutzer einem Arbeitsblatt mithilfe des Menübands ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  **Gilt für:** die Informationen in diesem Thema betreffen VSTO-Add-in-Projekte für Excel. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Bereitstellen einer Benutzeroberfläche (UI) zum Hinzufügen von Steuerelementen zum Arbeitsblatt  
+- Bereitstellen einer Benutzeroberfläche (UI) zum Hinzufügen von Steuerelementen zum Arbeitsblatt  
   
--   Hinzufügen von Steuerelementen zum Arbeitsblatt  
+- Hinzufügen von Steuerelementen zum Arbeitsblatt  
   
--   Entfernen von Steuerelementen aus dem Arbeitsblatt  
+- Entfernen von Steuerelementen aus dem Arbeitsblatt  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -65,9 +65,9 @@ ms.locfileid: "34767334"
   
 2.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)**, und klicken Sie dann auf **hinzufügen**.  
   
-     Eine Datei namens **Ribbon1.cs** oder **Ribbon1.vb** im Menüband-Designer wird geöffnet und zeigt eine standardmäßige Registerkarte und Gruppe.  
+     Eine Datei namens **Ribbon1.cs** oder **Datei "Ribbon1.vb"** im Menüband-Designer wird geöffnet und zeigt eine standardmäßige Registerkarte und Gruppe.  
   
-3.  Aus der **Steuerelemente für Office-Menübänder** auf der Registerkarte die **Toolbox**, ziehen Sie ein CheckBox-Steuerelement auf **group1**.  
+3.  Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie ein CheckBox-Steuerelement auf **group1**.  
   
 4.  Klicken Sie auf **CheckBox1** , um dieses Steuerelement auszuwählen.  
   
@@ -85,7 +85,7 @@ ms.locfileid: "34767334"
     |**Name**|**NamedRange**|  
     |**Bezeichnung**|**NamedRange**|  
   
-7.  Fügen Sie ein drittes Kontrollkästchen hinzu **group1**, und klicken Sie dann die folgenden Eigenschaften ändern.  
+7.  Fügen Sie ein drittes Kontrollkästchen hinzu **group1**, und ändern Sie dann die folgenden Eigenschaften.  
   
     |Eigenschaft|Wert|  
     |--------------|-----------|  
@@ -99,22 +99,22 @@ ms.locfileid: "34767334"
   
 1.  Doppelklicken Sie im Menüband-Designer auf **Schaltfläche**.  
   
-     Die <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> -Ereignishandler, der die **Schaltfläche** Kontrollkästchen wird im Code-Editor geöffnet.  
+     Die <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> -Ereignishandler von dem **Schaltfläche** Kontrollkästchen wird im Code-Editor geöffnet.  
   
-2.  Ersetzen Sie den `Button_Click`-Ereignishandler durch den folgenden Code.  
+2.  Ersetzen Sie den `Button_Click` -Ereignishandler durch den folgenden Code.  
   
      Dieser Code verwendet die `GetVstoObject`-Methode, um ein Hostelement abzurufen, das das erste Arbeitsblatt in der Arbeitsmappe darstellt, und fügt der aktuell ausgewählten Zelle dann ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>-Steuerelement hinzu.  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  In **Projektmappen-Explorer**Option *Ribbon1.cs* oder *Ribbon1.vb*.  
+3.  In **Projektmappen-Explorer**Option *Ribbon1.cs* oder *Datei "Ribbon1.vb"*.  
   
 4.  Auf der **Ansicht** Menü klicken Sie auf **Designer**.  
   
 5.  Doppelklicken Sie im Menüband-Designer auf **NamedRange**.  
   
-6.  Ersetzen Sie den `NamedRange_Click`-Ereignishandler durch den folgenden Code.  
+6.  Ersetzen Sie den `NamedRange_Click` -Ereignishandler durch den folgenden Code.  
   
      Dieser Code verwendet die `GetVstoObject`-Methode, um ein Hostelement abzurufen, das das erste Arbeitsblatt in der Arbeitsmappe darstellt, und fügt der oder den aktuell ausgewählten Zellen dann ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement hinzu.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "34767334"
   
 7.  Doppelklicken Sie im Menüband-Designer auf **ListObject**.  
   
-8.  Ersetzen Sie den `ListObject_Click`-Ereignishandler durch den folgenden Code.  
+8.  Ersetzen Sie den `ListObject_Click` -Ereignishandler durch den folgenden Code.  
   
      Dieser Code verwendet die `GetVstoObject`-Methode, um ein Hostelement abzurufen, das das erste Arbeitsblatt in der Arbeitsmappe darstellt, und fügt der oder den aktuell ausgewählten Zellen dann ein <xref:Microsoft.Office.Tools.Excel.ListObject> hinzu.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "34767334"
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
 ## <a name="remove-controls-from-the-worksheet"></a>Entfernen Sie Steuerelemente aus dem Arbeitsblatt  
- Steuerelemente werden nicht beibehalten, wenn das Arbeitsblatt gespeichert und geschlossen wird. Sie sollten alle generierten Windows Forms-Steuerelemente programmgesteuert entfernen, bevor das Arbeitsblatt gespeichert wird, ansonsten wird beim erneuten Öffnen der Arbeitsmappe nur ein Umriss des Steuerelements angezeigt. Fügen Sie dem <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>-Ereignis Code hinzu, durch den Windows Forms-Steuerelemente aus der Steuerelementauflistung des generierten Hostelements entfernt werden. Weitere Informationen finden Sie unter [beibehalten von dynamische Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Steuerelemente werden nicht beibehalten, wenn das Arbeitsblatt gespeichert und geschlossen wird. Sie sollten alle generierten Windows Forms-Steuerelemente programmgesteuert entfernen, bevor das Arbeitsblatt gespeichert wird, ansonsten wird beim erneuten Öffnen der Arbeitsmappe nur ein Umriss des Steuerelements angezeigt. Fügen Sie dem <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>-Ereignis Code hinzu, durch den Windows Forms-Steuerelemente aus der Steuerelementauflistung des generierten Hostelements entfernt werden. Weitere Informationen finden Sie unter [beibehalten von dynamischen Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
 ### <a name="to-remove-controls-from-the-worksheet"></a>So entfernen Sie Steuerelemente aus dem Arbeitsblatt  
   
@@ -154,29 +154,29 @@ ms.locfileid: "34767334"
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
 ## <a name="test-the-solution"></a>Testen der Lösung  
- Fügen Sie Steuerelemente zu einem Arbeitsblatt, indem Sie sie von einer benutzerdefinierten Registerkarte auf dem Menüband auswählen. Diese Steuerelemente werden beim Speichern des Arbeitsblatts entfernt.  
+ Fügen Sie Steuerelemente in einem Arbeitsblatt, indem Sie sie von einer benutzerdefinierten Registerkarte auf dem Menüband auswählen. Diese Steuerelemente werden beim Speichern des Arbeitsblatts entfernt.  
   
 ### <a name="to-test-the-solution"></a>So testen Sie die Projektmappe  
   
-1.  Drücken Sie **F5** um das Projekt auszuführen.  
+1.  Drücken Sie **F5** um Ihr Projekt auszuführen.  
   
 2.  Wählen Sie eine beliebige Zelle in Tabelle1 aus.  
   
 3.  Klicken Sie auf die Registerkarte **Add-Ins** .  
   
-4.  In der **group1** zu gruppieren, klicken Sie auf **Schaltfläche**.  
+4.  In der **group1** auf **Schaltfläche**.  
   
      In der ausgewählten Zelle wird eine Schaltfläche angezeigt.  
   
 5.  Wählen Sie eine andere Zelle in Tabelle1 aus.  
   
-6.  In der **group1** zu gruppieren, klicken Sie auf **NamedRange**.  
+6.  In der **group1** auf **NamedRange**.  
   
      Für die ausgewählte Zelle wird ein benannter Bereich definiert.  
   
 7.  Wählen Sie eine Reihe von Zellen in Tabelle1 aus.  
   
-8.  In der **group1** zu gruppieren, klicken Sie auf **ListObject**.  
+8.  In der **group1** auf **ListObject**.  
   
      Für die ausgewählten Zellen wird ein Listenobjekt hinzugefügt.  
   
@@ -187,11 +187,11 @@ ms.locfileid: "34767334"
 ## <a name="next-steps"></a>Nächste Schritte  
  Im folgenden Thema erfahren Sie mehr über Steuerelemente in Excel-VSTO-Add-In-Projekten:  
   
--   Um weitere Informationen zum Speichern von Steuerelementen zu einem Arbeitsblatt finden Sie in der Excel-VSTO-Add-in Beispiel für dynamische Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
+-   Informationen zum Speichern von Steuerelementen zu einem Arbeitsblatt finden Sie unter der Excel-VSTO-Add-in Beispiel für dynamische Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Excel-Projektmappen](../vsto/excel-solutions.md)   
- [Windows forms-Steuerelemente in Office-Dokumente (Übersicht)](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [ListObject-Steuerelement](../vsto/listobject-control.md)  

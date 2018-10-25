@@ -26,35 +26,35 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825653"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und dem Remotecomputer, wenn eine der folgenden Situationen vorliegt:  
   
--   Der Debugger ist auf **Systemeigenen Kompatibilitätsmodus verwenden** festgelegt, oder auf der Seite **Extras / Optionen / Debugging** ist **Verwalteter Kompatibilitätsmodus** aktiviert.  
+- Der Debugger ist auf **Systemeigenen Kompatibilitätsmodus verwenden** festgelegt, oder auf der Seite **Extras / Optionen / Debugging** ist **Verwalteter Kompatibilitätsmodus** aktiviert.  
   
--   Sie debuggen verwalteten C++-Code (C++/CLI).  
+- Sie debuggen verwalteten C++-Code (C++/CLI).  
   
--   In Visual Studio 2013 ist auf der Seite **Extras / Optionen / Debugging** die Option **Systemeigenes Bearbeiten und Fortfahren aktivieren** aktiviert.  
+- In Visual Studio 2013 ist auf der Seite **Extras / Optionen / Debugging** die Option **Systemeigenes Bearbeiten und Fortfahren aktivieren** aktiviert.  
   
--   Einige Debuggingszenarien von Drittanbietern  
+- Einige Debuggingszenarien von Drittanbietern  
   
- Dieser Fehler tritt auf, wenn der Visual Studio-Prozess sich nicht über DCOM beim Remotedebuggerprozess authentifizieren kann (oder die angegebenen Anmeldeinformationen für unzureichend angesehen wurden). Das Problem kann mit einer oder zwei der folgenden Methoden möglicherweise umgangen werden:  
+  Dieser Fehler tritt auf, wenn der Visual Studio-Prozess sich nicht über DCOM beim Remotedebuggerprozess authentifizieren kann (oder die angegebenen Anmeldeinformationen für unzureichend angesehen wurden). Das Problem kann mit einer oder zwei der folgenden Methoden möglicherweise umgangen werden:  
   
--   Deaktivieren Sie  **Systemeigenen Kompatibilitätsmodus verwenden** und **Verwalteter Kompatibilitätsmodus**.  
+- Deaktivieren Sie  **Systemeigenen Kompatibilitätsmodus verwenden** und **Verwalteter Kompatibilitätsmodus**.  
   
--   Deaktivieren Sie in Visual Studio 2013 die Option **Systemeigenes Bearbeiten und Fortfahren aktivieren**.  
+- Deaktivieren Sie in Visual Studio 2013 die Option **Systemeigenes Bearbeiten und Fortfahren aktivieren**.  
   
--   Starten Sie beide Computer neu.  
+- Starten Sie beide Computer neu.  
   
--   Wenn für das Remotedebugging die Eingabe von Anmeldeinformationen erforderlich ist, aktivieren Sie die Option zum Speichern der Anmeldeinformationen.  
+- Wenn für das Remotedebugging die Eingabe von Anmeldeinformationen erforderlich ist, aktivieren Sie die Option zum Speichern der Anmeldeinformationen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByRVA | Microsoft Docs
+title: IDiaSymbol::findChildrenExByRVA | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c80d50d2e1d3fb5a34b5508a8b67569fb0417cb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d1a77ba8527698271356fdc324ccefac2dc0f650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938863"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
-Ruft die untergeordneten Elemente des Symbols, die bei einem angegebenen relativen virtuellen Adresse (RVA) gültig sind.  
+Ruft die untergeordneten Elemente des Symbols, die an eine angegebene relative virtuelle Adresse (RVA) gültig sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,25 +38,25 @@ HRESULT findChildrenExByRVA (
   
 #### <a name="parameters"></a>Parameter  
  `symtag`  
- [in] Gibt die symboltags der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.  
+ [in] Gibt die symboltags an der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `name`  
  [in] Gibt den Namen der untergeordneten Elemente abgerufen werden sollen. Legen Sie auf `NULL` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `compareFlags`  
- [in] Gibt die Vergleichsoptionen, die auf die namensübereinstimmung angewendet werden. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) Enumeration kann allein oder in Kombination verwendet werden.  
+ [in] Gibt die Vergleichsoptionen, die auf Namen angewendet werden. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) -Enumeration können alleine oder zusammen verwendet werden.  
   
  `address`  
- [in] Gibt die RVA an.  
+ [in] Gibt an, die RVA.  
   
  `ppResult`  
  [out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt, das eine Liste der untergeordneten Symbole enthält abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols gefunden wurde, gibt `S_FALSE` Wenn keine untergeordneten Elemente nicht gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die lokalen Symbole, die zurückgegeben werden einschließen live Bereichsinformationen  
+ Die lokalen Symbole, die zurückgegeben werden enthalten Informationen zum aktiven Bereich.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

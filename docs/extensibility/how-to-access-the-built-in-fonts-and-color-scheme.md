@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911251"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Gewusst wie: Zugriff auf die integrierten Schriftarten und Farbe Ccheme
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, die im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
 
  Um integrierte Schriftarten und Farbschema zu verwenden, müssen eine VSPackage ein:
 
--   Definieren Sie eine Kategorie, um den Standarddienst für Schriftarten und Farben verwenden.
+- Definieren Sie eine Kategorie, um den Standarddienst für Schriftarten und Farben verwenden.
 
--   Registrieren Sie die Kategorie, mit der standardmäßigen Schriftarten und Farben.
+- Registrieren Sie die Kategorie, mit der standardmäßigen Schriftarten und Farben.
 
--   Empfehlen Sie, dass ein bestimmtes Fenster die Kategorien und integrierte Anzeigeelementen, indem verwendet der IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> Schnittstellen.
+- Empfehlen Sie, dass ein bestimmtes Fenster die Kategorien und integrierte Anzeigeelementen, indem verwendet der IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> Schnittstellen.
 
- Die IDE verwendet die resultierende Kategorie als ein Handle für das Fenster an. Die Kategorie der Name wird angezeigt, der **Einstellungen anzeigen für:** Dropdown-Listenfeld in der **Schriftarten und Farben** Eigenschaftenseite.
+  Die IDE verwendet die resultierende Kategorie als ein Handle für das Fenster an. Die Kategorie der Name wird angezeigt, der **Einstellungen anzeigen für:** Dropdown-Listenfeld in der **Schriftarten und Farben** Eigenschaftenseite.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Definieren Sie eine Kategorie mit integrierten Schriftarten und Farben
 
@@ -67,15 +67,15 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Um die Verwendung von vom System bereitgestellten Schriftarten und Farben zu initiieren.
 
-1.  Erstellen Sie eine Instanz von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> -Schnittstelle als Teil der Implementierung und die Initialisierung des Fensters.
+1. Erstellen Sie eine Instanz von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> -Schnittstelle als Teil der Implementierung und die Initialisierung des Fensters.
 
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> Methode zum Abrufen einer Instanz der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> Schnittstelle, die entsprechend dem aktuellen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Instanz.
+2. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> Methode zum Abrufen einer Instanz der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> Schnittstelle, die entsprechend dem aktuellen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Instanz.
 
-3.  Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> zweimal.
+3. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> zweimal.
 
-    -   Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_ColorCategory`als Argument.
+   - Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_ColorCategory`als Argument.
 
-    -   Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_FontCategory` als Argument.
+   - Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_FontCategory` als Argument.
 
      Dies legt fest, und stellt die Standarddienste für Schriftarten und Farben als Eigenschaft des Fensters.
 

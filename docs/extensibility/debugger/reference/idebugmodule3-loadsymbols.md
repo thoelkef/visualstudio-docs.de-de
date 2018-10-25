@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols | Microsoft Docs
+title: IDebugModule3::LoadSymbols | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7f7a08e827b22f7011fe97babf1a57882245649
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab00d1bf3743cf3785bcac5491655cf31c12bd39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898251"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 Lädt die Symbole für das aktuelle Modul.  
@@ -38,12 +38,12 @@ int LoadSymbols();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, gibt es `S_OK`. Falls dies fehlschlägt, wird ein Fehlercode zurückgegeben.  
+ Wenn die Methode erfolgreich ist, gibt es `S_OK`. Wenn ein Fehler auftritt, wird einen Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode lädt die Symbole in den aktuellen Suchpfad (dem kann geändert werden, durch Aufrufen der [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) Methode).  
+ Diese Methode lädt die Symbole aus dem aktuellen Pfad für die Suche (das kann geändert werden, durch den Aufruf der [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) Methode).  
   
- Diese Methode ist dann vorzuziehen, über die [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) Methode.  
+ Diese Methode ist vorzuziehen der [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

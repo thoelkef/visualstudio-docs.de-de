@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926461"
 ---
 # <a name="deploy-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 
@@ -42,17 +42,17 @@ Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager**
 
  Um eine VSIX-Bereitstellung ohne Verwendung der Projektvorlage für die Startseite zu erstellen, erstellen Sie zunächst eine *VSIX* -Datei für die Startseite in einem der beiden folgenden Weisen:
 
--   Durch Hinzufügen Ihrer benutzerdefinierten Startseitendateien leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
+- Durch Hinzufügen Ihrer benutzerdefinierten Startseitendateien leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
--   Durch das manuelle Erstellen einer *VSIX* Datei. Zum Erstellen einer *VSIX* Datei manuell:
+- Durch das manuelle Erstellen einer *VSIX* Datei. Zum Erstellen einer *VSIX* Datei manuell:
 
-    1.  Erstellen der *"Extension.vsixmanifest"* Datei und die *[Content_Types] .xml* -Datei in einen neuen Ordner. Weitere Informationen finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Erstellen der *"Extension.vsixmanifest"* Datei und die *[Content_Types] .xml* -Datei in einen neuen Ordner. Weitere Informationen finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  Im Windows-Explorer den Ordner, die zwei XML-Dateien enthält, klicken Sie auf **senden an**, und klicken Sie dann auf komprimierten (gezippten) Ordner. Benennen Sie die resultierende *ZIP* Datei *Filename.vsix*, wobei der Dateiname der Name der verteilbaren Datei ist, die das Paket installiert wird.
+  2.  Im Windows-Explorer den Ordner, die zwei XML-Dateien enthält, klicken Sie auf **senden an**, und klicken Sie dann auf komprimierten (gezippten) Ordner. Benennen Sie die resultierende *ZIP* Datei *Filename.vsix*, wobei der Dateiname der Name der verteilbaren Datei ist, die das Paket installiert wird.
 
- Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.
+  Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.
 
- Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck stellen Sie sicher, dass das Paket enthält eine *PKGDEF* -Datei, die die folgenden Informationen enthält.
+  Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck stellen Sie sicher, dass das Paket enthält eine *PKGDEF* -Datei, die die folgenden Informationen enthält.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager**
      Dies teilt Visual Studio, in den neuen Speicherort für die Startseite zu suchen.
 
 ## <a name="file-copy-deployment"></a>Datei-Copy-Bereitstellung
- Sie müssen keine erstellen Sie eine *VSIX* Datei zum Bereitstellen einer benutzerdefinierten Startseite. Sie können stattdessen kopieren, das Markup und die unterstützenden Dateien direkt in des Benutzers * \StartPages\* Ordner. Die **Startseite anpassen** auf in der Liste der **Start** Optionen-Seite enthält alle *XAML* Dateien in diesem Ordner, zusammen mit dem Pfad – z. B. *% UserProfile%\My Documents\Visual Studio {Version} \StartPages\\{Dateiname} XAML*. Wenn Ihre Startseite Verweise auf private Assemblys enthält, müssen Sie das Kopieren und fügen Sie sie in der * \PrivateAssemblies\* Ordner.
+ Sie müssen keine erstellen Sie eine *VSIX* Datei zum Bereitstellen einer benutzerdefinierten Startseite. Sie können stattdessen kopieren, das Markup und die unterstützenden Dateien direkt in des Benutzers <em>\StartPages\* Ordner. Die **Startseite anpassen</em>*  auf in der Liste der **Start** Optionen-Seite enthält alle *XAML* Dateien in diesem Ordner, zusammen mit dem Pfad – z. B. *%USERPROFILE%\My Documents\Visual Studio {Version} \StartPages\\{Dateiname} XAML*. Wenn Ihre Startseite Verweise auf private Assemblys enthält, müssen Sie das Kopieren und fügen Sie sie in der * \PrivateAssemblies\* Ordner.
 
  Startseite zu verteilen, die Sie erstellt haben, ohne das Verpacken in eine *VSIX* -Datei, es wird empfohlen, die Sie verwenden eine Basisdatei-kopieren-Strategie, z. B. ein Stapelverarbeitungsskript, oder legen Sie die Dateien einer anderen bereitstellungstechnologie, mit dem Sie die Erforderliche Verzeichnisse.
 

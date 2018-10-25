@@ -1,5 +1,5 @@
 ---
-title: DebugPropertyInfo-Struktur | Microsoft Docs
+title: DebugPropertyInfo-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874188"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo-Struktur
-Beschreibt ein Objekt von einer hierarchischen Struktur, die Namen, Typ und Wert verfügt. Es dient zum Beschreiben der Debugeigenschaften des lokalen Variablen, Parameter, Überwachungsfenster Variablen und Ausdrücke und registriert.  
+Beschreibt ein Objekt von einer hierarchischen Aufbaus, der Name, Typ und Wert verfügt. Es wird verwendet, um die Debugeigenschaften der lokalen Variablen, Parameter, überwachen Sie Variablen und Ausdrücke beschrieben und registriert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,10 +44,10 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Member  
  dwValidFields  
- Enumerierten Datentyps verwendet, um anzugeben, welche Felder initialisiert werden.  
+ Ein Aufzählungsdatentyp verwendet, um anzugeben, welche Felder initialisiert werden.  
   
  bstrName  
- Der Eigenschaftsname in einem Kontext.  
+ Der Eigenschaftenname in einem Kontext.  
   
  bstrType  
  Der Eigenschaftentyp als formatierte Zeichenfolge.  
@@ -59,7 +59,7 @@ typedef struct DebugPropertyInfo{
  Der vollständige Name der Eigenschaft.  
   
  dwAttrib  
- Eine Enumeration, die die Flags für die Debug-Eigenschaftenattribute angibt.  
+ Eine Enumeration, die angibt, die Flags für die Attribute der Debug-Eigenschaft.  
   
  pDebugProp  
  Die `IDebugProperty` beschrieben werden, indem Sie die Informationen in diesem `DebugPropertyInfo` Struktur.  

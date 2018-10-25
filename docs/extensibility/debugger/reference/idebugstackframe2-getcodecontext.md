@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetCodeContext | Microsoft Docs
+title: IDebugStackFrame2::GetCodeContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5e5d41489b83283723717a262030bb96ca900a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 283946310c44ae2a125d731e10de42ac2b454004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876281"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 Ruft den Codekontext für diesen Stapelrahmen ab.  
@@ -41,10 +41,10 @@ int GetCodeContext (
   
 #### <a name="parameters"></a>Parameter  
  `ppCodeCxt`  
- [out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den aktuellen Anweisungszeiger in diesem Stapelrahmen darstellt.  
+ [out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den aktuellen Anweisungszeiger in diesen Stapelrahmen darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

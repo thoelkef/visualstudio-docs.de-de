@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
+title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d312824bb88022cba9b58945cb5f3e78c13b837
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a1828a7cea62893ecddec6d28f44ca6475352dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911394"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Beschreibt die Offsetposition eines Haltepunkts in einer Funktion im Code.  
@@ -36,15 +36,15 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
   
 ## <a name="members"></a>Member  
  `bstrContext`  
- Der Kontext des Haltepunkts, in der Regel eine Methode oder Funktion Namen wie in einer Aufrufliste angezeigt.  
+ Der Kontext des Haltepunkts, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.  
   
  `pFuncPos`  
- Die [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) -Objekt, das den Namen der Funktion und die relative Position vom Anfang der Funktion beschrieben.  
+ Die [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) -Objekt, das den Namen der Funktion und die relative Position vom Anfang der Funktion beschreibt.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.  
   
- Die `pFuncPos` Element gibt an, wo die Funktionshaltepunkt festgelegt.  
+ Die `pFuncPos` Element gibt an, wo Sie die Funktions-Haltepunkts festlegen.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937732"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 Ein VSIX-Paket ist eine *VSIX* Datei, die eine oder mehrere Visual Studio-Erweiterungen zusammen mit den Metadaten von Visual Studio enthält verwendet wird, zu klassifizieren und die Erweiterungen installieren. Diese Metadaten enthalten ist im VSIX-Manifest und die *[Content_Types] .xml* Datei. Ein VSIX-Paket kann auch enthalten, eine oder mehrere *Extension.vsixlangpack* Dateien zu setuptext lokalisiert, und können zusätzliche VSIX-Pakete, um Abhängigkeiten zu installieren.  
@@ -55,7 +55,7 @@ Ein VSIX-Paket ist eine *VSIX* Datei, die eine oder mehrere Visual Studio-Erweit
 ## <a name="installation-location"></a>Installationspfad  
  Während der Installation **Erweiterungen und Updates** sucht nach den Inhalt des VSIX-Paket in einem Ordner unter *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *%LocalAppData%* ist ein Verzeichnis für benutzerspezifische. Allerdings setzen Sie die [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) Element des Manifests, das `True`, wird die Erweiterung installiert werden, unter *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* werden für alle Benutzer des Computers zur Verfügung stehen.  
+ Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *%LocalAppData%* ist ein Verzeichnis für benutzerspezifische. Allerdings setzen Sie die [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) Element des Manifests, das `True`, wird die Erweiterung installiert werden, unter <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> werden für alle Benutzer des Computers zur Verfügung stehen.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  Die *[Content_Types] .xml* Datei identifiziert die Dateitypen in der erweiterten *VSIX* Datei. Visual Studio verwendet diese Datei während der Installation des Pakets, aber die Datei selbst wird nicht installiert. Weitere Informationen zu dieser Datei finden Sie unter [die Struktur der [Content_types] .xml-Datei](the-structure-of-the-content-types-dot-xml-file.md).  

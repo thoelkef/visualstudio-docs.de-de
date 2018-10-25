@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826373"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Schreiben von multiprozessorfähigen Protokollierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Es gibt zwei Möglichkeiten für die Verwendung der verteilten Protokollierung:  
   
--   Passen Sie die vordefinierte Weiterleitungsprotokollierung <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> an.  
+- Passen Sie die vordefinierte Weiterleitungsprotokollierung <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> an.  
   
--   Schreiben Sie eine eigene benutzerdefinierte Weiterleitungsprotokollierung.  
+- Schreiben Sie eine eigene benutzerdefinierte Weiterleitungsprotokollierung.  
   
- Sie können ConfigurableForwardingLogger an Ihre Anforderungen anpassen. Rufen Sie hierzu die Protokollierung in der Befehlszeile mit MSBuild.exe auf, und führen Sie die Buildereignisse auf, die von der Protokollierung an den zentralen Knoten weitergeleitet werden sollen.  
+  Sie können ConfigurableForwardingLogger an Ihre Anforderungen anpassen. Rufen Sie hierzu die Protokollierung in der Befehlszeile mit MSBuild.exe auf, und führen Sie die Buildereignisse auf, die von der Protokollierung an den zentralen Knoten weitergeleitet werden sollen.  
   
- Alternativ können Sie auch eine benutzerdefinierte Weiterleitungsprotokollierung erstellen. Durch die Erstellung einer benutzerdefinierten Weiterleitungsprotokollierung können Sie das Verhalten der Protokollierung genauer bestimmen. Das Erstellen einer benutzerdefinierten Weiterleitungsprotokollierung ist jedoch komplexer als das Anpassen von ConfigurableForwardingLogger. Weitere Informationen finden Sie unter [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md).  
+  Alternativ können Sie auch eine benutzerdefinierte Weiterleitungsprotokollierung erstellen. Durch die Erstellung einer benutzerdefinierten Weiterleitungsprotokollierung können Sie das Verhalten der Protokollierung genauer bestimmen. Das Erstellen einer benutzerdefinierten Weiterleitungsprotokollierung ist jedoch komplexer als das Anpassen von ConfigurableForwardingLogger. Weitere Informationen finden Sie unter [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Verwenden von ConfigurableForwardingLogger zur einfachen verteilten Protokollierung  
  Verwenden Sie zum Konfigurieren von ConfigurableForwardingLogger oder einer benutzerdefinierten Weiterleitungsprotokollierung den `/distributedlogger`-Schalter (abgekürzt `/dl`) in einem Befehlszeilenbuild von MSBuild.exe. Das Format zum Angeben der Namen von Protokollierungstypen und -klassen ist identisch mit dem für den `/logger`-Schalter, mit der Ausnahme, dass eine verteilte Protokollierung immer über zwei Protokollierungsklassen statt einer verfügt, d. h. die Weiterleitungsprotokollierung und die zentrale Protokollierung. Nachfolgend ist ein Beispiel dafür aufgeführt, wie eine benutzerdefinierte Weiterleitungsprotokollierung mit dem Namen XMLForwardingLogger angefügt wird.  

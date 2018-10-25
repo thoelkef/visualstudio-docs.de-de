@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912889"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
 4.  Verwenden Sie Folgendes, um Warnungen zu beheben:  
   
--   [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" sollte mit CLSCompliantAttribute markiert werden, und der Wert sollte "true" sein.  
+- [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" sollte mit CLSCompliantAttribute markiert werden, und der Wert sollte "true" sein.  
   
-    -   Fügen Sie den Code `using``System;` in die Datei "AssemblyInfo.cs".  
+  -   Fügen Sie den Code `using``System;` in die Datei "AssemblyInfo.cs".  
   
-         Als Nächstes fügen Sie den Code `[assembly: CLSCompliant(true)]` an das Ende der Datei "AssemblyInfo.cs".  
+       Als Nächstes fügen Sie den Code `[assembly: CLSCompliant(true)]` an das Ende der Datei "AssemblyInfo.cs".  
   
-         Erstellen Sie das Projekt neu.  
+       Erstellen Sie das Projekt neu.  
   
--   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: public demo(String)  
+- [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: public demo(String)  
   
-    -   Fügen Sie den Konstruktor `public demo (String s) : base(s) { }` auf die Klasse `demo`.  
+  -   Fügen Sie den Konstruktor `public demo (String s) : base(s) { }` auf die Klasse `demo`.  
   
--   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: öffentliche Demo ("String", "Exception")  
+- [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: öffentliche Demo ("String", "Exception")  
   
-    -   Fügen Sie den Konstruktor `public demo (String s, Exception e) : base(s, e) { }` auf die Klasse `demo`.  
+  -   Fügen Sie den Konstruktor `public demo (String s, Exception e) : base(s, e) { }` auf die Klasse `demo`.  
   
--   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: Demo (SerializationInfo-Objekt, StreamingContext) geschützt  
+- [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: Demo (SerializationInfo-Objekt, StreamingContext) geschützt  
   
-    -   Fügen Sie den Code `using System.Runtime.Serialization;` an den Anfang der Datei "Class1.cs".  
+  -   Fügen Sie den Code `using System.Runtime.Serialization;` an den Anfang der Datei "Class1.cs".  
   
-         Als Nächstes fügen Sie den Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       Als Nächstes fügen Sie den Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         Erstellen Sie das Projekt neu.  
+       Erstellen Sie das Projekt neu.  
   
--   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: öffentliche Demo()"ein, um  
+- [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Fügen Sie den folgenden Konstruktor dieser Klasse: öffentliche Demo()"ein, um  
   
-    -   Fügen Sie den Konstruktor `public demo () : base() { }` auf die Klasse `demo` **.**  
+  -   Fügen Sie den Konstruktor `public demo () : base() { }` auf die Klasse `demo` **.**  
   
-         Erstellen Sie das Projekt neu.  
+       Erstellen Sie das Projekt neu.  
   
--   [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Groß-/Kleinschreibung des Namespacenamens 'TestCode' in 'TestCode'.  
+- [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Groß-/Kleinschreibung des Namespacenamens 'TestCode' in 'TestCode'.  
   
-    -   Ändern Sie die Schreibweise des Namespace `testCode` zu `TestCode`.  
+  -   Ändern Sie die Schreibweise des Namespace `testCode` zu `TestCode`.  
   
--   [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Groß-/Kleinschreibung des Typnamens "Demo", "Demo".  
+- [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Groß-/Kleinschreibung des Typnamens "Demo", "Demo".  
   
-    -   Ändern Sie den Namen des abzurufenden Members `Demo`.  
+  -   Ändern Sie den Namen des abzurufenden Members `Demo`.  
   
--   [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Schreibweise des Namens 'Item' in 'Item'.  
+- [CA1709: Bezeichner sollten werden Groß-/Kleinschreibung korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Korrigieren Sie die Schreibweise des Namens 'Item' in 'Item'.  
   
-    -   Ändern Sie den Namen des abzurufenden Members `Item`.  
+  -   Ändern Sie den Namen des abzurufenden Members `Item`.  
   
--   [CA1710: Bezeichner sollten richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rename 'Testcode.Demo dass lautet"in"Ausnahme"endet.  
+- [CA1710: Bezeichner sollten richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rename 'Testcode.Demo dass lautet"in"Ausnahme"endet.  
   
-    -   Ändern Sie den Namen der Klasse und die zugehörigen Konstruktoren in `DemoException`.  
+  -   Ändern Sie den Namen der Klasse und die zugehörigen Konstruktoren in `DemoException`.  
   
--   [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' mit einem Schlüssel mit starkem Namen signieren.  
+- [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' mit einem Schlüssel mit starkem Namen signieren.  
   
-    -   Auf der **Projekt** Menü klicken Sie auf **ManagedDemo Eigenschaften**.  
+  -   Auf der **Projekt** Menü klicken Sie auf **ManagedDemo Eigenschaften**.  
   
-         Die Projekteigenschaften angezeigt.  
+       Die Projekteigenschaften angezeigt.  
   
-         Klicken Sie auf **signieren**.  
+       Klicken Sie auf **signieren**.  
   
-         Wählen Sie die **Assembly signieren** Kontrollkästchen.  
+       Wählen Sie die **Assembly signieren** Kontrollkästchen.  
   
-         In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >**.  
+       In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >**.  
   
-         Die **Schlüssel für einen starken Namen erstellen** Dialogfeld wird angezeigt.  
+       Die **Schlüssel für einen starken Namen erstellen** Dialogfeld wird angezeigt.  
   
-         In der **Schlüsseldateiname**, TestKey geben.  
+       In der **Schlüsseldateiname**, TestKey geben.  
   
-         Geben Sie ein Kennwort ein, und klicken Sie dann auf **OK**.  
+       Geben Sie ein Kennwort ein, und klicken Sie dann auf **OK**.  
   
-         Auf der **Datei** Menü klicken Sie auf **ausgewählte Elemente speichern**, und klicken Sie dann die Eigenschaftenseiten zu schließen.  
+       Auf der **Datei** Menü klicken Sie auf **ausgewählte Elemente speichern**, und klicken Sie dann die Eigenschaftenseiten zu schließen.  
   
-         Erstellen Sie das Projekt neu.  
+       Erstellen Sie das Projekt neu.  
   
--   [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie ein [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.  
+- [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie ein [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.  
   
-    -   Hinzufügen der `[Serializable ()]` -Attribut der Klasse `demo`.  
+  -   Hinzufügen der `[Serializable ()]` -Attribut der Klasse `demo`.  
   
-         Erstellen Sie das Projekt neu.  
+       Erstellen Sie das Projekt neu.  
   
- Nachdem Sie die Änderungen abgeschlossen haben, sollte die Datei "Class1.cs" wie folgt aussehen:  
+  Nachdem Sie die Änderungen abgeschlossen haben, sollte die Datei "Class1.cs" wie folgt aussehen:  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>Auszuschließende Mängel Code (Warnungen)  
   
-1.  Führen Sie für jede der verbleibenden Warnungen folgende Schritte aus:  
+1. Führen Sie für jede der verbleibenden Warnungen folgende Schritte aus:  
   
-    1.  Wählen Sie im Codeanalysefenster angezeigt die Warnung ein.  
+   1. Wählen Sie im Codeanalysefenster angezeigt die Warnung ein.  
   
-    2.  Wählen Sie **Aktionen**, wählen Sie dann **Meldung unterdrücken**, und wählen Sie dann **In Projektunterdrückungsdatei**.  
+   2. Wählen Sie **Aktionen**, wählen Sie dann **Meldung unterdrücken**, und wählen Sie dann **In Projektunterdrückungsdatei**.  
   
-     Weitere Informationen finden Sie unter [wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Weitere Informationen finden Sie unter [wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  Erstellen Sie das Projekt neu.  
+2. Erstellen Sie das Projekt neu.  
   
-     Das Projekt erstellt, ohne alle Warnungen oder Fehler.
+    Das Projekt erstellt, ohne alle Warnungen oder Fehler.
 
 
 

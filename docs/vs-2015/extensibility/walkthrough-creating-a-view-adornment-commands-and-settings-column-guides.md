@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862319"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Satzspiegel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Ef
   
  In dieser exemplarischen Vorgehensweise führen Sie folgende Aktionen ausführen:  
   
--   Erstellen Sie ein VSIX-Projekt  
+- Erstellen Sie ein VSIX-Projekt  
   
--   Fügen Sie ein Zusatzelement der Editor-Ansicht  
+- Fügen Sie ein Zusatzelement der Editor-Ansicht  
   
--   Hinzufügen von Unterstützung für das Speichern und Abrufen von Einstellungen (Ort von Zeichnen-Befehl Spaltenführungslinien und ihre Farbe)  
+- Hinzufügen von Unterstützung für das Speichern und Abrufen von Einstellungen (Ort von Zeichnen-Befehl Spaltenführungslinien und ihre Farbe)  
   
--   Hinzufügen von Befehlen (Spaltenführungslinien hinzufügen/entfernen, ändern Sie ihre Farbe)  
+- Hinzufügen von Befehlen (Spaltenführungslinien hinzufügen/entfernen, ändern Sie ihre Farbe)  
   
--   Platzieren Sie die Befehle auf dem Menü "Bearbeiten" und Text-Dokument-Kontextmenüs  
+- Platzieren Sie die Befehle auf dem Menü "Bearbeiten" und Text-Dokument-Kontextmenüs  
   
--   Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen  
+- Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen  
   
- Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Beachten Sie**: in dieser exemplarischen Vorgehensweise fügen Sie Sie viel Code in einige Dateien, die von visual Studio-Extension-Vorlagen generiert finden Sie jedoch in Kürze in dieser exemplarischen Vorgehensweise wird eine vollständige Lösung auf Github mit anderen Beispielen für die Erweiterung.  Der fertige Code unterscheidet sich geringfügig, dass es sich um echte Befehlssymbole anstelle von Generictemplate Symbole hat.  
+  **Beachten Sie**: in dieser exemplarischen Vorgehensweise fügen Sie Sie viel Code in einige Dateien, die von visual Studio-Extension-Vorlagen generiert finden Sie jedoch in Kürze in dieser exemplarischen Vorgehensweise wird eine vollständige Lösung auf Github mit anderen Beispielen für die Erweiterung.  Der fertige Code unterscheidet sich geringfügig, dass es sich um echte Befehlssymbole anstelle von Generictemplate Symbole hat.  
   
 ## <a name="getting-started"></a>Erste Schritte  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Ef
 ## <a name="setting-up-the-solution"></a>Einrichten der Projektmappe  
  Zuerst Sie ein VSIX-Projekt erstellen, ein Zusatzelement der Editor-Ansicht hinzufügen, und fügen Sie dann einen Befehl (bei dem eine VSPackage, um den Befehl Besitzer hinzugefügt).  Die grundlegende Architektur lautet wie folgt aus:  
   
--   Sie haben einen Text-Ansicht-erstellen-Listener, der erstellt eine `ColumnGuideAdornment` Objekt pro Ansicht.  Dieses Objekt überwacht Ereignisse im Zusammenhang mit der Ansicht ändern, oder die Einstellungen ändern, aktualisieren oder das Neuzeichnen-Spalte führt nach Bedarf.  
+- Sie haben einen Text-Ansicht-erstellen-Listener, der erstellt eine `ColumnGuideAdornment` Objekt pro Ansicht.  Dieses Objekt überwacht Ereignisse im Zusammenhang mit der Ansicht ändern, oder die Einstellungen ändern, aktualisieren oder das Neuzeichnen-Spalte führt nach Bedarf.  
   
--   Es gibt eine `GuidesSettingsManager` , verarbeitet werden, lesen und Schreiben von aus dem Speicher der Visual Studio-Einstellungen.  Der Settings Manager verfügt auch über die Vorgänge zum Aktualisieren der Einstellungen, die der Benutzerbefehle unterstützen (Spalte hinzufügen, entfernen Sie die Spalte, ändern Sie die Farbe).  
+- Es gibt eine `GuidesSettingsManager` , verarbeitet werden, lesen und Schreiben von aus dem Speicher der Visual Studio-Einstellungen.  Der Settings Manager verfügt auch über die Vorgänge zum Aktualisieren der Einstellungen, die der Benutzerbefehle unterstützen (Spalte hinzufügen, entfernen Sie die Spalte, ändern Sie die Farbe).  
   
--   Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.  
+- Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.  
   
--   Es gibt eine `ColumnGuideCommands` Objekt, das die Benutzerbefehle implementiert und verknüpft die Befehlshandler für Befehle in der VSCT-Datei deklariert.  
+- Es gibt eine `ColumnGuideCommands` Objekt, das die Benutzerbefehle implementiert und verknüpft die Befehlshandler für Befehle in der VSCT-Datei deklariert.  
   
- **VSIX**.  Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts.  Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter c#, und wählen Sie **VSIX-Projekt** im rechten Bereich.  Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.  
+  **VSIX**.  Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts.  Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter c#, und wählen Sie **VSIX-Projekt** im rechten Bereich.  Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.  
   
- **Anzeigen des Zusatzelements**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements.  Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich.  Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.  
+  **Anzeigen des Zusatzelements**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements.  Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich.  Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.  
   
- Sie sehen, dass diese Elementvorlage zwei Dateien dem Projekt (sowie Verweise und usw.) hinzugefügt: ColumnGuideAdornment.cs und ColumnGuideAdornmentTextViewCreationListener.cs.  Die Vorlagen Zeichnen nur eine violette Rechteck für die Sicht.  Im folgenden Sie ein paar Codezeilen in der Ansicht erstellen Listener ändern und Ersetzen Sie den Inhalt der ColumnGuideAdornment.cs.  
+  Sie sehen, dass diese Elementvorlage zwei Dateien dem Projekt (sowie Verweise und usw.) hinzugefügt: ColumnGuideAdornment.cs und ColumnGuideAdornmentTextViewCreationListener.cs.  Die Vorlagen Zeichnen nur eine violette Rechteck für die Sicht.  Im folgenden Sie ein paar Codezeilen in der Ansicht erstellen Listener ändern und Ersetzen Sie den Inhalt der ColumnGuideAdornment.cs.  
   
- **Befehle**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements.  Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierten Befehls** im rechten Bereich.  Geben Sie den Namen ColumnGuideCommands als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.  Zusätzlich zu den mehrere Verweise werden ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs und ColumnGuideCommandsPackage.vsct hinzugefügt, um die Befehle und das Paket hinzufügen.  Im folgenden ersetzen Sie den Inhalt der ersten und letzten Dateien zu definieren und implementieren Sie die Befehle.  
+  **Befehle**.  Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer.  Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements.  Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierten Befehls** im rechten Bereich.  Geben Sie den Namen ColumnGuideCommands als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.  Zusätzlich zu den mehrere Verweise werden ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs und ColumnGuideCommandsPackage.vsct hinzugefügt, um die Befehle und das Paket hinzufügen.  Im folgenden ersetzen Sie den Inhalt der ersten und letzten Dateien zu definieren und implementieren Sie die Befehle.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Das Einrichten des Textlisteners der Ansicht erstellen  
  ColumnGuideAdornmentTextViewCreationListener.cs im Editor zu öffnen.  Dieser Code wird ein Handler implementiert, für jedes Mal, wenn Visual Studio Textansichten erstellt.  Es gibt Attribute an, mit denen gesteuert wird, wenn der Handler aufgerufen wird, abhängig von den Eigenschaften der Ansicht.  

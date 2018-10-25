@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873969"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen
   Die Office-Entwicklungstools in Visual Studio umfassen Klassen und Designer, mit denen viele Implementierungsdetails behandelt werden können, wenn Sie sie zum Erstellen von benutzerdefinierten Aufgabenbereichen, Menübandanpassungen und Outlook-Formularbereichen in einem VSTO-Add-In verwenden. Sie können jedoch zudem die *Erweiterbarkeitsschnittstelle* manuell für jede Funktion implementieren, wenn Sie über besondere Anforderungen verfügen.  
@@ -61,17 +61,17 @@ ms.locfileid: "35672769"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Beispiel für die Implementierung einer Erweiterbarkeitsschnittstelle  
  Das folgende Codebeispiel veranschaulicht eine einfache Implementierung der <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> -Schnittstelle zum Erstellen eines benutzerdefinierten Aufgabenbereichs. Im Beispiel werden zwei Klassen definiert:  
   
--   Die `TaskPaneHelper` -Klasse implementiert <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zum Erstellen und Anzeigen eines benutzerdefinierten Aufgabenbereichs.  
+- Die `TaskPaneHelper` -Klasse implementiert <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zum Erstellen und Anzeigen eines benutzerdefinierten Aufgabenbereichs.  
   
--   Die `TaskPaneUI`-Klasse stellt die Benutzeroberfläche des Aufgabenbereichs bereit. Die Attribute für die `TaskPaneUI` -Klasse machen die Klasse sichtbar für COM, wodurch Microsoft Office-Anwendungen die Klasse erkennen können. In diesem Beispiel ist die Benutzeroberfläche ein leeres <xref:System.Windows.Forms.UserControl>. Sie können jedoch Steuerelemente hinzufügen, indem Sie den Code ändern.  
+- Die `TaskPaneUI`-Klasse stellt die Benutzeroberfläche des Aufgabenbereichs bereit. Die Attribute für die `TaskPaneUI` -Klasse machen die Klasse sichtbar für COM, wodurch Microsoft Office-Anwendungen die Klasse erkennen können. In diesem Beispiel ist die Benutzeroberfläche ein leeres <xref:System.Windows.Forms.UserControl>. Sie können jedoch Steuerelemente hinzufügen, indem Sie den Code ändern.  
   
-    > [!NOTE]  
-    >  Damit die `TaskPaneUI` -Klasse für COM verfügbar ist, müssen Sie zudem die Eigenschaft **Für COM-Interop registrieren** für das Projekt festlegen.  
+  > [!NOTE]  
+  >  Damit die `TaskPaneUI` -Klasse für COM verfügbar ist, müssen Sie zudem die Eigenschaft **Für COM-Interop registrieren** für das Projekt festlegen.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Weitere Informationen zum Implementieren von <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in 2007 Office System](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) in der Dokumentation zu Microsoft Office.  
+  Weitere Informationen zum Implementieren von <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in 2007 Office System](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) in der Dokumentation zu Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Beispiel zum Überschreiben der Methode "RequestService"  
  Das folgende Codebeispiel veranschaulicht, wie die Methode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> überschrieben wird, um eine Instanz der Klasse `TaskPaneHelper` aus dem vorherigen Codebeispiel zurückzugeben. Es prüft die Werte des Parameters *serviceGuid* , um zu bestimmen, welche Schnittstelle angefordert wird, und gibt dann ein Objekt zurück, das diese Schnittstelle implementiert.  

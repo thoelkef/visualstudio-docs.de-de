@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914566"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>So zeigen Sie eine Liste aller CPU-Indikatoren an, die auf der aktuellen Plattform unterstützt werden  
   
-1.  Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
+1. Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
   
-2.  Führen Sie einen der folgenden Schritte aus:  
+2. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Klicken Sie auf **Sampling**, und wählen Sie anschließend aus der Ereignisliste **Beispiel** die Option **Leistungsindikator** aus. Die CPU-Indikatoren werden unter **Verfügbare Leistungsindikatoren** aufgeführt.  
+   - Klicken Sie auf **Sampling**, und wählen Sie anschließend aus der Ereignisliste **Beispiel** die Option **Leistungsindikator** aus. Die CPU-Indikatoren werden unter **Verfügbare Leistungsindikatoren** aufgeführt.  
   
-         **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.  
+      **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.  
   
      - oder -   
   
-    -   Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.  
+   - Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.  
   
-         **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.  
+      **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>So zeigen Sie eine Liste aller Windows-Indikatoren an, die auf der aktuellen Plattform unterstützt werden  
   

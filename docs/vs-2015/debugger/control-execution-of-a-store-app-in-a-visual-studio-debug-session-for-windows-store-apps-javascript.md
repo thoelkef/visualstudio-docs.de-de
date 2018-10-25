@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813290"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Steuern der Ausführung einer Store-App in einer Visual Studio-Debugsitzung für Windows Store-Apps (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
   
  [Anzeigen von Variablendaten im Fenster "Lokal"](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [Anzeigen der Variablendaten und der Prototypenkette eines Objekts](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [Anzeigen der Variablendaten und der Prototypenkette eines Objekts](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [Untersuchen von Bereichskettendaten](#BKMK_Examine_scope_chain_data)  
+- [Untersuchen von Bereichskettendaten](#BKMK_Examine_scope_chain_data)  
   
- [Navigieren zum Code über das Fenster "Aufrufliste"](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [Navigieren zum Code über das Fenster "Aufrufliste"](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> Erstellen der Beispiel-App  
  Beim Debuggen geht es um den Code. Daher wird für die Beispiel-App das Framework der Windows Store-App nur zum Erstellen einer Quelldatei verwendet, mit der Sie erkennen können, wie das Navigieren in einer Debugsitzung funktioniert und wie Sie den Programmzustand prüfen können. Der gesamte aufgerufene Code wird von der `module` -Funktion der Datei "default.js" aufgerufen. Es werden keine Steuerelemente hinzugefügt und keine Ereignisse behandelt.  
   
-1.  **Erstellen Sie eine leere Windows Store-App mit JavaScript.** Öffnen Sie Visual Studio. Wählen Sie auf der Homepage den Link **Neues Projekt** . Wählen Sie im Dialogfeld **Neues Projekt** in der Liste **Installiert** die Option **JavaScript** und dann **Windows Store**aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere Anwendung**aus. Visual Studio erstellt eine neue Projektmappe und ein neues Projekt und zeigt die Datei "default.htm" im Code-Editor an.  
+1. **Erstellen Sie eine leere Windows Store-App mit JavaScript.** Öffnen Sie Visual Studio. Wählen Sie auf der Homepage den Link **Neues Projekt** . Wählen Sie im Dialogfeld **Neues Projekt** in der Liste **Installiert** die Option **JavaScript** und dann **Windows Store**aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere Anwendung**aus. Visual Studio erstellt eine neue Projektmappe und ein neues Projekt und zeigt die Datei "default.htm" im Code-Editor an.  
   
-     Beachten Sie die Skriptdateien, die in die Seite geladen werden.  
+    Beachten Sie die Skriptdateien, die in die Seite geladen werden.  
   
-    -   Die Dateien `base.js` und `ui.js` erstellen die **Windows-Bibliothek für JavaScript**. Bei der Windows-Bibliothek für JavaScript handelt es sich um einen Satz von JavaScript- und CSS-Dateien, die das Erstellen von Windows Store-Apps mit JavaScript vereinfachen. Sie verwenden sie zusammen mit HTML, CSS und Windows-Runtime zum Erstellen Ihrer App.  
+   -   Die Dateien `base.js` und `ui.js` erstellen die **Windows-Bibliothek für JavaScript**. Bei der Windows-Bibliothek für JavaScript handelt es sich um einen Satz von JavaScript- und CSS-Dateien, die das Erstellen von Windows Store-Apps mit JavaScript vereinfachen. Sie verwenden sie zusammen mit HTML, CSS und Windows-Runtime zum Erstellen Ihrer App.  
   
-    -   Ihr Code beginnt in der Datei `default.js`  .  
+   -   Ihr Code beginnt in der Datei `default.js`  .  
   
-2.  **Öffnen Sie die „default.js“-Quelldatei.** Öffnen Sie im Projektmappen-Explorer den Knoten **js** , und wählen Sie `default.js`.  
+2. **Öffnen Sie die „default.js“-Quelldatei.** Öffnen Sie im Projektmappen-Explorer den Knoten **js** , und wählen Sie `default.js`.  
   
-3.  **Ersetzen Sie den Seiteninhalt durch den Beispielcode.** Löschen Sie den gesamten Inhalt aus der Datei `default.js` . Folgen Sie diesem Link: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), und kopieren Sie anschließend den im Abschnitt JavaScript aufgelisteten Code in die Zwischenablage. (Wählen Sie **wieder** im Browser oder die Hilfe-Viewer, um zu dieser schnellstartseite zurückzukehren.) Fügen Sie den Code im Visual Studio-Editor in die jetzt leere Datei `default.js` ein. Wählen Sie **STRG+S** , um die Datei zu speichern.  
+3. **Ersetzen Sie den Seiteninhalt durch den Beispielcode.** Löschen Sie den gesamten Inhalt aus der Datei `default.js` . Folgen Sie diesem Link: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), und kopieren Sie anschließend den im Abschnitt JavaScript aufgelisteten Code in die Zwischenablage. (Wählen Sie **wieder** im Browser oder die Hilfe-Viewer, um zu dieser schnellstartseite zurückzukehren.) Fügen Sie den Code im Visual Studio-Editor in die jetzt leere Datei `default.js` ein. Wählen Sie **STRG+S** , um die Datei zu speichern.  
   
- Sie können nun den Beispielen in diesem Thema folgen.  
+   Sie können nun den Beispielen in diesem Thema folgen.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> Festlegen eines Haltepunkts und Ausführen bis zu diesem Haltepunkt, Durchlaufen einer Funktion in Einzelschritten und Untersuchen von Programmdaten  
  Die gängigste Methode zum Starten einer Debugsitzung besteht darin, im Menü **Debuggen** die Option **Debuggen starten** auszuwählen (Tastatur: F5). Die App wird gestartet und so lange ausgeführt, bis ein Haltepunkt erreicht wird, bis Sie sie manuell anhalten, bis eine Ausnahme auftritt, oder bis die App beendet ist.  
@@ -88,45 +88,45 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
 ###  <a name="BKMK_Example_1"></a> Beispiel 1  
  In diesem Beispiel legen Sie einen Haltepunkt im Hauptteil der `module` -Funktion in `default.js` fest, wenn die erste unserer Benutzeranweisungen aufgerufen wird. Anschließend durchlaufen Sie die Funktion in Einzelschritten, zeigen Variablenwerte in den Debuggerdatentipps an und beenden anschließend das Debuggen.  
   
-1.  **Festlegen eines Haltepunkts.** Legen Sie einen Haltepunkt bei der Anweisung `callTrack = "module function";` fest, die direkt nach dem Aufruf von `app.start()`. Wählen Sie die Zeile im schattierten Bundsteg des Quellcode-Editors aus (Tastatur: Positionieren Sie den Cursor in der Zeile, und drücken Sie **F9** ).  
+1. **Festlegen eines Haltepunkts.** Legen Sie einen Haltepunkt bei der Anweisung `callTrack = "module function";` fest, die direkt nach dem Aufruf von `app.start()`. Wählen Sie die Zeile im schattierten Bundsteg des Quellcode-Editors aus (Tastatur: Positionieren Sie den Cursor in der Zeile, und drücken Sie **F9** ).  
   
-     ![Legen Sie einen Haltepunkt bei example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Legen Sie einen Haltepunkt bei example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     Das Haltepunktsymbol wird im Bundsteg angezeigt.  
+    Das Haltepunktsymbol wird im Bundsteg angezeigt.  
   
-2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** on the **Debuggen starten** auszuwählen (Tastatur: F5).  
+2. **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** on the **Debuggen starten** auszuwählen (Tastatur: F5).  
   
-     Die App wird ausgeführt und hält die Ausführung direkt vor der Anweisung an, in der der Haltepunkt gesetzt wurde. Das Symbol der aktuellen Zeile im Bundsteg weist auf die aktuelle Position hin, und die aktuelle Anweisung ist hervorgehoben.  
+    Die App wird ausgeführt und hält die Ausführung direkt vor der Anweisung an, in der der Haltepunkt gesetzt wurde. Das Symbol der aktuellen Zeile im Bundsteg weist auf die aktuelle Position hin, und die aktuelle Anweisung ist hervorgehoben.  
   
-     ![Bis Haltepunkt ausführen](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![Bis Haltepunkt ausführen](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     Sie können die Ausführung der App nun steuern. Zudem können Sie den Programmzustand überprüfen, während Sie die Programmanweisungen durchlaufen.  
+    Sie können die Ausführung der App nun steuern. Zudem können Sie den Programmzustand überprüfen, während Sie die Programmanweisungen durchlaufen.  
   
-3.  **Durchlaufen der Funktion in Einzelschritten.** Wählen Sie im Dialogfeld **Debuggen starten** die Option **Einzelschritt** aus (Tastatur: **F11**).  
+3. **Durchlaufen der Funktion in Einzelschritten.** Wählen Sie im Dialogfeld **Debuggen starten** die Option **Einzelschritt** aus (Tastatur: **F11**).  
   
-     ![Einzelschritt in eine einzige Zeile Code](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![Einzelschritt in eine einzige Zeile Code](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     Beachten Sie, dass der Debugger zur nächsten Zeile wechselt, einem Aufruf der Funktion `example1` . Wählen Sie erneut **Einzelschritt** . Der Debugger wechselt zur ersten Codezeile der Funktion `example1` . Die hervorgehobene Zeile wurde nicht ausgeführt, aber die Funktion wurde in die Aufrufliste geladen, und der Speicher für lokale Variablen wurde zugewiesen.  
+    Beachten Sie, dass der Debugger zur nächsten Zeile wechselt, einem Aufruf der Funktion `example1` . Wählen Sie erneut **Einzelschritt** . Der Debugger wechselt zur ersten Codezeile der Funktion `example1` . Die hervorgehobene Zeile wurde nicht ausgeführt, aber die Funktion wurde in die Aufrufliste geladen, und der Speicher für lokale Variablen wurde zugewiesen.  
   
-4.  Wenn Sie einen Einzelschritt in eine Codezeile durchführen, führt der Debugger eine der folgenden Aktionen aus:  
+4. Wenn Sie einen Einzelschritt in eine Codezeile durchführen, führt der Debugger eine der folgenden Aktionen aus:  
   
-    -   Wenn die folgende Anweisung kein Aufruf einer Funktion Ihrer Projektmappe ist, führt der Debugger die Anweisung aus, wechselt zur folgenden Anweisung und hält dann die Ausführung an.  
+   - Wenn die folgende Anweisung kein Aufruf einer Funktion Ihrer Projektmappe ist, führt der Debugger die Anweisung aus, wechselt zur folgenden Anweisung und hält dann die Ausführung an.  
   
-    -   Wenn es sich bei der Anweisung um den Aufruf einer Funktion in Ihrer Projektmappe handelt, wechselt der Debugger zur ersten Zeile der aufgerufenen Funktion und hält dann die Ausführung an.  
+   - Wenn es sich bei der Anweisung um den Aufruf einer Funktion in Ihrer Projektmappe handelt, wechselt der Debugger zur ersten Zeile der aufgerufenen Funktion und hält dann die Ausführung an.  
   
      Fahren Sie mit den Einzelschritten der Anweisungen von `example1` fort, bis Sie den Ausstiegspunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Funktion hervor.  
   
-5.  **Anzeigen der Variablenwerte in den Datentipps.** Fahren Sie mit den Einzelschritten der Anweisungen von `example1` fort, bis Sie den Ausstiegspunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Funktion hervor. Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name und der Wert der Variablen in einem Datentipp angezeigt.  
+5. **Anzeigen der Variablenwerte in den Datentipps.** Fahren Sie mit den Einzelschritten der Anweisungen von `example1` fort, bis Sie den Ausstiegspunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Funktion hervor. Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name und der Wert der Variablen in einem Datentipp angezeigt.  
   
-     ![Anzeigen der Variablenwerte im Datentipp](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![Anzeigen der Variablenwerte im Datentipp](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **Hinzufügen einer Überwachung für die "callTrack"-Variable.** Die Dateien `callTrack` -Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Funktionen anzuzeigen. Um die Anzeige des Variablenwerts zu vereinfachen, fügen Sie sie einem Überwachungsfenster hinzu. Wählen Sie den Variablennamen im Editor aus, und wählen Sie dann im Kontextmenü **Überwachung hinzufügen** .  
+6. **Hinzufügen einer Überwachung für die "callTrack"-Variable.** Die Dateien `callTrack` -Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Funktionen anzuzeigen. Um die Anzeige des Variablenwerts zu vereinfachen, fügen Sie sie einem Überwachungsfenster hinzu. Wählen Sie den Variablennamen im Editor aus, und wählen Sie dann im Kontextmenü **Überwachung hinzufügen** .  
   
-     ![Sehen Sie sich eine Variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![Sehen Sie sich eine Variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     In einem Überwachungsfenster können mehrere Variablen überwacht werden. Genau wie die Werte in Datentippfenstern werden die Werte der überwachten Variablen aktualisiert, sobald die Ausführung angehalten wird. Die überwachten Variablen werden über Debugsitzungen hinweg gespeichert.  
+    In einem Überwachungsfenster können mehrere Variablen überwacht werden. Genau wie die Werte in Datentippfenstern werden die Werte der überwachten Variablen aktualisiert, sobald die Ausführung angehalten wird. Die überwachten Variablen werden über Debugsitzungen hinweg gespeichert.  
   
-7.  **Beenden des Debuggens.** Wählen Sie im Dialogfeld **Debuggen starten** die Option **Debuggen beenden** aus (Tastatur: **UMSCHALT+F5**). Damit wird die Debugsitzung beendet.  
+7. **Beenden des Debuggens.** Wählen Sie im Dialogfeld **Debuggen starten** die Option **Debuggen beenden** aus (Tastatur: **UMSCHALT+F5**). Damit wird die Debugsitzung beendet.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Einzel- und Prozedurschritte für Funktionen  
  Im Gegensatz zu einem Einzelschritt in eine Funktion, die von einer übergeordneten Funktion aufgerufen wird, wird bei einem Prozedurschritt die untergeordnete Funktion ausgeführt und die Ausführung anschließend in der aufrufenden Funktion angehalten, wenn die übergeordnete Funktion fortgesetzt wird. Sie können für eine Funktion einen Prozedurschritt ausführen, wenn Sie mit der Funktionsweise der Funktion vertraut und sicher sind, dass deren Ausführung das zu untersuchende Problem nicht beeinflusst.  
@@ -241,13 +241,13 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Untersuchen von Bereichskettendaten  
  Die *Bereichskette* einer Funktion enthält alle Variablen, die aktiv sind und von der Funktion erreicht werden können. Globale Variablen sind Teil der Bereichskette, ebenso wie alle Objekte (einschließlich Funktionen), die in der Funktion definiert werden, die wiederum die derzeit ausgeführte Funktion definiert. Beispielsweise ist die `callTrack` -Variable, die in der `module` -Funktion von `default.js` definiert ist, von jeder Funktion erreichbar, die in der `module` -Funktion definiert ist. Jeder Bereich wird im Fenster "Lokal" separat aufgeführt.  
   
--   Die Variablen der aktuell ausgeführten Funktion werden im oberen Fensterbereich aufgeführt.  
+- Die Variablen der aktuell ausgeführten Funktion werden im oberen Fensterbereich aufgeführt.  
   
--   Die Variablen für die einzelnen Funktionsbereiche in der Bereichskette werden unter einem Knoten **[Bereich]** für die Funktion aufgeführt. Die Bereichsfunktionen werden nach ihrer Reihenfolge in der Kette aufgelistet, von der Funktion, die die aktuelle Funktion definiert, bis hin zur äußersten Funktion in der Kette.  
+- Die Variablen für die einzelnen Funktionsbereiche in der Bereichskette werden unter einem Knoten **[Bereich]** für die Funktion aufgeführt. Die Bereichsfunktionen werden nach ihrer Reihenfolge in der Kette aufgelistet, von der Funktion, die die aktuelle Funktion definiert, bis hin zur äußersten Funktion in der Kette.  
   
--   Der Knoten **[Global]** enthält die globalen Objekte, die unabhängig von den Funktionen definiert werden.  
+- Der Knoten **[Global]** enthält die globalen Objekte, die unabhängig von den Funktionen definiert werden.  
   
- Bereichsketten können verwirrend sein und lassen sich am besten anhand eines Beispiels erläutern. Im folgenden Beispiel sehen Sie, wie die `module` -Funktion einen eigenen Bereich erstellt und wie Sie eine weitere Bereichsebene durch das Erstellen eines Abschlusses erstellen können.  
+  Bereichsketten können verwirrend sein und lassen sich am besten anhand eines Beispiels erläutern. Im folgenden Beispiel sehen Sie, wie die `module` -Funktion einen eigenen Bereich erstellt und wie Sie eine weitere Bereichsebene durch das Erstellen eines Abschlusses erstellen können.  
   
 ###  <a name="BKMK_Example_4"></a> Beispiel 4  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911277"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,39 +90,39 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
 ###  <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten  
   
--   Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:  
+- Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:  
   
-     `sudo npm install -g --unsafe-perm vcremote`  
+   `sudo npm install -g --unsafe-perm vcremote`  
   
-     Der Schalter für die globale Installation (**-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.  
+   Der Schalter für die globale Installation (**-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.  
   
-     Während der Installation wird "vcremote" installiert, und der Entwicklermodus wird auf Ihrem Mac aktiviert. [Homebrew](http://brew.sh/) und zwei npm-Pakete, "vcremote-lib" und "vcremote-utils", werden ebenfalls installiert.  
+   Während der Installation wird "vcremote" installiert, und der Entwicklermodus wird auf Ihrem Mac aktiviert. [Homebrew](http://brew.sh/) und zwei npm-Pakete, "vcremote-lib" und "vcremote-utils", werden ebenfalls installiert.  
   
-    > [!NOTE]
-    >  Zum Installieren von Homebrew benötigen Sie sudo-Zugriff (Administrator). Wenn Sie "vcremote" ohne sudo installieren müssen, können Sie Homebrew manuell unter einem "usr/local"-Speicherort installieren und den Ordner "bin" zu Ihrem Pfad hinzufügen. Weitere Informationen finden Sie in der [Homebrew-Dokumentation](https://github.com/Homebrew/homebrew/wiki/Installation). Um den Entwicklermodus manuell zu aktivieren, geben Sie folgenden Befehl in die Terminal-App ein: `DevToolsSecurity –enable`  
+  > [!NOTE]
+  >  Zum Installieren von Homebrew benötigen Sie sudo-Zugriff (Administrator). Wenn Sie "vcremote" ohne sudo installieren müssen, können Sie Homebrew manuell unter einem "usr/local"-Speicherort installieren und den Ordner "bin" zu Ihrem Pfad hinzufügen. Weitere Informationen finden Sie in der [Homebrew-Dokumentation](https://github.com/Homebrew/homebrew/wiki/Installation). Um den Entwicklermodus manuell zu aktivieren, geben Sie folgenden Befehl in die Terminal-App ein: `DevToolsSecurity –enable`  
   
- Wenn Sie auf eine neue Version von Visual Studio aktualisiert haben, müssen Sie diese Aktualisierung auch auf dem Remote-Agent vornehmen. Wiederholen Sie die Schritte zum Herunterladen und Installieren des Remote-Agents, um diesen zu aktualisieren.  
+  Wenn Sie auf eine neue Version von Visual Studio aktualisiert haben, müssen Sie diese Aktualisierung auch auf dem Remote-Agent vornehmen. Wiederholen Sie die Schritte zum Herunterladen und Installieren des Remote-Agents, um diesen zu aktualisieren.  
   
 ##  <a name="Start"></a> Starten des Remote-Agents  
  Der Remote-Agent muss ausgeführt werden, damit Visual Studio den iOS-Code erstellen und ausführen kann. Visual Studio muss mit dem Remote-Agent gekoppelt werden, bevor eine Kommunikation stattfinden kann. Standardmäßig wird der Remote-Agent im Modus für sichere Verbindung ausgeführt. Dazu muss Visual Studio mit einer PIN gekoppelt werden.  
   
 ###  <a name="RemoteAgentStartServer"></a> So starten Sie den Remote-Agenten  
   
--   Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:  
+- Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:  
   
-     `vcremote`  
+   `vcremote`  
   
-     Dadurch wird der Remote-Agent mit einem standardmäßigen Buildverzeichnis von "~/vcremote" gestartet. Zusätzliche Konfigurationsoptionen finden Sie unter [Configure the remote agent on the Mac](#ConfigureMac).  
+   Dadurch wird der Remote-Agent mit einem standardmäßigen Buildverzeichnis von "~/vcremote" gestartet. Zusätzliche Konfigurationsoptionen finden Sie unter [Configure the remote agent on the Mac](#ConfigureMac).  
   
- Beim ersten Start des Remote-Agents sowie jederzeit beim Erstellen eines neuen Clientzertifikats erhalten Sie die Informationen, die zum Konfigurieren des Agents in Visual Studio erforderlich sind, einschließlich des Hostnamens, des Ports und der PIN.  
+  Beim ersten Start des Remote-Agents sowie jederzeit beim Erstellen eines neuen Clientzertifikats erhalten Sie die Informationen, die zum Konfigurieren des Agents in Visual Studio erforderlich sind, einschließlich des Hostnamens, des Ports und der PIN.  
   
- ![Verwenden von vcremote zum Generieren einer sicheren PIN](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![Verwenden von vcremote zum Generieren einer sicheren PIN](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
- Wenn Sie vorhaben, den Remote-Agent in Visual Studio unter Verwendung des Hostnamens zu konfigurieren, pingen Sie den Mac von Windows mithilfe des Hostnamens, um sicherzustellen, dass er erreichbar ist. Ansonsten müssen Sie möglicherweise die IP-Adresse dafür verwenden.  
+  Wenn Sie vorhaben, den Remote-Agent in Visual Studio unter Verwendung des Hostnamens zu konfigurieren, pingen Sie den Mac von Windows mithilfe des Hostnamens, um sicherzustellen, dass er erreichbar ist. Ansonsten müssen Sie möglicherweise die IP-Adresse dafür verwenden.  
   
- Die generierte PIN ist für die einmalige Verwendung bestimmt und nur für einen begrenzten Zeitraum gültig. Wenn Sie Visual Studio nicht vor Ablauf dieses Zeitraums mit dem Remote-Agent koppeln, müssen Sie eine neue PIN generieren. Weitere Informationen finden Sie unter [Generate a new security PIN](#GeneratePIN).  
+  Die generierte PIN ist für die einmalige Verwendung bestimmt und nur für einen begrenzten Zeitraum gültig. Wenn Sie Visual Studio nicht vor Ablauf dieses Zeitraums mit dem Remote-Agent koppeln, müssen Sie eine neue PIN generieren. Weitere Informationen finden Sie unter [Generate a new security PIN](#GeneratePIN).  
   
- Sie können den Remote-Agent im ungesicherten Modus verwenden. Im ungesicherten Modus kann der Remote-Agent mit Visual Studio ohne PIN gekoppelt werden.  
+  Sie können den Remote-Agent im ungesicherten Modus verwenden. Im ungesicherten Modus kann der Remote-Agent mit Visual Studio ohne PIN gekoppelt werden.  
   
 #### <a name="to-disable-secured-connection-mode"></a>So deaktivieren Sie den Modus für sichere Verbindung  
   
@@ -132,11 +132,11 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
 #### <a name="to-enable-secured-connection-mode"></a>So aktivieren Sie den Modus für sichere Verbindung  
   
--   Um den Modus für sichere Verbindung zu aktivieren, geben Sie diesen Befehl ein:  
+- Um den Modus für sichere Verbindung zu aktivieren, geben Sie diesen Befehl ein:  
   
-     `vcremote --secure true`  
+   `vcremote --secure true`  
   
- Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio aus verwenden, bis Sie ihn beenden.  
+  Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio aus verwenden, bis Sie ihn beenden.  
   
 #### <a name="to-stop-the-remote-agent"></a>So beenden Sie den Remote-Agenten  
   
@@ -147,36 +147,36 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>So konfigurieren Sie den Remote-Agenten in Visual Studio  
   
-1.  Wenn der Agent nicht bereits auf Ihrem Mac ausgeführt wird, führen Sie die Schritte unter [Starten des Remote-Agents](#Start)aus. Auf Ihrem Mac muss "vcremote" ausgeführt werden, damit Visual Studio erfolgreich gekoppelt und verbunden und das Projekt erstellt werden kann erstellen.  
+1. Wenn der Agent nicht bereits auf Ihrem Mac ausgeführt wird, führen Sie die Schritte unter [Starten des Remote-Agents](#Start)aus. Auf Ihrem Mac muss "vcremote" ausgeführt werden, damit Visual Studio erfolgreich gekoppelt und verbunden und das Projekt erstellt werden kann erstellen.  
   
-2.  Rufen Sie den Hostnamen auf Ihrem Mac oder Ihres IP-Adresse Ihres Macs ab.  
+2. Rufen Sie den Hostnamen auf Ihrem Mac oder Ihres IP-Adresse Ihres Macs ab.  
   
-     Mit dem **ifconfig** -Befehl kann die IP-Adresse in einem Terminalfenster abgerufen werden. Verwenden Sie die inet-Adresse, die unter der aktiven Netzwerkschnittstelle ausgeführt ist.  
+    Mit dem **ifconfig** -Befehl kann die IP-Adresse in einem Terminalfenster abgerufen werden. Verwenden Sie die inet-Adresse, die unter der aktiven Netzwerkschnittstelle ausgeführt ist.  
   
-3.  Wählen Sie in der Menüleiste von Visual Studio **Extras**, **Optionen**aus.  
+3. Wählen Sie in der Menüleiste von Visual Studio **Extras**, **Optionen**aus.  
   
-4.  Erweitern Sie im Dialogfeld **Optionen** **Plattformübergreifend**, **C++**, **iOS**.  
+4. Erweitern Sie im Dialogfeld **Optionen** **Plattformübergreifend**, **C++**, **iOS**.  
   
-5.  Geben Sie in die Felder **Hostname** und **Port** die Werte ein, die vom Remote-Agent angegeben wurden, als Sie diesen gestartet haben. Der Hostname kann der DNS-Name oder die IP-Adresse Ihres Macs sein. Der Standardport ist 3030.  
+5. Geben Sie in die Felder **Hostname** und **Port** die Werte ein, die vom Remote-Agent angegeben wurden, als Sie diesen gestartet haben. Der Hostname kann der DNS-Name oder die IP-Adresse Ihres Macs sein. Der Standardport ist 3030.  
   
-    > [!NOTE]
-    >  Wenn Sie den Mac nicht mithilfe des Hostnamens pingen können, müssen Sie möglicherweise die IP-Adresse verwenden.  
+   > [!NOTE]
+   >  Wenn Sie den Mac nicht mithilfe des Hostnamens pingen können, müssen Sie möglicherweise die IP-Adresse verwenden.  
   
-6.  Wenn Sie den Remote-Agent im standardmäßigen Modus für sichere Verbindung verwenden, aktivieren Sie das Kontrollkästchen **Sicher** , und geben Sie dann den vom Remote-Agent angegebenen PIN-Wert im Feld für die **Pin** ein. Wenn Sie den Remote-Agent im ungesicherten Verbindungsmodus verwenden, deaktivieren Sie das Kontrollkästchen **Sicher** , und lassen Sie das Feld für die **Pin** leer.  
+6. Wenn Sie den Remote-Agent im standardmäßigen Modus für sichere Verbindung verwenden, aktivieren Sie das Kontrollkästchen **Sicher** , und geben Sie dann den vom Remote-Agent angegebenen PIN-Wert im Feld für die **Pin** ein. Wenn Sie den Remote-Agent im ungesicherten Verbindungsmodus verwenden, deaktivieren Sie das Kontrollkästchen **Sicher** , und lassen Sie das Feld für die **Pin** leer.  
   
-7.  Wählen Sie **Koppeln** aus, um das Koppeln zu aktivieren.  
+7. Wählen Sie **Koppeln** aus, um das Koppeln zu aktivieren.  
   
-     ![Konfigurieren der vcremote-Verbindung für iOS-Builds](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Konfigurieren der vcremote-Verbindung für iOS-Builds](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-     Die Kopplung bleibt erhalten, bis Sie den Hostnamen oder Port ändern. Wenn Sie den Hostnamen oder den Port im Dialogfeld **Optionen** ändern, wählen Sie zum Rückgängigmachen der Änderung die Schaltfläche **Zurücksetzen** aus. So stellen Sie die vorherige Kopplung wieder her.  
+    Die Kopplung bleibt erhalten, bis Sie den Hostnamen oder Port ändern. Wenn Sie den Hostnamen oder den Port im Dialogfeld **Optionen** ändern, wählen Sie zum Rückgängigmachen der Änderung die Schaltfläche **Zurücksetzen** aus. So stellen Sie die vorherige Kopplung wieder her.  
   
-     Wenn die Kopplung nicht erfolgreich ist, stellen Sie sicher, dass der Remote-Agent ausgeführt wird. Führen Sie dazu die unter [Start the remote agent](#Start)beschriebenen Schritte aus. Wenn zu viel Zeit verstrichen ist, seit die Remote-Agent-PIN generiert wurde, führen Sie die Schritte unter [Generate a new security PIN](#GeneratePIN) auf dem Mac aus, und versuchen Sie es dann erneut. Versuchen Sie bei Verwendung der Hostname Ihres Macs stattdessen mit der IP-Adresse im Feld **Hostname** .  
+    Wenn die Kopplung nicht erfolgreich ist, stellen Sie sicher, dass der Remote-Agent ausgeführt wird. Führen Sie dazu die unter [Start the remote agent](#Start)beschriebenen Schritte aus. Wenn zu viel Zeit verstrichen ist, seit die Remote-Agent-PIN generiert wurde, führen Sie die Schritte unter [Generate a new security PIN](#GeneratePIN) auf dem Mac aus, und versuchen Sie es dann erneut. Versuchen Sie bei Verwendung der Hostname Ihres Macs stattdessen mit der IP-Adresse im Feld **Hostname** .  
   
-8.  Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm** , um den Ordner in Ihrem Stammverzeichnis (~) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent "/Users/`username`/vcremote" als Remotestamm.  
+8. Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm** , um den Ordner in Ihrem Stammverzeichnis (~) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent "/Users/`username`/vcremote" als Remotestamm.  
   
 9. Wählen Sie **OK** aus, um die Verbindungseinstellungen für die Remotekopplung zu speichern.  
   
- Visual Studio verwendet jedes Mal dieselben Information, um die Verbindung mit dem Remote-Agent auf Ihrem Mac herzustellen. Es ist nicht erforderlich, Visual Studio erneut mit dem Remote-Agent zu koppeln, es sei denn, Sie generieren ein neues Sicherheitszertifikat auf Ihrem Mac oder ändern dessen Hostnamen oder IP-Adresse.  
+   Visual Studio verwendet jedes Mal dieselben Information, um die Verbindung mit dem Remote-Agent auf Ihrem Mac herzustellen. Es ist nicht erforderlich, Visual Studio erneut mit dem Remote-Agent zu koppeln, es sei denn, Sie generieren ein neues Sicherheitszertifikat auf Ihrem Mac oder ändern dessen Hostnamen oder IP-Adresse.  
   
 ##  <a name="GeneratePIN"></a> Generate a new security PIN  
  Wenn Sie den Remote-Agent erstmals starten, ist die generierte PIN für einen begrenzten Zeitraum (standardmäßig 10 Minuten) gültig. Wenn Sie Visual Studio nicht vor Ablauf dieses Zeitraums mit dem Remote-Agent koppeln, müssen Sie eine neue PIN generieren.  

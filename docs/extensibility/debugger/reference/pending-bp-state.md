@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae632ab67a21d795a0594d37301c162c1c4ba753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30e70c956afc6aef5025d35425fbc2ee42605b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921060"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
-Gibt den Zustand eines ausstehenden Haltepunkts (einen Haltepunkt, die noch nicht gebunden).  
+Gibt den Status eines ausstehenden Haltepunkts (einen Haltepunkt, die noch nicht gebunden ist).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,16 +48,16 @@ public enum enum_PENDING_BP_STATE {
   
 ## <a name="members"></a>Member  
  PBPS_NONE  
- Platzhalter für 0 (null). Dieser Wert wird niemals zurückgegeben.  
+ Platzhalter für 0 (null). Dieser Wert wird nie zurückgegeben.  
   
  PBPS_DELETED  
- Gibt an, dass die ausstehende Haltepunkt gelöscht wurde.  
+ Gibt an, dass es sich bei der ausstehenden Haltepunkt gelöscht wurde.  
   
  PBPS_DISABLED  
- Gibt an, dass die ausstehende Haltepunkt deaktiviert ist.  
+ Gibt an, dass der ausstehenden Haltepunkt deaktiviert ist.  
   
  PBPS_ENABLED  
- Gibt an, dass die ausstehende Breakpoint aktiviert ist.  
+ Gibt an, dass es sich bei der ausstehenden Haltepunkt aktiviert ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Verwenden Sie als die `state` Mitglied der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Struktur.  

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d186ce9ab14cc43b40d9f3fa788cc03a0e4e461c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1fe8709d6bb94c1437f03c4bd0c5b8b368d05b21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934911"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssicherheits-Einschränkungen. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von ClickOnce-Anwendungen anwenden.  
@@ -40,14 +40,14 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 ## <a name="default-clickonce-code-access-security"></a>Standardmäßige ClickOnce-Codezugriffssicherheit  
  Standardmäßig erhält eine ClickOnce-Anwendung "Voll vertrauenswürdig"-Berechtigungen, wenn sie auf einem Clientcomputer installiert oder ausgeführt wird.  
   
--   Eine Anwendung, die "Voll vertrauenswürdig"-Berechtigungen hat, hat uneingeschränkten Zugriff auf Ressourcen wie das Dateisystem und die Registrierung. Dadurch kann es passieren, dass Ihre Anwendung (und das System des Endbenutzers) durch bösartigen Code ausgenutzt wird.  
+- Eine Anwendung, die "Voll vertrauenswürdig"-Berechtigungen hat, hat uneingeschränkten Zugriff auf Ressourcen wie das Dateisystem und die Registrierung. Dadurch kann es passieren, dass Ihre Anwendung (und das System des Endbenutzers) durch bösartigen Code ausgenutzt wird.  
   
--   Wenn eine Anwendung "Voll vertrauenswürdig"-Berechtigungen erfordert, wird ein Endbenutzer möglicherweise aufgefordert, Berechtigungen für die Anwendung zu gewähren. Dies bedeutet, dass die Anwendung keine wirkliche ClickOnce-Bedienung bereitstellt, und die Eingabeaufforderung kann für weniger erfahrene Benutzer verwirrend sein.  
+- Wenn eine Anwendung "Voll vertrauenswürdig"-Berechtigungen erfordert, wird ein Endbenutzer möglicherweise aufgefordert, Berechtigungen für die Anwendung zu gewähren. Dies bedeutet, dass die Anwendung keine wirkliche ClickOnce-Bedienung bereitstellt, und die Eingabeaufforderung kann für weniger erfahrene Benutzer verwirrend sein.  
   
-    > [!NOTE]
-    >  Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von vertrauenswürdigen Anwendung](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von vertrauenswürdigen Anwendung](../deployment/trusted-application-deployment-overview.md).  
   
- Um die Berechtigungen für eine ClickOnce-Anwendung einzuschränken, können Sie die Codezugriffsberechtigungen für Ihre Anwendung so ändern, dass sie die Zone anfordert, die am besten für die Berechtigungen geeignet ist, die Ihre Anwendung erfordert. In den meisten Fällen können Sie die Zone auswählen, aus der die Anwendung bereitgestellt wird. Ist Ihre Anwendung beispielsweise eine Unternehmensanwendung, können Sie die Zone **Lokales Intranet** verwenden. Ist Ihre Anwendung eine Internetanwendung, können Sie die Zone **Internet** verwenden.  
+  Um die Berechtigungen für eine ClickOnce-Anwendung einzuschränken, können Sie die Codezugriffsberechtigungen für Ihre Anwendung so ändern, dass sie die Zone anfordert, die am besten für die Berechtigungen geeignet ist, die Ihre Anwendung erfordert. In den meisten Fällen können Sie die Zone auswählen, aus der die Anwendung bereitgestellt wird. Ist Ihre Anwendung beispielsweise eine Unternehmensanwendung, können Sie die Zone **Lokales Intranet** verwenden. Ist Ihre Anwendung eine Internetanwendung, können Sie die Zone **Internet** verwenden.  
   
 ## <a name="configure-security-permissions"></a>Konfigurieren von Sicherheitsberechtigungen  
  Sie sollten Ihre ClickOnce-Anwendung immer so konfigurieren, dass sie die entsprechende Zone anfordert, um die Codezugriffsberechtigungen zu beschränken. Sie können Sicherheitsberechtigungen im **Projekt-Designer** auf der Seite **Sicherheit**konfigurieren.  
@@ -74,23 +74,23 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Sicherheitsberechtigungen für im Browser gehostete Anwendungen  
  Visual Studio bietet die folgenden Projekttypen für WPF-Anwendungen (Windows Presentation Foundation):  
   
--   WPF-Windows-Anwendung  
+- WPF-Windows-Anwendung  
   
--   WPF-Webbrowseranwendung  
+- WPF-Webbrowseranwendung  
   
--   WPF-Benutzerdefinierte Steuerelementbibliothek  
+- WPF-Benutzerdefinierte Steuerelementbibliothek  
   
--   WPF-Dienstbibliothek  
+- WPF-Dienstbibliothek  
   
- Da nur WPF-Webbrowseranwendungen in einem Webbrowser gehostet werden, erfordert nur dieser Projekttyp spezielle Bereitstellungs- und Sicherheitseinstellungen. Die Standardsicherheitseinstellungen für diese Anwendungen sind wie folgt:  
+  Da nur WPF-Webbrowseranwendungen in einem Webbrowser gehostet werden, erfordert nur dieser Projekttyp spezielle Bereitstellungs- und Sicherheitseinstellungen. Die Standardsicherheitseinstellungen für diese Anwendungen sind wie folgt:  
   
--   **ClickOnce-Sicherheitseinstellungen aktivieren**  
+- **ClickOnce-Sicherheitseinstellungen aktivieren**  
   
--   **Teilweise vertrauenswürdige Anwendung**  
+- **Teilweise vertrauenswürdige Anwendung**  
   
--   **Internetzone** (mit ausgewähltem Standardberechtigungssatz für WPF-Webbrowseranwendungen)  
+- **Internetzone** (mit ausgewähltem Standardberechtigungssatz für WPF-Webbrowseranwendungen)  
   
- Im Dialogfeld **Erweiterte Sicherheitseinstellungen** ist das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz debuggen** ausgewählt und deaktiviert. Ursache hierfür ist, dass für im Browser gehostete Anwendungen Debuggen in einer Zone nicht deaktiviert werden kann.  
+  Im Dialogfeld **Erweiterte Sicherheitseinstellungen** ist das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz debuggen** ausgewählt und deaktiviert. Ursache hierfür ist, dass für im Browser gehostete Anwendungen Debuggen in einer Zone nicht deaktiviert werden kann.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   

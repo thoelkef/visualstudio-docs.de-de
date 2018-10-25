@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4805c3b9ceb62dbc790af7b1191a13476c27c9a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951378"
 ---
 # <a name="how-to-get-a-service"></a>Gewusst wie: Abrufen eines Diensts
 Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu erhalten. Im Allgemeinen bietet Visual Studio-Dienst eine oder mehrere Schnittstellen, die Sie verwenden können. Sie können die meisten Dienste aus einem VSPackage abrufen.  
@@ -29,24 +29,24 @@ Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu 
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Abrufen eines Diensts aus einer initialisierten VSPackage  
   
-1.  Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `GetServiceExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.  
+1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `GetServiceExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.  
   
-2.  Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **GetServiceCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *GetServiceCommand.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **GetServiceCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *GetServiceCommand.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  In *GetServiceCommand.cs*, entfernen Sie den Text, der die `MenuItemCommand` Methode, und fügen Sie den folgenden Code hinzu:  
+3. In *GetServiceCommand.cs*, entfernen Sie den Text, der die `MenuItemCommand` Methode, und fügen Sie den folgenden Code hinzu:  
   
-    ```csharp  
-    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
-    if (activityLog == null) return;  
-    System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
+   ```csharp  
+   IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
+   if (activityLog == null) return;  
+   System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
   
-    ```  
+   ```  
   
-     Dieser Code Ruft eine SVsActivityLog-Dienst ab und wandelt es diesen auf eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> -Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).  
+    Dieser Code Ruft eine SVsActivityLog-Dienst ab und wandelt es diesen auf eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> -Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
-5.  Auf der **Tools** finden Sie im Menü der experimentellen Instanz den **aufrufen GetServiceCommand** Schaltfläche. Wenn Sie diese Schaltfläche klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **der Ereignisprotokolldienst Aktivität gefunden.**  
+5. Auf der **Tools** finden Sie im Menü der experimentellen Instanz den **aufrufen GetServiceCommand** Schaltfläche. Wenn Sie diese Schaltfläche klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **der Ereignisprotokolldienst Aktivität gefunden.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Abrufen eines Diensts aus einem Werkzeugcontainer Fensters oder Steuerelements  
  Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus.  

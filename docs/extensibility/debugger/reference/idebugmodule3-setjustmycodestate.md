@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
+title: IDebugModule3::SetJustMyCodeState | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ebb6e9b8f289d3a5fe1a9c34095b99c738d8f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b029c1c5209e752776e1cdf8a97fecdcc5bea10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888592"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Markiert das Modul als Benutzercode oder nicht.  
@@ -41,10 +41,10 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Parameter  
  `fIsUserCode`  
- [in] Ungleich Null (`TRUE`), wenn das Modul als Benutzercode angesehen werden soll, 0 (`FALSE`) Wenn nicht enthalten sein sollen.  
+ [in] Ungleich Null (`TRUE`), wenn das Modul als Benutzercode angesehen werden sollte, NULL (`FALSE`) Wenn nicht.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

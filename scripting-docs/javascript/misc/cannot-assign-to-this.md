@@ -1,5 +1,5 @@
 ---
-title: Kann nicht zuweisen &#39; dies &#39; | Microsoft Docs
+title: Nicht zugewiesen &#39;dies&#39; | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,31 +20,32 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c164b9b7d2989076a9dc0ef0bafba6159bc08885
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47e55d39e85675b37d2ac9741d1207a9e81d369e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856647"
 ---
-# <a name="cannot-assign-to-39this39"></a>Kann nicht zuweisen &#39; dies &#39;
-Sie haben versucht, einen Wert zuzuweisen **dies**. **Dies** ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Schlüsselwort, das entweder verweist:  
-  
--   das Objekt derzeit Ausführen einer Methode  
-  
--   das globale Objekt, wenn keine aktuelle Methode vorhanden ist (oder die Methode nicht zu jedem anderen Objekt gehört).  
-  
- Eine Methode ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Funktion, die über ein Objekt aufgerufen wird. Innerhalb einer Methode der **dies** Schlüsselwort ist ein Verweis auf das Objekt über die Methode aufgerufen wurde (die geschieht, um das Objekt durch Aufrufen des Klassenkonstruktors mit erstellt werden die **neue** Operator).  
-  
- Sie können innerhalb einer Methode verwenden **dies** zum Verweisen auf das aktuelle Objekt, aber Sie können nicht auf einen neuen Wert zuweisen **dies**.  
-  
-### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
-  
--   Versuchen Sie nicht zuzuweisende **dies**. Um eine Eigenschaft oder Methode eines instanziierten Objekts zuzugreifen, verwenden Sie den Punktoperator (z. B. circle **.** RADIUS).  
-  
-    > [!NOTE]
-    >  Sie können nicht den Namen einer benutzerdefinierten Variablen **dies**; es ist ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] reservierten Wort.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Diese Anweisung](../../javascript/reference/this-statement-javascript.md)   
- [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+# <a name="cannot-assign-to-39this39"></a>Nicht zugewiesen &#39;dies&#39;
+Sie haben versucht, einen Wert zuzuweisen **dies**. **Dies** ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Schlüsselwort, das entweder verweist:
+
+- das Objekt derzeit Ausführen einer Methode
+
+- das globale Objekt, wenn keine aktuelle Methode vorhanden ist (oder die Methode nicht mit jedem anderen Objekt gehört).
+
+Eine Methode ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Funktion, die durch ein Objekt aufgerufen wird. Innerhalb einer Methode die **dies** Schlüsselwort ist ein Verweis auf das Objekt über die Methode aufgerufen wurde (dies der Fall. um das Objekt erstellt, durch den Aufruf des Klassenkonstruktors mit der **neue** Operator).
+
+Innerhalb einer Methode, können Sie **dies** zum Verweisen auf das aktuelle Objekt, aber Sie können keinen neuen Wert zuweisen **dies**.
+
+## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
+
+- Versuchen Sie nicht zuweisen **dies**. Zugriff auf eine Eigenschaft oder Methode eines instanziierten Objekts verwenden Sie den Punktoperator (z. B. **circle.radius**).
+
+  > [!NOTE]
+  > Sie können nicht den Namen einer Variablen benutzererstellte **dies**; es ist ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] reserviertes Wort.
+
+## <a name="see-also"></a>Siehe auch
+
+- [this-Anweisung](../../javascript/reference/this-statement-javascript.md)
+- [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

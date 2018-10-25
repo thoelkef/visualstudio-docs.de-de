@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939552"
 ---
 # <a name="project-type-design-decisions"></a>Entwurfsentscheidungen bei Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie einige entwurfsentscheid
   
  Sie haben mehrere Optionen, um in Bezug auf Dauerhaftigkeit für die Elemente in Ihrem Projekt berücksichtigen. Sie können eine der folgenden Optionen ausführen:  
   
--   Speichern Sie jede Datei einzeln aus, wenn es geändert wurde.  
+- Speichern Sie jede Datei einzeln aus, wenn es geändert wurde.  
   
--   Erfassen Sie viele Transaktionen in einem einzelnen **speichern** Vorgang.  
+- Erfassen Sie viele Transaktionen in einem einzelnen **speichern** Vorgang.  
   
--   Speichern Sie Dateien lokal, und klicken Sie dann auf einem Server veröffentlichen Sie, oder verwenden Sie ein weiteres Verfahren zum Speichern von Projektelementen, wenn das Element eine Verbindung mit einem Remoteobjekt darstellt.  
+- Speichern Sie Dateien lokal, und klicken Sie dann auf einem Server veröffentlichen Sie, oder verwenden Sie ein weiteres Verfahren zum Speichern von Projektelementen, wenn das Element eine Verbindung mit einem Remoteobjekt darstellt.  
   
- Weitere Informationen zu Persistenz finden Sie unter [Projektpersistenz](../../extensibility/internals/project-persistence.md) und [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Weitere Informationen zu Persistenz finden Sie unter [Projektpersistenz](../../extensibility/internals/project-persistence.md) und [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Engagement-Projektmodell  
  Persistente Datenobjekte geöffnet werden im direkten Modus oder im transaktiven Modus?  

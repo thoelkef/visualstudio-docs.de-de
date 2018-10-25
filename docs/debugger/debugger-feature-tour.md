@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882665"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf die Visual Studio-Debugger
 
@@ -188,7 +188,7 @@ In diesem Beispiel die `DirectoryInfo` Aufruf hat den Fehler, auf die leere Zeic
 
 Die Ausnahmen-Hilfe ist eine großartige Funktion, die Sie das Debuggen von Fehlern unterstützen. Sie können auch Dinge wie Ansicht Fehlerdetails und Hinzufügen einer Überwachung aus der Ausnahme-Hilfe. Oder, bei Bedarf können Sie Bedingungen für eine bestimmte Ausnahme ändern.
 
->  [!NOTE]
+> [!NOTE]
 > Die Ausnahmen-Hilfe, ersetzt der Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Erweitern Sie die **Ausnahmeeinstellungen** Knoten finden weitere Möglichkeiten zum Behandeln dieser Ausnahmetyp, aber Sie müssen nicht alles für diesen Überblick zu ändern.

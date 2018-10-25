@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812321"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
   
  Drei Fälle werden unterschieden:  
   
--   Das Ziel weist ein `Condition`-Attribut auf, das zu `false` ausgewertet wird. In diesem Fall wird das Ziel nicht ausgeführt, und hat keine Auswirkungen auf den Build.  
+- Das Ziel weist ein `Condition`-Attribut auf, das zu `false` ausgewertet wird. In diesem Fall wird das Ziel nicht ausgeführt, und hat keine Auswirkungen auf den Build.  
   
--   Das Ziel weist veraltete Ausgaben auf und wird ausgeführt, um diese auf den aktuellen Stand zu bringen.  
+- Das Ziel weist veraltete Ausgaben auf und wird ausgeführt, um diese auf den aktuellen Stand zu bringen.  
   
--   Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.  
+- Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.  
   
- Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:  
+  Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:  
   
 ```  
 <CreateProperty Value="123">  

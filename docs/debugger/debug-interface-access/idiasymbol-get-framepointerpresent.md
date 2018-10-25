@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_framepointerpresent | Microsoft Docs'
+title: 'Idiasymbol:: Get_framepointerpresent | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bee723194914775a77334641ed9bae4a33ec268e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 283674d2bccc81d409db59df04631240e78000cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846212"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Ruft ein Flag, das angibt, ob die Frame-Pointer vorhanden ist. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) festgelegt ist, um `SymTagFunction`.  
+Ruft ein Flag, das angibt, ob der Frame-Pointer vorhanden ist. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_framePointerPresent(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out]] Gibt `TRUE` gibt zurück, wenn der Frame-Pointer vorhanden ist; andernfalls ist, `FALSE`.  
+ [out]] Gibt `TRUE` gibt zurück, wenn der Frame-Pointer vorhanden, andernfalls ist, `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
   

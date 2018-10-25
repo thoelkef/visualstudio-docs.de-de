@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628cddc126e9617c918bf0d6f47c8fae46c09c0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa59d97cb95309f6a291d3c17ffee431cd596be3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822279"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Diese Methode ruft das Feld, das einen Namen für vollständig qualifizierte Methode darstellt.  
+Diese Methode ruft das Feld, das einen vollqualifizierten Methodennamen darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,19 +45,19 @@ int GetMethodFieldsByName(
   
 #### <a name="parameters"></a>Parameter  
  `pszFullName`  
- [in] Der Methodenname.  
+ [in] Name der Methode.  
   
  `nameMatch`  
  [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumerator für die Felder, die dieser Methode zugeordnet.  
+ [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumerator für die Felder, die mit dieser Methode verknüpft.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Methode kann mehrere Felder zugeordnet werden, wenn dieser überlastet ist, z. B.  
+ Eine Methode kann mit mehreren Feldern zugewiesen werden, wenn dieser überlastet ist, z. B.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867233"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  **Manifest**  
  Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter Benutzerkontensteuerung (UAC) ausgeführt wird. Diese Option kann die folgenden Werte aufweisen:  
   
--   **Manifest mit Standardeinstellungen einbetten**. Unterstützt die normale Vorgehensweise von Visual Studio unter Windows Vista, bei der durch Einbetten der Sicherheitsinformationen in die ausführbare Datei der Anwendung angegeben wird, dass `requestedExecutionLevel` `AsInvoker` sein soll. Dies ist die Standardoption.  
+- **Manifest mit Standardeinstellungen einbetten**. Unterstützt die normale Vorgehensweise von Visual Studio unter Windows Vista, bei der durch Einbetten der Sicherheitsinformationen in die ausführbare Datei der Anwendung angegeben wird, dass `requestedExecutionLevel` `AsInvoker` sein soll. Dies ist die Standardoption.  
   
--   **Anwendung ohne Manifest erstellen**. Diese Methode wird auch als *Virtualisierung* bezeichnet. Verwenden Sie diese Option, wenn Kompatibilität mit früheren Anwendungen erforderlich ist.  
+- **Anwendung ohne Manifest erstellen**. Diese Methode wird auch als *Virtualisierung* bezeichnet. Verwenden Sie diese Option, wenn Kompatibilität mit früheren Anwendungen erforderlich ist.  
   
--   **Properties\app.manifest**. Diese Option ist für Anwendungen erforderlich, die über ClickOnce oder COM ohne Registrierung bereitgestellt wurden. Wenn Sie eine Anwendung über ClickOnce-Bereitstellung veröffentlichen, wird **Manifest** automatisch auf diese Option festgelegt.  
+- **Properties\app.manifest**. Diese Option ist für Anwendungen erforderlich, die über ClickOnce oder COM ohne Registrierung bereitgestellt wurden. Wenn Sie eine Anwendung über ClickOnce-Bereitstellung veröffentlichen, wird **Manifest** automatisch auf diese Option festgelegt.  
   
- **Ressourcendatei**  
- Markieren Sie dieses Optionsfeld, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.  
+  **Ressourcendatei**  
+  Markieren Sie dieses Optionsfeld, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.  
   
- Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen (**...**), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.  
+  Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen (**...**), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md)  

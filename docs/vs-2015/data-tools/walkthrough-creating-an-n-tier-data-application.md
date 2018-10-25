@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890178"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
   
  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Schritte aus:  
   
--   Erstellen einer neuen N-Tier-Projektmappe, die mehrere Projekte enthält.  
+- Erstellen einer neuen N-Tier-Projektmappe, die mehrere Projekte enthält.  
   
--   Hinzufügen von zwei Klassenbibliotheksprojekten zur N-Tier-Projektmappe.  
+- Hinzufügen von zwei Klassenbibliotheksprojekten zur N-Tier-Projektmappe.  
   
--   Erstellen eines typisierten Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**.  
+- Erstellen eines typisierten Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**.  
   
--   Trennen von generierten [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Code in einzelne Projekte.  
+- Trennen von generierten [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Code in einzelne Projekte.  
   
--   Erstellen eines WCF (Windows Communication Foundation)-Diensts für Aufrufe an die Datenzugriffsebene.  
+- Erstellen eines WCF (Windows Communication Foundation)-Diensts für Aufrufe an die Datenzugriffsebene.  
   
--   Erstellen von Dienstfunktionen, um Daten von der Datenzugriffsebene abzurufen.  
+- Erstellen von Dienstfunktionen, um Daten von der Datenzugriffsebene abzurufen.  
   
--   Erstellen einer Windows Forms-Anwendung, die als Präsentationsebene dient.  
+- Erstellen einer Windows Forms-Anwendung, die als Präsentationsebene dient.  
   
--   Erstellen von Windows Forms-Steuerelementen, die an die Datenquelle gebunden werden.  
+- Erstellen von Windows Forms-Steuerelementen, die an die Datenquelle gebunden werden.  
   
--   Schreiben von Code zum Füllen der Datentabellen.  
+- Schreiben von Code zum Füllen der Datentabellen.  
   
- ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") eine Videoversion dieses Themas finden Sie unter [Video How to: Erstellen einer N-Tier-Datenanwendung](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") eine Videoversion dieses Themas finden Sie unter [Video How to: Erstellen einer N-Tier-Datenanwendung](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
@@ -144,17 +144,17 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>So trennen Sie die TableAdapter vom DataSet  
   
-1.  Doppelklicken Sie auf **NorthwindDataSet.xsd** in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.  
+1. Doppelklicken Sie auf **NorthwindDataSet.xsd** in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.  
   
-2.  Klicken Sie im Designer auf einen leeren Bereich.  
+2. Klicken Sie im Designer auf einen leeren Bereich.  
   
-3.  Suchen Sie die **DataSet-Projekt** Knoten in der **Eigenschaften** Fenster.  
+3. Suchen Sie die **DataSet-Projekt** Knoten in der **Eigenschaften** Fenster.  
   
-4.  In der **DataSet-Projekt** auf **DataEntityTier**.  
+4. In der **DataSet-Projekt** auf **DataEntityTier**.  
   
-5.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
- DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem ursprünglich das gesamte DataSet (DataAccessTier) enthalten war, enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** -Eigenschaft (DataEntityTier) enthält das typisierte Dataset: NorthwindDataSet.Dataset.Designer.vb (oder NorthwindDataSet.Dataset.Designer.cs).  
+   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem ursprünglich das gesamte DataSet (DataAccessTier) enthalten war, enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** -Eigenschaft (DataEntityTier) enthält das typisierte Dataset: NorthwindDataSet.Dataset.Designer.vb (oder NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), werden vorhandene partielle Dataset-Klassen im Projekt nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.  

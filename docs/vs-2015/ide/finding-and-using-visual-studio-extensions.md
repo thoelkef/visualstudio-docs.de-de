@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831132"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Visual Studio-Extensions sind Codepakete, die innerhalb von Visual Studio ausgef
 ## <a name="sample-master-copies-and-working-copies"></a>Beispielmasterkopien und -arbeitskopien  
  Bei Installation eines Onlinebeispiels wird die Projektmappe an zwei Orten gespeichert:  
   
--   Eine Arbeitskopie wird an dem Speicherort gespeichert, den Sie im Dialogfeld **Neues Projekt** angegeben haben.  
+- Eine Arbeitskopie wird an dem Speicherort gespeichert, den Sie im Dialogfeld **Neues Projekt** angegeben haben.  
   
--   Eine separate Masterkopie wird auf dem Computer gespeichert.  
+- Eine separate Masterkopie wird auf dem Computer gespeichert.  
   
- Sie können das Dialogfeld **Erweiterungen und Updates** dazu verwenden, die folgenden auf Beispiele bezogenen Aufgaben auszuführen:  
+  Sie können das Dialogfeld **Erweiterungen und Updates** dazu verwenden, die folgenden auf Beispiele bezogenen Aufgaben auszuführen:  
   
--   Auflisten der Masterkopien der installierten Beispiele  
+- Auflisten der Masterkopien der installierten Beispiele  
   
--   Deaktivieren oder deinstallieren der Masterkopie eines Beispiels  
+- Deaktivieren oder deinstallieren der Masterkopie eines Beispiels  
   
--   Installieren von Beispielpacks, die Auflistungen von Beispielen zu einer Technologie oder Funktion sind  
+- Installieren von Beispielpacks, die Auflistungen von Beispielen zu einer Technologie oder Funktion sind  
   
--   Installieren individueller Onlinebeispiele (Sie können dies im Dialogfeld **Neues Projekt** ausführen.)  
+- Installieren individueller Onlinebeispiele (Sie können dies im Dialogfeld **Neues Projekt** ausführen.)  
   
--   Anzeigen von Updatebenachrichtigungen, wenn für installierte Quellcodeänderungen Beispiele veröffentlicht werden  
+- Anzeigen von Updatebenachrichtigungen, wenn für installierte Quellcodeänderungen Beispiele veröffentlicht werden  
   
--   Aktualisieren Sie die Masterkopie eines installierten Beispiels, wenn Sie über ein Update benachrichtigt werden.  
+- Aktualisieren Sie die Masterkopie eines installierten Beispiels, wenn Sie über ein Update benachrichtigt werden.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installieren ohne das Dialogfeld "Erweiterungen und Updates"  
  Erweiterungen, die in VSIX-Dateien gepackt wurden, sind möglicherweise an anderen Orten als in der Visual Studio Gallery verfügbar. Diese Dateien können mithilfe des Dialogfelds **Extensions und Updates** nicht erkannt werden, Sie können eine VSIX-Datei aber installieren, indem Sie auf die Datei doppelklicken oder sie auswählen und die EINGABETASTE drücken. Befolgen Sie dann die angezeigten Anweisungen. Wenn die Erweiterung installiert ist, können Sie das Dialogfeld **Erweiterungen und Updates** zum Aktivieren, Deaktivieren oder Deinstallieren der Erweiterung verwenden.  

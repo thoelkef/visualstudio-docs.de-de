@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920676"
 ---
 # <a name="start-view"></a>Ausgangsansicht
 
@@ -29,20 +29,20 @@ Die Ausgangsansicht enthält zwei Hauptabschnitte der *Wasserzeichen* und **Deta
 
 Der wasserzeichenbereich enthält eine Liste mit Links zu allen dem XSD-Designer-Ansichten, XML-Editor, und **XML-Schema-Explorer**. Wenn das Schemaset Fehler enthält, wird der folgende Text am Ende der Liste angezeigt: "Verwenden Sie die Fehlerliste, um die Fehler im Schemaset anzuzeigen und zu beheben."
 
-## <a name="schema-set-details"></a>Details des Schemasets
+## <a name="schema-set-details"></a>Details-Schemaset
 
-Die **Details zum Schemaset** Bereich listet die globalen Schemaknotentypen und zeigt an wie viele Instanzen jedes Typs im Schema vorhanden sind. Sie können die **hinzufügen** Links neben den Knotentypen, zum Hinzufügen von neuer Knoten im Arbeitsbereich "".
+Die **Details zum Schemaset** Bereich enthält die globalen Schemaknotentypen und zeigt an wie viele Instanzen jedes Typs im Schema vorhanden sind. Sie können die **hinzufügen** Links neben den Knotentypen, mit dem Arbeitsbereich neue Knoten hinzufügen.
 
 ## <a name="toolbar"></a>Symbolleiste
 
-Sie können zwischen der Ausgangsansicht, Navigieren der [Inhaltsmodellansicht](../xml-tools/content-model-view.md) und die [Diagrammansicht](../xml-tools/graph-view.md) aus der XML-Schema-Designer-Symbolleiste.
+Sie können zwischen der Ausgangsansicht, navigieren die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) und [Diagrammansicht](../xml-tools/graph-view.md) aus der XML-Schema-Designer-Symbolleiste.
 
 ![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Die folgenden Schaltflächen sind auf der XSD-Designer-Symbolleiste aktiviert, wenn die Ausgangsansicht aktiv ist:
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Ausgangsansicht anzeigen**|Wechselt zur Ausgangsansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**1**.|
 |**Inhaltsmodellansicht anzeigen**|Wechselt zur Inhaltsmodellansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**2**.|
 |**Diagrammansicht anzeigen**|Wechselt zur Diagrammansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**3**.|

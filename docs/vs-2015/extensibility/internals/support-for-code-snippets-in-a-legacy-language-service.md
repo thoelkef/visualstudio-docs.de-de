@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847791"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  Wenn der Sprachdienst den Verknüpfungsnamen abruft, ruft er die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> Methode, um den Dateinamen und den Code Snippet Titel abzurufen. Der Sprachdienst ruft dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse, um den Codeausschnitt einzufügen. Die folgenden Methoden werden von Visual Studio aufgerufen, in der angegebenen Reihenfolge in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse während des Prozesses, der den Ausschnitt eingefügt:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Weitere Informationen zum Abrufen einer Liste der installierten Codeausschnitte für den Sprachdienst, finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Weitere Informationen zum Abrufen einer Liste der installierten Codeausschnitte für den Sprachdienst, finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementieren der ExpansionFunction-Klasse  
  Eine Erweiterungsfunktion ist eine benannte Funktion, die in einem Ausschnittvorlage eingebettet ist, und gibt einen oder mehrere Werte in einem Feld platziert werden. Um Erweiterungsfunktionen in den Sprachdienst zu unterstützen, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse und Implementieren der <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> Methode. Dann müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer neuen Instanziierung von Ihrer Version von der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse für jede Erweiterungsfunktion, die Sie unterstützen. Wenn Sie eine Liste der möglichen Werte aus einer Erweiterungsfunktion unterstützen, müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse um eine Liste dieser Werte zurückzugeben.  

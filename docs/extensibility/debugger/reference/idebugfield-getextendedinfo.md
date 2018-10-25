@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63bf182e4e8b17133fbefd4f4a19c4b8b4a458e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896042"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Diese Methode ruft Informationen zu einem Feld erweitert.  
+Diese Methode ruft Informationen über ein Feld erweitert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ int GetExtendedInfo(
   
 #### <a name="parameters"></a>Parameter  
  `guidExtendedInfo`  
- [in] Wählt die Informationen zurückgegeben werden sollen. Gültige Werte sind:  
+ [in] Wählt die Informationen zurückgegeben werden. Gültige Werte sind:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -56,13 +56,13 @@ int GetExtendedInfo(
  [out] Gibt den erweiterten Informationen zurück.  
   
  `pdwLen`  
- [in, out] Gibt die Größe der erweiterten Informationen in Bytes zurück.  
+ [in, out] Gibt die Größe der erweiterten Informationen, in Bytes zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Derzeit gibt diese Methode nur den Typ oder den Wert einer Konstante. Der Aufrufer muss im zurückgegebenen Puffers freigeben `prgBuffer` durch den Aufruf von COM `CoTaskMemFree` Funktion (C++) oder <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).  
+ Derzeit gibt diese Methode auf, nur den Typ oder Wert einer Konstante. Der Aufrufer muss im zurückgegebenen Puffers freigeben `prgBuffer` durch Aufrufen von COM `CoTaskMemFree` Funktion (C++) oder <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

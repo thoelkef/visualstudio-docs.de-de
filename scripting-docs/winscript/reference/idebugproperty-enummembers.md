@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Microsoft Docs
+title: IDebugProperty::EnumMembers | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924238"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Listet die Elemente einer Eigenschaft an.  
+Listet die Member einer Eigenschaft.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,19 +41,19 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Gibt an, die `DBGPROP_INFO_FLAGS` Konstanten, die bestimmt, welche Felder in den Strukturen des enumerierten Debug-Eigenschaft ausgefüllt werden müssen.  
+ [in] Gibt an, die `DBGPROP_INFO_FLAGS` Konstanten, die bestimmt, welche Felder in den Strukturen der aufgelisteten Debug-Eigenschaft ausgefüllt werden müssen.  
   
  `nRadix`  
- [in] Basis interpretieren alle numerischen Daten verwendet werden sollen.  
+ [in] Die Basis zum Interpretieren von numerische Informationen verwendet werden.  
   
  `refiid`  
- [in] Diese IID wird übergeben, der zum Filtern des Enumerators. Die IID ist eines der `IDebugPropertyEnumType` Schnittstellen, die von erben `IDebugPropertyEnumType_All`.  
+ [in] Diese IID wird für das Filtern des Enumerators übergeben. Die IID ist eines der `IDebugPropertyEnumType` Schnittstellen, die von erben `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
  [out] Gibt die `IEnumDebugPropertyInfo` -Schnittstelle, die die Elementeigenschaften zählt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT`, in der Regel `S_OK`.  
+ Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   

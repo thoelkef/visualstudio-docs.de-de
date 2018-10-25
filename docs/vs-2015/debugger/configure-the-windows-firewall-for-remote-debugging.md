@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935392"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird die Konfiguration der Firewall für das Remotedebuggen auf Computern mit folgenden Betriebssystemen beschrieben:  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- Wenn das Netzwerk, in dem Sie debuggen, nicht durch eine Firewall geschützt ist, ist diese Konfiguration nicht erforderlich. Andernfalls müssen auf dem Computer, auf dem Visual Studio gehostet wird, und auf dem Remotecomputer, auf dem das Debuggen erfolgen soll, Änderungen an der Konfiguration der Firewall vorgenommen werden.  
+  Wenn das Netzwerk, in dem Sie debuggen, nicht durch eine Firewall geschützt ist, ist diese Konfiguration nicht erforderlich. Andernfalls müssen auf dem Computer, auf dem Visual Studio gehostet wird, und auf dem Remotecomputer, auf dem das Debuggen erfolgen soll, Änderungen an der Konfiguration der Firewall vorgenommen werden.  
   
- **IPSec** Wenn Ihr Netzwerk eine Kommunikation mit IPSec erfordert, müssen Sie auf dem Visual Studio-Hostcomputer und dem Remotecomputer zusätzliche Ports öffnen.  
+  **IPSec** Wenn Ihr Netzwerk eine Kommunikation mit IPSec erfordert, müssen Sie auf dem Visual Studio-Hostcomputer und dem Remotecomputer zusätzliche Ports öffnen.  
   
- **Webserver** Wenn Sie einen Remotewebserver debuggen, müssen Sie auf dem Remotecomputer einen zusätzlichen Port öffnen.  
+  **Webserver** Wenn Sie einen Remotewebserver debuggen, müssen Sie auf dem Remotecomputer einen zusätzlichen Port öffnen.  
   
- Auf den beiden Computern muss nicht das gleiche Betriebssystem ausgeführt werden. Auf dem Visual Studio-Computer kann beispielsweise Windows 10 und auf dem Remotecomputer Windows Server 2012 R2 ausgeführt werden.  
+  Auf den beiden Computern muss nicht das gleiche Betriebssystem ausgeführt werden. Auf dem Visual Studio-Computer kann beispielsweise Windows 10 und auf dem Remotecomputer Windows Server 2012 R2 ausgeführt werden.  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>So konfigurieren Sie die Windows-Firewall auf dem Visual Studio-Computer  
  Die Anweisungen zum Konfigurieren der Windows-Firewall unterscheiden sich geringfügig bei den verschiedenen Betriebssystemen. Bei Windows 7 oder Windows Server 2008 wird das Wort **Programm** verwendet, bei Windows 8/8.1, Windows 10 und Windows Server 2012 wird das Wort **App** verwendet.  In den folgenden Schritten verwenden wir das Wort **App**.  

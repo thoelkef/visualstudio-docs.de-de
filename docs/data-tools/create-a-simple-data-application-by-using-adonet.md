@@ -13,23 +13,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891010"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
 
 Wenn Sie eine Anwendung, die Daten in einer Datenbank bearbeitet erstellen, führen Sie grundlegende Aufgaben wie z. B. das Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen von gespeicherten Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
 
- Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.
+Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.
 
 > [!IMPORTANT]
 > Zur Vereinfachung des Codes Ausnahmebehandlung nicht sie produktionsbereite.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Erstellen der Anwendung benötigen Sie:
 
@@ -65,29 +65,29 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 
 ## <a name="create-the-forms-and-add-controls"></a>Die Formulare erstellen und Steuerelemente hinzufügen
 
-1.  Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie **SimpleDataApp**.
+1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie **SimpleDataApp**.
 
-     Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars mit dem Namen **Form1**.
+    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars mit dem Namen **Form1**.
 
-2.  Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
+2. Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
 
-    -   **Navigation**
+   -   **Navigation**
 
-    -   **"NewCustomer"**
+   -   **"NewCustomer"**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.
+3. Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.
 
-    > [!NOTE]
-    >  Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.
+   > [!NOTE]
+   > Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.
 
- **Navigationsformular**
+   **Navigationsformular**
 
- ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png)
+   ![Dialogfeld "Navigation"](../data-tools/media/simpleappnav.png)
 
 |Steuerelemente für das Navigationsformular|Eigenschaften|
-|--------------------------------------|----------------|
+| - |----------------|
 |Schaltfläche|Name = btnGoToAdd|
 |Schaltfläche|Name = btnGoToFillOrCancel|
 |Schaltfläche|Name = btnExit|
@@ -97,7 +97,7 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
  ![Neuen Kunden hinzufügen und eine Bestellung aufgeben](../data-tools/media/simpleappnewcust.png)
 
 |Steuerelemente für das NewCustomer-Formular|Eigenschaften|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
 |Schaltfläche|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
  ![Bestellungen erfüllen oder widerrufen](../data-tools/media/simpleappcancelfill.png)
 
 |Steuerelemente für das FillOrCancel-Formular|Eigenschaften|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtOrderID|
 |Schaltfläche|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|

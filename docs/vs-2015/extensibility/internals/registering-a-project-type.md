@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911330"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
   
  Der Menüeintrag verweist die IDE auf die Ressource verwendet, um die Informationen abzurufen. Wenn diese Daten in die Datenbank im Menü zusammengeführt wurde, wird der gleiche Schlüssel im Abschnitt MenusMerged der Registrierung hinzugefügt werden. Das VSPackage sollte nicht alles im Abschnitt MenusMerged direkt ändern. Im Feld "Daten" in der folgenden Tabelle sind drei durch Trennzeichen-getrennte-Felder vorhanden. Das erste Feld identifiziert einen vollständigen Pfad einer Ressourcendatei Menü:  
   
--   Wenn das erste Feld ausgelassen wird, wird die Menüressource aus der Satelliten-DLL, die mit der VSPackage-GUID identifiziert geladen.  
+- Wenn das erste Feld ausgelassen wird, wird die Menüressource aus der Satelliten-DLL, die mit der VSPackage-GUID identifiziert geladen.  
   
- Das zweite Feld identifiziert eine Menü-Ressourcen-ID vom Typ CTMENU:  
+  Das zweite Feld identifiziert eine Menü-Ressourcen-ID vom Typ CTMENU:  
   
--   Wenn die Ressourcen-ID angegeben ist, und der Dateipfad durch den ersten Parameter angegeben wird, wird eine Menüressource aus den vollständigen Dateipfad geladen.  
+- Wenn die Ressourcen-ID angegeben ist, und der Dateipfad durch den ersten Parameter angegeben wird, wird eine Menüressource aus den vollständigen Dateipfad geladen.  
   
--   Wenn die Ressourcen-ID wird bereitgestellt, aber der Pfad nicht ist, wird die Menüressource aus der Satelliten-DLL geladen.  
+- Wenn die Ressourcen-ID wird bereitgestellt, aber der Pfad nicht ist, wird die Menüressource aus der Satelliten-DLL geladen.  
   
--   Wenn der vollständige Pfad angegeben wird, und die Ressourcen-ID weggelassen wird, wird der zu ladenden Datei erwartet eine CTO-Datei sein.  
+- Wenn der vollständige Pfad angegeben wird, und die Ressourcen-ID weggelassen wird, wird der zu ladenden Datei erwartet eine CTO-Datei sein.  
   
- Das letzte Feld identifiziert die Versionsnummer für die CTMENU-Ressource. Sie können im Menü erneut zusammenführen, durch die Änderung der Versionsnummer.  
+  Das letzte Feld identifiziert die Versionsnummer für die CTMENU-Ressource. Sie können im Menü erneut zusammenführen, durch die Änderung der Versionsnummer.  
   
 |name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  

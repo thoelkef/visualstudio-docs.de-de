@@ -1,5 +1,5 @@
 ---
-title: Schnellansichtarchitektur | Microsoft Docs
+title: Schnellansichtarchitektur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836605"
 ---
 # <a name="visualizer-architecture"></a>Schnellansichtarchitektur
 Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:  
   
--   Die *Debuggerseite* innerhalb der Visual Studio-Debugger ausgeführt wird. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
+- Die *Debuggerseite* in Visual Studio-Debugger ausgeführt wird. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
   
--   Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, der Visual Studio debuggt (die *zu debuggende Komponente*).  
+- Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, die Visual Studio debuggt (die *zu debuggende Komponente*).  
   
- Eine Schnellansicht ist eine Debuggerkomponente, mit der den Debugger zum anzeigen kann (*visualisieren*) die Inhalte eines Datenobjekts in aussagekräftiger, verständlicher Form. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
+  Eine Schnellansicht ist eine Debuggerkomponente, mit dem Sie den Debugger zum anzeigen kann (*visualisieren*) den Inhalt eines Datenobjekts in aussagekräftiger, verständlicher Form. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
   
- Das Datenobjekt, das visualisiert werden befindet sich innerhalb des Prozesses, die Sie Debuggen (der *zu debuggende Komponente* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
+  Das Datenobjekt, das visualisiert werden befindet sich innerhalb des Prozesses, die Sie Debuggen (der *zu debuggende Komponente* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
   
 |Debuggerprozess|Zu debuggender Prozess|  
 |----------------------|----------------------|  
 |Debuggerbenutzeroberfläche (DataTips, Überwachenfenster, Schnellüberwachung)|Zu visualisierendes Datenobjekt|  
   
- Um das Datenobjekt innerhalb der Debuggerschnittstelle zu visualisieren, benötigen Sie Code zur Kommunikation zwischen den beiden Prozessen. Folglich besteht die Schnellansichtarchitektur aus zwei Teilen: *Debuggerseite* Code und *zu debuggende Seite* Code.  
+ Um das Datenobjekt innerhalb der Debuggerschnittstelle zu visualisieren, benötigen Sie Code zur Kommunikation zwischen den beiden Prozessen. Folglich die Schnellansichtarchitektur besteht aus zwei Teilen: *Debuggerseite* Code und *zu debuggende Seite* Code.  
   
  Der debuggerseitige Code erstellt eine eigene Benutzeroberfläche, die von der Debuggerschnittstelle aufgerufen werden kann, zum Beispiel DataTip, das Überwachungsfenster oder die Schnellüberwachung. Die Schnellansichtschnittstelle wird mithilfe der <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>-Klasse und der <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>-Schnittstelle erstellt. Wie alle Schnellansicht-APIs befinden sich DialogDebuggerVisualizer und IDialogVisualizerService im <xref:Microsoft.VisualStudio.DebuggerVisualizers>-Namespace.  
   

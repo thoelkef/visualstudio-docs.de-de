@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873551"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
  Webprojekt  
  Es gibt vier Arten von Webprojekten: File System, lokalen IIS, Remotestandorten und FTP.  
   
--   Datei-System-Projekte unter einem lokalen Pfad erstellt, aber sie erfordern nicht die IIS (Internetinformationsdienste) installiert werden, wie sie intern über einen UNC-Pfad zugegriffen wird, und in der quellcodeverwaltung aus der IDE, ähnlich wie Clientprojekte platziert werden können.  
+- Datei-System-Projekte unter einem lokalen Pfad erstellt, aber sie erfordern nicht die IIS (Internetinformationsdienste) installiert werden, wie sie intern über einen UNC-Pfad zugegriffen wird, und in der quellcodeverwaltung aus der IDE, ähnlich wie Clientprojekte platziert werden können.  
   
--   Lokale IIS-Projekte funktionieren mit IIS, die auf dem gleichen Computer installiert ist und erfolgt mit einer URL, die auf dem lokalen Computer verweist.  
+- Lokale IIS-Projekte funktionieren mit IIS, die auf dem gleichen Computer installiert ist und erfolgt mit einer URL, die auf dem lokalen Computer verweist.  
   
--   Entfernte Standorte Projekte auch unter IIS-Dienste erstellt werden, jedoch werden sie platziert, in der quellcodeverwaltung auf dem IIS-Server-Computer und nicht von innerhalb der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- Entfernte Standorte Projekte auch unter IIS-Dienste erstellt werden, jedoch werden sie platziert, in der quellcodeverwaltung auf dem IIS-Server-Computer und nicht von innerhalb der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
--   FTP-Projekten erfolgt über eine FTP-Remoteserver, aber sie können nicht unter quellcodeverwaltung gestellt werden.  
+- FTP-Projekten erfolgt über eine FTP-Remoteserver, aber sie können nicht unter quellcodeverwaltung gestellt werden.  
   
- Eintragung  
- Ein weiterer Begriff für die Projektmappe oder das Projekt unter quellcodeverwaltung.  
+  Eintragung  
+  Ein weiterer Begriff für die Projektmappe oder das Projekt unter quellcodeverwaltung.  
   
- Version-Store  
- Der Quellcode-Verwaltungsdatenbank, die über die Source-Plug-in-API zugegriffen wird.  
+  Version-Store  
+  Der Quellcode-Verwaltungsdatenbank, die über die Source-Plug-in-API zugegriffen wird.  
   
 ## <a name="test-areas-covered-in-this-section"></a>In diesem Abschnitt behandelten Testbereiche  
   

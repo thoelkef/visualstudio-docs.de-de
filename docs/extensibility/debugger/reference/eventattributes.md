@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Microsoft Docs
+title: EVENTATTRIBUTES | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6a2176dcd3c4cf748549f94d071b181d0d14f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7df726716e464ccc4bf8382b38fbb0b8d277df86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893821"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Gibt die Attribute des Ereignisses.  
@@ -57,27 +57,27 @@ public enum enum_EVENTATTRIBUTES {
  Gibt an, dass das Ereignis asynchron ist und keine Antwort auf das Ereignis ist erforderlich.  
   
  EVENT_SYNCHRONOUS  
- Gibt an, dass das Ereignis synchron ist. anhand der Antworten [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ Gibt an, dass das Ereignis synchron ist. Antworten von [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Gibt an, dass dies eine Stopping-Ereignis. Muss zusammen mit entweder `EVENT_ASYNCHRONOUS` oder `EVENT_SYNCHRONOUS`.  
+ Gibt an, dass es sich um eine Beenden-Ereignis handelt. Muss zusammen mit entweder `EVENT_ASYNCHRONOUS` oder `EVENT_SYNCHRONOUS`.  
   
  EVENT_ASYNC_STOP  
- Gibt eine asynchrone Stopping-Ereignis an. Es ist derzeit kein entsprechendes Ereignis. Dieses Kennzeichen ist nur ein Platzhalter.  
+ Gibt eine asynchrone Stopping-Ereignis an. Es gibt derzeit kein entsprechendes Ereignis. Dieses Flag ist nur ein Platzhalter.  
   
  EVENT_SYNC_STOP  
- Gibt eine synchrone Stopping-Ereignis (eine Kombination von `EVENT_SYNCHRONOUS` und `EVENT_STOPPING`). Dieser Wert wird verwendet, durch ein Debugging-Modul (DE) beim Senden einer Stopping-Ereignis. Die Antwort erfolgt durch einen Aufruf von [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Schritt](../../../extensibility/debugger/reference/idebugprogram2-step.md), oder [Fortfahren](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Gibt eine synchrone Stopping-Ereignis (eine Kombination von `EVENT_SYNCHRONOUS` und `EVENT_STOPPING`). Dieser Wert wird verwendet, durch eine DebugEngine (DE), wenn er eine Beenden-Ereignis sendet. Die Antwort erfolgt durch einen Aufruf von [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Schritt](../../../extensibility/debugger/reference/idebugprogram2-step.md), oder [Weiter](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Gibt an, ein Ereignis, das für die IDE sofort und synchron gesendet wird. Dieses Flag wird kombiniert mit anderen Flags wie `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, oder `EVENT_SYNC_STOP` an, dass der Typ des Ereignisses und die Tatsache, dass die Antwort-Mechanismus (sofern vorhanden) bekannt ist.  
+ Gibt an, ein Ereignis, das für die IDE sofort und synchron gesendet wird. Dieses Flag wird zusammen mit anderen Flags wie `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, oder `EVENT_SYNC_STOP` , geben Sie den Typ des Ereignisses und die Tatsache, dass die Antwort-Mechanismus (sofern vorhanden) bekannt ist.  
   
  EVENT_EXPRESSION_EVALUATION  
- Das Ereignis ist das Ergebnis der Auswertung von Ausdrücken.  
+ Das Ereignis ist das Ergebnis der Auswertung des Ausdrucks.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Werte werden übergeben, die `dwAttrib` Parameter von der [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode.  
+ Diese Werte werden übergeben, der `dwAttrib` Parameter, der die [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
