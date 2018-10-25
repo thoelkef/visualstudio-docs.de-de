@@ -15,18 +15,18 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930322"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
 *Direktivenprozessoren* fügen Sie Code für die *generierten Transformationsklasse*. Aufrufen einer *Richtlinie* aus einer *Textvorlage*, der Rest des Codes, den Sie in der Textvorlage schreiben, kann die Funktionalität von der Anweisung bereitgestellten abhängig.
 
-Sie können eigene benutzerdefinierte Anweisungsprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Direktivenprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
+Sie können eigene benutzerdefinierte Anweisungsprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Anweisungsprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
 
 In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:
 
@@ -656,19 +656,22 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
      Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:
 
-    |name|Typ|Daten|
-    |----------|----------|----------|
-    |(Standard)|REG_SZ|(Wert nicht festgelegt)|
-    |Klasse|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<Pfad zur Projektmappe >** CustomDP\bin\Debug\CustomDP.dll|
+
+   | name | Typ | Daten |
+   |-|-|-|
+   | (Standard) | REG_SZ | (Wert nicht festgelegt) |
+   | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<Pfad zur Projektmappe ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:
 
-    |name|Typ|Daten|
-    |----------|----------|----------|
-    |(Standard)|REG_SZ|(Wert nicht festgelegt)|
-    |Klasse|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |Assembly|REG_SZ|CustomDP.dll|
+
+   | name | Typ | Daten |
+   |-|-|-|
+   | (Standard) | REG_SZ | (Wert nicht festgelegt) |
+   | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Assembly | REG_SZ | CustomDP.dll |
+
 
 6. Starten Sie Visual Studio neu.
 

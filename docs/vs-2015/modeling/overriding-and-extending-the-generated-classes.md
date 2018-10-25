@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933429"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Ihrer DSL-Definition ist eine Plattform, auf der Sie einen Reihe leistungsstarke
   
  Im Beispiel Library.dsl, z. B. die `CirculationBook` Domänenklasse besitzt die `Generates``Double Derived` -Eigenschaftensatz auf `true`. Der generierte Code für diese Domänenklasse enthält zwei Klassen:  
   
--   `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.  
+- `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.  
   
--   `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.  
+- `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.  
   
- Um eine beliebige Methode überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können sowohl für die generierten Methoden als auch für den von der Modellierung Framework geerbten Methoden überschreiben.  
+  Um eine beliebige Methode überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können sowohl für die generierten Methoden als auch für den von der Modellierung Framework geerbten Methoden überschreiben.  
   
- Sie können diese Methode mit allen Arten von Element, einschließlich von Modellelementen, Beziehungen, Formen, Diagramme und Connectors verwenden. Sie können auch die Methoden der anderen generierten Klassen überschreiben. Einige Klassen generiert, wie z. B. die ToolboxHelper immer Double-Wert-abgeleitet sind.  
+  Sie können diese Methode mit allen Arten von Element, einschließlich von Modellelementen, Beziehungen, Formen, Diagramme und Connectors verwenden. Sie können auch die Methoden der anderen generierten Klassen überschreiben. Einige Klassen generiert, wie z. B. die ToolboxHelper immer Double-Wert-abgeleitet sind.  
   
 ### <a name="custom-constructors"></a>Benutzerdefinierten Konstruktoren  
  Einen Konstruktor kann nicht überschrieben werden. Selbst in Double abgeleiteten Klassen muss der Konstruktor in der abgeleiteten Klasse sein.  

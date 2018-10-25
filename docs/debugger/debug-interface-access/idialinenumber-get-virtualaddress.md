@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_virtualaddress | Microsoft Docs'
+title: 'Idialinenumber:: Get_virtualaddress | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eec0a136594019c23efa4f7557b680f6a40b601
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e447bd5c56b166320962a7e495ace26be22efaf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929282"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
-Ruft die virtuelle Adresse ("VA" ist) des Blocks ab.  
+Ruft die virtuelle Adresse (VA) des Blocks ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT get_virtualAddress (
  [out] Gibt die virtuelle Adresse des Blocks zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

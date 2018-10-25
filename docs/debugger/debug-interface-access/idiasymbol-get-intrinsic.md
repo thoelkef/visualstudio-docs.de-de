@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intrinsic | Microsoft Docs'
+title: 'Idiasymbol:: Get_intrinsic | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5293c17d73e1c0b9232862f3b8ff491a55b7e24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 14f5525a63e4453c594cd84b248f71303b083312
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931219"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
-Ruft ein Flag, das angibt, ob eine Klasse ein systeminterner Typ ist ab.  
+Ruft ein Flag, das angibt, ob eine Klasse einen systeminternen Typ ist ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_intrinsic(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn die Klasse ein systeminterner Typ; ist, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` ist die Klasse einen systeminternen Typ; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
   

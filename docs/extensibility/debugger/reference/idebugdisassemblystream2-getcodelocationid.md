@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
+title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86682bb64f041cd8ee1b08bbec02c28492cac7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3a1cd9cf0035dddc11bfe7c6fa3f3c1b51a083d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932701"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Gibt die ID für den Standort einen Code für einen bestimmten Code-Kontext zurück.  
+Gibt einen Code-Speicherort-Bezeichner für einen bestimmten Code-Kontext zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,20 +43,20 @@ int GetCodeLocationId(
   
 #### <a name="parameters"></a>Parameter  
  `pCodeContext`  
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt in einen Bezeichner konvertiert werden.  
+ [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das auf einen Bezeichner konvertiert werden.  
   
  `puCodeLocationId`  
- [out] Gibt den Bezeichner der Code-Speicherort. Siehe Hinweise.  
+ [out] Gibt den Code-Ort-Bezeichner. Siehe Hinweise.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_CODE_CONTEXT_OUT_OF_SCOPE` , wenn der Codekontext gültig ist, aber außerhalb des Bereichs.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_CODE_CONTEXT_OUT_OF_SCOPE` , wenn der Codekontext gültig ist, aber außerhalb des Bereichs.  
   
 ## <a name="remarks"></a>Hinweise  
- Die ID für den Standort Code bezieht sich auf die Debugging-Modul (DE) unterstützen die Disassembly. Diese ID für den Standort wird intern zum Nachverfolgen von Positionen im Code durch die DE verwendet und ist in der Regel eine Adresse oder einen Offset zufallswertemodul produzierte. Die einzige Anforderung ist, dass Code Rahmen Speicherorten kleiner Rahmen Code einem anderen Speicherort ist dann der entsprechenden Code-ID für die Standort des ersten Codekontext auch kleiner als der Speicherort des zweiten Code Kontexts Bezeichner sein muss.  
+ Der Standortbezeichner Code bezieht sich auf die Debug-Engine (DE) unterstützt die Disassembly. Diese Standortbezeichner wird intern vom die DE verwendet, um Positionen im Code zu verfolgen und ist in der Regel eine Adresse oder einen Offset irgendeiner Art. Die einzige Voraussetzung ist, sofern der Codekontext von einem Speicherort, die kleiner als der Codekontext von einem anderen Speicherort ist dann der entsprechende Code geographical Location Identifier des ersten Codekontext auch der Bezeichner des zweiten Code Kontexts Speicherort muss niedriger als sein.  
   
- Um im Rahmen von Code für eine ID für den Standort Code abzurufen, rufen Sie die [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) Methode.  
+ Rufen Sie zum Abrufen der Codekontext geographical Location Identifier ein Code die [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [Idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

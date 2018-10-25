@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetDerivedMostProperty | Microsoft Docs
+title: IDebugProperty2::GetDerivedMostProperty | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f453dacf988b80cf6837b3324a9d4b0a70e2254e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58713b63728678ccab55435eb05b1cbb1c8920fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929880"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
-Ruft die am stärksten abgeleitete-Eigenschaft einer Eigenschaft ab.  
+Ruft den am stärksten abgeleitete Eigenschaft einer Eigenschaft ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,10 +44,10 @@ int GetDerivedMostProperty (
  [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das die am stärksten abgeleitete Eigenschaft darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETDERIVEDMOST_NO_DERIVED_MOST` Wenn keine am stärksten abgeleitete Eigenschaft ist abgerufen.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETDERIVEDMOST_NO_DERIVED_MOST` Wenn keine Eigenschaft "am stärksten abgeleitete ist" abgerufen.  
   
 ## <a name="remarks"></a>Hinweise  
- Angenommen, wenn diese Eigenschaft ein Objekt beschreibt, die implementiert `ClassRoot` , aber diese ist tatsächlich eine Instanziierung von `ClassDerived` , stammt aus `ClassRoot`, gibt diese Methode ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt Beschreibt die `ClassDerived` Objekt.  
+ Z. B., wenn diese Eigenschaft auf ein Objekt beschreibt, die implementiert `ClassRoot` , aber dies ist tatsächlich eine Instanziierung von `ClassDerived` abgeleitete `ClassRoot`, gibt diese Methode eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt Beschreibt die `ClassDerived` Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

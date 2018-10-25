@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942828"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Große Anfangsbuchstaben  
  Große Anfangsbuchstaben ist ein Format, in dem die ersten Buchstaben des meisten oder alle der Wörter in einem Ausdruck in Großbuchstaben angegeben werden. In Visual Studio wird die große Anfangsbuchstaben für viele Elemente, einschließlich verwendet:  
   
--   **QuickInfos.** Beispiel: "Vorschau der ausgewählten Elemente"  
+- **QuickInfos.** Beispiel: "Vorschau der ausgewählten Elemente"  
   
--   **Spaltenüberschriften.** Beispiel: "System Antworten"  
+- **Spaltenüberschriften.** Beispiel: "System Antworten"  
   
--   **Menüelemente.** Beispiel: "Alle speichern"  
+- **Menüelemente.** Beispiel: "Alle speichern"  
   
- Wenn Sie große Anfangsbuchstaben verwenden zu können, sind dies die Richtlinien, wenn Wörter in Großbuchstaben umwandelt und wann Sie Kleinbuchstaben ausgelassen werden:  
+  Wenn Sie große Anfangsbuchstaben verwenden zu können, sind dies die Richtlinien, wenn Wörter in Großbuchstaben umwandelt und wann Sie Kleinbuchstaben ausgelassen werden:  
   
 |Großbuchstaben|Kommentare und Beispiele|  
 |---------------|---------------------------|  

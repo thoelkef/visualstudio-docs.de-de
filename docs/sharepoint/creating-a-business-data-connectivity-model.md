@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930205"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Erstellen eines Business Data Connectivity-Modells
   Sie können ein Business Data Connectivity (BDC)-Modell erstellen oder Anpassen ein vorhandenes BDC-Modell mithilfe von Visual Studio. Jede SharePoint-Projekt kann nur ein Modell enthalten. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -57,13 +57,13 @@ ms.locfileid: "36326033"
 ## <a name="add-an-existing-model"></a>Fügen Sie ein vorhandenes Modell hinzu.
  Sie können ein Modell importieren, die mit anderen Tools wie SharePoint Designer erstellt wurde. Sie können auch ein vorhandenes Modell zu Ihrem Projekt in den folgenden Situationen zu importieren:  
   
--   Um ein Modell anzupassen, die bereits mit einer SharePoint-Serverfarm bereitgestellt wird.  
+- Um ein Modell anzupassen, die bereits mit einer SharePoint-Serverfarm bereitgestellt wird.  
   
--   Packen und Bereitstellen eines vorhandenen Modells auf mehrere SharePoint-Serverfarmen.  
+- Packen und Bereitstellen eines vorhandenen Modells auf mehrere SharePoint-Serverfarmen.  
   
- In beiden Fällen die LOB-Systeme, die definiert, die im Modell, das Sie importieren, sind nicht betroffen und werden weiterhin wie erwartet funktionieren. Um ein vorhandenes Modell zu einer SharePoint-Projekt hinzuzufügen, verwenden Sie den Visual Studio **vorhandenes Element hinzufügen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  In beiden Fällen die LOB-Systeme, die definiert, die im Modell, das Sie importieren, sind nicht betroffen und werden weiterhin wie erwartet funktionieren. Um ein vorhandenes Modell zu einer SharePoint-Projekt hinzuzufügen, verwenden Sie den Visual Studio **vorhandenes Element hinzufügen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
- Sie können ein LOB-System von .NET Framework-Assembly des Typs dem importierten Modell hinzufügen, indem Sie eine Option in der **Hinzufügen von .NET Framework-Assembly LobSystem**. Dadurch können Sie benutzerdefinierten Code schreiben und verwenden einen Designer, um die Metadaten für die importierte Modelle zu definieren.  
+  Sie können ein LOB-System von .NET Framework-Assembly des Typs dem importierten Modell hinzufügen, indem Sie eine Option in der **Hinzufügen von .NET Framework-Assembly LobSystem**. Dadurch können Sie benutzerdefinierten Code schreiben und verwenden einen Designer, um die Metadaten für die importierte Modelle zu definieren.  
   
 ## <a name="related-topics"></a>Verwandte Themen
   

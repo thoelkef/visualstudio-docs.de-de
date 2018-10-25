@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943062"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Vorgehensweise: Verwenden der Suche im Workflow-Designer
 
@@ -35,11 +35,11 @@ Schnellsuche findet der Designer die folgenden:
 
 ### <a name="use-quick-find"></a>Verwenden der Schnellsuche
 
-1.  Mit dem Workflow-Designer öffnen, drücken Sie die **STRG + F**, oder wählen Sie **bearbeiten** > **suchen und Ersetzen** > **Schnellsuche**.
+1. Mit dem Workflow-Designer öffnen, drücken Sie die **STRG + F**, oder wählen Sie **bearbeiten** > **suchen und Ersetzen** > **Schnellsuche**.
 
-2.  Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **Weitersuchen**.
+2. Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **Weitersuchen**.
 
-3.  Der Suchbegriff befindet sich im aktuellen Workflow. Die folgende Abbildung zeigt ein aktivitätsanzeigename im Designer gefunden werden:
+3. Der Suchbegriff befindet sich im aktuellen Workflow. Die folgende Abbildung zeigt ein aktivitätsanzeigename im Designer gefunden werden:
 
    ![Suchergebnisse im Workflow Designer](../workflow-designer/media/designersearch.png)
 

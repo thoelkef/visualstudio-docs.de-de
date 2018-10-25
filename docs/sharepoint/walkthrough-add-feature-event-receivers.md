@@ -19,35 +19,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948766"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionsereignisempfängern
   Feature-Ereignisempfänger sind Methoden, die ausgeführt werden, wenn eines der folgenden Feature-bezogene Ereignisse in SharePoint auftritt:
 
--   Ein Feature installiert ist.
+- Ein Feature installiert ist.
 
--   Eine Funktion ist aktiviert.
+- Eine Funktion ist aktiviert.
 
--   Eine Funktion ist deaktiviert.
+- Eine Funktion ist deaktiviert.
 
--   Eine Funktion wird entfernt.
+- Eine Funktion wird entfernt.
 
- Diese exemplarische Vorgehensweise veranschaulicht, wie Sie einen Ereignisempfänger mit einer Funktion in einer SharePoint-Projekt hinzufügen. Die folgenden Aufgaben veranschaulicht:
+  Diese exemplarische Vorgehensweise veranschaulicht, wie Sie einen Ereignisempfänger mit einer Funktion in einer SharePoint-Projekt hinzufügen. Die folgenden Aufgaben veranschaulicht:
 
--   Erstellen ein leeres Projekt mit einem Funktionsereignisempfänger aus.
+- Erstellen ein leeres Projekt mit einem Funktionsereignisempfänger aus.
 
--   Behandeln der **FeatureDeactivating** Methode.
+- Behandeln der **FeatureDeactivating** Methode.
 
--   Verwenden der SharePoint-Projektobjektmodell zum Hinzufügen von einer Ankündigung in die Liste der Ankündigungen
+- Verwenden der SharePoint-Projektobjektmodell zum Hinzufügen von einer Ankündigung in die Liste der Ankündigungen
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 -   Unterstützte Editionen von Microsoft Windows und SharePoint.

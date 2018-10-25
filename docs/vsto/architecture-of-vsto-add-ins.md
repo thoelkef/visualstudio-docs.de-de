@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933442"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektur von VSTO-Add-Ins
   VSTO-Add-Ins, die mit den Office Developer Tools in Visual Studio erstellt werden, verfügen über Architekturfunktionen, mit denen die Stabilität und Sicherheit gestärkt werden und die enge Zusammenarbeit mit Microsoft Office ermöglicht wird. In diesem Thema werden die folgenden Aspekte von VSTO-Add-Ins beschrieben:  
   
--   [Verstehen von VSTO-Add-ins](#UnderstandingAddIns)  
+- [Verstehen von VSTO-Add-ins](#UnderstandingAddIns)  
   
--   [Komponenten von VSTO-Add-Ins](#AddinComponents)  
+- [Komponenten von VSTO-Add-Ins](#AddinComponents)  
   
--   [Verwenden von VSTO-Add-Ins mit Microsoft Office-Anwendungen](#HowAddinsWork)  
+- [Verwenden von VSTO-Add-Ins mit Microsoft Office-Anwendungen](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Allgemeine Informationen zum Erstellen von VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md).  
+  Allgemeine Informationen zum Erstellen von VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Verstehen von VSTO-Add-ins  
  Wenn Sie die Office Developer Tools in Visual Studio verwenden, um ein VSTO-Add-in zu erstellen, erstellen Sie eine verwaltete Codeassembly, die von Microsoft Office-Anwendung geladen wird. Nach dem Laden der Assembly kann das VSTO-Add-In auf Ereignisse reagieren, die in der Anwendung ausgelöst werden (z. B. wenn ein Benutzer auf ein Menüelement klickt). Außerdem kann das VSTO-Add-In einen Aufruf an das Objektmodell ausführen, um die Anwendung zu automatisieren und zu erweitern, und der Code kann alle Klassen in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]verwenden.  

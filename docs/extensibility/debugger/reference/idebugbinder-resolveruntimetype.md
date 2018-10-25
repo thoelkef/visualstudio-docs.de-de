@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+title: IDebugBinder::ResolveRuntimeType | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa911dba9d56996e048326737c1dd99ca89c49c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2bfca2c360741b92c3a7ce3c4773671d8bf4d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928125"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Diese Methode bestimmt den Laufzeittyp eines Objekts.  
+Diese Methode bestimmt der Laufzeittyp eines Objekts.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,10 +49,10 @@ int ResolveRuntimeType(
  [out] Gibt den Typ des Objekts als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Laufzeittyp eines Objekts ist nicht immer zum Zeitpunkt der Kompilierung bekannt. Beispielsweise kann mithilfe von Polymorphie, ein Argument werden an eine Funktion wie seine Basisklasse, z. B. eine Schaltflächenklasse übergeben. Das tatsächliche Argument möglicherweise eine abgeleitete Klasse, z. B. eine Radio Button-Klasse.  
+ Der Laufzeittyp eines Objekts ist nicht immer zum Zeitpunkt der Kompilierung bekannt. Beispielsweise kann Polymorphismus verwendet wird, ein Argument an eine Funktion als Basisklasse, z. B. eine Button-Klasse übergeben werden. Das tatsächliche Argument möglicherweise eine abgeleitete Klasse wie z. B. eine Radio Button-Klasse.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

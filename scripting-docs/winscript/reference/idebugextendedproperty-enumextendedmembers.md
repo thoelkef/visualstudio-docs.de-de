@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers | Microsoft Docs
+title: IDebugExtendedProperty::EnumExtendedMembers | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b1cbb9b36d7ae237551aad2677f9480c615b88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 400145cf3981b7266a796f66576eb12f979d2750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949837"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-Listet die Elemente einer erweiterten Eigenschaft an.  
+Listet die Member einer erweiterten Eigenschaft.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Gibt an, die EX_DBGPROP_INFO_FLAGS-Konstanten, die bestimmen, dass die Felder in den aufgelisteten Debug-Eigenschaftenstruktur erweitert werden ausgefüllt werden.  
+ [in] Gibt an, dass die EX_DBGPROP_INFO_FLAGS-Konstanten, die bestimmen, dass die Felder in den aufgelisteten Strukturen der Debug-Eigenschaft, die erweitert werden, gefüllt werden soll.  
   
  `nRadix`  
- [in] Basis interpretieren alle numerischen Daten verwendet werden sollen.  
+ [in] Die Basis zum Interpretieren von numerische Informationen verwendet werden.  
   
  `ppeepi`  
  [out] Gibt die `IEnumDebugExtendedPropertyInfo` -Schnittstelle, die die Elementeigenschaften zählt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT`, in der Regel `S_OK`.  
+ Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExtendedProperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)   

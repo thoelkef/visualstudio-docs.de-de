@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932311"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compiler-Warnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ Sie können ein Buildprotokoll von Clutter befreien, indem Sie angeben, dass ein
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>So unterdrücken Sie bestimmte Warnungen für Visual Basic  
   
-1.  Wählen Sie im **Projektmappen-Explorer** das Projekt aus, in dem Sie Warnungen unterdrücken möchten.  
+1. Wählen Sie im **Projektmappen-Explorer** das Projekt aus, in dem Sie Warnungen unterdrücken möchten.  
   
-2.  Wählen Sie in der Menüleiste **Projekt**, **Projekt entladen** aus.  
+2. Wählen Sie in der Menüleiste **Projekt**, **Projekt entladen** aus.  
   
-3.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten**_Projektname_**.vbproj** aus.  
+3. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten**_Projektname_**.vbproj** aus.  
   
-     Die Projektdatei wird im Code-Editor geöffnet.  
+    Die Projektdatei wird im Code-Editor geöffnet.  
   
-4.  Suchen Sie das Element `<NoWarn></NoWarn>` in der Buildkonfiguration, die Sie zum Erstellen verwenden.  
+4. Suchen Sie das Element `<NoWarn></NoWarn>` in der Buildkonfiguration, die Sie zum Erstellen verwenden.  
   
-     Das folgende Beispiel zeigt das Element `<NoWarn></NoWarn>` in fetter Textschriftart für die Debug-Buildkonfiguration auf einer x86-Plattform:  
+    Das folgende Beispiel zeigt das Element `<NoWarn></NoWarn>` in fetter Textschriftart für die Debug-Buildkonfiguration auf einer x86-Plattform:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Fügen Sie als Wert des `<NoWarn>`-Elements eine oder mehrere Warnungsnummern hinzu. Wenn Sie mehrere Warnungsnummern angeben, trennen Sie diese durch Kommas, wie im folgenden Beispiel zu sehen.  
+5. Fügen Sie als Wert des `<NoWarn>`-Elements eine oder mehrere Warnungsnummern hinzu. Wenn Sie mehrere Warnungsnummern angeben, trennen Sie diese durch Kommas, wie im folgenden Beispiel zu sehen.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Speichern Sie die Änderungen an der VBPROJ-Datei.  
+6. Speichern Sie die Änderungen an der VBPROJ-Datei.  
   
-7.  Wählen Sie in der Menüleiste **Projekt**, **Projekt erneut laden** aus.  
+7. Wählen Sie in der Menüleiste **Projekt**, **Projekt erneut laden** aus.  
   
-8.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe neu erstellen** aus.  
+8. Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe neu erstellen** aus.  
   
-     Das Fenster **Ausgabe** zeigt die von Ihnen angegebenen Warnungen jetzt nicht mehr an.  
+    Das Fenster **Ausgabe** zeigt die von Ihnen angegebenen Warnungen jetzt nicht mehr an.  
   
- Weitere Informationen finden Sie unter [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Weitere Informationen finden Sie unter [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)   

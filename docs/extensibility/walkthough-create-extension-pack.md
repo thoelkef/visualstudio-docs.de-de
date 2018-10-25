@@ -13,18 +13,18 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943101"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Erweiterungspaket
+# <a name="walkthrough-create-an-extension-pack"></a>Exemplarische Vorgehensweise: Erstellen eines Erweiterungspakets
 
 Ein Erweiterungspaket ist ein Satz von Erweiterungen, die zusammen installiert werden können. Erweiterungsmodulen können Sie ganz einfach Ihre bevorzugten Erweiterungen für andere Benutzer freigeben oder einen Satz von Erweiterungen für ein bestimmtes Szenario zu bündeln.
   
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
 
@@ -40,8 +40,8 @@ Die Elementvorlage-Erweiterungspaket erstellt ein Erweiterungspaket mit Satz von
   
 3. ExtensionPack1.vsext-Datei hinzugefügt wird, die den folgenden Code enthält
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ Die Elementvorlage-Erweiterungspaket erstellt ein Erweiterungspaket mit Satz von
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. Die Vsixid der Erweiterung der Erweiterungspaket einschließt finden Sie auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Suchen Sie nach der Erweiterung, die Sie einschließen möchten und klicken auf **Kopie-ID**. Aktualisieren Sie den vorhandenen **VsixId** in den oben genannten Datei oder eine andere Erweiterung der Liste hinzufügen.
 

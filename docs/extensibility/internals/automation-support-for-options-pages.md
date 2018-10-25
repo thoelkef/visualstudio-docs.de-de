@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c2a55c8abb2049f03d46c8a1a5cf27eecc341
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b18f8df30dc9f3385c2c5f154d66c598b423968e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929646"
 ---
 # <a name="automation-support-for-options-pages"></a>Unterstützung der Automatisierung für Optionsseiten
 VSPackages bieten benutzerdefinierte **Optionen** Dialogfelder die **Tools** Menü (**Extras/Optionen** Seiten) in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und können sie für die Automatisierung verfügbar Modell.  
@@ -29,15 +29,15 @@ VSPackages bieten benutzerdefinierte **Optionen** Dialogfelder die **Tools** Men
   
  Es ist optional, jedoch dringend empfohlen, um den Zugriff auf diese neue Seite über das Automatisierungsmodell zu ermöglichen. Mit den folgenden Schritten können Sie tun:  
   
-1.  Erweitern Sie die <xref:EnvDTE._DTE.Properties%2A> Objekt durch die Implementierung eines IDispatch abgeleiteten Objekts.  
+1. Erweitern Sie die <xref:EnvDTE._DTE.Properties%2A> Objekt durch die Implementierung eines IDispatch abgeleiteten Objekts.  
   
-2.  Eine Implementierung von Zurückgeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode (oder für verwalteten Code die <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> Methode) auf die IDispatch-abgeleitetes Objekt.  
+2. Eine Implementierung von Zurückgeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode (oder für verwalteten Code die <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> Methode) auf die IDispatch-abgeleitetes Objekt.  
   
-3.  Wenn ein automatisierungsbenutzer aufruft der <xref:EnvDTE._DTE.Properties%2A> Methode in einem benutzerdefinierten **Option** auf der Seite auf die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode zum Abrufen eines benutzerdefiniertes **Extras/Optionen** Seite Automation -Implementierung.  
+3. Wenn ein automatisierungsbenutzer aufruft der <xref:EnvDTE._DTE.Properties%2A> Methode in einem benutzerdefinierten **Option** auf der Seite auf die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode zum Abrufen eines benutzerdefiniertes **Extras/Optionen** Seite Automation -Implementierung.  
   
-4.  Das Automatisierungsobjekt des VSPackage wird dann verwendet, um jede bereitzustellen <xref:EnvDTE.Property> zurückgegebenes <xref:EnvDTE._DTE.Properties%2A>.  
+4. Das Automatisierungsobjekt des VSPackage wird dann verwendet, um jede bereitzustellen <xref:EnvDTE.Property> zurückgegebenes <xref:EnvDTE._DTE.Properties%2A>.  
   
- Ein Beispiel, das Implementieren eines benutzerdefinierten **Extras/Optionen** finden Sie unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).  
+   Ein Beispiel, das Implementieren eines benutzerdefinierten **Extras/Optionen** finden Sie unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Projektobjekten](../../extensibility/internals/exposing-project-objects.md)

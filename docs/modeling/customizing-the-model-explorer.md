@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929971"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
 Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie folgt ändern:
@@ -42,23 +42,23 @@ Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie 
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Ein Explorerknoten ein Symbol hinzu
 
-1.  Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Lösung mithilfe der Lösungsvorlage Aufgabenfluss.
+1. Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Lösung mithilfe der Lösungsvorlage Aufgabenfluss.
 
-2.  Speichern Sie eine BMP-Datei, die in ein 16 x 16-Pixel-Symbol enthält die **dsl\ressourcen** Ordner in der Projektmappe.
+2. Speichern Sie eine BMP-Datei, die in ein 16 x 16-Pixel-Symbol enthält die **dsl\ressourcen** Ordner in der Projektmappe.
 
-3.  In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **fügen neue Explorer-Knoteneinstellungen**.
+3. In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **fügen neue Explorer-Knoteneinstellungen**.
 
-     Ein **ExplorerNodeSettings** Knoten befindet sich unter dem **benutzerdefinierte Knoteneinstellungen** Knoten.
+    Ein **ExplorerNodeSettings** Knoten befindet sich unter dem **benutzerdefinierte Knoteneinstellungen** Knoten.
 
-4.  Wählen Sie **ExplorerNodeSettings**, und klicken Sie dann in der **Eigenschaften** legen **Klasse** zu **Actor**.
+4. Wählen Sie **ExplorerNodeSettings**, und klicken Sie dann in der **Eigenschaften** legen **Klasse** zu **Actor**.
 
-5.  Legen Sie **zum Anzeigen des Symbols** auf den Pfad der Symboldatei.
+5. Legen Sie **zum Anzeigen des Symbols** auf den Pfad der Symboldatei.
 
-6.  Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
+6. Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
 
-7.  Öffnen Sie im generierten Designer das Beispiel-Diagramm.
+7. Öffnen Sie im generierten Designer das Beispiel-Diagramm.
 
-     Im Explorer sollte angezeigt werden drei **Actor** Knoten mit dem Symbol.
+    Im Explorer sollte angezeigt werden drei **Actor** Knoten mit dem Symbol.
 
 > [!NOTE]
 >  Wenn Sie ein Symbol "Knoten" für jedes Element festgelegt haben, die im generierten-Explorer angezeigt wird, werden alle Explorer-Knoten das Symbol angezeigt. Wenn das Symbol "keine" festgelegt wurde, werden der Knoten das Standardsymbol angezeigt.

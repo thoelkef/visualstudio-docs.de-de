@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943049"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und remote-Daten in ClickOnce-Anwendungen
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.  
@@ -30,11 +30,11 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 ## <a name="local-data"></a>Lokale Daten  
  Mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]laden und speichern Sie Daten lokal mithilfe einer der folgenden Methoden:  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Datenverzeichnis  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Datenverzeichnis  
   
--   Isolierte Speicherung  
+- Isolierte Speicherung  
   
--   Andere lokale Dateien  
+- Andere lokale Dateien  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce-Datenverzeichnis  
  Jede auf einem lokalen Computer installierte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung verfügt über ein Datenverzeichnis, das im Ordner "Dokumente und Einstellungen" des Benutzers gespeichert ist. Jede in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthaltene und als "Daten"-Datei gekennzeichnete Datei wird in dieses Verzeichnis kopiert, wenn eine Anwendung installiert wird. Datendateien können einen beliebigen Dateityp aufweisen. Zu den am häufigsten verwendeten gehören Text, XML und Datenbankdateien, z. B. Microsoft Access-MDB-Dateien.  
