@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906168"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden den C++ Core Guidelines-Überprüfungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und be
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Das Microsoft.CppCoreCheck-Paket Ihrem Projekt hinzufügen  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste das Kontextmenü des Projekts in der Projektmappe zu öffnen, die das Paket hinzugefügt werden soll. Wählen Sie **NuGet-Pakete verwalten** zum Öffnen der **NuGet Package Manager**.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste das Kontextmenü des Projekts in der Projektmappe zu öffnen, die das Paket hinzugefügt werden soll. Wählen Sie **NuGet-Pakete verwalten** zum Öffnen der **NuGet Package Manager**.  
   
-2.  In der **NuGet Package Manager** Fenster, suchen Sie nach Microsoft.CppCoreCheck.  
+2. In der **NuGet Package Manager** Fenster, suchen Sie nach Microsoft.CppCoreCheck.  
   
-     ![NuGet-Paket-Manager-Fenster zeigt CppCoreCheck-Paket](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![NuGet-Paket-Manager-Fenster zeigt CppCoreCheck-Paket](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Wählen Sie das Paket Microsoft.CppCoreCheck, und wählen Sie dann die **installieren** , um die Regeln zu Ihrem Projekt hinzuzufügen.  
+3. Wählen Sie das Paket Microsoft.CppCoreCheck, und wählen Sie dann die **installieren** , um die Regeln zu Ihrem Projekt hinzuzufügen.  
   
- Das NuGet-Paket Fügt eine zusätzliche MSBuild .targets-Datei zu Ihrem Projekt, das aufgerufen wird, wenn Sie die Codeanalyse auf Ihr Projekt aktivieren. Diese TARGETS-Datei hinzugefügt das Codeanalysetool in Visual Studio die C++ Core Check Regeln als eine zusätzliche Erweiterung.  
+   Das NuGet-Paket Fügt eine zusätzliche MSBuild .targets-Datei zu Ihrem Projekt, das aufgerufen wird, wenn Sie die Codeanalyse auf Ihr Projekt aktivieren. Diese TARGETS-Datei hinzugefügt das Codeanalysetool in Visual Studio die C++ Core Check Regeln als eine zusätzliche Erweiterung.  
   
- Sie können die Codeanalyse auf Ihr Projekt aktivieren, indem Sie auswählen der **Codeanalyse für Build aktivieren** Kontrollkästchen in der **Codeanalyse** Teil der **Eigenschaftenseiten** Dialogfeld für Ihr Projekt.  
+   Sie können die Codeanalyse auf Ihr Projekt aktivieren, indem Sie auswählen der **Codeanalyse für Build aktivieren** Kontrollkästchen in der **Codeanalyse** Teil der **Eigenschaftenseiten** Dialogfeld für Ihr Projekt.  
   
- ![Eigenschaftenseite für Code Analysis allgemeinen webanwendungseinstellungen](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Eigenschaftenseite für Code Analysis allgemeinen webanwendungseinstellungen](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- Die C++ Core Check-Regeln werden die Standard-Regelsätze, die ausgeführt werden, wenn die Codeanalyse aktiviert ist. Da die C++ Core Check-Regeln in der Entwicklungsphase befinden, einige Regeln, möglicherweise nicht zur Verwendung in allen bereit, aber Sie werden möglicherweise während der Entwicklung informativ. Diese Regeln werden als experimentelle veröffentlicht. Sie können auswählen, ob die freigegebenen oder experimentellen Regeln in den Eigenschaften für Ihr Projekt auszuführen.  
+   Die C++ Core Check-Regeln werden die Standard-Regelsätze, die ausgeführt werden, wenn die Codeanalyse aktiviert ist. Da die C++ Core Check-Regeln in der Entwicklungsphase befinden, einige Regeln, möglicherweise nicht zur Verwendung in allen bereit, aber Sie werden möglicherweise während der Entwicklung informativ. Diese Regeln werden als experimentelle veröffentlicht. Sie können auswählen, ob die freigegebenen oder experimentellen Regeln in den Eigenschaften für Ihr Projekt auszuführen.  
   
- ![Eigenschaftenseite "Code Analysis Extensions-Einstellungen für](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Eigenschaftenseite "Code Analysis Extensions-Einstellungen für](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- Öffnen Sie zum Aktivieren oder deaktivieren den C++ Core Check Regelsätze, die **Eigenschaftenseiten** -Dialogfeld für Ihr Projekt. Klicken Sie unter **Konfigurationseigenschaften**, erweitern Sie **Codeanalyse**, **Erweiterungen**. Steuern Sie in der Dropdownliste neben **aktivieren C++ Core Check (freigegeben)** oder **aktivieren C++ Core Check (experimentell)**, wählen Sie **Ja** oder **keine**. Wählen Sie **OK** oder **übernehmen** zum Speichern der Änderungen.  
+   Öffnen Sie zum Aktivieren oder deaktivieren den C++ Core Check Regelsätze, die **Eigenschaftenseiten** -Dialogfeld für Ihr Projekt. Klicken Sie unter **Konfigurationseigenschaften**, erweitern Sie **Codeanalyse**, **Erweiterungen**. Steuern Sie in der Dropdownliste neben **aktivieren C++ Core Check (freigegeben)** oder **aktivieren C++ Core Check (experimentell)**, wählen Sie **Ja** oder **keine**. Wählen Sie **OK** oder **übernehmen** zum Speichern der Änderungen.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Überprüfen Sie Typen, Grenzen und Lebensdauer  
  Der C++ Core Check-Paket enthält derzeit Überprüfungen für die [Typsicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [umschließt Sicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), und [Lebensdauer Sicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) Profile.  
@@ -81,15 +81,15 @@ int main()
   
  Dieses Beispiel zeigt ein Paar der Warnungen, die die C++ Core Check-Regeln finden können:  
   
--   C26494 ist Regel Type.5: immer ein Objekt zu initialisieren.  
+- C26494 ist Regel Type.5: immer ein Objekt zu initialisieren.  
   
--   C26485 ist Regel Bounds.3: kein Verfall von Array in einen Zeiger.  
+- C26485 ist Regel Bounds.3: kein Verfall von Array in einen Zeiger.  
   
--   C26481 ist Regel Bounds.1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.  
+- C26481 ist Regel Bounds.1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.  
   
- Wenn die C++ Core Check Code Analysis Rulesets sind installiert und aktiviert, wenn Sie diesen Code kompilieren, die ersten beiden Warnungen werden ausgegeben, aber die dritte unterdrückt wird. Hier ist die Buildausgabe aus dem Beispielcode:  
+  Wenn die C++ Core Check Code Analysis Rulesets sind installiert und aktiviert, wenn Sie diesen Code kompilieren, die ersten beiden Warnungen werden ausgegeben, aber die dritte unterdrückt wird. Hier ist die Buildausgabe aus dem Beispielcode:  
   
- **1 >---Erstellen gestartet: Projekt: CoreCheckExample, Konfiguration: Debug Win32:**  
+  **1 >---Erstellen gestartet: Projekt: CoreCheckExample, Konfiguration: Debug Win32:**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj-C:\Users\username\documents\visual Studio 2015\P >.**  

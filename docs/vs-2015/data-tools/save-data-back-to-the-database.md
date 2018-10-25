@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829639"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215162"
   
 Das Dataset ist eine in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie führen dies in einer von drei Methoden:  
   
--   Durch Aufrufen einer der `Update` Methoden eines TableAdapters  
+- Durch Aufrufen einer der `Update` Methoden eines TableAdapters  
   
--   Indem Sie eine der DBDirect-Methoden des TableAdapter aufrufen  
+- Indem Sie eine der DBDirect-Methoden des TableAdapter aufrufen  
   
--   Durch die UpdateAll-Methode aufrufen, für die `TableAdapterManager` , die von Visual Studio für Sie generiert, wenn der Dataset Tabellen enthält, die auf andere Tabellen im Dataset verknüpft sind  
+- Durch die UpdateAll-Methode aufrufen, für die `TableAdapterManager` , die von Visual Studio für Sie generiert, wenn der Dataset Tabellen enthält, die auf andere Tabellen im Dataset verknüpft sind  
   
- Wenn Sie Daten an Steuerelemente auf einer Windows Form oder XAML-Seite zu Dataset-Tabellen binden, funktioniert die Datenbindungsarchitektur alle die für Sie.  
+  Wenn Sie Daten an Steuerelemente auf einer Windows Form oder XAML-Seite zu Dataset-Tabellen binden, funktioniert die Datenbindungsarchitektur alle die für Sie.  
   
- Wenn Sie mit TableAdapters vertraut sind, können Sie direkt auf einen der folgenden Themen springen:  
+  Wenn Sie mit TableAdapters vertraut sind, können Sie direkt auf einen der folgenden Themen springen:  
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
  Um vorzeitige Verletzungen dieser Einschränkungen zu vermeiden, können Sie sie vorübergehend außer Kraft setzen. Bei diesem Verfahren werden zwei Ziele verfolgt:  
   
--   Es wird verhindert, dass einen Fehler ausgelöst wird, nachdem Sie haben das Update einer Spalte wurde abgeschlossen, jedoch noch nicht gestartet, aktualisieren einen anderen.  
+- Es wird verhindert, dass einen Fehler ausgelöst wird, nachdem Sie haben das Update einer Spalte wurde abgeschlossen, jedoch noch nicht gestartet, aktualisieren einen anderen.  
   
--   Es wird verhindert, dass bestimmte Updates werden nicht ausgelöst (Ereignisse, die häufig für die Überprüfung verwendet werden).  
+- Es wird verhindert, dass bestimmte Updates werden nicht ausgelöst (Ereignisse, die häufig für die Überprüfung verwendet werden).  
   
- Nachdem Sie eine Aktualisierung abgeschlossen ist, können Sie erneut aktivieren Überprüfung von Einschränkungen, die auch Aktualisierungsereignisse wieder aktiviert und ausgelöst werden.  
+  Nachdem Sie eine Aktualisierung abgeschlossen ist, können Sie erneut aktivieren Überprüfung von Einschränkungen, die auch Aktualisierungsereignisse wieder aktiviert und ausgelöst werden.  
   
 > [!NOTE]
 >  In Windows Forms, hält der Architektur für die Datenbindung, die in das DataGrid-Steuerelement basiert einschränkungsüberprüfung, bis der Fokus aus eine Zeile aus, und Sie nicht explizit aufrufen müssen, die <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, oder <xref:System.Data.DataRow.CancelEdit%2A> Methoden.  
@@ -177,33 +177,33 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
  Wenn die Änderungen den aktuellen Zustand der Datenquelle widerspiegeln, müssen diese Informationen nicht länger beibehalten werden. Es gibt in der Regel doppelt so groß wie bei dem Dataset und seine Quelle synchron sind:  
   
--   Unmittelbar nach dem Laden von Informationen in das Dataset, z. B., wenn Sie Daten aus der Quelle einlesen.  
+- Unmittelbar nach dem Laden von Informationen in das Dataset, z. B., wenn Sie Daten aus der Quelle einlesen.  
   
--   Nach dem Senden von Änderungen aus dem Dataset mit der Datenquelle (jedoch nicht vorher, da Sie die neuen Daten verlieren würden, die zum Senden von Änderungen an der Datenbank erforderlich ist).  
+- Nach dem Senden von Änderungen aus dem Dataset mit der Datenquelle (jedoch nicht vorher, da Sie die neuen Daten verlieren würden, die zum Senden von Änderungen an der Datenbank erforderlich ist).  
   
- Sie können für die ausstehenden Änderungen im Dataset ein Commit ausführen, indem Sie die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode aufrufen. In der Regel <xref:System.Data.DataSet.AcceptChanges%2A> wird bei den folgenden Situationen in Ihrer Anwendung aufgerufen.  
+  Sie können für die ausstehenden Änderungen im Dataset ein Commit ausführen, indem Sie die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode aufrufen. In der Regel <xref:System.Data.DataSet.AcceptChanges%2A> wird bei den folgenden Situationen in Ihrer Anwendung aufgerufen.  
   
--   Nach dem Laden Sie des Datasets. Wenn Sie ein Dataset laden, indem Sie die `Fill`-Methode eines TableAdapter aufrufen, führt der Adapter automatisch ein Commit für die Änderungen aus. Wenn ein Dataset jedoch geladen wird, indem Sie ein anderes Dataset mit ihm zusammenführen, müssen Sie den Commit für die Änderungen manuell ausführen.  
+- Nach dem Laden Sie des Datasets. Wenn Sie ein Dataset laden, indem Sie die `Fill`-Methode eines TableAdapter aufrufen, führt der Adapter automatisch ein Commit für die Änderungen aus. Wenn ein Dataset jedoch geladen wird, indem Sie ein anderes Dataset mit ihm zusammenführen, müssen Sie den Commit für die Änderungen manuell ausführen.  
   
-    > [!NOTE]
-    >  Sie können verhindern, dass den Adapter automatisch Commit für Änderungen beim Aufrufen der `Fill` Methode durch Festlegen der `AcceptChangesDuringFill` Eigenschaft des Adapters zum `false`. Wenn sie, um festgelegt ist `false`, und klicken Sie dann die <xref:System.Data.DataRow.RowState%2A> jeder Zeile, die während des Auffüllens eingefügt wird festgelegt ist <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Sie können verhindern, dass den Adapter automatisch Commit für Änderungen beim Aufrufen der `Fill` Methode durch Festlegen der `AcceptChangesDuringFill` Eigenschaft des Adapters zum `false`. Wenn sie, um festgelegt ist `false`, und klicken Sie dann die <xref:System.Data.DataRow.RowState%2A> jeder Zeile, die während des Auffüllens eingefügt wird festgelegt ist <xref:System.Data.DataRowState>.  
   
--   Nachdem Sie Datasetänderungen an einem anderen Prozess, z. B. eine XML-Webdienst gesendet.  
+- Nachdem Sie Datasetänderungen an einem anderen Prozess, z. B. eine XML-Webdienst gesendet.  
   
-    > [!CAUTION]
-    >  Wenn ein Commit für Änderungen auf diese Weise ausgeführt wird, werden sämtliche Änderungsinformationen gelöscht. Keine Änderungen erst nach dem führen Sie Ausführen von Vorgängen, die erfordern, dass Ihre Anwendung wissen, welche Änderungen im Dataset vorgenommen wurden abgeschlossen.  
+  > [!CAUTION]
+  >  Wenn ein Commit für Änderungen auf diese Weise ausgeführt wird, werden sämtliche Änderungsinformationen gelöscht. Keine Änderungen erst nach dem führen Sie Ausführen von Vorgängen, die erfordern, dass Ihre Anwendung wissen, welche Änderungen im Dataset vorgenommen wurden abgeschlossen.  
   
- Diese Methode umfasst folgende Schritte:  
+  Diese Methode umfasst folgende Schritte:  
   
--   Schreibt die <xref:System.Data.DataRowVersion> Version eines Datensatzes in die <xref:System.Data.DataRowVersion> Version und die ursprüngliche Version überschrieben.  
+- Schreibt die <xref:System.Data.DataRowVersion> Version eines Datensatzes in die <xref:System.Data.DataRowVersion> Version und die ursprüngliche Version überschrieben.  
   
--   Entfernt jede Zeile, in denen die <xref:System.Data.DataRow.RowState%2A> -Eigenschaftensatz auf <xref:System.Data.DataRowState>.  
+- Entfernt jede Zeile, in denen die <xref:System.Data.DataRow.RowState%2A> -Eigenschaftensatz auf <xref:System.Data.DataRowState>.  
   
--   Legt die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines Datensatzes auf <xref:System.Data.DataRowState> fest.  
+- Legt die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines Datensatzes auf <xref:System.Data.DataRowState> fest.  
   
- Die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode ist auf drei Ebenen verfügbar. Sie erreichen ihn auf eine <xref:System.Data.DataRow> Objekt, das Commits ändert sich nur diese Zeile. Sie können es auch aufrufen, auf eine <xref:System.Data.DataTable> Objekt, um alle Zeilen in einer Tabelle zu übernehmen. Schließlich können Sie ihn aufrufen auf der <xref:System.Data.DataSet> Objekt, um alle ausstehenden Änderungen in sämtlichen Datensätzen aller Tabellen des Datasets zu übernehmen.  
+  Die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode ist auf drei Ebenen verfügbar. Sie erreichen ihn auf eine <xref:System.Data.DataRow> Objekt, das Commits ändert sich nur diese Zeile. Sie können es auch aufrufen, auf eine <xref:System.Data.DataTable> Objekt, um alle Zeilen in einer Tabelle zu übernehmen. Schließlich können Sie ihn aufrufen auf der <xref:System.Data.DataSet> Objekt, um alle ausstehenden Änderungen in sämtlichen Datensätzen aller Tabellen des Datasets zu übernehmen.  
   
- In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode aufgerufen wird, beschrieben, für welche Änderungen ein Commit ausgeführt wird.  
+  In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode aufgerufen wird, beschrieben, für welche Änderungen ein Commit ausgeführt wird.  
   
 |Methode|Ergebnis|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
  Daten können auf verschiedene Weisen überprüft werden:  
   
--   In der Geschäftsschicht, indem der Anwendung Code für Datenüberprüfungen hinzugefügt wird. Dieses Vorgehen ist nur im Dataset möglich. Das Dataset bietet einige Vorteile der Back-End-Validierung, z. B. die Möglichkeit, Änderungen an Spalten- und Zeilenwerten zu überprüfen. Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
+- In der Geschäftsschicht, indem der Anwendung Code für Datenüberprüfungen hinzugefügt wird. Dieses Vorgehen ist nur im Dataset möglich. Das Dataset bietet einige Vorteile der Back-End-Validierung, z. B. die Möglichkeit, Änderungen an Spalten- und Zeilenwerten zu überprüfen. Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
   
--   In der Präsentationsschicht, indem Formularen Validierungen hinzugefügt werden. Weitere Informationen finden Sie unter [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- In der Präsentationsschicht, indem Formularen Validierungen hinzugefügt werden. Weitere Informationen finden Sie unter [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   Im Back-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen. Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können. Allerdings kann dieser Ansatz nicht anwendungsspezifische validierungsanforderungen Rechnung tragen. Darüber hinaus kann die Datenquelle aus, überprüfen Sie die Daten dazu führen, dass in zahlreiche Roundtrips an die Datenquelle, je nachdem, wie die Auflösung der vom Back-End ausgelösten Validierungsfehler von der Anwendung behandelt.  
+- Im Back-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen. Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können. Allerdings kann dieser Ansatz nicht anwendungsspezifische validierungsanforderungen Rechnung tragen. Darüber hinaus kann die Datenquelle aus, überprüfen Sie die Daten dazu führen, dass in zahlreiche Roundtrips an die Datenquelle, je nachdem, wie die Auflösung der vom Back-End ausgelösten Validierungsfehler von der Anwendung behandelt.  
   
-    > [!IMPORTANT]
-    >  Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType>, sorgfältig überprüfen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in einer Datenbank übertragen, immer überprüfen, ob die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden. Weitere Informationen finden Sie unter [Übersicht über Skriptangriffe](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType>, sorgfältig überprüfen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in einer Datenbank übertragen, immer überprüfen, ob die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden. Weitere Informationen finden Sie unter [Übersicht über Skriptangriffe](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenquelle übertragen. In den meisten Fällen rufen Sie dazu die `Update`-Methode eines TableAdapter (oder Datenadapters) auf. Die Methode durchläuft jeden Datensatz in einer Datentabelle, bestimmt, welche Art von Update erforderlich ist (zu aktualisieren, einfügen oder löschen), sofern vorhanden, und führt dann den entsprechenden Befehl.  
+  Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenquelle übertragen. In den meisten Fällen rufen Sie dazu die `Update`-Methode eines TableAdapter (oder Datenadapters) auf. Die Methode durchläuft jeden Datensatz in einer Datentabelle, bestimmt, welche Art von Update erforderlich ist (zu aktualisieren, einfügen oder löschen), sofern vorhanden, und führt dann den entsprechenden Befehl.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Übertragen von Updates mit der Datenquelle  
  Eine Abbildung, wie Updates vorgenommen werden nehmen Sie an, dass Ihre Anwendung ein Dataset verwendet, die eine einzelnen Datentabelle enthält. Die Anwendung ruft zwei Zeilen aus der Datenbank ab. Nach dem Abruf sieht die Datentabelle im Arbeitsspeicher wie folgt aus:  

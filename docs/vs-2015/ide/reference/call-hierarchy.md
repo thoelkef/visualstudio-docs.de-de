@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851111"
 ---
 # <a name="call-hierarchy"></a>Aufrufhierarchie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ Mithilfe der Aufrufhierarchie können Sie in Ihrem Code navigieren, indem Sie al
  ![Aufrufhierarchie mit einem geöffneten Knoten](../../ide/reference/media/onenode.png "OneNode")  
 Fenster „Aufrufhierarchie“  
   
--   Wenn Sie den **Calls To**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
+- Wenn Sie den **Calls To**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
   
--   Wenn Sie den **Calls From**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
+- Wenn Sie den **Calls From**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
   
- Anschließend können Sie sämtliche dieser Unterknotenmembers auf **Calls To**- und **Calls From**-Knoten erweitern. Dadurch können Sie, wie in der folgenden Abbildung dargestellt, in den Aufruferstapel navigieren.  
+  Anschließend können Sie sämtliche dieser Unterknotenmembers auf **Calls To**- und **Calls From**-Knoten erweitern. Dadurch können Sie, wie in der folgenden Abbildung dargestellt, in den Aufruferstapel navigieren.  
   
- ![Aufrufhierarchie: Mehrere Knoten geöffnet](../../ide/media/multiplenodes.png "MultipleNodes")  
-Fenster „Aufrufhierarchie“  
+  ![Aufrufhierarchie: Mehrere Knoten geöffnet](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Fenster „Aufrufhierarchie“  
   
- Für Members, die als virtuell oder abstrakt definiert sind, wird ein **Overrides method name**-Knoten (Knoten zur Außerkraftsetzung des Methodennamens) angezeigt. Für Schnittstellenmember wird ein Knoten zum **Implementieren des Methodennamens** angezeigt. Diese erweiterbaren Knoten erscheinen auf derselben Ebene wie **Calls To**- und **Calls From**-Knoten.  
+  Für Members, die als virtuell oder abstrakt definiert sind, wird ein **Overrides method name**-Knoten (Knoten zur Außerkraftsetzung des Methodennamens) angezeigt. Für Schnittstellenmember wird ein Knoten zum **Implementieren des Methodennamens** angezeigt. Diese erweiterbaren Knoten erscheinen auf derselben Ebene wie **Calls To**- und **Calls From**-Knoten.  
   
- Das Feld **Suchbereich** in der Symbolleiste enthält verschiedene Auswahlmöglichkeiten für **My Solution** („Meine Projektmappe“), **Aktuelles Projekt** und **Aktuelles Dokument**.  
+  Das Feld **Suchbereich** in der Symbolleiste enthält verschiedene Auswahlmöglichkeiten für **My Solution** („Meine Projektmappe“), **Aktuelles Projekt** und **Aktuelles Dokument**.  
   
- Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten Member auswählen:  
+  Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten Member auswählen:  
   
--   Im Detailbereich **Aufrufhierarchie** werden alle Codezeilen angezeigt, in denen dieser untergeordnete Member von dem übergeordneten Member aufgerufen wird.  
+- Im Detailbereich **Aufrufhierarchie** werden alle Codezeilen angezeigt, in denen dieser untergeordnete Member von dem übergeordneten Member aufgerufen wird.  
   
--   Wenn das **Codedefinitionsfenster** geöffnet ist, zeigt es den Code für den ausgewählten Member an. Dieses Fenster ist in C# und C++ verfügbar. Weitere Informationen zu diesem Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
+- Wenn das **Codedefinitionsfenster** geöffnet ist, zeigt es den Code für den ausgewählten Member an. Dieses Fenster ist in C# und C++ verfügbar. Weitere Informationen zu diesem Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.  

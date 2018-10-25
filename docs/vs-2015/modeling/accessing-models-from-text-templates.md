@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919857"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und ander
   
  So greifen Sie auf ein Modell aus einer Textvorlage  
   
--   Legen Sie die Eigenschaft erben von der vorlagenanweisung auf <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Dies ermöglicht den Zugriff auf den Store.  
+- Legen Sie die Eigenschaft erben von der vorlagenanweisung auf <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Dies ermöglicht den Zugriff auf den Store.  
   
--   Geben Sie anweisungsprozessoren, für die DSL, die Sie zugreifen möchten. Dies lädt die Assemblys für Ihre DSL, damit Sie die Domänenklassen, Eigenschaften und Beziehungen im Code der Textvorlage verwenden können. Sie lädt auch die Modelldatei, die Sie angeben.  
+- Geben Sie anweisungsprozessoren, für die DSL, die Sie zugreifen möchten. Dies lädt die Assemblys für Ihre DSL, damit Sie die Domänenklassen, Eigenschaften und Beziehungen im Code der Textvorlage verwenden können. Sie lädt auch die Modelldatei, die Sie angeben.  
   
- Ein `.tt` Datei, die ähnlich wie im folgenden Beispiel wird beim Erstellen eines neuen im debuggingprojekt erstellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung über die minimale Sprache DSL-Vorlage.  
+  Ein `.tt` Datei, die ähnlich wie im folgenden Beispiel wird beim Erstellen eines neuen im debuggingprojekt erstellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung über die minimale Sprache DSL-Vorlage.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Beachten Sie Folgendes:  
   
-1.  Die `filename` und `validation` Parameter werden getrennt, mit ";" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
+1. Die `filename` und `validation` Parameter werden getrennt, mit ";" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
   
-2.  Die Liste der Validierungskategorien bestimmt, welche Überprüfungsmethoden ausgeführt werden. Mehrere Kategorien sollten getrennt werden, mit "&#124;" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
+2. Die Liste der Validierungskategorien bestimmt, welche Überprüfungsmethoden ausgeführt werden. Mehrere Kategorien sollten getrennt werden, mit "&#124;" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
   
- Wenn ein Fehler gefunden wird, wird Sie im Fenster "Fehler" gemeldet, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
+   Wenn ein Fehler gefunden wird, wird Sie im Fenster "Fehler" gemeldet, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
   
 ##  <a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage  
   

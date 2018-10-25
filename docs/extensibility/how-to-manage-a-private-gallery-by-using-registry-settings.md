@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e4648643e60939fb74d69f960342d14b8a5d1b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854662"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Gewusst wie: Verwalten ein privates Katalogs mithilfe von registrierungseinstellungen
 Wenn Sie ein Administrator oder Entwickler einer Isolated Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, die Samples Gallery oder private Kataloge steuern. Um einen Katalog verfügbar oder nicht verfügbar machen, erstellen eine *PKGDEF* -Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.  
@@ -41,17 +41,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  Die `Repositories` Schlüssel verweist auf den Katalog aktiviert bzw. deaktiviert werden soll. Verwenden das folgende Repository GUIDs, die Visual Studio Gallery und die Samples Gallery:  
   
--   Visual Studio-Katalog: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio-Katalog: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Beispielkatalog: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Beispielkatalog: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- Die `Disabled` Wert ist optional. Standardmäßig wird ein Katalog aktiviert.  
+  Die `Disabled` Wert ist optional. Standardmäßig wird ein Katalog aktiviert.  
   
- Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge, in aufgeführt sind, der **Optionen** Dialogfeld. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Kataloge mit Priorität 100 beginnen. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, ist die Reihenfolge, in der sie angezeigt werden, nach den Werten ihrer lokalisierten bestimmt `DisplayName` Attribute.  
+  Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge, in aufgeführt sind, der **Optionen** Dialogfeld. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Kataloge mit Priorität 100 beginnen. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, ist die Reihenfolge, in der sie angezeigt werden, nach den Werten ihrer lokalisierten bestimmt `DisplayName` Attribute.  
   
- Die `Protocol` für Atom- oder SharePoint-basierten Katalogen ist erforderlich.  
+  Die `Protocol` für Atom- oder SharePoint-basierten Katalogen ist erforderlich.  
   
- Entweder `DisplayName`, oder beides `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` -Paar wird verwendet.  
+  Entweder `DisplayName`, oder beides `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` -Paar wird verwendet.  
   
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren Sie eine PKGDEF-Datei mit Visual Studio Gallery  
  Sie können einen Katalog im Deaktivieren einer *PKGDEF* Datei. Der folgende Eintrag wird der Visual Studio Gallery deaktiviert:  

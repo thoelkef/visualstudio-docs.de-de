@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848617"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Sie können allgemeine Anwendungseigenschaften für Visual Basic-, C#- und F#-An
   
  Die folgenden Aufgaben können im Bereich **Anwendung** ausgeführt werden:  
   
--   Angeben von Assemblyinformationen  
+- Angeben von Assemblyinformationen  
   
--   Angeben eines Begrüßungsbildschirms für eine Anwendung  
+- Angeben eines Begrüßungsbildschirms für eine Anwendung  
   
--   Angeben von Ereignissen auf Anwendungsebene  
+- Angeben von Ereignissen auf Anwendungsebene  
   
--   Ändern eines Assemblynames  
+- Ändern eines Assemblynames  
   
--   Ändern des Namespaces für eine Anwendung  
+- Ändern des Namespaces für eine Anwendung  
   
--   Ändern des Anwendungstyps  
+- Ändern des Anwendungstyps  
   
--   Ändern des Startobjekts für eine Anwendung  
+- Ändern des Startobjekts für eine Anwendung  
   
--   Angeben eines Anwendungssymbols  
+- Angeben eines Anwendungssymbols  
   
--   Aktivieren von visuellen Windows XP-Stilen  
+- Aktivieren von visuellen Windows XP-Stilen  
   
--   Angeben des Instanziierungsverhaltens für eine Anwendung  
+- Angeben des Instanziierungsverhaltens für eine Anwendung  
   
--   Aktivieren von benutzerdefinierter Benutzerauthentifizierung  
+- Aktivieren von benutzerdefinierter Benutzerauthentifizierung  
   
--   Angeben des Herunterfahrverhaltens für eine Anwendung  
+- Angeben des Herunterfahrverhaltens für eine Anwendung  
   
- Welche Aufgaben für Ihre Anwendung verfügbar sind, hängt von der verwendeten Entwicklungssprache ab.  
+  Welche Aufgaben für Ihre Anwendung verfügbar sind, hängt von der verwendeten Entwicklungssprache ab.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

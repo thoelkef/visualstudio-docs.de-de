@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c39546d48cd8b8bf71594685f944751c1f023750
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822071"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
 
@@ -60,35 +60,35 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1.  Mit der rechten Maustaste auf den Projektknoten im Projektmappen-Explorer, und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie im linken Bereich unter dem C#-Knoten **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
+1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie im linken Bereich unter dem C#-Knoten **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
 
-     ![Entity Framework Model Elemente bei neuen Projekten](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Entity Framework Model Elemente bei neuen Projekten](../data-tools/media/raddata-ef-new-project-item.png)
 
-  2.  Rufen Sie das Modell `Northwind_model` , und wählen Sie **OK**. Die **Entity Data Model-Assistenten** wird geöffnet. Wählen Sie **EF Designer aus Datenbank** , und klicken Sie dann auf **Weiter**.
+2. Rufen Sie das Modell `Northwind_model` , und wählen Sie **OK**. Die **Entity Data Model-Assistenten** wird geöffnet. Wählen Sie **EF Designer aus Datenbank** , und klicken Sie dann auf **Weiter**.
 
-     ![EF-Modell aus der Datenbank](../data-tools/media/raddata-ef-model-from-database.png)
+   ![EF-Modell aus der Datenbank](../data-tools/media/raddata-ef-model-from-database.png)
 
-3.  Wählen Sie im nächsten Bildschirm Ihre LocalDB Northwind-Verbindung, und klicken Sie auf **Weiter**.
+3. Wählen Sie im nächsten Bildschirm Ihre LocalDB Northwind-Verbindung, und klicken Sie auf **Weiter**.
 
-4.  Wählen Sie in der nächsten Seite des Assistenten für die Tabellen, gespeicherten Prozeduren und andere Datenbankobjekte in das Entity Framework-Modell eingeschlossen werden sollen. Erweitern Sie den Knoten "Dbo" in der Strukturansicht angezeigt, und wählen Sie **Kunden**, **Bestellungen**, und **Bestelldetails**. Lassen Sie die Standardeinstellungen unverändert, und klicken Sie auf **Fertig stellen**.
+4. Wählen Sie in der nächsten Seite des Assistenten für die Tabellen, gespeicherten Prozeduren und andere Datenbankobjekte in das Entity Framework-Modell eingeschlossen werden sollen. Erweitern Sie den Knoten "Dbo" in der Strukturansicht angezeigt, und wählen Sie **Kunden**, **Bestellungen**, und **Bestelldetails**. Lassen Sie die Standardeinstellungen unverändert, und klicken Sie auf **Fertig stellen**.
 
-     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png)
+    ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png)
 
-5.  Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind plain old C#-Klassen und sind wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
+5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind plain old C#-Klassen und sind wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
 
-       ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
+      ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-     Die Designer-Oberfläche für die *EDMX* Datei können Sie einige Eigenschaften und Beziehungen im Modell zu ändern. Wir werden nicht in dieser exemplarischen Vorgehensweise den Designer zu verwenden.
+    Die Designer-Oberfläche für die *EDMX* Datei können Sie einige Eigenschaften und Beziehungen im Modell zu ändern. Wir werden nicht in dieser exemplarischen Vorgehensweise den Designer zu verwenden.
 
-6.  Die *TT* Dateien sind allgemein und müssen Sie ein Knotentyp mit der WPF-Datenbindung, funktioniert die ObservableCollections erfordert optimieren. In **Projektmappen-Explorer**, erweitern Sie den Northwind_model-Knoten, bis Sie gefunden *Northwind_model.tt*. (Stellen Sie sicher, dass Sie sind nicht in der *. Context.tt* -Datei, die direkt unterhalb der *EDMX* Datei.)
+6. Die *TT* Dateien sind allgemein und müssen Sie ein Knotentyp mit der WPF-Datenbindung, funktioniert die ObservableCollections erfordert optimieren. In **Projektmappen-Explorer**, erweitern Sie den Northwind_model-Knoten, bis Sie gefunden *Northwind_model.tt*. (Stellen Sie sicher, dass Sie sind nicht in der *. Context.tt* -Datei, die direkt unterhalb der *EDMX* Datei.)
 
-    -   Ersetzen Sie die zwei Vorkommen des <xref:System.Collections.ICollection> mit <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   -   Ersetzen Sie die zwei Vorkommen des <xref:System.Collections.ICollection> mit <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
-    -   Ersetzen Sie das erste Vorkommen des <xref:System.Collections.Generic.HashSet%601> mit <xref:System.Collections.ObjectModel.ObservableCollection%601> der Nähe von Zeile 51. Ersetzen Sie das zweite Vorkommen der HashSet nicht.
+   -   Ersetzen Sie das erste Vorkommen des <xref:System.Collections.Generic.HashSet%601> mit <xref:System.Collections.ObjectModel.ObservableCollection%601> der Nähe von Zeile 51. Ersetzen Sie das zweite Vorkommen der HashSet nicht.
 
-    -   Ersetzen Sie dies das einzige Vorkommen <xref:System.Collections.Generic> (Nähe von Zeile 431) mit <xref:System.Collections.ObjectModel>.
+   -   Ersetzen Sie dies das einzige Vorkommen <xref:System.Collections.Generic> (Nähe von Zeile 431) mit <xref:System.Collections.ObjectModel>.
 
-7.  Drücken Sie **STRG**+**UMSCHALT**+**B** zum Erstellen des Projekts. Wenn der Build abgeschlossen ist, sind die Modellklassen des Datenquellen-Assistenten angezeigt.
+7. Drücken Sie **STRG**+**UMSCHALT**+**B** zum Erstellen des Projekts. Wenn der Build abgeschlossen ist, sind die Modellklassen des Datenquellen-Assistenten angezeigt.
 
 Jetzt können Sie dieses Modell auf der Seite "XAML" einbinden, sodass Sie anzuzeigen, navigieren und die Daten ändern können.
 

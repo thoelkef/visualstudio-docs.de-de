@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889788"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Hinzufügen von Befehlen und Bewegungen zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>So definieren Sie mithilfe einer Projektvorlage eine Erweiterung  
   
-1.  Erstellen Sie in einer neuen Projektmappe ein Projekt. Verwenden Sie dazu den Befehl **Neues Projekt** im Menü **Datei** .  
+1. Erstellen Sie in einer neuen Projektmappe ein Projekt. Verwenden Sie dazu den Befehl **Neues Projekt** im Menü **Datei** .  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**entweder **Layer Designer Command Extension** (Ebenen-Designer - Befehlserweiterung) oder **Layer Designer Command Extension**(Ebenen-Designer - Gestenerweiterung) aus.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**entweder **Layer Designer Command Extension** (Ebenen-Designer - Befehlserweiterung) oder **Layer Designer Command Extension**(Ebenen-Designer - Gestenerweiterung) aus.  
   
-     Mit dieser Vorlage wird ein Projekt mit einem kleinen Arbeitsbeispiel erstellt.  
+    Mit dieser Vorlage wird ein Projekt mit einem kleinen Arbeitsbeispiel erstellt.  
   
-3.  Drücken Sie **STRG+F5** oder **F5**, um die Erweiterung zu testen.  
+3. Drücken Sie **STRG+F5** oder **F5**, um die Erweiterung zu testen.  
   
-     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Erstellen Sie in dieser Instanz ein Ebenendiagramm. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
+    Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Erstellen Sie in dieser Instanz ein Ebenendiagramm. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
   
-4.  Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Sie können dem gleichen Projekt mehrere Befehls- oder Gestenhandler hinzufügen. Weitere Informationen finden Sie in einem der folgenden Abschnitte:  
+5. Sie können dem gleichen Projekt mehrere Befehls- oder Gestenhandler hinzufügen. Weitere Informationen finden Sie in einem der folgenden Abschnitte:  
   
-     [Definieren eines Menübefehls](#command)  
+    [Definieren eines Menübefehls](#command)  
   
-     [Definieren eines Gestenhandlers](#gesture)  
+    [Definieren eines Gestenhandlers](#gesture)  
   
-6.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Ordner **bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
+6. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner *bin\\*. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Hinzufügen eines Befehls oder einer Geste zu einem separaten VSIX  
  Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelemente und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen. Weitere Informationen zu anderen Modellerweiterungstypen finden Sie unter [Erweitern von UML-Modellen und Diagrammen](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
 ##  <a name="command"></a> Definieren eines Menübefehls  
  Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefehlsdefinitionen hinzufügen. Jeder Befehl wird von einer Klasse definiert, die über die folgenden Eigenschaften verfügt:  
   
--   Die Klasse wird folgendermaßen deklariert:  
+- Die Klasse wird folgendermaßen deklariert:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   Der Namespace und der Name der Klasse sind unwichtig.  
+- Der Namespace und der Name der Klasse sind unwichtig.  
   
--   `ICommandExtension` wird mit den folgenden Methoden implementiert:  
+- `ICommandExtension` wird mit den folgenden Methoden implementiert:  
   
-    -   `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.  
+  -   `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.  
   
-    -   `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.  
+  -   `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.  
   
-    -   `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.  
+  -   `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.  
   
--   Sie können `IDiagramContext`importieren, um die aktuelle Auswahl zu bestimmen:  
+- Sie können `IDiagramContext`importieren, um die aktuelle Auswahl zu bestimmen:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Erstellen Sie zum Hinzufügen eines neuen Befehls eine neue Codedatei, die das folgende Beispiel enthält. Testen und bearbeiten Sie das Beispiel dann.  
+  Erstellen Sie zum Hinzufügen eines neuen Befehls eine neue Codedatei, die das folgende Beispiel enthält. Testen und bearbeiten Sie das Beispiel dann.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Beachten Sie die folgenden Punkte zu Gestenhandlern:  
   
--   `IGestureExtension` umfasst folgende Member:  
+- `IGestureExtension` umfasst folgende Member:  
   
-     **OnDoubleClick** - Wird aufgerufen, wenn der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.  
+   **OnDoubleClick** - Wird aufgerufen, wenn der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.  
   
-     **CanDragDrop** - Wird wiederholt aufgerufen, wenn der Benutzer beim Ziehen eines Elements in das Diagramm die Maus bewegt. Das muss schnell funktionieren.  
+   **CanDragDrop** - Wird wiederholt aufgerufen, wenn der Benutzer beim Ziehen eines Elements in das Diagramm die Maus bewegt. Das muss schnell funktionieren.  
   
-     **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.  
+   **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.  
   
--   Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:  
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Handler für einige Typen von gezogenen Elementen sind bereits definiert. Der Benutzer kann z. B. Elemente aus dem Projektmappen-Explorer in ein Ebenendiagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.  
+- Handler für einige Typen von gezogenen Elementen sind bereits definiert. Der Benutzer kann z. B. Elemente aus dem Projektmappen-Explorer in ein Ebenendiagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.  
   
- Weitere Informationen zum Decodieren anderer Elemente, wenn sie in das Diagramm gezogen werden, finden Sie unter [Definieren eines gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Weitere Informationen zum Decodieren anderer Elemente, wenn sie in das Diagramm gezogen werden, finden Sie unter [Definieren eines gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md)   

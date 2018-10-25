@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbolsbyaddr:: Symbolbyva | Microsoft Docs'
+title: 'Idiaenumsymbolsbyaddr:: Symbolbyva | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a47c39a417e65d30178a2f878e53196e7f7fb27
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 688d45cce181b7c4ac0b61584a65c7c755b0f2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905752"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
-Positioniert den Enumerator durch Ausführen einer Suche nach virtuellen Adresse ("VA" ist).  
+Positioniert den Enumerator durch eine Suche über die virtuelle Adresse (VA).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ HRESULT symbolByVA (
  [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das Symbol gefunden darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn das Symbol nicht gefunden werden kann. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn das Symbol nicht gefunden werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

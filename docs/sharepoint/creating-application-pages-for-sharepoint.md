@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853141"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Ein *Anwendungsseite* ist eine ASP.NET Web-Seite, die für die Verwendung in einer SharePoint-Website entwickelt wurde. Anwendungsseiten sind ein spezieller Typ von der ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite ist, dass eine Anwendungsseite Inhalt enthält, das mit einer SharePoint-Masterseite zusammengeführt wird. Eine Masterseite ermöglicht Anwendungsseiten zur Darstellung und Verhalten wie andere Seiten auf einer Website freigeben.  
@@ -67,7 +67,7 @@ ms.locfileid: "36326126"
   
  Sie können eine Anwendungsseite Debuggen, ebenso wie Sie andere SharePoint-Projektelemente in Visual Studio debuggen. Wenn Sie den Visual Studio-Debugger starten, wird von Visual Studio die SharePoint-Website geöffnet.  
   
- Um die Seite "Anwendung" anzuzeigen, müssen Sie manuell auf den Speicherort der Anwendungsseite navigieren (z. B.: http://*Server_Name*/_layouts /*Project_Name*  /ApplicationPage1.aspx).  
+ Um die Seite "Anwendung" anzuzeigen, müssen Sie manuell auf den Speicherort der Anwendungsseite navigieren (z. B.: http://<em>Server_Name</em>/_layouts /*Project_Name*  /ApplicationPage1.aspx).  
   
  Weitere Informationen zum Debuggen von SharePoint-Projekte finden Sie unter [Problembehandlung bei SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   

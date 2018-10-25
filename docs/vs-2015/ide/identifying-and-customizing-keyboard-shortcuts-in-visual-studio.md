@@ -24,35 +24,35 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 908d5094ad36a6f907c781987fba1fd053d673dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64c663e423d0d87fa0b710b65f60b4890a836d88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830937"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese Tastenkombinationen anpassen und sie dann exportieren, damit andere Benutzer sie verwenden können. Viele Tastenkombinationen rufen immer dieselben Befehle auf, aber das Verhalten einer Tastenkombination kann auf der Grundlage von Bedingungen unterschiedlich sein, die von folgenden Fragen abhängen:  
   
--   Welche Standardumgebungseinstellungen wurde bei der erstmaligen Ausführung von Visual Studio ausgewählt (beispielsweise "Allgemeine Entwicklungseinstellungen" oder Visual C#)?  
+- Welche Standardumgebungseinstellungen wurde bei der erstmaligen Ausführung von Visual Studio ausgewählt (beispielsweise "Allgemeine Entwicklungseinstellungen" oder Visual C#)?  
   
--   Wurde das Verhalten der Tastenkombination angepasst?  
+- Wurde das Verhalten der Tastenkombination angepasst?  
   
--   In welchem Kontext wird die Tastenkombination angewendet? Beispielsweise ruft die Taste F2 den Edit.EditCell-Befehl auf, wenn Sie den Einstellungs-Designer verwenden, aber den File.Rename-Befehl, wenn Sie mit Team Explorer arbeiten.  
+- In welchem Kontext wird die Tastenkombination angewendet? Beispielsweise ruft die Taste F2 den Edit.EditCell-Befehl auf, wenn Sie den Einstellungs-Designer verwenden, aber den File.Rename-Befehl, wenn Sie mit Team Explorer arbeiten.  
   
- Unabhängig von Einstellungen, Anpassungen und Kontext können Sie eine Tastenkombination im Dialogfeld **Optionen** immer nachschlagen und ändern. Sie finden unter [Standardtastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) die Standardtastenkombinationen für viele Befehle, und unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md) die vollständige Liste aller Standardtastenkombinationen für „Allgemeine Entwicklungseinstellungen“.  
+  Unabhängig von Einstellungen, Anpassungen und Kontext können Sie eine Tastenkombination im Dialogfeld **Optionen** immer nachschlagen und ändern. Sie finden unter [Standardtastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) die Standardtastenkombinationen für viele Befehle, und unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md) die vollständige Liste aller Standardtastenkombinationen für „Allgemeine Entwicklungseinstellungen“.  
   
- **Inhalt**  
+  **Inhalt**  
   
--   [Nachschlagen einer Tastenkombination](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
+- [Nachschlagen einer Tastenkombination](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
   
--   [Anpassen einer Tastenkombination](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
+- [Anpassen einer Tastenkombination](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
   
--   [Freigeben benutzerdefinierter Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
+- [Freigeben benutzerdefinierter Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
   
- Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem anderen zugewiesen ist, ruft diese Tastenkombination immer diesen Befehl auf. Aber eine Tastenkombination kann einem Befehl im globalen Kontext und einem anderen Befehl in einem speziellen Kontext zugewiesen werden. Wenn Sie eine solche Tastenkombination in dem speziellen Kontext verwenden, ruft sie den Befehl für diesen Kontext auf und nicht den Befehl für den globalen Kontext.  
+  Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem anderen zugewiesen ist, ruft diese Tastenkombination immer diesen Befehl auf. Aber eine Tastenkombination kann einem Befehl im globalen Kontext und einem anderen Befehl in einem speziellen Kontext zugewiesen werden. Wenn Sie eine solche Tastenkombination in dem speziellen Kontext verwenden, ruft sie den Befehl für diesen Kontext auf und nicht den Befehl für den globalen Kontext.  
   
 > [!NOTE]
 >  Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.  

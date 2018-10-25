@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885134"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Vorbereitung zum Debuggen: Windows Forms-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debu
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>So debuggen Sie eine C#-, F#- oder Visual Basic-Windows Forms-Anwendung  
   
-1.  Öffnen Sie das Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Öffnen Sie das Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Erstellen Sie Haltepunkte nach Bedarf.  
+2. Erstellen Sie Haltepunkte nach Bedarf.  
   
-     Da Windows Forms-Anwendungen ereignisgesteuert sind, gehen die Haltepunkte entweder in den Ereignishandlercode oder in Methoden, die vom Ereignishandlercode aufgerufen werden. Typische Ereignisse, in denen Haltepunkte platziert werden sollte, sind z. B. folgende:  
+    Da Windows Forms-Anwendungen ereignisgesteuert sind, gehen die Haltepunkte entweder in den Ereignishandlercode oder in Methoden, die vom Ereignishandlercode aufgerufen werden. Typische Ereignisse, in denen Haltepunkte platziert werden sollte, sind z. B. folgende:  
   
-    1.  Einem Steuerelement zugeordnete Ereignisse, z. B. Klicken, Drücken der Eingabetaste usw.  
+   1. Einem Steuerelement zugeordnete Ereignisse, z. B. Klicken, Drücken der Eingabetaste usw.  
   
-    2.  Ereignisse, die dem Start bzw. Herunterfahren der Anwendung zugeordnet sind, z. B. Laden, Aktivierung usw.  
+   2. Ereignisse, die dem Start bzw. Herunterfahren der Anwendung zugeordnet sind, z. B. Laden, Aktivierung usw.  
   
-    3.  Fokusereignisse und Validierungsereignisse.  
+   3. Fokusereignisse und Validierungsereignisse.  
   
-     Weitere Informationen finden Sie unter [Erstellen von Ereignishandlern in Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Weitere Informationen finden Sie unter [Erstellen von Ereignishandlern in Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  Auf der **Debuggen** Menü klicken Sie auf **starten**.  
+3. Auf der **Debuggen** Menü klicken Sie auf **starten**.  
   
-4.  Debuggen Sie mit die vorgestellten [Debugger – Grundlagen](../debugger/debugger-basics.md).  
+4. Debuggen Sie mit die vorgestellten [Debugger – Grundlagen](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   

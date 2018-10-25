@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812464"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Gewusst wie: Erstellen eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz  
   
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie dann **Eigenschaften**.  
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie dann **Eigenschaften**.  
   
-2.  Auf der **Eigenschaften** auf **Codeanalyse**.  
+2. Auf der **Eigenschaften** auf **Codeanalyse**.  
   
-3.  In der **Regelsatz** Dropdown-Listenfeld, führen Sie einen der folgenden:  
+3. In der **Regelsatz** Dropdown-Listenfeld, führen Sie einen der folgenden:  
   
-    -   Wählen Sie den Regelsatz aus, den Sie anpassen möchten.  
+   - Wählen Sie den Regelsatz aus, den Sie anpassen möchten.  
   
      \- oder –  
   
-    -   Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.  
+   - Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.  
   
-4.  Klicken Sie auf **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.  
+4. Klicken Sie auf **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>So erstellen Sie einen benutzerdefinierten Regelsatz aus mehreren vorhandenen Regelsätzen  
   

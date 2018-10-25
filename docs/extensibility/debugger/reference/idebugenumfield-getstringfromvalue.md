@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+title: IDebugEnumField::GetStringFromValue | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872758"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Diese Methode ruft den Namen der Enumerationskonstante, dessen Wert zugewiesen.  
+Diese Methode ruft den Namen der Enumerationskonstante erhält den Wert ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,16 +43,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>Parameter  
  `value`  
- [in] Der Wert für den der Name der Enumeration Konstante abgerufen werden soll.  
+ [in] Der Wert für das der Name der Enumeration Konstanten abgerufen werden soll.  
   
  `pbstrValue`  
  [out] Der Name der Enumerationskonstante zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` ist der Wert keinen zugeordneten Namen hat bzw. wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` , wenn der Wert keinen zugeordneten Namen hat, oder gibt einen Fehlercode zurück.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn mehr als einen Namen, die den gleichen Wert zugeordnet ist, wird der Vorname in der Enumeration definierten zurückgegeben.  
+ Ist mehr als einen Namen, die den gleichen Wert zugeordnet, wird der Vorname in der Enumeration definierte zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

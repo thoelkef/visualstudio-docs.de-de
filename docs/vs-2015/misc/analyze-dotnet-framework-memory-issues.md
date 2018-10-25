@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812568"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analysieren von .NET Framework-Arbeitsspeicherproblemen
 Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio Speicherverluste und ineffiziente Arbeitsspeichernutzung in .NET Framework-Code. Die mindestens erforderliche .NET Framework-Version für den Zielcode ist .NET Framework 4.5.  
   
  Das arbeitsspeicheranalysetool analysiert Informationen in *Dumpdateien mit Heapdaten* , die eine Kopie der Objekte in einer app Speichers. Sie können Dumpdateien (.dmp) von der Visual Studio IDE oder mit anderen Systemtools sammeln.  
   
--   Sie können eine einzelne Momentaufnahme analysieren, um die relativen Auswirkungen der Objekttypen auf die Arbeitsspeichernutzung zu verstehen und Code in der App zu suchen, die Arbeitsspeicher auf ineffiziente Weise verwendet.  
+- Sie können eine einzelne Momentaufnahme analysieren, um die relativen Auswirkungen der Objekttypen auf die Arbeitsspeichernutzung zu verstehen und Code in der App zu suchen, die Arbeitsspeicher auf ineffiziente Weise verwendet.  
   
--   Sie können auch vergleichen (*Diff*) zweier Momentaufnahmen einer App aus, um Bereiche in Ihrem Code, die dazu führen, den Arbeitsspeicher dass zu verwenden, um im Laufe der Zeit erhöhen.  
+- Sie können auch vergleichen (*Diff*) zweier Momentaufnahmen einer App aus, um Bereiche in Ihrem Code, die dazu führen, den Arbeitsspeicher dass zu verwenden, um im Laufe der Zeit erhöhen.  
   
- Eine exemplarische Vorgehensweise des Analyzers für verwalteten Arbeitsspeicher finden Sie unter [mithilfe von Visual Studio 2013 to Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) auf dem Visual Studio ALM + Team Foundation Server-Blog.  
+  Eine exemplarische Vorgehensweise des Analyzers für verwalteten Arbeitsspeicher finden Sie unter [mithilfe von Visual Studio 2013 to Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) auf dem Visual Studio ALM + Team Foundation Server-Blog.  
   
 ##  <a name="BKMK_Contents"></a> Inhalt  
  [Arbeitsspeichernutzung in .NET Framework-apps](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  **Sammeln Sie einen Dump von Visual Studio**  
   
-1.  Sie können eine Dumpdatei für einen Prozess erstellen, der von einem Visual Studio-Projekt gestartet wurde, oder Sie fügen den Debugger an einen laufenden Prozess an. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Sie können eine Dumpdatei für einen Prozess erstellen, der von einem Visual Studio-Projekt gestartet wurde, oder Sie fügen den Debugger an einen laufenden Prozess an. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Beenden Sie die Ausführung. Der Debugger hält bei der Auswahl **alle unterbrechen** auf die **Debuggen** Menü oder bei einer Ausnahme oder an einem Haltepunkt  
+2. Beenden Sie die Ausführung. Der Debugger hält bei der Auswahl **alle unterbrechen** auf die **Debuggen** Menü oder bei einer Ausnahme oder an einem Haltepunkt  
   
-3.  Auf der **Debuggen** Menü wählen **Dump speichern unter**. In der **Dump speichern unter** Dialogfeld Feld, geben Sie einen Speicherort aus, und stellen Sie sicher, dass **Minidump mit Heap** (Standardeinstellung) ausgewählt ist, der **Dateityp** Liste.  
+3. Auf der **Debuggen** Menü wählen **Dump speichern unter**. In der **Dump speichern unter** Dialogfeld Feld, geben Sie einen Speicherort aus, und stellen Sie sicher, dass **Minidump mit Heap** (Standardeinstellung) ausgewählt ist, der **Dateityp** Liste.  
   
- **Zum Vergleichen von zwei Speichermomentaufnahmen**  
+   **Zum Vergleichen von zwei Speichermomentaufnahmen**  
   
- Um die gestiegene Arbeitsspeichernutzung einer App zu analysieren, erfassen Sie zwei Dumpdateien aus einer einzelnen Instanz der App.  
+   Um die gestiegene Arbeitsspeichernutzung einer App zu analysieren, erfassen Sie zwei Dumpdateien aus einer einzelnen Instanz der App.  
   
- ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
+   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analysieren der arbeitsspeichernutzung  
  [Die Liste der Objekte filtern](#BKMK_Filter_the_list_of_objects) **&#124;** [Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [vergleichen zwei Momentaufnahmen](#BKMK_Compare_two_memory_snapshots)  
   
  So analysieren Sie eine Dumpdatei bei Problemen mit der Arbeitsspeichernutzung  
   
-1.  Wählen Sie in Visual Studio **Datei**, **öffnen** , und geben Sie die Dumpdatei.  
+1. Wählen Sie in Visual Studio **Datei**, **öffnen** , und geben Sie die Dumpdatei.  
   
-2.  Auf der **Minidumpdatei-Zusammenfassung** Seite **verwalteten Speicher Debuggen**.  
+2. Auf der **Minidumpdatei-Zusammenfassung** Seite **verwalteten Speicher Debuggen**.  
   
-     ![Dumpdatei-Zusammenfassungsseite](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Dumpdatei-Zusammenfassungsseite](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- Die Speicheranalyse startet eine Debugsitzung, um die Datei zu analysieren, und zeigt die Ergebnisse auf der Seite "Heap-Ansicht" an:  
+   Die Speicheranalyse startet eine Debugsitzung, um die Datei zu analysieren, und zeigt die Ergebnisse auf der Seite "Heap-Ansicht" an:  
   
- ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
+   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Die Liste der Objekte filtern  
  Standardmäßig wird die Liste der Objekte in einer Speichermomentaufnahme von der Speicheranalyse gefiltert, um nur die Typen und die Instanzen anzuzeigen, die Benutzercode sind, und nur die Typen darzustellen, deren inklusive Gesamtgröße einen prozentualen Schwellenwert der gesamten Heapgröße überschreitet. Sie können diese Optionen im Ändern der **Ansichtseinstellungen** Liste:  
@@ -117,28 +117,28 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
 #### <a name="object-type-table"></a>Objekttyptabelle  
  In der Tabelle ganz oben werden die Typen von Objekten aufgeführt, die im Arbeitsspeicher gespeichert werden.  
   
--   **Anzahl** zeigt die Anzahl der Instanzen des Typs in der Momentaufnahme.  
+- **Anzahl** zeigt die Anzahl der Instanzen des Typs in der Momentaufnahme.  
   
--   **Größe (Bytes)** ist die Größe aller Instanzen des Typs, ohne die Größe der Objekte, die er Verweise enthält. Die  
+- **Größe (Bytes)** ist die Größe aller Instanzen des Typs, ohne die Größe der Objekte, die er Verweise enthält. Die  
   
--   **Inklusive Größe (Bytes)** schließt die Größen von referenzierten Objekten.  
+- **Inklusive Größe (Bytes)** schließt die Größen von referenzierten Objekten.  
   
- Sie können das instanzensymbol (![das Instanzsymbol in der Spalte Objekttyp](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) in der **Objekttyp** Spalte zum Anzeigen einer Liste der Instanzen von der Geben Sie ein.  
+  Sie können das instanzensymbol (![das Instanzsymbol in der Spalte Objekttyp](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) in der **Objekttyp** Spalte zum Anzeigen einer Liste der Instanzen von der Geben Sie ein.  
   
 #### <a name="instance-table"></a>Instanztabelle  
  ![Instanzentabelle](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Instanz** ist die Speicheradresse des Objekts, das als die Objekt-ID des Objekts fungiert  
+- **Instanz** ist die Speicheradresse des Objekts, das als die Objekt-ID des Objekts fungiert  
   
--   **Wert** zeigt den tatsächlichen Wert von Werttypen. Sie können den Mauszeiger über den Namen eines Referenztyps bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
+- **Wert** zeigt den tatsächlichen Wert von Werttypen. Sie können den Mauszeiger über den Namen eines Referenztyps bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
   
-     ![Werte in einem Datentipp Instanz](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Werte in einem Datentipp Instanz](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Größe (Bytes)** ist die Größe des Objekts, ohne die Größe der Objekte, die er Verweise enthält. Die  
+- **Größe (Bytes)** ist die Größe des Objekts, ohne die Größe der Objekte, die er Verweise enthält. Die  
   
--   **Inklusive Größe (Bytes)** schließt die Größen von referenzierten Objekten.  
+- **Inklusive Größe (Bytes)** schließt die Größen von referenzierten Objekten.  
   
- In der Standardeinstellung Typen und Instanzen nach sortiert sind **inklusive Größe (Bytes)**. Wählen Sie eine Spaltenüberschrift in der Liste aus, um die Sortierreihenfolge ändern.  
+  In der Standardeinstellung Typen und Instanzen nach sortiert sind **inklusive Größe (Bytes)**. Wählen Sie eine Spaltenüberschrift in der Liste aus, um die Sortierreihenfolge ändern.  
   
 #### <a name="paths-to-root"></a>Pfade zum Stamm  
   
@@ -148,17 +148,17 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
 #### <a name="referenced-types--referenced-objects"></a>Referenzierte Typen / Referenzierte Objekte  
   
--   Für einen aus der **Objekttyp** Tabelle, die **referenzierte Typen** Registerkarte zeigt die Größe und Anzahl der referenzierten Typen, die von allen Objekten des ausgewählten Typs gespeichert.  
+- Für einen aus der **Objekttyp** Tabelle, die **referenzierte Typen** Registerkarte zeigt die Größe und Anzahl der referenzierten Typen, die von allen Objekten des ausgewählten Typs gespeichert.  
   
--   Für eine ausgewählte Instanz eines Typs **referenzierte Objekte** zeigt die Objekte, die von der ausgewählten Instanz gespeichert werden. Sie können den Mauszeiger über den Namen bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
+- Für eine ausgewählte Instanz eines Typs **referenzierte Objekte** zeigt die Objekte, die von der ausgewählten Instanz gespeichert werden. Sie können den Mauszeiger über den Namen bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
   
- **Zirkuläre Verweise**  
+  **Zirkuläre Verweise**  
   
- Ein Objekt kann auf ein zweites Objekt verweisen, das direkt oder indirekt einen Verweis auf das erste Objekt enthält. Wenn die Speicheranalyse auf diese Situation stößt, wird die Erweiterung des Verweispfads beendet und fügt eine **[Schleife ermittelt]** Anmerkung zur Auflistung des ersten Objekts und wird beendet.  
+  Ein Objekt kann auf ein zweites Objekt verweisen, das direkt oder indirekt einen Verweis auf das erste Objekt enthält. Wenn die Speicheranalyse auf diese Situation stößt, wird die Erweiterung des Verweispfads beendet und fügt eine **[Schleife ermittelt]** Anmerkung zur Auflistung des ersten Objekts und wird beendet.  
   
- **Stammtypen**  
+  **Stammtypen**  
   
- Die Speicheranalyse fügt Stammobjekten Anmerkungen hinzu, die die Art des gespeicherten Verweises beschreiben:  
+  Die Speicheranalyse fügt Stammobjekten Anmerkungen hinzu, die die Art des gespeicherten Verweises beschreiben:  
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> Vergleich von zwei Speichermomentaufnahmen  
  Sie können zwei Dumpdateien eines Prozesses vergleichen, um nach Objekten zu suchen, die möglicherweise die Ursache von Speicherverlusten sind. Das Intervall zwischen der Auflistung aus der ersten (früheren) und zweiten (späteren) Datei sollte so groß sein, dass der Anstieg der Anzahl von Objekten, die Speicherverluste verursachen, leicht ersichtlich ist. So vergleichen Sie die beiden Dateien  
   
-1.  Öffnen Sie die zweite Dumpdatei, und wählen Sie dann **verwalteten Speicher Debuggen** auf die **Minidumpdatei-Zusammenfassung** Seite.  
+1. Öffnen Sie die zweite Dumpdatei, und wählen Sie dann **verwalteten Speicher Debuggen** auf die **Minidumpdatei-Zusammenfassung** Seite.  
   
-2.  Öffnen Sie auf der Berichtsseite der Speicheranalyse, die **wählen Baseline** aus, und klicken Sie dann auf **Durchsuchen** um die erste Dumpdatei anzugeben.  
+2. Öffnen Sie auf der Berichtsseite der Speicheranalyse, die **wählen Baseline** aus, und klicken Sie dann auf **Durchsuchen** um die erste Dumpdatei anzugeben.  
   
- Die Analyse fügt Spalten hinzu, im oberen Bereich des Berichts, der den Unterschied zwischen anzuzeigen die **Anzahl**, **Größe**, und **inklusive Größe** der Typen, um diese Werte in der frühere Momentaufnahme.  
+   Die Analyse fügt Spalten hinzu, im oberen Bereich des Berichts, der den Unterschied zwischen anzuzeigen die **Anzahl**, **Größe**, und **inklusive Größe** der Typen, um diese Werte in der frühere Momentaufnahme.  
   
- ![Unterschiedliche Spalten in der Typliste](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Unterschiedliche Spalten in der Typliste](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- Ein **Verweiszähler Diff** Spalte wurde auch die **Pfade zum Stamm** Tabelle.  
+   Ein **Verweiszähler Diff** Spalte wurde auch die **Pfade zum Stamm** Tabelle.  
   
- ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
+   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Siehe auch  
  [VS ALM TFS-Blog: Mithilfe von Visual Studio 2013 zur Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

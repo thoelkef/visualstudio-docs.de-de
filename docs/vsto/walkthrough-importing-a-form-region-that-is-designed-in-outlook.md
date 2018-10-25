@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1e3ae3a77edd39bed48ac4a5a92cce2e232c589
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903516"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines Formularbereichs, das in Outlook entworfen wurde
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Assistenten **Neuer Formularbereich** in ein Outlook VSTO-Add-In-Projekt importiert wird. Durch das Entwerfen des Formularbereichs in Outlook ist es möglich, dass systemeigene Outlook-Steuerelemente zum Formularbereich hinzugefügt werden können, die Outlook-Daten binden. Nachdem Sie den Formularbereich importiert haben, können Sie die Ereignisse der einzelnen Steuerelemente behandeln.  
@@ -30,15 +30,15 @@ ms.locfileid: "35672920"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Entwerfen eines Formularbereichs mithilfe des Formularbereich-Designers in Outlook  
+- Entwerfen eines Formularbereichs mithilfe des Formularbereich-Designers in Outlook  
   
--   Importieren eines Formularbereichs in ein Outlook VSTO-Add-In-Projekt  
+- Importieren eines Formularbereichs in ein Outlook VSTO-Add-In-Projekt  
   
--   Behandeln der Ereignisse von Steuerelementen im Formularbereich  
+- Behandeln der Ereignisse von Steuerelementen im Formularbereich  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -142,7 +142,7 @@ ms.locfileid: "35672920"
   
 3.  Klicken Sie auf der Seite **Legen Sie fest, wie der Formularbereich erstellt werden soll** auf die Option **OFS-Datei (Outlook Form Storage) importieren**, und klicken Sie dann auf **Durchsuchen**.  
   
-4.  In der **vorhandenen Speicherort Outlook-Formularbereichsdateien Datei** (Dialogfeld), navigieren Sie zum Speicherort der *TaskFormRegion.ofs*Option **TaskFormRegion.ofs**, klicken Sie auf **Öffnen**, und klicken Sie dann auf **Weiter**.  
+4.  Navigieren Sie im Dialogfeld **Speicherort für vorhandene Outlook-Formularbereichsdateien** zum Speicherort der Datei *TaskFormRegion.ofs*, wählen Sie **TaskFormRegion.ofs**aus, klicken Sie dann auf **Öffnen**und anschließend auf **Weiter**.  
   
 5.  Klicken Sie auf der Seite **Wählen Sie den Typ des zu erstellenden Formularbereichs aus** auf **Alle ersetzen**, und klicken Sie dann auf **Weiter**.  
   
@@ -155,53 +155,53 @@ ms.locfileid: "35672920"
      Ein *TaskFormRegion.cs* oder *"TaskFormRegion.vb"* Datei wird dem Projekt hinzugefügt.  
   
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>Behandeln der Ereignisse von Steuerelementen im Formularbereich  
- Nun, da Sie den Formularbereich im Projekt haben, können Sie Code, der behandelt Hinzufügen der `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` -Ereignis der Schaltfläche, die Sie in den Formularbereich in Outlook hinzugefügt.  
+ Nachdem sich der Formularbereich im Projekt befindet, können Sie Code hinzufügen, der das `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click`-Ereignis der Schaltfläche verarbeitet, die Sie in Outlook zum Formularbereich hinzugefügt haben.  
   
- Darüber hinaus fügen Sie Code zum <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> -Ereignis hinzu, das Steuerelemente für den Formularbereich aktualisiert, wenn der Formularbereich angezeigt wird.  
+ Darüber hinaus fügen Sie Code zum <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>-Ereignis hinzu, das Steuerelemente für den Formularbereich aktualisiert, wenn der Formularbereich angezeigt wird.  
   
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>So behandeln Sie die Ereignisse von Steuerelementen im Formularbereich  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste *TaskFormRegion.cs* oder *"TaskFormRegion.vb"*, und klicken Sie dann auf **Ansichtscode**.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste *TaskFormRegion.cs* oder *"TaskFormRegion.vb"*, und klicken Sie dann auf **Ansichtscode**.  
   
-     *TaskFormRegion.cs* oder *"TaskFormRegion.vb"* im Code-Editor geöffnet.  
+    *TaskFormRegion.cs* oder *"TaskFormRegion.vb"* im Code-Editor geöffnet.  
   
-2.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code füllt das Kombinationsfeld des Formularbereichs mit der Betreffzeile der einzelnen Aufgaben aus dem Ordner für Outlook-Aufgaben.  
+2. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code füllt das Kombinationsfeld des Formularbereichs mit der Betreffzeile der einzelnen Aufgaben aus dem Ordner für Outlook-Aufgaben.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+3. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Sucht die `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner "Aufgaben" durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und der Betreff der gewünschten Aufgabe übergeben. Sie werden die Hilfsmethode `FindTaskBySubjectName` im nächsten Schritt hinzufügen.  
+   - Sucht `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner „Aufgaben“, indem die Hilfsmethode `FindTaskBySubjectName` aufgerufen und der Betreff der gewünschten Aufgabe übergeben wird. Sie werden die Hilfsmethode `FindTaskBySubjectName` im nächsten Schritt hinzufügen.  
   
-    -   Fügt der `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` Werte in das Listenfeld für abhängige Aufgabe.  
+   - Fügt die Werte `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` dem Listenfeld für abhängige Aufgaben hinzu.  
   
-    -   Fügt den Betreff der Aufgabe dem ausgeblendeten Feld des Formularbereichs hinzu. Das ausgeblendete Feld speichert diese Werte als Teil des Outlook-Elements.  
+   - Fügt den Betreff der Aufgabe dem ausgeblendeten Feld des Formularbereichs hinzu. Das ausgeblendete Feld speichert diese Werte als Teil des Outlook-Elements.  
   
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code stellt die Hilfsmethode `FindTaskBySubjectName` bereit, die im vorherigen Schritt beschrieben wurde.  
+4. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code stellt die Hilfsmethode `FindTaskBySubjectName` bereit, die im vorherigen Schritt beschrieben wurde.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
+    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
+    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5.  Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+5. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Aktualisiert das Listenfeld im Formularbereich mit dem aktuellen Abschlussstatus der einzelnen abhängigen Aufgabe.  
+   - Aktualisiert das Listenfeld im Formularbereich mit dem aktuellen Abschlussstatus der einzelnen abhängigen Aufgabe.  
   
-    -   Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Es sucht dann jede `Microsoft.Office.Interop.Outlook.TaskItem` in die *Aufgaben* Ordner durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und übergeben des Betreffs der einzelnen Aufgaben.  
+   - Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Es sucht dann jede `Microsoft.Office.Interop.Outlook.TaskItem` in die *Aufgaben* Ordner durch Aufrufen der `FindTaskBySubjectName` Hilfsmethode und übergeben des Betreffs der einzelnen Aufgaben.  
   
-    -   Fügt der `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` Werte in das Listenfeld für abhängige Aufgabe.  
+   - Fügt die Werte `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` dem Listenfeld für abhängige Aufgaben hinzu.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
   
-6.  Ersetzen Sie den `TaskFormRegion_FormRegionShowing` -Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+6. Ersetzen Sie den `TaskFormRegion_FormRegionShowing`-Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Füllt das Kombinationsfeld des Formularbereichs mit den Betreffs von Aufgaben, wenn der Formularbereich angezeigt wird.  
+   - Füllt das Kombinationsfeld des Formularbereichs mit den Betreffs von Aufgaben, wenn der Formularbereich angezeigt wird.  
   
-    -   Ruft die Hilfsmethode `RefreshTaskListBox` auf, wenn der Formularbereich angezeigt wird. Dadurch werden alle abhängigen Aufgaben angezeigt, die beim vorherigen Öffnen des Elements zum Listenfeld hinzugefügt wurden.  
+   - Ruft die Hilfsmethode `RefreshTaskListBox` auf, wenn der Formularbereich angezeigt wird. Dadurch werden alle abhängigen Aufgaben angezeigt, die beim vorherigen Öffnen des Elements zum Listenfeld hinzugefügt wurden.  
   
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
@@ -231,7 +231,7 @@ ms.locfileid: "35672920"
   
 8.  Wählen Sie im Kombinationsfeld **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** die Option **Abhängige Aufgabe**aus, und klicken Sie dann auf **Abhängige Aufgabe hinzufügen**.  
   
-     **0 % abgeschlossen – Abhängige Aufgabe** wird im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt. Dies beweist, dass Sie erfolgreich behandelt die `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` -Ereignis der Schaltfläche.  
+     **0 % abgeschlossen – Abhängige Aufgabe** wird im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt. Dadurch wird gezeigt, dass Sie das `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click`-Ereignis der Schaltfläche erfolgreich behandelt haben.  
   
 9. Speichern und schließen Sie das Element **Primäre Aufgabe** .  
   

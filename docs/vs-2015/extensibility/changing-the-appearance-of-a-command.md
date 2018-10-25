@@ -17,12 +17,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53b4470a3df4a1501145b476991a475bddae6813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834252"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
   
  Um die Darstellung eines Befehls zu ändern, führen Sie eine der folgenden Aktionen:  
   
--   Geben Sie den geeigneten Flags in der Befehlsdefinition in der Befehlsdatei für die Tabelle ein.  
+- Geben Sie den geeigneten Flags in der Befehlsdefinition in der Befehlsdatei für die Tabelle ein.  
   
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Service.  
+- Verwenden der <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Service.  
   
--   Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle und die unformatierte Befehlsobjekte zu ändern.  
+- Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle und die unformatierte Befehlsobjekte zu ändern.  
   
- Die folgenden Schritte zeigen, wie Sie suchen und aktualisieren Sie die Darstellung eines Befehls mit dem Managed Package Framework (MPF).  
+  Die folgenden Schritte zeigen, wie Sie suchen und aktualisieren Sie die Darstellung eines Befehls mit dem Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>So ändern Sie die Darstellung eines Menübefehls  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Microsoft Docs
+title: IDebugMethodField::EnumStaticLocals | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761e696cd774e0414b58c9d2a9f1482d298489f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905089"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Erstellt einen Enumerator für statische lokale Variablen der Methode.  
@@ -41,13 +41,13 @@ int EnumStaticLocals(
   
 #### <a name="parameters"></a>Parameter  
  `ppLocals`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der statischen "lokal" darstellt. Gibt einen null-Wert zurück, wenn keine statische lokale Variablen vorhanden sind.  
+ [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der statischen lokalen Variablen darstellt. Gibt einen null-Wert zurück, wenn keine statische lokale Variablen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei Erfolg S_OK zurückgibt, oder gibt "S_FALSE" zurück, wenn es keine statischen "lokal sind". Andernfalls wird ein Fehlercode zurückgegeben.  
+ Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn keine statische lokale Variablen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Jedes Element ist ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das verschiedene Typen von statischen "lokal" darstellt. Rufen Sie die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) -Methode für jedes Objekt, um zu bestimmen, genau welche Art von statischen lokalen für das Objekt darstellt.  
+ Jedes Element ist ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das verschiedene Arten von statischen lokalen Variablen darstellt. Rufen Sie die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) Methode für jedes Objekt, um zu bestimmen, genau welche Art von statischen lokalen das-Objekt darstellt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

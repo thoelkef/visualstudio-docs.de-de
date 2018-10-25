@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: IDebugStackFrame2::GetLanguageInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a044d9279cb7efccb0e4ee61c988c6d4e7d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ebb64c7c33391288037b56ce795e834dbbc02b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908796"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
-Ruft die Sprache dieses Stapelrahmens zugeordnet.  
+Ruft die Sprache, die diesen Stapelrahmen zugeordnet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,7 +43,7 @@ int GetLanguageInfo (
   
 #### <a name="parameters"></a>Parameter  
  `pbstrLanguage`  
- [out] Gibt den Namen der Sprache, die die zugeordneten dieses Stapelrahmens Methode implementiert.  
+ [out] Gibt den Namen der Sprache, die die Methode, die diesen Stapelrahmen zugeordnet implementiert.  
   
  `pguidLanguage`  
  [out] Gibt die `GUID` der Sprache. Für die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Sprachen, z. B. die folgenden zurückgegeben werden können:  
@@ -61,7 +61,7 @@ int GetLanguageInfo (
 -   `guidScriptLang`  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
+title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c95d33c2d31e5476153ddd0d0a9598f67080c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7711d185e92b0cc8a29070aa78a4acff835df33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846940"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Bestimmt die Position des angegebenen verwalteten Assemblyverweises.  
@@ -52,19 +52,19 @@ int ResolveAssemblyRef(
  [in] Der Name der Assembly auflösen.  
   
  `assemBytes`  
- [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Objekt, das die Assemblybytes für den Verweis enthält.  
+ [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, enthält die Assemblybytes, die dem Verweis zugeordnet.  
   
  `assemPdb`  
- [out] Gibt ein `IEEDataStorage` Objekt, das das Symbol enthält dieser Verweis zugeordnete Daten zu speichern.  
+ [out] Gibt eine `IEEDataStorage` -Objekt, das das Symbol enthält Daten, die mit dieser Anforderung verknüpfte speichern.  
   
  `assemLocation`  
- [out] Gibt den Pfad des Verweises zurück.  
+ [out] Gibt den Speicherort des dieses Verweises zurück.  
   
  `alr`  
- [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, der angibt, des Speicherortes der Assembly des Verweises.  
+ [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, der angibt, der des Speicherortes der Assembly des Verweises.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Methode ist nicht in der Regel von einem benutzerdefinierten ausdrucksauswertung implementiert.  

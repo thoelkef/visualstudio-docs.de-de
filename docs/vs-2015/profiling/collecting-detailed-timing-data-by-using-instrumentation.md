@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95bd21e908b24e00619a659445b3cd30d4e915a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870106"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Die Instrumentierungsmethode der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Pr
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
  Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld  
   
--   Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+- Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
   
- Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie die Profilerstellung mit der Instrumentationsmethode ausführen.  
+  Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie die Profilerstellung mit der Instrumentationsmethode ausführen.  
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  

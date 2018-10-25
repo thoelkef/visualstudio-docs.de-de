@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Next | Microsoft Docs'
+title: 'Idiaenumdebugstreamdata:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e816edd5b93ffdfec46d36d9aabba154ab035d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895248"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Ruft eine angegebene Anzahl von Datensätzen in der aufgelisteten Sequenz ab.  
+Ruft eine angegebene Anzahl von Datensätzen in der Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,19 +41,19 @@ HRESULT Next (
  [in] Die Anzahl der Datensätze abgerufen werden sollen.  
   
  cbData  
- [in] Die Größe des Datenpuffers in Bytes.  
+ [in] Größe des Datenpuffers in Byte.  
   
- pcbData  
- [out] Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` NULL ist, klicken Sie dann `pcbData` die Gesamtanzahl der Bytes der Daten verfügbar für alle Datensätze angeforderten enthält.  
+ "pcbdata"  
+ [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` NULL ist, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes an Daten zur Verfügung, für alle Datensätze angeforderten.  
   
  Daten]  
- [out] Ein Puffer, die mit der Debug-datenstromdaten Datensatz gefüllt werden soll.  
+ [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt werden soll.  
   
  pceltFetched  
  [in, out] Gibt die Anzahl der Datensätze in `data`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn keine weiteren Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn keine weitere Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

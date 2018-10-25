@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb62fb0a830c8c3bf6bb9b7ca186e001573b7b37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9deadc13f8cbe3678282bb2d9ac619959ecd26b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875917"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
-Enthält Statusinformationen zu Symbolsuchpfaden, die durchsucht wurden.  
+Enthält Statusinformationen zu Symbolsuchpfade, die durchsucht wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,21 +44,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>Parameter  
  `dwValidFields`  
- Eine Kombination aus Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) -Enumeration, die die Art der Suchinformationen, die in dieser Struktur beschrieben angibt.  
+ Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) -Enumeration, die die Art der Suche Informationen, die in dieser Struktur beschriebenen angibt.  
   
  `bstrVerboseSearchInfo`  
  Suchpfad und Ergebnisse in einer einzelnen Zeichenfolge verkettet.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zurückgegeben, von einem Aufruf der [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode.  
+ Diese Struktur wird zurückgegeben, von einem Aufruf der ["getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode.  
   
- Wenn die `bstrVerboseSearchInfo` Feld nicht leer, wird er enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieses Vergleichs. Die Liste wird mit einem Pfad, gefolgt von einem Auslassungszeichen ("..."), gefolgt von dem Ergebnis formatiert. Wenn mehr als ein Paar von Path-Ergebnis vorhanden ist, wird jedes Paar durch ein Paar aus "\r\n" (Return – Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht wie folgt:  
+ Wenn die `bstrVerboseSearchInfo` Feld nicht leer ist, und es enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad, gefolgt von einer mit den Auslassungspunkten ("…"), gefolgt von das Ergebnis formatiert. Wenn mehr als ein Paar der Path-Ergebnis vorhanden ist, wird jedes Paar von ein Paar aus "\r\n" (Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht folgendermaßen aus:  
   
  \<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis >  
   
  Beachten Sie, dass der letzte Eintrag nicht mit eine Sequenz \r\n verfügt.  
   
- Hier ist ein mögliches `bstrVerboseSearchInfo` Zeichenfolge, die an die Standardausgabe gesendet wurde.  
+ Hier ist eine mögliche `bstrVerboseSearchInfo` Zeichenfolge, die an die Standardausgabe gesendet wurde.  
   
  `c:\symbols\user32.pdb... File not found.`  
   

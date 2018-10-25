@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839686"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Verwenden den Text-Manager zum Überwachen von globaler Einstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Wenn Sie einen Kern-Editor implementieren, müssen Sie die Änderungen, die an g
 ## <a name="text-manager-functions"></a>Text-Manager-Funktionen  
  Der Text-Manager löst Ereignisse für eine Reihe von Einstellungen, einschließlich der folgenden:  
   
--   Gibt an, ob ein Puffer unter quellcodeverwaltung ist  
+- Gibt an, ob ein Puffer unter quellcodeverwaltung ist  
   
--   Registrieren für Benachrichtigungen über datenbankänderungen-Datei  
+- Registrieren für Benachrichtigungen über datenbankänderungen-Datei  
   
--   Gewusst wie: beibehalten Überblick darüber, welche Ansichten bestimmte Puffer zugeordnet sind.  
+- Gewusst wie: beibehalten Überblick darüber, welche Ansichten bestimmte Puffer zugeordnet sind.  
   
--   Voreinstellungen für die farbliche Kennzeichnung von Text  
+- Voreinstellungen für die farbliche Kennzeichnung von Text  
   
--   Registerkarte im Vergleich zu den Einstellungen von Speicherplatz  
+- Registerkarte im Vergleich zu den Einstellungen von Speicherplatz  
   
- Einstellungen, die für eine bestimmte Sprache eindeutig sind, werden nicht durch den TextManager verwaltet. Diese Einstellungen müssen von jeder Sprachdienst verwaltet werden.  
+  Einstellungen, die für eine bestimmte Sprache eindeutig sind, werden nicht durch den TextManager verwaltet. Diese Einstellungen müssen von jeder Sprachdienst verwaltet werden.  
   
- Die ereignisbenachrichtigung für die Text-Manager erfolgt über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> Schnittstelle. Diese Schnittstelle implementieren, auf dem Client-Objekt zum Behandeln von Ereignissen ausgelöst TextManager. Registrieren Sie sich für diese Ereignisse mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Schnittstelle für den TextManager.  
+  Die ereignisbenachrichtigung für die Text-Manager erfolgt über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> Schnittstelle. Diese Schnittstelle implementieren, auf dem Client-Objekt zum Behandeln von Ereignissen ausgelöst TextManager. Registrieren Sie sich für diese Ereignisse mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Schnittstelle für den TextManager.  
   
 ## <a name="see-also"></a>Siehe auch  
  [In der Kern-Editor](../extensibility/inside-the-core-editor.md)   

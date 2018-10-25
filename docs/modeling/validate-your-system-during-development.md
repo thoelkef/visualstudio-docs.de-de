@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907299"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Benutzer und der Architektur des Systems in Einklang zu bringen.
@@ -27,14 +27,14 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
  Überprüfen Sie die Software mithilfe der folgenden Aufgaben.
 
 |**Aufgaben**|**Verwandte Themen**|
-|---------------|---------------------------|
+|-|-|
 |**Stellen Sie sicher, dass die Software die Anforderungen der Benutzer erfüllt**:<br /><br /> Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Durch diese Vorgehensweise können Sie sicherstellen, dass die Anforderungen, die für die Benutzer und andere Projektbeteiligte wichtig sind, getestet werden. Außerdem können Sie dadurch die Tests schneller aktualisieren, wenn sich die Anforderungen ändern.|-   [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)|
 |**Stellen Sie sicher, dass die Software mit dem vorgesehenen Entwurf des Systems konsistent bleibt:**<br /><br /> Abhängigkeitsdiagramme beschreiben die beabsichtigten Abhängigkeiten zwischen den Komponenten Ihrer Anwendung. Während der Entwicklung können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Code dem vorgesehenen Entwurf entsprechen.|-   [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
-|------------------|---------------|
+|-|-|
 |**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: Doug sieben: Verstehen von Code und Systementwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: Entwerfen einer Anwendung mit einem Abhängigkeitsdiagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [MSDN-Reihe: Überprüfen von Code mithilfe von Abhängigkeitsdiagrammen](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

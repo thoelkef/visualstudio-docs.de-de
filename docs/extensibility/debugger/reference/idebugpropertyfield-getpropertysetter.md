@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Microsoft Docs
+title: IDebugPropertyField::GetPropertySetter | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055c057120753d156b19bbb359c4cc1ded3f58b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e193ae70de88606d68861ccb9eb20d6926d18241
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905791"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
-Ruft die Methode ab, die der Eigenschaft festlegt.  
+Ruft die Methode ab, die die Eigenschaft festlegt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,7 +47,7 @@ int GetPropertySetter(
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Rufen Sie zum Abrufen der Methodennamens, die die Eigenschaft ruft die [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) Methode.  
+ Rufen Sie zum Abrufen der Methode, die die Eigenschaft ruft die [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   

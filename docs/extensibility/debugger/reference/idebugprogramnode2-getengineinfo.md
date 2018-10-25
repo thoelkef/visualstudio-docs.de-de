@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
+title: IDebugProgramNode2::GetEngineInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a18b52a964d993be6328bf3057263ededd2320
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 687ae8207fac97dde84b803fb01477d53114ad6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847967"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Ruft den Namen und die Bezeichner von die Debugging-Modul (DE), das Ausführen eines Programms an.  
+Ruft den Namen und Bezeichner des Debug-Engine (DE) ein Programm ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,13 +43,13 @@ int GetEngineInfo(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrEngine`  
- [out] Gibt den Namen der Ausführung des Programms de zurück (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht den Namen des Moduls Interesse sein).  
+ [out] Gibt den Namen der Ausführung des Programms DE zurück (C++-spezifischen: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht den Namen der Engine interessiert sein).  
   
  `pguidEngine`  
- [out] Gibt zurück, die die Ausführung des Programms de globally unique Identifier (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht die GUID des Moduls interessiert sein).  
+ [out] Gibt den globally unique Identifier des DE Ausführung des Programms (C++-spezifischen: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht der GUID des Moduls interessiert sein).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

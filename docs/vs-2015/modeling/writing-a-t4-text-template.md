@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897796"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise e
   
  Textvorlagen bestehen aus den folgenden Teilen:  
   
--   **Direktiven** -Elemente, die steuern, wie die Vorlage verarbeitet wird.  
+- **Direktiven** -Elemente, die steuern, wie die Vorlage verarbeitet wird.  
   
--   **Textblöcke** : Inhalt, der direkt in die Ausgabe kopiert wird.  
+- **Textblöcke** : Inhalt, der direkt in die Ausgabe kopiert wird.  
   
--   **Kontrollblöcke** -Programmcode, der Variablenwerte in den Text eingefügt und bedingte oder wiederholte Teile des Texts gesteuert.  
+- **Kontrollblöcke** -Programmcode, der Variablenwerte in den Text eingefügt und bedingte oder wiederholte Teile des Texts gesteuert.  
   
- Wenn in die Beispielen in diesem Thema testen möchten, kopieren Sie sie in einer Vorlagendatei unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Nach dem Bearbeiten der Datei der Vorlage an, sie speichern und untersuchen Sie die Ausgabe **.txt** Datei.  
+  Wenn in die Beispielen in diesem Thema testen möchten, kopieren Sie sie in einer Vorlagendatei unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Nach dem Bearbeiten der Datei der Vorlage an, sie speichern und untersuchen Sie die Ausgabe **.txt** Datei.  
   
 ## <a name="directives"></a>Anweisungen  
  Textvorlagendirektiven stellen allgemeine Anweisungen zum Generieren des Transformationscodes und der Ausgabedatei für das Textvorlagenmodul bereit.  

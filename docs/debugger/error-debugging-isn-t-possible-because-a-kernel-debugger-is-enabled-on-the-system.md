@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853975"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Das Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
 Beim Debuggen von verwaltetem Code kann die folgende Fehlermeldung ausgegeben werden:  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Diese Meldung wird angezeigt, wenn Sie versuchen, verwalteten Code zu debuggen:  
   
--   auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]- oder [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-System, das im Debugmodus gestartet wurde.  
+- auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]- oder [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-System, das im Debugmodus gestartet wurde.  
   
--   Die Anwendung verwendet die CLR-Version 2.0, 3.0 oder 3.5.  
+- Die Anwendung verwendet die CLR-Version 2.0, 3.0 oder 3.5.  
   
 ## <a name="solution"></a>Lösung  
   
 #### <a name="to-fix-this-problem"></a>So beheben Sie dieses Problem  
   
--   Aktualisieren Sie die Anwendung auf CLR-Version 4.0 oder 4.5.  
+- Aktualisieren Sie die Anwendung auf CLR-Version 4.0 oder 4.5.  
   
-     – oder –  
+   – oder –  
   
--   Deaktivieren Sie Kerneldebugging, und debuggen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Deaktivieren Sie Kerneldebugging, und debuggen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     – oder –  
+   – oder –  
   
--   Debuggen Sie mit dem Kerneldebugger anstatt mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Debuggen Sie mit dem Kerneldebugger anstatt mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     – oder –  
+   – oder –  
   
--   Deaktivieren Sie im Kerneldebugger die Benutzermodusausnahmen.  
+- Deaktivieren Sie im Kerneldebugger die Benutzermodusausnahmen.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>So deaktivieren Sie Kerneldebugging in der aktuellen Sitzung  
   

@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb5c7789be78a39a8d33a556ce66385db4a1d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c6e8e2f7851d74bfbeb0399dd758ae0ca25b4f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812747"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
 
-Die **Typauflistungs-Editor** Dialogfeld wird verwendet, um bekannte Typen hinzuzufügen der **senden** und **Receive** Aktivitäten. Dieses Dialogfeld wird auch verwendet, um generische Typargumente hinzuzufügen der **InvokeMethod** Aktivität. Bei Verwendung für die **senden** und **Receive** Aktivitäten zum Hinzufügen bekannter Typen, die **Typauflistungs-Editor** Dialogfeld erfordert die Ergänzungen Typ eindeutig sein. Wenn ein doppelter Typ hinzugefügt und die Änderung wird ein Commit ausgeführt, indem Sie auf **OK**, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** Aktivität zum Hinzufügen von generischen Typargumenten der **Typauflistungs-Editor** im Dialogfeld das Hinzufügen doppelter Typen zulässig.
+Die **Typauflistungs-Editor** Dialogfeld wird verwendet, um bekannte Typen hinzugefügt der **senden** und **Receive** Aktivitäten. Dieses Dialogfeld wird auch verwendet, um generische Typargumente hinzuzufügen der **InvokeMethod** Aktivität. Bei Verwendung für die **senden** und **Receive** Aktivitäten, die bekannte Typen hinzufügen der **Typauflistungs-Editor** Dialogfeld erfordert die typhinzufügungen hier eindeutig sein. Wenn ein doppelter Typ hinzugefügt wird, und die Änderung wird ein Commit ausgeführt, indem Sie auf **OK**, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** Aktivität zum Hinzufügen von generischen Typargumenten, die **Typauflistungs-Editor** Dialogfeld ermöglicht das Hinzufügen doppelter Typen.
 
 Weitere Informationen finden Sie unter [bekannte Typen in Datenverträgen](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 
-Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Typauflistung** (Dialogfeld).
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Typauflistung** Dialogfeld.
 
 |Benutzeroberflächenelement|Beschreibung|
-|----------------|-----------------|
+|-|-----------------|
 |**Typliste**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität

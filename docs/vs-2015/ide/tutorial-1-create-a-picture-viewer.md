@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884965"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Lernprogramm 1: Erstellen eines Bildanzeigeprogramms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie Steuerelemente, z. B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars stufenlos ändern können. Sie fangen auch an, Code zu schreiben. Sie lernen Folgendes:  
   
--   Erstellen Sie ein neues Projekt.  
+- Erstellen Sie ein neues Projekt.  
   
--   Testen (Debuggen) einer Anwendung  
+- Testen (Debuggen) einer Anwendung  
   
--   Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular  
+- Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular  
   
--   Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts  
+- Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts  
   
--   Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.  
+- Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.  
   
--   Schreiben von Code mithilfe von IntelliSense und Codeausschnitten  
+- Schreiben von Code mithilfe von IntelliSense und Codeausschnitten  
   
--   Schreiben von Ereignishandlermethoden  
+- Schreiben von Ereignishandlermethoden  
   
- Am Ende sieht das Programm so aus wie in der folgenden Abbildung.  
+  Am Ende sieht das Programm so aus wie in der folgenden Abbildung.  
   
- ![Bild, das Sie in diesem Tutorial erstellen](../ide/media/express-pictureviewerdone.png "Express_BildanzeigeprogrammFertig")  
-Bild, das Sie in diesem Lernprogramm erstellen  
+  ![Bild, das Sie in diesem Tutorial erstellen](../ide/media/express-pictureviewerdone.png "Express_BildanzeigeprogrammFertig")  
+  Bild, das Sie in diesem Lernprogramm erstellen  
   
- Informationen zum Herunterladen einer vollständige Version des Beispiels finden Sie unter [Tutorialbeispiel für vollständiges Bildanzeigeprogramm](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Informationen zum Herunterladen einer vollständige Version des Beispiels finden Sie unter [Tutorialbeispiel für vollständiges Bildanzeigeprogramm](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![Link zum Video](../data-tools/media/playvideo.gif "Videoabspielen")Eine Videoversion dieses Themas finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Wie erstelle ich eine Bildanzeige in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How Do I: Create a Picture Viewer in C#? (Wie erstelle ich eine Bildanzeige in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![Link zum Video](../data-tools/media/playvideo.gif "Videoabspielen")Eine Videoversion dieses Themas finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Wie erstelle ich eine Bildanzeige in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How Do I: Create a Picture Viewer in C#? (Wie erstelle ich eine Bildanzeige in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  

@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827544"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263743"
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel analysiert die Bezeichner in Tokens und überprüft die Rechtschreibung jedes Token. Der Analysealgorithmus führt die folgenden Transformationen:
 
--   Großbuchstaben beginnen, ein neues Token. Zum Beispiel: MyNameIsJoe wird "My", "Name", "Is", "Joe".
+- Großbuchstaben beginnen, ein neues Token. Zum Beispiel: MyNameIsJoe wird "My", "Name", "Is", "Joe".
 
--   Für mehrere Großbuchstaben startet der letzten Großbuchstabe ein neues Token. Zum Beispiel: GUIEditor wird "GUI", "Editor".
+- Für mehrere Großbuchstaben startet der letzten Großbuchstabe ein neues Token. Zum Beispiel: GUIEditor wird "GUI", "Editor".
 
--   Führende und nachfolgende Apostrophe werden entfernt. Z. B. der zu indizierende "Sender", "Sender".
+- Führende und nachfolgende Apostrophe werden entfernt. Z. B. der zu indizierende "Sender", "Sender".
 
--   Unterstriche bezeichnen das Ende eines Tokens, und es werden entfernt. Beispiel: die "hello_world" mit "Hello", "World".
+- Unterstriche bezeichnen das Ende eines Tokens, und es werden entfernt. Beispiel: die "hello_world" mit "Hello", "World".
 
--   Eingebettete kaufmännische und-Zeichen werden entfernt. Beispielsweise & Mat wird zum "format" Token.
+- Eingebettete kaufmännische und-Zeichen werden entfernt. Beispielsweise & Mat wird zum "format" Token.
 
- Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Keine andere Sprachwörterbücher sind derzeit verfügbar.
+  Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Keine andere Sprachwörterbücher sind derzeit verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort, um ein benutzerdefiniertes Wörterbuch mit dem Namen CustomDictionary.xml. Legen Sie das Wörterbuch, in das Installationsverzeichnis des Tools zum Projektverzeichnis ein, oder in das Verzeichnis, das das Tool unter dem Profil des Benutzers zugeordnet ist (%USERPROFILE%\Application Daten\\...). Erfahren, wie ein Projekt in das benutzerdefinierte Wörterbuch hinzuzufügende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], finden Sie unter [wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   Hinzufügen von Wörtern, die nicht zu einer Verletzung unter dem Pfad Dictionary/Wörter/Recognized führt sollte.
+- Hinzufügen von Wörtern, die nicht zu einer Verletzung unter dem Pfad Dictionary/Wörter/Recognized führt sollte.
 
--   Fügen Sie ein Wort, die auftreten eine Verletzung unter dem Pfad Wörterbuch/Wörter/nicht erkannt werden soll.
+- Fügen Sie ein Wort, die auftreten eine Verletzung unter dem Pfad Wörterbuch/Wörter/nicht erkannt werden soll.
 
--   Fügen Sie Wörter, die gekennzeichnet werden soll als veraltet, unter dem Wörterbuch/Wörter/veraltet-Pfad hinzu. Finden Sie im Thema zugehörige Regel [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)für Weitere Informationen.
+- Fügen Sie Wörter, die gekennzeichnet werden soll als veraltet, unter dem Wörterbuch/Wörter/veraltet-Pfad hinzu. Finden Sie im Thema zugehörige Regel [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)für Weitere Informationen.
 
--   Ausnahmen, die Regeln der Groß-und Kleinschreibung Abkürzung zum Wörterbuch/Akronyme/CasingExceptions Pfad hinzufügen.
+- Ausnahmen, die Regeln der Groß-und Kleinschreibung Abkürzung zum Wörterbuch/Akronyme/CasingExceptions Pfad hinzufügen.
 
- Folgendes ist ein Beispiel für die Struktur einer Datei des benutzerdefinierten Wörterbuchs.
+  Folgendes ist ein Beispiel für die Struktur einer Datei des benutzerdefinierten Wörterbuchs.
 
 ```
 <Dictionary>

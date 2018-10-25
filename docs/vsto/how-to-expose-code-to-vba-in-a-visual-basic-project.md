@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839647"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
   Sie können Verfügbarmachen von Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt in Visual Basic für Applikationen (VBA) Code, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256096"
   
  Der Prozess ist für Code in einer Hostelementklasse anders, als Code in anderen Klassen werden:  
   
--   [Verfügbarmachen von Code in einer Hostelementklasse](#HostItemCode)  
+- [Verfügbarmachen von Code in einer Hostelementklasse](#HostItemCode)  
   
--   [Verfügbarmachen von Code, der nicht in einer Hostelementklasse](#NonHostItem)  
+- [Verfügbarmachen von Code, der nicht in einer Hostelementklasse](#NonHostItem)  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie rufen I:-VSTO code von VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie rufen I:-VSTO code von VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Verfügbarmachen von Code in einer Hostelementklasse  
  Legen Sie zum Aktivieren von VBA-Code zum Aufrufen von Visual Basic-Code in einer Hostelementklasse der **EnableVbaCallers** -Eigenschaft des Hostelements wird auf **"true"**.  

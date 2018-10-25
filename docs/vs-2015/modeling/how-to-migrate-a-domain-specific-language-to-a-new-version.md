@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ad5204b4a90018d935028dc517c09ac608043c9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844470"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,51 +43,51 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
 #### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>DSL-Projekte und Projektmappen in Visual Studio 2010 migrieren  
   
-1.  Starten Sie das Migrationstool DSL.  
+1. Starten Sie das Migrationstool DSL.  
   
-    -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:  
+   -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
-2.  Wählen Sie einen Ordner mit Projektmappen und Projekte, die Sie konvertieren möchten.  
+2. Wählen Sie einen Ordner mit Projektmappen und Projekte, die Sie konvertieren möchten.  
   
-    -   Geben Sie den Pfad in das Feld am oberen Rand des Tools, oder klicken Sie auf **Durchsuchen**.  
+   - Geben Sie den Pfad in das Feld am oberen Rand des Tools, oder klicken Sie auf **Durchsuchen**.  
   
      Das Migrationstool zeigt eine Struktur von Projekten, die definieren, oder Verwenden von DSLs. Die Struktur enthält jedes Projekt, verwendet der **Microsoft.VisualStudio.Modeling.Sdk** oder **der TextTemplating** Assemblys.  
   
-3.  Überprüfen Sie die Struktur von Projekten, und deaktivieren Sie die Projekte, die Sie nicht konvertieren möchten.  
+3. Überprüfen Sie die Struktur von Projekten, und deaktivieren Sie die Projekte, die Sie nicht konvertieren möchten.  
   
-    -   Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.  
+   -   Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.  
   
-        > [!NOTE]
-        >  Die Kontrollkästchen, die neben den Ordnernamen angezeigt werden, haben keine Auswirkungen. Erweitern Sie die Ordner, um die Projekte und Lösungen überprüfen.  
+       > [!NOTE]
+       >  Die Kontrollkästchen, die neben den Ordnernamen angezeigt werden, haben keine Auswirkungen. Erweitern Sie die Ordner, um die Projekte und Lösungen überprüfen.  
   
-4.  Konvertieren Sie die Projekte an.  
+4. Konvertieren Sie die Projekte an.  
   
-    1.  Klicken Sie auf **konvertieren**.  
+   1.  Klicken Sie auf **konvertieren**.  
   
-         Vor jede Projektdatei konvertiert wird, wird eine Kopie des _Projekt_**csproj** als gespeicherter _Projekt_**. vs2008.csproj**  
+        Vor jede Projektdatei konvertiert wird, wird eine Kopie des _Projekt_**csproj** als gespeicherter _Projekt_**. vs2008.csproj**  
   
-         Eine Kopie aller _Lösung_**sln** als gespeicherter _Lösung_**. vs2008.sln**  
+        Eine Kopie aller _Lösung_**sln** als gespeicherter _Lösung_**. vs2008.sln**  
   
-    2.  Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.  
+   2.  Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.  
   
-         Fehler werden im Textfenster gemeldet. Darüber hinaus wird der Strukturansicht ein Warnsignal, das auf jedem Knoten, die konvertiert werden konnte. Sie können den Knoten, um weitere Informationen zu diesem Fehler erhalten, klicken.  
+        Fehler werden im Textfenster gemeldet. Darüber hinaus wird der Strukturansicht ein Warnsignal, das auf jedem Knoten, die konvertiert werden konnte. Sie können den Knoten, um weitere Informationen zu diesem Fehler erhalten, klicken.  
   
-5.  **Alle Vorlagen transformieren** in Lösungen, die erfolgreich enthält Projekte konvertiert.  
+5. **Alle Vorlagen transformieren** in Lösungen, die erfolgreich enthält Projekte konvertiert.  
   
-    1.  Öffnen Sie die Projektmappe.  
+   1.  Öffnen Sie die Projektmappe.  
   
-    2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
+   2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
   
-        > [!NOTE]
-        >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > [!NOTE]
+       >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
-6.  Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
+6. Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
   
-    -   Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.  
+   -   Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.  
   
-    -   Testen Sie den Designer.  
+   -   Testen Sie den Designer.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Neues im Visualisierungs- und Modellierungs-SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

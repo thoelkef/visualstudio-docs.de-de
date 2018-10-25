@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839426"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Projektuntertypen können VSPackages, Projekte, die basierend auf der Microsoft 
 ## <a name="project-subtype-design"></a>Untertyp Projektentwurf  
  Die Initialisierung von einem Projektuntertyp erfolgt durch das Zusammenfassen der Hauptseite <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> Objekte. Diese Aggregation ermöglicht einem Projektuntertyp zu überschreiben, oder erhöhen die meisten Funktionen des Basisprojekts. Projektuntertypen Abrufen der ersten Gelegenheit verlassen, Eigenschaften, die mit behandeln <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, Befehle mit <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>, und Verwenden von Project Item Management <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Projektuntertypen können erweitern:  
   
--   Projekt-Konfigurationsobjekte.  
+- Projekt-Konfigurationsobjekte.  
   
--   Konfigurationsabhängig-Objekte.  
+- Konfigurationsabhängig-Objekte.  
   
--   Durchsuchen der konfigurationsunabhängigen-Objekte.  
+- Durchsuchen der konfigurationsunabhängigen-Objekte.  
   
--   Projekt-Automation-Objekte.  
+- Projekt-Automation-Objekte.  
   
--   Teamprojektsammlungen Sie Automation-Eigenschaft.  
+- Teamprojektsammlungen Sie Automation-Eigenschaft.  
   
- Weitere Informationen zur Erweiterbarkeit von Projektuntertypen finden Sie unter [Eigenschaften und Methoden von Projektuntertypen erweitert](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Weitere Informationen zur Erweiterbarkeit von Projektuntertypen finden Sie unter [Eigenschaften und Methoden von Projektuntertypen erweitert](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Richtliniendateien  
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umgebung bietet ein Beispiel für das Basisprojektsystem mit einem Projektuntertyp in seiner Implementierung von Richtliniendateien zu erweitern. Eine Richtliniendatei ermöglicht das Strukturieren der der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umgebung durch die Verwaltung von Features, die im Projektmappen-Explorer enthalten **Projekt hinzufügen** im Dialogfeld **neues Element hinzufügen** Dialogfeld und der  **Eigenschaften** Dialogfeld. Der Untertyp der Richtlinie überschrieben und erweitert diese Funktionen auch über <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Implementierungen.  

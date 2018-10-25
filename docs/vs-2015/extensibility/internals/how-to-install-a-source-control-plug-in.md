@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812984"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
 ## <a name="how-an-ide-locates-the-dll"></a>Suchen eine IDE wie der DLL  
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE verfügt über zwei Methoden zur Suche nach der Quelle Plug-in-DLL zu steuern:  
   
--   Finden Sie das Standard-Quellcodeverwaltungs-Plug-in, und verbinden Sie diesen im Hintergrund.  
+- Finden Sie das Standard-Quellcodeverwaltungs-Plug-in, und verbinden Sie diesen im Hintergrund.  
   
--   Finden Sie alle registrierten Datenquellen Steuerelement-Plug-ins aus dem der Benutzer wird eine ausgewählt.  
+- Finden Sie alle registrierten Datenquellen Steuerelement-Plug-ins aus dem der Benutzer wird eine ausgewählt.  
   
- Um die DLL in die erste Methode zu suchen, sucht die IDE, unter dem Unterschlüssel HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider für den Eintrag ProviderRegKey. Der Wert dieses Eintrags verweist auf eine andere Unterschlüssel. Die IDE sucht nach einem Eintrag mit dem Namen SccServerPath in dieser zweiten "unter" HKEY_LOCAL_MACHINE. Der Wert dieses Eintrags zeigt die IDE auf die DLL an.  
+  Um die DLL in die erste Methode zu suchen, sucht die IDE, unter dem Unterschlüssel HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider für den Eintrag ProviderRegKey. Der Wert dieses Eintrags verweist auf eine andere Unterschlüssel. Die IDE sucht nach einem Eintrag mit dem Namen SccServerPath in dieser zweiten "unter" HKEY_LOCAL_MACHINE. Der Wert dieses Eintrags zeigt die IDE auf die DLL an.  
   
 > [!NOTE]
 >  Die IDE wird DLLs aus relative Pfade (z. B..\NewProvider.DLL) nicht geladen werden. Ein vollständiger Pfad zur DLL muss angegeben werden (z. B. c:\Providers\NewProvider.DLL). Dies erhöht die Sicherheit der IDE, indem verhindert das Laden von nicht autorisierten oder Identitätswechsel-Plug-in-DLLs.  
   
- Um die DLL in die zweite Methode zu suchen, sucht die IDE unter dem Unterschlüssel HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders für alle Einträge *.* Jeder Eintrag hat einen Namen und einen Wert an. Zeigt die IDE eine Liste mit diesen Namen für den Benutzer *.* Wenn der Benutzer einen Namen auswählt, sucht die IDE den Wert für den ausgewählten Namen, der auf einen Unterschlüssel zeigt. Die IDE sucht nach einem Eintrag mit dem Namen SccServerPath in diesem "unter" HKEY_LOCAL_MACHINE. Der Wert, der den Eintrag zeigt die IDE auf die richtigen DLL.  
+ Um die DLL in die zweite Methode zu suchen, sucht die IDE unter dem Unterschlüssel HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders für alle Einträge<em>.</em> Jeder Eintrag hat einen Namen und einen Wert an. Zeigt die IDE eine Liste mit diesen Namen für den Benutzer<em>.</em> Wenn der Benutzer einen Namen auswählt, sucht die IDE den Wert für den ausgewählten Namen, der auf einen Unterschlüssel zeigt. Die IDE sucht nach einem Eintrag mit dem Namen SccServerPath in diesem "unter" HKEY_LOCAL_MACHINE. Der Wert, der den Eintrag zeigt die IDE auf die richtigen DLL.  
   
  Ein Quellcodeverwaltungs-Plug-in muss beide Methoden zum Suchen der DLL zu unterstützen, und legen Sie daher ProviderRegKey, alle vorherigen Einstellungen überschrieben. Wichtiger ist, muss es hinzufügen selbst in die Liste der InstalledSccProviders müssen der Benutzer eine Auswahl von der quellcodeverwaltung-Plug-in verwenden kann.  
   

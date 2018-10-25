@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886460"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 
@@ -301,7 +301,7 @@ Eigenschaft "XML"-Knoten befinden sich unter den Knoten für die Klasse.
 Rolle Datenknoten befinden sich unter den Knoten der Source-Klasse.
 
 |Eigenschaft|Beschreibung|
-|--------------|-----------------|
+|-|-|
 |Hat benutzerdefinierte Moniker|Legen Sie diese auf "true", wenn Sie möchten, geben Sie Ihren eigenen Code zum Generieren und Auflösen von Monikern, die diese Beziehung zu durchlaufen.<br /><br /> Ausführliche Anweisungen dazu erstellen Sie die Projektmappe, und doppelklicken Sie dann auf die Fehlermeldungen.|
 |Domänenbeziehung|Gibt die Beziehung zu der diese Optionen gelten. Schreibgeschützt.|
 |Element weglassen|Wenn "true", wird der XML-Knoten, der die die Quellrolle entspricht, aus dem Schema ausgelassen.<br /><br /> Liegt mehr als eine Beziehung zwischen den Quell- und Zielklassen, unterscheidet sich dieser rollenknoten zwischen Links, die die beiden Beziehungen angehören. Aus diesem Grund wird empfohlen, dass Sie diese Option nicht in diesem Fall festgelegt.|
