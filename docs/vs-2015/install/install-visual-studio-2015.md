@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841103"
 ---
 # <a name="install-visual-studio-2015"></a>Installieren Sie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Diese Seite enthält ausführliche Informationen, damit Sie bei der Installation
   
 #### <a name="to-install-or-uninstall-help-content"></a>So installieren oder deinstallieren Sie Hilfeinhalt  
   
-1.  Klicken Sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Menüleiste auf **Hilfe**, **Hilfeinhalte hinzufügen und entfernen**.  
+1. Klicken Sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Menüleiste auf **Hilfe**, **Hilfeinhalte hinzufügen und entfernen**.  
   
-2.  Wählen Sie in der Registerkarte **Inhalt verwalten** in **Microsoft Help Viewer**die Installationsquelle für den Hilfeinhalt aus.  
+2. Wählen Sie in der Registerkarte **Inhalt verwalten** in **Microsoft Help Viewer**die Installationsquelle für den Hilfeinhalt aus.  
   
-3.  Wenn Sie nach einem bestimmten Hilfethema suchen, geben Sie den Namen oder ein Schlüsselwort in der **Suche** Textfeld, und drücken Sie dann die **EINGABETASTE**.  
+3. Wenn Sie nach einem bestimmten Hilfethema suchen, geben Sie den Namen oder ein Schlüsselwort in der **Suche** Textfeld, und drücken Sie dann die **EINGABETASTE**.  
   
-4.  Klicken Sie neben dem Namen des Hilfethemas, das Sie installieren möchten, auf **Hinzufügen** oder **Entfernen** .  
+4. Klicken Sie neben dem Namen des Hilfethemas, das Sie installieren möchten, auf **Hinzufügen** oder **Entfernen** .  
   
-5.  Klicken Sie auf die **Update** Schaltfläche.  
+5. Klicken Sie auf die **Update** Schaltfläche.  
   
- Weitere Informationen zu installieren oder Offlinehilfe bereitzustellen, finden Sie unter den [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
+   Weitere Informationen zu installieren oder Offlinehilfe bereitzustellen, finden Sie unter den [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Überprüfen nach Service Releases und Produktupdates  
  Da nicht alle Erweiterungen kompatibel sind, aktualisiert Visual Studio keine Erweiterungen automatisch aktualisieren von früheren Versionen. Installieren Sie erneut die Erweiterungen aus der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Herausgeber Software.  

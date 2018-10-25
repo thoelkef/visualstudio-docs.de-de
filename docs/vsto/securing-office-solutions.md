@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846199"
 ---
 # <a name="secure-office-solutions"></a>Sichern von Office-Projektmappen
   Das Sicherheitsmodell für Office-Projektmappen beinhaltet verschiedene Technologien: die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], im Trust Center in Microsoft Office und Internet Explorer-Zone eingeschränkter Sites. In den folgenden Abschnitten wird die Funktionsweise der verschiedenen Sicherheitsfunktionen beschrieben:  
   
--   [Gewähren von Vertrauen für Office-Projektmappen](#GrantingTrustToSolutions)  
+- [Gewähren von Vertrauen für Office-Projektmappen](#GrantingTrustToSolutions)  
   
--   [Gewähren von Vertrauen für Dokumente](#GrantingTrustToDocuments)  
+- [Gewähren von Vertrauen für Dokumente](#GrantingTrustToDocuments)  
   
--   [Gewähren von vertrauen bei Verwendung von Windows Installer](#GrantingTrustWindowsInstaller)  
+- [Gewähren von vertrauen bei Verwendung von Windows Installer](#GrantingTrustWindowsInstaller)  
   
--   [Besondere sicherheitsüberlegungen für Office-Projektmappen](#Security)  
+- [Besondere sicherheitsüberlegungen für Office-Projektmappen](#Security)  
   
--   [Sicherheit während der Entwicklung](#SecurityDuringDeployment)  
+- [Sicherheit während der Entwicklung](#SecurityDuringDeployment)  
   
--   [Visual Studio-Tools für Office-Laufzeit](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio-Tools für Office-Laufzeit](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Gewähren von Vertrauen für Office-Projektmappen  
  Das Gewähren von Vertrauenswürdigkeit für Office-Projektmappen bedeutet das Ändern der Sicherheitsrichtlinie jedes Endbenutzers, um der Office-Lösung auf Grundlage der folgenden Beweise zu vertrauen:  
   
--   Das Zertifikat, das zum Signieren des Bereitstellungsmanifests verwendet wird.  
+- Das Zertifikat, das zum Signieren des Bereitstellungsmanifests verwendet wird.  
   
--   Die URL des Bereitstellungsmanifests.  
+- Die URL des Bereitstellungsmanifests.  
   
- Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).  
+  Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Gewähren von Vertrauen für Dokumente  
  Eine Anpassung auf Dokumentebene erfordert, dass sich das Dokument in einem Verzeichnis befindet, das als vertrauenswürdiger Speicherort festgelegt ist. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074064"
 ### <a name="document-level-solutions"></a>Projektmappen auf Anwendungsebene  
  Wenn Sie die folgenden Typen von Projekten entwickeln, muss der vollqualifizierte Pfad eines Dokuments zur Liste der vertrauenswürdigen Speicherorte in der Microsoft Office-Anwendung hinzugefügt werden:  
   
--   Lösungen, die auf einer Dateifreigabe im Netzwerk, z. B. sind auf Dokumentebene  *\\\servername\sharename*.  
+- Lösungen, die auf einer Dateifreigabe im Netzwerk, z. B. sind auf Dokumentebene  *\\\servername\sharename*.  
   
--   Projektmappen auf Anwendungsebene für Word, mit denen *.doc* oder *.docm* Dateien.  
+- Projektmappen auf Anwendungsebene für Word, mit denen *.doc* oder *.docm* Dateien.  
   
- Schließen Sie die Unterverzeichnisse ein, wenn Sie den Dokumentspeicherort der Liste vertrauenswürdiger Speicherorte hinzufügen, oder schließen Sie insbesondere die Debug- und Buildordner ein. Weitere Informationen finden Sie im Artikel mit Microsoft Office-Onlinehilfe [erstellen, entfernen oder Ändern eines vertrauenswürdigen Speicherorts für Ihre Dateien](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Schließen Sie die Unterverzeichnisse ein, wenn Sie den Dokumentspeicherort der Liste vertrauenswürdiger Speicherorte hinzufügen, oder schließen Sie insbesondere die Debug- und Buildordner ein. Weitere Informationen finden Sie im Artikel mit Microsoft Office-Onlinehilfe [erstellen, entfernen oder Ändern eines vertrauenswürdigen Speicherorts für Ihre Dateien](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate  
  Visual Studio erstellt ein temporäres Zertifikat, wenn ein signierendes Zertifikat nicht bereits vorhanden ist. Sie sollten dieses temporäre Zertifikat nur während der Entwicklung verwenden und ein offizielles Zertifikat für die Bereitstellung erwerben.  

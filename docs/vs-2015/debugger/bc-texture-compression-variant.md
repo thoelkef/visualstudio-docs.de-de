@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837970"
 ---
 # <a name="bc-texture-compression-variant"></a>BC-Texturkomprimierungsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
 ## <a name="remarks"></a>Hinweise  
  Die Komprimierung von Texturen mit einem Blockkomprimierungsformat geschieht bei jedem Aufruf von `ID3DDevice::CreateTexture2D`, mit dem eine Quelltextur erstellt wird. Texturen werden vor allem in folgenden Fällen komprimiert:  
   
--   Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt beschreibt eine nicht geänderte Shaderressource. Das bedeutet:  
+- Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt beschreibt eine nicht geänderte Shaderressource. Das bedeutet:  
   
-    -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
+  -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
-    -   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
+  -   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
   
-    -   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
+  -   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
   
-    -   Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
+  -   Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
   
--   Die ursprünglichen Daten werden beim Aufruf von `CreateTexture2D` bereitgestellt.  
+- Die ursprünglichen Daten werden beim Aufruf von `CreateTexture2D` bereitgestellt.  
   
- Im Folgenden finden Sie die unterstützten Quellformate und die entsprechenden Blockkomprimierungsformate.  
+  Im Folgenden finden Sie die unterstützten Quellformate und die entsprechenden Blockkomprimierungsformate.  
   
 |Originalformat (aus)|Komprimiertes Format (in)|  
 |------------------------------|------------------------------|  

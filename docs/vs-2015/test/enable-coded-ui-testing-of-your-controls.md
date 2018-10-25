@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848539"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
   
  **In diesem Thema:**  
   
-1.  [Datensatz-, Wiedergabe -und Eigenschaftvalidierung durch Implementierung der Barrierefreiheit unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Datensatz-, Wiedergabe -und Eigenschaftvalidierung durch Implementierung der Barrierefreiheit unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Benutzerdefinierte Eigenschaftenvalidierung durch Implementierung eines Eigenschaftenanbieters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Benutzerdefinierte Eigenschaftenvalidierung durch Implementierung eines Eigenschaftenanbieters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Codegenerierung durch Implementierung einer Klasse zum Zugriff auf benutzerdefinierte Eigenschaften unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Codegenerierung durch Implementierung einer Klasse zum Zugriff auf benutzerdefinierte Eigenschaften unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Datensatz-, Wiedergabe -und Eigenschaftvalidierung durch Implementierung der Barrierefreiheit unterstützen  
  Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator für codierte UI Aktionen wie Mausklicks anhand der Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Mausklicks vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn sich das Steuerelement beim Wiedergeben des Tests an einer anderen Stelle auf dem Bildschirm befindet, kann der generierte Code die entsprechende Aktion für das Steuerelement nicht ausführen. Dies kann zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in anderen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.  

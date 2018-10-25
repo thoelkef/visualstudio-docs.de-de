@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830586"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250106"
 ## <a name="cause"></a>Ursache  
  Es gibt mehrere mögliche Gründe für diese Warnung aus:  
   
--   Ist ein neues Objekt erstellt, aber nie verwendet.  
+- Ist ein neues Objekt erstellt, aber nie verwendet.  
   
--   Eine Methode, die erstellt und gibt eine neue Zeichenfolge aufgerufen wird, und die neue Zeichenfolge wird nie verwendet.  
+- Eine Methode, die erstellt und gibt eine neue Zeichenfolge aufgerufen wird, und die neue Zeichenfolge wird nie verwendet.  
   
--   Eine COM- oder P/Invoke-Methode, die einen HRESULT oder den Fehlercode Code zurückgibt, der nie verwendet wird. Regelbeschreibung  
+- Eine COM- oder P/Invoke-Methode, die einen HRESULT oder den Fehlercode Code zurückgibt, der nie verwendet wird. Regelbeschreibung  
   
- Unnötige objekterstellung und die zugeordneten Garbagecollection des nicht verwendeten Objekts wird Leistung beeinträchtigt.  
+  Unnötige objekterstellung und die zugeordneten Garbagecollection des nicht verwendeten Objekts wird Leistung beeinträchtigt.  
   
- Zeichenfolgen sind unveränderlich, und Methoden, z. B. String.ToUpper gibt eine neue Instanz der eine Zeichenfolge anstatt in der Instanz der Zeichenfolge in der aufrufenden Methode ändern.  
+  Zeichenfolgen sind unveränderlich, und Methoden, z. B. String.ToUpper gibt eine neue Instanz der eine Zeichenfolge anstatt in der Instanz der Zeichenfolge in der aufrufenden Methode ändern.  
   
- Wird ignoriert. HRESULT oder den Fehlercode kann zu unerwartetem Verhalten in fehlerbedingungen oder Ressourcenmangel Bedingungen führen.  
+  Wird ignoriert. HRESULT oder den Fehlercode kann zu unerwartetem Verhalten in fehlerbedingungen oder Ressourcenmangel Bedingungen führen.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Wenn eine-Methode eine neue Instanz der B-Objekt, die nie verwendet wird erstellt, übergeben Sie die Instanz als Argument an eine andere Methode oder weisen Sie die Instanz einer Variablen zu. Wenn die objekterstellung nicht erforderlich ist, entfernt werden die.- oder -  

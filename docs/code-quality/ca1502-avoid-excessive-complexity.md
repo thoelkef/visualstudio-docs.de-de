@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d124045165223358015c7cd7ae30bb3355b8b2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819302"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden
 
@@ -37,64 +37,75 @@ ms.locfileid: "45548763"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode hat eine übermäßige zyklomatische Komplexität.
+
+Eine Methode hat eine übermäßige zyklomatische Komplexität.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- *Zyklomatische Komplexität* misst die Anzahl der linear unabhängiger Pfade durch die Methode, die durch die Anzahl und Komplexität bedingter Branches bestimmt wird. Eine niedrige zyklomatische Komplexität gibt im Allgemeinen eine Methode, die einfach zu verstehen, zu testen und zu verwalten. Die zyklomatische Komplexität errechnet sich aus einem Diagramm Control Flow, der Methode und wird wie folgt angegeben:
 
- Zyklomatische Komplexität die Anzahl Rändern - die Anzahl der Knoten + 1 =
+*Zyklomatische Komplexität* misst die Anzahl der linear unabhängiger Pfade durch die Methode, die durch die Anzahl und Komplexität bedingter Branches bestimmt wird. Eine niedrige zyklomatische Komplexität gibt im Allgemeinen eine Methode, die einfach zu verstehen, zu testen und zu verwalten. Die zyklomatische Komplexität errechnet sich aus einem Diagramm Control Flow, der Methode und wird wie folgt angegeben:
 
- wobei ein Knoten einem zweigverteilungspunkt Logik und einen Edge darstellt, stellt eine Linie zwischen Knoten dar.
+Zyklomatische Komplexität die Anzahl Rändern - die Anzahl der Knoten + 1 =
 
- Einen Verstoß wird von die Regel berichtet, wenn die zyklomatische Komplexität mehr als 25 ist.
+wobei ein Knoten einem zweigverteilungspunkt Logik und einen Edge darstellt, stellt eine Linie zwischen Knoten dar.
 
- Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Einen Verstoß wird von die Regel berichtet, wenn die zyklomatische Komplexität mehr als 25 ist.
+
+Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, gestalten Sie die Methode, um die zyklomatische Komplexität zu reduzieren.
+
+Um einen Verstoß gegen diese Regel zu beheben, gestalten Sie die Methode, um die zyklomatische Komplexität zu reduzieren.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die Komplexität nicht ganz einfach reduziert werden kann und die Methode einfach ist zu verstehen, zu testen und zu verwalten. Insbesondere bei einer Methode, die eine große enthält `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])-Anweisung ist ein Kandidat für den Ausschluss. Die Risiken zur Destabilisierung der Codebasis später im Entwicklungszyklus oder Einführung in eine unerwartete Änderung im Verhalten von Common Language Runtime zuvor abgelieferten Codes den Code ein refactoring der Verwaltbarkeit Vorteile möglicherweise aufgehoben werden.
+
+Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die Komplexität nicht ganz einfach reduziert werden kann und die Methode einfach ist zu verstehen, zu testen und zu verwalten. Insbesondere bei einer Methode, die eine große enthält `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])-Anweisung ist ein Kandidat für den Ausschluss. Die Risiken zur Destabilisierung der Codebasis später im Entwicklungszyklus oder Einführung in eine unerwartete Änderung im Verhalten von Common Language Runtime zuvor abgelieferten Codes den Code ein refactoring der Verwaltbarkeit Vorteile möglicherweise aufgehoben werden.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Berechnung der zyklomatische Komplexität
- Die zyklomatische Komplexität wird durch Hinzufügen von 1 wie folgt berechnet:
+
+Die zyklomatische Komplexität wird durch Hinzufügen von 1 wie folgt berechnet:
 
 - Anzahl der Branches (z. B. `if`, `while`, und `do`)
 
 - Anzahl der `case` Anweisungen in einem `switch`
 
- Die folgenden Beispiele zeigen die Methoden, die unterschiedliche zyklomatische Komplexität vorliegt.
+## <a name="example"></a>Beispiel
+
+Die folgenden Beispiele zeigen die Methoden, die unterschiedliche zyklomatische Komplexität vorliegt.
+
+**Zyklomatische Komplexität von 1**
+
+[!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
+[!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
+[!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]
 
 ## <a name="example"></a>Beispiel
- **Zyklomatische Komplexität von 1**
 
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]
+**Zyklomatische Komplexität von 2**
 
-## <a name="example"></a>Beispiel
- **Zyklomatische Komplexität von 2**
-
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]
+[!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
+[!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
+[!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]
 
 ## <a name="example"></a>Beispiel
- **Zyklomatische Komplexität von 3**
 
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]
+**Zyklomatische Komplexität von 3**
+
+[!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
+[!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
+[!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]
 
 ## <a name="example"></a>Beispiel
- **Zyklomatische Komplexität von 8**
 
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]
+**Zyklomatische Komplexität von 8**
+
+[!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
+[!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
+[!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1501: Übermäßige Vererbung vermeiden](../code-quality/ca1501-avoid-excessive-inheritance.md)
+
+[CA1501: Übermäßige Vererbung vermeiden](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+- [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

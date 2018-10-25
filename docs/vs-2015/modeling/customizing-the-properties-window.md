@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845744"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
  **Beschreibung**. Die Beschreibung einer Domäneneigenschaft wird an zwei Orten angezeigt:  
   
--   Unten auf der das Fenster "Eigenschaften", wenn der Benutzer die Eigenschaft auswählt. Sie können es dem Benutzer erklären, was die Eigenschaft darstellt.  
+- Unten auf der das Fenster "Eigenschaften", wenn der Benutzer die Eigenschaft auswählt. Sie können es dem Benutzer erklären, was die Eigenschaft darstellt.  
   
--   In der generierten Programmcode. Wenn Sie die Funktionen der Dokumentation zum Extrahieren der API-Dokumentation verwenden, wird es als die Beschreibung dieser Eigenschaft in der API angezeigt.  
+- In der generierten Programmcode. Wenn Sie die Funktionen der Dokumentation zum Extrahieren der API-Dokumentation verwenden, wird es als die Beschreibung dieser Eigenschaft in der API angezeigt.  
   
- **Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.  
+  **Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.  
   
 ## <a name="exposing-style-features"></a>Style-Funktionen verfügbar zu machen  
  Einige der dynamischen Funktionen von grafischen Elementen dargestellt werden kann oder *verfügbar gemacht werden* als Domäneneigenschaften. Eine Funktion, die auf diese Weise verfügbar gemacht wurde, kann vom Benutzer aktualisiert werden und kann weitere problemlos aktualisiert werden durch Programmcode.  
@@ -101,38 +101,38 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
  Allerdings können Sie die folgenden Editoren und Typen angeben:  
   
-1.  Einem anderen Editor, der mit einem standard-Typ verwendet wird. Beispielsweise können Sie einen Datei-Pfad-Editor für eine Zeichenfolgeneigenschaft angeben.  
+1. Einem anderen Editor, der mit einem standard-Typ verwendet wird. Beispielsweise können Sie einen Datei-Pfad-Editor für eine Zeichenfolgeneigenschaft angeben.  
   
-2.  Einen externen Typ für die Eigenschaft "Domain" und einen Editor für sie.  
+2. Einen externen Typ für die Eigenschaft "Domain" und einen Editor für sie.  
   
-3.  Ein .NET-Editor wie z. B. den Pfad-Editor, oder Sie können eine eigene benutzerdefinierte Eigenschaft-Editor erstellen.  
+3. Ein .NET-Editor wie z. B. den Pfad-Editor, oder Sie können eine eigene benutzerdefinierte Eigenschaft-Editor erstellen.  
   
-     Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.  
+    Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.  
   
- In einer DSL ein *externen Typ* ist jeder Typ, der nicht das einfache Typen (z. B. Boolean oder Int32) oder die Zeichenfolge.  
+   In einer DSL ein *externen Typ* ist jeder Typ, der nicht das einfache Typen (z. B. Boolean oder Int32) oder die Zeichenfolge.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Um eine Domäneneigenschaft zu definieren, die einen externen Typ aufweist.  
   
-1.  In **Projektmappen-Explorer**, fügen Sie einen Verweis auf die Assembly (DLL) mit dem externen Typ, in der **Dsl** Projekt.  
+1. In **Projektmappen-Explorer**, fügen Sie einen Verweis auf die Assembly (DLL) mit dem externen Typ, in der **Dsl** Projekt.  
   
-     Die Assembly kann es sich um eine .NET-Assembly oder eine von Ihnen bereitgestellten Assembly sein.  
+    Die Assembly kann es sich um eine .NET-Assembly oder eine von Ihnen bereitgestellten Assembly sein.  
   
-2.  Fügen Sie den Typ der **Domänentypen** aufzulisten, es sei denn, Sie geschehen.  
+2. Fügen Sie den Typ der **Domänentypen** aufzulisten, es sei denn, Sie geschehen.  
   
-    1.  Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.  
+   1.  Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.  
   
-         Ein neuer Eintrag wird unter der **Domänentypen** Knoten.  
+        Ein neuer Eintrag wird unter der **Domänentypen** Knoten.  
   
-        > [!WARNING]
-        >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.  
+       > [!WARNING]
+       >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.  
   
-    2.  Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.  
+   2.  Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.  
   
-3.  Fügen Sie eine Domäneneigenschaft an eine Domänenklasse, auf die übliche Weise.  
+3. Fügen Sie eine Domäneneigenschaft an eine Domänenklasse, auf die übliche Weise.  
   
-     Wählen Sie im Fenster Eigenschaften den externen Typ aus der Dropdown-Liste in der **Typ** Feld.  
+    Wählen Sie im Fenster Eigenschaften den externen Typ aus der Dropdown-Liste in der **Typ** Feld.  
   
- In dieser Phase Benutzer können die Werte der Eigenschaft anzeigen, aber nicht bearbeiten. Die angezeigten Werte erhalten Sie vom der `ToString()` Funktion. Sie können Programmcode schreiben, die den Wert der Eigenschaft, z. B. in einem Befehlsfenster oder die Regel festlegt.  
+   In dieser Phase Benutzer können die Werte der Eigenschaft anzeigen, aber nicht bearbeiten. Die angezeigten Werte erhalten Sie vom der `ToString()` Funktion. Sie können Programmcode schreiben, die den Wert der Eigenschaft, z. B. in einem Befehlsfenster oder die Regel festlegt.  
   
 ### <a name="setting-a-property-editor"></a>Festlegen eines Eigenschaften-Editors  
  Fügen Sie der Domäne-Eigenschaft in der folgenden Form eine CLR-Attribut hinzu:  
@@ -178,11 +178,11 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
  Sie definieren einen Editor schreiben eine abgeleitete Klasse, von <xref:System.Drawing.Design.UITypeEditor>. Die Klasse muss außer Kraft setzen:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, mit dem Benutzer interagieren, und aktualisieren den Wert der Eigenschaft.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, mit dem Benutzer interagieren, und aktualisieren den Wert der Eigenschaft.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob Ihr Editor wird ein Dialogfeld zu öffnen, oder geben Sie ein Dropdown-Menü.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob Ihr Editor wird ein Dialogfeld zu öffnen, oder geben Sie ein Dropdown-Menü.  
   
- Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.  
+  Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Fügen Sie den Code in einer separaten Codedatei in die **Dsl** Projekt.  

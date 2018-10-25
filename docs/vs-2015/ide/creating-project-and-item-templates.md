@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851659"
 ---
 # <a name="creating-project-and-item-templates"></a>Erstellen von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Projekt- und Elementvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bie
 ## <a name="contents-of-a-template"></a>Inhalt von Vorlagen  
  Alle Projekt- und Elementvorlagen, unabhängig davon, ob diese zusammen mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert oder von Ihnen erstellt wurden, funktionieren nach demselben Prinzip und umfassen ähnliche Inhalte. Alle Vorlagen enthalten die folgenden Elemente:  
   
--   Die Dateien, die bei Verwendung der Vorlage erstellt werden sollen. Dazu gehören Quellcodedateien, eingebettete Ressourcen, Projektdateien usw.  
+- Die Dateien, die bei Verwendung der Vorlage erstellt werden sollen. Dazu gehören Quellcodedateien, eingebettete Ressourcen, Projektdateien usw.  
   
--   Eine VSTEMPLATE-Datei. Diese Datei enthält die Metadaten, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] benötigt werden, um die Vorlage in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** anzuzeigen und um ein Projekt oder Element von der Vorlage zu erstellen. Weitere Informationen zu VSTEMPLATE-Dateien finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
+- Eine VSTEMPLATE-Datei. Diese Datei enthält die Metadaten, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] benötigt werden, um die Vorlage in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** anzuzeigen und um ein Projekt oder Element von der Vorlage zu erstellen. Weitere Informationen zu VSTEMPLATE-Dateien finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
   
- Wenn diese Dateien in einer ZIP-Datei komprimiert sind und sich im richtigen Ordner befinden, werden sie automatisch von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt. Projektvorlagen werden im Dialogfeld **Neues Projekt** im Abschnitt **Meine Vorlagen** angezeigt, und Elementvorlagen werden in den Dialogfeldern **Neues Element hinzufügen** angezeigt. Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Wenn diese Dateien in einer ZIP-Datei komprimiert sind und sich im richtigen Ordner befinden, werden sie automatisch von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt. Projektvorlagen werden im Dialogfeld **Neues Projekt** im Abschnitt **Meine Vorlagen** angezeigt, und Elementvorlagen werden in den Dialogfeldern **Neues Element hinzufügen** angezeigt. Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter Kits  
  Starter Kits sind erweiterte Vorlagen, die mit anderen Mitgliedern der Community gemeinsam genutzt werden können. Ein Starter Kit umfasst kompilierbare Codebeispiele, Dokumentationen und andere Ressourcen, die Benutzern parallel zur Erstellung hilfreicher und realer Anwendungen den Einstieg in neue Tools und Programmiertechniken erleichtern. Der grundlegende Inhalt und die Verfahren für Starter Kits sind identisch mit denen für Vorlagen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md).  
