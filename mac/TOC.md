@@ -2,7 +2,8 @@
 # [IDE Tour (IDE-Tour)](ide-tour.md)
 
 # [Installation](installation.md)
-## [Installation der Vorschauversion](install-preview.md)
+## [Installieren und Verwenden hinter einer Firewall oder einem Proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Installieren einer Vorschauversion](install-preview.md)
 ## [Update (Aktualisieren)](update.md)
 ## [Uninstall (Deinstallieren)](uninstall.md)
 
