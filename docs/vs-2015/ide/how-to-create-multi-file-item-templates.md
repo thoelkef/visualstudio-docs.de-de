@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862176"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen mit mehreren Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Elementvorlagen können nur ein Element angeben, manchmal besteht ein Element jedoch aus mehreren Dateien. Eine Windows Forms-Elementvorlage für Visual Basic erfordert beispielsweise folgende drei Dateien:  
   
--   Eine VB-Datei, die den Code für das Formular enthält.  
+- Eine VB-Datei, die den Code für das Formular enthält.  
   
--   Eine DESIGNER.VB-Datei, die die Designer-Informationen für das Formular enthält.  
+- Eine DESIGNER.VB-Datei, die die Designer-Informationen für das Formular enthält.  
   
--   Eine RESX-Datei, die die eingebetteten Ressourcen für das Formular enthält.  
+- Eine RESX-Datei, die die eingebetteten Ressourcen für das Formular enthält.  
   
- Elementvorlagen mit mehreren Dateien erfordern Parameter, um sicherzustellen, dass die richtigen Erweiterungen verwendet werden, wenn das Element in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt wird. Wenn Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen, werden diese Parameter automatisch generiert, und keine weitere Bearbeitung ist erforderlich. In den folgenden Schritten wird erläutert, wie diese Parameter dafür verwendet werden, das Erstellen der richtigen Erweiterung sicherzustellen.  
+  Elementvorlagen mit mehreren Dateien erfordern Parameter, um sicherzustellen, dass die richtigen Erweiterungen verwendet werden, wenn das Element in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt wird. Wenn Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen, werden diese Parameter automatisch generiert, und keine weitere Bearbeitung ist erforderlich. In den folgenden Schritten wird erläutert, wie diese Parameter dafür verwendet werden, das Erstellen der richtigen Erweiterung sicherzustellen.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Manuelles Erstellen einer Elementvorlage mit mehreren Dateien  
   

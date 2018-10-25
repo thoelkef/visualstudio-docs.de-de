@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856183"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
@@ -44,27 +44,27 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
  Sie benötigen Folgendes:
 
--   [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
--   Code, den Sie, z. B. Visual c#, Visual Basic, C++, JavaScript oder X++ Debuggen können
+- Code, den Sie, z. B. Visual c#, Visual Basic, C++, JavaScript oder X++ Debuggen können
 
- Thema
+  Thema
 
--   [Video: Debuggen Sie visuelles mit der Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: Debuggen Sie visuelles mit der Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
--   [Zuordnen der Aufrufliste](#MapStack)
+- [Zuordnen der Aufrufliste](#MapStack)
 
--   [Aufzeichnen von Notizen zum code](#MakeNotes)
+- [Aufzeichnen von Notizen zum code](#MakeNotes)
 
--   [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
+- [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
 
--   [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
+- [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
 
--   [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
+- [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
 
--   [HÄUFIG GESTELLTE FRAGEN](#QA)
+- [HÄUFIG GESTELLTE FRAGEN](#QA)
 
- Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
+  Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="MapStack"></a> Zuordnen der Aufrufliste
 
@@ -129,63 +129,63 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ## <a name="QA"></a> Fragen und Antworten
 
--   **Nicht alle Aufrufe, die auf der Karte angezeigt werden. Warum?**
+- **Nicht alle Aufrufe, die auf der Karte angezeigt werden. Warum?**
 
-     Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. Um externen Code anzuzeigen, aktivieren Sie ihn im der **Aufrufliste** Fenster:
+   Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. Um externen Code anzuzeigen, aktivieren Sie ihn im der **Aufrufliste** Fenster:
 
-     ![Anzeige von externem Code über das Fenster "Aufrufliste"](../debugger/media/debuggermap_callstackmenu.png)
+   ![Anzeige von externem Code über das Fenster "Aufrufliste"](../debugger/media/debuggermap_callstackmenu.png)
 
-     oder deaktivieren Sie **nur meinen Code aktivieren** im Visual Studio-Debugoptionen:
+   oder deaktivieren Sie **nur meinen Code aktivieren** im Visual Studio-Debugoptionen:
 
-     ![Anzeige von externem Code über das Dialogfeld "Optionen"](../debugger/media/debuggermap_debugoptions.png)
+   ![Anzeige von externem Code über das Dialogfeld "Optionen"](../debugger/media/debuggermap_debugoptions.png)
 
--   **Wirkt Ändern der Zuordnung den Code sich?**
+- **Wirkt Ändern der Zuordnung den Code sich?**
 
-     Ändern der Zuordnung wirkt sich nicht auf den Code in keiner Weise aus. Sie können beliebigen Code in der Zuordnung gerne umbenennen, verschieben oder entfernen.
+   Ändern der Zuordnung wirkt sich nicht auf den Code in keiner Weise aus. Sie können beliebigen Code in der Zuordnung gerne umbenennen, verschieben oder entfernen.
 
--   **Was bedeutet diese Meldung: "das Diagramm basiert möglicherweise auf einer älteren Version des Codes"?**
+- **Was bedeutet diese Meldung: "das Diagramm basiert möglicherweise auf einer älteren Version des Codes"?**
 
-     Der Code wurde möglicherweise geändert, nachdem Sie die Zuordnung zuletzt aktualisiert haben. Zum Beispiel befindet sich möglicherweise ein Aufruf für die Zuordnung nicht mehr im Code. Schließen Sie die Meldung, und versuchen Sie dann, die Projektmappe vor der erneuten Aktualisierung der Zuordnung neu zu erstellen.
+   Der Code wurde möglicherweise geändert, nachdem Sie die Zuordnung zuletzt aktualisiert haben. Zum Beispiel befindet sich möglicherweise ein Aufruf für die Zuordnung nicht mehr im Code. Schließen Sie die Meldung, und versuchen Sie dann, die Projektmappe vor der erneuten Aktualisierung der Zuordnung neu zu erstellen.
 
--   **Wie steuere ich das Layout der Zuordnung?**
+- **Wie steuere ich das Layout der Zuordnung?**
 
-     Öffnen der **Layout** im Menü auf der zuordnungssymbolleiste:
+   Öffnen der **Layout** im Menü auf der zuordnungssymbolleiste:
 
-    -   Ändern Sie das Standardlayout.
+  -   Ändern Sie das Standardlayout.
 
-    -   Deaktivieren Sie zum Beenden an, dass die Zuordnung automatisch neu angeordnet, **Automatisches Layout beim Debugging**.
+  -   Deaktivieren Sie zum Beenden an, dass die Zuordnung automatisch neu angeordnet, **Automatisches Layout beim Debugging**.
 
-    -   Um die Zuordnung so wenig wie möglich zu ändern, wenn Sie Elemente hinzufügen, deaktivieren Sie **inkrementelles Layout**.
+  -   Um die Zuordnung so wenig wie möglich zu ändern, wenn Sie Elemente hinzufügen, deaktivieren Sie **inkrementelles Layout**.
 
--   **Kann ich die Zuordnung für andere Benutzer freigeben?**
+- **Kann ich die Zuordnung für andere Benutzer freigeben?**
 
-     Sie können Exportieren der Code Map, die an andere Personen zu senden, wenn Sie Microsoft Outlook oder speichern Sie sie der Projektmappe aus, damit Sie ihn in die quellcodeverwaltung einchecken können.
+   Sie können Exportieren der Code Map, die an andere Personen zu senden, wenn Sie Microsoft Outlook oder speichern Sie sie der Projektmappe aus, damit Sie ihn in die quellcodeverwaltung einchecken können.
 
-     ![Aufruflisten-Code Map für andere Benutzer freigeben](../debugger/media/debuggermap_sharewithothers.png)
+   ![Aufruflisten-Code Map für andere Benutzer freigeben](../debugger/media/debuggermap_sharewithothers.png)
 
--   **Wie verhindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**
+- **Wie verhindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**
 
-     Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif) auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG** + **UMSCHALT** + **`**.
+   Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif) auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG** + **UMSCHALT** + **`**.
 
-     Die Zuordnung weiterhin vorhandene Aufruflisten in der Karte hervorgehoben, während des Debuggens.
+   Die Zuordnung weiterhin vorhandene Aufruflisten in der Karte hervorgehoben, während des Debuggens.
 
--   **Was bedeuten die Elementsymbole und Pfeile?**
+- **Was bedeuten die Elementsymbole und Pfeile?**
 
-     Um weitere Informationen zu einem Element zu erhalten, bewegen Sie den Mauszeiger darüber, und sehen Sie sich die QuickInfo des jeweiligen Elements. Sie können außerdem sehen Sie sich die **Legende** um zu erfahren, was bedeutet, dass jedes Symbol.
+   Um weitere Informationen zu einem Element zu erhalten, bewegen Sie den Mauszeiger darüber, und sehen Sie sich die QuickInfo des jeweiligen Elements. Sie können außerdem sehen Sie sich die **Legende** um zu erfahren, was bedeutet, dass jedes Symbol.
 
-     ![Was bedeuten die Symbole in der Aufruflisten-Code Map?](../debugger/media/debuggermap_showlegend.png)
+   ![Was bedeuten die Symbole in der Aufruflisten-Code Map?](../debugger/media/debuggermap_showlegend.png)
 
- Thema
+  Thema
 
--   [Zuordnen der Aufrufliste](#MapStack)
+- [Zuordnen der Aufrufliste](#MapStack)
 
--   [Aufzeichnen von Notizen zum code](#MakeNotes)
+- [Aufzeichnen von Notizen zum code](#MakeNotes)
 
--   [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
+- [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
 
--   [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
+- [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
 
--   [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
+- [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Microsoft Docs
+title: IDebugPortNotify2::AddProgramNode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54726a332bd27d01a0229a9127480d2871360d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6724d33a10f766ac30d8211b656710c8a9f900da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860531"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-Registriert ein Programm, das gedebuggt werden kann mit dem Port, den es ausgeführt wird.  
+Registriert ein Programm, das Debuggen kann mit dem Port, den es ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int AddProgramNode(
   
 #### <a name="parameters"></a>Parameter  
  `pProgramNode`  
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das Programm zu registrierenden darstellt.  
+ [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das Programm zu registrierende darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Programm Knoten kann aufgehoben werden von dem Port durch Aufrufen der [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methode.  
+ Ein Programm-Knoten kann aufgehoben werden dem Port durch Aufrufen der [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

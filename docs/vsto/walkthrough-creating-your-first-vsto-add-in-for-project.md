@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884861"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines VSTO-Add-Ins für Microsoft Office-Projekt. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,17 +32,17 @@ ms.locfileid: "35672327"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen eines VSTO-Add-In-Projekts für Project.  
+- Erstellen eines VSTO-Add-In-Projekts für Project.  
   
--   Schreiben von Code, der das Objektmodell von Project verwendet, um eine Aufgabe zu einem neuen Projekt hinzuzufügen.  
+- Schreiben von Code, der das Objektmodell von Project verwendet, um eine Aufgabe zu einem neuen Projekt hinzuzufügen.  
   
--   Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
+- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
--   Bereinigen des abgeschlossenen Projekts, damit das VSTO-Add-In nicht mehr automatisch auf Ihrem Entwicklungscomputer ausgeführt wird.  
+- Bereinigen des abgeschlossenen Projekts, damit das VSTO-Add-In nicht mehr automatisch auf Ihrem Entwicklungscomputer ausgeführt wird.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -78,18 +78,18 @@ ms.locfileid: "35672327"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>So fügen Sie eine Aufgabe zu einem neuen Projekt hinzu  
   
-1.  Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für die `NewProject` Ereignis die `Microsoft.Office.Interop.MSProject.Application` Klasse.  
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn`-Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das `NewProject`-Ereignis der `Microsoft.Office.Interop.MSProject.Application`-Klasse.  
   
-     Wenn der Benutzer ein neues Projekt erstellt, fügt dieser Ereignishandler eine Aufgabe zum Projekt hinzu.  
+    Wenn der Benutzer ein neues Projekt erstellt, fügt dieser Ereignishandler eine Aufgabe zum Projekt hinzu.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Um das Projekt zu ändern, wird in diesem Codebeispiel wird die folgenden Objekte verwendet:  
+   Um das Projekt zu ändern, wird in diesem Codebeispiel wird die folgenden Objekte verwendet:  
   
--   Das `Application` -Feld der `ThisAddIn` -Klasse. Die `Application` Feld gibt einen `Microsoft.Office.Interop.MSProject.Application` Objekt, das die aktuelle Instanz von Project darstellt.  
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Das `Application`-Feld gibt ein `Microsoft.Office.Interop.MSProject.Application`-Objekt zurück, das für die aktuelle Instanz von Project steht.  
   
--   Die `pj` Parameter des ereignishandlers für das NewProject-Ereignis. Die `pj` -Parameter ist ein `Microsoft.Office.Interop.MSProject.Project` -Objekt, das das Projekt darstellt. Weitere Informationen finden Sie unter [Projekt Lösungen](../vsto/project-solutions.md).  
+-   Die `pj` Parameter des ereignishandlers für das NewProject-Ereignis. Der `pj`-Parameter ist ein `Microsoft.Office.Interop.MSProject.Project`-Objekt, das das Projekt darstellt. Weitere Informationen finden Sie unter [Projekt Lösungen](../vsto/project-solutions.md).  
   
 1.  Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code verbindet den `Application_Newproject` -Ereignishandler mit dem NewProject-Ereignis.  
   

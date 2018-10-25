@@ -18,27 +18,27 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ce3fd47850df5bab1db771177637102e9ec57a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdb06d4909bab31169dc0a46156b7e1300b917bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891335"
 ---
 # <a name="program-nodes"></a>Programmknoten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Im Hinblick auf die Debugger-Architektur eine **Programm Knoten**:  
   
--   Ist eine einfache Beschreibung eines Programms.  
+- Ist eine einfache Beschreibung eines Programms.  
   
--   Erkennen selbst und den Prozess, den sie in ausgeführt wird, den und angefügt werden kann, um von getrennt, und Beschreiben Sie die Debug-Engine (DE), die sie ggf. erstellt haben.  
+- Erkennen selbst und den Prozess, den sie in ausgeführt wird, den und angefügt werden kann, um von getrennt, und Beschreiben Sie die Debug-Engine (DE), die sie ggf. erstellt haben.  
   
--   Wird durch dargestellt eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle, die in der Regel von einem DE oder Port erstellt. Programmknoten an einen Port hinzugefügt werden, indem [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Wenn ein Programm-Knoten zu einem Port hinzugefügt wird, wird er hinzugefügt, an den Prozess mit dem Programm, das dieses Programm-Knoten darstellt.  
+- Wird durch dargestellt eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle, die in der Regel von einem DE oder Port erstellt. Programmknoten an einen Port hinzugefügt werden, indem [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Wenn ein Programm-Knoten zu einem Port hinzugefügt wird, wird er hinzugefügt, an den Prozess mit dem Programm, das dieses Programm-Knoten darstellt.  
   
- Einige Zeit nach eine Debugsitzung, je nach Implementierung des debugpakets gestartet wird programmknoten dienen zum entsprechenden Programme erstellen. Wenn ein Prozess für seinen Programmen abgefragt wird, werden die Programme aufgelistet, eine für jeden Knoten des Programms.  
+  Einige Zeit nach eine Debugsitzung, je nach Implementierung des debugpakets gestartet wird programmknoten dienen zum entsprechenden Programme erstellen. Wenn ein Prozess für seinen Programmen abgefragt wird, werden die Programme aufgelistet, eine für jeden Knoten des Programms.  
   
- Bevor Sie ein Programm angefügt ist, benötigt die IDE nur eine einfache Beschreibung des Programms an. Diese Informationen kann vom Programm Knoten abgerufen werden. Nachdem die Anwendung angefügt ist, muss die IDE Ausführlichere Informationen anzeigen, z. B. eine Liste aller Threads, die in das Programm ausgeführt werden. Diese Informationen werden vom Programm selbst abgerufen.  
+  Bevor Sie ein Programm angefügt ist, benötigt die IDE nur eine einfache Beschreibung des Programms an. Diese Informationen kann vom Programm Knoten abgerufen werden. Nachdem die Anwendung angefügt ist, muss die IDE Ausführlichere Informationen anzeigen, z. B. eine Liste aller Threads, die in das Programm ausgeführt werden. Diese Informationen werden vom Programm selbst abgerufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Programme](../../extensibility/debugger/programs.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876515"
 ---
 # <a name="cpu-usage"></a>CPU-Auslastung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
   
-1.  Legen Sie in Visual Studio die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie das Bereitstellungsziel.  
+1. Legen Sie in Visual Studio die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie das Bereitstellungsziel.  
   
-     ![Version und lokalen Computer auswählen](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Version und lokalen Computer auswählen](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Durch das Ausführen der App im **Release** -Modus erhalten Sie eine bessere Übersicht über die tatsächliche Leistung Ihrer App.  
+   -   Durch das Ausführen der App im **Release** -Modus erhalten Sie eine bessere Übersicht über die tatsächliche Leistung Ihrer App.  
   
-    -   Durch Ausführen der App auf dem lokalen Computer wird die Ausführung der installierten App am besten repliziert.  
+   -   Durch Ausführen der App auf dem lokalen Computer wird die Ausführung der installierten App am besten repliziert.  
   
-    -   Wenn Sie Daten von einem Remotegerät sammeln, führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus.  
+   -   Wenn Sie Daten von einem Remotegerät sammeln, führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus.  
   
-    -   Bei Windows Phone-Apps bietet das Sammeln von Daten direkt auf dem **Gerät** die genauesten Daten.  
+   -   Bei Windows Phone-Apps bietet das Sammeln von Daten direkt auf dem **Gerät** die genauesten Daten.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
-3.  Wählen Sie **CPU-Auslastung** , und klicken Sie dann auf **Starten**.  
+3. Wählen Sie **CPU-Auslastung** , und klicken Sie dann auf **Starten**.  
   
-     ![CPU-Auslastung auswählen](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![CPU-Auslastung auswählen](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Klicken Sie nach dem Start der App auf **Maximale Anzahl abrufen**. Warten Sie nach Anzeige der Ausgabe etwa eine Minute, und klicken Sie dann auf **Maximale Anzahl asynchron abrufen**. Das Warten zwischen Schaltflächenklicks vereinfacht das Isolieren der Schaltflächenklickroutinen im Diagnosebericht.  
+4. Klicken Sie nach dem Start der App auf **Maximale Anzahl abrufen**. Warten Sie nach Anzeige der Ausgabe etwa eine Minute, und klicken Sie dann auf **Maximale Anzahl asynchron abrufen**. Das Warten zwischen Schaltflächenklicks vereinfacht das Isolieren der Schaltflächenklickroutinen im Diagnosebericht.  
   
-5.  Nachdem die zweite Ausgabezeile angezeigt wird, wählen Sie im Leistungs- und Diagnosehub **Auflistung beenden** aus.  
+5. Nachdem die zweite Ausgabezeile angezeigt wird, wählen Sie im Leistungs- und Diagnosehub **Auflistung beenden** aus.  
   
- ![Datenerfassung der CPU-Auslastung beenden](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Datenerfassung der CPU-Auslastung beenden](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Das CPU-Auslastungstool analysiert die Daten und zeigt den Bericht an.  
+   Das CPU-Auslastungstool analysiert die Daten und zeigt den Bericht an.  
   
- ![CPU-Auslastungsbericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CPU-Auslastungsbericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analysieren des CPU-Auslastungsberichts  
   

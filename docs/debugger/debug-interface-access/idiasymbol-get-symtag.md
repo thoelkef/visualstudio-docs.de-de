@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symtag | Microsoft Docs'
+title: 'Idiasymbol:: Get_symtag | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029dee2188f48d2f41368c965542670e5512f7e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 346bfe7b0d096a9658e5063d97337349cc6a1a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887942"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 Ruft die Klassifizierung der Symbol-Typ ab.  
@@ -34,13 +34,13 @@ HRESULT get_symTag (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) -Enumeration, die Klassifizierung der Symbol-Typ angibt.  
+ [out] Gibt einen Wert aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) -Enumeration, die Klassifizierung der Symbol-Typs angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="example"></a>Beispiel  
   

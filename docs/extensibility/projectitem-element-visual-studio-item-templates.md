@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855988"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Projektelementvorlagen)
 Gibt eine Datei, die in der Elementvorlage enthalten ist.  
@@ -51,13 +51,13 @@ Gibt eine Datei, die in der Elementvorlage enthalten ist.
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`SubType`|Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Elementvorlage mit mehreren Dateien an. Dieser Wert wird verwendet, um den Editor zu bestimmen, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Element zu öffnen.|  
-|`CustomTool`|Optionales Attribut.<br /><br /> Legt die CustomTool für das Element in der Projektdatei fest.|  
-|`ItemType`|Optionales Attribut.<br /><br /> Legt den ItemType für das Element in der Projektdatei fest.|  
-|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein.|  
-|`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen des Elements, das aus der Vorlage erstellt wird. Dieses Attribut ist nützlich für die Verwendung von parameterersetzungen erstellen Sie einen Elementnamen ein.|  
+| Attribut | Beschreibung |
+|---------------------| - |
+| `SubType` | Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Elementvorlage mit mehreren Dateien an. Dieser Wert wird verwendet, um den Editor zu bestimmen, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Element zu öffnen. |
+| `CustomTool` | Optionales Attribut.<br /><br /> Legt die CustomTool für das Element in der Projektdatei fest. |
+| `ItemType` | Optionales Attribut.<br /><br /> Legt den ItemType für das Element in der Projektdatei fest. |
+| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein. |
+| `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen des Elements, das aus der Vorlage erstellt wird. Dieses Attribut ist nützlich für die Verwendung von parameterersetzungen erstellen Sie einen Elementnamen ein. |
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  

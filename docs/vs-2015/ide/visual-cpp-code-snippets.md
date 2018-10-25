@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861359"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++-Codeausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwend
 ## <a name="inserting-a-code-snippet"></a>Einfügen eines Codeausschnitts  
  Zum Einfügen eines Codeausschnitts öffnen Sie eine C++-Codedatei (.cpp oder .h), klicken Sie auf eine beliebige Stelle in der Datei, und führen Sie eine der folgenden Aktionen aus:  
   
--   Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Ausschnitt einfügen** auszuwählen.  
+- Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Ausschnitt einfügen** auszuwählen.  
   
--   Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.  
+- Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.  
   
--   Verwenden Sie folgenden Tastaturbefehl: **STRG + K + X**  
+- Verwenden Sie folgenden Tastaturbefehl: **STRG + K + X**  
   
- Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:  
+  Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwend
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Verwenden eines Codeausschnitts zum Umschließen von ausgewähltem Code  
  Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, wählen Sie eine Zeile (oder mehrere Zeilen) aus, und führen Sie eine der folgenden Aktionen aus:  
   
-1.  Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Umschließen mit** auszuwählen.  
+1. Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Umschließen mit** auszuwählen.  
   
-2.  Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Umschließen mit** aus.  
+2. Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Umschließen mit** aus.  
   
-3.  Verwenden Sie folgenden Tastaturbefehl: **STRG + K + S**  
+3. Verwenden Sie folgenden Tastaturbefehl: **STRG + K + S**  
   
- Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:  
+   Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:  
   
 ```cpp  
 #if 0  

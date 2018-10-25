@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e6061918df2110599731c0ac57340ae5319a8a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887305"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch-Aktivitätsdesigner
 Der <xref:System.Activities.Statements.PickBranch> stellt einen ereignisbasierten Ausführungspfad innerhalb einer <xref:System.Activities.Statements.Pick>-Aktivität bereit, der von einem eingehenden Ereignis ausgelöst werden kann.  
@@ -34,21 +34,21 @@ Der <xref:System.Activities.Statements.PickBranch> stellt einen ereignisbasierte
   
  Es gibt zwei Möglichkeiten zum Hinzufügen von <xref:System.Activities.Statements.PickBranch> Objekte auf die Auflistung von einer <xref:System.Activities.Statements.Pick> Objekt: Ziehen und Ablegen der **PickBranch** -Designer aus der **Toolbox** oder über das Kontextmenü in in der **auswählen** Entwurfsoberfläche:  
   
-1.  Die **PickBranch** -Designer erstellt eine <xref:System.Activities.Statements.PickBranch> Wenn es gezogen wird von der **Toolbox** und in einer der Verzweigungen einer **auswählen** Aktivitäts-Designer auf die [!INCLUDE[wfd2](../includes/wfd2-md.md)] Oberfläche. Die neuen <xref:System.Activities.Statements.PickBranch>-Objekte können im <xref:System.Activities.Statements.Pick>-Designer auf der linken oder rechten Seite jedes <xref:System.Activities.Statements.PickBranch>-Elements platziert werden, das bereits in der Auflistung enthalten ist. Beim Ziehen einer **PickBranch** Designer auf die **auswählen** mit der Maus, die **auswählen** Designer mithilfe ein vertikales blaugrauen Bands an, wo entsprechend der <xref:System.Activities.Statements.PickBranch> wird für den gegebenen Mausposition hinzugefügt.  
+1. Die **PickBranch** -Designer erstellt eine <xref:System.Activities.Statements.PickBranch> Wenn es gezogen wird von der **Toolbox** und in einer der Verzweigungen einer **auswählen** Aktivitäts-Designer auf die [!INCLUDE[wfd2](../includes/wfd2-md.md)] Oberfläche. Die neuen <xref:System.Activities.Statements.PickBranch>-Objekte können im <xref:System.Activities.Statements.Pick>-Designer auf der linken oder rechten Seite jedes <xref:System.Activities.Statements.PickBranch>-Elements platziert werden, das bereits in der Auflistung enthalten ist. Beim Ziehen einer **PickBranch** Designer auf die **auswählen** mit der Maus, die **auswählen** Designer mithilfe ein vertikales blaugrauen Bands an, wo entsprechend der <xref:System.Activities.Statements.PickBranch> wird für den gegebenen Mausposition hinzugefügt.  
   
-2.  Klicken Sie mit der rechten Maustaste auf **auswählen** -Aktivitätsdesigner (jedoch nicht im **PickBranch** Designer) ein Kontextmenü und wählen Sie **Verzweigung erstellen** zum Hinzufügen einer neuen <xref:System.Activities.Statements.PickBranch>. Beachten Sie, dass die neue <xref:System.Activities.Statements.PickBranch> wird hinzugefügt, die rechts neben den vorhandenen <xref:System.Activities.Statements.PickBranch> Objekte in der **auswählen** Designer.  
+2. Klicken Sie mit der rechten Maustaste auf **auswählen** -Aktivitätsdesigner (jedoch nicht im **PickBranch** Designer) ein Kontextmenü und wählen Sie **Verzweigung erstellen** zum Hinzufügen einer neuen <xref:System.Activities.Statements.PickBranch>. Beachten Sie, dass die neue <xref:System.Activities.Statements.PickBranch> wird hinzugefügt, die rechts neben den vorhandenen <xref:System.Activities.Statements.PickBranch> Objekte in der **auswählen** Designer.  
   
- Die **PickBranch** Designer kann erweitert werden, damit die **Trigger** und **Aktion** Dialogfelder oder durch Klicken auf die doppelten Caretzeichen auf der rechten Seite ihrer Header reduziert. Bearbeiten der <xref:System.Activities.Statements.PickBranch.Trigger%2A> und <xref:System.Activities.Statements.PickBranch.Action%2A> aller <xref:System.Activities.Statements.PickBranch> durch Ablegen von Aktivitäten in der **Trigger** und **Aktion** Felder ihrer Designer.  
+   Die **PickBranch** Designer kann erweitert werden, damit die **Trigger** und **Aktion** Dialogfelder oder durch Klicken auf die doppelten Caretzeichen auf der rechten Seite ihrer Header reduziert. Bearbeiten der <xref:System.Activities.Statements.PickBranch.Trigger%2A> und <xref:System.Activities.Statements.PickBranch.Action%2A> aller <xref:System.Activities.Statements.PickBranch> durch Ablegen von Aktivitäten in der **Trigger** und **Aktion** Felder ihrer Designer.  
   
- Der <xref:System.Activities.Statements.PickBranch> Objekte in der <xref:System.Activities.Statements.Pick.Branches%2A> Auflistung von einer <xref:System.Activities.Statements.Pick> Objekt, das neu angeordnet werden können, durch Ziehen und Ablegen in einem neuen Speicherort innerhalb der **auswählen** Designer. Die **auswählen** Designer mithilfe ein vertikales blaugrauen Bands an, wo entsprechend der <xref:System.Activities.Statements.PickBranch> gegebenen Mausposition hinzugefügt wird.  
+   Der <xref:System.Activities.Statements.PickBranch> Objekte in der <xref:System.Activities.Statements.Pick.Branches%2A> Auflistung von einer <xref:System.Activities.Statements.Pick> Objekt, das neu angeordnet werden können, durch Ziehen und Ablegen in einem neuen Speicherort innerhalb der **auswählen** Designer. Die **auswählen** Designer mithilfe ein vertikales blaugrauen Bands an, wo entsprechend der <xref:System.Activities.Statements.PickBranch> gegebenen Mausposition hinzugefügt wird.  
   
- Es gibt zwei Möglichkeiten, ein <xref:System.Activities.Statements.PickBranch>-Objekt zu löschen:  
+   Es gibt zwei Möglichkeiten, ein <xref:System.Activities.Statements.PickBranch>-Objekt zu löschen:  
   
-1.  Wählen Sie die **PickBranch** Designer und löschen Sie sie.  
+3. Wählen Sie die **PickBranch** Designer und löschen Sie sie.  
   
-2.  Wählen Sie die **PickBranch** Designer, mit der rechten Maustaste das Kontextmenü, und wählen Sie **löschen**.  
+4. Wählen Sie die **PickBranch** Designer, mit der rechten Maustaste das Kontextmenü, und wählen Sie **löschen**.  
   
- Wählen Sie die **PickBranch** Designer, wie die Auswahl einer der Aktivitäten in dessen **Trigger** oder **Aktion** Felder versehentlich löscht diese Aktivitäten und nicht die <xref:System.Activities.Statements.PickBranch> Objekt.  
+   Wählen Sie die **PickBranch** Designer, wie die Auswahl einer der Aktivitäten in dessen **Trigger** oder **Aktion** Felder versehentlich löscht diese Aktivitäten und nicht die <xref:System.Activities.Statements.PickBranch> Objekt.  
   
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>PickBranch-Eigenschaften im Workflow-Designer  
  In der folgenden Tabelle werden die nützlichsten Eigenschaften von <xref:System.Activities.Statements.PickBranch> aufgeführt, und es wird beschrieben, wie sie in [!INCLUDE[wfd2](../includes/wfd2-md.md)] verwendet werden.  

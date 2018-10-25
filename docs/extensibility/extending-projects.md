@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864672"
 ---
 # <a name="extend-projects"></a>Erweitern von Projekten
 Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressourcendateien in Einheiten für die Kompilierung und Bereitstellung bereit. Weitere Informationen zu in-Projekten finden Sie [Projekte (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -36,7 +36,7 @@ Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressour
  Beschreibt, wie eine benutzerdefinierte Projektvorlagen erstellen.  
   
  [Speichern von Daten in Projektdateien](../extensibility/saving-data-in-project-files.md)  
- Erläutert, wie zu Projekt hinzufügen (*.* Proj *)-Dateien.  
+ Erläutert, wie zu Projekt hinzufügen (<em>.</em> Proj *)-Dateien.  
   
  [Überprüfen von Untertypen eines Projekts zur Laufzeit](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Erläutert den Untertyp eines Projekts zur Laufzeit zu überprüfen.  

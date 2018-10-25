@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877581"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Der Editor wird mit Komponenten des Managed Extensibility Framework (MEF) erstel
 ### <a name="component-parts-and-composition-containers"></a>Komponenten und Kompositionscontainer  
  Eine Komponente ist eine Klasse oder ein Member einer Klasse, die eine (oder beides) der folgenden Möglichkeiten:  
   
--   Nutzen Sie eine andere Komponente  
+- Nutzen Sie eine andere Komponente  
   
--   Von einer anderen Komponente verwendet werden  
+- Von einer anderen Komponente verwendet werden  
   
- Betrachten Sie beispielsweise eine einkaufsanwendung, die eine Eintrag-Komponente, die von der Verfügbarkeit Produktdaten, die von einer Komponente der Warehouse-Inventur bereitgestellten abhängt. Gemäß MEF, das Teil der Hardwareinventur kann *exportieren* Verfügbarkeit von Produktdaten und die Reihenfolge Eintrag Teil kann *importieren* Daten. Der Eintrag Reihenfolge und den Bestandteil müssen nicht voneinander wissen; die *Kompositionscontainer* (bereitgestellt von der hostanwendung) Dient zum Verwalten des Satz von Exporten und Auflösen von Exporte und Importe.  
+  Betrachten Sie beispielsweise eine einkaufsanwendung, die eine Eintrag-Komponente, die von der Verfügbarkeit Produktdaten, die von einer Komponente der Warehouse-Inventur bereitgestellten abhängt. Gemäß MEF, das Teil der Hardwareinventur kann *exportieren* Verfügbarkeit von Produktdaten und die Reihenfolge Eintrag Teil kann *importieren* Daten. Der Eintrag Reihenfolge und den Bestandteil müssen nicht voneinander wissen; die *Kompositionscontainer* (bereitgestellt von der hostanwendung) Dient zum Verwalten des Satz von Exporten und Auflösen von Exporte und Importe.  
   
- Der Kompositionscontainer <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, ist in der Regel im Besitz des Hosts. Der Kompositionscontainer verwaltet eine *Katalog* von exportierten Komponenten.  
+  Der Kompositionscontainer <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, ist in der Regel im Besitz des Hosts. Der Kompositionscontainer verwaltet eine *Katalog* von exportierten Komponenten.  
   
 ### <a name="exporting-and-importing-component-parts"></a>Exportieren und Importieren von Komponenten  
  Sie können alle Funktionen, exportieren, sofern es als eine öffentliche Klasse oder einen öffentlichen Member einer Klasse (Eigenschaft oder Methode) implementiert ist. Sie müssen keine leiten Sie Ihre Komponente von <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Sie müssen stattdessen Hinzufügen einer <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut auf die Klasse oder Klassenmember, die Sie exportieren möchten. Dieses Attribut gibt an, die *Vertrag* durch die eine andere Komponente Teil Ihrer Funktionen zur importieren kann.  

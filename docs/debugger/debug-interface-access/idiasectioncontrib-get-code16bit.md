@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_code16bit | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_code16bit | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e253b440712a26b67870f76b241a85f5979158b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6057f6d6bb217908e3980a6a3fdd42584431ab55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858419"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 Ruft ein Flag, das angibt, ob der Abschnitt 16-Bit-Code enthält.  
@@ -34,13 +34,13 @@ HRESULT get_code16bit(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` ist der Code im Abschnitt 16-Bit-; andernfalls, gibt `FALSE`.  
+ [out] Gibt `TRUE` ist der Code in den Abschnitt, 16-Bit-; andernfalls, gibt `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt nur an, wenn der Code 16-Bit ist. Wenn der Code nicht 16-Bit ist, kann es etwas anderes, z. B. 32-Bit oder 64-Bit-Code sein.  
+ Diese Methode gibt nur auf, wenn der Code 16-Bit ist. Wenn der Code keine 16-Bit ist, konnte es nichts anderes, z. B. 32-Bit oder 64-Bit-Code sein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

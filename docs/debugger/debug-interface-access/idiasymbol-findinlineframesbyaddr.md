@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
+title: IDiaSymbol::findInlineFramesByAddr | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf330238d213854ba26d8345d0daaee7b3f9b1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0ddc8e2ea4c4ba8e2f142a3f30ec1206a8abc4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862371"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Ruft eine Enumeration, die von einem Client zum iterieren durch alle Inlineframes auf einer angegebenen Adresse ermöglichen.  
+Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf einer bestimmten Adresse ermöglicht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ HRESULT findInlineFramesByAddr (
  [in] Gibt die Komponente im Abschnitt der Adresse.  
   
  `offset`  
- [in] Gibt den Offset-Komponente der Adresse an.  
+ [in] Gibt die Offset-Komponente der Adresse.  
   
  `ppResult`  
- [out] Enthält eine `IDiaEnumSymbols` -Objekt, das die Liste der Bilder enthält, die abgerufen werden.  
+ [out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

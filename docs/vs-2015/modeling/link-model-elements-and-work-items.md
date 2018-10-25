@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891751"
 ---
 # <a name="link-model-elements-and-work-items"></a>Verknüpfen von Modellelementen und Arbeitselementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
   
  Sie können unter anderem Folgendes verknüpfen:  
   
--   Eine User Story-Arbeitsaufgabe mit einem Aktivitätsdiagramm, um zu zeigen, wie die Story als Sequenz von Vorgängen implementiert werden kann.  
+- Eine User Story-Arbeitsaufgabe mit einem Aktivitätsdiagramm, um zu zeigen, wie die Story als Sequenz von Vorgängen implementiert werden kann.  
   
--   Ein Anwendungsfall in einem Anwendungsfalldiagramm mit den testfallbezogenen Arbeitsaufgaben, um sicherstellen, dass der Anwendungsfall ordnungsgemäß implementiert wird.  
+- Ein Anwendungsfall in einem Anwendungsfalldiagramm mit den testfallbezogenen Arbeitsaufgaben, um sicherstellen, dass der Anwendungsfall ordnungsgemäß implementiert wird.  
   
--   Ein Attribut in einer Klasse in einem UML-Klassendiagramm mit einer Fehlerarbeitsaufgabe, um einen Fehler in der Implementierung des Attributs aufzuzeigen.  
+- Ein Attribut in einer Klasse in einem UML-Klassendiagramm mit einer Fehlerarbeitsaufgabe, um einen Fehler in der Implementierung des Attributs aufzuzeigen.  
   
--   Eine Komponente in einem Komponentendiagramm mit einer aufgabenbezogenen Arbeitsaufgabe, um die Entwicklung der Komponente nachzuverfolgen. Eine solche Aufgabe ist normalerweise in kleinere Aufgaben aufgeteilt.  
+- Eine Komponente in einem Komponentendiagramm mit einer aufgabenbezogenen Arbeitsaufgabe, um die Entwicklung der Komponente nachzuverfolgen. Eine solche Aufgabe ist normalerweise in kleinere Aufgaben aufgeteilt.  
   
- Sie können Arbeitsaufgaben mit jedem Element verknüpfen, das Sie in den Modellierungsdiagrammen oder im UML-Modell-Explorer auswählen können, wie zum Beispiel folgende Elemente:  
+  Sie können Arbeitsaufgaben mit jedem Element verknüpfen, das Sie in den Modellierungsdiagrammen oder im UML-Modell-Explorer auswählen können, wie zum Beispiel folgende Elemente:  
   
--   Alle Elemente in UML-Modellen, z. B. UML-Klassen, Lebenslinien, Anwendungsfälle, Subsysteme, Aktivitäten, Objektknoten, Komponenten, Schnittstellen  
+- Alle Elemente in UML-Modellen, z. B. UML-Klassen, Lebenslinien, Anwendungsfälle, Subsysteme, Aktivitäten, Objektknoten, Komponenten, Schnittstellen  
   
--   Alle Beziehungen in UML-Modellen, z. B. Zuordnungen, Verallgemeinerungen, Abhängigkeiten, Flüsse, Meldungen  
+- Alle Beziehungen in UML-Modellen, z. B. Zuordnungen, Verallgemeinerungen, Abhängigkeiten, Flüsse, Meldungen  
   
--   Teile von Elementen, z. B. die Attribute und Vorgänge von Klassen, die Ausführungen von Lebenslinien, die Eingabe- und Ausgabepins von Aktivitäten sowie die Teile und Ports von Komponenten  
+- Teile von Elementen, z. B. die Attribute und Vorgänge von Klassen, die Ausführungen von Lebenslinien, die Eingabe- und Ausgabepins von Aktivitäten sowie die Teile und Ports von Komponenten  
   
--   Ebenen und Ebenenabhängigkeiten  
+- Ebenen und Ebenenabhängigkeiten  
   
--   Kommentare und Kommentarlinks  
+- Kommentare und Kommentarlinks  
   
--   Diagramme. Wählen Sie einen leeren Bereich des Diagramms aus, um ein Diagramm auszuwählen.  
+- Diagramme. Wählen Sie einen leeren Bereich des Diagramms aus, um ein Diagramm auszuwählen.  
   
 > [!WARNING]
 >  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, eine Arbeitsaufgabe zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  

@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifyopendbg | Microsoft Docs'
+title: 'Idialoadcallback:: Notifyopendbg | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c9395805b3fe12640164261d3ec916bd8067c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2a51692b7ff554e656690898993d9dfb4a0eda57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883249"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-Wird aufgerufen, wenn eine Kandidat .dbg-Datei geöffnet wurde.  
+Wird aufgerufen, wenn eine Kandidat DBG-Datei geöffnet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT NotifyOpenDBG (
   
 #### <a name="parameters"></a>Parameter  
  `dbgPath`  
- [in] Der vollständige Pfad der Datei .dbg.  
+ [in] Der vollständige Pfad der DBG-Datei.  
   
  `resultCode`  
- [in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last wie an dieser Datei angewendet.  
+ [in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last auf diese Datei angewendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

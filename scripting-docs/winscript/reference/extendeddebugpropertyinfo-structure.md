@@ -1,5 +1,5 @@
 ---
-title: ExtendedDebugPropertyInfo-Struktur | Microsoft Docs
+title: ExtendedDebugPropertyInfo-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888904"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo-Struktur
-Erweitert die `DebugPropertyInfo` Struktur mit zusätzlichen Mitgliedern hinzu, die erweiterte Eigenschaft charakterisieren.  
+Erweitert die `DebugPropertyInfo` Struktur mit zusätzliche Member für die erweiterte Eigenschaft charakterisieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,40 +49,40 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>Member  
  `dwValidFields`  
- Enumerierten Datentyps verwendet, um anzugeben, welche Felder initialisiert werden.  
+ Ein Aufzählungsdatentyp verwendet, um anzugeben, welche Felder initialisiert werden.  
   
  `bstrName`  
- Der Eigenschaftsname in einem Kontext.  
+ Der Eigenschaftenname in einem Kontext.  
   
  `bstrType`  
- Der Eigenschaftentyp als formatierte Zeichenfolge.  
+ Der Typ der formatierten Zeichenfolge.  
   
  `bstrValue`  
- Der Eigenschaftswert als eine formatierte Zeichenfolge.  
+ Der Eigenschaftswert als formatierte Zeichenfolge.  
   
  `bstrFullName`  
  Der vollständige Name der Eigenschaft.  
   
  `dwAttrib`  
- Eine Enumeration, die die Flags für die Debug-Eigenschaftenattribute angibt.  
+ Eine Enumeration, die angibt, die Flags für die Attribute der Debug-Eigenschaft.  
   
  `pDebugProp`  
- `IDebugProperty`Objekt, das diesem `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` Objekt, das diesem `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- Die Dispatch-Id.  
+ Die Dispatch-Id ein.  
   
  `nType`  
  Der Typ des erweiterten Eigenschaft.  
   
  `varValue`  
- Der Erweiterte Eigenschaftenwert, wenn es in der Variante passen.  
+ Die erweiterte Eigenschaft-Wert, wenn es in Variante eingepasst werden kann.  
   
  `plbValue`  
  Die tatsächlichen Datenbytes des Eigenschaftswerts.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`Objekt, das diesem `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` Objekt, das diesem `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)   

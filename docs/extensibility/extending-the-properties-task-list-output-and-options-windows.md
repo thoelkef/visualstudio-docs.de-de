@@ -18,17 +18,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868689"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern Sie die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für windows
 Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vorgehensweise zeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite sowie das Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-an-extension-with-a-tool-window"></a>Erstellen Sie eine Erweiterung mit einem Toolfenster  
@@ -98,33 +98,33 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 ## <a name="create-an-options-page"></a>Erstellen einer Optionsseite  
  Sie können angeben, dass eine Seite in der **Optionen** Dialogfeld, sodass Benutzer die Einstellungen für das Toolfenster ändern können. Erstellen einer Optionsseite erfordert eine Klasse, die beschreibt, die Optionen und einen Eintrag in der *TodoListPackage.cs* oder *TodoListPackage.vb* Datei.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `ToolsOptions.cs`. Stellen Sie die `ToolsOptions` Klasse erben <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Fügen Sie eine Klasse, die mit dem Namen `ToolsOptions.cs`. Stellen Sie die `ToolsOptions` Klasse erben <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Fügen Sie die folgenden using-Anweisung:  
+2. Fügen Sie die folgenden using-Anweisung:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  Die Seite "Optionen" in dieser exemplarischen Vorgehensweise stellt nur eine Option, die mit dem Namen DaysAhead bereit. Fügen Sie ein privates Feld namens **DaysAhead** und eine Eigenschaft mit dem Namen **DaysAhead** auf die `ToolsOptions` Klasse:  
+3. Die Seite "Optionen" in dieser exemplarischen Vorgehensweise stellt nur eine Option, die mit dem Namen DaysAhead bereit. Fügen Sie ein privates Feld namens **DaysAhead** und eine Eigenschaft mit dem Namen **DaysAhead** auf die `ToolsOptions` Klasse:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Nachdem Sie das Projekt auf die Optionsseite aufmerksam machen müssen.  
+   Nachdem Sie das Projekt auf die Optionsseite aufmerksam machen müssen.  
   
 ### <a name="make-the-options-page-available-to-users"></a>Die Seite "Optionen" für Benutzer verfügbar machen  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863268"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
   In der Regel wird eine SharePoint-Lösung auf einem SharePoint Server mithilfe einer Lösung-Paketdatei (.wsp) bereitgestellt. Sie können Visual Studio verwenden, um Ihre SharePoint-Projektelemente in Features zu organisieren und zum Erstellen eines Pakets zum Bereitstellen Ihrer SharePoint-Funktionen.  
@@ -67,23 +67,23 @@ ms.locfileid: "37118986"
 ### <a name="packaging-explorer"></a>Paket-Explorer  
  Um die Funktions-Designer und die Paket-Designer zu ergänzen, können Sie die Paket-Explorer, um die SharePoint-Dateien in Funktionen und Pakete zu gruppieren. Darüber hinaus sehen Sie die hierarchische Ansicht des Pakets, der Funktionen, SharePoint-Projekts und der Dateien. Die Paket-Explorer ist ein Toolfenster, die Sie verwenden können, um die folgenden Aufgaben ausführen:  
   
--   Öffnen Sie die SharePoint-Projektelemente und Dateien.  
+- Öffnen Sie die SharePoint-Projektelemente und Dateien.  
   
--   Ziehen Sie und legen Sie der SharePoint-Projektelemente aus einer Funktion in eine andere ab.  
+- Ziehen Sie und legen Sie der SharePoint-Projektelemente aus einer Funktion in eine andere ab.  
   
--   Ziehen und Ablegen von SharePoint-Projektelemente und-Funktionen aus einem Paket in einen anderen.  
+- Ziehen und Ablegen von SharePoint-Projektelemente und-Funktionen aus einem Paket in einen anderen.  
   
--   Fügen Sie ein neues Feature in ein Paket hinzu.  
+- Fügen Sie ein neues Feature in ein Paket hinzu.  
   
--   Öffnen Sie einen Feature oder Paket-Designer.  
+- Öffnen Sie einen Feature oder Paket-Designer.  
   
--   Überprüfen Sie Funktionen und Pakete.  
+- Überprüfen Sie Funktionen und Pakete.  
   
- Die SharePoint-Entwicklungstools in Visual Studio haben die Validierungsregeln, um sicherzustellen, dass das Lösungspaket richtig formatiert ist. Darüber hinaus die Regeln zu überprüfen, die die *.wsp* Projektmappendatei erfolgreich bereitgestellt und auf einem SharePoint-Server aktiviert. Weitere Informationen zum XML-Schema für Funktionen, finden Sie unter [Feature Schemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
+  Die SharePoint-Entwicklungstools in Visual Studio haben die Validierungsregeln, um sicherzustellen, dass das Lösungspaket richtig formatiert ist. Darüber hinaus die Regeln zu überprüfen, die die *.wsp* Projektmappendatei erfolgreich bereitgestellt und auf einem SharePoint-Server aktiviert. Weitere Informationen zum XML-Schema für Funktionen, finden Sie unter [Feature Schemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
- Sie können SharePoint-Projektsystem benutzerdefinierten Funktions- und Paketvalidierungsregeln hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Sie können SharePoint-Projektsystem benutzerdefinierten Funktions- und Paketvalidierungsregeln hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
- Weitere Informationen zu den Paket-Explorer, finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Weitere Informationen zu den Paket-Explorer, finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Projektmappen-Explorer
  Sie können die Projektmappen-Explorer navigieren, und öffnen Sie die Dateien des SharePoint-Projekts verwenden. Verwenden Sie das Kontextmenü im Projektmappen-Explorer zum Hinzufügen von Features, Funktionsereignisempfänger und Funktionsressourcen. Darüber hinaus können Sie die Funktions-Designer und die Paket-Designer, um die Funktionen und Pakete für die Bereitstellung konfigurieren öffnen.  
@@ -100,11 +100,11 @@ ms.locfileid: "37118986"
   
  Beispielsweise, um das Hinzufügen einer *XML* -Datei in einem SharePoint-Projekt, eine der folgenden Aktionen ausführen:  
   
--   Fügen Sie Ihrem Projekt eine "Layouts" zugeordneten SharePoint-Ordner hinzu. Dieser Vorgang erstellt im **Projektmappen-Explorer** einen Ordner namens **Layouts** , bei dem einen Unterordner des Projekts. Hinzufügen der *XML* Datei in den neuen Unterordner. Standardmäßig wird die Datei im SharePoint-Dateisystem unter bereitgestellt *... \TEMPLATE\LAYOUTS\\\<Ordnername >*. Informationen dazu, wie Sie zugeordneter Ordner hinzufügen, finden Sie unter [Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+- Fügen Sie Ihrem Projekt eine "Layouts" zugeordneten SharePoint-Ordner hinzu. Dieser Vorgang erstellt im **Projektmappen-Explorer** einen Ordner namens **Layouts** , bei dem einen Unterordner des Projekts. Hinzufügen der *XML* Datei in den neuen Unterordner. Standardmäßig wird die Datei im SharePoint-Dateisystem unter bereitgestellt *... \TEMPLATE\LAYOUTS\\\<Ordnername >*. Informationen dazu, wie Sie zugeordneter Ordner hinzufügen, finden Sie unter [Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
--   Hinzufügen der *XML* Datei in den Ordner eines SharePoint-Projektelements, und ändern Sie die **Bereitstellungstyp** Eigenschaft der *XML* Datei **NoDeployment**  , z. B. eine andere Einstellung **RootFile** oder **ElementFile**. Die entsprechende **Bereitstellungstyp** Einstellung hängt von der Datei und das Projekt. Weitere Informationen zu den **Bereitstellungstyp** eigenschafteneinstellungen, finden Sie unter [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).  
+- Hinzufügen der *XML* Datei in den Ordner eines SharePoint-Projektelements, und ändern Sie die **Bereitstellungstyp** Eigenschaft der *XML* Datei **NoDeployment**  , z. B. eine andere Einstellung **RootFile** oder **ElementFile**. Die entsprechende **Bereitstellungstyp** Einstellung hängt von der Datei und das Projekt. Weitere Informationen zu den **Bereitstellungstyp** eigenschafteneinstellungen, finden Sie unter [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).  
   
- Wenn eine hinzugefügte Datei zu keinem bestimmten Projekt in der Projektmappe nicht anwendbar ist, können Sie ein leeres SharePoint-Projekt der Projektmappe hinzufügen und anschließend die zusätzlichen Dateien hinzugefügt. Eine weitere Alternative für die Bereitstellung von Dateien in SharePoint, besonders in der Inhaltsdatenbank ist auf das Projekt ein Modul hinzu, und klicken Sie dann die Dateien an das Modul hinzufügen. Weitere Informationen finden Sie unter [Verwenden von Modulen zum Einfügen von Dateien in der Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+  Wenn eine hinzugefügte Datei zu keinem bestimmten Projekt in der Projektmappe nicht anwendbar ist, können Sie ein leeres SharePoint-Projekt der Projektmappe hinzufügen und anschließend die zusätzlichen Dateien hinzugefügt. Eine weitere Alternative für die Bereitstellung von Dateien in SharePoint, besonders in der Inhaltsdatenbank ist auf das Projekt ein Modul hinzu, und klicken Sie dann die Dateien an das Modul hinzufügen. Weitere Informationen finden Sie unter [Verwenden von Modulen zum Einfügen von Dateien in der Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   

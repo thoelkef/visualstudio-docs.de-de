@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step | Microsoft Docs
+title: IDebugProcess3::Step | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc19c339e5d53bc9dde13ebd4a1bbddd214810c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872251"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Bewirkt, dass den Prozess in einer Anweisung oder Anweisung wechseln.  
+Bewirkt, dass den Prozess eine Anweisung oder Anweisung wechseln.  
   
 > [!NOTE]
 >  Diese Methode sollte verwendet werden, anstelle von [Schritt](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
@@ -48,7 +48,7 @@ int Step(
   
 #### <a name="parameters"></a>Parameter  
  `pThread`  
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das den Thread wird in Einzelschritten darstellt.  
+ [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das den Thread wird abgestuften darstellt.  
   
  `sk`  
  [in] Eines der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) Werte.  
@@ -60,9 +60,9 @@ int Step(
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Für den Fall, dass Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollte die andere Threads im Prozess ausgeführt, Prozedurschritt ein bestimmter Thread ausgeführt wird.  
+ Für den Fall, dass alle Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollte die andere Threads im Prozess ausgeführt, wenn ein bestimmter Thread stepping ist.  
   
- **Warnung** keine Stopping-Ereignis oder ein sofort (synchron) Ereignis senden [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) während der Bearbeitung dieser Aufruf; andernfalls der Debugger reagiert.  
+ **Warnung** senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

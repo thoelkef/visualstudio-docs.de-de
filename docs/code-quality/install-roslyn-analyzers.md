@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5977275b352bf11914760d9cdf7ccada22caccc8
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aa0805b3cffe5a44ae2c6198c6ca2682ceca9f95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865402"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installieren von .NET Compiler Platform-Analysetools
 
@@ -28,11 +28,11 @@ Visual Studio 2017 enthält einen Kernsatz von .NET Compiler Platform (*Roslyn*)
 
 1. Suchen Sie das Paket des Analysetools, die, das Sie auf www.nuget.org installieren möchten. Beispielsweise möchten [installieren die Microsoft FxCop-Analysetools](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) um den Code auf Sicherheit und Leistung Probleme, u. a. zu überprüfen.
 
-1. Installieren Sie das Paket in Visual Studio mit der [-Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder [-Paket-Manager-UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Installieren Sie das Paket in Visual Studio mit der [-Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder [-Paket-Manager-UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Die Seite www.nuget.org für jedes analyzerpaket erfahren Sie, den Befehl zum Einfügen in die **-Paket-Manager-Konsole**. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
-   >
+   > 
    > ![NuGet.org-Seite, die mit der Paket-Manager-Konsole](media/nuget-install-command.png)
 
    Der Analyzer-Assemblys werden installiert und werden in **Projektmappen-Explorer** unter **Verweise** > **Analysen**.
@@ -46,25 +46,25 @@ Visual Studio 2017 enthält einen Kernsatz von .NET Compiler Platform (*Roslyn*)
    > [!NOTE]
    > Alternativ können Sie suchen und Laden Sie die Analyzer-Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-1. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
+2. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
 
-1. Geben Sie in das Suchfeld den Namen der Analyzer-Erweiterung, die Sie installieren möchten. Beispielsweise möchten [installieren die Microsoft FxCop-Analysetools](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) um den Code auf Sicherheit und Leistung Probleme, u. a. zu überprüfen.
+3. Geben Sie in das Suchfeld den Namen der Analyzer-Erweiterung, die Sie installieren möchten. Beispielsweise möchten [installieren die Microsoft FxCop-Analysetools](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) um den Code auf Sicherheit und Leistung Probleme, u. a. zu überprüfen.
 
-1. Wählen Sie **herunterladen**.
+4. Wählen Sie **herunterladen**.
 
    Die Erweiterung wird heruntergeladen.
 
-1. Wählen Sie **OK** , um das Dialogfeld schließen, und schließen Sie alle Instanzen von Visual Studio zum Starten der **VSIX-Installationsprogramm**.
+5. Wählen Sie **OK** , um das Dialogfeld schließen, und schließen Sie alle Instanzen von Visual Studio zum Starten der **VSIX-Installationsprogramm**.
 
    Die **VSIX-Installationsprogramm** Dialogfeld wird geöffnet.
 
    ![VSIX-Installationsprogramm für die Microsoft-Codeanalyse](media/vsix-installer-code-analysis.png)
 
-1. Wählen Sie **ändern** um die Installation zu starten.
+6. Wählen Sie **ändern** um die Installation zu starten.
 
-1. Nach ein oder zwei Minuten ist die Installation abgeschlossen werden. Wählen Sie **schließen**.
+7. Nach ein oder zwei Minuten ist die Installation abgeschlossen werden. Wählen Sie **schließen**.
 
-1. Öffnen Sie Visual Studio erneut.
+8. Öffnen Sie Visual Studio erneut.
 
 Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Tools** > **Erweiterungen und Updates**. In der **Erweiterungen und Updates** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und klicken Sie dann für die Erweiterung anhand des Namens suchen.
 

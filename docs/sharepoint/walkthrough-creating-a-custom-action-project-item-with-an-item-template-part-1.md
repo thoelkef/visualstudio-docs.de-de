@@ -18,60 +18,60 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878062"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projektelement, die ein SharePoint-Projekt zum Erstellen einer benutzerdefinierten Aktion auf einer SharePoint-Website hinzugefügt werden können. Die benutzerdefinierte Aktion Fügt ein Menüelement der **Websiteaktionen** im Menü der SharePoint-Website.  
   
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   Erstellen einer Visual Studio-Erweiterung, die einen neuen Typ von SharePoint-Projektelement für eine benutzerdefinierte Aktion definiert. Mit dem neuen Projektelementtyp werden mehrere benutzerdefinierte Funktionen implementiert:  
+- Erstellen einer Visual Studio-Erweiterung, die einen neuen Typ von SharePoint-Projektelement für eine benutzerdefinierte Aktion definiert. Mit dem neuen Projektelementtyp werden mehrere benutzerdefinierte Funktionen implementiert:  
   
-    -   Ein Kontextmenü, über das weitere auf das Projektelement bezogene Aufgaben ausgewählt werden können, z. B. für das Anzeigen eines Designers für die benutzerdefinierte Aktion in Visual Studio.  
+  -   Ein Kontextmenü, über das weitere auf das Projektelement bezogene Aufgaben ausgewählt werden können, z. B. für das Anzeigen eines Designers für die benutzerdefinierte Aktion in Visual Studio.  
   
-    -   Code, der ausgeführt wird, wenn ein Entwickler bestimmte Eigenschaften des Projektelements oder des Projekts ändert, in dem es enthalten ist.  
+  -   Code, der ausgeführt wird, wenn ein Entwickler bestimmte Eigenschaften des Projektelements oder des Projekts ändert, in dem es enthalten ist.  
   
-    -   Ein benutzerdefiniertes Symbol, das neben dem Projektelement im **Projektmappen-Explorer**.  
+  -   Ein benutzerdefiniertes Symbol, das neben dem Projektelement im **Projektmappen-Explorer**.  
   
--   Erstellen einer Visual Studio-Elementvorlage für das Projektelement.  
+- Erstellen einer Visual Studio-Elementvorlage für das Projektelement.  
   
--   Erstellen eines Visual Studio-Erweiterungspakets (VSIX) zum Bereitstellen der Projektelementvorlage und der Erweiterungsassembly.  
+- Erstellen eines Visual Studio-Erweiterungspakets (VSIX) zum Bereitstellen der Projektelementvorlage und der Erweiterungsassembly.  
   
--   Debuggen und Testen des Projektelements  
+- Debuggen und Testen des Projektelements  
   
- Dies ist eine eigenständige exemplarische Vorgehensweise. Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie das Projektelement erweitern, indem Sie der Elementvorlage einen Assistenten hinzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Dies ist eine eigenständige exemplarische Vorgehensweise. Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie das Projektelement erweitern, indem Sie der Elementvorlage einen Assistenten hinzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Sie können ein Beispiel von [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , die zeigt, wie benutzerdefinierte Aktivitäten für einen Workflow zu erstellen.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
--   Unterstützte Editionen von Microsoft Windows, SharePoint und Visual Studio.
+- Unterstützte Editionen von Microsoft Windows, SharePoint und Visual Studio.
   
--   Die [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Die [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+  Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Benutzerdefinierte Aktionen in SharePoint. Weitere Informationen finden Sie unter [benutzerdefinierte Aktion](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Benutzerdefinierte Aktionen in SharePoint. Weitere Informationen finden Sie unter [benutzerdefinierte Aktion](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](/visualstudio/ide/creating-project-and-item-templates).  
+- Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
  Zum Abschließen dieser exemplarischen Vorgehensweise müssen Sie drei Projekte erstellen:  
   
--   Ein VSIX-Projekt. Von diesem Projekt wird das VSIX-Paket zum Bereitstellen des SharePoint-Projektelements erstellt.  
+- Ein VSIX-Projekt. Von diesem Projekt wird das VSIX-Paket zum Bereitstellen des SharePoint-Projektelements erstellt.  
   
--   Ein Elementvorlagenprojekt. Von diesem Projekt wird eine Elementvorlage erstellt, mit der das SharePoint-Projektelement einem SharePoint-Projekt hinzugefügt werden kann.  
+- Ein Elementvorlagenprojekt. Von diesem Projekt wird eine Elementvorlage erstellt, mit der das SharePoint-Projektelement einem SharePoint-Projekt hinzugefügt werden kann.  
   
--   Ein Klassenbibliotheksprojekt. Dieses Projekt implementiert eine Visual Studio-Erweiterung, die das Verhalten des SharePoint-Projektelements definiert.  
+- Ein Klassenbibliotheksprojekt. Dieses Projekt implementiert eine Visual Studio-Erweiterung, die das Verhalten des SharePoint-Projektelements definiert.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+  Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
 #### <a name="to-create-the-vsix-project"></a>So erstellen Sie das VSIX-Projekt  
   

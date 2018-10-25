@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858926"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222728"
 ## <a name="rule-description"></a>Regelbeschreibung
  Klicken Sie in den meisten Fällen Eigenschaften Daten darstellen, und Methoden Aktionen ausführen. Eigenschaften sind zugegriffen, wie Felder, wodurch sie einfacher zu verwenden. Eine Methode ist, eignet sich für eine Eigenschaft zu werden, wenn eine der folgenden Bedingungen vorliegt:
 
--   Akzeptiert keine Argumente und gibt Informationen über den Zustand eines Objekts.
+- Akzeptiert keine Argumente und gibt Informationen über den Zustand eines Objekts.
 
--   Akzeptiert ein einzelnes Argument um einen Teil des Zustands eines Objekts festzulegen.
+- Akzeptiert ein einzelnes Argument um einen Teil des Zustands eines Objekts festzulegen.
 
- Eigenschaften sollten Verhalten, als wären sie Felder. Wenn die Methode nicht möglich ist, sollten sie nicht auf eine Eigenschaft geändert werden. Methoden sind besser als Eigenschaften in den folgenden Situationen:
+  Eigenschaften sollten Verhalten, als wären sie Felder. Wenn die Methode nicht möglich ist, sollten sie nicht auf eine Eigenschaft geändert werden. Methoden sind besser als Eigenschaften in den folgenden Situationen:
 
--   Die Methode ausführt einen zeitaufwändigen Vorgang. Die Methode ist als die Zeit, die erforderlich sind, um festzulegen, oder rufen Sie den Wert eines Felds beansprucht.
+- Die Methode ausführt einen zeitaufwändigen Vorgang. Die Methode ist als die Zeit, die erforderlich sind, um festzulegen, oder rufen Sie den Wert eines Felds beansprucht.
 
--   Die Methode führt eine Konvertierung aus. Zugreifen auf ein Feld gibt keine konvertierte Version der Daten zurück, die sie speichert.
+- Die Methode führt eine Konvertierung aus. Zugreifen auf ein Feld gibt keine konvertierte Version der Daten zurück, die sie speichert.
 
--   Die Get-Methode hat es sich um ein Observable Nebeneffekt. Abrufen des Werts eines Felds ergibt keinen keine Nebeneffekte.
+- Die Get-Methode hat es sich um ein Observable Nebeneffekt. Abrufen des Werts eines Felds ergibt keinen keine Nebeneffekte.
 
--   Die Reihenfolge der Ausführung ist wichtig. Festlegen des Werts eines Felds beruht nicht auf das Vorhandensein anderer Vorgänge.
+- Die Reihenfolge der Ausführung ist wichtig. Festlegen des Werts eines Felds beruht nicht auf das Vorhandensein anderer Vorgänge.
 
--   Aufrufen der Methode zweimal hintereinander führt zu unterschiedlichen Ergebnissen.
+- Aufrufen der Methode zweimal hintereinander führt zu unterschiedlichen Ergebnissen.
 
--   Die Methode ist statisch, aber es gibt ein Objekt, das vom Aufrufer geändert werden kann. Abrufen des Werts eines Felds lässt nicht den Aufrufer so ändern Sie die Daten, die nach dem Feld gespeichert wird.
+- Die Methode ist statisch, aber es gibt ein Objekt, das vom Aufrufer geändert werden kann. Abrufen des Werts eines Felds lässt nicht den Aufrufer so ändern Sie die Daten, die nach dem Feld gespeichert wird.
 
--   Die Methode gibt ein Array zurück.
+- Die Methode gibt ein Array zurück.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode einer Eigenschaft ein.

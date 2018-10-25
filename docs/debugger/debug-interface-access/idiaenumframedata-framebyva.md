@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Framebyva | Microsoft Docs'
+title: 'Idiaenumframedata:: Framebyva | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d19dcff2890291ca198092314b667cc3a0a7d33
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fa12d481811538430385aeda08c1ea01a156d924
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854012"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-Gibt einen Frame virtuelle Adresse ("VA" ist).  
+Gibt einen Frame virtuelle Adresse (VA) zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT frameByVA(
   
 #### <a name="parameters"></a>Parameter  
  virtualAddress  
- [in] "VA" ist des Frames von Interesse sind.  
+ [in] VA des Frames von Interesse sind.  
   
  Rahmen  
- [out] Gibt eine [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den Rahmen darstellt, die die angegebene Adresse enthält.  
+ [out] Gibt eine [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt, das den Rahmen darstellt, die die angegebene Adresse enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

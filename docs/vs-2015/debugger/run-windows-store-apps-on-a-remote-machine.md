@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886278"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ausführen von Windows Store-Apps auf einem Remotecomputer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
   
  [Konfigurieren des Visual Studio-Projekts für das Remotedebuggen](#BKMK_ConnectVS)  
   
--   [Auswählen des Remotegeräts für C#- und Visual Basic-Projekte](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Auswählen des Remotegeräts für C#- und Visual Basic-Projekte](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Auswählen des Remotegeräts für JavaScript- und C++-Projekte](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Auswählen des Remotegeräts für JavaScript- und C++-Projekte](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Ausführen einer Remotedebugsitzung](#BKMK_RunRemoteDebug)  
+  [Ausführen einer Remotedebugsitzung](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Erforderliche Komponenten  
  So debuggen Sie auf einem Remotegerät:  
@@ -123,20 +123,20 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Konfigurieren des Remotedebuggers  
  Zum Ändern der Konfiguration des Remotedebuggers verwenden Sie zwei Tools.  
   
-1.  Im Menü **Tools** von **Visual Studio-Remotedebugmonitor**:  
+1. Im Menü **Tools** von **Visual Studio-Remotedebugmonitor**:  
   
-    1.  Wählen Sie **Optionen** aus, um die Portnummer, den Authentifizierungsmodus oder das Timeoutintervall des Remotedebuggers zu ändern.  
+   1.  Wählen Sie **Optionen** aus, um die Portnummer, den Authentifizierungsmodus oder das Timeoutintervall des Remotedebuggers zu ändern.  
   
-    2.  Wählen Sie **Berechtigungen** aus, um Benutzer mit Berechtigungen für das Remotedebuggen hinzuzufügen oder zu entfernen.  
+   2.  Wählen Sie **Berechtigungen** aus, um Benutzer mit Berechtigungen für das Remotedebuggen hinzuzufügen oder zu entfernen.  
   
-        > [!NOTE]
-        >  Berechtigungen müssen jedem Benutzerkonto gewährt werden, von dem ein Remotedebuggen vorgenommen wird.  
+       > [!NOTE]
+       >  Berechtigungen müssen jedem Benutzerkonto gewährt werden, von dem ein Remotedebuggen vorgenommen wird.  
   
- Mit dem **Konfigurations-Assistent für Remote Debugger** können Sie erweiterte Optionen für den Remotedebugger fest. Um den Assistenten zu öffnen, wählen Sie im Startbildschirm **Konfigurations-Assistent für Remote Debugger** aus.  
+   Mit dem **Konfigurations-Assistent für Remote Debugger** können Sie erweiterte Optionen für den Remotedebugger fest. Um den Assistenten zu öffnen, wählen Sie im Startbildschirm **Konfigurations-Assistent für Remote Debugger** aus.  
   
-1.  Auf der Seite **Visual Studio-Remotedebugdienst konfigurieren** können Sie auswählen, dass der Remotedebugger als Dienst ausgeführt wird. In den meisten Fällen ist das Ausführen als Dienst nicht erforderlich.  
+2. Auf der Seite **Visual Studio-Remotedebugdienst konfigurieren** können Sie auswählen, dass der Remotedebugger als Dienst ausgeführt wird. In den meisten Fällen ist das Ausführen als Dienst nicht erforderlich.  
   
-2.  Auf der Seite **Windows-Firewall zum Debugging konfigurieren** können Sie die Netzwerktypen hinzufügen oder entfernen, mit denen der Remotedebugger eine Verbindung herstellen soll. Nur die Netzwerke, mit denen das Gerät aktuell verbunden ist, sind aktiviert. Sie müssen mindestens ein Netzwerk auswählen.  
+3. Auf der Seite **Windows-Firewall zum Debugging konfigurieren** können Sie die Netzwerktypen hinzufügen oder entfernen, mit denen der Remotedebugger eine Verbindung herstellen soll. Nur die Netzwerke, mit denen das Gerät aktuell verbunden ist, sind aktiviert. Sie müssen mindestens ein Netzwerk auswählen.  
   
 ##  <a name="BKMK_ConnectVS"></a> Konfigurieren des Visual Studio-Projekts für das Remotedebuggen  
  In den Eigenschaften des Projekts geben Sie das Remotegerät an, mit dem eine Verbindung hergestellt werden soll. Das Verfahren unterscheidet sich je nach Programmiersprache. Sie können entweder den Netzwerknamen des Remotegeräts eingeben, oder es im Dialogfeld "Remotedebuggerverbindung auswählen" auswählen.  

@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864726"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O/R Designer)
 Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützt Vererbung einer einzelnen Tabelle aus, wie sie in der Regel in relationalen Systemen implementiert ist. Diese exemplarische Vorgehensweise baut auf den allgemeinen Schritten der [Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Thema und stellt realen Daten zur Veranschaulichung der Verwendung von Vererbung in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Aufgaben aus:
 
--   Erstellen einer Datenbanktabelle und Hinzufügen von Daten.
+- Erstellen einer Datenbanktabelle und Hinzufügen von Daten.
 
--   Erstellen einer Windows Forms-Anwendung.
+- Erstellen einer Windows Forms-Anwendung.
 
--   Hinzufügen einer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Datei zu einem Projekt.
+- Hinzufügen einer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Datei zu einem Projekt.
 
--   Erstellen neuer Entitätsklassen.
+- Erstellen neuer Entitätsklassen.
 
--   Konfigurieren der Entitätsklassen zur Verwendung von Vererbung.
+- Konfigurieren der Entitätsklassen zur Verwendung von Vererbung.
 
--   Abfragen der geerbten Klasse.
+- Abfragen der geerbten Klasse.
 
--   Anzeigen der Daten in einem Windows Form.
+- Anzeigen der Daten in einem Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Erstellen einer Tabelle, die von erben
  Um die Funktionsweise der Vererbung angezeigt wird, erstellen Sie eine kleine `Person` Tabellen, verwenden Sie diese als eine Basisklasse und erstellen dann eine `Employee` -Objekt, das von ihr erbt.
@@ -151,7 +151,7 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 2.  Doppelklicken Sie auf das Formular, um einen `Form1_Load`-Ereignishandler zu erstellen.
 
-3.  Fügen Sie dem `Form1_Load`-Ereignishandler folgenden Code hinzu:
+3.  Fügen Sie dem `Form1_Load` -Ereignishandler folgenden Code hinzu:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -191,6 +191,6 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Gewusst wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Gewusst wie: Generieren des Objektmodells in Visual Basic oder c#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

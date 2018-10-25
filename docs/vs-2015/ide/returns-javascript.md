@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e56a1ba624603e69c07f769706b02a1e46927699
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5896c35c53feedb2f253bd86691f2fbf6793099e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875709"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;Gibt&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,41 +44,41 @@ Gibt Dokumentationsinformationen für das Ergebnis einer Funktion oder eines Met
  `type`  
  Dies ist optional. Der Datentyp des Rückgabewerts. Als Typ kann eines der folgenden Elemente verwendet werden:  
   
--   Ein ECMAScript-Sprachentyp in der ECMAScript 5-Spezifikation, wie `Number` und `Object`  
+- Ein ECMAScript-Sprachentyp in der ECMAScript 5-Spezifikation, wie `Number` und `Object`  
   
--   Ein DOM-Objekt, wie `HTMLElement`, `Window` und `Document`  
+- Ein DOM-Objekt, wie `HTMLElement`, `Window` und `Document`  
   
--   Eine JavaScript-Konstruktorfunktion  
+- Eine JavaScript-Konstruktorfunktion  
   
- `integer`  
- Dies ist optional. Wenn `type` auf `Number` festgelegt ist, wird angegeben, ob der Rückgabewert eine ganze Zahl ist. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert eine ganze Zahl ist; andernfalls ist es auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  `integer`  
+  Dies ist optional. Wenn `type` auf `Number` festgelegt ist, wird angegeben, ob der Rückgabewert eine ganze Zahl ist. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert eine ganze Zahl ist; andernfalls ist es auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
- `domElement`  
- Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob der dokumentierte Rückgabewert ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass der Rückgabewert ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense den dokumentierten Rückgabewert bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
+  `domElement`  
+  Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob der dokumentierte Rückgabewert ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass der Rückgabewert ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense den dokumentierten Rückgabewert bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
- `mayBeNull`  
- Dies ist optional. Gibt an, ob der dokumentierte Rückgabewert auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  `mayBeNull`  
+  Dies ist optional. Gibt an, ob der dokumentierte Rückgabewert auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
- `elementType`  
- Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
+  `elementType`  
+  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
   
- `elementInteger`  
- Dies ist optional. Wenn das `type`-Attribut `Array` und das `elementType`-Attribut `Number` lautet, wird angegeben, ob die Elemente im Array ganze Zahlen sind. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array ganze Zahlen sind; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  `elementInteger`  
+  Dies ist optional. Wenn das `type`-Attribut `Array` und das `elementType`-Attribut `Number` lautet, wird angegeben, ob die Elemente im Array ganze Zahlen sind. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array ganze Zahlen sind; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
- `elementDomElement`  
- Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
+  `elementDomElement`  
+  Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
- `elementMayBeNull`  
- Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  `elementMayBeNull`  
+  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
- `locid`  
- Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über den Rückgabewert. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
+  `locid`  
+  Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über den Rückgabewert. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
   
- `value`  
- Dies ist optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Beispielsweise können Sie dieses Attribut verwenden, um IntelliSense für asynchrone Rückrufe bereitzustellen, wie etwa `Promise`. Durch Verwendung des `value`-Attributs mit dem `<returns>`-Element kann die IntelliSense-Leistung durch Umgehung einer langwierigen Codeausführung verbessert werden.  
+  `value`  
+  Dies ist optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Beispielsweise können Sie dieses Attribut verwenden, um IntelliSense für asynchrone Rückrufe bereitzustellen, wie etwa `Promise`. Durch Verwendung des `value`-Attributs mit dem `<returns>`-Element kann die IntelliSense-Leistung durch Umgehung einer langwierigen Codeausführung verbessert werden.  
   
- `description`  
- Dies ist optional. Eine Beschreibung des Rückgabewerts.  
+  `description`  
+  Dies ist optional. Eine Beschreibung des Rückgabewerts.  
   
 ## <a name="remarks"></a>Hinweise  
  Das `<returns>`-Element muss im Funktionstext vor allen Anweisungen eingefügt werden.  
