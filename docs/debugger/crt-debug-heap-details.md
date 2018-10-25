@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: df3dbcd36bdb72bdd76972ff03a295ba9310f8f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897081"
 ---
 # <a name="crt-debug-heap-details"></a>Details zum CRT-Debugheap
 Dieses Thema umfasst eine detaillierte Erläuterung des CRT‑Debugheaps.  
@@ -207,19 +207,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Verwenden Sie den Debugheap**  
   
--   Verknüpfen Sie das Debugbuild der Anwendung mit einer Debugversion der C-Laufzeitbibliothek.  
+- Verknüpfen Sie das Debugbuild der Anwendung mit einer Debugversion der C-Laufzeitbibliothek.  
   
- **Ändern eine oder mehrere _crtDbgFlag-Bitfelder, und erstellen einen neuen Zustand für das flag**  
+  **Ändern eine oder mehrere _crtDbgFlag-Bitfelder, und erstellen einen neuen Zustand für das flag**  
   
-1.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf `_CRTDBG_REPORT_FLAG` festgelegt ist (um den aktuellen `_crtDbgFlag`-Zustand zu erhalten), und speichern Sie den Rückgabewert in einer temporären Variablen.  
+1. Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf `_CRTDBG_REPORT_FLAG` festgelegt ist (um den aktuellen `_crtDbgFlag`-Zustand zu erhalten), und speichern Sie den Rückgabewert in einer temporären Variablen.  
   
-2.  Aktivieren Sie Bits durch `OR`--Verknüpfung (bitweises &#124; Symbol) der temporären Variable mit den entsprechenden Bitmasken (im Anwendungscode durch Manifestkonstanten dargestellt).  
+2. Aktivieren Sie Bits durch `OR`--Verknüpfung (bitweises &#124; Symbol) der temporären Variable mit den entsprechenden Bitmasken (im Anwendungscode durch Manifestkonstanten dargestellt).  
   
-3.  Deaktivieren Sie die anderen Bits durch eine `AND`-Verknüpfung (bitweises &-Symbol) der Variablen mit der `NOT`-Negation (bitweises ~-Symbol) der entsprechenden Bitmasks.  
+3. Deaktivieren Sie die anderen Bits durch eine `AND`-Verknüpfung (bitweises &-Symbol) der Variablen mit der `NOT`-Negation (bitweises ~-Symbol) der entsprechenden Bitmasks.  
   
-4.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf den in der temporären Variablen gespeicherten Wert festgelegt ist, um den neuen Zustand von `_crtDbgFlag` festzulegen.  
+4. Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf den in der temporären Variablen gespeicherten Wert festgelegt ist, um den neuen Zustand von `_crtDbgFlag` festzulegen.  
   
- Beispielsweise wird durch die folgenden Codezeilen die automatische Überprüfung auf Speicherverluste aktiviert und die Überprüfung von `_CRT_BLOCK`-Blöcken deaktiviert:  
+   Beispielsweise wird durch die folgenden Codezeilen die automatische Überprüfung auf Speicherverluste aktiviert und die Überprüfung von `_CRT_BLOCK`-Blöcken deaktiviert:  
   
 ```cpp
 // Get current flag  

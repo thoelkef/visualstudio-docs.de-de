@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef5dc15db983a54e60df447a2457d9dbc6804d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915802"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>So wenden Sie eine Ressource auf ein Element oder auf eine Eigenschaft an  
   
-1.  Wählen Sie im Fenster "Dokumentgliederung" das Element aus, auf das eine Ressource angewendet werden soll.  
+1. Wählen Sie im Fenster "Dokumentgliederung" das Element aus, auf das eine Ressource angewendet werden soll.  
   
-2.  Führen Sie einen der folgenden Schritte aus:  
+2. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Anwenden einer Ressource auf eine Eigenschaft Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker neben dem Eigenschaftswert und dann **Lokale Ressource** oder **Systemressource** aus. Anschließend wählen Sie eine verfügbare Ressource aus der angezeigten Liste aus.  
+   - Anwenden einer Ressource auf eine Eigenschaft Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker neben dem Eigenschaftswert und dann **Lokale Ressource** oder **Systemressource** aus. Anschließend wählen Sie eine verfügbare Ressource aus der angezeigten Liste aus.  
   
-         Wenn eine Ressource, die Sie erwarten, nicht angezeigt wird, kann dies möglicherweise daran liegen, dass der Typ der Ressource nicht mit dem Typ der Eigenschaft übereinstimmt.  
+      Wenn eine Ressource, die Sie erwarten, nicht angezeigt wird, kann dies möglicherweise daran liegen, dass der Typ der Ressource nicht mit dem Typ der Eigenschaft übereinstimmt.  
   
-    -   Anwenden eines Stils oder einer Steuerelementvorlagenressource auf ein Steuerelement Öffnen Sie das Kontextmenü für ein Steuerelement im Fenster „Dokumentgliederung“, wählen Sie **Vorlage bearbeiten** oder **Zusätzliche Vorlagen bearbeiten** und dann **Ressource anwenden** aus. Wählen Sie anschließend den Namen der Steuerelementvorlage aus der angezeigten Liste aus.  
+   - Anwenden eines Stils oder einer Steuerelementvorlagenressource auf ein Steuerelement Öffnen Sie das Kontextmenü für ein Steuerelement im Fenster „Dokumentgliederung“, wählen Sie **Vorlage bearbeiten** oder **Zusätzliche Vorlagen bearbeiten** und dann **Ressource anwenden** aus. Wählen Sie anschließend den Namen der Steuerelementvorlage aus der angezeigten Liste aus.  
   
-        > [!NOTE]
-        >  **Vorlage bearbeiten** wird verwendet, um Steuerelementvorlagen anzuwenden. **Zusätzliche Vorlage bearbeiten** wird verwendet, um andere Vorlagentypen anzuwenden.  
+     > [!NOTE]
+     >  **Vorlage bearbeiten** wird verwendet, um Steuerelementvorlagen anzuwenden. **Zusätzliche Vorlage bearbeiten** wird verwendet, um andere Vorlagentypen anzuwenden.  
   
      Ressourcen können immer dann angewendet werden, wenn sie kompatibel sind. So kann eine Pinselressource beispielsweise auf die **Foreground**-Eigenschaft eines <xref:Windows.UI.Xaml.Controls.TextBox>-Steuerelements angewendet werden.  
   

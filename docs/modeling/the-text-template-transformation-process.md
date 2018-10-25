@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919155"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Eingabe und eine neue Textdatei als Ausgabe generiert. Beispielsweise können Sie Textvorlagen um Visual Basic- oder C#-Code zu generieren, oder Sie können einen HTML-Bericht generieren.
@@ -28,7 +28,7 @@ Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Ei
 ## <a name="components"></a>Komponenten
 
 |Komponente|Beschreibung|Anpassbare (Ja/Nein)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |Engine|Die Engine-Komponente steuert das Textvorlagen-Transformationsprozess|Nein.|
 |Host|Der Host ist die Schnittstelle zwischen der Engine und der benutzerumgebung. Visual Studio ist eine Vielzahl von Texttransformationsprozess.|Ja. Sie können einen benutzerdefinierten Host schreiben.|
 |Direktivenprozessoren|Direktivenprozessoren sind Klassen, die Anweisungen in den Textvorlagen zu verarbeiten. Anweisungen können Sie Daten aus der Eingabequelle eine Textvorlage bereitstellt.|Ja. Sie können benutzerdefinierte anweisungsprozessoren schreiben.|

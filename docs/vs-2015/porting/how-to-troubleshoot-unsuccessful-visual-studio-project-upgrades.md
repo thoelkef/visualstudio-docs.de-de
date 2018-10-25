@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911602"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früher
   
 #### <a name="to-resolve-incorrect-references"></a>So lösen Sie falsche Verweise auf  
   
-1.  Öffnen Sie die Projektdatei in einem Texteditor.  
+1. Öffnen Sie die Projektdatei in einem Texteditor.  
   
-2.  Öffnen Sie die Projekteigenschaften.  
+2. Öffnen Sie die Projekteigenschaften.  
   
-3.  Wählen Sie den richtigen **Zielframework** Wert. Sie können auch den Wert des `<TargetFrameworkVersion>`-Elements direkt in der Projektdatei ändern.  
+3. Wählen Sie den richtigen **Zielframework** Wert. Sie können auch den Wert des `<TargetFrameworkVersion>`-Elements direkt in der Projektdatei ändern.  
   
- Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn Ihr Projekt in der IDE geladen wird, können Sie die Verweise aktualisieren, indem Sie mithilfe von **Projektmappen-Explorer** oder **Verweis-Manager** Dialogfeld.  
+   Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn Ihr Projekt in der IDE geladen wird, können Sie die Verweise aktualisieren, indem Sie mithilfe von **Projektmappen-Explorer** oder **Verweis-Manager** Dialogfeld.  
   
 ## <a name="see-also"></a>Siehe auch  
  [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869157"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
 ##  <a name="Using"></a> Verwenden von UML-Sequenzdiagrammen  
  Sie können Sequenzdiagramme für eine Vielzahl von Zwecken auf unterschiedlichen Programmdetailebenen verwenden. Nachfolgend sind typische Situationen aufgeführt, in denen Sequenzdiagramme gezeichnet werden:  
   
--   Wenn Sie über ein Anwendungsfalldiagramm verfügen, das Systembenutzer und ihre Ziele zusammenfasst, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die Hauptkomponenten des Systems interagieren, um das Ziel der einzelnen Anwendungsfälle zu erreichen. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Wenn Sie über ein Anwendungsfalldiagramm verfügen, das Systembenutzer und ihre Ziele zusammenfasst, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die Hauptkomponenten des Systems interagieren, um das Ziel der einzelnen Anwendungsfälle zu erreichen. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Wenn Sie Nachrichten identifiziert haben, die bei einer Schnittstelle einer Komponente eingehen, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die internen Teile der Komponente interagieren, um das für die einzelnen eingehenden Meldungen erforderliche Ergebnis zu erzielen. Weitere Informationen finden Sie unter [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md).  
+- Wenn Sie Nachrichten identifiziert haben, die bei einer Schnittstelle einer Komponente eingehen, können Sie Sequenzdiagramme zeichnen, um zu beschreiben, wie die internen Teile der Komponente interagieren, um das für die einzelnen eingehenden Meldungen erforderliche Ergebnis zu erzielen. Weitere Informationen finden Sie unter [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md).  
   
- Das Zeichnen von Sequenzdiagrammen hat mehrere Vorteile:  
+  Das Zeichnen von Sequenzdiagrammen hat mehrere Vorteile:  
   
--   Sie können leicht erkennen, wie Aufgaben zwischen Komponenten verteilt sind.  
+- Sie können leicht erkennen, wie Aufgaben zwischen Komponenten verteilt sind.  
   
--   Sie können Interaktionsmuster identifizieren, die die Aktualisierung der Software erschweren.  
+- Sie können Interaktionsmuster identifizieren, die die Aktualisierung der Software erschweren.  
   
 ## <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
  Sie können UML-Sequenzdiagramme auf verschiedene Arten zusammen mit anderen Diagrammen verwenden.  
@@ -90,17 +90,17 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
 #### <a name="to-create-a-sequence-diagram"></a>So erstellen Sie ein Sequenzdiagramm  
   
-1.  Auf der **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
+1. Auf der **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
   
-2.  Klicken Sie unter **Vorlagen**, klicken Sie auf **UML-Sequenzdiagramm**.  
+2. Klicken Sie unter **Vorlagen**, klicken Sie auf **UML-Sequenzdiagramm**.  
   
-3.  Benennen Sie das Diagramm.  
+3. Benennen Sie das Diagramm.  
   
-4.  In **zu Modellierungsprojekt hinzufügen**, wählen Sie ein vorhandenes Modellierungsprojekt aus, in der Projektmappe oder **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
+4. In **zu Modellierungsprojekt hinzufügen**, wählen Sie ein vorhandenes Modellierungsprojekt aus, in der Projektmappe oder **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
   
-     Ein neues Sequenzdiagramm wird mit der **Sequenzdiagramm** Toolbox. Die Toolbox enthält die erforderlichen Elemente und Konnektoren.  
+    Ein neues Sequenzdiagramm wird mit der **Sequenzdiagramm** Toolbox. Die Toolbox enthält die erforderlichen Elemente und Konnektoren.  
   
- ![Teile eines Sequenzdiagramms](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Teile eines Sequenzdiagramms](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>So zeichnen Sie ein Sequenzdiagramm  
   
@@ -143,15 +143,15 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>So zeigen Sie den Signaturtext einer Meldung an und bearbeiten ihn  
   
--   Die Ziel-Lebenslinie muss an Typen gebunden oder Typen zugeordnet sein, damit der Signaturtext sichtbar ist. Um diese Aufgabe auszuführen, führen Sie einen der folgenden Schritte aus:  
+- Die Ziel-Lebenslinie muss an Typen gebunden oder Typen zugeordnet sein, damit der Signaturtext sichtbar ist. Um diese Aufgabe auszuführen, führen Sie einen der folgenden Schritte aus:  
   
-    -   Mit der rechten Maustaste der Lebenslinie, und wählen Sie dann **Klasse erstellen**.  
+  - Mit der rechten Maustaste der Lebenslinie, und wählen Sie dann **Klasse erstellen**.  
   
-         - oder -   
+     - oder -   
   
-    -   Wählen Sie die Lebenslinie, drücken Sie **F4**, und klicken Sie dann in der **Eigenschaften** legen die **Typ** Eigenschaft zu einem vorhandenen geben, oder geben Sie den Namen eines neuen Typs. Mit der rechten Maustaste in der Bezeichnung, und wählen Sie dann **Erstellungsvorgang**.  
+  - Wählen Sie die Lebenslinie, drücken Sie **F4**, und klicken Sie dann in der **Eigenschaften** legen die **Typ** Eigenschaft zu einem vorhandenen geben, oder geben Sie den Namen eines neuen Typs. Mit der rechten Maustaste in der Bezeichnung, und wählen Sie dann **Erstellungsvorgang**.  
   
-     Der Signaturtext wird unterhalb der Meldungsbezeichnung angezeigt. Sie können den Signaturtext jetzt bearbeiten. Weitere Informationen finden Sie unter [Klassen und Lebenslinien](#ClassesAndLifelines).  
+    Der Signaturtext wird unterhalb der Meldungsbezeichnung angezeigt. Sie können den Signaturtext jetzt bearbeiten. Weitere Informationen finden Sie unter [Klassen und Lebenslinien](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>So verbessern Sie das Layout eines Sequenzdiagramms  
   
@@ -227,21 +227,21 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
  Lebenslinien können einen dieser Detailgrade darstellen:  
   
--   Objekte im Programmcode, der entweder bereits vorhanden ist oder noch entwickelt wird.  
+- Objekte im Programmcode, der entweder bereits vorhanden ist oder noch entwickelt wird.  
   
--   Komponenten oder ihre Unterkomponenten, wobei normalerweise Fassaden, Proxys und andere Bindemechanismen ausgelassen werden.  
+- Komponenten oder ihre Unterkomponenten, wobei normalerweise Fassaden, Proxys und andere Bindemechanismen ausgelassen werden.  
   
--   Das System und externe Akteure  
+- Das System und externe Akteure  
   
- Meldungen können einen dieser Detailgrade darstellen:  
+  Meldungen können einen dieser Detailgrade darstellen:  
   
--   Softwaremeldungen im Programmcode, an einer API oder einer Webschnittstelle.  
+- Softwaremeldungen im Programmcode, an einer API oder einer Webschnittstelle.  
   
--   Transaktionen oder untergeordnete Transaktionen, z. B. zwischen Benutzern und dem System oder zwischen Code und Datenbank.  
+- Transaktionen oder untergeordnete Transaktionen, z. B. zwischen Benutzern und dem System oder zwischen Code und Datenbank.  
   
--   Anwendungsfälle – wichtige Interaktionen zwischen Benutzern und dem System.  
+- Anwendungsfälle – wichtige Interaktionen zwischen Benutzern und dem System.  
   
- Unabhängig davon, ob Sie vorhandenen Code untersuchen oder einen neuen Entwurf beschreiben, ist es häufig nützlich, weniger detaillierte Ansichten zu zeichnen und zu diskutieren.  
+  Unabhängig davon, ob Sie vorhandenen Code untersuchen oder einen neuen Entwurf beschreiben, ist es häufig nützlich, weniger detaillierte Ansichten zu zeichnen und zu diskutieren.  
   
 ## <a name="describing-variations"></a>Beschreiben von Variationen  
  Das Diagramm zeigt eine einzelne, typische Sequenz von Ereignissen. Wenn Sie alternative Möglichkeiten zeigen möchten, z. B. Fehlerszenarien, können Sie eine der folgenden Optionen verwenden:  
@@ -275,18 +275,18 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>So erstellen Sie eine Lebenslinie aus einem vorhandenen Typ  
   
--   Ziehen Sie eine Klasse, Komponente oder Schnittstelle aus dem UML-Modell-Explorer in ein Sequenzdiagramm.  
+- Ziehen Sie eine Klasse, Komponente oder Schnittstelle aus dem UML-Modell-Explorer in ein Sequenzdiagramm.  
   
-     \- oder –  
+   \- oder –  
   
-    1.  Mit der rechten Maustaste die Klasse, Komponente oder Schnittstelle im jeweiligen Diagramm, und klicken Sie dann auf **Lebenslinie erstellen**.  
+  1. Mit der rechten Maustaste die Klasse, Komponente oder Schnittstelle im jeweiligen Diagramm, und klicken Sie dann auf **Lebenslinie erstellen**.  
   
-    2.  In der **Lebenslinie erstellen** Dialogfeld Wählen Sie ein Sequenzdiagramm, und klicken Sie dann auf **OK**.  
+  2. In der **Lebenslinie erstellen** Dialogfeld Wählen Sie ein Sequenzdiagramm, und klicken Sie dann auf **OK**.  
   
      Eine neue benannte Instanzlebenslinie wird angezeigt, deren Typ dem Typ entspricht, den Sie gezogen haben.  
   
-    > [!NOTE]
-    >  Sie können diese Aktion so oft wie gewünscht wiederholen. Dadurch werden Lebenslinien mit unterschiedlichen Instanznamen erstellt.  
+  > [!NOTE]
+  >  Sie können diese Aktion so oft wie gewünscht wiederholen. Dadurch werden Lebenslinien mit unterschiedlichen Instanznamen erstellt.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>So ändern Sie den Typ einer Lebenslinie  
   

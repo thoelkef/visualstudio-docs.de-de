@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860329"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen 
   
 #### <a name="to-create-a-project-and-a-database-file"></a>So erstellen Sie ein Projekt und eine Datenbankdatei  
   
-1.  Erstellen Sie ein Windows Forms-Projekt mit dem Namen `SampleDatabaseWalkthrough`.  
+1. Erstellen Sie ein Windows Forms-Projekt mit dem Namen `SampleDatabaseWalkthrough`.  
   
-2.  Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen**.  
+2. Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen**.  
   
-3.  In der Liste der Vorlagen einen Bildlauf nach unten, und wählen Sie **Dienstbasierte Datenbank**.  
+3. In der Liste der Vorlagen einen Bildlauf nach unten, und wählen Sie **Dienstbasierte Datenbank**.  
   
-     ![Im Dialogfeld "Vorlagen" Element](../data-tools/media/raddata-vsitemtemplates.png "Raddata VSItemTemplates")  
+    ![Im Dialogfeld "Vorlagen" Element](../data-tools/media/raddata-vsitemtemplates.png "Raddata VSItemTemplates")  
   
-4.  Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+4. Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-5.  Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen sie hierzu die Tasten UMSCHALT + Alt + D oder wählen Sie in der Menüleiste auswählen **Ansicht** > **Other Windows**  >  **Datenquellen**.  
+5. Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen sie hierzu die Tasten UMSCHALT + Alt + D oder wählen Sie in der Menüleiste auswählen **Ansicht** > **Other Windows**  >  **Datenquellen**.  
   
-6.  In der **Datenquellen** wählen Sie im Fenster der **neue Datenquelle hinzufügen** Link.  
+6. In der **Datenquellen** wählen Sie im Fenster der **neue Datenquelle hinzufügen** Link.  
   
-7.  In der **Assistenten zur Datenquellenkonfiguration**, wählen die **Weiter** Schaltfläche viermal auf die Standardeinstellungen übernehmen, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+7. In der **Assistenten zur Datenquellenkonfiguration**, wählen die **Weiter** Schaltfläche viermal auf die Standardeinstellungen übernehmen, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
- Wenn Sie das Eigenschaftenfenster für die Datenbank öffnen, können Sie ihre Verbindungszeichenfolge und den Speicherort der primären MDF-Datei anzeigen. Sie werden feststellen, dass die Datenbankdatei im Projektordner.  
+   Wenn Sie das Eigenschaftenfenster für die Datenbank öffnen, können Sie ihre Verbindungszeichenfolge und den Speicherort der primären MDF-Datei anzeigen. Sie werden feststellen, dass die Datenbankdatei im Projektordner.  
   
 -   Wählen Sie in Visual Studio **Ansicht** > **Objekt-Explorer von SQL Server** , wenn diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für "SampleDatabase.mdf", und wählen dann **Eigenschaften**.  
   

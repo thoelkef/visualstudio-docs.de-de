@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905934"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196507"
   
  **Richtlinien für die allgemeine Symbolleiste:**  
   
--   Jede Symbolleiste ist 24 Pixel in allgemeine Steuerelemente (ziehelements, Überlauf).  
+- Jede Symbolleiste ist 24 Pixel in allgemeine Steuerelemente (ziehelements, Überlauf).  
   
--   Jede Symbolleisten-Schaltfläche ist 22 Pixel breit ist, einschließlich der Auffüllung. Machen dem Symbol eine unterteilte Schaltfläche fügt eine andere 11 Pixel Breite.  
+- Jede Symbolleisten-Schaltfläche ist 22 Pixel breit ist, einschließlich der Auffüllung. Machen dem Symbol eine unterteilte Schaltfläche fügt eine andere 11 Pixel Breite.  
   
--   Duplizierung der Befehle in Symbolleisten ist zulässig.  
+- Duplizierung der Befehle in Symbolleisten ist zulässig.  
   
- **Für die spezifischen Symbolleisten** angezeigt werden, wenn Sie ein bestimmten Dateityp aktiv ist und nicht mehr angezeigt, wenn ein anderes Dateiformat aktiv wird.  
+  **Für die spezifischen Symbolleisten** angezeigt werden, wenn Sie ein bestimmten Dateityp aktiv ist und nicht mehr angezeigt, wenn ein anderes Dateiformat aktiv wird.  
   
--   Für die spezifischen Symbolleisten verfügen möglicherweise nicht mehr als 12 Tasten.  
+- Für die spezifischen Symbolleisten verfügen möglicherweise nicht mehr als 12 Tasten.  
   
--   Die gesamte Breite der Symbolleiste darf 300 Pixel nicht überschreiten.  
+- Die gesamte Breite der Symbolleiste darf 300 Pixel nicht überschreiten.  
   
--   Jeder Dateityp haben einen eingebetteten Symbolleiste oder einen globalen dokumentspezifische-Symbolleiste, aber nicht beide.  
+- Jeder Dateityp haben einen eingebetteten Symbolleiste oder einen globalen dokumentspezifische-Symbolleiste, aber nicht beide.  
   
- **Kontextspezifische Symbolleisten** angezeigt werden, wenn einem bestimmten Kontext festgelegt ist und in der Regel für einen längeren Zeitraum aktiv bleiben.  
+  **Kontextspezifische Symbolleisten** angezeigt werden, wenn einem bestimmten Kontext festgelegt ist und in der Regel für einen längeren Zeitraum aktiv bleiben.  
   
--   Die Schaltfläche für alle kontextspezifische Symbolleisten beträgt 18.  
+- Die Schaltfläche für alle kontextspezifische Symbolleisten beträgt 18.  
   
--   Wenn die meisten Benutzer konsistent Befehle der Symbolleiste verwenden wird nicht, wenn der Kontext aktiv ist, klicken Sie dann nicht zuordnen dieser Symbolleiste mit einem Kontext.  
+- Wenn die meisten Benutzer konsistent Befehle der Symbolleiste verwenden wird nicht, wenn der Kontext aktiv ist, klicken Sie dann nicht zuordnen dieser Symbolleiste mit einem Kontext.  
   
--   Stellen Sie sicher, dass die Symbolleiste nicht mehr angezeigt, beim Beenden von Kontext wird. Beim Start sollte keinem dieser Symbolleisten angezeigt werden.  
+- Stellen Sie sicher, dass die Symbolleiste nicht mehr angezeigt, beim Beenden von Kontext wird. Beim Start sollte keinem dieser Symbolleisten angezeigt werden.  
   
- **Symbolleisten ohne Kontext** nie automatisch angezeigt. Diese zeigen nur, wenn sie der Benutzer aktiviert. Behalten Sie die maximale Breite unter 200 Pixel.  
+  **Symbolleisten ohne Kontext** nie automatisch angezeigt. Diese zeigen nur, wenn sie der Benutzer aktiviert. Behalten Sie die maximale Breite unter 200 Pixel.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Allgemeine Organisation und Shell definierte Gruppen  
  Verwenden Sie die vorhandenen freigegebenen Befehle, Befehlsgruppen und Menüs. Wenn ein neuer Befehl werden definiert muss, versuchen Sie es an eine vorhandene freigegebene Befehlsgruppe platzieren. Wenn eine neue Gruppe werden definiert muss, versuchen Sie es vor dem Erstellen eines neuen Menüs für der obersten Ebene in einem vorhandenen freigegebenen Menü in der Nähe einer Gruppe von entsprechenden Befehl zu platzieren. Dies reduziert die Komplexität der Befehl, und gleichzeitig sicherstellen von konsistenten Befehl Platzierung in der IDE.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196507"
   
  Wenn Sie Verknüpfungen zu definieren, gelten Sie folgende Regeln:  
   
--   **Verwenden Sie die STRG- und -Funktion (Fn) folgen.**  
+- **Verwenden Sie die STRG- und -Funktion (Fn) folgen.**  
   
--   **Häufig verwendete Tastenkombinationen zu erhalten.** Behalten Sie die am häufigsten verwendeten Verknüpfungen.  
+- **Häufig verwendete Tastenkombinationen zu erhalten.** Behalten Sie die am häufigsten verwendeten Verknüpfungen.  
   
--   **Stellen Sie die Tastenkombinationen für Editoren einfach zu geben.** Binden Sie einfach auf den Typ Tastenkombinationen für Befehle, dass Entwickler die meisten beim Schreiben von Code benötigen. Z. B. **Edit.InvokeSmartTag** benötigt eine schnelle Tastenkombination wie STRG / und nicht Alt + Umschalt + F10.  
+- **Stellen Sie die Tastenkombinationen für Editoren einfach zu geben.** Binden Sie einfach auf den Typ Tastenkombinationen für Befehle, dass Entwickler die meisten beim Schreiben von Code benötigen. Z. B. **Edit.InvokeSmartTag** benötigt eine schnelle Tastenkombination wie STRG / und nicht Alt + Umschalt + F10.  
   
--   **Ziel ist es für konsistent mit Design Verknüpfungen.**  
+- **Ziel ist es für konsistent mit Design Verknüpfungen.**  
   
--   **Führen Sie die Windows-Richtlinien, um zu bestimmen, welche Modifizierer Schlüssel verwenden.** Verwenden Sie STRG-Tastenkombinationen für Befehle, die umfangreiche Auswirkungen, z. B. Befehle haben, die für ein ganzes Dokument gelten. Verwenden Sie UMSCHALT-Taste-Kombinationen für Befehle, die erweitern oder ergänzen die Aktionen der standardmäßige Tastenkombination. Verwenden Sie nicht STRG + Alt + Kombinationen aus.  
+- **Führen Sie die Windows-Richtlinien, um zu bestimmen, welche Modifizierer Schlüssel verwenden.** Verwenden Sie STRG-Tastenkombinationen für Befehle, die umfangreiche Auswirkungen, z. B. Befehle haben, die für ein ganzes Dokument gelten. Verwenden Sie UMSCHALT-Taste-Kombinationen für Befehle, die erweitern oder ergänzen die Aktionen der standardmäßige Tastenkombination. Verwenden Sie nicht STRG + Alt + Kombinationen aus.  
   
--   **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie eine ältere Funktion verfügen, sollten Sie die Verknüpfungen, die mit extrem Seltenheit (weniger als 10 Mal von der CEIP-Daten) oder moderate Seltenheit (weniger als 100 Mal von der CEIP-Daten) verwendet werden, wenn eine Tastenkombination schnellen Zugriff auf den gleichen Befehl ermöglicht werden entfernt. Zum Beispiel: Alt, H, B wird Inhalt-Hilfe geöffnet.  
+- **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie eine ältere Funktion verfügen, sollten Sie die Verknüpfungen, die mit extrem Seltenheit (weniger als 10 Mal von der CEIP-Daten) oder moderate Seltenheit (weniger als 100 Mal von der CEIP-Daten) verwendet werden, wenn eine Tastenkombination schnellen Zugriff auf den gleichen Befehl ermöglicht werden entfernt. Zum Beispiel: Alt, H, B wird Inhalt-Hilfe geöffnet.  
   
- Es ist keine einfache Möglichkeit zum Prüfen der Verfügbarkeit der Verknüpfung. Wenn Sie eine Verknüpfung hinzufügen möchten, gehen Sie wie folgt vor:  
+  Es ist keine einfache Möglichkeit zum Prüfen der Verfügbarkeit der Verknüpfung. Wenn Sie eine Verknüpfung hinzufügen möchten, gehen Sie wie folgt vor:  
   
 1.  Überprüfen Sie die Liste der [Tastenkombinationen für Visual Studio 2013](http://visualstudioshortcuts.com/2013/) zu ermitteln, ob ähnliche Befehle, um Ihre mit zu gruppieren.  
   

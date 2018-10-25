@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39;) &#39; (JavaScript) | Microsoft Docs
+title: Erwartet &#39;)&#39; (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f816b4635ae219b12370d53fa8c14eb8c0112a7a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863541"
 ---
-# <a name="expected-3939-javascript"></a>Erwartete &#39;) &#39; (JavaScript)
-Sie versucht, einen Ausdruck in einer Gruppe von Klammern einschließen, aber enthielt keinen die schließenden Klammer. Einige Ausdrücke muss in einer Gruppe von öffnende und schließende Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern im folgenden Beispiel aus.  
+# <a name="expected-3939-javascript"></a>Erwartet &#39;)&#39; (JavaScript)
+Sie haben versucht, einen Ausdruck in Klammern einschließen, aber es hat keine die schließenden Klammer. Einige Ausdruck muss in einer Gruppe von öffnende und schließende Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern, die im folgenden Beispiel aus.  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -38,4 +38,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Der Auswertungsausdruck die richtigen Klammern hinzugefügt.
+-   Fügen Sie die richtigen Klammern, der Auswertungsausdruck hinzu.

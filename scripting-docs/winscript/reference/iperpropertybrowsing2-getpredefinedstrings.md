@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft Docs
+title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915961"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Ermöglicht dem Aufrufer ein Listenfeld mit einem gezählten Array von Zeigern Zeichenfolge füllen Sie die möglichen Werte für diese Eigenschaft darstellen.  
+Ermöglicht dem Aufrufer ein Listenfeld, das mit der ein gezähltes Array von Zeichenfolgenzeiger zu füllen, die möglichen Werte für diese Eigenschaft darstellen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Parameter  
  `dispid`  
- [in] Dispatch-ID der Eigenschaft für die der Aufrufer die Zeichenfolgenliste anfordert.  
+ [in] Dispatch-ID der Eigenschaft, die für die der Aufrufer die Zeichenfolgenliste anfordert.  
   
  `pCaStrings`  
- [out] Ein Zeiger auf eine, zählbare, das vom Aufrufer zugewiesene Arraystruktur, die Elementanzahl und die Adresse ein Methode reserviertes Array von Zeigern Zeichenfolge enthält. Wenn die Methode fehlschlägt, wird kein Speicherplatz belegt, und den Inhalt der Struktur ist nicht definiert.  
+ [out] Zeiger auf eine vom Aufrufer reservierte, gezähltes Array-Struktur, die die Elementanzahl und die Adresse eines Arrays-Methode zugeordnete Zeichenfolge Zeiger enthält. Wenn die Methode fehlschlägt, wird kein Arbeitsspeicher belegt und der Inhalt der Struktur ist nicht definiert.  
   
  `pCaCookies`  
- [out] Zeiger auf die vom Aufrufer reservierten, zählbare Arraystruktur, die die Elementanzahl und die Adresse einer Methode reserviertes Array von DWORDs enthält. Wenn die Methode fehlschlägt, wird kein Speicherplatz belegt, und den Inhalt der Struktur ist nicht definiert.  
+ [out] Zeiger auf die vom Aufrufer reservierte, gezähltes Array-Struktur, die die Elementanzahl und die Adresse von einer Methode reserviertes Array von DWORDs enthält. Wenn die Methode fehlschlägt, wird kein Arbeitsspeicher belegt und der Inhalt der Struktur ist nicht definiert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT`, in der Regel `S_OK`.  
+ Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IPerPropertyBrowsing2-Schnittstelle 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

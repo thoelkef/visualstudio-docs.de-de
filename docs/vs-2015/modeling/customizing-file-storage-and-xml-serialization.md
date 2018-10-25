@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867443"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 ## <a name="understanding-monikers"></a>Grundlegendes zu Moniker  
  Moniker werden verwendet, um Querverweise zwischen verschiedenen Teilen der Dateien Modell und dem Diagramm darzustellen. Sie werden auch verwendet, der `.diagram` Datei zum Verweisen auf Knoten in der Datei des Modells. Es gibt zwei Arten von Moniker:  
   
--   *ID-Moniker* die GUID des Target-Elements Angebot. Zum Beispiel:  
+- *ID-Moniker* die GUID des Target-Elements Angebot. Zum Beispiel:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Wichtige Moniker qualifizierten* Target-Elements zu identifizieren, indem Sie den Wert einer bestimmten Domäne-Eigenschaft, die der monikerschlüssel aufgerufen. Der Moniker des Target-Elements ist der Moniker des übergeordneten Elements in der Struktur einbettender Beziehungen vorangestellt.  
+- *Wichtige Moniker qualifizierten* Target-Elements zu identifizieren, indem Sie den Wert einer bestimmten Domäne-Eigenschaft, die der monikerschlüssel aufgerufen. Der Moniker des Target-Elements ist der Moniker des übergeordneten Elements in der Struktur einbettender Beziehungen vorangestellt.  
   
-     Die folgenden Beispiele stammen aus eine, die DSL in dem es gibt eine Domänenklasse, die mit dem Namen Album, mit einer einbettenden Beziehung zu einer Domäne benannten "Song"-Klasse:  
+   Die folgenden Beispiele stammen aus eine, die DSL in dem es gibt eine Domänenklasse, die mit dem Namen Album, mit einer einbettenden Beziehung zu einer Domäne benannten "Song"-Klasse:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Qualifizierten Key Moniker verwendet werden, wenn die Zielklasse eine Domäneneigenschaft für den hat die Option **wird der Monikerschlüssel** nastaven NA hodnotu `true` in **XML-Serialisierungsverhalten**. Im Beispiel ist diese Option für die Domäneneigenschaften, die mit dem Namen "Title" in den Domänenklassen "Album" und "Song" festgelegt.  
+   Qualifizierten Key Moniker verwendet werden, wenn die Zielklasse eine Domäneneigenschaft für den hat die Option **wird der Monikerschlüssel** nastaven NA hodnotu `true` in **XML-Serialisierungsverhalten**. Im Beispiel ist diese Option für die Domäneneigenschaften, die mit dem Namen "Title" in den Domänenklassen "Album" und "Song" festgelegt.  
   
- Qualifizierte Key Moniker sind einfacher zu lesen als ID-Moniker. Wenn der XML-Code der Modelldateien von Personen gelesen werden soll, sollten erwägen Sie, qualifizierte Key Moniker zu verwenden. Allerdings ist es möglich, dass der Benutzer mehr als ein Element auf dem gleichen Moniker Schlüssel festlegen. Doppelte Schlüssel können dazu führen, dass die Datei nicht ordnungsgemäß laden. Aus diesem Grund, wenn Sie eine Domänenklasse, die mit qualifizierten Key Moniker verwiesen wird definieren, sollten Sie Methoden zum verhindern, dass der Benutzer Speichern einer Datei, die doppelte Moniker verfügt.  
+  Qualifizierte Key Moniker sind einfacher zu lesen als ID-Moniker. Wenn der XML-Code der Modelldateien von Personen gelesen werden soll, sollten erwägen Sie, qualifizierte Key Moniker zu verwenden. Allerdings ist es möglich, dass der Benutzer mehr als ein Element auf dem gleichen Moniker Schlüssel festlegen. Doppelte Schlüssel können dazu führen, dass die Datei nicht ordnungsgemäß laden. Aus diesem Grund, wenn Sie eine Domänenklasse, die mit qualifizierten Key Moniker verwiesen wird definieren, sollten Sie Methoden zum verhindern, dass der Benutzer Speichern einer Datei, die doppelte Moniker verfügt.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Festlegen eine Domänenklasse von ID-Moniker verwiesen wird  
   

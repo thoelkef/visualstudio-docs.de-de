@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862189"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Bereich "Aktionen" in Microsoft Office Word-Dokument erstellt wird. Der Bereich "Aktionen" enthält zwei Steuerelemente, die Benutzereingaben erfassen, und klicken Sie dann den Text an das Dokument senden.  
@@ -39,7 +39,7 @@ ms.locfileid: "35671973"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -60,17 +60,17 @@ ms.locfileid: "35671973"
   
 ### <a name="to-add-text-to-your-document"></a>So fügen Sie dem Dokument Text hinzu  
   
-1.  Geben Sie den folgenden Text in das Word-Dokument:  
+1. Geben Sie den folgenden Text in das Word-Dokument:  
   
-     **21. März 2008**  
+    **21. März 2008**  
   
-     **Name**  
+    **Name**  
   
-     **Adresse**  
+    **Adresse**  
   
-     **Dies ist ein Beispiel für eine grundlegende Aktionsbereich in Word.**  
+    **Dies ist ein Beispiel für eine grundlegende Aktionsbereich in Word.**  
   
- Hinzufügbaren eine <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement in Ihr Dokument ziehen Sie es aus der **Toolbox** in Visual Studio oder mithilfe der **Lesezeichen** in Word im Dialogfeld.  
+   Hinzufügbaren eine <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement in Ihr Dokument ziehen Sie es aus der **Toolbox** in Visual Studio oder mithilfe der **Lesezeichen** in Word im Dialogfeld.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>So fügen Sie dem Dokument ein Lesezeichen-Steuerelement hinzu  
   

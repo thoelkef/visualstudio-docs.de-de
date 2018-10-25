@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867701"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Finden Sie unter [unterstützt-Code-Änderungen (C++)](../debugger/supported-code-changes-cpp.md) für Informationen zu den Einschränkungen von bearbeiten und fortfahren.
@@ -41,17 +41,17 @@ Weitere Informationen zu Visual Studio 2015 Update 3 Verbesserungen, finden Sie 
 > [!IMPORTANT]
 > Erforderliche Buildeinstellungen und andere Informationen zur featurekompatibilität von finden Sie unter [C++ Edit and Continue in Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Wenn Sie in einer Debugsitzung sind, beenden Sie das Debuggen (**UMSCHALT + F5**).
+1. Wenn Sie in einer Debugsitzung sind, beenden Sie das Debuggen (**UMSCHALT + F5**).
 
 2. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
   
-3.  In der **Optionen** wählen Sie im Dialogfeld **Debugging > Allgemein**.
+3. In der **Optionen** wählen Sie im Dialogfeld **Debugging > Allgemein**.
 
-4.  Wählen Sie zum Aktivieren **bearbeiten und Fortfahren aktivieren**. Deaktivieren Sie das Kontrollkästchen, um zu deaktivieren.
+4. Wählen Sie zum Aktivieren **bearbeiten und Fortfahren aktivieren**. Deaktivieren Sie das Kontrollkästchen, um zu deaktivieren.
   
-5.  Aktivieren bzw. deaktivieren Sie in der Gruppe **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren** .  
+5. Aktivieren bzw. deaktivieren Sie in der Gruppe **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren** .  
   
- Eine Änderung dieser Einstellung betrifft alle Projekte, an denen Sie arbeiten. Sie müssen die Anwendung nicht neu erstellen, nachdem Sie die Einstellung geändert haben. Wenn Sie die Anwendung über die Befehlszeile oder mit einem Makefile erstellen, aber in Visual Studio-Umgebung debuggen, noch können bearbeiten und fortfahren, wenn Sie festlegen, die **"/ Zi"** Option.  
+   Eine Änderung dieser Einstellung betrifft alle Projekte, an denen Sie arbeiten. Sie müssen die Anwendung nicht neu erstellen, nachdem Sie die Einstellung geändert haben. Wenn Sie die Anwendung über die Befehlszeile oder mit einem Makefile erstellen, aber in Visual Studio-Umgebung debuggen, noch können bearbeiten und fortfahren, wenn Sie festlegen, die **"/ Zi"** Option.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Gewusst wie: Explizites Übernehmen von Codeänderungen  
  In Visual C++ kann „Bearbeiten und Fortfahren“ Codeänderungen auf zweierlei Weise übernehmen. Codeänderungen können implizit übernommen werden, wenn Sie einen Ausführungsbefehl wählen, oder explizit, wenn Sie den Befehl **Codeänderungen übernehmen** verwenden.  
@@ -65,16 +65,16 @@ Weitere Informationen zu Visual Studio 2015 Update 3 Verbesserungen, finden Sie 
   
  So halten Sie das Übernehmen von Codeänderungen an:  
   
--   Wählen Sie im Menü **Debuggen** die Option **Übernehmen von Codeänderungen beenden**.  
+- Wählen Sie im Menü **Debuggen** die Option **Übernehmen von Codeänderungen beenden**.  
   
- Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
+  Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
   
- Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
+  Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Gewusst wie: Zurücksetzen des Ausführungspunkts  
  Einige Codeänderungen können dazu führen, dass der Ausführungspunkt an eine neue Position verschoben wird, wenn die Änderung von "Bearbeiten und Fortfahren" übernommen wird. Mit "Bearbeiten und Fortfahren" wird der Ausführungspunkt so genau wie möglich platziert. Das Ergebnis ist jedoch möglicherweise nicht korrekt.  
   
- In Visual C++ werden Sie durch ein Dialogfeld über eine Änderung des Ausführungspunkts informiert. Überprüfen Sie, ob die Position richtig ist, bevor Sie das Debuggen fortsetzen. Ist die Position nicht korrekt, verwenden Sie den Befehl **Nächste Anweisung festlegen** . Weitere Informationen finden Sie unter [legen Sie die nächste auszuführende Anweisung](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ In Visual C++ werden Sie durch ein Dialogfeld über eine Änderung des Ausführungspunkts informiert. Überprüfen Sie, ob die Position richtig ist, bevor Sie das Debuggen fortsetzen. Ist die Position nicht korrekt, verwenden Sie den Befehl **Nächste Anweisung festlegen** . Weitere Informationen finden Sie unter [Nächste auszuführende Anweisung festlegen](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ##  <a name="BKMK_How_to_work_with_stale_code"></a> Gewusst wie: Arbeiten mit veraltetem Code  
  In einigen Fällen kann Bearbeiten und Fortfahren die Codeänderungen nicht sofort in die ausführbare Datei übernehmen, dies aber möglicherweise zu einem späteren Zeitpunkt nachholen, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuelle Funktion aufruft, bzw. wenn Sie einer Funktion in der Aufrufliste neue Variablen von mehr als 64 Bytes hinzufügen.  

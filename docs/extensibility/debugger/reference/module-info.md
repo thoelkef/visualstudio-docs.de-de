@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: MODULE_INFO | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897003"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly) an.  
+Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -63,7 +63,7 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>Member  
  dwValidFields  
- Eine Kombination aus Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) -Enumeration, der angibt, welche Felder ausgefüllt sind.  
+ Eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.  
   
  m_bstrName  
  Der Modulname.  
@@ -72,36 +72,36 @@ public struct MODULE_INFO {
  Die Modul-URL.  
   
  m_bstrVersion  
- Die Version des Moduls.  
+ Die Modulversion.  
   
  m_bstrDebugMessage  
- Eine optionale Meldung, die zum Modul, z. B. "Symbole geladen werden nicht möglich."  
+ Eine optionale Nachricht, die über das Modul, z. B. "Symbole geladen werden nicht möglich."  
   
  m_addrLoadAddress  
- Adresse des Moduls.  
+ Die Ladeadresse des Moduls.  
   
  m_addrPreferredLoadAddress  
- Die bevorzugte Adresse des Moduls.  
+ Die bevorzugte Ladeadresse des Moduls.  
   
  m_dwSize  
  Die Modulgröße.  
   
  m_dwLoadOrder  
- Die Ladereihenfolge von Modul.  
+ Die Modul-Load-Reihenfolge.  
   
  m_TimeStamp  
- Die Uhrzeit, die letzten der Symboldatei Änderung.  
+ Die Zeit, die Symboldatei zuletzt geändert wurde.  
   
  m_bstrUrlSymbolLocation  
- Der Speicherort, der die Symboldatei (z. B. ".\\") im Modul angegeben. Als Anfangsposition verwendet, um die Symbole für ein Modul zu suchen.  
+ Der Speicherort der Symboldatei (z. B. ".\\") im Modul angegeben. Zum Suchen von Symbolen für ein Modul als einen Startort anzugeben.  
   
  m_dwModuleFlags  
- Eine Kombination aus Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) -Enumeration, die das Modul beschreibt.  
+ Eine Kombination von Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) -Enumeration, die diesem Modul erläutert.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) Methode, wo in gefüllt.  
+ Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) Methode, in denen es ausgefüllt wird.  
   
- Diese Struktur entspricht jedes Modul aufgeführt, die der **Module** Fenster.  
+ Jedes Modul aufgeführt, die dieser Struktur entspricht dem **Module** Fenster.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916906"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -73,21 +73,21 @@ Sie können den Inhalt eines Datasets aktualisieren *zusammenführen* mit einem 
 Beim Zusammenführen von Datasets können Sie ein boolesches Argument übergeben (`preserveChanges`), informiert die <xref:System.Data.DataSet.Merge%2A> Methode angibt, ob bestehende Änderungen im Ziel-Dataset beibehalten werden sollen. Da Datasets mehrere Datensatzversionen verwalten, ist es wichtig zu beachten, dass mehr als eine Version der Datensätze zusammengeführt werden. Die folgende Tabelle zeigt, wie ein Datensatz in beiden Datasets zusammengeführt werden:
 
 |DataRowVersion|Ziel-Dataset|Quell-Dataset|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Ursprünglich|James Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
 Aufrufen der <xref:System.Data.DataSet.Merge%2A> Methode in der vorherigen Tabelle mit `preserveChanges=false targetDataset.Merge(sourceDataset)` führt die folgenden Daten:
 
 |DataRowVersion|Ziel-Dataset|Quell-Dataset|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Ursprünglich|James C. Wilson|James C. Wilson|
 |Aktuell|James C. Wilson|James C. Wilson|
 
 Aufrufen der <xref:System.Data.DataSet.Merge%2A> -Methode mit `preserveChanges = true targetDataset.Merge(sourceDataset, true)` führt die folgenden Daten:
 
 |DataRowVersion|Ziel-Dataset|Quell-Dataset|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Ursprünglich|James C. Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines <xref:System.Data.D
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowState>-Enumeration aufgeführt:
 
 |DataRowState-Wert|Beschreibung|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Die Zeile wurde einer <xref:System.Data.DataRowCollection> als Element hinzugefügt. (Eine Zeile in diesem Status keine entsprechende ursprüngliche Version, da sie nicht vorhanden war bei der letzten <xref:System.Data.DataRow.AcceptChanges%2A> Methode wurde aufgerufen).|
 |<xref:System.Data.DataRowState.Deleted>|Die Zeile wurde mit <xref:System.Data.DataRow.Delete%2A> eines <xref:System.Data.DataRow>-Objekts gelöscht.|
 |<xref:System.Data.DataRowState.Detached>|Die Zeile wurde zwar erstellt, gehört aber keiner <xref:System.Data.DataRowCollection> an. Ein <xref:System.Data.DataRow> Objekt befindet sich in diesem Zustand, unmittelbar nachdem es erstellt wurde, bevor sie zu einer Auflistung hinzugefügt wurde, und nachdem er aus einer Auflistung entfernt wurde.|
@@ -142,7 +142,7 @@ In Datasets werden mehrere Datensatzversionen verwaltet. Die <xref:System.Data.D
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowVersion>-Enumeration aufgeführt:
 
 |DataRowVersion-Wert|Beschreibung|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die für den Datensatz seit dem letzten ausgeführt wurden <xref:System.Data.DataRow.AcceptChanges%2A> aufgerufen wurde. Wenn die Zeile gelöscht wurde, ist gibt es keine aktuelle Version.|
 |<xref:System.Data.DataRowVersion.Default>|Der Standardwert eines Datensatzes, wie er durch das Dataset-Schema oder die Datenquelle definiert wurde.|
 |<xref:System.Data.DataRowVersion.Original>|Die ursprüngliche Version eines Datensatzes ist eine Kopie des Datensatzes zu dem Zeitpunkt, zu dem zuletzt ein Commit für Dataset-Änderungen ausgeführt wurde. Praktisch entspricht dies meist der Version eines Datensatzes, die aus einer Datenquelle gelesen wurde.|

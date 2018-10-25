@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891127"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ ms.locfileid: "49279018"
 ## <a name="validate-data"></a>Überprüfen von Daten  
  Validierung in einem Dataset kann auf folgende Weise erreicht werden:  
   
--   Erstellen Sie eigene anwendungsspezifische Validierungen, die während der Änderung der Werte in eine einzelne Spalte überprüfen kann.  Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Spaltenänderungen](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Erstellen Sie eigene anwendungsspezifische Validierungen, die während der Änderung der Werte in eine einzelne Spalte überprüfen kann.  Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Spaltenänderungen](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   Erstellen Sie eigene anwendungsspezifische Validierungen, die die Daten mit Werten, die während einer gesamten Daten prüfen kann ändert Zeile. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Erstellen Sie eigene anwendungsspezifische Validierungen, die die Daten mit Werten, die während einer gesamten Daten prüfen kann ändert Zeile. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
--   Durch das Erstellen von Schlüsseln, unique-Einschränkungen, und so weiter, als Teil der Schemadefinition des tatsächlichen des Datasets. Weitere Informationen zum Einbinden von Validierung in der Schemadefinition finden Sie unter [eine DataColumn darauf beschränken, eindeutige Werte enthalten](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- Durch das Erstellen von Schlüsseln, unique-Einschränkungen, und so weiter, als Teil der Schemadefinition des tatsächlichen des Datasets. Weitere Informationen zum Einbinden von Validierung in der Schemadefinition finden Sie unter [eine DataColumn darauf beschränken, eindeutige Werte enthalten](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
--   Durch Festlegen der Eigenschaften von den <xref:System.Data.DataColumn> des Objekts, z. B. <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, und <xref:System.Data.DataColumn.Unique%2A>.  
+- Durch Festlegen der Eigenschaften von den <xref:System.Data.DataColumn> des Objekts, z. B. <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, und <xref:System.Data.DataColumn.Unique%2A>.  
   
- Mehrere Ereignisse ausgelöst werden, indem die <xref:System.Data.DataTable> Objekt, wenn eine Änderung in einem Datensatz auftritt:  
+  Mehrere Ereignisse ausgelöst werden, indem die <xref:System.Data.DataTable> Objekt, wenn eine Änderung in einem Datensatz auftritt:  
   
--   Die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse werden ausgelöst, während und nach jeder Änderung an einer einzelnen Spalte. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis ist hilfreich, wenn Sie Änderungen in bestimmte Spalten überprüfen möchten. Informationen über die vorgeschlagene Änderung wird als ein Argument mit dem Ereignis übergeben. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Spaltenänderungen](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse werden ausgelöst, während und nach jeder Änderung an einer einzelnen Spalte. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis ist hilfreich, wenn Sie Änderungen in bestimmte Spalten überprüfen möchten. Informationen über die vorgeschlagene Änderung wird als ein Argument mit dem Ereignis übergeben. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Spaltenänderungen](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   Die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden ausgelöst, während und nach einer Änderung in einer Zeile. Die <xref:System.Data.DataTable.RowChanging> Ereignis ist allgemeiner. Er gibt an, dass eine Änderung an einer beliebigen Stelle in der Zeile auftritt, aber Sie wissen nicht, welche Spalte geändert hat. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden ausgelöst, während und nach einer Änderung in einer Zeile. Die <xref:System.Data.DataTable.RowChanging> Ereignis ist allgemeiner. Er gibt an, dass eine Änderung an einer beliebigen Stelle in der Zeile auftritt, aber Sie wissen nicht, welche Spalte geändert hat. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
- Standardmäßig löst jede Änderung an einer Spalte aus diesem Grund vier Ereignisse. Die erste ist die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse für die spezifische Spalte, die geändert wird. Als Nächstes werden die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse. Falls mehrere Änderungen an der Zeile durchgeführt werden, werden die Ereignisse für jede Änderung ausgelöst werden.  
+  Standardmäßig löst jede Änderung an einer Spalte aus diesem Grund vier Ereignisse. Die erste ist die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse für die spezifische Spalte, die geändert wird. Als Nächstes werden die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse. Falls mehrere Änderungen an der Zeile durchgeführt werden, werden die Ereignisse für jede Änderung ausgelöst werden.  
   
 > [!NOTE]
 >  Der Datenzeile <xref:System.Data.DataRow.BeginEdit%2A> Methode deaktiviert die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse nach jeder Änderung der einzelnen Spalten. Das Ereignis wird in diesem Fall nicht ausgelöst, bis die <xref:System.Data.DataRow.EndEdit%2A> Methode wurde aufgerufen, wenn die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden nur einmal ausgelöst. Weitere Informationen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
@@ -94,13 +94,13 @@ ms.locfileid: "49279018"
   
  Sie können Daten validieren, wenn der Wert in einer Datenspalte geändert wird, indem er auf die <xref:System.Data.DataTable.ColumnChanging> Ereignis. Wenn ausgelöst, wird dieses Ereignis übergibt ein Ereignisargument (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), enthält den Wert, der für die aktuelle Spalte vorgeschlagen werden wird. Basierend auf den Inhalt der `e.ProposedValue`, können Sie:  
   
--   Den vorgeschlagenen Wert annehmen, indem Sie nichts tun.  
+- Den vorgeschlagenen Wert annehmen, indem Sie nichts tun.  
   
--   Den vorgeschlagenen Wert ablehnen, indem Sie den Spaltenfehler festlegen (<xref:System.Data.DataRow.SetColumnError%2A>) von in der Column-changing-Ereignishandler.  
+- Den vorgeschlagenen Wert ablehnen, indem Sie den Spaltenfehler festlegen (<xref:System.Data.DataRow.SetColumnError%2A>) von in der Column-changing-Ereignishandler.  
   
--   Optional können Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement verwenden, um dem Benutzer eine Fehlermeldung anzuzeigen. Weitere Informationen finden Sie unter [ErrorProvider-Komponente](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- Optional können Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement verwenden, um dem Benutzer eine Fehlermeldung anzuzeigen. Weitere Informationen finden Sie unter [ErrorProvider-Komponente](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
- Überprüfung kann auch ausgeführt werden, während die <xref:System.Data.DataTable.RowChanging> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Überprüfung kann auch ausgeführt werden, während die <xref:System.Data.DataTable.RowChanging> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten während Zeilenänderungen](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Validieren von Daten während zeilenänderungen  
  Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalten Daten enthalten, die den Anforderungen der Anwendung entsprechen. Klicken Sie dazu die Spalte an, wenn sie einen Fehler enthält, wenn ein vorgeschlagene Wert unzulässig ist. In den folgenden Beispielen wird ein Spaltenfehler festgelegt, wenn für die `Quantity`-Spalte ein Wert von 0 oder weniger gilt. Die Ereignishandler für Zeilenänderungen sollten den folgenden Beispielen entsprechen.  

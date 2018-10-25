@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918531"
 ---
 # <a name="address-dpi-issues"></a>DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "hochauflösende" Bildschirme geliefert werden. Diese Seiten müssen in der Regel mehr als 200 Pixel pro Zoll (Ppi). Inhalt hochskaliert werden, auf die Anforderungen zum Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät wird das Arbeiten mit einer Anwendung auf diesen Computern erforderlich. Seit 2014 ist die primäre Zielgruppe für anzeigen mit hoher Dichte mobiler Geräte (Tablets, Schalenkoffer Laptops und Smartphones) zu berechnen.  
   
  Windows 8.1 und höher enthält zahlreiche Funktionen, die diese Computer angezeigt und Umgebungen, in dem der Computer verbunden ist, sowohl mit hoher Dichte und Standard-Dichte angezeigt wird, zur gleichen Zeit, zu aktivieren.  
   
--   Windows kann es Ihnen ermöglichen, Inhalte werden skaliert und an das Gerät mithilfe der "Mach Text und andere Elemente vergrößert oder verkleinert" (verfügbar seit Windows XP) festlegen.  
+- Windows kann es Ihnen ermöglichen, Inhalte werden skaliert und an das Gerät mithilfe der "Mach Text und andere Elemente vergrößert oder verkleinert" (verfügbar seit Windows XP) festlegen.  
   
--   Windows 8.1 und höher werden automatisch für die meisten Anwendungen konsistent, wenn zwischen der Anzeige von unterschiedlichen Pixel dichten verschoben sein Inhalt skaliert. Wenn die primäre Anzeige hohe Dichte (200 % Skalierung ist), und die sekundären Anzeige ist standard Dichte (100 %), Windows wird automatisch Herunterskalieren der Fensterinhalt der Anwendung auf dem sekundären (1-Pixel angezeigt wird, für jede 4 Pixel gerendert wird, indem Sie die die Anwendung).  
+- Windows 8.1 und höher werden automatisch für die meisten Anwendungen konsistent, wenn zwischen der Anzeige von unterschiedlichen Pixel dichten verschoben sein Inhalt skaliert. Wenn die primäre Anzeige hohe Dichte (200 % Skalierung ist), und die sekundären Anzeige ist standard Dichte (100 %), Windows wird automatisch Herunterskalieren der Fensterinhalt der Anwendung auf dem sekundären (1-Pixel angezeigt wird, für jede 4 Pixel gerendert wird, indem Sie die die Anwendung).  
   
--   Windows wird standardmäßig auf der rechten Seite, die Skalierung für die Pixeldichte und Anzeigen von Entfernung für die Anzeige (Windows 7 und höher, OEM-konfigurierbar) verwendet werden.  
+- Windows wird standardmäßig auf der rechten Seite, die Skalierung für die Pixeldichte und Anzeigen von Entfernung für die Anzeige (Windows 7 und höher, OEM-konfigurierbar) verwendet werden.  
   
--   Windows kann automatisch Inhalt nach oben um 250 % auf neuen Geräten skalieren, die 280 Ppi (ab Windows 8.1 S14) überschreiten.  
+- Windows kann automatisch Inhalt nach oben um 250 % auf neuen Geräten skalieren, die 280 Ppi (ab Windows 8.1 S14) überschreiten.  
   
- Windows bietet eine Möglichkeit für den Umgang mit der Benutzeroberfläche Skalierung mehr Pixel Anzahl nutzen. Eine Anwendung verwendet dieses System durch Deklarieren selbst "System-DPI-fähige." Anwendungen, die keine vom System zentral hochskaliert werden. Dies kann zu einer "Fuzzyübereinstimmung" benutzerfreundlichkeit führen, in dem die gesamte Anwendung gleichmäßig auf die Pixels gestreckt wird. Zum Beispiel:  
+  Windows bietet eine Möglichkeit für den Umgang mit der Benutzeroberfläche Skalierung mehr Pixel Anzahl nutzen. Eine Anwendung verwendet dieses System durch Deklarieren selbst "System-DPI-fähige." Anwendungen, die keine vom System zentral hochskaliert werden. Dies kann zu einer "Fuzzyübereinstimmung" benutzerfreundlichkeit führen, in dem die gesamte Anwendung gleichmäßig auf die Pixels gestreckt wird. Zum Beispiel:  
   
- ![DPI-Probleme für Fuzzysuche](../extensibility/media/dpi-issues-fuzzy.png "DPI-Probleme für Fuzzygruppierung")  
+  ![DPI-Probleme für Fuzzysuche](../extensibility/media/dpi-issues-fuzzy.png "DPI-Probleme für Fuzzygruppierung")  
   
- Visual Studio, dass der DPI-Skalierung-fähige verwendet und daher nicht "virtualisiert."  
+  Visual Studio, dass der DPI-Skalierung-fähige verwendet und daher nicht "virtualisiert."  
   
- Windows (und Visual Studio) nutzen mehrere UI-Technologien, die unterschiedliche Methoden zum Umgang mit Skalierungsfaktoren, die vom System festgelegt haben. Zum Beispiel:  
+  Windows (und Visual Studio) nutzen mehrere UI-Technologien, die unterschiedliche Methoden zum Umgang mit Skalierungsfaktoren, die vom System festgelegt haben. Zum Beispiel:  
   
--   WPF misst die Steuerelemente so geräteunabhängige (Einheiten, nicht in Pixel). WPF-UI skaliert automatisch für den aktuellen DPI-Wert.  
+- WPF misst die Steuerelemente so geräteunabhängige (Einheiten, nicht in Pixel). WPF-UI skaliert automatisch für den aktuellen DPI-Wert.  
   
--   Alle Textgrößen unabhängig vom Benutzeroberflächen-Framework werden in Punkt ausgedrückt und daher vom System als DPI-unabhängige behandelt werden. Text in WPF, WinForms und Win32-bereits zentral hochskaliert werden ordnungsgemäß beim Zeichnen auf dem Anzeigegerät.  
+- Alle Textgrößen unabhängig vom Benutzeroberflächen-Framework werden in Punkt ausgedrückt und daher vom System als DPI-unabhängige behandelt werden. Text in WPF, WinForms und Win32-bereits zentral hochskaliert werden ordnungsgemäß beim Zeichnen auf dem Anzeigegerät.  
   
--   Win32/Windows Forms-Dialogfelder und Fenster haben für die Aktivierung von Layouts, das mit dem Text (z. B. über Raster, Flow und Tabelle LayoutPanel-Elemente) ändert. Vermeiden hart kodierte Pixelpositionen, die nicht skaliert werden, wenn die Schriftgrade Ihren Bedürfnissen entsprechend erhöht werden können.  
+- Win32/Windows Forms-Dialogfelder und Fenster haben für die Aktivierung von Layouts, das mit dem Text (z. B. über Raster, Flow und Tabelle LayoutPanel-Elemente) ändert. Vermeiden hart kodierte Pixelpositionen, die nicht skaliert werden, wenn die Schriftgrade Ihren Bedürfnissen entsprechend erhöht werden können.  
   
--   Symbole, die vom System bereitgestellten oder Ressourcen anhand von Systemmetriken (z. B. SM_CXICON zugeordnet und SM_CXSMICON zugeordnet) bereits zentral hochskaliert werden.  
+- Symbole, die vom System bereitgestellten oder Ressourcen anhand von Systemmetriken (z. B. SM_CXICON zugeordnet und SM_CXSMICON zugeordnet) bereits zentral hochskaliert werden.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Ältere Win32 (GDI, GDI +) und Windows Forms-basierte Benutzeroberfläche  
  Obwohl WPF bereits hohe DPI-bewusst ist, wurde ein großer Teil unserer Win32/GDI-basierten Codes nicht ursprünglich mit DPI-Unterstützung, denken Sie daran geschrieben. Windows verfügt über APIs DPI-Skalierung bereitgestellt. Korrekturen für Win32-Probleme sollten konstant innerhalb des Produkts verwenden. Visual Studio stellt eine Hilfsprogramm-Klassenbibliothek, um Funktionen dupliziert und Gewährleistung der Konsistenz in das Produkt zu vermeiden.  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Probleme mit dem Layout  
  Häufige Probleme mit dem Layout können in erster Linie durch die Punkte in der Benutzeroberfläche, skaliert und relativ zueinander zu bleiben und nicht mithilfe von absolute Positionen (insbesondere in Pixeleinheiten) vermieden werden. Zum Beispiel:  
   
--   Layout/Textpositionen müssen-Konto für den erweiterten Bildern anpassen.  
+- Layout/Textpositionen müssen-Konto für den erweiterten Bildern anpassen.  
   
--   Spalten im Raster müssen Breiten für den erweiterten Text angepasst haben.  
+- Spalten im Raster müssen Breiten für den erweiterten Text angepasst haben.  
   
--   Hartcodierte Größen oder Leerzeichen zwischen Elementen müssen auch hochskaliert werden. Größen, die nur für Text Dimensionen basieren sind in der Regel in Ordnung, da Schriftarten automatisch hochskaliert werden.  
+- Hartcodierte Größen oder Leerzeichen zwischen Elementen müssen auch hochskaliert werden. Größen, die nur für Text Dimensionen basieren sind in der Regel in Ordnung, da Schriftarten automatisch hochskaliert werden.  
   
- Hilfsfunktionen finden Sie in der <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> -Klasse ermöglicht die Skalierung auf der X- und Y-Achse:  
+  Hilfsfunktionen finden Sie in der <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> -Klasse ermöglicht die Skalierung auf der X- und Y-Achse:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (Funktionen ermöglichen die Skalierung auf X / Y-Achse)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (Funktionen ermöglichen die Skalierung auf X / Y-Achse)  
   
--   Int Speicherplatz = DpiHelper.LogicalToDeviceUnitsX (10);  
+- Int Speicherplatz = DpiHelper.LogicalToDeviceUnitsX (10);  
   
--   Int-Height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- Int-Height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- Es gibt Überladungen LogicalToDeviceUnits, um Objekte, z. B. Rect, Punkt und Größe Skalierung zu ermöglichen.  
+  Es gibt Überladungen LogicalToDeviceUnits, um Objekte, z. B. Rect, Punkt und Größe Skalierung zu ermöglichen.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Verwenden der DPIHelper Library/Klasse zum Skalieren von Bildern und layout  
  Die Visual Studio-DPI-Hilfsbibliothek steht in systemeigenen und verwalteten Formulare und außerhalb von Visual Studio Shell von anderen Anwendungen verwendet werden kann.  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Empfehlungen:  
   
--   Für Logo, Bild und Banner Grafik, die Standardeinstellung <xref:System.Windows.Media.BitmapScalingMode> Größenänderung Modus verwendet werden.  
+- Für Logo, Bild und Banner Grafik, die Standardeinstellung <xref:System.Windows.Media.BitmapScalingMode> Größenänderung Modus verwendet werden.  
   
--   Für Menüelemente und ikonographie-Images die <xref:System.Windows.Media.BitmapScalingMode> sollte verwendet werden, wenn es nicht zu anderen Artefakten Verzerrung zu darzustellen, Unschärfe (auf 200 % und 300 %) zu beseitigen führt.  
+- Für Menüelemente und ikonographie-Images die <xref:System.Windows.Media.BitmapScalingMode> sollte verwendet werden, wenn es nicht zu anderen Artefakten Verzerrung zu darzustellen, Unschärfe (auf 200 % und 300 %) zu beseitigen führt.  
   
--   Für große Zoom nicht ein Vielfaches von 100 % (z. B. 250 % oder % von 350) Zugriffsebenen, führt Skalieren von Bildern von ikonographie mit Bikubisch für Fuzzysuche, verwaschener Benutzeroberfläche. Ein besseres Ergebnis erhalten Sie durch die erste Skalieren des Bilds mit NearestNeighbor zum größten Vielfachen von 100 % (z. B. 200 % oder 300 %) aus, und Skalieren von Daten in eine bikubische von dort aus. Finden Sie unter Sonderfall: WPF-Images für große DPI prescaling Protokollebenen für Weitere Informationen.  
+- Für große Zoom nicht ein Vielfaches von 100 % (z. B. 250 % oder % von 350) Zugriffsebenen, führt Skalieren von Bildern von ikonographie mit Bikubisch für Fuzzysuche, verwaschener Benutzeroberfläche. Ein besseres Ergebnis erhalten Sie durch die erste Skalieren des Bilds mit NearestNeighbor zum größten Vielfachen von 100 % (z. B. 200 % oder 300 %) aus, und Skalieren von Daten in eine bikubische von dort aus. Finden Sie unter Sonderfall: WPF-Images für große DPI prescaling Protokollebenen für Weitere Informationen.  
   
- Die DpiHelper-Klasse im Namespace Microsoft.VisualStudio.PlatformUI bietet Mitglied <xref:System.Windows.Media.BitmapScalingMode> , die für die Bindung verwendet werden kann. Sie können die Visual Studio-Shell, die die Skalierung von Bitmaps im Modus für das Produkt gleichmäßig, abhängig von der DPI-Skalierungsfaktor steuern.  
+  Die DpiHelper-Klasse im Namespace Microsoft.VisualStudio.PlatformUI bietet Mitglied <xref:System.Windows.Media.BitmapScalingMode> , die für die Bindung verwendet werden kann. Sie können die Visual Studio-Shell, die die Skalierung von Bitmaps im Modus für das Produkt gleichmäßig, abhängig von der DPI-Skalierungsfaktor steuern.  
   
- Um es in XAML verwenden, fügen Sie Folgendes hinzu:  
+  Um es in XAML verwenden, fügen Sie Folgendes hinzu:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

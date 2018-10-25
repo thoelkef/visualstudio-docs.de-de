@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917647"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
  TableAdapters werden für Sie erstellt, wenn Sie eine der folgenden Aktionen ausführen:  
   
--   Führen Sie die [Assistenten zur Datenquellenkonfiguration](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) und wählen Sie entweder die **Datenbank** oder **Webdienst** Datenquellentyp.  
+- Führen Sie die [Assistenten zur Datenquellenkonfiguration](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) und wählen Sie entweder die **Datenbank** oder **Webdienst** Datenquellentyp.  
   
--   Ziehen Sie Datenbankobjekte aus [Server-Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) in die **Dataset-Designer**.  
+- Ziehen Sie Datenbankobjekte aus [Server-Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) in die **Dataset-Designer**.  
   
- Sie können einen neuen TableAdapter zu erstellen und konfigurieren Sie es mit einer Datenquelle, indem Sie einen TableAdapter aus der Toolbox ziehen, um einen leeren Bereich im der **Dataset-Designer** Oberfläche.  
+  Sie können einen neuen TableAdapter zu erstellen und konfigurieren Sie es mit einer Datenquelle, indem Sie einen TableAdapter aus der Toolbox ziehen, um einen leeren Bereich im der **Dataset-Designer** Oberfläche.  
   
- Eine Einführung in TableAdapters, finden Sie unter [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
+  Eine Einführung in TableAdapters, finden Sie unter [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Verwenden Sie den TableAdapter-Konfigurations-Assistenten  
  Führen Sie die **TableAdapter-Konfigurations-Assistenten** erstellen oder Bearbeiten von TableAdapters und deren zugeordnete Datentabellen. Sie können einen vorhandenen TableAdapter konfigurieren, indem Sie mit der rechten Maustaste auf die sie in der **Dataset-Designer**.  

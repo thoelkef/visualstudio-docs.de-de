@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Microsoft Docs
+title: METADATA_TYPE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1632198a0af5490e66a843458fc55bcad2d6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77e0a87f6b20093c1ddca1a9f132003f63afbaa1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900318"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
-Diese Struktur gibt Informationen zu Metadaten entnommen Feldtyp an.  
+Diese Struktur gibt Informationen über einen Feldtyp aus Metadaten erstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ public struct METADATA_TYPE {
   
 #### <a name="parameters"></a>Parameter  
  ulAppDomainID  
- Die ID der Anwendung, von der das Symbol stammt. Dient zur eindeutigen Identifizierung eine Instanz der Anwendung.  
+ Die ID der Anwendung, von der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.  
   
  guidModule  
  Die GUID des Moduls, das dieses Feld enthält.  
@@ -53,12 +53,12 @@ public struct METADATA_TYPE {
  tokClass  
  Die Metadaten token-ID dieses Typs.  
   
- [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
+ [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird als Teil der Union der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strukturieren, wenn die `dwKind` -Feld der der `TYPE_INFO` Struktur auf festgelegt ist `TYPE_KIND_METADATA` (ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) die Enumeration).  
+ Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Kontostruktur, wenn die `dwKind` Feld der `TYPE_INFO` Struktur nastaven NA hodnotu `TYPE_KIND_METADATA` (ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) die Enumeration).  
   
- Die `tokClass` Wert ist ein Metadatentoken, das einen Typ eindeutig identifiziert. Weitere Informationen zum Interpretieren der höherwertigen Bits der Metadaten-token-ID finden Sie unter der `CorTokenType` Aufzählung der in der Datei "corhdr.h" in der [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.  
+ Die `tokClass` Wert ist ein Metadatentoken, das einen Typ eindeutig identifiziert. Weitere Informationen zum Interpretieren der höherwertigen Bits, der die Metadaten-token-ID finden Sie unter den `CorTokenType` Enumeration in der Datei "corhdr.h" in der [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

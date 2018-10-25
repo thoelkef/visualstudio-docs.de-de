@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909730"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
 ### <a name="package-action"></a>Paketaktion  
  Die Eigenschaft **Paketaktion** gibt an, welche Aktionen Visual Studio für eine Datei durchführt, wenn ein Build ausgeführt wird. **Paketaktion** kann einen der folgenden Werte haben:  
   
--   **Keine**: Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.  
+- **Keine**: Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.  
   
--   **Inhalt**: Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.  
+- **Inhalt**: Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.  
   
--   **Manifest** – die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.  
+- **Manifest** – die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.  
   
--   **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.  
+- **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.  
   
- Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.  
+  Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.  
   
 ### <a name="file-name-property"></a>Eigenschaft „Dateiname“  
  Zeigt den Dateinamen als schreibgeschützten Wert an. Um die Datei umzubenennen,müssen Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Datei klicken, und **Umbenennen** auswählen.  

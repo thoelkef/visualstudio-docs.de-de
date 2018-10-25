@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbolsbyaddr:: Symbolbyrva | Microsoft Docs'
+title: 'Idiaenumsymbolsbyaddr:: Symbolbyrva | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdeaef2bc963eca894403bf90e1c9fb720efd4d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e746cf0b93f5a9c0944a80c6cbaabedfbb9cc23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895223"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Positioniert den Enumerator-Suche durch relative virtuelle Adresse (RVA).  
+Positioniert den Enumerator durch eine Suche durch relative virtuelle Adresse (RVA).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT symbolByRVA (
   
 #### <a name="parameters"></a>Parameter  
  relativeVirtualAddress  
- [in] Adresse relativ zum Anfang des Bilds.  
+ [in] Adresse relativ zum Anfang des Image.  
   
  ppsymbol  
  [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das Symbol gefunden darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn das Symbol nicht gefunden werden kann. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn das Symbol nicht gefunden werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

@@ -8,12 +8,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68379a05e77e30e5717c06c336592a90d35973fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866349"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberfläche-Kontexte sind nicht in Ordnung umfassendere, d. h. erweiterungsautoren auf keine andere Möglichkeit jedoch um eine verfügbare UI-Kontext zu übernehmen, die vor dem Zeitpunkt aktiviert sie wollten das VSPackage zu laden. Eine Liste der gut bekannte benutzerschnittstellenkontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -25,75 +25,75 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
   
  Regel-basierte Benutzeroberfläche-Kontext kann auf verschiedene Weise verwendet werden:  
   
-1.  Geben Sie die Sichtbarkeit von Einschränkungen für Befehle und Toolfenster. Sie können die Windows-Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.  
+1. Geben Sie die Sichtbarkeit von Einschränkungen für Befehle und Toolfenster. Sie können die Windows-Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.  
   
-2.  Als Auto serverlastbeschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist.  
+2. Als Auto serverlastbeschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist.  
   
-3.  Als Aufgabe verzögert: verzögert geladen werden, bis ein angegebenes Intervall ist verstrichen, und weiterhin die Regel erfüllt ist.  
+3. Als Aufgabe verzögert: verzögert geladen werden, bis ein angegebenes Intervall ist verstrichen, und weiterhin die Regel erfüllt ist.  
   
- Der Mechanismus kann von jedem Visual Studio-Erweiterung verwendet werden.  
+   Der Mechanismus kann von jedem Visual Studio-Erweiterung verwendet werden.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Erstellen Sie einen regelbasierten UI-Kontext  
  Angenommen, Sie haben eine Erweiterung TestPackage aufgerufen, das einem Menübefehl, bietet gilt nur für Dateien mit *config* Erweiterung. Vor Visual Studio 2015, wurde die beste Option zum Laden von TestPackage beim <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI-Kontext wurde aktiviert. Laden TestPackage auf diese Weise ist nicht effizient, da die geladene Projektmappe selbst möglicherweise keinen enthält eine *config* Datei. Diese Schritte zeigen, wie Regeln-basierte Benutzeroberfläche-Kontext kann verwendet werden, um einen UI-Kontext nur, wenn eine Datei mit der Aktivierung *config* Erweiterung aktiviert ist, und Laden Sie TestPackage, wenn diese UI-Kontext aktiviert ist.  
   
-1.  Definieren Sie eine neue UIContext-GUID und die VSPackage-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Definieren Sie eine neue UIContext-GUID und die VSPackage-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Beispielsweise nehmen wir an einer neuen UIContext "UIContextGuid" wird hinzugefügt werden. Die GUID erstellt (Sie können eine GUID erstellen, durch Klicken auf **Tools** > **GUID erstellen**) ist "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Anschließend fügen Sie die folgende Deklaration in der Paketklasse hinzu:  
+    Beispielsweise nehmen wir an einer neuen UIContext "UIContextGuid" wird hinzugefügt werden. Die GUID erstellt (Sie können eine GUID erstellen, durch Klicken auf **Tools** > **GUID erstellen**) ist "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Anschließend fügen Sie die folgende Deklaration in der Paketklasse hinzu:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Fügen Sie für die Attribute, die folgenden Werte: (Details zu diesen Attributen werden weiter unten erläutert)  
+    Fügen Sie für die Attribute, die folgenden Werte: (Details zu diesen Attributen werden weiter unten erläutert)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Diese Metadaten definieren, die neue UIContext-GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) und einen Ausdruck verweisen auf einen einzelnen Begriff "DotConfig". Der Begriff "DotConfig" auf "true" ausgewertet wird, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen verfügt, das Muster des regulären Ausdrucks entspricht "\\config$" (endet mit *config*). Der Wert (Standard) definiert einen optionalen Namen für die Regel, die beim Debuggen nützlich.  
+    Diese Metadaten definieren, die neue UIContext-GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) und einen Ausdruck verweisen auf einen einzelnen Begriff "DotConfig". Der Begriff "DotConfig" auf "true" ausgewertet wird, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen verfügt, das Muster des regulären Ausdrucks entspricht "\\config$" (endet mit *config*). Der Wert (Standard) definiert einen optionalen Namen für die Regel, die beim Debuggen nützlich.  
   
-     Die Werte des Attributs werden generiert, bei der Erstellung danach Pkgdef hinzugefügt.  
+    Die Werte des Attributs werden generiert, bei der Erstellung danach Pkgdef hinzugefügt.  
   
-2.  Fügen Sie in der VSCT-Datei für die TestPackage Befehle auf den entsprechenden Befehlen das Flag "DynamicVisibility" hinzu:  
+2. Fügen Sie in der VSCT-Datei für die TestPackage Befehle auf den entsprechenden Befehlen das Flag "DynamicVisibility" hinzu:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  Klicken Sie im Abschnitt Sichtbarkeiten des der VSCT verknüpfen Sie die entsprechenden Befehle, um die neue UIContext-GUID in #1 definiert:  
+3. Klicken Sie im Abschnitt Sichtbarkeiten des der VSCT verknüpfen Sie die entsprechenden Befehle, um die neue UIContext-GUID in #1 definiert:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:  
+4. Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Jetzt die Kontextmenübefehle  *\*config* Dateien werden sichtbare nur, wenn das ausgewählte Element im Projektmappen-Explorer ist ein *config* -Datei und das Paket werden nicht werden geladen, bis eine solche Befehle ausgewählt ist.  
+    Jetzt die Kontextmenübefehle  *\*config* Dateien werden sichtbare nur, wenn das ausgewählte Element im Projektmappen-Explorer ist ein *config* -Datei und das Paket werden nicht werden geladen, bis eine solche Befehle ausgewählt ist.  
   
- Als Nächstes verwenden Sie einen Debugger, um sicherzustellen, dass das Paket lädt nur wenn Sie es erwarten. So debuggen Sie TestPackage:  
+   Als Nächstes verwenden Sie einen Debugger, um sicherzustellen, dass das Paket lädt nur wenn Sie es erwarten. So debuggen Sie TestPackage:  
   
-1.  Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+5. Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
-2.  Erstellen Sie die TestPackage, und starten Sie das Debuggen.  
+6. Erstellen Sie die TestPackage, und starten Sie das Debuggen.  
   
-3.  Erstellen Sie ein Projekt oder öffnen Sie eine.  
+7. Erstellen Sie ein Projekt oder öffnen Sie eine.  
   
-4.  Wählen Sie alle Dateien mit der Erweiterung außer *config*. Der Haltepunkt sollte nicht erreicht werden.  
+8. Wählen Sie alle Dateien mit der Erweiterung außer *config*. Der Haltepunkt sollte nicht erreicht werden.  
   
-5.  Wählen Sie die *"App.config"* Datei.  
+9. Wählen Sie die *"App.config"* Datei.  
   
- Die TestPackage lädt und die Ausführung am Haltepunkt beendet.  
+   Die TestPackage lädt und die Ausführung am Haltepunkt beendet.  
   
 ## <a name="add-more-rules-for-ui-context"></a>Fügen Sie weitere Regeln für die UI-Kontext  
  Da die UI-Kontext Regeln boolesche Ausdrücke sind, können Sie restriktivere Regeln für einen UI-Kontext hinzufügen. In den oben genannten UI-Kontext, können Sie beispielsweise angeben, dass die Regel gilt nur, wenn eine Projektmappe mit einem Projekt geladen wird. Auf diese Weise können die Befehle wird nicht angezeigt, wenn Sie öffnen ein *config* Datei als eigenständige Datei und nicht als Teil eines Projekts.  

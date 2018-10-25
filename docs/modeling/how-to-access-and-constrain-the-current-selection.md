@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d8fb0a2e5d218b76e972fc97a53afcd2f8ef3e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892921"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
 
-Wenn Sie einen Menübefehl oder Gestenhandler-Handler für Ihre einer domänenspezifischen Sprache schreiben, können Sie bestimmen, welches Element der Benutzer geklickt wird. Sie können auch einige Formen oder Felder verhindern ausgewählt werden. Sie können z. B. anordnen, dass klickt der Benutzer auf ein Symbol Decorator-Element, das Shape, das sie enthält stattdessen ausgewählt ist. Beschränken die Auswahl auf diese Weise reduziert die Anzahl der Handler, die Sie schreiben müssen. Dies erleichtert auch für die Benutzer an einer beliebigen Stelle in der Form klicken kann, ohne die Decorator-Element zu vermeiden.
+Wenn Sie einen Menübefehl oder Gestenhandler-Handler für die domänenspezifische Sprache schreiben, können Sie bestimmen, welches Element der Benutzer mit der rechten Maustaste. Sie können auch einige Formen oder Felder verhindern ausgewählt werden. Sie können z. B. anordnen, dass klickt der Benutzer ein Symbol für Decorator-Element, Form, die es enthält stattdessen ausgewählt ist. Die Auswahl auf diese Weise einschränken, reduziert die Anzahl von Handlern, die Sie schreiben müssen. Es erleichtert auch für den Benutzer, die an einer beliebigen Stelle in der Form klicken kann, ohne das Decorator-Element zu vermeiden.
 
-## <a name="access-the-current-selection-from-a-command-handler"></a>Zugriff auf die aktuelle Auswahl aus Befehlshandler
+## <a name="access-the-current-selection-from-a-command-handler"></a>Zugriff auf die aktuelle Auswahl aus einem Befehlshandler
 
-Der Befehl Set-Klasse für eine domänenspezifische Sprache enthält die Befehlshandler für Ihre benutzerdefinierte Befehle. Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse, von dem Befehl Set-Klasse für eine domänenspezifische Sprache abgeleitet ist, stellt einige Member, für den Zugriff auf die aktuelle Auswahl.
+Befehl Set-Klasse für eine domänenspezifische Sprache enthält, die Befehlshandler für Ihre benutzerdefinierten Befehle. Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> -Klasse, von dem Befehl Set-Klasse für eine domänenspezifische Sprache abgeleitet wird, stellt einige Member, für den Zugriff auf die aktuelle Auswahl.
 
-Je nach den Befehl möglicherweise Befehlshandler die Auswahl im Modell-Designer, Modell-Explorer oder des aktiven Fensters.
+Je nach den Befehl ein möglicherweise der Befehlshandler die Auswahl im Modell-Designer, Modell-Explorer oder des aktiven Fensters.
 
 ### <a name="to-access-selection-information"></a>Zugriff auf Auswahlinformationen
 
-1.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse definiert die folgenden Elemente, die auf die aktuelle Auswahl verwendet werden können.
+1.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> -Klasse definiert die folgenden Elemente, die auf die aktuelle Auswahl verwendet werden können.
 
     |Member|Beschreibung|
-    |------------|-----------------|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>-Methode|Gibt `true` ist eines der Elemente im Modell-Designer ausgewählte Depot-Form; anderenfalls `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>-Methode|Gibt `true` ist das Diagramm im Modell-Designer ausgewählt ist, andernfalls `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>-Methode|Gibt `true` ist genau ein Element im Modell-Designer ausgewählt ist, andernfalls `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>-Methode|Gibt `true` ist genau ein Element im aktiven Fenster ausgewählt ist, andernfalls `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>-Eigenschaft|Ruft eine schreibgeschützte Auflistung der Elemente im Modell-Designer ausgewählt.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>-Eigenschaft|Ruft eine schreibgeschützte Auflistung der Elemente im aktiven Fenster ausgewählt.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>-Eigenschaft|Ruft das primäre Element der Auswahl im Modell-Designer ab.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>-Eigenschaft|Ruft das primäre Element der Auswahl im aktiven Fenster ab.|
+    |-|-|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>-Methode|Gibt `true` Wenn einer der ausgewählten Elemente in den Modell-Designer eine Depot-Form; anderenfalls `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>-Methode|Gibt `true` ist das Diagramm im Modell-Designer; andernfalls `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>-Methode|Gibt `true` ist genau ein Element im Modell-Designer; andernfalls `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>-Methode|Gibt `true` ist genau ein Element im aktiven Fenster; andernfalls `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> -Eigenschaft|Ruft eine schreibgeschützte Auflistung der im Modell-Designer ausgewählten Elemente ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> -Eigenschaft|Ruft eine schreibgeschützte Auflistung der ausgewählten Elemente in das aktive Fenster ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> -Eigenschaft|Ruft das primäre Element der Auswahl im Modell-Designer ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> -Eigenschaft|Ruft das primäre Element der Auswahl in das aktive Fenster ab.|
 
-2.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Eigenschaft von der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse ermöglicht den Zugriff auf die <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> -Objekt, das Modell-Designer-Fenster darstellt, und bietet zusätzliche Zugriff die ausgewählten Elemente im Modell-Designer.
+2.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse ermöglicht den Zugriff auf die <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> Objekt, das das Modell-Designer-Fenster, und bietet zusätzlichen Zugriff die ausgewählten Elemente im Modell-Designer.
 
-3.  Darüber hinaus der generierte Code definiert eine Explorer-Tool-Fenster-Eigenschaft und eine auswahleigenschaft Explorer in den Befehl set-Klasse für die domänenspezifischen Sprache.
+3.  Darüber hinaus der generierte Code definiert eine Explorer-Tool-Fenster-Eigenschaft und eine Explorer-Auswahl-Eigenschaft im Befehl set-Klasse für die domänenspezifischen Sprache.
 
-    -   Die Explorer-Tool-Fenster-Eigenschaft gibt eine Instanz der Fensterklasse Explorer-Tool für die domänenspezifischen Sprache. Die Explorer-Tool-Fensterklasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> -Klasse und der Modell-Explorer für die domänenspezifischen Sprache darstellt.
+    -   Die Explorer-Tool Window-Eigenschaft gibt eine Instanz der Explorer-Tool Window-Klasse für die domänenspezifischen Sprache zurück. Explorer-Tool Window-Klasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> Klasse und den Modell-Explorer für die domänenspezifischen Sprache darstellt.
 
-    -   Die `ExplorerSelection` Eigenschaft gibt das ausgewählte Element im Modell-Explorer-Fenster für die domänenspezifischen Sprache.
+    -   Die `ExplorerSelection` Eigenschaft gibt das ausgewählte Element im Modell-Explorer-Fenster für die domänenspezifischen Sprache zurück.
 
 ## <a name="determine-which-window-is-active"></a>Bestimmen Sie, welches Fenster aktiv ist.
 
-Die <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Schnittstelle enthält definiert Member, die Zugriff auf den aktuellen Status der Auswahl in der Shell zu ermöglichen. Sie erhalten ein <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Objekt aus der Paketklasse oder den Befehl Set-Klasse für die domänenspezifischen Sprache über die `MonitorSelection` in der Basisklasse der einzelnen definierte Eigenschaft. Paketklasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> Klasse und den Befehl Set-Klasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse.
+Die <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> enthält Schnittstelle definiert Member, die Zugriff auf den aktuellen Auswahlzustand in der Shell ermöglichen. Erhalten Sie eine <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Objekt von der Paketklasse oder der festgelegten Klasse des Befehls für die domänenspezifischen Sprache über die `MonitorSelection` -Eigenschaft in der Basisklasse aller definiert. Die Paketklasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> Klasse und den Befehl Set-Klasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse.
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Um von einem Befehlshandler zu bestimmen, ist welche Art von Fenster aktiv
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Um aus einem Befehlshandler zu bestimmen, welche Art von Fenster aktiv ist
 
-1.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Eigenschaft von der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> -Klasse zurückgegeben wird ein <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Objekt, das Zugriff auf den aktuellen Status der Auswahl in der Shell bereitstellt.
+1.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> -Klasse zurückgegeben wird ein <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Objekt, das Zugriff auf den aktuellen Auswahlzustand in der Shell bereitstellt.
 
-2.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Eigenschaft von der <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Schnittstelle ruft die aktive Auswahl-Container aus dem aktiven Fenster unterschiedlich sein kann.
+2.  Die <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Schnittstelle ruft aktive Auswahl Containers, in dem aus dem aktiven Fenster unterschiedlich sein kann.
 
-3.  Fügen Sie die folgenden Eigenschaften auf den Befehl "Class" für Sie festgelegt domänenspezifische Sprache, um zu bestimmen, welche Art von Fenster aktiv ist.
+3.  Fügen Sie, dass die folgenden Eigenschaften an den Befehl Klasse für Sie festgelegt einer domänenspezifischen Sprache, um zu bestimmen, welche Art von Fenster aktiv ist.
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -89,29 +89,29 @@ Die <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Schnit
     }
     ```
 
-## <a name="constrain-the-selection"></a>Beschränken Sie die Auswahl
+## <a name="constrain-the-selection"></a>Einschränken der Auswahl
 
 Durch Auswahlregeln hinzufügen, können Sie steuern, welche Elemente ausgewählt sind, wenn der Benutzer ein Element im Modell auswählt. Damit wird den Benutzer, eine Anzahl von Elementen als einzelne Einheit behandelt werden sollen, können Sie z. B. eine Auswahlregel verwenden.
 
 ### <a name="to-create-a-selection-rule"></a>Zum Erstellen einer Auswahlregel
 
-1.  Erstellen Sie eine benutzerdefinierte Codedatei im Projekt DSL
+1.  Erstellen einer benutzerdefinierten Codedatei im DSL-Projekt
 
-2.  Definieren Sie eine Auswahl Regel-Klasse, die abgeleitet ist die <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> Klasse.
+2.  Definieren Sie eine Auswahl Regel abgeleitete Klasse, aus der <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> Klasse.
 
-3.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> -Methode der Klasse Regel Auswahl anzuwendende die Auswahlkriterien festzulegen.
+3.  Überschreiben der <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> -Methode der Klasse Regel Auswahl die Auswahlkriterien anwenden.
 
-4.  Der benutzerdefinierte Codedatei eine partielle Klassendefinition für die ClassDiagram-Klasse hinzufügen.
+4.  Fügen Sie eine partielle Klassendefinition für die ClassDiagram-Klasse in die benutzerdefinierte Codedatei hinzu.
 
-     Die `ClassDiagram` Klasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> -Klasse und in der generierten Codedatei Diagram.cs, in der DSL-Projekt definiert ist.
+     Die `ClassDiagram` Klasse leitet sich von der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> Klasse, und klicken Sie in der generierten Codedatei Diagram.cs, im DSL-Projekt definiert ist.
 
-5.  Überschreiben der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> Eigenschaft von der `ClassDiagram` Klasse, um die Regel für die benutzerdefinierte Auswahl zurück.
+5.  Überschreiben der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> Eigenschaft der `ClassDiagram` Klasse, um die Regel für die benutzerdefinierte Auswahl zurück.
 
-     Die standardmäßige Implementierung des der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> Eigenschaft ruft eine Auswahl Rule-Objekt, das die Auswahl nicht ändert.
+     Die standardmäßige Implementierung der <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> -Eigenschaft ruft ein Auswahlobjekt für die Regel, die nicht über die Auswahl ändert.
 
 ### <a name="example"></a>Beispiel
 
-Die folgende Codedatei erstellt eine Auswahlregel, die erweitert die Auswahl, um alle Instanzen der einzelnen Domäne Formen, die ursprünglich ausgewählt wurde.
+Die folgende Codedatei erstellt eine Auswahlregel, die erweitert die Auswahl enthält alle Instanzen der einzelnen Domäne Formen, die ursprünglich ausgewählt wurde.
 
 ```csharp
 using System;

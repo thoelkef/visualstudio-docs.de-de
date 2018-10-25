@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898719"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -30,29 +30,30 @@ In der domänenspezifische Sprachtools (DSL-Tools), den Anzeigenamen, die Eigens
 
 In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die einen Namespace, die Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells verfügt. Weitere Informationen zu überwachen – Eigenschaften, finden Sie unter [nachverfolgung Eigenschaften](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Die DSL-Tools unterstützen, Nachverfolgen von Eigenschaftendeskriptoren. Allerdings kann nicht der DSL-Designer verwendet werden, zum Hinzufügen einer Nachverfolgungseigenschaft zu einer Sprache. Aus diesem Grund müssen Sie benutzerdefinierten Code zum Definieren und implementieren Sie die änderungsverfolgungseigenschaft hinzufügen.
+- Die DSL-Tools unterstützen, Nachverfolgen von Eigenschaftendeskriptoren. Allerdings kann nicht der DSL-Designer verwendet werden, zum Hinzufügen einer Nachverfolgungseigenschaft zu einer Sprache. Aus diesem Grund müssen Sie benutzerdefinierten Code zum Definieren und implementieren Sie die änderungsverfolgungseigenschaft hinzufügen.
 
- Eine Nachverfolgungseigenschaft verfügt über zwei Zustände: nachzuverfolgen und vom Benutzer aktualisiert. Eigenschaften der nachrichtenüberwachung weisen die folgenden Funktionen:
+  Eine Nachverfolgungseigenschaft verfügt über zwei Zustände: nachzuverfolgen und vom Benutzer aktualisiert. Eigenschaften der nachrichtenüberwachung weisen die folgenden Funktionen:
 
--   Klicken Sie in den Status der änderungsnachverfolgung, der Wert der Nachverfolgungseigenschaft wird berechnet, und der Wert wird aktualisiert, wie andere Eigenschaften in das Modell ändern.
+- Klicken Sie in den Status der änderungsnachverfolgung, der Wert der Nachverfolgungseigenschaft wird berechnet, und der Wert wird aktualisiert, wie andere Eigenschaften in das Modell ändern.
 
--   Wenn in der aktualisierten von Benutzerstatus, behält der Wert der Nachverfolgungseigenschaft den Wert, der auf den der Benutzer zuletzt die Eigenschaft festgelegt.
+- Wenn in der aktualisierten von Benutzerstatus, behält der Wert der Nachverfolgungseigenschaft den Wert, der auf den der Benutzer zuletzt die Eigenschaft festgelegt.
 
--   In der **Eigenschaften** Fenster die **zurücksetzen** Befehl für die änderungsverfolgungseigenschaft nur aktiviert werden, ist wenn die Eigenschaft in der aktualisierten von Benutzerzustand. Die **zurücksetzen** Befehl wird die änderungsverfolgungseigenschaft Status nachverfolgen.
+- In der **Eigenschaften** Fenster die **zurücksetzen** Befehl für die änderungsverfolgungseigenschaft nur aktiviert werden, ist wenn die Eigenschaft in der aktualisierten von Benutzerzustand. Die **zurücksetzen** Befehl wird die änderungsverfolgungseigenschaft Status nachverfolgen.
 
--   In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in den Zustand "Überwachung" der Wert ist, wird in ein normaler Schrift angezeigt.
+- In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in den Zustand "Überwachung" der Wert ist, wird in ein normaler Schrift angezeigt.
 
--   In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in der aktualisierten ist ihr Wert durch den Benutzerstatus in fett formatierter Schrift angezeigt wird.
+- In der **Eigenschaften** Fenster, wenn die Nachverfolgungseigenschaft in der aktualisierten ist ihr Wert durch den Benutzerstatus in fett formatierter Schrift angezeigt wird.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie zunächst diese Komponenten installieren:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
@@ -718,33 +719,33 @@ Fügen Sie Code, um das benutzerdefinierte Verhalten der nach dem Laden für XML
 
 Der nächste Schritt besteht darin erstellen und führen die DSL-Designer in eine neue Instanz der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , damit Sie überprüfen können, dass die Eigenschaft für die Überwachung ordnungsgemäß funktioniert.
 
-1.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
+1. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
 
-2.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
+2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
-     Das experimentelle Build von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] öffnet die **Debuggen** Lösung, die eine leere Testdatei enthält.
+    Das experimentelle Build von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] öffnet die **Debuggen** Lösung, die eine leere Testdatei enthält.
 
-3.  In **Projektmappen-Explorer**, doppelklicken Sie auf die Test.trackingPropertyDsl-Datei, um es im Designer zu öffnen, und klicken Sie dann auf die Entwurfsoberfläche.
+3. In **Projektmappen-Explorer**, doppelklicken Sie auf die Test.trackingPropertyDsl-Datei, um es im Designer zu öffnen, und klicken Sie dann auf die Entwurfsoberfläche.
 
-     Beachten Sie, dass in der **Eigenschaften** Fenster für das Diagramm, das **Default Namespace** -Eigenschaft ist **DefaultNamespace-Eigenschaft**, und die **benutzerdefinierte Elemente** Eigenschaft **0/0**.
+    Beachten Sie, dass in der **Eigenschaften** Fenster für das Diagramm, das **Default Namespace** -Eigenschaft ist **DefaultNamespace-Eigenschaft**, und die **benutzerdefinierte Elemente** Eigenschaft **0/0**.
 
-4.  Ziehen Sie ein **ExampleElement** Element aus der **Toolbox** auf die Diagrammoberfläche.
+4. Ziehen Sie ein **ExampleElement** Element aus der **Toolbox** auf die Diagrammoberfläche.
 
-5.  In der **Eigenschaften** Fenster für das Element, wählen die **-Element-Namespace** -Eigenschaft, und ändern Sie den Wert **DefaultNamespace** zu  **OtherNamespace**.
+5. In der **Eigenschaften** Fenster für das Element, wählen die **-Element-Namespace** -Eigenschaft, und ändern Sie den Wert **DefaultNamespace** zu  **OtherNamespace**.
 
-     Beachten Sie, dass der Wert des **-Element-Namespace** ist jetzt in Fettschrift angezeigt.
+    Beachten Sie, dass der Wert des **-Element-Namespace** ist jetzt in Fettschrift angezeigt.
 
-6.  In der **Eigenschaften** Fenster mit der rechten Maustaste **-Element-Namespace**, und klicken Sie dann auf **zurücksetzen**.
+6. In der **Eigenschaften** Fenster mit der rechten Maustaste **-Element-Namespace**, und klicken Sie dann auf **zurücksetzen**.
 
-     Der Wert der Eigenschaft geändert wird, um **DefaultNamespace**, und der Wert in ein normaler Schrift angezeigt.
+    Der Wert der Eigenschaft geändert wird, um **DefaultNamespace**, und der Wert in ein normaler Schrift angezeigt.
 
-     Mit der rechten Maustaste **-Element-Namespace** erneut aus. Die **zurücksetzen** Befehl ist jetzt deaktiviert, da die Eigenschaft derzeit in der Status der änderungsnachverfolgung.
+    Mit der rechten Maustaste **-Element-Namespace** erneut aus. Die **zurücksetzen** Befehl ist jetzt deaktiviert, da die Eigenschaft derzeit in der Status der änderungsnachverfolgung.
 
-7.  Ziehen Sie ein weiteres **ExampleElement** aus der **Toolbox** auf die Diagrammoberfläche, und ändern Sie seine **-Element-Namespace** zu **OtherNamespace**.
+7. Ziehen Sie ein weiteres **ExampleElement** aus der **Toolbox** auf die Diagrammoberfläche, und ändern Sie seine **-Element-Namespace** zu **OtherNamespace**.
 
-8.  Klicken Sie auf der Entwurfsoberfläche angezeigt.
+8. Klicken Sie auf der Entwurfsoberfläche angezeigt.
 
-     In der **Eigenschaften** Fenster für das Diagramm, das den Wert der **benutzerdefinierte Elemente** ist jetzt **1/2**.
+    In der **Eigenschaften** Fenster für das Diagramm, das den Wert der **benutzerdefinierte Elemente** ist jetzt **1/2**.
 
 9. Änderung **Default Namespace** für das Diagramm aus **DefaultNamespace** zu **NewNamespace**.
 

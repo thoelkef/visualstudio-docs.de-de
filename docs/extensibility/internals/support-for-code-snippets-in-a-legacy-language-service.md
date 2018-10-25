@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst | Microsoft Docs
+title: Unterstützung für Codeausschnitte in einem Legacysprachdienst | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb62481b9ba2c42ed067275480ba137b151a483b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858107"
 ---
-# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst
-Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst finden Sie eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und kann haben unterschiedliche Werte je nach Zusammenhang, in der der Codeausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst den Ausschnitt formatieren.  
+# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
+Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst ist eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und haben unterschiedliche Werte je nach Kontext, in dem der Ausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst im Codeausschnitt formatieren.  
   
- Der Codeausschnitt wird in einer speziellen Bearbeitungsmodus eingefügt, die die Felder des Ausschnitts, um mit der TAB-Taste navigiert werden können. Die Felder können IntelliSense-Stil Dropdown-Menüs unterstützen. Der Benutzer führt einen Commit für den Ausschnitt an der Quelldatei Geben Sie die EINGABETASTE oder ESC-Taste. Weitere Informationen zu Codeausschnitten finden Sie unter [Codeausschnitte](../../ide/code-snippets.md).  
+ Der Codeausschnitt wird in einer speziellen Bearbeitungsmodus eingefügt, die die Felder des Ausschnitts, um mit der TAB-Taste navigiert werden können. Die Felder können IntelliSense-Stil Dropdown-Menüs unterstützt werden. Der Benutzer führt einen Commit für den Codeausschnitt zur Quelldatei Geben Sie entweder die EINGABETASTE oder die ESC-Taste. Weitere Informationen zu Codeausschnitten finden Sie unter [Codeausschnitte](../../ide/code-snippets.md).  
   
- Dienste für Legacy-Sprachen werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Dienstfunktionen Sprache ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie beginnen, den neuen Editor API so bald wie möglich verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+>  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework-Unterstützung für Codeausschnitte  
- Des managed Package Framework (MPF) unterstützt die meisten Funktionen für den Ausschnitt, lesen Sie die Vorlage, die den Ausschnitt eingefügt, und aktivieren die speziellen Bearbeitungsmodus. Unterstützung erfolgt über die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse.  
+ Das managed Package Framework (MPF) unterstützt die meisten Funktionen für den Codeausschnitt, lesen Sie die Vorlage, die den Ausschnitt eingefügt, und aktivieren die spezielle Bearbeitungsmodus. Support wird über verwaltet die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse.  
   
- Wenn der <xref:Microsoft.VisualStudio.Package.Source> Klasse instanziiert wird, der <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse aufgerufen, um erhalten eine <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt (Beachten Sie, dass die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse gibt immer eine neue <xref:Microsoft.VisualStudio.Package.ExpansionProvider> -Objekt für jedes <xref:Microsoft.VisualStudio.Package.Source> -Objekt).  
+ Wenn der <xref:Microsoft.VisualStudio.Package.Source> Klasse instanziiert wird, die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> -Methode in der der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse aufgerufen, um erhalten ein <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt (Beachten Sie, dass die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse gibt immer eine neue <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt für jede <xref:Microsoft.VisualStudio.Package.Source> -Objekt).  
   
- Das MPF unterstützt Erweiterung Funktionen nicht. Eine Erweiterungsfunktion handelt es sich um eine benannte Funktion, die in einem Ausschnittvorlage eingebettet ist, und gibt einen oder mehrere Werte in einem Feld platziert werden soll. Die Werte werden von der Sprache zurückgegeben-Diensts über einen <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Objekt. Die <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Objekt muss von der Sprachdienst zur Unterstützung der Erweiterung Funktionen implementiert werden.  
+ Das MPF unterstützt Erweiterungsfunktionen nicht. Eine Erweiterungsfunktion ist eine benannte Funktion, die in einem Ausschnittvorlage eingebettet ist, und gibt einen oder mehrere Werte in einem Feld platziert werden. Die Werte werden zurückgegeben, von der Sprache selbst über eine <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Objekt. Die <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Objekt muss vom Sprachdienst zur Unterstützung von Erweiterungsfunktionen implementiert werden.  
   
 ## <a name="providing-support-for-code-snippets"></a>Bereitstellen von Unterstützung für Codeausschnitte  
- Um Unterstützung für Codeausschnitte zu aktivieren, müssen von Ihnen bereitgestellte oder installieren Sie die Ausschnitte, und Sie müssen die notwendigen Mittel zum Benutzer diese Ausschnitte Einfügen bereitstellen. Es gibt drei Schritte zur Aktivierung von Unterstützung für Codeausschnitte:  
+ Um Unterstützung für Codeausschnitte aktivieren, müssen Sie bereitstellen oder installieren Sie die Codeausschnitte, und Sie müssen angeben, das bedeutet, dass der Benutzer diese Ausschnitte einfügen. Es gibt drei Schritte zum Aktivieren der Unterstützung für Codeausschnitte aus:  
   
-1.  Installieren die Snippet-Dateien.  
+1.  Installieren die codeausschnittsdateien an.  
   
-2.  Aktivieren Codeausschnitte für Ihren Sprachdienst.  
+2.  Aktivieren Codeausschnitte für den Sprachdienst.  
   
 3.  Aufrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt.  
   
-### <a name="installing-the-snippet-files"></a>Installieren die Snippet-Dateien  
- Alle Codeausschnitte für eine Sprache werden in der Regel eine Ausschnittvorlage pro Datei als Vorlagen in XML-Dateien gespeichert. Ausführliche Informationen zu den XML-Schema für Code Snippet Vorlagen verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../../ide/code-snippets-schema-reference.md). Jede Ausschnittvorlage wird mit einer Sprachen-ID identifiziert. Diese Sprache-ID in der Registrierung angegeben ist und abgelegt wird die `Language` Attribut des der \<Code > Tag in der Vorlage.  
+### <a name="installing-the-snippet-files"></a>Installieren die Codeausschnittsdateien  
+ Alle Codeausschnitte für eine Sprache werden als Vorlagen im XML-Dateien, in der Regel eine Ausschnittvorlage pro Datei gespeichert. Ausführliche Informationen zu den XML-Schema für Codeausschnittvorlagen verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../../ide/code-snippets-schema-reference.md). Jede Vorlage Codeausschnitt wird mit einer Sprachen-ID identifiziert. Diese Sprache-ID in der Registrierung angegeben ist und in den versetzt wird die `Language` Attribut der \<Code > Tag in der Vorlage.  
   
- Es gibt in der Regel zwei Orte, auf die Snippet-Vorlagendateien gespeichert sind: (1), in denen Ihre Sprache installiert wurde, und (2) in den Ordner des Benutzers. Diese Speicherorte werden zur Registrierung hinzugefügt daher, Visual Studio **Codeausschnitt-Manager** Ausschnitte finden. Der Ordner des Benutzers ist, wo die Ausschnitte, die vom Benutzer erstellten gespeichert werden.  
+ Es gibt in der Regel zwei Orte, die, in dem Codeausschnitt-Vorlagendateien gespeichert sind: 1), in denen Ihre Sprache installiert wurde, und (2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.  
   
- Das typische Ordner Layout für die Vorlagendateien installierten Ausschnitt sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
+ Typische ordnerlayouts für die installierte Vorlage codeausschnittsdateien sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
- *[InstallRoot]*  ist der Ordner, die in Ihrer Sprache installiert ist.  
+ *[InstallRoot]*  ist der Ordner, in die Sprache installiert ist.  
   
  *[TestLanguage]*  ist der Name der Sprache als einen Ordnernamen ein.  
   
- *[LCID]*  die Gebietsschema-ID. Hierbei handelt es sich um Ausschnitte wie lokalisierte Versionen gespeichert werden. Z. B. die Gebietsschema-ID für Englisch gleich 1033 ist, also *[LCID]* durch 1033 ersetzt wird.  
+ *[LCID]*  ist die Gebietsschema-ID. Dies ist wie lokalisierte Versionen Ausschnitte werden gespeichert. Die Gebietsschema-ID für Englisch ist beispielsweise 1033, also *[LCID]* durch 1033 ersetzt wird.  
   
- Eine weitere Datei muss angegeben werden, und eine Indexdatei, die in der Regel aufgerufen SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen Endziffern XML verwenden). Diese Datei befindet sich in der Regel in der *[InstallRoot]*\\ *[TestLanguage]* Ordner und gibt den genauen Speicherort der Ausschnitte Ordner als auch die Sprach-ID und die GUID der Sprache Dienst, der die Ausschnitte verwendet. Der genaue Pfad, der die Indexdatei ist in der Registrierung belasten, da weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei ein:  
+ Eine zusätzliche Datei muss angegeben werden, und eine Indexdatei, die in der Regel als SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen mit der Endung XML verwenden) bezeichnet wird. Diese Datei befindet sich in der Regel in der *[InstallRoot]*\\ *[TestLanguage]* Ordner und gibt den genauen Speicherort der Codeausschnittordner als auch die Sprach-ID und GUID der Sprache Dienst, der die Codeausschnitte verwendet. Der genaue Pfad der Indexdatei wird in der Registrierung eingefügt, wie weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -78,24 +78,24 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
 </SnippetCollection>  
 ```  
   
- Die \<Sprache >-Tag gibt die Sprach-ID (die `Lang` Attribut) und die GUID des Sprachdiensts.  
+ Die \<Sprache >-Tag gibt die Sprach-ID (die `Lang` Attribut) und der Sprachdienst-GUID.  
   
- In diesem Beispiel wird davon ausgegangen, dass Sie Ihre Sprachdienst in Visual Studio-Installationsordner installiert haben. Der % LCID % wird durch das aktuelle Gebietsschema-ID des Benutzers ersetzt. Mehrere \<SnippetDir > Tags hinzugefügt werden können, eine für jeden anderen Verzeichnis und Gebietsschema. Darüber hinaus darf ein ausschnittordners Unterordner, von denen jede wird in die Indexdatei mit identifiziert die \<SnippetSubDir >-Tag, das in eingebettet ist eine \<SnippetDir > Tag.  
+ In diesem Beispiel wird davon ausgegangen, dass Sie Ihren Sprachdienst im Visual Studio-Installationsordner installiert haben. Der % LCID % wird mit dem aktuellen Gebietsschema-ID des Benutzers ersetzt. Mehrere \<SnippetDir > Tags hinzugefügt werden können, eine für jedes anderen Verzeichnis und Gebietsschema. Darüber hinaus darf ein ausschnittordners Unterordner aus, von denen jede wird in der Indexdatei mit identifiziert die \<SnippetSubDir >-Tag, das in eingebettet ist eine \<SnippetDir > Tag.  
   
- Benutzer können auch eigene Ausschnitte für Ihre Sprache erstellen. Diese werden in der Regel gespeichert im Ordner "Einstellungen" des Benutzers, z. B. *[TestDocs]* \Code Ausschnitte\\ *[TestLanguage]* \Test Codeausschnitte, wobei *[TestDocs]* ist der Speicherort des Ordners für die Einstellungen des Benutzers für Visual Studio.  
+ Benutzer können auch ihre eigenen Codeausschnitte für Ihre Sprache erstellen. Diese werden in der Regel gespeichert im Ordner "Einstellungen" des Benutzers, z. B. *[TestDocs]* \Code Codeausschnitte\\ *[TestLanguage]* \Test Codeausschnitte, in denen *[TestDocs]* ist der Speicherort des Ordners "Einstellungen" des Benutzers für Visual Studio.  
   
  Die folgenden Ersetzungselemente platziert werden können, in dem Pfad gespeichert, der \<DirPath >-Tag in der Indexdatei.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |% LCID %|Gebietsschema-ID.|  
-|"% InstallRoot"|Stamminstallationsordners für Visual Studio, z. B. C:\Program Files\Microsoft Visual Studio 8.|  
-|"% ProjDir"|Dieser Ordner enthält das aktuelle Projekt.|  
-|"% ProjItem"|Dieser Ordner enthält das aktuelle Projektelement.|  
-|"% TestDocs"|Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
+|Installroot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
+|ProjDir %|Ordner mit dem aktuellen Projekt.|  
+|ProjItem %|Dieser Ordner enthält das aktuelle Projektelement.|  
+|TestDocs %|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
   
-### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihre-Sprachdienst  
- Können Sie Codeausschnitte für Ihre Sprachdienst aktivieren, durch Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> -Attribut auf das VSPackage (finden Sie unter [registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten berücksichtigen die `SearchPaths` benannter Parameter um informiert die **Codeausschnitt-Manager** des Speicherorts der Ausschnitte.  
+### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihren Sprachdienst  
+ Sie können Codeausschnitte für den Sprachdienst aktivieren, durch das Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> Attribut für das VSPackage (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten einschließen, die `SearchPaths` benannter Parameter, um zu den **Codeausschnitt-Manager** des Speicherorts für Ihre Ausschnitte.  
   
  Im folgenden finden ein Beispiel zur Verwendung dieses Attributs:  
   
@@ -109,18 +109,18 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
          SearchPaths = @"%InstallRoot%\Test Snippet Language\Snippets\%LCID%\")]    // Path to snippets  
 ```  
   
-### <a name="calling-the-expansion-provider"></a>Aufrufen des Anbieters der Erweiterung  
- Der Sprachdienst steuert das Einfügen von alle Codeausschnitte sowie die Möglichkeit, Einfügung aufgerufen wird.  
+### <a name="calling-the-expansion-provider"></a>Die Erweiterungsanbieter aufrufen  
+ Der Sprachdienst steuert das Einfügen von alle Codeausschnitte als auch die Möglichkeit, die Einfügemarke aufgerufen wird.  
   
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>Aufrufen des Anbieters der Erweiterung für Codeausschnitte  
- Es gibt zwei Möglichkeiten zum Aufrufen des Anbieters der Erweiterung: mithilfe eines Menübefehls oder mithilfe einer Verknüpfung aus einem Vervollständigungsliste.  
+## <a name="calling-the-expansion-provider-for-code-snippets"></a>Aufrufen von Erweiterungsanbieter für Codeausschnitte  
+ Es gibt zwei Möglichkeiten zum Aufrufen der Erweiterungsanbieter: mithilfe eines Menübefehls oder mithilfe einer Verknüpfung aus einer Vervollständigungsliste.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Einfügen eines Codeausschnitts mithilfe eines Menübefehls  
- Um einen Menübefehl verwenden, um den Ausschnitt Browser anzuzeigen, fügen Sie einen Menübefehl hinzu, und rufen Sie anschließend die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Schnittstelle als Antwort auf diesem Menübefehl.  
+ Um einen Befehl verwenden, um die im Codeausschnitt-Browser angezeigt werden, Sie fügen Sie einen Menübefehl hinzu, und rufen dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Schnittstelle als Reaktion auf dieser Menübefehl.  
   
-1.  Fügen Sie einen Befehl und eine Schaltfläche in der VSCT-Datei an. Finden Sie Anleitungen, um auf diese Weise im [erstellen eine Erweiterung mit einem Menübefehl](../../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Erstellen einer Erweiterung mit einem Menübefehl](../../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel ermöglicht immer den Menübefehl aus.  
+2.  Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -156,7 +156,7 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
     }  
     ```  
   
-3.  Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> Methode in der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.  
+3.  Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -218,16 +218,16 @@ Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird
   
 8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-     Nach der <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> -Methode aufgerufen wird, wurde der Codeausschnitt eingefügt und die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt befindet sich in einem speziellen Bearbeitungsmodus zum Ändern eines Ausschnitts, das soeben eingefügt wurde.  
+     Nach der <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> Methode aufgerufen wird, wird der Codeausschnitt eingefügt wurde und die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt befindet sich in einer speziellen Bearbeitungsmodus zum Ändern eines Codeausschnitts, der gerade eingefügt wurde.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Einfügen eines Codeausschnitts mithilfe einer Verknüpfung  
- Die Implementierung einer Verknüpfung aus einem Vervollständigungsliste ist deutlich komplizierter als das Implementieren eines Menübefehls. Sie müssen zuerst die IntelliSense-Vervollständigungsliste für Word-ausschnittsverknüpfungen hinzufügen. Dann müssen Sie erkennen, wenn aufgrund der Beendigung einer Abkürzungsnamen des Ausschnitts eingefügt wurde. Schließlich müssen Sie den Ausschnitt Titel und den Pfad, die mithilfe von Abkürzungsnamen zu erhalten und übergeben Sie diese Informationen, um die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Methode für die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Methode.  
+ Eine Verknüpfung aus einer Vervollständigungsliste Implementierung ist sehr viel komplizierter als die Implementierung eines Menübefehls. Sie müssen zuerst die IntelliSense-Vervollständigungsliste für Word ausschnittsverknüpfungen hinzufügen. Dann müssen Sie erkennen, wenn als Ergebnis der Abschluss ein ausschnittnamens für die Verknüpfung eingefügt wurde. Abschließend müssen Sie den Codeausschnitt-Titel und den Pfad, die mithilfe von Abkürzungsnamen zu erhalten und übergeben Sie die Informationen in den <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Methode für die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Methode.  
   
- Um die Vervollständigungsliste für Word-ausschnittsverknüpfungen hinzugefügt haben, fügen Sie damit die <xref:Microsoft.VisualStudio.Package.Declarations> Objekt in Ihrer <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse. Sie müssen sicherstellen, dass Sie die Verknüpfung als Namen des Ausschnitts ein identifizieren können. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacy-Implementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Ausschnittsverknüpfungen in die Vervollständigungsliste für Word hinzufügen möchten, fügen sie der <xref:Microsoft.VisualStudio.Package.Declarations> -Objekt in Ihrem <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse. Sie müssen sicherstellen, dass Sie die Verknüpfung als einen Codeausschnittnamen ein identifizieren können. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
- Sie können erkennen, dass das Einfügen von Code Snippet Verknüpfung der <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> Methode der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Da in der Quelldatei bereits den Namen des Ausschnitts eingefügt wurde, muss er entfernt werden, wenn die Erweiterung eingefügt wird. Die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Methode akzeptiert eine Spanne, die der Einfügemarke für den Ausschnitt beschreibt; Wenn die Spanne der gesamte Ausschnitt-Name in der Quelldatei enthält, wird dieser Name durch den Ausschnitt ersetzt.  
+ Sie können erkennen, dass das Einfügen der Verknüpfung des Code-Ausschnitt in die <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> Methode der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Da in der Quelldatei bereits den Namen des Ausschnitts eingefügt wurde, muss er entfernt werden, wenn die Erweiterung eingefügt wird. Die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Methode akzeptiert eine Spanne, die beschreibt, der Einfügemarke für den Ausschnitt, wenn die Spanne der gesamte Ausschnitt-Name in der Quelldatei enthält, wird dieser Name von dem Ausschnitt ersetzt.  
   
- Hier ist eine Version von einem <xref:Microsoft.VisualStudio.Package.Declarations> -Klasse, die Ausschnitt einfügen, die eine Verknüpfung benannt behandelt. Andere Methoden in der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse aus Gründen der Übersichtlichkeit weggelassen wurden. Beachten Sie, die der Konstruktor dieser Klasse benötigt ein <xref:Microsoft.VisualStudio.Package.LanguageService> Objekt. Dies kann von Ihrer Version des übergeben werden der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt (z. B. die Implementierung von der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse dauern die <xref:Microsoft.VisualStudio.Package.LanguageService> Objekt in seinem Konstruktor, und übergeben Sie das Objekt auf Ihre `TestDeclarations` Klassenkonstruktor).  
+ Hier ist eine Version von einem <xref:Microsoft.VisualStudio.Package.Declarations> Klasse, erhält einen Verknüpfungsnamen Einfügen von Codeausschnitten verarbeitet. Andere Methoden in der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse wurde aus Gründen der Übersichtlichkeit weggelassen. Beachten Sie, die der Konstruktor dieser Klasse verwendet eine <xref:Microsoft.VisualStudio.Package.LanguageService> Objekt. Dies kann von Ihrer Version des übergeben werden die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt (z. B. die Implementierung von der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse dauern die <xref:Microsoft.VisualStudio.Package.LanguageService> Objekt in seinem Konstruktor, und übergeben Sie das Objekt auf Ihre `TestDeclarations` Klassenkonstruktor).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -328,25 +328,25 @@ namespace TestLanguagePackage
 }  
 ```  
   
- Wenn der Sprachdienst Abkürzungsnamen abruft, ruft er die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> Methode, um den Titel der Ausschnitt Dateinamen- und Code abzurufen. Der Sprachdienst ruft dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Methode in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse, um den Codeausschnitt einfügen. Die folgenden Methoden werden von Visual Studio aufgerufen, in der angegebenen Reihenfolge in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse während des Prozesses, der den Ausschnitt eingefügt:  
+ Wenn der Sprachdienst den Verknüpfungsnamen abruft, ruft er die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> Methode, um den Dateinamen und den Code Snippet Titel abzurufen. Der Sprachdienst ruft dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse, um den Codeausschnitt einzufügen. Die folgenden Methoden werden von Visual Studio aufgerufen, in der angegebenen Reihenfolge in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse während des Prozesses, der den Ausschnitt eingefügt:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Weitere Informationen zum Abrufen einer Liste der installierten Codeausschnitte für Ihren Sprachdienst finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacy-Implementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Weitere Informationen zum Abrufen einer Liste der installierten Codeausschnitte für den Sprachdienst, finden Sie unter [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
-## <a name="implementing-the-expansionfunction-class"></a>Implementieren die ExpansionFunction-Klasse  
- Eine Erweiterungsfunktion handelt es sich um eine benannte Funktion, die in einem Ausschnittvorlage eingebettet ist, und gibt einen oder mehrere Werte in einem Feld platziert werden soll. Um die Funktionen der Erweiterung in der Sprachdienst zu unterstützen, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse und Implementieren der <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> Methode. Müssen Sie überschreiben, klicken Sie dann die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse eine neue Instanz Ihrer Version des zurückzugebenden der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse für jede Erweiterungsfunktion, die Sie unterstützen. Wenn Sie eine Liste der möglichen Werte aus einer Erweiterungsfunktion unterstützen, müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> Methode in der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse, um eine Liste dieser Werte zurückzugeben.  
+## <a name="implementing-the-expansionfunction-class"></a>Implementieren der ExpansionFunction-Klasse  
+ Eine Erweiterungsfunktion ist eine benannte Funktion, die in einem Ausschnittvorlage eingebettet ist, und gibt einen oder mehrere Werte in einem Feld platziert werden. Um Erweiterungsfunktionen in den Sprachdienst zu unterstützen, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse und Implementieren der <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> Methode. Dann müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer neuen Instanziierung von Ihrer Version von der <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse für jede Erweiterungsfunktion, die Sie unterstützen. Wenn Sie eine Liste der möglichen Werte aus einer Erweiterungsfunktion unterstützen, müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Klasse um eine Liste dieser Werte zurückzugeben.  
   
- Eine Erweiterungsfunktion, die Argumente akzeptiert, oder den Zugriff auf andere Felder muss sollte nicht mit ein bearbeitbares Feld verknüpft sein, wie der Erweiterung Anbieter nicht vollständig von der Zeit initialisiert werden kann, die die Erweiterungsfunktion aufgerufen wird. Daher kann die Erweiterungsfunktion nicht zum Abrufen des Werts der Argumente oder ein anderes Feld.  
+ Eine Erweiterungsfunktion, die Argumente akzeptiert, oder auf andere Felder zugreifen muss darf nicht bearbeitbares Feld, zugeordnet sein, wie die Erweiterungsanbieter nicht vollständig mit der Zeit initialisiert werden kann, die die Erweiterungsfunktion aufgerufen wird. Daher kann die Erweiterungsfunktion nicht den Wert der Argumente oder ein anderes Feld abzurufen.  
   
 ### <a name="example"></a>Beispiel  
- Hier ist ein Beispiel für eine einfache Erweiterung-Funktion wie aufgerufen `GetName` implementiert werden könnten. Diese Erweiterungsfunktion Fügt eine Anzahl an eine Basisklassennamen jedes Mal die Erweiterungsfunktion instanziiert wird (welcher entspricht jedem den zugehörigen Codeausschnitt eingefügt wird).  
+ Es folgt ein Beispiel, wie eine einfache Erweiterungsfunktion aufgerufen `GetName` implementiert werden könnte. Diese Erweiterungsfunktion Fügt eine Zahl in einen Namen für die Basisklasse jedes Mal, das die Erweiterungsfunktion instanziiert wird (wird eingefügt, wenn sich den zugehörige Code-Ausschnitt entspricht).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -393,6 +393,6 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Siehe auch  
  [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+ [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Codeausschnitte](../../ide/code-snippets.md)   
  [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

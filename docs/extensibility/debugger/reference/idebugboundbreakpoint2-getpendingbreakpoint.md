@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
+title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899afbc801baee88dd941763b559845b90be8500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed136217f9f5c7cffc72ba03562d308723ef5029
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867779"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Ruft den ausstehenden Haltepunkts aus dem angegebene gebundene Haltepunkt erstellt wurde.  
+Ruft den ausstehenden Haltepunkt, der aus dem der angegebene gebundene Haltepunkt erstellt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int GetPendingBreakpoint(
   
 #### <a name="parameters"></a>Parameter  
  `ppPendingBreakpoint`  
- [out] Gibt die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das die ausstehenden Haltepunkt darstellt, der verwendet wurde, zum Erstellen dieser gebundenen Haltepunkt.  
+ [out] Gibt die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das den ausstehenden Haltepunkt darstellt, der verwendet wurde, zum Erstellen dieser gebundene Haltepunkt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Ein ausstehender Haltepunkt kann betrachtet werden als Auflistung von alle erforderlichen Informationen erforderlich, um einen Haltepunkt an Code zu binden, die auf einem oder mehreren Programmen angewendet werden können.  
+ Ein ausstehender Haltepunkt kann betrachtet werden als Auflistung von alle erforderlichen Informationen erforderlich, um einen Haltepunkt in Code zu binden, die auf eine oder mehrere Programme angewendet werden können.  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  

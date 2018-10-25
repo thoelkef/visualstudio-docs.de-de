@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907923"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Texttransformation geschieht vor anderen Aufgaben im Buildprozess. Sie können A
 
 In `AfterTransform` können Sie auf Dateilisten verweisen:
 
--   GeneratedFiles – Eine Liste von Dateien, die vom Prozess geschrieben werden. Für die Dateien, durch die vorhandene schreibgeschützte Dateien überschrieben wurden, ist %(GeneratedFiles.ReadOnlyFileOverwritten) true. Diese Dateien können aus der Quellcodeverwaltung ausgecheckt werden.
+- GeneratedFiles – Eine Liste von Dateien, die vom Prozess geschrieben werden. Für die Dateien, durch die vorhandene schreibgeschützte Dateien überschrieben wurden, ist %(GeneratedFiles.ReadOnlyFileOverwritten) true. Diese Dateien können aus der Quellcodeverwaltung ausgecheckt werden.
 
--   NonGeneratedFiles– Eine Liste von schreibgeschützten Dateien, die nicht überschrieben wurden.
+- NonGeneratedFiles– Eine Liste von schreibgeschützten Dateien, die nicht überschrieben wurden.
 
- Sie definieren z. B. eine Aufgabe zum Auschecken von GeneratedFiles.
+  Sie definieren z. B. eine Aufgabe zum Auschecken von GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath und OutputFileName
 
@@ -255,7 +255,6 @@ Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteig
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Nun können Sie die Projekteigenschaft in der Assembly- und der Includedirektive verwenden:

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_basetype | Microsoft Docs'
+title: 'Idiasymbol:: Get_basetype | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080c8872682f9c255eda77449cb24dd703cd9583
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901787"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Ruft den Basistyp für dieses Symbol ab *.*  
+Ruft ab, der Basistyp für dieses Symbol<em>.</em>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,16 +34,16 @@ HRESULT get_baseType (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) -Enumeration, der den Basistyp des Symbols angibt.  
+ [out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) Enumeration, der den Basistyp des Symbols angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Basistyp für ein Symbol kann zuerst Abrufen des Typs des Symbols, und klicken Sie dann befragen zurückgegebenen Typ für den Basistyp ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über ein Basistyp – z. B. einen ein.  
+ Der Basistyp für ein Symbol kann ermittelt werden, indem zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den Basistyp. Beachten Sie, dass einige Symbole nicht keinen Basistyp aufweisen können – z. B. einen ein.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -65,7 +65,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK Version 7.0|  
+|Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

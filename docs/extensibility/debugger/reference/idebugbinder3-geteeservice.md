@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Microsoft Docs
+title: IDebugBinder3::GetEEService | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866661"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-Diese Methode gibt einen angeforderten Dienst zurück.  
+Diese Methode gibt einen angeforderten Dienst.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,22 +47,22 @@ Int GetEEService(
   
 #### <a name="parameters"></a>Parameter  
  `vendor`  
- [in] `GUID` von einem Anbieter (ein null-Wert ist akzeptabel).  
+ [in] `GUID` eines Anbieters (ein null-Wert ist akzeptabel).  
   
  `language`  
  [in] `GUID` einer Sprache (ein null-Wert ist akzeptabel).  
   
  `iid`  
- [in] `IID` des abzurufenden Diensts.  
+ [in] `IID` des Diensts zu erhalten.  
   
  `ppService`  
- [out] Eine Schnittstelle für den angeforderten Dienst.  
+ [out] Eine Schnittstelle zu den angeforderten Dienst.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Übergeben Sie die `IID` für die [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) Schnittstelle (`IID_IEEVisualizerServiceProvider`) zu überprüfen, ob der Typ Schnellansicht-Dienst verfügbar ist. Wenn also die ausdrucksauswertung erhalten Sie bei der [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Schnittstelle, um die Typ-Schnellansichten unterstützen. Finden Sie unter [Visualizing und Anzeige von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) für Details.  
+ Übergeben Sie die `IID` für die [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) Schnittstelle (`IID_IEEVisualizerServiceProvider`) um festzustellen, ob der Dienst Typschnellansicht verfügbar ist. Wenn also die ausdrucksauswertung abrufen kann die [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Schnittstelle, um Typ-Schnellansichten unterstützen. Finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) Details.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

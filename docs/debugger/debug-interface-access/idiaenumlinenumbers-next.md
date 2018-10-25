@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Next | Microsoft Docs'
+title: 'Idiaenumlinenumbers:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6015658a72c264f1421c782a1e6e6c28038748a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a8c00aa5b3d6e6a9b9251075cc5cc065119cc95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909951"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
-Ruft eine angegebene Anzahl von Zeilennummern im die Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von Zeilennummern, in der Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl der Zeilennummern im Enumerator abgerufen werden sollen.  
+ [in] Die Anzahl von Zeilennummern im Enumerator abgerufen werden sollen.  
   
  rgelt  
  [out] Gibt ein Array von [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekte, die die gewünschten Zeilennummern darstellen.  
   
  pceltFetched  
- [out] Gibt die Anzahl der Zeilennummern im Enumerator abgerufen.  
+ [out] Gibt die Anzahl von Zeilennummern im abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` treten keine weitere Zeilennummern. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn keine weitere Zeilennummern vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

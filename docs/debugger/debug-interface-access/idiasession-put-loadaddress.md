@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Put_loadaddress | Microsoft Docs'
+title: 'Idiasession:: Put_loadaddress | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0b04db800e5b61ef1598fe4c81a9ab362e375e3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9794ba24de6702d4797b91e431853bed4e3912ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914124"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Legt die Adresse des für die entsprechende ausführbare Datei auf die Symbole in dieser Symbolspeicher fest.  
+Legt die Ladeadresse für die ausführbare Datei, die entspricht auf die Symbole in diesem Symbolspeicher fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ HRESULT put_loadAddress (
  [in] Lädt die Adresse für die ausführbare Datei.  
   
 ## <a name="remarks"></a>Hinweise  
- Symboleigenschaften für die virtuelle Adresse ("VA" ist) werden mit dem Wert dieser Methode berechnet. Virtuelle Adressen sind nicht berechnet werden, es sei denn, diese Eigenschaft nicht 0 (null), um festgelegt ist.  
+ Symboleigenschaften für die virtuelle Adresse (VA) werden mithilfe des Werts für diese Methode berechnet. Virtuelle Adressen werden nicht berechnet werden, es sei denn, diese Eigenschaft nicht 0 (null) festgelegt ist.  
   
 > [!NOTE]
->  Sie müssen diese Methode aufrufen, wenn Sie erhalten die [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt, und bevor Sie beginnen mit dem Objekt aus, wenn Sie virtuelle Eigenschaften verwenden, auf die Symbole müssen.  
+>  Sie müssen diese Methode aufrufen, wenn Sie erhalten die [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt aus, und bevor Sie beginnen mit dem Objekt, wenn Sie keine virtuellen Eigenschaften von Symbolen verwenden müssen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

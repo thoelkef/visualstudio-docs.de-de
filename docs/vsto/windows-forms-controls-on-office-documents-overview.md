@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892778"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms-Steuerelemente in Office-Dokumente – Übersicht
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word Sie können Windows Forms-Steuerelemente in das Dokument oder die Arbeitsmappe in Ihrem Projekt zur Entwurfszeit hinzufügen, oder Sie können diese Steuerelemente programmgesteuert zur Laufzeit hinzufügen. Sie können diese Steuerelemente programmgesteuert zu allen geöffneten Dokumenten oder Arbeitsblatt zur Laufzeit in einem VSTO-Add-in für Excel oder Word hinzufügen.  
@@ -52,25 +52,25 @@ ms.locfileid: "35672434"
  Auf einem Dokument.  
  -   Wenn Sie möchten, dass die Steuerelemente immer angezeigt werden.  
   
--   Wenn Sie möchten, dass Benutzer Daten direkt in das Dokument eingeben, beispielsweise in formularbasierten Dokumente, bei denen die Bearbeitungsoberfläche gesperrt ist.  
+- Wenn Sie möchten, dass Benutzer Daten direkt in das Dokument eingeben, beispielsweise in formularbasierten Dokumente, bei denen die Bearbeitungsoberfläche gesperrt ist.  
   
--   Wenn Sie möchten, dass die Steuerelemente an den Daten ausgerichtet im Dokument angezeigt werden sollen. Wenn Sie beispielsweise jeder Zeile eines Listenobjekts Schaltflächen hinzufügen, sollten diese an dem jeweiligen Listenelement ausgerichtet sein.  
+- Wenn Sie möchten, dass die Steuerelemente an den Daten ausgerichtet im Dokument angezeigt werden sollen. Wenn Sie beispielsweise jeder Zeile eines Listenobjekts Schaltflächen hinzufügen, sollten diese an dem jeweiligen Listenelement ausgerichtet sein.  
   
- Im Aktionsbereich oder in einem benutzerdefinierten Aufgabenbereich.  
- -   Wenn Sie dem Benutzer Kontextinformationen bereitstellen möchten.  
+  Im Aktionsbereich oder in einem benutzerdefinierten Aufgabenbereich.  
+  -   Wenn Sie dem Benutzer Kontextinformationen bereitstellen möchten.  
   
--   Wenn Sie nur die Ergebnisse im Dokument anzeigen möchten, nicht die Abfragesteuerelemente und -daten.  
+- Wenn Sie nur die Ergebnisse im Dokument anzeigen möchten, nicht die Abfragesteuerelemente und -daten.  
   
--   Wenn Sie sicherstellen möchten, dass die Steuerelemente nicht mit dem Dokument gedruckt werden.  
+- Wenn Sie sicherstellen möchten, dass die Steuerelemente nicht mit dem Dokument gedruckt werden.  
   
--   Wenn Sie sicherstellen möchten, dass die Steuerelemente nicht die Ansicht des Dokuments beeinträchtigen.  
+- Wenn Sie sicherstellen möchten, dass die Steuerelemente nicht die Ansicht des Dokuments beeinträchtigen.  
   
- Auf einem Windows Form.  
- -   Wenn Sie die Größe der Benutzeroberfläche steuern möchten.  
+  Auf einem Windows Form.  
+  -   Wenn Sie die Größe der Benutzeroberfläche steuern möchten.  
   
--   Wenn Sie verhindern möchten, dass Benutzer Steuerelemente ausblenden oder löschen können.  
+- Wenn Sie verhindern möchten, dass Benutzer Steuerelemente ausblenden oder löschen können.  
   
--   Wenn der Benutzer Daten eingeben soll und Sie verhindern möchten, dass das Dokument vor Empfang der Eingabe anderweitig bearbeitet wird.  
+- Wenn der Benutzer Daten eingeben soll und Sie verhindern möchten, dass das Dokument vor Empfang der Eingabe anderweitig bearbeitet wird.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Programmgesteuertes Hinzufügen von Windows Forms-Steuerelemente  
  Sie können Windows Forms-Steuerelementen zu Word-Dokumenten und Excel-Arbeitsblättern zur Laufzeit hinzufügen. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt Hilfsmethoden zum Hinzufügen der gängigsten Windows Forms-Steuerelemente bereit. Mit diesen Hilfsmethoden können Sie Office-Dokumenten schnell Steuerelemente hinzufügen und die Kombination aus Windows Forms-Steuerelementfunktionalität und Office-bezogener Funktionalität dieser Steuerelemente nutzen.  
@@ -134,13 +134,13 @@ ms.locfileid: "35672434"
   
  Wenn Sie ein Word-Dokument zur Laufzeit ein Steuerelement hinzugefügt haben, können Sie den Layoutstil des neuen Steuerelements angeben, indem Sie mit verschiedenen `Add` \< *Steuerelementklasse*>-methodenüberladungen der der <xref:Microsoft.Office.Tools.Word.ControlCollection> Klasse:  
   
--   Um ein Steuerelement in den Textfluss einzufügen, verwenden Sie eine Überladung, die einen Bereich ( <xref:Microsoft.Office.Interop.Word.Range> ) akzeptiert, der die Position des Steuerelements angibt.  
+- Um ein Steuerelement in den Textfluss einzufügen, verwenden Sie eine Überladung, die einen Bereich ( <xref:Microsoft.Office.Interop.Word.Range> ) akzeptiert, der die Position des Steuerelements angibt.  
   
--   Um ein Steuerelement als unverankerte Form einzufügen, verwenden Sie eine Überladung, die die linke und die obere Koordinate des Steuerelements akzeptiert.  
+- Um ein Steuerelement als unverankerte Form einzufügen, verwenden Sie eine Überladung, die die linke und die obere Koordinate des Steuerelements akzeptiert.  
   
- Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Wenn Sie eine Word-Vorlage im Visual Studio-Designer öffnen, sind nicht ausgerichtete Steuerelemente in der Vorlage möglicherweise nicht sichtbar, da Visual Studio die Vorlage in der Ansicht **Normal** öffnet. Damit die Steuerelemente angezeigt werden, ändern Sie die Ansicht in **Seitenlayout**.  
+  Wenn Sie eine Word-Vorlage im Visual Studio-Designer öffnen, sind nicht ausgerichtete Steuerelemente in der Vorlage möglicherweise nicht sichtbar, da Visual Studio die Vorlage in der Ansicht **Normal** öffnet. Damit die Steuerelemente angezeigt werden, ändern Sie die Ansicht in **Seitenlayout**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Steuerelemente außerhalb des Hauptteils Hauptabschnitt des Dokuments  
  Windows Forms-Steuerelemente werden in Kopf- oder Fußzeilen oder in einem Unterdokument nicht unterstützt.  

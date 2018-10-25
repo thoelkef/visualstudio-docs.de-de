@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867285"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205893"
  Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.  
   
 > [!NOTE]
->  Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke **ALT+** Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.  
+>  Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke <strong>ALT+</strong>Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor  
   

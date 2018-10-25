@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863333"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeitsdiagramme: Richtlinien
 
@@ -105,7 +105,7 @@ In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängi
 Beschreibung die Änderungen, die Sie an Ihrem System oder der vorgesehenen Architektur vornehmen möchten, verwenden Sie die folgenden Schritte aus, um das Abhängigkeitsdiagramm zu bearbeiten. Sie können vor dem Erweitern des Codes ggf. auch einige Refactoringänderungen vornehmen, um die Codestruktur zu verbessern. Finden Sie unter [Verbessern der Struktur des Codes](#Improving).
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
-|------------|-----------------------------|
+|-|-|
 |Löschen einer unerwünschten Abhängigkeit|Klicken Sie auf die Abhängigkeit, und drücken Sie dann die **löschen**.|
 |Ändern oder Einschränken der Richtung einer Abhängigkeit|Legen Sie dessen **Richtung** Eigenschaft.|
 |Erstellen von neuen Abhängigkeiten|Verwenden der **Abhängigkeit** und **bidirektionale Abhängigkeit** Tools.<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. Wenn Sie fertig sind, klicken Sie auf die **Zeiger** Tool, oder drücken Sie die **ESC** Schlüssel.|

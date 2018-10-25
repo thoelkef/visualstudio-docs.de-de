@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByVA | Microsoft Docs
+title: IDiaSymbol::findChildrenExByVA | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db325da7688c2c3dd8d2b87c301922d168c1ad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f3fa4f64570977a1b3546f933aa7c55e5e69ddcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909927"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Ruft die untergeordneten Elemente des Symbols, die an einer bestimmten virtuellen Adresse gültig sind.  
@@ -38,13 +38,13 @@ HRESULT findChildrenExByVA (
   
 #### <a name="parameters"></a>Parameter  
  `symtag`  
- [in] Gibt die symboltags der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.  
+ [in] Gibt die symboltags an der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `name`  
  [in] Gibt den Namen der untergeordneten Elemente abgerufen werden sollen. Legen Sie auf `NULL` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `compareFlags`  
- [in] Gibt die Vergleichsoptionen, die auf die namensübereinstimmung angewendet werden. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) Enumeration kann allein oder in Kombination verwendet werden.  
+ [in] Gibt die Vergleichsoptionen, die auf Namen angewendet werden. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) -Enumeration können alleine oder zusammen verwendet werden.  
   
  `address`  
  [in] Gibt die virtuelle Adresse an.  
@@ -53,10 +53,10 @@ HRESULT findChildrenExByVA (
  [out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt, das eine Liste der untergeordneten Symbole enthält abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols gefunden wurde, gibt `S_FALSE` Wenn keine untergeordneten Elemente nicht gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die lokalen Symbole, die zurückgegeben werden einschließen live Bereichsinformationen  
+ Die lokalen Symbole, die zurückgegeben werden enthalten Informationen zum aktiven Bereich.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

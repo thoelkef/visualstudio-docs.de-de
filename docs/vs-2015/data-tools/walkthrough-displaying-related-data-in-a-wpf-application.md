@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 922d33e52e02a0d2cde9c17f799f6e35f1ae2db4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913136"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen einer WPF-Anwendung und eines Entity Data Model, die aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.  
+- Erstellen einer WPF-Anwendung und eines Entity Data Model, die aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.  
   
--   Erstellen eines Satzes von datengebundenen Steuerelementen, die Übersicht die Übersichtsinformationen für eine Gruppe von Aufträgen anzeigen. Erstellen Sie die Steuerelemente durch Ziehen einer übergeordneten Entität wird von der **Datenquellen** Fenster **WPF-Designer**.  
+- Erstellen eines Satzes von datengebundenen Steuerelementen, die Übersicht die Übersichtsinformationen für eine Gruppe von Aufträgen anzeigen. Erstellen Sie die Steuerelemente durch Ziehen einer übergeordneten Entität wird von der **Datenquellen** Fenster **WPF-Designer**.  
   
--   Erstellen einer <xref:System.Windows.Controls.DataGrid> -Steuerelement, das zugehörige Details für jede zeigt ausgewählten Auftrag. Erstellen Sie die Steuerelemente durch Ziehen eine untergeordnete Entität aus der **Datenquellen** zum Fenster in **WPF-Designer**.  
+- Erstellen einer <xref:System.Windows.Controls.DataGrid> -Steuerelement, das zugehörige Details für jede zeigt ausgewählten Auftrag. Erstellen Sie die Steuerelemente durch Ziehen eine untergeordnete Entität aus der **Datenquellen** zum Fenster in **WPF-Designer**.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, an die eine AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+  Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Erstellen des Projekts  
  Erstellen Sie ein neues WPF-Projekt, um die Datensätze anzuzeigen.  
@@ -85,80 +85,80 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 #### <a name="to-create-an-entity-data-model"></a>So erstellen Sie ein Entity Data Model  
   
-1.  Auf der **Daten** Menü klicken Sie auf **neue Datenquelle hinzufügen** zum Öffnen der **Assistenten zur Datenquellenkonfiguration**.  
+1. Auf der **Daten** Menü klicken Sie auf **neue Datenquelle hinzufügen** zum Öffnen der **Assistenten zur Datenquellenkonfiguration**.  
   
-2.  Auf der **wählen Sie einen Datenquellentyp** auf **Datenbank**, und klicken Sie dann auf **Weiter**.  
+2. Auf der **wählen Sie einen Datenquellentyp** auf **Datenbank**, und klicken Sie dann auf **Weiter**.  
   
-3.  Auf der **Auswählen eines Datenbankmodells** auf **Entity Data Model**, und klicken Sie dann auf **Weiter**.  
+3. Auf der **Auswählen eines Datenbankmodells** auf **Entity Data Model**, und klicken Sie dann auf **Weiter**.  
   
-4.  Auf der **auswählen des Modellinhalts** auf **aus Datenbank generieren**, und klicken Sie dann auf **Weiter**.  
+4. Auf der **auswählen des Modellinhalts** auf **aus Datenbank generieren**, und klicken Sie dann auf **Weiter**.  
   
-5.  Auf der **wählen Sie Ihre Datenverbindung** eine der folgenden:  
+5. Auf der **wählen Sie Ihre Datenverbindung** eine der folgenden:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus.  
+   - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus.  
   
-         - oder -   
+      - oder -   
   
-    -   Klicken Sie auf **neue Verbindung** , und erstellen Sie eine Verbindung mit der AdventureWorksLT-Datenbank.  
+   - Klicken Sie auf **neue Verbindung** , und erstellen Sie eine Verbindung mit der AdventureWorksLT-Datenbank.  
   
      Stellen Sie sicher, dass die **Entitätsverbindungseinstellungen in App.Config speichern als** Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-6.  Auf der **Datenbankobjekte auswählen** Seite **Tabellen**, und wählen Sie dann die folgenden Tabellen:  
+6. Auf der **Datenbankobjekte auswählen** Seite **Tabellen**, und wählen Sie dann die folgenden Tabellen:  
   
-    -   **SalesOrderDetail**  
+   -   **SalesOrderDetail**  
   
-    -   **"SalesOrderHeader"**  
+   -   **"SalesOrderHeader"**  
   
-7.  Klicken Sie auf **Fertig stellen**.  
+7. Klicken Sie auf **Fertig stellen**.  
   
-8.  Erstellen Sie das Projekt.  
+8. Erstellen Sie das Projekt.  
   
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Erstellen datengebundene Steuerelemente zur Anzeige von Bestellungen  
  Erstellen Sie Steuerelemente zum Anzeigen der Datensätze durch Ziehen der `SalesOrderHeaders` Entität aus der **Datenquellen** in den WPF-Designer.  
   
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Um datengebundene Steuerelemente zu erstellen, die Datensätze anzeigen  
   
-1.  In **Projektmappen-Explorer**, doppelklicken Sie auf "MainWindow.xaml".  
+1. In **Projektmappen-Explorer**, doppelklicken Sie auf "MainWindow.xaml".  
   
-     Das Fenster wird automatisch im WPF-Designer geöffnet.  
+    Das Fenster wird automatisch im WPF-Designer geöffnet.  
   
-2.  Bearbeiten der XAML daher **Höhe** und **Breite** auf 800 Eigenschaften festgelegt werden  
+2. Bearbeiten der XAML daher **Höhe** und **Breite** auf 800 Eigenschaften festgelegt werden  
   
-3.  In der **Datenquellen** Fenster, klicken Sie auf das Dropdownmenü für die **SalesOrderHeaders** Knoten, und wählen **Details**.  
+3. In der **Datenquellen** Fenster, klicken Sie auf das Dropdownmenü für die **SalesOrderHeaders** Knoten, und wählen **Details**.  
   
-4.  Erweitern Sie die **SalesOrderHeaders** Knoten.  
+4. Erweitern Sie die **SalesOrderHeaders** Knoten.  
   
-5.  Klicken Sie auf das Dropdownmenü neben **SalesOrderID** , und wählen Sie **"ComboBox"**.  
+5. Klicken Sie auf das Dropdownmenü neben **SalesOrderID** , und wählen Sie **"ComboBox"**.  
   
-6.  Für jede der folgenden untergeordneten Knoten von der **SalesOrderHeaders** Knoten, klicken Sie auf dem Dropdownmenü neben den Knoten, und wählen Sie **keine**:  
+6. Für jede der folgenden untergeordneten Knoten von der **SalesOrderHeaders** Knoten, klicken Sie auf dem Dropdownmenü neben den Knoten, und wählen Sie **keine**:  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **ShipToAddressID**  
+   - **ShipToAddressID**  
   
-    -   **BillToAddressID**  
+   - **BillToAddressID**  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **Zwischensumme**  
+   - **Zwischensumme**  
   
-    -   **"Taxamt"**  
+   - **"Taxamt"**  
   
-    -   **Freight**  
+   - **Freight**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
-    -   **"ModifiedDate"**  
+   - **"ModifiedDate"**  
   
      Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.  
   
-7.  Von der **Datenquellen** ziehen Sie die **SalesOrderHeaders** Knoten aus, um das Fenster in **WPF-Designer**.  
+7. Von der **Datenquellen** ziehen Sie die **SalesOrderHeaders** Knoten aus, um das Fenster in **WPF-Designer**.  
   
-     Visual Studio generiert XAML, die einen Satz von Steuerelementen, die an Daten gebunden werden, erstellt die **SalesOrderHeaders** Entität und Code, der die Daten lädt. Weitere Informationen zu den generierten XAML und Code finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio generiert XAML, die einen Satz von Steuerelementen, die an Daten gebunden werden, erstellt die **SalesOrderHeaders** Entität und Code, der die Daten lädt. Weitere Informationen zu den generierten XAML und Code finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-8.  Im Designer, klicken Sie auf das Kombinationsfeld neben dem **Sales Order ID** Bezeichnung.  
+8. Im Designer, klicken Sie auf das Kombinationsfeld neben dem **Sales Order ID** Bezeichnung.  
   
 9. In der **Eigenschaften** wählen Sie im Fenster das Kontrollkästchen neben den **IsReadOnly** Eigenschaft.  
   
@@ -167,28 +167,28 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Ein DataGrid-Steuerelement zu erstellen, die die Auftragsdetails werden angezeigt.  
   
-1.  In der **Datenquellen** Fenster Suchen der **SalesOrderDetails** Knoten, der ein untergeordnetes Element der **SalesOrderHeaders** Knoten.  
+1. In der **Datenquellen** Fenster Suchen der **SalesOrderDetails** Knoten, der ein untergeordnetes Element der **SalesOrderHeaders** Knoten.  
   
-    > [!NOTE]
-    >  Es gibt auch eine **SalesOrderDetails** Knoten, die einen Peer der **SalesOrderHeaders** Knoten. Stellen Sie sicher, dass Sie den untergeordneten Knoten des Auswählen der **SalesOrderHeaders** Knoten.  
+   > [!NOTE]
+   >  Es gibt auch eine **SalesOrderDetails** Knoten, die einen Peer der **SalesOrderHeaders** Knoten. Stellen Sie sicher, dass Sie den untergeordneten Knoten des Auswählen der **SalesOrderHeaders** Knoten.  
   
-2.  Erweitern Sie das untergeordnete Element **SalesOrderDetails** Knoten.  
+2. Erweitern Sie das untergeordnete Element **SalesOrderDetails** Knoten.  
   
-3.  Für jede der folgenden untergeordneten Knoten von der **SalesOrderDetails** Knoten, klicken Sie auf dem Dropdownmenü neben den Knoten, und wählen Sie **keine**:  
+3. Für jede der folgenden untergeordneten Knoten von der **SalesOrderDetails** Knoten, klicken Sie auf dem Dropdownmenü neben den Knoten, und wählen Sie **keine**:  
   
-    -   **"SalesOrderID"**  
+   - **"SalesOrderID"**  
   
-    -   **SalesOrderDetailID**  
+   - **SalesOrderDetailID**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
-    -   **"ModifiedDate"**  
+   - **"ModifiedDate"**  
   
      Diese Aktion verhindert, dass Visual Studio einschließlich diese Daten in die <xref:System.Windows.Controls.DataGrid> Kontrolle, die Sie im nächsten Schritt erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.  
   
-4.  Von der **Datenquellen** Fenster ziehen Sie das untergeordnete Element **SalesOrderDetails** Knoten aus, um das Fenster in **WPF-Designer**.  
+4. Von der **Datenquellen** Fenster ziehen Sie das untergeordnete Element **SalesOrderDetails** Knoten aus, um das Fenster in **WPF-Designer**.  
   
-     Visual Studio generiert XAML zum Definieren einer neuen datengebundenes <xref:System.Windows.Controls.DataGrid> -Steuerelement, und das Steuerelement im Designer angezeigt. Visual Studio aktualisiert auch die generierte `GetSalesOrderHeadersQuery` -Methode in der CodeBehind-Datei die Daten in die **SalesOrderDetails** Entität.  
+    Visual Studio generiert XAML zum Definieren einer neuen datengebundenes <xref:System.Windows.Controls.DataGrid> -Steuerelement, und das Steuerelement im Designer angezeigt. Visual Studio aktualisiert auch die generierte `GetSalesOrderHeadersQuery` -Methode in der CodeBehind-Datei die Daten in die **SalesOrderDetails** Entität.  
   
 ## <a name="testing-the-application"></a>Testen der Anwendung  
  Erstellen Sie und führen Sie die Anwendung aus, um sicherzustellen, dass die Datensätze angezeigt.  

@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Microsoft Docs
+title: BP_FLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 481dd21287ba3ca68c2abc61412785fc0151788d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fba22042f5b12cfb9140e93e9e7efbeb0342328
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904166"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 Bietet optionale Kennzeichen, die verwendet werden können, um zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen.  
@@ -46,18 +46,18 @@ public enum enum_BP_FLAGS {
   
 ## <a name="members"></a>Member  
  BP_FLAG_NONE  
- Gibt kein Haltepunkt-Flag an.  
+ Gibt kein Flag Haltepunkt an.  
   
  BP_FLAG_MAP_DOCPOSITION  
- Gibt an, dass den Haltepunkt mithilfe der Dokumentposition Debugging-Modul (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte in Skripts orientierten Quelldateien z. B. Active Server Pages (ASP).  
+ Gibt an, der den Haltepunkt, der die Dokumentposition mithilfe die Debug-Engine (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte, die in den Skript-orientierten Quelldateien wie z. B. Active Server Pages (ASP).  
   
  BP_FLAG_DONT_STOP  
- Gibt an, dass der Haltepunkt von Debugging-Modul verarbeitet werden sollen, aber das Debugmodul letztendlich nicht es beendet werden soll (d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt nicht gesendet werden soll). Dieses Flag dient in erster Linie mit Ablaufverfolgungspunkten verwendet werden soll.  
+ Gibt an, dass der Haltepunkt von der Debug-Engine verarbeitet werden sollen, aber die Debug-Engine letztlich nicht es beendet werden soll (d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt sollte nicht gesendet werden). Dieses Flag dient in erster Linie mit Ablaufverfolgungspunkten verwendet werden.  
   
 ## <a name="remarks"></a>Hinweise  
  Verwendet für die `dwFlags` Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

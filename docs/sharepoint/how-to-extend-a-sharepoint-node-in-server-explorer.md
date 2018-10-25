@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861838"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Gewusst wie: Erweitern eines SharePoint-Knotens im Server-Explorer
   Sie können die Knoten erweitern die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Dies ist nützlich, wenn Sie neue untergeordnete Knoten, Elemente des Kontextmenüs oder Eigenschaften zu einem vorhandenen Knoten hinzufügen möchten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -40,9 +40,9 @@ ms.locfileid: "37119178"
   
 3.  Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>-Schnittstelle implementiert.  
   
-4.  Hinzufügen der <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut der Klasse. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.  
+4.  Fügen Sie der Klasse das <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut hinzu. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.  
   
-5.  Hinzufügen der <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut der Klasse. Dieses Attribut gibt den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.  
+5.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut hinzu. Dieses Attribut gibt den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.  
   
      Um integrierte Knotentypen, die von Visual Studio bereitgestellten anzugeben, übergeben Sie eine der folgenden Enumerationswerte an den Attributkonstruktor:  
   
@@ -61,14 +61,14 @@ ms.locfileid: "37119178"
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht zwei verschiedene Arten von Knoten Erweiterungen zu erstellen:  
   
--   Eine Erweiterung, die SharePoint-Websiteknoten Kontextmenüelement hinzufügt. Wenn Sie das Menüelement klicken, wird der Name des Knotens, der auf die geklickt wurde.  
+- Eine Erweiterung, die SharePoint-Websiteknoten Kontextmenüelement hinzufügt. Wenn Sie das Menüelement klicken, wird der Name des Knotens, der auf die geklickt wurde.  
   
--   Eine Erweiterung, die die benutzerdefinierte Eigenschaft fügt **ContosoExampleProperty** für jeden Knoten, die ein Feld namens darstellt **Text**.  
+- Eine Erweiterung, die die benutzerdefinierte Eigenschaft fügt **ContosoExampleProperty** für jeden Knoten, die ein Feld namens darstellt **Text**.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Diese Erweiterung fügt eine bearbeitbare Zeichenfolgeneigenschaft Knoten hinzu. Sie können auch benutzerdefinierte Eigenschaften erstellen, in denen schreibgeschützte Daten vom SharePoint-Server angezeigt. Ein Beispiel zur Veranschaulichung der Vorgehensweise hierfür finden Sie unter [Exemplarische Vorgehensweise: Server-Explorer erweitern, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Diese Erweiterung fügt eine bearbeitbare Zeichenfolgeneigenschaft Knoten hinzu. Sie können auch benutzerdefinierte Eigenschaften erstellen, in denen schreibgeschützte Daten vom SharePoint-Server angezeigt. Ein Beispiel zur Veranschaulichung der Vorgehensweise hierfür finden Sie unter [Exemplarische Vorgehensweise: Server-Explorer erweitern, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ## <a name="compile-the-code"></a>Kompilieren des Codes  
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:  

@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862163"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238523"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>So können Sie über die Tastatur Steuerelemente aus der Toolbox einem Designer hinzufügen  
   
-1.  Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.  
+1. Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.  
   
-2.  Wechseln Sie mit STRG + NACH-OBEN oder STRG + NACH-UNTEN zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.  
+2. Wechseln Sie mit STRG + NACH-OBEN oder STRG + NACH-UNTEN zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.  
   
-3.  Verwenden Sie die Tasten NACH-OBEN oder **NACH-UNTEN**, um zwischen den Steuerelementen zu wechseln.  
+3. Verwenden Sie die Tasten NACH-OBEN oder **NACH-UNTEN**, um zwischen den Steuerelementen zu wechseln.  
   
-4.  Drücken Sie EINGABE, nachdem das Steuerelement ausgewählt wurde.  
+4. Drücken Sie EINGABE, nachdem das Steuerelement ausgewählt wurde.  
   
- Das Steuerelement wird dem Formular oder dem Designer hinzugefügt.  
+   Das Steuerelement wird dem Formular oder dem Designer hinzugefügt.  
   
 ## <a name="dialog-box-options"></a>Dialogfeld „Optionen“  
  Sie können zwischen den Optionen in einem Dialogfeld wechseln und die Optionseinstellungen mit der Tastatur ändern.  

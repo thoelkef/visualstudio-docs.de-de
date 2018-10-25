@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87087a2087591b01170b82c0335e4bbffc579cc2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 369a2aa92c47c4db7b1036097ffb49f6d8de8a14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895417"
 ---
 # <a name="send-events"></a>Senden von Ereignissen
 Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debug-Engine (DE) ist eine auf DCOM basierende Ereignismodell. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die angeben:  
   
--   Die DE, die das Ereignis aufgerufen.  
+- Die DE, die das Ereignis aufgerufen.  
   
--   Eine Beschreibung des was passiert ist.  
+- Eine Beschreibung des was passiert ist.  
   
--   Der Prozess, Anwendung und Threadinformationen, identifiziert der Kontext, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die von einer bereitgestellten Kompatibilitätsrichtlinie gesendeten gesendet.  
+- Der Prozess, Anwendung und Threadinformationen, identifiziert der Kontext, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die von einer bereitgestellten Kompatibilitätsrichtlinie gesendeten gesendet.  
   
--   Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.  
+- Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.  
   
- Alle Debug-Ereignisse gesendet werden, mithilfe der Methode [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Alle Debug-Ereignisse gesendet werden, mithilfe der Methode [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Ereignisquellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916528"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Fügen Sie, dass eine zuletzt verwendete Liste aus, um ein Untermenü
 Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie Sie eine dynamische Liste zu einem Untermenü hinzufügen. Liste mit der dynamische bildet die Grundlage zum Erstellen einer Liste der zuletzt verwendeten (MRU).  
@@ -33,14 +33,14 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
   
  Weitere Informationen zu Menüs und *VSCT* finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="create-an-extension"></a>Erstellen Sie eine Erweiterung  
   
--   Führen Sie die Verfahren in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md) erstellen Sie in den folgenden Verfahren das Untermenü, das geändert wurde.  
+- Führen Sie die Verfahren in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md) erstellen Sie in den folgenden Verfahren das Untermenü, das geändert wurde.  
   
- Die Verfahren in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSPackage `TopLevelMenu`, dies ist der Name, der verwendet wird [Hinzufügen eines Menüs zur Menüleiste Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Die Verfahren in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSPackage `TopLevelMenu`, dies ist der Name, der verwendet wird [Hinzufügen eines Menüs zur Menüleiste Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Erstellen Sie einen dynamischen elementbefehl Liste  
   

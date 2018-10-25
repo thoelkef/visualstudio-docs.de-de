@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893402"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model-Tools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entitätsframework ist eine objektrelationale zuordnungstechnologie, die .NET-En
   
  Dies sind die spezifischen Tools, die Entity Data Model-Tools in Visual Studio 2015 bilden:  
   
--   Sie können die [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Designer** (**Entity Designer**) visuell erstellen und Ändern von Entitäten, Zuordnungen, Zuordnungen und vererbungsbeziehungen. Die **Entity Designer** generiert außerdem die [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Objektebenencode.  
+- Sie können die [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Designer** (**Entity Designer**) visuell erstellen und Ändern von Entitäten, Zuordnungen, Zuordnungen und vererbungsbeziehungen. Die **Entity Designer** generiert außerdem die [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Objektebenencode.  
   
--   Sie können die  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Assistenten** zum Generieren eines konzeptionellen Modells aus einer vorhandenen Datenbank und Ihrer Anwendung Datenbankverbindungsinformationen hinzufügen.  
+- Sie können die  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Assistenten** zum Generieren eines konzeptionellen Modells aus einer vorhandenen Datenbank und Ihrer Anwendung Datenbankverbindungsinformationen hinzufügen.  
   
--   Sie können die **Assistent zur Datenbankgenerierung** zuerst ein konzeptionelles Modell erstellen, und erstellen Sie eine Datenbank, die das Modell unterstützt.  
+- Sie können die **Assistent zur Datenbankgenerierung** zuerst ein konzeptionelles Modell erstellen, und erstellen Sie eine Datenbank, die das Modell unterstützt.  
   
--   Sie können die **Modellaktualisierungs-Assistenten** Ihrer konzeptionellen Modell, Speichermodell und Zuordnungen aktualisieren, wenn Änderungen der zugrunde liegenden Datenbank vorgenommen wurden.  
+- Sie können die **Modellaktualisierungs-Assistenten** Ihrer konzeptionellen Modell, Speichermodell und Zuordnungen aktualisieren, wenn Änderungen der zugrunde liegenden Datenbank vorgenommen wurden.  
   
-    > [!NOTE]
-    >  Beginnend mit Visual Studio 2010 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tools unterstützen keine [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
+  > [!NOTE]
+  >  Beginnend mit Visual Studio 2010 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tools unterstützen keine [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
   
- Die Tools generieren oder ändern eine EDMX-Datei. Diese Datei enthält Informationen, die das konzeptionelle Modell, Speichermodell und die Zuordnungen zwischen ihnen zu beschreiben. Weitere Informationen finden Sie unter [EDMX-Datei](https://msdn.microsoft.com/data/jj650889.aspx).  
+  Die Tools generieren oder ändern eine EDMX-Datei. Diese Datei enthält Informationen, die das konzeptionelle Modell, Speichermodell und die Zuordnungen zwischen ihnen zu beschreiben. Weitere Informationen finden Sie unter [EDMX-Datei](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Entity Framework Powertools können Sie die Anwendungen erstellen, die verwenden das Entity Data Model. Die Tools können ein konzeptionelles Modell, ein bestehendes Modell prüfen, Erzeugen von Quellcodedateien, die Objektklassen basierend auf dem konzeptionellen Modell enthalten und Erzeugen von Quellcodedateien, die Ansichten enthalten, die das Modell generiert. Ausführliche Informationen finden Sie unter [Pre-Generated Zuordnen von Ansichten](https://msdn.microsoft.com/data/dn469601.aspx).  
+  Entity Framework Powertools können Sie die Anwendungen erstellen, die verwenden das Entity Data Model. Die Tools können ein konzeptionelles Modell, ein bestehendes Modell prüfen, Erzeugen von Quellcodedateien, die Objektklassen basierend auf dem konzeptionellen Modell enthalten und Erzeugen von Quellcodedateien, die Ansichten enthalten, die das Modell generiert. Ausführliche Informationen finden Sie unter [Pre-Generated Zuordnen von Ansichten](https://msdn.microsoft.com/data/dn469601.aspx).  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   

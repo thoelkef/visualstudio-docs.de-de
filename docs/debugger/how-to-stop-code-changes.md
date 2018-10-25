@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903672"
 ---
 # <a name="how-to-stop-code-changes"></a>Gewusst wie: Anhalten von Codeänderungen
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.  
@@ -34,11 +34,11 @@ Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den V
   
 ### <a name="to-stop-applying-code-changes"></a>So beenden Sie das Übernehmen von Codeänderungen  
   
--   Wählen Sie **übernehmen von Codeänderungen beenden** aus der **Debuggen** Menü.  
+- Wählen Sie **übernehmen von Codeänderungen beenden** aus der **Debuggen** Menü.  
   
- Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
+  Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
   
- Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
+  Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und fortfahren](../debugger/edit-and-continue.md)   

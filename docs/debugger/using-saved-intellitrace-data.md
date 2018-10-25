@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912967"
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie das Debuggen von einer IntelliTrace-Protokoll-(.iTrace)-Datei aus beginnen. Diese Datei kann Leistungsereignisse, Ausnahmen, Threads, Testschritte, Module und weitere Systeminfo enthalten, die IntelliTrace erfasst, während Ihre App ausgeführt wird.
@@ -56,7 +56,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
      \- oder –
 
--   Wenn die ITRACE-Datei eines Team Foundation Server-Arbeitselements angefügt ist, führen Sie folgende Schritte in dem Arbeitselement durch:
+-   Wenn die ITRACE-Datei einer Team Foundation Server-Arbeitsaufgabe angefügt ist, führen Sie folgende Schritte in der Arbeitsaufgabe durch:
 
     -   Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.
 
@@ -159,25 +159,25 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Das Debuggen mit einer SharePoint-Korrelations-ID starten
 
-1.  Kopieren der SharePoint-Korrelations-ID aus der Quelle
+1. Kopieren der SharePoint-Korrelations-ID aus der Quelle
 
-     Zum Beispiel:
+    Zum Beispiel:
 
-     ![IntelliTrace &#45; SharePoint-Fehler &#45; Korrelations-ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; SharePoint-Fehler &#45; Korrelations-ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Öffnen Sie die ITRACE-Datei, wählen Sie dann **Analyse** aus, und geben Sie die SharePoint-Korrelations-ID ein, um die entsprechende Webanforderung und aufgezeichneten Ereignisse zu überprüfen.
+2. Öffnen Sie die ITRACE-Datei, wählen Sie dann **Analyse** aus, und geben Sie die SharePoint-Korrelations-ID ein, um die entsprechende Webanforderung und aufgezeichneten Ereignisse zu überprüfen.
 
-     ![IntelliTrace-Protokoll &#45; Geben Sie ein SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![IntelliTrace-Protokoll &#45; Geben Sie ein SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  Überprüfen Sie die Ereignisse unter **Angeforderte Ereignisse**. Ereignisse werden von oben nach unten in der Reihenfolge ihres Auftretens angezeigt.
+3. Überprüfen Sie die Ereignisse unter **Angeforderte Ereignisse**. Ereignisse werden von oben nach unten in der Reihenfolge ihres Auftretens angezeigt.
 
-    1.  Wählen Sie zum Anzeigen von Details ein Ereignis aus.
+   1. Wählen Sie zum Anzeigen von Details ein Ereignis aus.
 
-    2.  Wählen Sie **Debugging starten** , um das Debuggen an dem Punkt zu starten, an dem das Ereignis aufgetreten ist.
+   2. Wählen Sie **Debugging starten** , um das Debuggen an dem Punkt zu starten, an dem das Ereignis aufgetreten ist.
 
-     ![IntelliTrace-Protokolldatei &#45; Ansicht webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![IntelliTrace-Protokolldatei &#45; Ansicht webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:
+   Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:
 
 -   **Benutzerprofilereignisse**
 
@@ -199,28 +199,28 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Das Debuggen von einem Ausnahmefehler aus starten
 
-1.  Wählen Sie eine SharePoint-Korrelations-ID für eine Ausnahme aus. Ausnahmen werden nach Typ und Aufrufliste gruppiert.
+1. Wählen Sie eine SharePoint-Korrelations-ID für eine Ausnahme aus. Ausnahmen werden nach Typ und Aufrufliste gruppiert.
 
-2.  (Optional) Erweitern Sie die **Aufrufliste** , um die Aufrufliste für eine Ausnahmengruppe anzuzeigen.
+2. (Optional) Erweitern Sie die **Aufrufliste** , um die Aufrufliste für eine Ausnahmengruppe anzuzeigen.
 
-3.  Wählen Sie **Ausnahme debuggen** aus, um das Debuggen an dem Punkt zu starten, an dem die Ausnahme aufgetreten ist.
+3. Wählen Sie **Ausnahme debuggen** aus, um das Debuggen an dem Punkt zu starten, an dem die Ausnahme aufgetreten ist.
 
-     ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
+   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Threadliste
  Untersuchen Sie die aufgezeichneten Threads, die im Zielprozess ausgeführt wurden. Sie können das Debuggen vom ersten gültigen IntelliTrace-Ereignis in einem ausgewählten Thread starten.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>So starten Sie das Debuggen über einen bestimmten Thread
 
-1.  Wählen Sie unter **Threadliste**einen Thread aus.
+1. Wählen Sie unter **Threadliste**einen Thread aus.
 
-2.  Wählen Sie am unteren Rand von **Threadliste**die Option **Debuggen starten**aus. Sie können auch auf einen Thread doppelklicken.
+2. Wählen Sie am unteren Rand von **Threadliste**die Option **Debuggen starten**aus. Sie können auch auf einen Thread doppelklicken.
 
-     Doppelklicken Sie auf **Hauptthread**, um das Debuggen vom Anfang der Anwendung aus zu starten. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
+    Doppelklicken Sie auf **Hauptthread**, um das Debuggen vom Anfang der Anwendung aus zu starten. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
- Von einem Benutzer erstellte Threaddaten sind möglicherweise nützlicher, als Threads, die von einem Server für IIS-gehostete Webanwendungen erstellt und verwaltet werden.
+   Von einem Benutzer erstellte Threaddaten sind möglicherweise nützlicher, als Threads, die von einem Server für IIS-gehostete Webanwendungen erstellt und verwaltet werden.
 
 |**Spalte**|**Enthält Folgendes**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |----------------|-------------------|
 |**Modulname**|Moduldateiname|
 |**Modulpfad**|Speicherort auf einem Datenträger, in dem das Modul geladen wurde|
-|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Finden Sie unter [Suchen von Symboldateien (.pdb) und Quelldateien](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Siehe [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
 
 ### <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?
  [Verwenden des eigenständigen IntelliTrace-Collectors](../debugger/using-the-intellitrace-stand-alone-collector.md)

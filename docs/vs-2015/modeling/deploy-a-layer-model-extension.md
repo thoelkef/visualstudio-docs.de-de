@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907247"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
   
 #### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung  
   
-1.  Klicken Sie in das Projekt mit **source.vsix.manifest**öffnen **Bin\\ \***  im Datei-Explorer.  
+1. Klicken Sie in das Projekt mit **source.vsix.manifest**öffnen **Bin\\\\*** im Datei-Explorer.  
   
-2.  Kopieren der  **\*VSIX** Datei auf dem Computer, auf denen die Erweiterung installiert werden sollen.  
+2. Kopieren der  **\*VSIX** Datei auf dem Computer, auf denen die Erweiterung installiert werden sollen.  
   
-3.  Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.  
+3. Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.  
   
-     Das VSIX-Installationsprogramm wird geöffnet.  
+    Das VSIX-Installationsprogramm wird geöffnet.  
   
 #### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung  
   

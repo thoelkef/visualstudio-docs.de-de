@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894624"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -48,7 +48,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
  In der folgenden Tabelle werden die Optionen beschrieben, die für alle Knoten auf der Entwurfsoberfläche der Diagrammansicht verfügbar sind.
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Im XML-Schema-Explorer anzeigen**|Legt den Fokus auf den Schema-Explorer und hebt den Schemasetknoten hervor.|
 |**In Diagrammansicht anzeigen**|Wechselt zur Diagrammansicht (abgeblendet).|
 |**Beispiel-XML generieren**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
@@ -63,7 +63,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Elemente die folgenden Optionen:
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Typdefinition hinzufügen**|Fügt dem Diagramm den Basistyp hinzu.|
 |**Alle Verweise hinzufügen**|Fügt alle Knoten, die auf das Element verweisen, hinzu und zeichnet Pfeile, um die Beziehungen anzugeben.|
 |**Ersetzungsgruppenmitglieder hinzufügen**|Fügt alle Ersetzungsgruppenelemente hinzu. Diese Option wird in der Ansicht angezeigt, wenn das Element der Kopf oder das Mitglied einer Ersetzungsgruppe ist.|
@@ -72,7 +72,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale einfache und globale komplexe Typen die folgenden Optionen:
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Basistypdefinition hinzufügen**|Fügt den Basistyp des ausgewählten Typs hinzu, wenn der ausgewählte Typ von einem globalen Typ abgeleitet ist.|
 |**Alle Verweise hinzufügen**|Fügt alle Verweise des ausgewählten Typs hinzu. Dazu zählen Elemente und Attribute des ausgewählten Typs und vom ausgewählten Typ abgeleitete Typen.|
 |**Alle abgeleiteten Typen hinzufügen**|Fügt alle Typen hinzu, die direkt und indirekt vom ausgewählten Typ abgeleitet sind.|
@@ -81,14 +81,14 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Gruppen und Attributgruppen die folgenden Optionen:
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Alle Verweise hinzufügen**|Fügt alle Knoten, die auf die Gruppe verweisen, hinzu und zeichnet Pfeile, um die Beziehungen anzugeben.|
 |**Alle Mitglieder hinzufügen**|Fügt alle Mitglieder der Gruppe hinzu und zeichnet Pfeile, um die Beziehungen anzugeben.|
 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Attribute die folgenden Optionen:
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Alle Verweise hinzufügen**|Fügt alle Knoten, die auf die Gruppe verweisen, hinzu und zeichnet Pfeile, um die Beziehungen anzugeben.|
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
@@ -102,7 +102,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
  ![Symbolleiste für XML-Schema-Designer](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Option|Beschreibung|
-|------------|-----------------|
+|-|-----------------|
 |**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**1**.|
 |**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalt Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**2**.|
 |**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**3**.|

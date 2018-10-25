@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symindexid | Microsoft Docs'
+title: 'Idiasymbol:: Get_symindexid | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1ddae56ddcdcf46b857d59e0521016112ea3dd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9ab73620b76b6073a9126f975fd5b821bf6a06e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909808"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
-Ruft die eindeutige Symbol-ID ab.  
+Ruft das eindeutige Symbol-ID ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,16 +34,16 @@ HRESULT get_symIndexId (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Symbol-ID des Symbols zurück.  
+ [out] Gibt die Symbol-ID des Symbols.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Bezeichner ist ein eindeutiger Wert erstellt, indem die DIA-SDK, die alle Symbole als eindeutig kennzeichnen.  
+ Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

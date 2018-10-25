@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906922"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Das Source-Steuerelement-Paket-SDK bietet Richtlinien zum Erstellen von einer VS
   
  Die VSPackage-Semantik gehören:  
   
--   Schnittstelle, die aufgrund ihrer Zugehörigkeit zu einem VSPackage implementiert werden (die `IVsPackage` Schnittstelle)  
+- Schnittstelle, die aufgrund ihrer Zugehörigkeit zu einem VSPackage implementiert werden (die `IVsPackage` Schnittstelle)  
   
--   Benutzeroberfläche-Implementierung (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)  
+- Benutzeroberfläche-Implementierung (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)  
   
--   Registrierung von VSPackages mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Registrierung von VSPackages mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Das Quellcodeverwaltungs-VSPackage muss die Kommunikation mit diesen anderen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Entitäten:  
+  Das Quellcodeverwaltungs-VSPackage muss die Kommunikation mit diesen anderen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Entitäten:  
   
--   Projekte  
+- Projekte  
   
--   Editoren  
+- Editoren  
   
--   Projektmappen  
+- Projektmappen  
   
--   Windows  
+- Windows  
   
--   Die aktive Dokumenttabelle  
+- Die aktive Dokumenttabelle  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio-Umgebung-Dienste, die genutzt werden kann  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

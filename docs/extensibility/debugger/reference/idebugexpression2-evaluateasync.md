@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateAsync | Microsoft Docs
+title: IDebugExpression2::EvaluateAsync | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13364d94f33eca33bf71b7077c19b9da54298ed7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7906e1f1daa0b473473abd28417a2db1c9b7f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912824"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Diese Methode wertet den Ausdruck asynchron aus.  
@@ -43,23 +43,23 @@ int EvaluateAsync(
   
 #### <a name="parameters"></a>Parameter  
  `dwFlags`  
- [in] Eine Kombination aus Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung von Ausdrücken zu steuern.  
+ [in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.  
   
  `pExprCallback`  
  [in] Dieser Parameter ist immer ein null-Wert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben. Ein typische Fehlercode lautet:  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Ein typischer Fehlercode ist:  
   
 |Fehler|Beschreibung|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|Derzeit einem anderen Ausdruck ausgewertet wird, und gleichzeitige ausdrucksauswertung wird nicht unterstützt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode sollte zurückgeben, sofort, nachdem sie die Auswertung von Ausdrücken gestartet wurde. Wenn der Ausdruck erfolgreich ausgewertet wird, ein [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) gesendet werden muss, um die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Ereignisrückruf bereitgestellt durch [Anfügen ](../../../extensibility/debugger/reference/idebugprogram2-attach.md) oder [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
+ Diese Methode sollte zurückgeben, sofort nach dem Start der Auswertung von Ausdrücken. Wenn der Ausdruck erfolgreich ausgewertet wird, eine [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) gesendet werden müssen, um die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Ereignisrückruf wie angegeben über [Anfügen ](../../../extensibility/debugger/reference/idebugprogram2-attach.md) oder [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CExpression` Objekt, implementiert die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CExpression` Objekt, das implementiert die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  

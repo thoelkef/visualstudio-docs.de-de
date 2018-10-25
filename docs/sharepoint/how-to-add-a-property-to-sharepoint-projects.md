@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898409"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekte
   Sie können eine projekterweiterung verwenden, zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt. Die Eigenschaft wird in der **Eigenschaften** Wartungszeitfensters, in das Projekt ausgewählt ist, im **Projektmappen-Explorer**.  
@@ -48,11 +48,11 @@ ms.locfileid: "36758558"
   
  Beibehalten von Änderungen an die Werte, die **festgelegt** Accessoren für Eigenschaften verwenden Sie die folgenden APIs:  
   
--   `CustomUserFileProperty` verwendet die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> Eigenschaft, um den Wert in der Benutzeroptionsdatei zu speichern.  
+- `CustomUserFileProperty` verwendet die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> Eigenschaft, um den Wert in der Benutzeroptionsdatei zu speichern.  
   
--   `CustomProjectFileProperty` verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode, um den Wert in der Projektdatei zu speichern.  
+- `CustomProjectFileProperty` verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode, um den Wert in der Projektdatei zu speichern.  
   
- Weitere Informationen zum Beibehalten von Daten in diesen Dateien finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+  Weitere Informationen zum Beibehalten von Daten in diesen Dateien finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>Geben Sie das Verhalten von benutzerdefinierten Eigenschaften  
  Sie können definieren, wie eine benutzerdefinierte Eigenschaft angezeigt werden und verhält sich die **Eigenschaften** Fenster durch Anwenden von Attributen aus dem <xref:System.ComponentModel> Namespace auf die Eigenschaftsdefinition. Die folgenden Attribute sind in vielen Szenarien nützlich:  

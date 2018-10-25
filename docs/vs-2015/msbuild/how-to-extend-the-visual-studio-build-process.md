@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899694"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Gewusst wie: Erweitern des Visual Studio-Buildvorgangs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
   
 #### <a name="to-override-a-predefined-target"></a>So überschreiben Sie ein vordefiniertes Ziel  
   
-1.  Identifizieren Sie ein vordefiniertes Ziel in „Microsoft.Common.targets“, das Sie überschreiben möchten. In der Tabelle unten finden Sie die vollständige Liste der Ziele, die Sie bedenkenlos überschreiben können.  
+1. Identifizieren Sie ein vordefiniertes Ziel in „Microsoft.Common.targets“, das Sie überschreiben möchten. In der Tabelle unten finden Sie die vollständige Liste der Ziele, die Sie bedenkenlos überschreiben können.  
   
-2.  Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Zum Beispiel:  
+2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Zum Beispiel:  
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  Erstellen Sie die Projektdatei.  
+3. Erstellen Sie die Projektdatei.  
   
- Die folgende Tabelle zeigt alle Ziele in „Microsoft.Common.targets“, die Sie bedenkenlos überschreiben können.  
+   Die folgende Tabelle zeigt alle Ziele in „Microsoft.Common.targets“, die Sie bedenkenlos überschreiben können.  
   
 |Target Name|Beschreibung|  
 |-----------------|-----------------|  
