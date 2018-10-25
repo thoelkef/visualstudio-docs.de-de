@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951995"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459789"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendungs- und Bereitstellungsmanifeste zu signieren. Außerdem können sie damit die Assembly signieren (Signierung mit starkem Namen).
@@ -73,7 +73,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 
  Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) bereitgestellt wurde, um die Assembly zu signieren.
+ Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu AI.exe finden Sie unter [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Liste **Schlüsseldatei mit starkem Namen auswählen**
 
