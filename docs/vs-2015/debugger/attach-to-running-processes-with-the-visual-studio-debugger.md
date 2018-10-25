@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825688"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einer lokal
 
 1. Wählen Sie in Visual Studio **Debuggen / an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**).
 
-2.  Wählen Sie im Dialogfeld **An den Prozess anhängen** die entsprechende Verbindungsart aus der Liste **Transport** aus. **Standard** ist für die meisten Programme die richtige Einstellung.
+2. Wählen Sie im Dialogfeld **An den Prozess anhängen** die entsprechende Verbindungsart aus der Liste **Transport** aus. **Standard** ist für die meisten Programme die richtige Einstellung.
 
-    Die Einstellung **Transport** bleibt zwischen Debugsitzungen erhalten. 
+   Die Einstellung **Transport** bleibt zwischen Debugsitzungen erhalten. 
   
-3.  Verwenden Sie das Listenfeld **Qualifizierer** , um den Remotecomputernamen mithilfe einer der folgenden Methoden auszuwählen:  
+3. Verwenden Sie das Listenfeld **Qualifizierer** , um den Remotecomputernamen mithilfe einer der folgenden Methoden auszuwählen:  
   
-    1.  Geben Sie im Listenfeld **Qualifizierer** den Namen ein.
+   1. Geben Sie im Listenfeld **Qualifizierer** den Namen ein.
     
-        >**Beachten Sie** bei, in späteren Schritten verbinden kann nicht über den Remotecomputernamen, verwenden Sie die IP-Adresse. (Die Portnummer kann automatisch nach dem Auswählen des Prozess angezeigt. Sie können Sie auch manuell eingeben. In der Abbildung unten ist 4020 der Standardport für den Remotedebugger.)  
+      >**Beachten Sie** bei, in späteren Schritten verbinden kann nicht über den Remotecomputernamen, verwenden Sie die IP-Adresse. (Die Portnummer kann automatisch nach dem Auswählen des Prozess angezeigt. Sie können Sie auch manuell eingeben. In der Abbildung unten ist 4020 der Standardport für den Remotedebugger.)  
   
-    2.  Klicken Sie auf den Dropdownpfeil neben dem Listenfeld **Qualifizierer** , und wählen Sie den Computernamen aus der Dropdownliste aus.  
+   2. Klicken Sie auf den Dropdownpfeil neben dem Listenfeld **Qualifizierer** , und wählen Sie den Computernamen aus der Dropdownliste aus.  
   
-    3.  Klicken Sie neben der Liste **Qualifizierer** auf die Schaltfläche**Suchen** , um das Dialogfeld **Remotedebuggerverbindung auswählen** zu öffnen. Im Dialogfeld **Remotedebuggerverbindung auswählen** werden alle Geräte aufgeführt, die sich auf dem lokalen Subnetz befinden, sowie sämtliche Geräte, die über ein Ethernetkabel direkt mit dem Computer verbunden sind. Klicken Sie auf den gewünschten Computer bzw. das gewünschte Gerät, und klicken Sie dann auf **Auswählen**. 
+   3. Klicken Sie neben der Liste **Qualifizierer** auf die Schaltfläche**Suchen** , um das Dialogfeld **Remotedebuggerverbindung auswählen** zu öffnen. Im Dialogfeld **Remotedebuggerverbindung auswählen** werden alle Geräte aufgeführt, die sich auf dem lokalen Subnetz befinden, sowie sämtliche Geräte, die über ein Ethernetkabel direkt mit dem Computer verbunden sind. Klicken Sie auf den gewünschten Computer bzw. das gewünschte Gerät, und klicken Sie dann auf **Auswählen**. 
   
-     Die Einstellung **Qualifizierer** bleibt nur zwischen Debugsitzungen erhalten, wenn eine erfolgreiche Debugverbindung mit diesem Qualifizierer auftritt.
+      Die Einstellung **Qualifizierer** bleibt nur zwischen Debugsitzungen erhalten, wenn eine erfolgreiche Debugverbindung mit diesem Qualifizierer auftritt.
      
-4.  Klicken Sie auf **aktualisieren**.
+4. Klicken Sie auf **aktualisieren**.
 
-      Die Liste **Verfügbare Prozesse** wird beim Öffnen des Dialogfelds **Prozesse** automatisch angezeigt. Prozesse können bei geöffnetem Dialogfeld im Hintergrund gestartet und angehalten werden. Der Inhalt ist jedoch nicht immer aktuell. Sie können die Liste jederzeit aktualisieren, um die aktuelle Liste der Prozesse anzuzeigen. Klicken Sie dazu auf **Aktualisieren**. 
+     Die Liste **Verfügbare Prozesse** wird beim Öffnen des Dialogfelds **Prozesse** automatisch angezeigt. Prozesse können bei geöffnetem Dialogfeld im Hintergrund gestartet und angehalten werden. Der Inhalt ist jedoch nicht immer aktuell. Sie können die Liste jederzeit aktualisieren, um die aktuelle Liste der Prozesse anzuzeigen. Klicken Sie dazu auf **Aktualisieren**. 
      
-4.  Wählen Sie im Dialogfeld **An den Prozess anhängen** aus der Liste **Verfügbare Prozesse** das Programm, mit dem Sie eine Verbindung herstellen möchten.  
+5. Wählen Sie im Dialogfeld **An den Prozess anhängen** aus der Liste **Verfügbare Prozesse** das Programm, mit dem Sie eine Verbindung herstellen möchten.  
   
-     Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .
+    Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .
      
-5.  Klicken Sie auf **Anfügen**aus.  
+6. Klicken Sie auf **Anfügen**aus.  
 
 ## <a name="additional-info"></a>Zusätzliche Informationen
 
@@ -164,21 +164,21 @@ In einigen Szenarien für lokalen Debuggen, können Sie Debuggen in Visual Studi
   
  **Spezielle Informationen, warum ein Codetyp beim Anfügen des Fehler abrufen**  
   
-1.  Trennen Sie den Prozess. Klicken Sie im Menü **Debuggen** auf **Alle trennen**.  
+1. Trennen Sie den Prozess. Klicken Sie im Menü **Debuggen** auf **Alle trennen**.  
   
-2.  Fügen Sie den Prozess erneut an, und wählen Sie hierbei nur einen Codetyp aus.  
+2. Fügen Sie den Prozess erneut an, und wählen Sie hierbei nur einen Codetyp aus.  
   
-    1.  Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.  
+   1. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.  
   
-    2.  Klicken Sie auf **Auswählen**.  
+   2. Klicken Sie auf **Auswählen**.  
   
-    3.  Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Löschen Sie allen übrigen Code.  
+   3. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Löschen Sie allen übrigen Code.  
   
-    4.  Klicken Sie auf **OK**. Das Dialogfeld **Codetyp auswählen** wird geschlossen.  
+   4. Klicken Sie auf **OK**. Das Dialogfeld **Codetyp auswählen** wird geschlossen.  
   
-    5.  Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Anhängen**.  
+   5. Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Anhängen**.  
   
-     Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.  
+      Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen Sie mehrerer Prozesse](../debugger/debug-multiple-processes.md)   

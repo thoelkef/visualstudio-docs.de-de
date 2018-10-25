@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811840"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
@@ -47,8 +47,8 @@ Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Si
 
 Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Die folgenden Tastenkombinationen helfen Ihnen, auf diese zuzugreifen.
 
-|Feature|description|Tastenkombination|
-|-------------|-----------------|---------------------|
+|Feature|Beschreibung |Tastenkombination|
+|-------------|-----------------| - |
 |IDE-Symbolleisten|Wählen Sie die erste Schaltfläche in der Standardsymbolleiste.|**ALT**, **STRG** + **TAB**|
 |Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT** + **ALT**|
 |Symbolleisten|Wechseln Sie zum ersten Element in der nächsten Symbolleiste (wenn eine Symbolleiste über Fokus verfügt).|**STRG** + **TAB**|
@@ -57,8 +57,8 @@ Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolle
 
 Zu diesen Tastenkombinationen gehören:
 
-|Feature|description|Tastenkombination|
-|-------------|-----------------|---------------------|
+|Feature|Beschreibung |Tastenkombination|
+|-------------|-----------------| - |
 |IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LINKE ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|
 |Kontextmenüs|Öffnen Sie ein Kontextmenü (Rechtsklick). <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**UMSCHALT** + **F10**|
@@ -83,18 +83,18 @@ Gehen Sie folgendermaßen vor:
 
 1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
 
-  ![Suchfeld in Windows 10](media/type-here-to-search.png)
+   ![Suchfeld in Windows 10](media/type-here-to-search.png)
 
-  (Falls Sie Cortana aktiviert haben, können Sie alternativ „Hey Cortana“ und anschließend „Systemsounds ändern“ sagen.)
+   (Falls Sie Cortana aktiviert haben, können Sie alternativ „Hey Cortana“ und anschließend „Systemsounds ändern“ sagen.)
 
 2. Doppelklicken Sie auf **Systemsounds ändern**.
 
-  ![Suchergebnisse in Windows 10](media/change-system-sounds.png)
+   ![Suchergebnisse in Windows 10](media/change-system-sounds.png)
 
 3. Klicken Sie im Dialogfeld **Sound** auf die Registerkarte **Sounds**. <br><br>
- Scrollen Sie dann in **Programmereignisse** zu **Microsoft Visual Studio**, und wählen Sie die Sounds aus, die Sie auf die gewünschten Ereignisse anwenden möchten.
+   Scrollen Sie dann in **Programmereignisse** zu **Microsoft Visual Studio**, und wählen Sie die Sounds aus, die Sie auf die gewünschten Ereignisse anwenden möchten.
 
-  ![Registerkarte „Sounds“ des Sound-Applets in Windows 10](media/sound-applet.png)
+   ![Registerkarte „Sounds“ des Sound-Applets in Windows 10](media/sound-applet.png)
 
 4. Klicken Sie auf **OK**.
 

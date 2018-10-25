@@ -19,29 +19,29 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812269"
 ---
 # <a name="function-details-view"></a>Funktionsdetailansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:  
   
--   Im Balkendiagramm **Kostenverteilung** werden die Beziehungen zwischen einer von Ihnen ausgewählten Funktion und den aufrufenden Funktionen dargestellt, die die ausgewählte Funktion ausgeführt haben. Zudem wird die Beziehung zwischen der ausgewählten Funktion und den von dieser Funktion aufgerufenen Funktionen angezeigt.  
+- Im Balkendiagramm **Kostenverteilung** werden die Beziehungen zwischen einer von Ihnen ausgewählten Funktion und den aufrufenden Funktionen dargestellt, die die ausgewählte Funktion ausgeführt haben. Zudem wird die Beziehung zwischen der ausgewählten Funktion und den von dieser Funktion aufgerufenen Funktionen angezeigt.  
   
--   Die Tabelle **Funktionsleistungsdetails**, in der die Zusammenfassungsdaten zur Profilerstellung für die von Ihnen angegebene Funktion angezeigt werden.  
+- Die Tabelle **Funktionsleistungsdetails**, in der die Zusammenfassungsdaten zur Profilerstellung für die von Ihnen angegebene Funktion angezeigt werden.  
   
--   Das Fenster **Funktionscodeansicht**, in dem der Funktionscode angezeigt wird, wenn der Code verfügbar ist.  
+- Das Fenster **Funktionscodeansicht**, in dem der Funktionscode angezeigt wird, wenn der Code verfügbar ist.  
   
- Das Fenster **Funktionscodeansicht** ist ein getrennter Bereich. Die zwei Bereiche sind standardmäßig horizontal geteilt, und das Fenster **Funktionscodeansicht** befindet sich am unteren Rand des Frames.  
+  Das Fenster **Funktionscodeansicht** ist ein getrennter Bereich. Die zwei Bereiche sind standardmäßig horizontal geteilt, und das Fenster **Funktionscodeansicht** befindet sich am unteren Rand des Frames.  
   
--   Klicken Sie in der Symbolleiste auf **Bildschirm vertikal teilen**, um die zwei Bereiche vertikal zu teilen.  
+- Klicken Sie in der Symbolleiste auf **Bildschirm vertikal teilen**, um die zwei Bereiche vertikal zu teilen.  
   
--   Klicken Sie auf den schattierten Rahmen zwischen den Frames, und ziehen Sie den Rahmen an eine andere Position, um die relative Größe der Bereiche zu ändern.  
+- Klicken Sie auf den schattierten Rahmen zwischen den Frames, und ziehen Sie den Rahmen an eine andere Position, um die relative Größe der Bereiche zu ändern.  
   
 ## <a name="cost-distribution-bar-chart"></a>Balkendiagramm zur Kostenverteilung  
   
@@ -55,25 +55,25 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
   
  Sie können auf den Namen einer aufrufenden Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
   
--   Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
+- Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
--   Wenn keine aufrufenden Funktionen vorhanden sind oder es sich bei der Funktion um die Eingabefunktion eines Threads oder Prozesses handelt, wird der Block **Anfang des Stapels** angezeigt.  
+- Wenn keine aufrufenden Funktionen vorhanden sind oder es sich bei der Funktion um die Eingabefunktion eines Threads oder Prozesses handelt, wird der Block **Anfang des Stapels** angezeigt.  
   
- **Ausgewählte Funktion**  
+  **Ausgewählte Funktion**  
   
- In der Leiste „Ausgewählte Funktion“ werden die Beiträge der aufgerufenen Funktionen und des Codes in der ausgewählten Funktion zur gesamten Leistungsmetrik der ausgewählten Funktion angezeigt. Die Größe des Blocks mit der aufgerufenen Funktion oder dem Funktionsrumpf ist relativ zum Beitrag zum Gesamtwert der Leistungsmetrik für die ausgewählte Funktion.  
+  In der Leiste „Ausgewählte Funktion“ werden die Beiträge der aufgerufenen Funktionen und des Codes in der ausgewählten Funktion zur gesamten Leistungsmetrik der ausgewählten Funktion angezeigt. Die Größe des Blocks mit der aufgerufenen Funktion oder dem Funktionsrumpf ist relativ zum Beitrag zum Gesamtwert der Leistungsmetrik für die ausgewählte Funktion.  
   
- Sie können auf den Namen einer aufgerufenen Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
+  Sie können auf den Namen einer aufgerufenen Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
   
--   Der **Gesamtwert** ist die Leistungsmetrik der ausgewählten Funktion.  
+- Der **Gesamtwert** ist die Leistungsmetrik der ausgewählten Funktion.  
   
--   Im Block **Funktionsrumpf** wird der Gesamtwert der Leistungsmetrik angezeigt, der bei der direkten Ausführung des Codes im Funktionsrumpf aufgetreten ist.  
+- Im Block **Funktionsrumpf** wird der Gesamtwert der Leistungsmetrik angezeigt, der bei der direkten Ausführung des Codes im Funktionsrumpf aufgetreten ist.  
   
--   Funktionen, die von der ausgewählten Funktion aufgerufen werden, werden in Blöcken aufgeführt. Die Größe des Blocks „Ausgewählte Funktionen“ stellt den Betrag der gesamten Leistungsmetrik für die ausgewählte Funktion dar, die in der aufgerufenen Funktion aufgetreten ist.  
+- Funktionen, die von der ausgewählten Funktion aufgerufen werden, werden in Blöcken aufgeführt. Die Größe des Blocks „Ausgewählte Funktionen“ stellt den Betrag der gesamten Leistungsmetrik für die ausgewählte Funktion dar, die in der aufgerufenen Funktion aufgetreten ist.  
   
--   Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
+- Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
--   Wenn keine aufgerufenen Funktionen vorhanden sind, wird der Block **Ende des Stapels** angezeigt.  
+- Wenn keine aufgerufenen Funktionen vorhanden sind, wird der Block **Ende des Stapels** angezeigt.  
   
 ## <a name="function-performance-details"></a>Funktionsleistungsdetails  
  Die Tabelle „Funktionsleistungsdetails“ enthält Zusammenfassungsdaten zu den Leistungsmetriken der ausgewählten Funktion. Sowohl der Wert als auch der Prozentsatz werden angezeigt. In der Liste **Leistungsmetriken** können Sie die Profilerstellungsdaten eingeben, die im Diagramm und in der Detailtabelle angezeigt werden.  

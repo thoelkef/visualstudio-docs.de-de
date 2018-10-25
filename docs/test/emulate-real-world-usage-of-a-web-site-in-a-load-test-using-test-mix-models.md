@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820901"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
 
@@ -42,13 +42,13 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 ###  <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
  Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
 
--   TestA (50 %)
+- TestA (50 %)
 
--   TestB (35 %)
+- TestB (35 %)
 
--   TestC (15 %)
+- TestC (15 %)
 
- Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
+  Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
 
 ###  <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
  Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
@@ -56,28 +56,28 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 ###  <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
  Wenn Sie eine Geschwindigkeit für die Testmischung angeben, legen Sie für jeden Test in der Testmischung und für jeden virtuellen Benutzer eine Testausführungsgeschwindigkeit fest. Diese Geschwindigkeit wird für jeden Test durch die Anzahl von Tests ausgedrückt, die pro Stunde von jedem virtuellen Benutzer ausgeführt werden. Beispielsweise können Sie diesen Tests folgende Geschwindigkeiten bei der Testmischung zuweisen:
 
--   TestA: 4 Tests pro Benutzer pro Stunde
+- TestA: 4 Tests pro Benutzer pro Stunde
 
--   TestB: 2 Tests pro Benutzer pro Stunde
+- TestB: 2 Tests pro Benutzer pro Stunde
 
--   TestC: 0,125 Tests pro Benutzer pro Stunde
+- TestC: 0,125 Tests pro Benutzer pro Stunde
 
- Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch die Auslastungstestruntime-Engine sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
+  Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch die Auslastungstestruntime-Engine sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
 
- Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
+  Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Anwenden der Verteilung auf die Geschwindigkeitsverzögerung
  Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** in einem Auslastungstestszenario kann auf TRUE oder FALSE festgelegt werden:
 
--   **TRUE**: Das Szenario wendet typische statistische Verteilungsverzögerungen an, die über den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben werden. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **TRUE**: Das Szenario wendet typische statistische Verteilungsverzögerungen an, die über den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben werden. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Ist die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **TRUE** festgelegt, wird auf die Wartezeit zwischen den Tests eine typische statistische Verteilung angewendet. Es werden weiterhin zwei Tests pro Stunde ausgeführt, zwischen ihnen vergehen jedoch nicht notwendigerweise 30 Minuten. Der erste Test konnte nach 4 Minuten und der zweite Test nach 45 Minuten ausgeführt werden.
+   Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Ist die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **TRUE** festgelegt, wird auf die Wartezeit zwischen den Tests eine typische statistische Verteilung angewendet. Es werden weiterhin zwei Tests pro Stunde ausgeführt, zwischen ihnen vergehen jedoch nicht notwendigerweise 30 Minuten. Der erste Test konnte nach 4 Minuten und der zweite Test nach 45 Minuten ausgeführt werden.
 
--   **FALSE**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben haben. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **FALSE**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben haben. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Wenn die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **FALSE** festgelegt ist, ist im Grunde kein Spielraum für die Testausführung vorhanden. Der Test wird alle 30 Minuten ausgeführt. So ist sichergestellt, dass Sie zwei Tests pro Stunde ausführen.
+   Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** für den Test ist auf zwei Benutzer pro Stunde festgelegt. Wenn die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **FALSE** festgelegt ist, ist im Grunde kein Spielraum für die Testausführung vorhanden. Der Test wird alle 30 Minuten ausgeführt. So ist sichergestellt, dass Sie zwei Tests pro Stunde ausführen.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
  Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
@@ -88,17 +88,17 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 ## <a name="initialize-and-terminate-tests"></a>Initialisierungs- und Beendigungstests
  Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
--   **Initialisierungstest** Dieser Test wird von jedem virtuellen Benutzer ausgeführt, bevor ein beliebiger Test aus der Testmischung ausgeführt wird.
+- **Initialisierungstest** Dieser Test wird von jedem virtuellen Benutzer ausgeführt, bevor ein beliebiger Test aus der Testmischung ausgeführt wird.
 
--   **Beendigungstest** Dieser Test wird ausgeführt, nachdem alle Tests für einen bestimmten virtuellen Benutzer ausgeführt wurden.
+- **Beendigungstest** Dieser Test wird ausgeführt, nachdem alle Tests für einen bestimmten virtuellen Benutzer ausgeführt wurden.
 
- Beachten Sie Folgendes im Zusammenhang mit Initialisierungs- und Beendigungstests:
+  Beachten Sie Folgendes im Zusammenhang mit Initialisierungs- und Beendigungstests:
 
--   Sie können die Auslastungstestdauer nach Zeit anstatt der Anzahl der Iterationen angeben. Nach Ablauf der Dauer des Auslastungstests wird der Beendigungstest nicht ausgeführt.
+- Sie können die Auslastungstestdauer nach Zeit anstatt der Anzahl der Iterationen angeben. Nach Ablauf der Dauer des Auslastungstests wird der Beendigungstest nicht ausgeführt.
 
--   Wenn der Initialisierungstest ein Komponententest oder Webleistungstest ist, wird der Zustand des TestContext-Objekts oder WebTestContext-Objekts nach Beendigung des Initialisierungstests gespeichert. Er wird daraufhin als Startkontext für Testiterationen in der Testmischung verwendet.
+- Wenn der Initialisierungstest ein Komponententest oder Webleistungstest ist, wird der Zustand des TestContext-Objekts oder WebTestContext-Objekts nach Beendigung des Initialisierungstests gespeichert. Er wird daraufhin als Startkontext für Testiterationen in der Testmischung verwendet.
 
--   Neue Benutzer, so wie sie in der Szenarioeigenschaft Prozentsatz neuer Benutzer festgelegt sind, führen immer den Initialisierungstest, eine Testiteration aus der Testmischung und den Beendigungstest aus.
+- Neue Benutzer, so wie sie in der Szenarioeigenschaft Prozentsatz neuer Benutzer festgelegt sind, führen immer den Initialisierungstest, eine Testiteration aus der Testmischung und den Beendigungstest aus.
 
 ## <a name="see-also"></a>Siehe auch
 

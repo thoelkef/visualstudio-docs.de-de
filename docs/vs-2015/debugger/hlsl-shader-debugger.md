@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a0db7986d42b61b65241a8487bc1a595de4f655
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827947"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   
  Allerdings unterliegt der HLSL-Debugger gerade folgenden Einschränkungen:  
   
--   Der Vorgang zum Bearbeiten und Fortfahren wird durch den HLSL-Debugger nicht unterstützt. Sie können jedoch Änderungen an Ihren Shadern vornehmen und anschließend das Frame erneut generieren, um die Ergebnisse anzuzeigen.  
+- Der Vorgang zum Bearbeiten und Fortfahren wird durch den HLSL-Debugger nicht unterstützt. Sie können jedoch Änderungen an Ihren Shadern vornehmen und anschließend das Frame erneut generieren, um die Ergebnisse anzuzeigen.  
   
--   Es ist nicht möglich, eine Anwendung und ihren Shader-Code gleichzeitig zu debuggen. Sie können jedoch zwischen beiden wechseln.  
+- Es ist nicht möglich, eine Anwendung und ihren Shader-Code gleichzeitig zu debuggen. Sie können jedoch zwischen beiden wechseln.  
   
--   Sie können dem Überwachungsfenster Variablen und Register hinzufügen, aber Ausdrücke werden nicht unterstützt.  
+- Sie können dem Überwachungsfenster Variablen und Register hinzufügen, aber Ausdrücke werden nicht unterstützt.  
   
- Dennoch stellt der HLSL-Debugger eine bessere, CPU-ähnlichere Debugleistung zur Verfügung, als andernfalls möglich wäre.  
+  Dennoch stellt der HLSL-Debugger eine bessere, CPU-ähnlichere Debugleistung zur Verfügung, als andernfalls möglich wäre.  
   
 ## <a name="hlsl-shader-edit--apply"></a>HLSL-Shader bearbeiten und anwenden  
  Der HLSL-Shader-Debugger unterstützt Bearbeiten und Fortfahren nicht auf die gleiche Weise wie der CPU-Debugger, da das GPU-Ausführungsmodell keine Umkehrung des Shader-Zustands ermöglicht. Stattdessen unterstützt der HLSL-Debugger, bearbeiten und anwenden, wodurch Sie HLSL-Quelldateien bearbeiten, und wählen Sie dann **übernehmen** , den Rahmen, um die Auswirkungen Ihrer Änderungen finden Sie unter erneut zu generieren. Ihr geänderter Shader-Code befindet sich in einer separaten Datei, die Integrität der ursprünglichen HLSL-Quelldatei des Projekts beizubehalten, aber wenn Sie mit Ihren Änderungen zufrieden sind können Sie **kopieren in...** um die Änderungen in Ihr Projekt kopieren. Mit dieser Funktion können Sie den Shader-Code, der Fehler enthält, schnell durchlaufen und kostspielige Wiederherstellungs- und Erfassungsschritte aus Ihrem Workflow HLSL debuggen beseitigen.  
@@ -67,18 +67,18 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>So starten Sie den HLSL-Debugger im Fenster "Grafikpixelverlauf"  
   
-1.  In der **Grafikpixelverlauf** Fenster, erweitern Sie den Draw-Aufruf, der mit dem Shader zugeordnet sind, die Sie debuggen möchten. Jeder Zeichnen-Befehl kann mehreren Primitiva entsprechen.  
+1. In der **Grafikpixelverlauf** Fenster, erweitern Sie den Draw-Aufruf, der mit dem Shader zugeordnet sind, die Sie debuggen möchten. Jeder Zeichnen-Befehl kann mehreren Primitiva entsprechen.  
   
-2.  Erweitern Sie in den Eigenschaften des Zeichnen-Befehls das Primitivum, dessen resultierender Farbbeitrag auf einen Fehler im Shadercode hindeutet. Wenn für mehrere Primitiva ein Fehler zu vermuten ist, wählen Sie davon das erste Primitivum aus, um eine Häufung von Fehlern zu vermeiden, durch die eine Diagnose des Problems schwieriger wird.  
+2. Erweitern Sie in den Eigenschaften des Zeichnen-Befehls das Primitivum, dessen resultierender Farbbeitrag auf einen Fehler im Shadercode hindeutet. Wenn für mehrere Primitiva ein Fehler zu vermuten ist, wählen Sie davon das erste Primitivum aus, um eine Häufung von Fehlern zu vermeiden, durch die eine Diagnose des Problems schwieriger wird.  
   
-3.  In den Eigenschaften des primitivums wählen, ob zum Debuggen der **Vertex-Shader** oder **Pixel-Shader**. Debuggen Sie den Vertex-Shader, wenn Sie vermuten, dass der Pixel-Shader fehlerfrei ist, aber einen falschen Farbbeitrag generiert, weil der Vertex-Shader ihm falsche Konstanten übergibt. Andernfalls debuggen Sie den Pixel-Shader.  
+3. In den Eigenschaften des primitivums wählen, ob zum Debuggen der **Vertex-Shader** oder **Pixel-Shader**. Debuggen Sie den Vertex-Shader, wenn Sie vermuten, dass der Pixel-Shader fehlerfrei ist, aber einen falschen Farbbeitrag generiert, weil der Vertex-Shader ihm falsche Konstanten übergibt. Andernfalls debuggen Sie den Pixel-Shader.  
   
-     Wählen Sie rechts vom ausgewählten Shader, **Debuggen starten**, was als kleiner grüner Pfeil angezeigt wird.  
+    Wählen Sie rechts vom ausgewählten Shader, **Debuggen starten**, was als kleiner grüner Pfeil angezeigt wird.  
   
-    > [!NOTE]
-    >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  
+   > [!NOTE]
+   >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  
   
- Beispiele zur Verwendung der HLSL-Debugger zum Debuggen von Shader-Fehlern finden Sie in [Beispiele](../debugger/graphics-diagnostics-examples.md) oder die exemplarischen Vorgehensweisen im Abschnitt Siehe auch verknüpft.  
+   Beispiele zur Verwendung der HLSL-Debugger zum Debuggen von Shader-Fehlern finden Sie in [Beispiele](../debugger/graphics-diagnostics-examples.md) oder die exemplarischen Vorgehensweisen im Abschnitt Siehe auch verknüpft.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

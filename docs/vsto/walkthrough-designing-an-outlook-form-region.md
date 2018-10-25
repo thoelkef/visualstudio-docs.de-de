@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813686"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
@@ -42,14 +42,14 @@ ms.locfileid: "35672713"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine Videoversion dieses Themas finden Sie unter [Video Gewusst wie: Entwerfen ein Outlook-Formularbereichs](http://go.microsoft.com/fwlink/?LinkID=140824).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine Videoversion dieses Themas finden Sie unter [Video Gewusst wie: Entwerfen ein Outlook-Formularbereichs](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Erstellen eines neuen Outlook VSTO-Add-in-Projekts  
  Erstellen Sie zunächst ein Outlook VSTO-Add-In-Basisprojekt.  
@@ -117,24 +117,24 @@ ms.locfileid: "35672713"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>So passen Sie das Verhalten des Formularbereichs an  
   
-1.  In **Projektmappen-Explorer**, klicken Sie mit der rechten Maustaste auf *"MapIt.cs"* oder *"MapIt.vb"*, und klicken Sie dann auf **Ansichtscode**.  
+1. In **Projektmappen-Explorer**, klicken Sie mit der rechten Maustaste auf *"MapIt.cs"* oder *"MapIt.vb"*, und klicken Sie dann auf **Ansichtscode**.  
   
-     *"MapIt.cs"* oder *"MapIt.vb"* im Code-Editor geöffnet.  
+    *"MapIt.cs"* oder *"MapIt.vb"* im Code-Editor geöffnet.  
   
-2.  Erweitern Sie die **Formularbereichsfactory** Codebereich.  
+2. Erweitern Sie die **Formularbereichsfactory** Codebereich.  
   
-     Die Formularbereichsfactory-Klasse namens `MapItFactory` wird bereitgestellt.  
+    Die Formularbereichsfactory-Klasse namens `MapItFactory` wird bereitgestellt.  
   
-3.  Fügen Sie dem `MapItFactory_FormRegionInitializing`-Ereignishandler den folgenden Code hinzu. Dieser Ereignishandler wird aufgerufen, wenn der Benutzer ein Kontaktelement öffnet. Der folgende Code ermittelt, ob das Kontaktelement eine Adresse enthält. Dieser Code legt fest, wenn das Kontaktelement eine Adresse nicht enthält, die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> -Klasse **"true"** und der Formularbereich wird nicht angezeigt. Andernfalls löst das VSTO-Add-In das Ereignis <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> aus und zeigt den Formularbereich an.  
+3. Fügen Sie dem `MapItFactory_FormRegionInitializing`-Ereignishandler den folgenden Code hinzu. Dieser Ereignishandler wird aufgerufen, wenn der Benutzer ein Kontaktelement öffnet. Der folgende Code ermittelt, ob das Kontaktelement eine Adresse enthält. Dieser Code legt fest, wenn das Kontaktelement eine Adresse nicht enthält, die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> -Klasse **"true"** und der Formularbereich wird nicht angezeigt. Andernfalls löst das VSTO-Add-In das Ereignis <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> aus und zeigt den Formularbereich an.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Fügen Sie dem <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>-Ereignishandler den folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+4. Fügen Sie dem <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>-Ereignishandler den folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Verketten jeder Adresse im Kontaktelement und Erstellen  eine URL-Zeichenfolge.  
+   - Verketten jeder Adresse im Kontaktelement und Erstellen  eine URL-Zeichenfolge.  
   
-    -   Aufrufen der Methode <xref:System.Windows.Forms.WebBrowser.Navigate%2A> des <xref:System.Windows.Forms.WebBrowser>-Objekts und Übergeben der URL-Zeichenfolge als Parameter.  
+   - Aufrufen der Methode <xref:System.Windows.Forms.WebBrowser.Navigate%2A> des <xref:System.Windows.Forms.WebBrowser>-Objekts und Übergeben der URL-Zeichenfolge als Parameter.  
   
      Die Website für lokale Suche wird im Map It-Formularbereich angezeigt und zeigt jede Adresse im Testbereich an.  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a69fcd70350a000561464713ac18551daf38059a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828662"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Weitere Informationen hierzu finden Sie unter [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md).  
@@ -63,187 +63,187 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
   
 #### <a name="to-add-a-basic-hello-task"></a>So fügen Sie eine einfache „Hallo“-Aufgabe hinzu  
   
-1.  Ändern Sie im `Project`-Stammknoten das Attribut `DefaultTargets` in `TestBuild`. Der resultierende `Project`-Knoten sollte dem folgenden Beispiel ähneln:  
+1. Ändern Sie im `Project`-Stammknoten das Attribut `DefaultTargets` in `TestBuild`. Der resultierende `Project`-Knoten sollte dem folgenden Beispiel ähneln:  
   
-    ```xml
-    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    ```
+   ```xml
+   <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   ```
   
-2.  Fügen Sie vor dem Tag `</Project>` die folgende Inlineaufgabe und das folgende Ziel zur Projektdatei hinzu.  
+2. Fügen Sie vor dem Tag `</Project>` die folgende Inlineaufgabe und das folgende Ziel zur Projektdatei hinzu.  
   
-    ```xml  
-    <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup />  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage("Hello, world!", MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Hello />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup />  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage("Hello, world!", MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Hello />  
+   </Target>  
+   ```  
   
-3.  Speichern Sie die Projektdatei.  
+3. Speichern Sie die Projektdatei.  
   
- Dieser Code erstellt eine Inlineaufgabe mit dem Namen „Hallo“ und enthält keine Parameter, Verweise, oder `Using`-Anweisungen. Die „Hallo“-Aufgabe enthält nur eine Codezeile, die auf dem Standardprotokollierungsgerät, in der Regel dem Konsolenfenster, eine „Hallo“-Nachricht anzeigt.  
+   Dieser Code erstellt eine Inlineaufgabe mit dem Namen „Hallo“ und enthält keine Parameter, Verweise, oder `Using`-Anweisungen. Die „Hallo“-Aufgabe enthält nur eine Codezeile, die auf dem Standardprotokollierungsgerät, in der Regel dem Konsolenfenster, eine „Hallo“-Nachricht anzeigt.  
   
 ### <a name="run-the-hello-task"></a>Ausführen der „Hallo“-Aufgabe  
  Führen Sie im **Eingabeaufforderungsfenster** MSBuild aus, um die „Hallo“-Aufgabe zu erstellen und das TestBuild-Ziel für deren Aufruf zu verarbeiten.  
   
 ##### <a name="to-run-the-hello-task"></a>So führen Sie die „Hallo“-Aufgabe aus  
   
-1.  Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.  
+1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.  
   
-2.  Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\*.  
+2. Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\*.  
   
-3.  Geben Sie **msbuild** ohne Befehlsoptionen ein, und drücken Sie anschließend die **EINGABETASTE**. Standardmäßig wird so die Datei *InlineTasks.csproj* erstellt und das TestBuild-Standardziel verarbeitet, das die „Hallo“-Aufgabe aufruft.  
+3. Geben Sie **msbuild** ohne Befehlsoptionen ein, und drücken Sie anschließend die **EINGABETASTE**. Standardmäßig wird so die Datei *InlineTasks.csproj* erstellt und das TestBuild-Standardziel verarbeitet, das die „Hallo“-Aufgabe aufruft.  
   
-4.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
+4. Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
-     `Hello, world!`  
+    `Hello, world!`  
   
-    > [!NOTE]
-    >  Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
+   > [!NOTE]
+   >  Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
   
- Durch den Wechsel zwischen dem Code-Editor und dem **Eingabeaufforderungsfenster** können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
+   Durch den Wechsel zwischen dem Code-Editor und dem **Eingabeaufforderungsfenster** können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
 ## <a name="define-the-echo-task"></a>Definieren der Echo-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, die einen Zeichenfolgenparameter akzeptiert und die Zeichenfolge für das Standardprotokollierungsgerät anzeigt.  
   
 #### <a name="to-define-the-echo-task"></a>So definieren Sie die Echo-Aufgabe  
   
-1.  Ersetzen Sie im Code-Editor mithilfe des folgenden Codes die „Hallo“-Aufgabe und das TestBuild-Ziel.  
+1. Ersetzen Sie im Code-Editor mithilfe des folgenden Codes die „Hallo“-Aufgabe und das TestBuild-Ziel.  
   
-    ```xml  
-    <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Text Required="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage(Text, MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Echo Text="Greetings!" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Text Required="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage(Text, MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Echo Text="Greetings!" />  
+   </Target>  
+   ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
+2. Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
   
-3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
+3. Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
-     `Greetings!`  
+    `Greetings!`  
   
- Dieser Code definiert die Inlineaufgabe „Echo“ und verfügt nur über einen erforderlichen Eingabeparameter, „Text“. Parameter sind standardmäßig vom Typ „System.String“. Der Wert des Parameters „Text“ wird festgelegt, wenn das TestBuild-Ziel die Echo-Aufgabe aufruft.  
+   Dieser Code definiert die Inlineaufgabe „Echo“ und verfügt nur über einen erforderlichen Eingabeparameter, „Text“. Parameter sind standardmäßig vom Typ „System.String“. Der Wert des Parameters „Text“ wird festgelegt, wenn das TestBuild-Ziel die Echo-Aufgabe aufruft.  
   
 ## <a name="define-the-adder-task"></a>Definieren der Adder-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, bei der zwei ganzzahlige Parameter hinzugefügt werden und die deren Summe als MSBuild-Eigenschaft ausgibt.  
   
 #### <a name="to-define-the-adder-task"></a>So definieren Sie die Adder-Aufgabe  
   
-1.  Ersetzen Sie im Codeeditor die Echo-Aufgabe und das TestBuild-Ziel durch den folgenden Code.  
+1. Ersetzen Sie im Codeeditor die Echo-Aufgabe und das TestBuild-Ziel durch den folgenden Code.  
   
-    ```xml  
-    <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <A ParameterType="System.Int32" Required="true" />  
-        <B ParameterType="System.Int32" Required="true" />  
-        <C ParameterType="System.Int32" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          C = A + B;  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <Adder A="4" B="5">  
-        <Output PropertyName="Sum" TaskParameter="C" />  
-      </Adder>  
-      <Message Text="The sum is $(Sum)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <A ParameterType="System.Int32" Required="true" />  
+       <B ParameterType="System.Int32" Required="true" />  
+       <C ParameterType="System.Int32" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         C = A + B;  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <Adder A="4" B="5">  
+       <Output PropertyName="Sum" TaskParameter="C" />  
+     </Adder>  
+     <Message Text="The sum is $(Sum)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
+2. Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die Echo-Aufgabe aufruft.  
   
-3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
+3. Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgende Zeile sollte angezeigt werden:  
   
-     `The sum is 9`  
+    `The sum is 9`  
   
- Dieser Code definiert die Inlineaufgabe „Adder“ und verfügt über die beiden erforderlichen ganzzahligen Eingabeparameter „A“ und „B“ sowie über den ganzzahligen Ausgabeparameter „C“. Die Adder-Aufgabe fügt die beiden Eingabeparameter hinzu und gibt die Summe im Ausgabeparameter zurück. Die Summe wird als MSBuild-Eigenschaft `Sum` ausgegeben. Die Werte der Eingabeparameter werden festgelegt, wenn das TestBuild-Ziel die Adder-Aufgabe aufruft.  
+   Dieser Code definiert die Inlineaufgabe „Adder“ und verfügt über die beiden erforderlichen ganzzahligen Eingabeparameter „A“ und „B“ sowie über den ganzzahligen Ausgabeparameter „C“. Die Adder-Aufgabe fügt die beiden Eingabeparameter hinzu und gibt die Summe im Ausgabeparameter zurück. Die Summe wird als MSBuild-Eigenschaft `Sum` ausgegeben. Die Werte der Eingabeparameter werden festgelegt, wenn das TestBuild-Ziel die Adder-Aufgabe aufruft.  
   
 ## <a name="define-the-regx-task"></a>Definieren der RegX-Aufgabe  
  Erstellen Sie eine Inlineaufgabe, die eine Elementgruppe sowie einen regulären Ausdruck akzeptiert und eine Liste aller Elemente mit Dateiinhalten zurückgibt, die mit dem Ausdruck übereinstimmen.  
   
 #### <a name="to-define-the-regx-task"></a>So definieren Sie die RegX-Aufgabe  
   
-1.  Ersetzen Sie im Code-Editor die Adder-Aufgabe und das TestBuild-Ziel durch den folgenden Code.  
+1. Ersetzen Sie im Code-Editor die Adder-Aufgabe und das TestBuild-Ziel durch den folgenden Code.  
   
-    ```xml  
-    <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Expression Required="true" />  
-        <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
-        <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Using Namespace="System.Text.RegularExpressions"/>  
-        <Code Type="Fragment" Language="cs">  
-    <![CDATA[  
-          if (Files.Length > 0)  
-          {  
-            Result = new TaskItem[Files.Length];  
-            for (int i = 0; i < Files.Length; i++)  
-            {  
-              ITaskItem item = Files[i];  
-              string path = item.GetMetadata("FullPath");  
-              using(StreamReader rdr = File.OpenText(path))  
-              {  
-                if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
-                {  
-                  Result[i] = new TaskItem(item.ItemSpec);  
-                }  
-              }  
-            }  
-          }  
-    ]]>  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <RegX Expression="public|protected" Files="@(Compile)">  
-        <Output ItemName="MatchedFiles" TaskParameter="Result" />  
-      </RegX>  
-      <Message Text="Input files: @(Compile)" Importance="High" />  
-      <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Expression Required="true" />  
+       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+       <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Using Namespace="System.Text.RegularExpressions"/>  
+       <Code Type="Fragment" Language="cs">  
+   <![CDATA[  
+         if (Files.Length > 0)  
+         {  
+           Result = new TaskItem[Files.Length];  
+           for (int i = 0; i < Files.Length; i++)  
+           {  
+             ITaskItem item = Files[i];  
+             string path = item.GetMetadata("FullPath");  
+             using(StreamReader rdr = File.OpenText(path))  
+             {  
+               if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
+               {  
+                 Result[i] = new TaskItem(item.ItemSpec);  
+               }  
+             }  
+           }  
+         }  
+   ]]>  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <RegX Expression="public|protected" Files="@(Compile)">  
+       <Output ItemName="MatchedFiles" TaskParameter="Result" />  
+     </RegX>  
+     <Message Text="Input files: @(Compile)" Importance="High" />  
+     <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die RegX-Aufgabe aufruft.  
+2. Geben Sie **msbuild** ohne Befehlsoptionen in das **Eingabeaufforderungsfenster** ein, und drücken Sie anschließend die **Eingabetaste**. Standardmäßig wird so das TestBuild-Standardziel verarbeitet, das die RegX-Aufgabe aufruft.  
   
-3.  Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgenden Zeilen sollten angezeigt werden:  
+3. Untersuchen Sie die Ausgabe im **Eingabeaufforderungsfenster**. Die folgenden Zeilen sollten angezeigt werden:  
   
-    ```
-    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
-    ```
-    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
- Dieser Code definiert eine Inlineaufgabe mit dem Namen „RegX“ und verfügt über die folgenden drei Parameter:  
+   Dieser Code definiert eine Inlineaufgabe mit dem Namen „RegX“ und verfügt über die folgenden drei Parameter:  
   
--   `Expression` ist ein erforderlicher Zeichenfolgen-Eingabeparameter, der über einen Wert verfügt, der mit dem regulären Ausdruck übereinstimmt. In diesem Beispiel stimmt der Ausdruck mit dem Wort „public“ oder „protected“ überein.  
+- `Expression` ist ein erforderlicher Zeichenfolgen-Eingabeparameter, der über einen Wert verfügt, der mit dem regulären Ausdruck übereinstimmt. In diesem Beispiel stimmt der Ausdruck mit dem Wort „public“ oder „protected“ überein.  
   
--   `Files` ist ein erforderlicher Eingabeparameter für Elementlisten, der über eine Liste von Dateien als Wert verfügt, die nach der Übereinstimmung durchsucht werden sollen. In diesem Beispiel ist `Files` auf das Element `Compile` festgelegt, das die Projektquelldateien aufführt.  
+- `Files` ist ein erforderlicher Eingabeparameter für Elementlisten, der über eine Liste von Dateien als Wert verfügt, die nach der Übereinstimmung durchsucht werden sollen. In diesem Beispiel ist `Files` auf das Element `Compile` festgelegt, das die Projektquelldateien aufführt.  
   
--   `Result` ist ein Ausgabeparameter, der über eine Liste mit Dateien als Wert verfügt, deren Inhalt mit dem regulären Ausdruck übereinstimmt.  
+- `Result` ist ein Ausgabeparameter, der über eine Liste mit Dateien als Wert verfügt, deren Inhalt mit dem regulären Ausdruck übereinstimmt.  
   
- Der Wert der Eingabeparameter wird festgelegt, wenn das TestBuild-Ziel die RegX-Aufgabe aufruft. Die RegX-Aufgabe liest jede Datei und gibt die Liste der Dateien zurück, die mit dem regulären Ausdruck übereinstimmen. Diese Liste wird als `Result`-Ausgabeparameter zurückgegeben, der als MSBuild-Element `MatchedFiles` ausgegeben wird.  
+  Der Wert der Eingabeparameter wird festgelegt, wenn das TestBuild-Ziel die RegX-Aufgabe aufruft. Die RegX-Aufgabe liest jede Datei und gibt die Liste der Dateien zurück, die mit dem regulären Ausdruck übereinstimmen. Diese Liste wird als `Result`-Ausgabeparameter zurückgegeben, der als MSBuild-Element `MatchedFiles` ausgegeben wird.  
   
 ### <a name="handle-reserved-characters"></a>Verwenden reservierter Zeichen  
  Der MSBuild-Parser verarbeitet Inlineaufgaben als XML. Zeichen, deren Bedeutung in XML reserviert ist, z.B. „,\<“ und „>“, werden erkannt und behandelt, als ob es sich um XML- und nicht um .NET-Quellcode handelt. Wenn Sie die reservierten Zeichen in Codeausdrücke einfügen möchten, z.B. `Files.Length > 0`, schreiben Sie das `Code`-Element so, dass die zugehörigen Inhalte in einem CDATA-Ausdruck enthalten sind:  

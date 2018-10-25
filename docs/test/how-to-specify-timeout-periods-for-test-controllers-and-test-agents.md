@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827934"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents
 
@@ -29,7 +29,7 @@ Sowohl der Testcontroller als auch der Test-Agent verfügen über mehrere Timeou
 -   Testcontroller: *QTController.exe.config*
 
     |Schlüsselname|Beschreibung |Wert|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Die Anzahl von Sekunden, während der auf eine Pinganforderung des Agents gewartet wird, bevor die Verbindung als unterbrochen gilt.|"n" Sekunden.|
     |AgentSyncTimeoutInSeconds|Beim Starten eines synchronisierenden Testlaufs die Anzahl von Sekunden, während der auf die Synchronisierung aller Agents gewartet wird, bevor der Testlauf abgebrochen wird.|"n" Sekunden.|
     |AgentInitializeTimeout|Die Anzahl von Sekunden, während der am Anfang eines Testlaufs auf die Initialisierung aller Agents und der zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120 (zwei Minuten)".|
@@ -38,7 +38,7 @@ Sowohl der Testcontroller als auch der Test-Agent verfügen über mehrere Timeou
 -   Test-Agent: *QTAgentService.exe.config*
 
     |Schlüsselname|Beschreibung |Wert|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standard: "30 (dreißig Sekunden)".|
     |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standard: "600 (zehn Minuten)".|
     |StopTestRunCallTimeoutInSeconds|Die Anzahl von Sekunden, während der auf den Aufruf zum Beenden des Testlaufs gewartet wird.|"n" Sekunden. Standard: "120 (zwei Minuten)".|

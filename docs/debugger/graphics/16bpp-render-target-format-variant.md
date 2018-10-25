@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832887"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 Bit pro Pixel-Renderzielformat-Variante
 Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf DXGI_FORMAT_B5G6R5_UNORM.  
@@ -43,9 +43,9 @@ Anwendungen, die Teil einer Swapkette erläutert haben ein Hintergrundpuffer-For
 2. Kopieren Sie das Renderziel auf die der Swapkette, indem Sie eine Vollbild-Quad mit dem Renderziel als Quelltextur zeichnen.
 3. Rufen Sie auf Ihrer Swapkette vorhanden.
 
- Wenn diese Strategie mehr Bandbreite als genutzt werden, indem Sie das Renderziel in der Swapkette kopieren gespeichert wird, wird dann Renderingleistung verbessert.
+   Wenn diese Strategie mehr Bandbreite als genutzt werden, indem Sie das Renderziel in der Swapkette kopieren gespeichert wird, wird dann Renderingleistung verbessert.
 
- GPU-Architekturen, die Kachel-Rendering-Techniken verwenden sehen beachtliche Leistungsvorteile mithilfe eines 16 Bit pro Pixel-Frame-Puffer-Formats. Diese Verbesserung ist, da ein größerer Teil der Framepuffer im Puffercache für jede Kachel in der lokalen Frame eingepasst werden kann. Kachel-Rendering-Architekturen sind manchmal in GPUs in mobilen Handsets und Tablet-Computern zu finden; außerhalb dieser Nische kommen sie selten vor.  
+   GPU-Architekturen, die Kachel-Rendering-Techniken verwenden sehen beachtliche Leistungsvorteile mithilfe eines 16 Bit pro Pixel-Frame-Puffer-Formats. Diese Verbesserung ist, da ein größerer Teil der Framepuffer im Puffercache für jede Kachel in der lokalen Frame eingepasst werden kann. Kachel-Rendering-Architekturen sind manchmal in GPUs in mobilen Handsets und Tablet-Computern zu finden; außerhalb dieser Nische kommen sie selten vor.  
   
 ## <a name="remarks"></a>Hinweise  
  Das Renderzielfomat wird mit jedem Aufruf von `ID3D11Device::CreateTexture2D`, der ein Renderziel erstellt, auf DXGI_FORMAT_B5G6R5_UNORM zurückgesetzt. Vor allem wird das Format überschrieben, wenn das in pDesc übergebene D3D11_TEXTURE2D_DESC-Objekt eines der folgenden Renderziele beschreibt:  

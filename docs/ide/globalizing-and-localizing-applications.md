@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942467"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863595"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
 
@@ -40,7 +40,7 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Enthält Hintergrundinformationen zum Programmieren für ein internationales Publikum.
+- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Enthält Hintergrundinformationen zum Programmieren für ein internationales Publikum.
 - [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview) Bietet eine Einführung in die Klassen, Schnittstellen und Werttypen, die den Entwicklungsprozess beschleunigen und optimieren und den Zugriff auf Systemfunktionen ermöglichen.
 - <xref:System.Globalization> zeigt die Klassen in diesem Namespace auf, die kulturelle Informationen definieren, z.B. Sprache, Land/Region, verwendete Kalender, Datumsformat, Währung und Zahlen sowie die Sortierreihenfolge für Zeichenfolgen.
 - <xref:System.Resources> zeigt die Klassen und Schnittstellen in diesem Namespace auf, mit denen Entwickler verschiedene kulturspezifische Ressourcen für eine Anwendung erstellen, speichern und verwalten können.

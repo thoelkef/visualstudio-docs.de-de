@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821486"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -36,15 +36,15 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Erstellen eines Projekts für eine Windows-Klassenbibliothek und eines Testprojekts
 
-1.  Erstellen Sie in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
+1. Erstellen Sie in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
 
-2.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Klicken Sie dann zuerst auf **Hinzufügen** und anschließend auf **Neues Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf **Testen**.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Klicken Sie dann zuerst auf **Hinzufügen** und anschließend auf **Neues Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf **Testen**.
 
-3.  Wählen Sie im mittleren Bereich **Komponententestprojekt** aus, und übernehmen Sie den Standardnamen `UnitTestProject1`. Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.
+3. Wählen Sie im mittleren Bereich **Komponententestprojekt** aus, und übernehmen Sie den Standardnamen `UnitTestProject1`. Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.
 
-     ![Dialogfeld "Neues Testprojekt"](../ide/media/newproject_test.png)
+    ![Dialogfeld "Neues Testprojekt"](../ide/media/newproject_test.png)
 
-4.  Klicken Sie auf **OK**, um das Dialogfeld **Neues Projekt** zu schließen.
+4. Klicken Sie auf **OK**, um das Dialogfeld **Neues Projekt** zu schließen.
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Hinzufügen eines Verweises auf das Klassenbibliotheksprojekt
 
@@ -58,20 +58,20 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generieren einer neuen Klasse aus einem Komponententest
 
-1.  Das Testprojekt enthält eine Datei mit dem Namen *UnitTest1*. Doppelklicken Sie auf diese Datei im **Projektmappen-Explorer**, um sie im Code-Editor zu öffnen. Eine Testklasse und eine Testmethode wurden generiert.
+1. Das Testprojekt enthält eine Datei mit dem Namen *UnitTest1*. Doppelklicken Sie auf diese Datei im **Projektmappen-Explorer**, um sie im Code-Editor zu öffnen. Eine Testklasse und eine Testmethode wurden generiert.
 
-2.  Suchen Sie die Deklaration für die Klasse `UnitTest1` , und benennen Sie sie um in `AutomobileTest`.
+2. Suchen Sie die Deklaration für die Klasse `UnitTest1` , und benennen Sie sie um in `AutomobileTest`.
 
- > [!NOTE]
- >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
+   > [!NOTE]
+   >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
 
-3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
+3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
 
-     ![Schnellaktionen in Visual Basic](../ide/media/genclass_underlinevb.png)
+    ![Schnellaktionen in Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Schnellaktionen in C&#35;](../ide/media/genclass_underline.png)
+    ![Schnellaktionen in C&#35;](../ide/media/genclass_underline.png)
 
-4.  Klicken Sie auf die Glühbirne **Schnellaktionen**. Es wird eine Fehlermeldung angezeigt, die meldet, dass der `Automobile`-Typ nicht definiert ist. Außerdem werden einige Lösungen für das Problem angezeigt.
+4. Klicken Sie auf die Glühbirne **Schnellaktionen**. Es wird eine Fehlermeldung angezeigt, die meldet, dass der `Automobile`-Typ nicht definiert ist. Außerdem werden einige Lösungen für das Problem angezeigt.
 
 5. Sie können auch auf **Neuen Typ generieren...** klicken, um das Dialogfeld **Typ generieren** zu öffnen. In diesem Dialogfeld werden verschiedene Optionen dargestellt. Dies umfasst u. a. die Typgenerierung in einem anderen Projekt.
 
@@ -79,9 +79,9 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
      ![Dialogfeld "Neuen Typ generieren"](../ide/media/genotherdialog.png)
 
-6.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.
+7. Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.
 
-7.  Überprüfen Sie im **Projektmappen-Explorer** unter dem Projektknoten **GFUDemo_VB** oder **GFUDemo_CS**, ob die neue Datei *Automobile.vb* bzw. *Automobile.cs* vorhanden ist. Im Code-Editor liegt der Fokus noch immer auf `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, wodurch Sie den Test mit so wenigen Unterbrechungen wie möglich weiterschreiben können.
+8. Überprüfen Sie im **Projektmappen-Explorer** unter dem Projektknoten **GFUDemo_VB** oder **GFUDemo_CS**, ob die neue Datei *Automobile.vb* bzw. *Automobile.cs* vorhanden ist. Im Code-Editor liegt der Fokus noch immer auf `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, wodurch Sie den Test mit so wenigen Unterbrechungen wie möglich weiterschreiben können.
 
 ### <a name="generate-a-property-stub"></a>Generieren eines Eigenschaftsstubs
 Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse über zwei öffentliche Eigenschaften namens `Model` und `TopSpeed`verfügt. Diese Eigenschaften müssen mit den Standardwerten von `"Not specified"` und `-1` durch den Standardkonstruktor initialisiert werden. Im folgenden Unittest wird überprüft, ob der Standardkonstruktor die Eigenschaften auf ihre richtigen Standardwerte festlegt.

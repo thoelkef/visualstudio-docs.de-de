@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827973"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
 #### <a name="to-open-the-class-details-window"></a>So öffnen Sie das Klassendetailsfenster  
   
-1.  Klicken Sie mit der rechten Maustaste auf eine Klasse im Diagramm, um ein Kontextmenü anzuzeigen.  
+1. Klicken Sie mit der rechten Maustaste auf eine Klasse im Diagramm, um ein Kontextmenü anzuzeigen.  
   
-2.  Klicken Sie im Kontextmenü auf **Klassendetailsfenster**.  
+2. Klicken Sie im Kontextmenü auf **Klassendetailsfenster**.  
   
- – oder –  
+   – oder –  
   
 -   Zeigen Sie im Menü „Ansicht“ auf **Weitere Fenster**, und klicken Sie dann auf **Klassendetails**.  
   
@@ -194,31 +194,31 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
  Parameterzeilen enthalten die folgenden Elemente:  
   
--   **Name**  
+- **Name**  
   
-     In der Spalte **Name** in einer Parameterzeile wird der Name des Parameters angezeigt. Dieser Name wird auch im Eigenschaftenfenster in der Eigenschaft **Name** angezeigt. In dieser Zelle können Sie den Namen eines nicht schreibgeschützten Parameters ändern.  
+   In der Spalte **Name** in einer Parameterzeile wird der Name des Parameters angezeigt. Dieser Name wird auch im Eigenschaftenfenster in der Eigenschaft **Name** angezeigt. In dieser Zelle können Sie den Namen eines nicht schreibgeschützten Parameters ändern.  
   
-     Zeigen Sie auf den Parameternamen, um ihn anzuzeigen, wenn die Spalte **Name** nicht breit genug ist, um den Namen vollständig anzuzeigen.  
+   Zeigen Sie auf den Parameternamen, um ihn anzuzeigen, wenn die Spalte **Name** nicht breit genug ist, um den Namen vollständig anzuzeigen.  
   
--   **Type**  
+- **Type**  
   
-     In der Zelle **Parametertyp** wird IntelliSense verwendet, d.h. Sie können einen Typ aus einer Liste aller im aktuellen Projekt oder in Projekten, auf die verwiesen wird, verfügbaren Typen auswählen.  
+   In der Zelle **Parametertyp** wird IntelliSense verwendet, d.h. Sie können einen Typ aus einer Liste aller im aktuellen Projekt oder in Projekten, auf die verwiesen wird, verfügbaren Typen auswählen.  
   
--   **Modifizierer**  
+- **Modifizierer**  
   
-     In der Zelle **Modifizierer** in einer Parameterzeile kann ein neuer Modifizierer für den Parameter eingegeben und angezeigt werden. Wenn Sie einen neuen Parametermodifizierer eingeben möchten, verwenden Sie das Dropdown-Listenfeld, um in C# zwischen **None**, **ref**, **out** oder **params** und in VB zwischen **ByVal**, **ByRef** oder **ParamArray** zu wählen.  
+   In der Zelle **Modifizierer** in einer Parameterzeile kann ein neuer Modifizierer für den Parameter eingegeben und angezeigt werden. Wenn Sie einen neuen Parametermodifizierer eingeben möchten, verwenden Sie das Dropdown-Listenfeld, um in C# zwischen **None**, **ref**, **out** oder **params** und in VB zwischen **ByVal**, **ByRef** oder **ParamArray** zu wählen.  
   
--   **Zusammenfassung**  
+- **Zusammenfassung**  
   
-     In der Zelle **Zusammenfassung** in einer Parameterzeile können Sie Codekommentare eingeben, die in IntelliSense angezeigt werden, wenn Sie den Parameter in den Code-Editor eingeben.  
+   In der Zelle **Zusammenfassung** in einer Parameterzeile können Sie Codekommentare eingeben, die in IntelliSense angezeigt werden, wenn Sie den Parameter in den Code-Editor eingeben.  
   
--   **\<Parameter hinzufügen>**  
+- **\<Parameter hinzufügen>**  
   
-     Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Parametereigenschaften im Eigenschaftenfenster**  
+  **Parametereigenschaften im Eigenschaftenfenster**  
   
- Im Eigenschaftenfenster werden die gleichen Parametereigenschaften wie im Klassendetailsfenster angezeigt: **Name**, **Type**, **Modifier**, **Summary** sowie **Optional Default**. Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.  
+  Im Eigenschaftenfenster werden die gleichen Parametereigenschaften wie im Klassendetailsfenster angezeigt: **Name**, **Type**, **Modifier**, **Summary** sowie **Optional Default**. Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.  
   
 > [!NOTE]
 >  Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
  Alle Zellen im Klassendetailsfenster sind bis auf einige Ausnahmen bearbeitbar:  
   
--   Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
+- Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
   
--   Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.  
+- Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.  
   
--   Alle Generika weisen im Klassendetailsfenster schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.  
+- Alle Generika weisen im Klassendetailsfenster schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.  
   
--   Der Name des für einen generischen Typ definierten Typparameters ist schreibgeschützt.  
+- Der Name des für einen generischen Typ definierten Typparameters ist schreibgeschützt.  
   
--   Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.  
+- Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.  
   
- **Klassendetailsfenster und Quellcode**  
+  **Klassendetailsfenster und Quellcode**  
   
--   Klicken Sie zum Anzeigen von Quellcode im Klassendetailsfenster (oder im Klassen-Designer) mit der rechten Maustaste auf eine Form, und klicken Sie anschließend auf Code anzeigen. Die Quellcodedatei wird geöffnet, und es wird ein Bildlauf zum ausgewählten Element durchgeführt.  
+- Klicken Sie zum Anzeigen von Quellcode im Klassendetailsfenster (oder im Klassen-Designer) mit der rechten Maustaste auf eine Form, und klicken Sie anschließend auf Code anzeigen. Die Quellcodedatei wird geöffnet, und es wird ein Bildlauf zum ausgewählten Element durchgeführt.  
   
--   Jede Änderung des Quellcodes wird sofort durch die Anzeige von Signaturinformationen im Klassen-Designer und im Klassendetailsfenster sichtbar. Falls das Klassendetailsfenster zu diesem Zeitpunkt geschlossen ist, werden die neuen Informationen beim nächsten Öffnen des Fensters sichtbar.  
+- Jede Änderung des Quellcodes wird sofort durch die Anzeige von Signaturinformationen im Klassen-Designer und im Klassendetailsfenster sichtbar. Falls das Klassendetailsfenster zu diesem Zeitpunkt geschlossen ist, werden die neuen Informationen beim nächsten Öffnen des Fensters sichtbar.  
   
--   Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.  
+- Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.  
   
- **Zwischenablagefunktionalität im Klassendetailsfenster**  
+  **Zwischenablagefunktionalität im Klassendetailsfenster**  
   
- Sie können Felder oder Zeilen im Klassendetailsfenster kopieren oder ausschneiden und in einen anderen Typ einfügen. Es können nur Zeilen ausgeschnitten werden, die nicht schreibgeschützt sind. Wenn Sie die Zeile einfügen, wird zur Vermeidung eines Konflikts im Klassendetailsfenster ein neuer (vom Namen der kopierten Zeile abgeleiteter) Name zugewiesen.  
+  Sie können Felder oder Zeilen im Klassendetailsfenster kopieren oder ausschneiden und in einen anderen Typ einfügen. Es können nur Zeilen ausgeschnitten werden, die nicht schreibgeschützt sind. Wenn Sie die Zeile einfügen, wird zur Vermeidung eines Konflikts im Klassendetailsfenster ein neuer (vom Namen der kopierten Zeile abgeleiteter) Name zugewiesen.  
   
 ##  <a name="ReadOnlyInfo"></a> Anzeigen von schreibgeschützten Informationen  
  Im Klassen-Designer und im Klassendetailsfenster können die Typen (und Member der Typen) für folgende Elemente angezeigt werden:  
   
--   ein Projekt, das ein Klassendiagramm enthält  
+- ein Projekt, das ein Klassendiagramm enthält  
   
--   ein Projekt, auf das von einem Projekt verwiesen wird, das ein Klassendiagramm enthält  
+- ein Projekt, auf das von einem Projekt verwiesen wird, das ein Klassendiagramm enthält  
   
--   eine Assembly, auf die von einem Projekt verwiesen wird, das ein Klassendiagramm enthält  
+- eine Assembly, auf die von einem Projekt verwiesen wird, das ein Klassendiagramm enthält  
   
- In den beiden letzten Fällen ist die Entität (ein Typ oder Member), auf die verwiesen wird, im entsprechenden Klassendiagramm schreibgeschützt.  
+  In den beiden letzten Fällen ist die Entität (ein Typ oder Member), auf die verwiesen wird, im entsprechenden Klassendiagramm schreibgeschützt.  
   
- Ein gesamtes Projekt oder Projektteile, z. B. einzelne Dateien, können schreibgeschützt sein. Ein Projekt oder eine zugehörige Datei ist in der Regel dann schreibgeschützt, wenn die Quellcodeverwaltung verwendet wird (und das Projekt nicht ausgecheckt wurde), das Projekt oder die Datei in einer externen Assembly enthalten ist oder das Betriebssystem die Dateien als schreibgeschützt festlegt.  
+  Ein gesamtes Projekt oder Projektteile, z. B. einzelne Dateien, können schreibgeschützt sein. Ein Projekt oder eine zugehörige Datei ist in der Regel dann schreibgeschützt, wenn die Quellcodeverwaltung verwendet wird (und das Projekt nicht ausgecheckt wurde), das Projekt oder die Datei in einer externen Assembly enthalten ist oder das Betriebssystem die Dateien als schreibgeschützt festlegt.  
   
- **Quellcodeverwaltung**  
+  **Quellcodeverwaltung**  
   
- Da ein Klassendiagramm in einem Projekt als Datei gespeichert wird, müssen Sie das Projekt auschecken, damit im Klassen-Designer oder Klassendetailsfenster vorgenommene Änderungen übernommen werden.  
+  Da ein Klassendiagramm in einem Projekt als Datei gespeichert wird, müssen Sie das Projekt auschecken, damit im Klassen-Designer oder Klassendetailsfenster vorgenommene Änderungen übernommen werden.  
   
- **Schreibgeschützte Projekte**  
+  **Schreibgeschützte Projekte**  
   
- Das Projekt ist möglicherweise nicht aufgrund der Quellcodeverwaltung, sondern aus einem anderen Grund schreibgeschützt. Wenn Sie das Projekt schließen, wird ein Dialogfeld mit der Frage angezeigt, ob die Projektdatei überschrieben werden soll, Änderungen verworfen werden sollen oder der Vorgang abgebrochen werden soll. Wenn Sie festlegen, dass die Projektdatei überschrieben werden soll, werden die Projektdateien überschrieben und mit Lese- und Schreibzugriff versehen. Die neue Klassendiagrammdatei wird hinzugefügt.  
+  Das Projekt ist möglicherweise nicht aufgrund der Quellcodeverwaltung, sondern aus einem anderen Grund schreibgeschützt. Wenn Sie das Projekt schließen, wird ein Dialogfeld mit der Frage angezeigt, ob die Projektdatei überschrieben werden soll, Änderungen verworfen werden sollen oder der Vorgang abgebrochen werden soll. Wenn Sie festlegen, dass die Projektdatei überschrieben werden soll, werden die Projektdateien überschrieben und mit Lese- und Schreibzugriff versehen. Die neue Klassendiagrammdatei wird hinzugefügt.  
   
- **Schreibgeschützte Typen**  
+  **Schreibgeschützte Typen**  
   
- Wenn Sie versuchen, ein Projekt zu speichern, das einen Typ enthält, dessen Quellcodedatei schreibgeschützt ist, wird das Dialogfeld **Schreibgeschützte Datei speichern** angezeigt. Hier haben Sie die Möglichkeit, die Datei unter einem neuen Namen und/oder an einem neuen Speicherort zu speichern oder die schreibgeschützte Datei zu überschreiben. Wenn Sie die Datei überschreiben, ist die Datei nicht mehr schreibgeschützt.  
+  Wenn Sie versuchen, ein Projekt zu speichern, das einen Typ enthält, dessen Quellcodedatei schreibgeschützt ist, wird das Dialogfeld **Schreibgeschützte Datei speichern** angezeigt. Hier haben Sie die Möglichkeit, die Datei unter einem neuen Namen und/oder an einem neuen Speicherort zu speichern oder die schreibgeschützte Datei zu überschreiben. Wenn Sie die Datei überschreiben, ist die Datei nicht mehr schreibgeschützt.  
   
- Weist eine Codedatei einen Syntaxfehler auf, werden die Formen, die den Code in der Datei anzeigen, so lange mit Schreibschutz versehen, bis der Syntaxfehler behoben wird. Formen in diesem Zustand zeigen roten Text und ein rotes Symbol mit der Quickinfo "Die Quellcodedatei enthält einen Analysefehler" an.  
+  Weist eine Codedatei einen Syntaxfehler auf, werden die Formen, die den Code in der Datei anzeigen, so lange mit Schreibschutz versehen, bis der Syntaxfehler behoben wird. Formen in diesem Zustand zeigen roten Text und ein rotes Symbol mit der Quickinfo "Die Quellcodedatei enthält einen Analysefehler" an.  
   
- Ein Typ, auf den verwiesen wird (z. B. ein .NET Framework-Typ) und der unter einem anderen Projektknoten oder unter dem Knoten einer Assembly, auf die verwiesen wird, vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.  
+  Ein Typ, auf den verwiesen wird (z. B. ein .NET Framework-Typ) und der unter einem anderen Projektknoten oder unter dem Knoten einer Assembly, auf die verwiesen wird, vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.  
   
- Indexer sind in Code und im Klassendetailsfenster mit Lese- und Schreibzugriff versehen, der Indexername hingegen ist schreibgeschützt.  
+  Indexer sind in Code und im Klassendetailsfenster mit Lese- und Schreibzugriff versehen, der Indexername hingegen ist schreibgeschützt.  
   
- Partielle Methoden können nicht mithilfe des Klassen-Designers oder des Klassendetailsfensters bearbeitet werden. Verwenden Sie dazu den Code-Editor.  
+  Partielle Methoden können nicht mithilfe des Klassen-Designers oder des Klassendetailsfensters bearbeitet werden. Verwenden Sie dazu den Code-Editor.  
   
- Systemeigener C++-Code kann nicht mithilfe des Klassen-Designers oder des Klassendetailsfensters bearbeitet werden. Verwenden Sie dazu den Code-Editor.  
+  Systemeigener C++-Code kann nicht mithilfe des Klassen-Designers oder des Klassendetailsfensters bearbeitet werden. Verwenden Sie dazu den Code-Editor.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
