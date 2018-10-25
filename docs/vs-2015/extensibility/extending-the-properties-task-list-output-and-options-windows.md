@@ -20,12 +20,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf62ce18094b7580d0e4d2d2dd2cb2b6ab139287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836475"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster für Eigenschaften, Aufgabenlisten, Ausgaben und Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,33 +102,33 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 ## <a name="create-an-options-page"></a>Erstellen einer Optionsseite  
  Sie können angeben, dass eine Seite in der **Optionen** Dialogfeld, sodass Benutzer die Einstellungen für das Toolfenster ändern können. Erstellen einer Optionsseite erfordert eine Klasse, die die Optionen und einen Eintrag in der Datei TodoListPackage.cs oder TodoListPackage.vb beschreibt.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `ToolsOptions.cs`. Legen Sie die ToolsOptions-Klasse, die von erben <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Fügen Sie eine Klasse, die mit dem Namen `ToolsOptions.cs`. Legen Sie die ToolsOptions-Klasse, die von erben <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Fügen Sie die folgenden using-Anweisung:  
+2. Fügen Sie die folgenden using-Anweisung:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  Die Seite "Optionen" in dieser exemplarischen Vorgehensweise stellt nur eine Option, die mit dem Namen DaysAhead bereit. Fügen Sie ein privates Feld namens **DaysAhead** und eine Eigenschaft mit dem Namen **DaysAhead** der ToolsOptions-Klasse:  
+3. Die Seite "Optionen" in dieser exemplarischen Vorgehensweise stellt nur eine Option, die mit dem Namen DaysAhead bereit. Fügen Sie ein privates Feld namens **DaysAhead** und eine Eigenschaft mit dem Namen **DaysAhead** der ToolsOptions-Klasse:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Nachdem Sie das Projekt auf die Optionsseite aufmerksam machen müssen.  
+   Nachdem Sie das Projekt auf die Optionsseite aufmerksam machen müssen.  
   
 #### <a name="make-the-options-page-available-to-users"></a>Die Seite "Optionen" für Benutzer verfügbar machen  
   

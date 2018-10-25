@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910666"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  Um eine Adresse zu übersetzen `addrA`, in der Abbildung ein in eine Adresse `addrB`, führen Sie in Abbildung B die folgenden Schritte aus:  
   
-1.  Suchen Sie die Zuordnung für den Eintrag, `e`, mit dem größten `rva` kleiner als oder gleich `addrA`.  
+1. Suchen Sie die Zuordnung für den Eintrag, `e`, mit dem größten `rva` kleiner als oder gleich `addrA`.  
   
-2.  Legen Sie `delta = addrA – e.rva`.  
+2. Legen Sie `delta = addrA – e.rva`.  
   
-3.  Legen Sie `addrB = e.rvaTo + delta`.  
+3. Legen Sie `addrB = e.rvaTo + delta`.  
   
- Ein Array von `DiaAddressMapEntry` Strukturen übergeben wird, um die [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode.  
+   Ein Array von `DiaAddressMapEntry` Strukturen übergeben wird, um die [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: dia2.h  

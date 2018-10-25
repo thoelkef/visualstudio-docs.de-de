@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS90 | Microsoft Docs
+title: BPREQI_FIELDS90 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef4363b210fff059a88f80bd7377d91971ef2bce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903165"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Listet die gültigen Werte, die die Informationen abgerufen werden sollen einen Breakpoint-Anforderung angeben. Diese Enumeration erweitert die [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration.  
+Listet die gültigen Werte, die die Informationen abgerufen werden sollen eine Haltepunkt-Anforderung angeben. Diese Enumeration erweitert die [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -78,7 +78,7 @@ public enum enum_BPREQI_FIELDS90
   
 #### <a name="parameters"></a>Parameter  
  BPREQI90_BPLOCATION  
- Initialisiert werden, oder verwenden Sie die `bpLocation` Feld (breakpointposition), der die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.  
+ Initialisieren oder verwenden Sie die `bpLocation` (Position des Haltepunkts) Feld der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.  
   
  BPREQI90_LANGUAGE  
  Initialisieren oder verwenden Sie die `guidLanguage` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.  
@@ -99,13 +99,13 @@ public enum enum_BPREQI_FIELDS90
  Initialisieren oder verwenden Sie die `bpPassCount` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.  
   
  BPREQI90_CONDITION  
- Initialisiert werden, oder verwenden Sie die `bpCondition` Feld (haltepunktbedingung), der die `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.  
+ Initialisieren oder verwenden Sie die `bpCondition` (Bedingung für Haltepunkt) Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.  
   
  BPREQI90_FLAGS  
  Initialisieren oder verwenden Sie die `dwFlags` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.  
   
  BPREQI90_ALLOLDFIELDS  
- Initialisieren oder für alle Felder verwenden, die von der `BP_REQUEST_INFO` Struktur.  
+ Initialisieren oder verwenden Sie alle Felder für die von der `BP_REQUEST_INFO` Struktur.  
   
  BPREQI90_VENDOR  
  Initialisieren oder verwenden Sie die `guidVendor` Feld `BP_REQUEST_INFO2` Struktur.  

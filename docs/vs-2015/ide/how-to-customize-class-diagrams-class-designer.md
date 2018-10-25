@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950975"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Anzeigen ausgeblendeter Beziehungen  
   
-1.  Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.  
+1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Typ mit der ausgeblendeten Zuordnung oder Vererbung.  
+2. Klicken Sie mit der rechten Maustaste auf den Typ mit der ausgeblendeten Zuordnung oder Vererbung.  
   
- Klicken Sie für Zuordnungszeilen auf **Alle Member anzeigen**, und klicken Sie für Vererbungszeilen auf **Basisklasse anzeigen** oder **Abgeleitete Klassen anzeigen**.  
+   Klicken Sie für Zuordnungszeilen auf **Alle Member anzeigen**, und klicken Sie für Vererbungszeilen auf **Basisklasse anzeigen** oder **Abgeleitete Klassen anzeigen**.  
   
 ##  <a name="RemoveCodeAndShape"></a> Entfernen einer Typform aus einem Klassendiagramm  
  Sie können eine Typform aus dem Klassendiagramm entfernen, ohne dass dies Auswirkungen auf den zugrunde liegenden Code des Typs hat. Das Entfernen von Typformen aus einem Klassendiagramm wirkt sich nur auf das jeweilige Diagramm aus. Der zugrunde liegende Code, der den Typ definiert, und andere Diagramme, die den Typ anzeigen, sind nicht betroffen.  

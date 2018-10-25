@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927800"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzugte Maßnahme, die auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies wird bevorzugt, dass die Aktion mit einem Verb, z. B. geöffnet ist, verknüpft ist, die die Aktion entspricht.  
@@ -28,17 +28,17 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
 ## <a name="register-standard-verbs"></a>Registrieren Sie die standard-Verben  
  Das Betriebssystem erkennt die folgenden standard-Verben:  
   
--   Öffnen  
+- Öffnen  
   
--   Bearbeiten  
+- Bearbeiten  
   
--   Wiedergabe  
+- Wiedergabe  
   
--   Print  
+- Print  
   
--   Vorschau  
+- Vorschau  
   
- Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Z. B. Öffnen einer *.htm* Datei zeigt es im Browser ein, während der Bearbeitung einer *.htm* -Datei startet einen HTML-Editor. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.  
+  Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Z. B. Öffnen einer *.htm* Datei zeigt es im Browser ein, während der Bearbeitung einer *.htm* -Datei startet einen HTML-Editor. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.  
   
 > [!NOTE]
 >  Wenn Standardverben registrieren zu können, der Standardwert für den geöffneten Schlüssel nicht festgelegt werden. Standardmäßig ist der Wert enthält die Zeichenfolge für die Sie im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben bereit.  

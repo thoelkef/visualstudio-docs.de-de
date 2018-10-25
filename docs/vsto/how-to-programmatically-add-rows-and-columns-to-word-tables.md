@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818678"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Gewusst wie: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen
   In einer Microsoft Office Word-Tabelle werden die Zellen in Zeilen und Spalten angeordnet. Sie können die <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Rows>-Objekts verwenden, um der Tabelle Zeilen hinzuzufügen, und die <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Columns>-Objekts, um Spalten hinzuzufügen.  
@@ -32,15 +32,15 @@ ms.locfileid: "35255888"
 ## <a name="document-level-customization-examples"></a>Beispiele für die Anpassung auf Dokumentebene  
  Die folgenden Codebeispiele können in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie diese Beispiele verwenden möchten, führen Sie den Code von der `ThisDocument`-Klasse im Projekt aus. In diesen Beispielen wird davon ausgegangen, dass das mit der Anpassung verknüpfte Dokument bereits über mindestens eine Tabelle verfügt.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:  
->   
-> -   Word 2013-Dokument  
-> -   Word 2013-Vorlage  
-> -   Word 2010-Dokument  
-> -   Word 2010-Vorlage  
->   
->  Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+> 
+> - Word 2013-Dokument  
+> - Word 2013-Vorlage  
+> - Word 2010-Dokument  
+> - Word 2010-Vorlage  
+> 
+>   Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>So fügen Sie einer Tabelle eine Zeile hinzu  
   

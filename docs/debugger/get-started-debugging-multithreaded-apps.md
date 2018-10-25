@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936854"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Erste Schritte zum Debuggen von Multithreadanwendungen in Visual Studio
 Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. In diesem Tutorial wird gezeigt, wie mit Threadmarker, der **parallele Stapel** Fenster die **parallele Überwachung** bedingter Haltepunkte, Fenster und filterhaltepunkte. Dieses Tutorial dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) für Multithread-debugging, die ähnliche Schritte zeigt. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) für Multithread-debugging, die ähnliche Schritte zeigt. |
 
 Andere Themen enthalten weitere Informationen zur Verwendung von anderen Multithread-debugging-Tools:
 
@@ -217,30 +217,30 @@ Um zu Beginn dieses Lernprogramms benötigen Sie ein Multithreadanwendungsprojek
   
 #### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
   
-1.  Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.  
+1. Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.  
   
-     Im Bundsteg auf der linken Seite von der Quellcode-Editor wird ein roter Kreis. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde. 
+    Im Bundsteg auf der linken Seite von der Quellcode-Editor wird ein roter Kreis. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde. 
   
-2.  Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** (**F5**).  
+2. Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** (**F5**).  
   
-     Visual Studio erstellt die Projektmappe, die app gestartet wird, um mit dem angefügten Debugger auszuführen, und klicken Sie dann die app beendet die Ausführung am Haltepunkt.  
+    Visual Studio erstellt die Projektmappe, die app gestartet wird, um mit dem angefügten Debugger auszuführen, und klicken Sie dann die app beendet die Ausführung am Haltepunkt.  
   
-    > [!NOTE]
-    > Wenn Sie den Fokus an das Konsolenfenster wechseln, klicken Sie in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fenster den Fokus auf zurückzugebenden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Wenn Sie den Fokus an das Konsolenfenster wechseln, klicken Sie in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fenster den Fokus auf zurückzugebenden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Suchen Sie in der Quellcode-Editor nach der Zeile, die den Haltepunkt enthält:  
+3. Suchen Sie in der Quellcode-Editor nach der Zeile, die den Haltepunkt enthält:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Ermitteln Sie den Threadmarker  
 

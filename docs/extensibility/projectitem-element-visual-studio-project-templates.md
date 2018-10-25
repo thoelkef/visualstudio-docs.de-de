@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899954"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem-Element (Visual Studio-Projektvorlagen)
 Gibt eine Datei, die in der Projektvorlage enthalten ist.  
@@ -53,14 +53,14 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen und Pfad des Projektelements an, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich zum Erstellen einer Verzeichnisstruktur unterscheidet die Verzeichnisstruktur, in der Vorlage *ZIP* -Datei, oder für die Verwendung von parameterersetzungen erstellen Sie einen Elementnamen ein.|  
-|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein.|  
-|`OpenInEditor`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element soll, im entsprechenden Editor in geöffnet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Die `OpenInWebBrowser` und `OpenInHelpBrowser` Attribute werden ignoriert, auf ein Element mit einem `OpenInEditor` Wert `true`.<br /><br /> Der Standardwert ist `false`.|  
-|`OpenInWebBrowser`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element den Webbrowser geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können in einem Webbrowser geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`.|  
-|`OpenInHelpBrowser`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Hilfe-Viewer geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können im Browser Hilfe geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`.|  
-|`OpenOrder`|Optionales Attribut.<br /><br /> Gibt einen numerischen Wert für die Reihenfolge an, dass die Elemente in ihre entsprechenden Editoren geöffnet werden. Alle Werte müssen ein Vielfaches von 10 sein. Elemente mit höheren `OpenOrder` Werte zuerst geöffnet werden.|  
+| Attribut | Beschreibung |
+|---------------------| - |
+| `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen und Pfad des Projektelements an, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich zum Erstellen einer Verzeichnisstruktur unterscheidet die Verzeichnisstruktur, in der Vorlage *ZIP* -Datei, oder für die Verwendung von parameterersetzungen erstellen Sie einen Elementnamen ein. |
+| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein. |
+| `OpenInEditor` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element soll, im entsprechenden Editor in geöffnet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Die `OpenInWebBrowser` und `OpenInHelpBrowser` Attribute werden ignoriert, auf ein Element mit einem `OpenInEditor` Wert `true`.<br /><br /> Der Standardwert ist `false`. |
+| `OpenInWebBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element den Webbrowser geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können in einem Webbrowser geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
+| `OpenInHelpBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Hilfe-Viewer geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können im Browser Hilfe geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Der Standardwert ist `false`. |
+| `OpenOrder` | Optionales Attribut.<br /><br /> Gibt einen numerischen Wert für die Reihenfolge an, dass die Elemente in ihre entsprechenden Editoren geöffnet werden. Alle Werte müssen ein Vielfaches von 10 sein. Elemente mit höheren `OpenOrder` Werte zuerst geöffnet werden. |
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -91,27 +91,27 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
   
 ### <a name="to-rename-files-with-parameters"></a>Zum Umbenennen von Dateien mit Parametern  
   
-1.  Verwenden Sie die folgenden XML-Code in die *VSTEMPLATE* Datei:  
+1. Verwenden Sie die folgenden XML-Code in die *VSTEMPLATE* Datei:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Öffnen Sie die Projektdatei (*vbproj* für eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Öffnen Sie die Projektdatei (*vbproj* für eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
+3. Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
+4. Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Wenn ein Projekt aus dieser Vorlage erstellt wird, der Dateiname wird auf Grundlage der Name des Benutzers im der **neues Projekt** Dialogfelds mit der alle unsicheren Zeichen sowie Leerzeichen entfernt wurden. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
+    Wenn ein Projekt aus dieser Vorlage erstellt wird, der Dateiname wird auf Grundlage der Name des Benutzers im der **neues Projekt** Dialogfelds mit der alle unsicheren Zeichen sowie Leerzeichen entfernt wurden. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  

@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 247be4afe0b9363bd12a37ddfb753fe1a0f1c68c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898537"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Gewusst wie: Erstellen eines Basistextur-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,23 +45,23 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
   
 #### <a name="to-create-a-basic-texture-shader"></a>So erstellen Sie einen Basistexturshader  
   
-1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
+1. Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
   
-2.  Löschen Sie den Knoten **Punktfarbe**. Wählen Sie im Modus **Auswählen** den Knoten **Farbpunkt** aus, und klicken Sie anschließend in der Menüleiste auf **Bearbeiten** > **Löschen**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.  
+2. Löschen Sie den Knoten **Punktfarbe**. Wählen Sie im Modus **Auswählen** den Knoten **Farbpunkt** aus, und klicken Sie anschließend in der Menüleiste auf **Bearbeiten** > **Löschen**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.  
   
-3.  Fügen Sie einen Knoten **Textursample** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Textursample**, und verschieben Sie es auf die Entwurfsoberfläche.  
+3. Fügen Sie einen Knoten **Textursample** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Textursample**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-4.  Fügen Sie einen Knoten **Texturkoordinate** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Texturkoordinate**, und verschieben Sie es auf die Entwurfsoberfläche.  
+4. Fügen Sie einen Knoten **Texturkoordinate** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Texturkoordinate**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-5.  Wählen Sie eine Textur zum Anwenden aus. Klicken sie im Modus **Auswählen** auf den Knoten **Textursample**, und geben Sie im Fenster **Eigenschaften** die zu verwendende Textur an, indem Sie die Eigenschaft **Dateiname** verwenden.  
+5. Wählen Sie eine Textur zum Anwenden aus. Klicken sie im Modus **Auswählen** auf den Knoten **Textursample**, und geben Sie im Fenster **Eigenschaften** die zu verwendende Textur an, indem Sie die Eigenschaft **Dateiname** verwenden.  
   
-6.  Machen Sie die Textur öffentlich verfügbar. Klicken Sie auf den Knoten **Textursample**, und stellen Sie im Fenster **Eigenschaften** die Eigenschaft **Zugriff** auf **Öffentlich**. Sie können nun die Textur von einem anderen Tool wie dem **Modell-Editor** festlegen.  
+6. Machen Sie die Textur öffentlich verfügbar. Klicken Sie auf den Knoten **Textursample**, und stellen Sie im Fenster **Eigenschaften** die Eigenschaft **Zugriff** auf **Öffentlich**. Sie können nun die Textur von einem anderen Tool wie dem **Modell-Editor** festlegen.  
   
-7.  Verbinden Sie die Texturkoordinaten mit dem Textursample. Verschieben Sie im Modus **Auswählen** das Terminal **Ausgabe** des Knotens **Texturkoordinate** auf das Terminal **UV** des Knotens **Textursample**. Diese Verbindung prüft die Textur an den angegebenen Koordinaten.  
+7. Verbinden Sie die Texturkoordinaten mit dem Textursample. Verschieben Sie im Modus **Auswählen** das Terminal **Ausgabe** des Knotens **Texturkoordinate** auf das Terminal **UV** des Knotens **Textursample**. Diese Verbindung prüft die Textur an den angegebenen Koordinaten.  
   
-8.  Verbinden Sie das Textursample mit der endgültigen Farbe. Verschieben Sie das Terminal **RGB** des Knotens **Textursample** auf das Terminal **RGB** des Knotens **Endgültige Farbe**. Verschieben Sie anschließend das Terminal **Alpha** des Knotens **Textursample** auf das Terminal **Alpha** des Knotens **Endgültige Farbe**.  
+8. Verbinden Sie das Textursample mit der endgültigen Farbe. Verschieben Sie das Terminal **RGB** des Knotens **Textursample** auf das Terminal **RGB** des Knotens **Endgültige Farbe**. Verschieben Sie anschließend das Terminal **Alpha** des Knotens **Textursample** auf das Terminal **Alpha** des Knotens **Endgültige Farbe**.  
   
- In der folgenden Abbildung wird das fertige Shaderdiagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.  
+   In der folgenden Abbildung wird das fertige Shaderdiagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
 >  In dieser Abbildung wird eine Ebene als Vorschauform verwendet, und eine Textur wurde angegeben, um den Effekt des Shaders besser zu veranschaulichen.  

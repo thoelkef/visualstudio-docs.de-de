@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907143"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade der Tests der programmierten UI von Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Tests der programmierten UI enthaltende Testprojekte, die in [!INCLUDE[vs_dev10_
   
  Nach dem Anwenden des Updates werden die folgenden [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1-Toolfeatures für den Test der programmierten UI für Windows 8 verbessert:  
   
--   Sie können einen Test der programmierten UI für die Microsoft .NET Framework 4.5-basierten Windows Presentation Foundation-Steuerelemente (WPF) auf einem Computer unter Windows 8 ausführen.  
+- Sie können einen Test der programmierten UI für die Microsoft .NET Framework 4.5-basierten Windows Presentation Foundation-Steuerelemente (WPF) auf einem Computer unter Windows 8 ausführen.  
   
--   Sie können einen Test der programmierten UI für Internet Explorer 10 (64 Bit, x64) auf einem Computer unter Windows 8 ausführen.  
+- Sie können einen Test der programmierten UI für Internet Explorer 10 (64 Bit, x64) auf einem Computer unter Windows 8 ausführen.  
   
- Das Update enthält zudem Fixes für die folgenden Probleme:  
+  Das Update enthält zudem Fixes für die folgenden Probleme:  
   
--   **Codeabdeckung:** Unfähigkeit eine durch Visual Studio 2012 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 erstellte Codeabdeckungsdatei (.coverage) zu öffnen.  
+- **Codeabdeckung:** Unfähigkeit eine durch Visual Studio 2012 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 erstellte Codeabdeckungsdatei (.coverage) zu öffnen.  
   
--   **Isolierte Testartefakte:** Ihr Team verfügt über ein Testartefakt, das in TFS 2010 (Team Foundation Server) einem ungültigen Benutzer zugewiesen ist. Dies ist beispielsweise der Fall, wenn ein Benutzer das Unternehmen verlassen hat, diesem jedoch weiterhin ein Testfall zugewiesen ist. Sie aktualisieren TFS 2010 auf TFS 2012. Sie verwenden [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, um eine Verbindung zum aktualisierten TFS-Server herzustellen. Sie können das Testartefakt mithilfe von [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 anderen TFS-Benutzern nicht zuweisen.  
+- **Isolierte Testartefakte:** Ihr Team verfügt über ein Testartefakt, das in TFS 2010 (Team Foundation Server) einem ungültigen Benutzer zugewiesen ist. Dies ist beispielsweise der Fall, wenn ein Benutzer das Unternehmen verlassen hat, diesem jedoch weiterhin ein Testfall zugewiesen ist. Sie aktualisieren TFS 2010 auf TFS 2012. Sie verwenden [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, um eine Verbindung zum aktualisierten TFS-Server herzustellen. Sie können das Testartefakt mithilfe von [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 anderen TFS-Benutzern nicht zuweisen.  
   
--   **Auslastungstest:** Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp ausführen, der nicht dem LAN-Profil auf einem Computer unter Windows 8 entspricht, führt der Netzwerkemulatortreiber dazu, dass das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](http://support.microsoft.com/kb/2736182).  
+- **Auslastungstest:** Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp ausführen, der nicht dem LAN-Profil auf einem Computer unter Windows 8 entspricht, führt der Netzwerkemulatortreiber dazu, dass das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

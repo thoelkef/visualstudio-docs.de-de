@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901046"
 ---
 # <a name="add-command-line-switches"></a>Hinzufügen von Befehlszeilenschaltern
 Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei *devenv.exe* ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die zugehörigen Eigenschaften deklariert. In diesem Beispiel wird der Schalter MySwitch für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und das VSPackage, die automatisch geladen.  
@@ -36,7 +36,7 @@ Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei
 |-|-|-|-|
 | Parameter | Beschreibung|
 | Argumente | Die Anzahl der Argumente für den Switch. Kann "*", oder eine Liste von Argumenten. |
-| DemandLoad |  Laden Sie das VSPackage automatisch, wenn dieser auf 1 fest, legen Sie andernfalls auf 0 festgelegt wird. |  
+| DemandLoad | Laden Sie das VSPackage automatisch, wenn dieser auf 1 fest, legen Sie andernfalls auf 0 festgelegt wird. |  
 | HelpString | Die Zeichenfolge "oder" Ressource-ID der Zeichenfolge mit anzuzeigende **Devenv /?**. |
 | name | Der Schalter. |
 | PackageGuid | Die GUID des Pakets. |  
@@ -54,11 +54,11 @@ Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei
 ## <a name="retrieve-command-line-switches"></a>Abrufen von Befehlszeilenschaltern  
  Wenn das Paket geladen wird, können Sie die Befehlszeilenschalter abrufen, die folgenden Schritte aus.  
   
-1.  In Ihrem VSPackages <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> -Implementierung, rufen `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> zum Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> Schnittstelle.  
+1. In Ihrem VSPackages <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> -Implementierung, rufen `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> zum Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> Schnittstelle.  
   
-2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> die Befehlszeilenschalter abgerufen, die vom Benutzer eingegebene.  
+2. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> die Befehlszeilenschalter abgerufen, die vom Benutzer eingegebene.  
   
- Der folgende Code zeigt, wie Sie herausfinden, ob die Befehlszeilenoption MySwitch vom Benutzer eingegeben wurde:  
+   Der folgende Code zeigt, wie Sie herausfinden, ob die Befehlszeilenoption MySwitch vom Benutzer eingegeben wurde:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

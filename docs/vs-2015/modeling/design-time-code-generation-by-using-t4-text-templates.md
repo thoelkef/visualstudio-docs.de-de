@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859277"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 ### <a name="regenerating-the-code"></a>Erneutes Generieren des Codes  
  In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete Datei generiert wird:  
   
--   Sie bearbeiten die Vorlage und verschieben dann den Fokus auf ein anderes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster.  
+- Sie bearbeiten die Vorlage und verschieben dann den Fokus auf ein anderes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster.  
   
--   Sie speichern die Vorlage.  
+- Sie speichern die Vorlage.  
   
--   Klicken Sie auf **alle Vorlagen transformieren** in die **erstellen** Menü. Dadurch werden alle Vorlagen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe transformiert.  
+- Klicken Sie auf **alle Vorlagen transformieren** in die **erstellen** Menü. Dadurch werden alle Vorlagen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe transformiert.  
   
--   In **Projektmappen-Explorer**, im Kontextmenü der Datei, wählen Sie **benutzerdefiniertes Tool ausführen**. Verwenden Sie diese Methode, um eine ausgewählte Untergruppe von Vorlagen zu transformieren.  
+- In **Projektmappen-Explorer**, im Kontextmenü der Datei, wählen Sie **benutzerdefiniertes Tool ausführen**. Verwenden Sie diese Methode, um eine ausgewählte Untergruppe von Vorlagen zu transformieren.  
   
- Sie können ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt auch so einrichten, dass die Vorlagen ausgeführt werden, wenn sich die von den Vorlagen gelesenen Datendateien ändern. Weitere Informationen finden Sie unter [automatisches erneutes Generieren des Codes](#Regenerating).  
+  Sie können ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt auch so einrichten, dass die Vorlagen ausgeführt werden, wenn sich die von den Vorlagen gelesenen Datendateien ändern. Weitere Informationen finden Sie unter [automatisches erneutes Generieren des Codes](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Generieren von Variablentext  
  Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe von Programmcode zu verändern.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>So generieren Sie Text mithilfe von Programmcode  
   
-1.  Ändern des Inhalts der `.tt`-Datei:  
+1. Ändern des Inhalts der `.tt`-Datei:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. Speichern Sie die TT-Datei, und überprüfen Sie die generierte TXT-Datei erneut. Sie enthält die Quadratzahlen der Zahlen 0 bis 10.  
   
-    ```  
+   Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
-2.  Speichern Sie die TT-Datei, und überprüfen Sie die generierte TXT-Datei erneut. Sie enthält die Quadratzahlen der Zahlen 0 bis 10.  
-  
- Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
-  
- Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Anweisung `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.  
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Anweisung `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit  
  So debuggen Sie eine Textvorlage  
   
--   Fügen Sie `debug="true"` in die `template`-Direktive ein. Beispiel:  
+- Fügen Sie `debug="true"` in die `template`-Direktive ein. Beispiel:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Legen Sie in der Vorlage Haltepunkte auf dieselbe Weise fest wie für normalen Code.  
+- Legen Sie in der Vorlage Haltepunkte auf dieselbe Weise fest wie für normalen Code.  
   
--   Wählen Sie **T4-Vorlage Debuggen** aus dem Kontextmenü der Textvorlagendatei im Projektmappen-Explorer.  
+- Wählen Sie **T4-Vorlage Debuggen** aus dem Kontextmenü der Textvorlagendatei im Projektmappen-Explorer.  
   
- Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.  
+  Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.  
   
 > [!TIP]
 >  Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.  
@@ -208,13 +208,13 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 ### <a name="structuring-text-templates"></a>Strukturieren von Textvorlagen  
  Es wird empfohlen, den Vorlagencode in zwei Teile aufzuteilen:  
   
--   Ein Konfigurations- oder Datensammlungsteil, der Werte in Variablen festlegt, jedoch keine Textblöcke enthält. Im vorherigen Beispiel ist dieser Teil die Initialisierung von `properties`.  
+- Ein Konfigurations- oder Datensammlungsteil, der Werte in Variablen festlegt, jedoch keine Textblöcke enthält. Im vorherigen Beispiel ist dieser Teil die Initialisierung von `properties`.  
   
-     Dies wird manchmal als Modellabschnitt bezeichnet, da ein speicherinternes Modell erstellt und normalerweise eine Modelldatei gelesen wird.  
+   Dies wird manchmal als Modellabschnitt bezeichnet, da ein speicherinternes Modell erstellt und normalerweise eine Modelldatei gelesen wird.  
   
--   Der Textgenerierungsteil (im vorliegenden Beispiel `foreach(...){...}`), in dem die Werte der Variablen verwendet werden.  
+- Der Textgenerierungsteil (im vorliegenden Beispiel `foreach(...){...}`), in dem die Werte der Variablen verwendet werden.  
   
- Dies ist keine notwendige Trennung, doch auf diese Weise wird das Lesen der Vorlage wegen der geringeren Komplexität des Teils, der Text enthält, vereinfacht.  
+  Dies ist keine notwendige Trennung, doch auf diese Weise wird das Lesen der Vorlage wegen der geringeren Komplexität des Teils, der Text enthält, vereinfacht.  
   
 ## <a name="reading-files-or-other-sources"></a>Lesen von Dateien oder anderen Quellen  
  Im Vorlagencode können Assemblys wie System.XML verwendet werden, um auf eine Modelldatei oder eine Datenbank zuzugreifen. Um Zugriff auf diese Assemblys zu erhalten, müssen Sie wie hier dargestellt Direktiven einfügen:  

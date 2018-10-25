@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893675"
 ---
 # <a name="t4-import-directive"></a>T4-Import-Anweisung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Standardimporte  
  Der folgende Namespace wird automatisch importiert, damit Sie keine eigene Importanweisung schreiben müssen:  
   
--   `System`  
+- `System`  
   
- Wenn Sie eine benutzerdefinierte Anweisung verwenden, importiert der Anweisungsprozessor unter Umständen automatisch einige Namespaces.  
+  Wenn Sie eine benutzerdefinierte Anweisung verwenden, importiert der Anweisungsprozessor unter Umständen automatisch einige Namespaces.  
   
- Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Importanweisungen für die folgenden Namespaces schreiben:  
+  Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Importanweisungen für die folgenden Namespaces schreiben:  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   Der Namespace der DSL  
+- Der Namespace der DSL  
   
 ## <a name="see-also"></a>Siehe auch  
  [T4-Assemblydirektive](../modeling/t4-assembly-directive.md)

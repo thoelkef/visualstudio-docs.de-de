@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate | Microsoft Docs
+title: IDebugProgram2::Terminate | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eb14280947ff93a4a0c2ab6d2cf025037fc06aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88fcbf0667c026cbbfc449936f92d440590e9a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834265"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
-Wird das Programm beendet.  
+Das Programm beendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,13 +38,13 @@ int Terminate();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn möglich, wird das Programm beendet und aus dem Prozess entladen werden; Andernfalls führt der Debugging-Modul (DE) alle erforderlichen Cleanup.  
+ Wenn möglich, wird das Programm beendet und aus dem Prozess entladen werden; Andernfalls führt die Debug-Engine (DE) eventuell erforderlichen Bereinigungen.  
   
- Diese Methode oder die [terminieren](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) Methode wird von der IDE, in der Regel als Reaktion auf den Benutzer Anhalten aller Debuggen aufgerufen. Die Implementierung dieser Methode sollte idealerweise die Anwendung innerhalb des Prozesses beendet. Wenn dies nicht möglich ist, sollten die DE verhindern, dass das Programm keine weiteren in diesem Prozess ausgeführt (und führen Sie alle erforderlichen cleanupmaßnahmen). Wenn die `IDebugProcess2::Terminate` Methode von der IDE aufgerufen wurde, wird der gesamte Prozess beendet, zu irgendeinem Zeitpunkt nach der `IDebugProgram2::Terminate` -Methode aufgerufen wird.  
+ Diese Methode oder der [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) Methode wird von der IDE, in der Regel in der Antwort an den Benutzer, die das Anhalten des alle-Debuggen aufgerufen. Die Implementierung dieser Methode sollten im Idealfall die Anwendung innerhalb des Prozesses beendet. Wenn dies nicht möglich ist, sollte die DE verhindern, dass das Programm ausführen, bei diesem Vorgang keine weiteren (und werden eventuell erforderlichen Bereinigungen). Wenn die `IDebugProcess2::Terminate` Methode wurde von der IDE aufgerufen, wird der gesamte Prozess einige Zeit nach beendet die `IDebugProgram2::Terminate` Methode wird aufgerufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Beenden](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

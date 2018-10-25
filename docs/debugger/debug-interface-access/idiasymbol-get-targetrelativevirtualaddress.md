@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetrelativevirtualaddress | Microsoft Docs'
+title: 'Idiasymbol:: Get_targetrelativevirtualaddress | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c43d496565518df7e24b57cd9d191b1a64a800f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c3426fdf356e61239da2751bd068a38a4172382c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861318"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
-Ruft die relative virtuelle Adresse (RVA) eines Ziels Thunk ab.  
+Ruft die relative virtuelle Adresse (RVA) eines Thunk-Ziels ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,18 +34,18 @@ HRESULT get_targetRelativeVirtualAddress (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die RVA eines Ziels Thunk zurück.  
+ [out] Gibt die RVA eines Thunk-Ziels zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Eigenschaft gilt nur, wenn das Symbol als ein [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Wert `SymTagThunk`.  
   
- Ein "Thunk" ist ein Teil des Codes, der zwischen einem 32-Bit-Speicheradressraum (auch bekannt als flache Adressraum) und eine 16-Bit-Adressraum (bekannt als eine segmentierte Adressraum) konvertiert.  
+ Ein "Thunk" ist ein Codeabschnitt, der einen 16-Bit-Adressraum (als einen segmentierten Adressraum bezeichnet) bis ein Arbeitsspeicher von 32-Bit-Adressraum (auch bekannt als flache Adressraum) konvertiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

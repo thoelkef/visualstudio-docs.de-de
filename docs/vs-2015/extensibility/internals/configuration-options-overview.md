@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915775"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Konfigurationsschnittstellen
   
  Einige Hinweise, die im Zusammenhang mit der vorherigen Abbildung:  
   
--   `IDispatch` wird in der Configuration-Objekt als optional gekennzeichnet. Es handelt sich hierbei optional, um die Konfigurationsschnittstellen auf dem Suchobjekt haben.  
+- `IDispatch` wird in der Configuration-Objekt als optional gekennzeichnet. Es handelt sich hierbei optional, um die Konfigurationsschnittstellen auf dem Suchobjekt haben.  
   
--   `IVsDebuggableProjectCfg` wird in das Konfigurationsobjekt optional gekennzeichnet, aber für die Debugunterstützung erforderlich ist.  
+- `IVsDebuggableProjectCfg` wird in das Konfigurationsobjekt optional gekennzeichnet, aber für die Debugunterstützung erforderlich ist.  
   
--   `IVsProjectCfg2` wird in das Konfigurationsobjekt optional gekennzeichnet, aber ist erforderlich, für die Ausgabe, die Unterstützung zu gruppieren.  
+- `IVsProjectCfg2` wird in das Konfigurationsobjekt optional gekennzeichnet, aber ist erforderlich, für die Ausgabe, die Unterstützung zu gruppieren.  
   
--   Die `Config Provider` Objekt als ein optionales Objekt markiert ist, aber die Option ist, wo es implementiert. Sie können das Objekt auf das Projektobjekt oder auf ein separates Objekt implementiert.  
+- Die `Config Provider` Objekt als ein optionales Objekt markiert ist, aber die Option ist, wo es implementiert. Sie können das Objekt auf das Projektobjekt oder auf ein separates Objekt implementiert.  
   
--   `IVsCfgProvider2` für die Plattform-Unterstützung und Bearbeitung ist erforderlich. `IVsCfgProvider` ist ausreichend, wenn Sie nicht diese Funktion implementieren.  
+- `IVsCfgProvider2` für die Plattform-Unterstützung und Bearbeitung ist erforderlich. `IVsCfgProvider` ist ausreichend, wenn Sie nicht diese Funktion implementieren.  
   
--   Einige dieser Objekte, die im Diagramm angezeigt werden, als separate Objekte ggf. zu derselben Klasse kombiniert werden können je nach bestimmten Designs. In anderen Themen in diesem Abschnitt werden jedoch die Objekte und Schnittstellen, die mit diesen Objekten verknüpft ist gemäß dem Szenario, in der Abbildung dargestellten erläutert.  
+- Einige dieser Objekte, die im Diagramm angezeigt werden, als separate Objekte ggf. zu derselben Klasse kombiniert werden können je nach bestimmten Designs. In anderen Themen in diesem Abschnitt werden jedoch die Objekte und Schnittstellen, die mit diesen Objekten verknüpft ist gemäß dem Szenario, in der Abbildung dargestellten erläutert.  
   
--   Bestimmte Objekte werden separat implementiert. Z. B. auftreten, Projekt- und Projektmappen erstellen von separaten Threads und dem Objekt um die Arbeit mit Build getrennt aus dem Objekt beschreiben die Konfiguration für den Build zu verwalten.  
+- Bestimmte Objekte werden separat implementiert. Z. B. auftreten, Projekt- und Projektmappen erstellen von separaten Threads und dem Objekt um die Arbeit mit Build getrennt aus dem Objekt beschreiben die Konfiguration für den Build zu verwalten.  
   
- Weitere Informationen auf dem Konfigurationsobjekt Schnittstellen und Konfigurationsanbieterobjekt Schnittstellen in der vorherigen Abbildung finden Sie unter [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md). Darüber hinaus [Projektkonfiguration für das Erstellen von](../../extensibility/internals/project-configuration-for-building.md) enthält weitere Informationen zu den Schnittstellen Konfigurations-Generator und Erstellen der Dependency-Objekt, und [Projektkonfiguration für die Verwaltung von Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md) Weitere beschreibt die Schnittstellen, die an die die Konfiguration Bereitsteller oder Abhängigkeitsobjekte, die Bereitstellung ein. Zum Schluss [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) beschreibt die Ausgabegruppe und Ausgabeobjekt-Schnittstellen und die Verwendung von Eigenschaftenseiten, um die konfigurationsabhängigen Eigenschaften anzuzeigen und festzulegen.  
+  Weitere Informationen auf dem Konfigurationsobjekt Schnittstellen und Konfigurationsanbieterobjekt Schnittstellen in der vorherigen Abbildung finden Sie unter [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md). Darüber hinaus [Projektkonfiguration für das Erstellen von](../../extensibility/internals/project-configuration-for-building.md) enthält weitere Informationen zu den Schnittstellen Konfigurations-Generator und Erstellen der Dependency-Objekt, und [Projektkonfiguration für die Verwaltung von Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md) Weitere beschreibt die Schnittstellen, die an die die Konfiguration Bereitsteller oder Abhängigkeitsobjekte, die Bereitstellung ein. Zum Schluss [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) beschreibt die Ausgabegruppe und Ausgabeobjekt-Schnittstellen und die Verwendung von Eigenschaftenseiten, um die konfigurationsabhängigen Eigenschaften anzuzeigen und festzulegen.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

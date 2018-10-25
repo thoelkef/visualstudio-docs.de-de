@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896327"
 ---
 # <a name="xml-editor"></a>XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236872"
   
 Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-Visual Studio-Texteditor und bietet weitere Unterstützung für die XML-Sprachen. Der XML-Editor verfügt über folgende Features:  
   
--   Syntaxüberprüfung für XML 1.0  
+- Syntaxüberprüfung für XML 1.0  
   
--   Schemavalidierung beim Eingeben  
+- Schemavalidierung beim Eingeben  
   
--   Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte  
+- Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte  
   
--   Unterstützung für Document Type Definition (DTD)  
+- Unterstützung für Document Type Definition (DTD)  
   
--   Unterstützung für das XSD-Schema (XML Schema Definition Language).  
+- Unterstützung für das XSD-Schema (XML Schema Definition Language).  
   
--   Erstellen eines XML-Schemas aus einem XML-Instanzdokument  
+- Erstellen eines XML-Schemas aus einem XML-Instanzdokument  
   
--   Konvertierung einer DTD oder eines XDR-Schemas (XML-Data Reduced) in ein XML-Schema.  
+- Konvertierung einer DTD oder eines XDR-Schemas (XML-Data Reduced) in ein XML-Schema.  
   
--   Syntaxüberprüfung für XSLT 1.0  
+- Syntaxüberprüfung für XSLT 1.0  
   
--   Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können  
+- Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können  
   
--   Integration in die [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Der Explorer bietet eine hierarchische Ansicht von XML-Schemas.  
+- Integration in die [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Der Explorer bietet eine hierarchische Ansicht von XML-Schemas.  
   
- Der XML-Editor wird für bekannte Dateierweiterungen wie .xml, .xsd, .xsl und .config aufgerufen. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch öffnen eine beliebige Datei mit dem XML-Editor mithilfe der **Öffnen mit** Option und dem XML-Editor aus der Liste auswählen.  
+  Der XML-Editor wird für bekannte Dateierweiterungen wie .xml, .xsd, .xsl und .config aufgerufen. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch öffnen eine beliebige Datei mit dem XML-Editor mithilfe der **Öffnen mit** Option und dem XML-Editor aus der Liste auswählen.  
   
 ## <a name="express-editions"></a>Express Editions  
  Die folgenden XML-Editor-Funktionen sind in Visual Studio Express-Editionen nicht verfügbar:  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09792f951b0cc77d2087904b1dcebc1c9b3b6a06
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5bd810d0c2f33d4a8ddbffd876357ead7e0e5e7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816507"
 ---
 # <a name="command-design"></a>Befehlsentwurf
 Wenn Sie einen Befehl für ein VSPackage hinzufügen, müssen Sie angeben, in dem es angezeigt werden, wenn es verfügbar ist, und wie sie behandelt werden.  
@@ -44,15 +44,15 @@ Wenn Sie einen Befehl für ein VSPackage hinzufügen, müssen Sie angeben, in de
 ### <a name="command-organization"></a>Befehls-Organisation  
  Die Umgebung positioniert Befehle nach Gruppe, Priorität und im Menü.  
   
--   Gruppen sind logische Sammlungen von verwandten Befehlen, z. B. die **Ausschneiden**, **Kopie**, und **einfügen** Befehlsgruppe. Gruppen sind die Befehle, die in Menüs angezeigt werden.  
+- Gruppen sind logische Sammlungen von verwandten Befehlen, z. B. die **Ausschneiden**, **Kopie**, und **einfügen** Befehlsgruppe. Gruppen sind die Befehle, die in Menüs angezeigt werden.  
   
--   Priorität bestimmt die Reihenfolge, in der einzelnen Befehle in einer Gruppe im Menü angezeigt werden.  
+- Priorität bestimmt die Reihenfolge, in der einzelnen Befehle in einer Gruppe im Menü angezeigt werden.  
   
--   Menüs dienen als Container für Gruppen.  
+- Menüs dienen als Container für Gruppen.  
   
- Die Umgebung sind einige Befehle, Gruppen und Menüs vordefiniert. Weitere Informationen finden Sie unter [standardplatzierung-Befehl, Gruppe und Symbolleiste](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  Die Umgebung sind einige Befehle, Gruppen und Menüs vordefiniert. Weitere Informationen finden Sie unter [standardplatzierung-Befehl, Gruppe und Symbolleiste](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Ein Befehl kann auf eine primäre Gruppe zugewiesen werden. Die primäre Gruppe steuert die Position des Befehls in der Struktur im Hauptmenü und in der **anpassen** Dialogfeld. Ein Befehl kann in mehrere Gruppen angezeigt werden; Beispielsweise kann ein Befehl im Hauptmenü auf ein Kontextmenü aufrufen und auf einer Symbolleiste sein. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Ein Befehl kann auf eine primäre Gruppe zugewiesen werden. Die primäre Gruppe steuert die Position des Befehls in der Struktur im Hauptmenü und in der **anpassen** Dialogfeld. Ein Befehl kann in mehrere Gruppen angezeigt werden; Beispielsweise kann ein Befehl im Hauptmenü auf ein Kontextmenü aufrufen und auf einer Symbolleiste sein. Weitere Informationen finden Sie unter [wie VSPackages hinzufügen, Elemente der Benutzeroberfläche](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Befehlsrouting  
  Der Prozess der aufrufen und das routing von Befehlen für VSPackages, unterscheidet sich von den Prozess des Aufrufens von Methoden einer Objektinstanz.  

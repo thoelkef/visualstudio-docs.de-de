@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872823"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 Der Begriff *Nachschlagetabelle* bezeichnet Steuerelemente, die an zwei zusammengehörige Datentabellen gebunden sind. Diese Nachschlagesteuerelemente zeigen Daten aus der ersten Tabelle in Abhängigkeit von den in der zweiten Tabelle ausgewählten Werten an.
@@ -52,7 +52,7 @@ Der Begriff *Nachschlagetabelle* bezeichnet Steuerelemente, die an zwei zusammen
      Die Nachschlagebindungen werden jetzt festgelegt. Verweisen Sie auf die folgende Tabelle enthält die spezifischen Eigenschaften, die für das Steuerelement festgelegt wurden.
 
     |Eigenschaft|Erklärung der Einstellung|
-    |--------------|----------------------------|
+    |--------------| - |
     |**DataSource**|Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Forms.BindingSource>, der für die Tabelle, die Sie in das Steuerelement ziehen (im Gegensatz zu den <xref:System.Windows.Forms.BindingSource>, erstellt, wenn das Steuerelement erstellt wurde).<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie die <xref:System.Windows.Forms.BindingSource> der Tabelle mit der Spalte, die Sie anzeigen möchten.|
     |**DisplayMember**|Visual Studio legt diese Eigenschaft auf die erste Spalte nach dem Primärschlüssel fest, der einen Zeichenfolgendatentyp für die auf das Steuerelement gezogene Tabelle besitzt.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf den Namen der Spalte, die, den Sie anzeigen möchten.|
     |**ValueMember**|Visual Studio legt diese Eigenschaft auf die erste Spalte im Primärschlüssel bzw. – wenn kein Schlüssel definiert ist – auf die erste Spalte in der Tabelle fest.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf den Primärschlüssel in der Tabelle mit der Spalte, die Sie anzeigen möchten.|

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ec0c3cdd0047cf65539fbbb8e2e220ca38ee293
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 775b28f1c8839a331f64e435b886c113c30c6238
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889476"
 ---
 # <a name="how-to-display-thread-properties"></a>Gewusst wie: Anzeigen von Threadeigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Weitere Informationen über einen Thread in aufgeführten [Ansicht "Threads"](..
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>Öffnen Sie ein Dialogfeld "Threadeigenschaften"  
   
-1.  Wählen Sie einen Thread aus der Struktur im angezeigten [Ansicht "Threads"](../debugger/threads-view.md).  
+1. Wählen Sie einen Thread aus der Struktur im angezeigten [Ansicht "Threads"](../debugger/threads-view.md).  
   
-2.  Von der **Ansicht** Menü wählen **Eigenschaften**.  
+2. Von der **Ansicht** Menü wählen **Eigenschaften**.  
   
- Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
+   Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
 
 
 

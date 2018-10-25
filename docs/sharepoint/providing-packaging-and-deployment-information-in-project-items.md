@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893298"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Angaben Sie zu packen und-Bereitstellen in Projektelementen
   Alle SharePoint-Projektelemente in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, die Sie verwenden können, um zusätzliche Daten bereitstellen, wenn das Projekt in SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:  
   
--   Featureeigenschaften  
+- Featureeigenschaften  
   
--   Feature-Empfänger  
+- Feature-Empfänger  
   
--   Projektausgabeverweise  
+- Projektausgabeverweise  
   
--   Einträge für sicheres Steuerelement  
+- Einträge für sicheres Steuerelement  
   
- Diese Eigenschaften werden der **Eigenschaften** Fenster.  
+  Diese Eigenschaften werden der **Eigenschaften** Fenster.  
   
 ## <a name="feature-properties"></a>Funktionseigenschaften
  Verwenden der **Funktionseigenschaften** Eigenschaft, um Daten anzugeben, die die Funktion verwendet. Eigenschaften von Featuredaten ist einen Satz von Werten (gespeichert als Schlüssel/Wert-Paare), der mit einer Funktion enthalten ist, während der Bereitstellung in SharePoint. Nach dem Bereitstellen der Funktion können Sie im Code auf die Eigenschaftswerte zugreifen.  

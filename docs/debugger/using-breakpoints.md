@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816682"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt.  
@@ -203,15 +203,15 @@ Sie können Bezeichnungen zu sortieren und Filtern Sie die Liste von Haltepunkte
 
 **Um eine Bedingung für Haltepunkt festzulegen:**
 
-1.  Mit der rechten Maustaste in des Haltepunkt-Symbols, und wählen Sie **Bedingungen**. Oder zeigen Sie auf das Haltepunktsymbol, wählen die **Einstellungen** Symbol, und wählen Sie dann **Bedingungen** in die **Haltepunkteinstellungen** Fenster.  
+1. Mit der rechten Maustaste in des Haltepunkt-Symbols, und wählen Sie **Bedingungen**. Oder zeigen Sie auf das Haltepunktsymbol, wählen die **Einstellungen** Symbol, und wählen Sie dann **Bedingungen** in die **Haltepunkteinstellungen** Fenster.  
 
-    Sie können auch Bedingungen festlegen, der **Haltepunkte** Fenster, indem Sie mit der rechten Maustaste eines Haltepunkts, und wählen **Einstellungen**, und wählen Sie dann **Bedingungen**. 
+   Sie können auch Bedingungen festlegen, der **Haltepunkte** Fenster, indem Sie mit der rechten Maustaste eines Haltepunkts, und wählen **Einstellungen**, und wählen Sie dann **Bedingungen**. 
   
-  ![Haltepunkteinstellungen](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Haltepunkteinstellungen](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. Wählen Sie in der Dropdown-Liste **Bedingungsausdruck**, **Trefferanzahl**, oder **Filter**, und legen Sie den Wert entsprechend. 
+2. Wählen Sie in der Dropdown-Liste **Bedingungsausdruck**, **Trefferanzahl**, oder **Filter**, und legen Sie den Wert entsprechend. 
   
-1. Wählen Sie **schließen** , oder drücken Sie **STRG**+**EINGABETASTE** schließen die **Haltepunkteinstellungen** Fenster. Alternativ wählen Sie in der **Haltepunkte** wählen Sie im Fenster **OK** um das Dialogfeld zu schließen. 
+3. Wählen Sie **schließen** , oder drücken Sie **STRG**+**EINGABETASTE** schließen die **Haltepunkteinstellungen** Fenster. Alternativ wählen Sie in der **Haltepunkte** wählen Sie im Fenster **OK** um das Dialogfeld zu schließen. 
 
 Haltepunkte mit Bedingungen werden mit einem **+** Symbol im Quellcode und **Haltepunkte** Windows. 
 

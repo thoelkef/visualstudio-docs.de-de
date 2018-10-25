@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873408"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können angeben, wie lokale Hilfeinhalte bereitgestellt und verwaltet werden sollen. Dazu verwenden Sie Befehlszeilenargumente für den Hilfeinhalts-Manager (HlpCtntmgr.exe). Sie müssen Skripts für dieses Befehlszeilentool mit Administratorberechtigungen ausführen. Die Skripts können nicht als Dienst ausgeführt werden. Mit diesem Tool können Sie folgende Aufgaben ausführen:  
   
--   Hinzufügen oder Aktualisieren lokaler Hilfeinhalte von Datenträgern oder aus der Cloud  
+- Hinzufügen oder Aktualisieren lokaler Hilfeinhalte von Datenträgern oder aus der Cloud  
   
--   Entfernen lokaler Hilfeinhalte  
+- Entfernen lokaler Hilfeinhalte  
   
--   Verschieben des lokalen Hilfeinhaltsspeichers  
+- Verschieben des lokalen Hilfeinhaltsspeichers  
   
--   Automatisches Hinzufügen, Aktualisieren, Entfernen oder Verschieben lokaler Hilfeinhalte  
+- Automatisches Hinzufügen, Aktualisieren, Entfernen oder Verschieben lokaler Hilfeinhalte  
   
- Syntax:  
+  Syntax:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

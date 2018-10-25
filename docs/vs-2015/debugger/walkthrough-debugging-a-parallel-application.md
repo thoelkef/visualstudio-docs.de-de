@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823657"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
 #### <a name="to-create-the-sample-project"></a>So erstellen Sie das Beispielprojekt  
   
-1.  Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
+1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
   
-2.  In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual c#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
+2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual c#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
   
-3.  Wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
+3. Wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
   
-4.  Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.  
+4. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.  
   
-5.  Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.  
+5. Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+6. Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
   
-2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
+7. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
   
-     Beachten Sie, dass es vier Aufrufe zu `Debugger.Break` (`DebugBreak` im C++-Beispiel) gibt. Daher müssen keine Haltepunkte eingefügt werden; wenn nur die Anwendung ausgeführt wird, hat dies bis zu vier Unterbrechungen im Debugger zur Folge.  
+    Beachten Sie, dass es vier Aufrufe zu `Debugger.Break` (`DebugBreak` im C++-Beispiel) gibt. Daher müssen keine Haltepunkte eingefügt werden; wenn nur die Anwendung ausgeführt wird, hat dies bis zu vier Unterbrechungen im Debugger zur Folge.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Verwenden des Fensters Parallele Stapel: Threadansicht  
  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**. Warten Sie, bis der erste Haltepunkt erreicht wird.  
@@ -153,33 +153,33 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit der **Parallel
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>So setzen Sie die Ausführung bis zum dritten Haltepunkt fort  
   
-1.  Um die Ausführung fortzusetzen, bis zum dritte Haltepunkt erreicht wird, auf die **Debuggen** Menü klicken Sie auf **Weiter**.  
+1. Um die Ausführung fortzusetzen, bis zum dritte Haltepunkt erreicht wird, auf die **Debuggen** Menü klicken Sie auf **Weiter**.  
   
-     Wenn mehrere Threads in derselben Methode enthalten sind, diese sich jedoch nicht am Anfang der Aufrufliste befand, wird die Methode in verschiedenen Feldern angezeigt. Ein Beispiel am aktuellen Haltepunkt ist S.L. Hierin sind drei Threads enthalten, und die Methode wird in drei Feldern angezeigt. Doppelklicken Sie auf S.L.  
+    Wenn mehrere Threads in derselben Methode enthalten sind, diese sich jedoch nicht am Anfang der Aufrufliste befand, wird die Methode in verschiedenen Feldern angezeigt. Ein Beispiel am aktuellen Haltepunkt ist S.L. Hierin sind drei Threads enthalten, und die Methode wird in drei Feldern angezeigt. Doppelklicken Sie auf S.L.  
   
-     ![Ausführungspfad im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Ausführungspfad im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Beachten Sie, dass S.L in den anderen beiden Feldern fett formatiert ist, damit dort ersichtlich ist, an welcher Stelle die Methode außerdem angezeigt wird. Wenn Sie anzeigen möchten, welche frames s.l aufrufen, und welche frames es Aufrufe, klicken Sie auf die **Methodenansicht** auf der Symbolleiste. Die folgende Abbildung zeigt die Methodenansicht des der **parallele Stapel** Fenster.  
+    Beachten Sie, dass S.L in den anderen beiden Feldern fett formatiert ist, damit dort ersichtlich ist, an welcher Stelle die Methode außerdem angezeigt wird. Wenn Sie anzeigen möchten, welche frames s.l aufrufen, und welche frames es Aufrufe, klicken Sie auf die **Methodenansicht** auf der Symbolleiste. Die folgende Abbildung zeigt die Methodenansicht des der **parallele Stapel** Fenster.  
   
-     ![Methodenansicht im Fenster "Parallele Stapel"](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Methodenansicht im Fenster "Parallele Stapel"](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Das Diagramm wurde für die ausgewählte Methode pivotiert, und diese wurde in einem eigenen Feld in der Mitte der Ansicht positioniert. Die Aufgerufenen und die Aufrufer werden am oberen und unteren Rand angezeigt. Klicken Sie auf die **Methodenansicht** Schaltfläche erneut aus, um diesen Modus zu verlassen.  
+    Das Diagramm wurde für die ausgewählte Methode pivotiert, und diese wurde in einem eigenen Feld in der Mitte der Ansicht positioniert. Die Aufgerufenen und die Aufrufer werden am oberen und unteren Rand angezeigt. Klicken Sie auf die **Methodenansicht** Schaltfläche erneut aus, um diesen Modus zu verlassen.  
   
-     Im Kontextmenü des der **parallele Stapel** Fenster verfügt auch über die folgenden anderen Elementen.  
+    Im Kontextmenü des der **parallele Stapel** Fenster verfügt auch über die folgenden anderen Elementen.  
   
-    -   **Hexadezimale Anzeige** die Zahlen in den QuickInfos Dezimal-und hexadezimaldarstellung umgeschaltet.  
+   - **Hexadezimale Anzeige** die Zahlen in den QuickInfos Dezimal-und hexadezimaldarstellung umgeschaltet.  
   
-    -   **Symbolladeinformationen** und **Symboleinstellungen** die entsprechenden Dialogfelder zu öffnen.  
+   - **Symbolladeinformationen** und **Symboleinstellungen** die entsprechenden Dialogfelder zu öffnen.  
   
-    -   **Gehe zu Quellcode** und **Gehe zu Disassembly** im Editor zur ausgewählten Methode navigiert.  
+   - **Gehe zu Quellcode** und **Gehe zu Disassembly** im Editor zur ausgewählten Methode navigiert.  
   
-    -   **Externen Code anzeigen** werden alle Frames angezeigt, auch wenn sie nicht im Benutzercode sind. Das Diagramm wird erweitert, um die zusätzlichen Frames aufzunehmen (die möglicherweise abgeblendet dargestellt werden, da keine Symbole dafür vorhanden sind).  
+   - **Externen Code anzeigen** werden alle Frames angezeigt, auch wenn sie nicht im Benutzercode sind. Das Diagramm wird erweitert, um die zusätzlichen Frames aufzunehmen (die möglicherweise abgeblendet dargestellt werden, da keine Symbole dafür vorhanden sind).  
   
      Wenn Sie bei großen Diagrammen zum nächsten Haltepunkt wechseln, können Sie einen automatischen Bildlauf der Anzeige zum aktiven Stapelrahmen des aktuellen Threads ausführen lassen (d. h. des Threads, der den Haltepunkt zuerst erreicht hat). In der **parallele Stapel** Fenster, stellen Sie sicher, dass die **automatischen Bildlauf zu aktuellem Stapelrahmen** befindet sich auf der Symbolleiste auf.  
   
      ![Automatischer Bildlauf in das Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Bevor Sie, in fortfahren der **parallele Stapel** Fenster, einen Bildlauf ganz nach links und ganz nach unten.  
+2. Bevor Sie, in fortfahren der **parallele Stapel** Fenster, einen Bildlauf ganz nach links und ganz nach unten.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>So setzen Sie die Ausführung bis zum vierten Haltepunkt fort  
   

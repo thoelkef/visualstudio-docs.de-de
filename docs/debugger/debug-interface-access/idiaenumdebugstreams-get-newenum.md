@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Get__newenum | Microsoft Docs'
+title: 'Idiaenumdebugstreams:: Get__newenum | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16988a9a4dfccdc7e6db3cbabd39a919cfc1adb1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa51086221dc0f1fffd6791d0ba54a16457217c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918355"
 ---
 # <a name="idiaenumdebugstreamsgetnewenum"></a>IDiaEnumDebugStreams::get__NewEnum
-Ruft die <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version des Enumerators.  
+Ruft die <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get__NewEnum (
   
 #### <a name="parameters"></a>Parameter  
  pRetVal  
- [out] Gibt die `IUnknown` Schnittstelle, die darstellt der <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version des Enumerators.  
+ [out] Gibt die `IUnknown` Schnittstelle, die darstellt der <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

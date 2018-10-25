@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Item | Microsoft Docs'
+title: 'Idiaenumlinenumbers:: Item | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a00929311c1e8ccaa50d03543f072696bd2bf7f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 851abd08093be885a49103a96a866b6700337d27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931791"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-Ruft eine Zeilennummer mithilfe eines Indexes ab.  
+Ruft die Nummer einer Zeile mithilfe eines Indexes ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parameter  
  Index  
- [in] Der Index der [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt abgerufen werden sollen. Der Index ist im Bereich 0 bis `count`-1 und, in denen `count` wird zurückgegeben, indem Sie die [idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) Methode.  
+ [in] Der Index der [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1 und, in dem `count` wird zurückgegeben, durch die [idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) Methode.  
   
  lineNumber  
  [out] Gibt eine [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt, das die gewünschte Zeilennummer darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

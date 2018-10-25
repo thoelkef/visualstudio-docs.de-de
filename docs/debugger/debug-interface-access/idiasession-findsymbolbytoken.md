@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbytoken | Microsoft Docs'
+title: 'Idiasession:: Findsymbolbytoken | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7152a3953475ac2622033101ca739b0b8ee300
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4758aeb569e0218d219ddca06042f4b32e61e467
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935977"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
-Ruft das Symbol, das angegebene Metadatentoken ab.  
+Ruft ab, das Symbol, das ein Token für die angegebenen Metadaten enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT findSymbolByToken (
  [in] Gibt das Token an.  
   
  `symtag`  
- [in] Der Symboltyp gefunden werden. Werte stammen aus den [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
+ [in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
   
  `ppSymbol`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) abgerufene Objekt, das das Symbol darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

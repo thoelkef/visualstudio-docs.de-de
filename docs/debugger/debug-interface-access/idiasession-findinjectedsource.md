@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findinjectedsource | Microsoft Docs'
+title: 'Idiasession:: Findinjectedsource | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9870d1e2d14a2dcbe9f33191e0559a3e0b34f4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 472e60c10d95e0a1b79f09f0d069172ce33020b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819029"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Ruft eine Liste der Datenquellen, die in den Symbolspeicher von Anbietern Attribut angeordnet wurde oder andere Komponenten des im Verlauf des Vorgangs ab.  
+Ruft eine Liste der Datenquellen, die in den Symbolspeicher vom Attributanbieter abgelegt wurden, oder andere Komponenten des im Verlauf des Vorgangs ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT findInjectedSource (
   
 #### <a name="parameters"></a>Parameter  
  srcFile  
- [in] Der Name der Quelldatei für die Suche.  
+ [in] Name der Quelldatei nach dem gesucht werden soll.  
   
  ppResult  
- [out] Gibt eine [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Objekt, das eine Liste aller der eingefügten Quellen enthält.  
+ [out] Gibt eine [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Objekt, das eine Liste mit allen eingefügten Quellen enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

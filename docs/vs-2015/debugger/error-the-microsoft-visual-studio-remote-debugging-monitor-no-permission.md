@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c65a5ed9cc06c8d9c4d471b878762d863802f5f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20accedd9591c777cad26aed30c05954dfabbdfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811088"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer verfügt nicht über die Berechtigung, eine Verbindung mit diesem Computer herzustellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Dieser Fehler tritt auf, wenn der Benutzer, der versucht, den Visual Studio-Remo
   
 ### <a name="to-fix-this-problem"></a>So beheben Sie dieses Problem  
   
--   Fügen Sie dem Hostcomputer mit dem Visual Studio Debugger ein Benutzerkonto mit demselben Namen und Kennwort wie dem Benutzerkonto hinzu, unter dem msvsmon auf dem Remotecomputer ausgeführt wird.  
+- Fügen Sie dem Hostcomputer mit dem Visual Studio Debugger ein Benutzerkonto mit demselben Namen und Kennwort wie dem Benutzerkonto hinzu, unter dem msvsmon auf dem Remotecomputer ausgeführt wird.  
   
-     \- oder –  
+   \- oder –  
   
--   Führen Sie msvsmon als Benutzer aus, der berechtigt ist, auf dem lokalen Computer Aufrufe durchzuführen. Dies bedeutet, dass der Benutzer ein Domänenbenutzer sein und Administratorrechte auf dem msvsmon-Computer besitzen muss.  Sie haben zwei Möglichkeiten, um das Benutzerkonto zum Ausführen von msvsmon anzugeben:  
+- Führen Sie msvsmon als Benutzer aus, der berechtigt ist, auf dem lokalen Computer Aufrufe durchzuführen. Dies bedeutet, dass der Benutzer ein Domänenbenutzer sein und Administratorrechte auf dem msvsmon-Computer besitzen muss.  Sie haben zwei Möglichkeiten, um das Benutzerkonto zum Ausführen von msvsmon anzugeben:  
   
-    -   Mit der rechten Maustaste in des Msvsmon-Symbols, und wählen Sie **ausführenden** im Kontextmenü  
+  - Mit der rechten Maustaste in des Msvsmon-Symbols, und wählen Sie **ausführenden** im Kontextmenü  
   
-     \- oder –  
+    \- oder –  
   
-    -   Führen Sie an der Eingabeaufforderung `runas.exe` aus.  
+  - Führen Sie an der Eingabeaufforderung `runas.exe` aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen über Domänen hinweg](http://msdn.microsoft.com/library/8e697ce1-55e8-4ab0-a05f-f87225e2f29b)   

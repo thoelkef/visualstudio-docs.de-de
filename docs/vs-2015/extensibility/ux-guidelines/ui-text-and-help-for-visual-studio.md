@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908237"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und-Hilfe für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303814"
   
  Diese Lösung ist vier Annahmen, die Fehler verursachen könnte:  
   
--   Wird das Dialogfeld die Schaltfläche "Hilfe" **IDHELP** (9).  
+- Wird das Dialogfeld die Schaltfläche "Hilfe" **IDHELP** (9).  
   
--   Das Dialogfeld fehlerfrei ist, wenn die Schaltfläche "Hilfe" ausgeblendet wird.  
+- Das Dialogfeld fehlerfrei ist, wenn die Schaltfläche "Hilfe" ausgeblendet wird.  
   
--   Das Dialogfeld ersetzt keine seine Winproc.  
+- Das Dialogfeld ersetzt keine seine Winproc.  
   
--   Das Dialogfeld wird in einem anderen Dialog nicht eingebettet werden.  
+- Das Dialogfeld wird in einem anderen Dialog nicht eingebettet werden.  
   
- Wenn das Dialogfeld befindet sich im Msenv befindet und nicht **VBDialogBoxParam**, untersuchen Sie die Nutzung von **VBDialogBoxParam** vor eigene Handler implementieren.  
+  Wenn das Dialogfeld befindet sich im Msenv befindet und nicht **VBDialogBoxParam**, untersuchen Sie die Nutzung von **VBDialogBoxParam** vor eigene Handler implementieren.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Dialogfelder, die mit anderen Paketen erstellt wurden  
  Sie können Ihre eigene Lösung für Dialogfelder implementieren, die sich außerhalb der Msenv befinden. Erwägen Sie für eine freigegebene Dialogfeldklasse in einem VSPackage verschieben die Schaltfläche mit den in der Titelleiste, oder implementieren einen Handler auf jedem Dialogfeld. Der folgende Code bildet das Grundgerüst einer Implementierung, die Ihnen beim Einstieg helfen:  

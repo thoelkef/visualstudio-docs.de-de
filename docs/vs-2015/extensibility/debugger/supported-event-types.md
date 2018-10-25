@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839387"
 ---
 # <a name="supported-event-types"></a>Unterstützte Ereignistypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:  
   
--   Asynchrone Ereignisse  
+- Asynchrone Ereignisse  
   
-     Benachrichtigt die sitzungsbasierter Debug-Manager (SDM) und IDE, die der Zustand der Anwendung im Debugmodus befindlichen geändert wird. Diese Ereignisse werden mit der Freizeit, das SDM und die IDE verarbeitet. Keine Antwort wird an die Debug-Engine (DE) gesendet, sobald das Ereignis verarbeitet wurde. Die [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) und [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) Schnittstellen sind Beispiele für die asynchrone Ereignisse.  
+   Benachrichtigt die sitzungsbasierter Debug-Manager (SDM) und IDE, die der Zustand der Anwendung im Debugmodus befindlichen geändert wird. Diese Ereignisse werden mit der Freizeit, das SDM und die IDE verarbeitet. Keine Antwort wird an die Debug-Engine (DE) gesendet, sobald das Ereignis verarbeitet wurde. Die [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) und [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) Schnittstellen sind Beispiele für die asynchrone Ereignisse.  
   
--   Synchrone Ereignisse  
+- Synchrone Ereignisse  
   
-     Benachrichtigen Sie die SDM und IDE, die der Zustand der Anwendung im Debugmodus befindlichen geändert wird. Der einzige Unterschied zwischen dieser und asynchrone Ereignisse ist, dass eine Antwort, von gesendet wird der [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) Methode.  
+   Benachrichtigen Sie die SDM und IDE, die der Zustand der Anwendung im Debugmodus befindlichen geändert wird. Der einzige Unterschied zwischen dieser und asynchrone Ereignisse ist, dass eine Antwort, von gesendet wird der [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) Methode.  
   
-     Das Senden eines synchronen Ereignis ist nützlich, wenn Sie Ihre DE weiter zu verarbeiten, nachdem die IDE empfängt und das Ereignis verarbeitet.  
+   Das Senden eines synchronen Ereignis ist nützlich, wenn Sie Ihre DE weiter zu verarbeiten, nachdem die IDE empfängt und das Ereignis verarbeitet.  
   
--   Synchrone Ereignisse beenden oder das Beenden der Ereignisse  
+- Synchrone Ereignisse beenden oder das Beenden der Ereignisse  
   
-     Benachrichtigen Sie das SDM und die IDE, dass die Anwendung im Debugmodus befindlichen Ausführen von Code beendet wurde. Wenn Sie eine Beenden-Ereignis senden, mithilfe der Methode [Ereignis](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) -Parameter ist erforderlich. Beenden des Ereignisse werden durch einen Aufruf einer der folgenden Methoden fortgesetzt:  
+   Benachrichtigen Sie das SDM und die IDE, dass die Anwendung im Debugmodus befindlichen Ausführen von Code beendet wurde. Wenn Sie eine Beenden-Ereignis senden, mithilfe der Methode [Ereignis](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) -Parameter ist erforderlich. Beenden des Ereignisse werden durch einen Aufruf einer der folgenden Methoden fortgesetzt:  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Die Schnittstellen [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sind Beispiele für Beenden-Ereignisse.  
+    Die Schnittstellen [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sind Beispiele für Beenden-Ereignisse.  
   
-    > [!NOTE]
-    >  Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
+  > [!NOTE]
+  >  Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
   
 ## <a name="discussion"></a>Diskussion  
  Die tatsächliche Implementierung der Ereignisse hängt von den Entwurf Ihrer DE ab. Der Typ jedes Ereignisses gesendet haben, richtet sich nach der Attribute, die festgelegt werden, wenn Sie die DE entwerfen. Beispielsweise kann ein DE senden ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) als ein asynchrones Ereignis, während eine andere als eine Beenden-Ereignis senden kann.  

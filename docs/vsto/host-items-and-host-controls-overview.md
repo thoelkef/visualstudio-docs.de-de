@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937498"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Hostelemente und Host-Steuerelementen (Übersicht)
   Hostelemente und Hoststeuerelemente sind Programmierelemente, die die Bereitstellung des Programmiermodells für Office-Projektmappen ermöglichen, die mithilfe der Office-Entwicklungstools in Visual Studio erstellt werden. Hostelemente und Hoststeuerelemente vereinfachen die Interaktion zwischen Objektmodellen von Microsoft Office Word und Microsoft Office Excel (COM-basiert) und verwalteten Objekten wie Windows Forms-Steuerelementen.  
@@ -54,21 +54,21 @@ ms.locfileid: "35671979"
 ## <a name="host-items"></a>Hostelemente  
  Hostelemente sind Programmiertypen, die in den Objektmodellhierarchien in Office-Projekten ganz oben angesiedelt sind. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] definiert die folgenden Hostelemente für Word- und Excel-Projektmappen:  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Jeder dieser Typen erweitert ein Objekt, das als systemeigenes Objekt im Word- oder Excel-Objektmodell vorhanden ist und als *systemeigenes Office-Objekt*bezeichnet wird. Das <xref:Microsoft.Office.Tools.Word.Document> -Hostelement erweitert beispielsweise das <xref:Microsoft.Office.Interop.Word.Document> -Objekt, das in der primären Interopassembly für Word definiert ist.  
+  Jeder dieser Typen erweitert ein Objekt, das als systemeigenes Objekt im Word- oder Excel-Objektmodell vorhanden ist und als *systemeigenes Office-Objekt*bezeichnet wird. Das <xref:Microsoft.Office.Tools.Word.Document> -Hostelement erweitert beispielsweise das <xref:Microsoft.Office.Interop.Word.Document> -Objekt, das in der primären Interopassembly für Word definiert ist.  
   
- Hostelemente verfügen im Allgemeinen über dieselben Standardfunktionen wie die entsprechenden Office-Objekte, wurden jedoch durch folgende Features ergänzt:  
+  Hostelemente verfügen im Allgemeinen über dieselben Standardfunktionen wie die entsprechenden Office-Objekte, wurden jedoch durch folgende Features ergänzt:  
   
--   Die Fähigkeit, verwaltete Steuerelemente, einschließlich Hoststeuerelementen und Windows Forms-Steuerelementen, zu hosten.  
+- Die Fähigkeit, verwaltete Steuerelemente, einschließlich Hoststeuerelementen und Windows Forms-Steuerelementen, zu hosten.  
   
--   Umfangreichere Ereignismodelle. Einige Dokument-, Arbeitsmappen und Arbeitsblattereignisse in systemeigenen Word- und Excel-Objektmodellen werden nur auf Anwendungsebene ausgelöst. Hostelemente stellen diese Ereignisse auf Dokumentebene bereit, damit es einfacher ist, die Ereignisse für ein bestimmtes Dokument zu behandeln.  
+- Umfangreichere Ereignismodelle. Einige Dokument-, Arbeitsmappen und Arbeitsblattereignisse in systemeigenen Word- und Excel-Objektmodellen werden nur auf Anwendungsebene ausgelöst. Hostelemente stellen diese Ereignisse auf Dokumentebene bereit, damit es einfacher ist, die Ereignisse für ein bestimmtes Dokument zu behandeln.  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>Verstehen von Hostelementen in Projekten auf Dokumentebene  
  In Projekten auf Dokumentebene stellen Hostelemente einen Einstiegspunkt für den Code bereit. Außerdem verfügen sie über Designer, die Sie bei der Umsetzung Ihrer Projektmappen unterstützen.  
@@ -85,35 +85,35 @@ ms.locfileid: "35671979"
  Nachdem Sie ein Hostelement generiert haben, können Sie Aufgaben wie das Hinzufügen von Steuerelementen zu Dokumenten ausführen. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Hosten von Steuerelementen  
- Hoststeuerelemente erweitern verschiedene Objekte der Benutzeroberfläche (UI) in den Word- und Excel-Objektmodellen, z. B. `Microsoft.Office.Interop.Word.ContentControl` und <xref:Microsoft.Office.Interop.Excel.Range> Objekte.  
+ Hoststeuerelemente erweitern verschiedene Benutzeroberflächenobjekte im Word- und Excel-Objektmodell, z. B. die Objekte `Microsoft.Office.Interop.Word.ContentControl` und <xref:Microsoft.Office.Interop.Excel.Range>.  
   
  Die folgenden Hoststeuerelemente sind für Excel-Projekte verfügbar:  
   
--   [Chart-Steuerelement](../vsto/chart-control.md)  
+- [Chart-Steuerelement](../vsto/chart-control.md)  
   
--   [ListObject-Steuerelement](../vsto/listobject-control.md)  
+- [ListObject-Steuerelement](../vsto/listobject-control.md)  
   
--   [NamedRange-Steuerelement](../vsto/namedrange-control.md)  
+- [NamedRange-Steuerelement](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md)  
   
- Die folgenden Hoststeuerelemente sind für Word-Projekte verfügbar:  
+  Die folgenden Hoststeuerelemente sind für Word-Projekte verfügbar:  
   
--   [Bookmark-Steuerelement](../vsto/bookmark-control.md)  
+- [Bookmark-Steuerelement](../vsto/bookmark-control.md)  
   
--   [ContentControl-Elemente](../vsto/content-controls.md)  
+- [ContentControl-Elemente](../vsto/content-controls.md)  
   
--   [XMLNode-Steuerelement](../vsto/xmlnode-control.md)  
+- [XMLNode-Steuerelement](../vsto/xmlnode-control.md)  
   
--   [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)  
+- [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)  
   
- Hoststeuerelemente, die Office-Dokumenten hinzugefügt werden, verhalten sich wie systemeigene Office-Objekte; Hoststeuerelemente verfügen jedoch über zusätzliche Funktionalität wie z. B. Ereignisse und Datenbindungsfunktionen. Wenn Sie die Ereignisse eines systemeigenen <xref:Microsoft.Office.Interop.Excel.Range> -Objekts in Excel z. B. aufzeichnen möchten, müssen Sie zuerst das Änderungsereignis des Arbeitsblatts behandeln. Anschließend müssen Sie feststellen, ob die Änderung innerhalb von <xref:Microsoft.Office.Interop.Excel.Range>aufgetreten ist. Im Gegensatz dazu verfügt das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Hoststeuerelement über ein <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> -Ereignis, das Sie direkt behandeln können.  
+  Hoststeuerelemente, die Office-Dokumenten hinzugefügt werden, verhalten sich wie systemeigene Office-Objekte; Hoststeuerelemente verfügen jedoch über zusätzliche Funktionalität wie z. B. Ereignisse und Datenbindungsfunktionen. Wenn Sie die Ereignisse eines systemeigenen <xref:Microsoft.Office.Interop.Excel.Range> -Objekts in Excel z. B. aufzeichnen möchten, müssen Sie zuerst das Änderungsereignis des Arbeitsblatts behandeln. Anschließend müssen Sie feststellen, ob die Änderung innerhalb von <xref:Microsoft.Office.Interop.Excel.Range>aufgetreten ist. Im Gegensatz dazu verfügt das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Hoststeuerelement über ein <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> -Ereignis, das Sie direkt behandeln können.  
   
- Die Beziehung zwischen einem Hostelement und Hosten von Steuerelementen ähnelt der Beziehung zwischen einem Windows Form und Windows Forms-Steuerelementen. Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement wird auf die gleiche Weise auf einem <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement platziert wie ein Textfeld-Steuerelement auf einem Windows Form. Die folgende Abbildung veranschaulicht die Beziehung zwischen Hostelementen und Hoststeuerelementen.  
+  Die Beziehung zwischen einem Hostelement und Hosten von Steuerelementen ähnelt der Beziehung zwischen einem Windows Form und Windows Forms-Steuerelementen. Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement wird auf die gleiche Weise auf einem <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement platziert wie ein Textfeld-Steuerelement auf einem Windows Form. Die folgende Abbildung veranschaulicht die Beziehung zwischen Hostelementen und Hoststeuerelementen.  
   
- ![Beziehung zwischen Hostelementen und Hoststeuerelementen](../vsto/media/hostitemscontrols.png "Beziehung zwischen Hostelementen und Hoststeuerelementen")  
+  ![Beziehung zwischen Hostelementen und Hoststeuerelementen](../vsto/media/hostitemscontrols.png "Beziehung zwischen Hostelementen und Hoststeuerelementen")  
   
- Sie können auch Windows Forms-Steuerelemente in Office-Projektmappen verwenden, indem Sie sie direkt zur Word- und Excel-Dokumentoberfläche hinzufügen. Weitere Informationen finden Sie unter [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+  Sie können auch Windows Forms-Steuerelemente in Office-Projektmappen verwenden, indem Sie sie direkt zur Word- und Excel-Dokumentoberfläche hinzufügen. Weitere Informationen finden Sie unter [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  Das Hinzufügen von Hoststeuerelementen oder Windows Forms-Steuerelementen zu einem Word-Filialdokument wird nicht unterstützt.  
@@ -121,31 +121,31 @@ ms.locfileid: "35671979"
 ### <a name="add-host-controls-to-your-documents"></a>Ihren Dokumenten Hoststeuerelemente hinzufügen  
  In Projekten auf Dokumentebene haben Sie zur Entwurfszeit folgende Möglichkeiten, Ihren Word-Dokumenten oder Excel-Arbeitsblättern Hoststeuerelemente hinzuzufügen:  
   
--   Hoststeuerelemente werden dem Dokument zur Entwurfszeit auf die gleiche Weise hinzugefügt wie systemeigene Objekte.  
+- Hoststeuerelemente werden dem Dokument zur Entwurfszeit auf die gleiche Weise hinzugefügt wie systemeigene Objekte.  
   
--   Ziehen Sie Hoststeuerelemente aus der **Toolbox** auf Ihre Dokumente und Arbeitsblätter. Excel-Hoststeuerelemente sind auf der Registerkarte **Excel-Steuerelemente** in Excel-Projekten und Word-Hoststeuerelemente auf der Registerkarte **Word-Steuerelemente** in Word-Projekten verfügbar.  
+- Ziehen Sie Hoststeuerelemente aus der **Toolbox** auf Ihre Dokumente und Arbeitsblätter. Excel-Hoststeuerelemente sind auf der Registerkarte **Excel-Steuerelemente** in Excel-Projekten und Word-Hoststeuerelemente auf der Registerkarte **Word-Steuerelemente** in Word-Projekten verfügbar.  
   
--   Ziehen Sie Hoststeuerelemente aus dem Fenster **Datenquellen** auf Ihre Dokumente und Arbeitsblätter. Dadurch können Sie Steuerelemente hinzufügen, die bereits an Daten gebunden sind. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
+- Ziehen Sie Hoststeuerelemente aus dem Fenster **Datenquellen** auf Ihre Dokumente und Arbeitsblätter. Dadurch können Sie Steuerelemente hinzufügen, die bereits an Daten gebunden sind. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- In auf Dokumentebene und VSTO-Add-in-Projekte können Sie auch einige Hoststeuerelementen zu Dokumenten zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  In auf Dokumentebene und VSTO-Add-in-Projekte können Sie auch einige Hoststeuerelementen zu Dokumenten zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Weitere Informationen darüber, wie Sie Dokumenten Hoststeuerelemente hinzufügen, finden Sie unter folgenden Themen:  
+  Weitere Informationen darüber, wie Sie Dokumenten Hoststeuerelemente hinzufügen, finden Sie unter folgenden Themen:  
   
--   [Gewusst wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Gewusst wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Gewusst wie: Hinzufügen von XMLMappedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Gewusst wie: Hinzufügen von XMLMappedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Gewusst wie: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Gewusst wie: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Gewusst wie: Hinzufügen von Inhalt von Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Gewusst wie: Hinzufügen von Inhalt von Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Name-Hoststeuerelemente  
  Wenn Sie ein Hoststeuerelement aus der **Toolbox** in das Dokument ziehen, wird das Steuerelement automatisch nach dem Steuerelementtyp gefolgt von einer fortlaufenden Nummer benannt. Lesezeichen erhalten beispielsweise den Namen **Bookmark1**, **Bookmark2**usw. Wenn Sie zum Hinzufügen des Steuerelements die systemeigene Funktionalität von Word oder Excel verwenden, können Sie dem Steuerelement bei der Erstellung einen spezifischen Namen geben. Sie können die Steuerelemente auch umbenennen, indem Sie den Wert der **Name** -Eigenschaft im Fenster **Eigenschaften** ändern.  

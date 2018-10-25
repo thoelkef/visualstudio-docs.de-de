@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
+title: IDebugStackFrame3::InterceptCurrentException | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46ae2f3ae0c63c798fc42b93d50e5aee398ccf5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06d6c67724e6d8b66a34fc31412a1a925ba7c78c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934482"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-Aufgerufen vom Debugger auf den aktuellen Stapelrahmen an, wenn die aktuelle Ausnahme abzufangen.  
+Aufgerufen vom Debugger auf dem aktuellen Stapelrahmen an, wenn die aktuelle Ausnahme abzufangen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,26 +46,26 @@ int InterceptCurrentException(
  [in] Gibt die verschiedenen Aktionen an. Derzeit nur die [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) Wert `IEA_INTERCEPT` wird unterstützt und muss angegeben werden.  
   
  `pqwCookie`  
- [out] Eindeutiger Wert, der eine bestimmte Ausnahme identifiziert.  
+ [out] Eindeutiger Wert identifiziert eine bestimmte Ausnahme.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
- Es folgen die häufigsten Fehler zurückgibt.  
+ Im folgenden werden die häufigsten Fehler zurückgibt.  
   
 |Fehler|Beschreibung|  
 |-----------|-----------------|  
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Die aktuelle Ausnahme nicht abgefangen werden kann.|  
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Der aktuelle Rahmen ist Ausführung noch nicht nach einem Ausnahmehandler noch durchsucht wurde.|  
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Die aktuelle Ausnahme kann nicht abgefangen werden.|  
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Der aktuelle Frame für die Ausführung noch nicht nach einem Handler noch durchsucht wurde.|  
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Diese Methode wird für diesen Frame nicht unterstützt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn eine Ausnahme ausgelöst wird, erhält der Debugger-Steuerelement aus der Laufzeit zu wichtigen Zeitpunkten während der Prozess für die Ausnahmebehandlung. Während dieser Schlüssel Momente kann der Debugger dem aktuellen Stapelrahmen bitten, wenn der Frame möchte, die Ausnahme abzufangen. Auf diese Weise ist eine abgefangene Ausnahme im Wesentlichen einen auf dynamische Ausnahmehandler für einen Stapelrahmen entspricht, selbst wenn diesem Stapelrahmen einen Ausnahmehandler (z. B. einen Try/Catch-Block im Programmcode im) vorhanden ist.  
+ Wenn eine Ausnahme ausgelöst wird, erhält der Debugger-Steuerelement aus der Laufzeit an wichtigen Punkten während der Prozess für die Ausnahmebehandlung. Während diese wichtigen stellen kann der Debugger dem aktuellen Stapelrahmen bitten, wenn möchte, dass der Frame die Ausnahme abzufangen. Auf diese Weise ist eine abgefangene Ausnahme im Wesentlichen einen auf dynamische Ausnahmehandler für einen Stapelrahmen, auch wenn dieser Stapelrahmen nicht über einen Ausnahmehandler (z. B. einen Try/Catch-Block im Programmcode) verfügt.  
   
- Wenn der Debugger wissen möchte, ob die Ausnahme abgefangen werden sollen, ruft es diese Methode auf der aktuellen Stack-Frame-Objekts. Diese Methode ist verantwortlich für alle Details der Ausnahme zu behandeln. Wenn die [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) Schnittstelle ist nicht implementiert oder das `InterceptStackException` Methodenrückgabe Fehler, und der Debugger weiterhin normal Verarbeitung der Ausnahme.  
+ Wenn der Debugger wissen möchte, ob die Ausnahme abgefangen werden soll, ruft sie diese Methode, an dem aktuellen Stack-Frame-Objekt. Diese Methode ist verantwortlich für die Behandlung von alle Details der Ausnahme. Wenn die [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) Schnittstelle ist nicht implementiert oder `InterceptStackException` Methode gibt alle Fehler zurück, und klicken Sie dann der Debugger führt die Verarbeitung der Ausnahme Normal.  
   
 > [!NOTE]
->  Ausnahmen können also nur in verwaltetem Code abgefangen werden, wenn das Programm, das gerade gedebuggt wird unter .NET zur Laufzeit ausgeführt wird. Natürlich können Drittanbieter-Sprachimplementierer implementieren `InterceptStackException` in ihre eigenen Debugmodule Wenn wechselseitig.  
+>  Ausnahmen können, also nur in verwaltetem Code abgefangen werden, wenn die zu debuggende Programm wird unter .NET Runtime ausgeführt wird. Natürlich können Drittanbieter-sprachimplementierung implementieren `InterceptStackException` in ihre eigenen Debug-Engines, die bei Bedarf wechselseitig.  
   
  Nachdem das Abfangen abgeschlossen ist, wird ein [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) signalisiert wird.  
   

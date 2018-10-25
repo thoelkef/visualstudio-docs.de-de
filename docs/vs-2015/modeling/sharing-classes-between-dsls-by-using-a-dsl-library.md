@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860035"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ In der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs- und Modelli
   
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek  
   
-1.  In einer anderen DSL-Definition in **DSL-Explorer**mit der rechten Maustaste auf die Stammklasse der DSL, und klicken Sie dann auf **Hinzufügen eines neuen DslLibrary Import**.  
+1. In einer anderen DSL-Definition in **DSL-Explorer**mit der rechten Maustaste auf die Stammklasse der DSL, und klicken Sie dann auf **Hinzufügen eines neuen DslLibrary Import**.  
   
-2.  Legen Sie im Fenster Eigenschaften die **Dateipfad** der Bibliothek. Sie können ein relativer oder absoluter Pfad.  
+2. Legen Sie im Fenster Eigenschaften die **Dateipfad** der Bibliothek. Sie können ein relativer oder absoluter Pfad.  
   
-     Die importierte Bibliothek wird im DSL-Explorer im schreibgeschützten Modus angezeigt.  
+    Die importierte Bibliothek wird im DSL-Explorer im schreibgeschützten Modus angezeigt.  
   
-3.  Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänenklasse in der importierenden DSL, und legen in den Eigenschaften des **Basisklasse** zu einer Klasse importiert.  
+3. Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänenklasse in der importierenden DSL, und legen in den Eigenschaften des **Basisklasse** zu einer Klasse importiert.  
   
-4.  Klicken Sie auf alle Vorlagen transformieren.  
+4. Klicken Sie auf alle Vorlagen transformieren.  
   
-5.  Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (DLL), die von der DSL-Bibliothek-Projekt erstellt wurde.  
+5. Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (DLL), die von der DSL-Bibliothek-Projekt erstellt wurde.  
   
-6.  Erstellen Sie die Projektmappe.  
+6. Erstellen Sie die Projektmappe.  
   
- Eine DSL-Bibliothek können andere Bibliotheken importieren. Wenn Sie eine Bibliothek importieren, werden die Importe auch automatisch im DSL-Explorer angezeigt.  
+   Eine DSL-Bibliothek können andere Bibliotheken importieren. Wenn Sie eine Bibliothek importieren, werden die Importe auch automatisch im DSL-Explorer angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910679"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und farbeinstellungen
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) speichert die geänderte Einstellungen für Schriftarten und Farben in der Registrierung. Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle, um diese Einstellungen zuzugreifen.
@@ -49,17 +49,17 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwic
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Verwenden Sie die statusbeibehaltung von Schriftarten und Farben
  Beibehalten von Schriftarten und Farben umfasst:
 
--   Synchronisieren die IDE-Einstellungen, mit Einstellungen, die in der Registrierung gespeichert.
+- Synchronisieren die IDE-Einstellungen, mit Einstellungen, die in der Registrierung gespeichert.
 
--   Weiter Informationen zur Änderung der Registrierung.
+- Weiter Informationen zur Änderung der Registrierung.
 
--   Festlegen und Abrufen von Einstellungen, die in der Registrierung gespeichert.
+- Festlegen und Abrufen von Einstellungen, die in der Registrierung gespeichert.
 
- Synchronisieren die speichereinstellung mit dem IDE-Einstellungen ist größtenteils transparent. Die zugrunde liegenden IDE schreibt automatisch die aktualisierte Einstellungen für **Anzeigeelemente** um die Registrierungseinträge der Kategorien.
+  Synchronisieren die speichereinstellung mit dem IDE-Einstellungen ist größtenteils transparent. Die zugrunde liegenden IDE schreibt automatisch die aktualisierte Einstellungen für **Anzeigeelemente** um die Registrierungseinträge der Kategorien.
 
- Wenn eine bestimmte Kategorie von mehreren VSPackages gemeinsam nutzen, eine VSPackage sollte erforderlich sein, dass die Ereignisse generiert werden, wenn Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle werden verwendet, um gespeicherte registrierungseinstellungen ändern.
+  Wenn eine bestimmte Kategorie von mehreren VSPackages gemeinsam nutzen, eine VSPackage sollte erforderlich sein, dass die Ereignisse generiert werden, wenn Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle werden verwendet, um gespeicherte registrierungseinstellungen ändern.
 
- Standardmäßig ist das Generieren nicht aktiviert. Zum Generieren von Ereignissen zu aktivieren, muss eine Kategorie mit geöffnet sein <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Öffnen eine Kategorie bewirkt, dass die IDE aufrufen, die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Methode, die eine VSPackage implementiert.
+  Standardmäßig ist das Generieren nicht aktiviert. Zum Generieren von Ereignissen zu aktivieren, muss eine Kategorie mit geöffnet sein <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Öffnen eine Kategorie bewirkt, dass die IDE aufrufen, die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Methode, die eine VSPackage implementiert.
 
 > [!NOTE]
 >  Änderungen über die **Schriftart- und Farbeinstellungen** Eigenschaftenseite Generieren von Ereignissen, die unabhängig von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update der zwischengespeicherten Einstellungen von Schriftart und Farbe erforderlich ist, vor dem Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Klasse.

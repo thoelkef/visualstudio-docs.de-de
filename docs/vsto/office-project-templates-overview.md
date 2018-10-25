@@ -33,25 +33,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934326"
 ---
 # <a name="office-project-templates-overview"></a>Übersicht über Office-Projektvorlagen
   Die Entwicklertools für Microsoft Office in Visual Studio enthalten Projektvorlagen für das Erstellen folgender Typen von Office-Lösungen:  
   
--   [Anpassungen auf Dokumentebene](#DocLevel)  
+- [Anpassungen auf Dokumentebene](#DocLevel)  
   
--   [VSTO-Add-Ins](#AppLevel)  
+- [VSTO-Add-Ins](#AppLevel)  
   
- Einen ausführlichen Vergleich dieser Arten von Office-Projektmappen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Einen ausführlichen Vergleich dieser Arten von Office-Projektmappen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
- Die Office-Projektvorlagen sind im Dialogfeld **Neues Projekt** unter dem Knoten **Office** im **Visual C#** -Sprachknoten und im **Visual Basic** -Sprachknoten verfügbar. Jede Vorlage generiert ein Projekt mit der entsprechenden Konfiguration für die Zielanwendung, einschließlich der Assemblyverweise und Debugeinstellungen.  
+  Die Office-Projektvorlagen sind im Dialogfeld **Neues Projekt** unter dem Knoten **Office** im **Visual C#** -Sprachknoten und im **Visual Basic** -Sprachknoten verfügbar. Jede Vorlage generiert ein Projekt mit der entsprechenden Konfiguration für die Zielanwendung, einschließlich der Assemblyverweise und Debugeinstellungen.  
   
- Jedes Projekt enthält Dateien und Code, die bzw. der Ihnen als Ausgangspunkt für eine bestimmte Art von Projektmappe dienen. Der generierte Code für jedes Projekt schließt Ereignishandler zum Starten und Herunterfahren ein. Sie können diesen Ereignishandlern Code hinzufügen, um die Projektmappe zu initialisieren, wenn sie geladen wird, und um die Projektmappe zu bereinigen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md) und [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+  Jedes Projekt enthält Dateien und Code, die bzw. der Ihnen als Ausgangspunkt für eine bestimmte Art von Projektmappe dienen. Der generierte Code für jedes Projekt schließt Ereignishandler zum Starten und Herunterfahren ein. Sie können diesen Ereignishandlern Code hinzufügen, um die Projektmappe zu initialisieren, wenn sie geladen wird, und um die Projektmappe zu bereinigen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md) und [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
 >  Die Office-Entwicklertools sind in bestimmten Editionen von Visual Studio enthalten. Weitere Informationen finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -59,25 +59,25 @@ ms.locfileid: "35672242"
 ##  <a name="DocLevel"></a> Anpassungen auf Dokumentebene  
  Der **Office** -Knoten im Dialogfeld **Neues Projekt** stellt die folgenden Projektvorlagen bereit, um Ihnen den Einstieg für Anpassungen auf Dokumentebene für Word und Excel zu erleichtern:  
   
--   **Word 2013- und 2016-VSTO-Dokument**  
+- **Word 2013- und 2016-VSTO-Dokument**  
   
--   **Word 2013- und 2016-VSTO-Vorlage**  
+- **Word 2013- und 2016-VSTO-Vorlage**  
   
--   **Excel 2013- und 2016-VSTO-Arbeitsmappe**  
+- **Excel 2013- und 2016-VSTO-Arbeitsmappe**  
   
--   **Excel 2013- und 2016-VSTO-Vorlage**  
+- **Excel 2013- und 2016-VSTO-Vorlage**  
   
--   **Word 2010-VSTO-Dokument**  
+- **Word 2010-VSTO-Dokument**  
   
--   **Word 2010-VSTO-Vorlage**  
+- **Word 2010-VSTO-Vorlage**  
   
--   **Excel 2010-VSTO-Arbeitsmappe**  
+- **Excel 2010-VSTO-Arbeitsmappe**  
   
--   **Excel 2010-VSTO-Vorlage**  
+- **Excel 2010-VSTO-Vorlage**  
   
- Die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen enthalten Code, der Ihnen das Erstellen einer Projektmappe erleichtern soll, die auf einem bestimmten Dokument oder einer bestimmten Arbeitsmappe basiert. In diesen Typen von Projektmappen wird der Code nur ausgeführt, wenn das zugehörige Dokument in Word oder Excel geöffnet ist.  
+  Die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen enthalten Code, der Ihnen das Erstellen einer Projektmappe erleichtern soll, die auf einem bestimmten Dokument oder einer bestimmten Arbeitsmappe basiert. In diesen Typen von Projektmappen wird der Code nur ausgeführt, wenn das zugehörige Dokument in Word oder Excel geöffnet ist.  
   
- Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen verhalten sich ebenso wie die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen. Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen erleichtern Benutzern jedoch die Erstellung neuer lokaler Dokumente oder Arbeitsmappenkopien der benutzerdefinierten Vorlage in der Projektmappe. Die Funktionen in der Projektmappe sind in dem neuen Dokument verfügbar, das der Benutzer aus der Vorlage erstellt.  
+  Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen verhalten sich ebenso wie die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen. Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen erleichtern Benutzern jedoch die Erstellung neuer lokaler Dokumente oder Arbeitsmappenkopien der benutzerdefinierten Vorlage in der Projektmappe. Die Funktionen in der Projektmappe sind in dem neuen Dokument verfügbar, das der Benutzer aus der Vorlage erstellt.  
   
 > [!NOTE]  
 >  Word-Vorlagen, die auf Erweiterungen durch verwalteten Code verweisen, können nicht als globale VSTO-Add-Ins verwendet werden. Die Assembly wird nicht aufgerufen, wenn die Vorlage aus dem Word-Verzeichnis „Startup“ geladen wird. Weitere Informationen finden Sie unter [Einschränkungen bei globalen Vorlagen und Excel-Add-ins (XLA-Dateien)](#Limitations)  
@@ -97,51 +97,51 @@ ms.locfileid: "35672242"
 ##  <a name="AppLevel"></a> VSTO-Add-Ins  
  Der **Office/SharePoint** -Knoten im Dialogfeld **Neues Projekt** stellt die folgenden Projektvorlagen bereit, um Ihnen den Einstieg in das Erstellen von VSTO-Add-Ins zu erleichtern:  
   
--   **Excel 2013- und 2016-VSTO-Add-In**  
+- **Excel 2013- und 2016-VSTO-Add-In**  
   
--   **InfoPath 2013-VSTO-Add-In**  
+- **InfoPath 2013-VSTO-Add-In**  
   
--   **Outlook 2013- und 2016-VSTO-Add-In**  
+- **Outlook 2013- und 2016-VSTO-Add-In**  
   
--   **PowerPoint 2013- und 2016-Add-In**  
+- **PowerPoint 2013- und 2016-Add-In**  
   
--   **Project 2013- und 2016-Add-In**  
+- **Project 2013- und 2016-Add-In**  
   
--   **Visio 2013- und 2016-Add-In**  
+- **Visio 2013- und 2016-Add-In**  
   
--   **Word 2013- und 2016-Add-In**  
+- **Word 2013- und 2016-Add-In**  
   
--   **Excel 2010-Add-In**  
+- **Excel 2010-Add-In**  
   
--   **InfoPath 2010-Add-In**  
+- **InfoPath 2010-Add-In**  
   
--   **Outlook 2010-Add-In**  
+- **Outlook 2010-Add-In**  
   
--   **PowerPoint 2010-Add-In**  
+- **PowerPoint 2010-Add-In**  
   
--   **Project 2010-Add-In**  
+- **Project 2010-Add-In**  
   
--   **Visio 2010-Add-In**  
+- **Visio 2010-Add-In**  
   
--   **Word 2010-Add-In**  
+- **Word 2010-Add-In**  
   
- Wenn Sie ein Projekt erstellen, das auf einer dieser Projektvorlagen basiert, wird der Code in der Projektmappe ausgeführt, wenn die zugehörige Anwendung geöffnet ist. Im Gegensatz zu Projekten auf Dokumentebene ist der Code keinem einzelnen Dokument zugeordnet.  
+  Wenn Sie ein Projekt erstellen, das auf einer dieser Projektvorlagen basiert, wird der Code in der Projektmappe ausgeführt, wenn die zugehörige Anwendung geöffnet ist. Im Gegensatz zu Projekten auf Dokumentebene ist der Code keinem einzelnen Dokument zugeordnet.  
   
- Weitere Informationen für die ersten Schritte mit diesen Projekttypen finden Sie in den folgenden Themen:  
+  Weitere Informationen für die ersten Schritte mit diesen Projekttypen finden Sie in den folgenden Themen:  
   
--   [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+- [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)  
+- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>Dokumentieren und Vorlagenprojektmappen  
  Wenn Sie eine Projektmappe für ein Word-Dokument oder eine Excel-Arbeitsmappe entwerfen, müssen Sie sich entscheiden, wie Sie dieses Dokument am besten für Benutzer zur Verfügung stellen.  

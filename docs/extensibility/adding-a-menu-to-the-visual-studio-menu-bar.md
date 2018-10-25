@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938219"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Menüleiste Visual Studio
 Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten Entwicklungsumgebung (IDE) von Visual Studio-Menüleiste hinzugefügt wird. Die IDE-Menüleiste enthält Menükategorien wie z. B. **Datei**, **bearbeiten**, **Ansicht**, **Fenster**, und **Hilfe** .  
@@ -30,7 +30,7 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
   
  Diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü mit dem Namen erstellen **TestMenu** , das einen Befehl enthält.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Erstellen Sie ein VSIX-Projekt, die eine benutzerdefinierten Befehl-Elementvorlage  
@@ -41,48 +41,48 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Erstellen Sie ein Menüelement in der IDE-Menüleiste  
   
-1.  In **Projektmappen-Explorer**öffnen *TestCommandPackage.vsct*.  
+1. In **Projektmappen-Explorer**öffnen *TestCommandPackage.vsct*.  
   
-     Am Ende der Datei, besteht eine \<Symbole > Knoten, der mehrere enthält \<GuidSymbol > Knoten. Fügen Sie ein neues Symbol, klicken Sie im Knoten mit dem Namen GuidTestCommandPackageCmdSet wie folgt:  
+    Am Ende der Datei, besteht eine \<Symbole > Knoten, der mehrere enthält \<GuidSymbol > Knoten. Fügen Sie ein neues Symbol, klicken Sie im Knoten mit dem Namen GuidTestCommandPackageCmdSet wie folgt:  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  Erstellen Sie eine leere \<Menüs > Knoten in der \<Befehle > Knoten direkt vor \<Gruppen >. In der \<Menüs > Knoten Hinzufügen einer \<Menü > Knoten wie folgt:  
+2. Erstellen Sie eine leere \<Menüs > Knoten in der \<Befehle > Knoten direkt vor \<Gruppen >. In der \<Menüs > Knoten Hinzufügen einer \<Menü > Knoten wie folgt:  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     Die `guid` und `id` Werte des Menüs Geben Sie den Befehlssatz, und bestimmte Menü in den Befehlssatz.  
+    Die `guid` und `id` Werte des Menüs Geben Sie den Befehlssatz, und bestimmte Menü in den Befehlssatz.  
   
-     Die `guid` und `id` Werte des übergeordneten Elements positionieren Sie im Menü auf der Teil der Visual Studio-Menüleiste, die die Tools und Add-Ins Menüs enthält.  
+    Die `guid` und `id` Werte des übergeordneten Elements positionieren Sie im Menü auf der Teil der Visual Studio-Menüleiste, die die Tools und Add-Ins Menüs enthält.  
   
-     Der Wert des der `CommandName` Zeichenfolge gibt an, dass der Text im Menüelement angezeigt wird.  
+    Der Wert des der `CommandName` Zeichenfolge gibt an, dass der Text im Menüelement angezeigt wird.  
   
-3.  In der \<Gruppen > im Abschnitt, finden Sie die \<Gruppe >, und ändern Sie die \<übergeordneten >-Elements auf das Menü zeigen wir gerade hinzugefügt haben:  
+3. In der \<Gruppen > im Abschnitt, finden Sie die \<Gruppe >, und ändern Sie die \<übergeordneten >-Elements auf das Menü zeigen wir gerade hinzugefügt haben:  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     Dadurch wird den Teil von Gruppe für das neue Menü.  
+    Dadurch wird den Teil von Gruppe für das neue Menü.  
   
-4.  Suchen der `Buttons` Abschnitt. Beachten Sie, dass die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Paket-Vorlage wurde generiert eine `Button` -Element, das das übergeordnete Element festgelegt wurde `MyMenuGroup`. Daher wird Sie mit diesem Befehl in Ihrem Menü angezeigt.  
+4. Suchen der `Buttons` Abschnitt. Beachten Sie, dass die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Paket-Vorlage wurde generiert eine `Button` -Element, das das übergeordnete Element festgelegt wurde `MyMenuGroup`. Daher wird Sie mit diesem Befehl in Ihrem Menü angezeigt.  
   
 ## <a name="build-and-test-the-extension"></a>Erstellen Sie und Testen Sie die Erweiterung  
   

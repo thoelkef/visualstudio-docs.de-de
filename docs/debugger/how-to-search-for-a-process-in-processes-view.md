@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen eines Prozesses in der Prozessansicht | Microsoft Docs'
+title: 'Vorgehensweise: Suchen eines Prozesses in der Prozessansicht | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,33 +13,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d23199031ce46e57e44a01720493fad4e77c7430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822916"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Gewusst wie: Suchen eines Prozesses in der Prozessansicht
-Sie können mithilfe der Prozess-ID oder ein Modul Zeichenfolge als Suchkriterium für einen bestimmten Prozess in der Prozessansicht suchen. Sie können auch die ausgangsrichtung der Suche angeben. Die Felder im Dialogfeld zeigt die Attribute des ausgewählten Prozess in der Struktur verarbeiten.  
+Sie können mithilfe der Prozess-ID oder ein Modul Zeichenfolge als Suchkriterium für einen bestimmten Prozess in der Prozessansicht suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld zeigt die Attribute des ausgewählten Prozess in der Struktur verarbeiten.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Suchen Sie für einen Prozess in der Prozessansicht  
   
-1.  Ordnen Sie die Fenster so, Spy++ und ein aktives [Prozessansicht](../debugger/processes-view.md) Fenster sichtbar sind.  
+1. Ordnen Sie die Fenster also, Spy++ und ein aktiver [Prozessansicht](../debugger/processes-view.md) Fenster sichtbar sind.  
   
-2.  Aus der **Suche** Menü wählen **Prozess suchen**  
+2. Von der **Suche** Menü wählen **Prozess suchen**  
   
-     Die [Prozess-Dialogfeld "Fenstersuche"](../debugger/process-search-dialog-box.md) wird geöffnet.  
+    Die [verarbeiten suchen (Dialogfeld)](../debugger/process-search-dialog-box.md) wird geöffnet.  
   
-3.  Geben Sie die Prozess-ID oder einen Modulnamen als Suchkriterien.  
+3. Geben Sie die Prozess-ID oder eine Modulzeichenfolge als Suchkriterium an.  
   
-4.  Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
+4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
   
-    > [!TIP]
-    >  Um alle Prozesse, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Prozess** Feld, und geben Sie den Namen des Moduls, in der **Modul** Feld. Verwenden Sie dann **Weitersuchen** Suche nach Prozessen fort.  
+   > [!TIP]
+   >  Um alle Prozesse, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Prozess** und geben Sie den Namen des Moduls in die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Prozesse, die Suche fortgesetzt werden.  
   
-5.  Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung der Suche.  
+5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
- Wenn ein entsprechender Prozess gefunden wird, wird es hervorgehoben, der **Prozessansicht** Fenster.
+   Wenn ein entsprechender Prozess gefunden wird, ist die Hervorhebung der **Prozessansicht** Fenster.

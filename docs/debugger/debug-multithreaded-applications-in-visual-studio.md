@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854772"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessorzeit reserviert. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.  
@@ -88,19 +88,19 @@ Das Debuggen einer Multithreadanwendung mit einer Benutzeroberfläche kann beson
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
 
- - Verwenden Sie breakpointbedingungen oder Filter aus, wenn Sie einen einzelnen Thread debuggen möchten.  
+- Verwenden Sie breakpointbedingungen oder Filter aus, wenn Sie einen einzelnen Thread debuggen möchten.  
   
- - Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen. Dies kann beim Untersuchen von Problemen wie Deadlocks hilfreich sein.  
+- Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen. Dies kann beim Untersuchen von Problemen wie Deadlocks hilfreich sein.  
   
- [Threading](/dotnet/standard/threading/index)  
- Threadingbegriffe in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Programmierung, einschließlich Beispielcode.  
+  [Threading](/dotnet/standard/threading/index)  
+  Threadingbegriffe in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Programmierung, einschließlich Beispielcode.  
   
- [Multithreading in Komponenten](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Erläutert die Verwendung des Multithreadings in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Komponenten.  
+  [Multithreading in Komponenten](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Erläutert die Verwendung des Multithreadings in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Komponenten.  
   
- [Multithreadingunterstützung für älteren Code (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- Threadingbegriffe und Beispielcode für C++-Programmierer, die MFC verwenden.  
+  [Multithreadingunterstützung für älteren Code (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+  Threadingbegriffe und Beispielcode für C++-Programmierer, die MFC verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

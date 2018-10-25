@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849033"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen vorzunehmen, z. B., um eine neue Registerkarte des Menübands anzuzeigen, wenn eine Arbeitsmappe geöffnet ist.  
@@ -31,19 +31,19 @@ ms.locfileid: "38800931"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen eines Excel-Arbeitsmappenprojekts.  
+- Erstellen eines Excel-Arbeitsmappenprojekts.  
   
--   Hinzufügen von Text zu einem Arbeitsblatt, das im Visual Studio-Designer gehostet wird.  
+- Hinzufügen von Text zu einem Arbeitsblatt, das im Visual Studio-Designer gehostet wird.  
   
--   Schreiben von Code, der das Excel-Objektmodell zum Hinzufügen von Text zum angepassten Arbeitsblatt verwendet, wenn dieses geöffnet wird.  
+- Schreiben von Code, der das Excel-Objektmodell zum Hinzufügen von Text zum angepassten Arbeitsblatt verwendet, wenn dieses geöffnet wird.  
   
--   Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
+- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
--   Bereinigen des abgeschlossenen Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
+- Bereinigen des abgeschlossenen Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -54,35 +54,35 @@ ms.locfileid: "38800931"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>So erstellen Sie ein neues Excel-Arbeitsmappenprojekt in Visual Studio  
   
-1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-3.  Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.  
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.  
   
-4.  Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.  
+4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.  
   
-5.  Wählen Sie in der Liste der Projektvorlagen ein Excel-VSTO-Add-In-Projekt aus.  
+5. Wählen Sie in der Liste der Projektvorlagen ein Excel-VSTO-Add-In-Projekt aus.  
   
-6.  In der **Namen** geben **FirstWorkbookCustomization**.  
+6. In der **Namen** geben **FirstWorkbookCustomization**.  
   
-7.  Klicken Sie auf **OK**.  
+7. Klicken Sie auf **OK**.  
   
-     Der **Projekt-Assistent aus Visual Studio Tools for Office** wird geöffnet.  
+    Der **Projekt-Assistent aus Visual Studio Tools for Office** wird geöffnet.  
   
-8.  Wählen Sie **ein neues Dokument erstellen**, und klicken Sie auf **OK**.  
+8. Wählen Sie **ein neues Dokument erstellen**, und klicken Sie auf **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWorkbookCustomization** Projekt, und fügt Sie dem Projekt die folgenden Dateien.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWorkbookCustomization** Projekt, und fügt Sie dem Projekt die folgenden Dateien.  
   
-    -   *FirstWorkbookCustomization*.xlsx – Stellt die Excel-Arbeitsmappe im Projekt dar. Enthält alle Arbeitsblätter und Diagramme.  
+   - *FirstWorkbookCustomization*.xlsx – Stellt die Excel-Arbeitsmappe im Projekt dar. Enthält alle Arbeitsblätter und Diagramme.  
   
-    -   Tabelle1 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das erste Arbeitsblatt in der Arbeitsmappe bereitstellt. Weitere Informationen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).  
+   - Tabelle1 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das erste Arbeitsblatt in der Arbeitsmappe bereitstellt. Weitere Informationen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).  
   
-    -   Tabelle2 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das zweite Arbeitsblatt in der Arbeitsmappe bereitstellt.  
+   - Tabelle2 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das zweite Arbeitsblatt in der Arbeitsmappe bereitstellt.  
   
-    -   Sheet3 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das dritte Arbeitsblatt in der Arbeitsmappe bereitstellt.  
+   - Sheet3 (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – ein Arbeitsblatt, das die Entwurfsoberfläche und den Code für das dritte Arbeitsblatt in der Arbeitsmappe bereitstellt.  
   
-    -   ThisWorkbook (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – enthält die Entwurfsoberfläche und den Code für Anpassungen auf Arbeitsmappenebene. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*vb* Datei für Visual Basic oder *cs* Datei für Visual c#) – enthält die Entwurfsoberfläche und den Code für Anpassungen auf Arbeitsmappenebene. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).  
   
      Die Codedatei "Sheet1" wird automatisch im Designer geöffnet.  
   
@@ -114,9 +114,9 @@ ms.locfileid: "38800931"
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Fügen Sie Text in einem Arbeitsblatt programmgesteuert hinzu  
  Als Nächstes fügen Sie der Codedatei "Sheet1" Code hinzu. Der neue Code verwendet das Excel-Objektmodell, um der Arbeitsmappe eine zweite Textzeile hinzuzufügen. Standardmäßig enthält die Codedatei "Sheet1" den folgenden generierten Code:  
   
--   Eine partielle Definition der `Sheet1`-Klasse, die das Programmiermodell des Arbeitsblatts darstellt und den Zugriff auf das Excel-Objektmodell bereitstellt. Weitere Informationen [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `Sheet1`-Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
+-   Eine partielle Definition der `Sheet1`-Klasse, die das Programmiermodell des Arbeitsblatts darstellt und den Zugriff auf das Excel-Objektmodell bereitstellt. Weitere Informationen [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `Sheet1` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
--   Die Ereignishandler `Sheet1_Startup` und `Sheet1_Shutdown`. Diese Ereignishandler werden aufgerufen, wenn Ihre Anpassung von Excel geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren der Anpassung, wenn sie geladen wird, und zum Bereinigen der von der Anpassung verwendeten Ressourcen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+-   Die Ereignishandler `Sheet1_Startup` und `Sheet1_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihre Anpassung von Excel geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren der Anpassung, wenn sie geladen wird, und zum Bereinigen der von der Anpassung verwendeten Ressourcen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>So fügen Sie dem Arbeitsblatt mithilfe von Code eine zweite Textzeile hinzu  
   

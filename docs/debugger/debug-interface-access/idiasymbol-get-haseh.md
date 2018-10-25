@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haseh | Microsoft Docs'
+title: 'Idiasymbol:: Get_haseh | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0104afd4a84f8d6c50effee0b1cd552b952289c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: de561482d0d6d98006fa8cda2299125be666f073
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917231"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Ruft ein Flag, das angibt, ob die Funktion nicht verwalteten C++-Stil Ausnahmebehandlung (z. B. einen Try/Catch-Block) enthält.  
+Ruft ein Flag, das angibt, ob die Funktion nicht verwaltete Ausnahmebehandlung für C++-Stil (z. B. einen Try/Catch-Block) enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion C++-Stil Ausnahmebehandlung; hat, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn die Funktion die Ausnahmebehandlung im C++-Stil; hat, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   

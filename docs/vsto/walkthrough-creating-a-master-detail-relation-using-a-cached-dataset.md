@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933156"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
   In dieser exemplarischen Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung in einem Arbeitsblatt und Zwischenspeichern von Daten, damit die Projektmappe offline verwendet werden kann.  
@@ -41,7 +41,7 @@ ms.locfileid: "38808264"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -57,34 +57,34 @@ ms.locfileid: "38808264"
   
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My Master-Detail**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My Master-Detail**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **My Master-Detail** Projekt **Projektmappen-Explorer**.  
+   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **My Master-Detail** Projekt **Projektmappen-Explorer**.  
   
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle  
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.  
   
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
+1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
   
-2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-3.  Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
+3. Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
   
-4.  Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
+4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
   
-5.  Nach dem auswählen oder erstellen eine Verbindung, klicken Sie auf **Weiter**.  
+5. Nach dem auswählen oder erstellen eine Verbindung, klicken Sie auf **Weiter**.  
   
-6.  Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-7.  Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
+7. Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
   
-8.  Wählen Sie die **Bestellungen** Tabelle und die **Bestelldetails** Tabelle.  
+8. Wählen Sie die **Bestellungen** Tabelle und die **Bestelldetails** Tabelle.  
   
 9. Klicken Sie auf **Fertig stellen**.  
   
- Der Assistent fügt die beiden Tabellen aus, um die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
+   Der Assistent fügt die beiden Tabellen aus, um die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
  In diesem Schritt fügen Sie einen benannten Bereich, ein List-Objekt und zwei Schaltflächen, das erste Arbeitsblatt hinzu. Fügen Sie zunächst den benannten Bereich und das List-Objekt, aus der **Datenquellen** Fenster, damit diese automatisch an die Datenquelle gebunden werden. Fügen Sie die Schaltflächen aus der **Toolbox**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808264"
   
 ### <a name="to-add-two-buttons"></a>Zwei Schaltflächen hinzufügen  
   
-1.  Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.  
+1. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.  
   
-     Diese Schaltfläche den Namen `Button1`.  
+    Diese Schaltfläche den Namen `Button1`.  
   
-2.  Fügen Sie ein weiteres <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **B3** des Arbeitsblatts.  
+2. Fügen Sie ein weiteres <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **B3** des Arbeitsblatts.  
   
-     Diese Schaltfläche den Namen `Button2`.  
+    Diese Schaltfläche den Namen `Button2`.  
   
- Markieren Sie als Nächstes das Dataset im Dokument zwischengespeichert werden.  
+   Markieren Sie als Nächstes das Dataset im Dokument zwischengespeichert werden.  
   
 ## <a name="cache-the-dataset"></a>Die Zwischenspeicherung des Datasets  
  Markieren Sie das Dataset im Dokument zwischengespeichert werden, indem öffentlich zu machen das Dataset und das Festlegen der **CacheInDocument** Eigenschaft.  
   
 ### <a name="to-cache-the-dataset"></a>Das Dataset zwischengespeichert  
   
-1.  Wählen Sie **NorthwindDataSet** auf der Komponentenleiste.  
+1. Wählen Sie **NorthwindDataSet** auf der Komponentenleiste.  
   
-2.  In der **Eigenschaften** Ändern der **Modifizierer** Eigenschaft **öffentliche**.  
+2. In der **Eigenschaften** Ändern der **Modifizierer** Eigenschaft **öffentliche**.  
   
-     Datasets müssen öffentlich sein, bevor Sie das Zwischenspeichern aktiviert ist.  
+    Datasets müssen öffentlich sein, bevor Sie das Zwischenspeichern aktiviert ist.  
   
-3.  Ändern der **CacheInDocument** Eigenschaft **"true"**.  
+3. Ändern der **CacheInDocument** Eigenschaft **"true"**.  
   
- Der nächste Schritt ist zum Hinzufügen von Text auf Schaltflächen, und fügen Sie im C#-Code, um die Ereignishandler einzubinden.  
+   Der nächste Schritt ist zum Hinzufügen von Text auf Schaltflächen, und fügen Sie im C#-Code, um die Ereignishandler einzubinden.  
   
 ## <a name="initialize-the-controls"></a>Initialisieren Sie die Steuerelemente  
  Legen Sie den Text der Schaltfläche, und fügen Sie Ereignishandler während der <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> Ereignis.  

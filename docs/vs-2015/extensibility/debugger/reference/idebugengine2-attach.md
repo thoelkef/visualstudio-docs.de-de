@@ -17,12 +17,12 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa03f59945b1e51d0c86aee48dde27d0fa4b326b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d198baa227052fcff9e82a4d77b12624f8340616
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825693"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,25 +73,25 @@ int Attach(
 ## <a name="remarks"></a>Hinweise  
  Es gibt drei Gründe für das Anfügen an ein Programm, wie folgt:  
   
--   `ATTACH_REASON_LAUNCH` Gibt an, dass die DE für das Programm angefügt wird, da der Benutzer, der Prozess gestartet, der sie enthält.  
+- `ATTACH_REASON_LAUNCH` Gibt an, dass die DE für das Programm angefügt wird, da der Benutzer, der Prozess gestartet, der sie enthält.  
   
--   `ATTACH_REASON_USER` Gibt an, dass der Benutzer explizit die DE zum Anfügen an ein Programm (oder den Prozess, der ein Programm enthält) angefordert hat.  
+- `ATTACH_REASON_USER` Gibt an, dass der Benutzer explizit die DE zum Anfügen an ein Programm (oder den Prozess, der ein Programm enthält) angefordert hat.  
   
--   `ATTACH_REASON_AUTO` Gibt an, dass die DE an ein bestimmtes Programm angefügt wird, da sie bereits andere Programme in einem bestimmten Prozess Debuggen ist. Dies wird auch bezeichnet das automatische Anhängen.  
+- `ATTACH_REASON_AUTO` Gibt an, dass die DE an ein bestimmtes Programm angefügt wird, da sie bereits andere Programme in einem bestimmten Prozess Debuggen ist. Dies wird auch bezeichnet das automatische Anhängen.  
   
- Wenn diese Methode aufgerufen wird, muss die DE senden, diese Ereignisse in Reihenfolge:  
+  Wenn diese Methode aufgerufen wird, muss die DE senden, diese Ereignisse in Reihenfolge:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (sofern es nicht bereits für eine bestimmte Instanz der Debug-Engine gesendet wurden)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (sofern es nicht bereits für eine bestimmte Instanz der Debug-Engine gesendet wurden)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Darüber hinaus ist der Grund für das Anfügen von `ATTACH_REASON_LAUNCH`, muss die DE senden die [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) Ereignis.  
+   Darüber hinaus ist der Grund für das Anfügen von `ATTACH_REASON_LAUNCH`, muss die DE senden die [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) Ereignis.  
   
- Nach DE Ruft die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das zu debuggende Programm wird, entspricht für alle private Schnittstelle abgefragt werden kann.  
+   Nach DE Ruft die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das zu debuggende Programm wird, entspricht für alle private Schnittstelle abgefragt werden kann.  
   
- Vor dem Aufrufen der Methoden eines Knotens für die Anwendung in das Array, das vom `pProgram` oder `rgpProgramNodes`, Identitätswechsel bei Bedarf aktiviert werden soll die `IDebugProgram2` -Schnittstelle, die Programm-Knoten darstellt. In der Regel ist jedoch, diesen Schritt nicht erforderlich. Weitere Informationen finden Sie unter [Sicherheitsprobleme](../../../extensibility/debugger/security-issues.md).  
+   Vor dem Aufrufen der Methoden eines Knotens für die Anwendung in das Array, das vom `pProgram` oder `rgpProgramNodes`, Identitätswechsel bei Bedarf aktiviert werden soll die `IDebugProgram2` -Schnittstelle, die Programm-Knoten darstellt. In der Regel ist jedoch, diesen Schritt nicht erforderlich. Weitere Informationen finden Sie unter [Sicherheitsprobleme](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

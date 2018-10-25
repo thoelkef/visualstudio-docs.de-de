@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850807"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -478,12 +478,13 @@ Das Regelformat ist einfach, damit Sie diesem Abschnitt wird nur die Attribute b
 
 Die `PageTemplate` Attribut wird definiert, wie die Regel angezeigt wird, in der **Eigenschaftenseiten** Dialogfeld. Das Attribut kann einen der folgenden Werte aufweisen:
 
-|Attribut|Beschreibung|
-|-|-|
-`generic`|Alle Eigenschaften werden auf einer Seite unter Kategorieüberschriften angezeigt.<br/>Die Regel kann für sichtbar sein `Project` und `PropertySheet` Kontexte, aber nicht `File`.<br/><br/> Beispiel: `$(VCTargetsPath)` \\ *1033*\\ *"debugger_general.xml"*
-`tool`|Kategorien werden als Unterseiten angezeigt.<br/>Die Regel kann in allen Kontexten angezeigt werden: `Project`, `PropertySheet` und `File`.<br/>Die Regel in den Projekteigenschaften angezeigt wird, nur, wenn das Projekt Elemente mit der `ItemType` in definierten `Rule.DataSource`, es sei denn, der den Namen der Regel enthalten ist, in der `ProjectTools` Elementgruppe.<br/><br/>Beispiel: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|Die Seite wird als Teil der Seite "Debuggen" angezeigt.<br/>Kategorien werden derzeit ignoriert.<br/>Name der Regel sollte des Debuggen Startprogramm MEF-Objekts übereinstimmen `ExportDebugger` Attribut.<br/><br/>Beispiel: `$(VCTargetsPath)` \\ *1033*\\*Debugger\_lokalen\_windows.xml*
-*Benutzerdefinierte*| Benutzerdefinierte Vorlage. Der Name der Vorlage sollte übereinstimmen der `ExportPropertyPageUIFactoryProvider` Attribut der `PropertyPageUIFactoryProvider` MEF-Objekt. Finden Sie unter **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Beispiel: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Attribut | Beschreibung |
+|------------| - |
+| `generic` | Alle Eigenschaften werden auf einer Seite unter Kategorieüberschriften angezeigt.<br/>Die Regel kann für sichtbar sein `Project` und `PropertySheet` Kontexte, aber nicht `File`.<br/><br/> Beispiel: `$(VCTargetsPath)` \\ *1033*\\ *"debugger_general.xml"* |
+| `tool` | Kategorien werden als Unterseiten angezeigt.<br/>Die Regel kann in allen Kontexten angezeigt werden: `Project`, `PropertySheet` und `File`.<br/>Die Regel in den Projekteigenschaften angezeigt wird, nur, wenn das Projekt Elemente mit der `ItemType` in definierten `Rule.DataSource`, es sei denn, der den Namen der Regel enthalten ist, in der `ProjectTools` Elementgruppe.<br/><br/>Beispiel: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | Die Seite wird als Teil der Seite "Debuggen" angezeigt.<br/>Kategorien werden derzeit ignoriert.<br/>Name der Regel sollte des Debuggen Startprogramm MEF-Objekts übereinstimmen `ExportDebugger` Attribut.<br/><br/>Beispiel: `$(VCTargetsPath)` \\ *1033*\\*Debugger\_lokalen\_windows.xml* |
+| *custom* | Benutzerdefinierte Vorlage. Der Name der Vorlage sollte übereinstimmen der `ExportPropertyPageUIFactoryProvider` Attribut der `PropertyPageUIFactoryProvider` MEF-Objekt. Finden Sie unter **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Beispiel: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Wenn die Regel eine der Eigenschaftenraster-basierte Vorlagen verwendet, können sie diese Erweiterbarkeitspunkte für die zugehörigen Eigenschaften:
 

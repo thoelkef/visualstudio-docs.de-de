@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907702"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprac
 ## <a name="a-minimal-language-service"></a>Ein Minimal-Sprachdienst  
  Die meisten grundlegenden Sprachdiensts enthält die folgenden zwei Objekte:  
   
--   Die *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Ein Sprachdienst hat Informationen zu Sprache, einschließlich der Namen, die Dateinamenerweiterungen Weitere Erweiterungen, die Codefenster-Manager und die Farbauswahl.  
+- Die *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Ein Sprachdienst hat Informationen zu Sprache, einschließlich der Namen, die Dateinamenerweiterungen Weitere Erweiterungen, die Codefenster-Manager und die Farbauswahl.  
   
--   Die *Farbauswahl* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle.  
+- Die *Farbauswahl* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle.  
   
- Die folgende schematische Darstellung zeigt ein Modell eines einfachen Sprachdiensts.  
+  Die folgende schematische Darstellung zeigt ein Modell eines einfachen Sprachdiensts.  
   
- ![Sprachdienstmodell](../../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel")  
-Grundlegende sprachendienstmodell  
+  ![Sprachdienstmodell](../../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel")  
+  Grundlegende sprachendienstmodell  
   
- Die Dokument-Fenster-Hosts die *Dokumentansicht* des Editors in diesem Fall die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Kern-Editor. Die Ansicht des Dokuments und dem Textpuffer gehören durch den Editor. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] durch einem speziellen Fenster aufgerufen, eine *Codefenster*. Im Code-Fenster befindet sich einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das erstellt und von der IDE gesteuert.  
+  Die Dokument-Fenster-Hosts die *Dokumentansicht* des Editors in diesem Fall die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Kern-Editor. Die Ansicht des Dokuments und dem Textpuffer gehören durch den Editor. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] durch einem speziellen Fenster aufgerufen, eine *Codefenster*. Im Code-Fenster befindet sich einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das erstellt und von der IDE gesteuert.  
   
- Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, wird der Editor sucht den Sprachdienst, der dieser Erweiterung zugeordnet und übergibt, Code-Fenster durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Language-Dienst gibt eine *codefenstermanager*, implementiert der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle.  
+  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, wird der Editor sucht den Sprachdienst, der dieser Erweiterung zugeordnet und übergibt, Code-Fenster durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Language-Dienst gibt eine *codefenstermanager*, implementiert der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle.  
   
- Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.  
+  Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.  
   
 |Komponente|Object|Funktion|  
 |---------------|------------|--------------|  

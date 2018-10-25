@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884900"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>So ermitteln Sie den Threadmarker  
   
-1.  Mit der rechten Maustaste den **Threads** Fenster, klicken Sie dann auf **Threads in Quelle anzeigen**.  
+1. Mit der rechten Maustaste den **Threads** Fenster, klicken Sie dann auf **Threads in Quelle anzeigen**.  
   
-2.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie ein Symbol, das zwei Fäden ähnelt. Der eine ist rot und der andere blau. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde. Der Thread wurde möglicherweise an dieser Position angehalten.  
+2. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie ein Symbol, das zwei Fäden ähnelt. Der eine ist rot und der andere blau. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde. Der Thread wurde möglicherweise an dieser Position angehalten.  
   
-3.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads. In diesem Fall gibt es nur einen Thread, dessen Name wahrscheinlich `<noname>` lautet.  
+3. Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads. In diesem Fall gibt es nur einen Thread, dessen Name wahrscheinlich `<noname>` lautet.  
   
-4.  Klicken Sie mit der rechten Maustaste auf den Threadmarker. Beachten Sie die Auswahlen im Kontextmenü.  
+4. Klicken Sie mit der rechten Maustaste auf den Threadmarker. Beachten Sie die Auswahlen im Kontextmenü.  
   
- Dieses Symbol ist ein *Threadmarker*:  
+   Dieses Symbol ist ein *Threadmarker*:  
   
- ![Thread-Marker](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Thread-Marker](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Kennzeichnen von Threads und Aufheben der Kennzeichnung  
  In [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] können Sie Threads kennzeichnen, die besondere Aufmerksamkeit erfordern. Das Kennzeichnen von Threads bietet eine gute Möglichkeit, wichtige Threads nachzuverfolgen und unwichtige Threads zu ignorieren.  

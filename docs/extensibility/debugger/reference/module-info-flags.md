@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS | Microsoft Docs
+title: MODULE_INFO_FLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2676b85889226e2fbb9665462d83aa4b0d6520
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2422c2578979b1fc8c5f07ba92aa4117c87042d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933910"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-Gibt den Status der Symbole für ein Modul.  
+Gibt den Status von Symbolen für ein Modul.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,7 +42,7 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>Member  
  MIF_SYMBOLS_LOADED  
- Mindestens ein Satz von Symbolen durch das Modul geladen wurde (andernfalls keine Symbole geladen wurden).  
+ Mindestens ein Satz von Symbolen, die vom Modul geladen wurde (andernfalls keine Symbole geladen wurden).  
   
 ## <a name="remarks"></a>Hinweise  
  Dieser Wert wird zurückgegeben, durch die [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) Methode.  

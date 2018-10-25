@@ -13,32 +13,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18ef1d61d0e203744cc6436d884c37339a4a1ef0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8cc16544df224e09724cae8a1f09f72039cb61e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894494"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework-Funktion
   Diese API unterstützt die Office-Infrastruktur und ist nicht direkt aus Ihrem Code verwendet werden soll.  
-  
+
 ## <a name="syntax"></a>Syntax  
-  
+
 ```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
 );  
 ```  
-  
+
 ### <a name="parameters"></a>Parameter  
+
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |*lpwszCompatibleFrameworksXML*|Verwenden Sie nicht.|  
 |*pbstrValidFrameworkTag*|Verwenden Sie nicht.|  
-  
+
 ## <a name="return-value"></a>Rückgabewert  
  Wenn die Funktion erfolgreich ist, gibt es **S_OK**. Wenn die Funktion fehlschlägt, wird einen Fehlercode zurückgegeben.  
-  
-  
+

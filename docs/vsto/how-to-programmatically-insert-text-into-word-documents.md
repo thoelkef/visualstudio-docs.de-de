@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881663"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programmgesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:  
@@ -94,39 +94,39 @@ ms.locfileid: "35257211"
   
 ### <a name="to-insert-text-using-the-typetext-method"></a>So fügen Sie Text mithilfe der TypeText-Methode ein  
   
-1.  Deklarieren Sie eine <xref:Microsoft.Office.Interop.Word.Selection> -Objektvariable.  
+1. Deklarieren Sie eine <xref:Microsoft.Office.Interop.Word.Selection> -Objektvariable.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  Deaktivieren Sie die **Overtype** -Option, falls sie eingeschaltet ist.  
+2. Deaktivieren Sie die **Overtype** -Option, falls sie eingeschaltet ist.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  Überprüfen Sie, ob es sich bei der aktuellen Auswahl um eine Einfügemarke handelt.  
+3. Überprüfen Sie, ob es sich bei der aktuellen Auswahl um eine Einfügemarke handelt.  
   
-     Falls ja, fügt der Code einen Satz mithilfe von <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>und dann eine Absatzmarke mithilfe der <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> -Methode ein.  
+    Falls ja, fügt der Code einen Satz mithilfe von <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>und dann eine Absatzmarke mithilfe der <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> -Methode ein.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  Durch den Code im **ElseIf** -Block wird überprüft, ob die Auswahl eine normale Auswahl ist. Falls ja, wird durch einen anderen **If** -Block überprüft, ob die **ReplaceSelection** -Option aktiviert ist. Wenn dies der Fall ist, verwendet der Code die <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> -Methode, um die Auswahl auf eine Einfügemarke am Anfang des ausgewählten Textblocks zu reduzieren. Fügen Sie den Text und eine Absatzmarke ein.  
+4. Durch den Code im **ElseIf** -Block wird überprüft, ob die Auswahl eine normale Auswahl ist. Falls ja, wird durch einen anderen **If** -Block überprüft, ob die **ReplaceSelection** -Option aktiviert ist. Wenn dies der Fall ist, verwendet der Code die <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> -Methode, um die Auswahl auf eine Einfügemarke am Anfang des ausgewählten Textblocks zu reduzieren. Fügen Sie den Text und eine Absatzmarke ein.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  Wenn die Auswahl keine Einfügemarke oder kein Block mit markierten Text ist, wird vom Code im **Else** -Block keine Aktion ausgeführt.  
+5. Wenn die Auswahl keine Einfügemarke oder kein Block mit markierten Text ist, wird vom Code im **Else** -Block keine Aktion ausgeführt.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Können Sie auch die <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> Methode der <xref:Microsoft.Office.Interop.Word.Selection> -Objekt, das die Funktionalität von imitiert die **RÜCKTASTE** auf der Tastatur die Taste. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.  
+   Können Sie auch die <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> Methode der <xref:Microsoft.Office.Interop.Word.Selection> -Objekt, das die Funktionalität von imitiert die **RÜCKTASTE** auf der Tastatur die Taste. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.  
   
- Das folgende Beispiel enthält den vollständigen Code. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisDocument` -Klasse oder `ThisAddIn` -Klasse im Projekt aus.  
+   Das folgende Beispiel enthält den vollständigen Code. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisDocument` -Klasse oder `ThisAddIn` -Klasse im Projekt aus.  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Programmgesteuertes Formatieren von Text in Dokumenten](../vsto/how-to-programmatically-format-text-in-documents.md)   

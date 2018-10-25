@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897991"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Enumerationswerte nicht benennen &#39;reserviert&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204723"
 
  In einer begrenzten Anzahl von Fällen ist das Hinzufügen eines Elements eine unterbrechende Änderung, auch wenn der ursprünglichen Elemente auf ihre ursprünglichen Werte erhalten bleiben. Das neue Element kann nicht in erster Linie von vorhandenen Codepfaden zurückgegeben werden, ohne unterbrechende Aufrufer, mit denen eine `switch` (`Select` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)])-Anweisung für den Rückgabewert, umfasst die gesamte Memberliste und, die eine Ausnahme in, der der Standardfall. Ein weiteres Problem ist, dass der Clientcode keine Änderungen im Verhalten von Reflektionsmethoden wie z. B. behandelt <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Entsprechend ist, wenn das neue Element wurde aus der vorhandenen Methoden zurückgegeben werden, oder eine bekannte Anwendungsinkompatibilität tritt auf, aufgrund schlechter, die einzige geschützte Lösung zu:
 
-1.  Fügen Sie eine neue Enumeration, die die ursprünglichen und neuen Elemente enthält.
+1. Fügen Sie eine neue Enumeration, die die ursprünglichen und neuen Elemente enthält.
 
-2.  Markieren Sie die ursprüngliche Enumeration mit den <xref:System.ObsoleteAttribute?displayProperty=fullName> Attribut.
+2. Markieren Sie die ursprüngliche Enumeration mit den <xref:System.ObsoleteAttribute?displayProperty=fullName> Attribut.
 
- Führen Sie dieselbe Verfahren für extern sichtbare Typen oder Member, die die ursprüngliche Enumeration verfügbar zu machen.
+   Führen Sie dieselbe Verfahren für extern sichtbare Typen oder Member, die die ursprüngliche Enumeration verfügbar zu machen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie, oder benennen Sie den Member.

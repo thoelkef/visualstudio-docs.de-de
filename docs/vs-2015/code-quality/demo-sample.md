@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880656"
 ---
 # <a name="demo-sample"></a>Demobeispiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese folgenden Verfahren zeigen, wie zum Erstellen der Beispieldatenbank für [Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Die Prozeduren erstellen:  
   
--   Ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung, die mit dem Namen CppDemo.  
+- Ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung, die mit dem Namen CppDemo.  
   
--   Ein statisches Bibliotheksprojekt mit dem Namen CodeDefects aus.  
+- Ein statisches Bibliotheksprojekt mit dem Namen CodeDefects aus.  
   
--   Ein statisches Bibliotheksprojekt mit dem Namen Anmerkungen.  
+- Ein statisches Bibliotheksprojekt mit dem Namen Anmerkungen.  
   
- Die Verfahren bieten auch den Code für die Header und CPP-Dateien für die statischen Bibliotheken.  
+  Die Verfahren bieten auch den Code für die Header und CPP-Dateien für die statischen Bibliotheken.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Erstellen der Projektmappe CppDemo und das Projekt CodeDefects  
   

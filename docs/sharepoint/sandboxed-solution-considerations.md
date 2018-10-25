@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890035"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu sandkastenlösungen
   *Sandbox-Lösungen* sind ein Feature in Microsoft SharePoint 2010, mit dem Standort Sammlung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Allgemeine Sandbox-Lösung ist die Benutzer ihre eigenen Webparts hochladen.  
@@ -81,66 +81,66 @@ ms.locfileid: "37119163"
 ## <a name="sandboxed-solution-limitations"></a>Beschränkungen von Sandbox-Lösung
  Wenn eine sandkastenlösung bereitgestellt wird, ist das Array von SharePoint-Funktionen zur Verfügung, um alle Sicherheitsrisiken zu reduzieren, die sie möglicherweise beschränkt. Zu diesen Einschränkungen zählen folgende:  
   
--   Sandbox-Lösungen müssen eine eingeschränkte Teilmenge der bereitzustellende Lösung-Elemente, die ihnen zur Verfügung. Potenziell anfällig für SharePoint-Projektvorlagen, wie Website-Definitionen und Workflows, sind nicht verfügbar.  
+- Sandbox-Lösungen müssen eine eingeschränkte Teilmenge der bereitzustellende Lösung-Elemente, die ihnen zur Verfügung. Potenziell anfällig für SharePoint-Projektvorlagen, wie Website-Definitionen und Workflows, sind nicht verfügbar.  
   
--   SharePoint Sandkastenlösungscode in einem Prozess ausgeführt (*SPUCWorkerProcess.exe*) getrennt von den Hauptknoten [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] -Anwendungspool (*w3wp.exe*) verarbeiten.  
+- SharePoint Sandkastenlösungscode in einem Prozess ausgeführt (*SPUCWorkerProcess.exe*) getrennt von den Hauptknoten [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] -Anwendungspool (*w3wp.exe*) verarbeiten.  
   
--   Zugeordnete Ordner können nicht zum Projekt hinzugefügt werden.  
+- Zugeordnete Ordner können nicht zum Projekt hinzugefügt werden.  
   
--   Typen in der [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] Assembly Microsoft.Office.Server kann nicht in sandkastenlösungen verwendet werden. Darüber hinaus nur Typen in der [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Assembly Microsoft.SharePoint in sandkastenlösungen verwendet werden kann.  
+- Typen in der [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] Assembly Microsoft.Office.Server kann nicht in sandkastenlösungen verwendet werden. Darüber hinaus nur Typen in der [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Assembly Microsoft.SharePoint in sandkastenlösungen verwendet werden kann.  
   
- Es ist wichtig zu beachten, dass die Angabe einer SharePoint-Lösung als sandkastenlösung keine Auswirkungen auf SharePoint-Server hat. es nur bestimmt, wie das SharePoint-Projekt bereitgestellt wird, in SharePoint aus [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und welche Assemblys bindet an. Es hat keine Auswirkungen auf die generierte *.wsp* -Datei, und die *.wsp* Datei enthält keine Daten, die direkt mit korreliert die *Sandkastenlösung* Eigenschaft.  
+  Es ist wichtig zu beachten, dass die Angabe einer SharePoint-Lösung als sandkastenlösung keine Auswirkungen auf SharePoint-Server hat. es nur bestimmt, wie das SharePoint-Projekt bereitgestellt wird, in SharePoint aus [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und welche Assemblys bindet an. Es hat keine Auswirkungen auf die generierte *.wsp* -Datei, und die *.wsp* Datei enthält keine Daten, die direkt mit korreliert die *Sandkastenlösung* Eigenschaft.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funktionen und Elemente in der Sandbox-Lösungen
  Sandbox-Lösungen unterstützen die folgenden Funktionen und die folgenden Elemente:  
   
--   Inhaltstypen/Felder  
+- Inhaltstypen/Felder  
   
--   Benutzerdefinierte Aktionen  
+- Benutzerdefinierte Aktionen  
   
--   Deklarativer workflows  
+- Deklarativer workflows  
   
--   Ereignisempfänger  
+- Ereignisempfänger  
   
--   Feature-Legenden  
+- Feature-Legenden  
   
--   Listendefinitionen  
+- Listendefinitionen  
   
--   Listeninstanzen  
+- Listeninstanzen  
   
--   Modul-Dateien  
+- Modul-Dateien  
   
--   Navigation  
+- Navigation  
   
--   *"onet.xml"*  
+- *"onet.xml"*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   Unterstützung für alle Webparts, die von abgeleitet werden `System.Web.UI.WebControls.WebParts.WebPart`  
+- Unterstützung für alle Webparts, die von abgeleitet werden `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Webparts  
+- Webparts  
   
--   WebTemplate Funktionselemente (anstelle von *Webtemp.xml*)  
+- WebTemplate Funktionselemente (anstelle von *Webtemp.xml*)  
   
--   Visuelle Webparts  
+- Visuelle Webparts  
   
- Sandbox-Lösungen unterstützen nicht die folgenden Funktionen und die folgenden Elemente:  
+  Sandbox-Lösungen unterstützen nicht die folgenden Funktionen und die folgenden Elemente:  
   
--   Anwendungsseiten  
+- Anwendungsseiten  
   
--   Benutzerdefinierte Aktionsgruppe  
+- Benutzerdefinierte Aktionsgruppe  
   
--   Farm-Funktionen  
+- Farm-Funktionen  
   
--   `HideCustomAction`-Element  
+- `HideCustomAction`-Element  
   
--   Im Gültigkeitsbereich der Anwendung-Web-Funktionen  
+- Im Gültigkeitsbereich der Anwendung-Web-Funktionen  
   
--   Workflows mit code  
+- Workflows mit code  
   
 ## <a name="see-also"></a>Siehe auch
  [Unterschiede zwischen Sandkasten- und farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

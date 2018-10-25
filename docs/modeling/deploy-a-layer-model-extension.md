@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874617"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
 
@@ -29,13 +29,13 @@ Die Erweiterung wird zu einer VSIX-Datei kompiliert, die Sie auf anderen Compute
 
 ### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung
 
-1.  Klicken Sie in das Projekt mit **source.vsix.manifest**öffnen **Bin\\ \***  im Datei-Explorer.
+1. Klicken Sie in das Projekt mit **source.vsix.manifest**öffnen die *Bin* Verzeichnis, in dem Datei-Explorer.
 
-2.  Kopieren der  **\*VSIX** Datei auf dem Computer, auf denen die Erweiterung installiert werden sollen.
+2. Kopieren der  **\*VSIX** Datei auf dem Computer, auf denen die Erweiterung installiert werden sollen.
 
-3.  Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.
+3. Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.
 
-     Das VSIX-Installationsprogramm wird geöffnet.
+    Das VSIX-Installationsprogramm wird geöffnet.
 
 ### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 

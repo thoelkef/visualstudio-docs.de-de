@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
+title: IDebugBinder3::GetMemoryContext64 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec9be314597f2f4fd7fa067db17028c1d8aee72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccfb34e03259e67eaca17e2cee7c824e62ce0393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925908"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Konvertiert ein Ort des Objekts oder eine 64-Bit-Speicheradresse an einen Speicherkontext.  
+Konvertiert entweder auf ein Objektspeicherort oder auf einer 64-Bit-Speicheradresse in einen Kontext an Arbeitsspeicher an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,10 +53,10 @@ int GetMemoryContext64 (
  [out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle, die die Adresse des Objekts oder die Adresse im Speicher darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- In den folgenden Beispielen erstellt ein Objekt, implementiert die [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) Schnittstelle, und diese Methode zum Abrufen des Kontexts Arbeitsspeicher verwendet.  
+ In den folgenden Beispielen wird ein Objekt, implementiert die [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) Schnittstelle, und verwendet diese Methode zum Abrufen des Kontexts Arbeitsspeicher.  
   
 ```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  

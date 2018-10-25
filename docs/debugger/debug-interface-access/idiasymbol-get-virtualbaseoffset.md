@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbaseoffset | Microsoft Docs'
+title: 'Idiasymbol:: Get_virtualbaseoffset | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e26ef0435b2e4f3fde14d8e58b4f5cb8321b1d0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 354f1be420e2a14d716d0817a888c5a6978db595
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864230"
 ---
 # <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
-Ruft den Offset in die virtuelle Funktionstabelle einer virtuellen Funktion ab.  
+Ruft den Offset in der Tabelle virtuelle Funktion, die einer virtuellen Funktion ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_virtualBaseOffset (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Offset in die virtuelle Funktionstabelle einer virtuellen Funktion zurück.  
+ [out] Gibt den Offset in der Tabelle virtuelle Funktion, die einer virtuellen Funktion zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

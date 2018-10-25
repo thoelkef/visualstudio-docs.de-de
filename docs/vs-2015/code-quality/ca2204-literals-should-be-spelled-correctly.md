@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928439"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200351"
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel prüft eine Literalzeichenfolge, die als Wert übergeben wird, auf einen Parameter oder eine Eigenschaft, wenn eine oder mehrere der folgenden Fälle zutreffen:
 
--   Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
+- Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
 
--   Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
+- Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
 
--   Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
+- Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
 
- Diese Regel analysiert die Literalzeichenfolge in Wörter, die mit Token versehen zusammengesetzte Wörter und überprüft die Rechtschreibung eines einzelnen Worts/Tokens. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Diese Regel analysiert die Literalzeichenfolge in Wörter, die mit Token versehen zusammengesetzte Wörter und überprüft die Rechtschreibung eines einzelnen Worts/Tokens. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
- Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet.
+  Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie es zu einem Benutzerwörterbuch. Weitere Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthparams | Microsoft Docs'
+title: 'Idiaframedata:: Get_lengthparams | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8259edc4d1cf6ece66e09dc046c262c15eb570c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd50907ff152190beddc025798fbccf072a8fc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857628"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
 Ruft die Anzahl der Bytes von Parametern, die auf dem Stapel abgelegt.  
@@ -37,10 +37,10 @@ HRESULT get_lengthParams (
  [out] Gibt die Anzahl der Bytes von Parametern zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Von dieser Methode zurückgegebene Wert wird üblicherweise in die Interpretation einer Zeichenfolge für die Anwendung verwendet (finden Sie unter der [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) Methode für die Definition einer Anwendung Zeichenfolge).  
+ Der von dieser Methode zurückgegebene Wert wird normalerweise verwendet, bei der Interpretation einer Programm-Zeichenfolge (finden Sie unter den [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) -Methode für die Definition einer Programm-Zeichenfolge).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

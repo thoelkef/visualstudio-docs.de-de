@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863723"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Gewusst wie: Auswählen der zu verwendenden XML-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>So wählen Sie ein XML-Schema aus dem Schemacache aus  
   
-1.  Öffnen Sie eine Datei im XML-Editor.  
+1. Öffnen Sie eine Datei im XML-Editor.  
   
-2.  Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
+2. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
   
-     Die **XML-Schemas** Dialogfeld wird angezeigt. Das Dialogfeld listet alle Schemata mit einer XSD-Erweiterung im Schemacache (z. B. Schemas, die in der Datei catalog.xml verwiesen wird), und auch jedes Schema, das in der aktuellen Projektmappe öffnen, in Visual Studio verwiesen wird, eine `xsd:schemaLocation` Attribut, oder auf die verwiesen wird. die **Schemas** Eigenschaft.  
+    Die **XML-Schemas** Dialogfeld wird angezeigt. Das Dialogfeld listet alle Schemata mit einer XSD-Erweiterung im Schemacache (z. B. Schemas, die in der Datei catalog.xml verwiesen wird), und auch jedes Schema, das in der aktuellen Projektmappe öffnen, in Visual Studio verwiesen wird, eine `xsd:schemaLocation` Attribut, oder auf die verwiesen wird. die **Schemas** Eigenschaft.  
   
-3.  Wählen Sie Schemata zu Validierungszwecken aus, indem Sie eine der folgenden Methoden verwenden:  
+3. Wählen Sie Schemata zu Validierungszwecken aus, indem Sie eine der folgenden Methoden verwenden:  
   
-    -   Wählen Sie ein Schema aufgeführt, die der **XML-Schemas** Dialogfeld klicken Sie auf die **verwenden** Spalte, und wählen Sie dann **dieses Schema verwenden**.  
+   - Wählen Sie ein Schema aufgeführt, die der **XML-Schemas** Dialogfeld klicken Sie auf die **verwenden** Spalte, und wählen Sie dann **dieses Schema verwenden**.  
   
      - oder -   
   
-    -   Wählen Sie mehrere Schemas aufgeführt, die der **XML-Schemas** Dialogfeld, mit der rechten Maustaste, und wählen **dieses Schema verwenden**.  
+   - Wählen Sie mehrere Schemas aufgeführt, die der **XML-Schemas** Dialogfeld, mit der rechten Maustaste, und wählen **dieses Schema verwenden**.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
-     Die Liste der ausgewählten Schemas wird kopiert, an die **Schemas** -Dokumenteigenschaft.  
+    Die Liste der ausgewählten Schemas wird kopiert, an die **Schemas** -Dokumenteigenschaft.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>So fügen Sie dem Schemacache ein XML-Schema hinzu  
   

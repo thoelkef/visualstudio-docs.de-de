@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909678"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
 ## <a name="asset-types-and-signing"></a>Objekttypen und Signierung  
  Sie können .NET-Assemblys und Anwendungsmanifeste signieren. Hierzu gehört Folgendes:  
   
--   Ausführbare Dateien (.exe)  
+- Ausführbare Dateien (.exe)  
   
--   Anwendungsmanifeste (.exe.manifest)  
+- Anwendungsmanifeste (.exe.manifest)  
   
--   Bereitstellungsmanifeste (.application)  
+- Bereitstellungsmanifeste (.application)  
   
--   Freigegebene Komponentenassemblys (.dll)  
+- Freigegebene Komponentenassemblys (.dll)  
   
- Sie müssen die folgenden Objekttypen signieren:  
+  Sie müssen die folgenden Objekttypen signieren:  
   
-1.  Assemblys, wenn diese im globalen Assemblycache (GAC) bereitgestellt werden sollen.  
+1. Assemblys, wenn diese im globalen Assemblycache (GAC) bereitgestellt werden sollen.  
   
-2.  Anwendungs- und Bereitstellungsmanifeste in [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio aktiviert die Signierung für diese Anwendungen standardmäßig.  
+2. Anwendungs- und Bereitstellungsmanifeste in [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio aktiviert die Signierung für diese Anwendungen standardmäßig.  
   
-3.  Primäre Interop-Assemblys, die für die COM-Interoperabilität verwendet werden. Durch das TLBIMP-Dienstprogramm werden primäre Interop-Assemblys mit einem starken Namen erzwungen, wenn diese aus einer COM-Typbibliothek erstellt werden.  
+3. Primäre Interop-Assemblys, die für die COM-Interoperabilität verwendet werden. Durch das TLBIMP-Dienstprogramm werden primäre Interop-Assemblys mit einem starken Namen erzwungen, wenn diese aus einer COM-Typbibliothek erstellt werden.  
   
- Im Allgemeinen sollten Sie ausführbare Dateien nicht signieren. Eine Komponente mit starkem Namen kann nicht auf eine Komponente ohne starken Namen verweisen, die mit der Anwendung bereitgestellt wird. Visual Studio signiert nicht ausführbare Dateien der Anwendung, signiert jedoch stattdessen das Anwendungsmanifest, das auf die ausführbare Datei mit schwachem Namen zeigt. Sie sollten generell vermeiden, Komponenten zu signieren, die für Ihre Anwendung privat sind, da das Signieren das Verwalten von Abhängigkeiten erschweren kann.  
+   Im Allgemeinen sollten Sie ausführbare Dateien nicht signieren. Eine Komponente mit starkem Namen kann nicht auf eine Komponente ohne starken Namen verweisen, die mit der Anwendung bereitgestellt wird. Visual Studio signiert nicht ausführbare Dateien der Anwendung, signiert jedoch stattdessen das Anwendungsmanifest, das auf die ausführbare Datei mit schwachem Namen zeigt. Sie sollten generell vermeiden, Komponenten zu signieren, die für Ihre Anwendung privat sind, da das Signieren das Verwalten von Abhängigkeiten erschweren kann.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>So erstellen Sie eine Assembly in Visual Studio  
  Zum Signieren einer Anwendung oder Komponente verwenden Sie die Registerkarte **Signierung** des Projekteigenschaftenfensters (klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Eigenschaften** aus, geben Sie **Projekteigenschaften** im Fenster **Schnellstart** ein, oder drücken Sie innerhalb des Fensters **Projektmappen**-Explorer ALT+EINGABE). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.  
