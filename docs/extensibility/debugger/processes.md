@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c07a9cb6c16f09f2f55b543087e25d85bc300c0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: df35a6e1614b558f7b94c24956e2dcdbc676a9e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927139"
 ---
 # <a name="processes"></a>Prozesse
 Architektur der Debugger eine *Prozess*:  
   
--   Ist ein Container für einen Satz von Programmen. Er ist eng an einen Windows-Prozess, der ein Container für eine Gruppe von Threads ist.  
+- Ist ein Container für einen Satz von Programmen. Er ist eng an einen Windows-Prozess, der ein Container für eine Gruppe von Threads ist.  
   
--   Können selbst durch den Namen, Bezeichner oder Bezeichner der physischen identifizieren.  
+- Können selbst durch den Namen, Bezeichner oder Bezeichner der physischen identifizieren.  
   
--   Können alle ausgeführten Programme (und ihren Threads) auflisten.  
+- Können alle ausgeführten Programme (und ihren Threads) auflisten.  
   
--   Beschreiben können selbst, den Port an, den er ausgeführt wird und der Computer, der sie enthält.  
+- Beschreiben können selbst, den Port an, den er ausgeführt wird und der Computer, der sie enthält.  
   
--   Können, erstellen Sie eine oder mehr Programme beenden eines der Programme, die sie erstellt oder dazu führen, dass ein Programm zu beenden.  
+- Können, erstellen Sie eine oder mehr Programme beenden eines der Programme, die sie erstellt oder dazu führen, dass ein Programm zu beenden.  
   
--   Wird durch dargestellt eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die erstellt wird, wenn der Prozess gestartet wird. Ein Prozess wird gestartet, indem Sie entweder die sitzungsbasierter Debug-Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+- Wird durch dargestellt eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die erstellt wird, wenn der Prozess gestartet wird. Ein Prozess wird gestartet, indem Sie entweder die sitzungsbasierter Debug-Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Das debugpaket kann eine Debug-Engine (DE) an einen Prozess anfügen, durch den Aufruf [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md), d. h., die die DE anfügt, auf alle möglichen Programme, die Ausführung im Prozess, die er verarbeiten kann. Wenn die common Language Runtime DE an einen Prozess angefügt wurde, fügt es z. B. nur für Programme, die verwalteten Code ausgeführt werden.  
+  Das debugpaket kann eine Debug-Engine (DE) an einen Prozess anfügen, durch den Aufruf [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md), d. h., die die DE anfügt, auf alle möglichen Programme, die Ausführung im Prozess, die er verarbeiten kann. Wenn die common Language Runtime DE an einen Prozess angefügt wurde, fügt es z. B. nur für Programme, die verwalteten Code ausgeführt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Programme](../../extensibility/debugger/programs.md)   

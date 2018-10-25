@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923211"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Sie können Formen aus einem .NET-Klassendiagramm (CD-Datei) in andere Dokumente
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>So kopieren Sie alle Elemente in einem Klassendiagramm  
   
-1.  Klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, und wählen Sie **Alle auswählen** aus. (Tastatur: **STRG + A**)  
+1. Klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, und wählen Sie **Alle auswählen** aus. (Tastatur: **STRG + A**)  
   
-2.  Wählen Sie im Menü **Bearbeiten** die Option **Bild kopieren** aus.  
+2. Wählen Sie im Menü **Bearbeiten** die Option **Bild kopieren** aus.  
   
- Sie können auch **Kopieren** anstelle von **Bild kopieren** auswählen. Mit **Kopieren** wird das Bild als Standardbitmap kopiert. Mit **Bild kopieren** wird das Bild als vektorbasiertes Bild kopiert. Dies ist für die meisten Office-Anwendungen besser geeignet.  
+   Sie können auch **Kopieren** anstelle von **Bild kopieren** auswählen. Mit **Kopieren** wird das Bild als Standardbitmap kopiert. Mit **Bild kopieren** wird das Bild als vektorbasiertes Bild kopiert. Dies ist für die meisten Office-Anwendungen besser geeignet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md)   

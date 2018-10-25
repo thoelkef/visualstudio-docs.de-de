@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920925"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeitsdiagramme: Referenz
 
@@ -59,7 +59,7 @@ Dieses Thema beschreibt die Elemente, die Sie in einem Abhängigkeitsdiagramm ve
 Die folgende Tabelle beschreibt die Elemente, die Sie in einem Abhängigkeitsdiagramm verwenden können.
 
 |**Form "**|**Element**|**Beschreibung**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Ebene**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die Artefakte anzuzeigen, die auf eine Ebene verknüpft sind, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen** öffnen **Ebenen-Explorer**.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   **Namespace-Abhängigkeiten verboten** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen.<br />-   **Forbidden Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören müssen.<br />-   **Erforderliche Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen.|
 |2|**Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|
 |3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|
@@ -92,7 +92,7 @@ Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für eine oder mehrere 
 > Wenn Sie alle diese Eigenschaften können nicht angezeigt wird, erweitern Sie die **Ebenen-Explorer** Fenster.
 
 |**Die Spalte im Ebenen-Explorer**|**Beschreibung**|
-|----------------------------------|---------------------|
+|-|-|
 |**Kategorien**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
 |**Ebene**|Die Ebene, die mit dem Artefakt verknüpft ist.|
 |**Unterstützt die Validierung**|Wenn **"true"**, und klicken Sie dann die ebenenvalidierung überprüfen kann, dass das Projekt mit Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn **"false"**, und klicken Sie dann der Link nicht an der ebenenvalidierung beteiligt ist.<br /><br /> Weitere Informationen finden Sie unter [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|

@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925905"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:  
   
-1.  In der VSCT-Datei eine Befehlsgruppe richten Sie ein, und fügen Sie den Befehl hinzu. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)"  
+1. In der VSCT-Datei eine Befehlsgruppe richten Sie ein, und fügen Sie den Befehl hinzu. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)"  
   
-2.  Registrieren Sie den Befehl in Visual Studio.  
+2. Registrieren Sie den Befehl in Visual Studio.  
   
-3.  Implementieren Sie den Befehl.  
+3. Implementieren Sie den Befehl.  
   
- In den folgenden Abschnitten wird erläutert, wie registrieren und Befehle implementieren.  
+   In den folgenden Abschnitten wird erläutert, wie registrieren und Befehle implementieren.  
   
 ## <a name="registering-commands-with-visual-studio"></a>Registrieren Befehle mit Visual Studio  
  Wenn der Befehl ist in einem Menü angezeigt werden, müssen Sie Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Ihre VSPackage, und verwenden Sie als Wert entweder der Name des Menüs oder zugehörige Ressourcen-ID.  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>Status von Abfragemethoden  
  Wenn Sie entweder implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode oder der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> -Methode, die Kontrollkästchen für die GUID des Befehls, der der Befehl angehört und die ID des Befehls. Befolgen Sie die nachstehenden Richtlinien:  
   
--   Wenn die GUID nicht erkannt wird, muss Ihre Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Wenn die GUID nicht erkannt wird, muss Ihre Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Wenn Ihre Implementierung der beiden Methoden erkennt die GUID, jedoch den Befehl tatsächlich nicht implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Wenn Ihre Implementierung der beiden Methoden erkennt die GUID, jedoch den Befehl tatsächlich nicht implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der folgenden Flags:  
+- Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der folgenden Flags:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
   
--   Wenn der Befehl definiert wurde, in der VSCT-Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:  
+- Wenn der Befehl definiert wurde, in der VSCT-Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:  
   
-    -   Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
+  -   Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
   
-    -   Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
+  -   Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
   
- Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.  
+  Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.  
   
- Um anzugeben, dass Sie einen bestimmten Befehl unterstützen, zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Für alle anderen Befehle zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+  Um anzugeben, dass Sie einen bestimmten Befehl unterstützen, zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Für alle anderen Befehle zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
- Im folgenden Beispiel wird die Abfragestatus Methode zunächst sichergestellt, dass der Kontext kein Automatisierungsfunktion ist, und sucht nach den richtigen Befehlssatz GUID und Befehls-ID Der Befehl selbst festgelegt ist, aktiviert und unterstützt werden. Es werden keine weiteren Befehle unterstützt.  
+  Im folgenden Beispiel wird die Abfragestatus Methode zunächst sichergestellt, dass der Kontext kein Automatisierungsfunktion ist, und sucht nach den richtigen Befehlssatz GUID und Befehls-ID Der Befehl selbst festgelegt ist, aktiviert und unterstützt werden. Es werden keine weiteren Befehle unterstützt.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

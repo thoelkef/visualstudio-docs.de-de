@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
+title: PROGRAM_DESTROY_FLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c1482d5ad2e748bb2664b796e272ce8e9c03d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7746f85eeec41b708bd4c1537ee725d2096c41ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920624"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Listet die gültigen Werte des Programms zerstört Flags.  
@@ -42,10 +42,10 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Begriffe  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Zerstören Sie des Programms, jedoch mit dem Debuggen fortfahren.  
+ Programm löschen, jedoch mit dem Debuggen fortfahren.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Enumeration wird zurückgegeben, durch die [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) Methode.  
+ Die Enumeration zurückgegeben wird, durch die [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  

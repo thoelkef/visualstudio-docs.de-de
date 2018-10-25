@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921963"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
 ## <a name="files"></a>Dateien  
  Auf der Registerkarte **Dateien** können Sie das Verzeichnis angeben, unter dem Ablaufverfolgungsdateien bei jedem Erfassen einer Ablaufverfolgung gespeichert werden.  Die Parallelitätsschnellansicht generiert vier Dateien für jede Ablaufverfolgung, die sie erfasst:  
   
--   Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Kernelmodus (*.kernel.etl)  
+- Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Kernelmodus (*.kernel.etl)  
   
--   Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Benutzermodus (*.user.etl)  
+- Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Benutzermodus (*.user.etl)  
   
--   Eine Parallelitätsschnellansicht-Datendatei (*.CVData)  
+- Eine Parallelitätsschnellansicht-Datendatei (*.CVData)  
   
--   Eine Parallelitätsschnellansicht-Ablaufverfolgungsdatei (*.CVTrace)  
+- Eine Parallelitätsschnellansicht-Ablaufverfolgungsdatei (*.CVTrace)  
   
- Die zwei ETL-Dateien speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Parallelitätsschnellansicht-Dateien speichern die verarbeiteten Daten.  Die unformatierten ETL-Dateien werden nach der Verarbeitung einer Ablaufverfolgung in der Regel nicht verwendet.  Wenn Sie das Kontrollkästchen **Ereignisablaufverfolgungs-Protokolldateien (Event Trace Log, ETL) nach der Analyse löschen** aktivieren, wird die Menge der Ablaufverfolgungsdaten verringert, die auf dem Datenträger gespeichert werden.  
+  Die zwei ETL-Dateien speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Parallelitätsschnellansicht-Dateien speichern die verarbeiteten Daten.  Die unformatierten ETL-Dateien werden nach der Verarbeitung einer Ablaufverfolgung in der Regel nicht verwendet.  Wenn Sie das Kontrollkästchen **Ereignisablaufverfolgungs-Protokolldateien (Event Trace Log, ETL) nach der Analyse löschen** aktivieren, wird die Menge der Ablaufverfolgungsdaten verringert, die auf dem Datenträger gespeichert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Nur eigenen Code](../profiling/just-my-code-threads-view.md)   

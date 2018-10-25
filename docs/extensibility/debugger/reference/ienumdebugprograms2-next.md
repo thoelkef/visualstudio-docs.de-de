@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Next | Microsoft Docs
+title: IEnumDebugPrograms2::Next | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8777014fe8d47806bccfbd84f6fe2419bc172a7f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b4c835c4d80ede94751bf2265d0ced318748216
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925226"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.  
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der abzurufenden Elemente. Außerdem gibt die maximale Größe von der `rgelt` Array.  
+ [in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.  
   
  `rgelt`  
- [in, out] Array von [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Elemente ausgefüllt werden.  
+ [in, out] Array von [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Elementen gefüllt werden soll.  
   
  `pceltFetched`  
- [out] Gibt die Anzahl der Elemente, die tatsächlich im zurückgegebenen `rgelt`.  
+ [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte; andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)   

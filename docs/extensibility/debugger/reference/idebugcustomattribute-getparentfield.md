@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Microsoft Docs
+title: IDebugCustomAttribute::GetParentField | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e80a29d9d73f26a1394d40cf6625e36b279f53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a0fe53b32b3aa36ae91f024d4764f4f1419a76e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927332"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Ruft das Feld, das das benutzerdefinierte Attribut zugeordnet ist.  
+Ruft das Feld, das an dem das benutzerdefinierte Attribut angefügt ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ int GetParentField(
   
 #### <a name="parameters"></a>Parameter  
  `ppField`  
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das das Feld darstellt, an die das benutzerdefinierte Attribut angefügt ist.  
+ [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das Feld darstellt, an dem das benutzerdefinierte Attribut angefügt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Get_count | Microsoft Docs'
+title: 'Idiaenumframedata:: Get_count | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a15df11cbdc5cc13aa991e5a7704929e65e29875
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 34cf638b9d0448adc6ec06a09f41a93e65fdc362
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923851"
 ---
 # <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
-Ruft die Anzahl von Datenelementen Frame ab.  
+Ruft die Anzahl der Frames-Datenelemente.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get_Count (
   
 #### <a name="parameters"></a>Parameter  
  pRetVal  
- [out] Gibt die Anzahl von Datenelementen Frame zurück.  
+ [out] Gibt die Anzahl der Frames-Datenelemente.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

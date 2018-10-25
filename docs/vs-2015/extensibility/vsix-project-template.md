@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927202"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studi
 ## <a name="uses-of-the-vsix-project-template"></a>Verwendet die VSIX-Projektvorlage  
  Die VSIX-Projektvorlage verfügt über zwei Hauptanwendungsgebiete:  
   
--   Zum Bereitstellen von Projektvorlagen, Elementvorlagen und anderen Erweiterungen, die VSIX-Unterstützung nicht noch.  
+- Zum Bereitstellen von Projektvorlagen, Elementvorlagen und anderen Erweiterungen, die VSIX-Unterstützung nicht noch.  
   
--   Um die Ausgaben an mehreren Erweiterungen in ein Bereitstellungspaket zu umschließen.  
+- Um die Ausgaben an mehreren Erweiterungen in ein Bereitstellungspaket zu umschließen.  
   
- Sie müssen nicht die VSIX-Projektvorlage verwenden, für die Bereitstellung VSPackages oder andere Arten von Erweiterungen, die bereits VSIX unterstützen.  
+  Sie müssen nicht die VSIX-Projektvorlage verwenden, für die Bereitstellung VSPackages oder andere Arten von Erweiterungen, die bereits VSIX unterstützen.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Verpacken einer Erweiterung in einem leeren VSIX-Projekt  
  Sie können Packen einer vorhandenen Erweiterung oder eine Erweiterung, die noch kein VSIX-Unterstützung durch Einbinden in ein leeres VSIX-Projekt vorhanden ist. Die Erweiterung, die eingeschlossen werden muss von einem Typ sein, die von unterstützt wird die [VSIX-Schema](../extensibility/vsix-extension-schema-2-0-reference.md).  

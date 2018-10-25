@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926188"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke in Visual Studio-debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.
@@ -91,13 +91,13 @@ int main()
   
  Systeminterne Debugger-Funktionen:  
   
--   Diese sind garantiert sicher: durch das Ausführen einer systeminternen Debugger-Funktion wird der Prozess, der debuggt wird, nicht beschädigt.  
+- Diese sind garantiert sicher: durch das Ausführen einer systeminternen Debugger-Funktion wird der Prozess, der debuggt wird, nicht beschädigt.  
   
--   Sie sind in allen Ausdrücken zulässig, sogar in Szenarien, in denen Nebeneffekte und Funktionsauswertung nicht gestattet ist.  
+- Sie sind in allen Ausdrücken zulässig, sogar in Szenarien, in denen Nebeneffekte und Funktionsauswertung nicht gestattet ist.  
   
--   Sie arbeiten in Szenarien, in denen reguläre Funktionsaufrufe nicht möglich sind, z. B. das Debuggen eines Minidumps.  
+- Sie arbeiten in Szenarien, in denen reguläre Funktionsaufrufe nicht möglich sind, z. B. das Debuggen eines Minidumps.  
   
- Mit systeminternen Debugger-Funktionen kann die Auswertung von Ausdrücken bequemer werden. Beispielsweise ist `strncmp(str, "asd")` viel einfacher in einer Haltepunktbedingung zu schreiben als `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Mit systeminternen Debugger-Funktionen kann die Auswertung von Ausdrücken bequemer werden. Beispielsweise ist `strncmp(str, "asd")` viel einfacher in einer Haltepunktbedingung zu schreiben als `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Bereich|Systeminterne Funktionen|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic – Nicht unterstützte Ausdrücke  
   
 ### <a name="dynamic-objects"></a>Dynamische Objekte  
- Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, implementieren die <xref:System.Dynamic.IDynamicMetaObjectProvider> werden ausgewertet, in dem Fenster "überwachen", eine dynamische Ansicht hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
+ Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, die die <xref:System.Dynamic.IDynamicMetaObjectProvider> implementieren, im Überwachungsfenster ausgewertet werden, wird ein dynamischer Ansichtsknoten hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.  
   
  Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>Siehe auch  
  [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)   
- [Kontextoperator (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariablen](../debugger/pseudovariables.md)

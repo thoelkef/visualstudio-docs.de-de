@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80bb5f5561ad3170d2ecbbe02bb10749e605dfd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922366"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,55 +46,55 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie [!INCLUDE[vsprvs](../inc
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1.  Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Ein neues Grafikprotokoll-Dokumentfenster wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Im oberen Teil dieses Fensters befindet sich die Renderzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
+1. Laden Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Ein neues Grafikprotokoll-Dokumentfenster wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]angezeigt. Im oberen Teil dieses Fensters befindet sich die Renderzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
-2.  Wählen Sie in der **Frameliste**einen Frame aus, in dem das Objekt nicht richtig dargestellt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht das Grafikprotokolldokumentfenster wie folgt aus:  
+2. Wählen Sie in der **Frameliste**einen Frame aus, in dem das Objekt nicht richtig dargestellt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht das Grafikprotokolldokumentfenster wie folgt aus:  
   
-     ![Das grafikprotokolldokument in Visual Studio. ](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
+    ![Das grafikprotokolldokument in Visual Studio. ](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
   
- Nachdem Sie einen Frame ausgewählt haben, der das Problem veranschaulicht, können Sie das Fenster **Grafikpixelverlauf** verwenden, um das Problem zu diagnostizieren. Im Fenster **Grafikpixelverlauf** werden die Grundtypen, die möglicherweise Auswirkungen auf ein bestimmtes Pixel hatten, deren Shader sowie deren Auswirkungen auf das Renderziel gezeigt (in zeitlicher Reihenfolge).  
+   Nachdem Sie einen Frame ausgewählt haben, der das Problem veranschaulicht, können Sie das Fenster **Grafikpixelverlauf** verwenden, um das Problem zu diagnostizieren. Im Fenster **Grafikpixelverlauf** werden die Grundtypen, die möglicherweise Auswirkungen auf ein bestimmtes Pixel hatten, deren Shader sowie deren Auswirkungen auf das Renderziel gezeigt (in zeitlicher Reihenfolge).  
   
 #### <a name="to-examine-a-pixel"></a>So überprüfen Sie ein Pixel  
   
-1.  Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf**aus.  
+1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf**aus.  
   
-2.  Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie im Grafikprotokolldokumentfenster eines der Pixel des Objekts aus, das die falsche Farbe hat:  
+2. Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie im Grafikprotokolldokumentfenster eines der Pixel des Objekts aus, das die falsche Farbe hat:  
   
-     ![Auswählen eines Pixels werden Informationen zu seinem Verlauf angezeigt. ](../debugger/media/gfx-diag-demo-render-error-shader-step-2.png "gfx_diag_demo_render_error_shader_step_2")  
+    ![Auswählen eines Pixels werden Informationen zu seinem Verlauf angezeigt. ](../debugger/media/gfx-diag-demo-render-error-shader-step-2.png "gfx_diag_demo_render_error_shader_step_2")  
   
-     Das Fenster **Grafikpixelverlauf** wird entsprechend dem ausgewählten Pixel aktualisiert. In diesem Szenario sieht das Fenster **Grafikpixelverlauf** wie folgt aus:  
+    Das Fenster **Grafikpixelverlauf** wird entsprechend dem ausgewählten Pixel aktualisiert. In diesem Szenario sieht das Fenster **Grafikpixelverlauf** wie folgt aus:  
   
-     ![Der pixelverlauf zeigt ein DrawIndexed-Ereignis. ](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
+    ![Der pixelverlauf zeigt ein DrawIndexed-Ereignis. ](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Sie sehen, dass das Ergebnis des Pixelshaders vollständig deckendes Schwarz ist (0, 0, 0, 1) und dass die **Ausgabezusammenführung** dieses mit der **vorherigen Farbe** des Pixels so kombiniert, dass das **Ergebnis** ebenfalls vollständig deckend schwarz ist.  
+    Sie sehen, dass das Ergebnis des Pixelshaders vollständig deckendes Schwarz ist (0, 0, 0, 1) und dass die **Ausgabezusammenführung** dieses mit der **vorherigen Farbe** des Pixels so kombiniert, dass das **Ergebnis** ebenfalls vollständig deckend schwarz ist.  
   
- Nachdem Sie ein Pixel mit falscher Farbe überprüft und festgestellt haben, dass die Ausgabe des Pixelshaders nicht die erwartete Farbe angibt, können Sie den HLSL-Debugger dazu verwenden, den Pixelshader zu untersuchen und herauszufinden, was mit der Farbe des Objekts geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.  
+   Nachdem Sie ein Pixel mit falscher Farbe überprüft und festgestellt haben, dass die Ausgabe des Pixelshaders nicht die erwartete Farbe angibt, können Sie den HLSL-Debugger dazu verwenden, den Pixelshader zu untersuchen und herauszufinden, was mit der Farbe des Objekts geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.  
   
 #### <a name="to-examine-the-pixel-shader"></a>So überprüfen Sie den Pixelshader  
   
-1.  Starten Sie das Debuggen des Pixelshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Pixelshader**die Schaltfläche **Debuggen starten** aus.  
+1. Starten Sie das Debuggen des Pixelshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Pixelshader**die Schaltfläche **Debuggen starten** aus.  
   
-2.  Da der Pixelshader die Farbe in diesem Szenario lediglich vom Vertexshader übernimmt und ungeändert weitergibt, ist leicht zu sehen, dass der Pixelshader nicht die Ursache des Problems ist.  
+2. Da der Pixelshader die Farbe in diesem Szenario lediglich vom Vertexshader übernimmt und ungeändert weitergibt, ist leicht zu sehen, dass der Pixelshader nicht die Ursache des Problems ist.  
   
-3.  Setzen Sie den Mauszeiger auf `input.color`. Sie sehen, dass der Wert vollständig deckendem Schwarz entspricht (0, 0, 0, 1).  
+3. Setzen Sie den Mauszeiger auf `input.color`. Sie sehen, dass der Wert vollständig deckendem Schwarz entspricht (0, 0, 0, 1).  
   
-     ![Das Element "Color" von "Input" ist schwarz. ](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
+    ![Das Element "Color" von "Input" ist schwarz. ](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
   
-     In diesem Szenario ergibt die Untersuchung, dass die falsche Farbe wahrscheinlich das Ergebnis eines Vertexshaders ist, der dem Pixelshader nicht die richtigen Farbinformationen zur Verarbeitung bereitstellt.  
+    In diesem Szenario ergibt die Untersuchung, dass die falsche Farbe wahrscheinlich das Ergebnis eines Vertexshaders ist, der dem Pixelshader nicht die richtigen Farbinformationen zur Verarbeitung bereitstellt.  
   
- Nachdem Sie festgestellt haben, dass der Vertexshader wahrscheinlich nicht die richtigen Informationen an den Pixelshader übergibt, überprüfen Sie im nächsten Schritt den Vertexshader.  
+   Nachdem Sie festgestellt haben, dass der Vertexshader wahrscheinlich nicht die richtigen Informationen an den Pixelshader übergibt, überprüfen Sie im nächsten Schritt den Vertexshader.  
   
 #### <a name="to-examine-the-vertex-shader"></a>So überprüfen Sie den Vertexshader  
   
-1.  Starten Sie das Debuggen des Vertexshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Vertexshader**die Schaltfläche **Debuggen starten** aus.  
+1. Starten Sie das Debuggen des Vertexshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Vertexshader**die Schaltfläche **Debuggen starten** aus.  
   
-2.  Suchen Sie nach der Ausgabestruktur des Vertexshaders, denn diese ist die Eingabe für den Pixelshader. In diesem Szenario hat diese Struktur den Namen `output`. Überprüfen Sie den Code des Vertexshaders. Sie stellen fest, dass der `color` -Member der `output` -Struktur explizit auf vollständig deckendes Schwarz festgelegt wird, möglicherweise als Ergebnis von Debugaktionen einer anderen Person.  
+2. Suchen Sie nach der Ausgabestruktur des Vertexshaders, denn diese ist die Eingabe für den Pixelshader. In diesem Szenario hat diese Struktur den Namen `output`. Überprüfen Sie den Code des Vertexshaders. Sie stellen fest, dass der `color` -Member der `output` -Struktur explizit auf vollständig deckendes Schwarz festgelegt wird, möglicherweise als Ergebnis von Debugaktionen einer anderen Person.  
   
-3.  Vergewissern Sie sich, dass der color-Member nie aus der Eingabestruktur (input) kopiert wird. Da der Wert von `output.color` unmittelbar vor der Rückgabe der `output` -Struktur auf vollständig deckendes Schwarz festgelegt wird, sollten Sie sich vergewissern, dass der Wert von `output` in keiner vorherigen Zeile korrekt initialisiert wurde. Durchlaufen Sie den der Vertexshadercode bis zu der Zeile, in der `output.color` auf Schwarz festgelegt wird. Beobachten Sie dabei den Wert von `output.color`. Sie stellen fest, dass der Wert von `output.color` nicht initialisiert wird, bis er auf Schwarz festgelegt wird. Dadurch wird bestätigt, dass die Codezeile, in der `output.color` auf Schwarz festgelegt wird, nicht gelöscht, sondern geändert werden sollte.  
+3. Vergewissern Sie sich, dass der color-Member nie aus der Eingabestruktur (input) kopiert wird. Da der Wert von `output.color` unmittelbar vor der Rückgabe der `output` -Struktur auf vollständig deckendes Schwarz festgelegt wird, sollten Sie sich vergewissern, dass der Wert von `output` in keiner vorherigen Zeile korrekt initialisiert wurde. Durchlaufen Sie den der Vertexshadercode bis zu der Zeile, in der `output.color` auf Schwarz festgelegt wird. Beobachten Sie dabei den Wert von `output.color`. Sie stellen fest, dass der Wert von `output.color` nicht initialisiert wird, bis er auf Schwarz festgelegt wird. Dadurch wird bestätigt, dass die Codezeile, in der `output.color` auf Schwarz festgelegt wird, nicht gelöscht, sondern geändert werden sollte.  
   
-     ![Der Wert von "output.color" ist schwarz. ](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
+    ![Der Wert von "output.color" ist schwarz. ](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
- Nachdem Sie festgestellt haben, dass die Ursache des Renderproblems darin besteht, dass der Vertexshader dem Pixelshader einen falschen Farbwert bereitstellt, können Sie das Problem beheben. In diesem Szenario können Sie das Problem beheben, indem Sie den folgenden Code im Vertexshader ändern  
+   Nachdem Sie festgestellt haben, dass die Ursache des Renderproblems darin besteht, dass der Vertexshader dem Pixelshader einen falschen Farbwert bereitstellt, können Sie das Problem beheben. In diesem Szenario können Sie das Problem beheben, indem Sie den folgenden Code im Vertexshader ändern  
   
 ```  
 output.color = float3(0.0f, 0.0f, 0.0f);  

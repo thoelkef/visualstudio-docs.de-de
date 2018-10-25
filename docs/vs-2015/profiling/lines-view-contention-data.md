@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921930"
 ---
 # <a name="lines-view---contention-data"></a>Zeilenansicht - Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
   
  Eine Anweisung wird mit den folgenden Daten identifiziert:  
   
--   Die Quelldatei, die die Funktionsanweisung enthält.  
+- Die Quelldatei, die die Funktionsanweisung enthält.  
   
--   Die Funktion, die die Anweisung enthält.  
+- Die Funktion, die die Anweisung enthält.  
   
--   Die Quellzeile, an der die Anweisung beginnt.  
+- Die Quellzeile, an der die Anweisung beginnt.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
   
--   Die Quellzeile, an der die Anweisung endet.  
+- Die Quellzeile, an der die Anweisung endet.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
- Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
   
- In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.  
+  In der folgenden Tabelle werden die Spalten des Zeilenansichtsberichts beschrieben.  
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  

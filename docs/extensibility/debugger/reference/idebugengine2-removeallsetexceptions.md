@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs
+title: IDebugEngine2::RemoveAllSetExceptions | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3446b910aa1e728319d0f4c7acdbf65b01d1cb4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d569362de2e71a462bcfe90bd5c7180256f981b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921040"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Entfernt die Liste der Ausnahmen, die für eine bestimmte Laufzeit-Architektur oder die Sprache die IDE festgelegt hat.  
+Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Laufzeit-Architektur oder Sprache festgelegt hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,15 +41,15 @@ int RemoveAllSetExceptions(
   
 #### <a name="parameters"></a>Parameter  
  `guidType`  
- [in] Die GUID für die Sprache oder die GUID für das Debugging-Modul, das spezifisch für eine Laufzeit-Architektur ist.  
+ [in] Die GUID für die Sprache oder die GUID für die Debug-Engine, die spezifisch für eine Laufzeit-Architektur ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Ausnahmen, die von dieser Methode entfernt wurden von früheren aufrufen, Festlegen der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) Methode.  
+ Die Ausnahmen von dieser Methode entfernt wurden festgelegt, durch frühere Aufrufe der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) Methode.  
   
- Um eine bestimmte Ausnahme zu entfernen, rufen Sie die [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Methode.  
+ Rufen Sie zum Entfernen einer bestimmten Ausnahme die [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

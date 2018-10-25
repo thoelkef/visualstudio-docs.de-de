@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920429"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Gibt den Namen, die dem angegebenen Token erhält ihr Metadatenobjekt zugeordnet.  
+Gibt den Namen der angegebenen Token, die die Metadaten-Objekt zugeordnet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,19 +44,19 @@ int GetNameFromToken (
   
 #### <a name="parameters"></a>Parameter  
  `pMetadataImport`  
- [in] Ein Objekt, das die Metadateninformationen enthält.  
+ [in] Objekt, das die Metadateninformationen enthält.  
   
  `dwToken`  
- [in] Token benannt werden.  
+ [in] Token benannt wird.  
   
  `pbstrName`  
  [out] Der Name, der das Token entspricht.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  
