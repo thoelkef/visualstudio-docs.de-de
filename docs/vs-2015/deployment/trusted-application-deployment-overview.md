@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827583"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
  In größeren Organisationen sind Herausgeber und Bereitsteller häufig zwei separate Entitäten:  
   
--   Der Herausgeber ist die Gruppe, die die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung erstellt.  
+- Der Herausgeber ist die Gruppe, die die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung erstellt.  
   
--   Der Bereitsteller ist die Gruppe, in der Regel der IT-Abteilung, die die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung auf Desktopcomputern im Unternehmen verteilt.  
+- Der Bereitsteller ist die Gruppe, in der Regel der IT-Abteilung, die die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung auf Desktopcomputern im Unternehmen verteilt.  
   
- Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauenswürdigen Anwendung zu nutzen:  
+  Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauenswürdigen Anwendung zu nutzen:  
   
 1.  Rufen Sie ein Zertifikat für den Herausgeber ab.  
   

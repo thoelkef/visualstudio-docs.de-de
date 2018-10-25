@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836995"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio-Tools für Office-laufzeitübersicht
   Um Projektmappen auszuführen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss Visual Studio 2010-Tools für Office-Laufzeit auf Endbenutzercomputern installiert sein. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:  
   
--   Den Office-Erweiterungen für .NET Framework. Diese Komponenten sind verwaltete Assemblys, die die Kommunikationsebene zwischen der Projektmappe und der Microsoft Office-Anwendung bereitstellen. Weitere Informationen finden Sie unter [erläuterungen zur Office-Erweiterungen für .NET Framework](#officeextensions).  
+- Den Office-Erweiterungen für .NET Framework. Diese Komponenten sind verwaltete Assemblys, die die Kommunikationsebene zwischen der Projektmappe und der Microsoft Office-Anwendung bereitstellen. Weitere Informationen finden Sie unter [erläuterungen zur Office-Erweiterungen für .NET Framework](#officeextensions).  
   
--   Dem Office-Projektmappenladeprogramm. Bei dieser Komponente handelt es sich um einen Satz nicht verwalteter DLLs, die Office-Anwendungen verwenden, um die Laufzeit und Projektmappen zu laden. Weitere Informationen finden Sie unter [verstehen von Office-Projektmappenladeprogramm](#UnmanagedLoader).  
+- Dem Office-Projektmappenladeprogramm. Bei dieser Komponente handelt es sich um einen Satz nicht verwalteter DLLs, die Office-Anwendungen verwenden, um die Laufzeit und Projektmappen zu laden. Weitere Informationen finden Sie unter [verstehen von Office-Projektmappenladeprogramm](#UnmanagedLoader).  
   
- Die Laufzeit kann auf unterschiedliche Weise installiert werden. In Abhängigkeit von der Konfiguration des Computers werden unterschiedliche Laufzeitkomponenten installiert, wenn Sie die Laufzeit installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  Die Laufzeit kann auf unterschiedliche Weise installiert werden. In Abhängigkeit von der Konfiguration des Computers werden unterschiedliche Laufzeitkomponenten installiert, wenn Sie die Laufzeit installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Informationen zu den Office-Erweiterungen für .NET Framework  
  Visual Studio 2010-Tools für Office-Laufzeit enthält Office-Erweiterungen für .NET Framework 3.5, die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher. Projektmappen, die auf die einzelnen Versionen von .NET Framework abzielen, verwenden die entsprechenden Erweiterungen für die jeweilige Version.  
@@ -65,17 +65,17 @@ ms.locfileid: "35672808"
   
  Standardmäßig wird die Typäquivalenzfunktion nicht aktiviert, wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist. Wenn Sie diese Funktion aktivieren möchten, legen Sie die Eigenschaft **Interoptypen einbetten** von einem der folgenden Assemblyverweise im Projekt auf **True**fest:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Nachdem Sie diese Änderung vorgenommen haben, werden Typinformationen für alle vom Projekt verwendeten Laufzeittypen in die Projektmappenassembly eingebettet, wenn Sie das Projekt erstellen. Diese eingebetteten Typinformationen, anstatt die Typinformationen in Assemblys, auf die verwiesen wird, werden von der Lösung zur Laufzeit verwendet.  
+  Nachdem Sie diese Änderung vorgenommen haben, werden Typinformationen für alle vom Projekt verwendeten Laufzeittypen in die Projektmappenassembly eingebettet, wenn Sie das Projekt erstellen. Diese eingebetteten Typinformationen, anstatt die Typinformationen in Assemblys, auf die verwiesen wird, werden von der Lösung zur Laufzeit verwendet.  
   
 ##  <a name="UnmanagedLoader"></a> Verstehen von Office-Projektmappenladeprogramm  
  Visual Studio-Tools für Office-Laufzeit schließt mehrere nicht verwaltete DLLs ein, die Office-Anwendungen verwenden, um die Laufzeit sowie Office-Projektmappen zu laden. Obwohl Sie in der Regel nie direkt mit diesen DLLs arbeiten müssen, können Kenntnisse über ihren Zweck Ihnen dabei helfen, die Architektur der Office-Projektmappen besser zu verstehen.  
@@ -90,17 +90,17 @@ ms.locfileid: "35672808"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Nach dem *VSTOEE.dll* lädt die entsprechende Version von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *"VSTOLoader.dll"* führt die meisten Aufgaben, die zum Laden der Projektmappenassembly erforderlich ist. *"VSTOLoader.dll"* führt mehrere Aufgaben aus:  
   
--   Es erstellt eine Anwendungsdomäne für jede Projektmappenassembly.  
+- Es erstellt eine Anwendungsdomäne für jede Projektmappenassembly.  
   
--   Es führt einen Satz von Sicherheitsüberprüfungen aus, um zu überprüfen, ob die Projektassembly über die Berechtigung zum Ausführen verfügt.  
+- Es führt einen Satz von Sicherheitsüberprüfungen aus, um zu überprüfen, ob die Projektassembly über die Berechtigung zum Ausführen verfügt.  
   
--   Es lädt die Version der Office-Erweiterungen für das .NET Framework, das für die Projektmappe erforderlich ist.  
+- Es lädt die Version der Office-Erweiterungen für das .NET Framework, das für die Projektmappe erforderlich ist.  
   
- *"VSTOLoader.dll"* auch führt mehrere Aufgaben, die speziell für VSTO-Add-ins gelten:  
+  *"VSTOLoader.dll"* auch führt mehrere Aufgaben, die speziell für VSTO-Add-ins gelten:  
   
--   Es implementiert die <xref:Extensibility.IDTExtensibility2> -Schnittstelle. <xref:Extensibility.IDTExtensibility2> ist eine COM-Schnittstelle, die alle VSTO-Add-Ins für Microsoft Office-Anwendungen implementieren müssen. Diese Schnittstelle definiert Methoden, die die Anwendung aufruft, um mit dem VSTO-Add-In zu kommunizieren.  
+- Es implementiert die <xref:Extensibility.IDTExtensibility2> -Schnittstelle. <xref:Extensibility.IDTExtensibility2> ist eine COM-Schnittstelle, die alle VSTO-Add-Ins für Microsoft Office-Anwendungen implementieren müssen. Diese Schnittstelle definiert Methoden, die die Anwendung aufruft, um mit dem VSTO-Add-In zu kommunizieren.  
   
--   IManagedAddin-Schnittstelle implementiert. Diese Schnittstelle wird von Office-Anwendungen beim Laden von VSTO-Add-Ins verwendet. Weitere Informationen finden Sie unter [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md).  
+- IManagedAddin-Schnittstelle implementiert. Diese Schnittstelle wird von Office-Anwendungen beim Laden von VSTO-Add-Ins verwendet. Weitere Informationen finden Sie unter [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Verstehen Sie die 32-Bit und 64-Bit-Versionen der runtime  
  Es gibt separate 64-Bit und 32-Bit-Versionen von Visual Studio 2010-Tools für Office-Laufzeit. Diese Versionen der Laufzeit werden verwendet, um Projektmappen in 64-Bit- und 32-Bit-Editionen von Office auszuführen. Die folgende Tabelle zeigt, welche Version der Laufzeit für jede Kombination von Windows und Office erforderlich ist.  
@@ -123,7 +123,7 @@ ms.locfileid: "35672808"
  [Assemblys in Visual Studio Tools for Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)   
- [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Aktualisieren und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md)  
   

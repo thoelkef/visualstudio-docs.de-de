@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815980"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>So suchen Sie ein Thema mithilfe des Indexes  
   
-1.  Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:  
+1. Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:  
   
-    -   Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.  
+   - Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.  
   
-         Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
+      Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
   
-        > [!NOTE]
-        >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
+     > [!NOTE]
+     >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
   
-    -   Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
+   - Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
   
      Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.  
   

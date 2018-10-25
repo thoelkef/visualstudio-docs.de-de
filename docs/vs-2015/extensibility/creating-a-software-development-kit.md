@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851999"
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
   
  Es gibt zwei Arten von SDKs:  
   
--   Plattform-SDKs handelt es sich um erforderliche Komponenten für die Entwicklung von apps für eine Plattform. Z. B. die [!INCLUDE[win81](../includes/win81-md.md)] SDK ist erforderlich, um die Entwicklung [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps.  
+- Plattform-SDKs handelt es sich um erforderliche Komponenten für die Entwicklung von apps für eine Plattform. Z. B. die [!INCLUDE[win81](../includes/win81-md.md)] SDK ist erforderlich, um die Entwicklung [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps.  
   
--   Erweiterungs-SDKs sind optionale Komponenten, die eine Plattform zu erweitern, aber nicht obligatorisch für die Entwicklung von apps für die betreffende Plattform.  
+- Erweiterungs-SDKs sind optionale Komponenten, die eine Plattform zu erweitern, aber nicht obligatorisch für die Entwicklung von apps für die betreffende Plattform.  
   
- Die folgenden Abschnitte beschreiben die allgemeine Infrastruktur von SDKs und erstellen Sie eine Plattform-SDK und einer Erweiterungs-SDK.  
+  Die folgenden Abschnitte beschreiben die allgemeine Infrastruktur von SDKs und erstellen Sie eine Plattform-SDK und einer Erweiterungs-SDK.  
   
--   [Plattform-SDKs](#PlatformSDKs)  
+- [Plattform-SDKs](#PlatformSDKs)  
   
--   [Erweiterungs-SDKs](#ExtensionSDKs)  
+- [Erweiterungs-SDKs](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Plattform-SDKs  
  Plattform-SDKs sind erforderlich, um apps für eine Plattform zu entwickeln. Z. B. die [!INCLUDE[win81](../includes/win81-md.md)] SDK ist erforderlich, um das Entwickeln von apps für [!INCLUDE[win81](../includes/win81-md.md)].  

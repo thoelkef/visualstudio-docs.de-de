@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844574"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Von den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools wird das Sammeln von Daten zur .NET-Speicherbelegung und zur Objektlebensdauer unterstützt, damit Leistungsprobleme im Zusammenhang mit dem Arbeitsspeicher in der Anwendung erkannt werden können.  
   
--   Daten zur .NET-Speicherbelegung enthalten die Größe und die Anzahl von .NET Framework-Arbeitsspeicherobjekten, die zugeordnet wurden.  
+- Daten zur .NET-Speicherbelegung enthalten die Größe und die Anzahl von .NET Framework-Arbeitsspeicherobjekten, die zugeordnet wurden.  
   
--   Objektlebensdauerdaten enthalten die Größe und die Anzahl von .NET Framework-Arbeitsspeicherobjekten, die in den drei Garbage Collection-Generierungen freigegeben wurden.  
+- Objektlebensdauerdaten enthalten die Größe und die Anzahl von .NET Framework-Arbeitsspeicherobjekten, die in den drei Garbage Collection-Generierungen freigegeben wurden.  
   
- **Anforderungen**  
+  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -64,9 +64,9 @@ Von den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools wird
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
  Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld  
   
--   Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+- Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
   
- Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie .NET-Arbeitsspeicherdaten sammeln.  
+  Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie .NET-Arbeitsspeicherdaten sammeln.  
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c0b266f9267925efb2e9e1348f7cd656a6b8be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846628"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
   
  Während der Profilanalyse untersucht die Parallelitätsschnellansicht alle Kontextwechselereignisse des Betriebssystems für jeden Anwendungsthread. Kontextwechsel können aus vielen Gründen auftreten, darunter folgende:  
   
--   Ein Thread wird auf einer Synchronisierungsprimitive blockiert.  
+- Ein Thread wird auf einer Synchronisierungsprimitive blockiert.  
   
--   Das Quantum eines Threads läuft ab.  
+- Das Quantum eines Threads läuft ab.  
   
--   Durch einen Thread erfolgt eine blockierende E/A-Anforderung.  
+- Durch einen Thread erfolgt eine blockierende E/A-Anforderung.  
   
- In der Threadansicht wird jedem Kontextwechsel eine Kategorie zugewiesen, wenn ein Thread die Ausführung beendet hat. Die Kategorien werden in der Legende im unteren linken Teil der Ansicht angezeigt. Die Parallelitätsschnellansicht kategorisiert Kontextwechselereignisse, indem sie die Aufrufliste des Threads nach bekannten blockierenden APIs durchsucht. Wenn keine Aufruflistenübereinstimmung vorliegt, wird die von [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] bereitgestellte Warteursache verwendet. Die [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]-Kategorie basiert jedoch möglicherweise auf einem Implementierungsdetail und entspricht nicht der Absicht des Benutzers. [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] meldet z.B. die Warteursache für das Blockieren einer nativen SRW-Sperre (Slim Reader/Writer) als E/A und nicht als Synchronisierung. In den meisten Fällen können Sie die Ursache eines blockierenden Ereignisses identifizieren, indem Sie die Aufruflisten überprüfen, die Kontextwechselereignissen entsprechen.  
+  In der Threadansicht wird jedem Kontextwechsel eine Kategorie zugewiesen, wenn ein Thread die Ausführung beendet hat. Die Kategorien werden in der Legende im unteren linken Teil der Ansicht angezeigt. Die Parallelitätsschnellansicht kategorisiert Kontextwechselereignisse, indem sie die Aufrufliste des Threads nach bekannten blockierenden APIs durchsucht. Wenn keine Aufruflistenübereinstimmung vorliegt, wird die von [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] bereitgestellte Warteursache verwendet. Die [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]-Kategorie basiert jedoch möglicherweise auf einem Implementierungsdetail und entspricht nicht der Absicht des Benutzers. [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] meldet z.B. die Warteursache für das Blockieren einer nativen SRW-Sperre (Slim Reader/Writer) als E/A und nicht als Synchronisierung. In den meisten Fällen können Sie die Ursache eines blockierenden Ereignisses identifizieren, indem Sie die Aufruflisten überprüfen, die Kontextwechselereignissen entsprechen.  
   
- In der Threadansicht werden auch Abhängigkeiten zwischen Threads angezeigt. Wenn Sie z.B. einen Thread identifizieren, der bei einem Synchronisierungsobjekt blockiert, können Sie nach dem Thread suchen, der die Blockierung aufgehoben hat, und Sie können die Aktivität in der Aufrufliste für diesen Thread zu dem Zeitpunkt überprüfen, als er die Blockierung aufgehoben hat.  
+  In der Threadansicht werden auch Abhängigkeiten zwischen Threads angezeigt. Wenn Sie z.B. einen Thread identifizieren, der bei einem Synchronisierungsobjekt blockiert, können Sie nach dem Thread suchen, der die Blockierung aufgehoben hat, und Sie können die Aktivität in der Aufrufliste für diesen Thread zu dem Zeitpunkt überprüfen, als er die Blockierung aufgehoben hat.  
   
- Wenn Threads ausgeführt werden, sammelt die Parallelitätsschnellansicht Beispiele. In der Threadansicht können Sie analysieren, welcher Code während eines Ausführungssegments von einem oder mehreren Threads ausgeführt wird. Sie können auch blockierende Berichte und Berichte überprüfen, die für die Aufruflistenstrukturausführung ein Profil erstellen.  
+  Wenn Threads ausgeführt werden, sammelt die Parallelitätsschnellansicht Beispiele. In der Threadansicht können Sie analysieren, welcher Code während eines Ausführungssegments von einem oder mehreren Threads ausgeführt wird. Sie können auch blockierende Berichte und Berichte überprüfen, die für die Aufruflistenstrukturausführung ein Profil erstellen.  
   
 ## <a name="usage"></a>Verwendung  
  Sie können die Threadansicht unter anderem folgendermaßen verwenden:  
@@ -64,26 +64,26 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
 ## <a name="examining-specific-time-intervals-and-threads"></a>Untersuchen von bestimmten Zeitintervallen und Threads  
  In der Threadansicht wird eine Zeitachse angezeigt. Sie können in der Zeitachse vergrößern und schwenken, um bestimmte Intervalle und Threads der Anwendung zu überprüfen. Die x-Achse gibt die Zeit an und auf der y-Achse gibt es verschiedene Kanäle:  
   
--   Zwei E/A-Kanäle für jedes Laufwerk im System, einen Kanal für Lesevorgänge und einen für Schreibvorgänge.  
+- Zwei E/A-Kanäle für jedes Laufwerk im System, einen Kanal für Lesevorgänge und einen für Schreibvorgänge.  
   
--   Einen Kanal für jeden Thread im Prozess.  
+- Einen Kanal für jeden Thread im Prozess.  
   
--   Markerkanäle, falls Markerereignisse in der Ablaufverfolgung vorhanden sind. Markerkanäle werden zuerst unter den Threadkanälen angezeigt, die diese Ereignisse generiert haben.  
+- Markerkanäle, falls Markerereignisse in der Ablaufverfolgung vorhanden sind. Markerkanäle werden zuerst unter den Threadkanälen angezeigt, die diese Ereignisse generiert haben.  
   
--   GPU-Kanäle.  
+- GPU-Kanäle.  
   
- Hier ist die Threadansicht veranschaulicht:  
+  Hier ist die Threadansicht veranschaulicht:  
   
- ![Threadansicht](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Threadansicht  
+  ![Threadansicht](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Threadansicht  
   
- Die Threads werden zuerst in der Reihenfolge sortiert, in der sie erstellt werden, sodass der Hauptanwendungsthread der erste ist. Sie können die Sortieroption in der linken oberen Ecke der Ansicht verwenden, um Threads nach einem anderen Kriterium zu sortieren (z.B. nach der meisten Arbeit bei der Ausführung).  
+  Die Threads werden zuerst in der Reihenfolge sortiert, in der sie erstellt werden, sodass der Hauptanwendungsthread der erste ist. Sie können die Sortieroption in der linken oberen Ecke der Ansicht verwenden, um Threads nach einem anderen Kriterium zu sortieren (z.B. nach der meisten Arbeit bei der Ausführung).  
   
- Sie können Threads ausblenden, die keine Arbeit ausführen, indem Sie deren Namen in der Spalte auf der linken Seite auswählen und dann auf der Symbolleiste **Ausgewählte Threads ausblenden** auswählen. Es wird empfohlen, vollständig blockierte Threads auszublenden, da ihre Statistiken irrelevant sind und die Berichte überlasten können.  
+  Sie können Threads ausblenden, die keine Arbeit ausführen, indem Sie deren Namen in der Spalte auf der linken Seite auswählen und dann auf der Symbolleiste **Ausgewählte Threads ausblenden** auswählen. Es wird empfohlen, vollständig blockierte Threads auszublenden, da ihre Statistiken irrelevant sind und die Berichte überlasten können.  
   
- Um zusätzliche Threads zu ermitteln, die Sie ausblenden können, wählen Sie in der aktiven Legende über die Registerkarte **Profilbericht** den Bericht **Zusammenfassung pro Thread** aus. Dadurch wird das Ausführungsaufschlüsselungsdiagramm angezeigt, das den Zustand von Threads für das derzeit ausgewählte Zeitintervall anzeigt. Auf einigen Zoomstufen, werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt.  
+  Um zusätzliche Threads zu ermitteln, die Sie ausblenden können, wählen Sie in der aktiven Legende über die Registerkarte **Profilbericht** den Bericht **Zusammenfassung pro Thread** aus. Dadurch wird das Ausführungsaufschlüsselungsdiagramm angezeigt, das den Zustand von Threads für das derzeit ausgewählte Zeitintervall anzeigt. Auf einigen Zoomstufen, werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt.  
   
- Wenn Sie ein Zeitintervall und einige Threads darin ausgewählt haben, können Sie die Leistungsanalyse starten.  
+  Wenn Sie ein Zeitintervall und einige Threads darin ausgewählt haben, können Sie die Leistungsanalyse starten.  
   
 ## <a name="analysis-tools"></a>Analysetools  
  In diesem Abschnitt geht es um Berichte und andere Analysetools.  

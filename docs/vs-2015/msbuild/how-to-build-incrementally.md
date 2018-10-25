@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844615"
 ---
 # <a name="how-to-build-incrementally"></a>Gewusst wie: Inkrementelles Erstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>So geben Sie Eingaben und Ausgaben für ein Ziel an  
   
--   Verwenden Sie die `Inputs`- und `Outputs`-Attribute des `Target`-Elements an. Zum Beispiel:  
+- Verwenden Sie die `Inputs`- und `Outputs`-Attribute des `Target`-Elements an. Zum Beispiel:  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien bestimmen und festlegen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die „hello.exe“-Datei ist, führt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] das Ziel aus; andernfalls wird es übersprungen.  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien bestimmen und festlegen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die „hello.exe“-Datei ist, führt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] das Ziel aus; andernfalls wird es übersprungen.  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypothetisches Hilfesystem erstellt. Das Projekt arbeitet, indem TXT-Quelldateien in CONTENT-Zwischendateien konvertiert werden, die dann mit XML-Metadatendateien kombiniert werden, um die finale Hilfedatei zu erstellen, die vom Hilfesystem verwendet wird. Das Projekt verwendet die folgenden hypothetischen Aufgaben:  
   
--   `GenerateContentFiles`: Konvertiert TXT-Dateien in CONTENT-Dateien.  
+- `GenerateContentFiles`: Konvertiert TXT-Dateien in CONTENT-Dateien.  
   
--   `BuildHelp`: Kombiniert CONTENT-Dateien und XML-Metadatendateien, um die finale Hilfedatei zu erstellen.  
+- `BuildHelp`: Kombiniert CONTENT-Dateien und XML-Metadatendateien, um die finale Hilfedatei zu erstellen.  
   
- Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.  
+  Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.  
   
- Diese Projektdatei enthält jeweils die Ziele `Convert` und `Build`. Die `GenerateContentFiles`- und `BuildHelp`-Aufgaben sind jeweils in den Zielen `Convert` und `Build` platziert, sodass jedes Ziel inkrementell erstellt werden kann. Indem das `Output`-Element verwendet wird, werden die Ausgaben der `GenerateContentFiles`-Aufgabe in der `ContentFile`-Elementauflistung platziert, wo sie als Eingaben für die `BuildHelp`-Aufgabe verwendet werden können. Wenn Sie das `Output`-Element so nutzen, werden automatisch die Ausgaben aus einer Aufgabe als Eingaben für eine andere Aufgabe verwendet, sodass Sie nicht die einzelnen Elemente oder Elementauflistungen manuell in jeder Aufgabe eingeben müssen.  
+  Diese Projektdatei enthält jeweils die Ziele `Convert` und `Build`. Die `GenerateContentFiles`- und `BuildHelp`-Aufgaben sind jeweils in den Zielen `Convert` und `Build` platziert, sodass jedes Ziel inkrementell erstellt werden kann. Indem das `Output`-Element verwendet wird, werden die Ausgaben der `GenerateContentFiles`-Aufgabe in der `ContentFile`-Elementauflistung platziert, wo sie als Eingaben für die `BuildHelp`-Aufgabe verwendet werden können. Wenn Sie das `Output`-Element so nutzen, werden automatisch die Ausgaben aus einer Aufgabe als Eingaben für eine andere Aufgabe verwendet, sodass Sie nicht die einzelnen Elemente oder Elementauflistungen manuell in jeder Aufgabe eingeben müssen.  
   
 > [!NOTE]
 >  Obwohl das `GenerateContentFiles`-Ziel eine inkrementelle Erstellung vornehmen kann, werden alle Ausgaben aus diesem Ziel immer als Eingaben für das `BuildHelp`-Ziel benötigt. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] stellt automatisch alle Ausgaben von einem Ziel als Eingaben für ein anderes Ziel bereit, wenn Sie das `Output`-Element verwenden.  

@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811892"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Vorgehensweise: Zugreifen auf die integrierten Schriftarten und Farbschemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
   
  Um integrierte Schriftarten und Farbschema zu verwenden, müssen eine VSPackage ein:  
   
--   Definieren Sie eine Kategorie, um den Standarddienst für Schriftarten und Farben verwenden.  
+- Definieren Sie eine Kategorie, um den Standarddienst für Schriftarten und Farben verwenden.  
   
--   Registrieren Sie die Kategorie, mit der standardmäßigen Schriftarten und Farben.  
+- Registrieren Sie die Kategorie, mit der standardmäßigen Schriftarten und Farben.  
   
--   Empfehlen Sie, dass ein bestimmtes Fenster die Kategorien und integrierte Anzeigeelementen, indem verwendet der IDE die `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` und `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` Schnittstellen.  
+- Empfehlen Sie, dass ein bestimmtes Fenster die Kategorien und integrierte Anzeigeelementen, indem verwendet der IDE die `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` und `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` Schnittstellen.  
   
- Die IDE verwendet die resultierende Kategorie als ein Handle für das Fenster an. Die Kategorie der Name wird angezeigt, der **Einstellungen anzeigen für:** Dropdown-Listenfeld in der **Schriftarten und Farben** Eigenschaftenseite.  
+  Die IDE verwendet die resultierende Kategorie als ein Handle für das Fenster an. Die Kategorie der Name wird angezeigt, der **Einstellungen anzeigen für:** Dropdown-Listenfeld in der **Schriftarten und Farben** Eigenschaftenseite.  
   
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Definieren Sie eine Kategorie mit integrierten Schriftarten und Farben  
   
-1.  Erstellen Sie eine beliebige GUID.  
+1. Erstellen Sie eine beliebige GUID.  
   
-     Diese GUID wird zur eindeutigen Identifizierung eine Kategorie verwendet **.** Diese Kategorie wird wiederverwendet, die IDE Standard-Schriftarten und Farben-Spezifikation.  
+    Diese GUID wird zur eindeutigen Identifizierung eine Kategorie verwendet<strong>.</strong> Diese Kategorie wird wiederverwendet, die IDE Standard-Schriftarten und Farben-Spezifikation.  
   
-    > [!NOTE]
-    >  Beim Abrufen von Daten von Schriftart und Farbe mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder andere Schnittstellen, VSPackages verwenden diese GUID, um integrierte Informationen zu verweisen.  
+   > [!NOTE]
+   >  Beim Abrufen von Daten von Schriftart und Farbe mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder andere Schnittstellen, VSPackages verwenden diese GUID, um integrierte Informationen zu verweisen.  
   
-2.  Eine Zeichenfolgentabelle in die VSPackage Ressourcendatei (.rc), muss dem Kategorienamen hinzugefügt werden, damit sie lokalisiert werden kann, je nach Bedarf, wenn Sie in der IDE angezeigt.  
+2. Eine Zeichenfolgentabelle in die VSPackage Ressourcendatei (.rc), muss dem Kategorienamen hinzugefügt werden, damit sie lokalisiert werden kann, je nach Bedarf, wenn Sie in der IDE angezeigt.  
   
-     Weitere Informationen finden Sie unter [hinzufügen oder Löschen von Zeichenfolgen](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Weitere Informationen finden Sie unter [hinzufügen oder Löschen von Zeichenfolgen](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Registrieren Sie eine Kategorie mit integrierten Schriftarten und Farben  
   
@@ -73,15 +73,15 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Um die Verwendung von vom System bereitgestellten Schriftarten und Farben zu initiieren.  
   
-1.  Erstellen Sie eine Instanz von der `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` -Schnittstelle als Teil der Implementierung und die Initialisierung des Fensters.  
+1. Erstellen Sie eine Instanz von der `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` -Schnittstelle als Teil der Implementierung und die Initialisierung des Fensters.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> Methode zum Abrufen einer Instanz der `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` Schnittstelle, die entsprechend dem aktuellen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Instanz.  
+2. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> Methode zum Abrufen einer Instanz der `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` Schnittstelle, die entsprechend dem aktuellen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Instanz.  
   
-3.  Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> zweimal.  
+3. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> zweimal.  
   
-    -   Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_ColorCategory`als Argument.  
+   - Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_ColorCategory`als Argument.  
   
-    -   Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_FontCategory` als Argument.  
+   - Rufen Sie einmal mit `VSEDITPROPID_ViewGeneral_FontCategory` als Argument.  
   
      Dies legt fest, und stellt die Standarddienste für Schriftarten und Farben als Eigenschaft des Fensters.  
   

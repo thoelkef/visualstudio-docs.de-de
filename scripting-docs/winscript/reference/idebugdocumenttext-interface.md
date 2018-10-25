@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText-Schnittstelle | Microsoft Docs
+title: IDebugDocumentText-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,30 +14,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9522d1075cd796fb69f6abbc42adc2706a817fed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 763678b08c22fe34ec6ffebbe670fb8b50af6576
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843456"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText-Schnittstelle
-Bietet Zugriff auf eine nur-Text-Version des Dokuments Debuggen. Diese Schnittstelle wird verwendet, die folgenden Konventionen:  
+Bietet Zugriff auf eine reine Textversion des Debugdokuments. Diese Schnittstelle wird verwendet, die folgenden Konventionen:  
   
--   Zeichenpositionen und Zeilennummern sind nullbasiert.  
+- Sowohl Zeichenpositionen und Zeilennummern sind nullbasiert.  
   
--   Zeichenpositionen darstellen Zeichenoffsets; Sie nicht darstellen Byte oder word-Offsets. Für Win32 ist eine Zeichenposition ein Unicode-Offset.  
+- Zeichenpositionen darstellen Zeichenoffsets; Sie nicht darstellen Byte oder word-Offsets. Für Win32 ist eine Zeichenposition eine Unicode-Offset.  
   
- Zusätzlich zu den von geerbten Methoden `IDebugDocument`, `IDebugDocumentText` Schnittstelle macht die folgenden Methoden verfügbar.  
+  Zusätzlich zu den von geerbten Methoden `IDebugDocument`, `IDebugDocumentText` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugDocumentText::GetDocumentAttributes](../../winscript/reference/idebugdocumenttext-getdocumentattributes.md)|Gibt die Attribute des Dokuments.|  
+|[IDebugDocumentText::GetDocumentAttributes](../../winscript/reference/idebugdocumenttext-getdocumentattributes.md)|Gibt die Attribute des Dokuments zurück.|  
 |[IDebugDocumentText::GetSize](../../winscript/reference/idebugdocumenttext-getsize.md)|Gibt die Anzahl der Zeilen und die Anzahl der Zeichen im Dokument zurück.|  
-|[IDebugDocumentText::GetPositionOfLine](../../winscript/reference/idebugdocumenttext-getpositionofline.md)|Gibt die Position des Zeichens, das erste Zeichen einer Zeile entspricht.|  
-|[IDebugDocumentText::GetLineOfPosition](../../winscript/reference/idebugdocumenttext-getlineofposition.md)|Gibt die Zeilennummer und optional das Zeichenoffset in der Zeile, die entspricht an der angegebenen Zeichenposition zurück.|  
-|[IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)|Ruft ab, die Zeichen und/oder die Attribute des Zeichens einem Zeichenposition Bereich zugeordnet.|  
-|[IDebugDocumentText::GetPositionOfContext](../../winscript/reference/idebugdocumenttext-getpositionofcontext.md)|Gibt die Zeichenposition Bereich für eine Dokumentenkontext zurück.|  
-|[IDebugDocumentText::GetContextOfPosition](../../winscript/reference/idebugdocumenttext-getcontextofposition.md)|Erstellt ein Dokument Kontextobjekt Bereich der angegebenen Position entspricht.|
+|[IDebugDocumentText::GetPositionOfLine](../../winscript/reference/idebugdocumenttext-getpositionofline.md)|Gibt-Position des Zeichens für das erste Zeichen einer Zeile.|  
+|[IDebugDocumentText::GetLineOfPosition](../../winscript/reference/idebugdocumenttext-getlineofposition.md)|Gibt die Nummer der Zeile und optional das Zeichenoffset in der Zeile, die entspricht, der angegebenen Zeichenposition zurück.|  
+|[IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)|Ruft ab, die Zeichen bzw. eine Zeichenposition Bereich zugeordneten Zeichenformate.|  
+|[IDebugDocumentText::GetPositionOfContext](../../winscript/reference/idebugdocumenttext-getpositionofcontext.md)|Gibt die Zeichenposition Bereich, die einem Dokumentenkontext entsprechen zurück.|  
+|[IDebugDocumentText::GetContextOfPosition](../../winscript/reference/idebugdocumenttext-getcontextofposition.md)|Erstellt ein Dokument Context-Objekt, dem Bereich der angegebenen Position entspricht.|

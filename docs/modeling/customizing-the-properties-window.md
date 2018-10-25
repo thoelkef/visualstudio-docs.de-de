@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813895"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
@@ -28,11 +28,11 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
  **Beschreibung**. Die Beschreibung einer Domäneneigenschaft wird an zwei Orten angezeigt:
 
--   Unten auf der das Fenster "Eigenschaften", wenn der Benutzer die Eigenschaft auswählt. Sie können es dem Benutzer erklären, was die Eigenschaft darstellt.
+- Unten auf der das Fenster "Eigenschaften", wenn der Benutzer die Eigenschaft auswählt. Sie können es dem Benutzer erklären, was die Eigenschaft darstellt.
 
--   In der generierten Programmcode. Wenn Sie die Funktionen der Dokumentation zum Extrahieren der API-Dokumentation verwenden, wird es als die Beschreibung dieser Eigenschaft in der API angezeigt.
+- In der generierten Programmcode. Wenn Sie die Funktionen der Dokumentation zum Extrahieren der API-Dokumentation verwenden, wird es als die Beschreibung dieser Eigenschaft in der API angezeigt.
 
- **Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.
+  **Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.
 
 ## <a name="exposing-style-features"></a>Style-Funktionen verfügbar zu machen
  Einige der dynamischen Funktionen von grafischen Elementen dargestellt werden kann oder *verfügbar gemacht werden* als Domäneneigenschaften. Eine Funktion, die auf diese Weise verfügbar gemacht wurde, kann vom Benutzer aktualisiert werden und kann weitere problemlos aktualisiert werden durch Programmcode.
@@ -67,67 +67,67 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Eine Eigenschaft aus einem anderen Element weiterleiten
 
-1.  Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projektmappe mit mindestens zwei Klassen, die in diesem Beispiel aufgerufen werden, **Buch** und **Autor**. Es muss eine Beziehung entweder Art zwischen **Buch** und **Autor**.
+1. Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projektmappe mit mindestens zwei Klassen, die in diesem Beispiel aufgerufen werden, **Buch** und **Autor**. Es muss eine Beziehung entweder Art zwischen **Buch** und **Autor**.
 
-     Die Multiplizität der Rolle "Quelle" (die Rolle auf die **Buch** Seite) muss 0.. 1 "oder" 1..1, sodass die einzelnen **Buch** verfügt über ein **Autor**.
+    Die Multiplizität der Rolle "Quelle" (die Rolle auf die **Buch** Seite) muss 0.. 1 "oder" 1..1, sodass die einzelnen **Buch** verfügt über ein **Autor**.
 
-2.  In **DSL-Explorer**, mit der rechten Maustaste die **Buch** Domänenklasse, und klicken Sie dann auf **neue für Hinzufügen neuer DomainTypeDescriptor**.
+2. In **DSL-Explorer**, mit der rechten Maustaste die **Buch** Domänenklasse, und klicken Sie dann auf **neue für Hinzufügen neuer DomainTypeDescriptor**.
 
-     Ein Knoten mit dem Namen **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** wird unter der **benutzerdefinierten Typdeskriptor** Knoten.
+    Ein Knoten mit dem Namen **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** wird unter der **benutzerdefinierten Typdeskriptor** Knoten.
 
-3.  Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"**.
+3. Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"**.
 
-     Ein neuen Eigenschaftenpfad angezeigt wird, unter dem **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** Knoten.
+    Ein neuen Eigenschaftenpfad angezeigt wird, unter dem **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** Knoten.
 
-4.  Wählen Sie den neuen Eigenschaftenpfad, und klicken Sie in der **Eigenschaften** legen **Pfad zur Eigenschaft** auf den Pfad der entsprechenden Modellelement.
+4. Wählen Sie den neuen Eigenschaftenpfad, und klicken Sie in der **Eigenschaften** legen **Pfad zur Eigenschaft** auf den Pfad der entsprechenden Modellelement.
 
-     Sie können den Pfad in einer Strukturansicht bearbeiten, indem Sie auf den Pfeil nach unten rechts von dieser Eigenschaft. Weitere Informationen zu Domänenpfade, finden Sie unter [Domänenpfadsyntax](../modeling/domain-path-syntax.md). Wenn Sie es bearbeitet haben, sollte der Pfad ähneln **BookReferencesAuthor.Author/! Autor**.
+    Sie können den Pfad in einer Strukturansicht bearbeiten, indem Sie auf den Pfeil nach unten rechts von dieser Eigenschaft. Weitere Informationen zu Domänenpfade, finden Sie unter [Domänenpfadsyntax](../modeling/domain-path-syntax.md). Wenn Sie es bearbeitet haben, sollte der Pfad ähneln **BookReferencesAuthor.Author/! Autor**.
 
-5.  Legen Sie **Eigenschaft** auf die **Namen** Domäneneigenschaft der **Autor**.
+5. Legen Sie **Eigenschaft** auf die **Namen** Domäneneigenschaft der **Autor**.
 
-6.  Legen Sie **Anzeigename** zu **erstellen Namen**.
+6. Legen Sie **Anzeigename** zu **erstellen Namen**.
 
-7.  Transformieren Sie alle Vorlagen, zu erstellen Sie, und führen Sie die DSL.
+7. Transformieren Sie alle Vorlagen, zu erstellen Sie, und führen Sie die DSL.
 
-8.  In einem Modell ein Buch, Autor, und sie mit der verweisbeziehung zu verknüpfen. Wählen das Book-Element, und im Eigenschaftenfenster sollte Autorenname zusätzlich zu den Eigenschaften des Buchs angezeigt. Ändern Sie den Namen des Autors des verknüpften, oder verknüpfen Sie das Buch zu einem anderen Autor, und beachten Sie, dass der Name des Autors des Buchs ändert.
+8. In einem Modell ein Buch, Autor, und sie mit der verweisbeziehung zu verknüpfen. Wählen das Book-Element, und im Eigenschaftenfenster sollte Autorenname zusätzlich zu den Eigenschaften des Buchs angezeigt. Ändern Sie den Namen des Autors des verknüpften, oder verknüpfen Sie das Buch zu einem anderen Autor, und beachten Sie, dass der Name des Autors des Buchs ändert.
 
 ## <a name="custom-property-editors"></a>Benutzerdefinierte Eigenschaften-Editoren
  Das Eigenschaftenfenster stellt Bearbeitungsfunktionen für den Typ der Eigenschaft "Domain" jede entsprechende Standardeinstellung bereit. Z. B. für ein enumerierter Typ, der Benutzer sieht eine Dropdown-Liste, und der Benutzer kann für eine numerische Eigenschaft Ziffern eingeben. Dies gilt nur für die integrierten Typen. Wenn Sie einen externen Typ angeben, wird der Benutzer sein können, finden Sie unter der Eigenschaftswerte, aber nicht bearbeiten.
 
  Allerdings können Sie die folgenden Editoren und Typen angeben:
 
-1.  Einem anderen Editor, der mit einem standard-Typ verwendet wird. Beispielsweise können Sie einen Datei-Pfad-Editor für eine Zeichenfolgeneigenschaft angeben.
+1. Einem anderen Editor, der mit einem standard-Typ verwendet wird. Beispielsweise können Sie einen Datei-Pfad-Editor für eine Zeichenfolgeneigenschaft angeben.
 
-2.  Einen externen Typ für die Eigenschaft "Domain" und einen Editor für sie.
+2. Einen externen Typ für die Eigenschaft "Domain" und einen Editor für sie.
 
-3.  Ein .NET-Editor wie z. B. den Pfad-Editor, oder Sie können eine eigene benutzerdefinierte Eigenschaft-Editor erstellen.
+3. Ein .NET-Editor wie z. B. den Pfad-Editor, oder Sie können eine eigene benutzerdefinierte Eigenschaft-Editor erstellen.
 
-     Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.
+    Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.
 
- In einer DSL ein *externen Typ* ist jeder Typ, der nicht das einfache Typen (z. B. Boolean oder Int32) oder die Zeichenfolge.
+   In einer DSL ein *externen Typ* ist jeder Typ, der nicht das einfache Typen (z. B. Boolean oder Int32) oder die Zeichenfolge.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Um eine Domäneneigenschaft zu definieren, die einen externen Typ aufweist.
 
-1.  In **Projektmappen-Explorer**, fügen Sie einen Verweis auf die Assembly (DLL) mit dem externen Typ, in der **Dsl** Projekt.
+1. In **Projektmappen-Explorer**, fügen Sie einen Verweis auf die Assembly (DLL) mit dem externen Typ, in der **Dsl** Projekt.
 
-     Die Assembly kann es sich um eine .NET-Assembly oder eine von Ihnen bereitgestellten Assembly sein.
+    Die Assembly kann es sich um eine .NET-Assembly oder eine von Ihnen bereitgestellten Assembly sein.
 
-2.  Fügen Sie den Typ der **Domänentypen** aufzulisten, es sei denn, Sie geschehen.
+2. Fügen Sie den Typ der **Domänentypen** aufzulisten, es sei denn, Sie geschehen.
 
-    1.  Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.
+   1.  Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.
 
-         Ein neuer Eintrag wird unter der **Domänentypen** Knoten.
+        Ein neuer Eintrag wird unter der **Domänentypen** Knoten.
 
-        > [!WARNING]
-        >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.
+       > [!WARNING]
+       >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.
 
-    2.  Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.
+   2.  Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.
 
-3.  Fügen Sie eine Domäneneigenschaft an eine Domänenklasse, auf die übliche Weise.
+3. Fügen Sie eine Domäneneigenschaft an eine Domänenklasse, auf die übliche Weise.
 
-     Wählen Sie im Fenster Eigenschaften den externen Typ aus der Dropdown-Liste in der **Typ** Feld.
+    Wählen Sie im Fenster Eigenschaften den externen Typ aus der Dropdown-Liste in der **Typ** Feld.
 
- In dieser Phase Benutzer können die Werte der Eigenschaft anzeigen, aber nicht bearbeiten. Die angezeigten Werte erhalten Sie vom der `ToString()` Funktion. Sie können Programmcode schreiben, die den Wert der Eigenschaft, z. B. in einem Befehlsfenster oder die Regel festlegt.
+   In dieser Phase Benutzer können die Werte der Eigenschaft anzeigen, aber nicht bearbeiten. Die angezeigten Werte erhalten Sie vom der `ToString()` Funktion. Sie können Programmcode schreiben, die den Wert der Eigenschaft, z. B. in einem Befehlsfenster oder die Regel festlegt.
 
 ### <a name="setting-a-property-editor"></a>Festlegen eines Eigenschaften-Editors
  Fügen Sie der Domäne-Eigenschaft in der folgenden Form eine CLR-Attribut hinzu:
@@ -136,7 +136,6 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Sie können das Attribut für eine Eigenschaft festlegen, mit der **benutzerdefiniertes Attribut** Eintrag im Fenster Eigenschaften.
@@ -173,11 +172,11 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
  Sie definieren einen Editor schreiben eine abgeleitete Klasse, von <xref:System.Drawing.Design.UITypeEditor>. Die Klasse muss außer Kraft setzen:
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, mit dem Benutzer interagieren, und aktualisieren den Wert der Eigenschaft.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, mit dem Benutzer interagieren, und aktualisieren den Wert der Eigenschaft.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob Ihr Editor wird ein Dialogfeld zu öffnen, oder geben Sie ein Dropdown-Menü.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob Ihr Editor wird ein Dialogfeld zu öffnen, oder geben Sie ein Dropdown-Menü.
 
- Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
+  Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 >  Fügen Sie den Code in einer separaten Codedatei in die **Dsl** Projekt.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  Um diesen Editor zu verwenden, legen die **benutzerdefiniertes Attribut** einer Domäneneigenschaft auf:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei in die **Dsl** Projekt. Zum Beispiel:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Siehe auch

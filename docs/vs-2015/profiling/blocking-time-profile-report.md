@@ -18,23 +18,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842871"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische Aufruflisten zu den einzelnen Blockierungskategorien (wie „E/A“ oder „Synchronisierung“). Der Bericht zur vorzeitigen Entfernung listet die Prozesse auf, die den aktuellen Prozess vorzeitig entfernt haben, und gibt die Anzahl der Instanzen für die vorzeitige Entfernung an. Um den Blockierungsprofilbericht zu erstellen, sammelt das Tool blockierende API-Aufrufe und stellt sie in einer Struktur von Aufruflisten zusammen. In diesen Berichten angezeigte Daten hängen vom aktuellen Zeitraum, von ausgeblendeten Threads und den beiden folgenden Filtern ab, die angewendet werden können:  
   
--   Wenn „Nur eigenen Code“ ausgewählt ist, werden nur Stapelrahmen mit Benutzercode sowie die Ebene direkt unter dem Benutzercode angezeigt.  
+- Wenn „Nur eigenen Code“ ausgewählt ist, werden nur Stapelrahmen mit Benutzercode sowie die Ebene direkt unter dem Benutzercode angezeigt.  
   
--   Wenn „Rauschunterdrückung“ festgelegt ist, werden sortierte Stapel mit einer geringeren als der angegebenen Frequenz übersprungen.  
+- Wenn „Rauschunterdrückung“ festgelegt ist, werden sortierte Stapel mit einer geringeren als der angegebenen Frequenz übersprungen.  
   
- Erweitern Sie alle Aufrufstruktureinträge, um die Codezeile zu finden, auf die Blockierungszeit entfällt. Um die Quellzeile für einen Eintrag zu finden, wählen Sie in seinem Kontextmenü **Quelle anzeigen**. Um die für den Aufruf verwendete Codezeile zu suchen, wählen Sie im Kontextmenü **Aufrufsites anzeigen**. Wenn nur eine Aufrufsite vorhanden ist, stellt der Befehl die Verbindung zur markierten Codezeile für die Aufrufsite her. Wenn mehrere Aufrufsites verfügbar sind, öffnet der Befehl ein Dialogfeld, in dem Sie einen Eintrag auswählen können und dann die Schaltfläche **Gehe zu Quellcode** auswählen, um die markierte Aufrufsite zu suchen. Häufig ist es besonders hilfreich, Quellcode für die Aufrufsite anzuzeigen, auf die die meisten Instanzen, die meiste Zeit oder beides entfallen.  
+  Erweitern Sie alle Aufrufstruktureinträge, um die Codezeile zu finden, auf die Blockierungszeit entfällt. Um die Quellzeile für einen Eintrag zu finden, wählen Sie in seinem Kontextmenü **Quelle anzeigen**. Um die für den Aufruf verwendete Codezeile zu suchen, wählen Sie im Kontextmenü **Aufrufsites anzeigen**. Wenn nur eine Aufrufsite vorhanden ist, stellt der Befehl die Verbindung zur markierten Codezeile für die Aufrufsite her. Wenn mehrere Aufrufsites verfügbar sind, öffnet der Befehl ein Dialogfeld, in dem Sie einen Eintrag auswählen können und dann die Schaltfläche **Gehe zu Quellcode** auswählen, um die markierte Aufrufsite zu suchen. Häufig ist es besonders hilfreich, Quellcode für die Aufrufsite anzuzeigen, auf die die meisten Instanzen, die meiste Zeit oder beides entfallen.  
   
 ## <a name="blocking-time-report-columns"></a>Spalten des Blockierungszeitberichts  
  Die folgende Tabelle zeigt die Spalten für die einzelnen Blockierungszeitberichte.  

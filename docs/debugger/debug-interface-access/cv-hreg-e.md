@@ -1,5 +1,5 @@
 ---
-title: CV_HREG_e | Microsoft Docs
+title: CV_HREG_e | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa6e567f811f163f8b79b277f5e0c8d2e4fc775b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848604"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
-Gibt eine Ziel-Register.  
+Gibt an, ein Ziel-Register.  
   
 > [!NOTE]
->  Da die `CV_HREG_e` Enumeration ist zu groß, um in seiner Gesamtheit hier duplizieren, eine verkürzte Version dient als Referenz. Fehlende Einträge werden in Kursivschrift angegeben werden. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.  
+>  Da die `CV_HREG_e` Enumeration ist zu groß, um hier in seiner Gesamtheit duplizieren, ist eine verkürzte Version als Referenz angegeben. Fehlende Einträge werden in Kursivschrift angegeben werden. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -412,40 +412,40 @@ enum CV_HREG_e {
   
 ## <a name="elements"></a>Elements  
  CV_REG_ *  
- Führt die Registrierung von Intel 80 x 86- und ix86-Prozessoren und p-Code verwendet wird.  
+ Führt die Registrierung von Intel 80 x 86- und ix86 Prozessoren und p-Code genutzt werden.  
   
  CV_R68_ *  
- Führt die Registrierung von 68K-Prozessor verwendet.  
+ Führt die Registrierung von 68 KB-Prozessor verwendet.  
   
  CV_M4_ *  
  Führt die Registrierung von MIPS 4000 Reihe Prozessor verwendet.  
   
  CV_ALPHA_ *  
- Register, Digital Equipment Corporation Alpha AXP Reihe Prozessor verwendet.  
+ Führt die Registrierung von Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.  
   
  CV_PPC_ *  
- Führt die Registrierung von Motorola/IBM PowerPC-Prozessor verwendet.  
+ Führt die Registrierung, die von Get/IBM Motorola PowerPC-Prozessor verwendet.  
   
  CV_SH3_ * und CV_SH_\*  
- Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Serie Prozessor verwendet.  
+ Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.  
   
  CV_ARM_ *  
- Register Advanced RISC-Machine (ARM)-Prozessoren verwendet.  
+ Führt die Registrierung von Advanced RISC Machine (ARM)-Prozessoren verwendet.  
   
  CV_IA64_ *  
- Führt die Registrierung von Intel-IA64-Prozessoren verwendet.  
+ Führt die Registrierung von Prozessoren der Intel-IA64-Serie verwendet.  
   
  CV_TRI_ *  
  Führt die Registrierung von Infineon Technologien TriCore Prozessor verwendet.  
   
  CV_AM33_ *  
- Register von Matsushita/Panasonic AM33 verwendet und Prozessoren beziehen.  
+ Registriert von Matsushita/Panasonic AM33 verwendet und beziehen Prozessoren.  
   
  CV_M32R_ *  
  Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.  
   
 ## <a name="remarks"></a>Hinweise  
- Jeder Prozessortyp verwendet einen eigenen eindeutigen Satz von Registern.  
+ Jeder Prozessortyp verwendet seinen eigenen Satz von Registern.  
   
  Die Werte in dieser Enumeration werden für die folgenden Methoden übergeben:  
   
