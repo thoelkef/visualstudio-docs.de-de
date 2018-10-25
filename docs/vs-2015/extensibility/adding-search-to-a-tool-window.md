@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939266"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Hinzufügen von Suchfunktionen zu einem Toolfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können Sie die gleichen Suchfunktionen, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:  
   
--   Ein Suchfeld, die immer in einem benutzerdefinierten Bereich der Symbolleiste befindet.  
+- Ein Suchfeld, die immer in einem benutzerdefinierten Bereich der Symbolleiste befindet.  
   
--   Eine Statusanzeige, die in das Suchfeld selbst überlagert wird.  
+- Eine Statusanzeige, die in das Suchfeld selbst überlagert wird.  
   
--   Die Möglichkeit, Ergebnisse angezeigt werden, sobald Sie jedes Zeichen (Sofortsuche) eingeben, oder nur nach der Auswahl der EINGABETASTE (Suchen Sie nach Bedarf).  
+- Die Möglichkeit, Ergebnisse angezeigt werden, sobald Sie jedes Zeichen (Sofortsuche) eingeben, oder nur nach der Auswahl der EINGABETASTE (Suchen Sie nach Bedarf).  
   
--   Eine Liste, die Begriffe anzeigt, für die Sie zuletzt gesucht haben.  
+- Eine Liste, die Begriffe anzeigt, für die Sie zuletzt gesucht haben.  
   
--   Die Fähigkeit zum Suchen nach bestimmten Feldern oder Aspekte der Ziele für die Suche zu filtern.  
+- Die Fähigkeit zum Suchen nach bestimmten Feldern oder Aspekte der Ziele für die Suche zu filtern.  
   
- Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
+  Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
   
 1.  Erstellen Sie ein VSPackage-Projekt.  
   

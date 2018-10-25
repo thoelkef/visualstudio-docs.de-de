@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 217dcf8e4080727a3e0c76032e0796b380433e99
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940514"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Gewusst wie: Modellieren eines 3D-Geländes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,31 +49,31 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
   
 #### <a name="to-create-a-3-d-terrain-model"></a>So erstellen Sie ein 3D-Geländemodell  
   
-1.  Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).  
+1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).  
   
-2.  Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.  
+2. Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-    > [!TIP]
-    >  Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**  
+   > [!TIP]
+   >  Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**  
   
-3.  Gehen Sie in den Flächenauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Fläche auswählen** aus.  
+3. Gehen Sie in den Flächenauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Fläche auswählen** aus.  
   
-4.  Unterteilen Sie die Ebene. Klicken Sie im Flächenauswahlmodus die Ebene einmal an, um sie auswählen zu können. Klicken Sie anschließend auf die Oberfläche der Ebene, um ihre einzige Fläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche der Ebene hinzugefügt, die sie in vier gleichgroße Teile aufteilen.  
+4. Unterteilen Sie die Ebene. Klicken Sie im Flächenauswahlmodus die Ebene einmal an, um sie auswählen zu können. Klicken Sie anschließend auf die Oberfläche der Ebene, um ihre einzige Fläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche der Ebene hinzugefügt, die sie in vier gleichgroße Teile aufteilen.  
   
-5.  Erstellen Sie weitere Unterteilungen. Klicken Sie zweimal auf **Fläche unterteilen**, während die neuen Flächen noch ausgewählt sind. Dadurch werden insgesamt 64 Flächen erstellt. Sie können dem Gelände sogar noch mehr Details verleihen, indem Sie mehr Unterteilungen erstellen.  
+5. Erstellen Sie weitere Unterteilungen. Klicken Sie zweimal auf **Fläche unterteilen**, während die neuen Flächen noch ausgewählt sind. Dadurch werden insgesamt 64 Flächen erstellt. Sie können dem Gelände sogar noch mehr Details verleihen, indem Sie mehr Unterteilungen erstellen.  
   
-6.  Gehen Sie in den Punktauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Punkt auswählen** aus.  
+6. Gehen Sie in den Punktauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Punkt auswählen** aus.  
   
-7.  Ändern Sie einen Punkt, um eine Geländefunktion zu erstellen. Klicken Sie im Punktauswahlmodus auf einen der Punkte und wählen Sie anschließend auf der Symbolleiste des Modell-Editors das Tool **Übertragen** aus. Ein Feld, das den Punkt darstellt, wird auf der Entwurfsoberfläche angezeigt. Verwenden Sie den grünen Pfeil, um das Feld zu verschieben, wodurch die Punkthöhe verändert wird. Wiederholen Sie diesen Schritt für verschiedene Punkte, um interessante Geländefunktionen zu erstellen.  
+7. Ändern Sie einen Punkt, um eine Geländefunktion zu erstellen. Klicken Sie im Punktauswahlmodus auf einen der Punkte und wählen Sie anschließend auf der Symbolleiste des Modell-Editors das Tool **Übertragen** aus. Ein Feld, das den Punkt darstellt, wird auf der Entwurfsoberfläche angezeigt. Verwenden Sie den grünen Pfeil, um das Feld zu verschieben, wodurch die Punkthöhe verändert wird. Wiederholen Sie diesen Schritt für verschiedene Punkte, um interessante Geländefunktionen zu erstellen.  
   
-    > [!TIP]
-    >  Sie können mehrere Punkte gleichzeitig auswählen, um sie auf einmal zu bearbeiten.  
+   > [!TIP]
+   >  Sie können mehrere Punkte gleichzeitig auswählen, um sie auf einmal zu bearbeiten.  
   
- Das Geländemodell ist fertig. Hier ist noch einmal das fertige Modell, bei dem eine Phong-Schattierung angewandt wurde.  
+   Das Geländemodell ist fertig. Hier ist noch einmal das fertige Modell, bei dem eine Phong-Schattierung angewandt wurde.  
   
- ![3D-Szene zur Darstellung eines Geländemodells](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
+   ![3D-Szene zur Darstellung eines Geländemodells](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
- Sie können dieses Geländemodell zur Veranschaulichung des Effekts des Farbverlauf-Shaders verwenden, das unter [Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md) beschrieben wird.  
+   Sie können dieses Geländemodell zur Veranschaulichung des Effekts des Farbverlauf-Shaders verwenden, das unter [Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md) beschrieben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Modell-Editor](../designers/model-editor.md)

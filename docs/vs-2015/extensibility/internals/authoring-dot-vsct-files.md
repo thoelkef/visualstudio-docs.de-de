@@ -15,12 +15,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b860e279696b4f8c325995ecd09fe257621adab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941333"
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,159 +86,159 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
 ##### <a name="to-define-ui-elements"></a>Um UI-Elemente zu definieren.  
   
-1.  Wenn Sie alle neuen Menüs, Untermenüs, Kontextmenüs oder Symbolleisten definieren, fügen Sie eine `Menus` Element der `Commands` Element. Für jedes Menü erstellt werden soll, fügen Sie dann eine [Menü](../../extensibility/menu-element.md) Element, das `Menus` Element.  
+1. Wenn Sie alle neuen Menüs, Untermenüs, Kontextmenüs oder Symbolleisten definieren, fügen Sie eine `Menus` Element der `Commands` Element. Für jedes Menü erstellt werden soll, fügen Sie dann eine [Menü](../../extensibility/menu-element.md) Element, das `Menus` Element.  
   
-     Festlegen der `guid` und `id` Attribute der `Menu` -Element, und legen die `type` -Attribut auf die Art des Menüs werden sollen. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Menüs in der übergeordneten Gruppe herzustellen.  
+    Festlegen der `guid` und `id` Attribute der `Menu` -Element, und legen die `type` -Attribut auf die Art des Menüs werden sollen. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Menüs in der übergeordneten Gruppe herzustellen.  
   
-    > [!NOTE]
-    >  Die `priority` Attribut gelten nicht für Symbolleisten und Kontextmenüs.  
+   > [!NOTE]
+   >  Die `priority` Attribut gelten nicht für Symbolleisten und Kontextmenüs.  
   
-2.  Alle Befehle in Visual Studio-IDE müssen von Befehlsgruppen gehostet werden, die die direkten untergeordneten Elemente von Menüs und Symbolleisten sind. Wenn Sie neue Menüs oder Symbolleisten der IDE hinzufügen, müssen diese neue Befehlsgruppen enthalten. Sie können auch Befehlsgruppen zu vorhandenen Menüs und Symbolleisten hinzufügen, sodass Sie Ihre Befehle visuell gruppieren können.  
+2. Alle Befehle in Visual Studio-IDE müssen von Befehlsgruppen gehostet werden, die die direkten untergeordneten Elemente von Menüs und Symbolleisten sind. Wenn Sie neue Menüs oder Symbolleisten der IDE hinzufügen, müssen diese neue Befehlsgruppen enthalten. Sie können auch Befehlsgruppen zu vorhandenen Menüs und Symbolleisten hinzufügen, sodass Sie Ihre Befehle visuell gruppieren können.  
   
-     Wenn Sie neue Befehlsgruppen hinzufügen, müssen Sie zuerst erstellen eine `Groups` -Element, und fügen Sie hinzu eine [Gruppe](../../extensibility/group-element.md) -Element für jede Befehlsgruppe.  
+    Wenn Sie neue Befehlsgruppen hinzufügen, müssen Sie zuerst erstellen eine `Groups` -Element, und fügen Sie hinzu eine [Gruppe](../../extensibility/group-element.md) -Element für jede Befehlsgruppe.  
   
-     Legen Sie die `guid` und `id` Attribute der einzelnen `Group` -Element, und legen anschließend die `priority` Attribut zu, um die relative Position der Gruppe in der übergeordneten Menü herzustellen. Weitere Informationen finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
+    Legen Sie die `guid` und `id` Attribute der einzelnen `Group` -Element, und legen anschließend die `priority` Attribut zu, um die relative Position der Gruppe in der übergeordneten Menü herzustellen. Weitere Informationen finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-3.  Wenn Sie der IDE neue Befehle hinzufügen, fügen Sie eine `Buttons` Element, das `Commands` Element. Fügen Sie dann für jeden Befehl, eine [Schaltfläche](../../extensibility/button-element.md) Element, das `Buttons` Element.  
+3. Wenn Sie der IDE neue Befehle hinzufügen, fügen Sie eine `Buttons` Element, das `Commands` Element. Fügen Sie dann für jeden Befehl, eine [Schaltfläche](../../extensibility/button-element.md) Element, das `Buttons` Element.  
   
-    1.  Legen Sie die `guid` und `id` Attribute der einzelnen `Button` -Element, und legen anschließend die `type` -Attribut auf die Art der gewünschte Schaltfläche. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Befehls in der übergeordneten Gruppe herzustellen.  
+   1. Legen Sie die `guid` und `id` Attribute der einzelnen `Button` -Element, und legen anschließend die `type` -Attribut auf die Art der gewünschte Schaltfläche. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Befehls in der übergeordneten Gruppe herzustellen.  
   
-        > [!NOTE]
-        >  Verwendung `type="button"` für standardmäßigen Menübefehle und Schaltflächen in Symbolleisten.  
+      > [!NOTE]
+      >  Verwendung `type="button"` für standardmäßigen Menübefehle und Schaltflächen in Symbolleisten.  
   
-    2.  In der `Button` -Element, Hinzufügen einer [Zeichenfolgen](../../extensibility/strings-element.md) -Element, enthält eine [ButtonText](../../extensibility/buttontext-element.md) Element und ein [CommandName](../../extensibility/commandname-element.md) Element. Die `ButtonText` -Element stellt die textbezeichnung für ein Menüelement oder die QuickInfo für eine Symbolleisten-Schaltfläche bereit. Die `CommandName` Element enthält den Namen des Befehls, der auch im Befehl verwenden.  
+   2. In der `Button` -Element, Hinzufügen einer [Zeichenfolgen](../../extensibility/strings-element.md) -Element, enthält eine [ButtonText](../../extensibility/buttontext-element.md) Element und ein [CommandName](../../extensibility/commandname-element.md) Element. Die `ButtonText` -Element stellt die textbezeichnung für ein Menüelement oder die QuickInfo für eine Symbolleisten-Schaltfläche bereit. Die `CommandName` Element enthält den Namen des Befehls, der auch im Befehl verwenden.  
   
-    3.  Wenn der Befehl ein Symbol verfügt, erstellen eine [Symbol](../../extensibility/icon-element.md) Element in der `Button` -Element, und legen dessen `guid` und `id` Attribute der `Bitmap` -Element für das Symbol.  
+   3. Wenn der Befehl ein Symbol verfügt, erstellen eine [Symbol](../../extensibility/icon-element.md) Element in der `Button` -Element, und legen dessen `guid` und `id` Attribute der `Bitmap` -Element für das Symbol.  
   
-        > [!NOTE]
-        >  Symbolleisten-Schaltflächen müssen Symbole.  
+      > [!NOTE]
+      >  Symbolleisten-Schaltflächen müssen Symbole.  
   
-     Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+      Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
-4.  Wenn Ihre Befehle Symbole benötigen, fügen Sie eine [Bitmaps](../../extensibility/bitmaps-element.md) Element, das `Commands` Element. Fügen Sie dann für jedes Symbol, ein [Bitmap](../../extensibility/bitmap-element.md) Element, das `Bitmaps` Element. Dies ist in dem Sie den Speicherort der Bitmapressource angeben. Weitere Informationen finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](../../extensibility/adding-icons-to-menu-commands.md).  
+4. Wenn Ihre Befehle Symbole benötigen, fügen Sie eine [Bitmaps](../../extensibility/bitmaps-element.md) Element, das `Commands` Element. Fügen Sie dann für jedes Symbol, ein [Bitmap](../../extensibility/bitmap-element.md) Element, das `Bitmaps` Element. Dies ist in dem Sie den Speicherort der Bitmapressource angeben. Weitere Informationen finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](../../extensibility/adding-icons-to-menu-commands.md).  
   
- Sie können die Struktur übergeordneter, um ordnungsgemäß zu platzieren. die meisten Menüs, Gruppen und Befehle verwenden. Für sehr große Befehlssätze oder wenn ein Menü, Gruppe oder den Befehl an mehreren Stellen angezeigt werden muss, empfehlen wir, dass Sie die Platzierung des Befehls angeben.  
+   Sie können die Struktur übergeordneter, um ordnungsgemäß zu platzieren. die meisten Menüs, Gruppen und Befehle verwenden. Für sehr große Befehlssätze oder wenn ein Menü, Gruppe oder den Befehl an mehreren Stellen angezeigt werden muss, empfehlen wir, dass Sie die Platzierung des Befehls angeben.  
   
 ##### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>Übergeordneter Platzieren von UI-Elemente in der IDE verwenden  
   
-1.  Für typische übergeordneter, erstellen eine `Parent` -Element in jedem `Menu`, `Group`, und `Command` -Element, das in Ihrem Paket definiert ist.  
+1. Für typische übergeordneter, erstellen eine `Parent` -Element in jedem `Menu`, `Group`, und `Command` -Element, das in Ihrem Paket definiert ist.  
   
-     Das Ziel der `Parent` Element ist, der im Menü oder Gruppe, die Sie im Menü enthält, oder einer Gruppe-Befehl.  
+    Das Ziel der `Parent` Element ist, der im Menü oder Gruppe, die Sie im Menü enthält, oder einer Gruppe-Befehl.  
   
-    1.  Legen Sie die `guid` auf den Namen des Attributs der `GuidSymbol` Element, das den Befehlssatz definiert. Ist der Target-Element nicht Teil des Pakets, verwenden Sie die Guid für diese Befehl festgelegt ist, wie in der entsprechenden VSCT-Datei definiert.  
+   1.  Legen Sie die `guid` auf den Namen des Attributs der `GuidSymbol` Element, das den Befehlssatz definiert. Ist der Target-Element nicht Teil des Pakets, verwenden Sie die Guid für diese Befehl festgelegt ist, wie in der entsprechenden VSCT-Datei definiert.  
   
-    2.  Legen Sie die `id` Attribut entsprechend den `id` Attribut, das Menü "Ziel" oder einer Gruppe. Eine Liste der Menüs und Gruppen, die von Visual Studio verfügbar gemacht werden, finden Sie unter [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2.  Legen Sie die `id` Attribut entsprechend den `id` Attribut, das Menü "Ziel" oder einer Gruppe. Eine Liste der Menüs und Gruppen, die von Visual Studio verfügbar gemacht werden, finden Sie unter [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
- Wenn Sie eine große Anzahl von Elementen der Benutzeroberfläche in der IDE platziert haben oder wenn Sie über Elemente verfügen, die an mehreren Stellen angezeigt werden soll, definieren Sie ihre Platzierungen, in der [CommandPlacements](../../extensibility/commandplacements-element.md) Element, wie in den folgenden Schritten dargestellt.  
+   Wenn Sie eine große Anzahl von Elementen der Benutzeroberfläche in der IDE platziert haben oder wenn Sie über Elemente verfügen, die an mehreren Stellen angezeigt werden soll, definieren Sie ihre Platzierungen, in der [CommandPlacements](../../extensibility/commandplacements-element.md) Element, wie in den folgenden Schritten dargestellt.  
   
 ##### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>Um die Platzierung von Befehl verwenden, um UI-Elemente in der IDE  
   
-1.  Nach der `Commands` -Element, Hinzufügen einer `CommandPlacements` Element.  
+1. Nach der `Commands` -Element, Hinzufügen einer `CommandPlacements` Element.  
   
-2.  In der `CommandPlacements` -Element, Hinzufügen einer `CommandPlacement` -Element für jedes Menü, Gruppe oder den Befehl platzieren.  
+2. In der `CommandPlacements` -Element, Hinzufügen einer `CommandPlacement` -Element für jedes Menü, Gruppe oder den Befehl platzieren.  
   
-     Jede `CommandPlacement` Element oder `Parent` Element ein Menü, Gruppe oder den Befehl in einem IDE-Speicherort platziert. Ein Element der Benutzeroberfläche kann nur ein übergeordnetes Element aufweisen, aber er kann mehrere befehlsplatzierungen aufweisen. Um ein Element der Benutzeroberfläche an mehreren Orten zu platzieren, Hinzufügen einer `CommandPlacement` -Element für jeden Standort.  
+    Jede `CommandPlacement` Element oder `Parent` Element ein Menü, Gruppe oder den Befehl in einem IDE-Speicherort platziert. Ein Element der Benutzeroberfläche kann nur ein übergeordnetes Element aufweisen, aber er kann mehrere befehlsplatzierungen aufweisen. Um ein Element der Benutzeroberfläche an mehreren Orten zu platzieren, Hinzufügen einer `CommandPlacement` -Element für jeden Standort.  
   
-3.  Legen Sie die `guid` und `id` Attribute der einzelnen `CommandPlacement` Element auf das hosting Menü oder die Gruppe, wie Sie für würden eine `Parent` Element. Sie können auch Festlegen der `priority` Attribut zu, um die relative Position des Benutzeroberflächenelements herzustellen.  
+3. Legen Sie die `guid` und `id` Attribute der einzelnen `CommandPlacement` Element auf das hosting Menü oder die Gruppe, wie Sie für würden eine `Parent` Element. Sie können auch Festlegen der `priority` Attribut zu, um die relative Position des Benutzeroberflächenelements herzustellen.  
   
- Sie können die Platzierung von Überordnung und Platzierung der Befehl kombinieren. Für sehr große Befehlssätze empfehlen wir jedoch, dass Sie nur die Platzierung Befehl verwenden.  
+   Sie können die Platzierung von Überordnung und Platzierung der Befehl kombinieren. Für sehr große Befehlssätze empfehlen wir jedoch, dass Sie nur die Platzierung Befehl verwenden.  
   
 ### <a name="adding-specialized-behaviors"></a>Hinzufügen von spezielle Verhaltensweisen  
  Sie können [CommandFlag](../../extensibility/command-flag-element.md) Elemente, die das Verhalten von Menüs und Befehlen, z. B. zu ändern, um ihre Darstellung und die Sichtbarkeit zu ändern. Sie können auch beeinflussen, wenn ein Befehl angezeigt, mithilfe von wird [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md), oder fügen Sie mithilfe von Tastenkombinationen in Visual Studio [KeyBindings](../../extensibility/keybindings-element.md). Bestimmte Arten von Menüs und Befehlen bereits haben integrierte Verhaltensweisen spezialisiert.  
   
 ##### <a name="to-add-specialized-behaviors"></a>Spezielle Verhaltensweisen hinzufügen  
   
-1.  Um ein Element der Benutzeroberfläche sichtbar machen nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. wenn eine Projektmappe geladen ist, verwenden Sie Sichtbarkeit-Einschränkungen.  
+1. Um ein Element der Benutzeroberfläche sichtbar machen nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. wenn eine Projektmappe geladen ist, verwenden Sie Sichtbarkeit-Einschränkungen.  
   
-    1.  Nach der `Commands` -Element, Hinzufügen einer `VisibilityConstraints` Element.  
+   1.  Nach der `Commands` -Element, Hinzufügen einer `VisibilityConstraints` Element.  
   
-    2.  Für jedes UI-Element, eingeschränkt werden soll, Hinzufügen einer [VisibilityItem](../../extensibility/visibilityitem-element.md) Element.  
+   2.  Für jedes UI-Element, eingeschränkt werden soll, Hinzufügen einer [VisibilityItem](../../extensibility/visibilityitem-element.md) Element.  
   
-    3.  Für jede `VisibilityItem` -Element legen Sie die `guid` und `id` Attribute auf das Menü, Gruppe oder Befehl und legen Sie dann die `context` Attribut an den Benutzeroberflächenkontext werden sollen, gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse. Weitere Informationen finden Sie unter [VisibilityItem-Element](../../extensibility/visibilityitem-element.md).  
+   3.  Für jede `VisibilityItem` -Element legen Sie die `guid` und `id` Attribute auf das Menü, Gruppe oder Befehl und legen Sie dann die `context` Attribut an den Benutzeroberflächenkontext werden sollen, gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse. Weitere Informationen finden Sie unter [VisibilityItem-Element](../../extensibility/visibilityitem-element.md).  
   
-2.  Um die Sichtbarkeit oder die Verfügbarkeit eines UI-Elements im Code festzulegen, verwenden Sie eine oder mehrere der folgenden Befehlsflags aus:  
+2. Um die Sichtbarkeit oder die Verfügbarkeit eines UI-Elements im Code festzulegen, verwenden Sie eine oder mehrere der folgenden Befehlsflags aus:  
   
-    -   DefaultDisabled  
+   - DefaultDisabled  
   
-    -   DefaultInvisible  
+   - DefaultInvisible  
   
-    -   DynamicItemStart  
+   - DynamicItemStart  
   
-    -   DynamicVisibility  
+   - DynamicVisibility  
   
-    -   NoShowOnMenuController  
+   - NoShowOnMenuController  
   
-    -   NotInTBList  
-  
-     Weitere Informationen finden Sie unter [Commandflag-Element](../../extensibility/command-flag-element.md).  
-  
-3.  Verwenden Sie zum Ändern ein Elements angezeigt wird, oder seine Darstellung dynamisch ändern, eine oder mehrere der folgenden Befehlsflags aus:  
-  
-    -   AlwaysCreate  
-  
-    -   CommandWellOnly  
-  
-    -   DefaultDocked  
-  
-    -   DontCache  
-  
-    -   DynamicItemStart  
-  
-    -   FixMenuController  
-  
-    -   IconAndText  
-  
-    -   PICT  
-  
-    -   StretchHorizontally  
-  
-    -   TextMenuUseButton  
-  
-    -   TextChanges  
-  
-    -   TextOnly  
+   - NotInTBList  
   
      Weitere Informationen finden Sie unter [Commandflag-Element](../../extensibility/command-flag-element.md).  
   
-4.  Verwenden Sie zum Ändern ein Elements wie reagiert, wenn Befehle empfangen werden, eine oder mehrere der folgenden Befehlsflags aus:  
+3. Verwenden Sie zum Ändern ein Elements angezeigt wird, oder seine Darstellung dynamisch ändern, eine oder mehrere der folgenden Befehlsflags aus:  
   
-    -   AllowParams  
+   - AlwaysCreate  
   
-    -   CaseSensitive  
+   - CommandWellOnly  
   
-    -   CommandWellOnly  
+   - DefaultDocked  
   
-    -   Filter-Schlüssel  
+   - DontCache  
   
-    -   NoAutoComplete  
+   - DynamicItemStart  
   
-    -   NoButtonCustomize  
+   - FixMenuController  
   
-    -   NoKeyCustomize  
+   - IconAndText  
   
-    -   NoToolbarClose  
+   - PICT  
   
-    -   PostExec  
+   - StretchHorizontally  
   
-    -   RouteToDocs  
+   - TextMenuUseButton  
   
-    -   TextIsAnchorCommand  
+   - TextChanges  
+  
+   - TextOnly  
   
      Weitere Informationen finden Sie unter [Commandflag-Element](../../extensibility/command-flag-element.md).  
   
-5.  Um ein Menü oder ein Element in einem Menü eine abhängige Menü-Tastenkombination anzufügen, fügen Sie ein kaufmännisches und-Zeichen ("&") in der `ButtonText` -Element für das Menü oder das Menüelement. Das Zeichen, das kaufmännische und-Zeichen folgt, ist die aktive Tastenkombination auf, wenn im übergeordneten Menü geöffnet ist.  
+4. Verwenden Sie zum Ändern ein Elements wie reagiert, wenn Befehle empfangen werden, eine oder mehrere der folgenden Befehlsflags aus:  
   
-6.  Verwenden Sie zum Anfügen einer unabhängigen Menü-Tastenkombination an einen Befehl [KeyBindings](../../extensibility/keybindings-element.md). Weitere Informationen finden Sie unter [KeyBinding-Element](../../extensibility/keybinding-element.md).  
+   - AllowParams  
   
-7.  Um Menütext zu lokalisieren, verwenden die `LocCanonicalName` Element. Weitere Informationen finden Sie unter [Strings-Element](../../extensibility/strings-element.md).  
+   - CaseSensitive  
   
- Einige Typen von Menüs und Schaltflächen enthalten spezielle Verhaltensweisen. In der folgende Tabelle werden einige spezielle Menü und die Schaltflächentypen beschrieben. Für andere Typen finden Sie unter der `types` Attribut Beschreibungen in [Menu Element](../../extensibility/menu-element.md), [Schaltflächenelement](../../extensibility/button-element.md), und [Combo-Element](../../extensibility/combo-element.md).  
+   - CommandWellOnly  
   
- Kombinationsfeld  
- Ein Kombinationsfeld ist ein Dropdown-Liste, die auf einer Symbolleiste verwendet werden kann. Erstellen Sie zum Hinzufügen von Kombinationsfeldern an der Benutzeroberfläche eine [Combos](../../extensibility/combos-element.md) Element in der `Commands` Element. Klicken Sie dann zum Hinzufügen der `Combos` Element eine `Combo` -Element für jede im Kombinationsfeld hinzufügen. `Combo` Elemente besitzen den gleichen Attributen und untergeordneten Elemente als `Button` Elemente und zudem `DefaultWidth` und `idCommandList` Attribute. Die `DefaultWidth` -Attribut legt die Breite in Pixel und die `idCommandList` -Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinationsfelds verwendet wird. Weitere Informationen finden Sie unter den `Combo` Element-Dokumentation.  
+   - Filter-Schlüssel  
   
- MenuController  
- Ein Menücontroller ist einer Schaltfläche mit einem Pfeil angezeigt. Auf den Pfeil klicken, wird eine Liste geöffnet. Um die Benutzeroberfläche ein Menücontroller hinzugefügt haben, erstellen Sie eine `Menu` Element, und legen dessen `type` Attribut **MenuController** oder **MenuControllerLatched**, je nachdem, auf das gewünschte Verhalten. Um ein Menücontroller aufzufüllen, legen Sie es als das übergeordnete Element einer `Group` Element. Der Menücontroller im werden alle untergeordneten Elemente dieser Gruppe auf die Dropdown-Liste angezeigt.  
+   - NoAutoComplete  
+  
+   - NoButtonCustomize  
+  
+   - NoKeyCustomize  
+  
+   - NoToolbarClose  
+  
+   - PostExec  
+  
+   - RouteToDocs  
+  
+   - TextIsAnchorCommand  
+  
+     Weitere Informationen finden Sie unter [Commandflag-Element](../../extensibility/command-flag-element.md).  
+  
+5. Um ein Menü oder ein Element in einem Menü eine abhängige Menü-Tastenkombination anzufügen, fügen Sie ein kaufmännisches und-Zeichen ("&") in der `ButtonText` -Element für das Menü oder das Menüelement. Das Zeichen, das kaufmännische und-Zeichen folgt, ist die aktive Tastenkombination auf, wenn im übergeordneten Menü geöffnet ist.  
+  
+6. Verwenden Sie zum Anfügen einer unabhängigen Menü-Tastenkombination an einen Befehl [KeyBindings](../../extensibility/keybindings-element.md). Weitere Informationen finden Sie unter [KeyBinding-Element](../../extensibility/keybinding-element.md).  
+  
+7. Um Menütext zu lokalisieren, verwenden die `LocCanonicalName` Element. Weitere Informationen finden Sie unter [Strings-Element](../../extensibility/strings-element.md).  
+  
+   Einige Typen von Menüs und Schaltflächen enthalten spezielle Verhaltensweisen. In der folgende Tabelle werden einige spezielle Menü und die Schaltflächentypen beschrieben. Für andere Typen finden Sie unter der `types` Attribut Beschreibungen in [Menu Element](../../extensibility/menu-element.md), [Schaltflächenelement](../../extensibility/button-element.md), und [Combo-Element](../../extensibility/combo-element.md).  
+  
+   Kombinationsfeld  
+   Ein Kombinationsfeld ist ein Dropdown-Liste, die auf einer Symbolleiste verwendet werden kann. Erstellen Sie zum Hinzufügen von Kombinationsfeldern an der Benutzeroberfläche eine [Combos](../../extensibility/combos-element.md) Element in der `Commands` Element. Klicken Sie dann zum Hinzufügen der `Combos` Element eine `Combo` -Element für jede im Kombinationsfeld hinzufügen. `Combo` Elemente besitzen den gleichen Attributen und untergeordneten Elemente als `Button` Elemente und zudem `DefaultWidth` und `idCommandList` Attribute. Die `DefaultWidth` -Attribut legt die Breite in Pixel und die `idCommandList` -Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinationsfelds verwendet wird. Weitere Informationen finden Sie unter den `Combo` Element-Dokumentation.  
+  
+   MenuController  
+   Ein Menücontroller ist einer Schaltfläche mit einem Pfeil angezeigt. Auf den Pfeil klicken, wird eine Liste geöffnet. Um die Benutzeroberfläche ein Menücontroller hinzugefügt haben, erstellen Sie eine `Menu` Element, und legen dessen `type` Attribut **MenuController** oder **MenuControllerLatched**, je nachdem, auf das gewünschte Verhalten. Um ein Menücontroller aufzufüllen, legen Sie es als das übergeordnete Element einer `Group` Element. Der Menücontroller im werden alle untergeordneten Elemente dieser Gruppe auf die Dropdown-Liste angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Menüs und Befehle](../../extensibility/extending-menus-and-commands.md)   

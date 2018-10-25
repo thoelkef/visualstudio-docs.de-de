@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942373"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch einen TextField dargestellt. Beispiele für die Initialisierung von TextFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  Es gibt mehrere Paare von `Get` Methoden und `Default` Eigenschaften, z. B. `DefaultMultipleLine/GetMultipleLine()`. Sie können die Standardeigenschaft zum Ändern des Werts für alle Instanzen des Form-Felds einen Wert zuweisen. Wenn den Wert aus einer Shape-Instanz ein anderes Kommunikationsprotokoll oder abhängig vom Zustand der Form oder ihres Modellelements unterschiedlich sein soll, überschreiben die `Get` Methode.
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>Dynamische Anpassungen
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>Formatvorlagen
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Siehe auch

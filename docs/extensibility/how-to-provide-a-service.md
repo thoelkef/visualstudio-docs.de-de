@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942549"
 ---
 # <a name="how-to-provide-a-service"></a>Gewusst wie: Bereitstellen ein Diensts
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst bereitstellen zu können, muss eine VSPackage registrieren den Dienst mit Visual Studio, und fügen Sie den Dienst.  
@@ -32,50 +32,50 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
 ## <a name="implement-a-service"></a>Implementieren eines Diensts  
   
-1.  Erstellen Sie ein VSIX-Projekt (**Datei** > **neu** > **Projekt** > **Visual C#-**  >  **Erweiterbarkeit** > **VSIX-Projekt**).  
+1. Erstellen Sie ein VSIX-Projekt (**Datei** > **neu** > **Projekt** > **Visual C#-**  >  **Erweiterbarkeit** > **VSIX-Projekt**).  
   
-2.  Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen** > **neues Element** > **Visual c#-Elemente**  >  **Erweiterbarkeit** > **Visual Studio-Paket**.  
+2. Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen** > **neues Element** > **Visual c#-Elemente**  >  **Erweiterbarkeit** > **Visual Studio-Paket**.  
   
-3.  Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:  
+3. Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:  
   
-    -   Eine Schnittstelle, die den Dienst beschreibt. Viele dieser Schnittstellen sind leer, d. h., sie haben keine Methoden.  
+   - Eine Schnittstelle, die den Dienst beschreibt. Viele dieser Schnittstellen sind leer, d. h., sie haben keine Methoden.  
   
-    -   Eine Schnittstelle, die die Dienstschnittstelle beschreibt. Diese Schnittstelle enthält die Methoden implementiert werden.  
+   - Eine Schnittstelle, die die Dienstschnittstelle beschreibt. Diese Schnittstelle enthält die Methoden implementiert werden.  
   
-    -   Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.  
+   - Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.  
   
      Das folgende Beispiel zeigt eine grundlegende Implementierung der drei Typen an. Der Konstruktor der Dienstklasse, muss den Dienstanbieter festgelegt.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="register-a-service"></a>Registrieren von Diensten  
   

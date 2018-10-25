@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetType | Microsoft Docs
+title: IDebugField::GetType | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad684837fcda28fbe45874e5a5573f4581a9217f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2475c9b5a24fb00d266ce1ceaae0181c6f010f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939891"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 Diese Methode ruft den Typ des Felds ab.  
@@ -41,10 +41,10 @@ int GetType(
   
 #### <a name="parameters"></a>Parameter  
  `ppType`  
- [out] Gibt den Feldtyp, da derzeit ein anderer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.  
+ [out] Gibt den Feldtyp, wie eine andere [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

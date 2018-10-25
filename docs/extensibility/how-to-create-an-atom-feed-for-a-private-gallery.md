@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942100"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Gewusst wie: erstellen ein Atom-Feeds für einen privaten Katalog
 Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterungen enthält, und fügen den Feed zu erstellen, **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterunge
 ## <a name="create-an-atom-feed"></a>Erstellen Sie einen Atom-feed  
  Um einen Atom-feed als privater Katalog zu erstellen, sammeln Sie zunächst Ihre Erweiterungen (*VSIX* Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:  
   
--   Ein *atom.xml* -Datei, die die Erweiterungen als privater Katalog zur Verfügung stellt. Informationen zum Herstellen einer Verbindung die *atom.xml* Datei **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
+- Ein *atom.xml* -Datei, die die Erweiterungen als privater Katalog zur Verfügung stellt. Informationen zum Herstellen einer Verbindung die *atom.xml* Datei **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
   
--   Ein Ordner, der Bilddateien enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die *atom.xml* -Datei enthält die relative Links zu diesen Bilder, damit sie in verfügbaren **Erweiterungen und Updates**.  
+- Ein Ordner, der Bilddateien enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die *atom.xml* -Datei enthält die relative Links zu diesen Bilder, damit sie in verfügbaren **Erweiterungen und Updates**.  
   
- Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einem Ordner gesammelt haben:  
+  Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einem Ordner gesammelt haben:  
   
--   *Template_Wizard_239.VSIX*, dies ist eine leere VSIX-Projektvorlage.  
+- *Template_Wizard_239.VSIX*, dies ist eine leere VSIX-Projektvorlage.  
   
--   *SelectionHighlight.vsix*, dies ist ein Tool, um alle Instanzen eines markierten Worts zu markieren.  
+- *SelectionHighlight.vsix*, dies ist ein Tool, um alle Instanzen eines markierten Worts zu markieren.  
   
- Den Inhalt der *atom.xml* Datei wird im folgende Beispiel ähneln:  
+  Den Inhalt der *atom.xml* Datei wird im folgende Beispiel ähneln:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   

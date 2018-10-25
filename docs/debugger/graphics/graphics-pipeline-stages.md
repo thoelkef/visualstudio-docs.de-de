@@ -1,5 +1,5 @@
 ---
-title: Stufen der Grafikpipeline | Microsoft Docs
+title: Grafikpipelinestufen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/09/2017
 ms.technology: vs-ide-debug
@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c708320442c32158ef193ccf7f08669882135d82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: da74af0f77586e518365fa669c84309e7751b319
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941549"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafikpipelinestufen
 Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie ein einzelner Zeichnen-Befehl in jeder Stufe der Direct3D-Grafikpipeline transgformiert wird.  
   
  Im Folgenden finden Sie das Fenster „Pipelinestufen“:  
   
- ![Ein 3D-Objekt durchläuft die Pipelinestufen.](media/gfx_diag_demo_pipeline_stages_orientation.png)
+ ![Ein 3D-Objekt durchläuft die Pipelinestufen ab.](media/gfx_diag_demo_pipeline_stages_orientation.png)
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Verstehen des Fensters Grafikpipelinestufen  
  Im Fenster „Pipelinestufen“ wird das Ergebnis jeder Stufe der Grafikpipeline einzeln veranschaulicht, und zwar für jeden Zeichnen-Befehl. Für gewöhnlich werden die Ergebnisse von Stufen in der Mitte der Pipeline ausgeblendet, wodurch es schwierig wird, den Ursprung des Renderingproblems zu finden. Durch die Veranschaulichung jeder einzelnen Stufe erleichtert das Fenster „Pipelinestufen“ das Auffinden des Problemursprungs. Beispielsweise können Sie problemlos nachvollziehen, wenn die Vertex-Shader-Stufe dazu führt, dass ein Objekt unerwartet neben dem Bildschirm gezeichnet wird.  
@@ -34,36 +34,36 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
 ### <a name="links-to-related-graphics-objects"></a>Links zu verwandten Grafikobjekten  
  In einigen Fällen ist ein zusätzlicher Kontext erforderlich, um zu ermitteln, weshalb ein Zeichnen-Befehl mit der Grafikpipeline in bestimmter Art und Weise interagiert. Damit dieser zusätzliche Kontext einfacher gefunden werden kann, stellt das Fenster „Grafikpipelinestufen“ eine Verknüpfung zu mindestens einem Objekt her, das zusätzlichen Kontext bereitstellt, der mit dem, was in der Grafikpipeline vor sich geht, verknüpft ist.  
   
--   In Direct3D 12 ist dieses Objekt für gewöhnlich eine Befehlsliste.  
+- In Direct3D 12 ist dieses Objekt für gewöhnlich eine Befehlsliste.  
   
--   In Direct3D 11 ist dieses Objekt für gewöhnlich der Grafikgerätkontext.  
+- In Direct3D 11 ist dieses Objekt für gewöhnlich der Grafikgerätkontext.  
   
- Diese Links sind Bestandteil der aktuellen Grafikereignissignatur, die sich in der oberen linken Ecke des Fensters „Grafikpipelinestufen“ befindet. Folgen Sie diesen Links, um weitere Details zum Objekt zu untersuchen.  
+  Diese Links sind Bestandteil der aktuellen Grafikereignissignatur, die sich in der oberen linken Ecke des Fensters „Grafikpipelinestufen“ befindet. Folgen Sie diesen Links, um weitere Details zum Objekt zu untersuchen.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Anzeigen und Debuggen des Shader-Codes  
  Sie können mithilfe der Steuerelemente unten von den entsprechenden Stufen im Fenster „Pipelinestufen“ Code für Vertex-, Hull-, Domänen-, Geometrie- und Pixel-Shader überprüfen und debuggen.  
   
 #### <a name="to-view-a-shaders-source-code"></a>Um einen Shader-Quellcode anzuzeigen  
   
--   In der **Grafikpipelinestufen** Fenster suchen die Shader-Stufe, die dem Shader entspricht Sie untersuchen möchten. Folgen Sie anschließend den Shader-Stufe-Titellink, unter dem Vorschaubild – z. B. auf den Link **Vertex Shader obj: 30** um den Quellcode des Vertex-Shaders anzuzeigen.  
+-   In der **Grafikpipelinestufen** Fenster suchen die Shader-Stufe, die dem Shader entspricht, Sie untersuchen möchten. Führen Sie anschließend den Shader-Stufe-Titellink, unter dem Vorschaubild – z. B. auf den Link **Vertex Shader obj: 30** um den Vertex-Shader-Quellcode anzuzeigen.  
   
     > [!TIP]
-    >  Die Objektnummer **obj: 30**, identifiziert diesen Shader über die Grafikanalyse-Schnittstelle z. B. in der Objekttabelle und im pixelverlaufsfenster Verlaufsfenster von Objekt.  
+    >  Die Objektnummer **Obj:30**, identifiziert diesen Shader über die Grafikanalyse-Schnittstelle z. B. in der Objekttabelle und im pixelverlaufsfenster Verlaufsfenster von Objekt.  
   
 #### <a name="to-debug-a-shader"></a>Um einen Shader zu debuggen  
   
--   In der **Grafikpipelinestufen** Fenster suchen die Shader-Stufe, die dem Shader entspricht Sie debuggen möchten. Wählen Sie dann unter dem Vorschaubild **Debuggen**. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für die entsprechende Stufe, d. h. das erste Pixel, Vertex oder Primitiv, das während dieses Zeichnen-Befehls durch den Shader verarbeitet wird. Durch Aufrufe dieses Shaders für ein bestimmtes Pixel oder Vertex zugegriffen werden können die **Grafikpixelverlauf**.  
+-   In der **Grafikpipelinestufen** Fenster suchen die Shader-Stufe, die dem Shader entspricht, Sie debuggen möchten. Wählen Sie dann unter dem Vorschaubild **Debuggen starten**. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für die entsprechende Stufe, d. h. das erste Pixel, Vertex oder Primitiv, das während dieses Zeichnen-Befehls durch den Shader verarbeitet wird. Aufrufe dieses Shaders für ein bestimmtes Pixel oder Vertex können zugegriffen werden, über die **Grafikpixelverlauf**.  
   
 ### <a name="the-pipeline-stages"></a>Die Pipelinestufen  
  Im Fenster „Pipelinestufen“ werden nur die Stufen der Pipeline veranschaulicht, die während des Zeichnen-Befehls aktiv waren. Auf jeder Stufe der Grafikpipeline werden Eingaben aus der vorherigen Stufe umgewandelt, und das Ergebnis wird an die nächste Stufe weitergegeben. Auf der ersten Stufe (der Eingabe-Assembler) werden Index- und Vertexdaten Ihrer App als entsprechende Eingabe verwendet. Auf der letzten Stufe (der Ausgabemerge) werden die neu gerenderten Pixel mit den aktuellen Inhalten des Framepuffers oder Renderziels als Ausgabe kombiniert, um das endgültige Bild zu generieren, wie es auf Ihrem Bildschirm angezeigt wird.  
   
 > [!NOTE]
->  Compute-Shadern können nicht der **Grafikpipelinestufen** Fenster.  
+>  Compute-Shader werden nicht unterstützt, der **Grafikpipelinestufen** Fenster.  
   
  **Eingabe-Assembler**  
  Der Eingabe-Assembler liest durch Ihre App angegebene Index- und Vertexdaten und assembliert sie für die Grafikhardware.  
   
- Im Fenster „Pipelinestufen“ wird die Ausgabe „Eingabe-Assembler“ in einem Drahtmodell veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Eingabeassembler** in der **Grafikpipelinestufen** Fenster aus, um die assemblierten Scheitelpunkte in vollständigem 3D, die mit dem Modell-Editor anzuzeigen.  
+ Im Fenster „Pipelinestufen“ wird die Ausgabe „Eingabe-Assembler“ in einem Drahtmodell veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Eingabe-Assembler** in die **Grafikpipelinestufen** Fenster aus, um die assemblierten Scheitelpunkte in vollständigem 3D, die mit dem Modell-Editor anzeigen.  
   
 > [!NOTE]
 >  Wenn die `POSITION` semantische nicht in der Eingabe-Assembler-Ausgabe vorhanden ist, wird nichts angezeigt, der **Eingabe-Assembler** Phase.  
@@ -71,10 +71,10 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  **Vertex-Shader**  
  Die Vertex-Shader-Stufe verarbeitet Scheitelpunkte, wobei für gewöhnlich Vorgänge wie die Transformation, das Skinning und die Beleuchtung ausgeführt werden. Vertex-Shader generieren die gleiche Anzahl an Scheitelpunkten, die sie als Eingabe verwenden.  
   
- Im Fenster „Pipelinestufen“ wird die Ausgabe „Vertex-Shader“ als ein Drahtmodell-Rasterbild veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Vertex-Shader** in der **Grafikpipelinestufen** Windows, um die verarbeiteten Scheitelpunkte im Bild-Editor anzuzeigen.  
+ Im Fenster „Pipelinestufen“ wird die Ausgabe „Vertex-Shader“ als ein Drahtmodell-Rasterbild veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Vertex-Shader** in die **Grafikpipelinestufen** Windows, um die verarbeiteten Scheitelpunkte im Bild-Editor anzuzeigen.  
   
 > [!NOTE]
->  Wenn die `POSITION` oder `SV_POSITION` Semantik sind nicht in der Vertex-Shader-Ausgabe vorhanden, dann wird nichts angezeigt, der **Vertex-Shader** Phase.  
+>  Wenn die `POSITION` oder `SV_POSITION` Semantik sind nicht in der Vertex-Shader-Ausgabe vorhanden, und klicken Sie dann "nothing" wird angezeigt, der **Vertex-Shader** Phase.  
   
  **Hull-Shader** (Direct3D 11 und Direct3D 12 nur)  
  Die Hull-Shader-Stufe verarbeitet Kontrollpunkte, die eine Oberfläche mit geringer Ordnung wie eine Line, ein Dreieck oder ein Quadrupel definieren. Als Ausgabe werden ein Geometriepatch mit höherer Ordnung und Patchkonstanten generiert, die an die Mosaikphase einer festen Funktion weitergegeben werden.  
@@ -94,14 +94,14 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  **Geometrie-Shader**  
  Die Geometrie-Shader-Stufe verarbeitet gesamte Primitive (Punkte, Linien oder Dreiecke) zusammen mit optionalen Vertexdaten für direkt benachbarte Primitive. Im Gegensatz zu Vertex-Shadern können Geometrie-Shader mehr oder weniger Primitive generieren, als sie als Eingabe verwenden.  
   
- Im Fenster „Pipelinestufen“ wird die Geometrie-Shader-Ausgabe als ein Drahtmodell-Rasterbild veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Geometryshader** in der **Grafikpipelinestufen** Fenster aus, um die verarbeiteten primitive im Bild-Editor anzuzeigen.  
+ Im Fenster „Pipelinestufen“ wird die Geometrie-Shader-Ausgabe als ein Drahtmodell-Rasterbild veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Geometrie-Shader** in die **Grafikpipelinestufen** Fenster aus, um die verarbeiteten primitive im Bild-Editor anzuzeigen.  
   
- **Stream-Ausgabestufe**  
+ **Stream-Ausgabeschritt**  
  In der Stream-Ausgabestufe können transformierte Primitive vor der Rasterung und dem Schreiben in den Arbeitsspeicher abgefangen werden. Von dort aus können die Daten erneut als Eingabe in den Kreislauf zu den vorherigen Stufen der Grafikpipeline gelangen oder durch die CPU eingelesen werden.  
   
  Die Stream-Ausgabestufe wird im Fenster „Pipelinestufen“ nicht veranschaulicht.  
   
- **Rasterizers**  
+ **Stufe des Rasterizers**  
  Bei der Stufe des Rasterizers handelt es sich um eine feste (nicht programmierbare) Funktionshardwareeinheit, die durch Ausführung der Abtastlinienkonvertierung Vektorprimitive (Punkte, Linien, Dreiecke) in ein Rasterbild verarbeitet. Während der Rasterung werden Scheitelpunkte in homogene Clipräume umgewandelt und abgeschnitten. In der Ausgabe werden Pixel-Shader zugeordnet, und Pro-Vertex-Attribute werden primitivübergreifend interpoliert und für den Pixel-Shader zur Verfügung gestellt.  
   
  Die Stufe des Rasterizers wird im Fenster „Pipelinestufen“ nicht veranschaulicht.  
@@ -109,15 +109,15 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  **Pixel-Shader**  
  Die Pixel-Shader-Stufe verarbeitet gerasterte Primitive zusammen mit interpolierten Vertexdaten zum Genieren von Pro-Pixel-Werten wie Farbe und Tiefe.  
   
- Im Fenster „Pipelinestufen“ wird die Pixel-Shader-Ausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Pixel-Shader** in der **Grafikpipelinestufen** Fenster aus, um die verarbeiteten primitive im Bild-Editor anzuzeigen.  
+ Im Fenster „Pipelinestufen“ wird die Pixel-Shader-Ausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Um einen genaueren Anzeigen des Ergebnisses wählen **Pixel-Shader** in die **Grafikpipelinestufen** Fenster aus, um die verarbeiteten primitive im Bild-Editor anzuzeigen.  
   
- **Ausgabemerge**  
+ **Ausgabezusammenführung**  
  In der Ausgabemergestufe werden die Auswirkung der neu gerenderten Pixel zusammen mit den vorhandenen Inhalten der entsprechenden Puffer (Farbe, Tiefe und Schablone) kombiniert, um neue Werte in diesen Puffern zu generieren.  
   
- Im Fenster „Pipelinestufen“ wird die Ausgabemergeausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Wählen Sie zum genaueren Anzeigen der Ergebnisse in Anspruch nehmen, **Ausgabemerge** in der **Grafikpipelinestufen** Fenster aus, um den zusammengeführten Framepuffer anzuzeigen.  
+ Im Fenster „Pipelinestufen“ wird die Ausgabemergeausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Genauere Betrachtung der Ergebnisse wählen Sie zum **Ausgabemerge** in die **Grafikpipelinestufen** Fenster aus, um den zusammengeführten Framepuffer anzuzeigen.  
   
 ### <a name="vertex-and-geometry-shader-preview"></a>Vertex- und Geometrie-Shader-Vorschau  
- Beim Auswählen der Vertex oder Geometrie-Shader-Stufe in der **Pipelinestufen** Fenster sehen Sie die Eingaben und Ausgaben der Shader im Bereich unten.  Hier finden Sie Details über die Liste der Scheitelpunkte, Shader, nachdem sie die Eingabe-Assembler-Stufe assembliert wurden.  
+ Beim Auswählen der Vertex oder einer Geometrie-Shader-Stufe in der **Pipelinestufen** Fenster sehen Sie die Eingaben und Ausgaben aus dem Shader im unteren Bereich.  Hier finden Sie Details zu der Liste der Scheitelpunkte angezeigt, die Shader, nachdem sie der Eingabe-Assembler-Stufe assembliert wurden.  
 
  ![Anzeige des Vertexshader-Phaseneingabepuffers ](media/gfx_diag_vertex_shader_inbuffers.png)  
   

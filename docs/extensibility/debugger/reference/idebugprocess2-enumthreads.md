@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads | Microsoft Docs
+title: IDebugProcess2::EnumThreads | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 786a3b4b5988b66e1fccc624154eeef67285ec84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c916e8b176444a8af81cb874c394e9eb832a01b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939708"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
-Ruft eine Liste aller Threads im Prozess ausgeführt.  
+Ruft eine Liste aller Threads im Prozess ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,15 +41,15 @@ int EnumThreads(
   
 #### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Gibt eine [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) -Objekt, das eine Liste aller Threads in alle Programme im Prozess enthält.  
+ [out] Gibt eine [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) -Objekt, das eine Liste aller Threads in allen Programmen im Prozess enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode zählt die Threads in jedem Programm ausgeführt wird und Sie dann in eine Prozessansicht der Threads. Ein einzelner Thread möglicherweise in mehreren Programmen ausgeführt; Diese Methode listet dieser Thread nur einmal aus.  
+ Diese Methode listet die Threads, die in jedem Programm ausgeführt wird und Sie dann in eine Prozessansicht der Threads. Ein einzelner Thread kann in mehrere Programme ausgeführt; Diese Methode listet dieser Thread nur einmal auf.  
   
- Diese Methode wird eine Liste von Prozessthreads ohne Duplikate. Zum Auflisten von Threads in einem bestimmten Programm ausgeführt wird, verwenden Sie andernfalls die [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) Methode.  
+ Diese Methode stellt eine Liste der Threads des Prozesses, ohne Duplikate. Verwenden Sie zum Auflisten von Threads in einem bestimmten Programm ausgeführt wird, andernfalls die [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

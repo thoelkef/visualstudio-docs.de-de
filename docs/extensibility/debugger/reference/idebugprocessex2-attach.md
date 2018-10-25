@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Microsoft Docs
+title: IDebugProcessEx2::Attach | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c19f5f3c8beedf4a7de5dc5631ed1d795a125d56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0432fe2861b10b4dedd2151033bf61665465f3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937212"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Diese Methode informiert dem Prozess, dass eine Sitzung jetzt den Prozess debuggen.  
+Diese Methode informiert dem Prozess, dass eine Sitzung jetzt Debuggen des Prozesses ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int Attach(
   
 #### <a name="parameters"></a>Parameter  
  `pSession`  
- [in] Ein Wert, der die Sitzung, Anhängen an diesem Prozess eindeutig identifiziert.  
+ [in] Ein Wert, der die Sitzung, Anfügen an diesen Prozess eindeutig identifiziert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig von der Sitzung Debug-Manager für diesen Prozess; anfügen keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
+ Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig den Anfügen an diesen Prozess; sitzungsbasierter Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

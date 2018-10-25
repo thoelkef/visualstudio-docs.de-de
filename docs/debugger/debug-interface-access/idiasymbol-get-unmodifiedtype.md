@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unmodifiedtype | Microsoft Docs'
+title: 'Idiasymbol:: Get_unmodifiedtype | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a07c85bf53d330874eca9e8e0eec37bed8dde9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935749"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-Ruft den ursprünglichen Typ für dieses Symbol ab. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf einen Typ festgelegt ist.  
+Ruft den ursprünglichen Typ für dieses Symbol ab. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf einen Typ festgelegt ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,16 +34,16 @@ HRESULT get_unmodifiedType(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das den ursprünglichen Typ dieses Symbols darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das den ursprünglichen Typ, der dieses Symbol darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Der aktuelle Typ ist eine Änderung des ursprünglichen zurückgegebenen Typs. Der ursprüngliche Typ für ein Symbol kann zuerst Abrufen des Typs des Symbols, und klicken Sie dann befragen zurückgegebenen Typ für den ursprünglichen Typ ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über einen geänderten Typ des ursprünglichen Typs.  
+ Der aktuelle Typ ist eine Änderung des ursprünglichen Typs zurückgegeben. Der ursprüngliche Typ für ein Symbol kann zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den ursprünglichen Typ ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über einen geänderten Typ, der den ursprünglichen Typ.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

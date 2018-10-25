@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Microsoft Docs
+title: IDebugExpressionEvaluator2::GetService | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfde812730a5f9d2fbad3144cf4298472ec2f8c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa07c11f6d7bc0cbbac2f55158012d7ce78a0e1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936691"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Ruft ein Dienstobjekt unter Berücksichtigung den eindeutigen Bezeichner ab.  
@@ -42,16 +42,16 @@ int GetService (
   
 #### <a name="parameters"></a>Parameter  
  `uid`  
- [in] Eindeutiger Bezeichner des abzurufenden Diensts.  
+ [in] Eindeutiger Bezeichner des abzurufenden Dienstes.  
   
  `ppService`  
  [out] Gibt ein Objekt, das den Dienst darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Dies kann durch einen Drittanbieter-ausdrucksauswertung zum Abrufen von Diensten aus einem anderen ausdrucksauswertung genutzt werden. Diese Methode kann z. B. verwendet werden, zum Abrufen der Schnittstelle für den schnellansichtsdienst aus der Standard-ausdrucksauswertung. Drittanbieter-ausdruckauswertung ist es unwahrscheinlich, dass diese Schnittstelle implementieren müssen.  
+ Dies kann von einem Drittanbieter-ausdrucksauswertung zum Abrufen von Diensten aus einem anderen ausdrucksauswertung genutzt werden. Beispielsweise kann diese Methode zum Abrufen der Schnittstelle für den schnellansichtsdienst aus der Standard-ausdrucksauswertung verwendet werden. Drittanbieter--ausdruckauswertung ist es unwahrscheinlich, dass diese Schnittstelle implementieren müssen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

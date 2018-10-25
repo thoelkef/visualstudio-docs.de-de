@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35cae638c5838d098632ff244545acc749400a24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5abb716bd562b6bd82b430f6b94251153a9abbe3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934703"
 ---
 # <a name="best-practices-and-examples-sal"></a>Empfohlene Vorgehensweisen und Beispiele (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hier sind einige Möglichkeiten, um die am häufigsten aus der Source Code Annotation Language (SAL) zu erhalten und einige der häufigsten Probleme zu vermeiden.  
   
-## <a name="in"></a>_In\_  
+## <a name="in"></a>\_In\_
  Wenn die Funktion zum Schreiben in das Element soll, verwenden Sie `_Inout_` anstelle von `_In_`. Dies ist besonders wichtig, im Fall von automatischen Konvertieren von älteren Makros zu SAL. Vor dem SAL, zahlreiche Programmierer verwendeten Makros als Kommentare, Makros, die mit dem Namen wurden `IN`, `OUT`, `IN_OUT`, oder Varianten dieser Namen. Jedoch wir empfehlen, diese Makros in SAL zu konvertieren, dringend auch darauf achten, wenn Sie sie konvertieren, da der Code möglicherweise geändert wurden, da der ursprüngliche Prototyp geschrieben wurde und das alte-Makro möglicherweise nicht mehr widerspiegeln, was der Code bewirkt. Seien Sie besonders die `OPTIONAL` Makro kommentieren, da sie häufig falsch platziert wird – z. B. auf die Seite von einem Komma.  
   
 ```cpp  
@@ -50,8 +50,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>_opt\_  
- Wenn der Aufrufer nicht zulässig ist, ein null-Zeiger übergeben, verwenden Sie `_In_` oder `_Out_` anstelle von `_In_opt_` oder `_Out_opt_`. Dies gilt auch für eine Funktion, die überprüft die Parameter und gibt einen Fehler zurück, wenn er NULL ist, wenn es nicht sein sollten. Zwar müssen eine Funktion als Parameter für den unerwarteten NULL zu prüfen und ordnungsgemäß zurückzugeben defensive Programmierung bewährt, dies bedeutet nicht, dass die parameteranmerkung ein optionaler Typ aufweisen kann (_*Xxx*_opt\_).  
+## <a name="opt"></a>\_opt\_  
+ Wenn der Aufrufer nicht zulässig ist, ein null-Zeiger übergeben, verwenden Sie `_In_` oder `_Out_` anstelle von `_In_opt_` oder `_Out_opt_`. Dies gilt auch für eine Funktion, die überprüft die Parameter und gibt einen Fehler zurück, wenn er NULL ist, wenn es nicht sein sollten. Zwar müssen eine Funktion als Parameter für den unerwarteten NULL zu prüfen und ordnungsgemäß zurückzugeben defensive Programmierung bewährt, dies bedeutet nicht, dass die parameteranmerkung ein optionaler Typ aufweisen kann (\_*Xxx*_opt\_).  
   
 ```cpp  
   
@@ -69,10 +69,10 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>_Pre_defensive\_ und _Post_defensive\_  
+## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_ und \_Post_defensive\_  
  Wenn eine Funktion eine Vertrauensgrenze angezeigt wird, es wird empfohlen, die Sie verwenden die `_Pre_defensive_` Anmerkung.  Der Modifizierer "defensive" ändert bestimmte Anmerkungen, die zum Zeitpunkt des Aufrufs angeben, die Schnittstelle sollte unbedingt aktiviert sein, aber in den implementierungstext sollten davon ausgehen, dass falsche Parameter übergeben werden können. In diesem Fall `_In_ _Pre_defensive_` wird an eine Vertrauensgrenze, um anzugeben, dass obwohl ein Aufrufer eine Fehlermeldung erhalten wird, wenn versucht wird, übergeben Sie NULL, Hauptteil der Funktion analysiert werden sollen, als ob der Parameter NULL ist, und jeder Versuch, den Zeiger, ohne zuerst aufheben verweisen möglicherweise bevorzugt Überprüfen es auf NULL werden gekennzeichnet.  Ein `_Post_defensive_` -Anmerkung ist ebenfalls verfügbar, für die Verwendung in Rückrufen, in dem vertrauenswürdige Partei wird davon ausgegangen, dass der Aufrufer sein und der nicht vertrauenswürdige Code wird der aufgerufenen Code.  
   
-## <a name="outwrites"></a>_Out_writes\_  
+## <a name="outwrites"></a>\_Out_writes\_  
  Das folgende Beispiel zeigt eine allgemeine unsachgemäße Verwendung des `_Out_writes_`.  
   
 ```cpp  
@@ -106,7 +106,7 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>_Out\_ PSTR  
+## <a name="out-pstr"></a>\_Out\_ PSTR  
  Die Verwendung von `_Out_ PSTR` ist fast immer falsch. Dies wird als einen Ausgabeparameter, der auf einen Zeichenpuffer zeigt interpretiert, und NULL-terminiert werden kann.  
   
 ```cpp  
@@ -121,7 +121,7 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
  Eine Anmerkung wie `_In_ PCSTR` ist allgemeine und nützlich. Er zeigt auf eine Eingabezeichenfolge, die NULL-Terminierung verfügt, da die Vorbedingung der `_In_` ermöglicht die Erkennung einer NULL-terminierte Zeichenfolge.  
   
-## <a name="in-wchar-p"></a>_In\_ WCHAR * p  
+## <a name="in-wchar-p"></a>\_In\_ WCHAR * p  
  `_In_ WCHAR* p` besagt, dass es ein Eingabe Zeiger ist `p` , um ein Zeichen zeigt. Dies ist jedoch in den meisten Fällen wahrscheinlich nicht der Spezifikation, die vorgesehen ist. Stattdessen wahrscheinlich beabsichtigt ist die Angabe einer NULL endendes Array vorhanden ist. Verwenden Sie zu diesem Zweck `_In_ PWSTR`.  
   
 ```cpp  
@@ -152,7 +152,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>_Out_range\_  
+## <a name="outrange"></a>\_Out_range\_  
  Wenn der Parameter ein Zeiger ist und Sie möchten, das Spektrum der Wert der Elements auszudrücken, die für die Verwendung durch die Zeiger gezeigt wird `_Deref_out_range_` anstelle von `_Out_range_`. Im folgenden Beispiel, das Spektrum * PcbFilled ausgedrückt wird, nicht PcbFilled.  
   
 ```cpp  
@@ -175,7 +175,7 @@ void Func2(
   
  `_Deref_out_range_(0, cbSize)` ist nicht zwingend erforderlich, für einige Tools, da es von abgeleitet werden, kann `_Out_writes_to_(cbSize,*pcbFilled)`, wird aber aus Gründen der Vollständigkeit hier angezeigt.  
   
-## <a name="wrong-context-in-when"></a>Falscher Kontext in _benachrichtigungszeitpunkt\_  
+## <a name="wrong-context-in-when"></a>Falscher Kontext in \_bei\_  
  Ein häufiger Fehler ist, nach dem zustandsauswertung für Vorbedingungen zu verwenden. Im folgenden Beispiel `_Requires_lock_held_` ist eine Vorbedingung.  
   
 ```cpp  
@@ -192,7 +192,7 @@ int Func2(_In_ MyData *p, int flag);
   
  Der Ausdruck `result` bezieht sich auf ein nach dem Status-Wert, der vor Status nicht verfügbar ist.  
   
-## <a name="true-in-success"></a>"True" in _Success\_  
+## <a name="true-in-success"></a>In "true" \_Erfolg\_  
  Wenn die Funktion erfolgreich ist, wenn der Rückgabewert ungleich NULL ist, verwenden Sie `return != 0` als erfolgsbedingung ein anstelle von `return == TRUE`. Nonzero bedeutet nicht unbedingt Übereinstimmung mit den tatsächlichen Wert, der der Compiler für bereitstellt `TRUE`. Der Parameter für `_Success_` ist ein Ausdruck, und die folgenden Ausdrücke werden als gleichwertig ausgewertet: `return != 0`, `return != false`, `return != FALSE`, und `return` ohne Parameter oder vergleichen.  
   
 ```cpp  

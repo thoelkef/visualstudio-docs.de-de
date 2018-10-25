@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942009"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>So binden Sie eine andere Textur an ein Texturregister oder bearbeiten andere Materialparameter  
   
-1.  Wählen Sie im Modus **Auswählen** einen leeren Bereich auf der Entwurfsoberfläche aus. Dadurch werden im Fenster **Eigenschaften** die globalen Shader-Eigenschaften angezeigt.  
+1. Wählen Sie im Modus **Auswählen** einen leeren Bereich auf der Entwurfsoberfläche aus. Dadurch werden im Fenster **Eigenschaften** die globalen Shader-Eigenschaften angezeigt.  
   
-2.  Geben Sie im Fenster **Eigenschaften** neue Werte für die Textur- und Parametereigenschaften an, die Sie ändern möchten.  
+2. Geben Sie im Fenster **Eigenschaften** neue Werte für die Textur- und Parametereigenschaften an, die Sie ändern möchten.  
   
- Die folgenden Shader-Parameter können Sie ändern:  
+   Die folgenden Shader-Parameter können Sie ändern:  
   
 |Parameter|Eigenschaften|  
 |---------------|----------------|  

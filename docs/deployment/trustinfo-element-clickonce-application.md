@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941223"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
@@ -142,21 +142,21 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Dies ist optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.  
   
--   `Level`  
+- `Level`  
   
-     Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Dabei sind folgende Werte möglich:  
+   Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Dabei sind folgende Werte möglich:  
   
-     `asInvoker`, es werden keine zusätzlichen Berechtigungsstufen angefordert. Für diese Stufe sind keine zusätzlichen Eingaben für die Vertrauensstellung erforderlich.  
+   `asInvoker`, es werden keine zusätzlichen Berechtigungsstufen angefordert. Für diese Stufe sind keine zusätzlichen Eingaben für die Vertrauensstellung erforderlich.  
   
-     `highestAvailable`, es werden die höchsten für den übergeordneten Prozess verfügbaren Berechtigungen angefordert.  
+   `highestAvailable`, es werden die höchsten für den übergeordneten Prozess verfügbaren Berechtigungen angefordert.  
   
-     `requireAdministrator`, es werden vollständige Administratorberechtigungen angefordert.  
+   `requireAdministrator`, es werden vollständige Administratorberechtigungen angefordert.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen können nur mit dem Wert `asInvoker`installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen können nur mit dem Wert `asInvoker`installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
+   Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_sourcecompression | Microsoft Docs'
+title: 'Idiainjectedsource:: Get_sourcecompression | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a56d1eac34c5076be8dbcd7b4e38363a12fe392f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46ad24a6bf8e4efbcb0c1a0009bb8210247ccb5e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941359"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-Ruft ab den Indikator für die Quelle Komprimierung verwendet.  
+Ruft den Indikator verwendeten Komprimierungstyp für die Datenquelle ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_sourceCompression (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Indikator für die Quelle Komprimierung verwendet. Der Wert 0 (null) gibt an, dass keine Komprimierung der Datenquelle verwendet wurde.  
+ [out] Gibt den Indikator verwendeten Komprimierungstyp für die Quelle zurück. Der Wert 0 (null) gibt an, dass keine Komprimierung der Datenquelle verwendet wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Wert, der von dieser Methode zurückgegebene bezieht sich auf der Compiler verwendet. Beispielsweise kann ein Compiler Run-Length-Codierung oder Huffman-Stil Komprimierung verwenden.  
+ Der von dieser Methode zurückgegebene Wert ist spezifisch für den Compiler verwendet. Beispielsweise kann ein Compiler Run-Length-Codierung oder Huffman-Stil-Komprimierung verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
