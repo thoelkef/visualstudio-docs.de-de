@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issafebuffers | Microsoft Docs'
+title: 'Idiasymbol:: Get_issafebuffers | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 515e108bd684186e34479391816e9ca0b159f1c1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9ae68e11669b336d26bb34704861a1a6fe30287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931089"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Ruft ein Flag, das angibt, ob die Präprozessordirektive für einem sicheren Puffer verwendet wird. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) festgelegt ist, um `SymTagFunction`.  
+Ruft ein Flag, das angibt, ob die Präprozessordirektive für einen sicheren Puffer verwendet wird. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_isSafeBuffers(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn Zeiger eine Präprozessordirektive für einen sicheren Puffer verwendet, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn der Zeiger eine Präprozessordirektive für einen sicheren Puffer verwendet, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
   

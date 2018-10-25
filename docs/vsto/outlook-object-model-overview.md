@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941190"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application>-Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem>-Objekt eine E-Mail dar.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008267"
 ### <a name="application-object"></a>Application-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt die Outlook-Anwendung dar und ist im Outlook-Objektmodell das Objekt der obersten Ebene. Zu den wichtigsten Membern dieses Objekts gehören:  
   
--   Die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) Methode, die Sie zum Erstellen eines neuen Elements wie einer e-Mail-Nachricht, eine Aufgabe oder ein Termin verwenden können.  
+- Die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) -Methode, die Sie zum Erstellen eines neuen Elements wie einer E-Mail, einer Aufgabe oder eines Termins verwenden können.  
   
--   Die <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> -Eigenschaft, die Sie für den Zugriff auf die Fenster verwenden können, in denen der Inhalt eines Ordners in der Outlook-Benutzeroberfläche (UI) angezeigt wird.  
+- Die <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> -Eigenschaft, die Sie für den Zugriff auf die Fenster verwenden können, in denen der Inhalt eines Ordners in der Outlook-Benutzeroberfläche (UI) angezeigt wird.  
   
--   Die <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> -Eigenschaft, die Sie für den Zugriff auf die Fenster verwenden können, in denen der Inhalt eines einzelnen Elements wie einer E-Mail oder einer Besprechungsanfrage angezeigt wird.  
+- Die <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> -Eigenschaft, die Sie für den Zugriff auf die Fenster verwenden können, in denen der Inhalt eines einzelnen Elements wie einer E-Mail oder einer Besprechungsanfrage angezeigt wird.  
   
- Um eine Instanz von der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, verwenden Sie das Feld "Anwendung" von der `ThisAddIn` Klasse im Projekt. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
+  Um eine Instanz von der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, verwenden Sie das Feld "Anwendung" von der `ThisAddIn` Klasse im Projekt. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Damit Sicherheitswarnungen vermieden werden, wenn Sie die Eigenschaften und Methoden, die von der Outlook-Objektmodellschutz blockiert sind verwenden können, erhalten Sie Outlook-Objekte aus dem Feld Anwendung, der die `ThisAddIn` Klasse. Weitere Informationen finden Sie unter [besondere sicherheitsüberlegungen für Office-Projektmappen](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -88,12 +88,12 @@ ms.locfileid: "40008267"
   
 -   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um auf alle <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte in Outlook zuzugreifen.  
   
--   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> -Methode des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Inspector> abzurufen, der gerade den Fokus besitzt.  
+-   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A>-Methode des <xref:Microsoft.Office.Interop.Outlook.Application>-Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Inspector> abzurufen, der gerade den Fokus besitzt.  
   
 -   Verwenden Sie die `GetInspector`-Methode eines bestimmten Elements, z. B. <xref:Microsoft.Office.Interop.Outlook.MailItem> oder <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, um den dem Element zugeordneten Inspektor abzurufen.  
   
 ### <a name="folder-object"></a>Objekt "Ordner"  
- Das <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekt stellt einen Ordner dar, der E-Mails, Kontakte, Aufgaben und andere Elemente enthält. Outlook stellt 16 <xref:Microsoft.Office.Interop.Outlook.Folder>-Standardobjekte bereit.  
+ Das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt stellt einen Ordner dar, der E-Mails, Kontakte, Aufgaben und andere Elemente enthält. Outlook stellt 16 <xref:Microsoft.Office.Interop.Outlook.Folder>-Standardobjekte bereit.  
   
  Die <xref:Microsoft.Office.Interop.Outlook.Folder>-Standardobjekte werden durch die Werte der <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders>-Enumeration definiert. Ein auf ein Objekt angewendeter  
   
@@ -114,7 +114,7 @@ ms.locfileid: "40008267"
 ### <a name="taskitem-object"></a>TaskItem-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.TaskItem> -Objekt stellt eine Aufgabe dar, die innerhalb eines bestimmten Zeitrahmens ausgeführt werden muss. <xref:Microsoft.Office.Interop.Outlook.TaskItem> -Objekte befinden sich im Ordner **Aufgaben** .  
   
- Verwenden Sie zum Erstellen einer Aufgabe die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) -Methode der der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> für den Parameter.  
+ Verwenden Sie zum Erstellen einer Aufgabe die [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) -Methode des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, und übergeben Sie für den Parameter den Wert <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> .  
   
 ### <a name="contactitem-object"></a>ContactItem-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.ContactItem>-Objekt stellt einen Kontakt im Ordner **Kontakte** dar. <xref:Microsoft.Office.Interop.Outlook.ContactItem> -Objekte enthalten eine Reihe von Kontaktinformationen für die Personen, die sie darstellen, z. B. Anschriften, E-Mail-Adressen und Telefonnummern.  

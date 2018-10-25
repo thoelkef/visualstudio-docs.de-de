@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933130"
 ---
 # <a name="editor-factories"></a>Editorfactorys
 Eine Editor-Factory-Editor-Objekte erstellt und speichert sie in einen Fensterrahmen, der als eine physische Darstellung bezeichnet. Erstellt die Dokumentdaten und dokumentenansichtsobjekten, die zum Erstellen von Editoren und Designer erforderlich sind. Eine Editor-Factory ist erforderlich, um die Visual Studio-Kern-Editor und einem standard-Editor zu erstellen. Ein benutzerdefinierter Editor kann optional auch mit einer Editor-Factory erstellt werden.  
@@ -46,13 +46,13 @@ Eine Editor-Factory-Editor-Objekte erstellt und speichert sie in einen Fensterra
 ## <a name="the-editor-factory-registration-process"></a>Die Editor-Factory-Registrierung  
  Der folgende Prozess tritt beim Laden von Visual Studio als Editors mithilfe der Editorfactory:  
   
-1.  Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt Systemaufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt Systemaufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Diese Methode gibt die Editorfactory zurück. Visual Studio-Verzögerungen Laden der Paketdatei des Editors, jedoch erst ein Projektsystem tatsächlich Editor benötigt.  
+2. Diese Methode gibt die Editorfactory zurück. Visual Studio-Verzögerungen Laden der Paketdatei des Editors, jedoch erst ein Projektsystem tatsächlich Editor benötigt.  
   
-3.  Wenn ein Projektsystem Editor benötigt, ruft Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, eine spezifische Methode, die sowohl das Dokument als auch die Dokumentenansicht Daten zurückgibt.  
+3. Wenn ein Projektsystem Editor benötigt, ruft Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, eine spezifische Methode, die sowohl das Dokument als auch die Dokumentenansicht Daten zurückgibt.  
   
-4.  Wenn Aufrufe von Visual Studio-Editor-Factory mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> sowohl ein dokumentdatenobjekt und ein dokumentenansichtsobjekt zurückgeben, Visual Studio dann erstellt das Dokumentfenster, das dokumentenansichtsobjekt darin platziert und nimmt einen Eintrag in das Dokument ausgeführt Tabelle (RDT) für das dokumentendatenobjekt.  
+4. Wenn Aufrufe von Visual Studio-Editor-Factory mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> sowohl ein dokumentdatenobjekt und ein dokumentenansichtsobjekt zurückgeben, Visual Studio dann erstellt das Dokumentfenster, das dokumentenansichtsobjekt darin platziert und nimmt einen Eintrag in das Dokument ausgeführt Tabelle (RDT) für das dokumentendatenobjekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

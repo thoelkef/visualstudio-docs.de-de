@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951092"
 ---
 # <a name="help-viewer-administrator-guide"></a>Administratorhandbuch für Help Viewer
 
@@ -50,7 +50,6 @@ Anforderungen:
 -   Clientcomputer müssen Zugriff auf das Internet haben.
 
 -   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.
-
 
 Zu beachten:
 
@@ -93,17 +92,17 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
 
 #### <a name="to-uninstall-local-help"></a>So deinstallieren Sie die lokale Hilfe
 
-1.  Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.
+1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.
 
-2.  Navigieren Sie zu den Visual Studio-Dokumenten.
+2. Navigieren Sie zu den Visual Studio-Dokumenten.
 
-3.  Klicken Sie neben den einzelnen Unterelementen auf **Entfernen**.
+3. Klicken Sie neben den einzelnen Unterelementen auf **Entfernen**.
 
-4.  Klicken Sie zum Deinstallieren auf **Aktualisieren**.
+4. Klicken Sie zum Deinstallieren auf **Aktualisieren**.
 
-5.  Navigieren Sie zu *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*, und überprüfen Sie, ob der Ordner nur die Datei *catalogType.xml* enthält.
+5. Navigieren Sie zu *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*, und überprüfen Sie, ob der Ordner nur die Datei *catalogType.xml* enthält.
 
- Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.
+   Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.
 
 #### <a name="to-download-the-content"></a>So laden Sie die Inhalte herunter
 
@@ -112,7 +111,6 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
 2.  Navigieren Sie unter **Empfohlene Dokumentation** oder **Verfügbare Dokumentation** zu den Dokumentationen, die Sie herunterladen möchten, und klicken Sie auf **Hinzufügen**.
 
 3.  Klicken Sie auf **Aktualisieren**.
-
 
 Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.
 

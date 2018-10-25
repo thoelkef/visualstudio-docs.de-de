@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941996"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Bearbeiten von UML-Sequenzdiagrammen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aktualisieren einer Interaktion und des Layouts  
  Bei der Aktualisierung einer Interaktion beenden Sie den Vorgang immer durch Aktualisieren des Layouts mit einer der folgenden Methoden:  
   
--   `ISequenceDiagram.UpdateShapePositions()` Passt die Positionen von kürzlich eingefügten oder verschobenen Formen und der benachbarten Formen an.  
+- `ISequenceDiagram.UpdateShapePositions()` Passt die Positionen von kürzlich eingefügten oder verschobenen Formen und der benachbarten Formen an.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` zeichnet das gesamte Diagramm neu. Sie können den Parameter verwenden, um die Neupositionierung von Lebenslinien, Meldungen oder beides anzugeben.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` zeichnet das gesamte Diagramm neu. Sie können den Parameter verwenden, um die Neupositionierung von Lebenslinien, Meldungen oder beides anzugeben.  
   
- Dies ist besonders wichtig, wenn Sie neue Elemente einfügen oder vorhandene Elemente verschieben. Sie befinden sich dann erst an den korrekten Positionen im Diagramm, wenn Sie eine dieser Operationen ausgeführt haben. Sie müssen nur eine dieser Operationen am Ende einer Reihe von Änderungen aufrufen.  
+  Dies ist besonders wichtig, wenn Sie neue Elemente einfügen oder vorhandene Elemente verschieben. Sie befinden sich dann erst an den korrekten Positionen im Diagramm, wenn Sie eine dieser Operationen ausgeführt haben. Sie müssen nur eine dieser Operationen am Ende einer Reihe von Änderungen aufrufen.  
   
- Um den Benutzer nicht zu vewirren, der nach Ihrem Befehl eine Aktion zum Rückgängig machen ausführt, verwenden Sie eine `ILinkedUndoTransaction`, um die Änderungen einzuschließen, und die endgültige `Layout()`- oder `UpdateShapePositions()`-Operation. Zum Beispiel:  
+  Um den Benutzer nicht zu vewirren, der nach Ihrem Befehl eine Aktion zum Rückgängig machen ausführt, verwenden Sie eine `ILinkedUndoTransaction`, um die Änderungen einzuschließen, und die endgültige `Layout()`- oder `UpdateShapePositions()`-Operation. Zum Beispiel:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

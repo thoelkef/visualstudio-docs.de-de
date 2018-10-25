@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f178c2a129ca0c9817dfa3d8545236705739e5db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938239"
 ---
 # <a name="design-user-interfaces"></a>Entwerfen von Benutzeroberflächen
 
 Zum Entwurf und zur Erstellung der Benutzeroberfläche für die Anwendung stehen Ihnen in Visual Studio eine Vielzahl von Tools zur Verfügung.
 
 |Themenbereich|Siehe|
-|-------------------------|---------|
+| - |---------|
 | Die Funktionen für XAML-Designer in Visual Studio und Blend für Visual Studio | [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md) |
 | Entwerfen einer beliebigen XAML-basierten Anwendung mit Visual Studio|[Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Entwerfen einer beliebigen XAML-basierten Anwendung mit Blend für Visual Studio | [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |

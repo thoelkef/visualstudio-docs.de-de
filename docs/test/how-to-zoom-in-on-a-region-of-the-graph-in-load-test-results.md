@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932350"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
 
@@ -94,15 +94,15 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>So zoomen Sie durch Klicken und Ziehen zu einem Diagrammbereich
 
-1.  Klicken Sie auf ein Diagramm an einem Ende des Zoombereichs.
+1. Klicken Sie auf ein Diagramm an einem Ende des Zoombereichs.
 
-2.  Ziehen Sie den Mauszeiger ans andere Ende des Zoombereichs.
+2. Ziehen Sie den Mauszeiger ans andere Ende des Zoombereichs.
 
-3.  Lassen Sie die Maustaste los.
+3. Lassen Sie die Maustaste los.
 
-     Dadurch wird der Bereich vergrößert, den Sie durch Klicken und Ziehen definiert haben.
+    Dadurch wird der Bereich vergrößert, den Sie durch Klicken und Ziehen definiert haben.
 
- Im folgenden Verfahren wird beschrieben, wie schnell eine Ansicht verkleinert wird, ohne dass die Enden der Zoomleiste angepasst werden müssen.
+   Im folgenden Verfahren wird beschrieben, wie schnell eine Ansicht verkleinert wird, ohne dass die Enden der Zoomleiste angepasst werden müssen.
 
 ### <a name="to-zoom-out"></a>So verkleinern Sie die Ansicht
 

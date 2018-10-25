@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941710"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Befehle und Menüs, die Interop-Assemblys verwenden
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Eine VSPackage, die Menü-und Symbolleistenbefehle implementiert werden, mithilfe von Interop-Assemblys muss Schritte ausführen:  
   
--   Informieren Sie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) über die unterstützten Befehle und gibt an, ob sie derzeit aktiviert sind.  
+- Informieren Sie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) über die unterstützten Befehle und gibt an, ob sie derzeit aktiviert sind.  
   
--   Beachten Sie die Regeln, (Vertrag) für die Behandlung von Befehlen.  
+- Beachten Sie die Regeln, (Vertrag) für die Behandlung von Befehlen.  
   
--   Befehlsbehandlung explizit implementieren, indem Sie entweder die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle.  
+- Befehlsbehandlung explizit implementieren, indem Sie entweder die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle.  
   
- Im folgenden wird beschrieben, wie Sie diese Aufgaben durchführen.  
+  Im folgenden wird beschrieben, wie Sie diese Aufgaben durchführen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

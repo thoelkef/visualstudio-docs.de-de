@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938603"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafikpipelinestufen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
 ### <a name="links-to-related-graphics-objects"></a>Links zu verwandten Grafikobjekten  
  In einigen Fällen ist ein zusätzlicher Kontext erforderlich, um zu ermitteln, weshalb ein Zeichnen-Befehl mit der Grafikpipeline in bestimmter Art und Weise interagiert. Damit dieser zusätzliche Kontext einfacher gefunden werden kann, stellt das Fenster „Grafikpipelinestufen“ eine Verknüpfung zu mindestens einem Objekt her, das zusätzlichen Kontext bereitstellt, der mit dem, was in der Grafikpipeline vor sich geht, verknüpft ist.  
   
--   In Direct3D 12 ist dieses Objekt für gewöhnlich eine Befehlsliste.  
+- In Direct3D 12 ist dieses Objekt für gewöhnlich eine Befehlsliste.  
   
--   In Direct3D 11 ist dieses Objekt für gewöhnlich der Grafikgerätkontext.  
+- In Direct3D 11 ist dieses Objekt für gewöhnlich der Grafikgerätkontext.  
   
- Diese Links sind Bestandteil der aktuellen Grafikereignissignatur, die sich in der oberen linken Ecke des Fensters „Grafikpipelinestufen“ befindet. Folgen Sie diesen Links, um weitere Details zum Objekt zu untersuchen.  
+  Diese Links sind Bestandteil der aktuellen Grafikereignissignatur, die sich in der oberen linken Ecke des Fensters „Grafikpipelinestufen“ befindet. Folgen Sie diesen Links, um weitere Details zum Objekt zu untersuchen.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Anzeigen und Debuggen des Shader-Codes  
  Sie können mithilfe der Steuerelemente unten von den entsprechenden Stufen im Fenster „Pipelinestufen“ Code für Vertex-, Hull-, Domänen-, Geometrie- und Pixel-Shader überprüfen und debuggen.  

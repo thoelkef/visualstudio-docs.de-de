@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873486"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt
   Sie können Code in einem Visual C#-Projekt in Visual Basic für Applikationen (VBA) Code verfügbar machen, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
@@ -39,56 +39,56 @@ ms.locfileid: "35257250"
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Code in einem Visual C#-Projekt für VBA verfügbar machen.  
   
-1.  Öffnen Sie oder erstellen Sie ein Projekt auf Dokumentebene, die basiert auf einem Word-Dokument, eine Excel-Arbeitsmappe oder ein Excel-Vorlage, die Makros unterstützen und bereits VBA-Code enthält.  
+1. Öffnen Sie oder erstellen Sie ein Projekt auf Dokumentebene, die basiert auf einem Word-Dokument, eine Excel-Arbeitsmappe oder ein Excel-Vorlage, die Makros unterstützen und bereits VBA-Code enthält.  
   
-     Weitere Informationen zu den Dokument-Dateiformaten, die Makros zu unterstützen, finden Sie unter [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
+    Weitere Informationen zu den Dokument-Dateiformaten, die Makros zu unterstützen, finden Sie unter [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
   
-    > [!NOTE]  
-    >  Diese Funktion kann in Word-Vorlagenprojekten nicht verwendet werden.  
+   > [!NOTE]  
+   >  Diese Funktion kann in Word-Vorlagenprojekten nicht verwendet werden.  
   
-2.  Stellen Sie sicher, dass VBA-Code in das Dokument ohne Aufforderung des Benutzers zum Aktivieren von Makros ausgeführt werden darf. Sie können die Vertrauenswürdigkeit für die Ausführung des VBA-Codes angeben, indem Sie den Speicherort des Office-Projekts der Liste der vertrauenswürdigen Speicherorte in den Trust Center-Einstellungen für Word oder Excel hinzufügen.  
+2. Stellen Sie sicher, dass VBA-Code in das Dokument ohne Aufforderung des Benutzers zum Aktivieren von Makros ausgeführt werden darf. Sie können die Vertrauenswürdigkeit für die Ausführung des VBA-Codes angeben, indem Sie den Speicherort des Office-Projekts der Liste der vertrauenswürdigen Speicherorte in den Trust Center-Einstellungen für Word oder Excel hinzufügen.  
   
-3.  Fügen Sie das Element, das für VBA verfügbar machen, um eine öffentliche Klasse in Ihrem Projekt werden sollen, und deklarieren Sie den neuen Member als **öffentliche**.  
+3. Fügen Sie das Element, das für VBA verfügbar machen, um eine öffentliche Klasse in Ihrem Projekt werden sollen, und deklarieren Sie den neuen Member als **öffentliche**.  
   
-4.  Übernehmen Sie das folgende <xref:System.Runtime.InteropServices.ComVisibleAttribute> und <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> Attribute auf die Klasse, die Sie für VBA verfügbar machen. Diese Attribute machen die Klasse für COM sichtbar, generieren aber keine Klassenschnittstelle.  
+4. Übernehmen Sie das folgende <xref:System.Runtime.InteropServices.ComVisibleAttribute> und <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> Attribute auf die Klasse, die Sie für VBA verfügbar machen. Diese Attribute machen die Klasse für COM sichtbar, generieren aber keine Klassenschnittstelle.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    [System.Runtime.InteropServices.ClassInterface(  
-        System.Runtime.InteropServices.ClassInterfaceType.None)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   [System.Runtime.InteropServices.ClassInterface(  
+       System.Runtime.InteropServices.ClassInterfaceType.None)]  
+   ```  
   
-5.  Überschreiben der **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt um eine Instanz der Klasse, die Sie verfügbar machen für VBA zurückzugeben:  
+5. Überschreiben der **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt um eine Instanz der Klasse, die Sie verfügbar machen für VBA zurückzugeben:  
   
-    -   Wenn Sie eine Hostelementklasse für VBA verfügbar machen, überschreiben die **GetAutomationObject** Methode, die für diese Klasse gehört, und die aktuelle Instanz der Klasse zurückzugeben.  
+   - Wenn Sie eine Hostelementklasse für VBA verfügbar machen, überschreiben die **GetAutomationObject** Methode, die für diese Klasse gehört, und die aktuelle Instanz der Klasse zurückzugeben.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return this;  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return this;  
+     }  
+     ```  
   
-    -   Wenn Sie eine Klasse, die kein Hostelement für VBA verfügbar sind, überschreiben die **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt Element, und eine Instanz der Klasse kein Hostelement zurückgeben. Der folgende Code wird beispielsweise davon ausgegangen, dass Sie eine Klasse, die mit dem Namen verfügbar machen `DocumentUtilities` für VBA.  
+   - Wenn Sie eine Klasse, die kein Hostelement für VBA verfügbar sind, überschreiben die **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt Element, und eine Instanz der Klasse kein Hostelement zurückgeben. Der folgende Code wird beispielsweise davon ausgegangen, dass Sie eine Klasse, die mit dem Namen verfügbar machen `DocumentUtilities` für VBA.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return new DocumentUtilities();  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return new DocumentUtilities();  
+     }  
+     ```  
   
      Weitere Informationen zu Hostelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Extrahieren einer Schnittstelle von der Klasse, die Sie für VBA verfügbar machen. In der **Schnittstelle extrahieren** Dialogfeld wählen die öffentlichen Member, die in der Schnittstellendeklaration enthalten sein sollen. Weitere Informationen finden Sie unter [refactoring des Extrahierens Schnittstelle](../ide/reference/extract-interface.md).
+6. Extrahieren einer Schnittstelle von der Klasse, die Sie für VBA verfügbar machen. In der **Schnittstelle extrahieren** Dialogfeld wählen die öffentlichen Member, die in der Schnittstellendeklaration enthalten sein sollen. Weitere Informationen finden Sie unter [refactoring des Extrahierens Schnittstelle](../ide/reference/extract-interface.md).
   
-7.  Hinzufügen der **öffentliche** Schlüsselwort, um die Schnittstellendeklaration.  
+7. Hinzufügen der **öffentliche** Schlüsselwort, um die Schnittstellendeklaration.  
   
-8.  Die Schnittstelle für COM sichtbar zu machen, durch das Hinzufügen der folgenden <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut der Schnittstelle.  
+8. Die Schnittstelle für COM sichtbar zu machen, durch das Hinzufügen der folgenden <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut der Schnittstelle.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   ```  
   
 9. Öffnen Sie das Dokument (für Word) oder die Arbeitsmappe (für Excel) im Designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
