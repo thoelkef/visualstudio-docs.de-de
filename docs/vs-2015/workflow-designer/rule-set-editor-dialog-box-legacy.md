@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942399"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -67,19 +67,19 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
   
  Ausdrücke unterstützen die folgenden Operatoren:  
   
--   Relationale Operatoren: ==, =, !=  
+- Relationale Operatoren: ==, =, !=  
   
--   Vergleichsoperatoren: <, \<=, >, > =  
+- Vergleichsoperatoren: <, \<=, >, > =  
   
--   Arithmetische Operatoren: +, - , *, /, MOD  
+- Arithmetische Operatoren: +, - , *, /, MOD  
   
--   Logische Operatoren: und, & &, OR, &#124; &#124;, NOT,!  
+- Logische Operatoren: und, & &, OR, &#124; &#124;, NOT,!  
   
--   Bitweise Operatoren: &,&#124;  
+- Bitweise Operatoren: &,&#124;  
   
- Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
+  Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
   
- Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Halt-Funktion und Update-Funktion  
  **Then-Aktionen:** und **Else-Aktionen:** Ausdrücke unterstützen **anhalten** und **Update** Funktionen. Verwenden der **anhalten** funktionieren, geben Sie **anhalten** in einer **Then-Aktion:** oder **Else-Aktion:** Textfeld. Die **anhalten** Aktion bewirkt sofort beendet, und die Steuerung an den aufrufenden Code zurückgibt. Sie verwenden die **Update** -Funktion mit vorwärtsverketten.  

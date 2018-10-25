@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938473"
 ---
 # <a name="historical-debugging"></a>Verlaufsbezogenes Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt (das Ergebnis des Inkrementierens von `testInt` x 20). (Gehen wir außerdem davon aus, dass Ihnen der Fehler in `AddInt()`) nicht angezeigt wird, das Ergebnis jedoch tatsächlich 44 beträgt. Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen? Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden. Gehen Sie folgendermaßen vor:  
   
-1.  Stellen Sie unter Extras / Optionen / IntelliTrace / Allgemein sicher, dass IntelliTrace aktiviert ist, wählen Sie die IntelliTrace-Ereignisse aus und rufen Sie die Informationsoption auf. Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt (sie Erläuterung weitere unten).  
+1. Stellen Sie unter Extras / Optionen / IntelliTrace / Allgemein sicher, dass IntelliTrace aktiviert ist, wählen Sie die IntelliTrace-Ereignisse aus und rufen Sie die Informationsoption auf. Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt (sie Erläuterung weitere unten).  
   
-2.  Legen Sie einen Haltepunkt in der Zeile `Console.WriteLine(resultInt);` fest.  
+2. Legen Sie einen Haltepunkt in der Zeile `Console.WriteLine(resultInt);` fest.  
   
-3.  Beginnen Sie mit dem Debuggen. Der Code wird bis zum Haltepunkt ausgeführt. In der **"lokal"** Fenster sehen Sie, dass der Wert des `resultInt` 44.  
+3. Beginnen Sie mit dem Debuggen. Der Code wird bis zum Haltepunkt ausgeführt. In der **"lokal"** Fenster sehen Sie, dass der Wert des `resultInt` 44.  
   
-4.  Öffnen der **Diagnosetools** Fenster (**Debuggen / anzeigen Diagnosetools**). Das Code-Fenster sieht wie folgt aus:  
+4. Öffnen der **Diagnosetools** Fenster (**Debuggen / anzeigen Diagnosetools**). Das Code-Fenster sieht wie folgt aus:  
   
-     ![Codefenster am Haltepunkt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Codefenster am Haltepunkt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt. Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen. Klicken Sie auf den Pfeil.  
+5. Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt. Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen. Klicken Sie auf den Pfeil.  
   
-     Im Codefenster sollte Ihnen die vorangegangene Codezeile (`int resultInt = AddIterative(testInt);`) rosa gefärbt angezeigt werden. Über dem Fenster sollte eine Meldung angezeigt werden, dass Sie sich nun im verlaufsbezogenes Debugging befinden.  
+    Im Codefenster sollte Ihnen die vorangegangene Codezeile (`int resultInt = AddIterative(testInt);`) rosa gefärbt angezeigt werden. Über dem Fenster sollte eine Meldung angezeigt werden, dass Sie sich nun im verlaufsbezogenes Debugging befinden.  
   
-     Das Codefenster sieht nun folgendermaßen aus:  
+    Das Codefenster sieht nun folgendermaßen aus:  
   
-     ![Codefenster im verlaufsbezogenen Debugmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![Codefenster im verlaufsbezogenen Debugmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Nachdem Sie in Schritt können die `AddAll()` Methode (**F11**, oder die **Einzelschritt** Schaltfläche auf dem Navigationsbundsteg. Ein Schritt vorwärts (**F10**, oder **zum nächsten Aufruf wechseln** auf dem Navigationsbundsteg. Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`-Zeile. **F10** in diesem Fall nicht in die nächste Zeile des Codes schrittweise. Stattdessen fährt es mit dem nächsten Funktionsaufruf fort. Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.  
+6. Nachdem Sie in Schritt können die `AddAll()` Methode (**F11**, oder die **Einzelschritt** Schaltfläche auf dem Navigationsbundsteg. Ein Schritt vorwärts (**F10**, oder **zum nächsten Aufruf wechseln** auf dem Navigationsbundsteg. Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`-Zeile. **F10** in diesem Fall nicht in die nächste Zeile des Codes schrittweise. Stattdessen fährt es mit dem nächsten Funktionsaufruf fort. Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.  
   
-7.  Nun in die `AddInt()`-Methode einsteigen. Der Fehler in diesem Code sollte Ihnen sofort angezeigt werden.  
+7. Nun in die `AddInt()`-Methode einsteigen. Der Fehler in diesem Code sollte Ihnen sofort angezeigt werden.  
   
- Dieses Verfahren behandelt die Möglichkeiten des verlaufsbezogenen Debugging nur oberflächlich. Weitere Informationen zu den verschiedenen Einstellungen und die Auswirkungen der verschiedenen Schaltflächen auf dem Navigationsbundsteg finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
+   Dieses Verfahren behandelt die Möglichkeiten des verlaufsbezogenen Debugging nur oberflächlich. Weitere Informationen zu den verschiedenen Einstellungen und die Auswirkungen der verschiedenen Schaltflächen auf dem Navigationsbundsteg finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
 
 

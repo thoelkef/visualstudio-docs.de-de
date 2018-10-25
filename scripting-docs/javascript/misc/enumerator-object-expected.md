@@ -1,5 +1,5 @@
 ---
-title: Enumerator-Objekt erwartet | Microsoft Docs
+title: Enumeratorobjekt erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 485e6e387f07fd3a54727f5f8e08c0a00743c6d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935847"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator-Objekt erwartet
-Sie haben versucht, das Aufrufen der **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oder **Enumerator.prototype.moveNext** Methode für ein Objekt eines anderen Typs als `Enumerator`. Das Objekt dieses Typs des Aufrufs muss vom Typ `Enumerator`. Hier ist ein Beispiel des Codes, die mit dieser Regel beeinträchtigen:  
+Sie haben versucht, rufen Sie die **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oder **Enumerator.prototype.moveNext** Methode für ein Objekt eines anderen Typs als `Enumerator`. Das Objekt dieser Art von Aufruf muss vom Typ `Enumerator`. Hier ist ein Beispiel für Code, der mit dieser Regel wird ein:  
   
 ```JavaScript  
 var o = new Object;  

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942074"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -43,20 +43,20 @@ ms.locfileid: "42626015"
 > [!NOTE]  
 > Eine Reihe von Beispielworkflows, finden Sie unter [Beispiele für die SharePoint-Workflow](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zunächst die Projektmappe SiteColumnProjectItem erstellen, gehen Sie [Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer außerdem die folgenden Komponenten benötigt:  
   
--   Unterstützte Editionen von Windows, SharePoint und Visual Studio.
+- Unterstützte Editionen von Windows, SharePoint und Visual Studio.
   
--   Das Visual Studio SDK. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Das Visual Studio SDK. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+  Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Assistenten für Projekt- und Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md) und <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle.  
+- Assistenten für Projekt- und Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md) und <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle.  
   
--   Websitespalten in SharePoint Weitere Informationen finden Sie unter [Spalten](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Websitespalten in SharePoint Weitere Informationen finden Sie unter [Spalten](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Grundlegendes zu den Assistenten-Komponenten
  Der Assistent, der in dieser exemplarischen Vorgehensweise veranschaulicht wird, enthält mehrere Komponenten. In der folgenden Tabelle werden diese Komponenten beschrieben.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626015"
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
  Zum Abschließen dieser exemplarischen Vorgehensweise müssen Sie mehrere Projekte der Projektmappe SiteColumnProjectItem hinzufügen, die Sie in erstellt [Exemplarische Vorgehensweise: erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Ein WPF-Projekt. In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
+- Ein WPF-Projekt. In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
   
--   Ein Klassenbibliotheksprojekt, mit dem die benutzerdefinierten SharePoint-Befehle definiert werden. Für dieses Projekt muss .NET Framework 3.5 als Zielversion verwendet werden.  
+- Ein Klassenbibliotheksprojekt, mit dem die benutzerdefinierten SharePoint-Befehle definiert werden. Für dieses Projekt muss .NET Framework 3.5 als Zielversion verwendet werden.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+  Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
 #### <a name="to-create-the-wpf-project"></a>So erstellen Sie das WPF-Projekt
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626015"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Erstellen Sie die Assistenten-Modell, Signatur-Manager und SharePoint-Befehls-IDs
  Fügen Sie dem Projekt ProjectTemplateWizard Code hinzu, um die folgenden Komponenten im Beispiel zu implementieren:  
   
--   Die SharePoint-Befehls-IDs. Durch diese Zeichenfolgen werden die vom Assistenten verwendeten SharePoint-Befehle identifiziert. Weiter unten in dieser exemplarischen Vorgehensweise fügen Sie Code zum Projekt "SharePointCommands", das die Befehle zu implementieren.  
+- Die SharePoint-Befehls-IDs. Durch diese Zeichenfolgen werden die vom Assistenten verwendeten SharePoint-Befehle identifiziert. Weiter unten in dieser exemplarischen Vorgehensweise fügen Sie Code zum Projekt "SharePointCommands", das die Befehle zu implementieren.  
   
--   Das Datenmodell des Assistenten.  
+- Das Datenmodell des Assistenten.  
   
--   Der Signatur-Manager für Projekte.  
+- Der Signatur-Manager für Projekte.  
   
- Weitere Informationen zu diesen Komponenten finden Sie unter [Grundlegendes zu den Komponenten-Assistent](#wizardcomponents).  
+  Weitere Informationen zu diesen Komponenten finden Sie unter [Grundlegendes zu den Komponenten-Assistent](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>So definieren Sie die SharePoint-Befehls-IDs
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626015"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>So testen Sie den Assistenten in Visual Studio  
   
-1.  Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste **Datei** > **neu** > **Projekt**.  
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste **Datei** > **neu** > **Projekt**.  
   
-2.  Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten (je nach der die Projektvorlage unterstützten Sprache), erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
+2. Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten (je nach der die Projektvorlage unterstützten Sprache), erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-3.  Wählen Sie in der Liste der Projektvorlagen das Projekt **Websitespalte**, nennen Sie das Projekt **SiteColumnWizardTest**, und wählen Sie dann die **OK** Schaltfläche.  
+3. Wählen Sie in der Liste der Projektvorlagen das Projekt **Websitespalte**, nennen Sie das Projekt **SiteColumnWizardTest**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.  
+4. Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.  
   
-5.  Fahren Sie mit dem Debuggen des Projekts durch Auswahl der **F5** -Taste oder wählen Sie auf der Menüleiste die Optionen **Debuggen** > **Weiter**.  
+5. Fahren Sie mit dem Debuggen des Projekts durch Auswahl der **F5** -Taste oder wählen Sie auf der Menüleiste die Optionen **Debuggen** > **Weiter**.  
   
-6.  In der **SharePoint Customization Wizard**, geben Sie die URL der Website, die Sie für das Debuggen verwenden möchten, und wählen Sie dann die **Weiter** Schaltfläche.  
+6. In der **SharePoint Customization Wizard**, geben Sie die URL der Website, die Sie für das Debuggen verwenden möchten, und wählen Sie dann die **Weiter** Schaltfläche.  
   
-7.  In der zweiten Seite des der **SharePoint Customization Wizard**, die folgenden Optionen:  
+7. In der zweiten Seite des der **SharePoint Customization Wizard**, die folgenden Optionen:  
   
-    -   In der **Typ** wählen **booleschen**.  
+   - In der **Typ** wählen **booleschen**.  
   
-    -   In der **Gruppe** wählen **benutzerdefinierte Ja/Nein-Spalten**.  
+   - In der **Gruppe** wählen **benutzerdefinierte Ja/Nein-Spalten**.  
   
-    -   In der **Namen** geben **Eigene Ja/Nein-Spalte**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+   - In der **Namen** geben **Eigene Ja/Nein-Spalte**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
      In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, und das ein Projektelement mit dem Namen **"Field1"**, Visual Studio geöffnet wird, des Projekts *"Elements.xml"* Datei im Editor.  
   
-8.  Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.  
+8. Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>So testen Sie die Websitespalte in SharePoint  
   

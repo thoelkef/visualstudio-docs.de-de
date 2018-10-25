@@ -15,12 +15,12 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bdbe118669022f0aef9fb296623deea43b43b234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940657"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Das managed Package Framework (MPF), der Sprachdienst ist von einem VSPackage, a
 ## <a name="register-the-language-service-by-using-attributes"></a>Registrieren des Sprachdiensts mithilfe von Attributen  
  Die folgenden Attribute werden verwendet, um einen Sprachdienst zu registrieren.  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
- Diese Attribute werden im folgenden erläutert.  
+  Diese Attribute werden im folgenden erläutert.  
   
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
  Dieses Attribut registriert den Sprachdienst als Dienst.  

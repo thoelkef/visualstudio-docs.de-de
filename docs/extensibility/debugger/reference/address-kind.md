@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND | Microsoft Docs
+title: ADDRESS_KIND | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53c93cb8e7d2c021c95c4b11047b5d699f7ae1c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3138b4151c1f78a05daf2320d5979d5c6e15db42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942295"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
-Gibt die Arten von Adressen.  
+Gibt die Arten der Adressen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,10 +58,10 @@ public enum enum_ADDRESS_KIND {
   
 ## <a name="terms"></a>Begriffe  
  ADDRESS_KIND_NATIVE  
- Eine systemeigene Adresse, dargestellt durch die [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) Struktur.  
+ Eine native Adresse, dargestellt durch die [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) Struktur.  
   
  ADDRESS_KIND_UNMANAGED_THIS_RELATIVE  
- Eine nicht verwaltete Adresse relativ zu einer `this` (`Me` in Visual Basic) Zeiger und dargestellt werden, indem die [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) Struktur.  
+ Eine nicht verwaltete Adresse relativ zu einem `this` (`Me` in Visual Basic) Zeiger durch dargestellt die [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) Struktur.  
   
  ADDRESS_KIND_UNMANAGED_PHYSICAL  
  Eine nicht verwaltete physische Adresse, dargestellt durch die [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) Struktur.  
@@ -73,19 +73,19 @@ public enum enum_ADDRESS_KIND {
  Ein Feld einer Klasse, dargestellt durch die [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) Struktur.  
   
  ADDRESS_KIND_LOCAL  
- Die Adresse für eine lokale Variable ist, und wird durch die [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) Struktur.  
+ Die Adresse wird für eine lokale Variable und wird durch die [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) Struktur.  
   
  ADDRESS_KIND_PARAM  
- Parameter-Methode oder Funktion, dargestellt durch die [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) Struktur.  
+ Eine Methode oder Funktion Parameters, der durch dargestellt die [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) Struktur.  
   
  ADDRESS_KIND_ARRAYELEM  
  Ein Arrayelement, dargestellt durch die [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) Struktur.  
   
  ADDRESS_KIND_RETVAL  
- Ein Rückgabewert, dargestellt durch die [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) Struktur.  
+ Ein Wert zurückgegeben, dargestellt durch die [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) Struktur.  
   
 ## <a name="remarks"></a>Hinweise  
- Die [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode gibt die [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur, die eine Union von möglichen Strukturen enthält die [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur. Die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur enthält die `ADDRESS_KIND` -Wert und beschreibt, wie das Feld der union zu interpretieren.  
+ Die [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode gibt die [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur, die eine Union mit Strukturen zu möglich, enthält die [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur. Die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur enthält die `ADDRESS_KIND` Wert ein, und beschreibt, wie Sie das Feld der union zu interpretieren.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

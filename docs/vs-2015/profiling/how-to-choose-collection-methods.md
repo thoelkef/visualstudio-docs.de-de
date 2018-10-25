@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940956"
 ---
 # <a name="how-to-choose-collection-methods"></a>Gewusst wie: Auswählen von Sammlungsmethoden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools unterst�
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um die geeignetste Sammlungsmethode für Ihre Anwendung anzugeben. Sie können die Sammelmethode vom Leistungs-Assistent, Leistungs-Explorer oder von den Eigenschaftenseiten der Leistungssitzung festlegen. Wenn Sie die Befehlszeilentools verwenden, finden Sie weitere Informationen unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md).  
+  Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um die geeignetste Sammlungsmethode für Ihre Anwendung anzugeben. Sie können die Sammelmethode vom Leistungs-Assistent, Leistungs-Explorer oder von den Eigenschaftenseiten der Leistungssitzung festlegen. Wenn Sie die Befehlszeilentools verwenden, finden Sie weitere Informationen unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="performance-wizard"></a>Leistungs-Assistent  
   

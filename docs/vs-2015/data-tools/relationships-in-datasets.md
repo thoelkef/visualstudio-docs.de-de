@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935405"
 ---
 # <a name="relationships-in-datasets"></a>Beziehungen in datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation>
   
  Die <xref:System.Data.DataRelation> Objekt erfüllt zwei Funktionen:  
   
--   Verfügbar kann gemacht werden die Datensätze, die im Zusammenhang mit einem Datensatz, mit denen, dem Sie arbeiten werden. Wenn Sie sich auf einen übergeordneten Datensatz untergeordnete Datensätze bietet (<xref:System.Data.DataRow.GetChildRows%2A>) und einen übergeordneten Datensatz aus, wenn Sie mit einem untergeordneten Datensatz arbeiten (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Verfügbar kann gemacht werden die Datensätze, die im Zusammenhang mit einem Datensatz, mit denen, dem Sie arbeiten werden. Wenn Sie sich auf einen übergeordneten Datensatz untergeordnete Datensätze bietet (<xref:System.Data.DataRow.GetChildRows%2A>) und einen übergeordneten Datensatz aus, wenn Sie mit einem untergeordneten Datensatz arbeiten (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Sie können erzwingen, dass Einschränkungen für die referenzielle Integrität, z. B. verknüpfte untergeordnete Datensätze löschen, wenn Sie einen übergeordneten Datensatz löschen.  
+- Sie können erzwingen, dass Einschränkungen für die referenzielle Integrität, z. B. verknüpfte untergeordnete Datensätze löschen, wenn Sie einen übergeordneten Datensatz löschen.  
   
- Es ist wichtig zu verstehen, den Unterschied zwischen einem echten Join und die Funktion der ein <xref:System.Data.DataRelation> Objekt. Datensätze sind in einem Join "true" stammt aus über- und untergeordneten Tabellen und fügen Sie in einem flachen Recordset. Bei Verwendung einer <xref:System.Data.DataRelation> Objekt ist, wird kein neues Recordset wird erstellt. Stattdessen DataRelation verfolgt die Beziehung zwischen Tabellen und hält über- und untergeordneten Datensätzen synchron.  
+  Es ist wichtig zu verstehen, den Unterschied zwischen einem echten Join und die Funktion der ein <xref:System.Data.DataRelation> Objekt. Datensätze sind in einem Join "true" stammt aus über- und untergeordneten Tabellen und fügen Sie in einem flachen Recordset. Bei Verwendung einer <xref:System.Data.DataRelation> Objekt ist, wird kein neues Recordset wird erstellt. Stattdessen DataRelation verfolgt die Beziehung zwischen Tabellen und hält über- und untergeordneten Datensätzen synchron.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation-Objekte und -Einschränkungen  
  Ein <xref:System.Data.DataRelation> Objekt wird auch zum Erstellen und erzwingen die folgenden Einschränkungen:  
   
--   Eine unique-Einschränkung, dadurch wird sichergestellt, dass eine Spalte in der Tabelle keine Duplikate enthält.  
+- Eine unique-Einschränkung, dadurch wird sichergestellt, dass eine Spalte in der Tabelle keine Duplikate enthält.  
   
--   Foreign Key-Einschränkung, die verwendet werden kann, um die Wahrung der referenziellen Integrität zwischen einer über- und untergeordnete Tabelle in einem Dataset.  
+- Foreign Key-Einschränkung, die verwendet werden kann, um die Wahrung der referenziellen Integrität zwischen einer über- und untergeordnete Tabelle in einem Dataset.  
   
- Einschränkungen, die Sie an einer <xref:System.Data.DataRelation> Objekt werden implementiert, indem automatisch die entsprechenden Objekte erstellen oder Festlegen von Eigenschaften. Bei der Erstellung einer foreign Key-Einschränkung mithilfe der <xref:System.Data.DataRelation> -Objekt, das Instanzen von der <xref:System.Data.ForeignKeyConstraint> Klasse hinzugefügt werden, um die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ChildKeyConstraint%2A> Eigenschaft.  
+  Einschränkungen, die Sie an einer <xref:System.Data.DataRelation> Objekt werden implementiert, indem automatisch die entsprechenden Objekte erstellen oder Festlegen von Eigenschaften. Bei der Erstellung einer foreign Key-Einschränkung mithilfe der <xref:System.Data.DataRelation> -Objekt, das Instanzen von der <xref:System.Data.ForeignKeyConstraint> Klasse hinzugefügt werden, um die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ChildKeyConstraint%2A> Eigenschaft.  
   
- Implementiert eine unique-Einschränkung entweder einfach die <xref:System.Data.DataColumn.Unique%2A> Eigenschaft einer Datenspalte auf `true` oder durch das Hinzufügen einer Instanz von der <xref:System.Data.UniqueConstraint> -Klasse auf die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ParentKeyConstraint%2A> Eigenschaft. Weitere Informationen zum Anhalten von Einschränkungen in einem Dataset, finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Implementiert eine unique-Einschränkung entweder einfach die <xref:System.Data.DataColumn.Unique%2A> Eigenschaft einer Datenspalte auf `true` oder durch das Hinzufügen einer Instanz von der <xref:System.Data.UniqueConstraint> -Klasse auf die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ParentKeyConstraint%2A> Eigenschaft. Weitere Informationen zum Anhalten von Einschränkungen in einem Dataset, finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Regeln für die referenzielle Integrität  
  Im Rahmen der foreign Key-Einschränkung können Sie Regeln für die referenzielle Integrität angeben, die an drei Punkten angewendet werden:  
   
--   Wenn ein übergeordneter Datensatz aktualisiert wird  
+- Wenn ein übergeordneter Datensatz aktualisiert wird  
   
--   Wenn ein übergeordneter Datensatz gelöscht wird  
+- Wenn ein übergeordneter Datensatz gelöscht wird  
   
--   Wenn eine Änderung akzeptiert oder abgelehnt wird  
+- Wenn eine Änderung akzeptiert oder abgelehnt wird  
   
- Die Regeln, die Sie vornehmen können, werden angegeben, der <xref:System.Data.Rule> Enumeration und sind in der folgenden Tabelle aufgeführt.  
+  Die Regeln, die Sie vornehmen können, werden angegeben, der <xref:System.Data.Rule> Enumeration und sind in der folgenden Tabelle aufgeführt.  
   
 |Regel für Foreign Key-Einschränkung|Aktion|  
 |----------------------------------|------------|  
