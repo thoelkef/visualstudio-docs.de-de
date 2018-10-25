@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811502"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Gewusst wie: Ändern der Größe ListObject-Steuerelementen
   Sie legen die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements fest, wenn Sie es einer Microsoft Office Excel-Arbeitsmappe hinzufügen. Möglicherweise möchten Sie dessen Größe jedoch zu einem späteren Zeitpunkt ändern. Beispielsweise könnte es sein, dass Sie eine zweispaltige Liste in eine dreispaltige Liste ändern möchten.  
@@ -32,15 +32,15 @@ ms.locfileid: "35672761"
   
  In diesem Thema werden die folgenden Aufgaben beschrieben:  
   
--   [Größe von ListObject-Steuerelementen zur Entwurfszeit](#designtime)  
+- [Größe von ListObject-Steuerelementen zur Entwurfszeit](#designtime)  
   
--   [Größe von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
+- [Größe von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
   
--   [Größe von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
+- [Größe von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
   
- Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelemente finden Sie [ListObject-Steuerelement](../vsto/listobject-control.md).  
+  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelemente finden Sie [ListObject-Steuerelement](../vsto/listobject-control.md).  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [I: Hinzufügen von Spalten zu einer datengebundenen List-Objekt zur Laufzeit Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [I: Hinzufügen von Spalten zu einer datengebundenen List-Objekt zur Laufzeit Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Ändern der Größe eines ListObject-Steuerelements zur Entwurfszeit  
  Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.  

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812945"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definieren von Formen und Konnektoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Es gibt mehrere grundlegende Formtypen, die Sie zum Anzeigen von Informationen i
 ##  <a name="shapeTypes"></a> Grundlegende Typen von Formen und Konnektoren  
  Eine DSL-Diagramm wird eine Auflistung von *Formen* angezeigt, die durch Linien oder *Connectors*.  Normalerweise gilt Folgendes (wenn auch nicht immer):  
   
--   Bei Formen handelt es sich um die sichtbare Darstellung der Modellelemente.  
+- Bei Formen handelt es sich um die sichtbare Darstellung der Modellelemente.  
   
--   Konnektoren stellen Verweisbeziehungen dar.  
+- Konnektoren stellen Verweisbeziehungen dar.  
   
--   Die Modellstamminstanz wird durch das Diagramm repräsentiert.  
+- Die Modellstamminstanz wird durch das Diagramm repräsentiert.  
   
--   Einbettende Beziehungen zwischen Modellelementen werden mithilfe der Kapselung angezeigt. Beispielsweise werden Elemente, die Komponentenports darstellen, in die Komponente eingebettet.  
+- Einbettende Beziehungen zwischen Modellelementen werden mithilfe der Kapselung angezeigt. Beispielsweise werden Elemente, die Komponentenports darstellen, in die Komponente eingebettet.  
   
- Diese Muster werden nicht erzwungen, sie werden allerdings stärker unterstützt. Beachten Sie beim Entwerfen einer DSL, dass das Design der einbettenden Beziehungen davon beeinflusst wird, wie das Modell auf dem Bildschirm dargestellt werden soll. Im Gegensatz dazu sollten die Verweisbeziehungen die Konzepte Ihrer Geschäftssparte wiedergeben.  
+  Diese Muster werden nicht erzwungen, sie werden allerdings stärker unterstützt. Beachten Sie beim Entwerfen einer DSL, dass das Design der einbettenden Beziehungen davon beeinflusst wird, wie das Modell auf dem Bildschirm dargestellt werden soll. Im Gegensatz dazu sollten die Verweisbeziehungen die Konzepte Ihrer Geschäftssparte wiedergeben.  
   
- Die folgenden Formtypen stehen zur Verfügung:  
+  Die folgenden Formtypen stehen zur Verfügung:  
   
 |Formtyp|Beschreibung|  
 |----------------|-----------------|  

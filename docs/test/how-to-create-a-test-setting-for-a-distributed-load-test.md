@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816052"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
 
@@ -124,7 +124,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
      **Adapter für diagnostische Daten für Auslastungstests**
 
     |Diagnosedatenadapter|Verwendung in Auslastungstests|Entsprechendes Thema|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**ASP.NET-Clientproxy für IntelliTrace und Testauswirkung:** Dieser Proxy ermöglicht das Erfassen von Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Schließen Sie diesen Adapter nur ein, wenn Sie Systeminformationen für die Test-Agent-Computer sammeln müssen. **Vorsicht:** Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten Datenmenge Probleme auftreten. <br /><br /> Bei Verwendung von Auslastungstests werden keine Testauswirkungsdaten erfasst.||
     |**IntelliTrace:** Sie können konfigurieren, welche speziellen Informationen zur Diagnoseablaufverfolgung in einer Protokolldatei gespeichert werden. Eine Protokolldatei hat die Erweiterung *TDLOG*. Wenn Sie den Test ausführen und ein Testschritt fehlschlägt, können Sie einen Fehler erstellen. Die Protokolldatei, die die Diagnoseablaufverfolgung enthält, wird automatisch an diesen Fehler angefügt. Die in der Protokolldatei gesammelten Daten steigern die Debuggingproduktivität, da sie die Zeit für das Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzen. Aus dieser Protokolldatei kann die lokale Sitzung auf einem anderen Computer erneut erstellt werden. So wird die Wahrscheinlichkeit verringert, dass ein Fehler nicht reproduziert werden kann.<br /><br /> Weitere Informationen finden Sie unter [Erfassen von IntelliTrace-Daten](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Symbol "Wichtig"](../test/media/vc364f3.gif)<br /><br /> Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten und protokollierten Datenmenge Probleme auftreten. Sie sollten versuchen, den IntelliTrace-Adapter nur in kurzen Auslastungstests zu verwenden, in denen wenige Test-Agents verwendet werden.|[Vorgehensweise: Sammeln von IntelliTrace-Daten zum Beheben schwieriger Probleme](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET-Profiler:** Sie können eine Testeinstellung erstellen, die die ASP.NET-Profilerstellung umfasst, und so Leistungsdaten zu ASP.NET-Webanwendungen sammeln.|Der Adapter für diagnostische Daten des ASP.NET-Profilers erstellt ein Profil des IIS-Prozesses (Internet Information Services). Daher kann er nicht für Entwicklungswebserver verwendet werden. Um ein Profil der Website im Auslastungstest zu erstellen, müssen Sie einen Test-Agent auf dem Computer installieren, auf dem IIS ausgeführt wird. Der Test-Agent generiert keine Auslastung, sondert dient nur als Datensammlungs-Agent. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|[How to: Configure ASP.NET Profiler for Load Tests Using Test Settings (Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mithilfe von Testeinstellungen)](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

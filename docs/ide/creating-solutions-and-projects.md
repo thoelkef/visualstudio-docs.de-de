@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813816"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -45,28 +45,28 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der **Startseite** den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste auf **Datei** > **Neu** > **Projekt** oder in der Symbolleiste auf die Schaltfläche **Neues Projekt** klicken.
 
-  ![Startseite](./media/vside-newproject1.png)
+   ![Startseite](./media/vside-newproject1.png)
 
-  Die verfügbaren Projektvorlagen werden im Dialogfeld **Neues Projekt** in einer Liste unter der Kategorie **Vorlagen** angezeigt. Vorlagen werden nach Programmiersprachen und Projekttypen sortiert, z.B. Visual C#, JavaScript und Azure Data Lake.
+   Die verfügbaren Projektvorlagen werden im Dialogfeld **Neues Projekt** in einer Liste unter der Kategorie **Vorlagen** angezeigt. Vorlagen werden nach Programmiersprachen und Projekttypen sortiert, z.B. Visual C#, JavaScript und Azure Data Lake.
 
-  ![Dialogfeld "Neues Projekt"](./media/vside-newproject-templates-list.png)
+   ![Dialogfeld "Neues Projekt"](./media/vside-newproject-templates-list.png)
 
-  > [!NOTE]
-  > Der Aufbau der Liste der verfügbaren Sprachen und Projektvorlagen hängt von der Visual Studio-Version, die Sie ausführen, und den installierten Workloads ab. Informationen zum Installieren von zusätzlichen Workloads finden Sie unter [Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Workloads und Komponenten](../install/modify-visual-studio.md).
+   > [!NOTE]
+   > Der Aufbau der Liste der verfügbaren Sprachen und Projektvorlagen hängt von der Visual Studio-Version, die Sie ausführen, und den installierten Workloads ab. Informationen zum Installieren von zusätzlichen Workloads finden Sie unter [Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Workloads und Komponenten](../install/modify-visual-studio.md).
 
-1. Klicken Sie auf das Dreieck neben dem Namen der Sprache, und wählen Sie dann einen Projekttyp aus, damit die Liste mit den Vorlagen angezeigt wird.
+2. Klicken Sie auf das Dreieck neben dem Namen der Sprache, und wählen Sie dann einen Projekttyp aus, damit die Liste mit den Vorlagen angezeigt wird.
 
-  Im folgenden Beispiel werden die für Visual C# .NET Core-Projekte verfügbaren Projektvorlagen angezeigt.
+   Im folgenden Beispiel werden die für Visual C# .NET Core-Projekte verfügbaren Projektvorlagen angezeigt.
 
-  ![Projektvorlagen](./media/new-project-dialog-net-core.png)
+   ![Projektvorlagen](./media/new-project-dialog-net-core.png)
 
-1. Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem System speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen.
+3. Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem System speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen.
 
-  Optional können Sie auch den Namen der Projektmappe ändern oder das neue Projekt einem Git-Repository hinzufügen, indem Sie auf **Zur Quellcodeverwaltung hinzufügen** klicken.
+   Optional können Sie auch den Namen der Projektmappe ändern oder das neue Projekt einem Git-Repository hinzufügen, indem Sie auf **Zur Quellcodeverwaltung hinzufügen** klicken.
 
-1. Klicken Sie auf die Schaltfläche **OK**, um die Projektmappe und das Projekt zu erstellen.
+4. Klicken Sie auf die Schaltfläche **OK**, um die Projektmappe und das Projekt zu erstellen.
 
-1. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**.
+5. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Erstellen eines Projekts aus vorhandenen Codedateien
 

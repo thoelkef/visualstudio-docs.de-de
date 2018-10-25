@@ -18,39 +18,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815194"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
+
 Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Webverweise und wichtige Namespaces in Ihrem Projekt zu verwalten. Projekte können Verweise auf COM-Komponenten, XML-Webdienste, Klassenbibliotheken oder Assemblys von .NET Framework oder andere Klassenbibliotheken enthalten. Weitere Informationen zum Verwenden von Verweisen finden Sie unter [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md).
 
- Um auf die Seite **Verweise** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Dienste**.
+Um auf die Seite **Verweise** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Dienste**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Mit folgenden Optionen können Sie Verweise und importierte Namespaces in Ihrem Projekt auswählen oder entfernen.
 
- **Nicht verwendete Verweise**
+Mit folgenden Optionen können Sie Verweise und importierte Namespaces in Ihrem Projekt auswählen oder entfernen.
 
- Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Nicht verwendete Verweise** zuzugreifen.
+**Nicht verwendete Verweise**
 
- Mit dem Dialogfeld **Nicht verwendete Verweise** können Sie Verweise entfernen, die in Ihrem Projekt enthalten sind, die aber nicht vom Code verwendet werden. Es enthält ein Raster, das die **Verweisnamen**, den **Pfad** und andere Informationen zu den nicht verwendeten Namespaceverweisen in Ihrem Projekt. Wählen Sie im Raster die Namespaceverweise, die Sie aus Ihrem Projekt entfernen möchten, und klicken Sie auf **Entfernen**.
+Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Nicht verwendete Verweise** zuzugreifen.
 
- **Verweispfade**
+Mit dem Dialogfeld **Nicht verwendete Verweise** können Sie Verweise entfernen, die in Ihrem Projekt enthalten sind, die aber nicht vom Code verwendet werden. Es enthält ein Raster, das die **Verweisnamen**, den **Pfad** und andere Informationen zu den nicht verwendeten Namespaceverweisen in Ihrem Projekt. Wählen Sie im Raster die Namespaceverweise, die Sie aus Ihrem Projekt entfernen möchten, und klicken Sie auf **Entfernen**.
 
- Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzugreifen.
+**Verweispfade**
+
+Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzugreifen.
 
 > [!NOTE]
 > Wenn das Projektsystem einen Assemblyverweis findet, löst das System den Verweis auf, indem es die folgenden Speicherorte in folgender Reihenfolge durchsucht:
-
 >
->  1.  Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.
-> 2.  Ordner, die im Dialogfeld **Verweispfade** angegeben sind.
-> 3.  Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen
-> 4.  Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)
+> 1. Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.
+> 2. Ordner, die im Dialogfeld **Verweispfade** angegeben sind.
+> 3. Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen
+> 4. Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)
 
  **Verweise**
 

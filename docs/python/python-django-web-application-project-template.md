@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499542"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100964"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
@@ -56,7 +56,7 @@ Sie können über verschiedene Befehle im Menü **Projekt** oder durch Rechtskli
 
     ![Konsole](media/template-django-console-sync-db.png)
 
-- **Statische Dateien erfassen**: führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer *settings.py*-Datei zu kopieren. Bei der [Veröffentlichung in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
+- **Statische Dateien erfassen**: führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer *settings.py*-Datei zu kopieren.
 
     ![Konsole](media/template-django-console-collect-static.png)
 

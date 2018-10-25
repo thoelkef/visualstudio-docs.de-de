@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826369"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps
+
 Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den internen Renderingkonventionen von Direct2D kompatibel sind. Texturen dieser Art eignen sich für Apps, die Direct2D verwenden, und für UWP-Apps, die mit JavaScript erstellt wurden.
 
- In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
+In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
 
 -   Konfigurieren des Quellbilds für die Verarbeitung mithilfe der Pipeline für Bildinhalte.
 
@@ -33,7 +34,8 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
     -   Generieren von Mipmaps deaktivieren.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Renderingkonventionen in Direct2D
- Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Direct2D-Renderingkonventionen entsprechen:
+
+Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Direct2D-Renderingkonventionen entsprechen:
 
 -   Direct2D implementiert Transparenz und Durchsichtigkeit, indem ein prämultipliziertes Alpha verwendet wird. Die mit Direct2D verwendeten Texturen müssen ein multipliziertes Alpha enthalten, selbst wenn für die Textur weder Transparenz noch Durchsichtigkeit verwendet wird. Weitere Informationen zu integrierten Alphakanälen finden Sie unter [Vorgehensweise: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
@@ -49,19 +51,19 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>So erstellen Sie eine Textur, die mit den Renderingkonventionen von Direct2D kompatibel ist
 
-1.  Beginnen Sie mit einer Standardtextur. Laden Sie ein vorhandenes Bild, oder erstellen Sie wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben ein neues. Um die Blockkomprimierung im *DDS*-Format zu unterstützen, geben Sie eine Textur an, deren Breite und Höhe ein Vielfaches von vier ist, beispielsweise 100x100, 128x128 oder 256x192. Da Mipmapping nicht unterstützt wird, muss die Textur nicht quadratisch und keine Potenz von zwei sein.
+1. Beginnen Sie mit einer Standardtextur. Laden Sie ein vorhandenes Bild, oder erstellen Sie wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben ein neues. Um die Blockkomprimierung im *DDS*-Format zu unterstützen, geben Sie eine Textur an, deren Breite und Höhe ein Vielfaches von vier ist, beispielsweise 100x100, 128x128 oder 256x192. Da Mipmapping nicht unterstützt wird, muss die Textur nicht quadratisch und keine Potenz von zwei sein.
 
-2.  Konfigurieren Sie die Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die soeben erstellte Texturdatei, und wählen Sie dann **Eigenschaften** aus. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Stellen Sie sicher, dass die Eigenschaft **Inhalt** auf **JA** und die Option **Aus Build ausschließen** auf **NEIN** festgelegt ist. Wählen Sie dann die Schaltfläche **Übernehmen** aus. Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.
+2. Konfigurieren Sie die Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die soeben erstellte Texturdatei, und wählen Sie dann **Eigenschaften** aus. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Stellen Sie sicher, dass die Eigenschaft **Inhalt** auf **JA** und die Option **Aus Build ausschließen** auf **NEIN** festgelegt ist. Wählen Sie dann die Schaltfläche **Übernehmen** aus. Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.
 
-3.  Legen Sie das Ausgabeformat auf eines der blockkomprimierten Formate fest. Legen Sie die Eigenschaft **Komprimieren** auf der Seite **Konfigurationseigenschaften** > **Pipeline für Bildinhalt** > **Allgemein** auf **BC3_UNORM-Komprimierung (/compress:BC3_UNORM)** fest. Sie können abhängig von Ihren Anforderungen eines der anderen BC1-, BC2- oder BC3-Formate auswählen. Von Direct2D werden aktuell die Texturen "BC4", "BC5", "BC6" bzw. "BC7" nicht unterstützt. Weitere Informationen zu den verschiedenen BC-Formaten finden Sie unter [Block compression (Direct3D 10) (Blockkomprimierung (Direct3D 10))](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Legen Sie das Ausgabeformat auf eines der blockkomprimierten Formate fest. Legen Sie die Eigenschaft **Komprimieren** auf der Seite **Konfigurationseigenschaften** > **Pipeline für Bildinhalt** > **Allgemein** auf **BC3_UNORM-Komprimierung (/compress:BC3_UNORM)** fest. Sie können abhängig von Ihren Anforderungen eines der anderen BC1-, BC2- oder BC3-Formate auswählen. Von Direct2D werden aktuell die Texturen "BC4", "BC5", "BC6" bzw. "BC7" nicht unterstützt. Weitere Informationen zu den verschiedenen BC-Formaten finden Sie unter [Block compression (Direct3D 10) (Blockkomprimierung (Direct3D 10))](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
-    > [!NOTE]
-    >  Das Format der Datei, die von der Pipeline für Bildinhalte erzeugt wird, legt das angegebene Komprimierungsformat fest. Dieses unterscheidet sich von der Eigenschaft **Format** des Quellbilds in der Bildbearbeitung, mit dem das Format der auf dem Datenträger gespeicherten Quellbilddatei festgelegt wird – und zwar als *Arbeitsformat*. Normalerweise möchten Sie nicht, dass ein Arbeitsformat komprimiert wird.
+   > [!NOTE]
+   > Das Format der Datei, die von der Pipeline für Bildinhalte erzeugt wird, legt das angegebene Komprimierungsformat fest. Dieses unterscheidet sich von der Eigenschaft **Format** des Quellbilds in der Bildbearbeitung, mit dem das Format der auf dem Datenträger gespeicherten Quellbilddatei festgelegt wird – und zwar als *Arbeitsformat*. Normalerweise möchten Sie nicht, dass ein Arbeitsformat komprimiert wird.
 
-4.  Konfigurieren Sie die Pipeline für Bildinhalte so, dass sie eine Ausgabe mit integrierten Alphakanälen erzeugt. Legen Sie die Eigenschaft **Convert to pre-multiplied alpha format** (In prämultipliziertes Alphaformat konvertieren) auf der Seite **Konfigurationseigenschaften** > **Bildinhaltspipeline** > **Allgemein** auf **Ja (/generatepremultipliedalpha)** fest.
+4. Konfigurieren Sie die Pipeline für Bildinhalte so, dass sie eine Ausgabe mit integrierten Alphakanälen erzeugt. Legen Sie die Eigenschaft **Convert to pre-multiplied alpha format** (In prämultipliziertes Alphaformat konvertieren) auf der Seite **Konfigurationseigenschaften** > **Bildinhaltspipeline** > **Allgemein** auf **Ja (/generatepremultipliedalpha)** fest.
 
-5.  Konfigurieren Sie die Pipeline für Bildinhalte so, dass sie keine Mipmaps generiert. Legen Sie die Eigenschaft **MIPS generieren** auf der Seite **Konfigurationseigenschaften** > **Pipeline für Bildinhalte** > **Allgemein** auf **Nein** fest.
+5. Konfigurieren Sie die Pipeline für Bildinhalte so, dass sie keine Mipmaps generiert. Legen Sie die Eigenschaft **MIPS generieren** auf der Seite **Konfigurationseigenschaften** > **Pipeline für Bildinhalte** > **Allgemein** auf **Nein** fest.
 
-6.  Klicken Sie auf die Schaltfläche **OK** .
+6. Klicken Sie auf die Schaltfläche **OK** .
 
- Wenn Sie das Projekt erstellen, wird das Quellbild von der Pipeline für Bildinhalte vom Arbeitsformat in das angegebene Ausgabeformat konvertiert (Die Konvertierung schließt die Generierung prämultiplizierter Alphas ein). Das Ergebnis wird dann in das Ausgabeverzeichnis des Projekts kopiert.
+   Wenn Sie das Projekt erstellen, wird das Quellbild von der Pipeline für Bildinhalte vom Arbeitsformat in das angegebene Ausgabeformat konvertiert (Die Konvertierung schließt die Generierung prämultiplizierter Alphas ein). Das Ergebnis wird dann in das Ausgabeverzeichnis des Projekts kopiert.

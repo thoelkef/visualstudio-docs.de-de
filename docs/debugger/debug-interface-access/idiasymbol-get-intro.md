@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intro | Microsoft Docs'
+title: 'Idiasymbol:: Get_intro | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f43aeb33ce7727133a7ed2a4e4eba0cac53cda
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813374"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktion ist ab.  
@@ -34,13 +34,13 @@ HRESULT get_intro (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn die Funktion Intro virtuellen; ist, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn die Funktion Einführung virtuellen; ist andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -53,14 +53,14 @@ class B : public A {
 }  
 ```  
   
- Beide `A::f1` und `B::f1` virtuelle Funktionen, sind aber `A::f1` Intro virtuell ist.  
+ Beide `A::f1` und `B::f1` sind virtuelle Funktionen, aber `A::f1` Einführung virtuell ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK Version 7.0|  
+|Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832061"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Containerordnern für Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten 
   
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE fast immer einen SUR-Ordner erstellt, wenn eine Projektmappe zur quellcodeverwaltung hinzufügen. Insbesondere erfolgt dies in den folgenden Fällen:  
   
--   Das Projekt ist eine Dateifreigabe Webprojekt.  
+- Das Projekt ist eine Dateifreigabe Webprojekt.  
   
--   Es gibt unterschiedliche Laufwerke für das Projekt und die Projektmappendatei.  
+- Es gibt unterschiedliche Laufwerke für das Projekt und die Projektmappendatei.  
   
--   Es gibt andere Freigaben für das Projekt und die Projektmappendatei.  
+- Es gibt andere Freigaben für das Projekt und die Projektmappendatei.  
   
--   Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.  
+- Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.  
   
- In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.  
+  In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.  
   
 |Feature|tSource-Steuerelement-Plug-in-API-Version 1.1|Datenquellen Sie-Steuerelement-Plug-in API-Version 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077577"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879251"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
 Die Fähigkeit von MSBuild 3.5, mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Protokollierung erhöhen. In einer Umgebung mit nur einem Prozessor kann die Protokollierung eingehende Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise verarbeiten. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. MSBuild bietet eine neue mehrprozessorfähige Protokollierung und ermöglicht die Erstellung benutzerdefinierter „weiterleitender Protokollierungen“.  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Weitere Informationen finden Sie unter [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Anfügen einer verteilten Protokollierung  
- Verwenden Sie zum Anfügen einer verteilten Protokollierung in einem Befehlszeilenbuild den `/distributedlogger`-Schalter (abgekürzt `/dl`). Das Format zum Angeben der Namen von Protokollierungstypen und -klassen ist mit denen für den `/logger`-Schalter identisch, mit der Ausnahme, dass eine verteilte Protokollierung aus zwei Protokollierungsklassen besteht: eine Weiterleitungsprotokollierung und eine zentrale Protokollierung. Nachfolgend ist ein Beispiel für eine verteilte Protokollierung aufgeführt:  
+ Verwenden Sie zum Anfügen einer verteilten Protokollierung in einem Befehlszeilenbuild den `-distributedlogger`-Schalter (abgekürzt `-dl`). Das Format zum Angeben der Namen von Protokollierungstypen und -klassen ist mit denen für den `-logger`-Schalter identisch, mit der Ausnahme, dass eine verteilte Protokollierung aus zwei Protokollierungsklassen besteht: eine Weiterleitungsprotokollierung und eine zentrale Protokollierung. Nachfolgend ist ein Beispiel für eine verteilte Protokollierung aufgeführt:  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- Ein Sternchen (*) trennt die beiden Protokollierungsnamen im `/dl`-Schalter.  
+ Ein Sternchen (*) trennt die beiden Protokollierungsnamen im `-dl`-Schalter.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Buildprotokollierungen](../msbuild/build-loggers.md)   

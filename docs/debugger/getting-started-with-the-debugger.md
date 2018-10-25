@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827557"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen Sie zum Debuggen mit Visual Studio
 
 Dieser Artikel enthält die Funktionen von Visual Studio-Debugger in eine schrittweise exemplarische Vorgehensweise. Einen allgemeineren Überblick über die Funktionen des Debuggers, finden Sie unter [Debugger – Featuretour](../debugger/debugger-feature-tour.md). Wenn Sie *Debuggen Ihrer app*, er wird in der Regel bedeutet, dass Sie Ihre Anwendung mit dem angefügten Debugger ausgeführt werden. Wenn Sie dies tun, wird der Debugger bietet viele Möglichkeiten, um festzustellen, was den Status Ihres Codes während der Ausführung. Sie können den Code schrittweise durchlaufen und die Werte in Variablen gespeichert, können Sie Überwachungen für die Variablen angezeigt, wenn sich Werte ändern, können Sie den Ausführungspfad des Codes untersuchen, festzustellen, ob eine Verzweigung des Codes wird ausgeführt, und so weiter. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) zum Debuggen, die ähnliche Schritte zeigt. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) zum Debuggen, die ähnliche Schritte zeigt. |
 
 Auch die Demo-app mit c# und C++ ist, sind die Funktionen für Visual Basic, JavaScript und anderen Sprachen von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben.
 
@@ -329,8 +329,8 @@ In der Regel verwenden wir die Tastenkombinationen, da es sich um eine gute Mög
 
      ![Verwenden Sie die Ausführung bis Klick Feature](../debugger/media/get-started-run-to-click.png "Ausführung bis Klick")
 
-    >  [!NOTE]
-    > Die **Ausführung bis Klick** Schaltfläche ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Sie nicht, dass die Schaltfläche mit dem grünen Pfeil sehen, verwenden Sie **F11** in diesem Beispiel stattdessen um den Debugger an die richtige Stelle zu gelangen.
+   > [!NOTE]
+   > Die **Ausführung bis Klick** Schaltfläche ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Sie nicht, dass die Schaltfläche mit dem grünen Pfeil sehen, verwenden Sie **F11** in diesem Beispiel stattdessen um den Debugger an die richtige Stelle zu gelangen.
 
 6. Klicken Sie auf die **Ausführung bis Klick** Schaltfläche ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Funktionen, die Ihnen ermöglichen, Variablen untersuchen sind eines der nützli
 
 1. Bei angehaltener in die `foreach` Schleife (`for` -Schleife in C++), klicken Sie auf die **Aufrufliste** Fenster, in dem wird standardmäßig in der unteren rechten Bereich geöffnet.
 
-1. Klicken Sie auf **F11** einige Male, bis Sie anhalten im Debugger finden Sie unter den `Circle.Draw` Methode im Code-Editor. Sehen Sie sich die **Aufrufliste** Fenster.
+2. Klicken Sie auf **F11** einige Male, bis Sie anhalten im Debugger finden Sie unter den `Circle.Draw` Methode im Code-Editor. Sehen Sie sich die **Aufrufliste** Fenster.
 
     ![Überprüfen Sie die Aufrufliste](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     Die **Aufrufliste** Fenster zeigt die Reihenfolge, in dem Methoden und Funktionen werden aufgerufen. Der obersten Zeile wird die aktuelle Funktion (der `Circle.Draw` oder `Circle::Draw` -Methode in der diese app). Die zweite Zeile zeigt, dass `Circle.Draw` aufgerufen wurde, aus der `Main` Methode (`main` in C++) und so weiter.
 
-    >  [!NOTE]
-    > Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
+   > [!NOTE]
+   > Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
 
     Die Aufrufliste ist eine gute Möglichkeit zum Untersuchen und verstehen, den Ausführungsablauf der app.
 

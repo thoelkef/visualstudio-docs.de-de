@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811541"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementieren einer Schnittstelle in Visual Studio
 
@@ -36,22 +36,22 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/interface-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code in Visual Basic](media/interface-highlight-vb.png)
+       ![Hervorgehobener Code in Visual Basic](media/interface-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
 
-1. Klicken Sie im Dropdownmenü auf **Schnittstelle implementieren**.
+3. Klicken Sie im Dropdownmenü auf **Schnittstelle implementieren**.
 
    ![Vorschauversion: Implementieren von Schnittstellen](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-      ![Ergebnis der Implementierung einer Schnittstelle in C#](media/interface-result-cs.png)
+       ![Ergebnis der Implementierung einer Schnittstelle in C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![Ergebnis der Implementierung einer Schnittstelle in Visual Basic](media/interface-result-vb.png)
+       ![Ergebnis der Implementierung einer Schnittstelle in Visual Basic](media/interface-result-vb.png)
 
    > [!TIP]
    > (Nur C#) Verwenden Sie die Option **Schnittstelle explizit implementieren**, um jeder generierten Methode den Schnittstellennamen voranzustellen und so Namenskonflikte zu vermeiden.
