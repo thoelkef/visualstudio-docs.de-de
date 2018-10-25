@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851932"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 ##  <a name="BKMK_Wildcards"></a>Verwenden von Platzhaltern zum Angeben von Elementen  
  Sie können die Platzhalterzeichen **, \* und ? verwenden, um eine Gruppe von Dateien als Eingaben für einen Build anzugeben. So müssen Sie nicht alle Dateien separat auflisten.  
   
--   Das Platzhalterzeichen ? entspricht einem einzelnen Zeichen.  
+- Das Platzhalterzeichen ? entspricht einem einzelnen Zeichen.  
   
--   Das Platzhalterzeichen * entspricht 0 (null) oder mehr Zeichen.  
+- Das Platzhalterzeichen * entspricht 0 (null) oder mehr Zeichen.  
   
--   Die Platzhalterzeichenfolge ** entspricht einem partiellen Pfad.  
+- Die Platzhalterzeichenfolge ** entspricht einem partiellen Pfad.  
   
- Sie können z.B. alle CS-Dateien im Verzeichnis der Projektdatei angeben, indem Sie das folgende Element in der Projektdatei verwenden.  
+  Sie können z.B. alle CS-Dateien im Verzeichnis der Projektdatei angeben, indem Sie das folgende Element in der Projektdatei verwenden.  
   
 ```  
 <CSFile Include="*.cs"/>  

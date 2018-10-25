@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897913"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>So definieren Sie mithilfe einer Projektvorlage eine Erweiterung  
   
-1.  Erstellen Sie in einer neuen Projektmappe ein Projekt. Verwenden Sie dazu den Befehl **Neues Projekt** im Menü **Datei** .  
+1. Erstellen Sie in einer neuen Projektmappe ein Projekt. Verwenden Sie dazu den Befehl **Neues Projekt** im Menü **Datei** .  
   
-2.  Klicken Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**auf **Layer Designer Validation Extension**(Ebenen-Designer - Validierungserweiterung).  
+2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**auf **Layer Designer Validation Extension**(Ebenen-Designer - Validierungserweiterung).  
   
-     Mit dieser Vorlage wird ein Projekt mit einem kleinen Beispiel erstellt.  
+    Mit dieser Vorlage wird ein Projekt mit einem kleinen Beispiel erstellt.  
   
-    > [!WARNING]
-    >  Makethe Vorlage ordnungsgemäß funktioniert:  
-    >   
-    >  -   Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.  
-    > -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   > [!WARNING]
+   >  Makethe Vorlage ordnungsgemäß funktioniert:  
+   > 
+   > - Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.  
+   >   -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Bearbeiten Sie den Code, um die Validierung zu definieren. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).  
+3. Bearbeiten Sie den Code, um die Validierung zu definieren. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).  
   
-4.  Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+4. Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
-    > [!NOTE]
-    >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+   > [!NOTE]
+   >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
-5.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner **bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
+5. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner *bin\\*. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Hinzufügen eines Ebenenvalidierungssteuerelements zu einer separaten VSIX  
  Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Befehle und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen. Weitere Informationen zu anderen Modellerweiterungstypen finden Sie unter [Erweitern von UML-Modellen und Diagrammen](../modeling/extend-uml-models-and-diagrams.md).  
@@ -127,42 +127,42 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ##  <a name="programming"></a> Programmieren einer Validierung  
  Zum Definieren einer Ebenenvalidierungserweiterung definieren Sie eine Klasse, die über die folgenden Eigenschaften verfügt:  
   
--   Die allgemeine Form der Deklaration lautet wie folgt:  
+- Die allgemeine Form der Deklaration lautet wie folgt:  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()`melden.  
+- Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()`melden.  
   
-    > [!WARNING]
-    >  Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
+  > [!WARNING]
+  >  Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
   
- Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
+  Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
   
--   Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
+- Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
   
--   Dem Code, Projektelementen und anderen Artefakte, die in der Projektmappe definiert und als Knoten dargestellt werden, sowie den Links, die die vom Analyseprozess ermittelten Abhängigkeiten vertreten.  
+- Dem Code, Projektelementen und anderen Artefakte, die in der Projektmappe definiert und als Knoten dargestellt werden, sowie den Links, die die vom Analyseprozess ermittelten Abhängigkeiten vertreten.  
   
--   Links von den Ebenenknoten zu den Codeartefaktknoten.  
+- Links von den Ebenenknoten zu den Codeartefaktknoten.  
   
--   Knoten, die die vom Validierungssteuerelement ermittelten Fehler darstellen.  
+- Knoten, die die vom Validierungssteuerelement ermittelten Fehler darstellen.  
   
- Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.  
+  Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.  
   
 > [!NOTE]
 >  Dies ist nicht mit dem Validierungsprozess gleichzusetzen, der auf UML-Diagramme angewendet wird und auch nicht mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.  
@@ -173,25 +173,25 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
  Jeder Knoten und jeder Link verfügt über mindestens eine Kategorie, die den Typ des Elements oder der Beziehung angibt, die von ihr dargestellt wird. Die Knoten eines typischen Diagramms verfügen über die folgenden Kategorien:  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".  
+  Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".  
   
 ##  <a name="debugging"></a> Debuggen der Validierung  
  Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.  
@@ -199,11 +199,11 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test mit einer Projektmappe, die Abhängigkeiten enthält  
  Die Validierung wird erst ausgeführt, wenn die folgenden Eigenschaften vorhanden sind:  
   
--   Es gibt mindestens einen Abhängigkeitslink im Ebenendiagramm.  
+- Es gibt mindestens einen Abhängigkeitslink im Ebenendiagramm.  
   
--   Es gibt Ebenen im Modell, die Codeelementen zugeordnet sind.  
+- Es gibt Ebenen im Modell, die Codeelementen zugeordnet sind.  
   
- Öffnen oder erstellen Sie eine Projektmappe mit diesen Eigenschaften, wenn Sie eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum ersten Mal zum Testen der Validierungserweiterung starten.  
+  Öffnen oder erstellen Sie eine Projektmappe mit diesen Eigenschaften, wenn Sie eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum ersten Mal zum Testen der Validierungserweiterung starten.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Ausführen einer Projektmappenbereinigung vor dem Überprüfen der Architektur  
  Verwenden Sie bei jeder Aktualisierung des Validierungscodes im Menü **Erstellen** der experimentellen Instanz den Befehl **Projektmappe bereinigen** , bevor Sie den Befehl "Überprüfen" testen. Dies ist notwendig, da die Ergebnisse der Validierung zwischengespeichert werden. Wenn das Testebenendiagramm oder sein Code nicht aktualisiert wurden, werden die Validierungsmethoden nicht ausgeführt.  

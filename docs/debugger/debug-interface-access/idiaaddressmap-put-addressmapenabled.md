@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Put_addressmapenabled | Microsoft Docs'
+title: 'Idiaaddressmap:: Put_addressmapenabled | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb640a46825d720c5305a408fa716c6e3bed66c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f139e6d034fc3b738e345f385fbb8e8ad2150da4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915385"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Gibt an, ob die-Adresszuordnung zum Übersetzen Symbol Adressen verwendet werden soll.  
+Gibt an, ob die Adresszuordnung verwendet werden soll, um Symbol Adressen zu übersetzen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,17 +34,17 @@ HRESULT put_addressMapEnabled (
   
 #### <a name="parameters"></a>Parameter  
  NewVal  
- [in] Legen Sie auf `TRUE` So aktivieren Sie die Übersetzung von Symbolen oder `FALSE` zu deaktivieren.  
+ [in] Legen Sie auf `TRUE` die Übersetzung von Symbolen, aktivieren oder `FALSE` deaktivieren.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Ausführbare Datei nach der Prozessoren aktualisieren manchmal die ausführbare Datei. DIA enthält einen Mechanismus, um die Übersetzung der Symbole, um das neue Layout zu unterstützen.  
+ Die ausführbare Datei wird von Prozessoren für ausführbare Datei nach der Zeit zu Zeit aktualisiert. DIA enthält einen Mechanismus, um die Übersetzung von Symbolen, für das neue Layout zu unterstützen.  
   
- Eine PDB-Datei geladen wird, ist der in der Datei gespeicherten-Adresszuordnung aktiviert. Es gibt jedoch Situationen, wenn eine Clientanwendung möglicherweise Geben Sie einen eigenen-Adresszuordnung durch Aufrufen der [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode. Wenn die `set_addressMap` Methode erfolgreich ist, muss die Clientanwendung Aufrufen der `put_addressMapEnabled` Methode mit einer `NewVal` Parameter `TRUE` So aktivieren Sie die Verwendung der Adresse zugeordnet.  
+ Wenn eine PDB-Datei geladen wird, ist die Adresse-Karte, die in der Datei gespeicherten aktiviert. Es gibt jedoch Situationen, wenn eine Clientanwendung möglicherweise Geben Sie eine eigene Adresszuordnung durch Aufrufen der [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode. Wenn die `set_addressMap` Methode erfolgreich ist, muss die Clientanwendung Aufrufen der `put_addressMapEnabled` -Methode mit einem `NewVal` Parameter der `TRUE` So aktivieren Sie die Verwendung der Adresse zugeordnet.  
   
- Der aktuelle Status der Adresse Karte aktiviert abgerufen werden kann, durch einen Aufruf der [idiaaddressmap:: Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) Methode.  
+ Der aktuelle Status der Adresszuordnung aktiviert abgerufen werden kann, durch einen Aufruf der [idiaaddressmap:: Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

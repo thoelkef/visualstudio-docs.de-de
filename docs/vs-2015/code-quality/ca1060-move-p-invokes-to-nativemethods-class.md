@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913864"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes in NativeMethods-Klasse verschieben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228870"
 ## <a name="rule-description"></a>Regelbeschreibung
  Plattformaufrufmethoden, z. B. diejenigen, die mithilfe von markiert sind die <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attribut- oder mithilfe von definierten Methoden den `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], Zugriff auf nicht verwalteten Code. Diese Methoden muss sich in einem der folgenden Klassen:
 
--   **NativeMethods** -unterdrückt diese Klasse nicht Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> muss nicht auf diese Klasse angewendet werden.) Diese Klasse ist für Methoden, die an einer beliebigen Stelle verwendet werden können, da ein Stackwalk ausgeführt wird.
+- **NativeMethods** -unterdrückt diese Klasse nicht Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> muss nicht auf diese Klasse angewendet werden.) Diese Klasse ist für Methoden, die an einer beliebigen Stelle verwendet werden können, da ein Stackwalk ausgeführt wird.
 
--   **SafeNativeMethods** – diese Klasse unterdrückt Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> auf diese Klasse angewendet wird.) Diese Klasse ist für Methoden, die sicher für jeden Benutzer aufgerufen werden. Aufrufer dieser Methoden sind nicht erforderlich, um eine vollständige sicherheitsprüfung, um sicherzustellen, dass es sich bei die Verwendung sicher ist, da die Methoden für jeden Aufrufer harmlos sind auszuführen.
+- **SafeNativeMethods** – diese Klasse unterdrückt Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> auf diese Klasse angewendet wird.) Diese Klasse ist für Methoden, die sicher für jeden Benutzer aufgerufen werden. Aufrufer dieser Methoden sind nicht erforderlich, um eine vollständige sicherheitsprüfung, um sicherzustellen, dass es sich bei die Verwendung sicher ist, da die Methoden für jeden Aufrufer harmlos sind auszuführen.
 
--   **UnsafeNativeMethods** – diese Klasse unterdrückt Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> auf diese Klasse angewendet wird.) Diese Klasse ist für Methoden, die möglicherweise gefährlich sind. Jeder Aufrufer einer dieser Methoden muss eine vollständige sicherheitsprüfung, um sicherzustellen, dass es sich bei die Verwendung sicher ist, da keine Stackwalk ausgeführt wird, ausführen.
+- **UnsafeNativeMethods** – diese Klasse unterdrückt Stackwalks Berechtigung für nicht verwalteten Code. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> auf diese Klasse angewendet wird.) Diese Klasse ist für Methoden, die möglicherweise gefährlich sind. Jeder Aufrufer einer dieser Methoden muss eine vollständige sicherheitsprüfung, um sicherzustellen, dass es sich bei die Verwendung sicher ist, da keine Stackwalk ausgeführt wird, ausführen.
 
- Diese Klassen werden als deklariert `internal` (`Friend`, in Visual Basic), und deklarieren Sie einen privaten Konstruktor zu verhindern, dass neue Instanzen erstellt werden. Die Methoden in diesen Klassen muss `static` und `internal` (`Shared` und `Friend` in Visual Basic).
+  Diese Klassen werden als deklariert `internal` (`Friend`, in Visual Basic), und deklarieren Sie einen privaten Konstruktor zu verhindern, dass neue Instanzen erstellt werden. Die Methoden in diesen Klassen muss `static` und `internal` (`Shared` und `Friend` in Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, verschieben Sie die Methode an die entsprechende **NativeMethods** Klasse. Für die meisten Anwendungen, verschieben Sie P/Invokes in eine neue Klasse mit dem Namen **NativeMethods** ist ausreichend.

@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_columnnumber | Microsoft Docs'
+title: 'Idialinenumber:: Get_columnnumber | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80b0aac64ec76504ef77b7b46ab6736a4cf6111
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e7c34c61b298f46fd10e15e31eb6fd38c65bb914
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839101"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
-Ruft die Nummer der Spalte, an den Ausdruck oder Anweisung beginnt.  
+Ruft die Nummer der Spalte, an dem der Ausdruck oder Anweisung beginnt, ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_columnNumber (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Nummer der Spalte zurück, an der der Ausdruck oder Anweisung beginnt. Wenn der Wert 0 (null) ist, ist die Informationen in der Spalte nicht vorhanden.  
+ [out] Gibt die Nummer der Spalte beginnt, den Ausdruck oder Anweisung zurück. Wenn der Wert 0 (null) ist, ist die Spalteninformationen nicht vorhanden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die von dieser Methode zurückgegebene Wert ist ein Byte-Offset in der Zeile auf das erste Zeichen von der Anweisung in der Zeile.  
+ Der Spaltenwert, der von dieser Methode zurückgegebene ist ein Byteoffset in der Zeile auf das erste Zeichen der Anweisung in der Zeile.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

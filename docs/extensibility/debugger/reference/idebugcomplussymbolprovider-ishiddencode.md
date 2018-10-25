@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
+title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1a559b6ed3b9d92299fe9d4c2cc13c11319e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c1242a21dbbcc52a81e5515c19c6fd8084da74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842988"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Bestimmt, ob der Code bei der Adresse angegebenen Debugger ausgeblendet ist.  
+Bestimmt, ob der Code unter der Adresse angegebenen Debugger ausgeblendet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ int IsHiddenCode(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Die Debug-Adresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ [in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn der Code ausgeblendet ist, gibt `S_OK`ist, andernfalls gibt `S_FALSE`.  
+ Gibt zurück, wenn der Code ausgeblendet ist, `S_OK`ist, andernfalls gibt `S_FALSE`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  

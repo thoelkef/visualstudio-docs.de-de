@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862202"
 ---
 # <a name="visual-c-intellisense"></a>Visual C#-IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 ## <a name="completion-lists"></a>Vervollständigungslisten  
  Die IntelliSense-Vervollständigungslisten in Visual C# enthalten Token von „Member auflisten“, „Wort vervollständigen“ und mehr. Die Listen ermöglichen schnellen Zugriff auf:  
   
--   Member eines Typs oder Namespaces  
+- Member eines Typs oder Namespaces  
   
--   Variablen-, Befehls- und Funktionsnamen  
+- Variablen-, Befehls- und Funktionsnamen  
   
--   [Codeausschnitte](#CodeSnippets)  
+- [Codeausschnitte](#CodeSnippets)  
   
--   [Sprachschlüsselwörter](#Keywords)  
+- [Sprachschlüsselwörter](#Keywords)  
   
--   [Erweiterungsmethoden](#ExtensionMethods)  
+- [Erweiterungsmethoden](#ExtensionMethods)  
   
- Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Gefilterte Vervollständigungslisten in c#](../misc/filtered-completion-lists-in-csharp.md) und [Vorauswahl von Elementen in c#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Gefilterte Vervollständigungslisten in c#](../misc/filtered-completion-lists-in-csharp.md) und [Vorauswahl von Elementen in c#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Codeausschnitte in Vervollständigungslisten  
  In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
   
  Sie können eines der folgenden Verfahren verwenden, um die entsprechenden Optionen anzuzeigen:  
   
--   Klicken Sie auf den nicht definierten Bezeichner. Unter dem äußersten linken Zeichen wird ein kurzer Unterstrich angezeigt. Wenn Sie den Mauszeiger auf den kurzen Unterstrich bewegen, wird ein Smarttag (Symbol) angezeigt. Klicken Sie auf das Smarttag.  
+- Klicken Sie auf den nicht definierten Bezeichner. Unter dem äußersten linken Zeichen wird ein kurzer Unterstrich angezeigt. Wenn Sie den Mauszeiger auf den kurzen Unterstrich bewegen, wird ein Smarttag (Symbol) angezeigt. Klicken Sie auf das Smarttag.  
   
--   Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie STRG+. (Punkt).  
+- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie STRG+. (Punkt).  
   
--   Klicken Sie mit der rechten Maustaste auf den nicht definierten Bezeichner, und klicken Sie auf **Generieren**.  
+- Klicken Sie mit der rechten Maustaste auf den nicht definierten Bezeichner, und klicken Sie auf **Generieren**.  
   
- Die angezeigten Optionen können Folgendes umfassen:  
+  Die angezeigten Optionen können Folgendes umfassen:  
   
--   **Eigenschaftenstub generieren**  
+- **Eigenschaftenstub generieren**  
   
--   **Feldstub generieren**  
+- **Feldstub generieren**  
   
--   **Methodenstub generieren**  
+- **Methodenstub generieren**  
   
--   **Klasse generieren**  
+- **Klasse generieren**  
   
--   **Neuen Typ generieren** (für Klasse, Struktur, Schnittstelle oder Enumeration)  
+- **Neuen Typ generieren** (für Klasse, Struktur, Schnittstelle oder Enumeration)  
   
 ## <a name="generate-event-handlers"></a>Ereignishandler generieren  
  Im Code-Editor kann IntelliSense Sie beim Verknüpfen von Methoden (Ereignishandlern) mit Ereignisfeldern unterstützen.  

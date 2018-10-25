@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910926"
 ---
 # <a name="creating-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
   
  Zur Erstellung eines Bootstrapperpakets muss die weitervertreibbare Komponente in Form einer EXE- oder MSI-Datei im Bootstrapper Manifest-Generator angegeben werden. Dann werden vom Bootstrapper Manifest-Generator die folgenden Dateien erstellt:  
   
--   Das Produktmanifest, product.xml, das alle sprachneutralen Metadaten für das Paket enthält. Es enthält Metadaten, die für alle lokalisierten Versionen der verteilbaren Komponente gleich sind.  
+- Das Produktmanifest, product.xml, das alle sprachneutralen Metadaten für das Paket enthält. Es enthält Metadaten, die für alle lokalisierten Versionen der verteilbaren Komponente gleich sind.  
   
--   Das Paketmanifest, package.xml, das sprachspezifische Metadaten und in der Regel auch lokalisierte Fehlermeldungen enthält. Eine Komponente benötigt für jede lokalisierte Version dieser Komponente mindestens ein Paketmanifest.  
+- Das Paketmanifest, package.xml, das sprachspezifische Metadaten und in der Regel auch lokalisierte Fehlermeldungen enthält. Eine Komponente benötigt für jede lokalisierte Version dieser Komponente mindestens ein Paketmanifest.  
   
- Nachdem diese Dateien erstellt wurden, platzieren Sie die Produktmanifestdatei in einen entsprechend benannten Ordner für den benutzerdefinierten Bootstrapper. Die Paketmanifestdatei muss in einem Ordner, der dem Gebietsschema entsprechend benannt wurde, abgelegt werden. Wenn die Paketmanifestdatei z. B. für die Neuverteilung in englischer Sprache vorgesehen ist, legen Sie die Datei in einen Ordner mit der Bezeichnung "en" ab. Wiederholen Sie diesen Prozess für jedes Gebietsschema, z. B. "ja" für Japanisch und "de" für Deutsch. Das abschließende benutzerdefinierte Bootstrapperpaket könnte beispielsweise über die folgende Ordnerstruktur verfügen.  
+  Nachdem diese Dateien erstellt wurden, platzieren Sie die Produktmanifestdatei in einen entsprechend benannten Ordner für den benutzerdefinierten Bootstrapper. Die Paketmanifestdatei muss in einem Ordner, der dem Gebietsschema entsprechend benannt wurde, abgelegt werden. Wenn die Paketmanifestdatei z. B. für die Neuverteilung in englischer Sprache vorgesehen ist, legen Sie die Datei in einen Ordner mit der Bezeichnung "en" ab. Wiederholen Sie diesen Prozess für jedes Gebietsschema, z. B. "ja" für Japanisch und "de" für Deutsch. Das abschließende benutzerdefinierte Bootstrapperpaket könnte beispielsweise über die folgende Ordnerstruktur verfügen.  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

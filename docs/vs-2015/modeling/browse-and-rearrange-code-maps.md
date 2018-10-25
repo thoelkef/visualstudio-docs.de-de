@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896835"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Durchsuchen und Neuanordnen von Code Maps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Hinzufügen von Links zwischen vorhandenen Codeelementen  
   
-1.  Wählen Sie das Quellcodeelement aus. Über dem Codeelement wird eine Symbolleiste angezeigt.  
+1. Wählen Sie das Quellcodeelement aus. Über dem Codeelement wird eine Symbolleiste angezeigt.  
   
-     ![Abhängigkeitsdiagramm-Symbolleiste](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Abhängigkeitsdiagramm-Symbolleiste](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Wählen Sie auf der Symbolleiste das erste Symbol, **erstellen neuen Link von diesem Knoten zu dem Knoten, die Sie auf Weiter klicken,**.  
+2. Wählen Sie auf der Symbolleiste das erste Symbol, **erstellen neuen Link von diesem Knoten zu dem Knoten, die Sie auf Weiter klicken,**.  
   
-3.  Wählen Sie das Zielcodeelement aus. Zwischen den beiden Codeelementen wird ein Link angezeigt.  
+3. Wählen Sie das Zielcodeelement aus. Zwischen den beiden Codeelementen wird ein Link angezeigt.  
   
- \- oder –  
+   \- oder –  
   
-1.  Wählen Sie das Quellcodeelement in der Übersicht aus.  
+4. Wählen Sie das Quellcodeelement in der Übersicht aus.  
   
-2.  Wenn Sie eine Maus installiert haben, bewegen Sie den Mauszeiger außerhalb der Begrenzungen der Übersicht.  
+5. Wenn Sie eine Maus installiert haben, bewegen Sie den Mauszeiger außerhalb der Begrenzungen der Übersicht.  
   
-3.  Öffnen Sie das Codeelement-Kontextmenü, und wählen Sie **bearbeiten**, **hinzufügen**, **generischer Link**.  
+6. Öffnen Sie das Codeelement-Kontextmenü, und wählen Sie **bearbeiten**, **hinzufügen**, **generischer Link**.  
   
-4.  Wechseln Sie mithilfe der TABULATORTASTE zum Zielknotenelement für den Link.  
+7. Wechseln Sie mithilfe der TABULATORTASTE zum Zielknotenelement für den Link.  
   
-5.  Drücken Sie die **EINGABETASTE**.  
+8. Drücken Sie die **EINGABETASTE**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Hinzufügen eines Kommentars zu einem vorhandenen Knoten in der Übersicht  

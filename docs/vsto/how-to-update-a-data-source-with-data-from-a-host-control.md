@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839764"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:  
   
-1.  Aktualisieren der In-Memory-Datenquelle mit den geänderten Daten im Steuerelement. In der Regel ist die In-Memory-Datenquelle ein <xref:System.Data.DataSet>, eine <xref:System.Data.DataTable>oder ein anderes Datenobjekt.  
+1. Aktualisieren der In-Memory-Datenquelle mit den geänderten Daten im Steuerelement. In der Regel ist die In-Memory-Datenquelle ein <xref:System.Data.DataSet>, eine <xref:System.Data.DataTable>oder ein anderes Datenobjekt.  
   
-2.  Aktualisieren der Datenbank mit den geänderten Daten in der In-Memory-Datenquelle. Dies trifft nur zu, wenn die Datenquelle mit einer Back-End-Datenbank verbunden ist, beispielsweise einer SQL Server- oder Microsoft Office Access-Datenbank.  
+2. Aktualisieren der Datenbank mit den geänderten Daten in der In-Memory-Datenquelle. Dies trifft nur zu, wenn die Datenquelle mit einer Back-End-Datenbank verbunden ist, beispielsweise einer SQL Server- oder Microsoft Office Access-Datenbank.  
   
- Weitere Informationen über Hoststeuerelemente und Datenbindung finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md) und [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Weitere Informationen über Hoststeuerelemente und Datenbindung finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md) und [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Aktualisieren der in-Memory-Datenquelle  
  Standardmäßig speichern Hoststeuerelemente, die eine einfache Datenbindung ermöglichen (z. B. Inhaltssteuerelemente auf einem Word-Dokument oder NamedRange-Steuerelemente auf einem Excel-Arbeitsblatt), keine Datenänderungen in der In-Memory-Datenquelle. Das heißt, wenn ein Endbenutzer einen Wert in einem Hoststeuerelement ändert und anschließend das Steuerelement verlässt, wird der neue Wert im Steuerelement nicht automatisch in der Datenquelle gespeichert.  
@@ -57,16 +57,16 @@ ms.locfileid: "35673641"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>So legen Sie fest, dass ein Steuerelement die In-Memory-Datenquelle automatisch über Code aktualisiert  
   
-1.  Verwenden Sie den System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Modus, der die <xref:System.Windows.Forms.Binding> -Objekt, das das Steuerelement an die Datenquelle gebunden. Es gibt zwei Optionen zum Aktualisieren der Datenquelle:  
+1. Verwenden Sie den System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Modus, der die <xref:System.Windows.Forms.Binding> -Objekt, das das Steuerelement an die Datenquelle gebunden. Es gibt zwei Optionen zum Aktualisieren der Datenquelle:  
   
-    -   Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wird diese Eigenschaft auf System.Windows.Forms.DataSourceUpdateMode.OnValidation fest.  
+   - Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wird diese Eigenschaft auf System.Windows.Forms.DataSourceUpdateMode.OnValidation fest.  
   
-    -   Um die Datenquelle aktualisiert, wenn der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wird diese Eigenschaft auf System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged fest.  
+   - Um die Datenquelle aktualisiert, wenn der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wird diese Eigenschaft auf System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged fest.  
   
-        > [!NOTE]  
-        >  Die System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Option gilt nicht für Word-Hoststeuerelemente, da Word keine Angebot Dokument- oder steuerelementänderungen Benachrichtigungen ist. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.  
+     > [!NOTE]  
+     >  Die System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Option gilt nicht für Word-Hoststeuerelemente, da Word keine Angebot Dokument- oder steuerelementänderungen Benachrichtigungen ist. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.  
   
-     Im folgenden Beispiel wird ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement so konfiguriert, dass die Datenquelle automatisch aktualisiert wird, wenn sich der Wert im Steuerelement ändert. Für dieses Beispiel wird davon ausgegangen, dass Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement namens `namedRange1` haben, dessen <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> -Eigenschaft an ein Feld in einer Datenquelle gebunden ist.  
+     Im folgenden Beispiel wird ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement so konfiguriert, dass die Datenquelle automatisch aktualisiert wird, wenn sich der Wert im Steuerelement ändert. Für dieses Beispiel wird davon ausgegangen, dass Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement namens `namedRange1` haben, dessen <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>-Eigenschaft an ein Feld in einer Datenquelle gebunden ist.  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
@@ -92,7 +92,7 @@ ms.locfileid: "35673641"
   
 6.  Schließen sie das Dialogfeld **Formatierung und erweiterte Bindung** .  
   
-## <a name="update-the-database"></a>Aktualisieren Sie die Datenbank  
+## <a name="update-the-database"></a>Aktualisieren der Datenbank  
  Wenn die In-Memory-Datenquelle mit einer Datenbank verknüpft ist, müssen Sie die Datenbank mit den Änderungen an der Datenquelle aktualisieren. Weitere Informationen zum Aktualisieren einer Datenbank finden Sie unter [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md) und [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
 ### <a name="to-update-the-database"></a>So aktualisieren Sie die Datenbank  

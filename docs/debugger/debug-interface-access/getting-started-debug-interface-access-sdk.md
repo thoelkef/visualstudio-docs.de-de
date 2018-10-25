@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte (Debug Interface Access SDK) | Microsoft Docs
+title: Erste Schritte (Debug Interface Access SDK) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,37 +15,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e5cfcad351f19f48678d575e11b074375c6aaadc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887293"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Erste Schritte (Debug Interface Access SDK)
-Das Debug Interface Access (DIA) SDK liefert Anweisungstext Dokumentation und ein Beispiel, das veranschaulicht, wie die DIA-API verwenden. Verwenden Sie die Schnittstellen und Methoden in DIA-SDK, benutzerdefinierte Anwendungen entwickeln, die die PDB-Datei und .dbg-Dateien öffnen und ihre Inhalte für Symbole, Werte, Attribute, Adressen und andere Debuginformationen zu suchen. Dieses SDK bietet auch Verweistabellen für die Eigenschaften für die Symbole in C++-Anwendungen gefunden wurden.  
+Die Debug Interface Access (DIA) SDK stellt Sie bereit, mit dem Lehrzwecken Dokumentation und ein Beispiel, das veranschaulicht, wie Sie die DIA-API verwenden. Verwenden Sie die Schnittstellen und Methoden in DIA-SDK zum Entwickeln von benutzerdefinierter Anwendungen, die die PDB-Datei und .dbg-Dateien öffnen, und suchen Sie ihre Inhalte für Symbole, Werte, Attribute, Adressen und andere Debugginginformationen. Dieses SDK stellt außerdem Verweistabellen für die Eigenschaften für Symbole finden Sie in der C++-Anwendungen.  
   
- Um das DIA SDK zu verwenden, sollten Sie mit folgendem vertraut sein:  
+ Um die DIA-SDK zu verwenden, sollten Sie mit folgendem vertraut sein:  
   
--   Die Programmiersprache C++  
+- Programmiersprache C++  
   
--   COM-Programmierung  
+- COM-Programmierung  
   
--   Visual Studio integrierten Entwicklungsumgebung (IDE) für das Kompilieren der Beispiele  
+- Visual Studio integrierte Entwicklungsumgebung (IDE) für die Beispiele kompilieren  
   
- Das DIA SDK wird normalerweise mit Visual Studio installiert und wird von seinem Standardspeicherort *[Laufwerk]* \Programme\Microsoft Visual Studio 9.0\DIA SDK. Im Rahmen der Installation wird "MSDIA90.dll", das das DIA SDK implementiert, wird automatisch registriert, damit tun können, um es verwenden, müssen Sie lediglich einschließen `dia2.h` in Ihrem Programm und Verknüpfung mit `diaguids.lib`.  
+  Die DIA-SDK wird normalerweise mit Visual Studio installiert und wird von seinem Standardspeicherort *[Laufwerk]* \Programme\Microsoft Visual Studio-9.0\DIA SDK. Im Rahmen der Installation wird der "MSDIA90.dll", das die DIA-SDK implementiert, wird automatisch registriert, daher müssen Sie es verwenden sollen `dia2.h` in Ihrem Programm und Verknüpfung mit `diaguids.lib`.  
   
- Header: include\dia2.h  
+  Header: include\dia2.h  
   
- Bibliothek: lib\diaguids.lib  
+  Bibliothek: lib\diaguids.lib  
   
- DLL: bin\msdia80.dll  
+  DLL: bin\msdia80.dll  
   
- IDL: idl\dia2.idl  
+  IDL: idl\dia2.idl  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- Überprüft die grundlegende Architektur von DIA.  
+ Überprüft die grundlegende Architektur von Dia  
   
  [Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  Enthält schrittweise Anleitungen zur Verwendung der DIA-API zum Abfragen der PDB-Datei an.  

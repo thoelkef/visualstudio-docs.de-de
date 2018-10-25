@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827024"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Die VSPerfCmd.exe-Optionen **GlobalOff** und **GlobalOn** halten die Profilerste
   
  Die Optionen **GlobalOff** und **GlobalOn** beeinflussen auch die globale Start/Stop-Anzahl, die von den API-Funktionen des Profilers manipuliert wird.  
   
--   **GlobalOff** legt die globale Start/Stop-Anzahl sofort auf 0 fest und hält die Profilerstellung daher an.  
+- **GlobalOff** legt die globale Start/Stop-Anzahl sofort auf 0 fest und hält die Profilerstellung daher an.  
   
--   **GlobalOn** legt die globale Start/Stop-Anzahl sofort auf 1 fest und setzt die Profilerstellung daher fort.  
+- **GlobalOn** legt die globale Start/Stop-Anzahl sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
- Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
+  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntax  
   

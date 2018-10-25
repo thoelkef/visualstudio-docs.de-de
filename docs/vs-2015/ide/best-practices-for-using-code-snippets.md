@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919909"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
 ## <a name="security"></a>Sicherheit  
  Wie sicher ein Ausschnitt ist, hängt davon ab, wo er im Quellcode verwendet wird und wie er geändert wird, nachdem er in den Code eingefügt wurde. Die folgende Liste enthält einige der zu berücksichtigenden Bereiche.  
   
--   Zugriff auf Dateien und Datenbanken  
+- Zugriff auf Dateien und Datenbanken  
   
--   Codezugriffssicherheit  
+- Codezugriffssicherheit  
   
--   Schützen von Ressourcen (z.B. Ereignisprotokolle, Registrierung)  
+- Schützen von Ressourcen (z.B. Ereignisprotokolle, Registrierung)  
   
--   Speichern von geheimen Daten  
+- Speichern von geheimen Daten  
   
--   Überprüfen von Eingaben  
+- Überprüfen von Eingaben  
   
--   Übergeben von Daten an Skriptingtechnologien  
+- Übergeben von Daten an Skriptingtechnologien  
   
- Weitere Informationen finden Sie unter [Sichern von Anwendungen](../ide/securing-applications.md).  
+  Weitere Informationen finden Sie unter [Sichern von Anwendungen](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Heruntergeladene Codeausschnitte  
  IntelliSense-Codeausschnitte, die von Visual Studio installiert werden, sind in sich selbst kein Sicherheitsrisiko. Allerdings können sie Sicherheitsrisiken in Ihrer Anwendung erstellen. Aus dem Internet heruntergeladene Ausschnitte sollten wie jeglicher anderer heruntergeladener Inhalt mit äußerster Sorgfalt behandelt werden.  

@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885604"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Ausführen einer unbeaufsichtigten Installation auf einem Clientcomputer  
   
--   Öffnen der **starten** Menü wählen **ausführen**, und geben Sie dann \\ \\ *ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- Öffnen der **starten** Menü wählen **ausführen**, und geben Sie dann \\ \\ *ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     Beispielsweise können Sie die folgende Befehlszeile angeben: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   Beispielsweise können Sie die folgende Befehlszeile angeben: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Aktivieren von Clients, um Visual Studio mit vordefinierten Einstellungen manuell zu installieren  
   
@@ -115,59 +115,59 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Ändern der AdminDeployment-Einstellungen auf einem Clientcomputer nach der Installation von Visual Studio  
   
-1.  Aktualisieren Sie ggf. "AdminDeployment.xml".  
+1. Aktualisieren Sie ggf. "AdminDeployment.xml".  
   
-2.  Öffnen Sie das Menü **Start** , und wählen Sie dann **Ausführen**aus.  
+2. Öffnen Sie das Menü **Start** , und wählen Sie dann **Ausführen**aus.  
   
-3.  Geben Sie den folgenden Text: \\ \\ *ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" PathToAdmindeployment.xml-Datei  
+3. Geben Sie den folgenden Text: \\ \\ *ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" PathToAdmindeployment.xml-Datei  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     Beispielsweise können Sie die folgende Befehlszeile angeben: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    Beispielsweise können Sie die folgende Befehlszeile angeben: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- "Reparieren" ist der Standardparameter nach der Installation von Visual Studio. Wenn Sie Visual Studio mit aktualisierter/adminfile reparieren, überschreiben Sie die aktuellen Einstellungen der Admin-Bereitstellung mit denjenigen, die die aktualisierte AdminDeployment.xml-Datei aufruft.  
+   "Reparieren" ist der Standardparameter nach der Installation von Visual Studio. Wenn Sie Visual Studio mit aktualisierter/adminfile reparieren, überschreiben Sie die aktuellen Einstellungen der Admin-Bereitstellung mit denjenigen, die die aktualisierte AdminDeployment.xml-Datei aufruft.  
   
 ## <a name="updating-an-installation"></a>Aktualisieren einer installation  
  Microsoft hat einige Updates für Visual Studio 2015 veröffentlicht. In diesem Abschnitt wird erläutert, wie Sie Ihr Image für die unbeaufsichtigte Installation von Visual Studio 2015 aktualisieren, sodass sie die Updates enthält.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Um eine unbeaufsichtigte Installation von Visual Studio zu aktualisieren.  
   
-1.  Suchen Sie die Product.exe-Datei in das bestehende Netzwerkimage um, mit der rechten Maustaste sie und klicken Sie dann auf **Eigenschaften**.  
+1. Suchen Sie die Product.exe-Datei in das bestehende Netzwerkimage um, mit der rechten Maustaste sie und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **Details** Registerkarte, und notieren Sie sich die **Produktversion** Eigenschaft.  
+2. Klicken Sie auf die **Details** Registerkarte, und notieren Sie sich die **Produktversion** Eigenschaft.  
   
-     ![Beispiel für das Dialogfeld "Eigenschaften" in einer unbeaufsichtigten Installation von Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "für die unbeaufsichtigte Installation - Dialogfeld")  
+    ![Beispiel für das Dialogfeld "Eigenschaften" in einer unbeaufsichtigten Installation von Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "für die unbeaufsichtigte Installation - Dialogfeld")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Wenn die Produktversion 14.0.24720.0 oder 14.0.24720.1 ist, gehen Sie wie folgt vor:  
-4.  1.  Führen Sie *Product.exe* /Layout *Laufwerk:* \IDEinstall auf einem Computer, der Zugang zum Internet hat. (Z. B. ausführen: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Wenn die Produktversion 14.0.24720.0 oder 14.0.24720.1 ist, gehen Sie wie folgt vor:  
+4. 1.  Führen Sie *Product.exe* /Layout *Laufwerk:* \IDEinstall auf einem Computer, der Zugang zum Internet hat. (Z. B. ausführen: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Nachdem die/Layout abgeschlossen ist, kopieren Sie das neue Image an einem neuen Speicherort.  
+   2.  Nachdem die/Layout abgeschlossen ist, kopieren Sie das neue Image an einem neuen Speicherort.  
   
-    3.  Erstellen Sie und ändern Sie die Datei "admindeployment.xml". Verwenden Sie hierzu die `/CreateAdminFile`  *\<Dateispeicherort >* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt "Bereitstellen von Visual Studio im unbeaufsichtigten Modus" in diesem Artikel.)  
+   3.  Erstellen Sie und ändern Sie die Datei "admindeployment.xml". Verwenden Sie hierzu die `/CreateAdminFile`  *\<Dateispeicherort >* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt "Bereitstellen von Visual Studio im unbeaufsichtigten Modus" in diesem Artikel.)  
   
-    4.  Führen Sie auf dem Clientcomputer, den folgenden Befehl aus, um die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  "/ adminfile" \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
+   4.  Führen Sie auf dem Clientcomputer, den folgenden Befehl aus, um die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  "/ adminfile" \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
   
-         Führen Sie zum Beispiel aus: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>Gehen Sie für andere produktversionswerte folgendermaßen vor:  
-6.  1.  Führen Sie *Product.exe* /Layout *Laufwerk:* \IDEinstall auf einem Computer, der Zugang zum Internet hat. (Führen Sie z. B. `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        Führen Sie zum Beispiel aus: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Gehen Sie für andere produktversionswerte folgendermaßen vor:  
+6. 1.  Führen Sie *Product.exe* /Layout *Laufwerk:* \IDEinstall auf einem Computer, der Zugang zum Internet hat. (Führen Sie z. B. `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Nachdem die/Layout abgeschlossen ist, kopieren Sie das neue Image an einem neuen Speicherort. (Oder Sie können stattdessen das bestehende Netzwerkimage um überschreiben.)  
+   2.  Nachdem die/Layout abgeschlossen ist, kopieren Sie das neue Image an einem neuen Speicherort. (Oder Sie können stattdessen das bestehende Netzwerkimage um überschreiben.)  
   
-    3.  Erstellen Sie und ändern Sie die Datei "admindeployment.xml". Verwenden Sie hierzu die `/CreateAdminFile`  *\<Dateispeicherort >* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt "Bereitstellen von Visual Studio im unbeaufsichtigten Modus" in diesem Artikel.)  
+   3.  Erstellen Sie und ändern Sie die Datei "admindeployment.xml". Verwenden Sie hierzu die `/CreateAdminFile`  *\<Dateispeicherort >* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt "Bereitstellen von Visual Studio im unbeaufsichtigten Modus" in diesem Artikel.)  
   
-    4.  Wenn Sie das Bild in einem neuen Speicherort kopieren, müssen Sie den folgenden Befehl ausführen, auf dem Clientcomputer, die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert haben: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* "/ adminfile" \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
+   4.  Wenn Sie das Bild in einem neuen Speicherort kopieren, müssen Sie den folgenden Befehl ausführen, auf dem Clientcomputer, die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert haben: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* "/ adminfile" \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
   
-         Führen Sie zum Beispiel aus: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        Führen Sie zum Beispiel aus: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  Wenn Sie das bestehende Netzwerkimage um überschreiben, können können Sie den Befehl ausführen, wie im vorherigen Schritt aufgeführt, oder Sie Folgendes:  
+   5.  Wenn Sie das bestehende Netzwerkimage um überschreiben, können können Sie den Befehl ausführen, wie im vorherigen Schritt aufgeführt, oder Sie Folgendes:  
   
-    6.  1.  Öffnen Sie **Systemsteuerung**, und wählen Sie dann **Programme und Funktionen**aus.  
+   6.  1.  Öffnen Sie **Systemsteuerung**, und wählen Sie dann **Programme und Funktionen**aus.  
   
-        2.  Wählen Sie **Visual Studio**, und wählen Sie dann **Änderung**.  
+       2.  Wählen Sie **Visual Studio**, und wählen Sie dann **Änderung**.  
   
-        3.  Nach dem Start von Visual Studio im Wartungsmodus befindet, klicken Sie auf **ändern**.  
+       3.  Nach dem Start von Visual Studio im Wartungsmodus befindet, klicken Sie auf **ändern**.  
   
-        4.  Das neueste Update sollte auf der Seite "Features" angezeigt werden. Wählen Sie die anderen Funktionen, die Sie installieren möchten, klicken Sie auf **Weiter**, und klicken Sie dann auf **aktualisieren** sowohl für das Update als auch für die neuen Features zu installieren.  
+       4.  Das neueste Update sollte auf der Seite "Features" angezeigt werden. Wählen Sie die anderen Funktionen, die Sie installieren möchten, klicken Sie auf **Weiter**, und klicken Sie dann auf **aktualisieren** sowohl für das Update als auch für die neuen Features zu installieren.  
   
 ## <a name="registering-the-product"></a>Das Produkt registrieren  
  Nachdem die Installation abgeschlossen ist, können Sie Ihre Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]heraus registrieren.  

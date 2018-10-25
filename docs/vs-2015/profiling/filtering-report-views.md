@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878452"
 ---
 # <a name="filtering-report-views"></a>Filtern von Berichtsansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>So erstellen Sie in der Ansicht für Markierungsberichte einen Profilerberichtsfilter  
   
-1.  Wählen Sie auf der Symbolleiste „Leistungsberichtansicht“ in der Liste **Aktuelle Ansicht** den Eintrag **Markierungen** aus.  
+1. Wählen Sie auf der Symbolleiste „Leistungsberichtansicht“ in der Liste **Aktuelle Ansicht** den Eintrag **Markierungen** aus.  
   
-     Der Profilerbericht Markierungen wird angezeigt.  
+    Der Profilerbericht Markierungen wird angezeigt.  
   
-2.  Wählen Sie das ETW- oder Samplingereignis aus, die Sie als Ausgangspunkt des Berichts verwenden möchten.  
+2. Wählen Sie das ETW- oder Samplingereignis aus, die Sie als Ausgangspunkt des Berichts verwenden möchten.  
   
-3.  Halten Sie STRG gedrückt, und klicken Sie auf das Ereignis, das Sie als Endpunkt des Berichts verwenden möchten.  
+3. Halten Sie STRG gedrückt, und klicken Sie auf das Ereignis, das Sie als Endpunkt des Berichts verwenden möchten.  
   
-4.  Klicken Sie mit der rechten Maustaste, und wählen Sie eine der folgenden Optionen aus:  
+4. Klicken Sie mit der rechten Maustaste, und wählen Sie eine der folgenden Optionen aus:  
   
-    -   Mit **Filter für Markierungen hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Markierung“ als Filterfeld verwendet wird.  
+   - Mit **Filter für Markierungen hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Markierung“ als Filterfeld verwendet wird.  
   
-    -   Mit **Filter für Timestamps hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Timestamp in Millisekunden“ als Filterfeld verwendet wird.  
+   - Mit **Filter für Timestamps hinzufügen** erstellen Sie Filterklauseln, in denen die Spalte „Timestamp in Millisekunden“ als Filterfeld verwendet wird.  
   
      Mit den beiden Optionen filtern Sie die aktuelle Datendatei an den gleichen Ausgangs- und Endpunkten. Wenn Sie den Filter zur Verwendung in anderen Berichten exportieren, können sich beide Optionen besser eignen.  
   

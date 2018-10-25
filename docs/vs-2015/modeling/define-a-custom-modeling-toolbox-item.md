@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879531"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 ### <a name="what-the-custom-tool-will-replicate"></a>Was vom benutzerdefinierten Tool repliziert wird  
  Ein benutzerdefiniertes Tool repliziert die meisten Funktionen des Quelldiagramms:  
   
--   Namen Wenn ein Element aus der Toolbox erstellt wird, wird bei Bedarf eine Zahl am Ende des Namens hinzugefügt, um doppelte Namen im selben Namespace zu verhindern.  
+- Namen Wenn ein Element aus der Toolbox erstellt wird, wird bei Bedarf eine Zahl am Ende des Namens hinzugefügt, um doppelte Namen im selben Namespace zu verhindern.  
   
--   Farben, Größen und Formen  
+- Farben, Größen und Formen  
   
--   Stereotype und Paketprofile  
+- Stereotype und Paketprofile  
   
--   Eigenschaftswerte wie z. B. Is Abstract  
+- Eigenschaftswerte wie z. B. Is Abstract  
   
--   Verknüpfte Arbeitsaufgaben  
+- Verknüpfte Arbeitsaufgaben  
   
--   Multiplizitäten und andere Eigenschaften von Beziehungen  
+- Multiplizitäten und andere Eigenschaften von Beziehungen  
   
--   Die relativen Positionen von Formen  
+- Die relativen Positionen von Formen  
   
- Die folgenden Funktionen werden in einem benutzerdefinierten Tool nicht beibehalten:  
+  Die folgenden Funktionen werden in einem benutzerdefinierten Tool nicht beibehalten:  
   
--   Einfache Formen Hierbei handelt es sich um Formen, die nicht im Zusammenhang mit Modellelementen stehen, die Sie in einigen Arten von Diagrammen zeichnen können.  
+- Einfache Formen Hierbei handelt es sich um Formen, die nicht im Zusammenhang mit Modellelementen stehen, die Sie in einigen Arten von Diagrammen zeichnen können.  
   
--   Connector-Routing Wenn Sie Connectors manuell weiterleiten, wird das Routing nicht beibehalten, wenn das Tool verwendet wird. Die Positionen einiger geschachtelter Formen, wie z. B. Ports, werden in Bezug auf ihre Besitzer nicht beibehalten.  
+- Connector-Routing Wenn Sie Connectors manuell weiterleiten, wird das Routing nicht beibehalten, wenn das Tool verwendet wird. Die Positionen einiger geschachtelter Formen, wie z. B. Ports, werden in Bezug auf ihre Besitzer nicht beibehalten.  
   
 ##  <a name="tbxinfo"></a> Gewusst wie: Definieren Sie die Eigenschaften des benutzerdefinierten Tools  
  Einer Toolboxinformationsdatei (**tbxinfo**) Datei können Sie geben Sie einen Toolboxnamen, die Symbol, die QuickInfo, die Registerkarte, und ein Hilfeschlüsselwort für ein oder mehrere benutzerdefinierte Tools. Geben sie einen beliebigen Namen, wie z. B. **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
  Der Wert jedes Elements kann Folgendes sein:  
   
--   `<bmp fileName="…"/>` für das Toolboxsymbol und `<value>string</value>` für die anderen Elemente, wie in dem Beispiel dargestellt.  
+- `<bmp fileName="…"/>` für das Toolboxsymbol und `<value>string</value>` für die anderen Elemente, wie in dem Beispiel dargestellt.  
   
- \- oder –  
+  \- oder –  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     In diesem Fall geben Sie eine kompilierte Assembly an, in der die Zeichenfolgenwerte als Ressourcen kompiliert wurden.  
+   In diesem Fall geben Sie eine kompilierte Assembly an, in der die Zeichenfolgenwerte als Ressourcen kompiliert wurden.  
   
- Fügen Sie einen `<customToolboxItem>`-Knoten für jedes Toolboxelement hinzu, das Sie definieren möchten.  
+  Fügen Sie einen `<customToolboxItem>`-Knoten für jedes Toolboxelement hinzu, das Sie definieren möchten.  
   
- Die Knoten in der **tbxinfo** -Datei sind wie folgt. Es gibt einen Standardwert für jeden Knoten.  
+  Die Knoten in der **tbxinfo** -Datei sind wie folgt. Es gibt einen Standardwert für jeden Knoten.  
   
 |Knotenname|Definiert|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>So stellen Sie Versionen des Tools in mehreren Sprachen bereit  
   
-1.  Erstellen Sie ein Visual Studio-Erweiterungsprojekt, das ein oder mehrere benutzerdefinierte Tools enthält.  
+1. Erstellen Sie ein Visual Studio-Erweiterungsprojekt, das ein oder mehrere benutzerdefinierte Tools enthält.  
   
-     In der **tbxinfo** Datei, verwenden Sie zum Definieren des Tools Ressourcendateimethode `displayName`, Toolbox `tabName`, und der QuickInfo. Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.  
+    In der **tbxinfo** Datei, verwenden Sie zum Definieren des Tools Ressourcendateimethode `displayName`, Toolbox `tabName`, und der QuickInfo. Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.  
   
-2.  Erstellen Sie zusätzliche Assemblys, die Ressourcendateien mit Zeichenfolgen in anderen Sprachen enthalten.  
+2. Erstellen Sie zusätzliche Assemblys, die Ressourcendateien mit Zeichenfolgen in anderen Sprachen enthalten.  
   
-3.  Legen Sie jede zusätzliche Assembly in einen Ordner, dessen Name der Kulturcode für die Sprache ist. Platzieren Sie z. B. eine französische Version der Assembly in einen Ordner mit dem Namen **"fr"**.  
+3. Legen Sie jede zusätzliche Assembly in einen Ordner, dessen Name der Kulturcode für die Sprache ist. Platzieren Sie z. B. eine französische Version der Assembly in einen Ordner mit dem Namen **"fr"**.  
   
-4.  Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu kulturcodes finden Sie unter [CultureInfo.GetCultures-Methode](http://go.microsoft.com/fwlink/?LinkId=160782), die eine vollständige Liste der kulturcodes bereitstellt.  
+4. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu kulturcodes finden Sie unter [CultureInfo.GetCultures-Methode](http://go.microsoft.com/fwlink/?LinkId=160782), die eine vollständige Liste der kulturcodes bereitstellt.  
   
-5.  Erstellen Sie die Visual Studio-Erweiterung, und verteilen Sie sie.  
+5. Erstellen Sie die Visual Studio-Erweiterung, und verteilen Sie sie.  
   
-6.  Wenn die Erweiterung auf einem anderen Computer installiert ist, wird die Version der Ressourcendatei für die lokale Kultur des Benutzers automatisch geladen. Wenn Sie keine Version für die Kultur des Benutzers angegeben haben, werden die Standardressourcen verwendet.  
+6. Wenn die Erweiterung auf einem anderen Computer installiert ist, wird die Version der Ressourcendatei für die lokale Kultur des Benutzers automatisch geladen. Wenn Sie keine Version für die Kultur des Benutzers angegeben haben, werden die Standardressourcen verwendet.  
   
- Sie können diese Methode verwenden, um verschiedene Versionen des Prototypdiagramms zu installieren. Die Namen von Elementen und Connectors sind in jeder Installation identisch.  
+   Sie können diese Methode verwenden, um verschiedene Versionen des Prototypdiagramms zu installieren. Die Namen von Elementen und Connectors sind in jeder Installation identisch.  
   
 ## <a name="other-toolbox-operations"></a>Andere Toolboxvorgänge  
  In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] können Sie normalerweise die Toolbox anpassen, indem Sie Tools umbenennen, diese in andere Toolboxregisterkarten verschieben und löschen. Aber diese Änderungen werden für benutzerdefinierte Modellierungstools, die mit den in diesem Thema beschriebenen Verfahren erstellt wurden, nicht beibehalten. Beim Neustart von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] werden benutzerdefinierte Tools wieder mit ihren definierten Namen und Toolboxspeicherorten angezeigt.  

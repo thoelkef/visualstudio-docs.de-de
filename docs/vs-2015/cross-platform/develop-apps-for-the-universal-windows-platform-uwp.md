@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909054"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
   
  Hier finden Sie die Liste erforderlicher Softwarekomponenten:  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Stellen Sie sicher, dass die Tools für die universelle Windows-App-Entwickung in der Liste der optionalen Features ausgewählt sind. Ohne diese Tools können Sie keine universellen Apps erstellen.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Stellen Sie sicher, dass die Tools für die universelle Windows-App-Entwickung in der Liste der optionalen Features ausgewählt sind. Ohne diese Tools können Sie keine universellen Apps erstellen.  
   
- Nach der Installation der Software müssen Sie Ihr [Windows 10-Gerät](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) für die Entwicklung aktivieren. (Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.)  
+  Nach der Installation der Software müssen Sie Ihr [Windows 10-Gerät](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) für die Entwicklung aktivieren. (Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.)  
   
- **Windows 8.1- und Windows 7-Unterstützung**  
+  **Windows 8.1- und Windows 7-Unterstützung**  
   
- Wenn Sie universelle Windows-Apps mit Visual Studio 2015 auf einer anderen Plattform als Windows 10 entwickeln möchten, sind dies die Einschränkungen:  
+  Wenn Sie universelle Windows-Apps mit Visual Studio 2015 auf einer anderen Plattform als Windows 10 entwickeln möchten, sind dies die Einschränkungen:  
   
--   Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können die Emulatoren in Visual Studio, jedoch nicht den Simulator verwenden.  
+- Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können die Emulatoren in Visual Studio, jedoch nicht den Simulator verwenden.  
   
--   Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können weder die Emulatoren noch den Simulator in Visual Studio verwenden.  
+- Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können weder die Emulatoren noch den Simulator in Visual Studio verwenden.  
   
- Sie können den XAML-Designer nur verwenden, wenn Ihre Entwicklungsplattform Windows 10 ist.  
+  Sie können den XAML-Designer nur verwenden, wenn Ihre Entwicklungsplattform Windows 10 ist.  
   
 ## <a name="universal-windows-apps"></a>Universelle Windows-Apps  
  Wählen Sie Ihre bevorzugte Entwicklungssprache aus C#, Visual Basic, C++ oder JavaScript aus, um [eine universelle Windows-App für Geräte unter Windows 10 zu erstellen](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Oder schauen Sie sich dieses [Video zu den Ersten Schritten](http://channel9.msdn.com/Series/ConnectOn-Demand/229)an.  

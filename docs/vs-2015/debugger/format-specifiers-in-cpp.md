@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894052"
 ---
 # <a name="format-specifiers-in-c"></a>Formatbezeichner in C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
   
 > [!NOTE]
 >  Der systemeigene Debugger in Visual Studio wurde als neue Debug-Engine konstruiert. Im Rahmen dieser Änderung wurden mehrere neue Formatbezeichner hinzugefügt und einige alte Formatbezeichner entfernt. Der ältere Debugger wird weiterhin verwendet, wenn Sie das Interop-Debuggen (systemeigen und verwaltet) mit C++/CLI durchführen. Folgende Abschnitte in diesem Thema erläutern die Formatbezeichner für jede Debug-Engine.  
->   
->  -   [Formatbezeichner](#BKMK_Visual_Studio_2012_format_specifiers) werden die Formatbezeichner in der neuen Debug-Engine beschrieben.  
-> -   [Formatbezeichner für das Interop-Debuggen mit C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) werden die Formatbezeichner in der älteren Debug-Engine beschrieben.  
+> 
+> - [Formatbezeichner](#BKMK_Visual_Studio_2012_format_specifiers) werden die Formatbezeichner in der neuen Debug-Engine beschrieben.  
+>   -   [Formatbezeichner für das Interop-Debuggen mit C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) werden die Formatbezeichner in der älteren Debug-Engine beschrieben.  
   
 ## <a name="using-format-specifiers"></a>Verwenden von Formatbezeichnern  
  Wenn Ihr Code folgendermaßen lautet:  

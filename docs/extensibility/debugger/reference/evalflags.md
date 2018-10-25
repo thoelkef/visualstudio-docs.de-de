@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: EVALFLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829962"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Gibt Flags an, die Auswertung von Ausdrücken zu steuern.  
+Gibt Flags an, die Auswertung des Ausdrucks steuern.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -57,22 +57,22 @@ public enum enum_EVALFLAGS {
  Gibt an, dass der Rückgabewert, sofern vorhanden, ausgewertet werden.  
   
  EVAL_NOSIDEEFFECTS  
- Gibt an, dass Nebeneffekte nicht zulässig.  
+ Gibt an, dass Nebenwirkungen nicht zugelassen werden.  
   
  EVAL_ALLOWBPS  
- Gibt den Beenden an Haltepunkten an.  
+ Gibt die für Haltepunkte wird beendet.  
   
  EVAL_ALLOWERRORREPORT  
- Gibt an, Fehlerberichte an den Host zugelassen werden. In erster Linie verwendet für die Auswertung von Ausdrücken im Skript in Internet Explorer.  
+ Gibt die Windows-Fehlerberichterstattung mit dem Host zulässig sein soll. In erster Linie verwendet für die Auswertung des Ausdrucks im Skript in Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Erzwingt, dass Funktionen, die als Adressen, statt den Funktionsaufruf ausgewertet werden.  
+ Erzwingt, dass Funktionen wie Adressen, anstelle von Aufrufen der Funktion ausgewertet werden soll.  
   
  EVAL_NOFUNCEVAL  
- Verhindern Sie, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, jedoch nicht als Wert richtig ausgewertet werden.  
+ Verhindert, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, aber nicht als Wert ordnungsgemäß ausgewertet werden.  
   
  EVAL_NOEVENTS  
- Kennzeichen Sie, um anzugeben, dass Ereignisse während der Auswertung von Ausdrücken nicht zu der Sitzung Debug-Manager (SDM) oder der IDE gesendet werden sollen.  
+ Flag, um anzugeben, dass Ereignisse während der Auswertung des Ausdrucks nicht sitzungsbasierter Debug-Manager (SDM) oder die IDE gesendet werden sollen.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Flags werden übergeben, als Argument an die [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methoden.  

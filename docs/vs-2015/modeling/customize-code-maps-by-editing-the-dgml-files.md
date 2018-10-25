@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc6ef0463f98b5aec938ff7748a64b34b32c3934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843833"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,43 +45,43 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 ##  <a name="OrganizeNodes"></a> Gruppencodeelemente  
  Sie können neue Gruppen hinzufügen oder vorhandene Knoten in eine Gruppe konvertieren.  
   
-1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
+1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
   
-2.  Um ein Codeelement in eine Gruppe zu konvertieren, suchen Sie das `<Node/>`-Element für diese Codeelement.  
+2. Um ein Codeelement in eine Gruppe zu konvertieren, suchen Sie das `<Node/>`-Element für diese Codeelement.  
   
-     \- oder –  
+    \- oder –  
   
-     Suchen Sie den `<Nodes>`-Abschnitt, um eine neue Gruppe hinzuzufügen. Fügen Sie ein neues `<Node/>`-Element hinzu.  
+    Suchen Sie den `<Nodes>`-Abschnitt, um eine neue Gruppe hinzuzufügen. Fügen Sie ein neues `<Node/>`-Element hinzu.  
   
-3.  Fügen Sie im `<Node/>`-Element ein `Group`-Attribut hinzu, um anzugeben, ob die Gruppe erweitert oder reduziert angezeigt werden soll. Zum Beispiel:  
+3. Fügen Sie im `<Node/>`-Element ein `Group`-Attribut hinzu, um anzugeben, ob die Gruppe erweitert oder reduziert angezeigt werden soll. Zum Beispiel:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyFirstGroup" Group="Expanded" />  
-       <Node Id="MySecondGroup" Group="Collapsed" />  
-    </Nodes>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyFirstGroup" Group="Expanded" />  
+      <Node Id="MySecondGroup" Group="Collapsed" />  
+   </Nodes>  
+   ```  
   
-4.  Vergewissern Sie sich im `<Links>`-Abschnitt, dass für jede Beziehung zwischen einem Gruppencodeelement und den jeweiligen untergeordneten Codeelementen ein `<Link/>`-Element mit den folgenden Attributen vorhanden ist:  
+4. Vergewissern Sie sich im `<Links>`-Abschnitt, dass für jede Beziehung zwischen einem Gruppencodeelement und den jeweiligen untergeordneten Codeelementen ein `<Link/>`-Element mit den folgenden Attributen vorhanden ist:  
   
-    -   Ein `Source`-Attribut, das das Gruppencodeelement angibt  
+   - Ein `Source`-Attribut, das das Gruppencodeelement angibt  
   
-    -   Ein `Target`-Attribut, das das untergeordnete Codeelement angibt  
+   - Ein `Target`-Attribut, das das untergeordnete Codeelement angibt  
   
-    -   Ein `Category`-Attribut, das eine `Contains`-Beziehung zwischen dem Gruppencodeelement und seinem untergeordneten Codeelement angibt  
+   - Ein `Category`-Attribut, das eine `Contains`-Beziehung zwischen dem Gruppencodeelement und seinem untergeordneten Codeelement angibt  
   
      Zum Beispiel:  
   
-    ```xml  
-    <Links>  
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
-    </Links>  
-    ```  
+   ```xml  
+   <Links>  
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
+   </Links>  
+   ```  
   
-     Weitere Informationen zu den `Category` Attribut, finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories).  
+    Weitere Informationen zu den `Category` Attribut, finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories).  
   
 ##  <a name="ChangeGraphStyle"></a> Ändern des Stils der Karte  
  Sie können die Hintergrundfarbe und die Rahmenfarbe der Map ändern, indem Sie die DGML-Datei der Map bearbeiten. Zum Ändern des Stils von Codeelementen und Links finden Sie unter [Ändern des Stils von Codeelementen und Links](#Highlight).  
@@ -252,81 +252,81 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
   
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>So wenden Sie benutzerdefinierte Stile auf eine Gruppe von Codeelementen oder Links an  
   
-1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
+1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
   
-2.  Sollte kein `<Styles></Styles>`-Element vorhanden sein, fügen Sie unter dem `<DirectedGraph></DirectedGraph>`-Element nach dem `<Links></Links>`-Element eines hinzu.  
+2. Sollte kein `<Styles></Styles>`-Element vorhanden sein, fügen Sie unter dem `<DirectedGraph></DirectedGraph>`-Element nach dem `<Links></Links>`-Element eines hinzu.  
   
-3.  Geben Sie im `<Styles></Styles>`-Element unter dem `<Style/>`-Element die folgenden Attribute an:  
+3. Geben Sie im `<Styles></Styles>`-Element unter dem `<Style/>`-Element die folgenden Attribute an:  
   
-    -   `TargetType="Node` &#124; `Link | Graph"`  
+   - `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="` *NameInLegendBox* `"`  
+   - `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="` *Name im Stilauswahlfeld* `"`  
+   - `ValueLabel="` *Name im Stilauswahlfeld* `"`  
   
      Verwenden Sie keine Bedingung, wenn Sie einen benutzerdefinierten Stil auf alle Zieltypen anwenden möchten.  
   
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>So wenden Sie einen bedingten Stil auf Gruppen von Codeelementen oder Links an  
   
-1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
+1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
   
-2.  Fügen Sie im `<Style/>`-Element ein `<Condition/>`-Element mit einem `Expression`-Attribut hinzu, um einen Ausdruck anzugeben, von dem ein boolescher Wert zurückgegeben wird.  
+2. Fügen Sie im `<Style/>`-Element ein `<Condition/>`-Element mit einem `Expression`-Attribut hinzu, um einen Ausdruck anzugeben, von dem ein boolescher Wert zurückgegeben wird.  
   
-     Zum Beispiel:  
+    Zum Beispiel:  
   
-    ```xml  
-    <Condition Expression="MyCategory"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory"/>  
+   ```  
   
-     - ODER  
+    - ODER  
   
-    ```xml  
-    <Condition Expression="MyCategory > 100"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory > 100"/>  
+   ```  
   
-     - ODER  
+    - ODER  
   
-    ```xml  
-    <Condition Expression="HasCategory('MyCategory')"/>  
-    ```  
+   ```xml  
+   <Condition Expression="HasCategory('MyCategory')"/>  
+   ```  
   
-     In diesem Ausdruck wird die folgende BNF-Syntax (Backus-Naur-Form) verwendet:  
+    In diesem Ausdruck wird die folgende BNF-Syntax (Backus-Naur-Form) verwendet:  
   
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
   
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
   
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
   
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet> :: = Bezeichner  
+    <PropertyGet> :: = Bezeichner  
   
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
-     <Identifier> ::= [^. ]*  
+    <Identifier> ::= [^. ]*  
   
-     <Literal> :: = einzelnen oder doppelten Anführungszeichen Zeichenfolgenliteral  
+    <Literal> :: = einzelnen oder doppelten Anführungszeichen Zeichenfolgenliteral  
   
-     <Number> :: = Zeichenfolge mit Ziffern und optionales Dezimaltrennzeichen  
+    <Number> :: = Zeichenfolge mit Ziffern und optionales Dezimaltrennzeichen  
   
-     Sie können angeben, dass mehrere `<Condition/>` -Elemente, die alle auf "true", der Stil angewendet werden müssen.  
+    Sie können angeben, dass mehrere `<Condition/>` -Elemente, die alle auf "true", der Stil angewendet werden müssen.  
   
-3.  Fügen Sie in der nächsten Zeile nach dem `<Condition/>`-Element mindestens ein `<Setter/>`-Element hinzu, um ein `Property`-Attribut anzugeben, sowie ein festes `Value`-Attribut oder ein berechnetes `Expression`-Attribut, das auf die Map, auf die Codeelemente oder auf die Links angewendet werden soll, von der bzw. von denen die Bedingung erfüllt wird.  
+3. Fügen Sie in der nächsten Zeile nach dem `<Condition/>`-Element mindestens ein `<Setter/>`-Element hinzu, um ein `Property`-Attribut anzugeben, sowie ein festes `Value`-Attribut oder ein berechnetes `Expression`-Attribut, das auf die Map, auf die Codeelemente oder auf die Links angewendet werden soll, von der bzw. von denen die Bedingung erfüllt wird.  
   
-     Zum Beispiel:  
+    Zum Beispiel:  
   
-    ```xml  
-    <Setter Property="BackGround" Value="Green"/>  
-    ```  
+   ```xml  
+   <Setter Property="BackGround" Value="Green"/>  
+   ```  
   
- Im folgenden einfachen und umfassenden Beispiel wird durch die Bedingung angegeben, dass ein Codeelement abhängig davon, ob die `Passed`-Kategorie auf `True` oder `False` festgelegt ist, grün bzw. rot dargestellt werden soll:  
+   Im folgenden einfachen und umfassenden Beispiel wird durch die Bedingung angegeben, dass ein Codeelement abhängig davon, ob die `Passed`-Kategorie auf `True` oder `False` festgelegt ist, grün bzw. rot dargestellt werden soll:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -575,74 +575,74 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>So verknüpfen Sie ein Dokument oder eine URL mit einem Codeelement  
   
-1.  Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
+1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.  
   
-2.  Suchen Sie das `<Node/>`-Element für das gewünschte Codeelement.  
+2. Suchen Sie das `<Node/>`-Element für das gewünschte Codeelement.  
   
-3.  Führen Sie eine der Aufgaben aus der folgenden Tabelle aus:  
+3. Führen Sie eine der Aufgaben aus der folgenden Tabelle aus:  
   
-     Ein einziges Codeelement  
+    Ein einziges Codeelement  
   
-    -   Fügen Sie im `<Node/>`- oder `<Link/>`-Element ein `Reference`-Attribut hinzu, um den Ort des Codeelements anzugeben.  
+   - Fügen Sie im `<Node/>`- oder `<Link/>`-Element ein `Reference`-Attribut hinzu, um den Ort des Codeelements anzugeben.  
   
-        > [!NOTE]
-        >  Pro Element kann nur ein `Reference`-Attribut verwendet werden.  
-  
-     Zum Beispiel:  
-  
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" Reference="MyDocument.txt" />  
-    </Nodes>  
-    <Properties>  
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
-  
-     Mehrere Codeelemente  
-  
-    1.  Fügen Sie im `<Node/>`- oder `<Link/>`-Element ein neues Attribut hinzu, um den Ort der einzelnen Verweise anzugeben.  
-  
-    2.  Gehen Sie im `<Properties>`-Abschnitt folgendermaßen vor:  
-  
-        1.  Fügen Sie für jeden neuen Verweistyp ein `<Property/>`-Element hinzu.  
-  
-        2.  Legen Sie das `Id`-Attribut auf den Namen des neuen Verweisattributs fest.  
-  
-        3.  Hinzufügen der `IsReference` Attribut, und legen Sie ihn auf `True` damit den Verweis auf des Codeelements angezeigt **Gehe zu Verweis** im Kontextmenü.  
-  
-        4.  Verwenden der `Label` Attribut an den Anzeigetext für des Codeelements **Gehe zu Verweis** im Kontextmenü.  
+     > [!NOTE]
+     >  Pro Element kann nur ein `Reference`-Attribut verwendet werden.  
   
      Zum Beispiel:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" Reference="MyDocument.txt" />  
+   </Nodes>  
+   <Properties>  
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     Auf der Map wird der Name des Codeelements unterstrichen angezeigt. Wenn Sie das Kontextmenü für das Codeelement oder den Link öffnen, sehen Sie eine **Gehe zu Verweis** Kontextmenü, das Sie für die Sie auswählen, das die verknüpften Codeelemente enthält.  
+    Mehrere Codeelemente  
   
-4.  Geben Sie mithilfe des `ReferenceTemplate`-Attributs eine allgemeine, von mehreren Verweisen verwendete Zeichenfolge (beispielsweise eine URL) an, anstatt die Zeichenfolge im Verweis zu wiederholen.  
+   1. Fügen Sie im `<Node/>`- oder `<Link/>`-Element ein neues Attribut hinzu, um den Ort der einzelnen Verweise anzugeben.  
   
-     Mit dem `ReferenceTemplate`-Attribut wird ein Platzhalter für den Wert des Verweises angegeben. Im folgenden Beispiel wird der `{0}`-Platzhalter im `ReferenceTemplate`-Attribut durch die Werte des `MyFirstReference`- und `MySecondReference`-Attributs im `<Node/>`-Element ersetzt, um einen vollständigen Pfad zu bilden:  
+   2. Gehen Sie im `<Properties>`-Abschnitt folgendermaßen vor:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
-    </Properties>  
-    ```  
+      1.  Fügen Sie für jeden neuen Verweistyp ein `<Property/>`-Element hinzu.  
   
-5.  Öffnen Sie das Kontextmenü für das Codeelement oder den Link, um das Codeelement, auf das verwiesen wird, bzw. die Codeelemente aus der Map anzuzeigen. Wählen Sie **Gehe zu Verweis** , und klicken Sie dann auf das Codeelement.  
+      2.  Legen Sie das `Id`-Attribut auf den Namen des neuen Verweisattributs fest.  
+  
+      3.  Hinzufügen der `IsReference` Attribut, und legen Sie ihn auf `True` damit den Verweis auf des Codeelements angezeigt **Gehe zu Verweis** im Kontextmenü.  
+  
+      4.  Verwenden der `Label` Attribut an den Anzeigetext für des Codeelements **Gehe zu Verweis** im Kontextmenü.  
+  
+      Zum Beispiel:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
+  
+    Auf der Map wird der Name des Codeelements unterstrichen angezeigt. Wenn Sie das Kontextmenü für das Codeelement oder den Link öffnen, sehen Sie eine **Gehe zu Verweis** Kontextmenü, das Sie für die Sie auswählen, das die verknüpften Codeelemente enthält.  
+  
+4. Geben Sie mithilfe des `ReferenceTemplate`-Attributs eine allgemeine, von mehreren Verweisen verwendete Zeichenfolge (beispielsweise eine URL) an, anstatt die Zeichenfolge im Verweis zu wiederholen.  
+  
+    Mit dem `ReferenceTemplate`-Attribut wird ein Platzhalter für den Wert des Verweises angegeben. Im folgenden Beispiel wird der `{0}`-Platzhalter im `ReferenceTemplate`-Attribut durch die Werte des `MyFirstReference`- und `MySecondReference`-Attributs im `<Node/>`-Element ersetzt, um einen vollständigen Pfad zu bilden:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
+   </Properties>  
+   ```  
+  
+5. Öffnen Sie das Kontextmenü für das Codeelement oder den Link, um das Codeelement, auf das verwiesen wird, bzw. die Codeelemente aus der Map anzuzeigen. Wählen Sie **Gehe zu Verweis** , und klicken Sie dann auf das Codeelement.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)   

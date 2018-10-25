@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Microsoft Docs
+title: METADATA_ADDRESS_LOCAL | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720f150be1b7cf992f0949750dd52218939c7d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca9a6b1fac3627020363c92db8a2f05e5b5900ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846602"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
-Diese Struktur stellt die Adresse einer lokalen Variablen in einem Bereich (in der Regel eine Funktion oder Methode) dar.  
+Diese Struktur stellt die Adresse einer lokalen Variablen in einem Gültigkeitsbereich (in der Regel eine Funktion oder Methode) dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,20 +45,20 @@ public struct METADATA_ADDRESS_LOCAL {
   
 ## <a name="terms"></a>Begriffe  
  tokMethod  
- Die ID der Methode oder Funktion die lokale Variable enthalten ist.  
+ Die ID der Methode oder der Funktion ist die lokale Variable Teil.  
   
- [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
+ [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.  
   
  pLocal  
- Das Token, dessen Adresse, die diese Struktur darstellt.  
+ Das Token, dessen Adresse dieser Struktur darstellt.  
   
  dwIndex ab  
- Der Index dieser lokalen Variablen in der Methode oder Funktion oder ein anderer Wert (sprachspezifischen) kann sein.  
+ Der Index dieser lokalen Variablen in der Methode oder Funktion oder einen anderen Wert (sprachspezifischen) kann sein.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_LOCAL` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_LOCAL` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
- `Warning:` [Nur C++]  Wenn `pLocal` nicht null ist, dann rufen Sie müssen `Release` auf dem token Zeiger (`addr` ist ein Feld in der [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur):  
+ `Warning:` [Nur für C++]  Wenn `pLocal` nicht null ist, dann Sie aufrufen müssen `Release` für den token auf (`addr` ist ein Feld in der [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  

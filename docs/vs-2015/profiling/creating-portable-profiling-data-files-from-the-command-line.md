@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868026"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Erstellen portabler Profilerstellungsdatendateien über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ Um die Freigabe von Profilerstellungsdaten zu vereinfachen, können Sie das Befe
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Einbetten von Symbolen in die Profilerstellungsdatendatei (.vsp) für die Profilerstellungsausführung  
   
--   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
+- Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Pfad> **VSPerfReport \<** VSP-Datei> **/PackSymbols**  
+   \<Pfad> <strong>VSPerfReport \<</strong>VSP-Datei> **/PackSymbols**  
   
-     Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.  
+   Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Erstellen einer zusammenfassenden Profilerstellungsdatendatei  
   
--   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
+- Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Pfad> **VSPerfReport \<** VSP-Datei> **/SummaryFile** [**/Output:**\<Dateiname>]  
+   \<Pfad> <strong>VSPerfReport \<</strong>VSP-Datei> **/SummaryFile** [**/Output:**\<Dateiname>]  
   
-     Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.
+   Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.
 
 
 

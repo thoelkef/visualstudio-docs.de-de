@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830755"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Isolierte Shell-Einstiegspunktparameter (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie eine Visual Studio Shell-basierten Anwendung startet, ruft er den Einstiegspunkt der Start von Visual Studio Shell. Die folgenden Einstellungen können im Aufruf an den Einstiegspunkt der Start der Shell überschrieben werden. Eine Beschreibung der einzelnen Einstellungen, finden Sie unter [. PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   App-Name  
+- App-Name  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Die Visual Studio Shell Isolated-Vorlage erstellt eine Quelldatei *SolutionName*cpp, in denen *SolutionName* ist für die Anwendung der Namen der Projektmappe. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung, die _tWinMain-Funktion. Diese Funktion ruft den Einstiegspunkt der Start der Shell.  
+  Die Visual Studio Shell Isolated-Vorlage erstellt eine Quelldatei *SolutionName*cpp, in denen *SolutionName* ist für die Anwendung der Namen der Projektmappe. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung, die _tWinMain-Funktion. Diese Funktion ruft den Einstiegspunkt der Start der Shell.  
   
- Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen zu ändern, beim Starten der Anwendung.  
+  Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen zu ändern, beim Starten der Anwendung.  
   
 ## <a name="parameters"></a>Parameter  
  Der Einstiegspunkt der Start von Visual Studio Shell definiert fünf Parameter. Ändern Sie die ersten vier Parameter nicht. Der fünfte Parameter akzeptiert eine Liste der Einstellungen außer Kraft setzen. Der Einstiegspunkt der Start der Shell wird von der Haupteinstiegspunkt einer Anwendung aufgerufen.  

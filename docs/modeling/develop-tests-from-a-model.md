@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919330"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Hierdurch wird sichergestellt, dass Sie die für die Benutzer und anderen Projektbeteiligten wichtigen Anforderungen testen, und es hilft Ihnen, die Tests schnell zu aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.
@@ -59,19 +59,19 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall
 
-1.  Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
+1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
 
-     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
+    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.
+2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.
 
-     In einem Anwendungsfalldiagramm mit der rechten Maustaste eines Anwendungsfalls, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**.
+    In einem Anwendungsfalldiagramm mit der rechten Maustaste eines Anwendungsfalls, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**.
 
-3.  Fügen Sie der Testsammlung Testfälle hinzu, die die Anwendungsfälle überprüfen.
+3. Fügen Sie der Testsammlung Testfälle hinzu, die die Anwendungsfälle überprüfen.
 
- In der Regel ist jede User Story- oder Anforderungsarbeitsaufgabe mit mehreren Anwendungsfällen im Modell verknüpft, und jeder Anwendungsfall ist mit mehreren User Storys oder Anforderungen verknüpft. Das liegt daran, dass jede User Story oder Anforderung eine Reihe von Aufgaben abdeckt, die mehrere Anwendungsfälle entwickeln. In einer frühen Iteration des Projekts beispielsweise könnten Sie die grundlegende User Story entwickeln, in der ein Kunde Positionen aus einem Katalog auswählen und bestellen kann. In einer späteren Iteration könnte die Story so aussehen, dass der Benutzer beim Abschließen der Bestellung zahlt und der Lieferant das Geld erhält, nachdem er die Waren versendet hat.  Jede Story fügt der Nachbedingung des Anwendungsfalls zur Bestellung von Waren eine Klausel hinzu.
+   In der Regel ist jede User Story- oder Anforderungsarbeitsaufgabe mit mehreren Anwendungsfällen im Modell verknüpft, und jeder Anwendungsfall ist mit mehreren User Storys oder Anforderungen verknüpft. Das liegt daran, dass jede User Story oder Anforderung eine Reihe von Aufgaben abdeckt, die mehrere Anwendungsfälle entwickeln. In einer frühen Iteration des Projekts beispielsweise könnten Sie die grundlegende User Story entwickeln, in der ein Kunde Positionen aus einem Katalog auswählen und bestellen kann. In einer späteren Iteration könnte die Story so aussehen, dass der Benutzer beim Abschließen der Bestellung zahlt und der Lieferant das Geld erhält, nachdem er die Waren versendet hat.  Jede Story fügt der Nachbedingung des Anwendungsfalls zur Bestellung von Waren eine Klausel hinzu.
 
- Sie können separate Verknüpfungen von Anforderungen Kommentare zu den Klauseln der Nachbedingung erstellen, indem Sie diese Klauseln im Anwendungsfalldiagramm in separate Kommentare schreiben. Sie können jeden Kommentar mit einer Anforderungsarbeitsaufgabe und den Kommentar mit dem Anwendungsfall im Diagramm verknüpfen.
+   Sie können separate Verknüpfungen von Anforderungen Kommentare zu den Klauseln der Nachbedingung erstellen, indem Sie diese Klauseln im Anwendungsfalldiagramm in separate Kommentare schreiben. Sie können jeden Kommentar mit einer Anforderungsarbeitsaufgabe und den Kommentar mit dem Anwendungsfall im Diagramm verknüpfen.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Basieren von Tests auf den Anforderungstypen
  Die Typen, das heißt die Klassen, Schnittstellen und Enumerationen, eines Anforderungsmodells beschreiben die Konzepte und Beziehungen im Hinblick darauf, wie Benutzer über ihr Geschäft denken und kommunizieren. Es schließt Typen aus, die sich nur mit dem internen Entwurf des Systems befassen.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>So verknüpfen Sie Tests mit einem Modellelement oder einer Beziehung
 
-1.  Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
+1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
 
-     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
+    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.
+2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.
 
-     Klicken Sie in einem Modellierungsdiagramm mit der rechten Maustaste eine Element, Kommentar oder eine Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**.
+    Klicken Sie in einem Modellierungsdiagramm mit der rechten Maustaste eine Element, Kommentar oder eine Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**.
 
-3.  Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.
+3. Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.
 
 ## <a name="see-also"></a>Siehe auch
 

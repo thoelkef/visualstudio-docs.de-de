@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7eb0ae4fd357b5a021bee0f885af5586048033e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899291"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,52 +34,52 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  [Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
--   [Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio-IDE](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
+- [Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio-IDE](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
- [Profilerstellung mithilfe der Befehlszeile](#BKMK_Profiling_from_the_command_line)  
+  [Profilerstellung mithilfe der Befehlszeile](#BKMK_Profiling_from_the_command_line)  
   
- [Sammeln von Ebeneninteraktionsdaten (TIP-Daten)](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [Sammeln von Ebeneninteraktionsdaten (TIP-Daten)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
 ##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE  
  Wenn Sie das Profil für eine Windows Store-App erstellen, die in JavaScript und HTML 5 geschrieben ist, erfassen Sie Instrumentationsdaten für den JavaScript-Code. Wenn Sie das Profil für eine Windows Store-App oder -Komponente erstellen, die in Visual C++, Visual C# oder Visual Basic geschrieben ist, erfassen Sie Samplingdaten für den systemeigenen und verwalteten Code. Sie können das Profil für die App lokal oder auf einem Remotecomputer erstellen.  
   
  Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows Store-Apps erstellt werden:  
   
--   Die Profilerstellung von JavaScript-Apps mit der Samplingmethode.  
+- Die Profilerstellung von JavaScript-Apps mit der Samplingmethode.  
   
--   Die Profilerstellung für verwalteten und systemeigenen Code mit der Instrumentationsmethode.  
+- Die Profilerstellung für verwalteten und systemeigenen Code mit der Instrumentationsmethode.  
   
--   Parallelitätsprofilerstellung  
+- Parallelitätsprofilerstellung  
   
--   Profilerstellung für .NET-Arbeitsspeicher  
+- Profilerstellung für .NET-Arbeitsspeicher  
   
--   Profilerstellung für Ebeneninteraktion  
+- Profilerstellung für Ebeneninteraktion  
   
--   Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
+- Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
   
--   Instrumentationsoptionen, z. B. das Sammeln von Leistungs- und Fensterindikatordaten oder das Angeben zusätzlicher Befehlszeilenoptionen.  
+- Instrumentationsoptionen, z. B. das Sammeln von Leistungs- und Fensterindikatordaten oder das Angeben zusätzlicher Befehlszeilenoptionen.  
   
- Weitere Informationen zur Profilerstellung für Windows Store-Apps finden Sie in den folgenden Themen im Windows Developer Center:  
+  Weitere Informationen zur Profilerstellung für Windows Store-Apps finden Sie in den folgenden Themen im Windows Developer Center:  
   
- [Ausführen von Windows Store-Apps auf einem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [Ausführen von Windows Store-Apps auf einem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+  [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
- [Analysieren der app-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analysieren der app-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
--   [JavaScript-Funktionstiming](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript-Funktionstiming](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
--   [JavaScript-Funktionstiming auf einem Remotegerät](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [JavaScript-Funktionstiming auf einem Remotegerät](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
--   [Analysieren von JavaScript-funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analysieren von JavaScript-funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
--   [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem lokalen Computer](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem lokalen Computer](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem Remotegerät](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem Remotegerät](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [Inhalt](#BKMK_In_this_topic)  
+  [Inhalt](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden  
  Die Profilerstellung mithilfe der Instrumentationsmethode hat sich unter Windows 8 nicht geändert.  
@@ -129,25 +129,25 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  **Windows 8 und Windows Server 2012**  
   
-1.  Um Ebeneninteraktionsdaten von Apps zu sammeln, die unter Windows 8 Desktop oder Windows Server 2012 ausgeführt werden, müssen Sie die Instrumentationsmethode verwenden.  
+1. Um Ebeneninteraktionsdaten von Apps zu sammeln, die unter Windows 8 Desktop oder Windows Server 2012 ausgeführt werden, müssen Sie die Instrumentationsmethode verwenden.  
   
-2.  Sie können Ebeneninteraktionsdaten nicht für Windows Store-Apps sammeln.  
+2. Sie können Ebeneninteraktionsdaten nicht für Windows Store-Apps sammeln.  
   
-3.  Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.  
+3. Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.  
   
- **Leistungs-Assistent und Leistungs-Explorer**  
+   **Leistungs-Assistent und Leistungs-Explorer**  
   
- Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profilerstellung vom Leistungs-Explorer hinzufügen. Sie müssen das Projekt, die ausführbare Datei oder die Website außerdem dem Zielknoten des Leistungs-Explorers hinzufügen. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md).  
+   Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profilerstellung vom Leistungs-Explorer hinzufügen. Sie müssen das Projekt, die ausführbare Datei oder die Website außerdem dem Zielknoten des Leistungs-Explorers hinzufügen. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md).  
   
- **Sammeln von TIP-Daten auf einem Remotecomputer**  
+   **Sammeln von TIP-Daten auf einem Remotecomputer**  
   
- Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie kopieren die **Vs\_Profiler\_**_\<Plattform >_ **\_**  _\<Sprache >_**.exe** -Datei aus dem _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**Ordner eines Visual Studio-Computers auf dem Remotecomputer und installieren Sie es. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
+   Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie kopieren die **Vs\_Profiler\_**_\<Plattform >_ **\_**  _\<Sprache >_**.exe** -Datei aus dem _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**Ordner eines Visual Studio-Computers auf dem Remotecomputer und installieren Sie es. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
   
- Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.  
+   Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.  
   
- **TIP-Berichte**  
+   **TIP-Berichte**  
   
- Ebeneninteraktionsdaten können nur in der [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] - oder [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] -IDE angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.  
+   Ebeneninteraktionsdaten können nur in der [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] - oder [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] -IDE angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Leistungs-Explorer](../profiling/performance-explorer.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDE-definierte Befehle, Menüs und Gruppen | Microsoft Docs
+title: IDE-definierte Befehle, Menüs und Gruppen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,38 +15,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65266ad3367df5cebeabc251bc8bceb6cda7075
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34c41608a90b15538e190be093ed2791a90824f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857275"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE-definierte Befehle, Menüs und Gruppen
-Viele Menüs, Befehle und Befehlsgruppen bereits definiert, für die Verwendung durch die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Diese Befehle stehen auch für die Verwendung verfügbar, wenn Sie erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+Viele Menüs, Befehle und Befehlsgruppen sind bereits definiert, für die Verwendung durch die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Diese Befehle stehen auch zur Verfügung, wenn Sie erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="finding-environment-defined-commands"></a>Suchen die Umgebung definiert Befehle  
- Die Umgebung Befehle sind in einem Satz von vier VSCT-Dateien definiert:  
+## <a name="finding-environment-defined-commands"></a>Umgebung-definierte Befehle Suchen  
+ Die umgebungsbefehle werden in einem Satz von vier VSCT-Dateien definiert:  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- Diese Dateien befinden sich im  *\<Visual Studio SDK-Installationspfad >* \VisualStudioIntegration\Common\Inc\\. Diese Dateien enthalten die Definitionen und die GUIDs der Menüs und Gruppen, die Sie in der Befehlsdatei für die Konfiguration (VSCT) von Tabelle Ihres VSPackage als Container für Menüs, Gruppen und Befehle verwenden können.  
+  Diese Dateien befinden sich im  *\<Visual Studio SDK-Installationspfad >* \VisualStudioIntegration\Common\Inc\\. Diese Dateien enthalten die Definitionen und die GUIDs der Menüs und Gruppen, die Sie in der Befehlsdatei für die Konfiguration (VSCT) von Tabelle Ihres VSPackage als Container für Ihre eigenen Menüs, Gruppen und Befehle verwenden können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
- Gibt die GUID und ID-Werte von Menüs, die in der Visual Studio-Menüleiste, und der darin enthaltenen Gruppen.  
+ Gibt die GUID und ID-Werte von Menüs in der Visual Studio-Menüleiste, und der darin enthaltenen Gruppen.  
   
  [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)  
- Gibt die GUID und ID-Werte von Symbolleisten in Visual Studio-IDE und der darin enthaltenen Gruppen.  
+ Gibt die GUID und ID-Werte, der in Symbolleisten in Visual Studio-IDE, und der darin enthaltenen Gruppen.  
   
  [GUIDs und IDs der Visual Studio-Befehle](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
- Gibt die GUID und ID-Werte von Befehlen, die von der Visual Studio-IDE definiert.  
+ Gibt die GUID und ID-Werte, der Befehle, die von der Visual Studio-IDE definiert sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   

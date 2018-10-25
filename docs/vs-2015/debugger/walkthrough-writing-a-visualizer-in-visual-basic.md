@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e08059c18a7b5c1fff74539f4ba497c319838371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881923"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-create-a-class-library-project"></a>So erstellen Sie ein Klassenbibliotheksprojekt  
   
-1.  Auf der **Datei** Menü wählen **neu** , und klicken Sie auf **neues Projekt**.  
+1. Auf der **Datei** Menü wählen **neu** , und klicken Sie auf **neues Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld **Projekttyp**s, klicken Sie auf **Visual Basic**.  
+2. In der **neues Projekt** Dialogfeld **Projekttyp**s, klicken Sie auf **Visual Basic**.  
   
-3.  In der **Vorlagen** auf **Klassenbibliothek**.  
+3. In der **Vorlagen** auf **Klassenbibliothek**.  
   
-4.  In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, z. B. **MyFirstVisualizer**.  
+4. In der **Namen** geben einen geeigneten Namen für die Klassenbibliothek, z. B. **MyFirstVisualizer**.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
- Wenn Sie die Klassenbibliothek erstellt haben, müssen Sie einen Verweis auf Microsoft.VisualStudio.DebuggerVisualizers.DLL hinzufügen, damit die dort definierten Klassen verwendet werden können. Geben Sie dem Projekt zunächst jedoch einen aussagekräftigen Namen.  
+   Wenn Sie die Klassenbibliothek erstellt haben, müssen Sie einen Verweis auf Microsoft.VisualStudio.DebuggerVisualizers.DLL hinzufügen, damit die dort definierten Klassen verwendet werden können. Geben Sie dem Projekt zunächst jedoch einen aussagekräftigen Namen.  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>So benennen Sie "Class1.vb" um und fügen "Microsoft.VisualStudio.DebuggerVisualizers" hinzu  
   
@@ -81,32 +81,32 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>So lassen Sie das Objekt von "DialogDebuggerVisualizer" erben  
   
-1.  Navigieren Sie in DebuggerSide.vb zu folgender Codezeile:  
+1. Navigieren Sie in DebuggerSide.vb zu folgender Codezeile:  
   
-    ```  
-    Public Class DebuggerSide  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   ```  
   
-2.  Ändern Sie den Code folgendermaßen:  
+2. Ändern Sie den Code folgendermaßen:  
   
-    ```  
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- `DialogDebuggerVisualizer` verfügt über eine abstrakte Methode, `Show`, die Sie überschreiben müssen.  
+   `DialogDebuggerVisualizer` verfügt über eine abstrakte Methode, `Show`, die Sie überschreiben müssen.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>So überschreiben Sie die DialogDebuggerVisualizer.Show-Methode  
   
--   Fügen Sie `public class DebuggerSide` folgende Methode hinzu:  
+- Fügen Sie `public class DebuggerSide` folgende Methode hinzu:  
   
-    ```  
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```  
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- Die `Show`-Methode enthält den Code, der für das Erstellen des Dialogfelds der Schnellansicht oder eines anderen Benutzeroberflächenelements verantwortlich ist. Sie zeigt die Informationen an, die der Debugger an die Schnellansicht übergibt. Den Code, der das Dialogfeld erstellt und die Informationen anzeigt, müssen Sie hinzufügen. In dieser exemplarischen Vorgehensweise wird dazu ein Windows Forms-Meldungsfeld verwendet. Zuerst müssen Sie einen Verweis und eine `Imports`-Anweisung für <xref:System.Windows.Forms> hinzufügen.  
+  Die `Show`-Methode enthält den Code, der für das Erstellen des Dialogfelds der Schnellansicht oder eines anderen Benutzeroberflächenelements verantwortlich ist. Sie zeigt die Informationen an, die der Debugger an die Schnellansicht übergibt. Den Code, der das Dialogfeld erstellt und die Informationen anzeigt, müssen Sie hinzufügen. In dieser exemplarischen Vorgehensweise wird dazu ein Windows Forms-Meldungsfeld verwendet. Zuerst müssen Sie einen Verweis und eine `Imports`-Anweisung für <xref:System.Windows.Forms> hinzufügen.  
   
 #### <a name="to-add-systemwindowsforms"></a>So fügen Sie System.Windows.Forms hinzu  
   
@@ -155,30 +155,30 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>So fügen Sie eine Testmethode zur Anzeige der Schnellansicht hinzu  
   
-1.  Fügen Sie der `public DebuggerSide`-Klasse folgende Methode hinzu:  
+1. Fügen Sie der `public DebuggerSide`-Klasse folgende Methode hinzu:  
   
-    ```  
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```  
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  Auf der **erstellen** Menü klicken Sie auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
+2. Auf der **erstellen** Menü klicken Sie auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
   
- Als Nächstes müssen Sie ein ausführbares Projekt erstellen, um die Schnellansichts-DLL aufzurufen. Verwenden Sie der Einfachheit halber ein Konsolenanwendungsprojekt.  
+   Als Nächstes müssen Sie ein ausführbares Projekt erstellen, um die Schnellansichts-DLL aufzurufen. Verwenden Sie der Einfachheit halber ein Konsolenanwendungsprojekt.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>So fügen Sie der Projektmappe ein Konsolenanwendungsprojekt hinzu  
   
-1.  Auf der **Datei** Menü klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
+1. Auf der **Datei** Menü klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** auf **Konsolenanwendung**.  
+2. In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** auf **Konsolenanwendung**.  
   
-3.  In der **Namen** geben einen aussagekräftigen Namen für die Konsolenanwendung, z. B. **MyTestConsole**.  
+3. In der **Namen** geben einen aussagekräftigen Namen für die Konsolenanwendung, z. B. **MyTestConsole**.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
- Jetzt müssen Sie die notwendigen Verweise hinzufügen, damit MyFirstVisualizer von MyTestConsole aufgerufen werden kann.  
+   Jetzt müssen Sie die notwendigen Verweise hinzufügen, damit MyFirstVisualizer von MyTestConsole aufgerufen werden kann.  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>So fügen Sie MyTestConsole die erforderlichen Verweise hinzu  
   
@@ -199,38 +199,38 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-add-code-to-mytestconsole"></a>So fügen Sie MyTestConsole Code hinzu  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Program.vb**, und klicken Sie im Kontextmenü auf **umbenennen**.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Program.vb**, und klicken Sie im Kontextmenü auf **umbenennen**.  
   
-2.  Bearbeiten Sie den Namen Module1.vb in einen passenden Namen, z. B. **TestConsole.vb**.  
+2. Bearbeiten Sie den Namen Module1.vb in einen passenden Namen, z. B. **TestConsole.vb**.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.  
   
-3.  In TestConsole.vb. VB, fügen Sie die folgenden `Imports` Anweisung:  
+3. In TestConsole.vb. VB, fügen Sie die folgenden `Imports` Anweisung:  
   
-    ```  
-    Imports MyFirstVisualizer  
-    ```  
+   ```  
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  Fügen Sie der `Main`-Methode den folgenden Code hinzu:  
+4. Fügen Sie der `Main`-Methode den folgenden Code hinzu:  
   
-    ```  
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```  
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- Jetzt können Sie Ihre erste Schnellansicht testen.  
+   Jetzt können Sie Ihre erste Schnellansicht testen.  
   
 #### <a name="to-test-the-visualizer"></a>So testen Sie die Schnellansicht  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole**, und klicken Sie im Kontextmenü auf **als Startprojekt festlegen**.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **MyTestConsole**, und klicken Sie im Kontextmenü auf **als Startprojekt festlegen**.  
   
-2.  Auf der **Debuggen** Menü klicken Sie auf **starten**.  
+2. Auf der **Debuggen** Menü klicken Sie auf **starten**.  
   
-     Die Konsolenanwendung wird gestartet. Die Schnellansicht wird mit der Zeichenfolge "Hello, World" angezeigt.  
+    Die Konsolenanwendung wird gestartet. Die Schnellansicht wird mit der Zeichenfolge "Hello, World" angezeigt.  
   
- Herzlichen Glückwunsch! Sie haben soeben Ihre erste Schnellansicht erstellt und getestet.  
+   Herzlichen Glückwunsch! Sie haben soeben Ihre erste Schnellansicht erstellt und getestet.  
   
- Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md).  
+   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_arrayindextype | Microsoft Docs'
+title: 'Idiasymbol:: Get_arrayindextype | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882404"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Ruft die Symbol-Schnittstelle des Arraytyps Index des Symbols ab.  
@@ -34,23 +34,23 @@ HRESULT get_arrayIndexType (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das den Index Arraytyp des Symbols darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das den Typ des Array-Index des Symbols darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Für einige Sprachen können es sich um den Typ als Index in ein Array angeben. Das Symbol, das von dieser Methode zurückgegebene gibt dieses Typs an.  
+ Einige Sprachen können es sich um den Typ als Index in ein Array angeben. Das von dieser Methode zurückgegebene Symbol gibt an, diesen Typ.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK Version 7.0|  
+|Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_timestamp | Microsoft Docs'
+title: 'Idiasymbol:: Get_timestamp | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e61deaaacfb2e6ba40366b4233fe4ffb141617
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94150440d3fa94e8a511b62d053be01fd39ed6c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873096"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-Ruft den Zeitstempel der zugrunde liegende ausführbare Datei ab.  
+Ruft den Zeitstempel der zugrunde liegenden ausführbaren Datei ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_timeStamp (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Zeitstempel der zugrunde liegende ausführbare Datei.  
+ [out] Gibt den Zeitstempel der zugrunde liegenden ausführbaren Datei.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::GetSize | Microsoft Docs
+title: IDebugMemoryBytes2::GetSize | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fce2d9beecb6c2a51d64e229dcf386795ab55f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b0d6c40c9b73ce14d06ce59f9506ce13550d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898121"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Ruft die Größe in Bytes, des Arbeitsspeichers, die von diesem dargestellt [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt.  
+Ruft die Größe in Bytes, des Arbeitsspeichers dargestellt durch diese [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,10 +42,10 @@ int GetSize(
   
 #### <a name="parameters"></a>Parameter  
  `pqwSize`  
- [out] Gibt die Größe, der den belegten Speicherplatz in Bytes zurück.  
+ [out] Gibt die Größe, der den Speicherplatz in Bytes zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

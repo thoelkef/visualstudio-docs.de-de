@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a985951cebc37e8f036e1babee36b9c04528f522
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883289"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Arrayfelder dürfen nicht schreibgeschützt sein
 
@@ -33,31 +33,36 @@ ms.locfileid: "45548924"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentliches oder geschütztes Feld, das ein Array enthält, ist schreibgeschützt deklariert.
+
+Ein öffentliches oder geschütztes Feld, das ein Array enthält, ist schreibgeschützt deklariert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Beim Anwenden der `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Modifizierer, um ein Feld, das ein, das Feld Array kann nicht geändert werden, um auf ein anderes Array zu verweisen. Allerdings können die in einem schreibgeschützten Feld des Arrays gespeicherten Elemente geändert werden. Code, der Entscheidungen trifft oder führt Vorgänge, die für die Elemente eines Arrays von nur-Lese basieren, die öffentlich zugegriffen werden kann, kann ein ausnutzbaren Sicherheitsrisiko enthalten.
 
- Beachten Sie, dass ein öffentliches Feld mit verstößt auch gegen die Entwurfsregel [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Beim Anwenden der `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Modifizierer, um ein Feld, das ein, das Feld Array kann nicht geändert werden, um auf ein anderes Array zu verweisen. Allerdings können die in einem schreibgeschützten Feld des Arrays gespeicherten Elemente geändert werden. Code, der Entscheidungen trifft oder führt Vorgänge, die für die Elemente eines Arrays von nur-Lese basieren, die öffentlich zugegriffen werden kann, kann ein ausnutzbaren Sicherheitsrisiko enthalten.
+
+Beachten Sie, dass ein öffentliches Feld mit verstößt auch gegen die Entwurfsregel [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um das Sicherheitsrisiko zu beheben, das von dieser Regel identifiziert wird, verlassen Sie sich nicht auf dem Inhalt eines nur-Lese Arrays, die öffentlich zugegriffen werden kann. Es wird dringend empfohlen, dass Sie eine der folgenden Verfahren verwenden:
+
+Um das Sicherheitsrisiko zu beheben, das von dieser Regel identifiziert wird, verlassen Sie sich nicht auf dem Inhalt eines nur-Lese Arrays, die öffentlich zugegriffen werden kann. Es wird dringend empfohlen, dass Sie eine der folgenden Verfahren verwenden:
 
 - Ersetzen Sie das Array, durch eine stark typisierte Auflistung, die nicht geändert werden kann. Weitere Informationen finden Sie unter <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
 - Ersetzen Sie das öffentliche Feld mit einer Methode, die einen Klon der ein privates Array zurückgibt. Da Ihr Code nicht auf dem Klon abhängig ist, besteht keine Gefahr, wenn die Elemente geändert werden.
 
- Wenn Sie den zweiten Ansatz gewählt haben, ersetzen Sie das Feld nicht mit einer Eigenschaft. Eigenschaften, die Arrays zurückgeben, sich negativ auf die Leistung beeinträchtigen. Weitere Informationen finden Sie unter [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Wenn Sie den zweiten Ansatz gewählt haben, ersetzen Sie das Feld nicht mit einer Eigenschaft. Eigenschaften, die Arrays zurückgeben, sich negativ auf die Leistung beeinträchtigen. Weitere Informationen finden Sie unter [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Eine Warnung dieser Regel wird dringend abgeraten. Fast kein Szenario auftreten, in denen der Inhalt eines schreibgeschützten Felds nicht von Bedeutung sind. Wenn dies Ihr Szenario zutrifft, entfernen Sie die `readonly` Modifizierer anstelle der Meldung auszuschließen.
+
+Eine Warnung dieser Regel wird dringend abgeraten. Fast kein Szenario auftreten, in denen der Inhalt eines schreibgeschützten Felds nicht von Bedeutung sind. Wenn dies Ihr Szenario zutrifft, entfernen Sie die `readonly` Modifizierer anstelle der Meldung auszuschließen.
 
 ## <a name="example-1"></a>Beispiel 1
- Dieses Beispiel veranschaulicht die Gefahren des Verstoßes gegen diese Regel. Im ersten Teil wird eine Beispielbibliothek, deren Typ, `MyClassWithReadOnlyArrayField`, zwei Felder (`grades` und `privateGrades`), die nicht sicher sind. Das Feld `grades` ist öffentlich und daher anfällig für jeden Aufrufer. Das Feld `privateGrades` ist privat, aber nach wie vor anfällig ist, da es sich bei Rückgabe an den Aufrufer von der `GetPrivateGrades` Methode. Die `securePrivateGrades` -Feld verfügbar gemacht wird, auf sichere Weise durch die `GetSecurePrivateGrades` Methode. Es ist für gute designmethoden führen als privat deklariert. Der zweite Teil enthält Code, der in gespeicherten Werte ändert die `grades` und `privateGrades` Member.
 
- Im folgenden Beispiel wird die Beispiel-Klassenbibliothek angezeigt.
+Dieses Beispiel veranschaulicht die Gefahren des Verstoßes gegen diese Regel. Im ersten Teil wird eine Beispielbibliothek, deren Typ, `MyClassWithReadOnlyArrayField`, zwei Felder (`grades` und `privateGrades`), die nicht sicher sind. Das Feld `grades` ist öffentlich und daher anfällig für jeden Aufrufer. Das Feld `privateGrades` ist privat, aber nach wie vor anfällig ist, da es sich bei Rückgabe an den Aufrufer von der `GetPrivateGrades` Methode. Die `securePrivateGrades` -Feld verfügbar gemacht wird, auf sichere Weise durch die `GetSecurePrivateGrades` Methode. Es ist für gute designmethoden führen als privat deklariert. Der zweite Teil enthält Code, der in gespeicherten Werte ändert die `grades` und `privateGrades` Member.
 
- [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
+Im folgenden Beispiel wird die Beispiel-Klassenbibliothek angezeigt.
+
+[!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>Beispiel 2
 

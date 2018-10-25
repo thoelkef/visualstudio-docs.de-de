@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::Evaluate | Microsoft Docs
+title: IDebugFunctionObject::Evaluate | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f717a61e79e9f91f9f79a32d1da5020b0084516
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908419"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Ruft die Funktion und gibt den resultierenden Wert als ein Objekt zurück.  
+Ruft die Funktion und der resultierende Wert als Objekt zurückgegeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,22 +47,22 @@ int Evaluate(
   
 #### <a name="parameters"></a>Parameter  
  `ppParams`  
- [in] Ein Array von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekte, die die Eingabeparameter darstellt. Dieser Parameter erstellt wurde, mit einem der `Create` Methoden in der [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
+ [in] Ein Array von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekte, die die Eingabeparameter darstellen. Dieser Parameter erstellt wurde, mit einem der `Create` Methoden in der [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
   
  `dwParams`  
  [in] Die Anzahl von Parametern in der `ppParams` Array.  
   
  `dwTimeout`  
- [in] Gibt die maximale Zeit in Millisekunden, bis vor der Rückgabe dieser Methode. Verwendung `INFINITE` zum unendlichen Warten angibt.  
+ [in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.  
   
  `ppResult`  
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Wert der Funktion als ein Objekt darstellt.  
+ [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Wert der Funktion als ein Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird eingerichtet und führt einen Aufruf der Funktion, dargestellt durch die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Objekt.  
+ Diese Methode richtet ein und führt einen Aufruf an die Funktion, dargestellt durch die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

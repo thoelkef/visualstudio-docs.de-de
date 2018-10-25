@@ -30,12 +30,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d61d56800a69e0d651df6dd82043d0bb17f05e94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a6bf3976138f385f103c6d046e2b71133a8795d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875000"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Debugversionen von Heapreservierungsfunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ Die C-Laufzeitbibliothek umfasst spezielle Debugversionen der Heapreservierungsf
   
  Unter Umständen möchten Sie `_malloc_dbg` jedoch explizit aufrufen. Der explizite Aufruf von `_malloc_dbg` bietet zusätzliche Vorteile:  
   
--   Nachverfolgen von `_CLIENT_BLOCK`-Reservierungen.  
+- Nachverfolgen von `_CLIENT_BLOCK`-Reservierungen.  
   
--   Speichern von Quelldatei und Zeilennummer an der Stelle, an der die Reservierung angefordert wurde.  
+- Speichern von Quelldatei und Zeilennummer an der Stelle, an der die Reservierung angefordert wurde.  
   
- Wenn Sie nicht konvertieren möchten Ihre `malloc` Aufrufe von `_malloc_dbg`, Sie können die Informationen zur Quelldatei abrufen, indem Sie definieren [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), der bewirkt, dass der Präprozessor direkt Zuordnung alle Aufrufe von `malloc` zu `_malloc_dbg` statt auf einen Wrapper um `malloc`.  
+  Wenn Sie nicht konvertieren möchten Ihre `malloc` Aufrufe von `_malloc_dbg`, Sie können die Informationen zur Quelldatei abrufen, indem Sie definieren [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), der bewirkt, dass der Präprozessor direkt Zuordnung alle Aufrufe von `malloc` zu `_malloc_dbg` statt auf einen Wrapper um `malloc`.  
   
- Um Reservierungstypen in Clientblöcken gesondert nachzuverfolgen, muss `_malloc_dbg` direkt aufgerufen und der `blockType`-Parameter auf `_CLIENT_BLOCK` festgelegt werden.  
+  Um Reservierungstypen in Clientblöcken gesondert nachzuverfolgen, muss `_malloc_dbg` direkt aufgerufen und der `blockType`-Parameter auf `_CLIENT_BLOCK` festgelegt werden.  
   
- Wenn _DEBUG nicht definiert ist, Aufrufe von `malloc` nicht gestört werden, werden Aufrufe von `_malloc_dbg` werden aufgelöst, um `malloc`, die Definition der [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) wird ignoriert, und bezieht sich auf Dateiinformationen Quelle der Anforderung wurde nicht angegeben. Da `malloc` keinen Blocktypparameter hat, werden `_CLIENT_BLOCK`-Anforderungen wie Standardreservierungen behandelt.  
+  Wenn _DEBUG nicht definiert ist, Aufrufe von `malloc` nicht gestört werden, werden Aufrufe von `_malloc_dbg` werden aufgelöst, um `malloc`, die Definition der [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) wird ignoriert, und bezieht sich auf Dateiinformationen Quelle der Anforderung wurde nicht angegeben. Da `malloc` keinen Blocktypparameter hat, werden `_CLIENT_BLOCK`-Anforderungen wie Standardreservierungen behandelt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)

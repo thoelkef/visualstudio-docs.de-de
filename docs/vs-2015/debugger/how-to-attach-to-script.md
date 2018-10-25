@@ -24,12 +24,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08a82442d4e7eed160c6ec83d67c498073b42ac9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852556"
 ---
 # <a name="how-to-attach-to-script"></a>Gewusst wie: Anfügen an ein Skript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
   
 ### <a name="to-attach-to-a-running-process"></a>So fügen Sie einen Profiler an einen laufenden Prozess an  
   
-1.  Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. (Wenn kein Projekt geöffnet ist, wählen Sie **an den Prozess anhängen** auf die **Tools** Menü.)  
+1. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. (Wenn kein Projekt geöffnet ist, wählen Sie **an den Prozess anhängen** auf die **Tools** Menü.)  
   
-2.  In der **an den Prozess anhängen** Dialogfeld Blick auf die **verfügbare Prozesse** Liste und finden Sie das Skript verarbeiten Sie eine Verbindung herstellen möchten. Sie können Skriptprozesse identifizieren, anhand der **Typ** Spalte.  
+2. In der **an den Prozess anhängen** Dialogfeld Blick auf die **verfügbare Prozesse** Liste und finden Sie das Skript verarbeiten Sie eine Verbindung herstellen möchten. Sie können Skriptprozesse identifizieren, anhand der **Typ** Spalte.  
   
-    1.  Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1.  Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-    2.  Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .  
+   2.  Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .  
   
-    3.  Wenn Sie über verbunden sind **Remotedesktopverbindung**, wählen die **Prozesse in allen Sitzungen anzeigen** Kontrollkästchen.  
+   3.  Wenn Sie über verbunden sind **Remotedesktopverbindung**, wählen die **Prozesse in allen Sitzungen anzeigen** Kontrollkästchen.  
   
-3.  Klicken Sie auf den Prozess, mit dem eine Verbindung hergestellt werden soll.  
+3. Klicken Sie auf den Prozess, mit dem eine Verbindung hergestellt werden soll.  
   
-4.  In der **Anfügen an** Feld sollte **Skriptcode** oder **automatisch: Skriptcode**. Wenn etwas anderes angezeigt wird, führen Sie die folgenden Schritte aus:  
+4. In der **Anfügen an** Feld sollte **Skriptcode** oder **automatisch: Skriptcode**. Wenn etwas anderes angezeigt wird, führen Sie die folgenden Schritte aus:  
   
-    1.  Klicken Sie auf **Auswählen**.  
+   1.  Klicken Sie auf **Auswählen**.  
   
-    2.  In der **Codetyp auswählen** Dialogfeld klicken Sie auf **diese Codetypen debuggen** , und wählen Sie **Skript**.  
+   2.  In der **Codetyp auswählen** Dialogfeld klicken Sie auf **diese Codetypen debuggen** , und wählen Sie **Skript**.  
   
-    3.  Klicken Sie auf **OK**.  
+   3.  Klicken Sie auf **OK**.  
   
-5.  Klicken Sie auf **Anfügen**aus.  
+5. Klicken Sie auf **Anfügen**aus.  
   
-     Zu diesem Zeitpunkt kann eine Warnung mit dem Hinweis ausgegeben werden, dass das Skriptdebuggen in Internet Explorer deaktiviert ist. In diesem Fall finden Sie unter [Warnung: Skriptdebugging deaktiviert](../debugger/warning-script-debugging-disabled.md).  
+    Zu diesem Zeitpunkt kann eine Warnung mit dem Hinweis ausgegeben werden, dass das Skriptdebuggen in Internet Explorer deaktiviert ist. In diesem Fall finden Sie unter [Warnung: Skriptdebugging deaktiviert](../debugger/warning-script-debugging-disabled.md).  
   
- Die Liste **Verfügbare Prozesse** wird beim Öffnen des Dialogfelds **Prozesse** automatisch angezeigt. Prozesse können bei geöffnetem Dialogfeld im Hintergrund gestartet und angehalten werden. Deshalb ist der Inhalt u. U. nicht immer aktuell. Sie können die Liste aktualisieren, zu einem beliebigen Zeitpunkt auf die aktuelle Liste der Prozesse durch Drücken von finden Sie unter den **aktualisieren** Schaltfläche.  
+   Die Liste **Verfügbare Prozesse** wird beim Öffnen des Dialogfelds **Prozesse** automatisch angezeigt. Prozesse können bei geöffnetem Dialogfeld im Hintergrund gestartet und angehalten werden. Deshalb ist der Inhalt u. U. nicht immer aktuell. Sie können die Liste aktualisieren, zu einem beliebigen Zeitpunkt auf die aktuelle Liste der Prozesse durch Drücken von finden Sie unter den **aktualisieren** Schaltfläche.  
   
- Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm in der Symbolleiste Debugspeicherort festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen des aktuellen Prozesses](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Sie können beim Debuggen mit mehreren Programmen verbunden sein, es ist jedoch jeweils nur ein Programm im Debugger aktiv. Sie können das aktive Programm in der Symbolleiste Debugspeicherort festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen des aktuellen Prozesses](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
- Alle **Debuggen** Ausführungsbefehle des Menüs Auswirkungen auf das aktive Programm. Sie können jedes debuggte Programm über das Dialogfeld "Prozesse" unterbrechen. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
+   Alle **Debuggen** Ausführungsbefehle des Menüs Auswirkungen auf das aktive Programm. Sie können jedes debuggte Programm über das Dialogfeld "Prozesse" unterbrechen. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Beim Versuch, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann riskant sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  

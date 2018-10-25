@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898147"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navigieren im Code mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
  Hier sind einige Details über das Verhalten des **Einzelschritt**:  
   
--   Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefsten geschachtelte Funktion in Einzelschritten aus. Wenn Sie **Einzelschritt** für einen Aufruf wie `Func1(Func2())`verwenden, führt der Debugger die Funktion `Func2`in Einzelschritten aus.  
+- Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefsten geschachtelte Funktion in Einzelschritten aus. Wenn Sie **Einzelschritt** für einen Aufruf wie `Func1(Func2())`verwenden, führt der Debugger die Funktion `Func2`in Einzelschritten aus.  
   
--   Der Debugger durchläuft tatsächlich durch Codeanweisungen anstatt durch physische Zeilen. Beispielsweise kann eine `if` -Klausel in eine Zeile geschrieben werden:  
+- Der Debugger durchläuft tatsächlich durch Codeanweisungen anstatt durch physische Zeilen. Beispielsweise kann eine `if` -Klausel in eine Zeile geschrieben werden:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Wenn Sie einen Einzelschritt in diese Zeile ausführen, behandelt der Debugger die Bedingung als einen Schritt und das Ergebnis als anderen Schritt (in diesem Beispiel lautet die Bedingung "true").  
+   Wenn Sie einen Einzelschritt in diese Zeile ausführen, behandelt der Debugger die Bedingung als einen Schritt und das Ergebnis als anderen Schritt (in diesem Beispiel lautet die Bedingung "true").  
   
- Um die Aufrufliste während der schrittweisen visuell zu verfolgen, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Um die Aufrufliste während der schrittweisen visuell zu verfolgen, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Code, wird übersprungen, Funktionen schrittweise durchlaufen  
  Wenn der Code im Debugger ausgeführt wird, oft Sie feststellen, dass Sie nicht sehen, was passiert, in einer bestimmten Funktion müssen (nicht wichtig es oder Sie wissen es funktioniert, wie gut getestete Bibliothekscode). Mit diesen Befehlen können Sie um mithilfe von Code zu überspringen (die Funktionen weiterhin auszuführen, natürlich, aber der Debugger überspringt diese).  
@@ -146,20 +146,20 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
 > [!CAUTION]
 >  Das Festlegen der nächsten Anweisung bewirkt, dass der Programmzähler direkt zur neuen Position springt. Seien Sie daher vorsichtig, wenn Sie diesen Befehl verwenden.  
->   
->  -   Anweisungen zwischen den alten und neuen Ausführungspunkten werden nicht ausgeführt.  
-> -   Wenn Sie den Ausführungspunkt rückwärts verschieben, werden dazwischenliegende Anweisungen nicht rückgängig gemacht.  
-> -   Wenn Sie die nächste Anweisung in eine andere Funktion oder in einen anderen Gültigkeitsbereich verschieben, wird i. d. R. die Aufrufliste beeinträchtigt, wodurch ein Laufzeitfehler oder eine Ausnahme ausgelöst wird. Wenn Sie versuchen, die nächste Anweisung in einen anderen Gültigkeitsbereich zu verschieben, wird ein Dialogfenster mit einer Warnung geöffnet, in dem Sie den Vorgang abbrechen können. In Visual Basic können Sie die nächste Anweisung nicht in einen anderen Bereich oder in eine andere Funktion verlegen.  
-> -   In systemeigenem C++-Code kann das Festlegen der nächsten Anweisung bei aktivierter Laufzeitprüfung dazu führen, dass am Ende der Methode eine Ausnahme ausgelöst wird.  
-> -   Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. Dann wird die Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.  
-  
+> 
+> - Anweisungen zwischen den alten und neuen Ausführungspunkten werden nicht ausgeführt.  
+>   -   Wenn Sie den Ausführungspunkt rückwärts verschieben, werden dazwischenliegende Anweisungen nicht rückgängig gemacht.  
+>   -   Wenn Sie die nächste Anweisung in eine andere Funktion oder in einen anderen Gültigkeitsbereich verschieben, wird i. d. R. die Aufrufliste beeinträchtigt, wodurch ein Laufzeitfehler oder eine Ausnahme ausgelöst wird. Wenn Sie versuchen, die nächste Anweisung in einen anderen Gültigkeitsbereich zu verschieben, wird ein Dialogfenster mit einer Warnung geöffnet, in dem Sie den Vorgang abbrechen können. In Visual Basic können Sie die nächste Anweisung nicht in einen anderen Bereich oder in eine andere Funktion verlegen.  
+>   -   In systemeigenem C++-Code kann das Festlegen der nächsten Anweisung bei aktivierter Laufzeitprüfung dazu führen, dass am Ende der Methode eine Ausnahme ausgelöst wird.  
+>   -   Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. Dann wird die Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.  
+> 
 > [!NOTE]
 >  In verwaltetem Code können Sie die nächste Anweisung unter den folgenden Bedingungen nicht verschieben:  
->   
->  -   Die nächste Anweisung und die aktuelle Anweisung befinden sich in verschiedenen Methoden.  
-> -   Das Debuggen wurde über Just-In-Time-Debuggen gestartet.  
-> -   Die Aufrufliste wird gerade entladen.  
-> -   Eine System.StackOverflowException oder eine System.Threading.ThreadAbortException wurden ausgelöst.  
+> 
+> - Die nächste Anweisung und die aktuelle Anweisung befinden sich in verschiedenen Methoden.  
+>   -   Das Debuggen wurde über Just-In-Time-Debuggen gestartet.  
+>   -   Die Aufrufliste wird gerade entladen.  
+>   -   Eine System.StackOverflowException oder eine System.Threading.ThreadAbortException wurden ausgelöst.  
   
  Während die Anwendung aktiv ausgeführt wird, ist es nicht möglich, die nächste Anweisung festzulegen. Zum Festlegen der nächsten Anweisung muss sich der Debugger im Unterbrechungsmodus befinden.  
   

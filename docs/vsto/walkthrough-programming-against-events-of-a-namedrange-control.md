@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812517"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements
   In dieser exemplarischen Vorgehensweise veranschaulicht das Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement zu einem Microsoft Office Excel-Arbeitsblatt und das Programmieren der Ereignisse mithilfe von Office-Entwicklungstools in Visual Studio.  
@@ -42,7 +42,7 @@ ms.locfileid: "35673505"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -87,15 +87,15 @@ ms.locfileid: "35673505"
   
 ### <a name="to-add-text-to-your-worksheet"></a>Hinzufügen von Text in das Arbeitsblatt  
   
-1.  In der Zelle **A1**, geben Sie den folgenden Text:  
+1. In der Zelle **A1**, geben Sie den folgenden Text:  
   
-     **Dies ist ein Beispiel für ein NamedRange-Steuerelement.**  
+    **Dies ist ein Beispiel für ein NamedRange-Steuerelement.**  
   
-2.  In der Zelle **A3** (auf der linken Seite des `namedRange2`), geben Sie den folgenden Text:  
+2. In der Zelle **A3** (auf der linken Seite des `namedRange2`), geben Sie den folgenden Text:  
   
-     **Ereignisse:**  
+    **Ereignisse:**  
   
- In den folgenden Abschnitten, Schreiben Sie Code, mit dem Text in eingefügt `namedRange2` und ändert die Eigenschaften der `namedRange2` Steuerelement als Reaktion auf die <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, und <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignisse `namedRange1`.  
+   In den folgenden Abschnitten, Schreiben Sie Code, mit dem Text in eingefügt `namedRange2` und ändert die Eigenschaften der `namedRange2` Steuerelement als Reaktion auf die <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, und <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignisse `namedRange1`.  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>Fügen Sie Code zum Reagieren auf das Ereignis BeforeDoubleClick hinzu  
   

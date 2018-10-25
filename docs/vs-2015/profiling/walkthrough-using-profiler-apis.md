@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d046015b1a88b3699fa8ef572e39e2ffefec2064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898758"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>So erfassen Sie Daten in der Visual Studio-IDE und rufen diese ab  
   
-1.  Öffnen Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Neue Leistungssitzung**.  
+1. Öffnen Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Neue Leistungssitzung**.  
   
-2.  Fügen Sie die kompilierte Binärdatei der **Zielliste** im Fenster **Leistungs-Explorer** hinzu. Klicken Sie mit der rechten Maustaste auf **Ziele** und anschließend auf **Zielprojekt hinzufügen**. Suchen Sie die Binärdatei im Dialogfeld **Zielbinärdatei hinzufügen**, und klicken Sie auf **Öffnen**.  
+2. Fügen Sie die kompilierte Binärdatei der **Zielliste** im Fenster **Leistungs-Explorer** hinzu. Klicken Sie mit der rechten Maustaste auf **Ziele** und anschließend auf **Zielprojekt hinzufügen**. Suchen Sie die Binärdatei im Dialogfeld **Zielbinärdatei hinzufügen**, und klicken Sie auf **Öffnen**.  
   
-3.  Klicken Sie auf der Symbolleiste **Leistungs-Explorer** in der Liste **Methode** auf die Symbolleiste **Leistungs-Explorer**.  
+3. Klicken Sie auf der Symbolleiste **Leistungs-Explorer** in der Liste **Methode** auf die Symbolleiste **Leistungs-Explorer**.  
   
-4.  Klicken Sie auf **Mit Profilerstellung starten**.  
+4. Klicken Sie auf **Mit Profilerstellung starten**.  
   
-     Der Profiler instrumentiert die Binärdatei und führt sie aus. Anschließend erstellt er eine Leistungsberichtsdatei. Die Leistungsberichtsdatei erscheint im Knoten **Berichte** des **Leistungs-Explorers**.  
+    Der Profiler instrumentiert die Binärdatei und führt sie aus. Anschließend erstellt er eine Leistungsberichtsdatei. Die Leistungsberichtsdatei erscheint im Knoten **Berichte** des **Leistungs-Explorers**.  
   
-5.  Öffnen Sie die erstellte Leistungsberichtsdatei.  
+5. Öffnen Sie die erstellte Leistungsberichtsdatei.  
   
- Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
+   Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
   
 ```  
 DataCollection.StopProfile(  

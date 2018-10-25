@@ -14,35 +14,36 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5d21405b64901e20ffd82594672319ecbf0d223
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908586"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Erstellen von JSDoc-Kommentaren für JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IntelliSense in Visual Studio zeigt Informationen an, die Sie einem Skript mit standardmäßigen JSDoc-Kommentaren hinzufügen. Sie können JSDoc-Kommentare verwenden, um Informationen zu Codeelementen wie z. B. Funktionen, Felder und Variablen bereitzustellen.  
-  
+
 ## <a name="jsdoc-comment-tags"></a>JSDoc-Kommentartags  
  Die folgenden standardmäßigen JSDoc-Kommentartags werden von IntelliSense verwendet, um Informationen zu Ihrem Code anzuzeigen.  
-  
-|JSDoc-Tag|Syntax|Hinweise|  
-|---------------|------------|-----------|  
-|@deprecated|@deprecated *Beschreibung*|Gibt eine veraltete Funktion oder Methode an.|  
-|@description|@description *Beschreibung*|Gibt die Beschreibung für eine Funktion oder Methode an.|  
-|@param|@param {*Typ*} *ParameterName ** Beschreibung*|Gibt Informationen für einen Parameter in einer Funktion oder Methode an.<br /><br /> TypeScript unterstützt auch @paramTag.|  
-|@property|@property {*Typ*} *PropertyName*|Gibt Informationen an, darunter eine Beschreibung, die entweder für ein Feld oder für einen Member gilt, der über ein Objekt definiert wird.|  
-|@returns|@returns {*Typ*}|Gibt einen Rückgabewert an.<br /><br /> Verwenden Sie für TypeScript, @returnType anstelle von @returns.|  
-|@summary|@summary *Beschreibung*|Gibt die Beschreibung einer Funktion oder Methode an (identisch mit @description).|  
-|@type|@type {*Typ*}|Gibt den Typ für eine Konstante oder eine Variable an.|  
-|@typedef|@typedef {*Typ*} *Benutzerdefiniertertypname*|Gibt einen benutzerdefinierten Typ an.|  
-  
+
+
+|  JSDoc-Tag   |                       Syntax                        |                                                     Hinweise                                                      |
+|--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| @deprecated  |              @deprecated *Beschreibung*              |                                   Gibt eine veraltete Funktion oder Methode an.                                   |
+| @description |             @description *Beschreibung*              |                              Gibt die Beschreibung für eine Funktion oder Methode an.                               |
+|    @param    | @param {*Typ*} *ParameterName*<em>Beschreibung</em> | Gibt Informationen für einen Parameter in einer Funktion oder Methode an.<br /><br /> TypeScript unterstützt auch @paramTag. |
+|  @property   |          @property {*Typ*} *PropertyName*          |   Gibt Informationen an, darunter eine Beschreibung, die entweder für ein Feld oder für einen Member gilt, der über ein Objekt definiert wird.    |
+|   @returns   |                  @returns {*Typ*}                  |           Gibt einen Rückgabewert an.<br /><br /> Verwenden Sie für TypeScript, @returnType anstelle von @returns.           |
+|   @summary   |               @summary *Beschreibung*                |                   Gibt die Beschreibung einer Funktion oder Methode an (identisch mit @description).                   |
+|    @type     |                   @type {*Typ*}                    |                                Gibt den Typ für eine Konstante oder eine Variable an.                                |
+|   @typedef   |         @typedef {*Typ*} *Benutzerdefiniertertypname*          |                                            Gibt einen benutzerdefinierten Typ an.                                            |
+
 ### <a name="examples"></a>Beispiele  
  Das folgende Beispiel zeigt die Verwendung der @description, @param, und @return JSDoc-tags für eine Funktion namens `getArea`.  
-  
+
 ```javascript  
 /** @description Determines the area of a circle that has the specified radius parameter.  
  * @param {number} radius The radius of the circle.  
@@ -54,13 +55,13 @@ function getArea(radius) {
     return areaVal;  
 }  
 ```  
-  
+
  Im vorhergehenden Beispiel zeigt IntelliSense die Beschreibung, Parameter und Rückgabeinformationen an, wenn Sie die öffnende Klammer für `getArea` eingeben.  
-  
+
  ![IntelliSense-Informationen für eine Funktion](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")  
-  
+
  Das folgende Beispiel zeigt, wie Sie mit der @typedef markieren Sie mit der @property Tag.  
-  
+
 ```javascript  
 /**  
   * @typedef {object} Weather  
@@ -68,22 +69,22 @@ function getArea(radius) {
   */  
 function getForecast(Weather) {  
 }  
-  
+
 var w = new Weather();  
 ```  
-  
+
  Das folgende Beispiel zeigt die Verwendung der @type JSDoc-Tags. Wie in diesem Beispiel wird gezeigt, einzelne Sternchen (*), die dem anfänglichen sternchenpaar folgen (\*\*) sind nicht erforderlich.  
-  
+
 ```javascript  
 /**  
     @type {string}  
 */  
 const RED = 'FF0000';  
-  
+
 ```  
-  
+
  Das folgende Beispiel zeigt, wie Sie mit der @deprecated JSDoc-Tag.  
-  
+
 ```javascript  
 /**  
  * @deprecated since version 2.0  

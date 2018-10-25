@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884887"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:  
   
--   Generieren von Zufallszahlen mithilfe der `Random`-Klasse.  
+- Generieren von Zufallszahlen mithilfe der `Random`-Klasse.  
   
--   Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, indem Sie ein **Timer**-Steuerelement verwenden.  
+- Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, indem Sie ein **Timer**-Steuerelement verwenden.  
   
--   Steuern des Programmablaufs mit `if else`-Anweisungen.  
+- Steuern des Programmablaufs mit `if else`-Anweisungen.  
   
--   Ausführen grundlegender arithmetischer Operationen im Code.  
+- Ausführen grundlegender arithmetischer Operationen im Code.  
   
- Nach Abschluss der Übung sieht das Quiz wie im folgenden Bild dargestellt aus, enthält jedoch andere Zahlen.  
+  Nach Abschluss der Übung sieht das Quiz wie im folgenden Bild dargestellt aus, enthält jedoch andere Zahlen.  
   
- ![Mathetest mit vier Aufgaben](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Quiz, das Sie in diesem Lernprogramm erstellen  
+  ![Mathetest mit vier Aufgaben](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Quiz, das Sie in diesem Lernprogramm erstellen  
   
- Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  

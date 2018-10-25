@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831002"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Gewusst wie: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an  
   
--   Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
+- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - oder –  
+   - oder –  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Der Wert der Eigenschaft, die in der Befehlszeile angegeben ist, hat Vorrang vor jedem Wert, dem in der Projektdatei der gleiche Wert zugewiesen wurde. Dieser Wert hat Vorrang vor dem Wert in einer Umgebungsvariable.  
+  Der Wert der Eigenschaft, die in der Befehlszeile angegeben ist, hat Vorrang vor jedem Wert, dem in der Projektdatei der gleiche Wert zugewiesen wurde. Dieser Wert hat Vorrang vor dem Wert in einer Umgebungsvariable.  
   
- Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.  
+  Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel, das Projekt „Hello World“, enthält zwei neue Eigenschaftengruppen, die verwendet werden können, um ein Debugbuild und ein Releasebuild zu erstellen.  

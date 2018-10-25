@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860642"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
@@ -33,12 +33,12 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 ## <a name="templates"></a> Auswählen einer Vorlagenprojektmappe
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -47,49 +47,49 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 #### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe
 
-1.  Erstellen Sie eine Projektmappe mit der **Domain-Specific Languge** Vorlage, die finden Sie unter **andere Projekttypen/Erweiterbarkeit** in die **neues Projekt** Dialogfeld.
+1. Erstellen Sie eine Projektmappe mit der **Domain-Specific Languge** Vorlage, die finden Sie unter **andere Projekttypen/Erweiterbarkeit** in die **neues Projekt** Dialogfeld.
 
-     ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
+    ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
 
-     Beim Klicken auf **OK**, **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.
+    Beim Klicken auf **OK**, **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.
 
-2.  Klicken Sie auf die einzelnen Vorlagen, um eine Beschreibung anzuzeigen. Wählen Sie die Projektmappe aus, die Ihren Vorstellungen am nächsten kommt.
+2. Klicken Sie auf die einzelnen Vorlagen, um eine Beschreibung anzuzeigen. Wählen Sie die Projektmappe aus, die Ihren Vorstellungen am nächsten kommt.
 
-     Jede DSL-Vorlage definiert eine grundlegende, funktionsfähige DSL. Sie bearbeiten diese DSL nach Ihren Anforderungen.
+    Jede DSL-Vorlage definiert eine grundlegende, funktionsfähige DSL. Sie bearbeiten diese DSL nach Ihren Anforderungen.
 
-     Klicken Sie auf die Beispiele, um weitere Informationen anzuzeigen.
+    Klicken Sie auf die Beispiele, um weitere Informationen anzuzeigen.
 
-    -   Wählen Sie **Aufgabenfluss** um eine DSL zu erstellen, die von Verantwortlichkeitsbereichen. Verantwortlichkeitsbereiche sind vertikale oder horizontale Bereiche des Diagramms.
+   -   Wählen Sie **Aufgabenfluss** um eine DSL zu erstellen, die von Verantwortlichkeitsbereichen. Verantwortlichkeitsbereiche sind vertikale oder horizontale Bereiche des Diagramms.
 
-    -   Wählen Sie **Komponentenmodelle** um eine DSL zu erstellen, die Ports verfügt. Anschlüsse sind kleine Formen am Rand einer größeren Form.
+   -   Wählen Sie **Komponentenmodelle** um eine DSL zu erstellen, die Ports verfügt. Anschlüsse sind kleine Formen am Rand einer größeren Form.
 
-    -   Wählen Sie **Klassendiagramme** eine DSL definieren, die Depot-Formen. Depot-Formen enthalten Listen von Elementen.
+   -   Wählen Sie **Klassendiagramme** eine DSL definieren, die Depot-Formen. Depot-Formen enthalten Listen von Elementen.
 
-    -   Wählen Sie **minimale Sprache** in anderen Fällen oder wenn Sie unsicher sind.
+   -   Wählen Sie **minimale Sprache** in anderen Fällen oder wenn Sie unsicher sind.
 
-    -   Wählen Sie **minimaler WinForm-Designer** oder **minimaler WPF-Designer** um eine DSL zu erstellen, die auf einer Windows Forms- oder WPF-Oberfläche angezeigt wird. Sie müssen Code zur Definition des Editors schreiben. Weitere Informationen finden Sie unter den folgenden Themen:
+   -   Wählen Sie **minimaler WinForm-Designer** oder **minimaler WPF-Designer** um eine DSL zu erstellen, die auf einer Windows Forms- oder WPF-Oberfläche angezeigt wird. Sie müssen Code zur Definition des Editors schreiben. Weitere Informationen finden Sie unter den folgenden Themen:
 
-         [Erstellen einer Windows Forms-basierten domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
+        [Erstellen einer Windows Forms-basierten domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
-         [Erstellen einer WPF-basierten domänenspezifischen Sprache](../modeling/creating-a-wpf-based-domain-specific-language.md)
+        [Erstellen einer WPF-basierten domänenspezifischen Sprache](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
-3.  Geben Sie auf der entsprechenden Seite des Assistenten eine Dateinamenerweiterung für die DSL ein. Diese Erweiterung wird für Dateien mit Instanzen Ihrer DSL verwendet.
+3. Geben Sie auf der entsprechenden Seite des Assistenten eine Dateinamenerweiterung für die DSL ein. Diese Erweiterung wird für Dateien mit Instanzen Ihrer DSL verwendet.
 
-    -   Wählen Sie eine Dateinamenerweiterung, die keiner Anwendung auf Ihrem Computer bzw. auf einem Computer, auf dem Sie die DSL installieren möchten, zugeordnet ist. Z. B. **Docx** und **Htm** wäre akzeptablen Dateinamenerweiterungen.
+   -   Wählen Sie eine Dateinamenerweiterung, die keiner Anwendung auf Ihrem Computer bzw. auf einem Computer, auf dem Sie die DSL installieren möchten, zugeordnet ist. Z. B. **Docx** und **Htm** wäre akzeptablen Dateinamenerweiterungen.
 
-    -   Der Assistent warnt Sie, wenn die eingegebene Erweiterung bereits als DSL verwendet wird. Verwenden Sie nach Möglichkeit eine andere Dateinamenerweiterung. Sie können die experimentelle Instanz des Visual Studio SDK auch zurücksetzen, um alte experimentelle Designer zu löschen. Klicken Sie auf **starten**, klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Microsoft zurücksetzen Instanz von Visual Studio 2010 experimentell**.
+   -   Der Assistent warnt Sie, wenn die eingegebene Erweiterung bereits als DSL verwendet wird. Verwenden Sie nach Möglichkeit eine andere Dateinamenerweiterung. Sie können die experimentelle Instanz des Visual Studio SDK auch zurücksetzen, um alte experimentelle Designer zu löschen. Klicken Sie auf **starten**, klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Microsoft zurücksetzen Instanz von Visual Studio 2010 experimentell**.
 
-4.  Auf den anderen Seiten können Sie Einstellungen anpassen oder die Standardwerte übernehmen.
+4. Auf den anderen Seiten können Sie Einstellungen anpassen oder die Standardwerte übernehmen.
 
-5.  Klicken Sie auf **Fertig stellen**.
+5. Klicken Sie auf **Fertig stellen**.
 
-     Der Assistent erstellt eine Projektmappe mit zwei oder drei Projekten und generiert Code aus der DSL-Definition.
+    Der Assistent erstellt eine Projektmappe mit zwei oder drei Projekten und generiert Code aus der DSL-Definition.
 
- Die Benutzeroberfläche gleicht nun der folgenden Abbildung.
+   Die Benutzeroberfläche gleicht nun der folgenden Abbildung.
 
- ![DSL-Designer](../modeling/media/dsl_designer.png)
+   ![DSL-Designer](../modeling/media/dsl_designer.png)
 
- Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ### <a name="test-the-solution"></a>Testen der Projektmappe
  Die Vorlagenprojektmappe enthält eine funktionsfähige DSL, die Sie ändern oder direkt verwenden können.
@@ -114,26 +114,26 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Die Beibehaltung der folgenden Klassen ist besonders sinnvoll:
 
--   Die Stammklasse erscheint auf der linken oberen Ecke des im DSL-Definitionsdiagramm unter **Klassen und Beziehungen**. Benennen Sie sie in einen von der DSL verschiedenen Namen um. Zum Beispiel eine DSL namens **"Musikbibliothek"** möglicherweise eine Basisklasse, die mit dem Namen **Musik**.
+- Die Stammklasse erscheint auf der linken oberen Ecke des im DSL-Definitionsdiagramm unter **Klassen und Beziehungen**. Benennen Sie sie in einen von der DSL verschiedenen Namen um. Zum Beispiel eine DSL namens **"Musikbibliothek"** möglicherweise eine Basisklasse, die mit dem Namen **Musik**.
 
--   Die Diagrammklasse erscheint unten rechts im DSL-Definitionsdiagramm der **Diagrammelemente** Spalte. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. Sie heißt normalerweise _Ihredsl_**Diagramm**.
+- Die Diagrammklasse erscheint unten rechts im DSL-Definitionsdiagramm der **Diagrammelemente** Spalte. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. Sie heißt normalerweise _Ihredsl_**Diagramm**.
 
--   Bei Verwendung der **Aufgabenfluss** Vorlage und Diagramme mit Verantwortlichkeitsbereichen erstellen, zu halten, und benennen Sie die Actor-Domänenklasse und die ActorSwimlane-Form möchten.
+- Bei Verwendung der **Aufgabenfluss** Vorlage und Diagramme mit Verantwortlichkeitsbereichen erstellen, zu halten, und benennen Sie die Actor-Domänenklasse und die ActorSwimlane-Form möchten.
 
- Löschen Sie andere Klassen nach Bedarf, oder benennen Sie sie um.
+  Löschen Sie andere Klassen nach Bedarf, oder benennen Sie sie um.
 
 ## <a name="patterns"></a> Muster zum Definieren einer DSL
  Es ist empfehlenswert, beim Entwickeln einer DSL nur jeweils ein oder zwei Features gleichzeitig hinzuzufügen bzw. anzupassen. Fügen Sie ein Feature hinzu, führen Sie die DSL aus und testen Sie sie. Fügen Sie dann ein oder zwei weitere Features hinzu. Ein typisches Feature Ihrer DSL könnte folgendermaßen aussehen:
 
--   Eine Domänenklasse, die einbettende Beziehung, die das Element mit dem Modell verbindet, die erforderliche Form zum Anzeigen von Elementen der Klasse im Diagramm sowie das Elementwerkzeug, mit dem Benutzer Elemente erstellen können.
+- Eine Domänenklasse, die einbettende Beziehung, die das Element mit dem Modell verbindet, die erforderliche Form zum Anzeigen von Elementen der Klasse im Diagramm sowie das Elementwerkzeug, mit dem Benutzer Elemente erstellen können.
 
--   Die Domäneneigenschaften einer Domänenklasse und die Decorator-Elemente, die sie in einer Form anzeigen.
+- Die Domäneneigenschaften einer Domänenklasse und die Decorator-Elemente, die sie in einer Form anzeigen.
 
--   Eine Verweisbeziehung und der Konnektor, der sie im Diagramm anzeigt, sowie das Konnektorwerkzeug, mit dem Benutzer Verbindungen erstellen können.
+- Eine Verweisbeziehung und der Konnektor, der sie im Diagramm anzeigt, sowie das Konnektorwerkzeug, mit dem Benutzer Verbindungen erstellen können.
 
--   Eine Anpassung, die Programmcode erfordert, wie z. B. eine Validierungseinschränkung oder ein Menübefehl.
+- Eine Anpassung, die Programmcode erfordert, wie z. B. eine Validierungseinschränkung oder ein Menübefehl.
 
- In den folgenden Abschnitten wird die Erstellung der nützlichsten DSL-Features beschrieben. Es gibt viele andere Muster, nach denen eine DSL erstellt werden kann, aber die folgenden sind die gängigsten.
+  In den folgenden Abschnitten wird die Erstellung der nützlichsten DSL-Features beschrieben. Es gibt viele andere Muster, nach denen eine DSL erstellt werden kann, aber die folgenden sind die gängigsten.
 
 > [!NOTE]
 >  Nach dem Hinzufügen eines Features, vergessen Sie nicht auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer vor dem Erstellen und Ausführen von Ihrer DSL.
@@ -168,7 +168,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
  In den hier beschriebenen DSL-Definitionsmustern wird vorausgesetzt, dass beim Löschen eines Containers die in dem Container dargestellten Elemente ebenfalls gelöscht werden. Komplexere Schemas können durch Definieren von Regeln erzielt werden.
 
 |Darstellung des Elements|Übergeordnete (einbettende) Klasse|Beispiel in DSL-Projektmappenvorlage|
-|------------------------------|--------------------------------|--------------------------------------|
+|-|-|-|
 |Form im Diagramm<br /><br /> Verantwortlichkeitsbereich|Stammklasse der DSL|Minimale Sprache<br /><br /> Aufgabenfluss: Actor-Klasse|
 |Form in Verantwortlichkeitsbereich|Domänenklasse von Elementen, die als Verantwortlichkeitsbereiche dargestellt werden.|Aufgabenfluss: Task-Klasse|
 |Element in Liste in Form, das zusammen mit Container gelöscht wird.<br /><br /> Anschluss am Rand einer Form|Der Containerform zugeordnete Domänenklasse|Klassendiagramm: Attribute-Klasse<br /><br /> Komponentendiagramm: Port-Klasse|
@@ -236,96 +236,96 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>So definieren Sie eine Klasse von Elementen, die in einem Diagramm als Formen dargestellt werden
 
-1.  **Definieren und Testen Sie eine Domänenklasse, wie in beschrieben**[Definieren von Domänenklassen](#classes) **.** 
+1. **Definieren und Testen Sie eine Domänenklasse, wie in beschrieben**[Definieren von Domänenklassen](#classes) **.**
 
-    -   Das übergeordnete Element der Klasse sollte die Stammklasse sein. Es sollte also eine einbettende Beziehung zwischen der Stammklasse und der neuen Domänenklasse bestehen.
+   -   Das übergeordnete Element der Klasse sollte die Stammklasse sein. Es sollte also eine einbettende Beziehung zwischen der Stammklasse und der neuen Domänenklasse bestehen.
 
-    -   Wenn das Diagramm Verantwortlichkeitsbereiche enthält, kann das übergeordnete Element die Domänenklasse sein, die einem Verantwortlichkeitsbereich zugeordnet ist. Bevor Sie Sie mit diesem Verfahren fortfahren, finden Sie unter [Definieren einer DSL, die von Verantwortlichkeitsbereichen](#swimlanes).
+   -   Wenn das Diagramm Verantwortlichkeitsbereiche enthält, kann das übergeordnete Element die Domänenklasse sein, die einem Verantwortlichkeitsbereich zugeordnet ist. Bevor Sie Sie mit diesem Verfahren fortfahren, finden Sie unter [Definieren einer DSL, die von Verantwortlichkeitsbereichen](#swimlanes).
 
-2.  **Fügen Sie eine formklasse** um die Elemente im Modelldiagramm darzustellen. Ziehen Sie eines der folgenden Werkzeuge in das DSL-Definitionsdiagramm:
+2. **Fügen Sie eine formklasse** um die Elemente im Modelldiagramm darzustellen. Ziehen Sie eines der folgenden Werkzeuge in das DSL-Definitionsdiagramm:
 
-    -   **Geometrie-Form** stellt ein Rechteck oder eine Ellipse.
+   - **Geometrie-Form** stellt ein Rechteck oder eine Ellipse.
 
-    -   **Bild-Form** zeigt ein Bild an, die Sie bereitstellen.
+   - **Bild-Form** zeigt ein Bild an, die Sie bereitstellen.
 
-    -   **Depot-Form** ist ein Rechteck, das eine oder mehrere Listen von Elementen enthält.
+   - **Depot-Form** ist ein Rechteck, das eine oder mehrere Listen von Elementen enthält.
 
      Benennen Sie die Formklasse um, die rechts im DSL-Definitionsdiagramm unter "Formen und Konnektoren" angezeigt wird.
 
-3.  **Definieren Sie ein Bild aus, wenn Sie eine Bild-Form erstellt**.
+3. **Definieren Sie ein Bild aus, wenn Sie eine Bild-Form erstellt**.
 
-    1.  Erstellen Sie eine Bilddatei beliebiger Größe. Die Formate BMP, JPEG, GIF und EMF werden unterstützt.
+   1.  Erstellen Sie eine Bilddatei beliebiger Größe. Die Formate BMP, JPEG, GIF und EMF werden unterstützt.
 
-    2.  Fügen Sie die Datei im Projektmappen-Explorer der Projektmappe unter Dsl\Ressourcen hinzu.
+   2.  Fügen Sie die Datei im Projektmappen-Explorer der Projektmappe unter Dsl\Ressourcen hinzu.
 
-    3.  Kehren Sie zum DSL-Definitionsdiagramm zurück, und wählen Sie die neue Bild-Formklasse aus.
+   3.  Kehren Sie zum DSL-Definitionsdiagramm zurück, und wählen Sie die neue Bild-Formklasse aus.
 
-    4.  Klicken Sie im Eigenschaftenfenster auf die **Image** Eigenschaft.
+   4.  Klicken Sie im Eigenschaftenfenster auf die **Image** Eigenschaft.
 
-    5.  In der **Bild auswählen** Dialogfeld klicken Sie auf die Dropdown-Menü unter **Dateiname**, und wählen Sie das Image.
+   5.  In der **Bild auswählen** Dialogfeld klicken Sie auf die Dropdown-Menü unter **Dateiname**, und wählen Sie das Image.
 
-4.  **Fügen Sie Text-Decorator-Elemente, mit der Form, um die Domäneneigenschaften anzuzeigen.**
+4. **Fügen Sie Text-Decorator-Elemente, mit der Form, um die Domäneneigenschaften anzuzeigen.**
 
-     Sie benötigen wahrscheinlich mindestens ein Text-Decorator-Element, um den Namen oder Titel des Modellelements anzuzeigen.
+    Sie benötigen wahrscheinlich mindestens ein Text-Decorator-Element, um den Namen oder Titel des Modellelements anzuzeigen.
 
-     Mit der rechten Maustaste in des Headers der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**. Legen Sie den Namen des Decorator-Elements, und klicken Sie in den Eigenschaften im Fenster der **Position**.
+    Mit der rechten Maustaste in des Headers der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**. Legen Sie den Namen des Decorator-Elements, und klicken Sie in den Eigenschaften im Fenster der **Position**.
 
-5.  **Verbinden Sie jede Form mit einer Diagrammelementzuordnung mit der Domänenklasse, die sie anzeigen soll**.
+5. **Verbinden Sie jede Form mit einer Diagrammelementzuordnung mit der Domänenklasse, die sie anzeigen soll**.
 
-     Klicken Sie auf die **Diagrammelementzuordnung** tool, klicken Sie auf die Domänenklasse und dann klicken Sie auf die Shape-Klasse.
+    Klicken Sie auf die **Diagrammelementzuordnung** tool, klicken Sie auf die Domänenklasse und dann klicken Sie auf die Shape-Klasse.
 
-6.  **Ordnen Sie die Eigenschaften, die Text-Decorator-Elemente.**
+6. **Ordnen Sie die Eigenschaften, die Text-Decorator-Elemente.**
 
-    1.  Wählen Sie die graue Linie zwischen der Domänenklasse und der Formklasse aus, die die Diagrammelementzuordnung darstellt.
+   1. Wählen Sie die graue Linie zwischen der Domänenklasse und der Formklasse aus, die die Diagrammelementzuordnung darstellt.
 
-    2.  In der **DSL-Details** Fenster, klicken Sie auf die **Decorator-Zuordnungen** Registerkarte. Wenn Sie nicht sehen die **DSL-Details** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows** , und klicken Sie dann auf **DSL-Details**. Häufig muss der obere Rand des Fensters angehoben werden, um den gesamten Inhalt anzuzeigen.
+   2. In der **DSL-Details** Fenster, klicken Sie auf die **Decorator-Zuordnungen** Registerkarte. Wenn Sie nicht sehen die **DSL-Details** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows** , und klicken Sie dann auf **DSL-Details**. Häufig muss der obere Rand des Fensters angehoben werden, um den gesamten Inhalt anzuzeigen.
 
-    3.  Wählen Sie den Namen eines Decorator-Elements aus. Klicken Sie unter **Anzeigeeigenschaft**, wählen Sie den Namen einer Eigenschaft der Domänenklasse. Wiederholen Sie dies für jedes Decorator-Element.
+   3. Wählen Sie den Namen eines Decorator-Elements aus. Klicken Sie unter **Anzeigeeigenschaft**, wählen Sie den Namen einer Eigenschaft der Domänenklasse. Wiederholen Sie dies für jedes Decorator-Element.
 
-         Wenn Sie eine Eigenschaft eines verwandten Elements anzeigen möchten, klicken Sie auf die Dropdown-strukturnavigator unter **Pfad zur Anzeigeeigenschaft**.
+       Wenn Sie eine Eigenschaft eines verwandten Elements anzeigen möchten, klicken Sie auf die Dropdown-strukturnavigator unter **Pfad zur Anzeigeeigenschaft**.
 
-    4.  Stellen Sie sicher, dass neben jedem Decorator-Namen ein Häkchen angezeigt wird.
+   4. Stellen Sie sicher, dass neben jedem Decorator-Namen ein Häkchen angezeigt wird.
 
-     ![Formzuordnungen und DSL-Detailfenster](../modeling/media/dsldetailswindow.png)
+      ![Formzuordnungen und DSL-Detailfenster](../modeling/media/dsldetailswindow.png)
 
-7.  **Stellen Sie ein Toolboxelement zum Erstellen von Elementen der Domänenklasse.**
+7. **Stellen Sie ein Toolboxelement zum Erstellen von Elementen der Domänenklasse.**
 
-    1.  In **DSL-Explorer**, erweitern Sie die **Editor** Knoten und alle zugehörigen Unterknoten.
+   1.  In **DSL-Explorer**, erweitern Sie die **Editor** Knoten und alle zugehörigen Unterknoten.
 
-    2.  Mit der rechten Maustaste unter des Knotens **Toolboxregisterkarten** Listenfeldsteuerelement mit den gleichen Namen wie Ihre DSL hat, z. B. "Musikbibliothek". Klicken Sie auf **Elementwerkzeug hinzufügen**.
+   2.  Mit der rechten Maustaste unter des Knotens **Toolboxregisterkarten** Listenfeldsteuerelement mit den gleichen Namen wie Ihre DSL hat, z. B. "Musikbibliothek". Klicken Sie auf **Elementwerkzeug hinzufügen**.
 
-        > [!NOTE]
-        >  Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.
+       > [!NOTE]
+       >  Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.
 
-    3.  Die mit dem neuen Elementtool ausgewählt haben, legen Sie im Fenster **Klasse** mit der Domänenklasse, die Sie vor kurzem hinzugefügt haben.
+   3.  Die mit dem neuen Elementtool ausgewählt haben, legen Sie im Fenster **Klasse** mit der Domänenklasse, die Sie vor kurzem hinzugefügt haben.
 
-    4.  Legen Sie **Beschriftung** und **QuickInfo**.
+   4.  Legen Sie **Beschriftung** und **QuickInfo**.
 
-    5.  Legen Sie **Toolboxsymbol** für ein Symbol, das in der Toolbox angezeigt wird. Sie können ein neues Symbol oder ein bereits für ein anderes Werkzeug verwendetes Symbol angeben.
+   5.  Legen Sie **Toolboxsymbol** für ein Symbol, das in der Toolbox angezeigt wird. Sie können ein neues Symbol oder ein bereits für ein anderes Werkzeug verwendetes Symbol angeben.
 
-         Um ein neues Symbol zu erstellen, öffnen Sie dsl\ressourcen im **Projektmappen-Explorer**. Kopieren Sie eine der vorhandenen BMP-Dateien für Elementwerkzeuge, und fügen Sie sie ein. Benennen Sie die eingefügte Kopie um, und doppelklicken Sie dann darauf, um sie zu öffnen.
+        Um ein neues Symbol zu erstellen, öffnen Sie dsl\ressourcen im **Projektmappen-Explorer**. Kopieren Sie eine der vorhandenen BMP-Dateien für Elementwerkzeuge, und fügen Sie sie ein. Benennen Sie die eingefügte Kopie um, und doppelklicken Sie dann darauf, um sie zu öffnen.
 
-         Kehren Sie zum DSL-Definitionsdiagramm zurück, wählen Sie das Tool, und klicken Sie im Fenster Eigenschaften auf **[...]**  in **Toolboxsymbol**. In der **Bitmap auswählen** wählen Sie im Dialogfeld Ihre. BMP-Datei aus der Dropdown-Menü.
+        Kehren Sie zum DSL-Definitionsdiagramm zurück, wählen Sie das Tool, und klicken Sie im Fenster Eigenschaften auf **[...]**  in **Toolboxsymbol**. In der **Bitmap auswählen** wählen Sie im Dialogfeld Ihre. BMP-Datei aus der Dropdown-Menü.
 
- Weitere Informationen finden Sie unter [von Eigenschaften Geometrischer Formen](../modeling/properties-of-geometry-shapes.md) und [Eigenschaften von Bildformen](../modeling/properties-of-image-shapes.md).
+   Weitere Informationen finden Sie unter [von Eigenschaften Geometrischer Formen](../modeling/properties-of-geometry-shapes.md) und [Eigenschaften von Bildformen](../modeling/properties-of-image-shapes.md).
 
 #### <a name="to-test-shapes"></a>So testen Sie Formen
 
-1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
+1. **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
 
-2.  **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
+2. **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
 
-3.  **Stellen Sie sicher, dass die elementwerkzeuge im Werkzeugkasten erscheinen.**
+3. **Stellen Sie sicher, dass die elementwerkzeuge im Werkzeugkasten erscheinen.**
 
-4.  **Erstellen Sie Formen** über ein Tool in das Modelldiagramm ziehen.
+4. **Erstellen Sie Formen** über ein Tool in das Modelldiagramm ziehen.
 
-5.  **Stellen Sie sicher, dass jedes Text-Decorator-Element angezeigt wird,** und:
+5. **Stellen Sie sicher, dass jedes Text-Decorator-Element angezeigt wird,** und:
 
-    1.  Sie bearbeiten können, es sei denn, Sie haben die **ist schreibgeschützte Benutzeroberfläche** Flag für die Eigenschaft "Domain".
+   1.  Sie bearbeiten können, es sei denn, Sie haben die **ist schreibgeschützte Benutzeroberfläche** Flag für die Eigenschaft "Domain".
 
-    2.  Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
+   2.  Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
 
- Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="references"></a> Definieren von Verweisbeziehungen
  Sie können eine Verweisbeziehung zwischen einer Quelldomänenklasse und einer Zieldomänenklasse definieren. Verweisbeziehungen werden in einem Diagramm üblicherweise als Konnektoren, also als Linien zwischen Formen, angezeigt.
@@ -387,27 +387,27 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>So testen Sie eine Verweisbeziehung und einen Konnektor
 
-1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
+1. **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
 
-2.  **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
+2. **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
 
-3.  **Stellen Sie sicher, dass das Verbindungstool in der Toolbox angezeigt wird.**
+3. **Stellen Sie sicher, dass das Verbindungstool in der Toolbox angezeigt wird.**
 
-4.  **Erstellen Sie Formen** über ein Tool in das Modelldiagramm ziehen.
+4. **Erstellen Sie Formen** über ein Tool in das Modelldiagramm ziehen.
 
-5.  **Erstellen von Verbindungen** zwischen den Formen. Klicken Sie auf das Konnektorwerkzeug, auf eine Form und dann auf eine andere Form.
+5. **Erstellen von Verbindungen** zwischen den Formen. Klicken Sie auf das Konnektorwerkzeug, auf eine Form und dann auf eine andere Form.
 
-6.  **Stellen Sie sicher, dass Sie keine Verbindungen zwischen ungeeigneten Klassen erstellen können.** Beispielsweise ist die Beziehung zwischen Alben und Interpreten, stellen Sie sicher, dass Sie Interpreten mit Interpreten verbinden können.
+6. **Stellen Sie sicher, dass Sie keine Verbindungen zwischen ungeeigneten Klassen erstellen können.** Beispielsweise ist die Beziehung zwischen Alben und Interpreten, stellen Sie sicher, dass Sie Interpreten mit Interpreten verbinden können.
 
-7.  **Stellen Sie sicher, dass die Multiplizitäten zutreffend sind. Beispielsweise stellen Sie sicher, dass Sie eine Person mit mehreren Managern herstellen können.**
+7. **Stellen Sie sicher, dass die Multiplizitäten zutreffend sind. Beispielsweise stellen Sie sicher, dass Sie eine Person mit mehreren Managern herstellen können.**
 
-8.  **Stellen Sie sicher, dass jedes Text-Decorator-Element angezeigt wird,** und:
+8. **Stellen Sie sicher, dass jedes Text-Decorator-Element angezeigt wird,** und:
 
-    1.  Sie bearbeiten können, es sei denn, Sie haben die **ist schreibgeschützte Benutzeroberfläche** Flag für die Eigenschaft "Domain".
+   1.  Sie bearbeiten können, es sei denn, Sie haben die **ist schreibgeschützte Benutzeroberfläche** Flag für die Eigenschaft "Domain".
 
-    2.  Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
+   2.  Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
 
- Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="compartments"></a> Definieren von Formen, die Listen enthalten: Depot-Formen
  Eine Depot-Form enthält mindestens eine Liste von Elementen. In einer DSL für eine Musikbibliothek würden Sie z. B. Depot-Formen verwenden, um Musikalben darzustellen. Jedes Album enthält eine Liste von Songs.
@@ -488,27 +488,27 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 #### <a name="to-test-a-compartment-shape"></a>So testen Sie eine Depot-Form
 
-1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
+1. **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren.
 
-2.  **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
+2. **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im experimentellen Modus auszuführen. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Dateinamenerweiterung Ihrer DSL.
 
-3.  **Stellen Sie sicher, dass das Tool im Werkzeugkasten erscheint.**
+3. **Stellen Sie sicher, dass das Tool im Werkzeugkasten erscheint.**
 
-4.  Ziehen Sie das Werkzeug in das Modelldiagramm. Eine Form wird erstellt.
+4. Ziehen Sie das Werkzeug in das Modelldiagramm. Eine Form wird erstellt.
 
-     Überprüfen Sie, ob der Name des Elements angezeigt und automatisch auf einen Standardwert festgelegt wird.
+    Überprüfen Sie, ob der Name des Elements angezeigt und automatisch auf einen Standardwert festgelegt wird.
 
-5.  Mit der rechten Maustaste in des Headers der neuen Form, und klicken Sie dann auf Hinzufügen *Ihrlistenelement.* Im Beispiel lautet der Befehl "Song hinzufügen".
+5. Mit der rechten Maustaste in des Headers der neuen Form, und klicken Sie dann auf Hinzufügen *Ihrlistenelement.* Im Beispiel lautet der Befehl "Song hinzufügen".
 
-     Überprüfen Sie, ob ein Element mit einem neuen Namen in der Liste erscheint.
+    Überprüfen Sie, ob ein Element mit einem neuen Namen in der Liste erscheint.
 
-6.  Klicken Sie auf eines der Listenelemente, und betrachten Sie das Eigenschaftenfenster. Es sollten die Eigenschaften der Listenelemente angezeigt werden.
+6. Klicken Sie auf eines der Listenelemente, und betrachten Sie das Eigenschaftenfenster. Es sollten die Eigenschaften der Listenelemente angezeigt werden.
 
-7.  Öffnen Sie den Sprach-Explorer. Überprüfen Sie, ob die Containerknoten mit darin enthaltenen Listenelementknoten angezeigt werden.
+7. Öffnen Sie den Sprach-Explorer. Überprüfen Sie, ob die Containerknoten mit darin enthaltenen Listenelementknoten angezeigt werden.
 
- ![Generierter Explorer für DSL](../modeling/media/music_explorer.png)
+   ![Generierter Explorer für DSL](../modeling/media/music_explorer.png)
 
- Nach dem ersten Test einer Depot-Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test einer Depot-Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Anzeigen eines Verweislinks in einem Depot
  Normalerweise ist ein in einem Depot angezeigtes Element ein untergeordnetes Element des Elements, das durch die Depot-Form dargestellt wird. Aber manchmal soll ein Element angezeigt werden, das durch eine Verweisbeziehung damit verbunden ist.
@@ -544,21 +544,21 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Um ein Beispiel mit Anschlüssen sehen möchten, wählen Sie die **Komponentendiagramm** Vorlage beim Erstellen einer neuen DSL-Projektmappe. Dieses Beispiel zeigt die wesentlichen Punkte, die Sie bei der Definition von Anschlüssen berücksichtigen können:
 
--   Es gibt eine Domänenklasse, die den Container der Anschlüsse darstellt: `Component`.
+- Es gibt eine Domänenklasse, die den Container der Anschlüsse darstellt: `Component`.
 
--   Es gibt eine Domänenklasse, die Anschlüsse darstellt. Im Beispiel ist dies `ComponentPort`.
+- Es gibt eine Domänenklasse, die Anschlüsse darstellt. Im Beispiel ist dies `ComponentPort`.
 
--   Es gibt eine einbettende Beziehung von der Container-Domänenklasse zur Anschluss-Domänenklasse. Weitere Informationen finden Sie unter [Definieren von Domänenklassen](#classes).
+- Es gibt eine einbettende Beziehung von der Container-Domänenklasse zur Anschluss-Domänenklasse. Weitere Informationen finden Sie unter [Definieren von Domänenklassen](#classes).
 
--   Wenn verschiedene Anschlusstypen in demselben Container gemischt werden sollen, können Sie Unterklassen der Anschluss-Domänenklasse erstellen. In dem Beispiel erben `InPort` und `OutPort` von `ComponentPort`.
+- Wenn verschiedene Anschlusstypen in demselben Container gemischt werden sollen, können Sie Unterklassen der Anschluss-Domänenklasse erstellen. In dem Beispiel erben `InPort` und `OutPort` von `ComponentPort`.
 
--   Die Container-Domänenklasse kann jeder beliebigen Form zugeordnet werden. Im Beispiel ist dies `ComponentShape`. Weitere Informationen finden Sie unter [Definieren von Formen](#shapes).
+- Die Container-Domänenklasse kann jeder beliebigen Form zugeordnet werden. Im Beispiel ist dies `ComponentShape`. Weitere Informationen finden Sie unter [Definieren von Formen](#shapes).
 
--   Die Anschluss-Domänenklassen werden Anschluss-Formen zugeordnet. Sie können entweder die abgeleiteten Klassen verschiedenen Anschluss-Formklassen zuordnen oder die Basisklasse einer Anschluss-Formklasse zuordnen.
+- Die Anschluss-Domänenklassen werden Anschluss-Formen zugeordnet. Sie können entweder die abgeleiteten Klassen verschiedenen Anschluss-Formklassen zuordnen oder die Basisklasse einer Anschluss-Formklasse zuordnen.
 
- Ansonsten Anschluss-Formen Verhalten sich wie beschrieben [Definieren von Formen](#shapes).
+  Ansonsten Anschluss-Formen Verhalten sich wie beschrieben [Definieren von Formen](#shapes).
 
- Weitere Informationen finden Sie unter [Eigenschaften von Anschlussformen](../modeling/properties-of-port-shapes.md).
+  Weitere Informationen finden Sie unter [Eigenschaften von Anschlussformen](../modeling/properties-of-port-shapes.md).
 
 ## <a name="swimlanes"></a> Definieren einer DSL, die von Verantwortlichkeitsbereichen
  Verantwortlichkeitsbereiche sind vertikale oder horizontale Bereiche eines Diagramms. Jeder Verantwortlichkeitsbereich entspricht einem Modellelement. Ihre DSL-Definition muss eine Domänenklasse für die Verantwortlichkeitsbereich-Elemente enthalten.
@@ -610,16 +610,17 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 ## <a name="trouble"></a> Problembehandlung bei
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Forum zur Erweiterbarkeit von Visualisierung Tools](http://go.microsoft.com/fwlink/?LinkId=186074).
 
-|Problem|Vorschlag|
-|-------------|----------------|
-|Die Änderungen, die ich an der DSL-Definition vorgenommen habe, wirken sich nicht aus.|Klicken Sie auf **alle Vorlagen transformieren** in der Symbolleiste Projektmappen-Explorer, und klicken Sie dann neu erstellen der Projektmappe.|
-|Formen zeigen statt des Eigenschaftenwerts den Namen eines Decorator-Elements an.|Richten Sie die Decorator-Zuordnung ein. Klicken Sie im DSL-Definitionsdiagramm auf die Diagrammelementzuordnung (die graue Linie zwischen der Domänenklasse und der Formklasse).<br /><br /> Öffnen der **DSL-Details** Fenster. Wenn Sie sie im Menü Ansicht nicht angezeigt wird, zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.<br /><br /> Klicken Sie auf die **Decorator-Zuordnungen** Registerkarte. Wählen Sie den Namen des Decorator-Elements aus. Vergewissern Sie sich, dass das Kontrollkästchen daneben aktiviert ist. Klicken Sie unter **Anzeigeeigenschaft**, wählen Sie den Namen einer Domäneneigenschaft.<br /><br /> Weitere Informationen finden Sie unter [Formen im Diagramm](#shapes).|
-|Ich kann in DSL-Explorer keine Auflistung hinzufügen. Zum Beispiel gibt es beim Rechtsklick auf "Werkzeuge" keinen "Tool hinzufügen"-Befehl im Menü.<br /><br /> Ich kann im Explorer für meine DSL kein Element zu einer Liste hinzufügen.|Klicken Sie mit der rechten Maustaste auf das Element über dem Knoten, den Sie testen. Wenn Sie etwas zu einer Liste hinzufügen möchten, befindet sich der Befehl zum Hinzufügen nicht im Listenknoten, sondern in seinem Besitzer.|
-|Ich habe eine Domänenklasse erstellt, aber ich kann im Explorer der Sprache keine Instanzen erstellen.|Jede Domänenklasse mit Ausnahme des Stamms muss Ziel einer einbettenden Beziehung sein.|
-|Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt.|Wählen Sie in der DSL-Definition eine Domäneneigenschaft der Klasse, und legen Sie in den Eigenschaften im Fenster **ist Elementname** auf "true".|
-|Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie _Ihresprache_**Designer (Standard)**.|
-|Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe.|Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|
+
+| Problem | Vorschlag |
+|-|-|
+| Die Änderungen, die ich an der DSL-Definition vorgenommen habe, wirken sich nicht aus. | Klicken Sie auf **alle Vorlagen transformieren** in der Symbolleiste Projektmappen-Explorer, und klicken Sie dann neu erstellen der Projektmappe. |
+| Formen zeigen statt des Eigenschaftenwerts den Namen eines Decorator-Elements an. | Richten Sie die Decorator-Zuordnung ein. Klicken Sie im DSL-Definitionsdiagramm auf die Diagrammelementzuordnung (die graue Linie zwischen der Domänenklasse und der Formklasse).<br /><br /> Öffnen der **DSL-Details** Fenster. Wenn Sie sie im Menü Ansicht nicht angezeigt wird, zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.<br /><br /> Klicken Sie auf die **Decorator-Zuordnungen** Registerkarte. Wählen Sie den Namen des Decorator-Elements aus. Vergewissern Sie sich, dass das Kontrollkästchen daneben aktiviert ist. Klicken Sie unter **Anzeigeeigenschaft**, wählen Sie den Namen einer Domäneneigenschaft.<br /><br /> Weitere Informationen finden Sie unter [Formen im Diagramm](#shapes). |
+| Ich kann in DSL-Explorer keine Auflistung hinzufügen. Zum Beispiel gibt es beim Rechtsklick auf "Werkzeuge" keinen "Tool hinzufügen"-Befehl im Menü.<br /><br /> Ich kann im Explorer für meine DSL kein Element zu einer Liste hinzufügen. | Klicken Sie mit der rechten Maustaste auf das Element über dem Knoten, den Sie testen. Wenn Sie etwas zu einer Liste hinzufügen möchten, befindet sich der Befehl zum Hinzufügen nicht im Listenknoten, sondern in seinem Besitzer. |
+| Ich habe eine Domänenklasse erstellt, aber ich kann im Explorer der Sprache keine Instanzen erstellen. | Jede Domänenklasse mit Ausnahme des Stamms muss Ziel einer einbettenden Beziehung sein. |
+| Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt. | Wählen Sie in der DSL-Definition eine Domäneneigenschaft der Klasse, und legen Sie in den Eigenschaften im Fenster **ist Elementname** auf "true". |
+| Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie * Ihresprache ***Designer (Standard)**. |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**. |
 
 ## <a name="see-also"></a>Siehe auch
 

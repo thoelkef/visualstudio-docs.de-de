@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908922"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Zum Erstellen einer Lösung einer domänenspezifischen Sprache  
   
-1.  Starten Sie die DSL-Assistenten.  
+1. Starten Sie die DSL-Assistenten.  
   
-    1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+   1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-    2.  Das Dialogfeld **Neues Projekt** wird angezeigt.  
+   2. Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-    3.  Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.  
+   3. Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.  
   
-    4.  Klicken Sie auf **domänenspezifischen Sprachdesigner**.  
+   4. Klicken Sie auf **domänenspezifischen Sprachdesigner**.  
   
-    5.  In der **Namen** geben einen Namen für die Lösung. Klicken Sie auf **OK**.  
+   5. In der **Namen** geben einen Namen für die Lösung. Klicken Sie auf **OK**.  
   
-         Die **Domain-Specific Language-Designer-Assistenten** angezeigt wird.  
+       Die **Domain-Specific Language-Designer-Assistenten** angezeigt wird.  
   
-        > [!NOTE]
-        >  Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.  
+      > [!NOTE]
+      >  Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.  
   
-     ![DSL-Dialogfeld "erstellen"](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![DSL-Dialogfeld "erstellen"](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Wählen Sie eine DSL-Vorlage.  
+2. Wählen Sie eine DSL-Vorlage.  
   
-     Auf der **domänenspezifische Sprachoptionen auswählen** Seite, wählen Sie eine der Lösungsvorlagen wie z. B. **minimale Sprache**. Wählen Sie eine Vorlage, die die DSL ähnelt, die Sie erstellen möchten.  
+    Auf der **domänenspezifische Sprachoptionen auswählen** Seite, wählen Sie eine der Lösungsvorlagen wie z. B. **minimale Sprache**. Wählen Sie eine Vorlage, die die DSL ähnelt, die Sie erstellen möchten.  
   
-     Weitere Informationen zu Vorlagen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Weitere Informationen zu Vorlagen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.  
+3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.  
   
-    -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
+   -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
   
-    -   Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+   -   Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
-4.  Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).  
+4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).  
   
-     Der Assistent erstellt eine Projektmappe mit zwei Projekten, die benannt werden **Dsl** und **DslPackage**.  
+    Der Assistent erstellt eine Projektmappe mit zwei Projekten, die benannt werden **Dsl** und **DslPackage**.  
   
-    > [!NOTE]
-    >  Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.  
+   > [!NOTE]
+   >  Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.  
   
 ##  <a name="settings"></a> Die DSL-Designer-Assistent-Seiten  
  Sie können einige Felder die Standardwerte unverändert lassen. Allerdings stellen Sie sicher, dass Sie das Feld für die Erweiterung festlegen.  

@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812906"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>So definieren Sie die IDXGraphicsAnalysis-Schnittstelle  
   
--   Definieren Sie die IDXGraphicsAnalysis-Schnittstelle in derselben Datei, in die Sie die Headerdateien eingeschlossen haben.  
+- Definieren Sie die IDXGraphicsAnalysis-Schnittstelle in derselben Datei, in die Sie die Headerdateien eingeschlossen haben.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Der Einfachheit halber können Sie diese Schritte in einer neuen Header-Datei ausführen und diese dann dort einschließen, wo Sie sie in Ihrer App benötigen.  
+  Der Einfachheit halber können Sie diese Schritte in einer neuen Header-Datei ausführen und diese dann dort einschließen, wo Sie sie in Ihrer App benötigen.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Abrufen der Schnittstelle IDXGraphicsAnalysis  
  Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die DXGI-Debugschnittstelle abrufen.  
@@ -171,23 +171,23 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>So konfigurieren Sie den Namen und den Ort der Grafikprotokolldatei  
   
--   Fügen Sie vor der Zeile `#include <vsgcapture.h>` Folgendes ein, um zu verhindern, dass das Grafikprotokoll in das Temp-Verzeichnis geschrieben wird:  
+- Fügen Sie vor der Zeile `#include <vsgcapture.h>` Folgendes ein, um zu verhindern, dass das Grafikprotokoll in das Temp-Verzeichnis geschrieben wird:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     Sie können diesen Wert definieren, um das Grafikprotokoll an einen Ort zu schreiben, der sich im Arbeitsverzeichnis befindet, oder in einen absoluten Pfad, wenn die Definition von `VSG_DEFAULT_RUN_FILENAME` ein absoluter Pfad ist.  
+   Sie können diesen Wert definieren, um das Grafikprotokoll an einen Ort zu schreiben, der sich im Arbeitsverzeichnis befindet, oder in einen absoluten Pfad, wenn die Definition von `VSG_DEFAULT_RUN_FILENAME` ein absoluter Pfad ist.  
   
--   Fügen Sie vor der Zeile `#include <vsgcapture.h>` Folgendes ein, um das Grafikprotokoll an einem anderen Ort zu speichern oder ihm einen anderen Dateinamen zu geben:  
+- Fügen Sie vor der Zeile `#include <vsgcapture.h>` Folgendes ein, um das Grafikprotokoll an einem anderen Ort zu speichern oder ihm einen anderen Dateinamen zu geben:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Wenn Sie diesen Schritt nicht ausführen, lautet der Dateiname default.vsglog. Wenn Sie `DONT_SAVE_VSGLOG_TO_TEMP`nicht definiert haben, ist der Speicherort der Datei relativ zum Temp-Verzeichnis; andernfalls ist er relativ zum Arbeitsverzeichnis oder an einem anderen Speicherort, wenn Sie einen absoluten Dateinamen angegeben haben.  
+   Wenn Sie diesen Schritt nicht ausführen, lautet der Dateiname default.vsglog. Wenn Sie `DONT_SAVE_VSGLOG_TO_TEMP`nicht definiert haben, ist der Speicherort der Datei relativ zum Temp-Verzeichnis; andernfalls ist er relativ zum Arbeitsverzeichnis oder an einem anderen Speicherort, wenn Sie einen absoluten Dateinamen angegeben haben.  
   
- Für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -apps, den Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und -app und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamilienname*\TempState\\. Für desktop-apps, der Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
+  Für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -apps, den Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und -app und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamilienname*\TempState\\. Für desktop-apps, der Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  

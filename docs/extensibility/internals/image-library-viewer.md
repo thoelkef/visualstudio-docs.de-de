@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816825"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bildmanifesten, damit der Benutzer sie auf die gleiche Weise bearbeiten wie Visual Studio. Der Benutzer kann es sich um Hintergrund, Größen, DPI-Wert, hoher Kontrast und andere Einstellungen ändern. Das Tool zeigt beim Laden der Informationen für jedes Image Manifest auch und zeigt Quellinformationen für jedes Bild im Image-Manifest. Dieses Tool eignet sich für:  
   
-1.  Diagnostizieren von Fehlern  
+1. Diagnostizieren von Fehlern  
   
-2.  Sicherstellen, dass Attribute sind in benutzerdefinierten Images Manifeste ordnungsgemäß festgelegt.  
+2. Sicherstellen, dass Attribute sind in benutzerdefinierten Images Manifeste ordnungsgemäß festgelegt.  
   
-3.  Suche für Bilder in der Visual Studio-Image-Katalog, damit Visual Studio-Erweiterung Images verwenden kann, die den Stil von Visual Studio entsprechen.  
+3. Suche für Bilder in der Visual Studio-Image-Katalog, damit Visual Studio-Erweiterung Images verwenden kann, die den Stil von Visual Studio entsprechen.  
   
- ![Image-Viewer-Hero Bibliothek](../../extensibility/internals/media/image-library-viewer-hero.png "Image Library-Viewer-Hero")  
+   ![Image-Viewer-Hero Bibliothek](../../extensibility/internals/media/image-library-viewer-hero.png "Image Library-Viewer-Hero")  
   
- **Image-moniker**  
+   **Image-moniker**  
   
- Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID: ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.  
+   Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID: ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.  
   
- **Image-Manifestdateien**  
+   **Image-Manifestdateien**  
   
- Image-Manifest (.imagemanifest)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, die jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.  
+   Image-Manifest (.imagemanifest)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, die jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.  
   
- **Image-manifest-schema**  
+   **Image-manifest-schema**  
   
- Ein Abschließen des Images Manifest sieht folgendermaßen aus:  
+   Ein Abschließen des Images Manifest sieht folgendermaßen aus:  
   
 ```xml  
 <ImageManifest>  

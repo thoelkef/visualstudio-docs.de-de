@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838542"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Dialogfeld "Regelbedingungs-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelbedingungs-Editor** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
   
  Sie erstellen und ändern deklarative regelbedingungen mit dem **Regelbedingungs-Editor** Dialogfeld. Diese Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten als Eigenschaften angegeben:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Sie Zugriff auf die **Regelbedingungs-Editor** Dialogfeld mithilfe der [wählen Sie im Dialogfeld Bedingung (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Sie Zugriff auf die **Regelbedingungs-Editor** Dialogfeld mithilfe der [wählen Sie im Dialogfeld Bedingung (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelbedingungs-Editor** Dialogfeld.  
+  Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelbedingungs-Editor** Dialogfeld.  
   
 |Benutzeroberflächenelement|Beschreibung|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ In diesem Thema wird beschrieben, wie die **Regelbedingungs-Editor** Dialogfeld 
   
  Der Regelbedingungs-Editor unterstützt die folgenden Operatoren:  
   
--   Relationale Operatoren: ==, =, !=  
+- Relationale Operatoren: ==, =, !=  
   
--   Vergleichsoperatoren: <, \<=, >, > =  
+- Vergleichsoperatoren: <, \<=, >, > =  
   
--   Arithmetische Operatoren: +, - , *, /, MOD  
+- Arithmetische Operatoren: +, - , *, /, MOD  
   
--   Logische Operatoren: und, & &, OR, &#124; &#124;, NOT,!  
+- Logische Operatoren: und, & &, OR, &#124; &#124;, NOT,!  
   
--   Bitweise Operatoren: &,&#124;  
+- Bitweise Operatoren: &,&#124;  
   
- Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
+  Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
   
- Der Regelbedingungs-Editor unterstützt die folgenden numerischen Ausdrücke:  
+  Der Regelbedingungs-Editor unterstützt die folgenden numerischen Ausdrücke:  
   
- this.i == 1D (wird zu 1.0 aufgelöst)  
+  this.i == 1D (wird zu 1.0 aufgelöst)  
   
- this.i == 1E1 (wird zu 10.0 aufgelöst)  
+  this.i == 1E1 (wird zu 10.0 aufgelöst)  
   
- this.i == 1L (wird zu einem long-Wert aufgelöst)  
+  this.i == 1L (wird zu einem long-Wert aufgelöst)  
   
- this.i == 1M (wird zu einem decimal-Wert aufgelöst)  
+  this.i == 1M (wird zu einem decimal-Wert aufgelöst)  
   
- this.i == 1F (wird zu einem single-Wert aufgelöst)  
+  this.i == 1F (wird zu einem single-Wert aufgelöst)  
   
- this.i == 1U (wird zu einem vorzeichenlosen int-Wert aufgelöst)  
+  this.i == 1U (wird zu einem vorzeichenlosen int-Wert aufgelöst)  
   
- Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aktivität "IfElseActivity"](http://go.microsoft.com/fwlink?LinkID=65033)   

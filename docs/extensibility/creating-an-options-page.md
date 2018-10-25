@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876749"
 ---
 # <a name="create-an-options-page"></a>Erstellen einer Optionsseite
 In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-Seite, die ein Eigenschaftenraster zum Überprüfen und Festlegen von Eigenschaften verwendet.  
@@ -27,7 +27,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
  Das MPF bietet zwei Klassen zum Erstellen von Optionsseiten im Menü Extras, stehen Ihnen die <xref:Microsoft.VisualStudio.Shell.Package> Klasse und die <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse. Sie erstellen eine VSPackage, um einen Container für diese Seiten zu ermöglichen, indem Unterklassen der `Package` Klasse. Erstellen Sie jede Optionsseite "Tools" durch Ableiten von der `DialogPage` Klasse.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-tools-options-grid-page"></a>Erstellen Sie eine Rasterseite Extras – Optionen  
@@ -35,9 +35,9 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Erstellen das VSIX-Projekt und Hinzufügen von einem VSPackage  
   
-1.  Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `MyToolsOptionsExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.  
+1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `MyToolsOptionsExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.  
   
-2.  Fügen Sie eine VSPackage, indem ein Visual Studio-Paket-Elementvorlage, die mit dem Namen hinzufügen `MyToolsOptionsPackage`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"**, wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **Visual Studio-Paket**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an `MyToolsOptionsPackage.cs`. Weitere Informationen dazu, wie Sie ein VSPackage zu erstellen, finden Sie unter [erstellen Sie eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Fügen Sie eine VSPackage, indem ein Visual Studio-Paket-Elementvorlage, die mit dem Namen hinzufügen `MyToolsOptionsPackage`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"**, wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **Visual Studio-Paket**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an `MyToolsOptionsPackage.cs`. Weitere Informationen dazu, wie Sie ein VSPackage zu erstellen, finden Sie unter [erstellen Sie eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Um das Eigenschaftenraster Extras/Optionen zu erstellen.  
   

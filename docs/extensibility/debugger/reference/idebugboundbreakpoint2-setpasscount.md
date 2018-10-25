@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
+title: IDebugBoundBreakpoint2::SetPassCount | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589792a9309565496b4d1ab73e1867055bcdf3bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abdb437abfe2ed9980ce94c7df20a840aeec5dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831080"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Legt fest oder ändert die Anzahl der Durchläufe dieser gebundenen Haltepunkt zugeordnet.  
+Legt fest oder ändert die Anzahl der Durchläufe dieser gebundene Haltepunkt zugeordnet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,12 +45,12 @@ int SetPassCount(
  [in] Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur, die Anzahl der Durchläufe angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundenen Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
 ## <a name="remarks"></a>Hinweise  
  Anzahl der Durchläufe bestimmt, wann der Breakpoint ausgelöst wird. Die aktuellen Durchlauf oder Trefferanzahl erhalten Sie durch Aufrufen der [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) Methode.  
   
- Eine beliebige Anzahl der Durchläufe, das zuvor diesem Breakpoint zugeordnet war, geht verloren.  
+ Alle Pass-Anzahl, die zuvor dieser Haltepunkt zugeordnet wurde, geht verloren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

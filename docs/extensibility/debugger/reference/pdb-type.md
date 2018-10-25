@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE | Microsoft Docs
+title: PDB_TYPE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc610963fa1ca82fec30e04abb90583db48bdf55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83d891de330b66841b1ad48a7fc4593b1144e9e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888118"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
-Diese Struktur gibt Informationen über ein Symbol PDB entnommen Feldtyp an.  
+Diese Struktur gibt Informationen über einen Feldtyp, ein Symbol für die PDB-Datei entnommen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ public struct PDB_TYPE {
   
 #### <a name="parameters"></a>Parameter  
  ulAppDomainID  
- Die ID der Anwendung, von der das Symbol stammt. Dient zur eindeutigen Identifizierung eine Instanz der Anwendung.  
+ Die ID der Anwendung, von der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.  
   
  guidModule  
  Die GUID des Moduls, das dieses Feld enthält.  
@@ -54,7 +54,7 @@ public struct PDB_TYPE {
  Die ID des Symbols, das dieses Feld entspricht.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird als Teil der Union der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strukturieren, wenn die `dwKind` -Feld der der `TYPE_INFO` Struktur auf festgelegt ist `TYPE_KIND_PDB` (ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) die Enumeration).  
+ Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Kontostruktur, wenn die `dwKind` Feld der `TYPE_INFO` Struktur nastaven NA hodnotu `TYPE_KIND_PDB` (ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) die Enumeration).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

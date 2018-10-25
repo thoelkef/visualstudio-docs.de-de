@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Microsoft Docs
+title: IDebugObject::SetReferenceValue | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8941b09a18968fccba72c6e03a2fe612234909d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b597d7a62880e00a570a1971a6fec2becaaddca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908625"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Legt den Wert dieses Objekts fest.  
+Legt den Verweiswert, der dieses Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int SetReferenceValue(
   
 #### <a name="parameters"></a>Parameter  
  `pObject`  
- [in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das die neue Verweiswert darstellt.  
+ [in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das den neuen Verweiswert darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode macht diese [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) einen Verweis auf den Wert des Objekts im angegebenen Objekt der `pObject` verwerfen alle vorherigen Verweise-Parameter. Beachten Sie, dass diese `IDebugObject` Objekt muss bereits ein Verweistyp sein.  
+ Auf diese Weise wird dies [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) einen Verweis auf den Wert des Objekts im angegebenen Objekt der `pObject` wegwirft alle vorherigen Verweis-Parameter. Beachten Sie, das von diesem `IDebugObject` Objekt muss bereits ein Verweistyp sein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
