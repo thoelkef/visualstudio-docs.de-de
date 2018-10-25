@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908781"
 ---
 # <a name="form-support-in-workflows"></a>Unterstützung von Formularen in workflows
   Vier Arten von Formularen in einem Workflow verwendet werden können: Zuordnung, Initiierung, Aufgabe und Änderung. Dieser Formulartypen können auf eine ASPX-Webformular oder ein InfoPath-Formular basieren. Die Ebene der Unterstützung, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet für verschiedene Faktoren berücksichtigt, ein bestimmtes Formulars hängt die in der folgenden Tabelle beschrieben werden. Weitere Informationen zu den Workflow-Formulartypen, finden Sie unter [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228) auf der MSDN-Website.  
@@ -43,7 +43,7 @@ ms.locfileid: "36326079"
  Die folgende Tabelle enthält [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Unterstützung für andere Typen in entweder ASPX- oder InfoPath-Formularen in wiederverwendbaren SharePoint-Workflows, die in importiert werden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Formulartyp|Wiederverwendbaren Workflows, der eine ASPX-Webformular aus SharePoint Designer importiert wurde.|Wiederverwendbaren Workflows, der ein InfoPath-Formular, das von SharePoint Designer importiert wurde.|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |Zuordnung|-Das Formular verwiesen wird, der *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird umgestaltet werden, wenn das Formular umbenannt oder gelöscht wird oder wenn sich der Bereitstellungspfad ändert.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet.|  
 |Initiierung|-Das Formular wird verwiesen, indem der Workflow in den *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird umgestaltet werden, wenn das Formular umbenannt oder gelöscht wird oder wenn sich der Bereitstellungspfad ändert.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis:** Regeln und Eigenschaften hinzugefügt und für dieses Szenario geändert werden müssen.|  
 |Aufgabe|-Das Formular verwiesen wird, der *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis:** Regeln und Eigenschaften hinzugefügt und für dieses Szenario geändert werden müssen.|  

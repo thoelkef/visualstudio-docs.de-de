@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878556"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ Sie können Erweiterungen in den Designer vornehmen, die Sie verwenden, um die D
   
  Die Erweiterungen für den Hauptknoten bereitstellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und auf andere Computer, gehen Sie folgendermaßen vor:  
   
-1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX  
+1. Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX  
   
-2.  Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.  
+2. Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.  
   
-     Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.  
+    Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.  
   
- Um die Erweiterung zu deinstallieren, gehen Sie folgendermaßen vor:  
+   Um die Erweiterung zu deinstallieren, gehen Sie folgendermaßen vor:  
   
-1.  in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
-2.  Wählen Sie die Erweiterung, oder löschen.  
+4. Wählen Sie die Erweiterung, oder löschen.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Hinzufügen der Befehl im Kontextmenü  
  Damit der Befehl im Kontextmenü auf die DSL-Designer-Oberfläche oder im DSL-Explorer-Fenster angezeigt wird, können schreiben Sie eine Klasse, die der folgenden.  

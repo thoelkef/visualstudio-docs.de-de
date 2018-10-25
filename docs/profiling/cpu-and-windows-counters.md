@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865920"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 
@@ -93,15 +93,15 @@ Zum Auflisten der verfügbaren Indikatoren auf einem Computer in der Visual Stud
 
 2. Führen Sie einen der folgenden Schritte aus:
 
-    -   Klicken Sie auf **Sampling**, und wählen Sie anschließend aus der Ereignisliste **Beispiel** die Option **Leistungsindikator** aus. Die CPU-Indikatoren werden unter **Verfügbare Leistungsindikatoren** aufgeführt.
+   - Klicken Sie auf **Sampling**, und wählen Sie anschließend aus der Ereignisliste **Beispiel** die Option **Leistungsindikator** aus. Die CPU-Indikatoren werden unter **Verfügbare Leistungsindikatoren** aufgeführt.
 
-         **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.
+      **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.
 
      - oder - 
 
-    -   Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.
+   - Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.
 
-         **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.
+      **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>So zeigen Sie eine Liste aller Windows-Indikatoren an, die auf der aktuellen Plattform unterstützt werden
 

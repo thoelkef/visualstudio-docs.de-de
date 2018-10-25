@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851828"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 ## <a name="toolset-implementation"></a>Toolsetimplementierung  
  Sie implementieren ein Toolset, indem Sie die Pfade der verschiedenen Tools, Ziele und Aufgaben auswählen, die das Toolset ausmachen. Die Tools im Toolset, das von MSBuild definiert wird, stammen aus den folgenden Quellen:  
   
--   .NET Framework-Ordner  
+- .NET Framework-Ordner  
   
--   Zusätzliche verwaltete Tools  
+- Zusätzliche verwaltete Tools  
   
- Dazu zählen ResGen.exe und TlbImp.exe.  
+  Dazu zählen ResGen.exe und TlbImp.exe.  
   
- MSBuild bietet zwei Möglichkeiten, auf das Toolset zuzugreifen:  
+  MSBuild bietet zwei Möglichkeiten, auf das Toolset zuzugreifen:  
   
--   Durch Verwendung von Toolseteigenschaften  
+- Durch Verwendung von Toolseteigenschaften  
   
--   Durch Verwendung von <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Methoden  
+- Durch Verwendung von <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Methoden  
   
- In den Toolseteigenschaften sind die Pfade der Tools angegeben. MSBuild verwendet den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z.B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  In den Toolseteigenschaften sind die Pfade der Tools angegeben. MSBuild verwendet den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z.B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Dies sind die Toolseteigenschaften:  
+  Dies sind die Toolseteigenschaften:  
   
--   `MSBuildToolsPath` gibt den Pfad der MSBuild-Binärdateien an.  
+- `MSBuildToolsPath` gibt den Pfad der MSBuild-Binärdateien an.  
   
--   `SDK40ToolsPath` gibt den Pfad der zusätzlichen verwalteten Tools für MSBuild 4.x (4.0 oder 4.5).  
+- `SDK40ToolsPath` gibt den Pfad der zusätzlichen verwalteten Tools für MSBuild 4.x (4.0 oder 4.5).  
   
--   `SDK35ToolsPath` gibt den Pfad der zusätzlichen verwalteten Tools für MSBuild 3,5 an.  
+- `SDK35ToolsPath` gibt den Pfad der zusätzlichen verwalteten Tools für MSBuild 3,5 an.  
   
- Alternativ können Sie die Toolsets programmgesteuert bestimmen, indem Sie die Methoden der <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Klasse aufrufen. Die Klasse beinhaltet diese Methoden:  
+  Alternativ können Sie die Toolsets programmgesteuert bestimmen, indem Sie die Methoden der <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Klasse aufrufen. Die Klasse beinhaltet diese Methoden:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> gibt den Pfad des .NET Framework-Ordners zurück.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> gibt den Pfad des .NET Framework-Ordners zurück.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> gibt den Pfad einer Datei im .NET Framework-Ordner zurück.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> gibt den Pfad einer Datei im .NET Framework-Ordner zurück.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> gibt den Pfad des Ordners der verwalteten Tools zurück.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> gibt den Pfad des Ordners der verwalteten Tools zurück.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> gibt den Pfad einer Datei zurück, die sich in der Regel im Ordner mit verwalteten Tools befindet.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> gibt den Pfad einer Datei zurück, die sich in der Regel im Ordner mit verwalteten Tools befindet.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> gibt den Pfad der Build-Tools zurück.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> gibt den Pfad der Build-Tools zurück.  
   
 ### <a name="sub-toolsets"></a>Unter-Toolsets  
  Wie bereits früher in diesem Thema beschrieben, verwendet MSBuild einen Registrierungsschlüssel, um den Pfad der grundlegenden Tools anzugeben. Wenn der Schlüssel einen Unterschlüssel hat, verwendet MSBuild ihn, um den Pfad eines Unter-Toolsets anzugeben, das zusätzliche Tools enthält. In diesem Fall wird das Toolset definiert, indem die in beiden Schlüsseln definierten Eigenschaftendefinitionen kombiniert werden.  
@@ -107,19 +107,19 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
  Unter-Toolsets werden bei Vorhandensein der Buildeigenschaft `VisualStudioVersion` aktiv. Diese Eigenschaft verwendet einen der folgenden Werte:  
   
--   "10.0" gibt das .NET Framework 4-Unter-Toolset an  
+- "10.0" gibt das .NET Framework 4-Unter-Toolset an  
   
--   "11,0" gibt das .NET Framework 4,5-Unter-Toolset an  
+- "11,0" gibt das .NET Framework 4,5-Unter-Toolset an  
   
--   "12,0" gibt das .NET Framework 4.5.1-Unter-Toolset an  
+- "12,0" gibt das .NET Framework 4.5.1-Unter-Toolset an  
   
- Die Unter-Toolsets 10.0 und 11.0 sollten mit der ToolsVersion 4.0 verwendet werden. In späteren Versionen sollten die Version der Unter-Toolsets und die ToolsVersion übereinstimmen.  
+  Die Unter-Toolsets 10.0 und 11.0 sollten mit der ToolsVersion 4.0 verwendet werden. In späteren Versionen sollten die Version der Unter-Toolsets und die ToolsVersion übereinstimmen.  
   
- Während eines Builds ermittelt MSBuild automatisch den Wert für die Eigenschaft `VisualStudioVersion` und legt einen Standardwert fest, wenn er noch nicht definiert ist.  
+  Während eines Builds ermittelt MSBuild automatisch den Wert für die Eigenschaft `VisualStudioVersion` und legt einen Standardwert fest, wenn er noch nicht definiert ist.  
   
- MSBuild stellt Überladungen für die `ToolLocationHelper`-Methoden bereit, die einen `VisualStudioVersion`-Enumerationswert als Parameter hinzufügen.  
+  MSBuild stellt Überladungen für die `ToolLocationHelper`-Methoden bereit, die einen `VisualStudioVersion`-Enumerationswert als Parameter hinzufügen.  
   
- Unter-Toolsets wurden in .NET Framework 4.5 eingeführt.  
+  Unter-Toolsets wurden in .NET Framework 4.5 eingeführt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)   

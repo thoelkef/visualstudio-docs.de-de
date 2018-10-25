@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882573"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Optionaler Parameter in Office-Projektmappen
   Viele der Methoden in den Objektmodellen von Microsoft Office-Anwendungen akzeptieren optionale Parameter. Wenn Sie mithilfe von Visual Basic eine Office-Lösung in Visual Studio entwickeln, muss kein Wert für optionale Parameter übergeben werden, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden. In den meisten Fällen können Sie optionale Parameter in Visual C#-Projekten auch weggelassen. Allerdings kann nicht ohne Angabe optional **Ref** Parameter von der `ThisDocument` Klasse im Word-Projekten auf Dokumentebene.  
@@ -57,19 +57,19 @@ ms.locfileid: "35671829"
   
  Wenn Sie Methoden der `ThisDocument`-Klasse aufrufen, befolgen Sie diese Richtlinien:  
   
--   Akzeptieren Sie den Standardwert eines optionalen **Ref** -Parameter, übergeben Sie die `missing` Variable an den Parameter. Die `missing`-Variable wird automatisch in Visual C# Office-Projekten definiert und dem <xref:System.Type.Missing>-Wert im generierten Projektcode zugewiesen.  
+- Akzeptieren Sie den Standardwert eines optionalen **Ref** -Parameter, übergeben Sie die `missing` Variable an den Parameter. Die `missing`-Variable wird automatisch in Visual C# Office-Projekten definiert und dem <xref:System.Type.Missing>-Wert im generierten Projektcode zugewiesen.  
   
--   An einen eigenen Wert für einen optionalen **Ref** Parameter Deklarieren eines Objekts, das den Wert zugewiesen ist, die Sie angeben möchten, und klicken Sie dann das Objekt an den Parameter übergeben.  
+- An einen eigenen Wert für einen optionalen **Ref** Parameter Deklarieren eines Objekts, das den Wert zugewiesen ist, die Sie angeben möchten, und klicken Sie dann das Objekt an den Parameter übergeben.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie zum Aufrufen der <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> Methode durch Angabe eines Werts für die *IgnoreUppercase* Parameter und den Standardwert für die anderen Parameter akzeptieren.  
+  Im folgenden Codebeispiel wird veranschaulicht, wie zum Aufrufen der <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> Methode durch Angabe eines Werts für die *IgnoreUppercase* Parameter und den Standardwert für die anderen Parameter akzeptieren.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- Sollten Sie Code schreiben, der optional lässt **Ref** Parameter einer Methode in der `ThisDocument` -Klasse, Sie können auch die gleiche Methode für Aufrufen der <xref:Microsoft.Office.Interop.Word.Document> zurückgegebenes Objekt der <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> -Eigenschaft, und lassen Sie die die Parameter in dieser Methode. Dies ist möglich, da <xref:Microsoft.Office.Interop.Word.Document> eine Schnittstelle und keine Klasse ist.  
+  Sollten Sie Code schreiben, der optional lässt **Ref** Parameter einer Methode in der `ThisDocument` -Klasse, Sie können auch die gleiche Methode für Aufrufen der <xref:Microsoft.Office.Interop.Word.Document> zurückgegebenes Objekt der <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> -Eigenschaft, und lassen Sie die die Parameter in dieser Methode. Dies ist möglich, da <xref:Microsoft.Office.Interop.Word.Document> eine Schnittstelle und keine Klasse ist.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Weitere Informationen zu den Typparametern für Wert- und Verweisdatentypen, finden Sie unter [übergeben von Argumenten als Wert und als Verweis &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Weitere Informationen zu den Typparametern für Wert- und Verweisdatentypen, finden Sie unter [übergeben von Argumenten als Wert und als Verweis &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839270"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen oder Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -100,7 +100,7 @@ Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hä
 
     Wenn Sie eine neue Anwendung erstellen, wird für einige Projekte standardmäßig als Zielversion [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] festgelegt.
 
-- Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
+Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > In Visual Studio 2015 oder höher wird anstelle eines Projektverweises ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 oder höher ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.
@@ -109,9 +109,9 @@ Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hä
 
 - Verschieben oder kopieren Sie die Assembly in einen der folgenden Speicherorte:
 
-    - Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)
+   - Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)
 
-    - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
+   - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
 
     \- oder –
 
@@ -175,7 +175,7 @@ In den Desktopprojekten wird die Untergruppe **Core** nicht automatisch angezeig
 </PropertyGroup>
 ```
 
-Vergessen Sie nicht, das Kontrollkästchen **Windows** in dieser Untergruppe zu aktivieren. Anschließend können Windows-Runtime-Elemente verwendet werden. Allerdings sollten Sie auch <xref:System.Runtime> hinzufügen. Hier definiert die Windows-Runtime einige Standardklassen und Schnittstellen (beispielsweise <xref:System.Collections.IEnumerable>), die in Windows Runtime-Bibliotheken verwendet werden. Informationen über das Hinzufügen von <xref:System.Runtime> finden Sie unter [Managed desktop apps and Windows Runtime (Verwaltete Desktop-Apps und Windows-Runtime)](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).
+Vergessen Sie nicht, das Kontrollkästchen **Windows** in dieser Untergruppe zu aktivieren. Anschließend können Windows-Runtime-Elemente verwendet werden. Allerdings sollten Sie auch <xref:System.Runtime> hinzufügen. Hier definiert die Windows-Runtime einige Standardklassen und Schnittstellen (beispielsweise <xref:System.Collections.IEnumerable>), die in Windows Runtime-Bibliotheken verwendet werden. Informationen über das Hinzufügen von <xref:System.Runtime> finden Sie unter [Managed desktop apps and Windows Runtime (Verwaltete Desktop-Apps und Windows-Runtime)](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
 
 ### <a name="extensions-subgroup"></a>Untergruppe „Erweiterungen“
 

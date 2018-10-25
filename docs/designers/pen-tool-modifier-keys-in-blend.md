@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908740"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Stifttool-Zusatztasten in Blend
 In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie einen Pfad bearbeiten können, während Sie ihn mit dem **Stifttool** ![Stifttool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) erstellen. Sie können mit dem Tool **Stift** auch Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen, oder zwei vorhandene Pfade verbinden.
 
 |Aktion|Vorgehensweise|Zeiger|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Einen Punkt erstellen, um ein gerades Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen.|![Einen Punkt erstellen, um ein gerades Liniensegment zu beginnen](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Stiftzeiger|
 |Einen Punkt erstellen, um ein gekrümmtes Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen, und ziehen Sie anschließend, um die Tangentensteuerpunkte anzupassen, bevor Sie die Maustaste loslassen.|![Einen Punkt erstellen, um ein gekrümmtes Liniensegment zu beginnen](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Stiftzeiger|
 |Die letzte Tangente mit deaktivierter Abrundungseinschränkung anpassen, sodass Sie spitze Ecken zeichnen können|Klicken Sie, um den neuen Punkt zu erstellen, und drücken Sie anschließend **ALT**, bevor Sie die Maustaste loslassen|![Anpassen der letzten Tangente ohne die Abrundungseinschränkung](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|

@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845848"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
 ### <a name="callercallee-view"></a>Aufrufer-/Aufgerufener-Ansicht  
  Die Aufrufer-/Aufgerufener-Ansicht zeigt eine Aufrufstruktur für eine einzelne Funktion. Das Ansicht ist in drei Teile unterteilt:  
   
--   Die Zielfunktion wird in der Mitte der Ansicht angezeigt.  
+- Die Zielfunktion wird in der Mitte der Ansicht angezeigt.  
   
--   Die Funktionen, die die Funktion (Aufrufer) aufgerufen haben, werden oberhalb der Zielfunktion angezeigt.  
+- Die Funktionen, die die Funktion (Aufrufer) aufgerufen haben, werden oberhalb der Zielfunktion angezeigt.  
   
--   Die Funktionen, die von der Zielfunktion (Aufgerufene) aufgerufen werden, werden unter dem Ziel angezeigt.  
+- Die Funktionen, die von der Zielfunktion (Aufgerufene) aufgerufen werden, werden unter dem Ziel angezeigt.  
   
- Sie können eine andere Funktion durch Doppelklicken auf eine beliebige Funktion in der Aufrufer-/Aufgerufener-Liste auswählen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
+  Sie können eine andere Funktion durch Doppelklicken auf eine beliebige Funktion in der Aufrufer-/Aufgerufener-Liste auswählen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Aufrufstrukturansicht  
  In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von dieser aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.  

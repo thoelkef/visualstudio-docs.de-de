@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949310"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer
 
@@ -49,28 +49,28 @@ Ein Add-In ist eine kompilierte DLL, die in der integrierten Entwicklungsumgebun
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>So erstellen Sie mithilfe des Add-In-Assistenten ein Add-In
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-2.  Erweitern Sie unter **Installierte Vorlagen** die Option **Andere Projekttypen**, und wählen Sie **Erweiterbarkeit** aus.
+2. Erweitern Sie unter **Installierte Vorlagen** die Option **Andere Projekttypen**, und wählen Sie **Erweiterbarkeit** aus.
 
-3.  Klicken Sie in der Liste der Vorlagen auf **Add-In für Visual Studio**.
+3. Klicken Sie in der Liste der Vorlagen auf **Add-In für Visual Studio**.
 
-4.  Geben Sie unter **Name** einen Namen für das Add-In ein, z.B. **WebPerfTestResultsViewerAddin**.
+4. Geben Sie unter **Name** einen Namen für das Add-In ein, z.B. **WebPerfTestResultsViewerAddin**.
 
-5.  Klicken Sie auf **OK**.
+5. Klicken Sie auf **OK**.
 
-     Der **Add-In-Assistent** von Visual Studio wird geöffnet.
+    Der **Add-In-Assistent** von Visual Studio wird geöffnet.
 
-6.  Wählen Sie **Weiter** aus.
+6. Wählen Sie **Weiter** aus.
 
-7.  Wählen Sie auf der Seite **Wählen Sie eine Programmiersprache aus** die Programmiersprache aus, die Sie zum Schreiben des Add-Ins verwenden möchten.
+7. Wählen Sie auf der Seite **Wählen Sie eine Programmiersprache aus** die Programmiersprache aus, die Sie zum Schreiben des Add-Ins verwenden möchten.
 
-    > [!NOTE]
-    > Dieses Thema verwendet Visual C# für den Beispielcode.
+   > [!NOTE]
+   > Dieses Thema verwendet Visual C# für den Beispielcode.
 
-8.  Wählen Sie auf der Seite **Wählen Sie einen Anwendungshost aus** die Option **Visual Studio** aus, und deaktivieren Sie **Visual Studio-Makros**.
+8. Wählen Sie auf der Seite **Wählen Sie einen Anwendungshost aus** die Option **Visual Studio** aus, und deaktivieren Sie **Visual Studio-Makros**.
 
 9. Wählen Sie **Weiter** aus.
 
@@ -96,18 +96,18 @@ Ein Add-In ist eine kompilierte DLL, die in der integrierten Entwicklungsumgebun
 
      Sie fügen der Datei *Connect.cs* Code wie im folgenden Verfahren hinzu. Bei diesem Verfahren wird ein Benutzersteuerelement erstellt, auf das durch dieses WebPerfTestResultsViewerAddin-Projekt verwiesen wird.
 
- Nachdem ein Add-In erstellt wurde, müssen Sie es unter Visual Studio registrieren, bevor es im **Add-In-Manager** aktiviert werden kann. Dies wird mit einer XML-Datei mit der Erweiterung *.addin* erreicht.
+    Nachdem ein Add-In erstellt wurde, müssen Sie es unter Visual Studio registrieren, bevor es im **Add-In-Manager** aktiviert werden kann. Dies wird mit einer XML-Datei mit der Erweiterung *.addin* erreicht.
 
- Diese *.addin*-Datei beschreibt die Informationen, die Visual Studio benötigt, um das Add-In im **Add-In-Manager** anzuzeigen. Beim Start von Visual Studio wird am Speicherort der *.addin*-Datei nach verfügbaren *.addin*-Dateien gesucht. Wenn eine solche XML-Datei gefunden wird, wird sie gelesen, und dem **Add-In-Manager** werden alle Informationen zur Verfügung gestellt, die nach einem entsprechenden Mausklick zum Starten des Add-Ins benötigt werden.
+    Diese *.addin*-Datei beschreibt die Informationen, die Visual Studio benötigt, um das Add-In im **Add-In-Manager** anzuzeigen. Beim Start von Visual Studio wird am Speicherort der *.addin*-Datei nach verfügbaren *.addin*-Dateien gesucht. Wenn eine solche XML-Datei gefunden wird, wird sie gelesen, und dem **Add-In-Manager** werden alle Informationen zur Verfügung gestellt, die nach einem entsprechenden Mausklick zum Starten des Add-Ins benötigt werden.
 
- Die *.addin*-Datei wird automatisch erstellt, wenn Sie ein Add-In mit dem **Add-In-Assistenten** erstellen.
+    Die *.addin*-Datei wird automatisch erstellt, wenn Sie ein Add-In mit dem **Add-In-Assistenten** erstellen.
 
 ### <a name="add-in-file-locations"></a>Speicherorte der Add-In-Datei
 
 Zwei Kopien der *.addin*-Datei werden wie folgt automatisch vom **Add-In-Assistenten** erstellt:
 
 |**Speicherort der ADDIN-Datei**|**Beschreibung**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Stammprojektordner|Wird zur Bereitstellung des Add-In-Projekts verwendet. Ist im Projekt enthalten, um die Bearbeitung zu erleichtern, und verfügt für die XCopy-Bereitstellung über den lokalen Pfad.|
 |Add-In-Ordner|Wird zum Ausführen des Add-Ins in der Debugumgebung verwendet. Sollte immer auf den Ausgabepfad der aktuellen Buildkonfiguration zeigen.|
 

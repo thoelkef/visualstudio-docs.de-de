@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842377"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
@@ -40,7 +40,7 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 
 - Installieren Sie das [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und vor der Installation der Profilerstellungstools neu starten.
 
- So installieren Sie die [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
+  So installieren Sie die [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
 
 1. Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.
 
@@ -52,11 +52,11 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|
-|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
-|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe.|
+| | |
+|------------------| - |
+| *%HeadNode%* | Der Name des Hauptknotens für den Cluster. |
+| *%FxPath%* | Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
+| *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe. |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten
 
@@ -68,9 +68,9 @@ Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistente
 
 3. Wählen Sie auf der zweiten Seite des Assistenten die Anwendung aus, für die Sie ein Profil erstellen möchten.
 
-    - Wählen Sie die Option **Ein oder mehrere verfügbare Projekte** aus, und wählen Sie dann den Namen des Projekts aus der Liste aus, um ein Profil für ein Projekt zu erstellen, das momentan in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] geöffnet ist.
+   - Wählen Sie die Option **Ein oder mehrere verfügbare Projekte** aus, und wählen Sie dann den Namen des Projekts aus der Liste aus, um ein Profil für ein Projekt zu erstellen, das momentan in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] geöffnet ist.
 
-    - Wählen Sie die Option **Eine ausführbare (. EXE-Datei)** aus, um ein Profil für eine Binärdatei zu erstellen, die sich nicht in einem geöffneten Projekt befindet.
+   - Wählen Sie die Option **Eine ausführbare (. EXE-Datei)** aus, um ein Profil für eine Binärdatei zu erstellen, die sich nicht in einem geöffneten Projekt befindet.
 
 4. Klicken Sie auf **Weiter**.
 
@@ -126,7 +126,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften
 
-|Eigenschaft|description|
+|Eigenschaft|Beschreibung |
 |--------------|-----------------|
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|
@@ -137,16 +137,17 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften
 
-|Eigenschaft|description|
-|--------------|-----------------|
-|**Projektname**|Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung.|
-|**Bereinigen beim Beenden des Profilers**|Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden.|
-|**Zusätzliche bereitzustellende Dateien**|Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken (**...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen.|
-|**Mpiexec-Befehl**|Gibt die Anwendung an, die die MPI-Anwendung startet. Der Standardwert lautet **mpiexec.exe**|
-|**Mpiexec-Argumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|
-|**Angeforderte Knoten im Cluster**|Gibt die Anzahl der Knoten im Cluster an, auf denen die Anwendung ausgeführt wird.|
-|**Bereitstellen von CRT-Dateien**|Wenn TRUE, wird die C/C++-Laufzeit auf dem Cluster bereitgestellt.|
-|**Präprofilskript**|Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer vor dem Beginn der Profilerstellungssitzung ausgeführt wird.|
-|**Präprofilskriptargumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|
-|**Postprofilskript**|Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer nach dem Ende der Profilerstellungssitzung ausgeführt wird.|
-|**Postprofilskriptargumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|
+| Eigenschaft | Beschreibung  |
+|---------------------------------------| - |
+| **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
+| **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |
+| **Zusätzliche bereitzustellende Dateien** | Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken (**...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen. |
+| **Mpiexec-Befehl** | Gibt die Anwendung an, die die MPI-Anwendung startet. Der Standardwert lautet **mpiexec.exe** |
+| **Mpiexec-Argumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
+| **Angeforderte Knoten im Cluster** | Gibt die Anzahl der Knoten im Cluster an, auf denen die Anwendung ausgeführt wird. |
+| **Bereitstellen von CRT-Dateien** | Wenn TRUE, wird die C/C++-Laufzeit auf dem Cluster bereitgestellt. |
+| **Präprofilskript** | Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer vor dem Beginn der Profilerstellungssitzung ausgeführt wird. |
+| **Präprofilskriptargumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
+| **Postprofilskript** | Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer nach dem Ende der Profilerstellungssitzung ausgeführt wird. |
+| **Postprofilskriptargumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
+

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Microsoft Docs
+title: IDebugArrayObject::GetRank | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76e8d3f39ab5f86ba15db7fd00c4b45fc93c9c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7660be0b391208fc52b81796c0a980b079e5aaa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875423"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-Ruft den Rang des Arrays, d. h. die Anzahl von Dimensionen ab.  
+Ruft den Rang des Arrays, d. h. die Anzahl der Dimensionen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,7 +47,7 @@ int GetRank(
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Verwenden der [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) Methode, um die Größe der einzelnen Dimensionen des Array-Objekts abzurufen.  
+ Verwenden der [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) Methode, um die Größe der einzelnen Dimensionen des Array-Objekt abzurufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

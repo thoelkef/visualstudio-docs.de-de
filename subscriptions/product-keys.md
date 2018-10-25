@@ -9,12 +9,12 @@ description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Pro
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900851"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -79,11 +79,11 @@ Nur Abonnenten mit aktiven Abonnements können Produkte herunterladen und Produc
 
 
 So nehmen Sie einen Product Key in Anspruch:
-1.  Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können.
-2.  Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3.  Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.
-    > [!div class="mx-imgBorder"]
-    > ![Nach Product Key suchen](_img\product-keys\visio-product-key-cropped.png)
+1. Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können.
+2. Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
+3. Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.
+   > [!div class="mx-imgBorder"]
+   > ![Nach Product Key suchen](_img/product-keys/visio-product-key-cropped.png)
 
 In diesem Beispiel wird die Suchleiste verwendet, um einen Product Key für Visio 2010 zu suchen.
 Wie Sie sehen können, werden mehrere Versionen von Visio 2010 aufgeführt.  Jeweils ein Schlüssel ist bereits für Visio Standard 2010 und Visio Premium 2010 in Anspruch genommen worden. Für beide Programme können weitere vier Schlüssel verwendet werden.  Bei den beiden Schlüsseln, die in Anspruch genommen wurden, handelt es sich um Verkaufsschlüssel. Sie werden auf der Seite angezeigt.  Beachten Sie, dass Sie in der Spalte **Hinweise** eine kurze Notiz zu den beanspruchten Schlüsseln hinterlassen können.  Diese können Sie zusammen mit dem Datum in der Spalte **Beansprucht** verwenden, um den Überblick über in Anspruch genommene Schlüssel zu behalten.  Sie könnten beispielsweise Notizen machen, wenn Sie die Installation eines Produkts mit dem Schlüssel aktivieren.

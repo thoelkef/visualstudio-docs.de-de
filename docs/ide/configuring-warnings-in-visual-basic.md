@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865961"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 
@@ -39,7 +39,7 @@ Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält 
  Mithilfe der Befehlszeilenoption **/warnaserror** des Compilers kann ebenfalls festgelegt werden, ob Warnungen als Fehler behandelt werden. Sie können bei dieser Option mit den Zeichen + bzw. - in einer durch Trennzeichen getrennten Liste angeben, welche Warnungen als Fehler behandelt werden sollen. In der folgenden Tabelle werden die möglichen Optionen aufgeführt.
 
 |Befehlszeilenoption|Bedeutung|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|Alle Warnungen als Fehler behandeln.|
 |`/warnsaserror`-|Warnungen nicht als Fehler behandeln. Dies ist die Standardeinstellung.|
 |`/warnaserror+:<warning list` `>`|Bestimmte Warnungen, die mit ihrer Fehler-ID in einer durch Trennzeichen getrennten Liste angegeben werden, als Fehler behandeln.|
@@ -52,7 +52,7 @@ Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält 
 ## <a name="examples"></a>Beispiele
  In dieser Tabelle mit Beispielen für Befehlszeilenargumente wird die Bedeutung der einzelnen Argumente beschrieben.
 
-|Argument|description|
+|Argument|Beschreibung |
 |--------------|-----------------|
 |`vbc /warnaserror`|Gibt an, dass alle Warnungen als Fehler behandelt werden sollen.|
 |`vbc /warnaserror:42024`|Gibt an, dass die Warnung 42024 als Fehler behandelt werden soll.|

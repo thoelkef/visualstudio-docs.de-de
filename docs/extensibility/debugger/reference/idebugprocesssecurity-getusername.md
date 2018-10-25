@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft Docs
+title: IDebugProcessSecurity::GetUserName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94fcc74943deb33e7f98ba24e9d7389a9d5746fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f13d7597877104613f0e6ef6380abf0b6bc2a594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891467"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Ruft den Benutzernamen des Lieferanten Port ab.  
+Ruft den Benutzernamen aus den Anschlusslieferanten ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ int GetUserName (
   
 #### <a name="parameters"></a>Parameter  
  `pbstrUserName`  
- [out] Eine Zeichenfolge, die den Benutzernamen enthält.  
+ [out] Eine Zeichenfolge mit den Benutzernamen ein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, gibt es `S_OK`. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn die Methode erfolgreich ist, gibt es `S_OK`. Andernfalls wird einen Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- `GetUserName` Gibt den Benutzernamen zurück, die in angezeigt wird der **Benutzername** Spalte die **an den Prozess anhängen** (Dialogfeld). Anzeigen der **an den Prozess anhängen** (Dialogfeld), klicken Sie auf **an den Prozess anhängen** auf die **Tools** im Menü der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE).  
+ `GetUserName` Gibt den Benutzernamen zurück, die in angezeigt wird der **Benutzernamen** Spalte die **an den Prozess anhängen** Dialogfeld. Anzeigen der **an den Prozess anhängen** Dialogfeld klicken Sie auf **an den Prozess anhängen** auf die **Tools** im Menü der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921482"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Verwenden des Indikatorenfensters in der Diagramm- und Tabellenansicht
 
@@ -54,7 +54,7 @@ Das Indikatorenfenster bietet die folgenden Funktionen:
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Hinzufügen weiterer Leistungsindikatoren zu einem Diagramm in der Diagrammansicht**: Im **Indikatorenfenster** können Sie einem Auslastungstestdiagramm verschiedene Arten von Daten hinzufügen, indem Sie weitere Leistungsindikatoren im Diagramm hinzufügen.|-   [Gewusst wie: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analysieren von im Auslastungstest angegebenen Schwellenwerten, gegen die verstoßen wurde**: Im **Indikatorenfenster** werden Symbole angezeigt, die Schwellenwertverletzungen darstellen. Diese können Sie dann zur weiteren Analyse zu Tabellen und Diagrammen hinzufügen.|-   [Gewusst wie: Analysieren von Schwellenwertverletzungen mit dem Indikatorenfenster](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analysieren von Fehlern, die während des Auslastungstestlaufs erkannt wurden**: Das **Indikatorenfenster** enthält einen Fehlerknoten, der Fehlerkategorien und -unterkategorien (z.B. HTTP-Fehler) enthält, mit denen Sie Fehler zur weiteren Analyse zu Diagrammen hinzufügen können.|-   [Gewusst wie: Analysieren von Fehlern mithilfe des Indikatorenfensters](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Ei
 Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
 |Dauer des Auslastungstests|Empfohlene Samplingrate|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 Stunde|5 Sekunden|
 |1 – 8 Stunden|15 Sekunden|
 |8 – 24 Stunden|30 Sekunden|

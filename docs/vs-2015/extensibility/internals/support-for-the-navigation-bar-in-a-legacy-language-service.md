@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839140"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Wenn die Auswahl in der Dropdown-Typen geändert wird, muss die Mitgliederliste aktualisiert werden, entsprechend den neuen Typ. Was in der Liste angezeigt wird, kann Folgendes sein:  
   
--   Die Liste der Mitglieder für den aktuellen Typ.  
+- Die Liste der Mitglieder für den aktuellen Typ.  
   
--   Alle Member verfügbar im Quell-Datei, aber mit allen Elementen nicht im aktuellen Typ, der in abgeblendeten Text angezeigt. Der Benutzer auswählen kann immer noch die Elemente ausgegraut ist, daher sie für die schnelle Navigation verwendet werden können, aber die Farbe Gibt an, dass sie nicht Teil des ausgewählten Typs sind.  
+- Alle Member verfügbar im Quell-Datei, aber mit allen Elementen nicht im aktuellen Typ, der in abgeblendeten Text angezeigt. Der Benutzer auswählen kann immer noch die Elemente ausgegraut ist, daher sie für die schnelle Navigation verwendet werden können, aber die Farbe Gibt an, dass sie nicht Teil des ausgewählten Typs sind.  
   
- Eine Implementierung der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode in der Regel führt die folgenden Schritte aus:  
+  Eine Implementierung der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode in der Regel führt die folgenden Schritte aus:  
   
 1.  Ruft eine Liste der aktuellen Deklarationen für die Quelldatei.  
   

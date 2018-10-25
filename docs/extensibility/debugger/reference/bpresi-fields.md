@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft Docs
+title: BPRESI_FIELDS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6ecfd729762944bcf26814e735c4c73841e2d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908612"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
-Gibt die Informationen über die erfolgreiche Behebung eines Haltepunkts abgerufen werden sollen.  
+Gibt die Informationen über die erfolgreiche Auflösung eines Haltepunkts abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,23 +48,23 @@ public enum enum_BPRESI_FIELDS {
   
 ## <a name="members"></a>Member  
  BPRESI_BPRESLOCATION  
- Initialisieren/verwenden die `bpResLocation` (breakpointposition Auflösung) Feld der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur.  
+ Initialisieren und Verwenden der `bpResLocation` (Position des Haltepunkts Auflösung) Feld der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur.  
   
  BPRESI_PROGRAM  
- Die Initialisierung/verwenden die `pProgram` Feld der `BP_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `pProgram` Feld der `BP_RESOLUTION_INFO` Struktur.  
   
  BPRESI_THREAD  
- Die Initialisierung/verwenden die `pThread` Feld der `BP_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `pThread` Feld der `BP_RESOLUTION_INFO` Struktur.  
   
  BPRESI_ALLFIELDS  
  Gibt alle Felder an.  
   
 ## <a name="remarks"></a>Hinweise  
- Zum Übergeben der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) Methode, um anzugeben, welche Felder der der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur initialisiert werden sollen.  
+ Übergeben der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) Methode an, welche Felder der der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) sind, dass die Struktur initialisiert werden.  
   
- Diese Flags werden auch verwendet, um anzugeben, welche Felder von der `BP_RESOLUTION_INFO` Struktur verwendet und gültig sind, wenn dieser Struktur zurückgegeben wird.  
+ Diese Flags werden auch verwendet, welche Felder der an die `BP_RESOLUTION_INFO` -Struktur sind gültig und verwendet, wenn dieser Struktur zurückgegeben wird.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

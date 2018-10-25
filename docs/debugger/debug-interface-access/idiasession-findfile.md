@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: FindFile | Microsoft Docs'
+title: 'Idiasession:: FindFile | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91d23cdd92943a40dfa649e82964b101f68739d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909940"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Ruft die Quelldateien von Kompiliereinheit und Namen ab.  
+Ruft die Quelldateien von Kompiliereinheit und den Namen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,19 +37,19 @@ HRESULT findFile (
   
 #### <a name="parameters"></a>Parameter  
  `pCompiland`  
- [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit als einem Kontext verwendet werden, für die Suche darstellt. Legen Sie diesen Parameter, um `NULL` in jeder Kompiliereinheit Quelldateien gefunden.  
+ [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit als Kontext verwendet werden, für die Suche darstellt. Legen Sie diesen Parameter `NULL` Quelldateien in jeder Kompiliereinheit gefunden.  
   
  `name`  
- [in] Gibt den Namen der Quelldatei abgerufen werden sollen. Legen Sie diesen Parameter, um `NULL` für alle Quelldateien abgerufen werden sollen.  
+ [in] Gibt den Namen der Quelldatei abgerufen werden sollen. Legen Sie diesen Parameter `NULL` für alle Quelldateien abgerufen werden sollen.  
   
  `option`  
- [in] Gibt die Vergleichsoptionen, die auf den Namen suchen angewendet. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) Enumeration kann allein oder in Kombination verwendet werden.  
+ [in] Gibt die Vergleichsoptionen, die angewendet werden, um Namen zu suchen. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) -Enumeration können alleine oder zusammen verwendet werden.  
   
  `ppResult`  
  [out] Gibt eine [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) -Objekt, das eine Liste der Quelldateien enthält abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

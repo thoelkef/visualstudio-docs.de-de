@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen einer Meldung in der Ansicht "Nachrichten" | Microsoft Docs'
+title: 'Vorgehensweise: Suchen einer Meldung in der Meldungsansicht | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,41 +14,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368d10f2285c94f053e536da77966e9b2fb26da9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844912"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Gewusst wie: Suchen einer Meldung in der Meldungsansicht
-Sie können mithilfe von dessen Handle, den Typ oder die Nachrichten-ID als Suchkriterium für eine bestimmte Nachricht in der Ansicht "Nachrichten" suchen. Eine dieser – oder eine Kombination aus – werden gültige Suchkriterien. Die anfängliche Richtung der Suche kann auch angegeben werden. Die Felder im Dialogfeld werden mit den Attributen der aktuell ausgewählten Meldung vorab geladen.  
+Sie können mithilfe der Handle, Typ oder Meldungs-ID als Suchkriterium für eine bestimmte Nachricht in der Ansicht "Nachrichten" suchen. Eine dieser – oder eine Kombination – werden gültige Suchkriterien. Die anfängliche Richtung für die Suche kann auch angegeben werden. Die Felder im Dialogfeld werden mit den Attributen der aktuell ausgewählten Nachricht vorab geladen.  
   
-### <a name="to-search-for-a-message-in-messages-view"></a>Suchen Sie für eine Nachricht in der Ansicht "Nachrichten"  
+### <a name="to-search-for-a-message-in-messages-view"></a>Suchen Sie für eine Nachricht in der Meldungsansicht  
   
-1.  Ordnen Sie die Fenster so, Spy++ und ein aktives [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster sichtbar sind.  
+1. Ordnen Sie die Fenster also, Spy++ und ein aktiver [Meldungsansicht](../debugger/messages-view.md) Fenster sichtbar sind.  
   
-2.  Aus der **Suche** Menü wählen **Nachricht suchen**.  
+2. Von der **Suche** Menü wählen **Nachricht suchen**.  
   
-     Die [Nachricht-Dialogfeld "Fenstersuche"](../debugger/message-search-dialog-box.md) wird geöffnet.  
+    Die [Nachricht Meldungssuche (Dialogfeld)](../debugger/message-search-dialog-box.md) wird geöffnet.  
   
-3.  Ziehen Sie die **Suchtools** über das gewünschte Fenster. Wie Sie das Tool, ziehen Sie die **Meldungssuche** Dialogfeld zeigt Details für das ausgewählte Fenster.  
+3. Ziehen Sie die **Suchtool** auf das gewünschte Fenster. Wie Sie das Tool, ziehen Sie die **Meldungssuche** Dialogfeld zeigt die Details für das ausgewählte Fenster.  
   
-     - ODER  
+   - ODER  
   
-     Wenn Sie das Handle des Fensters, deren Meldungen, die Sie untersuchen möchten verfügen, geben Sie ihn in die **behandeln** Textfeld.  
+     Wenn Sie das Handle des Fensters, deren Meldungen, die Sie untersuchen möchten verfügen, geben Sie ihn in das **behandeln** Textfeld.  
   
-     - ODER  
+   - ODER  
   
-     Sie kennen die Nachrichtentyp und/oder die Nachrichten-ID, die Sie möchten, wählen Sie sie aus der **Typ** und **Nachricht** Dropdownmenüs, und deaktivieren Sie die **behandeln** Textfeld.  
+     Wenn Sie wissen den Meldungstyp bzw. eine Meldungs-ID, die Sie möchten, wählen sie aus der **Typ** und **Nachricht** Dropdownmenüs, und deaktivieren Sie die **behandeln** Textfeld.  
   
-4.  Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
+4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
   
-    > [!TIP]
-    >  Wählen Sie zum Bildschirm übersichtlicher gestalten möchten, die **Spy++ ausblenden** Option. Diese Option verbirgt Spy++-Hauptfenster nur verlassen der **"Fenster Suchen"** (Dialogfeld), die zusätzlich zu anderen Anwendungen sichtbar. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **"Abbrechen"**, oder wenn Sie deaktivieren die **Spy++ ausblenden** Option.  
+   > [!TIP]
+   >  Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Diese Option verbirgt die Spy++-Hauptfenster, sondern nur die **Fenster Suchen** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.  
   
-5.  Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung der Suche.  
+5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
- Wenn eine entsprechende Meldung gefunden wird, wird es im Ansichtsfenster Meldungen hervorgehoben. Finden Sie unter [der Meldungsansicht](../debugger/messages-view.md).
+   Wenn eine entsprechende Nachricht gefunden wird, wird es in der Nachrichten an hervorgehoben. Finden Sie unter [Meldungsansicht](../debugger/messages-view.md).

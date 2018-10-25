@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928762"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Regel-Id | DA0018 |
   
  Wenn ein hoher Speicherverwaltungsaufwand ein Problem ist, ziehen Sie eine der folgenden Optionen in Betracht:  
   
--   Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
+- Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-     - oder -   
+   - oder -   
   
--   Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
+- Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   
- Wenn Sie die Verwendung von verwalteten Speicherressourcen optimieren möchten, sammeln Sie im Rahmen einer .NET-Speicherbelegungsprofilerstellung Daten zur verwalteten Speicherbelegung. In den [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md) finden Sie Informationen zum Speicherbelegungsmuster der Anwendung.  
+  Wenn Sie die Verwendung von verwalteten Speicherressourcen optimieren möchten, sammeln Sie im Rahmen einer .NET-Speicherbelegungsprofilerstellung Daten zur verwalteten Speicherbelegung. In den [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md) finden Sie Informationen zum Speicherbelegungsmuster der Anwendung.  
   
- Ermitteln Sie mithilfe der [Objektlebensdaueransicht](../profiling/object-lifetime-view.md) welche Datenobjekte des Programms bei der Generierung noch vorhanden sind und von dort aus freigegeben werden.  
+  Ermitteln Sie mithilfe der [Objektlebensdaueransicht](../profiling/object-lifetime-view.md) welche Datenobjekte des Programms bei der Generierung noch vorhanden sind und von dort aus freigegeben werden.  
   
- Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
+  Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
   
- Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=177946) zu .NET Framework auf der MSDN-Website.  
+  Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=177946) zu .NET Framework auf der MSDN-Website.  
   
- Wenn Sie den architektonischen Einschränkungen für virtuellen Arbeitsspeicher hinsichtlich der Größe des privaten Teils eines Prozessadressbereichs entgehen möchten, führen Sie diesen 32-Bit-Prozess auf einem 64-Bit-Computer aus.  Einem 32-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 4 GB an privatem, virtuellem Arbeitsspeicher zur Verfügung.  
+  Wenn Sie den architektonischen Einschränkungen für virtuellen Arbeitsspeicher hinsichtlich der Größe des privaten Teils eines Prozessadressbereichs entgehen möchten, führen Sie diesen 32-Bit-Prozess auf einem 64-Bit-Computer aus.  Einem 32-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 4 GB an privatem, virtuellem Arbeitsspeicher zur Verfügung.  
   
- Einem 64-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 8 TB an virtuellem Arbeitsspeicher zur Verfügung. Kompilieren Sie die Anwendung neu, um sie als native 64-Bit-Anwendung auszuführen. Diese Regel dient nur als Information. Möglicherweise sind keine Korrekturmaßnahmen erforderlich.
+  Einem 64-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 8 TB an virtuellem Arbeitsspeicher zur Verfügung. Kompilieren Sie die Anwendung neu, um sie als native 64-Bit-Anwendung auszuführen. Diese Regel dient nur als Information. Möglicherweise sind keine Korrekturmaßnahmen erforderlich.
 
 
 

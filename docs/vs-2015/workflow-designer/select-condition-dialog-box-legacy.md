@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897770"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogfeld "Regelbedingungs-Editor auswählen" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Bedingung auswählen** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
   
  Die **Bedingung auswählen** Dialogfeld wird verwendet, um Wählen Sie eine deklarative regelbedingung, einer Aktivität Condition-Eigenschaft zugewiesen werden soll. Diese Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten als Eigenschaften angegeben:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Informationen über den Zugriff auf die **Bedingung auswählen** im Dialogfeld finden Sie unter [Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Informationen über den Zugriff auf die **Bedingung auswählen** im Dialogfeld finden Sie unter [Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Bedingung auswählen** Dialogfeld.  
+  Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Bedingung auswählen** Dialogfeld.  
   
 |Benutzeroberflächenelement|Beschreibung|  
 |----------------|-----------------|  

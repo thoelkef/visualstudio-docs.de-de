@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2adc7125c79afc6b9ebc16b6c4b36f5c147bcdfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ed7eb9c98ad8da45a50af79918480e74d76779e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908547"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> ALS VERALTET MARKIERT. DARF NICHT VERWENDET WERDEN.
+> ALS VERALTET MARKIERT. VERWENDEN SIE NICHT.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ int GetHostMachineName_V7 (
 #### <a name="parameters"></a>Parameter
 
 `pbstrHostMachineName`  
-[out] Gibt den Namen des Computers an, in dem das Programm ausgeführt wird.
+[out] Gibt den Namen des Computers in der das Programm ausgeführt wird.
 
 ## <a name="return-value"></a>Rückgabewert
 
-Eine Implementierung sollte stets `E_NOTIMPL`.
+Eine Implementierung sollte immer zurückgeben `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Hinweise
 
 > [!WARNING]
-> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollten stets `E_NOTIMPL`.
+> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollte immer zurückgeben `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Siehe auch
 

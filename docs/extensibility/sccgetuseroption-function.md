@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption Funktion | Microsoft Docs
+title: SccGetUserOption-Funktion | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928203"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
 Diese Funktion ruft eine Vielzahl von benutzerspezifischen Optionen ab.  
@@ -43,10 +43,10 @@ SCCRTN SccGetUserOption(
  [in] Option zum Abrufen (mögliche Optionen finden Sie unter "Hinweise").  
   
  lpVal  
- [out] Der Wert für Option zugeordnet.  
+ [out] Option zugeordnete Wert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -55,11 +55,11 @@ SCCRTN SccGetUserOption(
 |SCC_E_NONSPECIFICERROR|Es ist ein unbekannter Fehler aufgetreten.|  
   
 ## <a name="remarks"></a>Hinweise  
- Mit diesem Befehl werden die folgenden Optionen unterstützt:  
+ Die folgenden Optionen werden von dieser Befehl unterstützt:  
   
 |Benutzeroption|Beschreibung|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer möchte lokale Version von Dateien auszuchecken. `lpVal` wird zugewiesen `SCC_USEROPT_COLV_YES` (Benutzer möchte zum Auschecken von lokaler Dateien) oder `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer möchte auf die lokale Version von Dateien auszuchecken. `lpVal` erhält `SCC_USEROPT_COLV_YES` (möchte Benutzer lokale Dateien auschecken) oder `SCC_USEROPT_COLV_NO`.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   

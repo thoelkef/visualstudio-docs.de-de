@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925208"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Aufbau eines Tests der programmierten UI
 
@@ -27,7 +27,7 @@ Wenn Sie einen Test der programmierten UI in einem UI-Testprojekt erstellen, wer
 Wenn Sie einen Test der programmierten UI erstellen, erstellt der **Test-Generator der programmierten UI** eine Zuordnung der getesteten Benutzeroberfläche (UI) sowie die Testmethoden, Parameter und Assertionen für alle Tests. Zudem wird eine Klassendatei für jeden Test erstellt.
 
 |Datei|Inhalt|Bearbeitbar?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Deklarationsabschnitt](#UIMapDesignerFile)<br /><br /> [UIMap-Klasse](#UIMapClass) (partiell, automatisch generiert)<br /><br /> [Methoden](#UIMapMethods)<br /><br /> [Eigenschaften](#UIMapProperties)|Nein|
 |[UIMap.cs](#UIMapCS)|[UIMap-Klasse](#UIMapCS) (partiell)|Ja|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1-Klasse](#CodedUITestCS)<br /><br /> [Methoden](#CodedUITestMethods)<br /><br /> [Eigenschaften](#CodedUITestProperties)|Ja|

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921430"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
 
@@ -61,7 +61,7 @@ In der folgenden Tabelle sind Features in Projekteigenschaften für F# zusammeng
 Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach verwandten Funktionalitäten gruppiert sind. Bei den für F#-Projekte verfügbaren Seiten handelt es sich im Wesentlichen um eine Teilmenge der für andere Sprachen verfügbaren Seiten. Sie werden in der folgenden Tabelle beschrieben. Dabei werden Links für die entsprechenden **Projekt-Designer**-Seiten für C# angegeben.
 
 |Projekt-Designer-Seite|Verwandte Links|Beschreibung |
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Application|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Damit können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen, auf welche Version von .NET Framework die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
 |Build|[Seite „Erstellen“, Projekt-Designer](reference/build-page-project-designer-csharp.md)|Damit können Sie festlegen, wie der Code kompiliert wird.|
 |Buildereignisse|[Seite „Buildereignisse“, Projekt-Designer](reference/build-events-page-project-designer-csharp.md)|Damit können Sie Befehle angeben, die vor oder nach dem Kompilieren ausgeführt werden sollen.|
@@ -75,7 +75,7 @@ Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach v
 In der folgenden Tabelle sind F#-spezifische Einstellungen zusammengefasst:
 
 |Projekt-Designer-Seite|Einstellung|Beschreibung |
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Build|Endeaufrufe generieren|Wenn diese Option ausgewählt wird, kann die MSIL-Anweisung (Microsoft Intermediate Language) „tail“ verwendet werden. Dadurch kann der Stapelrahmen für endrekursive Funktionen wiederverwendet werden. Entspricht der Compileroption `--tailcalls`.|
 |Build|Andere Flags|Damit können Sie zusätzliche Compilerbefehlszeilenoptionen angeben.|
 

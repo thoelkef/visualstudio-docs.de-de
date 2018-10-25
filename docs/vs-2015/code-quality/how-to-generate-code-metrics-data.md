@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836202"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ Sie können entscheiden, Codemetrikergebnisse für eine gesamte Projektmappe ode
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Zum Generieren von Codemetrikergebnissen für eine oder mehrere Projekte ausgewählt  
   
-1.  In **Projektmappen-Explorer**, wählen Sie ein oder mehrere Projekte.  
+1. In **Projektmappen-Explorer**, wählen Sie ein oder mehrere Projekte.  
   
-2.  Klicken Sie auf **analysieren**, und klicken Sie dann auf **Codemetrik für ausgewählte Projekte (s)**.  
+2. Klicken Sie auf **analysieren**, und klicken Sie dann auf **Codemetrik für ausgewählte Projekte (s)**.  
   
-     \- oder –  
+    \- oder –  
   
-     Mit der rechten Maustaste in die Auswahl, und klicken Sie dann auf **CalculateCode Metriken**.  
+    Mit der rechten Maustaste in die Auswahl, und klicken Sie dann auf **CalculateCode Metriken**.  
   
- Die Ergebnisse werden generiert und die **Codemetrikergebnisse** Fenster wird angezeigt.  
+   Die Ergebnisse werden generiert und die **Codemetrikergebnisse** Fenster wird angezeigt.  
   
 ### <a name="to-view-the-results-details"></a>Details zum Anzeigen der Ergebnisse  
   

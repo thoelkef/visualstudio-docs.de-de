@@ -24,12 +24,12 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fafbccdae03c604e4d9b150b5745a75792833681
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834577"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Bearbeiten von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,22 +77,22 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 ##  <a name="Creating"></a> Erstellen von UML-Modellierungsdiagrammen  
   
-1.  Auf der **Architektur** in Visual Studio, klicken Sie anschließend auf **neues UML- oder Ebenendiagramm**.  
+1. Auf der **Architektur** in Visual Studio, klicken Sie anschließend auf **neues UML- oder Ebenendiagramm**.  
   
-2.  Wählen Sie Ihr Diagramm aus, und benennen Sie es.  
+2. Wählen Sie Ihr Diagramm aus, und benennen Sie es.  
   
-3.  In **fügen Sie dem Modellierungsprojekt**wählen Sie ein vorhandenes Modellierungsprojekt, oder **ein neues Modellierungsprojekt erstellen**.  
+3. In **fügen Sie dem Modellierungsprojekt**wählen Sie ein vorhandenes Modellierungsprojekt, oder **ein neues Modellierungsprojekt erstellen**.  
   
-    > [!NOTE]
-    >  Im Modellierungsprojekt muss ein Modellierungsdiagramm vorhanden sein.  
+   > [!NOTE]
+   >  Im Modellierungsprojekt muss ein Modellierungsdiagramm vorhanden sein.  
   
- Sie können auch im Projektmappen-Explorer einem vorhandenen Modellierungsprojekt ein Diagramm hinzufügen. Mit der rechten Maustaste in des Modellierungsprojekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
+   Sie können auch im Projektmappen-Explorer einem vorhandenen Modellierungsprojekt ein Diagramm hinzufügen. Mit der rechten Maustaste in des Modellierungsprojekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
   
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Erstellen eines leeren UML-Modellierungsprojekts  
   
--   Auf der **Datei** , zeigen Sie auf **neu**, klicken Sie auf **Projekt**, und klicken Sie in der **neues Projekt** Dialogfeld Doppelklicken Sie auf **Modellierung Projekte**.  
+- Auf der **Datei** , zeigen Sie auf **neu**, klicken Sie auf **Projekt**, und klicken Sie in der **neues Projekt** Dialogfeld Doppelklicken Sie auf **Modellierung Projekte**.  
   
- Weitere Informationen zum Verwalten von Modellierungsprojekten finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+  Weitere Informationen zum Verwalten von Modellierungsprojekten finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 ##  <a name="Drawing"></a> Zeichnen von UML-Modellierungsdiagrammen  
  Ein Modellierungsdiagramm zeigt eine Auflistung von Modellelementen, die durch Beziehungen verknüpft sind. Jedes Element wird als Form, und jede Beziehung als Konnektor zwischen zwei Formen angezeigt.  
@@ -104,21 +104,21 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Erstellen von Elementen und Beziehungen in einem UML-Modellierungsdiagramm  
   
-1.  Um ein Modellelement zu erstellen, klicken Sie auf ein Element in der Toolbox, und klicken Sie dann auf das Diagramm, in dem es angezeigt werden soll. Nachdem Sie das Element erstellt haben, passen Sie die Größe und Form durch Ziehen der Ziehpunkte an.  
+1. Um ein Modellelement zu erstellen, klicken Sie auf ein Element in der Toolbox, und klicken Sie dann auf das Diagramm, in dem es angezeigt werden soll. Nachdem Sie das Element erstellt haben, passen Sie die Größe und Form durch Ziehen der Ziehpunkte an.  
   
-     In einigen Fällen können Sie ein neues Element in einem anderen Element platzieren. Beispielsweise können Sie eine Klasse in einem Paket in einem UML-Klassendiagramm platzieren.  
+    In einigen Fällen können Sie ein neues Element in einem anderen Element platzieren. Beispielsweise können Sie eine Klasse in einem Paket in einem UML-Klassendiagramm platzieren.  
   
-    > [!NOTE]
-    >  Wenn die Toolbox nicht angezeigt wird, klicken Sie auf **Toolbox** auf die **Ansicht** Menü.  
+   > [!NOTE]
+   >  Wenn die Toolbox nicht angezeigt wird, klicken Sie auf **Toolbox** auf die **Ansicht** Menü.  
   
-2.  Um eine Beziehung zu erstellen, klicken Sie auf ein Beziehungstool, klicken Sie auf das Element, in dem die Beziehung gestartet werden soll und klicken Sie dann auf das Element, in dem sie enden soll.  
+2. Um eine Beziehung zu erstellen, klicken Sie auf ein Beziehungstool, klicken Sie auf das Element, in dem die Beziehung gestartet werden soll und klicken Sie dann auf das Element, in dem sie enden soll.  
   
-     Verschiedene Typen von Beziehungen können bei verschiedene Arten von Elementen beginnen oder enden. Beispielsweise kann eine Zuordnungsbeziehung in einem UML-Klassendiagramm nicht bei einem Kommentarelement beginnen oder enden.  
+    Verschiedene Typen von Beziehungen können bei verschiedene Arten von Elementen beginnen oder enden. Beispielsweise kann eine Zuordnungsbeziehung in einem UML-Klassendiagramm nicht bei einem Kommentarelement beginnen oder enden.  
   
-    > [!NOTE]
-    >  Um das gleiche Tool mehrmals zu verwenden, doppelklicken Sie auf das Tool. Wenn Sie fertig sind, klicken Sie auf die **Zeiger** Tool.  
+   > [!NOTE]
+   >  Um das gleiche Tool mehrmals zu verwenden, doppelklicken Sie auf das Tool. Wenn Sie fertig sind, klicken Sie auf die **Zeiger** Tool.  
   
- Bei einigen Arten von Diagrammen können Sie auch einfache Formen zeichnen. Diese Formen sind nicht Teil des Modells, Sie können sie jedoch verwenden, um Teile des Diagramms hervorzuheben oder in verschiedene Bereiche zu unterteilen.  
+   Bei einigen Arten von Diagrammen können Sie auch einfache Formen zeichnen. Diese Formen sind nicht Teil des Modells, Sie können sie jedoch verwenden, um Teile des Diagramms hervorzuheben oder in verschiedene Bereiche zu unterteilen.  
   
 ##  <a name="Editing"></a> Bearbeiten von Formen und Konnektoren  
  Beim Ändern der Größe oder Farbe einer Form oder dem erneuten Erstellen eines Konnektors gibt es keine Auswirkungen auf das zugrunde liegende Modell. Wenn Sie eine Form im Diagramm oder im UML-Modell-Explorer umbenennen, wird das entsprechende Element im UML-Modell-Explorer und allen anderen Diagrammen, die dieses Element darstellen, umbenannt.  
@@ -139,17 +139,17 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>So verschieben Sie ein Ende der Verbindung zu einer anderen Form  
   
-1.  Führen Sie einen der folgenden Schritte aus:  
+1. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Drücken Sie **STRG** und verschieben Sie das Ende.  
+   - Drücken Sie **STRG** und verschieben Sie das Ende.  
   
      \- oder –  
   
-    -   Mit der rechten Maustaste in des Connectors, und klicken Sie dann auf **Reconnect**.  
+   - Mit der rechten Maustaste in des Connectors, und klicken Sie dann auf **Reconnect**.  
   
-2.  Klicken Sie auf das Ende des Konnektors, das Sie verschieben möchten.  
+2. Klicken Sie auf das Ende des Konnektors, das Sie verschieben möchten.  
   
-3.  Klicken Sie auf die Form, zu der Sie den Konnektor verschieben möchten.  
+3. Klicken Sie auf die Form, zu der Sie den Konnektor verschieben möchten.  
   
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Ändern der Farbe oder anderer Eigenschaften eines Elements, einer Beziehung oder eines Diagramms  
   
@@ -267,11 +267,11 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 #### <a name="to-copy-an-entire-diagram"></a>Kopieren eines gesamten Diagramms  
   
-1.  Erstellen Sie ein neues Diagramm.  
+1. Erstellen Sie ein neues Diagramm.  
   
-2.  Wählen Sie alle Elemente in einem vorhandenen Diagramm, kopieren Sie sie, und fügen Sie sie in die neue Zeile ein.  
+2. Wählen Sie alle Elemente in einem vorhandenen Diagramm, kopieren Sie sie, und fügen Sie sie in die neue Zeile ein.  
   
- Sie können ein Diagramm nicht durch Kopieren und Einfügen im Projektmappen-Explorer replizieren.  
+   Sie können ein Diagramm nicht durch Kopieren und Einfügen im Projektmappen-Explorer replizieren.  
   
 ##  <a name="Deleting"></a> Löschen eines Modellelements oder seiner Ansichten  
  Einige Elementarten, insbesondere Klassifizierer, können aus einem Diagramm gelöscht werden, ohne sie aus dem Modell zu löschen. Klassifizierer sind die Hauptelemente, die in Klassendiagrammen, Komponentendiagrammen und Anwendungsfalldiagrammen angezeigt werden. Sie können in mehr als einem Diagramm angezeigt werden. Für diese Typen von Elementen, es gibt zwei separate Befehlen: **aus Diagramm entfernen** und **aus Modell löschen**.  
@@ -283,15 +283,15 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>So entfernen Sie eine Klassifizierungsansicht aus einem Diagramm  
   
--   Mit der rechten Maustaste in des Elements im Diagramm, und klicken Sie dann auf **aus Diagramm entfernen**.  
+- Mit der rechten Maustaste in des Elements im Diagramm, und klicken Sie dann auf **aus Diagramm entfernen**.  
   
- \- oder –  
+  \- oder –  
   
--   Klicken Sie auf das Element im Diagramm, und drücken Sie dann die **löschen** Schlüssel.  
+- Klicken Sie auf das Element im Diagramm, und drücken Sie dann die **löschen** Schlüssel.  
   
-    -   Diese Ansicht des Elements wird ausgeblendet. Allerdings das Element bleibt im Modell, und Sie finden es weiterhin im **UML-Modell-Explorer**. Andere Ansichten des gleichen Elements werden ebenfalls beibehalten.  
+  -   Diese Ansicht des Elements wird ausgeblendet. Allerdings das Element bleibt im Modell, und Sie finden es weiterhin im **UML-Modell-Explorer**. Andere Ansichten des gleichen Elements werden ebenfalls beibehalten.  
   
-    -   Jeder Konnektor, der an dieser Form endet, wird aus dem Diagramm entfernt, die Beziehung bleibt jedoch im Modell. Sehen Sie die Beziehung im **UML-Modell-Explorer** unter **Beziehungen**, in dem jedes Element, das eine Verbindung hergestellt.  
+  -   Jeder Konnektor, der an dieser Form endet, wird aus dem Diagramm entfernt, die Beziehung bleibt jedoch im Modell. Sehen Sie die Beziehung im **UML-Modell-Explorer** unter **Beziehungen**, in dem jedes Element, das eine Verbindung hergestellt.  
   
 #### <a name="to-delete-an-element-from-the-model"></a>Löschen eines Elements aus dem Modell  
   

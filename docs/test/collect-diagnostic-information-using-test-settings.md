@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865348"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen
 
@@ -42,7 +42,7 @@ Um die Komponententests, Tests der codierten UI, Webleistungs- oder Auslastungst
 Die folgende Tabelle bietet eine Übersicht über die möglichen Konfigurationen der Adapter für diagnostische Daten für die Verwendung mit lokalen oder Remotecomputerrollen.
 
 |In Testeinstellung verwendeter Adapter für diagnostische Daten|Manuelle Tests auf lokalem Computer|Automatisierte Tests|Manuelle Tests: Sammeln von Daten mit einem Satz von Rollen und einer Umgebung|Hinweise|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**ASP.NET-Clientproxy für IntelliTrace und Testauswirkung:** Dieser Proxy ermöglicht das Erfassen von Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten.|Ja|Ja|Ja|Verwenden Sie diesen Proxy nur, wenn als Clientrolle der Diagnosedatenadapter IntelliTrace oder der Diagnosedatenadapter Testauswirkung ausgewählt ist.|
 |**ASP.NET-Profiler:** Sie können eine Testeinstellung erstellen, die die ASP.NET-Profilerstellung umfasst, und so Leistungsdaten zu ASP.NET-Webanwendungen sammeln.|Nein|Ja (siehe Hinweise)|Nein|Dieser Adapter für diagnostische Daten wird nur bei der Ausführung von Auslastungstests mit Visual Studio unterstützt.|
 |**Code Coverage**: Sie können eine Testeinstellung erstellen, die Informationen zur Code Coverage umfasst. Damit können Sie prüfen, welcher Anteil des Codes durch Tests abgedeckt wird.|Nein|Ja (siehe Hinweise)|Nein|Sie können die Code Coverage nur verwenden, wenn Sie einen automatisierten Test über Visual Studio oder *mstest.exe* ausführen, und nur auf dem Computer, auf dem der Test ausgeführt wird. Remoteauflistung wird nicht unterstützt.<br />Code Coverage-Daten können nicht gesammelt werden, wenn Sie auch die Testeinstellung zum Erfassen von IntelliTrace-Informationen konfiguriert haben. **Hinweis**: Dieser Adapter für diagnostische Daten gilt nur für Visual Studio-Testeinstellungen. Er wird nicht für Testeinstellungen in Microsoft Test Manager verwendet. Außerdem ist dieser Adapter für Kompatibilitätszwecke mit Visual Studio 2010-Testprojekten vorgesehen. **Hinweis**: Code Coverage gilt dann, wenn automatisierte Tests von Microsoft Test Manager oder auf einem Remote-Test-Agent von Visual Studio mithilfe des älteren MSTest-Runners ausgeführt werden, um Kompatibilität zu erreichen.|

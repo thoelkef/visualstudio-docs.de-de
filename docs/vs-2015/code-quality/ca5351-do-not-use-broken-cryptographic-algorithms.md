@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889814"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233739"
   
  Bei Verschlüsselungsalgorithmen:  
   
--   Die<xref:System.Security.Cryptography.DES> -Verschlüsselung enthält eine kleine Schlüsselgröße, die in weniger als einem Tag einem Brute-Force-Angriff zum Opfer fallen könnte.  
+- Die<xref:System.Security.Cryptography.DES> -Verschlüsselung enthält eine kleine Schlüsselgröße, die in weniger als einem Tag einem Brute-Force-Angriff zum Opfer fallen könnte.  
   
--   Die<xref:System.Security.Cryptography.RC2> -Verschlüsselung ist anfällig für einen schlüsselbezogenen Angriff, bei dem der Angreifer nach mathematischen Beziehungen zwischen allen Schlüsselwerten sucht.  
+- Die<xref:System.Security.Cryptography.RC2> -Verschlüsselung ist anfällig für einen schlüsselbezogenen Angriff, bei dem der Angreifer nach mathematischen Beziehungen zwischen allen Schlüsselwerten sucht.  
   
- Diese Regel löst aus, wenn eine der oben genannten Kryptografiefunktionen im Quellcode gefunden wird, und gibt eine Warnung für den Benutzer aus.  
+  Diese Regel löst aus, wenn eine der oben genannten Kryptografiefunktionen im Quellcode gefunden wird, und gibt eine Warnung für den Benutzer aus.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verwenden Sie kryptografisch sicherere Optionen:  

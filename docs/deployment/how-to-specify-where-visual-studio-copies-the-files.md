@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869586"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Gewusst wie: angeben, in denen Visual Studio die Dateien kopiert
 Beim Veröffentlichen einer Anwendung mithilfe von ClickOnce, gibt die Eigenschaft `Publish Location` den Speicherort an, unter dem die Anwendungsdateien und das Anwendungsmanifest abgelegt werden. Dabei kann es sich um einen Dateipfad oder den Pfad zu einem FTP-Server handeln.  
@@ -34,15 +34,15 @@ Beim Veröffentlichen einer Anwendung mithilfe von ClickOnce, gibt die Eigenscha
   
 ### <a name="to-specify-a-publishing-location"></a>So legen Sie einen Veröffentlichungsort fest  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2. Klicken Sie auf die **veröffentlichen** Registerkarte.  
   
-3.  In der **Speicherort veröffentlichen** Geben Sie den Ort der Veröffentlichung mit einem der folgenden Formate:  
+3. In der **Speicherort veröffentlichen** Geben Sie den Ort der Veröffentlichung mit einem der folgenden Formate:  
   
-    -   Um auf einen Dateifreigabe- oder Dateipfad veröffentlichen, geben Sie den Pfad mit einem UNC-Pfad (*\\\Server\ApplicationName*) oder einen Dateipfad (*C:\Deploy\ApplicationName*).  
+   - Um auf einen Dateifreigabe- oder Dateipfad veröffentlichen, geben Sie den Pfad mit einem UNC-Pfad (*\\\Server\ApplicationName*) oder einen Dateipfad (*C:\Deploy\ApplicationName*).  
   
-    -   Um auf einem FTP-Server veröffentlichen, geben Sie den Pfad im Format *ftp://ftp.microsoft.com/\<ApplicationName >*.  
+   - Um auf einem FTP-Server veröffentlichen, geben Sie den Pfad im Format <em>ftp://ftp.microsoft.com/\<ApplicationName ></em>.  
   
      Beachten Sie, dass Text angegeben sein, muss die **Veröffentlichungsort** Feld in der Reihenfolge für die Schaltfläche zum Durchsuchen (**...** ) Schaltfläche funktioniert.  
   

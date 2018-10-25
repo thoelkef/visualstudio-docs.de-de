@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836865"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
   
 #### <a name="to-create-a-combined-fragment"></a>So erstellen Sie ein kombiniertes Fragment  
   
-1.  Wählen Sie eine Meldung oder eine Sequenz von Meldungen aus, die alle an der gleichen Lebenslinie oder Vorkommnisausführung beginnen.  
+1. Wählen Sie eine Meldung oder eine Sequenz von Meldungen aus, die alle an der gleichen Lebenslinie oder Vorkommnisausführung beginnen.  
   
-    > [!NOTE]
-    >  Wenn Sie mehrere Meldungen auswählen, müssen diese eine ununterbrochene Sequenz bilden.  
+   > [!NOTE]
+   >  Wenn Sie mehrere Meldungen auswählen, müssen diese eine ununterbrochene Sequenz bilden.  
   
-2.  Klicken Sie mit der rechten Maustaste auf eine der Meldungen, zeigen Sie auf **Umschließen mit**, und klicken Sie dann auf die gewünschte Art von kombiniertem Fragment, z. B. **Kombiniertes Alt-Fragment**.  
+2. Klicken Sie mit der rechten Maustaste auf eine der Meldungen, zeigen Sie auf **Umschließen mit**, und klicken Sie dann auf die gewünschte Art von kombiniertem Fragment, z. B. **Kombiniertes Alt-Fragment**.  
   
-     Ein neues kombiniertes Fragment wird angezeigt. Die Überschrift gibt die Art von kombiniertem Fragment an, die Sie ausgewählt haben, z. B. **Alt**.  
+    Ein neues kombiniertes Fragment wird angezeigt. Die Überschrift gibt die Art von kombiniertem Fragment an, die Sie ausgewählt haben, z. B. **Alt**.  
   
-     Im kombinierten Fragment befindet sich ein Fragment, das die ausgewählten Meldungen enthält.  
+    Im kombinierten Fragment befindet sich ein Fragment, das die ausgewählten Meldungen enthält.  
   
- Einigen Arten von kombinierten Fragmenten können weitere Interaktionsoperanden hinzugefügt werden.  
+   Einigen Arten von kombinierten Fragmenten können weitere Interaktionsoperanden hinzugefügt werden.  
   
- Nachdem Sie Nachrichten in einem kombinierten Fragment neu angeordnet haben, wählen Sie im Kontextmenü die Option **Layout neu anordnen** aus, um die Größe des Rahmens des kombinierten Fragments zu ändern.  
+   Nachdem Sie Nachrichten in einem kombinierten Fragment neu angeordnet haben, wählen Sie im Kontextmenü die Option **Layout neu anordnen** aus, um die Größe des Rahmens des kombinierten Fragments zu ändern.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>So fügen Sie einem kombinierten Fragment einen neuen Interaktionsoperanden hinzu  
   
-1.  Klicken Sie mit der rechten Maustaste im Interaktionsoperanden (2) auf eine leere Fläche, die sich außerhalb eines enthaltenen Fragments und unterhalb der Überschrift des kombinierten Fragments befindet.  
+1. Klicken Sie mit der rechten Maustaste im Interaktionsoperanden (2) auf eine leere Fläche, die sich außerhalb eines enthaltenen Fragments und unterhalb der Überschrift des kombinierten Fragments befindet.  
   
-2.  Zeigen Sie auf **Hinzufügen**.  
+2. Zeigen Sie auf **Hinzufügen**.  
   
-3.  Klicken Sie auf **Interaktionsoperand vorher**oder **Interaktionsoperand nachher**.  
+3. Klicken Sie auf **Interaktionsoperand vorher**oder **Interaktionsoperand nachher**.  
   
-4.  Sie können Meldungen im neuen Interaktionsoperanden hinzufügen, indem Sie die Meldungstools verwenden oder vorhandene Meldungen kopieren und einfügen.  
+4. Sie können Meldungen im neuen Interaktionsoperanden hinzufügen, indem Sie die Meldungstools verwenden oder vorhandene Meldungen kopieren und einfügen.  
   
- Sie können die **Guard** -Eigenschaft eines Interaktionsoperanden festlegen, um die Bedingungen zu beschreiben, unter denen die darin enthaltenen Meldungen ausgeführt werden. In einem kombinierten **Loop** -Fragment können Sie den Wächter z. B. verwenden, um die Bedingung anzugeben, unter der die Schleife fortgesetzt wird. In einem kombinierten **Alt** -Fragment können Sie für jeden Interaktionsoperanden eine separate Bedingung angeben.  
+   Sie können die **Guard** -Eigenschaft eines Interaktionsoperanden festlegen, um die Bedingungen zu beschreiben, unter denen die darin enthaltenen Meldungen ausgeführt werden. In einem kombinierten **Loop** -Fragment können Sie den Wächter z. B. verwenden, um die Bedingung anzugeben, unter der die Schleife fortgesetzt wird. In einem kombinierten **Alt** -Fragment können Sie für jeden Interaktionsoperanden eine separate Bedingung angeben.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>So legen Sie den Wächter eines Interaktionsoperanden fest  
   
-1.  Klicken Sie im Interaktionsoperanden (2) auf einen leeren Bereich außerhalb eines enthaltenen Fragments.  
+1. Klicken Sie im Interaktionsoperanden (2) auf einen leeren Bereich außerhalb eines enthaltenen Fragments.  
   
-     Um den Interaktionsoperanden und die Wächterbedingung herum wird ein Auswahlrahmen angezeigt.  
+    Um den Interaktionsoperanden und die Wächterbedingung herum wird ein Auswahlrahmen angezeigt.  
   
-     Die Überschrift im Fenster **Eigenschaften** lautet **Interaktionsoperand**.  
+    Die Überschrift im Fenster **Eigenschaften** lautet **Interaktionsoperand**.  
   
-2.  Geben Sie die Wächterbedingung ein.  
+2. Geben Sie die Wächterbedingung ein.  
   
-     Die Bedingung wird am oberen Rand des Fragments (4) angezeigt.  
+    Die Bedingung wird am oberen Rand des Fragments (4) angezeigt.  
   
- Für einige Arten von kombinierten Fragmenten können die Eigenschaften festgelegt werden.  
+   Für einige Arten von kombinierten Fragmenten können die Eigenschaften festgelegt werden.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>So legen Sie die Eigenschaften eines kombinierten Fragments fest oder zeigen diese an  
   
