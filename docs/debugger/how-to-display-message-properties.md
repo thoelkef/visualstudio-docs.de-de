@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft Docs'
+title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3caac9eab324b7656a92cb36e9c36e87d759b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54294ec72df4abfd6ba96e334017e58fca3d18c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864165"
 ---
 # <a name="how-to-display-message-properties"></a>Gewusst wie: Anzeigen von Meldungseigenschaften
-So ermitteln Sie weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden die [Nachricht Eigenschaftendialogfeld](../debugger/message-properties-dialog-box.md).  
+Um weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden Sie die [im Dialogfeld "Eigenschaften" Nachricht](../debugger/message-properties-dialog-box.md).  
   
-### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Nachrichteneigenschaften  
+### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Eigenschaften der Nachricht  
   
-1.  Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
+1. Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
   
-2.  Aus der **Ansicht** Menü wählen **Eigenschaften**.  
+2. Von der **Ansicht** Menü wählen **Eigenschaften**.  
   
- Eigenschaftendialogfelder sind nicht modal ist, klicken Sie auf ein anderes Element in einem Fenster anzeigen und im Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
+   Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.

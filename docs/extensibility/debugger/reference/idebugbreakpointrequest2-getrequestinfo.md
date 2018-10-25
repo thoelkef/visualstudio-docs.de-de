@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9cfbf39ad6ff0dc889f18276a0aad2e4510434c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864308"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Ruft die breakpointinformationen für die Anforderung, die diese Anforderung Breakpoint beschreibt.  
+Ruft ab, der diese Anforderung Breakpoint beschreibt Informationen zu den Haltepunkt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,16 +43,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>Parameter  
  `dwFields`  
- [in] Eine Kombination aus Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der bestimmt, welche Felder in der `pBPRequestInfo` Parameter sind ausgefüllt werden.  
+ [in] Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der bestimmt, welche Felder in der `pBPRequestInfo` sind, dass Parameter ausgefüllt werden müssen.  
   
  `pBPRequestInfo`  
- [out] Gibt an, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur, mit der Beschreibung der Haltepunkt Anforderung ausgefüllt werden.  
+ [out] Gibt an, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur, die sich mit der Beschreibung der Haltepunkt Anforderung gefüllt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CDebugBreakpointRequest` -Objekt, das macht die [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugBreakpointRequest` -Objekt, das macht die [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Schnittstelle.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

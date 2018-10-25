@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen eines lokal gehosteten WCFS Diensts | Microsoft Docs'
+title: 'Vorgehensweise: Debuggen eines lokal gehosteten WCF-Diensts | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ce90effca21f6079cc7b569fa6e58f94553627
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872121"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts
-Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost ausgeführt werden kann oder der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Die einfachste Möglichkeit zum Debuggen eines lokal gehosteten WCFS ist so konfigurieren Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Starten sowohl Client-als auch bei der Auswahl **Debuggen** auf die **Debuggen** Menü.  
+Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, der WCF-Diensthost ausgeführt werden kann oder die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Die einfachste Möglichkeit zum Debuggen eines lokal gehosteten WCFS ist so konfigurieren Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Starten von sowohl Client-als auch bei der Auswahl **Debuggen starten** auf die **Debuggen** Menü.  
   
  Wenn der WCF-Dienst in einem Prozess lokal gehostet wird, der nicht auf diese Weise gestartet werden kann, z. B. ein NT-Dienst, kann diese Methode nicht verwendet werden. Verwenden Sie stattdessen eine der folgenden Methoden:  
   
@@ -39,21 +39,21 @@ Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, W
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>So starten Sie sowohl Client als auch Host in Visual Studio  
   
-1.  Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe, in der sowohl das Client- als auch das Serverprojekt enthalten ist.  
+1. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe, in der sowohl das Client- als auch das Serverprojekt enthalten ist.  
   
-2.  Konfigurieren Sie die Projektmappe, um sowohl Client als auch für Serverprozesse zu starten, wenn Sie die Option **starten** auf die **Debuggen** Menü.  
+2. Konfigurieren Sie die Lösung zum Starten von sowohl Client-als auch des Serverprozesses, bei der Auswahl **starten** auf die **Debuggen** Menü.  
   
-    1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens der Projektmappe.  
+   1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens der Projektmappe.  
   
-    2.  Klicken Sie auf **Startprojekte festlegen**.  
+   2.  Klicken Sie auf **Startprojekte**.  
   
-    3.  In der **Lösung \<Name > Eigenschaften** wählen Sie im Dialogfeld **mehrere Startprojekte**.  
+   3.  In der **Lösung \<Name > Eigenschaften** wählen Sie im Dialogfeld **mehrere Startprojekte**.  
   
-    4.  In der **mehrere Startprojekte** Raster, in der Zeile, die dem Serverprojekt entspricht klicken Sie auf **Aktion** , und wählen Sie **starten**.  
+   4.  In der **mehrere Startprojekte** Raster in der Zeile, die die dem Serverprojekt entspricht, klicken Sie auf **Aktion** , und wählen Sie **starten**.  
   
-    5.  Klicken Sie auf die Zeile, die dem Clientprojekt entspricht, auf **Aktion** , und wählen Sie **starten**.  
+   5.  Klicken Sie auf die Zeile, in das Clientprojekt entspricht, auf **Aktion** , und wählen Sie **starten**.  
   
-    6.  Klicken Sie auf **OK**.  
+   6.  Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)   

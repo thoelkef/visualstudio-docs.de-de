@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddatafromistream | Microsoft Docs'
+title: 'Idiadatasource:: Loaddatafromistream | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2421e25c51d005a069de316d1d465eca80a0432b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e66bba9cc7fc6f63c725a71cbf601f8015a70b82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874422"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-Bereitet die Debugdaten in ein Zugriff erfolgt über ein in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.  
+Bereitet die Debug-Daten in ein Zugriff erfolgt über einen in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,22 +37,22 @@ HRESULT loadDataFromIStream (
  [in] Ein <xref:IStream> Objekt, das den Datenstrom mit darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt die möglichen Rückgabewerte für diese Methode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt die möglichen Rückgabewerte für diese Methode.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|Es wurde versucht, Zugriff auf eine Datei mit der ein veraltetes Format.|  
 |E_INVALIDARG|Invalidparameter.|  
-|E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet wurde.|  
+|E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht die Debugdaten für eine ausführbare Datei aus dem Arbeitsspeicher über abgerufen werden soll ein <xref:IStream> Objekt.  
+ Diese Methode ermöglicht die Debug-Daten für eine ausführbare Datei durch aus dem Speicher abgerufen werden sollen eine <xref:IStream> Objekt.  
   
  Verwenden Sie zum Laden einer PDB-Datei ohne Überprüfung der [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) Methode.  
   
- Verwenden Sie zum Überprüfen der PDB-Datei anhand bestimmter Kriterien die [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) Methode.  
+ Verwenden Sie zum Überprüfen der PDB-Datei anhand bestimmter Kriterien der [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) Methode.  
   
- Verwenden Sie zum Laden von Daten (durch einen Rückrufmechanismus) Zugriff auf die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
+ Verwenden Sie für den Zugriff auf den Ladevorgang der Daten (durch einen Rückrufmechanismus bereit), die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890672"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Erweitern von SharePoint-Tools in Visual Studio
   SharePoint-Tools in Visual Studio erfüllt die Anforderungen von vielen verschiedenen Entwicklung. Allerdings könnten Sie feststellen, Fälle, in dem sie keine Funktionen bieten, die Sie oder andere Entwickler benötigen. In diesen Fällen können Sie die SharePoint-Tools, um die Funktionalität zu erstellen, die Sie benötigen erweitern.
@@ -38,11 +38,11 @@ ms.locfileid: "42625923"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des SharePoint-Verbindungsknotens im Server-Explorer
  In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster aus, um viele der Komponenten von einem oder mehreren lokalen SharePoint-Websites in einer hierarchischen Strukturansicht anzeigen. Sie können auch erweitern, die **SharePoint-Verbindungen** Knoten gibt folgende Möglichkeiten:
 
--   Indem Sie Ihre eigenen Knoten hinzufügen. Dies ist hilfreich, wenn Sie Komponenten von SharePoint-Websites anzuzeigen, die nicht standardmäßig angezeigt werden soll.
+- Indem Sie Ihre eigenen Knoten hinzufügen. Dies ist hilfreich, wenn Sie Komponenten von SharePoint-Websites anzuzeigen, die nicht standardmäßig angezeigt werden soll.
 
--   Durch das Erweitern von vorhandener Knoten. Beispielsweise können Sie einen neuen untergeordneten Knoten zu einem vorhandenen Knoten hinzufügen, oder Sie können hinzufügen ein Kontextmenüelements zu einem Knoten und Aufgaben ausführen, wenn ein Entwickler auf das Menüelement klickt.
+- Durch das Erweitern von vorhandener Knoten. Beispielsweise können Sie einen neuen untergeordneten Knoten zu einem vorhandenen Knoten hinzufügen, oder Sie können hinzufügen ein Kontextmenüelements zu einem Knoten und Aufgaben ausführen, wenn ein Entwickler auf das Menüelement klickt.
 
- Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Anforderungen für die computer
  Um das Erweiterungen für die SharePoint-Tools zu erstellen, muss Ihre Entwicklungscomputer, auf die gleichen Anforderungen für das Erstellen von SharePoint-Lösungen in Visual Studio erfüllen.

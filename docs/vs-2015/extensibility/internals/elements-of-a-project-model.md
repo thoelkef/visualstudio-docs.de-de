@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883652"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projektmodells
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
   
  Andere Aspekte der Implementierung:  
   
--   Ein einzelnes Projekt-Modell kann mehr als ein Projekt enthalten.  
+- Ein einzelnes Projekt-Modell kann mehr als ein Projekt enthalten.  
   
--   Projekttypen und die zugehörige projektfactorys werden unabhängig voneinander mit GUIDs registriert.  
+- Projekttypen und die zugehörige projektfactorys werden unabhängig voneinander mit GUIDs registriert.  
   
--   Jedes Projekt benötigen eine Vorlagendatei oder einen Assistenten, um die neue Projektdatei zu initialisieren, wenn ein Benutzer über ein neues Projekt erstellt die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche. Z. B. die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Vorlagen zu initialisieren, was schließlich VCPROJ-Dateien werden.  
+- Jedes Projekt benötigen eine Vorlagendatei oder einen Assistenten, um die neue Projektdatei zu initialisieren, wenn ein Benutzer über ein neues Projekt erstellt die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche. Z. B. die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Vorlagen zu initialisieren, was schließlich VCPROJ-Dateien werden.  
   
- Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Die Anwendung Hilfsprogramms, des HierUtil7, können Sie um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu der Anwendung HierUtil7-Hilfsprogramm, finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Die Anwendung Hilfsprogramms, des HierUtil7, können Sie um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu der Anwendung HierUtil7-Hilfsprogramm, finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Grafik zum Visual Studio-Projektmodell](../../extensibility/internals/media/vsprojectmodel.gif "VsProjectModel")  
-Projektmodell  
+  ![Grafik zum Visual Studio-Projektmodell](../../extensibility/internals/media/vsprojectmodel.gif "VsProjectModel")  
+  Projektmodell  
   
- Weitere Informationen über die Schnittstellen und Dienste, die im vorherigen Diagramm und andere optionalen Schnittstellen, die nicht im Diagramm enthalten, finden Sie unter [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md).  
+  Weitere Informationen über die Schnittstellen und Dienste, die im vorherigen Diagramm und andere optionalen Schnittstellen, die nicht im Diagramm enthalten, finden Sie unter [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md).  
   
- Projekte können Befehle unterstützen und daher implementieren, muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, um das Befehlsrouting über den Befehlskontext GUIDs teilnehmen.  
+  Projekte können Befehle unterstützen und daher implementieren, muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, um das Befehlsrouting über den Befehlskontext GUIDs teilnehmen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   

@@ -22,44 +22,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873876"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie einen grundlegenden sequenziellen Workflow erstellen, der die Verwendung von Zuordnungs-und Initiierungsformularen beinhaltet. Hierbei handelt es sich um ASPX-Formulare, mit denen Parameter für die zu einem Workflow hinzugefügt werden, wenn es zuerst von der SharePoint-Administrator (Zuordnungsformular) zugeordnet ist und der Workflow gestartet wird, durch den Benutzer (des Initiierungsformulars).  
   
  In dieser exemplarischen Vorgehensweise wird beschrieben, ein Szenario, in denen ein Benutzer möchte einen Genehmigungsworkflow für spesenabrechnungen erstellen, der folgenden Anforderungen erfüllt, werden:  
   
--   Wenn der Workflow einer Liste zugeordnet ist, wird der Administrator ein Zuordnungsformular angezeigt, in dem sie eine Beschränkung der Gesamtbetrag in Dollar für Ausgabenberichte eingeben.  
+- Wenn der Workflow einer Liste zugeordnet ist, wird der Administrator ein Zuordnungsformular angezeigt, in dem sie eine Beschränkung der Gesamtbetrag in Dollar für Ausgabenberichte eingeben.  
   
--   Mitarbeiter ihre spesenabrechnungen in der Liste Freigegebene Dokumente hochladen, starten Sie den Workflow und geben Sie dann die Kosten der Workflowinitiierungsformular insgesamt.  
+- Mitarbeiter ihre spesenabrechnungen in der Liste Freigegebene Dokumente hochladen, starten Sie den Workflow und geben Sie dann die Kosten der Workflowinitiierungsformular insgesamt.  
   
--   Wenn ein Mitarbeiter Ausgabenbericht insgesamt des Administrators vordefinierte Grenze überschreitet, wird eine Aufgabe für den Vorgesetzten des Mitarbeiters genehmigen die Spesenabrechnung erstellt. Jedoch ist ein Mitarbeiter Expense Report insgesamt kleiner als oder gleich dem Expense-Limit, eine Nachricht automatisch genehmigt, die Workflowverlaufsliste geschrieben wird.  
+- Wenn ein Mitarbeiter Ausgabenbericht insgesamt des Administrators vordefinierte Grenze überschreitet, wird eine Aufgabe für den Vorgesetzten des Mitarbeiters genehmigen die Spesenabrechnung erstellt. Jedoch ist ein Mitarbeiter Expense Report insgesamt kleiner als oder gleich dem Expense-Limit, eine Nachricht automatisch genehmigt, die Workflowverlaufsliste geschrieben wird.  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen einer SharePoint Liste Definition sequenziellen Workflow-Projekts in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Erstellen einer SharePoint Liste Definition sequenziellen Workflow-Projekts in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Erstellen einen Workflowzeitplan.  
+- Erstellen einen Workflowzeitplan.  
   
--   Behandeln von Ereignissen für Workflow-Aktivität.  
+- Behandeln von Ereignissen für Workflow-Aktivität.  
   
--   Erstellen Workflows Zuordnungs-und Initiierungsformularen.  
+- Erstellen Workflows Zuordnungs-und Initiierungsformularen.  
   
--   Zuordnen des Workflows.  
+- Zuordnen des Workflows.  
   
--   Wird den Workflow manuell gestartet.  
+- Wird den Workflow manuell gestartet.  
   
 > [!NOTE]  
 >  Obwohl in dieser exemplarischen Vorgehensweise ein sequenzielles Workflowprojekt verwendet wird, ist der Prozess für der Zustandsautomatworkflows identisch.  
 >   
 >  Darüber hinaus kann auf Ihrem Computer angezeigt, andere Namen oder Speicherorte für die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elemente der Benutzeroberfläche in den folgenden Anweisungen. Die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Version und die Einstellungen, die Sie verwenden, bestimmen diese Elemente. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.  

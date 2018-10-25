@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860356"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Sie können datengebundene Steuerelemente durch Ziehen von Elementen aus der **D
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>So legen Sie die Steuerelemente fest, die für Datentabellen oder Objekte erstellt werden sollen  
   
-1.  Der WPF- oder der Windows Forms-Designer muss geöffnet sein.  
+1. Der WPF- oder der Windows Forms-Designer muss geöffnet sein.  
   
-2.  In der **Datenquellen** Fenster, wählen Sie das Element, die die Datentabelle darstellt, oder ein Objekt festgelegt werden soll.  
+2. In der **Datenquellen** Fenster, wählen Sie das Element, die die Datentabelle darstellt, oder ein Objekt festgelegt werden soll.  
   
-3.  Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:  
+3. Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:  
   
-    -   Um jedes Datenfeld in einem separaten Steuerelement anzuzeigen, klicken Sie auf **Details**. Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.  
+   - Um jedes Datenfeld in einem separaten Steuerelement anzuzeigen, klicken Sie auf **Details**. Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.  
   
-    -   Um alle Daten in einem einzelnen Steuerelement anzuzeigen, wählen Sie ein anderes Steuerelement in der Liste, z. B. **DataGrid** oder **Liste** in einer WPF-Anwendung oder **DataGridView** in einem Windows Forms die Anwendung.  
+   - Um alle Daten in einem einzelnen Steuerelement anzuzeigen, wählen Sie ein anderes Steuerelement in der Liste, z. B. **DataGrid** oder **Liste** in einer WPF-Anwendung oder **DataGridView** in einem Windows Forms die Anwendung.  
   
      Die Liste der verfügbaren Steuerelemente hängt Designer Sie geöffnet, welche Version von .NET Framework das Projekt abzielt haben, und gibt an, ob Sie benutzerdefinierte Steuerelemente hinzugefügt haben, Unterstützung der Datenbindung an die **Toolbox**. Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

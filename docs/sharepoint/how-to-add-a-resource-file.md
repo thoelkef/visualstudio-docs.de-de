@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861188"
 ---
 # <a name="how-to-add-a-resource-file"></a>Gewusst wie: Hinzufügen einer Ressourcendatei
   Die Befehle zum Hinzufügen von Ressourcendateien ist der Knoten "Projektmappe" und Feature-Knoten im Projektmappen-Explorer im Kontextmenü. Weitere Informationen finden Sie unter [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Hinzufügen eine globalen Ressourcendatei auf einer SharePoint-Lösung  
   
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], öffnen Sie eine SharePoint-Lösung.  
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], öffnen Sie eine SharePoint-Lösung.  
   
-2.  In **Projektmappen-Explorer**, wählen Sie einen SharePoint-Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.  
+2. In **Projektmappen-Explorer**, wählen Sie einen SharePoint-Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.  
   
-3.  In der **neues Element hinzufügen** Dialogfeld auf die **globale Ressourcendatei** Vorlage, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+3. In der **neues Element hinzufügen** Dialogfeld auf die **globale Ressourcendatei** Vorlage, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-    > [!NOTE]  
-    >  Nur, wenn ein SharePoint-Projektelement ausgewählt ist, wird die globale Ressourcendatei Projektelementvorlage angezeigt.  
+   > [!NOTE]  
+   >  Nur, wenn ein SharePoint-Projektelement ausgewählt ist, wird die globale Ressourcendatei Projektelementvorlage angezeigt.  
   
-4.  In der **Ressource hinzufügen** Dialogfeld Wählen Sie eine Kultur der Ressourcendatei, z. B. Englisch (USA).  
+4. In der **Ressource hinzufügen** Dialogfeld Wählen Sie eine Kultur der Ressourcendatei, z. B. Englisch (USA).  
   
-     Dieser Schritt fügt eine globalen Ressourcendatei für Ihre Lösung in das Format, Resource_x_**.** _Kultur_**.** RESX, z. B. *Resource1.en-US.resx*.  
+    Dieser Schritt fügt eine globalen Ressourcendatei für Ihre Lösung in das Format, Resource_x_**.** <em>Kultur</em><strong>.</strong> RESX, z. B. *Resource1.en-US.resx*.  
   
-5.  Wenn der **Ressourcen-Editor-** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.  
+5. Wenn der **Ressourcen-Editor-** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.  
   
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Hinzufügen eine Featureressourcendatei mit einer SharePoint-Funktion  
   

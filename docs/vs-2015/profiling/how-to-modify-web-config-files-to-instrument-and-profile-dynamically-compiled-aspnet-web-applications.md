@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877490"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
  Der Stamm einer web.config-Datei ist das Element **configuration**. Sie müssen zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung folgende Elemente ändern oder hinzufügen:  
   
--   Ein Element **configuration/runtime/assemblyBinding/dependentAssembly**, das das Microsoft.VisualStudio.Enterprise.ASPNetHelper-Assembly identifiziert, das die Profilerstellung steuert. Das Element **dependentAssembly** enthält zwei untergeordnete Elemente: **assemblyIdentity** und **codeBase**.  
+- Ein Element **configuration/runtime/assemblyBinding/dependentAssembly**, das das Microsoft.VisualStudio.Enterprise.ASPNetHelper-Assembly identifiziert, das die Profilerstellung steuert. Das Element **dependentAssembly** enthält zwei untergeordnete Elemente: **assemblyIdentity** und **codeBase**.  
   
--   Ein Element **configuration/system.web/compilation**, das den Schritt der Profilernachbearbeitungskompilierung für die Ziel-Assembly identifiziert.  
+- Ein Element **configuration/system.web/compilation**, das den Schritt der Profilernachbearbeitungskompilierung für die Ziel-Assembly identifiziert.  
   
--   Zwei Elemente **add**, die den Speicherort der Tools „Profilerstellungstools“ identifizieren, werden zum Abschnitt **configuration/appSettings** hinzugefügt.  
+- Zwei Elemente **add**, die den Speicherort der Tools „Profilerstellungstools“ identifizieren, werden zum Abschnitt **configuration/appSettings** hinzugefügt.  
   
- Sie sollten eine Kopie der originalen web.config-Datei erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
+  Sie sollten eine Kopie der originalen web.config-Datei erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>So fügen Sie die ASPNetHelper-Assembly als Element „configuration/runtime/assemblyBinding/dependentAssembly“ ein  
   

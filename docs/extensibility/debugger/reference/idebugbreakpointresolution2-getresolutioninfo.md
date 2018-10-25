@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17e08e335f2f50967da2b566ef595717e07fc2d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6e5ad731d94a7b60d3562683595354871b303d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870483"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Ruft die breakpointinformationen für die Auflösung, die diesem Breakpoint beschreibt.  
+Ruft die Informationen der Haltepunkt-Lösung, die diesem Breakpoint beschreibt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,13 +43,13 @@ int GetResolutionInfo(
   
 #### <a name="parameters"></a>Parameter  
  `dwFields`  
- [in] Eine Kombination aus Flags aus der [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Enumeration, die bestimmen, welche Felder von der `pBPResolutionInfo` Parameter sind ausgefüllt werden.  
+ [in] Eine Kombination von Flags aus der [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Enumeration, die bestimmen, welche Felder von der `pBPResolutionInfo` sind, dass Parameter ausgefüllt werden müssen.  
   
  `pBPResolutionInfo`  
  [out] Die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur mit Informationen zu diesem Haltepunkt gefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel implementiert diese Methode für eine einfache `CDebugBreakpointResolution` -Objekt, das macht die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) Schnittstelle.  

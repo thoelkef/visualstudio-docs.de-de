@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859056"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
   
 > [!NOTE]
 >  Wenn das Projektsystem einen Assemblyverweis findet, löst das System den Verweis auf, indem es die folgenden Speicherorte in folgender Reihenfolge durchsucht:  
->   
->  1.  Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.  
-> 2.  Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
-> 3.  Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
-> 4.  Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
+> 
+> 1. Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.  
+>    2.  Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
+>    3.  Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
+>    4.  Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
   
  **Verweise**  
  Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.  

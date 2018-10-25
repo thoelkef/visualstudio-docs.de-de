@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868260"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem DataSet-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ In dieser exemplarischen Vorgehensweise erstellen Sie ein Dataset mithilfe der *
   
  In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:  
   
--   Erstellen eines neuen **Windows-Anwendung** Projekt.  
+- Erstellen eines neuen **Windows-Anwendung** Projekt.  
   
--   Hinzufügen eines leeren **DataSet** Elements zum Projekt.  
+- Hinzufügen eines leeren **DataSet** Elements zum Projekt.  
   
--   Erstellen und konfigurieren eine Datenquelle in Ihrer Anwendung, durch die Erstellung eines Datasets mit dem **Dataset-Designer**.  
+- Erstellen und konfigurieren eine Datenquelle in Ihrer Anwendung, durch die Erstellung eines Datasets mit dem **Dataset-Designer**.  
   
--   Herstellen einer Verbindung mit der Datenbank Northwind in **Server-Explorer**.  
+- Herstellen einer Verbindung mit der Datenbank Northwind in **Server-Explorer**.  
   
--   Erstellen von Tabellen mit TableAdapters im Dataset, auf der Grundlage von Tabellen der Datenbank  
+- Erstellen von Tabellen mit TableAdapters im Dataset, auf der Grundlage von Tabellen der Datenbank  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  

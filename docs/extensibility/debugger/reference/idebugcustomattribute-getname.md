@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: IDebugCustomAttribute::GetName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a33b4507cb54095a38671eaf310d87dae180be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11a4b986799cf03221b4af077fc3e1e5809c4137
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866479"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
-Ruft den Namen des benutzerdefinierten Attributs ab.  
+Ruft den Namen des benutzerdefinierten Attributs.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parameter  
  `bstrName`  
- [out] Gibt eine Zeichenfolge mit dem Namen des benutzerdefinierten Attributs.  
+ [out] Gibt eine Zeichenfolge, die mit dem Namen des benutzerdefinierten Attributs.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse verwendet, um das Attribut zu deklarieren. Dies möglicherweise nicht genau den Namen der benutzerdefinierten Attributklasse selbst entspricht c# können das Suffix "Attribute" aus benutzerdefiniertem Attributsnamen gelöscht werden, wenn er in einer Deklaration verwendet wird.  
+ Die von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse verwendet, um das Attribut zu deklarieren. Dies möglicherweise nicht genau auf den Namen der benutzerdefinierten Attributklasse selbst entsprechen, wie in c# können das Suffix "Attribute" aus einem benutzerdefinierten Attributnamen gelöscht werden soll, wenn er in einer Deklaration verwendet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

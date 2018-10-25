@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_offset | Microsoft Docs'
+title: 'Idiasegment:: Get_offset | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c91eabfd6d9ec55b60b29d91cbff8fac8bb5cb71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8283db3533784b9145872c17e1a544ac4905e096
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887718"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
-Ruft den Offset in Segmenten, die im Abschnitt beginnt.  
+Ruft den Offset in Segmenten, die im Abschnitt beginnt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get_offset (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Offset in Segmenten zurück, in dem Abschnitt beginnt.  
+ [out] Gibt den Offset in Segmenten beginnt, in dem Abschnitt zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

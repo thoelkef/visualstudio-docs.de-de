@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862280"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML-Aktivitätsdiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Ein *Aktivitätsdiagramm* zeigt einen Geschäfts- oder Softwareprozess als Arbei
   
  Mithilfe eines Aktivitätsdiagramms können Sie verschiedene Arten von Prozessen beschreiben. Beispiele:  
   
--   Ein Geschäftsprozess oder Arbeitsablauf zwischen Benutzern und dem System. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+- Ein Geschäftsprozess oder Arbeitsablauf zwischen Benutzern und dem System. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
--   Die in einem Anwendungsfall ausgeführten Schritte. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Die in einem Anwendungsfall ausgeführten Schritte. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Ein Softwareprotokoll, d. h. die zulässigen Sequenzen von Interaktionen zwischen Komponenten.  
+- Ein Softwareprotokoll, d. h. die zulässigen Sequenzen von Interaktionen zwischen Komponenten.  
   
--   Ein Softwarealgorithmus.  
+- Ein Softwarealgorithmus.  
   
- In diesem Thema werden die Elemente beschrieben, die Sie in Aktivitätsdiagrammen verwenden können. Weitere Informationen finden Sie unter Informationen zum Zeichnen Diagramme finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md). Zum Erstellen eines UML-Aktivitätsdiagramms, auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**. Weitere Informationen zum allgemeinen Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+  In diesem Thema werden die Elemente beschrieben, die Sie in Aktivitätsdiagrammen verwenden können. Weitere Informationen finden Sie unter Informationen zum Zeichnen Diagramme finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md). Zum Erstellen eines UML-Aktivitätsdiagramms, auf die **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**. Weitere Informationen zum allgemeinen Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Lesen von Aktivitätsdiagrammen  
  Die Tabellen in den folgenden Abschnitten beschreiben die Elemente für Aktivitätsdiagramme und deren Haupteigenschaften. Eine vollständige Liste der Eigenschaften der Elemente, finden Sie unter [Eigenschaften von Elementen in UML-Aktivitätsdiagramme](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  

@@ -11,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a1db47703c2a78a4a5163671146c3817e94e0dc
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884068"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Exemplarische Vorgehensweise: Erstellen eines SDKS mit JavaScript
 In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden, um eine einfache mathematische SDK als ein Visual Studio-Erweiterung (VSIX) zu erstellen.  Die exemplarische Vorgehensweise ist in folgende Teile gegliedert:  
   
--   [Um das SimpleMathVSIX Erweiterungs-SDK-Projekt zu erstellen.](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [Um das SimpleMathVSIX Erweiterungs-SDK-Projekt zu erstellen.](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [Zum Erstellen einer Beispielapp verwendet, die das SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [Zum Erstellen einer Beispielapp verwendet, die das SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- Für JavaScript ist es keine Klassenbibliotheksprojekttyp. In dieser exemplarischen Vorgehensweise des Beispiels *arithmetic.js* Datei direkt im VSIX-Projekt erstellt wird. In der Praxis wird empfohlen, dass Sie zuerst erstellen und Testen Sie die JavaScript und CSS-Dateien als Windows Store-app – z. B. durch Verwendung der **leere App** Vorlage, bevor Sie sie in einem VSIX-Projekt einsetzen.  
+  Für JavaScript ist es keine Klassenbibliotheksprojekttyp. In dieser exemplarischen Vorgehensweise des Beispiels *arithmetic.js* Datei direkt im VSIX-Projekt erstellt wird. In der Praxis wird empfohlen, dass Sie zuerst erstellen und Testen Sie die JavaScript und CSS-Dateien als Windows Store-app – z. B. durch Verwendung der **leere App** Vorlage, bevor Sie sie in einem VSIX-Projekt einsetzen.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ##  <a name="createSimpleMathVSIX"></a> Um das SimpleMathVSIX Erweiterungs-SDK-Projekt zu erstellen.  
@@ -143,57 +143,57 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 ##  <a name="createSampleApp"></a> Zum Erstellen einer Beispielapp verwendet, die das SDK  
   
-1.  Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.  
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.  
   
-2.  In der Liste der Kategorien unter **JavaScript**Option **Windows Store**, und wählen Sie dann die **leere App** Vorlage.  
+2. In der Liste der Kategorien unter **JavaScript**Option **Windows Store**, und wählen Sie dann die **leere App** Vorlage.  
   
-3.  In der **Namen** geben `ArithmeticUI`. Klicken Sie auf die Schaltfläche **OK** .  
+3. In der **Namen** geben `ArithmeticUI`. Klicken Sie auf die Schaltfläche **OK** .  
   
-4.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **ArithmeticUI** Projekt, und wählen Sie dann **hinzufügen** > **Verweis**.  
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **ArithmeticUI** Projekt, und wählen Sie dann **hinzufügen** > **Verweis**.  
   
-5.  Klicken Sie unter **Windows**, wählen Sie **Erweiterungen**, und beachten Sie, dass **einfache mathematische** wird angezeigt.  
+5. Klicken Sie unter **Windows**, wählen Sie **Erweiterungen**, und beachten Sie, dass **einfache mathematische** wird angezeigt.  
   
-6.  Wählen Sie die **einfache mathematische** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
+6. Wählen Sie die **einfache mathematische** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
-7.  In **Projektmappen-Explorer**unter **Verweise**, beachten Sie, dass die **einfache mathematische** Verweis wird angezeigt. Erweitern Sie ihn, und beachten Sie, dass es eine **\js\**  Ordner, der enthält **arithmetic.js**. Öffnen Sie **arithmetic.js** zu bestätigen, dass es sich bei Ihrem Quellcode installiert wurde.  
+7. In **Projektmappen-Explorer**unter **Verweise**, beachten Sie, dass die **einfache mathematische** Verweis wird angezeigt. Erweitern Sie ihn, und beachten Sie, dass eine **\js\\**  Ordner, der enthält **arithmetic.js**. Öffnen Sie **arithmetic.js** zu bestätigen, dass es sich bei Ihrem Quellcode installiert wurde.  
   
-8.  Verwenden Sie den folgenden Code ersetzen Sie den Inhalt der *"default.htm"*.  
+8. Verwenden Sie den folgenden Code ersetzen Sie den Inhalt der *"default.htm"*.  
   
-    ```html  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-        <meta charset="utf-8" />  
-        <title>ArithmeticUI</title>  
+   ```html  
+   <!DOCTYPE html>  
+   <html>  
+   <head>  
+       <meta charset="utf-8" />  
+       <title>ArithmeticUI</title>  
   
-        <!-- WinJS references -->  
-        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
-        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
-        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
+       <!-- WinJS references -->  
+       <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
+       <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
+       <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
   
-        <!-- ArithmeticUI references -->  
-        <link href="/css/default.css" rel="stylesheet" />  
-        <script src="/js/default.js"></script>  
-        <script src="/SimpleMath/js/arithmetic.js"></script>  
-    </head>  
-    <body>  
-        <form>  
-        <div id="calculator" class="ms-grid">  
-            <input name="firstNumber" id="firstNumber" type="number" step="any">  
-            <div id="operators">  
-                <button class="operator" type="button">+</button>  
-                <button class="operator" type="button">-</button>  
-                <button class="operator" type="button">*</button>  
-                <button class="operator" type="button">/</button>  
-            </div>  
-            <input id="secondNumber" type="number">  
-            <button class="calculate" type="button">=</button>  
-            <input id="result" type="number" name="result" disabled="" readonly="">  
-        </div>  
-        </form>  
-    </body>  
-    </html>  
-    ```  
+       <!-- ArithmeticUI references -->  
+       <link href="/css/default.css" rel="stylesheet" />  
+       <script src="/js/default.js"></script>  
+       <script src="/SimpleMath/js/arithmetic.js"></script>  
+   </head>  
+   <body>  
+       <form>  
+       <div id="calculator" class="ms-grid">  
+           <input name="firstNumber" id="firstNumber" type="number" step="any">  
+           <div id="operators">  
+               <button class="operator" type="button">+</button>  
+               <button class="operator" type="button">-</button>  
+               <button class="operator" type="button">*</button>  
+               <button class="operator" type="button">/</button>  
+           </div>  
+           <input id="secondNumber" type="number">  
+           <button class="calculate" type="button">=</button>  
+           <input id="result" type="number" name="result" disabled="" readonly="">  
+       </div>  
+       </form>  
+   </body>  
+   </html>  
+   ```  
   
 9. Verwenden Sie den folgenden Code ersetzen Sie den Inhalt der *\js\default.js*.  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866388"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch-Aktivitätsdesigner
 
@@ -42,7 +42,7 @@ Die **TryCatch** Designer unterstützt keine Bearbeitung **Catch**. Wenn Sie den
 Die folgende Tabelle zeigt die <xref:System.Activities.Statements.TryCatch>Eigenschaften und beschreibt, wie sie im Designer verwendet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.TryCatch>-Aktivität an. Der Standardwert ist TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Die Aktivität wird erstmalig ausgeführt wird, wenn <xref:System.Activities.Statements.TryCatch> ausgeführt wird.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|Die Auflistung der **Catch** Elemente, wenn überprüft werden die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität löst eine Ausnahme aus.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
@@ -51,5 +51,5 @@ Die folgende Tabelle zeigt die <xref:System.Activities.Statements.TryCatch>Eigen
 ## <a name="see-also"></a>Siehe auch
 
 - [Auflistung](../workflow-designer/collection-activity-designers.md)
-- [Lösen Sie erneut aus](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

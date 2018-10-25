@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886002"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei Office-projektmappenbereitstellung
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774652"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Ändern Sie den Assemblynamen führt dazu, dass Konflikte  
  Wenn Sie ändern die **Assemblyname** Wert in der **Anwendung** auf der Seite die **Projekt-Designer** Veröffentlichungstools werden geändert, nachdem Sie eine Lösung bereits bereitgestellt haben, die Setup-Paket einen *Setup.exe* Datei- und zwei Bereitstellungsmanifeste. Wenn Sie zwei Manifestdateien bereitstellen, treten möglicherweise die folgenden Bedingungen ein:  
   
--   Wenn der Endbenutzer beide Versionen installiert, werden von der Anwendung beide VSTO-Add-Ins geladen.  
+- Wenn der Endbenutzer beide Versionen installiert, werden von der Anwendung beide VSTO-Add-Ins geladen.  
   
--   Wurde das VSTO-Add-In vor Änderung des Assemblynamens installiert, empfängt der Endbenutzer niemals Updates.  
+- Wurde das VSTO-Add-In vor Änderung des Assemblynamens installiert, empfängt der Endbenutzer niemals Updates.  
   
- Um dies zu verhindern, ändern Sie nicht der Projektmappe **Assemblyname** Wert nach der Bereitstellung der Lösung.  
+  Um dies zu verhindern, ändern Sie nicht der Projektmappe **Assemblyname** Wert nach der Bereitstellung der Lösung.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Überprüfen Sie, ob Updates dauert sehr lange  
  Visual Studio 2010-Tools für Office-Laufzeit stellt einen Registrierungseintrag, mit denen Administratoren den Timeoutwert für das Herunterladen der Manifeste und der Projektmappe festlegen.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774652"
  Sie können dem Setup-Paket .NET Framework, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]und die primären Interop-Assemblys von Office als erforderliche Komponenten hinzufügen, die mit der Office-Projektmappe bereitgestellt werden. Informationen zum Installieren von primären interop-Assemblys finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md) und [Vorgehensweise: primären Interopassemblys von Office installieren](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Veröffentlichen mithilfe von 'Localhost' kann dazu führen, dass Probleme bei der Installation  
- Bei Verwendung von "http://localhost" als die Veröffentlichungs- oder Installationsort für Projektmappen auf Anwendungsebene, die **Veröffentlichungs-Assistenten** konvertieren Sie die Zeichenfolge nicht in den tatsächlichen Computernamen. In diesem Fall muss die Projektmappe nur auf dem Entwicklungscomputer installiert werden. Damit bereitgestellte Projektmappen auf dem Entwicklungscomputer Internetinformationsdienste verwenden, muss anstelle von localhost der vollqualifizierte Name für alle HTTP/HTTPS/FTP-Speicherorte verwendet werden.  
+ Bei Verwendung von "<http://localhost>" als die Veröffentlichungs- oder Installationsort für Projektmappen auf Anwendungsebene, die **Veröffentlichungs-Assistenten** konvertieren Sie die Zeichenfolge nicht in den tatsächlichen Computernamen. In diesem Fall muss die Projektmappe nur auf dem Entwicklungscomputer installiert werden. Damit bereitgestellte Projektmappen auf dem Entwicklungscomputer Internetinformationsdienste verwenden, muss anstelle von localhost der vollqualifizierte Name für alle HTTP/HTTPS/FTP-Speicherorte verwendet werden.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Werden zwischengespeicherte Assemblys geladen, anstelle von aktualisierten Assemblys  
  Fusion, das Assemblyladeprogramm von .NET Framework, lädt die zwischengespeicherte Kopie der Assemblys, wenn sich der Projektausgabepfad in einer Netzwerkdateifreigabe befindet, die Assembly mit einem starken Namen signiert ist und die Assemblyversion der Anpassung nicht geändert wird. Wird eine Assembly aktualisiert, die diese Bedingungen erfüllt, wird das Update erst bei der nächsten Ausführung des Projekts angezeigt, da die zwischengespeicherte Kopie geladen wird.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774652"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>So laden Sie Assemblys herunter, anstatt zwischengespeicherte Kopien zu laden  
   
-1.  Wählen Sie auf der Menüleiste **Projekt**, _ProjectName_**Eigenschaften**.  
+1. Wählen Sie auf der Menüleiste **Projekt**, _ProjectName_**Eigenschaften**.  
   
-2.  Wählen Sie auf der Seite **Anwendung** die Option **Assemblyinformationen**.  
+2. Wählen Sie auf der Seite **Anwendung** die Option **Assemblyinformationen**.  
   
-3.  In der ersten **Assemblyversion** Geben Sie ein Sternchen (\*), und wählen Sie dann die **OK** Schaltfläche.  
+3. In der ersten **Assemblyversion** Geben Sie ein Sternchen (\*), und wählen Sie dann die **OK** Schaltfläche.  
   
- Nach dem Ändern der Assemblyversion kann die Signatur der Assembly mit einem starken Namen fortgesetzt werden, und die aktuellste Version der Anpassung wird geladen.  
+   Nach dem Ändern der Assemblyversion kann die Signatur der Assembly mit einem starken Namen fortgesetzt werden, und die aktuellste Version der Anpassung wird geladen.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Installation schlägt fehl, wenn der URI, die nicht von US-ASCII-Zeichen verfügt über  
  Wird eine Office-Projektmappe in einem HTTP/HTTPS/FTP-Speicherort veröffentlicht, darf der Pfad keine Unicode-Zeichen enthalten, die nicht in US-ASCII vorliegen. Solche Zeichen können zu inkonsistentem Verhalten im Setup-Programm führen. Verwenden Sie für den Installationspfad US-ASCII-Zeichen.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774652"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Nicht abgefangene Ausnahme oder eine Methode nicht gefunden – Fehler bei der Installation einer lösungs  
  Bei der Installation von Office-Projektmappen öffnen Sie das Bereitstellungsmanifest (eine *".VSTO"* Datei), können Office-Anwendung, Dokument oder eine Arbeitsmappe, Fehlermeldungen für die folgenden Bedingungen angezeigt werden:  
   
--   Methode wurde nicht gefunden.  
+- Methode wurde nicht gefunden.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Nicht abgefangene Ausnahme.  
+- Nicht abgefangene Ausnahme.  
   
- Um diese Fehler zu vermeiden, installieren Sie die Projektmappe, indem Sie das Setupprogramm ausführen.  
+  Um diese Fehler zu vermeiden, installieren Sie die Projektmappe, indem Sie das Setupprogramm ausführen.  
   
- Wenn Sie die Projektmappe installieren, ohne das Setupprogramm auszuführen, werden die erforderlichen Komponenten vom Installationsprogramm nicht überprüft oder installiert. Das Setupprogramm sucht nach der entsprechenden Version der erforderlichen Komponenten und installiert sie gegebenenfalls.  
+  Wenn Sie die Projektmappe installieren, ohne das Setupprogramm auszuführen, werden die erforderlichen Komponenten vom Installationsprogramm nicht überprüft oder installiert. Das Setupprogramm sucht nach der entsprechenden Version der erforderlichen Komponenten und installiert sie gegebenenfalls.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifest-Registrierungsschlüssel für Add-Ins ändern, nachdem ein InstallShield Limited Edition-Projekt erstellt wird  
  Der manifest-Registrierungsschlüssel, der einem VSTO-Add-in-Setup gehört, Programmieren in einigen Fällen Änderungen von *".VSTO"* zu *. dll.manifest* Wenn Sie ein InstallShield Limited Edition-Projekt erstellen.  

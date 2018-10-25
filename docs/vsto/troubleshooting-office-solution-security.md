@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862930"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Problembehandlung bei Office-projektmappensicherheit
   Dieses Thema enthält Tipps zum Beheben von gängigen Problemen, die beim Sichern von Office-Projektmappen auftreten können.  
@@ -32,17 +32,17 @@ ms.locfileid: "35673209"
   
  Die URL des Bereitstellungsmanifests kann in einer der fünf Zonen eingeteilt werden:  
   
--   Arbeitsplatz  
+- Arbeitsplatz  
   
--   Internet  
+- Internet  
   
--   Lokales intranet  
+- Lokales intranet  
   
--   Vertrauenswürdige sites  
+- Vertrauenswürdige sites  
   
--   Eingeschränkte sites  
+- Eingeschränkte sites  
   
- Wenn der Speicherort des Bereitstellungsmanifests zur Zone eingeschränkter Sites zugewiesen wurde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die Projektmappe nicht installiert. Wenn der Speicherort bekannt ist und kann kann als vertrauenswürdig eingestuft, und der Benutzer entfernen den Speicherort aus der Zone eingeschränkter Sites installieren die Lösung. Weitere Informationen zum Verwalten von Zonen, finden Sie unter [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
+  Wenn der Speicherort des Bereitstellungsmanifests zur Zone eingeschränkter Sites zugewiesen wurde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die Projektmappe nicht installiert. Wenn der Speicherort bekannt ist und kann kann als vertrauenswürdig eingestuft, und der Benutzer entfernen den Speicherort aus der Zone eingeschränkter Sites installieren die Lösung. Weitere Informationen zum Verwalten von Zonen, finden Sie unter [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Lösungen können nicht von Netzwerkdateifreigaben oder Websites installiert werden, wenn die verstärkte Sicherheitskonfiguration für Internet Explorer oder Internet Explorer 7 installiert ist  
  Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 und höher und InternetExplorer 7 und höher, schränkt die Möglichkeit von Benutzern zum Durchsuchen des Internets erheblich. Wenn Benutzer versuchen, die Office-Projektmappen über ein Netzwerk Datei Dateifreigabe oder das Web installieren, erhalten sie möglicherweise die folgende Fehlermeldung angezeigt: "angepasste Funktionen in dieser Anwendung funktioniert nicht, da das Zertifikat zum Signieren des Bereitstellungsmanifests für verwendet*SolutionName* ist nicht vertrauenswürdig. Wenden Sie sich an Ihren Administrator um Hilfe zu erhalten."  

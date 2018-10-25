@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867260"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Eine Symbolleiste ein Menücontroller hinzugefügt
 Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) Exemplarische Vorgehensweise und zeigt, wie die Toolfenster-Symbolleiste ein Menücontroller hinzugefügt. Die hier gezeigten Schritte auch können angewendet werden auf der Symbolleiste, die in erstellt haben, wird die [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md) Exemplarische Vorgehensweise.  
@@ -29,87 +29,87 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
   
  Menücontroller können in Menüs angezeigt werden, aber sie werden meist verwendet, auf der Symbolleiste.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-menu-controller"></a>Erstellen Sie ein Menücontroller  
   
-1.  Führen Sie die Schritte [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) ein Toolfenster erstellen, die eine Symbolleiste hat.  
+1. Führen Sie die Schritte [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) ein Toolfenster erstellen, die eine Symbolleiste hat.  
   
-2.  In *TWTestCommandPackage.vsct*, wechseln Sie zu dem Abschnitt "Symbols". In der GuidSymbol-Element, das mit dem Namen **GuidTWTestCommandPackageCmdSet**, deklarieren Sie Ihr Menücontroller, Controller Menügruppe und drei Menüelemente.  
+2. In *TWTestCommandPackage.vsct*, wechseln Sie zu dem Abschnitt "Symbols". In der GuidSymbol-Element, das mit dem Namen **GuidTWTestCommandPackageCmdSet**, deklarieren Sie Ihr Menücontroller, Controller Menügruppe und drei Menüelemente.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  Definieren Sie im Abschnitt Menüs hinter dem letzten Menüeintrag im, die Menücontroller als Menü aus.  
+3. Definieren Sie im Abschnitt Menüs hinter dem letzten Menüeintrag im, die Menücontroller als Menü aus.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     Die `TextChanges` und `TextIsAnchorCommand` Flags müssen eingeschlossen werden, um den Menücontroller mit dem letzten ausgewählten Befehl entsprechend zu aktivieren.  
+    Die `TextChanges` und `TextIsAnchorCommand` Flags müssen eingeschlossen werden, um den Menücontroller mit dem letzten ausgewählten Befehl entsprechend zu aktivieren.  
   
-4.  Fügen Sie in den Gruppen, das hinter dem letzten Gruppeneintrag im Abschnitt verwenden zu können, die Controller-Menügruppe.  
+4. Fügen Sie in den Gruppen, das hinter dem letzten Gruppeneintrag im Abschnitt verwenden zu können, die Controller-Menügruppe.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Wenn Sie den Menücontroller als übergeordnetes Element festlegen, werden Sie alle Befehle, die in dieser Gruppe platziert im Menücontroller im angezeigt. Die `priority` Attribut weggelassen wird, wodurch es auf den Standardwert 0 (null) festgelegt ist die einzige Gruppe auf dem Menücontroller im.  
+    Wenn Sie den Menücontroller als übergeordnetes Element festlegen, werden Sie alle Befehle, die in dieser Gruppe platziert im Menücontroller im angezeigt. Die `priority` Attribut weggelassen wird, wodurch es auf den Standardwert 0 (null) festgelegt ist die einzige Gruppe auf dem Menücontroller im.  
   
-5.  Fügen Sie im Abschnitt Schaltflächen hinter dem letzten Eintrag für die Schaltfläche für die einzelnen Elemente im Menü ein Button-Element hinzu.  
+5. Fügen Sie im Abschnitt Schaltflächen hinter dem letzten Eintrag für die Schaltfläche für die einzelnen Elemente im Menü ein Button-Element hinzu.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  An diesem Punkt können Sie die Menücontroller ansehen. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
+6. An diesem Punkt können Sie die Menücontroller ansehen. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
   
-    1.  Auf der **anzeigen / Other Windows** öffnen **Test ToolWindow**.  
+   1. Auf der **anzeigen / Other Windows** öffnen **Test ToolWindow**.  
   
-    2.  Der Menücontroller wird auf der Symbolleiste im Toolfenster angezeigt.  
+   2. Der Menücontroller wird auf der Symbolleiste im Toolfenster angezeigt.  
   
-    3.  Klicken Sie auf den Pfeil auf der rechten Seite des menücontrollers im auf die drei möglichen Befehle finden Sie unter.  
+   3. Klicken Sie auf den Pfeil auf der rechten Seite des menücontrollers im auf die drei möglichen Befehle finden Sie unter.  
   
-     Beachten Sie, dass wenn Sie einen Befehl klicken, wird der Titel des menücontrollers im ändert, um diesen Befehl anzuzeigen. Im nächsten Abschnitt fügen wir den Code, um diese Befehle aktivieren hinzu.  
+      Beachten Sie, dass wenn Sie einen Befehl klicken, wird der Titel des menücontrollers im ändert, um diesen Befehl anzuzeigen. Im nächsten Abschnitt fügen wir den Code, um diese Befehle aktivieren hinzu.  
   
 ## <a name="implement-the-menu-controller-commands"></a>Implementieren Sie die Controller-Befehle im Menü  
   

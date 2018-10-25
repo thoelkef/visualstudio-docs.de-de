@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887422"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Einschränkungen beim WCF-Debugging
 Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen eines WCF-Diensts zu starten:  
   
--   Sie debuggen einen Clientprozess, durch den ein Dienst aufgerufen wird. Der Debugger führt einen Einzelschritt in den Dienst aus. Der Dienst muss sich nicht in derselben Projektmappe wie die Clientanwendung befinden.  
+- Sie debuggen einen Clientprozess, durch den ein Dienst aufgerufen wird. Der Debugger führt einen Einzelschritt in den Dienst aus. Der Dienst muss sich nicht in derselben Projektmappe wie die Clientanwendung befinden.  
   
--   Sie debuggen einen Clientprozess, der eine Anforderung an einen Dienst sendet. Der Dienst muss Teil der Projektmappe sein.  
+- Sie debuggen einen Clientprozess, der eine Anforderung an einen Dienst sendet. Der Dienst muss Teil der Projektmappe sein.  
   
--   Verwenden Sie **an den Prozess anhängen** an einen Dienst anfügen, die derzeit ausgeführt wird. Das Debuggen wird im Dienst gestartet.  
+- Verwenden Sie **an den Prozess anhängen** an einen Dienst anfügen, die derzeit ausgeführt wird. Das Debuggen wird im Dienst gestartet.  
   
- In diesem Thema werden Einschränkungen dieser Szenarien beschrieben.  
+  In diesem Thema werden Einschränkungen dieser Szenarien beschrieben.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Einschränkungen bei der schrittweisen Verwendung eines Diensts  
  Folgende Bedingungen müssen erfüllt sein, damit Sie von den debuggten Clientanwendungen einen Einzelschritt in einen Dienst ausführen können:  
@@ -61,19 +61,19 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Einschränkungen beim automatischen Anfügen an einen Dienst  
  Das automatische Anfügen an einen Dienst unterliegt folgenden Einschränkungen:  
   
--   Der Dienst muss Teil der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe sein, die Sie debuggen.  
+- Der Dienst muss Teil der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe sein, die Sie debuggen.  
   
--   Der Dienst muss gehostet werden. Es kann Teil eines Websiteprojekts (Dateisystem und HTTP), -Webanwendungsprojekts (Dateisystem und HTTP) oder WCF-Dienstbibliotheksprojekt sein. WCF-Dienstbibliotheksprojekte können entweder Dienstbibliotheken oder Workflowdienstbibliotheken sein.  
+- Der Dienst muss gehostet werden. Es kann Teil eines Websiteprojekts (Dateisystem und HTTP), -Webanwendungsprojekts (Dateisystem und HTTP) oder WCF-Dienstbibliotheksprojekt sein. WCF-Dienstbibliotheksprojekte können entweder Dienstbibliotheken oder Workflowdienstbibliotheken sein.  
   
--   Der Dienst muss über einen WCF-Client aufgerufen werden.  
+- Der Dienst muss über einen WCF-Client aufgerufen werden.  
   
--   Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:  
+- Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>Lokales Hosten  
  Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, der WCF-Diensthost ausgeführt werden kann oder die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Informationen dazu, wie Sie einen selbst gehosteten Dienst debuggen, finden Sie unter [Vorgehensweise: Debuggen eines WCF-Diensts für selbstgehostete](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

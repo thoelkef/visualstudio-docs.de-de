@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856703"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Gewusst wie: Aktivieren und Deaktivieren von "Bearbeiten und Fortfahren"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ Sie können auch deaktivieren oder aktivieren, bearbeiten und Fortfahren auf die
   
 #### <a name="to-enabledisable-edit-and-continue"></a>So aktivieren bzw. deaktivieren Sie "Bearbeiten und Fortfahren"  
   
-1.  Open Debug Seite "Optionen" (**Extras / Optionen / Debugging**).  
+1. Open Debug Seite "Optionen" (**Extras / Optionen / Debugging**).  
   
-2.  Führen Sie einen Bildlauf nach unten zum **bearbeiten und Fortfahren** Kategorie.  
+2. Führen Sie einen Bildlauf nach unten zum **bearbeiten und Fortfahren** Kategorie.  
   
-3.  Wählen Sie zum Aktivieren der **bearbeiten und Fortfahren aktivieren** Kontrollkästchen. Deaktivieren Sie das Kontrollkästchen, wenn Sie die Funktion deaktivieren möchten.  
+3. Wählen Sie zum Aktivieren der **bearbeiten und Fortfahren aktivieren** Kontrollkästchen. Deaktivieren Sie das Kontrollkästchen, wenn Sie die Funktion deaktivieren möchten.  
   
-    > [!NOTE]
-    >  Wenn IntelliTrace aktiviert ist und Sie IntelliTrace-Ereignisse und Aufrufinformationen erfassen, wird „Bearbeiten und Fortfahren“ deaktiviert. Weitere Informationen finden Sie unter [IntelliTrace konfigurieren](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Wenn IntelliTrace aktiviert ist und Sie IntelliTrace-Ereignisse und Aufrufinformationen erfassen, wird „Bearbeiten und Fortfahren“ deaktiviert. Weitere Informationen finden Sie unter [IntelliTrace konfigurieren](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
- Weitere Informationen zu diesen Optionen finden Sie unter [Allgemein, Debuggen, Dialogfeld Optionen](../debugger/general-debugging-options-dialog-box.md).  
+   Weitere Informationen zu diesen Optionen finden Sie unter [Allgemein, Debuggen, Dialogfeld Optionen](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)

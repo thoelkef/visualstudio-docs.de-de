@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866128"
 ---
 # <a name="managing-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Anwendungseinstellungen ermöglichen ein dynamisches Speichern von Anwendungsinf
   
  Es gibt zwei Typen von Anwendungseinstellungen, die sich hinsichtlich ihres Gültigkeitsbereichs unterscheiden:  
   
--   Anwendungsspezifische Einstellungen können für Informationen wie die URL eines Webdiensts oder eine Datenbankverbindungszeichenfolge verwendet werden. Diese Werte werden der Anwendung zugeordnet. Deshalb können Benutzer sie zur Laufzeit nicht ändern.  
+- Anwendungsspezifische Einstellungen können für Informationen wie die URL eines Webdiensts oder eine Datenbankverbindungszeichenfolge verwendet werden. Diese Werte werden der Anwendung zugeordnet. Deshalb können Benutzer sie zur Laufzeit nicht ändern.  
   
--   Benutzerspezifische Einstellungen können für Informationen, z. B. die Beibehaltung der letzten Position eines Formulars oder eine Schriftarteinstellung, verwendet werden. Die Benutzer können diese Werte zur Laufzeit ändern.  
+- Benutzerspezifische Einstellungen können für Informationen, z. B. die Beibehaltung der letzten Position eines Formulars oder eine Schriftarteinstellung, verwendet werden. Die Benutzer können diese Werte zur Laufzeit ändern.  
   
- Sie können den Typ einer Einstellung mit der Eigenschaft **Bereich** ändern.  
+  Sie können den Typ einer Einstellung mit der Eigenschaft **Bereich** ändern.  
   
- Das Projektsystem speichert die Anwendungseinstellungen in zwei XML-Dateien: in der Datei app.config, die zur Entwurfszeit erstellt wird, wenn Sie die erste Anwendungseinstellung erstellen, sowie in der Datei user.config, die zur Laufzeit erstellt wird, wenn der die Anwendung ausführende Benutzer den Wert einer Benutzereinstellung ändert. Beachten Sie, dass Änderungen in den Benutzereinstellungen nicht auf die Festplatte geschrieben werden, es sei denn, die Anwendung ruft ausdrücklich eine Methode auf, die dies veranlasst.  
+  Das Projektsystem speichert die Anwendungseinstellungen in zwei XML-Dateien: in der Datei app.config, die zur Entwurfszeit erstellt wird, wenn Sie die erste Anwendungseinstellung erstellen, sowie in der Datei user.config, die zur Laufzeit erstellt wird, wenn der die Anwendung ausführende Benutzer den Wert einer Benutzereinstellung ändert. Beachten Sie, dass Änderungen in den Benutzereinstellungen nicht auf die Festplatte geschrieben werden, es sei denn, die Anwendung ruft ausdrücklich eine Methode auf, die dies veranlasst.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Erstellen von Anwendungseinstellungen zur Entwurfszeit  
  Zur Entwurfszeit können Anwendungseinstellungen auf zwei Arten erstellt werden: im **Projekt-Designer** über die Seite **Einstellungen**oder für ein Formular oder ein Steuerelement über das **Eigenschaftenfenster** , in dem Sie eine Einstellung an eine Eigenschaft binden können.  

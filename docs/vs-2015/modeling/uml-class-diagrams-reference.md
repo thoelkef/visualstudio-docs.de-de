@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855855"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML-Klassendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
 ## <a name="reading-class-diagrams"></a>Lesen von Klassendiagrammen  
  Die Tabelle in diesem Abschnitt beschreibt die Elemente, die Sie in einem UML-Klassendiagramm sehen können. Informationen zu den Eigenschaften dieser Elemente finden Sie unter den folgenden Themen:  
   
--   [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![Drei Klassen mit Beziehungen und Eigenschaften](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![Drei Klassen mit Beziehungen und Eigenschaften](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Form "**|**Element**|**Beschreibung**|  
-|---------------|-----------------|---------------------|  
-|1|**Klasse**|Eine Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen. Weitere Informationen finden Sie unter [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
-|1|Klassifizierer|Der allgemeine Name für eine Klasse, Schnittstelle oder Enumeration. Komponenten, Anwendungsfälle und Akteure sind ebenfalls Klassifizierer.|  
-|2|Steuerelement erweitern/reduzieren|Wenn Sie die Details einer Klassifizierung nicht sehen können, klicken Sie auf die Erweiterung oben links im Klassifizierer. Möglicherweise müssen Sie auch  für jedes Segment auf das [+] klicken.|  
-|3|**Attribut**|Ein Wert mit einem Typ, der jeder Instanz eines Klassifizierers zugeordnet ist.<br /><br /> Um ein Attribut hinzuzufügen, klicken Sie auf die **Attribute** aus, und drücken Sie dann die **EINGABETASTE**. Geben Sie die Signatur des Attributs ein. Weitere Informationen finden Sie unter [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
-|4|**Vorgang**|Eine Methode oder Funktion, die von Instanzen eines Klassifizierers ausgeführt werden kann. Um einen Vorgang hinzuzufügen, klicken Sie auf die **Vorgänge** aus, und drücken Sie dann die **EINGABETASTE**. Geben Sie die Signatur des Vorgangs ein. Weitere Informationen finden Sie unter [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
-|5|**Zuordnung**|Eine Beziehung zwischen den Membern von zwei Klassifizierern. Weitere Informationen finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
-|5a|**Aggregation**|Eine Zuordnung, die eine gemeinsame Besitzbeziehung darstellt. Die **Aggregation** der Rolle "Besitzer"-Eigenschaftensatz auf **Shared**.|  
-|5 b|**Komposition**|Eine Zuordnung, die eine ganzteilige Besitzbeziehung darstellt. Die **Aggregation** der Rolle "Besitzer"-Eigenschaftensatz auf **zusammengesetzten**.|  
-|6|**Zuordnungsname**|Der Name einer Zuordnung. Der Name kann leer gelassen werden.|  
-|7|**Rollenname**|Der Name einer Rolle, d. h. ein Ende einer Zuordnung. Kann verwendet werden, um auf das zugeordnete Objekt zu verweisen. In der vorherigen Abbildung steht `O` für jede `O.ChosenMenu`-Bestellung für die zugeordnete Speisekarte.<br /><br /> Jede Rolle verfügt über eigene Eigenschaften, die unter den Eigenschaften der Zuordnung aufgeführt sind.|  
-|8|**Multiplizität**|Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\*** bedeutet, dass es keine obere Grenze für die Anzahl der Links, die vorgenommen werden können.|  
-|9|**Generalisierung**|Die *bestimmte* Klassifizierer erbt einen Teil seiner Definition von der *allgemeine* Klassifizierer. Der allgemeine Klassifizierer befindet sich am Pfeilende des Connectors. Attribute, Zuordnungen und Vorgänge werden vom spezifischen Klassifizierer geerbt.<br /><br /> Verwenden der **Vererbung** Tool, um eine Generalisierung zwischen zwei Klassifizierern zu erstellen.|  
+| **Form "** |       **Element**        |                                                                                                                                                             **Beschreibung**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |        **Klasse**         |                                                           Eine Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen. Weitere Informationen finden Sie unter [Eigenschaften von Typen in UML-Klassendiagrammen](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1     |        Klassifizierer        |                                                                                                             Der allgemeine Name für eine Klasse, Schnittstelle oder Enumeration. Komponenten, Anwendungsfälle und Akteure sind ebenfalls Klassifizierer.                                                                                                             |
+|     2     | Steuerelement erweitern/reduzieren |                                                                                         Wenn Sie die Details einer Klassifizierung nicht sehen können, klicken Sie auf die Erweiterung oben links im Klassifizierer. Möglicherweise müssen Sie auch  für jedes Segment auf das [+] klicken.                                                                                         |
+|     3     |      **Attribut**       |   Ein Wert mit einem Typ, der jeder Instanz eines Klassifizierers zugeordnet ist.<br /><br /> Um ein Attribut hinzuzufügen, klicken Sie auf die **Attribute** aus, und drücken Sie dann die **EINGABETASTE**. Geben Sie die Signatur des Attributs ein. Weitere Informationen finden Sie unter [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **Vorgang**       | Eine Methode oder Funktion, die von Instanzen eines Klassifizierers ausgeführt werden kann. Um einen Vorgang hinzuzufügen, klicken Sie auf die **Vorgänge** aus, und drücken Sie dann die **EINGABETASTE**. Geben Sie die Signatur des Vorgangs ein. Weitere Informationen finden Sie unter [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     5     |     **Zuordnung**      |                                                                  Eine Beziehung zwischen den Membern von zwei Klassifizierern. Weitere Informationen finden Sie unter [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
+|    5a     |     **Aggregation**      |                                                                                                    Eine Zuordnung, die eine gemeinsame Besitzbeziehung darstellt. Die **Aggregation** der Rolle "Besitzer"-Eigenschaftensatz auf **Shared**.                                                                                                     |
+|    5 b     |     **Komposition**      |                                                                                                      Eine Zuordnung, die eine ganzteilige Besitzbeziehung darstellt. Die **Aggregation** der Rolle "Besitzer"-Eigenschaftensatz auf **zusammengesetzten**.                                                                                                      |
+|     6     |   **Zuordnungsname**   |                                                                                                                                         Der Name einer Zuordnung. Der Name kann leer gelassen werden.                                                                                                                                          |
+|     7     |      **Rollenname**       |                       Der Name einer Rolle, d. h. ein Ende einer Zuordnung. Kann verwendet werden, um auf das zugeordnete Objekt zu verweisen. In der vorherigen Abbildung steht `O` für jede `O.ChosenMenu`-Bestellung für die zugeordnete Speisekarte.<br /><br /> Jede Rolle verfügt über eigene Eigenschaften, die unter den Eigenschaften der Zuordnung aufgeführt sind.                       |
+|     8     |     **Multiplizität**     |                                         Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\\**\* bedeutet, dass es keine obere Grenze für die Anzahl der Links, die vorgenommen werden können.                                         |
+|     9     |    **Generalisierung**    |  Die *bestimmte* Klassifizierer erbt einen Teil seiner Definition von der *allgemeine* Klassifizierer. Der allgemeine Klassifizierer befindet sich am Pfeilende des Connectors. Attribute, Zuordnungen und Vorgänge werden vom spezifischen Klassifizierer geerbt.<br /><br /> Verwenden der **Vererbung** Tool, um eine Generalisierung zwischen zwei Klassifizierern zu erstellen.   |
   
  ![Paket mit der Schnittstelle und Enumeration](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   

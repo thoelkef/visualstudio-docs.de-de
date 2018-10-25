@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3f89502beeb1e8165450c7c07f3f55f83dd39e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed77975e1a1d337354e7ac743e4b47e3c84ed701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855811"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Auswertung von Ausdrücken für den angegebenen Thread ausgeführt wird, selbst wenn die Anwendung beendet wurde ermöglicht (oder lässt nicht zu).  
+Hiermit (zugelassen oder verweigert) Auswertung von Ausdrücken für den angegebenen Thread ausgeführt wird, auch wenn die Anwendung beendet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,27 +49,27 @@ int WatchForExpressionEvaluationOnThread(
   
 #### <a name="parameters"></a>Parameter  
  `pOriginatingProgram`  
- [in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm, das Auswerten eines Ausdrucks darstellt.  
+ [in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das das Programm, das Auswerten eines Ausdrucks darstellt.  
   
  `dwTid`  
  [in] Gibt den Bezeichner des Threads.  
   
  `dwEvalFlags`  
- [in] Eine Kombination aus Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die angeben, wie die Auswertung ausgeführt werden.  
+ [in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die angeben, wie die Auswertung ausgeführt werden.  
   
  `pExprCallback`  
- [in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt um Debugereignisse zu senden, die auftreten, während der Auswertung von Ausdrücken verwendet werden soll.  
+ [in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt, das zum Senden von Debug-Ereignisse, die auftreten, während der Auswertung des Ausdrucks verwendet werden.  
   
  `fWatch`  
- [in] Wenn ungleich 0 (`TRUE`), ermöglicht die Auswertung von Ausdrücken auf den identifizierten Thread `dwTid`ist, andernfalls 0 (null) (`FALSE`) lässt keine Auswertung von Ausdrücken in diesem Thread.  
+ [in] Wenn ungleich 0 (`TRUE`), ermöglicht die Auswertung von Ausdrücken für den Thread identifizierte `dwTid`ist, andernfalls 0 (null) (`FALSE`) lässt keine Auswertung des Ausdrucks in diesem Thread.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn der Sitzungs-Manager (SDM) fragt ein Programm, identifiziert durch die `pOriginatingProgram` Parameter, die zum Auswerten eines Ausdrucks werden allen anderen angefügten Programme benachrichtigt, indem beim Aufrufen dieser Methode.  
+ Wenn die sitzungsbasierter Debug-Manager (SDM) fordert ein Programm, das identifizierte die `pOriginatingProgram` Parameter, die zum Auswerten eines Ausdrucks, benachrichtigt er alle anderen angefügten Programme durch Aufrufen dieser Methode.  
   
- Auswertung von Ausdrücken in einem Programm kann dazu führen, dass der Code zum Ausführen in einer anderen, aufgrund einer funktionsauswertung oder Auswertung aller `IDispatch` Eigenschaften. Aus diesem Grund kann diese Methode die Auswertung von Ausdrücken ausgeführt und abgeschlossen, obwohl der Thread an diesem Programm beendet werden kann.  
+ Auswertung des Ausdrucks in einem Programm kann dazu führen, dass Code zur Ausführung in einer anderen, aufgrund der funktionsauswertung oder Auswertung aller `IDispatch` Eigenschaften. Aus diesem Grund kann dieser Methode die Auswertung des Ausdrucks ausgeführt und abgeschlossen werden, auch wenn der Thread in diesem Programm beendet werden kann.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

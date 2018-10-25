@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857678"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie d
 ## <a name="framework-targeting-features"></a>Frameworkzielfunktionen  
  Frameworkziele umfassen folgende Funktionen:  
   
--   Wenn Sie ein Projekt öffnen, das eine frühere Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] als Ziel verwendet, kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] das Projekt automatisch aktualisieren oder das Ziel unverändert lassen.  
+- Wenn Sie ein Projekt öffnen, das eine frühere Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] als Ziel verwendet, kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] das Projekt automatisch aktualisieren oder das Ziel unverändert lassen.  
   
--   Wenn Sie ein Projekt erstellen, können Sie die gewünschte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion angeben.  
+- Wenn Sie ein Projekt erstellen, können Sie die gewünschte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion angeben.  
   
--   Sie können die Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ändern, auf die ein vorhandenes Projekt abzielt.  
+- Sie können die Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ändern, auf die ein vorhandenes Projekt abzielt.  
   
--   Sie können eine andere [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version als Zielversion für unterschiedliche Projekte in der gleichen Projektmappe festlegen.  
+- Sie können eine andere [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version als Zielversion für unterschiedliche Projekte in der gleichen Projektmappe festlegen.  
   
--   Wenn Sie die Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ändern, auf die ein Projekt ausgerichtet ist, werden in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] alle erforderlichen Änderungen an Verweisen und Konfigurationsdateien vorgenommen.  
+- Wenn Sie die Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ändern, auf die ein Projekt ausgerichtet ist, werden in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] alle erforderlichen Änderungen an Verweisen und Konfigurationsdateien vorgenommen.  
   
- Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, wenn Sie mit einem Projekt arbeiten, das eine frühere [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version als Ziel hat. Dazu zählen u. a. folgende Aktionen:  
+  Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, wenn Sie mit einem Projekt arbeiten, das eine frühere [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version als Ziel hat. Dazu zählen u. a. folgende Aktionen:  
   
--   Filtern von Elementen in den Dialogfeldern **Neues Projekt**, **Neues Element hinzufügen**, **Neuen Verweis hinzufügen** und **Dienstverweis hinzufügen**, um die Optionen auszulassen, die in der Zielversion nicht verfügbar sind.  
+- Filtern von Elementen in den Dialogfeldern **Neues Projekt**, **Neues Element hinzufügen**, **Neuen Verweis hinzufügen** und **Dienstverweis hinzufügen**, um die Optionen auszulassen, die in der Zielversion nicht verfügbar sind.  
   
--   Filtern von benutzerdefinierten Steuerelementen in der **Toolbox**, um die Steuerelemente zu entfernen, die in der Zielversion nicht verfügbar sind, und um nur die neuesten Steuerelemente anzuzeigen, wenn mehrere Steuerelemente für die Zielversion verfügbar sind.  
+- Filtern von benutzerdefinierten Steuerelementen in der **Toolbox**, um die Steuerelemente zu entfernen, die in der Zielversion nicht verfügbar sind, und um nur die neuesten Steuerelemente anzuzeigen, wenn mehrere Steuerelemente für die Zielversion verfügbar sind.  
   
--   Filtern von IntelliSense, um Sprachfunktionen auszulassen, die in der Zielversion nicht verfügbar sind.  
+- Filtern von IntelliSense, um Sprachfunktionen auszulassen, die in der Zielversion nicht verfügbar sind.  
   
--   Filtern von Eigenschaften im Fenster **Eigenschaften**, um die Eigenschaften auszulassen, die in der Zielversion nicht verfügbar sind.  
+- Filtern von Eigenschaften im Fenster **Eigenschaften**, um die Eigenschaften auszulassen, die in der Zielversion nicht verfügbar sind.  
   
--   Filtern von Menüoptionen, um Optionen auszulassen, die in der Zielversion nicht verfügbar sind.  
+- Filtern von Menüoptionen, um Optionen auszulassen, die in der Zielversion nicht verfügbar sind.  
   
--   Für Builds werden die Version des Compilers und die Compileroptionen verwendet, die für die Zielversion geeignet sind.  
+- Für Builds werden die Version des Compilers und die Compileroptionen verwendet, die für die Zielversion geeignet sind.  
   
 > [!NOTE]
 >  Durch Frameworkziele wird nicht garantiert, dass die Anwendung ordnungsgemäß ausgeführt wird. Sie müssen die Anwendung dennoch testen, um sicherzustellen, dass Sie mit der Zielversion ausgeführt wird. Sie können keine Frameworkversionen als Ziel verwenden, die älter als .NET Framework 2.0 sind.  

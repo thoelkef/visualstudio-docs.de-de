@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9be1d03c8635b1d6b01556c8b4c3963db1d7a2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: daf11b3aa8be6e692db40fa0c0d0daca48547cb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891798"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Exemplarische Vorgehensweise: Debuggen eines Web Forms
 Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zum Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen (auch bekannt als Web Forms). Sie erfahren Sie, wie zum Starten und beenden, legen Sie Haltepunkte fest und Untersuchen von Variablen in der **Watch** Fenster.  
@@ -41,27 +41,27 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 ### <a name="to-create-the-web-form"></a>So erstellen Sie das Web Form  
   
-1.  Falls Sie bereits eine Projektmappe geöffnet haben, schließen Sie sie.  
+1. Falls Sie bereits eine Projektmappe geöffnet haben, schließen Sie sie.  
   
-2.  Auf der **Datei** Menü klicken Sie auf **neu**, und klicken Sie dann auf **Website**.  
+2. Auf der **Datei** Menü klicken Sie auf **neu**, und klicken Sie dann auf **Website**.  
   
-     Die **neue Website** Dialogfeld wird angezeigt.  
+    Die **neue Website** Dialogfeld wird angezeigt.  
   
-3.  In der **Vorlagen** Bereich, klicken Sie auf **ASP.NET-Website**.  
+3. In der **Vorlagen** Bereich, klicken Sie auf **ASP.NET-Website**.  
   
-4.  Auf der **Speicherort** Zeile, klicken Sie auf **HTTP** aus der Liste, und klicken Sie im Textfeld geben **http://localhost/WebSite**.  
+4. Auf der **Speicherort** Zeile, klicken Sie auf **HTTP** aus der Liste, und klicken Sie im Textfeld geben **http://localhost/WebSite**.  
   
-5.  In der **Sprache** auf **Visual C#-** oder **Visual Basic**.  
+5. In der **Sprache** auf **Visual C#-** oder **Visual Basic**.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt ein neues Projekt und zeigt den standardmäßigen HTML-Quellcode an. Es erstellt auch ein neues virtuelles Verzeichnis mit dem Namen **WebSite** unter **Default Web Site** in IIS.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt ein neues Projekt und zeigt den standardmäßigen HTML-Quellcode an. Es erstellt auch ein neues virtuelles Verzeichnis mit dem Namen **WebSite** unter **Default Web Site** in IIS.  
   
-7.  Klicken Sie auf die **Entwurf** Registerkarte am unteren Seitenrand.  
+7. Klicken Sie auf die **Entwurf** Registerkarte am unteren Seitenrand.  
   
-8.  Klicken Sie auf die **Toolbox** Registerkarte am linken Rand aus, oder wählen Sie ihn auf die **Ansicht** Menü.  
+8. Klicken Sie auf die **Toolbox** Registerkarte am linken Rand aus, oder wählen Sie ihn auf die **Ansicht** Menü.  
   
-     Die **Toolbox** wird geöffnet.  
+    Die **Toolbox** wird geöffnet.  
   
 9. In der **Toolbox**, klicken Sie auf die **Schaltfläche** steuern, und fügen Sie es der Hauptentwurfsoberfläche "default.aspx" hinzu.  
   
@@ -89,43 +89,43 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 ### <a name="to-debug-the-web-form"></a>So debuggen Sie das Web Form  
   
-1.  Klicken Sie im Fenster Default.aspx.cs oder Default.aspx.vb auf den linken Rand der Zeile, der Sie Text hinzugefügt haben:  
+1. Klicken Sie im Fenster Default.aspx.cs oder Default.aspx.vb auf den linken Rand der Zeile, der Sie Text hinzugefügt haben:  
   
-    ```vb  
-    TextBox1.Text = "Button was clicked!"
-    ```  
+   ```vb  
+   TextBox1.Text = "Button was clicked!"
+   ```  
 
-    ```csharp  
-    textBox1.Text = "Button was clicked!";  
-    ```  
+   ```csharp  
+   textBox1.Text = "Button was clicked!";  
+   ```  
   
-     Ein roter Punkt wird angezeigt, und der Text der Zeile wird rot hervorgehoben. Der rote Punkt steht für einen Haltepunkt. Wenn Sie die Anwendung unter dem Debugger ausführen, hält dieser die Ausführung an der Stelle mit dem Haltepunkt an. Dadurch erhalten Sie die Möglichkeit, den Status der Anwendung zu überprüfen und diese zu debuggen. Weitere Informationen finden Sie unter [Haltepunkte](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
+    Ein roter Punkt wird angezeigt, und der Text der Zeile wird rot hervorgehoben. Der rote Punkt steht für einen Haltepunkt. Wenn Sie die Anwendung unter dem Debugger ausführen, hält dieser die Ausführung an der Stelle mit dem Haltepunkt an. Dadurch erhalten Sie die Möglichkeit, den Status der Anwendung zu überprüfen und diese zu debuggen. Weitere Informationen finden Sie unter [Haltepunkte](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
+2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
   
-3.  Die **Debuggen nicht aktiviert** Dialogfeld wird angezeigt. Wählen Sie **ändern Sie die Datei "Web.config" zum Aktivieren von debugging** aus, und klicken Sie auf **OK**.  
+3. Die **Debuggen nicht aktiviert** Dialogfeld wird angezeigt. Wählen Sie **ändern Sie die Datei "Web.config" zum Aktivieren von debugging** aus, und klicken Sie auf **OK**.  
   
-     Internet Explorer wird gestartet, und die zuvor entworfene Seite wird angezeigt.  
+    Internet Explorer wird gestartet, und die zuvor entworfene Seite wird angezeigt.  
   
-4.  Klicken Sie im Internet Explorer auf die erstellte Schaltfläche.  
+4. Klicken Sie im Internet Explorer auf die erstellte Schaltfläche.  
   
-     In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gelangen Sie damit in die Zeile, in der Sie den Haltepunkt auf der Codepage Default.aspx.cs oder Default.aspx.vb festlegen. Diese Zeile sollte gelb markiert sein. Jetzt können Sie die Variablen der Anwendung anzeigen und die Ausführung der Anwendung steuern. Die Ausführung der Anwendung wird angehalten, und der Debugger wartet auf einen Befehl.  
+    In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gelangen Sie damit in die Zeile, in der Sie den Haltepunkt auf der Codepage Default.aspx.cs oder Default.aspx.vb festlegen. Diese Zeile sollte gelb markiert sein. Jetzt können Sie die Variablen der Anwendung anzeigen und die Ausführung der Anwendung steuern. Die Ausführung der Anwendung wird angehalten, und der Debugger wartet auf einen Befehl.  
   
-5.  Auf der **Debuggen** Menü klicken Sie auf **Windows**, klicken Sie dann auf **Watch**, und klicken Sie dann auf **Überwachen 1**.  
+5. Auf der **Debuggen** Menü klicken Sie auf **Windows**, klicken Sie dann auf **Watch**, und klicken Sie dann auf **Überwachen 1**.  
   
-6.  In der **Watch** geben **TextBox1.Text**.  
+6. In der **Watch** geben **TextBox1.Text**.  
   
-     Die **Watch** Fenster zeigt den Wert der Variablen `TextBox1.Text`:  
+    Die **Watch** Fenster zeigt den Wert der Variablen `TextBox1.Text`:  
   
-    '""' 
+   '""' 
   
-7.  Auf der **Debuggen** Menü klicken Sie auf **Prozedurschritt**.  
+7. Auf der **Debuggen** Menü klicken Sie auf **Prozedurschritt**.  
   
-     Der Wert des `TextBox1.Text` Änderungen in der **Watch** Fenster zum Lesen:  
+    Der Wert des `TextBox1.Text` Änderungen in der **Watch** Fenster zum Lesen:  
   
-    `"Button was clicked!"`  
+   `"Button was clicked!"`  
   
-8.  Auf der **Debuggen** Menü klicken Sie auf **Weiter**.  
+8. Auf der **Debuggen** Menü klicken Sie auf **Weiter**.  
   
 9. Klicken Sie im Internet Explorer erneut auf die erstellte Schaltfläche.  
   
@@ -139,29 +139,29 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>So stellen Sie zum Debuggen eine Verbindung mit dem Web Form her  
   
-1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie den Debugger an einen laufenden Prozess anfügen. Für möglichst effektives Debuggen kompilieren Sie die ausführbare Datei als Debugversion mit Symboldateien (.pdb).  
+1. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie den Debugger an einen laufenden Prozess anfügen. Für möglichst effektives Debuggen kompilieren Sie die ausführbare Datei als Debugversion mit Symboldateien (.pdb).  
   
-2.  Klicken Sie im Fenster Default.aspx.cs bzw. Default.aspx.vb auf den linken Rand der Zeile, um erneut einen Haltepunkt in der hinzugefügten Zeile festzulegen:  
+2. Klicken Sie im Fenster Default.aspx.cs bzw. Default.aspx.vb auf den linken Rand der Zeile, um erneut einen Haltepunkt in der hinzugefügten Zeile festzulegen:  
   
-    ```vb  
-    TextBox1.Text = "Button was clicked!"
-    ```
+   ```vb  
+   TextBox1.Text = "Button was clicked!"
+   ```
   
-    ```csharp  
-    textBox1.Text = "Button was clicked!";  
-    ```  
+   ```csharp  
+   textBox1.Text = "Button was clicked!";  
+   ```  
   
-3.  Auf der **Debuggen** Menü klicken Sie auf **Starten ohne Debugging**.  
+3. Auf der **Debuggen** Menü klicken Sie auf **Starten ohne Debugging**.  
   
-     Das Web Form wird in Internet Explorer gestartet, der Debugger ist jedoch nicht angehängt.  
+    Das Web Form wird in Internet Explorer gestartet, der Debugger ist jedoch nicht angehängt.  
   
-4.  Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozess an. Weitere Informationen finden Sie unter [bereitgestellte Web-Anwendungen Debuggen](../debugger/debugging-deployed-web-applications.md).  
+4. Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozess an. Weitere Informationen finden Sie unter [bereitgestellte Web-Anwendungen Debuggen](../debugger/debugging-deployed-web-applications.md).  
   
-5.  Klicken Sie im Internet Explorer auf die Schaltfläche im Formular.  
+5. Klicken Sie im Internet Explorer auf die Schaltfläche im Formular.  
   
-     In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sollten Sie den Haltepunkt in Default.aspx.cs, Default.aspx.vb oder Default.aspx erreichen.  
+    In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sollten Sie den Haltepunkt in Default.aspx.cs, Default.aspx.vb oder Default.aspx erreichen.  
   
-6.  Wenn Sie fertig sind Debuggen, auf die **Debuggen** Menü klicken Sie auf **Debuggen beenden**.  
+6. Wenn Sie fertig sind Debuggen, auf die **Debuggen** Menü klicken Sie auf **Debuggen beenden**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
