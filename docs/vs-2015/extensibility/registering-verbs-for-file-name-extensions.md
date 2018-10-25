@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923406"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
 ## <a name="registering-standard-verbs"></a>Registrieren von Standard-Verben  
  Das Betriebssystem erkennt die folgenden standard-Verben:  
   
--   Öffnen  
+- Öffnen  
   
--   Bearbeiten  
+- Bearbeiten  
   
--   Wiedergabe  
+- Wiedergabe  
   
--   Print  
+- Print  
   
--   Vorschau  
+- Vorschau  
   
- Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Beispielsweise wird eine HTM-Datei öffnen im Browser während der Bearbeitung einer HTM-Datei einen HTML-Editor wird gestartet. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.  
+  Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Beispielsweise wird eine HTM-Datei öffnen im Browser während der Bearbeitung einer HTM-Datei einen HTML-Editor wird gestartet. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.  
   
 > [!NOTE]
 >  Wenn Standardverben registrieren zu können, der Standardwert für den geöffneten Schlüssel nicht festgelegt werden. Standardmäßig ist der Wert enthält die Zeichenfolge für die Sie im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben bereit.  

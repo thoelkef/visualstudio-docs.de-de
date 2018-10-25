@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923783"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256983"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann Elementlisten anhand von Elementmetadatenelementen in verschiedene Kategorien oder Batches unterteilen und eine Aufgabe einmal mit jedem Batch ausführen. Es ist schwierig zu erkennen, welche Elemente mit welchem Batch übergeben werden. In diesem Artikel werden die folgenden häufig auftretenden Szenarios thematisiert, bei denen die Batchverarbeitung ein Bestandteil ist.  
   
--   Unterteilen einer Elementliste in Batches  
+- Unterteilen einer Elementliste in Batches  
   
--   Unterteilen mehrerer Elementlisten in Batches  
+- Unterteilen mehrerer Elementlisten in Batches  
   
--   Batchverarbeitung einzelner Elemente  
+- Batchverarbeitung einzelner Elemente  
   
--   Filtern von Elementlisten  
+- Filtern von Elementlisten  
   
- Weitere Informationen zur Batchverarbeitung mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] finden Sie unter [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
+  Weitere Informationen zur Batchverarbeitung mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] finden Sie unter [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Unterteilen einer Elementliste in Batches  
  Mithilfe der Batchverarbeitung können Sie anhand von Elementmetadatenelementen eine Elementliste in verschiedene Batches unterteilen und diese Batches anschließend einzeln an eine Aufgabe übergeben. Dieser Vorgang ist nützlich für die Erstellung von Satellitenassemblys.  

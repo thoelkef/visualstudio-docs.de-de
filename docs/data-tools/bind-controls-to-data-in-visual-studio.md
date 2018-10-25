@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923016"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steuerelemente binden. Sie können diese datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** Fenster auf einer Entwurfsoberfläche oder Steuerelemente auf einer Oberfläche in Visual Studio.
@@ -30,14 +30,15 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 ## <a name="data-sources"></a>Datenquellen
  Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher, die in die Benutzeroberfläche gebunden werden kann. Eine Datenquelle kann praktisch sein, eine Entity Framework-Klasse, ein Dataset, einen Dienstendpunkt, der in ein Proxyobjekt .NET, eine LINQ to SQL-Klasse, oder jedes beliebige Objekt .NET oder Auflistung gekapselt wird. Einige Datenquellen ermöglichen Ihnen die Erstellung von datengebundenen Steuerelementen durch Ziehen von Elementen aus der **Datenquellen** Fenster, während die Daten aus anderen Quellen nicht der Fall ist. Die folgende Tabelle zeigt, welche Datenquellen unterstützt werden.
 
-|Datenquelle|Drag & Drop-Unterstützung in **der Windows Forms-Designer**|Drag & Drop-Unterstützung in **WPF-Designer**|Drag & Drop-Unterstützung in **Silverlight-Designer**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|DataSet|Ja|Ja|Nein|
-|Entity Data Model|Ja<sup>1</sup>|Ja|Ja|
-|LINQ to SQL-Klassen|Nein<sup>2</sup>|Nein<sup>2</sup>|Nein<sup>2</sup>|
-|Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Web Services)|Ja|Ja|Ja|
-|Object|Ja|Ja|Ja|
-|SharePoint|Ja|Ja|Ja|
+
+| Datenquelle | Drag & Drop-Unterstützung in **der Windows Forms-Designer** | Drag & Drop-Unterstützung in **WPF-Designer** | Drag & Drop-Unterstützung in **Silverlight-Designer** |
+| - | - | - | - |
+| DataSet | Ja | Ja | Nein |
+| Entity Data Model | Ja<sup>1</sup> | Ja | Ja |
+| LINQ to SQL-Klassen | Nein<sup>2</sup> | Nein<sup>2</sup> | Nein<sup>2</sup> |
+| Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Web Services) | Ja | Ja | Ja |
+| Object | Ja | Ja | Ja |
+| SharePoint | Ja | Ja | Ja |
 
  1. Generieren Sie das Modell, indem die **Entity Data Model** -Assistenten klicken Sie dann die Objekte in den Designer ziehen.
 
@@ -54,7 +55,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
  Die folgende Tabelle enthält einige der am häufigsten auszuführenden Aufgaben Sie ausführen, um die Steuerelemente an Daten binden.
 
 |Aufgabe|Weitere Informationen|
-|----------|----------------------|
+|----------| - |
 |Öffnen der **Datenquellen** Fenster.|Öffnen Sie im Editor eine Entwurfsoberfläche und wählen Sie **Ansicht** > **Datenquellen**.|
 |Fügen Sie Ihrem Projekt eine Datenquelle hinzu.|[Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)|
 |Legen Sie das Steuerelement, das erstellt wird, wenn Sie ein Element aus ziehen die **Datenquellen** in den Designer.|[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926541"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehle
 Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthaltenen Befehle werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,23 +34,23 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
   
 ### <a name="to-locate-a-command-definition"></a>Um eine Befehlsdefinition zu suchen.  
   
-1.  In Visual Studio, öffnen Sie die folgenden Dateien in die *< Visual Studio SDK-Installationspfad\>\VisualStudioIntegration\Common\Inc\\*  Ordner: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. In Visual Studio, öffnen Sie die folgenden Dateien in die *< Visual Studio SDK-Installationspfad\>\VisualStudioIntegration\Common\Inc\\*  Ordner: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
-     Die meisten Visual Studio-Befehle sind in definiert *SharedCmdDef.vsct* und *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definiert Befehle, die sich an den Debugger zu beziehen und *Venusmenu.vsct* Befehle, die spezifisch für die Web-Entwicklung sind definiert.  
+    Die meisten Visual Studio-Befehle sind in definiert *SharedCmdDef.vsct* und *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definiert Befehle, die sich an den Debugger zu beziehen und *Venusmenu.vsct* Befehle, die spezifisch für die Web-Entwicklung sind definiert.  
   
-2.  Wenn der Befehl ein Menüelement ist, notieren Sie den genauen Text des Menüelements. Wenn der Befehl eine Schaltfläche auf einer Symbolleiste ist, beachten Sie den QuickInfo-Text, der angezeigt wird, wenn Sie darauf anhalten.  
+2. Wenn der Befehl ein Menüelement ist, notieren Sie den genauen Text des Menüelements. Wenn der Befehl eine Schaltfläche auf einer Symbolleiste ist, beachten Sie den QuickInfo-Text, der angezeigt wird, wenn Sie darauf anhalten.  
   
-3.  Drücken Sie **STRG**+**F** zum Öffnen der **finden** Dialogfeld.  
+3. Drücken Sie **STRG**+**F** zum Öffnen der **finden** Dialogfeld.  
   
-4.  In der **Suchen nach** Feld, und geben Sie in Schritt 2 den Text, die Sie notiert haben.  
+4. In der **Suchen nach** Feld, und geben Sie in Schritt 2 den Text, die Sie notiert haben.  
   
-5.  Überprüfen Sie, ob **alle geöffneten Dokumente** wird angezeigt, der **Suchen in** Feld.  
+5. Überprüfen Sie, ob **alle geöffneten Dokumente** wird angezeigt, der **Suchen in** Feld.  
   
-6.  Klicken Sie auf die **Weitersuchen** so lange, bis der Text ausgewählt ist, in der `<Strings>` Teil einer [Button-Element](../../extensibility/button-element.md).  
+6. Klicken Sie auf die **Weitersuchen** so lange, bis der Text ausgewählt ist, in der `<Strings>` Teil einer [Button-Element](../../extensibility/button-element.md).  
   
-     Die `<Button>` -Element, das in der Befehl angezeigt wird, wird der Befehlsdefinition.  
+    Die `<Button>` -Element, das in der Befehl angezeigt wird, wird der Befehlsdefinition.  
   
- Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in einem anderen Menü oder Symbolleiste einfügen, durch das Erstellen einer [CommandPlacement-Element](../../extensibility/commandplacement-element.md) verfügt, die über die gleiche `guid` und `id` Werte wie für den Befehl. Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in einem anderen Menü oder Symbolleiste einfügen, durch das Erstellen einer [CommandPlacement-Element](../../extensibility/commandplacement-element.md) verfügt, die über die gleiche `guid` und `id` Werte wie für den Befehl. Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Sonderfälle  
  In den folgenden Fällen den Menütext oder QuickInfo-Text entspricht möglicherweise nicht exakt neuerungen in der Befehlsdefinition.  

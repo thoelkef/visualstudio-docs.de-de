@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929490"
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Das Debuggen mit einer SharePoint-Korrelations-ID starten  
   
-1.  Kopieren der SharePoint-Korrelations-ID aus der Quelle  
+1. Kopieren der SharePoint-Korrelations-ID aus der Quelle  
   
-     Zum Beispiel:  
+    Zum Beispiel:  
   
-     ![IntelliTrace &#45; SharePoint-Fehler &#45; Korrelations-ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint-Fehler &#45; Korrelations-ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  Öffnen Sie die ITRACE-Datei, wählen Sie dann **Analyse** aus, und geben Sie die SharePoint-Korrelations-ID ein, um die entsprechende Webanforderung und aufgezeichneten Ereignisse zu überprüfen.  
+2. Öffnen Sie die ITRACE-Datei, wählen Sie dann **Analyse** aus, und geben Sie die SharePoint-Korrelations-ID ein, um die entsprechende Webanforderung und aufgezeichneten Ereignisse zu überprüfen.  
   
-     ![IntelliTrace-Protokoll &#45; Geben Sie ein SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace-Protokoll &#45; Geben Sie ein SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  Überprüfen Sie die Ereignisse unter **Angeforderte Ereignisse**. Ereignisse werden von oben nach unten in der Reihenfolge ihres Auftretens angezeigt.  
+3. Überprüfen Sie die Ereignisse unter **Angeforderte Ereignisse**. Ereignisse werden von oben nach unten in der Reihenfolge ihres Auftretens angezeigt.  
   
-    1.  Wählen Sie zum Anzeigen von Details ein Ereignis aus.  
+   1. Wählen Sie zum Anzeigen von Details ein Ereignis aus.  
   
-    2.  Wählen Sie **Debugging starten** , um das Debuggen an dem Punkt zu starten, an dem das Ereignis aufgetreten ist.  
+   2. Wählen Sie **Debugging starten** , um das Debuggen an dem Punkt zu starten, an dem das Ereignis aufgetreten ist.  
   
-     ![IntelliTrace-Protokolldatei &#45; Ansicht webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace-Protokolldatei &#45; Ansicht webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:  
+   Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:  
   
 -   **Benutzerprofilereignisse**  
   
@@ -204,28 +204,28 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Das Debuggen von einem Ausnahmefehler aus starten  
   
-1.  Wählen Sie eine SharePoint-Korrelations-ID für eine Ausnahme aus. Ausnahmen werden nach Typ und Aufrufliste gruppiert.  
+1. Wählen Sie eine SharePoint-Korrelations-ID für eine Ausnahme aus. Ausnahmen werden nach Typ und Aufrufliste gruppiert.  
   
-2.  (Optional) Erweitern Sie die **Aufrufliste** , um die Aufrufliste für eine Ausnahmengruppe anzuzeigen.  
+2. (Optional) Erweitern Sie die **Aufrufliste** , um die Aufrufliste für eine Ausnahmengruppe anzuzeigen.  
   
-3.  Wählen Sie **Ausnahme debuggen** aus, um das Debuggen an dem Punkt zu starten, an dem die Ausnahme aufgetreten ist.  
+3. Wählen Sie **Ausnahme debuggen** aus, um das Debuggen an dem Punkt zu starten, an dem die Ausnahme aufgetreten ist.  
   
-     ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
+   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Threadliste  
  Untersuchen Sie die aufgezeichneten Threads, die im Zielprozess ausgeführt wurden. Sie können das Debuggen vom ersten gültigen IntelliTrace-Ereignis in einem ausgewählten Thread starten.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>So starten Sie das Debuggen über einen bestimmten Thread  
   
-1.  Wählen Sie unter **Threadliste**einen Thread aus.  
+1. Wählen Sie unter **Threadliste**einen Thread aus.  
   
-2.  Wählen Sie am unteren Rand von **Threadliste**die Option **Debuggen starten**aus. Sie können auch auf einen Thread doppelklicken.  
+2. Wählen Sie am unteren Rand von **Threadliste**die Option **Debuggen starten**aus. Sie können auch auf einen Thread doppelklicken.  
   
-     Doppelklicken Sie auf **Hauptthread**, um das Debuggen vom Anfang der Anwendung aus zu starten. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
+    Doppelklicken Sie auf **Hauptthread**, um das Debuggen vom Anfang der Anwendung aus zu starten. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
- Von einem Benutzer erstellte Threaddaten sind möglicherweise nützlicher, als Threads, die von einem Server für IIS-gehostete Webanwendungen erstellt und verwaltet werden.  
+   Von einem Benutzer erstellte Threaddaten sind möglicherweise nützlicher, als Threads, die von einem Server für IIS-gehostete Webanwendungen erstellt und verwaltet werden.  
   
 |**Spalte**|**Enthält Folgendes**|  
 |----------------|-------------------|  

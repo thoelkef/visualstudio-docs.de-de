@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926201"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
-Die <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert, wie ein Objekt, eine Eigenschaft oder ein Feld in den Variablenfenstern des Debuggers angezeigt wird. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
+Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
   
  Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.  
   
@@ -36,7 +36,7 @@ Die <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert, wie ein Objekt, 
  In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.  
   
 |Attribut|Ausgabe in der Wertspalte angezeigt werden|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Angewendet auf einen Typ mit den Feldern `x` und `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Die Parametersyntax kann je nach Sprache unterschiedlich sein. Achten Sie deshalb besonders auf die Syntax.|`String value is [5, 6, 6]`|  
   
@@ -61,17 +61,17 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Verwenden von Ausdrücken in DebuggerDisplay  
  Obwohl ein allgemeiner Ausdruck zwischen den geschweiften Klammern in einem DebuggerDisplay-Attribut verwendet werden kann, wird diese Vorgehensweise nicht empfohlen.  
   
- Ein allgemeiner Ausdruck in DebuggerDisplay hat nur für die aktuelle Instanz des Zieltyps impliziten Zugriff auf den `this` -Zeiger. Der Ausdruck hat keinen Zugriff auf Aliase, lokale Variablen oder Zeiger. Wenn der Ausdruck auf Eigenschaften verweist, werden deren Attribute nicht verarbeitet. Z. B. der C#-Code `[DebuggerDisplay("Object {count - 2}")]` visualisierungselements `Object 6` Wenn das Feld `count` 8 wäre.  
+ Ein allgemeiner Ausdruck in DebuggerDisplay hat nur für die aktuelle Instanz des Zieltyps impliziten Zugriff auf den `this` -Zeiger. Der Ausdruck hat keinen Zugriff auf Aliase, lokale Variablen oder Zeiger. Wenn der Ausdruck auf Eigenschaften verweist, werden deren Attribute nicht verarbeitet. Beispielsweise würde der C#-Code `[DebuggerDisplay("Object {count - 2}")]`  den Wert `Object 6` anzeigen, wenn das Feld `count` 8 wäre.  
   
  Die Verwendung von Ausdrücken in DebuggerDisplay kann zu folgenden Problemen führen:  
   
--   Das Auswerten von Ausdrücken ist der aufwändigste Vorgang im Debugger. Außerdem wird ein Ausdruck bei jedem Anzeigen ausgewertet. Dies kann bei der schrittweisen Ausführung des Codes Leistungsprobleme verursachen. Beispielsweise kann ein komplexer Ausdruck, der zum Anzeigen der Werte in einer Auflistung verwendet wird, die Ausführung des Codes sehr verlangsamen, wenn viele Elemente vorhanden sind.  
+- Das Auswerten von Ausdrücken ist der aufwändigste Vorgang im Debugger. Außerdem wird ein Ausdruck bei jedem Anzeigen ausgewertet. Dies kann bei der schrittweisen Ausführung des Codes Leistungsprobleme verursachen. Beispielsweise kann ein komplexer Ausdruck, der zum Anzeigen der Werte in einer Auflistung verwendet wird, die Ausführung des Codes sehr verlangsamen, wenn viele Elemente vorhanden sind.  
   
--   Ausdrücke werden von der Ausdrucksauswertung in der Sprache des aktuellen Stapelrahmens und nicht von der Auswertung der Sprache ausgewertet, in der der Ausdruck geschrieben wurde. Dies kann unvorhersehbare Ergebnisse zur Folge haben, wenn die Sprachen unterschiedlich sind.  
+- Ausdrücke werden von der Ausdrucksauswertung in der Sprache des aktuellen Stapelrahmens und nicht von der Auswertung der Sprache ausgewertet, in der der Ausdruck geschrieben wurde. Dies kann unvorhersehbare Ergebnisse zur Folge haben, wenn die Sprachen unterschiedlich sind.  
   
--   Durch Auswerten eines Ausdrucks kann der Zustand der Anwendung geändert werden. Beispielsweise ändert ein Ausdruck, der den Wert einer Eigenschaft festlegt, den Eigenschaftswert im ausgeführten Code.  
+- Durch Auswerten eines Ausdrucks kann der Zustand der Anwendung geändert werden. Beispielsweise ändert ein Ausdruck, der den Wert einer Eigenschaft festlegt, den Eigenschaftswert im ausgeführten Code.  
   
- Eine Möglichkeit, eventuelle Probleme bei der Ausdrucksauswertung zu verringern, ist das Erstellen einer privaten Eigenschaft, die den Vorgang ausführt und eine Zeichenfolge zurückgibt. Das DebuggerDisplay-Attribut kann dann den Wert dieser privaten Eigenschaft anzeigen. Im folgenden Beispiel wird dieses Muster implementiert:  
+  Eine Möglichkeit, eventuelle Probleme bei der Ausdrucksauswertung zu verringern, ist das Erstellen einer privaten Eigenschaft, die den Vorgang ausführt und eine Zeichenfolge zurückgibt. Das DebuggerDisplay-Attribut kann dann den Wert dieser privaten Eigenschaft anzeigen. Im folgenden Beispiel wird dieses Muster implementiert:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

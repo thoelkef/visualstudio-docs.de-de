@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926682"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
@@ -26,30 +26,32 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>Um eine minimale WinForms-DSL erstellen
 
-1.  Erstellen Sie eine DSL aus der **minimaler WinForm-Designer** Vorlage.
+1. Erstellen Sie eine DSL aus der **minimaler WinForm-Designer** Vorlage.
 
-     In dieser exemplarischen Vorgehensweise werden die folgenden Namen angenommen:
+    In dieser exemplarischen Vorgehensweise werden die folgenden Namen angenommen:
 
-    |||
-    |-|-|
-    |Namen von Projektmappen und DSL|FarmApp|
-    |Namespace|Company.FarmApp|
 
-2.  Experimentieren Sie mit dem ersten Beispiel, das die Vorlage bereitstellt:
+   | | |
+   |-|-|
+   | Namen von Projektmappen und DSL | FarmApp |
+   | Namespace | Company.FarmApp |
 
-    1.  Transformieren Sie alle Vorlagen.
 
-    2.  Erstellen und Ausführen des Beispiels (**STRG + F5**).
+2. Experimentieren Sie mit dem ersten Beispiel, das die Vorlage bereitstellt:
 
-    3.  Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.
+   1.  Transformieren Sie alle Vorlagen.
 
-         Beachten Sie, dass er in einem Windows Forms-Steuerelement angezeigt wird.
+   2.  Erstellen und Ausführen des Beispiels (**STRG + F5**).
 
-         Sie sehen auch die Elemente des Modells im Explorer angezeigt.
+   3.  Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.
 
-         Fügen Sie einige Elemente in das Formular oder den Explorer, und beachten Sie, dass sie in der anderen Anzeige angezeigt werden.
+        Beachten Sie, dass er in einem Windows Forms-Steuerelement angezeigt wird.
 
- Beachten Sie in der Hauptinstanz von Visual Studio die folgenden Punkte bezüglich der DSL-Projektmappe aus:
+        Sie sehen auch die Elemente des Modells im Explorer angezeigt.
+
+        Fügen Sie einige Elemente in das Formular oder den Explorer, und beachten Sie, dass sie in der anderen Anzeige angezeigt werden.
+
+   Beachten Sie in der Hauptinstanz von Visual Studio die folgenden Punkte bezüglich der DSL-Projektmappe aus:
 
 -   `DslDefinition.dsl` enthält keine Diagrammelemente. Dies ist, da Sie DSL-Diagrammen nicht verwenden werden, um Modelle dieser DSL Instanz anzuzeigen. Stattdessen, binden Sie ein Windows-Formular für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.
 
@@ -132,30 +134,30 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-connect-your-model-to-a-form"></a>Um Ihr Modell zu einem Formular verbinden
 
-1.  In der **UI** Projekt, löschen Sie alle vorhandenen cs-Dateien.
+1. In der **UI** Projekt, löschen Sie alle vorhandenen cs-Dateien.
 
-2.  Fügen Sie einen neuen **Benutzersteuerelement** Datei mit dem Namen `FarmControl` auf die **UI** Projekt.
+2. Fügen Sie einen neuen **Benutzersteuerelement** Datei mit dem Namen `FarmControl` auf die **UI** Projekt.
 
-3.  In der **Datenquellen** Fenster im Dropdown-Menü auf **Farm**, wählen Sie **Details**.
+3. In der **Datenquellen** Fenster im Dropdown-Menü auf **Farm**, wählen Sie **Details**.
 
-     Übernehmen Sie die Standardeinstellungen für die anderen Eigenschaften aus.
+    Übernehmen Sie die Standardeinstellungen für die anderen Eigenschaften aus.
 
-4.  Öffnen Sie in der Entwurfsansicht FarmControl.cs.
+4. Öffnen Sie in der Entwurfsansicht FarmControl.cs.
 
-     Ziehen Sie **Farm** aus dem Fenster Datenquellen auf FarmControl.
+    Ziehen Sie **Farm** aus dem Fenster Datenquellen auf FarmControl.
 
-     Eine Gruppe von Steuerelementen angezeigt wird, eine für jede Eigenschaft. Die Beziehungseigenschaften generieren keine Steuerelemente.
+    Eine Gruppe von Steuerelementen angezeigt wird, eine für jede Eigenschaft. Die Beziehungseigenschaften generieren keine Steuerelemente.
 
-5.  Löschen Sie **FarmBindingNavigator**. Dies wird auch automatisch generiert, der `FarmControl` -Designer, aber es ist nicht für diese Anwendung nützlich.
+5. Löschen Sie **FarmBindingNavigator**. Dies wird auch automatisch generiert, der `FarmControl` -Designer, aber es ist nicht für diese Anwendung nützlich.
 
-6.  Verwenden der Toolbox, erstellen Sie zwei Instanzen von **DataGridView**, und nennen Sie diese `AnimalGridView` und `FieldGridView`.
+6. Verwenden der Toolbox, erstellen Sie zwei Instanzen von **DataGridView**, und nennen Sie diese `AnimalGridView` und `FieldGridView`.
 
-    > [!NOTE]
-    >  Ein alternativer Schritt werden die Tiere und Felder Elemente aus dem Fenster Datenquellen auf das Steuerelement ziehen. Dadurch wird automatisch erstellt, Datenraster und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für DSLs ordnungsgemäß. Aus diesem Grund ist es besser, erstellen Sie das Datenraster und Bindungen manuell.
+   > [!NOTE]
+   >  Ein alternativer Schritt werden die Tiere und Felder Elemente aus dem Fenster Datenquellen auf das Steuerelement ziehen. Dadurch wird automatisch erstellt, Datenraster und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für DSLs ordnungsgemäß. Aus diesem Grund ist es besser, erstellen Sie das Datenraster und Bindungen manuell.
 
-7.  Wenn keine die Toolbox enthält die **ModelingBindingSource** tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **Registerkarte ".NET Framework"**.
+7. Wenn keine die Toolbox enthält die **ModelingBindingSource** tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **Registerkarte ".NET Framework"**.
 
-8.  Verwenden der Toolbox, erstellen Sie zwei Instanzen von **ModelingBindingSource**, und nennen Sie diese `AnimalBinding` und `FieldBinding`.
+8. Verwenden der Toolbox, erstellen Sie zwei Instanzen von **ModelingBindingSource**, und nennen Sie diese `AnimalBinding` und `FieldBinding`.
 
 9. Legen Sie die **DataSource** Eigenschaft der einzelnen **ModelingBindingSource** zu **FarmBindingSource**.
 
@@ -165,15 +167,15 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 11. Das Layout des Steuerelements, das Ihren Geschmack Farm anpassen.
 
- Die **ModelingBindingSource** ist ein Adapter, die mehrere Funktionen ausführt, die spezifisch für DSLs sind:
+    Die **ModelingBindingSource** ist ein Adapter, die mehrere Funktionen ausführt, die spezifisch für DSLs sind:
 
--   Er umschließt die Updates in einer Transaktion der VMSDK-Store.
+- Er umschließt die Updates in einer Transaktion der VMSDK-Store.
 
-     Wenn der Benutzer das Datenraster für die Sicht eine Zeile gelöscht, würde beispielsweise eine reguläre Bindung eine transaktionsausnahme führen.
+   Wenn der Benutzer das Datenraster für die Sicht eine Zeile gelöscht, würde beispielsweise eine reguläre Bindung eine transaktionsausnahme führen.
 
--   Dadurch wird sichergestellt, dass, wenn der Benutzer eine Zeile auswählt, werden im Eigenschaftenfenster die Eigenschaften der entsprechenden Modellelement anstelle der Datenzeile für das Raster angezeigt.
+- Dadurch wird sichergestellt, dass, wenn der Benutzer eine Zeile auswählt, werden im Eigenschaftenfenster die Eigenschaften der entsprechenden Modellelement anstelle der Datenzeile für das Raster angezeigt.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) Schema von Links zwischen Datenquellen und Ansichten.
+  ![DslWpf4](../modeling/media/dslwpf4.png) Schema von Links zwischen Datenquellen und Ansichten.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Die Bindungen für die DSL abgeschlossen
 
@@ -247,62 +249,60 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-provide-add-buttons"></a>Bereitstellen von Schaltflächen
 
-1.  Verwenden Sie in der Entwurfsansicht des FarmControl.cs die Toolbox zum Erstellen einer Schaltfläche auf dem Formular ein.
+1. Verwenden Sie in der Entwurfsansicht des FarmControl.cs die Toolbox zum Erstellen einer Schaltfläche auf dem Formular ein.
 
-     Bearbeiten Sie den Namen und den Text der Schaltfläche, z. B. `New Sheep`.
+    Bearbeiten Sie den Namen und den Text der Schaltfläche, z. B. `New Sheep`.
 
-2.  Öffnen Sie den Code hinter der Schaltfläche (z. B. durch Doppelklick) ein.
+2. Öffnen Sie den Code hinter der Schaltfläche (z. B. durch Doppelklick) ein.
 
-     Bearbeiten Sie sie wie folgt:
+    Bearbeiten Sie sie wie folgt:
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    Sie müssen auch die folgende Anweisung einfügen:
 
-     Sie müssen auch die folgende Anweisung einfügen:
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Fügen Sie ähnlich wie Schaltflächen für Ziegen und Felder hinzu.
 
-    ```
+4. Erstellen Sie die Projektmappe, und führen Sie sie aus.
 
-3.  Fügen Sie ähnlich wie Schaltflächen für Ziegen und Felder hinzu.
+5. Stellen Sie sicher, dass die Schaltfläche "neue" auf ein Element hinzufügt. Das neue Element sollte in den FarmApp-Explorer und in der Rasteransicht der Daten angezeigt werden.
 
-4.  Erstellen Sie die Projektmappe, und führen Sie sie aus.
+    Sie sollten den Namen des Elements in der Rasteransicht der Daten bearbeiten können. Sie können es auch dort löschen.
 
-5.  Stellen Sie sicher, dass die Schaltfläche "neue" auf ein Element hinzufügt. Das neue Element sollte in den FarmApp-Explorer und in der Rasteransicht der Daten angezeigt werden.
-
-     Sie sollten den Namen des Elements in der Rasteransicht der Daten bearbeiten können. Sie können es auch dort löschen.
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Über den Code für ein Element hinzufügen
  Für das neue Element-Schaltflächen ist die folgende alternative Code etwas einfacher.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  Dieser Code ist jedoch kein Standardname für das neue Element festlegen. Er wird nicht ausgeführt, jeder benutzerdefinierten zusammenführen, die Sie möglicherweise im definiert haben die **Elementmerge-Anweisungen** der DSL, und es wird nicht ausgeführt, jeder benutzerdefinierten Merge-Code, der möglicherweise definiert wurden.

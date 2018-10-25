@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920364"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:  
   
--   Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.  
+- Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.  
   
--   Installieren Sie das [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] und den eigenständigen Profiler stehen auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] und vor der Installation der Profilerstellungstools neu starten.  
+- Installieren Sie das [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] und den eigenständigen Profiler stehen auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] und vor der Installation der Profilerstellungstools neu starten.  
   
- So installieren Sie die [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:  
+  So installieren Sie die [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:  
   
 1.  Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.  
   

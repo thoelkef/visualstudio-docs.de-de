@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926448"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine bereitstellungstechnologie, mit dem Sie selbst aktualisierende Windows-basierte Anwendungen erstellen, die installiert und mit minimalem Benutzereingriff ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung löst drei grundlegende Probleme:  
   
--   **Probleme beim Aktualisieren von Anwendungen.** Mit Microsoft Windows Installer-Bereitstellung Wenn eine Anwendung aktualisiert wird, der Benutzer kann Installieren eines Updates, die eine Msp-Datei, und klicken Sie auf das installierte Produkt anwenden; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, Sie können angeben, Updates automatisch. Nur die Teile der Anwendung, die geändert wurden, werden heruntergeladen, und klicken Sie dann die vollständige aktualisierte Anwendung neu installiert wird über einen neuen Ordner für die Seite-an-Seite.  
+- **Probleme beim Aktualisieren von Anwendungen.** Mit Microsoft Windows Installer-Bereitstellung Wenn eine Anwendung aktualisiert wird, der Benutzer kann Installieren eines Updates, die eine Msp-Datei, und klicken Sie auf das installierte Produkt anwenden; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, Sie können angeben, Updates automatisch. Nur die Teile der Anwendung, die geändert wurden, werden heruntergeladen, und klicken Sie dann die vollständige aktualisierte Anwendung neu installiert wird über einen neuen Ordner für die Seite-an-Seite.  
   
--   **Auswirkungen auf dem Computer des Benutzers.** Mit Windows Installer-Bereitstellung nutzen die Anwendungen häufig auf freigegebene Komponenten, mit einem möglichen Konflikte bei der versionsverwaltung; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, jede Anwendung ist in sich geschlossen und verursacht keine Konflikte mit anderen Anwendungen.  
+- **Auswirkungen auf dem Computer des Benutzers.** Mit Windows Installer-Bereitstellung nutzen die Anwendungen häufig auf freigegebene Komponenten, mit einem möglichen Konflikte bei der versionsverwaltung; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, jede Anwendung ist in sich geschlossen und verursacht keine Konflikte mit anderen Anwendungen.  
   
--   **Die Sicherheitsberechtigungen.** Windows Installer-Bereitstellung sind Administratorrechte erforderlich und kann nur Benutzer mit beschränkten Rechten installiert werden. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung können Benutzer ohne Administratorrechte installieren und nur die Codezugriffssicherheits-Berechtigungen erforderlich, dass die Anwendung gewährt.  
+- **Die Sicherheitsberechtigungen.** Windows Installer-Bereitstellung sind Administratorrechte erforderlich und kann nur Benutzer mit beschränkten Rechten installiert werden. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung können Benutzer ohne Administratorrechte installieren und nur die Codezugriffssicherheits-Berechtigungen erforderlich, dass die Anwendung gewährt.  
   
- In der Vergangenheit verursacht diese Probleme manchmal Entwickler zum Erstellen von Web-Anwendungen anstelle von Windows-basierte Anwendungen, Einbußen bei der eine umfangreiche Benutzeroberfläche für die einfache Installation entscheiden. Mithilfe von Anwendungen, die mit bereitgestellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], können Sie das beste aus beiden Technologien haben.  
+  In der Vergangenheit verursacht diese Probleme manchmal Entwickler zum Erstellen von Web-Anwendungen anstelle von Windows-basierte Anwendungen, Einbußen bei der eine umfangreiche Benutzeroberfläche für die einfache Installation entscheiden. Mithilfe von Anwendungen, die mit bereitgestellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], können Sie das beste aus beiden Technologien haben.  
   
 ## <a name="what-is-a-clickonce-application"></a>Was ist eine ClickOnce-Anwendung?  
  Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist eine beliebige Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), Konsolenanwendung (*.exe*), oder die Office-Projektmappe (*DLL*) mithilfe der veröffentlicht [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Technologie. Können Sie veröffentlichen eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf drei verschiedene Arten: von einer Webseite, aus einer Dateifreigabe im Netzwerk oder von Medien, wie eine CD-ROM. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf einem Computer des Endbenutzers installiert und lokal ausführen, auch wenn der Computer offline ist, oder sie kann nur online verfügbares ohne dass Dateien auf dem Computer des Endbenutzers ausgeführt werden kann. Weitere Informationen finden Sie unter [auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).  

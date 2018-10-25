@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925876"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241240"
   
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
   
--   `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
+- `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
   
--   `DefaultTargets`. Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
+- `DefaultTargets`. Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
   
--   `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
+- `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
   
--   `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).  
+- `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).  
   
- Ein Ziel wird während eines Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wurde, ist sein Beitrag zum Build abgeschlossen.  
+  Ein Ziel wird während eines Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wurde, ist sein Beitrag zum Build abgeschlossen.  
   
- Ziele verfügen möglicherweise über ein `Condition`-Attribut. Wenn die angegebene Bedingung `false` ergibt, wird das Ziel nicht ausgeführt und hat keine Auswirkung auf den Build. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).  
+  Ziele verfügen möglicherweise über ein `Condition`-Attribut. Wenn die angegebene Bedingung `false` ergibt, wird das Ziel nicht ausgeführt und hat keine Auswirkung auf den Build. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Ursprüngliche Ziele  
  Das `InitialTargets`-Attribut des [Projekt](../msbuild/project-element-msbuild.md)-Elements gibt Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind. Ursprüngliche Ziele werden in der Regel für die Überprüfung von Fehlern verwendet.  

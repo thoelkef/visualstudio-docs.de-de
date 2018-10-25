@@ -127,84 +127,84 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6c5147bdb1720c6da20dd93dd3bda81c2e6464
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924823"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
-Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Funktionsparameter – skalare und Zeigern auf Strukturen und Klassen – und die meisten Arten von Puffern.  Dieser Artikel zeigt auch die gängigsten Verwendungsmuster für Anmerkungen. Zusätzliche Anmerkungen, die mit Funktionen verknüpft sind, finden Sie unter [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)
+Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfache Funktionsparameter, skalare und Verweise auf Strukturen und Klassen, und die meisten Arten von Puffern.  Dieser Artikel zeigt außerdem gängige Verwendungsmuster für Anmerkungen. Zusätzliche Anmerkungen, die mit Funktionen verknüpft sind, finden Sie unter [Funktionsverhalten kommentieren](../code-quality/annotating-function-behavior.md)
 
 ## <a name="pointer-parameters"></a>Zeigerparameter
- Für die Anmerkungen in der folgenden Tabelle Wenn ein Zeigerparameter kommentiert wird ist, meldet der Analyzer einen Fehler, wenn der Zeiger null ist.  Dies gilt für Zeiger und für jedes Datenelement, auf das.
+ Für die Anmerkungen in der folgenden Tabelle wenn der Parameter ein Zeiger kommentiert wird ist, der Analyzer ein Fehler gemeldet, wenn der Zeiger null ist.  Dies gilt für Zeiger und an ein Datenelement, das auf die gezeigt wird.
 
  **Anmerkungen und Beschreibungen**
 
 -   `_In_`
 
-     Merkt Eingabeparameter, die skalare, Strukturen, Zeigern auf Strukturen und Like sind.  Explizit kann auf einfache skalare verwendet werden.  Der Parameter muss gültig sein, in dem Zustand vor und wird nicht geändert werden.
+     Kommentiert von Eingabeparametern, die skalare, Strukturen, Zeigern auf Strukturen usw. sind.  Explizit kann auf einfache skalare verwendet werden.  Der Parameter muss vor Status gültig sein und wird nicht geändert werden.
 
 -   `_Out_`
 
-     Merkt Output-Parameter, die skalare, Strukturen, Zeigern auf Strukturen und Like sind.  Wenden Sie dies nicht auf ein Objekt, das einen Wert zurückgeben kann – z. B. ein Skalarwert, der als Wert übergeben wird.  Der Parameter besitzt kein vor Status gültig ist, aber es muss gültig sein, nach der Status.
+     Kommentiert die Output-Parameter, die skalare, Strukturen, Zeigern auf Strukturen und ähnliches.  Wenden Sie dies nicht auf ein Objekt, das kann keinen Wert zurückgeben, z. B. ein Skalarwert, der als Wert übergeben wird.  Der Parameter keine erforderliche Status gültig ist, jedoch muss gültig sein, nach dem Status.
 
 -   `_Inout_`
 
-     Fügt einen Parameter, der von der Funktion geändert werden.  Er muss gültig sein, in dem Zustand vor und nach der Status wird allerdings wird davon ausgegangen, dass Sie verschiedene Werte vor und nach dem Aufruf besitzen. Muss für einen änderbaren Wert gelten.
+     Kommentiert die Parameter, der von der Funktion geändert werden.  Es muss gültig sein, vor Zustand und nach dem Zustand, aber es wird davon ausgegangen, dass unterschiedliche Werte aufweisen, vor und nach dem Aufruf. Muss ein änderbarer Wert zuweisen.
 
 -   `_In_z_`
 
-     Ein Zeiger auf eine auf Null endende Zeichenfolge, die als Eingabe verwendet wird.  Die Zeichenfolge muss vor Status gültig sein.  Varianten der `PSTR`, die bereits richtigen Anmerkungen aufweisen, als bevorzugt eingestuft.
+     Ein Zeiger auf eine auf Null endende Zeichenfolge, die als Eingabe verwendet wird.  Die Zeichenfolge muss vor Status gültig sein.  Varianten der `PSTR`, die bereits die richtigen Anmerkungen haben, als bevorzugt eingestuft.
 
 -   `_Inout_z_`
 
-     Ein Zeiger auf ein Zeichenarray mit Null endende, die geändert werden soll.  Es muss gültig sein, vor und nach dem Aufruf, jedoch wird angenommen, dass des Werts geändert haben.  Das null-Abschlusszeichen verschoben werden kann, aber nur die Elemente bis zu den ursprünglichen null-Terminator zugegriffen werden können.
+     Ein Zeiger auf ein Array von Null-terminierte Zeichen, die geändert wird.  Es muss gültig sein, vor und nach dem Aufruf, jedoch wird davon ausgegangen, dass des Werts geändert haben.  Der null-Terminator verschoben werden kann, aber nur die Elemente bis zu der ursprünglichen null-Terminator zugegriffen werden können.
 
 -   `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
-     Ein Zeiger auf ein Array, das von der Funktion gelesen wird.  Das Array der Größe ist `s` Elemente, von denen alle muss gültig sein.
+     Ein Zeiger auf ein Array, die von der Funktion gelesen wird.  Das Array hat eine Größe `s` Elemente, die alle muss gültig sein.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_In_reads_z_(s)`
 
-     Ein Zeiger auf ein Array, das Null-terminierte und verfügt über eine bekannte Größe. Die Elemente bis zu dem null-Abschlusszeichen – oder `s` Wenn kein null-Abschlusszeichen vorhanden ist, muss gültig sein, in dem Zustand vor.  Wenn die Größe in Byte bekannt ist, zu skalieren `s` von der Elementgröße.
+     Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Elemente bis zu dem null-Abschlusszeichen – oder `s` , wenn kein null-Abschlusszeichen vorhanden ist, muss vor Status gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
 -   `_In_reads_or_z_(s)`
 
-     Ein Zeiger auf ein Array, das Null-terminierte oder verfügt über eine bekannte Größe oder beides. Die Elemente bis zu dem null-Abschlusszeichen – oder `s` Wenn kein null-Abschlusszeichen vorhanden ist, muss gültig sein, in dem Zustand vor.  Wenn die Größe in Byte bekannt ist, zu skalieren `s` von der Elementgröße.  (Verwendet für die `strn` Familie.)
+     Ein Zeiger auf ein Array, das Null-terminiert oder verfügt über eine bekannte Größe oder beides. Elemente bis zu dem null-Abschlusszeichen – oder `s` , wenn kein null-Abschlusszeichen vorhanden ist, muss vor Status gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.  (Verwendet für die `strn` Familie.)
 
 -   `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Ein Zeiger auf ein Array von `s` Elemente (bzw. Bytes), die von der Funktion geschrieben werden.  Die Elemente des Arrays müssen nicht im Zustand vor gültig sein, und die Anzahl der Elemente, die nach der Status gültig sind, ist nicht angegeben.  Wenn für den Parametertyp Anmerkungen sind, werden sie nach der Status angewendet. Betrachten Sie hierzu den folgenden Beispielcode:
+     Ein Zeiger auf ein Array von `s` Elemente (bzw. Bytes), die von der Funktion geschrieben werden.  Die Elemente des Arrays müssen nicht vorab Status gültig sein, und die Anzahl der Elemente, die nach dem Status gültig sind, ist nicht angegeben.  Wenn Anmerkungen für den Parametertyp sind, werden sie nach dem Status angewendet. Betrachten Sie hierzu den folgenden Beispielcode:
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     In diesem Beispiel stellt der Aufrufer einen Puffer bereit, mit denen `size` Elemente für `p1`.  `MyStringCopy` stellt einige dieser Elemente ungültig. Vor allem die `_Null_terminated_` Anmerkung zum `PWSTR` bedeutet, dass `p1` nach der Status ist Null-terminiert.  Auf diese Weise die Anzahl von gültigen Elementen ist immer noch klar definierten, eine bestimmtes Elementanzahl ist jedoch nicht erforderlich.
+     In diesem Beispiel stellt der Aufrufer einen Puffer von `size` Elemente für `p1`.  `MyStringCopy` lassen sich einige dieser Elemente gültig. Noch wichtiger ist, dass die `_Null_terminated_` Anmerkung zu `PWSTR` bedeutet, dass `p1` nach der Status wird auf Null endet.  Klicken Sie auf diese Weise können die Anzahl von gültigen Elementen ist dennoch klar definierte, aber eine bestimmtes Element-Anzahl ist nicht erforderlich.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_Out_writes_z_(s)`
 
-     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht im Zustand vor gültig sein.  Nach der Status, die Elemente sich über den null-Terminator – vorhanden sein muss, muss gültig sein.  Wenn die Größe in Byte bekannt ist, zu skalieren `s` von der Elementgröße.
+     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht vorab Status gültig sein.  Nach der Status, die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
 -   `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Ein Zeiger auf ein Array, das sowohl gelesen und in der Funktion geschrieben.  Ist Größe `s` Elemente, in vor und nach der Zustand und gültig.
+     Ein Zeiger auf ein Array, das sowohl lesen als auch in der Funktion geschrieben.  Es ist Größe `s` Elemente, und in vor und nach der gültig.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_Inout_updates_z_(s)`
 
-     Ein Zeiger auf ein Array, das Null-terminierte und verfügt über eine bekannte Größe. Die Elemente von über den null-Terminator – vorhanden sein muss, muss gültig sein, in dem Zustand vor und nach der Status.  Der Wert in der nach der Status wird davon ausgegangen, dass ungleich dem Wert im Status "vor" sein; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, zu skalieren `s` von der Elementgröße.
+     Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss vor Zustand und nach dem Zustand gültig sein.  Der Wert in der nach der Status wird davon ausgegangen, dass sich von den Wert im Zustand "vor"; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
 -   `_Out_writes_to_(s,c)`
 
@@ -214,11 +214,11 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Out_writes_bytes_all_(s)`
 
-     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht im Zustand vor gültig sein.  Nach der Status, die Elemente bis zu der `c`- th-Element muss gültig sein.  Skalieren Sie die Größe in Byte bekannt, `s` und `c` vom Elementgröße oder Verwenden der `_bytes_` Variant-Wert, der als definiert ist:
+     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht vorab Status gültig sein.  Nach der Status, die Elemente bis zu der `c`- th-Element muss gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` und `c` durch die Elementgröße oder die Verwendung der `_bytes_` Variante, die folgendermaßen definiert ist:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     In anderen Worten, jedes Element, das in den Puffer vorhanden, bis zu `s` im Status "vor" gilt im Status "POST".  Zum Beispiel:
+     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Zum Beispiel:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -226,13 +226,13 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Ein Zeiger auf ein Array, das sowohl gelesen und werden, von der Funktion geschrieben.  Ist Größe `s` Elemente, die geklont werden gültige vor, und `c` Elemente müssen nach der Status gültig sein.
+     Ein Zeiger auf ein Array, das sowohl gelesen und werden, von der Funktion geschrieben.  Es ist Größe `s` alle gültig in vor-Zustand sein muss, Elemente und `c` Elemente müssen gültig sein, nach dem Status.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_Inout_updates_z_(s)`
 
-     Ein Zeiger auf ein Array, das Null-terminierte und verfügt über eine bekannte Größe. Die Elemente von über den null-Terminator – vorhanden sein muss, muss gültig sein, in dem Zustand vor und nach der Status.  Der Wert in der nach der Status wird davon ausgegangen, dass ungleich dem Wert im Status "vor" sein; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, zu skalieren `s` von der Elementgröße.
+     Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss vor Zustand und nach dem Zustand gültig sein.  Der Wert in der nach der Status wird davon ausgegangen, dass sich von den Wert im Zustand "vor"; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
 -   `_Out_writes_to_(s,c)`
 
@@ -242,11 +242,11 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Out_writes_bytes_all_(s)`
 
-     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht im Zustand vor gültig sein.  Nach der Status, die Elemente bis zu der `c`- th-Element muss gültig sein.  Skalieren Sie die Größe in Byte bekannt, `s` und `c` vom Elementgröße oder Verwenden der `_bytes_` Variant-Wert, der als definiert ist:
+     Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht vorab Status gültig sein.  Nach der Status, die Elemente bis zu der `c`- th-Element muss gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` und `c` durch die Elementgröße oder die Verwendung der `_bytes_` Variante, die folgendermaßen definiert ist:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     In anderen Worten, jedes Element, das in den Puffer vorhanden, bis zu `s` im Status "vor" gilt im Status "POST".  Zum Beispiel:
+     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Zum Beispiel:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -254,9 +254,9 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Ein Zeiger auf ein Array, das sowohl gelesen und werden, von der Funktion geschrieben.  Ist Größe `s` Elemente, die geklont werden gültige vor, und `c` Elemente müssen nach der Status gültig sein.
+     Ein Zeiger auf ein Array, das sowohl gelesen und werden, von der Funktion geschrieben.  Es ist Größe `s` alle gültig in vor-Zustand sein muss, Elemente und `c` Elemente müssen gültig sein, nach dem Status.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_Inout_updates_all_(s)`
 
@@ -266,188 +266,188 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
-     In anderen Worten, jedes Element, das in den Puffer vorhanden, bis zu `s` im Status "vor" ist ungültig in den Zustand vor und nach der Zustand.
+     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand der vor und nach dem Status.
 
-     Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
+     Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
 -   `_In_reads_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird durch die entsprechende Sprache standard definiert.  Die Elemente vor `p` muss gültig sein, in dem Zustand vor.
+     Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` muss vor Status gültig sein.
 
 -   `_In_reads_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird durch die entsprechende Sprache standard definiert.  Die Elemente vor `p` muss gültig sein, in dem Zustand vor.
+     Ein Zeiger auf eine mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` muss vor Status gültig sein.
 
 -   `_Out_writes_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird durch die entsprechende Sprache standard definiert.  Die Elemente vor `p` müssen nicht im Zustand vor gültig sein und muss nach der Status gültig sein.
+     Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` müssen nicht vorab Status gültig sein und muss gültig sein, nach dem Status.
 
 -   `_Out_writes_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird durch die entsprechende Sprache standard definiert.  Die Elemente vor `p` müssen nicht im Zustand vor gültig sein und muss nach der Status gültig sein.
+     Ein Zeiger auf eine mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` müssen nicht vorab Status gültig sein und muss gültig sein, nach dem Status.
 
 ## <a name="optional-pointer-parameters"></a>Optionale Zeigerparameter
- Wenn ein Zeiger parameteranmerkung enthält `_opt_`, bedeutet dies, dass der Parameter null sein kann. Andernfalls die Anmerkung führt identisch mit der Version, die keine `_opt_`. Im folgenden wird eine Liste der `_opt_` Varianten der Zeiger Parameter Anmerkungen:
+ Wenn ein Zeiger parameteranmerkung enthält `_opt_`, bedeutet dies, dass der Parameter null sein kann. Andernfalls die Anmerkung führt die identisch mit der Version, die keine `_opt_`. Hier ist eine Liste mit den `_opt_` Varianten der Zeiger Parameter Anmerkungen:
 
 ||||
 |-|-|-|
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|
 
 ## <a name="output-pointer-parameters"></a>Ausgabezeigerparameter
- Ausgabe Zeigerparametern erfordern besondere Schreibweise um Null-Funktion auf den Parameter und den Speicherort verweist, zu unterscheiden.
+ Ausgabeparameter für die Zeiger erfordern besondere Schreibweise für Null-Funktion für den Parameter und den Speicherort auf eindeutig zu machen.
 
  **Anmerkungen und Beschreibungen**
 
--   `_Outptr_`
+- `_Outptr_`
 
-     Parameter darf nicht null sein und im Status "POST" der Speicherort verweist, darf nicht null sein und muss gültig sein.
+   Parameter darf nicht null sein, und klicken Sie im Zustand "POST" der Speicherort verweist, darf nicht null sein, und muss gültig sein.
 
--   `_Outptr_opt_`
+- `_Outptr_opt_`
 
-     Parameter kann null sein, aber im Status "POST" der Speicherort verweist, darf nicht null sein und muss gültig sein.
+   Parameter kann null sein, aber im Zustand "POST" der Speicherort verweist, darf nicht null sein und muss gültig sein.
 
--   `_Outptr_result_maybenull_`
+- `_Outptr_result_maybenull_`
 
-     Parameter darf nicht null sein, und im Status "POST" der Speicherort auf null sein kann.
+   Parameter darf nicht null sein, und im Zustand "nach" kann der Speicherort auf null sein.
 
--   `_Outptr_opt_result_maybenull_`
+- `_Outptr_opt_result_maybenull_`
 
-     Parameter kann null sein, und im Status "POST" der Speicherort auf null sein kann.
+   Parameter kann null sein, und im Zustand "nach" kann der Speicherort auf null sein.
 
- In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname genauer die Bedeutung der Anmerkung eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.
+  In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname, der die Bedeutung der Anmerkung genauer bestimmen eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.
 
 > [!IMPORTANT]
->  Ist die Schnittstelle, die betreffenden COM, verwenden Sie das COM-Format dieser Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.
+>  Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.
 
  **Anmerkungen und Beschreibungen**
 
--   `_Outptr_result_z_`
+- `_Outptr_result_z_`
 
-     `_Outptr_opt_result_z_`
+   `_Outptr_opt_result_z_`
 
-     `_Outptr_result_maybenull_z_`
+   `_Outptr_result_maybenull_z_`
 
-     `_Ouptr_opt_result_maybenull_z_`
+   `_Ouptr_opt_result_maybenull_z_`
 
-     Der zurückgegebene Zeiger hat die `_Null_terminated_` Anmerkung.
+   Der zurückgegebene Zeiger wurde die `_Null_terminated_` Anmerkung.
 
--   `_COM_Outptr_`
+- `_COM_Outptr_`
 
-     `_COM_Outptr_opt_`
+   `_COM_Outptr_opt_`
 
-     `_COM_Outptr_result_maybenull_`
+   `_COM_Outptr_result_maybenull_`
 
-     `_COM_Outptr_opt_result_maybenull_`
+   `_COM_Outptr_opt_result_maybenull_`
 
-     Der zurückgegebene Zeiger verfügt über COM-Semantik, und Sie aus diesem Grund enthält ein `_On_failure_` nach der Bedingung, dass der zurückgegebene Zeiger null ist.
+   Der zurückgegebene Zeiger verfügt über eine COM-Semantik, und Sie aus diesem Grund enthält ein `_On_failure_` nach der Bedingung, dass der zurückgegebene Zeiger null ist.
 
--   `_Outptr_result_buffer_(s)`
+- `_Outptr_result_buffer_(s)`
 
-     `_Outptr_result_bytebuffer_(s)`
+   `_Outptr_result_bytebuffer_(s)`
 
-     `_Outptr_opt_result_buffer_(s)`
+   `_Outptr_opt_result_buffer_(s)`
 
-     `_Outptr_opt_result_bytebuffer_(s)`
+   `_Outptr_opt_result_bytebuffer_(s)`
 
-     Der zurückgegebene Zeiger verweist auf eine gültige Puffer mit einer Größe `s` Elemente oder Bytes.
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer der Größe `s` Elemente oder Bytes.
 
--   `_Outptr_result_buffer_to_(s, c)`
+- `_Outptr_result_buffer_to_(s, c)`
 
-     `_Outptr_result_bytebuffer_to_(s, c)`
+   `_Outptr_result_bytebuffer_to_(s, c)`
 
-     `_Outptr_opt_result_buffer_to_(s,c)`
+   `_Outptr_opt_result_buffer_to_(s,c)`
 
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`
 
-     Der zurückgegebene Zeiger verweist auf einen Puffer mit einer Größe `s` Elemente oder Bytes, von denen das erste `c` gültig sind.
+   Der zurückgegebene Zeiger verweist auf einen Puffer der Größe `s` Elemente oder Bytes, von denen die erste `c` gültig sind.
 
- Bestimmte Konventionen in Schnittstelle annehmen, dass die Output-Parameter bei einem Fehler nullified sind.  Mit Ausnahme von explizit COM-Code werden die Formen in der folgenden Tabelle bevorzugt.  Verwenden Sie die entsprechenden COM-Formen, die aufgeführt sind für COM-Code im vorherigen Abschnitt.
+  Bestimmte Konventionen für die Schnittstelle wird davon ausgegangen, dass die Output-Parameter bei einem Fehler sitzungstokenwert sind.  Mit Ausnahme der explizit COM-Code werden die Formulare in der folgenden Tabelle bevorzugt.  Verwenden Sie für COM-Code die entsprechenden COM-Formate, die aufgeführt sind, im vorherigen Abschnitt.
 
- **Anmerkungen und Beschreibungen**
+  **Anmerkungen und Beschreibungen**
 
--   `_Result_nullonfailure_`
+- `_Result_nullonfailure_`
 
-     Ändert die andere Anmerkungen. Das Resultset ist null, wenn die Funktion fehlerhaft ist.
+   Ändert die andere Anmerkungen. Das Resultset ist null, wenn die Funktion fehlerhaft ist.
 
--   `_Result_zeroonfailure_`
+- `_Result_zeroonfailure_`
 
-     Ändert die andere Anmerkungen. Das Ergebnis wird auf 0 (null) festgelegt, wenn die Funktion fehlschlägt.
+   Ändert die andere Anmerkungen. Das Ergebnis wird auf 0 (null) festgelegt, wenn die Funktion fehlschlägt.
 
--   `_Outptr_result_nullonfailure_`
+- `_Outptr_result_nullonfailure_`
 
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ausgeführt wird, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für ein nicht Optionaler Parameter.
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen nicht optionale Parameter.
 
--   `_Outptr_opt_result_nullonfailure_`
+- `_Outptr_opt_result_nullonfailure_`
 
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ausgeführt wird, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen optionalen Parameter.
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen optionalen Parameter.
 
--   `_Outref_result_nullonfailure_`
+- `_Outref_result_nullonfailure_`
 
-     Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ausgeführt wird, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen Verweisparameter.
+   Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen Verweisparameter.
 
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter
- Eine übliche Verwendung des Verweisparameters ist für Output-Parameter.  Für einfache ausgabeverweisparameter – z. B. `int&`–`_Out_` stellt die korrekte Semantik.  Wenn der Ausgabewert ist jedoch ein Zeiger – z. B. `int *&`– wie die entsprechende Zeiger Anmerkungen `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Um die Semantik der ausgabeverweisparameter für Zeigertypen deutlicher auszudrücken, verwenden Sie diese zusammengesetzten Anmerkungen:
+ Eine häufige Verwendung des Verweisparameters ist für Output-Parameter.  Für einfache ausgabeverweisparametern – z. B. `int&`–`_Out_` liefert die Semantik richtig.  Wenn der Ausgabewert ist jedoch ein Zeiger, z. B. `int *&`– wie die entsprechende Zeiger Anmerkungen `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Die Semantik der ausgabeverweisparametern für Zeigertypen präzise ausgedrückt werden, verwenden Sie diese zusammengesetzten Anmerkungen:
 
  **Anmerkungen und Beschreibungen**
 
 -   `_Outref_`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein.
 
 -   `_Outref_result_maybenull_`
 
-     Ergebnis muss nach der Status gültig sein, aber nach der Status möglicherweise null.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status.
 
 -   `_Outref_result_buffer_(s)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf gültige Puffer mit einer Größe `s` Elemente.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` Elemente.
 
 -   `_Outref_result_bytebuffer_(s)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf gültige Puffer mit einer Größe `s` Bytes.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` Bytes.
 
 -   `_Outref_result_buffer_to_(s, c)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf Puffer `s` Elemente, von denen das erste `c` gültig sind.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Verweist auf den Puffer mit `s` Elemente, von denen die erste `c` gültig sind.
 
 -   `_Outref_result_bytebuffer_to_(s, c)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf Puffer `s` Bytes, von denen das erste `c` gültig sind.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Verweist auf den Puffer mit `s` Bytes, von denen die erste `c` gültig sind.
 
 -   `_Outref_result_buffer_all_(s)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf gültige Puffer mit einer Größe `s` gültigen Elementen.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` gültigen Elementen.
 
 -   `_Outref_result_bytebuffer_all_(s)`
 
-     Ergebnis nach der Status gültig sein und darf nicht null sein. Verweist auf gültige Puffer `s` Bytes von gültigen Elementen.
+     Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer von `s` Bytes von gültigen Elementen.
 
 -   `_Outref_result_buffer_maybenull_(s)`
 
-     Ergebnis muss nach der Status gültig sein, aber nach der Status möglicherweise null. Verweist auf gültige Puffer mit einer Größe `s` Elemente.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Zeigt auf gültigen Puffer der Größe `s` Elemente.
 
 -   `_Outref_result_bytebuffer_maybenull_(s)`
 
-     Ergebnis muss nach der Status gültig sein, aber nach der Status möglicherweise null. Verweist auf gültige Puffer mit einer Größe `s` Bytes.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Zeigt auf gültigen Puffer der Größe `s` Bytes.
 
 -   `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     Ergebnis muss nach der Status gültig sein, aber nach der Status möglicherweise null. Verweist auf Puffer `s` Elemente, von denen das erste `c` gültig sind.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Verweist auf den Puffer mit `s` Elemente, von denen die erste `c` gültig sind.
 
 -   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Verweist auf Puffer `s` Bytes, von denen das erste `c` gültig sind.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Verweist auf den Puffer mit `s` Bytes, von denen die erste `c` gültig sind.
 
 -   `_Outref_result_buffer_all_maybenull_(s)`
 
-     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Verweist auf gültige Puffer mit einer Größe `s` gültigen Elementen.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Zeigt auf gültigen Puffer der Größe `s` gültigen Elementen.
 
 -   `_Outref_result_bytebuffer_all_maybenull_(s)`
 
-     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Verweist auf gültige Puffer `s` Bytes von gültigen Elementen.
+     Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Zeigt auf gültigen Puffer von `s` Bytes von gültigen Elementen.
 
 ## <a name="return-values"></a>Rückgabewerte
- Der Rückgabewert einer Funktion ähnelt einer `_Out_` Parameter ist jedoch auf einer anderen De-reference, und Sie müssen das Konzept des Zeigers auf das Ergebnis zu berücksichtigen.  Für die folgenden Anmerkungen der Rückgabewert ist das Objekt mit Anmerkungen – ein Skalarwert, ein Zeiger auf eine Struktur oder ein Zeiger auf einen Puffer. Diese Anmerkungen weisen die gleiche Semantik wie die entsprechende `_Out_` Anmerkung.
+ Der Rückgabewert einer Funktion ähnelt einer `_Out_` Parameter ist jedoch auf einer anderen Ebene der De-reference, und Sie müssen das Konzept des Zeigers auf das Ergebnis zu berücksichtigen.  Für die folgenden Anmerkungen, ist der Rückgabewert das mit Anmerkungen versehene Objekt – ein Skalarwert, ein Zeiger auf eine Struktur oder ein Zeiger auf einen Puffer. Diese Anmerkungen haben die gleiche Semantik wie die entsprechende `_Out_` Anmerkung.
 
 |||
 |-|-|
@@ -470,24 +470,24 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
 
      `_Field_range_(low, hi)`
 
-     Die Parameter, ein Feld oder Ergebnis wird im Bereich (inklusiv) von `low` auf `hi`.  Entspricht `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` , für das Objekt mit Anmerkungen, zusammen mit den entsprechenden vorab Status "bzw." nach dem Status Bedingungen angewendet wird.
+     Der Parameter, ein Feld oder Ergebnis wird im Bereich (inklusiv) von `low` zu `hi`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` , die auf das mit Anmerkungen versehene Objekt zusammen mit den entsprechenden vorab Zustand, oder nach dem Status Bedingungen angewendet wird.
 
     > [!IMPORTANT]
-    >  Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten für diese Anmerkungen.
+    >  Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten diese Anmerkungen.
 
 -   `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     Der kommentierte Wert ist genau `expr`.  Entspricht `_Satisfies_(_Curr_ == expr)` , für das Objekt mit Anmerkungen, zusammen mit den entsprechenden vorab Status "bzw." nach dem Status Bedingungen angewendet wird.
+     Der mit Anmerkungen versehenen Wert `expr`.  Äquivalent zu `_Satisfies_(_Curr_ == expr)` , die auf das mit Anmerkungen versehene Objekt zusammen mit den entsprechenden vorab Zustand, oder nach dem Status Bedingungen angewendet wird.
 
 -   `_Struct_size_bytes_(size)`
 
-     Gilt für eine Deklaration Struct "oder"-Klasse.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ mit der Anzahl von Bytes wird, indem `size`.  Zum Beispiel:
+     Gilt für die Deklaration einer Struktur oder Klasse.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ, mit der Anzahl von Bytes wird, indem `size`.  Zum Beispiel:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     Die Puffergröße in Bytes eines Parameters `pM` des Typs `MyStruct *` wird dann ausgeführt werden:
+     Die Puffergröße in Bytes für einen Parameter `pM` des Typs `MyStruct *` wird, werden ausgeführt:
 
      `min(pM->nSize, sizeof(MyStruct))`
 
@@ -495,4 +495,4 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
  [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Siehe auch
- [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [Grundlegendes zu SAL](../code-quality/understanding-sal.md) [Funktionsverhalten](../code-quality/annotating-function-behavior.md) [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md) [ Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md) [angeben, wann und wo eine Anmerkung gültig](../code-quality/specifying-when-and-where-an-annotation-applies.md) [systeminterne Funktionen](../code-quality/intrinsic-functions.md) [empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
+ [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [verstehen von SAL](../code-quality/understanding-sal.md) [Funktionsverhalten](../code-quality/annotating-function-behavior.md) [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md) [ Hinzufügen von Kommentaren Sperrverhalten](../code-quality/annotating-locking-behavior.md) [angeben, wann und wo eine Anmerkung gültig](../code-quality/specifying-when-and-where-an-annotation-applies.md) [systeminterne Funktionen](../code-quality/intrinsic-functions.md) [empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)

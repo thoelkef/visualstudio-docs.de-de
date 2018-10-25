@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924888"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 ## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Lösung einer domänenspezifischen Sprache  
  In diesem Verfahren erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:  
   
--   Name: DebuggingTestLanguage  
+- Name: DebuggingTestLanguage  
   
--   Lösungsvorlage: minimale Sprache  
+- Lösungsvorlage: minimale Sprache  
   
--   Dateierweiterung: .ddd  
+- Dateierweiterung: .ddd  
   
--   Firmenname: Fabrikam  
+- Firmenname: Fabrikam  
   
- Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Erstellen einer Textvorlage  
  Fügen Sie eine Textvorlage, um Ihre Lösung.  

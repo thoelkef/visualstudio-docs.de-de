@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927345"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mit IntelliTrace
 
@@ -46,9 +46,9 @@ Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmli
 
 - [Debuggen Sie und korrigieren Sie die SharePoint-Lösung](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -265,15 +265,15 @@ Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler au
 
 3. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
-    1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
+   1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
 
-    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
+   2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
 
-    3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
+   3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
 
-    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
+   4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
-     Vom Ereignishandler „FeatureDeactivating()“ wird ein Fehler ausgelöst.
+      Vom Ereignishandler „FeatureDeactivating()“ wird ein Fehler ausgelöst.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgefüh
 
 2. Deaktivieren Sie die Funktion:
 
-    1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
+   1. Auf der **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**.
 
-    2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
+   2. Klicken Sie unter **Websiteaktionen**, wählen Sie die **Websitefeatures verwalten** Link.
 
-    3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
+   3. Neben **IntelliTraceTest Feature1**, wählen Sie die **deaktivieren** Schaltfläche.
 
-    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
+   4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
-     Ein Fehler tritt auf (in diesem Fall aufgrund des Fehlers im Ereignishandler „FeatureDeactivating()“).
+      Ein Fehler tritt auf (in diesem Fall aufgrund des Fehlers im Ereignishandler „FeatureDeactivating()“).
 
 3. Führen Sie im PowerShell-Fenster, das [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, Überwachung zu beenden und starten Sie die SharePoint-Lösung neu.
 

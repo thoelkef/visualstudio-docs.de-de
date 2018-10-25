@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924004"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
   
  Die Daten in einem Zeilentyp geben die Gesamtanzahl der Objekte des Typs an, die bei der Profilerstellung erstellt wurden, und der dem Objekt für diesen Typ zugeordneten Bytes. Inklusive und exklusive Werte für einen Typ sind immer gleich.  
   
--   Inklusive Werte gelten für Objekte, die in den Instanzen der Funktion erstellt wurden, und für deren untergeordnete Funktionen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden.  
+- Inklusive Werte gelten für Objekte, die in den Instanzen der Funktion erstellt wurden, und für deren untergeordnete Funktionen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden.  
   
--   Exklusive Werte gelten für Objekte, die von der Funktion direkt erstellt wurden, als sie von der übergeordneten Funktion aufgerufen wurden. Objekte, die in untergeordneten Funktionen erstellt werden, werden nicht berücksichtigt.  
+- Exklusive Werte gelten für Objekte, die von der Funktion direkt erstellt wurden, als sie von der übergeordneten Funktion aufgerufen wurden. Objekte, die in untergeordneten Funktionen erstellt werden, werden nicht berücksichtigt.  
   
- In den Daten einer Funktion wird die Anzahl der erstellten Objekte sowie der dem Objekt des übergeordneten Typs zugeordneten Bytes angezeigt.  
+  In den Daten einer Funktion wird die Anzahl der erstellten Objekte sowie der dem Objekt des übergeordneten Typs zugeordneten Bytes angezeigt.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Sie können den Ausführungspfad der Aufrufliste ermitteln, der die meisten Objekte des übergeordneten Typs erstellt hat.  

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft Docs
+title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7f686ccaa5a3195b82458cf3ee11f02be104f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 08abf4443932b81fd13601dd43a2111626b09382
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923510"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
-Überspringt die angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in eine Enumerationsfolge.  
+Überspringt eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der `ExtendedDebugPropertyInfo` Strukturen in der Enumeration Sequenz zu überspringen.  
+ [in] Die Anzahl der `ExtendedDebugPropertyInfo` Strukturen in der Enumerationsfolge übersprungen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt eine gültige `HRESULT`, in der Regel `S_OK`. Gibt `S_FALSE` und legt den aktuellen Elementzeiger bis zum Ende der Enumeration fest, wenn `celt` ist größer als die Anzahl von Elementen nach links im Enumerator.  
+ Gibt einen gültigen `HRESULT`, in der Regel `S_OK`. Gibt `S_FALSE` und Elementzeiger für den aktuellen am Ende der Enumeration festgelegt wird, wenn `celt` ist größer als die Anzahl der Elemente nach links im Enumerator.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugExtendedPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   

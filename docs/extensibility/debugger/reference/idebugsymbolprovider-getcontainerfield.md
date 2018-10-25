@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
+title: IDebugSymbolProvider::GetContainerField | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41709f658da15001b6f604b78bf081edefd88b8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac7acc5d12ecce72119f19a51b1f4313a1aabe08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926402"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
-Diese Methode ruft das Feld, das die Debug-Adresse enthält.  
+Diese Methode ruft das Feld, das die debugadresse enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,13 +43,13 @@ int GetContainerField(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Die Adresse, dargestellt durch eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ [in] Die Adresse, dargestellt durch ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
  `ppContainerField`  
- [out] Gibt ein Container-Feld, dargestellt durch eine [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.  
+ [out] Gibt ein Container-Feld, das dargestellt durch ein [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

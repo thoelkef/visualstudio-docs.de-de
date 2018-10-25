@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
+title: IDiaSession::findInlineeLinesByAddr | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 139bc3c9291650b5e3e991324dbf8c560078c2de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dbbf31de5c3a20ecf21a8e293657d4ed3a7eff1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925798"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Ruft eine Enumeration, die ermöglicht einem Client zu durchlaufen und die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt mit dem angegebenen übergeordneten-Symbol, und innerhalb der angegebenen Adressbereich enthalten sind.  
+Ruft eine Enumeration, die ermöglicht es einem Client zu durchlaufen und die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt durch das angegebene übergeordnete-Symbol und befinden sich innerhalb des Bereichs der angegebenen Adresse an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,16 +39,16 @@ HRESULT findInlineeLinesByAddr (
  [in] Gibt die Komponente im Abschnitt der Adresse.  
   
  `offset`  
- [in] Gibt den Offset-Komponente der Adresse an.  
+ [in] Gibt die Offset-Komponente der Adresse.  
   
  `length`  
- [in] Gibt an, der Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.  
+ [in] Gibt den Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.  
   
  `ppResult`  
- [out] Enthält eine `IDiaEnumLineNumbers` -Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.  
+ [out] Enthält eine `IDiaEnumLineNumbers` Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
