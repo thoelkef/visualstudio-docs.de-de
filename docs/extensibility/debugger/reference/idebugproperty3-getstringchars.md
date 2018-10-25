@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: IDebugProperty3::GetStringChars | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932929"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Ruft die Zeichenfolge, die diese Eigenschaft zugeordnet, und speichert ihn in einem vom Benutzer bereitgestellte Puffer.  
+Ruft die Zeichenfolge, die dieser Eigenschaft zugeordnet, und speichert ihn in einem vom Benutzer bereitgestellten Puffer.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ int GetStringChars(
   
 #### <a name="parameters"></a>Parameter  
  `buflen`  
- [in] Maximale Anzahl von Zeichen, die der Benutzer bereitgestellte Puffer aufnehmen kann.  
+ [in] Maximale Anzahl von Zeichen kann es sich um der Benutzer bereitgestellten Puffer enthalten.  
   
  `rgString`  
  [out] Gibt die Zeichenfolge zurück.  
@@ -53,16 +53,16 @@ int GetStringChars(
  [Nur für C++], `rgString` ist ein Zeiger auf einen Puffer, die Unicode-Zeichen der Zeichenfolge empfängt. Dieser Puffer muss mindestens `buflen` (nicht Bytes) Zeichen lang sein.  
   
  `pceltFetched`  
- [out] Die Anzahl der Zeichen, die tatsächlich im Puffer gespeichert, in denen zurückgegeben wird. (Kann `NULL` in C++.)  
+ [out] Die Anzahl der Zeichen, die tatsächlich im Puffer gespeichert, in dem zurückgegeben wird. (Kann `NULL` in C++.)  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
   
 ## <a name="remarks"></a>Hinweise  
- In C++ muss darauf geachtet werden, stellen Sie sicher, dass der Puffer mindestens `buflen` Unicode-Zeichen lang sein. Beachten Sie, dass ein Unicode-Zeichen mit 2 Bytes lang ist.  
+ In C++ müssen geachtet werden, stellen Sie sicher, dass der Puffer mindestens `buflen` Unicode-Zeichen lang sein. Beachten Sie, dass ein Unicode-Zeichen mit 2 Bytes lang ist.  
   
 > [!NOTE]
->  In C++ ist die zurückgegebene Zeichenfolge kein abschließendes Nullzeichen enthalten. Wenn angegeben, `pceltFetched` wird die Anzahl der Zeichen in der Zeichenfolge angeben.  
+>  In C++ enthält die zurückgegebene Zeichenfolge kein abschließendes Nullzeichen. Wenn angegeben, `pceltFetched` geben die Anzahl der Zeichen in der Zeichenfolge.  
   
 ## <a name="example"></a>Beispiel  
  

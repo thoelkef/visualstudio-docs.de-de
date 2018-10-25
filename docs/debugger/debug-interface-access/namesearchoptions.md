@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Microsoft Docs
+title: NameSearchOptions | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95d5ed2e91b847b99d063b6fcba485fb96c3290
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c4b8771ad1bf2ee97ec1f22636a4684bc9aa7ee8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950341"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Gibt die Suchoptionen für Symbol und den Dateinamen an.  
@@ -49,19 +49,19 @@ enum NameSearchOptions {
  Es wurden keine Optionen angegeben.  
   
  `nsfCaseSensitive`  
- Wendet eine Übereinstimmung Groß-/Kleinschreibung beachtet.  
+ Wendet eine namensübereinstimmung der Groß-/Kleinschreibung an.  
   
  `nsfCaseInsensitive`  
- Wendet eine Übereinstimmung der Groß-/Kleinschreibung Namen an.  
+ Wendet eine namensübereinstimmung der Groß-/Kleinschreibung an.  
   
  `nsfFNameExt`  
- Namen behandelt, als Pfade und eine kurzen Namen Übereinstimmung gilt.  
+ Namen behandelt, als Pfade und eine namensübereinstimmung filename.ext gilt.  
   
  `nsfRegularExpression`  
- Wendet ein Sternchen (*) und Fragezeichen (?) als Platzhalterzeichen mit der Groß-/Kleinschreibung beachtet Name übereinstimmen.  
+ Wendet die Groß-/Kleinschreibung namensübereinstimmung mithilfe von Sternchen (*) und Fragezeichen (?) als Platzhalter.  
   
  `nsfUndecoratedName`  
- Gilt nur für Symbole, die sowohl undekorierten und Namen ergänzte.  
+ Gilt nur für Symbole, die nicht ergänzten Form und ergänzte Namen haben.  
   
 ## <a name="remarks"></a>Hinweise  
  Die Werte aus dieser Enumeration werden für die folgenden Methoden übergeben:  

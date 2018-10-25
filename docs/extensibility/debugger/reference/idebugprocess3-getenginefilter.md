@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetEngineFilter | Microsoft Docs
+title: IDebugProcess3::GetEngineFilter | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c592220267444818f7310895974b92cd02c69a62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 487ac0f77307a58aab36fdfd55fad67d4bc9ce51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948537"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
-Ruft ein Array von eindeutigen Bezeichnern für verfügbare Debugmodule ab.  
+Ruft ein Array von eindeutigen Bezeichnern für verfügbare Debug-Engines.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ public int GetEngineFilter(
   
 #### <a name="parameters"></a>Parameter  
  `pEngineArray`  
- [out] Verweis auf eine Struktur, die eindeutige Bezeichner für die Debug-Datenbankmodulen enthält.  
+ [out] Verweis auf eine Struktur, die eindeutige Bezeichner für die Debug-Engines enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

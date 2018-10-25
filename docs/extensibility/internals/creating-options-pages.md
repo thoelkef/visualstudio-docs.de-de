@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949642"
 ---
 # <a name="create-options-pages"></a>Erstellen von Optionsseiten
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltetes Paketframework, abgeleitete Klassen von <xref:Microsoft.VisualStudio.Shell.DialogPage> erweitern die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE durch Hinzufügen von **Optionen** Seiten unter der **Tools** Menü.  
@@ -47,17 +47,17 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltetes 
 ## <a name="implement-dialogpage-class"></a>Implementieren von DialogPage-Klasse  
  Ein Objekt, das eine VSPackage Implementierung bietet eine <xref:Microsoft.VisualStudio.Shell.DialogPage>-abgeleiteten Typ kann die folgenden geerbten Funktionen nutzen:  
   
--   Ein Standard-Benutzeroberflächenfenster.  
+- Ein Standard-Benutzeroberflächenfenster.  
   
--   Ein Standard verfügbar persistenzmechanismus entweder If <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die Klasse angewendet wird oder wenn die <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> -Eigenschaftensatz auf `true` für die <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , auf die Klasse angewendet wird.  
+- Ein Standard verfügbar persistenzmechanismus entweder If <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die Klasse angewendet wird oder wenn die <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> -Eigenschaftensatz auf `true` für die <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , auf die Klasse angewendet wird.  
   
--   -Unterstützung.  
+- -Unterstützung.  
   
- Die Mindestanforderungen für ein Objekt, das eine **Extras/Optionen** -Seite mithilfe von <xref:Microsoft.VisualStudio.Shell.DialogPage> ist das Hinzufügen von öffentlichen Eigenschaften.  
+  Die Mindestanforderungen für ein Objekt, das eine **Extras/Optionen** -Seite mithilfe von <xref:Microsoft.VisualStudio.Shell.DialogPage> ist das Hinzufügen von öffentlichen Eigenschaften.  
   
- Wenn die Klasse ordnungsgemäß als registriert eine **Extras/Optionen** Seite Anbieter aus, und klicken Sie dann dessen öffentliche Eigenschaften verfügbar sind die **Optionen** im Abschnitt der **Tools** Menü in Form von einer das Eigenschaftenraster.  
+  Wenn die Klasse ordnungsgemäß als registriert eine **Extras/Optionen** Seite Anbieter aus, und klicken Sie dann dessen öffentliche Eigenschaften verfügbar sind die **Optionen** im Abschnitt der **Tools** Menü in Form von einer das Eigenschaftenraster.  
   
- Alle Standardfeatures können überschrieben werden. So erstellen Sie einen komplexeren Benutzer Schnittstelle erfordert beispielsweise nur überschreiben die standardmäßige Implementierung des <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Alle Standardfeatures können überschrieben werden. So erstellen Sie einen komplexeren Benutzer Schnittstelle erfordert beispielsweise nur überschreiben die standardmäßige Implementierung des <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden finden eine einfache "Hello World"-Implementierung, der eine Seite mit Optionen. Den folgenden Code hinzufügen, um ein Standardprojekt erstellt, über die Visual Studio-Paketvorlage mit der **Menübefehl** Option ausgewählt ist angemessen Option Seite Funktionen veranschaulicht.  

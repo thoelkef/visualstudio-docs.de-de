@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Item | Microsoft Docs'
+title: 'Idiatable:: Item | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd734d287a4740a25840d93b4724b45396c7dd87
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950055"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Ruft einen Verweis auf den angegebenen Eintrag in der Tabelle ab.  
@@ -35,18 +35,18 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parameter  
  `index`  
- [in] Der Index des Eintrags Tabelle im Bereich von 0 bis `count`-1 und, in denen `count` wird zurückgegeben, indem Sie die [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)Methode.  
+ [in] Der Index des Eintrags Tabelle im Bereich von 0 bis `count`-1 und, in dem `count` wird zurückgegeben, durch die [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)Methode.  
   
  `element`  
- [out] Gibt ein `IUnknown` Objekt, das dem angegebenen Verzeichniseintrag darstellt.  
+ [out] Gibt eine `IUnknown` Objekt, das den angegebenen Eintrag darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Tabelle stellt eine Auflistung von Objekten dar. In Abhängigkeit von diesen Objekten kann der Elementparameter in der entsprechenden Schnittstelle umgewandelt werden. Wenn eine Tabelle enthält z. B. [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Objekte aufweist, und klicken Sie dann in der Elementparameter umgewandelt werden kann die `IDiaSegment` Schnittstelle.  
+ Eine Tabelle stellt eine Auflistung von Objekten dar. Abhängig von diesen Objekten kann der Elementparameter in die entsprechende Schnittstelle umgewandelt werden. Wenn eine Tabelle enthält z. B. [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Objekte aufweist, und klicken Sie dann der Elementparameter in umgewandelt werden kann die `IDiaSegment` Schnittstelle.  
   
- Es ist ein gängigerer Ansatz zum Aufrufen der `QueryInterface` Methode in der [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Benutzeroberfläche für die entsprechenden Enumerator-Schnittstelle und den Enumerator spezifischen Methoden Zugriff auf den Tabelleninhalt zu verwenden. Finden Sie unter der [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle für ein Beispiel.  
+ Dies ist ein häufiger Ansatz zum Aufrufen der `QueryInterface` -Methode in der die [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Schnittstelle für die entsprechenden Enumerator-Schnittstelle, und spezifische Methoden der Enumerator auf den Inhalt der Tabelle zugreifen. Finden Sie unter den [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle für ein Beispiel.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950198"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Verwalten des Ladens von Projekten in einer Projektmappe
 Visual Studio-Projektmappen können es sich um eine große Anzahl von Projekten enthalten. Das Standardverhalten für Visual Studio ist beim Laden alle Projekte in einer Projektmappe zum Zeitpunkt der Projektmappe geöffnet wird und nicht, damit Benutzer auf keinem der Projekte zugreifen, bis alle abgeschlossen sind. Wenn der Prozess des Ladens von Projekten mit mehr als zwei Minuten dauern wird, wird eine Statusanzeige zeigt die Anzahl der Projekte, die geladen und die Gesamtzahl der Projekte angezeigt. Der Benutzer kann Projekte entladen, während der Arbeit in einer Projektmappe mit mehreren Projekten, aber dieses Verfahren hat einige Nachteile: die entladenen Projekte werden nicht als Teil eines Befehls für die Projektmappe neu erstellen erstellt und IntelliSense-Beschreibungen von Typen und Member von geschlossen Projekte werden nicht angezeigt.  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Erkennen und Verwalten von Projektmappen und des Ladens von Projekten  
  Um den Load-Status der Projekte und Projektmappen zu erkennen, rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> mit den folgenden Werten:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn die Projektmappe und alle darin enthaltenen Projekte geladen wurde, andernfalls werden `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn die Projektmappe und alle darin enthaltenen Projekte geladen wurde, andernfalls werden `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch Projekte andernfalls aktuell im Hintergrund geladen wird `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch Projekte andernfalls aktuell im Hintergrund geladen wird `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch Projekte aktuell synchron als Ergebnis eines Befehls für die Benutzer oder andere explizite laden, andernfalls geladen wird `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch Projekte aktuell synchron als Ergebnis eines Befehls für die Benutzer oder andere explizite laden, andernfalls geladen wird `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` gibt `true` , wenn die Projektmappe gerade geschlossen wird, andernfalls wird `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` gibt `true` , wenn die Projektmappe gerade geschlossen wird, andernfalls wird `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` gibt `true` , wenn eine Projektmappe gerade, andernfalls geöffnet wird `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` gibt `true` , wenn eine Projektmappe gerade, andernfalls geöffnet wird `false`.  
   
- Sie können auch sicherstellen, dass Projekte und Projektmappen geladen werden, indem Sie eine der folgenden Methoden aufrufen:  
+  Sie können auch sicherstellen, dass Projekte und Projektmappen geladen werden, indem Sie eine der folgenden Methoden aufrufen:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in einer Projektmappe geladen werden, bevor die Methode zurückgibt.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in einer Projektmappe geladen werden, bevor die Methode zurückgibt.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in `guidProject` geladen, bevor die Methode zurückgibt.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in `guidProject` geladen, bevor die Methode zurückgibt.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass das Projekt im `guidProjectID` geladen, bevor die Methode zurückgibt.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass das Projekt im `guidProjectID` geladen, bevor die Methode zurückgibt.  

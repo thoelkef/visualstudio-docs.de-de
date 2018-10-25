@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::SetSite | Microsoft Docs
+title: IDebugPortPicker::SetSite | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54286ded44f6acf44033c2fa5e2227ccaa688a64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00730a5338a3355f2397a91bc7a3693b30dca31b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930608"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
-Legt den Dienstanbieter an.  
+Legt den Dienstanbieter fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,10 +42,10 @@ public int SetSite(
  [in] Verweis auf die Schnittstelle des Dienstanbieters.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, bevor andere Methoden aufgerufen werden.  
+ Diese Methode wird aufgerufen werden, bevor Sie andere Methoden aufgerufen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

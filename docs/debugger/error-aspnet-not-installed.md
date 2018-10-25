@@ -21,28 +21,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 754d196ba49e97ed0a70ca988d4ae65aed001bdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949568"
 ---
 # <a name="error-aspnet-not-installed"></a>Fehler: ASP.NET ist nicht installiert
 Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] auf dem zu debuggenden Computer nicht ordnungsgemäß installiert ist. Dies kann bedeuten, dass entweder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nicht installiert wurde, oder dass zuerst [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anschließend IIS installiert wurde.  
   
 ### <a name="to-reinstall-aspnet"></a>So installieren Sie ASP.NET neu  
   
-1.  Führen Sie in einem Eingabeaufforderungsfenster den folgenden Befehl aus:  
+1. Führen Sie in einem Eingabeaufforderungsfenster den folgenden Befehl aus:  
   
-    ```cmd
-    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
-    ```  
+   ```cmd
+   \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
+   ```  
   
-     wo *Version* stellt die Versionsnummer von .NET Framework installiert, auf dem Computer, z.B. v1.0.370 dar. Sie können die Frameworkversion feststellen, anhand der `\WINDOWS\Microsoft.NET\Framework` Verzeichnis.  
+    wo *Version* stellt die Versionsnummer von .NET Framework installiert, auf dem Computer, z.B. v1.0.370 dar. Sie können die Frameworkversion feststellen, anhand der `\WINDOWS\Microsoft.NET\Framework` Verzeichnis.  
   
-    > [!NOTE]
-    >  Sie können mit Windows Server 2003 installieren [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mit **Software** in der Systemsteuerung.  
+   > [!NOTE]
+   >  Sie können mit Windows Server 2003 installieren [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mit **Software** in der Systemsteuerung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

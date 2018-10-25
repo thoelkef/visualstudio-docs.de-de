@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48ad201a780c31fed5f324ff96a91bd21989522
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948745"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden systemeigener Ressourcen aufrufen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
@@ -50,11 +51,11 @@ ms.locfileid: "49213344"
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Diese Regel stellt einige Annahmen, die um falsch positive Ergebnisse führen können. Sie können problemlos eine Warnung dieser Regel unterdrücken, wenn:
 
--   Der Finalizer ist nicht frei, den Inhalt der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld, das durch die Methode.
+- Der Finalizer ist nicht frei, den Inhalt der <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld, das durch die Methode.
 
--   Die-Methode übergibt die nicht die <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld zu nicht verwaltetem Code.
+- Die-Methode übergibt die nicht die <xref:System.IntPtr> oder <xref:System.UIntPtr> Feld zu nicht verwaltetem Code.
 
- Überprüfen Sie sorgfältig die anderen Nachrichten vor dem schließt sie. Diese Regel erkennt Fehler, die schwer zu reproduzieren und zu debuggen.
+  Überprüfen Sie sorgfältig die anderen Nachrichten vor dem schließt sie. Diese Regel erkennt Fehler, die schwer zu reproduzieren und zu debuggen.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel `BadMethod` enthält keinen Aufruf von `GC.KeepAlive` und verletzt daher die Regel. `GoodMethod` enthält den korrigierten Code.

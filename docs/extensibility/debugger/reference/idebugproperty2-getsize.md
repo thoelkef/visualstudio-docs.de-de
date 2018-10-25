@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetSize | Microsoft Docs
+title: IDebugProperty2::GetSize | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b49ed63c95b63078880b554b31968d210cd063e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2324fe7057b27e1cbf9394d6cecd70329e500d2e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951040"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Ruft die Größe in Bytes, der den Wert der Eigenschaft ab.  
@@ -44,7 +44,7 @@ int GetSize (
  [out] Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETSIZE_NO_SIZE` , wenn die Eigenschaft keine Größe hat.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETSIZE_NO_SIZE` , wenn die Eigenschaft keine Größe hat.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

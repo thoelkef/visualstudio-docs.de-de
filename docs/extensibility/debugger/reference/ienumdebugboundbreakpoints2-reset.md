@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Reset | Microsoft Docs
+title: IEnumDebugBoundBreakpoints2::Reset | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2efed57d74f748de762ce4dcf48c7774ad7d4303
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b5e4849c13e5a7c9e88dd2be450cb75d4be70a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928151"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 Setzt die Enumeration auf das erste Element zurück.  
@@ -38,10 +38,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Nachdem diese Methode wird aufgerufen, den beim nächsten Aufruf der [Weiter](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) Methode gibt das erste Element der Enumeration.  
+ Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) Methode gibt das erste Element der Enumeration.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
