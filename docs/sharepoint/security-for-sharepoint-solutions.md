@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878764"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen zur Erhöhung die Sicherheit von SharePoint-Anwendungen.
@@ -34,7 +34,7 @@ ms.locfileid: "42626132"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers-Attribut
  Standardmäßig können nur Anwendungen, die von das Laufzeitsystem Code Access Security (CAS) vertraut sind, eine freigegebene verwaltete Codeassembly zugreifen. Markieren einer voll vertrauenswürdigen Assembly mit dem AllowPartiallyTrustedCallers-Attribut kann teilweise vertrauenswürdige Assemblys, darauf zuzugreifen.
 
- Das AllowPartiallyTrustedCallers-Attribut wird jede SharePoint-Lösung, die nicht in den globalen Assemblycache des Systems bereitgestellt wurde hinzugefügt ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Dies schließt die Sandbox-Lösungen oder Lösungen, die für die Bin-Verzeichnis der SharePoint-Anwendung bereitgestellt. Weitere Informationen finden Sie unter [Version 1 Sicherheitsänderungen für das Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) und [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Das AllowPartiallyTrustedCallers-Attribut wird jede SharePoint-Lösung, die nicht in den globalen Assemblycache des Systems bereitgestellt wurde hinzugefügt ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Dies schließt die Sandbox-Lösungen oder Lösungen, die für die Bin-Verzeichnis der SharePoint-Anwendung bereitgestellt. Weitere Informationen finden Sie unter [Version 1 Sicherheitsänderungen für das Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) und [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Sicher vor Skript (Eigenschaft)
  *Script-Injection* ist das Einfügen von potenziell bösartigem Code in Steuerelementen oder Webseiten. Um SharePoint 2010-Websites für Script-Injection zu schützen, können nicht die Contributors anzeigen oder Bearbeiten von Webparts oder ihre Eigenschaften standardmäßig. Dieses Verhalten wird durch eine SafeControl-Attribut, die mit der Bezeichnung "SafeAgainstScript" gesteuert. In [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], legen Sie dieses Attribut in einem Projektelement **Einträge für sicheres Steuerelement** Untereigenschaften **sicher für Skript**. Weitere Informationen finden Sie unter [Geben Sie Paket und die Bereitstellung in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).

@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879115"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Erstellen Sie eine **Leistungssitzung** durch Ausführen des **Leistungs-Assistenten** oder durch das manuelle Erstellen einer Sitzung. Die **Leistungssitzung** wird im **Leistungs-Explorer** angezeigt, nachdem die **Leistungssitzung** erstellt wurde.  
+  Erstellen Sie eine **Leistungssitzung** durch Ausführen des **Leistungs-Assistenten** oder durch das manuelle Erstellen einer Sitzung. Die **Leistungssitzung** wird im **Leistungs-Explorer** angezeigt, nachdem die **Leistungssitzung** erstellt wurde.  
   
- Wählen Sie den Namen der Sitzung im **Leistungs-Explorer**, klicken Sie mit der rechten Maustaste und wählen Sie dann **Eigenschaften**, um die Eigenschaften der **Leistungssitzung** anzusehen.  
+  Wählen Sie den Namen der Sitzung im **Leistungs-Explorer**, klicken Sie mit der rechten Maustaste und wählen Sie dann **Eigenschaften**, um die Eigenschaften der **Leistungssitzung** anzusehen.  
   
- Die Leistungssitzung hat folgende Eigenschaftenseiten:  
+  Die Leistungssitzung hat folgende Eigenschaftenseiten:  
   
 ## <a name="general"></a>Allgemein  
  Mit diesen Einstellungen können Sie die Profilerstellungsmethode auswählen, die .NET-Objektsammlung und Lebenszyklusdaten hinzufügen und den Standardspeicherort und die Benennungskonventionen des Berichts angeben.  
@@ -59,17 +59,17 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="sampling"></a>Sampling  
  Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und des Samplingintervalls, wenn Sampling als Profilerstellungsmethode verwendet wird. Ein Samplingereignis dient zum Erfassen von Profilerstellungsdaten im angegebenen Intervall. Wenn das Samplingereignis z.B. ein Taktzyklus ist und das Samplingintervall auf 10.000.000 eingestellt ist, werden jeweils nach 10 Millionen Taktzyklen Profilerstellungsdaten erfasst. Die folgenden vier Typen von Samplingereignissen sind verfügbar:  
   
--   Taktzyklen: für CPU-Probleme  
+- Taktzyklen: für CPU-Probleme  
   
--   Seitenfehler: für Arbeitsspeicherprobleme  
+- Seitenfehler: für Arbeitsspeicherprobleme  
   
--   Systemaufrufe: für E/A-Probleme  
+- Systemaufrufe: für E/A-Probleme  
   
--   Leistungsindikatoren: für Leistungsproblemen auf niedriger Ebene  
+- Leistungsindikatoren: für Leistungsproblemen auf niedriger Ebene  
   
--   Zusätzliche Samplingereignisse können auf Grundlage der verfügbaren Leistungsindikatoren angegeben werden  
+- Zusätzliche Samplingereignisse können auf Grundlage der verfügbaren Leistungsindikatoren angegeben werden  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
+  Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binär  
  Mit diesen Einstellungen können Sie angeben, ob instrumentierte Binärdateien an einen anderen Speicherort verschoben werden sollen. Wenn Sie beispielsweise eine My.DLL-Profilerstellung durchführen und die instrumentierte Binärdatei nicht verschieben, wird eine Sicherungskopie von My.DLL mit dem Namen My.Orig.DLL erstellt. Anschließend wird My.DLL geändert, indem Prüfpunkte in die Datensammelung eingefügt werden. Wenn Sie sich entschließen, die instrumentierte Binärdatei zu verschieben, wird die ursprüngliche Binärdatei nicht umbenannt, und die instrumentierte Binärdatei wird am angegebenen Speicherort zur Verwendung während der Instrumentation kopiert.  

@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920663"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>So erstellen Sie eine Validierungserweiterung in der eigenen VSIX  
   
-1.  Klicken Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**auf **Validierungserweiterung**.  
+1. Klicken Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**auf **Validierungserweiterung**.  
   
-2.  Öffnen Sie im neuen Projekt die **.cs** -Datei, und ändern Sie die Klasse, um die Validierungseinschränkung zu implementieren.  
+2. Öffnen Sie im neuen Projekt die **.cs** -Datei, und ändern Sie die Klasse, um die Validierungseinschränkung zu implementieren.  
   
-     Weitere Informationen finden Sie unter [Auswerten der Validierungseinschränkung](#Implementing).  
+    Weitere Informationen finden Sie unter [Auswerten der Validierungseinschränkung](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Stellen Sie sicher, dass die **.cs** -Dateien die folgende `using` -Anweisung enthalten:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Stellen Sie sicher, dass die **.cs** -Dateien die folgende `using` -Anweisung enthalten:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Sie können weitere Einschränkungen hinzufügen, indem Sie neue Methoden definieren. Um eine Methode als Validierungsmethode zu kennzeichnen, muss sie auf die gleiche Weise mit den Attributen markiert werden, wie die ursprüngliche Validierungsmethode.  
+3. Sie können weitere Einschränkungen hinzufügen, indem Sie neue Methoden definieren. Um eine Methode als Validierungsmethode zu kennzeichnen, muss sie auf die gleiche Weise mit den Attributen markiert werden, wie die ursprüngliche Validierungsmethode.  
   
-4.  Testen Sie die Einschränkungen, indem Sie F5 drücken. Weitere Informationen finden Sie unter [Ausführen einer Validierungseinschränkung](#Executing).  
+4. Testen Sie die Einschränkungen, indem Sie F5 drücken. Weitere Informationen finden Sie unter [Ausführen einer Validierungseinschränkung](#Executing).  
   
-5.  Installieren Sie den Menübefehl auf einem anderen Computer durch Kopieren der Datei **Bin\\\*\\\*VSIX** , die vom Projekt erstellt wird. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).  
+5. Installieren Sie den Menübefehl auf einem anderen Computer durch Kopieren der Datei **Bin\\\*\\\*VSIX** , die vom Projekt erstellt wird. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).  
   
- Wenn Sie andere **.cs** -Dateien hinzuzufügen, benötigen Sie normalerweise die folgenden `using` -Anweisungen:  
+   Wenn Sie andere **.cs** -Dateien hinzuzufügen, benötigen Sie normalerweise die folgenden `using` -Anweisungen:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` wird in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fehlerliste angezeigt  
+- `"error string"` wird in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fehlerliste angezeigt  
   
--   `errorCode` ist eine Zeichenfolge, bei der es sich um einen eindeutigen Bezeichner des Fehlers handelt  
+- `errorCode` ist eine Zeichenfolge, bei der es sich um einen eindeutigen Bezeichner des Fehlers handelt  
   
--   `elementsWithError` identifiziert Elemente im Modell. Wenn Benutzer auf den Fehlerbericht doppelklicken, wird die Form ausgewählt, die dieses Element darstellt.  
+- `elementsWithError` identifiziert Elemente im Modell. Wenn Benutzer auf den Fehlerbericht doppelklicken, wird die Form ausgewählt, die dieses Element darstellt.  
   
- `LogError(),``LogWarning()` und `LogMessage()` platzieren Meldungen in den verschiedenen Abschnitten der Fehlerliste.  
+  `LogError(),``LogWarning()` und `LogMessage()` platzieren Meldungen in den verschiedenen Abschnitten der Fehlerliste.  
   
 ## <a name="how-validation-methods-are-applied"></a>Anwenden von Validierungsmethoden  
  Die Validierung wird auf jedes Element im Modell angewendet, einschließlich Beziehungen und Teile größerer Elemente, z. B. Attribute einer Klasse und Parameter einer Operation.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
   
-1.  Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.  
+1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.  
   
-2.  Erweitern Sie **Installierte Erweiterungen**.  
+2. Erweitern Sie **Installierte Erweiterungen**.  
   
-3.  Wählen Sie die Erweiterung aus, und wählen Sie anschließend **Deinstallieren**.  
+3. Wählen Sie die Erweiterung aus, und wählen Sie anschließend **Deinstallieren**.  
   
- In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
   
- *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
   
 ##  <a name="Example"></a> Beispiel  
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.  

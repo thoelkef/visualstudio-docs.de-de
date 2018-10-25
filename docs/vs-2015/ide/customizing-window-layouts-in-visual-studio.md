@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911634"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
   
  Fenster können auf die folgenden Weisen angeordnet werden:  
   
--   Heftet Dokumentfenster auf der linken Seite der Registerkartenreihe an.  
+- Heftet Dokumentfenster auf der linken Seite der Registerkartenreihe an.  
   
--   Andocken von Fenstern am Bearbeitungsrahmen  
+- Andocken von Fenstern am Bearbeitungsrahmen  
   
--   Andocken von Toolfenstern am Rand eines Frames in der IDE.  
+- Andocken von Toolfenstern am Rand eines Frames in der IDE.  
   
--   Verschieben von Dokument- oder Toolfenstern über die IDE bzw. außerhalb der IDE.  
+- Verschieben von Dokument- oder Toolfenstern über die IDE bzw. außerhalb der IDE.  
   
--   Verbergen von Toolfenstern am Rand der IDE.  
+- Verbergen von Toolfenstern am Rand der IDE.  
   
--   Anzeigen von Fenstern auf verschiedenen Bildschirmen.  
+- Anzeigen von Fenstern auf verschiedenen Bildschirmen.  
   
--   Zurücksetzen der Fensteranordnung auf das Standardlayout oder ein gespeichertes benutzerdefiniertes Layout.  
+- Zurücksetzen der Fensteranordnung auf das Standardlayout oder ein gespeichertes benutzerdefiniertes Layout.  
   
- Tool- und Dokumentfenster können durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters angeordnet werden.  
+  Tool- und Dokumentfenster können durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters angeordnet werden.  
   
 > [!NOTE]
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

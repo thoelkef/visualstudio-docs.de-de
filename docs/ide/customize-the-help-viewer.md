@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951105"
 ---
 # <a name="customize-the-help-viewer"></a>Anpassen von Help Viewer
 Sie können das Layout des Help Viewer-Fensters sowie weitere Optionen wie den Schriftgrad, die Höchstzahl an Ergebnissen und das Einbeziehen von englischen Inhalt anpassen.
@@ -41,7 +41,7 @@ Schaffen Sie mehr Platz zum Anzeigen von Themen, indem Sie das Heftzweckensymbol
 Sie können das Dialogfeld **Viewer-Optionen** öffnen, indem Sie auf **Viewer-Optionen** auf der Symbolleiste klicken.
 
 |So führen Sie diese Aufgabe aus:|Führen Sie diesen Schritt aus:|
-|---------------------------|---------------------|
+| - | - |
 |Ändern des Schriftgrads für angezeigten Text|Wählen Sie in der Liste **Textgröße** eine Größe aus.|
 |Ändern der auf der Registerkarte **Suchen** angezeigten maximalen Anzahl von Suchergebnissen|Wählen Sie in der Liste **Maximale Anzahl von Suchergebnissen** einen Wert aus.|
 |Ändern der im Fenster **Favoriten** angezeigten maximalen Anzahl von Verlaufseinträgen|Wählen Sie in der Liste **Maximale Anzahl gespeicherter Verlaufseinträge** einen Wert aus.|

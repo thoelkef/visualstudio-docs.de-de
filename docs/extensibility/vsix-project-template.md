@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2309428ffa87409bd35f1a05c2cfd591db3cc1a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864789"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studio-Erweiterungen in einer VSIX-Projekt zu umschließen und veröffentlichen Sie das Paket klicken Sie dann auf die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website.  
@@ -38,50 +38,50 @@ Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studi
 ## <a name="uses-of-the-vsix-project-template"></a>Verwendet die VSIX-Projektvorlage  
  Die VSIX-Projektvorlage verfügt über zwei Hauptanwendungsgebiete:  
   
--   Zum Bereitstellen von Projektvorlagen, Elementvorlagen und anderen Erweiterungen, die VSIX-Unterstützung nicht noch.  
+- Zum Bereitstellen von Projektvorlagen, Elementvorlagen und anderen Erweiterungen, die VSIX-Unterstützung nicht noch.  
   
--   Um die Ausgaben an mehreren Erweiterungen in ein Bereitstellungspaket zu umschließen.  
+- Um die Ausgaben an mehreren Erweiterungen in ein Bereitstellungspaket zu umschließen.  
   
- Sie müssen nicht die VSIX-Projektvorlage verwenden, für die Bereitstellung VSPackages oder andere Arten von Erweiterungen, die bereits VSIX unterstützen.  
+  Sie müssen nicht die VSIX-Projektvorlage verwenden, für die Bereitstellung VSPackages oder andere Arten von Erweiterungen, die bereits VSIX unterstützen.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Verpacken einer Erweiterung in ein leeres VSIX-Projekt  
  Sie können Packen einer vorhandenen Erweiterung oder eine Erweiterung, die noch kein VSIX-Unterstützung durch Einbinden in ein leeres VSIX-Projekt vorhanden ist. Die Erweiterung, die eingeschlossen werden muss von einem Typ sein, die von unterstützt wird die [VSIX-Schema](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
 ### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Um eine Erweiterung mithilfe eines VSIX-Projekts zu verpacken.  
   
-1.  Erstellen Sie die Projekte, aus denen die Erweiterung besteht.  
+1. Erstellen Sie die Projekte, aus denen die Erweiterung besteht.  
   
-2.  Erstellen Sie ein VSIX-Projekt mithilfe der **VSIX-Projekt** Vorlage.  
+2. Erstellen Sie ein VSIX-Projekt mithilfe der **VSIX-Projekt** Vorlage.  
   
-     *"Source.Extension.vsixmanifest"* öffnet im **Manifest-Designer**.  
+    *"Source.Extension.vsixmanifest"* öffnet im **Manifest-Designer**.  
   
-3.  Auf der **Assets** Registerkarte die **neu** Schaltfläche.  
+3. Auf der **Assets** Registerkarte die **neu** Schaltfläche.  
   
-     Die **neue Anlage hinzufügen** Dialogfeld wird angezeigt.  
+    Die **neue Anlage hinzufügen** Dialogfeld wird angezeigt.  
   
-4.  In der **Typ** Liste, wählen Sie den Typ der hinzuzufügenden Erweiterung.  
+4. In der **Typ** Liste, wählen Sie den Typ der hinzuzufügenden Erweiterung.  
   
-5.  Um ein Element-Erweiterung oder Inhalt hinzuzufügen, die in der aktuellen Projektmappe (z. B. eine Item-Vorlage oder eine kompilierte Assembly) enthalten ist, führen Sie die folgenden Schritte aus:  
+5. Um ein Element-Erweiterung oder Inhalt hinzuzufügen, die in der aktuellen Projektmappe (z. B. eine Item-Vorlage oder eine kompilierte Assembly) enthalten ist, führen Sie die folgenden Schritte aus:  
   
-    1.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
+   1.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
   
-    2.  In der **Projekt** Liste, wählen Sie den Namen der Erweiterung.  
+   2.  In der **Projekt** Liste, wählen Sie den Namen der Erweiterung.  
   
-    3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
+   3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
   
-6.  Zum Hinzufügen einer Erweiterung oder Content-Element, das nicht in der aktuellen Projektmappe enthalten ist, führen Sie die folgenden Schritte aus:  
+6. Zum Hinzufügen einer Erweiterung oder Content-Element, das nicht in der aktuellen Projektmappe enthalten ist, führen Sie die folgenden Schritte aus:  
   
-    1.  In der **Quelle** , und wählen Sie im Listenfeld **Datei im Dateisystem**.  
+   1.  In der **Quelle** , und wählen Sie im Listenfeld **Datei im Dateisystem**.  
   
-    2.  In der **Pfad** Feld, geben Sie den vollständigen Pfad der kompilierten oder komprimierten Erweiterungsdatei oder verwenden Sie die **Durchsuchen** Schaltfläche, um die Datei zu suchen.  
+   2.  In der **Pfad** Feld, geben Sie den vollständigen Pfad der kompilierten oder komprimierten Erweiterungsdatei oder verwenden Sie die **Durchsuchen** Schaltfläche, um die Datei zu suchen.  
   
-    3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
+   3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
   
-7.  Wenn Sie Ihr Paket zusätzliche Erweiterungen gehören möchten, fügen sie auf die gleiche Weise hinzu.  
+7. Wenn Sie Ihr Paket zusätzliche Erweiterungen gehören möchten, fügen sie auf die gleiche Weise hinzu.  
   
-8.  Erstellen Sie die Projektmappe.  
+8. Erstellen Sie die Projektmappe.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt eine *VSIX* Datei, die eine VSIX-Manifestdatei, eine [Content_Types] enthält*XML* Datei und alle Ressourcen Erweiterung, die Sie dem Projekt hinzugefügt.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt eine *VSIX* Datei, die eine VSIX-Manifestdatei, eine [Content_Types] enthält*XML* Datei und alle Ressourcen Erweiterung, die Sie dem Projekt hinzugefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum VSIX-Erweiterung Schema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881754"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit
   In dieser exemplarischen Vorgehensweise veranschaulicht, wie die Menüband-Objektmodells zum Aktualisieren der Steuerelemente auf einem Menüband, nachdem das Menüband in der Office-Anwendung geladen wird.  
@@ -47,7 +47,7 @@ ms.locfileid: "35258800"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -167,49 +167,49 @@ ms.locfileid: "35258800"
   
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>So aktualisieren Sie Steuerelemente in der benutzerdefinierten Gruppe mithilfe des Menüband-Objektmodells  
   
-1.  Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .  
+1. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .  
   
-2.  In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **.NET** Registerkarte die **System.Data.Linq** Assembly, und klicken Sie dann auf **OK**.  
+2. In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **.NET** Registerkarte die **System.Data.Linq** Assembly, und klicken Sie dann auf **OK**.  
   
-     Diese Assembly enthält Klassen für die Verwendung von LINQ (Language-Integrated Queries). Sie verwenden LINQ zum Auffüllen der Steuerelemente in der benutzerdefinierten Gruppe mit Daten aus der Datenbank "Northwind".  
+    Diese Assembly enthält Klassen für die Verwendung von LINQ (Language-Integrated Queries). Sie verwenden LINQ zum Auffüllen der Steuerelemente in der benutzerdefinierten Gruppe mit Daten aus der Datenbank "Northwind".  
   
-3.  In **Projektmappen-Explorer**, klicken Sie auf **CustomerRibbon.cs** oder **CustomerRibbon.vb** um es auszuwählen.  
+3. In **Projektmappen-Explorer**, klicken Sie auf **CustomerRibbon.cs** oder **CustomerRibbon.vb** um es auszuwählen.  
   
-4.  Auf der **Ansicht** Menü klicken Sie auf **Code**.  
+4. Auf der **Ansicht** Menü klicken Sie auf **Code**.  
   
-     Die Menüband-Codedatei wird im Code-Editor geöffnet.  
+    Die Menüband-Codedatei wird im Code-Editor geöffnet.  
   
-5.  Fügen Sie am Anfang der Menüband-Codedatei die folgenden Anweisungen hinzu. Diese Anweisungen ermöglichen den einfachen Zugriff auf LINQ-Namespaces und den Namespace der primären Interopassembly (PIA) von Outlook.  
+5. Fügen Sie am Anfang der Menüband-Codedatei die folgenden Anweisungen hinzu. Diese Anweisungen ermöglichen den einfachen Zugriff auf LINQ-Namespaces und den Namespace der primären Interopassembly (PIA) von Outlook.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Fügen Sie den folgenden Code innerhalb der `CustomerRibbon` Klasse. Dieser Code deklariert die Datentabelle und die Tabellenadapter, die Sie zum Speichern von Informationen aus den Kunden-, Bestellungen-, Bestelldetails- und Produkttabellen der Datenbank "Northwind" verwenden.  
+6. Fügen Sie den folgenden Code innerhalb der `CustomerRibbon` Klasse. Dieser Code deklariert die Datentabelle und die Tabellenadapter, die Sie zum Speichern von Informationen aus den Kunden-, Bestellungen-, Bestelldetails- und Produkttabellen der Datenbank "Northwind" verwenden.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Fügen Sie der Klasse `CustomerRibbon` den folgenden Codeblock hinzu. Dieser Code fügt drei Hilfsmethoden, die Steuerelemente für die Multifunktionsleiste zur Laufzeit zu erstellen.  
+7. Fügen Sie der Klasse `CustomerRibbon` den folgenden Codeblock hinzu. Dieser Code fügt drei Hilfsmethoden, die Steuerelemente für die Multifunktionsleiste zur Laufzeit zu erstellen.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Ersetzen Sie die `CustomerRibbon_Load`-Ereignishandlermethode durch den folgenden Code. Dieser Code verwendet eine LINQ-Abfrage, um die folgenden Aufgaben auszuführen:  
+8. Ersetzen Sie die `CustomerRibbon_Load`-Ereignishandlermethode durch den folgenden Code. Dieser Code verwendet eine LINQ-Abfrage, um die folgenden Aufgaben auszuführen:  
   
-    -   Füllen Sie die **Kunden** Kombinationsfeld, indem Sie mit dem-ID und die Namen von 20 Kunden in der Northwind-Datenbank.  
+   - Füllen Sie die **Kunden** Kombinationsfeld, indem Sie mit dem-ID und die Namen von 20 Kunden in der Northwind-Datenbank.  
   
-    -   Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **ProductsPurchased** Menü mit Bestellnummern, die den zurzeit ausgewählten Kunden betreffen.  
+   - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **ProductsPurchased** Menü mit Bestellnummern, die den zurzeit ausgewählten Kunden betreffen.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Fügen Sie der `CustomerRibbon`-Klasse folgenden Code hinzu. Dieser Code verwendet LINQ-Abfragen, um die folgenden Aufgaben auszuführen:  
+9. Fügen Sie der `CustomerRibbon` -Klasse folgenden Code hinzu. Dieser Code verwendet LINQ-Abfragen, um die folgenden Aufgaben auszuführen:  
   
-    -   Hinzufügen eines Untermenüs zum die **ProductsPurchased** Menü für jeden Kaufauftrag im Zusammenhang mit dem ausgewählten Kunden.  
+   - Hinzufügen eines Untermenüs zum die **ProductsPurchased** Menü für jeden Kaufauftrag im Zusammenhang mit dem ausgewählten Kunden.  
   
-    -   Hinzufügen von Schaltflächen zu jedem Untermenü für die Produkte, die sich auf die Bestellung beziehen.  
+   - Hinzufügen von Schaltflächen zu jedem Untermenü für die Produkte, die sich auf die Bestellung beziehen.  
   
-    -   Hinzufügen von Ereignishandlern zu jeder Schaltfläche.  
+   - Hinzufügen von Ereignishandlern zu jeder Schaltfläche.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
@@ -222,28 +222,28 @@ ms.locfileid: "35258800"
   
      Die Menüband-Codedatei wird im Code-Editor geöffnet, und der `ComboBox1_TextChanged`-Ereignishandler wird angezeigt.  
   
-12. Ersetzen Sie den `ComboBox1_TextChanged`-Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+12. Ersetzen Sie den `ComboBox1_TextChanged` -Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **gekaufte Produkte** Menü mit Bestellungen, die den ausgewählten Kunden betreffen.  
+    - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **gekaufte Produkte** Menü mit Bestellungen, die den ausgewählten Kunden betreffen.  
   
-    -   Aufrufen der Hilfsmethode `PopulateMailItem` und Übergeben des aktuellen Texts, der den Namen des ausgewählten Kunden darstellt. Diese Methode füllt, das für Betreff und Text Felder neuer e-Mail-Nachrichten.  
+    - Aufrufen der Hilfsmethode `PopulateMailItem` und Übergeben des aktuellen Texts, der den Namen des ausgewählten Kunden darstellt. Diese Methode füllt, das für Betreff und Text Felder neuer e-Mail-Nachrichten.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Fügen Sie die folgenden `Click` -Ereignishandler der `CustomerRibbon` Klasse. Dieser Code fügt den Namen ausgewählter Produkte dem Feld "Text" Neuer e-Mail-Nachrichten.  
+13. Fügen Sie der `Click` -Klasse den folgenden `CustomerRibbon` -Ereignishandler hinzu. Dieser Code fügt den Namen ausgewählter Produkte dem Feld "Text" Neuer e-Mail-Nachrichten.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
-14. Fügen Sie der `CustomerRibbon`-Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
+14. Fügen Sie der `CustomerRibbon` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Füllt die neue e-Mail-Nachrichten an-Zeile mit der e-Mail-Adresse des aktuell ausgewählten Kunden.  
+    - Füllt die neue e-Mail-Nachrichten an-Zeile mit der e-Mail-Adresse des aktuell ausgewählten Kunden.  
   
-    -   Fügt Text an den Betreff und Text neuer e-Mail-Nachrichten.  
+    - Fügt Text an den Betreff und Text neuer e-Mail-Nachrichten.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
 ## <a name="test-the-controls-in-the-custom-group"></a>Testen Sie die Steuerelemente in der benutzerdefinierten Gruppe  
  Wenn Sie ein neues e-Mail-Formular in Outlook öffnen, eine benutzerdefinierte Gruppe mit dem Namen **Kundenbestellungen** angezeigt wird, auf die **Nachrichten** Registerkarte des Menübands.  

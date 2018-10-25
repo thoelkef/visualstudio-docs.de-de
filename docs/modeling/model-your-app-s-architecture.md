@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855076"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer erfüllen müssen, können Sie Modelle als Teil der Beschreibung von Gesamtstruktur und das Verhalten des Softwaresystems oder der Anwendung in Visual Studio erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
@@ -54,30 +54,30 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
  Das Anforderungsmodell stellt die folgenden wesentlichen Informationen bereit:
 
--   Bereitgestellte Schnittstellen. Eine bereitgestellte Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente für die Benutzer bereitstellen muss, unabhängig davon, ob es sich um menschliche Benutzer oder andere Softwarekomponenten handelt.
+- Bereitgestellte Schnittstellen. Eine bereitgestellte Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente für die Benutzer bereitstellen muss, unabhängig davon, ob es sich um menschliche Benutzer oder andere Softwarekomponenten handelt.
 
--   Erforderliche Schnittstellen. Eine erforderliche Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente verwenden kann. In einigen Fällen können Sie alle diese Dienste als Teil des eigenen Systems entwerfen. In anderen Fällen, insbesondere wenn Sie eine Komponente entwerfen, die mit anderen Komponenten in vielen Konfigurationen kombiniert werden kann, wird die erforderliche Schnittstelle auf Grundlage externer Aspekte festgelegt.
+- Erforderliche Schnittstellen. Eine erforderliche Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente verwenden kann. In einigen Fällen können Sie alle diese Dienste als Teil des eigenen Systems entwerfen. In anderen Fällen, insbesondere wenn Sie eine Komponente entwerfen, die mit anderen Komponenten in vielen Konfigurationen kombiniert werden kann, wird die erforderliche Schnittstelle auf Grundlage externer Aspekte festgelegt.
 
--   Servicequalitätsanforderungen. Leistung, Sicherheit, Stabilität und andere Ziele und Einschränkungen, die das System erfüllen muss.
+- Servicequalitätsanforderungen. Leistung, Sicherheit, Stabilität und andere Ziele und Einschränkungen, die das System erfüllen muss.
 
- Das Anforderungsmodell wird aus der Perspektive der Benutzer des Systems geschrieben, bei denen es sich um Personen oder andere Softwarekomponenten handeln kann. Die internen Funktionen des Systems sind ihnen nicht bekannt. Im Gegensatz dazu soll ein Architekturmodell die internen Funktionen beschreiben und darstellen, wie sie die Anforderungen der Benutzer erfüllen.
+  Das Anforderungsmodell wird aus der Perspektive der Benutzer des Systems geschrieben, bei denen es sich um Personen oder andere Softwarekomponenten handeln kann. Die internen Funktionen des Systems sind ihnen nicht bekannt. Im Gegensatz dazu soll ein Architekturmodell die internen Funktionen beschreiben und darstellen, wie sie die Anforderungen der Benutzer erfüllen.
 
- Die Anforderungen und Architekturmodelle sollten getrennt bleiben, um das Erörtern der Anforderungen mit den Benutzern zu erleichtern. Dies erleichtert es außerdem, den Entwurf umzugestalten und alternative Architekturen zu erwägen, während die Anforderungen unverändert beibehalten werden.
+  Die Anforderungen und Architekturmodelle sollten getrennt bleiben, um das Erörtern der Anforderungen mit den Benutzern zu erleichtern. Dies erleichtert es außerdem, den Entwurf umzugestalten und alternative Architekturen zu erwägen, während die Anforderungen unverändert beibehalten werden.
 
- Der Umfang an Informationen, die Sie in ein Anforderungsmodell oder ein Architekturmodell aufnehmen sollten, hängt vom Umfang des Projekts sowie der Größe des Teams und der räumlichen Verteilung seiner Mitglieder ab. Ein kleines Team in einem kurzen Projekt braucht eventuell lediglich ein Klassendiagramm der Geschäftskonzepte und einige Entwurfsmuster zu skizzieren; ein großes Projekt, das über mehr als einen Bereich ausgeliefert wurde, wird deutlich mehr Details erfordern.
+  Der Umfang an Informationen, die Sie in ein Anforderungsmodell oder ein Architekturmodell aufnehmen sollten, hängt vom Umfang des Projekts sowie der Größe des Teams und der räumlichen Verteilung seiner Mitglieder ab. Ein kleines Team in einem kurzen Projekt braucht eventuell lediglich ein Klassendiagramm der Geschäftskonzepte und einige Entwurfsmuster zu skizzieren; ein großes Projekt, das über mehr als einen Bereich ausgeliefert wurde, wird deutlich mehr Details erfordern.
 
 ## <a name="BigDecisions"></a> Architektonische Muster
  Sie müssen zu einem frühen Zeitpunkt der Entwicklung Optionen für die wichtigsten Technologien und Elemente auswählen, von denen der Entwurf abhängt. Diese Optionen müssen in den folgenden Bereichen ausgewählt werden:
 
--   Basistechnologie, z. B. die Auswahl zwischen einer Datenbank und ein Dateisystem und die Wahl zwischen einer netzwerkanwendung oder eines Webclients und so weiter.
+- Basistechnologie, z. B. die Auswahl zwischen einer Datenbank und ein Dateisystem und die Wahl zwischen einer netzwerkanwendung oder eines Webclients und so weiter.
 
--   Frameworkoptionen, z. B. Auswahl von Windows Workflow Foundation oder ADO.NET Entity Framework.
+- Frameworkoptionen, z. B. Auswahl von Windows Workflow Foundation oder ADO.NET Entity Framework.
 
--   Optionen für Integrationsmethoden, z. B. Auswahl eines Enterprise Service Bus oder eines Punkt-zu-Punkt-Channels.
+- Optionen für Integrationsmethoden, z. B. Auswahl eines Enterprise Service Bus oder eines Punkt-zu-Punkt-Channels.
 
- Diese Optionen werden häufig von Servicequalitätsanforderungen bestimmt, z. B. Größe und Flexibilität, und die Auswahl kann getroffen werden, bevor die Anforderungsdetails bekannt sind. In einem umfangreichen System besteht eine enge Wechselbeziehung zwischen der Konfiguration von Hardware und Software.
+  Diese Optionen werden häufig von Servicequalitätsanforderungen bestimmt, z. B. Größe und Flexibilität, und die Auswahl kann getroffen werden, bevor die Anforderungsdetails bekannt sind. In einem umfangreichen System besteht eine enge Wechselbeziehung zwischen der Konfiguration von Hardware und Software.
 
- Die von Ihnen ausgewählten Optionen wirken sich darauf aus, wie Sie das Architekturmodell verwenden und interpretieren. Beispielsweise können in einem System mit einer Datenbank Zuordnungen in einem Klassendiagramm Beziehungen oder Fremdschlüssel in der Datenbank darstellen, während in einem auf XML-Dateien basierenden System Zuordnungen Querverweise angeben können, die XPath verwenden. In einem verteilten System können Meldungen in einem Sequenzdiagramm Meldungen in einer Verbindung darstellen, und in einer unabhängigen Anwendung können sie Funktionsaufrufe darstellen.
+  Die von Ihnen ausgewählten Optionen wirken sich darauf aus, wie Sie das Architekturmodell verwenden und interpretieren. Beispielsweise können in einem System mit einer Datenbank Zuordnungen in einem Klassendiagramm Beziehungen oder Fremdschlüssel in der Datenbank darstellen, während in einem auf XML-Dateien basierenden System Zuordnungen Querverweise angeben können, die XPath verwenden. In einem verteilten System können Meldungen in einem Sequenzdiagramm Meldungen in einer Verbindung darstellen, und in einer unabhängigen Anwendung können sie Funktionsaufrufe darstellen.
 
 ## <a name="Patterns"></a> Entwurfsmuster
  Ein Entwurfsmuster skizziert den Entwurf eines bestimmten Aspekts der Software, insbesondere eines Aspekts, der in verschiedenen Teilen des Systems vorhanden ist. Wenn Sie im gesamten Projekt eine einheitliche Vorgehensweise anwenden, können Sie den Aufwand für den Entwurf verringern, die Konsistenz der Benutzeroberfläche sicherstellen und den Aufwand für das Verstehen und Ändern des Codes reduzieren.

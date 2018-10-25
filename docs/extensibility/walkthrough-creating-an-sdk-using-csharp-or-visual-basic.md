@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835151"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen eines SDKS mit c# oder Visual Basic
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erstellen eines einfachen Math-Bibliothek-SDK und klicken Sie dann das SDK als ein Visual Studio-Erweiterung (VSIX)-Paket. Sie müssen die folgenden Schritte auszuführen:  
@@ -26,34 +26,34 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
 -   [Erstellen Sie das Erweiterungsprojekt SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
 -   [Zum Erstellen einer Beispielapp verwendet, die die Bibliothek.](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ##  <a name="createClassLibrary"></a> So erstellen Sie die SimpleMath Windows Runtime-Komponente  
   
-1.  Wählen Sie auf der Menüleiste **Datei** > **neu** > **neues Projekt**.  
+1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **neues Projekt**.  
   
-2.  Erweitern Sie in der Liste der Vorlagen, **Visual C#-** oder **Visual Basic**, wählen Sie die **Windows Store** Knoten, und wählen Sie dann die **Komponente für Windows-Runtime** Vorlage.  
+2. Erweitern Sie in der Liste der Vorlagen, **Visual C#-** oder **Visual Basic**, wählen Sie die **Windows Store** Knoten, und wählen Sie dann die **Komponente für Windows-Runtime** Vorlage.  
   
-3.  In der **Namen** geben **SimpleMath**, und wählen Sie dann die **OK** Schaltfläche.  
+3. In der **Namen** geben **SimpleMath**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SimpleMath** Projektknoten, und wählen Sie dann **Eigenschaften**.  
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SimpleMath** Projektknoten, und wählen Sie dann **Eigenschaften**.  
   
-5.  Benennen Sie **"Class1.cs"** zu **Arithmetic.cs** und aktualisieren, um entsprechend folgendem Code:  
+5. Benennen Sie **"Class1.cs"** zu **Arithmetic.cs** und aktualisieren, um entsprechend folgendem Code:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Lösung "SimpleMath"** Knoten, und wählen Sie dann **Configuration Manager**.  
+6. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Lösung "SimpleMath"** Knoten, und wählen Sie dann **Configuration Manager**.  
   
-     Die **Configuration Manager** Dialogfeld wird geöffnet.  
+    Die **Configuration Manager** Dialogfeld wird geöffnet.  
   
-7.  In der **aktive Projektmappenkonfiguration** wählen **Version**.  
+7. In der **aktive Projektmappenkonfiguration** wählen **Version**.  
   
-8.  In der **Konfiguration** Spalte überprüfen Sie, ob **SimpleMath** Zeile nastaven NA hodnotu **Version**, und wählen Sie dann die **schließen** Schaltfläche zum Akzeptieren der Ändern Sie.  
+8. In der **Konfiguration** Spalte überprüfen Sie, ob **SimpleMath** Zeile nastaven NA hodnotu **Version**, und wählen Sie dann die **schließen** Schaltfläche zum Akzeptieren der Ändern Sie.  
   
-    > [!IMPORTANT]
-    >  Das SDK für die Komponente SimpleMath enthält nur eine Konfiguration. Diese Konfiguration muss die endgültige Produktversion sein, oder apps, die die Komponente wird nicht Zertifizierung übergeben, für die[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  Das SDK für die Komponente SimpleMath enthält nur eine Konfiguration. Diese Konfiguration muss die endgültige Produktversion sein, oder apps, die die Komponente wird nicht Zertifizierung übergeben, für die[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SimpleMath** Projektknoten, und wählen Sie dann **erstellen**.  
   
@@ -154,23 +154,23 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
   
 ##  <a name="createSample"></a> Zum Erstellen einer Beispielapp verwendet, die die Bibliothek.  
   
-1.  Wählen Sie auf der Menüleiste **Datei** > **neu** > **neues Projekt**.  
+1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **neues Projekt**.  
   
-2.  Erweitern Sie in der Liste der Vorlagen, **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **Windows Store** Knoten.  
+2. Erweitern Sie in der Liste der Vorlagen, **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **Windows Store** Knoten.  
   
-3.  Wählen Sie die **leere App** Vorlage, nennen Sie das Projekt **ArithmeticUI**, und wählen Sie dann die **OK** Schaltfläche.  
+3. Wählen Sie die **leere App** Vorlage, nennen Sie das Projekt **ArithmeticUI**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **ArithmeticUI** Projekt, und wählen Sie dann **hinzufügen** > **Verweis**.  
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **ArithmeticUI** Projekt, und wählen Sie dann **hinzufügen** > **Verweis**.  
   
-5.  Erweitern Sie in der Liste der Verweistypen, **Windows**, und wählen Sie dann **Erweiterungen**.  
+5. Erweitern Sie in der Liste der Verweistypen, **Windows**, und wählen Sie dann **Erweiterungen**.  
   
-6.  Wählen Sie im Detailbereich die **einfache mathematische SDK** Erweiterung.  
+6. Wählen Sie im Detailbereich die **einfache mathematische SDK** Erweiterung.  
   
-     Weitere Informationen zu Ihrem SDK wird angezeigt. Sie können die **mehr Informationen** Link zum Öffnen https://msdn.microsoft.com/, wie Sie in der SDKManifest.xml-Datei weiter oben in dieser exemplarischen Vorgehensweise angegeben.  
+    Weitere Informationen zu Ihrem SDK wird angezeigt. Sie können die **mehr Informationen** Link zum Öffnen https://msdn.microsoft.com/, wie Sie in der SDKManifest.xml-Datei weiter oben in dieser exemplarischen Vorgehensweise angegeben.  
   
-7.  In der **Verweis-Manager** wählen Sie im Dialogfeld die **einfache mathematische SDK** aus, und wählen Sie dann die **OK** Schaltfläche.  
+7. In der **Verweis-Manager** wählen Sie im Dialogfeld die **einfache mathematische SDK** aus, und wählen Sie dann die **OK** Schaltfläche.  
   
-8.  Wählen Sie auf der Menüleiste **Ansicht** > **Objektkatalog**.  
+8. Wählen Sie auf der Menüleiste **Ansicht** > **Objektkatalog**.  
   
 9. In der **Durchsuchen** wählen **einfache mathematische**.  
   
@@ -239,7 +239,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
   
      Das richtige Ergebnis wird angezeigt.  
   
- Sie haben erfolgreich erstellt und verwendet eine Erweiterungs-SDK.  
+    Sie haben erfolgreich erstellt und verwendet eine Erweiterungs-SDK.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen eines SDKS mit C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

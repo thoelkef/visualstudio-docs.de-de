@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842638"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  Wenn Sie einen Einzelschritt in eine Codezeile durchführen, führt der Debugger eine der folgenden Aktionen aus:  
   
--   Wenn die folgende Anweisung kein Aufruf einer Funktion Ihrer Projektmappe ist, führt der Debugger die Anweisung aus, wechselt zur folgenden Anweisung und hält dann die Ausführung an.  
+- Wenn die folgende Anweisung kein Aufruf einer Funktion Ihrer Projektmappe ist, führt der Debugger die Anweisung aus, wechselt zur folgenden Anweisung und hält dann die Ausführung an.  
   
--   Wenn es sich bei der Anweisung um den Aufruf einer Funktion in der Projektmappe handelt, wechselt der Debugger in den Einstiegspunkt der aufgerufenen Funktion und hält dann die Ausführung an.  
+- Wenn es sich bei der Anweisung um den Aufruf einer Funktion in der Projektmappe handelt, wechselt der Debugger in den Einstiegspunkt der aufgerufenen Funktion und hält dann die Ausführung an.  
   
- Fahren Sie mit den Einzelschritten der Anweisungen von "Example1" fort, bis Sie den Endpunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Methode hervor.  
+  Fahren Sie mit den Einzelschritten der Anweisungen von "Example1" fort, bis Sie den Endpunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Methode hervor.  
   
- **Überprüfen der Variablenwerte in den Datentipps.** Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name, der Wert und der Typ der Variablen in einem Datentipp angezeigt.  
+  **Überprüfen der Variablenwerte in den Datentipps.** Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name, der Wert und der Typ der Variablen in einem Datentipp angezeigt.  
   
- ![Debugger Datentipp –](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Debugger Datentipp –](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Bewegen Sie die Maus auf die Variable `a`. Beachten Sie den Namen, den Wert und den Datentyp. Bewegen Sie die Maus auf die Variable `methodTrack`. Beachten Sie erneut den Namen, den Wert und den Datentyp.  
+  Bewegen Sie die Maus auf die Variable `a`. Beachten Sie den Namen, den Wert und den Datentyp. Bewegen Sie die Maus auf die Variable `methodTrack`. Beachten Sie erneut den Namen, den Wert und den Datentyp.  
   
- **Überprüfen der Variablenwerte im Lokalfenster.** On the **Debuggen** auf **Fenster**, und wählen Sie **Lokale**aus. (Tastatur: Alt+4).  
+  **Überprüfen der Variablenwerte im Lokalfenster.** On the **Debuggen** auf **Fenster**, und wählen Sie **Lokale**aus. (Tastatur: Alt+4).  
   
- ![Fenster "lokal"](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Fenster "lokal"](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- Das Lokalfenster ist eine Strukturansicht der Parameter und Variablen der Funktion. Die Eigenschaften einer Objektvariablen sind untergeordnete Knoten des Objekts selbst. Die `this` -Variable ist ein ausgeblendeter Parameter in den einzelnen Objektmethoden, der das Objekt selbst darstellt. In diesem Fall entspricht die Variable der MainPage-Klasse. Da `methodTrack` ein Member der MainPage-Klasse ist, werden der Wert und Datentyp in einer Zeile unterhalb von `this`aufgeführt. Erweitern Sie den Knoten `this` , um die `methodTrack` -Informationen anzuzeigen.  
+  Das Lokalfenster ist eine Strukturansicht der Parameter und Variablen der Funktion. Die Eigenschaften einer Objektvariablen sind untergeordnete Knoten des Objekts selbst. Die `this` -Variable ist ein ausgeblendeter Parameter in den einzelnen Objektmethoden, der das Objekt selbst darstellt. In diesem Fall entspricht die Variable der MainPage-Klasse. Da `methodTrack` ein Member der MainPage-Klasse ist, werden der Wert und Datentyp in einer Zeile unterhalb von `this`aufgeführt. Erweitern Sie den Knoten `this` , um die `methodTrack` -Informationen anzuzeigen.  
   
- **Hinzufügen einer Überwachung für die "methodTrack"-Variable.** Die `methodWatch` -Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Methoden aufzuzeigen. Um das Anzeigen des Variablenwerts zu vereinfachen, fügen Sie diesen einem Überwachungsfenster hinzu. Klicken Sie im Lokalfenster mit der rechten Maustaste auf den Variablennamen, und wählen Sie dann **Überwachung hinzufügen**aus.  
+  **Hinzufügen einer Überwachung für die "methodTrack"-Variable.** Die `methodWatch` -Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Methoden aufzuzeigen. Um das Anzeigen des Variablenwerts zu vereinfachen, fügen Sie diesen einem Überwachungsfenster hinzu. Klicken Sie im Lokalfenster mit der rechten Maustaste auf den Variablennamen, und wählen Sie dann **Überwachung hinzufügen**aus.  
   
- ![Fenster "überwachen"](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Fenster "überwachen"](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- In einem Überwachungsfenster können mehrere Variablen überwacht werden. Die Werte der überwachten Variablen werden wie die Werte in den Lokal- und Datentippfenstern aktualisiert, wenn die Ausführung angehalten wird. Sie können dem Überwachungsfenster zudem Variablen vom Code-Editor aus hinzufügen. Wählen Sie die zu überwachende Variable aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Überwachung hinzufügen**aus.  
+  In einem Überwachungsfenster können mehrere Variablen überwacht werden. Die Werte der überwachten Variablen werden wie die Werte in den Lokal- und Datentippfenstern aktualisiert, wenn die Ausführung angehalten wird. Sie können dem Überwachungsfenster zudem Variablen vom Code-Editor aus hinzufügen. Wählen Sie die zu überwachende Variable aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Überwachung hinzufügen**aus.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Einzel- und Prozedurschritte für Methoden  
  Im Gegensatz zu einem von einer übergeordneten Methode aufgerufenen Einzelschritt einer Methode wird bei einem Prozedurschritt die untergeordnete Methode ausgeführt und anschließend beim Fortsetzen der übergeordneten Methode die Ausführung in der aufrufenden Methode abgebrochen. Sie können für eine Methode einen Prozedurschritt ausführen, wenn Sie mit der Funktionsweise der Methode vertraut und sicher sind, dass dessen Ausführung das zu untersuchende Problem nicht beeinflusst.  

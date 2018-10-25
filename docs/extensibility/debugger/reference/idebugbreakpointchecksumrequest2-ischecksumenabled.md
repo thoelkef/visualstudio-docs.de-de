@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34afc9af142371537c82effbfb8c636bcba09dbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306a20b3e2f99acd883332b43751f248db2bf5c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863125"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 Bestimmt, ob die Prüfsumme für dieses Dokument aktiviert ist.  
@@ -39,10 +39,10 @@ public int IsChecksumEnabled(
   
 #### <a name="parameters"></a>Parameter  
  `pfChecksumEnabled`  
- [out] Gibt TRUE zurück, wenn die Prüfsumme aktiviert ist. Andernfalls wird "false" zurückgegeben.  
+ [out] Gibt TRUE zurück, wenn die Prüfsumme aktiviert ist. Andernfalls wird FALSE zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

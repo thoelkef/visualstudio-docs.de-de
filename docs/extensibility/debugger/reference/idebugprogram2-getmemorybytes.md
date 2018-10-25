@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
+title: IDebugProgram2::GetMemoryBytes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289a1f7e2802fcf8187f74ec803af71cfb4a6bc0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceee9edae9a4cc36e08d3692bea17b288d44c862
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920541"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-Ruft die von der Anwendung belegt Speicherbytes ab.  
+Ruft das Byte Arbeitsspeicher durch das Programm ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int GetMemoryBytes(
   
 #### <a name="parameters"></a>Parameter  
  `ppMemoryBytes`  
- [out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt, das die Speicherbytes gesamt des Programms darstellt.  
+ [out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, das die Bytes der Arbeitsspeicher des Programms darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Speicherbytes, dargestellt durch die [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt ist für das Programm Image im Arbeitsspeicher und nicht lokalen Speicher, der belegt wurde, wenn das Programm ausgeführt wurde.  
+ Der Speicher-Bytes dargestellt durch die [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) Objekt ist für das Programm Bild im Arbeitsspeicher und keinen Arbeitsspeicher, der belegt wurde, wenn das Programm ausgeführt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

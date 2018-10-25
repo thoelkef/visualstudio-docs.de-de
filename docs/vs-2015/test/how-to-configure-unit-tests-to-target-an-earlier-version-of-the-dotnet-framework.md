@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892791"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
   
  Sie können Komponententestprojekte erstellen, die auf bestimmte Versionen von .NET Framework abzielen. Die Zielversion muss 3.5 oder höher sein und darf keine Clientversion sein. Visual Studio ermöglicht die folgende grundlegende Unterstützung für Komponententests, die auf bestimmte Versionen abzielen:  
   
--   Sie können Komponententestprojekte erstellen und sie auf eine bestimmte Version von .NET Framework leiten.  
+- Sie können Komponententestprojekte erstellen und sie auf eine bestimmte Version von .NET Framework leiten.  
   
--   Sie können Komponententests ausführen, die auf eine bestimmte Version von .NET Framework in Visual Studio auf Ihrem lokalen Computer abzielen.  
+- Sie können Komponententests ausführen, die auf eine bestimmte Version von .NET Framework in Visual Studio auf Ihrem lokalen Computer abzielen.  
   
--   Sie können Komponententests ausführen, die mithilfe von „MSTest.exe“ über die Eingabeaufforderung auf eine bestimmte Version von .NET Framework abzielen.  
+- Sie können Komponententests ausführen, die mithilfe von „MSTest.exe“ über die Eingabeaufforderung auf eine bestimmte Version von .NET Framework abzielen.  
   
--   Sie können Komponententests auf einen Build-Agent als Teil eines Builds ausführen.  
+- Sie können Komponententests auf einen Build-Agent als Teil eines Builds ausführen.  
   
- **Testen von SharePoint-Anwendungen**  
+  **Testen von SharePoint-Anwendungen**  
   
- Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. [!INCLUDE[crabout](../includes/crabout-md.md)] Informationen zum Entwickeln von SharePoint-Anwendung mithilfe von Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Erstellen und Debuggen von SharePoint-Lösungen](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) und [Überprüfen und Debuggen von SharePoint-Code](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. [!INCLUDE[crabout](../includes/crabout-md.md)] Informationen zum Entwickeln von SharePoint-Anwendung mithilfe von Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Erstellen und Debuggen von SharePoint-Lösungen](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) und [Überprüfen und Debuggen von SharePoint-Code](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Einschränkungen**  
+  **Einschränkungen**  
   
- Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden von früheren .NET Framework-Versionen umleiten:  
+  Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden von früheren .NET Framework-Versionen umleiten:  
   
--   In .NET Framework 3.5 wird die Festlegung von Zielversionen für Testprojekte unterstützt, die nur Komponententests enthalten. .NET Framework 3.5 unterstützt keine anderen Testtypen, z.B. Tests der programmierten UI oder Auslastungstests. Die Umleitung ist für Testtypen, die keine Komponententests sind, blockiert.  
+- In .NET Framework 3.5 wird die Festlegung von Zielversionen für Testprojekte unterstützt, die nur Komponententests enthalten. .NET Framework 3.5 unterstützt keine anderen Testtypen, z.B. Tests der programmierten UI oder Auslastungstests. Die Umleitung ist für Testtypen, die keine Komponententests sind, blockiert.  
   
--   Ausführung von Tests, die auf eine frühere Version von .NET Framework abzielen, ist nur im standardmäßigen Hostadapter unterstützt. Es wird nicht im Hostadapter „ASP.NET“ unterstützt. ASP.NET-Anwendungen, die unter dem Kontext „ASP.NET Development Server“ ausgeführt werden müssen, müssen mit der aktuellen Version von .NET Framework kompatibel sein.  
+- Ausführung von Tests, die auf eine frühere Version von .NET Framework abzielen, ist nur im standardmäßigen Hostadapter unterstützt. Es wird nicht im Hostadapter „ASP.NET“ unterstützt. ASP.NET-Anwendungen, die unter dem Kontext „ASP.NET Development Server“ ausgeführt werden müssen, müssen mit der aktuellen Version von .NET Framework kompatibel sein.  
   
--   Die Unterstützung der Datensammlung ist deaktiviert, wenn Sie Tests ausführen, die die Festlegung von Zielversionen in .NET Framework 3.5 unterstützen. Sie können Code Coverage mithilfe der Visual Studio-Befehlszeilentools ausführen.  
+- Die Unterstützung der Datensammlung ist deaktiviert, wenn Sie Tests ausführen, die die Festlegung von Zielversionen in .NET Framework 3.5 unterstützen. Sie können Code Coverage mithilfe der Visual Studio-Befehlszeilentools ausführen.  
   
--   Komponententests, die .NET Framework 3.5 verwenden, können nicht auf einem Remotecomputer ausgeführt.  
+- Komponententests, die .NET Framework 3.5 verwenden, können nicht auf einem Remotecomputer ausgeführt.  
   
--   Sie können keine Komponententests zu früheren Clientversionen des Frameworks leiten.  
+- Sie können keine Komponententests zu früheren Clientversionen des Frameworks leiten.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual Basic-Komponententestprojekte  
   

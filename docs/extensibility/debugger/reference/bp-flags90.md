@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS90 | Microsoft Docs
+title: BP_FLAGS90 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8153f3fb2419e26f7e7d3a741ae4c79c9272a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32109a6065811c5f36cf00b0287291ca760eb7c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862696"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
-Listet die gültigen Werte für optionale Kennzeichen. Das optionalen Kennzeichen können verwendet werden, um zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen. Diese Enumeration erweitert die [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration.  
+Listet die gültigen Werte für optionale Kennzeichen. Die optionalen Kennzeichen können verwendet werden, um zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen. Diese Enumeration erweitert die [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,16 +54,16 @@ public enum enum_BP_FLAGS90
   
 #### <a name="parameters"></a>Parameter  
  BP90_FLAG_NONE  
- Gibt kein Haltepunkt-Flag an.  
+ Gibt kein Flag Haltepunkt an.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- Gibt an, dass den Haltepunkt mithilfe der Dokumentposition Debugging-Modul (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte in Skripts orientierten Quelldateien z. B. Active Server Pages (ASP).  
+ Gibt an, dass den Haltepunkt mit die Dokumentposition die Debug-Engine (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte, die in den Skript-orientierten Quelldateien wie z. B. Active Server Pages (ASP).  
   
  BP90_FLAG_DONT_STOP  
- Gibt an, dass der Haltepunkt von Debugging-Modul verarbeitet werden sollen, aber das Debugmodul letztendlich nicht es beendet werden soll. d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt nicht gesendet werden soll. Dieses Flag dient in erster Linie mit nachverfolgungspunkte verwendet werden soll.  
+ Gibt an, dass der Haltepunkt von der Debug-Engine verarbeitet werden sollen, aber die Debug-Engine letztlich nicht es beendet werden soll. d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt nicht gesendet werden soll. Dieses Flag dient in erster Linie mit Punkten der Ablaufverfolgung verwendet werden.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- Von der systemeigenen Debugging-Modul verwendet, um festzustellen, ob es sich bei der schrittweisen Zustand gelöscht werden soll. Es unterscheidet sich vom BP90_FLAG_DONT_STOP, da BP90_FLAG_DONT_STOP nicht festgelegt ist, wenn die Trace-Punkt ein Makro ausgeführt wird.  
+ Durch die systemeigenen Debug-Engine verwendet, um festzustellen, ob es sich bei der schrittweisen Ausführung Zustand gelöscht werden sollen. Es unterscheidet sich von BP90_FLAG_DONT_STOP BP90_FLAG_DONT_STOP nicht festgelegt ist, wenn der Ablaufverfolgungspunkt ein Makro ausgeführt wird.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Msdbg90.h  

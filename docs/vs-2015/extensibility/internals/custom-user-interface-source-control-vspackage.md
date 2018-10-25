@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852257"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Benutzeroberfläche (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Eine VSPackage deklariert seine Menüelemente und deren Standardstatus über die
   
  Die folgende Liste enthält die Schnittstellen, die von den aktiven Zustand eines Quellcodeverwaltungs-VSPackage betroffen sind:  
   
--   Verfolgen Sie Projektdokumente Ereignisse können.  
+- Verfolgen Sie Projektdokumente Ereignisse können.  
   
--   Projektmappen-Ereignissen.  
+- Projektmappen-Ereignissen.  
   
--   Lösung Persistenz-Schnittstellen. Wenn inaktiv ist, sollte die Pakete nicht in sln- und SUO-Dateien schreiben.  
+- Lösung Persistenz-Schnittstellen. Wenn inaktiv ist, sollte die Pakete nicht in sln- und SUO-Dateien schreiben.  
   
--   Eigenschaftenextender.  
+- Eigenschaftenextender.  
   
- Die erforderlichen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, und auch alle optionalen Schnittstellen, die Datenquellen-Steuerelement zugeordnet werden nicht aufgerufen, wenn das Quellcodeverwaltungs-VSPackage aktiv ist.  
+  Die erforderlichen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, und auch alle optionalen Schnittstellen, die Datenquellen-Steuerelement zugeordnet werden nicht aufgerufen, wenn das Quellcodeverwaltungs-VSPackage aktiv ist.  
   
- Wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE gestartet wird, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird von der befehlsbenutzeroberflächenkontext auf die ID des standardmäßigen Quellcodeverwaltungs-VSPackage-ID. Dies bewirkt, dass die statische Benutzeroberfläche, der das aktive Quellcodeverwaltungs-VSPackage in der IDE angezeigt werden, ohne Sie zu das VSPackage laden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hält für das VSPackage, um beim Registrieren [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> bevor er alle Aufrufe für das VSPackage ausführt.  
+  Wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE gestartet wird, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird von der befehlsbenutzeroberflächenkontext auf die ID des standardmäßigen Quellcodeverwaltungs-VSPackage-ID. Dies bewirkt, dass die statische Benutzeroberfläche, der das aktive Quellcodeverwaltungs-VSPackage in der IDE angezeigt werden, ohne Sie zu das VSPackage laden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hält für das VSPackage, um beim Registrieren [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> bevor er alle Aufrufe für das VSPackage ausführt.  
   
- Die folgende Tabelle beschreibt spezifische Details zur Funktionsweise des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE Blendet Sie aus verschiedenen UI-Elemente.  
+  Die folgende Tabelle beschreibt spezifische Details zur Funktionsweise des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE Blendet Sie aus verschiedenen UI-Elemente.  
   
 |UI-Element|Beschreibung|  
 |-------------|-----------------|  

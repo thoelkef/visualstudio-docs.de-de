@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3268bd37a0fd0038901e3e815dba290a605638c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862848"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Gewusst wie: Anwenden eines Shaders auf ein 3D-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor verwendet wird, um einen 
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>Anwenden eines Shaders auf ein 3D-Modell  
   
-1.  Beginnen Sie mit einer 3D-Szene, die ein oder mehrere Modelle enthält. Wenn Sie keine geeignete 3D-Szene haben, erstellen Sie eine wie in [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md) beschrieben wird. Sie müssen ebenso über einen DGSL-Shader verfügen, den Sie auf das Modell anwenden können. Wenn Sie keinen geeigneten Shader haben, erstellen Sie einen wie es in [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md), und stellen Sie sicher, dass er in einer Datei gespeichert wurde, bevor Sie fortfahren.  
+1. Beginnen Sie mit einer 3D-Szene, die ein oder mehrere Modelle enthält. Wenn Sie keine geeignete 3D-Szene haben, erstellen Sie eine wie in [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md) beschrieben wird. Sie müssen ebenso über einen DGSL-Shader verfügen, den Sie auf das Modell anwenden können. Wenn Sie keinen geeigneten Shader haben, erstellen Sie einen wie es in [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md), und stellen Sie sicher, dass er in einer Datei gespeichert wurde, bevor Sie fortfahren.  
   
-2.  Wählen Sie das Modell, auf das Sie den Shader anwenden möchten, im Modus **Auswählen** aus. Anschließend legen Sie im Fenster **Eigenschaften** unter der Eigenschaft **Dateiname** in der Eigenschaftsgruppe **Effekt** den DGSL-Shader fest, den Sie auf das Modell anwenden möchten.  
+2. Wählen Sie das Modell, auf das Sie den Shader anwenden möchten, im Modus **Auswählen** aus. Anschließend legen Sie im Fenster **Eigenschaften** unter der Eigenschaft **Dateiname** in der Eigenschaftsgruppe **Effekt** den DGSL-Shader fest, den Sie auf das Modell anwenden möchten.  
   
- Hier finden Sie ein Modell, bei dem der grundlegende Farbeffekt angewendet wurde:  
+   Hier finden Sie ein Modell, bei dem der grundlegende Farbeffekt angewendet wurde:  
   
- ![3D-Szene zur Darstellung des grundlegenden Farbeffekts](../designers/media/digit-3d-model-effect.png "Digit-3D-Modelleffekt")  
+   ![3D-Szene zur Darstellung des grundlegenden Farbeffekts](../designers/media/digit-3d-model-effect.png "Digit-3D-Modelleffekt")  
   
- Nachdem Sie einen Shader auf ein Modell angewendet haben, können Sie es im Shader-Designer durch Auswählen des Modells öffnen und anschließend die Schaltfläche „Ellipse“ (**...**) im Fenster **Eigenschaften** unter der Eigenschaft **(Erweitert)** der Eigenschaftsgruppe **Effekt** auswählen.  
+   Nachdem Sie einen Shader auf ein Modell angewendet haben, können Sie es im Shader-Designer durch Auswählen des Modells öffnen und anschließend die Schaltfläche „Ellipse“ (**...**) im Fenster **Eigenschaften** unter der Eigenschaft **(Erweitert)** der Eigenschaftsgruppe **Effekt** auswählen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md)   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950653"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Verwenden von Azure Test Plans anstelle von Lab Management für automatisierte Tests
 
@@ -27,7 +27,7 @@ Wenn Sie Microsoft Test Manager (MTM) und Lab Management für automatisierte Tes
 MTM und Lab Management basieren zum automatischen Erstellen, Bereitstellen und Testen Ihrer Anwendungen auf einer XAML-Builddefinition. Der XAML-Build stützt sich zum Erreichen dieses Ziels auf verschiedene Konstrukte in MTM, wie z.B. einer Lab-Umgebung, Testsammlungen und Testeinstellungen, sowie auf verschiedenen Infrastrukturkomponenten, wie z.B. einen Buildcontroller, Build-Agents, Testcontroller und Test-Agents. Sie können das Gleiche mit weniger Schritten mithilfe der Buildverwaltung oder Release Management in TFS und Azure Pipelines erzielen.
 
 | Schritte | Mit XAML Build | Mit Build oder Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Identifizieren der Computer, auf denen der Build bereitgestellt und Tests ausgeführt werden sollen. | Erstellen einer Standard-Lab-Umgebung in MTM mit diesen Computern. | n/v |
 | Identifizieren der auszuführenden Tests. | Erstellen Sie eine Testsammlung in MTM, erstellen Sie Testfälle, und ordnen Sie jedem Testfall Automatisierung zu. Erstellen Sie Testeinstellungen in MTM, welche die Rolle der Computer in der Lab-Umgebung identifizieren, auf denen die Tests ausgeführt werden sollen. | Erstellen Sie auf die gleiche Weise eine automatisierte Testsammlung in MTM, wenn Sie Ihre Tests über Testpläne verwalten möchten. Alternativ können Sie diesen Schritt überspringen, wenn Sie die Tests direkt aus den von Ihren Builds erzeugten Testbinärdateien ausführen möchten. In keinem der Fälle ist es notwendig, Testeinstellungen zu erstellen. |
 | Automatisieren von Bereitstellung und Testen. | Erstellen Sie eine XAML-Builddefinition mit LabDefaultTemplate.*.xaml. Geben Sie Build, Testsammlungen und Lab-Umgebung in der Builddefinition an. | Erstellen Sie eine [Build- oder Releasepipeline](/azure/devops/pipelines/index?view=vsts) mit einer einzigen Umgebung. Führen Sie das gleiche Bereitstellungsskript (aus der XAML-Builddefinition) mit dem Befehlszeilentask aus, und führen Sie automatische Tests mit den Tasks „Test Agent-Bereitstellung“ und „Funktionstests ausführen“ aus. Geben Sie die Liste der Computer und deren Anmeldeinformationen als Eingaben für diese Tasks an. |
@@ -58,7 +58,7 @@ Allerdings gibt es angesichts der Weiterentwicklung umfangreicherer öffentliche
 Die folgende Tabelle enthält die typischen Aktivitäten, die Sie im Lab-Center ausführen, und zeigt, wie Sie das gleiche Ergebnis mit SCVMM oder Azure (wenn es sich um Infrastrukturverwaltungsaktivitäten handelt) oder mit TFS und Azure DevOps Services (wenn es sich um Test- oder Bereitstellungsaktivitäten handelt) erreichen können:
 
 | Schritte | Mit Lab-Center | Mit Build oder Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Verwalten einer Bibliothek von Umgebungsvorlagen. | Erstellen einer Lab-Umgebung. Installieren Sie erforderliche Software auf den virtuellen Computern. Bereiten Sie das System vor und speichern Sie die Umgebung als Vorlage in der Bibliothek. | Verwenden Sie direkt die SCVMM-Administratorkonsole zum Erstellen und Verwalten von Vorlagen für virtuelle Computer oder Dienstvorlagen. Wenn Sie Azure verwenden, wählen Sie eine der [Azure-Schnellstartvorlagen](https://azure.microsoft.com/resources/templates/) aus. |
 | Erstellen einer Lab-Umgebung. | Wählen Sie in der Bibliothek eine Umgebungsvorlage aus und stellen Sie diese bereit. Geben Sie die erforderlichen Parameter zum Anpassen der Konfiguration der virtuellen Computer an. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um virtuelle Computer oder Dienstinstanzen aus Vorlagen zu erstellen. Verwenden Sie direkt das Azure-Portal, um Ressourcen zu erstellen. Oder erstellen Sie eine Releasedefinition mit einer Umgebung. Verwenden Sie die Azure-Tasks oder Tasks aus der [SCVMM-Integrationserweiterung](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp), um neue virtuelle Computer zu erstellen. Das Erstellen eines neuen Releases dieser Definition entspricht dem Erstellen einer neuen Umgebung in Lab-Center. |
 | Verbinden mit Computern. | Öffnen Sie die Lab-Umgebung im Umgebungs-Viewer. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um eine Verbindung mit dem virtuellen Computer herzustellen. Verwenden Sie alternativ die IP-Adresse oder den DNS-Namen der virtuellen Computer, um Remotedesktopsitzungen zu öffnen. |

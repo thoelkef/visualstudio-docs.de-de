@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903555"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -137,7 +137,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ In den folgenden Abschnitten werden die Elemente einer *RUNSETTINGS*-Datei besch
 Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 
 |Knoten|Standard|Werte|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Das Verzeichnis, in dem die Testergebnisse gespeichert werden.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Durch diese Einstellung wird die Version des Komponententestframeworks angegeben, die zum Ermitteln und Ausführen der Tests verwendet wird. Diese kann sich von der Version der .NET-Plattform unterscheiden, die Sie in den Buildeigenschaften des Komponententestprojekts angeben.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Fügen Sie Ihrer Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.
 Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die über das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> -Attribut verfügen.
 
 |Konfiguration|Standard|Werte|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf **TRUE** fest, um den älteren Testadapter zu verwenden.<br /><br />Beispielsweise können Sie diese Einstellung verwenden, wenn Sie eine *app.config*-Datei für einen Komponententest angegeben haben.<br /><br />Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
 |**IgnoreTestImpact**|False|Die Testauswirkungensfunktion priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder von Microsoft Test-Manager ausgeführt werden. Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](https://msdn.microsoft.com/library/dd286589)|
 |**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Außerdem können Sie eine Testeinstellungsdatei angeben, indem Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** auswählen.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

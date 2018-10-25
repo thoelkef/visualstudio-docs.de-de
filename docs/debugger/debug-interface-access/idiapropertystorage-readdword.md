@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadDWORD | Microsoft Docs
+title: IDiaPropertyStorage::ReadDWORD | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7353ef9f1aca7348adf681bfe627441e409906e6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 109d5c7c63674ac0b1b72f0b2e538e2993552e7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842689"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Liest `DWORD` Werte in einem Eigenschaftensatz.  
@@ -35,13 +35,13 @@ HRESULT ReadDWORD (
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist definiert in WTypes.h als eine `ULONG`).  
+ [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).  
   
  `pValue`  
  [out] Gibt den Wert der Eigenschaft zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` Wenn die Eigenschaft nicht vom Typ `DWORD`.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `DWORD`.  
   
 ## <a name="remarks"></a>Hinweise  
  Ein `DWORD` wird von Windows als 32-Bit-Ganzzahl ohne Vorzeichen definiert.  

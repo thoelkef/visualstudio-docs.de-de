@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913890"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
  In dieser exemplarischen Vorgehensweise wird das inkrementelle Erstellen einer einfachen Projektdatei nur mit einem Texteditor veranschaulicht. In der exemplarischen Vorgehensweise werden die nachfolgenden Schritte ausgeführt:  
   
--   Erstellen einer minimalen Anwendungsquelldatei  
+- Erstellen einer minimalen Anwendungsquelldatei  
   
--   Erstellen einer minimalen MSBuild-Projektdatei  
+- Erstellen einer minimalen MSBuild-Projektdatei  
   
--   Erweitern der PATH-Umgebungsvariablen um MSBuild  
+- Erweitern der PATH-Umgebungsvariablen um MSBuild  
   
--   Erstellen der Anwendung mit der Projektdatei  
+- Erstellen der Anwendung mit der Projektdatei  
   
--   Hinzufügen von Eigenschaften zum Steuern des Builds  
+- Hinzufügen von Eigenschaften zum Steuern des Builds  
   
--   Steuern des Builds durch Ändern von Eigenschaftswerten  
+- Steuern des Builds durch Ändern von Eigenschaftswerten  
   
--   Hinzufügen von Zielen zum Build  
+- Hinzufügen von Zielen zum Build  
   
--   Steuern des Build durch Hinzufügen von Zielen  
+- Steuern des Build durch Hinzufügen von Zielen  
   
--   Inkrementeller Build  
+- Inkrementeller Build  
   
- In dieser exemplarischen Vorgehensweise werden das Erstellen des Projekts an der Eingabeaufforderung und das Untersuchen der Ergebnisse veranschaulicht. Weitere Informationen zu MSBuild und zum Ausführen von MSBuild an der Eingabeaufforderung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  In dieser exemplarischen Vorgehensweise werden das Erstellen des Projekts an der Eingabeaufforderung und das Untersuchen der Ergebnisse veranschaulicht. Weitere Informationen zu MSBuild und zum Ausführen von MSBuild an der Eingabeaufforderung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Framework (Version 2.0, 3.5, 4.0 oder 4.5) installiert haben, da darin MSBuild und der Visual C#-Compiler enthalten sind, die für die exemplarische Vorgehensweise erforderlich sind.  
+  Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Framework (Version 2.0, 3.5, 4.0 oder 4.5) installiert haben, da darin MSBuild und der Visual C#-Compiler enthalten sind, die für die exemplarische Vorgehensweise erforderlich sind.  
   
 ## <a name="creating-a-minimal-application"></a>Erstellen einer minimalen Anwendung  
  Dieser Abschnitt veranschaulicht das Erstellen einer minimalen Visual C#-Anwendungsquelldatei mit einem Texteditor.  
@@ -109,39 +109,39 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>So erstellen Sie eine minimale MSBuild-Projektdatei  
   
-1.  Ersetzen Sie im Texteditor den vorhandenen Text durch die beiden folgenden Zeilen:  
+1. Ersetzen Sie im Texteditor den vorhandenen Text durch die beiden folgenden Zeilen:  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  Fügen Sie diesen `ItemGroup`-Knoten als untergeordnetes Element des `Project`-Knotens ein:  
+2. Fügen Sie diesen `ItemGroup`-Knoten als untergeordnetes Element des `Project`-Knotens ein:  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     Beachten Sie, dass diese `ItemGroup` bereits ein Elementelement enthält.  
+    Beachten Sie, dass diese `ItemGroup` bereits ein Elementelement enthält.  
   
-3.  Fügen Sie einen `Target`-Knoten als untergeordnetes Element des `Project`-Knotens ein. Benennen Sie den Knoten mit `Build`.  
+3. Fügen Sie einen `Target`-Knoten als untergeordnetes Element des `Project`-Knotens ein. Benennen Sie den Knoten mit `Build`.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  Fügen Sie dieses Aufgabenelement als untergeordnetes Element des `Target`-Knotens ein:  
+4. Fügen Sie dieses Aufgabenelement als untergeordnetes Element des `Target`-Knotens ein:  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  Speichern Sie diese Projektdatei, und benennen Sie sie mit Helloworld.csproj.  
+5. Speichern Sie diese Projektdatei, und benennen Sie sie mit Helloworld.csproj.  
   
- Die minimale Projektdatei sollte dem folgenden Code ähneln:  
+   Die minimale Projektdatei sollte dem folgenden Code ähneln:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 #### <a name="to-add-build-properties"></a>So fügen Sie Buildeigenschaften hinzu  
   
-1.  Löschen Sie die vorhandene Anwendung, indem Sie an der Eingabeaufforderung **del helloworld.exe** eingeben.  
+1. Löschen Sie die vorhandene Anwendung, indem Sie an der Eingabeaufforderung **del helloworld.exe** eingeben.  
   
-2.  Fügen Sie in der Projektdatei nach dem ersten `PropertyGroup`-Element das folgende `Project`-Element ein:  
+2. Fügen Sie in der Projektdatei nach dem ersten `PropertyGroup`-Element das folgende `Project`-Element ein:  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  Fügen Sie dem Build-Ziel direkt vor der `Csc`-Aufgabe die folgende Aufgabe hinzu:  
+3. Fügen Sie dem Build-Ziel direkt vor der `Csc`-Aufgabe die folgende Aufgabe hinzu:  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     Mit der `MakeDir`-Aufgabe wird ein Ordner erstellt, der nach der `OutputPath`-Eigenschaft benannt wird, sofern noch kein Ordner mit diesem Namen vorhanden ist.  
+    Mit der `MakeDir`-Aufgabe wird ein Ordner erstellt, der nach der `OutputPath`-Eigenschaft benannt wird, sofern noch kein Ordner mit diesem Namen vorhanden ist.  
   
-4.  Fügen Sie der `OutputAssembly`-Aufgabe das folgende `Csc`-Attribut hinzu:  
+4. Fügen Sie der `OutputAssembly`-Aufgabe das folgende `Csc`-Attribut hinzu:  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     Damit wird der Visual C#-Compiler angewiesen, eine nach der `AssemblyName`-Eigenschaft benannte Assembly zu erzeugen und diese in dem nach der `OutputPath`-Eigenschaft benannten Ordner einzufügen.  
+    Damit wird der Visual C#-Compiler angewiesen, eine nach der `AssemblyName`-Eigenschaft benannte Assembly zu erzeugen und diese in dem nach der `OutputPath`-Eigenschaft benannten Ordner einzufügen.  
   
-5.  Speichern Sie die Änderungen.  
+5. Speichern Sie die Änderungen.  
   
- Die Projektdatei sollte nun dem folgenden Code ähneln:  
+   Die Projektdatei sollte nun dem folgenden Code ähneln:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 ## <a name="adding-build-targets"></a>Hinzufügen von Build-Zielen  
  Fügen Sie der Projektdatei anschließend wie folgt zwei weitere Ziele hinzu:  
   
--   Ein Clean-Ziel, mit dem alte Dateien gelöscht werden.  
+- Ein Clean-Ziel, mit dem alte Dateien gelöscht werden.  
   
--   Ein Rebuild-Ziel, das über das `DependsOnTargets`-Attribut die Ausführung der Clean-Aufgabe erzwingt, bevor die Build-Aufgabe ausgeführt wird.  
+- Ein Rebuild-Ziel, das über das `DependsOnTargets`-Attribut die Ausführung der Clean-Aufgabe erzwingt, bevor die Build-Aufgabe ausgeführt wird.  
   
- Da Sie nun über mehrere Ziele verfügen, können Sie das Build-Ziel als Standardziel festlegen.  
+  Da Sie nun über mehrere Ziele verfügen, können Sie das Build-Ziel als Standardziel festlegen.  
   
 #### <a name="to-add-build-targets"></a>So fügen Sie Build-Ziele hinzu  
   
-1.  Fügen Sie in der Projektdatei direkt nach dem Build-Ziel die folgenden beiden Ziele hinzu:  
+1. Fügen Sie in der Projektdatei direkt nach dem Build-Ziel die folgenden beiden Ziele hinzu:  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     Das Clean-Ziel ruft die Delete-Aufgabe auf, die Anwendung zu löschen. Das Rebuild-Ziel wird erst ausgeführt, nachdem das Clean-Ziel und das Build-Ziel ausgeführt wurden. Zwar weist das Rebuild-Ziel keine Aufgaben auf, doch führt es dazu, dass das Clean-Ziel vor dem Build-Ziel ausgeführt wird.  
+    Das Clean-Ziel ruft die Delete-Aufgabe auf, die Anwendung zu löschen. Das Rebuild-Ziel wird erst ausgeführt, nachdem das Clean-Ziel und das Build-Ziel ausgeführt wurden. Zwar weist das Rebuild-Ziel keine Aufgaben auf, doch führt es dazu, dass das Clean-Ziel vor dem Build-Ziel ausgeführt wird.  
   
-2.  Fügen Sie dem ersten `DefaultTargets`-Element das folgende `Project`-Attribut hinzu:  
+2. Fügen Sie dem ersten `DefaultTargets`-Element das folgende `Project`-Attribut hinzu:  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     Damit wird das Build-Ziel als Standardziel festgelegt.  
+    Damit wird das Build-Ziel als Standardziel festgelegt.  
   
- Die Projektdatei sollte nun dem folgenden Code ähneln:  
+   Die Projektdatei sollte nun dem folgenden Code ähneln:  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

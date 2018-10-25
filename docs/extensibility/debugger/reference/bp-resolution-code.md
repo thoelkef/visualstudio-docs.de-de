@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Microsoft Docs
+title: BP_RESOLUTION_CODE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: debb6d9e8f37ed34c67c8df659160949cfcf6158
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915190"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 Beschreibt den Speicherort eines Haltepunkts Code.  
@@ -44,7 +44,7 @@ public struct BP_RESOLUTION_CODE {
  Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das die Position des Breakpoints im Code identifiziert.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die aktivieren in ein Mitglied der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.  
+ Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die in ein Mitglied zu aktivieren ist die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) vom zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

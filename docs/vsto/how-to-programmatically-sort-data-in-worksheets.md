@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1029ff61c7833ae03ab513ef486ecbd1edb1f295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914215"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Gewusst wie: Programmgesteuertes Sortieren von Daten in Arbeitsblättern
   Sie können Daten sortieren, die zur Laufzeit in Arbeitsblattbereichen und -listen enthalten sind. Der folgende Code sortiert einen mehrspaltigen Bereich namens `Fruits` nach den Daten in der ersten Spalte und anschließend nach den Daten in der zweiten Spalte.  
@@ -34,12 +34,12 @@ ms.locfileid: "35672248"
   
 ### <a name="to-sort-data-in-a-namedrange-control"></a>So sortieren Sie Daten in einem NamedRange-Steuerelement  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A>-Methode des <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelements auf. Das folgende Beispiel erfordert ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement namens `Fruits` in einem Arbeitsblatt. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.  
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A>-Methode des <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelements auf. Das folgende Beispiel erfordert ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement namens `Fruits` in einem Arbeitsblatt. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
-     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+    [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Platzieren Sie den folgenden Code in *Sheet1.vb* oder *Sheet1.cs* zum Sortieren von Daten in einem <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement. Der Code setzt voraus, dass Sie über ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement namens `fruitList`in einem Arbeitsblatt namens `Sheet1` verfügen.  
+   Platzieren Sie den folgenden Code in *Sheet1.vb* oder *Sheet1.cs* zum Sortieren von Daten in einem <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement. Der Code setzt voraus, dass Sie über ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement namens `fruitList`in einem Arbeitsblatt namens `Sheet1` verfügen.  
   
 ### <a name="to-sort-data-in-a-listobject-control"></a>So sortieren Sie Daten in einem ListObject-Steuerelement  
   

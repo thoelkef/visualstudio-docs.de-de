@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838685"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Schreiben von Code im Code- und Text-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 
  Ändern Sie zum Ausblenden der Navigationsleiste die Option **Navigationsleiste** im Text-Editor in der Einstellung "Alle Sprachen" (**Extras &gt; Optionen &gt; Text-Editor &gt; Alle Sprachen**, oder ändern Sie die Einstellungen für einzelne Sprachen). Sie können in den Dropdownfeldern wie folgt navigieren:  
 
--   Um den Fokus im Codefenster der Navigationsleiste zu verschieben, drücken Sie die Tastenkombination STRG+F2.  
+- Um den Fokus im Codefenster der Navigationsleiste zu verschieben, drücken Sie die Tastenkombination STRG+F2.  
 
--   Um den Fokus von der Navigationsleiste wieder in das Codefenster zu verschieben, drücken Sie ESC.  
+- Um den Fokus von der Navigationsleiste wieder in das Codefenster zu verschieben, drücken Sie ESC.  
 
--   Um den Fokus auf der Navigationsleiste von Element zu Element zu verschieben, drücken Sie die TAB-TASTE.  
+- Um den Fokus auf der Navigationsleiste von Element zu Element zu verschieben, drücken Sie die TAB-TASTE.  
 
--   Um das Element mit dem Fokus auf der Navigationsleiste auszuwählen und zur IDE zurückzukehren, drücken Sie die EINGABETASTE.  
+- Um das Element mit dem Fokus auf der Navigationsleiste auszuwählen und zur IDE zurückzukehren, drücken Sie die EINGABETASTE.  
 
--   Um zu einer Klasse bzw. einem Typ zu navigieren, klicken Sie auf den entsprechenden Namen in der linken Dropdownliste.  
+- Um zu einer Klasse bzw. einem Typ zu navigieren, klicken Sie auf den entsprechenden Namen in der linken Dropdownliste.  
 
--   Um direkt zu einer Prozedur in einer Klasse zu navigieren, klicken Sie auf die Prozedur in der rechten Dropdownliste.  
+- Um direkt zu einer Prozedur in einer Klasse zu navigieren, klicken Sie auf die Prozedur in der rechten Dropdownliste.  
 
- In einer partiellen Klasse sind Member, die außerhalb der aktuellen Codedatei definiert wurden, ggf. abgeblendet.  
+  In einer partiellen Klasse sind Member, die außerhalb der aktuellen Codedatei definiert wurden, ggf. abgeblendet.  
 
 ## <a name="find-code-using-navigate-to"></a>Suchen von Code mithilfe von Navigieren zu
 Visual Studio-Befehl "Navigieren zu" führt eine zielgerichtete Suche in Ihrem Code können Sie die angegebenen Elemente in Codedateien, Dateipfaden und Codesymbolen schnell zu finden. Anders als andere Textsuchverfahren, wie etwa Suchen oder In Dateien suchen, beschränkt Navigieren zu seine Suche auf Bereiche, in denen echter Code vorhanden ist, wie etwa Dateien, Formulare und Codemodule. Angenommen, Sie möchten in einer ASP.NET-Webanwendung mithilfe von Suchen oder In Dateien suchen in der gesamten Projektmappe eine Zeichenfolge suchen, erhalten Sie vermutlich mehrere Treffer, einschließlich Instanzen der Zeichenfolge in Codeanmerkungen. Navigieren Sie zum verwenden, können jedoch nur eine einzelne Funktion erhalten Sie wird ignoriert, alle Instanzen der Zeichenfolge in codeanmerkungen.

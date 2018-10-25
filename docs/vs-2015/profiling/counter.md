@@ -14,23 +14,23 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd2fe9a025c4499b35c4d8aaea581c5242c00b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f2e702689e0261012693db47a2743f4c3e58067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902242"
 ---
 # <a name="counter"></a>Zähler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Option **Counter** sammelt Daten von Leistungsindikatoren für Prozessoren (Hardware).  
   
--   Wenn Sie die Sampling-Profilerstellung (Methode) verwenden, gibt **Counter** den Chipleistungsindikator und die Anzahl der Zählerereignisse an, die als Samplingintervall verwendet werden sollen. Sie können nur einen Zähler angeben, wenn Sie Sampling verwenden.  
+- Wenn Sie die Sampling-Profilerstellung (Methode) verwenden, gibt **Counter** den Chipleistungsindikator und die Anzahl der Zählerereignisse an, die als Samplingintervall verwendet werden sollen. Sie können nur einen Zähler angeben, wenn Sie Sampling verwenden.  
   
--   Bei der Profilerstellung für die Instrumentierung (Methode) wird die Anzahl der Zählerereignisse, die im Intervall zwischen den vorherigen und den aktuellen Auflistungsereignissen aufgetreten sind, als separate Felder in Profiler-Berichten aufgeführt. Mehrere **Counter**-Optionen können angegeben werden, wenn Sie die Instrumentierung verwenden.  
+- Bei der Profilerstellung für die Instrumentierung (Methode) wird die Anzahl der Zählerereignisse, die im Intervall zwischen den vorherigen und den aktuellen Auflistungsereignissen aufgetreten sind, als separate Felder in Profiler-Berichten aufgeführt. Mehrere **Counter**-Optionen können angegeben werden, wenn Sie die Instrumentierung verwenden.  
   
- Jeder Prozessortyp hat eigene Hardware-Leistungsindikatoren. Der Profiler definiert mehrere generische Leistungsindikatoren, die für fast alle Prozessoren verwendet werden. Um die generischen und prozessorspezifischen Leistungsindikatoren auf dem Computer aufzulisten, verwenden Sie den VSPerfCmd-Befehl **QueryCounters**.  
+  Jeder Prozessortyp hat eigene Hardware-Leistungsindikatoren. Der Profiler definiert mehrere generische Leistungsindikatoren, die für fast alle Prozessoren verwendet werden. Um die generischen und prozessorspezifischen Leistungsindikatoren auf dem Computer aufzulisten, verwenden Sie den VSPerfCmd-Befehl **QueryCounters**.  
   
 ## <a name="syntax"></a>Syntax  
   

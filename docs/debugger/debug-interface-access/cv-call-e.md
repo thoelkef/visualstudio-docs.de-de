@@ -1,5 +1,5 @@
 ---
-title: CV_call_e | Microsoft Docs
+title: CV_call_e | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851112"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Gibt die Aufrufkonvention für eine Funktion an.  
@@ -42,22 +42,22 @@ typedef enum CV_call_e {
   
 ## <a name="elements"></a>Elements  
  CV_CALL_NEAR_C  
- Gibt eine Funktion Aufrufkonvention, die mithilfe eines near rechts-nach-links-Pushabonnements an. Die aufrufende Funktion löscht den Stapel.  
+ Gibt an, eine funktionsaufrufkonvention einen Nahen rechts-nach-links-Push verwenden. Die aufrufende Funktion löscht den Stapel.  
   
  CV_CALL_NEAR_FAST  
- Gibt eine Funktion Aufrufkonvention Register mit einem near links-nach-rechts-Push an. Die aufgerufene Funktion verwendet die Summe der Parameter Bytes auf um den Stapel zu löschen.  
+ Gibt an, eine funktionsaufrufkonvention registriert einen nahezu links-nach-rechts-Push mit. Die aufgerufene Funktion verwendet die Summe der Parameter-Bytes auf den Stapel gelöscht.  
   
  CV_CALL_NEAR_STD  
- Gibt eine Funktion Aufrufkonvention, die über einen nahezu standard-Aufruf (rechts-nach-links-Push).  
+ Gibt an, eine funktionsaufrufkonvention mit nahezu Standardaufruf (rechts-nach-links-Push).  
   
  CV_CALL_NEAR_SYS  
- Gibt eine Funktion Aufrufkonvention, die mithilfe eines near Systemaufrufs.  
+ Gibt an, eine funktionsaufrufkonvention mithilfe eines near Systemaufrufs.  
   
  CV_CALL_THISCALL  
- Gibt eine Funktion aufrufen Konvention mit `this` aufrufen (`this` Zeiger in Register übergeben).  
+ Gibt einen Funktionsaufruf Konvention über `this` aufrufen (`this` Zeiger im Register übergeben).  
   
  CV_CALL_CLRCALL  
- Gibt eine Funktion Aufrufkonvention, die von der Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention) verwendet.  
+ Gibt an, eine funktionsaufrufkonvention verwendet durch die Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention).  
   
 ## <a name="remarks"></a>Hinweise  
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) Methode.  

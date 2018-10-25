@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899330"
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
 
@@ -36,11 +36,11 @@ Rufen Sie die Option **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** 
 
 1. Erweitern Sie im Menü **Bearbeiten** das Fenster **Suchen und Ersetzen**.
 
-1. Wählen Sie **In Dateien ersetzen** aus.
+2. Wählen Sie **In Dateien ersetzen** aus.
 
    - oder -
 
-  Wählen Sie auf der Symbolleiste **In Dateien ersetzen** aus, wenn das Fenster **Suchen und Ersetzen** bereits geöffnet ist.
+   Wählen Sie auf der Symbolleiste **In Dateien ersetzen** aus, wenn das Fenster **Suchen und Ersetzen** bereits geöffnet ist.
 
 ## <a name="find-what"></a>Suchen nach
 

@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885576"
 ---
 # <a name="local-data-overview"></a>Übersicht über lokale Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Wenn Data-Anwendungen zu entwickeln, ist es, damit Sie in der Produktion immer n
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Ein SQL Server-Datenbankprojekt erstellen, klicken Sie auf den Projektmappenknoten im Projektmappen-Explorer und auswählen **hinzufügen &#124; neues Projekt**.  Wählen Sie im linken Bereich **SQL Server &#124; Datenbank** Projekt, und klicken Sie auf OK. Klicken Sie im Projektmappen-Explorer klicken Sie mit der rechten Maustaste auf den Datenbank-Projektknoten, um eine lokale Datenbankdatei zu importieren, und dann Entwickeln der Anwendung die Verbindung mit der Datenbank, die vom Projekt erstellt. Gut, wenn Sie entwickeln und ändern das Datenbankschema zur gleichen Zeit, dass Sie die Anwendung entwickeln.  
+- Ein SQL Server-Datenbankprojekt erstellen, klicken Sie auf den Projektmappenknoten im Projektmappen-Explorer und auswählen **hinzufügen &#124; neues Projekt**.  Wählen Sie im linken Bereich **SQL Server &#124; Datenbank** Projekt, und klicken Sie auf OK. Klicken Sie im Projektmappen-Explorer klicken Sie mit der rechten Maustaste auf den Datenbank-Projektknoten, um eine lokale Datenbankdatei zu importieren, und dann Entwickeln der Anwendung die Verbindung mit der Datenbank, die vom Projekt erstellt. Gut, wenn Sie entwickeln und ändern das Datenbankschema zur gleichen Zeit, dass Sie die Anwendung entwickeln.  
   
-     ![Datenbank in Datenbankprojekt importieren](../data-tools/media/raddata-import-database-into-database-project.png "Raddata Importdatenbank in Datenbankprojekt")  
+   ![Datenbank in Datenbankprojekt importieren](../data-tools/media/raddata-import-database-into-database-project.png "Raddata Importdatenbank in Datenbankprojekt")  
   
--   Wenn Sie eine neue Datenbank erstellen, fügen Sie zuerst eine **dienstbasierte Datenbankdatei** zu Ihrem Projekt (**Projekt &#124; neues Element hinzufügen)**. Dadurch wird eine neue MDF-Datei, die mit der SQL Server-Standardinstanz auf dem lokalen Computer, wird standardmäßig verbunden ist (Localdb) \MSSQLocalDB wird erstellt. Die Datenbank sollte im Server-Explorer angezeigt werden. Erweitern Sie den Knoten, und mit der rechten Maustaste auf den Knoten zum Hinzufügen neuer Datenbankobjekte wie Tabellen, Sichten, Funktionen und So weiter.  
+- Wenn Sie eine neue Datenbank erstellen, fügen Sie zuerst eine **dienstbasierte Datenbankdatei** zu Ihrem Projekt (**Projekt &#124; neues Element hinzufügen)**. Dadurch wird eine neue MDF-Datei, die mit der SQL Server-Standardinstanz auf dem lokalen Computer, wird standardmäßig verbunden ist (Localdb) \MSSQLocalDB wird erstellt. Die Datenbank sollte im Server-Explorer angezeigt werden. Erweitern Sie den Knoten, und mit der rechten Maustaste auf den Knoten zum Hinzufügen neuer Datenbankobjekte wie Tabellen, Sichten, Funktionen und So weiter.  
   
- Weitere Informationen zu SQL Server Express LocalDB, finden Sie unter [Einführung von LocalDB, ein verbessertes SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) und [LocalDB: steht für meine Datenbank?](http://go.microsoft.com/fwlink/?LinkId=234376) auf der Microsoft-Website.  
+  Weitere Informationen zu SQL Server Express LocalDB, finden Sie unter [Einführung von LocalDB, ein verbessertes SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) und [LocalDB: steht für meine Datenbank?](http://go.microsoft.com/fwlink/?LinkId=234376) auf der Microsoft-Website.  
   
- Die folgende Tabelle enthält Links zu Themen, in denen beschrieben wird, wie die Anwendung mit lokalen Daten verbunden wird:  
+  Die folgende Tabelle enthält Links zu Themen, in denen beschrieben wird, wie die Anwendung mit lokalen Daten verbunden wird:  
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  

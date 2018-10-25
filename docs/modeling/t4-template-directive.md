@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897198"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagenanweisung
 
@@ -28,7 +28,7 @@ Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template` Anw
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
 ```
 
- Die `template`-Direktive besitzt mehrere Attribute, mit denen Sie verschiedene Aspekte der Transformation angeben können. Alle Attribute sind optional.
+ Die `template`-Anweisung besitzt mehrere Attribute, mit denen Sie verschiedene Aspekte der Transformation angeben können. Alle Attribute sind optional.
 
 ## <a name="compileroptions-attribute"></a>compilerOptions-Attribut
  Ein Beispiel: `compilerOptions="optimize+"`
@@ -93,7 +93,6 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 #>
 Content of myFile is:
 <#= myFile #>
-
 ```
 
  Wenn Sie die Attribute `inherits` und `hostspecific` zusammen verwenden, geben Sie host="trueFromBase" in der abgeleiteten Klasse sowie host="true" in der Basisklasse an. Dies vermeidet eine doppelte Definition der Eigenschaft `Host` im generierten Code.
@@ -121,7 +120,6 @@ Squares of numbers:
 <#
   Next number
 #>
-
 ```
 
 ## <a name="inherits-attribute"></a>inherits-Attribut
@@ -150,7 +148,6 @@ This is the common footer.
   protected virtual void SpecificFragment1() { }
   protected virtual void SpecificFragment2() { }
 #>
-
 ```
 
  Laufzeittextvorlage "DerivedTemplate1.tt" (vorverarbeitete Vorlage):
@@ -175,7 +172,6 @@ protected override void SpecificFragment2()
 <#+
 }
 #>
-
 ```
 
  Anwendungscode zum Aufruf von "DerivedTemplate1":
@@ -202,7 +198,7 @@ This is the common footer.
 ### <a name="inheritance-in-a-design-time-text-template"></a>Vererbung in einer Entwurfszeittextvorlage
  Eine Entwurfszeit-Textvorlage ist eine Datei für die **benutzerdefiniertes Tool** nastaven NA hodnotu **TextTemplatingFileGenerator**. Die Vorlage erstellt eine Ausgabedatei mit Code oder Text, die Teil von Visual Studio-Projekt bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
 
- Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Direktive, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
+ Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Anweisung, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
 
  Weitere Informationen finden Sie unter ["Vererbung in Textvorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 

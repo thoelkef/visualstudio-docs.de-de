@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948768"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Methoden bei vergleichbaren Typen überschreiben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202825"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, außer Kraft setzen <xref:System.Object.Equals%2A>. Wenn Ihre Programmiersprache operatorüberladung unterstützt, geben Sie die folgenden Operatoren:
 
--   op_Equality
+- op_Equality
 
--   op_Inequality
+- op_Inequality
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- In c# werden die Token, die zur Darstellung dieser Operatoren verwendet werden wie folgt: ==,! =, \<, und >.
+  In c# werden die Token, die zur Darstellung dieser Operatoren verwendet werden wie folgt: ==,! =, \<, und >.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, wenn es sich bei den Verstoß verursacht wird, durch fehlende Operatoren und Ihre bevorzugte Programmiersprache unterstützt keine operatorüberladung, wie mit Visual Basic .NET. Es ist auch sicher, um eine Warnung für diese Regel zu unterdrücken, wenn es auf Gleichheitsoperatoren ausgelöst wird, anders als Op_Equality, wenn Sie feststellen, dass die Implementierung der Operatoren nicht im Kontext Ihrer Anwendung sinnvoll ist. Sie sollten jedoch immer op_Equality und dem == Operator, wenn Sie Object.Equals überschreiben.

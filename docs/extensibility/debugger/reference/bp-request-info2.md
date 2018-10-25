@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Microsoft Docs
+title: BP_REQUEST_INFO2 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11402c5ad188b72600debb5cb64b7f2811e75ee9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68bdf873cdd108428ec05bda6429de70a80e71a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888787"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
-Enthält Informationen zum Implementieren eines Haltepunkts, einschließlich Anbieter-GUID, Einschränkung und Ablaufverfolgungspunkt erforderlich sind.  
+Enthält die Informationen erforderlich, um einen Haltepunkt, einschließlich Anbieter-GUID, Einschränkung und Ablaufverfolgungspunkt zu implementieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -65,43 +65,43 @@ public struct BP_REQUEST_INFO2 {
   
 ## <a name="members"></a>Member  
  `dwFields`  
- Eine Kombination aus Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der angibt, welche Felder ausgefüllt sind.  
+ Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.  
   
  `guidLanguage`  
- Die Sprach-GUID.  
+ Die Sprachen-GUID.  
   
  `bpLocation`  
- Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) -Struktur, die den Typ des der Position des Haltepunkts angibt.  
+ Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) -Struktur, die den Typ der Haltepunktposition angibt.  
   
  `pProgram`  
  Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung darstellt, in dem sich der Breakpoint auftritt.  
   
  `bstrProgramName`  
- Der Name der Anwendung, in der sich der Breakpoint auftritt.  
+ Der Name der Anwendung in der der Breakpoint auftritt.  
   
  `pThread`  
  Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem sich der Breakpoint auftritt.  
   
  `bstrThreadName`  
- Der Name des Threads, in dem sich der Breakpoint auftritt.  
+ Der Name des Threads in der der Breakpoint auftritt.  
   
  `bpCondition`  
- Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die die Bedingungen beschrieben werden, unter dem der Haltepunkt ausgelöst wird.  
+ Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die beschreibt die Bedingungen, unter dem der Haltepunkt ausgelöst wird.  
   
  `bpPassCount`  
- Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur, die die Anzahl übergeben von Informationen des Haltepunkts enthält.  
+ Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die die Pass-Count-Informationen des Haltepunkts enthält.  
   
  `dwFlags`  
- Eine Kombination aus Flags aus der [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) -Enumeration, der die Flags für die angeforderte Breakpoint angibt.  
+ Eine Kombination von Flags aus der [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration, die die Flags für den angeforderten Haltepunkt angibt.  
   
  `guidVendor`  
- Die GUID des Herstellers. Ein null-Wert kann sein.  
+ GUID des Anbieters. Dies kann ein null-Wert sein.  
   
  `bstrConstraint`  
- Name der Einschränkung Haltepunkt. Ein null-Wert kann sein.  
+ Name der Haltepunkt-Einschränkung. Dies kann ein null-Wert sein.  
   
  `bstrTracepoint`  
- Name der Trace-Punkt. Ein null-Wert kann sein.  
+ Name der Ablaufverfolgungspunkt. Dies kann ein null-Wert sein.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur wird zurückgegeben, durch die [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) Methode.  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926591"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -52,7 +52,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
       2. Geben Sie in **Kennwort** das Kennwort ein.
 
         |**Wichtige Benutzerkontoinformationen**|
-        |--------------------------------------------|
+        |-|
         |– NULL-Kennwörter werden für Benutzerkonten nicht unterstützt.|
         |– Wenn Sie den IntelliTrace-Sammler oder die Netzwerkemulation verwenden möchten, muss das Benutzerkonto Mitglied der Gruppe „Administratoren“ sein.|
         |– Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.|
@@ -115,7 +115,7 @@ Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinde
 Der Status des Test-Agents kann einen der folgenden Werte aufweisen:
 
 |Status|Beschreibung |
-|------------|-----------------|
+|-|-----------------|
 |Test wird ausgeführt|Tests werden ausgeführt|
 |Bereit|Verfügbar zum Ausführen von Tests oder Sammeln von Daten und Diagnosen|
 |Offline|Nicht verfügbar zum Ausführen von Tests und/oder Sammeln von Daten und Diagnosen|
@@ -141,7 +141,7 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 1. Ändern Sie die folgenden Test-Agent-Eigenschaften nach Bedarf:
 
 |Test-Agent-Eigenschaft|Beschreibung |
-|-------------------------|-----------------|
+|-|-----------------|
 |**Gewichtung**|Wird bei Verwendung von Test-Agents mit unterschiedlicher Leistungsfähigkeit zum Verteilen der Last verwendet. Ein Test-Agent mit einer Gewichtung von 100 erhält beispielsweise doppelt so viel Last wie ein Test-Agent mit einer Gewichtung von 50.|
 |**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis:** Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
 |**Attribute**|Satz von Name-Wert-Paaren, die bei der Auswahl von Test-Agents verwendet werden können. Beispielsweise könnte ein Test ein bestimmtes Betriebssystem (OS) erfordern. Sie können Attribute auf der Registerkarte **Rollen** der Testeinstellungsdatei hinzufügen und sie verwenden, um einen Test-Agent auswählen, der über entsprechenden Attribute verfügt. Wenn Sie einen Test auf mehreren Computern ausführen möchten, erstellen Sie ein Attribut in der Testeinstellungsrolle, die konfiguriert wird, um die Tests auszuführen, und konfigurieren Sie anschließend ein entsprechendes Attribut für jeden Test-Agent, den Sie in dieser Rolle verwendet möchten. **Hinweis:** Diese Einstellung ist nur für Test-Agents verfügbar, die bei einem Testcontroller registriert wurden, der bei keinem Projekt registriert ist, da diese Attribute nur in Testeinstellungen für Visual Studio verwendet werden.|

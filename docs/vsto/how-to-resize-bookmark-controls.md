@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924836"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Gewusst wie: Ändern der Größe Lesezeichen-Steuerelementen
   Die Größe eines <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements legen Sie fest, wenn Sie es einem Microsoft Office Word-Dokument hinzufügen. Sie können dessen Größe aber auch zu einem späteren Zeitpunkt ändern.  
@@ -30,21 +30,21 @@ ms.locfileid: "35671907"
   
  Es gibt drei Möglichkeiten, die Größe eines Lesezeichens zu ändern:  
   
--   Hinzufügen von Text zu oder Entfernen von Text aus dem <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement.  
+- Hinzufügen von Text zu oder Entfernen von Text aus dem <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement.  
   
-     Immer dann, wenn Sie einem Lesezeichen Text hinzufügen, wird es automatisch vergrößert, damit es den neuen Text enthält. Wenn Sie Text löschen, wird das Lesezeichen automatisch verkleinert.  
+   Immer dann, wenn Sie einem Lesezeichen Text hinzufügen, wird es automatisch vergrößert, damit es den neuen Text enthält. Wenn Sie Text löschen, wird das Lesezeichen automatisch verkleinert.  
   
--   Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> - und der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> -Eigenschaft des <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements.  
+- Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> - und der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> -Eigenschaft des <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements.  
   
-     Dies bietet sich an, wenn Sie die Größe nur um wenige Zeichen ändern.  
+   Dies bietet sich an, wenn Sie die Größe nur um wenige Zeichen ändern.  
   
--   Neuerstellen des <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements.  
+- Neuerstellen des <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements.  
   
-     Dies bietet sich an, wenn sich die Größe oder die Position des Lesezeichens wesentlich geändert hat.  
+   Dies bietet sich an, wenn sich die Größe oder die Position des Lesezeichens wesentlich geändert hat.  
   
- In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen an Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen an Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Ändern Sie die Start- und End-Eigenschaften  
   

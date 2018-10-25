@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896236"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 
@@ -33,21 +33,22 @@ In dieser exemplarischen Vorgehensweise erweitern Sie Ihren benutzerdefinierten 
 
 Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
--   Mithilfe von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] einen anweisungsprozessor zu generieren, die ein Domänenmodell basiert.
+- Mithilfe von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] einen anweisungsprozessor zu generieren, die ein Domänenmodell basiert.
 
--   Herstellen einer Verbindung mit der generierten Direktivenprozessor ein benutzerdefinierten Textvorlagenhosts.
+- Herstellen einer Verbindung mit der generierten Direktivenprozessor ein benutzerdefinierten Textvorlagenhosts.
 
--   Testen des benutzerdefinierten Hosts mit der generierten Direktivenprozessor an.
+- Testen des benutzerdefinierten Hosts mit der generierten Direktivenprozessor an.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Darüber hinaus benötigen Sie im erstellten benutzerdefinierten Textvorlagentra
 
 In dieser exemplarischen Vorgehensweise verwenden Sie den Domain-Specific Language-Designer-Assistenten, um eine domänenspezifische Sprache für die Lösung DSLMinimalTest zu erstellen.
 
-1.  Erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:
+1. Erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:
 
-    -   Name: DSLMinimalTest
+   -   Name: DSLMinimalTest
 
-    -   Lösungsvorlage: minimale Sprache
+   -   Lösungsvorlage: minimale Sprache
 
-    -   Dateierweiterung: Min.
+   -   Dateierweiterung: Min.
 
-    -   Firmenname: Fabrikam
+   -   Firmenname: Fabrikam
 
    Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-    > [!IMPORTANT]
-    > Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.
+   > [!IMPORTANT]
+   > Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.
 
-3.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
+3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
-     Eine zweite Instanz von Visual Studio wird geöffnet.
+    Eine zweite Instanz von Visual Studio wird geöffnet.
 
-4.  Klicken Sie im experimentellen Build in **Projektmappen-Explorer**, doppelklicken Sie auf die Datei **sample.min**.
+4. Klicken Sie im experimentellen Build in **Projektmappen-Explorer**, doppelklicken Sie auf die Datei **sample.min**.
 
-     Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2 und einen Link zwischen ihnen.
+    Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2 und einen Link zwischen ihnen.
 
-5.  Die zweite Instanz von Visual Studio zu schließen.
+5. Die zweite Instanz von Visual Studio zu schließen.
 
-6.  Speichern Sie die Projektmappe, und schließen Sie die domänenspezifischen Sprach-Designers.
+6. Speichern Sie die Projektmappe, und schließen Sie die domänenspezifischen Sprach-Designers.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Verbinden Sie mit einem Direktivenprozessor ein benutzerdefinierten Textvorlagenhosts
 

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922470"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Gewusst wie: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
  Um den Fehler zu beheben und die Projektmappe zu veröffentlichen, müssen Sie die folgenden Aufgaben ausführen:  
   
--   [Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile](#BKMK_publishsolwovs).  
+- [Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile](#BKMK_publishsolwovs).  
   
--   [Erstellen Sie eine Manifestdatei](#BKMK_CreateManifest).  
+- [Erstellen Sie eine Manifestdatei](#BKMK_CreateManifest).  
   
--   [Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe](#BKMK_embedmanifest).  
+- [Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe](#BKMK_embedmanifest).  
   
--   [Die Anwendungs- und Bereitstellungsmanifeste zu signieren](#BKMK_signappdeplyman).  
+- [Die Anwendungs- und Bereitstellungsmanifeste zu signieren](#BKMK_signappdeplyman).  
   
- Anschließend können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem Endbenutzer die Anwendung installieren sollen.  
+  Anschließend können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem Endbenutzer die Anwendung installieren sollen.  
   
 ##  <a name="BKMK_publishsolwovs"></a> Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile  
   
@@ -100,72 +100,72 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
 ##  <a name="BKMK_embedmanifest"></a> Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe  
   
-1.  Öffnen der **Visual Studio-Eingabeaufforderung**.  
+1. Öffnen der **Visual Studio-Eingabeaufforderung**.  
   
-     Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung**, finden Sie unter [Eingabeaufforderungen](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
+    Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung**, finden Sie unter [Eingabeaufforderungen](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
   
-    > [!NOTE]
-    >  In den verbleibenden Schritten werden die folgenden Annahmen über die Projektmappe gemacht:  
-    >   
-    >  -   Der Name der Lösung ist **"mywpfproject"**.  
-    > -   Die Projektmappe befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      Die Lösung wird im folgenden Verzeichnis veröffentlicht: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Die neueste Version der veröffentlichten Anwendungsdateien befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Sie müssen die oben genannten Namen und Verzeichnisspeicherorte nicht verwenden. Die oben genannten Namen und Speicherorte dienen nur als Beispiele bei der Veranschaulichung der Schritte, die für die Veröffentlichung der Projektmappe erforderlich sind.  
+   > [!NOTE]
+   >  In den verbleibenden Schritten werden die folgenden Annahmen über die Projektmappe gemacht:  
+   > 
+   > - Der Name der Lösung ist **"mywpfproject"**.  
+   >   -   Die Projektmappe befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   Die Lösung wird im folgenden Verzeichnis veröffentlicht: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   Die neueste Version der veröffentlichten Anwendungsdateien befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Sie müssen die oben genannten Namen und Verzeichnisspeicherorte nicht verwenden. Die oben genannten Namen und Speicherorte dienen nur als Beispiele bei der Veranschaulichung der Schritte, die für die Veröffentlichung der Projektmappe erforderlich sind.  
   
-2.  Ändern Sie an der Eingabeaufforderung den Pfad zu dem Verzeichnis, das die neueste Version der veröffentlichten Anwendungsdateien enthält. Das folgende Beispiel veranschaulicht diesen Schritt.  
+2. Ändern Sie an der Eingabeaufforderung den Pfad zu dem Verzeichnis, das die neueste Version der veröffentlichten Anwendungsdateien enthält. Das folgende Beispiel veranschaulicht diesen Schritt.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die Manifestdatei in die ausführbare Datei der Anwendung einzubetten:  
+3. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die Manifestdatei in die ausführbare Datei der Anwendung einzubetten:  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> Melden Sie die Anwendungs- und Bereitstellungsmanifesten  
   
-1.  Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die `.deploy`-Erweiterung aus der ausführbaren Datei im aktuellen Verzeichnis zu entfernen:  
+1. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die `.deploy`-Erweiterung aus der ausführbaren Datei im aktuellen Verzeichnis zu entfernen:  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass Sie alle Dateien in diesem Verzeichnis umbenennen, die die Dateierweiterung `.deploy` aufweisen.  
+   > [!NOTE]
+   >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass Sie alle Dateien in diesem Verzeichnis umbenennen, die die Dateierweiterung `.deploy` aufweisen.  
   
-2.  Geben Sie an der Eingabeaufforderung den folgenden Befehl zum Signieren des Anwendungsmanifests ein:  
+2. Geben Sie an der Eingabeaufforderung den folgenden Befehl zum Signieren des Anwendungsmanifests ein:  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  In diesem Beispiel wird davon ausgegangen, dass Sie das Manifest mit der `.pfx`-Datei des Projekts signieren. Wenn Sie das Manifest nicht signieren, können Sie weglassen der `–cf` Parameter, die in diesem Beispiel verwendet wird. Wenn Sie das Manifest mit einem Zertifikat, das ein Kennwort erforderlich ist signieren, geben Sie die `–password` Option (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
+   > [!NOTE]
+   >  In diesem Beispiel wird davon ausgegangen, dass Sie das Manifest mit der `.pfx`-Datei des Projekts signieren. Wenn Sie das Manifest nicht signieren, können Sie weglassen der `–cf` Parameter, die in diesem Beispiel verwendet wird. Wenn Sie das Manifest mit einem Zertifikat, das ein Kennwort erforderlich ist signieren, geben Sie die `–password` Option (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
   
-3.  Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die `.deploy`-Erweiterung dem Namen der Datei hinzuzufügen, die Sie in einem vorherigen Schritt dieses Verfahrens umbenannt haben:  
+3. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die `.deploy`-Erweiterung dem Namen der Datei hinzuzufügen, die Sie in einem vorherigen Schritt dieses Verfahrens umbenannt haben:  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass alle Dateien in diesem Verzeichnis umbenannt werden, die zuvor die Dateierweiterung `.deploy` hatten.  
+   > [!NOTE]
+   >  In diesem Beispiel wird davon ausgegangen, dass nur eine Datei die Dateierweiterung `.deploy` aufweist. Stellen Sie sicher, dass alle Dateien in diesem Verzeichnis umbenannt werden, die zuvor die Dateierweiterung `.deploy` hatten.  
   
-4.  Geben Sie an der Eingabeaufforderung den folgenden Befehl zum Signieren des Verteilungsmanifests ein:  
+4. Geben Sie an der Eingabeaufforderung den folgenden Befehl zum Signieren des Verteilungsmanifests ein:  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  In diesem Beispiel wird davon ausgegangen, dass Sie das Manifest mit der `.pfx`-Datei des Projekts signieren. Wenn Sie das Manifest nicht signieren, können Sie weglassen der `–cf` Parameter, die in diesem Beispiel verwendet wird. Wenn Sie das Manifest mit einem Zertifikat, das ein Kennwort erforderlich ist signieren, geben Sie die `–password` auswählen, wie im folgenden Beispiel:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
+   > [!NOTE]
+   >  In diesem Beispiel wird davon ausgegangen, dass Sie das Manifest mit der `.pfx`-Datei des Projekts signieren. Wenn Sie das Manifest nicht signieren, können Sie weglassen der `–cf` Parameter, die in diesem Beispiel verwendet wird. Wenn Sie das Manifest mit einem Zertifikat, das ein Kennwort erforderlich ist signieren, geben Sie die `–password` auswählen, wie im folgenden Beispiel:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
   
- Nachdem Sie diese Schritte ausgeführt haben, können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem aus Endbenutzer die Anwendung installieren sollen. Wenn Sie beabsichtigen, die Projektmappe häufig zu aktualisieren, können Sie diese Befehle in ein Skript übernehmen und das Skript jedes Mal ausführen, wenn Sie eine neue Version veröffentlichen.  
+   Nachdem Sie diese Schritte ausgeführt haben, können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem aus Endbenutzer die Anwendung installieren sollen. Wenn Sie beabsichtigen, die Projektmappe häufig zu aktualisieren, können Sie diese Befehle in ein Skript übernehmen und das Skript jedes Mal ausführen, wenn Sie eine neue Version veröffentlichen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

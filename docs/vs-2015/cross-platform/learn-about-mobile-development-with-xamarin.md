@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860694"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Erfahren Sie mehr über die Entwicklung für mobile Plattformen mit Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Grundlagen: Übersicht der Visual Studio- und Xamarin-Umgebung  
  *5–15 Minuten*  
   
--   Den größten Teil Ihrer Arbeit verrichten Sie am Windows-Computer mit Visual Studio und Xamarin. Auf diesem Computer erstellen Sie Windows- und Android-Apps direkt und führen sie auf einem Gerät oder einem Emulator aus, auf denen auch das Debuggen erfolgt. Ferner können Sie auf einem Mac iOS-Apps remote erstellen, ausführen und debuggen. Visual Studio auf einem Windows-Computer kann darüber hinaus eine Verbindung mit dem iOS Storyboard-Designer und dem iOS-Simulator herstellen.  
+- Den größten Teil Ihrer Arbeit verrichten Sie am Windows-Computer mit Visual Studio und Xamarin. Auf diesem Computer erstellen Sie Windows- und Android-Apps direkt und führen sie auf einem Gerät oder einem Emulator aus, auf denen auch das Debuggen erfolgt. Ferner können Sie auf einem Mac iOS-Apps remote erstellen, ausführen und debuggen. Visual Studio auf einem Windows-Computer kann darüber hinaus eine Verbindung mit dem iOS Storyboard-Designer und dem iOS-Simulator herstellen.  
   
--   Der Mac mit Xcode und Xamarin dient als Build- und Signaturhost sowie als Laufzeitumgebung für iOS-Apps. Builds für iOS von Visual Studio auf dem Windows-Computer werden an diesen Mac delegiert. Beim Debuggen einer iOS-App in Visual Studio erfolgt die Ausführung im iOS-Simulator auf dem Mac oder direkt auf einem mit dem Mac verbundenen Gerät. In diesem Fall interagieren Sie mit der App auf dem Mac oder in dessen Nähe, während die Debugoberfläche in Visual Studio ist.  
+- Der Mac mit Xcode und Xamarin dient als Build- und Signaturhost sowie als Laufzeitumgebung für iOS-Apps. Builds für iOS von Visual Studio auf dem Windows-Computer werden an diesen Mac delegiert. Beim Debuggen einer iOS-App in Visual Studio erfolgt die Ausführung im iOS-Simulator auf dem Mac oder direkt auf einem mit dem Mac verbundenen Gerät. In diesem Fall interagieren Sie mit der App auf dem Mac oder in dessen Nähe, während die Debugoberfläche in Visual Studio ist.  
   
- Diese Beziehungen sind unten dargestellt, und Sie finden weitere Informationen über das Arbeiten mit iOS-Apps unter [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+  Diese Beziehungen sind unten dargestellt, und Sie finden weitere Informationen über das Arbeiten mit iOS-Apps unter [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
   
- ![Die Beziehung zwischen Windows- und Mac-Entwicklercomputern in einer Xamarin-Umgebung](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Die Beziehung zwischen Windows- und Mac-Entwicklercomputern in einer Xamarin-Umgebung](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Grundlagen: Strukturieren von Projekten  
  *10–30 Minuten*  
@@ -64,15 +64,15 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
   
  Sie müssen nicht im Voraus entscheiden, welchen Ansatz Sie wählen. Apps können mit einer Kombination aus Xamarin Native und Xamarin.Forms implementiert werden:  
   
--   Verwenden Sie Xamarin.Forms, um für allgemeine Zwecke vorgesehene Bildschirme zu erstellen, die eine ähnliche Benutzeroberfläche und Funktionalität plattformübergreifend bereitstellen, wie z.B. Anmeldungen, Kontaktformulare und Suchergebnisse.  
+- Verwenden Sie Xamarin.Forms, um für allgemeine Zwecke vorgesehene Bildschirme zu erstellen, die eine ähnliche Benutzeroberfläche und Funktionalität plattformübergreifend bereitstellen, wie z.B. Anmeldungen, Kontaktformulare und Suchergebnisse.  
   
--   Verwenden Sie eine Vielzahl von Anpassungsfunktionen in Xamarin.Forms, um die Benutzeroberfläche plattformspezifisch anzupassen. Hierzu gehören die OnPlatform-API, die sowohl in Code als auch in XAML verwendet werden kann, und mit der eine benutzerdefinierte Ansicht erstellt, ein vorhandener Renderer erweitert und ein benutzerdefinierter Renderer erstellt werden kann.  
+- Verwenden Sie eine Vielzahl von Anpassungsfunktionen in Xamarin.Forms, um die Benutzeroberfläche plattformspezifisch anzupassen. Hierzu gehören die OnPlatform-API, die sowohl in Code als auch in XAML verwendet werden kann, und mit der eine benutzerdefinierte Ansicht erstellt, ein vorhandener Renderer erweitert und ein benutzerdefinierter Renderer erstellt werden kann.  
   
--   Verwenden Sie bei Bedarf Xamarin Native, um Bildschirme zu erstellen, die spezielle Benutzeroberflächenfunktionen jeder Plattform verwenden, beispielsweise ein Bildschirm, für den native Kameraaufnahme oder Bildbearbeitung verwendet wird.  
+- Verwenden Sie bei Bedarf Xamarin Native, um Bildschirme zu erstellen, die spezielle Benutzeroberflächenfunktionen jeder Plattform verwenden, beispielsweise ein Bildschirm, für den native Kameraaufnahme oder Bildbearbeitung verwendet wird.  
   
- Es empfiehlt sich, mit einer Xamarin.Forms-Projektmappe zu beginnen, um Benutzeroberflächencode zu schreiben, der für alle Plattformen gemeinsam verwendet werden kann, und dann die Anpassungsmöglichkeiten zu verwenden, um plattformspezifische Anpassungen vorzunehmen. Sofern Sie vollständig plattformspezifische Bildschirme benötigen, können Sie diese einzeln mit Xamarin Native hinzufügen.  
+  Es empfiehlt sich, mit einer Xamarin.Forms-Projektmappe zu beginnen, um Benutzeroberflächencode zu schreiben, der für alle Plattformen gemeinsam verwendet werden kann, und dann die Anpassungsmöglichkeiten zu verwenden, um plattformspezifische Anpassungen vorzunehmen. Sofern Sie vollständig plattformspezifische Bildschirme benötigen, können Sie diese einzeln mit Xamarin Native hinzufügen.  
   
- Weitere Informationen:  
+  Weitere Informationen:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) stellt die Vor- und Nachteile von Xamarin.Forms im Vergleich zu systemeigenen Benutzeroberflächenschichten (d. h., Xamarin.iOS und Xamarin.Android) in einer kurzen Übersicht vor.  
   

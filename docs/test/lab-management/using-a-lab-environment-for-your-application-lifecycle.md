@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837112"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -36,9 +36,9 @@ Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen.|
 |![Client-Server-Lab-Umgebung](../media/topology_clientserver.png)| Diese Lab-Umgebung verfügt über eine *Client-/Servertopologie*, die oftmals zum Testen einer Anwendung verwendet wird, die Server- und Clientkomponenten aufweist. In einer Client-/Servertopologie befinden sich alle zum Testen Ihrer Anwendung verwendeten Clientcomputer und Server in Ihrer Lab-Umgebung. Bei Verwendung dieser Topologie können Sie Testdaten von jedem Computer erfassen, der sich auf Ihre Tests auswirkt.|
 
-|   |   |
+| | |
 |---|---|
-|  ![Kamerasymbol für Video](../../install/media/video-icon.png)  |    [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests. |
+| ![Kamerasymbol für Video](../../install/media/video-icon.png) | [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Azure Pipelines oder Build und Release in Team Foundation Server
 
@@ -95,7 +95,7 @@ Informationen zu SCVMM finden Sie unter [Virutal Machine Manager](/azure/devops/
 Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müssen jedoch wichtige Unterschiede berücksichtigt werden. In der folgenden Tabelle werden die Features verglichen, die für Standard- und SCVMM-Umgebungen verfügbar sind.
 
 |Funktion|SCVMM-Umgebungen|Standardumgebungen|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Testen**|||
 |Ausführen manueller Tests|Unterstützt|Unterstützt|
 |Ausführen codierter UI und anderer automatisierter Tests|Unterstützt|Unterstützt|
@@ -117,7 +117,7 @@ Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müs
 Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut sein sollten, bevor Sie fortfahren:
 
 |Begriff|Beschreibung |
-|----------|-----------------|
+|-|-----------------|
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|
 |Azure DevOps-Projekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|
 |Azure DevOps-Projektbibliothek|Ein Archiv mit gespeicherten virtuellen Computern, Vorlagen und gespeicherten Laborumgebungen, die in die Hostgruppe Ihres Projekts importiert wurden. Sie können die Elemente in Ihrer Bibliothek mit SCVMM-Umgebungen verwenden. Sie können sie jedoch nicht direkt zu einer Standardumgebung hinzufügen. Sie können die Elemente in Ihrer Bibliothek nicht ausführen, Sie verwenden sie vielmehr dafür, um eine neue Umgebung bereitzustellen.|

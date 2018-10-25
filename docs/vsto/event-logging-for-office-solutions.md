@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925112"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Projektmappen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.  
@@ -51,33 +51,33 @@ ms.locfileid: "35672291"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008  
   
-1.  Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.  
+1. Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.  
   
-2.  Starten Sie **Ereignisanzeige**.  
+2. Starten Sie **Ereignisanzeige**.  
   
-3.  Erweitern Sie **Windows-Protokolle**.  
+3. Erweitern Sie **Windows-Protokolle**.  
   
-4.  Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.  
+4. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.  
   
-5.  Klicken Sie im Menü **Aktion** auf **Aktuelles Protokoll filtern**.  
+5. Klicken Sie im Menü **Aktion** auf **Aktuelles Protokoll filtern**.  
   
-6.  Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.  
+6. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.  
   
-7.  Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.  
+7. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.  
   
-8.  Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.  
+8. Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.  
   
- Die Ereignisanzeige enthält die folgenden Informationen:  
+   Die Ereignisanzeige enthält die folgenden Informationen:  
   
--   Der Speicherort des Bereitstellungsmanifests für die Projektmappe  
+- Der Speicherort des Bereitstellungsmanifests für die Projektmappe  
   
--   Eine Meldung, die die Ursache des Fehlers oder der Ausnahme beschreibt  
+- Eine Meldung, die die Ursache des Fehlers oder der Ausnahme beschreibt  
   
- Über diese Ausnahmemeldungen können Sie den Grund für ein Installationsproblem ermitteln, z. B. ein nicht vertrauenswürdiges Zertifikat, ein nicht vertrauenswürdiger Dokumentspeicherort oder ein ungültiges Bereitstellungsmanifest.  
+  Über diese Ausnahmemeldungen können Sie den Grund für ein Installationsproblem ermitteln, z. B. ein nicht vertrauenswürdiges Zertifikat, ein nicht vertrauenswürdiger Dokumentspeicherort oder ein ungültiges Bereitstellungsmanifest.  
   
- Nachdem eine Office-Projektmappe deinstalliert wurde, verbleiben die Ausnahmemeldungen im Ereignisprotokoll.  
+  Nachdem eine Office-Projektmappe deinstalliert wurde, verbleiben die Ausnahmemeldungen im Ereignisprotokoll.  
   
- Um anzuzeigen, oder melden Sie ausnahmemeldungen, wenn eine Office-Projektmappe ausgeführt wird, finden Sie unter [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md) und [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md).  
+  Um anzuzeigen, oder melden Sie ausnahmemeldungen, wenn eine Office-Projektmappe ausgeführt wird, finden Sie unter [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md) und [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalisierung  
  Die Sprache einer Ausnahmemeldung wird durch die Sprache der Visual Studio-Tools für Office Runtime bestimmt. Wenn es sich bei der Computer des Endbenutzers das japanische Sprachpaket installiert hat, ist die Ausnahmemeldung z. B. in das Ereignisprotokoll in japanischer Sprache geschrieben.  

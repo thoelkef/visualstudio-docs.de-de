@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5a46f5d63e817a38808b0c48be75f750a4e2bc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865140"
 ---
 # <a name="thread-details-view---contention-data"></a>Ansicht „Threaddetails“ – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Er
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
   
--   Klicken Sie im Fenster "Aufrufliste" auf den Funktionsnamen.  
+- Klicken Sie im Fenster "Aufrufliste" auf den Funktionsnamen.  
   
- Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
+  Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>So zeigen Sie die Konfliktereignisse einer Ressource in allen Threads bei der Profilerstellung an  
   

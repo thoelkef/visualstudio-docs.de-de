@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839608"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.  
@@ -55,10 +55,10 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung |  
-|-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
-|[ImportGroup](../msbuild/importgroup-element.md)|Enthält eine Sammlung von `Import` -Elementen, die unter einer optionalen Bedingung gruppiert sind.|  
+| Element | Beschreibung  |
+| - | - |
+| [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
+| [ImportGroup](../msbuild/importgroup-element.md) | Enthält eine Sammlung von `Import` -Elementen, die unter einer optionalen Bedingung gruppiert sind. |
 
 ## <a name="remarks"></a>Hinweise  
  Mithilfe des `Import` -Elements können Sie Code wiederverwenden, der in vielen Projektdateien verwendet wird. Dies erleichtert die Verwaltung des Codes, da jedes von Ihnen ausgeführte Update für den freigegebenen Code an alle Projekte weitergegeben wird, die ihn importieren.  
@@ -75,7 +75,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 > [!NOTE]
 >  Während bedingte Import-Anweisungen in Befehlszeilen-MSBuilds arbeiten, arbeiten Sie nicht mit MSBuild in der integrierten Entwicklungsumgebung (Integrated Development Environment; IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Bedingte Importe werden mithilfe der Konfiguration und den Plattformwerten ausgewertet, die beim Laden des Projekts festgelegt werden. Wenn anschließend Änderungen vorgenommen werden, die eine erneute Auswertung der Bedingungen in der Projektdatei erfordern, z.B. Ändern der Plattform, wertet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die Bedingungen für Eigenschaften und Elemente aus, jedoch nicht für Importe. Da die Importbedingung nicht erneut ausgewertet wird, wird der Import übersprungen.  
->   
+> 
 >  Fügen Sie zur Umgehung dieses Problems den *TARGETS*-Dateien bedingte Importe hinzu, oder fügen Sie Code in einen bedingten Block ein, z.B. den Block [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Platzhalter  

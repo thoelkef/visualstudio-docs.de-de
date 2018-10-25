@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877646"
 ---
 # <a name="editing-tableadapters"></a>Bearbeiten von TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ Möglicherweise möchten das Schema der Tabelle des Adapters ändern. Zu diesem 
 ## <a name="create-new-stored-procedures"></a>Neue gespeicherte Prozeduren erstellen  
  In diesem Abschnitt wird erläutert, wie zum Abschließen der **Konfigurations-Assistenten für TableAdapter-Abfragen** bei der Auswahl der **neue gespeicherte Prozeduren erstellen** Option.  
   
-1.  In der **gespeicherte Prozeduren generieren** geben die SQL-Anweisung, die bei Aufrufen der gespeicherten Prozedur.  
+1. In der **gespeicherte Prozeduren generieren** geben die SQL-Anweisung, die bei Aufrufen der gespeicherten Prozedur.  
   
-    > [!NOTE]
-    >  Der Assistent ermöglicht den Zugriff auf die **Abfragegenerator**, ein visuelles Tool zum Erstellen von SQL-Abfragen. Um es zu öffnen, klicken Sie auf die **Abfragegenerator** Schaltfläche.  
+   > [!NOTE]
+   >  Der Assistent ermöglicht den Zugriff auf die **Abfragegenerator**, ein visuelles Tool zum Erstellen von SQL-Abfragen. Um es zu öffnen, klicken Sie auf die **Abfragegenerator** Schaltfläche.  
   
-2.  In der **gespeicherte Prozeduren erstellen** Seite, gehen Sie folgendermaßen vor:  
+2. In der **gespeicherte Prozeduren erstellen** Seite, gehen Sie folgendermaßen vor:  
   
-    1.  Geben Sie einen Namen für die neue gespeicherte Prozedur ein.  
+   1. Geben Sie einen Namen für die neue gespeicherte Prozedur ein.  
   
-    2.  Geben Sie an, ob die gespeicherte Prozedur in der zugrunde liegenden Datenbank erstellt werden soll.  
+   2. Geben Sie an, ob die gespeicherte Prozedur in der zugrunde liegenden Datenbank erstellt werden soll.  
   
-        > [!NOTE]
-        >  Die Möglichkeit zum Erstellen einer gespeicherten Prozedur in der Datenbank ist von den Sicherheitseinstellung der betreffenden Datenbank abhängig.  
+      > [!NOTE]
+      >  Die Möglichkeit zum Erstellen einer gespeicherten Prozedur in der Datenbank ist von den Sicherheitseinstellung der betreffenden Datenbank abhängig.  
   
-     Die **Assistentenergebnisse anzeigen** Seite zeigt die Ergebnisse der Erstellung der TableAdapter-Abfrage. Wenn im Assistenten Probleme auftreten, werden auf dieser Seite die Fehlerinformationen angezeigt.  
+      Die **Assistentenergebnisse anzeigen** Seite zeigt die Ergebnisse der Erstellung der TableAdapter-Abfrage. Wenn im Assistenten Probleme auftreten, werden auf dieser Seite die Fehlerinformationen angezeigt.  
   
 ## <a name="use-existing-stored-procedures"></a>Vorhandene gespeicherte Prozeduren verwenden  
  In diesem Abschnitt wird erläutert, wie zum Abschließen der **Konfigurations-Assistenten für TableAdapter-Abfragen** bei der Auswahl der **vorhandene gespeicherte Prozeduren verwenden** Option.  

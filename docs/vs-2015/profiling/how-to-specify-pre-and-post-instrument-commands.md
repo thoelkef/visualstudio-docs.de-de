@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848383"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Bin�
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ausführen und von der Zielplattform der profilierten Anwendung.  
+  Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ausführen und von der Zielplattform der profilierten Anwendung.  
   
- **32-Bit-Computer**  
+  **32-Bit-Computer**  
   
- Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
+  Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **64-Bit-Computer**  
+  **64-Bit-Computer**  
   
- Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest:  
+  Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest:  
   
--   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
+- Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
+- Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an  
   

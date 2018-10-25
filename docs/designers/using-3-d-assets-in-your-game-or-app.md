@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880675"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -41,7 +41,7 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
 2.  Aktivieren Sie unter **Verfügbare Buildanpassungsdateien** die Kontrollkästchen für die in der folgenden Tabelle beschriebenen Ressourcentypen, die Sie im Projekt verwenden möchten:
 
     |Ressourcentyp|Name der Buildanpassung|
-    |----------------|------------------------------|
+    |----------------| - |
     |Texturen und Bilder|**ImageContentTask(.targets, .props)**|
     |3D-Modelle|**MeshContentTask(.targets, .props)**|
     |Shader|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
 Nachstehend sind die drei Elementtypen für die Inhaltspipeline und ihre zugeordneten Quell- und Ausgabedateitypen aufgeführt.
 
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Bildinhaltspipeline**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Meshinhaltspipeline**|AutoDesk FBX-Austauschdatei (*.fbx*)<br /><br /> Collada DAE-Datei (*.dae*)<br /><br /> Wavefront OBJ-Datei (*.obj*)|3D-Mesh-Datei (*.cmo*)|
 |**Shaderinhaltspipeline**|Visual Shader-Diagramm (*.dgsl*)|Compiled Shader Output (*.cso*)|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c31179d33467f6be440882bce6f6cd9559d9a00
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 473ff5b0124a050b60c9dc02929b2bad83f3661e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842338"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (dynamische XAttribute-Eigenschaft)
 
@@ -37,7 +37,7 @@ Ein <xref:System.String>-Objekt, das den Wert dieses Attributs enthält.
 ## <a name="exceptions"></a>Ausnahmen
 
 |Ausnahmetyp|Bedingung|
-|--------------------|---------------|
+| - |---------------|
 |<xref:System.ArgumentNullException>|Wenn dieser Ausnahmetyp festgelegt wird, ist `value` `null`.|
 
 ## <a name="remarks"></a>Hinweise

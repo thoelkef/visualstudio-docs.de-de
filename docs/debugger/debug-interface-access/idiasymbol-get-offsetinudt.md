@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offsetinudt | Microsoft Docs'
+title: 'Idiasymbol:: Get_offsetinudt | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22e0574f8892c2e73a12ebf241af604b85a5ed30
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911420"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Ruft den Offset vom Anfang von einem benutzerdefinierten Typ (UDT) eines Elements in der UDT ab.  
+Ruft den Offset vom Anfang eines benutzerdefinierten Typs (UDT) eines Elements in der UDT ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_offsetInUdt(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Offset des Symbolspeicherort in Bytes zurück.  
+ [out] Gibt den Offset in Bytes, der den Symbolspeicherort zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Funktion ist nur in lokalen Datensätze in einem optimierten Build verwendet.  

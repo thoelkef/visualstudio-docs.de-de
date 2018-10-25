@@ -17,79 +17,79 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77b92b721f2c8b47bcb878aaa9f4cbf411015ccc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846888"
 ---
 # <a name="cache-data"></a>Zwischenspeichern von Daten
-  Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, sodass die Daten offline oder ohne Öffnen des Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts muss das Objekt einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  
+  Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, damit die Daten offline oder ohne Öffnen Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts, muss das Objekt über einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich der <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Es gibt zwei Möglichkeiten zum Hinzufügen eines Objekts für den Datencache:  
+ Es gibt zwei Möglichkeiten, ein Objekt, das dem Datencache hinzuzufügen:  
   
--   Zum Hinzufügen eines Objekts für den Datencache an, wenn die Projektmappe erstellt wird, gelten die <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> -Attribut auf die Deklaration des Objekts. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Um ein Objekt, das dem Datencache hinzuzufügen, wenn die Projektmappe erstellt wird, gelten die <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> -Attribut auf die Deklaration des Objekts. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Verwenden Sie zum programmgesteuerten Hinzufügen ein Objekts für den Datencache zur Laufzeit die `StartCaching` Methode von einem Host-Elements, z. B. die `ThisDocument` oder `ThisWorkbook` Klassen. Weitere Informationen finden Sie unter [wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Verwenden Sie zum programmgesteuerten Hinzufügen ein Objekts, das dem Datencache zur Laufzeit die `StartCaching` Methode von einem Host-Elements, z. B. die `ThisDocument` oder `ThisWorkbook` Klassen. Weitere Informationen finden Sie unter [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
- Nachdem Sie ein Objekt für den Datencache hinzugefügt haben, können Sie Zugriff auf und ändern die zwischengespeicherten Daten ohne Starten des Word- oder Excel. Weitere Informationen finden Sie unter [zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+  Nachdem Sie ein Objekt, das dem Datencache hinzugefügt haben, können Sie Zugriff auf und ändern die zwischengespeicherten Daten ohne Starten des Word- oder Excel. Weitere Informationen finden Sie unter [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
-## <a name="requirements-for-data-objects-to-be-cached"></a>Anforderungen für die Datenobjekte zwischengespeichert werden soll  
+## <a name="requirements-for-data-objects-to-be-cached"></a>Anforderungen für Datenobjekte, die zwischengespeichert werden  
  Um ein Datenobjekt in der Projektmappe zwischenzuspeichern, muss das Objekt die folgenden Anforderungen erfüllen:  
   
--   Wie werden von öffentlichen Lese-/Schreibzugriff-Felds oder einer Eigenschaft eines Hostelements der `ThisDocument` oder `ThisWorkbook` Klassen.  
+- Ein öffentliches Feld Lese-/Schreibzugriff oder-Eigenschaft eines Hostelements, z. B. werden die `ThisDocument` oder `ThisWorkbook` Klassen.  
   
--   Werden Sie nicht nach einem Indexer oder andere parametrisierten Eigenschaft.  
+- Nicht, einen Indexer oder andere parametrisierten Eigenschaft.  
   
- Darüber hinaus muss das Datenobjekt mit serialisierbar der <xref:System.Xml.Serialization.XmlSerializer> -Klasse, die den Typ des Objekts bedeutet muss diese Merkmale aufweisen:  
+  Darüber hinaus das Datenobjekt, das von serialisierbar sein muss die <xref:System.Xml.Serialization.XmlSerializer> -Klasse, die bedeutet, den Typ des Objekts dass muss diese Merkmale aufweisen:  
   
--   Ein öffentlicher Typ sein.  
+- Ein öffentlicher Typ sein.  
   
--   Haben Sie einen öffentlichen Konstruktor ohne Parameter.  
+- Haben Sie einen öffentlichen Konstruktor ohne Parameter.  
   
--   Code, der zusätzliche Sicherheitsberechtigungen erfordert nicht ausgeführt werden.  
+- Code, der erfordert zusätzliche Sicherheitsberechtigungen nicht ausgeführt werden.  
   
--   Verfügbar machen Sie nur Lese-/Schreibzugriff öffentlichen Eigenschaften (andere Eigenschaften werden ignoriert).  
+- Machen Sie nur lesend und schreibend öffentlichen Eigenschaften (andere Eigenschaften werden ignoriert).  
   
--   Machen Sie mehrdimensionale Arrays (geschachtelte Arrays sind zulässig) nicht verfügbar.  
+- Machen Sie mehrdimensionale Arrays (geschachtelte Arrays werden akzeptiert) nicht verfügbar.  
   
--   Schnittstellen von Eigenschaften und Felder zurückgegeben.  
+- Schnittstellen von Eigenschaften und Felder zurückgegeben.  
   
--   Nicht implementiert <xref:System.Collections.IDictionary> Wenn eine Sammlung.  
+- Nicht implementiert <xref:System.Collections.IDictionary> Wenn eine Sammlung.  
   
- Wenn Sie ein Datenobjekt Zwischenspeichern der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serialisiert das Objekt in eine XML-Zeichenfolge, die in gespeichert ist ein *benutzerdefinierten XML-Abschnitt* im Dokument. Weitere Informationen finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).  
+  Wenn Sie ein Datenobjekt Zwischenspeichern der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serialisiert das Objekt in eine XML-Zeichenfolge, die in gespeichert ist eine *benutzerdefinierte XML-Element* im Dokument. Weitere Informationen finden Sie unter [Übersicht über die benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).  
   
-## <a name="cached-data-size-limits"></a>Größenbeschränkungen für zwischengespeicherte Daten  
- Es gibt einige Einschränkungen auf die Gesamtmenge der Daten, die Sie für den Datencache in einem Dokument, und klicken Sie auf die Größe jedes einzelnen Objekts im Datencache hinzufügen können. Wenn Sie diese Grenzwerte überschreiten, möglicherweise die Anwendung unerwartet beendet, wenn die Daten für den Datencache gespeichert werden.  
+## <a name="cached-data-size-limits"></a>Grenzwerte für die zwischengespeicherten Daten  
+ Es gibt einige Einschränkungen auf die Gesamtmenge der Daten an, das dem Datencache in einem Dokument, und klicken Sie auf die Größe jedes einzelnen Objekts im Datencache hinzugefügt werden können. Wenn Sie diese Grenzwerte überschreiten, kann die Anwendung unerwartet beendet, wenn die Daten in Datencache gespeichert werden.  
   
- Um diese Einschränkungen zu vermeiden, beachten Sie Folgendes:  
+ Um diese Einschränkungen zu vermeiden, führen Sie die folgenden Richtlinien:  
   
--   Fügen Sie für den Datencache keines Objekt größer als 10 MB.  
+- Fügen Sie ein Objekt größer als 10 MB nicht, das dem Datencache.  
   
--   Fügen Sie für den Datencache in einem einzelnen Dokument nicht mehr als 100 MB an Daten insgesamt.  
+- Fügen Sie dem Datencache in einem einzelnen Dokument nicht mehr als 100 MB insgesamt.  
   
- Hierbei handelt es sich um ungefähre Werte. Die genaue Grenzwerte richten sich nach mehreren Faktoren ab, einschließlich der verfügbare Arbeitsspeicher und der Anzahl der ausgeführten Prozesse.  
+  Hierbei handelt es sich um ungefähre Werte. Die genaue Grenzwerte hängen von verschiedenen Faktoren wie der verfügbare Arbeitsspeicher und die Anzahl der ausgeführten Prozesse ab.  
   
 ## <a name="control-the-behavior-of-cached-objects"></a>Kontrollieren des Verhaltens von zwischengespeicherten Objekten  
- Um mehr Kontrolle über das Verhalten eines zwischengespeicherten Objekts zu erhalten, können Sie implementieren die <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> Schnittstelle für den Typ des zwischengespeicherten Objekts. Beispielsweise können Sie diese Schnittstelle implementieren, wenn Sie steuern möchten, wie Benutzer benachrichtigt wird, wenn das Objekt geändert wurde. Codebeispiele, die veranschaulichen, wie implementiert <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>, finden Sie unter der `ControlCollection` Klasse im Beispiel für dynamische Steuerelemente in Word und Excel-Beispiel für dynamische Steuerelemente [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
+ Um mehr Kontrolle über das Verhalten eines zwischengespeicherten Objekts zu erhalten, können Sie implementieren die <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> Schnittstelle für den Typ des zwischengespeicherten Objekts. Beispielsweise können Sie diese Schnittstelle implementieren, wenn Sie steuern möchten, wie der Benutzer benachrichtigt wird, wenn das Objekt geändert wurde. Codebeispiele, die veranschaulichen, wie Sie implementieren <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>, finden Sie unter den `ControlCollection` Klasse im Beispiel für dynamische Steuerelemente in Word und Excel-Beispiel für dynamische Steuerelemente [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
   
-## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Beibehalten der Änderungen an der zwischengespeicherten Daten in Dokumenten kennwortgeschützte  
- Wenn Sie Datenobjekte in einem Dokument, die mit einem Kennwort geschützt ist zwischenspeichern, werden Änderungen an den zwischengespeicherten Daten nicht gespeichert. Überschreiben von zwei Methoden, um Änderungen auf die zwischengespeicherten Daten zu speichern. Überschreiben Sie diese Methoden, um den Schutz vorübergehend zu entfernen, wenn das Dokument gespeichert wird, und wenden Sie den Schutz nach dem Speichern erneut abgeschlossen ist.  
+## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Beibehalten von Änderungen an der zwischengespeicherten Daten in Dokumenten kennwortgeschützte  
+ Wenn Sie Datenobjekte in einem Dokument, die mit einem Kennwort geschützt ist zwischenspeichern, werden Änderungen an den zwischengespeicherten Daten nicht gespeichert werden. Sie können Änderungen an den zwischengespeicherten Daten speichern, durch zwei Methoden überschreiben. Überschreiben Sie diese Methoden, um den Schutz vorübergehend zu entfernen, wenn das Dokument gespeichert wird, und wenden Sie erneut den Schutz nach dem Speichern an Vorgang abgeschlossen ist.  
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
-## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Vermeidung von Datenverlusten, wenn Sie null-Werte für den Datencache hinzufügen  
- Wenn Sie für den Datencache Objekte hinzufügen, müssen alle zwischengespeicherten Objekte nicht initialisiert werden**null** -Wert vor das Dokument gespeichert und geschlossen wird. Wenn ein zwischengespeichertes Objekt verfügt über eine **null** Wert, wenn das Dokument gespeichert und geschlossen, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] entfernt alle zwischengespeicherten Objekte automatisch aus dem Datencache.  
+## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Verhindern von Datenverlust, wenn null-Werte, das dem Datencache hinzugefügt.  
+ Wenn Sie Objekte, das dem Datencache hinzufügen, müssen alle zwischengespeicherten Objekte nicht initialisiert werden**null** -Wert vor das Dokument gespeichert und geschlossen wird. Wenn ein zwischengespeichertes Objekt verfügt über eine **null** Wert, wenn das Dokument gespeichert und geschlossen wird, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] entfernt alle zwischengespeicherten Objekte automatisch aus dem Datencache.  
   
- Wenn Sie ein Objekt mit Hinzufügen einer **null** Wert für den Datencache mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse initialisiert werden, die zwischengespeicherten Daten Objekte, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word- oder Excel installiert haben, bevor das Dokument, von einem Endbenutzer geöffnet wird initialisieren möchten. Weitere Informationen finden Sie unter [zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Wenn Sie ein Objekt mit Hinzufügen einer **null** Wert für den Datencache mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, um die zwischengespeicherten Daten zu Objekten, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word- oder Excel installiert haben, bevor das Dokument, von einem Endbenutzer geöffnet wird initialisieren möchten. Weitere Informationen finden Sie unter [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehungs mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value | Microsoft Docs'
+title: 'Idiasymbol:: Get_value | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863736"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Ruft den Wert einer Konstante.  
@@ -34,16 +34,16 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [in, out] Ein `VARIANT` -Objekt, das mit dem Wert einer Konstante ausgefüllt ist.  
+ [in, out] Ein `VARIANT` -Objekt, das mit dem Wert einer Konstante gefüllt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Angegebene Variante muss initialisiert werden, bevor sie an diese Methode übergeben wird. Weitere Informationen finden Sie im Beispiel.  
+ Die angegebene Variante muss initialisiert werden, bevor sie an diese Methode übergeben wird. Weitere Informationen finden Sie im Beispiel.  
   
 ## <a name="example"></a>Beispiel  
   

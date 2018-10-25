@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Microsoft Docs
+title: IDebugArrayField::GetRank | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fee642bb5f19efb62b631d71d3ba95eec45c0be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6921da02b2df62509dd820795581e3ce6dae92d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846238"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Ruft den Rang oder die Anzahl der Dimensionen des Arrays.  
+Ruft den Rang oder die Anzahl der Dimensionen des Arrays ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,7 +47,7 @@ int GetRank(
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Rang eines Arrays entspricht der Anzahl von Dimensionen. In C++ und c# mehrdimensionale Arrays sind eigentlich Arrays von Arrays und kann daher nur ein eindimensionales Array betrachtet werden (und die `GetRank` Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], andererseits, mehrdimensionale Arrays werden anders verarbeitet, und der Rang eines solchen Arrays gibt die Anzahl der Dimensionen (und die `GetRank` Methode gibt immer die Anzahl der Dimensionen).  
+ Der Rang eines Arrays entspricht die Anzahl der Dimensionen ab. In C++ und c#, mehrdimensionale Arrays sind wirklich Arrays von Arrays und kann daher nur ein eindimensionales Array betrachtet werden (und die `GetRank` Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], dagegen auf mehrdimensionale Arrays werden anders verarbeitet, und der Rang eines solchen Arrays gibt die Anzahl der Dimensionen (und die `GetRank` Methode wird immer die Anzahl der Dimensionen).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

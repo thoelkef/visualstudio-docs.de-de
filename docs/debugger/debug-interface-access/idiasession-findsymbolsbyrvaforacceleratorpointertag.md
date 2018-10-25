@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a75b82da742bee6ec6d504ec66876548f664cf57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887266"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-Wenn einen entsprechenden Tagwert, gibt diese Methode eine Enumeration von Symbolen, die enthalten sind in einer angegebenen übergeordneten Accelerator Stub-Funktion in einem angegebenen relativen virtuellen Adresse an.  
+Wenn einen entsprechenden Tagwert, gibt diese Methode in einer angegebenen übergeordneten Accelerator-Stub-Funktion an eine angegebene relative virtuelle Adresse eine Enumeration von Symbolen, die enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,7 +38,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
  [in] Ein `IDiaSymbol` , entspricht die Accelerator-Stub-Funktion, die gesucht werden soll.  
   
  `tagValue`  
- [in] Der Wert des Zeigers Tag.  
+ [in] Der Tag-Zeigerwert.  
   
  `rva`  
  [in] Die relative virtuelle Adresse.  
@@ -47,10 +47,10 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
  [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Zugriffstaste Stub-Funktion entspricht.  
+ Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Accelerator-Stub-Funktion entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

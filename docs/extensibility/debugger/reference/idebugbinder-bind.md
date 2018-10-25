@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: IDebugBinder::Bind | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49e4254df9ec06813499237054ec916bb4b6c1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1210b84a52aa15d3c8e1bb73bc58d1fbe48a19d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920351"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Diese Methode ruft die Arbeitsspeicher-Kontext oder ein Objekt, das den aktuellen Symbolwert enthält.  
+Diese Methode ruft den Arbeitsspeicher-Kontext oder das Objekt, das das Symbol für den aktuellen Wert enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,13 +48,13 @@ int Bind(
  [in] Die [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , enthält das untergeordnete Element verweist `pField`.  
   
  `pField`  
- [in] Die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , die das Symbol darstellt.  
+ [in] Die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , das das Symbol darstellt.  
   
  `ppObject`  
  [out] Gibt die `IDebugObject` , die die Instanz des Symbols darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

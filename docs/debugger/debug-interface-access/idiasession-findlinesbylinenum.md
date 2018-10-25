@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbylinenum | Microsoft Docs'
+title: 'Idiasession:: Findlinesbylinenum | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878868"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Bestimmt die Zeilennummern der Kompiliereinheit, der die angegebene Zeilennummer in einer Quelldatei in oder in der Nähe liegt.  
+Bestimmt die Zeilennummern der Kompiliereinheit, der die Anzahl der angegebenen Zeile in einer Quelldatei in oder in der Nähe liegt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,28 +38,28 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>Parameter  
  `compiland`  
- [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit zu durchsuchende für die Zeilennummern darstellt. Dieser Parameter darf nicht sein `NULL`.  
+ [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit in die Suche nach den Zeilennummern darstellt. Dieser Parameter darf nicht sein `NULL`.  
   
  `file`  
- [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei durchsucht darstellt. Dieser Parameter darf nicht sein `NULL`.  
+ [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Objekt, suchen Sie in die Quelldatei darstellt. Dieser Parameter darf nicht sein `NULL`.  
   
  `linenum`  
- [in] Gibt eine Zeile eins an.  
+ [in] Gibt eine 1-basierte Zeilennummer an.  
   
 > [!NOTE]
->  Sie können nicht 0 (null) verwenden, um alle Zeilen angeben (verwenden Sie die [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) Methode, um alle Zeilen zu suchen).  
+>  Sie darf nicht 0 (null) verwenden, um alle Zeilen angeben (verwenden Sie die [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) Methode, um alle Zeilen zu ermitteln).  
   
  `column`  
- [in] Gibt die Nummer der Spalte an. Verwenden Sie 0 (null), um alle Spalten anzugeben. Eine Spalte ist ein Byte-Offset in einer Zeile.  
+ [in] Gibt die Nummer der Spalte an. Verwenden Sie 0 (null), um alle Spalten anzugeben. Eine Spalte ist ein Byteoffset in einer Zeile.  
   
  `ppResult`  
  [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) Objta, die eine Liste mit den Zeilennummern enthält abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird veranschaulicht, öffnen Sie eine Quelldatei, Auflisten der Compilands, die von dieser Datei beigetragen haben, und suchen Sie die Zeilennummern, in der Quelldatei, in jeder Kompiliereinheit beginnt.  
+ Das folgende Beispiel zeigt, wie Sie eine Quelldatei öffnen, die von dieser Datei beigetragenen Compilands aufzählen und suchen die Zeilennummern in der Quelldatei, in dem jede Kompiliereinheit beginnt.  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  

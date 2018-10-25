@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856664"
 ---
 # <a name="test-area-5-change-source-control"></a>Testbereich 5: Ändern der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
   
  **Ändern Sie die Quellcodeverwaltung** Befehl bietet vier grundlegende Funktionen für den Benutzer:  
   
--   **Binden:**  
+- **Binden:**  
   
-     Ermöglicht einem Benutzer zum Herstellen oder zum Wiederherstellen einer Datenquellen-Steuerelement-Verknüpfung zwischen einer Projektmappe oder eines Projekts und den Versionsspeicher.  
+   Ermöglicht einem Benutzer zum Herstellen oder zum Wiederherstellen einer Datenquellen-Steuerelement-Verknüpfung zwischen einer Projektmappe oder eines Projekts und den Versionsspeicher.  
   
--   **Aufheben der Bindung:**  
+- **Aufheben der Bindung:**  
   
-     Entfernt eine Projekt/Projektmappe aus der quellcodeverwaltung auf einer Basis pro Verbindung.  
+   Entfernt eine Projekt/Projektmappe aus der quellcodeverwaltung auf einer Basis pro Verbindung.  
   
--   **Verbindung herstellen/trennen:**  
+- **Verbindung herstellen/trennen:**  
   
- Schaltet-Online- oder offline-Status der kontrollierte Lösung, die im Bereich 3 beschrieben wird. Weitere Informationen finden Sie unter [Test Bereich 3: Auschecken / Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Schaltet-Online- oder offline-Status der kontrollierte Lösung, die im Bereich 3 beschrieben wird. Weitere Informationen finden Sie unter [Test Bereich 3: Auschecken / Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfad wird verwendet, in den Testfällen.  

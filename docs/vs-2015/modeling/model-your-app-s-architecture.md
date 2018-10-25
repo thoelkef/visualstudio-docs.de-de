@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835257"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
  Das Anforderungsmodell stellt die folgenden wesentlichen Informationen bereit:  
   
--   Bereitgestellte Schnittstellen. Eine bereitgestellte Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente für die Benutzer bereitstellen muss, unabhängig davon, ob es sich um menschliche Benutzer oder andere Softwarekomponenten handelt.  
+- Bereitgestellte Schnittstellen. Eine bereitgestellte Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente für die Benutzer bereitstellen muss, unabhängig davon, ob es sich um menschliche Benutzer oder andere Softwarekomponenten handelt.  
   
--   Erforderliche Schnittstellen. Eine erforderliche Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente verwenden kann. In einigen Fällen können Sie alle diese Dienste als Teil des eigenen Systems entwerfen. In anderen Fällen, insbesondere wenn Sie eine Komponente entwerfen, die mit anderen Komponenten in vielen Konfigurationen kombiniert werden kann, wird die erforderliche Schnittstelle auf Grundlage externer Aspekte festgelegt.  
+- Erforderliche Schnittstellen. Eine erforderliche Schnittstelle führt die Dienste oder Vorgänge auf, die das System oder die Komponente verwenden kann. In einigen Fällen können Sie alle diese Dienste als Teil des eigenen Systems entwerfen. In anderen Fällen, insbesondere wenn Sie eine Komponente entwerfen, die mit anderen Komponenten in vielen Konfigurationen kombiniert werden kann, wird die erforderliche Schnittstelle auf Grundlage externer Aspekte festgelegt.  
   
--   Servicequalitätsanforderungen. Leistung, Sicherheit, Stabilität und andere Ziele und Einschränkungen, die das System erfüllen muss.  
+- Servicequalitätsanforderungen. Leistung, Sicherheit, Stabilität und andere Ziele und Einschränkungen, die das System erfüllen muss.  
   
- Das Anforderungsmodell wird aus der Perspektive der Benutzer des Systems geschrieben, bei denen es sich um Personen oder andere Softwarekomponenten handeln kann. Die internen Funktionen des Systems sind ihnen nicht bekannt. Im Gegensatz dazu soll ein Architekturmodell die internen Funktionen beschreiben und darstellen, wie sie die Anforderungen der Benutzer erfüllen.  
+  Das Anforderungsmodell wird aus der Perspektive der Benutzer des Systems geschrieben, bei denen es sich um Personen oder andere Softwarekomponenten handeln kann. Die internen Funktionen des Systems sind ihnen nicht bekannt. Im Gegensatz dazu soll ein Architekturmodell die internen Funktionen beschreiben und darstellen, wie sie die Anforderungen der Benutzer erfüllen.  
   
- Die Anforderungen und Architekturmodelle sollten getrennt bleiben, um das Erörtern der Anforderungen mit den Benutzern zu erleichtern. Dies erleichtert es außerdem, den Entwurf umzugestalten und alternative Architekturen zu erwägen, während die Anforderungen unverändert beibehalten werden.  
+  Die Anforderungen und Architekturmodelle sollten getrennt bleiben, um das Erörtern der Anforderungen mit den Benutzern zu erleichtern. Dies erleichtert es außerdem, den Entwurf umzugestalten und alternative Architekturen zu erwägen, während die Anforderungen unverändert beibehalten werden.  
   
- Sie können die Anforderungen und Architekturmodelle auf zweierlei Weise trennen:  
+  Sie können die Anforderungen und Architekturmodelle auf zweierlei Weise trennen:  
   
--   Speichern Sie sie in der gleichen Projektmappe, jedoch in unterschiedlichen Projekten. Sie werden im UML-Modell-Explorer als gesonderte Modelle angezeigt. Verschiedene Teammitglieder können gleichzeitig an den Modellen arbeiten. Es können eingeschränkte Arten von Ablaufverfolgung zwischen den Modellen erstellt werden.  
+- Speichern Sie sie in der gleichen Projektmappe, jedoch in unterschiedlichen Projekten. Sie werden im UML-Modell-Explorer als gesonderte Modelle angezeigt. Verschiedene Teammitglieder können gleichzeitig an den Modellen arbeiten. Es können eingeschränkte Arten von Ablaufverfolgung zwischen den Modellen erstellt werden.  
   
--   Platzieren Sie sie im gleichen UML-Modell, jedoch in unterschiedlichen Paketen. Dies vereinfacht die Ablaufverfolgung von Abhängigkeiten zwischen den Modellen, verhindert jedoch, dass mehrere Personen gleichzeitig an dem Modell arbeiten. Außerdem dauert es länger, ein sehr umfangreiches Modell in Visual Studio zu laden. Diese Vorgehensweise eignet sich daher weniger für umfangreiche Projekte.  
+- Platzieren Sie sie im gleichen UML-Modell, jedoch in unterschiedlichen Paketen. Dies vereinfacht die Ablaufverfolgung von Abhängigkeiten zwischen den Modellen, verhindert jedoch, dass mehrere Personen gleichzeitig an dem Modell arbeiten. Außerdem dauert es länger, ein sehr umfangreiches Modell in Visual Studio zu laden. Diese Vorgehensweise eignet sich daher weniger für umfangreiche Projekte.  
   
- Der Umfang an Informationen, die Sie in ein Anforderungsmodell oder ein Architekturmodell aufnehmen sollten, hängt vom Umfang des Projekts sowie der Größe des Teams und der räumlichen Verteilung seiner Mitglieder ab. Ein kleines Team in einem kurzen Projekt braucht eventuell lediglich ein Klassendiagramm der Geschäftskonzepte und einige Entwurfsmuster zu skizzieren; ein großes Projekt, das über mehr als einen Bereich ausgeliefert wurde, wird deutlich mehr Details erfordern.  
+  Der Umfang an Informationen, die Sie in ein Anforderungsmodell oder ein Architekturmodell aufnehmen sollten, hängt vom Umfang des Projekts sowie der Größe des Teams und der räumlichen Verteilung seiner Mitglieder ab. Ein kleines Team in einem kurzen Projekt braucht eventuell lediglich ein Klassendiagramm der Geschäftskonzepte und einige Entwurfsmuster zu skizzieren; ein großes Projekt, das über mehr als einen Bereich ausgeliefert wurde, wird deutlich mehr Details erfordern.  
   
 ##  <a name="BigDecisions"></a> Architektonische Muster  
  Sie müssen zu einem frühen Zeitpunkt der Entwicklung Optionen für die wichtigsten Technologien und Elemente auswählen, von denen der Entwurf abhängt. Diese Optionen müssen in den folgenden Bereichen ausgewählt werden:  
   
--   Optionen für die Basistechnologie, z. B. Auswahl einer Datenbank oder eines Dateisystems, Auswahl einer Netzwerkanwendung oder eines Webclients usw.  
+- Optionen für die Basistechnologie, z. B. Auswahl einer Datenbank oder eines Dateisystems, Auswahl einer Netzwerkanwendung oder eines Webclients usw.  
   
--   Frameworkoptionen, z. B. Auswahl von Windows Workflow Foundation oder ADO.NET Entity Framework.  
+- Frameworkoptionen, z. B. Auswahl von Windows Workflow Foundation oder ADO.NET Entity Framework.  
   
--   Optionen für Integrationsmethoden, z. B. Auswahl eines Enterprise Service Bus oder eines Punkt-zu-Punkt-Channels.  
+- Optionen für Integrationsmethoden, z. B. Auswahl eines Enterprise Service Bus oder eines Punkt-zu-Punkt-Channels.  
   
- Diese Optionen werden häufig von Servicequalitätsanforderungen bestimmt, z. B. Größe und Flexibilität, und die Auswahl kann getroffen werden, bevor die Anforderungsdetails bekannt sind. In einem umfangreichen System besteht eine enge Wechselbeziehung zwischen der Konfiguration von Hardware und Software.  
+  Diese Optionen werden häufig von Servicequalitätsanforderungen bestimmt, z. B. Größe und Flexibilität, und die Auswahl kann getroffen werden, bevor die Anforderungsdetails bekannt sind. In einem umfangreichen System besteht eine enge Wechselbeziehung zwischen der Konfiguration von Hardware und Software.  
   
- Die von Ihnen ausgewählten Optionen wirken sich darauf aus, wie Sie das Architekturmodell verwenden und interpretieren. Beispielsweise können in einem System mit einer Datenbank Zuordnungen in einem Klassendiagramm Beziehungen oder Fremdschlüssel in der Datenbank darstellen, während in einem auf XML-Dateien basierenden System Zuordnungen Querverweise angeben können, die XPath verwenden. In einem verteilten System können Meldungen in einem Sequenzdiagramm Meldungen in einer Verbindung darstellen, und in einer unabhängigen Anwendung können sie Funktionsaufrufe darstellen.  
+  Die von Ihnen ausgewählten Optionen wirken sich darauf aus, wie Sie das Architekturmodell verwenden und interpretieren. Beispielsweise können in einem System mit einer Datenbank Zuordnungen in einem Klassendiagramm Beziehungen oder Fremdschlüssel in der Datenbank darstellen, während in einem auf XML-Dateien basierenden System Zuordnungen Querverweise angeben können, die XPath verwenden. In einem verteilten System können Meldungen in einem Sequenzdiagramm Meldungen in einer Verbindung darstellen, und in einer unabhängigen Anwendung können sie Funktionsaufrufe darstellen.  
   
 ##  <a name="Components"></a> Komponenten und ihre Schnittstellen  
  Die wichtigsten Empfehlungen dieses Abschnitts lauten wie folgt:  
   
--   Erstellen Sie Komponentendiagramme, um die Hauptbestandteile des Systems darzustellen.  
+- Erstellen Sie Komponentendiagramme, um die Hauptbestandteile des Systems darzustellen.  
   
--   Zeichnen Sie Abhängigkeiten zwischen den Komponenten oder ihren Schnittstellen, um die Struktur des Systems darzustellen.  
+- Zeichnen Sie Abhängigkeiten zwischen den Komponenten oder ihren Schnittstellen, um die Struktur des Systems darzustellen.  
   
--   Verwenden Sie Schnittstellen für die Komponenten, um die Dienste darzustellen, die jede Komponente bereitstellt oder erfordert.  
+- Verwenden Sie Schnittstellen für die Komponenten, um die Dienste darzustellen, die jede Komponente bereitstellt oder erfordert.  
   
--   In einem umfangreichen Entwurf können Sie eigene Diagramme zeichnen, um jede Komponente in kleinere Teile zu zerlegen.  
+- In einem umfangreichen Entwurf können Sie eigene Diagramme zeichnen, um jede Komponente in kleinere Teile zu zerlegen.  
   
- Diese Punkte werden im Rest dieses Abschnitts ausführlicher erläutert.  
+  Diese Punkte werden im Rest dieses Abschnitts ausführlicher erläutert.  
   
 ### <a name="components"></a>Komponenten  
  Die zentralen Ansichten eines Architekturmodells sind die Komponentendiagramme, die die Hauptbestandteile des Systems und ihre gegenseitigen Abhängigkeiten darstellen. Weitere Informationen über Komponentendiagramme finden Sie unter [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
  Eine gut strukturierte Architektur weist eine eindeutige Anordnung von Abhängigkeiten auf, in der die folgenden Bedingungen erfüllt sind:  
   
--   Das Abhängigkeitsdiagramm enthält keine Schleifen.  
+- Das Abhängigkeitsdiagramm enthält keine Schleifen.  
   
--   Die Komponenten können auf Ebenen angeordnet werden, wobei es sich bei jeder Abhängigkeit um die Abhängigkeit zwischen einer Komponente auf einer Ebene und einer Komponente auf der nächsten Ebene handelt. Alle Abhängigkeiten zwischen zwei Ebenen weisen die gleiche Richtung auf.  
+- Die Komponenten können auf Ebenen angeordnet werden, wobei es sich bei jeder Abhängigkeit um die Abhängigkeit zwischen einer Komponente auf einer Ebene und einer Komponente auf der nächsten Ebene handelt. Alle Abhängigkeiten zwischen zwei Ebenen weisen die gleiche Richtung auf.  
   
- Sie können Abhängigkeiten direkt zwischen Komponenten darstellen oder Abhängigkeiten zwischen erforderlichen und bereitgestellten Schnittstellen darstellen, die an die Komponenten angefügt sind. Mithilfe von Schnittstellen können Sie definieren, welche Vorgänge in den einzelnen Abhängigkeiten verwendet werden. In der Regel werden Abhängigkeiten zwischen Komponenten beim ersten Zeichnen der Diagramme dargestellt und dann durch Abhängigkeiten zwischen Schnittstellen ersetzt, wenn weitere Informationen hinzugefügt werden. Beide Versionen sind ordnungsgemäße Beschreibungen der Software, jedoch stellt die Version mit Schnittstellen mehr Informationen als die frühere Version bereit.  
+  Sie können Abhängigkeiten direkt zwischen Komponenten darstellen oder Abhängigkeiten zwischen erforderlichen und bereitgestellten Schnittstellen darstellen, die an die Komponenten angefügt sind. Mithilfe von Schnittstellen können Sie definieren, welche Vorgänge in den einzelnen Abhängigkeiten verwendet werden. In der Regel werden Abhängigkeiten zwischen Komponenten beim ersten Zeichnen der Diagramme dargestellt und dann durch Abhängigkeiten zwischen Schnittstellen ersetzt, wenn weitere Informationen hinzugefügt werden. Beide Versionen sind ordnungsgemäße Beschreibungen der Software, jedoch stellt die Version mit Schnittstellen mehr Informationen als die frühere Version bereit.  
   
- Das Verwalten von Abhängigkeiten ist für die Erstellung von verwaltbarer Software von größter Bedeutung. Die Komponentendiagramme sollten alle Abhängigkeiten im Code wiedergeben. Wenn der Code bereits vorhanden ist, stellen Sie sicher, dass in den Diagrammen alle Abhängigkeiten dargestellt werden. Wenn der Code entwickelt wird, stellen Sie sicher, dass er keine Abhängigkeiten enthält, die im Komponentendiagramm nicht vorgesehen sind. Sie können Ebenendiagramme generieren, um Abhängigkeiten im Code leichter zu erkennen. Sie können den Code anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass die geplanten Abhängigkeitseinschränkungen erfüllt werden. Weitere Informationen finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).  
+  Das Verwalten von Abhängigkeiten ist für die Erstellung von verwaltbarer Software von größter Bedeutung. Die Komponentendiagramme sollten alle Abhängigkeiten im Code wiedergeben. Wenn der Code bereits vorhanden ist, stellen Sie sicher, dass in den Diagrammen alle Abhängigkeiten dargestellt werden. Wenn der Code entwickelt wird, stellen Sie sicher, dass er keine Abhängigkeiten enthält, die im Komponentendiagramm nicht vorgesehen sind. Sie können Ebenendiagramme generieren, um Abhängigkeiten im Code leichter zu erkennen. Sie können den Code anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass die geplanten Abhängigkeitseinschränkungen erfüllt werden. Weitere Informationen finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Schnittstellen  
  Durch das Einfügen von Schnittstellen für die Komponenten können Sie die Hauptgruppen von Vorgängen trennen und benennen, die von jeder Komponente bereitgestellt werden. Beispielsweise können Komponenten in einem webbasierten Vertriebssystem eine Schnittstelle aufweisen, über die Kunden Waren kaufen können, eine Schnittstelle, über die Lieferanten ihre Kataloge aktualisieren, und eine dritte Schnittstelle, über die das System verwaltet wird.  
@@ -146,17 +146,17 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
  Wenn Sie sowohl bereitgestellte als auch erforderliche Schnittstellen definieren, können Sie die Komponente deutlicher vom Rest des Entwurfs trennen, sodass Sie die folgenden Verfahren verwenden können:  
   
--   Fügen Sie die Komponente in eine Testumgebung ein, in der die umgebenden Komponenten von der Testumgebung simuliert werden.  
+- Fügen Sie die Komponente in eine Testumgebung ein, in der die umgebenden Komponenten von der Testumgebung simuliert werden.  
   
--   Entwickeln Sie die Komponente unabhängig von den anderen Komponenten.  
+- Entwickeln Sie die Komponente unabhängig von den anderen Komponenten.  
   
--   Verwenden Sie die Komponente in anderen Kontexten erneut, indem Sie ihre Schnittstellen mit anderen Komponenten verbinden.  
+- Verwenden Sie die Komponente in anderen Kontexten erneut, indem Sie ihre Schnittstellen mit anderen Komponenten verbinden.  
   
- Wenn Sie die Liste der Vorgänge in einer Schnittstelle definieren möchten, können Sie in einem UML-Klassendiagramm eine andere Ansicht der Schnittstelle erstellen. Suchen Sie hierzu im UML-Modell-Explorer die Schnittstelle, und ziehen Sie sie in ein Klassendiagramm. Anschließend können Sie der Schnittstelle Vorgänge hinzufügen.  
+  Wenn Sie die Liste der Vorgänge in einer Schnittstelle definieren möchten, können Sie in einem UML-Klassendiagramm eine andere Ansicht der Schnittstelle erstellen. Suchen Sie hierzu im UML-Modell-Explorer die Schnittstelle, und ziehen Sie sie in ein Klassendiagramm. Anschließend können Sie der Schnittstelle Vorgänge hinzufügen.  
   
- Ein Vorgang in einer UML-Schnittstelle kann jedes Verfahren darstellen, mit dem ein Verhalten einer Komponente aufgerufen werden kann. Er kann eine Webdienstanforderung, eine andere Art von Signal oder Interaktion oder einen gewöhnlichen Programmfunktionsaufruf darstellen.  
+  Ein Vorgang in einer UML-Schnittstelle kann jedes Verfahren darstellen, mit dem ein Verhalten einer Komponente aufgerufen werden kann. Er kann eine Webdienstanforderung, eine andere Art von Signal oder Interaktion oder einen gewöhnlichen Programmfunktionsaufruf darstellen.  
   
- Um die hinzuzufügenden Vorgänge zu bestimmen, erstellen Sie Sequenzdiagramme, die zeigen, wie die Komponenten miteinander interagieren. Finden Sie unter [Interaktionen zwischen Komponenten](#Interactions). Jedes der Sequenzdiagramme zeigt die Interaktionen, die in einem jeweils anderen Anwendungsfall auftreten. Auf diese Weise können Sie der Liste der Vorgänge in der Schnittstelle jeder Komponente allmählich weitere Vorgänge hinzufügen, während Sie die Anwendungsfälle untersuchen.  
+  Um die hinzuzufügenden Vorgänge zu bestimmen, erstellen Sie Sequenzdiagramme, die zeigen, wie die Komponenten miteinander interagieren. Finden Sie unter [Interaktionen zwischen Komponenten](#Interactions). Jedes der Sequenzdiagramme zeigt die Interaktionen, die in einem jeweils anderen Anwendungsfall auftreten. Auf diese Weise können Sie der Liste der Vorgänge in der Schnittstelle jeder Komponente allmählich weitere Vorgänge hinzufügen, während Sie die Anwendungsfälle untersuchen.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Zerlegen einer Komponente in einzelne Teile  
  Sie können das in den vorherigen Abschnitten beschriebene Verfahren auf jede Komponente anwenden.  
@@ -169,32 +169,32 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
  Verwenden Sie Teile in den folgenden Situationen:  
   
--   Im Entwurf der übergeordneten Komponente muss immer der Komponententyp des Teils verwendet werden. Daher ist der Entwurf des Teils ein wesentlicher Bestandteil des Entwurfs der übergeordneten Komponente.  
+- Im Entwurf der übergeordneten Komponente muss immer der Komponententyp des Teils verwendet werden. Daher ist der Entwurf des Teils ein wesentlicher Bestandteil des Entwurfs der übergeordneten Komponente.  
   
--   Die übergeordnete Komponente ist keine reale Komponente. Beispielsweise können Sie über eine konzeptionelle Komponente mit dem Namen Darstellungsebene verfügen, die eine Auflistung von realen Komponenten darstellt, die Ansichten und Benutzerinteraktionen behandeln.  
+- Die übergeordnete Komponente ist keine reale Komponente. Beispielsweise können Sie über eine konzeptionelle Komponente mit dem Namen Darstellungsebene verfügen, die eine Auflistung von realen Komponenten darstellt, die Ansichten und Benutzerinteraktionen behandeln.  
   
- Verwenden Sie in den folgenden Situationen gesonderte Komponenten, auf die über erforderliche Schnittstellen zugegriffen wird:  
+  Verwenden Sie in den folgenden Situationen gesonderte Komponenten, auf die über erforderliche Schnittstellen zugegriffen wird:  
   
--   Die Dienste erfordernde Komponente kann zur Laufzeit über ihre Schnittstellen mit anderen Komponenten, die Dienste bereitstellen, verbunden werden.  
+- Die Dienste erfordernde Komponente kann zur Laufzeit über ihre Schnittstellen mit anderen Komponenten, die Dienste bereitstellen, verbunden werden.  
   
--   Der Entwurf ermöglicht es, einen Anbieter problemlos durch einen anderen Anbieter zu ersetzen.  
+- Der Entwurf ermöglicht es, einen Anbieter problemlos durch einen anderen Anbieter zu ersetzen.  
   
- Die Verwendung erforderlicher Schnittstellen ist normalerweise der Verwendung von Teilen vorzuziehen. Der Entwurf kann zwar mehr Zeit beanspruchen, jedoch ist das resultierende System flexibler. Es ist auch einfacher, die Komponenten getrennt zu testen. Hierdurch lässt sich die Kopplung in den Entwicklungsplänen reduzieren.  
+  Die Verwendung erforderlicher Schnittstellen ist normalerweise der Verwendung von Teilen vorzuziehen. Der Entwurf kann zwar mehr Zeit beanspruchen, jedoch ist das resultierende System flexibler. Es ist auch einfacher, die Komponenten getrennt zu testen. Hierdurch lässt sich die Kopplung in den Entwicklungsplänen reduzieren.  
   
 ##  <a name="Interactions"></a> Interaktionen zwischen Komponenten  
  Die wichtigsten Empfehlungen dieses Abschnitts lauten wie folgt:  
   
--   Identifizieren Sie die Anwendungsfälle des Systems.  
+- Identifizieren Sie die Anwendungsfälle des Systems.  
   
--   Zeichnen Sie für jeden Anwendungsfall ein oder mehrere Diagramme, um darzustellen, wie die Komponenten des Systems durch die Interaktion miteinander und mit den Benutzern das erforderliche Ergebnis erzielen. Normalerweise sind diese Diagramme Sequenzdiagramme oder Aktivitätsdiagramme.  
+- Zeichnen Sie für jeden Anwendungsfall ein oder mehrere Diagramme, um darzustellen, wie die Komponenten des Systems durch die Interaktion miteinander und mit den Benutzern das erforderliche Ergebnis erzielen. Normalerweise sind diese Diagramme Sequenzdiagramme oder Aktivitätsdiagramme.  
   
--   Verwenden Sie Schnittstellen, um die von jeder Komponente empfangenen Meldungen anzugeben.  
+- Verwenden Sie Schnittstellen, um die von jeder Komponente empfangenen Meldungen anzugeben.  
   
--   Beschreiben Sie die Auswirkungen der Vorgänge in den Schnittstellen.  
+- Beschreiben Sie die Auswirkungen der Vorgänge in den Schnittstellen.  
   
--   Wiederholen Sie das Verfahren für jede Komponente, um die Interaktion ihrer Teile darzustellen.  
+- Wiederholen Sie das Verfahren für jede Komponente, um die Interaktion ihrer Teile darzustellen.  
   
- Beispielsweise kann in einem webbasierten Vertriebssystem das Anforderungsmodell einen Kundenkauf oder einen Anwendungsfall definieren. Sie können ein Sequenzdiagramm erstellen, um die Interaktionen des Kunden mit den Komponenten in der Darstellungsschicht und die Interaktionen der Komponenten mit der Lagerkomponente und der Buchhaltungskomponente darzustellen.  
+  Beispielsweise kann in einem webbasierten Vertriebssystem das Anforderungsmodell einen Kundenkauf oder einen Anwendungsfall definieren. Sie können ein Sequenzdiagramm erstellen, um die Interaktionen des Kunden mit den Komponenten in der Darstellungsschicht und die Interaktionen der Komponenten mit der Lagerkomponente und der Buchhaltungskomponente darzustellen.  
   
 ### <a name="identifying-the-initiating-events"></a>Identifizieren der auslösenden Ereignisse  
  Die von den meisten Softwaresystemen ausgeführten Aktionen können bequem nach den verschiedenen Eingaben oder Ereignissen zugewiesenen Aufgaben unterteilt werden. Das auslösende Ereignis kann eines der folgenden Ereignisse sein:  

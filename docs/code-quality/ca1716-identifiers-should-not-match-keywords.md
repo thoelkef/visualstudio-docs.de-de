@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cfaef87f8463c43c412c5db3c83a899fb22b4f66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862436"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -32,12 +33,14 @@ ms.locfileid: "47858192"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Name, der einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache.
+
+Ein Name, der einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können c#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
 
- Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
+Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können c#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
+
+Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
 
 - Visual Basic
 
@@ -45,10 +48,12 @@ ms.locfileid: "47858192"
 
 - C++/CLI
 
- Groß-/Kleinschreibung Vergleich wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüsselwörter und Vergleich Groß-/Kleinschreibung wird für die anderen Sprachen verwendet.
+Groß-/Kleinschreibung Vergleich wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüsselwörter und Vergleich Groß-/Kleinschreibung wird für die anderen Sprachen verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.
+
+Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Sie können eine Warnung dieser Regel unterdrücken, wenn Sie sicher sind, dass der Bezeichner nicht Benutzer der API verwechselt werden und die Bibliothek in allen verfügbaren Sprachen in .NET Framework verwendet werden kann.
+
+Sie können eine Warnung dieser Regel unterdrücken, wenn Sie sicher sind, dass der Bezeichner nicht Benutzer der API verwechselt werden und die Bibliothek in allen verfügbaren Sprachen in .NET Framework verwendet werden kann.

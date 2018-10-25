@@ -19,57 +19,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a4b490b7cc7b1942723e6033117571bf08cba6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fee3c821c0b6a39c8dfb499caa00355aa008d413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906727"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Gewusst wie: Programmgesteuertes Reduzieren von Bereichen oder Markierungen in Dokumenten
   Wenn Sie mit einem <xref:Microsoft.Office.Interop.Word.Range> - oder <xref:Microsoft.Office.Interop.Word.Selection> -Objekt arbeiten, möchten Sie die Auswahl vor dem Einfügen von Text möglicherweise auf eine Einfügemarke setzen, um das Überschreiben vorhandenen Texts zu vermeiden. Sowohl die <xref:Microsoft.Office.Interop.Word.Range> und <xref:Microsoft.Office.Interop.Word.Selection> Objekte verfügen über eine reduzieren-Methode, die mit der die <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> -Enumerationswerte fest:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> reduziert die Auswahl auf den Anfang der Auswahl. Dies ist die Standardeinstellung, wenn Sie keinen Enumerationswert angeben möchten.  
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> reduziert die Auswahl auf den Anfang der Auswahl. Dies ist die Standardeinstellung, wenn Sie keinen Enumerationswert angeben möchten.  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> reduziert die Auswahl auf das Ende der Auswahl.  
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> reduziert die Auswahl auf das Ende der Auswahl.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="to-collapse-a-range-and-insert-new-text"></a>So reduzieren Sie einen Bereich und fügen neuen Text ein  
   
-1.  Erstellen Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt, das aus dem ersten Absatz des Dokuments besteht.  
+1. Erstellen Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt, das aus dem ersten Absatz des Dokuments besteht.  
   
-     Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.  
+    Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
-     [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
+    [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
+    [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
   
-     Das folgende Codebeispiel kann in einem VSTO-Add-In verwendet werden. In diesem Code wird das aktive Dokument verwendet.  
+    Das folgende Codebeispiel kann in einem VSTO-Add-In verwendet werden. In diesem Code wird das aktive Dokument verwendet.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
   
-2.  Verwenden Sie den <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> -Enumerationswert, um den Bereich zu reduzieren.  
+2. Verwenden Sie den <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> -Enumerationswert, um den Bereich zu reduzieren.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#47)]
-     [!code-csharp[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#47)]  
+    [!code-vb[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#47)]
+    [!code-csharp[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#47)]  
   
-3.  Fügen Sie den neuen Text ein.  
+3. Fügen Sie den neuen Text ein.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
-     [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]  
+    [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
+    [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]  
   
-4.  Wählen Sie das <xref:Microsoft.Office.Interop.Word.Range>-Steuerelement aus.  
+4. Wählen Sie das <xref:Microsoft.Office.Interop.Word.Range>-Steuerelement aus.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
-     [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
+    [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
+    [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
   
- Wenn Sie den <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> -Enumerationswert verwenden, wird der Text am Anfang des folgenden Absatzes eingefügt.  
+   Wenn Sie den <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> -Enumerationswert verwenden, wird der Text am Anfang des folgenden Absatzes eingefügt.  
   
- [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
- [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
+   [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
+   [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
- Normalerweise würden Sie davon ausgehen, dass ein eingefügter neuer Satz vor der Absatzmarke eingefügt wird. Dies ist jedoch nicht der Fall, weil die Absatzmarke im ursprünglichen Bereich enthalten ist. Weitere Informationen finden Sie unter [Vorgehensweise: Programmgesteuertes Ausschließen von Absatzmarken beim Erstellen von Bereichen](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+   Normalerweise würden Sie davon ausgehen, dass ein eingefügter neuer Satz vor der Absatzmarke eingefügt wird. Dies ist jedoch nicht der Fall, weil die Absatzmarke im ursprünglichen Bereich enthalten ist. Weitere Informationen finden Sie unter [Vorgehensweise: Programmgesteuertes Ausschließen von Absatzmarken beim Erstellen von Bereichen](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
   

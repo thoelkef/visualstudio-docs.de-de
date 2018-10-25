@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924199"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle, die anhand des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt. Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer übergeordneten Tabelle ziehen oder-Objekts in die **Datenquellen** auf ein Steuerelement, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
@@ -83,7 +83,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
      Visual Studio legt einige Eigenschaften des Steuerelements zum Konfigurieren der Bindung für die Suche an. Die folgende Tabelle enthält die Eigenschaften, die Visual Studio ändert. Wenn erforderlich, Sie diese Eigenschaften in der XAML oder in ändern, können die **Eigenschaften** Fenster.
 
     |Eigenschaft|Erklärung der Einstellung|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Diese Eigenschaft gibt die Auflistung oder die Bindung, die verwendet wird, um die Daten abzurufen, die im Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Data.CollectionViewSource> für die übergeordneten Daten, die Sie auf das Steuerelement gezogen haben.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Diese Eigenschaft gibt den Pfad des Datenelements, das im Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die erste Spalte oder Eigenschaft in der übergeordneten Daten, nach den primären Schlüssel, der einen String-Datentyp aufweist.<br /><br /> Wenn Sie eine andere Spalte oder Eigenschaft in den übergeordneten Daten anzeigen möchten, können ändern Sie diese Eigenschaft auf den Pfad zu einer anderen Eigenschaft.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio wird diese Eigenschaft gebunden, auf die Spalte oder Eigenschaft der untergeordneten Daten, die Sie in den Designer gezogen wird. Dies ist der Fremdschlüssel für die übergeordneten Daten.|

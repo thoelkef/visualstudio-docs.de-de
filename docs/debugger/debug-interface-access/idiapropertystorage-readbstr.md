@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBSTR | Microsoft Docs
+title: IDiaPropertyStorage::ReadBSTR | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711042d3e3c6ef6d5b785bb6f9c1bf3f29a3399
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 47272cbfc572d85af631edb6d33cf6a0c6f4b20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909067"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Liest `BSTR` Werte in einem Eigenschaftensatz.  
@@ -35,16 +35,16 @@ HRESULT ReadBSTR (
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist definiert in WTypes.h als eine `ULONG`).  
+ [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).  
   
  `pValue`  
  [out] Gibt den Wert der Eigenschaft zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` Wenn die Eigenschaft nicht vom Typ `BSTR`.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BSTR`.  
   
 ## <a name="remarks"></a>Hinweise  
- Ein `BSTR` wird von Windows als Breitzeichen NULL-terminierte Zeichenfolge definiert.  
+ Ein `BSTR` wird von Windows als 0 (null) endende Breite Zeichenfolge definiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

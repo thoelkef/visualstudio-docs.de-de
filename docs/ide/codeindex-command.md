@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926149"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Parameter
 
 |**Argument**|**Beschreibung**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Gibt den Namen der Projektsammlung an. Wenn der Name Leerzeichen enthält, setzen Sie ihn in Anführungszeichen, z.B. „Fabrikam Website“.|
 |`CollectionId`|Gibt die ID der Projektsammlung an.|
 |`ServerPath`|Gibt den Pfad zu einer Codedatei an.|
 
 |**Option**|**Beschreibung**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Zeigen Sie den Status und die Konfiguration des Codeindexdiensts an.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Indizierung aller Changesets beginnen.<br />-   **off**: Indizierung aller Changesets beenden.<br />-   **keepupOnly**: Indizierung zuvor erstellter Changesets beenden und mit der Indizierung nur der neuen Changesets beginnen.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die Sie nicht indizieren möchten, zur Liste der ignorierten Dateien hinzufügen.<br />-   **remove**: Die Datei, die Sie indizieren möchten, aus der Liste der ignorierten Dateien entfernen.<br />-   **removeAll**: Die Liste der ignorierten Dateien wird geleert und die Indizierung aller Dateien begonnen.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|

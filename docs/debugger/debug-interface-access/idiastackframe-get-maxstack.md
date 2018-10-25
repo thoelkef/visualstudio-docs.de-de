@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_maxstack | Microsoft Docs'
+title: 'Idiastackframe:: Get_maxstack | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08da6591037e88c829994005ee8aef751557cd5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 39e86d897acc3596fdbbf9c217f69de4b0a08d6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925850"
 ---
 # <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
 Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.  
@@ -37,7 +37,7 @@ HRESULT get_maxStack (
  [out] Gibt die maximale Anzahl von Bytes, die auf dem Stapel abgelegt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

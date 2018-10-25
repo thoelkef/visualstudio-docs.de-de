@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906233"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Korrelation initialisieren (Dialogfeld)
 
@@ -26,7 +26,7 @@ Die **Korrelation initialisieren** wird das Dialogfeld zum Bearbeiten im Workflo
 Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Korrelation initialisieren** Dialogfeld:
 
 |Benutzeroberflächenelement|Beschreibung|
-|----------------|-----------------|
+|-|-----------------|
 |**Korrelation**|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt der zu initialisierenden Korrelation.|
 |**Initialisiert auf**|Ein Schlüssel-Wert-Paar, das die Daten zum Initialisieren enthält. Dieser Wert entspricht der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft. Ein Beispiel für ein gültiges Schlüssel-Wert-Paar ist ein Schlüssel namens "OrderID" zusammen mit einer Variablen namens "OrderID".|
 

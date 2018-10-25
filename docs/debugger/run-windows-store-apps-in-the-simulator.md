@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882768"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ausführen von UWP-Apps im Simulator
 Visual Studio-Simulator für UWP-apps ist eine Desktopanwendung, die eine UWP-app simuliert. In der Regel sollten Sie auf dem lokalen Computer, einem verbundenen Gerät oder einem Remotecomputer zu debuggen. In einigen Szenarien möchten jedoch möglicherweise Visual Studio-Simulator zu verwenden, um eine andere physische Bildschirmgröße und Auflösung zu emulieren. Sie können auch allgemeine berührungs- und drehungsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.
@@ -109,41 +109,41 @@ Visual Studio-Simulator für UWP-apps ist eine Desktopanwendung, die eine UWP-ap
      ![Kontextmenü für Screenshoteinstellungen](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulieren der Netzwerkverbindungseigenschaften  
- Sie können die Benutzer Ihrer app die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie Informationen hinsichtlich der Netzwerk-Verbindung Kosten oder Daten Status planänderungen zu verwalten, und aktivieren Ihre app diese Informationen verwenden, um zu verhindern, dass zusätzliche Kosten für das roaming oder das Überschreiten einer angegebene Datenübertragungsvolumen. Die [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) Ereignisse, die sich anmelden. Finden Sie unter [Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Sie können die Benutzer Ihrer app die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie Informationen hinsichtlich der Netzwerk-Verbindung Kosten oder Daten Status planänderungen zu verwalten, und aktivieren Ihre app diese Informationen verwenden, um zu verhindern, dass zusätzliche Kosten für das roaming oder das Überschreiten einer angegebene Datenübertragungsvolumen. Mithilfe der [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) -APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) - und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) -Ereignisse antworten, die signieren. Weitere Informationen finden Sie unter [Schnellstart: Verwalten von gemessenen Netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Zum Debuggen oder testen Sie den Netzwerk-sparsame-Code, kann der Simulator Eigenschaften eines Netzwerks, die über verfügbar gemacht werden imitieren die [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) zurückgegebenes Objekt [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
  So simulieren Sie Netzwerkeigenschaften:  
   
-1.  Wählen Sie auf der Simulatorsymbolleiste die Schaltfläche **Netzwerkeigenschaften ändern** aus.  
+1. Wählen Sie auf der Simulatorsymbolleiste die Schaltfläche **Netzwerkeigenschaften ändern** aus.  
   
-2.  Klicken Sie im Dialogfeld **Netzwerkeigenschaften festlegen** , und wählen Sie **Simulierte Netzwerkeigenschaften verwenden**aus.  
+2. Klicken Sie im Dialogfeld **Netzwerkeigenschaften festlegen** , und wählen Sie **Simulierte Netzwerkeigenschaften verwenden**aus.  
   
-     Deaktivieren Sie das Kontrollkästchen, um die Simulation zu entfernen und zu den Netzwerkeigenschaften der aktuell verbundenen Schnittstelle zurückzukehren.  
+    Deaktivieren Sie das Kontrollkästchen, um die Simulation zu entfernen und zu den Netzwerkeigenschaften der aktuell verbundenen Schnittstelle zurückzukehren.  
   
-3.  Geben Sie **Profilname** für das simulierte Netzwerk ein. Es wird empfohlen, einen eindeutigen Namen, die Sie verwenden können, sind die Simulation in der [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) Eigenschaft der [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) Objekt.  
+3. Geben Sie **Profilname** für das simulierte Netzwerk ein. Es empfiehlt sich, einen eindeutigen Namen zu verwenden, den Sie verwenden können, um die Simulation in der [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) -Eigenschaft des [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) -Objekts zu identifizieren.  
   
-4.  Wählen Sie die [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) Wert für das Profil aus der **Netzwerkkostentyp** Liste.  
+4. Wählen Sie den [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) -Wert für das Profil aus der Liste **Netzwerkkostentyp** aus.  
   
-5.  Von der **Datenlimit-Statusflag** Liste, Sie können festlegen, die [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) Eigenschaft oder das [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) Eigenschaft auf "true", oder Sie können  **Unter Datenlimit** um beide Werte auf "false" festzulegen.  
+5. Von der **Datenlimit-Statusflag** Liste, Sie können festlegen, die [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) Eigenschaft oder das [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) Eigenschaft auf "true", oder Sie können  **Unter Datenlimit** um beide Werte auf "false" festzulegen.  
   
-6.  Von der **Roamingzustand** aufzulisten, legen Sie die [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) Eigenschaft.  
+6. Legen Sie aus der Liste **Roamingzustand** die [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) -Eigenschaft fest.  
   
-7.  Wählen Sie **Eigenschaften** zu die Netzwerkeigenschaften zu simulieren, indem Sie ein [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) -vordergrundereignis und einen Hintergrund- [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) des Typs  **NetworkStateChange**.  
+7. Wählen Sie **Eigenschaften festlegen** , um die Netzwerkeigenschaften zu simulieren, indem Sie ein [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) -Vordergrundereignis und einen Hintergrund- [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) vom Typ **NetworkStateChange**starten.  
   
- **Weitere Informationen zum Verwalten von Netzwerkverbindungen**  
+   **Weitere Informationen zum Verwalten von Netzwerkverbindungen**  
   
- [Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Schnellstart: Verwalten von gemessenen Netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Beispiel für Netzwerkinformationen](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Beispiel für Netzwerkinformationen](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analysieren des Energieverbrauchs](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analysieren des Energieverbrauchs](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Gewusst wie: Reagieren auf Systemereignisse mit Hintergrundaufgaben](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Reagieren auf Systemereignisse mit Hintergrundaufgaben](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [So können Sie Ereignisse in Windows UWP-Apps auslösen, anhalten, fortsetzen und im Hintergrund ausführen](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [So können Sie Ereignisse in Windows UWP-Apps auslösen, anhalten, fortsetzen und im Hintergrund ausführen](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navigieren des Simulators mit der Tastatur  
  Sie können die simulatorsymbolleiste navigieren, durch Drücken von **STRG + ALT + nach-oben** , den Fokus vom simulatorfenster auf die simulatorsymbolleiste zu verschieben. Verwenden Sie die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** , um zwischen den Schaltflächen auf der Symbolleiste zu wechseln.  

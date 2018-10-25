@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891829"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tastenkombinationen in Blend
+
 ## <a name="project-shortcuts"></a>Tastenkombinationen für Projekte
 
 |Aufgabe|Vorgehensweise|
@@ -25,7 +26,7 @@ ms.locfileid: "38977993"
 |Erstellt ein neues Projekt|**STRG**+**UMSCHALTTASTE**+**N**|
 |Öffnet ein Projekt oder eine Projektmappe (keine Website)|**STRG**+**UMSCHALTTASTE**+**O**|
 |Schließt eine Projektmappe|**STRG**+**UMSCHALT**+**C**|
-|Speichert eine Kopie der Projektmappe oder Website|**STRG**+**UMSCHALTTASTE**+**P**|
+|Speichert eine Kopie der Projektmappe oder Website|**STRG**+**UMSCHALT**+**P**|
 |Fügt dem Projekt ein vorhandenes Element hinzu|**STRG**+**I**|
 |Fügt einen Verweis auf eine DLL-Datei (WPF) hinzu|**ALT**+**UMSCHALTTASTE**+**R**|
 |Erstellen des Projekts|**STRG**+**UMSCHALTTASTE**+**B**|

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0d79c8a57a58e92f826a9d6bf48ac15213a2f58e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862521"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -42,84 +42,84 @@ ms.locfileid: "39382667"
 
 ###  <a name="staticLink"></a> Ändern der DLL in eine statische Bibliothek
 
--   Wenn die Tests Members verwenden müssen, die nicht von einem DLL-Projekt exportiert werden, und das zu testende Projekt als dynamische Bibliothek erstellt wird, erwägen Sie, es in eine statische Bibliothek zu konvertieren.
+- Wenn die Tests Members verwenden müssen, die nicht von einem DLL-Projekt exportiert werden, und das zu testende Projekt als dynamische Bibliothek erstellt wird, erwägen Sie, es in eine statische Bibliothek zu konvertieren.
 
-    1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das zu testende Projekt, und klicken Sie auf **Eigenschaften**. Das Projektfenster **Eigenschaften** wird geöffnet.
+  1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das zu testende Projekt, und klicken Sie auf **Eigenschaften**. Das Projektfenster **Eigenschaften** wird geöffnet.
 
-    2.  Klicken Sie auf **Konfigurationseigenschaften** > **Allgemein**.
+  2.  Klicken Sie auf **Konfigurationseigenschaften** > **Allgemein**.
 
-    3.  Legen Sie den **Konfigurationstyp** auf **Statische Bibliothek (.lib)** fest.
+  3.  Legen Sie den **Konfigurationstyp** auf **Statische Bibliothek (.lib)** fest.
 
- Fahren Sie mit der Prozedur [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](#objectRef) fort.
+  Fahren Sie mit der Prozedur [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](#objectRef) fort.
 
 ###  <a name="projectRef"></a> So verweisen Sie auf exportierte DLL-Funktionen aus dem Testprojekt
 
--   Wenn das DLL-Projekt die Funktionen exportiert, die Sie testen möchten, können Sie aus dem Testprojekt einen Verweis auf das Codeprojekt hinzufügen.
+- Wenn das DLL-Projekt die Funktionen exportiert, die Sie testen möchten, können Sie aus dem Testprojekt einen Verweis auf das Codeprojekt hinzufügen.
 
-    1.  Erstellen Sie ein natives Komponententestprojekt.
+  1.  Erstellen Sie ein natives Komponententestprojekt.
 
-        1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
+      1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
 
-    2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Testprojekt, und klicken Sie auf **Verweise**. Das Projektfenster **Eigenschaften** wird geöffnet.
+  2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Testprojekt, und klicken Sie auf **Verweise**. Das Projektfenster **Eigenschaften** wird geöffnet.
 
-    3.  Klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise** und anschließend auf die Schaltfläche **Neuen Verweis hinzufügen**.
+  3.  Klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise** und anschließend auf die Schaltfläche **Neuen Verweis hinzufügen**.
 
-    4.  Wählen Sie **Projekte** und dann das zu testende Projekt aus.
+  4.  Wählen Sie **Projekte** und dann das zu testende Projekt aus.
 
-         Wählen Sie die Schaltfläche **Hinzufügen** aus.
+       Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-    5.  Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
+  5.  Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
 
-         Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
+       Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
 
-         Wählen Sie **Bearbeiten** aus, und fügen Sie dann das Headerverzeichnis des zu testenden Projekts hinzu.
+       Wählen Sie **Bearbeiten** aus, und fügen Sie dann das Headerverzeichnis des zu testenden Projekts hinzu.
 
- Wechseln Sie zu [Schreiben der Komponententests](#addTests).
+  Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
 ###  <a name="objectRef"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
 
--   Wenn die DLL die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die *OBJ*- oder *LIB*-Ausgabedatei zu den Abhängigkeiten des Testprojekts hinzufügen.
+- Wenn die DLL die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die *OBJ*- oder *LIB*-Ausgabedatei zu den Abhängigkeiten des Testprojekts hinzufügen.
 
-    1.  Erstellen Sie ein natives Komponententestprojekt.
+  1.  Erstellen Sie ein natives Komponententestprojekt.
 
-        1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **Natives Komponententestprojekt**.
+      1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **Natives Komponententestprojekt**.
 
-    2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Testprojekts, und klicken Sie auf **Eigenschaften**.
+  2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Testprojekts, und klicken Sie auf **Eigenschaften**.
 
-    3.  Klicken Sie auf **Konfigurationseigenschaften** > **Linker** > **Eingabe** > **Zusätzliche Abhängigkeiten**.
+  3.  Klicken Sie auf **Konfigurationseigenschaften** > **Linker** > **Eingabe** > **Zusätzliche Abhängigkeiten**.
 
-         Wählen Sie **Bearbeiten** aus, und fügen Sie dann die Namen der **.obj**- oder **.lib**-Dateien hinzu. Verwenden Sie nicht die vollständigen Pfadnamen.
+       Wählen Sie **Bearbeiten** aus, und fügen Sie dann die Namen der **.obj**- oder **.lib**-Dateien hinzu. Verwenden Sie nicht die vollständigen Pfadnamen.
 
-    4.  Klicken Sie auf **Konfigurationseigenschaften** > **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse**.
+  4.  Klicken Sie auf **Konfigurationseigenschaften** > **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse**.
 
-         Wählen Sie **Bearbeiten** aus, und fügen Sie den Verzeichnispfad der **.obj**- oder **.lib**-Dateien hinzu. Der Pfad befindet sich normalerweise im Buildordner des zu testenden Projekts.
+       Wählen Sie **Bearbeiten** aus, und fügen Sie den Verzeichnispfad der **.obj**- oder **.lib**-Dateien hinzu. Der Pfad befindet sich normalerweise im Buildordner des zu testenden Projekts.
 
-    5.  Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
+  5.  Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
 
-         Wählen Sie **Bearbeiten** aus, und fügen Sie dann das Headerverzeichnis des zu testenden Projekts hinzu.
+       Wählen Sie **Bearbeiten** aus, und fügen Sie dann das Headerverzeichnis des zu testenden Projekts hinzu.
 
- Wechseln Sie zu [Schreiben der Komponententests](#addTests).
+  Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
 ###  <a name="sameProject"></a> So fügen Sie Komponententests im gleichen Projekt hinzu
 
-1.  Ändern Sie die Produktcodeprojekteigenschaften, um die Header und Bibliotheksdateien einzuschließen, die für die Unittests erforderlich sind.
+1. Ändern Sie die Produktcodeprojekteigenschaften, um die Header und Bibliotheksdateien einzuschließen, die für die Unittests erforderlich sind.
 
-    1.  Klicken Sie im **Projektmappen-Explorer** im Kontextmenü für das zu testende Projekt auf **Eigenschaften**. Das Projektfenster **Eigenschaften** wird geöffnet.
+   1.  Klicken Sie im **Projektmappen-Explorer** im Kontextmenü für das zu testende Projekt auf **Eigenschaften**. Das Projektfenster **Eigenschaften** wird geöffnet.
 
-    2.  Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
+   2.  Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
 
-    3.  Bearbeiten Sie die Include- und Bibliotheksverzeichnisse:
+   3.  Bearbeiten Sie die Include- und Bibliotheksverzeichnisse:
 
-        |Verzeichnis|Eigenschaft|
-        |-|-|
-        |**Includeverzeichnisse** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Bibliotheksverzeichnisse** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |Verzeichnis|Eigenschaft|
+       |-|-|
+       |**Includeverzeichnisse** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Bibliotheksverzeichnisse** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Fügen Sie eine C++-Komponententestdatei hinzu:
+2. Fügen Sie eine C++-Komponententestdatei hinzu:
 
-    -   Klicken Sie im **Projektmappen-Explorer** im Kontextmenü des Projekts auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
+   -   Klicken Sie im **Projektmappen-Explorer** im Kontextmenü des Projekts auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
 
- Wechseln Sie zu [Schreiben der Komponententests](#addTests).
+   Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
 ##  <a name="addTests"></a> Schreiben der Komponententests
 

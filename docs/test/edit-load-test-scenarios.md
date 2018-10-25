@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837138"
 ---
 # <a name="edit-load-test-scenarios"></a>Bearbeiten von Auslastungstestszenarios
 
@@ -46,7 +46,7 @@ Ein Szenario verfügt über mehrere weitere Eigenschaften, die Sie mit dem **Aus
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Hinzufügen von simulierten Szenario-Interaktionspausen:** Mithilfe von Reaktionszeiten wird menschliches Verhalten simuliert, das dazu führt, dass Benutzer zwischen Interaktionen mit einer Website Pausen machen. Reaktionszeiten treten zwischen den Anforderungen in einem Webleistungstest und zwischen Testiterationen in einem Auslastungstestszenario auf. Die Verwendung von Reaktionszeiten in einem Auslastungstest kann bei der Erzeugung genauerer Auslastungssimulationen nützlich sein.|-   [Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Angeben der Anzahl virtueller Benutzer für das Szenario:** Sie können die Auslastungsmustereigenschaften konfigurieren, um anzugeben, wie die simulierte Benutzerauslastung während eines Auslastungstests angepasst wird. Sie erhalten drei integrierte Auslastungsmuster: konstant, schrittweise und zielbasiert. Sie wählen das Auslastungsmuster aus und passen die Werte der Eigenschaften entsprechend Ihren Anforderungen an den Auslastungstest an.|-   [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Konfigurieren der Wahrscheinlichkeit, dass ein virtueller Benutzer einen Test im Szenario ausführt:** Sie können die Testmischung verwenden, die die Wahrscheinlichkeit angibt, dass ein virtueller Benutzer in einem Auslastungstestszenario einen angegebenen Test ausführt. Auf diese Weise können Sie Auslastungen realitätsnaher simulieren. Anstatt nur einen Workflow für die Anwendungen zu verwenden können Sie mehrere Workflows simulieren. Dies stellt eine bessere Annäherung an die tatsächliche Interaktion zwischen Endbenutzern und Anwendungen dar.|-   [Bearbeiten von Textmischungsmodellen](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

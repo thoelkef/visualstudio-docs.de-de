@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876554"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody-Element (MSBuild)
 Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -55,9 +55,9 @@ Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung |  
-|-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben.|  
+| Element | Beschreibung  |
+| - | - |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Verwendung des Elements `TaskBody` mit dem Attribut `Evaluate` gezeigt.  

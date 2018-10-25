@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948225"
 ---
 # <a name="port-suppliers"></a>Portanbieter
 Architektur der Debugger eine *anschlusslieferant*:  
   
--   Von einem Server enthalten ist, und bietet von Ports für die Anforderung für diesen Server.  
+- Von einem Server enthalten ist, und bietet von Ports für die Anforderung für diesen Server.  
   
--   Können hinzufügen und entfernen Sie die Ports auf dem Server enthält.  
+- Können hinzufügen und entfernen Sie die Ports auf dem Server enthält.  
   
--   Alle Ports, die sie mit dem Server bereitgestellt wurde, können aufgezählt werden.  
+- Alle Ports, die sie mit dem Server bereitgestellt wurde, können aufgezählt werden.  
   
--   Wird durch dargestellt eine [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle, die mit Visual Studio über die Registrierung registriert ist. Diese Schnittstelle abgerufen werden kann, durch den Aufruf [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Wird durch dargestellt eine [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle, die mit Visual Studio über die Registrierung registriert ist. Diese Schnittstelle abgerufen werden kann, durch den Aufruf [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet eine Standard-anschlusslieferant und einen Standardport. Wenn ein benutzerdefinierter Port implementiert werden muss, muss ein benutzerdefinierten Port Lieferanten ebenfalls implementiert werden, um diese benutzerdefinierte Ports angeben.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet eine Standard-anschlusslieferant und einen Standardport. Wenn ein benutzerdefinierter Port implementiert werden muss, muss ein benutzerdefinierten Port Lieferanten ebenfalls implementiert werden, um diese benutzerdefinierte Ports angeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)   

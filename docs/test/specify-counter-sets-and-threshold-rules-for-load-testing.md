@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879838"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
@@ -38,7 +38,7 @@ Es ist wichtig, dass Sie die zu testenden Server der Liste von Computern hinzuf�
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Verwalten der Indikatorensätze für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie den Indikatorensatz im Auslastungstest-Editor bearbeiten. Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die Leistungsdaten gesammelt werden, und das Zuweisen von Indikatorensätzen, die auf jedem der Computer erfasst werden. Sie können die Indikatoren im Auslastungstest-Editor verwalten.|-   [Vorgehensweise: Verwalten von Indikatorensätzen](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Hinzufügen von Indikatorensätzen zum Auslastungstest**: Wenn Sie einen Auslastungstest mit dem **Assistenten für neuen Auslastungstest** erstellen, fügen Sie einen ersten Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen mithilfe des Auslastungstest-Editors neue Indikatoren hinzufügen.|-   [Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Vorgehensweise: Hinzufügen von benutzerdefinierten Indikatorensätzen](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Angeben einer Schwellenwertregel mithilfe von Indikatoren für den Auslastungstest**: Eine Schwellenwertregel ist eine Regel, die für einen einzelnen Leistungsindikator festgelegt wird, um die Systemressourcenauslastung während eines Auslastungstests zu überwachen. Die Indikatorsatzdefinitionen enthalten vordefinierte Schwellenwertregeln für viele wichtige Leistungsindikatoren. In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwerte entweder mit einem konstanten Wert oder mit einem anderen Leistungsindikatorwert verglichen.|-   [Vorgehensweise: Hinzufügen einer Schwellenwertregel](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden W
 Die folgende Tabelle enthält Richtlinien für Samplingraten.
 
 |Dauer des Auslastungstests|Empfohlene Samplingrate|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 Stunde|5 Sekunden|
 |1 – 8 Stunden|15 Sekunden|
 |8 – 24 Stunden|30 Sekunden|
