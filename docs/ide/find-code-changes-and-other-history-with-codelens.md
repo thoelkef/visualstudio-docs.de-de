@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853518"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -162,7 +164,7 @@ Vergleichen Sie eine eingehende Änderung mit Ihrer lokalen Version, in dem Sie 
 Das Symbol in der Spalte **Branch** gibt die Beziehung des Branches zu dem Branch an, in dem Sie arbeiten.
 
 |**Symbol**|**Ursprung der Änderung:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: Änderung des Symbols für aktuellen Branch](../ide/media/codelensbranchcurrenticon.png)|Die aktuelle Verzweigung|
 |![CodeLens: Symbol für Änderungen durch den übergeordneten Branch](../ide/media/codelensbranchparenticon.png)|Die übergeordnete Verzweigung|
 |![CodeLens: Änderung vom Symbol für untergeordneten Branch](../ide/media/codelensbranchchildicon.png)|Eine untergeordnete Verzweigung|
@@ -295,7 +297,7 @@ So verwenden Sie die Tastatur:
 
 4. Drücken Sie die **TAB-TASTE**, um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE**, um **CodeLens**auszuwählen.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-Heads-up-Display verschieben?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-`head`s-up-Display verschieben?
 
 **A:** Ja, klicken Sie auf ![Andocksymbol](../ide/media/codelensdockwindow.png), um CodeLens als Fenster anzudocken.
 
