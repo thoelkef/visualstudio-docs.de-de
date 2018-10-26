@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883353"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050182"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 
@@ -38,7 +38,7 @@ Eine Erweiterung veröffentlicht in Marketplace. Die Erweiterung möglich einer 
 |Nutzlast (erforderlich) | Entweder ein Pfad zu der Nutzlast zum Veröffentlichen oder einen Link zu als die "Weitere Informationen-URL" verwenden. |
 |PublishManifest (erforderlich) | Pfad zu der veröffentlichen-Manifestdatei zu verwenden. |
 |ignoreWarnings | Liste mit Warnungen beim Veröffentlichen einer Extension ignoriert werden sollen. Diese Warnungen werden als Nachrichten von der Befehlszeile angezeigt, beim Veröffentlichen einer Extension. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. Wenn nicht angegeben, wird die Pat der angemeldeten Benutzer abgerufen. |
+|personalAccessToken | Persönliches Zugriffstoken (PAT), die verwendet wird, auf den Verleger zu authentifizieren. Wenn nicht angegeben, wird die PAT der angemeldeten Benutzer abgerufen. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
