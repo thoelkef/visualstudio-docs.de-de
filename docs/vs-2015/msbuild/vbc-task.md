@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184248"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143423"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`NoLogo`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Compilerbannerinformationen unterdrückt. Dieser Parameter entspricht dem Schalter [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) des Compilers „vbc.exe“.|  
 |`NoStandardLib`|Optionaler `Boolean` -Parameter.<br /><br /> Bewirkt, dass der Compiler nicht auf die Standardbibliotheken verweist. Dieser Parameter entspricht dem Schalter [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) des Compilers „vbc.exe“.|  
 |`NoVBRuntimeReference`|Optionaler `Boolean` -Parameter.<br /><br /> Nur zur internen Verwendung. Wenn der Wert TRUE ist, wird der automatische Verweis auf Microsoft.VisualBasic.dll verhindert.|  
-|`NoWarnings`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, unterdrückt die Aufgabe alle Warnungen. Weitere Informationen finden Sie unter [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn dieser auf `true` festgelegt ist, unterdrückt die Aufgabe alle Warnungen. Weitere Informationen finden Sie unter [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden Compileroptimierungen aktiviert. Dieser Parameter entspricht dem Schalter [/optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) des Compilers „vbc.exe“.|  
 |`OptionCompare`|Optionaler `String` -Parameter.<br /><br /> Gibt an, wie Zeichenfolgenvergleiche durchgeführt werden. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Der Wert `binary` gibt an, dass die Aufgabe binäre Zeichenfolgenvergleiche verwendet. Der Wert `text` gibt an, dass die Aufgabe Textzeichenfolgenvergleiche verwendet. Der Standardwert dieses Parameters ist `binary`. Dieser Parameter entspricht dem Schalter [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) des Compilers „vbc.exe“.|  
 |`OptionExplicit`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, ist die explizite Deklaration von Variablen erforderlich. Dieser Parameter entspricht dem Schalter [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) des Compilers „vbc.exe“.|  
