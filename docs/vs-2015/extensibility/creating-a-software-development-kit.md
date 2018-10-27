@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 296bc30089d4c0f4b2b739e1dd977fd66cba1ace
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851999"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143293"
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 |DesignTime-Ordner|Enthält Dateien, die nur zum Zeitpunkt der pre-ausführen/Debuggen erforderlich sind. Diese können XML-Dokumente, Bibliotheken, Header, Toolbox während der Entwurfszeit-Binärdateien, MSBuild-Elementen usw. enthalten.<br /><br /> XML-Dokumente würden, im Idealfall im Ordner \DesignTime platziert werden, aber weiterhin XML-Dokumente, für Verweise, zusammen mit der Referenzdatei in Visual Studio platziert werden soll. Z. B. das XML-Dokument für einen Verweis \References\\[Config]\\[arch]\sample.dll werden \References\\[Config]\\[arch]\sample.xml und die lokalisierte Version von diesem Dokument werden \References\\[Config]\\[Arch]\\[locale]\sample.xml.|  
 |Ordner "Configuration"|Es darf nur drei Ordnern: Debug "," Retail "und" CommonConfiguration. SDK-Autoren können ihre Dateien unterhalb CommonConfiguration platzieren, wenn Sie der gleiche Satz von SDK-Dateien, unabhängig von der Konfiguration genutzt werden sollen, die SDK-Consumers ausgerichtet wird.|  
 |Ordner "Architektur"|Jede unterstützte Architektur Ordner kann vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: X86, X64, ARM "und" Neutral. Hinweis: Win32 X86, und "anycpu" auf neutral.<br /><br /> MSBuild sucht nur unter \CommonConfiguration\neutral Plattform-SDKs.|  
-|SDKManifest.xml|Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = “Windows”             PlatformIdentity = “Windows, version=8.1”             TargetFramework = “.NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1”             MinVSVersion = “14.0”>              <File Reference = “Windows.winmd”>                <ToolboxItems VSCategory = “Toolbox.Default” />             </File> </FileList>`<br /><br /> **"DisplayName":** der Wert, der die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, dass das SDK ein Plattform-SDK ist und die Verweise hinzugefügt, daraus kopiert werden soll, darf nicht lokal.<br /><br /> **TargetFramework:** dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten.|  
+|SDKManifest.xml|Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **"DisplayName":** der Wert, der die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, dass das SDK ein Plattform-SDK ist und die Verweise hinzugefügt, daraus kopiert werden soll, darf nicht lokal.<br /><br /> **TargetFramework:** dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten.|  
   
 ##  <a name="ExtensionSDKs"></a> Erweiterungs-SDKs  
  In den folgenden Abschnitten wird beschrieben, was Sie tun, um ein Erweiterungs-SDK bereitstellen müssen.  
@@ -142,22 +142,22 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
   
 ```  
 <FileList>  
-DisplayName = “My SDK”  
-ProductFamilyName = “My SDKs”  
-TargetFramework = “.NETCore, version=v4.5.1; .NETFramework, version=v4.5.1”  
-MinVSVersion = “14.0”  
+DisplayName = "My SDK"  
+ProductFamilyName = "My SDKs"  
+TargetFramework = ".NETCore, version=v4.5.1; .NETFramework, version=v4.5.1"  
+MinVSVersion = "14.0"  
 MaxPlatformVersion = "8.1"  
 AppliesTo = "WindowsAppContainer + WindowsXAML"  
-SupportPrefer32Bit = “True”  
-SupportedArchitectures = “x86;x64;ARM”  
-SupportsMultipleVersions = “Error”  
-CopyRedistToSubDirectory = “.”  
-DependsOn = “SDKB, version=2.0”  
-MoreInfo = “http://msdn.microsoft.com/MySDK”>  
-<File Reference = “MySDK.Sprint.winmd” Implementation = “XNASprintImpl.dll”>  
-<Registration Type = “Flipper” Implementation = “XNASprintFlipperImpl.dll” />  
-<Registration Type = “Flexer” Implementation = “XNASprintFlexerImpl.dll” />  
-<ToolboxItems VSCategory = “Toolbox.Default” />  
+SupportPrefer32Bit = "True"  
+SupportedArchitectures = "x86;x64;ARM"  
+SupportsMultipleVersions = "Error"  
+CopyRedistToSubDirectory = "."  
+DependsOn = "SDKB, version=2.0"  
+MoreInfo = "http://msdn.microsoft.com/MySDK">  
+<File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
+<Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
+<Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  
+<ToolboxItems VSCategory = "Toolbox.Default" />  
 </File>  
 </FileList>  
 ```  
@@ -204,26 +204,26 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 1.  Richten Sie Kontrollen, in die Toolbox Standardkategorie.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Default”/>       
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Default"/>       
     </File>  
     ```  
   
 2.  Platzieren Sie Steuerelemente unter einen bestimmten Kategorienamen.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory= “MyCategoryName”/>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory= "MyCategoryName"/>  
     </File>  
     ```  
   
 3.  Platzieren Sie Steuerelemente in bestimmten Kategorienamen.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems VSCategory = “Data”>  
+        <ToolboxItems VSCategory = "Data">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -232,8 +232,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
   
     ```  
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph” BlendCategory = “Controls/sample/Graph”>   
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph" BlendCategory = "Controls/sample/Graph">   
         <ToolboxItems />  
     </File>  
     ```  
@@ -241,10 +241,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 5.  Bestimmte Steuerelemente anders in Blend und Visual Studio aufgelistet werden.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems BlendCategory = “Controls/sample/Graph”>  
+        <ToolboxItems BlendCategory = "Controls/sample/Graph">  
         <ToolboxItems/>  
     </File>  
     ```  
@@ -252,10 +252,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 6.  Bestimmte Steuerelemente aufgelistet, und platzieren Sie sie an, unter dem Visual Studio-Common-Pfad oder nur in der Gruppe für alle Steuerelemente.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Common”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Common">  
         <ToolboxItems />  
-        <ToolboxItems VSCategory = “Toolbox.All”>  
+        <ToolboxItems VSCategory = "Toolbox.All">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -263,8 +263,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 7.  Bestimmte Steuerelemente aufgelistet, und zeigen Sie nur eine bestimmte Gruppe in ChooseItems, ohne sie in der Toolbox.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.ChooseItemsOnly”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.ChooseItemsOnly">  
         <ToolboxItems />  
     </File>  
     ```  

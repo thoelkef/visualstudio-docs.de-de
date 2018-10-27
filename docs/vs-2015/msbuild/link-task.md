@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab3e3238e78062bc1193a6d81b3f74749a263968
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897718"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143449"
 ---
 # <a name="link-task"></a>Link-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +194,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte PInvoke-Anrufe von verwaltetem Code an nativen DLLs anwendet.  
   
-   Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurity-Attribut)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
+   Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurity)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
   
 - **CreateHotPatchableImage**  
   
