@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626812"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120354"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 
@@ -198,9 +198,9 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 1. Wenn Sie fertig sind, beenden Sie den Server, und übertragen Sie Ihre Änderungen erneut zur Quellcodeverwaltung.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% srsf_token %}, das in den \<Formular\>-Elementen auftritt?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<Formular\>-Elementen auftritt?
 
-Antwort: Das `{% crsf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
+Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

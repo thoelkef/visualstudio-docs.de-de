@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320838"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356794"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -34,7 +34,8 @@ Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren
 
 Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Profilerstellung, aber für Releasebuilds können Sie stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#which-tool-should-i-use).
 
-> ![HINWEIS] Sie können die Post-Mortem-Tools mit Windows 7 und höher verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
+> [!NOTE]
+> Sie können die Post-Mortem-Tools mit Windows 7 und höher verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -119,7 +120,7 @@ Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird ei
 
 Die Diagramme können auch bestimmen, ob es CPU-gebundene oder GPU-gebundene Leistungsengpässe gibt.
 
-## <a name="analyze-performance-javascript"></a>Analysieren der Leistung (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Analysieren der Leistung (JavaScript UWP)
 
 Für UWP-Apps können Sie das JavaScript-Speichertool und das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.
 
@@ -155,8 +156,8 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
   
 |Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
+|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
 |[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein| 
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|

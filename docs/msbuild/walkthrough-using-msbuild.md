@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178517"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880148"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:
@@ -116,7 +116,7 @@ Die Message-Aufgabe ist eine der vielen Aufgaben, die im Lieferumfang von MSBuil
 Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Eingabe und zeigt diesen auf dem Ausgabegerät an. Das HelloWorld-Ziel führt die Message-Aufgabe zweimal aus: zuerst wird "Hello" angezeigt, dann "World".
 
 ## <a name="build-the-target"></a>Erstellen des Ziels
- Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter /target oder /t, um das Ziel auszuwählen.
+ Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter -target oder -t, um das Ziel auszuwählen.
 
 > [!NOTE]
 >  In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.
@@ -127,10 +127,10 @@ Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Einga
 
 2.  Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
 
-3.  Führen Sie msbuild mit dem Befehlsschalter /t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
+3.  Führen Sie msbuild mit dem Befehlsschalter -t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgenden beiden Zeilen sollten angezeigt werden (die Version von .NET Framework kann abweichen):
@@ -231,14 +231,14 @@ $(PropertyName)
  Auf Umgebungsvariablen in Projektdateien kann auf die gleiche Weise verwiesen werden wie auf Buildeigenschaften. Um die PATH-Umgebungsvariable in der Projektdatei zu verwenden, verwenden Sie beispielsweise $(Path). Wenn das Projekt eine Eigenschaftendefinition enthält, die denselben Namen wie eine Umgebungsvariable hat, wird der Wert der Umgebungsvariablen von der Eigenschaft im Projekt überschrieben. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Festlegen von Eigenschaften in der Befehlszeile
- Eigenschaften können an der Befehlszeile mit dem Befehlszeilenschalter /property oder /p definiert werden. Die in der Projektdatei und in Umgebungsvariablen festgelegten Eigenschaftswerte werden durch die Eigenschaftswerte überschrieben, die von der Befehlszeile empfangen werden.
+ Eigenschaften können an der Befehlszeile mit dem Befehlszeilenschalter -property oder -p definiert werden. Die in der Projektdatei und in Umgebungsvariablen festgelegten Eigenschaftswerte werden durch die Eigenschaftswerte überschrieben, die von der Befehlszeile empfangen werden.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>So legen Sie einen Eigenschaftswert an der Befehlszeile fest
 
 1.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:
@@ -267,7 +267,7 @@ MSBuild erstellt die Configuration-Eigenschaft und weist dieser den Wert "Releas
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:
@@ -329,7 +329,7 @@ Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgende lange Zeile sollte angezeigt werden:
@@ -361,7 +361,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
@@ -441,7 +441,7 @@ In diesem Beispiel wird die Datei *Form1.cs*, die im vorherigen Elementelement h
 4.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:
@@ -482,7 +482,7 @@ In diesem Beispiel wird die Datei *Form1.cs*, die im vorherigen Elementelement h
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
@@ -512,7 +512,7 @@ Der Ausdruck "Compile.DependentUpon" wird mehrmals angezeigt. In dieser Syntax f
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
@@ -550,7 +550,7 @@ Beispielsweise kann eine Elementliste von Quelldateien über einen Ausdruck, z.�
 3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:

@@ -1,26 +1,34 @@
 ---
 title: IntelliSense für C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124904"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879849"
 ---
 # <a name="visual-c-intellisense-features"></a>IntelliSense-Features für Visual C++
 
 IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. IntelliSense für C++ ist für eigenständige Dateien sowie für Dateien innerhalb eines C++-Projekts verfügbar. In plattformübergreifenden Projekten stehen einige IntelliSense-Features in *CPP*- und *C*-Dateien in dem Projekt mit freigegebenem Code zur Verfügung, auch wenn Sie sich in einem Android- oder iOS-Kontext befinden.
 
-Sie können mit den Menüelementen und Tastenkombinationen, die auf der folgenden Abbildung zu sehen sind, auf IntelliSense zugreifen:
+Dieser Artikel enthält eine Übersicht über die IntelliSense-Funktionen von C++. Informationen zur Konfiguration Ihres Projekts für IntelliSense und zur Problembehandlung finden Sie unter [Konfigurieren eines C++-Projekts für IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>IntelliSense-Funktionen in C++
+
+IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
+
+![Dialogfeld „Tools“ > „Optionen“](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Sie können die in der folgenden Abbildung aufgeführten Menüelemente und Tastenkombinationen für den Zugriff auf IntelliSense verwenden.
 
 ![IntelliSense-Menü](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Eine Liste der Symbole und ihrer Bedeutungen finden Sie unter [Symbole in der Kl
 
 ![Visual C&#43;&#43;-Fenster „Wort vervollständigen“](../ide/media/vs2015_cpp_complete_word.png)
 
-Wenn zum ersten Mal die Memberliste aufgerufen wird, werden in ihr nur Member angezeigt, auf die über den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Allgemein** > **Member automatisch auflisten** deaktivieren.
+Wenn Sie die Memberliste zum ersten Mal aufrufen, werden in ihr nur Member angezeigt, auf die über den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Allgemein** > **Member automatisch auflisten** deaktivieren.
 
 ![Visual C&#43;&#43;-Memberliste](../ide/media/vs2015_cpp_list_members.png)
 
@@ -100,4 +108,5 @@ Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisc
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwendung von IntelliSense](../ide/using-intellisense.md)
+- [Verwenden von IntelliSense](../ide/using-intellisense.md)
+- [Konfigurieren eines C++-Projekts für IntelliSense](visual-cpp-intellisense-configuration.md)

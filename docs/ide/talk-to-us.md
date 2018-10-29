@@ -1,7 +1,7 @@
 ---
 title: Sprechen Sie mit uns
 ms.custom: ''
-ms.date: 02/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -14,28 +14,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa0e17537f8f5b5e10b4d133615e3d82471c629
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495881"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073740"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio-Produktfeedback
 
-Wir würden gern Ihre Ideen zur Verbesserung unserer Produkte und unserer Dokumentation erfahren. Wir können nicht immer persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person oder das richtige Team weitergeleitet wird.
+Sprechen Sie mit uns! Wir würden gern Ihre Ideen zur Verbesserung unserer Produkte und unserer Dokumentation erfahren. Wir können nicht immer persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person oder das richtige Team weitergeleitet wird.
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Ich möchte ein Problem mit Visual Studio melden
 
-Sollten bei der Verwendung von Visual Studio Probleme auftreten, z.B. Absturz, Leistungseinbußen, unerwartetes Verhalten usw., melden Sie uns das Problem bitte. Verwenden Sie dazu das Tool **Problem melden**. Klicken Sie einfach auf das Feedbacksymbol neben **Schnellstart**, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Ein Problem melden**. Visual Studio meldet das Problem dann an die [Developer Community](https://developercommunity.visualstudio.com)-Website. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung oder unerwartetes Verhalten&mdash; haben, lassen Sie es uns mit dem Tool **Ein Problem melden** wissen. Wählen Sie in Visual Studio das Feedbacksymbol neben **Schnellstart** aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Ein Problem melden**. Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Ich möchte einen Vorschlag zu Visual Studio-Features machen
 
-Für Verbesserungsvorschläge sind wir immer offen! Wählen Sie die Option **Hilfe** > **Feedback senden** > **Vorschlag bereitstellen** aus, um dem Visual Studio-Team ein Feature oder eine Änderung vorzuschlagen. Ihr Vorschlag wird automatisch auf der [UserVoice](https://visualstudio.uservoice.com)-Website veröffentlicht, auf der andere Benutzer darüber abstimmen können.
+Für Verbesserungsvorschläge sind wir immer offen! Wählen Sie in Visual Studio in der Menüleiste **Hilfe** > **Feedback senden** > **Vorschlag unterbreiten** aus. Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um Ihren Vorschlag einzureichen. Weitere Informationen finden Sie unter [Vorschlagen eines Features für Visual Studio 2017](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Dieses Produkt bewerten
 
-Vorabversionen von Visual Studio weisen das Menüelement **Dieses Produkt bewerten** auf, über das Sie uns Feedback über die Qualität des Builds, den Sie ausführen, senden können. In der endgültigen Produktversion ist diese Option nicht verfügbar.
+Vorabversionen von Visual Studio verfügen über ein Menüelement **Dieses Produkt bewerten**, das veröffentlichte Versionen des Produkts nicht enthalten. Verwenden Sie das Menüelement **Dieses Produkt bewerten**, um Feedback zur Qualität der von Ihnen ausgeführten Vorabversion zu senden.
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Kontakt mit dem Microsoft-Support
 

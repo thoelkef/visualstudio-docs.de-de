@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 0c7400338692b5f0eb8608c82d5d468eaec8ea1f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: dfdc1003cb09e17c911a2a065c7301123861bb50
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40100954"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49084247"
 ---
 ## <a name="get-support"></a>Support aufrufen
 
@@ -16,6 +16,5 @@ Für Installationsprobleme wird ebenfalls ein [**Livechat**](https://visualstudi
 Hier sind einige weitere Supportoptionen:
 
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
-* Sie können Probleme mit Produkten und Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) finden.
-* Sie können Ihr [GitHub](https://github.com/)-Konto verwenden, um über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufzunehmen. 
+* Schlagen Sie ein Feature vor, verfolgen Sie Produktprobleme nach, und finden Sie Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/).
+* Sie können Ihr [GitHub](https://github.com/)-Konto verwenden, um über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufzunehmen.

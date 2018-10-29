@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204127"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443596"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien (die Dateien sind im `Include`-Attribut angegeben). Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.  
@@ -35,7 +35,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 </ItemGroup>  
 ```  
   
- Das Element *file2.cs* ersetzt das Element *file1.cs* nicht. Stattdessen wird der Dateiname an die Liste der Werte für den `Compile`-Elementtyp angefügt. Elemente können nicht während der Auswertungsphase eines Builds aus Elementtypen entfernt werden.  
+ Das Element *file2.cs* ersetzt das Element *file1.cs* nicht. Stattdessen wird der Dateiname an die Liste der Werte für den `Compile`-Elementtyp angefügt.
   
  Das folgende XML erstellt den gleichen Elementtyp, indem beide Dateien in einem `Include`-Attribut deklariert werden. Achten Sie darauf, dass die Dateinamen durch ein Semikolon voneinander getrennt sind.  
   
@@ -60,25 +60,26 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
  Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Verwenden Sie die Syntax @(\<ItemType>, '\<Trennzeichen>'), um ein anderes Trennzeichen als den Standard anzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Verwenden von Platzhaltern zum Angeben von Elementen  
- Sie können die Platzhalterzeichen **, \* und ? verwenden, um eine Gruppe von Dateien als Eingaben für einen Build anzugeben. So müssen Sie nicht alle Dateien separat auflisten.  
-  
--   Das Platzhalterzeichen ? entspricht einem einzelnen Zeichen.  
-  
--   Das Platzhalterzeichen * entspricht 0 (null) oder mehr Zeichen.  
-  
--   Die Platzhalterzeichenfolge ** entspricht einem partiellen Pfad.  
 
-Sie können z.B. alle *CS*-Dateien im Verzeichnis der Projektdatei angeben, indem Sie das folgende Element in der Projektdatei verwenden.  
+Sie können die Platzhalterzeichen `**`, `*` und `?` verwenden, um eine Gruppe von Dateien als Eingaben für einen Build anzugeben. So müssen Sie nicht alle Dateien separat auflisten.
+  
+- Das Platzhalterzeichen `?` entspricht einem einzelnen Zeichen.
+- Das Platzhalterzeichen `*` entspricht 0 (null) oder mehr Zeichen.
+- Die Platzhalterzeichenfolge `**` entspricht einem partiellen Pfad.
+
+Sie können z.B. alle `.cs`-Dateien im Verzeichnis der Projektdatei angeben, indem Sie das folgende Element in der Projektdatei verwenden.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-Das folgende Element wählt alle *VB*-Dateien auf Laufwerk *D:* aus:  
+Das folgende Element wählt alle `.vb`-Dateien auf Laufwerk `D:` aus:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Wenn Sie literale Zeichen `*` oder `?` in ein Element ohne Platzhaltererweiterung aufnehmen möchten, müssen Sie [die Platzhalterzeichen mit Escapezeichen versehen](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Weitere Informationen zu Platzhalterzeichen finden Sie unter [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md).  
 
@@ -180,7 +181,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [How to: Select the
  Ab .NET Framework 3.5 enthalten `Target`-Elemente möglicherweise [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elemente, die Item-Elemente enthalten. Die Attribute in diesem Abschnitt sind gültig, wenn sie für ein Element in einem `ItemGroup` angegeben werden, das ein `Target` ist.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Entfernen des Attributs  
- Elemente im `ItemGroup` eines Ziels enthalten möglicherweise das Attribut `Remove`, das bestimmte Elemente (Dateien) aus dem Elementtyp entfernt. Dieses Attribut wurde in .NET Framework 3.5 eingeführt.  
+ Das `Remove`-Attribut entfernt bestimmte Elemente (Dateien) aus dem Elementtyp. Dieses Attribut wurde in .NET Framework 3.5 eingeführt, wurde aber innerhalb von Zielen nur bis MSBuild 15.0 unterstützt.
   
  Das folgende Beispiel veranschaulicht das Entfernen aller *CONFIG*-Dateien aus dem Compile-Elementtyp.  
   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908991"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-Der Aufruf von `repository.add_sample_polls()` endet bei einer der spezifischen `Repository`-Implementierungen für den ausgewählten Datenspeicher. Jede Implementierung ruft die `_load_samples_json`-Methode auf, die sich in *models\__init__ py* befindet, um die Datei *models\samples.json* in den Arbeitsspeicher zu laden. Anschließend werden die Daten durchlaufen, um die erforderlichen `Poll`- und `Choice`-Objekte im Datenspeicher zu erstellen.
+Der Aufruf von `repository.add_sample_polls()` endet bei einer der spezifischen `Repository`-Implementierungen für den ausgewählten Datenspeicher. Jede Implementierung ruft die `_load_samples_json`-Methode auf, die sich in *models\_\_init\_\_.py* befindet, um die Datei *models\samples.json* in den Arbeitsspeicher zu laden. Anschließend werden die Daten durchlaufen, um die erforderlichen `Poll`- und `Choice`-Objekte im Datenspeicher zu erstellen.
 
 Sobald dieser Vorgang abgeschlossen ist, navigiert die `redirect('/')`-Anweisung in der `seed`-Methode zurück zur Startseite. Da `repository.get_polls` nun ein Datenobjekt zurückgibt, rendern die bedingten Tags in *templates\index.html* nun eine Tabelle, die die Umfragen enthält.
 
@@ -352,11 +352,8 @@ Sie haben jetzt sämtliche Vorlagen („Leeres Flask-Webprojekt“, „Flask(/Ja
 
 Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt bei der Bereitstellung der App für Ihre Kunden. Die nächsten Schnitte schließen möglicherweise die folgenden Aufgaben ein:
 
-- Stellen Sie die Web-App auf einem Produktionsserver bereit, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). Dort finden Sie auch bestimmte Änderungen, die für Flask-Apps erforderlich sind.
+- Stellen Sie die Web-App auf einem Produktionsserver bereit, z.B. Azure App Service. Siehe [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Fügen Sie eine Repositoryimplementierung hinzu, die einen anderen Datenspeicher auf Produktionsebene verwendet, z.B. MySQL, PostgreSQL und SQL Server (alle können in Azure gehostet werden). Sie können auch die [Azure SDK für Python](azure-sdk-for-python.md) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs sowie mit Cosmos DB zu arbeiten.
 
-- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure Pipelines ein. Zusätzlich zum Arbeiten mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie Azure Test Plans automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps Services wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter:
-
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project (Erstellen einer CI-/CD-Pipeline für Python mit Azure DevOps-Projekten)](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Python development in Azure with Visual Studio Team Services (Python-Entwicklung in Azure mit Visual Studio Team Services) (Video, 11 Min. 21 Sek.)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+- Richten Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) auf einem Dienst wie Visual Studio Team Services (VSTS) ein. Zusätzlich zum Arbeiten mit dem Datenquellen-Steuerelement (in VSTS, GitHub oder anderweitig) können Sie VSTS automatisch Ihre Komponententests als Voraussetzung für die Freigabe ausführen lassen und die Pipeline so konfigurieren, dass sie vor der Bereitstellung in der Produktionsumgebung auf einem Stagingserver bereitstellt, um weitere Tests zu ermöglichen. VSTS wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts).

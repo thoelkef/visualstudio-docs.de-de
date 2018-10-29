@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029146"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991613"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -64,7 +64,7 @@ Weitere Informationen finden Sie unter:
 
 ## <a name="interactive-window"></a>Interaktives Fenster
 
-Für jede für Visual Studio geeignete Python-Umgebung können Sie einfach die gleiche interaktive Umgebung (REPL) für einen Python-Interpreter direkt in Visual Studio öffnen, statt eine separate Eingabeaufforderung zu verwenden. Sie können auch einfach zwischen Umgebungen wechseln. Wählen Sie zum Öffnen einer separaten Eingabeaufforderung zuerst Ihre gewünschte Umgebung im Fenster **Python-Umgebungen** und anschließend, wie unter [Unterstützung mehrerer Interpreter](#support-for-multipleiinterpreters) beschrieben, den Befehl **In PowerShell öffnen** aus.
+Für jede für Visual Studio geeignete Python-Umgebung können Sie einfach die gleiche interaktive Umgebung (REPL) für einen Python-Interpreter direkt in Visual Studio öffnen, statt eine separate Eingabeaufforderung zu verwenden. Sie können auch einfach zwischen Umgebungen wechseln. Wählen Sie zum Öffnen einer separaten Eingabeaufforderung zuerst Ihre gewünschte Umgebung im Fenster **Python-Umgebungen** und anschließend, wie unter [Unterstützung mehrerer Interpreter](#support-for-multiple-interpreters) beschrieben, den Befehl **In PowerShell öffnen** aus.
 
 ![Interaktives Python-Fenster in Visual Studio](media/interactive-window.png)
 
@@ -99,7 +99,7 @@ Weitere Informationen finden Sie unter:
 
 ## <a name="full-featured-debugging"></a>Vollständige Debugfeatures
 
-Eine der Stärken von Visual Studio ist der leistungsfähige Debugger. Speziell für Python ermöglicht Visual Studio Debuggen im gemischten Python/C++-Modus, Remotedebuggen unter Linux, Remotedebuggen in Azure, Debuggen im **interaktiven** Fenster und Debuggen von Python-Komponententests.
+Eine der Stärken von Visual Studio ist der leistungsfähige Debugger. Speziell für Python ermöglicht Visual Studio Debuggen im gemischten Python/C++-Modus, Remotedebuggen unter Linux, Debuggen im **interaktiven** Fenster und Debuggen von Python-Komponententests.
 
 ![Visual Studio-Debugger für Python mit dem Popup einer Ausnahme](media/debugging-exception-popup.png)
 
@@ -109,7 +109,6 @@ Weitere Informationen finden Sie unter:
 - Dokumentation: [Debuggen von Python](debugging-python-in-visual-studio.md)
 - Dokumentation: [Python/C++: Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Dokumentation: [Remotedebuggen unter Linux](debugging-python-code-on-remote-linux-machines.md)
-- Dokumentation: [Remotedebuggen in Azure](debugging-remote-python-code-on-azure.md)
 - Allgemeine Visual Studio-Featuredokumentation: [Featuretour – Visual Studio Debugger](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Profilerstellungstools mit umfassender Berichterstellung
@@ -136,22 +135,17 @@ Weitere Informationen finden Sie unter:
 - Dokumentation: [Tools für Unittests für Python](unit-testing-python-in-visual-studio.md)
 - Allgemeine Visual Studio-Featuredokumentation: [Ausführen von Komponententests für Code](../test/unit-test-your-code.md).
 
-## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Veröffentlichen in Azure und Azure SDK für Python
+## <a name="azure-sdk-for-python"></a>Azure-SDK für Python
 
-Visual Studio bietet integrierte Unterstützung für das Veröffentlichen von Web-Apps und Clouddiensten in Azure. Visual Studio enthält wichtige *web.config*-Elementvorlagen für dynamische und statische Inhalte. Die Python-Arbeitsauslastung umfasst auch das Azure SDK für Python, das die Nutzung von Azure-Diensten aus Windows-, Mac OS X- und Linux-Anwendungen vereinfacht.
+Die Python-Arbeitsauslastung umfasst das Azure SDK für Python, das die Nutzung von Azure-Diensten aus Windows-, Mac OS X- und Linux-Apps vereinfacht.
 
-![Veröffentlichen einer Python-Anwendung in Azure mit Visual Studio](media/azure-publish-dialog.png)
-
-Weitere Informationen finden Sie unter: 
-
-- Dokumentation: [Veröffentlichen in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Dokumentation: [Azure SDK für Python](azure-sdk-for-python.md)
+Weitere Informationen finden Sie unter [Azure SDK für Python](azure-sdk-for-python.md).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python-Schulungen in der Microsoft Virtual Academy
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | <ul><li>[Einführung in das Programmieren mit Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python für Einsteiger: Zeichenfolgen und Funktionen](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python-Grundlagen: Listen und Schleifen](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Häufigste Fragen zu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | <ul><li>[Einführung in das Programmieren mit Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python für Einsteiger: Zeichenfolgen und Funktionen](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python-Grundlagen: Listen und Schleifen](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Häufigste Fragen zu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Fragen und Antworten
 
@@ -185,102 +179,123 @@ Visual Studio 2015 und frühere Versionen sind unter [visualstudio.microsoft.com
 > [!Important]
 > Features werden nur für die neueste Visual Studio-Version unterstützt und gewartet. Sie sind für ältere Versionen zwar verfügbar, werden jedoch nicht mehr aktiv verwaltet.
 
-| Python-Unterstützung | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Verwaltung mehrerer Interpreter | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatische Erkennung beliebte Interpreter | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Hinzufügen von benutzerdefinierten Interpretern | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Virtuelle Umgebungen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| PIP/einfache Installation | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+|          Python-Unterstützung          |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|   Verwaltung mehrerer Interpreter   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Automatische Erkennung beliebte Interpreter | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Hinzufügen von benutzerdefinierten Interpretern      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Virtuelle Umgebungen       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         PIP/einfache Installation         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Projektsystem | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Neues Projekt aus vorhandenem Code | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Alle Dateien anzeigen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Quellcodeverwaltung | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Git-Integration | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004;<sup>1</sup> | &#10007; |
+
+|         Projektsystem         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
+| Neues Projekt aus vorhandenem Code | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Alle Dateien anzeigen         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Quellcodeverwaltung         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|        Git-Integration         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
+
 <br/>
 
-| Bearbeiten | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Syntaxhervorhebung | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatische Vervollständigung | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Signaturhilfe | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| QuickInfo | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Objektkatalog/Klassenansicht | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Navigationsleiste | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Zur Definition wechseln | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Navigieren zu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Alle Verweise suchen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatischer Einzug | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Codeformatierung | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Umgestalten – Umbenennen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Umgestalten – Methode extrahieren | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Umgestalten – Import hinzufügen/entfernen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| PyLint | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|           Bearbeiten            |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Syntaxhervorhebung      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Automatische Vervollständigung         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Signaturhilfe        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|          QuickInfo          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Objektkatalog/Klassenansicht   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Navigationsleiste        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Zur Definition wechseln       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Navigieren zu          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Alle Verweise suchen      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Automatischer Einzug       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Codeformatierung        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      Umgestalten – Umbenennen       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Umgestalten – Methode extrahieren   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Umgestalten – Import hinzufügen/entfernen | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|            PyLint            | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Interaktives Fenster | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Interaktives Fenster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| IPython mit Inlinediagrammen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|     Interaktives Fenster     |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Interaktives Fenster     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| IPython mit Inlinediagrammen | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Desktop | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Konsole/Windows-Anwendung | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| IronPython WPF (mit XAML-Designer) | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| IronPython Windows Forms | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|               Desktop               |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Konsole/Windows-Anwendung     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| IronPython WPF (mit XAML-Designer) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      IronPython Windows Forms       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Web | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Django-Webprojekt | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Bottle-Webprojekt | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Flask-Webprojekt | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Generisches Webprojekt | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|         Web         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Django-Webprojekt  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Bottle-Webprojekt  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Flask-Webprojekt  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Generisches Webprojekt | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Azure | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Bereitstellung auf einer Website | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
-| Bereitstellung für eine Webrolle | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Bereitstellung für eine Workerrolle | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Ausführen im Azure-Emulator | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Remotedebuggen | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
-| Anfügen im Server-Explorer | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
+
+|         Azure          |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
+|   Bereitstellung auf einer Website   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
+|   Bereitstellung für eine Webrolle   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Bereitstellung für eine Workerrolle  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Ausführen im Azure-Emulator  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+|    Remotedebuggen    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
+| Anfügen im Server-Explorer | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
+
 <br/>
 
-| Django-Vorlagen | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Debuggen | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatische Vervollständigung | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004; | &#10004; |
-| Automatische Vervollständigung für CSS und JavaScript | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007; | &#10007; |
+
+|           Django-Vorlagen           |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
+|              Debuggen               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|            Automatische Vervollständigung             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
+| Automatische Vervollständigung für CSS und JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
+
 <br/>
 
-| Debuggen | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Debuggen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Debuggen ohne ein Projekt | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Debuggen – Anfügen an Bearbeitung | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Debuggen im gemischten Modus | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Remotedebuggen (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Debuggen im interaktiven Fenster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|                  Debuggen                  |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|                  Debuggen                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Debuggen ohne ein Projekt         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Debuggen – Anfügen an Bearbeitung        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|            Debuggen im gemischten Modus             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+| Remotedebuggen (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|          Debuggen im interaktiven Fenster           | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
 <a name="matrix-profiling"></a>
 
-| Profilerstellung | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Profilerstellung | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
+
+| Profilerstellung |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Profilerstellung | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Test | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Test-Explorer | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Test ausführen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Test debuggen | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
+
+|     Test      |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Test-Explorer | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|   Test ausführen    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|  Test debuggen   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+
 <br/>
 
 1. Git-Unterstützung für Visual Studio 2012 steht in der Erweiterung Visual Studio-Tools für Git zur Verfügung (verfügbar im [Visual Studio-Katalog](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)).

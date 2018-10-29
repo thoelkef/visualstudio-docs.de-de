@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung ohne Visual Studio-Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827731"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analysieren der Arbeitsspeicherauslastung ohne Visual Studio-Debugger
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
   
--   Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  
+- Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  
   
--   Erstellen Sie detaillierte Momentaufnahmen des Zustands Ihres App-Speichers.  
+- Erstellen Sie detaillierte Momentaufnahmen des Zustands Ihres App-Speichers.  
   
--   Vergleichen Sie Momentaufnahmen, um die Grundursache von Speicherproblemen zu finden.  
+- Vergleichen Sie Momentaufnahmen, um die Grundursache von Speicherproblemen zu finden.  
   
- In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine UWP-XAML-App zu analysieren. Wenn Sie die Speichernutzung in UWP-Apps, die JavaScript und HTML verwenden, analysieren möchten, lesen Sie [Analysieren der Speicherauslastung (JavaScript)](../profiling/javascript-memory.md).  
+  Um den Speicherverbrauch für eine.NET Core-Anwendung zu messen, müssen Sie derzeit das Tool mit dem angefügten Debugger verwenden. Für andere verwaltete und native Apps können Sie das Tool entweder mit oder ohne angefügten Debugger verwenden. Die Screenshots in diesem Thema zeigen eine UWP XAML-App. Wenn Sie die Speichernutzung in UWP-Apps, die JavaScript und HTML verwenden, analysieren möchten, lesen Sie [Analysieren der Speicherauslastung (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Diagnosesitzung zur Speicherauslastung starten  
   
@@ -69,13 +69,13 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Ansichten der Momentaufnahmen zur Speicherauslastung  
  Die Ansichten der Momentaufnahmen dienen dazu, detaillierte Berichte in neuen Visual Studio-Fenstern zu öffnen. Es gibt zwei zwei Arten von Ansichten:  
   
--   Ein [Momentaufnahmedetailbericht](#snapshot-reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
+- Ein [Momentaufnahmedetailbericht](#snapshot-reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
   
--   Ein [Momentaufnahmevergleichsbericht](#snapshot-difference-diff-reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
+- Ein [Momentaufnahmevergleichsbericht](#snapshot-difference-diff-reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
   
- ![Links Snapshot-Ansicht](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Links Snapshot-Ansicht](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
+  Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
   
 |||  
 |-|-|  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cf4fd5b48dc3bfcfbfe1809eebe656a5b8f2079d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928281"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld "Erweiterte Buildeinstellungen" (C#)
 
@@ -27,59 +27,73 @@ Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Des
 
 ## <a name="general"></a>Allgemein
 
- Die folgenden Optionen geben Ihnen die Möglichkeit, allgemeine erweiterte Einstellungen vorzunehmen.
+Die folgenden Optionen geben Ihnen die Möglichkeit, allgemeine erweiterte Einstellungen vorzunehmen.
 
- **Sprachversion**: Gibt an, welche Sprachversion verwendet werden soll. Die Funktionsgruppe ist für jede Version anders, weshalb diese Option dazu verwendet werden kann, den Compiler dazu zu zwingen, nur eine Untergruppe von implementierten Funktionen zu erlauben oder nur die Funktionen zu aktivieren, die mit einem bereits vorhandenen Standard kompatibel sind. Diese Einstellung hat folgende Optionen:
+**Sprachversion**
 
- - **default**
+Gibt die Version der zu verwendenden Sprache an. Die Funktionsgruppe ist für jede Version anders, weshalb diese Option dazu verwendet werden kann, den Compiler dazu zu zwingen, nur eine Untergruppe von implementierten Funktionen zu erlauben oder nur die Funktionen zu aktivieren, die mit einem bereits vorhandenen Standard kompatibel sind. Diese Einstellung hat folgende Optionen:
+
+- **default**
 
    Setzt die aktuellen Version als Ziel.
 
 - **ISO-1** und **ISO-2**
 
-  Als Ziel werden jeweils die Standardfunktionen von ISO-1 und ISO-2 verwendet.
+   Als Ziel werden jeweils die Standardfunktionen von ISO-1 und ISO-2 verwendet.
 
 - **C# [Versionsnummer]**
 
- Als Ziel wird eine bestimmte Version von C# verwendet. Weitere Informationen finden Sie unter [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+   Als Ziel wird eine bestimmte Version von C# verwendet. Weitere Informationen finden Sie unter [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
 
+**Bericht für interne Compilerfehler**
 
- **Bericht für internen Compilerfehler**: Gibt an, ob Microsoft über Compilerfehler informiert wird. Wenn **prompt** (Standardeinstellung) eingestellt ist, erhalten Sie eine Aufforderung, wenn ein interner Compilerfehler auftritt, die Ihnen die Option gibt, einen elektronischen Fehlerbericht an Microsoft zu senden. Wenn **send** eingestellt ist, werden Fehlerberichte automatisch gesendet. Wenn **queue** eingestellt ist, werden Fehlerberichte in eine Warteschlange gestellt. Wenn **none** eingestellt ist, wird der Fehler nur in der Eingabe des Compilertexts gemeldet. Weitere Informationen finden Sie unter [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Gibt an, ob Compilerfehler an Microsoft gemeldet werden sollen. Wenn **prompt** (Standardeinstellung) eingestellt ist, erhalten Sie eine Aufforderung, wenn ein interner Compilerfehler auftritt, die Ihnen die Option gibt, einen elektronischen Fehlerbericht an Microsoft zu senden. Wenn **send** eingestellt ist, werden Fehlerberichte automatisch gesendet. Wenn **queue** eingestellt ist, werden Fehlerberichte in eine Warteschlange gestellt. Wenn **none** eingestellt ist, wird der Fehler nur in der Eingabe des Compilertexts gemeldet. Weitere Informationen finden Sie unter [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
- **Auf arithmetischen Über-/Unterlauf überprüfen** Gibt an, ob ein arithmetischer Ganzzahlauszug, der sich außerhalb des Bereichs der [geprüften](/dotnet/csharp/language-reference/keywords/checked) oder [ungeprüften Schlüsselwörter](/dotnet/csharp/language-reference/keywords/unchecked) befindet und der einen Wert außerhalb des Bereichs des Datentyps nach sich zieht, eine Ausnahme verursacht. Weitere Informationen finden Sie unter [/checked (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+**Auf arithmetischen Über-/Unterlauf überprüfen**
 
- **Nicht auf mscorlib.dll verweisen** Gibt an, ob „mscorlib.dll“ in Ihr Programm importiert werden und den gesamten <xref:System>-Namespace definieren soll. Klicken Sie dieses Kästchen an, wenn Sie Ihren eigenen <xref:System>-Namespace und Objekte definieren oder erstellen möchten. Weitere Informationen finden Sie unter [/nostdlib (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Gibt an, ob ein arithmetischer Ganzzahlauszug, der sich außerhalb des Bereichs der [geprüften](/dotnet/csharp/language-reference/keywords/checked) oder [ungeprüften Schlüsselwörter](/dotnet/csharp/language-reference/keywords/unchecked) befindet und der einen Wert außerhalb des Bereichs des Datentyps nach sich zieht, eine Ausnahme verursacht. Weitere Informationen finden Sie unter [/checked (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
-## <a name="output"></a>Ausgabe
+**Nicht auf mscorlib.dll verweisen**
 
- Die folgenden Optionen geben Ihnen die Möglichkeit, erweiterte Ausgabeoptionen anzugeben.
+Gibt an, ob „mscorlib.dll“ in Ihr Programm importiert wird und damit den gesamten Namespace <xref:System> definiert. Klicken Sie dieses Kästchen an, wenn Sie Ihren eigenen <xref:System>-Namespace und Objekte definieren oder erstellen möchten. Weitere Informationen finden Sie unter [/nostdlib (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
- **Debuginformationen**: Gibt an, welche Art von Debuginformationen vom Compiler generiert werden. Informationen zur Konfiguration der Leistung einer Anwendung beim Debuggen finden Sie unter [Erleichtern des Debuggens für ein Image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Diese Einstellung hat folgende Optionen:
+## <a name="output"></a>Output
+
+Die folgenden Optionen geben Ihnen die Möglichkeit, erweiterte Ausgabeoptionen anzugeben.
+
+**Debuginformationen**
+
+Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. Informationen zur Konfiguration der Leistung einer Anwendung beim Debuggen finden Sie unter [Erleichtern des Debuggens für ein Image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Diese Einstellung hat folgende Optionen:
 
 - **none**
 
-  Gibt an, das keine Debuginformationen generiert werden
+   Gibt an, das keine Debuginformationen generiert werden
 
 - **full**
 
-  Ermöglicht es, einen Debugger an ein ausgeführtes Programm anzufügen.
+   Ermöglicht es, einen Debugger an ein ausgeführtes Programm anzufügen.
 
 - **pdbonly**
 
-  Macht ein Debuggen von Quellcode möglich, wenn das Programm im Debugger gestartet wird. Der Assembler wird jedoch nur angezeigt, wenn das aktive Programm an den Debugger angefügt ist.
-- **portable** (portabel)
+   Macht ein Debuggen von Quellcode möglich, wenn das Programm im Debugger gestartet wird. Der Assembler wird jedoch nur angezeigt, wenn das aktive Programm an den Debugger angefügt ist.
 
-  Erzeugt eine PDB-Datei, d.h. eine nicht plattformspezifische Symboldatei, die anderen Tools, besonders Debuggern, Informationen über die Erstellung und den Inhalt der wichtigsten ausführbaren Datei bereitstellt. Weitere Informationen finden Sie unter [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
+-  **portable** (portabel)
+
+   Erzeugt eine PDB-Datei, d.h. eine nicht plattformspezifische Symboldatei, die anderen Tools, besonders Debuggern, Informationen über die Erstellung und den Inhalt der wichtigsten ausführbaren Datei bereitstellt. Weitere Informationen finden Sie unter [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 
 - **embedded** (eingebettet)
 
-  Portable Symbolinformationen werden in der Assembly eingebettet. Es wird keine externe PDB-Datei generiert.
+   Portable Symbolinformationen werden in der Assembly eingebettet. Es wird keine externe PDB-Datei generiert.
 
 Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
 
-**Dateianordnung**: Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512**, **1024**, **2048**, **4096** und **8192**. Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+**Dateianordnung**
 
-**Basisadresse der Bibliothek**: Gibt die bevorzugte Basisadresse an, an der eine DLL geladen werden soll. Die Standard-Basisadresse für eine DLL-Datei wird durch die [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]-Common Language Runtime festgelegt. Weitere Informationen finden Sie unter [/baseaddress (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512**, **1024**, **2048**, **4096** und **8192**. Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+
+**Basisadresse der Bibliothek**
+
+Gibt die bevorzugte Basisadresse an, unter der eine DLL geladen werden soll. Die Standard-Basisadresse für eine DLL-Datei wird durch die [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]-Common Language Runtime festgelegt. Weitere Informationen finden Sie unter [/baseaddress (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Siehe auch
 

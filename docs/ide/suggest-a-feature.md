@@ -1,0 +1,112 @@
+---
+title: Vorschlagen eines Features für Visual Studio
+description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag unterbreiten können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
+ms.date: 09/20/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
+ms.topic: conceptual
+author: Seiyer
+ms.author: seiyer
+manager: shve
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bf14f613dba6b1b7f3230c19570fc93c47374e8
+ms.sourcegitcommit: 7081de442666c0cfb0986f6bf5d02d42916fed3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403696"
+---
+# <a name="suggest-a-feature"></a>Vorschlagen eines Features
+
+Wir haben eine völlig neue Benutzererfahrung mit dem Vorschlagen von Features neben der aktuellen Möglichkeit eingeführt, Probleme in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com) zu melden. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
+
+Bis jetzt haben Benutzer von Visual Studio das Benutzerfeedback-Forum verwendet, um neue Ideen für Features vorzuschlagen. Die Benutzeroberfläche *Feature vorschlagen* in der Entwicklercommunity ermöglicht es Ihnen, vom Benutzerfeedback-Forum auf eine einzige Plattform für all Ihr Feedback zu wechseln, die direkt mit den Visual Studio Produktteams zusammenarbeitet.  
+
+Wir haben eine anfängliche Sammlung von Ideen aus dem Benutzerfeedback-Forum in die Entwicklercommunity migriert. Die Migration erfolgte auf der Grundlage der Auswirkungen des Feedbacks auf die Community und der Prioritäten unserer Produktroadmap. Wenn Sie erwartet haben, hier einen Vorschlag zu sehen, den wir vielleicht verpasst haben, sollten Sie ihn unbedingt der Entwicklercommunity hinzufügen.
+
+## <a name="votes"></a>Abstimmungen
+
+Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung in der Entwicklercommunity. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.  
+
+## <a name="user-voice"></a>Benutzerfeedback
+
+Die Benutzerfeedback-Website ist nun schreibgeschützt, sodass Sie nach Bedarf auf den Kontext zurückblicken können. Alle Vorschläge für neue Features sollten über die Entwicklercommunity eingereicht werden.
+
+## <a name="suggestion-status"></a>Vorschlagsstatus
+
+Nachdem Sie einen Featurevorschlag eingereicht haben, zeigen Statusangaben an, wo sich Ihr Featurevorschlag in seinem Lebenszyklus befindet. Während wir Ihr Feedback berücksichtigen und entlang des Workflows weiterführen, kennzeichnen wir es mit dem entsprechenden Status.
+
+Die verschiedenen Statusangaben, die mit Featurevorschlägen verbunden sind, werden unten zusammen mit einer Beschreibung ihrer Bedeutung und der Farbindikatoren aufgeführt.
+
+![Neue Statusangaben für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/New.jpg)
+
+**Neu** bedeutet, dass der Vorschlag neu von Ihnen oder einer anderen Person gemeldet wurde. Es wurden noch keine diesbezüglichen Aktionen durchgeführt. Der Ansprechpartner werde einige vorläufige Überprüfungen ausführen, um sicherzustellen, dass wir den Vorgang fortsetzen können. Erwarten Sie, von uns in etwa fünf Werktagen mit unseren nächsten Schritten zu hören.
+- - -
+
+![Statusangabe „Wird überprüft“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/UnderReview.jpg)
+
+**Wird überprüft** gibt an, dass der Featurevorschlag für die Priorisierung in eine Warteschlange eingereiht wurde. Wir priorisieren Features, um unserer breiteren Entwicklercommunity den besten Nutzen zu bieten, und berücksichtigen dabei auch die Produktroadmap.
+
+Auch wenn wir Ihren neuen Featurevorschlag nicht sofort aufgreifen können, werden wir Ihre Idee etwa 90 Tage lang weiterverfolgen, die Community einbeziehen und dann eine Entscheidung über die nächsten Schritte treffen.
+- - -
+
+![Statusangabe „In Roadmap“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/OnRoadmap.jpg)
+
+**IN Roadmap** bedeutet, dass Ihr Featurevorschlag eine große Auswirkung auf die Community hat und dazu beiträgt, das Produkterlebnis zu verbessern. Wir haben dafür Zeit in unserer Roadmap vorgesehen. Wir werden Sie über den Fortschritt informieren.
+- - -
+
+![Statusangabe „Weitere Informationen erforderlich“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/NeedMoreInfo.jpg)
+
+Ein Featurevorschlag mit der Markierung **Weitere Informationen erforderlich** bedeutet, dass wir weitere Details benötigen, damit wir Ihren Vorschlag besser verstehen können. Schauen Sie sich die Kommentare an, in denen wir Sie um zusätzliche Informationen bitten, um ein besseres Verständnis zu entwickeln.
+- - -
+![Statusangabe „Geschlossen – anderes Produkt“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
+
+**Geschlossen – anderes Produkt** bedeutet, dass wir Ihren Featurevorschlag zu diesem Zeitpunkt nicht bearbeiten können, da er nicht auf das Produkt zutrifft, für das er gemeldet wurde. Wir werden Ihnen jedoch mitteilen, wo Sie Ihren Vorschlag für ein neues Feature für das entsprechende Produkt mitteilen können.
+- - -
+![Statusangabe „Geschlossen – Duplikat“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedDuplicate.jpg)
+
+**Geschlossen – Duplikat** gibt an, dass eine andere Person bereits das gleiche Feature vorgeschlagen hat. Überprüfen Sie die Kommentare, um nach dem Link zum vorhandenen Featurevorschlag zu suchen. Abstimmungen und Kommentare wurden im ursprünglichen Vorschlag zusammengeführt. Folgen Sie dem ursprünglichen Vorschlag.
+- - -
+![Statusangabe „Geschlossen – nicht genügend Informationen“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+
+**Geschlossen – nicht genügend Informationen** gibt an, dass wir nach mehreren Versuchen nicht genügend Informationen zum vollständigen Verständnis Ihres Featurevorschlags erhalten haben. Wir müssen den Vorschlag für ein neues Feature schließen, da wir zum jetzigen Zeitpunkt keine weiteren Maßnahmen ergreifen können.
+
+Haben Sie die Informationen gefunden, nach denen wir gesucht haben? Sie können die Reaktivierung des Tickets anfordern, wenn Sie über die zusätzlichen Informationen verfügen.
+- - -
+
+![Statusangabe „Abgeschlossen – Vorschau“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/CompletedPreview.jpg)
+
+**Abgeschlossen – Vorschau** zeigt an, dass wir das von Ihnen vorgeschlagene Feature implementiert haben. Sie können eine Vorschauversion von Visual Studio herunterladen, die Ihren Vorschlag enthält, indem Sie den in den Kommentaren angegebenen Link verwenden.
+- - -
+
+![Statusangabe „Abgeschlossen – Release“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/CompletedRelease.jpg)
+
+**Abgeschlossen – Release** gibt an, dass Ihr Vorschlag für ein neues Feature im aktuellen Produktupdate veröffentlicht wurde. Das Visual Studio-Update kann über den Link in den Kommentaren heruntergeladen werden. 
+- - -
+
+## <a name="faq"></a>FAQ
+
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Warum kann ich meine Benutzerfeedback-Idee in der Entwicklercommunity nicht sehen?
+
+Vorschläge für neue Features aus dem alten Benutzerfeedback-Forum wurden basierend auf den Auswirkungen auf die breitere Community und den Prioritäten unserer Produktroadmap in die Entwicklercommunity migriert. Wenn Sie denken, dass wir die Migration Ihres Vorschlags verpasst haben, fügen Sie ihn als neuen Vorschlag zur Entwicklercommunity hinzu.
+
+### <a name="why-have-the-votes-not-been-carried-over-from-user-voice"></a>Warum wurden die Abstimmungsergebnisse nicht aus dem Benutzerfeedback übernommen?
+
+Das Abstimmungssystem im Benutzerfeedback funktioniert anders als das Abstimmungssystem in der Entwicklercommunity. Im neuen System möchten wir die Integrität der Anzahl der Stimmen erhalten und die Verzerrung von Daten vermeiden. Wir haben uns entschieden, die Stimmenanzahl des Benutzerfeedbacks deutlich als Tag (anstelle von Abstimmungsergebnissen) für jeden Vorschlag anzuzeigen. Wenn Benutzer über Vorschläge für Featureeinreichungen mit der Entwicklercommunity abstimmen, werden die neuen Stimmen getrennt von den Stimmen des Benutzerfeedbacks angezeigt.
+
+### <a name="where-can-i-see-comments-associated-with-the-suggestions-imported-from-user-voice"></a>Wo kann ich Kommentare zu den aus dem Benutzerfeedback importierten Vorschlägen anzeigen?
+
+Folgen Sie dem von uns eingefügten Link, um zu den Kommentaren des Benutzerfeedbacks zu einem Vorschlag zurückzukehren, der in die Entwicklercommunity migriert wurde. Dieser Link steht während der Übergangszeit als einfache Referenz zur Verfügung, wenn Sie mehr Kontext benötigen.
+
+### <a name="why-can-i-see-three-vote-counts-for-a-suggestion"></a>Warum werden für einen Vorschlag drei Abstimmungsergebnisse angezeigt?
+
+Wenn ein Vorschlag aus dem Benutzerfeedback importiert wurde, werden drei separate Abstimmungsergebnisse angezeigt. Die beiden als Tags angezeigten Abstimmungsergebnisse sind die Abstimmungsergebnisse, die die Idee ursprünglich im Benutzerfeedback erhalten hat. Das dritte Abstimmungsergebnis, das links neben dem Vorschlag angezeigt wird, zeigt Ihnen, wie viele Stimmen der Vorschlag von der Entwicklercommunity erhält.
+
+Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung in der Entwicklercommunity. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Daten zu vermeiden, haben wir uns entschieden, die Abstimmungsergebnisse des Benutzerfeedbacks deutlich als Tag (anstelle von Stimmen) für jeden Vorschlag anzuzeigen.
+
+### <a name="how-long-can-i-expect-actions-to-take"></a>Wie lange dauert es, bis ich mit Maßnahmen rechnen kann?
+
+Wir sind sehr daran interessiert, Ihre Featurevorschläge zu hören und Maßnahmen zu ergreifen, um unseren Kunden wertvolle Erfahrungen zu ermöglichen. Maßnahmen zu Vorschlägen werden auf der Grundlage der Auswirkungen auf die breitere Community priorisiert. Auch wenn wir nicht persönlich auf jeden Vorschlag eingehen können, können Sie sicher sein, dass Ihr Feedback an das richtige Team gelangt und sorgfältig bewertet wird.
+
+Die Reaktionszeit hängt von dem Status ab, in dem sich Ihr Feedback befindet. Lesen Sie die Erklärungen zum Status in diesem Dokument, um die Antwortzeiten zu verstehen.

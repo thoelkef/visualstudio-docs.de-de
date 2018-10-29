@@ -19,16 +19,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856170"
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 
-Willkommen bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
+Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
 
 Sie möchten mehr zu weiteren Neuerungen in dieser Version wissen? Sehen Sie sich die [Anmerkungen zur Version](/visualstudio/releasenotes/vs2017-relnotes) an.
 
@@ -55,7 +55,7 @@ Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu di
 
 |         |         |
 |---------|---------|
-|  ![Kamerasymbol für video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171), das erläutert, wie Sie die Visual Studio-Bootstrapperdatei herunterladen und die Edition von Visual Studio auswählen, die sich für Ihre Zwecke eignet. |
+|  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171), das erläutert, wie Sie die Visual Studio-Bootstrapperdatei herunterladen und die Edition von Visual Studio auswählen, die sich für Ihre Zwecke eignet. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Schritt 3: Installieren des Visual Studio-Installers
 
@@ -63,11 +63,11 @@ Führen Sie dann die Bootstrapperdatei aus, um den Visual Studio-Installer zu in
 
 1. Doppelklicken Sie in Ihrem Ordner **Downloads** auf die Bootstrapperdatei, die einer der folgenden Dateien entspricht oder ähnelt:
 
-  * **vs_enterprise.exe** für Visual Studio Enterprise
-  * **vs_professional.exe** für Visual Studio Professional
-  * **vs_community.exe** für Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** für Visual Studio Enterprise
+   * **vs_professional.exe** für Visual Studio Professional
+   * **vs_community.exe** für Visual Studio Community  <br><br>
 
-  Wenn eine Benachrichtigung der Benutzerkontensteuerung angezeigt wird, klicken Sie auf **Ja**.
+   Wenn eine Benachrichtigung der Benutzerkontensteuerung angezeigt wird, klicken Sie auf **Ja**.
 
 2. Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://visualstudio.microsoft.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) zu akzeptieren. Klicken Sie auf **Weiter**.
 
@@ -79,7 +79,7 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 
 1. Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.
 
- ![Auswählen einer Workload aus dem Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-community.png)
+   ![Auswählen einer Workload aus dem Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-community.png)
 
      Wählen Sie beispielsweise die Workload „.NET Desktopentwicklung“ aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.
 
@@ -104,7 +104,7 @@ Wenn Sie das Feature für Arbeitsauslastungen nicht zur Anpassung Ihrer Visual S
 
   |         |         |
   |---------|---------|
-  |  ![Kamerasymbol für video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers eine einzelne Komponente installieren. |
+  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers eine einzelne Komponente installieren. |
 
 ## <a name="step-6---install-language-packs-optional"></a>Schritt 6: Installieren von Language Packs (optional)
 
@@ -114,7 +114,7 @@ Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung di
 
   |         |         |
   |---------|---------|
-  |  ![Kamerasymbol für video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers ein Sprachpaket installieren. |
+  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers ein Sprachpaket installieren. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Ändern der Installersprache über die Befehlszeile
 
@@ -130,15 +130,17 @@ Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade i
 
 ## <a name="step-8---start-developing"></a>Schritt 8: Mit dem Entwickeln beginnen
 
-1. Klicken Sie nach Abschluss der Visual Studio-Installation auf **Starten**, um mit dem [Programmieren in Visual Studio zu beginnen](../ide/get-started-developing-with-visual-studio.md).
+1. Klicken Sie nach Abschluss der Visual Studio-Installation auf **Starten**, um mit dem Programmieren in Visual Studio zu beginnen.
 
 2. Klicken Sie auf **Datei** und dann auf **Neues Projekt**.
 
-3. Wählen Sie einen neuen Projekttyp aus. <br><br>
-   Um beispielsweise [eine C++-App zu erstellen](../ide/getting-started-with-cpp-in-visual-studio.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten. <br><br>
+3. Wählen Sie einen neuen Projekttyp aus.
+
+   Um beispielsweise [eine C++-App zu erstellen](../ide/getting-started-with-cpp-in-visual-studio.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten.
+
    Um [eine C#-App zu erstellen](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 

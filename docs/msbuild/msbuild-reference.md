@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081783"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120382"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die folgenden Links verweisen auf [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Referenzinformationen.  
@@ -71,25 +71,24 @@ ms.locfileid: "39081783"
  Listet Zeichen auf, die möglicherweise mit Escapezeichen versehen werden müssen, damit sie richtig interpretiert werden können. Eine Escapesequenz besteht aus einer Reihe von Zeichen, die angibt, dass eine alternative Interpretation folgt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Übersicht über MSBuild](../msbuild/msbuild.md) bietet eine Einführung in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
+ [Übersicht über MSBuild](../msbuild/msbuild.md)     
+ Bietet eine Einführung in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Enthält den Namespaceverweis für die Konvertierung.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Enthält den Namespaceverweis für die Auswertung.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Enthält den Namespaceverweis für die Ausführung.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Enthält den Namespaceverweis für das Framework.  
   
- <xref:Microsoft.Build.Logging>  
- Enthält den Namespaceverweis für die Protokollierung.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging): Enthält den Namespaceverweis für die Protokollierung.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Enthält den Namespaceverweis für Aufgaben.  
   
- <xref:Microsoft.Build.Utilities>  
- Enthält den Namespaceverweis für Dienstprogramme.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities): Enthält den Namespaceverweis für die Hilfsprogramme.

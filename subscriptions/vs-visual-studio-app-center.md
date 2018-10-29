@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940982"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -41,6 +41,7 @@ Der Einstieg in Visual Studio App Center ist ganz einfach.
     > ![VS App Center: Portal](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Berechtigung
+
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, jährliche Cloud, monatliche Cloud)   | VL, Azure, Retail, NFR<sup>1</sup> | Included       |  Ja          |
@@ -50,7 +51,7 @@ Der Einstieg in Visual Studio App Center ist ganz einfach.
 | Visual Studio Dev Essentials | NA  | Included                                                            |Ja |
 
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services (Developer), BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
+<sup>1</sup> *Umfasst: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services (Developer), BizSpark, Microsoft Valued Professional (MVP), Region Director (RD).*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
@@ -69,4 +70,4 @@ Jetzt sollten Sie auf das App Center-Portal zugreifen und Ihr Konto erstellen k�
     - Im [App Center Help Center](https://intercom.help/appcenter/) erhalten Sie Antworten und Ratschläge vom App Center-Team.
     - Sehen Sie sich die vollständige [App Center-Dokumentation](/appcenter/) an.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

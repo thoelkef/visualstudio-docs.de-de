@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828862"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.  
@@ -172,7 +172,7 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
   
 #### <a name="to-build-the-application"></a>So erstellen Sie die Anwendung  
   
-1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /t:Build** ein.  
+1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -t:Build** ein.  
   
      Damit wird das Build-Ziel der Helloworld-Projektdatei erstellt, da der Visual C#-Compiler aufgerufen wird, um die Anwendung Helloworld zu erstellen.  
   
@@ -183,7 +183,7 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
 > [!NOTE]
 >  Weitere Details zum Build werden angezeigt, wenn Sie den Ausführlichkeitsgrad erhöhen. Um den Ausführlichkeitsgrad auf „Detailliert“ festzulegen, geben Sie diesen Befehl an der Eingabeaufforderung ein:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>Hinzufügen der Buildeigenschaften  
  Sie können der Projektdatei Buildeigenschaften hinzufügen, um den Build genauer steuern zu können. Fügen Sie jetzt die folgenden Eigenschaften hinzu:  
@@ -259,7 +259,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
 #### <a name="to-test-the-build-properties"></a>So testen Sie die Buildeigenschaften  
   
-1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /t:Build** ein.  
+1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -t:Build** ein.  
   
      Damit wird der Ordner *\Bin\\* erstellt und anschließend der Visual C#-Compiler aufgerufen, um die Anwendung *MSBuildSample* zu erstellen und im Ordner *\Bin\\* einzufügen.  
   
@@ -334,9 +334,9 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
 #### <a name="to-test-the-build-targets"></a>So testen Sie die Build-Ziele  
   
-1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /p:AssemblyName=Greetings** ein.  
+1.  Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -p:AssemblyName=Greetings** ein.  
   
-     Da Sie das Ziel nicht explizit mit dem Schalter **/t** festgelegt haben, führt MSBuild das Build-Standardziel aus. Der Schalter **/p** überschreibt die Eigenschaft `AssemblyName` und gibt dieser den neuen Wert `Greetings`. Dies führt zum Erstellen der neuen Anwendung *Greetings.exe* im Ordner *\Bin\\*.  
+     Da Sie das Ziel nicht explizit mit dem Schalter **-t** festgelegt haben, führt MSBuild das Build-Standardziel aus. Der Schalter **-p** überschreibt die Eigenschaft `AssemblyName` und gibt dieser den neuen Wert `Greetings`. Dies führt zum Erstellen der neuen Anwendung *Greetings.exe* im Ordner *\Bin\\*.  
   
 2.  Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* die Anwendung *MSBuildSample* und die neue Anwendung *Greetings* enthält, geben Sie **dir Bin** ein.  
   
@@ -344,11 +344,11 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
      Die Meldung **Hello, world!** sollte angezeigt werden.  
   
-4.  Löschen Sie die Anwendung MSBuildSample, indem Sie **msbuild helloworld.csproj /t:clean** eingeben.  
+4.  Löschen Sie die Anwendung MSBuildSample, indem Sie **msbuild helloworld.csproj -t:clean** eingeben.  
   
      Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem `AssemblyName`-Standardeigenschaftswert `MSBuildSample` zu entfernen.  
   
-5.  Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings** eingeben.  
+5.  Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** eingeben.  
   
      Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName**-Eigenschaftswert `Greetings` zu entfernen.  
   
@@ -382,11 +382,11 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
     </Target>  
     ```  
   
-2.  Testen Sie das Build-Ziel, indem Sie an der Eingabeaufforderung **msbuild /v:d** eingeben.  
+2.  Testen Sie das Build-Ziel, indem Sie an der Eingabeaufforderung **msbuild -v:d** eingeben.  
   
      Vergessen Sie nicht, dass *helloworld.csproj* die Standardprojektdatei und „Build“ das Standardziel darstellt.  
   
-     Mit dem Schalter **/v:d** wird eine ausführliche Beschreibung für den Buildprozess angegeben.  
+     Mit dem Schalter **-v:d** wird eine ausführliche Beschreibung für den Buildprozess angegeben.  
   
      Die folgenden Zeilen sollten angezeigt werden:  
   

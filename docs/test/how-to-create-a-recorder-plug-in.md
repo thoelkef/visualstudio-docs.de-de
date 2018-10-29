@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909771"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
@@ -62,7 +62,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 9. Schreiben Sie den Code für das Aufzeichnungs-Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> abgeleitet wird.
 
-10. Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>-Methode.
+10. Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> -Methode.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -87,11 +87,11 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 ### <a name="deploy-the-recorder-plug-in"></a>Bereitstellen des Aufzeichnungs-Plug-Ins
 
-Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, müssen Sie die resultierende DLL-Datei an einem von zwei Speicherorten speichern:
+Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, speichern Sie die sich ergebende DLL-Datei an einem von zwei Speicherorten:
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[edition]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins*
 
 > [!WARNING]
 > Nachdem Sie das Aufzeichnungs-Plug-In an einen dieser Speicherorte kopiert haben, müssen Sie Visual Studio neu starten, damit das Aufzeichnungs-Plug-In registriert wird.
@@ -113,8 +113,8 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, müssen Sie die resultie
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >
-    > 1.  Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
-    > 2.  Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
+    > 1. Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
+    > 2. Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
 
 ## <a name="example"></a>Beispiel
 
@@ -123,7 +123,7 @@ In diesem Beispiel wird veranschaulicht, wie ein benutzerdefiniertes Aufzeichnun
 > [!NOTE]
 > Eine vollständige Auflistung des Beispielcodes finden Sie am Ende dieses Themas.
 
- **Überprüfen des Beispielcodes**
+**Überprüfen des Beispielcodes**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Durchlaufen des Ergebnisses, um nach der ersten Seite mit "ReportSession" zu suchen
 

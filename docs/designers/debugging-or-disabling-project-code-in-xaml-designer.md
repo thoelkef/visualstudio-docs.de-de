@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816782"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 
@@ -86,6 +86,19 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
     > [!NOTE]
     > Das Deaktivieren von Projektcode kann zu einem Verlust von Entwurfszeitdaten führen. Eine Alternative besteht darin, den im Designer ausgeführten Code zu debuggen.
+
+## <a name="control-display-options"></a>Anzeigeoptionen für Steuerelemente
+
+> [!NOTE]
+> **Anzeigeoptionen für Steuerelemente** ist nur für UWP-Anwendungen (universelle Windows-Plattform) verfügbar, die Windows 10 Fall Creators Update (Build 16299) oder höher als Ziel verwenden. Das Feature **Anzeigeoptionen für Steuerelemente** ist in Visual Studio 2017 Version 15.9 oder höher verfügbar. 
+
+Im XAML-Designer können Sie Ihre Anzeigeoptionen für Steuerelemente so ändern, dass nur Plattformsteuerelemente aus dem Windows SDK angezeigt werden. Dies kann die Zuverlässigkeit des XAML-Designers verbessern.
+
+Um die Anzeigeoptionen für Steuerelemente zu ändern, klicken Sie auf das Symbol unten links im Designerfenster, und wählen Sie dann eine Option unter **Anzeigeoptionen für Steuerelemente** aus:
+
+![Anzeigeoptionen für Steuerelemente](../designers/media/control_display_options.png)
+
+Wenn Sie **Nur Plattformsteuerelemente anzeigen** auswählen, werden alle benutzerdefinierten Steuerelemente, die von SDKs, Kunden-Benutzersteuerelementen usw. stammen, nicht vollständig gerendert. Stattdessen werden sie durch Fallbacksteuerelemente ersetzt, um die Größe und Position des Steuerelements zu zeigen.
 
 ## <a name="see-also"></a>Siehe auch
 
