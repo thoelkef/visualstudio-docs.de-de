@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245855"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219613"
 ---
 # <a name="how-to-use-xml-snippets"></a>Gewusst wie: Verwenden von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
   
  Durch Drücken der EINGABETASTE oder ESC wird die Feldbearbeitung beendet, und der Editor kehrt in den Normalzustand zurück.  
   
- Die Standardfarben für editierbare können geändert werden, indem die Codeausschnittfeld-Einstellung in der **Schriftarten und Farben** im Bereich der **Option**Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ Die Standardfarben für editierbare können geändert werden, indem die Codeausschnittfeld-Einstellung in der **Schriftarten und Farben** im Bereich der **Optionen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Ausschnitte](../xml-tools/xml-snippets.md)   

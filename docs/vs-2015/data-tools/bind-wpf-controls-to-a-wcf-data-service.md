@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812425"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220377"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
 3.  Ändern Sie den Namen in `AdventureWorksModel.edmx`, und klicken Sie auf **hinzufügen**.  
   
-     Die **Entity Data Model**-Assistent wird geöffnet.  
+     Die **Entity Data Model** -Assistent wird geöffnet.  
   
 4.  Auf der **auswählen des Modellinhalts** auf **aus Datenbank generieren**, und klicken Sie auf **Weiter**.  
   
@@ -161,7 +161,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
 6.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.  
   
-     Die **Datenquellenkonfiguration**-Assistent wird geöffnet.  
+     Die **Datenquellenkonfiguration** -Assistent wird geöffnet.  
   
 7.  In der **wählen Sie einen Datenquellentyp** wählen Sie im Assistenten auf der Seite **Service**, und klicken Sie dann auf **Weiter**.  
   

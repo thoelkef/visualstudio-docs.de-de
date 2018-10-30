@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874643"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219301"
 ---
 # <a name="save-data-in-a-transaction"></a>Speichern von Daten in einer Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 2.  Nennen Sie das Projekt **SavingDataInATransactionWalkthrough**.  
   
-3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann**OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Die **SavingDataInATransactionWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
@@ -61,7 +61,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 2.  In der **Datenquellen** wählen Sie im Fenster **neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.  
   
-3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann**Weiter**.  
+3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann **Weiter**.  
   
 4.  Auf der **wählen Sie Ihre Datenverbindung**Bildschirm führen Sie einen der folgenden:  
   
@@ -71,13 +71,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
     -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** Dialogfeld ein, und erstellen Sie eine Verbindung zur Northwind-Datenbank.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann**Weiter**.  
+5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf**Weiter**.  
+6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
   
 7.  Auf der **Datenbankobjekte auswählen** Bildschirm, erweitern Sie die **Tabellen** Knoten.  
   
-8.  Wählen Sie die `Customers` und `Orders` Tabellen, und wählen Sie dann**Fertig stellen**.  
+8.  Wählen Sie die `Customers` und `Orders` Tabellen, und wählen Sie dann **Fertig stellen**.  
   
      Die **NorthwindDataSet** wird dem Projekt hinzugefügt und die `Customers` und `Orders` Tabellen angezeigt werden, der **Datenquellen** Fenster.  
   
@@ -103,7 +103,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 1.  Auf der **Projekt** , wählen Sie im Menü**Verweis hinzufügen**.  
   
-2.  Wählen Sie **System.Transactions**(auf der **.NET** Registerkarte), und wählen Sie dann**OK**.  
+2.  Wählen Sie **System.Transactions**(auf der **.NET** Registerkarte), und wählen Sie dann **OK**.  
   
      Ein Verweis auf **System.Transactions** wird dem Projekt hinzugefügt.  
   
@@ -161,7 +161,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
--   Wählen Sie**F5** zum Ausführen der Anwendung.  
+-   Wählen Sie **F5** zum Ausführen der Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

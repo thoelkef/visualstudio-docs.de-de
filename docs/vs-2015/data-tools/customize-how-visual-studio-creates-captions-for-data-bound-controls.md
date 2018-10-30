@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195610"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220178"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsof
   
 10. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionSuffix`.  
   
-11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie**ändern**.  
+11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie **ändern**.  
   
 12. Geben Sie den regulären Ausdruck sollen die **Datenquellen** Fenster verwenden.  
   
-13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie**ändern**.  
+13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie **ändern**.  
   
 14. Geben Sie die Ersetzung formatierte Zeichenfolge die Möglichkeit, die den regulären Ausdruck übereinstimmenden Muster angezeigt werden soll.  
   
-15. Mit der rechten Maustaste die **SmartCaptionSuffix** Element aus, und wählen Sie**ändern**.  
+15. Mit der rechten Maustaste die **SmartCaptionSuffix** Element aus, und wählen Sie **ändern**.  
   
 16. Geben Sie alle Zeichen, die am Ende der Beschriftung angezeigt werden sollen.  
   
@@ -119,11 +119,11 @@ Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsof
   
 10. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionSuffix`.  
   
-11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie**ändern**.  
+11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie **ändern**.  
   
 12. Geben Sie `(.*)` für den Wert. Dadurch wird die gesamte Zeichenfolge übereinstimmen.  
   
-13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie**ändern**.  
+13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie **ändern**.  
   
 14. Geben Sie `$1` für den Wert. Dies ersetzt die Zeichenfolge, mit der übereinstimmende Wert, der die gesamte Zeichenfolge ist, sodass es unverändert bleiben.  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892999"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219795"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
 2.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.  
   
-     Die **Datenquellenkonfiguration**-Assistent wird geöffnet.  
+     Die **Datenquellenkonfiguration** -Assistent wird geöffnet.  
   
 3.  Auf der **wählen Sie einen Datenquellentyp** Seite **Datenbank**, und klicken Sie dann auf **Weiter**.  
   
@@ -122,7 +122,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
 2.  Klicken Sie im Designer mit der Maustaste der **Fill,GetData()** abzufragen, und wählen Sie **konfigurieren**.  
   
-     Die **TableAdapter-Konfigurations**-Assistent wird geöffnet.  
+     Die **TableAdapter-Konfigurations** -Assistent wird geöffnet.  
   
 3.  In der **Geben Sie eine SQL-Anweisung** Seite, die folgende WHERE-Klausel nach dem Hinzufügen der `SELECT` -Anweisung in das Textfeld ein.  
   
