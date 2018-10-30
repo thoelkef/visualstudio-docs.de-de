@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823748"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsole Befehle in Visual Studio
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Weitere Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie unter [in diesem Thema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "44282208"
 |`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
 |`profile(reportName)`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
 |`profileEnd()`|Wird in Web-Apps verwendet. In UWP-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
-|`select(element)`|Wählt das angegebene HTML- `element` in die [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Wählt das angegebene HTML- `element` im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md)aus.|console.select(element);|  
 |`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentierung von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Stoppt einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Siehe den Konsolenbefehl `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Sendet eine Stapelverfolgung an das Konsolenfenster. Die Ablaufverfolgung umfasst die vollständige Aufrufliste, z. B. Dateiname, Zeilennummer und Spaltennummer.|`console.trace();`|  
@@ -70,7 +70,7 @@ ms.locfileid: "44282208"
 |`$(id)`|Gibt ein Element anhand der ID zurück. Dies ist ein Kurzbefehl für `document.getElementById(id)`, wobei `id` eine Zeichenfolge ist, die die Element-ID darstellt.|`$("contenthost")`|  
 |`$$(selector)`|Gibt ein Array von Elementen, die dem angegebenen Selektor entsprechen, mithilfe der CSS-Selektor-Syntax zurück. Dies ist ein Kurzbefehl für `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Ermöglicht es Ihnen, den Kontext für Ausdrucksauswertung vom Standardfenster der obersten Ebene der Seite in das Fenster des angegebenen Rahmens zu ändern. Ein Aufruf von `cd()` ohne Parameter gibt den Kontext zum Fenster der obersten Ebene zurück.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Wählt das angegebene Element im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Wählt das angegebene Element im [DOM Explorer](../debugger/quickstart-debug-html-and-css.md)aus.|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Gibt eine Schnellansicht für das angegebene Objekt zurück. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Überprüfen des Vorhandenseins eines Konsolenbefehls  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Die folgenden Ersetzungsmuster werden unterstützt:  
   
--   %s – Zeichenfolge  
-     %i – Ganzzahl  
-     %d – Ganzzahl  
-     %f – Gleitkommazahl  
-     %o – Objekt  
-     %b – Binärzahl  
-     %x – Hexadezimalzahl  
-     %e – Exponent  
+- %s – Zeichenfolge  
+   %i – Ganzzahl  
+   %d – Ganzzahl  
+   %f – Gleitkommazahl  
+   %o – Objekt  
+   %b – Binärzahl  
+   %x – Hexadezimalzahl  
+   %e – Exponent  
   
- Nachfolgend finden Sie einige Beispiele für die Verwendung von Ersetzungsmustern in `console.log`:  
+  Nachfolgend finden Sie einige Beispiele für die Verwendung von Ersetzungsmustern in `console.log`:  
   
 ```javascript  
 var user = new Object();  

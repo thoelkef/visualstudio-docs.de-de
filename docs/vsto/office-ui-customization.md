@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836763"
 ---
 # <a name="office-ui-customization"></a>Anpassung der Office-Benutzeroberfläche
   Sie können die Benutzeroberfläche (UI) von Microsoft Office-Anwendungen anpassen, indem Sie die Office Developer Tools in Visual Studio verwenden. In diesem Thema werden die Funktionen der Benutzeroberfläche, die Sie anpassen können, in den folgenden Abschnitten beschrieben:  
@@ -51,7 +51,7 @@ ms.locfileid: "35673600"
 |Aktionsbereich|Anpassungen auf Dokumentebene|Excel<br /><br /> Word|  
 |Benutzerdefinierte Aufgabenbereiche|VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
 |Benutzerdefinierte Menüband-Benutzeroberfläche|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|  
-|Backstage-Ansicht|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|  
+|Backstage-Ansicht|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|  
 |Outlook-Formularbereiche|VSTO-Add-Ins|Outlook|  
 |Steuerelemente in Dokumenten|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> Word|  
 |Kontextmenüs|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
@@ -61,13 +61,13 @@ ms.locfileid: "35673600"
   
  Die Office-Entwicklungstools in Visual Studio bieten zwei unterschiedliche Wege zum Anpassen von Aufgabenbereichen:  
   
--   Sie können einen Aktionsbereich einer Anpassung auf Dokumentebene hinzufügen. Standardmäßig wird der Aktionsbereich auf der rechten Seite der Anwendung (rechts vom Dokument) angezeigt. Der Aktionsbereich kann im Dokument aber auch links, oben oder unten angezeigt werden.  
+- Sie können einen Aktionsbereich einer Anpassung auf Dokumentebene hinzufügen. Standardmäßig wird der Aktionsbereich auf der rechten Seite der Anwendung (rechts vom Dokument) angezeigt. Der Aktionsbereich kann im Dokument aber auch links, oben oder unten angezeigt werden.  
   
--   Sie können einen benutzerdefinierten Aufgabenbereich einem VSTO-Add-In hinzufügen. Benutzer können benutzerdefinierte Aufgabenbereiche an verschiedene Seiten des Anwendungsfensters andocken, oder sie können benutzerdefinierte Aufgabenbereiche an eine beliebige Position im Fenster ziehen.  
+- Sie können einen benutzerdefinierten Aufgabenbereich einem VSTO-Add-In hinzufügen. Benutzer können benutzerdefinierte Aufgabenbereiche an verschiedene Seiten des Anwendungsfensters andocken, oder sie können benutzerdefinierte Aufgabenbereiche an eine beliebige Position im Fenster ziehen.  
   
- Mit Aktionsbereichen und benutzerdefinierten Aufgabenbereichen werden Funktionen bereitgestellt, indem viele verschiedene Steuerelemente in den Bereichen enthalten sind, die Benutzer bei Aufgaben unterstützen, z. B. der Dateneingabe. Im Vergleich zu einer Menübandgruppe ermöglichen Aktionsbereiche und benutzerdefinierte Aufgabenbereiche eine deutlich größere Fläche für Text und Steuerelemente.  
+  Mit Aktionsbereichen und benutzerdefinierten Aufgabenbereichen werden Funktionen bereitgestellt, indem viele verschiedene Steuerelemente in den Bereichen enthalten sind, die Benutzer bei Aufgaben unterstützen, z. B. der Dateneingabe. Im Vergleich zu einer Menübandgruppe ermöglichen Aktionsbereiche und benutzerdefinierte Aufgabenbereiche eine deutlich größere Fläche für Text und Steuerelemente.  
   
- Weitere Informationen zu Aktionsbereichen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md). Weitere Informationen zu benutzerdefinierten Aufgabenbereichen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
+  Weitere Informationen zu Aktionsbereichen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md). Weitere Informationen zu benutzerdefinierten Aufgabenbereichen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Benutzerdefinierte Multifunktionsleisten-Benutzeroberfläche  
  Sie können die Menüband-Benutzeroberfläche so anpassen, dass Funktionen bereitgestellt werden, die Sie Anwendungen in Office hinzufügen. Das Menüband dient zum Organisieren von verwandten Befehlen (in Form von Steuerelementen), damit sie leichter zu finden sind. Sie können Ihre eigenen Menübandregisterkarten und -gruppen erstellen, um Benutzern Zugriff auf Funktionen zu gewähren, die Sie in Ihrer Projektmappe bereitstellen. Auf die meisten Funktionen, auf die in früheren Versionen des Microsoft Office-Systems über die Menüs und Symbolleisten zugegriffen wurde, kann jetzt über das Menüband zugegriffen werden.  

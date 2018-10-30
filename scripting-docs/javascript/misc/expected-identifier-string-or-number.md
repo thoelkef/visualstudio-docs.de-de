@@ -1,5 +1,5 @@
 ---
-title: Bezeichner, Zeichenfolge oder eine Zahl erwartet | Microsoft Docs
+title: Bezeichner, Zeichenfolge oder Zahl erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855130"
 ---
 # <a name="expected-identifier-string-or-number"></a>Es wurde ein Bezeichner, eine Zeichenfolge oder eine Zahl erwartet
-Sie verwendet falsche literal Syntax zum Deklarieren eines Objekts literal. Die Eigenschaften eines Objekts, das literal müssen es sich um einen Bezeichner, eine Zeichenfolge oder eine Zahl sein. Ein Objektliteral (auch als "Objektinitialisierer" bezeichnet) besteht aus einer durch Trennzeichen getrennte Liste von Eigenschaft-Wert-Paaren, die alle in Klammern eingeschlossen. Zum Beispiel:  
+Sie verwendet falsche literalen Syntax zum Deklarieren eines Objekts in Literalen. Die Eigenschaften eines Objekts, das literal müssen es sich um einen Bezeichner, eine Zeichenfolge oder eine Zahl sein. Ein Objektliteral (auch als einen "Objektinitialisierer" bezeichnet) besteht aus einer durch Trennzeichen getrennte Liste von Eigenschaft-Wert-Paaren, die alle in Klammern eingeschlossen. Zum Beispiel:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -36,7 +36,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass Sie die korrekte Syntax für Literale verwenden.  
+-   Stellen Sie sicher, dass Sie die richtige Syntax für Literale verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Kommaoperator (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

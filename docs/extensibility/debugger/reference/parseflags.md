@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Microsoft Docs
+title: PARSEFLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913006"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Gibt an, wie einen Ausdruck zu analysieren.  
@@ -49,7 +49,7 @@ public enum enum_PARSEFLAGS {
  Gibt an, dass der Ausdruck keine Anweisung ist.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Gibt an, dass der Ausdruck analysiert (und höher ausgewertet werden) als eine Adresse.  
+ Gibt an, dass der Ausdruck analysiert (und später ausgewertet werden) als eine Adresse.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
  Gibt an, dass während der Entwurfszeit der Ausdruck analysiert wird (d. h. bei ein Designer geöffnet ist).  

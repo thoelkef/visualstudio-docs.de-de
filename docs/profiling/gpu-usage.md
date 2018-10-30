@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 591cf2465d8d37b55c0b4d3fb11a5416fb04bf33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897524"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen. Mit dem Tool können Sie feststellen, ob die Leistung Ihrer App CPU- oder GPU-gebunden ist, und Sie erhalten Einblicke in eine effektivere Nutzung der Plattformhardware. GPU-Nutzung unterstützt Apps, die Direct3D 12, Direct3D 11 und Direct3D 10 verwenden. Andere Grafik-APIs, wie z. B. Direct2D oder OpenGL werden nicht unterstützt.  
@@ -26,52 +26,52 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 ## <a name="requirements"></a>Anforderungen  
  Im Folgenden werden Anforderungen für die Verwendung des GPU-Nutzungstools aufgeführt, die zusätzlich zu den Anforderungen der Grafikdiagnose gelten.  
   
--   Ein Grafikprozessor und Treiber, die die erforderliche zeitliche Timinginstrumentierung unterstützen.  
+- Ein Grafikprozessor und Treiber, die die erforderliche zeitliche Timinginstrumentierung unterstützen.  
   
-    > [!NOTE]
-    >  Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
+  > [!NOTE]
+  >  Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
   
- Weitere Informationen zu Anforderungen für die Grafikdiagnose finden Sie unter [Erste Schritte](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Weitere Informationen zu Anforderungen für die Grafikdiagnose finden Sie unter [Erste Schritte](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Verwenden des GPU-Nutzungstools  
  Wenn Sie Ihre App im GPU-Nutzungstool ausführen, erstellt Visual Studio eine Diagnosesitzung, die allgemeine Informationen zur Renderingleistung und GPU-Auslastung Ihrer App in Echtzeit in Diagrammen darstellt.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>So starten Sie das GPU-Nutzungstool:  
   
-1.  Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
+1. Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
   
-2.  Aktivieren Sie im Leistungs- und Diagnosehub das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild der Leistung Ihrer App zu erhalten.  
+2. Aktivieren Sie im Leistungs- und Diagnosehub das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild der Leistung Ihrer App zu erhalten.  
   
-     ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+    ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
+   > [!NOTE]
+   >  Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
   
-3.  Wählen Sie die blaue Schaltfläche **Start** am unteren Rand des Leistungs- und Diagnosehubs, um Ihre App unter den ausgewählten Tools auszuführen.  
+3. Wählen Sie die blaue Schaltfläche **Start** am unteren Rand des Leistungs- und Diagnosehubs, um Ihre App unter den ausgewählten Tools auszuführen.  
   
- Allgemeine Informationen, die in Echtzeit angezeigt werden, umfassen Frametiming, Framerate und GPU-Auslastung. Jedes dieser Datenelemente wird unabhängig voneinander in einem Diagramm dargestellt, es wird jedoch eine gemeinsamen Zeitskala verwendet, sodass Sie diese problemlos in Beziehung zueinander setzen können.  
+   Allgemeine Informationen, die in Echtzeit angezeigt werden, umfassen Frametiming, Framerate und GPU-Auslastung. Jedes dieser Datenelemente wird unabhängig voneinander in einem Diagramm dargestellt, es wird jedoch eine gemeinsamen Zeitskala verwendet, sodass Sie diese problemlos in Beziehung zueinander setzen können.  
   
- Die Diagramme **Framedauer (ms)** und **Frames pro Sekunde (FPS)** enthalten zwei rote, horizontale Linien, die Leistungsziele von 60 und 30 Frames pro Sekunde darstellen. Im Diagramm **Framedauer** überschreitet Ihre App das Leistungsziel, wenn sich das Diagramm unterhalb der Linie befindet, und verfehlt es, wenn sich das Diagramm oberhalb der Linie befindet. Im Diagramm „Frames pro Sekunde“ verhält es sich umgekehrt. Wenn sich das Diagramm oberhalb der Linie befindet, überschreitet die App das Leistungsziel, und wenn es sich unterhalb der Linie befindet, verfehlt sie das Leistungsziel. Diese Diagramme werden in erster Linie verwendet, um eine allgemeine Vorstellung der Leistung Ihrer App zu erhalten und ggf. Leistungseinbußen zu ermitteln, u.a. einen plötzlichen Abfall der Framerate oder einen Spitzenwert der GPU-Auslastung.  
+   Die Diagramme **Framedauer (ms)** und **Frames pro Sekunde (FPS)** enthalten zwei rote, horizontale Linien, die Leistungsziele von 60 und 30 Frames pro Sekunde darstellen. Im Diagramm **Framedauer** überschreitet Ihre App das Leistungsziel, wenn sich das Diagramm unterhalb der Linie befindet, und verfehlt es, wenn sich das Diagramm oberhalb der Linie befindet. Im Diagramm „Frames pro Sekunde“ verhält es sich umgekehrt. Wenn sich das Diagramm oberhalb der Linie befindet, überschreitet die App das Leistungsziel, und wenn es sich unterhalb der Linie befindet, verfehlt sie das Leistungsziel. Diese Diagramme werden in erster Linie verwendet, um eine allgemeine Vorstellung der Leistung Ihrer App zu erhalten und ggf. Leistungseinbußen zu ermitteln, u.a. einen plötzlichen Abfall der Framerate oder einen Spitzenwert der GPU-Auslastung.  
   
- Wenn Sie Ihre App im GPU-Nutzungstool ausführen, erfasst die Diagnosesitzung auch detaillierte Informationen zu den auf GPU ausgeführten Grafikereignissen. Diese Informationen werden verwendet, um einen präziseren Bericht zur Hardwarenutzung Ihrer App zu erstellen. Da es einige Zeit dauert, diesen Bericht anhand der erfassten Informationen zu generieren, steht dieser nur zur Verfügung, wenn die Diagnosesitzung das Erfassen von Informationen bereits abgeschlossen hat.  
+   Wenn Sie Ihre App im GPU-Nutzungstool ausführen, erfasst die Diagnosesitzung auch detaillierte Informationen zu den auf GPU ausgeführten Grafikereignissen. Diese Informationen werden verwendet, um einen präziseren Bericht zur Hardwarenutzung Ihrer App zu erstellen. Da es einige Zeit dauert, diesen Bericht anhand der erfassten Informationen zu generieren, steht dieser nur zur Verfügung, wenn die Diagnosesitzung das Erfassen von Informationen bereits abgeschlossen hat.  
   
- Wenn Sie sich ein Problem mit der Leistung oder Auslastung näher anschauen möchten, müssen Sie die Erfassung von Leistungsinformationen beenden, damit der Bericht generiert werden kann  
+   Wenn Sie sich ein Problem mit der Leistung oder Auslastung näher anschauen möchten, müssen Sie die Erfassung von Leistungsinformationen beenden, damit der Bericht generiert werden kann  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>So generieren Sie einen GPU- Nutzungsbericht und zeigen diesen an:  
   
-1.  Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Auflistung beenden**, oder drücken Sie oben links **Beenden**.  
+1. Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Auflistung beenden**, oder drücken Sie oben links **Beenden**.  
   
-     ![Erfassen Sie GPU- und CPU-Zeitsteuerungsinformationen.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+    ![Erfassen Sie GPU- und CPU-Zeitsteuerungsinformationen.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Die Auswahl kann bis zu drei Sekunden umfassen. Längere Abschnitte werden in Richtung Anfang gekürzt.  
+2. Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Die Auswahl kann bis zu drei Sekunden umfassen. Längere Abschnitte werden in Richtung Anfang gekürzt.  
   
-     ![Nach dem Erfassen, wählen Sie einen Bereich zum Anzeigen von Details](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+    ![Nach dem Erfassen, wählen Sie einen Bereich zum Anzeigen von Details](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Wählen Sie im unteren Bereich des Berichts den Link **Details anzeigen** in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen**, um eine detaillierte Zeitachse der Auswahl anzuzeigen.  
+3. Wählen Sie im unteren Bereich des Berichts den Link **Details anzeigen** in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen**, um eine detaillierte Zeitachse der Auswahl anzuzeigen.  
   
-     ![Nach dem Erfassen, mit ausgewähltem Bereich](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+    ![Nach dem Erfassen, mit ausgewähltem Bereich](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
- Es wird ein neues Dokument im Registerkartenformat mit dem Bericht geöffnet. Mithilfe des GPU-Nutzungsberichts können Sie sehen, wann ein Grafikereignis auf CPU gestartet wurde, wann es GPU erreicht und wie lange die Ausführung auf GPU gedauert hat. Anhand dieser Informationen können Sie Engpässe und Möglichkeiten für eine verbesserte Parallelität in Ihrem Code erkennen.  
+   Es wird ein neues Dokument im Registerkartenformat mit dem Bericht geöffnet. Mithilfe des GPU-Nutzungsberichts können Sie sehen, wann ein Grafikereignis auf CPU gestartet wurde, wann es GPU erreicht und wie lange die Ausführung auf GPU gedauert hat. Anhand dieser Informationen können Sie Engpässe und Möglichkeiten für eine verbesserte Parallelität in Ihrem Code erkennen.  
 
 <!-- VERSIONLESS -->
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exportieren zu GPUView oder Windows Performance Analyzer
@@ -95,7 +95,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
  Nachstehend finden Sie weitere Details:  
   
-|Filtersteuerelement|description|  
+|Filtersteuerelement|Beschreibung |  
 |--------------------|-----------------|  
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|  
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie hiermit bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|  
@@ -105,7 +105,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
  Die Liste der Ereignisse im unteren Bereich des GPU-Nutzungsberichts enthält detaillierte Informationen zu jedem Ereignis.  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Ereignisname**|Der Name des Grafikereignisses. Ein Ereignis entspricht in der Regel einem Ereignis auf einer CPU-Threadzeitachse und einem Ereignis auf einer GPU-Zeitachse.<br /><br /> Ereignisnamen weisen möglicherweise keine Attribute auf, wenn die GPU-Nutzung nicht den Namen eines Ereignisses bestimmen konnte. Weitere Informationen finden Sie unter dieser Tabelle.|  
 |**CPU-Start (ns)**|Die Zeit, zu der das Ereignis auf der CPU durch Aufrufen einer Direct3D-API initiiert wurde. Die Zeit wird in Nanosekunden relativ zum Start der Anwendung gemessen.|  

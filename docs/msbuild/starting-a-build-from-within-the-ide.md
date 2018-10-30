@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850060"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
 Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Artikel werden die Gründe für diese Anforderung beschrieben. Zudem wird die Prozedur erläutert.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Parallele Builds und Threads  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lässt parallele Builds zu, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
-  
+
  Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Diese Anforderung bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Verwenden von IVSBuildManagerAccessor  
  Im Code unten wird eine Methode veranschaulicht, mit der ein Projektsystem einen Build starten kann:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

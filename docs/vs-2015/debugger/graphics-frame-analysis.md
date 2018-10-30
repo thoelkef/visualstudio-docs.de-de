@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18b2143d46416ba339bffd4ff1b691c3a9e76fda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a12a6671df94e1ea477412f489fb349c28b60b9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891582"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 ## <a name="frame-analysis"></a>Frame-Analyse  
  Für die Frame-Analyse werden die Informationen verwendet, die zu Diagnosezwecken in einer Grafikprotokolldatei erfasst wurden – hier jedoch zu dem Zweck, die Renderingleistung zusammenzufassen. Die Leistungsinformationen werden während der Erfassung nicht im Protokoll gespeichert, aber später während der Frame-Analyse durch Timing von Ereignissen und Sammlung von Statistiken erstellt, wenn der Frame wiedergegeben wird. Dieser Ansatz weist einige Vorteile gegenüber der Aufzeichnung der Leistungsinformationen während der Erfassung auf:  
   
--   Die Frame-Analyse kann den Durchschnitt aus Ergebnissen mehrerer Abspielungen desselben Frames berechnen, um zu gewährleisten, dass die Leistungszusammenfassung statistisch sicher ist.  
+- Die Frame-Analyse kann den Durchschnitt aus Ergebnissen mehrerer Abspielungen desselben Frames berechnen, um zu gewährleisten, dass die Leistungszusammenfassung statistisch sicher ist.  
   
--   Die Frame-Analyse kann Leistungsinformationen für andere Hardwarekonfigurationen und Geräte generieren als diejenigen, in denen die Informationen erfasst wurden.  
+- Die Frame-Analyse kann Leistungsinformationen für andere Hardwarekonfigurationen und Geräte generieren als diejenigen, in denen die Informationen erfasst wurden.  
   
--   Die Frame-Analyse kann neue Leistungszusammenfassungen aus zuvor erfassten Informationen erstellen – z. B., wenn GPU-Treiber optimiert werden – oder zusätzliche Debuggingfunktionen bereitstellen.  
+- Die Frame-Analyse kann neue Leistungszusammenfassungen aus zuvor erfassten Informationen erstellen – z. B., wenn GPU-Treiber optimiert werden – oder zusätzliche Debuggingfunktionen bereitstellen.  
   
- Zusätzlich zu diesen Vorteilen kann die Frame-Analyse auch verwendet werden, um die Art zu ändern, in der der Frame während der Wiedergabe dargestellt wird, so dass er Informationen darüber darstellen kann, wie sich diese Änderungen auf die Rendering-Leistung einer App auswirken könnten. Sie können diese Informationen verwenden, um zwischen potenziellen Optimierungsstrategien zu wählen, ohne sie alle implementieren zu müssen, und dann alle Ergebnisse zu erfassen und miteinander zu vergleichen.  
+  Zusätzlich zu diesen Vorteilen kann die Frame-Analyse auch verwendet werden, um die Art zu ändern, in der der Frame während der Wiedergabe dargestellt wird, so dass er Informationen darüber darstellen kann, wie sich diese Änderungen auf die Rendering-Leistung einer App auswirken könnten. Sie können diese Informationen verwenden, um zwischen potenziellen Optimierungsstrategien zu wählen, ohne sie alle implementieren zu müssen, und dann alle Ergebnisse zu erfassen und miteinander zu vergleichen.  
   
- Obwohl die Frame-Analyse hauptsächlich den Zweck hat, eine schnellere Renderingleistung zu erreichen, kann sie auch helfen, eine bessere visuelle Qualität bei einem angegebenen Leistungsziel zu erreichen oder den GPU-Stromverbrauch zu reduzieren.  
+  Obwohl die Frame-Analyse hauptsächlich den Zweck hat, eine schnellere Renderingleistung zu erreichen, kann sie auch helfen, eine bessere visuelle Qualität bei einem angegebenen Leistungsziel zu erreichen oder den GPU-Stromverbrauch zu reduzieren.  
   
- Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
+  Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Verwenden der Frame-Analyse  
  Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie in der (.vsglog) grafikprotokolldokumentfenster, klicken Sie dann die **Frame-Analyse** Registerkarte.  
@@ -58,23 +58,23 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Einige Ergebnisse zeigen direkt an, wie die jeweilige Variante die Renderingleistung beeinflusst:  
   
--   Wenn sich bei der Variante "Bilineare Texturfilterung" Leistungssteigerungen ergeben, dann wird die Verwendung der bilinearen Texturfilterung in Ihrer App zu ähnlichen Leistungssteigerungen führen.  
+- Wenn sich bei der Variante "Bilineare Texturfilterung" Leistungssteigerungen ergeben, dann wird die Verwendung der bilinearen Texturfilterung in Ihrer App zu ähnlichen Leistungssteigerungen führen.  
   
--   Wenn sich bei der Variante "1x1 Viewport" Leistungssteigerungen ergeben, dann wird durch Verkleinerung der Renderziele in Ihrer App die Renderingleistung verbessert.  
+- Wenn sich bei der Variante "1x1 Viewport" Leistungssteigerungen ergeben, dann wird durch Verkleinerung der Renderziele in Ihrer App die Renderingleistung verbessert.  
   
--   Wenn sich bei der Variante "BC-Texturkomprimierung" Leistungssteigerungen ergeben, dann wird die Verwendung der BC-Texturkomprimierung in Ihrer App zu ähnlichen Leistungssteigerungen führen.  
+- Wenn sich bei der Variante "BC-Texturkomprimierung" Leistungssteigerungen ergeben, dann wird die Verwendung der BC-Texturkomprimierung in Ihrer App zu ähnlichen Leistungssteigerungen führen.  
   
--   Wenn sich bei der Variante 2xMSAA eine ähnliche Leistung wie bei der Variante 0xMSAA ergibt, können Sie 2xMSAA in Ihrer App aktivieren, um die Renderingqualität zu erhöhen, ohne Abstriche bei der Leistung machen zu müssen.  
+- Wenn sich bei der Variante 2xMSAA eine ähnliche Leistung wie bei der Variante 0xMSAA ergibt, können Sie 2xMSAA in Ihrer App aktivieren, um die Renderingqualität zu erhöhen, ohne Abstriche bei der Leistung machen zu müssen.  
   
- Andere Ergebnisse können eine noch tiefergehende, subtilere Bedeutung für die Leistung Ihrer App haben:  
+  Andere Ergebnisse können eine noch tiefergehende, subtilere Bedeutung für die Leistung Ihrer App haben:  
   
--   Wenn sich bei der Variante "1x1 Viewport" großer Leistungssteigerungen ergeben, verbraucht ihre App wahrscheinlich eine größere Füllrate, als verfügbar ist. Wenn sich bei dieser Variante keine Leistungssteigerungen ergeben, verarbeitet die App wahrscheinlich zu viele Scheitelpunkte.  
+- Wenn sich bei der Variante "1x1 Viewport" großer Leistungssteigerungen ergeben, verbraucht ihre App wahrscheinlich eine größere Füllrate, als verfügbar ist. Wenn sich bei dieser Variante keine Leistungssteigerungen ergeben, verarbeitet die App wahrscheinlich zu viele Scheitelpunkte.  
   
--   Wenn sich bei der Variante "16bpp-Renderzielformat" deutliche Leistungssteigerungen ergeben, verbraucht Ihre App wahrscheinlich zu viel Speicherbandbreite.  
+- Wenn sich bei der Variante "16bpp-Renderzielformat" deutliche Leistungssteigerungen ergeben, verbraucht Ihre App wahrscheinlich zu viel Speicherbandbreite.  
   
--   Wenn sich bei der Variante "Halbe/Viertel-Texturdimensionen" deutliche Leistungssteigerungen ergeben, belegen Ihre Texturen wahrscheinlich zu viel Speicher, verbrauchen zu viel Bandbreite oder verwenden den Texturcache ineffizient. Wenn sich bei dieser Variante keine Leistungsänderungen ergeben, können Sie wahrscheinlich auch größere und detailliertere Texturen verwenden, ohne Abstriche bei der Leistung machen zu müssen.  
+- Wenn sich bei der Variante "Halbe/Viertel-Texturdimensionen" deutliche Leistungssteigerungen ergeben, belegen Ihre Texturen wahrscheinlich zu viel Speicher, verbrauchen zu viel Bandbreite oder verwenden den Texturcache ineffizient. Wenn sich bei dieser Variante keine Leistungsänderungen ergeben, können Sie wahrscheinlich auch größere und detailliertere Texturen verwenden, ohne Abstriche bei der Leistung machen zu müssen.  
   
- Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte von Funktionsebene 9.2 oder höher unterstützen tiefenokklusionsabfragen (**okkludierte Pixel** Leistungsindikator) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
+  Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte von Funktionsebene 9.2 oder höher unterstützen tiefenokklusionsabfragen (**okkludierte Pixel** Leistungsindikator) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
   
 ### <a name="timeline-and-summary-table"></a>Zeitachse und Zusammenfassungstabelle  
  Standardmäßig werden die Zeitachse und die Zusammenfassungstabelle angezeigt und die anderen Abschnitte ausgeblendet.  
@@ -157,11 +157,11 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Da GPU-Hardwarezähler von keiner derzeit von Intel, AMD oder nVidia angebotenen Computer-GPU zuverlässig unterstützt werden, sammelt die Frame-Analyse von diesen keine Zähler. Allerdings sammelt die Frame-Analyse Hardware von folgenden GPUs, die sie zuverlässig unterstützen:  
   
--   Qualcomm-SOCs (alle, die Windows Phone unterstützen)  
+- Qualcomm-SOCs (alle, die Windows Phone unterstützen)  
   
--   nVidia T40 (Tegra4).  
+- nVidia T40 (Tegra4).  
   
- Keine andere Plattform, die die Frame-Analyse unterstützt, sammelt GPU-Hardwarezähler.  
+  Keine andere Plattform, die die Frame-Analyse unterstützt, sammelt GPU-Hardwarezähler.  
   
 > [!NOTE]
 >  Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.  

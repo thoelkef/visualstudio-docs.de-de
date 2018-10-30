@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844158"
 ---
 # <a name="layer-diagrams-guidelines"></a>Ebenendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>So entwickeln Sie vorhandene Abhängigkeiten zwischen Ebenen zurück  
   
--   Wählen Sie eine Ebene oder mehrere Ebenen, mit der rechten Maustaste in der ausgewählten Ebene, und klicken Sie dann auf **Abhängigkeiten generieren**.  
+- Wählen Sie eine Ebene oder mehrere Ebenen, mit der rechten Maustaste in der ausgewählten Ebene, und klicken Sie dann auf **Abhängigkeiten generieren**.  
   
- In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
+  In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
   
 ##  <a name="EditArchitecture"></a> Bearbeiten von Ebenen und Abhängigkeiten auf den vorgesehenen Entwurf anzeigen  
  Um die die geplanten Änderungen an Ihrem System oder der vorgesehenen Architektur zu beschreiben, verwenden Sie die folgenden Schritte zum Bearbeiten des Ebenendiagramms. Sie können vor dem Erweitern des Codes ggf. auch einige Refactoringänderungen vornehmen, um die Codestruktur zu verbessern. Finden Sie unter [Verbessern der Struktur des Codes](#Improving).  
@@ -151,11 +151,11 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 ##  <a name="UpdateCode"></a> Aktualisieren Sie den Code, um ihn an die neue Architektur anzupassen  
  Normalerweise treten Fehler auf, wenn Sie den Code zum ersten Mal anhand eines aktualisierten Ebenendiagramms überprüfen. Diese Fehler können mehrere Ursachen haben:  
   
--   Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.  
+- Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.  
   
--   Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.  
+- Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.  
   
- Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung keine Fehler mehr angezeigt werden. Dies ist normalerweise ein iterativer Vorgang. Weitere Informationen zu diesen Fehlern finden Sie unter [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md).  
+  Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung keine Fehler mehr angezeigt werden. Dies ist normalerweise ein iterativer Vorgang. Weitere Informationen zu diesen Fehlern finden Sie unter [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Beim Entwickeln oder Umgestalten des Codes müssen Sie möglicherweise neue Artefakte mit dem Ebenendiagramm verknüpfen. Dies ist jedoch möglicherweise nicht erforderlich, wenn Ebenen z. B. vorhandene Namespaces darstellen und diesen Namespaces mit dem neuen Code lediglich weitere Elemente hinzugefügt werden.  

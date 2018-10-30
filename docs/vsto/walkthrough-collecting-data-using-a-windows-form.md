@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900474"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Exemplarische Vorgehensweise: Sammeln von Daten mithilfe eines Windows-Formulars
   In dieser exemplarischen Vorgehensweise wird das Öffnen eines Windows Form aus einer Anpassung auf Dokumentebene für Microsoft Office Excel, das Abfragen von Benutzerinformationen und das Schreiben dieser Informationen in eine Zelle des Arbeitsblatts beschrieben.  
@@ -32,7 +32,7 @@ ms.locfileid: "35672296"
   
  Obwohl in dieser exemplarischen Vorgehensweise speziell ein Projekt auf Dokumentebene für Excel verwendet wird, gelten die Konzepte in dieser exemplarischen Vorgehensweise auch für andere Office-Projekte.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -70,41 +70,41 @@ ms.locfileid: "35672296"
   
 ### <a name="to-add-a-windows-form"></a>So fügen Sie ein Windows Form hinzu  
   
-1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **WinFormInput**aus.  
+1. Wählen Sie im **Projektmappen-Explorer** das Projekt **WinFormInput**aus.  
   
-2.  Klicken Sie im Menü **Projekt** auf **Windows Form hinzufügen**.  
+2. Klicken Sie im Menü **Projekt** auf **Windows Form hinzufügen**.  
   
-3.  Nennen Sie das Formular **GetInputString.vb** bzw. **GetInputString.cs**, und klicken Sie anschließend auf **Hinzufügen**.  
+3. Nennen Sie das Formular **GetInputString.vb** bzw. **GetInputString.cs**, und klicken Sie anschließend auf **Hinzufügen**.  
   
-     Das neue Formular wird im Designer geöffnet.  
+    Das neue Formular wird im Designer geöffnet.  
   
-4.  Fügen Sie dem Formular eine <xref:System.Windows.Forms.TextBox> und eine <xref:System.Windows.Forms.Button> hinzu.  
+4. Fügen Sie dem Formular eine <xref:System.Windows.Forms.TextBox> und eine <xref:System.Windows.Forms.Button> hinzu.  
   
-5.  Markieren Sie die Schaltfläche, suchen Sie im Fenster **Eigenschaften** die Eigenschaft **Text** , und ändern Sie den Text in **OK**.  
+5. Markieren Sie die Schaltfläche, suchen Sie im Fenster **Eigenschaften** die Eigenschaft **Text** , und ändern Sie den Text in **OK**.  
   
- Fügen Sie anschließend `ThisWorkbook.vb` oder `ThisWorkbook.cs` Code hinzu, um die Benutzerinformationen abzufragen.  
+   Fügen Sie anschließend `ThisWorkbook.vb` oder `ThisWorkbook.cs` Code hinzu, um die Benutzerinformationen abzufragen.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Die Windows-Formular und das Erfassen von Informationen anzuzeigen  
  Erstellen Sie eine Instanz des Windows Form `GetInputString` , zeigen Sie diese an, und schreiben Sie dann die Benutzerinformationen in eine Zelle im Arbeitsblatt.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>So zeigen Sie das Formular an und fragen die Informationen ab  
   
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisWorkbook.vb** bzw. **ThisWorkbook.cs**, und klicken Sie dann auf **Code anzeigen**.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisWorkbook.vb** bzw. **ThisWorkbook.cs**, und klicken Sie dann auf **Code anzeigen**.  
   
-2.  Fügen Sie im <xref:Microsoft.Office.Tools.Excel.Workbook.Open> -Ereignishandler von `ThisWorkbook`den folgenden Code hinzu, um für das Formular `GetInputString` eine Variable zu deklarieren und anschließend das Formular anzuzeigen.  
+2. Fügen Sie im <xref:Microsoft.Office.Tools.Excel.Workbook.Open> -Ereignishandler von `ThisWorkbook`den folgenden Code hinzu, um für das Formular `GetInputString` eine Variable zu deklarieren und anschließend das Formular anzuzeigen.  
   
-    > [!NOTE]  
-    >  In C# müssen Sie einen Ereignishandler hinzufügen, wie im <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> -Ereignis unten dargestellt. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  In C# müssen Sie einen Ereignishandler hinzufügen, wie im <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> -Ereignis unten dargestellt. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Erstellen Sie eine Methode mit dem Namen `WriteStringToCell` , die Text in einen benannten Bereich schreibt. Diese Methode wird vom Formular aufgerufen, und die Benutzereingabe wird an das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement `formInput`in Zelle **A1**übergeben.  
+3. Erstellen Sie eine Methode mit dem Namen `WriteStringToCell` , die Text in einen benannten Bereich schreibt. Diese Methode wird vom Formular aufgerufen, und die Benutzereingabe wird an das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement `formInput`in Zelle **A1**übergeben.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Fügen Sie dem Formular anschließend Code hinzu, um das Klickereignis der Schaltfläche zu behandeln.  
+   Fügen Sie dem Formular anschließend Code hinzu, um das Klickereignis der Schaltfläche zu behandeln.  
   
 ## <a name="send-information-to-the-worksheet"></a>Senden von Informationen in das Arbeitsblatt  
   

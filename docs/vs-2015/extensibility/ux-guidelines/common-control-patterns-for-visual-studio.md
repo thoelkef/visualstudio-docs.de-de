@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860759"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224041"
   
 ##### <a name="visual-style"></a>Visuellen Stil  
   
--   Wasserzeichen sollte im Fenster horizontal zentriert werden soll.  
+- Wasserzeichen sollte im Fenster horizontal zentriert werden soll.  
   
--   Wasserzeichen sollte zentriert ausgerichtet, nicht linksbündig ausgerichtet.  
+- Wasserzeichen sollte zentriert ausgerichtet, nicht linksbündig ausgerichtet.  
   
--   Wasserzeichen können vertikal zentriert oder im oberen Bereich des Bereichs positioniert werden. Wenn im oberen Bereich des Bereichs befindet, muss genügend Speicherplatz sein vorhanden oben, damit das Wasserzeichen abhebt.  
+- Wasserzeichen können vertikal zentriert oder im oberen Bereich des Bereichs positioniert werden. Wenn im oberen Bereich des Bereichs befindet, muss genügend Speicherplatz sein vorhanden oben, damit das Wasserzeichen abhebt.  
   
--   Verwenden der `Environment.GrayText` token "und" standard Umgebungsschriftart Farbe. Links sollten die standardmäßigen freigegebenen Link-Token verwenden: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, und `Environment.PanelHyperlinkDisabled`.  
+- Verwenden der `Environment.GrayText` token "und" standard Umgebungsschriftart Farbe. Links sollten die standardmäßigen freigegebenen Link-Token verwenden: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, und `Environment.PanelHyperlinkDisabled`.  
   
--   Wasserzeichen können im Hintergrund nicht ausgewählt werden  
+- Wasserzeichen können im Hintergrund nicht ausgewählt werden  
   
--   Falls möglich, sollten Sie Links in der Grenzwert auf die Benutzer beginnen können.  
+- Falls möglich, sollten Sie Links in der Grenzwert auf die Benutzer beginnen können.  
   
- ![Wasserzeichen von Text in einem Designer-Fenster](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702-05_Watermark1")  
+  ![Wasserzeichen von Text in einem Designer-Fenster](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702-05_Watermark1")  
   
- ![Wasserzeichen von Text in einem Toolfenster](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702-06_Watermark2")  
+  ![Wasserzeichen von Text in einem Toolfenster](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702-06_Watermark2")  
   
- **Beispiele für Wasserzeichentext in Visual Studio**  
+  **Beispiele für Wasserzeichentext in Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Schaltflächen und Links  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224041"
   
  Wann sollte die Befehlsschaltflächen verwenden?  
   
--   Primären Befehle  
+- Primären Befehle  
   
--   Anzeigen von Windows verwendet, um Eingaben zu erfassen oder Entscheidungen, auch wenn sie sekundäre Befehle  
+- Anzeigen von Windows verwendet, um Eingaben zu erfassen oder Entscheidungen, auch wenn sie sekundäre Befehle  
   
--   Destruktive oder Rückgängig-Aktionen  
+- Destruktive oder Rückgängig-Aktionen  
   
--   Engagement-Schaltflächen im Assistenten und Seite-flows  
+- Engagement-Schaltflächen im Assistenten und Seite-flows  
   
- Vermeiden Sie die Schaltflächen im Toolfenster, oder wenn Sie mehr als zwei Wörter für die Bezeichnung benötigen. Links können längere Beschriftungen haben.  
+  Vermeiden Sie die Schaltflächen im Toolfenster, oder wenn Sie mehr als zwei Wörter für die Bezeichnung benötigen. Links können längere Beschriftungen haben.  
   
- Wann sollte die Links zu verwenden?  
+  Wann sollte die Links zu verwenden?  
   
--   Navigation zu einem anderen Fenster, ein Dokument oder eine Webseite  
+- Navigation zu einem anderen Fenster, ein Dokument oder eine Webseite  
   
--   Situationen, in denen eine längere Bezeichnung oder einen kurzen Satz zum Beschreiben der Zweck der jeweiligen Aktion erforderlich.  
+- Situationen, in denen eine längere Bezeichnung oder einen kurzen Satz zum Beschreiben der Zweck der jeweiligen Aktion erforderlich.  
   
--   Raum, in denen eine Schaltfläche die Benutzeroberfläche überlasten würden, vorausgesetzt, dass die Aktion nicht destruktive oder nicht umkehrbar ist  
+- Raum, in denen eine Schaltfläche die Benutzeroberfläche überlasten würden, vorausgesetzt, dass die Aktion nicht destruktive oder nicht umkehrbar ist  
   
--   Aufhebung Hervorhebungseffekt sekundäre Befehle in Situationen mit zahlreichen Befehlen  
+- Aufhebung Hervorhebungseffekt sekundäre Befehle in Situationen mit zahlreichen Befehlen  
   
 #### <a name="examples"></a>Beispiele  
  ![Links für infoleistenbefehle nach Statusmeldung](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703-01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224041"
   
  Wenn die kurze nur mit den Auslassungszeichen-Schaltfläche verwenden:  
   
--   Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie z. B., wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden (**& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").  
+- Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie z. B., wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden (**& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").  
   
--   In einem engen Dialogfeld, oder wenn besteht keine angemessene Möglichkeit, auf die Schaltfläche "lange" abgelegt.  
+- In einem engen Dialogfeld, oder wenn besteht keine angemessene Möglichkeit, auf die Schaltfläche "lange" abgelegt.  
   
--   Wenn die Schaltfläche in einem Datenraster-Steuerelement angezeigt wird.  
+- Wenn die Schaltfläche in einem Datenraster-Steuerelement angezeigt wird.  
   
- Richtlinien für die mithilfe der Schaltfläche:  
+  Richtlinien für die mithilfe der Schaltfläche:  
   
--   Verwenden Sie keinen Zugriffsschlüssel. Mithilfe der Tastaturfokus für den Zugriff auf muss der Benutzer aus dem angrenzenden Steuerelement Registerkarte. Stellen Sie sicher, dass die Aktivierreihenfolge ist, dass Schaltfläche "Durchsuchen" sofort nach dem Feld liegt, die sie eingeben wird. Verwenden Sie niemals einen Unterstrich, unter dem ersten Zeitraum.  
+- Verwenden Sie keinen Zugriffsschlüssel. Mithilfe der Tastaturfokus für den Zugriff auf muss der Benutzer aus dem angrenzenden Steuerelement Registerkarte. Stellen Sie sicher, dass die Aktivierreihenfolge ist, dass Schaltfläche "Durchsuchen" sofort nach dem Feld liegt, die sie eingeben wird. Verwenden Sie niemals einen Unterstrich, unter dem ersten Zeitraum.  
   
--   Legen Sie die Microsoft Active Accessibility (MSAA) **Namen** Eigenschaft **durchsuchen...**  (einschließlich der drei Punkte) damit, die Bildschirm Leser liest es als "Durchsuchen" und nicht "Punkt-Punkt-Punkt" oder "Punkt-Punkt-Punkt." Für verwaltete Steuerelemente, bedeutet dies die Einstellung der **Control.AccessibleName** Eigenschaft.  
+- Legen Sie die Microsoft Active Accessibility (MSAA) **Namen** Eigenschaft **durchsuchen...**  (einschließlich der drei Punkte) damit, die Bildschirm Leser liest es als "Durchsuchen" und nicht "Punkt-Punkt-Punkt" oder "Punkt-Punkt-Punkt." Für verwaltete Steuerelemente, bedeutet dies die Einstellung der **Control.AccessibleName** Eigenschaft.  
   
--   Verwenden Sie niemals ein Auslassungszeichen **[...]**  Schaltfläche für alle Elemente mit Ausnahme von einer Aktion "Durchsuchen". Angenommen, Sie müssen eine **[Neu]**  Schaltfläche aber nicht ausreichend Platz für den Text ein, und klicken Sie dann das Dialogfeld muss geändert werden.  
+- Verwenden Sie niemals ein Auslassungszeichen **[...]**  Schaltfläche für alle Elemente mit Ausnahme von einer Aktion "Durchsuchen". Angenommen, Sie müssen eine **[Neu]**  Schaltfläche aber nicht ausreichend Platz für den Text ein, und klicken Sie dann das Dialogfeld muss geändert werden.  
   
 ##### <a name="sizing-and-spacing"></a>Größenanpassung und Abstand  
  ![Ändern der Größe &#91;durchsuchen... &#93; Schaltflächen](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703-06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224041"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (Strukturansicht und Rasteransicht)  
  Ein Rastersteuerelement ist ein komplexes Steuerelement enthält eine Strukturansicht, in einem Raster an. Erweitern reduzieren, und Navigieren durch die Struktur sollte die gleichen Tastenkombinationen Befehle als eine Strukturansicht mit den folgenden Ergänzungen beachten:  
   
--   **Pfeil nach rechts:** erweitern Sie den Knoten. Nachdem der Knoten erweitert ist, soll er weiterhin auf die nächste Spalte auf der rechten Seite navigieren. Navigation sollte am Ende der Zeile zu beenden.  
+- **Pfeil nach rechts:** erweitern Sie den Knoten. Nachdem der Knoten erweitert ist, soll er weiterhin auf die nächste Spalte auf der rechten Seite navigieren. Navigation sollte am Ende der Zeile zu beenden.  
   
--   **Registerkarte ":** Werkzeug dient zum Navigieren zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.  
+- **Registerkarte ":** Werkzeug dient zum Navigieren zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.  
   
--   **Umschalt + Tab:** Werkzeug dient zum Navigieren zur nächsten Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.  
+- **Umschalt + Tab:** Werkzeug dient zum Navigieren zur nächsten Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.  
   
- ![Rastersteuerelement in Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705-6_Trid")  
+  ![Rastersteuerelement in Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705-6_Trid")  
   
- **Ein Rastersteuerelement in Visual Studio**
+  **Ein Rastersteuerelement in Visual Studio**
 

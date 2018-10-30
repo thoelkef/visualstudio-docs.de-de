@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940449"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests für die codierte UI
 
@@ -33,64 +33,64 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Schritt 1: Erstellen Sie einen Test für die codierte UI
 
-1.  Erstellen eines Projekts.
+1. Erstellen eines Projekts.
 
-     ![Erstellen eines Testprojekts der programmierten UI](../test/media/cuit_datadriven_.png)
+    ![Erstellen eines Testprojekts der programmierten UI](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
-2.  Wählen Sie das **Aufzeichnen der Aktionen** aus.
+2. Wählen Sie das **Aufzeichnen der Aktionen** aus.
 
-     ![Wählen Sie die Aktionen aufzuzeichnen](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![Wählen Sie die Aktionen aufzuzeichnen](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  Öffnen Sie die Rechner-Anwendung und starten Sie die Testaufzeichnung.
+3. Öffnen Sie die Rechner-Anwendung und starten Sie die Testaufzeichnung.
 
-     ![Aufzeichnungsaktionen](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![Aufzeichnungsaktionen](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  Fügen Sie 1 plus 2 hinzu, halten Sie die Aufzeichnung an und generieren Sie die Testmethode. Später werden wir die Werte dieser Benutzereingaben mit Werten aus einer Datendatei ersetzen.
+4. Fügen Sie 1 plus 2 hinzu, halten Sie die Aufzeichnung an und generieren Sie die Testmethode. Später werden wir die Werte dieser Benutzereingaben mit Werten aus einer Datendatei ersetzen.
 
-     ![Erstellen einer Test-Methode](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Erstellen einer Test-Methode](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     Schließen Sie den Test-Generator. Die Methode wird dem Test hinzugefügt:
+    Schließen Sie den Test-Generator. Die Methode wird dem Test hinzugefügt:
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: **STRG**+**R**,**T**)
+5. Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: **STRG**+**R**,**T**)
 
-     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des **Test-Explorers** angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **Test** die Option **Windows** und anschließend **Test-Explorer** aus.
+    Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des **Test-Explorers** angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **Test** die Option **Windows** und anschließend **Test-Explorer** aus.
 
-6.  Da eine Datenquelle auch zur Assertion von Parameterwerten verwendet werden kann, die vom Test zur Überprüfung erwarteter Werte verwendet wird, fügen wir eine Assertion hinzu, um zu überprüfen, dass die Summe der beiden Zahlen korrekt ist. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, wählen Sie **Code für den Coded UI-Test generieren** und anschließend **Coded UI-Test-Generator verwenden** aus.
+6. Da eine Datenquelle auch zur Assertion von Parameterwerten verwendet werden kann, die vom Test zur Überprüfung erwarteter Werte verwendet wird, fügen wir eine Assertion hinzu, um zu überprüfen, dass die Summe der beiden Zahlen korrekt ist. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, wählen Sie **Code für den Coded UI-Test generieren** und anschließend **Coded UI-Test-Generator verwenden** aus.
 
-     Ordnen Sie das Text-Steuerelement im Rechner zu, der die Summe anzeigt.
+    Ordnen Sie das Text-Steuerelement im Rechner zu, der die Summe anzeigt.
 
-     ![Ordnen Sie das Benutzeroberflächen-Textsteuerelement zu](../test/media/cuit_datadriven_addassertion.png)
+    ![Ordnen Sie das Benutzeroberflächen-Textsteuerelement zu](../test/media/cuit_datadriven_addassertion.png)
 
-7.  Fügen Sie eine Assertion hinzu, die überprüft, ob der Wert der Summe korrekt ist. Wählen Sie die Eigenschaft **DisplayText**, die den Wert **3** hat, und wählen Sie anschließend **Assertion hinzufügen** aus. Verwenden Sie den Vergleichsoperator **AreEqual**, und stellen Sie sicher, dass der Vergleichswert **3** ist.
+7. Fügen Sie eine Assertion hinzu, die überprüft, ob der Wert der Summe korrekt ist. Wählen Sie die Eigenschaft **DisplayText**, die den Wert **3** hat, und wählen Sie anschließend **Assertion hinzufügen** aus. Verwenden Sie den Vergleichsoperator **AreEqual**, und stellen Sie sicher, dass der Vergleichswert **3** ist.
 
-     ![Konfigurieren der Assertion](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![Konfigurieren der Assertion](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  Nach dem Konfigurieren der Assertion generieren Sie erneut Code aus dem Generator. Dies erstellt eine neue Methode für die Validierung.
+8. Nach dem Konfigurieren der Assertion generieren Sie erneut Code aus dem Generator. Dies erstellt eine neue Methode für die Validierung.
 
-     ![Erstellen der Assertionsmethode](../test/media/cuit_datadriven_assertiongencode.png)
+    ![Erstellen der Assertionsmethode](../test/media/cuit_datadriven_assertiongencode.png)
 
-     Da die Methode `ValidateSum` die Ergebnisse der Methode `AddNumbers` überprüft, verschieben Sie es an das Ende des Codeblocks.
+    Da die Methode `ValidateSum` die Ergebnisse der Methode `AddNumbers` überprüft, verschieben Sie es an das Ende des Codeblocks.
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. Stellen Sie sicher, dass der Test mithilfe der Methode `ValidateSum()` ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: **STRG**+**R**,**T**)
 

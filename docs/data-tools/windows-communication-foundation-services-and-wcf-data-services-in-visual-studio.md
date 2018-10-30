@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915931"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft-Technologien für die Erstellung verteilter Anwendungen. Dieses Thema enthält eine Einführung in Dienste vom Standpunkt der Visual Studio. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
@@ -234,16 +234,16 @@ Um dieses Problem zu vermeiden, werden die Typen in referenzierten Assemblys sta
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
-|-----------|-----------------|
-|[Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von WCF-Diensten in Visual Studio.|
-|[Exemplarische Vorgehensweise: Erstellen einen WCF-Datendienst mit WPF und Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in Visual Studio.|
-|[Verwenden der WCF-Entwicklungstools](/dotnet/framework/wcf/using-the-wcf-development-tools)|Erläutert das Erstellen und Testen von WCF-Diensten in Visual Studio.|
-||[Gewusst wie: hinzufügen, aktualisieren oder Entfernen eines Verweises WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie referenziert und verwendet [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in Visual Studio.|
-|[Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md)|Dienstverweise und vermeiden sie, dass bietet einige häufige Fehler, die auftreten können.|
-|[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt allgemeine Debugprobleme und Techniken, die beim Debuggen von WCF-Diensten auftreten können.|
-|[Exemplarische Vorgehensweise: Erstellen einer n-Tier-datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|
-|[Konfigurieren eines Dienstverweises (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Elemente der Benutzeroberfläche von der **Dienstverweis konfigurieren** Dialogfeld.|
+| Titel | Beschreibung |
+| - | - |
+| [Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von WCF-Diensten in Visual Studio. |
+| [Exemplarische Vorgehensweise: Erstellen einen WCF-Datendienst mit WPF und Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in Visual Studio. |
+| [Verwenden der WCF-Entwicklungstools](/dotnet/framework/wcf/using-the-wcf-development-tools) | Erläutert das Erstellen und Testen von WCF-Diensten in Visual Studio. |
+| | [Gewusst wie: hinzufügen, aktualisieren oder Entfernen eines Verweises WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md) | Dienstverweise und vermeiden sie, dass bietet einige häufige Fehler, die auftreten können. |
+| [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md) | Beschreibt allgemeine Debugprobleme und Techniken, die beim Debuggen von WCF-Diensten auftreten können. |
+| [Exemplarische Vorgehensweise: Erstellen einer n-Tier-datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte. |
+| [Konfigurieren eines Dienstverweises (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md) | Beschreibt die Elemente der Benutzeroberfläche von der **Dienstverweis konfigurieren** Dialogfeld. |
 
 ## <a name="reference"></a>Referenz
 

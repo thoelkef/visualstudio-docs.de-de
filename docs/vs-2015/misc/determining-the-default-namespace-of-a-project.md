@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950949"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Ermitteln des Standardnamespaces eines Projekts
 Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], wenn die `CustomToolNamespace` Eigenschaft wird festgelegt, auf die Eingabedatei, klicken Sie dann den Wert der `CustomToolNamespace` wird der Wert, der der Namespace-Standardparameter, die an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Methode. Andernfalls die `wszDefaultNamespace` übergebene Parameter `Generate` ist immer gleich den Stamm-Namespace. Weitere Informationen zu Namespaces finden Sie unter [Namespace Schlüsselwörter](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], wenn die `CustomToolNamespace
   
  Eine Ausnahme von dieser Regel tritt auf, wenn der Hierarchiekette Ordner für Webverweise enthält. Z. B. wenn:  
   
--   FolderC wurden Ordner für Webverweise, der Namespace **CL9. FolderC**.  
+- FolderC wurden Ordner für Webverweise, der Namespace **CL9. FolderC**.  
   
--   FolderB wurden Ordner für Webverweise, der Namespace **CL9. FolderB.FolderC**.  
+- FolderB wurden Ordner für Webverweise, der Namespace **CL9. FolderB.FolderC**.  
   
- Der Namespace verwendet, also das folgende Format:  
+  Der Namespace verwendet, also das folgende Format:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

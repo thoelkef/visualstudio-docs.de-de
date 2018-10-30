@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827713"
 ---
 # <a name="set-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 
@@ -97,15 +97,15 @@ Vorteile und Risiken von selbstsignierten Zertifikaten finden Sie in der Windows
 So erstellen Sie ein selbstsigniertes Zertifikat:
 
 1. Erstellen Sie eine SSH-Verbindung, oder melden Sie sich auf dem Linux-Computer an.
-1. Installieren Sie das `ssl-cert`-Paket:
+2. Installieren Sie das `ssl-cert`-Paket:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Führen Sie `make-ssl-cert` aus, um das selbstsignierte SSL-Standardzertifikat zu generieren:
+3. Führen Sie `make-ssl-cert` aus, um das selbstsignierte SSL-Standardzertifikat zu generieren:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Konvertiert die generierte Schlüssel- und die PEM-Datei in PFX. Die generierten PFX-Dateien sollten sich im Basisordner befinden:
+4. Konvertiert die generierte Schlüssel- und die PEM-Datei in PFX. Die generierten PFX-Dateien sollten sich im Basisordner befinden:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ Um R-Code auszuführen, muss auf dem Remotecomputer ein R-Interpreter wie folgt 
 
 1. Laden Sie einen der folgenden herunter, und installieren Sie ihn:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R für Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R für Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Beide verfügen über identische Funktionen, aber Microsoft R Open profitiert von zusätzlichen hardwarebeschleunigten Bibliotheken für Lineare Algebra, die durch die [Intel Math Kernel Library](https://software.intel.com/intel-mkl) bereitgestellt werden.
+     Beide verfügen über identische Funktionen, aber Microsoft R Open profitiert von zusätzlichen hardwarebeschleunigten Bibliotheken für Lineare Algebra, die durch die [Intel Math Kernel Library](https://software.intel.com/intel-mkl) bereitgestellt werden.
 
-1. Führen Sie den [R Services-Installer](https://aka.ms/rtvs-services) aus, und starten Sie den Computer neu, wenn Sie dazu aufgefordert werden. Der Installer führt die folgenden Aktionen aus:
+2. Führen Sie den [R Services-Installer](https://aka.ms/rtvs-services) aus, und starten Sie den Computer neu, wenn Sie dazu aufgefordert werden. Der Installer führt die folgenden Aktionen aus:
 
     - Erstellen Sie einen Ordner unter *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*, und kopieren Sie alle erforderlichen Binärdateien dorthin.
     - `RHostBrokerService` und `RUserProfileService` installieren und für den automatischen Start konfigurieren
@@ -160,12 +160,12 @@ Um R-Code auszuführen, muss auf dem Remotecomputer ein R-Interpreter wie folgt 
 
 1. Laden Sie einen der folgenden herunter, und installieren Sie ihn:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R für Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R für Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Beide verfügen über identische Funktionen, aber Microsoft R Open profitiert von zusätzlichen hardwarebeschleunigten Bibliotheken für Lineare Algebra, die durch die [Intel Math Kernel Library](https://software.intel.com/intel-mkl) bereitgestellt werden.
+     Beide verfügen über identische Funktionen, aber Microsoft R Open profitiert von zusätzlichen hardwarebeschleunigten Bibliotheken für Lineare Algebra, die durch die [Intel Math Kernel Library](https://software.intel.com/intel-mkl) bereitgestellt werden.
 
-1. Führen Sie die Anweisungen unter [Remote R Service für Linux](setting-up-remote-r-service-on-linux.md) aus, die physische Ubuntu-Computer, Azure Ubuntu-VMs, Windows-Subsystem für Linux (WSL) und Dockercontainer abdecken, einschließlich derer, die im Azure Container-Repository ausgeführt werden.
+2. Führen Sie die Anweisungen unter [Remote R Service für Linux](setting-up-remote-r-service-on-linux.md) aus, die physische Ubuntu-Computer, Azure Ubuntu-VMs, Windows-Subsystem für Linux (WSL) und Dockercontainer abdecken, einschließlich derer, die im Azure Container-Repository ausgeführt werden.
 
 ## <a name="configure-r-services"></a>Konfigurieren von R Services
 

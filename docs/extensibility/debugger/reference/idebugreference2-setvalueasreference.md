@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: IDebugReference2::SetValueAsReference | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce62358df758b7f4cf3ef0883cf0ac457aaf1f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96245b7089ddef7d465d01203ca8b540c618b05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820251"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Legt den Wert eines Verweises aus eines anderen Verweises. Für zukünftige Verwendung reserviert.  
+Legt den Wert eines Verweises von einem anderen Verweis. Für zukünftige Verwendung reserviert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,10 +53,10 @@ int SetValueAsReference (
  [in] Die Anzahl der Verweise im Array.  
   
  `pValue`  
- [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Wert der Eigenschaft festgelegt.  
+ [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Eigenschaftswert festzulegen.  
   
  `dwTimeout`  
- [in] Maximale Zeit in Millisekunden, bis vor der Rückgabe dieser Methode. Verwendung `INFINITE` zum unendlichen Warten angibt.  
+ [in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt immer `E_NOTIMPL` zurück.  

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853167"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
 Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] feststellt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:  
@@ -48,35 +48,35 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>So erstellen Sie einen benutzerdefinierten Dienst zum Binden des auf dem ASP.NET Development Server gehosteten WCF-Diensts  
   
-1.  Öffnen Sie die Datei Web.config des WCF-Diensts, der die Ausnahme verursacht.  
+1. Öffnen Sie die Datei Web.config des WCF-Diensts, der die Ausnahme verursacht.  
   
-2.  Geben Sie die folgenden Informationen in die Datei Web.config ein.  
+2. Geben Sie die folgenden Informationen in die Datei Web.config ein.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Speichern und schließen Sie die Datei Web.config.  
+3. Speichern und schließen Sie die Datei Web.config.  
   
-4.  Ändern Sie im Code für den WCF- oder Webdienst den Endpunktwert wie folgt:  
+4. Ändern Sie im Code für den WCF- oder Webdienst den Endpunktwert wie folgt:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Dadurch wird sichergestellt, dass der Dienst die benutzerdefinierte Bindung verwendet.  
+    Dadurch wird sichergestellt, dass der Dienst die benutzerdefinierte Bindung verwendet.  
   
-5.  Fügen Sie in der Webanwendung, die auf den Dienst zugreift, einen Verweis auf den Dienst hinzu. (Fügen Sie dem Dienst im Dialogfeld **Dienstverweis hinzufügen** einen Verweis hinzu, und verfahren Sie dabei wie beim ursprünglichen Dienst, der die Ausnahme generiert hat.)  
+5. Fügen Sie in der Webanwendung, die auf den Dienst zugreift, einen Verweis auf den Dienst hinzu. (Fügen Sie dem Dienst im Dialogfeld **Dienstverweis hinzufügen** einen Verweis hinzu, und verfahren Sie dabei wie beim ursprünglichen Dienst, der die Ausnahme generiert hat.)  
   
- Mithilfe der folgenden Schritte können Sie die NTLM-Sicherheit bei Verwendung eines WCF-Dienstverweises deaktivieren.  
+   Mithilfe der folgenden Schritte können Sie die NTLM-Sicherheit bei Verwendung eines WCF-Dienstverweises deaktivieren.  
   
 > [!IMPORTANT]
 >  Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  

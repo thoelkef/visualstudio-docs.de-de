@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904039"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 ###  <a name="coupleProjects"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt  
   
-1.  Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:  
+1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:  
   
-    1.  Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.  
+   1.  Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.  
   
-         ![C&#43;&#43;-Projekteigenschaften &#45; Framework und Verweise](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43;&#43;-Projekteigenschaften &#45; Framework und Verweise](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Wählen Sie **Neuen Verweis hinzufügen**.  
+   2.  Wählen Sie **Neuen Verweis hinzufügen**.  
   
-         Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.  
+        Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.  
   
-         ![C&#43;&#43;-Projekteigenschaften &#45; neuen Verweis hinzufügen](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43;&#43;-Projekteigenschaften &#45; neuen Verweis hinzufügen](../test/media/utecpp09.png "UteCpp09")  
   
-2.  Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:  
+2. Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Fügen Sie einen grundlegenden Test hinzu, der die exportierte Funktion verwendet:  
+3. Fügen Sie einen grundlegenden Test hinzu, der die exportierte Funktion verwendet:  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Erstellen Sie die Projektmappe.  
+4. Erstellen Sie die Projektmappe.  
   
-     Der neue Test wird im Test-Explorer angezeigt.  
+    Der neue Test wird im Test-Explorer angezeigt.  
   
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+5. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
-     ![Komponententest-Explorer &#45; einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")  
+    ![Komponententest-Explorer &#45; einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")  
   
- Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.  
+   Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.  
   
 ###  <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen  
   

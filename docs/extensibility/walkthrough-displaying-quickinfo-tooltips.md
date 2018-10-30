@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824183"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen-QuickInfos
 QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Beschreibungen, wenn ein Benutzer den Mauszeiger über einen Methodennamen. Sie können die Sprache basierenden Features wie QuickInfo implementieren, definieren die Bezeichner für die Sie die QuickInfo-Beschreibungen bereitstellen möchten, und erstellen dann eine QuickInfo, in dem den Inhalt angezeigt. Sie können die QuickInfo im Kontext von einem Sprachdienst definieren oder können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateinamentyp und Anzeigen der QuickInfo für nur diesen Typ, oder Sie können die QuickInfo anzeigen, für die einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von QuickInfos für den Inhaltstyp "Text".  
   
  Das QuickInfo-Beispiel in dieser exemplarischen Vorgehensweise zeigt die QuickInfo an, wenn ein Benutzer den Zeiger über einen Methodennamen. Dieser Entwurf erfordert, dass Sie diese vier Schnittstellen implementieren:  
   
--   Source-Schnittstelle  
+- Source-Schnittstelle  
   
--   Anbieterschnittstelle für die Quelle  
+- Anbieterschnittstelle für die Quelle  
   
--   Controller-Schnittstelle  
+- Controller-Schnittstelle  
   
--   Controller-Provider-Schnittstelle  
+- Controller-Provider-Schnittstelle  
   
- Die Quell- und Controller-Anbieter sind Komponenten des Managed Extensibility Framework (MEF) und sind verantwortlich für die Quell- und Controller-Klassen exportieren und importieren und z. B.-Broker die <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, die den QuickInfo-Text erstellt Puffer, und die <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, der die QuickInfo-Sitzung ausgelöst.  
+  Die Quell- und Controller-Anbieter sind Komponenten des Managed Extensibility Framework (MEF) und sind verantwortlich für die Quell- und Controller-Klassen exportieren und importieren und z. B.-Broker die <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, die den QuickInfo-Text erstellt Puffer, und die <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, der die QuickInfo-Sitzung ausgelöst.  
   
- In diesem Beispiel die QuickInfo-Quelle verwendet eine hartcodierte Liste mit Namen und Beschreibungen, aber in vollständige Implementierungen der Sprachdienst und der zugehörigen Dokumentation sind dafür verantwortlich, dass der Inhalt.  
+  In diesem Beispiel die QuickInfo-Quelle verwendet eine hartcodierte Liste mit Namen und Beschreibungen, aber in vollständige Implementierungen der Sprachdienst und der zugehörigen Dokumentation sind dafür verantwortlich, dass der Inhalt.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, müssen Sie die Visual Studio-SDK aus dem Downloadcenter installieren. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts  
@@ -154,7 +154,7 @@ QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Be
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  Importieren der <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> als Eigenschaft.  
+2.  Importieren Sie <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> als Eigenschaft.  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

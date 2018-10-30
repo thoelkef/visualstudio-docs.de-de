@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852530"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
   
  Visual Studio stellt die folgende Funktionalität für Unittests bereit:  
   
--   [Erstellen eines Komponententestprojekts](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Erstellen eines Komponententestprojekts](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Bearbeiten des Manifests für das Komponententestprojekt](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Bearbeiten des Manifests für das Komponententestprojekt](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Codieren des Komponententests](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Codieren des Komponententests](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Ausführen von Komponententests](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Ausführen von Komponententests](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Im folgenden sind Schritte zur Erstellung, zum Lauf und zum Debugging von Komponententests für verwaltete Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps beschrieben.  
+  Im folgenden sind Schritte zur Erstellung, zum Lauf und zum Debugging von Komponententests für verwaltete Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps beschrieben.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Visual Studio  

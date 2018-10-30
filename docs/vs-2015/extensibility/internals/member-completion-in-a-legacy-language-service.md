@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892687"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Der Member IntelliSense-Vervollständigung wird eine QuickInfo, die eine Liste d
 ## <a name="how-it-works"></a>So funktioniert es  
  Es folgen die beiden Möglichkeiten, die mit die MPF-Klassen, in denen eine Memberliste angezeigt wird:  
   
--   Positionieren die Einfügemarke in einem Bezeichner oder nach der ein Vervollständigungszeichen Member und Auswählen von **Listenmember** aus der **IntelliSense** Menü.  
+- Positionieren die Einfügemarke in einem Bezeichner oder nach der ein Vervollständigungszeichen Member und Auswählen von **Listenmember** aus der **IntelliSense** Menü.  
   
--   Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Vervollständigungszeichen Element und legt einen token Trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> für dieses Zeichen.  
+- Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Vervollständigungszeichen Element und legt einen token Trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> für dieses Zeichen.  
   
- Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In c# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.  
+  Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In c# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.  
   
 ### <a name="the-intellisense-member-list-command"></a>Der IntelliSense-Member-List-Befehl  
  Die <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse und die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode wiederum ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode-Parser, mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>.  

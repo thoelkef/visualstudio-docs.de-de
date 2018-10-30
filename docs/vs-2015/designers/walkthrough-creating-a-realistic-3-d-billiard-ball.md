@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829585"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,49 +54,49 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 #### <a name="to-preview-the-shader-by-using-a-sphere"></a>So erstellen Sie eine Shader-Vorschau mithilfe einer Kugel  
   
--   Klicken Sie auf der Symbolleiste des Shader-Designers auf **Vorschau mit Kugel**.  
+- Klicken Sie auf der Symbolleiste des Shader-Designers auf **Vorschau mit Kugel**.  
   
- Im nächsten Schritt erstellen Sie ein Shaderprogramm, das eine Textur auf das Modell anwendet, aber zunächst müssen Sie eine Textur erstellen, die Sie verwenden können. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem Bild-Editor von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt wird, aber Sie können auch jeden anderen Bild-Editor verwenden, mit dem sich die Textur in einem geeigneten Format speichern lässt.  
+  Im nächsten Schritt erstellen Sie ein Shaderprogramm, das eine Textur auf das Modell anwendet, aber zunächst müssen Sie eine Textur erstellen, die Sie verwenden können. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem Bild-Editor von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt wird, aber Sie können auch jeden anderen Bild-Editor verwenden, mit dem sich die Textur in einem geeigneten Format speichern lässt.  
   
- Stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
+  Stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
   
 #### <a name="to-create-a-billiard-ball-texture-by-using-the-image-editor"></a>So erstellen Sie eine Billardkugeltextur mit dem Bild-Editor  
   
-1.  Erstellen Sie eine Textur, mit der Sie arbeiten können. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).  
+1. Erstellen Sie eine Textur, mit der Sie arbeiten können. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).  
   
-2.  Legen Sie die Bildgröße so fest, dass sie doppelt so breit ist wie hoch; dies ist aufgrund der Art erforderlich, wie die Textur auf die kugelförmige Oberfläche der Billardkugel angewendet wird. Um das Bild in der Größe zu verändern, geben Sie im Fenster **Eigenschaften** neue Werte für die Eigenschaften **Breite** und **Höhe** an. Legen Sie beispielsweise die Breite auf 512 und die Höhe auf 256 fest.  
+2. Legen Sie die Bildgröße so fest, dass sie doppelt so breit ist wie hoch; dies ist aufgrund der Art erforderlich, wie die Textur auf die kugelförmige Oberfläche der Billardkugel angewendet wird. Um das Bild in der Größe zu verändern, geben Sie im Fenster **Eigenschaften** neue Werte für die Eigenschaften **Breite** und **Höhe** an. Legen Sie beispielsweise die Breite auf 512 und die Höhe auf 256 fest.  
   
-3.  Zeichnen Sie eine Textur für die Billardkugel, und führen Sie sich dabei vor Augen, wie eine Textur auf eine Kugel angewendet wird.  
+3. Zeichnen Sie eine Textur für die Billardkugel, und führen Sie sich dabei vor Augen, wie eine Textur auf eine Kugel angewendet wird.  
   
-     Die Textur sollte etwa wie folgt aussehen:  
+    Die Textur sollte etwa wie folgt aussehen:  
   
-     ![Textur der Billiardkugel](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+    ![Textur der Billiardkugel](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
-4.  Optional können Sie die Speicheranforderungen dieser Textur verringern. Dies können Sie erreichen, indem Sie die Breite der Textur so reduzieren, dass sie ihrer Höhe entspricht. Dadurch wird die Textur entlang der Breite reduziert, aber aufgrund der Art, wie die Textur auf die Kugel angewendet wird, wird sie beim Rendern der Billardkugel gedehnt. Nachdem die Größe geändert wurde, sollte die Textur in etwa folgendermaßen aussehen:  
+4. Optional können Sie die Speicheranforderungen dieser Textur verringern. Dies können Sie erreichen, indem Sie die Breite der Textur so reduzieren, dass sie ihrer Höhe entspricht. Dadurch wird die Textur entlang der Breite reduziert, aber aufgrund der Art, wie die Textur auf die Kugel angewendet wird, wird sie beim Rendern der Billardkugel gedehnt. Nachdem die Größe geändert wurde, sollte die Textur in etwa folgendermaßen aussehen:  
   
-     ![Auf ein Quadrat komprimierte Textur der Billiardkugel](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+    ![Auf ein Quadrat komprimierte Textur der Billiardkugel](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
- Nun können Sie einen Shader erstellen, der diese Textur auf das Modell anwendet.  
+   Nun können Sie einen Shader erstellen, der diese Textur auf das Modell anwendet.  
   
 #### <a name="to-create-a-basic-texture-shader"></a>So erstellen Sie einen Basistexturshader  
   
-1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
+1. Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
   
-     Standardmäßig sieht ein Shaderdiagramm wie folgt aus:  
+    Standardmäßig sieht ein Shaderdiagramm wie folgt aus:  
   
-     ![Das standardmäßige Shader-Diagramm](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
+    ![Das standardmäßige Shader-Diagramm](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
   
-2.  Ändern Sie den standardmäßigen Shader, damit er den Wert eines Texturbeispiels auf das aktuelle Pixel anwendet. Das Shaderdiagramm sollte wie folgt aussehen:  
+2. Ändern Sie den standardmäßigen Shader, damit er den Wert eines Texturbeispiels auf das aktuelle Pixel anwendet. Das Shaderdiagramm sollte wie folgt aussehen:  
   
-     ![Ein Shader-Diagramm, der Textur auf ein Objekt anwendet](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
+    ![Ein Shader-Diagramm, der Textur auf ein Objekt anwendet](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
   
-3.  Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** (Textur) des Knotens **Texture Sample** (Texturbeispiel) auf **Texture1** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** (Dateiname) der Eigenschaftengruppe **Texture1** im gleichen Eigenschaftenfenster verwenden.  
+3. Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** (Textur) des Knotens **Texture Sample** (Texturbeispiel) auf **Texture1** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** (Dateiname) der Eigenschaftengruppe **Texture1** im gleichen Eigenschaftenfenster verwenden.  
   
- Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md).  
+   Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md).  
   
- Die Billardkugel sollte jetzt in etwa folgendermaßen aussehen:  
+   Die Billardkugel sollte jetzt in etwa folgendermaßen aussehen:  
   
- ![Nahaufnahme der texturierten Billiardkugel](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
+   ![Nahaufnahme der texturierten Billiardkugel](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>Erstellen von Tiefe mit dem Lambert-Beleuchtungsmodell  
  Sie haben jetzt eine leicht zu erkennende Billardkugel erstellt. Sie sieht jedoch flach und uninteressant aus – eher wie eine Comicdarstellung und nicht wie überzeugendes Abbild der Wirklichkeit. Die flache Darstellung ergibt sich aus dem stark vereinfachten Shader, der sich so verhält, als würde auf jedes Pixel auf der Oberfläche der Billardkugel die gleiche Menge Licht fallen.  
@@ -107,17 +107,17 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 #### <a name="to-add-lambert-lighting-to-your-shader"></a>So fügen Sie das Lambert-Beleuchtungsmodell Ihrem Shader hinzu  
   
--   Ändern Sie den Shader, um den Wert des Texturbeispiels mit dem Lambert-Beleuchtungswert zu modulieren. Das Shaderdiagramm sollte wie folgt aussehen:  
+- Ändern Sie den Shader, um den Wert des Texturbeispiels mit dem Lambert-Beleuchtungswert zu modulieren. Das Shaderdiagramm sollte wie folgt aussehen:  
   
-     ![Das Shader-Diagramm mit Lambert-Beleuchtung](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
+   ![Das Shader-Diagramm mit Lambert-Beleuchtung](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
   
--   Optional können Sie das Beleuchtungsverhalten anpassen, indem Sie die Eigenschaft **MaterialDiffuse** des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.  
+- Optional können Sie das Beleuchtungsverhalten anpassen, indem Sie die Eigenschaft **MaterialDiffuse** des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.  
   
- Weitere Informationen zur Verwendung der Lambert-Beleuchtung im Shader finden Sie unter [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Weitere Informationen zur Verwendung der Lambert-Beleuchtung im Shader finden Sie unter [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
   
- Bei angewendetem Lambert-Beleuchtungsmodell sollte die Billardkugel in etwa folgendermaßen aussehen:  
+  Bei angewendetem Lambert-Beleuchtungsmodell sollte die Billardkugel in etwa folgendermaßen aussehen:  
   
- ![Nahaufnahme der texturierten und beleuchteten Billiardkugel](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
+  ![Nahaufnahme der texturierten und beleuchteten Billiardkugel](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Optimieren der grundlegenden Darstellung mithilfe von Glanzlichtern  
  Das Lambert-Beleuchtungsmodell erzeugt ein Raum- und Dimensionsgefühl, das bei dem reinen Textur-Shader nicht vorhanden waren. Die Billardkugel hat jedoch immer noch ein etwas langweiliges Aussehen.  
@@ -128,17 +128,17 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 #### <a name="to-add-specular-highlights-to-your-shader"></a>So fügen Sie dem Shader Glanzlichter hinzu  
   
-1.  Ändern Sie den Shader, um Glanzlichter darzustellen, indem Sie additives Mischen verwenden. Das Shaderdiagramm sollte wie folgt aussehen:  
+1. Ändern Sie den Shader, um Glanzlichter darzustellen, indem Sie additives Mischen verwenden. Das Shaderdiagramm sollte wie folgt aussehen:  
   
-     ![Das Shader-Diagramm mit Glanzlichtern](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
+    ![Das Shader-Diagramm mit Glanzlichtern](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
   
-2.  Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.  
+2. Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.  
   
- Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).  
+   Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).  
   
- Mit Glanzlichtern sollte die Billardkugel in etwa folgendermaßen aussehen:  
+   Mit Glanzlichtern sollte die Billardkugel in etwa folgendermaßen aussehen:  
   
- ![Nahaufnahme der Billiardkugel mit Glanzlichtern](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
+   ![Nahaufnahme der Billiardkugel mit Glanzlichtern](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Erzeugen eines Raumgefühls durch das Spiegeln der Umgebung  
  Wenn Glanzlichter angewendet wurden, sieht die Billardkugel bereits recht überzeugend aus. Sie hat die richtige Form, die richtige Farbe und die richtige Oberflächendarstellung. Es gibt jedoch noch eine weitere Technik, durch die sich die Billardkugel noch besser in ihre Umgebung einfügt.  
@@ -153,71 +153,71 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 #### <a name="to-create-textures-for-an-environment-map-by-using-the-image-editor"></a>So erstellen Sie Texturen für eine Umgebungszuordnung mithilfe der Bild-Editors  
   
-1.  Erstellen Sie eine Textur, mit der Sie arbeiten können. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).  
+1. Erstellen Sie eine Textur, mit der Sie arbeiten können. Weitere Informationen zum Hinzufügen von Texturen zu Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Bildbearbeitung](../designers/image-editor.md).  
   
-2.  Legen Sie die Bildgröße so fest, dass deren Breite und Höhe der Potenz 2 entsprechen; Dies ist aufgrund der Art erforderlich, die eine Cubemap indiziert wird. Um das Bild in der Größe zu verändern, geben Sie im Fenster **Eigenschaften** neue Werte für die Eigenschaften **Breite** und **Höhe** an. Legen Sie beispielsweise den Wert der Eigenschaften **Breite** und **Höhe** auf 256 fest.  
+2. Legen Sie die Bildgröße so fest, dass deren Breite und Höhe der Potenz 2 entsprechen; Dies ist aufgrund der Art erforderlich, die eine Cubemap indiziert wird. Um das Bild in der Größe zu verändern, geben Sie im Fenster **Eigenschaften** neue Werte für die Eigenschaften **Breite** und **Höhe** an. Legen Sie beispielsweise den Wert der Eigenschaften **Breite** und **Höhe** auf 256 fest.  
   
-3.  Verwenden Sie eine Volltonfarbe, um die Textur auszufüllen. Diese Textur ist der untere Bereich der Cubemap, der der Oberfläche des Billardtischs entspricht. Merken Sie sich die Farbe für die nächste Textur.  
+3. Verwenden Sie eine Volltonfarbe, um die Textur auszufüllen. Diese Textur ist der untere Bereich der Cubemap, der der Oberfläche des Billardtischs entspricht. Merken Sie sich die Farbe für die nächste Textur.  
   
-4.  Erstellen Sie eine zweite Textur, die die selbe Größe hat wie die erste. Diese Textur wird auf den vier Seiten der Cubemap wiederholt, die der Oberfläche und den Seiten eines Billardtischs und dem Bereich um den Billardtisch entsprechen. Stellen Sie sicher, dass Sie die Oberfläche des Billardtischs in dieser Textur mit der gleichen Farbe wie in der unteren Textur zeichnen. Die Textur sollte etwa wie folgt aussehen:  
+4. Erstellen Sie eine zweite Textur, die die selbe Größe hat wie die erste. Diese Textur wird auf den vier Seiten der Cubemap wiederholt, die der Oberfläche und den Seiten eines Billardtischs und dem Bereich um den Billardtisch entsprechen. Stellen Sie sicher, dass Sie die Oberfläche des Billardtischs in dieser Textur mit der gleichen Farbe wie in der unteren Textur zeichnen. Die Textur sollte etwa wie folgt aussehen:  
   
-     ![Die Struktur der Seiten des Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+    ![Die Struktur der Seiten des Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
-     Beachten Sie, dass eine Reflexionszuordnung nicht photorealistisch sein muss, um effektiv zu sein, beispielsweise enthält die Cubemap, mit der die Bilder in diesem Artikel erstellt wurden, nur vier Taschen statt sechs.  
+    Beachten Sie, dass eine Reflexionszuordnung nicht photorealistisch sein muss, um effektiv zu sein, beispielsweise enthält die Cubemap, mit der die Bilder in diesem Artikel erstellt wurden, nur vier Taschen statt sechs.  
   
-5.  Erstellen Sie eine dritte Textur, die die gleiche Größe hat wie die anderen. Diese Textur ist der obere Bereich der Cubemaps, der der Decke über dem Billardtisch entspricht. Um diesen Teil der Reflexion interessanter zu machen, können Sie ein Deckenlicht zeichnen, um die Glanzlichter zu verstärken, die Sie dem Shader in der vorherigen Vorgehensweise hinzugefügt haben. Die Textur sollte etwa wie folgt aussehen:  
+5. Erstellen Sie eine dritte Textur, die die gleiche Größe hat wie die anderen. Diese Textur ist der obere Bereich der Cubemaps, der der Decke über dem Billardtisch entspricht. Um diesen Teil der Reflexion interessanter zu machen, können Sie ein Deckenlicht zeichnen, um die Glanzlichter zu verstärken, die Sie dem Shader in der vorherigen Vorgehensweise hinzugefügt haben. Die Textur sollte etwa wie folgt aussehen:  
   
-     ![Die Struktur der oberen Seiten des Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+    ![Die Struktur der oberen Seiten des Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
- Nachdem Sie nun einzelne Texturen für die Seiten der Cubemap erstellt haben, können Sie jetzt ein Tool verwenden, um sie in einer Cubemap zusammenzufügen, die in einer einzelnen DDS-Textur gespeichert werden kann. Sie können ein beliebiges Programm zum Erstellen der Cubemap verwenden, solange die Cubemap im DDS-Texturformat gespeichert werden kann. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem DirectX-Textur-Tool erstellt wird, das Teil des DirectX SDK von Juni 2010 ist.  
+   Nachdem Sie nun einzelne Texturen für die Seiten der Cubemap erstellt haben, können Sie jetzt ein Tool verwenden, um sie in einer Cubemap zusammenzufügen, die in einer einzelnen DDS-Textur gespeichert werden kann. Sie können ein beliebiges Programm zum Erstellen der Cubemap verwenden, solange die Cubemap im DDS-Texturformat gespeichert werden kann. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Textur mit dem DirectX-Textur-Tool erstellt wird, das Teil des DirectX SDK von Juni 2010 ist.  
   
 #### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>So stellen Sie eine Cubemap mit dem DirectX-Textur-Tool zusammen  
   
-1.  Wählen Sie im Hauptmenü des DirectX-Textur-Tools **File** (Datei), **New Texture** (Neue Textur) aus. Das Dialogfeld **New Texture** wird angezeigt.  
+1. Wählen Sie im Hauptmenü des DirectX-Textur-Tools **File** (Datei), **New Texture** (Neue Textur) aus. Das Dialogfeld **New Texture** wird angezeigt.  
   
-2.  Wählen Sie in der Gruppe **Texture Type** (Texturtyp) die Option **Cubemap Texture** (Cubemaptextur) aus.  
+2. Wählen Sie in der Gruppe **Texture Type** (Texturtyp) die Option **Cubemap Texture** (Cubemaptextur) aus.  
   
-3.  Geben Sie in der Gruppe **Dimensions** (Dimensionen) den richtigen Wert für **Width** (Breite) und **Höhe** ein, und wählen Sie dann **OK** aus. Ein neues Texturdokument wird angezeigt. Standardmäßig entspricht die im Texturdokument dargestellte Textur der Würfelfläche **Positive X**.  
+3. Geben Sie in der Gruppe **Dimensions** (Dimensionen) den richtigen Wert für **Width** (Breite) und **Höhe** ein, und wählen Sie dann **OK** aus. Ein neues Texturdokument wird angezeigt. Standardmäßig entspricht die im Texturdokument dargestellte Textur der Würfelfläche **Positive X**.  
   
-4.  Laden Sie die Textur, die Sie für die Seite des Texturwürfels erstellt haben, in die Würfelfläche. Wählen Sie im Hauptmenü **File** (Datei), **Open Onto This Cubemap Face** (Auf dieser Cubemapfläche öffnen) aus, wählen Sie die Textur aus, die Sie für die Seite des Würfels erstellt haben, und wählen Sie dann **Open** (Öffnen).  
+4. Laden Sie die Textur, die Sie für die Seite des Texturwürfels erstellt haben, in die Würfelfläche. Wählen Sie im Hauptmenü **File** (Datei), **Open Onto This Cubemap Face** (Auf dieser Cubemapfläche öffnen) aus, wählen Sie die Textur aus, die Sie für die Seite des Würfels erstellt haben, und wählen Sie dann **Open** (Öffnen).  
   
-5.  Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X**, **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Um eine andere Cubemapfläche zu sehen, wählen Sie im Hauptmenü **View** (Ansicht), **Cube Map Face** (Cubemapfläche) aus, und wählen Sie dann die gewünschte Fläche aus.  
+5. Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X**, **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Um eine andere Cubemapfläche zu sehen, wählen Sie im Hauptmenü **View** (Ansicht), **Cube Map Face** (Cubemapfläche) aus, und wählen Sie dann die gewünschte Fläche aus.  
   
-6.  Laden Sie für die Würfelfläche **Positive Y** die Textur, die Sie für den oberen Bereich des Texturwürfels erstellt haben.  
+6. Laden Sie für die Würfelfläche **Positive Y** die Textur, die Sie für den oberen Bereich des Texturwürfels erstellt haben.  
   
-7.  Laden Sie für die Würfelfläche **Negative Y** die Textur, die Sie für den unteren Bereich des Texturwürfels erstellt haben.  
+7. Laden Sie für die Würfelfläche **Negative Y** die Textur, die Sie für den unteren Bereich des Texturwürfels erstellt haben.  
   
-8.  Speichern Sie die Textur.  
+8. Speichern Sie die Textur.  
   
- Sie können sich das Layout der Cubemap so vorstellen:  
+   Sie können sich das Layout der Cubemap so vorstellen:  
   
- ![Layout des Umgebungs-Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+   ![Layout des Umgebungs-Cubemaps](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
- Das Bild oben ist die positive Y (+Y)-Würfelfläche; in der Mitte, von links nach rechts, befinden sich die –X-, +Z-, +X- und –Z-Würfelflächen, und unten befindet sich die -Y-Würfelfläche.  
+   Das Bild oben ist die positive Y (+Y)-Würfelfläche; in der Mitte, von links nach rechts, befinden sich die –X-, +Z-, +X- und –Z-Würfelflächen, und unten befindet sich die -Y-Würfelfläche.  
   
- Jetzt können Sie den Shader ändern, um das Cubemap-Sample mit dem Rest des Shaders zu mischen.  
+   Jetzt können Sie den Shader ändern, um das Cubemap-Sample mit dem Rest des Shaders zu mischen.  
   
 #### <a name="to-add-environment-mapping-to-your-shader"></a>So fügen Sie Ihrem Shader eine Umgebungszuordnung hinzu  
   
-1.  Ändern Sie den Shader, um eine Umgebungszuordnung einzubeziehen, indem Sie additives Mischen verwenden. Das Shaderdiagramm sollte wie folgt aussehen:  
+1. Ändern Sie den Shader, um eine Umgebungszuordnung einzubeziehen, indem Sie additives Mischen verwenden. Das Shaderdiagramm sollte wie folgt aussehen:  
   
-     ![Nahaufnahme von beiden reflektierenden Shader-Knoten](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
+    ![Nahaufnahme von beiden reflektierenden Shader-Knoten](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
   
-     Beachten Sie, dass Sie den Knoten **Multiply-Add** verwenden können, um das Shaderdiagramm zu vereinfachen.  
+    Beachten Sie, dass Sie den Knoten **Multiply-Add** verwenden können, um das Shaderdiagramm zu vereinfachen.  
   
-     Im Folgenden finden Sie eine detaillierte Ansicht der Shaderknoten, die eine Umgebungszuordnung implementieren:  
+    Im Folgenden finden Sie eine detaillierte Ansicht der Shaderknoten, die eine Umgebungszuordnung implementieren:  
   
-     ![Das Shader-Diagramm mit Umgebungszuordnung](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
+    ![Das Shader-Diagramm mit Umgebungszuordnung](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
   
-2.  Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften der Cubemap konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** des Knotens **Cubemap Sample** (Cubemapbespiel) auf **Texture2** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** der Eigenschaftengruppe **Texture2** verwenden.  
+2. Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften der Cubemap konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** des Knotens **Cubemap Sample** (Cubemapbespiel) auf **Texture2** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** der Eigenschaftengruppe **Texture2** verwenden.  
   
-3.  Optional können Sie das Reflexionsvermögen der Billardkugel anpassen, indem Sie die Eigenschaft **Output** des Knotens **Constant** konfigurieren. Um auf Eigenschaften des Knotens zuzugreifen, wählen Sie ihn aus, und suchen Sie anschließend im Fenster **Eigenschaften** die Eigenschaft aus, auf die Sie zugreifen möchten.  
+3. Optional können Sie das Reflexionsvermögen der Billardkugel anpassen, indem Sie die Eigenschaft **Output** des Knotens **Constant** konfigurieren. Um auf Eigenschaften des Knotens zuzugreifen, wählen Sie ihn aus, und suchen Sie anschließend im Fenster **Eigenschaften** die Eigenschaft aus, auf die Sie zugreifen möchten.  
   
- Wenn die Umgebungszuordnung angewendet wurde, sollte die Billardkugel in etwa folgendermaßen aussehen:  
+   Wenn die Umgebungszuordnung angewendet wurde, sollte die Billardkugel in etwa folgendermaßen aussehen:  
   
- ![Nahaufnahme der umgebungszugeordneten Billiardkugel](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
+   ![Nahaufnahme der umgebungszugeordneten Billiardkugel](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
   
- In diesem abschließenden Bild sehen Sie, wie die Effekte, die Sie hinzugefügt haben, zusammen eine sehr überzeugende Darstellung einer Billardkugel ergeben. Die Form, die Textur und die Beleuchtung bilden die Grundlage der 3D-Darstellung, und durch die Glanzlichter und die Reflexionen sieht die Billardkugel interessanter aus und fügt sich in ihre Umgebung ein.  
+   In diesem abschließenden Bild sehen Sie, wie die Effekte, die Sie hinzugefügt haben, zusammen eine sehr überzeugende Darstellung einer Billardkugel ergeben. Die Form, die Textur und die Beleuchtung bilden die Grundlage der 3D-Darstellung, und durch die Glanzlichter und die Reflexionen sieht die Billardkugel interessanter aus und fügt sich in ihre Umgebung ein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   

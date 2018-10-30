@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929607"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
 
@@ -41,24 +41,24 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/class-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code in Visual Basic](media/class-highlight-vb.png)
+       ![Hervorgehobener Code in Visual Basic](media/class-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
 
-    ![Vorschau der Aktion „Klasse generieren“](media/class-preview-cs.png)
+      ![Vorschau der Aktion „Klasse generieren“](media/class-preview-cs.png)
 
-1. Wählen Sie im Dropdownmenü eine der folgenden Optionen aus:
+3. Wählen Sie im Dropdownmenü eine der folgenden Optionen aus:
 
    - Klasse „*TypeName*“ in neuer Datei generieren &mdash; Erstellt eine Klasse mit dem Namen *TypeName* in einer Datei namens *TypeName*.cs/.vb.
    - Klasse „*TypeName*“ generieren &mdash; Erstellt eine Klasse mit dem Namen *TypeName* in der aktuellen Datei.
@@ -68,7 +68,7 @@ Diese Codegenerierung gilt für:
    > [!TIP]
    > Klicken Sie im unteren Bereich des Vorschaufensters auf den Link **Vorschau der Änderungen**, um vor einer Auswahl [alle Änderungen anzuzeigen](../../ide/preview-changes.md), die vorgenommen werden.
 
-1. Wenn Sie das Element **Neuen Typ generieren** ausgewählt haben, wird das Dialogfeld **Typ generieren** geöffnet. Konfigurieren Sie den Zugriff, die Art und den Speicherort des neuen Typs.
+4. Wenn Sie das Element **Neuen Typ generieren** ausgewählt haben, wird das Dialogfeld **Typ generieren** geöffnet. Konfigurieren Sie den Zugriff, die Art und den Speicherort des neuen Typs.
 
    ![Typ generieren](media/class-newtype-cs.png)
 

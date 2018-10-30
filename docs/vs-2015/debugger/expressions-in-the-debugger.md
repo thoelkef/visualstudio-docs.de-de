@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914312"
 ---
 # <a name="expressions-in-the-debugger"></a>Ausdrücke im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Systeminterne Debugger-Funktionen:  
   
--   Diese sind garantiert sicher: durch das Ausführen einer systeminternen Debugger-Funktion wird der Prozess, der debuggt wird, nicht beschädigt.  
+- Diese sind garantiert sicher: durch das Ausführen einer systeminternen Debugger-Funktion wird der Prozess, der debuggt wird, nicht beschädigt.  
   
--   Sie sind in allen Ausdrücken zulässig, sogar in Szenarien, in denen Nebeneffekte und Funktionsauswertung nicht gestattet ist.  
+- Sie sind in allen Ausdrücken zulässig, sogar in Szenarien, in denen Nebeneffekte und Funktionsauswertung nicht gestattet ist.  
   
--   Sie arbeiten in Szenarien, in denen reguläre Funktionsaufrufe nicht möglich sind, z. B. das Debuggen eines Minidumps.  
+- Sie arbeiten in Szenarien, in denen reguläre Funktionsaufrufe nicht möglich sind, z. B. das Debuggen eines Minidumps.  
   
- Mit systeminternen Debugger-Funktionen kann die Auswertung von Ausdrücken bequemer werden. Beispielsweise ist `strncmp(str, “asd”)` viel einfacher in einer Haltepunktbedingung zu schreiben als `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Mit systeminternen Debugger-Funktionen kann die Auswertung von Ausdrücken bequemer werden. Beispielsweise ist `strncmp(str, “asd”)` viel einfacher in einer Haltepunktbedingung zu schreiben als `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Bereich|Systeminterne Funktionen|  
 |----------|-------------------------|  

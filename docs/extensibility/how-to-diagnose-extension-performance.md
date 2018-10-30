@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934924"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Auswirkungen der Erweiterung in der Startdatei
 
@@ -169,11 +169,11 @@ Im Beispiel oben einige interessante Aufruf wäre Stapel:
 
 1. Mithilfe von e/a- `System.IO` Klasse: während inklusive Kosten für diese Frames zu teuer in der Ablaufverfolgung unter nicht Umständen können sie eine mögliche Ursache für ein Problem sind, da die Datei-e/a-Geschwindigkeit von Computer zu Computer unterschiedlich sind.
 
-  ![System-e/a-frames](media/perfview-system-io-frames.png)
+   ![System-e/a-frames](media/perfview-system-io-frames.png)
 
 2. Warten auf andere asynchrone Arbeit Aufrufe zum Blockieren: In diesem Fall würde der inklusiven Zeit die Zeit der Hauptthread, auf den Abschluss asynchroner Arbeit blockiert wird darstellen.
 
-  ![blockierende Aufrufframes](media/perfview-blocking-call-frames.png)
+   ![blockierende Aufrufframes](media/perfview-blocking-call-frames.png)
 
 Für eine der anderen Ansichten in der Ablaufverfolgung, die nützlich, um zu bestimmen, Auswirkungen gibt es die **Image-Load-Stapel**. Sie können die gleichen Filter angewendet, wie auf **Thread Zeit Stapel** anzuzeigen, und erfahren Sie, alle Assemblys, die aufgrund des Codes ausgeführt, indem Ihr Auto geladene Paket geladen.
 

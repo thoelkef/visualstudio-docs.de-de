@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901319"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Language-Dienst und -Editor-Erweiterungen
 Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung, Klammern, IntelliSense und Glühbirnen Ihrer eigenen Programmiersprache oder für beliebige Inhaltstypen hinzufügen. Sie können auch das Aussehen und Verhalten von Visual Studio-Editor, z. B. Text, die Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente anpassen. Sie können auch Ihren eigenen Typ des Inhalts definieren und geben Sie das Aussehen und Verhalten von der Textansichten in denen Ihre Inhalte angezeigt wird.  
@@ -44,17 +44,17 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
   
  Im folgenden werden einige der grundlegenden Arten von Editor-Erweiterungen:  
   
--   Rändern und Bildlaufleisten  
+- Rändern und Bildlaufleisten  
   
--   Tags  
+- Tags  
   
--   Zusatzelemente  
+- Zusatzelemente  
   
--   Optionen  
+- Optionen  
   
--   IntelliSense  
+- IntelliSense  
   
- Weitere Informationen zum Editor Erweiterungspunkte, finden Sie unter [Language Service und Editor Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md).  
+  Weitere Informationen zum Editor Erweiterungspunkte, finden Sie unter [Language Service und Editor Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Bereitstellen von editorerweiterungen  
  In Visual Studio Sie editorerweiterungen bereitstellen, indem Sie eine Metadatendatei namens hinzufügen *"Source.Extension.vsixmanifest"* der Projektmappe erstellen der Projektmappe und anschließend eine Kopie der Binärdateien und das Manifest hinzufügen, in einem Ordner, der bekannt ist Visual Studio. Die manifest-Datei definiert die grundlegenden Fakten über die Erweiterung (z. B. Name, Autor, Version und Typ des Inhalts). Weitere Informationen über die VSIX-manifest-Datei und zum Bereitstellen von Erweiterungen finden Sie unter [Ship Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  

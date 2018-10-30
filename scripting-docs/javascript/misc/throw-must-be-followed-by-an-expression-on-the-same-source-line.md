@@ -1,5 +1,5 @@
 ---
-title: Throw muss durch einen Ausdruck in derselben Quellzeile folgen | Microsoft Docs
+title: Throw muss durch einen Ausdruck in derselben Quellzeile folgen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951053"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Auf 'throw' muss ein Ausdruck in derselben Quellzeile folgen
-Sie verwendet die `throw` -Schlüsselwort, aber nicht es mit einem Ausdruck in derselben Quellzeile folgen. Ein `throw` Anweisung besteht aus zwei Teilen: dem `throw` Schlüsselwort, gefolgt von dem Ausdruck ausgelöst wird. Zum Beispiel:  
+Sie verwendet die `throw` -Schlüsselwort, aber nicht es mit einem Ausdruck in derselben Quellzeile folgen. Ein `throw` Anweisung besteht aus zwei Teilen: dem `throw` -Schlüsselwort, gefolgt von dem Ausdruck, der ausgelöst wird. Zum Beispiel:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,13 +36,13 @@ if (denominator == 0) {
 }  
 ```  
   
- Sie können nicht diesen beiden Komponenten aufgeteilt.  
+ Sie können nicht diese beiden Komponenten aufgeteilt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass die `throw` -Schlüsselwort und der Ausdruck, der ausgelöst wird, werden in derselben Zeile angezeigt.  
+-   Stellen Sie sicher, dass die `throw` -Schlüsselwort und der Ausdruck, der ausgelöst werden, die in der gleichen Zeile angezeigt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)   
- [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

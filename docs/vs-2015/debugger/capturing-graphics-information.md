@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855403"
 ---
 # <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>So führen Sie die App unter der Grafikdiagnose aus  
   
--   Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik**und **Diagnose starten**. (Tastatur: Drücken Sie ALT+F5)  
+- Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik**und **Diagnose starten**. (Tastatur: Drücken Sie ALT+F5)  
   
--   Auf der **Grafiken** Symbolleiste wählen Sie die **Diagnose starten** Schaltfläche.  
+- Auf der **Grafiken** Symbolleiste wählen Sie die **Diagnose starten** Schaltfläche.  
   
- Wenn eine App unter der Grafikdiagnose ausgeführt wird, werden laufend bestimmte Arten von Grafikinformationen aufgezeichnet, beispielsweise Geräteinstallation, Erstellung der Swapkette, Erstellung von Grafikobjekten und Ressourcen sowie andere wichtige Ereignisse, die Auswirkungen auf einen oder mehrere Frames haben. Gleichzeitig können Sie ausführliche Informationen über bestimmte Frames erfassen. Dazu gehören Zeichnen-Aufrufe und Compute-Shader-Dispatchvorgänge gemeinsam mit Direct3D-Objekten und -Ressourcen, die diese unterstützen.  
+  Wenn eine App unter der Grafikdiagnose ausgeführt wird, werden laufend bestimmte Arten von Grafikinformationen aufgezeichnet, beispielsweise Geräteinstallation, Erstellung der Swapkette, Erstellung von Grafikobjekten und Ressourcen sowie andere wichtige Ereignisse, die Auswirkungen auf einen oder mehrere Frames haben. Gleichzeitig können Sie ausführliche Informationen über bestimmte Frames erfassen. Dazu gehören Zeichnen-Aufrufe und Compute-Shader-Dispatchvorgänge gemeinsam mit Direct3D-Objekten und -Ressourcen, die diese unterstützen.  
   
 #### <a name="to-capture-a-frame"></a>So erfassen Sie einen Frame  
   
--   In Visual Studio auf die **Grafiken** Symbolleiste wählen Sie die **Frame erfassen** Schaltfläche![grafikerfassung Schaltflächensymbol](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- In Visual Studio auf die **Grafiken** Symbolleiste wählen Sie die **Frame erfassen** Schaltfläche![grafikerfassung Schaltflächensymbol](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Auf der Tastatur drücken Sie die Taste DRUCK.  
+- Auf der Tastatur drücken Sie die Taste DRUCK.  
   
-    > [!NOTE]
-    >  Während der Ausführung einer app unter **Grafikdiagnose**, Druck-Taste kann nur verwendet werden, um eine Frames von Grafikinformationen zu erfassen; wird nicht ausgeführt, eine reguläre Funktion. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.  
+  > [!NOTE]
+  >  Während der Ausführung einer app unter **Grafikdiagnose**, Druck-Taste kann nur verwendet werden, um eine Frames von Grafikinformationen zu erfassen; wird nicht ausgeführt, eine reguläre Funktion. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.  
   
--   In Visual Studio aufnahmeschnittstelle gewählt haben die **Frame erfassen** Schaltfläche befindet sich über die **diagnosesitzung** Zeitachse, oder wählen Sie die große **Frame erfassen** Schaltfläche unterhalb der **Frames pro Sekunde** verantwortlichkeitsbereichs und rechts von zuvor erfassten Frames. Beide Schaltflächen werden in der folgenden Abbildung hervorgehoben.  
+- In Visual Studio aufnahmeschnittstelle gewählt haben die **Frame erfassen** Schaltfläche befindet sich über die **diagnosesitzung** Zeitachse, oder wählen Sie die große **Frame erfassen** Schaltfläche unterhalb der **Frames pro Sekunde** verantwortlichkeitsbereichs und rechts von zuvor erfassten Frames. Beide Schaltflächen werden in der folgenden Abbildung hervorgehoben.  
   
-     ![Erfassen Sie Frames, die mit dem Tool GPU-Nutzung. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "Pix_gpu_usage_tool_capture_frame")  
+   ![Erfassen Sie Frames, die mit dem Tool GPU-Nutzung. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "Pix_gpu_usage_tool_capture_frame")  
   
-     Wenn Sie bereit sind, die Frames überprüfen Sie erfasst haben, starten Sie den **Visual Studio-Grafikanalyse** anhand der **Frame...** Verknüpfen Sie über den Bildminiaturansichten oder durch Doppelklicken auf die Miniaturansicht.  
+   Wenn Sie bereit sind, die Frames überprüfen Sie erfasst haben, starten Sie den **Visual Studio-Grafikanalyse** anhand der **Frame...** Verknüpfen Sie über den Bildminiaturansichten oder durch Doppelklicken auf die Miniaturansicht.  
   
- Es können nur ganze Frames aufgezeichnet werden. Wenn Sie eine Aufzeichnung starten, werden daher die Grafikinformationen aus dem nächsten Frame aufgezeichnet. Die Aufzeichnung beginnt sofort nach Darstellung des Frames, in dem Sie die Aufzeichnung gestartet haben, und endet, wenn der aufgezeichnete Frame dargestellt wird. Während die App unter der Grafikdiagnose ausgeführt wird, können Sie so viele Frames aufzeichnen, wie Sie möchten. Wenn Sie keine Frames aufzeichnen, wird das Grafikprotokoll verworfen.  
+  Es können nur ganze Frames aufgezeichnet werden. Wenn Sie eine Aufzeichnung starten, werden daher die Grafikinformationen aus dem nächsten Frame aufgezeichnet. Die Aufzeichnung beginnt sofort nach Darstellung des Frames, in dem Sie die Aufzeichnung gestartet haben, und endet, wenn der aufgezeichnete Frame dargestellt wird. Während die App unter der Grafikdiagnose ausgeführt wird, können Sie so viele Frames aufzeichnen, wie Sie möchten. Wenn Sie keine Frames aufzeichnen, wird das Grafikprotokoll verworfen.  
   
- Beim Erfassen von Frames zeigt Visual Studio das Diagnosesitzungsfenster (.diagsession) an. Wenn Sie dieses Fenster schließen, das Debugging beenden oder die App schließen, können Sie in diesem Protokoll keine Frames mehr erfassen. Wenn Sie weitere Grafikinformationen erfassen möchten, müssen Sie die App erneut unter der Grafikdiagnose ausführen, um ein neue Diagnosesitzung zu starten.  
+  Beim Erfassen von Frames zeigt Visual Studio das Diagnosesitzungsfenster (.diagsession) an. Wenn Sie dieses Fenster schließen, das Debugging beenden oder die App schließen, können Sie in diesem Protokoll keine Frames mehr erfassen. Wenn Sie weitere Grafikinformationen erfassen möchten, müssen Sie die App erneut unter der Grafikdiagnose ausführen, um ein neue Diagnosesitzung zu starten.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Erfassungsoptionen der Grafikdiagnose  
  Sie können die Aufzeichnung konfigurieren, um Aufruflisten für alle Grafikereignisse oder eine eingeschränkte Teilmenge zu sammeln, die HUD-Aufzeichnung zu deaktivieren und den Capture-Kompatibilitätsmodus zu deaktivieren oder zu aktivieren.  

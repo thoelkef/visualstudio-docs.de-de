@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901644"
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Fenster „Aufrufhierarchie“
   
  Sie können die Anzeige im **Objektkatalog** filtern. Mithilfe der Dropdownliste am oberen Rand des Fensters können Sie zwischen folgenden Optionen wählen:  
   
--   Beliebiges .NET Framework  
+- Beliebiges .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   Die aktive Projektmappe  
+- Die aktive Projektmappe  
   
--   Ein benutzerdefinierter Satz von Komponenten  
+- Ein benutzerdefinierter Satz von Komponenten  
   
- Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliotheksassemblys, Typbibliotheken und OCX-Dateien einbeziehen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis „%APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat“ gespeichert.  
+  Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliotheksassemblys, Typbibliotheken und OCX-Dateien einbeziehen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis „%APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat“ gespeichert.  
   
- Im linken Bereich des **Objektkatalogs** werden physische Container wie .NET Framework- und COM-Komponenten angezeigt. Sie können die Containerknoten erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.  
+  Im linken Bereich des **Objektkatalogs** werden physische Container wie .NET Framework- und COM-Komponenten angezeigt. Sie können die Containerknoten erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.  
   
- Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Wählen Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen**, um eine Suche zu löschen.  
+  Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Wählen Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen**, um eine Suche zu löschen.  
   
- Der **Objektkatalog** verfolgt die von Ihnen vorgenommene Auswahl, und Sie können zwischen Ihren Auswahlmöglichkeiten navigieren, indem Sie die Schaltflächen **Weiter** und **Zurück** auf der Symbolleiste verwenden.  
+  Der **Objektkatalog** verfolgt die von Ihnen vorgenommene Auswahl, und Sie können zwischen Ihren Auswahlmöglichkeiten navigieren, indem Sie die Schaltflächen **Weiter** und **Zurück** auf der Symbolleiste verwenden.  
   
- Sie können den **Objektkatalog** zum Hinzufügen eines Assemblyverweises auf eine geöffnete Projektmappe verwenden, indem Sie ein Objekt auswählen (Assembly, Namespace, Typ oder Member) und dann die Schaltfläche **Verweis hinzufügen** auf der Symbolleiste verwenden.  
+  Sie können den **Objektkatalog** zum Hinzufügen eines Assemblyverweises auf eine geöffnete Projektmappe verwenden, indem Sie ein Objekt auswählen (Assembly, Namespace, Typ oder Member) und dann die Schaltfläche **Verweis hinzufügen** auf der Symbolleiste verwenden.  
   
 ### <a name="object-browser-settings"></a>Objektkatalog: Einstellungen  
  Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten festlegen.  

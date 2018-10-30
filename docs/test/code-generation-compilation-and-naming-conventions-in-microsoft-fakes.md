@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926019"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **Namespaces**
 
--   Das Suffix ".Fakes" wird dem Namespace hinzugefügt.
+- Das Suffix ".Fakes" wird dem Namespace hinzugefügt.
 
-     Beispielsweise enthält `System.Fakes`-Namespace die Shim-Typen des System-Namespace.
+   Beispielsweise enthält `System.Fakes`-Namespace die Shim-Typen des System-Namespace.
 
--   Global.Fakes enthält den Shim-Typ des leeren Namespace.
+- Global.Fakes enthält den Shim-Typ des leeren Namespace.
 
- **Typnamen**
+  **Typnamen**
 
--   Der Präfix "Shim" wird dem Typnamen hinzugefügt, um den Shim-Typnamen zu erstellen.
+- Der Präfix "Shim" wird dem Typnamen hinzugefügt, um den Shim-Typnamen zu erstellen.
 
-     Beispielsweise ist ShimExample der Shim-Typ des Beispieltyps.
+   Beispielsweise ist ShimExample der Shim-Typ des Beispieltyps.
 
--   Der Präfix "Stub" wird dem Typnamen hinzugefügt, um den Stub-Typnamen zu erstellen.
+- Der Präfix "Stub" wird dem Typnamen hinzugefügt, um den Stub-Typnamen zu erstellen.
 
-     Beispielsweise ist StubIExample der Stub-Typ des IExample-Typs.
+   Beispielsweise ist StubIExample der Stub-Typ des IExample-Typs.
 
- **Typargumente und Strukturen des geschachtelten Typs**
+  **Typargumente und Strukturen des geschachtelten Typs**
 
--   Generische Typargumente werden kopiert.
+- Generische Typargumente werden kopiert.
 
--   Struktur des geschachtelten Typs wird für Shim-Typen kopiert.
+- Struktur des geschachtelten Typs wird für Shim-Typen kopiert.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Namenskonventionen für Shim-Delegateigenschaften oder Stub-Delegatfelder
 
 **Grundregeln** für Feldbenennung, beginnend mit einem leeren Namen:
 
--   Der Methodenname ist angefügt.
+- Der Methodenname ist angefügt.
 
--   Wenn der Methodenname eine explizite Schnittstellenimplementierung ist, sind die Punkte entfernt.
+- Wenn der Methodenname eine explizite Schnittstellenimplementierung ist, sind die Punkte entfernt.
 
--   Wenn die Methode generisch ist, wird `Of`*n* angefügt, wobei *n* für die Anzahl der generischen Methodenargumente steht.
+- Wenn die Methode generisch ist, wird `Of`*n* angefügt, wobei *n* für die Anzahl der generischen Methodenargumente steht.
 
- **Spezielle Methodennamen**, wie beispielsweise Eigenschaften-Getter oder -Setter, werden wie in der folgenden Tabelle beschrieben behandelt:
+  **Spezielle Methodennamen**, wie beispielsweise Eigenschaften-Getter oder -Setter, werden wie in der folgenden Tabelle beschrieben behandelt:
 
 |Wenn die Methode Folgendes ist...|Beispiel|Methodenname angefügt|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |Ein **Konstruktor**|`.ctor`|`Constructor`|
 |Ein statischer **Konstruktor**|`.cctor`|`StaticConstructor`|
 |Eine **Zugriffsmethode** mit einem Methodennamen, der aus zwei durch „_“ getrennten Teilen besteht (z.B. Eigenschaftengetter)|*kind_name* (kommt häufig vor, wird aber durch ECMA nicht erzwungen)|*NameKind*, in dem beide Teile groß geschrieben und vertauscht werden|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>Namenskonventionen für Parametertypen
 
 |Vorgabe|Angefügte Zeichenfolge ist...|
-|-----------|-------------------------|
+|-|-|
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|
 |Ein **out-Parameter**`out T`|`TOut`|
 |Ein **ref-Parameter**`ref T`|`TRef`|

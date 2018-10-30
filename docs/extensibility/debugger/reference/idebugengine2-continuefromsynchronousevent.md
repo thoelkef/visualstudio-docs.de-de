@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
+title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305179184df1241b6d944ea78e164c09af37923f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43589e4fd5a75c5c1cd7681dde4a3957f3fe4243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837515"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Wird aufgerufen, von der Sitzung Debug-Manager (SDM), um anzugeben, dass ein synchrone Debug-Ereignis, die bereits durch die Debugging-Modul (DE) an die SDM gesendet, empfangen und verarbeitet wurde.  
+Wird aufgerufen, durch die sitzungsbasierter Debug-Manager (SDM), um anzugeben, dass ein synchroner Debug-Ereignis, die zuvor von der Debug-Engine (DE), dem SDM, gesendet, empfangen und verarbeitet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,16 +41,16 @@ HRESULT ContinueFromSynchronousEvent(
   
 #### <a name="parameters"></a>Parameter  
  `pEvent`  
- [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte nun fortgesetzt.  
+ [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte jetzt fortfahren.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die DE muss sicherstellen, dass es die Quelle des Ereignisses durch dargestellt wurde die `pEvent` Parameter.  
+ Die DE muss sicherstellen, dass die Quelle des Ereignisses durch dargestellt wurden die `pEvent` Parameter.  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CEngine` Objekt, implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CEngine` Objekt, das implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  

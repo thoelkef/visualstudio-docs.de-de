@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_discardable | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_discardable | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34741f995431fa04a3e6d75ad7988b306d1358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 13e72f71fd382b8b94f7acfae9f6e23a1001d50c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879869"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
-Ruft ein Flag, das angibt, ob der Bereich verworfen werden kann.  
+Ruft ein Flag, das angibt, ob der Abschnitt nicht verworfen werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get_discardable (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn Abschnitt aus dem Speicher verworfen werden kann, nach Bedarf; andernfalls wird `FALSE`.  
+ [out] Gibt `TRUE` Wenn Abschnitt aus dem Speicher verworfen werden kann, je nach Bedarf ist; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

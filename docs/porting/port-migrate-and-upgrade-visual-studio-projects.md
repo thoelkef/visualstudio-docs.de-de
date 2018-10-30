@@ -1,7 +1,7 @@
 ---
 title: Portieren, Migrieren und Aktualisieren von Projekten
 description: Referenz zur Unterstützung in Visual Studio 2017 für in früheren Versionen von Visual Studio erstellte Projekten und zur Vorgehensweise von Visual Studio bei der Entscheidung, wann ein Projekt migriert werden muss.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280725"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325028"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Projektmigration und Upgradereferenz für Visual Studio 2017
 
@@ -41,7 +41,7 @@ Dieser Artikel enthält zurzeit nur Einzelheiten zu Projekttypen, die Visual Stu
 
 In der folgenden Liste wird die Unterstützung in Visual Studio 2017 für Projekte beschrieben, die in früheren Versionen erstellt wurden.
 
-Wenn ein Projekt oder ein Dateityp nicht aufgelistet wird, das vorhanden sein sollte, schlagen Sie im [Artikel zu Visual Studio 2015](port-migrate-and-upgrade-visual-studio-projects.md) nach, und verwenden Sie die Option „Give documentation feedback“ (Feedback zur Dokumentation geben) am unteren Rand der Seite, um die Details zu Ihrem Projekt bereitzustellen. (Wenn Sie eine Antwort möchten, verwenden Sie das Feedback zur Dokumentation anstelle des anonymen Steuerelements „Ist diese Seite hilfreich?“ )
+Wenn ein Projekt oder ein Dateityp nicht aufgelistet wird, das vorhanden sein sollte, schlagen Sie im [Artikel zu Visual Studio 2015](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) nach, und verwenden Sie die Option „Give documentation feedback“ (Feedback zur Dokumentation geben) am unteren Rand der Seite, um die Details zu Ihrem Projekt bereitzustellen. (Wenn Sie eine Antwort möchten, verwenden Sie das Feedback zur Dokumentation anstelle des anonymen Steuerelements „Ist diese Seite hilfreich?“ )
 
 | Projekttyp | Unterstützung |
 | --- | --- |

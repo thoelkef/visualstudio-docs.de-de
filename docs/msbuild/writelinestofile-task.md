@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile-Aufgabe | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341809"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228837"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile-Aufgabe
 Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.  
@@ -39,7 +39,8 @@ Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.
 |`Lines`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Elemente an, die in die Datei geschrieben werden sollen|  
 |`Overwrite`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, überschreibt die Aufgabe den vorhandenen Inhalt in der Datei|  
 |`Encoding`|Optionaler `String` -Parameter.<br /><br /> Wählt die Zeichencodierung aus, z.B. „Unicode“  Siehe auch <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die angegebene Zieldatei (sofern vorhanden) zuerst gelesen, um den Inhalt mit der Ausgabe des Tasks zu vergleichen. Wenn beides identisch ist, wird die Datei nicht auf den Datenträger geschrieben, und der Zeitstempel bleibt erhalten.|  
+
 ## <a name="remarks"></a>Hinweise  
  Wenn `Overwrite` `true` ist, wird eine neue Datei erstellt. Anschließend werden die Inhalte in die Datei geschrieben und diese wird geschlossen. Ist die Zieldatei bereits vorhanden, wird sie überschrieben. Wenn `Overwrite` `false` ist, wird der Inhalt an die Datei angefügt und die Zieldatei erstellt, wenn sie nicht bereits vorhanden ist.  
   

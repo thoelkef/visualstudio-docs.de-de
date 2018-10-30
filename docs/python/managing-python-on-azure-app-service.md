@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren von Python in Azure App Service
+title: Konfigurieren von Python in Azure App Service (Windows)
 description: Installieren von Python-Interpretern und -Bibliotheken in Azure App Service und Konfigurieren von Webanwendungen in der Weise, dass sie korrekt auf den Interpreter verweisen.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468714"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459867"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Einrichten einer Python-Umgebung in Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Einrichten einer Python-Umgebung in Azure App Service (Windows)
 
 > [!Important]
-> Microsoft möchte zukünftig die Python-Erweiterungen für App Service wie in diesem Artikel beschrieben beenden, um eine direkte Bereitstellung für App Service unter Linux zu unterstützen. Die Erweiterungen funktionieren in der Zwischenzeit wie gewohnt weiter. Weitere Informationen zum Bereitstellen für App Service unter Linux finden Sie unter [Deploy a Python web app in Web App for Containers (Bereitstellen einer Python-Web-App in Web-App für Container)](/azure/app-service/containers/quickstart-python).
+> Microsoft hat die Python-Erweiterungen für App Service unter Windows wie in diesem Artikel beschrieben als veraltet erklärt, um eine direkte Bereitstellung für [App Service unter Linux](publishing-python-web-applications-to-azure-from-visual-studio.md) zu unterstützen.
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) ist ein Platform-as-a-Service-Angebot für Webanwendungen, egal, ob es sich um über einen Webbrowser zugreifbare Websites, um von Ihren eigenen Clients verwendete REST-APIs, oder um ereignisgesteuerte Verarbeitung handelt. App Service unterstützt die Verwendung von Python zur Implementierung von Anwendungen vollständig.
 

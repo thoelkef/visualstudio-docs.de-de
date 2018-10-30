@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Microsoft Docs
+title: FIELD_MODIFIERS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949083"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Gibt die Modifizierer für einen Feldtyp.  
+Gibt die Modifizierer für ein Feld an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -109,16 +109,16 @@ public enum enum_FIELD_MODIFIERS {
  Gibt an, dass das Feld nicht zugegriffen werden kann.  
   
  FIELD_MOD_ACCESS_PUBLIC  
- Gibt an, dass das Feld öffentlichen Zugriff hat.  
+ Gibt an, dass das Feld über öffentlichen Zugriff hat.  
   
  FIELD_MOD_ACCESS_PROTECTED  
- Gibt an, dass das Feld Zugriff geschütztem.  
+ Gibt an, dass das Feld Zugriff geschützt ist.  
   
  FIELD_MOD_ACCESS_PRIVATE  
  Gibt an, dass das Feld privaten Zugriff hat.  
   
  FIELD_MOD_NOMODIFIERS  
- Gibt an, dass das Feld keine Modifizierer hat.  
+ Gibt an, dass das Feld keine Modifizierer verfügt.  
   
  FIELD_MOD_STATIC  
  Gibt an, dass das Feld statisch ist.  
@@ -127,58 +127,58 @@ public enum enum_FIELD_MODIFIERS {
  Gibt an, dass das Feld eine Konstante ist.  
   
  FIELD_MOD_TRANSIENT  
- Gibt an, dass das Feld flüchtig ist.  
+ Gibt an, dass das Feld vorübergehend ist.  
   
  FIELD_MOD_VOLATILE  
- Gibt an, dass das Feld flüchtig ist.  
+ Gibt an, dass das Feld "volatile" ist.  
   
  FIELD_MOD_ABSTRACT  
  Gibt an, dass das Feld abstrakt ist.  
   
  FIELD_MOD_NATIVE  
- Gibt an, dass das Feld native ist.  
+ Gibt an, dass das Feld native.  
   
  FIELD_MOD_SYNCHRONIZED  
- Gibt an, dass das Feld synchronisiert werden.  
+ Gibt an, dass das Feld synchronisiert wird.  
   
  FIELD_MOD_VIRTUAL  
  Gibt an, dass das Feld virtuell ist.  
   
  FIELD_MOD_INTERFACE  
- Gibt an, dass das Feld eine Schnittstelle ist.  
+ Gibt an, dass das Feld eine Schnittstelle.  
   
  FIELD_MOD_FINAL  
- Gibt an, dass das Feld endgültig erteilt wird.  
+ Gibt an, dass das Feld Ihrem endgültigen Zustand vorliegt.  
   
  FIELD_MOD_SENTINEL  
- Gibt an, dass das Feld Sentinel ist.  
+ Gibt an, dass das Feld Sentinel.  
   
  FIELD_MOD_INNERCLASS  
- Gibt an, dass das Feld einer inneren Klasse ist.  
+ Gibt an, dass das Feld einer inneren Klasse.  
   
  FIELD_TYPE_OPTIONAL  
  Gibt an, dass das Feld optional ist.  
   
  FIELD_MOD_BYREF  
- Gibt an, dass das Feld mit einem Verweisargument ist. Dies ist speziell für die Methodenargumente.  
+ Gibt an, dass das Feld mit einem Verweisargument ist. Dies ist insbesondere für Methodenargumente.  
   
  FIELD_MOD_HIDDEN  
- Gibt an, dass das Feld in einem anderen Kontext angezeigt oder ausgeblendet werden muss; beispielsweise [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statische "lokal".  
+ Gibt an, dass das Feld in einem anderen Kontext angezeigt oder ausgeblendet werden muss. z. B. [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statischen lokalen Variablen.  
   
  FIELD_MOD_MARSHALASOBJECT  
- Gibt an, dass die Darstellung des Felds ein Objekt mit einer `IUnknown` Schnittstelle.  
+ Gibt an, dass das Feld repräsentiert den ein Objekt mit einer `IUnknown` Schnittstelle.  
   
  FIELD_MOD_SPECIAL_NAME  
- Gibt an, dass das Feld muss einen speziellen Namen, z. B. `.ctor` für einen Konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).  
+ Gibt an, dass das Feld einen speziellen Namen, z. B. `.ctor` für einen Konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).  
   
  FIELD_MOD_HIDEBYSIG  
- Gibt an, dass das Feld enthält die `Overloads` Schlüsselwort angewendet ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).  
+ Gibt an, dass das Feld enthält den `Overloads` Schlüsselwort angewendet wird ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).  
   
  FIELD_MOD_WRITEONLY  
- Gibt an, dass das Feld schreibgeschützt ist. Dieser Wert ist nicht im enthalten `FIELD_MOD_ALL`, wie die einzige Verwendung von Suchfelder nur Schreibzugriff für die funktionsauswertung ist. Ein Benutzer muss explizit angefordert `FIELD_MOD_WRITEONLY` Felder.  
+ Gibt an, dass das Feld schreibgeschützt ist. Dieser Wert befindet sich nicht im `FIELD_MOD_ALL`, da nur mit diesen Feldern nur Schreibzugriff für die funktionsauswertung ist. Ein Benutzer muss explizit anfordern `FIELD_MOD_WRITEONLY` Felder.  
   
  FIELD_MOD_ACCESS_MASK  
- Gibt eine Maske für Feldzugriff an.  
+ Gibt eine Maske für den Feldzugriff an.  
   
  FIELD_MOD_MASK  
  Gibt eine Maske für feldmodifizierern an.  
@@ -186,7 +186,7 @@ public enum enum_FIELD_MODIFIERS {
 ## <a name="remarks"></a>Hinweise  
  Verwendet für die `dwModifiers` Mitglied der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.  
   
- Diese Werte werden auch zum Übergeben der [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) Methode, um für bestimmte Felder filtern.  
+ Diese Werte werden auch zum Übergeben der [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) Methode zum Filtern nach bestimmten Feldern.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

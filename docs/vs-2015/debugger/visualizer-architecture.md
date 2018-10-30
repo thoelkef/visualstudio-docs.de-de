@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828688"
 ---
 # <a name="visualizer-architecture"></a>Schnellansichtarchitektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:  
   
--   Die *Debuggerseite* in Visual Studio-Debugger ausgeführt wird. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
+- Die *Debuggerseite* in Visual Studio-Debugger ausgeführt wird. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
   
--   Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, die Visual Studio debuggt (die *zu debuggende Komponente*).  
+- Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, die Visual Studio debuggt (die *zu debuggende Komponente*).  
   
- Eine Schnellansicht ist eine Debuggerkomponente, mit dem Sie den Debugger zum anzeigen kann (*visualisieren*) den Inhalt eines Datenobjekts in aussagekräftiger, verständlicher Form. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
+  Eine Schnellansicht ist eine Debuggerkomponente, mit dem Sie den Debugger zum anzeigen kann (*visualisieren*) den Inhalt eines Datenobjekts in aussagekräftiger, verständlicher Form. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
   
- Das Datenobjekt, das visualisiert werden befindet sich innerhalb des Prozesses, die Sie Debuggen (der *zu debuggende Komponente* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
+  Das Datenobjekt, das visualisiert werden befindet sich innerhalb des Prozesses, die Sie Debuggen (der *zu debuggende Komponente* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
   
 |Debuggerprozess|Zu debuggender Prozess|  
 |----------------------|----------------------|  

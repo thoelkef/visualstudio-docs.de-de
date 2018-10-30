@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Microsoft Docs
+title: STEPKIND | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f28748914566162cbe070dd3d2e606eb8ce118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b69f90633c08eda3b27c0292be44743b2cd38509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948368"
 ---
 # <a name="stepkind"></a>STEPKIND
-Gibt die Art der Schritt für die schrittweise Ausführung an.  
+Gibt den Schritt für die schrittweise Ausführung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,13 +51,13 @@ public enum enum_STEPKIND {
  Eine Funktion in Einzelschritten.  
   
  SCHRITTWEITE  
- Überspringt eine Funktion.  
+ Schritte für eine Funktion.  
   
  STEP_OUT  
- Führt einen Prozedurschritt aus einer Funktion.  
+ Die Schritte aus einer Funktion.  
   
  STEP_BACKWARDS  
- Schritte rückwärts in eine Funktion.  
+ Schritte nach hinten an eine Funktion.  
   
 ## <a name="remarks"></a>Hinweise  
  Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.  

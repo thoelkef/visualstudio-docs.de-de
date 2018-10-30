@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872927"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Für den Zugriff auf die **Just-In-Time-** wechseln Sie zur Seite der **Tools** 
   
  Sie können Just-In-Time-Debuggen für folgende Programmtypen aktivieren:  
   
--   Verwaltet  
+- Verwaltet  
   
--   Systemeigen  
+- Systemeigen  
   
--   Skript  
+- Skript  
   
- Just-In-Time-Debuggen ist ein Verfahren zum Debuggen eines Programms, das außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gestartet wurde. Sie können ein in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstelltes Programm außerhalb der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Umgebung ausführen. Wenn Sie Just-In-Time-Debuggen aktiviert haben, wird bei einem Absturz ein Dialogfeld angezeigt, das Ihnen die Möglichkeit zum Debuggen bietet.  
+  Just-In-Time-Debuggen ist ein Verfahren zum Debuggen eines Programms, das außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gestartet wurde. Sie können ein in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstelltes Programm außerhalb der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Umgebung ausführen. Wenn Sie Just-In-Time-Debuggen aktiviert haben, wird bei einem Absturz ein Dialogfeld angezeigt, das Ihnen die Möglichkeit zum Debuggen bietet.  
   
 ## <a name="associated-warnings"></a>Zugeordnete Warnungen  
  Beim Besuch auf dieser Seite des der **Optionen** Dialogfeld möglicherweise eine Warnmeldung angezeigt:  

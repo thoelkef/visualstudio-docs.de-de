@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889359"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
   
  Dieses Thema enthält folgende Abschnitte:  
   
--   [Die zu testende Methode](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Die zu testende Methode](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Erstellen einer Datenquelle](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Erstellen einer Datenquelle](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Hinzufügen eines TestContext zu einer Testklasse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Hinzufügen eines TestContext zu einer Testklasse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Schreiben der Testmethode](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Schreiben der Testmethode](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Angeben des DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Angeben des DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Ausführen des Tests und Anzeigen der Ergebnisse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Ausführen des Tests und Anzeigen der Ergebnisse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schritte:  
+  Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schritte:  
   
 1.  Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.  
   
@@ -61,17 +61,17 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
 ##  <a name="BKMK_The_method_under_test"></a> Die zu testende Methode  
  Nehmen wir zum Beispiel an, dass wir folgendes erstellt haben:  
   
-1.  Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.  
+1. Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.  
   
-2.  Ein Projekt mit dem Namen `BankDb` in `MyBank`, das die Transaktionen für Konten verwaltet.  
+2. Ein Projekt mit dem Namen `BankDb` in `MyBank`, das die Transaktionen für Konten verwaltet.  
   
-3.  Eine Klasse mit dem Namen `Maths` im Projekt `DbBank`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.  
+3. Eine Klasse mit dem Namen `Maths` im Projekt `DbBank`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.  
   
-4.  Ein Komponententestprojekt mit dem Namen `BankDbTests`, um das Verhalten der Komponente `BankDb` zu testen.  
+4. Ein Komponententestprojekt mit dem Namen `BankDbTests`, um das Verhalten der Komponente `BankDb` zu testen.  
   
-5.  Eine Komponentententestklasse mit dem Namen `MathsTests`, um das Verhalten von Klasse `Maths` zu testen.  
+5. Eine Komponentententestklasse mit dem Namen `MathsTests`, um das Verhalten von Klasse `Maths` zu testen.  
   
- Eine Methode in `Maths`, die zwei ganze Zahlen mithilfe einer Schleife hinzufügt, wird getestet:  
+   Eine Methode in `Maths`, die zwei ganze Zahlen mithilfe einer Schleife hinzufügt, wird getestet:  
   
 ```  
 public int AddIntegers(int first, int second)  

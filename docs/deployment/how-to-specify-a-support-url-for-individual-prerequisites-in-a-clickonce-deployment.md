@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4102decf844d70d85342aae9f140610102ff58
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1e93e8ab84a751c447488e1b4dc6e3e6779b86b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913279"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: angeben ein Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der Bereitstellung können Sie für eine Reihe von Voraussetzungen, die auf dem Clientcomputer für verfügbar sein müssen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt. Diese Abhängigkeiten enthalten, die mindestens erforderliche Version von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], kann jedoch nicht installiert diese erforderlichen Komponenten selbst Wenn eine erforderliche Komponente nicht gefunden wird, wird die Installation angehalten es einfach an und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation an.  
@@ -33,52 +33,52 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Testen der
   
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Geben Sie eine Support-URL für eine einzelne erforderliche Komponente  
   
-1.  Öffnen Sie das Anwendungsmanifest (die *". manifest"* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
+1. Öffnen Sie das Anwendungsmanifest (die *". manifest"* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
   
-2.  Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
+2. Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
   
-    ```xml  
+   ```xml  
+    <dependency>  
+       <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
+         <osVersionInfo>  
+           <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
+         </osVersionInfo>  
+       </dependentOS>  
+     </dependency>  
+   ```  
+  
+3. Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
+  
+   ```xml  
      <dependency>  
-        <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
-          <osVersionInfo>  
-            <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
-          </osVersionInfo>  
-        </dependentOS>  
-      </dependency>  
-    ```  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
+         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-3.  Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
+4. Legen Sie für eine Voraussetzung für eine Assembly, die im globalen Assemblycache vorinstalliert sein muss, die `supportUrl` für die `dependentAssembly` Element, das die erforderliche Assembly angibt:  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
-          <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+   ```xml  
+     <dependency>  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+         <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-4.  Legen Sie für eine Voraussetzung für eine Assembly, die im globalen Assemblycache vorinstalliert sein muss, die `supportUrl` für die `dependentAssembly` Element, das die erforderliche Assembly angibt:  
+5. Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die *.application* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
-          <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+6. Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
   
-5.  Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die *.application* Datei) für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung in einem Text-Editor.  
+   ```xml  
+   <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
+     <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
+     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
+   </compatibleFrameworks>  
+   ```  
   
-6.  Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
-  
-    ```xml  
-    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
-      <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
-      <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
-    </compatibleFrameworks>  
-    ```  
-  
-7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden der *Mage.exe* oder *MageUI.exe* SDK-Tools für diese Aufgabe als neu generiert diese Dateien mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden der *Mage.exe* oder *MageUI.exe* SDK-Tools für diese Aufgabe als neu generiert diese Dateien mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
  Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  

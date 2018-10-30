@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940382"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Fenster "Überwachen" und "Schnellüberwachung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Fügen Sie die Werte der drei Variablen dem Fenster "Überwachen" wie folgt hinzu:  
   
-1.  Legen Sie einen Haltepunkt in der Zeile `c = a + b;` fest.  
+1. Legen Sie einen Haltepunkt in der Zeile `c = a + b;` fest.  
   
-2.  Starten Sie das Debugging (**F5**). Die Ausführung hält am Haltepunkt an.  
+2. Starten Sie das Debugging (**F5**). Die Ausführung hält am Haltepunkt an.  
   
-3.  Öffnen Sie das Fenster "Überwachen" (**Debuggen &gt; Fenster &gt; Überwachen &gt; Überwachen 1**oder **STRG+ALT+W, 1**).  
+3. Öffnen Sie das Fenster "Überwachen" (**Debuggen &gt; Fenster &gt; Überwachen &gt; Überwachen 1**oder **STRG+ALT+W, 1**).  
   
-4.  Fügen Sie die Variable `a` der ersten Zeile hinzu, die Variable `b` der zweiten Zeile und die Variable `c` der dritten Zeile.  
+4. Fügen Sie die Variable `a` der ersten Zeile hinzu, die Variable `b` der zweiten Zeile und die Variable `c` der dritten Zeile.  
   
-5.  Debuggen fortsetzen.  
+5. Debuggen fortsetzen.  
   
- Sie sollten sehen, wie sich die Variablenwerte ändern, während Sie die `for`-Schleife durchlaufen.  
+   Sie sollten sehen, wie sich die Variablenwerte ändern, während Sie die `for`-Schleife durchlaufen.  
   
- Wenn Sie in systemeigenen Code programmieren, müssen Sie in einigen Fällen den Kontext eines Variablennamens oder eines Ausdruck qualifizieren, der einen Variablennamen enthält. Mit dem Kontext sind die Funktion, die Quelldatei und das Modul gemeint, in denen eine Variable enthalten ist. Falls Sie den Kontext qualifizieren müssen, können Sie dazu die Kontextoperatorsyntax verwenden. Weitere Informationen finden Sie unter "Ausdrücke (C++)".  
+   Wenn Sie in systemeigenen Code programmieren, müssen Sie in einigen Fällen den Kontext eines Variablennamens oder eines Ausdruck qualifizieren, der einen Variablennamen enthält. Mit dem Kontext sind die Funktion, die Quelldatei und das Modul gemeint, in denen eine Variable enthalten ist. Falls Sie den Kontext qualifizieren müssen, können Sie dazu die Kontextoperatorsyntax verwenden. Weitere Informationen finden Sie unter "Ausdrücke (C++)".  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Beobachten von Ausdrücken im Fenster "Überwachen"  
  Nun erfahren Sie, wie Sie Ausdrücke beobachten können. Sie können jeden gültigen vom Debugger erkannten Ausdruck hinzufügen.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Wenn Sie auf das Symbol zeigen, wird eine QuickInfo mit Informationen darüber angezeigt, weshalb der Ausdruck nicht ausgewertet wurde.  Wenn die kreisförmig verlaufenden Pfeile angezeigt werden, wurde der Ausdruck aus einem der folgenden Gründe nicht ausgewertet:  
   
--   • Ein Fehler aufgetreten ist, wie der Ausdruck wurde ausgewertet wird. So kann beispielsweise ein Timeout aufgetreten sein, oder eine Variable kann außerhalb des gültigen Bereichs liegen.  
+- • Ein Fehler aufgetreten ist, wie der Ausdruck wurde ausgewertet wird. So kann beispielsweise ein Timeout aufgetreten sein, oder eine Variable kann außerhalb des gültigen Bereichs liegen.  
   
--   • Der Ausdruck enthält einen Funktionsaufruf, die einen Nebeneffekt in der Anwendung auslösen könnte (finden Sie unter [Nebeneffekte und Ausdrücke](#bkmk_sideEffects)).  
+- • Der Ausdruck enthält einen Funktionsaufruf, die einen Nebeneffekt in der Anwendung auslösen könnte (finden Sie unter [Nebeneffekte und Ausdrücke](#bkmk_sideEffects)).  
   
--   Die automatische Auswertung von Eigenschaften- und impliziten Funktionsaufrufen durch den Debugger ist deaktiviert (**Tools &gt; Optionen &gt; Debugging &gt; Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**). In diesem Fall kann der Ausdruck nicht automatisch ausgewertet werden.  
+- Die automatische Auswertung von Eigenschaften- und impliziten Funktionsaufrufen durch den Debugger ist deaktiviert (**Tools &gt; Optionen &gt; Debugging &gt; Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**). In diesem Fall kann der Ausdruck nicht automatisch ausgewertet werden.  
   
- Klicken Sie zum Aktualisieren des Werts auf das Aktualisierungssymbol, oder drücken Sie die LEERTASTE. Der Debugger versucht, den Ausdruck neu auszuwerten. Wenn das Aktualisierungssymbol angezeigt wurde, weil die automatische Auswertung von Eigenschaften und impliziten Nebeneffekten deaktiviert war, kann der Ausdruck ausgewertet werden.  
+  Klicken Sie zum Aktualisieren des Werts auf das Aktualisierungssymbol, oder drücken Sie die LEERTASTE. Der Debugger versucht, den Ausdruck neu auszuwerten. Wenn das Aktualisierungssymbol angezeigt wurde, weil die automatische Auswertung von Eigenschaften und impliziten Nebeneffekten deaktiviert war, kann der Ausdruck ausgewertet werden.  
   
- Wenn Sie ein Symbol in Form eines Kreises mit zwei Wellenlinien sehen, die Threads ähneln, wurde der Ausdruck aufgrund einer möglichen threadübergreifenden Abhängigkeit nicht ausgewertet. Mit anderen Worten: Für die Auswertung des Codes müssen andere Threads in der Anwendung vorübergehend ausgeführt werden. Wenn Sie sich im Unterbrechungsmodus befinden, sind alle Threads in der Anwendung typischerweise angehalten. Wenn die vorübergehende Ausführung anderer Threads zugelassen wird, kann dies unerwartete Auswirkungen auf den Zustand des Programms nach sich ziehen, und der Debugger ignoriert Ereignisse (wie z. B. Haltepunkte und für diese Threads ausgelöste Ausnahmen).  
+  Wenn Sie ein Symbol in Form eines Kreises mit zwei Wellenlinien sehen, die Threads ähneln, wurde der Ausdruck aufgrund einer möglichen threadübergreifenden Abhängigkeit nicht ausgewertet. Mit anderen Worten: Für die Auswertung des Codes müssen andere Threads in der Anwendung vorübergehend ausgeführt werden. Wenn Sie sich im Unterbrechungsmodus befinden, sind alle Threads in der Anwendung typischerweise angehalten. Wenn die vorübergehende Ausführung anderer Threads zugelassen wird, kann dies unerwartete Auswirkungen auf den Zustand des Programms nach sich ziehen, und der Debugger ignoriert Ereignisse (wie z. B. Haltepunkte und für diese Threads ausgelöste Ausnahmen).  
   
 ##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Die Auswertung des folgenden Ausdrucks ändert beispielsweise den Wert von `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Wenn Sie nur die **dynamische Ansicht** für ein Objekt anzeigen möchten, können Sie den **dynamic** -Formatbezeichner verwenden:  
   
--   C#: **ObjectName, dynamic**  
+- C#: **ObjectName, dynamic**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- Die **dynamische Ansicht** verbessert auch die Debugvorgänge für COM-Objekte. Wenn der Debugger ein in **System.__ComObject**umschlossenes COM-Objekt findet, fügt er einen Knoten **Dynamische Ansicht** für das Objekt hinzu.  
+  Die **dynamische Ansicht** verbessert auch die Debugvorgänge für COM-Objekte. Wenn der Debugger ein in **System.__ComObject**umschlossenes COM-Objekt findet, fügt er einen Knoten **Dynamische Ansicht** für das Objekt hinzu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggerfenster](../debugger/debugger-windows.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_udtkind | Microsoft Docs'
+title: 'Idiasymbol:: Get_udtkind | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1ddc76e6a791421be6f55d985d1c8d59715de8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1bad5019b03612195de119e5ed6a6308d1e39b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925603"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-Ruft die Vielfalt an einen benutzerdefinierten Typ (UDT) ab.  
+Ruft die Vielfalt der einen benutzerdefinierten Typ (UDT) ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_udtKind (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md) -Enumeration, der den Typ des UDT angibt: Struktur, Klasse oder Union.  
+ [out] Gibt einen Wert aus der [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md) Enumeration, der angibt, die Art eines UDT:-Struktur, Klasse oder Union.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

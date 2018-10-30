@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906025"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Features in Visual Studio integrieren. Sie können Ihre Erweiterungen für andere Benutzer sowie für Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:  
   
--   Fügen Sie Befehle, Schaltflächen, Menüs und andere Elemente der Benutzeroberfläche der IDE  
+- Fügen Sie Befehle, Schaltflächen, Menüs und andere Elemente der Benutzeroberfläche der IDE  
   
--   Toolfenster für die neue Funktionalität hinzufügen  
+- Toolfenster für die neue Funktionalität hinzufügen  
   
--   Erweitern Sie IntelliSense für eine bestimmte Sprache, oder geben Sie IntelliSense für neue Programmiersprachen  
+- Erweitern Sie IntelliSense für eine bestimmte Sprache, oder geben Sie IntelliSense für neue Programmiersprachen  
   
--   Verwenden von Glühbirnen um zur Verfügung zu stellen Hinweise und Empfehlungen, die Entwicklern helfen, besseren Code schreiben  
+- Verwenden von Glühbirnen um zur Verfügung zu stellen Hinweise und Empfehlungen, die Entwicklern helfen, besseren Code schreiben  
   
--   Aktivieren der Unterstützung für eine neue Sprache  
+- Aktivieren der Unterstützung für eine neue Sprache  
   
--   Hinzufügen eines benutzerdefinierten Projekttyps  
+- Hinzufügen eines benutzerdefinierten Projekttyps  
   
--   Erreichen Sie Millionen von Entwicklern über den Visual Studio Marketplace  
+- Erreichen Sie Millionen von Entwicklern über den Visual Studio Marketplace  
   
- Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, sollte Weitere Informationen finden Sie Informationen zu diesen Features und zur [ab Visual Studio-Erweiterungen entwickeln](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, sollte Weitere Informationen finden Sie Informationen zu diesen Features und zur [ab Visual Studio-Erweiterungen entwickeln](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="install-the-visual-studio-sdk"></a>Installieren des Visual Studio SDK  
  Visual Studio SDK ist ein optionales Feature in Visual Studio-Setup. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857132"
 ---
 # <a name="making-commands-available"></a>Verfügbarmachen von Befehlen
 Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzeroberfläche (UI) mit den Befehlen Akzente werden. Sie können das Paket, um dieses Problem lautet wie folgt zu reduzieren, Programmieren:
@@ -54,12 +54,13 @@ Beachten Sie, dass das verzögertes Laden auch die startleistung verbessern kann
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] überwacht die Änderungen, die sich aus Benutzeraktionen wie das Laden eines Projekts oder die Bearbeitung von Erstellen von ergeben. Wenn Änderungen auftreten, wird die Darstellung der IDE automatisch geändert. Die folgende Tabelle zeigt die vier wichtigsten Kontexte der IDE ändern, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] überwacht.
 
-|Typ des Kontexts|Beschreibung|
-|---------------------|-----------------|
-|Aktive Projekttyp|Für die meisten Projekttypen dies `GUID` Wert ist identisch mit der GUID des VSPackage, die das Projekt implementiert. Allerdings [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte verwenden den Projekttyp `GUID` als Wert.|
-|Des aktiven Fensters|In der Regel ist dies die letzte aktive Fenster, das die aktuellen UI-Kontext für tastenbindungen herstellt. Allerdings kann er auch eines Toolfensters sein, eine schlüsselbindungstabellen, die den internen Webbrowser ähnelt. Für Windows wie z. B. die HTML-Editor-Dokument mit mehreren Registerkarten jede Registerkarte verfügt über einen anderen Befehlskontext `GUID`.|
-|Aktive Sprachdienst|Der Sprachdienst, der der Datei zugeordnet ist, die derzeit in einem Text-Editor angezeigt wird.|
-|Aktives Toolfenster|Ein Toolfenster, das geöffnet ist und den Fokus besitzt.|
+
+| Typ des Kontexts | Beschreibung |
+|-------------------------| - |
+| Aktive Projekttyp | Für die meisten Projekttypen dies `GUID` Wert ist identisch mit der GUID des VSPackage, die das Projekt implementiert. Allerdings [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte verwenden den Projekttyp `GUID` als Wert. |
+| Des aktiven Fensters | In der Regel ist dies die letzte aktive Fenster, das die aktuellen UI-Kontext für tastenbindungen herstellt. Allerdings kann er auch eines Toolfensters sein, eine schlüsselbindungstabellen, die den internen Webbrowser ähnelt. Für Windows wie z. B. die HTML-Editor-Dokument mit mehreren Registerkarten jede Registerkarte verfügt über einen anderen Befehlskontext `GUID`. |
+| Aktive Sprachdienst | Der Sprachdienst, der der Datei zugeordnet ist, die derzeit in einem Text-Editor angezeigt wird. |
+| Aktives Toolfenster | Ein Toolfenster, das geöffnet ist und den Fokus besitzt. |
 
  Eine fünfte wichtigen Kontextbereich wird der Zustand der Benutzeroberfläche der IDE. Benutzeroberfläche-Kontexte werden vom aktiven Befehlskontext identifiziert `GUID`s, wie folgt:
 

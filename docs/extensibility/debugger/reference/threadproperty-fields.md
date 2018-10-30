@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft Docs
+title: THREADPROPERTY_FIELDS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5733bfa889a38c1d143fdd3bfbd8f208fed13a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44692c4715db3db8f65a85bd66a129b4d17e5138
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855546"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Gibt an, welche Informationen über einen Thread abgerufen werden sollen.  
@@ -54,32 +54,32 @@ public enum enum_THREADPROPERTY_FIELDS {
   
 ## <a name="members"></a>Member  
  TPF_ID  
- Die Initialisierung/verwenden die `dwThreadId` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.  
+ Initialisieren und Verwenden der `dwThreadId` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.  
   
  TPF_SUSPENDCOUNT  
- Initialisieren/verwenden die `dwSuspendCount` Feld der `THREADPROPERTIE`S-Struktur.  
+ Initialisieren und Verwenden der `dwSuspendCount` Feld der `THREADPROPERTIE`S-Struktur.  
   
  TPF_STATE  
- Initialisieren/verwenden die `dwThreadState` Feld der `THREADPROPERTIE`S-Struktur.  
+ Initialisieren und Verwenden der `dwThreadState` Feld der `THREADPROPERTIE`S-Struktur.  
   
  TPF_PRIORITY  
- Initialisieren/verwenden die `bstrPriority` Feld der `THREADPROPERTIE`S-Struktur.  
+ Initialisieren und Verwenden der `bstrPriority` Feld der `THREADPROPERTIE`S-Struktur.  
   
  TPF_NAME  
- Initialisieren/verwenden die `bstrName` Feld der `THREADPROPERTIE`S-Struktur.  
+ Initialisieren und Verwenden der `bstrName` Feld der `THREADPROPERTIE`S-Struktur.  
   
  TPF_LOCATION  
- Initialisieren/verwenden die `bstrLocation` Feld der `THREADPROPERTIE`S-Struktur.  
+ Initialisieren und Verwenden der `bstrLocation` Feld der `THREADPROPERTIE`S-Struktur.  
   
  TPF_ALLFIELDS  
  Gibt alle Felder an.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Werte werden als Argument übergeben der [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Methode, um anzugeben, welche Felder von der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur initialisiert werden sollen.  
+ Diese Werte werden übergeben, als Argument an die [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Methode, um die Felder anzugeben der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) sind, dass die Struktur initialisiert werden.  
   
- Diese Werte werden auch verwendet, `dwFields` Mitglied der `THREADPROPERTIES` Struktur, um anzugeben, welche Felder verwendet und gültig sind.  
+ Diese Werte werden auch in verwendet `dwFields` Mitglied der `THREADPROPERTIES` Struktur, um anzugeben, welche Felder verwendet und gültig sind.  
   
- Diese Flags können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Flags können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

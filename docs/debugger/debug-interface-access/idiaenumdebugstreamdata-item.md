@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Item | Microsoft Docs'
+title: 'Idiaenumdebugstreamdata:: Item | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941365dc4f999920e1a44688bdce482ed63a3dfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936303"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Ruft den angegebenen Datensatz ab.  
@@ -37,19 +37,19 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parameter  
  Index  
- [in] Der Index des Eintrags abgerufen werden sollen. Der Index ist im Bereich 0 bis `count`-1 und, in denen `count` zurückgegebene [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
+ [in] Der Index des Datensatzes abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1, wobei `count` von zurückgegeben wird [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
   
  cbData  
- [in] Die Größe des Datenpuffers in Bytes.  
+ [in] Größe des Datenpuffers in Byte.  
   
- pcbData  
- [out] Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in der angegebene Datensatz verfügbar sind.  
+ "pcbdata"  
+ [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in den angegebenen Datensatz verfügbar sind.  
   
  Daten]  
- [out] Ein Puffer, der mit der Debug-datenstromdaten Datensatz ausgefüllt ist.  
+ [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und, wenn die `index` Parameter liegt außerhalb des gültigen Bereichs.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und, wenn die `index` -Parameter ist außerhalb des gültigen Bereichs.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

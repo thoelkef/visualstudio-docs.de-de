@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
+title: IDebugProcess3::GetENCAvailableState | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a34d9a6f403345bb84f172c416dda62f0109ec2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927722"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Diese Methode ruft die aktuellen bearbeiten und Fortfahren Zustand des Prozesses ab. Ein benutzerdefinierten Port Lieferanten sollten stets `E_NOTIMPL`.  
+Diese Methode ruft den aktuellen Status des Prozesses bearbeiten und fortfahren. Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,13 +44,13 @@ int GetENCAvailableState(
  [out] Ein Wert aus der [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) Enumeration.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
   
 > [!NOTE]
->  Ein benutzerdefinierten Port Lieferanten sollten stets `E_NOTIMPL`.  
+>  Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Hinweise  
- Dieser Zustand kann von beeinflusst werden [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  
+ Dieser Zustand kann durch beeinflusst werden [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

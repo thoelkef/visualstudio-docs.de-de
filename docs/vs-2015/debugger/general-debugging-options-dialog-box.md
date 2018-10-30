@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854324"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  **Verwalteten Kompatibilitätsmodus verwenden**  
  Ersetzt die Standarddebug-Engine durch eine Legacyversion, um die folgenden Szenarien zu ermöglichen:  
   
--   Sie verwenden eine andere .NET Framework-Sprache als C#, VB oder F#, die einen eigenen Expression Evaluator bereitstellt (dies schließt C++/CLI mit ein).  
+- Sie verwenden eine andere .NET Framework-Sprache als C#, VB oder F#, die einen eigenen Expression Evaluator bereitstellt (dies schließt C++/CLI mit ein).  
   
--   Sie möchten „Bearbeiten und Fortfahren“ für C++-Projekte beim Debuggen im gemischten Modus aktivieren.  
+- Sie möchten „Bearbeiten und Fortfahren“ für C++-Projekte beim Debuggen im gemischten Modus aktivieren.  
   
- Beachten Sie, dass durch Auswählen des verwalteten Kompatibilitätsmodus einige Funktionen deaktiviert werden, die nur in der standardmäßigen Debug-Engine implementiert werden.  
+  Beachten Sie, dass durch Auswählen des verwalteten Kompatibilitätsmodus einige Funktionen deaktiviert werden, die nur in der standardmäßigen Debug-Engine implementiert werden.  
   
- **Systemeigenen Kompatibilitätsmodus verwenden**  
- Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
+  **Systemeigenen Kompatibilitätsmodus verwenden**  
+  Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
   
- Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Z. B. die legacy-Engine verfügt nicht über viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.  
+  Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Z. B. die legacy-Engine verfügt nicht über viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.  
   
- **Verwenden Sie die älteren c# und VB-ausdrucksauswertungen**  
- Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.  
+  **Verwenden Sie die älteren c# und VB-ausdrucksauswertungen**  
+  Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.  
   
- **Warnen Sie, wenn benutzerdefinierte Debugger für die Anzeige potenziell unsicherer Prozesse (nur verwaltet) verwenden.**  
- Visual Studio warnt Sie bei Verwendung einer benutzerdefinierten Debuggerschnellansicht, die im zu debuggenden Prozess Code ausführt, da es sich um unsicheren Code handeln könnte.  
+  **Warnen Sie, wenn benutzerdefinierte Debugger für die Anzeige potenziell unsicherer Prozesse (nur verwaltet) verwenden.**  
+  Visual Studio warnt Sie bei Verwendung einer benutzerdefinierten Debuggerschnellansicht, die im zu debuggenden Prozess Code ausführt, da es sich um unsicheren Code handeln könnte.  
   
- **Heapzuweisung von Windows Debug (nur systemeigen)**  
- Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
+  **Heapzuweisung von Windows Debug (nur systemeigen)**  
+  Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
   
- **Aktivieren Sie UI-Debuggingtools für XAML**  
- Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Aktivieren Sie UI-Debuggingtools für XAML**  
+  Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Vorschau der ausgewählten Elemente in visuelle Echtzeitstruktur**  
- Das XAML-Element, dessen Kontext ausgewählt ist, ebenfalls ausgewählt ist, der **Live Visual Tree** Fenster.  
+  **Vorschau der ausgewählten Elemente in visuelle Echtzeitstruktur**  
+  Das XAML-Element, dessen Kontext ausgewählt ist, ebenfalls ausgewählt ist, der **Live Visual Tree** Fenster.  
   
- **Laufzeittools in Anwendung**  
- Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
+  **Laufzeittools in Anwendung**  
+  Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
   
- **Diagnosetools beim Debuggen aktivieren**  
- Die **Diagnosetools** Fenster wird angezeigt, während des Debuggens. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Diagnosetools beim Debuggen aktivieren**  
+  Die **Diagnosetools** Fenster wird angezeigt, während des Debuggens. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **PerfTip für verstrichene Zeit beim Debuggen anzeigen**  
- Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  
+  **PerfTip für verstrichene Zeit beim Debuggen anzeigen**  
+  Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  
   
- **Bearbeiten und Fortfahren aktivieren**  
- Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens verwenden.  
+  **Bearbeiten und Fortfahren aktivieren**  
+  Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens verwenden.  
   
- **Aktivieren Sie systemeigene bearbeiten und fortfahren**  
- Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Aktivieren Sie systemeigene bearbeiten und fortfahren**  
+  Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Anwenden von Änderungen beim fortfahren (nur systemeigen)**  
- Beim Fortsetzen eines unterbrochenen Prozesses kompiliert Visual Studio automatisch alle ausstehenden Codeänderungen und wendet sie an. Ist diese Option nicht aktiviert, können Sie Änderungen mit der Option „Codeänderungen übernehmen“ im Menü „Debuggen“ übernehmen.  
+  **Anwenden von Änderungen beim fortfahren (nur systemeigen)**  
+  Beim Fortsetzen eines unterbrochenen Prozesses kompiliert Visual Studio automatisch alle ausstehenden Codeänderungen und wendet sie an. Ist diese Option nicht aktiviert, können Sie Änderungen mit der Option „Codeänderungen übernehmen“ im Menü „Debuggen“ übernehmen.  
   
- **Warnung bei veraltetem Code (nur systemeigen)**  
- Ruft Warnungen über veralteten Code ab.  
+  **Warnung bei veraltetem Code (nur systemeigen)**  
+  Ruft Warnungen über veralteten Code ab.  
   
- **Zulassen Sie (nur systemeigen) Vorkompilierung**  
- Vorkompilieren ist zulässig.  
+  **Zulassen Sie (nur systemeigen) Vorkompilierung**  
+  Vorkompilieren ist zulässig.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

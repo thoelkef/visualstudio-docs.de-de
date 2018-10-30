@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836826"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -33,13 +33,13 @@ Wenn Sie um den Datenschutz besorgt sind, fügen Sie keine Informationen, die pr
 
 1. Klicken Sie im erstellten Bericht auf **Kommentar hinzufügen**, um eine private Beschreibung des Problems zu erstellen.
 
-1. Verwenden Sie im Antwort-Editor das Steuerelement unter den Schaltflächen **Senden** und **Abbrechen**, um die Zielgruppe für Ihre Antwort anzugeben. Wählen Sie **Viewable by moderators and the original poster** (Sichtbar für Moderatoren und den Verfasser) aus, um die Sichtbarkeit auf Microsoft-Mitarbeiter und sich selbst zu beschränken.
+2. Verwenden Sie im Antwort-Editor das Steuerelement unter den Schaltflächen **Senden** und **Abbrechen**, um die Zielgruppe für Ihre Antwort anzugeben. Wählen Sie **Viewable by moderators and the original poster** (Sichtbar für Moderatoren und den Verfasser) aus, um die Sichtbarkeit auf Microsoft-Mitarbeiter und sich selbst zu beschränken.
 
    ![Datenschutz-Steuerelement in der Entwicklercommunity](media/developer-community-privacy-control.png)
 
    Nur die von Ihnen angegebenen Personen können die Kommentare sowie darin enthaltene Bilder, Links und Code anzeigen. Sämtliche Antworten unter dem Kommentar weisen die gleiche Sichtbarkeit wie der ursprüngliche Kommentar auf. Dies gilt auch dann, wenn das Datenschutz-Steuerelement den Status der eingeschränkten Sichtbarkeit nicht korrekt anzeigt.
 
-1. Fügen Sie die Beschreibung und weitere erforderliche Informationen, Bilder und Dateianlagen für die Reproduktion hinzu. Klicken Sie auf die Schaltfläche **Senden**, um diese Informationen privat zu senden.
+3. Fügen Sie die Beschreibung und weitere erforderliche Informationen, Bilder und Dateianlagen für die Reproduktion hinzu. Klicken Sie auf die Schaltfläche **Senden**, um diese Informationen privat zu senden.
 
    > [!NOTE]
    > Es gibt einen Grenzwert von maximal 10 Dateien und maximal 2 GB in angehängten Dateien. Wenn Sie eine größere Datei hochladen müssen, können Sie einen neuen Problembericht senden oder in einem privaten Kommentar bei einem Microsoft-Mitarbeiter eine Upload-URL anfordern.
@@ -82,8 +82,8 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
    - Dumpdatei
 
-   > [!NOTE]
-   > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
+    > [!NOTE]
+    > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893233"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
   
  **Anforderungen**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Betriebssysteme:  
+- Betriebssysteme:  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Webbrowserversionen:  
+- Webbrowserversionen:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Unterstützte Versionen von Mozilla Firefox und Google Chrome finden Sie [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+  -   Unterstützte Versionen von Mozilla Firefox und Google Chrome finden Sie [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
--   Installieren Sie die [Selenium-Komponenten für browserübergreifende Coded UI-Tests](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Installieren Sie die [Selenium-Komponenten für browserübergreifende Coded UI-Tests](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **Was wird von allen Webbrowsern unterstützt?**  
+  **Was wird von allen Webbrowsern unterstützt?**  
   
--   [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) wie Eigenschaften, Suche und Playback-Waiter  
+- [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) wie Eigenschaften, Suche und Playback-Waiter  
   
--   Popups und Dialogfelder  
+- Popups und Dialogfelder  
   
--   [Ausführen von einfachem JavaScript ohne Rückgabetyp](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Ausführen von einfachem JavaScript ohne Rückgabetyp](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Warum sollte ich Tests der programmierten UI in mehreren Webbrowsertypen durchführen?  
  Durch das Testen der Webanwendung in verschiedenen Webbrowsertypen können Sie die UI-Benutzerfreundlichkeit besser für Benutzer emulieren, die möglicherweise andere Browser verwenden. Zum Beispiel könnte die Anwendung Steuerelemente oder Code in Internet Explorer enthalten, die nicht mit anderen Webbrowsern kompatibel sind. Indem Sie Coded UI-Tests mit anderen Browsern ausführen, können Sie Probleme erkennen und korrigieren, bevor sich diese auf Ihre Kunden auswirken.  
@@ -74,16 +74,16 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
   
 #### <a name="installing-selenium-components"></a>Installieren von Selenium-Komponenten  
   
-1.  Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.  
+1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.  
   
-2.  Suchen Sie im Dialogfeld „Erweiterungen und Updates“ für `Selenium components for Cross Browser Testing`.  
+2. Suchen Sie im Dialogfeld „Erweiterungen und Updates“ für `Selenium components for Cross Browser Testing`.  
   
-3.  Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.  
+3. Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.  
   
-    > [!TIP]
-    >  Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) herunterladen.  
+   > [!TIP]
+   >  Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) herunterladen.  
   
- Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Debuggen aktivieren  
  Um das Debuggen der Webanwendung zu aktivieren, müssen Sie die folgenden Konfigurationsoptionen ausführen:  
@@ -106,29 +106,29 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
+- ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
+- ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
   
-     Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.  
+   Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
+- ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
   
- **Tipps**  
+  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
+- ![Tipp](../test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
   
-     **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**  
+   **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**  
   
-     Geben Sie die folgenden Werte an:  
+   Geben Sie die folgenden Werte an:  
   
-    -   `EqtTraceLevel` im Abschnitt `system.diagnostics`.  
+  - `EqtTraceLevel` im Abschnitt `system.diagnostics`.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         Durch Festlegen des Werts auf 3 oder höher werden für jede Aktion Screenshots aufgezeichnet. Wenn der Wert auf 1 oder 2 festgelegt ist, werden Screenshots nur für Fehleraktionen aufgezeichnet.  
+     Durch Festlegen des Werts auf 3 oder höher werden für jede Aktion Screenshots aufgezeichnet. Wenn der Wert auf 1 oder 2 festgelegt ist, werden Screenshots nur für Fehleraktionen aufgezeichnet.  
   
-     Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI Test Logs (Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI)](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI Test Logs (Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI)](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
   

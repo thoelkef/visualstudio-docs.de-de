@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843404"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Auswählen des Installationsverzeichnisses für ein VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
   
  [Verwalten von VSPackages](../../extensibility/managing-vspackages.md) gibt an, dass die Registrierungseinträge steuern, wo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tatsächlich sucht einer VSPackages Satelliten-DLL. Allerdings [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] versucht, eine Satelliten-DLL in einem Unterverzeichnis mit dem Namen für einen LCID-Wert, in der folgenden Reihenfolge zu laden:  
   
-1.  Standard-LCID (Visual Studio-LCID, z. B. \1033 für Englisch)  
+1. Standard-LCID (Visual Studio-LCID, z. B. \1033 für Englisch)  
   
-2.  Standard-LCID mit der standardmäßigen Sprachvariante an.  
+2. Standard-LCID mit der standardmäßigen Sprachvariante an.  
   
-3.  Systemstandard LCID.  
+3. Systemstandard LCID.  
   
-4.  Systemstandard LCID mit der standardmäßigen Sprachvariante an.  
+4. Systemstandard LCID mit der standardmäßigen Sprachvariante an.  
   
-5.  USA Englisch (. \1033 oder. \0x409).  
+5. USA Englisch (. \1033 oder. \0x409).  
   
- Wenn Ihre VSPackage-DLL-Ressourcen und Registry Einstiegspunkte SatelliteDll\DllName, beinhaltet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] versucht, die sie in der oben genannten Reihenfolge zu laden.  
+   Wenn Ihre VSPackage-DLL-Ressourcen und Registry Einstiegspunkte SatelliteDll\DllName, beinhaltet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] versucht, die sie in der oben genannten Reihenfolge zu laden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Auswählen zwischen freigegebenen und mit versionsverwaltung durch das VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

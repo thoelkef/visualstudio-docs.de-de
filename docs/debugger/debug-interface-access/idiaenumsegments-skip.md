@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Skip | Microsoft Docs'
+title: 'Idiaenumsegments:: Skip | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f90ec641ca3039a03ad27e4c012ea7580febe9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 595623b93bbca7d5818d242f1c1818d24ff48e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938889"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
-Überspringt eine angegebene Anzahl von Segmenten in einem Enumerationsfolge an.  
+Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl der Segmente in der Enumeration Sequenz zu überspringen.  
+ [in] Die Anzahl der Segmente in der Enumerationsfolge übersprungen werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` Wenn es keine weiteren Segmente mehr sind für überspringen.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` treten keine weiteren Segmente mehr überspringen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

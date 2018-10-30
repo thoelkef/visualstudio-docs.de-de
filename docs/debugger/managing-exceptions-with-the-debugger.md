@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881689"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
@@ -217,7 +217,7 @@ So fügen Sie bedingte Ausnahmen hinzu:
 
    ![Zusätzliche Bedingungen für eine Ausnahme](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Geben Sie für jede Zeile Bedingung den Namen des Moduls, und ändern Sie die Liste der Vergleich-Operator, **gleich** oder **Not Equals**. Sie können Platzhalter angeben (**\***) im Namen mehr als einem Modul angeben.
+3. Geben Sie für jede Zeile Bedingung den Namen des Moduls, und ändern Sie die Liste der Vergleich-Operator, **gleich** oder **Not Equals**. Sie können Platzhalter angeben (**\\***) im Namen mehr als einem Modul angeben.
 
 4. Wenn Sie eine Bedingung zu löschen möchten, wählen Sie die **X** am Ende der Zeile für die Bedingung.
 

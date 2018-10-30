@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875475"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Prozessinterne Compiler  
  Aus Gründen der Leistungssteigerung wird in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nach Möglichkeit die prozessinterne Version des [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Compilers verwendet. (Nicht zutreffend für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Dazu müssen die folgenden Bedingungen erfüllt sein:  
   
--   Ein Ziel des Projekts muss bei `Vbc`-Projekten die Aufgabe mit dem Namen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] enthalten.  
+- Ein Ziel des Projekts muss bei `Vbc`-Projekten die Aufgabe mit dem Namen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] enthalten.  
   
--   Der `UseHostCompilerIfAvailable` -Parameter der Aufgabe muss auf true festgelegt sein.  
+- Der `UseHostCompilerIfAvailable` -Parameter der Aufgabe muss auf true festgelegt sein.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense zur Entwurfszeit  
  Zum Aufrufen der IntelliSense-Unterstützung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vor dem Generieren einer Ausgabeassembly in einem Build müssen die folgenden Bedingungen erfüllt sein:  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Auflösen von Verweisen  
  Verweisauflösung ist der Prozess, bei dem die in einer Projektdatei gespeicherten Verweiselemente verwendet werden, um tatsächliche Assemblys zu suchen. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muss die Verweisauflösung initiieren, um ausführliche Eigenschaften für jeden Verweis im **Eigenschaftenfenster** anzuzeigen. In der folgenden Liste werden die drei Verweistypen sowie deren Auflösung beschrieben.  
   
--   Assemblyverweise:  
+- Assemblyverweise:  
   
-     Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
+   Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
   
-    -   `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
+  - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
   
-    -   `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
+  - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
   
-    -   `ResolvedFrom`wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aufgelöst wurde.  
+  - `ResolvedFrom`wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aufgelöst wurde.  
   
--   COM-Verweise:  
+- COM-Verweise:  
   
-     Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveCOMReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ComReferenceWrappers`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation mit dem vollständigen Pfad zur Interop-Assembly für den entsprechenden Verweis verfügen. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `CopyLocal` verfügen, mit denen über die Festlegung auf TRUE oder FALSE angegeben wird, ob die Assembly in den Ausgabeordner kopiert werden soll.  
+   Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveCOMReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ComReferenceWrappers`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation mit dem vollständigen Pfad zur Interop-Assembly für den entsprechenden Verweis verfügen. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `CopyLocal` verfügen, mit denen über die Festlegung auf TRUE oder FALSE angegeben wird, ob die Assembly in den Ausgabeordner kopiert werden soll.  
   
--   Systemeigene Verweise  
+- Systemeigene Verweise  
   
-     Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveNativeReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `NativeReferenceFile`erstellt werden. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `OriginalItemSpec`mit der ursprünglichen Elementspezifikation des entsprechenden Verweises verfügen.  
+   Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveNativeReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `NativeReferenceFile`erstellt werden. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `OriginalItemSpec`mit der ursprünglichen Elementspezifikation des entsprechenden Verweises verfügen.  
   
 ## <a name="performance-shortcuts"></a>Leistungsoptimierungen  
  Wenn Sie das Debuggen in der Visual Studio-Benutzeroberfläche starten (entweder durch Auswahl der F5-TASTE oder in der Menüleiste durch Auswahl von **Debuggen** > **Debugging starten**), wendet der Buildprozess zur Leistungsverbesserung eine schnelle Überprüfung auf Updates an. In einigen Fällen, in denen benutzerdefinierte Builds Dateien erstellen, die ihrerseits erstellt werden, werden die geänderten Dateien von der schnellen Überprüfung auf Updates nicht einwandfrei erkannt. In Projekten, die eine gründlichere Überprüfung auf Updates erfordern, lässt sich die schnelle Überprüfung auf Aktualisierungen deaktivieren, indem die Umgebungsvariable `DISABLEFASTUPTODATECHECK=1`festgelegt wird. Alternativ kann dies als MSBuild-Eigenschaft im Projekt oder in einer vom Projekt importierten Datei festgelegt werden.  

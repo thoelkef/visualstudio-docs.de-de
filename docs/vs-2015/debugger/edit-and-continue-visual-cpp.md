@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10bf586f24479bd1f531c5a55ab89f644bbcadee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872875"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“  
  Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
   
-2.  Wählen Sie im Dialogfeld **Optionen** den Eintrag **Debugging / Allgemein**aus.  
+2. Wählen Sie im Dialogfeld **Optionen** den Eintrag **Debugging / Allgemein**aus.  
   
-3.  Aktivieren bzw. deaktivieren Sie in der Gruppe **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren** .  
+3. Aktivieren bzw. deaktivieren Sie in der Gruppe **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren** .  
   
- Eine Änderung dieser Einstellung betrifft alle Projekte, an denen Sie arbeiten. Sie müssen die Anwendung nicht neu erstellen, nachdem Sie die Einstellung geändert haben. Sie können die Einstellung sogar ändern, während Sie debuggen. Wenn Sie die Anwendung über die Befehlszeile oder mit einem Makefile erstellen, jedoch in der Visual Studio-Umgebung debuggen, können Sie die Option „Bearbeiten und Fortfahren“ trotzdem verwenden, sofern Sie die **/ZI** -Option festlegen.  
+   Eine Änderung dieser Einstellung betrifft alle Projekte, an denen Sie arbeiten. Sie müssen die Anwendung nicht neu erstellen, nachdem Sie die Einstellung geändert haben. Sie können die Einstellung sogar ändern, während Sie debuggen. Wenn Sie die Anwendung über die Befehlszeile oder mit einem Makefile erstellen, jedoch in der Visual Studio-Umgebung debuggen, können Sie die Option „Bearbeiten und Fortfahren“ trotzdem verwenden, sofern Sie die **/ZI** -Option festlegen.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Gewusst wie: Explizites Übernehmen von Codeänderungen  
  In Visual C++ kann „Bearbeiten und Fortfahren“ Codeänderungen auf zweierlei Weise übernehmen. Codeänderungen können implizit übernommen werden, wenn Sie einen Ausführungsbefehl wählen, oder explizit, wenn Sie den Befehl **Codeänderungen übernehmen** verwenden.  
@@ -66,11 +66,11 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
   
  So halten Sie das Übernehmen von Codeänderungen an:  
   
--   Wählen Sie im Menü **Debuggen** die Option **Übernehmen von Codeänderungen beenden**.  
+- Wählen Sie im Menü **Debuggen** die Option **Übernehmen von Codeänderungen beenden**.  
   
- Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
+  Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
   
- Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
+  Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Gewusst wie: Zurücksetzen des Ausführungspunkts  
  Einige Codeänderungen können dazu führen, dass der Ausführungspunkt an eine neue Position verschoben wird, wenn die Änderung von "Bearbeiten und Fortfahren" übernommen wird. Mit "Bearbeiten und Fortfahren" wird der Ausführungspunkt so genau wie möglich platziert. Das Ergebnis ist jedoch möglicherweise nicht korrekt.  

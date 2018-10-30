@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811580"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
   Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einen bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien sowie ein Setupprogramm erstellen.  
@@ -41,13 +41,13 @@ ms.locfileid: "35672428"
   
  Geben Sie den Speicherort als Datenträgerpfad, Dateifreigaben, FTP-Site oder Website-URL ein, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um den Speicherort zu suchen. Der Pfad kann in diesen Formaten sein:  
   
--   Ein relativer oder absoluter Pfad im Standard Windows format, z. B. *C:\Deploy\MyApplication* oder *\MyApplication*.  
+- Ein relativer oder absoluter Pfad im Standard Windows format, z. B. *C:\Deploy\MyApplication* oder *\MyApplication*.  
   
--   Ein Universal Naming Convention (UNC)-Pfad, z. B.  *\\\ServerName\MyApplication\\*.  
+- Ein Universal Naming Convention (UNC)-Pfad, z. B.  *\\\ServerName\MyApplication\\*.  
   
--   Eine URL einer Web site, z. B. http://www.microsoft.com/MyApplication.  
+- Eine URL einer Web site, z. B. http://www.microsoft.com/MyApplication.  
   
- Standardmäßig ist der Ort der Veröffentlichung *http://localhost/projectname/* Wenn IIS installiert, oder das Verzeichnis "publish\" verwendet, wenn Sie dies tun nicht IIS installiert haben.  
+  Standardmäßig ist der Ort der Veröffentlichung *http://localhost/projectname/* Wenn IIS installiert, oder das Verzeichnis "publish\" verwendet, wenn Sie dies tun nicht IIS installiert haben.  
   
 > [!NOTE]  
 >  Es sind weitere Überlegungen, wenn es sich bei dem Ziel-PC Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer mit der Option für lokale Veröffentlichung sein. Darüber hinaus ist der Standardspeicherort immer das *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908241"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debuggen eines installierten app-Pakets in Visual Studio (UWP)
 
@@ -78,25 +78,25 @@ Beim Debuggen eines installierten app-Pakets auf einem Remotecomputer zum ersten
 
      Wenn Sie anfügen können nicht mit Computernamen (nach der Auswahl **starten**), verwenden Sie stattdessen die IP-Adresse. Verwenden Sie die IP-Adresse für XBox, HoloLens und IoT-Geräte.
 
-5. Auswählen der Methode zum Authentifizieren, indem Sie eine Option in **Authentifizierungsmodus**.
+6. Auswählen der Methode zum Authentifizieren, indem Sie eine Option in **Authentifizierungsmodus**.
 
     Behalten Sie den Standardwert für die meisten apps **universell (unverschlüsseltes Protokoll)**.
 
-6. Wählen Sie den Namen der app zu Debuggen unter **ausführen** oder **nicht ausgeführt.** , und wählen Sie **starten** oder (bei Ausführung von apps) **Anfügen**.
+7. Wählen Sie den Namen der app zu Debuggen unter **ausführen** oder **nicht ausgeführt.** , und wählen Sie **starten** oder (bei Ausführung von apps) **Anfügen**.
 
      Bei Auswahl von **nicht starten sondern Debuggen meinen Code**, dies führt dazu, dass Visual Studio-Debugger an Ihre app-Paket angefügt werden soll, wenn Sie sie zu einem benutzerdefinierten Zeitpunkt starten. Dies ist ein effektives Verfahren zum Debuggen von Steuerelementpfade von [Methoden zum Starten der verschiedenen](/windows/uwp/xbox-apps/automate-launching-uwp-apps), z.B. die protokollaktivierung mit benutzerdefinierten Parametern.
 
      Beim Debuggen eines installierten app-Pakets auf einem verbundenen XBox, HoloLens und IoT-Gerät zum ersten Mal installiert Visual Studio die richtige Version des Remotedebuggers für das Zielgerät. Dieser Vorgang kann etwas Zeit dauern, und Sie sehen eine Meldung ``Starting remote debugger`` während dies passiert.
 
      > [!NOTE]
-> Klicken Sie am vorhanden ist, einer XBox oder HoloLens-Gerät wird ein Neustart der app mit dem Debugger angefügt, wenn er bereits ausgeführt wird.
+   > Klicken Sie am vorhanden ist, einer XBox oder HoloLens-Gerät wird ein Neustart der app mit dem Debugger angefügt, wenn er bereits ausgeführt wird.
 
 Weitere Informationen zu erweiterten Optionen für die Remotebereitstellung von UWP-apps finden Sie unter [bereitstellen und Debuggen von UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/index.md)  
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)  
- [Remotedebuggen](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -25,12 +25,12 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a8d8bd033c79257336b71e3f62099bd3eaf3808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937576"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,36 +211,36 @@ if (performance.mark && performance.measure) {
   
  Verwendungszwecke für dieses Diagramm:  
   
--   Identifizieren allgemeiner Interessenbereiche.  
+- Identifizieren allgemeiner Interessenbereiche.  
   
--   Auswählen eines bestimmten Zeitraums für die Anzeige des Zeitachsendetaildiagramms. Markieren Sie einen Teil des Diagramms, und ziehen Sie den Mauszeiger, um einen Zeitraum auszuwählen.  
+- Auswählen eines bestimmten Zeitraums für die Anzeige des Zeitachsendetaildiagramms. Markieren Sie einen Teil des Diagramms, und ziehen Sie den Mauszeiger, um einen Zeitraum auszuwählen.  
   
--   Sie erhalten eine ausführlichere Ansicht eines ausgewählten Zeitraums, indem Sie die Schaltfläche **Vergrößern** auswählen.  
+- Sie erhalten eine ausführlichere Ansicht eines ausgewählten Zeitraums, indem Sie die Schaltfläche **Vergrößern** auswählen.  
   
- Weitere Informationen zur Verwendung des Diagramms finden Sie unter [Isolate a UI responsiveness problem](#Workflow) in diesem Thema.  
+  Weitere Informationen zur Verwendung des Diagramms finden Sie unter [Isolate a UI responsiveness problem](#Workflow) in diesem Thema.  
   
 ###  <a name="VisualThroughput"></a> Anzeigen des visuellen Durchsatzes (FPS)  
  Das Diagramm des visuellen Durchsatzes ermöglicht das Identifizieren von Zeiträumen, in denen die Framerate abgefallen ist. Es zeigt die Frames pro Sekunde (FPS) für die App an. Dieses Diagramm ist für die Entwicklung von Spielen und von Rich-Media-Apps besonders hilfreich.  
   
  Der angezeigte F/s-Wert kann sich von den tatsächlichen Frameraten unterscheiden. Behalten Sie die folgenden Informationen im Kopf, wenn Sie Daten in diesem Diagramm untersuchen:  
   
--   Das Diagramm zeigt den F/s-Wert an, den die App zu jedem Zeitpunkt erreichen kann. Wenn sich die Anwendung im Leerlauf befindet, ist der F/s-Wert identisch mit der Bildschirmaktualisierungsrate.  
+- Das Diagramm zeigt den F/s-Wert an, den die App zu jedem Zeitpunkt erreichen kann. Wenn sich die Anwendung im Leerlauf befindet, ist der F/s-Wert identisch mit der Bildschirmaktualisierungsrate.  
   
--   Im Diagramm wird der tatsächliche F/s-Wert angezeigt, wenn die App Aufgaben ausführt, für die visuelle Updates erforderlich sind.  
+- Im Diagramm wird der tatsächliche F/s-Wert angezeigt, wenn die App Aufgaben ausführt, für die visuelle Updates erforderlich sind.  
   
--   Das Diagramm zeigt den Wert Null an, wenn Frames abgelegt werden.  
+- Das Diagramm zeigt den Wert Null an, wenn Frames abgelegt werden.  
   
- In diesem Beispiel wird das Diagramm für den visuellen Durchsatz illustriert:  
+  In diesem Beispiel wird das Diagramm für den visuellen Durchsatz illustriert:  
   
- ![Diagramm des visuellen Durchsatzes](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Diagramm des visuellen Durchsatzes](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Verwendungszweck des Diagramms für den visuellen Durchsatz:  
+  Verwendungszweck des Diagramms für den visuellen Durchsatz:  
   
--   Identifizieren allgemeiner Interessenbereiche.  
+- Identifizieren allgemeiner Interessenbereiche.  
   
--   Auswählen eines bestimmten Zeitraums für die Anzeige des Zeitachsendetaildiagramms. Markieren Sie einen Teil des Diagramms, und ziehen Sie den Mauszeiger, um einen Zeitraum auszuwählen.  
+- Auswählen eines bestimmten Zeitraums für die Anzeige des Zeitachsendetaildiagramms. Markieren Sie einen Teil des Diagramms, und ziehen Sie den Mauszeiger, um einen Zeitraum auszuwählen.  
   
--   Sie erhalten eine ausführlichere Ansicht eines ausgewählten Zeitraums, indem Sie die Schaltfläche **Vergrößern** auswählen.  
+- Sie erhalten eine ausführlichere Ansicht eines ausgewählten Zeitraums, indem Sie die Schaltfläche **Vergrößern** auswählen.  
   
 ###  <a name="TimelineDetails"></a> Anzeigen des Zeitachsendetaildiagramms  
  Das Zeitachsendetaildiagramm wird im unteren Bereich des Benutzeroberflächen-Reaktionsfähigkeits-Profilers angezeigt. Es stellt sequenzielle und hierarchische Informationen über Ereignisse bereit, die während ausgewählter Zeiträume die meiste CPU-Zeit in Anspruch genommen haben. Mit diesem Diagramm können Sie bestimmen, wodurch ein bestimmtes Ereignis ausgelöst wurde, und für einige Ereignisse erkennen, wie das Ereignis wieder dem Quellcode zugeordnet wird. Mit diesem Diagramm können Sie auch die Zeit zu bestimmen, die für das Paint-Ereignis visueller Updates auf den Bildschirm erforderlich ist.  
@@ -317,23 +317,23 @@ if (performance.mark && performance.measure) {
 ##  <a name="ProfilerEvents"></a> Profiler event reference  
  Profilerereignisse sind kategorisiert und im Benutzeroberflächen-Reaktionsfähigkeits-Profiler farbcodiert. Beispiele für Ereigniskategorien:  
   
--   **Ladevorgang.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
+- **Ladevorgang.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
   
--   **Skripterstellung** Gibt die Zeit an, die für die Analyse und die Ausführung von JavaScript aufgewendet wurde. Dazu gehören DOM-Ereignissen, Timer, Skriptauswertung und Animationsframeaufgaben. Umfasst sowohl Benutzercode als auch Bibliothekscode.  
+- **Skripterstellung** Gibt die Zeit an, die für die Analyse und die Ausführung von JavaScript aufgewendet wurde. Dazu gehören DOM-Ereignissen, Timer, Skriptauswertung und Animationsframeaufgaben. Umfasst sowohl Benutzercode als auch Bibliothekscode.  
   
--   **GC.** Gibt die Zeit an, die auf die Garbage Collection aufgewendet wurde.  
+- **GC.** Gibt die Zeit an, die auf die Garbage Collection aufgewendet wurde.  
   
--   **Formatieren.** Gibt die Zeit an, die für die Analyse von CSS und die Berechnung der Präsentation und des Layouts von Elementen aufgewendet wurde.  
+- **Formatieren.** Gibt die Zeit an, die für die Analyse von CSS und die Berechnung der Präsentation und des Layouts von Elementen aufgewendet wurde.  
   
--   **Rendering.** Gibt die Zeit an, die für die Formatübertragung des Bildschirms aufgewendet wurde.  
+- **Rendering.** Gibt die Zeit an, die für die Formatübertragung des Bildschirms aufgewendet wurde.  
   
--   **Decodieren von Bildern.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
+- **Decodieren von Bildern.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
   
- Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
- Für die anderen Ereigniskategorien können Sie Plattformnebeneffekte identifizieren, die durch das Hinzufügen von Funktionen zur App verursacht werden. In diesen Fällen können Sie jedoch bestimmte Leistungsprobleme möglicherweise nicht mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler beheben.  
+  Für die anderen Ereigniskategorien können Sie Plattformnebeneffekte identifizieren, die durch das Hinzufügen von Funktionen zur App verursacht werden. In diesen Fällen können Sie jedoch bestimmte Leistungsprobleme möglicherweise nicht mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler beheben.  
   
- In dieser Tabelle werden die Ereignisse und die entsprechenden Beschreibungen aufgeführt:  
+  In dieser Tabelle werden die Ereignisse und die entsprechenden Beschreibungen aufgeführt:  
   
 |event|Ereigniskategorie|Tritt auf bei|  
 |-----------|--------------------|-----------------|  

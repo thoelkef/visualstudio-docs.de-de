@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817443"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.micr
   
 ##  <a name="Requirements"></a> Anforderungen  
   
--   Die Anforderungen für die Installation finden Sie unter [Visual Studio 2015 – Systemanforderungen](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
+- Die Anforderungen für die Installation finden Sie unter [Visual Studio 2015 – Systemanforderungen](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
-    > [!IMPORTANT]
-    >  Wenn Sie Windows 7 oder Windows Server 2008 R2 verwenden, können Sie Code für klassische Windows-Anwendungen, Android Native Activity-Apps und -Bibliotheken sowie Apps und Codebibliotheken für iOS, jedoch keine Windows Store- oder universellen Windows-Apps entwickeln.  
+  > [!IMPORTANT]
+  >  Wenn Sie Windows 7 oder Windows Server 2008 R2 verwenden, können Sie Code für klassische Windows-Anwendungen, Android Native Activity-Apps und -Bibliotheken sowie Apps und Codebibliotheken für iOS, jedoch keine Windows Store- oder universellen Windows-Apps entwickeln.  
   
- Zum Erstellen von Anwendungen für bestimmte Plattformen bestehen einige zusätzliche Anforderungen:  
+  Zum Erstellen von Anwendungen für bestimmte Plattformen bestehen einige zusätzliche Anforderungen:  
   
--   Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
+- Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
   
--   Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
--   Zum Erstellen von Code für iOS sind eine Apple-ID, ein iOS-Entwicklerprogrammkonto und ein Mac erforderlich, auf dem [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) oder höher unter OS X Mavericks oder höher ausgeführt werden kann. Einfache Installationsschritte finden Sie unter [Install tools for iOS](#InstallForiOS).  
+- Zum Erstellen von Code für iOS sind eine Apple-ID, ein iOS-Entwicklerprogrammkonto und ein Mac erforderlich, auf dem [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) oder höher unter OS X Mavericks oder höher ausgeführt werden kann. Einfache Installationsschritte finden Sie unter [Install tools for iOS](#InstallForiOS).  
   
 ##  <a name="GetTheTools"></a> Beschaffung der Tools  
  Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente, die in Visual Studio Community, Professional und Enterprise enthalten ist. Wechseln Sie zur Seite [Visual Studio 2015 Downloads](http://go.microsoft.com/fwlink/p/?linkid=517106), und laden Sie Visual Studio 2015 mit Update 2 oder höher herunter.  
@@ -101,31 +101,31 @@ Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.micr
   
  Lesen Sie die folgenden Informationen und verwenden Sie die folgenden Links, um Abhängigkeiten manuell zu installieren.  
   
--   [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     Der Installer legt die Java-Tools standardmäßig unter "C:\Programme (x86)\Java" ab.  
+   Der Installer legt die Java-Tools standardmäßig unter "C:\Programme (x86)\Java" ab.  
   
--   [Android-SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android-SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     Aktualisieren Sie während der Installation die APIs wie empfohlen. Stellen Sie sicher, dass mindestens das SDK für Android 5.0 Lollipop (API Level 21) installiert ist. Der Installer legt das Android-SDK standardmäßig unter "C:\Programme (x86)\Android\android-sdk" ab.  
+   Aktualisieren Sie während der Installation die APIs wie empfohlen. Stellen Sie sicher, dass mindestens das SDK für Android 5.0 Lollipop (API Level 21) installiert ist. Der Installer legt das Android-SDK standardmäßig unter "C:\Programme (x86)\Android\android-sdk" ab.  
   
-     Sie können die SDK Manager-App im Android SDK-Verzeichnis erneut ausführen, um das SDK zu aktualisieren und die optionalen Tools und zusätzliche API-Ebenen zu installieren. Updates können möglicherweise nicht installiert werden, wenn Sie zum Ausführen der SDK-Manager-App nicht die Option **Als Administrator ausführen** verwenden. Wenn Sie Probleme beim Erstellen einer Android-App haben, überprüfen Sie den SDK-Manager auf Updates für Ihre installierten SDKs.  
+   Sie können die SDK Manager-App im Android SDK-Verzeichnis erneut ausführen, um das SDK zu aktualisieren und die optionalen Tools und zusätzliche API-Ebenen zu installieren. Updates können möglicherweise nicht installiert werden, wenn Sie zum Ausführen der SDK-Manager-App nicht die Option **Als Administrator ausführen** verwenden. Wenn Sie Probleme beim Erstellen einer Android-App haben, überprüfen Sie den SDK-Manager auf Updates für Ihre installierten SDKs.  
   
-     Wenn Sie einige der im Android-SDK enthaltenen Android-Emulatoren verwenden möchten, müssen Sie die optionalen Intel HAXM-Treiber installieren. Es ist möglicherweise erforderlich, die Hyper-V-Funktion von Windows zu entfernen, um die Intel HAXM-Treiber erfolgreich installieren zu können. Sie müssen die Hyper-V-Funktion wiederherstellen, um die Windows Phone-Emulatoren und den Microsoft Visual Studio-Emulator für Android nutzen zu können.  
+   Wenn Sie einige der im Android-SDK enthaltenen Android-Emulatoren verwenden möchten, müssen Sie die optionalen Intel HAXM-Treiber installieren. Es ist möglicherweise erforderlich, die Hyper-V-Funktion von Windows zu entfernen, um die Intel HAXM-Treiber erfolgreich installieren zu können. Sie müssen die Hyper-V-Funktion wiederherstellen, um die Windows Phone-Emulatoren und den Microsoft Visual Studio-Emulator für Android nutzen zu können.  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     Standardmäßig legt der Installer das Android NDK in "C:\ProgramData\Microsoft\AndroidNDK" ab. Sie können das Android-NDK erneut herunterladen und installieren, um die NDK-Installation zu aktualisieren.  
+   Standardmäßig legt der Installer das Android NDK in "C:\ProgramData\Microsoft\AndroidNDK" ab. Sie können das Android-NDK erneut herunterladen und installieren, um die NDK-Installation zu aktualisieren.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     Der Installer legt Apache Ant standardmäßig in „C:\Programme (x86)\Microsoft Visual Studio 14.0\Apps“ ab.  
+   Der Installer legt Apache Ant standardmäßig in „C:\Programme (x86)\Microsoft Visual Studio 14.0\Apps“ ab.  
   
--   [Microsoft Visual Studio-Emulator für Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Microsoft Visual Studio-Emulator für Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Sie können den Microsoft Visual Studio-Emulator für Android über den Visual Studio-Katalog installieren und aktualisieren.  
+   Sie können den Microsoft Visual Studio-Emulator für Android über den Visual Studio-Katalog installieren und aktualisieren.  
   
- In den meisten Fällen kann Visual Studio die Konfigurationen für die von Ihnen installierte Drittanbietersoftware erkennen und verwaltet die Installationspfade in internen Umgebungsvariablen. Sie können die Standardpfade dieser plattformübergreifenden Entwicklungstools in der Visual Studio-IDE außer Kraft setzen.  
+  In den meisten Fällen kann Visual Studio die Konfigurationen für die von Ihnen installierte Drittanbietersoftware erkennen und verwaltet die Installationspfade in internen Umgebungsvariablen. Sie können die Standardpfade dieser plattformübergreifenden Entwicklungstools in der Visual Studio-IDE außer Kraft setzen.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>So legen Sie die Pfade für Drittanbietertools fest  
   

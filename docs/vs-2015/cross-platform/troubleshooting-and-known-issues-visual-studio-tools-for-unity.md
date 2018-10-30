@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928684"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studi
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>So melden Sie, dass Visual Studio beim Debuggen mit Visual Studio-Tools für Unity einfriert  
   
-1.  Öffnen Sie eine Instanz von Visual Studio.  
+1. Öffnen Sie eine Instanz von Visual Studio.  
   
-2.  Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **An den Prozess anhängen**.  
+2. Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **An den Prozess anhängen**.  
   
-3.  Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .  
+3. Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .  
   
-4.  Halten Sie den Debugger an. Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **Alle unterbrechen** , oder drücken Sie **STRG+ALT+PAUSE**.  
+4. Halten Sie den Debugger an. Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **Alle unterbrechen** , oder drücken Sie **STRG+ALT+PAUSE**.  
   
-5.  Erstellen Sie einen Thread-Dump. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**.  
+5. Erstellen Sie einen Thread-Dump. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht**, **Weitere Fenster**, **Befehlsfenster**.  
+    Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht**, **Weitere Fenster**, **Befehlsfenster**.  
   
-6.  Senden Sie zum Schluss den Thread-Dump an [vstusp@microsoft.com](mailto:vstusp@microsoft.com)zusammen mit einer Beschreibung, was Sie gerade getan haben, als Visual Studio eingefroren ist.
+6. Senden Sie zum Schluss den Thread-Dump an [vstusp@microsoft.com](mailto:vstusp@microsoft.com)zusammen mit einer Beschreibung, was Sie gerade getan haben, als Visual Studio eingefroren ist.
 

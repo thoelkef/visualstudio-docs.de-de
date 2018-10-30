@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81fcc0c4d747a59f287bc12e7413c5ccab204f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874448"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Sie können ein Aktivitätsdiagramm für viele Zwecke verwenden:  
   
--   Beschreiben eines Geschäftsprozesses oder eines Arbeitsflusses zwischen Benutzern und dem System. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+- Beschreiben eines Geschäftsprozesses oder eines Arbeitsflusses zwischen Benutzern und dem System. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
--   Beschreiben der Schritte, die in einem Anwendungsfall ausgeführt werden. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Beschreiben der Schritte, die in einem Anwendungsfall ausgeführt werden. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Beschreiben einer Methode, einer Funktion oder eines Vorgangs in der Software. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
+- Beschreiben einer Methode, einer Funktion oder eines Vorgangs in der Software. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
   
- Prozesse lassen sich durch das Zeichnen eines Aktivitätsdiagramms optimieren. Wenn sich das Diagramm eines vorhandenen Prozesses als sehr komplex erweist, können Sie überlegen, wie der Prozess vereinfacht werden kann.  
+  Prozesse lassen sich durch das Zeichnen eines Aktivitätsdiagramms optimieren. Wenn sich das Diagramm eines vorhandenen Prozesses als sehr komplex erweist, können Sie überlegen, wie der Prozess vereinfacht werden kann.  
   
- Referenzinformationen zu den Elementen in Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md).  
+  Referenzinformationen zu den Elementen in Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Beziehung zu anderen Diagrammen  
  Wenn Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder die Art und Weise der Verwendung des Systems durch Benutzer zu beschreiben, können Sie ein Anwendungsfalldiagramm zeichnen, das eine andere Ansicht der gleichen Informationen liefert. Im Anwendungsfalldiagramm zeichnen Sie Aktionen als Anwendungsfälle. Weisen Sie den Anwendungsfällen den gleichen Namen zu wie den entsprechenden Aktionen. Die Anwendungsfallansicht bietet Ihnen folgende Vorteile:  
   
--   Sie können in einem Diagramm mithilfe einer Includes-Beziehung darstellen, wie größere Aktionen/Anwendungsfälle aus kleineren Aktionen/Anwendungsfällen zusammengesetzt sind.  
+- Sie können in einem Diagramm mithilfe einer Includes-Beziehung darstellen, wie größere Aktionen/Anwendungsfälle aus kleineren Aktionen/Anwendungsfällen zusammengesetzt sind.  
   
--   Sie können jede Aktion bzw. jeden Anwendungsfall explizit mit den Benutzern oder externen Systemen verknüpfen, die an der Ausführung beteiligt sind.  
+- Sie können jede Aktion bzw. jeden Anwendungsfall explizit mit den Benutzern oder externen Systemen verknüpfen, die an der Ausführung beteiligt sind.  
   
--   Sie können Begrenzungen um die vom System unterstützten Aktionen/Anwendungsfälle oder jede Hauptkomponente zeichnen.  
+- Sie können Begrenzungen um die vom System unterstützten Aktionen/Anwendungsfälle oder jede Hauptkomponente zeichnen.  
   
- Sie können auch ein Aktivitätsdiagramm zeichnen, um den Detailentwurf eines Softwarevorgangs zu beschreiben.  
+  Sie können auch ein Aktivitätsdiagramm zeichnen, um den Detailentwurf eines Softwarevorgangs zu beschreiben.  
   
- In einem Aktivitätsdiagramm können Sie den Fluss der zwischen Aktionen übergebenen Daten darstellen. Finden Sie im Abschnitt [Beschreiben des Datenflusses](#DataFlows). Ein Aktivitätsdiagramm beschreibt jedoch nicht die Struktur der Daten. Zu diesem Zweck können Sie ein UML-Klassendiagramm zeichnen. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
+  In einem Aktivitätsdiagramm können Sie den Fluss der zwischen Aktionen übergebenen Daten darstellen. Finden Sie im Abschnitt [Beschreiben des Datenflusses](#DataFlows). Ein Aktivitätsdiagramm beschreibt jedoch nicht die Struktur der Daten. Zu diesem Zweck können Sie ein UML-Klassendiagramm zeichnen. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Aktivitätsdiagrammen  
  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
@@ -112,18 +112,18 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Aktivitätsdiagramme verwenden **Aktionen** und **Connectors** Ihr System oder einer Anwendung als eine Reihe von Aktionen mit die Kontrolle nacheinander von einer Aktion zur nächsten zu beschreiben.  
   
--   Erstellen Sie eine **Aktion** (1) für jede Hauptaufgabe, die von einem Benutzer, das System oder beiden gemeinsam ausgeführt wird.  
+- Erstellen Sie eine **Aktion** (1) für jede Hauptaufgabe, die von einem Benutzer, das System oder beiden gemeinsam ausgeführt wird.  
   
-    > [!NOTE]
-    >  Versuchen Sie, den Prozess oder Algorithmus mit nur einigen wenigen Aktionen zu beschreiben. Sie können **Aktionen zum Aufrufen eines Verhaltens** jede Aktion in einem eigenen Diagramm ausführlicher definieren, wie in beschrieben [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
+  > [!NOTE]
+  >  Versuchen Sie, den Prozess oder Algorithmus mit nur einigen wenigen Aktionen zu beschreiben. Sie können **Aktionen zum Aufrufen eines Verhaltens** jede Aktion in einem eigenen Diagramm ausführlicher definieren, wie in beschrieben [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
   
--   Stellen Sie sicher, dass der Titel jeder Aktion das standardmäßige Resultat der Aktion eindeutig angibt.  
+- Stellen Sie sicher, dass der Titel jeder Aktion das standardmäßige Resultat der Aktion eindeutig angibt.  
   
--   Verknüpfen Sie die Aktionen nacheinander mit **Connectors** (2).  
+- Verknüpfen Sie die Aktionen nacheinander mit **Connectors** (2).  
   
--   Jede Aktion endet, bevor die nächste Aktion in der Ablaufsteuerung beginnt. Wenn Sie Aktionen beschreiben, die sich überschneiden, verwenden Sie möchten eine **Gabelungsknoten** wie beschrieben im Abschnitt [parallele Flüsse](#Concurrent).  
+- Jede Aktion endet, bevor die nächste Aktion in der Ablaufsteuerung beginnt. Wenn Sie Aktionen beschreiben, die sich überschneiden, verwenden Sie möchten eine **Gabelungsknoten** wie beschrieben im Abschnitt [parallele Flüsse](#Concurrent).  
   
- Das Diagramm beschreibt zwar die Aktionsfolge, jedoch nicht, wie die Aktionen ausgeführt werden, oder wie die Kontrolle von einer Aktion an die nächste übergeben wird. Wenn Sie mithilfe des Diagramms einen Geschäftsprozess darstellen, kann die Kontrolle z. B. übergeben werden, wenn eine Person eine E-Mail-Nachricht an eine andere Person sendet. Wenn Sie mithilfe des Diagramms einen Softwareentwurf darstellen, wird die Kontrolle möglicherweise durch den normalen Ausführungsfluss von einer Anweisung an die nächste übergeben.  
+  Das Diagramm beschreibt zwar die Aktionsfolge, jedoch nicht, wie die Aktionen ausgeführt werden, oder wie die Kontrolle von einer Aktion an die nächste übergeben wird. Wenn Sie mithilfe des Diagramms einen Geschäftsprozess darstellen, kann die Kontrolle z. B. übergeben werden, wenn eine Person eine E-Mail-Nachricht an eine andere Person sendet. Wenn Sie mithilfe des Diagramms einen Softwareentwurf darstellen, wird die Kontrolle möglicherweise durch den normalen Ausführungsfluss von einer Anweisung an die nächste übergeben.  
   
 ### <a name="describing-decisions-and-loops"></a>Beschreiben von Entscheidungen und Schleifen  
   
@@ -171,11 +171,11 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="swimlanes"></a>Verantwortlichkeitsbereiche  
  Manchmal ist es sinnvoll, die Aktionen einer Aktivität in Bereiche aufzuteilen, die unterschiedlichen Objekten oder Geschäftsrollen entsprechen, die die Aktionen ausführen. Diese Bereiche werden herkömmlicherweise in Spalten angeordnet und als *Verantwortlichkeitsbereiche*.  
   
--   Mithilfe von Linien oder Rechtecken aus dem **einfache Formen** Abschnitt der Toolbox zeichnen Sie Verantwortlichkeitsbereiche oder andere Bereiche.  
+- Mithilfe von Linien oder Rechtecken aus dem **einfache Formen** Abschnitt der Toolbox zeichnen Sie Verantwortlichkeitsbereiche oder andere Bereiche.  
   
--   Um die einzelnen Verantwortlichkeitsbereiche zu beschriften, erstellen Sie einen Kommentar ein, und legen Sie dessen **Transparent** Eigenschaft **"true"**.  
+- Um die einzelnen Verantwortlichkeitsbereiche zu beschriften, erstellen Sie einen Kommentar ein, und legen Sie dessen **Transparent** Eigenschaft **"true"**.  
   
- Einfache Formen sind kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
+  Einfache Formen sind kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
   
 ##  <a name="DataFlows"></a> Beschreiben des Datenflusses  
  Sie können die eingehenden und ausgehenden Daten einer Aktivität auf zweierlei Weise beschreiben:  
@@ -277,16 +277,16 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Beschreiben des Datenflusses in und aus Unteraktivitäten  
  Sie können den Datenfluss in und aus Unteraktivitäten auf die gleiche Weise wie die Verwendung von Parametern in Software beschreiben.  
   
--   Erstellen Sie in der Aktion zum Aufrufen eines Verhaltens Eingabe- und Ausgabepins (1) für jedes Datenelement, das in die Aktion oder aus der Aktion fließt. Weisen Sie jedem Pin einen entsprechenden Namen zu.  
+- Erstellen Sie in der Aktion zum Aufrufen eines Verhaltens Eingabe- und Ausgabepins (1) für jedes Datenelement, das in die Aktion oder aus der Aktion fließt. Weisen Sie jedem Pin einen entsprechenden Namen zu.  
   
--   Erstellen Sie in das Unteraktivitätsdiagramm, ein **Aktivitätsparameterknoten** (2) für jeden Eingabe- und Ausgabepin in der aufrufenden Aktion. Weisen Sie jedem Knoten den gleichen Namen wie dem entsprechenden Pin zu.  
+- Erstellen Sie in das Unteraktivitätsdiagramm, ein **Aktivitätsparameterknoten** (2) für jeden Eingabe- und Ausgabepin in der aufrufenden Aktion. Weisen Sie jedem Knoten den gleichen Namen wie dem entsprechenden Pin zu.  
   
-    > [!NOTE]
-    >  Ein Aktivitätsparameterknoten ähnelt einem Objektknoten. Um welche Art von Knoten zu überprüfen, die Sie prüfen, mit der rechten Maustaste des Knotens, und klicken Sie dann auf **Eigenschaften**. Der Typ des Knotens wird in der Kopfzeile des Eigenschaftenfensters angezeigt.  
+  > [!NOTE]
+  >  Ein Aktivitätsparameterknoten ähnelt einem Objektknoten. Um welche Art von Knoten zu überprüfen, die Sie prüfen, mit der rechten Maustaste des Knotens, und klicken Sie dann auf **Eigenschaften**. Der Typ des Knotens wird in der Kopfzeile des Eigenschaftenfensters angezeigt.  
   
--   Zeichnen Sie im Unteraktivitätsdiagramm Konnektoren, die den Fluss von Objekten in die oder aus den einzelnen Aktivitätsparameterknoten darstellen.  
+- Zeichnen Sie im Unteraktivitätsdiagramm Konnektoren, die den Fluss von Objekten in die oder aus den einzelnen Aktivitätsparameterknoten darstellen.  
   
- ![Pins werden beim Aufrufen eines Verhaltens Aktivitätsparametern zugeordnet](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
+  ![Pins werden beim Aufrufen eines Verhaltens Aktivitätsparametern zugeordnet](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
 ###  <a name="Postcondition"></a> Definieren von Nachbedingungen und Vorbedingungen  
  Können Sie die **Local Postconditions** und **Local Preconditions** Eigenschaften ausführlich das Ergebnis einer Aktion angeben. Diese Eigenschaften beschreiben die Auswirkung der Aktion, jedoch nicht, wie die Auswirkung erreicht wird.  
@@ -389,45 +389,45 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="selection-and-transformation"></a>Auswahl und Transformation  
  Sie können angeben, dass die Objekte in einem Objektfluss transformiert und/oder ausgewählt werden. Ein Objektfluss ist ein Fluss zu oder von einem Pin oder Objektknoten.  
   
--   Eine Transformation beschreibt, wie in einen Fluss eintretende Objekte in einen anderen Typ konvertiert werden.  
+- Eine Transformation beschreibt, wie in einen Fluss eintretende Objekte in einen anderen Typ konvertiert werden.  
   
--   Eine Auswahl beschreibt, wie nur einige der in einen Fluss eintretenden Objekte an die empfangende Aktion übertragen werden.  
+- Eine Auswahl beschreibt, wie nur einige der in einen Fluss eintretenden Objekte an die empfangende Aktion übertragen werden.  
   
- Im Beispiel wird eine Transformation veranschaulicht. Die erste Aktion in Diagramm 1 erzeugt an einem Ausgabepin eine Postleitzahl. Dieser Pin ist mit einem Eingabepin der zweiten Aktion verbunden. Die zweite Aktion erwartet jedoch eine vollständige Adresse. Die Konvertierung von einem Typ in einen anderen wird in einer zweiten Aktivität (AddressLookup) angegeben. Auf diese wird in der Transformation-Eigenschaft des Objektflusses verwiesen. Die AddressLookup-Aktivität enthält einen Aktivitätsparameterknoten für die eingehende Postleitzahl und einen weiteren Aktivitätsparameterknoten für die ausgehende vollständige Adresse.  
+  Im Beispiel wird eine Transformation veranschaulicht. Die erste Aktion in Diagramm 1 erzeugt an einem Ausgabepin eine Postleitzahl. Dieser Pin ist mit einem Eingabepin der zweiten Aktion verbunden. Die zweite Aktion erwartet jedoch eine vollständige Adresse. Die Konvertierung von einem Typ in einen anderen wird in einer zweiten Aktivität (AddressLookup) angegeben. Auf diese wird in der Transformation-Eigenschaft des Objektflusses verwiesen. Die AddressLookup-Aktivität enthält einen Aktivitätsparameterknoten für die eingehende Postleitzahl und einen weiteren Aktivitätsparameterknoten für die ausgehende vollständige Adresse.  
   
- ![Objekt Transformation in einem anderen Diagramm definierte](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
+  ![Objekt Transformation in einem anderen Diagramm definierte](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
   
- Sie können eine Transformation oder Auswahl auf zweierlei Weise angeben:  
+  Sie können eine Transformation oder Auswahl auf zweierlei Weise angeben:  
   
--   Fügen Sie einen Kommentar an den Eingabe- oder Ausgabepin an.  
+- Fügen Sie einen Kommentar an den Eingabe- oder Ausgabepin an.  
   
-    -   Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie beginnen, den Kommentar mit <\<**Transformation**>> oder <\<**Auswahl**>>.  
+  -   Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie beginnen, den Kommentar mit <\<**Transformation**>> oder <\<**Auswahl**>>.  
   
--   Geben Sie die Details der Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an.  
+- Geben Sie die Details der Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an.  
   
-    -   Wenn Sie diese Methode verwenden, fügen Sie auch einen Kommentar an, um für die Leser deutlich zu machen, dass die Transformation definiert wurde.  
+  -   Wenn Sie diese Methode verwenden, fügen Sie auch einen Kommentar an, um für die Leser deutlich zu machen, dass die Transformation definiert wurde.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>So geben Sie eine Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an  
   
-1.  Erstellen Sie ein neues Aktivitätsdiagramm, in dem der Transformations- oder Auswahlfluss beschrieben werden soll.  
+1. Erstellen Sie ein neues Aktivitätsdiagramm, in dem der Transformations- oder Auswahlfluss beschrieben werden soll.  
   
-    -   In **Projektmappen-Explorer**, mit der rechten Maustaste in des Projekts, zeigen Sie auf **hinzufügen**, klicken Sie auf **neues Element**, und klicken Sie dann auf **Aktivitätsdiagramm**. Weisen Sie dem Diagramm einen entsprechenden Namen für den Transformations- oder Auswahlfluss zu. Klicken Sie auf **Hinzufügen**.  
+   -   In **Projektmappen-Explorer**, mit der rechten Maustaste in des Projekts, zeigen Sie auf **hinzufügen**, klicken Sie auf **neues Element**, und klicken Sie dann auf **Aktivitätsdiagramm**. Weisen Sie dem Diagramm einen entsprechenden Namen für den Transformations- oder Auswahlfluss zu. Klicken Sie auf **Hinzufügen**.  
   
-2.  Führen Sie im neuen Diagramm die folgenden Schritte aus:  
+2. Führen Sie im neuen Diagramm die folgenden Schritte aus:  
   
-    1.  Erstellen Sie zwei Aktivitätsparameterknoten, einen für den Eingabefluss und einen für die Ausgabe.  
+   1.  Erstellen Sie zwei Aktivitätsparameterknoten, einen für den Eingabefluss und einen für die Ausgabe.  
   
-    2.  Erstellen Sie mit Objektflüssen verbundene Aktionen. Dies veranschaulicht die Funktionsweise der Transformation oder Auswahl.  
+   2.  Erstellen Sie mit Objektflüssen verbundene Aktionen. Dies veranschaulicht die Funktionsweise der Transformation oder Auswahl.  
   
-3.  Führen Sie in jedem Diagramm, in dem Sie die Transformation oder Auswahl verwenden möchten, die folgenden Schritte aus:  
+3. Führen Sie in jedem Diagramm, in dem Sie die Transformation oder Auswahl verwenden möchten, die folgenden Schritte aus:  
   
-    1.  Erstellen Sie einen Objektfluss, d. h. einen Konnektor zu oder von einem Eingabepin, Ausgabepin, Objektknoten oder Aktivitätsparameterknoten.  
+   1.  Erstellen Sie einen Objektfluss, d. h. einen Konnektor zu oder von einem Eingabepin, Ausgabepin, Objektknoten oder Aktivitätsparameterknoten.  
   
-    2.  Mit der rechten Maustaste des Objektfluss, und klicken Sie dann auf **Eigenschaften**.  
+   2.  Mit der rechten Maustaste des Objektfluss, und klicken Sie dann auf **Eigenschaften**.  
   
-    3.  In der **Transformation** oder **Auswahl** -Eigenschaft, wählen Sie das Diagramm, in dem Sie den Transformations- oder Auswahlfluss angegeben haben.  
+   3.  In der **Transformation** oder **Auswahl** -Eigenschaft, wählen Sie das Diagramm, in dem Sie den Transformations- oder Auswahlfluss angegeben haben.  
   
- Sie können auch eine Auswahl für einen Objektknoten sowie für einzelne Eingabe- und Ausgabepins definieren. Definieren Sie eine Auswahlaktivität wie oben beschrieben, und legen Sie dann die **Auswahl** Eigenschaft des Objektknotens oder Eingabe- oder Ausgabepin.  
+   Sie können auch eine Auswahl für einen Objektknoten sowie für einzelne Eingabe- und Ausgabepins definieren. Definieren Sie eine Auswahlaktivität wie oben beschrieben, und legen Sie dann die **Auswahl** Eigenschaft des Objektknotens oder Eingabe- oder Ausgabepin.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   

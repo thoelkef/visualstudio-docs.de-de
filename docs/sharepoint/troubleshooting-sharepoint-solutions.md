@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928957"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
   Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -53,21 +53,21 @@ ms.locfileid: "37118932"
 ### <a name="resolution"></a>Auflösung  
  Verwenden Sie für Namen von SharePoint-Projekte und -Projektelemenen nur die folgenden Zeichen:  
   
--   Alphanumerische ASCII-Zeichen  
+- Alphanumerische ASCII-Zeichen  
   
--   Leerzeichen  
+- Leerzeichen  
   
--   Punkt (.)  
+- Punkt (.)  
   
--   Komma (,)  
+- Komma (,)  
   
--   Unterstrich (_)  
+- Unterstrich (_)  
   
--   Bindestrich (-)  
+- Bindestrich (-)  
   
--   Umgekehrter Schrägstrich (\\)  
+- Umgekehrter Schrägstrich (\\)  
   
- Wenn ein Projekt verpackt wird, überprüft eine Validierungsregel, ob die Eigenschaft „Bereitstellungspfad“ bei jeder Datei, die bereitgestellt wird, nur diese gültigen Zeichen enthält.  
+  Wenn ein Projekt verpackt wird, überprüft eine Validierungsregel, ob die Eigenschaft „Bereitstellungspfad“ bei jeder Datei, die bereitgestellt wird, nur diese gültigen Zeichen enthält.  
   
 ## <a name="errors-when-creating-custom-fields"></a>Fehler beim Erstellen von benutzerdefinierten Feldern
  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] werden benutzerdefinierte Felder in XML definiert. Fehler können auftreten, wenn ein Feld nicht definiert ist oder mit einem bestimmten Format auf das Feld verwiesen wird.  
@@ -147,15 +147,15 @@ ms.locfileid: "37118932"
 ### <a name="resolution"></a>Auflösung  
  Dieses Problem tritt auf, da der Funktionsbereich "Site" sein muss, um Ereignisse auf Websiteebene zu behandeln, der Standardfunktionsbereich für Ereignisempfängerprojekte ist jedoch "Internet". Die betroffenen Webereignisse sind:  
   
--   Eine Website wird gelöscht (WebDeleting)  
+- Eine Website wird gelöscht (WebDeleting)  
   
--   Eine Website wurde gelöscht (WebDeleted)  
+- Eine Website wurde gelöscht (WebDeleted)  
   
--   Eine Website wird verschoben (WebMoving)  
+- Eine Website wird verschoben (WebMoving)  
   
--   Eine Website wurde verschoben (WebMoved)  
+- Eine Website wurde verschoben (WebMoved)  
   
- Zum Beheben des Problems ändern Sie den Funktionsbereich des Ereignisempfängers wie folgt:  
+  Zum Beheben des Problems ändern Sie den Funktionsbereich des Ereignisempfängers wie folgt:  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>So ändern Sie den Funktionsbereich des Ereignisempfängers  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37118932"
  Dieses Problem tritt auf, wenn Sie eine importierte Listeninstanz umbenennen und diese dann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ausführen.  
   
 ### <a name="error-message"></a>Fehlermeldung
- Buildfehler: Fehler im Bereitstellungsschritt "Funktionen aktivieren": die Datei Template\Features\\[*Projekt importieren**Feature**Namen*] \Files\Lists\\[*alte ** Listenname*] \Schema.xml ist nicht vorhanden.  
+ Buildfehler: Fehler im Bereitstellungsschritt "Funktionen aktivieren": die Datei Template\Features\\[*Projekt importieren*<em>Feature</em>*Namen*] \Files\Lists \\[*alte*<em>Listenname</em>] \Schema.xml ist nicht vorhanden.  
   
 ### <a name="resolution"></a>Auflösung  
  Wenn Sie eine Listeninstanz importieren, wird der Datei "Elements.xml" der Listeninstanz ein Attribut namens "CustomSchema" hinzugefügt. Die Datei "Elements.xml" schließt den Pfad einer benutzerdefinierten Datei "schema.xml" für die Listeninstanz ein. Wenn Sie die Listeninstanz in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umbenennen, ändert sich der Bereitstellungspfad für die benutzerdefinierte Datei "schema.xml", der Pfadwert des CustomSchema-Attributs wird jedoch nicht aktualisiert. Die Listeninstanz kann nicht gefunden, daher die *"Schema.xml"* -Datei in den alten Pfad, der vom CustomSchema-Attribut angegeben wird, wenn das Feature aktiviert ist.  

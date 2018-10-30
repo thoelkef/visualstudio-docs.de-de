@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce16cba80962c68d2480e934e2816be4fe77ab1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f73fd8170c91fe51692c9ec5b5b39e7c36570dd2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949369"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
 Sie können mehrere DSLs als Bestandteil einer Projektmappe packen, damit sie zusammen installiert werden.
@@ -23,41 +23,41 @@ Sie können mehrere DSLs als Bestandteil einer Projektmappe packen, damit sie zu
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>So erstellen Sie mehr als eine DSL in einer Projektmappe
 
-1.  Erstellen Sie zwei oder mehr DSL-Projektmappen und ein VSIX-Projekt, und fügen Sie alle Projekte einer Projektmappe hinzu.
+1. Erstellen Sie zwei oder mehr DSL-Projektmappen und ein VSIX-Projekt, und fügen Sie alle Projekte einer Projektmappe hinzu.
 
-    -   Um ein neues VSIX-Projekt zu erstellen: In der **neues Projekt** wählen Sie im Dialogfeld **Visual C#-**, **Erweiterbarkeit**, **VSIX-Projekt**.
+   -   Um ein neues VSIX-Projekt zu erstellen: In der **neues Projekt** wählen Sie im Dialogfeld **Visual C#-**, **Erweiterbarkeit**, **VSIX-Projekt**.
 
-    -   Erstellen Sie zwei oder mehr DSL-Projektmappen im Verzeichnis der VSIX-Projektmappe.
+   -   Erstellen Sie zwei oder mehr DSL-Projektmappen im Verzeichnis der VSIX-Projektmappe.
 
-         Öffnen Sie für jede DSL eine neue Instanz von Visual Studio. Erstellen Sie die neue DSL, und geben Sie den gleichen Projektmappenordner wie für die VSIX-Projektmappe an.
+        Öffnen Sie für jede DSL eine neue Instanz von Visual Studio. Erstellen Sie die neue DSL, und geben Sie den gleichen Projektmappenordner wie für die VSIX-Projektmappe an.
 
-         Achten Sie darauf, dass Sie jede DSL mit einer anderen Dateinamenerweiterung erstellen.
+        Achten Sie darauf, dass Sie jede DSL mit einer anderen Dateinamenerweiterung erstellen.
 
-    -   Ändern Sie die Namen der **Dsl** und **DslPackage** projiziert werden, sodass alle unterschiedlich sind. Beispiel: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   -   Ändern Sie die Namen der **Dsl** und **DslPackage** projiziert werden, sodass alle unterschiedlich sind. Beispiel: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-    -   In den einzelnen **DslPackage\*\source.extension.tt**, aktualisieren Sie diese Zeile auf den richtigen Dsl-Projektnamen:
+   -   In den einzelnen **DslPackage\*\source.extension.tt**, aktualisieren Sie diese Zeile auf den richtigen Dsl-Projektnamen:
 
-         `string dslProjectName = "Dsl2";`
+        `string dslProjectName = "Dsl2";`
 
-    -   Fügen Sie in der VSIX-Projektmappe Dsl * und DslPackage\* Projekte.
+   -   Fügen Sie in der VSIX-Projektmappe Dsl * und DslPackage\* Projekte.
 
-         Sie sollten jedes Paar in einem eigenen Projektmappenordner platzieren.
+        Sie sollten jedes Paar in einem eigenen Projektmappenordner platzieren.
 
-2.  Kombinieren Sie die VSIX-Manifeste der DSLs:
+2. Kombinieren Sie die VSIX-Manifeste der DSLs:
 
-    1.  Open _ihrvsix-Projekt_**\source.extension.manifest**.
+   1.  Open _ihrvsix-Projekt_**\source.extension.manifest**.
 
-    2.  Wählen Sie für jede DSL **Inhalt hinzufügen** und fügen Sie hinzu:
+   2.  Wählen Sie für jede DSL **Inhalt hinzufügen** und fügen Sie hinzu:
 
-        -   `Dsl*` Projekt als eine **MEF-Komponente**
+       -   `Dsl*` Projekt als eine **MEF-Komponente**
 
-        -   `DslPackage*` Projekt als eine **MEF-Komponente**
+       -   `DslPackage*` Projekt als eine **MEF-Komponente**
 
-        -   `DslPackage*` Projekt als eine **Visual Studio-Pakets**
+       -   `DslPackage*` Projekt als eine **Visual Studio-Pakets**
 
-3.  Erstellen Sie die Projektmappe.
+3. Erstellen Sie die Projektmappe.
 
- Die resultierende VSIX installiert beide DSLs. Sie können sie mit F5 testen oder bereitstellen _ihrvsix-Projekt_**\bin\Debug\\\*VSIX**.
+   Die resultierende VSIX installiert beide DSLs. Sie können sie mit F5 testen oder bereitstellen _ihrvsix-Projekt_**\bin\Debug\\\*VSIX**.
 
 ## <a name="see-also"></a>Siehe auch
 

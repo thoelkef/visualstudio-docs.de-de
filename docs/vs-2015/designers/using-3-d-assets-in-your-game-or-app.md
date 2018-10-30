@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863593"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
   
 #### <a name="to-add-an-asset-to-your-build"></a>So fügen Sie eine Ressource dem Build hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.  
+1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.  
   
-2.  Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.  
+2. Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.  
   
-3.  Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.  
+3. Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.  
   
-    > [!IMPORTANT]
-    >  Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhaltspipeline-Quelldateien für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.  
+   > [!IMPORTANT]
+   >  Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhaltspipeline-Quelldateien für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.  
   
-4.  Klicken Sie auf die Schaltfläche **OK** .  
+4. Klicken Sie auf die Schaltfläche **OK** .  
   
- Nachstehend sind die drei Pipelineelementtypen und ihre zugeordneten Quell- und Ausgabedateitypen aufgeführt.  
+   Nachstehend sind die drei Pipelineelementtypen und ihre zugeordneten Quell- und Ausgabedateitypen aufgeführt.  
   
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|  
 |---------------|-----------------------|------------------------|  

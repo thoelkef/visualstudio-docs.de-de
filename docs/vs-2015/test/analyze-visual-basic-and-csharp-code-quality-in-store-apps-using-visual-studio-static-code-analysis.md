@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828701"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität von Visual Basic- und C#-Code in Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ##  <a name="BKMK_Run"></a> Ausführen der Codeanalyse  
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus  
   
--   Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.  
+- Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.  
   
- So führen Sie die Codeanalyse beim Erstellen eines Projekts jedes Mal automatisch aus  
+  So führen Sie die Codeanalyse beim Erstellen eines Projekts jedes Mal automatisch aus  
   
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen und dann auf **Eigenschaften**.  
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen und dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf der Seite der Projekteigenschaften auf **Codeanalyse**, und klicken Sie dann auf **Codeanalyse beim Erstellen aktivieren** (definiert eine CODE_ANALYSIS-Konstante) aus.  
+2. Klicken Sie auf der Seite der Projekteigenschaften auf **Codeanalyse**, und klicken Sie dann auf **Codeanalyse beim Erstellen aktivieren** (definiert eine CODE_ANALYSIS-Konstante) aus.  
   
- Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
+   Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
   
- ![Codeanalysefenster](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Codeanalysefenster](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen  
  Um eine bestimmte Warnung zu analysieren, klicken Sie im Codeanalysefenster auf den Titel der Warnung. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen.  
@@ -80,15 +80,15 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  So unterdrücken Sie eine Warnung  
   
-1.  Wenn die ausführlichen Informationen nicht angezeigt werden, klicken Sie auf den Titel der Warnung, um sie zu erweitern.  
+1. Wenn die ausführlichen Informationen nicht angezeigt werden, klicken Sie auf den Titel der Warnung, um sie zu erweitern.  
   
-2.  Wählen Sie unten in der Warnung den Link **Aktionen** aus.  
+2. Wählen Sie unten in der Warnung den Link **Aktionen** aus.  
   
-3.  Zeigen Sie auf **Meldung unterdrücken**, und wählen Sie dann entweder **In Source** (In Quelle) oder **In Suppression File** (In Unterdrückungsdatei) aus.  
+3. Zeigen Sie auf **Meldung unterdrücken**, und wählen Sie dann entweder **In Source** (In Quelle) oder **In Suppression File** (In Unterdrückungsdatei) aus.  
   
-    -   **In Quelle** fügt ein `SuppressMessage`-Attribut in der Quelldatei über der Methode ein, die die Warnung generiert. Dadurch wird die Unterdrückung leichter gefunden.  
+   - **In Quelle** fügt ein `SuppressMessage`-Attribut in der Quelldatei über der Methode ein, die die Warnung generiert. Dadurch wird die Unterdrückung leichter gefunden.  
   
-    -   **In Unterdrückungsdatei** fügt ein `SuppressMessage`-Attribut zur **GlobalSuppressions.cs**-Datei des Projekts hinzu. Dies kann die Verwaltung der Unterdrückungen vereinfachen. Beachten Sie, dass das `SuppressMessage`-Attribut, das zu **GlobalSuppression.cs** hinzugefügt wurde, auch auf die Methode angewendet wird, die die Warnung generiert. Sie unterdrückt die Warnung nicht global.  
+   - **In Unterdrückungsdatei** fügt ein `SuppressMessage`-Attribut zur **GlobalSuppressions.cs**-Datei des Projekts hinzu. Dies kann die Verwaltung der Unterdrückungen vereinfachen. Beachten Sie, dass das `SuppressMessage`-Attribut, das zu **GlobalSuppression.cs** hinzugefügt wurde, auch auf die Methode angewendet wird, die die Warnung generiert. Sie unterdrückt die Warnung nicht global.  
   
      Die Entscheidung, ob die Warnung in der Quelldatei oder in der Unterdrückungsdatei unterdrückt wird, hängt vom Programmierstil und den Anforderungen ab.  
   

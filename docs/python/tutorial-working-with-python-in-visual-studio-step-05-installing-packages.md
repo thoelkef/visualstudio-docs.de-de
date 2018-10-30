@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fdc37c35d2563780804c38fb6a74e1574cfaa6ad
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 02fdc0d7cd8a16ec7a00191a364def22ad2d8192
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939396"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -26,29 +26,29 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 1. Wählen Sie den Menübefehl **Ansicht** > **Weitere Fenster** > **Python-Umgebungen** aus. Das Fenster **Python-Umgebungen** wird als Peer für den **Projektmappen-Explorer** geöffnet und zeigt die verschiedenen Umgebungen an, die für Sie verfügbar sind. Die Liste enthält die Umgebungen, die Sie mithilfe des Visual Studio-Installers installiert haben und die, die Sie separat installiert haben. Die Umgebung in Fettdruck ist die Standardumgebung, die für neue Projekte verwendet wird.
 
-  ![Fenster „Python-Umgebungen“](media/environments-default-view-blue.png)
+   ![Fenster „Python-Umgebungen“](media/environments-default-view-blue.png)
 
-1. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
+2. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
 
-1. Klicken Sie auf die Registerkarte **Pakete**, und Ihnen wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
+3. Klicken Sie auf die Registerkarte **Pakete**, und Ihnen wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
 
-  ![In einer Umgebung installierte Pakete](media/environments-installed-packages-blue.png)
+   ![In einer Umgebung installierte Pakete](media/environments-installed-packages-blue.png)
 
-1. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann **pip-Installation** auswählen.
+4. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann **pip-Installation** auswählen.
 
-  ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
+   ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
 
-1. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
+5. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
 
-1. Nachdem das Paket installiert ist, wird es im Fenster der **Python-Umgebung** angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
+6. Nachdem das Paket installiert ist, wird es im Fenster der **Python-Umgebung** angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
 
-  ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
+   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
 
-  Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
+   Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
 
-  Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
+   Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
 
-1. Erstellen Sie ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
+7. Erstellen Sie ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 
     ```python
     from math import radians
@@ -63,9 +63,9 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
     main()
     ```
 
-1. Führen Sie das Programm mit (**F5**) oder ohne Debugger (**STRG**+**F5**) aus, um die Ausgabe anzuzeigen:
+8. Führen Sie das Programm mit (**F5**) oder ohne Debugger (**STRG**+**F5**) aus, um die Ausgabe anzuzeigen:
 
-  ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
+   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

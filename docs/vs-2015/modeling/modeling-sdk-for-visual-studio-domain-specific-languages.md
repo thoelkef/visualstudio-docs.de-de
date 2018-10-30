@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883327"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Mithilfe der Modellierungs-SDK für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
  Mit MSDK können Sie ein Modell schnell in Form einer domänenspezifischen Sprache (DSL) entwickeln. Sie beginnen, indem Sie einen spezialisierten Editor verwenden, um ein Schema oder eine abstrakte Syntax zusammen mit einer grafischen Schreibweise zu definieren. Aus dieser Definition generiert VMSDK Folgendes:  
   
--   Eine Implementierung des Modells mithilfe einer stark typisierten API, die in einem transaktionsbasierten Speicher ausgeführt wird.  
+- Eine Implementierung des Modells mithilfe einer stark typisierten API, die in einem transaktionsbasierten Speicher ausgeführt wird.  
   
--   Ein strukturbasierter Explorer.  
+- Ein strukturbasierter Explorer.  
   
--   Ein grafischer Editor, in dem Benutzer das Modell bzw. Teile davon, die Sie definieren, anzeigen können.  
+- Ein grafischer Editor, in dem Benutzer das Modell bzw. Teile davon, die Sie definieren, anzeigen können.  
   
--   Serialisierungsmethoden, mit denen die Modelle in lesbarem XML gespeichert werden.  
+- Serialisierungsmethoden, mit denen die Modelle in lesbarem XML gespeichert werden.  
   
--   Funktionen zum Generieren des Programmcodes und anderer Artefakte mithilfe von Textvorlagen.  
+- Funktionen zum Generieren des Programmcodes und anderer Artefakte mithilfe von Textvorlagen.  
   
- Sie können alle diese Funktionen anpassen und erweitern. Ihre Erweiterungen sind so integriert, dass Sie noch die DSL-Definition aktualisieren und Funktionen erneut generieren können, ohne die Erweiterungen zu verlieren.  
+  Sie können alle diese Funktionen anpassen und erweitern. Ihre Erweiterungen sind so integriert, dass Sie noch die DSL-Definition aktualisieren und Funktionen erneut generieren können, ohne die Erweiterungen zu verlieren.  
   
 ## <a name="samples-and-the-latest-information"></a>Beispiele und aktuelle Informationen  
  [Das Modeling SDK für Visual Studio 2015 herunterladen](http://www.microsoft.com/download/details.aspx?id=48148)  

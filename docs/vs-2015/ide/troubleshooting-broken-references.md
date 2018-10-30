@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950666"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein Ausnahmefehler generiert. Der Fehler wird in erster Linie dadurch ausgelöst, dass die Komponente, auf die verwiesen wird, nicht gefunden wurde. In anderen Fällen kann jedoch davon ausgegangen werden, dass der Verweis fehlerhaft ist. Diese Fälle werden im Folgenden aufgeführt:  
   
--   Der Verweispfad des Projekts ist falsch oder unvollständig.  
+- Der Verweispfad des Projekts ist falsch oder unvollständig.  
   
--   Die Datei, auf die verwiesen wird, wurde gelöscht.  
+- Die Datei, auf die verwiesen wird, wurde gelöscht.  
   
--   Die Datei, auf die verwiesen wird, wurde umbenannt.  
+- Die Datei, auf die verwiesen wird, wurde umbenannt.  
   
--   Das Herstellen der Netzwerkverbindung oder die Authentifizierung ist fehlgeschlagen.  
+- Das Herstellen der Netzwerkverbindung oder die Authentifizierung ist fehlgeschlagen.  
   
--   Der Verweis bezieht sich auf eine COM-Komponente, die auf dem Computer nicht installiert ist.  
+- Der Verweis bezieht sich auf eine COM-Komponente, die auf dem Computer nicht installiert ist.  
   
- Im Folgenden werden Möglichkeiten zur Behebung dieser Probleme beschrieben.  
+  Im Folgenden werden Möglichkeiten zur Behebung dieser Probleme beschrieben.  
   
 > [!NOTE]
 >  Auf Dateien in Assemblys wird mit absoluten Pfaden in der Projektdatei verwiesen. Deshalb können Benutzer in einer Umgebung mit mehreren Entwicklern eine Assembly, für die ein Verweis vorhanden ist, in ihrer lokalen Umgebung möglicherweise nicht finden. Um diese Fehler zu vermeiden, empfiehlt es sich, in diesen Fällen Verweise zwischen Projekten hinzuzufügen. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) und [Programming with Assemblies (Programmieren mit Assemblys)](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

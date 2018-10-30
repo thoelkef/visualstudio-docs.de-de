@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848695"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192538"
 #### <a name="tool-window-states"></a>Status für Toolfenster  
  Visual Studio-Toolfenster müssen die verschiedenen Zustände, von die einige Benutzer (z. B. das Feature für Automatisches Ausblenden) aktiviert sind. Andere Zustände, wie z. B. automatisch sichtbar, können Sie Toolfenster im richtigen Kontext angezeigt werden soll und auszublenden, wenn Sie nicht benötigt. Es gibt fünf Status für Toolfenster insgesamt.  
   
--   **Angedockt/angeheftet** Toolfenster können an jeder der vier Seiten des Dokumentbereichs angefügt werden. Das Pushpin-Symbol wird in der Titelleiste des Toolfensters angezeigt werden. Das Toolfenster kann horizontal oder vertikal angedockt werden, am Rand der Shell und andere Toolfenster, und Sie können auch Registerkarten verknüpft werden.  
+- **Angedockt/angeheftet** Toolfenster können an jeder der vier Seiten des Dokumentbereichs angefügt werden. Das Pushpin-Symbol wird in der Titelleiste des Toolfensters angezeigt werden. Das Toolfenster kann horizontal oder vertikal angedockt werden, am Rand der Shell und andere Toolfenster, und Sie können auch Registerkarten verknüpft werden.  
   
--   **Automatisch ausgeblendete** Toolfenster werden gelöst. Ziehen Sie das Fenster wieder eingeblendet, wenn eine Registerkarte (mit den Namen des Toolfensters und das entsprechende Symbol) am Rand des Dokumentbereichs. Das Toolfenster wird eingeblendet, wenn ein Benutzer über die Registerkarte bewegt wird.  
+- **Automatisch ausgeblendete** Toolfenster werden gelöst. Ziehen Sie das Fenster wieder eingeblendet, wenn eine Registerkarte (mit den Namen des Toolfensters und das entsprechende Symbol) am Rand des Dokumentbereichs. Das Toolfenster wird eingeblendet, wenn ein Benutzer über die Registerkarte bewegt wird.  
   
--   **Automatisch sichtbar** Toolfenster automatisch angezeigt, wenn ein weiterer Teil der Benutzeroberfläche, z. B. einem Editor gestartet wird oder den Fokus erhält.  
+- **Automatisch sichtbar** Toolfenster automatisch angezeigt, wenn ein weiterer Teil der Benutzeroberfläche, z. B. einem Editor gestartet wird oder den Fokus erhält.  
   
--   **Unverankerte** Toolfenstern bewegen Sie den Mauszeiger außerhalb der IDE. Dies ist nützlich für Konfigurationen mit mehreren Bildschirmen.  
+- **Unverankerte** Toolfenstern bewegen Sie den Mauszeiger außerhalb der IDE. Dies ist nützlich für Konfigurationen mit mehreren Bildschirmen.  
   
--   **Dokument im Registerkartenformat** Toolfenster können auch innerhalb des Dokuments angedockt werden. Dies ist nützlich für große Toolfenster, z. B. den Objektkatalog, die mehr Platz als an die Ränder des Rahmens Andocken kann.  
+- **Dokument im Registerkartenformat** Toolfenster können auch innerhalb des Dokuments angedockt werden. Dies ist nützlich für große Toolfenster, z. B. den Objektkatalog, die mehr Platz als an die Ränder des Rahmens Andocken kann.  
   
- ![In Visual Studio Zuständen des Toolfensters](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702-01_ToolWindowStates")  
+  ![In Visual Studio Zuständen des Toolfensters](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702-01_ToolWindowStates")  
   
- **Status für Toolfenster in Visual Studio**  
+  **Status für Toolfenster in Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Einzelinstanzen und Mehrinstanzen  
  Toolfenster sind Einzel-Instanz oder mit mehreren Instanzen. Einige Einzelinstanz-Toolfenster können das aktive Dokumentfenster, zugeordnet werden, während Mehrfachinstanz-Toolfenster nicht können. Mehrfachinstanz-Toolfenster reagieren Sie auf dem Fenster/New-Window-Befehl erstellen Sie eine neue Instanz des Fensters. Die folgende Abbildung zeigt ein Toolfenster, die den neuen Fenster-Befehl aktivieren, wenn eine Instanz des Fensters aktiv ist:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192538"
 ### <a name="user-expectations-for-specific-document-types"></a>Die Erwartungen der Benutzer für bestimmte Dokumenttypen  
  Es gibt mehrere unterschiedliche Basistypen von Dokument-Editor, und jede hat eine Reihe von Interaktionen, die für andere Benutzer des gleichen Typs konsistent sind.  
   
--   **Textbasierten Editor:** Code-Editor, Protokolldateien  
+- **Textbasierten Editor:** Code-Editor, Protokolldateien  
   
--   **Entwurfsoberfläche:** WPF Forms Designer, Windows Forms  
+- **Entwurfsoberfläche:** WPF Forms Designer, Windows Forms  
   
--   **Dialogfeld-Stil-Editor:** Manifest-Designer-Projekteigenschaften  
+- **Dialogfeld-Stil-Editor:** Manifest-Designer-Projekteigenschaften  
   
--   **Modell-Designer:** Workflow-Designer, Codemap, Architekturdiagramm, Fortschritt  
+- **Modell-Designer:** Workflow-Designer, Codemap, Architekturdiagramm, Fortschritt  
   
- Es gibt auch mehrere nicht-Editor-Typen, die das Dokument verwenden. Während sie Dokumente selbst bearbeiten nicht, müssen sie Standardinteraktionen für Dokumentfenster folgen.  
+  Es gibt auch mehrere nicht-Editor-Typen, die das Dokument verwenden. Während sie Dokumente selbst bearbeiten nicht, müssen sie Standardinteraktionen für Dokumentfenster folgen.  
   
--   **Berichte:** IntelliTrace Bericht des Berichts, Hyper-V, Profiler-Berichtsansicht  
+- **Berichte:** IntelliTrace Bericht des Berichts, Hyper-V, Profiler-Berichtsansicht  
   
--   **Dashboard:** Diagnose-Hub  
+- **Dashboard:** Diagnose-Hub  
   
 #### <a name="text-based-editors"></a>Textbasierte Editoren  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192538"
   
  Wenn Sie ermittelt haben, dass Sie ein Dialogfeld benötigen, haben Sie drei Optionen entspricht, in Reihenfolge ihrer Priorität:  
   
-1.  Integrieren Sie Ihre Funktionen in einem der freigegebenen Dialogfelder in Visual Studio.  
+1. Integrieren Sie Ihre Funktionen in einem der freigegebenen Dialogfelder in Visual Studio.  
   
-2.  Erstellen Sie Ihre eigenen Dialogfeld unter Verwendung eines Musters finden Sie in einen vorhandenen ähnliche Dialog.  
+2. Erstellen Sie Ihre eigenen Dialogfeld unter Verwendung eines Musters finden Sie in einen vorhandenen ähnliche Dialog.  
   
-3.  Erstellen Sie ein neues Dialogfeld "," folgende Interaktion "und" Layout Leitlinien.  
+3. Erstellen Sie ein neues Dialogfeld "," folgende Interaktion "und" Layout Leitlinien.  
   
- In diesem Thema wird beschrieben, wie zum Auswählen des richtigen Dialogfeld-Musters in Visual Studio-Workflows und die allgemeine Konventionen für den Entwurf von Dialogfeld wird.  
+   In diesem Thema wird beschrieben, wie zum Auswählen des richtigen Dialogfeld-Musters in Visual Studio-Workflows und die allgemeine Konventionen für den Entwurf von Dialogfeld wird.  
   
 ### <a name="themes"></a>Designs  
  Dialogfelder in Visual Studio führen Sie eine der zwei grundlegende Formate:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192538"
 #### <a name="themed"></a>Design  
  Spezielle "Signatur" Dialogfelder möglicherweise mit Design. Mit Design versehen sind eine eigene Darstellung, die auch einige spezielle Interaktionsmuster, die dem Stil zugeordnete verfügt. Design "das Dialogfeld nur dann, wenn sie diese Anforderungen erfüllt:  
   
--   Das Dialogfeld ist eine umfassende Umgebung, die angezeigt und häufig oder von vielen Benutzern verwendet werden (z. B. die **neues Projekt** Dialogfeld.  
+- Das Dialogfeld ist eine umfassende Umgebung, die angezeigt und häufig oder von vielen Benutzern verwendet werden (z. B. die **neues Projekt** Dialogfeld.  
   
--   Das Dialogfeld enthält die Elemente der Marke gut sichtbaren Produkte (z. B. die **Kontoeinstellungen** Dialogfeld).  
+- Das Dialogfeld enthält die Elemente der Marke gut sichtbaren Produkte (z. B. die **Kontoeinstellungen** Dialogfeld).  
   
--   Das Dialogfeld wird angezeigt, wie ein wichtiger Teil eines größeren Flusses, die anderen Dialogfelder mit Design enthält (z. B. die **verbundenen Dienst hinzufügen** Dialogfeld).  
+- Das Dialogfeld wird angezeigt, wie ein wichtiger Teil eines größeren Flusses, die anderen Dialogfelder mit Design enthält (z. B. die **verbundenen Dienst hinzufügen** Dialogfeld).  
   
--   Das Dialogfeld "ist ein wichtiger Bestandteil der eine Benutzeroberfläche, die in Höherstufen oder eine Produktversion Unterscheidung eine strategische Rolle spielt.  
+- Das Dialogfeld "ist ein wichtiger Bestandteil der eine Benutzeroberfläche, die in Höherstufen oder eine Produktversion Unterscheidung eine strategische Rolle spielt.  
   
- Wenn Sie ein Dialogfeld mit Design zu erstellen, verwenden Sie die Farben für die richtige Umgebung, und führen Sie das richtige Layout und die Interaktionsmuster. (Finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Wenn Sie ein Dialogfeld mit Design zu erstellen, verwenden Sie die Farben für die richtige Umgebung, und führen Sie das richtige Layout und die Interaktionsmuster. (Finden Sie unter [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Dialogfeld-Entwurf  
  Ausgereifte Dialogfelder berücksichtigen Sie die folgenden Elemente:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192538"
   
 #### <a name="title-bars"></a>Titelleisten  
   
--   Der Text in der Titelleiste muss der Name des Befehls widerspiegeln, die sie gestartet.  
+- Der Text in der Titelleiste muss der Name des Befehls widerspiegeln, die sie gestartet.  
   
--   Symbol "keine" sollte auf Titelleisten Dialogfeld verwendet werden. Verwenden Sie in Fällen, in denen das System eine erfordert das Visual Studio-Logo.  
+- Symbol "keine" sollte auf Titelleisten Dialogfeld verwendet werden. Verwenden Sie in Fällen, in denen das System eine erfordert das Visual Studio-Logo.  
   
--   Dialogfelder dürfen keine minimieren oder Maximieren Sie die Schaltflächen.  
+- Dialogfelder dürfen keine minimieren oder Maximieren Sie die Schaltflächen.  
   
--   Hilfe-Schaltflächen in der Titelleiste sind veraltet. Fügen Sie sie nicht für neue Dialogfelder. Wenn sie vorhanden sind, sollten sie ein Hilfethema gestartet, vom Konzept her für die Aufgabe relevant ist.  
+- Hilfe-Schaltflächen in der Titelleiste sind veraltet. Fügen Sie sie nicht für neue Dialogfelder. Wenn sie vorhanden sind, sollten sie ein Hilfethema gestartet, vom Konzept her für die Aufgabe relevant ist.  
   
- ![Title bar Spezifikationen für Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 Artikelnr-03_TitleBarSpecs")  
+  ![Title bar Spezifikationen für Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 Artikelnr-03_TitleBarSpecs")  
   
- **Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfelder.**  
+  **Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfelder.**  
   
 #### <a name="control-buttons"></a>Steuerschaltflächen  
  Im allgemeinen **OK**/**Abbrechen**/**Hilfe** Schaltflächen in der unteren rechten Ecke des Dialogfelds horizontal angeordnet werden soll. Die alternative vertikale Stapel ist zulässig, wenn ein Dialogfeld mehrere andere Schaltflächen am unteren Rand des Dialogfelds enthält, die visual Verwechslungen mit den Schaltflächen des Steuerelements darstellen würde.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192538"
   
  Das Dialogfeld muss es sich um eine Standardschaltfläche für das Steuerelement enthalten. Um zu bestimmen, die beste Befehl aus, um als Standard verwenden, wählen Sie die folgenden Optionen (aufgeführt in der Rangfolge):  
   
--   Wählen Sie den Befehl am sichersten und sichersten, als Standard. Dies bedeutet, dass des Befehls, die wahrscheinlich zu verhindern, dass Daten verloren gehen, und vermeiden unbeabsichtigte Systemzugriff.  
+- Wählen Sie den Befehl am sichersten und sichersten, als Standard. Dies bedeutet, dass des Befehls, die wahrscheinlich zu verhindern, dass Daten verloren gehen, und vermeiden unbeabsichtigte Systemzugriff.  
   
--   Wenn Daten verloren gehen und die Sicherheit nicht Faktoren sind, wählen Sie dann den Standardbefehl basierend auf der Einfachheit halber ein. Die wahrscheinlichste-Befehls als Standard steigert den Workflow des Benutzers, wenn das Dialogfeld häufige oder sich wiederholende Aufgaben unterstützt.  
+- Wenn Daten verloren gehen und die Sicherheit nicht Faktoren sind, wählen Sie dann den Standardbefehl basierend auf der Einfachheit halber ein. Die wahrscheinlichste-Befehls als Standard steigert den Workflow des Benutzers, wenn das Dialogfeld häufige oder sich wiederholende Aufgaben unterstützt.  
   
- Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardbefehl. Wenn so ein Befehl vorhanden ist, wählen Sie stattdessen einen sichereren Befehl als Standard.  
+  Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardbefehl. Wenn so ein Befehl vorhanden ist, wählen Sie stattdessen einen sichereren Befehl als Standard.  
   
 #### <a name="access-keys"></a>Zugriffsschlüssel  
  Verwenden Sie nicht die Zugriffsschlüssel für **OK**/**Abbrechen**/**Hilfe** Schaltflächen. Diese Schaltflächen sind standardmäßig auf Tastenkombinationen zugeordnet:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192538"
   
  Projekte sollten Sie stets:  
   
--   Unterstützen Sie die Möglichkeit, Projektordner zum Organisieren von Inhalt des Projekts hinzufügen  
+- Unterstützen Sie die Möglichkeit, Projektordner zum Organisieren von Inhalt des Projekts hinzufügen  
   
--   Beibehalten eines konsistenten Modells zum projektpersistenz  
+- Beibehalten eines konsistenten Modells zum projektpersistenz  
   
- Projekte sollten auch für konsistente interaktionsmodelle beibehalten:  
+  Projekte sollten auch für konsistente interaktionsmodelle beibehalten:  
   
--   Entfernen von Projektelementen  
+- Entfernen von Projektelementen  
   
--   Speichern von Dokumenten  
+- Speichern von Dokumenten  
   
--   Projekt Eigenschaft bearbeiten  
+- Projekt Eigenschaft bearbeiten  
   
--   Bearbeiten das Projekt in einer alternativen Ansicht  
+- Bearbeiten das Projekt in einer alternativen Ansicht  
   
--   Drag & Drop-Vorgänge  
+- Drag & Drop-Vorgänge  
   
 ### <a name="drag-and-drop-interaction-model"></a>Drag & Drop-Interaktion  
  Projekte in der Regel Klassifizieren von sich selbst als anhand von verweisen (nur Verweise auf die Projektelemente im Speicher beibehalten werden können), Directory-basierte (können nur Projektelemente physisch beibehalten gespeichert innerhalb eines Projekts Hierarchie), oder gemischt (können Verweise beibehalten werden. (oder physischen Elementen). Die IDE unterstützt alle drei Typen von Projekten gleichzeitig innerhalb der **Projektmappen-Explorer**.  
   
  Hinsichtlich der Drag & Drop die folgenden Merkmale treffen sollten, um jede Art von Projekt in der **Projektmappen-Explorer**:  
   
--   **Referenz-basiertes Projekt:** der wichtigste Punkt ist, dass das Projekt um einen Verweis auf ein Element im Speicher zieht. Wenn Sie ein Referenz-basiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollten sie nur den Verweis auf das Element aus dem Projekt entfernen. Das Element sollte von der Festplatte nicht tatsächlich gelöscht werden. Wenn Sie ein Referenz-basiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollten sie einen Verweis auf dem ursprünglichen Quellelement hinzufügen, ohne dass eine private Kopie des Elements.  
+- **Referenz-basiertes Projekt:** der wichtigste Punkt ist, dass das Projekt um einen Verweis auf ein Element im Speicher zieht. Wenn Sie ein Referenz-basiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollten sie nur den Verweis auf das Element aus dem Projekt entfernen. Das Element sollte von der Festplatte nicht tatsächlich gelöscht werden. Wenn Sie ein Referenz-basiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollten sie einen Verweis auf dem ursprünglichen Quellelement hinzufügen, ohne dass eine private Kopie des Elements.  
   
--   **Verzeichnisbasiertes Projekt:** aus einem Drag & Drop-Sicht, das Projekt für das physische Element statt einen Verweis zieht. Wenn ein Verzeichnisbasiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollte es am Ende das Löschen der physischen Elements von der Festplatte als auch aus dem Projekt entfernen. Wenn ein Verzeichnisbasiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollte es eine Kopie des Quellelements in den Zielspeicherort erstellen.  
+- **Verzeichnisbasiertes Projekt:** aus einem Drag & Drop-Sicht, das Projekt für das physische Element statt einen Verweis zieht. Wenn ein Verzeichnisbasiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollte es am Ende das Löschen der physischen Elements von der Festplatte als auch aus dem Projekt entfernen. Wenn ein Verzeichnisbasiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollte es eine Kopie des Quellelements in den Zielspeicherort erstellen.  
   
--   **Gemischte Zielprojekt:** aus Sicht einer Drag & Drop das Verhalten dieser Art von Projekt ist aufgrund der Natur des Elements gezogen wird, entweder (einen Verweis auf ein Element im Speicher) oder das Element selbst. Das richtige Verhalten für Verweise und physischen Elementen oben beschrieben werden.  
+- **Gemischte Zielprojekt:** aus Sicht einer Drag & Drop das Verhalten dieser Art von Projekt ist aufgrund der Natur des Elements gezogen wird, entweder (einen Verweis auf ein Element im Speicher) oder das Element selbst. Das richtige Verhalten für Verweise und physischen Elementen oben beschrieben werden.  
   
- Wenn es nur eine Art von Projekt in gab der **Projektmappen-Explorer**, Drag & Drop-Vorgänge einfach wäre. Da jede Projektsystem die Möglichkeit, eigene Drag & Drop-Verhalten definiert hat, sollten bestimmte Richtlinien (basierend auf dem Windows Explorer-Drag & Drop-Verhalten) befolgt werden, um eine vorhersagbare benutzererfahrung zu gewährleisten:  
+  Wenn es nur eine Art von Projekt in gab der **Projektmappen-Explorer**, Drag & Drop-Vorgänge einfach wäre. Da jede Projektsystem die Möglichkeit, eigene Drag & Drop-Verhalten definiert hat, sollten bestimmte Richtlinien (basierend auf dem Windows Explorer-Drag & Drop-Verhalten) befolgt werden, um eine vorhersagbare benutzererfahrung zu gewährleisten:  
   
--   Einer unveränderten Ziehen mit der der **Projektmappen-Explorer** (Wenn weder STRG-UMSCHALT-Taste gedrückt gehalten werden) sollten dazu führen, ein Verschiebevorgang.  
+- Einer unveränderten Ziehen mit der der **Projektmappen-Explorer** (Wenn weder STRG-UMSCHALT-Taste gedrückt gehalten werden) sollten dazu führen, ein Verschiebevorgang.  
   
--   Ziehen bei gedrückter Umschalttaste Vorgang soll auch zu einem Verschiebevorgang führen.  
+- Ziehen bei gedrückter Umschalttaste Vorgang soll auch zu einem Verschiebevorgang führen.  
   
--   Ziehen Sie mit der STRG-Taste Vorgang sollte in einem Kopiervorgang führen.  
+- Ziehen Sie mit der STRG-Taste Vorgang sollte in einem Kopiervorgang führen.  
   
--   Anhand von verweisen und gemischte Projektsystemen unterstützen das Konzept des Hinzufügens einer Verknüpfung (oder referenzieren) auf das Quellelement. Wenn diese Projekte sind das Ziel eines Drag & Drop-Vorgangs (Wenn **STRG + UMSCHALT** gedrückt gehalten wird), sie sollten dazu führen, einen Verweis auf das Element dem Projekt hinzugefügt wird  
+- Anhand von verweisen und gemischte Projektsystemen unterstützen das Konzept des Hinzufügens einer Verknüpfung (oder referenzieren) auf das Quellelement. Wenn diese Projekte sind das Ziel eines Drag & Drop-Vorgangs (Wenn **STRG + UMSCHALT** gedrückt gehalten wird), sie sollten dazu führen, einen Verweis auf das Element dem Projekt hinzugefügt wird  
   
- Nicht alle Drag & Drop-Vorgänge sind Kombinationen von verweisbasierte, Directory-basierte und gemischte Projekte sinnvoll. Insbesondere ist es problematisch, vorzugeben, um einen Verschiebevorgang zwischen einem verzeichnisbasierte-Source-Projekt und eine verweisbasierte Zielprojekt zu ermöglichen, da das Quellprojekt verzeichnisbasierte zugreifen kann, um das Quellelement nach Abschluss der Verschiebung zu löschen. Das Zielprojekt verweisbasierte würde dann einen Verweis auf ein gelöschtes Element erhalten.  
+  Nicht alle Drag & Drop-Vorgänge sind Kombinationen von verweisbasierte, Directory-basierte und gemischte Projekte sinnvoll. Insbesondere ist es problematisch, vorzugeben, um einen Verschiebevorgang zwischen einem verzeichnisbasierte-Source-Projekt und eine verweisbasierte Zielprojekt zu ermöglichen, da das Quellprojekt verzeichnisbasierte zugreifen kann, um das Quellelement nach Abschluss der Verschiebung zu löschen. Das Zielprojekt verweisbasierte würde dann einen Verweis auf ein gelöschtes Element erhalten.  
   
- Es ist jedoch auch irreführend sein, um einen Kopiervorgang zwischen diesen Typen von Projekten zu ermöglichen, da das Zielprojekt anhand von Verweisen eine unabhängige Kopie des Quellelements durchführen dürfen, vorzugeben. Auf ähnliche Weise sollte STRG + UMSCHALT, die Sie in ein Verzeichnis-basierte Zielprojekt ziehen nicht zulässig, da ein Verzeichnisbasiertes Projekt Verweise beibehalten werden kann. In Fällen, in denen die Drag & Drop-Vorgang nicht unterstützt wird, sollte die IDE unterbinden die Dropdownliste und dem Benutzer anzeigen, den keine Ablage-Cursor (in Zeiger in der folgenden Tabelle dargestellt).  
+  Es ist jedoch auch irreführend sein, um einen Kopiervorgang zwischen diesen Typen von Projekten zu ermöglichen, da das Zielprojekt anhand von Verweisen eine unabhängige Kopie des Quellelements durchführen dürfen, vorzugeben. Auf ähnliche Weise sollte STRG + UMSCHALT, die Sie in ein Verzeichnis-basierte Zielprojekt ziehen nicht zulässig, da ein Verzeichnisbasiertes Projekt Verweise beibehalten werden kann. In Fällen, in denen die Drag & Drop-Vorgang nicht unterstützt wird, sollte die IDE unterbinden die Dropdownliste und dem Benutzer anzeigen, den keine Ablage-Cursor (in Zeiger in der folgenden Tabelle dargestellt).  
   
- Um Drag & Drop-Verhalten ordnungsgemäß zu implementieren, das Source-Projekt des Ziehvorgangs seiner Natur kommunizieren muss (beispielsweise ist es Referenz - oder Verzeichnis-basierte?) in das Zielprojekt. Diese Informationen wird durch das Format der Zwischenablage angezeigt, die von der Quelle bereitgestellt werden. Als Quelle eines Drag & (oder Kopieren der Zwischenablagevorgang) sollte bieten ein Projekt entweder **CF_VSREFPROJECTITEM**S oder **CF_VSSTGPROJECTITEMS** , je nachdem, ob das Projekt anhand von verweisen oder verzeichnisbasierte. Beide Formate haben den gleichen Dateninhalt, der ähnelt der Windows **CF_HDROP** formatieren mit dem Unterschied, dass Listen von Zeichenfolgen, anstatt von Dateinamen, einen Double-Wert - sind**NULL** Liste der beendet **Projref** Zeichenfolgen (wie vom zurückgegeben **IVsSolution::GetProjrefOfItem** oder **:: GetProjrefOfProject** je nach Bedarf).  
+  Um Drag & Drop-Verhalten ordnungsgemäß zu implementieren, das Source-Projekt des Ziehvorgangs seiner Natur kommunizieren muss (beispielsweise ist es Referenz - oder Verzeichnis-basierte?) in das Zielprojekt. Diese Informationen wird durch das Format der Zwischenablage angezeigt, die von der Quelle bereitgestellt werden. Als Quelle eines Drag & (oder Kopieren der Zwischenablagevorgang) sollte bieten ein Projekt entweder **CF_VSREFPROJECTITEM**S oder **CF_VSSTGPROJECTITEMS** , je nachdem, ob das Projekt anhand von verweisen oder verzeichnisbasierte. Beide Formate haben den gleichen Dateninhalt, der ähnelt der Windows **CF_HDROP** formatieren mit dem Unterschied, dass Listen von Zeichenfolgen, anstatt von Dateinamen, einen Double-Wert - sind**NULL** Liste der beendet **Projref** Zeichenfolgen (wie vom zurückgegeben **IVsSolution::GetProjrefOfItem** oder **:: GetProjrefOfProject** je nach Bedarf).  
   
- Als Ziel einer Drop (oder die Zwischenablage einfügen-Vorgang), sollte ein Projekt akzeptieren sowohl **CF_VSREFPROJECTITEMS** und **CF_VSSTGPROJECTITEMS**, obwohl die genaue Behandlung des Drag & Drop-Vorgangs variiert Je nach Art das Zielprojekt und das Source-Projekt. Das Quellprojekt deklariert seiner Natur von, ob es bietet **CF_VSREFPROJECTITEMS** oder **CF_VSSTGPROJECTITEMS**. Das Ziel des Ablegevorgangs eigene Art versteht und hat daher genügend Informationen, um Entscheidungen zu treffen, ob eine verschieben, kopieren oder Link ausgeführt werden soll. Der Benutzer ändert auch die Drag & Drop-Vorgang durch Drücken der STRG, UMSCHALTTASTE gedrückt, oder sowohl STRG und Umschalttaste ausgeführt werden soll. Es ist wichtig für das Ablageziel, um ordnungsgemäß anzugeben, welcher Vorgang im Voraus in ausgeführt wird seine **"DragEnter"** und **"DragOver"** Methoden. Die **Projektmappen-Explorer** automatisch weiß, ob das Source-Projekt und das Zielprojekt desselben Projekts sind.  
+  Als Ziel einer Drop (oder die Zwischenablage einfügen-Vorgang), sollte ein Projekt akzeptieren sowohl **CF_VSREFPROJECTITEMS** und **CF_VSSTGPROJECTITEMS**, obwohl die genaue Behandlung des Drag & Drop-Vorgangs variiert Je nach Art das Zielprojekt und das Source-Projekt. Das Quellprojekt deklariert seiner Natur von, ob es bietet **CF_VSREFPROJECTITEMS** oder **CF_VSSTGPROJECTITEMS**. Das Ziel des Ablegevorgangs eigene Art versteht und hat daher genügend Informationen, um Entscheidungen zu treffen, ob eine verschieben, kopieren oder Link ausgeführt werden soll. Der Benutzer ändert auch die Drag & Drop-Vorgang durch Drücken der STRG, UMSCHALTTASTE gedrückt, oder sowohl STRG und Umschalttaste ausgeführt werden soll. Es ist wichtig für das Ablageziel, um ordnungsgemäß anzugeben, welcher Vorgang im Voraus in ausgeführt wird seine **"DragEnter"** und **"DragOver"** Methoden. Die **Projektmappen-Explorer** automatisch weiß, ob das Source-Projekt und das Zielprojekt desselben Projekts sind.  
   
- Ziehen Projektelemente auf Instanzen von Visual Studio (z. B. von einer Instanz von devenv.exe in einen anderen), wird ausdrücklich nicht unterstützt. Die **Projektmappen-Explorer** auch direkt wird deaktiviert.  
+  Ziehen Projektelemente auf Instanzen von Visual Studio (z. B. von einer Instanz von devenv.exe in einen anderen), wird ausdrücklich nicht unterstützt. Die **Projektmappen-Explorer** auch direkt wird deaktiviert.  
   
- Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgangs durch Auswahl eines Elements, ziehen es an den Zielspeicherort und beobachten, die von den folgenden Mauszeiger angezeigt wird, bevor das Element gelöscht wird:  
+  Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgangs durch Auswahl eines Elements, ziehen es an den Zielspeicherort und beobachten, die von den folgenden Mauszeiger angezeigt wird, bevor das Element gelöscht wird:  
   
 |Mauszeiger|Befehl|Beschreibung|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192538"
   
  Diese Details sollten in Betracht gezogen werden, bei der Implementierung, ziehen der **Projektmappen-Explorer**:  
   
--   Entwerfen Sie für Szenarien mit mehreren Auswahl.  
+- Entwerfen Sie für Szenarien mit mehreren Auswahl.  
   
--   Dateinamen (vollständiger Pfad) für das Zielprojekt eindeutig sein müssen, oder der Ablegevorgang nicht zulässig sein soll.  
+- Dateinamen (vollständiger Pfad) für das Zielprojekt eindeutig sein müssen, oder der Ablegevorgang nicht zulässig sein soll.  
   
--   Ordner müssen eindeutig sein (Groß-/Kleinschreibung) auf der Ebene, die sie gelöscht wird.  
+- Ordner müssen eindeutig sein (Groß-/Kleinschreibung) auf der Ebene, die sie gelöscht wird.  
   
--   Es gibt Unterschiede im Verhalten zwischen Dateien, die zum Zeitpunkt der ziehen Sie (im oben genannten Szenarien nicht aufgeführt) offen oder geschlossen werden.  
+- Es gibt Unterschiede im Verhalten zwischen Dateien, die zum Zeitpunkt der ziehen Sie (im oben genannten Szenarien nicht aufgeführt) offen oder geschlossen werden.  
   
--   Dateien der obersten Ebene verhält sich etwas anders als Dateien in Ordnern.  
+- Dateien der obersten Ebene verhält sich etwas anders als Dateien in Ordnern.  
   
- Ein weiteres Problem, zu berücksichtigen ist das Durchführen von Move-Vorgänge für Elemente, die geöffneten Designer oder Editoren verfügen. Das erwartete Verhalten ist wie folgt (Dies gilt für alle Projekttypen):  
+  Ein weiteres Problem, zu berücksichtigen ist das Durchführen von Move-Vorgänge für Elemente, die geöffneten Designer oder Editoren verfügen. Das erwartete Verhalten ist wie folgt (Dies gilt für alle Projekttypen):  
   
-1.  Wenn der Editor/Designer Öffnen keine nicht gespeicherten Änderungen verfügt, sollte der Designer/Editor-Fenster automatisch geschlossen werden.  
+1. Wenn der Editor/Designer Öffnen keine nicht gespeicherten Änderungen verfügt, sollte der Designer/Editor-Fenster automatisch geschlossen werden.  
   
-2.  Wenn der Editor/Designer Öffnen nicht gespeicherte Änderungen verfügt, soll klicken Sie dann die Quelle des Ziehvorgangs Warten der Dropdownliste aus, und klicken Sie dann den Benutzer bitten, die nicht gespeicherte Änderungen in geöffneten Dokumente zu speichern, vor dem Schließen des Fensters mit einer Eingabeaufforderung etwa wie folgt :  
+2. Wenn der Editor/Designer Öffnen nicht gespeicherte Änderungen verfügt, soll klicken Sie dann die Quelle des Ziehvorgangs Warten der Dropdownliste aus, und klicken Sie dann den Benutzer bitten, die nicht gespeicherte Änderungen in geöffneten Dokumente zu speichern, vor dem Schließen des Fensters mit einer Eingabeaufforderung etwa wie folgt :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Dadurch wird dem Benutzer die Möglichkeit, Ihre Arbeit zu speichern, bevor das Ziel auf seine Datenbankkopien ausführt. Eine neue Methode **IVsHierarchyDropDataSource2::OnBeforeDropNotify** aktivieren Sie diese Behandlung hinzugefügt wurde.  
+   Dadurch wird dem Benutzer die Möglichkeit, Ihre Arbeit zu speichern, bevor das Ziel auf seine Datenbankkopien ausführt. Eine neue Methode **IVsHierarchyDropDataSource2::OnBeforeDropNotify** aktivieren Sie diese Behandlung hinzugefügt wurde.  
   
- Das Ziel kopiert dann den Zustand des Elements, wie es im Speicher ist (einschließlich der nicht gespeicherten Änderungen nicht im Editor aus, wenn der Benutzer **keine**). Nachdem das Ziel der Kopiervorgang abgeschlossen wurde (in **IVsHierarchyDropDataSource::Drop**), die Quelle ist die Möglichkeit gegeben, den löschen-Teil der Verschiebevorgang abgeschlossen (in **IVsHierarchyDropDataSource::O nDropNotify**).  
+   Das Ziel kopiert dann den Zustand des Elements, wie es im Speicher ist (einschließlich der nicht gespeicherten Änderungen nicht im Editor aus, wenn der Benutzer **keine**). Nachdem das Ziel der Kopiervorgang abgeschlossen wurde (in **IVsHierarchyDropDataSource::Drop**), die Quelle ist die Möglichkeit gegeben, den löschen-Teil der Verschiebevorgang abgeschlossen (in **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Alle Editoren mit nicht gespeicherten Änderungen sollte geöffnet bleiben. Für diese Dokumente mit ungespeicherten Änderungen bedeutet dies, dass der kopieren-Teil des Verschiebevorgangs wird ausgeführt, aber der Delete-Teil wird abgebrochen. In einem Szenario mit mehreren Auswahl, wenn der Benutzer wählt **keine**, diese Dokumente mit ungespeicherten Änderungen sollten nicht geschlossen oder entfernt werden, aber ohne nicht gespeicherte Änderungen geschlossen und entfernt werden soll.
+   Alle Editoren mit nicht gespeicherten Änderungen sollte geöffnet bleiben. Für diese Dokumente mit ungespeicherten Änderungen bedeutet dies, dass der kopieren-Teil des Verschiebevorgangs wird ausgeführt, aber der Delete-Teil wird abgebrochen. In einem Szenario mit mehreren Auswahl, wenn der Benutzer wählt **keine**, diese Dokumente mit ungespeicherten Änderungen sollten nicht geschlossen oder entfernt werden, aber ohne nicht gespeicherte Änderungen geschlossen und entfernt werden soll.
 

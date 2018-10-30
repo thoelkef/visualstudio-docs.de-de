@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908345"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbares **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe angefügt ist. Der Bereich "Aktionen" innerhalb der Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen, gehostet wird z. B. die **XML-Quelle** Aufgabenbereich in Excel oder dem **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -48,16 +48,16 @@ ms.locfileid: "35673408"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Fügen Sie mehrerer Steuerelemente im Aktionsbereich hinzu  
  Wenn Sie mehrere Steuerelemente zum Aktionsbereich hinzufügen, Sie sollten die Steuerelemente in einem Steuerelement und fügen Sie dann das benutzerdefinierte Steuerelement an die <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft. Dieser Vorgang umfasst die folgenden Schritte:  
 
-1.  Erstellen Sie die Benutzeroberfläche (UI) des Aktionsbereichs durch Hinzufügen einer **Aktionsbereich-Steuerelements** oder **Benutzersteuerelement** Element zu Ihrem Projekt. Beide Elemente umfassen eine benutzerdefinierte Windows Forms-<xref:System.Windows.Forms.UserControl>-Klasse. Die **Aktionsbereich-Steuerelements** und **Benutzersteuerelement** Elemente gleichwertig sind; der einzige Unterschied ist, deren Namen.  
+1. Erstellen Sie die Benutzeroberfläche (UI) des Aktionsbereichs durch Hinzufügen einer **Aktionsbereich-Steuerelements** oder **Benutzersteuerelement** Element zu Ihrem Projekt. Beide Elemente umfassen eine benutzerdefinierte Windows Forms-<xref:System.Windows.Forms.UserControl>-Klasse. Die **Aktionsbereich-Steuerelements** und **Benutzersteuerelement** Elemente gleichwertig sind; der einzige Unterschied ist, deren Namen.  
 
-2.  Fügen Sie dem <xref:System.Windows.Forms.UserControl> Windows Forms-Steuerelemente durch Verwendung des Designers oder durch Schreiben von Code hinzu.  
+2. Fügen Sie dem <xref:System.Windows.Forms.UserControl> Windows Forms-Steuerelemente durch Verwendung des Designers oder durch Schreiben von Code hinzu.  
 
-    > [!NOTE]  
-    >  Sie können dem Aktionsbereich auch WPF-Steuerelemente hinzufügen, indem Sie dem Windows Forms-<xref:System.Windows.Forms.UserControl> ein WPF-<xref:System.Windows.Controls.UserControl> hinzufügen. Weitere Informationen finden Sie unter [verwenden WPF-Steuerelemente in Office-Projektmappen](../vsto/using-wpf-controls-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Sie können dem Aktionsbereich auch WPF-Steuerelemente hinzufügen, indem Sie dem Windows Forms-<xref:System.Windows.Forms.UserControl> ein WPF-<xref:System.Windows.Controls.UserControl> hinzufügen. Weitere Informationen finden Sie unter [verwenden WPF-Steuerelemente in Office-Projektmappen](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3.  Fügen Sie den im `ActionsPane`-Feld enthaltenen Steuerelementen der `ThisWorkbook`-Klasse (für Excel) oder der `ThisDocument`-Klasse (für Word) eine Instanz des benutzerdefinierten Steuerelements im Projekt hinzu.  
+3. Fügen Sie den im `ActionsPane`-Feld enthaltenen Steuerelementen der `ThisWorkbook`-Klasse (für Excel) oder der `ThisDocument`-Klasse (für Word) eine Instanz des benutzerdefinierten Steuerelements im Projekt hinzu.  
 
- Beispiele, die diesen Prozess im Detail zu veranschaulichen, finden Sie unter [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+   Beispiele, die diesen Prozess im Detail zu veranschaulichen, finden Sie unter [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Ausblenden des Aktionsbereichs  
  Obwohl die <xref:Microsoft.Office.Tools.ActionsPane>-Klasse über eine <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>-Methode und eine <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>-Eigenschaft verfügt, können Sie den Aktionsbereich nicht von der Benutzeroberfläche entfernen, indem Sie einen beliebigen Member der <xref:Microsoft.Office.Tools.ActionsPane>-Klasse selbst verwenden. Aufrufen der <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> -Methode oder Festlegen der <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> Eigenschaft **"false"** nur die Steuerelemente im Aktionsbereich ausgeblendet ist es nicht im Aufgabenbereich ausgeblendet.  
@@ -104,7 +104,7 @@ ms.locfileid: "35673408"
  Sie können Steuerelemente im Aktionsbereich und Steuerelemente im Dokument an das gleiche Dataset binden. Beispielsweise können Sie eine Master-/Detailbeziehung zwischen den Steuerelementen im Aktionsbereich und den Steuerelementen im Arbeitsblatt erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Überprüfen von Daten in Aktionsbereich-Steuerelementen  
- Wenn Sie ein Meldungsfeld im <xref:System.Windows.Forms.Control.Validating>-Ereignishandler eines Steuerelements im Aktionsbereich anzeigen, kann das Ereignis ein zweites Mal ausgelöst werden, wenn sich der Fokus vom Steuerelement auf das Meldungsfeld verlagert. Um dies zu verhindern, verwenden Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement zum Anzeigen von Überprüfungsfehlermeldungen.  
+ Wenn Sie ein Meldungsfeld im <xref:System.Windows.Forms.Control.Validating>-Ereignishandler eines Steuerelements im Aktionsbereich anzeigen, kann das Ereignis ein zweites Mal ausgelöst werden, wenn sich der Fokus vom Steuerelement auf das Meldungsfeld verlagert. Um dies zu verhindern, verwenden Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement zum Anzeigen von Validierungsfehlermeldungen.  
 
 ## <a name="user-control-stacking-order"></a>Benutzersteuerelement Stapelreihenfolge  
  Wenn Sie mehrere Benutzersteuerelemente verwenden, können Sie Code schreiben, durch den die Benutzersteuerelemente im Aktionsbereich – ob vertikal oder horizontal angedockt – richtig gestapelt werden. Sie können die Stapelreihenfolge der Benutzersteuerelemente im Aktionsbereich mithilfe der <xref:Microsoft.Office.Tools.StackStyle>-Enumeration der <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>-Eigenschaft festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)  

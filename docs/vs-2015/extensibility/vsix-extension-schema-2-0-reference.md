@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893876"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterungsschema 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
 ### <a name="assets-element"></a>Ressourcen-Element  
  Dieses Element enthält eine Liste der `<Asset>` Tags für jedes Element Erweiterung oder des Inhalts, die von diesem Paket verfügbar gemacht.  
   
--   `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
+- `<Asset>` : Dieses Element enthält die folgenden Attribute und Elemente:  
   
-    -   `Type` – Dies ist der Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
+  - `Type` – Dies ist der Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
   
-        1.  "Microsoft.VisualStudio.VSPackage"  
+    1. "Microsoft.VisualStudio.VSPackage"  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Sie können eigene Typen erstellen, und geben sie eindeutige Namen. Zur Laufzeit in Visual Studio kann Ihr Code auflisten und Zugriff auf diese benutzerdefinierte Typen über die Erweiterungs-Manager-API.  
+       Sie können eigene Typen erstellen, und geben sie eindeutige Namen. Zur Laufzeit in Visual Studio kann Ihr Code auflisten und Zugriff auf diese benutzerdefinierte Typen über die Erweiterungs-Manager-API.  
   
-    -   Pfad – der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
+  - Pfad – der relative Pfad in die Datei oder Ordner innerhalb des Pakets, das das Objekt enthält.  
   
-    -   `AnyAttribute*` – Ein offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht werden müssen.  
+  - `AnyAttribute*` – Ein offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht werden müssen.  
   
-         `<AnyElement>*` – Alle strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
+     `<AnyElement>*` – Alle strukturierten Inhalten kann zwischen einem `<Asset>` Begin- und end-Tag. Alle Elemente werden als eine Liste der XmlElement-Objekte verfügbar gemacht. VSIX-Erweiterungen können strukturierte typspezifische Metadaten definieren, in der Manifestdatei und zur Laufzeit aufzulisten.  
   
 ### <a name="sample-manifest"></a>Beispielmanifest  
   

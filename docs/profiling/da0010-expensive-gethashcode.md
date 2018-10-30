@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bb60104fa865cffa3e06ac088b92081e444457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877230"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Speicherintensive GetHashCode-Funktionen
+
 |||  
 |-|-|  
 |Regel-ID|DA0010|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749959"
 |Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|  
 |Meldung|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|  
 |Nachrichtentyp|Warnung|  
-  
+
 ## <a name="cause"></a>Ursache  
  Aufrufe der GetHashCode-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die Methode belegt Arbeitsspeicher.  
-  
+
 ## <a name="rule-description"></a>Regelbeschreibung  
  Hashing ist eine Technik, mit deren Hilfe Sie ein bestimmtes Element in einer Auflistung mit vielen Elementen schnell finden können. Da Hashtabellen groß sein können und hohe Zugriffsraten unterstützen müssen, sollten sie auch effizient konzipiert sein. Folglich sollten GetHashCode-Methoden in .NET Framework keinen Speicherplatz belegen. Wenn Speicherplatz belegt wird, wird die Belastung des Garbage Collectors größer, wodurch die Methode unter Umständen nur mit einer Verzögerung ausgeführt werden kann, wenn es nötig sein sollte, die Garbage Collection aufgrund der Reservierungsanforderung auszuführen.  
-  
+
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verringern Sie die Komplexität der Methode.

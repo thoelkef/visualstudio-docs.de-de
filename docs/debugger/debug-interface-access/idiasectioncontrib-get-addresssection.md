@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_addresssection | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_addresssection | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a0fb267e2a3e4c0a2b8f5a1e5ce95e986e4c1ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5458fea42c799289554df7761fbc3056b423c592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880468"
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
-Ruft den Abschnitt Teil den Beitrag Adresse ab.  
+Ruft den Teil "Abschnitt" Beteiligung der Adresse ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get_addressSection (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Abschnitt Teil den Beitrag Adresse zurück.  
+ [out] Gibt den Teil "Abschnitt" Beteiligung der Adresse zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843040"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>So fügen Sie der Datei „app.config“ den benutzerdefinierten Konfigurationsabschnitt hinzu  
   
-1.  Das Stammelement von app.config sollte das `configuration`-Element sein. Erstellen Sie ein `configSections`-Element innerhalb des `configuration`-Elements. `configSections` sollte das erste Element in der Datei „app.config“ sein.  
+1. Das Stammelement von app.config sollte das `configuration`-Element sein. Erstellen Sie ein `configSections`-Element innerhalb des `configuration`-Elements. `configSections` sollte das erste Element in der Datei „app.config“ sein.  
   
-2.  Erstellen Sie innerhalb des `configSections`-Elements ein `section`-Element.  
+2. Erstellen Sie innerhalb des `configSections`-Elements ein `section`-Element.  
   
-3.  Fügen Sie dem `section`-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie diesem den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` zu.  
+3. Fügen Sie dem `section`-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie diesem den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` zu.  
   
- Das `section`-Element sollte wie folgt aussehen:  
+   Das `section`-Element sollte wie folgt aussehen:  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 ## <a name="define-data-sources"></a>Definieren von Datenquellen  
  Der Abschnitt „Datenquellen“ enthält vier Attribute, die von der Test-Engine zum Abrufen von Daten aus einer Datenquelle verwendet werden.  
   
--   `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.  
+- `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.  
   
--   `connectionString` bezeichnet die im vorhergehenden Abschnitt „Definieren von Verbindungszeichenfolgen“ erstellte Verbindungszeichenfolge.  
+- `connectionString` bezeichnet die im vorhergehenden Abschnitt „Definieren von Verbindungszeichenfolgen“ erstellte Verbindungszeichenfolge.  
   
--   `dataTableName` definiert die Tabelle oder das Blatt mit den im Test zu verwendenden Daten.  
+- `dataTableName` definiert die Tabelle oder das Blatt mit den im Test zu verwendenden Daten.  
   
--   `dataAccessMethod` definiert die Technik für den Zugriff auf Datenwerte in der Datenquelle.  
+- `dataAccessMethod` definiert die Technik für den Zugriff auf Datenwerte in der Datenquelle.  
   
- In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in einem Komponententest.  
+  In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in einem Komponententest.  
   
 #### <a name="to-define-data-sources"></a>So definieren Sie Datenquellen  
   

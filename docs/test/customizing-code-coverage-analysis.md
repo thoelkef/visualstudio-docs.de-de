@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: b5d652c24f5250af38e6a1c82dbb57dc739cbe3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880779"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -91,7 +91,7 @@ Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Asse
 
 In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht mit Platzhaltern identisch. Insbesondere:
 
-- **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
+- **.\\*** entspricht einer Zeichenfolge beliebiger Zeichen
 
 - **\\.** entspricht einem Punkt „.“
 

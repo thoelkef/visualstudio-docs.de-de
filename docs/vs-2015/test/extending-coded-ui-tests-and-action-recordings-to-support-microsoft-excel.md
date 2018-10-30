@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872979"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
   
  **Anforderungen**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- In diesem Abschnitt wird eine Erweiterung des Tests der codierten UI beschrieben, mit der Tests von Excel-Arbeitsblättern aufgezeichnet und wiedergegeben werden können. Entwickler, die eine solche Erweiterung erstellen möchten, finden in diesem Abschnitt und in den Codekommentaren eine Erläuterung der einzelnen Teile der Erweiterung.  
+  In diesem Abschnitt wird eine Erweiterung des Tests der codierten UI beschrieben, mit der Tests von Excel-Arbeitsblättern aufgezeichnet und wiedergegeben werden können. Entwickler, die eine solche Erweiterung erstellen möchten, finden in diesem Abschnitt und in den Codekommentaren eine Erläuterung der einzelnen Teile der Erweiterung.  
   
- ![Laden der UI-Testarchitektur](../test/media/ui-testarch.png "UI_TestArch")  
-Architekturübersicht  
+  ![Laden der UI-Testarchitektur](../test/media/ui-testarch.png "UI_TestArch")  
+  Architekturübersicht  
   
 ## <a name="download-the-sample"></a>Herunterladen des Beispiels  
  Das Beispiel besteht aus vier Projekten in der `CodedUIExtensibilitySample.sln`-Projektmappe:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Rufen Sie das Beispiel aus diesem [Blogbeitrag](http://go.microsoft.com/fwlink/?LinkID=185592) ab.  
+  Rufen Sie das Beispiel aus diesem [Blogbeitrag](http://go.microsoft.com/fwlink/?LinkID=185592) ab.  
   
 > [!NOTE]
 >  Das Beispiel ist zur Verwendung mit Microsoft Excel 2010 gedacht. Das Beispiel funktioniert möglicherweise mit anderen Versionen von Microsoft Excel, dies wird jedoch derzeit nicht unterstützt.  

@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893701"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
   
 #### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe  
   
-1.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Neues Projekt**.  
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Neues Projekt**.  
   
-2.  Wählen Sie im linken Bereich **Installiert**aus, und wählen Sie **Andere Projekttypen**und dann in der erweiterten Liste **Visual Studio-Projektmappen** aus.  
+2. Wählen Sie im linken Bereich **Installiert**aus, und wählen Sie **Andere Projekttypen**und dann in der erweiterten Liste **Visual Studio-Projektmappen** aus.  
   
-3.  Wählen Sie im mittleren Bereich die Option **Leere Projektmappe**aus.  
+3. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe**aus.  
   
-4.  Legen Sie für die Projektmappe die Werte **Name** und **Speicherort** fest, klicken Sie dann auf **OK**.  
+4. Legen Sie für die Projektmappe die Werte **Name** und **Speicherort** fest, klicken Sie dann auf **OK**.  
   
- Nachdem Sie eine leere Projektmappe erstellt haben, können Sie dieser neue oder vorhandene Projekte oder Elemente hinzufügen, indem Sie im Menü **Projekt** den Befehl **Neues Element hinzufügen** oder **Vorhandenes Element hinzufügen** auswählen.  
+   Nachdem Sie eine leere Projektmappe erstellt haben, können Sie dieser neue oder vorhandene Projekte oder Elemente hinzufügen, indem Sie im Menü **Projekt** den Befehl **Neues Element hinzufügen** oder **Vorhandenes Element hinzufügen** auswählen.  
   
 ### <a name="deleting-solutions"></a>Löschen von Projektmappen  
  Sie können eine Projektmappe dauerhaft löschen, jedoch aber nicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bevor Sie eine Projektmappe löschen, verschieben Sie alle Projekte, die möglicherweise wiederverwendet werden sollen, in eine andere Projektmappe. Löschen Sie dann im Datei-Explorer das Verzeichnis, in dem die SLN- und die SUO-Projektmappendateien gespeichert sind.  

@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812880"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>So legen Sie die in Visual Studio für den Benutzeroberflächentext verwendete Sprache fest  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  In der **Optionen** Dialogfeld erweitern Sie **Umgebung** , und klicken Sie dann auf **internationale Einstellungen**.  
+2. In der **Optionen** Dialogfeld erweitern Sie **Umgebung** , und klicken Sie dann auf **internationale Einstellungen**.  
   
-3.  In der **Sprache** Sprache auswählen, die in der der Text der Benutzeroberfläche angezeigt werden sollte in der Entwicklungsumgebung.  
+3. In der **Sprache** Sprache auswählen, die in der der Text der Benutzeroberfläche angezeigt werden sollte in der Entwicklungsumgebung.  
   
-     Um Text für die Benutzeroberfläche in der IDE-Übereinstimmung der Betriebssystem-Anzeigesprache festgelegt haben, wählen Sie **wie Microsoft Windows**.  
+    Um Text für die Benutzeroberfläche in der IDE-Übereinstimmung der Betriebssystem-Anzeigesprache festgelegt haben, wählen Sie **wie Microsoft Windows**.  
   
- Sie können auch den devenv-Befehl verwenden, um die Sprache festzulegen, die für Benutzeroberfläche verwendet wird. Weitere Informationen finden Sie unter [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
+   Sie können auch den devenv-Befehl verwenden, um die Sprache festzulegen, die für Benutzeroberfläche verwendet wird. Weitere Informationen finden Sie unter [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../ide/reference/international-settings-environment-options-dialog-box.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942217"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -114,23 +114,23 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten der obersten Ebene aus.
 
-1. Wählen Sie in der Menüleiste **Ansicht** >  **Eigenschaftenseiten** aus.
+2. Wählen Sie in der Menüleiste **Ansicht** >  **Eigenschaftenseiten** aus.
 
      Der **Projekt-Designer** wird geöffnet.
 
-1. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
+3. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
 
      ![Seite "Kompilieren", Projekt-Designer](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Erstellen Sie die Projektmappe.
+4. Erstellen Sie die Projektmappe.
 
- Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
+   Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
 
- ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
+   Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Anzeigen zusätzlicher Builddetails im Ausgabefenster
 
@@ -138,7 +138,6 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 > [!IMPORTANT]
 > Wenn Sie weitere Informationen anzeigen, dauert der Abschluss des Builds länger.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Ändern der Informationsmenge im Ausgabefenster
 
@@ -221,7 +220,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
    Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad wäre `\\myserver\builds\\FileName.exe`.
 
-Herzlichen Glückwunsch: Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.
+Herzlichen Glückwunsch! Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.
 
 ## <a name="see-also"></a>Siehe auch
 

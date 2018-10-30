@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863629"
 ---
 # <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>So aktivieren Sie die Elementvorlage, die in einem Store-Projekt verwendet werden soll  
   
-1.  Führen Sie die Schritte in dem obenstehenden Verfahren aus, um eine Elementvorlage exportieren.  
+1. Führen Sie die Schritte in dem obenstehenden Verfahren aus, um eine Elementvorlage exportieren.  
   
-2.  Extrahieren Sie die .vstemplate-Datei aus der ZIP-Datei, die in den Ordner „..\Benutzer\\*Benutzername*\Dokumente\Visual Studio *Version*\Templates\Itemtemplates\“ (oder **Meine exportierten Vorlagen**) kopiert wurde.  
+2. Extrahieren Sie die .vstemplate-Datei aus der ZIP-Datei, die in den Ordner „..\Benutzer\\*Benutzername*\Dokumente\Visual Studio *Version*\Templates\Itemtemplates\“ (oder **Meine exportierten Vorlagen**) kopiert wurde.  
   
-3.  Öffnen Sie die VSTEMPLATE-Datei in Visual Studio.  
+3. Öffnen Sie die VSTEMPLATE-Datei in Visual Studio.  
   
-4.  Fügen Sie für ein Windows 8.1 Store-Projekt in C# in der VSTEMPLATE-Datei den folgenden XML-Code innerhalb des öffnenden und des schließenden `<TemplateData>`-Tags ein: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4. Fügen Sie für ein Windows 8.1 Store-Projekt in C# in der VSTEMPLATE-Datei den folgenden XML-Code innerhalb des öffnenden und des schließenden `<TemplateData>`-Tags ein: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
   
-     Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-     Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die <ProjectTpe>- und \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>-Elemente ändern, um andere Sprachen- und Projekttypen anzugeben.  
+    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die <ProjectTpe>- und \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>-Elemente ändern, um andere Sprachen- und Projekttypen anzugeben.  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     Weitere mögliche TemplateGroupID-Werte finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md). Die vollständige Referenz zu VSTEMPLATE-Dateien finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)  
+    Weitere mögliche TemplateGroupID-Werte finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md). Die vollständige Referenz zu VSTEMPLATE-Dateien finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)  
   
-5.  Speichern Sie in Visual Studio die VSTEMPLATE-Datei , und schließen Sie sie.  
+5. Speichern Sie in Visual Studio die VSTEMPLATE-Datei , und schließen Sie sie.  
   
-6.  Kopieren Sie die .vstemplate-Datei, und fügen Sie sie wieder in die ZIP-Datei ein, die sich im Ordner „..\Benutzer\\*Benutzername*\Dokumente\Visual Studio *Version*\Templates\ItemTemplates\“ befindet.  
+6. Kopieren Sie die .vstemplate-Datei, und fügen Sie sie wieder in die ZIP-Datei ein, die sich im Ordner „..\Benutzer\\*Benutzername*\Dokumente\Visual Studio *Version*\Templates\ItemTemplates\“ befindet.  
   
-     Wenn das Dialogfeld **Datei kopieren** angezeigt wird, wählen Sie die Option **Kopieren und ersetzen** aus.  
+    Wenn das Dialogfeld **Datei kopieren** angezeigt wird, wählen Sie die Option **Kopieren und ersetzen** aus.  
   
- Sie können nun ein Element auf der Grundlage dieser Vorlage einem [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Projekt hinzufügen, indem Sie das Dialogfeld **Neues Element hinzufügen** verwenden.  
+   Sie können nun ein Element auf der Grundlage dieser Vorlage einem [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Projekt hinzufügen, indem Sie das Dialogfeld **Neues Element hinzufügen** verwenden.  
   
- Weitere Informationen zu Parameternamen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
+   Weitere Informationen zu Parameternamen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>So aktivieren Sie die Vorlagen für bestimmte Projektuntertypen  
   
-1.  In der Entwicklungsumgebung können Sie Projektelemente aus dem Dialogfeld „Element hinzufügen“ für bestimmte Projekte verfügbar machen. Verwenden Sie dieses Verfahren, um benutzerdefinierte Elemente für Windows-, Web-, Office- oder Datenbankprojekte verfügbar zu machen.  
+1. In der Entwicklungsumgebung können Sie Projektelemente aus dem Dialogfeld „Element hinzufügen“ für bestimmte Projekte verfügbar machen. Verwenden Sie dieses Verfahren, um benutzerdefinierte Elemente für Windows-, Web-, Office- oder Datenbankprojekte verfügbar zu machen.  
   
-     Suchen Sie nach dem ProjectType-Element in der VSTEMPLATE-Datei für die Elementvorlage.  
+    Suchen Sie nach dem ProjectType-Element in der VSTEMPLATE-Datei für die Elementvorlage.  
   
-     Fügen Sie ein [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)-Element unmittelbar nach dem ProjectType-Element hinzu.  
+    Fügen Sie ein [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)-Element unmittelbar nach dem ProjectType-Element hinzu.  
   
-2.  Legen Sie den Textwert des Elements auf einen der folgenden Werte fest:  
+2. Legen Sie den Textwert des Elements auf einen der folgenden Werte fest:  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  Datenbank  
+   3. Datenbank  
   
-    4.  Web  
+   4. Web  
   
-     Beispiel: `<ProjectSubType>Database</ProjectSubType>`.  
+      Beispiel: `<ProjectSubType>Database</ProjectSubType>`.  
   
-     Im folgenden Beispiel wird eine für Office-Projekte verfügbare Elementvorlage dargestellt.  
+      Im folgenden Beispiel wird eine für Office-Projekte verfügbare Elementvorlage dargestellt.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>So erstellen Sie eine Elementvorlage manuell ohne den Assistenten zum Exportieren von Vorlagen  
   

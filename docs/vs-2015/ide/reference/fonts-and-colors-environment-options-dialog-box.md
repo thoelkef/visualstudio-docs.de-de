@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949434"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
  **Einstellungen anzeigen für**  
  Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.  
   
--   **Text-Editor**  
+- **Text-Editor**  
   
-     Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Text-Editor“ beeinflussen die Darstellung von Text in Ihrem Standard-Text-Editor. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.  
+   Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Text-Editor“ beeinflussen die Darstellung von Text in Ihrem Standard-Text-Editor. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.  
   
--   **Drucker**  
+- **Drucker**  
   
-     Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.  
+   Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.  
   
-    > [!NOTE]
-    >  Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.  
+  > [!NOTE]
+  >  Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.  
   
--   **Anweisungsvervollständigung**  
+- **Anweisungsvervollständigung**  
   
-     Ändert den Schriftschnitt und -grad für den Text, der im Popupfeld mit der Anweisungsvervollständigung im Editor angezeigt wird.  
+   Ändert den Schriftschnitt und -grad für den Text, der im Popupfeld mit der Anweisungsvervollständigung im Editor angezeigt wird.  
   
--   **Editor-QuickInfo**  
+- **Editor-QuickInfo**  
   
-     Ändert den Schriftschnitt und -grad für den Text, der in QuickInfos im Editor angezeigt wird.  
+   Ändert den Schriftschnitt und -grad für den Text, der in QuickInfos im Editor angezeigt wird.  
   
--   **Umgebungsschriftart**  
+- **Umgebungsschriftart**  
   
-     Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist. Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.  
+   Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist. Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.  
   
--   **[Alle Texttoolfenster]**  
+- **[Alle Texttoolfenster]**  
   
-     Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.  
+   Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.  
   
-    > [!NOTE]
-    >  Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.  
+  > [!NOTE]
+  >  Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.  
   
- **Standardwerte verwenden**  
- Setzt die Schriftart- und Farbwerte des unter **Einstellungen anzeigen für** ausgewählten Listenelements zurück. Die Schaltfläche **Verwenden** wird angezeigt, wenn auch andere Anzeigeschemas ausgewählt werden können. Sie können z. B. zwischen zwei Schemas für den Drucker wählen.  
+  **Standardwerte verwenden**  
+  Setzt die Schriftart- und Farbwerte des unter **Einstellungen anzeigen für** ausgewählten Listenelements zurück. Die Schaltfläche **Verwenden** wird angezeigt, wenn auch andere Anzeigeschemas ausgewählt werden können. Sie können z. B. zwischen zwei Schemas für den Drucker wählen.  
   
- **Schriftart (Fett bedeutet mit fester Breite formatiert)**  
- Listet alle auf Ihrem System installierten Schriftarten auf. Wenn das Dropdownmenü zum ersten Mal angezeigt wird, ist die aktuelle Schriftart für das im Feld **Einstellungen anzeigen für** ausgewählte Element hervorgehoben. Schriftarten mit fester Breite – die im Editor einfacher ausgerichtet werden können – werden fett formatiert.  
+  **Schriftart (Fett bedeutet mit fester Breite formatiert)**  
+  Listet alle auf Ihrem System installierten Schriftarten auf. Wenn das Dropdownmenü zum ersten Mal angezeigt wird, ist die aktuelle Schriftart für das im Feld **Einstellungen anzeigen für** ausgewählte Element hervorgehoben. Schriftarten mit fester Breite – die im Editor einfacher ausgerichtet werden können – werden fett formatiert.  
   
- **Size**  
- Listet die verfügbaren Punktgrößen für die hervorgehobene Schriftart auf. Eine Änderung des Schriftgrads wirkt sich auf alle Einträge unter **Elemente anzeigen** für die Auswahl im Feld **Einstellungen anzeigen für** aus.  
+  **Size**  
+  Listet die verfügbaren Punktgrößen für die hervorgehobene Schriftart auf. Eine Änderung des Schriftgrads wirkt sich auf alle Einträge unter **Elemente anzeigen** für die Auswahl im Feld **Einstellungen anzeigen für** aus.  
   
- **Elemente anzeigen**  
- Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern können.  
+  **Elemente anzeigen**  
+  Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern können.  
   
 > [!NOTE]
 >  Standardmäßig wird das Element **Nur-Text** angezeigt. Daher werden Eigenschaften, die **Nur-Text** zugewiesen sind, von anderen Anzeigeelementen zugewiesenen Eigenschaften überschrieben. Wenn Sie beispielsweise **Nur-Text** die Farbe Blau zuweisen und **Bezeichner** die Farbe Grün, werden alle Bezeichner in Grün angezeigt. In diesem Beispiel überschreiben die Eigenschaften für **Bezeichner** die Eigenschaften für **Nur-Text**.  

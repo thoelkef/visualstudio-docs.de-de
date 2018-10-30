@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_language | Microsoft Docs'
+title: 'Idiasymbol:: Get_language | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7797e4b6eb2aa35f13350580b110c757d7a5db
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b214e16538ba6447ce97ed6569bfbb580cf222e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935873"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
-Ruft die Sprache der Quelle ab.  
+Ruft die Sprache der Datenquelle ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_language (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [CV_CFL_LANG-Enumeration](../../debugger/debug-interface-access/cv-cfl-lang.md) -Enumeration, der die Sprache der Quelle angibt.  
+ [out] Gibt einen Wert aus der [CV_CFL_LANG-Enumeration](../../debugger/debug-interface-access/cv-cfl-lang.md) Enumeration, die die Sprache der Quelle angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

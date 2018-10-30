@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831814"
 ---
 # <a name="core-interfaces"></a>Wichtige Schnittstellen
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 ## <a name="discussion"></a>Diskussion  
  Diese Schnittstellen werden in erster Linie verwendet, um die Debug-Engine (DE) zu erstellen. Sie sind hier nach Kategorien organisiert:  
   
--   [Breakpoints](#Breakpoints)  
+- [Breakpoints](#Breakpoints)  
   
--   [Kontext](#Contexts)  
+- [Kontext](#Contexts)  
   
--   [Core-Server](#CoreServer)  
+- [Core-Server](#CoreServer)  
   
--   [Debug-Engines](#DebugEngines)  
+- [Debug-Engines](#DebugEngines)  
   
--   [Dokumente](#Documents)  
+- [Dokumente](#Documents)  
   
--   [Ereignisse](#Events)  
+- [Ereignisse](#Events)  
   
--   [Ausdrücke](#Expressions)  
+- [Ausdrücke](#Expressions)  
   
--   [Arbeitsspeicher](#Memory)  
+- [Arbeitsspeicher](#Memory)  
   
--   [Module](#Modules)  
+- [Module](#Modules)  
   
--   [Ports](#Ports)  
+- [Ports](#Ports)  
   
--   [Prozesse](#Processes)  
+- [Prozesse](#Processes)  
   
--   [Programme](#Programs)  
+- [Programme](#Programs)  
   
--   [Eigenschaften](#Properties)  
+- [Eigenschaften](#Properties)  
   
--   [Stapelrahmen](#StackFrames)  
+- [Stapelrahmen](#StackFrames)  
   
--   [Threads](#Threads)  
+- [Threads](#Threads)  
   
--   [Typ-Schnellansichten](#TypeVisualizers)  
+- [Typ-Schnellansichten](#TypeVisualizers)  
   
- Die Entitäten, die die Schnittstellen implementieren können, sind:  
+  Die Entitäten, die die Schnittstellen implementieren können, sind:  
   
--   Debug-Engine (DE)  
+- Debug-Engine (DE)  
   
--   Anschlusslieferant (PS)  
+- Anschlusslieferant (PS)  
   
--   Ausdrucksauswertung (EE)  
+- Ausdrucksauswertung (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Haltepunkte  
  Diese Schnittstellen beziehen sich auf die Implementierung und die nachverfolgung von Haltepunkten.  

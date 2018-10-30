@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912031"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>So erstellen Sie nur das Startprojekt und seine Abhängigkeiten  
   
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
+1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
   
-2.  Klappen Sie im Dialogfeld **Optionen** den Knoten **Projekte und Projektmappen** auf, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.  
+2. Klappen Sie im Dialogfeld **Optionen** den Knoten **Projekte und Projektmappen** auf, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.  
   
-     Das Dialogfeld **Erstellen und Ausführen, Projekte und Projektmappen, Optionen** wird geöffnet.  
+    Das Dialogfeld **Erstellen und Ausführen, Projekte und Projektmappen, Optionen** wird geöffnet.  
   
-3.  Aktivieren Sie das Kontrollkästchen **Nur Startprojekte und Abhängigkeiten zur Laufzeit ausführen**.  
+3. Aktivieren Sie das Kontrollkästchen **Nur Startprojekte und Abhängigkeiten zur Laufzeit ausführen**.  
   
-     Wenn dieses Kontrollkästchen aktiviert ist, werden nur das aktuelle Startprojekt und seine Abhängigkeiten erstellt, wenn Sie einen der folgenden Schritte ausführen:  
+    Wenn dieses Kontrollkästchen aktiviert ist, werden nur das aktuelle Startprojekt und seine Abhängigkeiten erstellt, wenn Sie einen der folgenden Schritte ausführen:  
   
-    -   Wählen Sie in der Menüleiste **Debuggen**, **Starten** (F5) aus.  
+   - Wählen Sie in der Menüleiste **Debuggen**, **Starten** (F5) aus.  
   
-    -   Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen** (STRG+UMSCHALT+B) aus.  
+   - Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen** (STRG+UMSCHALT+B) aus.  
   
      Wenn dieses Kontrollkästchen deaktiviert ist, werden alle Projekte, ihre Abhängigkeiten und die Projektmappendateien erstellt, wenn Sie einen der vorstehenden Befehle ausführen. Dieses Kontrollkästchen ist standardmäßig deaktiviert.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>So erstellen Sie nur das ausgewählte Visual C++-Projekt  
   
-1.  Wählen Sie ein [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt aus, und wählen Sie dann in der Menüleiste **Erstellen**, **Nur Projekt** und einen der folgenden Befehle aus:  
+1. Wählen Sie ein [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt aus, und wählen Sie dann in der Menüleiste **Erstellen**, **Nur Projekt** und einen der folgenden Befehle aus:  
   
-    -   **Nur** *Projektname erstellen*  
+   - **Nur** *Projektname erstellen*  
   
-    -   **Nur** *Projektname neu erstellen*  
+   - **Nur** *Projektname neu erstellen*  
   
-    -   **Nur** *Projektname bereinigen*  
+   - **Nur** *Projektname bereinigen*  
   
-    -   **Nur** *Projektname bereinigen*  
+   - **Nur** *Projektname bereinigen*  
   
      Diese Befehle betreffen nur das ausgewählte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt, d.h. Projektabhängigkeiten oder Projektmappendateien werden nicht erstellt, neu erstellt, bereinigt oder gelinkt. Abhängig von Ihrer Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] enthält das Untermenü **Nur Projekt** möglicherweise noch weitere Befehle.  
   

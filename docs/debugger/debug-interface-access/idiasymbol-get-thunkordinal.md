@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thunkordinal | Microsoft Docs'
+title: 'Idiasymbol:: Get_thunkordinal | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed649ffe02cc27f959bf96b826fc02498beb4acd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e3893d7c74d92caa708606c336eb2775c538f1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918338"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
-Ruft den Thunk-Typ, einer Funktion ab.  
+Ruft den Thunk-Typ, der eine Funktion ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,18 +34,18 @@ HRESULT get_thunkOrdinal (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [THUNK_ORDINAL-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md) -Enumeration, den Thunk-Typ, der eine Funktion angibt.  
+ [out] Gibt einen Wert aus der [THUNK_ORDINAL-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md) -Enumeration, die den Thunk-Typ, der eine Funktion angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Eigenschaft gilt nur, wenn das Symbol als ein [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Wert `SymTagThunk`.  
   
- Ein "Thunk" ist ein Teil des Codes, der zwischen einem 32-Bit-Speicheradressraum (auch bekannt als flache Adressraum) und eine 16-Bit-Adressraum (bekannt als eine segmentierte Adressraum) konvertiert.  
+ Ein "Thunk" ist ein Codeabschnitt, der einen 16-Bit-Adressraum (als einen segmentierten Adressraum bezeichnet) bis ein Arbeitsspeicher von 32-Bit-Adressraum (auch bekannt als flache Adressraum) konvertiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
+title: IDebugPendingBreakpoint2::CanBind | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e09bae8cfa6b4c2ba1b79ff74945e5256e23ed2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47a40691de66828a1b46067393cddaa7e303d118
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872602"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Bestimmt, ob diese ausstehenden Haltepunkts an einem Speicherort Code binden kann.  
+Bestimmt, ob diese ausstehende Haltepunkt an einen Speicherort gebunden werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int CanBind (
   
 #### <a name="parameters"></a>Parameter  
  `ppErrorEnum`  
- [out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste von enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte möglicherweise Fehler.  
+ [out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste der enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte an, wenn es möglicherweise Fehler.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK.` gibt `S_FALSE` Wenn der Haltepunkt gebunden werden kann, in diesem Fall die Fehler durch zurückgegeben der `ppErrorEnum` Parameter. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.  
+ Wenn erfolgreich, wird `S_OK.` gibt `S_FALSE` Wenn der Haltepunkt nicht gebunden werden kann, in diesem Fall die Fehler werden zurückgegeben von der `ppErrorEnum` Parameter. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, um zu bestimmen, was passieren würde, wenn diese ausstehender Haltepunkt gebunden wurde. Rufen Sie die [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Methode, um die ausstehender Haltepunkt eine tatsächliche Bindung.  
+ Diese Methode wird aufgerufen, um zu bestimmen, was passieren würde, wenn diese ausstehenden Haltepunkt gebunden wurde. Rufen Sie die [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Methode, um den ausstehenden Haltepunkt tatsächlich zu binden.  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -142,4 +142,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [Binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

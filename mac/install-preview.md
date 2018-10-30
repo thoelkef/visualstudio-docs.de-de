@@ -1,5 +1,5 @@
 ---
-title: Installieren von Vorschauversionen
+title: Installieren einer Vorschauversion
 description: Anleitung zum Aktualisieren von Visual Studio für Mac und Zugreifen auf Vorschauversionen
 author: conceptdev
 ms.author: crdun
@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223957"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991535"
 ---
-# <a name="installing-preview-releases"></a>Installieren von Vorschauversionen
+# <a name="install-a-preview-release"></a>Installieren einer Vorschauversion
 
-Vor der offiziellen Freigabe einer neuen Version von Visual Studio für Mac wird diese als Vorschauversion freigegeben. Die Vorschauversion bietet Ihnen die Möglichkeit, neue Features zu testen und die neuesten Fehlerkorrekturen zu erhalten, bevor diese vollständig in das Produkt integriert werden.
+Vor der offiziellen Freigabe einer neuen Version von Visual Studio für Mac ist diese als Vorschauversion verfügbar. Die Vorschauversion bietet Ihnen die Möglichkeit, neue Features zu testen und die neuesten Fehlerkorrekturen zu erhalten, bevor diese vollständig in das Produkt integriert werden.
 
 Vorschauversionen zu Visual Studio für Mac werden als Update und nicht über einen separaten Download verteilt. Wie im [Aktualisieren](update.md)-Artikel beschrieben, verfügt Visual Studio für Mac über drei Updatekanäle: Stabil, Beta und Alpha.
 

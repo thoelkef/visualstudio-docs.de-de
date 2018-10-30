@@ -1,5 +1,5 @@
 ---
-title: DwTYPE_KIND | Microsoft Docs
+title: DwTYPE_KIND | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eaa1b9edc128b5e13641bb5b38296fd96740ab4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4339c18f7aa745c8b741c0a431b6073300ff145b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841766"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
-Gibt an, wie den Typ des interpretieren einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.  
+Gibt an, wie den Typ des interpretieren eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,7 +56,7 @@ public enum enum_dwTYPE_KIND {
  Die `TYPE_INFO` Union interpretiert werden soll, als eine [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Struktur.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Werte dieser Enumeration werden in der `dwKind` Feld der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur und die werden verwendet, um zu bestimmen, wie interpretiert die `type` union-Member. Die `TYPE_INFO` Struktur wird zurückgegeben, durch einen Aufruf der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode.  
+ Die Werte dieser Enumeration werden in der `dwKind` Feld der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strukturieren und werden verwendet, um zu bestimmen, wie zum Interpretieren der `type` union-Member. Die `TYPE_INFO` Struktur wird zurückgegeben, durch einen Aufruf der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

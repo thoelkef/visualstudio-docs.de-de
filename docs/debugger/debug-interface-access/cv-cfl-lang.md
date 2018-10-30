@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG | Microsoft Docs
+title: CV_CFL_LANG | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909907"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Gibt die Quellcodesprache der Anwendung oder des verknüpften Modul an.  
@@ -62,7 +62,7 @@ typedef enum CV_CFL_LANG {
  Anwendungssprache ist Microsoft Macro Assembler.  
   
  CV_CFL_PASCAL  
- Anwendungssprache ist wie in Pascal.  
+ Sprache der Anwendung wird die Pascal-Schreibweise.  
   
  CV_CFL_BASIC  
  Anwendungssprache ist BASIC.  
@@ -71,22 +71,22 @@ typedef enum CV_CFL_LANG {
  Anwendungssprache ist COBOL.  
   
  CV_CFL_LINK  
- Anwendung ist ein Modul Linker generiert.  
+ Anwendung ist ein vom Linker generierte Modul.  
   
  CV_CFL_CVTRES  
- Anwendung ist ein Ressourcenmodul mit dem Tool CVTRES konvertiert.  
+ Anwendung ist ein Ressourcenmodul CVTRES Tool konvertiert.  
   
  CV_CFL_CVTPGD  
- Anwendung ist ein optimiert PGO-Modul mit CVTPGD-Tool generiert.  
+ Anwendung ist ein Modul mit CVTPGD-Tool generierte PGO optimiert.  
   
  CV_CFL_CSHARP  
- Anwendungssprache-ist c#.  
+ Anwendungssprache ist c#.  
   
  CV_CFL_VB  
  Anwendungssprache ist Visual Basic.  
   
  CV_CFL_ILASM  
- Anwendungssprache ist zwischensprachenassembly (d. h. Common Language Runtime (CLR)-Assembly) an.  
+ Anwendungssprache ist zwischensprachenassembly (d. h. Common Language Runtime (CLR)-Assembly).  
   
  CV_CFL_JAVA  
  Anwendungssprache ist Java.  
@@ -95,10 +95,10 @@ typedef enum CV_CFL_LANG {
  Anwendungssprache ist Jscript.  
   
  CV_CFL_MSIL  
- Anwendungssprache ist ein Unbekannter Sprache MSIL (Microsoft Intermediate), möglicherweise ein Ergebnis der Verwendung der [/LTCG (Link-Time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) wechseln.  
+ Sprache der Anwendung ist ein Unbekannter Microsoft Intermediate Language (MSIL), möglicherweise ein Ergebnis der Verwendung der [/LTCG (Link-Time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) wechseln.  
   
  CV_CFL_HLSL  
- Anwendungssprache handelt es sich um hohe Ebene Shader-Sprache.  
+ Anwendungssprache ist High Level Shader Language.  
   
 ## <a name="remarks"></a>Hinweise  
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) Methode.  

@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843846"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-Komponentendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
  Das Zeichnen von Komponentendiagrammen hat mehrere Vorteile:  
   
--   Wenn sich das Entwicklungsteam auf die Hauptblöcke eines Entwurfs konzentriert, kann es ein besseres Verständnis des vorhandenen Entwurfs entwickeln und einen entsprechenden neuen Entwurf erstellen.  
+- Wenn sich das Entwicklungsteam auf die Hauptblöcke eines Entwurfs konzentriert, kann es ein besseres Verständnis des vorhandenen Entwurfs entwickeln und einen entsprechenden neuen Entwurf erstellen.  
   
--   Indem Sie sich Ihr System als Auflistung von Komponenten mit klar definierten angebotenen und erforderlichen Schnittstellen vorstellen, optimieren Sie die Abgrenzung zwischen den Komponenten. Dadurch ist der Entwurf einfacher zu verstehen, und der Entwurf kann bei sich ändernden Anforderungen auch einfacher angepasst werden.  
+- Indem Sie sich Ihr System als Auflistung von Komponenten mit klar definierten angebotenen und erforderlichen Schnittstellen vorstellen, optimieren Sie die Abgrenzung zwischen den Komponenten. Dadurch ist der Entwurf einfacher zu verstehen, und der Entwurf kann bei sich ändernden Anforderungen auch einfacher angepasst werden.  
   
- Sie können ein Komponentendiagramm verwenden, um den Entwurf unabhängig von der verwendeten Sprache oder Plattform darzustellen.  
+  Sie können ein Komponentendiagramm verwenden, um den Entwurf unabhängig von der verwendeten Sprache oder Plattform darzustellen.  
   
 ##  <a name="OtherDiagrams"></a> Beziehung zu anderen Diagrammen  
  Sie können ein Komponentendiagramm in Verbindung mit anderen Diagrammen verwenden.  
@@ -118,32 +118,32 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
 ##### <a name="to-add-ports-to-a-component"></a>So fügen Sie einer Komponente Ports hinzu  
   
-1.  Klicken Sie in der Toolbox auf **angebotene Schnittstelle** oder **erforderliche Schnittstelle**.  
+1. Klicken Sie in der Toolbox auf **angebotene Schnittstelle** oder **erforderliche Schnittstelle**.  
   
-2.  Klicken Sie auf die Komponente, der Sie Ports hinzufügen möchten.  
+2. Klicken Sie auf die Komponente, der Sie Ports hinzufügen möchten.  
   
-     Ein Port wird an der Begrenzung der Komponente angezeigt.  
+    Ein Port wird an der Begrenzung der Komponente angezeigt.  
   
-     Eine neue Schnittstelle wird als Typ des Ports erstellt. Diese Schnittstelle wird angezeigt, **UML-Modell-Explorer**.  
+    Eine neue Schnittstelle wird als Typ des Ports erstellt. Diese Schnittstelle wird angezeigt, **UML-Modell-Explorer**.  
   
-3.  Ziehen Sie den Port mit der Maus entlang der Komponentenbegrenzung, um ihn wie gewünscht zu platzieren.  
+3. Ziehen Sie den Port mit der Maus entlang der Komponentenbegrenzung, um ihn wie gewünscht zu platzieren.  
   
-4.  Ziehen Sie die Bezeichnung des Ports, um die Position anzupassen.  
+4. Ziehen Sie die Bezeichnung des Ports, um die Position anzupassen.  
   
-5.  Klicken Sie auf die Bezeichnung, um sie zu ändern. Die Bezeichnung zeigt den Namen der Schnittstelle an. Wenn Sie diesen ändern, ändern Sie den Namen der Schnittstelle.  
+5. Klicken Sie auf die Bezeichnung, um sie zu ändern. Die Bezeichnung zeigt den Namen der Schnittstelle an. Wenn Sie diesen ändern, ändern Sie den Namen der Schnittstelle.  
   
- Wenn Sie die Attribute und Vorgänge der Schnittstelle aufführen möchten, fügen Sie sie der Schnittstelle im UML-Modell-Explorer hinzu. Alternativ können Sie die Schnittstelle aus dem UML-Modell-Explorer in ein Klassendiagramm ziehen und dort die Vorgänge und Attribute hinzufügen.  
+   Wenn Sie die Attribute und Vorgänge der Schnittstelle aufführen möchten, fügen Sie sie der Schnittstelle im UML-Modell-Explorer hinzu. Alternativ können Sie die Schnittstelle aus dem UML-Modell-Explorer in ein Klassendiagramm ziehen und dort die Vorgänge und Attribute hinzufügen.  
   
 ### <a name="linking-between-components"></a>Erstellen von Verknüpfungen zwischen Komponenten  
  Verwenden Sie eine Abhängigkeit (4), um anzuzeigen, dass die Anforderung einer Komponente von den Vorgängen oder Diensten erfüllt werden kann, die von einer anderen Komponente bereitgestellt werden.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>So zeigen Sie an, dass eine angebotene Schnittstelle die Anforderungen einer erforderlichen Schnittstelle erfüllen kann  
   
-1.  Klicken Sie in der Toolbox auf **Abhängigkeit**.  
+1. Klicken Sie in der Toolbox auf **Abhängigkeit**.  
   
-2.  Klicken Sie in einer Komponente auf den Port mit der erforderlichen Schnittstelle und dann in einer anderen Komponente auf den Port mit der angebotenen Schnittstelle.  
+2. Klicken Sie in einer Komponente auf den Port mit der erforderlichen Schnittstelle und dann in einer anderen Komponente auf den Port mit der angebotenen Schnittstelle.  
   
- Sie sollten es vermeiden, Abhängigkeitsschleifen zu entwerfen, bei denen alle Komponenten einer Gruppe von allen anderen Komponenten abhängig sind.  
+   Sie sollten es vermeiden, Abhängigkeitsschleifen zu entwerfen, bei denen alle Komponenten einer Gruppe von allen anderen Komponenten abhängig sind.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>So fügen Sie einer Komponente einen Port für eine vorhandene Schnittstelle hinzu  
   
@@ -269,11 +269,11 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
  Verwenden Sie die Sequenzdiagramme, um zu bewerten, wie die Arbeitsschritte des Systems auf die verschiedenen Komponenten verteilt sind.  
   
--   Wenn ein Teil zu viele Schritte ausführen muss, ist die Anwendung möglicherweise schwieriger zu aktualisieren, als wenn die Arbeitsschritte gleichmäßig verteilt werden.  
+- Wenn ein Teil zu viele Schritte ausführen muss, ist die Anwendung möglicherweise schwieriger zu aktualisieren, als wenn die Arbeitsschritte gleichmäßig verteilt werden.  
   
--   Falls die Arbeitsschritte sehr stark verteilt sind und viele Interaktionen stattfinden, kann dies die Leistung und die Verständlichkeit des Systems beeinträchtigen.  
+- Falls die Arbeitsschritte sehr stark verteilt sind und viele Interaktionen stattfinden, kann dies die Leistung und die Verständlichkeit des Systems beeinträchtigen.  
   
- ![Sequenzieren Komponentendiagramm mit zusammenarbeitenden teilen](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Sequenzieren Komponentendiagramm mit zusammenarbeitenden teilen](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>So zeichnen Sie ein Sequenzdiagramm, das die Zusammenarbeit zwischen Teilen veranschaulicht  
   
@@ -327,13 +327,13 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
  Es gibt folgende typische Arten von Abhängigkeit:  
   
--   Eine Komponente ruft Code in einer anderen Komponente auf.  
+- Eine Komponente ruft Code in einer anderen Komponente auf.  
   
--   Eine Komponente instanziiert eine Klasse, die innerhalb einer anderen Klasse definiert ist.  
+- Eine Komponente instanziiert eine Klasse, die innerhalb einer anderen Klasse definiert ist.  
   
--   Eine Komponente verwendet Informationen, die von einer anderen Komponente erstellt wurden.  
+- Eine Komponente verwendet Informationen, die von einer anderen Komponente erstellt wurden.  
   
- Sie können den Namen des Abhängigkeitspfeils verwenden, um eine bestimmte Art der Verwendung anzugeben. Um den Namen festzulegen, mit der rechten Maustaste des Pfeils, und klicken Sie dann **Eigenschaften**, und legen Sie die **Namen** Feld im Eigenschaftenfenster.  
+  Sie können den Namen des Abhängigkeitspfeils verwenden, um eine bestimmte Art der Verwendung anzugeben. Um den Namen festzulegen, mit der rechten Maustaste des Pfeils, und klicken Sie dann **Eigenschaften**, und legen Sie die **Namen** Feld im Eigenschaftenfenster.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   

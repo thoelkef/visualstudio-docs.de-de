@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950900"
 ---
 # <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiedene Arten von Editor hosten:  
   
--   Die Visual Studio-Kern-editor  
+- Die Visual Studio-Kern-editor  
   
--   Benutzerdefinierte Editoren  
+- Benutzerdefinierte Editoren  
   
--   Externe Editoren  
+- Externe Editoren  
   
--   Designer  
+- Designer  
   
- Die folgende Informationen können Sie den Typ des Editors auswählen, die Sie benötigen.  
+  Die folgende Informationen können Sie den Typ des Editors auswählen, die Sie benötigen.  
   
 ## <a name="types-of-editor"></a>Typen des Editors  
  Weitere Informationen zu den Visual Studio-Kern-Editor, finden Sie unter [Erweiterung der Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md).  
@@ -52,25 +52,25 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiede
 ## <a name="editor-design-decisions"></a>Editor-entwurfsentscheidungen  
  Die folgenden Entwurfsfragen helfen Ihnen, wählen Sie den Typ des Editors, die beste für Ihre Anwendung geeignet sind:  
   
--   Wird Ihre Anwendung die Daten in Dateien oder nicht speichern? Wenn sie die Daten in Dateien gespeichert werden, werden sie in einem benutzerdefinierten oder standardmäßigen Format?  
+- Wird Ihre Anwendung die Daten in Dateien oder nicht speichern? Wenn sie die Daten in Dateien gespeichert werden, werden sie in einem benutzerdefinierten oder standardmäßigen Format?  
   
-     Wenn Sie ein standard-Dateiformat verwenden, werden andere Projekttypen zusätzlich zu Ihrem Projekt zu öffnen und Daten für sie Lese-/Schreibberechtigung. Wenn Sie ein benutzerdefiniertes Dateiformat verwenden, jedoch werden nur die Art Ihres Projekts zu öffnen und Daten für sie Lese-/Schreibberechtigung.  
+   Wenn Sie ein standard-Dateiformat verwenden, werden andere Projekttypen zusätzlich zu Ihrem Projekt zu öffnen und Daten für sie Lese-/Schreibberechtigung. Wenn Sie ein benutzerdefiniertes Dateiformat verwenden, jedoch werden nur die Art Ihres Projekts zu öffnen und Daten für sie Lese-/Schreibberechtigung.  
   
-     Wenn Ihr Projekt Dateien verwendet, sollten Sie in der standard-Editor anpassen. Wenn Ihr Projekt keine Dateien verwendet, aber stattdessen Elemente in einer Datenbank oder anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.  
+   Wenn Ihr Projekt Dateien verwendet, sollten Sie in der standard-Editor anpassen. Wenn Ihr Projekt keine Dateien verwendet, aber stattdessen Elemente in einer Datenbank oder anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.  
   
--   Muss Ihr Editor für ActiveX-Steuerelemente hosten?  
+- Muss Ihr Editor für ActiveX-Steuerelemente hosten?  
   
-     Wenn Ihr Editor für ActiveX-Steuerelemente hostet, dann implementieren einen direkten Aktivierung-Editor, wie unter [direkte Aktivierung](../extensibility/in-place-activation.md). Wenn es kein ActiveX-Steuerelemente gehostet wird, klicken Sie dann entweder einen vereinfachten einbetten Editor verwenden oder Anpassen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard-Editor.  
+   Wenn Ihr Editor für ActiveX-Steuerelemente hostet, dann implementieren einen direkten Aktivierung-Editor, wie unter [direkte Aktivierung](../extensibility/in-place-activation.md). Wenn es kein ActiveX-Steuerelemente gehostet wird, klicken Sie dann entweder einen vereinfachten einbetten Editor verwenden oder Anpassen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard-Editor.  
   
--   Wird als Editor verwenden, die mehrere Ansichten unterstützt? Wenn Ansichten des Editors zur gleichen Zeit wie der Standard-Editor angezeigt werden soll, müssen Sie auch mehrere Ansichten unterstützen.  
+- Wird als Editor verwenden, die mehrere Ansichten unterstützt? Wenn Ansichten des Editors zur gleichen Zeit wie der Standard-Editor angezeigt werden soll, müssen Sie auch mehrere Ansichten unterstützen.  
   
-     Wenn Ihr Editor mehrere Ansichten zu unterstützen muss, müssen die Dokumentdaten und dokumentenansichtsobjekten für den Editor separate Objekte sein. Weitere Informationen finden Sie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).  
+   Wenn Ihr Editor mehrere Ansichten zu unterstützen muss, müssen die Dokumentdaten und dokumentenansichtsobjekten für den Editor separate Objekte sein. Weitere Informationen finden Sie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).  
   
-     Wenn Ihr Editor mehrere Ansichten unterstützt, möchten Sie verwenden die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] core-Anmerkung des Text-Puffer-Implementierung (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt) für Ihre dokumentendatenobjekt? D.h., möchten Sie Ihre-Editor-Ansicht Seite-an-Seite mit Unterstützung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor? Die Möglichkeit hierzu ist die Grundlage für das Forms-Designer...  
+   Wenn Ihr Editor mehrere Ansichten unterstützt, möchten Sie verwenden die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] core-Anmerkung des Text-Puffer-Implementierung (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt) für Ihre dokumentendatenobjekt? D.h., möchten Sie Ihre-Editor-Ansicht Seite-an-Seite mit Unterstützung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor? Die Möglichkeit hierzu ist die Grundlage für das Forms-Designer...  
   
--   Wenn Sie einen externen Editor hosten müssen, kann der Editor eingebettet werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+- Wenn Sie einen externen Editor hosten müssen, kann der Editor eingebettet werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Wenn sie eingebettet werden kann, erstellen Sie ein Hostfenster für den externen Editor, und rufen Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode, und legen die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert zu `DP_External`. Wenn der Editor kann nicht eingebettet werden, wird die IDE automatisch ein separates Fenster dafür erstellt.  
+   Wenn sie eingebettet werden kann, erstellen Sie ein Hostfenster für den externen Editor, und rufen Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode, und legen die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert zu `DP_External`. Wenn der Editor kann nicht eingebettet werden, wird die IDE automatisch ein separates Fenster dafür erstellt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md)  

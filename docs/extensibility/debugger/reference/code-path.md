@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH | Microsoft Docs
+title: CODE_PATH | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920260"
 ---
 # <a name="codepath"></a>CODE_PATH
-Beschreibt eine Methode oder Funktion aufrufen.  
+Beschreibt eine Methode oder einen Funktionsaufruf an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,13 +43,13 @@ public struct CODE_PATH {
   
 ## <a name="members"></a>Member  
  bstrName  
- Der Name des Code-Pfads.  
+ Der Name des Codepfads.  
   
  pCode  
- Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das in den Code einer Funktion in Einzelschritten bezeichnet.  
+ Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, an welcher Stelle in den Code einer Funktion in Einzelschritten identifiziert.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird verwendet, um einem Einzelschritt in eine Funktion zu implementieren. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) alle Aufrufe von der aktuellen Position im zu debuggenden Programms zurückgegeben. Diese Struktur stellt eine solche Funktionsaufruf dar.  
+ Diese Struktur wird verwendet, um Einzelschritt in eine Funktion zu implementieren. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) gibt alle Aufrufe von der aktuellen Position in die Anwendung gedebuggt wird. Diese Struktur stellt ein solcher Aufruf dar.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

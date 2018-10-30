@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887590"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284686"
 ## <a name="rule-description"></a>Regelbeschreibung
  Methoden, die keine Ausnahmen auslösen sollen, können wie folgt kategorisiert werden:
 
--   Get-Methoden der Eigenschaften
+- Get-Methoden der Eigenschaften
 
--   Ereigniszugriffsmethoden
+- Ereigniszugriffsmethoden
 
--   Equals-Methoden
+- Equals-Methoden
 
--   GetHashCode-Methoden
+- GetHashCode-Methoden
 
--   ToString-Methoden
+- ToString-Methoden
 
--   Statische Konstruktoren
+- Statische Konstruktoren
 
--   Finalizer
+- Finalizer
 
--   Dispose-Methoden
+- Dispose-Methoden
 
--   Gleichheitsoperatoren
+- Gleichheitsoperatoren
 
--   Impliziten Umwandlungsoperatoren
+- Impliziten Umwandlungsoperatoren
 
- In den folgenden Abschnitten werden die folgenden Methodentypen erläutert.
+  In den folgenden Abschnitten werden die folgenden Methodentypen erläutert.
 
 ### <a name="property-get-methods"></a>Get-Methoden der Eigenschaften
  Eigenschaften sind im Grunde intelligenter Felder. Aus diesem Grund sollten sie sich Verhalten wie ein Feld so weit wie möglich. Felder keine Ausnahmen auslösen und sollte weder auf Eigenschaften. Wenn Sie eine Eigenschaft, die eine Ausnahme auslöst verfügen, versuchen Sie es mit einer Methode.
@@ -91,22 +92,22 @@ ms.locfileid: "49284686"
 ### <a name="equals-methods"></a>Equals-Methoden
  Die folgenden **gleich** Methoden sollte keine Ausnahmen auslösen:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Ein **gleich** Methode zurückgeben soll `true` oder `false` anstatt eine Ausnahme auszulösen. Z. B. wenn gleich zwei nicht übereinstimmende Typen übergeben werden sollte nur zurückgegeben `false` statt einer <xref:System.ArgumentException>.
+  Ein **gleich** Methode zurückgeben soll `true` oder `false` anstatt eine Ausnahme auszulösen. Z. B. wenn gleich zwei nicht übereinstimmende Typen übergeben werden sollte nur zurückgegeben `false` statt einer <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>GetHashCode-Methoden
  Die folgenden **"GetHashCode"** sollte in der Regel Methoden keine Ausnahmen auslösen:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** immer einen Wert zurück. Andernfalls können Sie Elemente in der Hashtabelle verlieren.
+  **GetHashCode** immer einen Wert zurück. Andernfalls können Sie Elemente in der Hashtabelle verlieren.
 
- Die Versionen der **"GetHashCode"** , nehmen ein Argument kann Auslösen einer <xref:System.ArgumentException>. Allerdings **Object.GetHashCode** sollte nie eine Ausnahme auslösen.
+  Die Versionen der **"GetHashCode"** , nehmen ein Argument kann Auslösen einer <xref:System.ArgumentException>. Allerdings **Object.GetHashCode** sollte nie eine Ausnahme auslösen.
 
 ### <a name="tostring-methods"></a>ToString-Methoden
  Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName> , um Informationen zu Objekten in einem Format anzuzeigen. Aus diesem Grund **ToString** sollte nicht den Zustand eines Objekts ändern, und es sollte keine Ausnahmen auslösen.

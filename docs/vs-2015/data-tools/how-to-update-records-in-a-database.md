@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949031"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Gewusst wie: Aktualisieren von Datensätzen in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Sie können die `TableAdapter.Update` Methode, um Datensätze in einer Datenbank
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Zum Aktualisieren von Datensätzen in einer Datenbank mit der TableAdapter.Update-Methode, die Datasets "," DataTable "," DataRow "oder" DataRows() verwendet wird.  
   
-1.  Bearbeiten der Datensätze in die gewünschte <xref:System.Data.DataTable> durch direktes Bearbeiten der <xref:System.Data.DataRow> in die <xref:System.Data.DataTable>. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten von Zeilen in einer DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Bearbeiten der Datensätze in die gewünschte <xref:System.Data.DataTable> durch direktes Bearbeiten der <xref:System.Data.DataRow> in die <xref:System.Data.DataTable>. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten von Zeilen in einer DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Nach dem die Zeilen im bearbeitet werden die <xref:System.Data.DataTable>, rufen Sie die `TableAdapter.Update` Methode. Sie können steuern, die Menge der Daten zu aktualisieren, indem Sie entweder eine gesamte übergeben <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ein Array von <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow>.  
+2. Nach dem die Zeilen im bearbeitet werden die <xref:System.Data.DataTable>, rufen Sie die `TableAdapter.Update` Methode. Sie können steuern, die Menge der Daten zu aktualisieren, indem Sie entweder eine gesamte übergeben <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ein Array von <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow>.  
   
-     Der folgende Code zeigt, wie Bearbeiten eines Datensatzes in einem <xref:System.Data.DataTable> und rufen Sie dann die `TableAdapter.Update` Methode, um die Änderungen in der Datenbank zu speichern. (In diesem Beispiel verwendet der Tabelle für die Region der Northwind-Datenbank.)  
+    Der folgende Code zeigt, wie Bearbeiten eines Datensatzes in einem <xref:System.Data.DataTable> und rufen Sie dann die `TableAdapter.Update` Methode, um die Änderungen in der Datenbank zu speichern. (In diesem Beispiel verwendet der Tabelle für die Region der Northwind-Datenbank.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Wenn Ihre Anwendung Objekte verwendet, um die Daten in Ihrer Anwendung zu speichern, können Sie der TableAdapters `DBDirect` Methoden zum Senden von Daten aus Ihrer Objekte direkt an die Datenbank. Diese Methoden können Sie einzelne Werte für jede Spalte als Methodenparameter übergeben. Das Aufrufen dieser Methode aktualisiert einen vorhandenen Datensatz in der Datenbank mit den Spaltenwerten, die an die Methode übergeben.  
+   Wenn Ihre Anwendung Objekte verwendet, um die Daten in Ihrer Anwendung zu speichern, können Sie der TableAdapters `DBDirect` Methoden zum Senden von Daten aus Ihrer Objekte direkt an die Datenbank. Diese Methoden können Sie einzelne Werte für jede Spalte als Methodenparameter übergeben. Das Aufrufen dieser Methode aktualisiert einen vorhandenen Datensatz in der Datenbank mit den Spaltenwerten, die an die Methode übergeben.  
   
- Im folgenden Verfahren wird die Northwind `Region` Tabelle als Beispiel.  
+   Im folgenden Verfahren wird die Northwind `Region` Tabelle als Beispiel.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Zum Aktualisieren von Datensätzen in einer Datenbank mithilfe der TableAdapter.Update-Methode, die Spaltenwerte  
   

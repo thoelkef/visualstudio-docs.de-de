@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926747"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Abfangen von klickt und zieht in CompartmentShape-Listen  
  Im folgende Beispiel kann Benutzer Elemente in einem Depot-Form neu anordnen, indem Sie sie ziehen. So führen Sie diesen Code aus:  
   
-1.  Erstellen Sie eine neue DSL-Projektmappe mithilfe der **Klassendiagramme** Projektmappe (Vorlage).  
+1. Erstellen Sie eine neue DSL-Projektmappe mithilfe der **Klassendiagramme** Projektmappe (Vorlage).  
   
-     Sie können auch mit einer Lösung für Ihre eigenen arbeiten, die Depot-Formen enthält. Dieser Code wird vorausgesetzt, dass eine einbettende Beziehung zwischen den Modellelementen, dargestellt durch die Form und die Elemente in der Depot-Listenelementen dargestellt.  
+    Sie können auch mit einer Lösung für Ihre eigenen arbeiten, die Depot-Formen enthält. Dieser Code wird vorausgesetzt, dass eine einbettende Beziehung zwischen den Modellelementen, dargestellt durch die Form und die Elemente in der Depot-Listenelementen dargestellt.  
   
-2.  Legen Sie die **generiert doppelte Ableitungen** -Eigenschaft der depotform.  
+2. Legen Sie die **generiert doppelte Ableitungen** -Eigenschaft der depotform.  
   
-3.  Fügen Sie diesen Code in einer Datei in die **Dsl** Projekt.  
+3. Fügen Sie diesen Code in einer Datei in die **Dsl** Projekt.  
   
-4.  Passen Sie die Domänennamen-Klasse und-Form in diesem Code entsprechend Ihrer eigenen DSL.  
+4. Passen Sie die Domänennamen-Klasse und-Form in diesem Code entsprechend Ihrer eigenen DSL.  
   
- Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.  
+   Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.  
   
 -   Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.  
   

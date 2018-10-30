@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Skip | Microsoft Docs'
+title: 'Idiaenumsourcefiles:: Skip | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dedc9e3218d56c4e58f35c70b3bce8bf4dd8ae7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2e517f03a13debfd13dacfe92b4bb08bfddc727
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849059"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-Überspringt eine angegebene Anzahl von Quelldateien in einem Enumerationsfolge an.  
+Überspringt eine angegebene Anzahl von Quelldateien in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl von Quelldateien in der Enumeration Sequenz zu überspringen.  
+ [in] Die Anzahl der Quelldateien in der Enumerationsfolge übersprungen werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` treten keine weitere Quelldateien zu überspringen.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` treten keine weitere Quelldateien zu überspringen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

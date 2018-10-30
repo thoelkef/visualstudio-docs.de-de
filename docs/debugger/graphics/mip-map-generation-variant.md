@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908534"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.  
@@ -30,19 +30,19 @@ Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
 ## <a name="remarks"></a>Hinweise  
  Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. MipMap-Erzeugung wird insbesondere erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt übergeben `pDesc` beschreibt eine nicht geänderte Shaderressource, das ist:  
   
--   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
+- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
--   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
+- Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
   
--   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
+- Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
   
--   Das Count-Member des SampleDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
+- Das Count-Member des SampleDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
   
--   Das MipLevels-Member ist auf 1 (keine existierende Mipmap) gesetzt.  
+- Das MipLevels-Member ist auf 1 (keine existierende Mipmap) gesetzt.  
   
- Wenn die Anwendung die ursprünglichen Daten ausgibt, muss das Texturformat – wie durch D3D11_FORMAT_SUPPORT_MIP_AUTOGEN festgelegt – die automatische Mipmap-Erzeugung unterstützen, außer wenn das Format BC1, BC2 oder BC3 ist; andernfalls wird die Textur nicht verändert, und bei Ausgabe der ursprünglichen Daten werden keine Mipmaps erzeugt.  
+  Wenn die Anwendung die ursprünglichen Daten ausgibt, muss das Texturformat – wie durch D3D11_FORMAT_SUPPORT_MIP_AUTOGEN festgelegt – die automatische Mipmap-Erzeugung unterstützen, außer wenn das Format BC1, BC2 oder BC3 ist; andernfalls wird die Textur nicht verändert, und bei Ausgabe der ursprünglichen Daten werden keine Mipmaps erzeugt.  
   
- Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
+  Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
   
 ## <a name="example"></a>Beispiel  
  Die **MipMap-Erzeugung** Variante reproduziert werden kann, mithilfe von Code wie folgt:  

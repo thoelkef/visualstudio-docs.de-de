@@ -1,5 +1,5 @@
 ---
-title: CV_CPU_TYPE_e | Microsoft Docs
+title: CV_CPU_TYPE_e | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a52c65823bb5e4f6ee93522648b235feba691d0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f5dc2c5f053d14a42bac59f56f58d4aa6227980c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925721"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 Gibt den Zielprozessor.  
   
 > [!NOTE]
->  Der Prozessor wird in der Enumeration Elements nach identifiziert die `CV_CFL_*` Präfix.  
+>  Der Prozessor wird identifiziert, in das Enumerationselement, nach der `CV_CFL_*` Präfix.  
   
 ## <a name="syntax"></a>Syntax  
   

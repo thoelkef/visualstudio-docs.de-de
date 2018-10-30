@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862761"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Erweiterungen des Sprachdiensts und des Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
   
  Im folgenden werden einige der grundlegenden Arten von Editor-Erweiterungen:  
   
--   Rändern und Bildlaufleisten  
+- Rändern und Bildlaufleisten  
   
--   Tags  
+- Tags  
   
--   Zusatzelemente  
+- Zusatzelemente  
   
--   Optionen  
+- Optionen  
   
--   IntelliSense  
+- IntelliSense  
   
- Weitere Informationen zum Editor Erweiterungspunkte, finden Sie unter [Sprachdienst und Erweiterungspunkte Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Weitere Informationen zum Editor Erweiterungspunkte, finden Sie unter [Sprachdienst und Erweiterungspunkte Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Bereitstellen von Editor-Erweiterungen  
  Stellen Sie in Visual Studio-Editor-Erweiterungen hinzufügen eine Metadatendatei namens "Source.Extension.vsixmanifest", um die Lösung, die beim Erstellen der Projektmappe, und klicken Sie dann in einem Ordner, der bekannt ist eine Kopie der Binärdateien und das Manifest hinzufügen, zu Visual Studio bereit. Die manifest-Datei definiert die grundlegenden Fakten über die Erweiterung (z. B. Name, Autor, Version und Typ des Inhalts). Weitere Informationen über die VSIX-manifest-Datei und zum Bereitstellen von Erweiterungen finden Sie unter [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  

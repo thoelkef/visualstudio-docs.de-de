@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849540"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
 Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahrscheinlich einige Fragen. Wir haben einige der am häufigsten verwendeten Tools hier aufgeführt. Wenn Sie die Informationen nicht wird Sie suchen angezeigt, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms), bitten Sie den gewünschten.
@@ -30,13 +30,13 @@ Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahr
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Welche Arten von Elementen kann ich mit Visual Studio-Erweiterungen?
  Vom Himmel zu holen ist die Grenze aus, wenn es darum geht, so vor anderen Visual Studio-Erweiterungen. Natürlich bei den meisten Erweiterungen haben etwas zu tun, Code zu schreiben, aber müssen, die nicht der Fall sein. Hier sind einige Beispiele für die Arten von Erweiterungen aus, die Sie erstellen können:
 
--   Unterstützung für Sprachen, die nicht mit Farben für Syntax, IntelliSense und Unterstützung für Compiler und Debuggen in Visual Studio enthalten sind
+- Unterstützung für Sprachen, die nicht mit Farben für Syntax, IntelliSense und Unterstützung für Compiler und Debuggen in Visual Studio enthalten sind
 
--   Produktivitätstools, die den Kern erweitern IDE-Erfahrung mit zusätzlichen Vorlagen, refactoring, neuer Code-Dialogfelder oder Toolfenster
+- Produktivitätstools, die den Kern erweitern IDE-Erfahrung mit zusätzlichen Vorlagen, refactoring, neuer Code-Dialogfelder oder Toolfenster
 
--   Domänenspezifische-Designern für Szenarien wie die Unterstützung der Entwurf oder in der cloud
+- Domänenspezifische-Designern für Szenarien wie die Unterstützung der Entwurf oder in der cloud
 
- Beispiele für Erweiterungen, sehen Sie sich die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Viele Erweiterungen sind open Source-Version, und der Marketplace bietet Links zu ihren GitHub-Repository.
+  Beispiele für Erweiterungen, sehen Sie sich die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Viele Erweiterungen sind open Source-Version, und der Marketplace bietet Links zu ihren GitHub-Repository.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Welche Features von Visual Studio kann werden erweitert?
  Theoretisch können Sie fast jeden Teil von Visual Studio erweitern: Menüs, Symbolleisten, Befehle, Windows, Lösungen, Projekte, Editoren und So weiter.

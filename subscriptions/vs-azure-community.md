@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgew�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937459"
 ---
 # <a name="azure-community"></a>Azure-Community
 
@@ -51,16 +51,18 @@ Die ersten Schritte mit der Azure-Community sind ganz einfach.
 ## <a name="eligibility"></a>Berechtigung
 Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargestellt von Ihrer Abonnementstufe ab:
 
-| Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail   | Ein Jahr      |  Ja          |
-| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit)  | VL, Azure, Retail                                      | Ein Jahr                                                           |  Ja          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Ein Jahr                                             |  Ja          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              |Ein Jahr                                              |  Ja          |
-| Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup>                                          | Alle                                              |Nicht verfügbar                                              |  Nein          |
-| Visual Studio Dev Essentials                                        | Nicht zutreffend                                              |Nicht verfügbar                                              |  Nein          |
-|
-<sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+|                                          Abonnementstufe                                           |     Channels      |    Vorteil    | Erneuerbar? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)                           | VL, Azure, Retail |   Ein Jahr    |    Ja     |
+|                          Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit)                          | VL, Azure, Retail |   Ein Jahr    |    Ja     |
+|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Ein Jahr    |    Ja     |
+|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Ein Jahr    |    Ja     |
+| Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup> |        Alle        | Nicht verfügbar |     Nein     |
+|                                     Visual Studio Dev Essentials                                      |        Nicht zutreffend        | Nicht verfügbar |     Nein     |
+|                                                                                                       |                   |               |            |
+
+<sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
@@ -68,4 +70,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 -  Weitere Azure-Communityressourcen finden Sie auf der [Supportseite](https://azure.microsoft.com/support/forums/) der Azure-Community.
 -  [Azure-Dokumentation](/azure/).
 -  Benötigen Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements?  Wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

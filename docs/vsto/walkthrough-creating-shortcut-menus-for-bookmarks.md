@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884081"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Kontextmenüs für <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente in einer Anpassung auf Dokumentebene für Word erstellt werden. Wenn ein Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt, wird ein Kontextmenü mit Optionen zum Formatieren des Texts angezeigt.  
@@ -32,17 +32,17 @@ ms.locfileid: "38783841"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   [Erstellen des Projekts](#BKMK_CreateProject).  
+- [Erstellen des Projekts](#BKMK_CreateProject).  
   
--   [Hinzufügen von Text und Lesezeichen zum Dokument](#BKMK_addtextandbookmarks).  
+- [Hinzufügen von Text und Lesezeichen zum Dokument](#BKMK_addtextandbookmarks).  
   
--   [Hinzufügen von Befehlen in einem Kontextmenü Menüelemente](#BKMK_AddCmndsShortMenu).  
+- [Hinzufügen von Befehlen in einem Kontextmenü Menüelemente](#BKMK_AddCmndsShortMenu).  
   
--   [Formatieren des Texts im Lesezeichen](#BKMK_formattextbkmk).  
+- [Formatieren des Texts im Lesezeichen](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -69,22 +69,22 @@ ms.locfileid: "38783841"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>So fügen Sie dem Dokument ein Lesezeichen-Steuerelement hinzu  
   
-1.  In der **Toolbox**, aus der **Word-Steuerelemente** Registerkarte, ziehen Sie eine <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement zum Dokument.  
+1. In der **Toolbox**, aus der **Word-Steuerelemente** Registerkarte, ziehen Sie eine <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement zum Dokument.  
   
-     Die **Lesezeichen-Steuerelement hinzufügen** Dialogfeld wird angezeigt.  
+    Die **Lesezeichen-Steuerelement hinzufügen** Dialogfeld wird angezeigt.  
   
-2.  Wählen Sie die Wörter "Erstellen eines Kontextmenüs an einen Rechtsklick auf den Text", und klicken Sie dann auf **OK**.  
+2. Wählen Sie die Wörter "Erstellen eines Kontextmenüs an einen Rechtsklick auf den Text", und klicken Sie dann auf **OK**.  
   
-     Dem Dokument wird `bookmark1` hinzugefügt.  
+    Dem Dokument wird `bookmark1` hinzugefügt.  
   
-3.  Fügen Sie ein weiteres <xref:Microsoft.Office.Tools.Word.Bookmark> die Steuerung an die Wörter "mit der rechten Maustaste in des Texts in einem Lesezeichen".  
+3. Fügen Sie ein weiteres <xref:Microsoft.Office.Tools.Word.Bookmark> die Steuerung an die Wörter "mit der rechten Maustaste in des Texts in einem Lesezeichen".  
   
-     Dem Dokument wird `bookmark2` hinzugefügt.  
+    Dem Dokument wird `bookmark2` hinzugefügt.  
   
-    > [!NOTE]  
-    >  Die Wörter "mit der rechten Maustaste in des Texts" in beiden sind `bookmark1` und `bookmark2`.  
+   > [!NOTE]  
+   >  Die Wörter "mit der rechten Maustaste in des Texts" in beiden sind `bookmark1` und `bookmark2`.  
   
- Wenn Sie einem Dokument zur Entwurfszeit ein Lesezeichen hinzufügen, wird ein <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement erstellt. Sie können mehrere Ereignisse des Lesezeichens programmieren. Sie können Code in das <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>-Ereignis des Lesezeichens schreiben, sodass ein Kontextmenü angezeigt wird, wenn der Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt.  
+   Wenn Sie einem Dokument zur Entwurfszeit ein Lesezeichen hinzufügen, wird ein <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement erstellt. Sie können mehrere Ereignisse des Lesezeichens programmieren. Sie können Code in das <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>-Ereignis des Lesezeichens schreiben, sodass ein Kontextmenü angezeigt wird, wenn der Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Fügen Sie in einem Kontextmenü Befehle hinzu  
  Hinzufügen von Schaltflächen zum Kontextmenü, das angezeigt wird, wenn Sie mit der rechten Maustaste auf das Dokument klicken.  

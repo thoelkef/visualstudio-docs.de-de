@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832105"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.  
@@ -41,40 +41,40 @@ ms.locfileid: "37118944"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] unterstützt nicht das Importieren von Projektmappen, die in den folgenden Anwendungen erstellt wurden:  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- Obwohl Sie Projektmappen, die mit einer dieser Anwendungen erstellt wurden, häufig erfolgreich importieren können, ist diese Funktionalität weder getestet, noch wird sie unterstützt.  
+  Obwohl Sie Projektmappen, die mit einer dieser Anwendungen erstellt wurden, häufig erfolgreich importieren können, ist diese Funktionalität weder getestet, noch wird sie unterstützt.  
   
 ## <a name="item-import-restrictions"></a>Den elementimport
  Obwohl die meisten SharePoint-Elemente können, aus einer vorhandenen importiert werden *.wsp* -Datei die folgenden Elemente werden nicht unterstützt und erfordern möglicherweise Änderungen an ordnungsgemäß funktioniert:  
   
--   BDC-Entitäten  
+- BDC-Entitäten  
   
--   Codeworkflow-Zuordnungselemente  
+- Codeworkflow-Zuordnungselemente  
   
--   Codeworkflows  
+- Codeworkflows  
   
--   Visuelle Webparts (.ascx)  
+- Visuelle Webparts (.ascx)  
   
--   Webdienste (*asmx*)  
+- Webdienste (*asmx*)  
   
--   Inhaltstypbindungen  
+- Inhaltstypbindungen  
   
--   Ereignisempfänger  
+- Ereignisempfänger  
   
--   Listendefinitionen (Vorlagen)  
+- Listendefinitionen (Vorlagen)  
   
--   Websitedefinitionen  
+- Websitedefinitionen  
   
- Beim Exportieren einer Lösung aus [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], diese Elemente automatisch ausgeschlossen sind die *.wsp* Datei. Allerdings andere *.wsp* generiert wurden nicht unterstützte Tools können diese Elemente enthalten. (Siehe „Unterstützte SharePoint-Projektmappen (SharePoint-Lösungen)“ weiter oben in diesem Thema.)  
+  Beim Exportieren einer Lösung aus [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], diese Elemente automatisch ausgeschlossen sind die *.wsp* Datei. Allerdings andere *.wsp* generiert wurden nicht unterstützte Tools können diese Elemente enthalten. (Siehe „Unterstützte SharePoint-Projektmappen (SharePoint-Lösungen)“ weiter oben in diesem Thema.)  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>Was geschieht, wenn Sie eine Projektmappe importieren
  Wenn Sie eine Projektmappe mit der Vorlage "SharePoint-Lösungspaket importieren" importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopiert den Inhalt der *.wsp* -Datei und versucht, abzugleichen und beizubehalten, so viele Zuordnungen und Verweise zwischen importiert Elemente und ihre Dateien wie möglich.  
@@ -112,7 +112,7 @@ ms.locfileid: "37118944"
  Wenn Projektmappen importiert werden, werden einige optionale Funktionsattribute (Featureattribute) aus dem importierten Funktionsmanifest nicht übernommen. Wenn Sie diese Attribute in der neuen Funktionsdatei wiederherstellen möchten, ermitteln Sie die fehlenden Attribute, durch die ursprüngliche Funktionsdatei mit dem neuen Funktionsmanifest vergleichen, und befolgen Sie die Anweisungen im Thema [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Erkennung von Bereitstellungskonflikten wird für integrierte Listeninstanzen nicht ausgeführt.
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt keine Erkennung von Bereitstellungskonflikten für integrierte Listeninstanzen (d. h. die Standardlisteninstanzen, die mit SharePoint geliefert). Die Konflikterkennung wird nicht ausgeführt, damit verhindert wird, dass die integrierten Listeninstanzen in SharePoint überschrieben werden. Die integrierten Listeninstanzen werden weiterhin bereitgestellt bzw. aktualisiert, werden aber niemals gelöscht oder überschrieben. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Problembehandlung bei SharePoint-Packen und-Bereitstellen](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt keine Erkennung von Bereitstellungskonflikten für integrierte Listeninstanzen (dies sind die Standardlisteninstanzen, die mit SharePoint geliefert werden) aus. Die Konflikterkennung wird nicht ausgeführt, damit verhindert wird, dass die integrierten Listeninstanzen in SharePoint überschrieben werden. Die integrierten Listeninstanzen werden weiterhin bereitgestellt bzw. aktualisiert, werden aber niemals gelöscht oder überschrieben. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Problembehandlung bei SharePoint-Packen und-Bereitstellen](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="import-sharepoint-server-2010-workflows"></a>Importieren von SharePoint Server 2010-workflows
  Wenn Sie einen in [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]erstellten Workflow importieren, wird dieser nach der Bereitstellung nicht ordnungsgemäß ausgeführt. Der Workflow wird nicht ordnungsgemäß ausgeführt, da bestimmte Assemblys fehlen und  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows InfoPath-Formulare enthalten, die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Workflowprojektmappen derzeit nicht unterstützt werden. Importierte [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows können jedoch ordnungsgemäß ausgeführt werden, nachdem Sie bestimmte Elemente korrigiert haben, so z. B. Hinzufügen von Verweisen auf die [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Assemblys und erneutes Verbinden der InfoPath-Formulare. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Importieren von SharePoint Server 2010-Workflows](http://go.microsoft.com/fwlink/?LinkId=182226).  

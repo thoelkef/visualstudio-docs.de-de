@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854831"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Gewusst wie: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.  
@@ -33,17 +33,17 @@ ms.locfileid: "36756245"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint-Projektelemente mit dem Funktions-Designer hinzufügen  
   
-1.  Öffnen Sie die Funktions-Designer.  
+1. Öffnen Sie die Funktions-Designer.  
   
-     Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:  
+2. Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:  
   
-    -   Doppelklicken Sie auf jedes Element, das Sie hinzufügen möchten.  
+   - Doppelklicken Sie auf jedes Element, das Sie hinzufügen möchten.  
   
-    -   Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
+   - Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
   
-    -   Wählen Sie die **alle hinzufügen** Schaltfläche (>>).  
+   - Wählen Sie die **alle hinzufügen** Schaltfläche (>>).  
   
      Die SharePoint-Projektelemente werden in der **Elemente in der Funktion** Liste.  
   

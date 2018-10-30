@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
+title: IDebugObject2::GetField | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ef7e706ff23edf28cefbf375d5f79a548b9a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d602aa7da2f82258a7f0d9b0ba7d1d803d05cc7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926331"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Ruft den Typ dieses Objekts ab.  
+Ruft den Typ dieses Objekts.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ int GetField(
   
 #### <a name="parameters"></a>Parameter  
  `ppField`  
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt ggf. einen null-Wert.  
+ [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  

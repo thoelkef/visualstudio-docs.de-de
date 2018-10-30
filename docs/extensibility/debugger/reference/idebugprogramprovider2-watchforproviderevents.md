@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
+title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875137"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Ermöglicht die portereignisse benachrichtigt zu werden.  
+Ermöglicht dem Prozess portereignisse benachrichtigt werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Parameter  
  `Flags`  
- [in] Eine Kombination aus Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:  
+ [in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:  
   
 |Flag|Beschreibung|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Aufrufer, die auf dem Remotecomputer ausgeführt wird.|  
-|`PFLAG_DEBUGGEE`|Aufrufer gerade gedebuggt wird (Weitere Informationen über das marshalling wird für jeden Knoten zurückgegeben).|  
+|`PFLAG_REMOTE_PORT`|Aufrufer wird auf dem Remotecomputer ausgeführt.|  
+|`PFLAG_DEBUGGEE`|Aufrufer ist aktuell im Debugmodus befindlichen (Weitere Informationen über das marshalling wird für jeden Knoten zurückgegeben).|  
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|  
-|`PFLAG_REASON_WATCH`|Aufrufer Ereignisse überwacht werden soll. Wenn dieses Flag nicht festgelegt ist. Klicken Sie dann die Rückrufereignis entfernt, und der Aufrufer nicht mehr empfängt Benachrichtigungen.|  
+|`PFLAG_REASON_WATCH`|Aufrufer Ereignisse zu überwachen. Wenn dieses Flag nicht festgelegt ist. Klicken Sie dann das Rückrufereignis entfernt, und der Aufrufer empfängt keine Benachrichtigungen.|  
   
  `pPort`  
  [in] Der Port der aufrufende Prozess ausgeführt wird.  
   
  `processId`  
- [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) halten die ID des Prozesses mit dem Programm betreffende Struktur.  
+ [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.  
   
  `EngineFilter`  
- [in] Ein Array von GUIDs der Debugmodule, die dem Prozess zugeordnet.  
+ [in] Ein Array von GUIDs von Debug-Engines, die dem Prozess zugeordnet.  
   
  `guidLaunchingEngine`  
- [in] GUID der Debugging-Modul, das diesen Prozess (sofern vorhanden) gestartet.  
+ [in] GUID der Debug-Engine, die diesen Prozess (sofern vorhanden) gestartet.  
   
  `pEventCallback`  
- [in] Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) -Objekt, das der ereignisbenachrichtigungen empfängt.  
+ [in] Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) -Objekt, das die ereignisbenachrichtigungen empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn ein Aufrufer einen Ereignishandler zu entfernen möchte, mit einem vorherigen Aufruf dieser Methode erstellt wurde, der Aufrufer übergibt die gleichen Parameter wie beim ersten lässt aber deaktiviert die `PFLAG_REASON_WATCH` Flag.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugEngine** -Objekt, das macht die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugEngine** -Objekt, das macht die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

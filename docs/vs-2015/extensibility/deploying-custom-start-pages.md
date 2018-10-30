@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841272"
 ---
 # <a name="deploying-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>VSIX-Bereitstellung mithilfe der Start-Seite-Projektvorlage  
  Wenn Sie eine Startseite mithilfe der Projektvorlage für die Startseite erstellen, und erstellen Sie das Projekt, erstellt Visual Studio eine VSIX-Datei, die Sie verteilen können. Eine Startseite in einer VSIX-Datei packen, können Sie die folgenden Optionen für die Bereitstellung abhängig von Ihrer Zielgruppe:  
   
--   Sie können die VSIX-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website einfügen. Wenn eine Person die Datei geöffnet wird, wird die Startseite wird automatisch installiert.  
+- Sie können die VSIX-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website einfügen. Wenn eine Person die Datei geöffnet wird, wird die Startseite wird automatisch installiert.  
   
--   Sie können die VSIX-Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
+- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
   
- Die Startseite-Projektvorlage erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, damit Sie die Kopie zu ändern und das Original beibehalten können.  
+  Die Startseite-Projektvorlage erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, damit Sie die Kopie zu ändern und das Original beibehalten können.  
   
- Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager** oder indem Sie sie auf der Website herunterladen.  
+  Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager** oder indem Sie sie auf der Website herunterladen.  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>VSIX-Bereitstellung ohne Verwendung der Start-Seite-Projektvorlage  
  Eine erfolgreiche VSIX-Bereitstellung erfordert eine Erweiterung in Ordnern installiert werden, die von der während der VSIX-Registrierung und erkannt werden **Erweiterungs-Manager**. Da die Projektvorlage der Startseite bereits die richtigen Ordnern angegeben wird, empfehlen wir, dass Sie es verwenden, um eine Erweiterung für VSIX-Bereitstellung zu verpacken. Wenn Sie einen Fall haben, in dem Sie die Vorlage verwenden können, können Sie jedoch eine VSIX-Bereitstellung erstellen, ohne die Verwendung.  
   
  Um eine VSIX-Bereitstellung ohne Verwendung der Projektvorlage für die Startseite zu erstellen, erstellen Sie zuerst eine VSIX-Datei für die Startseite in einem der beiden folgenden Weisen:  
   
--   Durch Hinzufügen Ihrer benutzerdefinierten Startseitendateien leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
+- Durch Hinzufügen Ihrer benutzerdefinierten Startseitendateien leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
   
--   Durch das manuelle Erstellen einer VSIX-Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Durch das manuelle Erstellen einer VSIX-Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
- Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.  
+  Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.  
   
- Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck sicher, dass Ihr Paket eine PKGDEF-Datei enthält, die die folgenden Informationen enthält.  
+  Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck sicher, dass Ihr Paket eine PKGDEF-Datei enthält, die die folgenden Informationen enthält.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

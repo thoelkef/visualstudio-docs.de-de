@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551661"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101133"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Zuweisen einer Python-Umgebung für ein Projekt
 
@@ -50,7 +50,7 @@ Eine virtuelle Umgebung ist eine einzigartige Kombination aus einem bestimmten P
 
 Ein Vorteil bei der Verwendung einer virtuellen Umgebung liegt daran, dass diese immer die genauen Abhängigkeiten des Projekts angibt, während Sie das Projekt entwickeln. (Im Gegensatz dazu enthält eine gemeinsam genutzte globale Umgebung alle Bibliotheken, unabhängig davon, ob Sie diese im Projekt verwenden.) Über die virtuelle Umgebung können Sie dann einfach eine *requirements.txt*-Datei erstellen, die dazu verwendet wird, diese Abhängigkeiten auf einem anderen Entwicklungs- oder Produktionscomputer erneut zu installieren. Weitere Informationen finden Sie unter [Verwalten von erforderlichen Paketen mit „requirements.txt“](managing-required-packages-with-requirements-txt.md).
 
-Wenn Sie ein Projekt in Visual Studio öffnen, das eine *requirements.txt*-Datei enthält, stellt Visual Studio Ihnen die Option bereit, die virtuelle Umgebung neu zu erstellen. Auf Computern, auf denen Visual Studio nicht installiert ist (z.B. Azure App Service), können Sie `pip install -r requirements.txt` verwenden, um die Pakete wiederherzustellen (dieser Prozess wird unter [Verwalten von Python auf Azure App Service](managing-python-on-azure-app-service.md) beschrieben).
+Wenn Sie ein Projekt in Visual Studio öffnen, das eine *requirements.txt*-Datei enthält, stellt Visual Studio Ihnen die Option bereit, die virtuelle Umgebung neu zu erstellen. Auf Computern, auf denen Visual Studio nicht installiert ist, können Sie `pip install -r requirements.txt` verwenden, um die Pakete wiederherzustellen.
 
 Da eine virtuelle Umgebung einen hartcodierten Pfad zum Basisinterpreter enthält, und da Sie die Umgebung mithilfe von *requirements.txt* neu erstellen können, lassen Sie üblicherweise den gesamten Ordner der virtuellen Umgebung aus der Quellcodeverwaltung aus.
 

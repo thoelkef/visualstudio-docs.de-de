@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854285"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
   Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie es mit einer Elementvorlage oder einer Projektvorlage zuordnen. Diese Zuordnung ermöglicht anderen Entwicklern das Projektelement in Visual Studio verwenden. Sie können auch einen Assistenten für die Vorlage erstellen.
@@ -47,14 +47,16 @@ ms.locfileid: "36327140"
 
  Die folgende Tabelle enthält einige der am häufigsten verwendeten optionalen Dateien, die in der Elementvorlage aufgenommen werden können. Einige Typen von Projektelementen möglicherweise andere Dateien, die hier nicht aufgeführt.
 
-|Optionale Datei|Beschreibung|
-|-------------------|-----------------|
-|*"Elements.xml"*|Ein *"Feature"-Element* Datei. Diese Datei definiert die Benutzeroberfläche und das Verhalten der Anpassung des Projektelements erstellt. Jede Anpassung, z. B. Listeninstanzen, Inhaltstypen und benutzerdefinierte Aktionen verfügt über ein anderes Schema, das den Inhalt dieser Datei definiert. Weitere Informationen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkId=169183) und [Feature Schemas](http://go.microsoft.com/fwlink/?LinkId=169192).|
-|*Datei "Schema.xml"*|Die Schemadatei für Listendefinitionen. Weitere Informationen finden Sie unter [Baustein: Listen und Dokumentbibliotheken](http://go.microsoft.com/fwlink/?LinkId=177792) und ["Schema.xml"](http://go.microsoft.com/fwlink/?LinkId=177793).|
-|*.WebPart*|Ein *Webpartdefinition* Datei. Diese Datei enthält die Einstellungen der Eigenschaft für ein Webpart. Weitere Informationen finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkId=177791).|
-|*ASCX*|Eine ASP.NET UserControl-Datei. Diese Datei definiert die Benutzeroberfläche des ein visuelles Webpart an.|
-|*aspx*|Eine Datei der ASP.NET-Seite. Diese Datei enthält die XML-Markup, das eine Seite "Anwendung" definiert.|
-|*cs* oder *vb* Dateien|Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual c# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann.|
+
+| Optionale Datei | Beschreibung |
+|----------------------| - |
+| *"Elements.xml"* | Ein *"Feature"-Element* Datei. Diese Datei definiert die Benutzeroberfläche und das Verhalten der Anpassung des Projektelements erstellt. Jede Anpassung, z. B. Listeninstanzen, Inhaltstypen und benutzerdefinierte Aktionen verfügt über ein anderes Schema, das den Inhalt dieser Datei definiert. Weitere Informationen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkId=169183) und [Feature Schemas](http://go.microsoft.com/fwlink/?LinkId=169192). |
+| *Datei "Schema.xml"* | Die Schemadatei für Listendefinitionen. Weitere Informationen finden Sie unter [Baustein: Listen und Dokumentbibliotheken](http://go.microsoft.com/fwlink/?LinkId=177792) und ["Schema.xml"](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *.WebPart* | Ein *Webpartdefinition* Datei. Diese Datei enthält die Einstellungen der Eigenschaft für ein Webpart. Weitere Informationen finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *ASCX* | Eine ASP.NET UserControl-Datei. Diese Datei definiert die Benutzeroberfläche des ein visuelles Webpart an. |
+| *aspx* | Eine Datei der ASP.NET-Seite. Diese Datei enthält die XML-Markup, das eine Seite "Anwendung" definiert. |
+| *cs* oder *vb* Dateien | Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual c# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann. |
+
 ## <a name="create-project-templates"></a>Erstellen von Projektvorlagen
  Wenn Sie eine SharePoint-Projektvorlage erstellen, gibt es einige Dateien, die immer erforderlichen und optionalen Dateien sind, die von bestimmten Typen von Projekten verwendet werden kann. SharePoint-Projekte enthalten in der Regel mindestens eine SharePoint-Projektelement. Dies ist jedoch nicht erforderlich. Sie können z. B. eine SharePoint-Projektvorlage definieren, die nur für die Bereitstellung von SharePoint-Lösungen, die in anderen Projekten erstellt verwendet werden soll.
 

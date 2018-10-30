@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829936"
 ---
 # <a name="how-to-update-the-status-bar"></a>Vorgehensweise: Aktualisieren der Statusleiste
 Die **Statusleiste** ist eine Steuerleiste am unteren Rand der vielen Anwendungsfenster, die eine oder mehrere Textzeilen Status oder Indikatoren enthalten.  
@@ -35,19 +35,19 @@ Die **Statusleiste** ist eine Steuerleiste am unteren Rand der vielen Anwendungs
 ## <a name="robust-programming"></a>Stabile Programmierung  
  Ein **Statusleiste** enthält vier separate Felder:  
   
--   Statustext  
+- Statustext  
   
--   Statusanzeige  
+- Statusanzeige  
   
--   Animierte Symbol  
+- Animierte Symbol  
   
--   Editorinformationen  
+- Editorinformationen  
   
- Weitere Informationen finden Sie unter [Statusleisten](/cpp/mfc/status-bars).  
+  Weitere Informationen finden Sie unter [Statusleisten](/cpp/mfc/status-bars).  
   
- Ruft die IDE automatisch den <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Implementierung, wenn Ihre Dokumentfenster aktiviert wird.  
+  Ruft die IDE automatisch den <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Implementierung, wenn Ihre Dokumentfenster aktiviert wird.  
   
- Die VSPackage-Implementierung ist verantwortlich für den Text in der Statusleiste zu aktualisieren. Die IDE wird diese Zeichenfolge "Bereit" zurückgesetzt, wenn das Statusfeld für den Text auf leere Zeichenfolge festgelegt ist ("") während der Leerlaufzeit.  
+  Die VSPackage-Implementierung ist verantwortlich für den Text in der Statusleiste zu aktualisieren. Die IDE wird diese Zeichenfolge "Bereit" zurückgesetzt, wenn das Statusfeld für den Text auf leere Zeichenfolge festgelegt ist ("") während der Leerlaufzeit.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Statusleisten](/cpp/mfc/status-bars)

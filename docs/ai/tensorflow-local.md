@@ -12,16 +12,17 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933988"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Lokales Trainieren eines TensorFlow-Modells
 
 In diesem Schnellstart trainieren Sie ein TensorFlow-Modell mit einem [MNIST](http://yann.lecun.com/exdb/mnist/)-Dataset lokal in Visual Studio-Tools für KI.
+
 Die MNIST-Datenbank enthält 60.000 Trainingsbeispiele und 10.000 Testbeispiele für handgeschriebene Ziffern.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
@@ -30,7 +31,8 @@ Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert haben:
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-Führen Sie die folgenden Befehle über ein Terminal aus.
+Führen Sie die folgenden Befehle über ein Terminal aus:
+
 ```cmd
 C:\>pip.exe install tensorflow
 ```
@@ -47,9 +49,9 @@ Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai
 
 - Öffnen Sie den Ordner **Tensorflow Examples** (TensorFlow-Beispiele) aus dem heruntergeladenen Beispielrepository, und öffnen Sie die Datei **TensorflowExamples.sln**.
 
-![Öffnen des Projekts](media\tensorflow-local\open-project.png)
+   ![Öffnen des Projekts](media/tensorflow-local/open-project.png)
 
-![Projektmappe öffnen](media\tensorflow-local\open-solution.png)
+   ![Projektmappe öffnen](media/tensorflow-local/open-solution.png)
 
 - Machen Sie das MNIST-Projekt im **Projektmappen-Explorer** ausfindig, klicken Sie erst mit der rechten Maustaste auf das Projekt und anschließend mit der Linken auf **Set as StartUp Project** (Als Startprojekt festlegen).
 
@@ -57,7 +59,7 @@ Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai
 
 - Die Ausgabe wird in der Konsole ausgegeben.
 
-![Beispielausgabe in der Konsole](media\tensorflow-local\console-output.png)
+   ![Beispielausgabe in der Konsole](media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
 > [Trainieren eines TensorFlow-Modells in der Cloud](tensorflow-vm.md)

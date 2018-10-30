@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen nach einem Thread in der Threadansicht | Microsoft Docs'
+title: 'Vorgehensweise: Suchen nach einem Thread in der Ansicht "Threads" | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5eee67e195821f89dbd820f930288eb24f20a11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 58e16d0edce411192f7b6e40bd0e5fedb32bfac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880571"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Gewusst wie: Suchen nach einem Thread in der Threadansicht
-Sie können mithilfe der Thread-ID oder ein Modul Zeichenfolge als Suchkriterium für einen bestimmten Thread in der Threadansicht suchen. Sie können auch die ausgangsrichtung der Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Threads in die Threadstruktur anzeigen.  
+Sie können mithilfe der Thread-ID oder eine Modul-Zeichenfolge als Suchkriterium für einen bestimmten Thread in der Ansicht "Threads" suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Threads in der Threadstruktur angezeigt werden.  
   
-### <a name="to-search-for-a-thread-in-threads-view"></a>Suchen Sie für einen Thread in der Threadansicht  
+### <a name="to-search-for-a-thread-in-threads-view"></a>Suchen Sie nach einem Thread in der Ansicht "Threads"  
   
-1.  Ordnen Sie die Fenster so, Spy++ und ein aktives [Threadansicht](../debugger/threads-view.md) Fenster sichtbar sind.  
+1. Ordnen Sie die Fenster also, Spy++ und ein aktiver [Ansicht "Threads"](../debugger/threads-view.md) Fenster sichtbar sind.  
   
-2.  Aus der **Suche** Menü wählen **Thread suchen**.  
+2. Von der **Suche** Menü wählen **Thread suchen**.  
   
-     Die [Thread-Dialogfeld "Fenstersuche"](../debugger/thread-search-dialog-box.md) wird geöffnet.  
+    Die [Dialogfeld Threadsuche](../debugger/thread-search-dialog-box.md) wird geöffnet.  
   
-3.  Geben Sie die Thread-ID oder einen Modulnamen als Suchkriterien.  
+3. Geben Sie die Thread-ID oder eine Modulzeichenfolge als Suchkriterium an.  
   
-4.  Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
+4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
   
-    > [!TIP]
-    >  Um alle Threads, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Thread** Textfeld und Typ des Moduls im Namen der **Modul** Feld. Verwenden Sie dann **Weitersuchen** Suche nach Threads fort.  
+   > [!TIP]
+   >  Um alle Threads, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Thread** nennen Sie das Textfeld, und geben das Modul die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Threads Suche fort.  
   
-5.  Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung der Suche.  
+5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
- Wenn ein entsprechender Thread gefunden wird, wird es in der Ansicht Threadfenster hervorgehoben.
+   Wenn ein entsprechender Thread gefunden wird, wird es in der Threads an hervorgehoben.

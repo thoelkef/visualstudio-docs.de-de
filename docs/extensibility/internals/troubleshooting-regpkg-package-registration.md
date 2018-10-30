@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei der Registrierung des RegPkg | Microsoft Docs
+title: Problembehandlung bei Registrierung des RegPkg-Pakets | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4857e41888962a92dced87d63fa2b63161ecac55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5424ca9a1a51088a020d04faa55754ad487d5723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910536"
 ---
-# <a name="troubleshooting-regpkg-package-registration"></a>Problembehandlung bei der Registrierung des RegPkg
+# <a name="troubleshooting-regpkg-package-registration"></a>Problembehandlung bei der Registrierung des RegPkg-Pakets
 > [!NOTE]
->  Die bevorzugte Methode zum Registrieren von Paketen in Visual Studio ist mit der PKGDEF-Dateien. Dies ermöglicht Erweiterung Bereitstellung ohne die Registrierung zugreifen. PKGDEF-Dateien werden erstellt, mit der [CreatePkgDef Utility](../../extensibility/internals/createpkgdef-utility.md).  
+>  Die bevorzugte Methode zum Registrieren von Paketen in Visual Studio wird mithilfe der PKGDEF-Dateien. Dadurch für die erweiterungsbereitstellung ohne die Registrierung des Systems zugreifen zu müssen. PKGDEF-Dateien werden erstellt, mit der [CreatePkgDef-Hilfsprogramm](../../extensibility/internals/createpkgdef-utility.md).  
   
- So registrieren ein Paket mithilfe von RegPkg in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie die Version des RegPkg, die für Ihr Paket geeignet ist, verwenden.  
+ Ein Paket zu registrieren, indem Sie mithilfe von RegPkg in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie die Version des RegPkg, die für Ihr Paket geeignet ist, verwenden.  
   
-## <a name="regpkg-versions-related-to-package-versions"></a>RegPkg-Versionen, die im Zusammenhang mit Paketversionen  
- Es gibt zwei Versionen des RegPkg. Eine Version ist in enthalten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Verwenden Sie diese Version, um Pakete zu registrieren, die erstellt wurden, indem Sie eine der folgenden Assemblys:  
+## <a name="regpkg-versions-related-to-package-versions"></a>RegPkg-Versionen, die im Zusammenhang mit der Paketversionen  
+ Es gibt zwei Versionen des regpkg entsprechend an. Eine Version befindet sich im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Verwenden Sie diese Version, um Pakete zu registrieren, die mit einer der folgenden Assemblys erstellt wurden:  
   
-1.  Microsoft.VisualStudioShell.9.0.dll  
+1. Microsoft.VisualStudioShell.9.0.dll  
   
-2.  Microsoft.VisualStudioShell.10.0.dll  
+2. Microsoft.VisualStudioShell.10.0.dll  
   
-3.  Microsoft.VisualStudioShell.11.0.dll  
+3. Microsoft.VisualStudioShell.11.0.dll  
   
- Folglich können keine Pakete, die mit früheren Microsoft.VisualStudio.Shell.dll-Assembly erstellt wurden.  
+   Es kann keine Pakete registrieren, die mit der früheren Microsoft.VisualStudio.Shell.dll erstellt wurden.  
   
- Die frühere Version von RegPkg kann Pakete registrieren, die mithilfe der Microsoft.VisualStudio.Shell.dll-Assembly erstellt wurden. Es kann jedoch Pakete, die mit höheren Versionen der Assembly erstellt nicht registrieren.  
+   Die frühere Version des RegPkg kann Pakete registrieren, die mit der Microsoft.VisualStudio.Shell.dll erstellt wurden. Es kann jedoch nicht Pakete, die mit höheren Versionen der Assembly erstellt registrieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../../extensibility/internals/vspackages.md)

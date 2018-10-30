@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a79c073048fe30a4abed069487ad09943253475
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20981c744408e8d25e6e851c39532db939c71b2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939956"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> ALS VERALTET MARKIERT. DARF NICHT VERWENDET WERDEN.
+> ALS VERALTET MARKIERT. VERWENDEN SIE NICHT.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Rückgabewert
 
-Eine Implementierung sollte stets `E_NOTIMPL`.
+Eine Implementierung sollte immer zurückgeben `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Hinweise
 
 > [!WARNING]
-> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollten stets `E_NOTIMPL`.
+> Ab Visual Studio 2005, diese Methode wird nicht mehr verwendet und sollte immer zurückgeben `E_NOTIMPL`.
 
-Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn diese Methode aufgerufen wird, sollte DE das Programm fortgesetzt, als ob der Benutzer von ihm getrennt. Keine weiteren Debuggingereignisse gesendet werden soll. Das Programm sollte sich in einem Zustand, wo es von einer anderen Instanz des Debuggers anfügbar ist.
+Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn diese Methode aufgerufen wird, sollte die DE das Programm fortgesetzt, als ob der Benutzer von ihm getrennt. Keine weiteren Debuggingereignisse gesendet werden soll. Das Programm sollte sich in einem Zustand, in denen es anfügbaren Member aus einer anderen Instanz des Debuggers ist.
 
 ## <a name="see-also"></a>Siehe auch
 

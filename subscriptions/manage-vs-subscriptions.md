@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nut
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822162"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -72,14 +72,14 @@ Das Visual Studio-Abonnements-Portal vereint alle Visual Studio-Abonnements und 
 
 Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blauen Banner angezeigt. Des Weiteren wird es in der oberen rechten Ecke der Seite angezeigt.
 > [!div class="mx-imgBorder"]
-> ![Das aktive Abonnement](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![Das aktive Abonnement](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Sie haben folgende Möglichkeiten zum Wechseln zwischen Abonnements:
 
 - Klicken Sie oben rechts auf das Dropdownfeld, und wählen Sie das Abonnement aus der Liste aus
 - Klicken Sie auf die Registerkarte „Abonnements“ und anschließend auf das gewünschte Abonnement
-> [!div class="mx-imgBorder"]
-> ![Wechseln von Abonnements](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![Wechseln von Abonnements](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Wenn Ihr Abonnement nicht sichtbar ist...
 
@@ -124,8 +124,8 @@ Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfa
 4. Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben.
 5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren.
 
-    > [!div class="mx-imgBorder"]
-    > ![Bearbeiten von Profilinformationen](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bearbeiten von Profilinformationen](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Verknüpfen eines Abonnements mit vorhandenen Azure DevOps Services- oder Azure-Abonnements
 
@@ -140,8 +140,8 @@ So fügen Sie ein alternatives Konto hinzu:
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
 4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule/Ihrer Universität ein, und klicken Sie auf **Hinzufügen**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Alternatives Konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Alternatives Konto](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.
 

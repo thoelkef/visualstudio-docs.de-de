@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856599"
 ---
 # <a name="native-run-time-checks-customization"></a>Anpassen der systemeigenen Laufzeitüberprüfung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Beim Kompilieren mit **/RTC** (laufzeitfehlerüberprüfungen), oder Verwenden der `runtime_checks` Pragma stellt die C-Laufzeitbibliothek systemeigene laufzeitüberprüfungen bereit. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:  
   
--   Zum Weiterleiten von Meldungen der Laufzeitüberprüfung an eine Datei oder an ein vom Standardziel abweichendes Ziel.  
+- Zum Weiterleiten von Meldungen der Laufzeitüberprüfung an eine Datei oder an ein vom Standardziel abweichendes Ziel.  
   
--   Zum Festlegen eines Ausgabeziels für Meldungen der Laufzeitüberprüfung im Debugger eines Drittanbieters.  
+- Zum Festlegen eines Ausgabeziels für Meldungen der Laufzeitüberprüfung im Debugger eines Drittanbieters.  
   
--   Zum Erfassen von Meldungen der Laufzeitüberprüfung aus einem Programm, das mit einer Releaseversion der C-Laufzeitbibliothek kompiliert wurde. Releaseversionen der Bibliothek verwenden zum Erfassen von Laufzeitfehlern nicht `_CrtDbgReportW`. Stattdessen zeigen sie eine **Assert** für jeden Laufzeitfehler im Dialogfeld.  
+- Zum Erfassen von Meldungen der Laufzeitüberprüfung aus einem Programm, das mit einer Releaseversion der C-Laufzeitbibliothek kompiliert wurde. Releaseversionen der Bibliothek verwenden zum Erfassen von Laufzeitfehlern nicht `_CrtDbgReportW`. Stattdessen zeigen sie eine **Assert** für jeden Laufzeitfehler im Dialogfeld.  
   
- Sie haben folgende Möglichkeiten, um Laufzeitfehlerüberprüfungen anzupassen:  
+  Sie haben folgende Möglichkeiten, um Laufzeitfehlerüberprüfungen anzupassen:  
   
--   Schreiben einer Funktion zur Erstellung von Laufzeitfehlerberichten. Weitere Informationen finden Sie unter [Vorgehensweise: Schreiben einer Runtime-Fehler Reporting-Funktion](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Schreiben einer Funktion zur Erstellung von Laufzeitfehlerberichten. Weitere Informationen finden Sie unter [Vorgehensweise: Schreiben einer Runtime-Fehler Reporting-Funktion](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Anpassen des Ziels für Fehlermeldungen.  
+- Anpassen des Ziels für Fehlermeldungen.  
   
--   Abfrage von Informationen zu Laufzeitfehlerüberprüfungen.  
+- Abfrage von Informationen zu Laufzeitfehlerüberprüfungen.  
   
 ## <a name="customize-the-error-message-destination"></a>Anpassen des Ziels für Fehlermeldungen  
  Wenn Sie `_CrtDbgReportW` zum Erfassen von Fehlern verwenden, können Sie das Ziel der Fehlermeldungen mit `_CrtSetReportMode` angeben.  

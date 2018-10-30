@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862098"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
 
@@ -48,27 +48,27 @@ Gehen Sie wie folgt vor, um Agents einzurichten, die einer Rolle zugewiesen sind
 
    > [!NOTE]
    > - Der Benutzer, den Sie zum Starten des Prozesses hinzufügen, muss auch als Mitglied der Gruppe TeamTestAgentService auf dem Computer des Testcontrollers für diesen Agent hinzugefügt werden. Wenn dieser Benutzer der aktuelle Benutzer ist, melden Sie sich beim Hinzufügen dieses Benutzers zum Testcontrollercomputer ab, oder führen Sie einen Neustart aus.
-   - NULL-Kennwörter werden für Benutzerkonten nicht unterstützt.
-   - Wenn Sie den Datenadapter und Adapter für diagnostische Daten für IntelliTrace oder die Netzwerkemulation verwenden möchten, muss das Benutzerkonto Mitglied der Gruppe "Administratoren" sein. Wenn der Computer, auf dem der Test-Agent ausgeführt wird, ein Betriebssystem verwendet, das ein Benutzerkonto mit den geringsten Berechtigungen hat, müssen Sie es ebenfalls als Administrator (erhöht) ausführen. Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.
-   - Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht mit dem Controller ausgeführt werden.
+   > - NULL-Kennwörter werden für Benutzerkonten nicht unterstützt.
+   > - Wenn Sie den Datenadapter und Adapter für diagnostische Daten für IntelliTrace oder die Netzwerkemulation verwenden möchten, muss das Benutzerkonto Mitglied der Gruppe "Administratoren" sein. Wenn der Computer, auf dem der Test-Agent ausgeführt wird, ein Betriebssystem verwendet, das ein Benutzerkonto mit den geringsten Berechtigungen hat, müssen Sie es ebenfalls als Administrator (erhöht) ausführen. Wenn der Agent-Benutzername nicht im Agent-Dienst vorhanden ist, wird er hinzugefügt. Dafür sind Berechtigungen für den Testcontroller erforderlich.
+   > - Der Benutzer, der den Testcontroller verwenden möchte, muss im Benutzerkonto des Testcontrollers angemeldet sein. Andernfalls können die Tests nicht mit dem Controller ausgeführt werden.
 
 4. Um sicherzustellen, dass ein Computer mit einem Test-Agent nach dem Neustart Tests ausführen kann, richten Sie den Computer für die automatische Anmeldung als Test-Agent-Benutzer ein. Klicken Sie auf **Automatisch anmelden**. Dadurch werden der Benutzername und das Kennwort in verschlüsselter Form in der Registrierung gespeichert.
 
    > [!NOTE]
    > Wenn Sie die Verbindung mit der Lab-Umgebung über einen Remotedesktop oder eine Gast-basierte Verbindung hergestellt haben, ist es möglich, dass diese häufig und unerwartet getrennt wird. Eine mögliche Ursache des Verbindungsverlusts besteht darin, dass der Computer für die automatische Anmeldung am Netzwerk konfiguriert ist.
 
-7. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
+5. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
 
    > [!WARNING]
    > Durch die automatische Anmeldung und das Deaktivieren des Bildschirmschoners entstehen Sicherheitsrisiken. Wenn Sie die automatische Anmeldung aktivieren, ermöglichen Sie es anderen Benutzern, den betreffenden Computer zu starten und das Konto zu verwenden, das automatisch angemeldet wird. Wenn Sie den Bildschirmschoner deaktivieren, wird der Benutzer möglicherweise nicht aufgefordert, sich anzumelden, um die Sperre des Computers aufzuheben. So kann jede Person mit physischem Zugang zum Computer auf den Computer zugreifen. Wenn Sie diese Funktionen auf einem Computer aktivieren, sollten Sie sicherstellen, dass der Computer physikalisch sicher ist. Ein solcher Computer befindet sich z. B. in einem physikalisch sicheren Labor. Durch Deaktivieren des Kontrollkästchens **Sicherstellen, dass der Bildschirmschoner deaktiviert ist** wird der Bildschirmschoner nicht aktiviert.
 
    Zum Ausführen des Agents als Dient, können Sie dieses Tool verwenden und **Dienst** auswählen.
 
-8. Klicken Sie auf **Einstellungen übernehmen**, um die Änderungen zu übernehmen.
+6. Klicken Sie auf **Einstellungen übernehmen**, um die Änderungen zu übernehmen.
 
    Das Dialogfeld **Konfigurationszusammenfassung** wird angezeigt, in dem der Status der einzelnen Schritte zum Konfigurieren des Test-Agents angezeigt wird.
 
-9. Klicken Sie zum Schließen des Dialogfelds **Konfigurationszusammenfassung** auf **Schließen**. Klicken Sie dann erneut auf **Schließen**, um das **Test-Agent-Konfigurationstool** zu schließen.
+7. Klicken Sie zum Schließen des Dialogfelds **Konfigurationszusammenfassung** auf **Schließen**. Klicken Sie dann erneut auf **Schließen**, um das **Test-Agent-Konfigurationstool** zu schließen.
 
    > [!NOTE]
    > Auf dem Computer wird ein Infobereichssymbol für einen als Prozess ausgeführten Test-Agent angezeigt. Es zeigt den Status des Test-Agents an. Sie können mit diesem Tool den Agent starten, beenden oder neu starten, wenn er als Prozess ausgeführt wird. Klicken sie zum Starten des Test-Agents als Prozess, wenn dieser nicht ausgeführt wird, auf **Start** > **Visual Studio** > **Microsoft Visual Studio Test Agent**.

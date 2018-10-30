@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885656"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
@@ -39,15 +39,16 @@ Eine der Prinzipal Anwendungen von DSLs ist Programmcode, Konfigurationsdateien 
 
 Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, die die grundlegenden Vorgänge zum Erstellen und verwenden eine domänenspezifische Sprache, in Visual Studio eingeführt werden.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Modellierungs-SDK für Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Modellierungs-SDK für Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Der experimentellen Visual Studio wird im folgende Beispiel ähneln:
 
 ### <a name="the-content-of-a-model"></a>Der Inhalt eines Modells
 
-Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modell ** Elemente* und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.
+Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modell*<em>Elemente</em> und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.
 
 Die DSL-Definition kann angeben, wie das Modell in einem Diagramm angezeigt wird. Sie können aus verschiedensten Arten von Formen und Konnektoren auswählen. Sie können angeben, dass einige Formen innerhalb anderer Formen angezeigt werden.
 
@@ -246,39 +247,39 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
 ##### <a name="to-add-properties-and-display-them"></a>Hinzufügen von Eigenschaften und anzeigen
 
-1.  Fügen Sie die Eigenschaften an.
+1. Fügen Sie die Eigenschaften an.
 
-    1.  In der DSL-Definitionsdiagramm mit der Maustaste der **Person** Domänenklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Domäneneigenschaft**.
+   1.  In der DSL-Definitionsdiagramm mit der Maustaste der **Person** Domänenklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Domäneneigenschaft**.
 
-    2.  Geben Sie eine Liste der neuen Eigenschaftennamen, z. B. **Geburtsdatum** und **Tod**. Drücken Sie **EINGABETASTE** nach jeder Eingabe.
+   2.  Geben Sie eine Liste der neuen Eigenschaftennamen, z. B. **Geburtsdatum** und **Tod**. Drücken Sie **EINGABETASTE** nach jeder Eingabe.
 
-2.  Hinzufügen von Decorator-Elemente, die die Eigenschaften in der Form angezeigt werden.
+2. Hinzufügen von Decorator-Elemente, die die Eigenschaften in der Form angezeigt werden.
 
-    1.  Führen Sie die graue Linie, die von der Person-Domänenklasse der anderen Seite des Diagramms erweitert. Dies ist einer diagrammelementzuordnung. Die Domänenklasse verknüpft mit einer formklasse.
+   1.  Führen Sie die graue Linie, die von der Person-Domänenklasse der anderen Seite des Diagramms erweitert. Dies ist einer diagrammelementzuordnung. Die Domänenklasse verknüpft mit einer formklasse.
 
-    2.  Mit der rechten Maustaste in dieser formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**.
+   2.  Mit der rechten Maustaste in dieser formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Text-Decorator**.
 
-    3.  Fügen Sie zwei Decorator-Elemente mit Namen wie z. B. **BirthDecorator** und **DeathDecorator**.
+   3.  Fügen Sie zwei Decorator-Elemente mit Namen wie z. B. **BirthDecorator** und **DeathDecorator**.
 
-    4.  Wählen Sie jedes neue Decorator-Element, und legen Sie im Fenster Eigenschaften die **Position** Feld. Dies bestimmt, in der Eigenschaftswert für die Domäne in der Form angezeigt werden soll. Legen Sie z. B. **InnerBottomLeft** und **InnerBottomRight**.
+   4.  Wählen Sie jedes neue Decorator-Element, und legen Sie im Fenster Eigenschaften die **Position** Feld. Dies bestimmt, in der Eigenschaftswert für die Domäne in der Form angezeigt werden soll. Legen Sie z. B. **InnerBottomLeft** und **InnerBottomRight**.
 
-         ![Definition einer Depot-Form](../modeling/media/familyt_compartment.png)
+        ![Definition einer Depot-Form](../modeling/media/familyt_compartment.png)
 
-3.  Ordnen Sie die Eigenschaften der Decorator-Elemente.
+3. Ordnen Sie die Eigenschaften der Decorator-Elemente.
 
-    1.  Öffnen Sie das Fenster "DSL-Details" ein. Es ist in der Regel auf einer Registerkarte neben dem Fenster "Ausgabe". Wenn Sie es nicht angezeigt der **Ansicht** , zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.
+   1.  Öffnen Sie das Fenster "DSL-Details" ein. Es ist in der Regel auf einer Registerkarte neben dem Fenster "Ausgabe". Wenn Sie es nicht angezeigt der **Ansicht** , zeigen Sie auf **Other Windows**, und klicken Sie dann auf **DSL-Details**.
 
-    2.  Klicken Sie auf die DSL-Definitionsdiagramm auf der Verbindungslinie der **Person** Domänenklasse der Shape-Klasse.
+   2.  Klicken Sie auf die DSL-Definitionsdiagramm auf der Verbindungslinie der **Person** Domänenklasse der Shape-Klasse.
 
-    3.  In **DSL-Details**auf die **Decorator-Zuordnungen** Registerkarte, klicken Sie auf das Kontrollkästchen auf einem nicht zugeordneten Decorator-Element. In **Anzeigeeigenschaft**, wählen Sie die Eigenschaft "Domain", er zugeordnet soll. Beispielsweise **BirthDecorator** zu **Geburtsdatum**.
+   3.  In **DSL-Details**auf die **Decorator-Zuordnungen** Registerkarte, klicken Sie auf das Kontrollkästchen auf einem nicht zugeordneten Decorator-Element. In **Anzeigeeigenschaft**, wählen Sie die Eigenschaft "Domain", er zugeordnet soll. Beispielsweise **BirthDecorator** zu **Geburtsdatum**.
 
-4.  Speichern Sie die DSL, klicken Sie auf alle Vorlagen transformieren, und drücken Sie F5.
+4. Speichern Sie die DSL, klicken Sie auf alle Vorlagen transformieren, und drücken Sie F5.
 
-5.  In einem Diagramm für den Beispiel-Modell stellen Sie sicher, dass Sie können jetzt klicken Sie auf die Positionen, die Sie ausgewählt haben, und geben Sie Werte in diesen. Darüber hinaus bei der Auswahl einer **Person** Form, die Fenster "Eigenschaften" zeigt die neuen Eigenschaften, Geburtsdatum und Tod.
+5. In einem Diagramm für den Beispiel-Modell stellen Sie sicher, dass Sie können jetzt klicken Sie auf die Positionen, die Sie ausgewählt haben, und geben Sie Werte in diesen. Darüber hinaus bei der Auswahl einer **Person** Form, die Fenster "Eigenschaften" zeigt die neuen Eigenschaften, Geburtsdatum und Tod.
 
-6.  In einer TT-Datei können Sie Code hinzufügen, die die Eigenschaften jeder Person erhält.
+6. In einer TT-Datei können Sie Code hinzufügen, die die Eigenschaften jeder Person erhält.
 
- ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
+   ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Neue Klassen definieren
  Sie können die Domänenklassen und Beziehungen zu einem Modell hinzufügen. Beispielsweise könnten Sie eine neue Klasse zum Darstellen von Metropolen und eine neue Beziehung aus, um darzustellen, dass eine Person in einer Stadt kurzlebig erstellen.

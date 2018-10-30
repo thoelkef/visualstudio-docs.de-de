@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896444"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekte und Projektelementvorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben. 
@@ -41,7 +41,7 @@ ms.locfileid: "37118968"
  Weitere Informationen zu den Grundlagen von SharePoint finden Sie unter [Bausteine von SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=179404). Fortgeschrittene Benutzer können angepasste Projekt- und Projektelementvorlagen erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 ## <a name="project-templates"></a>Projektvorlagen
- Im Folgenden finden Sie eine Liste von SharePoint-Projektvorlagen. So zeigen Sie in der SharePoint-Projektvorlagen in Visual Studio an der **neues Projekt** Dialogfeld erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder  **Visual Basic**, und wählen Sie dann **2010**.  
+ Im Folgenden finden Sie eine Liste von SharePoint-Projektvorlagen. So zeigen Sie in der SharePoint-Projektvorlagen in Visual Studio an der **neues Projekt** Dialogfeld erweitern Sie die **SharePoint** Knoten entweder **Visual C#**  oder  **Visual Basic**, und wählen Sie dann **2010**.  
   
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010-Projekt
  Den Inhalt einer *SharePoint 2010-Projekt* in jeder SharePoint-Projektvorlage enthalten sind. Ein SharePoint 2010-Projekt enthält:  
@@ -95,17 +95,17 @@ ms.locfileid: "37118968"
 ### <a name="event-receiver"></a>Ereignisempfänger
  *Ereignisempfänger* Behandeln von Ereignissen für Elemente in der SharePoint-Website, z. B. wenn ein Element einer Liste hinzugefügt wird, wird beim Löschen eines Webelements oder Starten eines Workflows. Die Projektelementvorlage "Ereignisempfänger" ermöglicht die Behandlung folgender Elemente:  
   
--   Listenereignisse  
+- Listenereignisse  
   
--   Listenelementereignisse  
+- Listenelementereignisse  
   
--   Listen-E-Mail-Ereignisse  
+- Listen-E-Mail-Ereignisse  
   
--   Webereignisse  
+- Webereignisse  
   
--   Listenworkflowereignisse  
+- Listenworkflowereignisse  
   
- Erstellt das Projekt ereignisempfängerelement ein **Ereignisempfänger** eine einzelne Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im angegebenen Ordner die **Anpassung von SharePoint Assistenten**. Die Ereignisempfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie z. B. Dateien, Felder, Elemente, Listen, Anlagen, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Ereignisbehandlung](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  Erstellt das Projekt ereignisempfängerelement ein **Ereignisempfänger** eine einzelne Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im angegebenen Ordner die **Anpassung von SharePoint Assistenten**. Die Ereignisempfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie z. B. Dateien, Felder, Elemente, Listen, Anlagen, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Ereignisbehandlung](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>Liste  
  Bei einer Liste handelt es sich um eine Instanz einer wiederverwendbaren, grundlegenden SharePoint-Listendefinition, z. B. ein Kalender oder eine Aufgabenliste. Nach dem Hinzufügen einer Liste zu Ihrer Lösung können Sie mit dem Listen-Designer Websitespalten zur Liste hinzufügen und benutzerdefinierte Listenspalten erstellen. Dazu gehören Websitespalten aus Inhaltstypen. Sie können angeben, die *Ansicht* Liste, welche der Spalten, die in der Liste angezeigt wird. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) und [Baustein: Listen und Dokumentbibliotheken](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -125,13 +125,13 @@ ms.locfileid: "37118968"
 ### <a name="site-definition-farm-solution-only"></a>Sitedefinition (nur farmlösung)
  *Sitedefinition* -Projektelemente enthalten einen Websitedefinitionsordner, die die folgenden Dateien enthält:  
   
--   Eine ASPX-Standardseite, die als Standardwebseite für die Website verwendet wird.  
+- Eine ASPX-Standardseite, die als Standardwebseite für die Website verwendet wird.  
   
--   Ein *onet.xml* -Datei, die Komponenten der Website definiert.  
+- Ein *onet.xml* -Datei, die Komponenten der Website definiert.  
   
--   Eine Webtemp-XML-Datei, die der Websitedefinitionskonfigurationen, die in angezeigt werden. die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.  
+- Eine Webtemp-XML-Datei, die der Websitedefinitionskonfigurationen, die in angezeigt werden. die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.  
   
- Nach dem Hinzufügen einer Websitedefinition fügen Sie Code und Dateien hinzu, um Funktionen bereitzustellen. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von Websitedefinitionen für SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) und [Websitedefinitionen und-Konfigurationen](http://go.microsoft.com/fwlink/?LinkId=260554).  
+  Nach dem Hinzufügen einer Websitedefinition fügen Sie Code und Dateien hinzu, um Funktionen bereitzustellen. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von Websitedefinitionen für SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) und [Websitedefinitionen und-Konfigurationen](http://go.microsoft.com/fwlink/?LinkId=260554).  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>Zustandsautomatworkflow (nur farmlösung)
  Ein *Zustandsautomatworkflow* ist ein Satz von Business Logic Zuständen, Übergängen und Aktionen. Die Schritte in einem Zustandsautomatworkflow werden nicht nacheinander ausgeführt, sondern von Aktionen und Zuständen ausgelöst. Ebenso wie sequenzielle Workflows werden Zustandsautomatworkflows SharePoint-Elementen wie Listen und Dokumenten zugeordnet. Auch in diesem Fall können Sie Workflows auf Websiteebene (global) oder auf Listenebene (lokal) erstellen. Außerdem können Sie auswählen, ob ein Workflow automatisch oder manuell startet. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md), [Workflows in SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), und [Neuigkeiten: Verbesserungen des Workflows](http://go.microsoft.com/fwlink/?LinkId=179418).  

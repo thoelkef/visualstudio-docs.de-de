@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913968"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen Sie eine externe Liste in SharePoint mithilfe von Geschäftsdaten
 
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 - Hinzufügen einer bestimmten Finder-Methode.
 - Testen des Projekts an.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -232,12 +232,12 @@ Um die Kontakte in einer Liste anzuzeigen. der BDC-Dienst zu aktivieren, müssen
 
 5. In der `ContactService` -Klasse, ersetzen Sie die `ReadList` Methode durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Ruft Daten aus der Contacts-Tabelle der AdventureWorks-Datenbank ab.
+   - Ruft Daten aus der Contacts-Tabelle der AdventureWorks-Datenbank ab.
 
-    - Gibt eine Liste der Kontakt-Entitäten mit dem BDC-Dienst zurück.
+   - Gibt eine Liste der Kontakt-Entitäten mit dem BDC-Dienst zurück.
 
-    > [!NOTE]
-    > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+     > [!NOTE]
+     > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs
+title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a49723bb585f65ce544c0508bf886d9daba5c6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec0aefd8f59793fdd555ff0cc14f767c10e8972a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829910"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
-Bestimmt, ob die angegebene Debug-Adresse ein Sequenzpunkt ist.  
+Bestimmt, ob die angegebenen Debug-Adresse ein Sequenzpunkt ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int IsAddressSequencePoint(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Debuggen Sie die Adresse, die durch dargestellt ist die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ [in] Debuggen Sie die Adresse, die durch dargestellt wird die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Debug-Adresse ein Sequenzpunkt ist, gibt `S_OK`ist, andernfalls gibt `S_FALSE`.  
+ Wenn die debugadresse ein Sequenzpunkt ist, gibt `S_OK`ist, andernfalls gibt `S_FALSE`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  

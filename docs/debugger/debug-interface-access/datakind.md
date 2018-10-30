@@ -1,5 +1,5 @@
 ---
-title: DataKind | Microsoft Docs
+title: DataKind | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867623"
 ---
 # <a name="datakind"></a>DataKind
 Gibt an, die bestimmten Bereich eines Datenwerts.  
@@ -43,7 +43,7 @@ enum DataKind {
   
 ## <a name="elements"></a>Elements  
  DataIsUnknown  
- Symbol "Daten" kann nicht ermittelt werden.  
+ Symbol "Daten" kann nicht bestimmt werden.  
   
  DataIsLocal  
  Datenelement ist eine lokale Variable.  
@@ -55,16 +55,16 @@ enum DataKind {
  Datenelement ist ein formaler Parameter.  
   
  DataIsObjectPtr  
- Datenelement ist ein Objektzeiger (`this`).  
+ Datenelement ist einem Zeiger (`this`).  
   
  DataIsFileStatic  
- Datenelement ist eine Datei-bewertete Variable.  
+ Datenelement ist eine Variable im Bereich einer Datei.  
   
  DataIsGlobal  
  Datenelement ist eine globale Variable.  
   
  DataIsMember  
- Datenelement ist ein Objekt Membervariablen gespeichert.  
+ Datenelement ist eine Objektvariable des Elements.  
   
  DataIsStaticMember  
  Datenelement ist eine statische Klasse-Variable.  

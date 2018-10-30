@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948407"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Verwenden von Datentools in Visual Studio zum Entwickeln von Datenlösungen
 
@@ -33,7 +33,7 @@ Erfahren Sie, wie Sie Datentools in Visual Studio verwenden können, um Datenlö
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Erfahren Sie mehr über Visual Studio und die Tool- und API-Unterstützung von. NET Framework für die Entwicklung von Datenanwendungen</h3>
+                        <h3>Erfahren Sie mehr über Visual Studio und die Tool- und API-Unterstützung von. NET Framework für die Entwicklung von Datenanwendungen.</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Erfahren Sie, wie Sie Datentools in Visual Studio verwenden können, um Datenlö
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Erfahren Sie mehr über das Entwerfen, bereitstellen und Warten von Datenbanken mit SQL Server Data Tools</h3>
+                        <h3>Erfahren Sie mehr über das Entwerfen, Bereitstellen und Verwalten von Datenbanken mit SQL Server Data Tools.</h3>
                     </div>
                 </div>
             </div>

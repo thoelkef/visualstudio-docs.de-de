@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909795"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952102"
 
  Sie können die Einstellungen für textbasierte Toolfenster, z.B. das Fenster **Befehl**, das Fenster **Direkt** und das Fenster **Ausgabe**, im Bereich **Schriftarten und Farben** der Optionen unter **Umgebung** im Dialogfeld **Extras** ändern. Wenn in der Dropdownliste **Einstellungen anzeigen** der Eintrag **[Alle Texttoolfenster]** ausgewählt wurde, wird in den Dropdownlisten **Elementvordergrund** und **Elementhintergrund** die Standardeinstellung **Standard** angezeigt. Sie können auch festlegen, wie Text im Editor angezeigt werden soll.
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>So ändern Sie die Textgröße in textbasierten Toolfenstern und Editoren
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>So ändern Sie die Textgröße in textbasierten Toolfenstern und Editoren
 
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952102"
 6.  Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.
 
     > [!NOTE]
-    >  Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.
+    > Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.
 
 7.  Klicken Sie auf **OK**.
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952102"
  Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.
 
 > [!NOTE]
-> Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke **ALT+** Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.
+> Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke <strong>ALT+</strong>Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor
 
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952102"
 
  Zur Verbesserung der Benutzerfreundlichkeit und Barrierefreiheit der Symbolleisten können Sie Text zu den Symbolleisten-Schaltflächen hinzufügen.
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>So weisen Sie Symbolleisten-Schaltflächen Text zu
+### <a name="to-assign-text-to-toolbar-buttons"></a>So weisen Sie Symbolleisten-Schaltflächen Text zu
 
 1.  Wählen Sie im Menü **Extras** die Option **Anpassen**.
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952102"
 
 6.  Wählen Sie **Symbol und Text** aus.
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>So ändern Sie den in einer Schaltfläche angezeigten Text
+### <a name="to-modify-the-displayed-text-in-a-button"></a>So ändern Sie den in einer Schaltfläche angezeigten Text
 
 1.  Wählen Sie erneut **Auswahl ändern** aus.
 

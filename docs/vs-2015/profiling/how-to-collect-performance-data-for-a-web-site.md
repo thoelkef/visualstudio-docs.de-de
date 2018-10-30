@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840648"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
  Je nach Benutzerzugriffsberechtigungs-Einstellungen, die ein Administrator zur Verfügung gestellt hat, kann ein einzelner Benutzer über die Sicherheitsberechtigung zur Erstellung einer Profilersitzung auf dem Computer verfügen, der den ASP.NET-Prozess hostet. Die folgenden Beispiele veranschaulichen mögliche Unterschiede zwischen Benutzern:  
   
--   Einige Benutzer können auf erweiterte Profilerstellungsfeatures zugreifen, wenn der Administrator Treiber und Dienst gestartet hat.  
+- Einige Benutzer können auf erweiterte Profilerstellungsfeatures zugreifen, wenn der Administrator Treiber und Dienst gestartet hat.  
   
--   Domänenbenutzer können nur auf Beispiel-Profilerstellung zugreifen.  
+- Domänenbenutzer können nur auf Beispiel-Profilerstellung zugreifen.  
   
--   Einige Benutzer können den Zugriff auf Profilerstellung für alle anderen Benutzer verweigern.  
+- Einige Benutzer können den Zugriff auf Profilerstellung für alle anderen Benutzer verweigern.  
   
- Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Profilieren eines Websiteprojekts  
   
@@ -75,33 +75,33 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Profilieren einer Website ohne ein Projekt in Visual Studio zu öffnen  
   
-1.  Öffnen Sie [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Öffnen Sie [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
+2. Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
   
-3.  Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md).  
+3. Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md).  
   
-4.  Wählen Sie auf der zweiten Seite des Assistenten die Option **Profil einer ASP.NET- oder JavaScript-Anwendung erstellen** und klicken Sie dann auf **Weiter**.  
+4. Wählen Sie auf der zweiten Seite des Assistenten die Option **Profil einer ASP.NET- oder JavaScript-Anwendung erstellen** und klicken Sie dann auf **Weiter**.  
   
-5.  Geben Sie im Feld **Auf welcher URL oder welchem Pfad wird die Webanwendung ausgeführt?** auf der dritten Seite des Assistenten die URL der Startseite der Anwendung ein und klicken Sie dann auf **Weiter**.  
+5. Geben Sie im Feld **Auf welcher URL oder welchem Pfad wird die Webanwendung ausgeführt?** auf der dritten Seite des Assistenten die URL der Startseite der Anwendung ein und klicken Sie dann auf **Weiter**.  
   
-    -   Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
+   - Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
   
-    -   Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.  
+   - Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.  
   
-    -   Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).  
+   - Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).  
   
      Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Zielbinärdatei.  
   
-6.  Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
+6. Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   
-    -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
+   -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
   
-    -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
+   -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
   
-7.  Klicken Sie auf **Weiter**.  
+7. Klicken Sie auf **Weiter**.  
   
-8.  Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
+8. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
   
 9. Eine Leistungssitzung wird für die ASP.NET-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
   

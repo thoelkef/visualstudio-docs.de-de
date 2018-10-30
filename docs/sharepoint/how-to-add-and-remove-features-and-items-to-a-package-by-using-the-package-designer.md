@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935067"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die Standardfeatures von SharePoint auf das Paket in der Projektmappe. Sie können vor der letzten Bereitstellung hinzufügen und Entfernen von SharePoint-Projektelemente und Features so ändern Sie das SharePoint-Paket.  
@@ -36,21 +36,21 @@ ms.locfileid: "36756092"
   
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>So fügen Sie die SharePoint-Funktionen mit der Paket-Designer hinzu
   
-1.  Öffnen der **Paket-Designer**.  
+1. Öffnen der **Paket-Designer**.  
   
-     Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+    Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Fügen Sie ein oder mehrere SharePoint-Features durch eine oder mehrere der folgenden Schritte aus:  
+2. Fügen Sie ein oder mehrere SharePoint-Features durch eine oder mehrere der folgenden Schritte aus:  
   
-    1.  Doppelklicken Sie auf jedes Element in der **Elemente in der Lösung** Liste, die Sie hinzufügen möchten.  
+   1. Doppelklicken Sie auf jedes Element in der **Elemente in der Lösung** Liste, die Sie hinzufügen möchten.  
   
-    2.  Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
+   2. Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
   
-    3.  Wählen Sie die **alle hinzufügen** Schaltfläche (>>) alle Elemente auf einmal hinzuzufügen.  
+   3. Wählen Sie die **alle hinzufügen** Schaltfläche (>>) alle Elemente auf einmal hinzuzufügen.  
   
-     Sie können z. B. doppelklicken, ein Element in der **Elemente in der Lösung** Liste aus, um das Hinzufügen der **Elemente in diesem Paket** Liste.  
+      Sie können z. B. doppelklicken, ein Element in der **Elemente in der Lösung** Liste aus, um das Hinzufügen der **Elemente in diesem Paket** Liste.  
   
-     Die SharePoint-Projektelemente und-Funktionen werden in der **Elemente in diesem Paket** Liste.  
+      Die SharePoint-Projektelemente und-Funktionen werden in der **Elemente in diesem Paket** Liste.  
   
 ## <a name="remove-features-from-a-sharepoint-package"></a>Entfernen von Funktionen aus einer SharePoint-Paket  
  Sie können den Paket-Designer zum Entfernen von Features zu einem SharePoint-Paket verwenden.  

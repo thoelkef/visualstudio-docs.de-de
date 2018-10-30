@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942739"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -163,16 +163,16 @@ Antwort: Bearbeiten Sie zuerst die *.gitignore*-Datei, um den Ordner auszuschlie
 
     ![Django-Befehle im Kontextmenü eines Python-Projekts](media/django/step01-django-commands-menu.png)
 
-1. Das Projekt enthält einen Ordner, dessen Name mit dem Projektnamen übereinstimmt. Er enthält die Basisdateien des Django-Projekts:
+2. Das Projekt enthält einen Ordner, dessen Name mit dem Projektnamen übereinstimmt. Er enthält die Basisdateien des Django-Projekts:
 
-    - *__init.py*: Eine leere Datei, durch die Python mitgeteilt wird, dass der Ordner ein Python-Paket ist.
-    - *wsgi.py*: Ein Einstiegspunkt für WSGI-kompatible Webserver zur Bereitstellung des Projekts. Diese Datei bleibt in der Regel unverändert, da sie die Hooks für Produktionswebserver bereitstellt.
-    - *settings.py*: Enthält Einstellungen für das Django-Projekt, die bei der Entwicklung einer Web-App geändert werden.
-    - *urls.py*: Enthält eine Tabelle mit den Inhalten des Django-Projekts, die auch bei der Entwicklung geändert wird.
+   - *__init.py*: Eine leere Datei, durch die Python mitgeteilt wird, dass der Ordner ein Python-Paket ist.
+   - *wsgi.py*: Ein Einstiegspunkt für WSGI-kompatible Webserver zur Bereitstellung des Projekts. Diese Datei bleibt in der Regel unverändert, da sie die Hooks für Produktionswebserver bereitstellt.
+   - *settings.py*: Enthält Einstellungen für das Django-Projekt, die bei der Entwicklung einer Web-App geändert werden.
+   - *urls.py*: Enthält eine Tabelle mit den Inhalten des Django-Projekts, die auch bei der Entwicklung geändert wird.
 
-    ![Django-Projektdateien im Projektmappen-Explorer](media/django/step01-django-project-in-solution-explorer.png)
+     ![Django-Projektdateien im Projektmappen-Explorer](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Wie bereits erwähnt wird dem Projekt durch die Visual Studio-Vorlage auch eine *requirements.txt*-Datei hinzugefügt, in der die Paketabhängigkeit für Django angegeben wird. Wegen dieser Datei werden Sie bei der erstmaligen Erstellung des Projekts zum Erstellen einer virtuellen Umgebung aufgefordert.
+3. Wie bereits erwähnt wird dem Projekt durch die Visual Studio-Vorlage auch eine *requirements.txt*-Datei hinzugefügt, in der die Paketabhängigkeit für Django angegeben wird. Wegen dieser Datei werden Sie bei der erstmaligen Erstellung des Projekts zum Erstellen einer virtuellen Umgebung aufgefordert.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Frage: Kann Visual Studio eine „requirements.txt“-Datei aus einer virtuellen Umgebung generieren, nachdem ich andere Pakete installiert habe?
 

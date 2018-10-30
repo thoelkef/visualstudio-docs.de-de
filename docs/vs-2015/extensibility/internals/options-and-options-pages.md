@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816351"
 ---
 # <a name="options-and-options-pages"></a>Optionen und Optionsseiten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Auf **Optionen** auf die **Tools** Menü geöffnet wird die **Optionen** Dialogf
 ## <a name="option-attributes-and-layout"></a>Optionsattribute und Layout  
  Die Benutzeroberfläche (UI), die die Seite enthält bestimmt die Darstellung der Optionen in einer benutzerdefinierten Optionen. Das Layout, Bezeichnung und Beschreibung der Optionen in einer generischen Optionen werden durch die folgenden Attribute bestimmt:  
   
--   <xref:System.ComponentModel.CategoryAttribute> Bestimmt die Kategorie der Option.  
+- <xref:System.ComponentModel.CategoryAttribute> Bestimmt die Kategorie der Option.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> Bestimmt den Anzeigenamen der Option.  
+- <xref:System.ComponentModel.DisplayNameAttribute> Bestimmt den Anzeigenamen der Option.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> Bestimmt, die Beschreibung der Option.  
+- <xref:System.ComponentModel.DescriptionAttribute> Bestimmt, die Beschreibung der Option.  
   
-    > [!NOTE]
-    >  Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und werden definiert, der [verwalteten projektbeispiel](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und werden definiert, der [verwalteten projektbeispiel](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Betrachten Sie das folgende Codefragment:  
+  Betrachten Sie das folgende Codefragment:  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- Die OptionInteger-Option wird angezeigt, auf der Seite "Optionen" als **Integer-Option** in die **Meine Optionen** Kategorie. Wenn die Option ausgewählt ist, die Beschreibung und den **Meine ganze Zahl Option**, in das Beschreibungsfeld angezeigt wird.  
+  Die OptionInteger-Option wird angezeigt, auf der Seite "Optionen" als **Integer-Option** in die **Meine Optionen** Kategorie. Wenn die Option ausgewählt ist, die Beschreibung und den **Meine ganze Zahl Option**, in das Beschreibungsfeld angezeigt wird.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Zugreifen auf Optionsseiten aus einem anderen VSPackage  
  Eine VSPackage, die hostet und verwaltet eine Seite mit Optionen kann programmgesteuert aus einem anderen VSPackage über das Automatisierungsmodell zugegriffen werden. Beispielsweise wird in den folgenden Code eine VSPackage registriert, als Host für eine Optionsseite.  

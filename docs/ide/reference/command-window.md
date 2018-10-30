@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905949"
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
@@ -55,7 +55,7 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
  Die folgenden Tastenkombinationen erleichtern Ihnen die Navigation im Befehlsmodus.
 
 |Aktion|Cursorplatzierung|Schlüsselbindung|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |Der Reihe nach durch die Liste der zuvor eingegebenen Befehle wechseln|Eingabezeile|NACH-OBEN- & NACH-UNTEN-TASTE|
 |Im Fenster einen Bildlauf nach oben durchführen|Inhalt im Befehlsfenster|STRG+NACH-OBEN|
 |Im Fenster einen Bildlauf nach unten durchführen|Inhalt im Befehlsfenster|NACH-UNTEN oder STRG+NACH-UNTEN|
@@ -114,5 +114,5 @@ Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert ver
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

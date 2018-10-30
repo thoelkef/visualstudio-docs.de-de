@@ -1,6 +1,6 @@
 ---
-title: Installieren von KI-Tools für Visual Studio
-description: Installieren von KI-Tools für Visual Studio
+title: Installieren von KI-Tools
+description: Beschreibt, wie Visual Studio Tools for AI installiert werden.
 keywords: KI, Visual Studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303108"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459763"
 ---
 # <a name="installation"></a>Installation
 
@@ -27,19 +27,20 @@ Visual Studio-Tools für Künstliche Intelligenz (KI) können auf 64-Bit-Windows
 
 Diese Erweiterung gilt für Visual Studio 2015 und Visual Studio 2017 in der Community Edition oder höher.
 
-Laden Sie die Tools zur Installation aus dem [Visual Studio Marketplace](http://aka.ms/vstoolsforai) oder direkt in Visual Studio herunter.
+Sie können die Tools aus [Visual Studio Marketplace](http://aka.ms/vstoolsforai) oder direkt in Visual Studio herunterladen:
 
-1. **Tools** > **Erweiterungen und Updates**
+1. Wählen Sie **Tools** > **Erweiterungen und Updates** aus.
 
-![Installieren Sie CUDA unter Windows.](media\installation\extensions.png)
+   ![Menü „Erweiterungen und Updates“ Visual Studio](media/installation/extensions.png)
 
-1. **Suchen Sie** in der oberen rechten Ecke nach „Tools für KI“.
-2. Klicken Sie auf **Visual Studio-Tools für KI**.
-3. Klicken Sie auf **Download**.
+2. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite **Online** aus.
+3. Geben Sie im Suchfeld oben rechts "tools for ai" ein.
+4. Wählen Sie **Visual Studio Tools for AI** aus den Ergebnissen aus.
+5. Klicken Sie auf **Download**.
 
 ## <a name="prepare-your-local-machine"></a>Vorbereiten Ihres lokalen Computers
 
-Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, sollten Sie sicherstellen, dass die neusten zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert sind. Außerdem sollten Sie sicherstellen, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und bzw. oder Chainer installiert sind.
+Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen Sie sicher, dass die zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob Sie die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert haben. Außerdem sollten Sie sicherstellen, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und Chainer installiert sind.
 
 > [!NOTE]
 > Die Einführung in die Software in den folgenden Abschnitten sind Auszüge aus den jeweiligen Websites.
@@ -50,9 +51,7 @@ Deep Learning-Frameworks nutzen die NVIDIA-GPU, um Computer schnell und genau le
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) ist eine von NVIDIA erfundene Plattform für paralleles Computing und ein Programmiermodell.
-Mithilfe dieses Tools können Sie die Computing-Leistung deutlich erhöhen, indem Sie die Leistung der GPU nutzen.
-Derzeit ist das CUDA-Toolkit 8.0 für Deep Learning-Frameworks erforderlich.
+[CUDA](https://developer.nvidia.com/cuda-zone) ist eine von NVIDIA erfundene Plattform für paralleles Computing und ein Programmiermodell. Mithilfe dieses Tools können Sie die Computing-Leistung deutlich erhöhen, indem Sie die Leistung der GPU nutzen. Derzeit ist das CUDA-Toolkit 8.0 für Deep Learning-Frameworks erforderlich.
 
 So installieren Sie CUDA
 
@@ -60,7 +59,7 @@ So installieren Sie CUDA
 - Achten Sie darauf, auch die CUDA-Laufzeitbibliotheken zu installieren, und fügen Sie anschließend den Umgebungsvariablen „%PATH%“ oder „$Path“ den Pfad der CUDA-Binärdatei hinzu.
 - Unter Windows lautet der Pfad standardmäßig wie folgt: „C:\Programme\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin“.
 
-![Installieren Sie CUDA unter Windows.](media\installation\install_cuda_win.png)
+![Installieren von CUDA unter Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python ist bis heute die führende Programmiersprache für Deep Learning-Anwendu
 
 Deep Learning-Frameworks benötigen pip für die Installation.
 
-![Installieren Sie Python unter Windows](media\installation\install_python_win.png)
+![Installieren von Python unter Windows](media/installation/install_python_win.png)
 
 Anschließend sollten Sie prüfen, ob Python 3.5 richtig installiert ist, und aktualisieren Sie pip auf die neuste Version, indem Sie den folgenden Befehl über ein Terminal ausführen:
 
@@ -121,8 +120,7 @@ Erfahren Sie mehr über die Installation von [Python für Visual Studio-Tools](.
 
 - **NumPy** ein allgemeines Paket für die Verarbeitung von Arrays, dass dafür entwickelt wurde, große mehrdimensionale Arrays von beliebigen Aufzeichnungen zu bearbeiten, ohne dabei im Hinblick auf kleinere mehrdimensionale Arrays Geschwindigkeit einbüßen zu müssen.
 
-- 
-  **SciPy** („Sei Pie“ ausgesprochen) ist eine von NumPy abhängige Open Source-Software für die Bereiche Mathematik, Wissenschaft und Ingenieurwesen. SciPy enthält jetzt schon ab Version 1.0.0 offiziell vorkompilierte Wheel-Pakete für Windows.
+- **SciPy** („Sei Pie“ ausgesprochen) ist eine von NumPy abhängige Open Source-Software für die Bereiche Mathematik, Wissenschaft und Ingenieurwesen. SciPy enthält jetzt schon ab Version 1.0.0 offiziell vorkompilierte Wheel-Pakete für Windows.
 
 Führen Sie den folgenden Befehl über ein Terminal aus, um NumPy und SciPy zu installieren:
 

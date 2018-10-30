@@ -15,58 +15,58 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885706"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisieren Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
   
--   Registrieren Sie die neue textmarkierung, sodass andere Tools, die darauf zugreifen können  
+- Registrieren Sie die neue textmarkierung, sodass andere Tools, die darauf zugreifen können  
   
--   Geben Sie einen Standardimplementierung und Konfiguration der textmarkierung  
+- Geben Sie einen Standardimplementierung und Konfiguration der textmarkierung  
   
--   Erstellen ein Diensts, der von anderen Prozessen verwendet werden kann, zu der textmarkierung verwenden  
+- Erstellen ein Diensts, der von anderen Prozessen verwendet werden kann, zu der textmarkierung verwenden  
   
- Weitere Informationen darüber, wie Sie eine textmarkierung für einen Codebereich gelten, finden Sie unter [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md).  
+  Weitere Informationen darüber, wie Sie eine textmarkierung für einen Codebereich gelten, finden Sie unter [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Um eine benutzerdefinierte Markierung zu registrieren.  
   
-1.  Erstellen Sie einen Registrierungseintrag wie folgt:  
+1. Erstellen Sie einen Registrierungseintrag wie folgt:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >* ist eine `GUID` zum Identifizieren des Markers, der hinzugefügt wird  
+    <em>\<MarkerGUID ></em>ist eine `GUID` zum Identifizieren des Markers, der hinzugefügt wird  
   
-     *\<Version >* ist die Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], z. B. 8.0  
+    *\<Version >* ist die Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], z. B. 8.0  
   
-     *\<PackageGUID >* ist die GUID des VSPackage das Automatisierungsobjekt implementieren.  
+    *\<PackageGUID >* ist die GUID des VSPackage das Automatisierungsobjekt implementieren.  
   
-    > [!NOTE]
-    >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die Visual Studio-Shell, können Sie auch weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die Visual Studio-Shell, können Sie auch weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Erstellen Sie vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
+2. Erstellen Sie vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
   
-    -   (Standard)  
+   -   (Standard)  
   
-    -   Dienst  
+   -   Dienst  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Package  
+   -   Package  
   
-    -   `Default` ist eine optionale Eingabe des Typs REG_SZ. Wenn festgelegt, ist der Wert des Eintrags, eine Zeichenfolge, enthält einige nützliche identifizierende Informationen, z. B. "benutzerdefinierte Textmarkierung" auf.  
+   -   `Default` ist eine optionale Eingabe des Typs REG_SZ. Wenn festgelegt, ist der Wert des Eintrags, eine Zeichenfolge, enthält einige nützliche identifizierende Informationen, z. B. "benutzerdefinierte Textmarkierung" auf.  
   
-    -   `Service` ist ein Eintrag des Typs REG_SZ enthält die GUID-Zeichenfolge des Diensts, der die benutzerdefinierten textmarkierung von proffering bietet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` ist ein Eintrag des Typs REG_SZ enthält die GUID-Zeichenfolge des Diensts, der die benutzerdefinierten textmarkierung von proffering bietet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` Dies ist für ein Eintrag vom Typ: REG_SZ die Ressourcen-ID mit dem Namen der benutzerdefinierten textmarkierung enthält. Das Format ist #YYYY.  
+   -   `DisplayName` Dies ist für ein Eintrag vom Typ: REG_SZ die Ressourcen-ID mit dem Namen der benutzerdefinierten textmarkierung enthält. Das Format ist #YYYY.  
   
-    -   `Package` ist der Eintrag des Typs REG_SZ, enthält die `GUID` des VSPackage, das der Dienst bietet Service aufgeführt. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` ist der Eintrag des Typs REG_SZ, enthält die `GUID` des VSPackage, das der Dienst bietet Service aufgeführt. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Erstellen Sie einen benutzerdefinierten Text-marker  
   

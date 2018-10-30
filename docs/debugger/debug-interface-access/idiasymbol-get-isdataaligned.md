@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
+title: 'Idiasymbol:: Get_isdataaligned | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2888ce16c64b12ad846289148412733b18bc2500
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837801"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-Ruft ein Flag, das angibt, ob es sich bei der benutzerdefinierten Typ (UDT) auf einigen bestimmten Speicher-Begrenzung ausgerichtet wurde ab.  
+Ruft ein Flag, das angibt, ob es sich bei der benutzerdefinierten Typ (UDT) verfügt über einige bestimmte Speichergrenze ausgerichtet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,16 +34,16 @@ HRESULT get_isDataAligned(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn der UDT auf einige Begrenzung des Arbeitsspeichers; ausgerichtet wurden, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn der UDT hat einige Speichergrenze; ausgerichtet wurde, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft wird im Allgemeinen festgelegt, wenn die ausführbare Datei mit nicht standardmäßigen datenausrichtung kompiliert wird. Z. B. Microsoft C++-Compiler kann ändern, die datenausrichtung mit der Befehlszeilenoption/Zp*#*, wobei *#* ist ein Byte-Wert.  
+ Diese Eigenschaft wird in der Regel festgelegt, wenn die ausführbare Datei mit nicht standardmäßigen datenausrichtung kompiliert wird. Z. B. Microsoft C++-Compiler kann ändern, die datenausrichtung mit der Befehlszeilenoption/Zp<em>#</em>, wobei *#* ist ein Byte-Wert.  
   
 ## <a name="requirements"></a>Anforderungen  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942880"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
   
  Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. gültig ist, jedoch das von Visual Studio für Ihr Abonnement verwendete Lizenztoken nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:  
   
-1.  Sie haben Visual Studio nicht verwendet oder hatten für einen längeren Zeitraum keine Internetzugang.  
+1. Sie haben Visual Studio nicht verwendet oder hatten für einen längeren Zeitraum keine Internetzugang.  
   
-2.  Sie haben sich bei Visual Studio abgemeldet.  
+2. Sie haben sich bei Visual Studio abgemeldet.  
   
- Bevor die Lizenz abläuft, zeigt Visual Studio eine Warnmeldung an, in der Sie aufgefordert werden, Ihre Anmeldeinformationen erneut einzugeben.  
+   Bevor die Lizenz abläuft, zeigt Visual Studio eine Warnmeldung an, in der Sie aufgefordert werden, Ihre Anmeldeinformationen erneut einzugeben.  
   
- Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, läuft Ihr Token ab. In diesem Fall wird Ihnen über das das Dialogfeld „Kontoeinstellungen“ mitgeteilt, in wie vielen Tagen Ihr Token endgültig abläuft. Nachdem das Token abgelaufen ist, müssen Sie Ihre Anmeldeinformationen für dieses Konto oder diese Lizenz mithilfe einer anderen der oben genannten Methoden erneut eingeben, bevor Sie Visual Studio weiterhin verwenden können.  
+   Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, läuft Ihr Token ab. In diesem Fall wird Ihnen über das das Dialogfeld „Kontoeinstellungen“ mitgeteilt, in wie vielen Tagen Ihr Token endgültig abläuft. Nachdem das Token abgelaufen ist, müssen Sie Ihre Anmeldeinformationen für dieses Konto oder diese Lizenz mithilfe einer anderen der oben genannten Methoden erneut eingeben, bevor Sie Visual Studio weiterhin verwenden können.  
   
 > [!IMPORTANT]
 >  Bei Verwendung von Visual Studio für einen längeren Zeitraum in Umgebungen mit wenig oder keinem Internetzugang sollten Sie einen Product Key verwenden, um Visual Studio zu entsperren, um Unterbrechungen zu vermeiden.  

@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823527"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Übersicht über Visual Studio-Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ In diesem Abschnitt erfahren Sie mehr über die Funktionen von Visual Studio-Too
 ## <a name="superior-debugging"></a>Überlegenes Debugging  
  Verbinden Sie den leistungsfähigen Debugger von Visual Studio mit Ihrem Unity-Spiel zum Debuggen Ihrer C#-Skripts und DLLs unabhängig davon, ob es eigenständig oder im Unity-Editor ausgeführt wird. Sie können alle Debuggingfeatures nutzen, die Sie von Visual Studio erwarten:  
   
--   Haltepunkte einschließlich bedingter Haltepunkte.  
+- Haltepunkte einschließlich bedingter Haltepunkte.  
   
--   Auswertung komplexer Ausdrücke im Überwachungsfenster.  
+- Auswertung komplexer Ausdrücke im Überwachungsfenster.  
   
--   Überprüfen und Ändern des Werts von Variablen und Argumenten.  
+- Überprüfen und Ändern des Werts von Variablen und Argumenten.  
   
--   Detailsuchen in komplexen Objekten und Datenstrukturen.  
+- Detailsuchen in komplexen Objekten und Datenstrukturen.  
   
- Sie können auch Ihr Unity-Spiel auch dann debuggen, wenn es auf einem anderen Computer in Ihrem Netzwerk ausgeführt wird.  
+  Sie können auch Ihr Unity-Spiel auch dann debuggen, wenn es auf einem anderen Computer in Ihrem Netzwerk ausgeführt wird.  
   
 ## <a name="productivity"></a>Produktivität  
  Zusätzlich zur gewohnten Produktivität von Visual Studio beim Schreiben und Umgestalten von Code in C# bietet Visual Studio-Tools für Unity zusätzliche Produktivitätsfeatures für Unity-Entwickler.  

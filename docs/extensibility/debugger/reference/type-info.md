@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO | Microsoft Docs
+title: TYPE_INFO | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 610abe4bd01c47b09d6438508318e90a41f6802e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810515"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
-Diese Struktur gibt verschiedene Arten von Informationen zum Typ des Felds an.  
+Diese Struktur gibt die verschiedenen Arten von Informationen zum Typ des Felds an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,30 +51,30 @@ public struct TYPE_INFO {
  Ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) -Enumeration, der bestimmt, wie die Union zu interpretieren.  
   
  type.typeMeta  
- [Nur C++] Enthält eine [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_METADATA`.  
+ [Nur für C++] Enthält eine [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_METADATA`.  
   
  type.typePdb  
- [Nur C++] Enthält eine [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_PDB`.  
+ [Nur für C++] Enthält eine [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_PDB`.  
   
  type.typeBuilt  
- [Nur C++] Enthält eine [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_BUILT`.  
+ [Nur für C++] Enthält eine [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_BUILT`.  
   
  Type.Unused  
- Nicht verwendete Auffüllung.  
+ Nicht verwendete Abstand.  
   
  Typ  
  Die Namen der Union.  
   
  Unionmember  
- [C#] Marshallen, die diese Option, um den entsprechenden Strukturtyp basierend auf `dwKind`.  
+ [Nur in c#] Marshallen, die diese Option, um den entsprechenden Strukturtyp basierend auf `dwKind`.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode, wo in gefüllt. Die Interpretation der Inhalt der Struktur basiert auf den `dwKind` Feld.  
+ Diese Struktur wird zum Übergeben der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode, in denen es ausgefüllt wird. Wie der Inhalt der Struktur interpretiert werden basiert auf der `dwKind` Feld.  
   
 > [!NOTE]
->  [Nur C++] Wenn `dwKind` gleich `TYPE_KIND_BUILT`, ist es erforderlich, die Version des zugrunde liegenden [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt beim Zerstören von der `TYPE_INFO` Struktur. Hierzu wird `typeInfo.type.typeBuilt.pUnderlyingField->Release()` aufgerufen.  
+>  [Nur für C++] Wenn `dwKind` gleich `TYPE_KIND_BUILT`, ist es erforderlich, um den zugrunde liegenden freizugeben [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt beim Zerstören der `TYPE_INFO` Struktur. Hierzu wird `typeInfo.type.typeBuilt.pUnderlyingField->Release()` aufgerufen.  
   
- [C#] Die folgende Tabelle zeigt die Interpretation der `unionmember` Member für jede Art von Typ. Im Beispiel wird gezeigt, wie dies für eine Art von Datentyp ausgeführt wird.  
+ [Nur in c#] Die folgende Tabelle zeigt die Interpretation der `unionmember` Element für jede Art von Typ. Im Beispiel wird gezeigt, wie dies für eine Art von Typ erfolgt.  
   
 |`dwKind`|`unionmember` interpretiert als|  
 |--------------|----------------------------------|  
@@ -83,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Interpretieren der `unionmember` Mitglied der `TYPE_INFO` Struktur in C# geschrieben. Dieses Beispiel zeigt nur einen Typ zu interpretieren (`TYPE_KIND_METADATA`) jedoch andere auf genau die gleiche Weise interpretiert werden.  
+ In diesem Beispiel wird gezeigt, wie zum Interpretieren der `unionmember` Mitglied der `TYPE_INFO` Struktur in C# geschrieben. Dieses Beispiel zeigt nur eine Art interpretieren (`TYPE_KIND_METADATA`), aber die anderen auf genau die gleiche Weise interpretiert werden.  
   
 ```csharp  
 using System;  

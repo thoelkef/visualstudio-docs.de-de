@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925734"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der B
 ## <a name="target-build-order"></a>Buildreihenfolge für Ziele  
  Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Es gibt mehrere Möglichkeiten, um die Reihenfolge anzugeben, in der die Ziele ausgeführt werden.  
   
--   Ursprüngliche Ziele  
+- Ursprüngliche Ziele  
   
--   Standardziele  
+- Standardziele  
   
--   Erstes Ziel  
+- Erstes Ziel  
   
--   Zielabhängigkeiten  
+- Zielabhängigkeiten  
   
--   `BeforeTargets` und `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` und `AfterTargets` (MSBuild 4.0)  
   
- Ein Ziel wird während eines einzelnen Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.  
+  Ein Ziel wird während eines einzelnen Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.  
   
- Ausführlichere Informationen zur Buildreihenfolge für Ziele finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
+  Ausführlichere Informationen zur Buildreihenfolge für Ziele finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Zielbatchverarbeitung  
  Ein Zielelement kann ein `Outputs`-Attribut enthalten, das Metadaten im Format %(Metadaten) angibt. Wenn dies der Fall ist, führt MSBuild das Ziel einmal für jeden eindeutigen Metadatenwert aus und gruppiert die Elemente, die diesen Metadatenwert aufweisen. Ein auf ein Objekt angewendeter  

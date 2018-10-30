@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890165"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
  Bevor Sie das Code Coverage-Verhalten anpassen, berücksichtigen Sie einige Alternativen:  
   
--   *Ich möchte den Testcode aus den Code Coverage-Ergebnissen ausschließen und nur den Anwendungscode einbinden.*  
+- *Ich möchte den Testcode aus den Code Coverage-Ergebnissen ausschließen und nur den Anwendungscode einbinden.*  
   
-     Fügen Sie Ihrer Testklasse `ExcludeFromCodeCoverage Attribute` hinzu.  
+   Fügen Sie Ihrer Testklasse `ExcludeFromCodeCoverage Attribute` hinzu.  
   
--   *Ich möchte die Assemblys einschließen, die nicht Teil meiner Projektmappe sind.*  
+- *Ich möchte die Assemblys einschließen, die nicht Teil meiner Projektmappe sind.*  
   
-     Rufen Sie die PDB-Dateien für diese Assemblys ab, und kopieren Sie sie in den gleichen Ordner wie die Assemblydateien (DLL-Dateien).  
+   Rufen Sie die PDB-Dateien für diese Assemblys ab, und kopieren Sie sie in den gleichen Ordner wie die Assemblydateien (DLL-Dateien).  
   
- Um das Code Coverage-Verhalten anzupassen, kopieren Sie das [Beispiel am Ende dieses Themas](#sample), und fügen Sie es der Projektmappe mit der Dateierweiterung „.runsettings“ hinzu. Bearbeiten Sie das Beispiel Ihren eigenen Anforderungen entsprechend, und klicken Sie dann im Menü **Test** auf **Testeinstellungen** und auf **Datei für Testeinstellungen auswählen**. Im verbleibenden Teil dieses Themas werden diese Schritte ausführlicher beschrieben.  
+  Um das Code Coverage-Verhalten anzupassen, kopieren Sie das [Beispiel am Ende dieses Themas](#sample), und fügen Sie es der Projektmappe mit der Dateierweiterung „.runsettings“ hinzu. Bearbeiten Sie das Beispiel Ihren eigenen Anforderungen entsprechend, und klicken Sie dann im Menü **Test** auf **Testeinstellungen** und auf **Datei für Testeinstellungen auswählen**. Im verbleibenden Teil dieses Themas werden diese Schritte ausführlicher beschrieben.  
   
 ## <a name="the-runsettings-file"></a>RUNSETTINGS-Datei  
  Erweiterte Codeabdeckungseinstellungen werden in einer RUNSETTINGS-Datei angegeben. Dies ist die Konfigurationsdatei, die von den Tools für Unittests verwendet wird. Es wird empfohlen, das [Beispiel am Ende dieses Themas](#sample) zu kopieren und es an Ihre eigenen Anforderungen anzupassen.  
   
--   *Was ist mit der TESTSETTINGS-Datei geschehen, die in Visual Studio 2010 verwendet wurde?*  
+- *Was ist mit der TESTSETTINGS-Datei geschehen, die in Visual Studio 2010 verwendet wurde?*  
   
-     In Visual Studio 2010 wird die TESTSETTINGS-Datei nur auf Komponententests angewendet, die auf dem MSTest-Framework basieren. In Visual Studio 2012 können die Testtools nicht nur auf MSTest, sondern auch auf andere Frameworks wie NUnit und xUnit.net angewendet werden. Die TESTSETTINGS-Datei funktioniert nicht mit diesen Frameworks. Die RUNSETTINGS-Datei wurde entwickelt, um die Testtools so anzupassen, dass sie in allen Testframeworks funktionieren.  
+   In Visual Studio 2010 wird die TESTSETTINGS-Datei nur auf Komponententests angewendet, die auf dem MSTest-Framework basieren. In Visual Studio 2012 können die Testtools nicht nur auf MSTest, sondern auch auf andere Frameworks wie NUnit und xUnit.net angewendet werden. Die TESTSETTINGS-Datei funktioniert nicht mit diesen Frameworks. Die RUNSETTINGS-Datei wurde entwickelt, um die Testtools so anzupassen, dass sie in allen Testframeworks funktionieren.  
   
- Zur Anpassung der Code Coverage müssen Sie Ihrer Projektmappe eine RUNSETTINGS-Datei hinzufügen:  
+  Zur Anpassung der Code Coverage müssen Sie Ihrer Projektmappe eine RUNSETTINGS-Datei hinzufügen:  
   
-1.  Fügen Sie eine XML-Datei als Projektmappenelement mit der Erweiterung `.runsettings` hinzu:  
+1. Fügen Sie eine XML-Datei als Projektmappenelement mit der Erweiterung `.runsettings` hinzu:  
   
-     Wählen Sie im Projektmappen-Explorer im Kontextmenü der Projektmappe die Option **Hinzufügen**, **Neues Element** und **XML-Datei** aus. Speichern der Datei mit einer Namensendung wie z.B. `CodeCoverage.runsettings`  
+    Wählen Sie im Projektmappen-Explorer im Kontextmenü der Projektmappe die Option **Hinzufügen**, **Neues Element** und **XML-Datei** aus. Speichern der Datei mit einer Namensendung wie z.B. `CodeCoverage.runsettings`  
   
-2.  Fügen Sie den Inhalt hinzu, der im Beispiel am Ende dieses Themas enthalten ist, und passen Sie diesen dann, wie in den folgenden Abschnitten beschrieben, an Ihre Anforderungen an.  
+2. Fügen Sie den Inhalt hinzu, der im Beispiel am Ende dieses Themas enthalten ist, und passen Sie diesen dann, wie in den folgenden Abschnitten beschrieben, an Ihre Anforderungen an.  
   
-3.  Klicken Sie im Menü **Test** auf **Testeinstellungen**, **Datei für Testeinstellungen auswählen**, und wählen Sie dann die Datei aus.  
+3. Klicken Sie im Menü **Test** auf **Testeinstellungen**, **Datei für Testeinstellungen auswählen**, und wählen Sie dann die Datei aus.  
   
-4.  Wenn Sie jetzt **Code Coverage analysieren** ausführen, steuert die `.runsettings`-Datei das Verhalten. Vergessen Sie nicht, dass Sie die Code Coverage erneut ausführen müssen: Die vorherigen Abdeckungsergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder den Code aktualisieren.  
+4. Wenn Sie jetzt **Code Coverage analysieren** ausführen, steuert die `.runsettings`-Datei das Verhalten. Vergessen Sie nicht, dass Sie die Code Coverage erneut ausführen müssen: Die vorherigen Abdeckungsergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder den Code aktualisieren.  
   
-5.  Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**, **Testeinstellungen**.  
+5. Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**, **Testeinstellungen**.  
   
- ![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+   ![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
- Andere Aspekte von Komponententests können in derselben RUNSETTINGS-Datei konfiguriert werden. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).  
+   Andere Aspekte von Komponententests können in derselben RUNSETTINGS-Datei konfiguriert werden. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).  
   
 ### <a name="specifying-symbol-search-paths"></a>Festlegen von Symbolsuchpfaden  
  Die Codeabdeckung erfordert Symbole (PDB-Dateien), damit Assemblys zur Verfügung stehen. Für über die Projektmappe erstellte Assemblys werden Symboldateien im Allgemeinen neben den Binärdateien bereitgestellt, und die Codeabdeckung funktioniert automatisch. In einigen Fällen sollten Sie jedoch Assemblys, auf die verwiesen wird, in die Codeabdeckungsanalyse einschließen. In solchen Fällen befinden sich die PDB-Dateien nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der RUNSETTINGS-Datei angeben.  
@@ -106,21 +106,21 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke  
  In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:  
   
-1.  **\.\*** entspricht einer Zeichenfolge beliebiger Zeichen  
+1. **\.\\*** entspricht eine Zeichenfolge beliebiger Zeichen  
   
-2.  **\\.** entspricht einem Punkt „.“  
+2. **\\.** entspricht einem Punkt „.“  
   
-3.  **\\(   \\)** entspricht Klammern „(  )“  
+3. **\\(   \\)** entspricht Klammern „(  )“  
   
-4.  **\\\\** entspricht dem Dateipfadtrennzeichen „\\“  
+4. **\\\\** entspricht dem Dateipfadtrennzeichen „\\“  
   
-5.  **^** entspricht dem Anfang der Zeichenfolge  
+5. **^** entspricht dem Anfang der Zeichenfolge  
   
-6.  **$** entspricht dem Ende der Zeichenfolge  
+6. **$** entspricht dem Ende der Zeichenfolge  
   
- Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.  
+   Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.  
   
- Beispiel:  
+   Beispiel:  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Andere Möglichkeiten zum Einschließen oder Ausschließen von Elementen  
  Ein Codebeispiel finden Sie [am Ende dieses Themas](#sample).  
   
--   `ModulePath` – Assemblys, die durch den Assemblydateipfad angegeben werden.  
+- `ModulePath` – Assemblys, die durch den Assemblydateipfad angegeben werden.  
   
--   `CompanyName` – gleicht Assemblys nach dem Unternehmensattribut ab.  
+- `CompanyName` – gleicht Assemblys nach dem Unternehmensattribut ab.  
   
--   `PublicKeyToken` - gleicht signierte Assemblys nach dem öffentlichen Schlüsseltoken ab. Verwenden Sie beispielsweise `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`, um alle Visual Studio-Komponenten und -Erweiterungen abzugleichen.  
+- `PublicKeyToken` - gleicht signierte Assemblys nach dem öffentlichen Schlüsseltoken ab. Verwenden Sie beispielsweise `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`, um alle Visual Studio-Komponenten und -Erweiterungen abzugleichen.  
   
--   `Source` – gleicht Elemente nach dem Pfadnamen der Quelldatei ab, in der sie definiert sind.  
+- `Source` – gleicht Elemente nach dem Pfadnamen der Quelldatei ab, in der sie definiert sind.  
   
--   `Attribute` – gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs, einschließlich "Attribut", am Ende des Namens an.  
+- `Attribute` – gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs, einschließlich "Attribut", am Ende des Namens an.  
   
--   `Function` – gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab.  
+- `Function` – gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab.  
   
- **Abgleichen eines Funktionsnamens**  
+  **Abgleichen eines Funktionsnamens**  
   
- Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:  
+  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:  
   
--   C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
  ![Festlegen von Testlaufeinstellungen in einer Builddefinition](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
-1.  Vergewissern Sie sich, dass die RUNSETTINGS-Datei eingecheckt ist.  
+1. Vergewissern Sie sich, dass die RUNSETTINGS-Datei eingecheckt ist.  
   
-2.  Öffnen Sie im Team Explorer **Builds**, und fügen Sie dann eine Builddefinition hinzu oder bearbeiten Sie diese.  
+2. Öffnen Sie im Team Explorer **Builds**, und fügen Sie dann eine Builddefinition hinzu oder bearbeiten Sie diese.  
   
-3.  Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Wählen Sie die **RUNSETTINGS**-Datei aus.  
+3. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Wählen Sie die **RUNSETTINGS**-Datei aus.  
   
-    -   *Es erscheint jedoch die **Testassembly** anstelle der **Testquelle**. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
+   - <em>Aber **Testassembly</em>* angezeigt wird, anstelle von **Testquelle**. Beim Versuch, das Feld Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
-         Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
+      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
- Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
+   Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
   
 ##  <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:  
  Kopieren Sie diesen Code, und passen Sie ihn Ihren Anforderungen entsprechend an. Dies ist die standardmäßige RUNSETTINGS-Datei.  

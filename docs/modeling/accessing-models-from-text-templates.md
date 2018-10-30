@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882521"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und anderen Textdateien, die für DSL-Modelle basieren erstellen. Grundlegende Informationen zu Textvorlagen finden Sie [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Die Textvorlagen funktioniert im experimentellen Modus während des Debuggens Ihrer DSL, und es funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.
@@ -26,11 +26,11 @@ Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und ander
 
  So greifen Sie auf ein Modell aus einer Textvorlage
 
--   Legen Sie die Eigenschaft erben von der vorlagenanweisung auf <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Dies ermöglicht den Zugriff auf den Store.
+- Legen Sie die Eigenschaft erben von der vorlagenanweisung auf <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Dies ermöglicht den Zugriff auf den Store.
 
--   Geben Sie anweisungsprozessoren, für die DSL, die Sie zugreifen möchten. Dies lädt die Assemblys für Ihre DSL, damit Sie die Domänenklassen, Eigenschaften und Beziehungen im Code der Textvorlage verwenden können. Sie lädt auch die Modelldatei, die Sie angeben.
+- Geben Sie anweisungsprozessoren, für die DSL, die Sie zugreifen möchten. Dies lädt die Assemblys für Ihre DSL, damit Sie die Domänenklassen, Eigenschaften und Beziehungen im Code der Textvorlage verwenden können. Sie lädt auch die Modelldatei, die Sie angeben.
 
- Ein `.tt` Datei ähnlich wie im folgenden Beispiel wird im debuggingprojekt erstellt, wenn Sie eine neue Visual Studio-Projektmappe aus der minimale Sprache DSL-Vorlage erstellen.
+  Ein `.tt` Datei ähnlich wie im folgenden Beispiel wird im debuggingprojekt erstellt, wenn Sie eine neue Visual Studio-Projektmappe aus der minimale Sprache DSL-Vorlage erstellen.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  Beachten Sie, dass die folgenden Punkte bezüglich dieser Vorlage:
 
--   Der Domänenklassen, Eigenschaften und Beziehungen, die Sie in der DSL-Definition definiert haben, kann die Vorlage verwenden.
+- Der Domänenklassen, Eigenschaften und Beziehungen, die Sie in der DSL-Definition definiert haben, kann die Vorlage verwenden.
 
--   Lädt die Modelldatei, die Sie, in angeben die Vorlage, die `requires` Eigenschaft.
+- Lädt die Modelldatei, die Sie, in angeben die Vorlage, die `requires` Eigenschaft.
 
--   Eine Eigenschaft in `this` das Stammelement enthält. Von dort aus kann Ihren Code auf andere Elemente des Modells navigieren. Der Name der Eigenschaft ist in der Regel identisch mit der Domäne Stammklasse der DSL. In diesem Beispiel ist dies `this.ExampleModel`.
+- Eine Eigenschaft in `this` das Stammelement enthält. Von dort aus kann Ihren Code auf andere Elemente des Modells navigieren. Der Name der Eigenschaft ist in der Regel identisch mit der Domäne Stammklasse der DSL. In diesem Beispiel ist dies `this.ExampleModel`.
 
--   Obwohl die Sprache, in der die Codefragmente geschrieben sind C# -Code ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.
+- Obwohl die Sprache, in der die Codefragmente geschrieben sind C# -Code ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.
 
--   Zum Debuggen der Vorlage hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird in einer anderen Instanz von Visual Studio geöffnet, wenn eine Ausnahme auftritt. Wenn Sie in den Debugger zu einem bestimmten Zeitpunkt im Code unterbrechen möchten, fügen Sie die Anweisung `System.Diagnostics.Debugger.Break();`
+- Zum Debuggen der Vorlage hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird in einer anderen Instanz von Visual Studio geöffnet, wenn eine Ausnahme auftritt. Wenn Sie in den Debugger zu einem bestimmten Zeitpunkt im Code unterbrechen möchten, fügen Sie die Anweisung `System.Diagnostics.Debugger.Break();`
 
-     Weitere Informationen finden Sie unter [Debuggen einer T4-Textvorlage](../modeling/debugging-a-t4-text-template.md).
+   Weitere Informationen finden Sie unter [Debuggen einer T4-Textvorlage](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Informationen zu den DSL-anweisungsprozessor
  Die Vorlage kann die Domänenklassen verwenden, die Sie in Ihrer DSL-Definition definiert. Dies wird durch eine Direktive geschaltet zu, die in der Regel am Anfang der Vorlage angezeigt wird. Im vorherigen Beispiel gibt es folgenden Wert.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  Beachten Sie Folgendes:
 
-1.  Die `filename` und `validation` Parameter werden getrennt, mit ";" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.
+1. Die `filename` und `validation` Parameter werden getrennt, mit ";" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.
 
-2.  Die Liste der Validierungskategorien bestimmt, welche Überprüfungsmethoden ausgeführt werden. Mehrere Kategorien sollten getrennt werden, mit "&#124;" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.
+2. Die Liste der Validierungskategorien bestimmt, welche Überprüfungsmethoden ausgeführt werden. Mehrere Kategorien sollten getrennt werden, mit "&#124;" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.
 
- Wenn ein Fehler gefunden wird, wird Sie im Fenster "Fehler" gemeldet, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.
+   Wenn ein Fehler gefunden wird, wird Sie im Fenster "Fehler" gemeldet, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.
 
 ## <a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` Ruft `LoopTemplate.t4`, und klicken Sie dann die resultierende Datei in seine Segmente unterteilt. Beachten Sie, dass diese Vorlage nicht unbedingt eine Vorlage für die Modellierung zu werden, da das Modell nicht gelesen werden.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

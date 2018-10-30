@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Next | Microsoft Docs'
+title: 'Idiaenumsegments:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc61b94fb3443282c774719e21f7f7f072858bb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c9966555c673904a423de1b215e438b5db15479
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951027"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
-Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ HRESULT Next (
  [out] Gibt die Anzahl der Segmente in der abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn keine weiteren Segmente mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn keine weiteren Segmente mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

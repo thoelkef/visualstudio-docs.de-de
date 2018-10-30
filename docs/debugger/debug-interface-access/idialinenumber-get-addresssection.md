@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_addresssection | Microsoft Docs'
+title: 'Idialinenumber:: Get_addresssection | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5facb5d1e8a87244308cec4d0eee7b2e03a2101
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63ec44cd17028dd2410834b9aa45babd0491f23d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838087"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
-Ruft ab den Abschnitt Teil die Speicheradresse, an ein Block beginnt.  
+Ruft ab, der Teil "Abschnitt" die Speicheradresse, an dem ein Block beginnt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT get_addressSection (
   
 #### <a name="parameters"></a>Parameter  
  pRetVal  
- [out] Gibt den Teil "Abschnitt" die Speicheradresse, wo beginnt einen Block.  
+ [out] Gibt zurück, den Teil "Abschnitt" die Speicheradresse, wo beginnt einen Block.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

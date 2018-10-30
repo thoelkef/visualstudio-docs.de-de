@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850359"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.  
   
--   Sie können ein Inhaltssteuerelement schützen.  
+- Sie können ein Inhaltssteuerelement schützen.  
   
--   Sie können einen Teil eines Dokuments schützen, der nicht in einem Inhaltssteuerelement enthalten ist.  
+- Sie können einen Teil eines Dokuments schützen, der nicht in einem Inhaltssteuerelement enthalten ist.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> Schützen Sie ein ContentControl-Element  
  Sie können verhindern, dass Benutzer bearbeiten oder löschen ein ContentControl-Element, durch Festlegen von Eigenschaften des Steuerelements in einem Projekt auf Dokumentebene zur Entwurfszeit oder zur Laufzeit.  
@@ -58,12 +58,12 @@ ms.locfileid: "35672817"
   
 1.  Festlegen der `LockContents` Eigenschaft des Inhaltssteuerelements auf **"true"** zu verhindern, dass Benutzer das Steuerelement bearbeiten, und legen Sie die `LockContentControl` Eigenschaft **"true"** verhindert, dass Benutzer das Steuerelement löschen.  
   
-     Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem Projekt auf Dokumentebene. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument`-Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls`-Methode aus dem `ThisDocument_Startup`-Ereignishandler auf.  
+     Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem Projekt auf Dokumentebene. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.  
   
      [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
   
-     Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem VSTO-Add-In-Projekt. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn`-Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls`-Methode aus dem `ThisAddIn_Startup`-Ereignishandler auf.  
+     Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem VSTO-Add-In-Projekt. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls` -Methode aus dem `ThisAddIn_Startup` -Ereignishandler auf.  
   
      [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
@@ -95,12 +95,12 @@ ms.locfileid: "35672817"
   
 1.  Wählen Sie den zu schützenden Bereich programmgesteuert aus, und rufen Sie dann die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A>-Methode auf, um <xref:Microsoft.Office.Tools.Word.GroupContentControl> zu erstellen.  
   
-     Im folgenden Codebeispiel für ein Projekt auf Dokumentebene wird dem ersten Absatz des Dokuments Text hinzugefügt, der erste Absatz ausgewählt und dann <xref:Microsoft.Office.Tools.Word.GroupContentControl> instanziiert. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument`-Klasse in Ihrem Projekt hinzu und rufen die `ProtectFirstParagraph`-Methode aus dem `ThisDocument_Startup`-Ereignishandler auf.  
+     Im folgenden Codebeispiel für ein Projekt auf Dokumentebene wird dem ersten Absatz des Dokuments Text hinzugefügt, der erste Absatz ausgewählt und dann <xref:Microsoft.Office.Tools.Word.GroupContentControl> instanziiert. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `ProtectFirstParagraph` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.  
   
      [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
   
-     Im folgenden Codebeispiel für ein VSTO-Add-In-Projekt wird dem ersten Absatz des aktiven Dokuments Text hinzugefügt, der erste Absatz ausgewählt und dann <xref:Microsoft.Office.Tools.Word.GroupContentControl> instanziiert. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn`-Klasse in Ihrem Projekt hinzu und rufen die `ProtectFirstParagraph`-Methode aus dem `ThisAddIn_Startup`-Ereignishandler auf.  
+     Im folgenden Codebeispiel für ein VSTO-Add-In-Projekt wird dem ersten Absatz des aktiven Dokuments Text hinzugefügt, der erste Absatz ausgewählt und dann <xref:Microsoft.Office.Tools.Word.GroupContentControl> instanziiert. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse in Ihrem Projekt hinzu und rufen die `ProtectFirstParagraph` -Methode aus dem `ThisAddIn_Startup` -Ereignishandler auf.  
   
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  

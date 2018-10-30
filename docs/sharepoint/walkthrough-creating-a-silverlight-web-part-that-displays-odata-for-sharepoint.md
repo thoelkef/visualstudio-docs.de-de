@@ -15,24 +15,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878181"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData für SharePoint anzeigt
   SharePoint 2010 stellt die Daten mithilfe von OData. In SharePoint wird der OData-Dienst von den RESTful-Dienst ListData.svc implementiert. In dieser exemplarischen Vorgehensweise zeigt, wie Sie einen SharePoint-Webpart erstellen, eine Silverlight-Anwendung gehostet, wird. Die Silverlight-Anwendung zeigt Listen Sie Informationen zu SharePoint-Ankündigung ListData.svc. Weitere Informationen finden Sie unter [SharePoint Foundation-REST-Schnittstelle](http://go.microsoft.com/fwlink/?LinkId=225999) und [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint.
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Erstellen eines Silverlight-Anwendung und die Silverlight-Webparts
  Erstellen Sie zunächst eine Silverlight-Anwendung in Visual Studio. Die Silverlight-Anwendung ruft Daten aus der Liste der SharePoint-Ankündigungen mithilfe des Diensts ListData.svc ab.  
@@ -42,25 +42,25 @@ ms.locfileid: "42626164"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Zum Erstellen eines Silverlight-Anwendung und die Silverlight-Webparts
   
-1.  Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.  
+1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.  
   
-2.  Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.  
+2. Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.  
   
-3.  Wählen Sie im Vorlagenbereich die **SharePoint 2010 Silverlight-Webpart** Vorlage.  
+3. Wählen Sie im Vorlagenbereich die **SharePoint 2010 Silverlight-Webpart** Vorlage.  
   
-4.  In der **Namen** geben **SLWebPartTest** und wählen Sie dann die **OK** Schaltfläche.  
+4. In der **Namen** geben **SLWebPartTest** und wählen Sie dann die **OK** Schaltfläche.  
   
-     Die **SharePoint Customization Wizard** Dialogfeld wird angezeigt.  
+    Die **SharePoint Customization Wizard** Dialogfeld wird angezeigt.  
   
-5.  Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Server-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://*Systemname*/) .  
+5. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Server-Website, in dem Sie die Sitedefinition debuggen möchten, oder verwenden Sie den Standardspeicherort (http://<em>Systemname</em>/) .  
   
-6.  In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
+6. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.  
   
-     Obwohl in diesem Beispiel eine farmlösung verwendet wird, können die Silverlight-Webpart Webprojekte entweder als Farm oder als Sandbox-Lösungen bereitgestellt werden. Weitere Informationen zu sandkastenlösungen und-farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+    Obwohl in diesem Beispiel eine farmlösung verwendet wird, können die Silverlight-Webpart Webprojekte entweder als Farm oder als Sandbox-Lösungen bereitgestellt werden. Weitere Informationen zu sandkastenlösungen und-farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  In der **wie möchten Sie das Silverlight-Webpart zuordnen** Teil der **Silverlight-Konfigurationsinformationen geben** Seite die **Erstellen eines neuen Silverlight-Projekts und Ordnen sie das Webpart** Optionsfeld aus.  
+7. In der **wie möchten Sie das Silverlight-Webpart zuordnen** Teil der **Silverlight-Konfigurationsinformationen geben** Seite die **Erstellen eines neuen Silverlight-Projekts und Ordnen sie das Webpart** Optionsfeld aus.  
   
-8.  Ändern der **Namen** zu **SLApplication**legen **Sprache** entweder **Visual Basic** oder **Visual C#-**, und legen Sie dann **Silverlight-Version** zu **Silverlight 4.0**.  
+8. Ändern der **Namen** zu **SLApplication**legen **Sprache** entweder **Visual Basic** oder **Visual C#-**, und legen Sie dann **Silverlight-Version** zu **Silverlight 4.0**.  
   
 9. Wählen Sie die **Fertig stellen** Schaltfläche. Die Projekte angezeigt, **Projektmappen-Explorer**.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839322"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Domain-Specific-Sprachtools (DSL-Tools), die in gehostet werden [!INCLUDE[vsprvs
 ## <a name="the-dsl-tools-solution"></a>Der DSL-Tools-Projektmappe  
  Der Domain-Specific-Designer-Assistent bietet die folgenden Vorlagen:  
   
--   Aufgabenverlauf  
+- Aufgabenverlauf  
   
--   Klassendiagramme  
+- Klassendiagramme  
   
--   Minimale Sprache  
+- Minimale Sprache  
   
--   Komponentenmodelle  
+- Komponentenmodelle  
   
--   Minimaler WPF  
+- Minimaler WPF  
   
--   Minimale Windows.Forms  
+- Minimale Windows.Forms  
   
--   DSL-Bibliothek  
+- DSL-Bibliothek  
   
- Weitere Informationen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Weitere Informationen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Der Assistent erstellt eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektmappe mit den folgenden Projekten:  
+  Der Assistent erstellt eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektmappe mit den folgenden Projekten:  
   
--   DSL  
+- DSL  
   
-     Dsl-Projekt definiert, die einer domänenspezifischen Sprache und der zugehörigen Tools bearbeiten und verarbeiten.  
+   Dsl-Projekt definiert, die einer domänenspezifischen Sprache und der zugehörigen Tools bearbeiten und verarbeiten.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     DslPackage-Projekt bestimmt, wie die Language-Tools integrieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   DslPackage-Projekt bestimmt, wie die Language-Tools integrieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>Der Grafischen Benutzeroberfläche des DSL-Tools  
  Sie können die grafische Benutzeroberfläche des DSL-Tools verwenden, so Ihre DSL-Elementen und Beziehungen hinzu. Nachdem Sie die Elemente hinzugefügt haben, können Sie ihre Darstellung definieren, indem Sie an, die Formen, Anpassen von Farben und Decorator-Elemente hinzufügen. Sie können auch die Elemente zur Toolbox hinzufügen.  

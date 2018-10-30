@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914501"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Übersicht über Entwurfstools für BDC-Modell
   Sie können ein Business Data Connectivity (BDC)-Modell mit dem BDC-Designer, entwerfen die **BDC-Methodendetails** Fenster und die **BDC-Explorer**.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326217"
 ## <a name="bdc-designer"></a>BDC-Designer
  BDC-Designer können Sie zum Definieren von Entitäten im Modell und deren Beziehungen visuell miteinander anordnen. Verwenden Sie den BDC-Designer, um die folgenden Aufgaben auszuführen:  
   
--   Entitäten mit dem Modell hinzufügen.  
+- Entitäten mit dem Modell hinzufügen.  
   
--   Entfernen Sie Entitäten aus dem Modell an.  
+- Entfernen Sie Entitäten aus dem Modell an.  
   
--   Definieren Sie Beziehungen zwischen Entitäten.  
+- Definieren Sie Beziehungen zwischen Entitäten.  
   
- Um den BDC-Designer zu öffnen, doppelklicken Sie auf die Modelldatei in Ihrem Projekt, oder öffnen Sie das Kontextmenü für die Modelldatei, und wählen Sie dann **öffnen**. Hinzufügen einer Entität für das Modell durch Ziehen oder Kopieren einer **Entität** aus der **Toolbox** in den Designer. Wählen Sie zum Erstellen einer Zuordnung zwischen zwei Entitäten die **Zuordnung** steuern, der **Toolbox**, wählen Sie die erste Entität, und wählen Sie dann die zweite Entität.  
+  Um den BDC-Designer zu öffnen, doppelklicken Sie auf die Modelldatei in Ihrem Projekt, oder öffnen Sie das Kontextmenü für die Modelldatei, und wählen Sie dann **öffnen**. Hinzufügen einer Entität für das Modell durch Ziehen oder Kopieren einer **Entität** aus der **Toolbox** in den Designer. Wählen Sie zum Erstellen einer Zuordnung zwischen zwei Entitäten die **Zuordnung** steuern, der **Toolbox**, wählen Sie die erste Entität, und wählen Sie dann die zweite Entität.  
   
 ## <a name="bdc-method-details-window"></a>Fenster "BDC Method Details"
  Verwenden der **BDC-Methodendetails** Fenster zu definieren, die Parameter, die Instanzen Filterdeskriptoren einer Methode.  

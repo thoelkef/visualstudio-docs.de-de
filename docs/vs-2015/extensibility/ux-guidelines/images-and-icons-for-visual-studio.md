@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872537"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255748"
 ### <a name="overview"></a>Übersicht  
  Visual Studio verwendet moderne Symbole bereinigen Geometrie und eine 50/50 Balance zwischen positiv/negativ (hellen/dunklen), und direktere, verständliche Metaphern verwenden. Symbol für wichtige Design Punkte stehen im Mittelpunkt Klarheit, Vereinfachung und den Kontextinformationen.  
   
--   **Klarheit:** die Core-Metapher, die ein Symbol den Sinn und wahren erhalten konzentrieren.  
+- **Klarheit:** die Core-Metapher, die ein Symbol den Sinn und wahren erhalten konzentrieren.  
   
--   **Vereinfachung:** reduzieren Sie das Symbol auf seine Bedeutung Core – mit nur die erforderlichen Elemente und schnörkellos können Sie das Design auf.  
+- **Vereinfachung:** reduzieren Sie das Symbol auf seine Bedeutung Core – mit nur die erforderlichen Elemente und schnörkellos können Sie das Design auf.  
   
--   **Kontext:** sollten Sie alle Aspekte der Symbole Rolle während der Entwicklung Konzept der entscheidend ist, bei der Entscheidung, welche Elemente auf das Symbol "Core Metapher bilden.  
+- **Kontext:** sollten Sie alle Aspekte der Symbole Rolle während der Entwicklung Konzept der entscheidend ist, bei der Entscheidung, welche Elemente auf das Symbol "Core Metapher bilden.  
   
- Mit Symbolen gibt es diverse Punkte beim Entwerfen, zu vermeiden:  
+  Mit Symbolen gibt es diverse Punkte beim Entwerfen, zu vermeiden:  
   
--   Verwenden Sie keine Symbole, die UI-Elemente, außer bei Bedarf angeben. Wählen Sie einen eher abstrakte oder symbolischen Ansatz, wenn das Benutzeroberflächenelement weder allgemeine, offensichtlich noch eindeutig ist.  
+- Verwenden Sie keine Symbole, die UI-Elemente, außer bei Bedarf angeben. Wählen Sie einen eher abstrakte oder symbolischen Ansatz, wenn das Benutzeroberflächenelement weder allgemeine, offensichtlich noch eindeutig ist.  
   
--   Nicht zu viele gemeinsame Elemente wie Dokumenten, Ordner, Pfeile und das Lupensymbol aus. Verwenden Sie solche Elemente nur dann, wenn für das Symbol "Bedeutung. Beispielsweise sollte das Lupensymbol nach rechts zeigenden angeben nur suchen, durchsuchen und ermitteln.  
+- Nicht zu viele gemeinsame Elemente wie Dokumenten, Ordner, Pfeile und das Lupensymbol aus. Verwenden Sie solche Elemente nur dann, wenn für das Symbol "Bedeutung. Beispielsweise sollte das Lupensymbol nach rechts zeigenden angeben nur suchen, durchsuchen und ermitteln.  
   
--   Obwohl einige Symbol für veraltet-Elemente, die Verwendung der Sicht beizubehalten, erstellen Sie keine neue Symbole mit Perspektive, wenn das Element verfügt nicht über die Klarheit, ohne ihn.  
+- Obwohl einige Symbol für veraltet-Elemente, die Verwendung der Sicht beizubehalten, erstellen Sie keine neue Symbole mit Perspektive, wenn das Element verfügt nicht über die Klarheit, ohne ihn.  
   
--   Nicht, die für Desktopmonitore zu viele Informationen in ein Symbol. Ein einfaches Image, das leicht erkannt und als erkennbar Symbol gelernt werden kann, ist viel nützlicher als ein Bild zu komplex. Ein Symbol kann nicht die ganze Geschichte zu erzählen.  
+- Nicht, die für Desktopmonitore zu viele Informationen in ein Symbol. Ein einfaches Image, das leicht erkannt und als erkennbar Symbol gelernt werden kann, ist viel nützlicher als ein Bild zu komplex. Ein Symbol kann nicht die ganze Geschichte zu erzählen.  
   
 ### <a name="icon-creation"></a>Symbol für Erstellung  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255748"
 ### <a name="icon-construction"></a>Symbol für Erstellung  
  Die kleinste Größe der Symbole in Visual Studio ist 16 x 16. Das größte ist gemeinsam verwenden 32 x 32. Bedenken Sie nicht auf den gesamten Rahmen von 16 x 16, 24 x 24 oder 32 x 32 auffüllen, wenn Sie ein Symbol zu entwerfen. Symbol für lesbar, einheitliche Konstruktion ist wesentlich für Benutzer. Entsprechen Sie die folgenden Punkte beim Erstellen von Symbolen.  
   
--   Symbole sollten klar verständlich und konsistent sein.  
+- Symbole sollten klar verständlich und konsistent sein.  
   
--   Es ist besser, die Status-Benachrichtigung-Elemente als einzelne Symbole zu verwenden und nicht auf die sie über ein Symbol Basiselement stack. In bestimmten Kontexten möglicherweise die Benutzeroberfläche das Status-Element mit einem Basiselement kombiniert werden.  
+- Es ist besser, die Status-Benachrichtigung-Elemente als einzelne Symbole zu verwenden und nicht auf die sie über ein Symbol Basiselement stack. In bestimmten Kontexten möglicherweise die Benutzeroberfläche das Status-Element mit einem Basiselement kombiniert werden.  
   
--   Projektsymbole sind in der Regel die ICO-Dateien, die verschiedenen Größen enthalten. Nur die 16 x 16, 24 x 24 und 32 x 32-Symbole werden aktualisiert. Die meisten 16 x 16 und 24 x 24-Symbole werden dieselben Elemente enthalten. Die 32 x 32 Symbole enthalten weitere Informationen sowie die Sprache Projekttyp, falls zutreffend.  
+- Projektsymbole sind in der Regel die ICO-Dateien, die verschiedenen Größen enthalten. Nur die 16 x 16, 24 x 24 und 32 x 32-Symbole werden aktualisiert. Die meisten 16 x 16 und 24 x 24-Symbole werden dieselben Elemente enthalten. Die 32 x 32 Symbole enthalten weitere Informationen sowie die Sprache Projekttyp, falls zutreffend.  
   
--   Für 32 x 32-Symbole haben die grundlegenden Elemente in der Regel eine 2-Pixel-Linienstärke. Eine 1 oder 2-Pixel-Linienstärke kann Details Elemente verwendet werden. Verwenden Sie Ihrem Urteilsvermögen, um zu bestimmen, die besser geeignet ist.  
+- Für 32 x 32-Symbole haben die grundlegenden Elemente in der Regel eine 2-Pixel-Linienstärke. Eine 1 oder 2-Pixel-Linienstärke kann Details Elemente verwendet werden. Verwenden Sie Ihrem Urteilsvermögen, um zu bestimmen, die besser geeignet ist.  
   
--   Verfügen Sie über mindestens einen 1-Pixel-der Abstand zwischen Elementen für 16 x 16 und 24 x 24 Symbole. Verwenden Sie für 32 x 32-Symbole 2-Pixel-Abstand zwischen Elementen sowie zwischen dem Modifizierer und das Basiselement.  
+- Verfügen Sie über mindestens einen 1-Pixel-der Abstand zwischen Elementen für 16 x 16 und 24 x 24 Symbole. Verwenden Sie für 32 x 32-Symbole 2-Pixel-Abstand zwischen Elementen sowie zwischen dem Modifizierer und das Basiselement.  
   
- ![Elementabstand für 16 x 16, 24 x 24 und 32 x 32 Symbole](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404-47_ElementSpacing")  
+  ![Elementabstand für 16 x 16, 24 x 24 und 32 x 32 Symbole](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404-47_ElementSpacing")  
   
- **Elementabstand für Symbole die Größe 16 x 16, 24 x 24 und 32 x 32**  
+  **Elementabstand für Symbole die Größe 16 x 16, 24 x 24 und 32 x 32**  
   
 #### <a name="color-and-accessibility"></a>Farbe und Barrierefreiheit  
  Visual Studio-Compliance-Richtlinien erfordern, dass alle Symbole in das Produkt den Anforderungen zur Barrierefreiheit für Farbe und Kontrast übergeben. Dies erfolgt über das Symbol Inversion und beim Entwerfen, sollten Sie bedenken, dass sie programmgesteuert innerhalb des Produkts umgekehrt werden soll.  

@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824398"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178424"
   
 #### <a name="do-not"></a>Tue nicht:  
   
--   Kleine Bewegungen (Verschieben von Daten in einen geringen Ressourcenbedarf), vorzieht wird ausgeblendet und über das Verschieben von Objekten ändert.  
+- Kleine Bewegungen (Verschieben von Daten in einen geringen Ressourcenbedarf), vorzieht wird ausgeblendet und über das Verschieben von Objekten ändert.  
   
--   Verwenden Sie Animationen, die über eine große Fläche Bildschirmplatz ausgeführt werden. Unabhängig von Größe ist diese Art von Animation für den Benutzer verwirrend.  
+- Verwenden Sie Animationen, die über eine große Fläche Bildschirmplatz ausgeführt werden. Unabhängig von Größe ist diese Art von Animation für den Benutzer verwirrend.  
   
--   Verwenden Sie Animationen, die nicht auf das Objekt, dem der Benutzer auf gerade fokussiert ist oder die Interaktion mit beziehen.  
+- Verwenden Sie Animationen, die nicht auf das Objekt, dem der Benutzer auf gerade fokussiert ist oder die Interaktion mit beziehen.  
   
--   Verwenden Sie Animationen, die eine Benutzerinteraktion, um den Status, z. B. zwingen den Benutzer auf eine blinkende Benachrichtigung damit darauf blinken beenden reagieren zurücksetzen erfordern. In keiner Weise mit ihnen interagieren sollte ausreichen, um sie zu schließen.  
+- Verwenden Sie Animationen, die eine Benutzerinteraktion, um den Status, z. B. zwingen den Benutzer auf eine blinkende Benachrichtigung damit darauf blinken beenden reagieren zurücksetzen erfordern. In keiner Weise mit ihnen interagieren sollte ausreichen, um sie zu schließen.  
   
- Weitere Informationen zu Anwendungen, die für diese bewährten Methoden finden Sie unter [Animation Muster](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Weitere Informationen zu Anwendungen, die für diese bewährten Methoden finden Sie unter [Animation Muster](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Animation-Metriken  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178424"
 ### <a name="overview"></a>Übersicht  
  Animationen in Visual Studio sollen dienen einem bestimmten Zweck und die Produktivität der Benutzer nicht behindern. Allgemeine Animation-Merkmale enthält entsprechen:  
   
--   Klein und unauffällig  
+- Klein und unauffällig  
   
--   Natürliche und realistische  
+- Natürliche und realistische  
   
--   Geringfügige und sind daher bei gedämpften  
+- Geringfügige und sind daher bei gedämpften  
   
--   Schnelle und effiziente  
+- Schnelle und effiziente  
   
--   Gelockerte, nicht Eile  
+- Gelockerte, nicht Eile  
   
- Die folgende Abbildung zeigt die animationsstile für die Verwendung in Visual Studio empfohlen. Keine Animation und subtile Animationen wie z. B. ein- / ausblenden, werden die am häufigsten verwendet. Begrenzten Anwendung der Bewegung Animationen wie z. B. die Erweiterung und Verkleinerung vorhanden ist, die X- und Y-position ändern und Drehung.  
+  Die folgende Abbildung zeigt die animationsstile für die Verwendung in Visual Studio empfohlen. Keine Animation und subtile Animationen wie z. B. ein- / ausblenden, werden die am häufigsten verwendet. Begrenzten Anwendung der Bewegung Animationen wie z. B. die Erweiterung und Verkleinerung vorhanden ist, die X- und Y-position ändern und Drehung.  
   
- ![Empfohlene animationsstile für Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202-A_VSAnimStyles")  
+  ![Empfohlene animationsstile für Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202-A_VSAnimStyles")  
   
- **Empfohlene animationsstile für Visual Studio**  
+  **Empfohlene animationsstile für Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Angezeigt und ausgeblendet werden  
  Mit diesem Muster ist wechselt ein Element von sichtbar, Out-der-Ansicht und ohne eine übergangsanimation zurück:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178424"
   
 #### <a name="tab-open"></a>Registerkarte öffnen  
   
--   Style: angezeigt werden  
+- Style: angezeigt werden  
   
--   Dauer: 0 (null) Sekunden  
+- Dauer: 0 (null) Sekunden  
   
- ![Registerkarte Animation, die in Visual Studio öffnen](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202-H_TabOpen")  
+  ![Registerkarte Animation, die in Visual Studio öffnen](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202-H_TabOpen")  
   
 #### <a name="tab-close"></a>Registerkarte schließen  
   
--   Style: X-Position ändern  
+- Style: X-Position ändern  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Registerkarte Animation, die in Visual Studio schließen](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202-I_TabClose")  
+  ![Registerkarte Animation, die in Visual Studio schließen](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202-I_TabClose")  
   
 #### <a name="tab-reorder"></a>Registerkarte "neu anordnen  
   
--   Style: X-Position ändern  
+- Style: X-Position ändern  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Animation "neu anordnen" in Visual Studio Registerkarte](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202-J_TabReorder")  
+  ![Animation "neu anordnen" in Visual Studio Registerkarte](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202-J_TabReorder")  
   
 #### <a name="close-floating-document"></a>Unverankertes Dokument schließen  
   
--   Style: angezeigt werden  
+- Style: angezeigt werden  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Unverankerte Dokument Animation in Visual Studio schließen](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202-K_CloseFloatingDocument")  
+  ![Unverankerte Dokument Animation in Visual Studio schließen](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202-K_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Statusübergang für Fenster  
   
--   Style: Um mit anderen Fenstern konsistent zu sein, können Sie das aktuelle Betriebssystem, das die Dokument schließen Animation definieren.  
+- Style: Um mit anderen Fenstern konsistent zu sein, können Sie das aktuelle Betriebssystem, das die Dokument schließen Animation definieren.  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Animation "fensterstatusübergang" in Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202-L_WindowStateTransition")  
+  ![Animation "fensterstatusübergang" in Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202-L_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Menü öffnen  
   
--   Style: dem einblenden  
+- Style: dem einblenden  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Animation "Menü" Öffnen in Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202-M_MenuOpen")  
+  ![Animation "Menü" Öffnen in Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202-M_MenuOpen")  
   
 #### <a name="menu-close"></a>Menü "Schließen"  
   
--   Style: Ausblenden der videoüberlagerung benötigt  
+- Style: Ausblenden der videoüberlagerung benötigt  
   
--   Dauer: 200 Millisekunden  
+- Dauer: 200 Millisekunden  
   
- ![Animation "Menü" Schließen in Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202-N_MenuClose")  
+  ![Animation "Menü" Schließen in Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202-N_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Automatisches Ausblenden Tool-Fenster anzeigen  
   
--   Style: angezeigt werden  
+- Style: angezeigt werden  
   
--   Dauer: 0 (null) Sekunden  
+- Dauer: 0 (null) Sekunden  
   
- ![Automatische&#45;ausblenden Tool Fensteranimation in Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202-O_AutoHideToolWindowReveal")
+  ![Automatische&#45;ausblenden Tool Fensteranimation in Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202-O_AutoHideToolWindowReveal")
 

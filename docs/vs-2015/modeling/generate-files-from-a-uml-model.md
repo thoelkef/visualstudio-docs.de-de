@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831717"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generieren von Dateien von einem UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Aus einem UML-Modell können Sie Programmcode, Schemas, Dokumente, Ressourcen un
   
  Es gibt drei grundlegende Szenarien:  
   
--   [Generieren von Dateien aus einem Menübefehl](#Command) oder einer Geste. Sie definieren einen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Befehl, der in UML-Modellen verfügbar ist.  
+- [Generieren von Dateien aus einem Menübefehl](#Command) oder einer Geste. Sie definieren einen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Befehl, der in UML-Modellen verfügbar ist.  
   
--   [Generieren von Dateien aus einer Anwendung](#Application). Sie schreiben eine Anwendung, die UML-Modelle liest und Dateien generiert.  
+- [Generieren von Dateien aus einer Anwendung](#Application). Sie schreiben eine Anwendung, die UML-Modelle liest und Dateien generiert.  
   
--   [Generieren zur Entwurfszeit](#Design). Sie verwenden ein Modell, um die Funktionalität Ihrer Anwendung zu definieren und Code, Ressourcen usw. innerhalb Ihrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung zu generieren.  
+- [Generieren zur Entwurfszeit](#Design). Sie verwenden ein Modell, um die Funktionalität Ihrer Anwendung zu definieren und Code, Ressourcen usw. innerhalb Ihrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung zu generieren.  
   
- Dieses Thema endet mit einer Erläuterung der [Gewusst wie: Verwenden Sie die textgenerierung](#What). Weitere Informationen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).  
+  Dieses Thema endet mit einer Erläuterung der [Gewusst wie: Verwenden Sie die textgenerierung](#What). Weitere Informationen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).  
   
 ##  <a name="Command"></a> Generieren von Dateien aus einem Menübefehl  
  Sie können vorverarbeitete Textvorlagen innerhalb eines UML-Menübefehls verwenden. Im Code der Textvorlage oder in einer separaten partiellen Klasse können Sie das Modell lesen, das vom Diagramm angezeigt wird.  
   
  Weitere Informationen zu diesen Funktionen finden Sie in den folgenden Themen:  
   
--   [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md)  
+- [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md)  
   
- Die im folgenden Beispiel beschriebene Methode eignet sich zum Generieren von Text aus einem einzelnen Modell, wenn Sie den Vorgang aus einem der Modelldiagramme initiieren. Um ein Modell in einem separaten Kontext verarbeiten zu können, erwägen Sie die Verwendung [Visual Studio-Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) den Zugriff auf das Modell und seine Elemente.  
+  Die im folgenden Beispiel beschriebene Methode eignet sich zum Generieren von Text aus einem einzelnen Modell, wenn Sie den Vorgang aus einem der Modelldiagramme initiieren. Um ein Modell in einem separaten Kontext verarbeiten zu können, erwägen Sie die Verwendung [Visual Studio-Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) den Zugriff auf das Modell und seine Elemente.  
   
 ### <a name="example"></a>Beispiel  
  Um dieses Beispiel auszuführen, erstellen Sie ein Projekt mit einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX). Der Projektname, die in diesem Beispiel dient ist `VdmGenerator`. In der **"Source.Extension.vsixmanifest"** , klicken Sie auf **Inhalt hinzufügen** und legen Sie das Typfeld auf **MEF-Komponente** und Quellpfad zum aktuellen Projekt. Weitere Informationen, wie Sie diese Art Projekt einrichten, finden Sie unter [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>So richten Sie eine Visual Studio-Projektmappe für dieses Beispiel ein  
   
-1.  Erstellen Sie in einem Modellierungsprojekt in einer neuen Projektmappe ein UML-Klassendiagramm.  
+1. Erstellen Sie in einem Modellierungsprojekt in einer neuen Projektmappe ein UML-Klassendiagramm.  
   
-    1.  In der **Architektur** Menü klicken Sie auf **neues Diagramm**.  
+   1.  In der **Architektur** Menü klicken Sie auf **neues Diagramm**.  
   
-    2.  Wählen Sie **UML-Klassendiagramm**.  
+   2.  Wählen Sie **UML-Klassendiagramm**.  
   
-    3.  Befolgen Sie die Anweisungen zur Erstellung einer neuen Projektmappe und eines neuen Modellierungsprojekts.  
+   3.  Befolgen Sie die Anweisungen zur Erstellung einer neuen Projektmappe und eines neuen Modellierungsprojekts.  
   
-    4.  Fügen Sie dem Diagramm einige Klassen hinzu, indem Sie das UML-Klassen-Tool aus der Toolbox ziehen.  
+   4.  Fügen Sie dem Diagramm einige Klassen hinzu, indem Sie das UML-Klassen-Tool aus der Toolbox ziehen.  
   
-    5.  Speichern Sie die Datei.  
+   5.  Speichern Sie die Datei.  
   
-2.  Erstellen Sie ein C#- oder Visual Basic-Projekt in derselben Projektmappe.  
+2. Erstellen Sie ein C#- oder Visual Basic-Projekt in derselben Projektmappe.  
   
-    -   Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. Klicken Sie unter **installierte Vorlagen**, klicken Sie auf **Visual Basic** oder **Visual c#** und wählen Sie dann einen Projekttyp wie z. B. **Konsolenanwendung**.  
+   -   Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. Klicken Sie unter **installierte Vorlagen**, klicken Sie auf **Visual Basic** oder **Visual c#** und wählen Sie dann einen Projekttyp wie z. B. **Konsolenanwendung**.  
   
-3.  Fügen Sie eine Nur-Text-Datei zum C#- oder Visual Basic-Projekt hinzu. Diese Datei enthält Code, der freigegeben wird, wenn Sie mehrere Textvorlagen schreiben möchten.  
+3. Fügen Sie eine Nur-Text-Datei zum C#- oder Visual Basic-Projekt hinzu. Diese Datei enthält Code, der freigegeben wird, wenn Sie mehrere Textvorlagen schreiben möchten.  
   
-    -   Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**. Wählen Sie **Textdatei**.  
+   - Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**. Wählen Sie **Textdatei**.  
   
      Fügen Sie den Text ein, der im folgenden Abschnitt angezeigt wird.  
   
-4.  Fügen Sie eine Textvorlagendatei zum C#- oder Visual Basic-Projekt hinzu.  
+4. Fügen Sie eine Textvorlagendatei zum C#- oder Visual Basic-Projekt hinzu.  
   
-    -   Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**. Wählen Sie **Textvorlage**.  
+   - Klicken Sie im Projektmappen-Explorer mit der Maustaste des Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**. Wählen Sie **Textvorlage**.  
   
      Fügen Sie den folgenden Code in die Textvorlagendatei ein.  
   
-5.  Speichern Sie die Textvorlagendatei.  
+5. Speichern Sie die Textvorlagendatei.  
   
-6.  Überprüfen Sie den Code in der untergeordneten Datei. Er sollte eine Klasse für jede UML-Klasse im Modell enthalten.  
+6. Überprüfen Sie den Code in der untergeordneten Datei. Er sollte eine Klasse für jede UML-Klasse im Modell enthalten.  
   
-    1.  Klicken Sie in einem Visual Basic-Projekt auf **alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorer.  
+   1.  Klicken Sie in einem Visual Basic-Projekt auf **alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorer.  
   
-    2.  Erweitern Sie den Vorlagendateiknoten im Projektmappen-Explorer.  
+   2.  Erweitern Sie den Vorlagendateiknoten im Projektmappen-Explorer.  
   
 #### <a name="content-of-the-shared-text-file"></a>Inhalt der freigegebenen Textdatei  
  In diesem Beispiel heißt die Datei „SharedTemplateCode.txt“ und befindet sich in demselben Ordner wie die Textvorlagen.  

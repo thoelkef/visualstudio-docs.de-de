@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822124"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -125,43 +125,43 @@ Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine ander
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
 
-1.  Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **Klassenbibliothek**.
+1. Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **Klassenbibliothek**.
 
-2.  Fügen Sie einen Verweis auf die Assembly der DSL, in das neue Klassenbibliotheksprojekt.
+2. Fügen Sie einen Verweis auf die Assembly der DSL, in das neue Klassenbibliotheksprojekt.
 
-    -   Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
+   - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
 
-    -   Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\***
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\\***
 
-    -   Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.
+   - Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.
 
-3.  Fügen Sie Verweise auf die folgenden .NET-Assemblys hinzu:
+3. Fügen Sie Verweise auf die folgenden .NET-Assemblys hinzu:
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.
+4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.
 
-5.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
+5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
 
-6.  Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
+6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
 
-7.  Klicken Sie auf **fügen Inhalt hinzu,**. Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.
+7. Klicken Sie auf **fügen Inhalt hinzu,**. Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.
 
-8.  Fügen Sie ein VSIX-Verweis auf die DSL hinzu.
+8. Fügen Sie ein VSIX-Verweis auf die DSL hinzu.
 
-    1.  In **"Source.Extension.vsixmanifest"**, klicken Sie auf **Verweis hinzufügen**
+   1. In **"Source.Extension.vsixmanifest"**, klicken Sie auf **Verweis hinzufügen**
 
-    2.  Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in **DslPackage\bin\\\***.
+   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in ** DslPackage\bin\\\\***.
 
-         Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.
+       Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.
 
 9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"**. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass die richtigen Versionen von Visual Studio festgelegt werden.
 

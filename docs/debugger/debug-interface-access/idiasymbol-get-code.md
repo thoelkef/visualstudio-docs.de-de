@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_code | Microsoft Docs'
+title: 'Idiasymbol:: Get_code | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abe363ca4b5dff450c8324f49e8408681d64d6c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d157e33581054e3aa8f79f60cb1d3609dc16b6ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841662"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
-Ruft ein Flag, das angibt, ob das Symbol auf einer Codeadresse verweist.  
+Ruft ein Flag, das angibt, ob das Symbol auf eine Adresse verweist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,20 +34,20 @@ HRESULT get_code (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn das Symbol auf einer Codeadresse verweist, andernfalls wird `FALSE`.  
+ [out] Gibt `TRUE` , wenn das Symbol auf eine Adresse verwiesen wird, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK Version 7.0|  
+|Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

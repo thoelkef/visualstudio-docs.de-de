@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Microsoft Docs
+title: IDebugReference2::Compare | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ede48e5236887e3d8fdb22425d92c8514636f94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b00eb4e64e9dcccf4519f5e799f238ad01773b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860486"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-Vergleicht einen Verweis auf eine andere. Für zukünftige Verwendung reserviert.  
+Vergleicht einen Verweis auf einen anderen. Für zukünftige Verwendung reserviert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,10 +43,10 @@ int Compare (
   
 #### <a name="parameters"></a>Parameter  
  `dwCompare`  
- [in] Ein Wert aus der [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) -Enumeration, die Vergleichsoperation aus, z. B. gleich, kleiner oder größer als angibt.  
+ [in] Ein Wert aus der [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) -Enumeration, die Vergleichsoperation, z. B. größer oder gleich, kleiner als angibt.  
   
  `pReference`  
- [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Verweis auf das zu vergleichende darstellt.  
+ [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Verweis auf die zu vergleichenden darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt immer `E_NOTIMPL` zurück.  

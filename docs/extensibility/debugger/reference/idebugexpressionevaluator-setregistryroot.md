@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
+title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70b1730fc44deeb7e32433480f02f750c9bec193
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d327528d340bc5472278de13e83077cd2c28171b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840740"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Diese Methode legt den Registrierungsstamm fest. Für das Debuggen von Seite-an-Seite verwendet.  
+Diese Methode legt den Registrierungsstamm. Zum Debuggen von Seite-an-Seite verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int SetRegistryRoot(
   
 #### <a name="parameters"></a>Parameter  
  `ustrRegistryRoot`  
- [in] Die neue Registrierungsstamm.  
+ [in] Der neue Registrierungsstamm.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der angegebene Registrierungsstamm wird in der Regel festgelegt werden, wenn die ausdrucksauswertung zuerst instanziiert und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , wobei *X.Y* ist eine Versionsnummer).  
+ Der angegebene Registrierungsstamm ist in der Regel festgelegt werden, wenn die ausdrucksauswertung zuerst instanziiert und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , wobei *X.Y* ist eine Versionsnummer).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

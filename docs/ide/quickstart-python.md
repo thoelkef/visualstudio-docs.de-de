@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877113"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -62,7 +62,7 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
     ![Projektmappen-Explorer mit der Standardumgebung](media/quickstart-python-02-default-environment.png)
 
-1. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Paket installieren**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete**.
+1. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Paket installieren**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte Pakete.
 
 1. Geben Sie „Flask“ in das Suchfeld ein, und wählen Sie **pip install flask from PyPI** aus. Akzeptieren Sie die Aufforderungen zu Administratorberechtigungen, und beobachten Sie den Fortschritt im Fenster **Ausgabe** in Visual Studio. (Eine Aufforderung zur Erhöhung der Rechte wird angezeigt, wenn der Ordner „Pakete“ für die globale Umgebung sich in einem geschützten Bereich wie *C:\Programme* befindet.)
 
@@ -124,19 +124,19 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
     ![Festlegen der Startdatei für ein Projekt in Projektmappen-Explorer](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus. Wählen Sie dann die Registerkarte **Debuggen** aus, und legen Sie die Eigenschaft **Portnummer** auf `4449` fest. Dadurch wird sichergestellt, dass Visual Studio entsprechend der `app.run`-Argumente im Code einen Browser mit `localhost:4449` ausführt.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus. Wählen Sie dann die Registerkarte **Debuggen** aus, und legen Sie die Eigenschaft **Portnummer** auf `4449` fest. Dadurch wird sichergestellt, dass Visual Studio entsprechend der `app.run`-Argumente im Code einen Browser mit `localhost:4449` ausführt.
 
-1. Klicken Sie auf **Debuggen > Starten ohne Debugging** (**STRG**+**F5**). Dadurch werden Änderungen an Dateien gespeichert, und die App wird ausgeführt.
+3. Klicken Sie auf **Debuggen > Starten ohne Debugging** (**STRG**+**F5**). Dadurch werden Änderungen an Dateien gespeichert, und die App wird ausgeführt.
 
-1. Ein Befehlsfenster mit der Meldung „* Running in https://localhost:4449/“ (* wird unter https://localhost:4449/ ausgeführt) wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
+4. Ein Befehlsfenster mit der Meldung „* Running in <https://localhost:4449/>“ (* wird unter https://localhost:4449/ ausgeführt) wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
 
     Wenn kein Browser automatisch geöffnet wird, starten Sie Ihren bevorzugten Browser, und navigieren Sie zu `localhost:4449`.
 
     Wenn nur die interaktive Python-Shell im Befehlsfenster angezeigt wird oder das Fenster kurz auf dem Bildschirm aufblinkt, sollten Sie überprüfen, ob Sie in Schritt 1 *app.py* als Startdatei festgelegt haben.
 
-1. Navigieren Sie zu `localhost:4449/hello`, um zu testen, dass der Decorator der `/hello`-Ressource ebenfalls funktioniert. Die GET-Anforderung wird erneut mit dem Status „200“ im Befehlsfenster angezeigt. Sie sollten ebenfalls andere URLs ausprobieren, um festzustellen, dass diese den Statuscode „404“ im Befehlsfenster anzeigen.
+5. Navigieren Sie zu `localhost:4449/hello`, um zu testen, dass der Decorator der `/hello`-Ressource ebenfalls funktioniert. Die GET-Anforderung wird erneut mit dem Status „200“ im Befehlsfenster angezeigt. Sie sollten ebenfalls andere URLs ausprobieren, um festzustellen, dass diese den Statuscode „404“ im Befehlsfenster anzeigen.
 
-1. Schließen Sie das Befehlsfenster, um die App zu beenden, und schließen Sie dann das Browserfenster.
+6. Schließen Sie das Befehlsfenster, um die App zu beenden, und schließen Sie dann das Browserfenster.
 
 **Frage: Was ist der Unterschied zwischen den Befehlen „Starten ohne Debugging“ und „Debugging starten“?**
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841935"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Erstellen portierbarer Profilerstellungsdatendateien über die Befehlszeile
 Sie können das Befehlszeilentool [VSPerfReport](../profiling/vsperfreport.md) zum Einbetten der Symbole für eine Profilerstellungsausführung in die *VSP*-Datei verwenden, um die Freigabe der Profilerstellungsdaten zu vereinfachen.  
@@ -31,16 +31,16 @@ Sie können das Befehlszeilentool [VSPerfReport](../profiling/vsperfreport.md) z
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Einbetten von Symbolen in die Profilerstellungsdatendatei (*VSP*) für die Profilerstellungsausführung  
   
--   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
+- Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Pfad> **VSPerfReport \<** VSP-Datei> **/PackSymbols**  
+   \<Pfad> <strong>VSPerfReport \<</strong>VSP-Datei> **/PackSymbols**  
   
-     Der Name der *VSPS*-Datei ist standardmäßig der Basisname der *VSP*-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.  
+   Der Name der *VSPS*-Datei ist standardmäßig der Basisname der *VSP*-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Erstellen einer zusammenfassenden Profilerstellungsdatendatei  
   
--   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
+- Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Pfad> **VSPerfReport \<** VSP-Datei> **/SummaryFile** [**/Output:**\<Dateiname>]  
+   \<Pfad> <strong>VSPerfReport \<</strong>VSP-Datei> **/SummaryFile** [**/Output:**\<Dateiname>]  
   
-     Der Name der *VSPS*-Datei ist standardmäßig der Basisname der *VSP*-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.
+   Der Name der *VSPS*-Datei ist standardmäßig der Basisname der *VSP*-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.

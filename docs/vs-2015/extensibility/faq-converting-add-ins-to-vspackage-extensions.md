@@ -13,12 +13,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b391c11fe47914df9c7b3ab1af12d8cbb5a55d9c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b44c9d400f5983feeada9557a79de9df50cfe8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934352"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,94 +62,94 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?  
  Add-In-Code kann auf zwei Arten ausgeführt werden:  
   
--   Ausgelöst durch einen Menübefehl (Der Code befindet sich in der `IDTCommandTarget.Exec`-Methode.)  
+- Ausgelöst durch einen Menübefehl (Der Code befindet sich in der `IDTCommandTarget.Exec`-Methode.)  
   
--   Automatisch beim Start (Der Code befindet sich im `OnConnection`-Ereignishandler.)  
+- Automatisch beim Start (Der Code befindet sich im `OnConnection`-Ereignishandler.)  
   
- Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rückrufmethode hinzu:  
+  Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rückrufmethode hinzu:  
   
 #### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementieren eines Menübefehls in ein VSPackage  
   
-1.  Erstellen Sie ein VSPackage, das über einen Menübefehl verfügt. (Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. Erstellen Sie ein VSPackage, das über einen Menübefehl verfügt. (Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname >* Package.cs.)  
+2. Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  <em>\<Projektname ></em>Package.cs.)  
   
-3.  Fügen Sie folgende `using`-Anweisungen in die Datei ein:  
+3. Fügen Sie folgende `using`-Anweisungen in die Datei ein:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
+4. Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Fügen Sie den Code aus der `IDTCommandTarget.Exec`-Methode des Add-Ins hinzu. Hier ist z. B. Code, der einen neuen Bereich zum fügt die **Ausgabe** Fenster und gibt "Some Text" im neuen Bereich.  
+5. Fügen Sie den Code aus der `IDTCommandTarget.Exec`-Methode des Add-Ins hinzu. Hier ist z. B. Code, der einen neuen Bereich zum fügt die **Ausgabe** Fenster und gibt "Some Text" im neuen Bereich.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  Erstellen Sie das Projekt, und führen Sie es aus. Drücken Sie F5, oder wählen Sie **starten** auf die **Debuggen** Symbolleiste. In der experimentellen Instanz von Visual Studio die **Tools** Menü müssen auf eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, die Wörter **Some Text** sollte angezeigt werden, eine **Ausgabe** Fensterbereich. (Möglicherweise müssen Sie Sie öffnen die **Ausgabe** Fenster.)  
+6. Erstellen Sie das Projekt, und führen Sie es aus. Drücken Sie F5, oder wählen Sie **starten** auf die **Debuggen** Symbolleiste. In der experimentellen Instanz von Visual Studio die **Tools** Menü müssen auf eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, die Wörter **Some Text** sollte angezeigt werden, eine **Ausgabe** Fensterbereich. (Möglicherweise müssen Sie Sie öffnen die **Ausgabe** Fenster.)  
   
- Sie können den Code auch beim Start ausführen lassen. Dieser Ansatz wird jedoch für VSPackage-Erweiterungen generell nicht empfohlen. Wenn beim Start von Visual Studio versucht wird, zu viele Erweiterungen zu laden, kann sich die Startzeit erheblich verlängern. Eine bessere Vorgehensweise ist es, das VSPackage nur automatisch zu laden, wenn eine Bedingung erfüllt ist (beispielsweise, wenn eine Projektmappe geöffnet wird).  
+   Sie können den Code auch beim Start ausführen lassen. Dieser Ansatz wird jedoch für VSPackage-Erweiterungen generell nicht empfohlen. Wenn beim Start von Visual Studio versucht wird, zu viele Erweiterungen zu laden, kann sich die Startzeit erheblich verlängern. Eine bessere Vorgehensweise ist es, das VSPackage nur automatisch zu laden, wenn eine Bedingung erfüllt ist (beispielsweise, wenn eine Projektmappe geöffnet wird).  
   
- Dieses Verfahren zeigt, wie Sie Add-In-Code in einem VSPackage ausführen können, das automatisch geladen wird, wenn eine Projektmappe geöffnet wird:  
+   Dieses Verfahren zeigt, wie Sie Add-In-Code in einem VSPackage ausführen können, das automatisch geladen wird, wenn eine Projektmappe geöffnet wird:  
   
 #### <a name="to-autoload-a-vspackage"></a>Automatisches Laden eines VSPackages  
   
-1.  Erstellen Sie ein VSIX-Projekt mit einem Visual Studio-Paket-Projektelement. (Die Schritte hierzu finden Sie unter [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Fügen Sie einfach die **Visual Studio-Paket** Projektelement stattdessen.) Nennen Sie das VSIX-Projekt **TestAutoload**.  
+1. Erstellen Sie ein VSIX-Projekt mit einem Visual Studio-Paket-Projektelement. (Die Schritte hierzu finden Sie unter [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Fügen Sie einfach die **Visual Studio-Paket** Projektelement stattdessen.) Nennen Sie das VSIX-Projekt **TestAutoload**.  
   
-2.  Öffnen Sie TestAutoloadPackage.cs. Suchen Sie die Zeile, in der die Paketklasse deklariert ist:  
+2. Öffnen Sie TestAutoloadPackage.cs. Suchen Sie die Zeile, in der die Paketklasse deklariert ist:  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  Über dieser Zeile befindet sich ein Satz Attribute. Fügen Sie dieses Attribut hinzu:  
+3. Über dieser Zeile befindet sich ein Satz Attribute. Fügen Sie dieses Attribut hinzu:  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  Setzen Sie einen Haltepunkt in der `Initialize()`-Methode, und starten Sie das Debuggen (F5).  
+4. Setzen Sie einen Haltepunkt in der `Initialize()`-Methode, und starten Sie das Debuggen (F5).  
   
-5.  Öffnen Sie in der experimentellen Instanz ein Projekt. Das VSPackage sollte geladen und der Haltepunkt erreicht werden.  
+5. Öffnen Sie in der experimentellen Instanz ein Projekt. Das VSPackage sollte geladen und der Haltepunkt erreicht werden.  
   
- Sie können andere Kontexte angeben, in denen das VSPackage geladen werden soll, indem Sie die Felder von <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> verwenden. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
+   Sie können andere Kontexte angeben, in denen das VSPackage geladen werden soll, indem Sie die Felder von <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> verwenden. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Wie kann ich das DTE-Objekt abrufen?  
  Wenn das Add-In kein Benutzeroberfläche – zum Beispiel Menübefehle, Schaltflächen der Symbolleiste oder Toolfenster – anzeigt, können Sie möglicherweise den Code unverändert nutzen, solange Sie das DTE-Automatisierungsobjekt aus dem VSPackage abrufen. Gehen Sie dabei folgendermaßen vor:  
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Abrufen des DTE-Objekts aus einem VSPackage  
   
-1.  Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage für Visual Studio-Paket nach der  *\<Projektname >* Datei Package.cs. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
+1. Suchen Sie in einem VSIX-Projekt mit einer Elementvorlage für Visual Studio-Paket nach der  <em>\<Projektname ></em>Datei Package.cs. Dies ist die Klasse, die von <xref:Microsoft.VisualStudio.Shell.Package> abgeleitet wird. Sie kann Ihnen helfen, mit Visual Studio zu interagieren. In diesem Fall verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>-Methode, um das <xref:EnvDTE80.DTE2>-Objekt zu suchen.  
   
-2.  Fügen Sie diese `using`-Anweisungen hinzu:  
+2. Fügen Sie diese `using`-Anweisungen hinzu:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  Suchen Sie die `Initialize`-Methode. Diese Methode behandelt den Befehl, den Sie im Paket-Assistenten angegeben haben. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das DTE-Objekt abzurufen:  
+3. Suchen Sie die `Initialize`-Methode. Diese Methode behandelt den Befehl, den Sie im Paket-Assistenten angegeben haben. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das DTE-Objekt abzurufen:  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- Wenn Sie das <xref:EnvDTE.DTE>-Automatisierungsobjekt abgerufen haben, können Sie den übrigen Code zum Projekt hinzufügen. Wenn Sie das <xref:EnvDTE80.DTE2>-Objekt benötigen, können Sie ebenso verfahren.  
+   Wenn Sie das <xref:EnvDTE.DTE>-Automatisierungsobjekt abgerufen haben, können Sie den übrigen Code zum Projekt hinzufügen. Wenn Sie das <xref:EnvDTE80.DTE2>-Objekt benötigen, können Sie ebenso verfahren.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Wie ändere ich Menübefehle und Schaltflächen der Symbolleisten im Add-In in den Stil des VSPackages?  
  VSPackage-Erweiterungen nutzen die .vsct-Datei zur Erstellung der meisten Menübefehle, Symbolleisten, Schaltflächen der Symbolleisten und anderer Elemente der Benutzeroberfläche. Die **benutzerdefinierten Befehls** Projektelementvorlage bietet Ihnen die Möglichkeit, einen Befehl zu erstellen, auf die **Tools** Menü. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
@@ -164,91 +164,91 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Einfügen von Code zur Fensterverwaltung von einem Add-In in ein VSPackage  
   
-1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
+1. Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname >* Package.cs.)  
+2. Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  <em>\<Projektname ></em>Package.cs.)  
   
-3.  Fügen Sie diese `using`-Anweisungen hinzu:  
+3. Fügen Sie diese `using`-Anweisungen hinzu:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
+4. Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben fügt die **Aufgabenliste**, listet die Anzahl der Aufgaben, und klicken Sie dann eine Aufgabe gelöscht.  
+5. Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben fügt die **Aufgabenliste**, listet die Anzahl der Aufgaben, und klicken Sie dann eine Aufgabe gelöscht.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)   
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)   
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
-        askItem tlItem;   
+       TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
+       askItem tlItem;   
   
-        // Add a couple of tasks to the Task List.   
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
-            vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
-            true, "", 10, true, true);  
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
-            vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
+       // Add a couple of tasks to the Task List.   
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
+           vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
+           true, "", 10, true, true);  
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
+           vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
   
-        // List the total number of task list items after adding the new task items.  
-        System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+       // List the total number of task list items after adding the new task items.  
+       System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
   
-        // Remove the second task item. The items list in reverse numeric order.   
-        System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
-        tl.TaskItems.Item(2).Delete();  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
-    }  
-    ```  
+       // Remove the second task item. The items list in reverse numeric order.   
+       System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
+       tl.TaskItems.Item(2).Delete();  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+   }  
+   ```  
   
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Wie verwalte ich Projekte und Projektmappen in einem VSPackage?  
  Wenn das Add-In Projekte und Projektmappen verwaltet, sollte der Code des Add-Ins auch in einem VSPackage funktionieren. Dieser Vorgang zeigt beispielsweise, wie Sie Code hinzufügen können, der das Startprojekt abruft.  
   
-1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
+1. Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.  
   
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname >* Package.cs.)  
+2. Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  <em>\<Projektname ></em>Package.cs.)  
   
-3.  Fügen Sie diese `using`-Anweisungen hinzu:  
+3. Fügen Sie diese `using`-Anweisungen hinzu:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
+4. Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Fügen Sie den Code aus dem Add-In hinzu. Der folgende Code ruft beispielsweise den Namen eine Startprojekts in einer Projektmappe ab. (Eine Projektmappe mit mehreren Projekten muss geöffnet sein, wenn dieses Paket ausgeführt wird.)  
+5. Fügen Sie den Code aus dem Add-In hinzu. Der folgende Code ruft beispielsweise den Namen eine Startprojekts in einer Projektmappe ab. (Eine Projektmappe mit mehreren Projekten muss geöffnet sein, wenn dieses Paket ausgeführt wird.)  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
-        Project startupProj;   
-        string msg = "";  
+       SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
+       Project startupProj;   
+       string msg = "";  
   
-        foreach (String item in (Array)sb.StartupProjects)   
-        {  
-            msg += item;   
-        }  
-        System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
-        startupProj = dte.Solution.Item(msg);   
-        System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
-    }  
-    ```  
+       foreach (String item in (Array)sb.StartupProjects)   
+       {  
+           msg += item;   
+       }  
+       System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
+       startupProj = dte.Solution.Item(msg);   
+       System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
+   }  
+   ```  
   
 ## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>Wie lege ich Tastenkombinationen in einem VSPackage fest?  
  Verwenden Sie das `<KeyBindings>`-Element der .vsct-Datei. Im folgenden Beispiel ist die Tastenkombination für den Befehl `idCommand1` Alt+A. Die Tastenkombination für den Befehl `idCommand2` ist Alt+Ctrl+A. Beachten Sie die Sytax für die Schlüsselnamen.  

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892310"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
 
@@ -70,25 +70,25 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 
  Es gibt zwei Arten von Aktivitäten:
 
--   *Einfache Aktivitäten* führen Sie eine einzelne Arbeitseinheit, z. B. "1 Tag verzögern" oder "Webdienst starten".
+- *Einfache Aktivitäten* führen Sie eine einzelne Arbeitseinheit, z. B. "1 Tag verzögern" oder "Webdienst starten".
 
--   *Zusammengesetzte Aktivitäten* andere Aktivitäten enthalten, die eine bedingte Aktivität kann beispielsweise zwei Verzweigungen enthalten.
+- *Zusammengesetzte Aktivitäten* andere Aktivitäten enthalten, die eine bedingte Aktivität kann beispielsweise zwei Verzweigungen enthalten.
 
- Beide Arten von Aktivitäten finden Sie in der **Toolbox**.
+  Beide Arten von Aktivitäten finden Sie in der **Toolbox**.
 
- Aktivitäten können Eigenschaften, Methoden und Ereignisse haben. Verwenden der **Eigenschaften** Fenster zum Festlegen der Eigenschaften einer Aktivität.
+  Aktivitäten können Eigenschaften, Methoden und Ereignisse haben. Verwenden der **Eigenschaften** Fenster zum Festlegen der Eigenschaften einer Aktivität.
 
- Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen eine benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen eine benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Aktivitäten sind in den folgenden Registerkarten organisiert die **Toolbox**:
+  Aktivitäten sind in den folgenden Registerkarten organisiert die **Toolbox**:
 
--   **SharePoint-Workflow**
+- **SharePoint-Workflow**
 
--   **Windows Workflow v3. 0**
+- **Windows Workflow v3. 0**
 
--   **Windows Workflow v3. 5**
+- **Windows Workflow v3. 5**
 
- Nicht alle Core-Workflow-Aktivitäten werden von SharePoint unterstützt. Weitere Informationen finden Sie unter [Workflow Aktivitäten für Windows SharePoint Services Overview](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Nicht alle Core-Workflow-Aktivitäten werden von SharePoint unterstützt. Weitere Informationen finden Sie unter [Workflow Aktivitäten für Windows SharePoint Services Overview](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint-Workflow-Aktivitäten
  Die **SharePoint-Workflow** Registerkarten enthalten spezielle Aktivitäten für die Verwendung in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Diese Aktivitäten vereinfachen und optimieren die Entwicklung von Workflows des Lebenszyklus. Weitere Informationen zu den aufgeführten Aktivitäten der **SharePoint-Workflow** finden Sie unter [Workflow Aktivitäten für Windows SharePoint Services Overview](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 
  Es gibt vier Arten von Formularen, die in einem Workflow verwendet werden können:
 
--   Zuordnung
+- Zuordnung
 
--   Initiierung
+- Initiierung
 
--   Änderung
+- Änderung
 
--   Aufgabe
+- Aufgabe
 
- Von diesen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elementvorlagen für Zuordnungs-und Initiierungsformularen enthält. Ein Beispiel für eine *Zuordnungsformular* ist eine, die den Administrator installiert den Workflow können Geben Sie Parameter, die für den Workflow, z. B. ein Ausgabenlimit für einen Expense-Workflow beziehen. Ein Beispiel für eine *Initiierungsformular* ist ein, der dem der Benutzer einen Expense-Workflow geben in den Workflow der Betrag, der sie ausgegeben. Weitere Informationen zu diesen Arten von Formularen, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Von diesen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elementvorlagen für Zuordnungs-und Initiierungsformularen enthält. Ein Beispiel für eine *Zuordnungsformular* ist eine, die den Administrator installiert den Workflow können Geben Sie Parameter, die für den Workflow, z. B. ein Ausgabenlimit für einen Expense-Workflow beziehen. Ein Beispiel für eine *Initiierungsformular* ist ein, der dem der Benutzer einen Expense-Workflow geben in den Workflow der Betrag, der sie ausgegeben. Weitere Informationen zu diesen Arten von Formularen, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Elementeigenschaften
  Sie können Informationen auch mithilfe der Eigenschaften eines Elements in der SharePoint-Bibliothek oder Liste von Benutzern sammeln. Die Hauptcodedatei (Workflow1.cs oder Workflow1.vb) deklariert eine Instanz der Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties-Klasse, die mit dem Namen `workflowProperties`. Verwenden der `workflowProperties` Objekt, das die Eigenschaften der Bibliothek oder Liste im Code zugreifen. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen und Debuggen eine SharePoint-workflowlösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

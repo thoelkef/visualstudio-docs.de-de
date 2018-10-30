@@ -15,12 +15,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1ced074e3257bee41cb9ffcc33279e17b148bbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838282"
 ---
 # <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehlermarker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-
   
 ### <a name="to-implement-the-red-wavy-underline-feature"></a>Für die Implementierung der rote, wellenförmige Unterstreichung-Funktion  
   
-1.  Wählen Sie den Text unter dem Sie die rote Wellenlinie platziert möchten.  
+1. Wählen Sie den Text unter dem Sie die rote Wellenlinie platziert möchten.  
   
-2.  Erstellen Sie einen Marker des Typs `MARKER_CODESENSE_ERROR`. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen der standardmäßigen Textmarkierungen](../extensibility/how-to-add-standard-text-markers.md).  
+2. Erstellen Sie einen Marker des Typs `MARKER_CODESENSE_ERROR`. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen der standardmäßigen Textmarkierungen](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Übergeben Sie anschließend eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstellenzeiger auf.  
+3. Übergeben Sie anschließend eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstellenzeiger auf.  
   
- Dieser Prozess ermöglicht Ihnen die Erstellung von QuickInfo-Text oder in einem speziellen Kontext-Menü auf einen bestimmten Marker. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen der standardmäßigen Textmarkierungen](../extensibility/how-to-add-standard-text-markers.md).  
+   Dieser Prozess ermöglicht Ihnen die Erstellung von QuickInfo-Text oder in einem speziellen Kontext-Menü auf einen bestimmten Marker. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen der standardmäßigen Textmarkierungen](../extensibility/how-to-add-standard-text-markers.md).  
   
- Die folgenden Objekte sind erforderlich, damit fehlermarker angezeigt werden können.  
+   Die folgenden Objekte sind erforderlich, damit fehlermarker angezeigt werden können.  
   
--   Ein Parser.  
+- Ein Parser.  
   
--   Einen Aufgabenanbieter (d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), die unterhält eine Aufzeichnung der Änderungen an Informationen, um die Zeilen erneut analysiert werden.  
+- Einen Aufgabenanbieter (d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), die unterhält eine Aufzeichnung der Änderungen an Informationen, um die Zeilen erneut analysiert werden.  
   
--   Ein textansichtsfilter, die Einfügemarke erfasst Änderungsereignisse in der Ansicht mit den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) Methode.  
+- Ein textansichtsfilter, die Einfügemarke erfasst Änderungsereignisse in der Ansicht mit den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) Methode.  
   
- Der Parser Aufgabenanbieter und Filter bieten die nötige Infrastruktur für fehlermarker zu ermöglichen. Die folgenden Schritte stellen den Prozess, zur Anzeige von fehlermarker.  
+  Der Parser Aufgabenanbieter und Filter bieten die nötige Infrastruktur für fehlermarker zu ermöglichen. Die folgenden Schritte stellen den Prozess, zur Anzeige von fehlermarker.  
   
 1.  In einer Sicht, die gefiltert wird, ruft der Filter ein Zeiger auf den Aufgabenanbieter zugeordnet, die Daten Ansicht ab.  
   

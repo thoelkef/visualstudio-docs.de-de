@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetParent | Microsoft Docs
+title: IDebugProperty2::GetParent | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad6e4688a840f9fb90a46f94d4a2d48eb1be702a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92e3ffde948d7f36e02a4b76086e7b4cee290fa1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864139"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Ruft die übergeordnete Eigenschaft einer Eigenschaft ab.  
@@ -44,7 +44,7 @@ int GetParent (
  [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das das übergeordnete Element der Eigenschaft darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETPARENT_NO_PARENT` , wenn kein übergeordnetes Element.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETPARENT_NO_PARENT` Wenn es kein übergeordnetes Element.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

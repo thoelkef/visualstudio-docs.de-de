@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820693"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,39 +37,39 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
  Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überprüft worden, indem MSBuild auf der Befehlszeile ausgeführt und mit Team Foundation Build verwendet wurde.  
   
--   Windows 8 (x86 und x64)  
+- Windows 8 (x86 und x64)  
   
--   Windows 7 Ultimate  
+- Windows 7 Ultimate  
   
--   Windows Server 2008 R2 Standard  
+- Windows Server 2008 R2 Standard  
   
- Nachdem Sie die Schritte in dieser exemplarischen Vorgehensweise abgeschlossen haben, können Sie die Mehrcomputerumgebung zum Erstellen dieser Arten von Apps verwenden:  
+  Nachdem Sie die Schritte in dieser exemplarischen Vorgehensweise abgeschlossen haben, können Sie die Mehrcomputerumgebung zum Erstellen dieser Arten von Apps verwenden:  
   
--   C++-Desktop-Apps, die das Windows 8-SDK verwenden  
+- C++-Desktop-Apps, die das Windows 8-SDK verwenden  
   
--   Visual Basic- oder C#-Desktop-Apps, die auf .NET Framework 4.5 ausgerichtet sind  
+- Visual Basic- oder C#-Desktop-Apps, die auf .NET Framework 4.5 ausgerichtet sind  
   
- Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwendet werden:  
+  Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwendet werden:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps. Zum Erstellen von [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps. Zum Erstellen von [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.  
   
--   Desktop-Apps, die auf .NET Framework 4 oder früher ausgerichtet sind. Um diese Arten von Apps zu erstellen, müssen Sie Visual Studio oder die .NET-Verweisassemblys und - Tools (aus dem Windows 7.1-SDK) auf dem Buildcomputer installieren.  
+- Desktop-Apps, die auf .NET Framework 4 oder früher ausgerichtet sind. Um diese Arten von Apps zu erstellen, müssen Sie Visual Studio oder die .NET-Verweisassemblys und - Tools (aus dem Windows 7.1-SDK) auf dem Buildcomputer installieren.  
   
- Diese exemplarische Vorgehensweise ist in folgende Teile gegliedert:  
+  Diese exemplarische Vorgehensweise ist in folgende Teile gegliedert:  
   
--   [Installieren von Software auf den Computern](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
+- [Installieren von Software auf den Computern](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
   
--   [Kopieren von Dateien vom Buildcomputer zum Hostcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
+- [Kopieren von Dateien vom Buildcomputer zum Hostcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
   
--   [Erstellen von Registrierungseinstellungen](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
+- [Erstellen von Registrierungseinstellungen](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
   
--   [Einstellungsumgebungsvariablen auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
+- [Einstellungsumgebungsvariablen auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
   
--   [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
+- [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
   
--   [Erstellen von Projekten](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
+- [Erstellen von Projekten](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
   
--   [Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
+- [Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
@@ -91,196 +91,196 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 ##  <a name="CopyingFiles"></a> Kopieren von Dateien vom Buildcomputer zum Hostcomputer  
  In diesem Abschnitt wird das Kopieren bestimmter Dateien, Compilern, Buildtools, MSBuild-Ressourcen und von Registrierungseinstellungen vom Hostcomputer zum Buildcomputer behandelt. Bei diesen Anweisungen wird vorausgesetzt, dass Visual Studio auf dem Hostcomputer im Standardspeicherort installiert wurde. Wurde es in einem anderen Speicherort installiert, passen Sie die Schritte entsprechend an.  
   
--   Auf einem x86-Computer lautet der Standardspeicherort "C:\Programme\Microsoft Visual Studio 11.0 \"  
+- Auf einem x86-Computer lautet der Standardspeicherort "C:\Programme\Microsoft Visual Studio 11.0 \"  
   
--   Auf einem x64-Computer lautet der Standardspeicherort "C:\Programme (x86)\Microsoft Visual Studio 11.0 \"  
+- Auf einem x64-Computer lautet der Standardspeicherort "C:\Programme (x86)\Microsoft Visual Studio 11.0 \"  
   
- Beachten Sie, dass der Name des Programmdateiordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name \Programme\\; auf einem x64-Computer lautet der Name \Programme(x86)\\. Ungeachtet der Systemarchitektur wird der Ordner "Programme" in dieser exemplarischen Vorgehensweise als "%ProgramFiles%" bezeichnet.  
+  Beachten Sie, dass der Name des Programmdateiordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name \Programme\\; auf einem x64-Computer lautet der Name \Programme(x86)\\. Ungeachtet der Systemarchitektur wird der Ordner "Programme" in dieser exemplarischen Vorgehensweise als "%ProgramFiles%" bezeichnet.  
   
 > [!NOTE]
 >  Auf dem Buildcomputer müssen sich alle relevanten Dateien auf dem gleichen Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>So kopieren Sie die Windows SDK-Dateien auf den Buildcomputer  
   
-1.  Ist nur das Windows SDK für Windows 8 installiert, kopieren Sie diese Ordner rekursiv vom Hostcomputer auf den Buildcomputer:  
+1. Ist nur das Windows SDK für Windows 8 installiert, kopieren Sie diese Ordner rekursiv vom Hostcomputer auf den Buildcomputer:  
   
-    -   %ProgramFiles%\Windows Kits\8.0\bin\  
+   - %ProgramFiles%\Windows Kits\8.0\bin\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Catalogs\  
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\DesignTime\  
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\include\  
+   - %ProgramFiles%\Windows Kits\8.0\include\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Lib\  
+   - %ProgramFiles%\Windows Kits\8.0\Lib\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Redist\  
+   - %ProgramFiles%\Windows Kits\8.0\Redist\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\References\  
+   - %ProgramFiles%\Windows Kits\8.0\References\  
   
      Wenn Sie über weitere Windows 8-Kits verfügen...  
   
-    -   Microsoft Windows Assessment and Deployment Kit  
+   - Microsoft Windows Assessment and Deployment Kit  
   
-    -   Microsoft Windows-Treiberkit  
+   - Microsoft Windows-Treiberkit  
   
-    -   Microsoft Windows Hardware Certification Kit  
+   - Microsoft Windows Hardware Certification Kit  
   
      ... wurden möglicherweise Dateien in die Ordner "%ProgramFiles%\Windows Kits\8.0\" installiert, die im vorherigen Schritt aufgeführt wurden, und ihre Lizenzbedingungen gestatten möglicherweise keine Buildserverrechte für diese Dateien. Überprüfen Sie die Lizenzbestimmungen für jedes installierte Windows-Kit, um zu überprüfen, ob möglicherweise Dateien auf den Buildcomputer kopiert wurden. Wenn die Lizenzbestimmungen keine Buildserverrechte ermöglichen, entfernen Sie die Dateien vom Buildcomputer.  
   
-2.  Kopieren Sie die folgenden Ordner rekursiv vom Hostcomputer auf den Buildcomputer:  
+2. Kopieren Sie die folgenden Ordner rekursiv vom Hostcomputer auf den Buildcomputer:  
   
-    -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-    -   %ProgramFiles%\Common Files\Merge Modules\  
+   -   %ProgramFiles%\Common Files\Merge Modules\  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
-3.  Kopieren Sie diese Dateien vom Hostcomputer auf den Buildcomputer:  
+3. Kopieren Sie diese Dateien vom Hostcomputer auf den Buildcomputer:  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
-4.  Die folgenden Visual C++-Laufzeitbibliotheken sind nur erforderlich, wenn Sie Buildausgaben auf den Build Computer ausführen. z. B. als Teil automatisierter Tests. Die Dateien befinden sich abhängig von der Systemarchitektur in der Regel in Unterordnern unter dem Ordner "%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86" oder dem Ordner "%ProgramFiles%\ Microsoft Visual Studio 11.0\VC\redist\x64\". Kopieren Sie die x86-Binärdateien auf x86-Systemen in den Ordner "\Windows\ System32\". Kopieren Sie die x86-Binärdateien auf x64-Systemen in den Ordner "Windows\SysWOW64\" und die x64-Binärdateien in den Ordner "Windows\System32\".  
+4. Die folgenden Visual C++-Laufzeitbibliotheken sind nur erforderlich, wenn Sie Buildausgaben auf den Build Computer ausführen. z. B. als Teil automatisierter Tests. Die Dateien befinden sich abhängig von der Systemarchitektur in der Regel in Unterordnern unter dem Ordner "%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86" oder dem Ordner "%ProgramFiles%\ Microsoft Visual Studio 11.0\VC\redist\x64\". Kopieren Sie die x86-Binärdateien auf x86-Systemen in den Ordner "\Windows\ System32\". Kopieren Sie die x86-Binärdateien auf x64-Systemen in den Ordner "Windows\SysWOW64\" und die x64-Binärdateien in den Ordner "Windows\System32\".  
   
-    -   \Microsoft.VC110.ATL\atl110.dll  
+   -   \Microsoft.VC110.ATL\atl110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcp110.dll  
+   -   \Microsoft.VC110.CRT\msvcp110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcr110.dll  
+   -   \Microsoft.VC110.CRT\msvcr110.dll  
   
-    -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110.dll  
+   -   \Microsoft.VC110.MFC\mfc110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110u.dll  
+   -   \Microsoft.VC110.MFC\mfc110u.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110.dll  
+   -   \Microsoft.VC110.MFC\mfcm110.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   -   \Microsoft.VC110.MFC\mfcm110u.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-    -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5.  Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
+5. Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
   
-    -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-    -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-    -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-    -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
 ##  <a name="CreatingRegistry"></a> Erstellen von Registrierungseinstellungen  
  Sie müssen zum Konfigurieren von Einstellungen für MSBuild Registrierungseinträge erstellen.  
   
 #### <a name="to-create-registry-settings"></a>So erstellen Sie Registrierungseinstellungen  
   
-1.  Identifizieren Sie den übergeordneten Ordner für Registrierungseinträge. Alle Registrierungseinträge werden unter dem gleichen übergeordneten Schlüssel erstellt. Auf einem x86-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Auf einem x64-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\“. Ungeachtet der Systemarchitektur wird der übergeordnete Schlüssel in dieser exemplarischen Vorgehensweise als "%RegistryRoot%" bezeichnet.  
+1. Identifizieren Sie den übergeordneten Ordner für Registrierungseinträge. Alle Registrierungseinträge werden unter dem gleichen übergeordneten Schlüssel erstellt. Auf einem x86-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Auf einem x64-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\“. Ungeachtet der Systemarchitektur wird der übergeordnete Schlüssel in dieser exemplarischen Vorgehensweise als "%RegistryRoot%" bezeichnet.  
   
-    > [!NOTE]
-    >  Wenn sich die Architektur des Hostcomputers von der Ihres Buildcomputers unterscheidet, stellen Sie sicher, dass der entsprechende übergeordneten Schlüssel auf jedem Computer verwendet wird. Dies ist insbesondere dann wichtig, wenn Sie den Exportvorgang automatisieren.  
-    >   
-    >  Wenn Sie auf dem Buildcomputer zudem einen anderen Laufwerkbuchstaben als auf dem Hostcomputer verwenden, stellen Sie sicher, die Registrierungseinträge entsprechend zu ändern, damit sie übereinstimmen.  
+   > [!NOTE]
+   >  Wenn sich die Architektur des Hostcomputers von der Ihres Buildcomputers unterscheidet, stellen Sie sicher, dass der entsprechende übergeordneten Schlüssel auf jedem Computer verwendet wird. Dies ist insbesondere dann wichtig, wenn Sie den Exportvorgang automatisieren.  
+   >   
+   >  Wenn Sie auf dem Buildcomputer zudem einen anderen Laufwerkbuchstaben als auf dem Hostcomputer verwenden, stellen Sie sicher, die Registrierungseinträge entsprechend zu ändern, damit sie übereinstimmen.  
   
-2.  Erstellen Sie auf dem Buildcomputer die folgenden Registrierungseinträge. Alle diese Einträge sind Zeichenfolgen (Typ "== REG_SZ" in der Registrierung). Legen Sie die Werte dieser Einträge entsprechend der Werte der vergleichbaren Einträge auf dem Hostcomputer fest.  
+2. Erstellen Sie auf dem Buildcomputer die folgenden Registrierungseinträge. Alle diese Einträge sind Zeichenfolgen (Typ "== REG_SZ" in der Registrierung). Legen Sie die Werte dieser Einträge entsprechend der Werte der vergleichbaren Einträge auf dem Hostcomputer fest.  
   
-    -   %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)  
+   - %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
   
-    -   %RegistryRoot%\VisualStudio\11.0@Source Directories  
+   - %RegistryRoot%\VisualStudio\11.0@Source Directories  
   
-    -   %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir  
+   - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@11.0  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VS7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VS7@11.0  
   
-    -   %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
+   - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
      Auf einem x64-Buildcomputer erstellen Sie zudem folgenden Registrierungseintrag und beachten den Hostcomputer, um zu bestimmen, wie diese festzulegen sind.  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
   
      Wenn es sich um einen x64-Buildcomputer handelt und Sie die 64-Bit-Version von MSBuild verwenden möchten, oder wenn Sie einem Team Foundation Server-Builddienst auf einem x64-Computer verwenden, müssen die folgenden Registrierungseinträgen in der nativen 64-Bit-Registrierung erstellt werden. Beziehen Sie sich auf den Hostcomputer, um zu bestimmen, wie diese Einträge festzulegen sind.  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
 ##  <a name="SettingEnvVariables"></a> Einstellungsumgebungsvariablen auf dem Buildcomputer  
  Um MSBuild auf dem Buildcomputer zu verwenden, müssen die PATH-Umgebungsvariablen festgelegt werden. Sie können "vcvarsall.bat" zum Festlegen der Variablen verwenden, oder sie können sie manuell konfigurieren.  
@@ -301,23 +301,23 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
 #### <a name="to-manually-set-environment-variables"></a>So legen Sie Umgebungsvariablen manuell fest  
   
-1.  Zur manuellen Konfiguration der Befehlszeilenumgebung fügen Sie der PATH-Umgebungsvariable diesen Pfad hinzu:  
+1. Zur manuellen Konfiguration der Befehlszeilenumgebung fügen Sie der PATH-Umgebungsvariable diesen Pfad hinzu:  
   
-    -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
-2.  Optional können Sie der PATH-Variable auch die folgenden Pfade hinzufügen, um die Verwendung von MSBuild zum Erstellen der Lösungen zu vereinfachen.  
+2. Optional können Sie der PATH-Variable auch die folgenden Pfade hinzufügen, um die Verwendung von MSBuild zum Erstellen der Lösungen zu vereinfachen.  
   
-     Wenn Sie das systemeigene MSBuild mit 32-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:  
+    Wenn Sie das systemeigene MSBuild mit 32-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:  
   
-    -   %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools  
   
-    -   %windir%\Microsoft.NET\Framework\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework\v4.0.30319  
   
      Wenn Sie das native MSBuild mit 64-Bit verwenden möchten, fügen Sie der PATH-Variable diese Pfade hinzu:  
   
-    -   %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
   
-    -   %windir%\Microsoft.NET\Framework64\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
 ##  <a name="InstallingMSBuildToGAC"></a> Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer  
  Für MSBuild ist die Installation einiger zusätzlicher Assemblys zum GAC auf dem Buildcomputer erforderlich.  

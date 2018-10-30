@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836735"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Zur Anzeige einer Schaltfläche, wenn ein oder mehrere Projekte geöffnet sind.  
   
-1.  In der `<Buttons>` Abschnitt der ToolbarButtonPackage.vsct, fügen Sie zwei Befehlsflags hinzu, mit dem vorhandenen `<Button>` Element, das zwischen der `<Strings>` und `<Icons>` Tags.  
+1. In der `<Buttons>` Abschnitt der ToolbarButtonPackage.vsct, fügen Sie zwei Befehlsflags hinzu, mit dem vorhandenen `<Button>` Element, das zwischen der `<Strings>` und `<Icons>` Tags.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     Die `DefaultInvisible` und `DynamicVisibility` Flags müssen festgelegt werden, also diese Einträge in der `<VisibilityConstraints>` Abschnitt wirksam werden kann.  
+    Die `DefaultInvisible` und `DynamicVisibility` Flags müssen festgelegt werden, also diese Einträge in der `<VisibilityConstraints>` Abschnitt wirksam werden kann.  
   
-2.  Erstellen Sie eine `<VisibilityConstraints>` -Abschnitt, der zwei `<VisibilityItem>` Einträge. Fügen den neuen Abschnitt direkt hinter dem schließenden `</Commands>` Tag.  
+2. Erstellen Sie eine `<VisibilityConstraints>` -Abschnitt, der zwei `<VisibilityItem>` Einträge. Fügen den neuen Abschnitt direkt hinter dem schließenden `</Commands>` Tag.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Jedes Visibility-Element stellt eine Bedingung, unter der die angegebene Schaltfläche angezeigt wird. Um mehrere Bedingungen erfüllt sind, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.  
+    Jedes Visibility-Element stellt eine Bedingung, unter der die angegebene Schaltfläche angezeigt wird. Um mehrere Bedingungen erfüllt sind, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.  
   
-3.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
-     Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche "durchgestrichen".  
+    Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche "durchgestrichen".  
   
-4.  Öffnen Sie jede Lösung, die ein Projekt enthält.  
+4. Öffnen Sie jede Lösung, die ein Projekt enthält.  
   
-     Die Schaltfläche "durchgestrichen" wird auf der Symbolleiste rechts neben der vorhandenen Schaltflächen angezeigt.  
+    Die Schaltfläche "durchgestrichen" wird auf der Symbolleiste rechts neben der vorhandenen Schaltflächen angezeigt.  
   
-5.  Auf der **Datei** Menü klicken Sie auf **Projektmappe schließen**. Die Schaltfläche wird über die Symbolleiste ausgeblendet.  
+5. Auf der **Datei** Menü klicken Sie auf **Projektmappe schließen**. Die Schaltfläche wird über die Symbolleiste ausgeblendet.  
   
- Die Sichtbarkeit der Schaltfläche wird gesteuert, indem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bis das VSPackage geladen wird. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   Die Sichtbarkeit der Schaltfläche wird gesteuert, indem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bis das VSPackage geladen wird. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

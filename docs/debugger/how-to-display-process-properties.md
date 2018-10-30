@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Prozesseigenschaften | Microsoft Docs'
+title: 'Vorgehensweise: Anzeigen von Prozesseigenschaften | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9925f874f2d9dfc06b56d58a20ce9248624dbc31
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 25138eb6c9f7616f68841a45fcd1001ccd3dc84f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826322"
 ---
 # <a name="how-to-display-process-properties"></a>Gewusst wie: Anzeigen von Prozesseigenschaften
-So ermitteln Sie weitere Informationen zu einem Prozess aufgelistet, die [Prozessansicht](../debugger/processes-view.md), verwenden Sie die [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md).  
+Um weitere Informationen zu einem Prozess aufgelistet, die [Prozessansicht](../debugger/processes-view.md), verwenden Sie die [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md).  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Öffnen Sie ein Dialogfeld "Prozesseigenschaften"  
   
-1.  Wählen Sie aus der Struktur angezeigt werden, einen Prozess **Prozessansicht**.  
+1. Wählen Sie einen Prozess aus der Struktur im angezeigten **Prozessansicht**.  
   
-2.  Aus der **Ansicht** Menü wählen **Eigenschaften**.  
+2. Von der **Ansicht** Menü wählen **Eigenschaften**.  
   
- Eigenschaftendialogfelder sind nicht modal ist, klicken Sie auf ein anderes Element in einem Fenster anzeigen und im Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
+   Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 902c7b6dffcb47c12e150ea49694d6c759d095ad
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823124"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Gewusst wie: Öffnen von Editoren für geöffnete Dokumente
 Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuerst bestimmen, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist. Die Datei kann entweder in einem projektspezifischen-Editor zu öffnen oder einem standard-Editor registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -28,21 +28,21 @@ Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuer
   
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Um für eine geöffnete Datei eine projektspezifische Editor zu öffnen.  
   
-1.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>-Methode auf.  
+1. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>-Methode auf.  
   
-     Dieser Aufruf gibt Zeiger des Dokuments Hierarchie Hierarchieelement und Fensterrahmen, zurück, falls zutreffend.  
+    Dieser Aufruf gibt Zeiger des Dokuments Hierarchie Hierarchieelement und Fensterrahmen, zurück, falls zutreffend.  
   
-2.  Wenn das Dokument geöffnet ist, muss das Projekt überprüfen, um festzustellen, ob nur ein dokumentdatenobjekt vorhanden ist, oder ob ein dokumentenansichtsobjekt auch vorhanden ist.  
+2. Wenn das Dokument geöffnet ist, muss das Projekt überprüfen, um festzustellen, ob nur ein dokumentdatenobjekt vorhanden ist, oder ob ein dokumentenansichtsobjekt auch vorhanden ist.  
   
-    -   Wenn ein dokumentenansichtsobjekt vorhanden ist, und diese Ansicht für eine andere Hierarchie oder das Hierarchieelement ist, verwendet das Projekt den Zeiger auf den Fensterrahmen für der Ansicht zum vorhandene Fenster zu diesem an.  
+   - Wenn ein dokumentenansichtsobjekt vorhanden ist, und diese Ansicht für eine andere Hierarchie oder das Hierarchieelement ist, verwendet das Projekt den Zeiger auf den Fensterrahmen für der Ansicht zum vorhandene Fenster zu diesem an.  
   
-    -   Wenn ein dokumentenansichtsobjekt vorhanden ist und diese Ansicht für die gleiche Hierarchie und Hierarchieelement ist, können das Projekt eine zweite Ansicht öffnen, wenn es an das zugrunde liegende Datenobjekt von Dokument anfügen kann. Andernfalls sollte das Projekt den Zeiger auf den Fensterrahmen für der Ansicht verwenden, auf diesem vorhandene Fenster.  
+   - Wenn ein dokumentenansichtsobjekt vorhanden ist und diese Ansicht für die gleiche Hierarchie und Hierarchieelement ist, können das Projekt eine zweite Ansicht öffnen, wenn es an das zugrunde liegende Datenobjekt von Dokument anfügen kann. Andernfalls sollte das Projekt den Zeiger auf den Fensterrahmen für der Ansicht verwenden, auf diesem vorhandene Fenster.  
   
-    -   Wenn nur das dokumentendatenobjekt vorhanden ist, sollte das Projekt bestimmen, ob das dokumentendatenobjekt für seine Ansicht verwendet werden können. Wenn das dokumentendatenobjekt kompatibel ist, vollständige die Schritte erläutert [öffnen Sie einen projektspezifischen Editor](../extensibility/how-to-open-project-specific-editors.md).  
+   - Wenn nur das dokumentendatenobjekt vorhanden ist, sollte das Projekt bestimmen, ob das dokumentendatenobjekt für seine Ansicht verwendet werden können. Wenn das dokumentendatenobjekt kompatibel ist, vollständige die Schritte erläutert [öffnen Sie einen projektspezifischen Editor](../extensibility/how-to-open-project-specific-editors.md).  
   
      Wenn das dokumentendatenobjekt nicht kompatibel ist, sollte ein Fehler, die dem Benutzer angezeigt werden, der angibt, dass die Datei zurzeit verwendet wird. Dieser Fehler sollte nur in vorübergehende Fälle angezeigt werden, wie z. B. wenn eine Datei zur gleichen Zeit kompiliert wird der Benutzer versucht, zum Öffnen der Datei mit einem Editor außer der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kerntext-Editor. Der kerntext-Editor kann der Compiler dokumentendatenobjekt freigeben.  
   
-3.  Wenn das Dokument nicht geöffnet ist, da keine dokumentdatenobjekt oder dokumentenansichtsobjekt vorhanden ist, führen Sie die Schritte in [öffnen Sie einen projektspezifischen Editor](../extensibility/how-to-open-project-specific-editors.md).  
+3. Wenn das Dokument nicht geöffnet ist, da keine dokumentdatenobjekt oder dokumentenansichtsobjekt vorhanden ist, führen Sie die Schritte in [öffnen Sie einen projektspezifischen Editor](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="open-a-standard-editor"></a>Öffnen Sie einen standard-editor  
  Öffnen Sie mithilfe des folgenden Verfahrens können Sie einen standard-Editor für eine Datei zu öffnen, die bereits ist.  

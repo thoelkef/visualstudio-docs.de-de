@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830768"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leistungsbericht** der integrierten Entwicklungsumgebung (integrated Development Environment (IDE)) der Visual Studio Team System Development Edition anzeigen. Die Profilerstellungsdaten werden in VSP- und VSPS-Dateien gespeichert. In den Anzeigefenstern für Berichte können Sie Leistungsprobleme der Anwendung anzeigen und analysieren.  
@@ -42,13 +42,13 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
 ### <a name="callercallee-view"></a>Aufrufer-/Aufgerufener-Ansicht  
  Die Aufrufer-/Aufgerufener-Ansicht zeigt eine Aufrufstruktur für eine einzelne Funktion. Das Ansicht ist in drei Teile unterteilt:  
   
--   Die Zielfunktion wird in der Mitte der Ansicht angezeigt.  
+- Die Zielfunktion wird in der Mitte der Ansicht angezeigt.  
   
--   Die Funktionen, die die Funktion (Aufrufer) aufgerufen haben, werden oberhalb der Zielfunktion angezeigt.  
+- Die Funktionen, die die Funktion (Aufrufer) aufgerufen haben, werden oberhalb der Zielfunktion angezeigt.  
   
--   Die Funktionen, die von der Zielfunktion (Aufgerufene) aufgerufen werden, werden unter dem Ziel angezeigt.  
+- Die Funktionen, die von der Zielfunktion (Aufgerufene) aufgerufen werden, werden unter dem Ziel angezeigt.  
   
- Sie können eine andere Funktion durch Doppelklicken auf eine beliebige Funktion in der Aufrufer-/Aufgerufener-Liste auswählen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
+  Sie können eine andere Funktion durch Doppelklicken auf eine beliebige Funktion in der Aufrufer-/Aufgerufener-Liste auswählen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Aufrufstrukturansicht  
  In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von dieser aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.  

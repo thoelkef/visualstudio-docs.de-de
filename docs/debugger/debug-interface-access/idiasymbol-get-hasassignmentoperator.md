@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasassignmentoperator | Microsoft Docs'
+title: 'Idiasymbol:: Get_hasassignmentoperator | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a8799ae740566bef247238a98b7dc58ca97ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850008"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp alle Zuweisungsoperatoren definiert wurde.  
+Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp Zuweisungsoperatoren definiert hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,20 +34,20 @@ HRESULT get_hasAssignmentOperator (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn der benutzerdefinierte Datentyp alle Zuweisungsoperatoren definiert; besitzt, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn der benutzerdefinierte Datentyp Zuweisungsoperatoren definiert wurde, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK Version 7.0|  
+|Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM | Microsoft Docs
+title: METADATA_ADDRESS_PARAM | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2cc91ea41003f153a1b3910510f41bc032bf221
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e30e1d19a52042ad6edeabb6df4ee8e3aaf17b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893873"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Diese Struktur stellt einen Parameter einer Methode oder Funktion dar.  
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_PARAM {
   
 ## <a name="terms"></a>Begriffe  
  tokMethod  
- Die ID der Methode der Parameter enthalten ist.  
+ Die ID der Methode ist der Parameter Teil.  
   
  tokParam  
  Die ID des Parameters.  
@@ -54,7 +54,7 @@ public struct METADATA_ADDRESS_PARAM {
  Der Index des Parameters in einer Liste von Parametern.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_PARAM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_PARAM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

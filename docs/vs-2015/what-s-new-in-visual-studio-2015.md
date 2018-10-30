@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828740"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Was&#39;Neues in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
 ## <a name="connect-to-services"></a>Verbinden mit Diensten  
  Mit Visual Studio 2015 ist es einfacher denn je, Ihre App mit Diensten zu verbinden.  Der neue Assistent zum Hinzufügen eines verbundenen Diensts konfiguriert Ihr Projekt, fügt die nötige Unterstützung für die Authentifizierung hinzu und lädt die nötigen NuGet-Pakete herunter, damit Sie schnell und einfach mit der Programmierung für Ihren Dienst beginnen können. Außerdem ist der Assistent zum Hinzufügen eines verbundenen Diensts in den neuen Konto-Manager integriert, um die Verwendung mehrerer Benutzerkonten und Abonnements zu erleichtern. Bei Visual Studio 2015 ist die Unterstützung der folgenden Dienste standardmäßig direkt enthalten (sofern Sie ein Konto besitzen):  
   
-1.  Azure-Mobile Services  
+1. Azure-Mobile Services  
   
-2.  Azure Storage  
+2. Azure Storage  
   
-3.  Office 365 (E-Mail, Kontakte, Kalender, Dateien, Benutzer und Gruppen)  
+3. Office 365 (E-Mail, Kontakte, Kalender, Dateien, Benutzer und Gruppen)  
   
-4.  Salesforce  
+4. Salesforce  
   
- Es werden ständig weitere Dienste hinzugefügt. Sie können sie entdecken, indem Sie im Assistenten auf den Link zum Suchen nach neuen Diensten klicken.  
+   Es werden ständig weitere Dienste hinzugefügt. Sie können sie entdecken, indem Sie im Assistenten auf den Link zum Suchen nach neuen Diensten klicken.  
   
- ![Hinzufügen des Dialogfelds "verbundene Dienste"](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Hinzufügen des Dialogfelds "verbundene Dienste"](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Entwerfen der Benutzeroberfläche  
  Die Blend-Umgebung zum Entwerfen von XAML-Benutzeroberflächen wurde wesentlich verbessert. Blend wurde völlig umgestaltet und bietet nun eine intuitivere Benutzeroberfläche, leistungsstärkere XAML-Bearbeitungsfunktionen, einschließlich IntelliSense, und bessere Integration in Visual Studio. Weitere Informationen finden Sie unter [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
   
  Visual Studio Professional und Visual Studio Enterprise ermöglichen jetzt Folgendes:  
   
--   Rufen Sie den Verlauf für eine gesamte Codedatei im Visual Studio-Editor ab.  
+- Rufen Sie den Verlauf für eine gesamte Codedatei im Visual Studio-Editor ab.  
   
-     ![CodeLens: Abrufen von Codedateidetails](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens: Abrufen von Codedateidetails](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Zeigen Sie ein Diagramm mit den Personen an, die Ihren Code geändert haben. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.  
+- Zeigen Sie ein Diagramm mit den Personen an, die Ihren Code geändert haben. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.  
   
-     ![CodeLens: Anzeigen des Verlaufs von Codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens: Anzeigen des Verlaufs von Codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")  
   
--   Erkennen Sie ganz leicht, wann der Code zuletzt geändert wurde.  
+- Erkennen Sie ganz leicht, wann der Code zuletzt geändert wurde.  
   
--   Suchen Sie nach Änderungen in anderen Verzweigungen, die sich auf den Code auswirken.  
+- Suchen Sie nach Änderungen in anderen Verzweigungen, die sich auf den Code auswirken.  
   
- Siehe [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Siehe [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Entwurfs- und Modellierungstools (nur Enterprise Edition)  
  **Code Maps und Abhängigkeitsdiagramme**  
@@ -213,35 +213,35 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
   
  Zu den weiteren Verbesserungen gehören:  
   
--   **Verbesserte Top-Down-Diagramme**. Für mittlere bis große Visual Studio-Projektmappen können Sie nun ein vereinfachtes Architektur-Menü verwenden, um weitere nützliche Codezuordnungen für Ihre Lösung abzurufen. Die Assemblys der Projektmappe werden nach den Projektmappenordnern gruppiert, dadurch können Sie Sie im Kontext betrachten und die Mühen nutzen, die Sie in die Strukturierung der Lösung gesteckt haben. Ihnen werden sofort Projekt- und Assemblyverweise und anschließend die Linktypen angezeigt. Darüber hinaus werden die Assemblys, die sich außerhalb der Projektmappe befinden, in einer kompakteren Weise gruppiert.  
+- **Verbesserte Top-Down-Diagramme**. Für mittlere bis große Visual Studio-Projektmappen können Sie nun ein vereinfachtes Architektur-Menü verwenden, um weitere nützliche Codezuordnungen für Ihre Lösung abzurufen. Die Assemblys der Projektmappe werden nach den Projektmappenordnern gruppiert, dadurch können Sie Sie im Kontext betrachten und die Mühen nutzen, die Sie in die Strukturierung der Lösung gesteckt haben. Ihnen werden sofort Projekt- und Assemblyverweise und anschließend die Linktypen angezeigt. Darüber hinaus werden die Assemblys, die sich außerhalb der Projektmappe befinden, in einer kompakteren Weise gruppiert.  
   
--   **Testprojekte sind unterschiedlich formatiert und können gefiltert werden**. Sie können jetzt einfach und schnell Testprojekte in der Übersicht ermitteln, da sie unterschiedlich formatiert sind. Sie können auch herausgefiltert werden, damit Sie sich auf den Arbeitscode der Anwendung konzentrieren können.  
+- **Testprojekte sind unterschiedlich formatiert und können gefiltert werden**. Sie können jetzt einfach und schnell Testprojekte in der Übersicht ermitteln, da sie unterschiedlich formatiert sind. Sie können auch herausgefiltert werden, damit Sie sich auf den Arbeitscode der Anwendung konzentrieren können.  
   
--   **Vereinfachte externe Abhängigkeitslinks**. Abhängigkeitslinks stellen nicht mehr die Vererbung von System.Object, System.ValueType, System.Enum und System.Delegate dar, dadurch lassen sich externe Abhängigkeiten in der Codezuordnung leichter auffinden.  
+- **Vereinfachte externe Abhängigkeitslinks**. Abhängigkeitslinks stellen nicht mehr die Vererbung von System.Object, System.ValueType, System.Enum und System.Delegate dar, dadurch lassen sich externe Abhängigkeiten in der Codezuordnung leichter auffinden.  
   
--   **Drilldown-Abhängigkeitslinks berücksichtigen Filter**. Dadurch erhalten Sie ein nützliches, klar strukturiertes Diagramm beim Erweitern, damit Sie die Rolle für einen Abhängigkeitslink besser nachvollziehen können. Das Diagramm ist weniger überladen und berücksichtigt die Linkfilteroptionen, die Sie ausgewählt haben.  
+- **Drilldown-Abhängigkeitslinks berücksichtigen Filter**. Dadurch erhalten Sie ein nützliches, klar strukturiertes Diagramm beim Erweitern, damit Sie die Rolle für einen Abhängigkeitslink besser nachvollziehen können. Das Diagramm ist weniger überladen und berücksichtigt die Linkfilteroptionen, die Sie ausgewählt haben.  
   
--   **Codeelemente werden zu einer Codezuordnung mit Kontext hinzugefügt**. Da Diagramme jetzt mit ihrem Kontext (bis zum Assembly- und Projektmappenordner, den Sie ggf. herausfiltern können), erhalten Sie weitere nützliche Diagramme beim Ziehen und Ablegen von Codeelementen aus dem Projektmappen-Explorer, der Klassenansicht und dem Objektkatalog; oder beim Auswählen von Elementen im Projektmappen-Explorer und beim Auswählen der Option „In Codezuordnung anzeigen“.  
+- **Codeelemente werden zu einer Codezuordnung mit Kontext hinzugefügt**. Da Diagramme jetzt mit ihrem Kontext (bis zum Assembly- und Projektmappenordner, den Sie ggf. herausfiltern können), erhalten Sie weitere nützliche Diagramme beim Ziehen und Ablegen von Codeelementen aus dem Projektmappen-Explorer, der Klassenansicht und dem Objektkatalog; oder beim Auswählen von Elementen im Projektmappen-Explorer und beim Auswählen der Option „In Codezuordnung anzeigen“.  
   
--   **Reaktive Codezuordnungen schneller abrufen**. Drag & Drop-Vorgänge erzeugen ein sofortiges Ergebnis, und die Links zwischen Knoten werden wesentlich schneller erstellt, ohne Auswirkungen auf nachfolgende von Benutzern initiierte Vorgänge wie z. B. das Erweitern eines Knotens oder das Anfordern mehr Knoten zu haben. Beim Erstellen von Codezuordnungen ohne die Lösung zu entwickeln, werden nun alle Ausnahmefälle, wie z. B. wenn Assemblys nicht erstellt werden, verarbeitet.  
+- **Reaktive Codezuordnungen schneller abrufen**. Drag & Drop-Vorgänge erzeugen ein sofortiges Ergebnis, und die Links zwischen Knoten werden wesentlich schneller erstellt, ohne Auswirkungen auf nachfolgende von Benutzern initiierte Vorgänge wie z. B. das Erweitern eines Knotens oder das Anfordern mehr Knoten zu haben. Beim Erstellen von Codezuordnungen ohne die Lösung zu entwickeln, werden nun alle Ausnahmefälle, wie z. B. wenn Assemblys nicht erstellt werden, verarbeitet.  
   
--   **Überspringen Sie das Neuerstellen der Projektmappe.** Bietet eine bessere Leistung beim Erstellen und Bearbeiten von Diagrammen.  
+- **Überspringen Sie das Neuerstellen der Projektmappe.** Bietet eine bessere Leistung beim Erstellen und Bearbeiten von Diagrammen.  
   
--   **odeelementknoten und Gruppen filtern**. Sie können Ihre Zuordnungen schnell basierend auf der Kategorie durch Ein- oder Ausblenden von Codeelementen und durch das Gruppieren von Codeelementen nach Projektmappenordner, Assemblys, Namespaces, Projektordner und Typen organisieren.  
+- **odeelementknoten und Gruppen filtern**. Sie können Ihre Zuordnungen schnell basierend auf der Kategorie durch Ein- oder Ausblenden von Codeelementen und durch das Gruppieren von Codeelementen nach Projektmappenordner, Assemblys, Namespaces, Projektordner und Typen organisieren.  
   
--   **Filtern Sie Beziehungen, damit Diagramme leichter zu lesen sind**. Das Filtern von Links gilt jetzt auch für gruppenübergreifende Links, dadurch gestaltet sich die Arbeit mit dem Filterfenster weniger aufwendig als in vorherigen Versionen.  
+- **Filtern Sie Beziehungen, damit Diagramme leichter zu lesen sind**. Das Filtern von Links gilt jetzt auch für gruppenübergreifende Links, dadurch gestaltet sich die Arbeit mit dem Filterfenster weniger aufwendig als in vorherigen Versionen.  
   
--   **Erstellen Sie Diagrammen aus der Klassenansicht und im Objektbrowser**. Das Ziehen und Ablegen von Dateien und Assemblys in einer neuen oder vorhandenen Zuordnung funktioniert aus den Klassenansicht- und Objektbrowser-Fenstern.  
+- **Erstellen Sie Diagrammen aus der Klassenansicht und im Objektbrowser**. Das Ziehen und Ablegen von Dateien und Assemblys in einer neuen oder vorhandenen Zuordnung funktioniert aus den Klassenansicht- und Objektbrowser-Fenstern.  
   
- Siehe [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
+  Siehe [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Andere Entwurfs- und modellierungsänderungen ändert sich in dieser Version:**  
+  **Andere Entwurfs- und modellierungsänderungen ändert sich in dieser Version:**  
   
--   **Ebenendiagramme**. Aktualisieren Sie diese Diagramme mit der Klassenansicht und dem Objektbrowser. Mithilfe von Ebenendiagrammen können Sie die gewünschten Abhängigkeiten für Ihre Software beschreiben, um die Software-Entwicklungsanforderungen zu erfüllen. Halten Sie den Code anhand dieses Aufbaus konsistent, indem Sie Code finden, der diese Einschränkungen nicht erfüllt und zukünftigen Code anhand dieser Baseline zu validieren.  
+- **Ebenendiagramme**. Aktualisieren Sie diese Diagramme mit der Klassenansicht und dem Objektbrowser. Mithilfe von Ebenendiagrammen können Sie die gewünschten Abhängigkeiten für Ihre Software beschreiben, um die Software-Entwicklungsanforderungen zu erfüllen. Halten Sie den Code anhand dieses Aufbaus konsistent, indem Sie Code finden, der diese Einschränkungen nicht erfüllt und zukünftigen Code anhand dieser Baseline zu validieren.  
   
--   **UML-Diagramme**. Es ist nicht mehr möglich, UML-Klassendiagramme und Sequenzdiagramme im Code zu erstellen. Sie können dieses Diagramm jedoch weiterhin mithilfe der neuen UML-Elemente erstellen.  
+- **UML-Diagramme**. Es ist nicht mehr möglich, UML-Klassendiagramme und Sequenzdiagramme im Code zu erstellen. Sie können dieses Diagramm jedoch weiterhin mithilfe der neuen UML-Elemente erstellen.  
   
--   **Architektur-Explorer**. Sie können den Architektur-Explorer nicht mehr zum Erstellen von Diagrammen verwenden. Aber Sie können weiterhin den Projektmappen-Explorer verwenden.  
+- **Architektur-Explorer**. Sie können den Architektur-Explorer nicht mehr zum Erstellen von Diagrammen verwenden. Aber Sie können weiterhin den Projektmappen-Explorer verwenden.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio-Erweiterbarkeitstools  
  Es war noch nie einfacher, Visual Studio-Erweiterbarkeitstools (VS SDK und Vorlagen) zu installieren, da sie nun während des Setups als optionale Komponente enthalten sind.  Mit den Erweiterbarkeitstools können Entwickler Erweiterungen schreiben, um Visual Studio anzupassen und ihm Features hinzuzufügen. Weitere Informationen über die Visual Studio-Erweiterbarkeit finden Sie unter [Visual Studio SDK](./extensibility/visual-studio-sdk.md).  

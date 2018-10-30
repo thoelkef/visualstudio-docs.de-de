@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 738ada7e72af6c6bfbb93b8c494fdec2aadf68c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895950"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -13,13 +13,13 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 1. Um die Verbindung mit GitHub-Repositorys herzustellen, führen Sie den Visual Studio-Installer aus. Klicken Sie auf **Ändern**, und wählen Sie dann die Registerkarte **Einzelne Komponenten** aus. Scrollen Sie runter zum Bereich **Codetools**, klicken Sie auf **GitHub-Erweiterung für Visual Studio** und dann auf **Ändern**.
 
-    ![Auswählen der Erweiterung „GitHub“ im Visual Studio-Installer](media\create-project-repo\installation-github-extension.png)
+    ![Auswählen der Erweiterung „GitHub“ im Visual Studio-Installer](media/create-project-repo/installation-github-extension.png)
 
 2. Starten Sie Visual Studio.
 
 3. Klicken Sie auf **Ansicht > Team Explorer...**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
 
-    ![Team Explorer-Fenster, in dem Azure DevOps, GitHub und das Klonen eines Repositorys gezeigt werden](media\create-project-repo\team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media/create-project-repo/team-explorer.png)
 
 4. Geben Sie `https://github.com/Microsoft/samples-for-ai` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 
@@ -28,7 +28,7 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 5. Wenn der Klonvorgang abgeschlossen ist, doppelklicken Sie auf den Repositoryordner im unteren Bereich von Team Explorer, um zum Repositorydashboard zu navigieren. Klicken Sie unter **Projektmappen** auf **Neu...**.
 
-    ![Das Fenster „Team Explorer“, in dem ein neues Projekt aus einem Klon erstellt wird](media\create-project-repo\team-explorer-new-project.png)
+    ![Das Fenster „Team Explorer“, in dem ein neues Projekt aus einem Klon erstellt wird](media/create-project-repo/team-explorer-new-project.png)
 
 6. Klicken Sie in dem Dialogfeld **Neues Projekt** auf **Aus vorhandenem Python-Code**. Geben Sie einen Namen für das Projekt an, legen Sie für **Speicherort** denselben Ordner fest, in dem auch das Repository gespeichert ist, und klicken Sie auf **OK**. Klicken Sie in dem sich öffnenden Assistenten auf **Fertig stellen**.
 
@@ -36,19 +36,19 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 8. Erweitern Sie im Projektmappen-Explorer den Knoten `TensorFlow Examples> MNIST`. Klicken Sie mit der rechten Maustaste zunächst auf `convolutional.py`, und klicken Sie anschließend auf **Als Startdatei festlegen**. Bei diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
 
-10. Drücken Sie STRG+F5, oder klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein ` angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis im nächsten Schritt erneut.
+9. Drücken Sie **STRG**+**F5**, oder klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein ` angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis im nächsten Schritt erneut.
 
+10. Wenn das Programm erfolgreich ausgeführt wird, beginnt es mit dem Herunterladen des Trainings- und Testdatasets. Anschließend wird das Modell trainiert und die Fehlerquote ausgegeben. Sie möchten, dass die Fehlerquote mit der Zeit abnimmt.
 
-11. Wenn das Programm erfolgreich ausgeführt wird, beginnt es mit dem Herunterladen des Trainings- und Testdatasets. Anschließend wird das Modell trainiert und die Fehlerquote ausgegeben. Sie möchten, dass die Fehlerquote mit der Zeit abnimmt.
+    ![Erste Ausgabe des Python MNIST-Programms](media/create-project-repo/tensorflow-mnist-running.png)
 
-    ![Erste Ausgabe des Python MNIST-Programms](media\create-project-repo\tensorflow-mnist-running.png)
-
-> Wenn Sie Anaconda verwenden und eine Fehlermeldung über fehlendes „numpy“ erhalten, müssen Sie möglicherweise [Ihre Python-Umgebung auf die Verwendung von Anaconda umstellen](../python/selecting-a-python-environment-for-a-project.md).
+   > [!NOTE]
+   > Wenn Sie Anaconda verwenden und eine Fehlermeldung über das Fehlen von „numpy“ erhalten, müssen Sie möglicherweise [Ihre Python-Umgebung auf die Verwendung von Anaconda umstellen](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Sie können den Fortschritt mit TensorBoard verfolgen. Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und klicken Sie dann auf **Run TensorBoard**. Wählen Sie das Verzeichnis der ausgegebenen TensorBoard-Protokolle aus.
 
-    ![Ausführen von TensorBoard](media\create-project-repo\run-tensorboard.png)
+   ![Ausführen von TensorBoard](media/create-project-repo/run-tensorboard.png)
 
-11. Beachten Sie, dass Fehler mit der Zeit abnehmen, was bedeutet, dass sich die Qualität verbessert.
+12. Beachten Sie, dass Fehler mit der Zeit abnehmen, was bedeutet, dass sich die Qualität verbessert.
 
-    ![Ausführen von TensorBoard](media\create-project-repo\tensorboard.png)
+   ![Ausführen von TensorBoard](media/create-project-repo/tensorboard.png)

@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914709"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
   
  Es gibt zwei Ansätze zur Implementierung einer Aufgabe:  
   
--   Implementieren Sie die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle direkt.  
+- Implementieren Sie die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle direkt.  
   
--   Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly „Microsoft.Build.Utilities.dll“ definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.  
+- Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly „Microsoft.Build.Utilities.dll“ definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.  
   
- In beiden Fällen müssen Sie Ihrer Klasse eine Methode mit dem Namen `Execute` hinzufügen. Dabei handelt es sich um die Methode, die aufgerufen wird, wenn eine Aufgabe ausgeführt wird. Sie nimmt keine Parameter und gibt einen `Boolean`-Wert zurück: `true`, wenn die Aufgabe erfolgreich ausgeführt wurde oder `false`, wenn sie fehlgeschlagen ist. Im folgenden Beispiel wird eine Aufgabe dargestellt, die keine Aktion ausführt, aber `true` zurückgibt.  
+  In beiden Fällen müssen Sie Ihrer Klasse eine Methode mit dem Namen `Execute` hinzufügen. Dabei handelt es sich um die Methode, die aufgerufen wird, wenn eine Aufgabe ausgeführt wird. Sie nimmt keine Parameter und gibt einen `Boolean`-Wert zurück: `true`, wenn die Aufgabe erfolgreich ausgeführt wurde oder `false`, wenn sie fehlgeschlagen ist. Im folgenden Beispiel wird eine Aufgabe dargestellt, die keine Aktion ausführt, aber `true` zurückgibt.  
   
 ```  
 using System;  

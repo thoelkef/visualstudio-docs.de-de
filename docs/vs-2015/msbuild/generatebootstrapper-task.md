@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbf06c77ae11d16ffea241c940f91002a5f47770
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5c96c91a48e854c1619aa112bae5e1d84737765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811907"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,122 +40,122 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
 ## <a name="task-parameters"></a>Aufgabenparameter  
  In der folgenden Tabelle werden die Parameter der `GenerateBootstrapper` -Aufgabe beschrieben.  
   
--   `ApplicationFile`  
+- `ApplicationFile`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die Datei an, mit der der Bootstrapper die Installation der Anwendung startet, nachdem alle erforderlichen Komponenten installiert wurde. Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
+   Gibt die Datei an, mit der der Bootstrapper die Installation der Anwendung startet, nachdem alle erforderlichen Komponenten installiert wurde. Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
   
--   `ApplicationName`  
+- `ApplicationName`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt den Namen der Anwendung an, die vom Bootstrapper installiert wird. Dieser Name wird in der Benutzeroberfläche angezeigt, die vom Bootstrapper während der Installation verwendet wird.  
+   Gibt den Namen der Anwendung an, die vom Bootstrapper installiert wird. Dieser Name wird in der Benutzeroberfläche angezeigt, die vom Bootstrapper während der Installation verwendet wird.  
   
--   `ApplicationRequiresElevation`  
+- `ApplicationRequiresElevation`  
   
-     Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean` -Parameter.  
   
-     Wenn `true`, wird die Komponente mit erweiterten Berechtigungen ausgeführt, wenn sie auf einem Ziel-Computer installiert wird.  
+   Wenn `true`, wird die Komponente mit erweiterten Berechtigungen ausgeführt, wenn sie auf einem Ziel-Computer installiert wird.  
   
--   `ApplicationUrl`  
+- `ApplicationUrl`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet.  
+   Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet.  
   
--   `BootstrapperComponentFiles`  
+- `BootstrapperComponentFiles`  
   
-     Optionaler `String[]`-Ausgabeparameter.  
+   Optionaler `String[]`-Ausgabeparameter.  
   
-     Gibt den Erstellungsort von Bootstrapper-Paketdateien an.  
+   Gibt den Erstellungsort von Bootstrapper-Paketdateien an.  
   
--   `BootstrapperItems`  
+- `BootstrapperItems`  
   
-     Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter  
+   Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter  
   
-     Gibt die Produkte an, die im Bootstrapper erstellt werden. Die Elemente, die an diesen Parameter übergeben werden, sollten folgende Syntax haben:  
+   Gibt die Produkte an, die im Bootstrapper erstellt werden. Die Elemente, die an diesen Parameter übergeben werden, sollten folgende Syntax haben:  
   
-    ```  
-    <BootstrapperItem  
-        Include="ProductCode">  
-        <ProductName>  
-            ProductName  
-        </ProductName>  
-    </BootstrapperItem>  
-    ```  
+  ```  
+  <BootstrapperItem  
+      Include="ProductCode">  
+      <ProductName>  
+          ProductName  
+      </ProductName>  
+  </BootstrapperItem>  
+  ```  
   
-     Das Attribut `Include` wird zum Darstellen des Namen einer erforderlichen Komponente verwendet, die installiert werden sollte. Die Elementmetadaten `ProductName` sind optional und werden von der Build-Engine als benutzerfreundlichen Namen verwendet, im Fall dass das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], insofern keine `ApplicationFile` angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, das für Ihre Anwendung installiert werden muss.  
+   Das Attribut `Include` wird zum Darstellen des Namen einer erforderlichen Komponente verwendet, die installiert werden sollte. Die Elementmetadaten `ProductName` sind optional und werden von der Build-Engine als benutzerfreundlichen Namen verwendet, im Fall dass das Paket nicht gefunden werden kann. Diese Elemente sind keine erforderlichen Eingabeparameter von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], insofern keine `ApplicationFile` angegeben ist. Sie sollten ein Element für jede erforderliche Komponente einfügen, das für Ihre Anwendung installiert werden muss.  
   
-     Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
+   Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
   
--   `BootstrapperKeyFile`  
+- `BootstrapperKeyFile`  
   
-     Optionaler `String`-Ausgabeparameter.  
+   Optionaler `String`-Ausgabeparameter.  
   
-     Gibt den Erstellungsort von „setup.exe“ an.  
+   Gibt den Erstellungsort von „setup.exe“ an.  
   
--   `ComponentsLocation`  
+- `ComponentsLocation`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt einen Speicherort für den Bootstrapper an, an dem nach zu installierenden Voraussetzungen für die Installation gesucht wird. Dieser Parameter kann die folgenden Werte aufweisen:  
+   Gibt einen Speicherort für den Bootstrapper an, an dem nach zu installierenden Voraussetzungen für die Installation gesucht wird. Dieser Parameter kann die folgenden Werte aufweisen:  
   
-    -   `HomeSite`: Gibt an, dass die erforderliche Komponente vom Komponentenanbieter gehostet wird.  
+  - `HomeSite`: Gibt an, dass die erforderliche Komponente vom Komponentenanbieter gehostet wird.  
   
-    -   `Relative`: Gibt an, dass sich die erforderliche Komponente am gleichen Speicherort der Anwendung befindet.  
+  - `Relative`: Gibt an, dass sich die erforderliche Komponente am gleichen Speicherort der Anwendung befindet.  
   
-    -   `Absolute`: Gibt an, dass sich alle Komponenten bei einer zentralisierten URL befinden. Dieser Wert sollte zusammen mit dem Eingabeparameter `ComponentsUrl` verwendet werden.  
+  - `Absolute`: Gibt an, dass sich alle Komponenten bei einer zentralisierten URL befinden. Dieser Wert sollte zusammen mit dem Eingabeparameter `ComponentsUrl` verwendet werden.  
   
-     Wenn `ComponentsLocation` nicht angegeben ist, wird `HomeSite` standardmäßig verwendet.  
+    Wenn `ComponentsLocation` nicht angegeben ist, wird `HomeSite` standardmäßig verwendet.  
   
--   `ComponentsUrl`  
+- `ComponentsUrl`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die URL an, die die Voraussetzung für die Installation enthält.  
+   Gibt die URL an, die die Voraussetzung für die Installation enthält.  
   
--   `CopyComponents`  
+- `CopyComponents`  
   
-     Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean` -Parameter.  
   
-     Wenn `true`, kopiert der Bootstrapper alle Ausgabedateien in den Pfad, der im Parameter `OutputPath` angegeben ist. Die Werte des Parameters `BootstrapperComponentFiles` sollten alle auf diesen Pfad basieren. Wenn `false`, werden die Dateien nicht kopiert. Die `BootstrapperComponentFiles`-Werte basieren dann auf den Wert des Parameters `Path`.  Der Standardwert dieses Parameters ist `true`.  
+   Wenn `true`, kopiert der Bootstrapper alle Ausgabedateien in den Pfad, der im Parameter `OutputPath` angegeben ist. Die Werte des Parameters `BootstrapperComponentFiles` sollten alle auf diesen Pfad basieren. Wenn `false`, werden die Dateien nicht kopiert. Die `BootstrapperComponentFiles`-Werte basieren dann auf den Wert des Parameters `Path`.  Der Standardwert dieses Parameters ist `true`.  
   
--   `Culture`  
+- `Culture`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die Kultur an, die für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation verwendet werden soll. Wenn die angegebene Kultur nicht verfügbar ist, verwendet die Aufgabe den Wert des Parameters `FallbackCulture`.  
+   Gibt die Kultur an, die für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation verwendet werden soll. Wenn die angegebene Kultur nicht verfügbar ist, verwendet die Aufgabe den Wert des Parameters `FallbackCulture`.  
   
--   `FallbackCulture`  
+- `FallbackCulture`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die sekundäre Kultur für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation an.  
+   Gibt die sekundäre Kultur für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation an.  
   
--   `OutputPath`  
+- `OutputPath`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt den Speicherort zum Kopieren von „setup.exe“ und aller Paketdateien an.  
+   Gibt den Speicherort zum Kopieren von „setup.exe“ und aller Paketdateien an.  
   
--   `Path`  
+- `Path`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt den Speicherort für alle verfügbaren erforderlichen Pakete an.  
+   Gibt den Speicherort für alle verfügbaren erforderlichen Pakete an.  
   
--   `SupportUrl`  
+- `SupportUrl`  
   
-     Optionaler `String` -Parameter.  
+   Optionaler `String` -Parameter.  
   
-     Gibt die URL an, die bei einem Fehler der Bootstrapper-Installation bereitgestellt werden soll.  
+   Gibt die URL an, die bei einem Fehler der Bootstrapper-Installation bereitgestellt werden soll.  
   
--   `Validate`  
+- `Validate`  
   
-     Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean` -Parameter.  
   
-     Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.  
+   Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.  
   
 ## <a name="remarks"></a>Hinweise  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  

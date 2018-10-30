@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Microsoft Docs
+title: IDebugObject::IsNullReference | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a886bf56cfafc615099aa489f9d329229ea8727
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6b5108d9fd830c047c020d4b3adab2526854e6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939695"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Testet, ob dieses Objekt einen null-Verweis ist.  
+Testet, ob dieses Objekt ein null-Verweis ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ int IsNullReference(
   
 #### <a name="parameters"></a>Parameter  
  `pfIsNull`  
- [out] Ungleich 0 (null) zurückgibt (`TRUE`) Wenn dieses Objekt ein Verweis null ist, andernfalls 0 (null) (`FALSE`).  
+ [out] Ungleich NULL zurück (`TRUE`) Wenn dieses Objekt ein null-Verweis; andernfalls wird NULL (`FALSE`).  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  

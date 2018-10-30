@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
+title: IDebugProgramPublisher2::PublishProgramNode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04624f7a2b42fa50360841b91db4cb70b5e15ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1182158852e978cb78096eec6e60783317f1cc0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930458"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-Können Sie einen Knoten für die Anwendung zur Verwendung durch Debugmodule (DEs) und die Sitzung Debug-Manager (SDM).  
+Stellt einen Knoten für die Anwendung zur Verfügung für die Verwendung von Debug-Engines (DEs) und die Sitzung Debug-Manager (SDM).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int PublishProgramNode(
   
 #### <a name="parameters"></a>Parameter  
  `pProgramNode`  
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das Programm Knoten zur Verfügung stellen darstellt.  
+ [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das den Programm-Knoten zur Verfügung stellen darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht die Programme für Informationen, bevor Sie Sie auswählen, und starten sie zum Debuggen abgefragt werden.  
+ Diese Methode ermöglicht die Programme, die Informationen, bevor Sie auswählen, und starten sie zum Debuggen von abgefragt werden.  
   
  Rufen Sie zum Entfernen eines Knotens Programm von der Verfügbarkeit der [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) Methode.  
   

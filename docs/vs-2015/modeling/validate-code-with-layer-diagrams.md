@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950486"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Überprüfen von Code mit Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ihren Code in Visual Studio mit Ebenendiagrammen überprüfen. Dadurch wird Folgendes ermöglicht:  
   
--   Suchen von Konflikten zwischen Abhängigkeiten im Code und Abhängigkeiten im Ebenendiagramm  
+- Suchen von Konflikten zwischen Abhängigkeiten im Code und Abhängigkeiten im Ebenendiagramm  
   
--   Ermitteln von Abhängigkeiten, die möglicherweise von vorgeschlagenen Änderungen betroffen sind  
+- Ermitteln von Abhängigkeiten, die möglicherweise von vorgeschlagenen Änderungen betroffen sind  
   
-     Sie können z. B. das Ebenendiagramm bearbeiten, um potenzielle Architekturänderungen darzustellen, und dann den Code überprüfen, um die betroffenen Abhängigkeiten zu ermitteln.  
+   Sie können z. B. das Ebenendiagramm bearbeiten, um potenzielle Architekturänderungen darzustellen, und dann den Code überprüfen, um die betroffenen Abhängigkeiten zu ermitteln.  
   
--   Umgestalten oder Migrieren von Code in einen anderen Entwurf  
+- Umgestalten oder Migrieren von Code in einen anderen Entwurf  
   
-     Ermitteln von Code oder Abhängigkeiten, die bei der Umstellung des Codes auf eine andere Architektur noch bearbeitet werden müssen  
+   Ermitteln von Code oder Abhängigkeiten, die bei der Umstellung des Codes auf eine andere Architektur noch bearbeitet werden müssen  
   
- **Anforderungen**  
+  **Anforderungen**  
   
--   Visual Studio  
+- Visual Studio  
   
--   Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen  
+- Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen  
   
--   Eine Projektmappe, die über ein Modellierungsprojekt mit einem Ebenendiagramm verfügt. Dieses Ebenendiagramm muss mit Artefakten in Visual C# .NET- oder Visual Basic .NET-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).  
+- Eine Projektmappe, die über ein Modellierungsprojekt mit einem Ebenendiagramm verfügt. Dieses Ebenendiagramm muss mit Artefakten in Visual C# .NET- oder Visual Basic .NET-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Sie können Code über ein geöffnetes Ebenendiagramm in Visual Studio oder eine Eingabeaufforderung manuell überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Wenn Sie die Ebenenvalidierung mit Team Foundation Build ausführen möchten, muss auch Visual Studio auf dem Buildserver installiert werden.  
@@ -108,41 +108,41 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>So überprüfen Sie Code an der Eingabeaufforderung  
   
-1.  Öffnen Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Eingabeaufforderung.  
+1. Öffnen Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Eingabeaufforderung.  
   
-2.  Wählen Sie eine der folgenden Optionen aus:  
+2. Wählen Sie eine der folgenden Optionen aus:  
   
-    -   Wenn Sie Code anhand eines bestimmten Modellierungsprojekts in der Projektmappe überprüfen möchten, führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mit der folgenden benutzerdefinierten Eigenschaft aus.  
+   - Wenn Sie Code anhand eines bestimmten Modellierungsprojekts in der Projektmappe überprüfen möchten, führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mit der folgenden benutzerdefinierten Eigenschaft aus.  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - ODER  
+     - ODER  
   
-         Navigieren Sie zum Ordner mit der Modellierungsprojektdatei (.modelproj) und dem Ebenendiagramm, und führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dann mit der folgenden benutzerdefinierten Eigenschaft aus:  
+       Navigieren Sie zum Ordner mit der Modellierungsprojektdatei (.modelproj) und dem Ebenendiagramm, und führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dann mit der folgenden benutzerdefinierten Eigenschaft aus:  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   Wenn Sie Code anhand aller Modellierungsprojekte in der Projektmappe überprüfen möchten, führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mit der folgenden benutzerdefinierten Eigenschaft aus:  
+   - Wenn Sie Code anhand aller Modellierungsprojekte in der Projektmappe überprüfen möchten, führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mit der folgenden benutzerdefinierten Eigenschaft aus:  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - ODER  
+     - ODER  
   
-         Navigieren Sie zu einem Projektmappenordner, der ein Modellierungsprojekt mit einem Ebenendiagramm enthält, und führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dann mit der folgenden benutzerdefinierten Eigenschaft aus:  
+       Navigieren Sie zu einem Projektmappenordner, der ein Modellierungsprojekt mit einem Ebenendiagramm enthält, und führen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dann mit der folgenden benutzerdefinierten Eigenschaft aus:  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).  
   
- Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).  
+   Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).  
   
 ###  <a name="ManageErrors"></a> Validierungsfehler verwalten  
  Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../includes/esprfound-md.md)] ein Arbeitselement zu protokollieren.  
@@ -152,9 +152,9 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>So erstellen Sie ein Arbeitselement für einen Validierungsfehler  
   
--   In der **Fehlerliste** Fenster mit der rechten Maustaste in des Fehlers, zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ der Arbeitsaufgabe, die Sie erstellen möchten.  
+- In der **Fehlerliste** Fenster mit der rechten Maustaste in des Fehlers, zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ der Arbeitsaufgabe, die Sie erstellen möchten.  
   
- Mit diesen Tasks können Validierungsfehler im der **Fehlerliste** Fenster:  
+  Mit diesen Tasks können Validierungsfehler im der **Fehlerliste** Fenster:  
   
 |**Aktion**|**Gehen Sie folgendermaßen vor**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
   
  \- oder –  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das Ebenendiagramm oder Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.  
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das Ebenendiagramm oder Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  In der **Eigenschaften** legen des Modellierungsprojekts **Architektur überprüfen** Eigenschaft **"true"**.  
+2. In der **Eigenschaften** legen des Modellierungsprojekts **Architektur überprüfen** Eigenschaft **"true"**.  
   
-     Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.  
+    Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.  
   
-3.  In **Projektmappen-Explorer**, klicken Sie auf die Ebenendiagrammdatei (.layerdiagram) an, die Sie für die Validierung verwenden möchten.  
+3. In **Projektmappen-Explorer**, klicken Sie auf die Ebenendiagrammdatei (.layerdiagram) an, die Sie für die Validierung verwenden möchten.  
   
-4.  In der **Eigenschaften** Fenster, stellen Sie sicher, dass des Diagramms **Buildvorgang** -Eigenschaftensatz auf **überprüfen**.  
+4. In der **Eigenschaften** Fenster, stellen Sie sicher, dass des Diagramms **Buildvorgang** -Eigenschaftensatz auf **überprüfen**.  
   
-     Dadurch wird das Ebenendiagramm in den Validierungsprozess eingeschlossen.  
+    Dadurch wird das Ebenendiagramm in den Validierungsprozess eingeschlossen.  
   
- Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierungsfehler](#ManageErrors).  
+   Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierungsfehler](#ManageErrors).  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>So überprüfen Sie Code automatisch für einen Team Foundation Build  
   
-1.  In **Team Explorer**, doppelklicken Sie auf die Builddefinition, und klicken Sie dann auf **Prozess**.  
+1. In **Team Explorer**, doppelklicken Sie auf die Builddefinition, und klicken Sie dann auf **Prozess**.  
   
-2.  Klicken Sie unter **Buildprozessparameter**, erweitern Sie **Kompilierung**, und geben Sie Folgendes in die **MSBuild-Argumente** Parameter:  
+2. Klicken Sie unter **Buildprozessparameter**, erweitern Sie **Kompilierung**, und geben Sie Folgendes in die **MSBuild-Argumente** Parameter:  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen über [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie hier:  
+   Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen über [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie hier:  
   
 -   [Erstellen der Anwendung](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 ##  <a name="UnderstandingValidationErrors"></a> Verstehen und Lösen von Ebenenvalidierungsfehlern  
  Beim Überprüfen von Code anhand eines Ebenendiagramms treten Validierungsfehler auf, wenn der Code mit dem Entwurf in Konflikt steht. Überprüfungsfehler können beispielsweise unter folgenden Bedingungen auftreten:  
   
--   Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.  
+- Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.  
   
--   Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.  
+- Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.  
   
- Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung keine Fehler mehr angezeigt werden. Diese Aufgabe kann iterativ ausgeführt werden.  
+  Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung keine Fehler mehr angezeigt werden. Diese Aufgabe kann iterativ ausgeführt werden.  
   
- Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwendet wird. Außerdem wird die Bedeutung dieser Fehler erläutert, und es werden Vorschläge zur deren Behebung bzw. Verwaltung gegeben.  
+  Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwendet wird. Außerdem wird die Bedeutung dieser Fehler erläutert, und es werden Vorschläge zur deren Behebung bzw. Verwaltung gegeben.  
   
 |**Syntax**|**Beschreibung**|  
 |----------------|---------------------|  

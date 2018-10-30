@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c1a787d52f24d6fd346c8274100e976e7b139e85
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894676"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac
 
@@ -18,120 +18,120 @@ In diesem Thema lernen Sie, wie Sie ein [einfaches Erweiterungspaket](https://gi
 
 Dieses Beispiel verwendet den Add-In-Maker. Der Add-In-Maker erstellt eine neue Projektvorlage und füllt diese mit den erforderlichen Dateien für das benutzerdefinierte Erweiterungspaket auf.
 
-1.   Beginnen Sie, indem Sie Visual Studio für Mac starten, wenn es nicht bereits geöffnet ist:
+1. Beginnen Sie, indem Sie Visual Studio für Mac starten, wenn es nicht bereits geöffnet ist:
 
-  ![Screenshot Visual Studio für Mac](media/extending-visual-studio-mac-addin3.png)
+   ![Screenshot Visual Studio für Mac](media/extending-visual-studio-mac-addin3.png)
 
-2.   Installieren Sie das _Erweiterungspaket „Add-In-Maker“_ mit dem Erweiterungs-Manager. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...**.
+2. Installieren Sie das _Erweiterungspaket „Add-In-Maker“_ mit dem Erweiterungs-Manager. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...**.
 
-  ![Registerkarte „Add-In-Manager“](media/extending-visual-studio-mac-addin4.png)
+   ![Registerkarte „Add-In-Manager“](media/extending-visual-studio-mac-addin4.png)
 
-3.   Navigieren Sie zur Registerkarte „Katalog“, und geben Sie `Addin Maker` in die Suchleiste oben rechts ein. Klicken Sie auf den Add-In-Maker in der Kategorie „Add-In-Entwicklung“ und dann auf <kbd>Installieren</kbd>. Wenn nichts angezeigt wird, drücken Sie auf „Aktualisieren“, und versuchen Sie es erneut.
+3. Navigieren Sie zur Registerkarte „Katalog“, und geben Sie `Addin Maker` in die Suchleiste oben rechts ein. Klicken Sie auf den Add-In-Maker in der Kategorie „Add-In-Entwicklung“ und dann auf <kbd>Installieren</kbd>. Wenn nichts angezeigt wird, drücken Sie auf „Aktualisieren“, und versuchen Sie es erneut.
 
-  ![Add-In-Manager](media/extending-visual-studio-mac-addin5.png)
+   ![Add-In-Manager](media/extending-visual-studio-mac-addin5.png)
 
-4.   Nach der Installation des Add-In-Managers können Sie mit dem Erstellen des Erweiterungspakets beginnen. Beginnen Sie mit dem Erstellen einer neuen Projektmappe.
+4. Nach der Installation des Add-In-Managers können Sie mit dem Erstellen des Erweiterungspakets beginnen. Beginnen Sie mit dem Erstellen einer neuen Projektmappe.
 
-5.  Klicken Sie im **Dialogfeld "Neue Projektmappe"** auf die Vorlage **Other > Miscellaneous > General > Xamarin Studio Addin > C#** (Sonstige > Verschiedenes > Allgemein > Xamarin Studio-Add-In > C#), und geben Sie der neuen Projektmappe auf der folgenden Seite den Namen `DateInserter`:
+5. Klicken Sie im **Dialogfeld "Neue Projektmappe"** auf die Vorlage **Other > Miscellaneous > General > Xamarin Studio Addin > C#** (Sonstige > Verschiedenes > Allgemein > Xamarin Studio-Add-In > C#), und geben Sie der neuen Projektmappe auf der folgenden Seite den Namen `DateInserter`:
 
-  ![Erstellen einer neuen Projektmappe](media/extending-visual-studio-mac-addin7New.png)
+   ![Erstellen einer neuen Projektmappe](media/extending-visual-studio-mac-addin7New.png)
 
-6.   Visual Studio für Mac füllt die neue Projektmappe auf:
+6. Visual Studio für Mac füllt die neue Projektmappe auf:
 
-  ![Aufgefüllte Projektmappe](media/extending-visual-studio-mac-addin8.png)
+   ![Aufgefüllte Projektmappe](media/extending-visual-studio-mac-addin8.png)
 
-7.   Entfernen Sie den Vorlagencode in `Manifest.addin.xml`, und ersetzen Sie Ihn durch den folgenden:
+7. Entfernen Sie den Vorlagencode in `Manifest.addin.xml`, und ersetzen Sie Ihn durch den folgenden:
 
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-        <ExtensionModel>
-            <Extension path = "/MonoDevelop/Ide/Commands/Edit">
-                <Command id = "DateInserter.DateInserterCommands.InsertDate"
-                    _label = "Insert Date"
-                    defaultHandler = "DateInserter.InsertDateHandler" />
-            </Extension>
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+      <ExtensionModel>
+          <Extension path = "/MonoDevelop/Ide/Commands/Edit">
+              <Command id = "DateInserter.DateInserterCommands.InsertDate"
+                  _label = "Insert Date"
+                  defaultHandler = "DateInserter.InsertDateHandler" />
+          </Extension>
 
-            <Extension path = "/MonoDevelop/Ide/MainMenu/Edit">
-                <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
-            </Extension>
-        </ExtensionModel>
-    ```
+          <Extension path = "/MonoDevelop/Ide/MainMenu/Edit">
+              <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
+          </Extension>
+      </ExtensionModel>
+   ```
 
-8.   Jetzt müssen Sie die Dateien einrichten, die später das Einfügen des Datums und der Zeit im Text-Editor verarbeiten. Klicken Sie mit der rechten Maustaste auf den Knoten „Projekte“, und fügen Sie dann eine neue Datei hinzu. Klicken Sie auf **Allgemein > Leere Klasse**, und geben Sie der neuen Datei den Namen *InsertDateHandler*:
+8. Jetzt müssen Sie die Dateien einrichten, die später das Einfügen des Datums und der Zeit im Text-Editor verarbeiten. Klicken Sie mit der rechten Maustaste auf den Knoten „Projekte“, und fügen Sie dann eine neue Datei hinzu. Klicken Sie auf **Allgemein > Leere Klasse**, und geben Sie der neuen Datei den Namen *InsertDateHandler*:
 
-  ![Insert Date Handler](media/extending-visual-studio-mac-addin9.png)
+   ![Insert Date Handler](media/extending-visual-studio-mac-addin9.png)
 
-9.   Entfernen Sie den Vorlagencode in `InsertDateHandler.cs`, und ersetzen Sie Ihn durch den folgenden:
+9. Entfernen Sie den Vorlagencode in `InsertDateHandler.cs`, und ersetzen Sie Ihn durch den folgenden:
 
-    ```cs
-    using MonoDevelop.Components.Commands;
-    using MonoDevelop.Ide;
-    using MonoDevelop.Ide.Gui;
-    using System;
+   ```cs
+   using MonoDevelop.Components.Commands;
+   using MonoDevelop.Ide;
+   using MonoDevelop.Ide.Gui;
+   using System;
 
-    namespace DateInserter
-    {
-        class InsertDateHandler : CommandHandler
-        {
-            protected override void Run()
-            {
+   namespace DateInserter
+   {
+      class InsertDateHandler : CommandHandler
+      {
+          protected override void Run()
+          {
 
-            }
+          }
 
-            protected override void Update(CommandInfo info)
-            {
+          protected override void Update(CommandInfo info)
+          {
 
-            }
-        }
-    }
-    ```
+          }
+      }
+   }
+   ```
 
-  Später erweitern Sie diese beiden Platzhaltermethoden.
+   Später erweitern Sie diese beiden Platzhaltermethoden.
 
-10.   Klicken Sie mit der rechten Maustaste auf das Projekt **DataInserter** und dann auf **Hinzufügen > Neues Element**. Klicken Sie auf **Allgemein > Leere Enumeration**, und geben Sie der neuen Datei den Namen *DateInserterCommands*:
+10. Klicken Sie mit der rechten Maustaste auf das Projekt **DataInserter** und dann auf **Hinzufügen > Neues Element**. Klicken Sie auf **Allgemein > Leere Enumeration**, und geben Sie der neuen Datei den Namen *DateInserterCommands*:
 
-  ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
+    ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
-11.   Fügen Sie den Befehl `InsertDate` als neue Enumeration in die `DateInserterCommands.cs`-Datei ein:
+11. Fügen Sie den Befehl `InsertDate` als neue Enumeration in die `DateInserterCommands.cs`-Datei ein:
 
     ``` cs
     using System;
 
     namespace DateInserter
     {
-        public enum DateInserterCommands
-        {
-            InsertDate,
-        }
+      public enum DateInserterCommands
+      {
+          InsertDate,
+      }
     }
     ```
 
-12.   Nun sollten Sie ein funktionierendes Erweiterungspaket haben. Sie können es ausprobieren, indem Sie das gerade Durchgeführt speichert und die Anwendung ausführen. Die IDE startet eine neue Instanz von Visual Studio für Mac mit dem installierten Erweiterungspaket. Wenn Sie zum **Menü "Bearbeiten"** navigieren, sehen Sie, dass Visual Studio für Mac über die neue Option **Datum einfügen** verfügt, wie im unten stehende Screenshot veranschaulicht:
+12. Nun sollten Sie ein funktionierendes Erweiterungspaket haben. Sie können es ausprobieren, indem Sie das gerade Durchgeführt speichert und die Anwendung ausführen. Die IDE startet eine neue Instanz von Visual Studio für Mac mit dem installierten Erweiterungspaket. Wenn Sie zum **Menü "Bearbeiten"** navigieren, sehen Sie, dass Visual Studio für Mac über die neue Option **Datum einfügen** verfügt, wie im unten stehende Screenshot veranschaulicht:
 
-  ![Befehl "Datum einfügen"](media/extending-visual-studio-mac-addin11.png)
+    ![Befehl "Datum einfügen"](media/extending-visual-studio-mac-addin11.png)
 
-  Beachten Sie, dass das Auswählen der Option im Moment noch keine Auswirkungen hat, da die aktuelle Implementierung noch Platzhaltermethoden enthält.
+    Beachten Sie, dass das Auswählen der Option im Moment noch keine Auswirkungen hat, da die aktuelle Implementierung noch Platzhaltermethoden enthält.
 
-13.   Das Framework für das Erweiterungspaket wurde erstellt. Nun können Sie den Code schreiben, der für das Einfügen des Datums verantwortlich ist. Stellen Sie zunächst sicher, dass der **Befehl "Datum einfügen"** nur aktiviert ist, wenn der Benutzer eine offene Textdatei hat, indem Sie die `Update`-Methode in `InsertDateHandler.cs` durch den folgenden Code ersetzen:
+13. Das Framework für das Erweiterungspaket wurde erstellt. Nun können Sie den Code schreiben, der für das Einfügen des Datums verantwortlich ist. Stellen Sie zunächst sicher, dass der **Befehl "Datum einfügen"** nur aktiviert ist, wenn der Benutzer eine offene Textdatei hat, indem Sie die `Update`-Methode in `InsertDateHandler.cs` durch den folgenden Code ersetzen:
 
     ```cs
     protected override void Update(CommandInfo info)
     {
-        info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
+      info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
     }
     ```
 
-14.   Aktualisieren Sie die `Run`-Methode des Befehls, um das Datum und die Zeit mit folgendem Code einzufügen:
+14. Aktualisieren Sie die `Run`-Methode des Befehls, um das Datum und die Zeit mit folgendem Code einzufügen:
 
     ``` cs
     protected override void Run () {
-        var editor = IdeApp.Workbench.ActiveDocument.Editor;
-        var date = DateTime.Now.ToString ();
-        editor.InsertAtCaret (date);
+      var editor = IdeApp.Workbench.ActiveDocument.Editor;
+      var date = DateTime.Now.ToString ();
+      editor.InsertAtCaret (date);
 
     }
     ```
 
-15.   Führen Sie zum Schluss das Erweiterungspaket aus, um es zu testen. Klicken Sie in der neuen Instanz von Visual Studio für Mac auf **Bearbeiten > Datum einfügen**. Das aktuelle Datum und die aktuelle Uhrzeit werden an der Einfügemarke eingefügt, wie im unten stehenden Screenshot veranschaulicht:
+15. Führen Sie zum Schluss das Erweiterungspaket aus, um es zu testen. Klicken Sie in der neuen Instanz von Visual Studio für Mac auf **Bearbeiten > Datum einfügen**. Das aktuelle Datum und die aktuelle Uhrzeit werden an der Einfügemarke eingefügt, wie im unten stehenden Screenshot veranschaulicht:
 
-  ![Screenshot vom Einfügen des Datums](media/extending-visual-studio-mac-addin12.png)
+    ![Screenshot vom Einfügen des Datums](media/extending-visual-studio-mac-addin12.png)

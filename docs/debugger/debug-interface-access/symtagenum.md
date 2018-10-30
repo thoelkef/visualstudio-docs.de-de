@@ -1,5 +1,5 @@
 ---
-title: SymTagEnum | Microsoft Docs
+title: SymTagEnum | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36dc9b3d9fc15b06c92db27b38d94805c1ce8a25
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875216"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Gibt den Typ des Symbols.  
@@ -73,34 +73,34 @@ enum SymTagEnum {
  Gibt an, dass das Symbol keinen Typ hat.  
   
  `SymTagExe`  
- Gibt an, dass das Symbol eine .exe-Datei ist. Es Gib nur ein `SymTagExe` Symbol pro Symbolspeicher. Es dient als dem globalen Bereich und keinen lexikalischen ein übergeordnetes Element.  
+ Gibt an, dass das Symbol eine .exe-Datei ist. Es gibt nur ein `SymTagExe` Symbol pro Symbolspeicher. Es dient als dem globalen Bereich und keine lexikalische ein übergeordnetes Element.  
   
  `SymTagCompiland`  
- Gibt an, die Compiland-Symbol für jede Komponente Kompiliereinheit Symbolspeicher. Für systemeigene Anwendungen `SymTagCompiland` Symbole die Objektdateien verknüpft werden, in der Abbildung entsprechen. Für einige Arten von Bildern für Microsoft Intermediate Language (MSIL) besteht eine Kompiliereinheit pro Klasse zur Verfügung.  
+ Gibt die Compiland-Symbol für jede Komponente Kompiliereinheit des Symbolspeichers an. Für native Anwendungen `SymTagCompiland` Symbole entsprechen die Objektdateien verknüpft werden, in dem Abbild. Für einige Arten von Images von Microsoft Intermediate Language (MSIL) gibt es eine Kompiliereinheit pro Klasse.  
   
  `SymTagCompilandDetails`  
- Gibt an, dass das Symbol erweiterten Attribute von der Kompiliereinheit enthält. Das Abrufen dieser Eigenschaften erfordern Kompiliereinheit Symbole laden.  
+ Gibt an, dass das Symbol erweiterten Attribute von der Kompiliereinheit enthält. Abrufen der folgenden Eigenschaften unter Umständen Compiland-Symbole werden geladen.  
   
  `SymTagCompilandEnv`  
- Gibt an, dass das Symbol eine Umgebungszeichenfolge, die für die Kompiliereinheit definiert ist.  
+ Gibt an, dass das Symbol einer Umgebungszeichenfolge für der Kompiliereinheit definiert ist.  
   
  `SymTagFunction`  
- Gibt an, dass das Symbol eine Funktion ist.  
+ Gibt an, dass das Symbol eine Funktion.  
   
  `SymTagBlock`  
  Gibt an, dass das Symbol mit einem geschachtelten Block ist.  
   
  `SymTagData`  
- Gibt an, dass das Symbol Daten ist.  
+ Gibt an, dass das Symbol Daten.  
   
  `SymTagAnnotation`  
- Gibt an, dass das Symbol für eine Anmerkung Code erfolgt. Untergeordnete Elemente dieses Symbols sind Zeichenfolgen mit Konstante Daten (`SymTagData`, `LocIsConstant`, `DataIsConstant`). Die meisten Clients ignorieren dieses Symbol.  
+ Gibt an, dass das Symbol für einen Code-Anmerkung. Untergeordnete Elemente dieses Symbol sind Konstante Zeichenfolgen (`SymTagData`, `LocIsConstant`, `DataIsConstant`). Die meisten Clients ignorieren Sie dieses Symbol.  
   
  `SymTagLabel`  
  Gibt an, dass das Symbol eine Bezeichnung ist.  
   
  `SymTagPublicSymbol`  
- Gibt an, dass das Symbol ein public-Symbol ist. Für systemeigene Anwendungen wird dieses Symbol das externe COFF-Symbol, verknüpfen das Bild aufgetreten.  
+ Gibt an, dass das Symbol ein public-Symbol. Für native Anwendungen ist dieses Symbol das externe COFF-Symbol verknüpfen das Image aufgetreten.  
   
  `SymTagUDT`  
  Gibt an, dass das Symbol mit einem benutzerdefinierten Typ (Struktur, Klasse oder Union) ist.  
@@ -109,7 +109,7 @@ enum SymTagEnum {
  Gibt an, dass das Symbol eine Enumeration ist.  
   
  `SymTagFunctionType`  
- Gibt an, dass das Symbol eine Signatur Funktionstyp ist.  
+ Gibt an, dass das Symbol ein Signatur Funktionstyp ist.  
   
  `SymTagPointerType`  
  Gibt an, dass das Symbol ein Zeigertyp ist.  
@@ -121,19 +121,19 @@ enum SymTagEnum {
  Gibt an, dass das Symbol ein Basistyp ist.  
   
  `SymTagTypedef`  
- Gibt an, dass das Symbol ist ein `typedef`, d. h. einen Alias für einen anderen Typ.  
+ Gibt an, dass das Symbol ist ein `typedef`, d.h. ein Alias für einen anderen Typ.  
   
  `SymTagBaseClass`  
  Gibt an, dass das Symbol eine Basisklasse eines benutzerdefinierten Typs ist.  
   
  `SymTagFriend`  
- Gibt an, dass das Symbol einen "Friend" eines benutzerdefinierten Typs ist.  
+ Gibt an, dass das Symbol mit einem Freund eines benutzerdefinierten Typs ist.  
   
  `SymTagFunctionArgType`  
  Gibt an, dass das Symbol ein Funktionsargument ist.  
   
  `SymTagFuncDebugStart`  
- Gibt an, dass das Symbol die Endposition des prologcodes für die Funktion ist.  
+ Gibt an, dass das Symbol, das die Position am Ende der Funktionsprologcode ist.  
   
  `SymTagFuncDebugEnd`  
  Gibt an, dass das Symbol die Anfangsposition des epilogcodes der Funktion ist.  
@@ -148,44 +148,44 @@ enum SymTagEnum {
  Gibt an, dass das Symbol eine virtuelle Tabelle-Zeiger ist.  
   
  `SymTagCustom`  
- Gibt an, dass das Symbol ein benutzerdefiniertes Symbol ist und wird nicht durch DIA. interpretiert  
+ Gibt an, dass das Symbol ein benutzerdefiniertes Symbol ist, und nicht durch von Dia interpretiert  
   
  `SymTagThunk`  
  Gibt an, dass das Symbol ein Thunk für die Freigabe von Daten zwischen 16 und 32-Bit-Code verwendet wird.  
   
  `SymTagCustomType`  
- Gibt an, dass das Symbol ein Symbol, das benutzerdefinierte Compiler ist.  
+ Gibt an, dass das Symbol ein benutzerdefinierter Compiler-Symbol.  
   
  `SymTagManagedType`  
- Gibt an, dass das Symbol in Metadaten.  
+ Gibt an, dass das Symbol in den Metadaten ist.  
   
  `SymTagDimension`  
  Gibt an, dass das Symbol ein FORTRAN mehrdimensionales Array ist.  
   
  `SymTagCallSite`  
- Gibt an, dass das Symbol die Aufrufsite darstellt.  
+ Gibt an, dass das Symbol der aufrufenden Site darstellt.  
   
  `SymTagInlineSite`  
  Gibt an, dass das Symbol die Inline-Website darstellt.  
   
  `SymTagBaseInterface`  
- Gibt an, dass das Symbol eine Basisschnittstelle ist.  
+ Gibt an, dass das Symbol eine Basisschnittstelle.  
   
  `SymTagVectorType`  
- Gibt an, dass das Symbol einen Vector-Typ ist.  
+ Gibt an, dass das Symbol ein vektortyp ist.  
   
  `SymTagMatrixType`  
  Gibt an, dass das Symbol einen Matrixtyp ist.  
   
  `SymTagHLSLType`  
- Gibt an, dass das Symbol eine hohe Ebene Shader-Language-Typ ist.  
+ Gibt an, dass das Symbol ein High Level Shader Language-Typ ist.  
   
 ## <a name="remarks"></a>Hinweise  
- Alle Symbole in eine Datei haben ein Identifizierungstag, der das Symbol Typ angibt.  
+ Alle Symbole in einer Debugdatei haben ein Identifizierungstag, der das Symbol für den Typ angibt.  
   
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) Methode.  
   
- Die Werte in dieser Enumeration werden für die folgenden Methoden zum Begrenzen des Bereichs der Suche auf ein bestimmtes Symbol übergeben:  
+ Die Werte in dieser Enumeration werden für die folgenden Methoden zum Begrenzen des Bereichs der Suche auf einen bestimmten Symboltyp übergeben:  
   
 -   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   

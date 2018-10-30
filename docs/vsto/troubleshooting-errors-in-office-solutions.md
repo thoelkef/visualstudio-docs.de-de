@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917101"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Behandeln von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Dieser Code führt zu folgenden Kompilierungsfehlern:  
   
--   Visual Basic: "Verweis auf die Klasse 'DocumentClass' ist nicht zulässig, wenn die Assembly nicht-PIA-Modus verknüpft ist."  
+- Visual Basic: "Verweis auf die Klasse 'DocumentClass' ist nicht zulässig, wenn die Assembly nicht-PIA-Modus verknüpft ist."  
   
--   Visual c#: "der Interoptyp 'Microsoft.Office.Interop.Word.DocumentClass' kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."  
+- Visual c#: "der Interoptyp 'Microsoft.Office.Interop.Word.DocumentClass' kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."  
   
- Um diesen Fehler zu beheben, ändern Sie den Code, sodass er stattdessen auf die entsprechende Schnittstelle verweist. Verwenden Sie z. B. anstelle eines Verweises auf ein <xref:Microsoft.Office.Interop.Word.DocumentClass>-Objekt einen Verweis auf eine Instanz der <xref:Microsoft.Office.Interop.Word.Document>-Schnittstelle.  
+  Um diesen Fehler zu beheben, ändern Sie den Code, sodass er stattdessen auf die entsprechende Schnittstelle verweist. Verwenden Sie z. B. anstelle eines Verweises auf ein <xref:Microsoft.Office.Interop.Word.DocumentClass>-Objekt einen Verweis auf eine Instanz der <xref:Microsoft.Office.Interop.Word.Document>-Schnittstelle.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

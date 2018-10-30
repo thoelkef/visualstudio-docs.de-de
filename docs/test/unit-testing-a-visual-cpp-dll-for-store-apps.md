@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923042"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -129,56 +129,55 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode
 
-1.  Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
+1. Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
 
-    1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLibTests** aus, und klicken Sie anschließend im Kontextmenü auf **Verweise**.
+   1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLibTests** aus, und klicken Sie anschließend im Kontextmenü auf **Verweise**.
 
-    2.  Erweitern Sie im Dialogfeld **RooterLib Project Properties** (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
+   2.  Erweitern Sie im Dialogfeld **RooterLib Project Properties** (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
 
-    3.  Klicken Sie auf **Neuen Verweis hinzufügen**.
+   3.  Klicken Sie auf **Neuen Verweis hinzufügen**.
 
-    4.  Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
+   4.  Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
 
-2.  Fügen Sie die RooterLib-Headerdatei in *unittest1.cpp* ein.
+2. Fügen Sie die RooterLib-Headerdatei in *unittest1.cpp* ein.
 
-    1.  Öffnen *unittest1.cpp*.
+   1.  Öffnen *unittest1.cpp*.
 
-    2.  Fügen Sie diesen Code unter der Zeile `#include "CppUnitTest.h"` hinzu:
+   2.  Fügen Sie diesen Code unter der Zeile `#include "CppUnitTest.h"` hinzu:
 
-        ```cpp
-        #include "..\RooterLib\RooterLib.h"
-        ```
+       ```cpp
+       #include "..\RooterLib\RooterLib.h"
+       ```
 
-3.  Fügen Sie einen Test hinzu, der die importierte Funktion verwendet. Fügen Sie *unittest1.cpp* den folgenden Code hinzu:
+3. Fügen Sie einen Test hinzu, der die importierte Funktion verwendet. Fügen Sie *unittest1.cpp* den folgenden Code hinzu:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-        CRooterLib rooter;
-        Assert::AreEqual(
-            // Expected value:
-            0.0,
-            // Actual value:
-            rooter.SquareRoot(0.0),
-            // Tolerance:
-            0.01,
-            // Message:
-            L"Basic test failed",
-            // Line number - used if there is no PDB file:
-            LINE_INFO());
-    }
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+       CRooterLib rooter;
+       Assert::AreEqual(
+           // Expected value:
+           0.0,
+           // Actual value:
+           rooter.SquareRoot(0.0),
+           // Tolerance:
+           0.01,
+           // Message:
+           L"Basic test failed",
+           // Line number - used if there is no PDB file:
+           LINE_INFO());
+   }
+   ```
 
-    ```
+4. Erstellen Sie die Projektmappe.
 
-4.  Erstellen Sie die Projektmappe.
+    Der neue Test wird im **Test-Explorer** im Knoten **Nicht ausgeführte Tests** angezeigt.
 
-     Der neue Test wird im **Test-Explorer** im Knoten **Nicht ausgeführte Tests** angezeigt.
+5. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-5.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
+    ![Einfacher Test bestanden](../test/media/ute_cpp_testexplorer_basictest.png)
 
-     ![Einfacher Test bestanden](../test/media/ute_cpp_testexplorer_basictest.png)
-
- Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
+   Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
 ##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
@@ -243,73 +242,72 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ##  <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
-1.  Fügen Sie einen anderen Test zu *unittest1.cpp* hinzu:
+1. Fügen Sie einen anderen Test zu *unittest1.cpp* hinzu:
 
-    ```cpp
-    // Verify that negative inputs throw an exception.
-     TEST_METHOD(NegativeRangeTest)
-     {
-       wchar_t message[200];
-       CRooterLib rooter;
-       for (double v = -0.1; v > -3.0; v = v - 0.5)
-       {
-         try
-         {
-           // Should raise an exception:
-           double result = rooter.SquareRoot(v);
-
-           swprintf_s(message, L"No exception for input %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-         catch (std::out_of_range ex)
-         {
-           continue; // Correct exception.
-         }
-         catch (...)
-         {
-           swprintf_s(message, L"Incorrect exception for %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-       }
-    };
-
-    ```
-
-2.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
-
-     Der Test schlägt fehl. Wählen Sie den Testnamen im **Test-Explorer** aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom **Test-Explorer** angezeigt.
-
-     ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3.  Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
-
-    1.  Legen Sie einen Haltepunkt am Anfang der `SquareRoot`-Funktion fest.
-
-    2.  Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
-
-         Wenn die Ausführung am Haltepunkt angehalten wird, führen Sie den Code schrittweise aus.
-
-    3.  Fügen Sie *RooterLib.cpp* einen Code hinzu, um die Ausnahme abzufangen:
-
-        ```cpp
-        #include <stdexcept>
-        ...
-        double CRooterLib::SquareRoot(double v)
+   ```cpp
+   // Verify that negative inputs throw an exception.
+    TEST_METHOD(NegativeRangeTest)
+    {
+      wchar_t message[200];
+      CRooterLib rooter;
+      for (double v = -0.1; v > -3.0; v = v - 0.5)
+      {
+        try
         {
-            //Validate the input parameter:
-            if (v < 0.0)
-            {
-              throw std::out_of_range("Can't do square roots of negatives");
-            }
-        ...
+          // Should raise an exception:
+          double result = rooter.SquareRoot(v);
 
-        ```
+          swprintf_s(message, L"No exception for input %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+        catch (std::out_of_range ex)
+        {
+          continue; // Correct exception.
+        }
+        catch (...)
+        {
+          swprintf_s(message, L"Incorrect exception for %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+      }
+   };
+   ```
 
-    1.  Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
- Alle Tests sind nun erfolgreich.
+    Der Test schlägt fehl. Wählen Sie den Testnamen im **Test-Explorer** aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom **Test-Explorer** angezeigt.
 
- ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
+    ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
+
+3. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
+
+   1.  Legen Sie einen Haltepunkt am Anfang der `SquareRoot`-Funktion fest.
+
+   2.  Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
+
+        Wenn die Ausführung am Haltepunkt angehalten wird, führen Sie den Code schrittweise aus.
+
+   3.  Fügen Sie *RooterLib.cpp* einen Code hinzu, um die Ausnahme abzufangen:
+
+       ```cpp
+       #include <stdexcept>
+       ...
+       double CRooterLib::SquareRoot(double v)
+       {
+           //Validate the input parameter:
+           if (v < 0.0)
+           {
+             throw std::out_of_range("Can't do square roots of negatives");
+           }
+       ...
+
+       ```
+
+   1.  Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
+
+   Alle Tests sind nun erfolgreich.
+
+   ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
 

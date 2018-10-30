@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880720"
 ---
 # <a name="encodings-and-line-breaks"></a>Codierungen und Zeilenumbrüche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ In Visual Studio können Sie unter **Datei/Erweiterte Speicheroptionen** den Typ
   
  In Visual Studio werden die folgenden Zeichen als Zeilenumbrüche interpretiert:  
   
--   CRLF: Wagenrücklauf und Zeilenvorschub, Unicode-Zeichen 000D und 000A  
+- CRLF: Wagenrücklauf und Zeilenvorschub, Unicode-Zeichen 000D und 000A  
   
--   LF: Zeilenvorschub, Unicode-Zeichen 000A  
+- LF: Zeilenvorschub, Unicode-Zeichen 000A  
   
--   NEL: Nächste Zeile, Unicode-Zeichen 0085  
+- NEL: Nächste Zeile, Unicode-Zeichen 0085  
   
--   LS: Zeilentrennzeichen, Unicode-Zeichen 2028  
+- LS: Zeilentrennzeichen, Unicode-Zeichen 2028  
   
--   PS: Absatztrennzeichen, Unicode-Zeichen 2029  
+- PS: Absatztrennzeichen, Unicode-Zeichen 2029  
   
- In Text, der aus anderen Anwendungen kopiert wurde, bleiben die Codierungen und Zeilenumbruchzeichen unverändert. Wenn Sie beispielsweise Text aus Windows-Editor kopieren und in eine Textdatei in Visual Studio einfügen, weist der Text dieselben Einstellungen auf wie in Windows-Editor.  
+  In Text, der aus anderen Anwendungen kopiert wurde, bleiben die Codierungen und Zeilenumbruchzeichen unverändert. Wenn Sie beispielsweise Text aus Windows-Editor kopieren und in eine Textdatei in Visual Studio einfügen, weist der Text dieselben Einstellungen auf wie in Windows-Editor.  
   
- Wenn Sie eine Datei öffnen, die andere Zeilenumbruchzeichen aufweist, wird evtl. ein Dialogfeld angezeigt, in dem Sie gefragt werden, ob die inkonsistenten Zeilenumbruchzeichen normalisiert werden sollen und welche Art von Zeilenumbrüchen verwendet werden soll.
+  Wenn Sie eine Datei öffnen, die andere Zeilenumbruchzeichen aufweist, wird evtl. ein Dialogfeld angezeigt, in dem Sie gefragt werden, ob die inkonsistenten Zeilenumbruchzeichen normalisiert werden sollen und welche Art von Zeilenumbrüchen verwendet werden soll.
 
 
 

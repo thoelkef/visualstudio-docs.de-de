@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e937e1ec212ccefb32b62abfc9fa01421343070
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950224"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Gewusst wie: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen
   Sie können jedes beliebige Arbeitsblatt in einer Arbeitsmappe löschen. Verwenden Sie zum Löschen eines Arbeitsblatts das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.  
@@ -31,19 +31,19 @@ ms.locfileid: "35257308"
 ## <a name="use-the-worksheet-host-item"></a>Verwenden Sie das Arbeitsblatt-Hostelement  
  Wenn das Arbeitsblatt zur Entwurfszeit in einer Anpassung auf Dokumentebene hinzugefügt wurde, verwenden Sie die Methode <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>, um ein angegebenes Arbeitsblatt zu löschen. Der folgende Code löscht ein Arbeitsblatt aus einer Arbeitsmappe durch direktes Verweisen auf das Arbeitsblatt-Hostelement.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:  
->   
-> -   Excel 2013-Arbeitsmappe  
-> -   Excel 2013-Vorlage  
-> -   Excel 2010-Arbeitsmappe  
-> -   Excel 2010-Vorlage  
->   
->  Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Excel** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um eine Arbeitsmappe öffnen und Löschen eines Arbeitsblatts. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+> 
+> - Excel 2013-Arbeitsmappe  
+> - Excel 2013-Vorlage  
+> - Excel 2010-Arbeitsmappe  
+> - Excel 2010-Vorlage  
+> 
+>   Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Excel** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um eine Arbeitsmappe öffnen und Löschen eines Arbeitsblatts. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>So löschen Sie ein Arbeitsblatt mithilfe eines Arbeitsblatt-Hostelements  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>-Methode von `Sheet1` auf.  
+1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> -Methode von `Sheet1`auf.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
@@ -51,11 +51,11 @@ ms.locfileid: "35257308"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Verwenden der Sheets-Auflistung der Excel-Arbeitsmappe  
  Greifen Sie auf Arbeitsblätter über die Microsoft Office Excel-Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> in den folgenden Fällen zu:  
   
--   Sie möchten ein Arbeitsblatt in einem VSTO-Add-In löschen.  
+- Sie möchten ein Arbeitsblatt in einem VSTO-Add-In löschen.  
   
--   Das Arbeitsblatt, das Sie löschen möchten, wurde zur Laufzeit in einer Anpassung auf Dokumentebene erstellt.  
+- Das Arbeitsblatt, das Sie löschen möchten, wurde zur Laufzeit in einer Anpassung auf Dokumentebene erstellt.  
   
- Der folgende Code Löscht ein Arbeitsblatt aus einer Arbeitsmappe durch Verweisen auf das Blatt über die Indexnummer des der **Blätter** Auflistung. Dieser Code geht davon aus, dass ein neues Arbeitsblatt programmgesteuert erstellt wurde.  
+  Der folgende Code Löscht ein Arbeitsblatt aus einer Arbeitsmappe durch Verweisen auf das Blatt über die Indexnummer des der **Blätter** Auflistung. Dieser Code geht davon aus, dass ein neues Arbeitsblatt programmgesteuert erstellt wurde.  
   
 > [!IMPORTANT]  
 >  Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Excel** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um eine Arbeitsmappe öffnen und Löschen eines Arbeitsblatts. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  

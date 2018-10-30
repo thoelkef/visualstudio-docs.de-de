@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unalignedtype | Microsoft Docs'
+title: 'Idiasymbol:: Get_unalignedtype | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a603fb7df64ace0b5e0c2f99db8a0aac18281430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906766"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp nicht ausgerichteten ist ab.  
+Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp nicht ausgerichtete ist ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_unalignedType (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` gibt zurück, wenn der benutzerdefinierte Datentyp andernfalls nicht ausgerichteten ist, `FALSE`.  
+ [out] Gibt `TRUE` gibt zurück, wenn der benutzerdefinierte Datentyp, andernfalls nicht ausgerichtete ist, `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847629"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -31,7 +31,7 @@ Sie können den **Shader-Designer** dazu verwenden, benutzerdefinierte visuelle 
 Der **Shader-Designer** unterstützt diese Shaderformate:
 
 |Formatname|Dateierweiterung|Unterstützte Vorgänge (Anzeigen, Bearbeiten, Exportieren)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Directed Graph Shader Language|*.dgsl*|Anzeigen, Bearbeiten|
 |HLSL-Shader (Quellcode)|*.hlsl*|Exportieren|
 |HLSL-Shader (Bytecode)|*.cso*|Exportieren|
@@ -177,7 +177,7 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 |Befehl|Tastenkombinationen|
-|-------------|------------------------|
+|-------------| - |
 |In den Modus **Auswählen** wechseln|**STRG**+**G**, **STRG**+**Q**<br /><br /> **S**|
 |In den Modus **Zoom** wechseln|**STRG**+**G**, **STRG**+**Z**<br /><br /> **Z**|
 |In den Modus **Schwenken** wechseln|**STRG**+**G**, **STRG**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 |Titel|Beschreibung |
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie beim Arbeiten mit Texturen, Bildern, 3D-Modellen und Shadereffekten verwenden können.|
-|[Bildbearbeitung](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
+|[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor von Visual Studio für die Arbeit mit 3D-Modellen einsetzen lässt.|

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894520"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (
   
  Ihr Unternehmen und Ihr Projekt betreffen auch spezielle Sätze von Konzepten, die mit einer DSL beschrieben werden können. Beispielsweise können Sie eine DSL für eine dieser Anwendungen definieren:  
   
--   Planen der Navigationspfade auf einer Website.  
+- Planen der Navigationspfade auf einer Website.  
   
--   Schaltpläne für elektronische Komponenten.  
+- Schaltpläne für elektronische Komponenten.  
   
--   Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.  
+- Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.  
   
- Beim Entwerfen einer DSL, die Sie definieren eine *Domänenklasse* für die einzelnen wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen-Check-in –. Sie definieren *domänenbeziehungen* wie Links, über das Netzwerk oder ein Fließband, um die Konzepte miteinander zu verknüpfen.  
+  Beim Entwerfen einer DSL, die Sie definieren eine *Domänenklasse* für die einzelnen wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen-Check-in –. Sie definieren *domänenbeziehungen* wie Links, über das Netzwerk oder ein Fließband, um die Konzepte miteinander zu verknüpfen.  
   
- Erstellen von Benutzern Ihrer DSL *Modelle.* Modelle sind *Instanzen* der DSL. Beschreiben sie beispielsweise eine bestimmte Website oder die Verknüpfung der ein bestimmtes Gerät oder das System in einem bestimmten Flughafen für die Gepäckbeförderung.  
+  Erstellen von Benutzern Ihrer DSL *Modelle.* Modelle sind *Instanzen* der DSL. Beschreiben sie beispielsweise eine bestimmte Website oder die Verknüpfung der ein bestimmtes Gerät oder das System in einem bestimmten Flughafen für die Gepäckbeförderung.  
   
- Ihre Benutzer können ein Modell als Diagramm oder ein Windows-Formular anzeigen. Modelle können auch angezeigt werden als XML, wie sie gespeichert werden. Wenn Sie eine DSL definieren, definieren Sie, wie die Instanzen der einzelnen Domänenklasse und die Beziehungen auf dem Bildschirm des Benutzers angezeigt werden. Eine typische DSL wird als eine Auflistung von Symbolen oder Rechtecke, die Verbindung durch Pfeile angezeigt.  
+  Ihre Benutzer können ein Modell als Diagramm oder ein Windows-Formular anzeigen. Modelle können auch angezeigt werden als XML, wie sie gespeichert werden. Wenn Sie eine DSL definieren, definieren Sie, wie die Instanzen der einzelnen Domänenklasse und die Beziehungen auf dem Bildschirm des Benutzers angezeigt werden. Eine typische DSL wird als eine Auflistung von Symbolen oder Rechtecke, die Verbindung durch Pfeile angezeigt.  
   
- Die folgende Abbildung zeigt ein kleines Modell in einer DSL DSL an:  
+  Die folgende Abbildung zeigt ein kleines Modell in einer DSL DSL an:  
   
- ![Tudor-Stammstrukturmodell](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Tudor-Stammstrukturmodell](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Was können Sie mit DSLs tun.  
  Eine typische Anwendung einer DSL ist Programmcode oder andere Artefakte generieren. Wenn Sie Ihre DSL definiert haben, können Sie definieren *Textvorlagen* , lesen Sie ein Modell für die DSL, und Generieren von Textdateien.  

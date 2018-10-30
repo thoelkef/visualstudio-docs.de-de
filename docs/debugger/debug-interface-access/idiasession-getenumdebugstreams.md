@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumdebugstreams | Microsoft Docs'
+title: 'Idiasession:: Getenumdebugstreams | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e604734b7dceb9c0edc1fc19aaae56655ee27f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 53eb0765b7a3d9ed5fb23c0b1d8880eeca390159
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818796"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
-Ruft eine enumerierte Sequenz von Debug-Datenströme.  
+Ruft eine aufgelistete Sequenz von Debug-Datenströme.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT getEnumDebugStreams (
   
 #### <a name="parameters"></a>Parameter  
  `ppEnumDebugStreams`  
- [out] Gibt eine [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) -Objekt, das eine Liste der Debug-Datenströme enthält.  
+ [out] Gibt eine [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) -Objekt, das eine Liste von Debug-Streams enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

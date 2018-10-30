@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849163"
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
 
@@ -33,8 +33,8 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 
 Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enthalten.
 
-|Name (oder Verknüpfung)|description|Mögliche Stellen zum Einfügen des Ausschnitts|
-|--------------------------|-----------------|---------------------------------------|
+|Name (oder Verknüpfung)|Beschreibung |Mögliche Stellen zum Einfügen des Ausschnitts|
+| - |-----------------| - |
 |#if|Erstellt eine [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if)-Direktive und eine [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif)-Direktive.|Beliebig.|
 |#region|Erstellt eine [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region)-Direktive und eine [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion)-Direktive.|Beliebig.|
 |~|Erstellt einen [Finalizer](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (Destruktor) für die enthaltende Klasse.|Innerhalb einer Klasse.|

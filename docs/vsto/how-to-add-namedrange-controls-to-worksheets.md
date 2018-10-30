@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867116"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern
   Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene.  
@@ -33,13 +33,13 @@ ms.locfileid: "35672737"
   
  In diesem Thema werden die folgenden Aufgaben beschrieben:  
   
--   [Hinzufügen von NamedRange-Steuerelementen zur Entwurfszeit](#designtime)  
+- [Hinzufügen von NamedRange-Steuerelementen zur Entwurfszeit](#designtime)  
   
--   [Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
+- [Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
   
--   [Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
+- [Hinzufügen von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)  
   
- Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelemente finden Sie [NamedRange-Steuerelement](../vsto/namedrange-control.md).  
+  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelemente finden Sie [NamedRange-Steuerelement](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Hinzufügen von NamedRange-Steuerelementen zur Entwurfszeit  
  Es gibt verschiedene Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelementen zur Entwurfszeit zu Arbeitsblättern in einem Projekt auf Dokumentebene: in Excel, über die **Toolbox**von Visual Studio oder im Fenster **Datenquellen** .  

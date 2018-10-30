@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938265"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -132,10 +132,10 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
 
 4. Erstellen Sie eine *PKGDEF* Datei, und fügen eine Zeile, die etwa wie folgt hinzu:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern der **erstellen** Aktion **Content** und **Include in VSIX-Datei** Eigenschaft auf "true".
 
@@ -295,40 +295,40 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 
 1. Fügen Sie eine JSON-Datei (z. B. *MockLanguageExtensionSettings.json*) in Ihrem Projekt, das die Einstellungen und Standardwerte enthält. Zum Beispiel:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Mit der rechten Maustaste auf die JSON-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um den "Content" und "Include in VSIX-Datei" Eigenschaft auf "true".
 
 3. Implementieren von ConfigurationSections und Zurückgeben der Liste der Präfixe für die Einstellungen, die in der JSON-Datei definiert (In Visual Studio Code, dies würde zugeordnet, der Name des Konfigurationsabschnitts in "Package.JSON"):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Fügen Sie dem Projekt eine PKGDEF-Datei (neuen Text-Datei hinzufügen und ändern Sie die Dateierweiterung in PKGDEF). Die Pkgdef-Datei sollte diese Informationen enthalten:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Klicken Sie mit der rechten Maustaste auf die PKGDEF-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion **Content** und **Include in VSIX-Datei** Eigenschaft auf "true".
 
 6. Öffnen Sie die *"Source.Extension.vsixmanifest"* -Datei und fügen Sie ein Medienobjekt in der **Asset** Registerkarte:
 
-  ![Bearbeiten von Vspackage-asset](media/lsp-add-vspackage-asset.png)
+   ![Bearbeiten von Vspackage-asset](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
-  * **Quelle**: Datei im Dateisystem
-  * **Pfad**: [Pfad zu Ihrem *PKGDEF* Datei]
+   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **Quelle**: Datei im Dateisystem
+   * **Pfad**: [Pfad zu Ihrem *PKGDEF* Datei]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Benutzer Bearbeiten der Einstellungen für einen Arbeitsbereich
 
@@ -336,16 +336,16 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 2. Hinzufügen eine Datei in die *.vs* Ordner mit dem Namen *VSWorkspaceSettings.json*.
 3. Hinzufügen eine Zeile, um die *VSWorkspaceSettings.json* -Datei für eine Einstellung, die der Server bietet. Zum Beispiel:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
-Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann.  Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
+   Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann.  Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
 
-1. Öffnen oder erstellen Sie die Datei mit den Arbeitsbereich *VSWorkspaceSettings.json* (siehe "Benutzer Bearbeiten der Einstellungen für einen Arbeitsbereich").
-2. Fügen Sie in der JSON-Datei die folgende Zeile hinzu:
+4. Öffnen oder erstellen Sie die Datei mit den Arbeitsbereich *VSWorkspaceSettings.json* (siehe "Benutzer Bearbeiten der Einstellungen für einen Arbeitsbereich").
+5. Fügen Sie in der JSON-Datei die folgende Zeile hinzu:
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft Docs
+title: CONTEXT_INFO_FIELDS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05616ba660af188c26f192b97e29d5b60e04fe8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a6833e93e7947ee5013a8879c6a5fc949de9fb20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929464"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Gibt an, welche Informationen Sie über eine Speicherkontext abzurufen.  
@@ -54,27 +54,27 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>Member  
  CIF_MODULEURL  
- Die Initialisierung/verwenden die `bstrModuleUrl` Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur.  
+ Initialisieren und Verwenden der `bstrModuleUrl` Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur.  
   
  CIF_FUNCTION  
- Die Initialisierung/verwenden die `bstrFunction` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren und Verwenden der `bstrFunction` Feld der `CONTEXT_INFO` Struktur.  
   
  CIF_FUNCTIONOFFSET  
- Die Initialisierung/verwenden die `posFunctionOffset` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren und Verwenden der `posFunctionOffset` Feld der `CONTEXT_INFO` Struktur.  
   
  CIF_ADDRESS  
- Die Initialisierung/verwenden die `bstrAddress` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren und Verwenden der `bstrAddress` Feld der `CONTEXT_INFO` Struktur.  
   
  CIF_ADDRESSOFFSET  
- Die Initialisierung/verwenden die `bstrAddressOffset` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren und Verwenden der `bstrAddressOffset` Feld der `CONTEXT_INFO` Struktur.  
   
  CIF_ALLFIELDS  
- Alle Felder des initialisieren/verwenden die `CONTEXT_INFO` Struktur.  
+ Alle Felder initialisiert und Verwenden der `CONTEXT_INFO` Struktur.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Werte werden Parameter an übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) Methode, um anzugeben, welche Felder von der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur initialisiert werden sollen.  
+ Diese Werte werden übergeben einen Parameter für die [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) Methode, um die Felder anzugeben der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) sind, dass die Struktur initialisiert werden.  
   
- Diese Flags werden auch verwendet, um anzugeben, welche Felder von der `CONTEXT_INFO` Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird.  
+ Diese Flags werden auch verwendet, welche Felder der an die `CONTEXT_INFO` -Struktur sind gültig und verwendet, wenn die Struktur zurückgegeben wird.  
   
  Diese Werte können mit einem bitweisen OR kombiniert werden.  
   

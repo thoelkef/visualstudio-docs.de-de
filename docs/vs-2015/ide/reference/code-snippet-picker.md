@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845295"
 ---
 # <a name="code-snippet-picker"></a>Codeausschnittauswahl
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Der Code-Editor von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] stellt eine 
   
  Wie Sie die **Codeausschnittauswahl** aufrufen, hängt von der verwendeten Sprache ab.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]: Die **Codeausschnittauswahl** ist nicht verfügbar.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]: Die **Codeausschnittauswahl** ist nicht verfügbar.  
   
--   Visual F#: Die **Codeausschnittauswahl** ist nicht verfügbar.  
+- Visual F#: Die **Codeausschnittauswahl** ist nicht verfügbar.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
   
--   XML: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
+- XML: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
   
--   HTML: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
+- HTML: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**.  
   
--   SQL: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.  
+- SQL: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.  
   
- In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur **Ordnerliste** hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).  
+  In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur **Ordnerliste** hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  Elementname  

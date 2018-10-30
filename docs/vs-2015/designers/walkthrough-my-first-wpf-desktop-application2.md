@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899278"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ ein Name = "Einführung in" ></a> diese exemplarische Vorgehensweise enthält ei
   
  Weitere Informationen über die WPF-Architektur und -Programmiermodelle finden Sie in den folgenden Themen:  
   
--   [WPF-Architektur](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [WPF-Architektur](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Übersicht über XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Übersicht über XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Übersicht über Abhängigkeitseigenschaften](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Übersicht über Abhängigkeitseigenschaften](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Layoutsystem](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Layoutsystem](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Stile und Vorlagen](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Stile und Vorlagen](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Weitere Informationen zum Erstellen von Anwendungen finden Sie in den folgenden Themen:  
+  Weitere Informationen zum Erstellen von Anwendungen finden Sie in den folgenden Themen:  
   
--   [Übersicht über die Anwendungsentwicklung](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Übersicht über die Anwendungsentwicklung](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Übersicht zu Steuerelementen](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Übersicht zu Steuerelementen](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Übersicht zur Datenbindung](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Übersicht zur Datenbindung](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Dokumente in WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Dokumente in WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

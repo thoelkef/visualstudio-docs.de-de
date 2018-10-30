@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949889"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Anzeigen von Datenwerten als Datentipps im Code-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informatione
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>So zeigen Sie DataTips an (nur im Unterbrechungsmodus)  
   
-1.  Platzieren Sie in einem Quellcodefenster den Mauszeiger auf eine beliebige Variable aus dem aktuellen Gültigkeitsbereich.  
+1. Platzieren Sie in einem Quellcodefenster den Mauszeiger auf eine beliebige Variable aus dem aktuellen Gültigkeitsbereich.  
   
-     Ein DataTip wird angezeigt.  
+    Ein DataTip wird angezeigt.  
   
-    > [!NOTE]
-    >  DataTips werden immer in dem Kontext ausgeführt, in dem die Ausführung angehalten wird, und nicht an der Stelle, auf die der Cursor zeigt. Wenn Sie in einer anderen Funktion auf eine Variable mit dem Namen einer Variablen im aktuellen Kontext zeigen, wird der Wert der Variablen in der anderen Funktion als der Wert der Variablen im aktuellen Kontext angezeigt.  
+   > [!NOTE]
+   >  DataTips werden immer in dem Kontext ausgeführt, in dem die Ausführung angehalten wird, und nicht an der Stelle, auf die der Cursor zeigt. Wenn Sie in einer anderen Funktion auf eine Variable mit dem Namen einer Variablen im aktuellen Kontext zeigen, wird der Wert der Variablen in der anderen Funktion als der Wert der Variablen im aktuellen Kontext angezeigt.  
   
-2.  Der DataTip verschwindet, wenn Sie den Mauszeiger fortbewegen. Um den DataTip anzuheften, sodass dieser geöffnet bleibt, klicken Sie auf die **an Quelle heften** Symbol, oder  
+2. Der DataTip verschwindet, wenn Sie den Mauszeiger fortbewegen. Um den DataTip anzuheften, sodass dieser geöffnet bleibt, klicken Sie auf die **an Quelle heften** Symbol, oder  
   
-    -   Mit der rechten Maustaste auf eine Variable, und klicken Sie dann **an Quelle heften**.  
+   - Mit der rechten Maustaste auf eine Variable, und klicken Sie dann **an Quelle heften**.  
   
      Der angeheftete DataTip wird geschlossen, wenn die Debugsitzung endet.  
   

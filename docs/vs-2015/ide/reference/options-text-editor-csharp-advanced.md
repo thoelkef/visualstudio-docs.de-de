@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850515"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Mithilfe dieses Dialogfelds können Sie die Einstellungen für Formatierungen mi
  Fehler im Editor unterstreichen  
  Identifiziert Buildfehler im Code. Wenn diese Option aktiviert ist, werden wellenförmige Unterstreichungen in Farben angezeigt, die eine bestimmte Bedeutung haben:  
   
--   Analysefehler werden rot dargestellt.  
+- Analysefehler werden rot dargestellt.  
   
--   Buildfehler werden blau dargestellt.  
+- Buildfehler werden blau dargestellt.  
   
--   Buildwarnungen werden grün dargestellt.  
+- Buildwarnungen werden grün dargestellt.  
   
--   Ungültige Bearbeitungen in [Bearbeiten und Fortfahren](../../debugger/edit-and-continue.md) werden violett dargestellt.  
+- Ungültige Bearbeitungen in [Bearbeiten und Fortfahren](../../debugger/edit-and-continue.md) werden violett dargestellt.  
   
- Bewegen Sie den Zeiger über das unterstrichene Codesegment. Hierdurch wird eine QuickInfo mit Informationen über den Fehler angezeigt.  
+  Bewegen Sie den Zeiger über das unterstrichene Codesegment. Hierdurch wird eine QuickInfo mit Informationen über den Fehler angezeigt.  
   
- Livesemantikfehler anzeigen  
- Erkennt bestimmte Kompilierungsfehler ohne explizite Kompilierung, z.B. das Angeben und Verwenden eines unbekannten Typs oder Verweise auf eine unbekannte Eigenschaft.  
+  Livesemantikfehler anzeigen  
+  Erkennt bestimmte Kompilierungsfehler ohne explizite Kompilierung, z.B. das Angeben und Verwenden eines unbekannten Typs oder Verweise auf eine unbekannte Eigenschaft.  
   
- Verweise auf Symbole unter dem Cursor markieren  
- Wenn sich der Cursor innerhalb eines Symbols befindet, oder wenn Sie auf ein Symbol klicken, werden alle Instanzen dieses Symbols in der Codedatei hervorgehoben.  
+  Verweise auf Symbole unter dem Cursor markieren  
+  Wenn sich der Cursor innerhalb eines Symbols befindet, oder wenn Sie auf ein Symbol klicken, werden alle Instanzen dieses Symbols in der Codedatei hervorgehoben.  
   
 ## <a name="refactoring"></a>Umgestaltung  
  Ergebnisse der Umgestaltung überprüfen  

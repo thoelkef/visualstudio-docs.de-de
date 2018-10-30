@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Microsoft Docs
+title: BP_RESOLUTION_DATA | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876086"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-Beschreibt das Ergebnis der Bindung eines Haltepunkts an.  
+Beschreibt das Ergebnis der Bindung eines Haltepunkts für Daten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,16 +50,16 @@ public struct BP_RESOLUTION_DATA {
  Die Datenausdruck, der gebunden wurde.  
   
  `bstrFunc`  
- Der Name der Funktion hat den Datenhaltepunkt bei (sofern vorhanden) gebunden.  
+ Der Name der Funktion hat der Datenhaltepunkt in (sofern vorhanden) gebunden.  
   
  `bstrImage`  
- Der Name des Moduls (z. B. MyModule.dll), die in den Datenhaltepunkt gebunden wurde.  
+ Der Name des Moduls (z. B. MyModule.dll), das in der Datenhaltepunkt gebunden ist.  
   
  `dwFlags`  
- Ein Wert aus der [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) Enumeration, die beschreiben, wie den Datenhaltepunkt implementiert wird.  
+ Ein Wert aus der [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) Enumeration, die beschreibt, wie der Datenhaltepunkt implementiert wird.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die aktivieren in ein Mitglied der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.  
+ Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die in ein Mitglied zu aktivieren ist die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) vom zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

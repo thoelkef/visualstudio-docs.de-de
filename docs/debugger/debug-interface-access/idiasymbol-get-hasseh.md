@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasseh | Microsoft Docs'
+title: 'Idiasymbol:: Get_hasseh | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc6cb799b5d218cec09095115a9046605780c65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94329d853be271653a82f184399453e06c4e9836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935353"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Ruft ein Flag, das angibt, ob die Funktion enthält [strukturierte Ausnahmebehandlung (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (z. B. __try /\__except Blöcke).  
+Ruft ein Flag, das angibt, ob die Funktion enthält [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (z. B. __try /\__except-Blöcke).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_hasSEH(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion alle Blöcke; die strukturierte Ausnahmebehandlung aufweist, andernfalls `FALSE`.  
+ [out] Gibt `TRUE` , wenn die Funktion strukturierte Ausnahmebehandlungsblöcke; hat, andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942984"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
@@ -35,25 +35,25 @@ Die Architektur der Auslastungssimulation besteht aus einem Visual Studio-Clien
 
 Diese Architektur bietet die folgenden Vorteile:
 
--   Die Möglichkeit, die Auslastungsgenerierung durch Hinzufügen zusätzlicher Test-Agents zu einem Testcontroller horizontal zu skalieren
+- Die Möglichkeit, die Auslastungsgenerierung durch Hinzufügen zusätzlicher Test-Agents zu einem Testcontroller horizontal zu skalieren
 
--   Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Zum Beispiel:
+- Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Zum Beispiel:
 
-     **Lokale Konfiguration:**
+   **Lokale Konfiguration:**
 
-    -   Machine1: Visual Studio, Controller, Agent.
+  - Machine1: Visual Studio, Controller, Agent.
 
-     ![Lokaler Computer mit Controller und Agent](./media/load-test-configa.png)
+    ![Lokaler Computer mit Controller und Agent](./media/load-test-configa.png)
 
-     **Typische Remotekonfiguration:**
+    **Typische Remotekonfiguration:**
 
-    -   Machine1 und 2: Visual Studio (ein Controller kann von mehreren Testern verwendet werden).
+  - Machine1 und 2: Visual Studio (ein Controller kann von mehreren Testern verwendet werden).
 
-    -   Machine3: Controller (auf diesem Computer können auch Agents installiert sein)
+  - Machine3: Controller (auf diesem Computer können auch Agents installiert sein)
 
-    -   Machine4-n: Agent oder Agents, die jeweils dem Controller auf Machine3 zugeordnet sind.
+  - Machine4-n: Agent oder Agents, die jeweils dem Controller auf Machine3 zugeordnet sind.
 
-     ![Remotecomputer mit Controller und Agents](./media/load-test-configb.png)
+    ![Remotecomputer mit Controller und Agents](./media/load-test-configb.png)
 
 Obwohl ein Testcontroller in der Regel mehrere Test-Agents verwaltet, kann ein Agent nur einem einzelnen Controller zugeordnet sein. Jeder Test-Agent kann von einem Team von Entwicklern gemeinsam verwendet werden. Dank dieser Architektur kann die Anzahl der Test-Agents leicht erhöht werden, um größere Auslastungen zu generieren.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928346"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
@@ -57,7 +57,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 > [!NOTE]
 > Einige Erweiterungen heben die Tastenzuordnungen von Visual Studio auf. Um die obigen Befehle verwenden zu können, stellen Sie zuerst die Standardtastenzuordnungen von Visual Studio wieder her. Navigieren Sie dazu zu **Extras** > **Einstellungen importieren/exportieren** > **Alle Einstellungen zurücksetzen** oder zu **Extras** > **Optionen** > **Tastatur** > **Zurücksetzen**.
 
-Weitere Informationen zu Tastenkombinationen in Visual Studio finden Sie [in unserer Dokumentation](..\ide\tips-and-tricks-for-visual-studio.md).
+Weitere Informationen zu Tastenkombinationen in Visual Studio finden Sie [in unserer Dokumentation](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Ich benötige eine Möglichkeit, schnell zu Dateien oder Dateitypen zu navigieren.
 
@@ -161,7 +161,7 @@ Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schre
 | Aktivieren der Navigation zu dekompilierten Quellen | Lässt die Aktivierung von „Gehe zu Definition“ für Typen/Member aus externen Quellen zu und verwendet den ILSpy-Decompiler zur Anzeige von Methodentexten. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren** |
 | Vervollständigungs-/Vorschlagsmodus | Ändert das Vervollständigungsverhalten in IntelliSense (Entwickler mit IntelliJ-Hintergründen ändern meist die Einstellung des Standardwerts). | **Menü** > **Bearbeiten** > **IntelliSense** > **Beendigungsmodus umschalten** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Zeigt Codereferenzinformationen an und ändert den Änderungsverlauf im Editor. | **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens** |
-| [Codeausschnitte](../ide/visual-csharp-code-snippets.md) | Unterstützt beim Ausdrücken allgemeiner Bausteine. |  Geben Sie einen Codeausschnittnamen ein, und drücken Sie dann zweimal die **Tab**-Taste. |
+| [Codeausschnitte](../ide/visual-csharp-code-snippets.md) | Unterstützt beim Ausdrücken allgemeiner Bausteine. | Geben Sie einen Codeausschnittnamen ein, und drücken Sie dann zweimal die **Tab**-Taste. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Fehlt ein Feature, das Ihre Produktivität erhöht oder treten Leistungsprobleme auf?
 

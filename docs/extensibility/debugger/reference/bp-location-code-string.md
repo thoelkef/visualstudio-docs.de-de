@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Microsoft Docs
+title: BP_LOCATION_CODE_STRING | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 102ad26fcc746c8400cfa5114d9559fc11729dee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b7baad0350ef0524aee81e61f9019b8e91a9de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857145"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-Verwendet zum Festlegen von codehaltepunkte auf Grundlage einer Zeichenfolge, die der Benutzer die integrierte Entwicklungsumgebung (IDE) eingeben können.  
+Verwendet zum Festlegen von Code Breakpoints, die basierend auf einer Zeichenfolge, die der Benutzer aus der integrierten Entwicklungsumgebung (IDE) eingeben können.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,7 +36,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
   
 ## <a name="members"></a>Member  
  `bstrContext`  
- Im Rahmen der Haltepunkt im Code, in der Regel eine Methode oder Funktion Namen wie in einer Aufrufliste angezeigt.  
+ Der Kontext der der Haltepunkt im Code, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.  
   
  `bstrCodeExpr`  
  Die Zeichenfolge, der in der Benutzer eingibt, um die codehaltepunkt zu beschreiben.  

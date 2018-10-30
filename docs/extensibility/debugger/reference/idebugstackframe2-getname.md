@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetName | Microsoft Docs
+title: IDebugStackFrame2::GetName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b4e5a6ac925762e23766938141dfcddb3fe598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbfaefd685b61491db326f2c2edb82a38b66f639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887709"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
-Ruft den Namen des Stapelrahmens ab.  
+Ruft den Namen des Stapelrahmens.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,10 +44,10 @@ int GetName (
  [out] Gibt den Namen des Stapelrahmens zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Name des einen Stapelrahmen ist in der Regel der Name der Methode, die gerade ausgeführt wird.  
+ Der Name des ein Stapelrahmen ist in der Regel der Name der Methode ausgeführt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

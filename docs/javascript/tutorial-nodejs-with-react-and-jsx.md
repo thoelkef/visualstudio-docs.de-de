@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823735"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -354,27 +354,27 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 
 1. Schließen Sie alle Chrome-Fenster.
 
-1. Öffnen Sie über das Windows-**Startmenü** den Befehl **Ausführen** (klicken Sie mit der rechten Maustaste auf die Schaltfläche, und wählen Sie **Ausführen** aus), und geben Sie den folgenden Befehl ein:
+2. Öffnen Sie über das Windows-**Startmenü** den Befehl **Ausführen** (klicken Sie mit der rechten Maustaste auf die Schaltfläche, und wählen Sie **Ausführen** aus), und geben Sie den folgenden Befehl ein:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
 
-1. Wechseln Sie zu Visual Studio, und legen Sie wie in der folgenden Abbildung dargestellt einen Haltepunkt im *app-bundle.js*-Code in der `render()`-Funktion fest:
+3. Wechseln Sie zu Visual Studio, und legen Sie wie in der folgenden Abbildung dargestellt einen Haltepunkt im *app-bundle.js*-Code in der `render()`-Funktion fest:
 
     ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Drücken Sie **STRG**+**F** (**Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**), um die `render()`-Funktion in *app-bundle.js* zu finden.
 
-1. Wenn Chrome bereits als Debugziel in Visual Studio ausgewählt wurde, drücken Sie **STRG**+**F5** (**Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
+4. Wenn Chrome bereits als Debugziel in Visual Studio ausgewählt wurde, drücken Sie **STRG**+**F5** (**Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
 
     Die App wird daraufhin in einer neuen Registerkarte im Browser geöffnet.
 
-1. Wählen Sie **Debuggen** > **An den Prozess anhängen** aus.
+5. Wählen Sie **Debuggen** > **An den Prozess anhängen** aus.
 
-1. Wählen Sie im Dialogfeld **An den Prozess anhängen** im Feld **Anhängen an** den Eintrag **WebKit-Code** aus. Geben Sie im Filterfeld **Chrome** ein, um die Suchergebnisse zu filtern.
+6. Wählen Sie im Dialogfeld **An den Prozess anhängen** im Feld **Anhängen an** den Eintrag **WebKit-Code** aus. Geben Sie im Filterfeld **Chrome** ein, um die Suchergebnisse zu filtern.
 
-1. Wählen Sie den Chrome-Prozess mit dem richtigen Hostport aus (in diesem Beispiel 1337), und klicken Sie auf **Anhängen**.
+7. Wählen Sie den Chrome-Prozess mit dem richtigen Hostport aus (in diesem Beispiel 1337), und klicken Sie auf **Anhängen**.
 
     ![Anhängen an den Prozess](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -383,20 +383,20 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
     > [!NOTE]
     > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen von Chrome zu schließen, bevor Sie Chrome im Debugmodus starten. Möglicherweise werden Chrome-Erweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.
 
-1. Da der Code mit dem Haltepunkt bereits ausgeführt wurde, aktualisieren Sie zum Erreichen des Haltepunkts die Browserseite.
+8. Da der Code mit dem Haltepunkt bereits ausgeführt wurde, aktualisieren Sie zum Erreichen des Haltepunkts die Browserseite.
 
     Während der Unterbrechung im Debugger können Sie den App-Status überprüfen, indem Sie mit dem Mauszeiger auf Variablen zeigen und Debuggerfenster verwenden. Sie können den Debugger durch Navigieren im Code nach vorne verschieben (**F5**, **F10** und **F11**).
 
     Sie können den Haltepunkt je nach Umgebung und Browserstatus entweder in *app-bundle.js* oder im zugeordneten Speicherort in *app.tsx* erreichen. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
 
-    * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren (legen Sie den Haltepunkt in einer Codezeile fest, die Haltepunkte zulässt, z.B die `return`-Anweisung oder eine `var`-Deklaration).
+   * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren (legen Sie den Haltepunkt in einer Codezeile fest, die Haltepunkte zulässt, z.B die `return`-Anweisung oder eine `var`-Deklaration).
 
-        Alternativ, wenn Sie Code in einer *app.tsx*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung in *app.tsx*, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.
+       Alternativ, wenn Sie Code in einer *app.tsx*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung in *app.tsx*, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.
 
-    * Wenn Sie Code in *app bundle.js* unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *app bundle.js.map*.
+   * Wenn Sie Code in *app bundle.js* unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *app bundle.js.map*.
 
-    > [!TIP]
-    > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
+     > [!TIP]
+     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

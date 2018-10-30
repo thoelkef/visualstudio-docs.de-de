@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855846"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Gewusst wie: zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.
   Sie können das Feature (Information Rights Management, IRM) von Microsoft Office verwenden, um Berechtigungen auf ein Dokument oder eine Arbeitsmappe zu beschränken. Standardmäßig ist der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder einer Microsoft Office Excel-Arbeitsmappe nicht zulässig, ausgeführt wird. Sie können die Standardeinstellung ändern, so, dass Ihre Erweiterungen durch verwalteten Code auf das Objektmodell zugreifen können und Ihre Lösung funktioniert.  
@@ -36,18 +36,18 @@ ms.locfileid: "35255285"
   
 ## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Um zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.  
   
-1.  Öffnen Sie das Dokument oder die Arbeitsmappe in Word oder Excel.  
+1. Öffnen Sie das Dokument oder die Arbeitsmappe in Word oder Excel.  
   
-2.  Klicken Sie auf die **Datei** Registerkarte, zeigen Sie auf **vorbereiten**, zeigen Sie auf **Berechtigung einschränken**, und klicken Sie dann auf **eingeschränkten Zugriff**.  
+2. Klicken Sie auf die **Datei** Registerkarte, zeigen Sie auf **vorbereiten**, zeigen Sie auf **Berechtigung einschränken**, und klicken Sie dann auf **eingeschränkten Zugriff**.  
   
-    > [!NOTE]  
-    >  Bei der ersten Verwendung werden Sie aufgefordert, den Windows Rights Management-Client installieren. Nachdem Sie den Client installieren, müssen Sie die Schritte wiederholen.  
+   > [!NOTE]  
+   >  Bei der ersten Verwendung werden Sie aufgefordert, den Windows Rights Management-Client installieren. Nachdem Sie den Client installieren, müssen Sie die Schritte wiederholen.  
   
-3.  In der **Berechtigung** wählen Sie im Dialogfeld **Zugriffsberechtigung auf dieses Dokument einschränken**, und klicken Sie dann auf **Weitere Optionen**.  
+3. In der **Berechtigung** wählen Sie im Dialogfeld **Zugriffsberechtigung auf dieses Dokument einschränken**, und klicken Sie dann auf **Weitere Optionen**.  
   
-4.  Klicken Sie unter **zusätzliche Berechtigungen für Benutzer**Option **programmgesteuerten Zugriff auf Inhalt**.  
+4. Klicken Sie unter **zusätzliche Berechtigungen für Benutzer**Option **programmgesteuerten Zugriff auf Inhalt**.  
   
- Word oder Excel ermöglicht den programmgesteuerten Zugriff auf das Objektmodell.  
+   Word oder Excel ermöglicht den programmgesteuerten Zugriff auf das Objektmodell.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwaltung von Informationsrechten und Erweiterungen für verwalteten code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   

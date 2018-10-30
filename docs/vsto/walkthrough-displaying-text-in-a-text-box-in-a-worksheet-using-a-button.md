@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840284"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Office Excel-Arbeitsblättern, und Erstellen von Excel-Projekten, die mit Office-Entwicklungstools in Visual Studio. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -41,7 +41,7 @@ ms.locfileid: "35258440"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -62,22 +62,22 @@ ms.locfileid: "35258440"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>So fügen Sie eine Schaltfläche und ein Textfeld hinzu  
   
-1.  Überprüfen Sie, ob die **Mein Excel Button.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.  
+1. Überprüfen Sie, ob die **Mein Excel Button.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.  
   
-2.  Von der **Standardsteuerelementen** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> zu `Sheet1`.  
+2. Von der **Standardsteuerelementen** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> zu `Sheet1`.  
   
-3.  Von der **Ansicht** , wählen Sie im Menü **Fenster "Eigenschaften"**.  
+3. Von der **Ansicht** , wählen Sie im Menü **Fenster "Eigenschaften"**.  
   
-4.  Achten Sie darauf, **TextBox1** werden in der **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds, das auf **DisplayText**.  
+4. Achten Sie darauf, **TextBox1** werden in der **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds, das auf **DisplayText**.  
   
-5.  Ziehen Sie eine **Schaltfläche** -Steuerelement auf `Sheet1` , und ändern Sie die folgenden Eigenschaften:  
+5. Ziehen Sie eine **Schaltfläche** -Steuerelement auf `Sheet1` , und ändern Sie die folgenden Eigenschaften:  
   
-    |Eigenschaft|Wert|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Text**|**Einfügen von Text**|  
+   |Eigenschaft|Wert|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**Text**|**Einfügen von Text**|  
   
- Jetzt schreiben Sie Code ausführen, wenn die Schaltfläche geklickt wird.  
+   Jetzt schreiben Sie Code ausführen, wenn die Schaltfläche geklickt wird.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Füllen Sie im Textfeld aus, wenn die Schaltfläche geklickt wird  
  Jedes Mal, die der Benutzer klickt auf die Schaltfläche **Hello World!** in das Textfeld wird angefügt werden.  

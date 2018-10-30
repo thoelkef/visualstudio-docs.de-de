@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863892"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050182"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 
@@ -33,12 +33,12 @@ VsixPublisher.exe ist das Befehlszeilentool für Visual Studio-Erweiterungen im 
 
 Eine Erweiterung veröffentlicht in Marketplace. Die Erweiterung möglich einer VSIX-Datei, eine EXE-Datei/Msi-Datei oder einen Link. Wenn die Erweiterung bereits mit der gleichen Version vorhanden ist, überschreibt er die Erweiterung. Wenn die Erweiterung nicht bereits vorhanden ist, wird eine neue Erweiterung erstellt.
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|Nutzlast (erforderlich)                 |  Entweder ein Pfad zu der Nutzlast zum Veröffentlichen oder einen Link zu als die "Weitere Informationen-URL" verwenden.      |
-|PublishManifest (erforderlich)         |  Pfad zu der veröffentlichen-Manifestdatei zu verwenden.       |
-|ignoreWarnings                     |  Liste mit Warnungen beim Veröffentlichen einer Extension ignoriert werden sollen. Diese Warnungen werden als Nachrichten von der Befehlszeile angezeigt, beim Veröffentlichen einer Extension. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. Wenn nicht angegeben, wird die Pat der angemeldeten Benutzer abgerufen.       |
+|Nutzlast (erforderlich) | Entweder ein Pfad zu der Nutzlast zum Veröffentlichen oder einen Link zu als die "Weitere Informationen-URL" verwenden. |
+|PublishManifest (erforderlich) | Pfad zu der veröffentlichen-Manifestdatei zu verwenden. |
+|ignoreWarnings | Liste mit Warnungen beim Veröffentlichen einer Extension ignoriert werden sollen. Diese Warnungen werden als Nachrichten von der Befehlszeile angezeigt, beim Veröffentlichen einer Extension. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccessToken | Persönliches Zugriffstoken (PAT), die verwendet wird, auf den Verleger zu authentifizieren. Wenn nicht angegeben, wird die PAT der angemeldeten Benutzer abgerufen. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Erstellt ein Publisher im Marketplace an. Protokolliert ebenfalls den Verleger, auf dem Computer, für die zukünftige Aktionen (z. B. eine Erweiterung löschen bzw. veröffentlichen).
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|"DisplayName" (erforderlich)             |  Der Anzeigename des Herausgebers.      |
-|PublisherName (erforderlich)           |  Der Name des Verlegers (z. B. den Bezeichner).      |
-|PersonalAccessToken (erforderlich)     |  Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird.      |
-|kurze Beschreibung                   |  Eine kurze Beschreibung des Verlegers (nicht-Datei).       |
-|longDescription                    |  Eine lange Beschreibung des Verlegers (nicht-Datei).      |
+|"DisplayName" (erforderlich) | Der Anzeigename des Herausgebers. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
+|PersonalAccessToken (erforderlich) | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. |
+|kurze Beschreibung | Eine kurze Beschreibung des Verlegers (nicht-Datei). |
+|longDescription | Eine lange Beschreibung des Verlegers (nicht-Datei). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Löscht ein Publisher im Marketplace.
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|PublisherName (erforderlich)           |  Der Name des Verlegers (z. B. den Bezeichner).      |
-|PersonalAccessToken (erforderlich)     |  Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird.      |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
+|PersonalAccessToken (erforderlich) | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Löscht eine Erweiterung aus dem Marketplace an.
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|ExtensionName (erforderlich)           |  Der Name der Erweiterung zu löschen.      |
-|PublisherName (erforderlich)           |  Der Name des Verlegers (z. B. den Bezeichner).      |
-|personalAccessToken                |  Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. Wenn nicht angegeben, wird die Pat der angemeldeten Benutzer abgerufen.     |
+|ExtensionName (erforderlich) | Der Name der Erweiterung zu löschen. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
+|personalAccessToken | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. Wenn nicht angegeben, wird die Pat der angemeldeten Benutzer abgerufen. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Protokolliert einen Verleger auf dem Computer an.
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|PersonalAccessToken (erforderlich      |  Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird.      |
-|PublisherName (erforderlich)           |  Der Name des Verlegers (z. B. den Bezeichner).      |
-|Überschreiben                          |  Gibt an, dass alle vorhandenen Herausgeber mit dem neuen personal Access Token überschrieben werden soll.     |
+|PersonalAccessToken (erforderlich | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
+|Überschreiben | Gibt an, dass alle vorhandenen Herausgeber mit dem neuen personal Access Token überschrieben werden soll. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Protokolliert einen Verleger vom Computer.
 
-|Befehlsoptionen                    |Beschreibung  |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|PublisherName (erforderlich)           |  Der Name des Verlegers (z. B. den Bezeichner).      |
-|ignoreMissingPublisher             |  Gibt an, dass das Tool nicht Fehler sollten, wenn dem angegebenen Herausgeber nicht bereits angemeldet ist.     |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
+|ignoreMissingPublisher | Gibt an, dass das Tool nicht Fehler sollten, wenn dem angegebenen Herausgeber nicht bereits angemeldet ist. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

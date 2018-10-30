@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812503"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
 ## <a name="invoking-validation"></a>Aufrufen der Validierung  
  Wenn Sie eine Validierungserweiterung installiert haben, können die darin bereitgestellten Einschränkungen in den folgenden Fällen angewendet werden. Einige Einschränkungen können nicht in allen der folgenden Fälle angewendet werden.  
   
--   **Validierungsbefehl.** Klicken Sie zum Aufrufen der Validierung zu einem beliebigen Zeitpunkt auf **UML-Modell überprüfen** auf die **Architektur** Menü.  
+- **Validierungsbefehl.** Klicken Sie zum Aufrufen der Validierung zu einem beliebigen Zeitpunkt auf **UML-Modell überprüfen** auf die **Architektur** Menü.  
   
-    > [!NOTE]
-    >  Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
+  > [!NOTE]
+  >  Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
   
--   **Beim Speichern eines Modells.** Validierungseinschränkungen können beim Speichern des Modells angewendet werden. Mithilfe dieser Einschränkungen soll sichergestellt werden, dass Sie kein Modell speichern, das gemäß der Interpretation durch das Projekt ungültig ist.  
+- **Beim Speichern eines Modells.** Validierungseinschränkungen können beim Speichern des Modells angewendet werden. Mithilfe dieser Einschränkungen soll sichergestellt werden, dass Sie kein Modell speichern, das gemäß der Interpretation durch das Projekt ungültig ist.  
   
-     Falls Fehler auftreten, werden Sie gefragt, ob Sie das Modell trotzdem speichern möchten. Sie können entweder die Fehler korrigieren oder das Modell dennoch speichern.  
+   Falls Fehler auftreten, werden Sie gefragt, ob Sie das Modell trotzdem speichern möchten. Sie können entweder die Fehler korrigieren oder das Modell dennoch speichern.  
   
--   **Beim Öffnen eines Modells.** Wenn Sie ein Modell öffnen, können Validierungsmethoden angewendet werden, um Fehlermeldungen wiederherzustellen, die beim Speichern des Modells vorhanden waren. Fehler können auch aufgrund von Inkonsistenzen zwischen den Änderungen von Benutzern auftreten, die an verschiedenen Teilen eines Modells arbeiten. Weitere Informationen finden Sie unter [Freigeben von Modellen und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md).  
+- **Beim Öffnen eines Modells.** Wenn Sie ein Modell öffnen, können Validierungsmethoden angewendet werden, um Fehlermeldungen wiederherzustellen, die beim Speichern des Modells vorhanden waren. Fehler können auch aufgrund von Inkonsistenzen zwischen den Änderungen von Benutzern auftreten, die an verschiedenen Teilen eines Modells arbeiten. Weitere Informationen finden Sie unter [Freigeben von Modellen und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md).  
   
- Validierungsfehler werden im Fehlerfenster von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gemeldet.  
+  Validierungsfehler werden im Fehlerfenster von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gemeldet.  
   
- Doppelklicken Sie auf einen Fehler, um die fehlerhaften Elemente in einem Diagramm auszuwählen. Dies funktioniert nur, wenn die fehlerhaften Elemente in einem geöffneten Diagramm sichtbar sind.  
+  Doppelklicken Sie auf einen Fehler, um die fehlerhaften Elemente in einem Diagramm auszuwählen. Dies funktioniert nur, wenn die fehlerhaften Elemente in einem geöffneten Diagramm sichtbar sind.  
   
 ## <a name="installing-validation-constraints"></a>Installieren von Validierungseinschränkungen  
  Einschränkungen sind in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsdateien (VSIX-Dateien) gepackt. In der Regel ist ein Satz Einschränkungen Teil einer Erweiterung, die auch andere Definitionen wie Menübefehle, Profile und Toolboxelemente enthält.  

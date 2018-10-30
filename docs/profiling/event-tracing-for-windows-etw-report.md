@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307143f0044c6a3816534add9fe285ce8a9fd4
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d8e75d9cbcb67ab9f97b83bf388cc5b6fec58ba3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823111"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
 In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst.  
@@ -26,13 +26,13 @@ In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-
 > [!NOTE]
 >  ETW-Berichte werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstellen nicht angezeigt.  
   
--   Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Erfassen von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Erfassen von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
--   Weitere Informationen zum Erfassen von ETW-Daten über die Befehlszeilentools [VSPerfCmd](../profiling/vsperfcmd.md) finden Sie unter [Events (Ereignisse)](../profiling/events-vsperfcmd.md).  
+- Weitere Informationen zum Erfassen von ETW-Daten über die Befehlszeilentools [VSPerfCmd](../profiling/vsperfcmd.md) finden Sie unter [Events (Ereignisse)](../profiling/events-vsperfcmd.md).  
   
--   Der ETW-Bericht wird über den Befehl **VSReport/Summary:ETW** erstellt. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
+- Der ETW-Bericht wird über den Befehl **VSReport/Summary:ETW** erstellt. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Spalte|description|  
+|Spalte|Beschreibung |  
 |------------|-----------------|  
 |**Zeitstempel**|Gibt an, wann das Ereignis aufgetreten ist|  
 |**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|  

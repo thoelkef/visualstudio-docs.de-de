@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928814"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Word. Die Features, die Sie in dieser Art von Lösung erstellen, sind nur verfügbar, wenn ein bestimmtes Dokument geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen (z. B. eine neue Registerkarte des Menübands anzuzeigen, wenn ein Dokument geöffnet ist) vorzunehmen.  
@@ -31,19 +31,19 @@ ms.locfileid: "38778106"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen eines Word-Dokumentprojekts.  
+- Erstellen eines Word-Dokumentprojekts.  
   
--   Hinzufügen von Text zu dem Dokument, das in Visual Studio-Designer gehostet wird.  
+- Hinzufügen von Text zu dem Dokument, das in Visual Studio-Designer gehostet wird.  
   
--   Schreiben von Code, der das Word-Objektmodell zum Hinzufügen von Text zum angepassten Dokument verwendet, wenn dieses geöffnet wird.  
+- Schreiben von Code, der das Word-Objektmodell zum Hinzufügen von Text zum angepassten Dokument verwendet, wenn dieses geöffnet wird.  
   
--   Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
+- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
--   Bereinigen des Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
+- Bereinigen des Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -99,7 +99,7 @@ ms.locfileid: "38778106"
 ## <a name="add-text-to-the-document-programmatically"></a>Fügen Sie Text zum Dokument programmgesteuert hinzu  
  Fügen Sie der Codedatei "ThisDocument " nun Code hinzu. Der neue Code verwendet das Word-Objektmodell, um dem Dokument einen zweiten Textabsatz hinzuzufügen. Standardmäßig enthält die Codedatei "ThisDocument " den folgenden generierten Code:  
   
--   Eine partielle Definition der Klasse `ThisDocument`, die das Programmiermodell des Dokuments darstellt und den Zugriff auf das Word-Objektmodell bereitstellt. Weitere Informationen finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `ThisDocument`-Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
+-   Eine partielle Definition der Klasse `ThisDocument`, die das Programmiermodell des Dokuments darstellt und den Zugriff auf das Word-Objektmodell bereitstellt. Weitere Informationen finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `ThisDocument` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
 -   Die `ThisDocument_Startup`- und `ThisDocument_Shutdown`-Ereignishandler. Diese Ereignishandler werden aufgerufen, wenn das Dokument geöffnet und geschlossen wird. Verwenden Sie diese Ereignishandler, um Ihre Anpassung zu initialisieren, wenn das Dokument geöffnet wird, sowie zum Bereinigen von Ressourcen, die von Ihrer Anpassung verwendet werden, wenn das Dokument geschlossen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
@@ -109,7 +109,7 @@ ms.locfileid: "38778106"
   
      Die Codedatei wird in Visual Studio geöffnet.  
   
-2.  Ersetzen Sie den `ThisDocument_Startup`-Ereignishandler durch den folgenden Code. Beim Öffnen des Dokuments fügt dieser Code dem Dokument einen zweiten Textabsatz hinzu.  
+2.  Ersetzen Sie den `ThisDocument_Startup` -Ereignishandler durch den folgenden Code. Beim Öffnen des Dokuments fügt dieser Code dem Dokument einen zweiten Textabsatz hinzu.  
   
      [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]  

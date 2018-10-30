@@ -1,5 +1,5 @@
 ---
-title: Generieren eines Konstruktors in Visual Studio
+title: Generieren einer Konstruktorschnellaktion
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926734"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generieren eines Konstruktors in Visual Studio
 
@@ -47,10 +47,10 @@ Diese Codegenerierung gilt für:
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der leeren Zeile in der Klasse platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der leeren Zeile in der Klasse platziert ist.
 
    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Diese Codegenerierung gilt für:
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der Auswahl platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der Auswahl platziert ist.
 
-     ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor2-preview-cs.png)
+      ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor2-preview-cs.png)
 
 1. Wählen Sie **Konstruktor „TypeName(...)“ generieren...** im Dropdownmenü aus.
 
@@ -97,24 +97,24 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/constructor-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code in Visual Basic](media/constructor-highlight-vb.png)
+       ![Hervorgehobener Code in Visual Basic](media/constructor-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
 
-    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor-preview-cs.png)
+      ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor-preview-cs.png)
 
-1. Wählen Sie **Konstruktor in „*TypeName*“ generieren** im Dropdownmenü aus.
+3. Wählen Sie **Konstruktor in „*TypeName*“ generieren** im Dropdownmenü aus.
 
    > [!TIP]
    > Klicken Sie im unteren Bereich des Vorschaufensters auf den Link **Vorschau der Änderungen**, um vor einer Auswahl [alle Änderungen anzuzeigen](../../ide/preview-changes.md), die vorgenommen werden.
@@ -123,36 +123,38 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-      ![Ergebnis der Methodengenerierung in C#](media/constructor-result-cs.png)
+       ![Ergebnis der Methodengenerierung in C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Ergebnis der Methodengenerierung in Visual Basic](media/constructor-result-vb.png)
+       ![Ergebnis der Methodengenerierung in Visual Basic](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Hinzufügen eines Parameters zu einem vorhandenen Konstruktor (nur in C#)
 
 1. Fügen Sie einem vorhandenen Konstruktor einen Parameter hinzu.
 
-1. Platzieren Sie den Cursor in die Zeile mit einer roten Wellenlinie, die darauf hinweist, dass Sie einen noch nicht vorhandenen Konstruktor verwendet haben.
+2. Platzieren Sie den Cursor in die Zeile mit einer roten Wellenlinie, die darauf hinweist, dass Sie einen noch nicht vorhandenen Konstruktor verwendet haben.
 
     ![Markierung beim Generieren eines Konstruktors](media/constructor4-highlight-cs.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+3. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
 
-    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor4-preview-cs.png)
+      ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor4-preview-cs.png)
 
-1. Wählen Sie im Dropdownmenü **Parameter zu „TypeName(...)“ hinzufügen** aus.
+4. Wählen Sie im Dropdownmenü **Parameter zu „TypeName(...)“ hinzufügen** aus.
 
    Der Parameter wird in Abhängigkeit seines Typs dem Konstruktor hinzugefügt.
 
    ![Ergebnis der Aktion zum Generieren eines Konstruktors](media/constructor4-result-cs.png)
+
+Sie können auch einer vorhandenen Methode einen Parameter hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen eines Parameters zu einer Methode](add-parameter.md).
 
 ## <a id="create"></a> Erstellen und Initialisieren eines Felds oder einer Eigenschaft anhand eines Konstruktorparameters (nur in C#)
 
@@ -165,10 +167,10 @@ Diese Codegenerierung gilt für:
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hinzugefügten Parameter platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hinzugefügten Parameter platziert ist.
 
    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor5-preview-cs.png)
 

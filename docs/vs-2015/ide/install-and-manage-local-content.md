@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832731"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 #### <a name="to-update-local-content"></a>So aktualisieren Sie lokale Inhalte  
   
--   Wählen Sie in der rechten unteren Ecke der Statusleiste den Link **Hier klicken, um den Download jetzt zu starten** aus.  
+- Wählen Sie in der rechten unteren Ecke der Statusleiste den Link **Hier klicken, um den Download jetzt zu starten** aus.  
   
- Die Updatezeiten können variieren, aber Sie können den Aktualisierungsstatus in der Statusleiste anzeigen.  
+  Die Updatezeiten können variieren, aber Sie können den Aktualisierungsstatus in der Statusleiste anzeigen.  
   
 ## <a name="moving-local-content"></a>Verschieben von lokalen Inhalten  
  Sie können Speicherplatz sparen, indem Sie installierten Inhalt vom lokalen Computer in eine Netzwerkfreigabe oder in eine andere Partition auf dem lokalen Computer verschieben.  

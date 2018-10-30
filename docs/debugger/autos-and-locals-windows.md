@@ -1,7 +1,7 @@
 ---
-title: Überprüfen von Variablen in der "Auto" und "lokal" Windows | Microsoft-Dokumentation
+title: Prüfen Sie die Variablen im Auto und lokal | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2017
+ms.date: 04/17/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,71 +16,109 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf208bead3ac153389242bcb288bcb0581445ff3
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626469"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459841"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen Sie Variablen in der "Auto" und "lokal" Windows in Visual Studio
-Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr nützlich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  
-  
-Wenn Sie weitere Informationen zu den Grundlagen des Debuggens benötigen, lesen Sie [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
-  
-## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Betrachten von Objekten in den Fenstern „Auto“ und „Lokal“  
-Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Hier ist ein Beispiel für eine <xref:System.IO.FileStream?displayProperty=fullName> -Objekt in der **"lokal"** Fenster:  
-  
-!["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png "\"lokal\" die FileStream-")  
-  
-## <a name="bkmk_whatvariables"></a> Welche Variablen werden im Fenster „Auto“ angezeigt?  
- Sie können das Fenster **Auto** für C#-, Visual Basic- und C++-Code verwenden. Das Fenster **Auto** unterstützt weder JavaScript noch F#-.  
-  
- In C# und Visual Basic wird im Fenster **Auto** jede Variable angezeigt, die in der aktuellen oder vorherigen Zeile verwendet wird. Angenommen, Sie deklarieren vier Variablen und legen diese wie folgt fest:
+# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Prüfen Sie die Variablen im Auto und lokal
 
-```csharp
-    public static void Main()
-    {
-       int a, b, c, d;
-       a = 1;
-       b = 2;
-       c = 3;
-       d = 4;
-    }
-```
+Die **Auto** und **lokale** Windows Variablenwerte anzeigen, während Sie debuggen. Die Windows sind nur verfügbar, während einer Debugsitzung.
 
- Wenn Sie einen Haltepunkt in der Zeile `c = 3`festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
-
- !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png "Auto-CSharp")  
-
- `c` hat den Wert 0, weil die Zeile `c = 3` noch nicht ausgeführt wurde.  
-
- In C++ werden im Fenster **Auto** die Variablen angezeigt, die in den letzten drei Zeilen vor der aktuellen Zeile (die Zeile, in der die Ausführung angehalten wurde) verwendet werden. Angenommen, Sie deklarieren sechs Variablen:
-
-```C++
-    void main() {
-        int a, b, c, d, e, f;
-        a = 1;
-        b = 2;
-        c = 3;
-        d = 4;
-        e = 5;
-        f = 6;
-    }
-```
-
- Wenn Sie einen Haltepunkt in der Zeile `e = 5;` festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
+Die **Auto** Variablen verwendet, um dem aktuellen Haltepunkt angezeigt. Die **lokale** im lokalen Gültigkeitsbereich ist normalerweise die aktuelle Funktion oder Methode definierte Variablen angezeigt.  
   
- !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png "Auto-Cplus")  
+Öffnen der **Auto** Fenster während des Debuggens wählen **Debug** > **Windows** > **Auto**, oder drücken Sie **STRG**+**Alt**+**V** > **eine**.  
+
+Öffnen der **lokale** Fenster während des Debuggens wählen **Debuggen** > **Windows** > **lokal**, oder drücken Sie **Alt**+**4**.
+
+Weitere Informationen zum grundlegenden Debuggen finden Sie unter [erste Schritte mit dem Debugger](../debugger/getting-started-with-the-debugger.md).  
+
+## <a name="use-the-autos-and-locals-windows"></a>Verwenden der Autos und lokal
+
+Anzeigen von Arrays und Objekten der **Auto** und **lokal** Windows als Strukturansicht. Wählen Sie den Pfeil links neben einem Variablennamen zum Erweitern der Ansicht Felder und Eigenschaften. Hier ist ein Beispiel für eine <xref:System.IO.FileStream?displayProperty=fullName> -Objekt in der **"lokal"** Fenster:  
   
- Sie sehen, dass die Variable „e“ nicht initialisiert ist. Dies liegt daran, dass der Code in der Zeile `e = 5;` noch nicht ausgeführt wurde.  
+![Lokal FileStream-](../debugger/media/locals-filestream.png "lokale FileStream")  
   
- In bestimmten Fällen können Sie auch die Rückgabewerte von Funktionen und Methoden sehen. Weitere Informationen finden im folgenden Abschnitt [View return values of method calls](#bkmk_returnValue) .  
+Ein roter Wert in der **lokale** oder **Auto** bedeutet der Wert wurde geändert, seit der letzten Auswertung. Von einer vorherigen Debugsitzung sein konnte oder weil den Wert im Fenster geändert haben.  
+
+Numerische kann in Debuggerfenstern Dezimal. Auf das Hexadezimalformat zu ändern, klicken Sie in der **lokale** oder **Auto** und wählen Sie **Hexadezimale Anzeige**. Diese Änderung wirkt sich auf alle Debuggerfenster. 
+ 
+## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Bearbeiten Sie Variablenwerte im Fenster Auto oder lokal  
+
+So bearbeiten Sie die Werte der Variablen in den meisten der **Auto** oder **lokale** Windows auf den Wert doppelklicken und den neuen Wert eingeben.  
+
+Sie können Sie einen Ausdruck für einen Wert eingeben, etwa `a + b`. Der Debugger akzeptiert im die meisten gültigen Sprachausdrücke.  
+
+In nativem C++-Code müssen Sie möglicherweise den Kontext eines Variablennamens qualifizieren. Weitere Informationen finden Sie unter [Kontextoperator (C++)](../debugger/context-operator-cpp.md).  
+ 
+>[!CAUTION]
+>Stellen Sie sicher, dass Sie die Folgen kennen, bevor Sie Werte und Ausdrücke ändern. Mögliche Probleme sind:  
+>  
+>-   Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Angenommen, bewerten `var1 = ++var2` ändert sich der Wert beider `var1` und `var2`. Diese Ausdrücke haben [Nebenwirkungen](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Nebeneffekte können zu unerwarteten Ergebnissen führen, wenn Sie nicht bewusst sind. 
+>  
+>-   Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch scheinbar harmlose bearbeiten kann ändert einige Bits in der Gleitkommavariable führen.  
   
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>Ändern Sie den Kontext für das Auto oder lokal 
+
+Können die **Debugspeicherort** Symbolleiste wählen Sie eine Funktion, Thread oder Prozess den Kontext für wird die **Auto** und **lokale** Windows. 
+
+Aktivieren der **Debugspeicherort** Symbolleiste auf eine leere Stelle des Werkzeugleistenbereich und wählen **Debugspeicherort** aus der Dropdownliste oder wählen **Ansicht**  >   **Symbolleisten** > **Debugspeicherort**. 
+
+Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepunkt Ausführung angehalten und sehen die Position in der **Debugspeicherort** Symbolleiste.
+  
+![Symbolleiste "Debugspeicherort"](../debugger/media/debuglocationtoolbar.png "Symbolleiste Debugspeicherort")   
+
+## <a name="bkmk_whatvariables"></a> Variablen im Fenster Auto  
+
+ Die **Auto** Fenster steht für C#, Visual Basic und C++ code, aber nicht für JavaScript oder F#. 
+ 
+ Unterschiedliche Sprachen anzeigen verschiedene Variablen in der **Auto** Fenster. 
+  
+ - In C# und Visual Basic die **Auto** zeigt alle Variablen in der aktuellen oder vorherigen verwendet. In C# oder Visual Basic-code, die folgenden vier Variablen deklariert:
+   
+   ```csharp
+       public static void Main()
+       {
+          int a, b, c, d;
+          a = 1;
+          b = 2;
+          c = 3;
+          d = 4;
+       }
+   ```
+   
+   Legen Sie einen Haltepunkt in der Zeile `c = 3;`, und den Debugger starten. Wenn die Ausführung angehalten wird, die **Auto** Fenster wird angezeigt:  
+   
+   ![CSharp Auto](../debugger/media/autos-csharp.png "Auto CSharp")  
+   
+   Der Wert der `c` ist 0, da die Zeile `c = 3` noch nicht ausgeführt.  
+   
+ - In C++ die **Auto** Fenster zeigt die Variablen in drei Zeilen vor der aktuellen Zeile, an dem die Ausführung angehalten. Beispielsweise in C++-Code deklarieren Sie sechs Variablen:
+   
+   ```C++
+       void main() {
+           int a, b, c, d, e, f;
+           a = 1;
+           b = 2;
+           c = 3;
+           d = 4;
+           e = 5;
+           f = 6;
+       }
+   ```
+   
+    Legen Sie einen Haltepunkt in der Zeile `e = 5;` und führen Sie den Debugger. Stoppt die Ausführung der **Auto** Fenster wird angezeigt:  
+     
+    ![C++ Auto](../debugger/media/autos-cplus.png "Auto C++")  
+     
+    Die Variable `e` ist nicht initialisiert, weil die Zeile `e = 5` noch nicht ausgeführt.  
+
 ##  <a name="bkmk_returnValue"></a> View return values of method calls  
- In .NET- und C++-Code können Sie Rückgabewerte auswerten, wenn Sie einen Methodenaufruf als Prozedurschritt oder bis zum Rücksprung ausführen. Diese Funktion ist nützlich, wenn das Ergebnis eines Methodenaufrufs nicht in einer lokalen Variablen gespeichert wird, etwa wenn eine Methode als Parameter oder Rückgabewert einer anderen Methode verwendet wird.  
+ In .NET und C++-Code untersuchen Sie Rückgabewerte in der **Auto** Fenster über einen Methodenaufruf oder Schritt. Anzeigen von Methodenaufruf zurück Werte nützlich sein, wenn sie nicht in lokalen Variablen gespeichert werden. Eine Methode kann als Parameter oder Rückgabewert eine andere Methode verwendet werden.  
   
- Im folgenden C#-Code werden die Rückgabewerte von zwei Funktionen hinzugefügt:  
+ Das folgende C# Code fügt die Rückgabewerte von zwei Funktionen:  
 
 ```csharp
 static void Main(string[] args)  
@@ -104,37 +142,13 @@ private static int subtractVars(int i, int j)
 }  
 ```
 
- Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.  
-  
- Starten Sie das Debuggen, und drücken Sie **F10 (Prozedurschritt)**, wenn die Ausführung am ersten Haltepunkt angehalten wird. Daraufhin sollte Folgendes im Fenster **Auto** zu sehen sein:  
-  
- ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
-  
-## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Warum sind Variablenwerte im Fenster „Lokal“ oder „Auto“ manchmal rot?  
-Gelegentlich stellen Sie fest, dass der Wert einer Variablen im Fenster **Lokal** oder **Auto** rot angezeigt wird. Dies ist ein Variablenwert, der seit der letzten Auswertung geändert wurde. Die Änderung kann aus einer vorherigen Debugsitzung stammen oder daran liegen, dass der Wert im Fenster geändert wurde.  
-  
-## <a name="changing-the-numeric-format-of-a-variable-window"></a>Ändern des numerischen Formats eines Variablenfensters  
-Das standardmäßige numerische Format ist das Dezimalformat, Sie können dies aber in das Hexadezimalformat ändern. Klicken Sie mit der rechten Maustaste im Fenster **Lokal** oder **Auto** , und wählen Sie **Hexadezimale Anzeige**aus. Die Änderung wirkt sich auf alle Debuggerfenster aus.  
-  
-## <a name="editing-a-value-in-a-variable-window"></a>Bearbeiten eines Werts in einem Variablenfenster  
-Sie können die Werte der meisten Variablen bearbeiten, die in den Fenstern **Auto**, **Lokal**, **Überwachen**und **Schnellüberwachung** angezeigt werden. Informationen zu den Fenstern **Überwachen** und **Schnellüberwachung** finden Sie unter [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Doppelklicken Sie einfach auf den Wert, den Sie ändern möchten, und fügen Sie den neuen Wert hinzu.  
-  
-Sie können Sie einen Ausdruck für einen Wert eingeben, etwa `a + b`. Der Debugger akzeptiert im die meisten gültigen Sprachausdrücke.  
-  
-In nativem C++-Code müssen Sie möglicherweise den Kontext eines Variablennamens qualifizieren. Weitere Informationen finden Sie unter [Context Operator (C++)](../debugger/context-operator-cpp.md).  
- 
-Allerdings sollten Sie Vorsicht walten lassen, wenn Sie Werte ändern. Mögliche Probleme:  
-  
--   Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Wird beispielsweise `var1 = ++var2` ausgewertet, wird der Wert von `var1` und `var2`geändert.  
-  
-     Ausdrücke, die eine Änderung von Daten bewirken, haben [Nebeneffekte](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), die zu unerwarteten Ergebnissen führen können, wenn Sie sich der Effekte nicht bewusst sind. Vergewissern Sie sich, dass Sie die Folgen einer solchen Änderung kennen, bevor Sie sie vornehmen.  
-  
--   Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar harmlose Bearbeitung kann Änderungen in einigen der unwichtigsten Bits einer Gleitkommavariable bewirken.  
-  
-## <a name="changing-the-window-context"></a>Ändern den Fensterkontext  
-Sie können die **Debugspeicherort** Symbolleiste auf die gewünschte Funktion, Thread oder Prozess, der den Kontext für den Variablenfenstern ändert. Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. (Wenn diese Symbolleiste nicht angezeigt wird, können Sie sie aktivieren, indem Sie auf einen leeren Bereich der Symbolleiste klicken. Sie sollten die Liste der Symbolleisten sehen. Wählen Sie **Debugspeicherort**aus.) Wenn der Haltepunkt erreicht wird, können Ausführung angehalten, und Sie die Symbolleiste Debugspeicherort finden Sie unter der untersten Zeile der in der folgenden Abbildung handelt.
-  
-![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
+Die Rückgabewerte der an die `sumVars()` und `subtractVars()` Methodenaufrufe im Fenster Auto:
+
+1. Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.  
+   
+1. Debuggen und die Ausführung am Haltepunkt hält, wählen **Prozedurschritt** , oder drücken Sie **F10**. Müsste die folgenden Rückgabewerte in der **Auto** Fenster:  
+   
+  ![Rückgabewert Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto-RückgabewertC#")  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggerfenster](../debugger/debugger-windows.md)

@@ -1,20 +1,20 @@
 ---
 title: Schreiben von Komponententests für C/C++ in Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341371"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879223"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -31,6 +31,10 @@ Visual Studio umfasst diese C++-Testframeworks ohne zusätzliche erforderliche D
 - CTest
 
 Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als auch für ein beliebiges anderes Framework zur Verwendung in Visual Studio schreiben. Ein Testadapter kann Komponententests in das Fenster **Test-Explorer** integrieren. Im [Visual Studio Marketplace](https://marketplace.visualstudio.com) sind einige Adapter von Drittanbietern verfügbar. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 Version 15.7 (Professional and Enterprise)**
+
+C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017, Version 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS und TEST_METHOD sind Teil des [nativen Microsoft-Testframeworks](micr
 Das Makro TEST_METHOD gibt „Void“ zurück. Verwenden Sie die statische Methode in der `Assert`-Klasse, um die tatsächlichen Ergebnisse im Vergleich zu den erwarteten Ergebnissen zu vergleichen und um ein Testergebnis zu erzeugen. Im folgenden Beispiel wird angenommen, dass `MyClass` über einen Konstruktor verfügt, der einen `std::string` akzeptiert. Es kann getestet werden, ob der Konstruktor die Klasse wie erwartet initialisiert:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 Im vorstehenden Beispiel bestimmt das Ergebnis des Aufrufs `Assert::AreEqual`, ob der Test erfolgreich ausgeführt werden kann oder fehlschlägt. Die Assert-Klasse enthält einige andere Methoden zum Vergleichen der erwarteten Ergebnisse mit den tatsächlichen Ergebnissen.
 
 Sie können der Testmethode *Merkmale* hinzufügen, um Testbesitzer, die Priorität und andere Informationen anzugeben. Sie können diese Werte verwenden, um Tests im **Test-Explorer** zu sortieren und in Gruppen zu unterteilen. Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Bei fehlgeschlagenen Tests werden in einer Meldung Details angezeigt, die Ihnen 
 Weitere Informationen zur Verwendung des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
 
 Bewährte Methoden im Zusammenhang mit Komponententests finden Sie unter [Grundlagen zum Komponententest](unit-test-basics.md).
+
+## <a name="use-codelens"></a>Verwenden von CodeLens
+
+**Visual Studio 2017 Version 15.7, nur Professional und Enterprise Edition**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) ermöglicht es Ihnen, den Status eines Komponententests schnell anzuzeigen, ohne den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
+
+- Bearbeiten und erstellen Sie Ihr Testprojekt oder Ihre -projektmappe.
+- Erstellen Sie Ihr Projekt oder die Projektmappe erneut.
+- Führen Sie Tests im Fenster **Test-Explorer** aus.
+
+Nachdem **CodeLens** initialisiert wurde, werden Statussymbole zu jedem Komponententest angezeigt.
+
+![C++ CodeLens-Symbole](media/cpp-test-codelens-icons.png)
+
+ Klicken Sie auf das Symbol, um weitere Informationen zu erhalten oder den Komponententest auszuführen oder zu debuggen:
+
+![Ausführen und Debuggen von C++ CodeLens](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Siehe auch
 

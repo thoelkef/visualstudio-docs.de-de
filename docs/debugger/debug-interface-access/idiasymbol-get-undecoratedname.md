@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_undecoratedname | Microsoft Docs'
+title: 'Idiasymbol:: Get_undecoratedname | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c1427c85bd83550765fbe814e3ccb2d0ffcebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a44a69fef0f77bcdbc07efb283aebd0ae95baa3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832692"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-Ruft den nicht ergänzten Namen für eine C++ ergänzt, oder die Verknüpfung, den Namen ab.  
+Ruft den nicht ergänzten Namen für ein C++ versehen, oder die Verknüpfung, die Namen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_undecoratedName (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt zurück, der der nicht ergänzte Namen für eine C++ Name ergänzt.  
+ [out] Gibt zurück, der der nicht ergänzte Namen für eine C++ Namen versehen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Projekte implementieren Befehlsbehandelung für geschachtelte | Microsoft Docs
+title: Implementieren der Befehlsbehandlung für geschachtelte Projekte | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,46 +13,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3f02752fad6932bac90597d56f27257e78b84cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 044c39c6e3240e7777b98e8a25a94e838cc614e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917985"
 ---
-# <a name="implementing-command-handling-for-nested-projects"></a>Implementieren von Befehlsbehandelung für geschachtelte-Projekte
-Die IDE Befehle, die durchlaufen werden kann übergeben, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> und die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstellen auf geschachtelte Projekte oder übergeordnete Projekte filtern oder überschreiben Sie die Befehle können.  
+# <a name="implementing-command-handling-for-nested-projects"></a>Implementieren der Befehlsbehandlung für geschachtelte Projekte
+Die IDE Befehle, die durchlaufen werden kann übergeben, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstellen für geschachtelte Projekte oder übergeordnete Projekte filtern oder überschreiben Sie die Befehle können.  
   
 > [!NOTE]
->  Nur Befehle, die normalerweise vom übergeordneten Projekt behandelt können gefiltert werden. Befehle wie **erstellen** und **bereitstellen** von behandelt die IDE kann nicht gefiltert werden.  
+>  Nur Befehle, die normalerweise behandelt, indem das übergeordnete Projekt können gefiltert werden. Befehle wie **erstellen** und **bereitstellen** erfolgt, die mit die IDE kann nicht gefiltert werden.  
   
- Die folgenden Schritte beschreiben den Prozess zum Implementieren der befehlsverarbeitung.  
+ Die folgenden Schritte beschreiben den Prozess zum Implementieren der Befehlsbehandlung.  
   
 ## <a name="procedures"></a>Verfahren  
   
-#### <a name="to-implement-command-handling"></a>Um die befehlsverarbeitung zu implementieren  
+#### <a name="to-implement-command-handling"></a>Zum Implementieren der Befehlsbehandlung  
   
-1.  Wenn der Benutzer wählt aus einer geschachtelten Projekts oder eines Knotens in einem geschachtelten Projekt:  
+1. Wenn der Benutzer eines geschachtelten Projekts oder eines Knotens in einem geschachtelten Projekt auswählt:  
   
-    1.  Ruft die IDE die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode.  
+   1. Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode.  
   
-     - oder -  
+      - oder -  
   
-    1.  Wenn der Befehl in einem Hierarchiefenster wie einen Menübefehl Kontextmenü im Projektmappen-Explorer, stammt die IDE Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> Methode für das Projekt übergeordnete.  
+   2. Wenn der Befehl in einem Fenster "Aufrufhierarchie", wie z. B. den Befehl im Kontextmenü im Projektmappen-Explorer, stammt die IDE Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> Methode für das Projekt des übergeordneten.  
   
-2.  Übergeordnetes Projekt kann zu übergebenden Parameter überprüfen `QueryStatus`, wie z. B. `pguidCmdGroup` und `prgCmds`, um zu bestimmen, ob das übergeordnete Projekt die Befehle filtern soll. Wenn das übergeordnete Projekt implementiert wird, um Befehle zu filtern, sollte festgelegt werden:  
+2. Das übergeordnete Projekt sehen zum Übergeben von Parametern an `QueryStatus`, z. B. `pguidCmdGroup` und `prgCmds`, um zu bestimmen, ob das übergeordnete Projekt die Befehle filtern soll. Wenn das übergeordnete Projekt implementiert wird, um Befehle zu filtern, sollten sie Folgendes festlegen:  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     Übergeordnetes Projekt zurückgeben sollte `S_OK`.  
+    Das übergeordnete Projekt zurückgeben sollte `S_OK`.  
   
-     Wenn übergeordneten Projekts den Befehl nicht gefiltert werden, sollte es nur zurückgeben `S_OK`. In diesem Fall leitet die IDE automatisch den Befehl ab, an das untergeordnete Projekt.  
+    Wenn das übergeordnete Projekt den Befehl nicht gefiltert werden, sollte es nur zurückgeben `S_OK`. In diesem Fall leitet die IDE automatisch den Befehl ab, auf das untergeordnete Projekt.  
   
-     Übergeordnetes Projekt muss nicht in den Befehl an das untergeordnete Projekt weiterzuleiten. Die IDE führt diese Aufgabe...  
+    Das übergeordnete Projekt muss nicht den Befehl an das untergeordnete Projekt weitergeleitet. Die IDE führt diese Aufgabe...  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

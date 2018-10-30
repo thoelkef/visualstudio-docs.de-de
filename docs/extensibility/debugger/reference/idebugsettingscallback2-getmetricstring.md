@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
+title: IDebugSettingsCallback2::GetMetricString | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb7de4157d991355f7ae3b0d5b6dcd27e374a1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cbe7bb633ce7674718e94a90ea56712ad83f1e9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899109"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Ruft den Wert für die Metrik mit dem angegebenen Namen ab.  
+Ruft den Wert der Metrik anhand des Namens ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,7 +46,7 @@ private int GetMetricString(
   
 #### <a name="parameters"></a>Parameter  
  `pszType`  
- [in] Die Art der Metrik.  
+ [in] Der Typ der Metrik.  
   
  `guidSection`  
  [in] Eindeutiger Bezeichner des Abschnitts.  
@@ -55,10 +55,10 @@ private int GetMetricString(
  [in] Der Name der Metrik.  
   
  `pbstrValue`  
- [out] Gibt die Zeichenfolge der Metrik an.  
+ [out] Gibt die Zeichenfolge den Wert der Metrik zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

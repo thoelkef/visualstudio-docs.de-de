@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
+title: ASSEMBLYLOCRESOLUTION | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331df62dabcdb919f2d8489de02ab7f2f815ef40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03d05cf8c224a24d143feb3d22df4357d623d308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933208"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Gibt an, auf dem sich eine Assembly befindet.  
+Gibt an, in denen eine Assembly befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,13 +51,13 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  Assembly befindet sich im aktuellen Namespace.  
   
  ALR_USERDIR  
- Assembly befindet sich in einem Verzeichnis des Benutzers.  
+ Assembly befindet sich in einem Benutzerverzeichnis.  
   
  ALR_SHAREDDIR  
- Assembly befindet sich im freigegebenen Verzeichnis.  
+ Assembly befindet sich in freigegebenen Verzeichnis.  
   
  ALR_REMOTEDIR  
- Assembly befindet sich in ein Remoteverzeichnis.  
+ Assembly befindet sich in einem Remoteverzeichnis.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Werte werden zurückgegeben, durch die [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) und [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) Methoden.  

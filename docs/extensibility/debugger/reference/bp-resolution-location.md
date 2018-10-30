@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | Microsoft Docs
+title: BP_RESOLUTION_LOCATION | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 032228596773d4a5a164f904c1caae161b693f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926123"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-Gibt die Struktur der Position des Haltepunkts Auflösung an.  
+Gibt die Struktur der Haltepunktposition Auflösung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,38 +50,38 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>Member  
  `bpType`  
- Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Elemente.  
+ Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Member.  
   
  `bpResLocation.bpresCode`  
- [Nur C++] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.  
+ [Nur für C++] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.  
   
  `bpResLocation.bpresData`  
- [Nur C++] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.  
+ [Nur für C++] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.  
   
  `bpResLocation.unused`  
- [Nur C++] Ein Platzhalter.  
+ [Nur für C++] Ein Platzhalter.  
   
  `unionmember1`  
- [C#] Siehe Hinweise zum interpretieren.  
+ [Nur in c#] Siehe Hinweise zum interpretieren.  
   
  `unionmember2`  
- [C#] Siehe Hinweise zum interpretieren.  
+ [Nur in c#] Siehe Hinweise zum interpretieren.  
   
  `unionmember3`  
- [C#] Siehe Hinweise zum interpretieren.  
+ [Nur in c#] Siehe Hinweise zum interpretieren.  
   
  `unionmember4`  
- [C#] Siehe Hinweise zum interpretieren.  
+ [Nur in c#] Siehe Hinweise zum interpretieren.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur ist ein Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) und [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Strukturen.  
   
- [C#] Die `unionmemberX` Elemente werden entsprechend der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpType` Wert über dann um zu bestimmen, wofür jedes `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Möglichkeit zum Interpretieren dieser Struktur in C# geschrieben.  
+ [Nur in c#] Die `unionmemberX` Elemente werden gemäß der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpType` Wert über dann um zu bestimmen, was von den einzelnen `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Methode zur Interpretation dieser Struktur in C# geschrieben.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
-|`BPT_DATA`|`string` (Data-Ausdruck)|`string` (Funktionsname)|`string` (ImageName)|`enum_BP_RES_DATA_FLAGS`|  
+|`BPT_DATA`|`string` (Data-Ausdruck)|`string` (Funktionsnamen)|`string` (ImageName)|`enum_BP_RES_DATA_FLAGS`|  
   
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel wird gezeigt, wie zum Interpretieren der `BP_RESOLUTION_LOCATION` Struktur in C# geschrieben.  

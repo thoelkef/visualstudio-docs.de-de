@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_notcached | Microsoft Docs'
+title: 'Idiasectioncontrib:: Get_notcached | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9db6bdf6ed3a8a2a91d70a140dbfc54c0b3716
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c8a0cdb6eb155492f964bf0ac602c5158360c8cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933793"
 ---
 # <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
 Ruft ein Flag, das angibt, ob der Abschnitt nicht zwischengespeichert werden kann.  
@@ -34,10 +34,10 @@ HRESULT get_notCached (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn Abschnitt kann nicht zwischengespeichert werden soll; andernfalls wird `FALSE`.  
+ [out] Gibt `TRUE` , wenn der Abschnitt nicht zwischengespeichert werden kann; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

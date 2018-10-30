@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843198"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 
@@ -26,7 +26,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="build"></a>Build
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**STRG+UMSCHALT+B** [Global]|
 |Build.Cancel|**STRG+UNTBR** [Global]|
 |Build.Compile|**STRG+F7** [Global]|
@@ -35,7 +35,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="debug"></a>Debug
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**STRG+B** [Global]|
 |Debug.BreakAll|**STRG+ALT+UNTBR** [Global]|
 |Debug.DeleteAllBreakpoints|**STRG+UMSCHALT+F9** [Global]|
@@ -55,7 +55,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="edit"></a>Bearbeiten
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br /> oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
 |Edit.CollapseToDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
 |Edit.CommentSelection|**STRG+K**, **STRG+C** [Text-Editor]|
@@ -106,7 +106,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="file"></a>Datei
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**ALT+F4** [Global]|
 |File.NewFile|**STRG+N** [Global]|
 |File.NewProject|**STRG+UMSCHALT+N** [Global]|
@@ -122,26 +122,26 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="project"></a>Projekt
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**UMSCHALT+ALT+A** [Global]|
 |Project.AddNewItem|**STRG+UMSCHALT+A** [Global]|
 
 ## <a name="refactor"></a>Umgestalten
 
 |Befehl|Tastenkombination [Kontext]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**STRG+R, STRG+M** [Global]|
 
 ## <a name="tools"></a>Tools
 
 |Befehl|Tastenkombination [Kontext]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**STRG+ALT+P** [Global]|
 
 ## <a name="view"></a>Ansicht
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**STRG+UMSCHALT+C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**STRG+\\, STRG+E** [Global]<br /><br /> oder **STRG+\\, E** [Global]|
@@ -162,7 +162,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="window"></a>Fenster
 
 |Befehle|Tastenkombinationen [Kontexte]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [Global]|
 |Window.CloseDocumentWindow|**STRG+F4** [Global]|
 |Window.NextDocumentWindow|**STRG+F6** [Global]|

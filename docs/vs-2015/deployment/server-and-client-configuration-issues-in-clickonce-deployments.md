@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948940"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
  Einige Webserver können es sich um Dateien mit Erweiterungen wie z. B. dll-Datei, config und MDF blockieren. Windows-basierten Anwendungen beinhalten in der Regel einige dieser Erweiterungen. Wenn ein Benutzer versucht, Sie führen eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung, die eine blockierte Datei auf einem Webserver zugreift, ein Fehler ausgegeben. Anstatt alle Dateierweiterungen, Blockierung [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jeder Datei der Anwendung mit der Dateierweiterung ".deploy" veröffentlicht, in der Standardeinstellung. Aus diesem Grund muss der Administrator nur so konfigurieren Sie den Webserver so Entsperren die folgenden drei Erweiterungen:  
   
--   APPLICATION  
+- APPLICATION  
   
--   MANIFEST  
+- MANIFEST  
   
--   DEPLOY  
+- DEPLOY  
   
- Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
+  Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
   
- Sie müssen konfigurieren ". manifest".application und ".deploy", z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], oder wenn Sie einen anderen Webserver (z. B. Apache) verwenden.  
+  Sie müssen konfigurieren ". manifest".application und ".deploy", z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], oder wenn Sie einen anderen Webserver (z. B. Apache) verwenden.  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce und Secure Sockets Layer (SSL)  
  Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung wird über SSL, außer wenn eine Eingabeaufforderung zu dem SSL-Zertifikat von Internet Explorer löst problemlos funktionieren. Die Eingabeaufforderung kann ausgelöst werden, wenn vorhanden ist, dass ein Problem mit dem Zertifikat, z. B. wenn die Websitenamen nicht übereinstimmen oder das Zertifikat abgelaufen ist. Zu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] über eine SSL-Verbindung funktioniert, stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Daten des Zertifikats die Daten des Standorts übereinstimmt.  
@@ -122,11 +122,11 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
  Wenn Sie die Bereitstellung mit einem IIS-Server, führen Sie inetmgr.exe und fügen Sie neue Dateitypen für die Standardwebseite hinzu:  
   
--   Für die Application- und Manifest-Erweiterungen muss der MIME-Typ "Application/X-ms-Anwendung." Für andere Dateitypen muss der MIME-Typ "Application/Octet-Stream".  
+- Für die Application- und Manifest-Erweiterungen muss der MIME-Typ "Application/X-ms-Anwendung." Für andere Dateitypen muss der MIME-Typ "Application/Octet-Stream".  
   
--   Bei der Erstellung eines MIME-Typs mit der Erweiterung "*" und den MIME-Typ "Application/Octet-Stream", können sie Dateien mit entsperrt Dateityp heruntergeladen werden. (Allerdings blockierte Typen wie z. B. aspx- und ASMX nicht heruntergeladen werden können.)  
+- Bei der Erstellung eines MIME-Typs mit der Erweiterung "*" und den MIME-Typ "Application/Octet-Stream", können sie Dateien mit entsperrt Dateityp heruntergeladen werden. (Allerdings blockierte Typen wie z. B. aspx- und ASMX nicht heruntergeladen werden können.)  
   
- Spezifische Anweisungen zum Konfigurieren von MIME-Typen für Windows Server, finden Sie in Microsoft Knowledge Base-Artikel KB326965, "IIS 6.0 wird nicht dienen unbekannte MIME-Typen" am [ http://support.microsoft.com/default.aspx?scid=kb; En-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Spezifische Anweisungen zum Konfigurieren von MIME-Typen für Windows Server, finden Sie in Microsoft Knowledge Base-Artikel KB326965, "IIS 6.0 wird nicht dienen unbekannte MIME-Typen" am [ http://support.microsoft.com/default.aspx?scid=kb; En-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Content-Type-Zuordnungen  
  Wenn Sie über HTTP veröffentlichen zu können, muss der Inhaltstyp (auch bekannt als MIME-Typ) für die Application-Datei "Application/X-ms-Anwendung." Wenn man [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] auf dem Server installiert, dies wird für Sie automatisch festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typ-Verknüpfung erstellen die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsstammverzeichnis (oder den gesamten Server).  

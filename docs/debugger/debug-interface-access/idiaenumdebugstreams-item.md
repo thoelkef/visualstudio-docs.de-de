@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Item | Microsoft Docs'
+title: 'Idiaenumdebugstreams:: Item | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b255a96b3bd443ff4a2782cb2161694da3694c17
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae82df1f2af6acba7f94bf0d14682aff27a830bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916191"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Ruft eine Debugstream über einen Index oder Name ab.  
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parameter  
  Index  
- [in] Index oder Name des Datenstroms Debug abgerufen werden sollen. Eine ganze Zahl Variante verwendet wird, muss er im Bereich 0 bis `count`-1 und, in denen `count` wie zurückgegeben wird die [idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) Methode.  
+ [in] Index oder Name der Debug-Stream abgerufen werden sollen. Wenn eine ganze Zahl Variante verwendet wird, muss es im Bereich von 0 bis `count`-1 und, in denen `count` ist von zurückgegeben der [idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) Methode.  
   
  Stream  
- [out] Gibt eine [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekt, das der angegebenen Debugstream darstellt.  
+ [out] Gibt eine [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekt, das den angegebenen Debug-Stream darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

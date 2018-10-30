@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b74e8a988505c5386b444df27f7726a8ceb51a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870775"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für andere bereitstellen
 Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickler, die ClickOnce-Bereitstellungen erstellen möchten. Viele von ihnen Packen Sie einfach ihre Anwendung mithilfe von ClickOnce und leiten dann die Dateien für einen Kunden, wie z. B. ein großes Unternehmen. Der Kunde ist dafür verantwortlich sind, zum Hosten der Anwendung im Netzwerk. Dieses Thema behandelt einige der Probleme, die sich solche Bereitstellungen in Versionen von .NET Framework vor Version 3.5. Klicken Sie dann beschrieben eine neue Projektmappe, die mithilfe der neuen "Verwenden von Manifest für die Vertrauensstellung"-Funktion in .NET Framework 3.5. Schließlich endet er mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.  
@@ -86,13 +86,13 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
   
  Es gibt drei Möglichkeiten, dass der Kunde das Bereitstellungsmanifest in dieser Situation anmelden kann:  
   
-1.  Der Kunde kann es sich um ein gültiges von einer Zertifizierungsstelle (CA) ausgestelltes Zertifikat verwenden.  
+1. Der Kunde kann es sich um ein gültiges von einer Zertifizierungsstelle (CA) ausgestelltes Zertifikat verwenden.  
   
-2.  Als eine Variante zu diesem Ansatz ist können Kunden ihre Bereitstellungsmanifest mit einem selbstsignierten Zertifikat signiert. Der Nachteil ist, dass hierdurch die Wörter "Unbekannter Herausgeber" angezeigt wird, wenn der Benutzer aufgefordert wird, an, ob es installiert die Anwendung. Der Vorteil ist jedoch, dass sie dadurch verhindert, dass kleinere Kunden müssen die Zeit und Geld für ein von einer Zertifizierungsstelle ausgestelltes Zertifikat erforderlich.  
+2. Als eine Variante zu diesem Ansatz ist können Kunden ihre Bereitstellungsmanifest mit einem selbstsignierten Zertifikat signiert. Der Nachteil ist, dass hierdurch die Wörter "Unbekannter Herausgeber" angezeigt wird, wenn der Benutzer aufgefordert wird, an, ob es installiert die Anwendung. Der Vorteil ist jedoch, dass sie dadurch verhindert, dass kleinere Kunden müssen die Zeit und Geld für ein von einer Zertifizierungsstelle ausgestelltes Zertifikat erforderlich.  
   
-3.  Schließlich kann der Entwickler ihre eigenen selbstsignierten Zertifikats in das Setup-Paket enthalten. Dies führt die potenziellen Probleme mit Anwendungsidentität, die weiter oben in diesem Thema.  
+3. Schließlich kann der Entwickler ihre eigenen selbstsignierten Zertifikats in das Setup-Paket enthalten. Dies führt die potenziellen Probleme mit Anwendungsidentität, die weiter oben in diesem Thema.  
   
- Der Nachteil der Setup-Projekt Bereitstellungsmethode ist der Zeit- und Kostenaufwand erforderlich, um eine benutzerdefinierte Anwendung erstellen.  
+   Der Nachteil der Setup-Projekt Bereitstellungsmethode ist der Zeit- und Kostenaufwand erforderlich, um eine benutzerdefinierte Anwendung erstellen.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Kunden Sie Bereitstellungsmanifest zu generieren.  
  Eine dritte mögliche Bereitstellungsstrategie ist zum Weitergeben deaktiviert nur die Anwendung Dateien und Anwendungsmanifest an den Kunden. In diesem Szenario ist der Kunde für die Verwendung von .NET Framework SDK zum Generieren und Signieren des Bereitstellungsmanifests verantwortlich.  

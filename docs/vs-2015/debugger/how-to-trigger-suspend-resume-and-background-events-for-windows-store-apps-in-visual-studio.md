@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938382"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen für Windows Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
   
  [Auslösen von Hintergrundaufgaben](#BKMK_Trigger_background_tasks)  
   
--   [Auslösen eines Hintergrundaufgabenereignisses aus einer Standarddebugsitzung](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Auslösen eines Hintergrundaufgabenereignisses aus einer Standarddebugsitzung](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Auslösen einer Hintergrundaufgabe, wenn die App nicht ausgeführt wird](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Auslösen einer Hintergrundaufgabe, wenn die App nicht ausgeführt wird](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Ereignisse zur Verwaltung der Prozesslebensdauer sowie Hintergrundaufgaben der installierten App auslösen bzw. aktivieren.](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Ereignisse zur Verwaltung der Prozesslebensdauer sowie Hintergrundaufgaben der installierten App auslösen bzw. aktivieren.](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnostizieren von Hintergrundaufgaben-Aktivierungsfehlern](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnostizieren von Hintergrundaufgaben-Aktivierungsfehlern](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Auslösen von Ereignissen der Prozesslebensdauer-Verwaltung  
  Windows kann die App anhalten, wenn der Benutzer zu einem anderen Element wechselt oder Windows ein einen Zustand mit geringem Energieverbrauch wechselt. Sie können auf das `Suspending` -Ereignis reagieren, um relevante App- und Benutzerdaten im permanenten Speicher zu speichern und Ressourcen freizugeben. Wenn eine Anwendung nach dem Zustand **Angehalten** fortgesetzt wird, wechselt sie in den Zustand **Aktiv** und wird an der Position fortgesetzt, an der sie angehalten wurde. Sie können auf das `Resuming` -Ereignis reagieren, um den Anwendungszustand zu aktualisieren oder wiederherzustellen und Ressourcen zurückzufordern.  

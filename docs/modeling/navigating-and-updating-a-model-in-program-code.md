@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896765"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  Dieses Beispiel veranschaulicht diese wichtige Punkte zum Erstellen eines Elements:
 
--   Erstellen Sie das neue Element in einer bestimmten Partition, der den Store. Für Modellelemente und Beziehungen, jedoch keine Formen ist dies normalerweise die Standardpartition.
+- Erstellen Sie das neue Element in einer bestimmten Partition, der den Store. Für Modellelemente und Beziehungen, jedoch keine Formen ist dies normalerweise die Standardpartition.
 
--   Erleichtern Sie das Ziel einer einbettenden Beziehung. In der DslDefinition dieses Beispiels muss jede Person, die das Ziel der Einbettung Beziehung FamilyTreeHasPeople sein. Um dies zu erreichen, können wir legen die FamilyTreeModel Role-Eigenschaft des Person-Objekt oder die Person hinzugefügt, um die Personen Role-Eigenschaft des Objekts FamilyTreeModel.
+- Erleichtern Sie das Ziel einer einbettenden Beziehung. In der DslDefinition dieses Beispiels muss jede Person, die das Ziel der Einbettung Beziehung FamilyTreeHasPeople sein. Um dies zu erreichen, können wir legen die FamilyTreeModel Role-Eigenschaft des Person-Objekt oder die Person hinzugefügt, um die Personen Role-Eigenschaft des Objekts FamilyTreeModel.
 
--   Legen Sie die Eigenschaften eines neuen Elements an, vor allem die Eigenschaft, für die `IsName` der DslDefinition gilt. Dieses Flag markiert die Eigenschaft, die verwendet wird, die das Element in seinem Besitzer eindeutig identifiziert. In diesem Fall hat die Namenseigenschaft dieses Flag an.
+- Legen Sie die Eigenschaften eines neuen Elements an, vor allem die Eigenschaft, für die `IsName` der DslDefinition gilt. Dieses Flag markiert die Eigenschaft, die verwendet wird, die das Element in seinem Besitzer eindeutig identifiziert. In diesem Fall hat die Namenseigenschaft dieses Flag an.
 
--   Die DSL-Definition dieser DSL muss in den Store geladen wurden. Wenn Sie eine Erweiterung, z. B. einen Menübefehl schreiben, wird dies in der Regel bereits "true" sein. In anderen Fällen, Sie können explizit laden Sie das Modell in den Store oder <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> zu laden. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Modell aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Die DSL-Definition dieser DSL muss in den Store geladen wurden. Wenn Sie eine Erweiterung, z. B. einen Menübefehl schreiben, wird dies in der Regel bereits "true" sein. In anderen Fällen, Sie können explizit laden Sie das Modell in den Store oder <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> zu laden. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Modell aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
- Wenn Sie ein Element auf diese Weise erstellen, wird eine Form (wenn die DSL ein Diagramm verfügt) automatisch erstellt. Er wird in einen automatisch zugewiesenen Speicherort mit Standardform, Farbe und andere Funktionen. Wenn Sie möchten steuern, wo und wie die zugeordnete Form angezeigt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).
+  Wenn Sie ein Element auf diese Weise erstellen, wird eine Form (wenn die DSL ein Diagramm verfügt) automatisch erstellt. Er wird in einen automatisch zugewiesenen Speicherort mit Standardform, Farbe und andere Funktionen. Wenn Sie möchten steuern, wo und wie die zugeordnete Form angezeigt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).
 
 ##  <a name="links"></a> Erstellen von Beziehungslinks
  Es gibt zwei Beziehungen, die in der Beispiel-DSL-Definition definiert. Jede Beziehung definiert eine *Rolleneigenschaft* für die Klasse an beiden Enden der Beziehung.
 
  Es gibt drei Möglichkeiten, die in denen Sie eine Instanz einer Beziehung erstellen können. Jede dieser drei Methoden hat dieselbe Wirkung:
 
--   Legen Sie die Eigenschaft des der quellrolleninhaber. Zum Beispiel:
+- Legen Sie die Eigenschaft des der quellrolleninhaber. Zum Beispiel:
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   Legen Sie die Eigenschaft des der Zielrolleninhaber. Zum Beispiel:
+- Legen Sie die Eigenschaft des der Zielrolleninhaber. Zum Beispiel:
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         Die Multiplizität dieser Rolle ist `1..1`, sodass wir den Wert zuzuweisen.
+       Die Multiplizität dieser Rolle ist `1..1`, sodass wir den Wert zuzuweisen.
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         Die Multiplizität dieser Rolle ist `0..*`, also fügen wir der Auflistung hinzu.
+       Die Multiplizität dieser Rolle ist `0..*`, also fügen wir der Auflistung hinzu.
 
--   Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:
+- Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- Die letzte Methode ist nützlich, wenn Sie Eigenschaften für die Beziehung selbst festlegen möchten.
+  Die letzte Methode ist nützlich, wenn Sie Eigenschaften für die Beziehung selbst festlegen möchten.
 
- Wenn Sie ein Element auf diese Weise erstellen, ein Connector im Diagramm wird automatisch erstellt, aber es verfügt über eine Standardform, Farbe und andere Funktionen. Um zu steuern, wie die zugeordnete Connector erstellt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).
+  Wenn Sie ein Element auf diese Weise erstellen, ein Connector im Diagramm wird automatisch erstellt, aber es verfügt über eine Standardform, Farbe und andere Funktionen. Um zu steuern, wie die zugeordnete Connector erstellt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).
 
 ##  <a name="deleteelements"></a> Löschen von Elementen
  Löschen eines Elements durch den Aufruf `Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  Dieser Vorgang wird auch gelöscht werden:
 
--   Beziehungslinks in und aus dem Element. Z. B. `edward.Parents` wird nicht mehr enthalten `henry`.
+- Beziehungslinks in und aus dem Element. Z. B. `edward.Parents` wird nicht mehr enthalten `henry`.
 
--   Elemente an den Rollen für die die `PropagatesDelete` Flag "true" ist. Beispielsweise wird die Form, die das Element anzeigt, gelöscht werden.
+- Elemente an den Rollen für die die `PropagatesDelete` Flag "true" ist. Beispielsweise wird die Form, die das Element anzeigt, gelöscht werden.
 
- Standardmäßig verfügt jede einbettenden Beziehung `PropagatesDelete` an die Zielrolle "true". Löschen von `henry` löscht keine der `familyTree`, aber `familyTree.Delete()` würde, löschen Sie alle der `Persons`. Weitere Informationen finden Sie unter [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md).
+  Standardmäßig verfügt jede einbettenden Beziehung `PropagatesDelete` an die Zielrolle "true". Löschen von `henry` löscht keine der `familyTree`, aber `familyTree.Delete()` würde, löschen Sie alle der `Persons`. Weitere Informationen finden Sie unter [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md).
 
- In der Standardeinstellung `PropagatesDelete` gilt nicht für die Rollen der verweisbeziehungen.
+  In der Standardeinstellung `PropagatesDelete` gilt nicht für die Rollen der verweisbeziehungen.
 
- Sie können veranlassen, dass die Löschregeln, um bestimmte zur Weitergabe von Würmern zu unterdrücken, wenn Sie ein Objekt löschen. Dies ist hilfreich, wenn Sie ein Element für eine andere ersetzt werden. Geben Sie an die GUID des eine oder mehrere Rollen, die für die Löschung nicht weitergegeben werden soll. Die GUID kann von Relationship-Klasse abgerufen werden:
+  Sie können veranlassen, dass die Löschregeln, um bestimmte zur Weitergabe von Würmern zu unterdrücken, wenn Sie ein Objekt löschen. Dies ist hilfreich, wenn Sie ein Element für eine andere ersetzt werden. Geben Sie an die GUID des eine oder mehrere Rollen, die für die Löschung nicht weitergegeben werden soll. Die GUID kann von Relationship-Klasse abgerufen werden:
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (Dieses spezielle Beispiel würde wirken sich nicht, da `PropagatesDelete` ist `false` für Rollen die `ParentsHaveChildren` Beziehung.)
+  (Dieses spezielle Beispiel würde wirken sich nicht, da `PropagatesDelete` ist `false` für Rollen die `ParentsHaveChildren` Beziehung.)
 
- In einigen Fällen wird ein Löschen verhindert, durch das Vorhandensein einer Sperre, die auf das Element oder auf ein Element, das von der Verteilung gelöscht werden würde. Sie können `element.CanDelete()` zu überprüfen, ob das Element gelöscht werden kann.
+  In einigen Fällen wird ein Löschen verhindert, durch das Vorhandensein einer Sperre, die auf das Element oder auf ein Element, das von der Verteilung gelöscht werden würde. Sie können `element.CanDelete()` zu überprüfen, ob das Element gelöscht werden kann.
 
 ##  <a name="deletelinks"></a> Löschen von Beziehungslinks
  Sie können einen Beziehungslink löschen, durch das Entfernen eines Elements aus einer Rolleneigenschaft:
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  In Ihrer DSL-Definition erstellt jedes Element, das Sie angeben, die eine Klasse, die von einer der folgenden standard-Klassen abgeleitet ist.
 
 |Art des Elements|Basisklasse|
-|---------------------|----------------|
+|-|-|
 |Domänenklasse|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Domänenbeziehung|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Form|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  Wenn Sie mehr als eine Form vom Typ angeben, legen Sie ihre relativen Positionen, die mit der `AbsoluteBounds`.

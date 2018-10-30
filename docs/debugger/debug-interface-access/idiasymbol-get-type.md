@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_type | Microsoft Docs'
+title: 'Idiasymbol:: Get_type | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 414c66b000a7cd81783ec963d78105792d6b816b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896470"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-Ruft das Symbol, das den Typ dieses Symbol darstellt.  
+Ruft ab, das Symbol, das den Typ für dieses Symbol darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ HRESULT get_type (
  [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das den Typ dieses Symbols darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Um den Typ zu bestimmen, ein Symbol aufweist, müssen Sie diese Methode aufrufen, und überprüfen Sie das Ergebnis [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt. Beachten Sie, dass es möglich, dass ein Symbol zum keinen Typ aufweisen. Beispielsweise der Namen einer Struktur wurde kein Typ jedoch möglicherweise untergeordnete Elemente Symbole (verwenden Sie die [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) Methode, um diesen untergeordneten Elementen zu untersuchen).  
+ Um den Typ zu bestimmen, ein Symbol wurde, müssen Sie diese Methode aufrufen, und überprüfen Sie das Ergebnis [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt. Beachten Sie, dass es möglich, dass ein Symbol aus, die keinen Typ aufweisen. Beispielsweise der Namen einer Struktur hat keinen Typ, aber sie Symbole für untergeordnete Elemente verfügen kann (verwenden Sie die [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) Methode, um die untergeordneten untersuchen).  
   
 ## <a name="example"></a>Beispiel  
   

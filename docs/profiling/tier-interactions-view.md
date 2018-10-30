@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4636a391e2472dbff427956077719e75f34a81de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917766"
 ---
 # <a name="tier-interactions-view"></a>Ansicht "Ebeneninteraktionen"
 
@@ -34,11 +34,11 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 - Wenn Sie im Masterbereich auf einen Datenbankaufrufknoten klicken, werden Daten für die Instanz des Datenbankaufrufs im Detailbereich angezeigt.
 
- Die Zeit wird in Millisekunden oder in CPU-Takten angezeigt. Um die angezeigte Zeiteinheit zu ändern, klicken Sie auf das Menü **Extras**, dann auf **Optionen**, und wählen Sie eine der Optionen für **Uhrzeitwerte anzeigen in**.
+  Die Zeit wird in Millisekunden oder in CPU-Takten angezeigt. Um die angezeigte Zeiteinheit zu ändern, klicken Sie auf das Menü **Extras**, dann auf **Optionen**, und wählen Sie eine der Optionen für **Uhrzeitwerte anzeigen in**.
 
 ## <a name="master-pane"></a>Masterbereich
 
-|Spalte|description|
+|Spalte|Beschreibung |
 |------------|-----------------|
 |**Name**|– Bei einer Zeile der obersten Ebene ist es der Name des profilierten Prozesses oder der Webseite.<br />– Bei einer Datenbankverbindungszeile ist dies der Name des Servers, der die Datenbank hostet.|
 |**Datenbank**|Der Name der Datenbank (nur Datenbankverbindungszeilen).|
@@ -50,7 +50,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 ## <a name="database-connection-details-pane"></a>Detailbereich für die Datenbankverbindung
 
-|Spalte|description|
+|Spalte|Beschreibung |
 |------------|-----------------|
 |**Befehlstext**|Die SQL-Abfrage der Anforderung.|
 |**Abfrageanzahl**|Die Anzahl, wie oft die Abfrage ausgeführt wurde.|

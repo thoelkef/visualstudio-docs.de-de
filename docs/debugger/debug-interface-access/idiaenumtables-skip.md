@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Skip | Microsoft Docs'
+title: 'Idiaenumtables:: Skip | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee3835a0c07f903dcbe31d967c1fc3014fefaa0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 604d562168b4d4e9109eb4e48a477b9ee4493a80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860798"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
-Überspringt eine angegebene Anzahl von Tabellen in einer Enumerationsfolge an.  
+Überspringt eine angegebene Anzahl von Tabellen in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der Tabellen in der Enumeration Sequenz zu überspringen.  
+ [in] Die Anzahl der Tabellen in der Enumerationsfolge übersprungen werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` , wenn keine weitere Tabellen zu überspringen.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` , wenn es keine weitere Tabellen sind zu überspringen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

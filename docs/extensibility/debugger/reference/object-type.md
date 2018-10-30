@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5c7367a8b134324073d40452ec9b7ec20c1ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905739"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
-Gibt den Typ eines Objekts aus der Auswertung eines Ausdrucks.  
+Gibt den Typ eines Objekts von der ausdrucksauswertung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -70,40 +70,40 @@ public enum enum_OBJECT_TYPE {
   
 ## <a name="members"></a>Member  
  OBJECT_TYPE_BOOLEAN  
- Gibt an, dass das Objekt ein boolescher Wert ist.  
+ Gibt an, dass das Objekt ein boolescher Wert.  
   
  OBJECT_TYPE_CHAR  
  Gibt an, dass das Objekt ein Zeichen ist.  
   
  OBJECT_TYPE_I1  
- Gibt an, dass das Objekt eine 1-Byte-Ganzzahl mit Vorzeichen.  
+ Gibt an, dass das Objekt eine ein-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U1  
- Gibt an, dass das Objekt eine 1-Byte-Ganzzahl ohne Vorzeichen ist.  
+ Gibt an, dass das Objekt eine ein-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I2  
- Gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen.  
+ Gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U2  
  Gibt an, dass das Objekt eine 2-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I4  
- Gibt an, dass das Objekt eine vier-Byte-Ganzzahl mit Vorzeichen.  
+ Gibt an, dass das Objekt eine vier-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U4  
  Gibt an, dass das Objekt eine vier-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I8  
- Gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen.  
+ Gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U8  
  Gibt an, dass das Objekt eine 8-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_R4  
- Gibt an, dass das Objekt eine vier-Byte-Gleitkommazahl ist.  
+ Gibt an, dass das Objekt eine vier-Byte-Gleitkommazahl.  
   
  OBJECT_TYPE_R8  
- Gibt an, dass das Objekt eine 8-Byte-Gleitkommazahl ist.  
+ Gibt an, dass das Objekt eine 8-Byte-Gleitkommazahl.  
   
  OBJECT_TYPE_OBJECT  
  Gibt an, dass das Objekt ein Objekt.  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861279"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusammen mit benutzerdefinierten Programmcode definiert, die Sie schreiben können. Die meisten der Programmcode in der DSL-Projektmappe wird aus dieser Datei generiert.
@@ -135,7 +135,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
  Die Multiplizität einer Rolle zu konfigurieren, indem Sie auf das Diagramm eingeben oder durch Ändern der `Multiplicity` -Eigenschaft in der **Eigenschaften** Fenster. Die folgende Tabelle beschreibt die Einstellungen für diese Eigenschaft.
 
 |Multiplicity-Typ|Beschreibung|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (0 bis n)|Jede Instanz der Domänenklasse kann es sich um mehrere Instanzen der Beziehung oder keine Instanzen der Beziehung aufweisen.|
 |0.. 1 (0 bis)|Jede Instanz der Domänenklasse kann es sich um nicht mehr als eine Instanz der Beziehung oder keine der Instanzen der Beziehung aufweisen.|
 |1..1 (eins)|Jede Instanz der Domänenklasse kann es sich um eine Instanz der Beziehung aufweisen. Sie können nicht mehr als eine Instanz der Beziehung von jeder Instanz der Role-Klasse erstellen. Wenn die Validierung aktiviert ist, wird ein Validierungsfehler angezeigt, wenn Instanz der Role-Klasse keine Instanz der Beziehung hat.|

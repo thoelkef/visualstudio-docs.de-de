@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839530"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
@@ -45,7 +45,6 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 
 > [!NOTE]
 > Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
-
 
 ##  <a name="windows"></a> Barrierefreiheitsfeatures in Windows
 
@@ -70,24 +69,24 @@ Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentatio
 Darüber hinaus erhalten Sie weitere Microsoft-Veröffentlichungen von Learning Ally. Learning Ally verteilt diese Dokumente an registrierte und berechtigte Mitglieder ihres Vertriebsdiensts. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
 
 |Lernhilfe|
-|----------------------------------------------|
+| - |
 |20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
 
 Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
 
 ##  <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
 
- Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:
+Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:
 
--   Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.
+- Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.
 
--   Technische Unterstützung in den USA bietet der Produktsupport von Microsoft, den Sie unter der Rufnummer (800) 892-5234 montags bis freitags von 06:00 bis 18:00 Uhr (Pacific Time) erreichen, außer an Feiertagen. In Kanada ist die Rufnummer (905) 568-9641 montags bis freitags von 08:00 bis 20:00 Uhr (Eastern Standard Time) erreichbar, außer an Feiertagen.
+- Technische Unterstützung in den USA bietet der Produktsupport von Microsoft, den Sie unter der Rufnummer (800) 892-5234 montags bis freitags von 06:00 bis 18:00 Uhr (Pacific Time) erreichen, außer an Feiertagen. In Kanada ist die Rufnummer (905) 568-9641 montags bis freitags von 08:00 bis 20:00 Uhr (Eastern Standard Time) erreichbar, außer an Feiertagen.
 
- Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.
+Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.
 
 ##  <a name="moreinfo"></a> Weitere Informationen
 
- Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ## <a name="see-also"></a>Siehe auch
 

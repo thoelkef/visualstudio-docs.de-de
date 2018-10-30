@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824209"
 ---
 # <a name="utilization-navigator"></a>Auslastungsnavigator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Auslastungsnavigator mit ausgewähltem Zeitrahmen
   
  So können Sie mithilfe des Auslastungsnavigators den angezeigten Zeitbereich bearbeiten:  
   
--   Sie können ihn schwenken, indem Sie den Thumb nach links oder rechts ziehen. (Tastatur: Verschieben Sie den Fokus auf den Thumb, und drücken Sie anschließend die Pfeiltaste nach links oder rechts.)  
+- Sie können ihn schwenken, indem Sie den Thumb nach links oder rechts ziehen. (Tastatur: Verschieben Sie den Fokus auf den Thumb, und drücken Sie anschließend die Pfeiltaste nach links oder rechts.)  
   
--   Sie können die Größe des Zeitintervalls ändern, indem Sie einen der Ziehpunkte ziehen. (Tastatur: Verschieben Sie den Fokus auf einen Ziehpunkt, und drücken Sie anschließend die Pfeiltaste nach rechts oder links.)  
+- Sie können die Größe des Zeitintervalls ändern, indem Sie einen der Ziehpunkte ziehen. (Tastatur: Verschieben Sie den Fokus auf einen Ziehpunkt, und drücken Sie anschließend die Pfeiltaste nach rechts oder links.)  
   
- Wenn Sie das Intervall mit einem anderen Zoomsteuerelement der Nebenläufigkeitsschnellansicht ändern, wird die Änderung vom Auslastungsnavigator übernommen.
+  Wenn Sie das Intervall mit einem anderen Zoomsteuerelement der Nebenläufigkeitsschnellansicht ändern, wird die Änderung vom Auslastungsnavigator übernommen.
 
 
 

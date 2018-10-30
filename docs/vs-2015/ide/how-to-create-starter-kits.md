@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857405"
 ---
 # <a name="how-to-create-starter-kits"></a>Gewusst wie: Erstellen von Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentatio
   
  Wenn Sie eine Beispielanwendung oder ein Plug-In erstellen:  
   
--   Erstellen Sie ein Projekt ohne Fehler.  
+- Erstellen Sie ein Projekt ohne Fehler.  
   
--   Fügen Sie Vorlagencode hinzu, um zusätzliche Aufgaben zu implementieren (optional).  
+- Fügen Sie Vorlagencode hinzu, um zusätzliche Aufgaben zu implementieren (optional).  
   
--   Bereiten Sie die Dokumentation vor.  
+- Bereiten Sie die Dokumentation vor.  
   
- Wenn Sie ein Lerntool erstellen:  
+  Wenn Sie ein Lerntool erstellen:  
   
--   Erstellen Sie ein Projekt ohne Fehler.  
+- Erstellen Sie ein Projekt ohne Fehler.  
   
--   Organisieren Sie die Ressourcen, z.B. Codeausschnitte und Elementvorlagen.  
+- Organisieren Sie die Ressourcen, z.B. Codeausschnitte und Elementvorlagen.  
   
--   Bereiten Sie die Dokumentation vor.  
+- Bereiten Sie die Dokumentation vor.  
   
 ## <a name="creating-a-template"></a>Erstellen einer Vorlage  
  Nachdem Sie das Projekt und die Dokumentation abgeschlossen haben, können Sie nun die Projektvorlage für das Starter Kit erstellen. Dieser Prozess gleicht der Erstellung einer Projektvorlage.  

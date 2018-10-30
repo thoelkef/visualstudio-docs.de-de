@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941944"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
  Auf NULL festlegbare Typen sind Instanzen der <xref:System.Nullable%601>-Struktur. Jede Instanz eines Nullable-Typs hat zwei öffentliche schreibgeschützte Eigenschaften `HasValue` und `Value`:  
   
--   `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.  
+- `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.  
   
--   `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue` `True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue` `False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.  
+- `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue` `True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue` `False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.  
   
- Beim Deklarieren einer Variablen als Nullable-Typ verfügt sie standardmäßig über keinen definierten Wert (`HasValue` ist `False`) als der Standardwert des ihr zugrunde liegenden Werttyps.  
+  Beim Deklarieren einer Variablen als Nullable-Typ verfügt sie standardmäßig über keinen definierten Wert (`HasValue` ist `False`) als der Standardwert des ihr zugrunde liegenden Werttyps.  
   
- Der Klassen-Designer zeigt einen Nullable-Typ so an wie den zugrunde liegenden Typ.  
+  Der Klassen-Designer zeigt einen Nullable-Typ so an wie den zugrunde liegenden Typ.  
   
- Weitere Informationen zu Typen in Visual C# finden Sie unter [Typen, die NULL-Werte zulassen](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Weitere Informationen zu Typen in Visual C# finden Sie unter [Typen, die NULL-Werte zulassen](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Hinzufügen eines Nullable-Typs mithilfe des Klassen-Designers  
   

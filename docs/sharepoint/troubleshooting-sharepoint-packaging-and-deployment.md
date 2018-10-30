@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898056"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Problembehandlung bei SharePoint-Packen und-bereitstellen
   In diesem Thema werden verschiedene Probleme behandelt, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.
@@ -59,13 +59,13 @@ ms.locfileid: "37118953"
 ## <a name="differences-between-f5-deployment"></a>Unterschiede bei der F5-Bereitstellung
  Wenn Sie das SharePoint-Projekt mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Testen und Debuggen auf dem lokalen SharePoint-Server bereitstellen, werden von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] einige zusätzliche Schritte ausgeführt.
 
-1.  Zurücksetzen von Internetinformationsdienste (IIS) während des Bereitstellungsschritts
+1. Zurücksetzen von Internetinformationsdienste (IIS) während des Bereitstellungsschritts
 
-2.  Automatisches Zuordnen von Workflows
+2. Automatisches Zuordnen von Workflows
 
-3.  Festlegen der Funktionsaktivierungsreihenfolge anhand der Hierarchie im Paket-Designer
+3. Festlegen der Funktionsaktivierungsreihenfolge anhand der Hierarchie im Paket-Designer
 
- Sie können benutzerdefinierte Bereitstellungsschritte hinzufügen, um weiteren Änderungen der **F5** Verhalten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Sie können benutzerdefinierte Bereitstellungsschritte hinzufügen, um weiteren Änderungen der **F5** Verhalten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Verzögertes Anzeigen der SharePoint-Seite bei der Bereitstellung visuelles Webpart
  Wird ein visuelles Webpart unter [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] oder [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] im Ordner "Bin" bereitgestellt, dauert es sehr lang, bis die SharePoint-Seite angezeigt wird. Wenn Sie Dateien in einem [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Verzeichnis der obersten Ebene (beispielsweise im Verzeichnis "Bin") ändern, wird die gesamte Webanwendung neu kompiliert. Dies kann dazu führen, dass die SharePoint-Seite mit einer Verzögerung von bis zu 25 Sekunden gerendert wird.

@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850424"
 ---
 # <a name="immediate-window"></a>Direktfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
   
 #### <a name="to-execute-a-function-at-design-time"></a>So führen Sie eine Funktion zur Entwurfszeit aus  
   
-1.  Kopieren Sie den folgenden Code in eine [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]-Konsolenanwendung:  
+1. Kopieren Sie den folgenden Code in eine [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]-Konsolenanwendung:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie dann auf **Direkt**.  
+2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie dann auf **Direkt**.  
   
-3.  Geben `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die EINGABETASTE.  
+3. Geben `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die EINGABETASTE.  
   
-     Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.  
+    Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.  
   
- Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z. B. [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.  
+   Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z. B. [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Ausdrucksauswertung zur Entwurfszeit in Projektmappen mit mehreren Projekten  
  Beim Festlegen des Kontexts für die Ausdrucksauswertung zur Entwurfszeit verweist [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auf das aktuell ausgewählte Projekt im Projektmappen-Explorer. Wenn im Projektmappen-Explorer kein Projekt ausgewählt ist, versucht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], die Funktion anhand des Startprojekts auszuwerten. Wenn die Funktion im aktuellen Kontext nicht ausgewertet werden kann, wird eine Fehlermeldung angezeigt. Wenn Sie versuchen, eine Funktion in einem Projekt auszuwerten, das nicht das Startprojekt für die Projektmappe ist, und eine Fehlermeldung angezeigt wird, wählen Sie das Projekt im Projektmappen-Explorer aus, und wiederholen Sie die Auswertung.  

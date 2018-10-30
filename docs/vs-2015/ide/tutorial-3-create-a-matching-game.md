@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939492"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Memory-Spiels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeblendete Symbolpaare finden müssen. Sie lernen Folgendes:  
   
--   Speichern von Objekten (beispielsweise Symbole) in einem `List`-Objekt  
+- Speichern von Objekten (beispielsweise Symbole) in einem `List`-Objekt  
   
--   Verwenden einer `foreach`-Schleife in Visual C# und einer `For Each`-Schleife in Visual Basic, um die Elemente einer Liste zu durchlaufen  
+- Verwenden einer `foreach`-Schleife in Visual C# und einer `For Each`-Schleife in Visual Basic, um die Elemente einer Liste zu durchlaufen  
   
--   Speichern des Formularzustands mithilfe von Verweisvariablen  
+- Speichern des Formularzustands mithilfe von Verweisvariablen  
   
--   Erstellen eines Ereignishandlers für mehrere Objekte zum Reagieren auf Ereignisse  
+- Erstellen eines Ereignishandlers für mehrere Objekte zum Reagieren auf Ereignisse  
   
--   Erstellen eines Timers, der nach dem Start und Ablauf einer bestimmten Zeit genau ein Ereignis auslöst  
+- Erstellen eines Timers, der nach dem Start und Ablauf einer bestimmten Zeit genau ein Ereignis auslöst  
   
- Am Ende dieses Lernprogramms sieht Ihr Code so aus wie in der folgenden Abbildung.  
+  Am Ende dieses Lernprogramms sieht Ihr Code so aus wie in der folgenden Abbildung.  
   
- ![Spiel, das Sie in diesem Lernprogramm erstellen](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Spiel, das Sie in diesem Lernprogramm erstellen  
+  ![Spiel, das Sie in diesem Lernprogramm erstellen](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Spiel, das Sie in diesem Lernprogramm erstellen  
   
- Ein vollständige Version des Beispiels können Sie unter [Complete Matching Game tutorial sample (Durchführen des Abgleichspiels)](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) herunterladen.  
+  Ein vollständige Version des Beispiels können Sie unter [Complete Matching Game tutorial sample (Durchführen des Abgleichspiels)](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) herunterladen.  
   
 > [!NOTE]
 >  In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  

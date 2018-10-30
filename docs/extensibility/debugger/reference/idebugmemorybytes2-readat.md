@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
+title: IDebugMemoryBytes2::ReadAt | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912943"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-Liest eine Folge von Bytes, beginnend an einer angegebenen Position.  
+Liest eine Folge von Bytes, beginnend ab einem bestimmten Standort.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,25 +56,25 @@ int ReadAt(
  [in] Die Anzahl der zu lesenden Bytes. Außerdem gibt die Länge des der `rgbMemory` Array.  
   
  `rgbMemory`  
- [in, out] Array mit der Bytes gefüllt, die tatsächlich gelesen werden.  
+ [in, out] Array mit den Bytes gefüllt, die tatsächlich gelesen werden.  
   
  `pdwRead`  
- [out] Gibt die Anzahl der tatsächlich gelesenen zusammenhängenden Bytes zurück.  
+ [out] Gibt die Anzahl von zusammenhängenden Bytes, die tatsächlich gelesen.  
   
  `pdwUnreadable`  
- [in, out] Gibt die Anzahl von Bytes nicht gelesen werden. Möglicherweise ein null-Wert, wenn der Client die Anzahl der Bytes unlesbar lehnt weitere Benachrichtigungsaufrufe ist.  
+ [in, out] Gibt die Anzahl der nicht gelesen Bytes zurück. Möglicherweise ein null-Wert ab, wenn der Client nicht die Anzahl der nicht lesbare Bytes ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn 100 Byte angefordert werden und die ersten 50 lesbar sind, die nächste 20 nicht lesbar sind und die verbleibenden 30 lesbar sind, gibt diese Methode zurück:  
+ Wenn 100 Byte angefordert werden und die ersten 50 lesbar sind, die nächsten 20 nicht lesbar sind und die verbleibenden 30 lesbar sind, gibt diese Methode zurück:  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- In diesem Fall da `*pdwRead + *pdwUnreadable < dwCount`, der Aufrufer muss einen zusätzlichen Aufruf, lesen die verbleibenden 30 Byte ist der ursprüngliche 100 angefordert, und die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt übergeben, der `pStartContext` Parameter erweitert werden muss von 70.  
+ In diesem Fall da `*pdwRead + *pdwUnreadable < dwCount`, der Aufrufer muss einen zusätzlichen Aufruf der ursprünglichen Anforderung 100 verbleibenden 30 Bytes gelesen, und die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt übergeben, der `pStartContext` Parameter erweitert werden muss von 70.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

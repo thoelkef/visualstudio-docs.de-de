@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942893"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-Tier-datenanwendung
 *N-schichtige* -datenanwendungen sind Anwendungen, die auf Daten zugreifen und werden in mehrere logische Ebenen, getrennt oder *Ebenen*. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenebene enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-schichtige datenanwendungen](../data-tools/n-tier-data-applications-overview.md).
@@ -52,7 +52,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schrit
 
 ![Link zum Video](../data-tools/media/playvideo.gif) eine Videoversion dieses Themas finden Sie unter [Video How to: Erstellen einer n-Tier-datenanwendung](http://go.microsoft.com/fwlink/?LinkId=115188).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
 1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **.NET Desktopentwicklung** Workload oder als eine einzelne Komponente.
@@ -73,7 +73,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
  Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das Dataset (die generierte typisierte `DataSet` -Klasse und Datentabellen, die die Daten der Anwendung enthalten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. Das Dataset, das ursprüngliche Dataset erstellt und trennt automatisch den Code, in zwei Klassenbibliotheken.
 
 > [!NOTE]
->  Achten Sie darauf, dass Sie das Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK**. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.
+> Achten Sie darauf, dass Sie das Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK**. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>So erstellen Sie die N-Tier-Projektmappe und die DataEntityTier-Klassenbibliothek
 
@@ -106,7 +106,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
  Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte Datasets werden mit beiden Dataset-Klassen erstellt (einschließlich `DataTables` Klassen) und die `TableAdapter` Klassen in einem einzelnen Projekt. (Jede Klasse wird in einer einzelnen Datei generiert.) Wenn Sie die Datasets und TableAdapters in verschiedene Projekte trennen, ist es die Dataset-Klasse, die in ein anderes Projekt, sodass verschoben werden die `TableAdapter` Klassen im ursprünglichen Projekt. Aus diesem Grund erstellen Sie das Dataset im Projekt, das letztendlich die TableAdapter (DataAccessTier-Projekt) enthalten wird. Erstellen Sie das Dataset mithilfe der **Assistenten zur Datenquellenkonfiguration**.
 
 > [!NOTE]
->  Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Weitere Informationen zum Einrichten der Northwind-Beispieldatenbank, finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
+> Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Weitere Informationen zum Einrichten der Northwind-Beispieldatenbank, finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>So erstellen Sie das DataSet
 
@@ -129,7 +129,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 6.  Wählen Sie die Option Einbeziehung vertraulicher Daten ein, und wählen Sie dann, wenn die Datenbank ein Kennwort erfordert, **Weiter**.
 
     > [!NOTE]
-    >  Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Wählen Sie **Ja** die Datenbankdatei zum Projekt hinzufügen.
+    > Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Wählen Sie **Ja** die Datenbankdatei zum Projekt hinzufügen.
 
 7.  Wählen Sie **Weiter** auf die **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** Seite.
 
@@ -144,20 +144,20 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>So trennen Sie die TableAdapter vom DataSet
 
-1.  Doppelklicken Sie auf **NorthwindDataSet.xsd** in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.
+1. Doppelklicken Sie auf **NorthwindDataSet.xsd** in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.
 
-2.  Wählen Sie einen leeren Bereich im Designer.
+2. Wählen Sie einen leeren Bereich im Designer.
 
-3.  Suchen Sie die **DataSet-Projekt** Knoten in der **Eigenschaften** Fenster.
+3. Suchen Sie die **DataSet-Projekt** Knoten in der **Eigenschaften** Fenster.
 
-4.  In der **DataSet-Projekt** Liste **DataEntityTier**.
+4. In der **DataSet-Projekt** Liste **DataEntityTier**.
 
-5.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
- DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, das ursprünglich das gesamte Dataset enthalten (`DataAccessTier`) enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** Eigenschaft (`DataEntityTier`) enthält das typisierte Dataset: *NorthwindDataSet.Dataset.Designer.vb* (oder  *NorthwindDataSet.Dataset.Designer.cs*).
+   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, das ursprünglich das gesamte Dataset enthalten (`DataAccessTier`) enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** Eigenschaft (`DataEntityTier`) enthält das typisierte Dataset: *NorthwindDataSet.Dataset.Designer.vb* (oder  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), werden vorhandene partielle Dataset-Klassen im Projekt nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
+> Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), werden vorhandene partielle Dataset-Klassen im Projekt nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
 
 ## <a name="create-a-new-service-application"></a>Erstellen einer neuen Dienstanwendung
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie auf die Datenzugriffsebene mit einem WCF-Dienst zugreifen kann, erstellen wir eine neue WCF-dienstanwendung.
@@ -224,7 +224,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie auf die Datenz
  Nachdem die Datenzugriffsebene die Methoden zur Rückgabe der Daten enthält, müssen Sie im Datendienst Methoden erstellen, um die Methoden in der Datenzugriffsebene aufzurufen.
 
 > [!NOTE]
->  In C#-Projekten muss ein Verweis auf die `System.Data.DataSetExtensions`-Assembly für die Kompilierung des nachfolgenden Codes hinzugefügt werden.
+> In C#-Projekten muss ein Verweis auf die `System.Data.DataSetExtensions`-Assembly für die Kompilierung des nachfolgenden Codes hinzugefügt werden.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>So erstellen Sie im Datendienst die GetCustomers-Funktion und die GetOrders-Funktion
 
@@ -323,7 +323,7 @@ Legen wir die **PresentationTier** Projekt das Startprojekt für die Lösung sei
 3.  Wählen Sie **"Service1"** , und wählen Sie **OK**.
 
     > [!NOTE]
-    >  Wenn Sie mehrere Dienste auf dem aktuellen Computer verfügen, wählen Sie den Dienst, die Sie zuvor in dieser exemplarischen Vorgehensweise erstellt haben (der Dienst, enthält die `GetCustomers` und `GetOrders` Methoden).
+    > Wenn Sie mehrere Dienste auf dem aktuellen Computer verfügen, wählen Sie den Dienst, die Sie zuvor in dieser exemplarischen Vorgehensweise erstellt haben (der Dienst, enthält die `GetCustomers` und `GetOrders` Methoden).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Hinzufügen von DataGridViews zum Formular zum Anzeigen der Daten, die vom Datendienst zurückgegeben
  Nach dem Hinzufügen der Dienstverweis zum Datendienst, der **Datenquellen** Fenster wird automatisch aufgefüllt, mit den Daten, die vom Dienst zurückgegeben wird.
@@ -361,7 +361,7 @@ Legen wir die **PresentationTier** Projekt das Startprojekt für die Lösung sei
 Der Standardwert für `maxReceivedMessageSize` ist nicht groß genug zum Speichern der Daten abgerufen, die von der `Customers` und `Orders` Tabellen. In den folgenden Schritten müssen Sie den Wert in 6553600 erhöhen. Ändern Sie den Wert auf dem Client den Dienstverweis automatisch aktualisiert.
 
 > [!NOTE]
->  Die niedrigere Standardgröße dient dazu, die Anfälligkeit für Denial-of-Service (DoS)-Angriffe zu verringern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Die niedrigere Standardgröße dient dazu, die Anfälligkeit für Denial-of-Service (DoS)-Angriffe zu verringern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>So erhöhen Sie den maxReceivedMessageSize-Wert
 

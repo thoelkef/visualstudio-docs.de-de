@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876918"
 ---
 # <a name="publish-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
 Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung können Sie die Veröffentlichungseigenschaften mit dem Webpublishing-Assistenten festlegen. Im Assistenten stehen nur wenige Eigenschaften zur Verfügung. Alle anderen Eigenschaften sind auf die Standardwerte eingestellt.  
@@ -37,15 +37,15 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes
 ## <a name="publish-wizard"></a>Webpublishing-Assistent  
  Sie können den Webpublishing-Assistenten verwenden, um die grundlegenden Einstellungen zum Veröffentlichen der Anwendung festzulegen. Dies sind zum Beispiel die folgenden Veröffentlichungseigenschaften:  
   
--   Speicherort des Veröffentlichungsordners – In diesen Ordner kopiert Visual Studio die Dateien (lokaler Computer, Netzwerkdateifreigabe, FTP-Server oder Website)  
+- Speicherort des Veröffentlichungsordners – In diesen Ordner kopiert Visual Studio die Dateien (lokaler Computer, Netzwerkdateifreigabe, FTP-Server oder Website)  
   
--   Speicherort des Installationsordners – Aus diesem Ordner führen Endbenutzer die Installation durch (Netzwerkdateifreigabe, FTP-Server, Website, CD/DVD)  
+- Speicherort des Installationsordners – Aus diesem Ordner führen Endbenutzer die Installation durch (Netzwerkdateifreigabe, FTP-Server, Website, CD/DVD)  
   
--   Online- oder Offlineverfügbarkeit – Ob Endbenutzer mit oder ohne Netzwerkverbindung auf die Anwendung zugreifen können  
+- Online- oder Offlineverfügbarkeit – Ob Endbenutzer mit oder ohne Netzwerkverbindung auf die Anwendung zugreifen können  
   
--   Aktualisierungsrate – Wie häufig die Anwendung eine Prüfung auf neue Updates durchführt  
+- Aktualisierungsrate – Wie häufig die Anwendung eine Prüfung auf neue Updates durchführt  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Weitere Informationen finden Sie unter [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Seite "Veröffentlichen"  
  Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet. In der folgende Tabelle sind Themen aufgeführt.  

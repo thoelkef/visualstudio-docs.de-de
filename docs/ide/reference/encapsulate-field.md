@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942919"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring des Kapselns eines Felds
 
@@ -41,22 +41,22 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/encapsulate-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code – Visual Basic](media/encapsulate-highlight-vb.png)
+       ![Hervorgehobener Code – Visual Basic](media/encapsulate-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+R** und dann **STRG+E**.  (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
+      - Drücken Sie **STRG+R** und dann **STRG+E**.  (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
    - **Maus**
-     - Wählen Sie **Bearbeiten > Umgestalten > Feld kapseln** aus.
-     - Klicken Sie mit der rechten Maustaste auf den Code, wählen Sie das Menü **Schnellaktionen und Refactorings** aus, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
+      - Wählen Sie **Bearbeiten > Umgestalten > Feld kapseln** aus.
+      - Klicken Sie mit der rechten Maustaste auf den Code, wählen Sie das Menü **Schnellaktionen und Refactorings** aus, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
 
-   Auswahl | description
+   Auswahl | Beschreibung 
    --------- | -----------
    **Feld kapseln (und Eigenschaft verwenden)** | Kapselt das Feld mit einer Eigenschaft und aktualisiert alle Verwendungen des Felds so, dass die generierte Eigenschaft verwendet wird.
    **Feld kapseln (Feld jedoch weiterhin verwenden)** | Kapselt das Feld mit einer Eigenschaft, lässt aber alle Verwendungen des Felds unverändert.
@@ -68,11 +68,11 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Ergebnis vom Kapseln der Eigenschaft – C#](media/encapsulate-result-cs.png)
+      ![Ergebnis vom Kapseln der Eigenschaft – C#](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-    ![Ergebnis vom Kapseln der Eigenschaft – Visual Basic](media/encapsulate-result-vb.png)
+      ![Ergebnis vom Kapseln der Eigenschaft – Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 

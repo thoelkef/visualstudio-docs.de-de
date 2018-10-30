@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932550"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Eine XML-Datei hinzufügen  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.  
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.  
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.  
   
-3.  Fügen Sie der Datei Ihren Beispielinhalt hinzu.  
+3. Fügen Sie der Datei Ihren Beispielinhalt hinzu.  
   
-4.  In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.  
+4. In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu  
  Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Zum Beispiel:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Hinzufügen einer Textvorlagendatei zum Projekt  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.  
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.  
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.  
   
-    > [!NOTE]
-    >  Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
+   > [!NOTE]
+   >  Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
   
-3.  Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.  
+3. Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.  
   
-     Durch diese Änderung kann der Vorlagencode auf die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zugreifen.  
+    Durch diese Änderung kann der Vorlagencode auf die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zugreifen.  
   
-4.  Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.  
+4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.  
   
-5.  Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:  
+5. Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- sein.  
+   sein.  
   
- Beachten Sie, dass eine CS-Datei im Projektmappen-Explorer als untergeordnete Datei der Vorlagendatei angezeigt wird. Sie können Sie sehen, wenn Sie auf das [+] neben dem Namen der Vorlagendatei klicken. Diese Datei wird aus der Vorlagendatei generiert wenn Sie speichern oder den Fokus von der Vorlagendatei wegnehmen. Die generierte Datei wird als Teil des Projekts kompiliert.  
+   Beachten Sie, dass eine CS-Datei im Projektmappen-Explorer als untergeordnete Datei der Vorlagendatei angezeigt wird. Sie können Sie sehen, wenn Sie auf das [+] neben dem Namen der Vorlagendatei klicken. Diese Datei wird aus der Vorlagendatei generiert wenn Sie speichern oder den Fokus von der Vorlagendatei wegnehmen. Die generierte Datei wird als Teil des Projekts kompiliert.  
   
- Während Sie die Vorlagendatei entwickeln, ordnen Sie der Einfachheit halber die Fenster der Vorlagendatei und der generierten Datei so an, dass Sie nebeneinander angezeigt werden. Dadurch können Sie sofort die Ausgabe der Vorlage sehen. Wenn die Vorlage ungültigen C#-Code generiert, erscheinen Fehler im Fenster mit den Fehlermeldungen.  
+   Während Sie die Vorlagendatei entwickeln, ordnen Sie der Einfachheit halber die Fenster der Vorlagendatei und der generierten Datei so an, dass Sie nebeneinander angezeigt werden. Dadurch können Sie sofort die Ausgabe der Vorlage sehen. Wenn die Vorlage ungültigen C#-Code generiert, erscheinen Fehler im Fenster mit den Fehlermeldungen.  
   
- Änderungen, die Sie direkt in der generierten Datei ausführen, gehen verloren, sobald Sie die Vorlagendatei speichern. Sie sollten daher entweder vermeiden, die generierte Datei zu bearbeiten, oder sie nur für kurze Experimente bearbeiten. Manchmal ist es sinnvoll, ein kurzes Codefragment in der generierten Datei zu testen, wo IntelliSense in Betrieb ist, und dann in die Vorlagendatei zu kopieren.  
+   Änderungen, die Sie direkt in der generierten Datei ausführen, gehen verloren, sobald Sie die Vorlagendatei speichern. Sie sollten daher entweder vermeiden, die generierte Datei zu bearbeiten, oder sie nur für kurze Experimente bearbeiten. Manchmal ist es sinnvoll, ein kurzes Codefragment in der generierten Datei zu testen, wo IntelliSense in Betrieb ist, und dann in die Vorlagendatei zu kopieren.  
   
 ## <a name="developing-the-text-template"></a>Entwickeln der Textvorlage  
  Nach der Empfehlung zu agiler Entwicklung werden wir die Vorlage in kleinen Schritten entwickeln und in jedem Schritt einige Fehler bereinigen, bis der Testcode korrekt kompiliert und ausgeführt wird.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Schlussbemerkung  
  In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:  
   
--   *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.  
+- *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.  
   
--   Starke Typisierung ist ein Vorteil bei der Codegenerierung. Während das Modell Informationen in einer für den Benutzer geeigneten Form darstellt, ermöglicht der generierte Code anderen Teilen der Anwendung den Umgang mit den Informationen über einen Satz von Typen.  
+- Starke Typisierung ist ein Vorteil bei der Codegenerierung. Während das Modell Informationen in einer für den Benutzer geeigneten Form darstellt, ermöglicht der generierte Code anderen Teilen der Anwendung den Umgang mit den Informationen über einen Satz von Typen.  
   
--   IntelliSense und der Compiler hilft beim Erstellen von Code, der zum Schema des Modells passt – wenn Sie neuen Code schreiben und bei der Aktualisierung des Schemas.  
+- IntelliSense und der Compiler hilft beim Erstellen von Code, der zum Schema des Modells passt – wenn Sie neuen Code schreiben und bei der Aktualisierung des Schemas.  
   
--   Das Hinzufügen einer einzigen unkomplizierten Vorlagendatei zu einem Projekt kann diese Vorteile bieten.  
+- Das Hinzufügen einer einzigen unkomplizierten Vorlagendatei zu einem Projekt kann diese Vorteile bieten.  
   
--   Eine Textvorlage kann entwickelt und schnell und schrittweise getestet werden.  
+- Eine Textvorlage kann entwickelt und schnell und schrittweise getestet werden.  
   
- In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus einer Instanz des Modells generiert, einem repräsentativen Beispiel der XML-Dateien, die die Anwendung verarbeitet. In einem formaleren Ansatz würde das XML-Schema in der Form einer XSD-Datei oder einer domänenspezifischen Sprachdefinition als Vorgabe für die Vorlage dienen. Dieser Ansatz würde es für die Vorlage einfacher machen, Merkmale wie die Multiplizität einer Beziehung zu ermitteln.  
+  In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus einer Instanz des Modells generiert, einem repräsentativen Beispiel der XML-Dateien, die die Anwendung verarbeitet. In einem formaleren Ansatz würde das XML-Schema in der Form einer XSD-Datei oder einer domänenspezifischen Sprachdefinition als Vorgabe für die Vorlage dienen. Dieser Ansatz würde es für die Vorlage einfacher machen, Merkmale wie die Multiplizität einer Beziehung zu ermitteln.  
   
 ## <a name="troubleshooting-the-text-template"></a>Problembehandlung bei der Textvorlage  
  Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.  

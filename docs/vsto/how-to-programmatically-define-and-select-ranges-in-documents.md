@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 947232d593543276de281d89e3d05d6648f29ec1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833134"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Gewusst wie: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten
   Sie können einen Bereich in einem Microsoft Office Word-Dokument mithilfe eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts definieren. Sie können das gesamte Dokument in eine Reihe von Möglichkeiten, z. B. auswählen, mit der <xref:Microsoft.Office.Interop.Word.Range.Select%2A> -Methode der der <xref:Microsoft.Office.Interop.Word.Range> -Objekts oder mithilfe der Content-Eigenschaft der <xref:Microsoft.Office.Tools.Word.Document> -Klasse (in einer Anpassung auf Dokumentebene) oder die <xref:Microsoft.Office.Interop.Word.Document> Klasse (in einer VSTO-Add-in).  
@@ -60,21 +60,21 @@ ms.locfileid: "35257295"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>So wählen Sie das gesamte Dokument als Bereich mithilfe der Content-Eigenschaft aus  
   
-1.  Verwenden Sie die <xref:Microsoft.Office.Tools.Word.Document.Content%2A>-Eigenschaft, um einen Bereich zu definieren, der das gesamte Dokument umfasst.  
+1. Verwenden Sie die <xref:Microsoft.Office.Tools.Word.Document.Content%2A>-Eigenschaft, um einen Bereich zu definieren, der das gesamte Dokument umfasst.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
   
- Sie können auch Methoden und Eigenschaften anderer Objekte verwenden, um einen Bereich zu definieren.  
+   Sie können auch Methoden und Eigenschaften anderer Objekte verwenden, um einen Bereich zu definieren.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>So wählen Sie einen Satz im aktiven Dokument aus  
   
-1.  Legen Sie den Bereich mithilfe der <xref:Microsoft.Office.Interop.Word.Sentences>-Auflistung fest. Verwenden Sie den Index des Satzes, den Sie auswählen möchten.  
+1. Legen Sie den Bereich mithilfe der <xref:Microsoft.Office.Interop.Word.Sentences>-Auflistung fest. Verwenden Sie den Index des Satzes, den Sie auswählen möchten.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
   
- Eine andere Möglichkeit zum Auswählen eines Satzes besteht darin, den Start- und Endwert für den Bereich manuell festzulegen.  
+   Eine andere Möglichkeit zum Auswählen eines Satzes besteht darin, den Start- und Endwert für den Bereich manuell festzulegen.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>So wählen Sie einen Satz durch manuelles Festlegen des Start- und Endwerts aus  
   
@@ -100,21 +100,21 @@ ms.locfileid: "35257295"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>So wählen Sie das gesamte Dokument als Bereich mithilfe der Content-Eigenschaft aus  
   
-1.  Verwenden Sie die <xref:Microsoft.Office.Interop.Word._Document.Content%2A>-Eigenschaft, um einen Bereich zu definieren, der das gesamte Dokument umfasst.  
+1. Verwenden Sie die <xref:Microsoft.Office.Interop.Word._Document.Content%2A>-Eigenschaft, um einen Bereich zu definieren, der das gesamte Dokument umfasst.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
   
- Sie können auch Methoden und Eigenschaften anderer Objekte verwenden, um einen Bereich zu definieren.  
+   Sie können auch Methoden und Eigenschaften anderer Objekte verwenden, um einen Bereich zu definieren.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>So wählen Sie einen Satz im aktiven Dokument aus  
   
-1.  Legen Sie den Bereich mithilfe der <xref:Microsoft.Office.Interop.Word.Sentences>-Auflistung fest. Verwenden Sie den Index des Satzes, den Sie auswählen möchten.  
+1. Legen Sie den Bereich mithilfe der <xref:Microsoft.Office.Interop.Word.Sentences>-Auflistung fest. Verwenden Sie den Index des Satzes, den Sie auswählen möchten.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
   
- Eine andere Möglichkeit zum Auswählen eines Satzes besteht darin, den Start- und Endwert für den Bereich manuell festzulegen.  
+   Eine andere Möglichkeit zum Auswählen eines Satzes besteht darin, den Start- und Endwert für den Bereich manuell festzulegen.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>So wählen Sie einen Satz durch manuelles Festlegen des Start- und Endwerts aus  
   

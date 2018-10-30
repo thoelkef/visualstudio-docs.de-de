@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853428"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Rufen Sie in der SharePoint-Objektmodelle
   Wenn Sie Erweiterungen für die SharePoint-Tools in Visual Studio erstellen, müssen Sie möglicherweise zum Aufrufen der SharePoint-APIs, um bestimmte Aufgaben ausführen. Bei der Erstellung eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte möglicherweise Sie z. B. SharePoint-APIs zum Ausführen einiger Aufgaben zum Bereitstellen von Lösungen aufgerufen.  
@@ -37,11 +37,11 @@ ms.locfileid: "36326744"
   
  Das Clientobjektmodell hat jedoch zwei Nachteile im Kontext der SharePoint-Tools-Erweiterungen:  
   
--   Das Client-Objektmodell bietet nur eine Teilmenge des Server-Objektmodells. Wenn Sie SharePoint-Funktionen verwenden, die nicht im Client-Objektmodell verfügbar gemacht haben, müssen Sie das Serverobjektmodell verwenden.  
+- Das Client-Objektmodell bietet nur eine Teilmenge des Server-Objektmodells. Wenn Sie SharePoint-Funktionen verwenden, die nicht im Client-Objektmodell verfügbar gemacht haben, müssen Sie das Serverobjektmodell verwenden.  
   
--   Aber verwenden das Clientobjektmodell in SharePoint-Tools-Erweiterungen in den meisten Fällen funktionieren sollte, können einige Szenarien auftreten, in denen Aufrufe an die Client-Objektmodell nicht wie erwartet funktionieren. Das Clientobjektmodell ist in Clientanwendungen zum Aufrufen der SharePoint-Websites auf einem Remoteserver oder die Farm verwendet werden soll. SharePoint-Tools in Visual Studio funktionieren nur mit einer lokalen SharePoint-Installation auf dem Entwicklungscomputer. Aus diesem Grund, wenn Sie das Clientobjektmodell in einer SharePoint-Tools-Erweiterung verwenden, rufen Sie in einer SharePoint-Website auf dem lokalen Computer, handelt es sich nicht wie das Clientobjektmodell entworfen wurde, verwendet werden soll.  
+- Aber verwenden das Clientobjektmodell in SharePoint-Tools-Erweiterungen in den meisten Fällen funktionieren sollte, können einige Szenarien auftreten, in denen Aufrufe an die Client-Objektmodell nicht wie erwartet funktionieren. Das Clientobjektmodell ist in Clientanwendungen zum Aufrufen der SharePoint-Websites auf einem Remoteserver oder die Farm verwendet werden soll. SharePoint-Tools in Visual Studio funktionieren nur mit einer lokalen SharePoint-Installation auf dem Entwicklungscomputer. Aus diesem Grund, wenn Sie das Clientobjektmodell in einer SharePoint-Tools-Erweiterung verwenden, rufen Sie in einer SharePoint-Website auf dem lokalen Computer, handelt es sich nicht wie das Clientobjektmodell entworfen wurde, verwendet werden soll.  
   
- Eine exemplarische Vorgehensweise, die zeigt, wie Sie das Clientobjektmodell in eine Erweiterung der SharePoint-Tools in Visual Studio verwenden, finden Sie unter [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Eine exemplarische Vorgehensweise, die zeigt, wie Sie das Clientobjektmodell in eine Erweiterung der SharePoint-Tools in Visual Studio verwenden, finden Sie unter [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Verwenden Sie das Serverobjektmodell in Erweiterungsprojekten
  Das Serverobjektmodell ist eine Obermenge des Client-Objektmodells. Wenn Sie das Serverobjektmodell verwenden, können Sie alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen.  

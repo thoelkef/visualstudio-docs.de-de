@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818665"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debuggen von DLL-Projekten in Visual Studio
 Die folgenden Visual Studio-Vorlagen erstellen DLLs:  
@@ -54,24 +54,24 @@ Die folgenden Visual Studio-Vorlagen erstellen DLLs:
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  Jedes Projekt in diesem Abschnitt erstellt eine DLL. Eine DLL kann nicht direkt ausgeführt werden, sondern muss von einer Anwendung (normalerweise einer EXE-Datei) aufgerufen werden. Weitere Informationen finden Sie unter [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects). Die aufrufende Anwendung kann einem der folgenden Kriterien entsprechen:  
   
--   Eine Anwendung, die in einem anderen Projekt in derselben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Projektmappe erstellt wurde, in der die Klassenbibliothek enthalten ist.  
+- Eine Anwendung, die in einem anderen Projekt in derselben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Projektmappe erstellt wurde, in der die Klassenbibliothek enthalten ist.  
   
--   Eine vorhandene Anwendung, die bereits auf einem Test- oder Produktionscomputer bereitgestellt wurde.  
+- Eine vorhandene Anwendung, die bereits auf einem Test- oder Produktionscomputer bereitgestellt wurde.  
   
--   Eine Anwendung im Web, auf die über eine URL zugegriffen wird.  
+- Eine Anwendung im Web, auf die über eine URL zugegriffen wird.  
   
--   Eine Webanwendung mit einer Webseite, in die die DLL eingebettet ist.  
+- Eine Webanwendung mit einer Webseite, in die die DLL eingebettet ist.  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 Um eine DLL zu debuggen, beginnen Sie mit dem Debuggen der aufrufenden Anwendung. Dies ist für gewöhnlich entweder eine EXE-Datei oder eine Webanwendung. Für das Debuggen haben Sie verschiedene Möglichkeiten.  
   
--   Falls ein Projekt für die aufrufende Anwendung vorhanden ist, öffnen Sie das Projekt, und starten Sie die Ausführung über das Menü **Debuggen** . Weitere Informationen finden Sie unter [erste Schritte mit dem Debugger](../debugger/getting-started-with-the-debugger.md).  
+- Falls ein Projekt für die aufrufende Anwendung vorhanden ist, öffnen Sie das Projekt, und starten Sie die Ausführung über das Menü **Debuggen** . Weitere Informationen finden Sie unter [erste Schritte mit dem Debugger](../debugger/getting-started-with-the-debugger.md).  
   
--   Wenn es sich bei der aufrufenden Anwendung um ein vorhandenes Programm handelt, das bereits auf einem Test- oder Produktionscomputer bereitgestellt ist, können Sie den Debugger an die Anwendung anfügen. Verwenden Sie diese Methode, wenn es sich bei der DLL um ein von Internet Explorer gehostetes Steuerelement oder um ein Steuerelement auf einer Webseite handelt. Weitere Informationen finden Sie unter [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Wenn es sich bei der aufrufenden Anwendung um ein vorhandenes Programm handelt, das bereits auf einem Test- oder Produktionscomputer bereitgestellt ist, können Sie den Debugger an die Anwendung anfügen. Verwenden Sie diese Methode, wenn es sich bei der DLL um ein von Internet Explorer gehostetes Steuerelement oder um ein Steuerelement auf einer Webseite handelt. Weitere Informationen finden Sie unter [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
--   Sie können über das DLL-Projekt debuggen. Weitere Informationen finden Sie unter [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- Sie können über das DLL-Projekt debuggen. Weitere Informationen finden Sie unter [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Sie können es von Debuggen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Direktfenster](#vxtskdebuggingdllprojectstheimmediatewindow). In diesem Fall übernimmt das **Direktfenster** die Funktion der Anwendung.  
+- Sie können es von Debuggen die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Direktfenster](#vxtskdebuggingdllprojectstheimmediatewindow). In diesem Fall übernimmt das **Direktfenster** die Funktion der Anwendung.  
   
 Bevor Sie mit dem Debuggen der aufrufenden Anwendung beginnen, werden Sie gewöhnlich einen Haltepunkt in der Klassenbibliothek festlegen. Weitere Informationen finden Sie unter [Using Breakpoints](../debugger/using-breakpoints.md). Sobald der Haltepunkt getroffen wird, können Sie den Code schrittweise ausführen und die in den einzelnen Zeilen ausgeführten Aktionen beobachten, bis Sie das Problem eingegrenzt haben. Weitere Informationen finden Sie unter [Navigieren im Code im Debugger](../debugger/navigating-through-code-with-the-debugger.md).
   
@@ -110,7 +110,7 @@ Wenn Sie eine externe DLL zu Ihrem Projekt debuggen, debugging-Funktionen zur Ve
 
 Ihr Projekt muss, um die DLL und die PDB-Datei, die zum Debuggen finden zu können. Sie können einen benutzerdefinierten BuildTask, um diese Dateien zu kopieren, erstellen die  **\<Projektordner > \Debug** Ordner "Output", oder Sie können die Dateien in den Ausgabeordner manuell kopieren.
 
-Sie können die Speicherorte der Headerdateien und *.lib Dateien ganz einfach festlegen, auf den Eigenschaftenseiten (mit der rechten Maustaste im C++-Projekts, und wählen Sie **Anzeigeeigenschaften**, und wählen Sie dann **alle Konfigurationen**) ohne kopieren Sie in Ihrem Ordner "Output":
+Speicherorte der Headerdateien können problemlos festlegen und <em>LIB-Dateien auf den Eigenschaftenseiten (Maustaste auf C++-Projekt ** Eigenschaften</em><em>, und wählen Sie dann **alle Konfigurationen</em>* ) ohne in den Ausgabeordner kopieren:
 
 - Ordner "C/C++" (Kategorie Allgemein) – Geben Sie den Ordner, die mit der Headerdateien in der **Additional Include Directories** Feld.
 - Ordner "Linker" (Kategorie Allgemein) – Geben Sie den Ordner, die mit der LIB-Datei in die **zusätzliche Bibliotheken Verzeichnisse** Feld. 

@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855442"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
+
 Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, indem eine Aktion, die normalerweise mehrere Klicks auf Schaltflächen erfordert, auf das Drücken einer Tastenkombination auf der Tastatur reduziert wird.
 
 ## <a name="element-shortcuts"></a>Tastenkombinationen für Elemente
- Diese Tabelle enthält die Tastenkombinationen, die für die Arbeit mit Elementen auf der Zeichenfläche verfügbar sind.
+
+Diese Tabelle enthält die Tastenkombinationen, die für die Arbeit mit Elementen auf der Zeichenfläche verfügbar sind.
 
 |**Ausführen dieser Aktion**|**Vorgehensweise**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Erstellen eines Elements|Drücken Sie **STRG**+**N**|
 |Duplizieren eines Elements|Halten Sie die **ALT-TASTE** gedrückt, und drücken Sie eine Pfeiltaste.|
 |Bearbeitet den Text in einem Steuerelement|Drücken Sie **F2** (drücken Sie **ESC** zum Beenden).|
@@ -39,10 +41,11 @@ Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, 
 |Auswählen einer Eigenschaft für ein Element|Wählen Sie ein Element aus, und legen Sie den Fokus auf das Eigenschaftenfenster. Drücken Sie dann die **TAB-TASTE**. (Verwenden Sie **STRG**+**TAB**, um den Fokus auf das Eigenschaftenfenster zu legen.) Sie können mit den Pfeiltasten Eigenschaftswerte in den Dropdownlisten auswählen.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tastenkombinationen im Fenster "Dokumentgliederung"
- Die folgende Tabelle enthält die Tastenkombinationen, die bei der Arbeit mit Elementen im Fenster "Dokumentgliederung" verfügbar sind.
+
+Die folgende Tabelle enthält die Tastenkombinationen, die bei der Arbeit mit Elementen im Fenster "Dokumentgliederung" verfügbar sind.
 
 |**Ausführen dieser Aktion**|**Vorgehensweise**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Ausblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**STRG**+**H**|
 |Einblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**UMSCHALT**+**STRG**+**H**|
 |Sperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|**STRG**+**L**|

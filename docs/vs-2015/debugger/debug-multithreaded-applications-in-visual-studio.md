@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897497"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessor
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)  
  -   Verwenden Sie Haltepunktfilter, wenn ein Haltepunkt in einem einzelnen Thread platziert werden soll.  
   
--   Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen. Dies kann beim Untersuchen von Problemen wie Deadlocks hilfreich sein.  
+- Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen. Dies kann beim Untersuchen von Problemen wie Deadlocks hilfreich sein.  
   
- [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Threadingbegriffe in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Programmierung, einschließlich Beispielcode.  
+  [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Threadingbegriffe in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Programmierung, einschließlich Beispielcode.  
   
- [Multithreading in Komponenten](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Erläutert die Verwendung des Multithreadings in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Komponenten.  
+  [Multithreading in Komponenten](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Erläutert die Verwendung des Multithreadings in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Komponenten.  
   
- [Multithreadingunterstützung für älteren Code (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Threadingbegriffe und Beispielcode für C++-Programmierer, die MFC verwenden.  
+  [Multithreadingunterstützung für älteren Code (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Threadingbegriffe und Beispielcode für C++-Programmierer, die MFC verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)   

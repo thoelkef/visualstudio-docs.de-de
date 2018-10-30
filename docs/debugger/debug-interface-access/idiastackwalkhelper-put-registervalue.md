@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
+title: IDiaStackWalkHelper::put_registerValue | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c094384fd4c1e01b28edcc809d58ab56b3bb225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838932"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 Legt den Wert eines Registers.  
@@ -35,16 +35,16 @@ HRESULT put_registerValue (
   
 #### <a name="parameters"></a>Parameter  
  `index`  
- [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die Registrierung zum Schreiben in angibt.  
+ [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register zum Schreiben in angibt.  
   
  `NewVal`  
- [in] Der neue Wert der registrieren.  
+ [in] Der neue Wert von Register.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Trotz der Größe des Werts sollte eine Implementierung speichern nur was normalerweise die Registrierung enthält. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
+ Trotz der Größe des Werts sollte eine Implementierung speichern, was dem Registrieren normalerweise enthält nur. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834280"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
 
@@ -38,7 +38,7 @@ Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit die
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-|
 |**Erstellen eines Leistungs- und Belastungsberichts:** Sie können mit Microsoft Excel Berichte für die Auslastungs- und Webleistungstests erstellen.|- [Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Manuelles Erstellen eines Leistungs- und Belastungsberichts mithilfe von Microsoft Word:** Sie können manuell Berichte für Auslastungs- und Webleistungstests erstellen, indem Sie die Zusammenfassung, die Tabelle und Diagrammdaten kopieren und in ein Microsoft Word-Dokument einfügen.|- [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

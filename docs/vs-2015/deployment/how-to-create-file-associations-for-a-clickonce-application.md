@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909106"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Gewusst wie: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "49300945"
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Zum Erstellen von dateizuordnungen für eine ClickOnce-Anwendung  
   
-1.  Erstellen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung normal, oder verwenden Sie die vorhandene [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.  
+1. Erstellen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung normal, oder verwenden Sie die vorhandene [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.  
   
-2.  Öffnen Sie das Anwendungsmanifest mit einem Text- oder XML-Editor wie Editor.  
+2. Öffnen Sie das Anwendungsmanifest mit einem Text- oder XML-Editor wie Editor.  
   
-3.  Suchen Sie das `assembly` -Element. Weitere Informationen finden Sie unter [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
+3. Suchen Sie das `assembly` -Element. Weitere Informationen finden Sie unter [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
   
-4.  Als untergeordnetes Element der `assembly` -Element, Hinzufügen einer `fileAssociation` Element. Die `fileAssociation` Element verfügt über vier Attribute:  
+4. Als untergeordnetes Element der `assembly` -Element, Hinzufügen einer `fileAssociation` Element. Die `fileAssociation` Element verfügt über vier Attribute:  
   
-    -   `extension`: Die Dateinamenerweiterung, die Sie der Anwendung zuordnen möchten.  
+   - `extension`: Die Dateinamenerweiterung, die Sie der Anwendung zuordnen möchten.  
   
-    -   `description`: Eine Beschreibung des Dateityps, die in der Windows-Shell angezeigt wird.  
+   - `description`: Eine Beschreibung des Dateityps, die in der Windows-Shell angezeigt wird.  
   
-    -   `progid`: Eine Zeichenfolge, die den Dateityp aus, um es in der Registrierung markieren eindeutig identifiziert.  
+   - `progid`: Eine Zeichenfolge, die den Dateityp aus, um es in der Registrierung markieren eindeutig identifiziert.  
   
-    -   `defaultIcon`: Ein Symbol für diesen Dateityp verwendet werden soll. Das Symbol muss als eine Ressource im Manifest Anwendung hinzugefügt werden. Weitere Informationen finden Sie unter [Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Ein Symbol für diesen Dateityp verwendet werden soll. Das Symbol muss als eine Ressource im Manifest Anwendung hinzugefügt werden. Weitere Informationen finden Sie unter [Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Ein Beispiel für die `file` und `fileAssociation` Elemente finden Sie unter [ \<FileAssociation >-Element](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Wenn Sie die Anwendung mehr als einen Dateityp zuordnen möchten, fügen Sie zusätzliche `fileAssociation` Elemente. Beachten Sie, dass die `progid` Attribut sollte unterschiedlich sein.  
+5. Wenn Sie die Anwendung mehr als einen Dateityp zuordnen möchten, fügen Sie zusätzliche `fileAssociation` Elemente. Beachten Sie, dass die `progid` Attribut sollte unterschiedlich sein.  
   
-6.  Sobald Sie mit dem Anwendungsmanifest abgeschlossen haben, Signieren Sie das Manifest erneut. Sie können über die Befehlszeile dazu verwenden Mage.exe.  
+6. Sobald Sie mit dem Anwendungsmanifest abgeschlossen haben, Signieren Sie das Manifest erneut. Sie können über die Befehlszeile dazu verwenden Mage.exe.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Siehe auch  
  [\<FileAssociation >-Element](../deployment/fileassociation-element-clickonce-application.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30f5725743fe74781ddc18ebf77f04945b44d8e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918193"
 ---
 # <a name="resource-details-view---contention-data"></a>Ressourcendetailansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
   
--   Klicken Sie im Fenster **Aufrufliste** auf den Funktionsnamen.  
+- Klicken Sie im Fenster **Aufrufliste** auf den Funktionsnamen.  
   
- Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
+  Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>So zeigen Sie die Aufrufstruktur von Konfliktereignissen für die Ressource an  
   

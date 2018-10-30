@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 28fb0bdb181b1f4f2c08112e40d6236db22b7a08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918921"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
@@ -29,30 +29,30 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
 
 1. Öffnen Sie Visual Studio, wechseln Sie zum Fenster **Python-Umgebungen**  (**Ansicht** > **Weitere Fenster** > **Python-Umgebungen**), und wählen Sie eine Anaconda-Umgebung aus.
 
-1. Überprüfen Sie die Registerkarte **Pakete (Conda)** (die als **pip** oder **Pakete** angezeigt werden kann) für diese Umgebung, um sicherzustellen, dass `ipython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier. (Weitere Informationen finden Sie unter [Fenster „Python-Umgebungen“ auf der Registerkarte „Pakete“](python-environments-window-tab-reference.md).)
+2. Überprüfen Sie die Registerkarte **Pakete (Conda)** (die als **pip** oder **Pakete** angezeigt werden kann) für diese Umgebung, um sicherzustellen, dass `ipython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier. (Weitere Informationen finden Sie unter [Fenster „Python-Umgebungen“ auf der Registerkarte „Pakete“](python-environments-window-tab-reference.md).)
 
-1. Wählen Sie die Registerkarte **Übersicht** aus, und klicken Sie auf **Interaktiven IPython-Modus verwenden**. (Wählen Sie in Visual Studio 2015 **Interaktive Optionen konfigurieren** aus, um das Dialogfeld **Optionen** zu öffnen. Legen Sie anschließend den **Interaktiven Modus** auf **IPython** fest, und klicken Sie auf **OK**.)
+3. Wählen Sie die Registerkarte **Übersicht** aus, und klicken Sie auf **Interaktiven IPython-Modus verwenden**. (Wählen Sie in Visual Studio 2015 **Interaktive Optionen konfigurieren** aus, um das Dialogfeld **Optionen** zu öffnen. Legen Sie anschließend den **Interaktiven Modus** auf **IPython** fest, und klicken Sie auf **OK**.)
 
-1. Klicken Sie auf **Interaktives Fenster öffnen**, um das **interaktive** Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die **EINGABETASTE** drücken, wenn nur eine >>>-Eingabeaufforderung angezeigt wird, damit eine Eingabeaufforderung wie **In [2]** angezeigt wird.
+4. Klicken Sie auf **Interaktives Fenster öffnen**, um das **interaktive** Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die **EINGABETASTE** drücken, wenn nur eine >>>-Eingabeaufforderung angezeigt wird, damit eine Eingabeaufforderung wie **In [2]** angezeigt wird.
 
     ![Das interaktive Fenster im IPython-Modus](media/ipython-repl-03.png)
 
-1. Geben Sie den folgenden Code ein:
+5. Geben Sie den folgenden Code ein:
 
-  ```python
-  import matplotlib.pyplot as plt
-  import numpy as np
+   ```python
+   import matplotlib.pyplot as plt
+   import numpy as np
   
-  x = np.linspace(0, 5, 10)
-  y = x ** 2
-  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
-  ```
+   x = np.linspace(0, 5, 10)
+   y = x ** 2
+   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+   ```
 
-1. Nach Eingabe der letzten Zeile sollte ein Inlinediagramm angezeigt werden (dessen Größe Sie bei Bedarf ändern können, indem Sie an der unteren rechten Ecke ziehen).
+6. Nach Eingabe der letzten Zeile sollte ein Inlinediagramm angezeigt werden (dessen Größe Sie bei Bedarf ändern können, indem Sie an der unteren rechten Ecke ziehen).
 
     ![Inlinediagramm im interaktiven Fenster](media/ipython-repl-04.png)
 
-1. Statt den Code in die REPL einzugeben, können Sie ihn im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **An interaktives Fenster senden** auswählen (oder **STRG**+**EINGABETASTE** drücken). Versuchen Sie, den folgenden Code in eine neue Datei im Editor einzufügen, indem sie ihn mit **STRG**+**A** auswählen und anschließend an das **interaktive** Fenster senden. (Visual Studio sendet den Code als Einheit, um zu vermeiden, dass Sie temporäre oder unvollständige Diagramme erhalten. Visual Studio öffnet ein **interaktives** Fenster für die Umgebung, die im Fenster **Python-Umgebungen** als Standardeinstellung festgelegt ist, wenn Sie gerade kein Python-Projekt mit einer anderen Umgebung geöffnet haben.)
+7. Statt den Code in die REPL einzugeben, können Sie ihn im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **An interaktives Fenster senden** auswählen (oder **STRG**+**EINGABETASTE** drücken). Versuchen Sie, den folgenden Code in eine neue Datei im Editor einzufügen, indem sie ihn mit **STRG**+**A** auswählen und anschließend an das **interaktive** Fenster senden. (Visual Studio sendet den Code als Einheit, um zu vermeiden, dass Sie temporäre oder unvollständige Diagramme erhalten. Visual Studio öffnet ein **interaktives** Fenster für die Umgebung, die im Fenster **Python-Umgebungen** als Standardeinstellung festgelegt ist, wenn Sie gerade kein Python-Projekt mit einer anderen Umgebung geöffnet haben.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,7 +77,7 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
 
     ![Senden von Code aus dem Editor an das interaktive Fenster](media/ipython-repl-05.png)
 
-1. Wenn die Diagramme außerhalb des **interaktiven** Fensters angezeigt werden sollen, führen Sie den Code stattdessen mit dem Befehl **Debuggen** > **Starten ohne Debuggen** aus.
+8. Wenn die Diagramme außerhalb des **interaktiven** Fensters angezeigt werden sollen, führen Sie den Code stattdessen mit dem Befehl **Debuggen** > **Starten ohne Debuggen** aus.
 
 IPython verfügt über viele weitere nützliche Features, wie z.B. Escapevorgang zur Shell des Betriebssystems, Variablenersetzung, Ausgabenerfassung usw. Weitere Informationen finden Sie in der [IPython documentation (IPython Dokumentation)](http://ipython.org/documentation.html).
 

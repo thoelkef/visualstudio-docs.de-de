@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_objectfilename | Microsoft Docs'
+title: 'Idiainjectedsource:: Get_objectfilename | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75dd11bde98d345d88b700aef6f4c86d80133714
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b3bb9297ab7a572572a35df3521236267ebd87e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932525"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
 Ruft ab, der Name der Objektdatei, unter dem die Quelle kompiliert wurde.  
@@ -37,7 +37,7 @@ HRESULT get_objectFilename (
  [out] Gibt zurück, der Name der Objektdatei, unter dem die Quelle kompiliert wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

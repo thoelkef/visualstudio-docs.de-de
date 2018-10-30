@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824294"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -123,7 +123,7 @@ Ein Modell kann über mehrere Arten von Diagrammen dargestellt werden. Weitere I
 Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sich unterschiedliche Arten von Diagrammen. Viele der Diagrammtypen sind für mehrere Ebenen sinnvoll. In der folgenden Tabelle wird gezeigt, wie jeder Diagrammtyp verwendet werden kann.
 
 |Entwurfsebene|Diagrammtypen|
-|------------------|-------------------|
+|-|-|
 |Geschäftsprozess<br /><br /> Wenn Sie den Kontext kennen, in dem das System verwendet wird, erleichtert dies das Verständnis der Anforderungen der Benutzer an das System.|– Konzeptionelle Klassendiagramme beschreiben die innerhalb des Geschäftsprozesses verwendeten Geschäftskonzepte.|
 |Benutzeranforderungen<br /><br /> Die Definition der Anforderungen der Benutzer an das System.|– Die Geschäftsregeln und servicequalitätsanforderungen können in separaten Dokumenten beschrieben werden.|
 |Allgemeiner Entwurf<br /><br /> Die Gesamtstruktur des Systems: die Hauptkomponenten und wie sie verknüpft sind.|-Abhängigkeitsdiagrammen wird beschrieben, wie das System in voneinander abhängige Teile gegliedert ist. Sie können überprüfen, dass Programmcode anhand von Abhängigkeitsdiagrammen, um sicherzustellen, dass er der Architektur entspricht.|
@@ -132,9 +132,9 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
-|------------------|---------------|
+|-|-|
 |**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [MSDN Anleitungsvideos: Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [wie Reihe von MSDN: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL-Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

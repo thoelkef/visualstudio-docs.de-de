@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910796"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Wortvervollständigung füllt das fehlenden Zeichen in eine teilweise eingegeben
   
 ## <a name="implementation-steps"></a>Implementierungsschritte  
   
-1.  Wenn der Benutzer auswählt **Wort vervollständigen** aus der **IntelliSense** im Menü der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl gesendet wird, auf den Sprachdienst.  
+1. Wenn der Benutzer auswählt **Wort vervollständigen** aus der **IntelliSense** im Menü der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl gesendet wird, auf den Sprachdienst.  
   
-2.  Die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse fängt die Befehls- und Aufrufe der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. Die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse fängt die Befehls- und Aufrufe der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  Die <xref:Microsoft.VisualStudio.Package.Source> -Klasse anschließend ruft der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode zum Abrufen der Liste der möglichen Word vervollständigungen und zeigt dann, die die Wörter in einer QuickInfo Liste mit den <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse.  
+3. Die <xref:Microsoft.VisualStudio.Package.Source> -Klasse anschließend ruft der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode zum Abrufen der Liste der möglichen Word vervollständigungen und zeigt dann, die die Wörter in einer QuickInfo Liste mit den <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse.  
   
-     Es ist nur ein Wort nach übereinstimmendes und die <xref:Microsoft.VisualStudio.Package.Source> -Klasse abgeschlossen, wird das Wort.  
+    Es ist nur ein Wort nach übereinstimmendes und die <xref:Microsoft.VisualStudio.Package.Source> -Klasse abgeschlossen, wird das Wort.  
   
- Alternativ, wenn die Überprüfung der Triggerwert zurückgegeben wird <xref:Microsoft.VisualStudio.Package.TokenTriggers> , wenn das erste Zeichen eines Bezeichners typisiert ist, die <xref:Microsoft.VisualStudio.Package.Source> -Klasse erkennt dies und ruft die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>. In diesem Fall muss der Parser erkennen, ob ein Member-Auswahl-Zeichen vorhanden, und geben Sie eine Liste von Elementen.  
+   Alternativ, wenn die Überprüfung der Triggerwert zurückgegeben wird <xref:Microsoft.VisualStudio.Package.TokenTriggers> , wenn das erste Zeichen eines Bezeichners typisiert ist, die <xref:Microsoft.VisualStudio.Package.Source> -Klasse erkennt dies und ruft die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>. In diesem Fall muss der Parser erkennen, ob ein Member-Auswahl-Zeichen vorhanden, und geben Sie eine Liste von Elementen.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Aktivieren der Unterstützung für das vollständige Wort  
  Aktivieren der Unterstützung für Word Vervollständigungssatz der `CodeSense` benannter Parameter, die an die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Benutzerattribut das Language Pack zugeordnet. Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Eigenschaft für die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  

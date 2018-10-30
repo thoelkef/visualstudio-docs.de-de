@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f6cadaa88d6cc87ec70451d9da850cd49b7753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a93877066e90bbc72ca58181d192219e898897d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833888"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Diese Methode fügt einen Knoten Programm für jedes Debugmodul (DE) angegeben.  
+Diese Methode fügt einen Programm-Knoten für jede Debug-Engine (DE) angegeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Parameter  
  `guidLaunchingEngine`  
- [in] Die `GUID` ein de, die zum Starten von Programmen verwendet werden soll (und wird davon ausgegangen, dass eine eigene Anwendung Knoten hinzufügen).  
+ [in] Die `GUID` von einer bereitgestellten Kompatibilitätsrichtlinie, die verwendet werden soll, um Programme zu starten (und wird davon ausgegangen, dass eine eigene Anwendung Knoten hinzufügen).  
   
  `rgguidSpecificEngines`  
- [in] Array von `GUID`s DEs für die programmausführung Knoten hinzugefügt werden.  
+ [in] Array von `GUID`s DEs, welches Programm Knoten hinzugefügt werden.  
   
  `celtSpecificEngines`  
  [in] Die Anzahl der `GUID`s in der `rgguidSpecificEngines` Array.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- [Programmieren von Knoten](../../../extensibility/debugger/program-nodes.md) hinzugefügt werden, für jede DE in aufgeführt `rgguidSpecificEngines`– mit Ausnahme der starten-Moduls (in festgelegten `guidLaunchingEngine`), dem wird davon ausgegangen, dass einen eigene Anwendung Knoten hinzufügen, wenn sie ein Programm gestartet wird.  
+ [Programmieren von Knoten](../../../extensibility/debugger/program-nodes.md) hinzugefügt werden für jede DE in aufgeführt `rgguidSpecificEngines`– mit Ausnahme der starten-Engine (wie in `guidLaunchingEngine`), dieser wird angenommen, einen eigene Anwendung-Knoten hinzufügen, wenn sie ein Programm gestartet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

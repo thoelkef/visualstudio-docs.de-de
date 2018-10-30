@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851607"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines Adapters für diagnostische Daten
 
@@ -33,7 +33,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
  Nachfolgend sehen Sie eine partielle Liste mit Schlüsselereignissen, die Sie beim Erstellen des Adapters für diagnostische Daten verwenden können. Eine vollständige Liste von Ereignissen in Zusammenhang mit Adaptern für diagnostische Daten finden Sie in der abstrakten <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>-Klasse.
 
 |event|Beschreibung |
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Start des Testlaufs|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Ende des Testlaufs|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Start jedes Tests im Testlauf|
@@ -52,78 +52,78 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>So erstellen und installieren Sie einen Adapter für diagnostische Daten
 
-1.  Erstellen Sie eine neue Klassenbibliothek.
+1. Erstellen Sie eine neue Klassenbibliothek.
 
-    1.  Wählen Sie im Menü **Datei** die Option **Neu**, und zeigen Sie dann auf **Neues Projekt**.
+   1.  Wählen Sie im Menü **Datei** die Option **Neu**, und zeigen Sie dann auf **Neues Projekt**.
 
-    2.  Wählen Sie unter **Projekttypen** die zu verwendende Sprache aus.
+   2.  Wählen Sie unter **Projekttypen** die zu verwendende Sprache aus.
 
-    3.  Wählen Sie unter **Von Visual Studio installierte Vorlagen** die Option **Klassenbibliothek** aus.
+   3.  Wählen Sie unter **Von Visual Studio installierte Vorlagen** die Option **Klassenbibliothek** aus.
 
-    4.  Geben Sie einen Namen für den Adapter für diagnostische Daten ein.
+   4.  Geben Sie einen Namen für den Adapter für diagnostische Daten ein.
 
-    5.  Klicken Sie auf **OK**.
+   5.  Klicken Sie auf **OK**.
 
-2.  Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon** hinzu.
+2. Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon** hinzu.
 
-    1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
+   1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
-    2.  Wählen Sie **.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Wählen Sie **.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Klicken Sie auf **OK**.
+   3.  Klicken Sie auf **OK**.
 
-3.  Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.Common** hinzu.
+3. Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.Common** hinzu.
 
-    1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
+   1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
-    2.  Wählen Sie **/.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Wählen Sie **/.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Klicken Sie auf **OK**.
+   3.  Klicken Sie auf **OK**.
 
-4.  Fügen Sie der Klassendatei die folgenden `using`-Anweisungen hinzu:
+4. Fügen Sie der Klassendatei die folgenden `using`-Anweisungen hinzu:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Fügen Sie das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> der Klasse für Ihren Adapter für diagnostische Daten hinzu, damit dieser als Adapter für diagnostische Daten identifiziert werden kann, und ersetzen Sie dabei **Firma**, **Produkt** und **Version** durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
+5. Fügen Sie das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> der Klasse für Ihren Adapter für diagnostische Daten hinzu, damit dieser als Adapter für diagnostische Daten identifiziert werden kann, und ersetzen Sie dabei **Firma**, **Produkt** und **Version** durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>-Attribut hinzu, und ersetzen Sie dabei die Parameter durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
+6. Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>-Attribut hinzu, und ersetzen Sie dabei die Parameter durch die entsprechenden Informationen für den Adapter für diagnostische Daten:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Dieser Anzeigename wird in der Aktivität "Testeinstellungen" angezeigt.
+    Dieser Anzeigename wird in der Aktivität "Testeinstellungen" angezeigt.
 
-    > [!NOTE]
-    > Sie können auch das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> hinzufügen, um den `Type` des benutzerdefinierten Konfigurations-Editors für diesen Datenadapter anzugeben und um optional die für den Editor zu verwendende Hilfedatei anzugeben.
-    >
-    > Sie können auch das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> anwenden, um anzugeben, dass es immer aktiviert werden soll.
+   > [!NOTE]
+   > Sie können auch das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> hinzufügen, um den `Type` des benutzerdefinierten Konfigurations-Editors für diesen Datenadapter anzugeben und um optional die für den Editor zu verwendende Hilfedatei anzugeben.
+   >
+   > Sie können auch das <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> anwenden, um anzugeben, dass es immer aktiviert werden soll.
 
-7.  Die Klasse für den Adapter für diagnostische Daten muss wie folgt von der <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector>-Klasse erben:
+7. Die Klasse für den Adapter für diagnostische Daten muss wie folgt von der <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector>-Klasse erben:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Fügen Sie die lokalen Variablen wie folgt hinzu:
+8. Fügen Sie die lokalen Variablen wie folgt hinzu:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Fügen Sie die <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*>-Methode und eine **Dispose**-Methode hinzu. In der `Initialize`-Methode können Sie die Datensenke, möglicherweise vorhandene Konfigurationsdaten aus Testeinstellungen und die Ereignisse und die gewünschten Ereignishandler auf folgende Weise initialisieren:
 
@@ -273,7 +273,7 @@ Zum Erstellen eines *Adapters für diagnostische Daten* müssen Sie mit Visual S
 
 17. Führen Sie die Tests unter Verwendung der Testeinstellungen aus, wenn der Adapter für diagnostische Daten ausgewählt ist.
 
-   Die von Ihnen angegebene Datendatei wird an die Testergebnisse angefügt.
+    Die von Ihnen angegebene Datendatei wird an die Testergebnisse angefügt.
 
 ## <a name="see-also"></a>Siehe auch
 

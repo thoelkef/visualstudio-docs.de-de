@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899642"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Problembehandlung bei Erweiterungen für Abhängigkeitsdiagramme
 
@@ -25,22 +25,22 @@ In diesem Thema werden einige Probleme behandelt, die möglicherweise beim Erste
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Wenn ich F5 zum Debuggen meiner Erweiterung drücke, werden meine Befehle, Gestenhandler, validierungserweiterungen oder benutzerdefinierten Eigenschaften nicht auf von Abhängigkeitsdiagrammen in der experimentellen Instanz von Visual Studio angezeigt
 
-1.  Öffnen Sie die Erweiterungsprojektmappe in der experimentellen Instanz von Visual Studio, und klicken Sie auf die **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
+1. Öffnen Sie die Erweiterungsprojektmappe in der experimentellen Instanz von Visual Studio, und klicken Sie auf die **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
 
-2.  Drücken Sie **F5** oder **STRG + F5** die experimentelle Instanz von Visual Studio zu starten. Öffnen Sie ein Abhängigkeitsdiagramm, und Testen Sie die Erweiterung.
+2. Drücken Sie **F5** oder **STRG + F5** die experimentelle Instanz von Visual Studio zu starten. Öffnen Sie ein Abhängigkeitsdiagramm, und Testen Sie die Erweiterung.
 
- Fahren Sie ggf. mit der nächsten Prozedur fort.
+   Fahren Sie ggf. mit der nächsten Prozedur fort.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Eine alte Version meiner Erweiterung wird ausgeführt.
 
-1.  Stellen Sie sicher, dass keine experimentelle Instanz von Visual Studio ausgeführt wird.
+1. Stellen Sie sicher, dass keine experimentelle Instanz von Visual Studio ausgeführt wird.
 
-2.  Löschen Sie den folgenden Ordner: %LocalAppData%\Microsoft\VisualStudio\\[Version] \ComponentModelCache
+2. Löschen Sie den folgenden Ordner: %LocalAppData%\Microsoft\VisualStudio\\[Version] \ComponentModelCache
 
-    > [!NOTE]
-    > %LocalAppData% ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local.
+   > [!NOTE]
+   > %LocalAppData% ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local.
 
- Fahren Sie ggf. mit der nächsten Prozedur fort.
+   Fahren Sie ggf. mit der nächsten Prozedur fort.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Eine alte Version der Validierungsergebnisse wird angezeigt, oder die Validierungsmethode wird nicht aufgerufen.
 

@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941221"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Eine kurze Übersicht  
  Ändern wir die **neues Projekt** Dialogfeld und erstellen Sie eine neue Projektvorlage für den Benutzer.  
   
-1.  Fügen Sie zum Ordner \Programme\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp MyProjectNode Unterordner hinzu.  
+1. Fügen Sie zum Ordner \Programme\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp MyProjectNode Unterordner hinzu.  
   
-2.  Erstellen Sie eine MyProject.vstdir-Datei im Ordner "MyProjectNode" mit einem Text-Editor ein.  
+2. Erstellen Sie eine MyProject.vstdir-Datei im Ordner "MyProjectNode" mit einem Text-Editor ein.  
   
-3.  Fügen Sie diese Zeilen zur Datei .vstdir:  
+3. Fügen Sie diese Zeilen zur Datei .vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Speichern Sie und schließen Sie die Datei .vstdir.  
+4. Speichern Sie und schließen Sie die Datei .vstdir.  
   
-5.  Erstellen Sie eine MyProject.vstemplate-Datei im Ordner "MyProjectNode" mit einem Text-Editor ein.  
+5. Erstellen Sie eine MyProject.vstemplate-Datei im Ordner "MyProjectNode" mit einem Text-Editor ein.  
   
-6.  Fügen Sie diese Zeilen zur VSTEMPLATE-Datei hinzu:  
+6. Fügen Sie diese Zeilen zur VSTEMPLATE-Datei hinzu:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Speichern Sie the.vstemplate-Datei zu und schließen Sie den Editor.  
+7. Speichern Sie the.vstemplate-Datei zu und schließen Sie den Editor.  
   
-8.  Senden Sie die VSTEMPLATE-Datei in einem neuen komprimierten MyProjectNode\MyProject.zip-Ordner.  
+8. Senden Sie die VSTEMPLATE-Datei in einem neuen komprimierten MyProjectNode\MyProject.zip-Ordner.  
   
 9. In der Visual Studio-Befehlsfenster Folgendes ein:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Öffnen Sie Visual Studio.  
+   Öffnen Sie Visual Studio.  
   
-1.  Öffnen der **neues Projekt** Dialogfeld ein, und erweitern Sie die **Visual C#-** Projektknoten.  
+10. Öffnen der **neues Projekt** Dialogfeld ein, und erweitern Sie die **Visual C#-** Projektknoten.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.  
+    **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

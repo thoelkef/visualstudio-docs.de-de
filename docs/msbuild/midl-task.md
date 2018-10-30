@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080313"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863854"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *midl.exe*. Weitere Informationen finden Sie unter [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -245,7 +245,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
   
      Wenn `true`, dann muss das Format der Eingabedatei mit *mktyplib.exe* Version 2.03 kompatibel sein.  
   
-     Weitere Informationen finden Sie unter Option **/mktyplib203** in der [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Siehe auch [ODL-Dateisyntax](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) auf der MSDN-Website.  
+     Weitere Informationen finden Sie unter Option **/mktyplib203** in der [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Siehe auch [ODL-Dateisyntax](/previous-versions/windows/desktop/automat/odl-file-syntax) auf der MSDN-Website.  
   
 -   **OutputDirectory**  
   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873889"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht die Datenbindung an Steuerelemente in einem Aktionsbereich in Word. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.  
@@ -43,7 +43,7 @@ ms.locfileid: "38781931"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -78,28 +78,28 @@ ms.locfileid: "38781931"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Um eine Datenquelle zum Projekt hinzufügen  
   
-1.  Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
+1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
   
-    > [!NOTE]  
-    >  Wenn **Datenquellen anzeigen** ist nicht verfügbar ist, klicken Sie auf das Word-Dokument, und klicken Sie dann erneut.  
+   > [!NOTE]  
+   >  Wenn **Datenquellen anzeigen** ist nicht verfügbar ist, klicken Sie auf das Word-Dokument, und klicken Sie dann erneut.  
   
-2.  Klicken Sie auf **neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.  
+2. Klicken Sie auf **neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.  
   
-3.  Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
+3. Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
   
-4.  Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
+4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
   
-5.  Klicken Sie auf **Weiter**.  
+5. Klicken Sie auf **Weiter**.  
   
-6.  Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-7.  Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
+7. Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
   
-8.  Aktivieren Sie das Kontrollkästchen neben den **Lieferanten** und **Produkte** Tabellen.  
+8. Aktivieren Sie das Kontrollkästchen neben den **Lieferanten** und **Produkte** Tabellen.  
   
 9. Klicken Sie auf **Fertig stellen**.  
   
- Der Assistent fügt die **Lieferanten** Tabelle und **Produkte** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
+   Der Assistent fügt die **Lieferanten** Tabelle und **Produkte** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Datengebundene Windows Forms-Steuerelemente einem Aktionsbereich-Steuerelement hinzu  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844086"
 ---
 # <a name="model-editor"></a>Modell-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>So transformieren Sie ein Objekt durch Festlegen der Eigenschaften  
   
-1.  Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.  
+1. Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.  
   
-2.  Geben Sie im Fenster **Eigenschaften** Werte für die Eigenschaften **Drehung**, **Skalierung** und **Übersetzung** an.  
+2. Geben Sie im Fenster **Eigenschaften** Werte für die Eigenschaften **Drehung**, **Skalierung** und **Übersetzung** an.  
   
-    > [!IMPORTANT]
-    >  Geben Sie für die Eigenschaft **Drehung** den Grad der Drehung um jede der drei Achsen an. Drehungen werden nach der Reihe ausgeführt. Planen Sie daher eine Drehung zuerst in Hinblick auf die Drehung der x-Achse, dann die der Y-Achse und anschließend die der z-Achse.  
+   > [!IMPORTANT]
+   >  Geben Sie für die Eigenschaft **Drehung** den Grad der Drehung um jede der drei Achsen an. Drehungen werden nach der Reihe ausgeführt. Planen Sie daher eine Drehung zuerst in Hinblick auf die Drehung der x-Achse, dann die der Y-Achse und anschließend die der z-Achse.  
   
- Mithilfe der Modellierungstools können Sie schnell Transformationen erstellen, die jedoch nicht genau sind. Durch Festlegen der Objekteigenschaften, können Sie Transformationen genau allerdings nicht schnell angeben. Es wird empfohlen, die Modellierungstools zu verwenden, um sich so weit wie möglich an die gewünschte Transformationen anzunähern und die Feinabstimmung anschließend über die Eigenschaftswerte vorzunehmen.  
+   Mithilfe der Modellierungstools können Sie schnell Transformationen erstellen, die jedoch nicht genau sind. Durch Festlegen der Objekteigenschaften, können Sie Transformationen genau allerdings nicht schnell angeben. Es wird empfohlen, die Modellierungstools zu verwenden, um sich so weit wie möglich an die gewünschte Transformationen anzunähern und die Feinabstimmung anschließend über die Eigenschaftswerte vorzunehmen.  
   
- Wenn Sie keine Manipulatoren verwenden möchten, können Sie den Freihandform-Modus aktivieren. Klicken Sie zum Aktivieren (oder Deaktivieren) des Freihandform-Modus auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Free-form Manipulation** (Freihandform Manipulation). Im Freihandform-Modus können Sie an jedem Punkt auf der Entwurfsoberfläche mit einer Manipulation beginnen, anstatt an einem Punkt auf dem Manipulator. Im Freihandform-Modus können Sie Änderungen an bestimmten Achsen einschränken, indem Sie diejenigen sperren, die Sie nicht ändern möchten. Klicken Sie auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf eine beliebige Kombination aus den Schaltflächen **LockX**, **LockY** und **LockZ**.  
+   Wenn Sie keine Manipulatoren verwenden möchten, können Sie den Freihandform-Modus aktivieren. Klicken Sie zum Aktivieren (oder Deaktivieren) des Freihandform-Modus auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Free-form Manipulation** (Freihandform Manipulation). Im Freihandform-Modus können Sie an jedem Punkt auf der Entwurfsoberfläche mit einer Manipulation beginnen, anstatt an einem Punkt auf dem Manipulator. Im Freihandform-Modus können Sie Änderungen an bestimmten Achsen einschränken, indem Sie diejenigen sperren, die Sie nicht ändern möchten. Klicken Sie auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf eine beliebige Kombination aus den Schaltflächen **LockX**, **LockY** und **LockZ**.  
   
- Es ist es möglicherweise hilfreich, Objekte zum Arbeiten am Raster auszurichten. Klicken Sie zum Aktivieren (oder Deaktivieren) der Ausrichtung am Raster auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Ausrichten**. Bei aktivierter Ausrichtung am Raster, sind die Transformationenen Verschiebung, Drehung und Skalierung auf vordefinierte Schritte beschränkt.  
+   Es ist es möglicherweise hilfreich, Objekte zum Arbeiten am Raster auszurichten. Klicken Sie zum Aktivieren (oder Deaktivieren) der Ausrichtung am Raster auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Ausrichten**. Bei aktivierter Ausrichtung am Raster, sind die Transformationenen Verschiebung, Drehung und Skalierung auf vordefinierte Schritte beschränkt.  
   
 ### <a name="working-with-the-pivot-point"></a>Arbeiten mit dem Pivotpunkt  
  Der Pivotpunkt eines Objekts definiert seinen Drehungs- und Skalierungsmittelpunkt. Sie können den Pivotpunkt eines Objekts ändern, um die Auswirkungen von Drehungs- und Skalierungstransformationen auf das Objekt zu ändern. Klicken Sie zum Aktivieren (oder Deaktivieren) des Pivotmodus auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Pivot-Modus**. Bei aktiviertem Pivotmodus wird ein kleiner Achsenindikator am Pivotpunkt des ausgewählten Objekts angezeigt. Sie können die Tools **Übersetzung** und **Drehung** anschließend zur Bearbeitung des Pivotpunkts verwenden.  
@@ -191,11 +191,11 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-subdivide-faces"></a>So unterteilen Sie Flächen.  
   
-1.  Wählen Sie im Flächenauswahlmodus die Flächen aus, die Sie unterteilen möchten. Da das Unterteilen neue Randdaten erstellt, erhalten Sie mit einer Unterteilung aller Flächen auf einmal konsistentere Ergebnisse, sofern die Flächen aneinandergrenzen.  
+1. Wählen Sie im Flächenauswahlmodus die Flächen aus, die Sie unterteilen möchten. Da das Unterteilen neue Randdaten erstellt, erhalten Sie mit einer Unterteilung aller Flächen auf einmal konsistentere Ergebnisse, sofern die Flächen aneinandergrenzen.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Unterteilen**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Unterteilen**.  
   
- Sie können Flächen auch triangulieren, Objekte zusammenfügen und ausgewählte Polygone in neue Objekte konvertieren. Triangulation erstellt zusätzliche Ränder, indem Flächen, die nicht dreieckig sind, in die optimale Anzahl von Dreiecken konvertiert werden. Es werden jedoch keine zusätzlichen geometrischen Details bereitgestellt. Zusammenführen kombiniert die ausgewählten Objekte in einem Objekt. Neue Objekte können aus einer Polygon-Auswahl erstellt werden.  
+   Sie können Flächen auch triangulieren, Objekte zusammenfügen und ausgewählte Polygone in neue Objekte konvertieren. Triangulation erstellt zusätzliche Ränder, indem Flächen, die nicht dreieckig sind, in die optimale Anzahl von Dreiecken konvertiert werden. Es werden jedoch keine zusätzlichen geometrischen Details bereitgestellt. Zusammenführen kombiniert die ausgewählten Objekte in einem Objekt. Neue Objekte können aus einer Polygon-Auswahl erstellt werden.  
   
 ##### <a name="to-triangulate-a-face"></a>So triangulieren Sie eine Fläche  
   
@@ -259,13 +259,13 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>So erstellen Sie eine Hierarchie gleichgeordneter Objekte  
   
-1.  Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Ein Platzhalterobjekt wird erstellt und wird zum übergeordneten Objekt.  
+1. Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Ein Platzhalterobjekt wird erstellt und wird zum übergeordneten Objekt.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Gruppe erstellen**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Gruppe erstellen**.  
   
- Der Model-Editor verwendet ein weißes Drahtmodell zur Identifizierung des zuerst ausgewählten Objekts, das zum übergeordneten Element wird. Andere Objekte in der Auswahl werden mit einem blauen Drahtmodell dargestellt. Standardmäßig werden Platzhalterknoten nicht angezeigt. Damit Platzhalterknoten angezeigt werden, klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Show Placeholder Nodes** (Platzhalterknoten anzeigen). Sie können mit Platzhalterknoten genauso arbeiten, wie mit Objekten ohne Platzhalterknoten.  
+   Der Model-Editor verwendet ein weißes Drahtmodell zur Identifizierung des zuerst ausgewählten Objekts, das zum übergeordneten Element wird. Andere Objekte in der Auswahl werden mit einem blauen Drahtmodell dargestellt. Standardmäßig werden Platzhalterknoten nicht angezeigt. Damit Platzhalterknoten angezeigt werden, klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Show Placeholder Nodes** (Platzhalterknoten anzeigen). Sie können mit Platzhalterknoten genauso arbeiten, wie mit Objekten ohne Platzhalterknoten.  
   
- Möchten Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekten entfernen, klicken Sie zunächst auf das untergeordnete Objekt und anschließend auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Detach from Parent** (Übergeordnetes Element entfernen). Sobald Sie das übergeordnete Element vom untergeordneten Objekt trennen, wird das untergeordnete Objekt zu einem Stammobjekt in der Szene.  
+   Möchten Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekten entfernen, klicken Sie zunächst auf das untergeordnete Objekt und anschließend auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Detach from Parent** (Übergeordnetes Element entfernen). Sobald Sie das übergeordnete Element vom untergeordneten Objekt trennen, wird das untergeordnete Objekt zu einem Stammobjekt in der Szene.  
   
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen  
   

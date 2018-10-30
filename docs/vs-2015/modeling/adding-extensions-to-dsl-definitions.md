@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866154"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ DSL-Definition-Erweiterung können Sie ein Paket von Erweiterungen für eine dom
   
  Die zusätzlichen Funktionen können Folgendes umfassen:  
   
--   Eigenschaften für das Modell und die Darstellung von Elementen  
+- Eigenschaften für das Modell und die Darstellung von Elementen  
   
--   Decorators für Formen und Konnektoren  
+- Decorators für Formen und Konnektoren  
   
--   Klassen, Beziehungen, Formen und Konnektoren  
+- Klassen, Beziehungen, Formen und Konnektoren  
   
--   Validierungseinschränkungen  
+- Validierungseinschränkungen  
   
--   Registerkarten und Toolboxelemente  
+- Registerkarten und Toolboxelemente  
   
- Ein Benutzer eine DSL mit der erweiterten erstellen kann, und Speichern eines Modells, das Instanzen der zusätzlichen Features enthält, und diese können gelesen werden, von anderen Benutzern, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.  
+  Ein Benutzer eine DSL mit der erweiterten erstellen kann, und Speichern eines Modells, das Instanzen der zusätzlichen Features enthält, und diese können gelesen werden, von anderen Benutzern, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.  
   
- Beispielcode und Weitere Informationen zu diesem Feature finden Sie in der [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) Website.  
+  Beispielcode und Weitere Informationen zu diesem Feature finden Sie in der [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) Website.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

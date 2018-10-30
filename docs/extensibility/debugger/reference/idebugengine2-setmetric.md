@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Microsoft Docs
+title: IDebugEngine2::SetMetric | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12e323fe248bc022bcbbd8b9bdd0e628c27a97e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02f7d533cfc64ad7a1e3bfd342a2be56a5c6cd7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935951"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Diese Methode legt einen Registrierungswert, der als eine Metrik bezeichnet.  
+Diese Methode wird einen Registrierungswert, der eine Metrik genannt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,13 +46,13 @@ int SetMetric(
  [in] Der metrikname.  
   
  `varValue`  
- [in] Gibt den metrischen Wert.  
+ [in] Gibt den Wert der Metrik.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Metrik ist ein Registrierungswert verwendet, um ein Debugmodul Verhalten zu ändern oder zu kündigen Sie unterstützten Funktionen. Diese Methode kann den Aufruf von der entsprechenden Form der Weiterleiten der [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Funktion `SetMetric`.  
+ Eine Metrik ist ein Registrierungswert verwendet, um einer Debug-Engine-Verhalten zu ändern oder Kündigen Sie die unterstützten Funktionen. Diese Methode kann den Aufruf der geeigneten Form der Weiterleiten der [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Funktion `SetMetric`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

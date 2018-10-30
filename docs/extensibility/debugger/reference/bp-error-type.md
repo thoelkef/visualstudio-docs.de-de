@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: BP_ERROR_TYPE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866336"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Gibt den Fehlertyp eines Haltepunkts an.  
@@ -62,42 +62,42 @@ public enum enum_BP_ERROR_TYPE {
   
 ## <a name="members"></a>Member  
  BPET_NONE  
- Gibt kein Haltepunkt Fehler an.  
+ Gibt keine haltepunktfehler an.  
   
  BPET_TYPE_WARNING  
- Gibt eine Warnung-Stil Haltepunkt Fehler an.  
+ Gibt eine Warnung-Stil haltepunktfehler an.  
   
  BPET_TYPE_ERROR  
  Gibt Fehler Haltepunkt Error-Format an.  
   
  BPET_SEV_HIGH  
- Gibt einen hohen Schweregrad Haltepunkt-Fehler.  
+ Gibt einen mit hohem Schweregrad haltepunktfehler an.  
   
  BPET_SEV_GENERAL  
- Gibt ein mittlerer Schweregrad Haltepunkt Fehler an.  
+ Gibt einen mit mittleren Schweregrad haltepunktfehler an.  
   
  BPET_SEV_LOW  
- Gibt einen Fehler mit niedriger Schweregrad Haltepunkt an.  
+ Gibt einen haltepunktfehler mit niedriger Schweregrad an.  
   
  BPET_TYPE_MASK  
- Gibt eine Maske-Stil Haltepunkt Fehler an.  
+ Gibt eine Maske-Stil haltepunktfehler an.  
   
  BPET_SEV_MASK  
- Gibt einen Haltepunkt Schweregrad-Maske-Style '-Fehler.  
+ Gibt einen haltepunktfehler für Schweregrad-Maske-Style.  
   
  BPET_GENERAL_WARNING  
- Gibt einen Haltepunkt Allgemein-Warnung-Style '-Fehler.  
+ Gibt einen für allgemeine-Warnung-Style-haltepunktfehler.  
   
  BPET_GENERAL_ERROR  
- Gibt einen Haltepunkt Allgemein-Fehler-Style '-Fehler.  
+ Gibt eine allgemeine-Error-Format haltepunktfehler an.  
   
  BPET_ALL  
- Gibt alle Haltepunkt Fehlertypen an.  
+ Gibt alle Haltepunkttypen Fehler an.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Werte können kombiniert werden, mit einem bitweisen `OR` und verwendet für die `dwType` Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur. Übergeben als Parameter an die [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) Methode.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR` und wird verwendet, für die `dwType` Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur. Übergeben als Parameter an die [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) Methode.  
   
- Ein Haltepunkt Fehlertyp besteht aus einem Typ und Schweregrad. Dies bedeutet, dass ein Haltepunkt Fehlertyp nie nur ein Typ ist (z. B. `BPET_TYPE_ERROR`,) oder mit einem Schweregrad (z. B. `BPET_SEV_GENERAL`) selbst. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` Geben Sie vordefinierte Werte für allgemeine Warnungs- und Haltepunkte.  
+ Eine Haltepunkt-Fehlertyp besteht aus einem Typ und einen Schweregrad aus. Dies bedeutet, dass ein Fehler Haltepunkt niemals nur ein Typ ist (z. B. `BPET_TYPE_ERROR`,) oder einen Schweregrad (z. B. `BPET_SEV_GENERAL`) selbst. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` Geben Sie vordefinierte Werte für allgemeine Warnungs- und Haltepunkte.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894468"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -65,10 +65,10 @@ Mithilfe der Dropdownfelder können Sie wie folgt navigieren:
 
 Sucht alle Verweise auf das ausgewählte Element in der Projektmappe. Sie können dies verwenden, um mögliche Nebenwirkungen eines umfangreichen Refactorings zu überprüfen oder um auf „toten“ Code zu prüfen. Drücken Sie **F8**, um zwischen den Ergebnissen zu wechseln. Weitere Informationen finden Sie unter [Suchen von Verweisen im Code](finding-references.md).
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **UMSCHALT**+**F12**.
-**Maus**    | Wählen Sie im Kontextmenü **Alle Verweise suchen** aus.
+**Maus** | Wählen Sie im Kontextmenü **Alle Verweise suchen** aus.
 
 ## <a name="reference-highlighting"></a>Markieren von Verweisen
 
@@ -104,37 +104,37 @@ Weitere Informationen zu diesen Befehlen finden Sie im Abschnitt [Code mithilfe 
 
 Mithilfe der „Gehe zu Definition“ gelangen Sie zur Definition des ausgewählten Elements. Weitere Informationen finden Sie unter [„Gehe zu Definition“ und „Definition einsehen“](../ide/go-to-and-peek-definition.md).
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **F12**
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen (neu in Visual Studio 2017, Version 15.4).
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen (neu in Visual Studio 2017, Version 15.4).
 
 ## <a name="peek-definition"></a>Peek-Definition
 
 Mithilfe von „Peek-Definition“ wird die Definition des ausgewählten Elements in einem Fenster angezeigt, ohne dass Ihre aktuelle Position im Code-Editor verlassen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) und [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md).
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **ALT**+**F12**.
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Peek Definition** (Peek-Definition) aus, oder drücken Sie **STRG**, und klicken Sie auf den Typnamen, falls Sie die Option **Definition in der Vorschauansicht öffnen** aktiviert haben.
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Peek Definition** (Peek-Definition) aus, oder drücken Sie **STRG**, und klicken Sie auf den Typnamen, falls Sie die Option **Definition in der Vorschauansicht öffnen** aktiviert haben.
 
 ## <a name="go-to-implementation"></a>Gehe zu Implementierung
 
 Mithilfe von „Zur Implementierung wechseln“ können Sie von einer Basisklasse oder einem Basistyp zu deren bzw. seinen Implementierungen navigieren. Wenn mehrere Implementierungen vorhanden sind, sind sie im Fenster **Ergebnisse der Symbolsuche** aufgelistet:
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **STRG**+**F12**.
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Implementierung** aus
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Implementierung** aus
 
 ## <a name="call-hierarchy"></a>Aufrufhierarchie
 
 Sie können Aufrufe an und aus einer Methode im [Fenster „Aufrufhierarchie“](../ide/reference/call-hierarchy.md) anzeigen:
 
-Eingabe        | Funktion
+Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **STRG**+**K**, **STRG**+**T**.
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Membernamen, und wählen Sie **Aufrufhierarchie anzeigen** aus.
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Membernamen, und wählen Sie **Aufrufhierarchie anzeigen** aus.
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>„Nächste Methode“-Befehl und „Vorherige Methode“-Befehl (Visual Basic)
 

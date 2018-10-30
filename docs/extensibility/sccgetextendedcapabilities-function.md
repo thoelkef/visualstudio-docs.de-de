@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fd4a42b9c94cb2470f6e7dc7b4904aa890e8a6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 94b8ec5b095b30054ca03a1a7acb86ed78e16c23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926513"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities-Funktion
 Diese Funktion gibt die zusätzliche Funktionen, die von das Quellcodeverwaltungs-Plug-in unterstützt werden.  

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950848"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
   
  Eine Vorlage mit mehreren Projekten muss folgende in eine ZIP-Datei komprimierte Elemente enthalten:  
   
--   Eine VSTEMPLATE-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese VSTEMPLATE-Stammdatei enthält die Metadaten, die im Dialogfeld **Neues Projekt** angezeigt werden, und gibt an, wo sich die VSTEMPLATE-Dateien für die Projekte in dieser Vorlage befinden. Die Datei muss sich im Stamm der ZIP-Datei befinden.  
+- Eine VSTEMPLATE-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese VSTEMPLATE-Stammdatei enthält die Metadaten, die im Dialogfeld **Neues Projekt** angezeigt werden, und gibt an, wo sich die VSTEMPLATE-Dateien für die Projekte in dieser Vorlage befinden. Die Datei muss sich im Stamm der ZIP-Datei befinden.  
   
--   Für eine vollständige Projektvorlage sind ein oder mehrere Ordner erforderlich, die die Dateien enthalten. Dies schließt alle Codedateien und eine VSTEMPLATE-Datei für das Projekt ein.  
+- Für eine vollständige Projektvorlage sind ein oder mehrere Ordner erforderlich, die die Dateien enthalten. Dies schließt alle Codedateien und eine VSTEMPLATE-Datei für das Projekt ein.  
   
- Eine ZIP-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte enthält, kann beispielsweise folgende Dateien und Verzeichnisse enthalten:  
+  Eine ZIP-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte enthält, kann beispielsweise folgende Dateien und Verzeichnisse enthalten:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- Die VSTEMPLATE-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:  
+  Die VSTEMPLATE-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:  
   
--   Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Zum Beispiel:  
+- Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Zum Beispiel:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Zum Beispiel:  
+- Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Zum Beispiel:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Vorlagen mit mehreren Projekten verhalten sich anders als normale Vorlagen. Vorlagen mit mehreren Projekten weisen folgende eindeutige Merkmale auf:  
+  Vorlagen mit mehreren Projekten verhalten sich anders als normale Vorlagen. Vorlagen mit mehreren Projekten weisen folgende eindeutige Merkmale auf:  
   
--   Einzelnen Projekten in einer Vorlage mit mehreren Projekten können keine Namen über das Dialogfeld **Neues Projekt** zugewiesen werden. Verwenden Sie stattdessen das `ProjectName`-Attribut des `ProjectTemplateLink`-Elements, um den Namen für jedes Projekt anzugeben. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
+- Einzelnen Projekten in einer Vorlage mit mehreren Projekten können keine Namen über das Dialogfeld **Neues Projekt** zugewiesen werden. Verwenden Sie stattdessen das `ProjectName`-Attribut des `ProjectTemplateLink`-Elements, um den Namen für jedes Projekt anzugeben. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
   
--   Vorlagen mit mehreren Projekten können Projekte enthalten, die in unterschiedlichen Sprachen geschrieben sind. Die gesamte Vorlage kann jedoch nur einer einzigen Kategorie zugeordnet werden, indem das `ProjectType`-Element verwendet wird.  
+- Vorlagen mit mehreren Projekten können Projekte enthalten, die in unterschiedlichen Sprachen geschrieben sind. Die gesamte Vorlage kann jedoch nur einer einzigen Kategorie zugeordnet werden, indem das `ProjectType`-Element verwendet wird.  
   
 ### <a name="to-create-a-multi-project-template"></a>Erstellen einer Vorlage mit mehreren Projekten  
   

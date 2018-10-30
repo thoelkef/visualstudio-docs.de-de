@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917549"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
 #### <a name="to-add-a-reference"></a>So fügen Sie einen Verweis hinzu  
   
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten „Verweise“, und klicken Sie dann auf **Verweis hinzufügen**.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten „Verweise“, und klicken Sie dann auf **Verweis hinzufügen**.  
   
-2.  Geben Sie die hinzuzufügenden Verweise an, und wählen Sie dann die Schaltfläche **OK** aus.  
+2. Geben Sie die hinzuzufügenden Verweise an, und wählen Sie dann die Schaltfläche **OK** aus.  
   
- Der **Verweis-Manager** wird mit den verfügbaren Verweisen nach Gruppe geöffnet. Der Projekttyp bestimmt, welche der folgenden Gruppen angezeigt werden:  
+   Der **Verweis-Manager** wird mit den verfügbaren Verweisen nach Gruppe geöffnet. Der Projekttyp bestimmt, welche der folgenden Gruppen angezeigt werden:  
   
 -   Assemblys, mit den Framework- und Erweiterungsuntergruppen.  
   
@@ -69,29 +69,29 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
  Die Assemblyregisterkarte besteht aus zwei Unterregisterkarten:  
   
-1.  Framework listet alle Assemblys auf, die das Zielframework darstellen.  
+1. Framework listet alle Assemblys auf, die das Zielframework darstellen.  
   
-    -   Angekündigte Assemblys sind im vollständigen Framework und in der Frameworkliste aufgeführt, wenn das Projekt auf ein Profil des Zielframeworks abzielt. Angekündigte Assemblys sind grau, um sie von Assemblys zu unterscheiden, die im Profil des Zielframeworks des Projekts vorhanden sind. Wenn ein Projekt .NET Framework 4-Client als Ziel verwendet, zeigt die Frameworkliste angekündigte Assemblys aus .NET Framework 4 an. Wenn ein Benutzer eine angekündigte Assembly hinzufügt, wird der Benutzer benachrichtigt, dass das Projekt nach dem Schließen des Dialogfelds **Verweis-Manager** wieder auf .NET Framework 4 ausgerichtet und die angekündigte Assembly hinzugefügt wird.  
+   -   Angekündigte Assemblys sind im vollständigen Framework und in der Frameworkliste aufgeführt, wenn das Projekt auf ein Profil des Zielframeworks abzielt. Angekündigte Assemblys sind grau, um sie von Assemblys zu unterscheiden, die im Profil des Zielframeworks des Projekts vorhanden sind. Wenn ein Projekt .NET Framework 4-Client als Ziel verwendet, zeigt die Frameworkliste angekündigte Assemblys aus .NET Framework 4 an. Wenn ein Benutzer eine angekündigte Assembly hinzufügt, wird der Benutzer benachrichtigt, dass das Projekt nach dem Schließen des Dialogfelds **Verweis-Manager** wieder auf .NET Framework 4 ausgerichtet und die angekündigte Assembly hinzugefügt wird.  
   
-    -   Projekte für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte Framework an. Entsprechend listet die Frameworkregisterkarte keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: "Alle Framework-Assemblys sind bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Framework zu durchsuchen. Für Desktopprojekte werden auf der Registerkarte „Framework“ Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.  
+   -   Projekte für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte Framework an. Entsprechend listet die Frameworkregisterkarte keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: "Alle Framework-Assemblys sind bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Framework zu durchsuchen. Für Desktopprojekte werden auf der Registerkarte „Framework“ Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.  
   
-2.  Erweiterungen listen alle Assemblys auf, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.  
+2. Erweiterungen listen alle Assemblys auf, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.  
   
-    -   Erweiterungen werden ausgefüllt, indem die Assemblys aufgelistet werden, die in den folgenden Speicherorten registriert sind:  
+   -   Erweiterungen werden ausgefüllt, indem die Assemblys aufgelistet werden, die in den folgenden Speicherorten registriert sind:  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         Wenn ein Projekt .NET Framework 4 als Ziel auf einem 32-Bit-Computer verwendet, listen die Erweiterungen Assemblys auf, die unter \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\ .NETFramework\v3.5 \AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ und \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ registriert sind.  
+        Wenn ein Projekt .NET Framework 4 als Ziel auf einem 32-Bit-Computer verwendet, listen die Erweiterungen Assemblys auf, die unter \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\ .NETFramework\v3.5 \AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ und \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ registriert sind.  
   
- Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hängt von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version des Projekts ab. Dieser Fall kann unter den folgenden Bedingungen eintreten:  
+   Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hängt von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version des Projekts ab. Dieser Fall kann unter den folgenden Bedingungen eintreten:  
   
 -   Eine Komponente, für die eine aktuelle Version von .NET Framework verwendet wird, ist nicht kompatibel mit einem Projekt, für das eine frühere Version von .NET Framework als Zielversion festgelegt wurde.  
   
@@ -108,35 +108,35 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>So zeigen Sie eine Assembly im Dialogfeld "Verweis hinzufügen" an  
   
--   Verschieben oder kopieren Sie die Assembly in einen der folgenden Speicherorte:  
+- Verschieben oder kopieren Sie die Assembly in einen der folgenden Speicherorte:  
   
-    -   Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)  
+  - Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)  
   
-    -   Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)  
+  - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)  
   
-     \- oder –  
+    \- oder –  
   
--   Legen Sie einen Registrierungsschlüssel fest, der den Speicherort der anzuzeigenden Assemblys angibt:  
+- Legen Sie einen Registrierungsschlüssel fest, der den Speicherort der anzuzeigenden Assemblys angibt:  
   
-     Fügen Sie für ein 32-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel hinzu:  
+   Fügen Sie für ein 32-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel hinzu:  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     Fügen Sie für ein 64-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel in einer 32-Bit-Registrierungsstruktur hinzu:  
+    Fügen Sie für ein 64-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel in einer 32-Bit-Registrierungsstruktur hinzu:  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     *VersionMinimum* ist die niedrigste geltende .NET Framework-Version. Wenn *VersionMinimum* v3.0 ist, gelten in „AssemblyFoldersEx“ angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.  
+    *VersionMinimum* ist die niedrigste geltende .NET Framework-Version. Wenn *VersionMinimum* v3.0 ist, gelten in „AssemblyFoldersEx“ angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.  
   
-     *AssemblyLocation* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. C:\MyAssemblies\\.  
+    *AssemblyLocation* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. C:\MyAssemblies\\.  
   
-     Indem der Registrierungsschlüssel unter dem HKEY_LOCAL_MACHINE-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort von allen Benutzern im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem HKEY_CURRENT_USER-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.  
+    Indem der Registrierungsschlüssel unter dem HKEY_LOCAL_MACHINE-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort von allen Benutzern im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem HKEY_CURRENT_USER-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.  
   
-     Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.NET** angezeigt werden. Stellen Sie andernfalls sicher, dass sich die Assemblys im angegebenen Verzeichnis *AssemblyLocation* befinden, starten Sie Visual Studio neu, und versuchen Sie es noch einmal.  
+    Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.NET** angezeigt werden. Stellen Sie andernfalls sicher, dass sich die Assemblys im angegebenen Verzeichnis *AssemblyLocation* befinden, starten Sie Visual Studio neu, und versuchen Sie es noch einmal.  
   
 ## <a name="com-tab"></a>COM-Registerkarte  
  Die Registerkarte "COM" listet alle COM-Komponenten auf, die für Verweise verfügbar sind. Wenn Sie einer registrierten COM DLL mit einem internen Manifest eine Referenz hinzufügen möchten, müssen Sie die Registrierung der DLL zunächst aufheben. Andernfalls fügt Visual Studio den Assemblyverweis als ActiveX-Steuerelement und nicht als systemeigene DLL hinzu.  
@@ -159,11 +159,11 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
  Sie können eine WinMD-Datei in Visual Studio auf zwei Arten generieren:  
   
--   Von der **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer einen Wert „Projekteigenschaften &#124; Assemblyname“ oder „Projekteigenschaften &#124; Namespace“ eingibt, der nicht mit dem Satz von Namespaces im Projekt zusammenhängt, wenn kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly. Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Desktop-Visual Basic- oder Visual C#-Projekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../includes/win8-md.md)] SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.  
+- Von der **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer einen Wert „Projekteigenschaften &#124; Assemblyname“ oder „Projekteigenschaften &#124; Namespace“ eingibt, der nicht mit dem Satz von Namespaces im Projekt zusammenhängt, wenn kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly. Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Desktop-Visual Basic- oder Visual C#-Projekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../includes/win8-md.md)] SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.  
   
--   Native **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.  
+- Native **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.  
   
- Die Registerkarte "Windows" besteht aus zwei Untergruppen.  
+  Die Registerkarte "Windows" besteht aus zwei Untergruppen.  
   
 ### <a name="core-subgroup"></a>Kernspeicher-Unterregisterkarte  
  Die Untergruppe "Core" listet alle WinMDs (für Windows Runtime-Elemente) im SDK für die jeweilige Windows-Version auf.  

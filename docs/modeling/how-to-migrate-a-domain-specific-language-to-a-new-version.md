@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 25155615090ce627a4bf30a5fd0b54bd913fe2da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939760"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen Sprache migrieren [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] von der Version der [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die mit verteilt wurde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -38,51 +38,51 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
 
 #### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>DSL-Projekte und Projektmappen in Visual Studio 2010 migrieren
 
-1.  Starten Sie das Migrationstool DSL.
+1. Starten Sie das Migrationstool DSL.
 
-    -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:
+   -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:
 
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-2.  Wählen Sie einen Ordner mit Projektmappen und Projekte, die Sie konvertieren möchten.
+2. Wählen Sie einen Ordner mit Projektmappen und Projekte, die Sie konvertieren möchten.
 
-    -   Geben Sie den Pfad in das Feld am oberen Rand des Tools, oder klicken Sie auf **Durchsuchen**.
+   - Geben Sie den Pfad in das Feld am oberen Rand des Tools, oder klicken Sie auf **Durchsuchen**.
 
      Das Migrationstool zeigt eine Struktur von Projekten, die definieren, oder Verwenden von DSLs. Die Struktur enthält jedes Projekt, verwendet der **Microsoft.VisualStudio.Modeling.Sdk** oder **der TextTemplating** Assemblys.
 
-3.  Überprüfen Sie die Struktur von Projekten, und deaktivieren Sie die Projekte, die Sie nicht konvertieren möchten.
+3. Überprüfen Sie die Struktur von Projekten, und deaktivieren Sie die Projekte, die Sie nicht konvertieren möchten.
 
-    -   Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.
+   -   Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.
 
-        > [!NOTE]
-        >  Die Kontrollkästchen, die neben den Ordnernamen angezeigt werden, haben keine Auswirkungen. Erweitern Sie die Ordner, um die Projekte und Lösungen überprüfen.
+       > [!NOTE]
+       >  Die Kontrollkästchen, die neben den Ordnernamen angezeigt werden, haben keine Auswirkungen. Erweitern Sie die Ordner, um die Projekte und Lösungen überprüfen.
 
-4.  Konvertieren Sie die Projekte an.
+4. Konvertieren Sie die Projekte an.
 
-    1.  Klicken Sie auf **konvertieren**.
+   1.  Klicken Sie auf **konvertieren**.
 
-         Vor jede Projektdatei konvertiert wird, wird eine Kopie des _Projekt_**csproj** als gespeicherter _Projekt_**. vs2008.csproj**
+        Vor jede Projektdatei konvertiert wird, wird eine Kopie des _Projekt_**csproj** als gespeicherter _Projekt_**. vs2008.csproj**
 
-         Eine Kopie aller _Lösung_**sln** als gespeicherter _Lösung_**. vs2008.sln**
+        Eine Kopie aller _Lösung_**sln** als gespeicherter _Lösung_**. vs2008.sln**
 
-    2.  Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.
+   2.  Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.
 
-         Fehler werden im Textfenster gemeldet. Darüber hinaus wird der Strukturansicht ein Warnsignal, das auf jedem Knoten, die konvertiert werden konnte. Sie können den Knoten, um weitere Informationen zu diesem Fehler erhalten, klicken.
+        Fehler werden im Textfenster gemeldet. Darüber hinaus wird der Strukturansicht ein Warnsignal, das auf jedem Knoten, die konvertiert werden konnte. Sie können den Knoten, um weitere Informationen zu diesem Fehler erhalten, klicken.
 
-5.  **Alle Vorlagen transformieren** in Lösungen, die erfolgreich enthält Projekte konvertiert.
+5. **Alle Vorlagen transformieren** in Lösungen, die erfolgreich enthält Projekte konvertiert.
 
-    1.  Öffnen Sie die Projektmappe.
+   1.  Öffnen Sie die Projektmappe.
 
-    2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.
+   2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.
 
-        > [!NOTE]
-        >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+       > [!NOTE]
+       >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
 
-6.  Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.
+6. Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.
 
-    -   Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.
+   -   Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.
 
-    -   Testen Sie den Designer.
+   -   Testen Sie den Designer.
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

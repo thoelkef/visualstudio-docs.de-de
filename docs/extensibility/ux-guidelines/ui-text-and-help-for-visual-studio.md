@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842234"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und-Hilfe für Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Benutzeroberflächentext und Terminologie  
@@ -315,15 +315,15 @@ ms.locfileid: "39511782"
   
  Diese Lösung ist vier Annahmen, die Fehler verursachen könnte:  
   
--   Wird das Dialogfeld die Schaltfläche "Hilfe" **IDHELP** (9).  
+- Wird das Dialogfeld die Schaltfläche "Hilfe" **IDHELP** (9).  
   
--   Das Dialogfeld fehlerfrei ist, wenn die Schaltfläche "Hilfe" ausgeblendet wird.  
+- Das Dialogfeld fehlerfrei ist, wenn die Schaltfläche "Hilfe" ausgeblendet wird.  
   
--   Das Dialogfeld ersetzt keine seine Winproc.  
+- Das Dialogfeld ersetzt keine seine Winproc.  
   
--   Das Dialogfeld wird in einem anderen Dialog nicht eingebettet werden.  
+- Das Dialogfeld wird in einem anderen Dialog nicht eingebettet werden.  
   
- Wenn das Dialogfeld befindet sich im Msenv befindet und nicht **VBDialogBoxParam**, untersuchen Sie die Nutzung von **VBDialogBoxParam** vor eigene Handler implementieren.  
+  Wenn das Dialogfeld befindet sich im Msenv befindet und nicht **VBDialogBoxParam**, untersuchen Sie die Nutzung von **VBDialogBoxParam** vor eigene Handler implementieren.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Dialogfelder, die mit anderen Paketen erstellt wurden  
  Sie können Ihre eigene Lösung für Dialogfelder implementieren, die sich außerhalb der Msenv befinden. Erwägen Sie für eine freigegebene Dialogfeldklasse in einem VSPackage verschieben die Schaltfläche mit den in der Titelleiste, oder implementieren einen Handler auf jedem Dialogfeld. Der folgende Code bildet das Grundgerüst einer Implementierung, die Ihnen beim Einstieg helfen:  

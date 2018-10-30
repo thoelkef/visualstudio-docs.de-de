@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868576"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs der Visual Studio-Befehle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
   
 #### <a name="to-locate-a-command-definition"></a>Um eine Befehlsdefinition zu suchen.  
   
-1.  In Visual Studio, öffnen Sie die folgenden Dateien in die *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\ Ordner: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1. In Visual Studio, öffnen Sie die folgenden Dateien in die *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\ Ordner: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     Die meisten Visual Studio-Befehle werden in SharedCmdDef.vsct und ShellCmdDef.vsct definiert. VsDbgCmdUsed.vsct definiert Befehle, die sich an den Debugger zu beziehen und Venusmenu.vsct definiert Befehle, die spezifisch für die Web-Entwicklung sind.  
+    Die meisten Visual Studio-Befehle werden in SharedCmdDef.vsct und ShellCmdDef.vsct definiert. VsDbgCmdUsed.vsct definiert Befehle, die sich an den Debugger zu beziehen und Venusmenu.vsct definiert Befehle, die spezifisch für die Web-Entwicklung sind.  
   
-2.  Wenn der Befehl ein Menüelement ist, notieren Sie den genauen Text des Menüelements. Wenn der Befehl eine Schaltfläche auf einer Symbolleiste ist, beachten Sie den QuickInfo-Text, der angezeigt wird, wenn Sie darauf anhalten.  
+2. Wenn der Befehl ein Menüelement ist, notieren Sie den genauen Text des Menüelements. Wenn der Befehl eine Schaltfläche auf einer Symbolleiste ist, beachten Sie den QuickInfo-Text, der angezeigt wird, wenn Sie darauf anhalten.  
   
-3.  Drücken Sie STRG + F, zum Öffnen der **finden** Dialogfeld.  
+3. Drücken Sie STRG + F, zum Öffnen der **finden** Dialogfeld.  
   
-4.  In der **Suchen nach** Feld, und geben Sie in Schritt 2 den Text, die Sie notiert haben.  
+4. In der **Suchen nach** Feld, und geben Sie in Schritt 2 den Text, die Sie notiert haben.  
   
-5.  Überprüfen Sie, ob **alle geöffneten Dokumente** wird angezeigt, der **Suchen in** Feld.  
+5. Überprüfen Sie, ob **alle geöffneten Dokumente** wird angezeigt, der **Suchen in** Feld.  
   
-6.  Klicken Sie auf die **Weitersuchen** so lange, bis der Text ausgewählt ist, in der `<Strings>` Teil einer [Button-Element](../../extensibility/button-element.md).  
+6. Klicken Sie auf die **Weitersuchen** so lange, bis der Text ausgewählt ist, in der `<Strings>` Teil einer [Button-Element](../../extensibility/button-element.md).  
   
-     Die `<Button>` -Element, das in der Befehl angezeigt wird, wird der Befehlsdefinition.  
+    Die `<Button>` -Element, das in der Befehl angezeigt wird, wird der Befehlsdefinition.  
   
- Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in einem anderen Menü oder Symbolleiste einfügen, durch das Erstellen einer [CommandPlacement-Element](../../extensibility/commandplacement-element.md) verfügt, die über die gleiche `guid` und `id` Werte wie für den Befehl. Weitere Informationen finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in einem anderen Menü oder Symbolleiste einfügen, durch das Erstellen einer [CommandPlacement-Element](../../extensibility/commandplacement-element.md) verfügt, die über die gleiche `guid` und `id` Werte wie für den Befehl. Weitere Informationen finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Sonderfälle  
  In den folgenden Fällen den Menütext oder QuickInfo-Text entspricht möglicherweise nicht exakt neuerungen in der Befehlsdefinition.  

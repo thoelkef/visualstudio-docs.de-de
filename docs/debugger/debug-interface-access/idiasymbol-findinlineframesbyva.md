@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByVA | Microsoft Docs
+title: IDiaSymbol::findInlineFramesByVA | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06f5d4a215db9fa57172ca0cc7646be697a20d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dfaabfe48e3eba7207d38c89096ab8a9fbb9cf59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925590"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
-Ruft eine Enumeration, die einen Client zum iterieren durch alle Inlineframes auf einer bestimmten virtuellen Adresse ("VA" ist) ermöglicht.  
+Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf eine angegebene virtuelle Adresse (VA) ermöglicht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,13 +33,13 @@ HRESULT findInlineFramesByVA (
   
 #### <a name="parameters"></a>Parameter  
  `va`  
- [in] Gibt die Adresse als eine VA.  
+ [in] Gibt die Adresse an, wie eine VA.  
   
  `ppResult`  
- [out] Enthält eine `IDiaEnumSymbols` -Objekt, das die Liste der Bilder enthält, die abgerufen werden.  
+ [out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

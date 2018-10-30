@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892336"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
   
--   Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  
+- Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  
   
--   Erstellen Sie detaillierte Momentaufnahmen des Zustands Ihres App-Speichers.  
+- Erstellen Sie detaillierte Momentaufnahmen des Zustands Ihres App-Speichers.  
   
--   Vergleichen Sie Momentaufnahmen, um die Grundursache von Speicherproblemen zu finden.  
+- Vergleichen Sie Momentaufnahmen, um die Grundursache von Speicherproblemen zu finden.  
   
- In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine universelle Windows XAML-App zu analysieren. Wenn Sie die Speichernutzung in universellen Windows-Apps, die JavaScript und HTML verwenden, analysieren möchten, gehen Sie unter [Analysieren der Speicherauslastung (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine universelle Windows XAML-App zu analysieren. Wenn Sie die Speichernutzung in universellen Windows-Apps, die JavaScript und HTML verwenden, analysieren möchten, gehen Sie unter [Analysieren der Speicherauslastung (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Starten einer Diagnosesitzung zur Speicherauslastung  
   
@@ -76,13 +76,13 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Ansichten der Momentaufnahmen zur Speicherauslastung  
  Die Ansichten der Momentaufnahmen dienen dazu, detaillierte Berichte in neuen Visual Studio-Fenstern zu öffnen. Es gibt zwei zwei Arten von Ansichten:  
   
--   Ein [Momentaufnahmedetailbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
+- Ein [Momentaufnahmedetailbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zeigt die Arten und Instanzen in einer Momentaufnahme.  
   
--   Ein [Momentaufnahmevergleichsbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
+- Ein [Momentaufnahmevergleichsbericht](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) vergleicht die Typen und Instanzen in zwei Momentaufnahmen.  
   
- ![Links Snapshot-Ansicht](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Links Snapshot-Ansicht](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
+  Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
   
 |||  
 |-|-|  

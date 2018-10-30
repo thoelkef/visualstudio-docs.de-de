@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870184"
 ---
 # <a name="command-window"></a>Befehlsfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  In diesem Beispiel ist  
   
--   `Edit.ReplaceInFiles` der Befehl,  
+- `Edit.ReplaceInFiles` der Befehl,  
   
--   `/case` und `/pattern:regex` sind Schalter (eingeleitet mit dem Schrägstrich [/]),  
+- `/case` und `/pattern:regex` sind Schalter (eingeleitet mit dem Schrägstrich [/]),  
   
--   `regex` der Wert des `/pattern`-Schalters (der `/case`-Schalter weist keinen Wert auf), und  
+- `regex` der Wert des `/pattern`-Schalters (der `/case`-Schalter weist keinen Wert auf), und  
   
--   `var[1-3]+` sowie `oldpar` sind Parameter.  
+- `var[1-3]+` sowie `oldpar` sind Parameter.  
   
-    > [!NOTE]
-    >  Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.  
+  > [!NOTE]
+  >  Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.  
   
- Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.  
+  Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.  
   
- Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen: eine kurze Form, bestehend aus einem Buchstaben, und eine lange Form. Mehrere Schalter in kurzer Form können zu einer Gruppe zusammengefasst werden. Beispielsweise kann `/p /g /m` alternativ auch als `/pgm` ausgedrückt werden.  
+  Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen: eine kurze Form, bestehend aus einem Buchstaben, und eine lange Form. Mehrere Schalter in kurzer Form können zu einer Gruppe zusammengefasst werden. Beispielsweise kann `/p /g /m` alternativ auch als `/pgm` ausgedrückt werden.  
   
- Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.  
+  Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.  
   
 ## <a name="escape-characters"></a>Escapezeichen  
  Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter  

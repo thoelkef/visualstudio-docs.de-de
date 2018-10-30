@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
+title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5076c57ecc1a9e550f9daf869e5fe5b52a48eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbd68a17e940a7f0f183b49c8194439fd6c21d92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893455"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-Bestimmt, ob die Funktion bei der die angegebene Debug-Adresse als veraltet angesehen wird.  
+Bestimmt, ob die Funktion an der angegebenen Debug-Adresse als veraltet angesehen wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ int IsFunctionStale(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Die Debug-Adresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle. Diese Adresse muss eine METHOD_ADDRESS sein.  
+ [in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle. Diese Adresse muss es sich um eine METHOD_ADDRESS sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Funktion als veraltet angesehen wird, gibt `S_OK`. Wenn die Funktion nicht veraltet ist, gibt `S_FALSE`.  
+ Gibt zurück, wenn die Funktion als veraltet angesehen wird, `S_OK`. Wenn die Funktion nicht veraltet ist, gibt `S_FALSE`.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  

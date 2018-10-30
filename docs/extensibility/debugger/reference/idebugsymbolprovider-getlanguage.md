@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: IDebugSymbolProvider::GetLanguage | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947952"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Diese Methode ruft die Sprache, die zum Kompilieren des Codes bei der Debug-Adresse verwendet wurde.  
+Diese Methode ruft die Sprache, die zum Kompilieren des Codes an der debugadresse verwendet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,19 +45,19 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Ein Adressobjekt dargestellt durch eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ [in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
  `pguidLanguage`  
- [out] Gibt eine `GUID` , die die Sprache angibt.  
+ [out] Gibt eine `GUID` , der die Sprache angibt.  
   
  `pguidLanguageVendor`  
  [out] Gibt eine `GUID` , die den Compilerhersteller angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Debugging-Modul ruft diese Methode zum Abrufen der Informationen, es muss sich um die richtige ausdrucksauswertung auszuwählen.  
+ Die Debug-Engine ruft diese Methode zum Abrufen der Informationen, die Auswahl die richtigen ausdrucksauswertung erforderlich.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

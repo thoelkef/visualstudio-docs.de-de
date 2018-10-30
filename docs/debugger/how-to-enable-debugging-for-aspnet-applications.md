@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813421"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-apps in Visual Studio
 
@@ -121,29 +121,29 @@ ASP.NET-Projekte verfügen über *"Web.config"* Dateien standardmäßig die beid
   
 3. Stellen Sie sicher, dass die `debug` -Attribut in der `compilation` Element nastaven NA hodnotu `true`. (Wenn die `compilation` Element nicht enthalten. ein `debug` Attribut, fügen Sie es hinzu, und legen Sie ihn auf `true`.) 
   
-  Wenn Sie lokale IIS anstelle des Standardservers von IIS Express verwenden, stellen sicher, dass die `targetFramework` -Attributwert in der `compilation` Element entspricht, das Framework auf dem IIS-Server.
+   Wenn Sie lokale IIS anstelle des Standardservers von IIS Express verwenden, stellen sicher, dass die `targetFramework` -Attributwert in der `compilation` Element entspricht, das Framework auf dem IIS-Server.
   
-  Die `compilation` Element der *"Web.config"* Datei sollte wie im folgenden Beispiel aussehen:
+   Die `compilation` Element der *"Web.config"* Datei sollte wie im folgenden Beispiel aussehen:
 
-  > [!NOTE]
-  > In diesem Beispiel wird eine partielle *"Web.config"* Datei. Befinden sich in der Regel zusätzliche XML-Abschnitte in der `configuration` und `system.web` Elemente, und die `compilation` Element enthalten möglicherweise auch, andere Attribute und Elemente.
+   > [!NOTE]
+   > In diesem Beispiel wird eine partielle *"Web.config"* Datei. Befinden sich in der Regel zusätzliche XML-Abschnitte in der `configuration` und `system.web` Elemente, und die `compilation` Element enthalten möglicherweise auch, andere Attribute und Elemente.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] erkennt automatisch Änderungen an *"Web.config"* -Dateien und die neuen Konfigurationseinstellungen angewendet. Sie müssen den Computer oder den IIS-Server für die Änderungen wirksam werden neu zu starten.  
   
 Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse, mit enthalten *"Web.config"* Dateien in den einzelnen. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Apps erben Konfigurationseinstellungen zur von *"Web.config"* Dateien auf höheren Ebenen im URL-Pfad. Die hierarchische *"Web.config"* -dateieinstellungen gelten für alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] apps, darunter in der Hierarchie. Festlegen einer anderen Konfigurations in eine *"Web.config"* Datei, die sich in der Hierarchie überschreibt die Einstellungen in der Datei höher.  
   
-Wenn Sie angeben, z. B. `debug="true"` in *www.microsoft.com/aaa/web.config*, jede app in der *aaa* Ordner oder in jedem Unterordner von *aaa* erbt von dieser Einstellung werden außer wenn eine dieser Apps über die Einstellung mit eigenem überschreibt *"Web.config"* Datei.  
+Wenn Sie angeben, z. B. `debug="true"` in <em>www.microsoft.com/aaa/web.config</em>, jede app in der *aaa* Ordner oder in jedem Unterordner von *aaa* erbt von dieser Einstellung werden außer wenn eine dieser Apps über die Einstellung mit eigenem überschreibt *"Web.config"* Datei.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Veröffentlichen Sie im Debugmodus, die mit dem Dateisystem
 

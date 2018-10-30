@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284049"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Erste Schritte mit C# und ASP.NET Core in Visual Studio
 
@@ -131,7 +131,7 @@ Diese Lösung verwendet das **Razor Pages**-Entwurfsmuster. Das unterscheidet si
 
 1. Lassen Sie das Browserfenster geöffnet, und kehren Sie zu Visual Studio zurück.
 
-1. Wählen Sie in Visual Studio **About.cshtml** aus. Löschen Sie das Wort _changed_, und fügen Sie an derselben Stelle _file and directory_ ein.
+1. Wählen Sie in Visual Studio **About.cshtml** aus. Löschen Sie das Wort _additional_, und fügen Sie an derselben Stelle _file and directory_ ein.
 
     ![Ändern des Texts in der Datei „About.cshtml“](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wir hoffen, dass Sie etw
 
 ## <a name="see-also"></a>Siehe auch
 
-[Veröffentlichen Ihrer Web-App in Azure App Service mit Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Veröffentlichen Ihrer Web-App in Azure App Service mit Visual Studio](../deployment/quickstart-deploy-to-azure.md)

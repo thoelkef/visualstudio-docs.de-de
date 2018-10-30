@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849880"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
@@ -41,44 +41,44 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/extractinterface-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code – Visual Basic](media/extractinterface-highlight-vb.png)
+       ![Hervorgehobener Code – Visual Basic](media/extractinterface-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+R** und dann **STRG+I**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Schnittstelle extrahieren** aus.
+      - Drücken Sie **STRG+R** und dann **STRG+I**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Schnittstelle extrahieren** aus.
    - **Maus**
-     - Wählen Sie **Bearbeiten > Umgestalten > Schnittstelle extrahieren** aus.
-     - Klicken Sie mit der rechten Maustaste auf den Namen der Klasse, und wählen Sie das Menü **Schnellaktionen und Refactorings** sowie im Popupvorschaufenster **Schnittstelle extrahieren** aus.
+      - Wählen Sie **Bearbeiten > Umgestalten > Schnittstelle extrahieren** aus.
+      - Klicken Sie mit der rechten Maustaste auf den Namen der Klasse, und wählen Sie das Menü **Schnellaktionen und Refactorings** sowie im Popupvorschaufenster **Schnittstelle extrahieren** aus.
 
-1. Geben Sie im angezeigten Dialogfeld **Schnittstelle extrahieren** die erforderlichen Informationen ein:
+3. Geben Sie im angezeigten Dialogfeld **Schnittstelle extrahieren** die erforderlichen Informationen ein:
 
    ![Schnittstelle extrahieren](media/extractinterface-dialog-cs.png)
 
-   | Feld | description |
-   | --- | --- |
+
+   | Feld | Beschreibung  |
+   | - | - |
    | **Name der neuen Schnittstelle** | Der Name der zu erstellenden Schnittstelle. Dies ist standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
    | **Neuer Dateiname** | Der Name der generierten Datei, die die Schnittstelle enthält. Wie beim Namen der Schnittstelle ist dies standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
    | **Öffentliche Member zum Bilden einer Schnittstelle auswählen** | Die in der Schnittstelle zu extrahierenden Elemente. Sie können beliebig viele Elemente auswählen. |
 
-1. Klicken Sie auf **OK**.
+
+4. Klicken Sie auf **OK**.
 
    Die Schnittstelle wird in der Datei mit dem angegebenen Namen erstellt. Darüber hinaus implementiert die ausgewählte Klasse diese Schnittstelle.
 
    - C#:
 
-    ![Resultierende Klasse – C#](media/extractinterface-class-cs.png)
-    ![Resultierende Schnittstelle – C#](media/extractinterface-interface-cs.png)
+      ![Sich ergebende Klasse – C#](media/extractinterface-class-cs.png) ![Sich ergebende Schnittstelle – C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-    ![Resultierende Klasse – Visual Basic](media/extractinterface-class-vb.png)
-    ![Resultierende Schnittstelle – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Sich ergebende Klasse – Visual Basic](media/extractinterface-class-vb.png) ![Sich ergebende Schnittstelle – Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 

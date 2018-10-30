@@ -1,5 +1,5 @@
 ---
-title: Auswahl und Währung, in der IDE | Microsoft Docs
+title: Auswahl und Aktualität in der IDE | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,28 +16,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f71a176d469a5cd71aa377c800516e743eb1cc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840570"
 ---
-# <a name="selection-and-currency-in-the-ide"></a>Auswahl und Währung, in der IDE
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) verwaltet Informationen zu Benutzer ausgewählte Objekte derzeit mit der Auswahl *Kontext*. Bei Auswahlkontext können VSPackages Teil in Währung nachverfolgen auf zwei Arten verwendet werden:  
+# <a name="selection-and-currency-in-the-ide"></a>Auswahl und Aktualität in der IDE
+Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu Benutzer ausgewählte Objekte derzeit mit der Auswahl *Kontext*. Mit Auswahlkontext können VSPackages Teil in der Währung, die nachverfolgung auf zwei Arten ausführen:  
   
--   Durch Weitergabe Währungsinformationen zu den VSPackages der IDE an.  
+-   Verbreiten Sie Informationen zu Währungen finden Informationen zu den VSPackages in der IDE.  
   
--   Durch Überwachen der Benutzer derzeit aktiven Auswahlen in der IDE.  
+-   Durch die Überwachung von derzeit aktiven Auswahl von Benutzern in der IDE.  
   
 ## <a name="selection-context"></a>Auswahlkontext  
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Global der nachverfolgt IDE Währung in einem eigenen globalen Auswahl Context-Objekt. Die folgende Tabelle zeigt die Elemente, aus denen die Auswahlkontext besteht.  
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Global verfolgt des IDE-Währung, in eine eigene globale Auswahl Context-Objekt. Die folgende Tabelle zeigt die Elemente, die den Auswahlkontext bilden.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Aktuelle Hierarchie|In der Regel auf das aktuelle Projekt; eine aktuelle Hierarchie von NULL gibt an, dass die Projektmappe als Ganzes aktuell sind.|  
-|Aktuelle ItemID|Das ausgewählte Element in der aktuellen Hierarchie; Wenn mehrere Optionen auswählen, geben Sie im Projekt sind, können mehrere aktuelle Elemente vorhanden sein.|  
-|Aktuelle `SelectionContainer`|Enthält eine oder mehrere Objekte, die für die Eigenschaften im Eigenschaftenfenster angezeigt werden soll.|  
+|Aktuellen Hierarchie|In der Regel das aktuelle Projekt; eine aktuelle Hierarchie von NULL gibt an, dass die Projektmappe als Ganzes aktuell ist.|  
+|Aktuelle Element-ID|Das ausgewählte Element in der aktuellen Hierarchie Wenn die Mehrfachauswahl in einem Projektfenster sind, können mehrere aktuelle Elemente vorhanden sein.|  
+|Aktuelle `SelectionContainer`|Enthält, die eine oder mehrere Objekte, die für die Eigenschaften im Eigenschaftenfenster angezeigt werden soll.|  
   
  Darüber hinaus behält die Umgebung zwei globale Listen:  
   
@@ -46,25 +46,25 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten En
 -   Eine Liste der derzeit aktiven Elementtypen.  
   
 ### <a name="window-types-and-selection"></a>Fenstertypen und Auswahl  
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Windows in zwei allgemeine Arten organisiert:  
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organisiert Windows in zwei allgemeine Typen:  
   
--   Hierarchy-Datentyp windows  
+- Hierarchy-Datentyp-windows  
   
--   Z. B. Tool-und Dokumentfenster Rahmenfenstern  
+- Frame-Fenster, z. B. Tool-und Dokumentfenster  
   
- Die IDE verfolgt Währung anders für jedes dieser Fenster Typen.  
+  Die IDE verfolgt Währung unterschiedlich für jedes dieser Fenster-Typen.  
   
- Die am häufigsten verwendete Projekttyp Fenster wird im Projektmappen-Explorer, die steuert, die IDE. Ein Projekttyp Fenster nachverfolgt, die globalen Hierarchie und Element-ID des Kontexts globalen Auswahl, und das Fenster benötigt die Auswahl des Benutzers zum Bestimmen der aktuellen Hierarchie. Für Windows Projekttyp, stellt die Umgebung global Service <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, bis die VSPackages können die aktuellen Werte für geöffneten Elemente überwachen. Eigenschaft, die in der Umgebung durchsuchen wird von diesem globalen Dienst gesteuert.  
+  Das am häufigsten verwendete Projekttyp-Fenster wird im Projektmappen-Explorer die steuert, die IDE. Ein Fenster Projekttyp verfolgt nach, die globalen Hierarchie und Element-ID des Kontexts globale Auswahl, und im Fenster auf die Auswahl des Benutzers bestimmen die aktuelle Hierarchie basiert. Projekttyp unter Windows enthält die Umgebung beim globalen Dienst <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, über welche VSPackages können die aktuellen Werte für geöffneten Elemente überwachen. Navigieren in der Umgebung Eigenschaft wird von diesem globalen Dienst gesteuert.  
   
- Rahmenfenster, verwenden die DocObject andererseits, innerhalb des Rahmenfensters SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. sein. Rahmenfenster Nutzung des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. DocObject kann nur die Werte für den Auswahlcontainer push verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, wenn für MDI-untergeordneten Dokumente typisch ist.  
+  Rahmenfenster, verwenden das Objekt auf der anderen Seite in das Rahmenfenster den SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. sein. Frame-Fensters mithilfe des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. Das Objekt kann mithilfe von Push übertragen nur Werte für den Auswahlcontainer, verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, typischerweise für untergeordnete MDI-Dokumente.  
   
 ### <a name="events-and-currency"></a>Ereignisse und Währung  
- Zwei Typen von Ereignissen auftreten, die die Umgebung Konzept Währung beeinflussen:  
+ Zwei Arten von Ereignissen auftreten, die der Umgebung Konzept der Währung beeinflussen:  
   
--   Ereignisse, die auf globaler Ebene weitergegeben werden, und ändern die Fenster Frame Auswahlkontext. Beispiele für diese Art von Ereignis sind ein untergeordnetes MDI-Fenster geöffnet, eine globale Toolfenster geöffnet wird, oder einem Projekttyp Toolfenster geöffnet wird.  
+-   Ereignisse, die auf globaler Ebene weitergegeben werden, und ändern Sie den Auswahlkontext für Fenster-Frames. Beispiele für diese Art von Ereignissen sind ein untergeordnetes MDI-Fenster geöffnet wird, ein globaler Toolfenster geöffnet wird, oder ein Projekttyp-Toolfenster geöffnet wird.  
   
--   Ereignisse, die die Elemente im Fenster Frame Auswahlkontext verfolgt ändern. Beispiele: Ändern der Auswahl in einem DocObject oder Ändern der Auswahl in einem Projekttyp Fenster.  
+-   Ereignisse, die die Elemente, die in den Auswahlkontext für Fenster-Frames wird nachverfolgt, zu ändern. Beispiele: Ändern der Auswahl im DocObject oder Ändern der Auswahl in einem Projekttyp-Fenster.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Auswahl Kontextobjekte](../../extensibility/internals/selection-context-objects.md)   
+ [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)   
  [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md)

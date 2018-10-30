@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819783"
 ---
 # <a name="how-to-debug-injected-code"></a>Gewusst wie: Debuggen von eingefügtem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ HINWEIS]
   
  Die Verwendung von Attributen kann die C++-Programmierung erheblich vereinfachen. Weitere Informationen finden Sie unter [Konzepte](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Einige Attribute werden direkt vom Compiler interpretiert. Andere Attribute fügen Code in den Programmquellcode ein, der anschließend vom Compiler kompiliert wird. Dieser eingefügte Code kann die Programmierung vereinfachen, da weniger Code geschrieben werden muss. Manchmal kann die Anwendung jedoch aufgrund eines Fehlers fehlschlagen, der beim Ausführen von eingefügtem Code auftritt. In diesem Fall möchten Sie den eingefügten Code wahrscheinlich überprüfen. Visual Studio bietet zwei Möglichkeiten, eingefügten Code zu überprüfen:  
   
--   Sehen Sie eingefügten Code in die **Disassembly** Fenster.  
+- Sehen Sie eingefügten Code in die **Disassembly** Fenster.  
   
--   Mithilfe von [/FX](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), Sie können eine zusammengeführte Quelldatei, die ursprüngliche und die eingefügten Code enthält erstellen.  
+- Mithilfe von [/FX](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), Sie können eine zusammengeführte Quelldatei, die ursprüngliche und die eingefügten Code enthält erstellen.  
   
- Die **Disassembly** Fenster werden Assemblysprachanweisungen, die den Quellcode und den mittels Attributen eingefügten Code entsprechen. Darüber hinaus die **Disassembly** Fenster kann die Quellcode-Anmerkung anzeigen.  
+  Die **Disassembly** Fenster werden Assemblysprachanweisungen, die den Quellcode und den mittels Attributen eingefügten Code entsprechen. Darüber hinaus die **Disassembly** Fenster kann die Quellcode-Anmerkung anzeigen.  
   
 ### <a name="to-turn-on-source-annotation"></a>So aktivieren Sie Quellcodeanmerkungen  
   

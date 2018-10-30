@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884913"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,37 +36,37 @@ Jede [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung, die Sie i
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>So schließen eine Datendatei mit Mage.exe  
   
-1.  Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.  
+1. Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.  
   
-     In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.  
+    In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.  
   
-2.  Aktualisieren Sie das Anwendungsmanifest zur Liste der Datendatei an.  
+2. Aktualisieren Sie das Anwendungsmanifest zur Liste der Datendatei an.  
   
-     **Mage – u v1.0.0.0\Application.manifest - FromDirectory v. 1.0.0.0**  
+    **Mage – u v1.0.0.0\Application.manifest - FromDirectory v. 1.0.0.0**  
   
-     Zum Ausführen dieser Aufgabe erneut erstellt die Liste der Dateien im Anwendungsmanifest, und generiert auch automatisch die Hashsignaturen.  
+    Zum Ausführen dieser Aufgabe erneut erstellt die Liste der Dateien im Anwendungsmanifest, und generiert auch automatisch die Hashsignaturen.  
   
-3.  Öffnen Sie das Anwendungsmanifest in Ihrem bevorzugten Text- oder XML-Editor und suchen die `file` -Element für die neu hinzugefügte Datei.  
+3. Öffnen Sie das Anwendungsmanifest in Ihrem bevorzugten Text- oder XML-Editor und suchen die `file` -Element für die neu hinzugefügte Datei.  
   
-     Wenn Sie eine XML-Datei mit dem Namen hinzugefügt `Data.xml`, die Datei wird im folgenden Codebeispiel ähnelt.  
+    Wenn Sie eine XML-Datei mit dem Namen hinzugefügt `Data.xml`, die Datei wird im folgenden Codebeispiel ähnelt.  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Fügen Sie das Attribut `type` für dieses Element, und geben Sie es mit einem Wert von `data`.  
+4. Fügen Sie das Attribut `type` für dieses Element, und geben Sie es mit einem Wert von `data`.  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Melden Sie sich das Anwendungsmanifest erneut mithilfe Ihrer Schlüsselpaar oder ein Zertifikat, und klicken Sie dann signieren Sie das Bereitstellungsmanifest erneut.  
+5. Melden Sie sich das Anwendungsmanifest erneut mithilfe Ihrer Schlüsselpaar oder ein Zertifikat, und klicken Sie dann signieren Sie das Bereitstellungsmanifest erneut.  
   
-     Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
+    Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
   
-     **Mage -s-app-manifest - Cf Cert_file - Pwd-Kennwort**  
+    **Mage -s-app-manifest - Cf Cert_file - Pwd-Kennwort**  
   
-     **Mage – u Bereitstellung manifest Appm - app-manifest**  
+    **Mage – u Bereitstellung manifest Appm - app-manifest**  
   
-     **Mage -s-Bereitstellungsmanifest Cf - Certfile - Pwd-Kennwort**  
+    **Mage -s-Bereitstellungsmanifest Cf - Certfile - Pwd-Kennwort**  
   
-2.  
+6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Eine Datei einschließen, indem Sie MageUI.exe  
   

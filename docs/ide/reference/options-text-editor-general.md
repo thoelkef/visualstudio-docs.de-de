@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830664"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 
@@ -88,7 +88,7 @@ Standardmäßig erkennt der Editor Codierung durch Suchen nach Bytereihenfolge-M
 Wenn diese Option aktiviert ist, wird ein vertikaler Rand am linken Rand des Textbereichs des Editors angezeigt. Sie können auf diesen Rand klicken, um eine ganze Textzeile auszuwählen, oder darauf klicken und ziehen, um aufeinander folgende Textzeilen auszuwählen.
 
 |Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn-Bildschirmabbildung](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff-Bildschirmabbildung](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Indikatorrand

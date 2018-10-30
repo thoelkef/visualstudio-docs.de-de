@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889703"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Dialogfeld „Steuerelementbindung anpassen“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Verwenden der **Steuerelementbindung anpassen** angeben, welche Steuerelemente f
  **Datentyp**  
  Zeigt eine Liste von Typen, die Sie mit Steuerelementen zuordnen:  
   
--   Tabellen, Entitäten und Objekte werden als dargestellt **[List]** Typen.  
+- Tabellen, Entitäten und Objekte werden als dargestellt **[List]** Typen.  
   
--   Spalten oder öffentlichen Eigenschaften der Entitäten und Objekte werden als der eigentliche Datentyp der Spalte oder Eigenschaft in den zugrunde liegenden Datenspeicher dargestellt.  
+- Spalten oder öffentlichen Eigenschaften der Entitäten und Objekte werden als der eigentliche Datentyp der Spalte oder Eigenschaft in den zugrunde liegenden Datenspeicher dargestellt.  
   
--   Objekte mit benutzerdefinierten Formen werden als dargestellt **[andere]**. Wählen Sie beispielsweise, wenn Ihre Anwendung ein benutzerdefiniertes Steuerelement, in dem Daten aus mehr als eine Eigenschaft eines Objekts angezeigt verfügt, die **[andere]** -Datentyp für das Steuerelement.  
+- Objekte mit benutzerdefinierten Formen werden als dargestellt **[andere]**. Wählen Sie beispielsweise, wenn Ihre Anwendung ein benutzerdefiniertes Steuerelement, in dem Daten aus mehr als eine Eigenschaft eines Objekts angezeigt verfügt, die **[andere]** -Datentyp für das Steuerelement.  
   
- **Zugeordneten Steuerelemente**  
- Zeigt eine Liste von Steuerelementen, die einen bestimmten Datentyp zugeordnet werden können. Wenn Sie ein bestimmtes Steuerelement mit dem Datentyp, der im ausgewählten zuordnen möchten die **Datentyp** wählen Sie das entsprechende Kontrollkästchen. Deaktivieren Sie dieses Kontrollkästchen, damit eine Zuordnung zu entfernen. Aktivierte Steuerelemente werden im Kontextmenü angezeigt, durch die **Datenquellen** Fenster für ein Element des Typs der zugeordneten Daten.  
+  **Zugeordneten Steuerelemente**  
+  Zeigt eine Liste von Steuerelementen, die einen bestimmten Datentyp zugeordnet werden können. Wenn Sie ein bestimmtes Steuerelement mit dem Datentyp, der im ausgewählten zuordnen möchten die **Datentyp** wählen Sie das entsprechende Kontrollkästchen. Deaktivieren Sie dieses Kontrollkästchen, damit eine Zuordnung zu entfernen. Aktivierte Steuerelemente werden im Kontextmenü angezeigt, durch die **Datenquellen** Fenster für ein Element des Typs der zugeordneten Daten.  
   
- Sie können Steuerelemente zur Liste hinzufügen, durch Hinzufügen von Steuerelementen, die einen von mehreren Datenbindung-Attributen, enthalten die **Toolbox**. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Sie können Steuerelemente zur Liste hinzufügen, durch Hinzufügen von Steuerelementen, die einen von mehreren Datenbindung-Attributen, enthalten die **Toolbox**. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Standard festlegen**  
- Weist der ausgewählte Steuerelementtyp der Standardwert für Elemente des ausgewählten Datentyps sein. Das standardmäßige Steuerelement angezeigt wird, als die erste Option im Kontextmenü angezeigt, durch die **Datenquellen** Fenster für ein Element. Als Standard für einen Datentyp kann nur ein Steuerelement-Typ zugewiesen werden.  
+  **Standard festlegen**  
+  Weist der ausgewählte Steuerelementtyp der Standardwert für Elemente des ausgewählten Datentyps sein. Das standardmäßige Steuerelement angezeigt wird, als die erste Option im Kontextmenü angezeigt, durch die **Datenquellen** Fenster für ein Element. Als Standard für einen Datentyp kann nur ein Steuerelement-Typ zugewiesen werden.  
   
- **Standard löschen**  
- Entfernt die Bezeichnung eines Steuerelements als Standard für den ausgewählten Datentyp. Wenn es keinen Standardwert für den ausgewählten Datentyp gibt **[keine]** wird als erste Auswahl im Kontextmenü angezeigt, die von der **Datenquellen** Fenster für ein Element des zugeordneten Typs.  
+  **Standard löschen**  
+  Entfernt die Bezeichnung eines Steuerelements als Standard für den ausgewählten Datentyp. Wenn es keinen Standardwert für den ausgewählten Datentyp gibt **[keine]** wird als erste Auswahl im Kontextmenü angezeigt, die von der **Datenquellen** Fenster für ein Element des zugeordneten Typs.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Datenquellenfenster](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

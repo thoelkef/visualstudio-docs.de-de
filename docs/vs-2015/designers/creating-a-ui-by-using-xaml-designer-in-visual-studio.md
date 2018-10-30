@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937888"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 ## <a name="document-outline-window"></a>Fenster Dokumentgliederung  
  Das Dokumentgliederungsfenster im XAML-Designer unterstützt Sie bei der Ausführung dieser Aufgaben:  
   
--   Anzeigen der hierarchischen Struktur aller Elemente auf der Zeichenfläche.  
+- Anzeigen der hierarchischen Struktur aller Elemente auf der Zeichenfläche.  
   
--   Auswählen von Elementen, sodass Sie diese ändern können (Verschieben der Objekte innerhalb der Hierarchie, Ändern der Objekte auf der Zeichenfläche, Festlegen ihrer Eigenschaften im Eigenschaftenfenster usw.). Weitere Informationen finden Sie unter [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
+- Auswählen von Elementen, sodass Sie diese ändern können (Verschieben der Objekte innerhalb der Hierarchie, Ändern der Objekte auf der Zeichenfläche, Festlegen ihrer Eigenschaften im Eigenschaftenfenster usw.). Weitere Informationen finden Sie unter [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
   
--   Erstellen und Ändern von Vorlagen für Elemente, welche Steuerelemente sind.  
+- Erstellen und Ändern von Vorlagen für Elemente, welche Steuerelemente sind.  
   
--   Verwenden Sie das Kontextmenü für ausgewählte Elemente. Das gleiche Menü ist auch für ausgewählte Elemente auf der Zeichenfläche verfügbar.  
+- Verwenden Sie das Kontextmenü für ausgewählte Elemente. Das gleiche Menü ist auch für ausgewählte Elemente auf der Zeichenfläche verfügbar.  
   
- Wählen Sie zum Anzeigen des Dokumentgliederungsfensters auf der Menüleiste **Ansicht**, **Weitere Fenster**, **Dokumentgliederung**.  
+  Wählen Sie zum Anzeigen des Dokumentgliederungsfensters auf der Menüleiste **Ansicht**, **Weitere Fenster**, **Dokumentgliederung**.  
   
- ![Fenster Dokumentgliederung](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Fenster Dokumentgliederung](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Dies sind die verfügbaren Optionen im Dokumentgliederungsfenster:  
+  Dies sind die verfügbaren Optionen im Dokumentgliederungsfenster:  
   
- **Dokumentgliederung**  
- Die Hauptansicht im Dokumentgliederungsfenster zeigt die Hierarchie eines Dokuments in einer Baumstruktur an. Sie können den hierarchischen Charakter der Dokumentgliederung verwenden, um das Dokument mit unterschiedlicher Detailliertheit zu überprüfen und um Elemente einzeln oder in Gruppen zu sperren und auszublenden.  
+  **Dokumentgliederung**  
+  Die Hauptansicht im Dokumentgliederungsfenster zeigt die Hierarchie eines Dokuments in einer Baumstruktur an. Sie können den hierarchischen Charakter der Dokumentgliederung verwenden, um das Dokument mit unterschiedlicher Detailliertheit zu überprüfen und um Elemente einzeln oder in Gruppen zu sperren und auszublenden.  
   
- **Anzeigen/Ausblenden**  
- Zeigt Zeichenflächen-Elemente an, welche Elementen in der Dokumentgliederung entsprechen, oder blendet diese aus. Verwenden Sie die Schaltflächen **Anzeigen/Ausblenden** , die das Symbol eines Auges haben, wenn sie angezeigt werden, oder drücken Sie STRG+H, um Elemente auszublenden und UMSCHALT+STRG+H, um diese anzuzeigen.  
+  **Anzeigen/Ausblenden**  
+  Zeigt Zeichenflächen-Elemente an, welche Elementen in der Dokumentgliederung entsprechen, oder blendet diese aus. Verwenden Sie die Schaltflächen **Anzeigen/Ausblenden** , die das Symbol eines Auges haben, wenn sie angezeigt werden, oder drücken Sie STRG+H, um Elemente auszublenden und UMSCHALT+STRG+H, um diese anzuzeigen.  
   
- **Sperren/Entsperren**  
- Sperrt oder entsperrt Zeichenflächen-Elemente, welche Elementen in der Dokumentgliederung entsprechen. Gesperrte Elemente können nicht geändert werden. Verwenden Sie die Schaltflächen **Sperren/Entsperren** , die beim Sperren ein Vorhängeschlosssymbol anzeigen, oder drücken Sie STRG+L, um Elemente zu sperren, und UMSCHALT+STRG+L, um sie zu entsperren.  
+  **Sperren/Entsperren**  
+  Sperrt oder entsperrt Zeichenflächen-Elemente, welche Elementen in der Dokumentgliederung entsprechen. Gesperrte Elemente können nicht geändert werden. Verwenden Sie die Schaltflächen **Sperren/Entsperren** , die beim Sperren ein Vorhängeschlosssymbol anzeigen, oder drücken Sie STRG+L, um Elemente zu sperren, und UMSCHALT+STRG+L, um sie zu entsperren.  
   
- **Bereich zurücksetzen auf**  
- Die Option oben im Dokumentgliederungsfenster, welche das Symbol einer Nach-Oben-Taste zeigt, gibt die Dokumentgliederung an den vorherigen Bereich zurück. Die Vergrößerung des Bereichs ist nur möglich, wenn Sie sich im Bereich eines Stils oder einer Vorlage befinden.  
+  **Bereich zurücksetzen auf**  
+  Die Option oben im Dokumentgliederungsfenster, welche das Symbol einer Nach-Oben-Taste zeigt, gibt die Dokumentgliederung an den vorherigen Bereich zurück. Die Vergrößerung des Bereichs ist nur möglich, wenn Sie sich im Bereich eines Stils oder einer Vorlage befinden.  
   
 ## <a name="properties-window"></a>Eigenschaftenfenster  
  Mit dem Eigenschaftenfenster können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:  

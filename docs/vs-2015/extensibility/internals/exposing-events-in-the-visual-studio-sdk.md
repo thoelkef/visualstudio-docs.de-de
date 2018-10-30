@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919884"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Verfügbarmachen von Ereignissen im Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195571"
   
  Der folgende Prozess wird erläutert, wie die VSPackage-spezifisches Ereignisse zurückgegeben werden.  
   
-1.  Die Umgebung wird gestartet.  
+1. Die Umgebung wird gestartet.  
   
-2.  Es liest aus der Registrierung alle Wertnamen unter die Automatisierung, AutomationEvents und AutomationProperties Schlüssel von allen VSPackages und speichert diesen Namen in einer Tabelle.  
+2. Es liest aus der Registrierung alle Wertnamen unter die Automatisierung, AutomationEvents und AutomationProperties Schlüssel von allen VSPackages und speichert diesen Namen in einer Tabelle.  
   
-3.  In diesem Beispiel ruft ein automatisierungsbenutzer `DTE.Events.AutomationProjectsEvents` oder `DTE.Events.AutomationProjectItemsEvents`.  
+3. In diesem Beispiel ruft ein automatisierungsbenutzer `DTE.Events.AutomationProjectsEvents` oder `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  Die Umgebung sucht den Zeichenfolgenparameter in der Tabelle und lädt die entsprechende VSPackage.  
+4. Die Umgebung sucht den Zeichenfolgenparameter in der Tabelle und lädt die entsprechende VSPackage.  
   
-5.  Die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode mit dem Namen im Aufruf; in diesem Beispiel AutomationProjectsEvents oder AutomationProjectItemsEvents zu übergeben.  
+5. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode mit dem Namen im Aufruf; in diesem Beispiel AutomationProjectsEvents oder AutomationProjectItemsEvents zu übergeben.  
   
-6.  Das VSPackage erstellt ein Stammobjekt, das Methoden, z. B. verfügt `get_AutomationProjectsEvents` und `get_AutomationProjectItemEvents` und gibt dann einen IDispatch-Zeiger auf das Objekt zurück.  
+6. Das VSPackage erstellt ein Stammobjekt, das Methoden, z. B. verfügt `get_AutomationProjectsEvents` und `get_AutomationProjectItemEvents` und gibt dann einen IDispatch-Zeiger auf das Objekt zurück.  
   
-7.  Die Umgebung Ruft die entsprechende Methode, die anhand des Namens in das Automation-Aufruf übergeben.  
+7. Die Umgebung Ruft die entsprechende Methode, die anhand des Namens in das Automation-Aufruf übergeben.  
   
-8.  Die `get_` Methode erstellt ein anderes IDispatch-basierte-Ereignisobjekt, das implementiert die `IConnectionPointContainer` Schnittstelle und die `IConnectionPoint` -Schnittstelle und gibt eine IDispatchpointer auf das Objekt zurück.  
+8. Die `get_` Methode erstellt ein anderes IDispatch-basierte-Ereignisobjekt, das implementiert die `IConnectionPointContainer` Schnittstelle und die `IConnectionPoint` -Schnittstelle und gibt eine IDispatchpointer auf das Objekt zurück.  
   
- Um ein Ereignis verfügbar zu machen, mithilfe der Automatisierung, müssen Sie auf Antworten <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> und sehen Sie sich für die Zeichenfolgen, die Sie in der Registrierung hinzufügen. Im Beispiel Basic-Projekts sind die Zeichenfolgen "BscProjectsEvents" und "BscProjectItemsEvents".  
+   Um ein Ereignis verfügbar zu machen, mithilfe der Automatisierung, müssen Sie auf Antworten <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> und sehen Sie sich für die Zeichenfolgen, die Sie in der Registrierung hinzufügen. Im Beispiel Basic-Projekts sind die Zeichenfolgen "BscProjectsEvents" und "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Registrierungseinträge aus dem Basisprojekt-Beispiel  
  Dieser Abschnitt zeigt, wo Sie Automation Ereigniswerte zur Registrierung hinzuzufügen.  

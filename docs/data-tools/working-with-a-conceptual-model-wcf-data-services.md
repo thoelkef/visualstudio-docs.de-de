@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862970"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten Sie mit einem konzeptionellen Modell (WCF Data Services)
 
@@ -27,10 +27,11 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
  Sie können konzeptionelle Modelle für WCF Data Services-Anwendungen verwenden. In den folgenden Themen wird gezeigt, wie Daten über ein konzeptionelles Modell abgefragt werden.
 
-|Thema|Beschreibung|
-|-----------|-----------------|
-|[Gewusst wie: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird.|
-|[Gewusst wie: Projizieren von Abfrageergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird.|
+
+| Thema | Beschreibung |
+| - | - |
+| [Gewusst wie: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird. |
+| [Gewusst wie: Projizieren von Abfrageergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird. |
 
  Wenn Sie ein konzeptionelles Modell verwenden, können Sie definieren, welche Art von Daten in der Sprache für Ihre Domäne gültig ist. Sie können gültige Daten im Modell definieren, oder Sie können Vorgängen, die für eine Entität oder einen Datendienst ausgeführt werden, Validierung hinzufügen.
 

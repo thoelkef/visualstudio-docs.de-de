@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940579"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Just-In-Time-Debuggen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Die Aktionen, die Sie abwartet, wenn Sie sehen, dass die Visual Studio Just-in-T
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>So aktivieren oder deaktivieren Sie Just-In-Time-Debuggen  
   
-1.  Öffnen Sie Visual Studio. Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Öffnen Sie Visual Studio. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  In der **Optionen** wählen Sie im Dialogfeld die **Debuggen** Ordner.  
+2. In der **Optionen** wählen Sie im Dialogfeld die **Debuggen** Ordner.  
   
-3.  In der **Debuggen** Ordner, wählen die **Just-In-Time-** Seite.  
+3. In der **Debuggen** Ordner, wählen die **Just-In-Time-** Seite.  
   
-4.  In der **diese Codetypen aktivieren von Just-in-Time-Debuggen** Feld aktivieren bzw. deaktivieren Sie die gewünschten Programmtypen: **verwaltete**, **Native**, oder **Skript**.  
+4. In der **diese Codetypen aktivieren von Just-in-Time-Debuggen** Feld aktivieren bzw. deaktivieren Sie die gewünschten Programmtypen: **verwaltete**, **Native**, oder **Skript**.  
   
-     Nach dem Aktivieren von Just-In-Time-Debuggen müssen Sie über Administratorrechte verfügen, um es wieder zu deaktivieren. Beim Aktivieren von Just-In-Time-Debuggen wird ein Registrierungsschlüssel festgelegt, und zum Ändern dieses Schlüssels sind Administratorrechte erforderlich.  
+    Nach dem Aktivieren von Just-In-Time-Debuggen müssen Sie über Administratorrechte verfügen, um es wieder zu deaktivieren. Beim Aktivieren von Just-In-Time-Debuggen wird ein Registrierungsschlüssel festgelegt, und zum Ändern dieses Schlüssels sind Administratorrechte erforderlich.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
- Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual Studio nicht mehr auf dem Computer installiert ist. Wenn Visual Studio nicht installiert ist, können Sie nicht Just-In-Time-Debuggen von Visual Studio deaktivieren **Optionen** Dialogfeld. In diesem Fall können Sie Just-In-Time-Debuggen durch Bearbeiten der Windows-Registrierung deaktivieren.  
+   Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual Studio nicht mehr auf dem Computer installiert ist. Wenn Visual Studio nicht installiert ist, können Sie nicht Just-In-Time-Debuggen von Visual Studio deaktivieren **Optionen** Dialogfeld. In diesem Fall können Sie Just-In-Time-Debuggen durch Bearbeiten der Windows-Registrierung deaktivieren.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>So deaktivieren Sie Just-In-Time-Debuggen durch Bearbeiten der Registrierung  
   

@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 783f3101f567f5fe45a1de24a8dad866ea619a39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848129"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T >-Aktivitätsdesigner
 
-Die <xref:System.Activities.Statements.FlowSwitch%601>-Aktivität ist ein bedingter Knoten, der eine Verzweigung auf der Grundlage von Übereinstimmungskriterien für den Steuerungsverlauf bereitstellt, wenn mehr als zwei alternative Verzweigungen erforderlich sind. Wenn der Steuerungsverlauf nur zwei Pfade erfordert, verwenden Sie stattdessen die <xref:System.Activities.Statements.FlowDecision>-Aktivität.
+Die <xref:System.Activities.Statements.FlowSwitch%601>-Aktivität ist ein bedingter Knoten, der einen Branch auf der Grundlage von Übereinstimmungskriterien für den Steuerungsverlauf bereitstellt, wenn mehr als zwei alternative Branches erforderlich sind. Wenn der Steuerungsverlauf nur zwei Pfade erfordert, verwenden Sie stattdessen die <xref:System.Activities.Statements.FlowDecision>-Aktivität.
 
 ## <a name="the-flowswitcht-activity"></a>Die FlowSwitch\<T >-Aktivität
 
@@ -32,7 +32,7 @@ Die <xref:System.Activities.Statements.FlowSwitch%601> Aktivität enthält eine 
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Verwenden des FlowSwitch\<T >-Aktivitätsdesigner
 
-Die **FlowSwitch\<T >** Aktivitäts-Designer finden Sie in der **Flussdiagramm** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte auf der linken Seite des Workflow-Designers. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
+Die **FlowSwitch\<T >** Aktivitäts-Designer finden Sie der **Flussdiagramm** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** auf der linken Seite des Workflow-Designers. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
 
 Die **FlowSwitch\<T >** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und gelöscht werden, an der Workflow-Designer-Oberfläche innerhalb einer **Flussdiagramm** Aktivitäts-Designer. Verwenden der **Typen auswählen** Fenster, das angezeigt wird, um den Typ angeben (verknüpft ist, im Code mit der <xref:System.Activities.Statements.FlowSwitch%601> durch den generischen Parameter) abgerufen, die aus der Auswertung der <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Diese Prozedur erstellt eine <xref:System.Activities.Statements.FlowSwitch%601> Aktivität mit der Bezeichnung **Switch** innerhalb der <xref:System.Activities.Statements.Flowchart> Aktivität. Die <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> eingegeben werden können, der **Ausdruck** im Feld der **Eigenschaften** Fenster, indem Sie auf, wo der Hinweistext "VB-Ausdruck eingeben".
 
@@ -43,7 +43,7 @@ Bewegen Sie den Mauszeiger über die **FlowSwitch\<T >** Aktivitätsdesigner, da
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.FlowSwitch%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der Designeroberfläche bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Gibt den Ausdruck an, der ausgewertet wird, um zu bestimmen, zu welchem der <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Fälle im Ausführungspfad gewechselt werden soll.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Gibt eine eindeutige Zuordnung von möglichen Ergebnissen an, die durch die Auswertung von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> für einen Satz von <xref:System.Activities.Statements.FlowNode>-Objekten ermittelt wurden.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Gibt die Zuordnung an, wenn das Auswertungsergebnis von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> mit keinem der Werte übereinstimmt, die im <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Objekt enthalten sind.|

@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Microsoft Docs
+title: BPERESI_FIELDS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2280740766e20a048f57e58590cc529d98b85264
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9530e950ddd5dbf75fb10b5391dc658bdf899fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869937"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
-Gibt die Informationen über eine fehlgeschlagene Auflösung eines Haltepunkts abgerufen werden sollen.  
+Gibt die Informationen zu einer fehlerhaften Auflösung eines Haltepunkts abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,29 +52,29 @@ public enum enum_BPERESI_FIELDS {
   
 ## <a name="members"></a>Member  
  PERESI_BPRESLOCATION  
- Initialisieren/verwenden die `bpResLocation` (breakpointposition Auflösung) Feld der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur.  
+ Initialisieren und Verwenden der `bpResLocation` (Position des Haltepunkts Auflösung) Feld der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur.  
   
  BPERESI_PROGRAM  
- Die Initialisierung/verwenden die `pProgram` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `pProgram` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
  BPERESI_THREAD  
- Die Initialisierung/verwenden die `pThread` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `pThread` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
  BPERESI_MESSAGE  
- Die Initialisierung/verwenden die `bstrMessage` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `bstrMessage` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
  BPERESI_TYPE  
- Initialisieren/verwenden die `dwType` (Haltepunkt Type)-Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ Initialisieren und Verwenden der `dwType` (Haltepunkt) Typfeld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
  BPERESI_ALLFIELDS  
- Alle Felder des initialisieren/verwenden die `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ Alle Felder initialisiert und Verwenden der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
 ## <a name="remarks"></a>Hinweise  
- Übergeben als Parameter an die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) Methode, um anzugeben, welche Felder von der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur initialisiert werden, sind.  
+ Übergeben als Parameter an die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) Methode, um die Felder anzugeben der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) sind, dass die Struktur initialisiert werden.  
   
- Diese Werte werden auch verwendet, um anzugeben, welche Felder in der `BP_ERROR_RESOLUTION_INFO` Struktur verwendet und gültig sind, wenn dieser Struktur zurückgegeben wird.  
+ Diese Werte werden auch verwendet, um anzugeben, welche Felder in der `BP_ERROR_RESOLUTION_INFO` -Struktur sind gültig und verwendet, wenn dieser Struktur zurückgegeben wird.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

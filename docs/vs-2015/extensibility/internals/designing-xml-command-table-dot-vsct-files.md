@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839205"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabelle (. VSCT)-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ Eine XML-Befehlstabellen (VSCT) Befehlsdatei beschreibt das Layout und die Darst
 ## <a name="differences-between-ctc-and-vsct-files"></a>Unterschiede zwischen CTC und VSCT-Dateien  
  Die Bedeutung der XML-Tags in einer VSCT-Datei identisch sind als diejenigen, die jetzt CTC-Dateiformat veraltet, ist ihre Implementierung ein wenig anders.  
   
--   Die neue  **\<"extern" >** Tag ist, in denen Sie kompiliert werden, etwa solche für andere .h-Dateien verweisen die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Symbolleiste.  
+- Die neue  **\<"extern" >** Tag ist, in denen Sie kompiliert werden, etwa solche für andere .h-Dateien verweisen die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Symbolleiste.  
   
--   Während der VSCT-Dateien unterstützen die **/ include** -Anweisung, wie CTC-Dateien, es auch über das neue \< **Importieren >** Element. Der Unterschied besteht darin, **/ include** bringt in **alle** die Informationen, aber \< **Importieren >** ermöglicht nur die Namen.  
+- Während der VSCT-Dateien unterstützen die **/ include** -Anweisung, wie CTC-Dateien, es auch über das neue \< **Importieren >** Element. Der Unterschied besteht darin, **/ include** bringt in **alle** die Informationen, aber \< **Importieren >** ermöglicht nur die Namen.  
   
--   Während der CTC-Dateien eine Headerdatei erfordern in der Sie Ihre Präprozessordirektiven definieren, muss eine nicht für die VSCT-Dateien. Ordnen Sie stattdessen die Anweisungen in der Symboltabelle, befindet sich in der  **\<Symbol >** Elemente, die am unteren Rand der VSCT-Datei.  
+- Während der CTC-Dateien eine Headerdatei erfordern in der Sie Ihre Präprozessordirektiven definieren, muss eine nicht für die VSCT-Dateien. Ordnen Sie stattdessen die Anweisungen in der Symboltabelle, befindet sich in der  **\<Symbol >** Elemente, die am unteren Rand der VSCT-Datei.  
   
--   VSCT-Dateien-Funktion eine  **\<Annotation >** -Tag, sodass Sie alle Informationen betten Sie zufrieden sind, z. B. Notizen oder auch Bilder.  
+- VSCT-Dateien-Funktion eine  **\<Annotation >** -Tag, sodass Sie alle Informationen betten Sie zufrieden sind, z. B. Notizen oder auch Bilder.  
   
--   Werte werden als Attribute für das Element gespeichert.  
+- Werte werden als Attribute für das Element gespeichert.  
   
--   Befehlsflags können einzeln gespeichert oder gestapelt werden.  IntelliSense, funktioniert jedoch nicht auf gestapelte Befehlsflags. Weitere Informationen zu Befehlsflags, finden Sie unter den [Commandflag-Element](../../extensibility/command-flag-element.md).  
+- Befehlsflags können einzeln gespeichert oder gestapelt werden.  IntelliSense, funktioniert jedoch nicht auf gestapelte Befehlsflags. Weitere Informationen zu Befehlsflags, finden Sie unter den [Commandflag-Element](../../extensibility/command-flag-element.md).  
   
--   Sie können mehrere Typen, z. B. Split Dropdownlisten, Combos usw. angeben.  
+- Sie können mehrere Typen, z. B. Split Dropdownlisten, Combos usw. angeben.  
   
--   GUIDs werden nicht überprüft.  
+- GUIDs werden nicht überprüft.  
   
--   Jedes Element der Benutzeroberfläche hat eine Zeichenfolge, die den Text darstellt, der dabei angezeigt wird.  
+- Jedes Element der Benutzeroberfläche hat eine Zeichenfolge, die den Text darstellt, der dabei angezeigt wird.  
   
--   Übergeordnete Element ist optional. Wenn nicht angegeben, wird der Wert, der "Gruppe unbekannt" verwendet.  
+- Übergeordnete Element ist optional. Wenn nicht angegeben, wird der Wert, der "Gruppe unbekannt" verwendet.  
   
--   Das Symbol "-Argument ist optional.  
+- Das Symbol "-Argument ist optional.  
   
--   Bereich "Bitmap"--identisch mit einer CTC-Datei, mit dem Unterschied, dass Sie jetzt einen Dateinamen über Href angeben können, die vom Compiler vsct.exe zum Zeitpunkt der Kompilierung herausgezogen werden.  
+- Bereich "Bitmap"--identisch mit einer CTC-Datei, mit dem Unterschied, dass Sie jetzt einen Dateinamen über Href angeben können, die vom Compiler vsct.exe zum Zeitpunkt der Kompilierung herausgezogen werden.  
   
--   "RESID" – die alte Ressourcen-ID der Bitmap verwendet werden kann und weiterhin funktioniert genauso wie in der CTC-Dateien.  
+- "RESID" – die alte Ressourcen-ID der Bitmap verwendet werden kann und weiterhin funktioniert genauso wie in der CTC-Dateien.  
   
--   HRef: eine neue Methode, die Sie einen Namen für die Bitmapressource angeben kann. Es wird davon ausgegangen, dass alle verwendet werden, damit Sie die verwendete Bereich weglassen können. Der Compiler sucht zuerst nach lokaler Ressourcen für die Datei, klicken Sie dann auf net Freigaben, und alle Ressourcen, die vom Schalter/i definiert.  
+- HRef: eine neue Methode, die Sie einen Namen für die Bitmapressource angeben kann. Es wird davon ausgegangen, dass alle verwendet werden, damit Sie die verwendete Bereich weglassen können. Der Compiler sucht zuerst nach lokaler Ressourcen für die Datei, klicken Sie dann auf net Freigaben, und alle Ressourcen, die vom Schalter/i definiert.  
   
--   Tastenzuordnung: Sie müssen nicht mehr an einen Emulator. Wenn Sie angeben, wird der Compiler davon aus, dass der Editor und den Emulator identisch sind.  
+- Tastenzuordnung: Sie müssen nicht mehr an einen Emulator. Wenn Sie angeben, wird der Compiler davon aus, dass der Editor und den Emulator identisch sind.  
   
--   Keychord--wurde gelöscht. Das neue Format ist "Key1" "," Mod1 "," Key2 "," Mod2.  Sie können entweder ein Zeichen, Hexadezimalwert oder VK Konstante angeben.  
+- Keychord--wurde gelöscht. Das neue Format ist "Key1" "," Mod1 "," Key2 "," Mod2.  Sie können entweder ein Zeichen, Hexadezimalwert oder VK Konstante angeben.  
   
- Die neuen Compiler, vsct.exe, kompiliert sowohl CTC-VSCT-Dateien. Der alten ctc.exe-Compiler, jedoch werden weder erkannt noch VSCT-Dateien zu kompilieren.  
+  Die neuen Compiler, vsct.exe, kompiliert sowohl CTC-VSCT-Dateien. Der alten ctc.exe-Compiler, jedoch werden weder erkannt noch VSCT-Dateien zu kompilieren.  
   
- Sie können den Compiler vsct.exe verwenden, um einer vorhandenen CTO-Datei in eine VSCT-Datei zu konvertieren. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Erstellen Sie ein. VSCT-Datei aus einem vorhandenen. CTO-Datei](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Sie können den Compiler vsct.exe verwenden, um einer vorhandenen CTO-Datei in eine VSCT-Datei zu konvertieren. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Erstellen Sie ein. VSCT-Datei aus einem vorhandenen. CTO-Datei](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Die Elemente der VSCT-Datei  
  Die Befehlstabelle weist die folgende Hierarchie und die folgenden Elemente:  

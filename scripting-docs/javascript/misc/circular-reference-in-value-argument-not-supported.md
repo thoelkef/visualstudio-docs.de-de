@@ -1,5 +1,5 @@
 ---
-title: Zirkelverweis in Wertargument nicht unterstützt | Microsoft Docs
+title: Zirkelverweis in Wertargument nicht unterstützt | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949421"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Wert, der ungültig ist. Die `value` Argument, ein Array oder Objekt enthält einen Zirkelverweis.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Entfernen Sie den Zirkelverweis aus dem Argument.  
+-   Entfernen Sie den Zirkelverweis aus dem Argument an.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` enthält einen Verweis auf `mary` und `mary` enthält einen Verweis auf `john`. um den Zirkelverweis zu entfernen, entfernen Sie entweder oder Festlegung der Eigenschaft `brother` aus der `mary` Objekt oder die `sister` Eigenschaft aus der `john` Objekt.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` enthält einen Verweis auf `mary` und `mary` enthält einen Verweis auf `john`. um den zirkulären Verweis zu entfernen, entfernen Sie entweder oder verworfen Eigenschaft `brother` aus der `mary` Objekt oder die `sister` Eigenschaft aus der `john` Objekt.  
   
 ```JavaScript  
 var john = new Object();  

@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Microsoft Docs
+title: ATTACH_REASON | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861617"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Gibt den Grund für das Debugging-Modul (DE) für die Verbindung mit einem Programm Knoten an.  
+Gibt den Grund für die Debug-Engine (DE) Verbindung mit einem Programm-Knoten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,13 +46,13 @@ public enum enum_ATTACH_REASON {
   
 ## <a name="members"></a>Member  
  ATTACH_REASON_AUTO  
- Angefügt werden, da der Prozess derzeit im Debugmodus ausgeführt wird.  
+ Angefügt werden, da der Prozess derzeit im Debugmodus befindet.  
   
  ATTACH_REASON_LAUNCH  
  Angefügt werden, da der Prozess gestartet wurde.  
   
  ATTACH_REASON_USER  
- Aufgrund einer benutzeranforderung anfügen.  
+ Fügen Sie aufgrund einer benutzeranforderung.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Werte werden verwendet, als Parameter an die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) und [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden.  

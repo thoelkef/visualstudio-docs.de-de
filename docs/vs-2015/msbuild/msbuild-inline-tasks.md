@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898615"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,23 +54,23 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Das `UsingTask`-Element im Beispiel besitzt drei Attribute, die die Aufgabe und die Inlineaufgabenfactory beschreiben, die diese kompiliert.  
   
--   Die Aufgabe wird nach dem `TaskName`-Attribut benannt, in diesem Fall `DoNothing`.  
+- Die Aufgabe wird nach dem `TaskName`-Attribut benannt, in diesem Fall `DoNothing`.  
   
--   Nach dem `TaskFactory`-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.  
+- Nach dem `TaskFactory`-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.  
   
--   Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel im globalen Assemblycache (Global Assembly Cache, GAC) befindet.  
+- Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel im globalen Assemblycache (Global Assembly Cache, GAC) befindet.  
   
- Die verbleibenden Elemente der `DoNothing`-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen. Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.  
+  Die verbleibenden Elemente der `DoNothing`-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen. Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.  
   
--   Das `ParameterGroup`-Element ist optional. Bei Angabe werden die Parameter für die Aufgabe deklariert. Weitere Informationen zu Eingabe- und Ausgabeparametern finden Sie weiter unten in diesem Thema unter "Eingabe- und Ausgabeparameter".  
+- Das `ParameterGroup`-Element ist optional. Bei Angabe werden die Parameter für die Aufgabe deklariert. Weitere Informationen zu Eingabe- und Ausgabeparametern finden Sie weiter unten in diesem Thema unter "Eingabe- und Ausgabeparameter".  
   
--   Das `Task`-Element beschreibt und enthält den Quellcode der Aufgabe.  
+- Das `Task`-Element beschreibt und enthält den Quellcode der Aufgabe.  
   
--   Das `Reference`-Element stellt Verweise auf die im Code verwendeten .NET-Assemblys bereit. Dies entspricht dem Hinzufügen eines Verweises auf ein Projekt in Visual Studio. Das `Include`-Attribut gibt den Pfad der Assembly an, auf die verwiesen wird.  
+- Das `Reference`-Element stellt Verweise auf die im Code verwendeten .NET-Assemblys bereit. Dies entspricht dem Hinzufügen eines Verweises auf ein Projekt in Visual Studio. Das `Include`-Attribut gibt den Pfad der Assembly an, auf die verwiesen wird.  
   
--   Das `Using`-Element führt die Namespaces auf, auf die Sie zugreifen möchten. Dies ähnelt der `Using`-Anweisung in Visual C#. Das `Namespace`-Attribut gibt den zu einschließenden Namespace an.  
+- Das `Using`-Element führt die Namespaces auf, auf die Sie zugreifen möchten. Dies ähnelt der `Using`-Anweisung in Visual C#. Das `Namespace`-Attribut gibt den zu einschließenden Namespace an.  
   
- Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineaufgaben können jeder unterstützten .NET CodeDom-Sprache geschrieben werden, z. B. Visual Basic oder Visual C#.  
+  Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineaufgaben können jeder unterstützten .NET CodeDom-Sprache geschrieben werden, z. B. Visual Basic oder Visual C#.  
   
 > [!NOTE]
 >  Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
@@ -82,15 +82,15 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
  Das `Type`-Attribut gibt den Typ von Code im `Code`-Element an.  
   
--   Wenn der Wert von `Type` auf `Class` festgelegt ist, enthält das `Code`-Element Code für eine Klasse, die von der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle abgeleitet wird.  
+- Wenn der Wert von `Type` auf `Class` festgelegt ist, enthält das `Code`-Element Code für eine Klasse, die von der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle abgeleitet wird.  
   
--   Wenn der Wert von `Type` auf `Method` festgelegt ist, wird im Code die `Execute`-Methode der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle überschrieben.  
+- Wenn der Wert von `Type` auf `Method` festgelegt ist, wird im Code die `Execute`-Methode der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle überschrieben.  
   
--   Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.  
+- Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.  
   
- Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.  
+  Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.  
   
- Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
+  Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
   
 > [!NOTE]
 >  Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
@@ -143,13 +143,13 @@ Log.LogError("Hello, world!");
   
  Parameter können ein oder mehrere Attribute besitzen:  
   
--   `Required` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` ist der Parameter erforderlich und muss vor dem Aufrufen der Aufgabe einen Wert erhalten.  
+- `Required` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` ist der Parameter erforderlich und muss vor dem Aufrufen der Aufgabe einen Wert erhalten.  
   
--   `ParameterType` ist ein optionales Attribut, das standardmäßig den Wert `System.String` besitzt. Es kann auf jeden vollqualifizierten Typ festgelegt werden, bei dem es sich um ein Element oder einen Wert handelt und mit System.Convert.ChangeType in und aus einer Zeichenfolge konvertiert werden kann. (Anders gesagt kann jeder Typ an eine und von einer externen Aufgabe übergeben werden.)  
+- `ParameterType` ist ein optionales Attribut, das standardmäßig den Wert `System.String` besitzt. Es kann auf jeden vollqualifizierten Typ festgelegt werden, bei dem es sich um ein Element oder einen Wert handelt und mit System.Convert.ChangeType in und aus einer Zeichenfolge konvertiert werden kann. (Anders gesagt kann jeder Typ an eine und von einer externen Aufgabe übergeben werden.)  
   
--   `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` muss dem Parameter ein Wert zugewiesen werden, bevor die Execute-Methode die Rückgabe ausführt.  
+- `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` muss dem Parameter ein Wert zugewiesen werden, bevor die Execute-Methode die Rückgabe ausführt.  
   
- Ein auf ein Objekt angewendeter  
+  Ein auf ein Objekt angewendeter  
   
 ```  
 <ParameterGroup>  
@@ -161,13 +161,13 @@ Log.LogError("Hello, world!");
   
  definiert die folgenden drei Parameter:  
   
--   `Expression` ist ein erforderlicher Eingabeparameter vom Typ System.String.  
+- `Expression` ist ein erforderlicher Eingabeparameter vom Typ System.String.  
   
--   `Files` ist ein erforderlicher Eingabeparameter für Elementlisten.  
+- `Files` ist ein erforderlicher Eingabeparameter für Elementlisten.  
   
--   `Tally` ist ein Ausgabeparameter vom Typ System.Int32.  
+- `Tally` ist ein Ausgabeparameter vom Typ System.Int32.  
   
- Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.  
+  Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.  
   
 ## <a name="example"></a>Beispiel  
  Mit der folgenden Inlineaufgabe wird jedes Vorkommen eines Tokens in der angegebenen Datei durch den angegebenen Wert ersetzt.  

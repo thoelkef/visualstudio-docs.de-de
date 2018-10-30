@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848786"
 ---
 # <a name="trusted-application-deployment-overview"></a>Übersicht über die vertrauenswürdige Anwendungsbereitstellung
 Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen, die mithilfe der Technologie für die Bereitstellung einer vertrauenswürdigen Anwendung erweiterte Berechtigungen aufweisen.  
@@ -51,21 +51,21 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
  In größeren Organisationen sind Herausgeber und Bereitsteller häufig zwei separate Entitäten:  
   
--   Der Herausgeber ist die Gruppe, die die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung erstellt.  
+- Der Herausgeber ist die Gruppe, die die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung erstellt.  
   
--   Der Bereitsteller ist die Gruppe, in der Regel der IT-Abteilung, die die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung auf Desktopcomputern im Unternehmen verteilt.  
+- Der Bereitsteller ist die Gruppe, in der Regel der IT-Abteilung, die die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung auf Desktopcomputern im Unternehmen verteilt.  
   
 Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauenswürdigen Anwendung zu nutzen:  
   
-1.  Rufen Sie ein Zertifikat für den Herausgeber ab.  
+1. Rufen Sie ein Zertifikat für den Herausgeber ab.  
   
-2.  Fügen Sie den Herausgeber zum Speicher für vertrauenswürdige Herausgeber auf allen Clients hinzu.  
+2. Fügen Sie den Herausgeber zum Speicher für vertrauenswürdige Herausgeber auf allen Clients hinzu.  
   
-3.  Erstellen Sie Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung.  
+3. Erstellen Sie Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung.  
   
-4.  Signieren Sie das Bereitstellungsmanifest mit dem Zertifikat des Herausgebers.  
+4. Signieren Sie das Bereitstellungsmanifest mit dem Zertifikat des Herausgebers.  
   
-5.  Veröffentlichen Sie die Anwendungsbereitstellung auf Clientcomputern.  
+5. Veröffentlichen Sie die Anwendungsbereitstellung auf Clientcomputern.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Rufen Sie ein Zertifikat für den Verleger  
  Digitale Zertifikate sind eine Kernkomponente des Microsoft Authenticode-Authentifizierungs- und Sicherheitssystems. Authenticode ist ein Standardbestandteil des Windows-Betriebssystems. Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen müssen mit einem digitalen Zertifikat signiert werden, unabhängig davon, ob sie Teil einer Bereitstellung einer vertrauenswürdigen Anwendung sind. Eine vollständige Erläuterung der Funktionsweise von Authenticode mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md).  

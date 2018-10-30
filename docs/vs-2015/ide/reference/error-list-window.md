@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873692"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ HINWEIS]
   
  Sie können Apps mithilfe des Fensters **Fehlerliste** schneller entwickeln. Sie können z. B. folgende Aufgaben ausführen:  
   
--   Anzeigen von Fehlern, Warnungen und Meldungen, die beim Bearbeiten und Schreiben von Code ausgegeben werden.  
+- Anzeigen von Fehlern, Warnungen und Meldungen, die beim Bearbeiten und Schreiben von Code ausgegeben werden.  
   
--   Suchen nach Syntaxfehlern, die von IntelliSense erkannt werden.  
+- Suchen nach Syntaxfehlern, die von IntelliSense erkannt werden.  
   
--   Suchen nach Bereitstellungsfehlern, bestimmten Fehlern bei statischer Analyse sowie Fehlern, die bei der Anwendung von Enterprise-Vorlagenrichtinien gefunden werden.  
+- Suchen nach Bereitstellungsfehlern, bestimmten Fehlern bei statischer Analyse sowie Fehlern, die bei der Anwendung von Enterprise-Vorlagenrichtinien gefunden werden.  
   
--   Doppelklicken auf eine beliebige Fehlermeldung, um die Datei, in der das Problem aufgetreten ist, zu öffnen und zur entsprechenden Stelle zu wechseln.  
+- Doppelklicken auf eine beliebige Fehlermeldung, um die Datei, in der das Problem aufgetreten ist, zu öffnen und zur entsprechenden Stelle zu wechseln.  
   
--   Filtern der anzuzeigenden Einträge und der Informationsspalten, die für jeden Eintrag angezeigt werden.  
+- Filtern der anzuzeigenden Einträge und der Informationsspalten, die für jeden Eintrag angezeigt werden.  
   
--   Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.  
+- Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.  
   
- Klicken Sie zum Anzeigen der **Fehlerliste** auf **Anzeigen/Fehlerliste** oder drücken Sie **STRG+\\+E**.  
+  Klicken Sie zum Anzeigen der **Fehlerliste** auf **Anzeigen/Fehlerliste** oder drücken Sie **STRG+\\+E**.  
   
- Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.  
+  Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.  
   
- Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.  
+  Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.  
   
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Klicken Sie zum Ändern der Einstellungen auf **Extras / Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ HINWEIS]
   
  Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:  
   
-1.  **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.  
+1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.  
   
-2.  **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.  
+2. **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.  
   
-    > [!NOTE]
-    >  Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.  
+   > [!NOTE]
+   >  Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.  
   
-3.  **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.  
+3. **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.  
   
- Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des Filters in der Titelleiste **Fehlerliste** angezeigt. Die Schaltflächen **Fehler**, **Warnungen** und **Meldungen** zeigen dann die Anzahl von gefilterten Elementen an, die zusammen mit der Gesamtanzahl von Elementen angezeigt werden. Beispielsweise geben die Schaltflächen x von y Fehler an. Wenn kein Filter angewendet wird, wird auf der Titelleiste nur "Fehlerliste" angezeigt.  
+   Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des Filters in der Titelleiste **Fehlerliste** angezeigt. Die Schaltflächen **Fehler**, **Warnungen** und **Meldungen** zeigen dann die Anzahl von gefilterten Elementen an, die zusammen mit der Gesamtanzahl von Elementen angezeigt werden. Beispielsweise geben die Schaltflächen x von y Fehler an. Wenn kein Filter angewendet wird, wird auf der Titelleiste nur "Fehlerliste" angezeigt.  
   
- Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.  
+   Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.  
   
 ## <a name="search"></a>Suchen  
  Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.  

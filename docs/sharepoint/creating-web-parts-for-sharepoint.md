@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906040"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
   Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern. Webparts sind serverseitige Steuerelemente, die in einer Webpartseite ausgeführt werden. Diese sind die Bausteine der Seiten, die auf einer SharePoint-Website angezeigt werden. Finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -84,25 +84,25 @@ ms.locfileid: "36327215"
 ## <a name="visual-web-part-limitations"></a>Visual Webpart-Einschränkungen
  Ab Visual Studio können Sie visuelle Webparts zu SharePoint-Sandkastenlösungen und -Farmlösungen hinzufügen. Allerdings weisen visuelle Webparts die folgenden Einschränkungen auf:  
   
--   Visuelle Webparts unterstützen keine ersetzbare Parameter. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).  
+- Visuelle Webparts unterstützen keine ersetzbare Parameter. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).  
   
--   Benutzersteuerelemente oder visuelle Webparts können nicht per Drag&Drop in visuelle Webparts verschoben oder in visuelle Webparts kopiert werden. Diese Aktion führt zu Buildfehlern.  
+- Benutzersteuerelemente oder visuelle Webparts können nicht per Drag&Drop in visuelle Webparts verschoben oder in visuelle Webparts kopiert werden. Diese Aktion führt zu Buildfehlern.  
   
--   Visuelle Webparts bieten keine direkte Unterstützung von SharePoint-Servertoken wie $SPUrl. Weitere Informationen finden Sie unter "Token Einschränkungen in visuellen Sandkasten-Webparts" im Thema [Problembehandlung bei SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+- Visuelle Webparts bieten keine direkte Unterstützung von SharePoint-Servertoken wie $SPUrl. Weitere Informationen finden Sie unter "Token Einschränkungen in visuellen Sandkasten-Webparts" im Thema [Problembehandlung bei SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   Visuelle Webparts in einer Sandkastenlösung verursachen gelegentlich den Fehler "Die Sandkasten-Codeausführungsanforderung wurde abgelehnt, weil der Sandkasten-Codeausführungs-Hostdienst zu ausgelastet war, um die Anforderung zu verarbeiten." Weitere Informationen zu diesem Fehler finden Sie unter diesem Beitrag in der [SharePoint Developer-Teamblog](http://go.microsoft.com/fwlink/?LinkId=225932).  
+- Visuelle Webparts in einer Sandkastenlösung verursachen gelegentlich den Fehler "Die Sandkasten-Codeausführungsanforderung wurde abgelehnt, weil der Sandkasten-Codeausführungs-Hostdienst zu ausgelastet war, um die Anforderung zu verarbeiten." Weitere Informationen zu diesem Fehler finden Sie unter diesem Beitrag in der [SharePoint Developer-Teamblog](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   Serverseitiges JavaScript-Debugging wird in Visual Studio nicht unterstützt, clientseitiges JavaScript-Debugging hingegen schon.  
+- Serverseitiges JavaScript-Debugging wird in Visual Studio nicht unterstützt, clientseitiges JavaScript-Debugging hingegen schon.  
   
-     Obwohl Sie einer serverseitigen Markupdatei Inline-JavaScript hinzufügen können, wird das Debuggen nicht für die dem Markup hinzugefügten Haltepunkte unterstützt. Um JavaScript zu debuggen, verweisen Sie auf eine externe JavaScript-Datei in der Markupdatei und legen die Haltepunkte in der JavaScript-Datei fest.  
+   Obwohl Sie einer serverseitigen Markupdatei Inline-JavaScript hinzufügen können, wird das Debuggen nicht für die dem Markup hinzugefügten Haltepunkte unterstützt. Um JavaScript zu debuggen, verweisen Sie auf eine externe JavaScript-Datei in der Markupdatei und legen die Haltepunkte in der JavaScript-Datei fest.  
   
--   Das Debugging von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]Inlinecode muss in der generierten Codedatei statt in der Markupdatei ausgeführt werden.  
+- Das Debugging von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]Inlinecode muss in der generierten Codedatei statt in der Markupdatei ausgeführt werden.  
   
--   Visuelle Webparts unterstützen die Verwendung der `<@ Assembly Src=`-Direktive nicht.  
+- Visuelle Webparts unterstützen die Verwendung der `<@ Assembly Src=`-Anweisung nicht.  
   
--   SharePoint-Websteuerelemente und einige [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Steuerelemente werden in der SharePoint-Sandkastenumgebung nicht unterstützt. Wenn nicht unterstützte Steuerelemente für ein visuelles Webpart in einer Sandkastenlösung verwendet werden, wird der Fehler "Der Typ- oder Namespacename 'Theme' ist im Namespace 'Microsoft.SharePoint.WebControls' nicht vorhanden" angezeigt.  
+- SharePoint-Websteuerelemente und einige [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Steuerelemente werden in der SharePoint-Sandkastenumgebung nicht unterstützt. Wenn nicht unterstützte Steuerelemente für ein visuelles Webpart in einer Sandkastenlösung verwendet werden, wird der Fehler "Der Typ- oder Namespacename 'Theme' ist im Namespace 'Microsoft.SharePoint.WebControls' nicht vorhanden" angezeigt.  
   
- Weitere Informationen zu sandkastenlösungen finden Sie unter [Unterschiede zwischen Sandkasten- und farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+  Weitere Informationen zu sandkastenlösungen finden Sie unter [Unterschiede zwischen Sandkasten- und farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Erstellen Sie im älteren Format SharePoint-basierten Webparts.
  Sie können die Vorlagen in Visual Studio verwenden, um benutzerdefinierte [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]-Webparts für SharePoint zu erstellen. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]-Webparts werden auf Grundlage der [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Webpartinfrastruktur erstellt und werden als Typ für neue Projekte empfohlen.  

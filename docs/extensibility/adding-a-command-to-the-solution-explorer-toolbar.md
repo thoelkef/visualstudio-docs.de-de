@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92f14710646925778cb55f7e6e6d16f456ef496b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ee8ca017cd16b6d56c2e71b474d3f4283aeeb9b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849562"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls auf der Symbolleiste des Projektmappen-Explorer
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche zum Hinzufügen der **Projektmappen-Explorer** Symbolleiste.  
@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
 > [!NOTE]
 >  Verwenden von XML-Command Table (*VSCT*) anstelle der Konfiguration der Befehl-Dateien (*CTC*) Dateien definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl  
@@ -83,41 +83,41 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
   
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Zur Anzeige einer Schaltfläche, wenn ein oder mehrere Projekte geöffnet sind.  
   
-1.  In der `<Buttons>` Abschnitt *ToolbarButtonPackage.vsct*, fügen Sie zwei Befehlsflags hinzu, mit dem vorhandenen `<Button>` Element, das zwischen der `<Strings>` und `<Icons>` Tags.  
+1. In der `<Buttons>` Abschnitt *ToolbarButtonPackage.vsct*, fügen Sie zwei Befehlsflags hinzu, mit dem vorhandenen `<Button>` Element, das zwischen der `<Strings>` und `<Icons>` Tags.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     Die `DefaultInvisible` und `DynamicVisibility` Flags müssen festgelegt werden, also diese Einträge in der `<VisibilityConstraints>` Abschnitt wirksam werden kann.  
+    Die `DefaultInvisible` und `DynamicVisibility` Flags müssen festgelegt werden, also diese Einträge in der `<VisibilityConstraints>` Abschnitt wirksam werden kann.  
   
-2.  Erstellen Sie eine `<VisibilityConstraints>` -Abschnitt, der zwei `<VisibilityItem>` Einträge. Fügen den neuen Abschnitt direkt hinter dem schließenden `</Commands>` Tag.  
+2. Erstellen Sie eine `<VisibilityConstraints>` -Abschnitt, der zwei `<VisibilityItem>` Einträge. Fügen den neuen Abschnitt direkt hinter dem schließenden `</Commands>` Tag.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Jedes Visibility-Element stellt eine Bedingung, unter der die angegebene Schaltfläche angezeigt wird. Um mehrere Bedingungen erfüllt sind, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.  
+    Jedes Visibility-Element stellt eine Bedingung, unter der die angegebene Schaltfläche angezeigt wird. Um mehrere Bedingungen erfüllt sind, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.  
   
-3.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
-     Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche "durchgestrichen".  
+    Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche "durchgestrichen".  
   
-4.  Öffnen Sie jede Lösung, die ein Projekt enthält.  
+4. Öffnen Sie jede Lösung, die ein Projekt enthält.  
   
-     Die Schaltfläche "durchgestrichen" wird auf der Symbolleiste rechts neben der vorhandenen Schaltflächen angezeigt.  
+    Die Schaltfläche "durchgestrichen" wird auf der Symbolleiste rechts neben der vorhandenen Schaltflächen angezeigt.  
   
-5.  Auf der **Datei** Menü klicken Sie auf **Projektmappe schließen**. Die Schaltfläche wird über die Symbolleiste ausgeblendet.  
+5. Auf der **Datei** Menü klicken Sie auf **Projektmappe schließen**. Die Schaltfläche wird über die Symbolleiste ausgeblendet.  
   
- Die Sichtbarkeit der Schaltfläche wird gesteuert, indem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wird. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
+   Die Sichtbarkeit der Schaltfläche wird gesteuert, indem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wird. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

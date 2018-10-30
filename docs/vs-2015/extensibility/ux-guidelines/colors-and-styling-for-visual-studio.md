@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831757"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267409"
 ## <a name="using-color-in-visual-studio"></a>Verwenden von Farbe in Visual Studio  
  In Visual Studio wird die Farbe in erster Linie als ein Tool für die Kommunikation, nicht nur als Dekoration verwendet. Verwenden Sie die Farbe minimal, und reservieren sie für Situationen, in denen Sie möchten:  
   
--   Kommunikation von Bedeutung bzw. den Partner (z. B. Plattform oder Sprache Modifizierer)  
+- Kommunikation von Bedeutung bzw. den Partner (z. B. Plattform oder Sprache Modifizierer)  
   
--   Wecken Sie (z. B., der angibt, einer Änderung des)  
+- Wecken Sie (z. B., der angibt, einer Änderung des)  
   
--   Verbessern Sie Lesbarkeit zu, und geben Sie Orientierungshilfen für die Navigation in der Benutzeroberfläche  
+- Verbessern Sie Lesbarkeit zu, und geben Sie Orientierungshilfen für die Navigation in der Benutzeroberfläche  
   
--   Erhöhen Sie Serverupgrade  
+- Erhöhen Sie Serverupgrade  
   
- Es sind mehrere Optionen zum Zuweisen von Farben für Elemente der Benutzeroberfläche in Visual Studio vorhanden. Manchmal kann es schwierig, in eine Form sein, welche Option Sie aufgefordert werden, verwenden oder wie Sie sie ordnungsgemäß verwenden. In diesem Thema helfen Ihnen:  
+  Es sind mehrere Optionen zum Zuweisen von Farben für Elemente der Benutzeroberfläche in Visual Studio vorhanden. Manchmal kann es schwierig, in eine Form sein, welche Option Sie aufgefordert werden, verwenden oder wie Sie sie ordnungsgemäß verwenden. In diesem Thema helfen Ihnen:  
   
-1.  Erfahren Sie, die verschiedene Dienste und Systeme, die zum Definieren von Farben in Visual Studio verwendet.  
+1. Erfahren Sie, die verschiedene Dienste und Systeme, die zum Definieren von Farben in Visual Studio verwendet.  
   
-2.  Wählen Sie die richtige Option für ein angegebenes Element ein.  
+2. Wählen Sie die richtige Option für ein angegebenes Element ein.  
   
-3.  Ordnungsgemäß verwenden Sie die Option, die Sie ausgewählt haben.  
+3. Ordnungsgemäß verwenden Sie die Option, die Sie ausgewählt haben.  
   
- **Wichtig:** nie hartcodieren Hexadezimal, RGB oder Systemfarben für Ihre UI-Elemente. Nutzung der Dienste ermöglicht Flexibilität bei der Feineinstellung von Hue. Darüber hinaus ohne den Dienst nicht werden designswitching Funktionen von nutzen die [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+   **Wichtig:** nie hartcodieren Hexadezimal, RGB oder Systemfarben für Ihre UI-Elemente. Nutzung der Dienste ermöglicht Flexibilität bei der Feineinstellung von Hue. Darüber hinaus ohne den Dienst nicht werden designswitching Funktionen von nutzen die [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Methoden für die Zuweisung von Farben für Elemente der Visual Studio-Benutzeroberfläche  
  Wählen Sie die Methode, die am besten geeignet ist, um Ihre UI-Elemente.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  Die Methoden implementiert, über [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) müssen die IDE mit bereitstellen:  
   
--   Liste der Elemente in der Kategorie anzeigen  
+- Liste der Elemente in der Kategorie anzeigen  
   
--   Lokalisierbaren Namen für Anzeigeelemente  
+- Lokalisierbaren Namen für Anzeigeelemente  
   
--   Anzeigen von Informationen für jedes Element der Kategorie  
+- Anzeigen von Informationen für jedes Element der Kategorie  
   
- **Hinweis:** jede Kategorie muss mindestens ein Display-Element enthalten.  
+  **Hinweis:** jede Kategorie muss mindestens ein Display-Element enthalten.  
   
- Die IDE verwendet das **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** Schnittstelle, um eine Kombination aus verschiedenen Kategorien zu definieren.  
+  Die IDE verwendet das **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** Schnittstelle, um eine Kombination aus verschiedenen Kategorien zu definieren.  
   
- Die Implementierung bietet die IDE mit:  
+  Die Implementierung bietet die IDE mit:  
   
--   Eine Liste der Kategorien, die einer bestimmten Gruppe bilden  
+- Eine Liste der Kategorien, die einer bestimmten Gruppe bilden  
   
--   Zugriff auf Instanzen der [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) unterstützt jede Kategorie in der Gruppe  
+- Zugriff auf Instanzen der [einer IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) unterstützt jede Kategorie in der Gruppe  
   
--   Lokalisierbare Gruppennamen  
+- Lokalisierbare Gruppennamen  
   
 #### <a name="updating-the-ide"></a>Aktualisieren der IDE  
  Die IDE speichert Informationen über Schriftart-und Farbeinstellungen. Also nach jeder Änderung der Konfiguration IDE-Schriftart und Farbe, um sicherzustellen, dass der Cache auf dem neuesten Stand ist eine bewährte Methode.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  Zu diesem Zweck müssen eine VSPackage ein:  
   
--   **IDE-generierte Ereignisse behandeln** durch die Implementierung der [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) Schnittstelle. Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der Seite "Schriftarten und Farben". Beispielsweise ruft die [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) Methode, wenn eine neue Schriftart ausgewählt ist.  
+- **IDE-generierte Ereignisse behandeln** durch die Implementierung der [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) Schnittstelle. Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der Seite "Schriftarten und Farben". Beispielsweise ruft die [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) Methode, wenn eine neue Schriftart ausgewählt ist.  
   
- **OR**  
+  **OR**  
   
--   **Abrufen die IDE Änderungen**. Dies kann erfolgen über das System implementierter [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) Methode Schriftart und Farbe zu Elementen zu erhalten. Weitere Informationen zu den Schriftart-und farbeinstellungen, finden Sie im MSDN-Artikel [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](https://msdn.microsoft.com/library/bb166382.aspx).  
+- **Abrufen die IDE Änderungen**. Dies kann erfolgen über das System implementierter [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) Methode Schriftart und Farbe zu Elementen zu erhalten. Weitere Informationen zu den Schriftart-und farbeinstellungen, finden Sie im MSDN-Artikel [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](https://msdn.microsoft.com/library/bb166382.aspx).  
   
- **Hinweis:** verwenden, um sicherzustellen, dass die Abfrageergebnisse richtig sind, die [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) Schnittstelle, um zu bestimmen, ob eine Entleerung des Cache und die Updates erforderlich sind, vor dem Aufrufen der Abrufmethoden, der die [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle.  
+  **Hinweis:** verwenden, um sicherzustellen, dass die Abfrageergebnisse richtig sind, die [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) Schnittstelle, um zu bestimmen, ob eine Entleerung des Cache und die Updates erforderlich sind, vor dem Aufrufen der Abrufmethoden, der die [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registrieren benutzerdefinierte Schriftart und Farbe Kategorie ohne Schnittstellen zu implementieren  
  Im folgenden Codebeispiel wird veranschaulicht, registrieren Sie die benutzerdefinierte Schriftart und Farbe, Kategorie ohne Schnittstellen zu implementieren:  

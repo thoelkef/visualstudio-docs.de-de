@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911446"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar zum Visual Studio-Debugger
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Im folgenden sind die Begriffe in der [!INCLUDE[vsprvs](../../../includes/vsprvs
  ausstehender Haltepunkt  
  Stellt eine Abstraktion für Haltepunkte vor, während und nach dem Code ist geladen, und es wird eine Möglichkeit, Haltepunkte zu virtualisieren. Ein ausstehender Haltepunkt:  
   
--   Enthält alle Informationen, die erforderlich sind, einen Haltepunkt für Code in einem oder mehreren Programmen zu binden.  
+- Enthält alle Informationen, die erforderlich sind, einen Haltepunkt für Code in einem oder mehreren Programmen zu binden.  
   
--   Können eine Bindung an mehreren Standorten von Code in einem oder mehreren Programmen.  
+- Können eine Bindung an mehreren Standorten von Code in einem oder mehreren Programmen.  
   
--   Bindet niemals selbst Code.  
+- Bindet niemals selbst Code.  
   
- Jedes Mal Code lädt, alle ausstehenden Haltepunkte in einem Programm werden überprüft, um festzustellen, ob sie binden können. Ein ausstehender Haltepunkt ist dann alle gebundenen Breakpoints enthalten, die gebunden wird.  
+  Jedes Mal Code lädt, alle ausstehenden Haltepunkte in einem Programm werden überprüft, um festzustellen, ob sie binden können. Ein ausstehender Haltepunkt ist dann alle gebundenen Breakpoints enthalten, die gebunden wird.  
   
- process  
- Ein physischer Win32-Prozess. Ein Prozess kann mehrere Programme enthalten. Siehe auch *Programm*.  
+  process  
+  Ein physischer Win32-Prozess. Ein Prozess kann mehrere Programme enthalten. Siehe auch *Programm*.  
   
- Programm  
- Ein einzelner Namespace, die in einer bestimmten Laufzeit-Architektur ausgeführt wird. Siehe auch *Prozess*.  
+  Programm  
+  Ein einzelner Namespace, die in einer bestimmten Laufzeit-Architektur ausgeführt wird. Siehe auch *Prozess*.  
   
- sitzungsbasierter Debug-Manager (SDM)  
- Verwaltet eine beliebige Anzahl von Debug-Engines, die eine beliebige Anzahl von Programmen in mehreren Prozessen auf eine beliebige Anzahl von Computern zu debuggen. Auf der Basisebene ist das SDM ein multiplexer der Debug-Engines. Darüber hinaus bietet das SDM eine einheitliche Ansicht der Debugsitzung der IDE.  
+  sitzungsbasierter Debug-Manager (SDM)  
+  Verwaltet eine beliebige Anzahl von Debug-Engines, die eine beliebige Anzahl von Programmen in mehreren Prozessen auf eine beliebige Anzahl von Computern zu debuggen. Auf der Basisebene ist das SDM ein multiplexer der Debug-Engines. Darüber hinaus bietet das SDM eine einheitliche Ansicht der Debugsitzung der IDE.  
   
- Stapelrahmen  
- Stellt den Status der Berechnung auf einem bestimmten Frame und Maß Aufrufe geschachtelter Funktionen dar.  
+  Stapelrahmen  
+  Stellt den Status der Berechnung auf einem bestimmten Frame und Maß Aufrufe geschachtelter Funktionen dar.  
   
- Thread  
- Das generalisierte Konzept der Anweisung stapelbasierten Ausführung auf mindestens ein Programm.  
+  Thread  
+  Das generalisierte Konzept der Anweisung stapelbasierten Ausführung auf mindestens ein Programm.  
   
- Haltepunkt mit Warnung  
- Eine Abstraktion zum Beschreiben der in ein ausstehender Haltepunkt einer Warnung. Ein Haltepunkt für die Warnung beschreibt einen Grund, warum der ausstehenden Haltepunkt noch nicht an einen Speicherort gebunden wurde. Dies kann sein, dass der Code noch nicht für den Speicherort der ausstehenden Haltepunkt beschrieben oder einem anderen Grund geladen ist.  
+  Haltepunkt mit Warnung  
+  Eine Abstraktion zum Beschreiben der in ein ausstehender Haltepunkt einer Warnung. Ein Haltepunkt für die Warnung beschreibt einen Grund, warum der ausstehenden Haltepunkt noch nicht an einen Speicherort gebunden wurde. Dies kann sein, dass der Code noch nicht für den Speicherort der ausstehenden Haltepunkt beschrieben oder einem anderen Grund geladen ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio Debugger-Erweiterbarkeit](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

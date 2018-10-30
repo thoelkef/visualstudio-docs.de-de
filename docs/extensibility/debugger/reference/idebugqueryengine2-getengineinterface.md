@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
+title: IDebugQueryEngine2::GetEngineInterface | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e171805500322ff97feac0155abf50f32296366
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 735bf7a7d5dfe0ea1c9f4f347e9461cb48ce1e7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909970"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-Ruft eine benutzerdefinierte Debug-Modul (DE)-Schnittstelle ab.  
+Ruft einen benutzerdefinierten Debug-Engine (DE)-Schnittstelle ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int GetEngineInterface(
   
 #### <a name="parameters"></a>Parameter  
  `ppUnk`  
- [out] Gibt eine `IUnknown` Objekt darstellt, das Debugging-Modul (DE), und der andere mit einer bereitgestellten Kompatibilitätsrichtlinie verknüpft sind und gültige Schnittstelle abgefragt werden können (z. B. [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oder [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
+ [out] Gibt eine `IUnknown` Objekt darstellt, die Debug-Engine (DE), und was für eine beliebige andere gültige Schnittstelle mit einer bereitgestellten Kompatibilitätsrichtlinie verknüpften abgefragt werden kann (z. B. [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oder [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die resultierende Schnittstelle sollte mit großer Sorgfalt verwendet werden, da-Aufruf über Schnittstellen, die von dieser Methode abgerufen der Sitzung Debug-Manager die Verarbeitung der Verwaltungsaufwand verringert, und möglicherweise die SDM in einem fehlerhaften Zustand abrufen oder Generieren von Fehlern während des Debuggens.  
+ Die resultierende Schnittstelle sollte mit Vorsicht verwendet werden, da Aufrufen über Schnittstellen, die von dieser Methode abgerufen die sitzungsbasierter Debug-Manager-Verarbeitung umgeht und kann das SDM in einem fehlerhaften Zustand geraten, oder Generieren von Fehlern während des Debuggens zu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   

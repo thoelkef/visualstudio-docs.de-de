@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873668"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ausführen von Komponententests auf UML-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen, dass Sie Komponententests erstellen und diese im Rahmen des normalen Buildprozesses ausführen. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md). Zum Einrichten von Tests für Visual Studio-Modellierungserweiterungen sind einige wichtige Informationen erforderlich. Zusammenfassung:  
   
--   [Das Einrichten eines Komponententests für VSIX-Erweiterungen](#Host)  
+- [Das Einrichten eines Komponententests für VSIX-Erweiterungen](#Host)  
   
-     Ausführen von Tests mit dem VS IDE-Hostadapter Stellen Sie jeder Testmethode `[HostType("VS IDE")]`als Präfix voran. Dieser Hostadapter startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Ihre Tests ausgeführt werden.  
+   Ausführen von Tests mit dem VS IDE-Hostadapter Stellen Sie jeder Testmethode `[HostType("VS IDE")]`als Präfix voran. Dieser Hostadapter startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Ihre Tests ausgeführt werden.  
   
--   [Zugreifen auf DTE und Modellspeicher](#DTE)  
+- [Zugreifen auf DTE und Modellspeicher](#DTE)  
   
-     In der Regel müssen Sie ein Modell und seine Diagramme öffnen und dann während der Testinitialisierung auf `IModelStore` zugreifen.  
+   In der Regel müssen Sie ein Modell und seine Diagramme öffnen und dann während der Testinitialisierung auf `IModelStore` zugreifen.  
   
--   [Öffnen von Modelldiagrammen](#Opening)  
+- [Öffnen von Modelldiagrammen](#Opening)  
   
-     Sie können `EnvDTE.ProjectItem` in und von `IDiagramContext`umwandeln.  
+   Sie können `EnvDTE.ProjectItem` in und von `IDiagramContext`umwandeln.  
   
--   [Durchführen von Änderungen im UI-Thread](#UiThread)  
+- [Durchführen von Änderungen im UI-Thread](#UiThread)  
   
-     Tests, die Änderungen am Modellspeicher vornehmen, müssen im UI-Thread durchgeführt werden. Sie können dazu `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` verwenden.  
+   Tests, die Änderungen am Modellspeicher vornehmen, müssen im UI-Thread durchgeführt werden. Sie können dazu `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` verwenden.  
   
--   [Testen von Befehlen, Gesten und anderen MEF-Komponenten](#MEF)  
+- [Testen von Befehlen, Gesten und anderen MEF-Komponenten](#MEF)  
   
-     Zum Testen von MEF-Komponenten müssen Sie deren importierten Eigenschaften explizit mit Werten verbinden.  
+   Zum Testen von MEF-Komponenten müssen Sie deren importierten Eigenschaften explizit mit Werten verbinden.  
   
- Diese Punkte werden in den folgenden Abschnitten ausgearbeitet.  
+  Diese Punkte werden in den folgenden Abschnitten ausgearbeitet.  
   
- Ein Beispiel einer UML-Erweiterung mit Komponententest finden Sie in der Code-Beispielgalerie unter [UML – Schnelle Eingabe mithilfe von Text](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Ein Beispiel einer UML-Erweiterung mit Komponententest finden Sie in der Code-Beispielgalerie unter [UML – Schnelle Eingabe mithilfe von Text](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Anforderungen  
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

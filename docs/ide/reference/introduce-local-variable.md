@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854902"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Bereitstellen einer lokalen Variable in Visual Studio
 
@@ -36,23 +36,23 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/local-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code in Visual Basic](media/local-highlight-vb.png)
+       ![Hervorgehobener Code in Visual Basic](media/local-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
-     - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-     - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
+      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
 
    ![Vorschau der Aktion zum Bereitstellen eines lokalen Elements](media/local-preview-cs.png)
 
-1. Wählen Sie **Lokales Element für (alle Vorkommen von) „*Ausdruck*“ bereitstellen** im Dropdownmenü aus.
+3. Wählen Sie **Lokales Element für (alle Vorkommen von) „*Ausdruck*“ bereitstellen** im Dropdownmenü aus.
 
    > [!TIP]
    > Klicken Sie im unteren Bereich des Vorschaufensters auf den Link **Vorschau der Änderungen**, um vor einer Auswahl [alle Änderungen anzuzeigen](../../ide/preview-changes.md), die vorgenommen werden.
@@ -61,11 +61,11 @@ Diese Codegenerierung gilt für:
 
    - C#:
 
-      ![Ergebnis der Implementierung einer Schnittstelle in C#](media/local-result-cs.png)
+       ![Ergebnis der Implementierung einer Schnittstelle in C#](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Ergebnis der Implementierung einer Schnittstelle in Visual Basic](media/local-result-vb.png)
+       ![Ergebnis der Implementierung einer Schnittstelle in Visual Basic](media/local-result-vb.png)
 
    > [!NOTE]
    > Sie können die Menüoption **...alle Vorkommen von...** verwenden, um nicht nur den speziell markierten Ausdruck zu ersetzen, sondern jede Instanz des markierten Ausdrucks.

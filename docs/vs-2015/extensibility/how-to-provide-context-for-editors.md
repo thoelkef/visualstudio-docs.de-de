@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845331"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt, oder vor der Fokus sofort der Fokus zu einem Toolfenster verschoben wurde. Sie können die Kontext für einen Editor wie folgt angeben:  
   
-1.  Erstellen Sie eine Kontextsammlung.  
+1. Erstellen Sie eine Kontextsammlung.  
   
-2.  Veröffentlichen Sie die Kontextsammlung auf die Auswahl-Element-ID (SEID).  
+2. Veröffentlichen Sie die Kontextsammlung auf die Auswahl-Element-ID (SEID).  
   
-3.  Behalten Sie den Kontext im Behälter.  
+3. Behalten Sie den Kontext im Behälter.  
   
- Diese Aufgaben fallen unter den folgenden Verfahren. Weitere Informationen zum Bereitstellen von Kontext finden Sie unter **Robuste Programmierung** weiter unten in diesem Thema.  
+   Diese Aufgaben fallen unter den folgenden Verfahren. Weitere Informationen zum Bereitstellen von Kontext finden Sie unter **Robuste Programmierung** weiter unten in diesem Thema.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Um eine Kontextsammlung für einen Editor oder Designer zu erstellen.  
   

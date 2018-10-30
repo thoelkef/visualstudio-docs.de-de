@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897887"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`). Weitere Informationen finden Sie unter [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
@@ -35,7 +35,7 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
 >  Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für angeben der `DBDirect` Methoden erstellt werden. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die keine für eine primäre Schlüsselspalte definiert konfiguriert ist, generiert keine `DBDirect` Methoden.
 
 |TableAdapter-DBDirect-Methode|Beschreibung|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Fügt neue Datensätze in einer Datenbank und ermöglicht es Ihnen, einzelne Spaltenwerte als Methodenparameter übergeben.|
 |`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update` Methode übernimmt die Werte der ursprünglichen und neuen Spalte als Methodenparameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden verwendet, um diesen Datensatz aktualisieren.<br /><br /> Die `TableAdapter.Update` Methode dient auch zum Abstimmen von Änderungen in einem Dataset zurück an die Datenbank mithilfe einer <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, oder ein Array von <xref:System.Data.DataRow>s als Methodenparameter.|
 |`TableAdapter.Delete`|Löscht den vorhandenen Datensätze aus der Datenbank, die basierend auf den ursprünglichen Spaltenwerte als Methodenparameter übergeben.|

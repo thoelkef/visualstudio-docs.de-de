@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812620"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -36,7 +36,7 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstell
 
 1. Erstellen Sie im Projektordner einen App-Ordner mit dem Namen `HelloFlask`. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste zuerst auf das Projekt und anschließend auf **Hinzufügen** > **Neuer Ordner**.
 
-1. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *\_\_init\_\_.py* und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
+2. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *\_\_init\_\_.py* und dem unten gezeigten Inhalt. Durch diese Datei wird die `Flask`-Instanz erstellt, und die App-Ansichten, die im folgenden Schritt erzeugt werden, werden geladen:
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstell
     import HelloFlask.views
     ```
 
-1. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *views.py* und dem unten gezeigten Inhalt. Der Name *views.py* ist wichtig, da Sie `import HelloFlask.views` in *\_\_init\_\_.py* verwendet haben. Wenn die Namen nicht übereinstimmen, wird zur Laufzeit ein Fehler angezeigt.
+3. Erstellen Sie im Ordner *HelloFlask* eine Datei mit dem Namen *views.py* und dem unten gezeigten Inhalt. Der Name *views.py* ist wichtig, da Sie `import HelloFlask.views` in *\_\_init\_\_.py* verwendet haben. Wenn die Namen nicht übereinstimmen, wird zur Laufzeit ein Fehler angezeigt.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstell
 
     Der Code enthält zusätzlich zur Umbenennung der Funktion und der Route in `home` den Code zum Rendern der Seite aus *app.py* und importiert das in *\_\_init\_\_.py* deklarierte `app`-Objekt.
 
-1. Erstellen Sie einen Unterordner mit dem Namen *HelloFlask* in *Templates*. Dieser Ordner bleibt zunächst leer.
+4. Erstellen Sie einen Unterordner mit dem Namen *HelloFlask* in *Templates*. Dieser Ordner bleibt zunächst leer.
 
-1. Benennen Sie im Stammordner des Projekts *app.py* in *runserver.py* um, und stellen Sie sicher, dass der Inhalt dem folgenden Code entspricht:
+5. Benennen Sie im Stammordner des Projekts *app.py* in *runserver.py* um, und stellen Sie sicher, dass der Inhalt dem folgenden Code entspricht:
 
     ```python
     import os
@@ -77,17 +77,17 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstell
 
         app.run(HOST, PORT)
     ```
-1. Die Projektstruktur sollte nun so wie auf dem folgenden Bild aussehen:
+6. Die Projektstruktur sollte nun so wie auf dem folgenden Bild aussehen:
 
     ![Projektstruktur nach der Umgestaltung des Codes](media/flask/step02-project-structure.png)
 
-1. Klicken Sie auf **Debuggen** > **Debuggen starten** (**F5**), oder klicken Sie auf die Schaltfläche **Webserver** in der Symbolleiste, um die App zu starten und einen Browser zu öffnen. Der bei Ihnen aufgerufene Browser kann variieren. Verwenden Sie probeweise sowohl die URL-Route „/“ als auch „/home“.
+7. Klicken Sie auf **Debuggen** > **Debuggen starten** (**F5**), oder klicken Sie auf die Schaltfläche **Webserver** in der Symbolleiste, um die App zu starten und einen Browser zu öffnen. Der bei Ihnen aufgerufene Browser kann variieren. Verwenden Sie probeweise sowohl die URL-Route „/“ als auch „/home“.
 
-1. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Legen Sie beispielsweise einen Haltepunkt für die ersten Zeilen von *runserver.py* und *HelloFlask\__init__.py* und für die Zeile `return "Hello Flask!"` in *views.py* fest. Wenn Sie nun die App neu starten (**Debuggen** > **Neu starten**, **STRG**+**F5** oder über die unten gezeigten Schaltflächen für Symbolleisten), können Sie den Code ausführlich durchlaufen (**F10**) oder von jedem Haltepunkt aus mithilfe von **F5** starten.
+8. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Legen Sie beispielsweise einen Haltepunkt für die ersten Zeilen von *runserver.py* und *HelloFlask\_* init *_.py* und für die Zeile `return "Hello Flask!"` in *views.py* fest. Wenn Sie nun die App neu starten (**Debuggen** > **Neu starten**, **STRG**+**F5** oder über die unten gezeigten Schaltflächen für Symbolleisten), können Sie den Code ausführlich durchlaufen (**F10**) oder von jedem Haltepunkt aus mithilfe von **F5** starten.
 
     ![Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste in Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Beenden Sie die App, wenn Sie fertig sind.
+9. Beenden Sie die App, wenn Sie fertig sind.
 
 ### <a name="commit-to-source-control"></a>Ausführen eines Commits für die Quellcodeverwaltung
 

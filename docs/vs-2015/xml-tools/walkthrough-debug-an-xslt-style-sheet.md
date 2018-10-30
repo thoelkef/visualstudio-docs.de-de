@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887692"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
   
 #### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
   
-1.  Von der **Datei** Startmenü **öffnen**, und klicken Sie auf **Datei**.  
+1. Von der **Datei** Startmenü **öffnen**, und klicken Sie auf **Datei**.  
   
-2.  Suchen Sie die belowAvg.xsl-Datei, und klicken Sie auf **öffnen**.  
+2. Suchen Sie die belowAvg.xsl-Datei, und klicken Sie auf **öffnen**.  
   
-     Im XML-Editor wird das Stylesheet geöffnet.  
+    Im XML-Editor wird das Stylesheet geöffnet.  
   
-3.  Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Eigenschaftenfenster des Dokuments im Feld.  
+3. Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Eigenschaftenfenster des Dokuments im Feld.  
   
-4.  Suchen Sie die Datei "Books.xml", und klicken Sie auf **öffnen**.  
+4. Suchen Sie die Datei "Books.xml", und klicken Sie auf **öffnen**.  
   
-     Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.  
+    Damit legen Sie die Quelldokumentdatei fest, die für die XSLT-Transformation verwendet wird.  
   
-5.  Mit der rechten Maustaste die `xsl:if` Starttag, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.  
+5. Mit der rechten Maustaste die `xsl:if` Starttag, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.  
   
-6.  Klicken Sie auf die **XSLT Debuggen** auf der Symbolleiste des XML-Editor.  
+6. Klicken Sie auf die **XSLT Debuggen** auf der Symbolleiste des XML-Editor.  
   
- Hiermit wird der Debug-Vorgang gestartet, und es werden mehrere neue Fenster geöffnet, die vom Debugger verwendet werden.  
+   Hiermit wird der Debug-Vorgang gestartet, und es werden mehrere neue Fenster geöffnet, die vom Debugger verwendet werden.  
   
- In zwei Fenstern werden Eingabedokument und Stylesheet angezeigt. Der Debugger zeigt in diesen Fenstern den aktuellen Ausführungszustand an. Der Debugger ist im `xsl:if`-Element des Stylesheets und im ersten book-Knoten der Datei books.xml positioniert.  
+   In zwei Fenstern werden Eingabedokument und Stylesheet angezeigt. Der Debugger zeigt in diesen Fenstern den aktuellen Ausführungszustand an. Der Debugger ist im `xsl:if`-Element des Stylesheets und im ersten book-Knoten der Datei books.xml positioniert.  
   
- Im Lokalfenster werden alle lokalen Variablen mit ihren aktuellen Werten angezeigt. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.  
+   Im Lokalfenster werden alle lokalen Variablen mit ihren aktuellen Werten angezeigt. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.  
   
- Die **XSL-Ausgabe** Fenster zeigt die Ausgabe der XSL-Transformation. Dieses Fenster ist unabhängig von der **Ausgabefenster von Visual Studio** Fenster.  
+   Die **XSL-Ausgabe** Fenster zeigt die Ausgabe der XSL-Transformation. Dieses Fenster ist unabhängig von der **Ausgabefenster von Visual Studio** Fenster.  
   
 ## <a name="watch-window"></a>Überwachungsfenster  
   

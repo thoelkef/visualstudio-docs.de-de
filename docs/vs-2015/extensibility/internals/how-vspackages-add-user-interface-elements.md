@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872446"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Hinzufügen von Benutzeroberflächenelementen mit VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, 
 #### <a name="menus"></a>Menüs  
  Jedes Menü wird definiert, wie eine [Menu Element](../../extensibility/menu-element.md) in die `Menus` Abschnitt. Menüs müssen `guid`, `id`, und `priority` Attribute, und ein `Parent` -Element, und auch die folgenden zusätzlichen Attribute und untergeordnete Elemente:  
   
--   Ein `type` Attribut, das angibt, ob Sie im Menü in der IDE als eine Art von Menü oder eine Symbolleiste angezeigt werden soll.  
+- Ein `type` Attribut, das angibt, ob Sie im Menü in der IDE als eine Art von Menü oder eine Symbolleiste angezeigt werden soll.  
   
--   Ein [Strings-Element](../../extensibility/strings-element.md) , enthält eine [ButtonText-Element](../../extensibility/buttontext-element.md), dem gibt den Titel des Menüs an, in der IDE und ein [CommandName-Element](../../extensibility/commandname-element.md), die angibt, dass der Name, ist verwendet die **Befehl** Fenster aus, um das Menü zuzugreifen.  
+- Ein [Strings-Element](../../extensibility/strings-element.md) , enthält eine [ButtonText-Element](../../extensibility/buttontext-element.md), dem gibt den Titel des Menüs an, in der IDE und ein [CommandName-Element](../../extensibility/commandname-element.md), die angibt, dass der Name, ist verwendet die **Befehl** Fenster aus, um das Menü zuzugreifen.  
   
--   Optionale Kennzeichen. Ein [Commandflag-Element](../../extensibility/command-flag-element.md) kann in einem menüdefinition so ändern Sie seine Darstellung oder Verhalten in der IDE angezeigt werden.  
+- Optionale Kennzeichen. Ein [Commandflag-Element](../../extensibility/command-flag-element.md) kann in einem menüdefinition so ändern Sie seine Darstellung oder Verhalten in der IDE angezeigt werden.  
   
- Jede `Menu` Element muss eine Gruppe als übergeordnetes aufweisen, es sei denn, es sich um ein andockbares Element wie z. B. eine Symbolleiste ist. Ein andockbares Menü ist eigenes übergeordnetes Element. Weitere Informationen zu Menüs und Werte für die `type` Attribut, finden Sie unter den [Menu Element](../../extensibility/menu-element.md) Dokumentation.  
+  Jede `Menu` Element muss eine Gruppe als übergeordnetes aufweisen, es sei denn, es sich um ein andockbares Element wie z. B. eine Symbolleiste ist. Ein andockbares Menü ist eigenes übergeordnetes Element. Weitere Informationen zu Menüs und Werte für die `type` Attribut, finden Sie unter den [Menu Element](../../extensibility/menu-element.md) Dokumentation.  
   
- Das folgende Beispiel zeigt eine im angezeigten Menü auf der Menüleiste von Visual Studio neben der **Tools** Menü.  
+  Das folgende Beispiel zeigt eine im angezeigten Menü auf der Menüleiste von Visual Studio neben der **Tools** Menü.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos werden definiert, der `Combos` Abschnitt. Jede `Combo` -Element stellt ein Dropdown-Listenfeld, das in der IDE dar. Im Listenfeld können oder nicht beschreibbaren von Benutzern, abhängig vom Wert der `type` Attribut des Kombinationsfeld. Combos haben die gleichen Elemente und Verhalten, die Schaltflächen, und können auch die folgenden zusätzlichen Attribute:  
   
--   Ein `defaultWidth` Attribut, das Breite in Pixel angibt.  
+- Ein `defaultWidth` Attribut, das Breite in Pixel angibt.  
   
--   Ein `idCommandList` -Attribut, das eine Liste gibt an, die die Elemente enthält, die Sie im Listenfeld angezeigt werden. Die Befehlsliste muss deklariert werden, in der gleichen `GuidSymbol` Knoten, der das Kombinationsfeld enthält.  
+- Ein `idCommandList` -Attribut, das eine Liste gibt an, die die Elemente enthält, die Sie im Listenfeld angezeigt werden. Die Befehlsliste muss deklariert werden, in der gleichen `GuidSymbol` Knoten, der das Kombinationsfeld enthält.  
   
- Das folgende Beispiel definiert einen Combo-Element.  
+  Das folgende Beispiel definiert einen Combo-Element.  
   
 ```xml  
 <Combos>  

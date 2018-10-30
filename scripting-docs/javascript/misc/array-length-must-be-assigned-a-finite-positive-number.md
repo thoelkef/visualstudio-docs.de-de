@@ -1,5 +1,5 @@
 ---
-title: Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein | Microsoft Docs
+title: Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825503"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein.
-Beim Festlegen der **Länge** -Eigenschaft eines vorhandenen **Array** Sie angegebene Objekt, eine Arraylänge, die keine positive Zahl oder 0 (null). Dieser Fehler tritt auf, wenn Sie einen Wert zuweisen der **Länge** Eigenschaft ein `Array` -Objekt, das negativ ist oder keine Zahl (`NaN`). Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatisch Bruchzahlen in ganze Zahlen konvertiert.  
+Beim Festlegen der **Länge** -Eigenschaft eines vorhandenen **Array** Objekt angegebene Arraylänge, die keine positive Zahl oder 0 (null). Dieser Fehler tritt auf, wenn Sie einen Wert zuweisen der **Länge** Eigenschaft eine `Array` -Objekt, das negativ ist oder keine Zahl (`NaN`). Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatisch Bruchzahlen in ganze Zahlen konvertiert.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Weisen Sie eine positive ganze Zahl zu der Length-Eigenschaft. Es gibt keine Obergrenze für die Größe eines Arrays, als der maximale Ganzzahlwert (ca. 4 Milliarden). Das folgende Beispiel veranschaulicht die richtige Methode zum Festlegen der **Länge** Eigenschaft ein **Array** Objekt.  
+-   Weisen Sie eine positive ganze Zahl, zu der Length-Eigenschaft. Es gibt keine Obergrenze für die Größe eines Arrays, als der maximal zulässige Ganzzahl-Wert (etwa 4 Milliarden). Das folgende Beispiel veranschaulicht die richtige Vorgehensweise zum Festlegen der **Länge** Eigenschaft eine **Array** Objekt.  
   
     ```JavaScript  
     var my_array = new Array();  

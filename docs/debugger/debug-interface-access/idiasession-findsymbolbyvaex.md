@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyvaex | Microsoft Docs'
+title: 'Idiasession:: Findsymbolbyvaex | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3fad26dfd43057f02105e867c5f1f0add57b20d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 706049acf99804038f48125b77a71b879658baac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874461"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Ruft einen angegebenen Symboltyp, der am ehesten zu einem angegebenen virtuellen Adresse ("VA" ist) und einem festen Offset oder enthält.  
+Ruft einen bestimmtes Symbol-Typ, der enthält und am nächsten ist, eine angegebene virtuelle Adresse (VA) und Offset.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,19 +37,19 @@ HRESULT findSymbolByVAEx (
   
 #### <a name="parameters"></a>Parameter  
  `va`  
- [in] Gibt an, die VA  
+ [in] Gibt an, die Virginia  
   
  `symtag`  
- [in] Der Symboltyp gefunden werden. Werte stammen aus den [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
+ [in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
   
  `ppSymbol`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) abgerufene Objekt, das das Symbol darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.  
   
  `displacement`  
- [out] Gibt einen Wert, der angibt, einen Offset von der virtuellen Adresse vom `va`.  
+ [out] Gibt einen Wert, der angibt, einen Offset von der virtuellen Adresse, die vom `va`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   

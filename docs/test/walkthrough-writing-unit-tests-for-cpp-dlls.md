@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877256"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -117,53 +117,53 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ##  <a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
 
-1.  Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
+1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
-    1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** >  **Framework und Verweise**.
+   1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** >  **Framework und Verweise**.
 
-         ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
+        ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
 
-    2.  Wählen Sie **Neuen Verweis hinzufügen**.
+   2.  Wählen Sie **Neuen Verweis hinzufügen**.
 
-         Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
+        Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
 
-         ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png)
+        ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png)
 
-2.  Schließen Sie in die *CPP*-Prinzipaldatei für Komponententests die *.h*-Datei des DLL-Codes ein:
+2. Schließen Sie in die *CPP*-Prinzipaldatei für Komponententests die *.h*-Datei des DLL-Codes ein:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Fügen Sie einen grundlegenden Test hinzu, der die exportierte Funktion verwendet:
+3. Fügen Sie einen grundlegenden Test hinzu, der die exportierte Funktion verwendet:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Erstellen Sie die Projektmappe.
+4. Erstellen Sie die Projektmappe.
 
-     Der neue Test wird im **Test-Explorer** angezeigt.
+    Der neue Test wird im **Test-Explorer** angezeigt.
 
-5.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
+5. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     ![Komponententest-Explorer – einfacher Test bestanden](../test/media/utecpp10.png)
+    ![Komponententest-Explorer – einfacher Test bestanden](../test/media/utecpp10.png)
 
- Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
+   Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
 ##  <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
 

@@ -1,5 +1,5 @@
 ---
-title: SccPopulateDirList Funktion | Microsoft Docs
+title: SccPopulateDirList-Funktion | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5315f3156f71310c92069ec3743232e98818b9a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b5839735e7564b486444cc0f9b65c71bc06f047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847993"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList-Funktion
-Diese Funktion wird bestimmt, welche Verzeichnisse und Dateien (optional), in der quellcodeverwaltung gespeichert sind, ist eine Liste von Verzeichnissen, um zu überprüfen.  
+Diese Funktion bestimmt, welche Verzeichnisse und (optional) die Dateien, in der quellcodeverwaltung ist eine Liste der Verzeichnisse gespeichert sind, um zu überprüfen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,19 +46,19 @@ SCCRTN SccPopulateDirList(
  [in] Anzahl der Verzeichnispfade, in der `lpDirPaths` Array.  
   
  lpDirPaths  
- [in] Array der Verzeichnispfade, um zu überprüfen.  
+ [in] Ein Array von Verzeichnispfaden, um zu überprüfen.  
   
  pfnPopulate  
- [in] Rückruffunktion für jedes Verzeichnispfad und (optional) Name der Datei im `lpDirPaths` (finden Sie unter [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Einzelheiten).  
+ [in] Rückruffunktion für jedes Verzeichnispfad und (optional) den Dateinamen im `lpDirPaths` (finden Sie unter [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Einzelheiten).  
   
  pvCallerData  
- [in] Wert, der unverändert an die Rückruffunktion übergeben werden.  
+ [in] Wert, der unverändert an die Rückruffunktion übergeben werden soll.  
   
- fOptions  
- [in] Eine Kombination von Werten, die steuern, wie die Verzeichnisse verarbeitet werden (siehe Abschnitt "PopulateDirList Flags" [Bitflags, die von bestimmten Befehlen verwendet](../extensibility/bitflags-used-by-specific-commands.md) mögliche Werte).  
+ Bestanden  
+ [in] Eine Kombination von Werten, die steuern, wie die Verzeichnisse verarbeitet werden (finden Sie im Abschnitt "PopulateDirList Flags" [Bitflags, die von bestimmten Befehlen verwendete](../extensibility/bitflags-used-by-specific-commands.md) mögliche Werte).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
@@ -66,10 +66,10 @@ SCCRTN SccPopulateDirList(
 |SCC_E_UNKNOWNERROR|Es ist ein Fehler aufgetreten.|  
   
 ## <a name="remarks"></a>Hinweise  
- Nur die Verzeichnisse und (optional) Dateinamen, die tatsächlich in den Quellcodeverwaltungs-Repository befinden, werden an die Rückruffunktion übergeben.  
+ Nur die Verzeichnisse und (optional) die Namen, die tatsächlich in das Quellcodeverwaltungs-Repository werden an die Rückruffunktion übergeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [Bitflags, die von bestimmten Befehlen verwendet](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Fehlercodes](../extensibility/error-codes.md)

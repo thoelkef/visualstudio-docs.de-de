@@ -9,12 +9,12 @@ description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854467"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -116,10 +116,10 @@ Nachdem einem Abonnenten ein Abonnement zugewiesen wurde, wird dieser per E-Mail
 1. Navigieren Sie zu https://my.visualstudio.com, und klicken Sie auf **Neues Microsoft-Konto erstellen**.
 
 2. Füllen Sie die Felder aus:
-    - Geben Sie im Feld Someone@example.com die E-Mail-Adresse ein, an die die Begrüßungs-E-Mail gesendet wurde.
-    - Erstellen Sie Ihr Kennwort.
-    - Wählen Sie Ihre Werbeeinstellungen.
-    - Klicken Sie auf **Weiter**.
+   - Geben Sie im Feld Someone@example.com die E-Mail-Adresse ein, an die die Begrüßungs-E-Mail gesendet wurde.
+   - Erstellen Sie Ihr Kennwort.
+   - Wählen Sie Ihre Werbeeinstellungen.
+   - Klicken Sie auf **Weiter**.
 
 3. Schließen Sie die Validierungsschritte ab, und klicken Sie auf **Weiter**.
 
@@ -141,10 +141,10 @@ Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherwe
 2. Klicken Sie rechts auf „Neues Microsoft-Konto erstellen“.
 
 3. Füllen Sie das Formular aus:
-    - Geben Sie im Feld someone@example.com Ihre Firmen-E-Mail-Adresse ein.
-    - Geben Sie ein Kennwort ein.
-    - Wählen Sie Ihre Werbevoreinstellungen aus.
-    - Klicken Sie auf Weiter.
+   - Geben Sie im Feld someone@example.com Ihre Firmen-E-Mail-Adresse ein.
+   - Geben Sie ein Kennwort ein.
+   - Wählen Sie Ihre Werbevoreinstellungen aus.
+   - Klicken Sie auf Weiter.
 
 4. Schließen Sie die Schritte zur Kontovalidierung ab.
 

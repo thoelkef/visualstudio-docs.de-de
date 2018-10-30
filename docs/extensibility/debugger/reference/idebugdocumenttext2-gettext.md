@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: IDebugDocumentText2::GetText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905505"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Ruft den Text aus der angegebenen Position im Dokument ab.  
@@ -47,19 +47,19 @@ int GetText(
   
 #### <a name="parameters"></a>Parameter  
  `pos`  
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort des Texts abgerufen werden sollen.  
+ [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort der Text, der abgerufen werden angibt.  
   
  `cMaxChars`  
  [in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.  
   
  `pText`  
- [in, out] Ein Zeiger auf einen Puffer, der mit den gewünschten Text ausgefüllt. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.  
+ [in, out] Ein Zeiger auf einen Puffer, der sich mit den gewünschten Text gefüllt werden soll. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.  
   
  `pcNumChars`  
- [out] Gibt die Anzahl der tatsächlich abgerufenen Zeichen zurück.  
+ [out] Gibt die Anzahl von Zeichen, die tatsächlich abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie diese Methode in c# aufgerufen werden kann.  

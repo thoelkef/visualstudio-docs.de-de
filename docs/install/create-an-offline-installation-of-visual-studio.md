@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028948"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859566"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
 
@@ -60,6 +60,9 @@ Beginnen Sie mit dem Herunterladen des Visual Studio-Bootstrappers für die ausg
 ### <a name="step-2---create-a-local-install-cache"></a>Schritt 2: Erstellen eines lokalen Installationscaches
 
 Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein.
+
+> [!IMPORTANT]
+> Wenn Sie Visual Studio Community 2017 installieren, müssen Sie die Anwendung innerhalb von 30 Tagen nach der Installation aktivieren. Dazu ist eine Internetverbindung erforderlich.
 
 Öffnen Sie eine Eingabeaufforderung, und rufen Sie einen der Befehle in den folgenden Beispielen auf. Bei den hier aufgeführten Beispielen wird davon ausgegangen, dass Sie die Community-Edition von Visual Studio verwenden. Passen Sie den Befehl nach Bedarf für Ihre Edition an.
 

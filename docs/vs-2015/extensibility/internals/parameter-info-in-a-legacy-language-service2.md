@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887565"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Unterstützen die Parameterinformations-QuickInfo angezeigt, in der Parser  
  Die <xref:Microsoft.VisualStudio.Package.Source> Klasse einige Annahmen über den Inhalt des der <xref:Microsoft.VisualStudio.Package.AuthoringScope> und <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klassen, wenn die ParameterInfo-QuickInfo angezeigt und aktualisiert wird.  
   
--   Der Parser erhält <xref:Microsoft.VisualStudio.Package.ParseReason> Wenn das Zeichen für den Parameter Liste eingegeben wird.  
+- Der Parser erhält <xref:Microsoft.VisualStudio.Package.ParseReason> Wenn das Zeichen für den Parameter Liste eingegeben wird.  
   
--   Den Speicherort, der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, sofort, nachdem die Parameterliste beginnt Zeichen. Der Parser muss die Signaturen aller Methodendeklarationen erhältlich, die zu positionieren, und speichern sie in einer Liste in Ihrer Version von erfasst werden, die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt. Diese Liste enthält den Methodennamen angeben, Methode Typ (oder Rückgabetyp), und eine Liste der möglichen Parameter. Diese Liste wird später für die Signatur der Methode oder die Signaturen in der ParameterInfo-QuickInfo anzeigen durchsucht.  
+- Den Speicherort, der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, sofort, nachdem die Parameterliste beginnt Zeichen. Der Parser muss die Signaturen aller Methodendeklarationen erhältlich, die zu positionieren, und speichern sie in einer Liste in Ihrer Version von erfasst werden, die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt. Diese Liste enthält den Methodennamen angeben, Methode Typ (oder Rückgabetyp), und eine Liste der möglichen Parameter. Diese Liste wird später für die Signatur der Methode oder die Signaturen in der ParameterInfo-QuickInfo anzeigen durchsucht.  
   
- Der Parser muss die angegebene Zeile klicken Sie dann analysieren die <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt, das den Namen der Methode, die eingegeben wird und wie weit der Benutzer zu erfassen ist, Parameter eingeben. Dies erfolgt durch Übergeben des Namens der Methode, die die <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> Methode für die <xref:Microsoft.VisualStudio.Package.AuthoringSink> und anschließend durch Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> Methode, wenn die Parameterliste beginnt Zeichen analysiert wird, Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> Methode bei der Parameterliste nächste Zeichen ist, analysiert und schließlich Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> Methode, wenn die Liste End parameterzeichen analysiert wird. Die Ergebnisse dieser Methodenaufrufe werden verwendet, durch die <xref:Microsoft.VisualStudio.Package.Source> Klasse, die ParameterInfo-QuickInfo entsprechend aktualisiert.  
+  Der Parser muss die angegebene Zeile klicken Sie dann analysieren die <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt, das den Namen der Methode, die eingegeben wird und wie weit der Benutzer zu erfassen ist, Parameter eingeben. Dies erfolgt durch Übergeben des Namens der Methode, die die <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> Methode für die <xref:Microsoft.VisualStudio.Package.AuthoringSink> und anschließend durch Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> Methode, wenn die Parameterliste beginnt Zeichen analysiert wird, Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> Methode bei der Parameterliste nächste Zeichen ist, analysiert und schließlich Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> Methode, wenn die Liste End parameterzeichen analysiert wird. Die Ergebnisse dieser Methodenaufrufe werden verwendet, durch die <xref:Microsoft.VisualStudio.Package.Source> Klasse, die ParameterInfo-QuickInfo entsprechend aktualisiert.  
   
 ### <a name="example"></a>Beispiel  
  Hier ist eine Textzeile, die der Benutzer eingeben kann. Die Zahlen unterhalb der Linie geben an, welcher Schritt vom Parser an dieser Position in der Zeile (vorausgesetzt, Analyse wechselt von links nach rechts) ausgeführt wird. Die Hierbei wird davon ausgegangen, dass alles vor der Zeile für Methodensignaturen, einschließlich der Signatur der Methode "Testfunc" bereits analysiert wurde.  

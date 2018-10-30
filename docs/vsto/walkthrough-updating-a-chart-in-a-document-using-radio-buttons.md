@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904673"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern
   Diese Vorgehensweise zeigt Ihnen, wie Sie Optionsfelder in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um Benutzern die Möglichkeit zu geben, Diagrammformatvorlagen im Dokument auszuwählen.  
@@ -30,17 +30,17 @@ ms.locfileid: "35258219"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Hinzufügen eines Diagramms zum Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit.  
+- Hinzufügen eines Diagramms zum Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit.  
   
--   Gruppieren von Optionsfeldern durch Hinzufügen zu einem Benutzersteuerelement.  
+- Gruppieren von Optionsfeldern durch Hinzufügen zu einem Benutzersteuerelement.  
   
--   Ändern der Diagrammformatvorlage, wenn eine Option ausgewählt ist.  
+- Ändern der Diagrammformatvorlage, wenn eine Option ausgewählt ist.  
   
- Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Word-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
+  Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Word-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  

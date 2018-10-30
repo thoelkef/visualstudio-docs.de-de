@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858562"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Gibt an, welche Informationen über ein Debug-Verweis-Objekt abgerufen.  
+Gibt an, welche Informationen Sie über ein Debug-Verweis-Objekt abzurufen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,25 +58,25 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
 ## <a name="members"></a>Member  
  DEBUGREF_INFO_NAME  
- Die Initialisierung/verwenden die `bstrName` Feld in der Struktur.  
+ Initialisieren und Verwenden der `bstrName` Feld in der Struktur.  
   
  DEBUGREF_INFO_TYPE  
- Die Initialisierung/verwenden die `bstrType` Feld in der Struktur.  
+ Initialisieren und Verwenden der `bstrType` Feld in der Struktur.  
   
  DEBUGREF_INFO_VALUE  
- Die Initialisierung/verwenden die `bstrValue` Feld in der Struktur.  
+ Initialisieren und Verwenden der `bstrValue` Feld in der Struktur.  
   
  DEBUGREF_INFO_ATTRIB  
- Die Initialisierung/verwenden die `dwAttrib` Feld in der Struktur.  
+ Initialisieren und Verwenden der `dwAttrib` Feld in der Struktur.  
   
  DEBUGREF_INFO_REFTYPE  
- Die Initialisierung/verwenden die `dwRefType` Feld in der Struktur.  
+ Initialisieren und Verwenden der `dwRefType` Feld in der Struktur.  
   
  DEBUGREF_INFO_REF  
- Die Initialisierung/verwenden die `pReference` Feld in der Struktur.  
+ Initialisieren und Verwenden der `pReference` Feld in der Struktur.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Das Wertfeld, sollte den Wert automatisch erweitert für diesen Objekttyp enthalten.  
+ Feld mit dem Wert sollte den Wert automatisch erweitert, für diesen Objekttyp enthalten.  
   
  DEBUGREF_INFO_NONE  
  Gibt an, dass keine Flags festgelegt sind.  
@@ -85,11 +85,11 @@ public enum enum_DEBUGREF_INFO_FLAGS {
  Gibt eine Maske der Flags an.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Flags werden zum Übergeben der [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) Methoden, um anzugeben, welche Felder der der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur initialisiert werden sollen.  
+ Diese Flags werden an übergeben der [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) Methoden zum Erkennen der Felder der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) sind, dass die Struktur initialisiert werden.  
   
  Verwendet für die `dwFields` Mitglied der `DEBUG_REFERENCE_INFO` Struktur, um anzugeben, welche Felder sind gültig und verwendet, wenn die Struktur zurückgegeben wird.  
   
- Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
+ Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

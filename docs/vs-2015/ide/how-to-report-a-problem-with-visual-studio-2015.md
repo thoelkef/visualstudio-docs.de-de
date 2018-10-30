@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941236"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Melden eines Problems mit Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Wenn Sie ein Problem mit Visual Studio 2015 auftreten, möchten wir davon erfahr
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Geben Sie einen aussagekräftigen Namen für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.  
+1. Geben Sie einen aussagekräftigen Namen für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.  
   
-2.  Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.  
+2. Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.  
   
-3.  Wählen Sie einen Problembereich aus der Dropdownliste aus. Wenn Sie nicht sicher sind, wählen Sie die Ihrer Meinung nach am besten zutreffende Option aus.  
+3. Wählen Sie einen Problembereich aus der Dropdownliste aus. Wenn Sie nicht sicher sind, wählen Sie die Ihrer Meinung nach am besten zutreffende Option aus.  
   
- ![Dialogfeld „Problem melden“](../ide/media/report-a-problem-dialog.png "Dialogfeld „Problem melden“")  
+   ![Dialogfeld „Problem melden“](../ide/media/report-a-problem-dialog.png "Dialogfeld „Problem melden“")  
   
 ## <a name="provide-a-screenshot-optional"></a>Fügen Sie einen Screenshot hinzu (optional)  
  Wählen Sie **Screenshot einfügen** aus, um Ihren aktuellen Bildschirm an Microsoft zu senden. Mit dem Tool können Sie das Bild so zuschneiden, dass es nur            den Teil des Bildschirms enthält, der das Problem zeigt. Sie können weitere Screenshots oder andere Dateien anfügen, indem Sie auf die Schaltfläche **Weitere Dateien anfügen** klicken.  

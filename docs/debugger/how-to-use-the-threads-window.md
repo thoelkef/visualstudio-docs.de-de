@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933559"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung in Visual Studio mithilfe des Fensters Threads
 Visual Studio bietet eine **Threads** Fenster und andere Elemente können Sie das Debuggen von Multithreadanwendungen der Benutzeroberfläche. In diesem Tutorial wird gezeigt, wie mit der **Threads** Fenster und die **Debugspeicherort** Symbolleiste. Weitere Informationen zu den anderen Tools finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). Dieses Tutorial dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen.   
@@ -72,29 +72,29 @@ Um zu Beginn dieses Lernprogramms benötigen Sie ein Multithreadanwendungsprojek
   
 #### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
   
-1.  Klicken Sie im linken Bundsteg des der `Console.WriteLine` Anweisung, um einen neuen Haltepunkt einzufügen.  
+1. Klicken Sie im linken Bundsteg des der `Console.WriteLine` Anweisung, um einen neuen Haltepunkt einzufügen.  
   
-     Im Bundsteg auf der linken Seite von der Quellcode-Editor wird ein roter Kreis. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde.  
+    Im Bundsteg auf der linken Seite von der Quellcode-Editor wird ein roter Kreis. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde.  
   
-2.  Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** (**F5**).  
+2. Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** (**F5**).  
   
-     Der Debugvorgang beginnt, die Konsolenanwendung wird gestartet und hält dann am Haltepunkt an.  
+    Der Debugvorgang beginnt, die Konsolenanwendung wird gestartet und hält dann am Haltepunkt an.  
   
-3.  Wenn sich der Fokus zu diesem Zeitpunkt im Fenster der Konsolenanwendung befindet, klicken Sie in das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fenster, um den Fokus wieder an [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zurückzugeben.  
+3. Wenn sich der Fokus zu diesem Zeitpunkt im Fenster der Konsolenanwendung befindet, klicken Sie in das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fenster, um den Fokus wieder an [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zurückzugeben.  
   
-4.  Suchen Sie in der Quellcode-Editor nach der Zeile mit den folgenden Code:  
+4. Suchen Sie in der Quellcode-Editor nach der Zeile mit den folgenden Code:  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>So ermitteln Sie den Threadmarker  
 

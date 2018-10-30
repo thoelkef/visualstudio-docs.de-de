@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07eeee3fa69407c17c20f55b7b8c0974bd4751b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829507"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Typen von Parsern  
  Ein Sprachenparser für den Dienst ist nicht identisch mit einen Parser, der als Teil eines Compilers verwendet. Jedoch muss sich diese Art von Parser für die Verwendung eines Scanners und einen Parser, auf die gleiche Weise wie eine Compiler-Parser.  
   
--   Ein Scanner wird zum Identifizieren von Tokentypen verwendet. Diese Informationen werden zur syntaxhervorhebung und zum schnellen Identifizieren von Tokentypen, die andere Vorgänge, z. B. auslösen können Zuordnung von geschweiften Klammern verwendet werden. Diese Überprüfung wird dargestellt, durch die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle.  
+- Ein Scanner wird zum Identifizieren von Tokentypen verwendet. Diese Informationen werden zur syntaxhervorhebung und zum schnellen Identifizieren von Tokentypen, die andere Vorgänge, z. B. auslösen können Zuordnung von geschweiften Klammern verwendet werden. Diese Überprüfung wird dargestellt, durch die <xref:Microsoft.VisualStudio.Package.IScanner> Schnittstelle.  
   
--   Ein Parser wird verwendet, um die Funktionen und Umfang der Token zu beschreiben. Diese Informationen werden in IntelliSense-Vorgänge verwendet, wenn Sie Sprachelemente, z. B. Methoden, Variablen, Parameter und Deklarationen, identifizieren und um Listen von Elementen und Signaturen basierend auf dem Kontext bereitzustellen. Dieser Parser wird auch verwendet, um übereinstimmende Language-Element-Paare, z. B. von geschweiften Klammern und Klammern zu suchen. Dieser Parser erfolgt über die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse.  
+- Ein Parser wird verwendet, um die Funktionen und Umfang der Token zu beschreiben. Diese Informationen werden in IntelliSense-Vorgänge verwendet, wenn Sie Sprachelemente, z. B. Methoden, Variablen, Parameter und Deklarationen, identifizieren und um Listen von Elementen und Signaturen basierend auf dem Kontext bereitzustellen. Dieser Parser wird auch verwendet, um übereinstimmende Language-Element-Paare, z. B. von geschweiften Klammern und Klammern zu suchen. Dieser Parser erfolgt über die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse.  
   
- Wie Sie einen Scanner und Parser für den Sprachdienst implementieren, bleibt Ihnen überlassen. Einige Ressourcen sind verfügbar, die Funktionsweise von Parser und zum Schreiben eigener Parsers beschreiben. Darüber hinaus sind mehrere kostenlose und kommerzielle Produkte verfügbar, die einen Parser erstellen können.  
+  Wie Sie einen Scanner und Parser für den Sprachdienst implementieren, bleibt Ihnen überlassen. Einige Ressourcen sind verfügbar, die Funktionsweise von Parser und zum Schreiben eigener Parsers beschreiben. Darüber hinaus sind mehrere kostenlose und kommerzielle Produkte verfügbar, die einen Parser erstellen können.  
   
 ### <a name="the-parsesource-parser"></a>Der ParseSource Parser  
  Im Gegensatz zu einen Parser, der als Teil eines Compilers verwendet wird (wobei die Token in eine Form von ausführbarem Code konvertiert werden), kann ein sprachdienstparser für viele verschiedene Gründe und in vielen verschiedenen Kontexten aufgerufen werden. Wie Sie diesen Ansatz implementieren die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bleibt Ihnen überlassen. Es ist wichtig zu bedenken, die die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode kann in einem Hintergrundthread aufgerufen werden.  

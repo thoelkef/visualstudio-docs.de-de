@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811920"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 Das Modellierungs-SDK für Visual Studio verwenden, können Sie leistungsstarke modellbasierte Entwicklungstools erstellen, die Sie in Visual Studio integrieren können. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.
@@ -26,17 +26,17 @@ Das Modellierungs-SDK für Visual Studio verwenden, können Sie leistungsstarke 
 
  Mit MSDK können Sie ein Modell schnell in Form einer domänenspezifischen Sprache (DSL) entwickeln. Sie beginnen, indem Sie einen spezialisierten Editor verwenden, um ein Schema oder eine abstrakte Syntax zusammen mit einer grafischen Schreibweise zu definieren. Aus dieser Definition generiert VMSDK Folgendes:
 
--   Eine Implementierung des Modells mithilfe einer stark typisierten API, die in einem transaktionsbasierten Speicher ausgeführt wird.
+- Eine Implementierung des Modells mithilfe einer stark typisierten API, die in einem transaktionsbasierten Speicher ausgeführt wird.
 
--   Ein strukturbasierter Explorer.
+- Ein strukturbasierter Explorer.
 
--   Ein grafischer Editor, in dem Benutzer das Modell bzw. Teile davon, die Sie definieren, anzeigen können.
+- Ein grafischer Editor, in dem Benutzer das Modell bzw. Teile davon, die Sie definieren, anzeigen können.
 
--   Serialisierungsmethoden, mit denen die Modelle in lesbarem XML gespeichert werden.
+- Serialisierungsmethoden, mit denen die Modelle in lesbarem XML gespeichert werden.
 
--   Funktionen zum Generieren des Programmcodes und anderer Artefakte mithilfe von Textvorlagen.
+- Funktionen zum Generieren des Programmcodes und anderer Artefakte mithilfe von Textvorlagen.
 
- Sie können alle diese Funktionen anpassen und erweitern. Ihre Erweiterungen sind so integriert, dass Sie noch die DSL-Definition aktualisieren und Funktionen erneut generieren können, ohne die Erweiterungen zu verlieren.
+  Sie können alle diese Funktionen anpassen und erweitern. Ihre Erweiterungen sind so integriert, dass Sie noch die DSL-Definition aktualisieren und Funktionen erneut generieren können, ohne die Erweiterungen zu verlieren.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

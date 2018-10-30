@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914267"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeb
   
  Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:  
   
--   Vom Dateinamen angegeben, der **Schemas** Eigenschaftenfenster des Dokuments im Feld.  
+- Vom Dateinamen angegeben, der **Schemas** Eigenschaftenfenster des Dokuments im Feld.  
   
--   Aus einem Inlineschema oder einer DTD.  
+- Aus einem Inlineschema oder einer DTD.  
   
--   Aus einer externen DTD oder einem `xsd:schemaLocation`-Attribut und einem `xsd:noNamespaceSchemaLocation`-Attribut.  
+- Aus einer externen DTD oder einem `xsd:schemaLocation`-Attribut und einem `xsd:noNamespaceSchemaLocation`-Attribut.  
   
--   Ein Namespace-URI eines "x-schema"-XDR-Schemas.  
+- Ein Namespace-URI eines "x-schema"-XDR-Schemas.  
   
- Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werden, wenn das Schema einen nicht-leeren Zielnamespace aufweist:  
+  Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werden, wenn das Schema einen nicht-leeren Zielnamespace aufweist:  
   
--   Ein anderes Editor-Fenster, das das Schema enthält  
+- Ein anderes Editor-Fenster, das das Schema enthält  
   
--   In einem Schema in der aktuellen Projektmappe.  
+- In einem Schema in der aktuellen Projektmappe.  
   
--   In einem Schema im Verzeichnis des Schemacache.  
+- In einem Schema im Verzeichnis des Schemacache.  
   
 ## <a name="xslt-files"></a>XSLT-Dateien  
  Beim Bearbeiten einer XSLT-Datei wird die im Schemacache befindliche Datei xslt.xsd für die Validierung verwendet. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.  

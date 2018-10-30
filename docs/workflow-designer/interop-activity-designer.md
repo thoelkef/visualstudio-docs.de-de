@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849358"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
 
@@ -29,7 +29,7 @@ Die <xref:System.Activities.Statements.Interop>-Aktivität verwaltet die Ausfüh
 
 ### <a name="use-the-interop-activity-designer"></a>Verwenden des Interop-Aktivitätsdesigners
 
-Die **Interop** Aktivitäts-Designer finden Sie in der **Migration** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
+Die **Interop** Aktivitäts-Designer finden Sie in der **Migration** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte. Sie können auch **Toolbox** aus der **anzeigen** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
 
 Die [Migration](../workflow-designer/migration-activity-designers.md) Kategorie, enthält die <xref:System.Activities.Statements.Interop> Aktivität nur wird im **Toolbox** Wenn Ihr Projekt das vollständige .NET Framework 4 ausgerichtet ist.
 
@@ -46,7 +46,7 @@ Klicken Sie auf die **zum Durchsuchen klicken** Text in die **ActivityType** Fel
 Die folgende Tabelle zeigt die <xref:System.Activities.Statements.Interop> Eigenschaften, und beschreibt, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf der Oberfläche des Workflow-Designer bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Interop>-Aktivität. Der Standardwert ist **Interop**. Obwohl der Anzeigename nicht erforderlich ist, wird empfohlen, einen bereitzustellen.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Gibt den Typ der in der <xref:System.Activities.Statements.Interop>-Aktivität enthaltenen Aktivität an. Der angegebene Typ muss von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sein.|
 

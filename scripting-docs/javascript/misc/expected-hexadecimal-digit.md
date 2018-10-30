@@ -1,5 +1,5 @@
 ---
-title: Erwartete Hexadezimalziffer | Microsoft Docs
+title: Erwartete Hexadezimalziffer | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836176"
 ---
 # <a name="expected-hexadecimal-digit"></a>Hexadezimalzahl erwartet
-Sie haben eine falsche Unicode-Escapesequenz erstellt. Unicode-Escapesequenzen beginnen mit \u, gefolgt von genau vier hexadezimale Ziffern (nicht mehr und nicht kleiner). Unicode-Hexadezimalzeichen darf nur die Ziffern 0-9, die Großbuchstaben A-F und die Kleinbuchstaben Buchstaben a bis f. Das folgende Beispiel zeigt eine ordnungsgemäß gebildete Unicode-Escapesequenz.  
+Sie haben eine falsche Unicode-Escapesequenz erstellt. Unicode-Escapesequenzen mit \u, gefolgt von genau vier hexadezimale Ziffern (nicht mehr und nicht weniger) beginnen. Unicode-Hexadezimalzeichen können nur die Zahlen 0-9, der Großbuchstaben A bis F und die Kleinbuchstaben Buchstaben a bis f enthalten. Das folgende Beispiel zeigt eine ordnungsgemäß formatierte Unicode-Escapesequenz.  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -36,10 +36,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Achten Sie darauf die Unicode-Hexadezimalzeichen mit \u beginnen, enthält nur die Ziffern 0-9, die Großbuchstaben A-F, die Kleinbuchstaben Buchstaben a bis f; die in vier Ziffern gruppiert werden.  
+-   Werden Sie sicher, dass Ihre Unicode-Hexadezimalzeichen beginnen mit der \u enthält nur die Zahlen 0-9, der Großbuchstaben A bis F, die Kleinbuchstaben Buchstaben a bis f; die in vier Ziffern gruppiert werden.  
   
     > [!NOTE]
-    >  Wenn der Literaltext \u in einer Zeichenfolge, und verwenden Sie dann zwei umgekehrte Schrägstriche - werden sollen (\\\u)-eine für den ersten umgekehrten Schrägstrich mit Escapezeichen versehen.  
+    >  Sollten Sie die \u Literaltext in einer Zeichenfolge verwenden und dann zwei umgekehrte Schrägstriche - (\\\u) – eine der ersten umgekehrten Schrägstrich als Escapezeichen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Datentypen](../../javascript/data-types-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: IDebugExpressionEvaluator::SetLocale | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5836069aacb80a3d917a8e272150a477589c3ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882641"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Diese Methode legt die Sprache zum Erstellen von druckbaren Ergebnisse.  
+Diese Methode legt die Sprache, die zum Erstellen von druckbaren Ergebnisse.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parameter  
  `wLangID`  
- [in] Die Sprachen-ID.  
+ [in] Die Sprachen-ID ein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode kann mehrfach aufgerufen werden, während der Auswertung eines Ausdrucks (EE) geladen wird, damit die EE Sprachen bei laufendem Betrieb wechseln sein muss. Die EE wird dieses Gebietsschema zum Zurückgeben von Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache verwendet.  
+ Diese Methode kann mehrmals aufgerufen werden, während die ausdrucksauswertung (EE) geladen wird, damit die EE Wechseln der Sprache im laufenden Betrieb kann muss. Die EE mithilfe dieses Gebietsschema Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

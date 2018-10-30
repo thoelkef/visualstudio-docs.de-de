@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft Docs
+title: IDebugExpressionContext2::GetName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84ac767c8e2cd53045dec9921f6d90300f1a87e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5664710d69b8c6d7af315de600fd1fcd27a2b36d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873525"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Ruft den Namen der Evaluierungskontext ab.  
+Ruft den Namen des dem Auswertungskontext ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Gibt den Namen der Evaluierungskontext zurück.  
+ [out] Gibt den Namen des dem Auswertungskontext zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Name ist die Beschreibung des dieses Auswertungskontext. In der Regel ist es etwas, das von der ausdrucksauswertung analysiert werden kann, die auf diese genaue Evaluierungskontext verweist. Beispielsweise ist in C++ der Name wie folgt:  
+ Der Name ist die Beschreibung dieses Kontexts für die Auswertung. Es ist in der Regel etwas, das von einer ausdrucksauswertung analysiert werden können, die auf diese genaue Evaluierungskontext verweist. Beispielsweise ist in C++ der Name wie folgt:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

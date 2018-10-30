@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912622"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektur von Anpassungen auf Dokumentebene
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] enthält Projekte für das Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. In diesem Thema werden die folgenden Aspekte von Anpassungen auf Dokumentebene beschrieben:  
   
--   [Verstehen von Anpassungen](#UnderstandingCustomizations)  
+- [Verstehen von Anpassungen](#UnderstandingCustomizations)  
   
--   [Komponenten von Anpassungen](#Components)  
+- [Komponenten von Anpassungen](#Components)  
   
--   [Verwenden von Anpassungen mit Microsoft Office-Anwendungen](#HowCustomizationsWork)  
+- [Verwenden von Anpassungen mit Microsoft Office-Anwendungen](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Allgemeine Informationen zu Anpassungen auf Dokumentebene erstellen, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Programmieren von Anpassungen auf Dokumentebene für Wordbeginnen](../vsto/getting-started-programming-document-level-customizations-for-word.md), und [erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Allgemeine Informationen zu Anpassungen auf Dokumentebene erstellen, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Programmieren von Anpassungen auf Dokumentebene für Wordbeginnen](../vsto/getting-started-programming-document-level-customizations-for-word.md), und [erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Verstehen von Anpassungen  
  Wenn Sie zum Erstellen einer Anpassung auf Dokumentebene die Office-Entwicklertools in Visual Studio verwenden, erstellen Sie eine verwaltete Codeassembly, die einem bestimmten Dokument zugeordnet ist. Ein Dokument oder eine Arbeitsmappe mit einer zugeordneten Assembly besitzt Erweiterungen durch verwalteten Code. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35672753"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Unterstützung für Word-Dokumenten mit .xml-Dateinamenerweiterungen  
  Mit Projektvorlagen auf Dokumentebene können Sie keine Projekte erstellen, die auf den folgenden Dateiformaten basieren:  
   
--   Word-XML-Dokument (*\*Xml*).  
+- Word-XML-Dokument (*\*Xml*).  
   
--   Word 2003 XML-Dokument (*\*Xml*).  
+- Word 2003 XML-Dokument (*\*Xml*).  
   
- Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der anpassungs können Endbenutzer das Dokument im Word-XML-Dokument speichern (*\*Xml*) Format oder die Word 2003 XML-Dokument (*\*Xml*)-Format und die Anpassung wird weiterhin wie erwartet funktionieren.  
+  Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der anpassungs können Endbenutzer das Dokument im Word-XML-Dokument speichern (*\*Xml*) Format oder die Word 2003 XML-Dokument (*\*Xml*)-Format und die Anpassung wird weiterhin wie erwartet funktionieren.  
   
 ##  <a name="Components"></a> Komponenten von Anpassungen  
  Die Hauptkomponenten einer Anpassung sind das Dokument und die Assembly. Es gibt zudem mehrere andere Komponenten, die beeinflussen, wie Microsoft Office-Anwendungen Anpassungen finden und laden.  
@@ -146,7 +146,7 @@ ms.locfileid: "35672753"
   
 ## <a name="see-also"></a>Siehe auch  
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   

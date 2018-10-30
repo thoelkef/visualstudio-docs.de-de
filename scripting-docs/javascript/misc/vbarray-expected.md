@@ -1,5 +1,5 @@
 ---
-title: VBArray erwartet | Microsoft Docs
+title: VBArray erwartet. | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9b07c5e08e4178c9c31045317627424f5192f5e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844145"
 ---
 # <a name="vbarray-expected"></a>VBArray erwartet
-Sie haben ein Objekt, das eine Visual Basic-SafeArray beim nicht nur ein Wert erwartet wurde angegeben.  
+Sie haben angegeben, ein Objekt, das eine Visual Basic-SafeArray nicht war, wurde erwartet.  
   
 ```  
 new VBArray(safeArray);  
 ```  
   
- VBArrays sind schreibgeschützt und können nicht direkt erstellt werden. Das SafeArray-Argument ist ein VBArray-Wert und muss einen VBArray-Wert abgerufen haben, vor der Übergabe an die `VBArray` Konstruktor. Dies kann nur durch Abrufen des Werts aus einem vorhandenen ActiveX oder einem anderen Objekt erfolgen.  
+ VBArrays sind schreibgeschützt und können nicht direkt erstellt werden. Die SafeArray-Argument ist ein VBArray-Wert und muss einen VBArray-Wert abgerufen haben, vor der Übergabe an die `VBArray` Konstruktor. Dies kann nur durch Abrufen des Werts aus einem vorhandenen ActiveX oder einem anderen Objekt erfolgen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, übergeben Sie nur **VBArray** -Objekte und die **VBArray** Konstruktor.  
+-   Stellen Sie sicher, übergeben Sie nur **VBArray** Objekte die **VBArray** Konstruktor.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VBArray-Objekt](../../javascript/reference/vbarray-object-javascript.md)   

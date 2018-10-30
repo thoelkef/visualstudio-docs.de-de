@@ -1,5 +1,5 @@
 ---
-title: Registrieren eine Vorgängerversion Sprache Service2 | Microsoft Docs
+title: Registrieren von einem Legacysprachdienst 2 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,39 +15,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f247a510b6fb52903970e408f930b13a8faba08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879006"
 ---
-# <a name="registering-a-legacy-language-service"></a>Registrieren einen Sprachdienst Legacy
-Die folgenden Abschnitte enthalten Listen von Registrierungseinträgen für die verschiedenen Sprache Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="registering-a-legacy-language-service"></a>Registrieren eines Legacysprachdiensts
+Die folgenden Abschnitte enthalten Listen der Registrierungseinträge für die verschiedenen Sprach Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- In der folgenden Liste von Registrierungseinträgen *VS Reg Stamm* gleich HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, wobei *X.Y* ist die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Versionsnummer.  
+ In der folgenden Liste der Registrierungseinträge *Stamm der VS-Reg* gleich HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, wobei *X.Y* ist die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Versionsnummer.  
   
-## <a name="registry-entries-for-language-service-options"></a>Registrierungseinträge für den Dienst Sprachoptionen  
- Die *VS Reg Stamm*\Languages\Language Services\\*Sprachenname* Schlüssel kann die folgenden Werte enthalten.  
+## <a name="registry-entries-for-language-service-options"></a>Registrierungseinträge für den Dienst der Sprachoptionen  
+ Die *Stamm der VS-Reg*\Languages\Language Services\\*Sprachenname* Schlüssel kann die folgenden Werte enthalten.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ|*\<GUID &GT;*|Die GUID des Sprachdiensts.|  
-|LangResID|REG_DWORD|0 x 0 – 0xffff|Zeichenfolge Ressourcenbezeichner (ResID) für den lokalisierten Textnamen der Sprache an.|  
+|LangResID|REG_DWORD|0 x 0 – 0xffff|Ressourcenbezeichner ("RESID") für den Namen lokalisierter Text, der die Sprache eine Zeichenfolge.|  
 |Package|REG_SZ|*\<GUID &GT;*|Die GUID des VSPackage.|  
-|ShowCompletion|REG_DWORD|0-1|Gibt an, ob die **Anweisungsvervollständigung** Optionen in der **Optionen** Dialogfeld aktiviert sind.|  
-|ShowSmartIndent|REG_DWORD|0-1|Gibt an, ob die Option zur Auswahl **Smart** den Einzug den **Optionen** Dialogfeld aktiviert ist.|  
-|RequestStockColors|REG_DWORD|0-1|Gibt an, ob benutzerdefinierte oder Standardfarben werden verwendet, um die Farbe der Schlüsselwörter.|  
-|ShowHotURLs|REG_DWORD|0-1|Gibt an, ob der Benutzer, URLs klicken kann.|  
-|Standardmäßig nicht im laufenden Systembetrieb URLs|REG_DWORD|0-1|Gibt an, die ursprüngliche Einstellung für die **einfaches Klicken für URLs aktivieren** -Option in der **Optionen** (Dialogfeld).|  
-|DefaultToInsertSpaces|REG_DWORD|0-1|Gibt an, ob der Sprachdienst verfügt "Leerzeichen einfügen" als die Standardoption für die Registerkarte ".|  
-|ShowDropdownBarOption|REG_DWORD|0-1|Aktiviert oder deaktiviert die **Navigationsleiste** -Option in der **Optionen** (Dialogfeld), die zeigt, oder blendet Sie aus der **Navigationsleiste**.|  
-|Nur einzelne Codefenster|REG_DWORD|0-1|Aktiviert oder deaktiviert die **neues Fenster** Auswahlen in den **Fenster** Menü für einen Sprachdienst.|  
-|EnableAdvancedMembersOption|REG_DWORD|0-1|Aktiviert oder deaktiviert eine **Optionen** Einstellung der im Dialogfeld für **Erweiterte Member ausblenden**.|  
-|Unterstützung CF_HTML|REG_DWORD|0-1|Gibt an, ob der Editor ermöglicht, kopieren und Einfügen von HTML-Daten.|  
-|EnableLineNumbersOption|REG_DWORD|0-1|Gibt an, ob die **Zeilennummern** Optionen in der **Optionen** im Dialogfeld für einen Sprachdienst aktiviert ist.|  
-|HideAdvancedMembersByDefault|REG_DWORD|0-1|Gibt an, ob erweiterte Member, z. B. private Felder in Vervollständigungslisten ausgeblendet sind.|  
-|ShowBraceCompletion|REG_DWORD|0-1|Gibt an, ob die **Abschluss in geschweifte Klammern eingeschlossen** -Option in der **Optionen** Dialogfeld aktiviert ist.|  
+|ShowCompletion|REG_DWORD|0-1|Gibt an, ob die **Anweisungsvervollständigung** "Optionen" der **Optionen** Dialogfeld aktiviert sind.|  
+|ShowSmartIndent|REG_DWORD|0-1|Gibt an, ob die Option zum auswählen **intelligente** Einzug der **Optionen** Dialogfeld ist aktiviert.|  
+|RequestStockColors|REG_DWORD|0-1|Gibt an, ob der benutzerdefinierten oder standardmäßigen Farben werden verwendet, um die Farbe, die Schlüsselwörter.|  
+|ShowHotURLs|REG_DWORD|0-1|Gibt an, ob der Benutzer auf URLs klicken kann.|  
+|Standardmäßig nicht Hot-URLs|REG_DWORD|0-1|Gibt an, die ursprüngliche Einstellung für die **einfaches Klicken für URLs aktivieren** option die **Optionen** Dialogfeld.|  
+|DefaultToInsertSpaces|REG_DWORD|0-1|Gibt an, ob der Sprachdienst "Leerzeichen einfügen" als die Standardoption für die Registerkarte ist.|  
+|ShowDropdownBarOption|REG_DWORD|0-1|Aktiviert oder deaktiviert die **Navigationsleiste** option die **Optionen** Dialogfeld, das Anzeigen oder Ausblenden der **Navigationsleiste**.|  
+|Nur die einzelnen Code-Fenster|REG_DWORD|0-1|Aktiviert oder deaktiviert die **neues Fenster** Choice in die **Fenster** Menü für einen Sprachdienst.|  
+|EnableAdvancedMembersOption|REG_DWORD|0-1|Aktiviert oder deaktiviert ein **Optionen** Einstellung der im Dialogfeld für **Erweiterte Member ausblenden**.|  
+|Das CF_HTML-Unterstützung|REG_DWORD|0-1|Gibt an, ob der Editor ermöglicht, kopieren und Einfügen von HTML-Daten.|  
+|EnableLineNumbersOption|REG_DWORD|0-1|Gibt an, ob die **Zeilennummern** "Optionen" der **Optionen** im Dialogfeld für einen Sprachdienst aktiviert ist.|  
+|HideAdvancedMembersByDefault|REG_DWORD|0-1|Gibt an, ob erweiterte Member wie z. B. private Felder in Vervollständigungslisten ausgeblendet werden.|  
+|ShowBraceCompletion|REG_DWORD|0-1|Gibt an, ob die **Abschluss in geschweifte Klammern eingeschlossen** option die **Optionen** Dialogfeld ist aktiviert.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -64,12 +64,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         ShowDropdownBarOption = reg_dword:0x00000001  
 ```  
   
-## <a name="registry-entries-for-debugger-languages-options"></a>Registrierungseinträge für Sprachen Debuggeroptionen  
- Die *VS Reg Stamm*\Languages\Language Services\\*Sprachenname*\Debugger Sprachen\\*GUID*\ Schlüssel kann Folgendes enthalten Werte.  
+## <a name="registry-entries-for-debugger-languages-options"></a>Registrierungseinträge für Sprachen von Debuggeroptionen  
+ Die *Stamm der VS-Reg*\Languages\Language Services\\*Sprachenname*\Debugger Sprachen\\*GUID*\ Schlüssel kann Folgendes beinhalten Werte.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|Text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name der dieser Schlüssel ist eine GUID, der eine ausdrucksauswertung, der einen entsprechenden Eintrag in  *\<VS Reg-Stamm >* \AD7Metrics\Expression bei der Ausdrucksauswertung.|  
+|(Standard)|REG_SZ|Text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name dieses Schlüssels ist eine GUID eines ausdrucksauswerters, die einen entsprechenden Eintrag in  *\<VS Reg-Stamm >* \AD7Metrics\Expression Ausdrucksauswertung.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -83,14 +83,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
             (Default) = reg_sz:C++  
 ```  
   
-## <a name="registry-entries-for-editor-tools-options"></a>Registrierungseinträge für Editor-Menü Extras, Optionen  
- Sie können Registrierungsschlüssel unter dem Schlüssel EditorToolsOptions für Eigenschaftenseiten und Eigenschaftsknoten hinzufügen. Diese Schlüssel und deren Werte identifizieren Eigenschaftenseiten in der **Optionen** (Dialogfeld) (auf der **Tools** Menü) zum Konfigurieren des Sprachdiensts verwendet werden. Im folgenden Beispiel *Seitennamen* ist der Name einer Eigenschaftenseite und *Knotenname* befindet sich auf der Namen eines Knotens in der Struktur der **Optionen** (Dialogfeld). Der Eintrag für die Seite und die Knoten-Eintrag müssen separat angegeben werden.  
+## <a name="registry-entries-for-editor-tools-options"></a>Registrierungseinträge für Editor-Tools-Optionen  
+ Sie können Registrierungsschlüssel unter dem Schlüssel EditorToolsOptions für Eigenschaftenseiten und die Eigenschaftsknoten hinzufügen. Diese Schlüssel und deren Werte identifizieren Sie die Eigenschaftenseiten in der **Optionen** Dialogfeld (auf der **Tools** Menü), werden verwendet, um den Sprachdienst zu konfigurieren. Im folgenden Beispiel *Seitennamen* ist der Name der auf einer Eigenschaftenseite und *Knotenname* befindet sich auf der Namen eines Knotens in der Struktur der **Optionen** Dialogfeld. Die seiteneintrag und die Knoten-Eintrag müssen separat angegeben werden.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|resID|Der lokalisierte Name der diese Optionsseite. Der Name kann Literaltext oder #`nnn`, wobei `nnn` ist eine Zeichenfolge-Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackage.|  
+|(Standard)|REG_SZ|"RESID"|Der lokalisierte Anzeigename von dieser Seite. Der Name kann es sich um Literaltext oder #`nnn`, wobei `nnn` ist eine Zeichenfolge-Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackage.|  
 |Package|REG_SZ|*GUID*|Die GUID des VSPackage, das diese Optionsseite implementiert.|  
-|Seite|REG_SZ|*GUID*|Die GUID der Eigenschaftenseite aus dem VSPackage anfordern, durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> Methode. Wenn dieses Registrierungseintrags nicht vorhanden ist, wird der Registrierungsschlüssel einen Knoten, die nicht auf einer Seite beschrieben.|  
+|Seite|REG_SZ|*GUID*|Die GUID des auf der Seite der Anforderung aus dem VSPackage durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> Methode. Wenn dieser Registrierungseintrag nicht vorhanden ist, wird der Registrierungsschlüssel einen Knoten, die nicht auf einer Seite beschrieben.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -117,12 +117,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
               Page      = reg_sz:{607D8062-68D1-41E4-9A35-B5E7F14D0481}  
 ```  
   
-## <a name="registry-entries-for-file-name-extension-options"></a>Registrierungseinträge für Dateinamenoptionen-Erweiterung  
- Der Eintrag für die Erweiterung sollte den führenden Punkt, z. B. ".myext" enthalten.  
+## <a name="registry-entries-for-file-name-extension-options"></a>Registrierungseinträge für die Optionen für Namen Dateierweiterung  
+ Der Eintrag für die Erweiterung sollte es sich um den Punkt, z. B. ".myext" enthalten.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|*GUID*|Dienst-GUID für die Language-Standarddienst für diesen Dateityp für Name-Erweiterung.|  
+|(Standard)|REG_SZ|*GUID*|Dienst-GUID für den Standard-Sprachdienst für diesen Dateityp des Name-Erweiterung.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -135,16 +135,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-editor-options"></a>Registrierungseinträge für Editor-Optionen  
- Die *VS Reg Stamm*\Editors Schlüssel kann die folgenden Werte enthalten:  
+ Die *Stamm der VS-Reg*\Editors-Schlüssel kann die folgenden Werte enthalten:  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|""|Nicht verwendete; Sie können Ihre Namen Dokumentation hier einfügen.|  
-|DefaultToolboxTab|REG_SZ|""|Der Name der Toolbox-Registerkarte Standard, die bei der Editor aktiv ist.|  
-|DisplayName|REG_SZ|resID|Name, der in der **Öffnen mit** (Dialogfeld). Der Name ist die Zeichenfolgenressource-ID oder einen Namen im Standardformat.|  
-|ExcludeDefTextEditor|REG_DWORD|0-1|Verwendet für die **Öffnen mit** Menübefehl. Wenn Sie nicht die Standard-Text-Editor in der Liste der verfügbaren Editoren für einen bestimmten Dateityp auflisten möchten, legen Sie diesen Wert auf 1 fest.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Verwendet für alle Sprachdienst, die eine Datei mit Unterstützung für Codepage öffnen können. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editors mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editorfactory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten-Editor in der Liste zu verwenden. Dieser weiter Editor darf nicht der Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde als die Editor-Factory ist, die Fehler.|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage-GUID für den Anzeigenamen ResID.|  
+|(Standard)|REG_SZ|""|Nicht verwendet; Sie können Ihren Namen für die Dokumentation hier einfügen.|  
+|DefaultToolboxTab|REG_SZ|""|Name der Toolboxregisterkarte, der als Standard festlegen, wenn der Editor aktiv ist.|  
+|DisplayName|REG_SZ|"RESID"|Anzuzeigenden Namen der **Öffnen mit** Dialogfeld. Der Name ist die Zeichenfolgenressource-ID oder ein Name im Standardformat.|  
+|ExcludeDefTextEditor|REG_DWORD|0-1|Verwendet für die **Öffnen mit** Menübefehl. Wenn Sie nicht die Standard-Text-Editor in der Liste der verfügbaren Editoren anzuzeigen, für einen bestimmten Dateityp auflisten möchten, legen Sie diesen Wert auf 1 fest.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Verwendet für alle Sprachdienst, der eine Datei mit der Codepage-Unterstützung öffnen kann. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editor, mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editor-Factory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten Editor in der Liste verwenden. Dieser nächste Editor darf nicht die Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde die Editor-Factory identisch ist, die Fehler.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage GUID für den Anzeigenamen "RESID".|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -159,13 +159,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
       Package              = reg_sz:{1B437D20-F8FE-11D2-A6AE-00104BCC7269}  
 ```  
   
-## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für logische Ansichtsoptionen  
- Die *VS Reg Stamm*\Editors\\*GUI-Editor >* \LogicalViews Schlüssel kann die folgenden Werte enthalten.  
+## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für die logische Ansicht-Optionen  
+ Die *Stamm der VS-Reg*\Editors\\ *-Editor-GUI >* \LogicalViews-Schlüssel kann die folgenden Werte enthalten.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ||Nicht verwendet.|  
-|*\<GUID &GT;*|REG_SZ|""|Der Schlüssel, die den logischen Ansichten unterstützt. Sie können beliebig viele davon haben, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
+|*\<GUID &GT;*|REG_SZ|""|Schlüssel, der die unterstützten logischen Ansichten. Sie können beliebig viele verwenden, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -181,15 +181,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
        {7651a703-06e5-11d1-8ebd-00a0c90f26ea} = reg_sz:  
 ```  
   
-## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für Editor-Erweiterung  
- Die *VS Reg Stamm*\Editors\\ *-Editor-GUID*\Extensions Schlüssel kann die folgenden Werte enthalten. Die Dateinamenerweiterung umfasst nicht die führenden Punkt.  
+## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für die Erweiterung des Editors-Optionen  
+ Die *Stamm der VS-Reg*\Editors\\*Editor GUID*\Extensions-Schlüssel kann die folgenden Werte enthalten. Die Dateinamenerweiterung ist nicht mit der führenden Punkt enthalten.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ||Nicht verwendet.|  
-|*\<Ext >*|REG_DWORD|0-0xffffffff|Relative Priorität der Erweiterungen. Wenn zwei oder mehrere Sprachen gemeinsam die gleiche Erweiterung verwendet haben, wird die Sprache höherer Priorität ausgewählt.|  
+|*\<Ext >*|REG_DWORD|0-0xffffffff|Relative Priorität von Erweiterungen. Wenn zwei oder mehr Sprachen die gleiche Erweiterung verwenden, wird die Sprache der höheren Priorität ausgewählt.|  
   
- Darüber hinaus wird die Standardauswahl für einen Editor des aktuellen Benutzers in HKEY_Current_User\Software\Microsoft\VisualStudio gespeichert\\*X.Y*\Default Editoren\\*Ext*. Die GUID des Sprachdiensts ausgewählten wird der benutzerdefinierte Eintrag. Dies Vorrang für den aktuellen Benutzer.  
+ Darüber hinaus befindet sich der aktuelle Benutzer die Standardauswahl für einen Editor in HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default Editoren\\*Ext*. Die GUID des Sprachdiensts ausgewählten ist im Custom-Eintrag. Dies hat es sich um Vorrang vor, für den aktuellen Benutzer.  
   
 ### <a name="example"></a>Beispiel  
   
@@ -205,25 +205,25 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
        shtml     = reg_dword:0x00000027  
 ```  
   
-## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>Registrierungseinträge für Managed Package Framework Service Sprachoptionen  
- Die folgenden Registrierungseinträge sind spezifisch für die verwaltete Package Framework (MPF) Sprache Dienstklassen. Diese Registrierungseinträge werden Unterstützung in der Sprachdienst für verschiedene IntelliSense-Funktionen und andere erweiterte Bearbeitungsfunktionen angeben.  
+## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>Registrierungseinträge für Managed Package Framework-Sprache-Service-Optionen  
+ Die folgenden Registrierungseinträge sind spezifisch für die verwaltete Package Framework (MPF) Sprache-Dienstklassen. Diese Registrierungseinträge angeben-Unterstützung in den Sprachdienst für verschiedene IntelliSense-Funktionen und andere erweiterte Bearbeitungsfunktionen.  
   
  Diese Registrierungseinträge erfolgt über die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|Unterstützung für IntelliSense-Vorgänge.|  
-|MatchBraces|REG_DWORD|0-1|Unterstützung für den Abgleich von Sprache-ersetzungswertpaaren, z. B. geschweifte Klammern, runden und eckigen Klammern.|  
-|QuickInfo|REG_DWORD|0-1|Unterstützung für die IntelliSense-QuickInfo-Vorgang.|  
-|ShowMatchingBrace|REG_DWORD|0-1|Unterstützung für die entsprechende Sprachpaar anzeigt, in der Statusleiste.|  
-|MatchBracesAtCaret|REG_DWORD|0-1|Unterstützung für die Anzeige von übereinstimmende Sprachpaare, in der Regel durch das Hervorheben von zwei Elementen.|  
-|MaxErrorMessages|REG_DWORD|0-n|Die maximale Anzahl von Fehlern, die in angezeigt werden, die **Fehlerliste** Fenster.|  
-|CodeSenseDelay|REG_DWORD|0-n|Die Anzahl der Millisekunden, die Verzögerung, bevor die Analyse für einen IntelliSense-Vorgang im Hintergrund initiiert.|  
+|MatchBraces|REG_DWORD|0-1|Unterstützung für die entsprechende Sprachpaare z. B. von geschweiften Klammern und runde sowie eckige Klammern.|  
+|QuickInfo|REG_DWORD|0-1|Unterstützung für den IntelliSense-QuickInfo-Vorgang.|  
+|ShowMatchingBrace|REG_DWORD|0-1|Unterstützung für das entsprechende Sprachpaar in der Statusleiste angezeigt.|  
+|MatchBracesAtCaret|REG_DWORD|0-1|Unterstützung für die Anzeige von entsprechende Sprachpaare, in der Regel durch die zwei Elemente markieren.|  
+|MaxErrorMessages|REG_DWORD|0-n-Gerät|Die maximale Anzahl von Fehlern, die in angezeigt werden, kann die **Fehlerliste** Fenster.|  
+|CodeSenseDelay|REG_DWORD|0-n-Gerät|Die Anzahl der Millisekunden, um vor dem Initiieren des Analysieren von ASP.NET-Vorlagen für einen IntelliSense-Vorgang im Hintergrund verzögert.|  
 |EnableAsyncCompletion|REG_DWORD|0-1|Unterstützung für das Analysieren im Hintergrund.|  
-|EnableCommenting|REG_DWORD|0-1|Unterstützung für die ausgewählte Textblöcke auskommentieren, und darüber hinaus Unterstützung für uncommenting markierten Text angegeben.|  
-|EnableFormatSelection|REG_DWORD|0-1|Unterstützung für das Formatieren von Text, z. B. automatische Einzug, oder passen Sie die Position geschweifter Klammern.|  
-|AutoOutlining|REG_DWORD|0-1|Unterstützung für eine Gliederung (Regionen, die reduziert werden können).|  
-|MaxRegions|REG_DWORD|0-n|Die maximale Anzahl der ausgeblendete Bereiche pro Datei.|  
+|EnableCommenting|REG_DWORD|0-1|Unterstützung für die ausgewählte Textblöcke auskommentieren und auch Unterstützung für die Kommentierung Textauswahl impliziert.|  
+|EnableFormatSelection|REG_DWORD|0-1|Unterstützung für die Formatierung von Text wie z. B. automatischer-Einzug, oder die Position geschweifter Klammern anpassen.|  
+|AutoOutlining|REG_DWORD|0-1|Unterstützung für eine Gliederung (Bereiche, die reduziert werden können).|  
+|MaxRegions|REG_DWORD|0-n-Gerät|Die maximale Anzahl der ausgeblendeten Bereiche pro Datei.|  
   
 ```  
 ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\  

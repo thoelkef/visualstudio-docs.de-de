@@ -1,5 +1,5 @@
 ---
-title: Source Control VSPackage-Architektur | Microsoft Docs
+title: Datenquelle der Architektur des VSPackage-Steuerelements | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a423b270eb8a26e9573f957da48915db37bf6851
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8a6b4c1e36f092bce89c57a2ead07a9e1a96a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884133"
 ---
-# <a name="source-control-vspackage-architecture"></a>Datenquellen-Steuerarchitektur VSPackage
-Ein Paket für die quellcodeverwaltung ist eine VSPackage verwendet, die Dienste, von denen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE bietet. Im Gegenzug stellt ein Datenquellen-Steuerelement Paket seine Funktionalität als einen quellcodeverwaltungsdienst bereit. Darüber hinaus ein Datenquellen-Steuerelement Paket ist ein flexibler Alternative als ein Quellcodeverwaltungs-Plug-In für die Integration der quellcodeverwaltung in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="source-control-vspackage-architecture"></a>Architektur von Quellcodeverwaltungs-VSPackages
+Ein Paket für die quellcodeverwaltung ist eine VSPackage, das verwendet Dienste, die die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE bietet. Im Gegenzug stellt ein Paket für die quellcodeverwaltung seine Funktionalität als einen quellcodeverwaltungsdienst bereit. Darüber hinaus ist ein Paket für die quellcodeverwaltung als ein Quellcodeverwaltungs-Plug-In für die Integration der quellcodeverwaltung in eine stärker ausbauen Alternative [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Von einem strengen Vertrag hält sich in ein Quellcodeverwaltungs-Plug-in, das die Quelle Steuerelement-Plug-in-API implementiert. Beispielsweise ein plug-in kann nicht ersetzen Sie die standardmäßige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Benutzeroberfläche (UI). Darüber hinaus wird nicht die Datenquellen-Steuerelement-Plug-in-API für ein plug-in, das einen eigenen Steuerelement Quellmodell implementieren aktiviert. Ein Paket quellcodeverwaltung überwindet jedoch beide dieser Einschränkungen. Ein quellcodeverwaltung-Paket enthält die vollständige Kontrolle über die Quelle Steuerelement Erfahrungen aus einem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzer. Darüber hinaus eine quellcodeverwaltung Paket kann eigene Datenquellensteuerelement-Modell und die Logik, und es kann alle die Datenquellen-Steuerelement-bezogene Benutzeroberflächen definieren.  
+ Hält einen strengen Vertrag ein Quellcodeverwaltungs-Plug-in, der die Source-Plug-in-API implementiert. Beispielsweise ein plug-in kann nicht ersetzen Sie die standardmäßige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche (UI). Darüber hinaus kann nicht die Source-Plug-in-API für ein plug-in, um eine eigene quellcodeverwaltungmodell implementieren werden. Ein Paket quellcodeverwaltung überwindet jedoch diese beiden Einschränkungen. Ein Paket für die quellcodeverwaltung hat vollständige Kontrolle über die Quelle Steuerelement benutzerfreundlichkeit ein [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzer. Darüber hinaus kann ein Paket für die quellcodeverwaltung verwenden, eigene quellcodeverwaltungmodell und Logik, und es kann alle vorhandenen Benutzer-Quellschnittstellen definieren.  
   
-## <a name="source-control-package-components"></a>Quellcodeverwaltung Paketkomponenten  
- Wie in der Architekturdiagramm dargestellt eine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponente, die mit dem Namen der Quelle Steuerelement Stub ist ein VSPackage, die ein Paket quellcodeverwaltung mit integriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+## <a name="source-control-package-components"></a>Quellcodeverwaltung-Paketkomponenten  
+ Siehe das Architekturdiagramm einer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponente, die mit dem Namen der Quellcode-Verwaltungsstub ist ein VSPackage, das ein Paket der quellcodeverwaltung mit integriert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Source Control Stub behandelt die folgenden Aufgaben.  
+ Quellcode-Verwaltungsstub behandelt die folgenden Aufgaben.  
   
--   Stellt die allgemeine Benutzeroberfläche, die für die quellcodeverwaltung für die Registrierung erforderlich ist.  
+- Stellt die allgemeine Benutzeroberfläche, die für die quellcodeverwaltung paketregistrierung erforderlich ist.  
   
--   Lädt ein Paket für die quellcodeverwaltung.  
+- Lädt ein Paket für die quellcodeverwaltung.  
   
--   Ein Paket für die quellcodeverwaltung festgelegt als aktiv/inaktiv.  
+- Ein Paket für die quellcodeverwaltung festgelegt als aktiv/inaktiv.  
   
- Source Control Stub für den Dienst aktiv für das Paket quellcodeverwaltung sucht und leitet alle eingehenden Dienstaufrufe aus der IDE für das Paket.  
+  Quellcode-Verwaltungsstub sucht nach dem aktiven Dienst für das Paket für die quellcodeverwaltung und leitet alle eingehenden Dienstaufrufe, aus der IDE, die dem Paket.  
   
- Das Quellcodeverwaltungspaket-Adapter ist ein spezieller Quellcodeverwaltungs-Paket, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bereitstellt. Dieses Paket ist die zentrale Komponente für die Unterstützung von Source Control-Plug-ins basierend auf der Quelle Steuerelement-Plug-in-API. Wenn ein Quellcodeverwaltungs-Plug-in den aktiven-Plug-in ist, sendet Stub des Datenquellen-Steuerelement seine Ereignisse an das Quellcodeverwaltungspaket-Adapter. Wiederum das Quellcodeverwaltungspaket-Adapter kommuniziert mit dem Datenquellen-Steuerelement-Plug-in mithilfe der Datenquellen-Steuerelement-Plug-in-API und stellt auch eine Benutzeroberfläche, die für alle Datenquellen-Steuerelement-Plug-ins gemein sind.  
+  Das Quellcodeverwaltungspaket-Adapter ist ein spezielles Datenquellen-Steuerelement zu verpacken, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält. Dieses Paket ist die zentrale Komponente für die Unterstützung von Quellcodeverwaltungs-Plug-ins basierend auf der Source-Plug-in-API. Wenn ein Quellcodeverwaltungs-Plug-in den aktiven-Plug-in ist, sendet der Quellcode-Verwaltungsstub der Ereignisse an das Quellcodeverwaltungspaket-Adapter. Im Gegenzug das Quellcodeverwaltungspaket-Adapter kommuniziert mit das Quellcodeverwaltungs-Plug-in, indem Sie mit der Source-Plug-in-API und stellt auch eine Benutzeroberfläche, die für alle Quellcodeverwaltungs-Plug-ins ist.  
   
- Wenn ein Paket für die quellcodeverwaltung für die active-Paket ist, andererseits, Stub des Datenquellen-Steuerelement direkt kommuniziert mit dem Paket mithilfe der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Quellcodeverwaltung Paket-Schnittstellen. Das Paket für die quellcodeverwaltung ist verantwortlich für das Hosten von eigenen quellcodeverwaltung UI.  
+  Wenn ein Paket für die quellcodeverwaltung aktiven Pakets ist, auf der anderen Seite der Quellcode-Verwaltungsstub kommuniziert direkt mit dem Paket mithilfe der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Source-Control-Paket-Schnittstellen. Die quellcodeverwaltung-Paket ist ein eigene Benutzeroberfläche des Datenquellen-Steuerelement hostet.  
   
- ![Grafik zur quellverwaltungsarchitektur](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![Architektur des Steuerelements Quellgrafik](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- Für ein Paket quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcode-Steuerelement oder eine API für die Integration nicht bereitstellt. Vergleichen Sie dies mit dem Ansatz beschrieben, die in [erstellen eine Datenquellen-Steuerelement-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md) , in dem das Quellsteuerelement-Plug-in hat eine feste Gruppe von Funktionen und Rückrufe zu implementieren.  
+  Für ein Paket quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt keinen Quellcode-Steuerelement oder eine API zur Integration. Vergleichen Sie dies mit dem Ansatz beschrieben, die in [ein Datenquellen-Steuerelement-Plug-in erstellen](../../extensibility/internals/creating-a-source-control-plug-in.md) , in dem das Quellcodeverwaltungs-Plug-in hat eine feste Gruppe von Funktionen und Rückrufe zu implementieren.  
   
- Wie alle VSPackage ist ein Paket für die quellcodeverwaltung ein COM-Objekt, das erstellt werden kann `CoCreateInstance`. Das VSPackage stellt selbst zur Verfügung, um die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE durch die Implementierung <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Wenn eine Instanz erstellt wurde, erhält eine VSPackage einen Website-Zeiger und einer <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, die die VSPackage-Zugriff auf die verfügbaren Dienste und Schnittstellen in der IDE bereitstellt.  
+  Wie jedem VSPackage ist ein Paket für die quellcodeverwaltung ein COM-Objekt, das erstellt werden kann `CoCreateInstance`. Das VSPackage wird für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE durch die Implementierung <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Wenn eine Instanz erstellt wurde, erhält eine VSPackage einen Website-Zeiger und eine <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, die den VSPackage-Zugriff auf die verfügbaren Dienste und Schnittstellen in der IDE bereitstellt.  
   
- Schreiben ein VSPackage-basierte quellcodeverwaltung Paket erfordert Erweiterte Programmierung Kenntnisse als das Schreiben einer Quelle Steuerelement-Plug-in-API-basierte-Plug-in.  
+  Schreiben ein VSPackage-basierte quellcodeverwaltung Paket erfordert Erweiterte Programmierung Kenntnisse als das Schreiben einer Source Control-Plug-in-API-basierte-Plug-in.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876528"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen Gewusst wie: Abfangen ein Klicks auf eine Form oder ein Symbol für Decorator-Element. Sie können abfangen, Klicks, Doppelklicks, zieht, und andere anwendungsstiftbewegungen, und stellen Sie das Element reagieren.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Abfangen von klickt und zieht in CompartmentShape-Listen
  Im folgende Beispiel kann Benutzer Elemente in einem Depot-Form neu anordnen, indem Sie sie ziehen. So führen Sie diesen Code aus:
 
-1.  Erstellen Sie eine neue DSL-Projektmappe mithilfe der **Klassendiagramme** Projektmappe (Vorlage).
+1. Erstellen Sie eine neue DSL-Projektmappe mithilfe der **Klassendiagramme** Projektmappe (Vorlage).
 
-     Sie können auch mit einer Lösung für Ihre eigenen arbeiten, die Depot-Formen enthält. Dieser Code wird vorausgesetzt, dass eine einbettende Beziehung zwischen den Modellelementen, dargestellt durch die Form und die Elemente in der Depot-Listenelementen dargestellt.
+    Sie können auch mit einer Lösung für Ihre eigenen arbeiten, die Depot-Formen enthält. Dieser Code wird vorausgesetzt, dass eine einbettende Beziehung zwischen den Modellelementen, dargestellt durch die Form und die Elemente in der Depot-Listenelementen dargestellt.
 
-2.  Legen Sie die **generiert doppelte Ableitungen** -Eigenschaft der depotform.
+2. Legen Sie die **generiert doppelte Ableitungen** -Eigenschaft der depotform.
 
-3.  Fügen Sie diesen Code in einer Datei in die **Dsl** Projekt.
+3. Fügen Sie diesen Code in einer Datei in die **Dsl** Projekt.
 
-4.  Passen Sie die Domänennamen-Klasse und-Form in diesem Code entsprechend Ihrer eigenen DSL.
+4. Passen Sie die Domänennamen-Klasse und-Form in diesem Code entsprechend Ihrer eigenen DSL.
 
- Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.
+   Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.
 
 -   Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Siehe auch

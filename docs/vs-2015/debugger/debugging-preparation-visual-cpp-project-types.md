@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868578"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung zum Debuggen: Visual C++-Projekttypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Win32-Projekte](#BKMK_Win32_Projects)  
   
--   [Debuggen eine C- oder C++ geschriebene Win32-Anwendung](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [Debuggen eine C- oder C++ geschriebene Win32-Anwendung](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [Eine Debugkonfiguration manuell festlegen](#BKMK_To_manually_set_a_Debug_configuration)  
+- [Eine Debugkonfiguration manuell festlegen](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Windows Forms-Anwendungen (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Windows Forms-Anwendungen (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> Empfohlene eigenschafteneinstellungen  
  Bestimmte Eigenschaften sollten für alle Szenarios des nicht verwalteten Debuggens gleich festgelegt werden. Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen. Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Eine Debugkonfiguration manuell festlegen  
   
-1.  Auf der **Ansicht** Menü klicken Sie auf **Eigenschaftenseiten**.  
+1. Auf der **Ansicht** Menü klicken Sie auf **Eigenschaftenseiten**.  
   
-2.  Klicken Sie auf die **Konfigurationseigenschaften** Knoten aus, um es zu öffnen, ist dies nicht bereits  
+2. Klicken Sie auf die **Konfigurationseigenschaften** Knoten aus, um es zu öffnen, ist dies nicht bereits  
   
-3.  Wählen Sie **allgemeine**, und legen Sie den Wert, der die **Ausgabe** Datenzeile zu aktivieren, **Debuggen**.  
+3. Wählen Sie **allgemeine**, und legen Sie den Wert, der die **Ausgabe** Datenzeile zu aktivieren, **Debuggen**.  
   
-4.  Öffnen der **C/C++-** Knoten, und wählen **allgemeine**.  
+4. Öffnen der **C/C++-** Knoten, und wählen **allgemeine**.  
   
-     In der **Debuggen** Zeile, die Sie angeben, dass den Typ der Debuginformationen vom Compiler generiert werden soll. Werte ausgewählt werden kann, sind **Programmdatenbank (/ Zi)** oder **Programmdatenbank zum Bearbeiten und Fortfahren (/ Zi)**.  
+    In der **Debuggen** Zeile, die Sie angeben, dass den Typ der Debuginformationen vom Compiler generiert werden soll. Werte ausgewählt werden kann, sind **Programmdatenbank (/ Zi)** oder **Programmdatenbank zum Bearbeiten und Fortfahren (/ Zi)**.  
   
-5.  Wählen Sie **Optimierung**, und klicken Sie in der **Optimierung** Zeile **deaktiviert (/ 0d)** aus der Dropdown-Liste.  
+5. Wählen Sie **Optimierung**, und klicken Sie in der **Optimierung** Zeile **deaktiviert (/ 0d)** aus der Dropdown-Liste.  
   
-     Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im Disassembly-Fenster angezeigte Code aus optimiertem Code generiert wurde, der u. U. nicht mit dem Inhalt der Quellcodefenster übereinstimmt. Funktionen wie die schrittweise Ausführung zeigen die Haltepunkte und den Ausführungspunkt möglicherweise nicht korrekt an.  
+    Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im Disassembly-Fenster angezeigte Code aus optimiertem Code generiert wurde, der u. U. nicht mit dem Inhalt der Quellcodefenster übereinstimmt. Funktionen wie die schrittweise Ausführung zeigen die Haltepunkte und den Ausführungspunkt möglicherweise nicht korrekt an.  
   
-6.  Öffnen der **Linker** Knoten, und wählen **Debuggen**. In der ersten **generieren** Zeile **Ja (/ DEBUG)** aus der Dropdown-Liste. Wählen Sie beim Debuggen immer diese Einstellung.  
+6. Öffnen der **Linker** Knoten, und wählen **Debuggen**. In der ersten **generieren** Zeile **Ja (/ DEBUG)** aus der Dropdown-Liste. Wählen Sie beim Debuggen immer diese Einstellung.  
   
- Weitere Informationen finden Sie unter[Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Weitere Informationen finden Sie unter[Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)  
  Die **Windows Forms-Anwendung (.NET)** Vorlage erstellt eine [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms-Anwendung. Weitere Informationen finden Sie unter [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

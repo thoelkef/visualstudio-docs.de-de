@@ -15,12 +15,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55bd1e82af3e87fc7845bd122794888a24ca7f02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c8589afcd64e62e2869283cb4d2a25835b672e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870587"
 ---
 # <a name="inside-the-editor"></a>Im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,42 +29,42 @@ Der Editor besteht aus einer Reihe von verschiedenen Subsysteme enthalten, die d
   
  Diese Abschnitte beschreiben die verschiedenen Aspekte der Editor:  
   
--   [Übersicht über die Subsysteme](../extensibility/inside-the-editor.md#overview)  
+- [Übersicht über die Subsysteme](../extensibility/inside-the-editor.md#overview)  
   
--   [Das Textmodell](../extensibility/inside-the-editor.md#textmodel)  
+- [Das Textmodell](../extensibility/inside-the-editor.md#textmodel)  
   
--   [Die Textansicht](../extensibility/inside-the-editor.md#textview)  
+- [Die Textansicht](../extensibility/inside-the-editor.md#textview)  
   
- Diese Abschnitte beschreiben die Funktionen des Editors:  
+  Diese Abschnitte beschreiben die Funktionen des Editors:  
   
--   [Tags und Klassifizierungen](../extensibility/inside-the-editor.md#tagsandclassifiers)  
+- [Tags und Klassifizierungen](../extensibility/inside-the-editor.md#tagsandclassifiers)  
   
--   [Zusatzelemente](../extensibility/inside-the-editor.md#adornments)  
+- [Zusatzelemente](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projektion](../extensibility/inside-the-editor.md#projection)  
+- [Projektion](../extensibility/inside-the-editor.md#projection)  
   
--   [Gliedern](../extensibility/inside-the-editor.md#outlining)  
+- [Gliedern](../extensibility/inside-the-editor.md#outlining)  
   
--   [Mausbindungen](../extensibility/inside-the-editor.md#mousebindings)  
+- [Mausbindungen](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Editor-Vorgänge](../extensibility/inside-the-editor.md#editoroperations)  
+- [Editor-Vorgänge](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ##  <a name="overview"></a> Übersicht über die Subsysteme  
   
 ### <a name="text-model-subsystem"></a>Text-Modell-Subsystem  
  Das Subsystem des Text-Modell dient, die Text darstellt, und aktivieren die Bearbeitung. Das Subsystem des Text-Modell enthält die <xref:Microsoft.VisualStudio.Text.ITextBuffer> -Schnittstelle, die die Sequenz von Zeichen beschreibt, die vom Editor angezeigt werden soll. Dieser Text kann geändert, nachverfolgt und auf viele Arten bearbeitet werden. Der Textmodell bietet auch Typen, für die folgenden Aspekte:  
   
--   Ein Dienst, der Text mit Dateien zugeordnet, und verwaltet werden, lesen und Schreiben sie im Dateisystem.  
+- Ein Dienst, der Text mit Dateien zugeordnet, und verwaltet werden, lesen und Schreiben sie im Dateisystem.  
   
--   Eine differenzierende Dienst, der die minimale Unterschiede zwischen zwei Sequenzen von Objekten gefunden werden.  
+- Eine differenzierende Dienst, der die minimale Unterschiede zwischen zwei Sequenzen von Objekten gefunden werden.  
   
--   Ein System zum Beschreiben des Texts in einem Puffer im Hinblick auf eine Teilmenge des Texts in andere Puffer.  
+- Ein System zum Beschreiben des Texts in einem Puffer im Hinblick auf eine Teilmenge des Texts in andere Puffer.  
   
- Das Subsystem des Text-Modell ist der Benutzer-Benutzeroberfläche (UI)-Konzepte. Beispielsweise ist nicht verantwortlich für das Formatieren von Text oder das Textlayout, und sie hat keine Kenntnisse visual Zusatzelemente, die den Text zugeordnet sein können.  
+  Das Subsystem des Text-Modell ist der Benutzer-Benutzeroberfläche (UI)-Konzepte. Beispielsweise ist nicht verantwortlich für das Formatieren von Text oder das Textlayout, und sie hat keine Kenntnisse visual Zusatzelemente, die den Text zugeordnet sein können.  
   
- Die öffentlichen Typen des Subsystems, Text-Modell befinden sich in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtilitiy.dll, die nur von der .NET Framework-Basisklassenbibliothek und das Managed Extensibility Framework (MEF) abhängig sind.  
+  Die öffentlichen Typen des Subsystems, Text-Modell befinden sich in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtilitiy.dll, die nur von der .NET Framework-Basisklassenbibliothek und das Managed Extensibility Framework (MEF) abhängig sind.  
   
 ### <a name="text-view-subsystem"></a>Text anzeigen-Subsystem  
  Das Text-Ansicht-Subsystem ist verantwortlich für das Formatieren und Anzeigen von Text. Die Typen dieses Subsystem Abfragesignaturen wird in zwei Ebenen, je nachdem, ob die Typen in Windows Presentation Foundation (WPF) basieren. Die wichtigsten Typen sind <xref:Microsoft.VisualStudio.Text.Editor.ITextView> und <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, die steuern, den Satz von Textzeilen ab, die angezeigt werden, und auch die Einfügemarke, die Auswahl und die Funktionen zum Verzieren von Text mithilfe von WPF-UI-Elementen. Dieses Subsystem sorgt auch, dass Ränder um den Text im angezeigt werden kann. Dieser Ränder können erweitert werden, und Sie können verschiedene Arten von Inhalten und visuelle Effekte enthalten. Beispiele für Ränder sind Zeile Anzahl zeigt und Bildlaufleisten.  

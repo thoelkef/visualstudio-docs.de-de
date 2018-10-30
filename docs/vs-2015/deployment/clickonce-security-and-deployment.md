@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898173"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232101"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung löst drei grundlegende Probleme:  
   
--   **Probleme beim Aktualisieren von Anwendungen.** Mit Microsoft Windows Installer-Bereitstellung Wenn eine Anwendung aktualisiert wird, der Benutzer kann Installieren eines Updates, die eine Msp-Datei, und klicken Sie auf das installierte Produkt anwenden; mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung, Sie können angeben, Updates automatisch. Nur die Teile der Anwendung, die geändert wurden, werden heruntergeladen, und klicken Sie dann die vollständige aktualisierte Anwendung neu installiert wird über einen neuen Ordner für die Seite-an-Seite.  
+- **Probleme beim Aktualisieren von Anwendungen.** Mit Microsoft Windows Installer-Bereitstellung Wenn eine Anwendung aktualisiert wird, der Benutzer kann Installieren eines Updates, die eine Msp-Datei, und klicken Sie auf das installierte Produkt anwenden; mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung, Sie können angeben, Updates automatisch. Nur die Teile der Anwendung, die geändert wurden, werden heruntergeladen, und klicken Sie dann die vollständige aktualisierte Anwendung neu installiert wird über einen neuen Ordner für die Seite-an-Seite.  
   
--   **Auswirkungen auf dem Computer des Benutzers.** Mit Windows Installer-Bereitstellung nutzen die Anwendungen häufig auf freigegebene Komponenten, mit einem möglichen Konflikte bei der versionsverwaltung; mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung, jede Anwendung ist in sich geschlossen und verursacht keine Konflikte mit anderen Anwendungen.  
+- **Auswirkungen auf dem Computer des Benutzers.** Mit Windows Installer-Bereitstellung nutzen die Anwendungen häufig auf freigegebene Komponenten, mit einem möglichen Konflikte bei der versionsverwaltung; mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung, jede Anwendung ist in sich geschlossen und verursacht keine Konflikte mit anderen Anwendungen.  
   
--   **Die Sicherheitsberechtigungen.** Windows Installer-Bereitstellung sind Administratorrechte erforderlich und kann nur Benutzer mit beschränkten Rechten installiert werden. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung können Benutzer ohne Administratorrechte installieren und nur die Codezugriffssicherheits-Berechtigungen erforderlich, dass die Anwendung gewährt.  
+- **Die Sicherheitsberechtigungen.** Windows Installer-Bereitstellung sind Administratorrechte erforderlich und kann nur Benutzer mit beschränkten Rechten installiert werden. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung können Benutzer ohne Administratorrechte installieren und nur die Codezugriffssicherheits-Berechtigungen erforderlich, dass die Anwendung gewährt.  
   
- In der Vergangenheit verursacht diese Probleme manchmal Entwickler zum Erstellen von Web-Anwendungen anstelle von Windows-basierte Anwendungen, Einbußen bei der eine umfangreiche Benutzeroberfläche für die einfache Installation entscheiden. Mithilfe von Anwendungen, die mit bereitgestellt [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], können Sie das beste aus beiden Technologien haben.  
+  In der Vergangenheit verursacht diese Probleme manchmal Entwickler zum Erstellen von Web-Anwendungen anstelle von Windows-basierte Anwendungen, Einbußen bei der eine umfangreiche Benutzeroberfläche für die einfache Installation entscheiden. Mithilfe von Anwendungen, die mit bereitgestellt [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], können Sie das beste aus beiden Technologien haben.  
   
 ## <a name="what-is-a-clickonce-application"></a>Was ist eine ClickOnce-Anwendung?  
  Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ist, alle Windows Presentation Foundation (.xbap), Windows Forms (.exe), Konsolenanwendung (.exe) oder Office-Projektmappe (.dll) mit veröffentlicht [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Technologie. Können Sie veröffentlichen eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung auf drei verschiedene Arten: von einer Webseite, aus einer Dateifreigabe im Netzwerk oder von Medien, wie eine CD-ROM. Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung auf einem Computer des Endbenutzers installiert und lokal ausführen, auch wenn der Computer offline ist, oder sie kann nur online verfügbares ohne dass Dateien auf dem Computer des Endbenutzers ausgeführt werden kann. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).  

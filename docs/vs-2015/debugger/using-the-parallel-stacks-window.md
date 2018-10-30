@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891725"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Verwenden des Fensters "Parallele Stapel"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwen
 ## <a name="tasks-view"></a>Aufgabenansicht  
  Wenn Ihre Anwendung verwendet <xref:System.Threading.Tasks.Task?displayProperty=fullName> -Objekten (verwalteter Code) oder `task_handle` Objekte (nativer Code) ausdrückt, können Sie im Kombinationsfeld, in der Symbolleiste des Fensters Parallele Stapel, wechseln zu *Aufgabenansicht*. In der Aufgabenansicht werden Aufruflisten von Aufgaben anstatt von Threads angezeigt. Die Aufgabenansicht unterscheidet sich von der Threadansicht wie folgt:  
   
--   Aufruflisten von Threads, die keine Aufgaben ausführen, werden nicht angezeigt.  
+- Aufruflisten von Threads, die keine Aufgaben ausführen, werden nicht angezeigt.  
   
--   Aufruflisten von Threads, die Aufgaben ausführen, sind oben und unten abgeschnitten, um die Frames anzuzeigen, die für die Aufgabe die größte Relevanz besitzen.  
+- Aufruflisten von Threads, die Aufgaben ausführen, sind oben und unten abgeschnitten, um die Frames anzuzeigen, die für die Aufgabe die größte Relevanz besitzen.  
   
--   Wenn sich mehrere Aufgaben in einem Thread befinden, werden die Aufruflisten dieser Aufgaben auf separate Knoten aufgeteilt.  
+- Wenn sich mehrere Aufgaben in einem Thread befinden, werden die Aufruflisten dieser Aufgaben auf separate Knoten aufgeteilt.  
   
- In der folgenden Abbildung wird rechts die Aufgabenansicht von Parallele Stapel angezeigt, und auf der linken Seite ist die entsprechende Threadansicht dargestellt.  
+  In der folgenden Abbildung wird rechts die Aufgabenansicht von Parallele Stapel angezeigt, und auf der linken Seite ist die entsprechende Threadansicht dargestellt.  
   
- ![Aufgabenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Aufgabenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Um die gesamte Aufrufliste anzuzeigen, wechseln Sie einfach zur Threadansicht zurück durch einen Rechtsklick auf einen Stapelrahmen, und klicken Sie dann auf **zu Thread wechseln**.  
+  Um die gesamte Aufrufliste anzuzeigen, wechseln Sie einfach zur Threadansicht zurück durch einen Rechtsklick auf einen Stapelrahmen, und klicken Sie dann auf **zu Thread wechseln**.  
   
- Wie bereits in der obigen Tabelle erläutert, können Sie weitere Informationen aufrufen, indem Sie mit dem Mauszeiger auf einen Methodenkontext zeigen. In der folgenden Abbildung werden die Informationen in der QuickInfo für die Threadansicht und die Aufgabenansicht dargestellt.  
+  Wie bereits in der obigen Tabelle erläutert, können Sie weitere Informationen aufrufen, indem Sie mit dem Mauszeiger auf einen Methodenkontext zeigen. In der folgenden Abbildung werden die Informationen in der QuickInfo für die Threadansicht und die Aufgabenansicht dargestellt.  
   
- ![QuickInfos im Fenster "Parallele Stapel"](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![QuickInfos im Fenster "Parallele Stapel"](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Methodenansicht  
  Sowohl in der Threadansicht als auch in der Aufgabenansicht können Sie das Diagramm zur aktuellen Methode pivotieren, indem Sie auf der Symbolleiste auf das Symbol Methodenansicht klicken. In der Methodenansicht sind auf einen Blick alle Methoden für sämtliche Threads angezeigt, die entweder Aufrufer oder Aufgerufene der aktuellen Methode sind. Die folgende Abbildung zeigt eine Threadansicht. Zudem wird veranschaulicht, wie dieselben Informationen in der Methodenansicht dargestellt werden.  

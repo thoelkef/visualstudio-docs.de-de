@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833004"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
 In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte dieses Typs in mehreren Versionen von Visual Studio geladen werden. Sie können aber auch verhindern, dass Projekte dieses Typs in einer früheren Version von Visual Studio geladen werden. Außerdem können Sie für dieses Projekt ermöglichen, sich selbst für eine neuere Version zu identifizieren für den Fall, dass das Projekt repariert, konvertiert oder als veraltet deklariert werden muss.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Wird `pUpgradeRequired` von dieser Methode auf TRUE festgelegt, und gibt die Methode den Wert `S_OK`zurück, wird das Ergebnis als „Upgrade“ behandelt, weshalb die Methode ein Upgradeflag auf den Wert `VSPUVF_PROJECT_ONEWAYUPGRADE`festgelegt, der weiter unten in diesem Thema beschrieben wird. Die folgenden Rückgabewerte werden unterstützt, wenn diese ältere Methode verwendet wird, allerdings nur, wenn `pUpgradeRequired` auf TRUE festgelegt ist:  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_ONEWAYUPGRADE`, das weiter unten in diesem Thema beschrieben wird.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_ONEWAYUPGRADE`, das weiter unten in diesem Thema beschrieben wird.  
   
- Die neuen Implementierungen in `IVsProjectUpgradeViaFactory4` und `IVsProjectFlavorUpgradeViaFactory2` ermöglichen es, den Migrationstyp genauer anzugeben.  
+   Die neuen Implementierungen in `IVsProjectUpgradeViaFactory4` und `IVsProjectFlavorUpgradeViaFactory2` ermöglichen es, den Migrationstyp genauer anzugeben.  
   
 > [!NOTE]
 >  Sie können das Ergebnis der Kompatibilitätsüberprüfung durch die `UpgradeProject_CheckOnly` -Methode zwischenspeichern, sodass es auch für den späteren Aufruf von `CreateProject`verwendet werden kann.  

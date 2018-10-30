@@ -1,7 +1,7 @@
 ---
-title: Anzeigen von Arbeitsspeicher für Variablen im Debugger | Microsoft Docs
+title: Anzeigen von Arbeitsspeicher für Variablen im Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,97 +25,98 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477546"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050111"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-Debugger
-Die **Arbeitsspeicher** Fenster bietet einen Einblick in den belegten Speicherplatz, der von der Anwendung verwendet wird. Die **Überwachen** Fenster **Schnellüberwachung** Dialogfeld **"Auto"** Fenster und **"lokal"** Fenster zeigen Sie den Inhalt von Variablen, die an bestimmten Orten im Arbeitsspeicher gespeichert. Aber die **Arbeitsspeicher** Fenster zeigt das umfangreiche Bild. Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen (beispielsweise Puffer oder umfangreiche Zeichenfolgen), die in den anderen Fenstern nicht gut dargestellt werden. Allerdings die **Arbeitsspeicher** Fenster ist nicht beschränkt auf das Anzeigen von Daten. Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-debugger
+
+Während des Debuggens die **Arbeitsspeicher** Fenster zeigt den Speicherplatz Ihrer app verwendet. 
+
+Debuggerfenster wie **Watch**, **"Auto"**, **"lokal"**, und die **Schnellüberwachung** Dialogfeld wird angezeigt, Variablen, die auf bestimmten gespeichert werden die Speicherorte im Arbeitsspeicher. Die **Arbeitsspeicher** Fenster erfahren Sie, den gewonnenen Gesamteindruck berücksichtigen. Die Speicheransicht ist besonders angenehm beim Untersuchen von großer Datenmengen (Puffer oder umfangreiche Zeichenfolgen, z. B.), die nicht auch in den anderen Fenstern angezeigt werden. 
+
+Die **Arbeitsspeicher** Fenster nicht auf die Anzeige von Daten beschränkt ist. Alles, was in den Speicherplatz, einschließlich Daten, Code und zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher angezeigt.  
+
+Die **Arbeitsspeicher** Fenster nicht für Skriptsprachen oder SQL-debugging verfügbar ist. Diesen Sprachen erkannt nicht das Konzept des Arbeitsspeichers.  
   
- Die **Arbeitsspeicher** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten. Die **Arbeitsspeicher** Fenster ist nicht verfügbar für Skriptsprachen oder SQL, Sprachen, die nicht das Konzept des Arbeitsspeichers erkannt wird.  
+## <a name="open-a-memory-window"></a>Öffnen Sie ein Fenster "Arbeitsspeicher"  
   
-## <a name="opening-a-memory-window"></a>Öffnen eines Arbeitsspeicherfensters  
+Anderen Debuggerfenster wie die **Arbeitsspeicher** Windows nur während einer Debugsitzung zur Verfügung stehen. 
+
+>[!IMPORTANT]
+>So aktivieren Sie die **Arbeitsspeicher** Windows **Debuggen auf Adressebene aktivieren** muss ausgewählt werden **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen** > **allgemeine**. 
+
+**Um ein Fenster "Arbeitsspeicher" zu öffnen.**
   
-#### <a name="to-open-a-memory-window"></a>So öffnen Sie ein Arbeitsspeicherfenster  
+1. Stellen Sie sicher, dass **Debuggen auf Adressebene aktivieren** ausgewählt ist **Tools** > **Optionen** (oder **Debuggen**  >  **Optionen**) > **Debuggen** > **allgemeine**. 
+   
+1. Debuggen starten, indem Sie den grünen Pfeil auswählen drücken **F5**, oder wählen Sie **Debuggen** > **Debuggen starten**.  
+   
+2. Klicken Sie unter **Debuggen** > **Windows** > **Arbeitsspeicher**Option **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3**, oder **Arbeitsspeicher 4**. (Einige Editionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten nur eine **Arbeitsspeicher** Fenster.)  
+
+## <a name="move-around-in-the-memory-window"></a>Navigieren Sie in das Fenster "Arbeitsspeicher"  
+
+Der Adressraum eines Computers ist groß und leicht verloren gehen können Ihre aktuelle Position einen Bildlauf der **Arbeitsspeicher** Fenster. 
+
+Höhere Speicheradressen werden unten im Fenster angezeigt. Um eine höhere Adresse anzuzeigen, scrollen Sie nach unten. Um eine niedrigere Adresse anzuzeigen, scrollen Sie nach oben.  
+
+Wechseln Sie sofort zu einer bestimmten Adresse in der **Arbeitsspeicher** Fenster mithilfe von Drag & Drop oder durch Eingabe der Adresse in der **Adresse** Feld. Die **Adresse** Feld akzeptiert, alphanumerische Adressen und -Ausdrücke, wie z. B. Adressen ausgewertet `e.User.NonroamableId`. 
+
+Erzwingen Sie sofortige erneute Auswertung eines Ausdrucks in der **Adresse** Feld, wählen Sie den gerundet Pfeil **automatisch neu auswerten** Symbol. 
+
+In der Standardeinstellung die **Arbeitsspeicher** Fenster behandelt **Adresse** Ausdrücke als live-Ausdrücke, erneut ausgewertet, wenn die app ausgeführt wird. Live-Ausdrücke hilfreich, z. B., den Arbeitsspeicher anzuzeigen, der durch eine Zeigervariable berührt wird.  
+
+**Ziehen und ablegen, um an einem Speicherort zu verschieben:**  
+   
+1. Wählen Sie in einem Debuggerfenster eine Speicheradresse oder eine Zeigervariable, die eine Speicheradresse enthält.  
+   
+2. Drag & drop die Adresse oder den Zeiger in den **Arbeitsspeicher** Fenster. Diese Adresse wird dann der **Adresse** Feld, und die **Arbeitsspeicher** Fenster angepasst wird, um die Adresse der oben angezeigt. 
   
-1.  Beginnen Sie mit dem Debuggen, sofern Sie den Debugmodus noch nicht ausgewählt haben.  
+**Um an einem Speicherort zu verschieben, indem Sie sie in das Adressfeld eingeben:**
   
-2.  In der **Debuggen** Sie im Menü **Windows**. Zeigen Sie dann auf **Arbeitsspeicher** , und klicken Sie dann auf **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3**, oder **Arbeitsspeicher 4**. (Technisch anspruchsvolle Editionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben nur einen einzigen **Arbeitsspeicher** Fenster. Wenn Sie eine dieser Editionen verwenden, klicken Sie einfach **Arbeitsspeicher**.)  
+- Geben oder fügen Sie die Adresse oder den Ausdruck in der **Adresse** Feld, und drücken Sie **EINGABETASTE**, oder wählen sie in der Dropdownliste in der **Adresse** Feld. Die **Arbeitsspeicher** Fenster angepasst wird, um die Adresse der oben angezeigt.
   
-## <a name="paging-in-the-memory-window"></a>Paging im Fenster "Arbeitsspeicher"  
- Die **Arbeitsspeicher** Fenster verfügt über eine vertikale Bildlaufleiste, die eine nicht standardmäßige Funktionsweise besitzt. Der Adressbereich eines modernen Computers ist sehr groß, und eine Suche kann leicht fehlschlagen, wenn Sie das Bildlauffeld der Bildlaufleiste an eine zufällige Position ziehen. Aus diesem Grunde verhält sich das Bildlauffeld, als wäre es beidseitig mit einer Zugfeder verbunden, und verbleibt stets in der Mitte der Bildlaufleiste. In Anwendungen, die in nativem Code geschrieben sind, können Sie einen Bildlauf nach oben oder unten durchführen; die Durchführung eines freien Bildlaufs ist jedoch nicht möglich.  
+## <a name="customize-the-memory-window"></a>Passen Sie das Fenster "Arbeitsspeicher" 
+
+In der Standardeinstellung Speicherinhalt angezeigt als 1-Byte-Ganzzahlen im Hexadezimalformat angegeben werden, und die Fensterbreite bestimmt die Anzahl der Spalten angezeigt. Sie können anpassen, wie die **Arbeitsspeicher** Speicherinhalts im Fenster.  
   
- Höhere Speicheradressen werden unten im Fenster angezeigt. Um eine höhere Adresse anzuzeigen, führen Sie einen Bildlauf nach unten anstatt nach oben aus.  
+**So ändern Sie das Format des Speicherinhalts**  
   
-#### <a name="to-page-up-or-down-in-memory"></a>So führen Sie im Speicher einen Bildlauf nach oben oder nach unten durch  
+-  Mit der rechten Maustaste den **Arbeitsspeicher** Fenster, und wählen Sie die Formate, die Sie möchten, aus dem Kontextmenü.  
   
-1.  Klicken Sie unter dem Ziehpunkt in der vertikalen Bildlaufleiste, um einen Bildlauf nach unten auszuführen (Navigieren zu einer höheren Speicheradresse).  
+**So ändern Sie die Anzahl der Spalten in das Fenster "Arbeitsspeicher"**
   
-2.  Für einen Bildlauf nach oben (Navigieren zu einer niedrigeren Speicheradresse) klicken Sie über dem Bildlauffeld auf der vertikalen Bildlaufleiste.  
+- Wählen Sie den Dropdownpfeil neben der **Spalten** ein, und wählen Sie die Anzahl der Spalten, um anzuzeigen, oder wählen Sie **automatisch** für automatische Anpassung basierend auf Fensterbreite.  
   
-## <a name="selecting-a-memory-location"></a>Auswählen eines Arbeitsspeicherorts  
- Wenn Sie sofort zu einer ausgewählten Speicherbereich wechseln möchten, können Sie dies tun, indem mithilfe eines Drag-and-Drop-Vorgangs oder bearbeiten den Wert in der **Adresse** Feld. Die **Adresse** Feld akzeptiert wird, nicht nur numerische Werte, sondern auch Ausdrücke, die als Adressen ausgewertet. Wird standardmäßig die **Arbeitsspeicher** Fenster behandelt eine **Adresse** Ausdruck als live-Ausdruck, der Ausführung des Programms erneut ausgewertet wird. Live-Ausdrücke können sehr hilfreich sein. Sie können beispielsweise dazu verwendet werden, den Speicher anzuzeigen, auf den ein Zeiger verweist.  
+Wenn Sie nicht, dass der Inhalt des möchten der **Arbeitsspeicher** Fenster ändern, wie Ihre app ausgeführt wird, können Sie die live-ausdrucksauswertung deaktivieren. 
+
+**Um live-Auswertung zu wechseln:**  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>So wählen Sie einen Arbeitsspeicherort per Drag & Drop aus  
+- Mit der rechten Maustaste den **Arbeitsspeicher** , und wählen **automatisch neu auswerten** im Kontextmenü. 
+
+  >[!NOTE]
+  >Live-Ausdruck ist eine Umschaltoption Auswertung und ist standardmäßig so auswählen **automatisch neu auswerten** ausgeschaltet. Auswählen von **automatisch neu auswerten** wird er erneut wieder eingeschaltet. 
   
-1.  Wählen Sie in einem beliebigen Fenster eine Speicheradresse oder eine Zeigervariable aus, die eine Speicheradresse enthält.  
+Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster. Sie müssen nicht den Zugriff auf die **Adresse** Feld oder eine andere Tools, wenn die Symbolleiste ausgeblendet ist.  
   
-2.  Ziehen Sie die Adresse oder ein Zeiger auf die **Arbeitsspeicher** Fenster.  
+**Um die Anzeige der Symbolleiste zu wechseln:**  
   
-#### <a name="to-select-a-memory-location-by-editing"></a>So wählen Sie eine Speicheradresse durch Eingeben aus  
+- Mit der rechten Maustaste den **Arbeitsspeicher** , und wählen **Symbolleiste anzeigen** im Kontextmenü. Je nach ihrem vorherigen Zustand wird die Symbolleiste ein- bzw. ausgeblendet.  
   
-1.  In der **Arbeitsspeicher** wählen die **Adresse** Feld.  
+## <a name="follow-a-pointer-through-memory"></a>Führen Sie einen Zeiger im Arbeitsspeicher  
+
+In systemeigenen Code-apps können Sie als live-Ausdrücke Registernamen. Zur Verfolgung des Stapels können Sie z. B. den Stapelzeiger verwenden.  
   
-2.  Geben oder fügen Sie die Adresse, die Sie verwenden möchten, finden Sie unter, und drücken dann die **EINGABETASTE**.  
+**Um einen Zeiger im Arbeitsspeicher gehen Sie folgendermaßen:**
   
-## <a name="changing-the-way-the-memory-window-displays-information"></a>Ändern der Anzeigemethode für Informationen im Fenster "Arbeitsspeicher"  
- Sie können ändern, wie die **Arbeitsspeicher** Speicherinhalts im Fenster. Standardmäßig wird der Speicherinhalt in Form einer ganzen Zahl mit 1 Byte im Hexadezimalformat angezeigt. Die Anzahl der Spalten wird automatisch durch die aktuelle Breite des Fensters bestimmt.  
+1. In der **Arbeitsspeicher** Fenster **Adresse** Geben Sie einen Zeigerausdruck, der im aktuellen Bereich ist. Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
   
-#### <a name="to-change-the-format-of-the-memory-contents"></a>So ändern Sie das Format des Speicherinhalts  
-  
-1.  Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
-  
-2.  Wählen Sie das gewünschte Format aus.  
-  
-#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>So ändern Sie die Anzahl der Spalten im Fenster "Arbeitsspeicher"  
-  
-1.  Auf der Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster, suchen Sie die **Spalten** Liste.  
-  
-2.  In der **Spalten** wählen Sie die Anzahl der Spalten, die Sie anzeigen oder auswählen möchten **automatisch** für automatische Anpassung an die Breite des Fensters anpassen.  
-  
- Wenn Sie nicht, dass der Inhalt möchten der **Arbeitsspeicher** Fenster geändert, während das Programm ausgeführt wird, können Sie die Auswertung von live-Ausdrücken deaktivieren.  
-  
-#### <a name="to-toggle-live-evaluation"></a>So schalten Sie die Liveauswertung um  
-  
-1.  Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
-  
-2.  Klicken Sie im Kontextmenü auf **automatisch neu auswerten**.  
-  
-     Wenn die Live-Auswertung aktiv ist, ist die Option ausgewählt. Indem Sie auf die Option klicken, wird die Live-Auswertung ausgeschaltet. Wenn die Live-Auswertung deaktiviert ist, ist die Option nicht ausgewählt, und indem Sie auf die Option klicken, wird die Live-Auswertung eingeschaltet.  
-  
- Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster. Sie können nicht auf das Adressfeld oder andere Tools zugreifen, wenn die Symbolleiste ausgeblendet ist.  
-  
-#### <a name="to-toggle-the-toolbar"></a>So blenden Sie die Symbolleiste ein oder aus  
-  
-1.  Mit der rechten Maustaste ein **Arbeitsspeicher** Fenster.  
-  
-2.  Klicken Sie im Kontextmenü auf **Symbolleiste anzeigen**.  
-  
-     Je nach ihrem vorherigen Zustand wird die Symbolleiste ein- bzw. ausgeblendet.  
-  
-## <a name="following-a-pointer-through-memory"></a>Verfolgen eines Zeigers im Arbeitsspeicher  
- In Anwendungen, die im systemeigenen Code geschrieben wurden, können Sie als Live-Ausdrücke Registernamen verwenden. Zur Verfolgung des Stapels können Sie z. B. den Stapelzeiger verwenden.  
-  
-#### <a name="to-follow-a-pointer-through-memory"></a>So verfolgen Sie einen Zeiger im Arbeitsspeicher  
-  
-1.  In der **Arbeitsspeicher** Fenster **Adresse** geben einen Zeigerausdruck. Die Zeigervariable muss sich im aktuellen Gültigkeitsbereich befinden. Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
-  
-2.  Drücken Sie die **EINGABETASTE**.  
-  
-     Jetzt, wenn Sie verwenden einen Ausführungsbefehl wie z. B. **Schritt**, die Speicheradresse, die angezeigt wird, wird automatisch ändert sich, wenn der Mauszeiger ändert.  
+2. Drücken Sie die **EINGABETASTE**.  
+   
+   Verwendung einem Debugbefehl wie z. B. **Schritt**, die Speicheradresse angezeigt, der **Adresse** Feld- und am oberen Rand der **Arbeitsspeicher** Fenster wird automatisch als der Zeiger ändert ändert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)
+ [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)

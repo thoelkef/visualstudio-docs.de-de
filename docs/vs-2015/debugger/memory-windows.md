@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925500"
 ---
 # <a name="memory-windows"></a>Fenster "Arbeitsspeicher"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der 
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>So ändern Sie die Anzahl der Spalten im Fenster "Arbeitsspeicher"  
   
-1.  Auf der Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster Suchen der **Spalten** Liste.  
+1. Auf der Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster Suchen der **Spalten** Liste.  
   
-2.  In der **Spalten** wählen Sie die Anzahl der Spalten, die Sie anzeigen oder auswählen möchten **automatisch** für automatische Anpassung an die Breite des Fensters anpassen.  
+2. In der **Spalten** wählen Sie die Anzahl der Spalten, die Sie anzeigen oder auswählen möchten **automatisch** für automatische Anpassung an die Breite des Fensters anpassen.  
   
- Wenn Sie nicht, dass der Inhalt des möchten der **Arbeitsspeicher** Fenster geändert, während das Programm ausgeführt wird, können Sie die live-ausdrucksauswertung deaktivieren.  
+   Wenn Sie nicht, dass der Inhalt des möchten der **Arbeitsspeicher** Fenster geändert, während das Programm ausgeführt wird, können Sie die live-ausdrucksauswertung deaktivieren.  
   
 #### <a name="to-toggle-live-evaluation"></a>So schalten Sie die Liveauswertung um  
   
-1.  Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
+1. Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
   
-2.  Klicken Sie im Kontextmenü auf **automatisch neu auswerten**.  
+2. Klicken Sie im Kontextmenü auf **automatisch neu auswerten**.  
   
-     Wenn die Live-Auswertung aktiv ist, ist die Option ausgewählt. Indem Sie auf die Option klicken, wird die Live-Auswertung ausgeschaltet. Wenn die Live-Auswertung deaktiviert ist, ist die Option nicht ausgewählt, und indem Sie auf die Option klicken, wird die Live-Auswertung eingeschaltet.  
+    Wenn die Live-Auswertung aktiv ist, ist die Option ausgewählt. Indem Sie auf die Option klicken, wird die Live-Auswertung ausgeschaltet. Wenn die Live-Auswertung deaktiviert ist, ist die Option nicht ausgewählt, und indem Sie auf die Option klicken, wird die Live-Auswertung eingeschaltet.  
   
- Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster. Sie können nicht auf das Adressfeld oder andere Tools zugreifen, wenn die Symbolleiste ausgeblendet ist.  
+   Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster. Sie können nicht auf das Adressfeld oder andere Tools zugreifen, wenn die Symbolleiste ausgeblendet ist.  
   
 #### <a name="to-toggle-the-toolbar"></a>So blenden Sie die Symbolleiste ein oder aus  
   

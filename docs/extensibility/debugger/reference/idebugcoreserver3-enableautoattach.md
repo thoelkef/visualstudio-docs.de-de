@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32eb5d8771f95ec155a93d1fe1e770e0cc2d52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e5fc3ab0767a7077860c82acefc9554ba1228cee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831119"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Ermöglicht das automatische anfügen für die angegebene Debug-Module.  
+Erlaubt das automatische Anhängen, für die angegebenen Debug-Engines.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,16 +53,16 @@ int EnableAutoAttach(
  [in] Die Anzahl der Module, die im angegebenen `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- [in] Die Start-URL zu verwendende automatische anfügen.  
+ [in] Die Start-URL zu verwenden, wenn das automatische Anhängen.  
   
  `pbstrSessionID`  
  [out] Die ID der Sitzung, die automatisch angefügt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Wird ein Fehlercode `E_AUTO_ATTACH_NOT_REGISTERED`, was bedeutet, dass die Klassenfactory Auto-attach nicht registriert wurde.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Ein Fehlercode `E_AUTO_ATTACH_NOT_REGISTERED`, was bedeutet, dass die Klassenfactory Auto-attach nicht registriert wurde.  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn ein Programm, das der angegebenen URL zugeordnete gestartet wird, werden die angegebenen Debugmodule automatisch gestartet und angefügt.  
+ Wenn ein Programm verknüpft ist, mit der angegebenen URL gestartet wird, werden die angegebenen Debug-Engines automatisch gestartet und angefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

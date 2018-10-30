@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827732"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  Die Verwendung von Ausdrücken in DebuggerDisplay kann zu folgenden Problemen führen:  
   
--   Das Auswerten von Ausdrücken ist der aufwändigste Vorgang im Debugger. Außerdem wird ein Ausdruck bei jedem Anzeigen ausgewertet. Dies kann bei der schrittweisen Ausführung des Codes Leistungsprobleme verursachen. Beispielsweise kann ein komplexer Ausdruck, der zum Anzeigen der Werte in einer Auflistung verwendet wird, die Ausführung des Codes sehr verlangsamen, wenn viele Elemente vorhanden sind.  
+- Das Auswerten von Ausdrücken ist der aufwändigste Vorgang im Debugger. Außerdem wird ein Ausdruck bei jedem Anzeigen ausgewertet. Dies kann bei der schrittweisen Ausführung des Codes Leistungsprobleme verursachen. Beispielsweise kann ein komplexer Ausdruck, der zum Anzeigen der Werte in einer Auflistung verwendet wird, die Ausführung des Codes sehr verlangsamen, wenn viele Elemente vorhanden sind.  
   
--   Ausdrücke werden von der Ausdrucksauswertung in der Sprache des aktuellen Stapelrahmens und nicht von der Auswertung der Sprache ausgewertet, in der der Ausdruck geschrieben wurde. Dies kann unvorhersehbare Ergebnisse zur Folge haben, wenn die Sprachen unterschiedlich sind.  
+- Ausdrücke werden von der Ausdrucksauswertung in der Sprache des aktuellen Stapelrahmens und nicht von der Auswertung der Sprache ausgewertet, in der der Ausdruck geschrieben wurde. Dies kann unvorhersehbare Ergebnisse zur Folge haben, wenn die Sprachen unterschiedlich sind.  
   
--   Durch Auswerten eines Ausdrucks kann der Zustand der Anwendung geändert werden. Beispielsweise ändert ein Ausdruck, der den Wert einer Eigenschaft festlegt, den Eigenschaftswert im ausgeführten Code.  
+- Durch Auswerten eines Ausdrucks kann der Zustand der Anwendung geändert werden. Beispielsweise ändert ein Ausdruck, der den Wert einer Eigenschaft festlegt, den Eigenschaftswert im ausgeführten Code.  
   
- Eine Möglichkeit, eventuelle Probleme bei der Ausdrucksauswertung zu verringern, ist das Erstellen einer privaten Eigenschaft, die den Vorgang ausführt und eine Zeichenfolge zurückgibt. Das DebuggerDisplay-Attribut kann dann den Wert dieser privaten Eigenschaft anzeigen. Im folgenden Beispiel wird dieses Muster implementiert:  
+  Eine Möglichkeit, eventuelle Probleme bei der Ausdrucksauswertung zu verringern, ist das Erstellen einer privaten Eigenschaft, die den Vorgang ausführt und eine Zeichenfolge zurückgibt. Das DebuggerDisplay-Attribut kann dann den Wert dieser privaten Eigenschaft anzeigen. Im folgenden Beispiel wird dieses Muster implementiert:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

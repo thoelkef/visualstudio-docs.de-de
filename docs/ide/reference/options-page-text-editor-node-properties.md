@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929204"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Text-Editor"
 In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Text-Editor**, `DTE.Properties("TextEditor", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die `Properties`-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.
@@ -29,7 +29,7 @@ In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschri
  `DTE.Properties("TextEditor", "General")`
 
 |Eigenschaftenelementname|Wert|Beschreibung |
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (boolesch)|Bei `True` wird die Einfügemarke beim Drücken der ESC-TASTE bei einer vorhandenen Auswahl an die Position verschoben, an der die Aktion ausgelöst wurde, die zur Auswahl führte. `False` verschiebt die Einfügemarke an das andere Ende der Auswahl.|
 |DragNDropTextEditing|Get/Set (boolesch)|Bestimmt, ob ein ausgewählter Textbereich im Dokument mit der Maus für Kopier- oder Ausschneide-/Einfügevorgänge von einer Position an eine andere gezogen werden kann.|
 |HorizontalScrollBar|Get/Set (boolesch)|Bestimmt, ob in Editor-Fenstern eine horizontale Bildlaufleiste angezeigt wird.|
@@ -48,7 +48,7 @@ In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschri
  Die `PlainText`-Editoroptionen wirken sich auf die Editoreinstellungen aus, wenn Textdateien bearbeitet werden. Jede Programmiersprache und jedes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Paket weist eigene spezielle Einstellungen für den **Text-Editor** auf. Um beispielsweise die Editoreinstellungen von [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] anzuzeigen oder zu ändern, verwenden Sie `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Für die Editoreinstellungen von **SQL-Skript** verwenden Sie `DTE.Properties("TextEditor", "SQL ")`.
 
 |Eigenschaftenelementname|Wert|Beschreibung |
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (boolesch)|Bestimmt, ob bei Eingabe eines Punkts hinter einem Variablenverweis automatisch eine Liste der verfügbaren Member angezeigt wird.|
 |AutoListParams|Get/Set (boolesch)|Bestimmt, ob bei Eingabe von "(" hinter einem Funktionsnamen automatisch eine Beschreibung einer Argumentliste angezeigt wird.|
 |HideAdvancedMembers|Get/Set (boolesch)|Bestimmt, ob die Anweisungsvervollständigung alle Member oder nur die häufig verwendeten auflistet.|

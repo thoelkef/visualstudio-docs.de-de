@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 037bdbbfb81c36e4f8e4d124801907ca0600aee7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81e647f1e98a13a87c1b526630eee349fde3fd69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932923"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Exemplarische Vorgehensweise: Erfassen von Grafikinformationen
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose verwendet wird, um Grafikinformationen aus einer Direct3D-App manuell zu erfassen.  
@@ -31,29 +31,29 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>So aktivieren Sie die Erfassung von Grafikinformationen, nachdem Sie ein Projekt oder eine Projektmappe geladen haben  
   
-1.  Laden Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]eine Projekt- oder eine Projektmappendatei für die App, von der Sie Grafikinformationen erfassen möchten.  
+1. Laden Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]eine Projekt- oder eine Projektmappendatei für die App, von der Sie Grafikinformationen erfassen möchten.  
   
-2.  Klicken Sie in der Grafikdiagnose-Symbolleiste auf **Diagnose starten**.  
+2. Klicken Sie in der Grafikdiagnose-Symbolleiste auf **Diagnose starten**.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>So aktivieren Sie die Erfassung von Grafikinformationen, ohne ein Projekt oder eine Projektmappe zu laden  
   
-1.  Klicken Sie in der Menüleiste auf **Datei**, dann auf **Öffnen**und **Projekt/Projektmappe**. Das Dialogfeld **Projekt öffnen** wird angezeigt.  
+1. Klicken Sie in der Menüleiste auf **Datei**, dann auf **Öffnen**und **Projekt/Projektmappe**. Das Dialogfeld **Projekt öffnen** wird angezeigt.  
   
-2.  Anstelle einer Projekt- oder einer Projektmappendatei geben Sie die ausführbare Datei für die Anwendung an, von der Sie Grafikinformationen von erfassen möchten, und wählen Sie dann **Öffnen**aus.  
+2. Anstelle einer Projekt- oder einer Projektmappendatei geben Sie die ausführbare Datei für die Anwendung an, von der Sie Grafikinformationen von erfassen möchten, und wählen Sie dann **Öffnen**aus.  
   
-3.  Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik**und **Diagnose starten**.  
+3. Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik**und **Diagnose starten**.  
   
- Wenn die App gestartet ist und Frames rendert, können Sie Grafikinformationen erfassen.  
+   Wenn die App gestartet ist und Frames rendert, können Sie Grafikinformationen erfassen.  
   
 #### <a name="to-capture-graphics-information"></a>So erfassen Grafikinformationen  
   
--   Wählen Sie in der Grafikdiagnose-Symbolleiste die Schaltfläche **Erfassen** aus. ![Symbol "Bildschaltfläche" für grafikerfassung](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- Wählen Sie in der Grafikdiagnose-Symbolleiste die Schaltfläche **Erfassen** aus. ![Grafikerfassung Schaltflächensymbol](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     - oder -   
+   - oder -   
   
-     Wenn die App auf dem Bildschirm angezeigt wird, drücken Sie die **Drucktaste**.  
+   Wenn die App auf dem Bildschirm angezeigt wird, drücken Sie die **Drucktaste**.  
   
- Immer wenn Sie Informationen über Frames erfassen, zeichnet die Grafikdiagnose die Direct3D-Ereignisse und den zugeordneten Zustand auf und fügt die Daten einem Grafikprotokoll hinzu. Für jede Grafikdiagnosesitzung wird ein neues Grafikprotokoll erstellt. Informationen zu grafikprotokollen finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).  
+  Immer wenn Sie Informationen über Frames erfassen, zeichnet die Grafikdiagnose die Direct3D-Ereignisse und den zugeordneten Zustand auf und fügt die Daten einem Grafikprotokoll hinzu. Für jede Grafikdiagnosesitzung wird ein neues Grafikprotokoll erstellt. Weitere Informationen zu grafikprotokollen finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Diese exemplarische Vorgehensweise veranschaulicht, wie Grafikinformationen manuell erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  

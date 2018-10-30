@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849527"
 ---
 # <a name="thread-details-view---contention-data"></a>Threaddetailansicht: Konfliktdaten
 Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Ereignisse im ausgewählten Thread einer Profilerstellung, die von Ressourcenkonflikten ausgelöst wurden. Ein blockierendes Ereignis tritt auf, wenn der Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf eine Ressource gesperrt hat.  
@@ -46,9 +46,9 @@ Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Er
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
   
--   Klicken Sie im Fenster **Aufrufliste** auf den Funktionsnamen.  
+- Klicken Sie im Fenster **Aufrufliste** auf den Funktionsnamen.  
   
- Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
+  Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>So zeigen Sie die Konfliktereignisse einer Ressource in allen Threads bei der Profilerstellung an  
   

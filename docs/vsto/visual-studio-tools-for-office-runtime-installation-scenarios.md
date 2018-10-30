@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857847"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio-Tools für Office Runtime Installation scenarios
   Sie können Visual Studio 2010-Tools für Office-Laufzeit auf drei Arten installieren:  
   
--   Wenn Sie Visual Studio installieren.  
+- Wenn Sie Visual Studio installieren.  
   
--   Wenn Sie Microsoft Office installieren.  
+- Wenn Sie Microsoft Office installieren.  
   
--   Wenn Sie Visual Studio 2010-Tools für Office-Laufzeit installieren.  
+- Wenn Sie Visual Studio 2010-Tools für Office-Laufzeit installieren.  
   
- Die installierten Laufzeitkomponenten hängen von der Konfiguration des Computers und dem Installationsszenario ab.  
+  Die installierten Laufzeitkomponenten hängen von der Konfiguration des Computers und dem Installationsszenario ab.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>Runtime-Komponenten, die in jedem Installationsszenario installiert werden  
  Visual Studio 2010-Tools für Office-Laufzeit besteht aus drei Komponenten: das Ladeprogramm für Office-Lösung, die Office-Erweiterungen für .NET Framework 3.5 und Office-Erweiterungen für die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher. Wenn Sie die Laufzeit installieren, wird das Ladeprogramm für Office-Projektmappen immer installiert. Die Installation der Office-Erweiterungen für .NET Framework hängt von der Konfiguration des Computers und dem Installationsszenario ab. Wenn eine der Office-Erweiterungen bei der erstmaligen Installation der Laufzeit nicht installiert werden kann, installiert die Laufzeit die fehlenden Office-Erweiterungen später automatisch, sobald bestimmte Anforderungen erfüllt sind. Dieses Feature von der Laufzeit heißt *bei Bedarf installieren*.  
@@ -39,7 +39,7 @@ ms.locfileid: "35672696"
  In der folgenden Tabelle ist dargestellt, welche Laufzeitkomponenten bei den einzelnen Laufzeitinstallationsszenarios standardmäßig installiert werden. Weitere Informationen zu den einzelnen Szenarien finden Sie weiter unten.  
   
 |Laufzeitinstallationsszenario|Ladeprogramm für Office-Projektmappen|Office-Erweiterungen für .NET Framework 3.5|Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Office-Erweiterungen für [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |Mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] und höher|Ja|Ja, wenn .NET Framework 3.5 bereits installiert ist.|Ja|Ja|  
 |Mit [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Ja|Ja, wenn .NET Framework 3.5 bereits installiert ist.|Nein|Nein|  
 |Mit Office 2010 Service Pack 1 (SP1) oder höher|Ja|Ja, wenn .NET Framework 3.5 bereits installiert ist.|Ja, wenn [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] bereits installiert ist.|Nein|  

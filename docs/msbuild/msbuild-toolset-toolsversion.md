@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821109"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*), eine Datei mit allgemeinen Zielen (*microsoft.common.targets*) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.  
@@ -40,7 +40,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
  Wenn ein `ToolsVersion`-Wert in einer Projektdatei definiert wird, verwendet MSBuild diesen Wert, um die Werte der Toolseteigenschaften zu bestimmen, die für das Projekt verfügbar sind. Eine Toolseteigenschaft ist `$(MSBuildToolsPath)`, die den Pfad der .NET Framework-Tools angibt. Nur diese Toolseteigenschaft (oder `$(MSBuildBinPath)`) ist erforderlich.  
   
- Ab Visual Studio 2013 ist die Version des MSBuild-Toolsets die gleiche wie die Visual Studio-Versionsnummer. MSBuild weist standardmäßig dieses Toolset in Visual Studio und in der Befehlszeile auf, unabhängig von der in der Projektdatei angegebenen Toolset-Version.  Dieses Verhalten kann durch Verwendung des /ToolsVersion-Flags überschrieben werden. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
+ Ab Visual Studio 2013 ist die Version des MSBuild-Toolsets die gleiche wie die Visual Studio-Versionsnummer. MSBuild weist standardmäßig dieses Toolset in Visual Studio und in der Befehlszeile auf, unabhängig von der in der Projektdatei angegebenen Toolset-Version.  Dieses Verhalten kann durch Verwendung des -ToolsVersion-Flags überschrieben werden. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
   
  Im folgenden Beispiel findet MSBuild die *Microsoft.CSharp.targets*-Datei mithilfe der reservierten Eigenschaft `MSBuildToolsPath`.  
   
@@ -61,9 +61,9 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 ## <a name="toolset-implementation"></a>Toolsetimplementierung  
  Sie implementieren ein Toolset, indem Sie die Pfade der verschiedenen Tools, Ziele und Aufgaben auswählen, die das Toolset ausmachen. Die Tools im Toolset, das von MSBuild definiert wird, stammen aus den folgenden Quellen:  
   
--   .NET Framework-Ordner  
+- .NET Framework-Ordner  
   
--   Zusätzliche verwaltete Tools  
+- Zusätzliche verwaltete Tools  
   
   Dazu zählen *ResGen.exe* und *TlbImp.exe*.  
 

@@ -9,12 +9,12 @@ description: Erfahren Sie mehr zum Xamarin University-Schulungsabonnements, das 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838074"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -67,6 +67,7 @@ Visual Studio Dev Essentials-Mitglieder sind berechtigt, ein kostenloses Konto z
     > ![Xamarin University-Portal](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Berechtigung
+
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Ja |
@@ -76,7 +77,7 @@ Visual Studio Dev Essentials-Mitglieder sind berechtigt, ein kostenloses Konto z
 | Visual Studio Dev Essentials | NA  | Kostenloser Tarif                                             |  Ja        |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD).   Umfasst nicht: MCT Software & Services.*
+<sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).   Umfasst nicht: MCT Software & Services.*
 
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
@@ -88,4 +89,4 @@ A: Ihr Xamarin University-Konto und Fortschritt bleiben erhalten, und Ihr Abonne
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Xamarin University?  Unter [https://university.xamarin.com/support](https://university.xamarin.com/support) finden Sie eine Vielzahl von Supportressourcen.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

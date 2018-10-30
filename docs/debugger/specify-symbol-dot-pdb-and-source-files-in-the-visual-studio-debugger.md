@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850235"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 
@@ -67,24 +67,24 @@ Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
    
    In der Standardeinstellung, wenn Sie eine DLL-Datei erstellt haben oder ein *.exe* Datei auf Ihrem Computer, die der Linker platziert, den vollständigen Pfad und Dateiname der zugeordneten *PDB* -Datei in die DLL oder *.exe* Datei. Der Debugger überprüft, um festzustellen, ob die Symboldatei an diesem Speicherort vorhanden ist.  
    
-1. Im gleichen Ordner wie die DLL oder *.exe* Datei.
+2. Im gleichen Ordner wie die DLL oder *.exe* Datei.
    
-1. Alle Standorte in den Debuggeroptionen nach Symboldateien angegeben. Zum Hinzufügen und aktivieren die Speicherorte für Symboldateien, finden Sie unter [Orte für Symboldateien konfigurieren, und Laden Sie die Optionen](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Alle Standorte in den Debuggeroptionen nach Symboldateien angegeben. Zum Hinzufügen und aktivieren die Speicherorte für Symboldateien, finden Sie unter [Orte für Symboldateien konfigurieren, und Laden Sie die Optionen](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Alle lokalen Symbolcache-Cacheordner.  
+   - Alle lokalen Symbolcache-Cacheordner.  
   
-    - Netzwerk, Internet oder lokale Symbolserver und Speicherorte, z. B. die Microsoft-Symbolserver angegeben werden, wenn ausgewählt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann Debugsymboldateien von Symbolservern, die implementieren Herunterladen der `symsrv` Protokoll. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugging-Tools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver verwenden können. 
+   - Netzwerk, Internet oder lokale Symbolserver und Speicherorte, z. B. die Microsoft-Symbolserver angegeben werden, wenn ausgewählt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann Debugsymboldateien von Symbolservern, die implementieren Herunterladen der `symsrv` Protokoll. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) und [Debugging-Tools für Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sind zwei Tools, die Symbolserver verwenden können. 
       
-      Sind Symbolserver, die Sie verwenden können:  
+     Sind Symbolserver, die Sie verwenden können:  
       
-      **Öffentliche Microsoft-Symbolserver**: um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern. 
+     **Öffentliche Microsoft-Symbolserver**: um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern. 
       
-      **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer. 
+     **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer. 
       
-      **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet bereitstellen. 
+     **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet bereitstellen. 
     
-    > [!WARNING]
-    > Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, stellen Sie sicher, dass der Symbolserver und den Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie in Bezug auf Sicherheitsrisiken verfügbar gemacht werden.  
+     > [!WARNING]
+     > Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, stellen Sie sicher, dass der Symbolserver und den Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie in Bezug auf Sicherheitsrisiken verfügbar gemacht werden.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Konfigurieren Sie die Speicherorte für Symboldateien und Optionen für das Laden
@@ -101,7 +101,7 @@ Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
    
    ![Tools &#45; Optionen &#45; Debuggen &#45; Seite "Symbole"](media/dbg-options-symbols.png "Tools &#45; Optionen &#45; Debuggen &#45; Seite \"Symbole\"")  
    
-1. Klicken Sie unter **Symboldateien (.pdb) Orte für Symboldateien**,
+2. Klicken Sie unter **Symboldateien (.pdb) Orte für Symboldateien**,
    - Verwenden der **Microsoft-Symbolserver**, aktivieren Sie das Kontrollkästchen.  
    
    - Um einen neuen Speicherort der Symbol-Server hinzufügen,
@@ -119,21 +119,21 @@ Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
    - Um eine URL oder einen Pfad bearbeiten möchten, doppelklicken Sie auf den Eintrag, oder wählen Sie ihn aus, und drücken Sie **F2**.  
    - Um einen Eintrag zu entfernen, wählen Sie ihn, und wählen Sie dann die **-** Symbol.
   
-1.  (Optional) Zur Verbesserung der Leistung beim Laden Symbol, unter **Symbole in diesem Verzeichnis zwischenspeichern**, Typ, der ein lokalen Ordnerpfad an, die Symbolserver kopieren können, Symbole.  
+3. (Optional) Zur Verbesserung der Leistung beim Laden Symbol, unter **Symbole in diesem Verzeichnis zwischenspeichern**, Typ, der ein lokalen Ordnerpfad an, die Symbolserver kopieren können, Symbole.  
   
-    > [!NOTE]
-    > Platzieren Sie den lokalen Symbolcache nicht in einem geschützten Ordner, z. B. C:\Windows oder einen Unterordner. Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.  
+   > [!NOTE]
+   > Platzieren Sie den lokalen Symbolcache nicht in einem geschützten Ordner, z. B. C:\Windows oder einen Unterordner. Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.  
   
-    > [!NOTE]
-    > Für C++-Projekte, wenn Sie haben die `_NT_SYMBOL_PATH` -Umgebungsvariable festgelegt, wird der Wert unter Gruppe überschrieben **Symbole in diesem Verzeichnis zwischenspeichern**.
+   > [!NOTE]
+   > Für C++-Projekte, wenn Sie haben die `_NT_SYMBOL_PATH` -Umgebungsvariable festgelegt, wird der Wert unter Gruppe überschrieben **Symbole in diesem Verzeichnis zwischenspeichern**.
   
-1. Geben Sie die Module, die der Debugger beim Laden aus soll die **Symboldateien (.pdb) Orte für Symboldateien** Wenn gestartet wurde.  
+4. Geben Sie die Module, die der Debugger beim Laden aus soll die **Symboldateien (.pdb) Orte für Symboldateien** Wenn gestartet wurde.  
   
-  -  Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.  
+   -  Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.  
   
-  -  Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.  
+   -  Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.  
   
-1.  Klicken Sie auf **OK**.
+5. Klicken Sie auf **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Andere Symboloptionen für das Debuggen
   

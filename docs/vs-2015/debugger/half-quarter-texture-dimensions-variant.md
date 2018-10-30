@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950393"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Halb-/Viertel-Texturdimensionsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
 ## <a name="remarks"></a>Hinweise  
  Texturdimensionen werden mit jedem Aufruf von `ID3D11Device::CreateTexture2D`, der eine Quelltextur erzeugt, reduziert. Texturdimensionen werden vor allem reduziert, wenn das in `pDesc` übergebene D3D11_TEXTURE2D_DESC-Objekt eine in einem Rendering beschriebene Textur beschreibt, z. B.:  
   
--   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
+- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
--   Für das MiscFlags-Member ist das Flag D3D11_RESOURCE_MISC_TILE_POOL oder D3D11_RESOURCE_MISC_TILED nicht festgelegt (die Größe unterteilter Ressourcen wird nicht geändert).  
+- Für das MiscFlags-Member ist das Flag D3D11_RESOURCE_MISC_TILE_POOL oder D3D11_RESOURCE_MISC_TILED nicht festgelegt (die Größe unterteilter Ressourcen wird nicht geändert).  
   
--   Das Texturformat wird nicht als Renderziel unterstützt – wie von D3D11_FORMAT_SUPPORT_RENDER_TARGET festgelegt –, was aber für die Reduzierung der Texturgröße erforderlich ist. Die Formate BC1, BC2 und BC3 werden ebenfalls unterstützt, auch wenn sie nicht als Renderziele unterstützt werden.  
+- Das Texturformat wird nicht als Renderziel unterstützt – wie von D3D11_FORMAT_SUPPORT_RENDER_TARGET festgelegt –, was aber für die Reduzierung der Texturgröße erforderlich ist. Die Formate BC1, BC2 und BC3 werden ebenfalls unterstützt, auch wenn sie nicht als Renderziele unterstützt werden.  
   
- Wenn Ursprungsdaten von der Anwendung bereitgestellt werden, skaliert diese Variante diese Texturdaten auf die passende Größe, bevor sie die Textur erstellt. Wenn die Ursprungsdaten in einem blockkomprimierten Format wie BC1, BC2 oder BC3 ausgegeben werden, werden sie dekodiert, skaliert und wieder kodiert, um eine kleinere Textur zu erstellen. (Blockkomprimierung bedeutet, dass das Verfahren der Dekodierung, Skalierung und Neukodierung zu einer geringeren Bildqualität führt, als wenn eine blockkomprimierte Textur aus einer skalierten Version der Textur erstellt wird, die vorher nicht kodiert wurde.)  
+  Wenn Ursprungsdaten von der Anwendung bereitgestellt werden, skaliert diese Variante diese Texturdaten auf die passende Größe, bevor sie die Textur erstellt. Wenn die Ursprungsdaten in einem blockkomprimierten Format wie BC1, BC2 oder BC3 ausgegeben werden, werden sie dekodiert, skaliert und wieder kodiert, um eine kleinere Textur zu erstellen. (Blockkomprimierung bedeutet, dass das Verfahren der Dekodierung, Skalierung und Neukodierung zu einer geringeren Bildqualität führt, als wenn eine blockkomprimierte Textur aus einer skalierten Version der Textur erstellt wird, die vorher nicht kodiert wurde.)  
   
- Wenn Mipmaps für die Textur aktiviert werden, reduziert die Variante die Anzahl der Mip-Ebenen entsprechend – um eine Ebene, wenn auf halbe Größe skaliert wird, oder um zwei Ebenen, wenn auf Viertelgröße skaliert wird.  
+  Wenn Mipmaps für die Textur aktiviert werden, reduziert die Variante die Anzahl der Mip-Ebenen entsprechend – um eine Ebene, wenn auf halbe Größe skaliert wird, oder um zwei Ebenen, wenn auf Viertelgröße skaliert wird.  
   
 ## <a name="example"></a>Beispiel  
  Diese Variante ändert die Größe von Texturen vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.  

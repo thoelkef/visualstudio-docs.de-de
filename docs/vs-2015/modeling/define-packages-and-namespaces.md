@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915016"
 ---
 # <a name="define-packages-and-namespaces"></a>Definieren von Paketen und Namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>So erstellen Sie ein Paket im UML-Modell-Explorer  
   
-1.  Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf die **UML-Modell-Explorer**.  
+1. Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf die **UML-Modell-Explorer**.  
   
-2.  Klicken Sie mit der rechten Maustaste auf ein Paket oder Modell, dem Sie ein neues Paket hinzufügen möchten.  
+2. Klicken Sie mit der rechten Maustaste auf ein Paket oder Modell, dem Sie ein neues Paket hinzufügen möchten.  
   
-    > [!NOTE]
-    >  Sie können ein Paket in einem anderen Paket schachteln.  
+   > [!NOTE]
+   >  Sie können ein Paket in einem anderen Paket schachteln.  
   
-3.  Zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **Paket**.  
+3. Zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **Paket**.  
   
-     Im Modell wird ein neues Paket angezeigt.  
+    Im Modell wird ein neues Paket angezeigt.  
   
-4.  Geben Sie einen neuen Namen für das Paket ein.  
+4. Geben Sie einen neuen Namen für das Paket ein.  
   
- Wenn Sie im UML-Modell-Explorer ein Paket erstellt haben, können Sie es in einem UML-Klassendiagramm anzeigen. Sie können ein Paket auch in mehreren UML-Klassendiagrammen anzeigen.  
+   Wenn Sie im UML-Modell-Explorer ein Paket erstellt haben, können Sie es in einem UML-Klassendiagramm anzeigen. Sie können ein Paket auch in mehreren UML-Klassendiagrammen anzeigen.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>So zeigen Sie ein vorhandenes Paket in einem UML-Klassendiagramm an  
   
@@ -103,15 +103,15 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
 ##  <a name="Elements"></a> Erstellen von Modellelementen in Paketen  
  Es gibt vier Verfahren, mit denen Sie Modellelemente in ein Paket einfügen können:  
   
--   Fügen Sie im UML-Modell-Explorer einem Paket ein neues Element hinzu.  
+- Fügen Sie im UML-Modell-Explorer einem Paket ein neues Element hinzu.  
   
--   Fügen Sie in einem UML-Klassendiagramm Paketen Klassen und andere Typen hinzu.  
+- Fügen Sie in einem UML-Klassendiagramm Paketen Klassen und andere Typen hinzu.  
   
--   Legen Sie die **LinkedPackage** -Eigenschaft eines Diagramms, damit neue Elemente im Diagramm erstellt werden innerhalb der von Ihnen angegebene Paket platziert. Klassendiagramme, Komponentendiagramme und Anwendungsfalldiagramme können auf diese Weise mit einem Paket verknüpft werden.  
+- Legen Sie die **LinkedPackage** -Eigenschaft eines Diagramms, damit neue Elemente im Diagramm erstellt werden innerhalb der von Ihnen angegebene Paket platziert. Klassendiagramme, Komponentendiagramme und Anwendungsfalldiagramme können auf diese Weise mit einem Paket verknüpft werden.  
   
--   Verschieben Sie im UML-Modell-Explorer Elemente in ein Paket oder aus einem Paket.  
+- Verschieben Sie im UML-Modell-Explorer Elemente in ein Paket oder aus einem Paket.  
   
- Im UML-Modell-Explorer wird ein Element in einem Paket unter dem Paket angezeigt, und sein qualifizierter Name beginnt mit dem qualifizierten Namen des Pakets. Klicken Sie zum Anzeigen der qualifizierte Name eines Elements mit der rechten Maustaste in des Elements, und klicken Sie dann auf **Eigenschaften**. Die **qualifizierten Namen** Eigenschaft angezeigt wird, der **Eigenschaften** Fenster.  
+  Im UML-Modell-Explorer wird ein Element in einem Paket unter dem Paket angezeigt, und sein qualifizierter Name beginnt mit dem qualifizierten Namen des Pakets. Klicken Sie zum Anzeigen der qualifizierte Name eines Elements mit der rechten Maustaste in des Elements, und klicken Sie dann auf **Eigenschaften**. Die **qualifizierten Namen** Eigenschaft angezeigt wird, der **Eigenschaften** Fenster.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>So erstellen Sie im UML-Modell-Explorer ein Element in einem Paket  
   

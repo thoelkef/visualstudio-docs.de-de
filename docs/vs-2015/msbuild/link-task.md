@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ddce9f4ec87be5e21b38e20c24069b4cbd9b2e77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256710"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143449"
 ---
 # <a name="link-task"></a>Link-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,885 +52,885 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
   
--   **AdditionalDependencies**  
+- **AdditionalDependencies**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Gibt eine Liste von Eingabedateien an, die dem Befehl hinzugefügt werden sollen.  
+   Gibt eine Liste von Eingabedateien an, die dem Befehl hinzugefügt werden sollen.  
   
-     Weitere Informationen finden Sie unter [LINK-Eingabedateien](http://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
+   Weitere Informationen finden Sie unter [LINK-Eingabedateien](http://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
   
--   **AdditionalLibraryDirectories**  
+- **AdditionalLibraryDirectories**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.  
+   Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.  
   
-     Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).  
+   Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).  
   
--   **AdditionalManifestDependencies**  
+- **AdditionalManifestDependencies**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Gibt Attribute an, die in den `dependency`-Abschnitt der Manifestdatei eingefügt werden.  
+   Gibt Attribute an, die in den `dependency`-Abschnitt der Manifestdatei eingefügt werden.  
   
-     Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Angeben von Manifestabhängigkeiten)](http://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Siehe auch „Publisher Configuration Files“ auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website.  
+   Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Angeben von Manifestabhängigkeiten)](http://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Siehe auch „Publisher Configuration Files“ auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: **"**_/option1 /option2 /option#_". Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.  
+   Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: **"**_/option1 /option2 /option#_". Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.  
   
-     Weitere Informationen finden Sie unter [Linkeroptionen](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+   Weitere Informationen finden Sie unter [Linkeroptionen](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
--   **AddModuleNamesToAssembly**  
+- **AddModuleNamesToAssembly**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Fügt einer Assembly einen Modulverweis hinzu.  
+   Fügt einer Assembly einen Modulverweis hinzu.  
   
-     Weiter Informationen finden Sie unter [/ASSEMBLYMODULE (MSIL-Modul zur Assembly hinzufügen)](http://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
+   Weiter Informationen finden Sie unter [/ASSEMBLYMODULE (MSIL-Modul zur Assembly hinzufügen)](http://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
   
--   **AllowIsolation**  
+- **AllowIsolation**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` bewirkt, dass das Betriebssystem Manifestsuch- und -ladevorgänge durchführt. `false` gibt an, dass DLLs geladen werden, als ob es kein Manifest gäbe.  
+   `true` bewirkt, dass das Betriebssystem Manifestsuch- und -ladevorgänge durchführt. `false` gibt an, dass DLLs geladen werden, als ob es kein Manifest gäbe.  
   
-     Weitere Informationen finden Sie unter [/ALLOWISOLATION (Manifestsuche)](http://msdn.microsoft.com/library/6d41851e-b3c1-4bdf-beaa-031773089d6f).  
+   Weitere Informationen finden Sie unter [/ALLOWISOLATION (Manifestsuche)](http://msdn.microsoft.com/library/6d41851e-b3c1-4bdf-beaa-031773089d6f).  
   
--   **AssemblyDebug**  
+- **AssemblyDebug**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt das **DebuggableAttribute**-Attribut mit Debuginformationsnachverfolgung aus und deaktiviert die JIT-Optimierungen. Wenn `false` das **DebuggableAttribute**-Attribut ausgibt, aber Debuginformationsnachverfolgung deaktiviert und JIT-Optimierungen aktiviert.  
+   `true` gibt das **DebuggableAttribute**-Attribut mit Debuginformationsnachverfolgung aus und deaktiviert die JIT-Optimierungen. Wenn `false` das **DebuggableAttribute**-Attribut ausgibt, aber Debuginformationsnachverfolgung deaktiviert und JIT-Optimierungen aktiviert.  
   
-     Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).  
+   Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).  
   
--   **AssemblyLinkResource**  
+- **AssemblyLinkResource**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Geben Sie den Namen der Ressource an.  
+   Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Geben Sie den Namen der Ressource an.  
   
-     Weitere Informationen finden Sie unter [/ASSEMBLYLINKRESOURCE (Mit .NET Framework-Ressource verknüpfen)](http://msdn.microsoft.com/library/8b6ad184-1b33-47a4-8513-4803cf915b64).  
+   Weitere Informationen finden Sie unter [/ASSEMBLYLINKRESOURCE (Mit .NET Framework-Ressource verknüpfen)](http://msdn.microsoft.com/library/8b6ad184-1b33-47a4-8513-4803cf915b64).  
   
--   **AttributeFileTracking**  
+- **AttributeFileTracking**  
   
-     Impliziter **boolescher** Parameter.  
+   Impliziter **boolescher** Parameter.  
   
-     Ermöglicht die Nachverfolgung tieferer Dateien, um das inkrementelle Verhalten des Links zu erfassen. Gibt immer `true` zurück.  
+   Ermöglicht die Nachverfolgung tieferer Dateien, um das inkrementelle Verhalten des Links zu erfassen. Gibt immer `true` zurück.  
   
--   **BaseAddress**  
+- **BaseAddress**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Legt eine Basisadresse für das Programm oder die erstellte DLL fest. Geben Sie `{address[,size] | @filename,key}`an.  
+   Legt eine Basisadresse für das Programm oder die erstellte DLL fest. Geben Sie `{address[,size] | @filename,key}`an.  
   
-     Weitere Informationen finden Sie unter [/BASE (Basisadresse)](http://msdn.microsoft.com/library/00b9f6fe-0bd2-4772-a69c-7365eb199069).  
+   Weitere Informationen finden Sie unter [/BASE (Basisadresse)](http://msdn.microsoft.com/library/00b9f6fe-0bd2-4772-a69c-7365eb199069).  
   
--   **BuildingInIDE**  
+- **BuildingInIDE**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Zeigt bei TRUE an, dass MSBuild von der IDE aufgerufen wird. Andernfalls zeigt er an, dass MSBuild von der Befehlszeile aufgerufen wird.  
+   Zeigt bei TRUE an, dass MSBuild von der IDE aufgerufen wird. Andernfalls zeigt er an, dass MSBuild von der Befehlszeile aufgerufen wird.  
   
-     Dieser Parameter hat keine entsprechende Linkeroption.  
+   Dieser Parameter hat keine entsprechende Linkeroption.  
   
--   **CLRImageType**  
+- **CLRImageType**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Legt den Typ eines Common Language Runtime (CLR) Images fest.  
+   Legt den Typ eines Common Language Runtime (CLR) Images fest.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Standard** - *\<none>*  
+  - **Standard** - *\<none>*  
   
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     Weitere Informationen finden Sie unter [/CLRIMAGETYPE (Angeben des CLR-Bildtyps)](http://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
+    Weitere Informationen finden Sie unter [/CLRIMAGETYPE (Angeben des CLR-Bildtyps)](http://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
--   **CLRSupportLastError**  
+- **CLRSupportLastError**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Behält den letzten Fehlercode von Funktionen bei, die vom P/Invoke-Mechanismus aufgerufen werden.  
+   Behält den letzten Fehlercode von Funktionen bei, die vom P/Invoke-Mechanismus aufgerufen werden.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Aktiviert** - **/CLRSupportLastError**  
+  - **Aktiviert** - **/CLRSupportLastError**  
   
-    -   **Deaktiviert** - **/CLRSupportLastError:NO**  
+  - **Deaktiviert** - **/CLRSupportLastError:NO**  
   
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     Weitere Informationen finden Sie unter [/CLRSUPPORTLASTERROR (Letzten Fehlercode für PInvoke-Aufrufe beibehalten)](http://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
+    Weitere Informationen finden Sie unter [/CLRSUPPORTLASTERROR (Letzten Fehlercode für PInvoke-Aufrufe beibehalten)](http://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
--   **CLRThreadAttribute**  
+- **CLRThreadAttribute**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt das Threadingattribut für den Einstiegspunkt des CLR-Programms explizit an.  
+   Gibt das Threadingattribut für den Einstiegspunkt des CLR-Programms explizit an.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
   
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     Weitere Informationen finden Sie unter [/CLRTHREADATTRIBUTE (Festlegen des CLR-Threadattributs)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
+    Weitere Informationen finden Sie unter [/CLRTHREADATTRIBUTE (Festlegen des CLR-Threadattributs)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
--   **CLRUnmanagedCodeCheck**  
+- **CLRUnmanagedCodeCheck**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte PInvoke-Anrufe von verwaltetem Code an nativen DLLs anwendet.  
+   Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte PInvoke-Anrufe von verwaltetem Code an nativen DLLs anwendet.  
   
-     Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurity-Attribut)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
+   Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurity)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
   
--   **CreateHotPatchableImage**  
+- **CreateHotPatchableImage**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Bereitet ein Image für Hotpatching vor.  
+   Bereitet ein Image für Hotpatching vor.  
   
-     Geben Sie einen der folgenden Werte an, der einer Linkeroption entspricht.  
+   Geben Sie einen der folgenden Werte an, der einer Linkeroption entspricht.  
   
-    -   **Aktiviert** - **/FUNCTIONPADMIN**  
+  - **Aktiviert** - **/FUNCTIONPADMIN**  
   
-    -   **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** - **/FUNCTIONPADMIN:5**  
   
-    -   **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** - **/FUNCTIONPADMIN:6**  
   
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
-     Weitere Informationen finden Sie unter [/FUNCTIONPADMIN (Erstellen eines Hotpatch-fähigen Abbildes)](http://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
+    Weitere Informationen finden Sie unter [/FUNCTIONPADMIN (Erstellen eines Hotpatch-fähigen Abbildes)](http://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
--   **DataExecutionPrevention**  
+- **DataExecutionPrevention**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass eine ausführbare Datei mit der Windows-Funktion zur Datenausführungsverhinderung kompatibel ist.  
+   `true` gibt an, dass eine ausführbare Datei mit der Windows-Funktion zur Datenausführungsverhinderung kompatibel ist.  
   
-     Weitere Informationen finden Sie unter [/NXCOMPAT (kompatibel mit Datenausführungsverhinderung)](http://msdn.microsoft.com/library/5858e7ff-24d3-4ac3-9046-af2c9e220d9b).  
+   Weitere Informationen finden Sie unter [/NXCOMPAT (kompatibel mit Datenausführungsverhinderung)](http://msdn.microsoft.com/library/5858e7ff-24d3-4ac3-9046-af2c9e220d9b).  
   
--   **DelayLoadDLLs**  
+- **DelayLoadDLLs**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Dieser Parameter bewirkt ein *verzögertes Laden* des DLLs. Geben Sie den Namen einer DLL an, die mit einer Verzögerung geladen werden soll.  
+   Dieser Parameter bewirkt ein *verzögertes Laden* des DLLs. Geben Sie den Namen einer DLL an, die mit einer Verzögerung geladen werden soll.  
   
-     Weitere Informationen finden Sie unter [/DELAYLOAD (Laden von Import verzögern)](http://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
+   Weitere Informationen finden Sie unter [/DELAYLOAD (Laden von Import verzögern)](http://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
   
--   **DelaySign**  
+- **DelaySign**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` signiert eine Assembly teilweise. In der Standardeinstellung ist der Wert `false`.  
+   `true` signiert eine Assembly teilweise. In der Standardeinstellung ist der Wert `false`.  
   
-     Weitere Informationen finden Sie unter [/DELAYSIGN (Assembly teilweise signieren)](http://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
+   Weitere Informationen finden Sie unter [/DELAYSIGN (Assembly teilweise signieren)](http://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
--   **Treiber**  
+- **Treiber**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Geben Sie diesen Parameter an, um einen Windows NT-Kernelmodustreiber zu erstellen.  
+   Geben Sie diesen Parameter an, um einen Windows NT-Kernelmodustreiber zu erstellen.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\<none>*  
+  - **NotSet** - *\<none>*  
   
-    -   **Treiber** - **/Driver**  
+  - **Treiber** - **/Driver**  
   
-    -   **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** - **/DRIVER:UPONLY**  
   
-    -   **WDM** - **/DRIVER:WDM**  
+  - **WDM** - **/DRIVER:WDM**  
   
-     Weitere Informationen finden Sie unter [/DRIVER (Treiber für den Kernelmodus von Windows NT)](http://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
+    Weitere Informationen finden Sie unter [/DRIVER (Treiber für den Kernelmodus von Windows NT)](http://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
--   **EmbedManagedResourceFile**  
+- **EmbedManagedResourceFile**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Bettet eine Ressourcendatei in eine Assembly ein. Geben Sie den Dateinamen für die angeforderte Ressource an. Geben Sie optional den logischen Namen ein, der zum Laden der Ressource verwendet wird, und die **PRIVATE**-Option, die im Assemblymanifest angibt, dass die Ressourcendatei privat ist.  
+   Bettet eine Ressourcendatei in eine Assembly ein. Geben Sie den Dateinamen für die angeforderte Ressource an. Geben Sie optional den logischen Namen ein, der zum Laden der Ressource verwendet wird, und die **PRIVATE**-Option, die im Assemblymanifest angibt, dass die Ressourcendatei privat ist.  
   
-     Weitere Informationen finden Sie unter [/ASSEMBLYRESOURCE (Verwaltete Ressource einbetten)](http://msdn.microsoft.com/library/0ce6e1fb-921b-4b1b-a59c-d35388d789f2).  
+   Weitere Informationen finden Sie unter [/ASSEMBLYRESOURCE (Verwaltete Ressource einbetten)](http://msdn.microsoft.com/library/0ce6e1fb-921b-4b1b-a59c-d35388d789f2).  
   
--   **EnableCOMDATFolding**  
+- **EnableCOMDATFolding**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` ermöglicht eine identische COMDAT-Faltung.  
+   `true` ermöglicht eine identische COMDAT-Faltung.  
   
-     Weitere Informationen finden Sie unter dem `ICF[= iterations]`-Argument der [/OPT (Optimierungen)](http://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
+   Weitere Informationen finden Sie unter dem `ICF[= iterations]`-Argument der [/OPT (Optimierungen)](http://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
--   **EnableUAC**  
+- **EnableUAC**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass Informationen zur Benutzerkontensteuerung (UAC) in das Programmmanifest eingebettet werden.  
+   `true` gibt an, dass Informationen zur Benutzerkontensteuerung (UAC) in das Programmmanifest eingebettet werden.  
   
-     Weitere Informationen finden Sie unter [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+   Weitere Informationen finden Sie unter [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
--   **EntryPointSymbol**  
+- **EntryPointSymbol**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt eine Einstiegspunktfunktion als Startadresse für eine EXE-Datei oder DLL an. Geben Sie einen Funktionsnamen als Parameterwert an.  
+   Gibt eine Einstiegspunktfunktion als Startadresse für eine EXE-Datei oder DLL an. Geben Sie einen Funktionsnamen als Parameterwert an.  
   
-     Weitere Informationen finden Sie unter [/ENTRY (Symbol für Einstiegspunkt)](http://msdn.microsoft.com/library/26c62ba2-4f52-4882-a7bd-7046a0abf445).  
+   Weitere Informationen finden Sie unter [/ENTRY (Symbol für Einstiegspunkt)](http://msdn.microsoft.com/library/26c62ba2-4f52-4882-a7bd-7046a0abf445).  
   
--   **FixedBaseAddress**  
+- **FixedBaseAddress**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt ein Programm oder eine DLL, das nur an seiner bevorzugten Basisadresse geladen werden kann.  
+   `true` erstellt ein Programm oder eine DLL, das nur an seiner bevorzugten Basisadresse geladen werden kann.  
   
-     Weitere Informationen finden Sie unter [/FIXED (Feste Basisadresse)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).  
+   Weitere Informationen finden Sie unter [/FIXED (Feste Basisadresse)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).  
   
--   **ForceFileOutput**  
+- **ForceFileOutput**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Weist den Linker an, eine gültige EXE-Datei oder DLL auch dann zu erstellen, wenn auf ein Symbol verwiesen wird, dieses Symbol aber nicht oder mehrmals definiert wurde.  
+   Weist den Linker an, eine gültige EXE-Datei oder DLL auch dann zu erstellen, wenn auf ein Symbol verwiesen wird, dieses Symbol aber nicht oder mehrmals definiert wurde.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Aktiviert** - **/FORCE**  
+  - **Aktiviert** - **/FORCE**  
   
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     Weitere Informationen finden Sie unter [//FORCE (Dateiausgabe erzwingen)](http://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
+    Weitere Informationen finden Sie unter [//FORCE (Dateiausgabe erzwingen)](http://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
--   **ForceSymbolReferences**  
+- **ForceSymbolReferences**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Dieser Parameter weist den Linker an, der Symboltabelle ein bestimmtes Symbol hinzuzufügen.  
+   Dieser Parameter weist den Linker an, der Symboltabelle ein bestimmtes Symbol hinzuzufügen.  
   
-     Weitere Informationen finden Sie unter [/INCLUDE (Symbolverweise erzwingen)](http://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
+   Weitere Informationen finden Sie unter [/INCLUDE (Symbolverweise erzwingen)](http://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
   
--   **FunctionOrder**  
+- **FunctionOrder**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Dieser Parameter optimiert das Programm durch die Platzierung der angegebenen Paketfunktionen (COMDATs) in das Image in einer vorherbestimmten Reihenfolge.  
+   Dieser Parameter optimiert das Programm durch die Platzierung der angegebenen Paketfunktionen (COMDATs) in das Image in einer vorherbestimmten Reihenfolge.  
   
-     Weitere Informationen finden Sie unter [/ORDER (Reihenfolge von Funktionen festlegen)](http://msdn.microsoft.com/library/ecf5eb3e-e404-4e86-9a91-4e5ec157261a).  
+   Weitere Informationen finden Sie unter [/ORDER (Reihenfolge von Funktionen festlegen)](http://msdn.microsoft.com/library/ecf5eb3e-e404-4e86-9a91-4e5ec157261a).  
   
--   **GenerateDebugInformation**  
+- **GenerateDebugInformation**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt Debuginformationen für die EXE-Datei oder DLL.  
+   `true` erstellt Debuginformationen für die EXE-Datei oder DLL.  
   
-     Weitere Informationen finden Sie unter [/DEBUG (Debuginfo generieren)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).  
+   Weitere Informationen finden Sie unter [/DEBUG (Debuginfo generieren)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).  
   
--   **GenerateManifest**  
+- **GenerateManifest**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt eine parallele Manifestdatei.  
+   `true` erstellt eine parallele Manifestdatei.  
   
-     Weitere Informationen finden Sie unter [/MANIFEST (Erstellen eines Manifests für eine parallele Assembly)](http://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
+   Weitere Informationen finden Sie unter [/MANIFEST (Erstellen eines Manifests für eine parallele Assembly)](http://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
--   **GenerateMapFile**  
+- **GenerateMapFile**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt eine *Zuordnungsdatei*. Das Suffix der Zuordnungsdatei ist .map.  
+   `true` erstellt eine *Zuordnungsdatei*. Das Suffix der Zuordnungsdatei ist .map.  
   
-     Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
+   Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
   
--   **HeapCommitSize**  
+- **HeapCommitSize**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die physische Speichermenge auf dem Heap an, die zu einem Zeitpunkt zugeordnet werden soll.  
+   Gibt die physische Speichermenge auf dem Heap an, die zu einem Zeitpunkt zugeordnet werden soll.  
   
-     Weitere Informationen finden Sie unter dem `commit`-Argument in [/HEAP (Heapgröße festlegen)](http://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Siehe auch den **HeapReserveSize**-Parameter.  
+   Weitere Informationen finden Sie unter dem `commit`-Argument in [/HEAP (Heapgröße festlegen)](http://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Siehe auch den **HeapReserveSize**-Parameter.  
   
--   **HeapReserveSize**  
+- **HeapReserveSize**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Gesamtgröße der Heapzuordnung im virtuellen Speicher an.  
+   Gibt die Gesamtgröße der Heapzuordnung im virtuellen Speicher an.  
   
-     Weitere Informationen finden Sie unter dem `reserve`-Argument in [/HEAP (Heapgröße festlegen)](http://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Siehe auch den Parameter **HeapCommitSize** in dieser Tabelle.  
+   Weitere Informationen finden Sie unter dem `reserve`-Argument in [/HEAP (Heapgröße festlegen)](http://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Siehe auch den Parameter **HeapCommitSize** in dieser Tabelle.  
   
--   **IgnoreAllDefaultLibraries**  
+- **IgnoreAllDefaultLibraries**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist den Linker an, mindestens eine Standardbibliothek aus der Liste der Bibliotheken, die durchsucht werden, zu entfernen, wenn externe Verweise aufgelöst werden.  
+   `true` weist den Linker an, mindestens eine Standardbibliothek aus der Liste der Bibliotheken, die durchsucht werden, zu entfernen, wenn externe Verweise aufgelöst werden.  
   
-     Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](http://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](http://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
--   **IgnoreEmbeddedIDL**  
+- **IgnoreEmbeddedIDL**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass IDL-Attribute im Quellcode nicht in einer IDL-Datei verarbeitet werden sollten.  
+   `true` gibt an, dass IDL-Attribute im Quellcode nicht in einer IDL-Datei verarbeitet werden sollten.  
   
-     Weiter Informationen finden Sie unter [/IGNOREIDL (Attribute nicht in MIDL verarbeiten)](http://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
+   Weiter Informationen finden Sie unter [/IGNOREIDL (Attribute nicht in MIDL verarbeiten)](http://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
--   **IgnoreImportLibrary**  
+- **IgnoreImportLibrary**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass die von dieser Konfiguration generierte Importbibliothek nicht in abhängige Projekte importiert werden sollte.  
+   `true` gibt an, dass die von dieser Konfiguration generierte Importbibliothek nicht in abhängige Projekte importiert werden sollte.  
   
-     Dieser Parameter entspricht keiner Linkeroption.  
+   Dieser Parameter entspricht keiner Linkeroption.  
   
--   **IgnoreSpecificDefaultLibraries**  
+- **IgnoreSpecificDefaultLibraries**  
   
-     Optionaler **String[]**-Parameter.  
+   Optionaler **String[]**-Parameter.  
   
-     Gibt einen oder mehrere Namen der zu ignorierenden Standardbibliotheken an. Trennen Sie mehrere Bibliotheken mit Semikolons.  
+   Gibt einen oder mehrere Namen der zu ignorierenden Standardbibliotheken an. Trennen Sie mehrere Bibliotheken mit Semikolons.  
   
-     Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](http://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](http://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
--   **ImageHasSafeExceptionHandlers**  
+- **ImageHasSafeExceptionHandlers**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Bei `true` erstellt der Linker nur dann ein Image, wenn auch eine Tabelle mit den sicheren Ausnahmehandlern des Images erstellt werden kann.  
+   Bei `true` erstellt der Linker nur dann ein Image, wenn auch eine Tabelle mit den sicheren Ausnahmehandlern des Images erstellt werden kann.  
   
-     Weitere Informationen finden Sie unter [/SAFESEH (Abbild verfügt über sichere Ausnahmehandler)](http://msdn.microsoft.com/library/7722ff99-b833-4c65-a855-aaca902ffcb7).  
+   Weitere Informationen finden Sie unter [/SAFESEH (Abbild verfügt über sichere Ausnahmehandler)](http://msdn.microsoft.com/library/7722ff99-b833-4c65-a855-aaca902ffcb7).  
   
--   **ImportLibrary**  
+- **ImportLibrary**  
   
-     Ein benutzerdefinierter Importbibliotheksname, der den Standard-Bibliotheksnamen ersetzt.  
+   Ein benutzerdefinierter Importbibliotheksname, der den Standard-Bibliotheksnamen ersetzt.  
   
-     Weitere Informationen finden Sie unter [/IMPLIB (Name der Importbibliothek)](http://msdn.microsoft.com/library/fe8f71ab-7055-41b5-8ef8-2b97cfa4a432).  
+   Weitere Informationen finden Sie unter [/IMPLIB (Name der Importbibliothek)](http://msdn.microsoft.com/library/fe8f71ab-7055-41b5-8ef8-2b97cfa4a432).  
   
--   **KeyContainer**  
+- **KeyContainer**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Container, der den Schlüssel für eine signierte Assembly enthält.  
+   Container, der den Schlüssel für eine signierte Assembly enthält.  
   
-     Weitere Informationen finden Sie unter [/KEYCONTAINER (Schlüsselcontainer zum Signieren einer Assembly festlegen)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e). Siehe auch den Parameter **KeyFile** in dieser Tabelle.  
+   Weitere Informationen finden Sie unter [/KEYCONTAINER (Schlüsselcontainer zum Signieren einer Assembly festlegen)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e). Siehe auch den Parameter **KeyFile** in dieser Tabelle.  
   
--   **KeyFile**  
+- **KeyFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt eine Datei an, die den Schlüssel für eine signierte Assembly enthält.  
+   Gibt eine Datei an, die den Schlüssel für eine signierte Assembly enthält.  
   
-     Weitere Informationen finden Sie unter [/KEYFILE (Schlüsselcontainer oder Schlüsselpaar zum Signieren einer Assembly festlegen)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06). Siehe auch den Parameter **KeyContainer**.  
+   Weitere Informationen finden Sie unter [/KEYFILE (Schlüsselcontainer oder Schlüsselpaar zum Signieren einer Assembly festlegen)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06). Siehe auch den Parameter **KeyContainer**.  
   
--   **LargeAddressAware**  
+- **LargeAddressAware**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Bei `true` kann die Anwendung Adressen verarbeiten, die größer als 2 GB sind.  
+   Bei `true` kann die Anwendung Adressen verarbeiten, die größer als 2 GB sind.  
   
-     Weitere Informationen finden Sie unter [/LARGEADDRESSAWARE (Umfangreiche Adressen verarbeiten)](http://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
+   Weitere Informationen finden Sie unter [/LARGEADDRESSAWARE (Umfangreiche Adressen verarbeiten)](http://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
--   **LinkDLL**  
+- **LinkDLL**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt eine DLL als Hauptausgabedatei.  
+   `true` erstellt eine DLL als Hauptausgabedatei.  
   
-     Weitere Informationen finden Sie unter [/DLL (DLL erstellen)](http://msdn.microsoft.com/library/c7685aec-31d0-490f-9503-fb5171a23609).  
+   Weitere Informationen finden Sie unter [/DLL (DLL erstellen)](http://msdn.microsoft.com/library/c7685aec-31d0-490f-9503-fb5171a23609).  
   
--   **LinkErrorReporting**  
+- **LinkErrorReporting**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Ermöglicht Ihnen, Informationen über interne Compilerfehler direkt an Microsoft zu senden.  
+   Ermöglicht Ihnen, Informationen über interne Compilerfehler direkt an Microsoft zu senden.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** - **/ERRORREPORT:NONE**  
   
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     Weitere Informationen finden Sie unter [/ERRORREPORT (Weiterleiten von internen Linkerfehlern)](http://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
+    Weitere Informationen finden Sie unter [/ERRORREPORT (Weiterleiten von internen Linkerfehlern)](http://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
--   **LinkIncremental**  
+- **LinkIncremental**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` aktiviert die inkrementelle Verknüpfung.  
+   `true` aktiviert die inkrementelle Verknüpfung.  
   
-     Weitere Informationen finden Sie unter [/INCREMENTAL (inkrementell verknüpfen)](http://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
+   Weitere Informationen finden Sie unter [/INCREMENTAL (inkrementell verknüpfen)](http://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
--   **LinkLibraryDependencies**  
+- **LinkLibraryDependencies**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.  
+   `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.  
   
-     Dieser Parameter entspricht keiner Linkeroption.  
+   Dieser Parameter entspricht keiner Linkeroption.  
   
--   **LinkStatus**  
+- **LinkStatus**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt an, dass der Linker eine Statusanzeige ausgibt, die anzeigt, welcher Prozentsatz des Links abgeschlossen ist.  
+   `true` gibt an, dass der Linker eine Statusanzeige ausgibt, die anzeigt, welcher Prozentsatz des Links abgeschlossen ist.  
   
-     Weitere Informationen finden Sie unter dem`STATUS`-Argument in [/LTCG (Code zur Verknüpfungszeit generieren)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+   Weitere Informationen finden Sie unter dem`STATUS`-Argument in [/LTCG (Code zur Verknüpfungszeit generieren)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
--   **LinkTimeCodeGeneration**  
+- **LinkTimeCodeGeneration**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt Optionen für die profilgesteuerte Optimierung an.  
+   Gibt Optionen für die profilgesteuerte Optimierung an.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Default** - *\<none>*  
+  - **Default** - *\<none>*  
   
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** - **/LTCG**  
   
-    -   **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** - **/LTCG:PGInstrument**  
   
-    -   **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** - **/LTCG:PGOptimize**  
   
-    -   **PGUpdate**  
+  - **PGUpdate**  
   
-         \- **/LTCG:PGUpdate**  
+     \- **/LTCG:PGUpdate**  
   
-     Weitere Informationen finden Sie unter [/LTCG (Code zur Verknüpfungszeit generieren)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+    Weitere Informationen finden Sie unter [/LTCG (Code zur Verknüpfungszeit generieren)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
--   **ManifestFile**  
+- **ManifestFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Ändert den Standardnamen der Manifestdatei in den angegebenen Dateinamen.  
+   Ändert den Standardnamen der Manifestdatei in den angegebenen Dateinamen.  
   
-     Weitere Informationen finden Sie unter [/MANIFESTFILE (Benennen der Manifestdatei)](http://msdn.microsoft.com/library/befa5ab2-a9cf-4c9b-969a-e7b4a930f08d).  
+   Weitere Informationen finden Sie unter [/MANIFESTFILE (Benennen der Manifestdatei)](http://msdn.microsoft.com/library/befa5ab2-a9cf-4c9b-969a-e7b4a930f08d).  
   
--   **MapExports**  
+- **MapExports**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist den Linker an, exportierte Funktionen in eine Zuordnungsdatei einzufügen.  
+   `true` weist den Linker an, exportierte Funktionen in eine Zuordnungsdatei einzufügen.  
   
-     Weitere Informationen finden Sie unter dem `EXPORTS`-Argument in [/MAPINFO (Daten in Zuordnungsdatei einfügen)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
+   Weitere Informationen finden Sie unter dem `EXPORTS`-Argument in [/MAPINFO (Daten in Zuordnungsdatei einfügen)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
   
--   **MapFileName**  
+- **MapFileName**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Ändert den Standardnamen der Zuordnungsdatei in den angegebenen Dateinamen.  
+   Ändert den Standardnamen der Zuordnungsdatei in den angegebenen Dateinamen.  
   
--   **MergedIDLBaseFileName**  
+- **MergedIDLBaseFileName**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt den Dateinamen und die Dateinamenerweiterung der IDL-Datei an.  
+   Gibt den Dateinamen und die Dateinamenerweiterung der IDL-Datei an.  
   
-     Weitere Informationen finden Sie unter [/IDLOUT (Namen der MIDL-Ausgabedateien)](http://msdn.microsoft.com/library/10d00a6a-85b4-4de1-8732-e422c6931509).  
+   Weitere Informationen finden Sie unter [/IDLOUT (Namen der MIDL-Ausgabedateien)](http://msdn.microsoft.com/library/10d00a6a-85b4-4de1-8732-e422c6931509).  
   
--   **MergeSections**  
+- **MergeSections**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Kombiniert Abschnitte in einem Image. Geben Sie `from-section=to-section` an.  
+   Kombiniert Abschnitte in einem Image. Geben Sie `from-section=to-section` an.  
   
-     Weitere Informationen finden Sie unter [/MERGE (Abschnitte kombinieren)](http://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
+   Weitere Informationen finden Sie unter [/MERGE (Abschnitte kombinieren)](http://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
   
--   **MidlCommandFile**  
+- **MidlCommandFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Geben Sie den Namen einer Datei an, die MIDL-Befehlszeilenoptionen enthält.  
+   Geben Sie den Namen einer Datei an, die MIDL-Befehlszeilenoptionen enthält.  
   
-     Weitere Informationen finden Sie unter [/MIDL (Optionen für MIDL-Befehlszeile festlegen)](http://msdn.microsoft.com/library/22dc259e-b34c-4ed3-a380-4beb734482c1).  
+   Weitere Informationen finden Sie unter [/MIDL (Optionen für MIDL-Befehlszeile festlegen)](http://msdn.microsoft.com/library/22dc259e-b34c-4ed3-a380-4beb734482c1).  
   
--   **MinimumRequiredVersion**  
+- **MinimumRequiredVersion**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die mindestens erforderliche Version des Subsystems an. Die Argumente sind Dezimalzahlen im Bereich von 0 bis 65535.  
+   Gibt die mindestens erforderliche Version des Subsystems an. Die Argumente sind Dezimalzahlen im Bereich von 0 bis 65535.  
   
--   **ModuleDefinitionFile**  
+- **ModuleDefinitionFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt den Namen einer [Moduldefinitionsdatei](http://msdn.microsoft.com/library/08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8) an.  
+   Gibt den Namen einer [Moduldefinitionsdatei](http://msdn.microsoft.com/library/08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8) an.  
   
-     Weitere Informationen finden Sie unter [/DEF (Moduldefinitionsdatei festlegen)](http://msdn.microsoft.com/library/6497fa68-65f0-48ca-8f66-b87166fc631a).  
+   Weitere Informationen finden Sie unter [/DEF (Moduldefinitionsdatei festlegen)](http://msdn.microsoft.com/library/6497fa68-65f0-48ca-8f66-b87166fc631a).  
   
--   **MSDOSStubFileName**  
+- **MSDOSStubFileName**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Fügt ein MS-DOS-Stubprogramm an ein Win32-Programm an.  
+   Fügt ein MS-DOS-Stubprogramm an ein Win32-Programm an.  
   
-     Weitere Informationen finden Sie unter [/STUB (Name der MS-DOS-Stubdatei)](http://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
+   Weitere Informationen finden Sie unter [/STUB (Name der MS-DOS-Stubdatei)](http://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
   
--   **NoEntryPoint**  
+- **NoEntryPoint**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt eine DLL an, die nur als Ressource dient.  
+   `true` gibt eine DLL an, die nur als Ressource dient.  
   
-     Weitere Informationen finden Sie unter [/NOENTRY (Kein Einstiegspunkt)](http://msdn.microsoft.com/library/0214dd41-35ad-43ab-b892-e636e038621a).  
+   Weitere Informationen finden Sie unter [/NOENTRY (Kein Einstiegspunkt)](http://msdn.microsoft.com/library/0214dd41-35ad-43ab-b892-e636e038621a).  
   
--   **ObjectFiles**  
+- **ObjectFiles**  
   
-     Impliziter **String[]**-Parameter.  
+   Impliziter **String[]**-Parameter.  
   
-     Gibt die Objektdateien an, die verknüpft sind.  
+   Gibt die Objektdateien an, die verknüpft sind.  
   
--   **OptimizeReferences**  
+- **OptimizeReferences**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` schließt Funktionen und/oder Daten aus, auf die nie verwiesen wird.  
+   `true` schließt Funktionen und/oder Daten aus, auf die nie verwiesen wird.  
   
-     Weitere Informationen finden Sie unter dem `REF`-Argument der [/OPT (Optimierungen)](http://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
+   Weitere Informationen finden Sie unter dem `REF`-Argument der [/OPT (Optimierungen)](http://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
--   **OutputFile**  
+- **OutputFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Überschreibt den Standardnamen und den Speicherort des Programms, das der Linker erstellt.  
+   Überschreibt den Standardnamen und den Speicherort des Programms, das der Linker erstellt.  
   
-     Weitere Informationen finden Sie unter [/OUT (Ausgabedateiname)](http://msdn.microsoft.com/library/976210a4-e51f-4cfb-af5e-c16344455834).  
+   Weitere Informationen finden Sie unter [/OUT (Ausgabedateiname)](http://msdn.microsoft.com/library/976210a4-e51f-4cfb-af5e-c16344455834).  
   
--   **PerUserRedirection**  
+- **PerUserRedirection**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingen die Registrierungsschreibvorgänge die Umleitung von **HKEY_CLASSES_ROOT** nach **HKEY_CURRENT_USER**.  
+   Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingen die Registrierungsschreibvorgänge die Umleitung von **HKEY_CLASSES_ROOT** nach **HKEY_CURRENT_USER**.  
   
--   **PreprocessOutput**  
+- **PreprocessOutput**  
   
-     Optionaler `ITaskItem[]` -Parameter.  
+   Optionaler `ITaskItem[]` -Parameter.  
   
-     Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
+   Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
--   **PreventDllBinding**  
+- **PreventDllBinding**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` gibt Bind.exe an, dass das verknüpfte Image nicht gebunden werden soll.  
+   `true` gibt Bind.exe an, dass das verknüpfte Image nicht gebunden werden soll.  
   
-     Weitere Informationen finden Sie unter [/ALLOWBIND (DLL-Bindung verhindern)](http://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
+   Weitere Informationen finden Sie unter [/ALLOWBIND (DLL-Bindung verhindern)](http://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
--   **Profil**  
+- **Profil**  
   
-     Optionaler **boolescher** Parameter.  
+   Optionaler **boolescher** Parameter.  
   
-     `true` erstellt eine Ausgabedatei, die mit dem **Leistungstools**-Profiler verwendet werden kann.  
+   `true` erstellt eine Ausgabedatei, die mit dem **Leistungstools**-Profiler verwendet werden kann.  
   
-     Weitere Informationen finden Sie unter [/PROFILE (Leistungstools-Profiler)](http://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
+   Weitere Informationen finden Sie unter [/PROFILE (Leistungstools-Profiler)](http://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
--   **ProfileGuidedDatabase**  
+- **ProfileGuidedDatabase**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt den Namen der PGD-Datei an, die zum Speichern von Informationen zum ausgeführten Programm verwendet werden  
+   Gibt den Namen der PGD-Datei an, die zum Speichern von Informationen zum ausgeführten Programm verwendet werden  
   
-     Weitere Informationen finden Sie unter [/PGD (Angeben einer Datenbank für die profilgesteuerte Optimierungen)](http://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
+   Weitere Informationen finden Sie unter [/PGD (Angeben einer Datenbank für die profilgesteuerte Optimierungen)](http://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
   
--   **ProgramDatabaseFile**  
+- **ProgramDatabaseFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt einen Namen für die Programmdatenbank (PDB) an, die der Linker erstellt.  
+   Gibt einen Namen für die Programmdatenbank (PDB) an, die der Linker erstellt.  
   
-     Weitere Informationen finden Sie unter [/PDB (Programmdatenbank verwenden)](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
+   Weitere Informationen finden Sie unter [/PDB (Programmdatenbank verwenden)](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
   
--   **RandomizedBaseAddress**  
+- **RandomizedBaseAddress**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` generiert ein ausführbares Image, für das zur Ladezeit mit der *Address Space Layout Randomization*-Funktion (ASLR) von Windows nach dem Zufallsprinzip ein Rebase-Vorgang ausgeführt werden kann.  
+   `true` generiert ein ausführbares Image, für das zur Ladezeit mit der *Address Space Layout Randomization*-Funktion (ASLR) von Windows nach dem Zufallsprinzip ein Rebase-Vorgang ausgeführt werden kann.  
   
-     Weitere Informationen finden Sie unter [/DYNAMICBASE (Address Space Layout Randomization verwenden)](http://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2).  
+   Weitere Informationen finden Sie unter [/DYNAMICBASE (Address Space Layout Randomization verwenden)](http://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2).  
   
--   **RegisterOutput**  
+- **RegisterOutput**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` registriert die primäre Ausgabe dieses Builds.  
+   `true` registriert die primäre Ausgabe dieses Builds.  
   
--   **SectionAlignment**  
+- **SectionAlignment**  
   
-     Optionaler **Integer**-Parameter.  
+   Optionaler **Integer**-Parameter.  
   
-     Gibt die Ausrichtung der einzelnen Abschnitte innerhalb des linearen Adressraums des Programms an. Der Parameterwert ist eine Einheit von Bytes und eine Potenz von zwei.  
+   Gibt die Ausrichtung der einzelnen Abschnitte innerhalb des linearen Adressraums des Programms an. Der Parameterwert ist eine Einheit von Bytes und eine Potenz von zwei.  
   
-     Weitere Informationen finden Sie unter [/ALIGN (Abschnittsausrichtung)](http://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
+   Weitere Informationen finden Sie unter [/ALIGN (Abschnittsausrichtung)](http://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
--   **SetChecksum**  
+- **SetChecksum**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` legt die Prüfsumme im Header einer EXE-Datei fest.  
+   `true` legt die Prüfsumme im Header einer EXE-Datei fest.  
   
-     Weitere Informationen finden Sie unter [/RELEASE (Prüfsumme festlegen)](http://msdn.microsoft.com/library/93bcadf4-29ac-4824-914b-6997e3751d22).  
+   Weitere Informationen finden Sie unter [/RELEASE (Prüfsumme festlegen)](http://msdn.microsoft.com/library/93bcadf4-29ac-4824-914b-6997e3751d22).  
   
--   **ShowProgress**  
+- **ShowProgress**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt den Ausführlichkeitsgrad von Statusberichten für die Verknüpfungsoperation an.  
+   Gibt den Ausführlichkeitsgrad von Statusberichten für die Verknüpfungsoperation an.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\<none>*  
+  - **NotSet** - *\<none>*  
   
-    -   **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** - **/VERBOSE**  
   
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** - **/VERBOSE:Lib**  
   
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** - **/VERBOSE:ICF**  
   
-    -   **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** - **/VERBOSE:REF**  
   
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
   
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     Weitere Informationen finden Sie unter [/VERBOSE (Statusmeldungen ausgeben)](http://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
+    Weitere Informationen finden Sie unter [/VERBOSE (Statusmeldungen ausgeben)](http://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
--   **Sources**  
+- **Sources**  
   
-     Erforderlicher `ITaskItem[]` -Parameter.  
+   Erforderlicher `ITaskItem[]` -Parameter.  
   
-     Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.  
+   Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
--   **SpecifySectionAttributes**  
+- **SpecifySectionAttributes**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Attribute eines Abschnitts an. Dies überschreibt die Attribute, die beim Kompilieren der OBJ-Datei für den Abschnitt festgelegt wurden.  
+   Gibt die Attribute eines Abschnitts an. Dies überschreibt die Attribute, die beim Kompilieren der OBJ-Datei für den Abschnitt festgelegt wurden.  
   
-     Weitere Informationen finden Sie unter [/SECTION (Abschnittsattribute festlegen)](http://msdn.microsoft.com/library/92b69d81-e421-462e-b46f-7d0dff9b9d16).  
+   Weitere Informationen finden Sie unter [/SECTION (Abschnittsattribute festlegen)](http://msdn.microsoft.com/library/92b69d81-e421-462e-b46f-7d0dff9b9d16).  
   
--   **StackCommitSize**  
+- **StackCommitSize**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Menge an physikalischem Speicher in jeder Zuordnung an, wenn zusätzlicher Speicher belegt wird.  
+   Gibt die Menge an physikalischem Speicher in jeder Zuordnung an, wenn zusätzlicher Speicher belegt wird.  
   
-     Weitere Informationen finden Sie unter dem `commit`-Argument in [/STACK (Stapelreservierungen)](http://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Weitere Informationen finden Sie unter dem `commit`-Argument in [/STACK (Stapelreservierungen)](http://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
--   **StackReserveSize**  
+- **StackReserveSize**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Gesamtgröße der Stapelreservierung im virtuellen Speicher an.  
+   Gibt die Gesamtgröße der Stapelreservierung im virtuellen Speicher an.  
   
-     Weitere Informationen finden Sie unter dem `reserve`-Argument in [/STACK (Stapelreservierungen)](http://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Weitere Informationen finden Sie unter dem `reserve`-Argument in [/STACK (Stapelreservierungen)](http://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
--   **StripPrivateSymbols**  
+- **StripPrivateSymbols**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Erstellt eine zweite Programmdatenbank (PDB)-Datei, die keine Symbole enthält, die Sie nicht an Ihre Kunden verteilen möchten. Geben Sie den Namen der zweiten PDB-Datei an.  
+   Erstellt eine zweite Programmdatenbank (PDB)-Datei, die keine Symbole enthält, die Sie nicht an Ihre Kunden verteilen möchten. Geben Sie den Namen der zweiten PDB-Datei an.  
   
-     Weitere Informationen finden Sie unter [/PDBSTRIPPED (Private Symbole entfernen)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
+   Weitere Informationen finden Sie unter [/PDBSTRIPPED (Private Symbole entfernen)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
--   **SubSystem**  
+- **SubSystem**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Umgebung für die ausführbare Datei an.  
+   Gibt die Umgebung für die ausführbare Datei an.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\<none>*  
+  - **NotSet** - *\<none>*  
   
-    -   **Konsole** - **/SUBSYSTEM:CONSOLE**  
+  - **Konsole** - **/SUBSYSTEM:CONSOLE**  
   
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** - **/SUBSYSTEM:WINDOWS**  
   
-    -   **Nativ** - **/SUBSYSTEM:NATIVE**  
+  - **Nativ** - **/SUBSYSTEM:NATIVE**  
   
-    -   **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-    -   **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-    -   **EFI-ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI-ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **EFI-Laufzeit** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI-Laufzeit** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
-    -   **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     Weitere Informationen finden Sie unter [/SUBSYSTEM (Subsystem angeben)](http://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
+    Weitere Informationen finden Sie unter [/SUBSYSTEM (Subsystem angeben)](http://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
--   **SupportNobindOfDelayLoadedDLL**  
+- **SupportNobindOfDelayLoadedDLL**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist den Linker an, keine bindbare Importadresstabelle (IAT) in das endgültige Image einzuschließen.  
+   `true` weist den Linker an, keine bindbare Importadresstabelle (IAT) in das endgültige Image einzuschließen.  
   
-     Weitere Informationen finden Sie unter dem `NOBIND`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](http://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Weitere Informationen finden Sie unter dem `NOBIND`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](http://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
--   **SupportUnloadOfDelayLoadedDLL**  
+- **SupportUnloadOfDelayLoadedDLL**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist die Hilfsfunktion für das verzögerte Laden an, das explizite Entladen der DLL zu unterstützen.  
+   `true` weist die Hilfsfunktion für das verzögerte Laden an, das explizite Entladen der DLL zu unterstützen.  
   
-     Weitere Informationen finden Sie unter dem `UNLOAD`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](http://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Weitere Informationen finden Sie unter dem `UNLOAD`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](http://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
+   Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-     Weitere Informationen finden Sie unter [/NOLOGO (Startbanner unterdrücken) (Linker)](http://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
+   Weitere Informationen finden Sie unter [/NOLOGO (Startbanner unterdrücken) (Linker)](http://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
--   **SwapRunFromCD**  
+- **SwapRunFromCD**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
+   `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
-     Weitere Informationen finden Sie unter dem `CD`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](http://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Siehe auch den **SwapRunFromNET**-Parameter.  
+   Weitere Informationen finden Sie unter dem `CD`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](http://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Siehe auch den **SwapRunFromNET**-Parameter.  
   
--   **SwapRunFromNET**  
+- **SwapRunFromNET**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
+   `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
-     Weitere Informationen finden Sie unter dem `NET`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](http://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Siehe auch den **SwapRunFromCD**-Parameter in dieser Tabelle.  
+   Weitere Informationen finden Sie unter dem `NET`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](http://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Siehe auch den **SwapRunFromCD**-Parameter in dieser Tabelle.  
   
--   **TargetMachine**  
+- **TargetMachine**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die Zielplattform für das Programm oder die DLL an.  
+   Gibt die Zielplattform für das Programm oder die DLL an.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\<none>*  
+  - **NotSet** - *\<none>*  
   
-    -   **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** - **/MACHINE:ARM**  
   
-    -   **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** - **/MACHINE:EBC**  
   
-    -   **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** - **/MACHINE:IA64**  
   
-    -   **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** - **/MACHINE:MIPS**  
   
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** - **/MACHINE:MIPS16**  
   
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
   
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
   
-    -   **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** - **/MACHINE:SH4**  
   
-    -   **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** - **/MACHINE:X86**  
   
-     Weitere Informationen finden Sie unter [/MACHINE (Zielplattform angeben)](http://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
+    Weitere Informationen finden Sie unter [/MACHINE (Zielplattform angeben)](http://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
--   **TerminalServerAware**  
+- **TerminalServerAware**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` setzt ein Flag in das Feld IMAGE_OPTIONAL_HEADER DllCharacteristics im optionalen Header des Programm-Images. Wenn dieses Flag festgelegt ist, wird der Terminalserver keine bestimmten Änderungen an der Anwendung vornehmen.  
+   `true` setzt ein Flag in das Feld IMAGE_OPTIONAL_HEADER DllCharacteristics im optionalen Header des Programm-Images. Wenn dieses Flag festgelegt ist, wird der Terminalserver keine bestimmten Änderungen an der Anwendung vornehmen.  
   
-     Weitere Informationen finden Sie unter [/TSAWARE (Terminalserverfähige Anwendung erstellen)](http://msdn.microsoft.com/library/fe1c1846-de5b-4839-b562-93fbfe36cd29).  
+   Weitere Informationen finden Sie unter [/TSAWARE (Terminalserverfähige Anwendung erstellen)](http://msdn.microsoft.com/library/fe1c1846-de5b-4839-b562-93fbfe36cd29).  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt das Verzeichnis des Nachverfolgungsprotokolls an.  
+   Gibt das Verzeichnis des Nachverfolgungsprotokolls an.  
   
--   **TreatLinkerWarningAsErrors**  
+- **TreatLinkerWarningAsErrors**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` bewirkt, dass keine Ausgabedatei generiert wird, wenn der Linker eine Warnung generiert.  
+   `true` bewirkt, dass keine Ausgabedatei generiert wird, wenn der Linker eine Warnung generiert.  
   
-     Weitere Informationen finden Sie unter [/WX (Linkerwarnungen als Fehler behandeln)](http://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
+   Weitere Informationen finden Sie unter [/WX (Linkerwarnungen als Fehler behandeln)](http://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
--   **TurnOffAssemblyGeneration**  
+- **TurnOffAssemblyGeneration**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     `true` erstellt ein Image für die aktuelle Ausgabedatei ohne eine .NET Framework-Assembly.  
+   `true` erstellt ein Image für die aktuelle Ausgabedatei ohne eine .NET Framework-Assembly.  
   
-     Weitere Informationen finden Sie unter [/NOASSEMBLY (MSIL-Modul erstellen)](http://msdn.microsoft.com/library/3cea4e70-f451-4395-a626-1930b1b127fe).  
+   Weitere Informationen finden Sie unter [/NOASSEMBLY (MSIL-Modul erstellen)](http://msdn.microsoft.com/library/3cea4e70-f451-4395-a626-1930b1b127fe).  
   
--   **TypeLibraryFile**  
+- **TypeLibraryFile**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt den Dateinamen und die Dateinamenerweiterung der TLB-Datei an. Geben Sie einen Dateinamen oder einen Pfad und Dateinamen ein.  
+   Gibt den Dateinamen und die Dateinamenerweiterung der TLB-Datei an. Geben Sie einen Dateinamen oder einen Pfad und Dateinamen ein.  
   
-     Weitere Informationen finden Sie unter [/TLBOUT (TLB-Datei benennen)](http://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
+   Weitere Informationen finden Sie unter [/TLBOUT (TLB-Datei benennen)](http://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
--   **TypeLibraryResourceID**  
+- **TypeLibraryResourceID**  
   
-     Optionaler **Integer**-Parameter.  
+   Optionaler **Integer**-Parameter.  
   
-     Kennzeichnet einen benutzerdefinierten Wert für die vom Linker erstellte Typbibliothek. Geben Sie einen Wert von 1 bis 65535 an.  
+   Kennzeichnet einen benutzerdefinierten Wert für die vom Linker erstellte Typbibliothek. Geben Sie einen Wert von 1 bis 65535 an.  
   
-     Weitere Informationen finden Sie unter [/TLBID (Ressourcen-ID für TypeLib festlegen)](http://msdn.microsoft.com/library/434b28a2-4656-4d52-ac82-8b18bf486fb2).  
+   Weitere Informationen finden Sie unter [/TLBID (Ressourcen-ID für TypeLib festlegen)](http://msdn.microsoft.com/library/434b28a2-4656-4d52-ac82-8b18bf486fb2).  
   
--   **UACExecutionLevel**  
+- **UACExecutionLevel**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Gibt die angeforderte Ausführungsebene für die Anwendung an, wenn diese mit Benutzerkontensteuerung ausgeführt wird.  
+   Gibt die angeforderte Ausführungsebene für die Anwendung an, wenn diese mit Benutzerkontensteuerung ausgeführt wird.  
   
-     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
+   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **AsInvoker** - `level='asInvoker'`  
+  - **AsInvoker** - `level='asInvoker'`  
   
-    -   **HighestAvailable** - `level='highestAvailable'`  
+  - **HighestAvailable** - `level='highestAvailable'`  
   
-    -   **RequireAdministrator** - `level='requireAdministrator'`  
+  - **RequireAdministrator** - `level='requireAdministrator'`  
   
-     Weitere Informationen finden Sie unter dem `level`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+    Weitere Informationen finden Sie unter dem `level`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
--   **UACUIAccess**  
+- **UACUIAccess**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Bei `true` umgeht die Anwendung Sicherheitsebenen für Benutzeroberflächen und steuert die Eingabe in Fenster mit höheren Berechtigungen auf dem Desktop; andernfalls `false`.  
+   Bei `true` umgeht die Anwendung Sicherheitsebenen für Benutzeroberflächen und steuert die Eingabe in Fenster mit höheren Berechtigungen auf dem Desktop; andernfalls `false`.  
   
-     Weitere Informationen finden Sie unter dem `uiAccess`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+   Weitere Informationen finden Sie unter dem `uiAccess`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](http://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
--   **UseLibraryDependencyInputs**  
+- **UseLibraryDependencyInputs**  
   
-     Optionaler **Boolean**-Parameter.  
+   Optionaler **Boolean**-Parameter.  
   
-     Bei `true` werden die Eingaben in das Bibliothekstool eher verwendet als die Bibliotheksdatei selbst, wenn Bibliotheksausgaben von Projektabhängigkeiten verknüpft sind.  
+   Bei `true` werden die Eingaben in das Bibliothekstool eher verwendet als die Bibliotheksdatei selbst, wenn Bibliotheksausgaben von Projektabhängigkeiten verknüpft sind.  
   
--   **Version**  
+- **Version**  
   
-     Optionaler **String**-Parameter.  
+   Optionaler **String**-Parameter.  
   
-     Fügen Sie eine Versionsnummer im Header der EXE- oder DLL-Datei ein. Geben Sie „`major[.minor]`“ an. Die `major` und `minor`-Argumente sind Dezimalzahlen von 0 bis 65535.  
+   Fügen Sie eine Versionsnummer im Header der EXE- oder DLL-Datei ein. Geben Sie „`major[.minor]`“ an. Die `major` und `minor`-Argumente sind Dezimalzahlen von 0 bis 65535.  
   
-     Weitere Informationen finden Sie unter [/VERSION (Versionsinformationen)](http://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
+   Weitere Informationen finden Sie unter [/VERSION (Versionsinformationen)](http://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

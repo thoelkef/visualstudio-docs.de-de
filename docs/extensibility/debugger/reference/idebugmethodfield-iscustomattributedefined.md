@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
+title: IDebugMethodField::IsCustomAttributeDefined | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8515fd9fc9914daa7f28f876777dd5eb26ac14c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d2481c014c149e51c4c9ee3ff837a65e040b7e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882267"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Bestimmt, ob ein bestimmtes benutzerdefiniertes Attribut definiert wurde.  
@@ -41,10 +41,10 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parameter  
  `pszCustomAttributeName`  
- [in] Eine Zeichenfolge mit dem Namen des zu suchenden benutzerdefinierten Attributs.  
+ [in] Eine Zeichenfolge, die mit dem Namen des zu suchenden benutzerdefinierten Attributs.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, S_OK, wenn bei dieser Methode des benutzerdefinierten Attributs definiert ist, andernfalls "S_FALSE" zurückgegeben.  
+ Gibt zurück, S_OK Wenn das benutzerdefinierte Attribut für diese Methode definiert ist, andernfalls S_FALSE zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

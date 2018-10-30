@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812165"
 ---
 # <a name="network-usage"></a>Analysieren der Netzwerkverwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 ## <a name="collecting-network-tool-data"></a>Sammeln von Netzwerktooldaten  
  Sie sollten das Tool **Netzwerk** mit einem geöffneten Visual Studio-Projekt auf dem Computer mit Visual Studio ausführen.  
   
-1.  Öffnen Sie das Projekt in Visual Studio.  
+1. Öffnen Sie das Projekt in Visual Studio.  
   
-2.  Wählen Sie im Menü die Option **Debuggen / Leistungsprofiler** aus. Wählen Sie Netzwerk aus, und klicken Sie anschließend auf **Starten**.  
+2. Wählen Sie im Menü die Option **Debuggen / Leistungsprofiler** aus. Wählen Sie Netzwerk aus, und klicken Sie anschließend auf **Starten**.  
   
-3.  Das Netzwerktool beginnt mit dem Erfassen des HTTP-Datenverkehrs Ihrer App.  
+3. Das Netzwerktool beginnt mit dem Erfassen des HTTP-Datenverkehrs Ihrer App.  
   
-     Während der Ausführung der App zeigt die Zusammenfassungsansicht im linken Bereich automatisch eine Liste der erfassten HTTP-Vorgänge an. Wählen Sie ein Element in der Zusammenfassungsansicht aus, um weitere Informationen im Detailbereich rechts anzuzeigen.  
+    Während der Ausführung der App zeigt die Zusammenfassungsansicht im linken Bereich automatisch eine Liste der erfassten HTTP-Vorgänge an. Wählen Sie ein Element in der Zusammenfassungsansicht aus, um weitere Informationen im Detailbereich rechts anzuzeigen.  
   
-4.  Klicken Sie auf **Beenden**, um die App zu schließen.  
+4. Klicken Sie auf **Beenden**, um die App zu schließen.  
   
- Das Berichtsfenster sollte in etwa wie folgt aussehen:  
+   Das Berichtsfenster sollte in etwa wie folgt aussehen:  
   
- ![Das Fenster „Netzwerk“](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Das Fenster „Netzwerk“](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analysieren von Daten  
  Sie können erfassten HTTP-Datenverkehr analysieren, während die App ausgeführt wird oder nachdem sie geschlossen wurde. Wählen Sie dazu einen der in der Zusammenfassungsansicht angezeigten Netzwerkvorgänge aus.  

@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949018"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Gewusst wie: Speichern von Datasetänderungen in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Nachdem die Daten im Dataset geändert und überprüft wurden, möchten Sie die 
 ## <a name="updating-two-related-tables-in-a-dataset"></a>Aktualisieren von zwei verknüpften Tabellen in einem Dataset  
  Bei der Aktualisierung verknüpfter Tabellen in einem Dataset ist es wichtig, die richtige Reihenfolge einzuhalten, um nicht unnötig Einschränkungen für die referenzielle Integrität zu verletzen. Die in der Befehlsausführung verwendete Abfolge richtet sich zusätzlich nach den Indizes von <xref:System.Data.DataRowCollection> im Dataset. Um zu verhindern, dass Integritätsfehler ausgelöst werden, wird bei der Aktualisierung der Datenbank die folgende Reihenfolge empfohlen:  
   
-1.  Untergeordnete Tabelle: Datensätze löschen.  
+1. Untergeordnete Tabelle: Datensätze löschen.  
   
-2.  Übergeordnete Tabelle: Datensätze einfügen, aktualisieren und löschen.  
+2. Übergeordnete Tabelle: Datensätze einfügen, aktualisieren und löschen.  
   
-3.  Untergeordnete Tabelle: Datensätze einfügen und aktualisieren.  
+3. Untergeordnete Tabelle: Datensätze einfügen und aktualisieren.  
   
- Ausführliche Informationen zum Speichern von Daten aus mehreren Tabellen finden Sie unter [Speichern von Daten in einer Datenbank (mehrere Tabellen)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Ausführliche Informationen zum Speichern von Daten aus mehreren Tabellen finden Sie unter [Speichern von Daten in einer Datenbank (mehrere Tabellen)](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- Wenn Sie zwei oder mehr verknüpfte Tabellen aktualisieren, dann müssen Sie die gesamte Aktualisierungslogik einer Transaktion miteinbeziehen. Eine Transaktion ist ein Prozess, der sicherstellt, dass alle zugehörigen Änderungen an einer Datenbank erfolgreich sind, bevor ein Commit für eine der Änderungen ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und Parallelität](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   Wenn Sie zwei oder mehr verknüpfte Tabellen aktualisieren, dann müssen Sie die gesamte Aktualisierungslogik einer Transaktion miteinbeziehen. Eine Transaktion ist ein Prozess, der sicherstellt, dass alle zugehörigen Änderungen an einer Datenbank erfolgreich sind, bevor ein Commit für eine der Änderungen ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und Parallelität](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>So aktualisieren Sie zwei verknüpfte Tabellen mit einem TableAdapter  
   

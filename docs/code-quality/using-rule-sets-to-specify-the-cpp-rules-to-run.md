@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893597"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 
@@ -34,11 +34,11 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
 3. In der **Regelsatz** Dropdown-Listenfeld, führen Sie einen der folgenden:
 
-    - Wählen Sie den Regelsatz, den Sie anpassen möchten.
+   - Wählen Sie den Regelsatz, den Sie anpassen möchten.
 
      \- oder –
 
-    - Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.
+   - Wählen Sie  **\<durchsuchen... >** an einen vorhandenen Regelsatz ist nicht in der Liste.
 
 4. Wählen Sie **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.
 

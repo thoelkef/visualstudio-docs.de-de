@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826491"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -59,13 +59,14 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 > [INSTALLDIR] im folgenden in das Stammverzeichnis der Installation von Visual Studio verweist. *VSIXInstaller.exe* wird dies automatisch zu füllen, aber um benutzerdefiniertem Code zu schreiben, lesen Sie [finden von Visual Studio](locating-visual-studio.md).
 
 * Assemblys, die nur im globalen Assemblycache installiert wurden:
-  * Diese Assemblys sind jetzt installiert * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Diese Ordner sind Teil der Visual Studio-Prozess Überprüfungspfade.
+  * Diese Assemblys sind jetzt installiert <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Diese Ordner sind Teil der Visual Studio-Prozess Überprüfungspfade.
+
 * Assemblys, die in einen Pfad ohne Überprüfung und im globalen Assemblycache installiert wurden:
   * Die Kopie im globalen Assemblycache wurde über das Setup entfernt.
   * Ein *PKGDEF* Datei wurde hinzugefügt, um eine CodeBase-Eintrag für die Assembly anzugeben.
 
     Zum Beispiel:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
   * Der Code wird Visual Studio Core-Assemblys zu finden sein.
   * Erwägen Sie die Verwendung einer *PKGDEF* Datei, um einen Pfad auf die Assemblys bei Bedarf anzugeben.
 * Wenn Ihre Erweiterung außerhalb der Visual Studio-Prozess ausgeführt wird:
-  * Sehen Sie die für Visual Studio Core-Assemblys unter * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*mithilfe von Konfiguration-Datei oder Assembly-Auflösung.
+  * Sehen Sie die für Visual Studio Core-Assemblys unter <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*mithilfe von Konfiguration-Datei oder Assembly-Auflösung.
 
 ## <a name="change-reduce-registry-impact"></a>Änderung: Reduzieren der Auswirkungen der Registrierung
 

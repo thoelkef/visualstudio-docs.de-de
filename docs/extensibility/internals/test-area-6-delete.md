@@ -1,5 +1,5 @@
 ---
-title: 'Testbereich 6: Löschen | Microsoft Docs'
+title: 'Testbereich 6: Löschen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,46 +14,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fc6ab9746e7ef2188c78dc77ec357f7d415a42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ce67ded280fd87fbcabd72d7ca45f1af8568336
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888215"
 ---
 # <a name="test-area-6-delete"></a>Testbereich 6: Löschen
-Dieser Bereich der quellcodeverwaltung für die Test-Plug-in behandelt Delete-Aktionen.  
+Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.  
   
- Datenquellen-Steuerelements zum Löschen von Aktionen in reagiert **Projektmappen-Explorer**.  
+ Löschen von Aktionen im Datenquellen-Steuerelement reagiert **Projektmappen-Explorer**.  
   
  Es folgt eine Liste von Elementen, die gelöscht werden können:  
   
--   Dateien  
+- Dateien  
   
--   Ordner  
+- Ordner  
   
--   Projekt  
+- Projekt  
   
- Je nach Projekttyp, haben Sie möglicherweise die Möglichkeit, **entfernen** des Projekts (bewirkt, dass die Dateien auf dem Datenträger) oder **löschen** des Projekts (entfernt die Dateien auf dem Datenträger). Aktionen entfernt, das Projekt oder Element von **Projektmappen-Explorer**.  
+  Je nach Projekttyp, haben Sie möglicherweise die Möglichkeit, **entfernen** des Projekts (verlassen die Dateien auf Datenträger) oder **löschen** des Projekts (entfernt die Dateien auf dem Datenträger). Beide Aktionen entfernt, das Projekt oder Projektelement aus **Projektmappen-Explorer**.  
   
-## <a name="expected-behavior"></a>Erwartetes Verhalten  
- Das erwartete Verhalten für die Testfälle in der Delete-Test-Bereich ist:  
+## <a name="expected-behavior"></a>Es wird erwartet  
+ Das erwartete Verhalten für die Testfälle im Testbereich löschen ist:  
   
 -   Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.  
   
--   Das übergeordnete Element der gelöschten Projekts oder des Elements ist ausgecheckt, Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
+-   Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
   
--   Nach dem Löschen einer überprüften oder Element hinzugefügt, es erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
+-   Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
   
--   Das Element noch vorhanden ist in den Speicher der quellcodeverwaltung, auch nach dem Löschen und muss manuell gelöscht werden.  
+-   Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
-|Löschen Sie ein Clientprojekt|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Entfernen Sie das gesamte Projekt aus der Projektmappe|Allgemeine erwartet.|  
-|Löschen Sie eine leere Datei|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie dem Projekt eine Datei mit NULL Byte hinzu.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie die Datei, löschen Sie ihn.|Allgemeine erwartet.|  
-|Löschen Sie einen Ordner mit einer Datei|1.  Einzelnen Projektmappe zu erstellen.<br />2.  Fügen Sie einen Ordner hinzu.<br />3.  Fügen Sie eine Datei in den Ordner ein.<br />4.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />5.  Sehen Sie sich das Projekt, um aufforderungen zu vermeiden.<br />6.  Löschen Sie den Ordner an.|Allgemeine erwartet.|  
-|Löschen einer Datei System-Webprojekt|1.  Erstellen Sie eine Datei System-Webprojekt (verwenden Sie die Schaltfläche zum Durchsuchen an einen UNC-Pfad).<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Entfernen Sie das gesamte Projekt aus der Projektmappe.<br />4.  Wiederholen Sie die Schritte 1 bis 3 für eine lokale Webprojekt (unterschiedliche Pfade durch den Code ausführt, aber hat die gleiche externe Schnittstelle und das Verhalten).|Allgemeine erwartet.|  
-|Löschen einer Datei aus einer Datei System-Webprojekt|1.  Erstellen Sie eine Datei System-Webprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Löschen Sie eine Datei aus dem Projekt ein.<br />4.  Wiederholen Sie die Schritte 1 bis 3 für eine lokale Webprojekt (unterschiedliche Pfade durch den Code ausführt, aber hat die gleiche externe Schnittstelle und das Verhalten).|Allgemeine erwartet.|  
+|Löschen eines Clientprojekts|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Entfernen Sie das gesamte Projekt aus Projektmappe|Allgemeine Erwartetes Verhalten.|  
+|Löschen Sie eine leere Datei|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie eine Datei zum Projekt hinzu.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie die Datei, löschen Sie diese.|Allgemeine Erwartetes Verhalten.|  
+|Löschen eines Ordners mit einer Datei|1.  Einzelne Projektmappe zu erstellen.<br />2.  Fügen Sie einen Ordner hinzu.<br />3.  Fügen Sie eine Datei in den Ordner hinzu.<br />4.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />5.  Sehen Sie sich das Projekt aus, um aufforderungen zu vermeiden.<br />6.  Löschen Sie den Ordner an.|Allgemeine Erwartetes Verhalten.|  
+|Löschen einer Datei System-Webprojekt|1.  Erstellen Sie eine Datei System Web-Projekt (verwenden Sie die Schaltfläche zum Durchsuchen an einen UNC-Pfad).<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Entfernen Sie das gesamte Projekt aus der Projektmappe.<br />4.  Wiederholen Sie die Schritte 1 bis 3 für ein lokales Webprojekt (verschiedene Pfade durch den Code ausführt, aber hat die gleiche externe Schnittstelle und das Verhalten).|Allgemeine Erwartetes Verhalten.|  
+|Löschen einer Datei aus einer Datei System-Webprojekt|1.  Erstellen Sie ein Projekt Datei System.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Löschen Sie eine Datei aus dem Projekt ein.<br />4.  Wiederholen Sie die Schritte 1 bis 3 für ein lokales Webprojekt (verschiedene Pfade durch den Code ausführt, aber hat die gleiche externe Schnittstelle und das Verhalten).|Allgemeine Erwartetes Verhalten.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

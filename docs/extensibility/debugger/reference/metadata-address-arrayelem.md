@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
+title: METADATA_ADDRESS_ARRAYELEM | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e222adcd64457a9294a257b64f70695b9f36060
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ab973f1f3389d6a861a0629dae3e2eb7f1b88f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926545"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
-Diese Struktur stellt ein Arrayelement innerhalb eines Arrays dar.  
+Diese Struktur stellt ein Arrayelement in einem Array dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,13 +45,13 @@ public struct METADATA_ADDRESS_ARRAYELEM {
  tokMethod  
  Die ID des Arrays ist dieses Element Teil.  
   
- [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
+ [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.  
   
  dwIndex ab  
  Der Index dieses Elements innerhalb des Arrays.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_ARRAYELEM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_ARRAYELEM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

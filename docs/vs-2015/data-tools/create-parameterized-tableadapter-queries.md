@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823501"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>So fügen Sie eine Abfrage einem vorhandenen datengebundenen Formular hinzu  
   
-1.  Öffnen Sie das Formular im **Windows Forms-Designer**.  
+1. Öffnen Sie das Formular im **Windows Forms-Designer**.  
   
-2.  Auf der **Daten** , wählen Sie im Menü**Abfrage hinzufügen**oder**Smart Tags für Daten**.  
+2. Auf der **Daten** , wählen Sie im Menü**Abfrage hinzufügen**oder**Smart Tags für Daten**.  
   
-    > [!NOTE]
-    >  Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement im Formular, zeigt die Sie auf Datenquelle die Parametrisierung hinzufügen. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.  
+   > [!NOTE]
+   >  Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement im Formular, zeigt die Sie auf Datenquelle die Parametrisierung hinzufügen. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.  
   
-3.  In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tablethat, Sie möchten, hinzufügen Parametrisierung.  
+3. In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tablethat, Sie möchten, hinzufügen Parametrisierung.  
   
-4.  Geben Sie einen Namen in der **Neuer Abfragename** Feld, wenn Sie eine neue Abfrage erstellen.  
+4. Geben Sie einen Namen in der **Neuer Abfragename** Feld, wenn Sie eine neue Abfrage erstellen.  
   
-     - oder -   
+    - oder -   
   
-     Wählen Sie eine Abfrage in der **vorhandener Abfragename** Feld.  
+    Wählen Sie eine Abfrage in der **vorhandener Abfragename** Feld.  
   
-5.  In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.  
+5. In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.  
   
-6.  Wählen Sie**OK**.  
+6. Wählen Sie**OK**.  
   
-     Ein Steuerelement für die Eingabe des Parameters und einen **Load** Schaltfläche hinzugefügt werden, auf das Formular in einem <xref:System.Windows.Forms.ToolStrip> Steuerelement.  
+    Ein Steuerelement für die Eingabe des Parameters und einen **Load** Schaltfläche hinzugefügt werden, auf das Formular in einem <xref:System.Windows.Forms.ToolStrip> Steuerelement.  
   
- TableAdapter-Parameter können null-Werte zugewiesen werden, wenn Sie Datensätze Abfragen, die keinen aktuellen Wert haben möchten. Betrachten Sie beispielsweise die folgende Abfrage, die eine `ShippedDate` Parameter in der `WHERE` Klausel:  
+   TableAdapter-Parameter können null-Werte zugewiesen werden, wenn Sie Datensätze Abfragen, die keinen aktuellen Wert haben möchten. Betrachten Sie beispielsweise die folgende Abfrage, die eine `ShippedDate` Parameter in der `WHERE` Klausel:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Würde dies eine Abfrage auf einem TableAdapter, können Sie alle Aufträge Abfragen, die nicht mit dem folgenden Code geliefert wurden:  
+   Würde dies eine Abfrage auf einem TableAdapter, können Sie alle Aufträge Abfragen, die nicht mit dem folgenden Code geliefert wurden:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>So aktivieren Sie eine Abfrage, um null-Werte akzeptiert  
   

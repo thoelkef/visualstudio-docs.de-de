@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Codeänderungen (C++) | Microsoft Docs
+title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854116"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Codeänderungen behandelt werden. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.  
@@ -40,38 +40,38 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
 ##  <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
  Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
   
--   Die meisten Änderungen an globalen oder statischen Daten.  
+- Die meisten Änderungen an globalen oder statischen Daten.  
   
--   Änderungen an ausführbaren Dateien, die von einem anderen Computer kopiert und nicht lokal erstellt wurden.  
+- Änderungen an ausführbaren Dateien, die von einem anderen Computer kopiert und nicht lokal erstellt wurden.  
   
--   Änderungen an Datentypen, die das Layout eines Objekts beeinflussen (z. B. Datenmember einer Klasse).  
+- Änderungen an Datentypen, die das Layout eines Objekts beeinflussen (z. B. Datenmember einer Klasse).  
   
--   Hinzufügen von mehr als 64 KB neuen Codes oder neuer Daten.  
+- Hinzufügen von mehr als 64 KB neuen Codes oder neuer Daten.  
   
--   Hinzufügen von Variablen, die an einer Stelle vor dem Anweisungszeiger einen Konstruktor benötigen.  
+- Hinzufügen von Variablen, die an einer Stelle vor dem Anweisungszeiger einen Konstruktor benötigen.  
   
--   Änderungen, die sich auf Code auswirken, der eine Laufzeitinitialisierung benötigt.  
+- Änderungen, die sich auf Code auswirken, der eine Laufzeitinitialisierung benötigt.  
   
--   Das Hinzufügen von Ausnahmehandlern in bestimmten Instanzen.  
+- Das Hinzufügen von Ausnahmehandlern in bestimmten Instanzen.  
   
--   Änderungen an Ressourcendateien.  
+- Änderungen an Ressourcendateien.  
   
--   Änderungen an Code in schreibgeschützten Dateien.  
+- Änderungen an Code in schreibgeschützten Dateien.  
   
--   Änderungen am Code ohne entsprechende PDB-Datei.  
+- Änderungen am Code ohne entsprechende PDB-Datei.  
   
--   Änderungen an Code ohne Objektdatei.  
+- Änderungen an Code ohne Objektdatei.  
   
- Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
+  Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
   
--   Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
+- Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  
   
 -   Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](/cpp/build/reference/zo-enhance-optimized-debugging)kompiliert sind  
   
--   In Versionen von Visual Studio vor Visual Studio 2015 Update 1, Debuggen von uwp-apps oder Komponenten. Ab Visual Studio 2015 Update 1 können können bearbeiten und Fortfahren in C++ uwp- und DirectX-apps, da er jetzt unterstützt die `/ZI` -Compilerschalter mit dem `/bigobj` wechseln. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
+-   In Versionen von Visual Studio vor Visual Studio 2015 Update 1 Debuggen UWP-apps oder Komponenten. Ab Visual Studio 2015 Update 1 können Sie bearbeiten und Fortfahren in UWP C++ und DirectX-apps, da jetzt unterstützt das `/ZI` Compilerschalter mit der `/bigobj` wechseln. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
   
 -   Debuggen unter Windows 98.  
   
@@ -100,7 +100,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
      LINK : Warnung LNK4075: ignoriere /EDITANDCONTINUE aufgrund von /OPT  
   
-     specification  
+     Angabe  
   
 -   Durch die Einstellung von **/ORDER**, **/RELEASE**oder **/FORCE** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
   

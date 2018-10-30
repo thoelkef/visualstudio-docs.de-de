@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915842"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 
@@ -40,7 +40,7 @@ Sie müssen sich mit einem Konto anmelden, das über Administratorberechtigungen
 
 ## <a name="change-the-content-installation-source"></a>Ändern der Installationsquelle für Inhalte
 
-Standardmäßig installiert der Help Viewer Inhalte, indem er einen Microsoft-Onlinedienst als Quelle verwendet. Sie sollten die Inhaltsquelle im Allgemeinen nicht ändern, es sei denn, Sie arbeiten in einer Unternehmensumgebung, für die ein Systemadministrator bereits Inhalte an einem anderen Speicherort installiert hat.
+Standardmäßig installiert Help Viewer Inhalte, indem ein Microsoft-Onlinedienst als Quelle verwendet wird. Sie sollten die Inhaltsquelle im Allgemeinen nicht ändern, es sei denn, Sie arbeiten in einer Unternehmensumgebung, für die ein Systemadministrator bereits Inhalte an einem anderen Speicherort installiert hat.
 
 ### <a name="to-change-the-content-installation-source"></a>So ändern Sie die Inhaltsinstallationsquelle
 
@@ -110,9 +110,9 @@ Auf der Statusleiste wird angegeben, wann Updates für den installierten Inhalt 
 
 ### <a name="to-update-local-content"></a>So aktualisieren Sie lokale Inhalte
 
--   Wählen Sie in der rechten unteren Ecke der Statusleiste den Link **Hier klicken, um den Download jetzt zu starten** aus.
+- Wählen Sie in der rechten unteren Ecke der Statusleiste den Link **Hier klicken, um den Download jetzt zu starten** aus.
 
- Die Updatezeiten können variieren, aber Sie können den Aktualisierungsstatus in der Statusleiste anzeigen.
+Die Updatezeiten können variieren, aber Sie können den Aktualisierungsstatus in der Statusleiste anzeigen.
 
 ## <a name="move-local-content"></a>Verschieben von lokalen Inhalten
 

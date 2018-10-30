@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895495"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können das Decorator-angezeigt und nicht mehr angezeigt, abhängig von der Zustand der Eigenschaften im Modell. Für eine Form, die eine Person darstellt, können Sie z. B. unterschiedliche Symbole haben, die je nach Geschlecht der Person, die Anzahl der untergeordneten Elemente angezeigt werden und so weiter.
@@ -24,45 +24,45 @@ Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form 
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Steuern der Sichtbarkeit des ein Symbol oder Text-Decorator-Element
 
-1.  Fügen Sie in der DSL-Definitionsdiagramm hinzu, die Shape-Klasse, die Symbole oder Text-Decorator-Elemente, die angezeigt werden sollen.
+1. Fügen Sie in der DSL-Definitionsdiagramm hinzu, die Shape-Klasse, die Symbole oder Text-Decorator-Elemente, die angezeigt werden sollen.
 
-    1.  Mit der rechten Maustaste der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den erforderlichen Typ des Decorator-Elements.
+   1.  Mit der rechten Maustaste der formklasse, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf den erforderlichen Typ des Decorator-Elements.
 
-    2.  Festlegen des Decorator-Elements **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise können Sie Symbole für "Männlich" und "weiblich", die gemeinsame Nutzung der gleichen Position haben.
+   2.  Festlegen des Decorator-Elements **Position** Eigenschaft. Mehr als ein Decorator-Element kann die gleiche Position verfügen. Beispielsweise können Sie Symbole für "Männlich" und "weiblich", die gemeinsame Nutzung der gleichen Position haben.
 
-    3.  Legen Sie die **Standardsymbol** Eigenschaft ein Symbol für Decorator-Elements.
+   3.  Legen Sie die **Standardsymbol** Eigenschaft ein Symbol für Decorator-Elements.
 
-2.  Wählen Sie die diagrammelementzuordnung, d.h. die graue Linie zwischen der Shape-Klasse und der Domänenklasse im DSL-Definitionsdiagramm.
+2. Wählen Sie die diagrammelementzuordnung, d.h. die graue Linie zwischen der Shape-Klasse und der Domänenklasse im DSL-Definitionsdiagramm.
 
-3.  Im Fenster "DSL-Details" in der **Decorator-Zuordnungen** wählen ein Decorator-Element. Beispiel: die MaleDecorator.
+3. Im Fenster "DSL-Details" in der **Decorator-Zuordnungen** wählen ein Decorator-Element. Beispiel: die MaleDecorator.
 
-4.  Überprüfen Sie die **Sichtbarkeitsfilter** Feld.
+4. Überprüfen Sie die **Sichtbarkeitsfilter** Feld.
 
-5.  Wenn die Eigenschaft "Domain", die die Sichtbarkeit zu steuern, sollten in der unmittelbaren Domänenklasse ist, lassen Sie **Pfad zur Filter-Eigenschaft** leer.
+5. Wenn die Eigenschaft "Domain", die die Sichtbarkeit zu steuern, sollten in der unmittelbaren Domänenklasse ist, lassen Sie **Pfad zur Filter-Eigenschaft** leer.
 
-     Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu die Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.
+    Andernfalls klicken Sie auf das Dropdownmenü, und navigieren Sie zu die Beziehung oder eine Klasse, die auf dem sich die Eigenschaft befindet.
 
-    -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht über eine Beziehung mit markierten navigieren "*" in das Navigationstool.
+   -   Um einen Fehlerbericht zu vermeiden, sollten Sie nicht über eine Beziehung mit markierten navigieren "*" in das Navigationstool.
 
-6.  Legen Sie die **Filtereigenschaft** an einer Domäneneigenschaft. Beispielsweise Geschlecht.
+6. Legen Sie die **Filtereigenschaft** an einer Domäneneigenschaft. Beispielsweise Geschlecht.
 
-7.  In der **Sichtbarkeitseinträge** aufzulisten, fügen Sie die Werte dieser Domäneneigenschaft, die für die das Decorator-Element angezeigt werden. Beispiel: "Männlich".
+7. In der **Sichtbarkeitseinträge** aufzulisten, fügen Sie die Werte dieser Domäneneigenschaft, die für die das Decorator-Element angezeigt werden. Beispiel: "Männlich".
 
-8.  Wiederholen Sie die Schritte für jedes Symbol ein.
+8. Wiederholen Sie die Schritte für jedes Symbol ein.
 
 9. **Alle Vorlagen transformieren**, erstellen und auszuführen, und öffnen Sie ein Diagramm.
 
 10. Wenn Sie steuern den Wert der Eigenschaft ändern, sollte die Decorator-Elemente angezeigt werden und nicht mehr angezeigt.
 
- In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links von einem bestimmten Typ abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren an.
+    In vielen Fällen möchten Sie die Sichtbarkeit durch eine komplexere Formel als einen einfachen Satz von Werten gesteuert werden. Beispielsweise ist ein Symbol auf der Anzahl der Links von einem bestimmten Typ abhängig sind, oder vereinfachen abhängig, ob eine Zahl in einem bestimmten Bereich. In diesem Fall verwenden Sie das folgende Verfahren an.
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Um die Sichtbarkeit eines Decorator-Elements anhand einer Formel zu steuern.
 
 1.  Fügen Sie eine berechnete Domäneneigenschaft, mit der Domänenklasse. In der **Eigenschaften** legen die folgenden Werte:
 
-     **IsBrowsable =**`False`**– Dadurch wird die Eigenschaft vom Benutzer ausgeblendet.** 
+     **IsBrowsable =**`False`**– Dadurch wird die Eigenschaft vom Benutzer ausgeblendet.**
 
-     **Art =**`Calculated`**– Dies bedeutet, dass Sie Code bereitstellen, die den Wert berechnet.** 
+     **Art =**`Calculated`**– Dies bedeutet, dass Sie Code bereitstellen, die den Wert berechnet.**
 
      **Namen** z. B. **DecoratorControl**
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903152"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debuggen von SharePoint-Lösungen
   SharePoint-Lösungen können mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers gedebuggt werden. Beim Starten des Debuggens, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektdateien auf dem SharePoint-Server bereitgestellt, und klicken Sie dann eine Instanz der SharePoint-Website im Webbrowser geöffnet. In den folgenden Abschnitte wird erklärt, wie SharePoint-Anwendungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gedebuggt werden.  
@@ -43,13 +43,13 @@ ms.locfileid: "36327166"
 ## <a name="enable-debugging"></a>Debuggen aktivieren
  Wenn Sie eine SharePoint-Lösung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstmals debuggen, werden Sie in einem Dialogfeld darauf hingewiesen, dass die Datei web.config nicht zum Aktivieren des Debuggens konfiguriert ist. (Die Datei web.config wird erstellt, wenn Sie SharePoint-Server installieren. Weitere Informationen finden Sie unter [arbeiten mit "Web.config"-Dateien](http://go.microsoft.com/fwlink/?LinkID=149266).) Das Dialogfeld bietet die Optionen, das Projekt entweder ohne Debugging auszuführen oder die Datei web.config so zu ändern, dass das Debuggen aktiviert wird. Wenn Sie die erste Option auswählen, wird das Projekt normal ausgeführt. Bei Auswahl der zweiten Option wird die Datei "web.config" für Folgendes konfiguriert:  
   
--   Aktivieren der Aufrufliste (`CallStack="true"`)  
+- Aktivieren der Aufrufliste (`CallStack="true"`)  
   
--   Deaktivieren von benutzerdefinierten Fehlern in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Deaktivieren von benutzerdefinierten Fehlern in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Aktivieren von Kompilierungsdebugging (`<compilation debug="true">`)  
+- Aktivieren von Kompilierungsdebugging (`<compilation debug="true">`)  
   
- Die resultierende Datei web.config sieht wie folgt aus:  
+  Die resultierende Datei web.config sieht wie folgt aus:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327166"
 ## <a name="f5-debug-and-deployment-process"></a>Prozess zum Debuggen und Bereitstellung von F5
  Wenn Sie das SharePoint-Projekt im Debugmodus ausführen, werden im SharePoint-Bereitstellungsprozess die folgenden Aufgaben ausgeführt:  
   
-1.  Die anpassbaren Befehle vor der Bereitstellung werden ausgeführt.  
+1. Die anpassbaren Befehle vor der Bereitstellung werden ausgeführt.  
   
-2.  Es wird eine Weblösungspaketdatei (.wsp) mithilfe von [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]-Befehlen erstellt. Die WSP-Datei enthält alle erforderlichen Dateien und Funktionen. Weitere Informationen finden Sie unter [Übersicht über Lösungen](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Es wird eine Weblösungspaketdatei (.wsp) mithilfe von [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]-Befehlen erstellt. Die WSP-Datei enthält alle erforderlichen Dateien und Funktionen. Weitere Informationen finden Sie unter [Übersicht über Lösungen](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Wenn die SharePoint-Lösung eine Farmlösung ist, wird der [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]-Anwendungspool für die angegebene Website-[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] wiederverwendet. In diesem Schritt werden vom [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]-Arbeitsprozess gesperrte Dateien freigegeben.  
+3. Wenn die SharePoint-Lösung eine Farmlösung ist, wird der [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]-Anwendungspool für die angegebene Website-[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] wiederverwendet. In diesem Schritt werden vom [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]-Arbeitsprozess gesperrte Dateien freigegeben.  
   
-4.  Wenn bereits eine frühere Version des Pakets vorhanden ist, wird die frühere Version der Funktionen und Dateien in der WSP-Datei zurückgenommen. In diesem Schritt werden die Funktionen deaktiviert, das Lösungspaket deinstalliert und anschließend das Lösungspaket auf dem SharePoint-Server gelöscht.  
+4. Wenn bereits eine frühere Version des Pakets vorhanden ist, wird die frühere Version der Funktionen und Dateien in der WSP-Datei zurückgenommen. In diesem Schritt werden die Funktionen deaktiviert, das Lösungspaket deinstalliert und anschließend das Lösungspaket auf dem SharePoint-Server gelöscht.  
   
-5.  Die aktuelle Version der Funktionen und Dateien in der WSP-Datei wird installiert. In diesem Schritt wird die Lösung auf dem SharePoint-Server hinzugefügt und installiert.  
+5. Die aktuelle Version der Funktionen und Dateien in der WSP-Datei wird installiert. In diesem Schritt wird die Lösung auf dem SharePoint-Server hinzugefügt und installiert.  
   
-6.  Für Workflows wird die Workflowassembly installiert. Sie können den Speicherort ändern, indem Sie mit der *Assemblyspeicherort* Eigenschaft.  
+6. Für Workflows wird die Workflowassembly installiert. Sie können den Speicherort ändern, indem Sie mit der *Assemblyspeicherort* Eigenschaft.  
   
-7.  Die Funktion des Projekts wird in SharePoint aktiviert, wenn der Gültigkeitsbereich Website oder Web ist. Funktionen in den Gültigkeitsbereichen Farm und WebApplication werden nicht aktiviert.  
+7. Die Funktion des Projekts wird in SharePoint aktiviert, wenn der Gültigkeitsbereich Website oder Web ist. Funktionen in den Gültigkeitsbereichen Farm und WebApplication werden nicht aktiviert.  
   
-8.  Für Workflows, ordnet den Workflow der SharePoint-Bibliothek, Liste oder -Website, die Sie ausgewählt haben, in der **SharePoint Customization Wizard**.  
+8. Für Workflows, ordnet den Workflow der SharePoint-Bibliothek, Liste oder -Website, die Sie ausgewählt haben, in der **SharePoint Customization Wizard**.  
   
-    > [!NOTE]  
-    >  Diese Zuordnung tritt nur bei Auswahl **automatisch zuordnen. Workflow** im Assistenten.  
+   > [!NOTE]  
+   >  Diese Zuordnung tritt nur bei Auswahl **automatisch zuordnen. Workflow** im Assistenten.  
   
 9. Die anpassbaren Befehle nach der Bereitstellung werden ausgeführt.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327166"
   
 12. Die entsprechende Bibliothek, Liste oder Websiteseite wird im Webbrowser an.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zeigt nach der Ausführung der einzelnen Aufgaben eine Statusmeldung im Ausgabefenster an. Wenn eine Aufgabe nicht abgeschlossen werden kann, zeigt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine Fehlermeldung im Fenster Fehlerliste an.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zeigt nach der Ausführung der einzelnen Aufgaben eine Statusmeldung im Ausgabefenster an. Wenn eine Aufgabe nicht abgeschlossen werden kann, zeigt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine Fehlermeldung im Fenster Fehlerliste an.  
   
 ## <a name="sharepoint-project-features"></a>SharePoint-Projektfunktionen
  Bei einer Funktion handelt es sich um eine portable und modulare Funktionseinheit, die das Ändern von Websites mithilfe von Websitedefinitionen vereinfacht. Es ist auch ein Paket mit [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS)-Elemente, die für einen bestimmten Gültigkeitsbereich aktiviert werden kann und Ihnen dabei hilft, Benutzer, die ein bestimmtes Ziel oder eine Aufgabe auszuführen. Vorlagen werden als Funktionen bereitgestellt.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327166"
 ## <a name="debug-workflows"></a>Debuggen von Workflows
  Wenn Sie Workflowprojekte debuggen, fügt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Workflowvorlage (abhängig von deren Typ) einer Bibliothek oder einer Liste hinzu. Sie können dann die Workflowvorlage manuell oder durch Hinzufügen oder Aktualisieren eines Elements starten. Anschließend können Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwenden, um den Workflow zu debuggen.  
   
-> [!NOTE]  
->  Wenn Sie Verweise auf andere Assemblys hinzufügen, stellen Sie sicher, dass diese Assemblys im globalen Assemblycache installiert werden ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Andernfalls tritt bei der Workflowlösung ein Fehler auf. Informationen zum Installieren von Assemblys finden Sie unter [Manuelles Starten eines Workflows in einem Dokument oder Element](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Wenn Sie Verweise auf andere Assemblys hinzufügen, stellen Sie sicher, dass diese Assemblys im globalen Assemblycache installiert werden ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Andernfalls tritt bei der Workflowlösung ein Fehler auf. Informationen zum Installieren von Assemblys finden Sie unter [Manuelles Starten eines Workflows in einem Dokument oder Element](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Der Workflow wird jedoch nicht vom Bereitstellungsprozess gestartet. Der Workflow muss von der SharePoint-Site gestartet werden. Der Workflow kann auch mithilfe einer Clientanwendung wie Microsoft Office Word 2010 oder mithilfe eines gesonderten serverseitigen Codes gestartet werden. Verwenden Sie eine der im angegebenen Ansätze der **SharePoint Customization Wizard**.  
   

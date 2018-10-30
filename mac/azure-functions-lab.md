@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919740"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -34,17 +34,17 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 1. Starten Sie **Visual Studio für Mac**.
 
-1. Klicken Sie auf **Datei > Neue Projektmappe**.
+2. Klicken Sie auf **Datei > Neue Projektmappe**.
 
-1. Wählen Sie aus der Kategorie **Cloud > Allgemein** die Vorlage **Azure Functions** aus. Sie verwenden C#, um eine .NET-Klassenbibliothek zu erstellen, die Azure Functions hostet. Klicken Sie auf **Weiter**.
+3. Wählen Sie aus der Kategorie **Cloud > Allgemein** die Vorlage **Azure Functions** aus. Sie verwenden C#, um eine .NET-Klassenbibliothek zu erstellen, die Azure Functions hostet. Klicken Sie auf **Weiter**.
 
     ![Auswahl der Azure Functions-Vorlage](media/azure-functions-lab-image1.png)
 
-1. Legen Sie den **Projektnamen** auf **"AzureFunctionsLab"** fest, und klicken Sie auf **Erstellen**.
+4. Legen Sie den **Projektnamen** auf **"AzureFunctionsLab"** fest, und klicken Sie auf **Erstellen**.
 
     ![Benennen und Erstellen des Azure Functions-Projekts](media/azure-functions-lab-image2.png)
 
-1. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“. 
+5. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“. 
 
      Es gibt auch drei Dateien:  
         - **host.json** zum Beschreiben der globalen Konfigurationsoptionen für den Host  

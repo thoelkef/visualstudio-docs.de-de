@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896925"
 ---
 # <a name="how-to-register-editor-file-types"></a>Gewusst wie: Registrieren des Editor-Dateitypen
 Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den Registrierung-Attributen, die als Teil der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], Sie können auch eine Registrierungsdatei, der den Editor und den verbundenen nebenanschlüssen registriert schreiben.
@@ -26,44 +26,44 @@ Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den 
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>Editor für Dateitypen, die mithilfe von MPF-Klassen zu registrieren
 
-1.  Geben Sie die <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Klasse mit den entsprechenden Parametern für den Editor in der Klasse Ihres VSPackage.
+1. Geben Sie die <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Klasse mit den entsprechenden Parametern für den Editor in der Klasse Ihres VSPackage.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     Wo *. Beispiel* ist die Erweiterung, die für diesen Editor registriert ist, und "32" wird die Prioritätsstufe.
+    Wo *. Beispiel* ist die Erweiterung, die für diesen Editor registriert ist, und "32" wird die Prioritätsstufe.
 
-     Die `projectGuid` ist die GUID für verschiedene Dateitypen, die in definierten <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Die Typ der beliebigen Datei wird bereitgestellt, so, dass die resultierende Datei nicht Teil des Buildprozesses werden soll.
+    Die `projectGuid` ist die GUID für verschiedene Dateitypen, die in definierten <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Die Typ der beliebigen Datei wird bereitgestellt, so, dass die resultierende Datei nicht Teil des Buildprozesses werden soll.
 
-     *TemplateDir* steht für den Ordner, der die Vorlagendateien enthält, die mit dem Editor für verwaltete basic-Beispiel enthalten sind.
+    *TemplateDir* steht für den Ordner, der die Vorlagendateien enthält, die mit dem Editor für verwaltete basic-Beispiel enthalten sind.
 
-     `NameResourceID` wird definiert, der *Resources.h* Datei des Projekts BasicEditorUI und identifiziert den Editor als "Meine-Editor".
+    `NameResourceID` wird definiert, der *Resources.h* Datei des Projekts BasicEditorUI und identifiziert den Editor als "Meine-Editor".
 
-2.  Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode.
+2. Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode.
 
-     In der Implementierung von der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode, rufen die <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> Methode und übergeben Sie die Instanz Ihrer Editor-Factory, wie unten veranschaulicht.
+    In der Implementierung von der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode, rufen die <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> Methode und übergeben Sie die Instanz Ihrer Editor-Factory, wie unten veranschaulicht.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     Dieser Schritt wird sowohl die Dateierweiterungen für den Editor als auch die Editor-Factory registriert.
+    Dieser Schritt wird sowohl die Dateierweiterungen für den Editor als auch die Editor-Factory registriert.
 
-3.  Aufheben der Registrierung der editorfactorys.
+3. Aufheben der Registrierung der editorfactorys.
 
-     Editorfactorys werden automatisch aufgehoben, wenn das VSPackage verworfen wird. Wenn der Editor-Factory-Objekt implementiert die <xref:System.IDisposable> -Schnittstelle, die `Dispose` Methode wird aufgerufen, nachdem Sie mit die Factory aufgehoben wurde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    Editorfactorys werden automatisch aufgehoben, wenn das VSPackage verworfen wird. Wenn der Editor-Factory-Objekt implementiert die <xref:System.IDisposable> -Schnittstelle, die `Dispose` Methode wird aufgerufen, nachdem Sie mit die Factory aufgehoben wurde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Registrierung mithilfe eines Skripts für die Registrierung
  Registrieren von editorfactorys und Dateitypen in systemeigenen [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] erfolgt mithilfe eines Skripts für die Registrierung um in der Windows-Registrierung zu schreiben, wie im folgenden dargestellt.

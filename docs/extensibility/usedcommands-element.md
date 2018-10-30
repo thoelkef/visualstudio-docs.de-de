@@ -1,5 +1,5 @@
 ---
-title: UsedCommands Element | Microsoft Docs
+title: UsedCommands-Element | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2dd8bbcfaaa84905f60e2f4ae984f3269c7095
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934768"
 ---
 # <a name="usedcommands-element"></a>UsedCommands-Element
-Das Element UsedCommands gruppiert UsedCommand Elemente und andere UsedCommands Gruppierungen.  
+UsedCommands-Element gruppiert UsedCommand-Elementen und anderen UsedCommands Gruppierungen.  
   
- Das UsedCommands-Element ist optional. Wenn Sie nicht außerhalb des Pakets definiert Befehle aufrufen, müssen Sie nicht in der VSCT-Datei in diesem Abschnitt enthalten.  
+ UsedCommands-Element ist optional. Wenn Sie Befehle, die außerhalb des Pakets definiert nicht aufrufen, müssen Sie nicht in diesem Abschnitt in der VSCT-Datei enthalten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,7 +55,7 @@ Das Element UsedCommands gruppiert UsedCommand Elemente und andere UsedCommands 
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle aus (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern), die eine VSPackage bereitstellt, der integrierten Entwicklungsumgebung (IDE) darstellen.|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern), die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen.|  
   
 ## <a name="example"></a>Beispiel  
   

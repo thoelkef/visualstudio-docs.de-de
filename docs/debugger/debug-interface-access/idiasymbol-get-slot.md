@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_slot | Microsoft Docs'
+title: 'Idiasymbol:: Get_slot | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a996b35bab371bb331dfbe068258a2469c0e2df
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64e554ac5e414ccc34d1ab66962232a263535d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852439"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-Ruft die Nummer des Steckplatzes des Speicherorts ab. Verwenden in folgenden Fällen die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsSlot`.  
+Ruft die Slotnummer der Position ab. Verwenden, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsSlot`.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT get_slot (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Nummer des Steckplatzes des Speicherorts zurück.  
+ [out] Gibt den Slotnummer des Speicherorts zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

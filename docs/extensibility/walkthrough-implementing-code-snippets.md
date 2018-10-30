@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921983"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren-Codeausschnitte
 Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer von der Erweiterung sie ihren eigenen Code hinzufügen können.  
@@ -27,15 +27,15 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
   
  In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:  
   
-1.  Erstellen Sie und registrieren Sie Codeausschnitte für eine bestimmte Sprache.  
+1. Erstellen Sie und registrieren Sie Codeausschnitte für eine bestimmte Sprache.  
   
-2.  Hinzufügen der **Ausschnitt einfügen** Befehl in einem Kontextmenü.  
+2. Hinzufügen der **Ausschnitt einfügen** Befehl in einem Kontextmenü.  
   
-3.  Implementieren Sie die ausschnitterweiterung.  
+3. Implementieren Sie die ausschnitterweiterung.  
   
- Diese exemplarische Vorgehensweise basiert auf [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Diese exemplarische Vorgehensweise basiert auf [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-and-register-code-snippets"></a>Erstellen und Registrieren von Codeausschnitten  
@@ -43,72 +43,72 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
   
  Die folgenden Schritte veranschaulichen das Erstellen von Codeausschnitten aus, und ordnen sie einen bestimmten GUID.  
   
-1.  Erstellen Sie die folgende Verzeichnisstruktur:  
+1. Erstellen Sie die folgende Verzeichnisstruktur:  
   
-     **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
   
-     wo *% INSTALLDIR%* ist der Visual Studio-Installationsordner. (Obwohl dieser Pfad in der Regel verwendet wird, um Codeausschnitte zu installieren, können Sie einen Pfad angeben.)  
+    wo *% INSTALLDIR%* ist der Visual Studio-Installationsordner. (Obwohl dieser Pfad in der Regel verwendet wird, um Codeausschnitte zu installieren, können Sie einen Pfad angeben.)  
   
-2.  Erstellen Sie in den Ordner \1033\ ein *XML* Datei und nennen Sie sie **TestSnippets.xml**. (Obwohl dieser Name in der Regel für die Datei einen Index verwendet wird, können Sie einen beliebigen Namen angeben, solange sie verfügt über eine *XML* Dateinamenerweiterung.) Fügen Sie den folgenden Text ein, und klicken Sie dann löschen Sie die Platzhalter-GUID und fügen Sie eine eigene hinzu.  
+2. Erstellen Sie in den Ordner \1033\ ein *XML* Datei und nennen Sie sie **TestSnippets.xml**. (Obwohl dieser Name in der Regel für die Datei einen Index verwendet wird, können Sie einen beliebigen Namen angeben, solange sie verfügt über eine *XML* Dateinamenerweiterung.) Fügen Sie den folgenden Text ein, und klicken Sie dann löschen Sie die Platzhalter-GUID und fügen Sie eine eigene hinzu.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Erstellen Sie eine Datei im Ordner "Ausschnitt", nennen Sie es **testen**`.snippet`, und fügen Sie dann den folgenden Text hinzu:  
+3. Erstellen Sie eine Datei im Ordner "Ausschnitt", nennen Sie es **testen**`.snippet`, und fügen Sie dann den folgenden Text hinzu:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- Die folgenden Schritte zeigen, wie Sie die Codeausschnitte registrieren.  
+   Die folgenden Schritte zeigen, wie Sie die Codeausschnitte registrieren.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>So registrieren Sie Codeausschnitte für einen bestimmten GUID  
   

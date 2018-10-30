@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875098"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält
 Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird der Kunde musste früher das Bereitstellungsmanifest aktualisieren und erneut signieren. Weiterhin ist die bevorzugte Methode in den meisten Fällen .NET Framework 3.5 ermöglicht Ihnen die Erstellung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen, die von Kunden bereitgestellt werden können, ohne dass ein neues Bereitstellungsmanifest erneut zu generieren. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -39,7 +39,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
 > [!NOTE]
 >  In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell entweder das Befehlszeilentool *Mage.exe* oder dem grafischen Tool *MageUI.exe*. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Ausführen der Schritte in dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Eine Windows Forms-Anwendung, die Sie bereitstellen möchten. Diese Anwendung wird als bezeichnet werden *WindowsFormsApp1*.  
@@ -48,36 +48,36 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Bereitstellen eine ClickOnce-Anwendung mit mehreren Bereitstellung und mit "Mage.exe" branding-Unterstützung  
   
-1.  Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und ändern Sie in das Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.  
+1. Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und ändern Sie in das Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.  
   
-2.  Erstellen Sie ein Verzeichnis namens nach der aktuellen Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.  
+2. Erstellen Sie ein Verzeichnis namens nach der aktuellen Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.  
+   > [!NOTE]
+   >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.  
   
-3.  Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.  
+3. Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.  
   
-4.  Das Anwendungsmanifest mit einem Aufruf von Mage.exe zu generieren.  
+4. Das Anwendungsmanifest mit einem Aufruf von Mage.exe zu generieren.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Melden Sie das Anwendungsmanifest mit das digitale Zertifikat.  
+5. Melden Sie das Anwendungsmanifest mit das digitale Zertifikat.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Generieren Sie das Bereitstellungsmanifest mit einem Aufruf von *Mage.exe*. In der Standardeinstellung *Mage.exe* kennzeichnen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung als installierte Anwendung, damit die It-sowohl online ausgeführt werden kann und offline. Verwenden Sie die Anwendung zur Verfügung stellen möchten nur, wenn der Benutzer online ist, die `-i` Argument mit einem Wert von `f`. Da diese Anwendung mehrere-Bereitstellungsfeature des nutzen wird, schließen Sie die `-providerUrl` Argument *Mage.exe*. (In Versionen von .NET Framework vor Version 3.5, ausgenommen `-providerUrl` für eine offline-Anwendung zu einem Fehler führt.)  
+6. Generieren Sie das Bereitstellungsmanifest mit einem Aufruf von *Mage.exe*. In der Standardeinstellung *Mage.exe* kennzeichnen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung als installierte Anwendung, damit die It-sowohl online ausgeführt werden kann und offline. Verwenden Sie die Anwendung zur Verfügung stellen möchten nur, wenn der Benutzer online ist, die `-i` Argument mit einem Wert von `f`. Da diese Anwendung mehrere-Bereitstellungsfeature des nutzen wird, schließen Sie die `-providerUrl` Argument *Mage.exe*. (In Versionen von .NET Framework vor Version 3.5, ausgenommen `-providerUrl` für eine offline-Anwendung zu einem Fehler führt.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Melden Sie sich das Bereitstellungsmanifest nicht.  
+7. Melden Sie sich das Bereitstellungsmanifest nicht.  
   
-8.  Geben Sie alle Dateien an dem Kunden, der die Anwendung auf seinem Netzwerk bereitgestellt wird.  
+8. Geben Sie alle Dateien an dem Kunden, der die Anwendung auf seinem Netzwerk bereitgestellt wird.  
   
 9. An diesem Punkt muss der Kunde das Bereitstellungsmanifest mit seinen eigenen selbst generiertes Zertifikat signieren. Z. B. wenn der Kunde für ein Unternehmen namens Adventure Works geeignet ist, er kann generiert ein selbstsigniertes Zertifikat verwenden die *MakeCert.exe* Tool. Verwenden Sie als Nächstes die *Pvk2pfx.exe* Tool, um die erstellten Dateien kombinieren *MakeCert.exe* in eine PFX-Datei, die übergeben werden kann *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Bereitstellen eine ClickOnce-Anwendung mit mehreren Bereitstellung und branding-Unterstützung mit MageUI.exe  
   
-1.  Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und navigieren Sie zu dem Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.  
+1. Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und navigieren Sie zu dem Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.  
   
-2.  Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.  
+2. Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.  
   
-3.  Erstellen Sie ein Unterverzeichnis für die aktuelle Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.  
+3. Erstellen Sie ein Unterverzeichnis für die aktuelle Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.  
+   > [!NOTE]
+   >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.  
   
-4.  Verschieben der \\ **Bin** Verzeichnis in das Verzeichnis, das Sie in Schritt 2 erstellt haben.  
+4. Verschieben der \\ **Bin** Verzeichnis in das Verzeichnis, das Sie in Schritt 2 erstellt haben.  
   
-5.  Starten Sie das grafische Tool *MageUI.exe*.  
+5. Starten Sie das grafische Tool *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Erstellen Sie ein neues Anwendungsmanifest dazu **Datei**, **neu**, **Anwendungsmanifest** aus dem Menü.  
+6. Erstellen Sie ein neues Anwendungsmanifest dazu **Datei**, **neu**, **Anwendungsmanifest** aus dem Menü.  
   
-7.  Auf der standardmäßigen **Namen** Registerkarte, geben Sie Name und Version dieser Bereitstellung. Geben Sie auch einen Wert für **Verleger**, bei der Bereitstellung als Ordnername für verknüpfungs-Link mit der Anwendung im Startmenü verwendet werden wird.  
+7. Auf der standardmäßigen **Namen** Registerkarte, geben Sie Name und Version dieser Bereitstellung. Geben Sie auch einen Wert für **Verleger**, bei der Bereitstellung als Ordnername für verknüpfungs-Link mit der Anwendung im Startmenü verwendet werden wird.  
   
-8.  Wählen Sie die **Anwendungsoptionen** Registerkarte, und klicken Sie auf **Anwendungsmanifest für Vertrauensinformationen verwenden**. Dadurch werden von Drittanbietern für dieses branding [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
+8. Wählen Sie die **Anwendungsoptionen** Registerkarte, und klicken Sie auf **Anwendungsmanifest für Vertrauensinformationen verwenden**. Dadurch werden von Drittanbietern für dieses branding [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
 9. Wählen Sie die **Dateien** Registerkarte, und klicken Sie auf die **Durchsuchen** neben der **Anwendungsverzeichnis** Textfeld.  
   

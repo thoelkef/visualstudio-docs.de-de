@@ -15,35 +15,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d921236fe44c7402bb26800c02624e2c391301a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 701db598872f6dde5a07740ef7601a6c8de7c5f0
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077065"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443401"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Vorgehensweise: Escapesonderzeichen in MSBuild
-Bestimmte Zeichen haben in Projektdateien [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] eine besondere Bedeutung. Beispiele für die Zeichen sind Semikolons (;) und Sternchen (*). Eine vollständige Liste dieser Sonderzeichen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).  
+
+Bestimmte Zeichen haben in Projektdateien [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] eine besondere Bedeutung. Beispiele für die Zeichen sind Semikolons (`;`) und Sternchen (`*`). Eine vollständige Liste dieser Sonderzeichen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).
   
- Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen sie mit der Syntax %\<xx> angegeben werden, wobei \<xx> den ASCII-Hexadezimalwert des Zeichens darstellt.  
+Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen sie mit der Syntax `%<xx>` angegeben werden, wobei `<xx>` den ASCII-Hexadezimalwert des Zeichens darstellt.
   
-## <a name="msbuild-special-characters"></a>MSBuild-Sonderzeichen  
+## <a name="msbuild-special-characters"></a>MSBuild-Sonderzeichen
+
  Ein Beispiel, in dem Sonderzeichen verwendet werden, ist im Attribut `Include` von Elementlisten. Die folgende Liste deklariert beispielsweise zwei Elemente: *MyFile.cs* und *MyClass.cs*.  
   
 ```xml  
 <Compile Include="MyFile.cs;MyClass.cs"/>  
 ```  
   
- Wenn Sie ein Element deklarieren möchten, das ein Semikolon im Namen enthält, müssen Sie die Syntax %\<xx> verwenden, um das Semikolon zu umgehen und um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] daran zu hindern, zwei separate Elemente zu deklarieren. Das folgende Element umgeht beispielsweise das Semikolon und deklariert ein Element mit dem Namen *MyFile.cs;MyClass.cs*.  
+Wenn Sie ein Element deklarieren möchten, das ein Semikolon im Namen enthält, müssen Sie die Syntax `%<xx>` verwenden, um das Semikolon zu umgehen und um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] daran zu hindern, zwei separate Elemente zu deklarieren. Das folgende Element umgeht beispielsweise den Semikolon und deklariert ein Element mit dem Namen `MyFile.cs;MyClass.cs`.
   
 ```xml  
 <Compile Include="MyFile.cs%3BMyClass.cs"/>  
 ```  
-  
-#### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>So verwenden Sie ein MSBuild-Sonderzeichen als Literalzeichen  
-  
--   Verwenden Sie die Notation %\<xx> anstelle des Sonderzeichens, wobei \<xx> den Hexadezimalwert des ASCII-Zeichens darstellt. Wenn Sie ein Sternchen (*) als Literalzeichen verwenden möchten, verwenden Sie z. B. den Wert `%2A`.  
-  
+
+Sie können auch eine [Eigenschaftenfunktion](../msbuild/property-functions.md) verwenden, um Zeichenfolgen mit Escapezeichen zu versehen. Dies ist beispielsweise äquivalent zu dem Beispiel oben.
+
+```xml
+<Compile Include="$([MSBuild]::Escape('MyFile.cs;MyClass.cs'))" />
+```
+
+### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>So verwenden Sie ein MSBuild-Sonderzeichen als Literalzeichen
+
+Verwenden Sie die Notation `%<xx>` anstelle des Sonderzeichens, wobei `<xx>` den Hexadezimalwert des ASCII-Zeichens darstellt. Wenn Sie ein Sternchen (`*`) als Literalzeichen verwenden möchten, verwenden Sie z.B. den Wert `%2A`.
+
+ 
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
  [MSBuild](../msbuild/msbuild.md)   

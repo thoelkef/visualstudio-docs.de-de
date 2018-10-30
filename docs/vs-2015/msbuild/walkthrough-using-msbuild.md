@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841417"
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266694"
   
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:  
   
--   Erstellen und Bearbeiten einer Projektdatei.  
+- Erstellen und Bearbeiten einer Projektdatei.  
   
--   Verwenden von Buildeigenschaften  
+- Verwenden von Buildeigenschaften  
   
--   Verwenden von Buildelementen  
+- Verwenden von Buildelementen  
   
- Sie können MSBuild in Visual Studio oder im Befehlsfenster ausführen. In dieser exemplarischen Vorgehensweise erstellen Sie in Visual Studio eine MSBuild-Projektdatei. Sie bearbeiten die Projektdatei in Visual Studio, und im Befehlsfenster erstellen Sie das Projekt und untersuchen die Ergebnisse.  
+  Sie können MSBuild in Visual Studio oder im Befehlsfenster ausführen. In dieser exemplarischen Vorgehensweise erstellen Sie in Visual Studio eine MSBuild-Projektdatei. Sie bearbeiten die Projektdatei in Visual Studio, und im Befehlsfenster erstellen Sie das Projekt und untersuchen die Ergebnisse.  
   
 ## <a name="creating-an-msbuild-project"></a>Erstellen eines MSBuild-Projekts  
  Das Visual Studio-Projektsystem beruht auf MSBuild. Auf diese Weise können in Visual Studio neue Projektdatei problemlos erstellt werden. In diesem Abschnitt erstellen Sie eine Visual C#-Projektdatei. Stattdessen können Sie auch eine Visual Basic-Projektdatei erstellen. Im Kontext dieser exemplarischen Vorgehensweise ist der Unterschied zwischen den zwei Projektdateien marginal.  
@@ -77,20 +77,20 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
  Das Erstellen einer Anwendung wird mit dem [Target](../msbuild/target-element-msbuild.md)-Element und dem [Task](../msbuild/task-element-msbuild.md)-Element ausgeführt.  
   
--   Eine Aufgabe bildet die kleinste Arbeitseinheit, d. h. das „Atom“ eines Builds. Aufgaben sind unabhängige ausführbare Komponenten, die über Eingaben und Ausgaben verfügen können. Derzeit wird in der Projektdatei nicht auf Aufgaben verwiesen, und solche wurden nicht definiert. In den folgenden Abschnitten fügen Sie der Projektdatei Aufgaben hinzu. Weitere Informationen finden Sie im Thema [Aufgaben](../msbuild/msbuild-tasks.md).  
+- Eine Aufgabe bildet die kleinste Arbeitseinheit, d. h. das „Atom“ eines Builds. Aufgaben sind unabhängige ausführbare Komponenten, die über Eingaben und Ausgaben verfügen können. Derzeit wird in der Projektdatei nicht auf Aufgaben verwiesen, und solche wurden nicht definiert. In den folgenden Abschnitten fügen Sie der Projektdatei Aufgaben hinzu. Weitere Informationen finden Sie im Thema [Aufgaben](../msbuild/msbuild-tasks.md).  
   
--   Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Am Ende der Projektdatei befinden sich zwei Ziele, die derzeit in HTML-Kommentare eingeschlossen sind: BeforeBuild und AfterBuild.  
+- Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Am Ende der Projektdatei befinden sich zwei Ziele, die derzeit in HTML-Kommentare eingeschlossen sind: BeforeBuild und AfterBuild.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     Weitere Informationen finden Sie im Thema [Ziele](../msbuild/msbuild-targets.md).  
+   Weitere Informationen finden Sie im Thema [Ziele](../msbuild/msbuild-targets.md).  
   
- Der Knoten Project besitzt ein optionales DefaultTargets-Attribut, das das zu erstellende Standardziel auswählt, in diesem Fall Build.  
+  Der Knoten Project besitzt ein optionales DefaultTargets-Attribut, das das zu erstellende Standardziel auswählt, in diesem Fall Build.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
 #### <a name="to-add-a-target-and-a-task"></a>So fügen Sie ein Ziel und eine Aufgabe hinzu  
   
-1.  Fügen Sie der Projektdatei, genau nach der Import-Anweisung, die folgenden Zeilen hinzu:  
+1. Fügen Sie der Projektdatei, genau nach der Import-Anweisung, die folgenden Zeilen hinzu:  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     So erstellen Sie das Ziel HelloWorld. Beachten Sie, dass beim Bearbeiten der Projektdatei IntelliSense unterstützt wird.  
+    So erstellen Sie das Ziel HelloWorld. Beachten Sie, dass beim Bearbeiten der Projektdatei IntelliSense unterstützt wird.  
   
-2.  Fügen Sie dem Ziel HelloWorld Zeilen hinzu, sodass der daraufhin angezeigte Abschnitt wie folgt aussieht:  
+2. Fügen Sie dem Ziel HelloWorld Zeilen hinzu, sodass der daraufhin angezeigte Abschnitt wie folgt aussieht:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  Speichern Sie die Projektdatei.  
+3. Speichern Sie die Projektdatei.  
   
- Die Message-Aufgabe ist eine der vielen Aufgaben, die im Lieferumfang von MSBuild enthalten sind. Eine vollständige Liste der verfügbaren Aufgaben sowie Nutzungsinformationen finden Sie unter [Aufgabenreferenz](../msbuild/msbuild-task-reference.md).  
+   Die Message-Aufgabe ist eine der vielen Aufgaben, die im Lieferumfang von MSBuild enthalten sind. Eine vollständige Liste der verfügbaren Aufgaben sowie Nutzungsinformationen finden Sie unter [Aufgabenreferenz](../msbuild/msbuild-task-reference.md).  
   
- Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Eingabe und zeigt diesen auf dem Ausgabegerät an. Das HelloWorld-Ziel führt die Message-Aufgabe zweimal aus: zuerst wird "Hello" angezeigt, dann "World".  
+   Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Eingabe und zeigt diesen auf dem Ausgabegerät an. Das HelloWorld-Ziel führt die Message-Aufgabe zweimal aus: zuerst wird "Hello" angezeigt, dann "World".  
   
 ## <a name="building-the-target"></a>Erstellen des Ziels  
  Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter /target oder /t, um das Ziel auszuwählen.  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>So legen Sie einen Eigenschaftswert an der Befehlszeile fest  
   
-1.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+1. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
+2. Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild erstellt die Configuration-Eigenschaft und weist dieser den Wert "Release" zu.  
+   MSBuild erstellt die Configuration-Eigenschaft und weist dieser den Wert "Release" zu.  
   
 ## <a name="special-characters"></a>Sonderzeichen  
  Bestimmte Zeichen haben in MSBuild-Projektdateien eine besondere Bedeutung. Beispiele für solche Zeichen sind Semikolons (;) und Sternchen (*). Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen sie mit der Syntax %xx angegeben werden, wobei xx den ASCII-Hexadezimalwert des Zeichens darstellt.  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>So verwenden Sie Sonderzeichen in der Message-Aufgabe  
   
-1.  Ersetzen Sie im Code-Editor beide Message-Aufgaben durch folgende Zeile:  
+1. Ersetzen Sie im Code-Editor beide Message-Aufgaben durch folgende Zeile:  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- Weitere Informationen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).  
+   Weitere Informationen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).  
   
 ## <a name="build-items"></a>Buildelemente  
  Als Element wird eine Information, in der Regel ein Dateiname, bezeichnet, die als Eingabe für das Buildsystem verwendet wird. Eine Auflistung von Elementen, die Quelldateien darstellen, kann beispielsweise an die Aufgabe Compile übergeben werden, um sie zu einer Assembly zu kompilieren.  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>So untersuchen Sie Elementtypwerte  
   
-1.  Ersetzen Sie im Code-Editor die Aufgabe für das Ziel HelloWorld durch den folgenden Code:  
+1. Ersetzen Sie im Code-Editor die Aufgabe für das Ziel HelloWorld durch den folgenden Code:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgende lange Zeile sollte angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgende lange Zeile sollte angezeigt werden:  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- Die Werte eines Elementtyps werden standardmäßig durch Semikolons getrennt.  
+   Die Werte eines Elementtyps werden standardmäßig durch Semikolons getrennt.  
   
- Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie die folgende Syntax, wobei ItemType den Elementtyp und Separator eine Zeichenfolge aus einem oder mehreren Trennzeichen darstellt:  
+   Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie die folgende Syntax, wobei ItemType den Elementtyp und Separator eine Zeichenfolge aus einem oder mehreren Trennzeichen darstellt:  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>So untersuchen Sie die Metadaten von Elementen  
   
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- Der Ausdruck "Compile.DependentUpon" wird mehrmals angezeigt. In dieser Syntax führt die Verwendung von Metadaten in einem Ziel zur "Batchverarbeitung". Batchverarbeitung bedeutet, dass die Aufgaben innerhalb des Ziels für jeden eindeutigen Metadatenwert einmal ausgeführt werden. Dies ist die MSBuild-Skriptentsprechung des häufig verwendeten Programmierkonstrukts "for-Schleife". Weitere Informationen finden Sie unter [Batchverarbeitung](../msbuild/msbuild-batching.md).  
+   Der Ausdruck "Compile.DependentUpon" wird mehrmals angezeigt. In dieser Syntax führt die Verwendung von Metadaten in einem Ziel zur "Batchverarbeitung". Batchverarbeitung bedeutet, dass die Aufgaben innerhalb des Ziels für jeden eindeutigen Metadatenwert einmal ausgeführt werden. Dies ist die MSBuild-Skriptentsprechung des häufig verwendeten Programmierkonstrukts "for-Schleife". Weitere Informationen finden Sie unter [Batchverarbeitung](../msbuild/msbuild-batching.md).  
   
 ### <a name="well-known-metadata"></a>Bekannte Metadaten  
  Wenn einer Elementliste ein Element hinzugefügt wird, werden diesem Element stets bekannte Metadaten zugewiesen. Beispielsweise gibt %(Filename) den Dateinamen eines beliebigen Elements zurück. Eine vollständige Liste bekannter Metadaten finden Sie unter [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md).  
   
 ##### <a name="to-examine-well-known-metadata"></a>So untersuchen Sie bekannte Metadaten  
   
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- Der Vergleich der beiden obigen Beispiele zeigt, dass zwar nicht jedes Element im Compile-Elementtyp DependentUpon-Metadaten aufweist, doch alle Elemente die bekannten Filename-Metadaten aufweisen.  
+   Der Vergleich der beiden obigen Beispiele zeigt, dass zwar nicht jedes Element im Compile-Elementtyp DependentUpon-Metadaten aufweist, doch alle Elemente die bekannten Filename-Metadaten aufweisen.  
   
 ### <a name="metadata-transformations"></a>Transformationen von Metadaten  
  Elementlisten können in neue Elementlisten umgewandelt werden. Eine Elementliste transformieren Sie mit der folgenden Syntax, wobei ItemType den Namen des Elementtyps darstellt und MetadataName den Namen der Metadaten:  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>So transformieren Sie Elemente mit Metadaten  
   
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- Beachten Sie, dass die in dieser Syntax ausgedrückten Metadaten keine Batchverarbeitung verursachen.  
+   Beachten Sie, dass die in dieser Syntax ausgedrückten Metadaten keine Batchverarbeitung verursachen.  
   
 ## <a name="whats-next"></a>Weitere Informationen  
  Probieren Sie die [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md), um zu erfahren, wie Sie schrittweise eine einfache Projektdatei erstellen können.  

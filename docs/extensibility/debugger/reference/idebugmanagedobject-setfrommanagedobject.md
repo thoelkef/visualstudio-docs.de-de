@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
+title: IDebugManagedObject::SetFromManagedObject | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d240c931db24cc353d7bb461645771eb4520921
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe3431e282a8cd48ea33851cef00fba116e389a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833940"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Legt den Wert der Instanz des Klassenobjekts Wert aus der Instanz der Wertklasse als Parameter bereitgestellt.  
+Legt den Wert der Instanz des Klassenobjekts Wert aus der Instanz der Wertklasse als Parameter angegeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ int SetFromManagedObject(
   
 #### <a name="parameters"></a>Parameter  
  `pManagedObject`  
- [in] Eine Schnittstelle, die das verwaltete Objekt mit dem neuen Wert darstellt.  
+ [in] Eine Schnittstelle, die das verwaltete Objekt, das mit dem neuen Wert darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  

@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908741"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
 
@@ -41,34 +41,34 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-    ![Hervorgehobener Code – C#](media/rename-highlight-cs.png)
+       ![Hervorgehobener Code – C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Hervorgehobener Code – Visual Basic](media/rename-highlight-vb.png)
+       ![Hervorgehobener Code – Visual Basic](media/rename-highlight-vb.png)
 
-1. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+R** und dann **STRG+R**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
+      - Drücken Sie **STRG+R** und dann **STRG+R**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
    - **Maus**
-     - Wählen Sie **Bearbeiten > Umgestalten > Umbenennen** aus.
-     - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umbenennen** aus.
+      - Wählen Sie **Bearbeiten > Umgestalten > Umbenennen** aus.
+      - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umbenennen** aus.
 
-1. Benennen Sie das Element einfach um, indem Sie den neuen Namen eingeben.
+3. Benennen Sie das Element einfach um, indem Sie den neuen Namen eingeben.
 
    - C#:
 
-    ![Animation des Umbenennungsvorgangs – C#](media/rename-animated-cs.gif)
+      ![Animation des Umbenennungsvorgangs – C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Umbenennung – Visual Basic](media/rename-rename-vb.png)
+      ![Umbenennung – Visual Basic](media/rename-rename-vb.png)
 
    > [!TIP]
    > Sie können Kommentare und andere Zeichenfolgen vor dem Speichern mit diesem neuen Namen aktualisieren sowie eine [Vorschau der Änderungen](../../ide/preview-changes.md) anzeigen, indem Sie oben rechts im Editor die jeweiligen Kontrollkästchen im Feld **Umbenennen** aktivieren.
 
-1. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
+4. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
 > [!NOTE]
 > Wenn Sie einen bereits vorhandenen Namen verwenden, der zu einem Konflikt führen würde, werden Sie durch das Feld **Umbenennen** darüber informiert.

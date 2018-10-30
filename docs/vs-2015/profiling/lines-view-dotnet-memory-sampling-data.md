@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815727"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht - .NET-Speichersamplingdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
   
  Eine Anweisung wird mit dem Folgenden identifiziert:  
   
--   Die Quelldatei, die die Funktionsanweisung enthält.  
+- Die Quelldatei, die die Funktionsanweisung enthält.  
   
--   Die Funktion, die die Anweisung enthält.  
+- Die Funktion, die die Anweisung enthält.  
   
--   Die Quellzeile, an der die Anweisung beginnt.  
+- Die Quellzeile, an der die Anweisung beginnt.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
   
--   Die Quellzeile, an der die Anweisung endet.  
+- Die Quellzeile, an der die Anweisung endet.  
   
--   Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
- Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
   
- Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
+  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894817"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Anweisungsprozessors
 
@@ -164,30 +164,30 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>So registrieren Sie einen Anweisungsprozessor durch Festlegen eines Registrierungsschlüssels
 
-1.  Führen Sie aus `regedit`.
+1. Führen Sie aus `regedit`.
 
-2.  Navigieren Sie in regedit zum folgenden Eintrag:
+2. Navigieren Sie in regedit zum folgenden Eintrag:
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Wenn Sie den anweisungsprozessor in der Testversion von Visual Studio installieren möchten, fügen Sie "Exp" nach "11.0" aus.
+    Wenn Sie den anweisungsprozessor in der Testversion von Visual Studio installieren möchten, fügen Sie "Exp" nach "11.0" aus.
 
-3.  Fügen Sie einen Registrierungsschlüssel mit dem Namen der Anweisungsprozessorklasse hinzu.
+3. Fügen Sie einen Registrierungsschlüssel mit dem Namen der Anweisungsprozessorklasse hinzu.
 
-    -   In der Registrierungsstruktur mit der Maustaste der **DirectiveProcessors** Knoten, zeigen Sie auf **neu**, und klicken Sie dann auf **Schlüssel**.
+   -   In der Registrierungsstruktur mit der Maustaste der **DirectiveProcessors** Knoten, zeigen Sie auf **neu**, und klicken Sie dann auf **Schlüssel**.
 
-4.  Fügen Sie im neuen Knoten entsprechend den folgenden Tabellen Zeichenfolgenwerte für "Class" und "CodeBase" oder "Assembly" hinzu.
+4. Fügen Sie im neuen Knoten entsprechend den folgenden Tabellen Zeichenfolgenwerte für "Class" und "CodeBase" oder "Assembly" hinzu.
 
-    1.  Mit der rechten Maustaste des Knotens, die Sie erstellt haben, zeigen Sie auf **neu**, und klicken Sie dann auf **Zeichenfolgenwert**.
+   1.  Mit der rechten Maustaste des Knotens, die Sie erstellt haben, zeigen Sie auf **neu**, und klicken Sie dann auf **Zeichenfolgenwert**.
 
-    2.  Bearbeiten Sie den Namen des Werts.
+   2.  Bearbeiten Sie den Namen des Werts.
 
-    3.  Doppelklicken Sie auf den Namen, und bearbeiten Sie die Daten.
+   3.  Doppelklicken Sie auf den Namen, und bearbeiten Sie die Daten.
 
- Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
+   Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
 |name|Typ|Daten|
-|----------|----------|----------|
+|-|-|-|
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|
 |Klasse|REG_SZ|**\<Namespace-Name >. \<Klassenname >**|
 |CodeBase|REG_SZ|**\<Pfad >\\< Ihr Assemblyname\>**|
@@ -195,7 +195,7 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
 |name|Typ|Daten|
-|----------|----------|----------|
+|-|-|-|
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|
 |Klasse|REG_SZ|\<**Ihren vollqualifizierten Klassennamen**>|
 |Assembly|REG_SZ|\<**Ihr Assemblyname im GAC**>|

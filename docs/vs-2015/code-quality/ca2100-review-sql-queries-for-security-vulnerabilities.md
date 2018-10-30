@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877399"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206504"
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthält. Eine aus Benutzereingaben erstellte SQL-Befehlszeichenfolge ist anfällig für SQL-Injection-Angriffe. In einer SQL-Injection-Angriff stellt ein böswilliger Benutzer Eingaben, die den Entwurf einer Abfrage zu beschädigen oder damit unautorisierter Zugriff auf die zugrunde liegende Datenbank ändert. Typische Techniken sind die Einfügung von einem einzelnen Anführungszeichen oder Apostroph, die die SQL-Zeichenfolgenliteral-Trennzeichen ist: zwei Gedankenstriche, was bedeutet einen SQL-Kommentar; und ein Semikolon, was bedeutet, dass ein neuer Befehl folgt. Wenn der Benutzereingabe Teil der Abfrage, verwenden Sie eine der folgenden sein muss aufgeführt, in der Reihenfolge der Effektivität, um das Risiko von Angriffen zu verringern.
 
--   Verwenden Sie eine gespeicherte Prozedur.
+- Verwenden Sie eine gespeicherte Prozedur.
 
--   Verwenden Sie eine parametrisierten Befehl-Zeichenfolge.
+- Verwenden Sie eine parametrisierten Befehl-Zeichenfolge.
 
--   Überprüfen Sie die Benutzereingabe für Typ und Inhalt vor dem Erstellen der Befehlszeichenfolge.
+- Überprüfen Sie die Benutzereingabe für Typ und Inhalt vor dem Erstellen der Befehlszeichenfolge.
 
- Die folgenden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Typen implementieren die <xref:System.Data.IDbCommand.CommandText%2A> Eigenschaft oder Konstruktoren, die die Eigenschaft festgelegt wird, mit der ein Zeichenfolgenargument bereitstellen.
+  Die folgenden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Typen implementieren die <xref:System.Data.IDbCommand.CommandText%2A> Eigenschaft oder Konstruktoren, die die Eigenschaft festgelegt wird, mit der ein Zeichenfolgenargument bereitstellen.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> und <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> und <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> und <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> und <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> und <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> und <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) und [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) und [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> und <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> und <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- Beachten Sie, dass diese Regel verletzt wird, wenn die ToString-Methode eines Typs explizit oder implizit verwendet wird, die die Abfragezeichenfolge zu erstellen. Nachfolgend finden Sie ein Beispiel:
+  Beachten Sie, dass diese Regel verletzt wird, wenn die ToString-Methode eines Typs explizit oder implizit verwendet wird, die die Abfragezeichenfolge zu erstellen. Nachfolgend finden Sie ein Beispiel:
 
 ```
 int x = 10;

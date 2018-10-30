@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894234"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Hinzufügen von Elementen zu den Dialogfeldern „Neues Element hinzufügen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 ## <a name="filtering-project-items"></a>Filtern von Projektelementen  
  `IVsFilterAddProjectItemDlg2` bietet für das Filtern von Elementen in der Struktur (linker Bereich) und die Projektdateien (rechter Bereich) auf folgende Weise:  
   
--   Durch den lokalisierten Namen (Beschriftungen, die das im Dialogfeld angezeigt, die in der VSDIR-Datei enthalten ist) gebotenen `IVsFilterAddProjectItemDlg`.  
+- Durch den lokalisierten Namen (Beschriftungen, die das im Dialogfeld angezeigt, die in der VSDIR-Datei enthalten ist) gebotenen `IVsFilterAddProjectItemDlg`.  
   
--   Durch die tatsächlichen Namen der Dateien und Ordner auf dem Datenträger (nicht lokalisierten — keine VSDIR-Datei) gebotenen `IVsFilterAddProjectItemDlg`.  
+- Durch die tatsächlichen Namen der Dateien und Ordner auf dem Datenträger (nicht lokalisierten — keine VSDIR-Datei) gebotenen `IVsFilterAddProjectItemDlg`.  
   
--   Nach der Kategorie von bereitgestellten `IVsFilterAddProjectItemDlg2`.  
+- Nach der Kategorie von bereitgestellten `IVsFilterAddProjectItemDlg2`.  
   
- Um nach Kategorie zu filtern, geben Sie eine Kategoriezeichenfolge, die ein Element in der VSDIR-Datei, z. B. "Webformular" oder "Client-Element" in Visual Basic. Der DialogfeldCode dann Ruft die Kategorie-Klassifizierung aus der VSDIR-Datei ab und übergibt sie an Sie. Sie können diese Informationen dann übergeben, für Ihre Implementierung der `IVsFilterAddProjectItemDlg2` zum Filtern der **neues Element hinzufügen** Dialogfeld nach Kategorien. Sie können auch Elemente für Webseiten oder als Client Win32-Anwendungsfällen filtern. Darüber hinaus können Sie identifizieren [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] mit Elementen Microsoft Foundation Classes (MFC) oder active-Vorlagenelementen Library (ATL) bezeichnet. Wenn Sie diese Elemente identifizieren, kann das Projektsystem einen eigenen Klassifizierungen definieren, sodass das System basierend auf Kategorien und Klassifizierungen gefiltert werden kann.  
+  Um nach Kategorie zu filtern, geben Sie eine Kategoriezeichenfolge, die ein Element in der VSDIR-Datei, z. B. "Webformular" oder "Client-Element" in Visual Basic. Der DialogfeldCode dann Ruft die Kategorie-Klassifizierung aus der VSDIR-Datei ab und übergibt sie an Sie. Sie können diese Informationen dann übergeben, für Ihre Implementierung der `IVsFilterAddProjectItemDlg2` zum Filtern der **neues Element hinzufügen** Dialogfeld nach Kategorien. Sie können auch Elemente für Webseiten oder als Client Win32-Anwendungsfällen filtern. Darüber hinaus können Sie identifizieren [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] mit Elementen Microsoft Foundation Classes (MFC) oder active-Vorlagenelementen Library (ATL) bezeichnet. Wenn Sie diese Elemente identifizieren, kann das Projektsystem einen eigenen Klassifizierungen definieren, sodass das System basierend auf Kategorien und Klassifizierungen gefiltert werden kann.  
   
- Wenn Sie diese Filter-Funktion implementieren, müssen Sie keine Tabelle mit jedem Element zugeordnet werden, die ausgeblendet werden soll. Sie können einfach klassifiziert Elemente in Typen und platzieren die Klassifizierungen in der VSDIR-Datei oder Dateien. Anschließend können Sie eines der Elemente ausblenden, die eine bestimmte Klassifizierung durch Implementieren der Schnittstelle. Auf diese Weise können Sie vornehmen, die Elemente in der **neues Element hinzufügen** Dialogfeld Feld dynamisch basierend auf den Zustand innerhalb des Projekts.  
+  Wenn Sie diese Filter-Funktion implementieren, müssen Sie keine Tabelle mit jedem Element zugeordnet werden, die ausgeblendet werden soll. Sie können einfach klassifiziert Elemente in Typen und platzieren die Klassifizierungen in der VSDIR-Datei oder Dateien. Anschließend können Sie eines der Elemente ausblenden, die eine bestimmte Klassifizierung durch Implementieren der Schnittstelle. Auf diese Weise können Sie vornehmen, die Elemente in der **neues Element hinzufügen** Dialogfeld Feld dynamisch basierend auf den Zustand innerhalb des Projekts.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

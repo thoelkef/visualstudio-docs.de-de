@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627291"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443583"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -88,11 +88,14 @@ Um die Modifizierer der Symbole zu beschreiben, für die die Namensregel gelten 
 
 In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
 
-- „abstract“ oder „must_inherit“
-- async
-- const
-- readonly
-- „static“ oder „shared“
+- `abstract` oder `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` oder `shared`
+
+   > [!NOTE]
+   > Wenn Sie eine Benennungsregel für `static`- oder `shared`- Symbole haben, wird sie auch auf `const`-Symbole angewendet, da sie implizit statisch sind. Wenn Sie nicht möchten, dass die `static`-Benennungsregel auf `const`-Symbole angewendet wird, erstellen Sie eine separate Benennungsregel für `const`-Symbole.
 
 `required_modifiers` ist eine optionale Eigenschaft. Wenn Sie diese Eigenschaft nicht angeben, gilt die Benennungsregel für alle Modifizierer.
 

@@ -1,5 +1,5 @@
 ---
-title: LocationType | Microsoft Docs
+title: LocationType | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb46eb1c7477f93ed63dfc4424d881886c8d0c8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872095"
 ---
 # <a name="locationtype"></a>LocationType
 Gibt die Art der Standortinformationen in ein Symbol an.  
@@ -48,25 +48,25 @@ enum LocationType {
  Informationen zum Speicherort ist nicht verfügbar.  
   
  `LocIsStatic`  
- Ort ist statisch.  
+ Speicherort ist statisch.  
   
  `LocIsTLS`  
  Speicherort ist im lokalen Threadspeicher.  
   
  `LocIsRegRel`  
- Der Speicherort ist relativ zum Registrieren.  
+ Speicherort ist relativ registrieren.  
   
  `LocIsThisRel`  
- Ist der Speicherort `this`-relative.  
+ Speicherort ist `this`-relative.  
   
  `LocIsEnregistered`  
  Speicherort ist in einem Register.  
   
  `LocIsBitField`  
- Speicherort ist ein Bitfeld.  
+ Speicherort ist in einem Bitfeld.  
   
  `LocIsSlot`  
- Speicherort ist eine Microsoft Intermediate Language (MSIL).  
+ Speicherort ist ein Microsoft Intermediate Language (MSIL)-Slot.  
   
  `LocIsIlRel`  
  Der Speicherort ist relativ MSIL.  
@@ -75,13 +75,13 @@ enum LocationType {
  Speicherort ist in den Metadaten.  
   
  `LocIsConstant`  
- Speicherort ist ein konstanter Wert.  
+ Speicherort ist in einem konstanten Wert.  
   
  `LocTypeMax`  
  Die Anzahl der Typen in dieser Enumeration.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Eigenschaften verfügbar, die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Schnittstelle hängen von der Symbolspeicherort in der Abbilddatei. Weitere Informationen finden Sie unter [Orte für Symboldateien](../../debugger/debug-interface-access/symbol-locations.md).  
+ Die Eigenschaften für die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Schnittstelle hängen Speicherort des Symbols, in der Imagedatei. Weitere Informationen finden Sie unter [Orte für Symboldateien](../../debugger/debug-interface-access/symbol-locations.md).  
   
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) Methode.  
   

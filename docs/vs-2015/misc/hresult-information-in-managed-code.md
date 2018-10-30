@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911849"
 ---
 # <a name="hresult-information-in-managed-code"></a>HRESULT-Informationen in verwaltetem Code
 Die Interaktion zwischen verwaltetem Code und COM kann Probleme verursachen, wenn HRESULT-Rückgabewerte gefunden werden.  
   
  In einer COM-Schnittstelle kann ein HRESULT-Rückgabewert die folgenden Rollen erfüllen:  
   
--   Bereitstellen von Fehlerinformationen (z. B. <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)  
+- Bereitstellen von Fehlerinformationen (z. B. <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)  
   
--   Bereitstellen von Statusinformationen zum normalen Programmverhalten  
+- Bereitstellen von Statusinformationen zum normalen Programmverhalten  
   
- Wenn COM Aufrufe in verwaltetem Code ausführt, können HRESULTs die folgenden Probleme verursachen:  
+  Wenn COM Aufrufe in verwaltetem Code ausführt, können HRESULTs die folgenden Probleme verursachen:  
   
--   COM-Funktionen, die HRESULT-Werte kleiner als 0 (Fehlercodes) zurückgeben, generieren Ausnahmen.  
+- COM-Funktionen, die HRESULT-Werte kleiner als 0 (Fehlercodes) zurückgeben, generieren Ausnahmen.  
   
--   COM-Methoden, die regelmäßig zwei oder mehr unterschiedliche Erfolgscodes (z. B. <xref:Microsoft.VisualStudio.VSConstants.S_OK> oder <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>) zurückgeben, können nicht unterschieden werden.  
+- COM-Methoden, die regelmäßig zwei oder mehr unterschiedliche Erfolgscodes (z. B. <xref:Microsoft.VisualStudio.VSConstants.S_OK> oder <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>) zurückgeben, können nicht unterschieden werden.  
   
- Weil viele [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]-COM-Funktionen entweder HRESULT-Werte kleiner als 0 (null) oder unterschiedliche Erfolgscodes zurückgeben, wurden die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]-Interop-Assemblys geschrieben, damit die Methodensignaturen beibehalten werden. Alle [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] -Interop-Methoden sind vom Typ `int` . HRESULT-Werte werden über die Interop-Schicht ohne Veränderung und ohne Generierung von Ausnahmen übergeben.  
+  Weil viele [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]-COM-Funktionen entweder HRESULT-Werte kleiner als 0 (null) oder unterschiedliche Erfolgscodes zurückgeben, wurden die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]-Interop-Assemblys geschrieben, damit die Methodensignaturen beibehalten werden. Alle [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] -Interop-Methoden sind vom Typ `int` . HRESULT-Werte werden über die Interop-Schicht ohne Veränderung und ohne Generierung von Ausnahmen übergeben.  
   
- Da eine COM-Funktion ein HRESULT an die sie aufrufende verwaltete Methode zurückgibt, muss die aufrufende Methode das HRESULT überprüfen und ggf. Ausnahmen auslösen.  
+  Da eine COM-Funktion ein HRESULT an die sie aufrufende verwaltete Methode zurückgibt, muss die aufrufende Methode das HRESULT überprüfen und ggf. Ausnahmen auslösen.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Behandeln von HRESULTs, die von COM an verwalteten Code zurückgegeben werden  
  Wenn Sie eine COM-Schnittstelle in verwaltetem Code aufrufen, überprüfen Sie den HRESULT-Wert, und lösen Sie ggf. eine Ausnahme aus. Die <xref:Microsoft.VisualStudio.ErrorHandler>-Klasse enthält die <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>-Methode, die abhängig vom Wert des an sie übergebenen HRESULTs eine COM-Ausnahme auslöst.  

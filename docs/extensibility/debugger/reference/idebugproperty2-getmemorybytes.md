@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes | Microsoft Docs
+title: IDebugProperty2::GetMemoryBytes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b116937183b1cf558ee7d916bdcd094ead955b55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b6b8b82067405e91f4d1d7fac4aeccd5e29ffa0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948017"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
-Ruft die Speicherbytes an, die den Wert einer Eigenschaft zu bilden.  
+Ruft die Arbeitsspeicher-Bytes, aus denen den Wert einer Eigenschaft ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,7 +44,7 @@ int GetMemoryBytes (
  [out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, das verwendet werden kann, um den Arbeitsspeicher abzurufen, die den Wert der Eigenschaft enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETMEMORYBYTES_NO_MEMORY_BYTES` treten keine Speicherbytes gesamt abgerufen.  
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETMEMORYBYTES_NO_MEMORY_BYTES` treten keine Bytes Arbeitsspeicher abrufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870054"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen in der Diagrammansicht des Auslastungstest-Analyzers
 
@@ -39,7 +39,7 @@ Es werden mehrere integrierte Diagramme zur Verfügung gestellt. Sie können die
 In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für die Analyse von Auslastungstestergebnissen verfügbar sind.
 
 |Diagrammname|Beschreibung |
-|----------------|-----------------|
+|-|-|
 |Schlüsselindikatoren|Indikatoren zur Beschreibung grundlegender Aspekte der Testleistung wie Benutzerauslastung, Durchsatz und Antwortzeit.|
 |Testantwortzeit|Daten über die Zeitdauer, die zur Testausführung benötigt wird.|
 |Seitenantwortzeit|Die durchschnittliche Antwortzeit für Webseiten, auf die während des Auslastungstests zugegriffen wird.|
@@ -63,7 +63,7 @@ In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für d
  Die Legende enthält folgende Spalten:
 
 |Zähler|Der Name des Indikators|
-|-------------|-----------------------------|
+|-|-|
 |Instanz|Der Name der Indikatorinstanz.|
 |Kategorie|Der Name der Indikatorkategorie.|
 |Computer|Der Name des Computers, von dem Indikatordaten erfasst werden.|
@@ -77,7 +77,7 @@ In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für d
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-|
 |**Anpassen der Diagramme mithilfe der Legende:** In der Legende der Diagrammansicht werden Informationen zu den einzelnen, einem Diagramm zugeordneten Leistungsindikatoren angezeigt. Mithilfe der Legende können Sie Leistungsindikatoren entfernen, Leistungsindikatoren im Diagramm hervorheben und die Zeichnungsoptionen anpassen.|-   [Using the Graphs View Legend to Analyze Load Tests (Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests)](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Anzeigen von Indikatoren in Diagrammen:** Sie können einem Diagramm für Auslastungstestergebnisse unterschiedliche Arten von Daten hinzufügen, indem Sie Indikatoren im Diagramm platzieren.|-   [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Vergrößern von Diagrammen:** Nach Abschluss eines Auslastungstests können Sie die Zoomleisten zum Vergrößern und Anzeigen eines Bereichs im Diagramm verwenden. Durch das Vergrößern können Sie genauere Details der Daten anzeigen, die bei einem Auslastungstestlauf generiert wurden.|-   [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

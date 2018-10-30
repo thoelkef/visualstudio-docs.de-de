@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortId | Microsoft Docs
+title: IDebugPort2::GetPortId | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7adf52af99285add9334b30ff7b2a9f74ecd3041
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fc7509450b7b433253c98be46e82d31952b7ead
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864659"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 Ruft die Port-ID ab.  
@@ -41,10 +41,10 @@ int GetPortId(
   
 #### <a name="parameters"></a>Parameter  
  `pguidPort`  
- [out] Gibt die GUID, die den Port bezeichnet.  
+ [out] Gibt die GUID zurück, der den Port identifiziert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

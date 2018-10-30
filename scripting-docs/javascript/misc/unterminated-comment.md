@@ -1,5 +1,5 @@
 ---
-title: Unvollständig Kommentar | Microsoft Docs
+title: Nicht beendetes Kommentar | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9fde5d5edd7e81060b088e4940d752aa05e65ded
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868104"
 ---
 # <a name="unterminated-comment"></a>Nicht abgeschlossener Kommentar
-Sie begonnen hat einen mehrzeiligen Kommentar-Block, jedoch nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit einem "/\*" Kombination und mit der umgekehrten "\*/" Kombination. Im Folgenden finden Sie ein Beispiel dazu:  
+Sie wurde von einem mehrzeiligen Kommentar-Block, jedoch nicht ordnungsgemäß beendet wurde. Mehrzeilige Kommentare beginnen mit einem "/\*" Kombination und mit der umgekehrten "\*/" Kombination. Im Folgenden finden Sie ein Beispiel dazu:  
   
 ```JavaScript  
 /* This is a comment  

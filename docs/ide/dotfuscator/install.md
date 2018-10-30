@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880363"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Installation von Dotfuscator Community Edition (CE)
 
@@ -46,9 +46,9 @@ Sie können Dotfuscator CE von der Visual Studio-IDE installieren:
 
 1. Geben Sie `dotfuscator` in die **Schnellstart**-Suchleiste (STRG+Q) ein. <br/> <br/> ![Schnellstart](media/install_from_vs_12.png) <br/> <br/>
 2. Wählen Sie in den angezeigten Schnellstartergebnisse unter der Überschrift *Installieren* **PreEmptive Protection – Dotfuscator (Individual Component) (PreEmptive Protection – Dotfuscator (Einzelne Komponente))** aus.
-  * Wenn stattdessen unter der Überschrift *Menüs* **Extras – PreEmptive Protection – Dotfuscator** angezeigt wird, ist Dotfuscator CE bereits installiert. Weitere Informationen zum Gebrauch finden Sie [auf der „Erste Schritte“-Seite des vollständigen Dotfuscator CE-Benutzerhandbuchs][get-started].
+   * Wenn stattdessen unter der Überschrift *Menüs* **Extras – PreEmptive Protection – Dotfuscator** angezeigt wird, ist Dotfuscator CE bereits installiert. Weitere Informationen zum Gebrauch finden Sie [auf der „Erste Schritte“-Seite des vollständigen Dotfuscator CE-Benutzerhandbuchs][get-started].
 3. Ein Fenster für den Visual Studio-Installer wird geöffnet – schon so voreingestellt, dass Dotfuscator CE installiert wird.
-  * Möglicherweise müssen Sie Administratoranmeldeinformationen eingeben, damit Sie fortfahren können.
+   * Möglicherweise müssen Sie Administratoranmeldeinformationen eingeben, damit Sie fortfahren können.
 4. Schließen Sie alle Instanzen der Visual Studio-IDE. <br/> <br/> ![Klicken auf Installieren](media/install_from_vs_345.png) <br/> <br/>
 5. Klicken Sie im Visual Studio-Installer auf *Installieren*.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af890c62cc830693cec16494eac71176743cadd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856196"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
 
@@ -131,16 +131,18 @@ Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen
 
 Der **Klassen-Designer** unterstützt die Visualisierung von Vorlagenklassen. Geschachtelte Deklarationen werden unterstützt. Die folgende Tabelle zeigt einige Standarddeklarationen.
 
-|Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
-|`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> Vorlagenklasse|
-|`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|
-|`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> Vorlagenklasse|
-|`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|
+
+| Codeelement | Ansicht „Klassen-Designer“ |
+| - | - |
+| `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> Vorlagenklasse |
+| `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Vorlagenklasse |
+| `template <class T, int i>`<br /><br /> `class A {};` | `A<T, i>`<br /><br /> Vorlagenklasse |
+| `template <class T, template <class K> class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Vorlagenklasse |
+
 Die folgende Tabelle zeigt einige Beispiele für die teilweise Spezialisierung.
 
 |Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
+|------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> Vorlagenklasse|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> Vorlagenklasse|
@@ -149,13 +151,13 @@ Die folgende Tabelle zeigt einige Beispiele für die teilweise Spezialisierung.
 Die folgende Tabelle zeigt einige Beispiele der Vererbung in der partiellen Spezialisierung.
 
 |Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Vorlagenklasse<br /><br /> `B`<br /><br /> Klasse<br /><br /> (zeigt auf Klasse A)<br /><br /> `C`<br /><br /> Klasse<br /><br /> (zeigt auf Klasse A)|
 
 Die folgende Tabelle zeigt einige Beispiele für die partielle Spezialisierung von Vorlagenfunktionen.
 
 |Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
+|------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Vorlagenklasse<br /><br /> `B<T2>`<br /><br /> Vorlagenklasse<br /><br /> (B ist in Klasse A unter **geschachtelte Typen** enthalten)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasse<br /><br /> C\<int><br /><br /> `C<T>`<br /><br /> Vorlagenklasse|
@@ -163,13 +165,13 @@ Die folgende Tabelle zeigt einige Beispiele für die partielle Spezialisierung v
 Die folgende Tabelle zeigt einige Beispiele der Vorlagenvererbung.
 
 |Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Klasse<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> (B ist in Klasse C unter **geschachtelte Typen** enthalten )<br /><br /> `C<T>`<br /><br /> Vorlagenklasse|
 
 Die folgende Tabelle zeigt einige Beispiele der kanonischen spezialisierten Klassenverbindung.
 
 |Codeelement|Ansicht „Klassen-Designer“|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasse<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> `C<T>`<br /><br /> Vorlagenklasse<br /><br /> `D`<br /><br /> Klasse<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 

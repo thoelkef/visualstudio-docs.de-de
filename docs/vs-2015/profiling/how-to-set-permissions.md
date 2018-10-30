@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905253"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Mitglieder der Benutzergruppe benötigen Zugriff auf die Ordner und Dateien auf dem Datenträger, die mit anderen Mitgliedern des Teams gemeinsam verwendet werden. Die zweite Prozedur, „So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien“, beschreibt, wie Sie diesen Zugriff gewähren.  
+  Mitglieder der Benutzergruppe benötigen Zugriff auf die Ordner und Dateien auf dem Datenträger, die mit anderen Mitgliedern des Teams gemeinsam verwendet werden. Die zweite Prozedur, „So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien“, beschreibt, wie Sie diesen Zugriff gewähren.  
   
- Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wenn ein Administrator ihnen Zugriff auf die Softwaretreiber für die Profilerstellungsgstools erteilt. Die letzte Prozedur, „So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung“, beschreibt, wie Sie den Zugriff auf diesen Treiber gewähren.  
+  Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wenn ein Administrator ihnen Zugriff auf die Softwaretreiber für die Profilerstellungsgstools erteilt. Die letzte Prozedur, „So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung“, beschreibt, wie Sie den Zugriff auf diesen Treiber gewähren.  
   
 > [!NOTE]
 >  Sie benötigen Administratorberechtigungen, um die Schritte in diesen Prozeduren ausführen zu können.  
@@ -89,47 +89,47 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung  
   
-1.  Öffnen Sie eine Eingabeaufforderung als Administrator.  
+1. Öffnen Sie eine Eingabeaufforderung als Administrator.  
   
-2.  Wechseln Sie zu folgendem Verzeichnis:  
+2. Wechseln Sie zu folgendem Verzeichnis:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Führen Sie den folgenden Befehl aus:  
+3. Führen Sie den folgenden Befehl aus:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Dieser Befehl installiert und startet den Treiber für die Profilerstellungstools.  
+    Dieser Befehl installiert und startet den Treiber für die Profilerstellungstools.  
   
-     Dieser Befehl startet den Profilerstellungstreiber und -dienst so, dass Benutzer ohne Administratorrechte Profilerstellungsfunktionen verwenden können, die in ihrem Benutzerprozessbereich verfügbar sind. Nur ein Administrator kann den Befehl ausführen; und es wird bei Benutzern ohne Administratorrechte fehlschlagen.  
+    Dieser Befehl startet den Profilerstellungstreiber und -dienst so, dass Benutzer ohne Administratorrechte Profilerstellungsfunktionen verwenden können, die in ihrem Benutzerprozessbereich verfügbar sind. Nur ein Administrator kann den Befehl ausführen; und es wird bei Benutzern ohne Administratorrechte fehlschlagen.  
   
-     Beachten Sie, dass die Effekte in diesem Schritt nach dem Neustart des Computers rückgängig gemacht werden, es sei denn, Sie führen auch den letzten Schritt in dieser Prozedur aus.  
+    Beachten Sie, dass die Effekte in diesem Schritt nach dem Neustart des Computers rückgängig gemacht werden, es sei denn, Sie führen auch den letzten Schritt in dieser Prozedur aus.  
   
-4.  Führen Sie den Befehl aus, um den Zugriff auf die Funktionalität des Profilerstellungstreibers durch einen Benutzer oder eine Gruppe zu gewähren, die keinen Administratorzugriff auf den Computer haben:  
+4. Führen Sie den Befehl aus, um den Zugriff auf die Funktionalität des Profilerstellungstreibers durch einen Benutzer oder eine Gruppe zu gewähren, die keinen Administratorzugriff auf den Computer haben:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:  
+    Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:  
   
-    -   FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
+   -   FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
   
-    -   SampleProfiling – ermöglicht den Zugriff auf Sampling-Profilerstellungsmethoden.  
+   -   SampleProfiling – ermöglicht den Zugriff auf Sampling-Profilerstellungsmethoden.  
   
-    -   CrossSession – ermöglicht den Zugriff auf die sitzungsübergreifende Profilerstellung, die für Profilerstellungsdienste erforderlich ist.  
+   -   CrossSession – ermöglicht den Zugriff auf die sitzungsübergreifende Profilerstellung, die für Profilerstellungsdienste erforderlich ist.  
   
-5.  Optional: Um die Ergebnisse der vorherigen Schritte nach dem Computerneustart zu erhalten, führen Sie den folgenden Befehl ein:  
+5. Optional: Um die Ergebnisse der vorherigen Schritte nach dem Computerneustart zu erhalten, führen Sie den folgenden Befehl ein:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.  
+   Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   

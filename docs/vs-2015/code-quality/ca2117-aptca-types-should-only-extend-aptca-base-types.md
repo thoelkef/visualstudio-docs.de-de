@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922645"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171456"
 
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und ein Typ in der Assembly erbt von einem Typ, der keine teilweise vertrauenswürdigen Aufrufer zulässt, kann diese Sicherheitslücke ausgenutzt werden. Wenn zwei Typen `T1` und `T2` folgende Bedingungen erfüllt, können böswillige Aufrufer den Typ `T1` die vererbungsanforderung implizite volle Vertrauenswürdigkeit zu umgehen, die schützt `T2`:
 
--   `T1` in einer voll vertrauenswürdigen Assembly, die über das APTCA-Attribut verfügt, wird ein öffentlicher Typ deklariert werden.
+- `T1` in einer voll vertrauenswürdigen Assembly, die über das APTCA-Attribut verfügt, wird ein öffentlicher Typ deklariert werden.
 
--   `T1` von einem Typ erbt `T2` außerhalb der Assembly.
+- `T1` von einem Typ erbt `T2` außerhalb der Assembly.
 
--   `T2`die Assembly verfügt nicht über das APTCA-Attribut, und daher sollte nicht vererbt werden von Typen in teilweise vertrauenswürdigen Assemblys.
+- `T2`die Assembly verfügt nicht über das APTCA-Attribut, und daher sollte nicht vererbt werden von Typen in teilweise vertrauenswürdigen Assemblys.
 
- Ein teilweise vertrauenswürdiger `X` erben können `T1`, ermöglicht er Zugriff auf geerbte Member deklariert `T2`. Da `T2` verfügt nicht über das APTCA-Attribut, dessen sofortige abgeleiteten Typ (`T1`) erfüllen müssen, eine vererbungsanforderung voll vertrauenswürdig sind. `T1` ist voll vertrauenswürdig und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko liegt daran, dass `X` nicht erfüllen die vererbungsanforderung, die schützt beteiligt `T2` aus nicht vertrauenswürdigen-Unterklasse. Aus diesem Grund müssen Typen, mit dem APTCA-Attribut nicht Typen erweitern, die nicht mit das Attribut verfügen.
+  Ein teilweise vertrauenswürdiger `X` erben können `T1`, ermöglicht er Zugriff auf geerbte Member deklariert `T2`. Da `T2` verfügt nicht über das APTCA-Attribut, dessen sofortige abgeleiteten Typ (`T1`) erfüllen müssen, eine vererbungsanforderung voll vertrauenswürdig sind. `T1` ist voll vertrauenswürdig und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko liegt daran, dass `X` nicht erfüllen die vererbungsanforderung, die schützt beteiligt `T2` aus nicht vertrauenswürdigen-Unterklasse. Aus diesem Grund müssen Typen, mit dem APTCA-Attribut nicht Typen erweitern, die nicht mit das Attribut verfügen.
 
- Ein anderes Sicherheitsproblem, und ein eher üblich ist, die den abgeleiteten Typ (`T1`) können über Programmierfehler, verfügbar machen geschützte Member des Typs, die volle Vertrauenswürdigkeit erfordert (`T2`). In diesem Fall erhalten Sie nicht vertrauenswürdige Aufrufer den Zugriff auf Informationen, die nur für vollständig vertrauenswürdige Typen verfügbar sein sollen.
+  Ein anderes Sicherheitsproblem, und ein eher üblich ist, die den abgeleiteten Typ (`T1`) können über Programmierfehler, verfügbar machen geschützte Member des Typs, die volle Vertrauenswürdigkeit erfordert (`T2`). In diesem Fall erhalten Sie nicht vertrauenswürdige Aufrufer den Zugriff auf Informationen, die nur für vollständig vertrauenswürdige Typen verfügbar sein sollen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Wenn der Typ, der den Verstoß in einer Assembly, die nicht über das APTCA-Attribut erfordert ist, entfernen Sie sie.

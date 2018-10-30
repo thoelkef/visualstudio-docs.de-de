@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Microsoft Docs
+title: METADATA_ADDRESS_METHOD | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0da11c3f3f517f15d8ce4430f9437d476679f5b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 481e4c76869e4a352607835800d232c3d2075569
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917770"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Diese Struktur stellt die Adresse einer Methode einer Klasse dar.  
@@ -47,16 +47,16 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  Die ID der Methode.  
   
- [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
+ [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.  
   
  dwOffset  
- Der Offset vom Beginn Klasse an diese Methode (kann den Offset in die Vtable darstellen).  
+ Der Offset von der Klasse beginnen, diese Methode (kann den Offset in der Vtable darstellen).  
   
  dwVersion  
- Die Version der Methode (dieser Wert ist nur für die Symbol-Anbieter).  
+ Die Version der Methode (dieser Wert ist nur für die symbolanbieter).  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_METHOD` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_METHOD` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  

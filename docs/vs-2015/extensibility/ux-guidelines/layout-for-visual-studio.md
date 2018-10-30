@@ -13,12 +13,12 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6929054fd2983fa6b08801cd35eab7148bd8100
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829442"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
   
 #### <a name="command-buttons"></a>Befehlsschaltflächen  
   
--   Befehlsschaltflächen, die für die Dialogfeldrahmen, nicht auf den Inhalt verwendet werden. Sie sollte sollten unten rechts angeordnet werden und genügend Leerzeichen-Variable aus, um die Schaltflächen klar getrennt festgelegt.  
+- Befehlsschaltflächen, die für die Dialogfeldrahmen, nicht auf den Inhalt verwendet werden. Sie sollte sollten unten rechts angeordnet werden und genügend Leerzeichen-Variable aus, um die Schaltflächen klar getrennt festgelegt.  
   
--   Wenn es horizontale Schaltflächen, die im Dialogfeld ausgeführt werden, ist die Konfiguration der alternativen Befehl Schaltfläche einem vertikalen Stapel auf der oberen rechten Ecke. Finden Sie unter [inneren Befehlsschaltflächen](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) unten.  
+- Wenn es horizontale Schaltflächen, die im Dialogfeld ausgeführt werden, ist die Konfiguration der alternativen Befehl Schaltfläche einem vertikalen Stapel auf der oberen rechten Ecke. Finden Sie unter [inneren Befehlsschaltflächen](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) unten.  
   
--   Der Speicherplatz auf der linken Seite der Befehlsschaltflächen (unteren linken/Mitte des Dialogfelds), wird als Teil vom Band "-" der Vorgang Dialogfeldsteuerelemente betrachtet. Das einzige, das in diesen Speicherplatz den Eindringen sollte, ist eine Hilfe-Link, der auf die gesamte Aufgabe oder Dialogfeld relevant ist.  
+- Der Speicherplatz auf der linken Seite der Befehlsschaltflächen (unteren linken/Mitte des Dialogfelds), wird als Teil vom Band "-" der Vorgang Dialogfeldsteuerelemente betrachtet. Das einzige, das in diesen Speicherplatz den Eindringen sollte, ist eine Hilfe-Link, der auf die gesamte Aufgabe oder Dialogfeld relevant ist.  
   
--   Befehlsschaltflächen müssen es sich um 75 x 23 Pixel sein.  
+- Befehlsschaltflächen müssen es sich um 75 x 23 Pixel sein.  
   
--   Befehlsschaltflächen sollte 6 Pixel auseinander liegen.  
+- Befehlsschaltflächen sollte 6 Pixel auseinander liegen.  
   
- ![Grundlegende Ausrichtung](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801-C_ButtonAlign")  
+  ![Grundlegende Ausrichtung](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801-C_ButtonAlign")  
   
- **Abbildung 08.01 c: Grundlegende Ausrichtung**  
+  **Abbildung 08.01 c: Grundlegende Ausrichtung**  
   
 #### <a name="labels"></a>Bezeichnungen  
   
@@ -110,19 +110,19 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
 ####  <a name="BKMK_InteriorCommandButtons"></a> Innere Befehlsschaltflächen  
  In komplexeren Dialogfeldern möglicherweise ein internes Steuerelement einen eigenen zugehörigen Schaltflächen, beeinflussen können, wo sich das Dialogfeld "Commit-Schaltflächen befinden.  
   
--   Verwenden, die eine vertikale Ausrichtung (Spalte) des inneren beim Schaltflächen **OK**/**Abbrechen** horizontal in der unteren rechten Ecke ausgerichtet sind.  
+- Verwenden, die eine vertikale Ausrichtung (Spalte) des inneren beim Schaltflächen **OK**/**Abbrechen** horizontal in der unteren rechten Ecke ausgerichtet sind.  
   
--   Verwenden, die eine horizontale Ausrichtung (Zeile) des inneren beim Schaltflächen **OK**/**Abbrechen** sind in der oberen rechten Ecke, vertikal ausgerichtet. Dies ist weniger häufig.  
+- Verwenden, die eine horizontale Ausrichtung (Zeile) des inneren beim Schaltflächen **OK**/**Abbrechen** sind in der oberen rechten Ecke, vertikal ausgerichtet. Dies ist weniger häufig.  
   
--   Größe der Schaltfläche "inneren" sollten als Ziel die Standardschaltfläche Größe von 75 x 23 Pixel, die Größe des übereinstimmenden **OK**/**Abbrechen** Schaltflächen, wenn möglich. Wenn eine Beschriftung der Schaltfläche auf die Schaltfläche die Standardschaltfläche überschreiten vornimmt, sollten die anderen Schaltflächen in diesem Satz mit größeren Größe ausgerichtet sein.  
+- Größe der Schaltfläche "inneren" sollten als Ziel die Standardschaltfläche Größe von 75 x 23 Pixel, die Größe des übereinstimmenden **OK**/**Abbrechen** Schaltflächen, wenn möglich. Wenn eine Beschriftung der Schaltfläche auf die Schaltfläche die Standardschaltfläche überschreiten vornimmt, sollten die anderen Schaltflächen in diesem Satz mit größeren Größe ausgerichtet sein.  
   
- ![Horizontale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801-F_HorizOKCan")  
+  ![Horizontale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801-F_HorizOKCan")  
   
- **Abbildung 08.01-f: Vertikale innere Schaltflächen mit horizontalen OK/Abbrechen**  
+  **Abbildung 08.01-f: Vertikale innere Schaltflächen mit horizontalen OK/Abbrechen**  
   
- ![Vertikale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801-G_VertOKCan")  
+  ![Vertikale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801-G_VertOKCan")  
   
- **Abbildung 08.01-g: Horizontale inneren Schaltflächen mit vertikalen OK/Abbrechen**  
+  **Abbildung 08.01-g: Horizontale inneren Schaltflächen mit vertikalen OK/Abbrechen**  
   
 #### <a name="browse-button"></a>[Durchsuchen...] Schaltfläche "  
  **[Durchsuchen...]**  Schaltflächen, die ein Textfeld zu folgen "Durchsuchen..." vollständig, einschließlich der mit den Auslassungspunkten schreiben soll. Wenn der Speicherplatz ist eng gesteckt, oder es sind mehrere **[durchsuchen...]**  Schaltflächen auf dem Bildschirm die Schaltfläche mit den können reduziert werden, um nur mit den Auslassungspunkten.  

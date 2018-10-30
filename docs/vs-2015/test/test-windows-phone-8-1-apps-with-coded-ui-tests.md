@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890141"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 [Wie kann ich Tests der programmierten UI für Apps der universellen Windows-Plattform (UWP) erstellen?](#uwpapps)
   
-1.  Fügen Sie der Lösung mit der Windows Phone-App ein neues Projekt mit einem Test für programmierte UI hinzu.  
+1. Fügen Sie der Lösung mit der Windows Phone-App ein neues Projekt mit einem Test für programmierte UI hinzu.  
   
-     ![Neuen Test der programmierten UI für Windows Phone erstellen](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Neuen Test der programmierten UI für Windows Phone erstellen](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  Wählen Sie mithilfe des Fadenkreuztools aus, dass Sie die UI-Zuordnung bearbeiten möchten.  
+2. Wählen Sie mithilfe des Fadenkreuztools aus, dass Sie die UI-Zuordnung bearbeiten möchten.  
   
-     ![Test der programmierten UI mithilfe des Fadenkreuztools generieren.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Test der programmierten UI mithilfe des Fadenkreuztools generieren.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Verwenden Sie das Fadenkreuztool zur Auswahl der App. Kopieren Sie dann den Wert der **AutomationId** -Eigenschaft der App, der später für das Starten der App im Test verwendet wird.  
+3. Verwenden Sie das Fadenkreuztool zur Auswahl der App. Kopieren Sie dann den Wert der **AutomationId** -Eigenschaft der App, der später für das Starten der App im Test verwendet wird.  
   
-     ![AutomationId-Wert der App kopieren](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![AutomationId-Wert der App kopieren](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  Starten Sie die App im Emulator mit dem Fadenkreuztool und wählen Sie das Schaltflächensteuerelement aus. Fügen Sie dann das Schaltflächen-Steuerelement der UI-Steuerelementzuordnung hinzu.  
+4. Starten Sie die App im Emulator mit dem Fadenkreuztool und wählen Sie das Schaltflächensteuerelement aus. Fügen Sie dann das Schaltflächen-Steuerelement der UI-Steuerelementzuordnung hinzu.  
   
-     ![Fadenkreuztool für Zuordnung der Steuerelemente verwenden](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Fadenkreuztool für Zuordnung der Steuerelemente verwenden](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Wiederholen Sie den vorangehenden Schritt zum Hinzufügen des Textfeld-Steuerelements zur UI-Steuerelementzuordnung.  
+5. Wiederholen Sie den vorangehenden Schritt zum Hinzufügen des Textfeld-Steuerelements zur UI-Steuerelementzuordnung.  
   
-     ![Fadenkreuztool für Zuordnung des Textfeld-Steuerelements verwenden](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Fadenkreuztool für Zuordnung des Textfeld-Steuerelements verwenden](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  Erstellen Sie den Code, sodass Code für Änderungen an der UI-Steuerelementzuordnung erstellt wird.  
+6. Erstellen Sie den Code, sodass Code für Änderungen an der UI-Steuerelementzuordnung erstellt wird.  
   
-     ![Code vom Builder generieren](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Code vom Builder generieren](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  Wählen Sie das Textfeldsteuerelement mit dem Fadenkreuztool aus, und wählen Sie dann die **Text** -Eigenschaft aus.  
+7. Wählen Sie das Textfeldsteuerelement mit dem Fadenkreuztool aus, und wählen Sie dann die **Text** -Eigenschaft aus.  
   
-     ![Text-Eigenschaft auswählen](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Text-Eigenschaft auswählen](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Fügen Sie eine Assertion hinzu. Diese wird beim Test verwendet, um die Richtigkeit des Werts sicherzustellen.  
+8. Fügen Sie eine Assertion hinzu. Diese wird beim Test verwendet, um die Richtigkeit des Werts sicherzustellen.  
   
-     ![Assertion zum Test hinzufügen](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Assertion zum Test hinzufügen](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Generieren Sie Code für die Assert-Methode, und fügen Sie diesen hinzu.  
   
@@ -223,37 +223,37 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
   
 11. Öffnen Sie im Projektmappen-Explorer die Datei "CodedUITest1.cs" oder "CodedUITest1.vb". Nun können Sie der CodedUTTestMethod1-Methode Code für die zum Ausführen des Tests erforderlichen Aktionen hinzufügen. Verwenden Sie die der UIMap hinzugefügten Steuerelemente zum Hinzufügen von Code:  
   
-    1.  Starten Sie die Windows Phone-App mithilfe der Automation ID-Eigenschaft, die Sie zuvor in Zwischenablage kopiert haben:  
+    1. Starten Sie die Windows Phone-App mithilfe der Automation ID-Eigenschaft, die Sie zuvor in Zwischenablage kopiert haben:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Fügen Sie eine Geste hinzu, um auf das Schaltflächensteuerelement zu tippen:  
+    2. Fügen Sie eine Geste hinzu, um auf das Schaltflächensteuerelement zu tippen:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Überprüfen Sie, ob der Aufruf der automatisch generierten Assert-Methode nach dem Starten der Anwendung und dem Tippen auf die Schaltfläche erfolgt:  
+    3. Überprüfen Sie, ob der Aufruf der automatisch generierten Assert-Methode nach dem Starten der Anwendung und dem Tippen auf die Schaltfläche erfolgt:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Nach dem Hinzufügen des Codes sollte die CodedUITestMethod1-Testmethode wie folgt aussehen:  
+       Nach dem Hinzufügen des Codes sollte die CodedUITestMethod1-Testmethode wie folgt aussehen:  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>F: Wie kann ich Tests der programmierten UI für Apps der universellen Windows-Plattform (UWP) erstellen?  
  **A**: Verwenden Sie abhängig von der Plattform, auf der Sie die UWP-App testen, eine der folgenden Möglichkeiten zum Erstellen von Tests der programmierten UI:  
   
--   Eine UWP-App auf einem lokalen Computer wird als eine Store-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows** danach suchen.  
+- Eine UWP-App auf einem lokalen Computer wird als eine Store-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows** danach suchen.  
   
--   Eine UWP-App auf einem mobilen Gerät oder Emulator wird als eine Phone-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows Phone)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows Phone** danach suchen.  
+- Eine UWP-App auf einem mobilen Gerät oder Emulator wird als eine Phone-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows Phone)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows Phone** danach suchen.  
   
- Nachdem Sie das Projekt erstellt haben, wird ein Test auf die gleiche Weise wie zuvor erstellt.  
+  Nachdem Sie das Projekt erstellt haben, wird ein Test auf die gleiche Weise wie zuvor erstellt.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>F: Kann ich Steuerelemente auswählen, die sich außerhalb des Emulators befinden?  
  **A**: Nein, der Generator erkennt sie nicht.  

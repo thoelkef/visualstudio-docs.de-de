@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811749"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Buildda
 ## <a name="setting-the-level-of-detail"></a>Festlegen des Detailgrads  
  Wenn Sie ein Projekt mithilfe von MSBuild ohne Angabe einer Detailebene erstellen, werden die folgenden Informationen im Ausgabeprotokoll angezeigt:  
   
--   Fehler, Warnungen und Nachrichten, die als äußerst wichtig eingestuft werden.  
+- Fehler, Warnungen und Nachrichten, die als äußerst wichtig eingestuft werden.  
   
--   Einige Statusereignisse.  
+- Einige Statusereignisse.  
   
--   Eine Übersicht des Build.  
+- Eine Übersicht des Build.  
   
- Mithilfe des Schalters **/verbosity** (**/v**) können Sie steuern, wie viele Daten im Ausgabeprotokoll angezeigt werden. Verwenden Sie für die Problembehandlung entweder den Ausführlichkeitsgrad `detailed` (`d`) oder `diagnostic` (`diag`), der die meisten Informationen bietet.  
+  Mithilfe des Schalters **/verbosity** (**/v**) können Sie steuern, wie viele Daten im Ausgabeprotokoll angezeigt werden. Verwenden Sie für die Problembehandlung entweder den Ausführlichkeitsgrad `detailed` (`d`) oder `diagnostic` (`diag`), der die meisten Informationen bietet.  
   
- Der Buildprozess ist möglicherweise langsamer, wenn Sie **/verbosity** auf `detailed` festlegen und sogar langsamer, wenn Sie **/verbosity** auf `diagnostic` festlegen.  
+  Der Buildprozess ist möglicherweise langsamer, wenn Sie **/verbosity** auf `detailed` festlegen und sogar langsamer, wenn Sie **/verbosity** auf `diagnostic` festlegen.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

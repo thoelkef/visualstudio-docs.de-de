@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844511"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps
   Sie können die **Business Data Connectivity-Modell** Projektelement ein Modell für den Business Data Connectivity (BDC)-Dienst in SharePoint zu erstellen. Wenn Sie mit diesem Projektelement ein Modell erstellen, werden die Daten Benutzern im Modell standardmäßig nicht angezeigt. Sie müssen zusätlzlich eine externe Liste in SharePoint erstellen, damit Benutzer die Daten einsehen können.  
@@ -39,27 +39,27 @@ ms.locfileid: "42626145"
   
 -   Testen der Erweiterung.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
--   Unterstützte Editionen von Microsoft Windows, SharePoint und Visual Studio.  
+- Unterstützte Editionen von Microsoft Windows, SharePoint und Visual Studio.  
   
--   Die [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Die [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage in das SDK zum Erstellen eines VSIX-Pakets zum Bereitstellen des Projektelements. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+  Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Den BDC-Dienst in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Weitere Informationen finden Sie unter [BDC-Architektur](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- Den BDC-Dienst in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Weitere Informationen finden Sie unter [BDC-Architektur](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   Das XML-Schema für BDC-Modelle. Weitere Informationen finden Sie unter [BDC-Modell Infrastruktur](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- Das XML-Schema für BDC-Modelle. Weitere Informationen finden Sie unter [BDC-Modell Infrastruktur](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
  Zum Abschließen dieser exemplarischen Vorgehensweise müssen Sie zwei Projekte erstellen:  
   
--   Ein VSIX-Projekt für die Erstellung des VSIX-Pakets zum Bereitstellen der Projektelementerweiterung  
+- Ein VSIX-Projekt für die Erstellung des VSIX-Pakets zum Bereitstellen der Projektelementerweiterung  
   
--   Ein Klassenbibliotheksprojekt, das die Projektelementerweiterung implementiert  
+- Ein Klassenbibliotheksprojekt, das die Projektelementerweiterung implementiert  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+  Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
 #### <a name="to-create-the-vsix-project"></a>So erstellen Sie das VSIX-Projekt  
   

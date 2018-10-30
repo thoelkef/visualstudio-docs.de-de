@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153916"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879302"
 ---
 # <a name="override-toolsversion-settings"></a>Überschreiben von ToolsVersion-Einstellungen
 Sie können das Toolset für Projekte und Projektmappen auf drei verschiedene Arten ändern:  
   
-1.  durch Verwendung des `/ToolsVersion`-Schalters (oder kurz `/tv`) beim Erstellen des Projekts oder der Projektmappe in der Befehlszeile.  
+1.  durch Verwendung des `-ToolsVersion`-Schalters (oder kurz `-tv`) beim Erstellen des Projekts oder der Projektmappe in der Befehlszeile.  
   
 2.  durch Verwendung des `ToolsVersion`-Parameters in der MSBuild-Aufgabe.  
   
 3.  durch Festlegen der `$(ProjectToolsVersion)`-Eigenschaft für ein Projekt in einer Projektmappe. So können Sie ein Projekt in einer Projektmappe mit einer anderen Toolsetversion erstellen als der, die in anderen Projekten verwendet wird.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Überschreiben der ToolsVersion-Einstellungen von Projekten und Projektmappen in Befehlszeilenbuilds  
- Obwohl Visual Studio-Projekte normalerweise mit der in der Projektdatei angegebenen ToolsVersion erstellt werden, können Sie den Schalter `/ToolsVersion` (oder `/tv`) in der Befehlszeile verwenden, um diesen Wert zu überschreiben und so alle Projekte und deren projektübergreifende Abhängigkeiten mit einem anderen Toolset zu erstellen. Zum Beispiel:  
+ Obwohl Visual Studio-Projekte normalerweise mit der in der Projektdatei angegebenen ToolsVersion erstellt werden, können Sie den Schalter `-ToolsVersion` (oder `-tv`) in der Befehlszeile verwenden, um diesen Wert zu überschreiben und so alle Projekte und deren projektübergreifende Abhängigkeiten mit einem anderen Toolset zu erstellen. Zum Beispiel:  
   
 ```cmd  
-msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
+msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  
 ```  
   
  In diesem Beispiel werden alle Projekte mit ToolsVersion 12.0 erstellt. (Siehe jedoch auch den Abschnitt [Rangfolge](#order-of-precedence) weiter unten in diesem Thema.)  
   
- Bei Verwendung des `/tv`-Schalters in der Befehlszeile können Sie optional die `$(ProjectToolsVersion)`-Eigenschaft für einzelne Projekte verwenden, um diese mit einem anderen ToolsVersion-Wert als für andere Projekte in der Projektmappe zu erstellen.  
+ Bei Verwendung des `-tv`-Schalters in der Befehlszeile können Sie optional die `$(ProjectToolsVersion)`-Eigenschaft für einzelne Projekte verwenden, um diese mit einem anderen ToolsVersion-Wert als für andere Projekte in der Projektmappe zu erstellen.  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Überschreiben der ToolsVersion-Einstellung mit dem ToolsVersion-Parameter der MSBuild-Aufgabe  
  Die MSBuild-Aufgabe dient einem Projekt primär dazu, ein anderes Projekt zu erstellen. Damit die MSBuild-Aufgabe ein Projekt mit einer anderen ToolsVersion als der im Projekt angegebenen erstellen kann, stellt sie einen optionalen Aufgabenparameter mit dem Namen `ToolsVersion` zur Verfügung. Im folgenden Beispiel wird die Verwendung dieses Parameters veranschaulicht:  
@@ -78,10 +78,10 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 3.  Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:  
   
     ```cmd  
-    msbuild projectA.proj /t:go /toolsversion:3.5  
+    msbuild projectA.proj -t:go -toolsversion:3.5  
     ```  
   
-4.  Die folgende Ausgabe wird angezeigt. Bei `projectA` überschreibt die `/toolsversion:3.5`-Einstellung in der Befehlszeile die `ToolsVersion=12.0`-Einstellung im `Project`-Tag.  
+4.  Die folgende Ausgabe wird angezeigt. Bei `projectA` überschreibt die `-toolsversion:3.5`-Einstellung in der Befehlszeile die `ToolsVersion=12.0`-Einstellung im `Project`-Tag.  
   
      `ProjectB` wird durch eine Aufgabe in `projectA` aufgerufen. Diese Aufgabe enthält die `ToolsVersion=2.0`, die die anderen `ToolsVersion`-Einstellungen für `projectB` überschreibt.  
   
@@ -101,7 +101,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 1.  Das `ToolsVersion`-Attribut in der MSBuild-Aufgabe, die zum Erstellen des Projekts verwendet wird (soweit zutreffend).  
   
-2.  Der Schalter `/toolsversion` (oder `/tv`), der im msbuild.exe-Befehl verwendet wird, falls vorhanden.  
+2.  Der Schalter `-toolsversion` (oder `-tv`), der im msbuild.exe-Befehl verwendet wird, falls vorhanden.  
   
 3.  Wenn die Umgebungsvariable `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` festgelegt ist, verwenden Sie die aktuelle `ToolsVersion`.  
   

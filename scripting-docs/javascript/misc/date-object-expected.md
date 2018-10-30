@@ -1,5 +1,5 @@
 ---
-title: Date-Objekt erwartet | Microsoft Docs
+title: Date-Objekt erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947640"
 ---
 # <a name="date-object-expected"></a>Date-Objekt erwartet
-Sie haben versucht, das Aufrufen der **Date.prototype.toString** oder **Date.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `Date`. Das Objekt dieses Typs des Aufrufs muss vom Typ `Date`. Zum Beispiel:  
+Sie haben versucht, rufen Sie die **Date.prototype.toString** oder **Date.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `Date`. Das Objekt dieser Art von Aufruf muss vom Typ `Date`. Zum Beispiel:  
   
 ```JavaScript  
 var o = new Object;  

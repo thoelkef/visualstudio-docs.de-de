@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926097"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>So erstellen Sie ein Diagramm und fügen es zu einem Projekt hinzu  
   
-1.  Auf der **Architektur** Menü wählen **neues UML- oder Ebenendiagramm**.  
+1. Auf der **Architektur** Menü wählen **neues UML- oder Ebenendiagramm**.  
   
-2.  In der **neues Diagramm hinzufügen** Dialogfeld klicken Sie auf den Typ des Modellierungsdiagramm, die Sie möchten.  
+2. In der **neues Diagramm hinzufügen** Dialogfeld klicken Sie auf den Typ des Modellierungsdiagramm, die Sie möchten.  
   
-     ![Neues Diagramm-Dialogfeld "hinzufügen"](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![Neues Diagramm-Dialogfeld "hinzufügen"](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  Geben Sie einen Namen für das neue Diagramm ein.  
+3. Geben Sie einen Namen für das neue Diagramm ein.  
   
-4.  In der **fügen Sie dem Modellierungsprojekt** Feld:  
+4. In der **fügen Sie dem Modellierungsprojekt** Feld:  
   
-    -   Wählen Sie in der Projektmappe ein Modellierungsprojekt, das bereits vorhanden ist, und klicken Sie dann auf **OK**.  
+   - Wählen Sie in der Projektmappe ein Modellierungsprojekt, das bereits vorhanden ist, und klicken Sie dann auf **OK**.  
   
      \- oder –  
   
-    1.  Wählen Sie **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
+   1.  Wählen Sie **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
   
-    2.  In der **Neues Modellierungsprojekt erstellen** Dialogfeld Geben Sie einen Namen und Speicherort für das neue Projekt, und klicken Sie dann auf **OK**.  
+   2.  In der **Neues Modellierungsprojekt erstellen** Dialogfeld Geben Sie einen Namen und Speicherort für das neue Projekt, und klicken Sie dann auf **OK**.  
   
-         ![Dialogfeld für neues Modellierungsprojekt erstellen](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![Dialogfeld für neues Modellierungsprojekt erstellen](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         Wenn die Projektmappe geöffnet ist, wird das neue Projekt hinzugefügt. Wenn Sie keine Projektmappe geöffnet haben, können Sie einen Namen für eine neue Projektmappe eingeben.  
+        Wenn die Projektmappe geöffnet ist, wird das neue Projekt hinzugefügt. Wenn Sie keine Projektmappe geöffnet haben, können Sie einen Namen für eine neue Projektmappe eingeben.  
   
- Wenn Sie bereits ein Modellierungsprojekt haben, können Sie auch das folgende Verfahren einsetzen.  
+   Wenn Sie bereits ein Modellierungsprojekt haben, können Sie auch das folgende Verfahren einsetzen.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Einem vorhandenen Modellierungsprojekt ein Diagramm hinzufügen  
   

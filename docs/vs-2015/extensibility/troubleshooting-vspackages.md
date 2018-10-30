@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949308"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Um ein VSPackage fehlt oder eine ihrer Abhängigkeiten zu beheben  
   
-1.  Für verwalteten Code sicher, dass die Verweispfade richtig sind.  
+1. Für verwalteten Code sicher, dass die Verweispfade richtig sind.  
   
-    1.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+   1.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
   
-    2.  Wählen Sie die **Verweise** Registerkarte die **Eigenschaftenseiten** im Dialogfeld, und stellen Sie sicher, dass für alle Pfade richtig sind. Alternativ können Sie die **Objektkatalog** um die referenzierten Objekte zu suchen.  
+   2.  Wählen Sie die **Verweise** Registerkarte die **Eigenschaftenseiten** im Dialogfeld, und stellen Sie sicher, dass für alle Pfade richtig sind. Alternativ können Sie die **Objektkatalog** um die referenzierten Objekte zu suchen.  
   
-         Für verwalteten Code können Sie die [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zum Anzeigen der Details der fehlgeschlagene Assembly lädt.  
+        Für verwalteten Code können Sie die [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zum Anzeigen der Details der fehlgeschlagene Assembly lädt.  
   
-2.  Suchen Sie für nicht verwalteten Code, die CLSID des VSPackage in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Knoten der CLSID-Registrierung:  
+2. Suchen Sie für nicht verwalteten Code, die CLSID des VSPackage in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Knoten der CLSID-Registrierung:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<Version >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<Version >* \CLSID  
   
- Stellen Sie sicher, dass der Eintrag InprocServer32 den richtigen Pfad für die VSPackage-Dll verfügt.  
+   Stellen Sie sicher, dass der Eintrag InprocServer32 den richtigen Pfad für die VSPackage-Dll verfügt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)

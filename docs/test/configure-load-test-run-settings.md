@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813856"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurieren der Laufzeiteinstellungen für Auslastungstests
 
@@ -30,7 +30,7 @@ Die anfängliche Laufzeiteinstellung wird erstellt, wenn Sie einen Auslastungste
 ## <a name="tasks"></a>Aufgaben
 
 |Aufgaben|Verwandte Themen|
-|-----------|-----------------------|
+|-|-|
 |**Hinzufügen weiterer Laufzeiteinstellungen zum Auslastungstest:** Neben der Laufzeiteinstellung, die beim Ausführen des **Assistenten für neuen Auslastungstest** erstellt wird, können Sie dem Auslastungstest zusätzliche Laufzeiteinstellungen hinzufügen, damit Sie den Test unter anderen Bedingungen ausführen können.|-   [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Angeben der aktiven Laufzeiteinstellung zur Verwendung mit dem Auslastungstest:** Sie können mithilfe des Auslastungstest-Editors die Laufzeiteinstellung auswählen, die mit dem Auslastungstest verwendet werden soll. Die aktive Testlaufeinstellung wird durch das Suffix "[Active]" gekennzeichnet.|-   [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Bearbeiten der Eigenschaften der Laufzeiteinstellungen:** Sie können die Eigenschaften der Laufzeiteinstellungen bearbeiten, z.B. Protokollierungsoptionen (weitere Informationen siehe unten), Dauer des Tests und der Aufwärmphase, maximale Anzahl der Fehlerdetails in Berichten, Samplingrate, Verbindungsmodell (nur bei Webleistungstests), Ergebnisspeichertyp, Validierungsebene und SQL-Ablaufverfolgung. Die Laufzeiteinstellungen sollten den Zielen des Auslastungstests entsprechen.|-   [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md)<br />-   [Ändern der Eigenschaften von Laufzeiteinstellungen](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

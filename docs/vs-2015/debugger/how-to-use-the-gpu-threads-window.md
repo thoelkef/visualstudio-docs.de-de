@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848669"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Gewusst wie: Verwenden des Fensters "GPU-Threads"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,25 +38,25 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
  Das GPU-Threadfenster enthält eine Tabelle, in der jede Zeile einen Satz GPU-Threads darstellt, die in allen Spalten über die gleichen Werte verfügen. Sie können Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads aus dem GPU-Threadfenster heraus kennzeichnen, die Kennzeichnung aufheben, sie einfrieren (anhalten), und reaktivieren (fortsetzen). Die folgenden Spalten werden im GPU-Threadfenster angezeigt:  
   
--   Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  
+- Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  
   
--   Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Ein Pfeil gibt den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
+- Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Ein Pfeil gibt den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
   
--   Die **Threadanzahl** Spalte, die die Anzahl der Threads an derselben Position anzeigt.  
+- Die **Threadanzahl** Spalte, die die Anzahl der Threads an derselben Position anzeigt.  
   
--   Die **Zeile** Spalte, die die Zeile des Codes angezeigt wird, in dem jede Gruppe von Threads befindet.  
+- Die **Zeile** Spalte, die die Zeile des Codes angezeigt wird, in dem jede Gruppe von Threads befindet.  
   
--   Die **Adresse** Spalte, in der die Anweisungsadresse angezeigt wird, in dem jede Gruppe von Threads befindet. Standardmäßig ist diese Spalte ausgeblendet.  
+- Die **Adresse** Spalte, in der die Anweisungsadresse angezeigt wird, in dem jede Gruppe von Threads befindet. Standardmäßig ist diese Spalte ausgeblendet.  
   
--   Die **Speicherort** Spalte, die die Position in der Quellcode ist.  
+- Die **Speicherort** Spalte, die die Position in der Quellcode ist.  
   
--   Die **Status** Spalte, die anzeigt, ob der Thread aktiv, blockiert, nicht gestartet oder abgeschlossen ist.  
+- Die **Status** Spalte, die anzeigt, ob der Thread aktiv, blockiert, nicht gestartet oder abgeschlossen ist.  
   
--   Die **Kachel** Spalte, in der der kachelindex für die Threads in der Zeile anzeigt.  
+- Die **Kachel** Spalte, in der der kachelindex für die Threads in der Zeile anzeigt.  
   
- Im Header der Tabelle werden die Kachel und der Thread, die dargestellt werden, angezeigt.  
+  Im Header der Tabelle werden die Kachel und der Thread, die dargestellt werden, angezeigt.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>So öffnen Sie das GPU-Threadfenster  
   

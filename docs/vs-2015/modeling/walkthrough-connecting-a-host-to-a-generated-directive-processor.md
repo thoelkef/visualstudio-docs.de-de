@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817872"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Domain-Specific Language Tools verwenden, um einen anweisungsprozessor zu generieren, der basierend auf einem Domänenmodell  
   
-1.  Erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:  
+1. Erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:  
   
-    -   Name: DSLMinimalTest  
+   - Name: DSLMinimalTest  
   
-    -   Lösungsvorlage: minimale Sprache  
+   - Lösungsvorlage: minimale Sprache  
   
-    -   Dateierweiterung: Min.  
+   - Dateierweiterung: Min.  
   
-    -   Firmenname: Fabrikam  
+   - Firmenname: Fabrikam  
   
      Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
-    > [!IMPORTANT]
-    >  Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.  
+   > [!IMPORTANT]
+   >  Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.  
   
-3.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
+3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
   
-     Eine zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet.  
+    Eine zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet.  
   
-4.  Klicken Sie im experimentellen Build in **Projektmappen-Explorer**, doppelklicken Sie auf die Datei **sample.min**.  
+4. Klicken Sie im experimentellen Build in **Projektmappen-Explorer**, doppelklicken Sie auf die Datei **sample.min**.  
   
-     Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2 und einen Link zwischen ihnen.  
+    Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2 und einen Link zwischen ihnen.  
   
-5.  Schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Speichern Sie die Projektmappe, und schließen Sie die domänenspezifischen Sprach-Designers.  
+6. Speichern Sie die Projektmappe, und schließen Sie die domänenspezifischen Sprach-Designers.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Herstellen einer Verbindung mit einem Direktivenprozessor ein benutzerdefinierten Textvorlagenhosts  
  Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisungsprozessor und der benutzerdefinierten Textvorlagenhosts, die Sie in erstellt [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

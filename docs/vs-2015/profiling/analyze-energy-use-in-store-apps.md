@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824424"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analysieren des Energieverbrauchs in Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
   
  Der Energieverbrauch-Profiler verwendet folgende Definitionen von *Strom* und *Energie*:  
   
--   *Strom* misst die Rate, mit der Kraft aufgewendet wird, um in einem bestimmten Zeitraum eine Leistung zu erbringen. In der Elektrik ist die Standardeinheit für Strom *Watt*. Diese wird als die Rate definiert, in der Leistung erbracht wird, wenn ein Ampere Spannung über eine elektrische Potenzialdifferenz von einem Volt fließt. Im Diagramm für den **Stromverbrauch** werden die Einheiten in Milliwatt **mW** (einem Tausendstel Watt) angezeigt.  
+- *Strom* misst die Rate, mit der Kraft aufgewendet wird, um in einem bestimmten Zeitraum eine Leistung zu erbringen. In der Elektrik ist die Standardeinheit für Strom *Watt*. Diese wird als die Rate definiert, in der Leistung erbracht wird, wenn ein Ampere Spannung über eine elektrische Potenzialdifferenz von einem Volt fließt. Im Diagramm für den **Stromverbrauch** werden die Einheiten in Milliwatt **mW** (einem Tausendstel Watt) angezeigt.  
   
-     Da Strom fließt, hat es auch eine Richtung (die Leistung kann in einem Zeitraum ansteigen oder abnehmen) und eine Geschwindigkeit (die Menge, mit der die Leistung ansteigt oder abnimmt).  
+   Da Strom fließt, hat es auch eine Richtung (die Leistung kann in einem Zeitraum ansteigen oder abnehmen) und eine Geschwindigkeit (die Menge, mit der die Leistung ansteigt oder abnimmt).  
   
--   *Energie* misst die Gesamtmenge der Leistung, entweder als Kapazität oder Potenzial, wie bei der Stromkapazität eines Akkus, oder als Gesamtsumme an Leistung über einen bestimmten Zeitraum. Die Einheit für Energie ist eine Wattstunde, d. h. die Menge an Strom eines Watts, die ständig eine Stunde lang angewendet wird. In der **Energiezusammenfassung**werden die Einheiten in Milliwattstunden **mW-h**dargestellt.  
+- *Energie* misst die Gesamtmenge der Leistung, entweder als Kapazität oder Potenzial, wie bei der Stromkapazität eines Akkus, oder als Gesamtsumme an Leistung über einen bestimmten Zeitraum. Die Einheit für Energie ist eine Wattstunde, d. h. die Menge an Strom eines Watts, die ständig eine Stunde lang angewendet wird. In der **Energiezusammenfassung**werden die Einheiten in Milliwattstunden **mW-h**dargestellt.  
   
- ![Energiekapazität, Energieverbrauch, verbrauchte Energie insgesamt](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Energiekapazität, Energieverbrauch, verbrauchte Energie insgesamt](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Ein vollständig geladener Akku in einem Tablet verfügt z. B. über eine bestimmte Menge an gespeicherte Energie. Während die Energie verwendet wird, um Aufgaben wie die Kommunikation über ein Netzwerk, die Berechnung von Werten oder die Anzeige von Grafiken auszuführen, verbraucht sich der Strom des Akkus in unterschiedlichen Raten. Während jedes beliebigen Zeitraum wird auch die Summe des verbrauchten Stroms von der Energie gemessen.  
+  Ein vollständig geladener Akku in einem Tablet verfügt z. B. über eine bestimmte Menge an gespeicherte Energie. Während die Energie verwendet wird, um Aufgaben wie die Kommunikation über ein Netzwerk, die Berechnung von Werten oder die Anzeige von Grafiken auszuführen, verbraucht sich der Strom des Akkus in unterschiedlichen Raten. Während jedes beliebigen Zeitraum wird auch die Summe des verbrauchten Stroms von der Energie gemessen.  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifizieren von Szenarien mit Benutzermarkierungen  
  Sie können den Profilerstellungsdaten *Benutzermarkierungen* hinzufügen, die bei der Identifizierung von Bereichen im Zeitachsenlineal hilfreich sind.  
@@ -65,8 +65,8 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
  Wenn die Methode ausgeführt wird, wird eine Benutzermarkierung zu den Profilerstellungsdaten zusammen mit einer Meldung hinzugefügt.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implementiert die [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) Schnittstelle (projiziert als [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) in c# und VB). Aufrufen, um Verluste von Betriebssystemressourcen zu vermeiden, [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in c# und VB) Wenn Sie mit einem protokollierungskanal fertig sind.  
-> -   Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementiert die [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) Schnittstelle (projiziert als [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) in c# und VB). Aufrufen, um Verluste von Betriebssystemressourcen zu vermeiden, [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in c# und VB) Wenn Sie mit einem protokollierungskanal fertig sind.  
+>   -   Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
   
  Beispiele hierzu finden Sie im Windows SDK-Beispiel [LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) .  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  Um gute Schätzungen zu erhalten, sollten Sie für den Energieverbrauch der App auf einem Gerät mit geringer Leistung, das durch Akkus betrieben wird, ein Profil erstellen. Da Visual Studio auf den meisten dieser Geräte nicht ausgeführt wird, müssen Sie den Visual Studio-Computer mithilfe der Visual Studio-Remotetools mit dem Gerät verbinden. Um eine Verbindung mit einem Remotegerät herzustellen, müssen Sie sowohl das Visual Studio-Projekt und als auch das Remotegerät konfigurieren. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 > [!TIP]
->  -   Energieprofilerstellung auf dem Windows Store-Simulator oder auf dem Visual Studio-Computer wird nicht empfohlen. Die Profilerstellung auf dem tatsächlichen Gerät bietet weitaus realistischere Daten.  
-> -   Erstellen Sie das Profil auf dem Zielgerät, während es über seine Akkus betrieben wird.  
-> -   Schließen Sie alle anderen Anwendungen, die möglicherweise die gleichen Ressourcen verwenden (Netzwerk, CPU oder Anzeige).  
+> - Energieprofilerstellung auf dem Windows Store-Simulator oder auf dem Visual Studio-Computer wird nicht empfohlen. Die Profilerstellung auf dem tatsächlichen Gerät bietet weitaus realistischere Daten.  
+>   -   Erstellen Sie das Profil auf dem Zielgerät, während es über seine Akkus betrieben wird.  
+>   -   Schließen Sie alle anderen Anwendungen, die möglicherweise die gleichen Ressourcen verwenden (Netzwerk, CPU oder Anzeige).  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Sammeln von Energieprofildaten für die App  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Sammeln von Energieprofildaten für eine installierte App  
  Das Energieverbrauchstool kann nur für Windows Store 8.1-Apps ausgeführt werden, die von einer Visual Studio-Projektmappe gestartet oder vom Windows Store installiert werden. Wenn eine Projektmappe in Visual Studio geöffnet ist, lautet das Standardziel **Startprojekt**. So verwenden Sie eine installierte App als Ziel  
   
-1.  Wählen Sie **Ziel ändern** und dann **Installierte App**aus.  
+1. Wählen Sie **Ziel ändern** und dann **Installierte App**aus.  
   
-2.  Wählen Sie in der Liste **Installiertes App-Paket auswählen** das Ziel aus.  
+2. Wählen Sie in der Liste **Installiertes App-Paket auswählen** das Ziel aus.  
   
-3.  Wählen Sie auf der Seite "Diagnosehub" **Energieverbrauch** aus.  
+3. Wählen Sie auf der Seite "Diagnosehub" **Energieverbrauch** aus.  
   
-4.  Wählen **Starten** , um die Profilerstellung zu starten.  
+4. Wählen **Starten** , um die Profilerstellung zu starten.  
   
- Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.  
+   Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> Analysieren der Energieprofildaten  
  Die Energieprofildaten werden im Dokumentfenster von Visual Studio angezeigt:  

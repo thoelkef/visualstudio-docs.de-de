@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39; @&#39; | Microsoft Docs
+title: Erwartet &#39;@&#39; | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856846"
 ---
-# <a name="expected-3939"></a>Erwartete &#39; @&#39;
-Sie haben versucht, erstellen Sie eine Variable mit mit bedingten kompilierungsanweisungen verwendet werden soll die `@set` -Anweisung, aber nicht platziert werden, ein at-Zeichen "**@**" vor dem Variablennamen.  
+# <a name="expected-3939"></a>Erwartet &#39;@&#39;
+Sie haben versucht, erstellen Sie eine Variable, die Anweisungen für bedingte Kompilierung mit der `@set` -Anweisung, jedoch nicht platziert werden. ein at-Zeichen "**@**" vor dem Variablennamen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
@@ -39,6 +39,6 @@ Sie haben versucht, erstellen Sie eine Variable mit mit bedingten kompilierungsa
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [@setAnweisung](../../javascript/reference/at-set-statement-javascript.md)   
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [@set Anweisung](../../javascript/reference/at-set-statement-javascript.md)   
+ [Für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

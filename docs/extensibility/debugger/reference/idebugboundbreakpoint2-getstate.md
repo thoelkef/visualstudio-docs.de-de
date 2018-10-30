@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
+title: IDebugBoundBreakpoint2::GetState | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9309152024d193aec95ca0fbad58085ba59948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88a72fadce7022eff8ee5b2fe2b155b32160fbac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909876"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
-Ruft den Zustand dieser gebundenen Haltepunkt ab.  
+Ruft den Zustand dieser gebundene Haltepunkt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,13 +42,13 @@ int GetState(
   
 #### <a name="parameters"></a>Parameter  
  `pState`  
- [out] Gibt einen Wert aus der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) -Enumeration, der den Zustand des Haltepunkts beschreibt.  
+ [out] Gibt einen Wert aus der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) -Enumeration, die den Zustand des Haltepunkts beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
 ```  
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)    

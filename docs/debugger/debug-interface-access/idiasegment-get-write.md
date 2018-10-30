@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_write | Microsoft Docs'
+title: 'Idiasegment:: Get_write | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6023caea9a2227d1773e900214e3abf87b272d2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f4c312c0b2c6b4374ad407fa449ddbedfa774233
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825992"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
 Ruft ein Flag, das angibt, ob das Segment geändert werden kann.  
@@ -37,7 +37,7 @@ HRESULT get_write (
  [out] Gibt `TRUE` , wenn das Segment, andernfalls gibt geschrieben werden kann, `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

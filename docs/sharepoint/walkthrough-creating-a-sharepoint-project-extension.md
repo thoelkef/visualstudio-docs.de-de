@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893428"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine Erweiterung für SharePoint-Projekte erstellt werden. Sie können eine projekterweiterung verwenden, zum Reagieren auf Ereignisse auf Projektebene, z. B. wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn ein Eigenschaftswert ändert. Im Gegensatz zu projektelementerweiterungen darf nicht projekterweiterungen einen bestimmten Typ von SharePoint-Projekt zugeordnet sein. Bei der Erstellung einer projekterweiterung lädt die Erweiterung wird in der jede Art von SharePoint-Projekt geöffnet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,7 +43,7 @@ ms.locfileid: "42635615"
   
 -   Das Debuggen und testen die Project-Eigenschaft.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
 -   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint und [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -53,11 +53,11 @@ ms.locfileid: "42635615"
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
  Um diese exemplarische Vorgehensweise abzuschließen, müssen Sie zwei Projekte erstellen:  
   
--   Ein VSIX-Projekt, um das VSIX-Paket zum Bereitstellen der projekterweiterung zu erstellen.  
+- Ein VSIX-Projekt, um das VSIX-Paket zum Bereitstellen der projekterweiterung zu erstellen.  
   
--   Ein Klassenbibliotheksprojekt, das die projekterweiterung implementiert.  
+- Ein Klassenbibliotheksprojekt, das die projekterweiterung implementiert.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+  Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
 #### <a name="to-create-the-vsix-project"></a>So erstellen Sie das VSIX-Projekt  
   

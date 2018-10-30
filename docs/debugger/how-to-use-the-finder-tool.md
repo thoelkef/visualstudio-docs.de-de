@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden des Suchtools | Microsoft Docs'
+title: 'Vorgehensweise: Verwenden des Suchtools | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,45 +12,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943075"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Gewusst wie: Verwenden des Suchtools
-Können Sie das Suchtool in der **"Fenster Suchen"** Dialogfeld zum Anzeigen von Fenstereigenschaften oder Nachrichten. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, untergeordnete Fenster überlappen deaktiviert.  
+Können Sie das Suchtool im der **Fenster Suchen** Dialogfeld zum Anzeigen von Eigenschaften oder Meldungen. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, deaktivierte untergeordnete Fenster überlappen.  
   
- ![Spy++&#43; &#43; Fenster Dialogfeld "Suchen"](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
-Suchtools im Dialogfeld "Fenster Suchen"  
+ ![Spy++&#43; &#43; finden Sie im Dialogfeld Fenster](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
+Suchtool im Dialogfeld "Fenster Suchen"  
   
- Die vorstehende Abbildung zeigt das Dialogfeld "Fenster Suchen" nach Schritt 3 unten.  
+ Die obige Abbildung zeigt das Dialogfeld "Fenster Suchen" nach Schritt 3 weiter unten.  
   
-### <a name="to-display-window-properties-or-messages"></a>Zum Anzeigen von Fenstereigenschaften oder Nachrichten  
+### <a name="to-display-window-properties-or-messages"></a>Zum Anzeigen von Eigenschaften oder Meldungen  
   
-1.  Ordnen Sie die Fenster, sodass Spy++ und das Zielfenster angezeigt werden.  
+1. Ordnen Sie die Fenster, sodass Spy++ und das Zielfenster angezeigt werden.  
   
-2.  Aus der **Spy++** Menü wählen **"Fenster Suchen"**.  
+2. Von der **Spy** Menü wählen **Fenster Suchen**.  
   
-     Die [Dialogfeld Fenster Suchen](../debugger/find-window-dialog-box.md) wird geöffnet.  
+    Die [Dialogfeld Fenster Suchen](../debugger/find-window-dialog-box.md) wird geöffnet.  
   
-3.  Ziehen Sie die **Suchtools** über dem Zielfenster.  
+3. Ziehen Sie die **Suchtool** über das Zielfenster.  
   
-     Wie Sie das Tool, ziehen Sie die **"Fenster Suchen"** Dialogfeld zeigt Details für das ausgewählte Fenster.  
+    Wie Sie das Tool, ziehen Sie die **Fenster Suchen** Dialogfeld zeigt die Details für das ausgewählte Fenster.  
   
-     - ODER  
+   - ODER  
   
-     Wenn Sie das Handle des Fensters Sie haben (z. B. aus dem Debugger kopiert) untersuchen möchten, geben Sie ihn in die **behandeln** Textfeld.  
+     Wenn Sie das Handle des Fensters haben (z. B. aus dem Debugger kopiert) überprüfen möchten, geben Sie ihn in das **behandeln** Textfeld.  
   
-    > [!TIP]
-    >  Wählen Sie zum Bildschirm übersichtlicher gestalten möchten, die **Spy++ ausblenden** Option. Diese Option verbirgt Spy++-Hauptfenster nur verlassen der **"Fenster Suchen"** (Dialogfeld), die zusätzlich zu anderen Anwendungen sichtbar. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **"Abbrechen"**, oder wenn Sie deaktivieren die **Spy++ ausblenden** Option.  
+   > [!TIP]
+   >  Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Diese Option verbirgt die Spy++-Hauptfenster, sondern nur die **Fenster Suchen** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.  
   
-4.  Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.  
+4. Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.  
   
-5.  Press **OK**.  
+5. Drücken Sie **OK**.  
   
-     Wenn Sie ausgewählt haben **Eigenschaften**, [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md) wird geöffnet. Wenn Sie ausgewählt haben **Nachrichten**, [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster wird geöffnet.  
+    Wenn Sie ausgewählt haben **Eigenschaften**, [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md) wird geöffnet. Wenn Sie ausgewählt haben **Nachrichten**, [Meldungsansicht](../debugger/messages-view.md) Fenster wird geöffnet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Spy++-Ansichten](../debugger/spy-increment-views.md)   

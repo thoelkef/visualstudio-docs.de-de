@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776034"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100938"
 ---
 # <a name="python-item-templates"></a>Python-Elementvorlagen
 
@@ -42,15 +42,10 @@ Die folgende Tabelle erklärt kurz die Auswirkung jeder Elementvorlage in einem 
 | **IronPython-WPF-Fenster** | Ein WPF-Fenster, das aus zwei parallelen Dateien besteht: einer *.xaml*-Datei, die ein `<Window>` mit einem leeren `<Grid>`-Element definiert, und einer verknüpften *.py*-Datei, die die XAML-Datei mithilfe der `wpf`-Bibliothek lädt. Wird normalerweise in einem Projekt verwendet, das mit einer der IronPython-Vorlagen erstellt wurde. Weitere Informationen finden Sie unter [Verwalten von Python-Projekten – Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Webrollen-Unterstützungsdateien** | Ein *bin*-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungsskript und eine *web.config*-Datei für Azure-Clouddienstwebrollen. Die Vorlage enthält auch eine *readme.html*-Datei, die die Details erläutert. |
 | **Unterstützungsdateien für Workerrollen** | Ein *bin*-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungs- und Startskript sowie eine *web.config*-Datei für Workerrollen in Azure-Clouddiensten. Die Vorlage enthält auch eine *readme.html*-Datei, die die Details erläutert. |
-| **„web.config“ für Azure (FastCGI)** | *web.config*-Datei, die Einträge für Apps enthält, die mit einem [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt eingehende Verbindungen verarbeiten. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **„web.config“ für Azure (HttpPlatformHandler)** | *web.config*-Datei, die Einträge für die Apps enthält, die an einem Socket für eingehende Verbindungen lauschen. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **„web.config“ für statische Azure-Dateien** | -*web.config*Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **„web.config“ für das Remotedebuggen in Azure** | *web.config.debug*-Datei, die das Remotedebuggen über WebSockets aktiviert, sowie die Datei *Microsoft.PythonTools.WebRole.dll* und ein *ptvsd*-Ordner mit den Modulen zum Bereitstellen für den Server, um das Remotedebuggen zu aktivieren. Sie erstellen dieses Element in der Regel am gleichen Ort wie Ihre *web.config*-Datei. Weitere Informationen finden Sie unter [Remotedebuggen von Python-Code in Azure](debugging-remote-python-code-on-azure.md). Lesen Sie außerdem den folgenden Hinweis. |
-
-> [!Note]
-> Wenn Sie einem Projekt die *web.config*-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration **Debug** veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig **Release**. Um dies zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im **Veröffentlichungs-Assistenten**. (Weitere Informationen zum Erstellen und Bereitstellen an Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/).)
->
-> ![Ändern der Veröffentlichungskonfiguration](media/template-web-publish-config.png)
+| **„web.config“ für Azure (FastCGI)** | *web.config*-Datei, die Einträge für Apps enthält, die mit einem [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt eingehende Verbindungen verarbeiten. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
+| **„web.config“ für Azure (HttpPlatformHandler)** | *web.config*-Datei, die Einträge für die Apps enthält, die an einem Socket für eingehende Verbindungen lauschen. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
+| **„web.config“ für statische Azure-Dateien** | -*web.config*Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
+| **„web.config“ für das Remotedebuggen in Azure** | Veraltet (wurde für das Remotedebuggen unter Azure App Service für Windows verwendet, das nicht mehr unterstützt wird). |
 
 ## <a name="see-also"></a>Siehe auch
 

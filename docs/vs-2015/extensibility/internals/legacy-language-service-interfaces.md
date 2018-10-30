@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837242"
 ---
 # <a name="legacy-language-service-interfaces"></a>Schnittstellen von Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Für die einer bestimmten Programmiersprache kann nur eine Instanz von einem Spr
   
  Sie können Language Service Kernschnittstellen auf eine beliebige Anzahl von separate Klassen implementieren. Allerdings ist eine gängige Methode in einer einzelnen Klasse die folgenden Schnittstellen:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (optional)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (optional)  
   
- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle muss auf die Dienste für alle Sprachen implementiert werden. Er bietet Informationen zu den Sprachdienst, z. B. den lokalisierten Namen der Sprache, die Dateinamenerweiterungen, die der Sprachdienst und zum Abrufen einer Farbauswahl zugeordnet.  
+  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle muss auf die Dienste für alle Sprachen implementiert werden. Er bietet Informationen zu den Sprachdienst, z. B. den lokalisierten Namen der Sprache, die Dateinamenerweiterungen, die der Sprachdienst und zum Abrufen einer Farbauswahl zugeordnet.  
   
 ## <a name="additional-language-service-interfaces"></a>Zusätzlichen Sprachdienst-Schnittstellen  
  Andere Schnittstellen können mit den Sprachdienst bereitgestellt werden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fordert eine separate Instanz dieser Schnittstellen für jede Instanz des Textpuffers. Aus diesem Grund sollten Sie jede dieser Schnittstellen auf sein eigenes Objekt implementieren. Die folgende Tabelle zeigt die Schnittstellen, die eine Instanz pro Instanz des Text-Puffer erfordern.  

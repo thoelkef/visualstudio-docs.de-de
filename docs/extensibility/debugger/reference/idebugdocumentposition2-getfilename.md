@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
+title: IDebugDocumentPosition2::GetFileName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81417fbb025fdea70a4b9fb51f0b49fb0257cd8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f77d7f89bd7970a17c78414393cd8856a6f62b4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872322"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Ruft den Dateinamen der Quelldatei, die die Dokumentposition enthält.  
@@ -44,10 +44,10 @@ int GetFileName(
  [out] Gibt den Dateinamen der Quelldatei zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Quelldatei möglicherweise nicht immer ist ein Dateiname (die Quelldatei kann nicht auf dem Laufwerk, z. B. vorhanden).  
+ Eine Quelldatei nicht immer einen Dateinamen möglicherweise (die Quelldatei kann nicht auf dem Datenträger, z. B. vorhanden).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

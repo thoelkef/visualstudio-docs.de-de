@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cae2ba32be73972e6c716e9100120514a6346cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824374"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Datenbindung in einem Projekt auf Dokumentebene. Ein einzelnes Datenfeld in einer SQL Server-Datenbank ist an einen benannten Bereich in Microsoft Office Excel gebunden. In der exemplarischen Vorgehensweise wird gezeigt, wie Steuerelemente hinzufügen, die Ihnen ermöglichen, führen Sie einen Bildlauf durch alle Datensätze in der Tabelle.  
@@ -33,15 +33,15 @@ ms.locfileid: "35258139"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Erstellen eine Datenquelle für ein Projekt für Excel.  
+- Erstellen eine Datenquelle für ein Projekt für Excel.  
   
--   Hinzufügen von Steuerelementen zu einem Arbeitsblatt ein.  
+- Hinzufügen von Steuerelementen zu einem Arbeitsblatt ein.  
   
--   Durchführen eines Bildlaufs durch Datenbankdatensätze.  
+- Durchführen eines Bildlaufs durch Datenbankdatensätze.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -57,34 +57,34 @@ ms.locfileid: "35258139"
   
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine einfache Datenbindung**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine einfache Datenbindung**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine einfache Datenbindung** Projekt **Projektmappen-Explorer**.  
+   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine einfache Datenbindung** Projekt **Projektmappen-Explorer**.  
   
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle  
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.  
   
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
+1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.  
   
-2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-3.  Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
+3. Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
   
-4.  Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
+4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
   
-5.  Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **Weiter**.  
+5. Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **Weiter**.  
   
-6.  Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-7.  Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
+7. Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.  
   
-8.  Aktivieren Sie das Kontrollkästchen neben den **Kunden** Tabelle.  
+8. Aktivieren Sie das Kontrollkästchen neben den **Kunden** Tabelle.  
   
 9. Klicken Sie auf **Fertig stellen**.  
   
- Der Assistent fügt die **Kunden** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
+   Der Assistent fügt die **Kunden** Tabelle, auf die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
  In dieser exemplarischen Vorgehensweise benötigen Sie zwei benannte Bereiche und vier Schaltflächen auf das erste Arbeitsblatt ein. Fügen Sie zunächst die beiden benannten Bereiche aus der **Datenquellen** Fenster, damit diese automatisch an die Datenquelle gebunden werden. Fügen Sie die Schaltflächen aus der **Toolbox**.  
@@ -109,37 +109,37 @@ ms.locfileid: "35258139"
   
 ### <a name="to-add-four-buttons"></a>Vier Schaltflächen hinzufügen  
   
-1.  Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.  
+1. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.  
   
-     Diese Schaltfläche den Namen `Button1`.  
+    Diese Schaltfläche den Namen `Button1`.  
   
-2.  Fügen Sie drei weitere Schaltflächen für die folgenden Zellen in der angegebenen Reihenfolge, sodass die Namen sind, siehe:  
+2. Fügen Sie drei weitere Schaltflächen für die folgenden Zellen in der angegebenen Reihenfolge, sodass die Namen sind, siehe:  
   
-    |Zelle|(Name)|  
-    |----------|--------------|  
-    |B3|Button2|  
-    |C3|Button3|  
-    |D3|Button4|  
+   |Zelle|(Name)|  
+   |----------|--------------|  
+   |B3|Button2|  
+   |C3|Button3|  
+   |D3|Button4|  
   
- Der nächste Schritt ist, fügen Text auf Schaltflächen, und fügen in C#-Ereignishandler.  
+   Der nächste Schritt ist, fügen Text auf Schaltflächen, und fügen in C#-Ereignishandler.  
   
 ## <a name="initialize-the-controls"></a>Initialisieren Sie die Steuerelemente  
  Legen Sie den Text der Schaltfläche, und fügen Sie Ereignishandler während der <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> Ereignis.  
   
 ### <a name="to-initialize-the-controls"></a>Um die Steuerelemente zu initialisieren.  
   
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.  
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.  
   
-2.  Fügen Sie den folgenden Code der `Sheet1_Startup` Methode, um den Text für jede Schaltfläche festzulegen.  
+2. Fügen Sie den folgenden Code der `Sheet1_Startup` Methode, um den Text für jede Schaltfläche festzulegen.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
+    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
+    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  Nur für c#, fügen Ereignishandler für die Schaltfläche mit den click-Ereignisse, die `Sheet1_Startup` Methode.  
+3. Nur für c#, fügen Ereignishandler für die Schaltfläche mit den click-Ereignisse, die `Sheet1_Startup` Methode.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
+    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- Fügen Sie jetzt Code für die Behandlung der <xref:System.Windows.Forms.Control.Click> Ereignisse der Schaltflächen, damit der Benutzer durch die Datensätze navigieren kann.  
+   Fügen Sie jetzt Code für die Behandlung der <xref:System.Windows.Forms.Control.Click> Ereignisse der Schaltflächen, damit der Benutzer durch die Datensätze navigieren kann.  
   
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>Hinzufügen von Code zum Aktivieren des Bildlaufs durch die Datensätze  
  Fügen Sie Code in die <xref:System.Windows.Forms.Control.Click> -Ereignishandler der einzelnen Schaltflächen zum Navigieren durch die Datensätze.  

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907039"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 
@@ -60,8 +60,8 @@ Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszei
 
 Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebene Aufgabe aus.
 
-|Befehlszeilenschalter|description|
-|-------------------------|-----------------|
+|Befehlszeilenschalter|Beschreibung |
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Startet die IDE und führt den angegebenen Befehl aus.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Lädt eine ausführbare C++-Datei unter der Kontrolle des Debuggers. Dieser Schalter ist für ausführbare Visual Basic- oder C#-Dateien nicht verfügbar. Weitere Informationen finden Sie unter [Prozess im Debugger automatisch starten](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID oder /l](../../ide/reference/lcid-devenv-exe.md)|Legt die Standardsprache für die IDE fest. Wenn die angegebene Sprache in der Installation von Visual Studio nicht enthalten ist, wird diese Einstellung ignoriert.|
@@ -76,8 +76,8 @@ Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebe
 
 Durch die folgenden Befehlszeilenschalter wird die IDE nicht angezeigt.
 
-|Befehlszeilenschalter|description|
-|-------------------------|-----------------|
+|Befehlszeilenschalter|Beschreibung |
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Zeigt Hilfe für devenv-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Löscht vom Buildbefehl erstellte Dateien, ohne die Quelldateien zu beeinflussen.<br /><br /> **Devenv myproj.csproj /clean**|

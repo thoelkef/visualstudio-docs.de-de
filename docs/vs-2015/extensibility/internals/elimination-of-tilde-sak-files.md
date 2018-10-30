@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824307"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~SAK-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Im Datenquellen-Steuerelement-Plug-in-API 1.2 die ~ SAK-Dateien wurden durch fun
 ## <a name="sak-files"></a>~ SAK-Dateien  
  Visual Studio .NET 2003 erstellte temporäre Dateien, die mit dem Präfix ~ SAK. Diese Dateien werden verwendet, um festzustellen, ob ein Quellcodeverwaltungs-Plug-in unterstützt:  
   
--   Die MSSCCPRJ. SCC-Datei.  
+- Die MSSCCPRJ. SCC-Datei.  
   
--   Mehrfaches Auschecken (freigegeben).  
+- Mehrfaches Auschecken (freigegeben).  
   
- Die IDE kann für Plug-ins, die erweiterten Funktionen in die Datenquellen-Steuerelement-Plug-in-API 1.2 zu unterstützen, diese Funktionen erkennen, ohne Erstellen der temporären Dateien durch die Verwendung von neuen Funktionen, Flags und Funktionen, die in den folgenden Abschnitten beschrieben.  
+  Die IDE kann für Plug-ins, die erweiterten Funktionen in die Datenquellen-Steuerelement-Plug-in-API 1.2 zu unterstützen, diese Funktionen erkennen, ohne Erstellen der temporären Dateien durch die Verwendung von neuen Funktionen, Flags und Funktionen, die in den folgenden Abschnitten beschrieben.  
   
 ## <a name="new-capability-flags"></a>Neue Funktionsflags  
  `SCC_CAP_SCCFILE`  

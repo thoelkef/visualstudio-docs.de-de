@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934677"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie das SharePoint-Clientobjektmodell von eine Erweiterung für die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -41,7 +41,7 @@ ms.locfileid: "42635267"
 > [!NOTE]  
 >  Die Erweiterung, die Sie in dieser exemplarischen Vorgehensweise erstellen, ähnelt der Erweiterung, die Sie, in erstellen [Exemplarische Vorgehensweise: Server-Explorer erweitern, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Diese exemplarische Vorgehensweise verwendet das SharePoint-Serverobjektmodell, aber in dieser exemplarischen Vorgehensweise führt dieselben Aufgaben mithilfe des Clientobjektmodells.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
 -   Unterstützte Editionen von Windows, SharePoint und Visual Studio.
@@ -57,11 +57,11 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
  Um diese exemplarische Vorgehensweise abzuschließen, müssen Sie zwei Projekte erstellen:  
   
--   Ein VSIX-Projekt zum Erstellen von VSIX-Paket zum Bereitstellen der **Server-Explorer** Erweiterung.  
+- Ein VSIX-Projekt zum Erstellen von VSIX-Paket zum Bereitstellen der **Server-Explorer** Erweiterung.  
   
--   Ein Klassenbibliotheksprojekt, das implementiert die **Server-Explorer** Erweiterung.  
+- Ein Klassenbibliotheksprojekt, das implementiert die **Server-Explorer** Erweiterung.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+  Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
 #### <a name="to-create-the-vsix-project"></a>So erstellen Sie das VSIX-Projekt  
   

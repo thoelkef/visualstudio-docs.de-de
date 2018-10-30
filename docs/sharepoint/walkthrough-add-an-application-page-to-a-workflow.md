@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866895"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
--   Hinzufügen einer ASPX-Anwendungsseite zu einem SharePoint-Workflowprojekt.
+- Hinzufügen einer ASPX-Anwendungsseite zu einem SharePoint-Workflowprojekt.
 
--   Abrufen von Daten aus dem Workflowprojekt, und bearbeiten es.
+- Abrufen von Daten aus dem Workflowprojekt, und bearbeiten es.
 
--   Anzeigen von Daten in eine Tabelle auf der Seite "Anwendung" aus.
+- Anzeigen von Daten in eine Tabelle auf der Seite "Anwendung" aus.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 -   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
@@ -134,7 +134,7 @@ ms.locfileid: "43774587"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Fügen Sie der `Page_Load`-Methode den folgenden Code hinzu:
+3.  Fügen Sie der `Page_Load`-Methode folgenden Code hinzu:
 
     ```vb
     Try
@@ -305,23 +305,23 @@ ms.locfileid: "43774587"
 
 #### <a name="to-test-the-application-page"></a>So testen Sie die Anwendungsseite
 
-1.  Wählen Sie die **F5** Schlüssel ausführen und Bereitstellen des Projekts in SharePoint.
+1. Wählen Sie die **F5** Schlüssel ausführen und Bereitstellen des Projekts in SharePoint.
 
-2.  Wählen Sie die **Startseite** Schaltfläche, und wählen Sie dann die **freigegebene Dokumente** Link auf der Schnellstartleiste auf die Liste Freigegebene Dokumente auf SharePoint-Website angezeigt.
+2. Wählen Sie die **Startseite** Schaltfläche, und wählen Sie dann die **freigegebene Dokumente** Link auf der Schnellstartleiste auf die Liste Freigegebene Dokumente auf SharePoint-Website angezeigt.
 
-3.  Hochladen von zur Darstellung von spesenabrechnungen für dieses Beispiel einige neue Dokumente in die Liste der Dokumente durch Auswählen der **Dokumente** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die  **Dokument hochladen** Schaltfläche im Menüband des Tools.
+3. Hochladen von zur Darstellung von spesenabrechnungen für dieses Beispiel einige neue Dokumente in die Liste der Dokumente durch Auswählen der **Dokumente** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die  **Dokument hochladen** Schaltfläche im Menüband des Tools.
 
-4.  Nachdem Sie einige Dokumente hochladen, instanziieren Sie den Workflow durch Auswahl der **Bibliothek** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die **Bibliothekseinstellungen**Schaltfläche im Menüband des Tools.
+4. Nachdem Sie einige Dokumente hochladen, instanziieren Sie den Workflow durch Auswahl der **Bibliothek** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die **Bibliothekseinstellungen**Schaltfläche im Menüband des Tools.
 
-5.  In der **Dokumentbibliothekseinstellungen** Seite die **Workfloweinstellungen** -link in der **Berechtigungen und Verwaltung** Abschnitt.
+5. In der **Dokumentbibliothekseinstellungen** Seite die **Workfloweinstellungen** -link in der **Berechtigungen und Verwaltung** Abschnitt.
 
-6.  In der **Workfloweinstellungen** Seite die **fügen Sie einen Workflow** Link.
+6. In der **Workfloweinstellungen** Seite die **fügen Sie einen Workflow** Link.
 
-7.  In der **fügen Sie einen Workflow** Seite die **ExpenseReport - Workflow1** Workflow, geben Sie einen Namen für den Workflow, z. B. **ExpenseTest**, und wählen Sie dann die **Weiter** Schaltfläche.
+7. In der **fügen Sie einen Workflow** Seite die **ExpenseReport - Workflow1** Workflow, geben Sie einen Namen für den Workflow, z. B. **ExpenseTest**, und wählen Sie dann die **Weiter** Schaltfläche.
 
-     Die Workflowzuordnungsformular wird angezeigt. Verwenden sie zum Melden der Ausgaben an.
+    Die Workflowzuordnungsformular wird angezeigt. Verwenden sie zum Melden der Ausgaben an.
 
-8.  Geben Sie im Formular Zuordnung **1000** in die **automatisch Genehmigungsgrenzwert** ein, und wählen Sie dann die **Workflow zuordnen** Schaltfläche.
+8. Geben Sie im Formular Zuordnung **1000** in die **automatisch Genehmigungsgrenzwert** ein, und wählen Sie dann die **Workflow zuordnen** Schaltfläche.
 
 9. Wählen Sie die **Home** Schaltfläche, um auf die SharePoint-Startseite zurückzukehren.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774587"
 
 14. Wiederholen Sie die Schritte 11 bis 13 mit anderen Dokumenten in der Liste Freigegebene Dokumente. (Die genaue Anzahl von Dokumenten ist nicht wichtig.)
 
-15. Die Spesenabrechnungsseite für die Zusammenfassung der Anwendung anzeigen, indem Sie die folgende URL in einem Webbrowser öffnen: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Die Spesenabrechnungsseite für die Zusammenfassung der Anwendung anzeigen, indem Sie die folgende URL in einem Webbrowser öffnen: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Die Spesenabrechnungsseite Zusammenfassung zeigt eine Liste aller für die spesenabrechnungen, die die zugewiesene Menge überschritten, die Menge, die, der Sie von überschritten, und den Gesamtbetrag für alle Berichte.
 

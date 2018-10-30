@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842845"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.
@@ -46,7 +46,7 @@ In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
-|-----------|-----------------|
+|-|-|
 |[Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)|Freigeben von Modellen in einem großen oder mittleren Projekt.|
 |[Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md)|Sie können Teile von Diagrammen in Anwendungen wie PowerPoint oder Word kopieren oder ein Diagramm in eine XPS-Datei drucken.|
 |[Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)|Übersicht über Modelle und Diagramme.|
