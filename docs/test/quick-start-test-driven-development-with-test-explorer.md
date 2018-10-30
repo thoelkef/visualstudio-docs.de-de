@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837086"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -33,33 +33,33 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
 
-1.  Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden.
+1. Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden.
 
-     Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:
+    Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:
 
-    1.  Erstellen Sie ein Testprojekt.
+   1.  Erstellen Sie ein Testprojekt.
 
-         Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** > **Visual C#** oder **Visual C++**, und klicken Sie dann auf **Test**.
+        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** oder **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.
 
-         Wählen Sie **Komponententestprojekt**aus.
+        Wählen Sie **Komponententestprojekt**aus.
 
-    2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
+   2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
 
-2.  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+2. Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
-3.  Klicken Sie in der Menüleiste auf **Test** > **Komponententests ausführen** > **Alle Tests**.
+3. Klicken Sie in der Menüleiste auf **Test** > **Komponententests ausführen** > **Alle Tests**.
 
-     Die Projektmappe wird erstellt, und die Tests werden ausgeführt.
+    Die Projektmappe wird erstellt, und die Tests werden ausgeführt.
 
-     Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.
+    Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.
 
- **So zeigen Sie eine vollständige Liste der Tests an:** Wählen Sie **Alle anzeigen** in einer beliebigen Kategorie aus.
+   **So zeigen Sie eine vollständige Liste der Tests an:** Wählen Sie **Alle anzeigen** in einer beliebigen Kategorie aus.
 
- **So zeigen Sie die Details eines Testergebnisses an:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.
+   **So zeigen Sie die Details eines Testergebnisses an:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.
 
- **So navigieren Sie zum Testcode:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.
+   **So navigieren Sie zum Testcode:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.
 
- **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen**aus.
+   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen**aus.
 
 > [!IMPORTANT]
 > Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.
@@ -74,61 +74,61 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 ### <a name="create-the-test-and-method"></a>Erstellen des Tests und der Methode
 
-1.  Erstellen Sie ein Visual C#-Klassenbibliotheksprojekt. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat sie den Namen `MyMath`.
+1. Erstellen Sie ein Visual C#-Klassenbibliotheksprojekt. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat sie den Namen `MyMath`.
 
-2.  Erstellen Sie ein Testprojekt.
+2. Erstellen Sie ein Testprojekt.
 
-    -   Klicken Sie im Dialogfeld **Neues Projekt** erst auf **Visual C#** > **Test** und anschließend auf **Komponententestprojekt**.
+   -   Klicken Sie im Dialogfeld **Neues Projekt** erst auf **Visual C#** > **Test** und anschließend auf **Komponententestprojekt**.
 
-         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
+        ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
 
-3.  Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
+3. Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  Generieren Sie die Methode von dem Test.
+4. Generieren Sie die Methode von dem Test.
 
-    1.  Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
+   1.  Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
 
-    2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
+   2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
 
-    3.  Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
+   3.  Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
 
-5.  Führen Sie den Komponententest aus.
+5. Führen Sie den Komponententest aus.
 
-    1.  Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
+   1.  Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
 
-         Die Projektmappe wird erstellt und ausgeführt.
+        Die Projektmappe wird erstellt und ausgeführt.
 
-         Test-Explorer wird geöffnet und zeigt die Ergebnisse an.
+        Test-Explorer wird geöffnet und zeigt die Ergebnisse an.
 
-         Der Test wird unter **Fehlgeschlagene Tests**angezeigt:
+        Der Test wird unter **Fehlgeschlagene Tests**angezeigt:
 
-6.  Wählen Sie den Namen des Tests aus.
+6. Wählen Sie den Namen des Tests aus.
 
-     Die Details des Tests werden im unteren Teil des Test-Explorers angezeigt.
+    Die Details des Tests werden im unteren Teil des Test-Explorers angezeigt.
 
-7.  Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.
+7. Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.
 
- ![Komponententest-Explorer zeigt fehlerhaften Test an](../test/media/unittestexplorerwalkthrough2.png)
+   ![Komponententest-Explorer zeigt fehlerhaften Test an](../test/media/unittestexplorerwalkthrough2.png)
 
- Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.
+   Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.
 

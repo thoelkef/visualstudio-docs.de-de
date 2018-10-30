@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029313"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443414"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Schnellstart: Erstellen der ersten C#-Konsolenanwendung mit Visual Studio
 
@@ -41,7 +41,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
      Falls Sie die Projektvorlage **Konsolenanwendung (.NET Core)** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**.
 
-   ![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Auswählen des Links „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
@@ -51,7 +51,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
 Nachdem Sie Ihre C#-Projektvorlage ausgewählt und Ihr Projekt benannt haben, erstellt Visual Studio eine einfache „Hallo Welt“-Anwendung. 
 
-Dazu wird die <xref:System.Console.WriteLine%2A>-Methode aufgerufen, um die Zeichenfolge „Hello World!“ im Konsolenfenster anzuzeigen.
+(Sie ruft zu diesem Zweck die <xref:System.Console.WriteLine%2A>-Methode auf, um die literale Zeichenfolge „Hello World!“ im Konsolenfenster anzuzeigen.)
 
    ![Sehen Sie sich den Standardcode für „Hallo Welt“ in der Vorlage an](../ide/media/csharp-console-helloworld-template.png)
 
@@ -75,9 +75,9 @@ Fügen Sie Code hinzu, um die Anwendung anzuhalten, damit das Konsolenfenster ni
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-1. Klicken Sie auf der Symbolleiste auf die Schaltfläche **HelloWorld**, um die Anwendung im Debugmodus auszuführen. Alternativ können Sie **F5** drücken.
+1. Wählen Sie auf der Symbolleiste die Schaltfläche **HelloWorld** aus, um die Anwendung im Debugmodus auszuführen. Alternativ können Sie **F5** drücken.
 
-   ![Klicken Sie die Schaltfläche „HalloWelt“, um das Programm von der Symbolleiste aus auszuführen](../ide/media/csharp-console-hello-world-button.png)
+   ![Wählen Sie die Schaltfläche „Hello World“ aus, um die App von der Symbolleiste aus auszuführen](../ide/media/csharp-console-hello-world-button.png)
 
 1. Zeigen Sie Ihre App im Konsolenfenster an.
 
@@ -98,4 +98,4 @@ Fügen Sie Code hinzu, um die Anwendung anzuhalten, damit das Konsolenfenster ni
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie mehr über C# und die Visual Studio-IDE erfahren konnten. Wenn Sie noch mehr lernen möchten, fahren Sie mit den folgenden Tutorials fort.
 
 > [!div class="nextstepaction"]
-> [C#-Tutorials](/dotnet/csharp/tutorials/)
+> [Erste Schritte mit einer C#-Konsolen-App in Visual Studio](tutorial-csharp-console.md)

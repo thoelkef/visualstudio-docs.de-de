@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079121"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879056"
 ---
 # <a name="how-to-clean-a-build"></a>Vorgehensweise: Bereinigen eines Builds
 Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie in der [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md).  
@@ -53,13 +53,13 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.  
   
- `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **/target**, um ein anderes Ziel anzugeben. Zum Beispiel:  
+ `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **-target**, um ein anderes Ziel anzugeben. Zum Beispiel:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- Der Schalter **/target** kann auf **/t** verkürzt werden und mehrere Ziele angeben. Geben Sie beispielsweise Folgendes ein, um das Ziel `Clean` und dann das Ziel `Compile` zu verwenden:  
+ Der Schalter **-target** kann auf **-t** verkürzt werden und mehrere Ziele angeben. Geben Sie beispielsweise Folgendes ein, um das Ziel `Clean` und dann das Ziel `Compile` zu verwenden:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  

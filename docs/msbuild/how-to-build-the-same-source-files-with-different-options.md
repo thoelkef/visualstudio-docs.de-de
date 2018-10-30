@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897172"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.  
@@ -50,41 +50,41 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>Festlegen von Eigenschaften in der Befehlszeile  
- Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt, müssen Sie die Möglichkeit haben, diese Konfigurationen zu ändern, wenn Sie Ihr Projekt erstellen. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet diese Möglichkeit, indem es erlaubt Eigenschaften mithilfe des Schalters **/property** oder **/p** in der Befehlszeile anzugeben  
+ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt, müssen Sie die Möglichkeit haben, diese Konfigurationen zu ändern, wenn Sie Ihr Projekt erstellen. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet diese Möglichkeit, indem es ermöglicht wird, Eigenschaften mithilfe des Schalters **-property** oder **-p** in der Befehlszeile anzugeben.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
--   Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
+-   Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     oder  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an  
   
--   Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
+- Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Zum Beispiel:  
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    oder
+  oder
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Umgebungsvariablen werden ebenfalls als Eigenschaften behandelt und automatisch von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] integriert. Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Der Wert der Eigenschaft, die in der Befehlszeile angegeben ist, hat Vorrang vor jedem Wert, dem in der Projektdatei der gleiche Wert zugewiesen wurde. Dieser Wert hat Vorrang vor dem Wert in einer Umgebungsvariable.  
+  Der Wert der Eigenschaft, die in der Befehlszeile angegeben ist, hat Vorrang vor jedem Wert, dem in der Projektdatei der gleiche Wert zugewiesen wurde. Dieser Wert hat Vorrang vor dem Wert in einer Umgebungsvariable.  
   
- Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.  
+  Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel, das Projekt „Hello World“, enthält zwei neue Eigenschaftengruppen, die verwendet werden können, um ein Debugbuild und ein Releasebuild zu erstellen.  
@@ -92,13 +92,13 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
  So erstellen Sie die Debugversion des Projekts:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  So erstellen Sie die Verkaufsversion des Projekts:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  Geben Sie zum Erstellen des Projekts den folgenden Befehl ein:  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

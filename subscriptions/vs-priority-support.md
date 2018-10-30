@@ -9,12 +9,12 @@ description: Weitere Informationen zum Priority Support-Vorteil, der in Visual S
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866739"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
 
@@ -37,7 +37,7 @@ Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Cloud Services (Web- und Workerrollen)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL-Datenbank](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine
 
 
 ## <a name="eligibility"></a>Berechtigung
+
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included       |  Ja          |
@@ -238,11 +239,11 @@ Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine
 | Visual Studio Dev Essentials | NA  | Included                                                            |Ja |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Umfasst nicht: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services (Developer), BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
+<sup>1</sup> *Umfasst: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Umfasst nicht: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services (Developer), BizSpark, Microsoft Valued Professional (MVP), Region Director (RD).*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

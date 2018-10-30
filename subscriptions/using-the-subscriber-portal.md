@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279361"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859019"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Verwenden des Abonnentenportals – „my.<span></span>visualstudio<span></span>.com“
 
@@ -22,13 +22,13 @@ Das Visual Studio-Abonnementportal [https://my.visualstudio.com](https://my.visu
 
 Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement zugeordnet ist.  Dies kann Ihr Microsoft Konto (Managed Service Account, MSA, verwaltetes Dienstkonto) oder eine E-Mail-Adresse sein, die Sie von einer Organisation wie z.B. Ihrem Arbeitgeber oder Ihrer Schule erhalten haben.  Hier erfahren Sie mehr über das [Anmelden](signing-in.md).
 
-Das Portal ist in sechs Seiten unterteilt.  Jede Seite bietet Ihnen Zugriff auf andere Produkte oder Dienste, die in Ihrem Abonnement enthalten sind.  Die sechs Seiten heißen „Vorteile“, „Downloads“, „Product Keys“, „Abonnements“, „Support“ und „Marketplace“.
+Das Portal ist in sechs Seiten unterteilt.  Jede Seite bietet Ihnen Zugriff auf andere Produkte oder Dienste, die in Ihrem Abonnement enthalten sind.  Die sechs Seiten heißen „Vorteile“, „Downloads“, „Product Keys“, „Abonnements“, „Support“ und „Marketplace“. 
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Die in Ihrem Abonnement enthaltenen Tools und Dienste werden auf der Seite „Vorteile“ als „Kacheln“ angezeigt.  Nicht alle Vorteile sind in allen Abonnements enthalten. Die Kacheln sind in drei Kategorien gruppiert: „Tools“, „Berufliche Entwicklung“ und „Support“.  Wenn Sie Visual Studio Dev Essentials verwenden, sehen Sie auch eine Kategorie namens „Empfohlen“, die aus den anderen drei Kategorien ausgewählte Vorteile enthalten kann.
 
 ### <a name="tools"></a>Tools
-In der Kategorie „Tools“ finden Sie die wesentlichen Entwicklungstools wie die Visual Studio-IDE, Azure DevOps Services sowie von Microsoft-Partnern bereitgestellte Tools.  Sie sehen auch Dienste wie Azure und Visual Studio App Center.
+In der Kategorie „Tools“ finden Sie die wesentlichen Entwicklungstools wie die Visual Studio-IDE, Azure DevOps sowie von Microsoft-Partnern bereitgestellte Tools.  Sie sehen auch Dienste wie Azure und Visual Studio App Center.
 
 ### <a name="professional-development"></a>Berufliche Entwicklung
 Diese Kategorie enthält Vorteile wie z.B. Onlinetraining von Microsoft und unseren Partnern sowie ein Abonnement des MSDN-Magazins, die Ihnen helfen, Ihre Fertigkeiten in der Entwicklung zu erweitern und auf dem Laufenden zu bleiben.
@@ -45,7 +45,7 @@ Zur Vereinfachung für Abonnenten, die mehrere, einem einzelnen Konto zugeordnet
 Besuchen Sie die Seite „Product Keys“ zum Abrufen von Schlüsseln zum Installieren und Aktivieren von Produkten, und um zu sehen, welche Schlüssel Sie bereits in Anspruch genommen haben.  Sie können auch eine Liste aller Ihrer Schlüssel zur sicheren Aufbewahrung exportieren.
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-Die Seite „Abonnements“ bietet Ihnen die Funktionen, die Ihnen anzeigen, welche Abonnements Sie besitzen, mit denen Sie zwischen den Abonnements wechseln, sie verlängern und neue Abonnements aktivieren können. Sie können auch Abonnements, auf die Sie mit Ihrem Microsoft-Konto zugreifen, einem alternativen Konto zuordnen, das bereits vorhandenen Visual Studio-IDE-, Azure DevOps Services- oder Azure-Ressourcen zugeordnet ist.
+Die Seite „Abonnements“ bietet Ihnen die Funktionen, die Ihnen anzeigen, welche Abonnements Sie besitzen, mit denen Sie zwischen den Abonnements wechseln, sie verlängern und neue Abonnements aktivieren können. Sie können auch Abonnements, auf die Sie mit Ihrem Microsoft-Konto zugreifen, einem alternativen Konto zuordnen, das bereits vorhandenen Visual Studio-IDE-, Azure DevOps- oder Azure-Ressourcen zugeordnet ist.
 
 ## <a name="support"></a>Unterstützung
 
@@ -53,4 +53,4 @@ Zusätzlich zu den einzelnen Vorteilen, die in der Kategorie „Support“ auf d
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Der Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps Services, Team Foundation Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.
+Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps, Team Foundation Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.

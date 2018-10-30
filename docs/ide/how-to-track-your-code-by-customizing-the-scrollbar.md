@@ -1,60 +1,75 @@
 ---
-title: 'Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste'
-ms.date: 11/04/2016
+title: Scrollleisten-Zuordnungsmodus und -Leistenmodus
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fca9b8dd8f4c3cd17ee6ca7f23b3622fc1a9e4ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897055"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste
+# <a name="how-to-customize-the-scroll-bar"></a>Vorgehensweise: Anpassen der Scrollleiste
 
-Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. Sie können die Bildlaufleiste des Codefensters anpassen, um den Code aus der Vogelperspektive zu betrachten.
+Wenn Sie mit umfangreichen Codedateien arbeiten, kann es schwierig sein, den Überblick zu behalten, wo sich die einzelnen Elemente in der Datei befinden. Sie können die Scrollleiste des Code-Editors anpassen, um sich ein Gesamtbild davon zu machen, was in Ihrem Code geschieht.
 
-## <a name="to-show-annotations-on-the-scroll-bar"></a>So zeigen Sie Anmerkungen auf der Bildlaufleiste an
+## <a name="annotations"></a>Anmerkungen
 
-1. Sie können die Bildlaufleiste so einrichten, dass Codeänderungen, Haltepunkte, Fehler und Lesezeichen angezeigt werden.
+Sie können auswählen, ob die Scrollleiste Anmerkungen wie Codeänderungen, Haltepunkte, Lesezeichen, Fehler und die Position der Einfügemarke anzeigt.
 
-    Öffnen Sie die Optionsseite **Scrollleiste** über **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** oder eine bestimmte Sprache, oder geben Sie **Scrollleiste** im Fenster **Schnellstart** ein.
+   1. Öffnen Sie die Optionsseite **Scrollleisten**, indem Sie **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **Scrollleisten** auswählen.
 
-2. Wählen Sie **Anmerkungen über vertikaler Bildlaufleiste anzeigen** aus, und klicken Sie auf die Anmerkungen, die angezeigt werden sollen.
+   2. Wählen Sie **Anmerkungen über vertikaler Bildlaufleiste anzeigen** aus, und klicken Sie dann auf die Anmerkungen, die angezeigt werden sollen. Die verfügbaren Anmerkungen sind:
 
-    Die Option **Markierungen** umfasst Breakpoints und Lesezeichen.
+      - Änderungen
+      - Markierungen
+      - Fehler
+      - Position der Einfügemarke
 
-3. Probieren Sie es aus. Öffnen Sie eine große Codedatei, und ersetzen Sie ein Element, das an mehreren Stellen in der Datei vorkommt. Die Bildlaufleiste zeigt die Auswirkungen der Ersetzungen an. Sie können also Änderungen rückgängig machen, wenn ein Element nicht ersetzt werden soll.
+      > [!TIP]
+      > Die Option **Markierungen anzeigen** umfasst Haltepunkte und Lesezeichen.
 
-    So sieht die Bildlaufleiste aus, nachdem eine Zeichenfolge gesucht wurde. Sie Sie sehen, werden alle Instanzen der Zeichenfolge angezeigt.
+Probieren Sie es aus, indem Sie eine umfangreiche Codedatei öffnen und Text ersetzen, der an mehreren Stellen in der Datei vorkommt. Die Bildlaufleiste zeigt die Auswirkungen der Ersetzungen an. Sie können also Änderungen rückgängig machen, wenn ein Element nicht ersetzt werden soll.
 
-    ![Bildlaufleiste nach der Suche nach einer Zeichenfolge](../ide/media/enhancedscrollbarsearch.png)
+So sieht die Bildlaufleiste aus, nachdem eine Zeichenfolge gesucht wurde. Beachten Sie, dass alle Instanzen der Zeichenfolge in der Scrollleiste angezeigt werden.
 
-    So sieht die Bildlaufleiste aus, nachdem alle Instanzen der Zeichenfolge ersetzt wurden. Sie können sofort sehen, dass der Vorgang Probleme verursacht hat.
+![Visual Studio-Scrollleiste nach der Suche nach einer Zeichenfolge](../ide/media/enhancedscrollbarsearch.png)
 
-    ![Bildlaufleiste nach dem Ersetzen einer Zeichenfolge mit Fehlern](../ide/media/enhancedscrollbarreplace.png)
+So sieht die Bildlaufleiste aus, nachdem alle Instanzen der Zeichenfolge ersetzt wurden. Die roten Markierungen in die Scrollleiste zeigen an, wo durch die Textersetzung Fehler aufgetreten sind.
 
-## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>So legen Sie den Anzeigemodus für die Bildlaufleiste fest
+![Visual Studio-Scrollleiste mit Fehlern nach dem Ersetzen einer Zeichenfolge](../ide/media/enhancedscrollbarreplace.png)
 
-1. Die Bildlaufleiste verfügt über zwei Modi: den Leistenmodus (Standardeinstellung) und den Zuordnungsmodus. Im Leistenmodus werden nur Anmerkungsindikatoren auf der Bildlaufleiste angezeigt. Im Zuordnungsmodus werden die Codezeilen auf der Bildlaufleiste dargestellt. Sie können deren Breite auswählen und angeben, ob der zugrunde liegende Code angezeigt werden soll, wenn Sie mit dem Cursor darauf zeigen. Wenn Sie auf eine Stelle der Bildlaufleiste klicken, springt der Cursor zu der entsprechenden Position im Code. Reduzierte Bereiche sind anders schattiert und werden eingeblendet, wenn Sie darauf doppelklicken.
+## <a name="display-modes"></a>Anzeigemodi
 
-    Wählen Sie auf der Seite mit Optionen der **Bildlaufleiste** entweder **Leistenmodus für vertikale Bildlaufleiste verwenden** oder **Zuordnungsmodus für vertikale Bildlaufleiste** verwenden aus. Sie können die Breite in der Dropdownliste **Quellenübersicht** auswählen.
+Die Scrollleiste verfügt über zwei Modi: den Leistenmodus und den Zuordnungsmodus.
 
-    Im Folgenden wird gezeigt, wie das Suchbeispiel aussieht, wenn der Zuordnungsmodus aktiviert und die Breite auf **Mittel** festgelegt ist:
+### <a name="bar-mode"></a>Leistenmodus
 
-    ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png)
+Im *Leistenmodus* werden Anmerkungsindikatoren auf der Scrollleiste angezeigt. Wenn Sie auf die Scrollleiste klicken, wird die Seite nach oben oder unten gescrollt, der Cursor springt aber nicht an die entsprechende Stelle in der Datei.
 
-2. Wählen Sie im Zuordnungsmodus die Option **Vorschau-QuickInfo anzeigen** aus, um eine Vorschau des Codes zu aktivieren, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Hier das Ergebnis:
+### <a name="map-mode"></a>Zuordnungsmodus
 
-    ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png)
+Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, springt der Cursor zu dieser Position in der Datei, anstatt nur eine Seite nach oben oder unten zu scrollen. Codezeilen werden als Miniaturbild auf der Scrollleiste angezeigt. Sie können auswählen, wie breit die Zuordnungsspalte ist, indem Sie einen Wert in **Quellübersicht** auswählen. Um eine größere Vorschau des Codes zu aktivieren, wenn Sie den Mauszeiger auf der Zuordnung positionieren, wählen Sie die Option **Vorschau-QuickInfo anzeigen** aus. Zugeklappte Bereiche werden anders schattiert und durch einen Doppelklick aufgeklappt.
 
-    Wenn Sie das Scrollverhalten im Zuordnungsmodus beibehalten und die Vorschau-QuickInfo anzeigen möchten, nicht aber die Quellcodeübersicht, dann legen Sie die Option für **Quellenübersicht** auf **Off** (aus) fest.
+> [!TIP]
+> Sie können die Miniaturcodeansicht im Zuordnungsmodus deaktivieren, indem Sie **Quellübersicht** auf **Aus** festlegen. Wenn **Vorschau-QuickInfo anzeigen** ausgewählt ist, sehen Sie immer noch eine Vorschau des Codes an dieser Stelle, wenn Sie den Mauszeiger auf der Scrollleiste positionieren, und der Mauszeiger springt immer noch zu dieser Stelle in der Datei, wenn Sie klicken.
+
+Die folgende Abbildung zeigt das Suchbeispiel, wenn der Zuordnungsmodus aktiviert und die Breite auf **Mittel** festgelegt ist:
+
+![Visual Studio-Scrollleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png)
+
+Die folgende Abbildung zeigt die Option **Vorschau-QuickInfo anzeigen**:
+
+![Visual Studio-Scrollleiste mit QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d35a8882654170b62ed3dc37de2361b86cbb1ea1
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813836"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -65,14 +65,15 @@ Führen Sie die folgenden Schritte aus, wenn Sie einen vorhandenen Ordner mit *R
 
 Klicken sie zum Öffnen der Seiten mit den Projekteigenschaften mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer**, und wählen Sie **Eigenschaften** oder das Menüelement *Projekt > (Projektname) > Eigenschaften* aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
 
-| Registerkarte | Eigenschaft | Beschreibung  |
-| --- | --- | --- |
-| Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen > Debuggen starten** oder **Debuggen > Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. |
-| | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. |
-| | Remote Project Path | Pfad zu einem Remotearbeitsbereich |
-| | Transfer files on run | Gibt an, ob die Projektdateien, die dem Filter in **Files to transfer** unterliegen, bei jeder Ausführung in einen Remotearbeitsbereich kopiert werden sollen |
-| | Files to transfer | Dateinamen und Platzhalter, die die genauen Dateien angeben, die in einen Remotearbeitsbereich kopiert werden sollen, wenn **Transfer files on run** ausgewählt ist. |
-| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder **.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. |
+
+| Registerkarte | Eigenschaft | Beschreibung  | 
+| --- | --- | --- | 
+| Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen** > **Debuggen starten** oder **Debuggen** > **Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. | 
+| | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. | 
+| | Remote Project Path | Pfad zu einem Remotearbeitsbereich | 
+| | Transfer files on run | Gibt an, ob die Projektdateien, die dem Filter in **Files to transfer** unterliegen, bei jeder Ausführung in einen Remotearbeitsbereich kopiert werden sollen | 
+| | Files to transfer | Dateinamen und Platzhalter, die die genauen Dateien angeben, die in einen Remotearbeitsbereich kopiert werden sollen, wenn **Transfer files on run** ausgewählt ist. | 
+| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder **.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. | 
 
 ## <a name="r-specific-project-commands"></a>R-spezifische Projektbefehle
 

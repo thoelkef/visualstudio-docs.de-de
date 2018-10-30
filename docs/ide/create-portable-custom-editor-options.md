@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835903"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -22,8 +22,7 @@ In Visual Studio 2017 können Sie Ihrem Projekt oder der Codebasis eine [EditorC
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
-> [!NOTE]
-> Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert. Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert. Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
 
 ## <a name="coding-consistency"></a>Programmierkonsistenz
 
@@ -32,6 +31,9 @@ Durch die Einstellungen in EDITORCONFIG-Dateien können Sie einen einheitlichen 
 Programmierkonventionen, die Sie für Ihre eigenen Projekte verwenden, unterscheiden sich möglicherweise von denen, die für Ihre Teamprojekte verwendet werden. Z.B. kann es sein, dass Sie es vorziehen, dass beim Programmieren bei einem Einzug ein Tabstoppzeichen hinzugefügt wird. Ihrem Team ist es aber möglicherweise lieber, dass bei einem Einzug vier Leerzeichen anstelle eines Tabstoppzeichens hinzugefügt werden. EditorConfig-Dateien lösen dieses Problem, indem sie Ihnen ermöglichen, für jedes Szenario eine Konfiguration zu verwenden.
 
 Da sich die Einstellungen in einer Datei innerhalb der Codebasis befinden, bilden sie eine Transporteinheit mit der Codebasis. Sofern Sie die Codedatei in einem mit EditorConfig kompatiblen Editor öffnen, werden die Text-Editor-Einstellungen implementiert. Weitere Informationen zu EditorConfig-Dateien finden Sie auf der Website von [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> Konventionen, die in einer EditorConfig-Datei festgelegt sind, können zurzeit in einer CI/CD-Pipeline nicht als Buildfehler oder Warnungen erzwungen werden. Alle Stilabweichungen werden nur im Visual Studio-Editor und in der **Fehlerliste** angezeigt.
 
 ## <a name="supported-settings"></a>Unterstützte Einstellungen
 

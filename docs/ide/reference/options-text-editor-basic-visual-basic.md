@@ -1,5 +1,5 @@
 ---
-title: Optionen, Text-Editor, Standard (Visual Basic)
+title: Optionen, Text-Editor, Standard (VB), Erweitert
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,6 +10,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic_Editor.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.SimplifiedEditorPage
 - VS.ToolsOptionsPages.Text_Editor.Basic
+- VS.ToolsOptionsPages.Text_Editor.Basic.Advanced
 - VS.ToolsOptionsPages.Text_Editor.Basic.VB_Specific
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
@@ -19,17 +20,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27048b5d70674cd492227e96682f8401ed7160ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823878"
 ---
-# <a name="options-text-editor-basic-visual-basic"></a>Optionen, Text-Editor, Standard (Visual Basic)
+# <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) enthält die folgenden Eigenschaften.
 
- **Automatisches Einfügen von End-Konstruktionen:** Wenn Sie z.B. die erste Zeile einer Prozedurdeklaration, `Sub Main—`, eingeben und die EINGABETASTE drücken, wird im Text-Editor eine entsprechende `End Sub`-Zeile hinzugefügt. Ebenso wird beim Hinzufügen einer [For](/dotnet/visual-basic/language-reference/statements/for-next-statement)-Schleife im Text-Editor eine entsprechende `Next`-Anweisung hinzugefügt. Wenn diese Option ausgewählt ist, wird im Code-Editor automatisch das end-Konstrukt eingefügt.
+ **Markierung von Verweisen und Schlüsselwörtern aktivieren**
+
+Der Text-Editor kann alle Instanzen eines Symbols oder alle Schlüsselwörter in Klauseln wie `If..Then`, `While...End While` oder `Try...Catch...Finally` hervorheben. Sie können zwischen markierten Verweisen oder Schlüsselwörtern durch Drücken von **STRG** + **UMSCHALT** + **NACH-UNTEN** oder **STRG** + **UMSCHALT** + **NACH-OBEN** navigieren.
+
+**Gliederungsmodus aktivieren**
+
+Wenn Sie eine Datei im Code-Editor öffnen, können Sie das Dokument im Gliederungsmodus anzeigen. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Ist diese Option ausgewählt, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.
+
+**Zeilentrennzeichen zwischen Prozeduren anzeigen**
+
+Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
+
+|Position in der VB-Quelldatei|Beispiel für die Linienposition|
+|---------------------------------|------------------------------|
+|Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
+|Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
+|Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
 
  **Automatische Strukturierung und Einrückung des Programmcodes:** Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:
 
@@ -47,9 +64,9 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
 
 -   Neuformatieren von Datumsangaben
 
-**Gliederungsmodus aktivieren**
+**Automatisches Einfügen von End-Konstruktionen**
 
-Wenn Sie eine Datei im Code-Editor öffnen, können Sie das Dokument im Gliederungsmodus anzeigen. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Ist diese Option ausgewählt, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.
+ Wenn Sie z.B. die erste Zeile einer Prozedurdeklaration, `Sub Main—`, eingeben und die **EINGABETASTE** drücken, wird im Text-Editor eine entsprechende `End Sub`-Zeile hinzugefügt. Ebenso wird beim Hinzufügen einer [For](/dotnet/visual-basic/language-reference/statements/for-next-statement)-Schleife im Text-Editor eine entsprechende `Next`-Anweisung hinzugefügt. Wenn diese Option ausgewählt ist, wird im Code-Editor automatisch das end-Konstrukt eingefügt.
 
 **Schnittstellen- und MustOverride-Member automatisch einfügen**
 
@@ -60,7 +77,7 @@ Wenn Sie ein Commit für eine `Implements`-Anweisung oder eine `Inherits`-Anweis
 Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
 
 |Position in der VB-Quelldatei|Beispiel für die Linienposition|
-|---------------------------------|------------------------------|
+| - | - |
 |Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
 |Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
 |Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
@@ -68,10 +85,6 @@ Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldat
 **Vorschläge für Fehlerkorrektur aktivieren**
 
 Der Text-Editor kann Lösungsvorschläge zu allgemeinen Fehlern ausgeben und bietet die Möglichkeit, die geeignete Korrekturmaßnahme auszuwählen, die dann auf den Code angewendet wird.
-
-**Markierung von Verweisen und Schlüsselwörtern aktivieren**
-
-Der Text-Editor kann alle Instanzen eines Symbols oder alle Schlüsselwörter in Klauseln wie `If..Then`, `While...End While` oder `Try...Catch...Finally` hervorheben. Sie können zwischen markierten Verweisen oder Schlüsselwörtern durch Drücken von STRG+UMSCHALT+NACH-UNTEN oder STRG+UMSCHALT+NACH-OBEN navigieren.
 
 ## <a name="see-also"></a>Siehe auch
 

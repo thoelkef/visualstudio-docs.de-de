@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029026"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101003"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -34,7 +34,7 @@ Erstellen Sie mit **Datei** > **Neu** > **Projekt** ein neues Projekt aus einer 
 
 Die zuvor erwähnte allgemeine Vorlage **Webprojekt** stellt nur ein leeres Visual Studio-Projekt ohne Code bereit, das keine Annahmen trifft, außer dass es ein Python-Projekt ist. Ausführliche Informationen zur Vorlage **Azure Cloud Service** finden Sie unter [Projekte für Azure-Clouddienste für Python](python-azure-cloud-service-project-template.md).
 
-Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django und fallen in die drei Gruppen, die in den folgenden Abschnitten beschrieben werden. Apps, die mit diesen Vorlagen erstellt werden, enthalten ausreichend Code, um sie lokal auszuführen und zu debuggen. Jede Vorlage stellt auch das erforderliche [WSGI-App-Objekt](http://www.python.org/dev/peps/pep-3333/) (python.org) für die [Veröffentlichung in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) zur Verfügung.
+Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django und fallen in die drei Gruppen, die in den folgenden Abschnitten beschrieben werden. Apps, die mit diesen Vorlagen erstellt werden, enthalten ausreichend Code, um sie lokal auszuführen und zu debuggen. Jede Vorlage stellt auch das erforderliche [WSGI-App-Objekt](http://www.python.org/dev/peps/pep-3333/) (python.org) für die Verwendung mit Produktionswebservern zur Verfügung.
 
 ### <a name="blank-group"></a>Leere Gruppe
 

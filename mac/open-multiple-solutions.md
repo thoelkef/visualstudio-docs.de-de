@@ -1,26 +1,26 @@
 ---
-title: 'Vorgehensweise: Öffnen mehrerer Projektmappen'
+title: 'Vorgehensweise: Öffnen mehrerer Projektmappen in Visual Studio für Mac'
 description: Erfahren Sie, wie Sie in Visual Studio für Mac mehrere Projektmappen und mehrere Instanzen der Anwendung öffnen.
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: a8001e9511f0c8864792dba783368d03ee6eef81
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4ffb7ce8a796641d54a5c29c58b9f166a9189d1c
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224252"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228798"
 ---
-# <a name="opening-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Öffnen mehrerer Projektmappen oder Instanzen von Visual Studio für Mac
+# <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Öffnen mehrerer Projektmappen oder Instanzen von Visual Studio für Mac
 
-Standardmäßig handelt es sich bei sämtlichen Anwendungen auf einem Mac, einschließlich Visual Studio für Mac, um Apps mit _einfachen Instanzen_. Wenn die zu verwendende Anwendung bereits geöffnet ist (dargestellt durch einen „Punkt“ unter dem Symbol im Dock), wird folglich anstelle einer neuen Instanz die ausgeführte Instanz geöffnet, wenn Sie erneut auf das Symbol klicken.  Wenn zusätzliche Instanzen der Anwendung erforderlich sind, können Sie das System dazu auffordern, diese für Sie zu öffnen, wie im [nächsten Abschnitt](#open-a-second-instance-of-visual-studio-for-mac) beschrieben wird.
+Standardmäßig handelt es sich bei sämtlichen Anwendungen auf einem Mac, einschließlich Visual Studio für Mac, um Apps mit _einfachen Instanzen_. Wenn die zu verwendende Anwendung bereits geöffnet ist (dargestellt durch einen Punkt unter dem Symbol im Dock), wird folglich anstelle einer neuen Instanz die ausgeführte Instanz geöffnet, wenn Sie das Symbol erneut auswählen.  Wenn zusätzliche Instanzen der Anwendung erforderlich sind, können Sie das System dazu auffordern, diese für Sie zu öffnen, wie im [nächsten Abschnitt](#open-a-second-instance-of-visual-studio-for-mac) beschrieben wird.
 
 Darüber hinaus wird eine Projektmappe standardmäßig in einem neuen Arbeitsbereich geöffnet, wenn Sie diese öffnen, und der aktuelle Arbeitsbereich wird (falls erforderlich) geschlossen. Sie können dieses Standardverhalten außer Kraft setzen, indem Sie den aktuellen Arbeitsbereich geöffnet lassen, wie im Abschnitt [Öffnen einer zweiten Projektmappe](#open-a-second-solution-inside-a-single-instance) beschrieben wird.
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Öffnen einer zweiten Instanz von Visual Studio für Mac
 
-Wenn Sie eine zweite Instanz der IDE öffnen möchten, müssen Sie hierzu die Anwendung **Terminal** öffnen und folgende Zeile eingeben:
+Wenn Sie eine zweite Instanz der integrierten Entwicklungsumgebung (IDE) öffnen möchten, müssen Sie hierzu die **Terminal**anwendung öffnen und die folgende Zeile eingeben:
 
 ```bash
 open -n "/Applications/Visual Studio.app"
@@ -30,20 +30,20 @@ open -n "/Applications/Visual Studio.app"
 
 Führen Sie die folgenden Schritte aus, wenn Sie zusätzlich zu Ihrer ersten Projektmappe eine zweite Projektmappe öffnen möchten:
 
-1. Wählen Sie **Datei > Öffnen** aus, wenn Ihre erste Projektmappe bereits geöffnet ist.
+1. Wählen Sie **Datei** > **Öffnen** aus, wenn Ihre erste Projektmappe bereits geöffnet ist.
 2. Durchsuchen Sie das Dateisystem, um die vorhandenen Lösung zu finden.
-3. Wählen Sie die **SLN**-Datei aus, und klicken Sie auf die Schaltfläche **Optionen**:
+3. Wählen Sie die **SLN**-Datei aus, und wählen Sie dann **Optionen** aus:
     
-    ![Position der Schaltfläche „Optionen“](media/open-multiple-solutions-image3.png)
+    ![Screenshot von Visual Studio für Mac mit hervorgehobener SLN-Datei und Optionen](media/open-multiple-solutions-image3.png)
 4. Deaktivieren Sie das Kontrollkästchen **Aktuellen Arbeitsbereich schließen**:
 
-    ![Screenshot des aktuellen Arbeitsbereichs](media/open-multiple-solutions-image1.png)
+    ![Screenshot des Dialogfelds „Optionen“ mit deaktiviertem Kontrollkästchen „Aktuellen Arbeitsbereich schließen“](media/open-multiple-solutions-image1.png)
 
-1. Klicken Sie auf die Schaltfläche „Öffnen“, um die zweite Projektmappe im Projektmappen-Explorer zu öffnen.
+1. Wählen Sie **Öffnen** aus, um die zweite Projektmappe im Lösungspad zu öffnen.
 
-**Alternativ** können Sie auch die folgenden Schritte ausführen, wenn Sie die Projektmappe kürzlich geöffnet haben:
+Alternativ können Sie auch die folgenden Schritte ausführen, wenn Sie die Projektmappe kürzlich geöffnet haben:
 
-1. Wechseln Sie zum Menüelement „Datei“ > „Zuletzt verwendete Projektmappen“:
+1. Navigieren Sie zu **Datei** > **Zuletzt verwendete Projektmappen**.
 
     ![Screenshot des Menüs „Zuletzt verwendete Projektmappen“](media/open-multiple-solutions-image2.png)
 

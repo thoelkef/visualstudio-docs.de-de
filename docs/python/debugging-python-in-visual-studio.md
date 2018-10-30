@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code
 description: Eine exemplarische Vorgehensweise zu den spezifischen Debugfunktionen in Visual Studio für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627101"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101159"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -25,13 +25,12 @@ Visual Studio bietet umfangreiche Debugfunktionen für Python, z.B.: Anfügen an
 Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Artikeln:
 
 - [Linux-Remotedebuggen](debugging-python-code-on-remote-linux-machines.md)
-- [Azure-Remotedebuggen](debugging-remote-python-code-on-azure.md)
 - [Python/C++ – Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole für das Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -227,9 +226,45 @@ So verwalten Sie Ihre ptvsd-Installation:
 
 1. Wenn die Version niedriger als 4.1.1a9 ist (die mit Visual Studio gebündelte Version), klicken Sie rechts im Paket auf **X**, um die ältere Version zu deinstallieren. Visual Studio verwendet dann die gebündelte Version. (Sie können die Deinstallation auch mit `pip uninstall ptvsd` über PowerShell ausführen.)
 
-1. Alternativ können Sie das ptvsd-Paket auf die neueste Version aktualisieren. Geben Sie `ptvsd --upgrade -pre` in das Suchfeld ein, und wählen Sie dann **Run command: pip install ptvsd --upgrade -pre** (Befehl ausführen: pip install ptvsd --upgrade -pre) aus. (Sie können denselben Befehl auch in PowerShell verwenden.)
+1. Alternativ können Sie das ptvsd-Paket auf die neueste Version aktualisieren, indem Sie den Anweisungen im Abschnitt [Problembehandlung](#troubleshooting) folgen.
 
-    ![Eingeben des Upgrade-Befehls im Fenster „Python-Umgebungen“](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Problembehandlung
+
+Wenn Probleme mit dem Debugger auftreten, aktualisieren Sie zuerst Ihre Version von ptvsd wie folgt:
+
+1. Navigieren Sie im Fenster **Python-Umgebungen** zur Registerkarte **Pakete**.
+
+1. Geben Sie `ptvsd --upgrade` in das Suchfeld ein, und wählen Sie dann **Run command: pip install ptvsd --upgrade** aus. (Sie können denselben Befehl auch in PowerShell verwenden.)
+
+    ![Eingeben des ptvsd-Upgradebefehls im Fenster „Python-Umgebungen“](media/debugging-experimental-upgrade-ptvsd.png)
+
+Wenn die Probleme weiterhin auftreten, melden Sie ein Problem im [PTVS GitHub-Repository](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Aktivieren der Debuggerprotokollierung
+
+Im Rahmen der Untersuchung eines Debuggerproblems kann Microsoft Sie bitten, Debuggerprotokolle zu aktivieren und zu erfassen, die bei der Diagnose helfen.
+
+Die folgenden Schritte ermöglichen das Debuggen in der aktuellen Visual Studio-Sitzung:
+
+1. Öffnen Sie ein Befehlsfenster in Visual Studio mit dem Menübefehl **Ansicht** > **Andere Fenster** > **Befehlsfenster**.
+
+1. Geben Sie folgenden Befehl ein:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Beginnen Sie mit dem Debuggen, und führen Sie alle notwendigen Schritte aus, um Ihr Problem zu reproduzieren. Während dieser Zeit werden Debugprotokolle im Fenster **Ausgabe** unter **Adapterhostprotokoll debuggen** angezeigt. Sie können die Protokolle dann aus diesem Fenster kopieren und in ein GitHub-Problem, eine E-Mail usw. einfügen.
+
+    ![Debugger beim Protokollieren der Ausgabe im Ausgabefenster](media/debugger-logging-output.png)
+
+1. Wenn Visual Studio nicht mehr reagiert oder Sie anderweitig nicht auf das Fenster **Ausgabe** zugreifen können, starten Sie Visual Studio neu, öffnen Sie ein Befehlsfenster, und geben Sie den folgenden Befehl ein:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Beginnen Sie mit dem Debuggen, und reproduzieren Sie Ihr Problem erneut. Die Debuggerprotokolle finden Sie dann in `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Siehe auch
 

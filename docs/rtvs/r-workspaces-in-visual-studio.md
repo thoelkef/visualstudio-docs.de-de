@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919298"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Steuern, wo R-Code mit Arbeitsbereichen ausgeführt wird
 
@@ -37,7 +37,7 @@ Mit dem Befehl **R Tools** > **Sitzung** > **Zurücksetzen** und über die Symbo
 
 Die Liste lokaler Arbeitsbereiche führt alle R-Interpreter auf, die auf Ihrem Computer installiert sind. 
 
-RTVS versucht, automatisch alle installierten Versionen von R zu erkennen, indem der **HKEY_LOCAL_MACHINE\Software\R-Core\**-Registrierungsschlüssel beim Start von Visual Studio durchsucht wird. Da diese Überprüfung nur beim Start ausgeführt wird, müssen Sie Visual Studio neu starten, wenn Sie einen neuen R-Interpreter installieren.
+RTVS versucht, automatisch alle installierten Versionen von R zu erkennen, indem der **HKEY_LOCAL_MACHINE\Software\R-Core\\**-Registrierungsschlüssel beim Start von Visual Studio durchsucht wird. Da diese Überprüfung nur beim Start ausgeführt wird, müssen Sie Visual Studio neu starten, wenn Sie einen neuen R-Interpreter installieren.
 
 RTVS erkennt möglicherweise keine R-Interpreter, die auf nicht standardmäßige Weise installiert wurden (z.B. durch Kopieren von Dateien in einen Ordner statt eines Installationsprogramms). Erstellen Sie in diesem Fall wie folgt einen neuen lokalen R-Arbeitsbereich:
 

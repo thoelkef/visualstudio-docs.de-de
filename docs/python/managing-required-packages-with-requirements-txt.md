@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548789"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100912"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Verwalten von erforderlichen Paketen mit „requirements.txt“
 
-Wenn Sie ein Projekt über ein Buildsystem für andere Benutzer freigeben oder planen, um es [in Microsoft Azure zu veröffentlichen](python-azure-cloud-service-project-template.md), müssen Sie die externen Pakete angeben, die das Projekt benötigt. Der empfohlene Ansatz ist die Verwendung einer [requirements.txt-Datei](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), die eine Liste der Befehle für pip enthält, mit denen die erforderlichen Versionen der abhängigen Pakete installiert werden.
+Wenn Sie ein Projekt mit anderen Benutzern gemeinsam verwenden, ein Buildsystem verwenden oder planen, es an einem anderen Ort bereitzustellen, an dem Sie eine Umgebung wiederherstellen müssen, müssen Sie die externen Pakete angeben, die das Projekt benötigt. Der empfohlene Ansatz ist die Verwendung einer [requirements.txt-Datei](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), die eine Liste der Befehle für pip enthält, mit denen die erforderlichen Versionen der abhängigen Pakete installiert werden.
 
 Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet werden (mit `-r <full path to file>` beim Installieren eines Pakets), aber Visual Studio bietet spezielle Unterstützung für *requirements.txt*:
 

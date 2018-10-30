@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433301"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356742"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -32,6 +32,69 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 
    Aktiviert die Codeanalyse nicht nur für geöffnete Codedateien, sondern für alle Dateien in der Projektmappe. Weitere Informationen finden Sie unter [Full solution analysis (Analyse der gesamten Projektmappe)](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
+## <a name="using-directives"></a>Using-Direktiven
+
+- System-Direktiven beim Sortieren von Using-Direktiven an erster Stelle platzieren
+
+   Wenn ausgewählt, sortiert der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen und platziert die „System“namespaces ganz oben in der Liste.
+
+   Vor dem Sortieren:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Nach dem Sortieren:
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- Using-Direktivengruppen trennen
+
+   Wenn ausgewählt, trennt der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen, indem er eine leere Zeile zwischen Gruppen von Anweisungen einfügt, die den gleichen Stammnamespace aufweisen.
+
+   Vor dem Sortieren:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Nach dem Sortieren:
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen 
+
+   Bei Auswahl dieser Option ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
+
+   ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>Markieren
 
 - Verweise auf Symbole unter dem Cursor markieren

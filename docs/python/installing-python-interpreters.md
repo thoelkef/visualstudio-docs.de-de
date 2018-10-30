@@ -1,7 +1,7 @@
 ---
 title: Auswählen und Installieren von Python-Interpretern
 description: Dieser Artikel enthält eine vollständige Liste der Python-Interpreter, die in Visual Studio unterstützt werden, sowie kurze Anweisungen dazu, wo die entsprechenden Installationsprogramme zu finden sind.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548964"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324976"
 ---
 # <a name="install-python-interpreters"></a>Installieren von Python-Interpretern
 
 Bei der Installation der Workload für die Python-Entwicklung in Visual Studio 2017 wird standardmäßig auch Python 3 (64-Bit) installiert. Optional können Sie auch die 32-Bit- und 64-Bit-Versionen von Python 2, Python 3, Anaconda 2 und Anaconda 3 installieren, wie unter [Installation](installing-python-support-in-visual-studio.md) beschrieben.
 
-Sie können die in der folgenden Tabelle aufgelisteten Interpreter auch manuell außerhalb des Visual Studio-Installationsprogramms installieren. Wenn Sie beispielsweise Anaconda 3 vor Visual Studio installiert haben, ist keine erneute Installation über das Visual Studio-Installationsprogramm erforderlich.
+Sie können die in der folgenden Tabelle aufgelisteten Interpreter auch manuell außerhalb des Visual Studio-Installationsprogramms installieren. Wenn Sie beispielsweise Anaconda 3 vor Visual Studio installiert haben, ist keine erneute Installation über das Visual Studio-Installationsprogramm erforderlich. Sie können einen Interpreter auch manuell installieren, wenn beispielsweise eine neuere Version verfügbar ist, die noch nicht im Visual Studio-Installer enthalten ist.
 
 Für **Visual Studio 2015 und frühere Versionen** müssen Sie einen der Interpreter manuell installieren.
 

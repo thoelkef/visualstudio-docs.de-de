@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854480"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -47,20 +47,20 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_analyze"></a> Analyse
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Analyze.NavigateBackward|**UMSCHALT+ALT+3**|
 |Analyze.NavigateForward|**UMSCHALT+ALT+4**|
 
 ###  <a name="bkmk_architecture"></a> Architektur
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Architecture.NewDiagram|**STRG+\\, STRG+N**|
 
 ###  <a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Build.BuildSolution|**STRG+UMSCHALT+B**|
 |Build.Cancel|**STRG+UNTBR**|
 |Build.Compile|**STRG+F7**|
@@ -69,13 +69,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+EINGABETASTE**|
 
 ###  <a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Debug.ApplyCodeChanges|**ALT+F10**|
 |Debug.Autos|**STRG+ALT+V, A**|
 |Debug.BreakAll|**STRG+ALT+UNTBR**|
@@ -143,7 +143,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |DebuggerContextMenus.BreakpointsWindow.Delete|**ALT+F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
@@ -151,7 +151,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_diagnostics"></a> Diagnosehub
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |DiagnosticsHub.StopCollection|**STRG+ALT+F2**|
 
 ###  <a name="bkmk_edit"></a> Bearbeiten
@@ -216,25 +216,25 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**STRG+`**|
 |EditorContextMenus.CodeWindow.Execute|**STRG+ALT+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**STRG+M, STRG+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**STRG+K, STRG+O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**STRG+K, STRG+O** (Buchstabe „O“)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**STRG+K, STRG+T**<br /><br /> oder<br /><br /> **STRG+K, T**|
 
 ###  <a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |File.Exit|**ALT+F4**|
 |File.NewFile|**STRG+N**|
 |File.NewProject|**STRG+UMSCHALT+N**|
 |File.NewWebSite|**UMSCHALT+ALT+N**|
-|File.OpenFile|**STRG+O**|
-|File.OpenProject|**STRG+UMSCHALT+O**|
-|File.OpenWebSite|**UMSCHALT+ALT+O**|
+|File.OpenFile|**STRG+O** (Buchstabe „O“)|
+|File.OpenProject|**STRG+UMSCHALT+O** (Buchstabe „O“)|
+|File.OpenWebSite|**UMSCHALT+ALT+O** (Buchstabe „O“)|
 |File.Print|**STRG+P**|
 |File.SaveAll|**STRG+UMSCHALT+S**|
 |File.SaveSelectedItems|**STRG+S**|
@@ -243,7 +243,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_help"></a> Hilfe
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Help.AddandRemoveHelpContent|**STRG+ALT+F1**|
 |Help.F1Help|**F1**|
 |Help.ViewHelp|**STRG+F1**|
@@ -252,88 +252,88 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_loadtest"></a> Auslastungstest
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |LoadTest.JumpToCounterPane|**STRG+R, Q**|
 
 ###  <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Einfügen**|
 
 ###  <a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Project.AddExistingItem|**UMSCHALT+ALT+A**|
 |Project.AddNewItem|**STRG+UMSCHALT+A**|
 |Project.ClassWizard|**STRG+UMSCHALT+X**|
 |Project.Override|**STRG+ALT+EINFG**|
-|Project.Previewchanges|**ALT+;, ALT+C**|
-|Project.Publishselectedfiles|**ALT+;, ALT+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;, ALT+R**|
+|Project.Previewchanges|**ALT+;**, dann **Alt+C**|
+|Project.Publishselectedfiles|**ALT+;**, dann **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**ALT+;**, dann **Alt+R**|
 
 ###  <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+NACH-UNTEN-TASTE**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+NACH-OBEN-TASTE**|
 
 ###  <a name="bkmk_refactor"></a> Refactor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Refactor.EncapsulateField|**STRG+R, STRG+E**|
 |Refactor.ExtractInterface|**STRG+R, STRG+I**|
 |Refactor.ExtractMethod|**STRG+R, STRG+M**|
 |Refactor.RemoveParameters|**STRG+R, STRG+V**|
 |Refactor.Rename|**STRG+R, STRG+R**|
-|Refactor.ReorderParameters|**STRG+R, STRG+O**|
+|Refactor.ReorderParameters|**STRG+R, STRG+O** (Buchstabe „O“)|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**STRG+[, O**<br /><br /> oder<br /><br /> **STRG+[, STRG+O**|
-|SolutionExplorer.PendingChangesFilter|**STRG+[, P**<br /><br /> oder<br /><br /> **STRG+[, STRG+P**|
-|SolutionExplorer.SyncWithActiveDocument|**STRG+[, S**<br /><br /> oder<br /><br /> **STRG+[, STRG+S**|
+|--------------| - |
+|SolutionExplorer.OpenFilesFilter|**STRG+[**, **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[**, **STRG+O** (Buchstabe „O“)|
+|SolutionExplorer.PendingChangesFilter|**STRG+[**, **P**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+P**|
+|SolutionExplorer.SyncWithActiveDocument|**STRG+[**, **S**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+S**|
 
 ###  <a name="bkmk_team"></a> Team
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
-|Team.Git.GoToGitBranches|**STRG+0, STRG+N**<br /><br /> oder<br /><br /> **STRG+0, N**|
-|Team.Git.GoToGitChanges|**STRG+0, STRG+G**<br /><br /> oder<br /><br /> **STRG+0, G**|
-|Team.Git.GoToGitCommits|**STRG+0, STRG+O**<br /><br /> oder<br /><br /> **STRG+0**|
+|--------------| - |
+|Team.Git.GoToGitBranches|**STRG+0** (null), **STRG+N**<br /><br /> oder<br /><br /> **STRG+0, N**|
+|Team.Git.GoToGitChanges|**STRG+0** (null), **STRG+G**<br /><br /> oder<br /><br /> **STRG+0, G**|
+|Team.Git.GoToGitCommits|**STRG+0** (null), **STRG+O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+0**|
 |Team.TeamExplorerSearch|**STRG+'**|
 
 ###  <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**STRG+0, STRG+B**<br /><br /> oder<br /><br /> **STRG+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**STRG+0, STRG+C**<br /><br /> oder<br /><br /> **STRG+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**STRG+0, STRG+D**<br /><br /> oder<br /><br /> **STRG+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**STRG+0, STRG+H**<br /><br /> oder<br /><br /> **STRG+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**STRG+0, STRG+M**<br /><br /> oder<br /><br /> **STRG+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**STRG+0, STRG+P**<br /><br /> oder<br /><br /> **STRG+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**STRG+0, STRG+R**<br /><br /> oder<br /><br /> **STRG+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**STRG+0, STRG+S**<br /><br /> oder<br /><br /> **STRG+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**STRG+0, STRG+A**<br /><br /> oder<br /><br /> **STRG+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**STRG+0, STRG+W**<br /><br /> oder<br /><br /> **STRG+0, W**|
+|--------------| - |
+|TeamFoundationContextMenus.Commands.GoToBuilds|**STRG+0** (null), **STRG+B**<br /><br /> oder<br /><br /> **STRG+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**STRG+0** (null), **STRG+C**<br /><br /> oder<br /><br /> **STRG+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**STRG+0** (null), **STRG+D**<br /><br /> oder<br /><br /> **STRG+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**STRG+0** (null), **STRG+H**<br /><br /> oder<br /><br /> **STRG+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**STRG+0** (null), **STRG+M**<br /><br /> oder<br /><br /> **STRG+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**STRG+0** (null), **STRG+P**<br /><br /> oder<br /><br /> **STRG+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**STRG+0** (null), **STRG+R**<br /><br /> oder<br /><br /> **STRG+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**STRG+0** (null), **STRG+S**<br /><br /> oder<br /><br /> **STRG+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**STRG+0** (null), **STRG+A**<br /><br /> oder<br /><br /> **STRG+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**STRG+0** (null), **STRG+W**<br /><br /> oder<br /><br /> **STRG+0, W**|
 
 ###  <a name="bkmk_test"></a> Test
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Test.UseCodedUITestBuilder|**STRG+\\, STRG+C**|
 |Test.UseExistingActionRecording|**STRG+\\, STRG+A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |TestExplorer.DebugAllTests|**STRG+R, STRG+A**|
 |TestExplorer.DebugAllTestsInContext|**STRG+R, STRG+T**|
 |TestExplorer.RepeatLastRun|**STRG+R, L**|
@@ -343,7 +343,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_tools"></a> Extras
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Tools.AttachtoProcess|**STRG+ALT+P**|
 |Tools.CodeSnippetsManager|**STRG+K, STRG+B**|
 |Tools.ForceGC|**STRG+UMSCHALT+ALT+F12, STRG+UMSCHALT+ALT+F12**|
@@ -352,7 +352,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |View.AllWindows|**UMSCHALT+ALT+M**|
 |View.ArchitectureExplorer|**STRG+\\, STRG+R**|
 |View.Backward|**ALT+NACH-LINKS-TASTE**|
@@ -379,7 +379,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.Notifications|**STRG+W, N**<br /><br /> oder<br /><br /> **STRG+L, STRG+N**|
 |View.ObjectBrowser|**STRG+ALT+J**|
 |View.ObjectBrowserGoToSearchCombo|**STRG+K, STRG+R**|
-|View.Output|**STRG+ALT+O**|
+|View.Output|**STRG+ALT+O** (Buchstabe „O“)|
 |View.PopBrowseContex|**STRG+UMSCHALT+8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**UMSCHALTTASTE+F4**|
@@ -401,7 +401,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC**|
 |Window.AddTabtoSelection|**STRG+UMSCHALT+ALT+LEERTASTE**|
 |Window.CloseDocumentWindow|**STRG+F4**|
@@ -432,14 +432,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ###  <a name="bkmk_windowsazure"></a> Azure
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**STRG+NUM\*, STRG+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**STRG+NUM\*, STRG+D**|
 
 ##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+NACH-UNTEN-TASTE**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**ALT+BILD-AB**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**ALT+ENDE**|
@@ -454,7 +454,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="class-diagram"></a>Klassendiagramm
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |ClassDiagram.Collapse|**NUM -**|
 |ClassDiagram.Expand|**NUM +**|
 |Edit.Delete|**STRG+ENTF**|
@@ -466,7 +466,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="coded-ui-test-editor"></a>Editor für Tests der programmierten UI
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**STRG+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**STRG+ALT+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**UMSCHALT+ALT+L**|
@@ -477,14 +477,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="dataset-editor"></a>DataSet-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Einfügen**|
 |OtherContextMenus.DbTableContext.Add.Column|**STRG+L**|
 
 ##  <a name="difference-viewer"></a>Unterschiedanzeige
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Diff.IgnoreTrimWhitespace|**STRG+\\, STRG+LEERTASTE**|
 |Diff.InlineView|**STRG+\\, STRG+1**|
 |Diff.LeftOnlyView|**STRG+\\, STRG+3**|
@@ -500,7 +500,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="dom-explorer"></a>DOM-Explorer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**STRG+B**|
 |DOMExplorer.ShowLayout|**STRG+UMSCHALT+I**|
@@ -508,13 +508,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="f-interactive"></a>Interaktiv (F#)
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**STRG+UNTBR**|
 
 ##  <a name="graph-document-editor"></a>Diagrammdokument-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Einfügen**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
@@ -526,13 +526,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="graphics-diagnostics"></a>Grafikdiagnose
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Debug.Graphics.CaptureFrame|Keiner|
 |Graphics.MovePixelSelectionDown|**UMSCHALT+ALT+NACH-UNTEN**|
 |Graphics.MovePixelSelectionLeft|**STRG+ALT+NACH-LINKS-TASTE**|
 |Graphics.MovePixelSelectionRight|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
 |Graphics.MovePixelSelectionUp|**UMSCHALT+ALT+NACH-OBEN**|
-|Graphics.ZoomToActualSize|**UMSCHALT+ALT+0**|
+|Graphics.ZoomToActualSize|**UMSCHALT+ALT+0** (null)|
 |Graphics.ZoomToFitInWindow|**UMSCHALT+ALT+9**|
 |Graphics.ZoomIn|**UMSCHALT+ALT+=**|
 |Graphics.ZoomOut|**UMSCHALT+ALT+-**|
@@ -540,13 +540,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="html-editor"></a>HTML-Editor
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**STRG+M, STRG+G**|
 
 ##  <a name="html-editor-design-view"></a>HTML-Editor-Entwurfsansicht
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**STRG+NACH-UNTEN-TASTE**|
 |Edit.MoveControlUp|**STRG+NACH-OBEN-TASTE**|
 |Format.Bold|**STRG+B**|
@@ -569,7 +569,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="html-editor-source-view"></a>HTML-Editor-Quellansicht
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**STRG+M, STRG+G**|
 |View.NextView|**STRG+BILD-AB**|
 |View.SynchronizeViews|**STRG+UMSCHALT+Y**|
@@ -579,13 +579,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="layer-diagram"></a>Ebenendiagramm
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**UMSCHALT+ENTF**|
 
 ##  <a name="managed-resources-editor"></a>Verwaltete Ressourcen-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Löschen**|
 |Edit.RemoveRow|**STRG+ENTF**|
@@ -600,7 +600,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="merge-editor-window"></a>Merge-Editorfenster
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**ALT+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
@@ -608,7 +608,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Schemavergleich
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |SQL.SSDTSchemaCompareCompare|**UMSCHALT+ALT+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**UMSCHALT+ALT+G**|
 |SQL.SSDTSchemaCompareNextChange|**UMSCHALT+ALT+.**|
@@ -619,7 +619,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Tabellen-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**UMSCHALT+ALT+U**|
 |SQL.ExpandWildcards|**STRG+R, E**<br /><br /> oder<br /><br /> **STRG+R, STRG+E**|
 |SQL.FullyqualifyNames|**STRG+R, Q**<br /><br /> oder<br /><br /> **STRG+R, STRG+Q**|
@@ -630,7 +630,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, T-SQL-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**UMSCHALT+ALT+U**|
 |SQL.ExecuteWithDebugger|**ALT+F5**|
 |SQL.ExpandWildcards|**STRG+R, E**<br /><br /> oder<br /><br /> **STRG+R, STRG+E**|
@@ -651,7 +651,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, T-SQL-PDW-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |SQL.TSqlEditorCancelQuery|**ALT+PAUSE**|
 |SQL.TSqlEditorExecuteQuery|**STRG+UMSCHALT+E**|
 |SQL.TSqlEditorResultsAsFile|**STRG+D, F**|
@@ -666,13 +666,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="page-inspector"></a>Seitenprüfung
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ##  <a name="query-designer"></a>Abfrage-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**STRG+T**|
 |QueryDesigner.Criteria|**STRG+2**|
 |QueryDesigner.Diagram|**STRG+1**|
@@ -685,7 +685,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="query-results"></a>Abfrageergebnisse
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |SQL.QueryResultsNewRow|**ALT+ENDE**|
 |SQL.QueryResultsRefresh|**UMSCHALT+ALT+R**|
 |SQL.QueryResultsStop|**ALT+PAUSE**|
@@ -693,7 +693,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="report-designer"></a>Berichts-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**EINGABETASTE**|
 |Edit.CharLeft|**NACH-LINKS-TASTE**|
 |Edit.CharLeftExtend|**STRG+NACH-LINKS-TASTE**|
@@ -719,14 +719,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="sequence-diagram"></a>Sequenzdiagramm
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**UMSCHALT+ENTF**|
 
 ##  <a name="settings-designer"></a>Einstellungs-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**STRG+ENTF**|
 |Edit.SelectionCancel|**ESC**|
@@ -735,18 +735,18 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="solution-explorer"></a>Projektmappen-Explorer
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**STRG+K, STRG+G**|
 
 ##  <a name="team-explorer"></a>Team Explorer
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Löschen**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+POS1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+NACH-UNTEN-TASTE**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0** (null)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT+NACH-OBEN-TASTE**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**ALT+2**|
@@ -766,154 +766,154 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="test-explorer"></a>Test-Explorer
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
 ##  <a name="text-editor"></a>Text-Editor
 
-|Befehle|Tastenkombinationen|
-|--------------|------------------------|
-|Edit.BreakLine|**EINGABETASTE**<br /><br /> oder<br /><br /> **UMSCHALT+EINGABETASTE**|
-|Edit.CharLeft|**NACH-LINKS-TASTE**|
-|Edit.CharLeftExtend|**STRG+NACH-LINKS-TASTE**|
-|Edit.CharLeftExtendColumn|**STRG+ALT+NACH-LINKS-TASTE**|
-|Edit.CharRight|**NACH-RECHTS-TASTE**|
-|Edit.CharRightExtend|**UMSCHALT+NACH-RECHTS-TASTE**|
-|Edit.CharRightExtendColumn|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
-|Edit.CharTranspose|**STRG+T**|
-|Edit.ClearBookmarks|**STRG+K, STRG+L**|
-|Edit.CollapseAllOutlining|**STRG+M, STRG+A**|
-|Edit.CollapseCurrentRegion|**STRG+M, STRG+S**|
-|Edit.CollapseTag|**STRG+M, STRG+T**|
-|Edit.CollapseToDefinitions|**STRG+M, STRG+O**|
-|Edit.CommentSelection|**STRG+K, STRG+C**|
-|Edit.CompleteWord|**STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE**|
-|Edit.CopyParameterTip|**STRG+UMSCHALT+ALT+C**|
-|Edit.DecreaseFilterLevel|**ALT+,**|
-|Edit.DeleteBackwords|**RÜCKTASTE**<br /><br /> oder<br /><br /> **UMSCHALT+RÜCKTASTE**|
-|Edit.DeleteHorizontalWhitespace|**STRG+K, STRG+\**|
-|Edit.DocumentEnd|**STRG+ENDE**|
-|Edit.DocumentEndExtend|**STRG+UMSCHALT+ENDE**|
-|Edit.DocumentStart|**STRG+POS1**|
-|Edit.DocumentStartExtend|**STRG+UMSCHALT+POS1**|
-|Edit.ExpandAllOutlining|**STRG+M, STRG+X**|
-|Edit.ExpandCurrentRegion|**STRG+M, STRG+E**|
-|Edit.FormatDocument|**STRG+K, STRG+D**|
-|Edit.FormatSelection|**STRG+K, STRG+F**|
-|Edit.GotoBrace|**STRG+]**|
-|Edit.GotoBraceExtend|**STRG+UMSCHALT+]**|
-|Edit.HideSelection|**STRG+M, STRG+H**|
-|Edit.IncreaseFilterLevel|**ALT+.**|
-|Edit.IncrementalSearch|**STRG+I**|
-|Edit.InsertTab|**TAB**|
-|Edit.LineCut|**STRG+L**|
-|Edit.LineDelete|**STRG+UMSCHALT+L**|
-|Edit.LineDown|**NACH-UNTEN-TASTE**|
-|Edit.LineDownExtend|**UMSCHALT+NACH-UNTEN-TASTE**|
-|Edit.LineDownExtendColumn|**UMSCHALT+ALT+NACH-UNTEN**|
-|Edit.LineEnd|**ENDE**|
-|Edit.LineEndExtend|**UMSCHALT+ENDE**|
-|Edit.LineEndExtendColumn|**UMSCHALT+ALT+ENDE**|
-|Edit.LineOpenAbove|**STRG+EINGABETASTE**|
-|Edit.LineOpenBelow|**STRG+UMSCHALT+EINGABETASTE**|
-|Edit.LineStart|**Home**|
-|Edit.LineStartExtend|**UMSCHALT+POS1**|
-|Edit.LineStartExtendColumn|**UMSCHALT+ALT+POS1**|
-|Edit.LineTranspose|**UMSCHALT+ALT+T**|
-|Edit.LineUp|**NACH-OBEN-TASTE**|
-|Edit.LineUpExtend|**UMSCHALT+NACH-OBEN-TASTE**|
-|Edit.LineUpExtendColumn|**UMSCHALT+ALT+NACH-OBEN**|
-|Edit.ListMembers|**STRG+J**|
-|Edit.MakeLowercase|**STRG+U**|
-|Edit.MakeUppercase|**STRG+UMSCHALT+U**|
-|Edit.MoveSelectedLinesDown|**ALT+NACH-UNTEN-TASTE**|
-|Edit.MoveSelectedLinesUp|**ALT+NACH-OBEN-TASTE**|
-|Edit.NextHighlightedReference|**STRG+UMSCHALT+NACH-UNTEN-TASTE**|
-|Edit.OvertypeMode|**Einfügen**|
-|Edit.PageDown|**BILD-AB**|
-|Edit.PageDownExtend|**UMSCHALTTASTE+BILD-AB**|
-|Edit.PageUp|**BILD-AUF**|
-|Edit.PageUpExtend|**UMSCHALT+BILD-AUF**|
-|Edit.ParameterInfo|**STRG+UMSCHALT+LEERTASTE**|
-|Edit.PasteParameterTip|**STRG+UMSCHALT+ALT+P**|
-|Edit.PeekBackward|**STRG+ALT+-**|
-|Edit.PeekDefinition|**ALT+F12**|
-|Edit.PeekForward|**STRG+ALT+=**|
-|Edit.PreviousHighlightedReference|**STRG+UMSCHALT+NACH-OBEN-TASTE**|
-|Edit.QuickInfo|**STRG+K, STRG+I**|
-|Edit.ReverseIncrementalSearch|**STRG+UMSCHALT+I**|
-|Edit.ScrollLineDown|**STRG+NACH-UNTEN-TASTE**|
-|Edit.ScrollLineUp|**STRG+NACH-OBEN-TASTE**|
-|Edit.SelectCurrentWord|**STRG+W**|
-|Edit.SelectionCancel|**ESC**|
-|Edit.SelectToLastGoBack|**STRG+=**|
-|Edit.ShowCodeLensMenu|**ALT+`**|
-|Edit.StopHidingCurrent|**STRG+M, STRG+U**|
-|Edit.StopOutlining|**STRG+M, STRG+P**|
-|Edit.SwapAnchor|**STRG+K, STRG+A**|
-|Edit.TabLeft|**UMSCHALT+TAB**|
-|Edit.ToggleAllOutlining|**STRG+M, STRG+L**|
-|Edit.ToggleBookmark|**STRG+K, STRG+K**|
-|Edit.ToggleCompletionMode|**STRG+ALT+LEERTASTE**|
-|Edit.ToggleOutliningExpansion|**STRG+M, STRG+M**|
-|Edit.ToggleTaskListShortcut|**STRG+K, STRG+H**|
-|Edit.ToggleWordWrap|**STRG+E, STRG+W**|
-|Edit.UncommentSelection|**STRG+K, STRG+U**|
-|Edit.ViewBottom|**STRG+BILD-AB**|
-|Edit.ViewBottomExtend|**STRG+UMSCHALT+BILD-AB**|
-|Edit.ViewTop|**STRG+BILD-AUF**|
-|Edit.ViewTopExtend|**STRG+UMSCHALT+BILD-AUF**|
-|Edit.ViewWhiteSpace|**STRG+R, STRG+W**|
-|Edit.WordDeleteToEnd|**STRG+ENTF**|
-|Edit.WordDeleteToStart|**STRG+RÜCKTASTE**|
-|Edit.WordNext|**STRG+NACH-RECHTS-TASTE**|
-|Edit.WordNextExtend|**STRG+UMSCHALT+NACH-RECHTS-TASTE**|
-|Edit.WordNextExtendColumn|**STRG+UMSCHALT+ALT+NACH-RECHTS-TASTE**|
-|Edit.WordPrevious|**STRG+NACH-LINKS-TASTE**|
-|Edit.WordPreviousExtend|**STRG+UMSCHALT+NACH-LINKS-TASTE**|
-|Edit.WordPreviousExtendColumn|**STRG+UMSCHALT+ALT+NACH-LINKS-TASTE**|
-|Edit.WordTranspose|**STRG+UMSCHALT+T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**ALT+EINGABETASTE**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**ALT+'**|
-|OtherContextMenus.HTMLContext.ViewinPageInspector|**STRG+K, STRG+G**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**ALT+BILD-AB**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT+BILD-AUF**|
+| Befehle | Tastenkombinationen |
+| - | - |
+| Edit.BreakLine | **EINGABETASTE**<br /><br /> oder<br /><br /> **UMSCHALT+EINGABETASTE** |
+| Edit.CharLeft | **NACH-LINKS-TASTE** |
+| Edit.CharLeftExtend | **STRG+NACH-LINKS-TASTE** |
+| Edit.CharLeftExtendColumn | **STRG+ALT+NACH-LINKS-TASTE** |
+| Edit.CharRight | **NACH-RECHTS-TASTE** |
+| Edit.CharRightExtend | **UMSCHALT+NACH-RECHTS-TASTE** |
+| Edit.CharRightExtendColumn | **UMSCHALT+ALT+NACH-RECHTS-TASTE** |
+| Edit.CharTranspose | **STRG+T** |
+| Edit.ClearBookmarks | **STRG+K, STRG+L** |
+| Edit.CollapseAllOutlining | **STRG+M, STRG+A** |
+| Edit.CollapseCurrentRegion | **STRG+M, STRG+S** |
+| Edit.CollapseTag | **STRG+M, STRG+T** |
+| Edit.CollapseToDefinitions | **STRG+M, STRG+O** (Buchstabe „O“) |
+| Edit.CommentSelection | **STRG+K, STRG+C** |
+| Edit.CompleteWord | **STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE** |
+| Edit.CopyParameterTip | **STRG+UMSCHALT+ALT+C** |
+| Edit.DecreaseFilterLevel | **ALT+,** |
+| Edit.DeleteBackwords | **RÜCKTASTE**<br /><br /> oder<br /><br /> **UMSCHALT+RÜCKTASTE** |
+| Edit.DeleteHorizontalWhitespace | **STRG+K, STRG+\\** |
+| Edit.DocumentEnd | **STRG+ENDE** |
+| Edit.DocumentEndExtend | **STRG+UMSCHALT+ENDE** |
+| Edit.DocumentStart | **STRG+POS1** |
+| Edit.DocumentStartExtend | **STRG+UMSCHALT+POS1** |
+| Edit.ExpandAllOutlining | **STRG+M, STRG+X** |
+| Edit.ExpandCurrentRegion | **STRG+M, STRG+E** |
+| Edit.FormatDocument | **STRG+K, STRG+D** |
+| Edit.FormatSelection | **STRG+K, STRG+F** |
+| Edit.GotoBrace | **STRG+]** |
+| Edit.GotoBraceExtend | **STRG+UMSCHALT+]** |
+| Edit.HideSelection | **STRG+M, STRG+H** |
+| Edit.IncreaseFilterLevel | **ALT+.** |
+| Edit.IncrementalSearch | **STRG+I** |
+| Edit.InsertTab | **TAB** |
+| Edit.LineCut | **STRG+L** |
+| Edit.LineDelete | **STRG+UMSCHALT+L** |
+| Edit.LineDown | **NACH-UNTEN-TASTE** |
+| Edit.LineDownExtend | **UMSCHALT+NACH-UNTEN-TASTE** |
+| Edit.LineDownExtendColumn | **UMSCHALT+ALT+NACH-UNTEN** |
+| Edit.LineEnd | **ENDE** |
+| Edit.LineEndExtend | **UMSCHALT+ENDE** |
+| Edit.LineEndExtendColumn | **UMSCHALT+ALT+ENDE** |
+| Edit.LineOpenAbove | **STRG+EINGABETASTE** |
+| Edit.LineOpenBelow | **STRG+UMSCHALT+EINGABETASTE** |
+| Edit.LineStart | **Home** |
+| Edit.LineStartExtend | **UMSCHALT+POS1** |
+| Edit.LineStartExtendColumn | **UMSCHALT+ALT+POS1** |
+| Edit.LineTranspose | **UMSCHALT+ALT+T** |
+| Edit.LineUp | **NACH-OBEN-TASTE** |
+| Edit.LineUpExtend | **UMSCHALT+NACH-OBEN-TASTE** |
+| Edit.LineUpExtendColumn | **UMSCHALT+ALT+NACH-OBEN** |
+| Edit.ListMembers | **STRG+J** |
+| Edit.MakeLowercase | **STRG+U** |
+| Edit.MakeUppercase | **STRG+UMSCHALT+U** |
+| Edit.MoveSelectedLinesDown | **ALT+NACH-UNTEN-TASTE** |
+| Edit.MoveSelectedLinesUp | **ALT+NACH-OBEN-TASTE** |
+| Edit.NextHighlightedReference | **STRG+UMSCHALT+NACH-UNTEN-TASTE** |
+| Edit.OvertypeMode | **Einfügen** |
+| Edit.PageDown | **BILD-AB** |
+| Edit.PageDownExtend | **UMSCHALTTASTE+BILD-AB** |
+| Edit.PageUp | **BILD-AUF** |
+| Edit.PageUpExtend | **UMSCHALT+BILD-AUF** |
+| Edit.ParameterInfo | **STRG+UMSCHALT+LEERTASTE** |
+| Edit.PasteParameterTip | **STRG+UMSCHALT+ALT+P** |
+| Edit.PeekBackward | **STRG+ALT+-** |
+| Edit.PeekDefinition | **ALT+F12** |
+| Edit.PeekForward | **STRG+ALT+=** |
+| Edit.PreviousHighlightedReference | **STRG+UMSCHALT+NACH-OBEN-TASTE** |
+| Edit.QuickInfo | **STRG+K, STRG+I** |
+| Edit.ReverseIncrementalSearch | **STRG+UMSCHALT+I** |
+| Edit.ScrollLineDown | **STRG+NACH-UNTEN-TASTE** |
+| Edit.ScrollLineUp | **STRG+NACH-OBEN-TASTE** |
+| Edit.SelectCurrentWord | **STRG+W** |
+| Edit.SelectionCancel | **ESC** |
+| Edit.SelectToLastGoBack | **STRG+=** |
+| Edit.ShowCodeLensMenu | **ALT+\`** |
+| Edit.StopHidingCurrent | **STRG+M, STRG+U** |
+| Edit.StopOutlining | **STRG+M, STRG+P** |
+| Edit.SwapAnchor | **STRG+K, STRG+A** |
+| Edit.TabLeft | **UMSCHALT+TAB** |
+| Edit.ToggleAllOutlining | **STRG+M, STRG+L** |
+| Edit.ToggleBookmark | **STRG+K, STRG+K** |
+| Edit.ToggleCompletionMode | **STRG+ALT+LEERTASTE** |
+| Edit.ToggleOutliningExpansion | **STRG+M, STRG+M** |
+| Edit.ToggleTaskListShortcut | **STRG+K, STRG+H** |
+| Edit.ToggleWordWrap | **STRG+E, STRG+W** |
+| Edit.UncommentSelection | **STRG+K, STRG+U** |
+| Edit.ViewBottom | **STRG+BILD-AB** |
+| Edit.ViewBottomExtend | **STRG+UMSCHALT+BILD-AB** |
+| Edit.ViewTop | **STRG+BILD-AUF** |
+| Edit.ViewTopExtend | **STRG+UMSCHALT+BILD-AUF** |
+| Edit.ViewWhiteSpace | **STRG+R, STRG+W** |
+| Edit.WordDeleteToEnd | **STRG+ENTF** |
+| Edit.WordDeleteToStart | **STRG+RÜCKTASTE** |
+| Edit.WordNext | **STRG+NACH-RECHTS-TASTE** |
+| Edit.WordNextExtend | **STRG+UMSCHALT+NACH-RECHTS-TASTE** |
+| Edit.WordNextExtendColumn | **STRG+UMSCHALT+ALT+NACH-RECHTS-TASTE** |
+| Edit.WordPrevious | **STRG+NACH-LINKS-TASTE** |
+| Edit.WordPreviousExtend | **STRG+UMSCHALT+NACH-LINKS-TASTE** |
+| Edit.WordPreviousExtendColumn | **STRG+UMSCHALT+ALT+NACH-LINKS-TASTE** |
+| Edit.WordTranspose | **STRG+UMSCHALT+T** |
+| EditorContextMenus.CodeWindow.ExecuteInInteractive | **ALT+EINGABETASTE** |
+| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **ALT+'** |
+| OtherContextMenus.HTMLContext.ViewinPageInspector | **STRG+K, STRG+G** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+BILD-AB** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+BILD-AUF** |
 
 ##  <a name="uml-activity-diagram"></a>UML-Aktivitätsdiagramm
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**UMSCHALT+ENTF**|
 
 ##  <a name="uml-class-diagram"></a>UML-Klassendiagramm
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
 ##  <a name="uml-component-diagram"></a>UML-Komponentendiagramm
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
 ##  <a name="uml-use-case-diagram"></a>UML-Anwendungsfalldiagramm
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
 ##  <a name="vc-accelerator-editor"></a>VC-Zugriffstasten-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.NewAccelerator|**Einfügen**|
 |Edit.NextKeyTyped|**STRG+W**|
 
 ##  <a name="vc-dialog-editor"></a>VC-Dialog-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**NACH-UNTEN-TASTE**|
 |Edit.MoveControlLeft|**NACH-LINKS-TASTE**|
 |Edit.MoveControlRight|**NACH-RECHTS-TASTE**|
@@ -947,7 +947,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="vc-image-editor"></a>VC-Bildbearbeitung
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Image.AirbrushTool|**STRG+A**|
 |Image.BrushTool|**STRG+B**|
 |Image.CopyandOutlineSelection|**STRG+UMSCHALT+U**|
@@ -989,13 +989,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="vc-string-editor"></a>VC-Zeichenfolgen-Editor
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.NewString|**Einfügen**|
 
 ##  <a name="view-designer"></a>Designer anzeigen
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**STRG+T**|
 |QueryDesigner.Criteria|**STRG+2**|
 |QueryDesigner.Diagram|**STRG+1**|
@@ -1008,13 +1008,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="visual-studio"></a>Visual Studio
 
 |Befehl|Tastenkombination|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**STRG+1**|
 
 ##  <a name="windows-forms-designer"></a>Windows Forms-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**EINGABETASTE**|
 |Edit.CharLeft|**NACH-LINKS-TASTE**|
 |Edit.CharLeftExtend|**STRG+NACH-LINKS-TASTE**|
@@ -1043,7 +1043,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="work-item-editor"></a>Arbeitselement-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**UMSCHALT+ALT+C**|
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**UMSCHALT+ALT+L**|
@@ -1051,7 +1051,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="work-item-query-view"></a>Abfrageansicht für Arbeitselemente
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**UMSCHALT+ALT+C**|
 |Edit.Indent|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
 |Edit.Outdent|**STRG+ALT+NACH-LINKS-TASTE**|
@@ -1062,7 +1062,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="work-item-results-view"></a>Abfrageergebnisse für Arbeitselemente
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**UMSCHALT+ALT+C**|
 |Edit.Indent|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
 |Edit.Outdent|**STRG+ALT+NACH-LINKS-TASTE**|
@@ -1075,7 +1075,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="workflow-designer"></a>Workflow-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CompleteWord|**STRG+K, W**<br /><br /> oder<br /><br /> **STRG+K, STRG+W**<br /><br /> oder<br /><br /> **STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE**|
 |Edit.DecreaseFilterLevel|**ALT+,**|
 |Edit.IncreaseFilterLevel|**ALT+.**|
@@ -1094,7 +1094,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |WorkflowDesigner.Restore|**STRG+E, STRG+R**<br /><br /> oder<br /><br /> **STRG+E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**STRG+E, STRG+A**<br /><br /> oder<br /><br /> **STRG+E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**STRG+E, STRG+I**<br /><br /> oder<br /><br /> **STRG+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**STRG+E, STRG+O**<br /><br /> oder<br /><br /> **STRG+E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**STRG+E, STRG+O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**STRG+E, STRG+V**<br /><br /> oder<br /><br /> **STRG+E, V**|
 |WorkflowDesigner.ToggleSelection|**STRG+E, STRG+S**<br /><br /> oder<br /><br /> **STRG+E, S**|
 |WorkflowDesigner.ZoomIn|**STRG+NUM +**|
@@ -1103,8 +1103,8 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="xaml-ui-designer"></a>XAML-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
-|Design.FitAll|**STRG+0**|
+|--------------| - |
+|Design.FitAll|**STRG+0** (null)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**STRG+ALT+=**|
 |Design.ZoomOut|**STRG+ALT+-**|
@@ -1125,14 +1125,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 ##  <a name="xml-text-editor"></a>XML-(Text)-Editor
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**STRG+ALT+F5**|
 
 ##  <a name="xml-schema-designer"></a>XML-Schema-Designer
 
 |Befehle|Tastenkombinationen|
-|--------------|------------------------|
+|--------------| - |
 |GraphView.BottomtoTop|**ALT+NACH-OBEN-TASTE**|
 |GraphView.LefttoRight|**ALT+NACH-RECHTS-TASTE**|
 |GraphView.RighttoLeft|**ALT+NACH-LINKS-TASTE**|

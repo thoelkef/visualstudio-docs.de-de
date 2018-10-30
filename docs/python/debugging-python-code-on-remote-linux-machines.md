@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code auf Linux-Remotecomputern
 description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remote-Computern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549310"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356768"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -26,7 +26,7 @@ Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgefüh
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Einrichten eines Linux-Computers
 
@@ -74,10 +74,8 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   Das erste Argument, das an `enable_attach` (als „geheimer Schlüssel“ bezeichnet) übergeben wird, schränkt den Zugriff auf das ausgeführte Skript ein, und Sie geben diesen geheimen Schlüssel ein, wenn Sie den Remotedebugger anfügen. (Obwohl dies nicht empfohlen wird, können Sie allen Benutzern das Herstellen einer Verbindung erlauben, und `enable_attach(secret=None)` verwenden.)
 
 1. Speichern Sie die Datei, und führen Sie `python3 guessing-game.py` aus. Der Aufruf von `enable_attach` wird im Hintergrund ausgeführt und wartet auf eingehende Verbindungen, da Sie andernfalls mit dem Programm interagieren. Bei Bedarf kann die Funktion `wait_for_attach` nach `enable_attach` aufgerufen werden, um das Programm zu blockieren, bis der Debugger angefügt wurde.
 
@@ -96,10 +94,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Legen Sie im nun angezeigten Dialogfeld **An den Prozess anhängen** den **Verbindungstyp** auf **Python remote (ptvsd)** fest. (In älteren Versionen von Visual Studio werden diese Befehle als **Transport** und **Python-Remotedebuggen** bezeichnet.)
 
-1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<secret>@<ip_address>:5678` ein, wobei `<secret>` für die übergebene Zeichenfolge `enable_attach` im Python-Code, `<ip_address>` für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht.
-
-    > [!Warning]
-    > Wenn Sie eine Verbindung über das öffentliche Internet herstellen, sollten Sie stattdessen `tcps` verwenden und die nachstehende Anweisung zum [Sichern der Debuggerverbindung mit SSL](#secure-the-debugger-connection-with-ssl) befolgen.
+1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<ip_address>:5678` ein, wobei `<ip_address>` für die Adresse für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht.
 
 1. Drücken Sie die **EINGABETASTE**, um die Liste der auf diesem Computer verfügbaren ptvsd-Prozesse aufzufüllen:
 
@@ -121,7 +116,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 1. Überprüfen Sie, ob der geheime Schlüssel im **Verbindungsziel** (oder **Qualifizierer**) mit dem geheimen Schlüssel im Remotecode genau übereinstimmt.
 1. Überprüfen Sie, ob die IP-Adresse im **Verbindungsziel** (oder **Qualifizierer**) der des Remotecomputers entspricht.
 1. Stellen Sie sicher, dass Sie den Port für das Remotedebuggen auf dem Remotecomputer geöffnet haben, und das Suffix des Ports wie z.B. `:5678` im Verbindungsziel enthalten ist.
-    - Wenn Sie einen anderen Port verwenden möchten, können Sie ihn im `enable_attach`-Aufruf mithilfe des `address`-Arguments angeben wie z.B. in `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. Öffnen Sie in diesem Fall diesen Port in der Firewall.
+    - Wenn Sie einen anderen Port verwenden möchten, können Sie ihn im `enable_attach`-Aufruf mithilfe des `address`-Arguments angeben wie z.B. in `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Öffnen Sie in diesem Fall diesen Port in der Firewall.
 1. Überprüfen Sie, ob die auf dem Remotecomputer installierte ptvsd-Version wie von `pip3 list` zurückgegeben mit der der Version der Python-Tools aus der untenstehenden Tabelle übereinstimmt, die Sie in Visual verwenden. Aktualisieren Sie bei Bedarf ptvsd auf dem Remotecomputer.
 
     | Visual Studio-Version | Python-Tools/ptvsd-Version |
@@ -136,9 +131,15 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Sichern der Debuggerverbindung mit SSL
+## <a name="using-ptvsd-3x"></a>Verwenden von ptvsd 3.x
 
-In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nur durch den geheimen Schlüssel geschützt, und alle Daten werden als Nur-Text übergeben. Für eine sicherere Verbindung unterstützt ptvsd SSL, das folgendermaßen eingerichtet wird:
+Die folgenden Informationen gelten nur für das Remotedebuggen mit ptvsd 3.x mit bestimmten Features, die in ptvsd 4.x entfernt wurden.
+
+1. Mit ptvsd 3.x erforderte die `enable_attach`-Funktion das Übergeben eines „Geheimnisses“ als erstes Argument, das den Zugriff auf das ausgeführte Skript einschränkt. Sie geben dieses Geheimnis beim Anfügen des Remotedebuggers ein. Obwohl dies nicht empfohlen wird, können Sie allen Benutzern das Herstellen einer Verbindung erlauben, indem Sie `enable_attach(secret=None)` verwenden.
+
+1. Die Verbindungsziel-URL ist `tcp://<secret>@<ip_address>:5678`, wobei `<secret>` die an `enable_attach` im Python-Code übergebene Zeichenfolge ist.
+
+In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver 3.x nur durch den geheimen Schlüssel geschützt, und alle Daten werden als Nur-Text übergeben. Für eine sicherere Verbindung unterstützt ptvsd 3.x SSL mit dem `tcsp`-Protokoll, das folgendermaßen eingerichtet wird:
 
 1. Generieren Sie auf dem Remotecomputer ein eigenständiges selbstsigniertes Zertifikat und Schlüsseldateien mit OpenSSL:
 
@@ -171,17 +172,12 @@ In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nu
 
     ![Auswählen des Transports für das Remotedebuggen über SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Warnungen
+1. Visual Studio meldet Ihnen beim Herstellen einer Verbindung über SSL mögliche Zertifikatprobleme. Sie können die Warnungen ignorieren und fortfahren. Obwohl der Kanal dann noch immer gegen Lauschangriffe verschlüsselt ist, kann er jedoch für Man-in-the-Middle-Angriffe geöffnet sein.
 
-Visual Studio meldet Ihnen beim Herstellen einer Verbindung über SSL mögliche Zertifikatsprobleme, wie unten beschrieben. Sie können die Warnungen ignorieren und fortfahren. Obwohl der Kanal dann noch immer gegen Lauschangriffe verschlüsselt ist, kann er jedoch für Man-in-the-Middle-Angriffe geöffnet sein.
+    1. Wenn die untenstehende Warnung **Das Remotezertifikat ist nicht vertrauenswürdig** angezeigt wird, bedeutet dies, dass Sie das Zertifikat nicht ordnungsgemäß zur vertrauenswürdigen Stammzertifizierungsstelle hinzugefügt haben. Überprüfen Sie diese Schritte, und versuchen Sie es erneut.
 
-1. Wenn die untenstehende Warnung **Das Remotezertifikat ist nicht vertrauenswürdig** angezeigt wird, bedeutet dies, dass Sie das Zertifikat nicht ordnungsgemäß zur vertrauenswürdigen Stammzertifizierungsstelle hinzugefügt haben. Überprüfen Sie diese Schritte, und versuchen Sie es erneut.
+        ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](media/remote-debugging-ssl-warning.png)
 
-    ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](media/remote-debugging-ssl-warning.png)
+    1. Wenn die untenstehende Warnung **Der Name des Remotezertifikats stimmt nicht mit dem Hostnamen überein** angezeigt wird, bedeutet dies, dass Sie bei der Erstellung des Zertifikats als **gemeinsamen Namen** nicht den richtigen Hostnamen oder nicht die richtige IP-Adresse eingegeben haben.
 
-1. Wenn die untenstehende Warnung **Der Name des Remotezertifikats stimmt nicht mit dem Hostnamen überein** angezeigt wird, bedeutet dies, dass Sie bei der Erstellung des Zertifikats als **gemeinsamen Namen** nicht den richtigen Hostnamen oder nicht die richtige IP-Adresse eingegeben haben.
-
-    ![SSL-Zertifikatwarnung Hostname](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> Derzeit hängt sich Visual Studio 2017 auf, wenn Sie diese Warnungen ignorieren. Achten Sie darauf, dass Sie alle Probleme beheben, bevor Sie versuchen, eine Verbindung herzustellen.
+        ![SSL-Zertifikatwarnung Hostname](media/remote-debugging-ssl-warning2.png)

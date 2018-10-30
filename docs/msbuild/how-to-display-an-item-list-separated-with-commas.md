@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081809"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880229"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
 Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.  
@@ -45,7 +45,7 @@ Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **/c:** gekennzeichnet. Das Elementtrennzeichen `/c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
+ In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **-c:** gekennzeichnet. Das Elementtrennzeichen `-c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
   
  In diesem Beispiel lautet die entsprechende Befehlszeile:  
   
