@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234480"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218403"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
   
 2.  Benennen Sie das Projekt mit `UpdateMultipleTablesWalkthrough`.  
   
-3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann**OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Die **UpdateMultipleTablesWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
@@ -81,7 +81,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
   
 2.  In der **Datenquellen** wählen Sie im Fenster**neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.  
   
-3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann**Weiter**.  
+3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann **Weiter**.  
   
 4.  Auf der **wählen Sie Ihre Datenverbindung**Bildschirm führen Sie einen der folgenden:  
   
@@ -91,9 +91,9 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
   
     -   Wählen Sie **neue Verbindung** zum Öffnen der **Verbindung hinzufügen/ändern** Dialogfeld.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann**Weiter**.  
+5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern**Option**Weiter**.  
+6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern**Option **Weiter**.  
   
 7.  Auf der **Datenbankobjekte auswählen**Bildschirm, erweitern Sie die **Tabellen** Knoten.  
   
@@ -127,7 +127,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
      Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [OrdersTableAdapter](../data-tools/tableadapter-overview.md) und <xref:System.Windows.Forms.BindingSource> werden in der Komponentenleiste angezeigt.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode zum Aktualisieren der Datenbank  
- Sie können die Datenbank aktualisieren, durch den Aufruf der `Update` Methoden der der **Kunden** und **Bestellungen** TableAdapters. Standardmäßig wird ein Ereignishandler für die**speichern** -Schaltfläche der<xref:System.Windows.Forms.BindingNavigator> Code des Formulars zum Senden von Updates in der Datenbank hinzugefügt. In dieser Prozedur wird den Code zum Senden von Updates in der richtigen Reihenfolge. Dadurch wird die Möglichkeit, referenzielle Integritätsfehler auslösen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.  
+ Sie können die Datenbank aktualisieren, durch den Aufruf der `Update` Methoden der der **Kunden** und **Bestellungen** TableAdapters. Standardmäßig wird ein Ereignishandler für die **speichern** -Schaltfläche der<xref:System.Windows.Forms.BindingNavigator> Code des Formulars zum Senden von Updates in der Datenbank hinzugefügt. In dieser Prozedur wird den Code zum Senden von Updates in der richtigen Reihenfolge. Dadurch wird die Möglichkeit, referenzielle Integritätsfehler auslösen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.  
   
 > [!NOTE]
 >  Aus Gründen der Übersichtlichkeit wird in dieser exemplarischen Vorgehensweise eine Transaktion nicht verwendet. Wenn jedoch aktualisieren Sie zwei oder mehr verknüpfte Tabellen, enthalten Sie alle Aktualisierungslogik einer Transaktion. Eine Transaktion ist ein Prozess, der gewährleistet, dass alle zugehörige Änderungen an einer Datenbank erfolgreich sind, bevor ein Commit für Änderungen ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und Parallelität](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  
   
-1.  Wählen Sie**F5**.  
+1.  Wählen Sie **F5**.  
   
 2.  Nehmen Sie in jeder Tabelle einige Änderungen an den Daten eines oder mehrerer Datensätze vor.  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865361"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219912"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostizieren von Problemen nach der Bereitstellung mit IntelliTrace
 
@@ -44,7 +44,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veraltet markiert und entfernt wurde. Verwenden Sie zum Debuggen von ASP.NET Web-apps nach der Bereitstellung eine der folgenden Methoden aus:
 
-* Verwenden Sie für die Bereitstellung in Azure, [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Verwenden Sie für die Bereitstellung in Azure, [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Wenn Sie IntelliTrace verwenden möchten, öffnen Sie das Projekt in Visual Studio, und Laden Sie die Symboldateien aus dem entsprechenden Build. Sie können Symboldateien aus Laden der **Module** Fenster oder durch Konfigurieren von Symbolen in **Tools** > **Optionen** > **Debuggen**   >  **Symbole**.
 

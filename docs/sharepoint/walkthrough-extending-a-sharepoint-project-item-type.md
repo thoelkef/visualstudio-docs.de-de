@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844511"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220325"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps
   Sie können die **Business Data Connectivity-Modell** Projektelement ein Modell für den Business Data Connectivity (BDC)-Dienst in SharePoint zu erstellen. Wenn Sie mit diesem Projektelement ein Modell erstellen, werden die Daten Benutzern im Modell standardmäßig nicht angezeigt. Sie müssen zusätlzlich eine externe Liste in SharePoint erstellen, damit Benutzer die Daten einsehen können.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844511"
   
 5.  In der **Namen** geben **SharePointProjectTestBDC**, und wählen Sie dann die **OK** Schaltfläche.  
   
-6.  Geben Sie die URL der Website, die Sie verwenden möchten, verwenden Sie zum Debuggen, wählen Sie im SharePoint Customization Wizard, **als farmlösung bereitstellen**, und wählen Sie dann die **Fertig stellen**Schaltfläche.  
+6.  Geben Sie die URL der Website, die Sie verwenden möchten, verwenden Sie zum Debuggen, wählen Sie im SharePoint Customization Wizard, **als farmlösung bereitstellen**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
 7.  Öffnen Sie das Kontextmenü für das SharePointProjectTestBDC-Projekt, wählen **hinzufügen**, und wählen Sie dann **neues Element**.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812932"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220416"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 3.  In der **Vorlagen** wählen Sie im Bereich **Windows-Anwendung**.  
   
-4.  Nennen Sie das Projekt `ConcurrencyWalkthrough`, und wählen Sie dann**OK**.  
+4.  Nennen Sie das Projekt `ConcurrencyWalkthrough`, und wählen Sie dann **OK**.  
   
      Visual Studio fügt das Projekt in **Projektmappen-Explorer** und ein neues Formular im Designer angezeigt.  
   
@@ -96,7 +96,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 5.  Erweitern Sie die **Tabellen** Knoten, und wählen die `Customers` Tabelle. Der Standardname für das Dataset sollte `NorthwindDataSet` sein.  
   
-6.  Wählen Sie**Fertig stellen** des Datasets zum Projekt hinzufügen.  
+6.  Wählen Sie **Fertig stellen** des Datasets zum Projekt hinzufügen.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Erstellen von einem datengebundenen DataGridView-Steuerelement  
  In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView> durch Ziehen der **Kunden** Element aus der **Datenquellen** auf das Windows-Formular.  
@@ -107,7 +107,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 2.  In der **Datenquellen** Fenster, erweitern Sie die **NorthwindDataSet** Knoten, und wählen Sie dann die **Kunden** Tabelle.  
   
-3.  Wählen Sie den Pfeil nach unten für den Tabellenknoten, und wählen Sie dann **DataGridView**in der Dropdown-Liste.  
+3.  Wählen Sie den Pfeil nach unten für den Tabellenknoten, und wählen Sie dann **DataGridView** in der Dropdown-Liste.  
   
 4.  Ziehen Sie die Tabelle auf einen leeren Bereich des Formulars.  
   
@@ -118,7 +118,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 #### <a name="to-test-the-form"></a>So testen Sie das Formular  
   
-1.  Wählen Sie**F5** zum Ausführen der Anwendung  
+1.  Wählen Sie **F5** zum Ausführen der Anwendung  
   
      Das Formular wird mit einem <xref:System.Windows.Forms.DataGridView> Steuerelement, das mit Daten gefüllt wird der `Customers` Tabelle.  
   
@@ -192,7 +192,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 #### <a name="to-test-the-form"></a>So testen Sie das Formular  
   
-1.  Wählen Sie**F5** zum Ausführen der Anwendung.  
+1.  Wählen Sie **F5** zum Ausführen der Anwendung.  
   
 2.  Wenn das Formular angezeigt wird, führen Sie es weiterhin, und wechseln Sie zur Visual Studio-IDE.  
   
@@ -215,8 +215,8 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.  
   
-10. Auswählen von**keine** wird die Aktualisierung abgebrochen und das Dataset mit den Werten, die derzeit in der Datenbank werden aktualisiert. Auswählen von**Ja** den vorgeschlagenen Wert in die Datenbank geschrieben.  
+10. Auswählen von **keine** wird die Aktualisierung abgebrochen und das Dataset mit den Werten, die derzeit in der Datenbank werden aktualisiert. Auswählen von **Ja** den vorgeschlagenen Wert in die Datenbank geschrieben.
   
-## <a name="see-also"></a>Siehe auch  
- [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Siehe auch
 
+- [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868576"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219828"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs der Visual Studio-Befehle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
   
 -   Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü in der die P unterstrichen ist.  
   
-     Zeichen, die durch das Zeichen "&" im Menü Elementnamen vorangestellt werden angezeigt, unterstrichen angezeigt. VSCT-Dateien wurden jedoch in XML, das das Zeichen "&" verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, das angezeigt werden soll geschrieben werden muss als&amp;". Aus diesem Grund in einer VSCT-Datei die **P**Rint-Befehl angezeigt wird, als "&amp;drucken".  
+     Zeichen, die durch das Zeichen "&" im Menü Elementnamen vorangestellt werden angezeigt, unterstrichen angezeigt. VSCT-Dateien wurden jedoch in XML, das das Zeichen "&" verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, das angezeigt werden soll geschrieben werden muss als&amp;". Aus diesem Grund in einer VSCT-Datei die **Drucken** -Befehl angezeigt wird, als "&amp;drucken".  
   
 -   Befehle, die dynamischer Text, z. B. auf **speichern** *aktuellen Dateinamen*, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.  
   

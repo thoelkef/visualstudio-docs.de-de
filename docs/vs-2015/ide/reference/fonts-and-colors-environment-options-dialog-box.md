@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949434"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220234"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**Schlüsselwort**|Schlüsselwörter für die angegebene Sprache, die reserviert sind. Beispiel: Klasse und Namespace.|  
 |**Speicheradresse**|Die Textfarbe, die zum Anzeigen der Adressspalte im Fenster **Arbeitsspeicher** verwendet wird|  
 |**Speicheränderung**|Die Textfarbe, die zum Anzeigen von geänderten Daten im Fenster **Arbeitsspeicher** verwendet wird|  
-|**Speicherdaten**|Die Textfarbe, die zum Anzeigen von Daten im Fenster **Arbeitsspeicher** verwendet wird|  
+|**Speicherdaten**|Die Farbe des Texts, die zum Anzeigen von Daten verwendet die **Arbeitsspeicher** Fenster.|  
 |**Speicher unlesbar**|Die Textfarbe, die zum Anzeigen von unlesbaren Speicherbereichen im Fenster **Arbeitsspeicher** verwendet wird|  
 |**Zahl**|Eine Zahl im Code, die einen tatsächlichen numerischen Wert darstellt.|  
 |**Operator**|Operatoren wie „+“, „-“ und „!=“.|  

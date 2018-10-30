@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928710"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220107"
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
+
 Sie können die Bildformen verwenden, um anzugeben, wie die Domänenklassen in einen generierten Designer angezeigt werden. Definieren Sie eine Bild-Form durch Festlegen der `Image` Eigenschaft der Klasse in einer vordefinierten Image-Datei. Die folgenden Formate werden unterstützt:
 
 - GIF
@@ -38,11 +39,11 @@ Sie können die Bildformen verwenden, um anzugeben, wie die Domänenklassen in e
 
 - .png
 
-  Standardmäßig befinden sich Designer Ressourcendateien, wie Bilddateien, in der **Ressourcen**Ordner in der **Dsl** Projekt.
+Standardmäßig befinden sich Designer Ressourcendateien, wie Bilddateien, in der **Ressourcen** Ordner in der **Dsl** Projekt.
 
-  Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Bildformen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
+Bildformen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 
 |Eigenschaft|Beschreibung|Standard|
 |-|-|-|

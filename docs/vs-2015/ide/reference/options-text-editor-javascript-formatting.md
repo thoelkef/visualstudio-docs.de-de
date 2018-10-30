@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271049"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219990"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Optionen, Text-Editor, JavaScript, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 |**Öffnende geschweifte Klammer für Kontrollblöcke in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einem Kontrollblock verknüpfte öffnende geschweifte Klammer (z. B. `if`- und `while`-Kontrollblöcke) in eine neue Zeile.|  
   
 ## <a name="spacing"></a>Abstand  
- Diese Optionen bestimmen, wie Abstände in der **Quellansicht** eingefügt werden.  
+ Diese Optionen bestimmen, wie für das Einfügen von Leerzeichen in **Quelle** anzeigen.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f9d3b735eb0633c5faf9b4b43ba15f6ec4a2d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d340a858c152b371c296883c19309c79f77aba1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195883"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218745"
 ---
 # <a name="launch"></a>Starten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
  **GlobalOn** und **GlobalOff**  
- Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), die Profilerstellungssitzung jedoch nicht  
+ Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), aber nicht die Profilerstellungssitzung  
   
  **ProcessOn:** `PID` und **ProcessOff**:`PID`  
  Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)  

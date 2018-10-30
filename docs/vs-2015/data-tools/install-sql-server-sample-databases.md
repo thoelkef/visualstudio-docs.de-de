@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213253"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217862"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installieren von SQL Server-Beispieldatenbanken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Beispieldatenbanken sind nützlich für das Experimentieren mit SQL und LINQ-Abf
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Zum Wiederherstellen einer Datenbank aus einer bak-Datei in Visual Studio  
   
-1.  Wenn Sie eine Microsoft SQL Server-Datenbank sichern, ist das Ergebnis einer bak-Datei an. Um die bak als Datenbankdatei wieder verwendbaren Datei machen zu können, muss er *wiederhergestellt*. Wählen Sie im Hauptmenü**Ansicht** > **Objekt-Explorer von SQL Server**. Wenn Sie nicht angezeigt wird, müssen Sie es zu installieren. Wechseln Sie zu **Systemsteuerung** > **Programme und Funktionen**, suchen Sie Microsoft Visual Studio 2015, und klicken Sie auf die **Änderung** Schaltfläche. Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, wählen Sie die **Objekt-Explorer von SQL Server**Kontrollkästchen, und klicken Sie dann mit der Installation fortfahren.  
+1.  Wenn Sie eine Microsoft SQL Server-Datenbank sichern, ist das Ergebnis einer bak-Datei an. Um die bak als Datenbankdatei wieder verwendbaren Datei machen zu können, muss er *wiederhergestellt*. Wählen Sie im Hauptmenü **Ansicht** > **Objekt-Explorer von SQL Server**. Wenn Sie nicht angezeigt wird, müssen Sie es zu installieren. Wechseln Sie zu **Systemsteuerung** > **Programme und Funktionen**, suchen Sie Microsoft Visual Studio 2015, und klicken Sie auf die **Änderung** Schaltfläche. Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, wählen Sie die **Objekt-Explorer von SQL Server** Kontrollkästchen, und klicken Sie dann mit der Installation fortfahren.  
   
 2.  In SQL Server Objekt-Explorer mit der Maustaste alle SQL Server-Datenbank-Engine (z. B. Localdb), und wählen**neue Abfrage**.  
   

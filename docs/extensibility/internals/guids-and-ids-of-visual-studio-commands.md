@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926541"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220159"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehle
 Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthaltenen Befehle werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
   
 -   Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü, in dem die *P* unterstrichen ist.  
   
-     Zeichen, die das kaufmännische und-Zeichen vorangestellt werden (&) Zeichen in der Elementnamen im Menü angezeigt werden unterstrichen angezeigt. Allerdings *VSCT* Dateien werden geschrieben, in XML, das das kaufmännische und-Zeichen (&) verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, die angezeigt wird, werden als geschrieben werden muss  *&amp;Amp;*. Aus diesem Grund in einer *VSCT* -Datei, die **P**Rint-Befehl angezeigt wird, als  *&amp;Amp; Drucken*.  
+     Zeichen, die das kaufmännische und-Zeichen vorangestellt werden (&) Zeichen in der Elementnamen im Menü angezeigt werden unterstrichen angezeigt. Allerdings *VSCT* Dateien werden geschrieben, in XML, das das kaufmännische und-Zeichen (&) verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, die angezeigt wird, werden als geschrieben werden muss  *&amp;Amp;*. Aus diesem Grund in einer *VSCT* -Datei, die **Drucken** -Befehl angezeigt wird, als  *&amp;Amp; Drucken*.  
   
 -   Befehle, die dynamischer Text, z. B. auf **speichern** \<aktuellen Dateinamen\>, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.  
   

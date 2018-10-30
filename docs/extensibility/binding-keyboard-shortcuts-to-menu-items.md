@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822100"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219639"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
 Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, nur einen Eintrag hinzufügen die *VSCT* Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Befehle der Hilfesymbolleiste eine Tastenkombination zugeordnet, und das Anwenden der Zuordnung von Tastenkombinationen in der Standard-Editor oder nur für einen benutzerdefinierten Editor.  
@@ -45,7 +45,7 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, nur ein
 4. Versuchen Sie es für verschiedene Kombinationen von Schlüsseln aus, bis Sie einen finden, die nicht zugeordnet ist.  
   
    > [!NOTE]
-   >  Tastenkombinationen, mit denen **Alt** ein Menü öffnen und einen Befehl nicht direkt ausführen kann. Aus diesem Grund die **Sicherheitsrolle, die momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die enthält **Alt**. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht durch Schließen geöffnet wird die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
+   >  Tastenkombinationen, mit denen **Alt** ein Menü öffnen und einen Befehl nicht direkt ausführen kann. Aus diesem Grund die **momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die enthält **Alt**. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht durch Schließen geöffnet wird die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
   
    Das folgende Verfahren wird davon ausgegangen, dass Sie einen vorhandenen VSPackage mit einem Menübefehl verfügen. Wenn Sie hierzu Hilfe benötigen, sehen Sie sich [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -78,7 +78,7 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, nur ein
   
    In den meisten Fällen **UMSCHALT** sollte nicht ohne einen zweiten Modifizierer verwendet werden, da es bereits drücken führt dazu, dass die meisten alphanumerische Schlüssel keine Großbuchstaben oder ein Symbol, eingeben.  
   
-   Virtuelle Tastencodes können Sie die spezielle Schlüssel zugreifen, die nicht mit einem Zeichen zugeordnet sind, z. B. Funktionstasten verfügen und die **RÜCKTASTE** Schlüssel. Weitere Informationen finden Sie unter [virtuelle Tastencodes](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Virtuelle Tastencodes können Sie die spezielle Schlüssel zugreifen, die nicht mit einem Zeichen zugeordnet sind, z. B. Funktionstasten verfügen und die **RÜCKTASTE** Schlüssel. Weitere Informationen finden Sie unter [virtuelle Tastencodes](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Der Befehl zur Verfügung, in der Visual Studio-Editor-legen fest, um die `editor` Attribut `guidVSStd97`.  
   
