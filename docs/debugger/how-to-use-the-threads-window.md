@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933559"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219886"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung in Visual Studio mithilfe des Fensters Threads
 Visual Studio bietet eine **Threads** Fenster und andere Elemente können Sie das Debuggen von Multithreadanwendungen der Benutzeroberfläche. In diesem Tutorial wird gezeigt, wie mit der **Threads** Fenster und die **Debugspeicherort** Symbolleiste. Weitere Informationen zu den anderen Tools finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). Dieses Tutorial dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen.   
@@ -37,7 +37,7 @@ Um zu Beginn dieses Lernprogramms benötigen Sie ein Multithreadanwendungsprojek
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#-**, oder **Visual C++**.  
+2.  In der **Projekttypen** klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#** , oder **Visual C++**.  
   
 3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.  
   
