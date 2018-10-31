@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756287"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219145"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Gewusst wie: Hinzufügen und Entfernen zusätzlicher Assemblys
   Wenn ein SharePoint-Paket im Hinblick auf Funktionen oder Daten von anderen Assemblys abhängig ist, können Sie die Assemblys dem Lösungspaket (.wsp) hinzufügen. Auf diese Weise stellt der SharePoint-Server sicher, dass benutzerdefinierte Assemblys mit einem Paket installiert werden.  
@@ -66,7 +66,7 @@ ms.locfileid: "36756287"
   
 #### <a name="to-add-a-safe-control"></a>So fügen Sie ein sicheres Steuerelement hinzu  
   
-1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten**Schaltfläche.  
+1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.  
   
 2.  In der **sichere Steuerelemente** Bereich, wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.  
   
