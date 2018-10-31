@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823878"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218924"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) enthält die folgenden Eigenschaften.
@@ -71,16 +71,6 @@ Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelld
 **Schnittstellen- und MustOverride-Member automatisch einfügen**
 
 Wenn Sie ein Commit für eine `Implements`-Anweisung oder eine `Inherits`-Anweisung für eine Klasse ausführen, fügt der Text-Editor Prototypen für die Member ein, die implementiert bzw. überschrieben werden müssen.
-
-**Zeilentrennzeichen zwischen Prozeduren anzeigen**
-
-Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
-
-|Position in der VB-Quelldatei|Beispiel für die Linienposition|
-| - | - |
-|Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
-|Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
-|Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
 
 **Vorschläge für Fehlerkorrektur aktivieren**
 

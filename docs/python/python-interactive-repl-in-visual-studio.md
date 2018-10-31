@@ -1,7 +1,7 @@
 ---
 title: Interaktives Python-Fenster (REPL)
 description: Verwenden des interaktiven Fensters (REPL) für Python-Code in Visual Studio für die schnelle Codeentwicklung.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499067"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219925"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -39,7 +39,7 @@ Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich d
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) zum **interaktiven** Fenster an (2 Minuten, 22 Sekunden).|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) zum **interaktiven** Fenster an (2 Minuten, 22 Sekunden).|
 
 ## <a name="open-an-interactive-window"></a>Öffnen eines interaktiven Fensters
 

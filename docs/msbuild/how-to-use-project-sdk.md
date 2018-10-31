@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151014"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220443"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
 
@@ -101,7 +101,7 @@ Beim Auswerten des Imports löst [!INCLUDE[vstecmsbuild](../extensibility/intern
    Dieser Resolver sucht Projekt-SDKs wie z.B. `Microsoft.NET.Sdk` und `Microsoft.NET.Sdk.Web`, die Bestandteil des Produkts sind.
 3. Ein standardmäßiger Resolver, der mit MSBuild installierte SDKs auflöst.
 
-Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in Ihrer [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json), mit der Sie die Projekt-SDK-Version zentral anstatt in jedem einzelnen Projekt steuern können:
+Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in Ihrer [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json), mit der Sie die Projekt-SDK-Version zentral anstatt in jedem einzelnen Projekt steuern können:
 
 ```json
 {

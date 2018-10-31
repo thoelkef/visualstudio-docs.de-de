@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
 description: Der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499018"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220468"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -37,8 +37,8 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) mit einer Einführung in Python-Projekte an (2 Minuten, 17 Sekunden). |
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | Sehen Sie sich auch [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten) (youtube.com, 8 Minuten und 55 Sekunden) an. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) mit einer Einführung in Python-Projekte an (2 Minuten, 17 Sekunden). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Sehen Sie sich auch [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten) (youtube.com, 8 Minuten und 55 Sekunden) an. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 

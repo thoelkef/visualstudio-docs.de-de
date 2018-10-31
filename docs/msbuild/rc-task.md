@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151653"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219431"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
-Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler).
+Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der RC-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
