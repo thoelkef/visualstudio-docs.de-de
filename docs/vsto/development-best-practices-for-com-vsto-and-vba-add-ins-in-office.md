@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671092"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Entwicklungsmethoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die besten Entwicklungsmethoden in diesem Artikel beschrieben.   Dadurch wird sichergestellt:
@@ -39,12 +39,12 @@ Wenn Ihre Lösung verwendet .NET 4.0 oder höher verwenden eingebettete interop-
 Wenn Ihre Lösung auf eine frühere Version von .NET verwendet, empfehlen wir, dass Sie die Projektmappe, um .NET 4.0 oder höher verwenden, aktualisieren. Mithilfe von .NET 4.0 oder höher reduziert die Common Language Runtime von erforderlichen Komponenten auf neuere Versionen von Windows.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Vermeiden Sie abhängig von bestimmten Versionen von Office  
-Ihre Lösung Funktionalität verwendet, die nur in neueren Versionen von Office verfügbar sind, sicher, dass die Funktion (wenn möglich, auf die Feature-Ebene) vorhanden ist. zur Laufzeit (z. B. mit der Ausnahme Ausnahmebehandlungsfehler oder indem Sie die Version überprüfen). Überprüfen Sie Mindestversionen, statt in bestimmten Versionen, wie z. B. die unterstützten APIs im Objektmodell, mit der [Application.Version Eigenschaft](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Es wird nicht empfohlen, dass Sie auf Office binary Metadaten, Installationspfade oder Registrierungsschlüssel verlassen, da diese Installationen, Umgebungen und Versionen ändern können.
+Ihre Lösung Funktionalität verwendet, die nur in neueren Versionen von Office verfügbar sind, sicher, dass die Funktion (wenn möglich, auf die Feature-Ebene) vorhanden ist. zur Laufzeit (z. B. mit der Ausnahme Ausnahmebehandlungsfehler oder indem Sie die Version überprüfen). Überprüfen Sie Mindestversionen, statt in bestimmten Versionen, wie z. B. die unterstützten APIs im Objektmodell, mit der [Application.Version Eigenschaft](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Es wird nicht empfohlen, dass Sie auf Office binary Metadaten, Installationspfade oder Registrierungsschlüssel verlassen, da diese Installationen, Umgebungen und Versionen ändern können.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Aktivieren Sie die 32-Bit- und 64-Bit-Office-Nutzung   
 Ihr Build-Standardziel sollte sowohl für 32-Bit-(x86) als auch für 64-Bit-(x64) unterstützen, es sei denn, Ihre Lösung von Bibliotheken abhängig ist, die nur für eine bestimmte Bitanzahl verfügbar sind. Die 64-Bit-Version von Office zunehmen bei Einführung, insbesondere in big Data-Umgebungen. Unterstützung sowohl für 32-Bit-als auch für 64-Bit-erleichtert Ihnen für Ihre Benutzer für den Übergang zwischen 32-Bit und 64-Bit-Versionen von Office.
 
-Beim Schreiben von VBA-Code wird mit 64-Bit-Safe declare-Anweisungen und Variablen nach Bedarf zu konvertieren. Darüber hinaus stellen Sie sicher, dass Dokumente Benutzer, die entweder 32-Bit oder 64-Bit-Versionen von Office ausführen, indem Sie Code für jede Bitanzahl für das Bereitstellen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [VBA-64-Bit-Anwendungen (Übersicht)](https://msdn.microsoft.com/library/office/gg264421.aspx).
+Beim Schreiben von VBA-Code wird mit 64-Bit-Safe declare-Anweisungen und Variablen nach Bedarf zu konvertieren. Darüber hinaus stellen Sie sicher, dass Dokumente Benutzer, die entweder 32-Bit oder 64-Bit-Versionen von Office ausführen, indem Sie Code für jede Bitanzahl für das Bereitstellen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [VBA-64-Bit-Anwendungen (Übersicht)](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Zur Unterstützung von eingeschränkter Umgebungen   
 Ihre Lösung sollte keine Rechte heraufstufung von Benutzerrechten-Konto oder Administratorrechte erfordern. Darüber hinaus sollte die Lösung nicht abhängig festlegen oder ändern:

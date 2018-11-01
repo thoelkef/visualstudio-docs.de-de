@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c202fb5101542a17a736f2c615c9644d63b88f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 231a0a297bfedf9b38c612368f5db770a2162369
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672937"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Änderungen am Entwurf von Office-Projekten mit der Zielversion .NET Framework 4 oder .NET Framework 4.5
   Mit [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]wurden in Visual Studio einige Änderungen am Entwurf von Office-Projekten eingeführt, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielen. Wenn Sie mit Office-Projekten in früheren Versionen von Visual Studio vertraut sind, sollten Sie diese Änderungen beachten, bevor Sie Office-Projekte entwickeln, die für diese Versionen von .NET Framework 4.0 oder höher bestimmt sind. Standardmäßig zielen alle Projekte, die Sie mit Visual Studio 2013 oder höher erstellen, auf .NET Framework 4.0 oder höher ab.  
@@ -61,7 +61,7 @@ ms.locfileid: "35672350"
   
 ## <a name="see-also"></a>Siehe auch  
  [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Neuerungen in Office-Entwicklung](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [Neuerungen in Office-Entwicklung](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
   

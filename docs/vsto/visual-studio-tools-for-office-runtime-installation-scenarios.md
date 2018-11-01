@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670896"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio-Tools für Office Runtime Installation scenarios
   Sie können Visual Studio 2010-Tools für Office-Laufzeit auf drei Arten installieren:  
@@ -60,14 +60,14 @@ ms.locfileid: "49857847"
   
  Die Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] werden zusammen mit Office installiert. Endbenutzer erhalten die Office-Erweiterungen für [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] durch Installieren eines Windows-Updates.  
   
- Um sicherzustellen, dass Ihre Benutzer über die notwendigen Erweiterungen zur Verwendung Ihrer Anwendung verfügen, enthalten Sie die neueste Version von Visual Studio 2010-Tools für Office-Laufzeit als erforderliche Komponente für Ihre Lösung. Weitere Informationen zu den Voraussetzungen finden Sie unter [erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Um sicherzustellen, dass Ihre Benutzer über die notwendigen Erweiterungen zur Verwendung Ihrer Anwendung verfügen, enthalten Sie die neueste Version von Visual Studio 2010-Tools für Office-Laufzeit als erforderliche Komponente für Ihre Lösung. Weitere Informationen zu den Voraussetzungen finden Sie unter [erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Installieren der Runtime mithilfe des verteilbaren Laufzeitpakets  
  Sie können die Laufzeit installieren, durch die Visual Studio 2010-Tools für Office-Laufzeit manuell ausführen oder durch die Redistributable-Komponente als erforderliche Komponente einschließen, wenn Sie eine Office-Projektmappe bereitstellen.  
   
  Bei der Installation der Laufzeit mithilfe von Visual Studio 2010-Tools für Office-Laufzeit, die Office-Erweiterungen für .NET Framework 3.5 und Office-Erweiterungen für die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher installiert werden, wenn die entsprechenden Versionen von .NET Framework sind bereits auf dem Computer vorhanden. Ist eine dieser .NET Framework-Versionen beim Installieren der Laufzeit nicht auf dem Computer vorhanden, werden die Office-Erweiterungen für die fehlende .NET Framework-Version zu diesem Zeitpunkt nicht installiert. Falls Sie die fehlende .NET Framework-Version zu einem späteren Zeitpunkt installieren, installiert die Laufzeit die entsprechenden Office-Erweiterungen automatisch, wenn das nächste Mal eine Projektmappe, die die Erweiterungen erfordert, installiert (wenn die Laufzeit mit einer mit ClickOnce bereitgestellten Projektmappe installiert wurde) oder geladen wird (wenn die Laufzeit mit einer mit Windows Installer bereitgestellten Projektmappe installiert wurde).  
   
- Weitere Informationen zum Einschließen erforderlicher Komponenten in einer ClickOnce-Projektmappe finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Weitere Informationen dazu, wie die Laufzeit mithilfe des verteilbaren Pakets manuell zu installieren, finden Sie unter [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Weitere Informationen zum Einschließen erforderlicher Komponenten in einer ClickOnce-Projektmappe finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Weitere Informationen dazu, wie die Laufzeit mithilfe des verteilbaren Pakets manuell zu installieren, finden Sie unter [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

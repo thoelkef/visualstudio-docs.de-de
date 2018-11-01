@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671416"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines VSTO-Add-Ins für Microsoft Office-Projekt. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -103,7 +103,7 @@ ms.locfileid: "49884861"
   
 1.  Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen. Microsoft Project startet und öffnet automatisch ein neues leeres Projekt.  
   
-     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Project das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über Office-Lösung das Erstellen](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Project das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über Office-Lösung das Erstellen](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Stellen Sie sicher, dass dem leeren Projekt eine neue Aufgabe hinzugefügt wird.  
   

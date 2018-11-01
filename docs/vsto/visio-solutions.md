@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 248fa3051a3d639798f37270dc7957a759e20d6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671546"
 ---
 # <a name="visio-solutions"></a>Visio-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Visio verwenden können. Mit VSTO-Add-Ins können Sie Visio automatisieren, Visio -Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Visio anpassen.  
@@ -66,7 +66,7 @@ ms.locfileid: "49941983"
 |----------|--------------------------|  
 |Anpassen des Menübands.|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
   
- Informationen zum Anpassen der Benutzeroberfläche von Visio finden Sie in der VBA-Referenzdokumentation für die Klasse [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) .  
+ Informationen zum Anpassen der Benutzeroberfläche von Visio finden Sie in der VBA-Referenzdokumentation für die Klasse [Visio.UIObject](/office/vba/api/Visio.UIObject) .  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673080"
 ---
 # <a name="create-outlook-form-regions"></a>Erstellen von Outlook-Formularbereichen
   Formularbereiche können zum Anpassen von Microsoft Office Outlook-Formularen verwendet werden. Visual Studio bietet erweiterte Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866427"
   
 - Anzeigen einer benutzerdefinierten Benutzeroberfläche im Lesebereich und in den Inspektoren.  
   
-  Weitere Informationen finden Sie unter [Anpassen von Formularseiten und Formularbereichen](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Weitere Informationen finden Sie unter [Anpassen von Formularseiten und Formularbereichen](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Hinzufügen eines Outlook-Formularbereichs zu Ihrem Projekt  
  Sie können die **neuer Outlook-Formularbereich** Assistenten können Sie einen neuen Formularbereich entwerfen oder einen, der in Outlook entworfenen Formularbereich importieren. Wenn Sie über einen Formularbereich verfügen, den Sie in einem anderen Outlook VSTO-Add-In-Projekt verwendet haben, können Sie außerdem Ihren vorhandenen Formularbereich wiederverwenden.  

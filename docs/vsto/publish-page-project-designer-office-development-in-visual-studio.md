@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904712"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672716"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.  
@@ -32,7 +32,7 @@ ms.locfileid: "49904712"
  Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer**aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.  
   
 > [!NOTE]  
->  Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mit ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Speicherort des Veröffentlichungsordners (Website, FTP-Server oder Dateipfad)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904712"
   
  Lassen Sie dieses Feld leer, wenn sich die Installationsdateien an einem Speicherort befinden, der relativ zum Dokument oder Setupprogramm angegeben ist, z. B. bei der Option „CD“.  
   
- Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Erforderliche Komponenten**  
  Die erforderlichen Komponenten können in das Setupprogramm einbezogen oder bei Bedarf während der Installation heruntergeladen werden.  
@@ -113,6 +113,6 @@ ms.locfileid: "49904712"
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Bereitstellen einer Office-Projektmappe mit ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671931"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672225"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
 
@@ -44,7 +44,7 @@ Wenn Sie eine unterstützte Version von Visual Studio, die .NET Framework und Mi
 
      Um sicherzustellen, dass diese Tools installiert sind, starten Sie das Visual Studio-Setup-Programm, und wählen die **ändern** Schaltfläche. Aktivieren Sie das Kontrollkästchen **Microsoft Office Developer Tools** , und wählen Sie dann die Schaltfläche **Aktualisieren** aus.
 
-- Stellen Sie sicher, dass Sie eine Version von Office nicht ausführen, die mittels Klick-und-Los bereitgestellt wurde. Finden Sie unter [Vorgehensweise: Überprüfen, ob Outlook auf einem Computer eine Klick-und-Los-Anwendung ist](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Stellen Sie sicher, dass Sie eine Version von Office nicht ausführen, die mittels Klick-und-Los bereitgestellt wurde. Finden Sie unter [Vorgehensweise: Überprüfen, ob Outlook auf einem Computer eine Klick-und-Los-Anwendung ist](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Stellen Sie sicher, dass Sie nur eine Version von Microsoft Office ausführen.
 

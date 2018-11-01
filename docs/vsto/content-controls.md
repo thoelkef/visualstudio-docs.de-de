@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940228"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672898"
 ---
 # <a name="content-controls"></a>ContentControl-Elemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Funktionen aufweisen:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940228"
  Es gibt neun verschiedene Typen von Inhaltssteuerelementen, die Sie Dokumenten hinzufügen können. Die meisten der Inhaltssteuerelemente besitzen einen entsprechenden Typ im Namespace <xref:Microsoft.Office.Tools.Word>. Sie können auch einen generischen Namespace <xref:Microsoft.Office.Tools.Word.ContentControl> verwenden, der eines der verfügbaren Inhaltssteuerelemente darstellen kann. Eine exemplarische Vorgehensweise, die zeigt, wie die einzelnen verfügbaren Inhaltssteuerelemente verwendet werden, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Erstellen Sie die Block-Katalog  
- Ein Bausteinkatalog ermöglicht Benutzern die Auswahl aus einer Liste von *Dokumentbausteinen* in ein Dokument eingefügt. Ein Dokumentbaustein ist ein Inhaltselement, das erstellt wurde, um mehrere Male verwendet zu werden, z. B. eine allgemeine Titelseite, eine formatierte Tabelle oder ein Header . Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Typ. Weitere Informationen zu Bausteinen finden Sie unter [Neuigkeiten für Entwickler in Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Ein Bausteinkatalog ermöglicht Benutzern die Auswahl aus einer Liste von *Dokumentbausteinen* in ein Dokument eingefügt. Ein Dokumentbaustein ist ein Inhaltselement, das erstellt wurde, um mehrere Male verwendet zu werden, z. B. eine allgemeine Titelseite, eine formatierte Tabelle oder ein Header . Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Typ. Weitere Informationen zu Bausteinen finden Sie unter [Neuigkeiten für Entwickler in Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Kontrollkästchen  
  Ein Kontrollkästchen stellt eine Benutzeroberfläche zur Verfügung, die einen binären Zustand darstellt: aktiviert oder deaktiviert.  

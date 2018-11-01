@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673054"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Bereitstellen einer Office-Projektmappe mit Windows Installer
 Erfahren Sie, wie Sie mithilfe von [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]einen Windows Installer für Ihre Office-Projektmappe erstellen.  
@@ -532,7 +532,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 
 ## <a name="see-also"></a>Siehe auch  
-[Erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
 [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md)  

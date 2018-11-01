@@ -24,11 +24,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673369"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744911"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatisieren von Excel mithilfe von erweiterten Objekten
   Wenn Sie Excel-Projektmappen in Visual Studio entwickeln, können Sie auch *Hostelemente* und *Hoststeuerelemente*in den Projektmappen verwenden. Dies sind Objekte, die bestimmte häufig verwendete Objekte im Excel-Objektmodell (das von der primären Interopassembly für Excel verfügbar gemacht wird) erweitern. Dazu gehören z. B. die Objekte <xref:Microsoft.Office.Interop.Excel.Worksheet> und <xref:Microsoft.Office.Interop.Excel.Range> . Die erweiterten Objekte verhalten sich wie die Excel-Objekte, auf denen sie basieren, fügen den Objekten jedoch zusätzliche Ereignis- und Datenbindungsfunktionen hinzu.  
@@ -40,11 +40,11 @@ ms.locfileid: "35673369"
 ## <a name="excel-host-items"></a>Excel-Hostelemente  
  Excel-Projekte ermöglichen Ihnen den Zugriff auf mehrere Hostelemente:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet> Dieses Hostelement enthält, und stellt ein Arbeitsblatt in Ihrem Projekt dar. Es dient auch als Container für verwaltete Steuerelemente, einschließlich Hoststeuerelementen und Windows Forms-Steuerelementen, und es enthält Informationen über die Steuerelemente auf seiner Oberfläche. Weitere Informationen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Dieses Hostelement enthält, und stellt ein Arbeitsblatt in Ihrem Projekt dar. Es dient auch als Container für verwaltete Steuerelemente, einschließlich Hoststeuerelementen und Windows Forms-Steuerelementen, und es enthält Informationen über die Steuerelemente auf seiner Oberfläche. Weitere Informationen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook> Dieses Hostelement stellt die Arbeitsmappe im Projekt dar und dient als Container für Komponenten, die von allen Arbeitsblättern in der Arbeitsmappe gemeinsam verwendet werden. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Workbook>. Dieses Hostelement stellt die Arbeitsmappe im Projekt dar und dient als Container für Komponenten, die von allen Arbeitsblättern in der Arbeitsmappe gemeinsam verwendet werden. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet> Dieses Hostelement entspricht einem Excel-Arbeitsblatt, das nur ein Diagramm enthält und Ereignisse verfügbar macht.  
+-   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Dieses Hostelement entspricht einem Excel-Arbeitsblatt, das nur ein Diagramm enthält und Ereignisse verfügbar macht.  
   
      Wenn Sie ein Diagrammblatt zur Entwurfszeit als neues Blatt in Ihrem Microsoft Office Excel-Anpassungsprojekt auf Dokumentebene hinzufügen, erstellt Visual Studio automatisch ein <xref:Microsoft.Office.Tools.Excel.ChartSheet> -Hostelement.  
   

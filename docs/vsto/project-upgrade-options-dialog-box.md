@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671936"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Projekt aktualisieren, Optionen (Dialogfeld)
   Auf der Seite **Projekt-Upgrade** geben Sie an, ob Visual Studio automatisch VSTO-Add-In-Projekte für die Version von Office ändert, die auf dem Entwicklungscomputer installiert ist.  
@@ -37,6 +37,6 @@ ms.locfileid: "35673705"
   
 ## <a name="see-also"></a>Siehe auch  
  [Aktualisieren und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Gewusst wie: Upgrade von Office-Projektmappen](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Gewusst wie: Upgrade von Office-Projektmappen](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

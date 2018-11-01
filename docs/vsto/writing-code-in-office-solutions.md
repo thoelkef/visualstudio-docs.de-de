@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670987"
 ---
 # <a name="write-code-in-office-solutions"></a>Schreiben Sie Code in Office-Projektmappen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.  
@@ -62,7 +62,7 @@ ms.locfileid: "35672302"
  Die Office-PIAs sind jedoch auf Endbenutzercomputern nicht erforderlich, um Office-Projektmappen auszuführen, für die als Zielversion [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher festgelegt wurde. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Verwenden von Typen in primären Interopassemblys  
- Die Office-PIAs enthalten eine Kombination von Typen, die das Objektmodell der Office-Anwendungen und zusätzliche Infrastrukturtypen verfügbar machen, die nicht zur direkten Verwendung im Code vorgesehen sind. Einen Überblick über die Typen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interopassemblys für Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Die Office-PIAs enthalten eine Kombination von Typen, die das Objektmodell der Office-Anwendungen und zusätzliche Infrastrukturtypen verfügbar machen, die nicht zur direkten Verwendung im Code vorgesehen sind. Einen Überblick über die Typen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interopassemblys für Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Da die Typen in den Office-PIAs Typen in den COM-basierten Objektmodellen entsprechen, unterscheidet sich die Art der Verwendung dieser Typen von der anderer verwalteter Typen. Zum Beispiel hängt die Art, wie Sie Methoden mit optionalen Parameter in einer primären Interopassembly von Office aufrufen, von der im Projekt verwendeten Programmiersprache ab. Weitere Informationen finden Sie unter den folgenden Themen:  
   

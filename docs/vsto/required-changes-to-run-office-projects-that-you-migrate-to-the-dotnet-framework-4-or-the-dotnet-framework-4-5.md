@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670792"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Erforderliche Änderungen für das Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn das Zielframework eines Office-Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später von einer früheren Version von .NET Framework, Sie müssen die folgenden Aufgaben aus, um sicherzustellen, dass die Lösung auf dem Entwicklungscomputer und auf Endbenutzercomputern ausgeführt werden kann:  
@@ -67,7 +67,7 @@ ms.locfileid: "49883476"
 ## <a name="update-the-prerequisites-for-deployment"></a>Aktualisieren Sie die Voraussetzungen für die Bereitstellung  
  Wenn Sie ein Office-Projekt umleiten [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher verwenden, müssen Sie auch die entsprechenden .NET Framework-Voraussetzung im aktualisieren die **Voraussetzungen** Dialogfeld. Andernfalls sucht die ClickOnce-Bereitstellung oder das InstallShield Limited Edition-Projekt nach einer früheren Version von .NET Framework und installiert diese.  
   
- Weitere Informationen zu den Voraussetzungen für die Bereitstellung auf Endbenutzercomputern aktualisiert, finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Weitere Informationen zu den Voraussetzungen für die Bereitstellung auf Endbenutzercomputern aktualisiert, finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Installieren von Projektmappen auf Endbenutzercomputern  
  Wenn Sie mithilfe von ClickOnce eine Office-Projektmappe bereitstellen, die als Zielframework .NET Framework 3.5 verwendet, und dann das Projekt auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher umstellen, müssen Endbenutzer die Projektmappe deinstallieren und dann erneut installieren, nachdem Sie sie veröffentlicht haben. Wenn Sie erneut, die neu zugewiesene Lösung veröffentlichen, und die Lösung auf Endbenutzercomputern aktualisiert wird, erhalten Endbenutzer eine <xref:System.Runtime.InteropServices.COMException> Wenn sie die aktualisierte Lösung ausführen.  

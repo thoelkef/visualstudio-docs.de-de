@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865725"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671079"
 ---
 # <a name="secure-deployment"></a>Sichere Bereitstellung
   Wenn Sie eine Office-Projektmappe erstellen, wird Ihrem Entwicklungscomputer automatisch aktualisiert, um in Ihrem Projekt zum Ausführen des Codes zu ermöglichen. Wenn Sie Ihre Lösung bereitstellen, Sie müssen jedoch bereitstellen Beweise auf der eine Entscheidung über die Vertrauenswürdigkeit basieren, indem Sie die Projektmappe mit einem Zertifikat signieren oder die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vorgelegt. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).  
@@ -49,7 +49,7 @@ ms.locfileid: "49865725"
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
- [Vorbereiten der Computer zum Ausführen oder hosten Office-Projektmappen](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [Vorbereiten der Computer zum Ausführen oder hosten Office-Projektmappen](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
   
   

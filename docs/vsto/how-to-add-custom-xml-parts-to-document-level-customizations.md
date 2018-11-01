@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673409"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744862"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Gewusst wie: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene
   Sie können XML-Daten in einer Microsoft Office Excel-Arbeitsmappe oder in einem Microsoft Office Word-Dokument speichern, indem Sie einen benutzerdefinierten XML-Abschnitt in einer Anpassung auf Dokumentebene erstellen. Weitere Informationen finden Sie unter [Übersicht über die benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).  
@@ -42,7 +42,7 @@ ms.locfileid: "35673409"
      [!code-csharp[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.vb#1)]  
   
-2.  Fügen Sie die `AddCustomXmlPartToWorkbook` -Methode der `ThisWorkbook` -Klasse in einem Projekt auf Dokumentebene für Excel hinzu.  
+2.  Fügen Sie die `AddCustomXmlPartToWorkbook`-Methode der `ThisWorkbook`-Klasse in einem Projekt auf Dokumentebene für Excel hinzu.  
   
 3.  Rufen Sie die Methode aus anderem Code in Ihrem Projekt auf. Um z. B. das benutzerdefinierte XML-Element zu erstellen, wenn der Benutzer eine Arbeitsmappe öffnet, rufen Sie die Methode über den `ThisWorkbook_Startup` -Ereignishandler auf.  
   

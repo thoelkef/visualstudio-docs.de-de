@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671702"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.  
@@ -45,7 +45,7 @@ ms.locfileid: "35673680"
 ##  <a name="Apps"></a> Erstellen von Add-Ins für Office und SharePoint  
  Office 2013 und SharePoint 2013 stellen ein neues Add-In-Modell vor, das Ihnen hilft, Add-Ins als Erweiterungen von Office und SharePoint zu erstellen, zu verteilen und damit Geld zu verdienen.  Diese Add-Ins können in Office oder SharePoint online ausgeführt werden, und Benutzer können von vielen Geräten mit ihnen interagieren.  
   
- Erfahren Sie, wie Sie das neue [Office-Add-in-Modell](https://msdn.microsoft.com/library/office/jj220082.aspx) der Office-Erfahrungen Ihrer Benutzer zu erweitern.  
+ Erfahren Sie, wie Sie das neue [Office-Add-in-Modell](/office/dev/add-ins/overview/office-add-ins) der Office-Erfahrungen Ihrer Benutzer zu erweitern.  
   
  Diese Add-Ins belegen kleine nur Arbeitsspeicher im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  Verwenden Sie zu Beginn die Office Developer Tools in Visual Studio oder das einfache, webbasierte Tool mit dem Codenamen Napa Office 365-Entwicklungstools, mit dessen Hilfe Sie Projekte erstellen, Code schreiben und Ihre Add-Ins in einem Browser ausführen können.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35673680"
   
 |Beschreibung|Siehe|  
 |--------|---------|  
-|Erfahren Sie mehr über Office-Add-Ins, und erstellen Sie dann eins.|[Office-Add-Ins](http://msdn.microsoft.com/office/dn448457)|  
-|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie eine Anwendung oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-ins, VSTO und VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Erfahren Sie mehr über Office-Add-Ins, und erstellen Sie dann eins.|[Office-Add-Ins](/office/dev/add-ins/publish/publish)|  
+|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie eine Anwendung oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-ins, VSTO und VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Erstellen einer SharePoint-Add-in  
  Um SharePoint für Ihre Benutzer zu erweitern, erstellen Sie ein SharePoint-Add-In. Es ist im Grunde eine kleine, leicht zu bedienende, eigenständige Anwendung, die für Ihre Benutzer oder Unternehmen müssen löst.  
@@ -80,9 +80,9 @@ ms.locfileid: "35673680"
   
 |Beschreibung|Siehe|  
 |--------|---------|  
-|Erfahren Sie mehr über SharePoint-Add-Ins, und erstellen Sie dann eins.|[SharePoint-Add-Ins](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Vergleichen Sie Add-Ins für SharePoint mit herkömmlichen SharePoint-Lösungen.|[SharePoint-Add-ins im Vergleich mit SharePoint-Lösungen](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Wählen Sie aus, ob Sie SharePoint-Add-In oder eine SharePoint-Lösung erstellen möchten.|[Entscheiden Sie zwischen SharePoint-Add-ins und SharePoint-Lösungen](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Erfahren Sie mehr über SharePoint-Add-Ins, und erstellen Sie dann eins.|[SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|Vergleichen Sie Add-Ins für SharePoint mit herkömmlichen SharePoint-Lösungen.|[SharePoint-Add-ins im Vergleich mit SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|Wählen Sie aus, ob Sie SharePoint-Add-In oder eine SharePoint-Lösung erstellen möchten.|[Entscheiden Sie zwischen SharePoint-Add-ins und SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> Erstellen eines VSTO-Add-Ins  
  Erstellen Sie ein VSTO-add-in für Office 2007 oder Office 2010 oder Office 2013 und Office 2016 mehr möglich, mit Office-add-ins erweitern. VSTO-Add-Ins können nur auf dem Desktop ausgeführt werden. Benutzer müssen VSTO-add-ins installieren, da sind in der Regel schwieriger bereitzustellen und zu unterstützen.  Allerdings kann das VSTO-Add-In stärker in Office integriert werden. Sie können z. B. die Office-Multifunktionsleiste Registerkarten und Steuerelemente hinzufügen und erweiterte Automatisierung-Aufgaben wie das Zusammenführen von Dokumenten oder das Ändern von Diagrammen durchführen. Sie können das .NET Framework einsetzen und C# und Visual Basic zur Interaktion mit Office-Objekten verwenden.  
@@ -95,8 +95,8 @@ ms.locfileid: "35673680"
   
 |An|Lesen|  
 |--------|----------|  
-|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie ein VSTO-Add-In oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-ins, VSTO und VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Erstellen eines VSTO-Add-Ins|[Mit Visual Studio erstellte VSTO-Add-Ins](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie ein VSTO-Add-In oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-ins, VSTO und VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|Erstellen eines VSTO-Add-Ins|[Mit Visual Studio erstellte VSTO-Add-Ins](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> Erstellen einer SharePoint-Lösung  
  Erstellen Sie eine SharePoint-Lösung für SharePoint Foundation 2010 und SharePoint Server 2010 oder als Erweiterung von SharePoint 2013 und SharePoint 2016 hinausgeht, was mit einem SharePoint-add-in möglich ist.  
@@ -107,7 +107,7 @@ ms.locfileid: "35673680"
   
 |Beschreibung|Siehe|  
 |--------|---------|  
-|Vergleichen Sie SharePoint-Lösungen und SharePoint-Add-Ins.|[SharePoint-Add-ins im Vergleich mit SharePoint-Lösungen](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Vergleichen Sie SharePoint-Lösungen und SharePoint-Add-Ins.|[SharePoint-Add-ins im Vergleich mit SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Erstellen Sie eine SharePoint-Lösung.|[Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)|  
   
   
