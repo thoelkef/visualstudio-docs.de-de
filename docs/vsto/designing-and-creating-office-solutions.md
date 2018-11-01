@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671243"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedliche Typen von Office-Projektmappen erstellen können. In diesem Abschnitt der Dokumentation werden die Projektvorlagen beschrieben und Anweisungen zum Erstellen von Office-Projekten bereitgestellt. Weitere Informationen zum Implementieren von Code- und Benutzeroberflächenanpassungen, nachdem Sie das Projekt erstellt haben, finden Sie unter [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md).  
@@ -53,7 +53,7 @@ ms.locfileid: "49917180"
   
   Nachdem das Zielframework von Visual Studio geändert wurde, müssen Sie jedoch möglicherweise einen Teil des Codes im Projekt ändern, wenn es bestimmte Funktionen verwendet. Weitere Informationen zur Vorgehensweise beim Ändern des Zielframeworks finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Weitere Informationen zu Änderungen, die Sie im Projekt erstellen möchten, finden Sie unter [Migrieren von Office-Projektmappen, die auf .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Wenn Visual Studio das Ziel-.NET Framework für das Projekt ändert, und Sie ClickOnce zum Bereitstellen Ihrer Lösung verwenden, stellen Sie sicher, dass Sie auch, die entsprechende Version von .NET Framework in Auswählen der **Voraussetzungen** Dialogfeld. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Wenn Visual Studio das Ziel-.NET Framework für das Projekt ändert, und Sie ClickOnce zum Bereitstellen Ihrer Lösung verwenden, stellen Sie sicher, dass Sie auch, die entsprechende Version von .NET Framework in Auswählen der **Voraussetzungen** Dialogfeld. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.  
@@ -61,7 +61,7 @@ ms.locfileid: "49917180"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Verstehen Sie, wenn Sie die Office-PIAs auf Endbenutzercomputern erforderlich sind  
  In der Standardeinstellung primären Office-Interopassemblys (PIAs) müssen nicht auf Endbenutzercomputern installiert sein, wenn die **Embed Interop Types** jedes Office PIA-Verweises im Projekt-Eigenschaftensatz auf **"true"**, Das ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit wird die eingebetteten Typinformationen statt der PIAs zum Aufrufen von COM-basierten Objektmodell der Office-Anwendung. Weitere Informationen, wie die Typen aus PIAs in Ihre Projektmappe eingebettet sind, finden Sie unter [Typäquivalenz und eingebettete interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Wenn die **Embed Interop Types** jedes Office PIA-Verweises im Projekt-Eigenschaftensatz auf **"false"**, Office-PIAs installiert und im globalen Assemblycache auf jeden Computer des Endbenutzers registriert werden muss, die Projektmappe, führt. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Wenn die **Embed Interop Types** jedes Office PIA-Verweises im Projekt-Eigenschaftensatz auf **"false"**, Office-PIAs installiert und im globalen Assemblycache auf jeden Computer des Endbenutzers registriert werden muss, die Projektmappe, führt. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [erforderliche Komponenten für Office-Projektmappen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>Verstehen Sie Das Clientprofil  
  .NET Framework Client Profile ist eine Teilmenge der Vollversion von .NET Framework. Sie können .NET Framework Client Profile verwenden, wenn nur die Clientfunktionen in .NET Framework verwendet werden müssen und die schnellstmögliche Bereitstellung für die Office-Lösung angegeben werden soll. Weitere Informationen finden Sie unter [.NET Framework-Clientprofil](/dotnet/framework/deployment/client-profile).  

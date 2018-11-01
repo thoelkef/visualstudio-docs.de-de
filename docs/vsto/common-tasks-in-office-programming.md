@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672807"
 ---
 # <a name="common-tasks-in-office-programming"></a>Allgemeine Aufgaben in Office-Programmierung
   Dieses Thema soll Ihnen helfen, Antworten auf die folgenden Kategorien häufig gestellter Fragen zum Programmieren von Office-Projektmappen mithilfe von Visual Studio zu finden.  
@@ -47,7 +47,7 @@ ms.locfileid: "35671937"
   
 -   [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Gewusst wie: Upgrade von Office-Projektmappen](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
+-   [Gewusst wie: Upgrade von Office-Projektmappen](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
 -   [Gewusst wie: Installieren von Office primary interop-Assemblys](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35671937"
   
 ##  <a name="deployment"></a> Bereitstellungsaufgaben  
   
--   [Gewusst wie: Veröffentlichen einer Office-Projektmappe mit ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Gewusst wie: Veröffentlichen einer Office-Projektmappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Gewusst wie: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint Server mithilfe von ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Gewusst wie: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint Server mithilfe von ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Gewusst wie: Installieren einer ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
+-   [Gewusst wie: Installieren einer ClickOnce-Office-Projektmappe](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Gewusst wie: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Gewusst wie: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Gewusst wie: Vorbereiten von IIS für die Bereitstellung von Office-Projektmappen](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Gewusst wie: Vorbereiten von IIS für die Bereitstellung von Office-Projektmappen](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Gewusst wie: Update bereitgestellt, Office-Projektmappen](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Gewusst wie: Update bereitgestellt, Office-Projektmappen](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Gewusst wie: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Gewusst wie: Ändern des Installationspfads einer Office-Projektmappe](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

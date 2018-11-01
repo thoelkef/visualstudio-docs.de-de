@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673345"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744937"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Anwendungsmanifeste für Office-Projektmappen
   Ein Anwendungsmanifest ist eine XML-Datei, die die Assemblys beschreibt, die in einer Microsoft Office-Projektmappe geladen werden. Verwenden Sie die Microsoft Office-Entwicklungstools in Visual Studio die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendungsmanifestschema, definiert der [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest) Verweis.  
@@ -96,7 +96,7 @@ ms.locfileid: "35673345"
  Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen können manuell bearbeitet werden. Anschließend müssen Sie die Anwendung neu signieren und Bereitstellungsmanifeste mit dem Manifest Generation and Editing Tool (*mage.exe* und *mageui.exe*). Weitere Informationen finden Sie unter [Vorgehensweise: Signieren Sie Anwendungs- und Bereitstellungsmanifeste erneut](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Dateispeicherort  
- Ein Anwendungsmanifest ist für eine einzelne Version einer Projektmappe spezifisch. Aus diesem Grund müssen die Anwendungsmanifeste getrennt von Bereitstellungsmanifesten gespeichert werden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] platziert die versionsspezifischen Dateien in einem Unterverzeichnis mit dem Namen gemäß der zugewiesenen Version im der *Anwendungsdateien* Unterverzeichnis im Ordner "Publish".  
+ Ein Anwendungsmanifest ist für eine einzelne Version einer Projektmappe spezifisch. Aus diesem Grund müssen die Anwendungsmanifeste getrennt von Bereitstellungsmanifesten gespeichert werden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] platziert die versionsspezifischen Dateien in einem Unterverzeichnis, das gemäß der zugewiesenen Version im Unterverzeichnis *Application Files* im Ordner „Publish“ benannt wird.  
   
 ## <a name="file-name-syntax"></a>Die Syntax für Dateinamen  
  Der Name einer Anwendungsmanifestdatei muss der vollständige Name und Erweiterung der Anwendung sein, im dem **AssemblyIdentity** -Element, gefolgt von der Erweiterung *". manifest"*. Z. B. ein Anwendungsmanifest, die auf die *"OutlookAddIn1.dll"* Anpassung würde die folgende Syntax für Dateinamen verwenden.  

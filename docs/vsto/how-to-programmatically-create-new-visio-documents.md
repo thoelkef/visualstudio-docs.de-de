@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671559"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente
-  Wenn Sie eine neue Microsoft Office Visio-Zeichnung Dokument erstellen, Sie hinzufügen, damit die `Microsoft.Office.Interop.Visio.Documents` -Auflistung geöffneter Visio-Dokumente. Daher die `Microsoft.Office.Interop.Visio.Documents.Add` Methode erstellt ein neues Visio-Zeichnungsdokument. Weitere Informationen finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) -Methode.  
+  Wenn Sie ein neues Microsoft Office Visio-Zeichnungsdokument erstellen, fügen Sie dieses Dokument der `Microsoft.Office.Interop.Visio.Documents`-Auflistung geöffneter Visio-Dokumente hinzu. Daher wird ein neues Visio-Zeichnungsdokument mithilfe der `Microsoft.Office.Interop.Visio.Documents.Add`-Methode erstellt. Weitere Informationen finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) -Methode.  
   
 ## <a name="create-new-blank-documents"></a>Erstellen neuer leerer Dokumente  
   
 ### <a name="to-create-a-new-document"></a>So erstellen Sie ein neues Dokument  
   
--   Verwenden der `Microsoft.Office.Interop.Visio.Documents.Add` Methode, um ein neues leeres Dokument zu erstellen, die nicht in einer Vorlage basiert.  
+-   Verwenden Sie die `Microsoft.Office.Interop.Visio.Documents.Add`-Methode, um ein neues leeres Dokument zu erstellen, das nicht auf einer Vorlage basiert.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
 ## <a name="create-documents-copied-from-existing-documents"></a>Erstellen von aus vorhandenen Dokumenten kopierten Dokumenten  
- Die `Microsoft.Office.Interop.Visio.Documents.Add` -Methode können Sie ein neues Dokument, das eine Kopie des vorhandenen Visio-Dokuments erstellen. Sie müssen den Dateinamen und den vollqualifizierten Pfad des Diagramms angeben.  
+ Mit der `Microsoft.Office.Interop.Visio.Documents.Add`-Methode können Sie ein neues Dokument erstellen, das eine Kopie eines vorhandenen Visio-Dokuments ist. Sie müssen den Dateinamen und den vollqualifizierten Pfad des Diagramms angeben.  
   
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>So erstellen Sie ein neues Dokument, das aus einem vorhandenen Dokument kopiert wird  
   
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add` Methode, und geben Sie den Pfad des Visio-Diagramm.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add`-Methode auf, und geben Sie den Pfad zum Visio-Diagramm an.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Erstellen Sie aus vorhandenen Schablonen kopierte Schablonen  
- Mit der [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) -Methode können Sie eine neue Schablone erstellen, die eine Kopie einer vorhandenen Visio-Schablone ist. Sie müssen den Dateinamen und den vollqualifizierten Pfad der Schablone angeben.  
+ Mit der [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) -Methode können Sie eine neue Schablone erstellen, die eine Kopie einer vorhandenen Visio-Schablone ist. Sie müssen den Dateinamen und den vollqualifizierten Pfad der Schablone angeben.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>So erstellen Sie eine neue Schablone, die aus einer vorhandenen Schablone kopiert wird  
   
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add` Methode und den Pfad der Schablone angeben.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add`-Methode auf, und geben Sie den Pfad der Schablone an.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
@@ -60,7 +60,7 @@ ms.locfileid: "35256743"
   
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>So erstellen Sie ein neues Dokument, das auf einer vorhandenen Vorlage basiert  
   
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add` Methode und den Pfad der Vorlage angeben.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Documents.Add`-Methode auf, und geben Sie den Pfad der Vorlage an.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  

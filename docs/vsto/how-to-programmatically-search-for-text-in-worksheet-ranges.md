@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920078"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671962"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen
-  Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht es Ihnen, um nach Text innerhalb des Bereichs zu suchen. Dieser Text kann auch sein, eine der Fehlerzeichenfolgen, die in einer Arbeitsblattzelle, wie z. B. auftreten können `#NULL!` oder `#VALUE!`. Weitere Informationen zu den Fehlerzeichenfolgen finden Sie unter [Zelle Fehlerwerte](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht es Ihnen, um nach Text innerhalb des Bereichs zu suchen. Dieser Text kann auch sein, eine der Fehlerzeichenfolgen, die in einer Arbeitsblattzelle, wie z. B. auftreten können `#NULL!` oder `#VALUE!`. Weitere Informationen zu den Fehlerzeichenfolgen finden Sie unter [Zelle Fehlerwerte](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

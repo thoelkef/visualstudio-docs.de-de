@@ -1,7 +1,7 @@
 ---
 title: Anzeigen der Disassembly-Code im Debugger in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 10/30/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -23,53 +23,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b4d9eb1b9484206d3a7d880ec13378693930a63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671143"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Anzeigen von Disassemblierungscode in Visual Studio-Debugger
-Dieses Feature ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert, ist die **Optionen** Dialogfeld **Debuggen** Knoten. Es ist jedoch nicht für das Skript- oder SQL-Debuggen verfügbar.  
+# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Anzeigen von Disassemblierungscode in Visual Studio-debugger
+
+Die **Disassembly** Fenster zeigt Assemblycode, der den vom Compiler erstellten Anweisungen entspricht. Wenn Sie verwalteten Code Debuggen, entsprechen diese Assemblyanweisungen durch den Just-in-Time (JIT)-Compiler, nicht die Microsoft intermediate Language (MSIL) erstellt, die von der Visual Studio-Compiler erstellten nativen Code.  
   
- Die **Disassembly** Fenster zeigt Assemblycode, der den vom Compiler erstellten Anweisungen entspricht. Beim Debuggen von verwaltetem Code entsprechen diese Assemblyanweisungen nicht der durch den Visual Studio-Compiler generierten Microsoft Intermediate Language (MSIL), sondern dem durch den Just-In-Time-Compiler (JIT) erstellten nativen Code.  
+> [!NOTE]
+> Zum Nutzen der **Disassembly** Fenster verstehen oder die Grundlagen der [Programmieren](https://wikipedia.org/wiki/Assembly_language).
   
- Neben den Assemblyanweisungen der **Disassembly** Fenster kann die folgende optionale Informationen anzeigen:  
+Dieses Feature ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert ist. Es ist nicht für Skriptsprachen oder SQL-debugging verfügbar. 
+
+Neben den Assemblyanweisungen der **Disassembly** Fenster kann die folgende optionale Informationen anzeigen:  
   
-- Speicheradresse, an der sich die einzelnen Anweisungen befinden. Bei systemeigenen Anwendungen ist dies die eigentliche Speicheradresse. Bei Visual Basic, C# oder verwaltetem Code ist dies ein Offset vom Beginn der Funktion.  
+- Speicheradresse, an der sich die einzelnen Anweisungen befinden. Für native Anwendungen ist es die eigentliche Speicheradresse. In Visual Basic C#, oder verwalteten Code, es ist ein Offset vom Beginn der Funktion.  
   
 - Quellcode, aus dem der Assemblercode abgeleitet wird.  
   
-- Codebytes – Bytedarstellungen der tatsächlichen Computer- oder MSIL-Anweisungen.  
+- Codebytes, d. h. die bytedarstellungen der tatsächlichen Computer- oder MSIL-Anweisungen.  
   
 - Symbolnamen für die Speicheradressen.  
   
 - Mit dem Quellcode übereinstimmende Zeilennummern.  
   
-  Assemblysprachanweisungen bestehen aus mnemonischen Codes (Abkürzungen für Anweisungsnamen) sowie Symbolen, die Variablen, Register und Konstanten darstellen. Jede Anweisung in Computercode wird durch mnemonischen Code in Assemblersprache dargestellt, dem in der Regel eine oder mehrere Variablen, Register oder Konstanten folgen.  
+Assemblysprachanweisungen bestehen aus *mnemonischen Code des*, Hierbei handelt es sich um Abkürzungen für Anweisungsnamen, und *Symbole* für Variablen, Register und Konstanten. Jede Anweisung in Computercode wird durch eine Assemblysprache Mnemonik, optional gefolgt von einer oder mehrerer Symbole dargestellt.  
   
-  Wenn Sie Assemblersprache nicht lesen können, aber trotzdem die Vorteile des Disassemblyfensters optimal nutzen möchten, sollten Sie sich ein gutes Buch über das Programmieren in Assemblersprache besorgen. Erläuterungen zum Programmieren in Assemblersprache würden jedoch den Rahmen dieser kurzen Einführung zum Disassemblyfenster sprengen.  
+Assemblycode basiert stark auf Prozessor registriert, oder für verwalteten Code, der common Language Runtime registriert. Können Sie die **Disassembly** Fenster zusammen mit den **registriert** Fenster, in dem Sie dort den Registerinhalt untersuchen kann.  
   
-  Da Assemblercode in hohem Maße von Prozessorregistern abhängig ist (bzw. bei verwaltetem Code von Registern der Common Language Runtime), ist es häufig sinnvoll, das Disassemblyfenster zusammen mit dem Fenster Register zu verwenden, um dort den Registerinhalt untersuchen zu können.  
+Um Computercode Anweisungen in ihre numerische Rohdaten und nicht als Assembly Sprache anzuzeigen, verwenden die **Arbeitsspeicher** Fenster, oder wählen **Codebytes** aus dem Kontextmenü in der **Disassembly**  Fenster.  
   
-  Vermutlich wird es sich niemals als notwendig oder wünschenswert erweisen, Computercodeanweisungen nicht in Assemblersprache, sondern in ihrer  numerischen Rohdatenform anzuzeigen. Wenn Sie dies jedoch trotzdem tun möchten, können Sie hierfür das Fenster Arbeitsspeicher verwenden oder im Kontextmenü des Disassemblierungsfensters die Option Codebytes auswählen.  
-  
+## <a name="use-the-disassembly-window"></a>Verwenden des disassembierungsfensters
+
+So aktivieren Sie die **Disassembly** Fenster unter **Tools** > **Optionen** (oder **Tools**  >  **Optionen**) > **Debuggen**Option **Debuggen auf Adressebene aktivieren**.
+
+Zum Öffnen der **Disassembly** Fenster während des Debuggens wählen **Windows** > **Disassembly** , oder drücken Sie **Alt** + **8**.
+
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-display-the-disassembly-window"></a>So öffnen Sie das Disassemblierungsfenster  
-  
--   Wählen Sie während des Debuggens, **Debuggen > Windows** , und klicken Sie dann auf **Disassembly**.
-  
-### <a name="to-turn-optional-information-on-or-off"></a>So aktivieren bzw. deaktivieren Sie die Anzeige optionaler Informationen  
-  
--   Mit der rechten Maustaste die **Disassembly** Fenster, und aktivieren bzw. deaktivieren Sie die gewünschten Optionen im Kontextmenü die Option.  
-  
-     Ein gelber Pfeil am linken Rand kennzeichnet die Position des aktuellen Ausführungspunkts. Bei nativem Code entspricht diese dem Programmzähler der CPU. Diese Position zeigt die nächste Anweisung an, die im Programm ausgeführt wird.  
-  
-     Weitere Informationen finden Sie unter [Paging oben oder unten im Arbeitsspeicher](../debugger/how-to-page-up-or-down-in-memory.md).  
-  
+Um die optionalen Informationen zu aktivieren oder deaktivieren, mit der Maustaste in die **Disassembly** Fenster, und aktivieren bzw. deaktivieren Sie die gewünschten Optionen im Kontextmenü die Option.  
+
+Ein gelber Pfeil am linken Rand kennzeichnet den aktuellen Ausführungspunkt an. Für nativen Code entspricht der Ausführungspunkt Programmzähler der CPU. Diese Position zeigt die nächste Anweisung an, die im Programm ausgeführt wird.  
+
 ## <a name="see-also"></a>Siehe auch  
- [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)
+
+* [Paging im Arbeitsspeicher](../debugger/how-to-page-up-or-down-in-memory.md)
+* [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)
+* [Gewusst wie: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)

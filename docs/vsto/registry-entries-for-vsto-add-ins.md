@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881780"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673015"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881780"
   
  Wie die anderen von allen VSTO-Add-Ins verwendeten Registrierungseinträge erstellt auch Visual Studio beim Erstellen des Projekts die Formularbereich-Registrierungseinträge auf dem Entwicklungscomputer. Wenn Sie ClickOnce verwenden, um das VSTO-Add-in bereitzustellen, werden die Registrierungseinträge automatisch auf dem Endbenutzercomputer erstellt. Wenn Sie Windows Installer verwenden, um das VSTO-Add-in bereitzustellen, müssen Sie das InstallShield Limited Edition-Projekt, um die Registrierungseinträge auf dem Computer des Endbenutzers erstellen konfigurieren.  
   
- Weitere Informationen zu den Formularbereichsregistrierungseinträgen finden Sie unter [Geben Sie den Speicherort eines Formularbereichs in einem benutzerdefinierten Formular](http://msdn.microsoft.com/library/office/ff868998.aspx). Weitere Informationen zu Outlook-Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
+ Weitere Informationen zu den Formularbereichsregistrierungseinträgen finden Sie unter [Geben Sie den Speicherort eines Formularbereichs in einem benutzerdefinierten Formular](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Weitere Informationen zu Outlook-Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior-Werten  
  Die **LoadBehavior** Eintrag unter dem *Stamm*\Software\Microsoft\Office\\*Anwendungsname*\Addins\\ *-add-in ID* Schlüssel enthält eine bitweise Kombination von Werten, die das Laufzeitverhalten des VSTO-Add-Ins angeben. Das Bit der niedrigsten Ordnung (Werte 0 und 1) gibt an, ob das VSTO-Add-In gerade geladen ist. Andere Bits geben an, wann die Anwendung versucht, das VSTO-Add-In zu laden.  
