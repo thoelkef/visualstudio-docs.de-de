@@ -12,8 +12,7 @@ Der vollständige Metadatenblock befindet sich oben (im [unformatierten Markdown
 - Bei einem Metadatenelement **muss** ein Leerzeichen zwischen dem Doppelpunkt (:) und dem Wert stehen.
 - Wenn ein optionales Metadatenelement über keinen Wert verfügt, kommentieren Sie das Element mit einem # aus, oder entfernen Sie es (lassen Sie es nicht leer, und verwenden Sie nicht „n/v“). Wenn Sie einem Element, das auskommentiert wurde, einen Wert hinzufügen, denken Sie daran, das # zu entfernen.
 - Doppelpunkte in einem Wert (z.B. einem Titel) unterbrechen den Metadatenparser. In diesem Fall setzen Sie den Titel in doppelte Anführungszeichen (z.B. `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- 
-  **title**: Dieser Titel wird in Suchergebnissen angezeigt. Sie können auch einen senkrechten Strich (|), gefolgt vom Produktnamen, hinzufügen (z.B. `title: Developing Libraries with Cross Platform Tools | .NET Core`). Der Titel muss nicht mit dem Titel in Ihrem H1-Header übereinstimmen, und er sollte höchstens 65 Zeichen (inklusive | PRODUKTNAME) umfassen.
+- **title**: Dieser Titel wird in Suchergebnissen angezeigt. Sie können auch einen senkrechten Strich (|), gefolgt vom Produktnamen, hinzufügen (z.B. `title: Developing Libraries with Cross Platform Tools | .NET Core`). Der Titel muss nicht mit dem Titel in Ihrem H1-Header übereinstimmen, und er sollte höchstens 65 Zeichen (inklusive | PRODUKTNAME) umfassen.
 - **author**, **manager**, **ms.reviewer**: Das Feld „author“ sollte den **GitHub-Benutzernamen** des Autors enthalten, nicht dessen Alias.  Andererseits sollten die Felder „manager“ und „ms.reviewer“ Microsoft-Aliase enthalten. „ms.reviewer“ gibt den Namen des PM/dev an, der dem Artikel oder der Funktion zugeordnet ist.
 - **ms.devlang** definiert die Technologie. Einige der unterstützten Werte sind: dotnet, cpp, csharp, fsharp, vb und xml.
 - **ms.assetid**: Dies ist die GUID des Artikels, die für interne Zwecke wie z.B. Business Intelligence (BI) verwendet wird. Wenn Sie eine neue Markdowndatei erstellen, rufen Sie eine GUID von [https://www.guidgenerator.com](https://www.guidgenerator.com) ab. 
@@ -331,7 +330,7 @@ Und sie werden wie folgt gerendert: ![Warnstile](../images/alerts.png)
 > [!div class="button"]
 [Schaltflächenlinks](../docs/core/index.md)
 
-Ein Beispiel für Schaltflächen in Aktion finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+Ein Beispiel für Schaltflächen in Aktion finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### <a name="selectors"></a>Selektoren
 
@@ -339,7 +338,7 @@ Ein Beispiel für Schaltflächen in Aktion finden Sie in der [Intune-Dokumentati
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-Ein Beispiel für Selektoren in Aktion finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+Ein Beispiel für Selektoren in Aktion finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### <a name="step-by-steps"></a>Schritt-für-Schritt-Funktionen
 
@@ -347,4 +346,4 @@ Ein Beispiel für Selektoren in Aktion finden Sie in der [Intune-Dokumentation](
 [Zurück](../docs/csharp/expression-trees-interpreting.md)
 [Weiter](../docs/csharp/expression-trees-translating.md)
 
-Ein Beispiel für Schritt-für-Schritt-Funktionen in Aktion finden Sie in der [Dokumentation für Advanced Threat Analytics](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+Ein Beispiel für Schritt-für-Schritt-Funktionen in Aktion finden Sie in der [Dokumentation für Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
