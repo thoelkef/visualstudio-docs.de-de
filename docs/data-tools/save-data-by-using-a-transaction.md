@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174210"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750987"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Gewusst wie: Speichern von Daten mithilfe von Transaktionen
+
 Speichern Sie Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. Verwenden der <xref:System.Transactions.TransactionScope> Objekt, das an einer Transaktion teilnehmen, die automatisch für Sie verwaltet wird.
 
 Projekte werden nicht erstellt, mit einem Verweis auf die *System.Transactions* Assembly, daher müssen Sie manuell einen Verweis zu Projekten hinzufügen, die Transaktionen verwenden.

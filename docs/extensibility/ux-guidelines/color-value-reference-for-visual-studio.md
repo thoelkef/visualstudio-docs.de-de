@@ -1,27 +1,25 @@
 ---
-title: Color Wertverweis für Visual Studio | Microsoft-Dokumentation
+title: Farbwertreferenz
 description: 'Referenz: Hex-Codes zum Erstellen von neuer farbtoken für Visual Studio'
 keywords: Farbe, hex.-Code, Hue, Design-Benutzeroberfläche, Designs
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
 ms.technology:
 - vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902605"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751088"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertreferenz für Visual Studio
+
 Dieses Thema ist ein Verweis zum Erstellen von neuen farbtoken. Wenn Sie neue Benutzeroberfläche erstellen, können Sie ähnliche Farben über die vorhandene Benutzeroberfläche, die Farben für jedes main Design und den Namen des System-Farbe für dieses Element für Designs mit hohem Kontrast auswählen. 
 
 Implementierungsinformationen zum Erstellen von neuen farbtoken finden Sie [Color-Tools für Farbdesigns](../../extensibility/internals/color-theming-tools.md).

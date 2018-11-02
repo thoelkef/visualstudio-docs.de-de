@@ -21,20 +21,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757594"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750922"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
+
 Daten können gefiltert werden, indem die <xref:System.Windows.Forms.BindingSource.Filter%2A>-Eigenschaft auf einen Zeichenfolgenausdruck festlegt wird, der die gewünschten Datensätze zurückgibt.
 
- Sortieren von Daten durch Festlegen der <xref:System.Windows.Forms.BindingSource.Sort%2A> Eigenschaft, um den Namen der Spalte auf dem Sie sortieren möchten, fügen Sie `DESC` in absteigender Reihenfolge zu sortieren, oder fügen Sie `ASC` in aufsteigender Reihenfolge sortiert.
+Sortieren von Daten durch Festlegen der <xref:System.Windows.Forms.BindingSource.Sort%2A> Eigenschaft, um den Namen der Spalte auf dem Sie sortieren möchten, fügen Sie `DESC` in absteigender Reihenfolge zu sortieren, oder fügen Sie `ASC` in aufsteigender Reihenfolge sortiert.
 
 > [!NOTE]
->  Wenn Ihre Anwendung nicht verwendet <xref:System.Windows.Forms.BindingSource> -Komponenten, die Sie filtern und Sortieren von Daten mithilfe von <xref:System.Data.DataView> Objekte. Weitere Informationen finden Sie unter ["DataViews"](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Wenn Ihre Anwendung nicht verwendet <xref:System.Windows.Forms.BindingSource> -Komponenten, die Sie filtern und Sortieren von Daten mithilfe von <xref:System.Data.DataView> Objekte. Weitere Informationen finden Sie unter ["DataViews"](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Zum Filtern von Daten mithilfe einer BindingSource-Komponente
 

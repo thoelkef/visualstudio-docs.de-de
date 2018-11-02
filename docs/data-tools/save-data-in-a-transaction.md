@@ -19,17 +19,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2829e1dffa0975a1970b8727f9baf79febf9b32c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 97d18ef8323eeb0781eb103eb8baa0c3fab0d63c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174886"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750832"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
+
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern von Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Verwenden Sie den Konfigurations-Assistenten zum Erstellen eines Datasets für zwei Tabellen in der Beispieldatenbank Northwind. Fügen Sie datengebundene Steuerelemente zu einem Windows-Formular, und ändern Sie den Code für des BindingNavigator Schaltfläche "Speichern" beim Aktualisieren der Datenbank in ein TransactionScope-Objekt.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
+
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
 1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In Visual Studio-Installer, SQL Server Express LocalDB installiert werden können, als Teil der **.NET Desktopentwicklung** Workload oder als eine einzelne Komponente.
@@ -47,9 +49,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
 ## <a name="create-a-windows-forms-application"></a>Erstellen einer Windows Forms-Anwendung
- Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**.
 
-#### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt
+Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**.
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
@@ -62,9 +63,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **SavingDataInATransactionWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
 
 ## <a name="create-a-database-data-source"></a>Erstellen einer Datenbank-Datenquelle
- Dieser Schritt verwendet den **Assistenten zur Datenquellenkonfiguration** zum Erstellen einer Datenquelle basierend auf den `Customers` und `Orders` Tabellen in der Beispieldatenbank Northwind.
 
-#### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
+Dieser Schritt verwendet den **Assistenten zur Datenquellenkonfiguration** zum Erstellen einer Datenquelle basierend auf den `Customers` und `Orders` Tabellen in der Beispieldatenbank Northwind.
 
 1.  Auf der **Daten** , wählen Sie im Menü **Datenquellen anzeigen**.
 
@@ -91,24 +91,24 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **NorthwindDataSet** wird dem Projekt hinzugefügt und die `Customers` und `Orders` Tabellen angezeigt werden, der **Datenquellen** Fenster.
 
 ## <a name="add-controls-to-the-form"></a>Hinzufügen von Steuerelementen zum Formular
- Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Windows-Formular
+Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.
 
--   In der **Datenquellen** Fenster, erweitern Sie die **Kunden** Knoten.
+1. In der **Datenquellen** Fenster, erweitern Sie die **Kunden** Knoten.
 
--   Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf **Form1**.
+2. Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf **Form1**.
 
-     Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
+   Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
 
--   Ziehen Sie den zugehörigen **Bestellungen** Knoten (nicht der Hauptknoten **Bestellungen** Knoten, aber die verknüpfte untergeordnete Tabellenknoten unter der **Fax** Spalte) auf das Formular unten die  **CustomersDataGridView**.
+3. Ziehen Sie den zugehörigen **Bestellungen** Knoten (nicht der Hauptknoten **Bestellungen** Knoten, aber die verknüpfte untergeordnete Tabellenknoten unter der **Fax** Spalte) auf das Formular unten die  **CustomersDataGridView**.
 
-     Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Ein `OrdersTableAdapter` und <xref:System.Windows.Forms.BindingSource> werden in der Komponentenleiste angezeigt.
+   Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Ein `OrdersTableAdapter` und <xref:System.Windows.Forms.BindingSource> werden in der Komponentenleiste angezeigt.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Fügen Sie einen Verweis zur Assembly System.Transactions
- Transaktionen verwenden den Namespace <xref:System.Transactions>. Eine Projektverweis zur Assembly system.transactions wird standardmäßig nicht hinzugefügt. Sie müssen das also manuell tun.
 
-#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>So fügen Sie einen Verweis zur DLL-Datei System.Transactions hinzu
+Transaktionen verwenden den Namespace <xref:System.Transactions>. Eine Projektverweis zur Assembly system.transactions wird standardmäßig nicht hinzugefügt. Sie müssen das also manuell tun.
+
+### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>So fügen Sie einen Verweis zur DLL-Datei System.Transactions hinzu
 
 1.  Auf der **Projekt** , wählen Sie im Menü **Verweis hinzufügen**.
 
@@ -117,9 +117,10 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Ein Verweis auf **System.Transactions** wird dem Projekt hinzugefügt.
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Ändern Sie den Code in die SaveItem-Schaltfläche
- Für die erste auf dem Formular abgelegte Tabelle Code hinzugefügt, werden standardmäßig die `click` Ereignis speichern-Schaltfläche auf der <xref:System.Windows.Forms.BindingNavigator>. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise gestalten wir den vorhandenen speichern-Code aus der Save-click-Ereignishandler der Schaltfläche. Außerdem erstellen wir ein paar weitere Methoden zum Bereitstellen von spezifische änderungsfunktionalität basierend auf, ob die Zeile hinzugefügt oder gelöscht werden muss.
 
-#### <a name="to-modify-the-auto-generated-save-code"></a>So ändern Sie automatisch generierten Speichern-Code
+Für die erste auf dem Formular abgelegte Tabelle Code hinzugefügt, werden standardmäßig die `click` Ereignis speichern-Schaltfläche auf der <xref:System.Windows.Forms.BindingNavigator>. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise gestalten wir den vorhandenen speichern-Code aus der Save-click-Ereignishandler der Schaltfläche. Außerdem erstellen wir ein paar weitere Methoden zum Bereitstellen von spezifische änderungsfunktionalität basierend auf, ob die Zeile hinzugefügt oder gelöscht werden muss.
+
+### <a name="to-modify-the-auto-generated-save-code"></a>So ändern Sie automatisch generierten Speichern-Code
 
 1.  Wählen Sie die **speichern** Schaltfläche der **CustomersBindingNavigator** (die Schaltfläche mit dem Diskettensymbol).
 
@@ -138,28 +139,28 @@ Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:
 
 -   Untergeordnete Datensätze einfügen. (In diesem Fall Einfügen von Datensätzen in der `Orders` Tabelle.)
 
-#### <a name="to-delete-existing-orders"></a>So löschen Sie eine vorhandene Bestellungen
+### <a name="to-delete-existing-orders"></a>So löschen Sie eine vorhandene Bestellungen
 
 -   Fügen Sie die folgenden `DeleteOrders` Methode, um **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
-#### <a name="to-delete-existing-customers"></a>So löschen Sie eine vorhandene Kunden
+### <a name="to-delete-existing-customers"></a>So löschen Sie eine vorhandene Kunden
 
 -   Fügen Sie die folgenden `DeleteCustomers` Methode, um **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
-#### <a name="to-add-new-customers"></a>Neue Kunden hinzufügen
+### <a name="to-add-new-customers"></a>Neue Kunden hinzufügen
 
 -   Fügen Sie die folgenden `AddNewCustomers` Methode, um **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
-#### <a name="to-add-new-orders"></a>Neue Bestellungen hinzufügen
+### <a name="to-add-new-orders"></a>Neue Bestellungen hinzufügen
 
 -   Fügen Sie die folgenden `AddNewOrders` Methode, um **Form1**:
 
@@ -168,9 +169,7 @@ Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-#### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus
-
--   Wählen Sie **F5** zum Ausführen der Anwendung.
+Drücken Sie **F5**, um die Anwendung auszuführen.
 
 ## <a name="see-also"></a>Siehe auch
 
