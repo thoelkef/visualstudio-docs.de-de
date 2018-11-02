@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089437"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750760"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
+
 Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung für die Datenübergabe von einem Formular zum anderen. Verwenden die Tabellen Customers und Orders von Northwind, ein Formular ermöglicht Benutzern, um einen Kunden auszuwählen, und eine zweite Form zeigt die ausgewählte Bestellungen des Kunden. In dieser exemplarischen Vorgehensweise zeigt, wie Sie eine Methode auf das zweite Formular erstellen, die Daten aus dem ersten Formular empfängt.
 
 > [!NOTE]
->  Diese exemplarische Vorgehensweise zeigt nur eine Möglichkeit der Datenübergabe zwischen Formularen. Es gibt andere Optionen zum Übergeben von Daten zu einem Formular, einschließlich der Erstellung eines zweiten Konstruktors, um Daten zu erhalten, oder erstellen eine öffentliche Eigenschaft, die mit Daten aus dem ersten Formular festgelegt werden.
+> Diese exemplarische Vorgehensweise zeigt nur eine Möglichkeit der Datenübergabe zwischen Formularen. Es gibt andere Optionen zum Übergeben von Daten zu einem Formular, einschließlich der Erstellung eines zweiten Konstruktors, um Daten zu erhalten, oder erstellen eine öffentliche Eigenschaft, die mit Daten aus dem ersten Formular festgelegt werden.
 
- In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
+In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
 
 -   Erstellen eines neuen **Windows Forms-Anwendung** Projekt.
 
@@ -48,7 +49,8 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 -   Übergeben von Daten zwischen Formularen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
+
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
 1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In Visual Studio-Installer, SQL Server Express LocalDB installiert werden können, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
@@ -65,9 +67,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
-## <a name="create-the-windows-forms-application"></a>Erstellen Sie die Windows Forms-Anwendung
-
-### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt
+## <a name="create-the-windows-forms-app-project"></a>Erstellen Sie das Windows Forms-app-Projekt
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
@@ -80,8 +80,6 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **PassingDataBetweenForms** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
-
-### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
 1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
@@ -108,7 +106,8 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      Die **NorthwindDataSet** wird Ihrem Projekt hinzugefügt und die **Kunden** und **Bestellungen** Tabellen angezeigt werden, der **Datenquellen** Fenster.
 
 ## <a name="create-the-first-form-form1"></a>Erstellen Sie das erste Formular (Form1)
- Sie können ein datengebundenes Raster erstellen (eine <xref:System.Windows.Forms.DataGridView> Steuerelement), durch Ziehen der **Kunden** Knoten aus der **Datenquellen** auf das Formular.
+
+Sie können ein datengebundenes Raster erstellen (eine <xref:System.Windows.Forms.DataGridView> Steuerelement), durch Ziehen der **Kunden** Knoten aus der **Datenquellen** auf das Formular.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>So erstellen Sie ein datengebundenes Raster auf dem Formular
 
@@ -116,9 +115,9 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
      Ein <xref:System.Windows.Forms.DataGridView> und eine Toolleiste (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation angezeigt, auf **Form1**. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
 
-## <a name="create-the-second-form-form2"></a>Erstellen Sie das zweite Formular (Form2)
+## <a name="create-the-second-form"></a>Das zweite Formular erstellen
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Erstellen eines zweiten Formulars, an das die Daten übergeben werden
+Erstellen Sie eine zweite Form zum Übergeben von Daten an.
 
 1.  Wählen Sie aus dem Menü **Projekt** die Option **Windows Form hinzufügen** aus.
 
@@ -132,9 +131,9 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
      Die **OrdersBindingNavigator** nicht mehr auf **Form2**.
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Hinzufügen einer TableAdapter-Abfrage zu Form2 für das Laden der Bestellungen für den ausgewählten Kunden auf Form1
+## <a name="add-a-tableadapter-query"></a>Hinzufügen einer TableAdapter-Abfrage
 
-### <a name="to-create-a-tableadapter-query"></a>Zum Erstellen einer TableAdapter-Abfrage
+Hinzufügen einer TableAdapter-Abfrage zu Form2 für das Laden der Bestellungen für den ausgewählten Kunden auf Form1.
 
 1.  Doppelklicken Sie auf die **NorthwindDataSet.xsd** Datei **Projektmappen-Explorer**.
 
@@ -153,7 +152,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
     ```
 
     > [!NOTE]
-    >  Überprüfen Sie die korrekte Parametersyntax für Ihre Datenbank. In Microsoft Access, würde die WHERE-Klausel beispielsweise wie folgt aussehen: `WHERE CustomerID = ?`.
+    > Überprüfen Sie die korrekte Parametersyntax für Ihre Datenbank. In Microsoft Access, würde die WHERE-Klausel beispielsweise wie folgt aussehen: `WHERE CustomerID = ?`.
 
 6.  Klicken Sie auf **Weiter**.
 
@@ -165,8 +164,6 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Erstellen Sie eine Methode auf Form2 für das Übergeben von Daten an
 
-### <a name="to-create-a-method-to-pass-data-to"></a>Erstellen einer Methode für das Übergeben von Daten an
-
 1.  Mit der rechten Maustaste **Form2**, und wählen Sie **Anzeigecode** öffnen **Form2** in die **Code-Editor**.
 
 2.  Fügen Sie den folgenden Code **Form2** nach der `Form2_Load` Methode:
@@ -175,8 +172,6 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Erstellen Sie eine Methode auf Form1 für das Übergeben von Daten und Anzeigen von Form2
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>Erstellen einer Methode für das Übergeben von Daten an Form2
 
 1.  In **Form1**mit der rechten Maustaste auf die Customer-Datenraster, und klicken Sie dann auf **Eigenschaften**.
 
@@ -191,9 +186,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>Ausführen der Anwendung
-
-### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus
+## <a name="run-the-app"></a>Ausführen der App
 
 -   Drücken Sie **F5**, um die Anwendung auszuführen.
 

@@ -1,7 +1,7 @@
 ---
-title: Die Windows-Firewall für Remotedebuggen konfigurieren | Microsoft-Dokumentation
+title: Windows-Firewall für Remotedebuggen konfigurieren | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/18/2017
+ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
@@ -10,114 +10,106 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847954"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750935"
 ---
-# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
-In diesem Thema wird die Konfiguration der Firewall für das Remotedebuggen auf Computern mit folgenden Betriebssystemen beschrieben:  
-  
-- Windows 10  
-  
-- Windows 8/8.1  
-  
-- Windows 7   
-  
-- Windows Server 2012 R2  
+# <a name="configure-windows-firewall-for-remote-debugging"></a>Windows-Firewall für Remotedebuggen konfigurieren
 
-- Windows Server 2012
+In einem Netzwerk, das von der Windows-Firewall geschützt muss die Firewall zum Zulassen von remote-Debuggen konfiguriert werden. Visual Studio und der remote-debugging-Tools testen, um die entsprechenden Firewallports zu öffnen, während der Installation oder beim Start, aber Sie müssen auch Ports öffnen oder manuell apps zulassen. 
+
+In diesem Thema wird beschrieben, wie zum Konfigurieren der Windows-Firewall zum Aktivieren des Remotedebuggens auf Windows 10, 8/8.1 und 7 werden; und WindowsServer 2012 R2, 2012 und 2008 R2-Computer. Der Visual Studio und dem Remotecomputer nicht das gleiche Betriebssystem ausgeführt werden müssen. Z. B. Visual Studio-Computer kann Windows 10 ausführen, und der Remotecomputer kann Windows Server 2012 R2 ausführen.      
   
-- Windows Server 2008 R2 
+>[!NOTE]
+>Die Anweisungen zum Konfigurieren der Windows-Firewall unterscheiden sich geringfügig unter verschiedenen Betriebssystemen und für ältere Versionen von Windows. Einstellungen für Windows 8/8.1, Windows 10 und Windows Server 2012 verwenden, das Wort *app*, während Windows 7 und Windows Server 2008, das Wort verwenden *Programm*.  
+
+## <a name="configure-ports-for-remote-debugging"></a>Konfigurieren von Ports für das Remotedebuggen  
+
+Visual Studio und den Remotedebugger versuchen Sie die richtigen Ports während der Installation oder beim Start zu öffnen. In einigen Szenarien, z. B. eine Drittanbieter-Firewall, müssen Sie jedoch, Ports manuell öffnen. 
+
+**Zum Öffnen eines Ports:**
   
-  Wenn das Netzwerk, in dem Sie debuggen, nicht durch eine Firewall geschützt ist, ist diese Konfiguration nicht erforderlich. Andernfalls müssen auf dem Computer, auf dem Visual Studio gehostet wird, und auf dem Remotecomputer, auf dem das Debuggen erfolgen soll, Änderungen an der Konfiguration der Firewall vorgenommen werden.  
-  
-  **IPSec** Wenn Ihr Netzwerk eine Kommunikation mit IPSec erfordert, müssen Sie auf dem Visual Studio-Hostcomputer und dem Remotecomputer zusätzliche Ports öffnen.  
-  
-  **Webserver** Wenn Sie einen Remotewebserver debuggen, müssen Sie auf dem Remotecomputer einen zusätzlichen Port öffnen. (Für IIS, muss Port 80 geöffnet sein.)  
-  
-  Auf den beiden Computern muss nicht das gleiche Betriebssystem ausgeführt werden. Auf dem Visual Studio-Computer kann beispielsweise Windows 10 und auf dem Remotecomputer Windows Server 2012 R2 ausgeführt werden.      
-  
-## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports auf dem Remotecomputer, die das Remotedebuggen ermöglichen  
-  
+1. In Windows **starten** im Menü "," Suchen "und" Open **Windows-Firewall mit erweiterter Sicherheit**. Dies ist in Windows 10, **Windows Defender Firewall mit erweiterter Sicherheit**.
+   
+1. Wählen Sie für einen neuen eingehenden Port, **Eingangsregeln** und wählen Sie dann **neue Regel**. Wählen Sie für eine ausgehende Regel **Ausgangsregeln** stattdessen.
+
+1. In der **Assistenten für neue eingehende Regel**Option **Port**, und wählen Sie dann **Weiter**. 
+   
+1. Wählen Sie entweder **TCP** oder **UDP**, je nachdem, auf die Portnummer in den folgenden Tabellen.
+   
+1. Klicken Sie unter **bestimmte lokale Ports**, geben Sie eine Portnummer aus den folgenden Tabellen aus, und wählen **Weiter**.
+   
+1. Wählen Sie **Verbindung zulassen,**, und wählen Sie dann **Weiter**.
+   
+1. Wählen Sie eine oder mehrere Netzwerktypen aktiviert werden, einschließlich des Netzwerktyps für die remote-Verbindung, und wählen Sie dann **Weiter**.
+   
+1. Fügen Sie einen Namen für die Regel (z. B. **"msvsmon"**, **IIS**, oder **Web Deploy**), und wählen Sie dann **Fertig stellen**.
+
+   Die neue Regel sollte angezeigt werden und ausgewählt werden, der **Eingangsregeln** oder **ausgehende Regeln** Liste.
+
+### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports auf dem Remotecomputer, die das Remotedebuggen ermöglichen
+
+Für das Remotedebuggen, müssen die folgenden Ports auf dem Remotecomputer geöffnet sein:
+
 |**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|   
-|-|-|-|-|  
-|4022|Eingehende|TCP|Für Visual Studio 2017. Die Portnummer wird für jede Visual Studio-Version um 2 erhöht. Weitere Informationen finden Sie unter [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
-|4023|Eingehende|TCP|Für Visual Studio 2017. Die Portnummer wird für jede Visual Studio-Version um 2 erhöht. (Nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess.) Weitere Informationen finden Sie unter [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
+|-|-|-|-|
+|4022|Eingehende|TCP|Für Visual Studio 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Weitere Informationen finden Sie unter [Visual Studio-Remotedebugger-portzuweisungen](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Eingehende|TCP|Für Visual Studio 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Dieser Port wird nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess. Weitere Informationen finden Sie unter [Visual Studio-Remotedebugger-portzuweisungen](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Ausgehend|UDP|(Optional) Erforderlich für die remotedebuggerermittlung.|    
   
-## <a name="how-to-configure-ports-in-windows-firewall"></a>Konfigurieren von Ports in der Windows-Firewall  
+Bei Auswahl von **verwalteten Kompatibilitätsmodus verwenden** unter **Tools** > **Optionen** > **Debuggen**öffnen Diese zusätzliche Remotedebugger-Ports. Debugger verwalteter Kompatibilitätsmodus ermöglicht eine Vorgängerversion, die Visual Studio 2010-Version des Debuggers. 
 
-Bei der Installation von Visual Studio oder der Remotedebugger versucht die Software, die richtigen Ports öffnen. Aber in einigen Szenarios (z. B. mit einer Drittanbieter-Firewall), müssen Sie manuell einen Port zu öffnen. Um sicherzustellen, dass die Ports geöffnet sind, finden Sie unter [Problembehandlung](#troubleshooting). Einige Anweisungen zum Öffnen eines Ports können bei älteren Versionen von Windows unterschiedlich sein.
-
-Zum Öffnen eines Ports:
-  
-1. Öffnen der **starten** Menü, und suchen Sie **Windows-Firewall mit erweiterter Sicherheit**.
-
-2. Wählen Sie dann **Eingangsregeln > neue Regel > Port**, und klicken Sie dann auf **Weiter**. (Wählen Sie für ausgehende Regeln **Ausgangsregeln** stattdessen.)
-
-3. Wählen Sie entweder **TCP** oder **UDP**, je nachdem, auf die Portnummer an.
-
-4. Klicken Sie unter **bestimmte lokale Ports**, geben Sie die Portnummer, und klicken Sie auf **Weiter**.
-
-5. Klicken Sie auf **Allow the Connection** , und klicken Sie dann in der Liste **Weiter**.
-
-6. Wählen Sie eine oder mehrere Netzwerktypen für den Port zu aktivieren, und klicken Sie auf **Weiter**.
-
-    Ein Typ muss das Netzwerk beinhalten, mit dem der Remotecomputer verbunden ist.
-7. Fügen Sie den Namen (z. B. **"msvsmon"**, **IIS**, oder **Web Deploy**) für die Regel und auf **Fertig stellen**.
-
-    Daraufhin sollte die neue Regel in der Liste von Regeln für eingehende oder ausgehende Regeln.
-
-## <a name="troubleshooting"></a>Problembehandlung bei
-
-Wenn Sie Probleme beim Anfügen an Ihre app mit dem Remotedebugger haben, müssen Sie möglicherweise um sicherzustellen, dass die richtigen Ports geöffnet sind.
-
-### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Stellen Sie sicher, dass die Ports in der Windows-Firewall auf dem Visual Studio-Computer geöffnet sind  
- Die Anweisungen zum Konfigurieren der Windows-Firewall unterscheiden sich geringfügig bei den verschiedenen Betriebssystemen. Auf Windows 8/8.1, Windows 10 und Windows Server 2012 wird das Wort **app** verwendet wird, auf Windows 7 oder Windows Server 2008 wird das Wort **Programm** verwendet wird.  In den folgenden Schritten verwenden wir das Wort **app**.  
-  
-1.  Öffnen Sie die Windows-Firewall. (Geben Sie im Menü **Start** im Suchfeld **Windows-Firewall**ein.)  
-  
-2.  Klicken Sie auf **Eine App oder ein Feature durch die Windows-Firewall zulassen**.  
-  
-3.  Suchen Sie in der Liste **Zugelassene Apps und Features** nach **Visual Studio - Remotedebuggerermittlung**. Vergewissern Sie sich, dass diese Option (sofern aufgeführt) und mindestens ein Netzwerktyp ausgewählt sind.  
-  
-4.  Wenn **Visual Studio - Remotedebuggerermittlung** nicht aufgeführt ist, klicken Sie auf **Andere App zulassen**. Wenn Sie noch, dass es in sehen der **fügen Sie eine app** Fenster klicken Sie auf **Durchsuchen** und navigieren Sie zu  **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger**. Suchen Sie den entsprechenden Ordner für die Anwendung (x86, x64, Appx), und wählen Sie dann **msvsmon.exe**aus. Klicken Sie anschließend auf **Hinzufügen**.  
-  
-5.  In der **zugelassene apps und Features** Liste **Visual Studio Remote Debugger**. Wählen Sie einen oder mehrere Netzwerktypen (**Domäne, Heim/Arbeitsplatz (Privat), Öffentlich**) für die Kommunikation mit dem Remotedebugmonitor aus. Ein Typ muss das Netzwerk beinhalten, mit dem der Visual Studio-Computer verbunden ist. 
-
-### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Stellen Sie sicher, dass die Ports in der Windows-Firewall auf dem Remotecomputer geöffnet sind  
- Die Komponenten für das Remotedebuggen können auf dem Remotecomputer installiert sein oder aus einem freigegebenen Verzeichnis ausgeführt werden. In beiden Fällen muss die Firewall des Remotecomputers konfiguriert werden. Die Komponenten für das Remotedebuggen befinden sich an folgendem Speicherort:  
-  
- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger**  
-  
- Die Anweisungen zum Konfigurieren der Windows-Firewall unterscheiden sich geringfügig bei den verschiedenen Betriebssystemen. Auf Windows 8/8.1, Windows 10 und Windows Server 2012 wird das Wort **app** verwendet wird, auf Windows 7 oder Windows Server 2008 wird das Wort **Programm** verwendet wird.  In den folgenden Schritten verwenden wir das Wort **app**.  
-  
-1.  Öffnen Sie die Windows-Firewall. (Geben Sie im Menü **Start** im Suchfeld **Windows-Firewall**ein.)  
-  
-2.  Klicken Sie auf **Eine App oder ein Feature durch die Windows-Firewall zulassen**.  
-  
-3.  In der **zugelassene apps und Features** auflisten, suchen Sie nach **Visual Studio Remote Debugger**. Vergewissern Sie sich, dass diese Option (sofern aufgeführt) und mindestens ein Netzwerktyp ausgewählt sind.  
-  
-4.  Wenn **Visual Studio Remote Debugger** ist nicht aufgeführt ist, klicken Sie auf **andere app zulassen**. Wenn Sie noch, dass es in sehen der **ein app-Fenster "hinzufügen"**, klicken Sie auf **Durchsuchen** und navigieren Sie zu  **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger**. Suchen Sie den entsprechenden Ordner für die Anwendung (x86, x64, Appx), und wählen Sie dann **msvsmon.exe**aus. Klicken Sie anschließend auf **Hinzufügen**.  
-  
-5.  In der **zulässige apps** Liste **Visual Studio Remote Debugger**. Wählen Sie einen oder mehrere Netzwerktypen (**Domäne, Heim/Arbeitsplatz (Privat), Öffentlich**) für die Kommunikation mit dem Remotedebugmonitor aus. Ein Typ muss das Netzwerk beinhalten, mit dem der Visual Studio-Computer verbunden ist. 
-
-### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Verwalteten oder systemeigenen Kompatibilitätsmodus) Klicken Sie auf dem Remotecomputer zusätzliche Ports öffnen
-
-Wenn Sie für den Debugger im Kompatibilitätsmodus verwenden (**Tools > Optionen > Debugging**), müssen zusätzliche Ports geöffnet werden. Kompatibilitätsmodus kann eine ältere Version des Debuggers, und verschiedene Ports sind erforderlich.
-
-> [!NOTE]
-> Die ältere Version des Debuggers wird der Debugger von Visual Studio 2010.
-  
 |**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|  
 |-|-|-|-|  
 |135, 139, 445|Ausgehend|TCP|Erforderlich.|  
 |137, 138|Ausgehend|UDP|Erforderlich.|  
+
+Wenn die Domänenrichtlinie die Netzwerkkommunikation über IPSec ausgeführt werden muss, müssen Sie auf der Visual Studio und dem Remotecomputer zusätzliche Ports öffnen. Öffnen Sie Port 80 auf dem Remotecomputer, um das Debuggen auf einem remote-IIS-Webserver.
+
+|**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|  
+|-|-|-|-|  
 |500, 4500|Ausgehend|UDP|Erforderlich, wenn die Domänenrichtlinie die Netzwerkkommunikation über IPSec vorschreibt.|  
 |80|Ausgehend|TCP|Erforderlich für das Webserverdebuggen.|
+
+Um bestimmte apps über die Windows-Firewall zu ermöglichen, finden Sie unter [Konfigurieren des Remotedebuggings über Windows-Firewall](#configure-remote-debugging-through-windows-firewall). 
+
+## <a name="configure-remote-debugging-through-windows-firewall"></a>Konfigurieren des Remotedebuggings über Windows-firewall
+
+Sie können der remote-debugging-Tools auf dem Remotecomputer installieren, oder führen Sie sie aus einem freigegebenen Ordner. In beiden Fällen muss die Remotecomputer Firewall ordnungsgemäß konfiguriert werden. 
+
+Auf einem Remotecomputer befindet sind der remote-debugging-Tools in:  
   
+*\<Visual Studio-Installationsverzeichnis\>\\Common7\\IDE\\Remotedebugger\\\<X86*, *X64*, oder  *AppX*\> 
+  
+### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Zulassen Sie, und konfigurieren Sie des Remotedebuggers über Windows-Firewall 
+  
+1. In Windows **starten** im Menü "," Suchen "und" Open **Windows-Firewall**, oder **Windows Defender Firewall**. 
+  
+1. Wählen Sie **eine app durch die Windows-Firewall zulassen**.  
+  
+1.  Wenn **Remotedebugger** oder **Visual Studio Remote Debugger** nicht angezeigt, unter **zugelassene apps und Features**Option **Ändern der Einstellungen**, und wählen Sie dann **andere app zulassen**. 
+
+1.  Wenn die Remotedebugger app immer noch in aufgeführt ist die **fügen Sie eine app** wählen Sie im Dialogfeld **Durchsuchen**, und navigieren Sie zu  *\<Visual Studio-Installationsverzeichnis\> \\Common7\\IDE\\Remotedebugger\\\<X86*, *X64*, oder *Appx* \> , abhängig von der geeigneten Architektur für Ihre app. Wählen Sie *msvsmon.exe*, und wählen Sie dann **hinzufügen**.  
+    
+1.  In der **Apps** Liste der **Remotedebugger** , die Sie gerade hinzugefügt haben. Wählen Sie **Netzwerktypen**, und wählen Sie dann eine oder mehrere Netzwerktypen, einschließlich des Netzwerktyps für die Remoteverbindung. 
+    
+1.  Wählen Sie **hinzufügen**, und wählen Sie dann **OK**.
+
+## <a name="troubleshooting"></a>Problembehandlung bei der remotedebugverbindung
+  
+Wenn Sie zu Ihrer app mit dem Remotedebugger Anfügen nicht möglich, stellen Sie sicher die remote Debuggen Firewall-Ports, Protokolle, Typen von Netzwerken und app-Einstellungen richtig sind. 
+
+- In der Windows **starten** Menüs, suchen und öffnen Sie **Windows-Firewall**, und wählen Sie **eine app durch die Windows-Firewall zulassen**. Stellen Sie sicher, dass **Remotedebugger** oder **Visual Studio Remote Debugger** wird in der **zugelassene apps und Features** Liste ein aktiviertes Kontrollkästchen, und die entsprechende Netzwerk-Typen sind ausgewählt. Wenn dies nicht der Fall ist, [fügen Sie die richtigen apps und Einstellungen](#configure-remote-debugging-through-windows-firewall).
+  
+- In der Windows **starten** im Menü "," Suchen "und" Open **Windows-Firewall mit erweiterter Sicherheit**. Stellen Sie sicher, dass **Remotedebugger** oder **Visual Studio Remote Debugger** wird unter **Eingangsregeln** (und optional **Ausgangsregeln**) mit einem grünen Häkchen, und dass sind alle Einstellungen richtig. 
+  
+  - Zum Anzeigen oder ändern Sie die regeleinstellungen, Maustaste den **Remote Debugger** -app in der Liste aus und wählen Sie **Eigenschaften**. Verwenden der **Eigenschaften** Registerkarten zu aktivieren oder deaktivieren Sie die Regel, oder ändern zu portieren, Zahlen, Protokolle oder Netzwerktypen. 
+  - Wenn die Remotedebugger-app nicht, in der Liste der Regeln angezeigt wird [hinzufügen und konfigurieren Sie die richtigen Ports](#configure-ports-for-remote-debugging). 
+
 ## <a name="see-also"></a>Siehe auch  
- [Remote Debugging](../debugger/remote-debugging.md)
+[Remotedebuggen](../debugger/remote-debugging.md)
+
+[Visual Studio-Remotedebugger-portzuweisungen](../debugger/remote-debugger-port-assignments.md)
