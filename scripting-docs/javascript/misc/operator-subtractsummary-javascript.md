@@ -56,7 +56,7 @@ Die folgende Tabelle führt [!INCLUDE[javascript](../../javascript/includes/java
 |[Kleiner gleich](../../javascript/reference/comparison-operators-javascript.md)|<=|  
 |[Logisches AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[logisches NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[Logisches oder](../../javascript/reference/logical-or-operator-decrement-javascript.md)||||  
+|[Logisches oder](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Nonidentity](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>Bitweise Operatoren  
