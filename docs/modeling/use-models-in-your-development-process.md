@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824294"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967219"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -140,7 +140,7 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von Modellen in Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Verwenden von Modellen in Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835708"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967284"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -173,7 +173,7 @@ Mit diesen Tasks können Validierungsfehler im der **Fehlerliste** Fenster:
 
 ## <a name="validate-code-automatically"></a>Code automatisch überprüfen
 
-Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Ihr Team Azure DevOps verwendet, können Sie ebenenvalidierung mit gated-Check-ins, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe und mithilfe von Buildberichten werden Validierungsfehler erfasst erstellen, ausführen. Erstellen von abgegrenzten Eincheckbuilds finden Sie [verwenden Sie einen Buildprozess mit abgegrenztem Eincheckvorgang zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Ihr Team Azure DevOps verwendet, können Sie ebenenvalidierung mit gated-Check-ins, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe und mithilfe von Buildberichten werden Validierungsfehler erfasst erstellen, ausführen. Erstellen von abgegrenzten Eincheckbuilds finden Sie [TFVC-gated-Check-in](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>So überprüfen Sie Code automatisch während eines lokalen Builds
 
@@ -237,6 +237,6 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Live-abhängigkeitsüberprüfung in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Live-abhängigkeitsüberprüfung in Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
 - [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

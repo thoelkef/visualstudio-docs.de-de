@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54ba969e06f3bd951556f8d8f347977419fc015
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819770"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966491"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 Wenn Sie zuerst eine domänenspezifische Sprachtools (DSL-Tools)-Lösung in Visual Studio öffnen, wird die Benutzeroberfläche in der folgende Abbildung ähneln.
@@ -51,5 +51,5 @@ Wenn Sie zuerst eine domänenspezifische Sprachtools (DSL-Tools)-Lösung in Visu
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md)
-- [DSL-Tools – Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
