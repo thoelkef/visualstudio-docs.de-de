@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672781"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -225,5 +225,5 @@ Herzlichen Glückwunsch! Sie haben diese exemplarische Vorgehensweise erfolgreic
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)

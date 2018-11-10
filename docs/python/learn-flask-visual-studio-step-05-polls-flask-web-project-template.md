@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908991"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143202"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
 
@@ -356,4 +356,4 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Fügen Sie eine Repositoryimplementierung hinzu, die einen anderen Datenspeicher auf Produktionsebene verwendet, z.B. MySQL, PostgreSQL und SQL Server (alle können in Azure gehostet werden). Sie können auch die [Azure SDK für Python](azure-sdk-for-python.md) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs sowie mit Cosmos DB zu arbeiten.
 
-- Richten Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) auf einem Dienst wie Visual Studio Team Services (VSTS) ein. Zusätzlich zum Arbeiten mit dem Datenquellen-Steuerelement (in VSTS, GitHub oder anderweitig) können Sie VSTS automatisch Ihre Komponententests als Voraussetzung für die Freigabe ausführen lassen und die Pipeline so konfigurieren, dass sie vor der Bereitstellung in der Produktionsumgebung auf einem Stagingserver bereitstellt, um weitere Tests zu ermöglichen. VSTS wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure DevOps ein. Zusätzlich zur Arbeit mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie ein Azure DevOps-Projekt automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts) sowie in der allgemeinen [Azure DevOps-Dokumentation](/azure/devops/?view=vsts).

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929425"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220982"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige (z.B. **CPU-Auslastung** und **Speicherauslastung**) mit oder ohne den Debugger ausgeführt werden können. Leistungstools ohne Debugger sind für Releasekonfigurationen gedacht, während die Tools mit integriertem Debugger zur Ausführung auf Debugkonfigurationen vorgesehen sind.  
@@ -68,7 +68,7 @@ Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debug
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Sammeln von Profilerstellungsdaten ohne das Debuggen  
  Für die Ausführung einiger Profilerstellungstools sind Administratorrechte erforderlich. Führen Sie daher entweder Visual Studio als Administrator aus, oder führen Sie die Tools als Administrator aus, wenn Sie die Diagnosesitzung starten.  
@@ -126,18 +126,18 @@ Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debug
  Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu UWP-Apps finden Sie unter [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogbeiträge und MSDN-Artikel vom Diagnoseentwicklungsteam  
- MSD[MSDN Magazine: Analysieren der Leistung beim Debuggen in Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ MSD[MSDN Magazine: Analysieren der Leistung beim Debuggen in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [MSDN Magazine: Schnellere Problemdiagnose mit IntelliTrace](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [MSDN Magazine: Schnellere Problemdiagnose mit IntelliTrace](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Blogbeitrag: Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Blogbeitrag: Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [Video: Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Video: Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [Video: Debuggen von Leistungsproblemen mit Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Video: Debuggen von Leistungsproblemen mit Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [IntelliTrace in Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace in Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)

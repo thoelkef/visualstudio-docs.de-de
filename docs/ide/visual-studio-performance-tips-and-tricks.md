@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672924"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -27,7 +27,7 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 
 Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-Weitere Informationen finden Sie unter [Speicherlimits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Weitere Informationen finden Sie unter [Speicherlimits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Deaktivieren der automatischen Dateiwiederherstellung
 

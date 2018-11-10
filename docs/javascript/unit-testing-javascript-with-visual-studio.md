@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776092"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219379"
 ---
 # <a name="unit-testing-in-nodejs"></a>Unittests in Node.js
 
@@ -84,7 +84,7 @@ Tests können in Visual Studio 2017 oder über die Befehlszeile ausgeführt werd
 
 ### <a name="run-tests-in-visual-studio-2017"></a>Ausführen von Komponententests in Visual Studio 2017
 
-Sie können die Tests durchführen, indem Sie im Test-Explorer auf den Link **Alle ausführen** klicken. Sie können Tests auch ausführen, indem Sie einen oder mehrere Tests oder Gruppen auswählen, mit der rechten Maustaste darauf klicken und im Kontextmenü die Option **Ausgewählte Tests ausführen** auswählen. Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert die Ergebnisse automatisch und zeigt diese an. Darüber hinaus können Sie auch ausgewählte Tests debuggen, indem Sie **Ausgewählte Tests debuggen** auswählen.
+Sie können die Tests durchführen, indem Sie im Test-Explorer auf den Link **Alle ausführen** klicken. Alternativ können sie Tests ausführen, indem Sie mindestens einen Test oder eine Gruppe auswählen, mit der rechten Maustaste klicken und im Kontextmenü die Option **Ausgewählte Tests ausführen** auswählen. Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert die Ergebnisse automatisch und zeigt diese an. Darüber hinaus können Sie auch ausgewählte Tests debuggen, indem Sie **Ausgewählte Tests debuggen** auswählen.
 
 > [!Warning]
 > Das Debuggen von Komponententests mit Node 8 und höher funktioniert derzeit nur bei JavaScript-Testdateien. Bei TypeScript-Testdateien werden die Breakpoints nicht erreicht. Verwenden Sie zur Umgehung dieses Problems das Schlüsselwort `debugger`.

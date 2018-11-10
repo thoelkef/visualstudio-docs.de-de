@@ -1,6 +1,6 @@
 ---
-title: Verwenden Sie den Code Analysis Regelsatz-Editor in Visual Studio
-ms.date: 04/-4/2018
+title: Verwenden Sie die Codeanalyse-Regelsätze-Editor festgelegt.
+ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b219af4574c8323a3a1d54224182238d8984ce3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203585"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000815"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden Sie den Code Analysis Regelsatz-editor
 

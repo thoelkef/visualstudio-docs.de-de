@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775103"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244384"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775103"
 **Im Test-Explorer-Suchfeld ist kein Dateipfadfilter mehr vorhanden.**
 
 Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Version 15.7, Preview 3 entfernt. Dieses Feature wurde wenig genutzt, und der Test-Explorer kann Testmethoden durch Ausschluss dieses Features schneller abrufen. Wenn diese Änderung Ihren Entwicklungsablauf unterbricht, teilen Sie uns dies über die [Entwicklercommunity](https://developercommunity.visualstudio.com/) mit.
+
+## <a name="remove-undocumented-interfaces"></a>Entfernen nicht dokumentierter Schnittstellen
+**Einige testbezogene APIs sind in Visual Studio 2019 nicht länger enthalten. Was hat sich geändert?**
+In Visual Studio 2019 werden einige Testfenster-APIs entfernt, die zuvor als öffentlich markiert waren, aber nie offiziell dokumentiert wurden. Diese wurden als frühe Warnung für die Erweiterungsverwaltung in Visual Studio 2017 als „veraltet“ gekennzeichnet. Nach unserer Erkenntnis wurden diese APIs nur durch sehr wenige Erweiterungen ermittelt und mit einer Abhängigkeit konfiguriert. Dies waren `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` und `SearchFilterTokenType`. Wenn sich diese Änderung auf Ihre Erweiterung auswirkt, teilen Sie uns dies mit, indem Sie einen Fehler in der [Entwickler-Community](https://developercommunity.visualstudio.com) melden.
 
 ## <a name="test-adapter-nuget-reference"></a>NuGet-Verweis auf Testadapter
 **In Visual Studio 2017 Version 15.8 werden meine Tests ermittelt, aber nicht ausgeführt.**

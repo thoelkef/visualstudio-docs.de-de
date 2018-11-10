@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029107"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673029"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -212,7 +212,7 @@ Die neue Ausnahmen-Hilfe hilft Ihnen, Ihre Ausnahmeinformationen auf einen Blick
 
 ![Dialogfeld der neuen Ausnahmen-Hilfe in Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio)](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
+Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio)](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Momentaufnahmen und das IntelliTrace-Feature „Step-back“
 
@@ -264,7 +264,7 @@ Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie k
 
 Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
 
-**Neues in Version 15.5.:** Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
+**Neues in Version 15.5.:** Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
 
 * **Unterstützung für .NET Standard 2.0**<br/>Zusätzlich zur optimierten App-Entwicklung ist das Windows 10 Fall Creators Update das erste Release von Windows 10, das Unterstützung für .NET Standard 2.0 bietet. [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) ist eine Referenzimplementierung der Basisklassenbibliothek, die jede .NET-Plattform implementieren kann. Das Ziel von .NET Standard besteht darin, das Freigeben von Code für .NET-Entwickler für jede .NET-Plattform, mit der sie arbeiten möchten, so einfach wie möglich zu gestalten.
 * **Das Beste aus UWP und Win32**<br/>Die Windows 10-Plattform wurde durch die [Desktop-Brücke](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) verbessert, um Windows 10 für alle .NET-Entwickler unabhängig davon zu verbessern, ob der derzeitige Fokus auf UWP, WPF, Windows Forms oder Xamarin liegt. Mit dem neuen Projekttyp für das Packen von Apps in Version 15.5 von Visual Studio 2017 können Sie Windows-App-Pakete für Ihre Windows Presentation Foundation- oder Windows Forms-Projekte genau wie für UWP-Projekte erstellen. Nachdem Sie Ihre App gepackt haben, erhalten Sie alle Vorteile von Windows 10 für die App-Entwicklung und können diese über Microsoft Store (bei Verbraucher-Apps) oder Microsoft Store für Unternehmen und Bildungseinrichtungen verteilen. Da gepackte Apps über Zugriff auf die vollständige UWP-API-Oberfläche und auf die Win32-APIs auf dem Desktop verfügen, können Sie Ihre Windows Presentation Foundation- und Windows Forms-Apps nach und nach mit den UWP-APIs und den Windows 10-Features modernisieren. Darüber hinaus können Sie Ihre Win32-Komponenten mit allen Win32-Funktionen in Ihre UWP-Anwendungen integrieren, die auf dem Desktop gekennzeichnet sind.

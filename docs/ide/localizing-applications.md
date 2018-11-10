@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671013"
 ---
 # <a name="localizing-applications"></a>Lokalisieren von Anwendungen
 
@@ -42,6 +42,6 @@ Die *Lokalisierung* ist der Prozess des Anpassens einer Anwendung an die jeweili
 
  [Globalisieren von Windows Forms:](/dotnet/framework/winforms/advanced/globalizing-windows-forms) Enthält Links zu Seiten, die Informationen zum Erstellen von Windows-Anwendungen enthalten, die mehrere Kulturen unterstützen.
 
- [Globalisierung und Lokalisierung:](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Seiten, die Informationen zum Erstellen von Webanwendungen enthalten, die mehrere Kulturen unterstützen.
+ [Globalisierung und Lokalisierung:](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Seiten, die Informationen zum Erstellen von Webanwendungen enthalten, die mehrere Kulturen unterstützen.
 
- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. zu Entwurfsproblemen und Terminologie.
+ [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. zu Entwurfsproblemen und Terminologie.

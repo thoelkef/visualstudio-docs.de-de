@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9534668ef5cf07388d6eefec9ef37a28593daaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 982d54bec30e164a1b2017c7aa8a221ee56e19d0
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977447"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000597"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest-Referenzhandbuch
 
@@ -127,4 +127,4 @@ ms.locfileid: "31977447"
 
 ## <a name="got-feedback"></a>Sie möchten Feedback geben?
 
-Posten Sie Ihre Ideen und Clusterfunktion Anforderungen auf **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

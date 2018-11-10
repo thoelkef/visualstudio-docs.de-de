@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118887"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294668"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Gewusst wie: Einfügen einer benutzerdefinierte Assembly in eine BDC-Funktion
   Das Projekt kann aus anderen Projekten in der gleichen Projektmappe auf Assemblys verweisen. Allerdings müssen Sie diese Assemblys auch das Feature-Datei des Projekts hinzufügen, mit der **weisen referenzierten Assemblys, LobSystems** Dialogfeld.  
@@ -45,7 +45,7 @@ ms.locfileid: "37118887"
 4.  In der **wählen Sie eine Assembly** Liste, und wählen Sie die benutzerdefinierte Assembly.  
   
     > [!NOTE]  
-    >  Assemblys werden nur in der **weisen referenzierten Assemblys, LobSystems** im Dialogfeld, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, die die Assembly enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe der Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Assemblys werden nur in der **weisen referenzierten Assemblys, LobSystems** im Dialogfeld, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, die die Assembly enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe der Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 5.  In der **Verweiseigenschaften** gruppieren, öffnen Sie die für die angezeigte Liste der **LobSystem-Bereich** -Eigenschaft, wählen Sie die LOB-System, der die Methoden, die die benutzerdefinierte Assembly, und wählen Sie dann die **OK**  Schaltfläche.  
   
