@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747641"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671923"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features
 Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Um den Lerneffekt zu erhöhen, können Sie das Programm verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern.
 
- Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+ Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
  ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Artikels finden Sie in Video 5 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205216) oder in Video 5 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
@@ -53,7 +53,7 @@ Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm aus
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Weitere Informationen zum Programmieren in Visual Studio finden Sie unter [Programmierkonzepte](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+-   Weitere Informationen zum Programmieren in Visual Studio finden Sie unter [Programmierkonzepte](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 -   Weitere Informationen zu Visual Basic finden Sie unter [Entwickeln von Anwendungen mit Visual Basic](/dotnet/visual-basic/developing-apps/index).
 

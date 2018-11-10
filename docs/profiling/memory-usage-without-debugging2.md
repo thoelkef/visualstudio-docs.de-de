@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827731"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220774"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analysieren der Arbeitsspeicherauslastung ohne Visual Studio-Debugger
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
@@ -204,5 +204,5 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
  [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
  [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
- [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)

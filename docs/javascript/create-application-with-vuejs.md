@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8ffe7a2a730f10d0f29a13b5123fbd7f56beda13
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924780"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050156"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -37,7 +37,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
     > [!IMPORTANT]
     > Für diesen Artikel sind Features erforderlich, die nur in Visual Studio 2017 Version 15.8 Preview 3 verfügbar sind.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 
     Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
@@ -79,7 +79,7 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 * Öffnen Sie die Datei *./Startup.cs*, und fügen Sie der Configure-Methode die folgenden Zeilen hinzu:
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

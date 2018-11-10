@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3129df5ad051641499276fd5ee76fa0afde8a7d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234445"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220429"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.
@@ -134,6 +134,12 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  Deaktiviert IntelliSense-Fehlerwellenlinien. Die roten Wellenlinien werden nicht im Editorfenster, der Fehler jedoch weiterhin im Fenster „Fehlerliste“ angezeigt.
 
+ **Maximale Anzahl zwischengespeicherter Übersetzungseinheiten automatisch anpassen**
+
+ Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.
+
+ Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](/cpp/preprocessor/phases-of-translation).
+
  **#include-AutoVervollständigen deaktivieren**
 
  Deaktiviert die automatische Vervollständigung von `#include`-Anweisungen.
@@ -141,16 +147,6 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  **In #include-AutoVervollständigen einen Schrägstrich verwenden**
 
  Löst die automatische Vervollständigung von `#include`-Anweisungen aus, wenn "/" verwendet wird. Das Standardtrennzeichen ist der umgekehrte Schrägstrich \'. Der Compiler akzeptiert beide. Geben Sie daher mit dieser Option an, welches Zeichen in Ihrer Codebasis verwendet wird.
-
- **Maximale Anzahl zwischengespeicherter Übersetzungseinheiten**
-
- Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.
-
- Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](/cpp/preprocessor/phases-of-translation).
-
- **Punkt in Pfeil in der Memberliste aktivieren**
-
- Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.
 
  **Aggressive Memberliste deaktivieren**
 
@@ -164,21 +160,25 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  Codeausschnitte werden nicht in den Memberlistenvorschlägen angezeigt.
 
+ **Memberlistenfilter-Modus**
+
+ Legt den Typ des Übereinstimmungsalgorithmus fest. **Fuzzy** sucht die meisten möglichen Übereinstimmungen, da ein Algorithmus zur Suche von ähnlichen, jedoch nicht identischen Übereinstimmungen verwendet wird, der einer Rechtschreibprüfung ähnelt. **Intelligentes Filtern** sucht Übereinstimmungen in Teilzeichenfolgen, auch wenn sie nicht am Anfang eines Worts stehen. **Präfix** sucht nur Übereinstimmungen in identischen Teilzeichenfolgen am Wortanfang.
+
  **Semantische Farbgebung deaktivieren**
 
  Deaktiviert sämtliche farblichen Kennzeichnungen von Code, außer Schlüsselwörter, Zeichenfolgen und Kommentare.
+
+ **Commitzeichen der Memberliste**
+
+ Legt Zeichen fest, die bewirken, dass der derzeit markierte Memberlistenvorschlag übernommen wird. Sie können Zeichen zu dieser Liste hinzufügen oder aus der Liste entfernen.
 
  **Intelligentes Commit der Memberliste**
 
  Fügt eine Zeile hinzu, wenn Sie nach Eingabe eines ganzen Worts die EINGABETASTE drücken.
 
- **Memberlistenfilter-Modus**
+ **Punkt in Pfeil in der Memberliste aktivieren**
 
- Legt den Typ des Übereinstimmungsalgorithmus fest. **Fuzzy** sucht die meisten möglichen Übereinstimmungen, da ein Algorithmus zur Suche von ähnlichen, jedoch nicht identischen Übereinstimmungen verwendet wird, der einer Rechtschreibprüfung ähnelt. **Intelligentes Filtern** sucht Übereinstimmungen in Teilzeichenfolgen, auch wenn sie nicht am Anfang eines Worts stehen. **Präfix** sucht nur Übereinstimmungen in identischen Teilzeichenfolgen am Wortanfang.
-
- **Commitzeichen der Memberliste**
-
- Legt Zeichen fest, die bewirken, dass der derzeit markierte Memberlistenvorschlag übernommen wird. Sie können Zeichen zu dieser Liste hinzufügen oder aus der Liste entfernen.
+ Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.
 
 ## <a name="references"></a>Verweise
  **Auflösen deaktivieren**
@@ -191,12 +191,14 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  **Markieren von Verweisen deaktivieren**
 
+Bei Auswahl von Text werden standardmäßig alle Vorkommen desselben Texts im aktuellen Dokument hervorgehoben. Sie können dieses Feature deaktivieren, indem Sie **Hervorheben von Verweisen** auf **True** festlegen.
+
  ## <a name="text-editor"></a>Text-Editor
- **Erweiterungsbereiche aktivieren**
+ **Einschluss in geschweifte Klammern aktivieren**
 
  Ist diese Option aktiviert, können Sie markierten Text in geschweifte Klammern setzen, indem Sie '{' im Text-Editor eingeben.
 
- **Erweiterungsrangfolge aktivieren**
+ **Einschluss in runde Klammern aktivieren**
 
  Ist diese Option aktiviert, können Sie markierten Text in runde Klammern setzen, indem Sie '(' im Text-Editor eingeben.
 

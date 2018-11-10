@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Debuggen im gemischten Modus | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182675"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295474"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Gewusst wie: Debuggen im gemischten Modus
 Die folgenden Verfahren wird beschrieben, wie debugging für das Debuggen von verwaltetem und systemeigenem Code gemeinsam, auch bekannt als im gemischten Modus zu aktivieren. Es gibt zwei Szenarios des Debuggens im gemischten Modus:  
@@ -58,9 +58,12 @@ Wenn Sie keinen Zugriff auf eine aufrufende app-Projekt haben, können Sie die D
    
 1. Wählen Sie die **Debuggen** Registerkarte, und wählen Sie dann **Debuggen von nativem Code aktivieren**.
    
-1. Verwendung **Datei** > **ausgewählte Elemente speichern** oder **STRG + S** um Änderungen zu speichern.
+1. Schließen Sie die Eigenschaftenseite, um die Änderungen zu speichern.
 
    ![Debuggen von nativem Code aktivieren](../debugger/media/dbg-mixed-mode-from-csharp.png "Debuggen von nativem Code aktivieren")
   
+>[!NOTE]
+>In den meisten Versionen von Visual Studio 2017, müssen Sie verwenden die *"launchsettings.JSON"* Datei statt auf die Projekteigenschaften für das Debuggen im gemischten Modus für nativen Code in einer .NET Core-app zu aktivieren. Weitere Informationen finden Sie unter [verwalteten und systemeigenen Code Debuggen](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Debuggen über ein DLL-Projekt](../debugger/how-to-debug-from-a-dll-project.md)

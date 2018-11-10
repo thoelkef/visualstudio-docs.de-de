@@ -8,18 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800619"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219756"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Optionen, Text-Editor, JavaScript, Formatierung
 Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** und **Optionen** klicken und anschließend **Text-Editor**, **JavaScript** und **Formatierung** erweitern.
@@ -46,10 +49,10 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 |Option|Beschreibung |
 |------------|-----------------|
 |**Öffnende geschweifte Klammer für Funktionen in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einer Funktion verknüpfte öffnende geschweifte Klammer in eine neue Zeile.|
-|**Öffnende geschweifte Klammer für Kontrollblöcke in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einem Kontrollblock verknüpfte öffnende geschweifte Klammer (z. B. `if`- und `while`-Kontrollblöcke) in eine neue Zeile.|
+|**Öffnende geschweifte Klammer für Kontrollblöcke in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einem Kontrollblock verknüpfte öffnende geschweifte Klammer (z.B. `if`- und `while`-Kontrollblöcke) in eine neue Zeile.|
 
 ## <a name="spacing"></a>Abstand
- Diese Optionen bestimmen, wie Abstände in der **Quellansicht** eingefügt werden.
+ Diese Optionen bestimmen, wie Leerzeichen in die **Quellansicht** eingefügt werden.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 

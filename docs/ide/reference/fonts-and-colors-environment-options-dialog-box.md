@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954228"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220260"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
@@ -90,7 +89,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 
  Hier einige Anzeigeelemente:
 
-|Anzeigeelement|description|
+|Anzeigeelement|Beschreibung |
 |------------------|-----------------|
 |**Nur-Text**|Text im Editor.|
 |**Markierter Text**|Text, der in der aktuellen Auswahl enthalten ist, wenn der Editor den Fokus besitzt.|

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918882"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220787"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analysieren der Netzwerkauslastung in UWP-Apps
 Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.Web.Http-API](/uwp/api/windows.web.http) Daten zu Netzwerkoperationen. Durch Analysieren der Daten können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung in den Griff bekommen.  
@@ -23,7 +23,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
  Das Netzwerktool unterstützt nur UWP-Apps. Andere Plattformen werden derzeit nicht unterstützt.  
   
 > [!NOTE]
->  Detailliertere Informationen zum Netzwerk-Tool finden Sie unter [Introducing Visual Studio’s network tool (Einführung in das Netzwerk-Tool von Visual Studio)](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Detailliertere Informationen zum Netzwerk-Tool finden Sie unter [Introducing Visual Studio’s network tool (Einführung in das Netzwerk-Tool von Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Sammeln von Netzwerktooldaten  
  Sie sollten das Tool **Netzwerk** mit einem geöffneten Visual Studio-Projekt auf dem Computer mit Visual Studio ausführen.  
@@ -75,6 +75,6 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 ## <a name="see-also"></a>Siehe auch  
  [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio-Blog: Einführung in den Netzwerk-Inspektor von Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
  [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

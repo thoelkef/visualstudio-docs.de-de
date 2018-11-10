@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908781"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296189"
 ---
 # <a name="form-support-in-workflows"></a>Unterstützung von Formularen in workflows
-  Vier Arten von Formularen in einem Workflow verwendet werden können: Zuordnung, Initiierung, Aufgabe und Änderung. Dieser Formulartypen können auf eine ASPX-Webformular oder ein InfoPath-Formular basieren. Die Ebene der Unterstützung, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet für verschiedene Faktoren berücksichtigt, ein bestimmtes Formulars hängt die in der folgenden Tabelle beschrieben werden. Weitere Informationen zu den Workflow-Formulartypen, finden Sie unter [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228) auf der MSDN-Website.  
+  Vier Arten von Formularen in einem Workflow verwendet werden können: Zuordnung, Initiierung, Aufgabe und Änderung. Dieser Formulartypen können auf eine ASPX-Webformular oder ein InfoPath-Formular basieren. Die Ebene der Unterstützung, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet für verschiedene Faktoren berücksichtigt, ein bestimmtes Formulars hängt die in der folgenden Tabelle beschrieben werden. Weitere Informationen zu den Workflow-Formulartypen, finden Sie unter [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>XML-refactoring
  Wenn Sie eine ASPX-Zuordnungs- oder ein Formular zum Hinzufügen einer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflow-Projektelement, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automatisch gestaltet die Workflow XML- *"Elements.xml"* Datei das Attribut beibehalten wird, die auf die Zuordnung verweist oder Initiierungsformular synchron bei jeder Aktualisierung der Form Name oder die Bereitstellung der Pfad oder das Formular gelöscht wird. Allerdings bei Verwendung anderer Arten von Formularen in einem Workflow, z. B. einen Task oder Änderung, die *"Elements.xml"* Datei ist nicht umgestaltet.  

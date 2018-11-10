@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d181891fb36645e4f246aa0c2238c12ea1dc4903
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854285"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296007"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
   Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie es mit einer Elementvorlage oder einer Projektvorlage zuordnen. Diese Zuordnung ermöglicht anderen Entwicklern das Projektelement in Visual Studio verwenden. Sie können auch einen Assistenten für die Vorlage erstellen.
@@ -42,7 +42,7 @@ ms.locfileid: "49854285"
 |Erforderliche Datei|Beschreibung|
 |-------------------|-----------------|
 |Ein *SPDATA* Datei|Diese XML-Datei gibt an, den Inhalt und das Standardverhalten des Projektelements. Diese Datei muss in der Elementvorlage enthalten sein. Weitere Informationen über den Inhalt des *SPDATA* finden Sie unter [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md).|
-|Ein *VSTEMPLATE* Datei.|Diese Datei werden die erforderlichen Informationen zum Anzeigen der Vorlage in Visual Studio bietet die **neues Element hinzufügen** Dialogfeld und ein Projektelement aus der Vorlage zu erstellen. Diese Datei muss in der Elementvorlage enthalten sein. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|Ein *VSTEMPLATE* Datei.|Diese Datei werden die erforderlichen Informationen zum Anzeigen der Vorlage in Visual Studio bietet die **neues Element hinzufügen** Dialogfeld und ein Projektelement aus der Vorlage zu erstellen. Diese Datei muss in der Elementvorlage enthalten sein. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Eine Visual Studio-Erweiterungsassembly, implementiert die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Schnittstelle.|Diese Assembly definiert, das Laufzeitverhalten des Projektelements. Diese Assembly muss im VSIX-Paket mit der Elementvorlage enthalten sein. Weitere Informationen finden Sie unter [definieren Sie benutzerdefinierte SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md) und [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).|
 
  Die folgende Tabelle enthält einige der am häufigsten verwendeten optionalen Dateien, die in der Elementvorlage aufgenommen werden können. Einige Typen von Projektelementen möglicherweise andere Dateien, die hier nicht aufgeführt.
@@ -66,7 +66,7 @@ ms.locfileid: "49854285"
 
 |Erforderliche Datei|Beschreibung|
 |-------------------|-----------------|
-|Ein *VSTEMPLATE* Datei|Diese Datei werden die erforderlichen Informationen zum Anzeigen der Vorlage in Visual Studio bietet die **neues Projekt** Dialogfeld und zum Erstellen eines Projekts aus der Vorlage. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|Ein *VSTEMPLATE* Datei|Diese Datei werden die erforderlichen Informationen zum Anzeigen der Vorlage in Visual Studio bietet die **neues Projekt** Dialogfeld und zum Erstellen eines Projekts aus der Vorlage. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Ein *csproj* oder *vbproj* Datei|Dies ist der Projektdatei. Er definiert den Inhalt und die Konfigurationseinstellungen des Projekts.|
 |*"Package.Package"*|Diese Datei definiert Bereitstellungspakets für das Projekt. Wenn Sie die Paket-Designer verwenden, das Lösungspaket für Ihr Projekt anpassen, speichert Visual Studio Daten über das Lösungspaket in dieser Datei.<br /><br /> Wenn Sie eine benutzerdefinierte SharePoint-Projektvorlage erstellen, empfohlen, dass Sie nur den minimalen erforderlichen Inhalt in die *Package.package* -Datei, und konfigurieren das Projektmappenpaket mithilfe der APIs in der <xref:Microsoft.VisualStudio.SharePoint.Packages> Der Namespace in eine Erweiterung, die mit der Projektvorlage zugeordnet ist. Wenn Sie dies tun, Ihre Projektvorlage ist geschützt, über zukünftige Änderungen an der Struktur des der *Package.package* Datei. Ein Beispiel für die Vorgehensweise: Erstellen einer *Package.package* Inhalt der Datei mit nur einem Minimum erforderlich sind, finden Sie unter [Exemplarische Vorgehensweise: erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Wenn Sie ändern möchten, die *"Package.Package"* Datei direkt, Sie können den Inhalt überprüfen, indem Sie mit dem Schema auf *%Programme (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd* .|
 |*Package.Template.xml*|Diese Datei bildet die Grundlage für die Manifestdatei der Lösung (*"Manifest.xml"*) für die SharePoint-Lösungspaket (*.wsp*), die aus dem Projekt generiert wird. Sie können die Inhalte dieser Datei hinzufügen, sollten Sie ein Verhalten angeben, die nicht von Benutzern der Art Ihres Projekts geändert werden soll. Weitere Informationen finden Sie unter [Baustein: Lösungen](http://go.microsoft.com/fwlink/?LinkId=169186) und [Lösung Schema](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Wenn Sie ein Lösungspaket aus dem Projekt erstellen, führt Visual Studio den Inhalt des der *Package.package* und *Package.Template.xml* -Dateien in der Lösung der Manifestdatei. Weitere Informationen zum Erstellen von Lösungspaketen finden Sie unter [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|

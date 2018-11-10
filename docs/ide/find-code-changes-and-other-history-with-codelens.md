@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853518"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220299"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -297,7 +297,7 @@ So verwenden Sie die Tastatur:
 
 4. Drücken Sie die **TAB-TASTE**, um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE**, um **CodeLens**auszuwählen.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-`head`s-up-Display verschieben?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-Heads-up-Display verschieben?
 
 **A:** Ja, klicken Sie auf ![Andocksymbol](../ide/media/codelensdockwindow.png), um CodeLens als Fenster anzudocken.
 

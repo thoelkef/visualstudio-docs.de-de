@@ -32,7 +32,7 @@ ms.locfileid: "31474362"
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Remotedebuggen – Fehler und Problembehandlung
 Beim Remotedebuggen können folgende Fehler auftreten.  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Fehler: Automatischer Einzelschritt auf dem Server nicht möglich](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   

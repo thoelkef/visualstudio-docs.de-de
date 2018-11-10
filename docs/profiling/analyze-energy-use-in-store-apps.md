@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930907"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220735"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
 Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und Energieverbrauch von UWP-Apps auf Tablets mit geringer Leistung zu analysieren, die die ganze Zeit oder zeitweilig von eigenen Akkus betrieben werden. Auf einem akkubetriebenen Gerät kann eine App, die zu viel Energie verbraucht, die Kundenzufriedenheit so sehr beeinträchtigen, dass sie von den Kunden möglicherweise sogar deinstalliert wird. Ein optimierter Energieverbrauch kann die Akzeptanz Ihrer App und deren Nutzung durch die Kunden erhöhen.  
@@ -54,7 +54,7 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
   
  **Hinzufügen von Markierungen zu C#-, Visual Basic- und C++-Code**  
   
- Erstellen Sie zuerst ein [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) -Objekt, um C#-, Visual Basic- und C++-Code eine Benutzermarkierung hinzuzufügen. Fügen Sie anschließend an den Positionen im Code, die Sie markieren möchten, Aufrufe von [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) -Methoden ein. Verwenden Sie in den Aufrufen [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) .  
+ Erstellen Sie zuerst ein [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) -Objekt, um C#-, Visual Basic- und C++-Code eine Benutzermarkierung hinzuzufügen. Fügen Sie anschließend an den Positionen im Code, die Sie markieren möchten, Aufrufe von [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) -Methoden ein. Verwenden Sie in den Aufrufen [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) .  
   
  Wenn die Methode ausgeführt wird, wird eine Benutzermarkierung zu den Profilerstellungsdaten zusammen mit einer Meldung hinzugefügt.  
   
@@ -62,7 +62,7 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
 > - Die Windows.Foundation.Diagnostics LoggingChannel-Klasse implementiert die [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable)-Schnittstelle (in C# und VB als [System.IDisposable](/dotnet/api/system.idisposable) projiziert). Rufen Sie [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) in C# und VB) auf, wenn Sie mit einem Protokollierungskanal fertig sind, um Verluste von Betriebssystemressourcen zu vermeiden.  
 >   -   Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
   
- Beispiele hierzu finden Sie im Windows SDK-Beispiel [LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
+ Beispiele hierzu finden Sie im Windows SDK-Beispiel [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
   
  **Hinzufügen von Markierungen zu JavaScript-Code**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>Weitere Ressourcen  
   
--   In den Abschnitten **Verbindungsstatus- und Kostenverwaltung** für [C#/VB/C++ und XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) und [JavaScript und HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) im Windows Dev Center werden die Windows-APIs beschrieben, die Informationen zur Netzwerkkonnektivität bereitstellen, die Ihre App nutzen kann, damit Sie die Kosten für den Netzwerkdatenverkehr reduzieren können.  
+-   In den Abschnitten **Verbindungsstatus- und Kostenverwaltung** für [C#/VB/C++ und XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) und [JavaScript und HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) im Windows Dev Center werden die Windows-APIs beschrieben, die Informationen zur Netzwerkkonnektivität bereitstellen, die Ihre App nutzen kann, damit Sie die Kosten für den Netzwerkdatenverkehr reduzieren können.  
   
      Mit dem Visual Studio-Simulator für UWP-Apps können Sie Datenverbindungseigenschaften der APIs für Netzwerkinformationen simulieren. Weitere Informationen finden Sie unter [Ausführen von UWP-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   

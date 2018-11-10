@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Build- oder Releaseverwaltung für automatische Tests
-ms.date: 03/02/2018
+title: Verwenden von Azure Pipelines für automatisierte Tests
+ms.date: 10/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,28 +11,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a410601b0d7ab6b6a3901333b062e515555ec2d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950653"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218660"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Verwenden von Azure Test Plans anstelle von Lab Management für automatisierte Tests
 
-Wenn Sie Microsoft Test Manager (MTM) und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features in Team Foundation Server (TFS) und Azure Test Plans das gleiche Ergebnis erzielen können.
+Wenn Sie Microsoft Test Manager und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features in Azure Pipelines und Team Foundation Server (TFS) das gleiche Ergebnis erzielen können.
 
 ## <a name="build-deploy-test-automation"></a>Automatisiertes Build-Bereitstellen-Testen
 
-MTM und Lab Management basieren zum automatischen Erstellen, Bereitstellen und Testen Ihrer Anwendungen auf einer XAML-Builddefinition. Der XAML-Build stützt sich zum Erreichen dieses Ziels auf verschiedene Konstrukte in MTM, wie z.B. einer Lab-Umgebung, Testsammlungen und Testeinstellungen, sowie auf verschiedenen Infrastrukturkomponenten, wie z.B. einen Buildcontroller, Build-Agents, Testcontroller und Test-Agents. Sie können das Gleiche mit weniger Schritten mithilfe der Buildverwaltung oder Release Management in TFS und Azure Pipelines erzielen.
+Microsoft Test Manager und Lab Management verwenden zum automatischen Erstellen, Bereitstellen und Testen Ihrer Anwendungen eine XAML-Builddefinition. Der XAML-Build stützt sich hierbei auf verschiedene Konstrukte in Microsoft Test Manager, wie z.B. eine Lab-Umgebung, Testsammlungen und Testeinstellungen, sowie auf verschiedenen Infrastrukturkomponenten, wie etwa einen Buildcontroller, Build-Agents, Testcontroller und Test-Agents. Mithilfe von Azure Pipelines oder TFS können Sie mit weniger Schritten dasselbe Ziel erreichen.
 
-| Schritte | Mit XAML Build | Mit Build oder Release Management |
-|-------|-|-----------------|
-| Identifizieren der Computer, auf denen der Build bereitgestellt und Tests ausgeführt werden sollen. | Erstellen einer Standard-Lab-Umgebung in MTM mit diesen Computern. | n/v |
-| Identifizieren der auszuführenden Tests. | Erstellen Sie eine Testsammlung in MTM, erstellen Sie Testfälle, und ordnen Sie jedem Testfall Automatisierung zu. Erstellen Sie Testeinstellungen in MTM, welche die Rolle der Computer in der Lab-Umgebung identifizieren, auf denen die Tests ausgeführt werden sollen. | Erstellen Sie auf die gleiche Weise eine automatisierte Testsammlung in MTM, wenn Sie Ihre Tests über Testpläne verwalten möchten. Alternativ können Sie diesen Schritt überspringen, wenn Sie die Tests direkt aus den von Ihren Builds erzeugten Testbinärdateien ausführen möchten. In keinem der Fälle ist es notwendig, Testeinstellungen zu erstellen. |
+| Schritte | Mit XAML-Build | In einem Build oder Release |
+|-------|----------------------|-----------------|
+| Identifizieren der Computer, auf denen der Build bereitgestellt und Tests ausgeführt werden sollen. | Erstellen Sie mit diesen Computern eine Standard-Lab-Umgebung in Microsoft Test Manager. | n/v |
+| Identifizieren der auszuführenden Tests. | Erstellen Sie eine Testsammlung in Microsoft Test Manager, erstellen Sie Testfälle, und ordnen Sie für jeden Testfall eine Automatisierung zu. Erstellen Sie Testeinstellungen in Microsoft Test Manager, die die Rolle der Computer in der Lab-Umgebung identifizieren, auf denen die Tests ausgeführt werden sollen. | Erstellen Sie auf die gleiche Weise eine automatisierte Testsammlung in Microsoft Test Manager, wenn Sie Ihre Tests über Testpläne verwalten möchten. Alternativ können Sie diesen Schritt überspringen, wenn Sie die Tests direkt aus den von Ihren Builds erzeugten Testbinärdateien ausführen möchten. In keinem der Fälle ist es notwendig, Testeinstellungen zu erstellen. |
 | Automatisieren von Bereitstellung und Testen. | Erstellen Sie eine XAML-Builddefinition mit LabDefaultTemplate.*.xaml. Geben Sie Build, Testsammlungen und Lab-Umgebung in der Builddefinition an. | Erstellen Sie eine [Build- oder Releasepipeline](/azure/devops/pipelines/index?view=vsts) mit einer einzigen Umgebung. Führen Sie das gleiche Bereitstellungsskript (aus der XAML-Builddefinition) mit dem Befehlszeilentask aus, und führen Sie automatische Tests mit den Tasks „Test Agent-Bereitstellung“ und „Funktionstests ausführen“ aus. Geben Sie die Liste der Computer und deren Anmeldeinformationen als Eingaben für diese Tasks an. |
 
-Zu den Vorteilen der Verwendung von Build oder Release Management für dieses Szenario gehören:
+Nachfolgend werden einige der Vorteile aufgeführt, die eine Nutzung von Azure Pipelines oder TFS für dieses Szenario bietet:
 
 * Sie benötigen keinen Buildcontroller oder Testcontroller.
 * Der Test-Agent wird über einen Task als Teil des Builds oder des Releases installiert.
@@ -57,8 +57,8 @@ Allerdings gibt es angesichts der Weiterentwicklung umfangreicherer öffentliche
 
 Die folgende Tabelle enthält die typischen Aktivitäten, die Sie im Lab-Center ausführen, und zeigt, wie Sie das gleiche Ergebnis mit SCVMM oder Azure (wenn es sich um Infrastrukturverwaltungsaktivitäten handelt) oder mit TFS und Azure DevOps Services (wenn es sich um Test- oder Bereitstellungsaktivitäten handelt) erreichen können:
 
-| Schritte | Mit Lab-Center | Mit Build oder Release Management |
-|-------|-|-----------------|
+| Schritte | Mit Lab-Center | In einem Build oder Release |
+|-------|-----------------|-----------------------|
 | Verwalten einer Bibliothek von Umgebungsvorlagen. | Erstellen einer Lab-Umgebung. Installieren Sie erforderliche Software auf den virtuellen Computern. Bereiten Sie das System vor und speichern Sie die Umgebung als Vorlage in der Bibliothek. | Verwenden Sie direkt die SCVMM-Administratorkonsole zum Erstellen und Verwalten von Vorlagen für virtuelle Computer oder Dienstvorlagen. Wenn Sie Azure verwenden, wählen Sie eine der [Azure-Schnellstartvorlagen](https://azure.microsoft.com/resources/templates/) aus. |
 | Erstellen einer Lab-Umgebung. | Wählen Sie in der Bibliothek eine Umgebungsvorlage aus und stellen Sie diese bereit. Geben Sie die erforderlichen Parameter zum Anpassen der Konfiguration der virtuellen Computer an. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um virtuelle Computer oder Dienstinstanzen aus Vorlagen zu erstellen. Verwenden Sie direkt das Azure-Portal, um Ressourcen zu erstellen. Oder erstellen Sie eine Releasedefinition mit einer Umgebung. Verwenden Sie die Azure-Tasks oder Tasks aus der [SCVMM-Integrationserweiterung](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp), um neue virtuelle Computer zu erstellen. Das Erstellen eines neuen Releases dieser Definition entspricht dem Erstellen einer neuen Umgebung in Lab-Center. |
 | Verbinden mit Computern. | Öffnen Sie die Lab-Umgebung im Umgebungs-Viewer. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um eine Verbindung mit dem virtuellen Computer herzustellen. Verwenden Sie alternativ die IP-Adresse oder den DNS-Namen der virtuellen Computer, um Remotedesktopsitzungen zu öffnen. |
@@ -68,7 +68,7 @@ Die folgende Tabelle enthält die typischen Aktivitäten, die Sie im Lab-Center 
 
 Eine netzwerkisolierte Lab-Umgebung ist eine Gruppe von virtuellen SCVMM-Computern, die sicher geklont werden kann, ohne dass es zu Netzwerkkonflikten kommt. Dies erfolgte in MTM mit einer Reihe von Anweisungen, welche die virtuellen Computer in einem privaten Netzwerk mit einem Satz von Netzwerk-Schnittstellenkarten konfigurierten und einen anderen Satz von Netzwerk-Schnittstellenkarten verwendeten, um die virtuellen Computer in einem öffentlichen Netzwerk zu konfigurieren.
 
-Azure Test Plans und TFS können allerdings in Kombination mit der SCVMM-Build- und -Bereitstellungsaufgabe verwendet werden, um SCVMM-Umgebungen zu verwalten, isolierte virtuelle Netzwerke bereitzustellen und Build-, Bereitstellungs- und Testszenarios zu implementieren. Sie können die Aufgabe z.B. verwenden,
+Azure Pipelines und TFS können allerdings in Kombination mit der SCVMM-Build- und -Bereitstellungsaufgabe verwendet werden, um SCVMM-Umgebungen zu verwalten, isolierte virtuelle Netzwerke bereitzustellen und Build-, Bereitstellungs- und Testszenarios zu implementieren. Sie können die Aufgabe z.B. verwenden,
 
 * um Prüfpunkte zu erstellen, wiederherzustellen und zu löschen.
 * um neue virtuelle Computer mit einer Vorlage zu erstellen.

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 160d0f283542445335496e3cbb7b98955df02b05
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672612"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
 
@@ -33,7 +33,7 @@ Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie installierte Inst
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): PowerShell-Skripts, die die Setupkonfigurations-API zum Identifizieren der installierten Instanzen von Visual Studio verwenden.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): C#- und C++-Beispiele, die veranschaulichen, wie Sie die Setupkonfigurations-API zum Abfragen einer vorhandene Installation verwenden.
 
-Darüber hinaus stellt die [Setupkonfigurations-API](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) Schnittstellen für Entwickler bereit, die eigene Hilfsprogramme zum Abfragen von Visual Studio-Instanzen erstellen möchten.
+Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudio.Setup.Configuration>) Schnittstellen für Entwickler bereit, die eigene Hilfsprogramme zum Abfragen von Visual Studio-Instanzen erstellen möchten.
 
 ## <a name="using-vswhereexe"></a>Verwenden von „vswhere.exe“
 
