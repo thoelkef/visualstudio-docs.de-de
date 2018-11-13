@@ -2,7 +2,7 @@
 title: Veröffentlichen einer Node.js-App in Linux App Service
 description: Sie können in Visual Studio erstellte Node.js-Anwendungen in Linux App Service unter Azure veröffentlichen.
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924770"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750766"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -42,15 +42,19 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 1. Erstellen Sie eine neue TypeScript Express-App mithilfe des Dialogfelds **Datei** > **Neues Projekt**.
 
+1. Wählen Sie unter dem **TypeScript**-Knoten die Option **Basic Node.js Express 4 Application** aus.
+
     ![Erstellen einer neuen TypeScript Express-App](../javascript/media/azure-ts-express-app.png)
 
-2. Drücken Sie die Taste **F5**, um die App zu kompilieren und auszuführen. Stellen Sie sicher, dass alles wie erwartet ausgeführt wird.
+1. Klicken Sie auf **OK**, um das Projekt in Visual Studio zu erstellen.
 
-3. Wählen Sie **Datei** > **Zur Quellcodeverwaltung hinzufügen** aus, um ein lokales Git-Repository für das Projekt zu erstellen.
+1. Drücken Sie die Taste **F5**, um die App zu kompilieren und auszuführen. Stellen Sie sicher, dass alles wie erwartet ausgeführt wird.
+
+1. Wählen Sie **Datei** > **Zur Quellcodeverwaltung hinzufügen** aus, um ein lokales Git-Repository für das Projekt zu erstellen.
 
     An dieser Stelle wird eine Node.js-App, für die das Express-Framework verwendet wird und die in TypeScript geschrieben ist, ausgeführt und bei der lokalen Quellcodeverwaltung angemeldet.
 
-4. Bearbeiten Sie das Projekt wie gewünscht, bevor Sie mit den nächsten Schritten fortfahren.
+1. Bearbeiten Sie das Projekt wie gewünscht, bevor Sie mit den nächsten Schritten fortfahren.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Übertragen des Codes per Push von Visual Studio zu GitHub
 

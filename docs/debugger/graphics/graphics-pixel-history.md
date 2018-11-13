@@ -24,7 +24,7 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
   
  Im Folgenden finden Sie das Pixelverlaufsfenster:  
   
- ![Ein Pixel mit drei Direct3D-Ereignisse in dessen Verlauf. ] (media/gfx_diag_demo_pixel_history_orientation.png "Gfx_diag_demo_pixel_history_orientation")  
+ ![Ein Pixel mit drei Direct3D-Ereignisse in dessen Verlauf. ](media/gfx_diag_demo_pixel_history_orientation.png "Gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Grundlegendes zum Pixelverlaufsfenster  
  Mithilfe des Pixelverlaufs können Sie analysieren, wie sich Direct3D-Ereignisse während eines Frames auf ein bestimmtes Pixel oder Renderziel auswirken. Sie können ein Rendering-Problem auf ein bestimmtes Ereignis für Direct3D zurückführen, selbst wenn die nachfolgenden Ereignisse – oder nachfolgende Primitive im selben Ereignis – weiterhin den endgültigen Farbwert des Pixel verändern. Beispielsweise wird ein Pixel nicht ordnungsgemäß erzeugt und dann unleserlich durch ein anderes, halbtransparenten Pixel, dessen Farben in den Framebuffer-Kontrastwerten auftreten. Diese Art von Problem wäre nur schwer zu diagnostizieren, wenn Sie nur den endgültigen Inhalt des Renderingziels als Unterstützung zur Verfügung hätten.  
@@ -42,9 +42,9 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
   
 |Symbol|Grund für den Ausschluss|  
 |----------|--------------------------|  
-|![Symbol für Tiefe Test Fehler. ] (media/vsg_hist_icon_failed_depth.png "Vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|  
-|![Fehlerhafter scherentest Test-Symbol ("Fehler". ] (media/vsg_hist_icon_failed_scissor.png "Vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|  
-|![Symbol für Schablone Test Fehler. ] (media/vsg_hist_icon_failed_stencil.png "Vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|  
+|![Symbol für Tiefe Test Fehler. ](media/vsg_hist_icon_failed_depth.png "Vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|  
+|![Fehlerhafter scherentest Test-Symbol ("Fehler". ](media/vsg_hist_icon_failed_scissor.png "Vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|  
+|![Symbol für Schablone Test Fehler. ](media/vsg_hist_icon_failed_stencil.png "Vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|  
   
 ### <a name="draw-call-exclusion"></a>Ausschluss des Zeichenaufrufs  
  Wenn alle Primitive in einem Zeichnen-Aufruf von der Auswirkung auf das Renderingziel ausgeschlossen werden, da sie einen Test nicht bestehen, kann der Aufruf einer Zeichnung nicht erweitert werden, und ein Symbol, das dem Grund für den Ausschluss entspricht, wird daneben angezeigt. Die Gründe für den Ausschluss des Aufrufs einer Zeichnung ähneln den Gründen für den Ausschluss von Primitiven, und die Symbole sind ähnlich.  

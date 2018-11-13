@@ -1,6 +1,6 @@
 ---
-title: Application Page, Project Designer (Visual Basic)
-ms.date: 11/04/2016
+title: Seite „Anwendung“ der VB-Projekteigenschaften
+ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670961"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinstellungen und -eigenschaften eines Projekts fest.
 
-Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste **Projekt** > **Eigenschaften** aus. Wenn der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.
+Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste **Projekt** > **Eigenschaften** aus. Wenn der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +36,11 @@ Mit den folgenden Optionen können Sie allgemeine Einstellungen für eine Anwend
 
 ### <a name="assembly-name"></a>Assemblyname
 
-Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert. Sie können den Namen der Ausgabedatei auch an einer Eingabeaufforderung mit dem Compilerschalter [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) angeben. Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert.
+
+Sie können den Namen der Ausgabedatei auch an einer Eingabeaufforderung mit dem Compilerschalter [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) angeben.
+
+Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
 ### <a name="root-namespace"></a>Stammnamespace
 
@@ -45,7 +49,7 @@ Legt den Basisnamespace für alle Dateien im Projekt fest. Wenn Sie beispielswei
 Wenn Sie den **Stammnamespace** löschen, können Sie die Namespacestruktur Ihres Projekts im Code festlegen.
 
 > [!NOTE]
-> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Wenn Sie das `Global`-Schlüsselwort in einer [Namespaceanweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -66,20 +70,17 @@ Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Ve
 
 ### <a name="application-type"></a>Anwendungstyp
 
-Gibt den Typ der zu erstellenden Anwendung an. Für Windows 8.x-Apps können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.
+Gibt den Typ der zu erstellenden Anwendung an. Die Werte unterscheiden sich je nach Projekttyp. Für ein **Windows Forms-App**-Projekt können Sie zum Beispiel **Windows Forms-Anwendung**, **Klassenbibliothek**, **Konsolenanwendung**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.
 
 Für ein Webanwendungsprojekt müssen Sie **-Klassenbibliothek** angeben.
 
-Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).
-
-> [!NOTE]
-> Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.
-
 Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
-### <a name="icon"></a>Symbol
+### <a name="auto-generate-binding-redirects"></a>Bindungsumleitungen automatisch generieren
 
-Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie  **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Bindungsumleitungen werden zu Ihrem Projekt hinzugefügt, wenn Ihre App oder die zugehörigen Komponenten auf mehrere Versionen derselben Assembly verweisen. Wenn Sie Bindungsumleitungen manuell in der Projektdatei definieren möchten, deaktivieren Sie **Bindungsumleitungen automatisch generieren**. Dieses Kontrollkästchen wurde in Visual Studio 2017 Version 15.7 eingeführt.
+
+Weitere Informationen zur Umleitung finden Sie unter [Umleiten von Assemblyversionen](/dotnet/framework/configure-apps/redirect-assembly-versions).
 
 ### <a name="startup-form--startup-object--startup-uri"></a>Startformular/Startobjekt/Start-URI
 
@@ -92,6 +93,10 @@ Wenn es sich bei dem Projekt um eine WPF-Browseranwendung handelt, heißt diese 
 Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **Startobjekt** und zeigt sowohl Formulare als auch Klassen oder Module mit einer `Sub Main` an.
 
 **Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+
+### <a name="icon"></a>Symbol
+
+Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie  **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Assemblyinformationen
 
@@ -107,7 +112,7 @@ Ist dieses Kontrollkästchen deaktiviert, verwendet die Anwendung die benutzerde
 
 ### <a name="view-windows-settings"></a>Windows-Einstellungen anzeigen
 
-Klicken Sie auf diese Schaltfläche, um die Datei „app.manifest“ zu erstellen und zu öffnen. Visual Studio verwendet diese Datei zum Generieren von Manifestdaten für die Anwendung. Legen Sie dann die von UAC angeforderte Ausführungsebene fest, indem Sie das `<requestedExecutionLevel>`-Tag in „app.manifest“ wie folgt ändern:
+Klicken Sie auf diese Schaltfläche, um die Datei *app.manifest* zu erstellen und zu öffnen. Visual Studio verwendet diese Datei zum Generieren von Manifestdaten für die Anwendung. Legen Sie dann die von der Benutzerkontensteuerung angeforderte Ausführungsebene fest, indem Sie das `<requestedExecutionLevel>`-Tag in *app.manifest* wie folgt ändern:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -117,7 +122,10 @@ Weitere Informationen zum Generieren von Manifesten finden Sie unter [ClickOnce-
 
 ## <a name="windows-application-framework-properties"></a>Eigenschaften des Windows-Anwendungsframeworks
 
-Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Im folgenden Abschnitt werden die **Eigenschaften des Windows-Anwendungsframeworks**-Einstellungen für Windows Presentation Foundation (WPF)-Anwendungen beschrieben.
+Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist.
+
+> [!TIP]
+> Im folgenden Abschnitt werden die Einstellungen **Eigenschaften des Windows-Anwendungsframeworks** beschrieben, die für Windows Presentation Foundation-Apps (WPF) spezifisch sind.
 
 ### <a name="enable-xp-visual-styles"></a>Visuelle XP-Stile aktivieren
 
@@ -153,13 +161,13 @@ Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möch
 
 Klicken Sie auf diese Schaltfläche, um eine Ereigniscodedatei anzuzeigen, in die Sie Ereignisse für die Anwendungsframeworkereignisse `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` und `NetworkAvailabilityChanged` schreiben können. Sie können auch bestimmte Anwendungsframeworkmethoden überschreiben. Beispielsweise können Sie das Anzeigeverhalten des Begrüßungsbildschirms ändern, indem Sie `OnInitialize` überschreiben.
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Eigenschaften des Windows-Anwendungsframeworks für Windows Presentation Foundation (WPF)-Anwendungen
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Eigenschaften des Windows-Anwendungsframeworks für Windows Presentation Foundation-Apps (WPF)
 
-Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar, wenn das Projekt eine Windows Presentation Foundation-Anwendung ist. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Die in dieser Tabelle aufgeführten Optionen sind nur für WPF-Anwendung oder WPF-Browseranwendungen verfügbar. Sie sind nicht für WPF-Benutzersteuerelement- oder benutzerdefinierte Steuerelementbibliotheken verfügbar.
+Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar, wenn das Projekt eine Windows Presentation Foundation-App (WPF) ist. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Die in dieser Tabelle aufgeführten Optionen sind nur für WPF oder WPF-Browseranwendungen verfügbar. Sie sind nicht für WPF-Benutzersteuerelement- oder benutzerdefinierte Steuerelementbibliotheken verfügbar.
 
 ### <a name="shutdown-mode"></a>Modus für das Herunterfahren
 
-Diese Eigenschaft gilt nur für Windows Presentation Foundation-Anwendungen.
+Diese Eigenschaft gilt nur für Windows Presentation Foundation-Anwendungen (WPF).
 
 Wählen Sie **Beim expliziten Herunterfahren** aus, um festzulegen, dass die Anwendung bei einem expliziten Aufruf von <xref:System.Windows.Application.Shutdown%2A> beendet wird.
 
@@ -171,10 +179,10 @@ Weitere Informationen über die Verwendung diese Einstellung finden Sie unter <x
 
 ### <a name="edit-xaml"></a>XAML bearbeiten
 
-Klicken Sie auf diese Schaltfläche, um die Anwendungsdefinitionsdatei („Application.xaml“) im XAML-Editor zu öffnen und zu ändern. Wenn Sie auf diese Schaltfläche klicken, wird der Anwendungsdefinitionsknoten von „Application.xaml“ geöffnet. Möglicherweise müssen Sie diese Datei bearbeiten, um bestimmte Aufgaben auszuführen, wie z.B. das Definieren von Ressourcen. Wenn keine Anwendungsdefinitionsdatei vorhanden ist, wird sie vom Projekt-Designer erstellt.
+Durch Klicken auf diese Schaltfläche wird die Anwendungsdefinitionsdatei („Application.xaml“) im XAML-Editor geöffnet. Wenn Sie auf diese Schaltfläche klicken, wird der Anwendungsdefinitionsknoten von *Application.xaml* geöffnet. Möglicherweise müssen Sie diese Datei bearbeiten, um bestimmte Aufgaben auszuführen, wie z.B. das Definieren von Ressourcen. Wenn keine Anwendungsdefinitionsdatei vorhanden ist, wird sie vom Projekt-Designer erstellt.
 
 ### <a name="view-application-events"></a>Anwendungsereignisse anzeigen
 
-Klicken Sie auf diese Schaltfläche, um die partielle `Application`-Klassendatei („Application.xaml.vb“) in einem Code-Editor anzuzeigen. Wenn die Datei nicht vorhanden ist, wird sie vom Projekt-Designer mit dem entsprechenden Namen und Namespace erstellt.
+Durch Klicken auf diese Schaltfläche wird die `Application`-Klassendatei (*Application.xaml.vb*) in einem Code-Editor geöffnet. Wenn die Datei nicht vorhanden ist, wird sie vom Projekt-Designer mit dem entsprechenden Namen und Namespace erstellt.
 
 Das Objekt <xref:System.Windows.Application> löst Ereignisse aus, wenn bestimmte Anwendungszustandsänderungen stattfinden (z.B. beim Starten oder Herunterfahren der Anwendung). Eine vollständige Liste der Ereignisse, die diese Klasse verfügbar macht, finden Sie unter <xref:System.Windows.Application>. Diese Ereignisse werden im Benutzercodeabschnitt der partiellen `Application`-Klasse verarbeitet.

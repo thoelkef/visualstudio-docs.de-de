@@ -10,27 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e48d777332c63859f84f56425c786b430018d1f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34547997"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348538"
 ---
 # <a name="debugging-xslt"></a>Debugging von XSLT
 
 Mithilfe des Visual Studio-Debuggers können Sie XSLT debuggen. Der Debugger unterstützt das Festlegen von Haltepunkten, das Anzeigen des XSLT-Ausführungszustands und weitere Vorgänge.
 
 > [!NOTE]
-> Der XSLT-Debugger ist nur in der Enterprise Edition von Visual Studio 2017 verfügbar.
+> Der XSLT-Debugger ist nur verfügbar, in der Enterprise Edition von Visual Studio 2017.
 
 ## <a name="xslt-profiler"></a>XSLT-profiler
 
-Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwickler messen, auswerten und leistungsbezogener Probleme im XSLT-Code durch Erstellen von ausführlichen XSLT-Leistungsberichten abzielen.
+Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwickler zu messen, auswerten und leistungsbezogener Probleme im XSLT-Code durch das Erstellen von ausführlichen XSLT-Leistungsberichten.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
 - [Bearbeiten von XSLT-Stylesheets](../xml-tools/editing-xslt-style-sheets.md) erläutert die Verwendung von XML-Editor zum Bearbeiten von Stylesheets.
-- [Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten](../xml-tools/security-considerations-when-working-with-xml-data.md) erörtert Sicherheitsprobleme, die Sie beachten, wenn der XML-Editor oder dem XSLT-Debugger arbeiten müssen.
+- [Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten](../xml-tools/security-considerations-when-working-with-xml-data.md) erläutert Sicherheitsprobleme, die Sie bei der Arbeit der XML-Editor oder dem XSLT-Debugger kennen müssen.
 - [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) führt Visual Studio-Debugger.
-- [Referenz zu XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) enthält Referenzmaterial zu XSLT-Elementen und -Funktionen.
+- [Referenz zu XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) enthält Referenzmaterial für XSLT-Elemente und Funktionen.

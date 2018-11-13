@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947390"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672484"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Optionen, Text-Editor, C#, IntelliSense
 
@@ -44,11 +44,9 @@ Die Optionsseite **IntelliSense** enthält folgende Optionen:
 
 - Übereinstimmende Teile der Vervollständigungslistenelemente hervorheben
 
-- Show completion list filters (Filter für die Vervollständigungsliste anzeigen)
+- Vervollständigungselementfilter anzeigen
 
-- Show name suggestions (Namensvorschläge anzeigen)
-
-### <a name="snippets-behavior"></a>Ausschnittverhalten
+## <a name="snippets-behavior"></a>Ausschnittverhalten
 
 - Ausschnitte nie einschließen
 
@@ -62,7 +60,7 @@ Die Optionsseite **IntelliSense** enthält folgende Optionen:
 
    Wenn diese Option aktiviert ist, fügt IntelliSense Aliase für C#-Codeausschnitte zur Vervollständigungsliste hinzu, wenn **?**+**TAB-TASTE** nach einem Bezeichner gedrückt wird.
 
-### <a name="enter-key-behavior"></a>Verhalten der EINGABETASTE
+## <a name="enter-key-behavior"></a>Verhalten der EINGABETASTE
 
 - Nie neue Zeile beim Drücken der EINGABETASTE einfügen
 
@@ -85,6 +83,10 @@ Die Optionsseite **IntelliSense** enthält folgende Optionen:
 - Immer neue Zeile beim Drücken der EINGABETASTE einfügen
 
    Gibt an, dass nach Eingabe *aller* Zeichen für einen Eintrag in der Vervollständigungsliste und Drücken der **EINGABETASTE** automatisch eine neue Zeile erstellt wird und der Cursor zur neuen Zeile springt.
+
+## <a name="show-name-suggestions"></a>Show name suggestions (Namensvorschläge anzeigen)
+
+   Führt eine automatische Vervollständigung von Objektnamen für die Elemente durch, die Sie zuletzt ausgewählt haben. 
 
 ## <a name="see-also"></a>Siehe auch
 

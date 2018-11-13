@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056694"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349425"
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von Language Integrated Query (LINQ)-Code, wobei einige Einschränkungen bestehen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. Dieses Thema beschreibt die haupteinschränkungen des LINQ-Debuggens.  
@@ -109,8 +109,9 @@ End Function
 ##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten Sie und fortfahren Sie wird für LINQ nicht unterstützt.  
  Bearbeiten und Fortfahren unterstützt LINQ-Abfragen mit Einschränkungen. Weitere Informationen finden Sie unter [EnC unterstützt Änderungen](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
- [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)   
- [Introduction to LINQ Queries (C#) (Einführung in LINQ-Abfragen (C#))](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   
- [Einführung in LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+## <a name="see-also"></a>Siehe auch
+
+- [Debuggen von SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
+- [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)
+- [Introduction to LINQ Queries (C#) (Einführung in LINQ-Abfragen (C#))](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+- [Einführung in LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
