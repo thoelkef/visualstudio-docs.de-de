@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918024"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561711"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -141,7 +141,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
         //get the COLORREF structure
         uint win32Color;
-        uiShell.GetVSSysColorEx(VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
+        uiShell2.GetVSSysColorEx((int)__VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
 
         //translate it to a managed Color structure
         Color myColor = ColorTranslator.FromWin32((int)win32Color);
@@ -425,7 +425,7 @@ Zu diesem Zweck müssen eine VSPackage ein:
 
 - **IDE-generierte Ereignisse behandeln** durch die Implementierung der [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) Schnittstelle. Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der Seite "Schriftarten und Farben". Beispielsweise ruft die [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) Methode, wenn eine neue Schriftart ausgewählt ist.
 
-  **OR**
+  **ODER**
 
 - **Abrufen die IDE Änderungen**. Dies kann erfolgen über das System implementierter [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) Methode Schriftart und Farbe zu Elementen zu erhalten. Weitere Informationen zu den Schriftart-und farbeinstellungen, finden Sie im MSDN-Artikel [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](../accessing-stored-font-and-color-settings.md).
 

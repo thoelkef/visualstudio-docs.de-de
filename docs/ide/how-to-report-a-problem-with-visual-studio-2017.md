@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755923"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000228"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
 
@@ -125,7 +125,7 @@ Ab Visual Studio 2017-Version 15.5 gibt es einen neuen Workflow, mit dem Benutze
 
 Wenn Sie ein Problem nicht über Visual Studio melden möchten oder können, wurde es möglicherweise bereits gemeldet und eine Lösung auf der Website [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) veröffentlicht.
 
-Wenn Sie anstelle eines Problems Feedback oder Anregungen zu Produkten bereitstellen möchten, haben Sie auch hierzu die Möglichkeit. Weitere Informationen finden Sie auf der [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide)-Seite.
+Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, haben Sie auch hierzu die Möglichkeit. Weitere Informationen finden Sie auf der Seite [Suggest a feature (Vorschlagen eines Features)](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Siehe auch
 

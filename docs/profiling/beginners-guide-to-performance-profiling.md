@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898231"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220676"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilerstellung für die Anwendungsleistung in Visual Studio
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
@@ -69,7 +69,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
      ![Zusammenfassung Diagnosetools](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Weitere Informationen zu den Ereignissen finden Sie unter [Start Debugging (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+     Weitere Informationen zu den Ereignissen finden Sie unter [Searching and filtering the Events tab of the Diagnostic Tools window (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Führen Sie das Szenario aus, bei dem Ihr erster Haltepunkt erreicht wird.
 

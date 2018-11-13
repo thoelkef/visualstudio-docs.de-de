@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991613"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000873"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -151,7 +151,7 @@ Weitere Informationen finden Sie unter [Azure SDK für Python](azure-sdk-for-pyt
 
 **F. Wird Python von Visual Studio für Mac unterstützt?**
 
-A. Zurzeit nicht, aber Sie können sich auf [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac) dafür einsetzen. Die [Visual Studio für Mac](/visualstudio/mac/)-Dokumentation identifiziert die aktuellen Entwicklungstypen, die unterstützt werden. In der Zwischenzeit funktioniert Visual Studio-Code auf Windows, Mac und Linux [problemlos mit Python über die verfügbaren Erweiterungen](https://code.visualstudio.com/docs/languages/python).
+A. Zurzeit nicht, aber Sie können sich auf [Developer Community (Entwicklercommunity)](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html) dafür einsetzen. Die [Visual Studio für Mac](/visualstudio/mac/)-Dokumentation identifiziert die aktuellen Entwicklungstypen, die unterstützt werden. In der Zwischenzeit funktioniert Visual Studio-Code auf Windows, Mac und Linux [problemlos mit Python über die verfügbaren Erweiterungen](https://code.visualstudio.com/docs/languages/python).
 
 **F. Was kann ich verwenden, um die Benutzeroberfläche mit Python zu erstellen?**
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671715"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 
@@ -29,25 +29,25 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 
 ## <a name="technologies"></a>Technologien
 
-* **Microsoft Active Accessibility** Eine COM-basierte Technologie, mit der die Zusammenarbeit von Anwendungen unter Microsoft Windows und Hilfsmitteln für die Barrierefreiheit verbessert wird. Sie bietet Dynamic Link Libraries zur Integration in das Betriebssystem sowie eine COM-Schnittstelle und Anwendungsprogrammierelemente, die Informationen über Benutzeroberflächenelemente auf zuverlässige Weise verfügbar machen. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility** Eine COM-basierte Technologie, mit der die Zusammenarbeit von Anwendungen unter Microsoft Windows und Hilfsmitteln für die Barrierefreiheit verbessert wird. Sie bietet Dynamic Link Libraries, die in das Betriebssystem und eine COM-Schnittstelle eingebunden werden. Sie enthält auch Anwendungsprogrammierelemente, die Methoden zum Anzeigen von Informationen zu Elementen der Benutzeroberfläche bereitstellen. Weitere Informationen finden Sie unter [Microsoft Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility).
 
-* **Microsoft .NET Speech Technologies** Das Microsoft .NET Speech SDK ist ein Satz von Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Steuerelementen, einem Microsoft Internet Explorer Speech-Add-In, Beispielanwendungen und Dokumentationen, über die Webentwickler sprachaktivierte [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Anwendungen erstellen, debuggen und bereitstellen können. Die Tools sind nahtlos in Microsoft Visual Studio integriert, sodass Entwickler das Potenzial der vertrauten Entwicklungsumgebung voll ausschöpfen können. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Microsoft .NET Speech Technologies** Das Microsoft .NET Speech SDK besteht aus Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Steuerelementen, einem Microsoft Internet Explorer Speech-Add-In, Beispielanwendungen und Dokumentationen. Webentwickler können mit diesen Tools sprachaktivierte [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Anwendungen erstellen, debuggen und bereitstellen. Die Tools sind nahtlos in Microsoft Visual Studio integriert, sodass Entwickler in der vertrauten Entwicklungsumgebung arbeiten können. Weitere Informationen finden Sie unter [Speech Server](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)).
 
-* **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [Grundlegendes zu SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
+* **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [Grundlegendes zu SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0).
 
 ## <a name="windows-applications"></a>Windows-Anwendungen
 
-* **[Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)** Dieses Thema enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
+* **[Walkthrough: Creating an Accessible Windows-based Application (Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen)](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Dieser Artikel enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
 
-* **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Benutzeroberfläche für Windows-Anwendungen beschrieben, die über die Tastatur gesteuert werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Windows-Anwendung beschrieben, die über die Tastatur gesteuert werden kann. Weitere Informationen finden Sie unter [Guidelines for Keyboard User Interface Design (Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche)](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
-* **Console Accessibility** (Barrierefreiheit für die Konsole) In diesem technischen Artikel werden APIs und Ereignisse beschrieben, mit denen die Konsole in Windows XP für Hilfsmittel für die Barrierefreiheit verfügbar gemacht wird. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Console Accessibility** (Barrierefreiheit für die Konsole) In diesem technischen Artikel werden APIs und Ereignisse beschrieben, mit denen die Konsole in Windows XP für Hilfsmittel für die Barrierefreiheit verfügbar gemacht wird. Weitere Informationen finden Sie unter [Console Accessibility (Barrierefreiheit für die Konsole)](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Websites
 
--   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.
+-   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
 
--   **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern
 

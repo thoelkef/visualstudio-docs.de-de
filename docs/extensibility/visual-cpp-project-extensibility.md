@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850807"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349675"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -434,7 +434,7 @@ Die Visual C++-Projektsystem beruht auf der [Visual Studio-Projektsystem](https:
 
 ### <a name="project-property-pages"></a>Projekteigenschaftenseiten
 
-Weitere Informationen zum allgemeinen Entwurf, finden Sie unter [Plattformerweiterbarkeit - Teil 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) und [plattformerweiterbarkeit - Teil 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Weitere Informationen zum allgemeinen Entwurf, finden Sie unter [Plattformerweiterbarkeit - Teil 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) und [plattformerweiterbarkeit - Teil 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 Im einfach ausgedrückt, die Eigenschaftenseiten finden Sie der **Projekteigenschaften** Dialogfeld für ein C++-Projekt definieren, indem *Regel* Dateien. Eine Regeldatei gibt es sich um einen Satz von Eigenschaften, die auf einer Eigenschaftenseite anzeigen und Datei, wie und wo sie in das Projekt gespeichert werden soll. Regeldateien sind XML-Dateien, die XAML-Format verwenden. Die Typen verwendet, um sie zu serialisieren, werden in beschrieben [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Weitere Informationen zur Verwendung der Regeldateien in Projekten, finden Sie unter [Eigenschaftenseite: XML-Regeldateien](/cpp/ide/property-page-xml-files).
 

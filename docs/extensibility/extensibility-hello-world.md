@@ -1,5 +1,5 @@
 ---
-title: Hallo Welt | Microsoft-Dokumentation
+title: Hello World-Erweiterung-Lernprogramm | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356755"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349464"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Erstellen Ihrer erste Erweiterung: Hello World
 
@@ -30,6 +30,9 @@ In den Prozess, erfahren Sie, wie Sie:
 In diesem Beispiel verwenden Visual C#-Sie beim Hinzufügen eine benutzerdefinierten Menüschaltfläche "Z. B. Hello World!" Das sieht folgendermaßen aus:
 
 ![Hello World-Befehl](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Dieser Artikel gilt für Visual Studio unter Windows. Visual Studio für Mac finden Sie unter [Erweiterbarkeit Exemplarische Vorgehensweise in Visual Studio für Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
@@ -133,6 +136,6 @@ Daraufhin sollte die Ausgabe von den neuen benutzerdefinierten Befehl, der in di
 
 Jetzt wissen Sie die Grundlagen der Arbeit mit Visual Studio-Erweiterbarkeit, hier ist, in denen Sie mehr erfahren können:
 
-* [Mit der Entwicklung von Visual Studio-Erweiterungen beginnen](starting-to-develop-visual-studio-extensions.md) -Beispielen, Lernprogrammen. und das Veröffentlichen Ihrer Erweiterungs.
+* [Mit der Entwicklung von Visual Studio-Erweiterungen beginnen](starting-to-develop-visual-studio-extensions.md) -Beispielen, Lernprogrammen. und veröffentlichen Ihre Erweiterung
 * [Neues in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) -neuer Erweiterungs-Features in Visual Studio 2017
 * [In Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -erfahren Sie, die Details der Visual Studio-Erweiterbarkeit

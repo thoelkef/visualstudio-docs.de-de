@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
-ms.date: 07/17/2017
+title: Erstellen einer Benutzeroberfläche mit XAML-Designer
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903256"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220995"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 
 Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mit der Sie XAML-basierte Windows- und Web-Apps entwerfen können. Sie können Benutzeroberflächen für Ihre Apps erstellen, indem Sie Steuerelemente aus der **Toolbox** ziehen und Eigenschaften im Fenster **Eigenschaften** festlegen. Sie können XAML-Code auch direkt in der XAML-Ansicht bearbeiten.
 
@@ -108,6 +108,9 @@ Der Markupzoom ermöglicht es Ihnen, die **XAML**-Ansicht zu skalieren. Es stehe
 
 ## <a name="device-window"></a>Gerätefenster
 
+> [!NOTE]
+> Wenn die Version der Zielplattform (`TargetPlatformVersion`) einer UWP-Anwendung 10.0.16299.0 oder höher ist, ist das **Gerätefenster** nicht verfügbar.
+
 Das **Gerätefenster** im XAML-Designer ermöglicht es Ihnen, während der Entwurfszeit verschiedene Ansichten, Anzeigevarianten und Anzeigeoptionen für Ihr Projekt zu simulieren. Das **Gerätefenster** ist im Menü **Entwurf** verfügbar, wenn Sie im XAML-Designer arbeiten. Hier sehen Sie, wie es aussieht:
 
 ![Gerätefenster](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente f
 
 ![Eigenschaftenfenster](../designers/media/xaml_editor_prop_window.png)
 
-Oben im Fenster **Eigenschaften** gibt es verschiedene Optionen. Sie können den Namen des aktuell ausgewählten Elements ändern, indem Sie das Feld **Name** verwenden. In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt. Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** . Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** , wodurch ein Blitzschlagsymbol angezeigt wird. Um nach einer Eigenschaft zu suchen, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Feld **Eigenschaften durchsuchen** . Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen. Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen. Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Schnellstart: Hinzufügen von Steuerelementen und Behandeln von Ereignissen](http://go.microsoft.com/fwlink/?LinkID=247983)
+Oben im Fenster **Eigenschaften** gibt es verschiedene Optionen. Sie können den Namen des aktuell ausgewählten Elements ändern, indem Sie das Feld **Name** verwenden. In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt. Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** . Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** , wodurch ein Blitzschlagsymbol angezeigt wird. Um nach einer Eigenschaft zu suchen, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Feld **Eigenschaften durchsuchen** . Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen. Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen. Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Intro to controls and patterns (Einführung in Steuerelemente und Muster)](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
 Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der als Feldsymbol angezeigt wird. Die Anzeige des Eigenschaftenmarkers weist darauf hin, ob es eine Datenbindung oder eine Ressource gibt, die auf die Eigenschaft angewendet wurde. Beispielsweise zeigt ein weißes Feldsymbol einen Standardwert an, ein schwarzes Feldsymbol zeigt in der Regel an, dass eine lokale Ressource angewendet wurde, und ein oranges Feld zeigt in der Regel an, dass eine Datenbindung angewendet wurde. Wenn Sie auf den Eigenschaftenmarker klicken, können Sie zur Definition eines Stils navigieren, den Datenbindungs-Generator öffnen oder die Ressourcenauswahl öffnen.
 

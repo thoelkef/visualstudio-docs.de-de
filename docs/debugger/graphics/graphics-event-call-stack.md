@@ -24,7 +24,7 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
   
  Dies ist das Aufruflistenfenster:  
   
- ![Die Aufrufliste vor einem DrawIndexed-Ereignis. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "Gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Die Aufrufliste vor einem DrawIndexed-Ereignis. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "Gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Verstehen der Aufrufliste des Grafikereignisses  
  Sie können mithilfe der Aufrufliste den Ablauf der Ausführung nachvollziehen, die zu einem bestimmten Direct3D-Ereignis geführt hat. Es ähnelt dem Aufruflistenfenster für Visual Studio, mit dem Unterschied, dass anstelle der aktuellen Aufrufliste des aktuellen Threads in einer ausgeführten app zu verwenden, die Aufrufliste angezeigt wie bei der das ausgewählte Direct3D-Ereignis eingetreten ist. Aus der Aufrufliste können Sie zur Aufrufsite des ausgewählten Direct3D-Ereignisses springen, um den umgebenden Code zu überprüfen.  

@@ -73,9 +73,9 @@ Die erste, was beim Formatieren von Steuerelementen zu berücksichtigen ist, gib
   
 -   Größe Eingabefelder müssen entsprechend den Inhalt, der nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend angepasst werden. Länge kann darauf hinweisen, dass für den Benutzer Einschränkungen hinsichtlich der Anzahl der Zeichen in das Feld zulässig sind.  
   
-     ![Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name dieser Länge ist. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name dieser Länge ist.
+     ![Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name dieser Länge ist. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name dieser Länge ist.
   
-     ![Korrigieren Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Korrigieren Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.
+     ![Korrigieren Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Korrigieren Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Kombinationsfelder und Dropdown-Listen  
 Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für Dropdownlisten und Kombinationsfelder](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Ric
 #### <a name="layout"></a>Layout  
 Kombinationsfelder und Dropdownlisten sollte Größe angepasst werden, um den Inhalt nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend anpassen.  
   
-![Falsch: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Falsch: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird.
+![Falsch: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Falsch: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird.
   
-![Richtig: der Dropdown-Liste ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Richtig: der Dropdown-Liste ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. 
+![Richtig: der Dropdown-Liste ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Richtig: der Dropdown-Liste ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Kontrollkästchen  
 Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für Kontrollkästchen](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Ric
   
 -   Richten Sie die Kontrollkästchen mit der Baseline der ersten Zeile des Texts.  
   
-     ![Falsch: das Kontrollkästchen wird auf der Text zentriert. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Falsch: das Kontrollkästchen wird auf der Text zentriert.
+     ![Falsch: das Kontrollkästchen wird auf der Text zentriert. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Falsch: das Kontrollkästchen wird auf der Text zentriert.
   
-     ![Richtig: das Kontrollkästchen wird mit der ersten Zeile des Texts ausgerichtet. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Richtig: das Kontrollkästchen wird mit der ersten Zeile des Texts ausgerichtet.
+     ![Richtig: das Kontrollkästchen wird mit der ersten Zeile des Texts ausgerichtet. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Richtig: das Kontrollkästchen wird mit der ersten Zeile des Texts ausgerichtet.
   
 ###  <a name="BKMK_RadioButtons"></a> Optionsfelder  
 Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für die Optionsfelder](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Strukturansicht-Steuerelemente müssen auf die Expander-Steuerelement von Window
 #### <a name="selection"></a>Auswahl  
 Wenn ein Knoten in der Strukturansicht ausgewählt ist, sollten die Hervorhebung um die gesamte Breite des Strukturansicht-Steuerelement erweitern. Dadurch können Benutzer, die eindeutig auf welches Element identifizieren sie ausgewählt haben. Farben Auswahl sollte es sich um das aktuelle Visual Studio-Design entsprechen.  
   
-![Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement.
+![Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement.
   
-![Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement.
+![Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement.
   
 #### <a name="icons"></a>Symbole  
 Symbole sollte nur in der Strukturansicht-Steuerelemente verwendet werden, wenn sie bei der Unterschiede zwischen Elementen visuell zu identifizieren. Symbole sollten im Allgemeinen nur in heterogenen Listen verwendet werden in denen die Symbole Informationen zur Unterscheidung von den Typ der Elemente enthalten. In einer homogenen Liste mithilfe von Symbolen kann häufig als Rauschen betrachtet werden und sollte vermieden werden. In diesem Fall kann das Symbol für die Gruppe (übergeordnet) den Typ der Elemente im vermitteln. Die Ausnahme von dieser Regel wäre, wenn das Symbol dynamisch ist und verwendet wird, um den Status anzugeben.  
@@ -356,14 +356,14 @@ Symbole sollte nur in der Strukturansicht-Steuerelemente verwendet werden, wenn 
 #### <a name="scroll-bars"></a>Bildlaufleisten  
 Bildlaufleisten soll immer ausgeblendet werden, wenn der Inhalt in der Strukturansicht-Steuerelement passt. Es ist ausgeblendet oder semitransparente in einem bildlauffähigen Fenster und angezeigt werden, wenn das Fenster mit der Strukturansicht den Fokus besitzt, oder bei einer mauszeigerbewegung über die der Struktur anzeigen, selbst für Bildlaufleisten zulässig.  
   
-![Da der Inhalt die Grenzen des Strukturansicht-Steuerelement überschritten haben, werden beide vertikalen und horizontalen Bildlaufleisten angezeigt. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Da der Inhalt die Grenzen des Strukturansicht-Steuerelement überschritten haben, werden beide vertikalen und horizontalen Bildlaufleisten angezeigt.
+![Da der Inhalt die Grenzen des Strukturansicht-Steuerelement überschritten haben, werden beide vertikalen und horizontalen Bildlaufleisten angezeigt. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Da der Inhalt die Grenzen des Strukturansicht-Steuerelement überschritten haben, werden beide vertikalen und horizontalen Bildlaufleisten angezeigt.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Struktur anzeigen Interaktionen  
   
 #### <a name="context-menus"></a>Kontextmenüs  
 Knoten einer Strukturansicht kann es sich um die Optionen des Untermenüs in einem Kontextmenü offenlegen. Das tritt in der Regel auf, wenn ein Benutzer ein Element mit der rechten Maustaste, oder drücken die Menütaste auf einer Windows-Tastatur mit das ausgewählte Element. Es ist wichtig, dass der Knoten den Fokus erhält, und aktiviert ist. Dadurch wird den Benutzer, welches Element identifizieren das Untermenü, angehört.  
   
-![Das Element, das dem Kontext-Menü Gewinne Fokus zur Benachrichtigung des Benutzers welches Element generiert hat wurde ausgewählt. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />Das Element, das dem Kontext-Menü Gewinne Fokus zur Benachrichtigung des Benutzers welches Element generiert hat wurde ausgewählt.
+![Das Element, das dem Kontext-Menü Gewinne Fokus zur Benachrichtigung des Benutzers welches Element generiert hat wurde ausgewählt. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />Das Element, das dem Kontext-Menü Gewinne Fokus zur Benachrichtigung des Benutzers welches Element generiert hat wurde ausgewählt.
   
 #### <a name="keyboard"></a>Tastatur  
 Die Strukturansicht sollte die Möglichkeit bieten, wählen Sie Elemente, und Erweitern/Reduzieren von Knoten, die mithilfe der Tastatur. Dadurch wird sichergestellt, dass Navigation unsere Anforderungen zur Barrierefreiheit erfüllt.  

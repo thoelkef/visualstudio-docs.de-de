@@ -59,7 +59,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**SymbolPath:** `path`|Gibt mindestens einen Suchpfad oder Symbolserver an, die Symbole für die Profilerdatendatei enthalten.|  
 |**DebugSymPath**|Listet die Speicherorte auf, die nach den Symbolen durchsucht werden, und gibt an, ob diese gefunden werden. Diese Option ist nützlich für das Beheben von Problemen mit der Symbolauflösung.|  
 |**PackSymbols**|Speichert Symbole in der Profilerdatendatei (VSP), damit keine Symboldateien (*PDB*) für die Analyse benötigt werden.|  
-|**Ausgabe:** *Pfad*|*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
+|**Ausgabe:** *Pfad*&#124;*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
 |**SummaryFile**|Analysieren und speichern Sie die analysierten Informationen in einer VSPS-Zusammenfassungsdatei|  
 |**PrintMarks**|Zeigt die Namen und Zeitstempel sämtlicher Markierungen in einer Berichtsdatei an.|  
 |**?**|Zeigt Nutzungsinformationen an.|  

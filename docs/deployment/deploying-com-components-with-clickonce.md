@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820461"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348746"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige Aufgabe. Komponenten müssen global registriert werden und daher können dazu führen, dass unerwünschte Nebeneffekte zwischen überlappende Anwendungen. Dies ist in der Regel kein Problem in .NET Framework-Anwendungen, da Komponenten vollständig isoliert zu einer Anwendung werden oder Seite-an-Seite kompatibel sind. Visual Studio können Sie isolierte COM-Komponenten auf dem Windows XP oder neueren Betriebssystemen bereitgestellt.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet eine einfache und sichere Methode für die Bereitstellung Ihrer Anwendungen für .NET. Wenn Ihre Anwendungen auf ältere COM-Komponenten verwenden, müssen Sie jedoch weitere Schritte ausführen, für deren Bereitstellung. Dieses Thema beschreibt, wie Sie isolierte COM-Komponenten bereitstellen und systemeigene Komponenten (z. B. von Visual Basic 6.0 oder Visual C++) verweisen.  
   
- Weitere Informationen zum Bereitstellen von isolierte COM-Komponenten finden Sie unter "Simplify App Deployment with [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung" auf [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Weitere Informationen zum Bereitstellen von isolierte COM-Komponenten finden Sie unter [vereinfachen der Anwendungsbereitstellung mit ClickOnce und registrierungsfreiem COM](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM ohne Registrierung  
  COM ohne Registrierung ist eine neue Technologie für die Bereitstellung und isolierte COM-Komponenten aktivieren. Dies erfolgt durch das Platzieren aller der Komponente Typbibliothek und Registrierungsinformationen, die in der Regel in der Registrierung des Systems in eine XML-Datei mit dem ein Manifest installiert wird im gleichen Ordner wie die Anwendung gespeichert.  
