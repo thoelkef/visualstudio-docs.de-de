@@ -1,7 +1,7 @@
 ---
 title: Umgestalten von Python-Code
 description: Komfortables Umgestalten von Python-Code in Visual Studio durch Umbenennen von Bezeichnern, Extrahieren von Methoden, Hinzufügen von Imports und Entfernen von nicht verwendeten Imports.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a612e7e6a59087d219d2afc6233b57f02ed99314
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861578"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607743"
 ---
 # <a name="refactor-python-code"></a>Umgestalten von Python-Code
 
