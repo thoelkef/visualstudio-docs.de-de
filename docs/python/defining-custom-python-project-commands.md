@@ -1,7 +1,7 @@
 ---
 title: Definieren von benutzerdefinierten Menübefehlen für Python-Projekte
 description: Veranschaulicht, wie Sie Projekte und Zieledateien bearbeiten, um dem Kontextmenü für das Python-Projekt in Visual Studio benutzerdefinierte Befehle hinzuzufügen. Befehle können ausführbare Programme, Skripte, Module, Inline-Codeausschnitte und PIP-Dateien aufrufen.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008322"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607847"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 
@@ -145,7 +145,7 @@ Alle Attributwerte beachten die Groß-/Kleinschreibung.
 | Attribut | Erforderlich | Beschreibung  |
 | --- | --- | --- |
 | TargetType | Ja | Gibt an, was das Attribut „Target“ enthält , und wie es dem Attribut „Arguments“ verwendet wird:<ul><li>**executable**: Führt die ausführbare Datei aus, die in „Target“ angegeben ist, und fügt den Wert an „Arguments“ an, als ob er direkt in die Befehlszeile eingegeben worden wäre. Der Wert darf nur einen Programmnamen ohne Argumente enthalten.</li><li>**script**: Führt *python.exe* mit dem Dateinamen in „Target“ aus, gefolgt von dem Wert in „Arguments“.</li><li>**module**: Führt `python -m` gefolgt von dem Modulnamen in Target und dem Wert in „Arguments“ aus.</li><li>**code**: Führt den in „Target“ enthaltenen Inlinecode aus. Der Wert „Arguments“ wird ignoriert.</li><li>**PIP**: Führt `pip` mit dem in „Target“ enthaltenen Befehl gefolgt von „Arguments“ aus. Wenn „ExecuteIn“ jedoch auf „output“ festgelegt ist, geht PIP von einem `install`-Befehl aus und nutzt „Target“ als den Paketnamen.</li></ul> |
-| Ziel | Ja | Der Dateiname, Modulname, Code oder PIP-Befehl, der je nach TargetType genutzt wird. |
+| Target | Ja | Der Dateiname, Modulname, Code oder PIP-Befehl, der je nach TargetType genutzt wird. |
 | Argumente | Optional | Gibt eine Zeichenfolge der Argumente (sofern vorhanden) an, die an „Target“ übergeben werden. Beachten Sie: Wenn TargetType `script` entspricht, werden die Argumente an das Python-Programm übergeben und nicht an *python.exe*. Wird beim TargetType `code` ignoriert. |
 | ExecuteIn | Ja | Gibt die Umgebung an, in der die Anwendung ausgeführt wird:<ul><li>**console**: (Standard) Führt „Target“ und die Argumente aus, als würden sie direkt in die Befehlszeile eingegeben werden. Während „Target“ ausgeführt wird, wird ein Befehlsfenster angezeigt, das dann automatisch geschlossen wird.</li><li>**consolepause**: Entspricht „console“, wartet mit dem Schließen des Befehlsfenster jedoch, bis Sie eine Taste drücken.</li><li>**output**: Führt „Target“ aus und zeigt die Ergebnisse im **Ausgabefenster** in Visual Studio an. Wenn der TargetType „PIP“ ist, verwendet Visual Studio „Target“ als den Paketnamen und fügt „Arguments“ an.</li><li>**REPL**: Führt „Target“ im [interaktiven Python-Fenster](python-interactive-repl-in-visual-studio.md) aus. Der optionale Anzeigename wird als Titel des Fensters verwendet.</li><li>**none**: Verhält sich wie „console“.</li></ul>|
 | WorkingDirectory | Optional | Der Ordner, in dem der Befehl ausgeführt wird. |

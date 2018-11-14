@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930712"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295097"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -24,7 +24,7 @@ Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B.
 
  ![Datenbindung an einen Webleistungstest](../test/media/web_test_databinding_conceptual.png)
 
- Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei *ASPX-Seiten*: die Standardseite, die Seite „Red“ und die Seite „Blue“. Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden *ASPX-Seiten* sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
+ Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei *ASPX-Seiten*: die Standardseite, die Seite „Red“ und die Seite „Blue“. Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden *ASPX-Seiten* sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
 
  ![Ausführen der zu testenden Webanwendung](../test/media/web_test_databinding_runwebapp.png)
 

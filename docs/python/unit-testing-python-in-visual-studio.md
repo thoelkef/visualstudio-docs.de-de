@@ -1,7 +1,7 @@
 ---
 title: Komponententests für Python
 description: Einrichten von Komponententests für Python-Code in Visual Studio, um die Funktionen von Test-Explorer zum Ermitteln, Ausführen und Debuggen von Tests in vollem Umfang zu nutzen.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef5a936de8013f2ea0426d95def96a0871839e6a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e8a3a61b7c77031033c9cdc988753437f25166a1
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586429"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607574"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
@@ -28,7 +28,7 @@ Dieser Artikel enthält eine kurze Übersicht über die Komponententestfunktione
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) zu Komponententests in Python an (2 Minuten, 31 Sekunden). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) zu Komponententests in Python an (2 Minuten, 31 Sekunden). |
 
 ## <a name="discover-and-view-tests"></a>Entdecken und Anzeigen von Tests
 
