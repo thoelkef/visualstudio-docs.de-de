@@ -49,7 +49,7 @@ Weitere Informationen finden Sie auch unter [Häufig gestellte Fragen](faq.md).
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Senden Sie uns Ihr Feedback!
 
