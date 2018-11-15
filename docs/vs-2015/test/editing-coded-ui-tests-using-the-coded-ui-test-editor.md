@@ -80,7 +80,7 @@ Bearbeiten der Eigenschaften der UI-Aktion
   
  Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.  
   
- Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite <http://Contoso1/default.aspx’> wechseln** vorhanden ist, können Sie die URL in `‘ http://Contoso2/default.aspx’` ändern.  
+ Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite <http://Contoso1/default.aspx’> wechseln** vorhanden ist, können Sie die URL in `‘http://Contoso2/default.aspx’` ändern.  
   
  ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Bearbeiten von Steuerelementeigenschaften  
