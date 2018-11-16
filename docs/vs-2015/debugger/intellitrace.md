@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912980"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737217"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
 |||  
 |-|-|  
 |**Unterstützt**|– Visual Basic und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br />     Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br />     Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
-|**Eingeschränkte Unterstützung**|– F#-apps versuchsweise<br />-Windows Store-apps, die nur für Ereignisse unterstützt|  
+|**Eingeschränkte Unterstützung**|- F# apps versuchsweise<br />-Windows Store-apps, die nur für Ereignisse unterstützt|  
 |**Nicht unterstützt**|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../includes/winmobile-md.md)] apps|  
   
 > [!NOTE]
