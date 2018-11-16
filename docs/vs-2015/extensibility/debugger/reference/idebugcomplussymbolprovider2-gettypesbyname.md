@@ -16,12 +16,12 @@ ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 190945cb0d3b56310d5fe98ec3e2ec9fee4375a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a2bfb98e5e0a72917ffbaeeea184a68b5c3dc4de
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884029"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645119"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int GetTypesByName(
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter enthält alle Kopien. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
+ Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter wird allen Kopien enthalten. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
