@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d3ac03f74bd0e833c8b0776a0ee0f63595ac460
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882435"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645129"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Ruft einen Typ mit dem angegebenen Namen ab.  
@@ -56,7 +56,7 @@ int GetTypesByName(
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter enthält alle Kopien. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
+ Für generische Typen, der Name, sehen Sie sich für "Liste\<Int >" oder "Liste\<Int, Int >" wäre "List". Wenn Typen mit demselben Namen in mehrere Module enthalten die `ppEnum` Parameter wird allen Kopien enthalten. Sie müssen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) und Unterscheidung basierend auf den `guidModule` Parameter.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
