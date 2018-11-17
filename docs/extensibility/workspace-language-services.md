@@ -1,5 +1,5 @@
 ---
-title: Arbeitsbereiche und Dienste für die Sprachen in Visual Studio | Microsoft Docs
+title: Arbeitsbereiche und Sprachdienste in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -11,57 +11,57 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 551a621ab97c232970d6ef67da14379c5cdfbd46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be9fb8c1e3ae363898e0438bdd1ec34c9fd23727
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140806"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735455"
 ---
-# <a name="workspaces-and-language-services"></a>Arbeitsbereiche und Dienste für Sprachen
+# <a name="workspaces-and-language-services"></a>Arbeitsbereiche und Sprachdienste
 
-Sprache Dienstleistungen können [Ordner öffnen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Benutzer die gleichen umfangreiche Sprachfunktionen werden verwendet, um bei der Arbeit mit Projektmappen und Projekten. Aktivieren eines Sprachdiensts möglicherweise selbst basierend auf die Dateierweiterung oder den Inhalt eines geöffneten Dokuments, obwohl diese "loose File"-Sprachdienst auf syntaxhervorhebung beschränkt ist. Zusätzliche Informationen benötigt eine umfangreichere Erfahrung zu bieten, beim Bearbeiten von/Überprüfen von Quellcode. Jeder Sprachdienst verfügt über eine eigene API für die Initialisierung mit diesen zusätzlichen Kontextdaten für ein Dokument. Dies wird in der Regel durch ein Projektsystem verwaltet die Sprachdiensts sowohl für das Buildsystem eng gekoppelt ist.
+Sprachdienste bieten ["Ordner öffnen"](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Benutzer die gleichen umfassenden Sprachfunktionen werden verwendet, um bei der Arbeit mit Projektmappen und Projekten. Aktivieren eines Sprachdiensts möglicherweise selbst basierend auf die Dateierweiterung oder den Inhalt eines geöffneten Dokuments, obwohl diesem Sprachdienst "lose Datei" auf die syntaxhervorhebung beschränkt ist. Weitere Informationen sind erforderlich, um eine reichhaltigere Erfahrung zu bieten, beim Bearbeiten von/Überprüfen von Quellcode. Jeder Sprachdienst verfügt über eine eigene API für die Initialisierung mit diesen zusätzlichen kontextbezogenen Daten für ein Dokument. Dies wird in der Regel von ein Projektsystem, verwaltet die eng, auf den Sprachdienst sowohl für das Buildsystem gekoppelt ist.
 
 ## <a name="initialization"></a>Initialisierung
 
-In einem [Arbeitsbereich](workspaces.md), Sprachdienste werden initialisiert, indem ein <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> Erweiterungspunkt, der nur innerhalb des betreffenden Sprachdiensts spezialisiert und bekannt ist, den Build erstellen. Auf diese Weise kann der Besitzer eines Language Service einen einzelnen Ordner öffnen Erweiterung unabhängig davon, wie viele Muster befinden sich in Ordnern und Dateien für die Ausführung ihrer Compiler während eines Builds (z. B. MSBuild, Makefiles, usw.) verwalten. Wenn Dateien aus denen ein Kontext erstellt wurde, auf dem Datenträger geändert werden und der Dateikontext aktualisiert wird, wird der Dienstanbieter für die Sprache der aktualisierte Satz der Datei Kontexten benachrichtigt. Der Language-Dienstanbieter können Sie das Modell aktualisieren.
+In einem [Arbeitsbereich](workspaces.md), Sprachdienste werden initialisiert, indem ein <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> -Erweiterungspunkt an, die nur in diesem Sprachdienst spezialisiert und nicht bekannt ist, der die Erstellung von Builds. Auf diese Weise kann Besitzer einer Sprache des Diensts einen einzelnen öffnen-Ordner, die Erweiterung unabhängig davon, wie viele Muster befinden sich in Ordnern und Dateien für die Ausführung ihrer Compiler während eines Builds (z. B. MSBuild, Makefiles, usw.) verwalten. Wenn Dateien, die aus denen ein Kontext erstellt wurde, werden auf dem Datenträger geändert, und der Kontext aktualisiert wird, wird der aktualisierte Satz der dateikontexte des Sprachanbieters für den Dienst informiert. Der Dienstanbieter für die Sprache kann dann ein Modell aktualisieren.
 
-Wenn ein Dokument im Editor geöffnet wird, berücksichtigt Visual Studio nur Language Serviceanbieter, die Datei Kontexttypen erfordern für die eine entsprechende Datei Kontextanbieter gefunden werden kann. Es übergibt dann die Datei Namenskontext(e) aus der entsprechenden Anbieter an den Dienstanbieter ausgewählte Sprache über `ILangaugeServiceProvider.InitializeAsync`. Der Dienstanbieter Sprache mit Wirkungsweise, dass Kontextdaten für die Datei ein Implementierungsdetail des Dienstanbieters Sprache ist, aber die erwarteten Benutzeroberfläche eine umfangreichere Sprachdienst für diesen ist Dokument geöffnet.
+Wenn ein Dokument im Editor geöffnet ist, berücksichtigt Visual Studio nur Sprache Dienstanbieter, die Kontext-Dateitypen erfordern für die eine übereinstimmende Datei Kontextanbieter gefunden werden kann. Es übergibt dann die Datei Kontext(e) aus der entsprechenden Anbieter an den Dienstanbieter für ausgewählte Sprache über `ILanguageServiceProvider.InitializeAsync`. Der Dienstanbieter für die Sprache mit Funktionsweise, dass Kontextdaten für die Datei ein Implementierungsdetail des Dienstanbieters Sprache ist, aber die erwartete Benutzeroberfläche eine umfangreichere Sprachdienst ist, Dokument geöffnet.
 
 ## <a name="using-ilanguageserviceprovider"></a>Verwenden von ILanguageServiceProvider
 
-Der Sprachdienst benachrichtigt werden, wenn ein Kontext erstellt wird eine `ContextType` , die mit einem der übereinstimmt. die `SupportedContextTypes` Werte des Servers Sprache export-Attribut.
+Der Sprachdienst benachrichtigt werden, wenn ein Kontext erstellt wird eine `ContextType` entspricht einer der der `SupportedContextTypes` Werte des Servers Sprache export-Attribut.
 
 Um einen Sprachdienst zu unterstützen, müssen eine Erweiterung:
 
-- Eine eindeutige `Guid`. Hiermit werden für `SupportedContextTypes` -Attribut Argumente und in einem `FileContext` Objekt.
-- Datei Sprachkontext
+- Eine eindeutige `Guid`. Dies wird zum `SupportedContextTypes` Attribut Argumente und in eine `FileContext` Objekt.
+- Language-Dateikontext
   - Anbieterfactory
-    - `ExportFileContextProviderAttribute` Attribut mit den oben genannten eindeutig generiert `Guid` in `SupportedContextTypes`
+    - `ExportFileContextProviderAttribute` Attribut, mit den oben generiert, die eindeutig `Guid` in `SupportedContextTypes`
     - Implementiert `IWorkspaceProviderFactory<IFileContextProvider>`
-  - Implementierung des Anbieters `IFileContextProvider.GetContextsForFileAsync`
-    - Erstellen Sie ein neues `FileContext` mit der `contextType` Konstruktorargument als eindeutig generierten `Guid`
-    - Verwenden der `Context` Eigenschaft von der `FileContext` um zusätzliche Daten zu gewähren. der `ILanguageServiceProvider`
-- -Sprachdienst
+  - Anbieterimplementierung der `IFileContextProvider.GetContextsForFileAsync`
+    - Erstellt ein neues `FileContext` mit der `contextType` Konstruktorargument als eindeutig generierten `Guid`
+    - Verwenden der `Context` Eigenschaft der `FileContext` um zusätzliche Daten zu gewähren. der `ILanguageServiceProvider`
+- Sprachdienst
   - Anbieterfactory
-    - `ExportLanguageServiceProvider` Attribut mit den oben genannten eindeutig generiert `Guid` in `SupportedContextTypes`
+    - `ExportLanguageServiceProvider` Attribut, mit den oben generiert, die eindeutig `Guid` in `SupportedContextTypes`
     - Implementiert `IWorkspaceProviderFactory<ILanguageServiceProvider>`
   - Anbieter
     - Implementiert `ILanguageServiceProvider`
-    - Verwendung `ILanguageServiceProvider.InitializeAsync` Language-Dienste für die bereitgestellten Argumente aktivieren, wenn eine Datei geöffnet wird
-    - Verwendung `ILanguageServiceProvider.UninitializeAsync` deaktivieren Sie Dienste für die Sprachen für die angegebenen Argumente aus, wenn eine Datei geschlossen wird
+    - Verwendung `ILanguageServiceProvider.InitializeAsync` Sprachdienste für die angegebenen Argumente aktivieren, wenn eine Datei geöffnet ist
+    - Verwendung `ILanguageServiceProvider.UninitializeAsync` , deaktivieren Sprachdienste für die angegebenen Argumente aus, wenn eine Datei geschlossen wird
 
 >[!WARNING]
->Die `ILanguageServiceProvider` Methoden Arbeitsbereich auf der Haupt-Thread aufgerufen werden können. Sollten Sie planen die Arbeit in einem anderen Thread, vermeiden Sie unnötigen Benutzeroberfläche verzögert.
+>Die `ILanguageServiceProvider` Methoden durch den Arbeitsbereich auf dem Hauptthread aufgerufen werden können. Erwägen Sie die Planung von Arbeiten in einem anderen Thread aus, um zu vermeiden, Einführung in die Verzögerungen.
 
-## <a name="language-server-protocol"></a>Language-Server-Protokoll
+## <a name="language-server-protocol"></a>Sprachserverprotokoll
 
-Die `Microsoft.VisualStudio.Workspace.*` APIs sind nicht die einzige Möglichkeit zum Aktivieren der Sprachdienst im geöffneten Ordner. Eine andere Möglichkeit ist die Verwendung ein Servers für die Sprache. Lesen Sie weitere Informationen zu den [Sprache Serverprotokoll](language-server-protocol.md).
+Die `Microsoft.VisualStudio.Workspace.*` APIs sind nicht die einzige Möglichkeit, den Sprachdienst im "Ordner öffnen" zu aktivieren. Eine weitere Option ist einen Sprache-Server verwenden. Weitere Informationen finden Sie Informationen zu den [Sprachserverprotokoll](language-server-protocol.md).
 
-## <a name="related-interfaces"></a>Verwandte Schnittstellen
+## <a name="related-interfaces"></a>Zugehörigen Schnittstellen
 
 - <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> wird aufgerufen, wenn eine Datei mit übereinstimmenden Dateitypen geöffnet oder für die Bearbeitung geschlossen wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Arbeitsbereich Build](workspace-build.md) -Ordner öffnen unterstützt Buildsysteme wie MSBuild und Makefiles. 
+* [Arbeitsbereich erstellen](workspace-build.md) -Buildsysteme für "Ordner öffnen" unterstützt z.B. MSBuild und Makefiles. 

@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ee4eb0490e68f2ea4f83c728ed684b1e939467b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d750364ba5fd953a5a4aa18252961bbbf968ba5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893745"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768922"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Portieren, migrieren und Aktualisieren von Visual Studio-Projekte in Visual Studio &quot;15&quot; RC
 Wenn Sie auf eine neuere Version von Visual Studio verschieben, sollten Sie wissen, ob ändern, müssen Sie eine der Lösungen, Projekte, Dateien und andere Ressourcen, die Sie in erstellt [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], oder [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] vor dem Ausführen in einem [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] oder [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Auf dieser Seite können Sie dabei zu unterstützen. 
