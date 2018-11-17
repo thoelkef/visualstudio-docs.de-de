@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349649"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826709"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Prüfen Sie die Variablen im Auto und lokal
 
-Die **Auto** und **lokale** Windows Variablenwerte anzeigen, während Sie debuggen. Die Windows sind nur verfügbar, während einer Debugsitzung.
-
-Die **Auto** Variablen verwendet, um dem aktuellen Haltepunkt angezeigt. Die **lokale** im lokalen Gültigkeitsbereich ist normalerweise die aktuelle Funktion oder Methode definierte Variablen angezeigt.
-
-Öffnen der **Auto** Fenster während des Debuggens wählen **Debug** > **Windows** > **Auto**, oder drücken Sie **STRG**+**Alt**+**V** > **eine**.
+Die **Auto** und **lokale** Windows Variablenwerte anzeigen, während Sie debuggen. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **Auto** Variablen verwendet, um dem aktuellen Haltepunkt angezeigt. Die **lokale** im lokalen Gültigkeitsbereich ist normalerweise die aktuelle Funktion oder Methode definierte Variablen angezeigt. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [besser schreiben C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
+  
+Öffnen der **Auto** Fenster während des Debuggens wählen **Debug** > **Windows** > **Auto**, oder drücken Sie **STRG**+**Alt**+**V** > **eine**.  
 
 Öffnen der **lokale** Fenster während des Debuggens wählen **Debuggen** > **Windows** > **lokal**, oder drücken Sie **Alt**+**4**.
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 Die Rückgabewerte der an die `sumVars()` und `subtractVars()` Methodenaufrufe im Fenster Auto:
 
-1. Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.
-
-1. Debuggen und die Ausführung am Haltepunkt hält, wählen **Prozedurschritt** , oder drücken Sie **F10**. Müsste die folgenden Rückgabewerte in der **Auto** Fenster:
-
-  ![Rückgabewert Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto-RückgabewertC#")
-
-## <a name="see-also"></a>Siehe auch
-
-- [Debuggerfenster](../debugger/debugger-windows.md)
-- [Datenvisualisierungen in Visual Studio für Mac](/visualstudio/mac/data-visualizations)
+1. Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.  
+   
+1. Debuggen und die Ausführung am Haltepunkt hält, wählen **Prozedurschritt** , oder drücken Sie **F10**. Müsste die folgenden Rückgabewerte in der **Auto** Fenster:  
+   
+  ![Rückgabewert Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto-RückgabewertC#")  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
+ [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)
