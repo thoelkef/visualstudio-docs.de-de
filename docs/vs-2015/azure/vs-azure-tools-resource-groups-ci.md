@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002047"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791604"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Fortlaufende Integration in Azure DevOps-Dienste, die mit der Azure-Ressourcengruppen-Bereitstellungsprojekten
 Zum Bereitstellen einer Azure-Vorlage führen Sie Aufgaben in verschiedenen Phasen: erstellen, testen, nach Azure kopieren (auch als "Staging" bezeichnet), und die Vorlage bereitstellen. Es gibt zwei Möglichkeiten zum Bereitstellen von Vorlagen für Azure DevOps-Dienste. Beide Methoden bieten die gleichen Ergebnisse, also wählen dasjenige, das am besten in Ihren Workflow passt.
@@ -131,7 +131,7 @@ Die folgenden Verfahren führen Sie durch die erforderlichen Schritte zum contin
 
 1. Bearbeiten Sie Ihrer erstellungspipeline Azure DevOps-Dienste, um zwei neue Buildschritte hinzufügen. Wählen Sie die erstellungspipeline, unter der **Builddefinitionen** Kategorie und wählen Sie dann die **bearbeiten** Link.
    
-   ![Bearbeiten der Builddefinition][12]
+   ![Builddefinition bearbeiten][12]
 2. Fügen Sie die neuen bildschritte der Build-Pipeline mithilfe der **Buildschritt hinzufügen...** Schaltfläche.
    
    ![Buildschritt hinzufügen][13]
