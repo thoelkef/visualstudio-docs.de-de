@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf809747bff2146c6a45afd49768dbda69ae7d91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273831"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782283"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentationsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
 |**Prozessname**|Der Name, der dem Prozess zugewiesen ist.|  
 |**Exklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentation verursachte zusätzliche Zeitaufwand für diese Funktion. Der zusätzliche Testaufwand wurde von allen exklusiven Zeiten subtrahiert.|  
 |**Inklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentation verursachte zusätzliche Zeitaufwand für diese Funktion und ihre untergeordneten Funktionen. Der zusätzliche Testaufwand wurde von allen inklusiven Zeiten subtrahiert.|  
-|**Type**|Der Kontext der Funktion:<br /><br /> **0** – die aktuelle Funktion<br /><br /> **1** – eine Funktion, die die aktuelle Funktion aufruft<br /><br /> **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
+|**Typ**|Der Kontext der Funktion:<br /><br /> **0** – die aktuelle Funktion<br /><br /> **1** – eine Funktion, die die aktuelle Funktion aufruft<br /><br /> **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Name der Stammfunktion**|Der Name der aktuellen Funktion. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
   
 ## <a name="net-memory-allocation-values"></a>Werte zur .NET-Speicherbelegung  

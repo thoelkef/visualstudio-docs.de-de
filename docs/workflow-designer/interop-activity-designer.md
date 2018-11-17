@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849358"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809128"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
 
@@ -35,7 +35,7 @@ Die [Migration](../workflow-designer/migration-activity-designers.md) Kategorie,
 
 Für c#-Projekten können Sie erneut das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste in des Projekts im Ziel **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
 
-Für VB-Projekte können Sie das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste auf das Projekt erneut anwenden **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Kompilieren** Registerkarte, klicken Sie auf die **Advanced Compile Options** Schaltfläche. Wählen Sie **.Net Framework 4** aus der **Zielframeworkliste**, und klicken Sie dann auf **OK**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
+Für Visual Basic-Projekten können Sie erneut das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste auf das Projekt im Ziel **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Kompilieren** Registerkarte, klicken Sie auf die **Advanced Compile Options** Schaltfläche. Wählen Sie **.Net Framework 4** aus der **Zielframeworkliste**, und klicken Sie dann auf **OK**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
 
 Die **Interop** Aktivitäts-Designer gezogen werden kann, von **Toolbox** und auf die Oberfläche des Workflow-Designer gelöscht werden, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Löschen der **Interop** Aktivitäts-Designer erstellt eine <xref:System.Activities.Statements.Interop> -Aktivität mit dem standardmäßigen **"DisplayName"** von Interop. Können Sie bearbeiten die <xref:System.Activities.Activity.DisplayName%2A> im Header des der **Interop** Aktivitäts-Designer oder in der **"DisplayName"** Feld des Eigenschaftenrasters.
 

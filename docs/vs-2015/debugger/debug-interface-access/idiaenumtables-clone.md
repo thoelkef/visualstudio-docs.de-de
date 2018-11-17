@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumTables::Clone method
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c5e84f73168abd25abdb0d971ca0bda8caab73d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6091a5bc501f8cfffb9d2a546c9421f9a223445
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720941"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle
 ## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumTables** ppenum  
 );  
 ```  
