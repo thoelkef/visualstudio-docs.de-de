@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637496"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826816"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 
@@ -63,7 +63,7 @@ Um sicherzustellen, dass der Benutzer die Installation von Visual Studio alle As
 * Stellen Sie sicher `InstallationTarget` 15.0 umfasst.
 * Fügen Sie die erforderlichen Installationsvoraussetzungen hinzu (wie im folgenden Beispiel gezeigt).
   * Es wird empfohlen, dass Sie die Voraussetzungen für die Installation nur Komponenten-IDs angeben.
-  * Finden Sie im Abschnitt am Ende dieses Dokuments auch für [Anweisungen zum Identifizieren der Komponenten-IDs](#finding-component-ids).
+  * Finden Sie im Abschnitt am Ende dieses Dokuments auch für [Anweisungen zum Identifizieren der Komponenten-IDs](#find-component-ids).
 
 Beispiel:
 

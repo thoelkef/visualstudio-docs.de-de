@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748679"
+ms.locfileid: "51826737"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
-Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  
+Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [besser schreiben C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
   
 ## <a name="basic-debugging"></a>Debuggen – Grundlagen  
 
@@ -183,4 +183,9 @@ Um Microsoft-Symbole laden zu können, finden Sie unter [Orte für Symboldateien
 1. In der **Module** Fenster, Sie können feststellen, die Module sind Symbole geladen, der **Symbolstatus** Spalte. Mit der rechten Maustaste in des Moduls, das Sie verwenden möchten, Laden von Symbolen für, und wählen Sie **Symbole laden**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code  
- Standardmäßig sind überspringt der Debugger Eigenschaften und Operatoren in verwaltetem Code. Bei einem Prozedurschritt für Eigenschaften und Operatoren in der Regel bietet eine bessere Debugleistung erzielen. Eigenschaften und Operatoren in-Quellcodes aktivieren **Tools** (oder **Debuggen**) > **Optionen** > **Debuggen**  >  **Allgemeine**Deaktivieren der **Schritt Eigenschaften und Operatoren überspringen (nur verwaltet)** Kontrollkästchen.
+ Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** > **Optionen**. Auf der **Debuggen** > **allgemeine** Deaktivieren der **Schritt Eigenschaften und Operatoren überspringen (nur verwaltet)** Kontrollkästchen.
+
+## <a name="see-also"></a>Siehe auch
+ [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
+ [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md) 
