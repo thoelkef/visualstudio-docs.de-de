@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000841"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807191"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -335,7 +335,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur bei der Behandlung von Visual Studio-Themen. Zuvor konnten Dialogfelder bei schwarzen Designs leer erscheinen.
 
--   Beheben Sie Einfrieren von Unity beim Verbinden des Debuggers, während Unity die Neukompilierung durchführt.
+-   Korrektur des Einfrierens von Unity beim Verbinden des Debuggers, während Unity die Neukompilierung durchführt.
 
 -   Korrektur von Haltepunkten beim Debuggen von Remote-Editoren oder -Playern, die auf einem anderen System kompiliert wurden.
 
@@ -345,7 +345,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur der Verarbeitung des Variablenbereichs im Debugger zur Vermeidung von Livevariablen, die außerhalb des gültigen Bereichs liegen.
 
--   Korrigieren des nachschlagens statischer Member in der Ausdrucksauswertung des Debuggers.
+-   Korrektur des Nachschlagens statischer Member in der Ausdrucksauswertung des Debuggers.
 
 -   Korrektur der Anzeige von Typen in der Ausdrucksauswertung des Debuggers dahingehend, dass statische Fehler und Eigenschaften angezeigt werden.
 

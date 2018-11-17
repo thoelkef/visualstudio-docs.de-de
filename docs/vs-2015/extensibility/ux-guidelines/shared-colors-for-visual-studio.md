@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c0cccf5787d635db9ab04c70df1be97fc0c82d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856690"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723693"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Text)  
   
@@ -96,7 +96,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   **Wenn darauf gezeigt wird**  
   
@@ -182,7 +182,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Text)  
   
@@ -797,7 +797,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Glyphe)  
   
@@ -852,7 +852,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Glyphe)  
   
@@ -1041,7 +1041,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Text)  
   
@@ -2270,7 +2270,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Glyphe "Suchen")  
   
@@ -2454,7 +2454,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   Trennzeichen  
   
@@ -2494,7 +2494,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Glyphe)  
   
@@ -2502,7 +2502,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   ![Suche&#45;gedrückt deaktiviert](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")  
   
@@ -2510,7 +2510,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Hintergrund  
   
-  Keiner  
+  None  
   
   Vordergrund (Glyphe)  
   
@@ -2518,7 +2518,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
 #### <a name="search-drop-down-lists"></a>Dropdownlisten im Suchfeld  
  Das Dropdownmenü im Suchfeld kann etwas komplexer sein als andere Dropdownmenüs in Visual Studio. Die Bereiche "Empfohlene Suchbegriffe" und "Suchoptionen" können alleine oder zusammen im Menü erscheinen, und jedem Bereich kann eine eigene Farbe zugeordnet sein. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.  
@@ -2949,7 +2949,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   **Wenn darauf gezeigt wird**  
   
@@ -2975,7 +2975,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   **Ziehen Sie auf**  
   
@@ -3001,7 +3001,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   **ausgewählt**  
   
@@ -3049,7 +3049,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   **Ausgewähltes Element zeigen**  
   
@@ -3097,7 +3097,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
 ### <a name="button-controls"></a>Schaltflächen-Steuerelemente  
  ![(Rote Linie) der Schaltflächen-Steuerelement](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")  
@@ -3665,7 +3665,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
  Ausgewählt (aktiv)  
   
@@ -3679,7 +3679,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
  Ausgewählt (inaktiv)  
   
@@ -3693,7 +3693,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
 ## <a name="manifest-designer"></a>Manifest-Designer  
  Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
@@ -3728,7 +3728,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
   Rahmen  
   
-  Keiner  
+  None  
   
   Beschreibungsbereich  
   
@@ -4096,7 +4096,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
  Vordergrund (Glyphe)  
   
@@ -4126,7 +4126,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
  Vordergrund (Text)  
   
@@ -4190,7 +4190,7 @@ Wenn Sie Ihre Benutzeroberfläche mit gängigen Visual Studio Shell-Elementen ge
   
  Rahmen  
   
- Keiner  
+ None  
   
  Vordergrund (Glyphe)  
   
