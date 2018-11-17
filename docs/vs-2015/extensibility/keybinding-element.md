@@ -16,12 +16,12 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 144d9afa3b29cd5ecebd2e3c1d604b88ba0a7029
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829156"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780931"
 ---
 # <a name="keybinding-element"></a>KeyBinding-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich.|  
-|ID|Erforderlich.|  
+|id|Erforderlich.|  
 |Editor|Erforderlich. Der Editor GUID gibt an, der Bearbeitungskontext für den diese Tastenkombination aktiv sein werden. Der globale Bindung Bereichswert ist "guidVSStd97".|  
 |key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X und VK_constants vorangestellt.|  
 |MOD1|Dies ist optional. Eine beliebige Kombination aus STRG, ALT und die UMSCHALTTASTE, die durch Leerzeichen getrennt sind.|  
