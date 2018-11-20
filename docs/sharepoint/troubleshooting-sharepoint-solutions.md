@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928957"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296046"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
-  Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Einschränkungen von Tokens in visuellen Sandkasten-Webparts
  Visuelle Webparts in Sandkastenlösungen können Standardtokens wie $SPUrl, die die SharePoint-Laufzeit unterstützt, nicht verarbeiten. Daher wird die URL nicht ausgelöst, und Sie können den Inhalt nicht in der Entwurfsansicht im visuellen Webpartdesigner anzeigen, wenn Sie wie im folgenden Beispiel in einem Skriptelement direkt auf ihn verweisen:  
@@ -105,7 +105,7 @@ ms.locfileid: "49928957"
  Keine  
   
 ### <a name="resolution"></a>Auflösung  
- Dieses Problem tritt aufgrund eines falschen Werts in der **Pfad** -Eigenschaft für die Webtemp-Standortkonfiguration Definition Dateien wie *webtemp_SiteDefinitionProject1.xml*. In der **Pfad** -Eigenschaft für die Webtemp-Datei befindet sich unter der **Bereitstellungsspeicherort**, ändern Sie auf das entsprechende Gebietsschema 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Z. B. zum Verwenden einer japanischen Gebietsschema ändern Sie den Wert, 1041. Weitere Informationen finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](http://go.microsoft.com/fwlink/?LinkID=165561) auf der MSDN-Website.  
+ Dieses Problem tritt aufgrund eines falschen Werts in der **Pfad** -Eigenschaft für die Webtemp-Standortkonfiguration Definition Dateien wie *webtemp_SiteDefinitionProject1.xml*. In der **Pfad** -Eigenschaft für die Webtemp-Datei befindet sich unter der **Bereitstellungsspeicherort**, ändern Sie auf das entsprechende Gebietsschema 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Z. B. zum Verwenden einer japanischen Gebietsschema ändern Sie den Wert, 1041. Weitere Informationen finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Fehler wird angezeigt, wenn ein Workflowprojekt auf einem unveränderten System bereitgestellt wird
  Dieses Problem tritt auf, wenn ein Workflowprojekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] auf einem unveränderten System bereitgestellt wird. Ein unverändertes System ist ein Computer mit einer neuen Installation von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und SharePoint, aber ohne bereitgestellte Workflowprojekte.  
@@ -136,7 +136,7 @@ ms.locfileid: "49928957"
   
 -   Installieren Sie [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Stellen Sie sicher, dass Sie über Administratorzugriff auf die SharePoint-Website verfügen. Weitere Informationen finden Sie unter den [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Onlineartikel [zuweisen oder Entfernen von Administratoren von dienstanwendungen in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Stellen Sie sicher, dass Sie über Administratorzugriff auf die SharePoint-Website verfügen. Weitere Informationen finden Sie unter den [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Onlineartikel [zuweisen oder Entfernen von Administratoren von dienstanwendungen in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Standort Löschen von Web-Ereignis tritt im Ereignisempfängerprojekt nicht ein.
  Wenn Sie ein Ereignisempfängerprojekt erstellen und Sie bestimmte Webereignisse auswählen, z. B. "eine Website wird gelöscht", tritt das Ereignis nie ein.  

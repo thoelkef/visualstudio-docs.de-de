@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::get_loadAddress method
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b79648e5844f49861ece700f4e3b35ea9b09d958
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f609056aca5fffde8e04f0ba01e18a70184e6565
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950120"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794022"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Ruft ab die Ladeadresse für die ausführbare Datei, die die Symbole in diesem S
 ## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT get_loadAddress (   
+HRESULT get_loadAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

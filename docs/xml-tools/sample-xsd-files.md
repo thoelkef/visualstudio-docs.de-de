@@ -12,14 +12,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 832038449cefffd6cd10349f66be0a1d20f683d2
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34571932"
 ---
 # <a name="sample-xsd-files"></a>XSD-Beispieldateien
 
-Die Beispieldateien in diesem Abschnitt werden in der Dokumentation für die XSD-Schema-Designer verwendet.
+Die Beispieldateien in diesem Abschnitt werden in der Dokumentation zum XSD-Schema-Designer verwendet.
 
 > [!NOTE]
 > Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden. Jede Ähnlichkeit mit bestehenden Unternehmen, Organisationen, Produkten, Domänen, E-Mail-Adressen, Logos, Personen, Orten oder Ereignissen ist rein zufällig.

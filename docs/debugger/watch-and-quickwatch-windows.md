@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826790"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung 
 
@@ -278,5 +278,6 @@ Beobachten der `a` -Variable
 1. Debuggen fortsetzen. Sie können beobachten, dass die Variable in der **Watch** Fenster.
 
 ## <a name="see-also"></a>Siehe auch
-
-[Debuggerfenster](../debugger/debugger-windows.md)
+ [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
+ [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)

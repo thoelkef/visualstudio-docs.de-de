@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542493"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348335"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
 Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und optimieren, wenn Sie Ihr Personalisierungskonto einrichten, indem Sie sich bei der IDE anmelden.
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Anmelden bei Visual Studio für Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Warum sollte ich mich in Visual Studio anmelden?
 
@@ -68,3 +71,5 @@ Wenn es bei der Anmeldung zu Problemen kommt, erhalten Sie auf der [Supportseite
 
 * [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+* [Anmelden (Visual Studio für Mac)](/visualstudio/mac/signing-in)
+* [Aktivierung (Visual Studio für Mac)](/visualstudio/mac/activation)

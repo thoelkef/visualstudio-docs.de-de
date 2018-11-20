@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120354"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561646"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 
@@ -152,24 +152,30 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 1. Wenn Sie überprüfen möchten, ob der authentifizierte Benutzer für den Zugriff auf bestimmte Ressourcen autorisiert ist, müssen Sie benutzerspezifische Berechtigungen aus der Datenbank abrufen. Weitere Informationen finden Sie unter [Using the Django authentication system (Verwenden des Authentifizierungssystems von Django)](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django-Dokumentation).
 
-1. Der Administrator ist insbesondere dazu autorisiert, mit den relativen URLs „/admin/“ und „/admin/doc/“ auf die integrierte Django-Administratorschnittstellen zuzugreifen. Zum Aktivieren dieser Schnittstellen müssen Sie *urls.py* des Django-Projekts öffnen und die Kommentare aus den folgenden Einträgen entfernen:
+1. Der Administrator ist insbesondere dazu autorisiert, mit den relativen URLs „/admin/“ und „/admin/doc/“ auf die integrierte Django-Administratorschnittstellen zuzugreifen. Führen Sie die folgenden Schritte aus, um diese Schnittstellen zu aktivieren:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Installieren Sie das Python-Paket „docutils“ in Ihrer Umgebung. Hierfür wird folgende Vorgehensweise empfohlen: Fügen Sie „docutils“ zu Ihrer Datei *requirements.txt* und anschließend zum **Projektmappen-Explorer** hinzu. Erweitern Sie den Knoten **Python-Umgebungen**, klicken Sie anschließend mit der rechten Maustaste auf die verwendete Umgebung, und wählen Sie **Aus „requirements.txt“ installieren** aus.
 
-    # ...
-    urlpatterns = [
+    1. Öffnen Sie die Datei *urls.py* des Django-Projekts, und entfernen Sie aus folgenden Einträgen die Standardkommentare:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Wenn Sie die App neu starten, navigieren Sie zu „/admin/“ und „/admin/doc/“, und führen Sie Aufgaben wie das Erstellen von zusätzlichen Benutzerkonten aus.
+    1. Navigieren Sie in der Datei *settings.py* des Django-Projekts zur `INSTALLED_APPS`-Sammlung, und fügen Sie `'django.contrib.admindocs'` hinzu.
 
-    ![Administratorschnittstelle von Django](media/django/step05-administrator-interface.png)
+    1. Wenn Sie die App neu starten, können Sie zu „/admin/“ und „/admin/doc/“ navigieren und Aufgaben wie das Erstellen zusätzlicher Benutzerkonten ausführen.
+
+        ![Administratorschnittstelle von Django](media/django/step05-administrator-interface.png)
 
 1. Die letzte Phase des Authentifizierungsablaufs ist das Abmelden. Wie Sie in *loginpartial.html* sehen, führt die Verknüpfung **Abmelden** einfach eine POST-Anforderung zur relativen URL „/login“ hinzu, die von der integrierten Ansicht `django.contrib.auth.views.logout` verarbeitet wird. In dieser Ansicht wird keine Benutzeroberfläche angezeigt, Sie werden einfach zur Startseite weitergeleitet (wie in *urls.py* für das „^logout$“-Muster gezeigt). Wenn Sie eine Abmeldeseite anzeigen möchten, ändern Sie zunächst das URL-Muster wie folgt, um die „template_name“-Eigenschaft hinzuzufügen, und die „next_page“-Eigenschaft zu entfernen:
 

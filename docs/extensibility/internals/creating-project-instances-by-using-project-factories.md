@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833992"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219496"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Erstellen von Projektinstanzen mithilfe von projektfactorys
 Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *Projektzuordnungsinstanz* zum Erstellen von Instanzen von Project-Objekte. Eine Projektzuordnungsinstanz ähnelt einer standard-Klassenfactory für cocreatable COM-Objekte. Project-Objekte sind jedoch nicht cocreatable; Sie können nur erstellt werden, mithilfe einer Projektfactory.  
@@ -27,8 +27,6 @@ Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ver
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Ruft die Projekt-Factory, die in einem VSPackage implementiert werden, wenn ein Benutzer ein vorhandenes Projekt lädt oder ein neues Projekt in erstellt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Das neue Projektobjekt stellt die IDE mit genügend Informationen zum Auffüllen **Projektmappen-Explorer**. Das neue Projektobjekt bietet auch die erforderlichen Schnittstellen für die Unterstützung aller relevanten UI-Aktionen, die von der IDE initiiert.  
   
  Sie können die implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle in einer Klasse in Ihrem Projekt. In der Regel befindet sich in ein eigenes Modul.  
-  
- Ein Beispiel für die Implementierung von der `IVsProjectFactory` Benutzeroberfläche, siehe *PrjFac.cpp*, der in enthalten ist die [Basisprojekt](https://www.microsoft.com/download/details.aspx?id=55984) Beispielverzeichnis.  
   
  Projekte, die unterstützen, die aggregiert wird durch einen Besitzer müssen es sich um einen Besitzer-Schlüssel in der Projektdatei beibehalten. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> Methode mit einem Besitzer-Schlüssel an einem Projekt aufgerufen wird, das besessenen Projekt konvertiert seinen Besitzer-Schlüssel in eine Projektzuordnungsinstanz GUID dann Ruft die `CreateProject` Methode für dieses Projekt-Factory die tatsächliche Erstellung zu tun.  
   

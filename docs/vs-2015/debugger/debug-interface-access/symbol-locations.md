@@ -16,15 +16,15 @@ helpviewer_keywords:
 - symbols [DIA SDK], locations
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88d8fd37babea18aa385598cad12436b414f5ff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54db4657ee779da1dfb5c0f743930f752ed26dbf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284634"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750548"
 ---
 # <a name="symbol-locations"></a>Symbolspeicherorte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Die meisten Symbole haben einen definierten Speicherort in der Abbilddatei an. E
   
 |Speicherorttyp|Zusätzliche Eigenschaften|  
 |-------------------|---------------------------|  
-|`LocIsNull`|Keine|  
+|`LocIsNull`|none|  
 |`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (sofern es sich um eine relative virtuelle Adressen aktiviert sind)<br /><br /> [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (wenn die Abbildbasis zu ungleich NULL festgelegt wurde)|  
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|  
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834523"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221047"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.  
@@ -42,7 +42,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler**.  
   
-     Wenn Sie das Ziel der Analyse ändern möchten, wählen Sie**Ziel ändern**aus.  
+     Wenn Sie das Analyseziel für den Profiler ändern möchten, wählen Sie **Ziel ändern** aus.  
   
      ![Analyseziel ändern](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Zusätzliche Informationen  
   
--   Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
+-   Sehen Sie sich [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
--   Lesen Sie die Leistungstipps für UWP-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von UWP-Apps mit JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Lesen Sie die Leistungstipps für UWP-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von UWP-Apps mit JavaScript](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

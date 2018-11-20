@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671728"
 ---
 # <a name="custom-xml-parts-overview"></a>Übersicht über benutzerdefinierte XML-Teile
   Sie können XML-Daten für einige Microsoft Office-Anwendungen in Dokumente einbetten. Wenn Sie XML-Daten in ein Dokument einbetten, werden die Daten als eine *benutzerdefinierten XML-Abschnitt*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325002"
   
  Weitere Informationen zur Struktur von Open XML und benutzerdefinierten XML-Elementen finden Sie in den folgenden Artikeln:  
   
--   [Einführung in die Office (2007) Open XML-Dateiformate](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Einführung in die Office (2007) Open XML-Dateiformate](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Gewusst wie: Bearbeiten von Dokumenten im Open XML-Formate](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Gewusst wie: Bearbeiten von Dokumenten im Open XML-Formate](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Exemplarische Vorgehensweise: Word 2007-XML-format](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Exemplarische Vorgehensweise: Word 2007-XML-format](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Erstellen von Dokumenten in Word 2007 Open XML-Formaten](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Erstellen von Dokumenten in Word 2007 Open XML-Formaten](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Excel, Word und PowerPoint ermöglichen auch die Verwendung benutzerdefinierter XML-Elemente in Dokumenten, die in den binären Dateiformaten gespeichert werden. Wenn ein Dokument in einem binären Format gespeichert wird, können Sie benutzerdefinierte XML-Elemente jedoch nicht hinzufügen oder ändern, ohne die jeweilige Microsoft Office-Anwendung zu starten.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325002"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Ändern von XML-Elemente ohne die Office-Anwendung starten  
  Sie können ein benutzerdefiniertes XML-Element hinzufügen oder ändern, ohne Excel, PowerPoint oder Word zu starten. Dies ist hilfreich, wenn Sie mit XML-Daten in einem Dokument auf einem Computer arbeiten möchten, auf dem keine Microsoft Office-Anwendungen installiert sind (z. B. auf einem Server).  
   
- Wenn Sie ein benutzerdefiniertes XML-Element hinzufügen möchten, ohne Microsoft Office zu starten, verwenden Sie Klassen im Open XML SDK. Diese Klassen bieten Zugriff auf Open XML-Inhalt, der für Office-Dokumente spezifisch ist. Um ein benutzerdefiniertes XML-Element mit einer Excel-Arbeitsmappe hinzuzufügen, verwenden Sie z. B. die [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) Methode eine [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) Objekt. Weitere Informationen finden Sie unter [Open XML SDK](/office/open-xml/open-xml-sdk).  
+ Wenn Sie ein benutzerdefiniertes XML-Element hinzufügen möchten, ohne Microsoft Office zu starten, verwenden Sie Klassen im Open XML SDK. Diese Klassen bieten Zugriff auf Open XML-Inhalt, der für Office-Dokumente spezifisch ist. Um ein benutzerdefiniertes XML-Element mit einer Excel-Arbeitsmappe hinzuzufügen, verwenden Sie z. B. die <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> Methode eine <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> Objekt. Weitere Informationen finden Sie unter [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Binden von benutzerdefinierten XML-Elementen an Word-Inhaltssteuerelementen  
  Sie können Inhaltssteuerelemente in einer Word-Projektmappe an Elemente in einem benutzerdefinierten XML-Element binden. Wenn ein Inhaltssteuerelement an ein benutzerdefiniertes XML-Element gebunden ist, werden die Daten im benutzerdefinierten XML-Element in der Benutzeroberfläche (User Interface, UI) des Inhaltssteuerelements angezeigt. Wenn ein Benutzer Text im Steuerelement bearbeitet, werden die entsprechenden XML-Elemente automatisch aktualisiert. Wenn Elementwerte in den benutzerdefinierten XML-Elementen geändert werden, zeigen die Inhaltssteuerelemente, die an die XML-Elemente gebunden sind, auf ähnliche Weise die neuen Daten an. Weitere Informationen finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325002"
  [Gewusst wie: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [ContentControl-Elemente](../vsto/content-controls.md)   
  [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  

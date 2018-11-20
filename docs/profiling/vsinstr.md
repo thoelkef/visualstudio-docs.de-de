@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573205"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220546"
 ---
 # <a name="vsinstr"></a>VSInstr
 Das VSInstr-Tool wird zum Instrumentieren von Binärdateien verwendet. Es wird mithilfe der folgenden Syntax aufgerufen:  
@@ -35,7 +35,7 @@ VSInstr [/U] filename [/options]
   
  In der folgenden Tabelle werden die Optionen des VSInstr-Tools beschrieben:  
   
-|Optionen|description|  
+|Optionen|Beschreibung |  
 |-------------|-----------------|  
 |**Help** oder **?**|Zeigt die Hilfe an.|  
 |**U**|Schreibt die umgeleitete Konsolenausgabe als Unicode. Dabei muss es sich um die erste angegebene Option handeln.|  

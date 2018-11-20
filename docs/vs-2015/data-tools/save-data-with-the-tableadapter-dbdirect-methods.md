@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220810"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219717"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
 2.  Nennen Sie das Projekt **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Wählen Sie **Windows-Anwendung**, und wählen Sie anschließend**OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Die **TableAdapterDbDirectMethodsWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
@@ -70,13 +70,13 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Auf der **Daten** , wählen Sie im Menü**Datenquellen anzeigen**.  
+1.  Auf der **Daten** , wählen Sie im Menü **Datenquellen anzeigen**.  
   
 2.  In der **Datenquellen** wählen Sie im Fenster **neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.  
   
-3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann**Weiter**.  
+3.  Auf der **wählen Sie einen Datenquellentyp** auf **Datenbank**, und wählen Sie dann **Weiter**.  
   
-4.  Auf der **wählen Sie Ihre Datenverbindung**Bildschirm, führen Sie eine der folgenden:  
+4.  Auf der **wählen Sie Ihre Datenverbindung** Bildschirm, führen Sie eine der folgenden:  
   
     -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
@@ -84,13 +84,13 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
     -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** Dialogfeld.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann**Weiter**.  
+5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern**auf **Weiter**.  
+6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
   
-7.  Auf der **Datenbankobjekte auswählen**Bildschirm, erweitern Sie die **Tabellen** Knoten.  
+7.  Auf der **Datenbankobjekte auswählen** Bildschirm, erweitern Sie die **Tabellen** Knoten.  
   
-8.  Wählen Sie die `Region` Tabelle, und wählen Sie dann**Fertig stellen**.  
+8.  Wählen Sie die `Region` Tabelle, und wählen Sie dann **Fertig stellen**.  
   
      Die **NorthwindDataSet** wird dem Projekt hinzugefügt und die `Region` Tabelle angezeigt wird, der **Datenquellen** Fenster.  
   
@@ -117,7 +117,7 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Hinzufügen von Code für das Einfügen neuer Datensätze in die Datenbank  
   
-1.  Wählen Sie**InsertButton** erstellen einen Ereignishandler für Click-Ereignis aus, und öffnen Sie das Formular im Code-Editor.  
+1.  Wählen Sie **InsertButton** erstellen einen Ereignishandler für Click-Ereignis aus, und öffnen Sie das Formular im Code-Editor.  
   
 2.  Ersetzen Sie den Ereignishandler `InsertButton_Click`durch den folgenden Code:  
   
@@ -135,7 +135,7 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Hinzufügen von Code, um Datensätze aus der Datenbank zu löschen.  
   
-1.  Wählen Sie**DeleteButton** erstellen einen Ereignishandler für Click-Ereignis aus, und öffnen Sie das Formular im Code-Editor.  
+1.  Wählen Sie **DeleteButton** erstellen einen Ereignishandler für Click-Ereignis aus, und öffnen Sie das Formular im Code-Editor.  
   
 2.  Ersetzen Sie den Ereignishandler `DeleteButton_Click`durch den folgenden Code:  
   
@@ -146,7 +146,7 @@ Diese exemplarische Vorgehensweise enthält detaillierte Anweisungen zum Ausfüh
   
 #### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
--   Wählen Sie**F5** zum Ausführen der Anwendung.  
+-   Wählen Sie **F5** zum Ausführen der Anwendung.  
   
 -   Wählen Sie die **einfügen** Schaltfläche, und stellen Sie sicher, dass der neue Datensatz im Raster angezeigt wird.  
   

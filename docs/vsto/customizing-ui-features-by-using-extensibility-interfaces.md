@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873969"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670844"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen
   Die Office-Entwicklungstools in Visual Studio umfassen Klassen und Designer, mit denen viele Implementierungsdetails behandelt werden können, wenn Sie sie zum Erstellen von benutzerdefinierten Aufgabenbereichen, Menübandanpassungen und Outlook-Formularbereichen in einem VSTO-Add-In verwenden. Sie können jedoch zudem die *Erweiterbarkeitsschnittstelle* manuell für jede Funktion implementieren, wenn Sie über besondere Anforderungen verfügen.  
@@ -71,7 +71,7 @@ ms.locfileid: "49873969"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  Weitere Informationen zum Implementieren von <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in 2007 Office System](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) in der Dokumentation zu Microsoft Office.  
+  Weitere Informationen zum Implementieren von <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, finden Sie unter [Erstellen von benutzerdefinierten Aufgabenbereichen in 2007 Office System](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) in der Dokumentation zu Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Beispiel zum Überschreiben der Methode "RequestService"  
  Das folgende Codebeispiel veranschaulicht, wie die Methode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> überschrieben wird, um eine Instanz der Klasse `TaskPaneHelper` aus dem vorherigen Codebeispiel zurückzugeben. Es prüft die Werte des Parameters *serviceGuid* , um zu bestimmen, welche Schnittstelle angefordert wird, und gibt dann ein Objekt zurück, das diese Schnittstelle implementiert.  

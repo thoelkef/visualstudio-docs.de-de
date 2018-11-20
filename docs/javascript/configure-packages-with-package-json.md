@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126638"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219094"
 ---
 # <a name="packagejson-configuration"></a>package.json-Konfiguration
 
@@ -28,7 +28,7 @@ Die npm-Paketversionsverwaltung enthält strenge Regeln. Das Versionsformat laut
 
     [major].[minor].[patch]
 
-Nehmen wir an, Sie verwenden in Ihrer App ein Paket der Version 5.2.1. Dabei steht 5 für die Hauptversion, 2 für die Nebenversion und 1 für den Patch.
+Nehmen wir an, Sie verwenden in Ihrer App ein Paket der Version 5.2.1. Die Hauptversion ist 5, die Nebenversion 2, das Patch 1.
 
 * Bei einem Hauptversionsupdate enthält das Paket neue Features, die nicht abwärtskompatibel sind, also Breaking Changes.
 * Bei einem Nebenversionsupdate werden dem Paket neue Features hinzugefügt, die abwärtskompatibel mit früheren Paketversionen sind.

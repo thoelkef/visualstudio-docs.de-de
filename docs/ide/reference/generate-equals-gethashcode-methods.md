@@ -1,5 +1,5 @@
 ---
-title: Generieren der Überschreibungsmethoden „Equals“ und „GetHashCode“ in Visual Studio
+title: Generieren der Equals- und GetHashCode-Methodenüberschreibungen in C#
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903113"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295708"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generieren der Überschreibungsmethoden „Equals“ und „GetHashCode“ in Visual Studio
 
@@ -36,17 +36,20 @@ Diese Codegenerierung gilt für:
 
 ## <a name="how-to"></a>Vorgehensweise
 
-1. Platzieren Sie den Cursor in Ihre Typdeklaration.
+1. Platzieren Sie den Cursor in der Zeile Ihrer Typdeklaration an einer beliebigen Stelle.
 
    ![Markierter Code](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > Doppelklicken Sie nicht auf den Typnamen. Andernfalls ist die Menüoption nicht verfügbar. Platzieren Sie den Cursor einfach an einer beliebigen Stelle in der Zeile.
+
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
-   - **Tastatur**
-      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
-   - **Maus**
-      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der Typdeklaration platziert ist.
+   - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+
+   - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
+
+   - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](../media/screwdriver-icon.png) am linken Rand
 
    ![Generieren von Überschreibungen – Vorschau](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Diese Codegenerierung gilt für:
     ![Generieren von Überschreibungen – Dialogfeld](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > In diesem Dialogfeld können Sie auch die Generierung von Operatoren auswählen, indem Sie die entsprechenden Kontrollkästchen unterhalb der Memberliste verwenden.
+    > In diesem Dialogfeld können Sie auch über das entsprechende Kontrollkästchen unten im Dialogfeld die Generierung von Operatoren auswählen.
 
-   Die Überschreibungsmethoden „Equals“ und „GetHashCode“ werden mit Standardimplementierungen generiert.
+   Die Methoden `Equals` und `GetHashCode` werden mit Standardimplementierungen generiert.
 
    ![Ergebnis der Aktion zum Generieren einer Methode](media/overrides-result-cs.png)
 

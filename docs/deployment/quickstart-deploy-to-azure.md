@@ -14,47 +14,47 @@ ms.workload:
 - azure
 ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
 ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/30/2018
 ms.locfileid: "39341689"
 ---
-# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen einer Web-app in Azure App Service mithilfe von Visual Studio
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio
 
-Sie können die **veröffentlichen** Tool zum Veröffentlichen von ASP.NET, ASP.NET Core, Node.js und .NET Core-apps in Azure App Service oder Azure App Service Linux (mit Containern). Führen Sie die Schritte für Python-apps auf [Python – in Azure App Service veröffentlichen](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+Sie können mit dem Tool **Veröffentlichen** in Azure App Service oder Azure App Service Linux (mit Containern) ASP.NET-, ASP.NET Core-, Node.js- und .NET Core-Apps veröffentlichen. Führen Sie für Python-Apps die Schritte unter [Python – Veröffentlichen in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aus.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>Veröffentlichen in Azure App Service
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie **veröffentlichen** (oder verwenden Sie die **erstellen** > **veröffentlichen** Menüelement).
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen** aus. Alternativ können Sie auch das Menüelement **Erstellen** > **Veröffentlichen** verwenden.
 
-    ![Der Befehl "Veröffentlichen" auf die im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "veröffentlichen wählen")
+    ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "Auswahl der Option „Veröffentlichen“")
 
-1. Wenn Sie Veröffentlichungsprofile, zuvor konfiguriert haben die **veröffentlichen** Bereich angezeigt wird, in der Groß-/Kleinschreibung wählen **neues Profil erstellen**.
+1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie in diesem Fall auf **Neues Profil erstellen**.
 
-1. In der **Veröffentlichungsziel** Dialogfeld wählen **App Service**.
+1. Wählen Sie im Dialogfeld **Veröffentlichungsziel auswählen** den Eintrag **App Service** aus.
 
-    ![Wählen Sie Azure App Service](../deployment/media/quickstart-publish-azure.png "Azure App Service auswählen")
+    ![Auswahl von Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
 
-1. Wählen Sie **Veröffentlichen**. Die **App Service erstellen** Dialogfeld wird angezeigt. Sie Azure-Konto melden Sie an, wenn erforderlich, und klicken Sie dann auf die Standardeinstellungen für app Service über die Felder aufzufüllen
+1. Wählen Sie **Veröffentlichen**. Das Dialogfeld **App Service erstellen** wird angezeigt. Melden Sie sich ggf. mit Ihrem Azure-Konto an. Anschließend werden die Felder mit den Standardeinstellungen für App Service aufgefüllt.
 
-    ![Erstellen von App Service](../deployment/media/quickstart-publish-settings-app-service.png "Azure App Service erstellen")
+    ![App Service erstellen](../deployment/media/quickstart-publish-settings-app-service.png "Azure App Service erstellen")
 
-1. Wählen Sie **Erstellen** aus. Visual Studio die app zu Azure App Service bereitgestellt wird und die Web-app in Ihrem Browser lädt. Die Projekteigenschaften **veröffentlichen** Bereich werden die Website-URL und andere Details.
+1. Wählen Sie **Erstellen** aus. Visual Studio stellt die App in Azure App Service bereit, und die Web-App wird in Ihrem Browser geladen. Im Bereich **Veröffentlichen** werden in den Projekteigenschaften die Website-URL und andere Details angezeigt.
 
-    ![Veröffentlichen Sie die im Eigenschaftenbereich mit einem Profil Statusübersicht](../deployment/media/quickstart-publish-app-service-summary.png)
+    ![Bereich „Veröffentlichen“ in den Projekteigenschaften mit einer Profilzusammenfassung](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
 
-In den vorherigen Schritten haben Sie Azure-Ressourcen in einer Ressourcengruppe erstellt. Wenn Sie nicht auf diese Ressourcen in der Zukunft zu benötigen, können Sie sie löschen, indem Sie die Ressourcengruppe löschen.
-Wählen Sie im linken Menü im Azure-Portal **Ressourcengruppen** und wählen Sie dann **MyResourceGroup**.
-Klicken Sie auf der Seite der Ressourcengruppe stellen Sie sicher, dass die Ressourcen aufgelisteten sind, die Sie löschen möchten.
-Wählen Sie **löschen**, Typ **MyResourceGroup** in das Textfeld ein, und wählen Sie dann **löschen**.
+In den vorherigen Schritten haben Sie bereits in einer Ressourcengruppe Azure-Ressourcen erstellt. Wenn Sie sich sicher sind, dass Sie diese Ressourcen in Zukunft nicht mehr benötigen, können Sie sie löschen, indem Sie die Ressourcengruppe entfernen.
+Wählen Sie links im Azure-Portal **Ressourcengruppen** und anschließend **myResourceGroup** aus.
+Vergewissern Sie sich, dass es sich bei den auf der Seite „Ressourcengruppe“ aufgeführten Ressourcen wirklich um die Ressourcen handelt, die gelöscht werden sollen.
+Klicken Sie auf **Löschen**, geben Sie **myResourceGroup** in das Textfeld ein, und klicken Sie anschließend erneut auf **Löschen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser schnellstartanleitung haben Sie gelernt, wie Sie Visual Studio verwenden, um ein Veröffentlichungsprofil für die Bereitstellung in Azure erstellen. Sie können auch eine Veröffentlichung konfigurieren Profil durch Importieren der veröffentlichungseinstellungen von Azure App Service.
+In diesem Schnellstart haben Sie gelernt, wie Sie mithilfe von Visual Studio ein Veröffentlichungsprofil für die Bereitstellung in Azure erstellen. Sie können ein Veröffentlichungsprofil auch durch das Importieren von Veröffentlichungseinstellungen über Azure App Service konfigurieren.
 
 > [!div class="nextstepaction"]
 > [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure](tutorial-import-publish-settings-azure.md)

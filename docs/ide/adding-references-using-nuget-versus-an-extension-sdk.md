@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858476"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349477"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 
-Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der NuGet-Erweiterung für Visual Studio oder mit einem Software Development Kit (SDK) bereitstellen. In diesem Thema werden die Ähnlichkeiten und Unterschiede zwischen den beiden Vorgehensweisen beschrieben. So können Sie die für Sie geeignete Methode ermitteln.
+Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit NuGet oder mit einem Software Development Kit (SDK) bereitstellen. In diesem Artikel werden die Ähnlichkeiten und Unterschiede zwischen den beiden Vorgehensweisen beschrieben. So können Sie die für Sie geeignete Methode ermitteln.
 
 - NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie in der [NuGet-Dokumentation](/nuget).
 
@@ -27,7 +27,6 @@ Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der 
 ## <a name="which-mechanism-should-i-use"></a>Welche Vorgehensweise sollte ich verwenden?
 
 Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen eines SDK und den Funktionen von NuGet.
-
 
 | Feature | SDK-Unterstützung | SDK-Hinweise | NuGet-Unterstützung | NuGet-Hinweise |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
+- [Verwalten von Verweisen in einem Projekt (Visual Studio für Mac)](/visualstudio/mac/managing-references-in-a-project)

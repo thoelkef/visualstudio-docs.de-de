@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910965"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296241"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projektelements definiert und sie eine Elementvorlage in Visual Studio ordnen, möchten Sie auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, zum Sammeln von Informationen von Benutzern, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910965"
   
 13. In der **Beschreibung** geben **die Entwicklercenter für SharePoint-Website geöffnet**.  
   
-14. In der **URL** geben **http://msdn.microsoft.com/sharepoint/default.aspx**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+14. In der **URL** geben **https://docs.microsoft.com/sharepoint/dev/**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
      Visual Studio fügt ein Element mit dem Namen **CustomAction1** auf Ihr Projekt und öffnet die *"Elements.xml"* Datei im Editor. Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910965"
   
      Die **Listeneinstellungen** Seite wird angezeigt.  
   
-4.  Unter den **Kommunikation** Überschrift in der Nähe der oberen Rand der Seite Wählen Sie die **SharePoint Developer Center** verknüpfen, stellen Sie sicher, dass der Browser die Website geöffnet wird http://msdn.microsoft.com/sharepoint/default.aspx, und klicken Sie dann den Browser schließen.  
+4.  Unter den **Kommunikation** Überschrift in der Nähe der oberen Rand der Seite Wählen Sie die **SharePoint Developer Center** verknüpfen, stellen Sie sicher, dass der Browser die Website geöffnet wird https://docs.microsoft.com/sharepoint/dev/, und klicken Sie dann den Browser schließen.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Bereinigung auf dem Entwicklungscomputer
  Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektelementvorlage aus der experimentellen Instanz von Visual Studio.  

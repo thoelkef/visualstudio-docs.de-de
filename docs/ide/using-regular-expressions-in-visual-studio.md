@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945545"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050299"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -49,7 +49,8 @@ Hier einige Beispiele:
 |Übereinstimmung mit keinem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst wenig Zeichen umfasst).|*?|`e.*?e` findet „ee“ in „feeder“, jedoch nicht „eede“.|
 |Übereinstimmung mit einem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst wenig Zeichen umfasst).|+?|`e.+?e` findet „ente“ und „erprise“ in „enterprise“, jedoch nicht das vollständige Wort „enterprise“.|
 |Verankert die übereinstimmende Zeichenfolge am Anfang einer Zeile oder Zeichenfolge.|^|`^car` findet das Wort „car“ nur, wenn es am Anfang einer Zeile angezeigt wird.|
-|Verankert die übereinstimmende Zeichenfolge am Ende einer Zeile|\r?$|`End\r?$` findet „end“ nur, wenn es am Ende einer Zeile angezeigt wird.|
+|Verankert die übereinstimmende Zeichenfolge am Ende einer Zeile|\r?$|`end\r?$` findet „end“ nur, wenn es am Ende einer Zeile angezeigt wird.|
+|Verankern der übereinstimmende Zeichenfolge am Ende der Datei|$|`end$` findet „end“ nur, wenn es am Ende der Datei vorkommt.|
 |Übereinstimmung mit beliebigem Zeichen in einem Satz|[abc]|`b[abc]` findet „ba“, „bb“ und „bc“.|
 |Übereinstimmung mit beliebigem Zeichen in einem Bereich von Zeichen|[a-f]|`be[n-t]` findet „bet“ in „between“, „ben“ in „beneath“ und „bes“ in „beside“, jedoch nicht „bel“ in „below“.|
 |Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“.|
@@ -58,8 +59,8 @@ Hier einige Beispiele:
 |Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge\|mud) bath` findet „sponge bath“ und „mud bath“.|
 |Versehen des Zeichens hinter dem umgekehrten Schrägstrich mit Escapezeichen| \\ |`\^` findet das Zeichen „^“.|
 |Angeben der Anzahl von Vorkommen des vorherigen Zeichens oder der Gruppe|{x}, wobei x die Anzahl von Vorkommen ist|`x(ab){2}x` findet „xababx“ und `x(ab){2,3}x` findet „xababx“ und „xabababx“, jedoch nicht „xababababx“.|
-|Übereinstimmung von Text in einer Unicode-Zeichenklasse, wobei „X“ der Unicode-Zahl entspricht. Weitere Informationen zu Unicode-Zeichenklassen finden Sie unter<br /><br /> [Unicode Standard 5.2 Character Properties (Unicode-Standard 5.2-Zeicheneigenschaften)](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` findet „T“ und „D“ in „Thomas Doe“.|
-|Übereinstimmung mit einer Wortgrenze|`\b` (Außerhalb einer Zeichenklasse gibt „\b“ eine Wortgrenze an und innerhalb einer Zeichenklasse gibt es eine Rücktaste an.)|`\bin` findet „in“ in „inside“, jedoch nicht „pinto“.|
+|Übereinstimmung mit Text in einer Unicode-Zeichenklasse. Weitere Informationen zu Unicode-Zeichenklassen finden Sie unter<br /><br /> [Unicode Standard 5.2 Character Properties (Unicode-Standard 5.2-Zeicheneigenschaften)](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, wobei "X" die Unicode-Nummer angibt.|`\p{Lu}` findet „T“ und „D“ in „Thomas Doe“.|
+|Übereinstimmung mit einer Wortgrenze|\b (Außerhalb einer Zeichenklasse gibt `\b` eine Wortgrenze, innerhalb einer Zeichenklasse gibt `\b` eine Rücktaste an.)|`\bin` findet „in“ in „inside“, jedoch nicht „pinto“.|
 |Übereinstimmung mit Zeilenumbruch (d.h. ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile).|\r?\n|`End\r?\nBegin` findet „End“ und „Begin“ nur, wenn „End“ als letzte Zeichenfolge in einer Zeile vorkommt und „Begin“ als erste Zeichenfolge in der nächsten Zeile.|
 |Übereinstimmung mit beliebigem alphanumerischen Zeichen|\w|`a\wd` findet „add“ und „a1d“, jedoch nicht „a d“.|
 |Übereinstimmung mit beliebigem Leerzeichen.|(?([^\r\n])\s)|`Public\sInterface` findet den Begriff „Public Interface“.|

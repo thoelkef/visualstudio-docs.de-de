@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566780"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967050"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 
@@ -130,7 +130,7 @@ Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Akt
 
 Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
--   `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
+-   `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
 
 -   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 
@@ -152,5 +152,4 @@ Weitere Informationen zur Verwendung von Element zu Element navigieren und Infor
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT-XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK: Circuit Diagrams Sample. Umfassende DSL-Anpassung](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [Beispielcode: Schaltpläne](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK: Circuit Diagrams Sample. Umfassende DSL-Anpassung](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

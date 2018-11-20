@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917101"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672950"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Behandeln von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:  
@@ -124,7 +124,7 @@ ms.locfileid: "49917101"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Weitere Informationen zu den Ereignisschnittstellen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interopassemblys für Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Weitere Informationen zu den Ereignisschnittstellen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interopassemblys für Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Kann nicht Office-PIA-Verweis Klassen in Projekten, die auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ausgerichtet sind, wird Code, der auf eine in einer Office-PIA definierte Klasse verweist, standardmäßig nicht kompiliert. Klassen in den PIAs verwenden die Benennungskonvention *Objectname*Klasse, z. B. <xref:Microsoft.Office.Interop.Word.DocumentClass> und <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Der folgende Code aus einem Word-VSTO-Add-In-Projekt wird z. B. nicht kompiliert.  

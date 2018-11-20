@@ -9,12 +9,12 @@ description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894559"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219535"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -24,9 +24,9 @@ Wandeln Sie Ihre Daten in ansprechende visuelle Darstellungen um, die Sie sammel
 Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden, um Power BI Pro zu verwenden.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt“ Tools“ die Kachel „Power BI Pro“. Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
+2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Power BI Pro“. Klicken Sie unten auf der Kachel „Vorteile“ auf den Link **Code anfordern**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Aktivieren**.
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „Power BI Pro“](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Kachel zum Power BI-Pro-Vorteil](_img/vs-pbi/vs-pbi-tile.png)
 
 3. Wenn Sie bereits andere Abonnementvorteile wie das Office 365-Entwicklerabonnement oder Enterprise Mobility + Security aktiviert haben, haben Sie möglicherweise schon ein Konto eingerichtet.  Wenn ein Konto gefunden wird, können Sie entscheiden, ob Sie Ihr Power BI Pro-Abonnement zu Ihrem Konto hinzufügen oder ein neues Konto erstellen möchten.  Es wird dringend empfohlen, das Abonnement zu Ihrem Konto hinzuzufügen, damit Sie nur über eine einzige Benutzer-ID auf die verschiedenen Vorteile zugreifen können.
    > [!div class="mx-imgBorder"]
@@ -37,12 +37,12 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
    > ![Power BI Pro-Vorteil: Konto erstellen](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 
-5. Erstellen Sie anschließend Ihre Benutzer-ID und ein Kennwort.  Wenn Sie bereits ein Konto haben und trotzdem ein Neues erstellen möchten, müssen Sie einen anderen Unternehmensnamen verwenden.  Klicken Sie auf **Create my account** (Mein Konto erstellen).
+5. Erstellen Sie anschließend Ihre Benutzer-ID und ein Kennwort.  Wenn Sie bereits ein Konto haben und trotzdem ein Neues erstellen möchten, müssen Sie einen anderen Unternehmensnamen verwenden.  Klicken Sie auf **Mein Konto erstellen**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro-Vorteil: Benutzer-ID erstellen](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
 
 
-6. Sie werden aufgefordert, einen Bestätigungscode einzufügen, um sicherzustellen, dass das Konto von einem Menschen erstellt wird.  Bitte geben Sie eine Telefonnummer an, und wählen Sie aus, ob Sie den Code über einen Anruf oder per SMS erhalten möchten.  Klicken Sie auf **Text me** (SMS) oder **Call me** (Anruf).
+6. Sie werden aufgefordert, einen Bestätigungscode einzufügen, um sicherzustellen, dass das Konto von einem Menschen erstellt wird.  Bitte geben Sie eine Telefonnummer an, und wählen Sie aus, ob Sie den Code über einen Anruf oder per SMS erhalten möchten.  Klicken Sie auf **SMS** oder **Anruf**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro-Vorteil: kein Bot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
@@ -92,9 +92,24 @@ A: Der Vorteil ist kostenlos, aber die Aktivierung verwendet das gleiche System,
 - Kreditkarte:  Wenn Sie eine Kreditkartennummer angeben, wird Ihre Kreditkarte nicht belastet. 
 - Rechnung:  Wenn Sie „Rechnung“ als Zahlungsart auswählen, müssen Sie keine Kreditkartennummer angeben.  Sie können das Intervall auch auf „Jährlich“ festlegen.  Dadurch erhalten Sie eine einzelne E-Mail, die Sie darüber informiert, dass eine Rechnung für Sie bereit steht.  Der Rechnungsbetrag entspricht 0,00 €.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>F: Kann der Power BI Pro-Vorteil, der in meinem Abonnement enthalten ist, in einer Produktionsumgebung verwendet werden?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>F: Kann der Power BI Pro-Vorteil, der in meinen Abonnementlizenzen enthalten ist, in einer Produktionsumgebung genutzt werden?
 A: Ja.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>F: Beim Versuch, Power BI Pro zu aktivieren, werde ich in einer Meldung darauf hingewiesen, dass ich bereits über die Arbeit ein Konto besitze.  Kann ich den Vorteil dennoch nutzen?
+A: Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Office 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.
+1.  Wenn die Meldung angezeigt wird, dass Sie bereits über die Arbeit ein Konto besitzen, klicken Sie auf **Neues Konto erstellen**.
+
+2.  Geben Sie im nächsten Bildschirm Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter**.
+
+3.  Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Um das kostenlose Angebot zu nutzen, müssen Sie **.onmicrosoft.com** als Domäne auswählen. Klicken Sie auf **Mein Konto erstellen**.
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Pro-Vorteil: Benutzer-ID für privaten Mandanten erstellen](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  Die verbleibenden Schritte sind identisch mit denen in der Vorgehensweise weiter oben in diesem Artikel, beginnend mit Schritt 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>F: Ich arbeite in einer Behördendomäne.  Kann ich den Vorteil nutzen? 
+A: Nein.  Der Power BI Pro-Vorteil kann nicht für Mandanten in einer Behördendomäne geltend gemacht werden. 
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Power BI Pro?
@@ -103,3 +118,6 @@ A: Ja.
     - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 -  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Navigieren Sie zu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), um Ihren Power BI Pro-Vorteil zu aktivieren.

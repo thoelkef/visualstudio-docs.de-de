@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808791"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348525"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
 
 Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. Zum Beispiel können Sie ein Debugbuild konfigurieren, das von den Testern zum Suchen und Beheben von Problemen verwendet werden kann, und Sie können unterschiedliche Builds konfigurieren, die Sie an verschiedene Kunden verteilen können.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Erstellen und Bearbeiten von Konfigurationen in Visual Studio für Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Erstellen von Buildkonfigurationen
 
@@ -127,3 +128,4 @@ Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfigu
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 - [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
+- [Erstellen und Bearbeiten von Buildkonfigurationen (Visual Studio für Mac)](/visualstudio/mac/create-and-edit-configurations)

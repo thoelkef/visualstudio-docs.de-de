@@ -5,14 +5,14 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836345"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294902"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Setup von Visual Studio für Mac-Tools für Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Einrichten von Visual Studio für Mac-Tools für Unity
 
 In diesem Abschnitt werden die ersten Schritte für die Verwendung von Visual Studio für Mac-Tools für Unity erläutert.
 
@@ -20,7 +20,7 @@ In diesem Abschnitt werden die ersten Schritte für die Verwendung von Visual St
 
 ### <a name="unity-bundled-installation"></a>Gebündelte Installation von Unity
 
-Ab Unity 2018.1 ist Visual Studio für Mac die C#-Standard-IDE für Unity und im Unity-Download-Assistenten sowie im Unity Hub-Installationstool enthalten. Laden Sie Unity unter [store.unity.com](https://store.unity.com/) herunter.
+Ab Unity 2018.1 ist Visual Studio für Mac die C#-Standard-IDE (IDE = Integrated Development Environment, integrierte Entwicklungsumgebung) für Unity und im Unity-Download-Assistenten sowie im Unity Hub-Installationstool enthalten. Laden Sie Unity unter [store.unity.com](https://store.unity.com/) herunter.
 
 Stellen Sie während der Installation sicher, dass Visual Studio für Mac in der Liste der Komponenten ausgewählt ist, die mit Unity installiert werden sollen:
 

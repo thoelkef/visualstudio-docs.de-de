@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672781"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -100,7 +100,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 1. Klicken Sie auf die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer **0168** an.
 
-     ![Seite "Erstellen", Projekt-Designer](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Seite "Erstellen", Projekt-Designer](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Weitere Informationen finden Sie unter [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 3. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
 
-     ![Seite "Kompilieren", Projekt-Designer](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Seite "Kompilieren", Projekt-Designer](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -225,5 +225,5 @@ Herzlichen Glückwunsch! Sie haben diese exemplarische Vorgehensweise erfolgreic
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)

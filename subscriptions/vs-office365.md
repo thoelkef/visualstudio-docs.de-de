@@ -9,12 +9,12 @@ description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908391"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244462"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 in Visual Studio-Abonnements
 
@@ -25,15 +25,24 @@ Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer
 Führen Sie die folgenden Schritte aus, um Office 365 herunterzuladen und zu aktivieren:
 1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.  
 2. Klicken Sie auf die Registerkarte **Downloads**.
-3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Liste „Office“ die Option **Office Professional Plus 2019** aus.
-0. Es werden zwei Auflistungen angezeigt.  Die Auflistung für Office 365 ist die zweite Auflistung.  Stellen Sie sicher, dass die erste und letzte Dropdownliste, die die Architektur und den Medientyp bestimmen, **UNK** bzw. **OTH** lautet.   
-0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie auf den Link **Schlüssel abrufen** unter der zweiten Auflistung.
-0. Ein Flyoutfenster zeigt alle Schlüssel an, die Sie bereits angefordert haben.  Um einen neuen Schlüssel abzurufen, klicken Sie auf **Schlüssel anfordern**.
+3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus. 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365-Downloads](_img/vs-office365/vs-office365-downloads.png)
+0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365-Product Key abrufen](_img/vs-office365/vs-office365-get-key.png)
+0. In einem Flyoutfenster werden alle bereits von Ihnen abgerufenen Schlüssel sowie die Schlüssel angezeigt, die für Sie verfügbar sind.  Um einen neuen Schlüssel abzurufen, klicken Sie unter der Auflistung **Office Professional Plus 2019** auf **Schlüssel anfordern**.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365-Product Key anfordern](_img/vs-office365/vs-office365-claim-key.png)
 0. Notieren Sie sich den Schlüssel, den Sie soeben angefordert haben. (Sie können jederzeit zu dieser Liste zurückkehren, um ihn erneut anzuzeigen.)
 0. Schließen Sie das Flyoutfenster.
 0. Klicken Sie auf die Schaltfläche **Herunterladen**: 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365-Download starten](_img/vs-office365/vs-office365-download-button.png)
 0. Melden Sie sich mit Ihrem Microsoft-Konto an. (Wenn Sie bereits angemeldet sind, klicken Sie auf **Weiter**.)
 0. Geben Sie Ihren Product Key, das Land oder die Region und die Sprache ein, und klicken Sie dann auf **Weiter**.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365-Product Key eingeben](_img/vs-office365/vs-office365-enter-key.png)
 0. Klicken Sie erneut auf **Weiter**.
 0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren. 
 

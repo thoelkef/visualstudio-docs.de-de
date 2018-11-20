@@ -1,6 +1,6 @@
 ---
-title: Bereitstellung – Featuretour
-description: Erfahren Sie mehr über die Möglichkeiten zum Bereitstellen von apps aus Visual Studio.
+title: 'Bereitstellung: Featuretour'
+description: Erfahren Sie, wie Sie Apps aus Visual Studio bereitstellen können.
 ms.custom: mvc
 ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
@@ -26,107 +26,107 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49861630"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Ein erster Blick auf die Bereitstellung in Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Ein erster Einblick in die Bereitstellung in Visual Studio
 
-Durch die Bereitstellung einer Anwendung, den Dienst oder die Komponente, verteilen Sie diese für die Installation auf anderen Computern, Geräten oder Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen. (Viele app-Typen unterstützen andere Bereitstellungstools wie z. B. die Bereitstellung über die Befehlszeile oder NuGet, die hier nicht beschrieben sind.)
+Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen. (Viele App-Typen unterstützen andere Bereitstellungstools wie das Befehlszeilen-Bereitstellungstool oder NuGet, welche hier nicht beschrieben werden.)
 
-Schnellstarts und Tutorials für die schrittweise bereitstellungsanleitung angezeigt. Einen Überblick über die Optionen für die Bereitstellung, finden Sie unter [welche Veröffentlichungsoptionen für mich geeignet sind?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
+Sehen Sie sich die Schnellstarts und Tutorials an, um ausführliche Anweisungen für die Bereitstellung anzuzeigen. Eine Übersicht der Bereitstellungsoptionen finden Sie unter [Welche Optionen für die Veröffentlichung sind für mich geeignet?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
-## <a name="deploy-to-local-folder"></a>Bereitstellen in lokalen Ordner
+## <a name="deploy-to-local-folder"></a>Bereitstellen in einem lokalen Ordner
 
-Bereitstellung auf einem lokalen Ordner wird normalerweise verwendet, für das Testen oder um einer Bereitstellung zu beginnen, in der ein anderes Tool für die endgültige Bereitstellung verwendet wird.
+Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwendet oder um eine Stagingbereitstellung zu beginnen, in der zur endgültigen Bereitstellung ein anders Tool verwendet wird.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und. **NET Core**: Verwenden Sie das Tool "Veröffentlichen", um in einen lokalen Ordner bereitzustellen. Die genaue verfügbaren Optionen hängen von Ihren app-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie **veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Wählen Sie als Nächstes **Ordner**. Weitere Informationen finden Sie unter [in einen lokalen Ordner bereitstellen](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **NET Core**: Verwenden Sie das Tool zum Veröffentlichen für die Bereitstellung in einem lokalen Ordner. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
-    ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png)
+    ![„Veröffentlichen“ auswählen](../deployment/media/quickstart-publish.png)
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die Visual C++-Laufzeit, die mit der lokalen Bereitstellung oder statische Verknüpfung bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Visual C++ runtime**: Sie können die Visual C++ Runtime bereitstellen, indem Sie lokale Bereitstellung oder statische Verknüpfung verwenden. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**, und **Node.js**: Sie können das Tool "Veröffentlichen" verwenden, zum schnellen Bereitstellen von apps in Azure App Service oder einen virtuellen Azure- Computer. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Klicken Sie im Dialogfeld "Veröffentlichen" Wählen Sie entweder **App Service** oder **Azure Virtual Machines**, und befolgen Sie dann die Konfigurationsschritte.
+- **ASP.NET**, **ASP.NET Core**, **Python** und **Node.js**: Sie können das Tool zum Veröffentlichen verwenden, um Apps schnell in Azure App Service oder auf einem virtuellen Azure-Computer bereitzustellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Dialogfeld „Veröffentlichen“ entweder **App Service** oder **Azure Virtual Machines** aus, und führen Sie dann die Konfigurationsschritte aus.
 
-    ![Wählen Sie Azure App Service](../deployment/media/quickstart-publish-azure.png "Azure App Service auswählen")
+    ![Auswahl von Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
 
-    In Visual Studio 2017 Version 15.7 und höher, können Sie ASP.NET Core-apps bereitstellen **App Service für Linux**.
+    In Visual Studio 2017, Version 15.7 und höher können Sie ASP.NET Core-Apps in **App Service für Linux** bereitstellen.
 
-    Für Python-apps finden Sie auch unter [Python - Veröffentlichung in Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Weitere Informationen zu Python-Apps finden Sie unter [Python: Veröffentlichen in Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Eine kurze Einführung finden Sie unter [in Azure veröffentlichen](quickstart-deploy-to-azure.md) und [in Linux veröffentlichen](quickstart-deploy-to-linux.md). Siehe auch [Veröffentlichen einer ASP.NET Core-app in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Bereitstellung mit Git, finden Sie unter [kontinuierliche Bereitstellung von ASP.NET Core in Azure mit Git](/aspnet/core/publishing/azure-continuous-deployment).
+    Eine kurze Einführung finden Sie unter [Veröffentlichen in Azure](quickstart-deploy-to-azure.md) und [Veröffentlichen unter Linux](quickstart-deploy-to-linux.md). Lesen Sie auch [Veröffentlichen einer ASP.NET Core-App in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Weitere Informationen zur Bereitstellung mit Git finden Sie unter [Continuous Deployment von ASP.NET Core in Azure mit Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Weitere Informationen zum Importieren eines Veröffentlichungsprofils aus Azure App Service in Visual Studio finden Sie unter [veröffentlichungseinstellungen importieren und Bereitstellen in Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Weitere Informationen zum Importieren eines Veröffentlichungsprofils aus Azure App Service in Visual Studio, finden Sie unter [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
-    > Wenn Sie nicht bereits über ein Azure-Konto verfügen, können Sie [melden Sie sich hier](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+    > Wenn Sie noch kein Azure-Konto besitzen, können Sie sich [hier registrieren](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="publish-to-web-or-deploy-to-network-share"></a>Im Web veröffentlichen oder auf einer Netzwerkfreigabe bereitstellen
+## <a name="publish-to-web-or-deploy-to-network-share"></a>Veröffentlichen im Web oder Bereitstellen zur Netzwerkfreigabe
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, und **Python**: Sie können das Tool "Veröffentlichen" verwenden, um auf einer Website über FTP oder Web Deploy bereitstellen. Weitere Informationen finden Sie unter [bereitstellen auf einer Website](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** und **Python**: Zur Bereitstellung auf einer Website mithilfe von FTP oder Web Deploy können Sie das Tool „Veröffentlichen“ verwenden. Weitere Informationen finden Sie unter [Bereitstellen auf einer Website](quickstart-deploy-to-a-web-site.md).
 
-    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie Veröffentlichungsprofile zuvor konfiguriert haben, klicken Sie dann auf **neues Profil erstellen**.) Wählen Sie die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus, in das Tool "Veröffentlichen".
+    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Tool „Veröffentlichen“ die gewünschte Option aus, und führen Sie die Konfigurationsschritte aus.
 
-    ![Wählen Sie IIS, FTP usw. an.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![Auswählen von IIS, FTP, usw.](../deployment/media/quickstart-publish-iis-ftp.png)
 
-    Informationen zum Importieren eines Veröffentlichungsprofils in Visual Studio finden Sie unter [Importieren von veröffentlichungseinstellungen und Bereitstellen von IIS](../deployment/tutorial-import-publish-settings-iis.md).
+    Weitere Informationen zum Importieren eines Veröffentlichungsprofils in Visual Studio, finden Sie unter [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Sie können auch ASP.NET-Anwendungen und-Dienste auf vielfältige andere Weise bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET Webanwendungen und-Dienste](http://www.asp.net/aspnet/overview/deployment).
+    Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die zentrale Bereitstellung mithilfe von Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Visual C++ Runtime**: Sie können die Visual C++ Runtime bereitstellen, indem Sie zentrale Bereitstellung verwenden. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
-- **Windows-Desktop** können Sie eine Windows-Desktopanwendung auf einem Webserver oder eine Dateifreigabe im Netzwerk mithilfe von ClickOnce-Bereitstellung veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [bereitstellen eine desktop-app mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) und [Bereitstellen einer nativen app mit ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) und [Bereitstellen einer nativen App mit ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
-## <a name="publish-to-microsoft-store"></a>Veröffentlichen in Microsoft Store
+## <a name="publish-to-microsoft-store"></a>Veröffentlichen im Microsoft Store
 
-In Visual Studio können Sie für die Bereitstellung in Microsoft Store-app-Pakete erstellen.
+Sie können aus Visual Studio App-Pakete zur Bereitstellung im Microsoft Store erstellen.
 
-- **UWP**: Sie können Ihre app Packen und stellen Sie sie mithilfe der Menüelemente. Weitere Informationen finden Sie unter [Packen eine UWP-app mit Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP**: Sie können Ihre App packen und mithilfe von Menüelementen bereitstellen. Weitere Informationen finden Sie unter [Packen einer UWP-App mit Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Erstellen eines App-Pakets](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows-Desktop**: Sie können auf der Microsoft Store über Desktop-Brücke ab Visual Studio 2017 Version 15.4 bereitstellen. Zu diesem Zweck erstellen Sie zunächst ein Projekt zum Verpacken von Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer desktop-app für Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows Desktop**: Eine Bereitstellung im Microsoft Store ist möglich mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Desktop-Brücke](../deployment/media/feature-tour-desktop-bridge.png)
 
-## <a name="deploy-to-a-device-uwp"></a>Bereitstellen Sie auf einem Gerät (UWP)
+## <a name="deploy-to-a-device-uwp"></a>Bereitstellen für ein Gerät (UWP)
 
-Wenn Sie eine UWP-app zu Testzwecken auf einem Gerät bereitstellen, finden Sie unter [Ausführen von UWP-apps auf einem Remotecomputer in Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
+Wenn Sie eine UWP-App zum Testen auf einem Gerät bereitstellen, lesen Sie mehr dazu unter [Ausführen von UWP-Apps auf einem Remotecomputer in Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-client"></a>Erstellen Sie ein Installationspaket (Windows-Client)
+## <a name="create-an-installer-package-windows-client"></a>Erstellen eines Installationspakets (Windows-Client)
 
-Wenn Sie mehr über eine komplexe Installation einer desktop-Anwendung als benötigen [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) bereitstellen können, können Sie ein Installationspaket, eines Setup-Projekts oder eines benutzerdefinierten Bootstrappers erstellen.
+Wenn Sie eine komplexere Installation einer Desktop-Anwendung benötigen als [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sie bietet, können Sie ein Installationspaket, ein Setup-Projekt oder einen benutzerdefinierten Bootstrapper erstellen.
 
-- Eine MSI-basierte WiX-Installationsprogramms kann erstellt werden, mithilfe der [WiX Toolset Visual Studio 2017-Erweiterung](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Mithilfe der [WiX-Toolset-Erweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) kann ein MSI-basierter WiX-Installer erstellt werden.
 
-- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera Software kann mit Visual Studio 2017 (Community-Edition nicht unterstützt) verwendet werden. Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und wird in Visual Studio 2017 nicht unterstützt. Wenden Sie [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) zur künftigen Verfügbarkeit.
+- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software kann mit Visual Studio 2017 verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 nicht unterstützt wird; Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
-- Wenn Sie ein Setup-Projekt (Vdproj) erstellen möchten, installieren Sie die [Visual Studio 2017-Installer Projects Extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Wenn Sie ein Setup-Projekt (vdproj) erstellen möchten, installieren Sie die [Installer-Projekterweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Sie können die erforderliche Komponenten für desktopanwendungen installieren, konfigurieren Sie ein generisches Installationsprogramm, das als Bootstrapper bezeichnet wird. Weitere Informationen finden Sie unter [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md).
+- Sie können die erforderlichen Komponenten für Desktopanwendungen installieren, indem Sie ein generisches Installationsprogramm konfigurieren, das als Bootstrapper bezeichnet wird. Weitere Informationen finden Sie unter [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md).
 
-## <a name="deploy-to-test-lab"></a>Bereitstellen, um die testumgebung
+## <a name="deploy-to-test-lab"></a>Bereitstellen in Testumgebung
 
-Sie können anspruchsvollere Entwicklung und Tests, die durch die Bereitstellung Ihrer Anwendungen in virtuellen Umgebungen aktivieren. Weitere Informationen finden Sie unter [Test in einer laborumgebung](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere Entwicklungs- und Testvorgänge zu ermöglichen. Weitere Informationen finden Sie unter [Testen in einer Laborumgebung](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>DevOps-Bereitstellung
+## <a name="devops-deployment"></a>Bereitstellung von DevOps
 
-Azure-Pipelines können Sie in einer teamumgebung um continuous Deployment Ihrer App zu aktivieren. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [in Azure bereitstellen](/azure/devops/deploy-azure/index?view=vsts).
+In Teamumgebungen können Sie Azure Pipelines verwenden um Continuous Deployment (kontinuierliche Bereitstellung) Ihrer App zu ermöglichen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [Bereitstellen in Azure](/azure/devops/deploy-azure/index?view=vsts).
 
-## <a name="deployment-for-other-app-types"></a>Bereitstellung für andere app-Typen
+## <a name="deployment-for-other-app-types"></a>Bereitstellung für andere App-Typen
 
 | App-Typ | Bereitstellungsszenario | Link |
 | --- | --- | --- |
-| **Office-app** | Sie können ein Add-In für Office in Visual Studio veröffentlichen. | [Bereitstellen Sie und veröffentlichen Sie Ihre Office-add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
-| **WCF oder OData-Dienst** | Andere Anwendungen können WCF RIA-Diensten, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch wird in Visual Studio 2017 nicht mehr unterstützt, aber Sie können weiterhin in Visual Studio 2015 und früher bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
+| **WCF oder OData-Dienst** | Für andere Anwendungen können WCF RIA-Dienste verwendet werden, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **LightSwitch** | LightSwitch wird in Visual Studio 2017 nicht mehr unterstützt, kann aber aus Visual Studio 2015 und niedrigeren Versionen immer noch bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie einen kurzen Blick auf die Bereitstellungsoptionen für unterschiedliche Anwendungen.
+In diesem Tutorial haben Sie auf die Bereitstellungsoptionen für verschiedene Anwendungen einen kurzen Blick geworfen.
 
 > [!div class="nextstepaction"]
-> [Welche Veröffentlichungsoptionen sind für mich geeignet?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)
+> [Welche Optionen für die Veröffentlichung sind für mich geeignet?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)

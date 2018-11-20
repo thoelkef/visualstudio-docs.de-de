@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919363"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220221"
 ---
 # <a name="active-script-debugging-overview"></a>Debuggen mit Active Script - Übersicht
 Die Schnittstellen zum Debuggen mit Active Script ermöglichen ein sprachneutrales, hostneutrales Debuggen und unterstützen eine Vielzahl von Entwicklungsumgebungen.  
@@ -33,31 +33,30 @@ Abbildung 1
   
  In den folgenden Unterabschnitten werden die einzelnen Schlüsselkomponenten in Active Debugging und die zugehörigen Schnittstellen erläutert. Bevor Sie fortfahren, müssen jedoch einige Active Debugging-Schlüsselkonzepte definiert werden:  
   
- Hostanwendung  
+ **Hostanwendung**  
  Die Anwendung, die die Skript-Engines hostet und eine skriptfähige Reihe von Objekten (oder „Objektmodellen“) bereitstellt.  
   
- Sprach-Engine  
+ **Sprach-Engine**  
  Eine Komponente, die Analyse-, Ausführungs- und Debugabstraktionen für eine bestimmte Sprache bereitstellt.  
   
- Debugger-IDE  
+ **Debugger-IDE**  
  Die Anwendung, die die Debugging-Benutzeroberfläche durch die Kommunikation mit der Hostanwendung und Sprach-Engines bereitstellt.  
   
- Computerbasierter Debug-Manager  
- Eine Komponente, die eine Registrierung von debugfähigen Anwendungsprozessen verwaltet.  
+ **Computerbasierter Debug-Manager** Eine Komponente, die eine Registrierung von debugfähigen Anwendungsprozessen verwaltet.  
   
- Prozessbasierter Debug-Manager  
+ **Prozessbasierter Debug-Manager**  
  Eine Komponente, die die Struktur von debugfähigen Dokumenten für eine bestimmte Anwendung verwaltet, die ausgeführten Threads nachverfolgt usw.  
   
- Dokumentkontext  
+ **Dokumentkontext**  
  Ein Dokumentenkontext ist eine Abstraktion, die einen bestimmten Bereich im Quellcode eines Hostdokuments darstellt.  
   
- Codekontext  
+ **Codekontext**  
  Ein Codekontext stellt eine bestimmte Position im ausgeführten Code einer Sprach-Engine dar (einen „virtuellen Anweisungszeiger“) dar.  
   
- Ausdruckskontext  
+ **Ausdruckskontext**  
  Ein bestimmter Kontext (z.B. ein Stapelrahmen), in dem Ausdrücke von einer Sprach-Engine ausgewertet werden können.  
   
- Objektkatalog  
+ **Objektsuche**  
  Eine strukturierte, sprachunabhängige Darstellung von Name, Typ, Wert und Unterobjekten eines Objekts, die für die Implementierung einer „Überwachungsfenster“-Benutzeroberfläche geeignet ist.  
   
  Es folgt eine Übersicht über alle Active Debugging-Schlüsselkomponenten und entsprechenden, zugeordneten Schnittstellen, gefolgt von den Details zu diesen Schnittstellen.  

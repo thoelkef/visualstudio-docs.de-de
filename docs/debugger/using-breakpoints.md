@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816682"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826842"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
-Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt.  
+Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
   
 ##  <a name="BKMK_Overview"></a> Setzen Sie Haltepunkte im Quellcode  
  Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. im folgenden C#-Code, Sie können einen Haltepunkt festlegen der Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.  
@@ -235,8 +235,8 @@ Bei der Auswahl **Bedingungsausdruck**, können Sie zwischen zwei Bedingungen: *
  >- Für nativen Code betrachtet nicht Debugger die erste Auswertung der Bedingung, sodass der Haltepunkt bei der ersten Auswertung kein Änderung. 
  >- Für verwalteten Code, trifft der Debugger den Breakpoint in der ersten Auswertung nach **Änderung** ausgewählt ist.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Mithilfe des Objekt-IDs in bedingten Ausdrücken (C#- und f# nur)  
- Es gibt Situationen, wenn Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise empfiehlt es sich um herauszufinden, warum ein Objekt mehr als einmal in einer Auflistung eingefügt wurde. In c# und f# können Sie Objekt-IDs für bestimmte Instanzen erstellen können [Verweistypen](/dotnet/csharp/language-reference/keywords/reference-types), und in haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Verwenden von Objekt-IDs in bedingten Ausdrücken (C# und F# nur)  
+ Es gibt Situationen, wenn Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise empfiehlt es sich um herauszufinden, warum ein Objekt mehr als einmal in einer Auflistung eingefügt wurde. In C# und F#, können Sie Objekt-IDs für bestimmte Instanzen von erstellen [Verweistypen](/dotnet/csharp/language-reference/keywords/reference-types), und in haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
 
 **So erstellen Sie eine Objekt-ID:** 
   
@@ -305,5 +305,7 @@ Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können
 Ablaufverfolgungspunkte werden als rote Diamanten in den linken Rand des Quellcodes angezeigt und **Haltepunkte** Windows. 
   
 ## <a name="see-also"></a>Siehe auch  
-[Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)  
-[Navigieren im Code mit dem debugger](../debugger/navigating-through-code-with-the-debugger.md)
+ [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
+ [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)  
+ [Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)  

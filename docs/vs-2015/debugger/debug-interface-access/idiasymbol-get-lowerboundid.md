@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_lowerBoundId method
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d123cb830c3d0e34d7e5991abaa95152849428e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0ea20f0416190c9c18f9d4246a4d70549cc942d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861799"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799508"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Ruft den Symbol-Bezeichner, der die untere Grenze des eine FORTRAN Arraydimensio
 ## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT get_lowerBoundId (   
+HRESULT get_lowerBoundId (   
    DWORD* pRetVal  
 );  
 ```  

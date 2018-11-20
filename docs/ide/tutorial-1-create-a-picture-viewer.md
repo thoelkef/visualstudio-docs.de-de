@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672157"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
@@ -42,7 +42,7 @@ Am Ende sieht das Programm wie in der folgenden Abbildung aus:
 
 ## <a name="tutorial-links"></a>Tutoriallinks
 
-Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Artikels finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Erstellen eines Bildanzeigeprogramms in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How do I: Create a picture viewer in C#? (Erstellen eines Bildanzeigeprogramms in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).
 

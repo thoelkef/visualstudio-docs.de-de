@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951256"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Bearbeiten der Eigenschaften der UI-Aktion
   
  Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.  
   
- Gibt z. B. wenn ein Server nicht verfügbar ist und Sie eine UI-Aktion, die Ihrem Webbrowser zugeordnet haben, die **wechseln Sie zur Webseite 'http://Contoso1/default.aspx"**, könnten Sie die URL zum Ändern `‘ http://Contoso2/default.aspx’`.  
+ Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite <http://Contoso1/default.aspx’> wechseln** vorhanden ist, können Sie die URL in `‘http://Contoso2/default.aspx’` ändern.  
   
  ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Bearbeiten von Steuerelementeigenschaften  
@@ -125,19 +125,19 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
+- ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
   
- **Tipps**  
+  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Aufteilung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z.  
+- ![Tipp](../test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Aufteilung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z.  
   
--   ![Tipp](../test/media/tip.png "Tip") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.  
+- ![Tipp](../test/media/tip.png "Tip") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.  
   
-     - oder -   
+   - oder -   
   
-     Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.  
+   Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.  
   
-     Ein Microsoft Visual Studio-Dialogfeld wird angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, der auf die Methode verweist. Klicken Sie auf **Ja**.  
+   Ein Microsoft Visual Studio-Dialogfeld wird angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, der auf die Methode verweist. Klicken Sie auf **Ja**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Eine Testmethode in die UIMap-Datei verschieben, um Anpassungen zu vereinfachen  
  Wenn Sie feststellen, dass eine der Testmethoden im Test der programmierten UI benutzerdefinierten Code erfordert, müssen Sie sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben. Andernfalls wird der Code beim erneuten Kompilieren des Tests der programmierten UI überschrieben. Wenn Sie die Methode nicht verschieben, wird der benutzerdefinierte Code bei jedem erneuten Kompilieren des Tests überschrieben.  
@@ -149,11 +149,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
+- ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
   
- **Tipps**  
+  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Verschiebung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.  
+- ![Tipp](../test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Verschiebung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Suchen eines UI-Steuerelements in der getesteten Anwendung  
  Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Mit der Funktion **UI-Steuerelemente suchen** in der getesteten Anwendung können auch Änderungen der Sucheigenschaften überprüft werden, die an einem Steuerelement vorgenommen wurden.  
@@ -167,11 +167,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung](../test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
+- ![Symbol „Warnung](../test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
   
- **Tipps**  
+  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Sie können auch die Option **Alle suchen** verwenden, um zu überprüfen, ob die Position aller Steuerelemente in einem Container korrekt ermittelt werden kann. Diese Option wird im nächsten Abschnitt beschrieben.  
+- ![Tipp](../test/media/tip.png "Tip") Sie können auch die Option **Alle suchen** verwenden, um zu überprüfen, ob die Position aller Steuerelemente in einem Container korrekt ermittelt werden kann. Diese Option wird im nächsten Abschnitt beschrieben.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Suchen eines Steuerelements und seiner Nachfolgerelemente  
  Sie können überprüfen, ob alle Steuerelemente in einem Container in der Benutzeroberfläche der getesteten Anwendung ordnungsgemäß ermittelt werden können. Dies kann bei der Überprüfung von Sucheigenschaftenänderungen hilfreich sein, die möglicherweise am Container vorgenommen wurden. Außerdem können Sie bei umfangreichen Änderungen an der Benutzeroberfläche der getesteten Anwendung überprüfen, ob die vorhandenen Eigenschaften für die Steuerelementsuche weiterhin korrekt sind.  
@@ -201,11 +201,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)  
+- ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)  
   
- **Tipps**  
+  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie ALT gedrückt und drücken Sie EINGABE, oder drücken Sie alternativ F4.  
+- ![Tipp](../test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie ALT gedrückt und drücken Sie EINGABE, oder drücken Sie alternativ F4.  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
   

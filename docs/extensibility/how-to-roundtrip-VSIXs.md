@@ -1,37 +1,37 @@
 ---
-title: 'Vorgehensweise: Roundtrip-Erweiterungen für Visual Studio | Microsoft-Dokumentation'
-ms.custom: ''
+title: Wie Sie die Roundtrip-Erweiterungen
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498684"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750731"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Gewusst wie: machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
-Dieses Dokument erläutert, wie Sie Erweiterungsprojekte Roundtrip zwischen Visual Studio 2015 und Visual Studio 2017. Nach Abschluss dieser Aktualisierung werden ein Projekt öffnen, erstellen, installieren, und führen Sie in Visual Studio 2015 und Visual Studio 2017.  Als Referenz, einige Erweiterungen, die einen Roundtrip zwischen Visual Studio 2015 und Visual Studio 2017 finden Sie [hier](https://github.com/Microsoft/VSSDK-Extensibility-Samples) in Beispielen der Microsoft-Erweiterbarkeit.
+Dieses Dokument erläutert, wie Sie Erweiterungsprojekte Roundtrip zwischen Visual Studio 2015 und Visual Studio 2017. Nach Abschluss dieser Aktualisierung werden ein Projekt öffnen, erstellen, installieren, und führen Sie in Visual Studio 2015 und Visual Studio 2017. Als Referenz, einige Erweiterungen, die einen Roundtrip zwischen Visual Studio 2015 und Visual Studio 2017 finden Sie in der [VS-SDK-Erweiterbarkeitsbeispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Wenn Sie nur in Visual Studio 2017 erstellen, sondern soll die Ausgabe von VSIX in Visual Studio 2015 und Visual Studio 2017 ausführen möchten, verweisen Sie dann auf die [Erweiterung dokumentu migrace](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Hinweis:** aufgrund von Änderungen in Visual Studio zwischen den Versionen, einige Dinge, die in einer bestimmten Version funktionierte funktioniert nicht, eine andere. Stellen Sie sicher, dass die Funktionen, die Sie zugreifen möchten in beiden Versionen verfügbar, oder die Erweiterung hat unerwartete Ergebnisse.
+> [!NOTE]
+> Aufgrund von Änderungen in Visual Studio zwischen den Versionen funktionieren nicht einige Dinge, die in einer bestimmten Version funktioniert in einer anderen. Stellen Sie sicher, dass die Funktionen, die Sie zugreifen möchten, in beiden Versionen verfügbar sind oder die Erweiterung hat unerwartete Ergebnisse.
 
 Hier ist eine Übersicht über die Schritte, die Sie in diesem Dokument eine VSIX-Roundtrip abgeschlossen werden:
 
 1. Importieren Sie die richtige NuGet-Pakete.
 2. Aktualisieren Sie die Erweiterungsmanifest:
     * Installationsziel
-    * Erforderliche Komponenten
+    * Vorraussetzungen
 3. Aktualisieren Sie die CSProj:
     * Update `<MinimumVisualStudioVersion>`.
     * Hinzufügen der `<VsixType>` Eigenschaft.
@@ -57,13 +57,13 @@ Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisunge
 Wenn das Projekt enthält eine *"Project.JSON"* Datei:
 
 * Beachten Sie die Verweise in *"Project.JSON"*.
-* Von der **Projektmappen-Explorer**, löschen Sie die *"Project.JSON"* Datei aus dem Projekt.
-    * Dies löscht die *"Project.JSON"* Datei, und entfernen Sie es aus dem Projekt.
-* Fügen Sie, dass die NuGet-Verweise in das Projekt zurück.
+* Von der **Projektmappen-Explorer**, löschen Sie die *"Project.JSON"* Datei aus dem Projekt. Dies löscht die *"Project.JSON"* Datei, und entfernt sie aus dem Projekt.
+* Fügen Sie dem Projekt die NuGet-Verweise in sichern:
     * Mit der rechten Maustaste auf die **Lösung** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten**.
-    * Visual Studio erstellt automatisch die *"Packages.config"* -Datei für Sie
+    * Visual Studio erstellt automatisch die *"Packages.config"* -Datei für Sie.
 
->**Hinweis:** Wenn Ihr Projekt EnvDTE-Pakete enthalten, müssen sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** auswählen **Verweis hinzufügen** und den entsprechenden Verweis hinzugefügt haben.  Mithilfe von NuGet-Pakete kann Fehler erstellen, bei dem Versuch, Ihr Projekt zu erstellen.
+> [!NOTE]
+> Wenn Ihr Projekt EnvDTE-Pakete enthalten, müssen sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** auswählen **Verweis hinzufügen** und den entsprechenden Verweis hinzugefügt haben.  Mithilfe von NuGet-Pakete kann Fehler erstellen, bei dem Versuch, Ihr Projekt zu erstellen.
 
 ## <a name="add-appropriate-build-tools"></a>Hinzufügen der entsprechenden Build-tools
 
@@ -113,7 +113,8 @@ Die CWL manuell erstellen:
 
 * Speichern und schließen Sie die Datei.
 
->**Hinweis:** , wenn Sie auswählen, um dies mit dem VSIX-Designer in Visual Studio 2017 zu erreichen, müssen Sie manuell bearbeiten, die erforderliche Version aus, um sicherzustellen, dass er mit allen Versionen von Visual Studio 2017 kompatibel.  Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird.  Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
+> [!NOTE]
+> Wenn Sie auswählen, um dies mit dem VSIX-Designer in Visual Studio 2017 zu erreichen, müssen Sie manuell bearbeiten, um sicherzustellen, dass er kompatibel mit allen Versionen von Visual Studio 2017 ist die erforderliche Version.  Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird.  Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
 
 An diesem Punkt sollte Ihre Manifestdatei etwa wie folgt aussehen:
 
@@ -139,7 +140,8 @@ Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffne
 
 * Fügen Sie das folgende Tag `<VsixType>v3</VsixType>` auf eine Eigenschaftengruppe.
 
->**Hinweis:** es wird empfohlen, die Hiermit unterhalb der `<OutputType></OutputType>` Tag.
+> [!NOTE]
+> Es wird empfohlen, die Hiermit unterhalb der `<OutputType></OutputType>` Tag.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Fügen Sie die debugging-Eigenschaften
 
@@ -211,4 +213,5 @@ An diesem Punkt sollte Ihr Projekt bereit sein, eine VSIXv3 zu erstellen, die au
 
 ![Suchen einer VSIX-Datei](media/finding-a-VSIX-example.png)
 
->**Hinweis:** Wenn Ihr Projekt mit der Meldung hängt **Öffnen der Datei**, Herunterfahren erzwingen von Visual Studio, wechseln Sie zu Ihrem Projektverzeichnis, versteckte Ordner anzeigen und löschen die *.vs* Ordner.
+> [!NOTE]
+> Wenn Ihr Projekt mit der Meldung hängt **Öffnen der Datei**, Herunterfahren erzwingen von Visual Studio, wechseln Sie zu Ihrem Projektverzeichnis, versteckte Ordner anzeigen und löschen die *.vs* Ordner.

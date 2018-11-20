@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929802"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220832"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen oder Objekte in einem Profilerstellungslauf an. In dieser Ansicht wird anhand der Leistungsmetriken der Profilerstellungsmethode ein Zeitachsendiagramm und mindestens zwei Listen mit den leistungsintensivsten Funktionen oder Objekten dargestellt. Die Daten in dieser Ansicht sind von der verwendeten Profilerstellungsmethode abhängig (Sampling, Instrumentierung oder Parallelität) und davon, ob die .NET-Speicherreservierung erfasst wurde.  
@@ -52,8 +52,8 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 | **Gekürzte Aufrufstruktur anzeigen** | Zeigt die leistungsintensivsten Ausführungspfade in der Aufrufstrukturansicht an. Weitere Informationen finden Sie unter [Aufrufstrukturansicht](../profiling/call-tree-view.md). |
 | **Langsamste Zeile anzeigen** | Nicht verfügbar für Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Zeigt die leistungsintensivsten Quellcodezeilen in der Zeilenansicht an. Weitere Informationen finden Sie unter [Zeilenansicht](../profiling/lines-view.md). |
 | **Berichte vergleichen** | Zeigt das Dialogfeld **Analysedateien für Vergleich auswählen** an, in dem Sie eine andere Profilerstellungs-Datendatei angeben können, um einen Vergleich mit der aktuellen Datei zu ziehen. Weitere Informationen finden Sie unter [Compare performance data files (Vergleichen von Leistungsdatendateien)](../profiling/comparing-performance-data-files.md). |
-| **Berichtsdaten exportieren** | Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [How to: Export profiling tools reports (Vorgehensweise: Exportieren von Berichten von Profilerstellungstools).](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451) |
-| **Analysierten Bericht speichern** | Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [How to: Save analyzed profiling data files (Vorgehensweise: Speichern von analysierten Profilerstellungs-Datendateien)](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556). |
+| **Berichtsdaten exportieren** | Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [How to: Export profiling tools reports (Vorgehensweise: Exportieren von Berichten von Profilerstellungstools).](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)) |
+| **Analysierten Bericht speichern** | Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [How to: Save analyzed profiling data files (Vorgehensweise: Speichern von analysierten Profilerstellungs-Datendateien)](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Berichtsdaten filtern** | Zeigt den Filterbereich des Profilerstellungsberichts an, in dem Sie Kriterien für die Einschränkung der Daten in der Berichtsansicht bestimmen können. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtsansicht](../profiling/performance-report-view-filter.md). |
 | **Vollbild umschalten** | Schaltet den Vollbildmodus für die Berichtsansicht ein bzw. aus. |
 

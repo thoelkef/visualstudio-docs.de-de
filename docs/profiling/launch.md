@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34cf3124ab4479be624f097502240e5014b330
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844403"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219197"
 ---
 # <a name="launch"></a>Starten
 Die Option **Launch** startet den Profiler mit der Beispielmethode sowie die angegebene Anwendung.  
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
  **GlobalOn** und **GlobalOff**  
- Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), die Profilerstellungssitzung jedoch nicht  
+ Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), aber nicht die Profilerstellungssitzung  
   
  **ProcessOn:** `PID` und **ProcessOff**:`PID`  
  Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)  

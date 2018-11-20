@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241188"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244436"
 ---
 # <a name="xml-editor-tasks"></a>Aufgaben im XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ In diesem Abschnitt wird die Ausführung häufiger Aufgaben mit dem XML-Editor b
  In diesem Abschnitt wird das Erstellen neuer XML-Ausschnitte veranschaulicht.  
   
  [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- In diesem Abschnitt wird die Verwendung der XSLT-IntelliSense-Funktion veranschaulicht.  
+ Veranschaulicht, wie XSLT-IntelliSense-Funktion.  
   
  [Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  In diesem Abschnitt wird das Debuggen eines referenzierten Stylesheets veranschaulicht.  

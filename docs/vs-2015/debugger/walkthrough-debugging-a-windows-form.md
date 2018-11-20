@@ -28,15 +28,15 @@ helpviewer_keywords:
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665f2513d96b58a541970252c81848c20672f48b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180257"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726602"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 6.  Auf der **Debuggen** Menü wählen **Einzelschritt**.  
   
-     Der Wert von textBox1.Text ändert sich in der **Überwachen 1**Fenster:  
+     Der Wert von textBox1.Text ändert sich in der **Überwachen 1** Fenster:  
   
     ```  
     Button was clicked!  

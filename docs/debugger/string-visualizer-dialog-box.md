@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274312"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349087"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Anzeigen von Zeichenfolgen in einen Zeichenfolgen-Schnellansicht in Visual Studio
 
@@ -43,9 +43,9 @@ Um die Zeichenfolgen-Schnellansicht zu öffnen, müssen Sie während des Debugge
 
 ## <a name="view-string-visualizer-data"></a>Ansichtsdaten für Zeichenfolge-Schnellansicht
 
-Im Schnellansichtsfenster Zeichenfolge die **Ausdruck** Feld zeigt, Variable oder einen Ausdruck, Sie sind mit der Maus, und die **Wert** Feld zeigt den Zeichenfolgenwert. 
+Im Schnellansichtsfenster Zeichenfolge die **Ausdruck** Feld zeigt, Variable oder einen Ausdruck, Sie sind mit der Maus, und die **Wert** Feld zeigt den Zeichenfolgenwert.
 
-Ein leerer **Wert** bedeutet, dass die ausgewählte Schnellansicht die Zeichenfolge nicht erkennen kann. Z. B. die **XML-Visualizer** zeigt eine leere **Wert** für eine Textzeichenfolge mit keine XML-Tags oder einer JSON-Zeichenfolge. 
+Ein leerer **Wert** bedeutet, dass die ausgewählte Schnellansicht die Zeichenfolge nicht erkennen kann. Z. B. die **XML-Visualizer** zeigt eine leere **Wert** für eine Textzeichenfolge mit keine XML-Tags oder einer JSON-Zeichenfolge.
 
 Um Zeichenfolgen anzuzeigen, die die ausgewählte Schnellansicht nicht erkennen kann, wählen die **Text-Schnellansicht**. Die **Text-Schnellansicht** zeigt nur-Text.
 
@@ -67,5 +67,7 @@ Eine gut formatierte HTML-Zeichenfolge angezeigt wird, als ob in einem Browser g
 
 ![HTML-Zeichenfolgen-Schnellansicht](../debugger/media/dbg-string-visualizers-html.png "HTML-Zeichenfolgen-Schnellansicht")
 
-## <a name="see-also"></a>Siehe auch  
- [Erstellen Sie benutzerdefinierter Schnellansichten (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Siehe auch
+
+- [Erstellen Sie benutzerdefinierter Schnellansichten (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Datenvisualisierungen in Visual Studio für Mac](/visualstudio/mac/data-visualizations)

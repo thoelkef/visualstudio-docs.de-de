@@ -1,21 +1,21 @@
-Web Deploy 3.6 für Hostserver bietet zusätzliche Konfiguration, die die Erstellung der Datei mit den veröffentlichungseinstellungen von der Benutzeroberfläche zu ermöglichen.
+Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures für die Erstellung der Datei mit Veröffentlichungseinstellungen über die Benutzeroberfläche.
 
-1. Wenn Sie Web bereitstellen 3.6 unter Windows Server bereits installiert haben, deinstallieren Sie es mit **Systemsteuerung** > **Programme** > **Deinstallationsprogramm**.
+1. Wenn Sie Web Deploy 3.6 bereits in Windows Server installiert haben, führen Sie über **Einstellungen** > **Programme** > **Uninstall a Program** (Programm deinstallieren) eine Deinstallation durch.
 
-2. Als Nächstes installieren Sie Web bereitstellen 3.6 für Hostserver unter Windows Server.
+2. Installieren Sie anschließend Web Deploy 3.6 für Hostingserver in Windows Server.
 
-    Verwenden Sie zum Installieren von Web Deploy für den Hostserver der [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Um den Webplattform-Installer-Link aus IIS zu suchen, wählen **IIS** im linken Bereich des Server-Managers. Mit der rechten Maustaste in des Servers, und wählen Sie **(Internet Information Services, IIS) Manager**.)
+    Verwenden Sie den [Webplattform-Installer (Web PI)](https://www.microsoft.com/web/downloads/platform.aspx) für die Installation von Web Deploy für Hostingserver. (Sie finden den Link zum Web PI über IIS, wenn Sie links im Server-Manager auf **IIS** klicken. Klicken sie erst mit der rechten Maustaste auf den Server und anschließend mit der linken auf **Internetinformationsdienste-Manager**.)
 
-    In den Webplattform-Installer, finden Sie **Web Deploy für Hostserver** auf der Registerkarte "Anwendungen".
+    Im Web PI finden Sie **Web Deploy für Hostingserver** auf der Registerkarte „Anwendungen“.
 
-3. Wenn Sie nicht bereits installiert haben **IIS-Verwaltungsskripts und-Tools**, installieren Sie es jetzt.
+3. Installieren Sie, falls noch nicht geschehen, die **Verwaltungsskripts und -tools für IIS**.
 
-    Wechseln Sie zu **Serverrollen auswählen** > **Webserver (IIS)** > **Verwaltungstools**, und wählen Sie dann die **IIS-Verwaltungsskripts und Tools** Rolle, klicken Sie auf **Weiter**, und installieren Sie dann auf die Rolle.
+    Navigieren Sie zu **Serverrollen auswählen** > **Web Server (IIS)** > **Verwaltungstools**, wählen Sie die Rolle **IIS Management Scripts and Tools** (Verwaltungsskripts und -tools für IIS) aus, klicken Sie auf **Weiter**, und installieren Sie die Rolle.
 
-    ![Installieren von IIS-Verwaltungsskripts und-Tools](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
+    ![Installieren von Verwaltungsskripts und -tools für IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
-    Die Skripts und Tools sind erforderlich, um das Generieren der Datei mit den veröffentlichungseinstellungen zu ermöglichen.
+    Sie müssen die Skripts und Tools installieren, damit die Datei mit Veröffentlichungseinstellungen erstellt werden kann.
 
-4. (Optional) Stellen Sie sicher, dass Web Deploy öffnen ordnungsgemäß ausgeführt wird **Systemsteuerung > System und Sicherheit > Verwaltung > Dienste** und stellen Sie sicher, dass **Webbereitstellungs-Agent-Dienst** ausgeführt wird (die Name des Diensts unterscheidet sich in älteren Versionen).
+4. (Optional) Überprüfen Sie, ob Web Deploy korrekt ausgeführt wird, indem Sie **Einstellungen > System and Security (System und Sicherheit) > Verwaltung > Dienste** öffnen und sich vergewissern, dass der **Webbereitstellungs-Agent-Dienst**  ausgeführt wird (in älteren Versionen ist dieser Dienst anders benannt).
 
-    Wenn der Agent-Dienst nicht ausgeführt wird, starten Sie ihn aus. Wenn es nicht vorhanden ist, fahren Sie mit **Systemsteuerung > Programme > Programm deinstallieren**, finden Sie **Microsoft Web Deploy <version>** . Wählen Sie auf **Änderung** die Installation und stellen Sie sicher, dass Sie auswählen **auf der lokalen Festplatte installiert werden** für die Web Deploy-Komponenten. Führen Sie die Installationsschritte ändern.
+    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie **Microsoft Web Deploy<version>**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.

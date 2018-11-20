@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120678"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000725"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3807"></a>3.8.0.7
  Veröffentlichung: 20. September 2018
- 
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Debugger:**
@@ -31,7 +31,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3806"></a>3.8.0.6
  Veröffentlichung: 27. August 2018
- 
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Integration:**
@@ -40,7 +40,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3805"></a>3.8.0.5
  Veröffentlichung: 20. August 2018
- 
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Integration:**
@@ -49,13 +49,13 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3804"></a>3.8.0.4
  Veröffentlichung: 14. August 2018
- 
+
 ### <a name="new-features"></a>Neue Funktionen
 
 -   **Auswertung:**
 
     -   Unterstützung für Zeigerwerte wurde hinzugefügt.
-    
+
     -   Unterstützung für generische Methoden wurde hinzugefügt.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
@@ -66,7 +66,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3803"></a>3.8.0.3
  Veröffentlichung: 24. Juli 2018
- 
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Projektgenerierung:**
@@ -75,24 +75,24 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3802"></a>3.8.0.2
  Veröffentlichung: 7. Juli 2018
- 
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Projektgenerierung:**
 
     -   Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Veröffentlichung: 26. Juli 2018
- 
+
 ### <a name="new-features"></a>Neue Funktionen
 
 -   **Debuggen:**
 
     -   Unterstützung für die Befehle „UserLog“ und „UserBreak“ wurde hinzugefügt.
-    
+
     -   Unterstützung für verzögerte Typlast wurde hinzugefügt (optimiert die Antwortlatenz von Netzwerklast und Debugger).
-       
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Auswertung:**
@@ -101,19 +101,19 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="3800"></a>3.8.0.0
  Veröffentlichung: 30. Mai 2018
- 
+
 ### <a name="new-features"></a>Neue Funktionen
 
 -   **Debuggen:**
 
     -   Unterstützung für die Anzeige von Variablen in asynchronen Konstrukten hinzugefügt.
-    
+
     -   Unterstützung für die Verarbeitung von geschachtelten Typen beim Festlegen von Haltepunkten hinzugefügt, um Warnungen mit Compilerkonstrukten zu verhindern.
-    
+
 -   **Integration:**
 
     -   Unterstützung für TextMate-Grammatiken für Shaders wurde hinzugefügt (die C++-Workload wird nicht länger für die Codeeinfärbung für Shader benötigt).
-    
+
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 -   **Projektgenerierung:**
@@ -137,15 +137,15 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 -   **Debuggen:**
 
     -   Unterstützung für orchestriertes Debuggen wurde hinzugefügt (Debuggen von mehreren Playern/Editors in derselben Visual Studio-Sitzung).
-    
+
     -   Unterstützung für das Debuggen von Android USB-Player wurde hinzugefügt.
-    
+
     -   Unterstützung für das Debuggen von UWP/IL2CPP-Player wurde hinzugefügt.
 
 -   **Auswertung:**
 
     -   Unterstützung für hexadezimale-Spezifizierer wurden hinzugefügt.
-    
+
     -   Evaluierung des Überwachungsfensters wurde verbessert
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
@@ -841,9 +841,9 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
--   Korrektur bei der Behandlung von Visual Studio-Themen. Zuvor konnten Dialogfelder bei schwarzen Designs leer erscheinen (Verbindungsprobleme [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) und [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Korrektur bei der Behandlung von Visual Studio-Themen. Zuvor konnten Dialogfelder bei schwarzen Designs leer erscheinen.
 
--   Korrektur des Einfrierens von Unity beim Verbinden des Debuggers, während Unity die Neukompilierung durchführt (Verbindungsprobleme [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) und [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Korrektur des Einfrierens von Unity beim Verbinden des Debuggers, während Unity die Neukompilierung durchführt.
 
 -   Korrektur von Haltepunkten beim Debuggen von Remote-Editoren oder -Playern, die auf einem anderen System kompiliert wurden.
 
@@ -853,7 +853,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur der Verarbeitung des Variablenbereichs im Debugger zur Vermeidung von Livevariablen, die außerhalb des gültigen Bereichs liegen.
 
--   Korrektur des Nachschlagens statischer Member in der Ausdrucksauswertung des Debuggers (Verbindungsproblem [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Korrektur des Nachschlagens statischer Member in der Ausdrucksauswertung des Debuggers.
 
 -   Korrektur der Anzeige von Typen in der Ausdrucksauswertung des Debuggers dahingehend, dass statische Fehler und Eigenschaften angezeigt werden.
 

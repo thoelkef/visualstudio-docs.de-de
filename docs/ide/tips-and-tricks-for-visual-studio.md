@@ -1,6 +1,6 @@
 ---
 title: Tastenkombinationen für Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321280"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348942"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -22,6 +22,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 > [!TIP]
 > Die hier aufgelisteten Tastenkombinationen sind nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Standardtastenkombinationen in Visual Studio für Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Fensterverwaltung
 
@@ -73,6 +76,11 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 |Befehl|Verknüpfung|Verfügbarkeit der Versionen|
 |-|-|-|
+|Gehe zu allen|**STRG**+**T**|
+|Zu zuletzt verwendeten Dateien wechseln|**STRG**+**T**,**R**|
+|Mehrere Einfügemarken mit mehreren Caretzeichen|**STRG**+**ALT**+**Klick**|
+|Entsprechende Auswahl mit mehreren Caretzeichen hinzufügen|**UMSCHALT**+**ALT**+**EINFG**|
+|Dokument formatieren|**STRG**+**K**,**D**|Visual Studio 2017 Version 15.8|
 |IntelliSense-Vorschlagsmodus|**STRG**+**Alt**+**Leerraum** (Umschalten)||
 |Anzeigen von IntelliSense erzwingen|**STRG**+**J**||
 |Schnelle Aktionen|**STRG**+**.**||
@@ -95,6 +103,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Zwischen mehreren Fenstern der "Peek-Definition" navigieren|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**||
 |Navigieren zwischen mehreren Peek-Ergebnissen|**F8** und **UMSCHALT**+**F8**||
 |Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|**UMSCHALT**+**ESC**||
+|Zum einschließenden Block wechseln|**STRG**+**ALT**+**PFEIL-NACH-OBEN**|
+|Zum nächsten/vorherigen Problem wechseln|**ALT**+**BILD-AUF**/**BILD-AB**|
+|Kontextbezogenes Navigationsmenü|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Symbolleisten
 
@@ -128,4 +139,5 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tastenkombinationen (Azure DevOps Services und TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Blog mit Tipps und Tricks zu Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Standardtastenkombinationen in Visual Studio für Mac](/visualstudio/mac/keyboard-shortcuts)

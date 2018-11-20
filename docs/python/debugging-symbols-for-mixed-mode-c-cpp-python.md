@@ -1,7 +1,7 @@
 ---
 title: Symbole für den gemischten Python-C++-Debugmodus
 description: Bereitstellung der Funktion zum Laden von Symbolen für vollständiges Debuggen von C++ und Python im gemischten Modus in Visual Studio.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e551ee503fc0083c81db44327c50965ea45d0c21
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 1b5b50d08876b9b106a836c0302a99dc7efe5204
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411026"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607639"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
 
@@ -77,6 +77,9 @@ Wenn Sie Symbole separat heruntergeladen haben, führen Sie folgende Schritte au
 | 3.3.2 | [32 Bit](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 Bit](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32 Bit](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 Bit](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32 Bit](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 Bit](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.15 | [32 Bit](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
+| 2.7.14 | [32 Bit](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
+| 2.7.13 | [32 Bit](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
 | 2.7.12 | [32 Bit](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32 Bit](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32 Bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |

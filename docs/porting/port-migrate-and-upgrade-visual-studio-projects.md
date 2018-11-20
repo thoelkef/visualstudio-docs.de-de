@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325028"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349542"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Projektmigration und Upgradereferenz für Visual Studio 2017
 
@@ -68,7 +68,7 @@ Wenn ein Projekt oder ein Dateityp nicht aufgelistet wird, das vorhanden sein so
 | Visual Studio-Erweiterbarkeit/VSIX | Projekte, bei denen das Element „MinimumVersion“ auf „14.0“ oder weniger festgelegt ist, werden auf den Wert „15.0“ aktualisiert. Dadurch wird verhindert, dass das Projekt in früheren Versionen von Visual Studio verwendet wird. Damit Sie ein Projekt in früheren Versionen öffnen können, legen Sie MinimumVersion auf `$(VisualStudioVersion)` fest. Weitere Informationen finden Sie unter [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Sie können Microsoft Test Manager oder Visual Studio 2010 SP1 und höher verwenden, Umgebungen zu öffnen, die in einer dieser Versionen erstellt wurden. Allerdings muss die Version für Visual Studio 2010 SP1 von Microsoft Test Manager mit der Version von Team Foundation Server übereinstimmen, bevor Sie Umgebungen erstellen können. |
 | Visual Studio-Tools für Apache Cordova | Projekte können in Visual Studio 2017 geöffnet werden, sind aber nicht abwärtskompatibel. Beim Öffnen eines Projekts von Visual Studio 2015 werden Sie dazu aufgefordert, Änderungen an Ihrem Projekt zuzulassen. Durch diese Änderung wird das Projekt dafür aktualisiert, Toolsets statt einer `taco.json`-Datei zu verwenden, um die Versionskontrolle der Cordova-Bibliothek, die Plattformen und Plug-Ins sowie die Abhängigkeiten von Knoten und npm zu verwalten. Weitere Informationen finden Sie im [Migrationshandbuch](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
-| Webbereitstellung (WDPROJ) | Die Unterstützung für Webbereitstellungsprojekte wurde mit Einführung der Unterstützung für Veröffentlichungsprofile in Visual Studio 2012 eingestellt. Da in Visual Studio 2017 kein Äquivalent zur Verfügung steht, ist kein automatischer Migrationspfad für diese Projekte vorhanden. Öffnen Sie die WDPROJ-Datei stattdessen in einem Text-Editor, und nehmen Sie alle Anpassungen an der Veröffentlichungsprofildatei (PUBXML) durch Kopieren und Einfügen vor, wie beschrieben in [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Siehe auch [Plans regarding Website projects and Web Deployment Projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects) (Pläne in Bezug auf Website- und Webbereitstellungsprojekte, MSDN-Blog). |
+| Webbereitstellung (WDPROJ) | Die Unterstützung für Webbereitstellungsprojekte wurde mit Einführung der Unterstützung für Veröffentlichungsprofile in Visual Studio 2012 eingestellt. Da in Visual Studio 2017 kein Äquivalent zur Verfügung steht, ist kein automatischer Migrationspfad für diese Projekte vorhanden. Öffnen Sie die WDPROJ-Datei stattdessen in einem Text-Editor, und nehmen Sie alle Anpassungen an der Veröffentlichungsprofildatei (PUBXML) durch Kopieren und Einfügen vor, wie beschrieben in [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Siehe auch [Pläne in Bezug auf Website- und Webbereitstellungsprojekte](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation und Windows Workflow Foundation | Sie können dieses Projekt in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 und Visual Studio 2012 öffnen. |
 | Windows Presentation Foundation | Sie können dieses Projekt in Visual Studio 2013, Visual Studio 2012 und Visual Studio 2010 SP1 öffnen. |
 | Windows Store/Phone-Apps | Projekte für Windows Store 8.1 und 8.0 sowie für Windows Phone 8.1 und 8.0 werden in Visual Studio 2017 nicht unterstützt. Um diese Apps zu verwalten, verwenden Sie weiterhin Visual Studio 2015. Zum Verwalten von Windows Phone 7.x-Projekten verwenden Sie Visual Studio 2012. |

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911316"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221034"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -355,15 +355,15 @@ if (performance && performance.mark) {
   
 -   Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Zum Beispiel:  
   
-    -   Die falsche Verwendung der Funktion [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
+    -   Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) kann dieses Problem verursachen.  
   
-    -   Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
+    -   Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
   
     -   Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
--   Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
+-   Sehen Sie sich den letzten Teil [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   
--   Lesen Sie sich [Managing memory in UWP apps (Verwalten von Speicher in UWP-Apps)](http://msdn.microsoft.com/magazine/jj651575.aspx) durch.  
+-   Lesen Sie sich [Managing memory in UWP apps (Verwalten von Speicher in UWP-Apps)](https://msdn.microsoft.com/magazine/jj651575.aspx) durch.  
   
 -   Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:  
   

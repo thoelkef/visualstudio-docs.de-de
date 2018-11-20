@@ -1,9 +1,9 @@
 ---
-title: Der Codemetrikergebnisse Fenster in Visual Studio
+title: Codemetrikfenster
 ms.date: 12/12/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -15,40 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 6aa1de7b3c4a029038072e84bea1918ea33031db
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321254"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967167"
 ---
-# <a name="using-the-code-metrics-results-window"></a>Verwenden des Fensters Codemetrikergebnisse
+# <a name="use-the-code-metrics-results-window"></a>Verwenden Sie das Fenster Codemetrikergebnisse
 
 Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Datenwerten der Codemetrik, finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
 
-## <a name="displaying-code-metrics-results"></a>Anzeigen von Codemetrikergebnissen
+## <a name="display-code-metrics-results"></a>Anzeigen von Codemetrikergebnissen
 
 Die **Codemetrikergebnisse** Fenster wird automatisch beim Generieren von Codemetrikergebnissen angezeigt. Sie können auch das Fenster jederzeit anzeigen.
 
-### <a name="to-display-the-code-metrics-results-window"></a>Um das Fenster Codemetrikergebnisse anzuzeigen
+Sie können das Codemetrikergebnisse-Fenster, das mithilfe einer der Sequenzen folgenden Menü anzeigen:
 
 - Auf der **analysieren** Menü wählen **Windows** > **Codemetrikergebnisse**.
 
-   \- oder –
-
 - Auf der **Ansicht** Menü wählen **Other Windows** > **Codemetrikergebnisse**.
 
-Die **Codemetrikergebnisse** Fenster wird angezeigt, auch wenn es sich um keine Ergebnisse enthält.
+Die **Codemetrikergebnisse** Fenster geöffnet wird, auch wenn es sich um keine Ergebnisse enthält.
 
 ### <a name="to-view-code-metrics-details"></a>Anzeigen von Details von basisanalysemetriken
 
 Wenn Codemetrikergebnisse generiert wurden, erweitern Sie die Struktur in der **Hierarchie** Spalte.
 
-## <a name="filtering-code-metrics-results"></a>Filtern von Codemetrikergebnissen
+## <a name="filter-code-metrics-results"></a>Filtern von Codemetrikergebnissen
 
 Sie können die Ergebnisse, die in angezeigt werden, Filtern die **Codemetrikergebnisse** Fenster mithilfe der Symbolleiste oben. Beispielsweise empfiehlt es sich um nur die Ergebnisse anzuzeigen, die einen Wartbarkeitsindex unter 65 haben.
 
-Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Filter definiert wird, wird es am Ende der Liste zusammen mit einem Einzug hinzugefügt. Die Liste kann die letzten zehn Filter enthalten, die definiert wurden.
+Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Filter definiert wird, wird es am Ende der Liste zusammen mit einem Einzug hinzugefügt. Die Liste kann die letzten 10 Filter enthalten, die definiert wurden.
 
 ### <a name="to-filter-the-code-metrics-results"></a>Zum Filtern der Codemetrikergebnisse
 
@@ -62,45 +60,29 @@ Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Fi
 
 5.  Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
 
-## <a name="adding-removing-and-rearranging-data-columns"></a>Hinzufügen, entfernen und Neuanordnen von Spalten
+## <a name="add-remove-and-rearrange-data-columns"></a>Hinzufügen, entfernen und Neuanordnen von Datenspalten
 
 Sie können hinzufügen oder entfernen führt die Spalten aus der **Codemetrikergebnisse** Fenster. Darüber hinaus können Sie Ergebnisspalten neu anordnen, damit sie in der Reihenfolge angezeigt werden, die Sie möchten.
 
-### <a name="to-remove-a-column"></a>Eine Spalte entfernen
+### <a name="add-or-remove-a-column"></a>Hinzufügen oder Entfernen einer Spalte
+
+1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche oder mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+
+1. In der **Spalten hinzufügen/entfernen** Dialogfeld aktivieren oder deaktivieren das Kontrollkästchen für die Spalte, die Sie verwenden möchten, hinzufügen oder entfernen, und wählen Sie dann **OK**.
+
+### <a name="rearrange-columns"></a>Neuanordnen von Spalten
 
 1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
 
-     \- oder mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+1. In der **Spalten hinzufügen/entfernen** Dialogfeld wählen die Spalte, die Sie verschieben möchten und wählen Sie dann entweder auf den Pfeil nach oben oder auf den Pfeil nach unten.
 
-1. In der **Spalten hinzufügen/entfernen** Dialogfeld deaktivieren das Kontrollkästchen für die Spalte, die Sie entfernen möchten und klicken Sie dann auf **OK**.
+1. Wenn die Spalte an der gewünschten Position befindet, wählen Sie **OK**.
 
-### <a name="to-add-a-previously-removed-column"></a>Hinzufügen eine zuvor entfernte Spalte
-
-1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
-
-     \- oder –
-
-     Mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
-
-1. In der **Spalten hinzufügen/entfernen** Dialogfeld Feld, das Kontrollkästchen für die Spalte, die Sie hinzufügen möchten und klicken Sie dann auf **OK**.
-
-### <a name="to-rearrange-columns"></a>Um Spalten neu anzuordnen.
-
-1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
-
-     \- oder –
-
-     Mit der rechten Maustaste in eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
-
-1. In der **Spalten hinzufügen/entfernen** Dialogfeld wählen die Spalte, die Sie verschieben möchten und klicken Sie dann auf, entweder auf den Pfeil nach oben oder auf den Pfeil nach unten.
-
-1. Wenn die Spalte an der gewünschten Position befindet, klicken Sie auf **OK**.
-
-## <a name="copying-data-to-the-clipboard-or-excel"></a>Kopieren von Daten in die Zwischenablage oder Excel
+## <a name="copy-data-to-the-clipboard-or-excel"></a>Kopieren von Daten in die Zwischenablage oder Excel
 
 Sie können auswählen, und eine ausgewählte Zeile von Codemetrikdaten werden in die Zwischenablage kopieren, als eine Zeichenfolge, die eine Zeile für den Namen und den Wert der einzelnen Datenspalten enthält. Sie können auch klicken **Auswahl in Microsoft Excel öffnen** aller der Codemetrikergebnisse in eine Excel-Kalkulationstabelle exportieren.
 
-## <a name="creating-a-work-item-based-on-code-metric-results"></a>Erstellen eines Arbeitselements anhand von Codemetrikergebnissen
+## <a name="create-a-work-item-based-on-code-metric-results"></a>Erstellen einer Arbeitsaufgabe anhand von Codemetrikergebnissen
 
 Können Sie erstellen eine [Azure Boards](/azure/devops/boards/index?view=vsts) führt zu Arbeitselement auf der Grundlage der **Codemetrikergebnisse** Fenster. Wenn das Arbeitselement erstellt wird, fügt Visual Studio automatisch einen Titel in der **Titel** Feld und die Codemetrikdaten werden unter der **Verlauf** Registerkarte.
 

@@ -1,56 +1,65 @@
 ---
-title: Ändern der Installationspfade in Visual Studio 2017
+title: Auswählen der Installationspfade in Visual Studio 2017
 description: Erfahren Sie, wie Sie den Speicherbedarf für die Installation auf dem Systemlaufwerk reduzieren können, indem Sie den Downloadcache, die freigegebenen Komponenten, die SDKs und die Tools auf verschiedene Laufwerke verteilen.
-ms.date: 05/07/2018
+ms.date: 11/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
+- select an installation location for Visual Studio files
 - move installation files to different drives
+- use the D drive
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 887ebca8645ab30d6d284433baf58451ab10b80c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869378"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295032"
 ---
-# <a name="change-the-installation-locations-in-visual-studio-2017"></a>Ändern der Installationspfade in Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Auswählen der Installationspfade in Visual Studio 2017
 
-**Neu in 15.7:** Der Installationsspeicherbedarf auf dem Systemlaufwerk wurde reduziert, indem der Downloadcache, freigegebene Komponenten, einige SDKs und Tools auf unterschiedliche Datenträger verteilt wurden.
-
-Gehen Sie folgendermaßen vor:
-
-1. Klicken Sie auf die Registerkarte **Installationsoptionen**, wenn Sie Visual Studio installieren.
-
-   ![Visual Studio 2017: Ändern des Installationspfads](media/installation-options-by-location.png "Ändern des Installationspfads")
-
-   > [!IMPORTANT]
-   > Wenn Sie die Installation anhalten und später fortsetzen, fährt Visual Studio an der Stelle fort, an der diese unterbrochen wurde. Der Installationsvorgang führt also die übrigen Downloads und Installationen durch und beginnt nicht bei der vorherigen Anzahl.
-
-2. Übernehmen Sie im Abschnitt **Visual Studio-IDE** die Standardeinstellungen. Dadurch wird das Hauptprodukt mit den Dateien installiert, die für diese Version von Visual Studio spezifisch sind.
-
-   > [!IMPORTANT]
-   > Wenn es sich bei Ihrem Systemlaufwerk um einen SSD-Datenträger handelt, wird aus folgendem Grund empfohlen, den Standardpfad auf Ihrem Systemlaufwerk zu übernehmen: Wenn Sie mit Visual Studio entwickeln, werden viele Dateien gelesen und geschrieben, wodurch die E/A-Aktivitäten des Laufwerks erhöht werden.  Sie sollten daher ihr schnellstes Laufwerk auswählen, um diese Auslastung zu bewältigen.
-
-3. Wählen Sie im Abschnitt **Downloadcache** aus, ob Sie den Downloadcache beibehalten möchten, und aktivieren oder deaktivieren Sie das Kontrollkästchen **Keep download cache** (Downloadcache beibehalten) entsprechend. <br><br>Wenn Sie den Downloadcache nicht beibehalten möchten, wird der Speicherort nur vorübergehend verwendet. Diese Aktion wirkt sich ebenfalls nicht auf Dateien aus vorherigen Installationen aus oder löscht diese. (Wenn Sie alle Installationspakete löschen möchten, müssen Sie die vorherigen Installationen separat bearbeiten.)
-
-4. Geben Sie im Abschnitt **Downloadcache** das Laufwerk an, auf dem die Installationsdateien und Manifeste gespeichert werden sollen. <br><br>Wenn Sie beispielsweise die Workload „Desktopentwicklung mit C++“ auswählen, ist temporär ein Speicherplatz von 1,58 GB auf Ihrem Systemlaufwerk erforderlich. Dieser wird nach Abschluss der Installation freigegeben.
+**Neues in 15.7:** Sie können den Installationsspeicherbedarf von Visual Studio auf Ihrem Systemlaufwerk reduzieren, indem Sie den Speicherort für einige Dateien ändern. Genauer gesagt können Sie verschiedene Speicherorte für den Downloadcache, für freigegebene Komponenten, SDKs und Tools verwenden.
 
    > [!NOTE]
-   > Die Dateien werden zunächst in einen temporären Ordner auf Ihrem Systemlaufwerk heruntergeladen und später gelöscht, nachdem Visual Studio diese überprüft und in den Ordner für den Downloadcache verschoben hat. Wenn Sie den Downloadcache auf einem anderen Laufwerk beibehalten möchten, benötigt Visual Studio dennoch den Speicherplatz, der der Größe des Downloadcaches auf Ihrem Systemlaufwerk entspricht.
-   > [!IMPORTANT]
-   > Der Speicherort wird bei der ersten Installation festgelegt und kann im Nachhinein nicht über die Benutzeroberfläche des Installers geändert werden. Sie müssen [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md) verwenden, um den Downloadcache zu verschieben.
+   > Es gibt einige Tools und SDKs, für die andere Regeln dafür gelten, an welchem Speicherort sie installiert werden können. Diese Tools und SDKs werden auch auf Ihrem Systemlaufwerk installiert, wenn Sie einen anderen Speicherort auswählen.
 
-5. Geben Sie im Abschnitt **Freigegebene Komponenten, Tools und SDKs** das Laufwerk an, auf dem Sie Dateien speichern möchten, die von parallelen Installationen von Visual Studio freigegeben werden. SDKs und Tools, durch die der Visual Studio-Installer den Installationspfad ändern kann, werden ebenfalls in diesem Verzeichnis gespeichert.
+Sind Sie bereit? Gehen Sie folgendermaßen vor:
 
-   > [!NOTE]
-   > Es gibt einige Tools und SDKs, für die andere Regeln dafür gelten, an welchem Speicherort sie installiert werden können. Diese Tools und SDKs werden auf Ihrem Systemlaufwerk installiert, auch wenn Sie einen anderen Speicherort auswählen.
+1. Klicken Sie beim Installieren von Visual Studio auf die Registerkarte **Installationspfade**.
+
+   ![Visual Studio 2017: Auswählen des Installationspfads](media/vs-installation-locations.png "Auswählen des Installationspfads")
+
+1. Übernehmen Sie im Abschnitt **Visual Studio-IDE** die Standardeinstellungen. Visual Studio installiert das Hauptprodukt sowie die Dateien, die in der spezifischen Version von Visual Studio enthalten sind.
+
+   ![Visual Studio-IDE-Abschnitt der Registerkarte „Installationspfade“](media/vs-installation-locations-ide.png "Akzeptieren des Standardpfads für den Abschnitt „Visual Studio-IDE“ der Registerkarte „Installationspfade“")
+
+   > [!TIP]
+   > Wenn es sich bei Ihrem Systemlaufwerk um ein SSD (Solid State Drive) handelt, wird empfohlen, dass Sie den Standardpfad auf Ihrem Systemlaufwerk akzeptieren. Begründung: Bei der Entwicklung mit Visual Studio werden mehrere Dateien gelesen und in diese geschrieben, wodurch die E/A-Aktivität des Datenträgers erhöht wird. Sie sollten daher ihr schnellstes Laufwerk auswählen, um diese Auslastung zu bewältigen.
+
+1. Wählen Sie im Abschnitt **Downloadcache** aus, ob der Downloadcache beibehalten werden soll, und wählen Sie dann aus, wo dessen Dateien gespeichert werden sollen.
+
+     ![Abschnitt „Downloadcache“ der Registerkarte „Installationspfade“](media/vs-installation-locations-cache.png "Auswählen, ob der Downloadcache nach der Installation beibehalten werden soll, und Festlegen des Laufwerks, auf dem Dateien gespeichert werden sollen")
+
+    1. Aktivieren oder deaktivieren Sie die Option **Downloadcache nach der Installation beibehalten**.
+
+       Wenn Sie den Downloadcache nicht beibehalten möchten, wird der Speicherort nur vorübergehend verwendet. Diese Aktion wirkt sich nicht auf Dateien aus vorherigen Installationen aus oder löscht diese.
+
+    1. Legen Sie das Laufwerk fest, auf dem Installationsdateien und Manifeste aus dem Downloadcache gespeichert werden sollen.
+
+        Wenn Sie beispielsweise die Workload „Desktopentwicklung mit C++“ auswählen, ist temporär ein Speicherplatz von 1,58 GB auf Ihrem Systemlaufwerk erforderlich. Dieser wird nach Abschluss der Installation freigegeben.
+
+       > [!IMPORTANT]
+       > Dieser Speicherort wird bei der ersten Installation festgelegt und kann im Nachhinein nicht über die Benutzeroberfläche des Installers geändert werden. Sie müssen [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md) verwenden, um den Downloadcache zu verschieben.
+
+1. Geben Sie im Abschnitt **Freigegebene Komponenten, Tools und SDKs** das Laufwerk an, auf dem Sie Dateien speichern möchten, die von parallelen Installationen von Visual Studio freigegeben werden. SDKs und Tools werden ebenfalls in diesem Verzeichnis gespeichert.
+
+   ![Abschnitt „Freigegebene Komponenten, Tools und SDKs“ der Registerkarte „Installationspfade“](media/vs-installation-locations-shared.png "Festlegen des Speicherorts, in dem freigegebene Komponenten, Tools und SDKs gespeichert werden sollen")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

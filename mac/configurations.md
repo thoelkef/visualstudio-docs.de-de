@@ -5,27 +5,26 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224455"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296176"
 ---
 # <a name="understanding-build-configurations"></a>Grundlagen der Buildkonfiguration
 
-## <a name="project-build-configurations"></a>Projektbuildkonfigurationen 
+## <a name="project-build-configurations"></a>Projektbuildkonfigurationen
 
 Projekte haben tendenziell mehrere Konfigurationen. Wenn Sie zwischen diesen wechseln, erhalten Sie zur Buildzeit unterschiedliche Ausgaben. Eine Debugkonfiguration gibt z.B. Debuggingsymbole aus, mit denen der Debugger Funktionsnamen, Parameter oder Variablen aus der Stapelüberwachung einer abgestürzten Anwendung auflösen kann. Diese zusätzlichen Informationen sind zwar während der Entwicklung nützlich, blähen die Datei jedoch auf und sind für die Verteilung nicht ideal.
 
-Jede Plattform hat spezifische Konfigurationen für ihre Builds. 
+Jede Plattform hat spezifische Konfigurationen für ihre Builds.
 
 ## <a name="solution-configurations"></a>Projektmappenkonfigurationen
 
-Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte **Konfigurationszuordnungen** unter **Build > Konfigurationen** können Sie eine Zielkonfiguration für jedes Projektmappenelement zuweisen, wie in der folgenden Abbildung dargestellt:
+Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte  **Konfigurationszuordnungen**  unter  **Build > Konfigurationen**  können Sie jedem Projektmappenelement eine Zielkonfiguration zuweisen, wie in der folgenden Abbildung dargestellt:
 
-
- ![Optionen Konfigurationszuordnung](media/projects-and-solutions-image3.png)
+![Optionen Konfigurationszuordnung](media/projects-and-solutions-image3.png)
 
 Weitere Informationen über Konfigurationen finden Sie in dem Video zum [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) von James Montemagno.
 
@@ -35,14 +34,14 @@ In vorherigen Versionen von Xamarin Studio konnten Sie ein Projekt als **Startpr
 
 Statt ein Startprojekt festzulegen, können Sie in Visual Studio für Mac eine _Laufzeitkonfiguration_ festlegen. Die Laufzeitkonfigurationen werden in einer Dropdownliste in der Symbolleiste neben dem Buildkonfigurationsselektor aufgelistet, wie unten veranschaulicht:
 
- ![Dropdownmenü Laufzeitkonfiguration](media/projects-and-solutions-image8.png)
+![Dropdownmenü Laufzeitkonfiguration](media/projects-and-solutions-image8.png)
 
-Eine Laufzeitkonfiguration ist ein Satz von Ausführungsoptionen mit einem Namen und mehreren Konfigurationen, die in einem Projekt zu verschiedenen Zwecken definiert sind. Lauftzeitkonfigurationen werden auf Ebene des Projekts definiert. Für jedes ausführbare Projekt wird automatisch ein Standard erstellt – Sie können aber so viele wie nötig hinzufügen. Bestimmte Projekttypen generieren automatisch zusätzliche Laufzeitkonfigurationen. watchOS-Projekte können z.B. _Übersichts- und Benachrichtigungskonfigurationen_ generieren. 
- 
+Eine Laufzeitkonfiguration ist ein Satz von Ausführungsoptionen mit einem Namen und mehreren Konfigurationen, die in einem Projekt zu verschiedenen Zwecken definiert sind. Lauftzeitkonfigurationen werden auf Ebene des Projekts definiert. Für jedes ausführbare Projekt wird automatisch ein Standard erstellt – Sie können aber so viele wie nötig hinzufügen. Bestimmte Projekttypen generieren automatisch zusätzliche Laufzeitkonfigurationen. WatchOS-Projekte können z.B.  _Übersichts- und Benachrichtigungskonfigurationen_ generieren.
+
 Konfigurationen können für andere Entwickler freigegeben (in diesem Fall werden die Konfigurationen in der CSPROJ-Datei gespeichert) oder lokal gespeichert werden (in diesem Fall werden Sie in einer USER-Datei gespeichert).
 
 ### <a name="android-run-configurations"></a>Android-Laufzeitkonfigurationen
- 
+
 Mit Laufzeitkonfigurationen für Android-Projekte können Sie festlegen, welcher Empfänger von Aktivitäten, Diensten und Übertragungen gestartet werden soll, wenn Sie ein Projekt ausführen oder debuggen. Sie können beabsichtigte zusätzliche Daten übergeben und beabsichtigte Flags festlegen, um Ihre Komponenten unter anderen Startbedingungen zu testen.
 
 Für Aktivitäten, die nicht `MainLauncher` sind, muss `Exported=true` dem Aktivitätsattribut zum Debuggen auf einem physischen Gerät hinzugefügt werden, oder der Filter „Beabsichtigt“ muss definiert sein.
@@ -67,3 +66,7 @@ Die folgende Liste enthält Beispiele für Daten, die in Laufzeitkonfigurationen
 * WatchKit-Projekt
     * Modus (Übersicht, Benachrichtigung)
     * Benachrichtigungsplayload
+
+## <a name="see-also"></a>Siehe auch
+
+- [Grundlagen der Buildkonfiguration (Visual Studio unter Windows)](/visualstudio/ide/understanding-build-configurations)

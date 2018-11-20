@@ -29,22 +29,22 @@ helpviewer_keywords:
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724246"
 ---
 # <a name="memory-windows"></a>Fenster "Arbeitsspeicher"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der von der Anwendung verwendet wird. Die **Überwachen** Fenster **Schnellüberwachung** Dialogfeld **"Auto"** Fenster und **"lokal"** Fenster zeigen Sie den Inhalt von Variablen, die an bestimmten Orten im Arbeitsspeicher gespeichert. Aber die **Arbeitsspeicher** Fenster erfahren Sie, das umfangreiche Bild. Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen (beispielsweise Puffer oder umfangreiche Zeichenfolgen), die in den anderen Fenstern nicht gut dargestellt werden. Allerdings die **Arbeitsspeicher** Fenster ist nicht auf die Anzeige von Daten beschränkt. Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
   
- Die **Arbeitsspeicher** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen**Dialogfeld**Debuggen** Knoten. Die **Arbeitsspeicher** Fenster ist nicht verfügbar für Skriptsprachen oder SQL, die Sprachen das Speicherkonzept nicht erkennen.  
+ Die **Arbeitsspeicher** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld**Debuggen** Knoten. Die **Arbeitsspeicher** Fenster ist nicht verfügbar für Skriptsprachen oder SQL, die Sprachen das Speicherkonzept nicht erkennen.  
   
 ## <a name="opening-a-memory-window"></a>Öffnen eines Arbeitsspeicherfensters  
   

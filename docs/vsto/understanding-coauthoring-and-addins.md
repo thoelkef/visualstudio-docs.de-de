@@ -1,5 +1,5 @@
 ---
-title: Verstehen der Mitverfasser und Add-ins
+title: Grundlegendes zu Mitverfassern und -Add-ins
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 39098a56b3ff17b1e491c15f3b6119978a28a2ca
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768169"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671117"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Verstehen der Mitverfasser und Add-ins
+# <a name="understand-coauthoring-and-add-ins"></a>Grundlegendes zu Mitverfassern und -Add-ins
 
-Mitverfasser ist ein Feature von Excel für Windows-Desktop, die Sie so bearbeiten Sie eine Arbeitsmappe ein, die in der Cloud (d. h., OneDrive, OneDrive for Business oder SharePoint Online) gleichzeitig mit anderen Benutzern ermöglicht. Durch das Hinzufügen dieser Funktion ist, müssen Sie möglicherweise zur Projektmappe Excel Anpassungen vornehmen, um sicherzustellen, dass sie reibungslos funktioniert, sogar, wenn Benutzer Mitverfasser sind. Finden Sie unter [zu Mitverfasser in Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
+Diagrammerstellung ist ein Feature von Excel für Windows Desktop, die Sie so bearbeiten Sie eine Arbeitsmappe, die in der Cloud (d. h., OneDrive, OneDrive for Business oder SharePoint Online) gehostet gleichzeitig mit anderen Benutzern zulässt. Durch dieses Feature hinzufügen müssen Sie Anpassungen an der Excel-Projektmappe vornehmen, um sicherzustellen, dass sie reibungslos funktioniert, selbst wenn der Benutzer als Koautor an sind. Finden Sie unter [zu Mitverfassern in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Hinweis: Für Windows Desktop Excel Mitverfasser 2017 eingeführt wurde und derzeit für Office 365-Abonnenten verfügbar ist. Benutzer, die eine dauerhafte Lizenz auf Office 2016 oder früher gekauft werden derzeit keinen Zugriff auf die Mitverfasserfunktion. (Excel Online Excel für Android, Excel für iOS und Excel Mobile im Windows Store auch unterstützen Mitverfasser).
+Hinweis: Für Windows Desktop Excel Diagrammerstellung wurde in 2017 eingeführt und ist derzeit für Office 365-Abonnenten verfügbar. Benutzer, die eine unbefristete Lizenz für Office 2016 oder früher gekauft haben müssen das Zugriff auf die Mitverfasserfunktion zurzeit keine. (Excel Online Excel für Android, Excel für iOS und Excel Mobile in der Windows Store auch unterstützt als Koautor an).
 
 ## <a name="see-also"></a>Siehe auch
 [Excel-Projektmappen](./excel-solutions.md)

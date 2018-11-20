@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175734"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220481"
 ---
 # <a name="options-text-editor-all-languages"></a>Optionen, Text-Editor, Alle Sprachen
 Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern. Diese Einstellungen gelten auch für andere Editoren, die auf dem Code-Editor basieren, z.B. die Quellansicht des HTML-Designers. Um das Dialogfeld zu öffnen, klicken Sie auf **Optionen** im Menü **Tools**. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und klicken Sie dann auf **Allgemein**.
@@ -42,24 +42,24 @@ Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern
 
 
 ## <a name="statement-completion"></a>Anweisungsvervollständigung
- Member automatisch auflisten
+ **Member automatisch auflisten**
 
  Wenn aktiviert, werden Popuplisten verfügbarer Member, Eigenschaften, Werte oder Methoden von IntelliSense angezeigt, während Sie eine Eingabe machen. Wählen Sie aus der Popupliste ein Element aus, das in den Code eingefügt werden soll. Wenn Sie diese Option auswählen, wird die Option **Erweiterte Member ausblenden** aktiviert
 
- Erweiterte Member ausblenden
+ **Erweiterte Member ausblenden**
 
  Wenn aktiviert, werden die Popuplisten zur Anweisungsvervollständigung verkürzt, da nur die am häufigsten verwendeten Elemente angezeigt werden. Andere Elemente werden aus der Liste herausgefiltert.
 
- Parameterinformationen
+ **Parameterinformationen**
 
  Wenn diese Option aktiviert ist, wird die vollständige Syntax der aktuellen Deklaration oder Prozedur mit allen verfügbaren Parametern unter der Einfügemarke im Editor angezeigt. Der nächste Parameter, den Sie zuweisen können, ist fett formatiert.
 
 ## <a name="settings"></a>Einstellungen
- Virtuellen Bereich aktivieren
+ **Virtuellen Bereich aktivieren**
 
  Wenn dieses Option aktiviert ist und **Zeilenumbruch** deaktiviert wurde, können Sie mit der Maus im Code-Editor auf eine beliebige Stelle nach einem Zeilenende klicken und mit der Eingabe beginnen. Diese Funktion kann verwendet werden, um Kommentare immer an derselben Stelle neben dem Code einzufügen.
 
- Zeilenumbruch
+ **Zeilenumbruch**
 
  Wenn aktiviert, wird der Teil einer Zeile, der über den horizontal sichtbaren Bereich des Editors hinausgeht, automatisch in der nächsten Zeile angezeigt. Wenn Sie diese Option auswählen, wird die Option **Visuelle Symbole für Zeilenumbruch** anzeigen aktiviert.
 
@@ -67,7 +67,7 @@ Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern
 > Die Funktion **Virtueller Bereich** ist deaktiviert, wenn **Zeilenumbruch** aktiviert ist.
 
 
- Visuelle Symbole für Zeilenumbruch anzeigen
+ **Visuelle Glyphen für Zeilenumbruch anzeigen**
 
  Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein Indikator in Form eines Rückwärtspfeils angezeigt.
 
@@ -79,7 +79,23 @@ Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern
 > Diese zur Erinnerung dienenden Pfeile werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
 
 
- Befehle zum Ausschneiden oder Kopieren bei fehlender Auswahl auf leere Zeilen anwenden
+**Zeilennummern**
+
+ Wenn aktiviert, wird eine Zeilennummer neben jeder Codezeile angezeigt.
+
+> [!NOTE]
+> Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
+
+
+ **Einfaches Klicken für URLs aktivieren**
+
+ Wenn aktiviert, nimmt der Cursor die Form einer Hand an, wenn er im Editor über eine URL bewegt wird. Sie können auf die URL klicken, um die angegebene Seite im Webbrowser anzuzeigen.
+
+ **Navigationsleiste**
+
+ Wenn aktiviert, wird die **Navigationsleiste** am oberen Rand des Code-Editors angezeigt. Mit den Dropdownlisten **Objekte** und **Member** können Sie ein bestimmtes Objekt in Ihrem Code auswählen, seine Member auswählen und zur Deklaration des ausgewählten Members im Code-Editor navigieren.
+
+**Befehle zum Ausschneiden oder Kopieren bei fehlender Auswahl auf leere Zeilen anwenden**
 
  Diese Option legt das Verhalten des Editors fest, wenn Sie die Einfügemarke in einer leeren Zeile positionieren, keine Auswahl vornehmen und anschließend einen Kopier- oder Ausschneidevorgang ausführen.
 
@@ -91,24 +107,6 @@ Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den
 
 > [!TIP]
 > Zur Unterscheidung von Zeilen mit Einzug und Leerzeilen können Indikatoren für Leerzeichen, Tabulatoren und Zeilenenden angezeigt werden. Wählen Sie dazu im Menü **Bearbeiten** die Option **Erweitert** und anschließend **Leerstelle anzeigen** aus.
-
-
-## <a name="display"></a>Anzeige
- Zeilennummern
-
- Wenn aktiviert, wird eine Zeilennummer neben jeder Codezeile angezeigt.
-
-> [!NOTE]
-> Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
-
-
- Einfaches Klicken für URLs aktivieren
-
- Wenn aktiviert, nimmt der Cursor die Form einer Hand an, wenn er im Editor über eine URL bewegt wird. Sie können auf die URL klicken, um die angegebene Seite im Webbrowser anzuzeigen.
-
- Navigationsleiste
-
- Wenn aktiviert, wird die **Navigationsleiste** am oberen Rand des Code-Editors angezeigt. Mit den Dropdownlisten **Objekte** und **Member** können Sie ein bestimmtes Objekt in Ihrem Code auswählen, seine Member auswählen und zur Deklaration des ausgewählten Members im Code-Editor navigieren.
 
 ## <a name="see-also"></a>Siehe auch
 

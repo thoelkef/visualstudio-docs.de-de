@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Python-Suchpfaden
 description: Überblick über den Einsatz von Python-Suchpfaden in Visual Studio in Umgebungen und Projekten.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626747"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607900"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Verwenden von Python-Suchpfaden in Visual Studio
 
@@ -30,13 +30,19 @@ Die Umgebungsvariable für den Suchpfad wird von Visual Studio jedoch ignoriert,
 
 Visual Studio bietet daher eine Möglichkeit, Suchpfade direkt in Umgebungen und Projekten anzugeben. Suchpfade werden als Wert von `PYTHONPATH` (oder anderen entsprechenden Variablen) beim Debuggen oder Ausführen des Skripts in Visual Studio übergeben. Durch das Hinzufügen von Suchpfaden überprüft Visual Studio die Bibliotheken an diesen Speicherorten und erstellt ggf. entsprechende IntelliSense-Datenbanken für sie (Visual Studio 2017 Version 15.5 und früher; das Erstellen der Datenbank kann je nach Anzahl der Bibliotheken einige Zeit in Anspruch nehmen).
 
-Um einen Suchpfad hinzuzufügen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Element **Suchpfade**, wählen Sie **Ordner zu Suchpfad hinzufügen** aus, und wählen Sie den aufzunehmenden Ordner aus. Dieser Pfad wird für alle Umgebungen verwendet, die dem Projekt zugeordnet sind. (Möglicherweise werden Ihnen Fehlermeldungen angezeigt, wenn die Umgebung auf Python 3 basiert, und Sie versuchen, Python 2.7-Modulen einen Suchpfad hinzuzufügen.)
+Wenn Sie einen Suchpfad hinzufügen möchten, wechseln Sie zum **Projektmappen-Explorer**, erweitern Sie Ihren Projektknoten, klicken Sie mit der rechten Maustaste auf **Suchpfade**, und wählen Sie **Add Folder to Search Path** (Ordner zu Suchpfad hinzufügen) aus:
 
-Dateien mit der Erweiterung *.zip* oder *.egg* können ebenfalls als Suchpfade hinzugefügt werden. Wählen Sie dazu **ZIP-Archiv zu Suchpfad hinzufügen** aus. Wie bei Ordnern wird der Inhalt dieser Dateien geprüft und IntelliSense zur Verfügung gestellt.
+![Befehl zum Hinzufügen eines Ordners zum Suchpfad in Suchpfaden im Projektmappen-Explorer](media/search-paths-command.png)
 
-Wenn Sie regelmäßig die gleichen Suchpfade verwenden und der Inhalt nicht häufig geändert wird, kann es effizienter sein, ihn im Ordner „site-packages“ zu installieren. Der Suchpfad wird dann analysiert, in der IntelliSense-Datenbank gespeichert und immer der vorgesehenen Umgebung zugeordnet. So ist es nicht erforderlich, dass jedem Projekt ein Suchpfad hinzugefügt wird.
+Mit diesem Befehl wird ein Browser angezeigt, in dem Sie anschließend den einzuschließenden Ordner auswählen.
 
-### <a name="see-also"></a>Siehe auch
+Wenn Ihre Umgebungsvariable `PYTHONPATH` bereits Ihren bzw. Ihre gewünschten Ordner enthält, können Sie die Option **Add PYTHONPATH to Search Paths** (PYTHONPATH zu Suchpfaden hinzufügen) als praktische Verknüpfung verwenden.
+
+Sobald Ordner zu den Suchpfaden hinzugefügt wurden, verwendet Visual Studio diese Pfade für jede Umgebung, die dem Projekt zugeordnet ist. (Möglicherweise werden Ihnen Fehlermeldungen angezeigt, wenn die Umgebung auf Python 3 basiert, und Sie versuchen, Python 2.7-Modulen einen Suchpfad hinzuzufügen.)
+
+Dateien mit einer *ZIP*- oder *EGG*-Erweiterung können ebenfalls als Suchpfade hinzugefügt werden. Wählen Sie hierzu **Add ZIP Archive to Search Path** (ZIP-Archiv zu Suchpfad hinzufügen) aus. Wie bei Ordnern wird der Inhalt dieser Dateien geprüft und IntelliSense zur Verfügung gestellt.
+
+## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Python-Umgebungen in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)

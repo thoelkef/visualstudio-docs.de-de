@@ -16,12 +16,12 @@ ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fcb1922c567ff93bba44ed529e8b78388008bd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830625"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741548"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ CommandPlacement-Element kann die Schaltflächen, Gruppen und Menüs in mehr als
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich. Die Guid für den Befehlssatz, gemäß der [Symbols-Element](../extensibility/symbols-element.md).|  
-|ID|Erforderlich. Die Id der Menüs, eine Gruppe oder ein Befehl aus, um die Platzierung gemäß der `Symbols Element`.|  
+|id|Erforderlich. Die Id der Menüs, eine Gruppe oder ein Befehl aus, um die Platzierung gemäß der `Symbols Element`.|  
 |priority|Erforderlich. Bestimmt die visuelle Position des Elements in seinem übergeordneten Element.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

@@ -1,66 +1,45 @@
 ---
 title: Optionen, Text-Editor, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848526"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670779"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
-Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die **IntelliSense** -Seite, indem Sie **Tools**, **Optionen** in der Menüleiste wählen und anschließend **Text-Editor**, **JavaScript**, **IntelliSense**erweitern.
+Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die **IntelliSense**-Seite, indem Sie **Tools** > **Optionen** in der Menüleiste auswählen und anschließend **Text-Editor** > **JavaScript** > **IntelliSense** erweitern.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 Die Seite **IntelliSense** enthält folgende Abschnitte:
 
-## <a name="validation"></a>Validierung
- Sie können diese Optionen verwenden, um Einstellungen dafür festzulegen, wie der JavaScript-Editor Syntax im Dokument überprüft.
-
-## <a name="uielement-list"></a>UIElement-Liste
- **Syntaxfehler anzeigen**
-
- Wenn dieses Kontrollkästchen nicht aktiviert ist, werden im JavaScript-Editor keine Syntaxfehler gezeigt. Dies ist nützlich, wenn Sie mit Code arbeiten, der nicht Ihr eigener ist und in dem Sie nicht beabsichtigen, Syntaxfehler zu beheben.
-
- Wenn dieses Kontrollkästchen aktiviert ist, haben Sie die Möglichkeit, das Kontrollkästchen **Fehler als Warnung anzeigen** zu aktivieren.
-
- **Fehler als Warnungen anzeigen**
-
- Wenn dieses Kontrollkästchen aktiviert ist, werden JavaScript-Fehler als Warnungen und nicht in der Fehlerliste angezeigt.
-
- **Remoteverweise (z. B. http://) für Dateien im Projekt "Sonstige Dateien" herunterladen**
-
- Wenn dieses Kontrollkästchen aktiviert ist und Sie eine JavaScript-Datei haben, die nicht im Kontext eines Projekts geöffnet ist, lädt Visual Studio remote JavaScript-Dateien herunter, auf die in der Datei verwiesen wird mit dem Ziel, IntelliSense-Informationen bereitzustellen. Wenn diese Option aktiviert ist, werden Dateien heruntergeladen, wenn Sie diese als Verweis in der JavaScript-Datei eingeschlossen haben.
-
-> [!NOTE]
-> Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
-
-
 ## <a name="statement-completion"></a>Anweisungsvervollständigung
  Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.
 
-## <a name="uielement-list"></a>UIElement-Liste
- **Nur mit TAB- oder EINGABETASTE bestätigen**
+### <a name="uielement-list"></a>UIElement-Liste
+ **Nur mit TAB- oder EINGABETASTE Commit ausführen**
 
- Wenn dieses Kontrollkästchen aktiviert ist, erweitert der JavaScript-Code-Editor Anweisungen nur dann mit Elementen, die Sie in der Vervollständigungsliste ausgewählt haben, wenn Sie die Taste TAB oder die EINGABETASTE wählen. Wenn dieses Kontrollkästchen deaktiviert ist, können auch andere Zeichen, wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweiften Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
+ Wenn Sie dieses Kontrollkästchen aktivieren, erweitert der JavaScript-Code-Editor Anweisungen nur dann mit Elementen, die Sie in der Vervollständigungsliste ausgewählt haben, wenn Sie auf die **TAB-TASTE** oder die **EINGABETASTE** drücken. Wenn Sie dieses Kontrollkästchen deaktivieren, können auch andere Zeichen wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweifte Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
 
 ## <a name="references"></a>Verweise
  Sie können diese Optionen verwenden, um die Typen von IntelliSense-JS-Dateien anzugeben, die für verschiedene JavaScript-Projekttypen verfügbar sind. Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte bereitzustellen. Sie können diese Seite auch verwenden, um die Ladereihenfolge für Skripts festlegen, die zur Laufzeit geladen werden müssen, und um IntelliSense-Erweiterungsdateien hinzuzufügen.
 
-## <a name="uielement-list"></a>UIElement-Liste
+### <a name="uielement-list"></a>UIElement-Liste
  **Verweisgruppen**
 
  Diese Option gibt den Verweisgruppentyp an. Drei Verweisgruppen werden unterstützt:
@@ -86,6 +65,15 @@ Diese Option gibt die Reihenfolge an, in der Dateien in den Kontext des Sprachdi
 **Fügen Sie der Gruppe einen Verweis hinzu**
 
 Diese Option bietet die Möglichkeit, nach zusätzlichen IntelliSense-JS-Dateien zu suchen und solche Dateien hinzuzufügen.
+
+**Remoteverweise (z. B. http://) für Dateien im Projekt "Sonstige Dateien" herunterladen**
+
+Wenn dieses Kontrollkästchen aktiviert ist und Sie eine JavaScript-Datei außerhalb des Kontexts eines Projekts geöffnet haben, lädt Visual Studio remote JavaScript-Dateien herunter, auf die in der Datei verwiesen wird, um IntelliSense-Informationen bereitzustellen. Wenn diese Option ausgewählt ist, werden Dateien heruntergeladen, wenn Sie diese als Verweis in der JavaScript-Datei eingeschlossen haben.
+
+> [!NOTE]
+> Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
+
+
 
 ## <a name="see-also"></a>Siehe auch
 

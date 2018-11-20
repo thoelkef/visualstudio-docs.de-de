@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823501"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218898"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
   
 1. Öffnen Sie das Formular im **Windows Forms-Designer**.  
   
-2. Auf der **Daten** , wählen Sie im Menü**Abfrage hinzufügen**oder**Smart Tags für Daten**.  
+2. Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen** oder **Smart Tags für Daten**.  
   
    > [!NOTE]
-   >  Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement im Formular, zeigt die Sie auf Datenquelle die Parametrisierung hinzufügen. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.  
+   > Wenn **Abfrage hinzufügen** ist nicht verfügbar, auf die **Daten** Menü, wählen Sie ein Steuerelement im Formular, zeigt die Sie auf Datenquelle die Parametrisierung hinzufügen. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.  
   
 3. In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tablethat, Sie möchten, hinzufügen Parametrisierung.  
   
@@ -82,7 +82,7 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
   
 5. In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.  
   
-6. Wählen Sie**OK**.  
+6. Klicken Sie auf **OK**.  
   
     Ein Steuerelement für die Eingabe des Parameters und einen **Load** Schaltfläche hinzugefügt werden, auf das Formular in einem <xref:System.Windows.Forms.ToolStrip> Steuerelement.  
   
@@ -105,7 +105,7 @@ Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE
   
 1.  In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.  
   
-2.  In der **Eigenschaften** wählen Sie im Fenster**Parameter**. Drücken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.  
+2.  In der **Eigenschaften** wählen Sie im Fenster **Parameter**. Drücken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.  
   
 3.  Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.  
   

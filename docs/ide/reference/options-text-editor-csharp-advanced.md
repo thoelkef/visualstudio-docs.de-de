@@ -1,6 +1,6 @@
 ---
 title: Optionen, Text-Editor, C#, Erweitert
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670714"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -36,7 +36,7 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 
 - System-Direktiven beim Sortieren von Using-Direktiven an erster Stelle platzieren
 
-   Wenn ausgewählt, sortiert der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen und platziert die „System“namespaces ganz oben in der Liste.
+   Wenn er ausgewählt wurde, sortiert der Befehl **Remove and Sort Usings** (Using-Anweisungen entfernen und sortieren) im Kontextmenü die `using`-Anweisungen und platziert die „System“-Namespaces ganz oben in der Liste.
 
    Vor dem Sortieren:
 
@@ -89,9 +89,10 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using System.Linq;
    ```
    
-- Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen 
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen 
+- Using-Direktiven für Typen in NuGet-Paketen vorschlagen 
 
-   Bei Auswahl dieser Option ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
+   Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
 
    ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 - Beim Öffnen von Dateien in Gliederungsmodus wechseln
 
    Wenn diese Option aktiviert ist, wird die Codedatei automatisch gegliedert. Hierdurch werden reduzierbare Codeblöcke erstellt. Beim ersten Öffnen einer Datei werden #Region-Blöcke und inaktive Codeblöcke reduziert.
+
+- Zeilentrennzeichen zwischen Prozeduren anzeigen
+
+   Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
+
+   |Position in der VB-Quelldatei|Beispiel für die Linienposition|
+   |---------------------------------|------------------------------|
+   |Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
+   |Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
+   |Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
 
 ## <a name="editor-help"></a>Editor-Hilfe
 

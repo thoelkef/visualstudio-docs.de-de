@@ -17,12 +17,12 @@ ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d62edf5ce181779f4a5d607cdcf3908efe16ed3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61a82cf9df873073b8d08e8fe2ad4ef9b281659f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848812"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720540"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Gibt zurück, die GUIDs für alle der möglichen Debug-Engines (DE), die das Pro
 ## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumPossibleEngines(   
+HRESULT EnumPossibleEngines(   
    DWORD  celtBuffer,  
    GUID*  rgguidEngines,  
    DWORD* pceltEngines  
@@ -40,7 +40,7 @@ HRESULT EnumPossibleEngines(
 ```  
   
 ```csharp  
-int EnumPossibleEngines(   
+int EnumPossibleEngines(   
    uint      celtBuffer,  
    GUID[]    rgguidEngines,  
    ref DWORD pceltEngines  
@@ -58,7 +58,7 @@ int EnumPossibleEngines(
  [out] Gibt die tatsächliche Anzahl von DE-GUIDs, die zurückgegeben werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` oder [c#] 0x8007007A, wenn der Puffer nicht groß genug ist.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` oder [C#] 0x8007007A, wenn der Puffer nicht groß genug ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Um zu bestimmen, wie viele Module vorhanden sind, rufen diese Methode einmal mit der `celtBuffer` -Parameter auf 0 festgelegt und die `rgguidEngines` -Parameter auf einen null-Wert festgelegt. Dies gibt `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A für C#-Code), und die `pceltEngines` Parameter gibt die erforderliche Größe des Puffers zurück.  

@@ -13,14 +13,14 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: eae6b19d9901eb2a2d047b4c262b02a825c0f83b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303211"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751722"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd-Fehler
 FxCopCmd werden alle schwerwiegenden Fehler nicht berücksichtigt. Wenn FxCopCmd genügend Informationen zum Ausführen einer partiellen Analysis hat, führt es die Analyse- und Berichten aufgetretenen. Der Fehlercode, der eine 32-Bit-Ganzzahl ist, enthält eine bitweise Kombination von numerischen Werten, die Fehlern entsprechen.  

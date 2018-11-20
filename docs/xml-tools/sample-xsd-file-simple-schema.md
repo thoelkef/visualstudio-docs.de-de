@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572698"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>XSD-Beispieldatei: einfaches Schema
+# <a name="sample-xsd-file-simple-schema"></a>XSD-Beispieldatei: Einfaches Schema
 
 Die folgende XSD-Datei wird in verschiedenen Beispielen in der Dokumentation zum XSD-Schema-Designer verwendet. Bei dieser Datei handelt es sich um ein einfaches Bestellungsschema.
 

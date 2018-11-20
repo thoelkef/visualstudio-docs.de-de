@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836787"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220016"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], Sie können
   
 5. Geben Sie `msbuild /target:publish` ein.  
   
-   Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen P**veröffentlichen**. CmdLineDemo.application ist die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungsmanifest. Der Ordner CmdLineDemo_1.0.0.0 enthält die Dateien CmdLineDemo.exe und CmdLineDemo.exe.manifest, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Setup.exe ist der Bootstrapper, die standardmäßig konfiguriert ist, installieren die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Der Ordner DotNetFX enthält die verteilbaren Komponenten für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.  
+   Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen **veröffentlichen**. CmdLineDemo.application ist die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungsmanifest. Der Ordner CmdLineDemo_1.0.0.0 enthält die Dateien CmdLineDemo.exe und CmdLineDemo.exe.manifest, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Setup.exe ist der Bootstrapper, die standardmäßig konfiguriert ist, installieren die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Der Ordner DotNetFX enthält die verteilbaren Komponenten für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.  
   
 ## <a name="publishing-properties"></a>Veröffentlichungseigenschaften  
  Wenn Sie die Anwendung in den oben genannten Verfahren veröffentlichen, werden die folgenden Eigenschaften in der Projektdatei, durch den Veröffentlichungs-Assistenten eingefügt. Diese Eigenschaften direkt beeinflussen, wie die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung erzeugt wird.  
