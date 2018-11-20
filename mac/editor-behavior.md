@@ -1,20 +1,20 @@
 ---
-title: Editor-Verhalten
+title: Codeformatierung
 description: In diesem Artikel werden die verschiedenen Option zum Ändern des Text-Editor-Verhaltens in Visual Studio für Mac beschrieben.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 9e83a851385b155eaafb372dfe096dbb1b34fed5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a34076d06bfceb741b987377487a97291e8f726
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815806"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295513"
 ---
 # <a name="editor-behavior"></a>Editor-Verhalten
 
-Editor-Verhalten kann festgelegt werden, um das Formatieren von Code beim Schreiben zu ermöglichen. Diese Aktionen können unter **Visual Studio > Einstellungen > Text-Editor > Verhalten** festgelegt werden. Einige der häufiger verwendeten Funktionen werden unten beschrieben:
+Editor-Verhalten kann festgelegt werden, um das Formatieren von Code beim Schreiben zu ermöglichen. Diese Aktionen werden unter **Visual Studio > Einstellungen > Text-Editor > Verhalten** festgelegt. Einige der häufiger verwendeten Funktionen werden unten beschrieben:
 
 ![Optionen Editor-Verhalten](media/source-editor-image9.png)
 
@@ -22,9 +22,13 @@ Editor-Verhalten kann festgelegt werden, um das Formatieren von Code beim Schrei
 * Die dynamische Codeformatierung wird durch das Drücken von Zeichen wie z.B. Semikolon oder geschweiften Klammern ausgelöst, wodurch die festgelegten Formatierungseinstellungen emuliert werden.
 * Sie können die Datei auch formatieren, wenn Sie sie speichern, wodurch Code wie gewünscht geschrieben werden kann, und die Codeformatierung der IDE entsprechend den vorhandenen Einstellungen überlassen.
 * Der Einzug kann auf „Keiner“, „Auto“ und „Intelligent“ festgelegt werden. Dadurch passiert Folgendes:
-  * Keiner: legt die Einfügemarke auf den Anfang der nächsten Zeile fest
-  * Auto: legt die Einfügemarke auf die gleiche Spalte in der nächsten Zeile fest
-  * Intelligent: zieht in der folgenden Zeile basierend auf dem Code ein
+   * Keiner: legt die Einfügemarke auf den Anfang der nächsten Zeile fest
+   * Auto: legt die Einfügemarke auf die gleiche Spalte in der nächsten Zeile fest
+   * Intelligent: zieht in der folgenden Zeile basierend auf dem Code ein
 * Verhalten zur Wörtertrennung unterscheidet sich je nach Betriebssystem. Aus Navigationsgründen muss der Text-Editor wissen, wo Wörter beginnen und enden. Die Formatierung kann auf Unix oder Windows festgelegt werden.
 
 Darüber hinaus können Sie Formatierungsregeln für XML, CSS, HTML und JSON festlegen.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Codeformateinstellungen (Visual Studio unter Windows)](/visualstudio/ide/code-styles-and-quick-actions)

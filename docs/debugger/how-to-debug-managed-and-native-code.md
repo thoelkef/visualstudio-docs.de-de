@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Debuggen von verwaltetem und systemeigenem Code (Gemischter Modus)'
-description: Erfahren Sie, wie eine systemeigene DLL aus einer .NET Core- oder .NET Framework-app mit debugging im gemischten Modus debuggt.
+title: 'Tutorial: Debuggen verwalteten und nativen Codes (gemischter Modus)'
+description: Erfahren Sie, wie Sie eine native DLL aus einer .NET Core- oder .NET Framework-App mithilfe des Debuggens im gemischten Modus debuggen können.
 ms.custom: ''
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
@@ -23,62 +23,62 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51295760"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutorial: Debuggen von verwaltetem und systemeigenem Code in einer Debugsitzung
+# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutorial: Debuggen verwalteten und nativen Codes in derselben Debugsitzung
 
-Visual Studio können Sie mehr als einen Debuggertyp in einer Debugsitzung zu aktivieren, wodurch die heißt Debuggen im gemischten Modus. In diesem Tutorial erfahren Sie, zum Debuggen von verwaltetem und systemeigenem Code in einer einzelnen Debugsitzung. 
+In Visual Studio können Sie mehr als einen Debugtyp in einer Debugsitzung aktivieren. Dies wird als Debuggen im gemischten Modus bezeichnet. In diesem Tutorial lernen Sie das Debuggen verwalteten und nativen Codes in einer einzigen Debugsitzung. 
 
-In diesem Tutorial wird gezeigt, wie zum Debuggen von nativen Codes aus einer verwalteten Anwendung, aber Sie können auch [Debuggen von verwaltetem Code aus einer nativen app](../debugger/how-to-debug-in-mixed-mode.md). Der Debugger unterstützt auch andere Arten von Debuggen im gemischten Modus, z. B. Debuggen [Python und nativem Code](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), und verwenden den Skriptdebugger in app-Typen wie z. B. ASP.NET.
+Sie lernen, wie Sie nativen Code aus einer verwalteten App debuggen, aber Sie können auch [verwalteten Code aus einer nativen App debuggen](../debugger/how-to-debug-in-mixed-mode.md). Der Debugger unterstützt auch andere Typen des Debuggens im gemischten Modus, wie z.B. das [Debuggen von Python- und nativem Code](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) und das Verwenden des Skriptdebuggers in App-Typen wie ASP.NET.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
-> * Erstellen Sie eine einfache, systemeigene DLL
-> * Erstellen einer einfachen .NET Core oder .NET Framework-app zum Aufrufen der DLL
+> * Erstellen einer einfachen nativen DLL
+> * Erstellen einer einfachen .NET Core- oder .NET Framework-App, die die DLL aufruft
 > * Konfigurieren des Debuggens im gemischten Modus
-> * Starten Sie den debugger
-> * Einen Haltepunkt in der verwalteten app
-> * Einzelschritt in den systemeigenen code
+> * Starten des Debuggers
+> * Erreichen eines Breakpoints in der verwalteten App
+> * Schrittweise Ausführung des nativen Codes
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
-Sie benötigen Visual Studio installiert haben, mit folgenden Workloads:
+Visual Studio muss in den folgenden Workloads installiert sein:
 - **Desktopentwicklung mit C++**
-- Entweder **.NET Desktopentwicklung** oder **.NET Core plattformübergreifende Entwicklung**, je nachdem, auf welche Art von Anwendung, die Sie erstellen möchten.
+- Entweder **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung**, je nachdem, welchen App-Typ Sie erstellen möchten
 
-Wenn Sie Visual Studio nicht haben, fahren Sie mit der [Visual Studio-downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) Seite, um kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 
-Wenn Sie Visual Studio installiert haben, aber die arbeitsauslastungen, die Sie auswählen müssen, haben keine **Visual Studio-Installer öffnen** im linken Bereich der Visual Studio **neues Projekt** Dialogfeld. Wählen Sie im Visual Studio-Installer, die Workloads, die Sie benötigen, und wählen Sie dann **ändern**.
+Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Wählen Sie im Visual Studio-Installer die benötigten Workloads aus, und klicken Sie dann auf **Modify** (Anpassen).
 
-## <a name="create-a-simple-native-dll"></a>Erstellen Sie eine einfache, systemeigene DLL
+## <a name="create-a-simple-native-dll"></a>Erstellen einer einfachen nativen DLL
 
 **So erstellen Sie die Dateien für das DLL-Projekt:**
 
-1. Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
-1. In der **neues Projekt** Dialogfeld **Visual C++** Option **andere**, und wählen Sie dann **leeres Projekt** im mittleren Bereich.
+1. Klicken Sie im Dialogfeld **Neues Projekt** unter **Visual C++** auf **Sonstiges**, und wählen Sie **Leeres Projekt** in der Mitte der Ansicht.
 
-1. In der **Namen** Feld **Mixed_Mode_Debugging**, und wählen Sie dann **OK**.
+1. Geben Sie im Feld **Name** **Mixed_Mode_Debugging** ein, und klicken Sie dann auf **OK**.
 
-   Visual Studio erstellt die leeres Projekt und zeigt sie im **Projektmappen-Explorer**.
+   Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 
-1. In **Projektmappen-Explorer**Option **Quelldateien**, und wählen Sie dann **Projekt** > **neues Element hinzufügen**. Oder, mit der rechten Maustaste **Quelldateien** , und wählen Sie **hinzufügen** > **neues Element**. 
+1. Wählen Sie im **Projektmappen-Explorer** **Quelldateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Quelldateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus. 
 
-1. In der **neues Element** wählen Sie im Dialogfeld **C++-Datei (.cpp)**. Typ **Mixed_Mode.cpp** in die **Namen** ein, und wählen Sie dann **hinzufügen**.
+1. Klicken Sie im Dialogfeld **Neues Element** auf **C++-Datei (.cpp)**. Geben Sie im Feld **Name** **Mixed_Mode.cpp** ein, und klicken Sie dann auf **Hinzufügen**.
 
-    Visual Studio fügt die neue C++-Datei zu **Projektmappen-Explorer**.
+    Visual Studio fügt eine neue C++-Datei im **Projektmappen-Explorer** hinzu.
 
-1. Kopieren Sie den folgenden Code *Mixed_Mode.cpp*:
+1. Kopieren Sie den folgenden Code in die Datei *Mixed_Mode.cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. In **Projektmappen-Explorer**Option **Headerdateien**, und wählen Sie dann **Projekt** > **neues Element hinzufügen**. Oder, mit der rechten Maustaste **Headerdateien** , und wählen Sie **hinzufügen** > **neues Element**. 
+1. Wählen Sie im **Projektmappen-Explorer** **Headerdateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Headerdateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus. 
 
-1. In der **neues Element** wählen Sie im Dialogfeld **Headerdatei (. h)**. Typ **Mixed_Mode.h** in die **Namen** ein, und wählen Sie dann **hinzufügen**.
+1. Klicken Sie im Dialogfeld **Neues Element** auf **Headerdatei (.h)**. Geben Sie im Feld **Name** **Mixed_Mode.h** ein, und klicken Sie dann auf **Hinzufügen**.
 
-   Visual Studio fügt die neue Headerdatei auf **Projektmappen-Explorer**.
+   Visual Studio fügt eine neue Headerdatei im **Projektmappen-Explorer** hinzu.
 
-1. Kopieren Sie den folgenden Code *Mixed_Mode.h*:
+1. Kopieren Sie den folgenden Code in die Datei *Mixed_Mode.h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -93,47 +93,47 @@ Wenn Sie Visual Studio installiert haben, aber die arbeitsauslastungen, die Sie 
     #endif
     ```
 
-1. Wählen Sie **Datei** > **Alles speichern** , oder drücken Sie **STRG**+**UMSCHALT**+**S**  zum Speichern der Dateien.
+1. Klicken Sie auf **Datei** > **Alle speichern**, oder drücken Sie **STRG**+**UMSCHALT**+**S**, um die Datei zu speichern.
 
-**So konfigurieren, und erstellen Sie das DLL-Projekt:**
+**So erstellen und konfigurieren Sie das DLL-Projekt:**
 
-1. Wählen Sie in der Symbolleiste von Visual Studio **Debuggen** Konfiguration und **X86** oder **X64** Plattform. Wenn Ihre aufrufende app .NET Core, die immer im 64-Bit-Modus ausgeführt wird werden, wählen Sie **X64** als Plattform.
+1. Wählen Sie auf der Visual Studio-Symbolleiste die Konfiguration **Debuggen** und entweder **x86** oder **x64** für die Plattform aus. Wenn die aufrufende App eine .NET Core-App ist, die immer im 64-Bit-Modus ausgeführt wird, wählen Sie **x64** als Plattform aus.
 
-1. In **Projektmappen-Explorer**, wählen die **Mixed_Mode_Debugging** -Projektknoten, und wählen die **Eigenschaften** Symbol, oder mit der rechten Maustaste des Projektknotens und wählen Sie **Eigenschaften**.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten **Mixed_Mode_Debugging** aus, und klicken Sie auf das **Eigenschaftensymbol**. Klicken Sie alternativ auf den Projektknoten und dann auf **Eigenschaften**.
 
-1. Am oberen Rand der **Eigenschaften** Bereich, stellen Sie sicher, dass die **Konfiguration** nastaven NA hodnotu **aktiv (Debuggen)** und die **Plattform** ist identisch mit, was Sie Legen Sie in der Symbolleiste: **X64**, oder **Win32** für X86 Plattform. 
+1. Achten Sie darauf, dass die **Konfiguration** oben im **Eigenschaftenpanel** auf **Active(Debug)** festgelegt ist und die **Plattform** mit der in der Symbolleiste angegeben Einstellung übereinstimmt (**x64** oder **Win32** für die x86-Plattform). 
 
    > [!IMPORTANT]
-   > Wenn Sie die Plattform aus wechseln **X86** zu **X64** oder umgekehrt, müssen Sie die Eigenschaften für die neue Plattform neu konfigurieren. 
+   > Wenn Sie die Plattform von **x86** in **x64** (oder andersherum) ändern, müssen Sie die Eigenschaften für die neue Plattform erneut festlegen. 
 
-1. Klicken Sie unter **Konfigurationseigenschaften** wählen Sie im linken Bereich **Linker** > **erweitert**, und klicken Sie in der Dropdownliste neben **kein Einstiegspunkt**Option **keine**. Wenn Sie zu ändern **keine**Option **übernehmen**.
+1. Wählen Sie links unter **Konfigurationseigenschaften** **Linker** > **Erweitert** aus, und wählen Sie in der Dropdownliste neben **Kein Einstiegspunkt** **Nein** aus. Wenn Sie die Einstellung in **Nein** geändert haben, klicken Sie auf **Anwenden**.
 
-1. Unter **Konfigurationseigenschaften**Option **allgemeine**, und in der Dropdownliste neben **Konfigurationstyp**Option **dynamische Bibliothek (.dll)**. Wählen Sie **übernehmen**, und wählen Sie dann **OK**.
+1. Wählen Sie unter **Konfigurationseigenschaften** **Allgemein** aus, und wählen Sie aus der Dropdownliste neben **Konfigurationstyp** **Dynamische Bibliothek (DLL)** aus. Klicken Sie auf **Anwenden** und dann auf **OK**.
 
-   ![Wechseln Sie zu einer systemeigenen DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
+   ![Native DLL ändern](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Wählen Sie das Projekt in **Projektmappen-Explorer** und wählen Sie dann **erstellen** > **Projektmappe**, drücken Sie die **F7**, oder mit der rechten Maustaste das Projekt, und wählen **erstellen**.
+1. Wählen Sie das Projekt im **Projektmappen-Explorer** aus, und wählen Sie dann **Erstellen** > **Projektmappe erstellen** aus. Drücken Sie anschließend **F7**, oder klicken Sie mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Erstellen**.
 
    Das Projekt wird fehlerfrei erstellt.
 
-## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Erstellen Sie eine einfache verwaltete app aus, um die DLL aufrufen
+## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Erstellen einer einfachen verwalteten App, die die DLL aufruft
 
-1. Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
    > [!NOTE]
-   > Obwohl Sie auch das neue verwaltete Projekt der vorhandenen C++-Projektmappe hinzufügen können, unterstützt das Erstellen einer neuen Projektmappe weitere Debugszenarien aus.
+   > Sie könnten das neue verwaltete Projekt Ihrer bereits vorhandenen C++-Projektmappe hinzufügen. Wenn Sie jedoch eine neue Projektmappe erstellen, werden mehr Debuggingszenarios unterstützt.
 
-1. In der **neues Projekt** wählen Sie im Dialogfeld **Visual C#** , und klicken Sie im mittleren Bereich:
+1. Wählen Sie im Dialogfeld **Neues Projekt** **Visual C#** aus, und wählen Sie im mittleren Bereich wie folgt aus:
 
-   - Wählen Sie für eine app .NET Framework **Konsolen-App ((.NET Framework)**.
+   - Wählen Sie für eine .NET Framework-App **Konsolen-App (.NET Framework)** aus.
    
-   - Wählen Sie für eine .NET Core-app, **Konsolen-App ((.NET Core)**.
+   - Wählen Sie für eine .NET Core-App **Konsolen-App (.NET Core)** aus.
 
-1. In der **Namen** Feld **Mixed_Mode_Calling_App**, und wählen Sie dann **OK**.
+1. Geben Sie im Feld **Name** **Mixed_Mode_Calling_App** ein, und klicken Sie dann auf **OK**.
 
-   Visual Studio erstellt die leeres Projekt und zeigt sie im **Projektmappen-Explorer**.
+   Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 
-1. Ersetzen Sie den Code im *"Program.cs"* durch den folgenden Code:
+1. Ersetzen Sie den gesamten Code in *Program.cs* durch den folgenden:
 
     ```csharp
     using System;
@@ -161,36 +161,36 @@ Wenn Sie Visual Studio installiert haben, aber die arbeitsauslastungen, die Sie 
     }
     ```
 
-1. Ersetzen Sie in den neuen Code, den Dateipfad im `[DllImport]` mit Ihrem Dateipfad zu der *Mixed_Mode_Debugging.dll* Sie zuvor erstellt haben. Finden Sie unter dem Kommentar "Code" für Hinweise. Achten Sie darauf, ersetzen Sie die *Benutzername* Platzhalter.
+1. Ersetzen Sie im neuen Code den Dateipfad in `[DllImport]` durch den Dateipfad zur *Mixed_Mode_Debugging.dll*, die Sie gerade erstellt haben. Weitere Informationen finden Sie in den Codekommentaren. Achten Sie darauf, dass Sie den Platzhalter *username* entsprechend ersetzen.
 
-1. Wählen Sie **Datei** > **speichern "Program.cs"** , oder drücken Sie **STRG**+**S** zum Speichern der Datei.
+1. Klicken Sie auf **Datei** > **Save Program.cs** (Program.cs speichern), oder drücken Sie **STRG**+**S**, um die Datei zu speichern.
 
 ## <a name="configure-mixed-mode-debugging"></a>Konfigurieren des Debuggens im gemischten Modus 
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>So konfigurieren, Debuggen im gemischten Modus für eine .NET Framework-app 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Framework-App 
 
-1. In **Projektmappen-Explorer**, wählen die **Mixed_Mode_Calling_App** -Projektknoten, und wählen die **Eigenschaften** Symbol, oder mit der rechten Maustaste des Projektknotens und wählen Sie **Eigenschaften**.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten **Mixed_Mode_Calling_App** aus, und klicken Sie auf das **Eigenschaftensymbol**. Klicken Sie alternativ auf den Projektknoten und dann auf **Eigenschaften**.
 
-1. Wählen Sie **Debuggen** wählen Sie im linken Bereich die **Debuggen von nativem Code aktivieren** Kontrollkästchen, und schließen Sie die Eigenschaftenseite, um die Änderungen zu speichern.
+1. Wählen Sie im rechten Bereich **Debuggen** aus, aktivieren Sie das Kontrollkästchen **Debuggen von nativem Code aktivieren**, und schließen Sie anschließend die Eigenschaftenseite, um die Änderungen zu speichern.
 
-    ![Aktivieren Sie das Debuggen im gemischten Modus](../debugger/media/mixed-mode-enable-native-code-debugging.png)
+    ![Debuggen im gemischten Modus aktivieren](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren, Debuggen im gemischten Modus für eine .NET Core-app 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Core-App 
 
-In den meisten Versionen von Visual Studio 2017, müssen Sie verwenden die *"launchsettings.JSON"* Datei statt auf die Projekteigenschaften für das Debuggen im gemischten Modus für nativen Code in einer .NET Core-app zu aktivieren. Um Aktualisierungen der Benutzeroberfläche für dieses Feature zu verfolgen, finden Sie in diesem [GitHub-Problem](https://github.com/dotnet/project-system/issues/1125).
+In den meisten Visual Studio 2017-Versionen müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer :NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
 
-1. In **Projektmappen-Explorer**, erweitern Sie **Eigenschaften**, und öffnen Sie die *"launchsettings.JSON"* Datei. 
+1. Erweitern Sie im **Projektmappen-Explorer** die **Eigenschaften**, und öffnen Sie die Datei *launchSettings.json*. 
 
    >[!NOTE]
-   >In der Standardeinstellung *"launchsettings.JSON"* befindet sich im *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Wenn *"launchsettings.JSON"* nicht vorhanden ist, wählen Sie die **Mixed_Mode_Calling_App** Projekt **Projektmappen-Explorer** und wählen Sie dann die **Eigenschaften** Symbol, oder mit der rechten Maustaste in des Projekts, und wählen Sie **Eigenschaften**. Nehmen Sie eine temporäre Änderung in der **Debuggen** Registerkarte, und erstellen Sie das Projekt. Dadurch entsteht eine *"launchsettings.JSON"* Datei. Machen Sie diese rückgängig, die Sie, in vorgenommen der **Debuggen** Registerkarte.
+   >Standardmäßig befindet sich *launchSettings.json* unter *C:\Benutzer\Benutzername\source\repos\Mixed_Mode_Calling_App\Properties*. Wählen Sie das Projekt **Mixed_Mode_Calling_App** aus, und klicken Sie auf im **Projektmappen-Explorer** auf das **Eigenschaftensymbol**, wenn *launchSettings.json* nicht vorhanden ist. Klicken Sie alternativ mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften**. Nehmen Sie eine vorrübergehende Änderung auf der Registerkarte **Debuggen** vor, und erstellen Sie das Projekt. Dadurch wird die Datei *launchSettings.json* erstellt. Machen Sie die auf der Registerkarte **Debuggen** vorgenommene Änderung rückgängig.
 
-1. In der *lauchsettings.json* Datei, fügen Sie die folgende Zeile hinzu:
+1. Fügen Sie die folgende Codezeile in der Datei *launchSettings.json* hinzu:
 
     ```csharp
     "nativeDebugging": true
     ```
 
-    Die vollständige Datei sieht wie im folgenden Beispiel aus:
+    Der vollständige Code sieht aus wie im folgenden Beispiel:
 
     ```csharp
     {
@@ -203,47 +203,47 @@ In den meisten Versionen von Visual Studio 2017, müssen Sie verwenden die *"lau
     }
     ```
 
-## <a name="set-a-breakpoint-and-start-debugging"></a>Festlegen eines Haltepunkts und das Debuggen starten
+## <a name="set-a-breakpoint-and-start-debugging"></a>Festlegen eines Breakpoints und Starten des Debuggens
 
-1. In der C# geöffneten Projekt *"Program.cs"*. Legen Sie einen Haltepunkt in der folgenden Zeile des Codes durch Klicken auf den linken Rand, wählen die Zeile, und drücken **F9**, oder mit der rechten Maustaste in der Zeile klicken und auswählen **Haltepunkt**  >  **Haltepunkt einfügen**.
+1. Öffnen Sie im C#-Projekt die Datei *Program.cs*. Legen Sie einen Breakpoint in der folgenden Codezeile fest, indem Sie auf den linken Rand klicken, die Zeile auswählen und dann **F9** drücken. Alternativ können Sie mit der rechten Maustaste auf die Codezeile klicken und **Breakpoint** > **Breakpoint einfügen** auswählen.
 
     ```csharp
     int result = Multiply(7, 7);
     ```
 
-    In den linken Rand, in dem Sie den Haltepunkt festgelegt, wird ein roter Kreis angezeigt.
+    Am linken Rand wird an der Stelle des Breakpoints ein roter Kreis angezeigt.
 
-1. Drücken Sie **F5**wählen Sie den grünen Pfeil in der Visual Studio-Symbolleiste, oder **Debuggen** > **Debuggen starten** mit dem Debuggen beginnen.
+1. Drücken Sie **F5**, und klicken Sie auf den grünen Pfeil auf der Visual Studio-Symbolleiste, oder klicken Sie auf **Debuggen** > **Debuggen starten**, um das Debuggen zu starten.
 
-   Der Debugger hält an dem Haltepunkt, den Sie festlegen. Ein gelber Pfeil gibt an, in denen der Debugger angehalten wurde.
+   Der Debugger hält an dem Breakpoint an, den Sie festlegen. Ein gelber Pfeil markiert die Stelle, an der der Debugger gerade angehalten hat.
 
-## <a name="step-in-and-out-of-native-code"></a>Schritt ein-und des nativen Codes
+## <a name="step-in-and-out-of-native-code"></a>Einzelschritt und Ausführen bis Rücksprung in nativem Code
 
-1. Beim Debuggen in der verwalteten app angehalten wird, drücken Sie die **F11**, oder wählen Sie **Debuggen** > **Einzelschritt**.
+1. Wenn das Debuggen in der verwalteten App angehalten ist, drücken Sie **F11**, oder klicken Sie auf **Debuggen** > **Einzelschritt**.
 
-   Die *Mixed_Mode.h* systemeigenen Headerdatei wird geöffnet, und den gelben Pfeil, in denen der Debugger angehalten wird.
+   Die native Headerdatei *Mixed_Mode.h* wird geöffnet, und der gelbe Pfeil gibt die Stelle an, an der der Debugger sich gerade befindet.
 
-   ![Einzelschritt in nativem code](../debugger/media/mixed-mode-step-into-native-code.png)
+   ![Schrittweise Ausführung des nativen Codes](../debugger/media/mixed-mode-step-into-native-code.png)
 
-1. Sie können jetzt festlegen und erreichen von Haltepunkten und Überprüfen von Variablen in den systemeigenen oder verwalteten Code.
+1. Jetzt können Sie Breakpoints festlegen und erreichen und sich Variablen im nativen oder verwalteten Code ansehen.
 
-   - Zeigen Sie auf Variablen im Quellcode und deren Werte finden Sie unter.
+   - Zeigen Sie mit der Maus auf Variablen im Quellcode, um deren Werte anzuzeigen.
 
-   - Sehen Sie sich die Variable und ihren Werten in der **"Auto"** und **"lokal"** Windows.
+   - Sehen Sie sich Variablen und deren Werte in den Fenstern **Auto** und **Lokal** an.
 
-   - Während im Debugger angehalten wird, können Sie auch die **Watch** Windows und die **Aufrufliste** Fenster.
+   - Wenn der Debugger angehalten hat, können Sie auch die Fenster **Überwachen** und **Aufrufliste** verwenden.
 
-1. Drücken Sie **F11** erneut aus, um den Debugger einer Zeile anzuzeigen.
+1. Drücken Sie erneut **F11**, um den Debugger eine Zeile weiter laufen zu lassen.
 
-1. Drücken Sie **UMSCHALT**+**F11** oder wählen Sie **Debuggen** > **Ausführen bis Rücksprung** Ausführung fortsetzen und anhalten, erneut in die verwaltete app aus.
+1. Drücken sie **UMSCHALT**+**F11**, oder klicken Sie auf **Debuggen** > **Ausführen bis Rücksprung**, um in der verwalteten App mit der Ausführung fortzufahren und diese anzuhalten.
 
-1. Drücken Sie **F5** , oder wählen Sie den grünen Pfeil, um das Debuggen der app fortzusetzen.
+1. Drücken Sie **F5**, oder klicken Sie auf den grünen Pfeil, um mit dem Debuggen der App fortzufahren.
 
-Herzlichen Glückwunsch! Sie haben das Lernprogramm zu Debuggen im gemischten Modus abgeschlossen.
+Herzlichen Glückwunsch! Damit haben Sie das Tutorial zum Debuggen im gemischten Modus abgeschlossen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-In diesem Tutorial haben Sie gelernt, wie Sie das Debuggen von nativen Codes aus einer verwalteten Anwendung durch Aktivieren des Debuggens im gemischten Modus. Eine Übersicht über andere Debugger-Features finden Sie unter:
+In diesem Tutorial haben Sie gelernt, wie Sie nativen Code einer verwalteten App debuggen, indem Sie das Debuggen im gemischten Modus aktivieren. Einen Überblick über andere Debuggerfeatures finden Sie in folgendem Artikel:
 
 > [!div class="nextstepaction"]
 > [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

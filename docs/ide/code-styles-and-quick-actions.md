@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627008"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349288"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -26,6 +26,9 @@ Codeformateinstellungen können für Ihre C#- und Visual Basic-Projekte festgele
 Jedes Element auf der Liste zeigt eine Vorschau der Einstellung an, wenn es ausgewählt wird:
 
 ![Codeformatoptionen](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Editorverhalten in Visual Studio für Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Einstellung und Schweregrad
 
@@ -50,3 +53,4 @@ Beim ersten Auslösen des Befehls **Dokument formatieren** in Visual Studio 2017
 
 - [Schnelle Aktionen](../ide/quick-actions.md)
 - [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Editorverhalten (Visual Studio für Mac)](/visualstudio/mac/editor-behavior)

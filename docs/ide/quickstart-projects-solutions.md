@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627245"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607802"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
@@ -100,7 +100,7 @@ Ihnen liegt ein leeres Projekt vor. Fügen Sie eine Codedatei hinzu.
    }
    ```
 
-   Sie müssen die Funktionsweise des Codes nicht verstehen, aber falls gewünscht können Sie das Programm ausführen. Dann sehen Sie, dass das Datum des heutigen Tages im Konsolenfenster (oder der Standardausgabe) ausgegeben wird.
+   Sie müssen die Funktionsweise des Codes nicht verstehen, aber falls gewünscht können Sie das Programm ausführen, indem Sie **STRG**+**F5** drücken. Dann sehen Sie, dass das Datum des heutigen Tages im Konsolenfenster (oder in der Standardausgabe) ausgegeben wird.
 
 ## <a name="add-a-second-project"></a>Hinzufügen eines zweiten Projekts
 
@@ -148,7 +148,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
    Unter einigen Teilen des Codes werden rote Wellenlinien angezeigt. Sie können diesen Fehler beheben, indem Sie das Testprojekt als [Friend-Assembly](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) für das **QuickDate**-Projekt festlegen.
 
-1. Öffnen Sie im Projekt **QuickDate** die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist, und fügen Sie die folgende [using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das folgende Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zur Datei hinzu, um den Fehler in dem Testprojekt zu beheben.
+1. Öffnen Sie im Projekt **QuickDate** die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist, und fügen Sie die folgende [using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das folgende Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> am Anfang der Datei hinzu, um den Fehler in dem Testprojekt zu beheben.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
-In der Zeile in der C#-Codedatei mit dem Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> wird auf den Assemblynamen des Projekts **QuickTest** verwiesen. Der Assemblyname stimmt nicht immer mit dem Projektnamen überein. Öffnen Sie die Projekteigenschaften, um den Assemblynamen eines Projekts zu suchen.
+In der Zeile in der *Calendar.cs*-Datei mit dem Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> wird auf den Assemblynamen (Dateinamen) des Projekts **QuickTest** verwiesen. Der Assemblyname stimmt nicht immer mit dem Projektnamen überein. Öffnen Sie die Projekteigenschaften, um den Assemblynamen eines Projekts zu suchen.
 
 1. Wählen Sie im **Projektmappen-Explorer** das **QuickTest**-Projekt aus. Wählen Sie im Kontextmenü (Rechtsklick) **Eigenschaften** aus, oder drücken Sie **ALT**+**EINGABETASTE**.
 
-   Die *Eigenschaftenseiten* für das Projekt werden auf der Registerkarte **Anwendung** geöffnet. Die Eigenschaftenseiten enthalten verschiedene Einstellungen für das Projekt. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen ausführbaren Datei von *QuickTest.exe* zu einem von Ihnen ausgewählten Namen.
+   Die *Eigenschaftenseiten* für das Projekt werden auf der Registerkarte **Anwendung** geöffnet. Die Eigenschaftenseiten enthalten verschiedene Einstellungen für das Projekt. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen Binärdatei von *QuickTest.dll* in den von Ihnen ausgewählten Namen.
 
    ![Projekteigenschaften](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ In der Zeile in der C#-Codedatei mit dem Attribut <xref:System.Runtime.CompilerS
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in der Menüleiste auf **Testen** > **Ausführen** > **Alle Tests**. Ein Fenster mit dem Namen **Test-Explorer** wird geöffnet, und der **TestGetCurrentDate**-Test sollte erfolgreich sein.
+
+![Test-Explorer in Visual Studio, der erfolgreiche Tests anzeigt](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> Wenn Sich der **Test-Explorer** nicht automatisch öffnet, können Sie ihn über die Menüleiste öffnen, indem Sie auf **Test** > **Windows** > **Test-Explorer** klicken.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204426"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948389"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppe von Codeanalyseregeln
 
@@ -58,10 +58,15 @@ Den Inhalt einer *ruleSet* Datei ähnlich wie in dieser XML-Code:
 > [!TIP]
 > Es ist einfacher, [bearbeiten ein Regelsatzes](../code-quality/working-in-the-code-analysis-rule-set-editor.md) im grafischen **Regelsatz-Editor** als von hand.
 
+## <a name="specify-a-rule-set-for-a-project"></a>Geben Sie einen Regelsatz für ein Projekt
+
 Der Regelsatz für ein Projekt, indem angegeben wird die **CodeAnalysisRuleSet** Eigenschaft in der Visual Studio-Projektdatei. Zum Beispiel:
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>Siehe auch

@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901189"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349048"
 ---
 # <a name="understand-build-configurations"></a>Grundlagen der Buildkonfiguration
 
 Sie können verschiedene Konfigurationen der Projektmappen- und Projekteigenschaften speichert, die in unterschiedlichen Arten von Builds verwendet werden können. Konfiguration können mit **Configuration Manager** ausgewählt, geändert oder gelöscht werden. Wählen Sie zum Öffnen in der Menüleiste **Erstellen** > **Configuration Manager** aus, oder geben Sie **Konfiguration** im Feld **Schnellstart** ein. Sie können auch die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** zum Auswählen einer Konfiguration verwenden, oder Sie öffnen den **Configuration Manager**.
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Buildkonfigurationen in Visual Studio für Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Falls auf der Symbolleiste keine Einstellungen für Projektmappenkonfigurationen enthalten sind und Sie nicht auf den **Configuration Manager** zugreifen können, sind möglicherweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Entwicklungseinstellungen aktiviert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten von Konfigurationen mit aktivierten Visual Basic Developer-Einstellungen](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Jeder Eintrag im Feld **Projektkontexte** in einer Projektmappenkonfiguration st
 
 > [!NOTE]
 > Wenn Sie eine neue Projektmappenkonfiguration definieren und das Kontrollkästchen **Neue Projektkonfigurationen erstellen** aktivieren, weist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die neue Konfiguration allen Projekten automatisch zu. Dem entsprechend wird die neue Plattform von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] allen Projekten automatisch zugewiesen, wenn Sie eine neue Plattformkonfiguration definieren und das Kontrollkästchen **Neue Projektplattformen erstellen** aktivieren. Wenn Sie ein Projekt hinzufügen, das auf neue Plattform ausgerichtet ist, wird diese Plattform in Visual Studio der Liste der Projektmappenplattformen hinzugefügt und allen Projekten zugewiesen.
-> 
+>
 > Sie können die Einstellungen für jedes Projekt weiterhin ändern.
 
 Die aktive Projektmappenkonfiguration stellt der IDE auch Kontext bereit. Wenn Sie z.B. an einem Projekt arbeiten und in der Konfiguration angegeben ist, dass es für ein mobiles Gerät erstellt wird, werden in der **Toolbox** nur die Elemente angezeigt, die in einem Projekt für ein mobiles Gerät verwendet werden können.
@@ -92,3 +95,4 @@ Die aktive Projektmappenkonfiguration stellt der IDE auch Kontext bereit. Wenn S
 - [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++-Buildverweis](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)
+- [Buildkonfigurationen (Visual Studio für Mac)](/visualstudio/mac/configurations)

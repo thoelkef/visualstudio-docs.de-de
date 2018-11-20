@@ -1,7 +1,7 @@
 ---
-title: Auswählen eines Python-Interpreters und einer Umgebung für ein Projekt
-description: Informationen zum Zuweisen einer Python-Umgebung zur Verwendung in einem Visual Studio-Projekt sowie Anweisungen zum Erstellen virtueller Umgebungen
-ms.date: 06/27/2018
+title: Auswählen eines Python-Interpreters und einer -Umgebung für ein Projekt
+description: Auswählen eines Python-Interpreters oder einer -Umgebung für ein Projekt in Visual Studio, Anaconda und virtuelle Umgebungen inbegriffen
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101133"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349451"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Zuweisen einer Python-Umgebung für ein Projekt
+# <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 
-Der gesamte Code in einem Python-Projekt wird im Kontext einer bestimmten Umgebung ausgeführt. Visual Studio verwendet diese Umgebung auch für das Debugging, für Import- und Membervervollständigungen, für Syntaxüberprüfungen sowie für weitere Tasks, die eine Umgebung erfordern.
+Sämtlicher Code in einem Python-Projekt wird im Kontext einer bestimmten Umgebung ausgeführt, z.B. als globale Python-Umgebung, Anaconda-Umgebung, virtuelle Umgebung oder Conda-Umgebung. Visual Studio verwendet diese Umgebung auch für das Debugging, für Import- und Membervervollständigungen, für Syntaxüberprüfungen sowie für weitere Tasks, die Sprachdienste erforderlich machen, welche für die Python-Version und eine Reihe von installierten Paketen spezifisch sind.
 
 Alle neuen Python-Projekte in Visual Studio werden anfänglich für die Verwendung der globalen Standardumgebung konfiguriert, die im **Projektmappen-Explorer** unter dem Knoten **Python-Umgebungen** angezeigt wird:
 
@@ -42,7 +42,7 @@ Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche
 | --- | --- |
 | **Virtuelle Umgebung hinzufügen** | Startet den Prozess zum Erstellen einer neuen virtuellen Umgebung im Projekt Weitere Informationen finden Sie unter [Create a virtual environment (Erstellen einer virtuellen Umgebung)](#create-a-virtual-environment). |
 | **Vorhandene virtuelle Umgebung hinzufügen** | Fordert Sie dazu auf, einen Ordner auszuwählen, der eine virtuelle Umgebung enthält, und fügt diese der Liste unter **Python-Umgebungen** hinzu, ohne diese zu aktivieren Weitere Informationen finden Sie unter [Aktivieren einer vorhandenen virtuellen Umgebung](#activate-an-existing-virtual-environment). |
-| **Erstellen einer Conda-Umgebung** | Wechselt zum **Fenster** *Python-Umgebungen*, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben |
+| **Erstellen einer Conda-Umgebung** | Wechselt zum **Fenster** *Python-Umgebungen*, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben Weitere Informationen finden Sie unter [Conda-Umgebungen](managing-python-environments-in-visual-studio.md#conda-environments). |
 
 ## <a name="use-virtual-environments"></a>Verwenden von virtuellen Umgebungen
 

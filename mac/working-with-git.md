@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223926"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296449"
 ---
 # <a name="working-with-git"></a>Arbeiten mit Git
 
@@ -24,7 +24,7 @@ Die folgende Abbildung veranschaulicht die Optionen, die in Visual Studio für M
 
 ![Menüelement für die Versionskontrolle](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Push und Pull 
+## <a name="push-and-pull"></a>Push und Pull
 
 Push und Pull sind zwei der am häufigsten verwendeten Aktionen in Git. Um die Änderungen anderer am Remoterepository zu synchronisieren, müssen Sie einen **Pull** ausführen. Dazu wählen Sie in Visual Studio für Mac **Versionskontrolle > Update Solution** (Lösung aktualisieren) aus.
 
@@ -54,11 +54,11 @@ Damit können Sie die folgenden Aktionen ausführen:
 
     ![Protokollregisterkarte](media/version-control-gitLog.png)
 
-* **Zusammenführen**: Kann bei einem Zusammenführungskonflikt beim Committen Ihrer Arbeit verwendet werden. Damit wird eine visuelle Darstellung der Änderungen angezeigt, die Sie und andere Entwickler vorgenommen haben. So können Sie beide Codeabschnitte sauber kombinieren. 
+* **Zusammenführen**: Kann bei einem Zusammenführungskonflikt beim Committen Ihrer Arbeit verwendet werden. Damit wird eine visuelle Darstellung der Änderungen angezeigt, die Sie und andere Entwickler vorgenommen haben. So können Sie beide Codeabschnitte sauber kombinieren.
 
-## <a name="switching-branches"></a>Wechseln von Branches 
+## <a name="switching-branches"></a>Wechseln von Branches
 
-Der erste in einem Repository erstellte Branch wird standardmäßig als **Masterbranch** bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Masterbranch und allen anderen. Der Masterbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
+Der erste in einem Repository erstellte Branch wird standardmäßig als  **Masterbranch**  bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Masterbranch und allen anderen. Der Masterbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
 
 Durch das Branchen von Master (oder jedem anderen Branch) kann eine eigenständige Entwicklungslinie erstellt werden. Diese neue Version des Masterbranchs kann unabhängig von der Liveversion bereitgestellt werden. Branches werden in der Softwareentwicklung häufig für Funktionen so verwendet.
 
@@ -80,7 +80,7 @@ Sehen Sie sich der aktuellen Branch im Projektmappenpad neben dem Projektnamen a
 
  ![Aktueller Branch im Projektmappenpad](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Überprüfen und Committen 
+## <a name="reviewing-and-committing"></a>Überprüfen und Committen
 
 Um Änderungen in den Dateien zu überprüfen, verwenden Sie die Registerkarten „Änderungen“, „Verantwortung zuweisen“, „Protokoll“ und „Zusammenführen“ für jedes Dokument, wie weiter oben in diesem Thema veranschaulicht.
 
@@ -90,8 +90,12 @@ Um Änderungen in den Dateien zu überprüfen, verwenden Sie die Registerkarten 
 
 Hiermit können Sie alle Änderungen in jeder Projektdatei mit den Optionen „Revert“ (Wiederherstellen), „Create a Patch“ (Patch erstellen) oder „Commit“ (Commit ausführen) anzeigen.
 
-Um eine Datei für ein Remoterepository zu committen, klicken Sie auf **Commit...**, geben Sie eine Commitnachricht ein, und bestätigen Sie mit „Commit“:
+Wenn Sie eine Datei für ein Remoterepository committen möchten, klicken Sie auf **Commit**, geben Sie eine Commitnachricht ein, und bestätigen Sie mit „Commit“:
 
 ![Committen einer Datei](media/version-control-gitCommit.png)
 
 Nachdem Sie die Änderungen committet haben, pushen Sie sie an das Remoterepository, damit andere Benutzer diese sehen können.
+
+## <a name="see-also"></a>Siehe auch
+
+* [Freigeben Ihres Codes mit Visual Studio 2017 und dem Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

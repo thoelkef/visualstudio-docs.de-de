@@ -15,16 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d4e178bce3b1a74174d59b9fde701ef2d7645b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817742"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348656"
 ---
 # <a name="uninstall-visual-studio"></a>Deinstallieren von Visual Studio
 
 Diese Seite führt Sie durch die Deinstallation von Visual Studio, unserer integrierten Suite von Produktivitätstools für Entwickler.
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Deinstallieren von Visual Studio für Mac](/visualstudio/mac/uninstall).
 
 1. Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
 
@@ -33,7 +36,7 @@ Diese Seite führt Sie durch die Deinstallation von Visual Studio, unserer integ
      ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
    > [!NOTE]
-   >   Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.<br/><br/> Alternativ dazu finden Sie den Visual Studio-Installer in folgendem Speicherort: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.<br/><br/> Alternativ dazu finden Sie den Visual Studio-Installer in folgendem Speicherort: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Starten Sie das Installationsprogramm, indem Sie darauf klicken, klicken Sie auf das Symbol ![Details](media/vs2017uninstall-UninstallIcon.png "wählen Sie das Symbol „Optionen“"), und klicken Sie dann auf **Deinstallieren**.
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064849"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349373"
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
@@ -29,6 +29,9 @@ Schnelle Aktionen können für Folgendes verwendet werden:
 - [Unterdrücken](../code-quality/use-roslyn-analyzers.md) einer Verletzung einer Regel des Codeanalysetools
 - Anwenden eines Refactorings (z.B. [Inlinesetzen einer temporären Variable](../ide/reference/inline-temporary-variable.md))
 - Generieren von Code (z.B. [Einführen einer lokalen Variable](../ide/reference/introduce-local-variable.md))
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden sie unter [Refactoring (Visual Studio für Mac)](/visualstudio/mac/refactoring).
 
 Schnelle Aktionen können mithilfe der Glühbirne ![Glühbirnensymbol](media/light-bulb-icon.png), des Schraubendrehers ![Schraubendrehersymbol](media/screwdriver-icon.png) oder durch Drücken der Tasten **STRG**+**.** angewendet werden, wenn Ihr Cursor sich auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Es wird eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/error-light-bulb-icon.png) angezeigt, was auf einen Fehler hindeutet, und in Visual Studio ist für diesen Fehler eine Problemlösung verfügbar.
 
@@ -60,3 +63,4 @@ Klicken Sie entweder neben der Glühbirne auf den Pfeil nach unten oder auf den 
 - [Häufige schnelle Aktionen](../ide/common-quick-actions.md)
 - [Codeformate und Schnellaktionen](../ide/code-styles-and-quick-actions.md)
 - [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Refactoring (Visual Studio für Mac)](/visualstudio/mac/refactoring)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: eda5e78888a3d50c628033d9f4331ab3789b20c8
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224277"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296339"
 ---
 # <a name="accessibility"></a>Zugriff
 
@@ -20,7 +20,7 @@ Neben den Barrierefreiheitsfunktionen und Hilfsprogrammen in macOS bietet Visual
 - Textgrößenoptionen in den Editoren
 - Anpassen der Farbe in den Editoren
 - Anpassen von Tastenkombinationen
-- Codevervollständigung für Methoden und Parameter 
+- Codevervollständigung für Methoden und Parameter
 
 Weitere Informationen zu Barrierefreiheitsfunktionen in macOS finden Sie auf der [Website von Apple](https://www.apple.com/accessibility/mac/).
 
@@ -36,11 +36,10 @@ Die Barrierefreiheitsfunktionen in Visual Studio für Mac sind standardmäßig d
 
 3. Klicken Sie auf die Schaltfläche **Visual Studio neu starten**, um die Barrierefreiheitsfunktionen zu aktivieren.
 
-
-Alternativ dazu können Sie die Barrierefreiheitsfunktionen über die Befehlszeile aktivieren. Geben Sie im Terminal folgenden Befehl ein: 
+Alternativ dazu können Sie die Barrierefreiheitsfunktionen über die Befehlszeile aktivieren. Geben Sie im Terminal folgenden Befehl ein:
 
 ```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1 
+defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
 ```
 
 Nach dem Aktivieren der Barrierefreiheit müssen Sie Visual Studio neu starten.
@@ -49,12 +48,13 @@ Nach dem Aktivieren der Barrierefreiheit müssen Sie Visual Studio neu starten.
 
 Die Tastaturnavigation kann aktiviert werden, indem unter **Systemeinstellungen > Tastatur > Kurzbefehle** die Tastatursteuerung auf die Option **Alle Steuerungen** festgelegt wird:
 
-  ![Systemeinstellungen in macOS](media/accessibility-image2.png)
+![Systemeinstellungen in macOS](media/accessibility-image2.png)
 
 Durch Festlegen der Tastatursteuerung wird das Fokusrechteck aktiviert. Sie können Steuerelemente folgendermaßen auswählen:
+
 - Drücken der TABULATORTASTE, um vorwärts durch Steuerelemente zu navigieren
 - Drücken der UMSCHALTTASTE + TABULATORTASTE, um rückwärts durch Steuerelemente zu navigieren
-- Drücken der Pfeiltasten, um in Richtung der Pfeile zwischen Steuerelementen zu navigieren 
+- Drücken der Pfeiltasten, um in Richtung der Pfeile zwischen Steuerelementen zu navigieren
 
 Durch Drücken der Leertaste wird das Steuerelement mit dem Fokus aktiviert.
 
@@ -66,13 +66,17 @@ Um zwischen VoiceOver-Befehlen der Benutzeroberfläche zu navigieren, verwenden 
 
 - Bewegen des VoiceOver-Cursors zwischen Steuerelementen: **STRG + ALT + Linke Pfeiltaste bzw. rechte Pfeiltaste**
 
-VoiceOver liest die Namen der Steuerelemente sowie einige Informationen und mögliche Aktionen vor. 
+   VoiceOver liest die Namen der Steuerelemente sowie einige Informationen und mögliche Aktionen vor.
 
 - Geben Sie Gruppen und Steuerelemente ein (z.B. Lösungspad, Toolbox und andere Pads): **STRG + ALT + UMSCHALTTASTE + Pfeiltaste nach unten**
 
-Wenn Sie sich innerhalb eines Steuerelements befinden, können Sie **STRG + ALT + Pfeiltasten** verwenden, um darin zu navigieren. 
- 
+   Wenn Sie sich innerhalb eines Steuerelements befinden, können Sie **STRG + ALT + Pfeiltasten** verwenden, um darin zu navigieren.
+
 Allgemeine Informationen zur Verwendung von VoiceOver in macOS finden Sie in folgenden Leitfäden:
 
 - [VoiceOver-Einführungshandbuch](https://help.apple.com/voiceover/info/guide/10.12/)
 - [VoiceOver Commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (VoiceOver-Befehle in macOS)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Barrierefreiheitsfunktionen in Visual Studio (unter Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

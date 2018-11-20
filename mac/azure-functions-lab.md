@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919740"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296436"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -44,12 +44,10 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![Benennen und Erstellen des Azure Functions-Projekts](media/azure-functions-lab-image2.png)
 
-5. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“. 
+5. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“.
 
-     Es gibt auch drei Dateien:  
-        - **host.json** zum Beschreiben der globalen Konfigurationsoptionen für den Host  
-        - **local.settings.json** zum Konfigurieren der Serviceeinstellungen.  
-        - Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.  
+     Es sind ebenfalls zwei Dateien enthalten: **host.json** für das Beschreiben von globalen Konfigurationsoptionen für den Host und **local.settings.json** für das Konfigurieren von Diensteinstellungen.
+        Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.
 
     Öffnen Sie **local.settings.json**. Diese Datei weist standardmäßig zwei leere Einstellungen für Verbindungszeichenfolgen auf.
 
@@ -58,7 +56,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Übung 2: Erstellen eines Azure-Speicherkontos
 
 1. Melden Sie sich unter [https://portal.azure.com](https://portal.azure.com) bei Ihrem Azure-Konto an.
- 
+
 1. Klicken Sie im Abschnitt **Favoriten** auf der linken Seite des Bildschirms auf **Speicherkonten**:
 
     ![Abschnitt „Favoriten“ des Azure-Portals, der die Elemente von Speicherkonten anzeigt](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Übung 3: Erstellen und Debuggen von Azure-Funktionen
 
-1. Sie können nun mit dem Hinzufügen von Code beginnen. Wenn Sie mit einer .NET-Klassenbibliothek arbeiten, werden Azure-Funktionen als statische Methoden hinzugefügt. Klicken Sie im **Lösungspad** mit der rechten Maustaste auf den Projektknoten **AzureFunctions**, und wählen Sie **Hinzufügen > Funktion hinzufügen...** aus:
+1. Sie können nun mit dem Hinzufügen von Code beginnen. Wenn Sie mit einer .NET-Klassenbibliothek arbeiten, werden Azure-Funktionen als statische Methoden hinzugefügt. Klicken Sie im Pad **Projektmappe** mit der rechten Maustaste auf den Projektknoten **AzureFunctions**, und wählen Sie **Hinzufügen > Funktion hinzufügen** aus:
 
     ![Option „Funktion hinzufügen“](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
         return x + y;
     }
     ```
-1. Im Folgenden werden die einzelnen Schritte der Methodendefinition durchlaufen. 
-    
+1. Im Folgenden werden die einzelnen Schritte der Methodendefinition durchlaufen.
+
     Zunächst sehen Sie ein **FunctionName**-Attribut, das diese Methode als Azure-Funktion markiert. Dieses Attribut kennzeichnet den öffentlichen Namen der Funktion. Der Attributname muss nicht dem tatsächlichen Methodennamen entsprechen.
 
     ![Neue Run-Methode mit dem hervorgehobenen FunctionName-Attribut](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![URL der Azure Functions-API](media/azure-functions-lab-image20.png)
 
-1. Der Breakpoint sollte sofort ausgelöst werden. Die Webanforderungen wurde an die Funktion weitergeleitet und kann nun gedebuggt werden. Zeigen Sie mit der Maus auf die Variable **x**, um deren Wert anzuzeigen. 
+1. Der Breakpoint sollte sofort ausgelöst werden. Die Webanforderungen wurde an die Funktion weitergeleitet und kann nun gedebuggt werden. Zeigen Sie mit der Maus auf die Variable **x**, um deren Wert anzuzeigen.
 
     ![Ausgelöster Breakpoint](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Übung 5: Arbeiten mit Azure-Speichertabellen
 
-Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in diesem Tutorial bisher erstellt wurde, und die Ausführung erfordert viel Zeit und/oder eine große Menge an Infrastruktur. In diesem Fall ist es effektiv, Anforderungen zu akzeptieren, die sich für die Verarbeitung in der Warteschlange befinden, wenn die Ressourcen verfügbar werden. Dies wird von Azure Functions unterstützt. In anderen Fällen sollten Sie Ihre Daten zentral speichern. Dies können Sie mit Azure Storage-Tabellen schnell erledigen. 
+Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in diesem Tutorial bisher erstellt wurde, und die Ausführung erfordert viel Zeit und/oder eine große Menge an Infrastruktur. In diesem Fall ist es effektiv, Anforderungen zu akzeptieren, die sich für die Verarbeitung in der Warteschlange befinden, wenn die Ressourcen verfügbar werden. Dies wird von Azure Functions unterstützt. In anderen Fällen sollten Sie Ihre Daten zentral speichern. Dies können Sie mit Azure Storage-Tabellen schnell erledigen.
 
 1. Fügen Sie die untenstehende Klasse zu **Add.cs** hinzu. Sie sollte sich innerhalb des Namespaces, aber außerhalb der vorhandenen Klasse befinden.
 
@@ -332,7 +330,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
 
 1. Kehren Sie zum Browser zurück, um die Anforderung erneut an dieselbe URL zu senden. Dieses Mal wird Ihnen nach der **Process**-Methode ein Fehler angezeigt. Das liegt daran, dass der Code versucht, eine Zeile mit einer bereits vorhandenen Kombination aus einer Partition und einem Zeilenschlüssel zur Azure Table Storage-Tabelle hinzuzufügen.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
 1. Kehren Sie zu **Visual Studio für Mac** zurück, und beenden Sie die Debugsitzung.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

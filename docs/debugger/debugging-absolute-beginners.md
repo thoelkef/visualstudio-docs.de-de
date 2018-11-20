@@ -1,6 +1,6 @@
 ---
-title: Debuggen von Code für absolute Anfänger
-description: Wenn Sie erstmals Debuggen, erfahren Sie, einige Grundsätze, damit Sie Ihre app im Debugmodus in Visual Studio ausführen können
+title: Debuggen von Code für Einsteiger
+description: Wenn Sie den Debugger zum ersten Mal verwenden, sollten Sie sich mit einigen Grundsätzen auseinandersetzen, die beim Ausführen Ihrer App im Debugmodus mit Visual Studio nützlich sind.
 ms.custom: ''
 ms.date: 07/06/2018
 ms.technology: vs-ide-debug
@@ -14,91 +14,91 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
 ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/14/2018
 ms.locfileid: "45612674"
 ---
-# <a name="how-to-debug-for-absolute-beginners"></a>Gewusst wie: Debuggen für absolute Anfänger
+# <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
-Ohne Fehler auftreten nicht der Code, den wir als Software-Entwickler schreiben immer es ihm angeforderten Aktionen ausgeführt wurde. Manchmal ist es etwas völlig anderes! In diesem Fall wird die nächste Aufgabe besteht, um herauszufinden, warum ein, und obwohl wir versucht, die nur den Code für die Stunden starren beibehalten werden kann, ist es viel einfacher und effizienter, verwenden ein Tool zum Debuggen oder im debugger.
+Der Code, den wir als Softwareentwickler schreiben, verhält sich zweifellos nicht immer wie erwartet. Manchmal verhält er sich sogar völlig anders. In diesem Fall müssen Sie herausfinden, warum der Code sich anders verhält. Hierfür können Sie den Code zwar aufwändig durchgehen, es ist jedoch einfacher und effizienter, ein Tool dafür zu verwenden – den Debugger.
 
-Ein Debugger, nicht leider etwas, das automatisch alle Probleme oder "Fehler" in unserem Code anzeigen können. *Debuggen von* bedeutet, dass zum Ausführen des Codes schrittweise in ein Tool zum Debuggen wie Visual Studio, um den genauen Punkt zu finden, in dem Sie ein Fehler Programmierung unterlaufen. Sie sich vergegenwärtigen, welche Korrekturen, die Sie in Ihrem Code vornehmen müssen, und die Debugtools ermöglichen temporäre Änderungen vornehmen, um die programmausführung fortgesetzt werden kann.
+Ein Debugger kann jedoch leider nicht alle Probleme oder Fehler im Code erkennen. *Debuggen* bedeutet, dass Sie Ihren Code schrittweise in einem entsprechenden Tool wie Visual Studio ausführen, um die Stelle zu finden, an der Sie einen Fehler beim Programmieren gemacht haben. Dann können Sie entscheiden, welche Korrekturen Sie am Code vornehmen müssen. In vielen Debuggern können Sie temporäre Änderungen vornehmen und mit der Ausführung des Programms fortfahren.
 
-Verwenden eines Debuggers effektiv ist auch eine Qualifikation, die Zeit und Vorgehensweise erfahren, aber ist letztlich eine wichtige Aufgabe für alle Softwareentwickler. In diesem Artikel dann wir führen die wichtigsten Aspekte von Debuggen und geben Sie Tipps, die Ihnen den Einstieg erleichtern.
+Es erfordert Zeit und Übung, bis Sie den Debugger effektiv einsetzen können, letztendlich handelt es sich dabei allerdings um eine der wichtigsten Aufgaben eines Softwareentwicklers. In diesem Artikel werden Sie in die wichtigsten Aspekte des Debuggens eingeführt und erhalten Tipps, die Ihnen den Einstieg erleichtern.
 
-## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Klären Sie das Problem, Fragen Sie sich mit der richtigen Fragen
+## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Ermitteln des Problems durch Stellen der richtigen Fragen
 
-Es hilft, um das Problem zu ermitteln, dem Sie in ausgeführt haben, bevor Sie versuchen, das Problem zu beheben. Wir erwarten, dass Sie bereits auf ein Problem in Ihrem Code ausgeführt haben, wäre nicht andernfalls hier versuchen Sie, herauszufinden, wie Sie es Debuggen! Bevor Sie mit dem Debuggen beginnen, stellen Sie daher sicher, dass Sie das Problem identifiziert haben, die, das Sie lösen möchten:
+Es ist wichtig, das Problem zu ermitteln, bevor Sie versuchen, es zu beheben. In Ihrem Code sind in der Vergangenheit sicherlich bereits Probleme aufgetreten, weshalb Sie sich nun in das Debuggen einlesen. Bevor Sie mit dem Debuggen beginnen, sollten Sie sicherstellen, dass Sie das Problem ermittelt haben, das Sie lösen möchten:
 
-* Was erwarten Sie deinen Code?
+* Wie sollte sich der Code eigentlich verhalten?
 
-* Was ist stattdessen passiert?
+* Wie hat er sich stattdessen verhalten?
 
-    Wenn Sie einen Fehler (Ausnahme) während der Ausführung Ihrer app ausführen, kann die eine gute Sache sein! Eine Ausnahme ist ein unerwartetes Ereignis bei der Ausführung von Code, in der Regel eine Art Fehler auftreten. Ein Tool zum Debuggen können Sie an die genaue Stelle in Ihrem Code, in dem die Ausnahme aufgetreten ist, und ermöglicht Ihnen, mögliche Lösungen zu untersuchen.
+    Wenn beim Ausführen Ihrer App ein Fehler (bzw. eine Ausnahme) aufgetreten ist, kann das sogar von Vorteil sein! Bei einer Ausnahme handelt es sich um ein unerwartetes Ereignis, das beim Ausführen von Code auftritt – üblicherweise ein Fehler. Ein Debugger kann Sie an die Stelle im Code führen, an der die Ausnahme aufgetreten ist, und Sie dabei unterstützen, eine Lösung zu finden.
 
-    Wenn etwas anderes aufgetreten ist, was das Symptom des Problems ist? Vermuten Sie bereits, in denen dieses Problem in Ihrem Code aufgetreten ist? Beispielsweise wissen, ob Ihr Code zeigt einen Text an, aber der Text falsch ist, Sie, dass Ihre Daten ungültig ist oder der Code, der den anzuzeigenden Text festlegen, eine Art von Fehler ist. Durch den Code in einem Debugger zu durchlaufen, können Sie jede einzelne Änderung überprüfen, auf Ihre Variablen ermittelt werden, genau, wann und wie falsche Werte zugewiesen werden.
+    Wie wirkt sich das unerwartete Problem aus? Haben Sie bereits einen Verdacht, an welcher Stelle im Code das Problem aufgetreten ist? Wenn Ihr Code beispielsweise Text anzeigt, der Text aber falsch ist, wissen Sie, dass ein Fehler in Ihren Daten vorliegt oder der Code, mit dem der Anzeigetext festgelegt wurde, weist einen Fehler auf. Wenn Sie den Code mit einem Debugger schrittweise durchlaufen, können Sie jede Änderung an Ihren Variablen untersuchen, um herauszufinden, wann und wie falsche Werte zugewiesen wurden.
 
-## <a name="examine-your-assumptions"></a>Überprüfen Sie Ihre Annahmen
+## <a name="examine-your-assumptions"></a>Überprüfen Ihrer Annahmen
 
-Bevor Sie einen Fehler oder einen Fehler untersuchen, stellen Sie die Annahmen, die Sie erwarten, dass eine bestimmte Ergebnis vorgenommen. Können zugreifbarkeitsmodifizierer machen es ausgeblendet oder unbekannte Annahmen Identifizieren eines Problems, selbst wenn Sie rechts auf die Ursache des Problems in einem Debugger suchen. Sie müssen möglicherweise eine lange Liste von möglichen Annahmen! Hier sind einige Fragen helfen Ihnen, Ihre Annahmen Herausforderung.
+Bevor Sie einen Fehler untersuchen, überdenken Sie die Annahmen, die dazu geführt haben, dass Sie ein bestimmtes Ergebnis erwarten. Unbekannte Annahmen können beim Ermitteln eines Problems im Weg stehen, auch wenn Sie die Ursache des Problems bereits im Debugger gefunden haben. Die Liste Ihrer Annahmen kann sehr lang sein. Im Folgenden finden Sie einige Fragen, die Sie sich stellen sollten, um Ihre Annahmen auf die Probe zu stellen.
 
-* Verwenden Sie die richtige-API (d. h. die Rechte Objekt, -Funktion, Methode oder Eigenschaft)? Eine API, die Sie verwenden möglicherweise nicht, was Sie denken, dass dies der Fall ist. (Nach dem Sie den API-Aufruf im Debugger untersuchen, kann deren Behebung eine Reise in der Dokumentation zur Identifizierung, dass die richtige API erfordern.)
+* Verwenden Sie die richtige API (also die richtigen Objekte, Funktionen, Methoden oder Eigenschaften)? Die API, die Sie verwenden, verhält sich möglicherweise anders als erwartet. (Nachdem Sie den API-Aufruf im Debugger untersucht haben, müssen Sie zur Behebung des Problems möglicherweise die entsprechende Dokumentation zum Ermitteln der richtigen API durchlesen.)
 
-* Verwenden eine API ordnungsgemäß Sie? Vielleicht Sie rechts API verwendet, aber nicht in der richtigen Weise verwenden.
+* Verwenden Sie die API richtig? Möglicherweise verwenden Sie die richtige API, aber Sie verwenden sie falsch.
 
-* Enthält der Code keine Tippfehler? Einige Tippfehler, wie eine einfache Namen eines Variablennamens, können schwierig sein, insbesondere beim Arbeiten mit Sprachen, die keine Variablen deklariert werden, damit sie verwendet werden erfordern angezeigt wird.
+* Enthält der Code Tippfehler? Manche Rechtschreibfehler, z.B. im Namen einer Variable, sind schwer zu finden, insbesondere dann, wenn Sie mit Sprachen arbeiten, in denen die Variablen vor der Verwendung nicht deklariert werden müssen.
 
-* Sie vornehmen eine Änderung am Code und wird davon ausgegangen, dass sie unabhängig von das Problem ist, die angezeigt werden?
+* Haben Sie eine Änderung an Ihrem Code vorgenommen, von der Sie davon ausgehen, dass Sie nichts mit dem aktuellen Problem zu tun hat?
 
-* Sollte ein Objekt oder eine Variable, die einen bestimmten Wert (oder eines bestimmten Typs des Werts) enthalten, die unterscheidet sich von was tatsächlich passiert ist?
+* Enthält ein Objekt oder eine Variable einen anderen Wert (oder Werttyp) als erwartet?
 
-* Wissen Sie, dass die Absicht des Codes wird? Häufig ist es schwierig, eine andere Person Debuggen des Codes. Wenn es sich nicht um den Code ist, ist es möglich ist, müssen Sie möglicherweise einarbeiten Ausgaben genau Zweck des Codes ist, bevor Sie es effizient beheben können.
+* Kennen Sie den Zweck des Codes? Es ist schwieriger, Code zu debuggen, den eine andere Person geschrieben hat. Wenn Sie den Code nicht geschrieben haben, müssen Sie nachvollziehen, welchen Zweck der Code hat, bevor Sie diesen effektiv debuggen können.
 
     > [!TIP]
-    > Beim Schreiben von Code, anzufangen Sie klein und beginnen Sie mit Code, der funktioniert! (Guter Beispielcode ist hilfreich, hier.) Manchmal ist es einfacher, einen großen oder komplizierteren Satz von Code zu beheben, indem Sie ein kleines Stück des Codes, die der Kernaufgabe veranschaulicht, die Sie erreichen möchten ab. Anschließend können Sie ändern oder fügen Code hinzu, inkrementell an jedem Punkt auf Fehler testen.
+    > Wenn Sie Code schreiben, sollten Sie mit Code beginnen, der nicht zu umfangreich ist und funktioniert. (Guter Beispielcode ist in diesem Fall hilfreich.) Es ist manchmal einfacher, Probleme in umfangreichem oder kompliziertem Code zu finden, indem Sie mit einem kleinen Codeabschnitt beginnen, der die Kernaufgabe veranschaulicht, die erfüllt werden soll. Anschließend können Sie inkrementell Code ändern oder hinzufügen und den Code an jeder Stelle auf Fehler testen.
 
-Durch hinterfragen der Annahmen, können Sie die Zeit reduzieren, dauert es um ein Problem im Code zu suchen. Sie können auch die Zeit reduzieren, dauert es um ein Problem zu beheben.
+Sie können Probleme in Ihrem Code schneller finden, indem Sie Ihre Annahmen in Frage stellen. Möglicherweise können Sie dadurch auch Probleme schneller beheben.
 
-## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Durchlaufen Sie Ihren Code im Debugmodus befindet, um zu suchen, in dem das Problem aufgetreten ist
+## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Schrittweises Durchlaufen des Codes im Debugmodus zum Ermitteln der Stelle, an der das Problem aufgetreten ist
 
-Wenn Sie normalerweise eine app ausführen, sehen Sie Fehler und falsche Ergebnisse, nur, nachdem der Code ausgeführt wurde. Ein Programm kann auch unerwartet beendet werden, ohne den Gründen dafür.
+Wenn Sie eine App ausführen, sehen Sie Fehler und falsche Ergebnisse normalerweise erst, nachdem der Code ausgeführt wurde. Zudem kann ein Programm unerwartet beendet werden, ohne dass Sie den Grund dafür erfahren.
 
-Ausführen einer app in einen Debugger, so genannte *Debugmodus*, bedeutet, dass der Debugger alles, was überwacht aktiv, das geschieht, wenn die Anwendung ausgeführt wird. Außerdem können Sie zum Anhalten der app zu irgendeinem Zeitpunkt aus, um dessen Zustand zu untersuchen und durchlaufen Sie anschließend auf Ihren Code Zeile für Zeile jedes Detail überwachen, während es geschieht.
+Das Ausführen einer App in einem Debugger (auch als *Debugmodus* bezeichnet) bedeutet, dass der Debugger alle Vorgänge während der Ausführung des Programms überwacht. Sie können die App zudem jederzeit pausieren, um ihren Zustand zu überprüfen, und den Code anschließend schrittweise durchlaufen, um jedes Detail in Echtzeit zu beobachten.
 
-In Visual Studio debugging-Modus über den eingegebenen **F5** (oder die **Debuggen** > **Debuggen starten** Menübefehl oder die **Debugging starten**  Schaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debug-Symbolleiste. Wenn Ausnahmen auftreten, öffnet Visual Studio Ausnahme-Hilfe den genauen Punkt, in dem die Ausnahme aufgetreten ist, und bietet weitere hilfreiche Informationen.
+In Visual Studio starten Sie den Debugmodus, indem Sie auf **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
 
-Wenn Sie eine Ausnahme nicht erhalten haben, verfügen Sie wahrscheinlich eine gute Idee, wo Sie für das Problem in Ihrem Code zu suchen. Diese benutzen Sie *Haltepunkte* mit dem Debugger, damit Sie eine Möglichkeit, Ihren Code gründlich untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, in dem den ausgeführten Code in Visual Studio anhalten soll, sodass Sie können einen Blick auf die Werte von Variablen, oder das Verhalten von Arbeitsspeicher oder die Reihenfolge, in der Code ausgeführt wird.
+Wenn keine Ausnahme ausgelöst wurde, haben Sie möglicherweise dennoch eine Idee, an welcher Stelle im Code Sie nach dem Problem suchen müssen. Hierfür verwenden Sie *Breakpoints* mit dem Debugger, damit Sie den Code gründlicher untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Breakpoint gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie die Werte von Variablen, das Verhalten des Arbeitsspeichers oder die Sequenz, in der der Code ausgeführt wird, überprüfen.
 
-In Visual Studio können Sie schnell einen Haltepunkt festlegen, indem Sie auf den linken Rand neben einer Codezeile. Oder setzen Sie den Cursor in einer Zeile, und drücken Sie **F9**.
+In Visual Studio können Sie einen Breakpoint schnell festlegen, indem Sie neben einer Codezeile auf den linken Rand klicken. Alternativ können Sie auf eine Zeile zeigen und **F9** drücken.
 
-Um diese Konzepte zu verdeutlichen, führen wir Sie durch den Beispielcode, die bereits mehrere Fehler enthält. Wir verwenden C#-, debugging-Funktionen gelten jedoch für Visual Basic, C++, JavaScript, Python und anderen unterstützten Sprachen.
+Zur Veranschaulichung dieser Konzepte werden Sie durch Beispielcode geführt, der bereits Fehler enthält. Hier wird C# verwendet, die Features des Debuggers gelten jedoch auch für Visual Basic, C++, JavaScript, Python und andere unterstützte Sprachen.
 
-### <a name="create-a-sample-app-with-some-bugs"></a>Erstellen Sie eine Beispiel-app (mit einigen Fehlern)
+### <a name="create-a-sample-app-with-some-bugs"></a>Erstellen einer Beispiel-App (mit Fehlern)
 
-Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
+Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
-1. Sie benötigen Visual Studio installiert und entweder die. **NET Desktopentwicklung** arbeitsauslastung oder der. **NET Core plattformübergreifende Entwicklung** Workload installiert ist, je nachdem welche app Geben Sie für die erstellen möchten.
+1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, was für eine App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
-    Wenn Sie verwenden möchten, installieren Sie die Workload jedoch bereits über Visual Studio, klicken Sie auf **Tools** > **Tools und Features abrufen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die. **NET Desktopentwicklung** (oder. **NET Core plattformübergreifende Entwicklung**) Workload, wählen Sie dann **ändern**.
+    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
-1. Öffnen Sie Visual Studio, und wählen Sie dann **Datei** > **neu** > **Projekt**.
+1. Öffnen Sie Visual Studio, und klicken Sie auf **Datei** > **Neu** > **Projekt**.
 
-1. Wählen Sie eine Vorlage für Ihren Anwendungscode.
+1. Wählen Sie eine Vorlage für Ihren Anwendungscode aus.
 
-    Für .NET Framework in der **neues Projekt** Dialogfeld wählen **Visual C#-**, **Windows Desktop** aus dem Abschnitt der installierten Vorlagen, und klicken Sie dann im mittleren Bereich die Option  **Konsolen-App ((.NET Framework)**.
+    Klicken Sie für .NET Framework im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Framework)** aus.
 
-    Für .NET Core in der **neues Projekt** Dialogfeld wählen **Visual C#-**, **.NET Core** wählen Sie aus dem Abschnitt der installierten Vorlagen, und klicken Sie dann im mittleren Bereich  **Konsolen-App ((.NET Core)**.
+    Klicken Sie für .NET Core im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **.NET Core**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Core)** aus.
 
-    Wenn Sie diese Vorlagen nicht angezeigt wird, müssen Sie die erforderliche Workload installieren (siehe vorherigen Schritten).
+    Wenn diese Vorlagen nicht angezeigt werden, müssen Sie die entsprechende Workload wie zuvor erläutert installieren.
 
-1. In der **Namen** Feld **ConsoleApp-FirstApp** , und klicken Sie auf **OK**.
+1. Geben Sie im Feld **Name** **ConsoleApp-FirstApp** ein, und klicken Sie auf **OK**.
 
-    Visual Studio erstellt das Konsolenprojekt, die im Projektmappen-Explorer im rechten Bereich angezeigt wird.
+    Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
 
-1. In *"Program.cs"*, ersetzen Sie den Standardcode durch folgenden Code:
+1. Ersetzen Sie in der Datei *Program.cs* den gesamten Code durch den folgenden:
 
     ```csharp
     using System;
@@ -179,15 +179,15 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
     }
     ```
 
-    Unsere Absicht, damit dieser Code ist der Galaxy-Name, den Abstand und die Galaxie und den Typ des Galaxy alle in einer Liste angezeigt. Um zu debuggen, ist es wichtig, die Absicht des Codes zu verstehen. So sieht das Format für eine Zeile aus der Liste, die wir in der Ausgabe angezeigt werden soll:
+    Mit diesem Code sollen der Name der Galaxie, die Entfernung zur Galaxie und der Galaxietyp in einer Liste angezeigt werden. Beim Debuggen ist es wichtig, den Zweck des Codes nachvollziehen zu können. Hier finden Sie das Format für eine Zeile aus der Liste, die in der Ausgabe angezeigt werden soll:
 
-    *Name des Galaxy*, *Abstand*, *Galaxy Typ*.
+    *Name der Galaxie*, *Entfernung*, *Galaxietyp*.
 
 ### <a name="run-the-app"></a>Ausführen der App
 
-1. Drücken Sie **F5** oder **Debuggen starten** Schaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten") befindet Sie sich in der Debug-Symbolleiste über dem Codeeditor.
+1. Drücken Sie die Taste **F5**, oder klicken Sie in der Symbolleiste „Debuggen“ (über dem Code-Editor) auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging").
 
-    Die app wird gestartet und es sind keine Ausnahmen, die uns vom Debugger angezeigt. Die Ausgabe im Konsolenfenster angezeigten ist jedoch nicht Ihren Erwartungen. Hier ist die erwartete Ausgabe:
+    Die App wird gestartet, und der Debugger zeigt keine Ausnahmen an. Die Ausgabe im Konsolenfenster entspricht jedoch nicht Ihren Erwartungen. Folgende Ausgabe wird erwartet:
 
     ```
     Tadpole  400,  Spiral 
@@ -198,7 +198,7 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
     Maffei 1,  Elliptical
     ```
 
-    Allerdings sehen Sie dies stattdessen:
+    Stattdessen wird allerdings Folgendes ausgegeben:
 
     ```
     Tadpole  400,  ConsoleApp_FirstApp.GType 
@@ -209,11 +209,11 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
     Maffei 1, 11,  ConsoleApp_FirstApp.GType
     ```
 
-    Suchen die Ausgabe und den Code, wissen wir, die `GType` ist der Name der Klasse, die den Typ des Galaxy speichert. Es wird versucht, den tatsächlichen Galaxy-Typ (z. B. "Spirale"), zeigen nicht die Klassennamen.
+    Wenn Sie sich die Ausgabe und den Code ansehen, wissen Sie, dass `GType` dem Namen der Klasse entspricht, in der der Galaxietyp gespeichert wird. Versuchen Sie nun, tatsächlich den Galaxietyp (z.B. „Spiral“) anzuzeigen, nicht den Namen der Klasse.
 
-### <a name="debug-the-app"></a>Debuggen der app
+### <a name="debug-the-app"></a>Debuggen der App
 
-1. Legen Sie einen Haltepunkt mit der app, die noch ausgeführt wird, indem Sie auf den linken Rand neben der `Console.WriteLine` Methodenaufruf in dieser Codezeile.
+1. Setzen Sie einen Breakpoint, während die App noch ausgeführt wird, indem Sie auf den linken Rand neben dem `Console.WriteLine`-Methodenaufruf in dieser Codezeile klicken.
 
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
@@ -222,49 +222,49 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
     }    
     ```
 
-    Wenn Sie den Haltepunkt festlegen, wird ein roter Punkt am linken Rand angezeigt.
+    Wenn Sie einen Breakpoint festlegen, wird ein roter Punkt am linken Rand angezeigt.
 
-    Da wir ein Problem in der Ausgabe sehen, beginnen wir Debuggen anhand des vorangehenden Codes, der die Ausgabe im Debugger festlegt.
+    Da ein Problem in der Ausgabe erkennbar ist, sollten Sie mit dem Debuggen im vorangehenden Code beginnen, der die Ausgabe im Debugger festlegt.
 
-1. Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**).
+1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
-    Die app hält die Ausführung am Haltepunkt, den Sie festlegen. Die gelbe Markierung angibt, in denen der Debugger angehalten ist (die gelbe Zeile des Codes wurde noch nicht ausgeführt).
+    Die App hält an dem von Ihnen festgelegten Breakpoint an. Die gelbe Markierung gibt an, wo der Debugger angehalten wird (die gelbe Codezeile wurde noch nicht ausgeführt).
 
-1. Zeigen Sie auf die `GalaxyType` Erweitern von Variablen, die auf der rechten Seite, und klicken Sie dann auf der linken Seite, der das Schraubenschlüsselsymbol `theGalaxy.GalaxyType`. Sie sehen, dass `GalaxyType` enthält eine Eigenschaft `MyGType`, und legen Sie den Wert der Eigenschaft ist auf `Spiral`.
+1. Zeigen Sie auf die `GalaxyType`-Variable auf der rechten Seite, und erweitern Sie `theGalaxy.GalaxyType` auf der linken Seite des Schraubenschlüsselsymbols. Sie können sehen, dass `GalaxyType` die Eigenschaft `MyGType` enthält und der Eigenschaftswert auf `Spiral` festgelegt ist.
 
-    ![Überprüfen Sie eine variable](../debugger/media/beginners-inspect-variable.png)
+    ![Überprüfen einer Variable](../debugger/media/beginners-inspect-variable.png)
 
-    "Spirale" ist tatsächlich der richtige Wert an, den Sie erwartet, die auf der Konsole auszugeben. Es ist also ein guter Ausgangspunkt, dass Sie diesen Wert in diesem Code beim Ausführen der app zugreifen können. In diesem Szenario verwenden wir die falsche-API. Es wird angezeigt, wenn wir dieses Problem beim Ausführen von Code im Debugger beheben können.
+    Bei „Spiral“ handelt es sich um den Wert, der eigentlich in der Konsole hätte ausgegeben werden sollen. Es ist also ein guter Anfang, dass Sie während der Ausführung der App auf diesen Wert im Code zugreifen können. In diesem Szenario verwenden Sie die falsche API. Testen Sie nun, ob dieses Problem behoben werden kann, während der Code im Debugger ausgeführt wird.
 
-1. In den gleichen Code, während des Debuggens weiterhin, positionieren Sie den Cursor am Ende der `theGalaxy.GalaxyType` ändern sie die `theGalaxy.GalaxyType.MyGType`. Obwohl Sie diese Änderung vornehmen können, zeigt der Code-Editor, eine Fehlermeldung, dass sie diesen Code kompilieren kann nicht.
+1. Zeigen Sie in diesem Code während des Debuggens auf das Ende von `theGalaxy.GalaxyType`, und ändern Sie den Wert in `theGalaxy.GalaxyType.MyGType`. Sie können diese Änderung zwar vornehmen, aber der Code-Editor zeigt einen Fehler an, der besagt, dass der Code nicht kompiliert werden kann.
 
     ![Syntaxfehler](../debugger/media/beginners-edit.png)
 
-1. Klicken Sie auf **bearbeiten** in die **bearbeiten und Fortfahren** Meldungsfeld. Sie sehen eine Fehlermeldung in nun der **Fehlerliste** Fenster. Der Fehler gibt an, dass die `'object'` enthält keine Definition für `MyGType`.
+1. Klicken Sie im Meldungsfeld **Bearbeiten und Fortfahren** auf **Bearbeiten**. Sie sehen nun eine Fehlermeldung im Fenster **Fehlerliste**. Der Fehler gibt an, dass `'object'` keine Definition für `MyGType` enthält.
 
     ![Syntaxfehler](../debugger/media/beginners-no-definition.png)
 
-    Obwohl wir jede Galaxy mit einem Objekt des Typs festgelegt `GType` (IValidator.h der `MGType` Eigenschaft), der Debugger erkennt keine der `theGalaxy` -Objekt als ein Objekt vom Typ `GType`. Was ist los? Möchten Sie über Code zu suchen, die der Galaxy-Typ festgelegt. Wenn Sie dies tun, Sie sehen, dass die `GType` -Klasse verfügt sicherlich über eine Eigenschaft des `MyGType`, ist jedoch etwas nicht rechts. Die Fehlermeldung zum `object` erweist sich die Anhaltspunkt; der Language-Interpreter, der Typ erscheint wie ein Objekt des Typs `object` anstelle eines Objekts vom Typ `GType`.
+    Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
 
-1. Durch den Code im Zusammenhang mit dem Typ Galaxy suchen, finden Sie die `GalaxyType` Eigenschaft der `Galaxy` Klasse angegeben ist, als `object` anstelle von `GType`.
+1. Wenn Sie den Code betrachten, der für das Festlegen des Galaxietyps verwendet wird, werden Sie feststellen, dass die `GalaxyType`-Eigenschaft der `Galaxy`-Klasse auf `object` statt `GType` festgelegt ist.
 
     ```csharp
     public object GalaxyType { get; set; }     
     ```
 
-1. Ändern des vorangehenden Codes folgendermaßen:
+1. Ändern Sie den vorangehenden Code folgendermaßen:
 
     ```csharp
     public GType GalaxyType { get; set; }     
     ```
 
-1. Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**) Code neu kompilieren und neu starten.
+1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um den Code neu zu kompilieren und zu starten.
 
-    Nun, wenn der Debugger hält bei `Console.WriteLine`, können Sie den Mauszeiger `theGalaxy.GalaxyType.MyGType`, und sehen Sie sich, die der Wert ordnungsgemäß festgelegt ist.
+    Wenn der Debugger nun bei `Console.WriteLine` anhält, können Sie auf `theGalaxy.GalaxyType.MyGType` zeigen und werden feststellen, dass der Wert ordnungsgemäß festgelegt wurde.
 
-1. Entfernen Sie den Haltepunkt durch Klicken auf den Haltepunkt Kreis am linken Rand (oder mit der rechten Maustaste, und wählen Sie **Haltepunkt** > **Breakpoint löschen**), und drücken Sie dann die **F5** um den Vorgang fortzusetzen.
+1. Entfernen Sie den Breakpoint, indem Sie auf den roten Punkt am linken Rand klicken (oder mit der rechten Maustaste darauf klicken und **Breakpoint** > **Delete Breakpoint** (Breakpoint > Breakpoint entfernen) auswählen), und drücken Sie dann **F5**, um den Vorgang fortzusetzen.
 
-    Die app ausgeführt wird und das Ergebnis angezeigt. Es sieht ziemlich gut, aber Sie dabei beachten Sie bitte; die Galaxie kleine Magellanic Cloud als eine unregelmäßige Galaxy in der Konsolenausgabe angezeigt wird, wird erwartet, aber es überhaupt kein Galaxy-Typ zeigt.
+    Die App wird ausgeführt, und eine Ausgabe wird angezeigt. Diese sieht nun gut aus, aber Sie werden feststellen, dass der Galaxietyp von „Small Magellanic Cloud“ nicht wie erwartet als „Irregular“ angezeigt wird, sondern gar nicht.
 
     ```
     Tadpole  400,  Spiral 
@@ -275,61 +275,61 @@ Als Nächstes erstellen wir eine Anwendung, die einige Fehler aufweist.
     Maffei 1,  Elliptical
     ```
 
-1. Legen Sie einen Haltepunkt in dieser Zeile des Codes.
+1. Legen Sie einen Breakpoint in dieser Codezeile fest.
 
     ```csharp
     public GType(char type)
     ```
 
-    Dieser Code ist, in dem der Galaxy-Typ festgelegt ist, möchten wir eine näher ansehen.
+    In diesem Code wird der Galaxietyp festgelegt, deshalb sollten Sie sich diesen genauer ansehen.
 
-1. Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**) neu starten.
+1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um die App neu zu starten.
 
-    Der Debugger hält bei der Codezeile, in dem Sie den Haltepunkt festgelegt.  
+    Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.  
 
-1. Zeigen Sie auf die `type` Variable. Sehen Sie einen Wert von `S` (befolgen Sie den Zeichencode). Gesuchte Wert `I`, da Sie wissen, das ist eine unregelmäßige Galaxy-Typ.
+1. Zeigen Sie auf die Variable `type`. Sie sehen, dass der Wert (dem Zeichencode nach) `S` ist. Für Sie ist jedoch der Wert `I` relevant, da Sie wissen, dass der Galaxietyp „Irregular“ ist.
 
-1. Drücken Sie **F5** und zeigen Sie auf die `type` Variable erneut aus. Wiederholen Sie diesen Schritt, bis Sie sehen, dass der Wert `I` in die `type` Variable.
+1. Drücken Sie **F5**, und zeigen Sie erneut auf die Variable `type`. Wiederholen Sie diesen Schritt, bis der Wert `I` in der Variable `type` angezeigt wird.
 
-    ![Überprüfen Sie eine variable](../debugger/media/beginners-inspecting-data.png)
+    ![Überprüfen einer Variable](../debugger/media/beginners-inspecting-data.png)
 
-1. Drücken Sie nun **F11** (**Debuggen** > **Einzelschritt** oder **Einzelschritt** der Debug-Symbolleiste).
+1. Drücken Sie nun **F11** (**Debuggen** > **Einzelschritt**), oder klicken Sie auf die Schaltfläche **Einzelschritt** in der Debugsymbolleiste.
 
-    **F11** wechselt den Debugger eine Anweisung zu einem Zeitpunkt (und Code ausführt). **F10** (**Prozedurschritt**) einen ähnlichen Befehl ein, und beide sind äußerst nützlich, wenn zum Verwenden des Debuggers kennen zu lernen.
+    Durch **F11** durchläuft der Debugger eine Anweisung nach der anderen (und führt deren Code aus). Bei **F10** (**Prozedurschritt**) handelt es sich um einen ähnlichen Befehl, und beide Befehle sind sehr nützlich, wenn Sie lernen, wie der Debugger verwendet wird.
 
-1. Drücken Sie **F11** bis Sie auf die Codezeile in das Beenden der `switch` -Anweisung für einen Wert von "I". Hier sehen Sie eine klare Problem durch einen Tippfehler. Sie erwartet, dass den Code, fahren Sie fort, um, in dem er festlegt `MyGType` als ein irregulär Galaxy-Typ, aber der Debugger stattdessen überspringt diesen Code vollständig und hält bei der `default` Teil der `switch` Anweisung.
+1. Drücken Sie **F11**, bis Sie bei der Codezeile in der `switch`-Anweisung angelangt sind, die den Wert „I“ enthalten sollte. Hier sehen Sie, dass das Problem durch einen Tippfehler erzeugt wird. Sie erwarten, dass der Code fortgesetzt wird, bis `MyGType` als „Irregular“ festgelegt wird. Stattdessen überspringt der Debugger diesen Code vollständig und hält im Abschnitt `default` der Anweisung `switch` an.
 
-    ![Suchen Sie einen Tippfehler](../debugger/media/beginners-typo.png)
+    ![Suche von Tippfehlern](../debugger/media/beginners-typo.png)
 
-    Betrachten den Code, durch einen Tippfehler im werden daraufhin die `case 'l'` Anweisung. Es muss `case 'I'`.
+    Wenn Sie den Code betrachten, sehen Sie, dass in der `case 'l'`-Anweisung ein Tippfehler ist. Dort sollte `case 'I'` stehen.
 
-1. Klicken Sie in den Code für `case 'l'` und ersetzen es durch `case 'I'`.
+1. Klicken Sie auf den Code für `case 'l'`, und ersetzen Sie diesen durch `case 'I'`.
 
-1. Entfernen Sie den Haltepunkt, und klicken Sie dann auf die **Neustart** Schaltfläche, um die app neu starten.
+1. Entfernen Sie den Breakpoint, und klicken Sie auf die Schaltfläche **Neu starten**, um die App neu zu starten.
 
-    Die Fehler nun behoben werden, und Sie sehen, dass die Ausgabe, die Sie erwarten, dass!
+    Die Fehler wurden nun behoben, und die erwartete Ausgabe wird angezeigt!
 
-    Drücken Sie eine beliebige Taste, um die app fertig zu stellen.
+    Drücken Sie eine beliebige Taste, um die App zu beenden.
 
 ## <a name="summary"></a>Zusammenfassung
 
-Wenn Sie ein Problem angezeigt wird, verwenden Sie den Debugger und [Schritt Befehle](../debugger/navigating-through-code-with-the-debugger.md) wie z. B. **F10** und **F11** den Codebereich mit dem Problem zu finden.
+Wenn ein Problem auftritt, sollten Sie den Debugger und [Schrittbefehle](../debugger/navigating-through-code-with-the-debugger.md) wie **F10** und **F11** verwenden, um den Bereich im Code zu finden, der das Problem auslöst.
 
 > [!NOTE]
-> Wenn es schwierig ist, den Codebereich identifizieren, in dem das Problem auftritt, legen einen Haltepunkt im Code, der ausgeführt wird, bevor das Problem tritt auf, und klicken Sie dann diese Befehle verwenden, bis Sie sehen, dass das Problem Manifest. Sie können auch [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) zum Protokollieren von Nachrichten an die **Ausgabe** Fenster. Von protokollierten Nachrichten suchen (und bemerken, welche Nachrichten noch nicht angemeldet wurden), können Sie häufig den Codebereich mit dem Problem isolieren. Sie müssen möglicherweise diesen Vorgang mehrmals wiederholen, um es einzugrenzen.
+> Wenn der Bereich mit dem Fehler schwer zu finden ist, legen Sie einen Breakpoint in dem Bereich des Codes fest, der ausgeführt wird, bevor das Problem auftritt, und verwenden Sie anschließend Schrittbefehle, bis das Problem auftritt. Sie können zudem [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) verwenden, um Nachrichten im Fenster **Ausgabe** zu protokollieren. Mithilfe von protokollierten Meldungen (und mithilfe der noch nicht protokollierten Meldungen) können Sie den Bereich, in dem das Problem auftritt, häufig eingrenzen. Sie müssen diesen Vorgang hierfür möglicherweise mehrmals wiederholen.
 
-Wenn Sie den Codebereich mit dem Problem finden, verwenden Sie den Debugger untersuchen. Um die Ursache eines Problems zu finden, überprüfen Sie die problematische Code während der Ausführung Ihrer app im Debugger:
+Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, um es zu untersuchen. Untersuchen Sie den problematischen Code, während Sie die App im Debugger ausführen, um die Ursache des Problems zu ermitteln:
 
-* [Untersuchen Sie Variablen](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) und überprüfen Sie, ob sie den Typ der Werte enthalten, die sie enthalten soll. Wenn Sie einen falschen Wert finden, herauszufinden, wo der ungültige Wert festgelegt wurde (um zu suchen, in denen der Wert festgelegt wurde, müssen möglicherweise entweder den Debugger starten, sehen Sie sich die [Aufrufliste](../debugger/how-to-use-the-call-stack-window.md), oder beides).
+* [Untersuchen Sie die Variablen](../debugger/view-data-values-in-data-tips-in-the-code-editor.md), und überprüfen Sie, ob diese die Werte enthalten, die Sie enthalten sollten. Wenn Sie einen falschen Wert finden, sollten Sie ermitteln, wo dieser festgelegt wurde. Starten Sie hierfür den Debugger neu, oder überprüfen Sie die [Aufrufliste](../debugger/how-to-use-the-call-stack-window.md) (oder beides).
 
-* Überprüfen Sie, ob Ihre Anwendung den Code ausführt, den Sie erwarten. (Z. B. in der beispielanwendung, erwartet wurde des Codes für die Switch-Anweisung beim Festlegen des Galaxy-Typs, unregelmäßige, aber die app wurde übersprungen, den Code der Tippfehler.)
+* Überprüfen Sie, ob die Anwendung den Code ausführt, den Sie erwarten. (In der Beispielanwendung haben Sie beispielsweise erwartet, dass der Code für die switch-Anweisung den Galaxietyp auf „Irregular“ festlegt, aber die App hat den Code wegen eines Tippfehlers übersprungen.)
 
 > [!TIP]
-> Sie können einen Debugger verwenden, können Sie die Fehler zu finden. Ein Tool zum Debuggen finden Fehler *für Sie* nur dann, wenn die Absicht des Codes bekannt ist. Ein Tool kann nur die Absicht des Codes bekannt, wenn Sie als Entwickler können diese Absicht Ausdrücken. Schreiben von [Komponententests](../test/improve-code-quality.md) ist, wie Sie dies tun.
+> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie gelernt, dass einige allgemeine Konzepte zum Debuggen. Als Nächstes können Sie beginnen, lernen, wie Sie mit Visual Studio debuggen.
+In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Nun können Sie lernen, wie das Debuggen mithilfe von Visual Studio funktioniert.
 
 > [!div class="nextstepaction"]
 > [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)

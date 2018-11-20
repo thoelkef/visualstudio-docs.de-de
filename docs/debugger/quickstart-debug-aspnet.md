@@ -1,6 +1,6 @@
 ---
 title: Debuggen von ASP.NET
-description: Debuggen von ASP.NET mithilfe von Visual Studio-debugger
+description: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.technology: vs-ide-debug
@@ -15,32 +15,32 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
 ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/08/2018
 ms.locfileid: "39636986"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mit dem Visual Studio-debugger
+# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
-Visual Studio-Debugger bietet viele leistungsstarke Features, damit Sie Ihre apps Debuggen können. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
+Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
-1. Klicken Sie unter **Visual C#-**, wählen Sie **Web**, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung**.
+1. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET Core-Webanwendung**.
 
-1. Geben Sie einen Namen wie **MyDbgApp** , und klicken Sie auf **OK**.
+1. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
-1. Wählen Sie im angezeigten Dialogfeld **Webanwendung** im mittleren Bereich, und klicken Sie dann auf **OK**.
+1. Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
 
-     Wenn Sie nicht angezeigt wird der **Webanwendung** -Projektvorlage aus, klicken Sie auf die **Visual Studio-Installer öffnen** Link im linken Bereich des der **neues Projekt** Dialogfeld. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
+     Wenn Ihnen die Projektvorlage **Webanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
 
-    ![Wählen Sie eine Webanwendung](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ![Auswählen einer Webanwendung](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 
     Visual Studio erstellt daraufhin das Projekt.
 
-1. Klicken Sie im Projektmappen-Explorer öffnen Sie About.cshtml.cs (unter "Pages/About.cshtml), und Ersetzen Sie den folgenden code
+1. Öffnen Sie die Datei „About.cshtml.cs“ (unter Pages/About.cshtml) im Projektmappen-Explorer, und ersetzen Sie den folgenden Code
 
     ```csharp
     public void OnGet()
@@ -74,66 +74,66 @@ Visual Studio-Debugger bietet viele leistungsstarke Features, damit Sie Ihre app
 
 ## <a name="set-a-breakpoint"></a>Haltepunkt festlegen
 
-Ein *Haltepunkt* ist der code eines Markers, der angibt, in denen Visual Studio die Ausführung angehalten werden soll, können Sie einen Blick auf die Werte von Variablen oder das Verhalten des Arbeitsspeichers oder angibt, ob eine Verzweigung des Codes ausführen erste nutzen. Es ist das grundlegendste Feature beim Debuggen.
+Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anhalten soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. Es handelt sich dabei um ein grundlegendes Debugfeature.
 
-1. Um den Haltepunkt festzulegen, klicken Sie auf den Bundsteg links neben der `doWork` Funktion (oder wählen Sie die Codezeile aus, und drücken Sie **F9**).
+1. Wenn Sie einen Breakpoint festlegen möchten, klicken Sie im Bundsteg auf den Bereich links neben der Funktion `doWork`. Alternativ können Sie aber auch die Codezeile auswählen und **F9** drücken.
 
     ![Haltepunkt festlegen](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
 
-    Der Haltepunkt festgelegt ist, auf der linken Seite von der öffnenden geschweiften Klammer (`{`).
+    Der Breakpoint wird links neben der öffnenden geschweiften Klammer (`{`) festgelegt.
 
-1. Drücken Sie nun **F5** (oder wählen Sie **Debuggen > Debuggen starten**).
+1. Drücken Sie dann **F5**, oder klicken Sie auf **Debuggen > Debuggen starten**.
 
-1. Wenn die Webseite geladen wird, klicken Sie auf die **zu** Link am oberen Rand der Webseite.
+1. Klicken Sie oben auf der Webseite auf den Link **Info**, wenn die Webseite geladen wird.
 
-    Der Debugger hält, in dem Sie den Haltepunkt festgelegt, ist. Die Anweisung, in denen die Debugger und die app-Ausführung angehalten wird, wird durch den gelben Pfeil angegeben. Die Zeile mit der öffnenden geschweiften Klammer (`{`) nach der `doWork` Funktionsdeklaration wurde noch nicht ausgeführt.
+    Der Debugger hält an dem Breakpoint an, den Sie festlegen. Der gelbe Pfeil deutet auf die Anweisung, bei der der Debugger und die App-Ausführung ausgesetzt werden. Die Zeile mit der öffnenden geschweiften Klammer (`{`) nach der Funktionsdeklaration `doWork` wurde noch nicht ausgeführt.
 
     ![Treffen eines Haltepunkts](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie viele Haltepunkte, die Sie häufig verfügen schrittweise, Durchlaufen einer [bedingten Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Dies spart Zeit und kann auch einfacher Debuggen von Problemen, die schwer reproduzierbar sind.
+    > Verwenden Sie bei Breakpoints in einer Schleife oder Rekursion oder bei sehr vielen Breakpoints, die Sie häufig schrittweise durchlaufen, einen [bedingten Breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression), damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Damit sparen Sie Zeit und erleichtern sich möglicherweise das Debuggen von Problemen, die nur schwierig zu reproduzieren sind.
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle anweisen des Debuggers zum fortfahren. Wir zeigen es sich um einen nützlichen Code Navigationsbefehl die neuen Visual Studio 2017.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
 
-Während die Ausführung am Haltepunkt angehalten wird, zeigen Sie die Anweisung `return c2` bis Grün **Ausführung bis Klick** Schaltfläche ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und drücken Sie dann die **Ausführung bis Klick** Schaltfläche ".
+Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `return c2`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und klicken Sie dann auf diese.
 
-![Ausführung bis Klick](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Ausführen bis Klick](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-Die app wird die Ausführung fortgesetzt, und hält auf die Codezeile, in dem Sie die Schaltfläche geklickt.
+Dann wird die App weiter ausgeführt, und wird bei der Codezeile ausgesetzt, bei der Sie die Schaltfläche angeklickt haben.
 
-Allgemeine Tastenkombinationen, die zum Einschließen von Code schrittweise durchlaufen **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Handbuch für Anfänger](../debugger/getting-started-with-the-debugger.md).
+Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchzugehen. Ausführlichere Informationen finden Sie im [Leitfaden für Einsteiger](../debugger/getting-started-with-the-debugger.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Überprüfen von Variablen in einem datatip
+## <a name="inspect-variables-in-a-datatip"></a>Untersuchen von Variablen in einem Datentipp
 
-1. In der aktuellen Zeile des Codes (gekennzeichnet durch die gelbe Ausführungszeiger), zeigen Sie auf die `c2` Objekt mit der Maus auf einen Datatip angezeigt.
+1. Zeigen Sie in der aktuellen Codezeile (zu erkennen an dem gelben Ausführungszeiger) mit der Maus auf das `c2`-Objekt, um Datentipps anzuzeigen.
 
-    ![Einen Datatip anzeigen](../debugger/media/dbg-qs-data-tip-aspnet.png)
+    ![Anzeigen eines Datentipps](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Der Datatip erfahren Sie, den aktuellen Wert des der `c2` Variablen und ermöglicht Ihnen, ihre Eigenschaften zu überprüfen. Beim Debuggen, wenn einen Wert angezeigt wird, die, den Sie nicht erwarten, müssen Sie wahrscheinlich einen Fehler in den vorhergehenden oder die aufrufenden Codezeilen. 
+    Der aktuelle Wert der Variable `c2` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
 
-2. Erweitern Sie den Datatip Betrachten der aktuellen Eigenschaftswerte für die `c2` Objekt.
+2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c2`-Objekts einzusehen.
 
-3. Sollten Sie den Datatip anzuheften, damit Sie fortfahren können, um den Wert der anzuzeigen `c2` während Sie Code ausführen, klicken Sie auf das kleine Pinsymbol. (Sie können den angehefteten Datatip an einem geeigneten Speicherort verschieben.)
+3. Wenn Sie den Datentipp anheften möchten, damit bei der Codeausführung weiterhin der Wert von `c2` angezeigt wird, klicken Sie auf das Stecknadelsymbol. (Sie können den angehefteten Datentipp an eine geeignete Stelle verschieben.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Bearbeiten von Code und Fortsetzen des Debuggens
 
-Wenn Sie eine Änderung, die Sie in Ihrem Code während einer Debugsitzung testen möchten identifizieren, können Sie dies, zu tun.
+Wenn Sie in einer Debugsitzung eine Änderung feststellen, die Sie in Ihrem Code testen möchten, ist dies auch kein Problem.
 
-1. In der `OnGet` -Methode, klicken Sie auf der zweiten Instanz von `result.First.Value` , und ändern Sie `result.First.Value` zu `result.Last.Value`.
+1. Klicken Sie in der `OnGet`-Methode auf die zweite Instanz von `result.First.Value`, und ändern Sie `result.First.Value` in `result.Last.Value`.
 
-1. Drücken Sie **F10** (oder **Debuggen > Prozedurschritt**) mehrmals fahren fort, um den Debugger, und führen Sie den bearbeiteten Code.
+1. Drücken Sie wiederholt **F10** (oder klicken Sie auf **Debuggen > Prozedurschritt**), um den Debugger fortzusetzen und den bearbeiteten Code auszuführen.
 
-    ![Bearbeiten und Fortfahren](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "bearbeiten und fortfahren")
+    ![Bearbeiten und fortfahren](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Edit and continue")
 
-    **F10** wechselt die eine Debuggeranweisung auf eine Zeit, doch die Schritte für Funktionen, anstatt den Einzelschritt in diese (der Code, den Sie überspringen, immer noch ausgeführt).
+    Wenn Sie **F10** drücken, führt der Debugger jeweils nur eine Anweisung aus, überspringt Funktionen aber, anstatt diese schrittweise auszuführen (der Code, den Sie überspringen, wird weiter ausgeführt).
 
-Weitere Informationen zur Verwendung von bearbeiten und fortfahren und Einschränkungen für Funktionen, finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von Features finden Sie unter [Edit and Continue (Bearbeiten und Fortfahren)](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und untersuchen Sie Variablen. Sie sollten einen allgemeinen Überblick über die Debugger-Features sowie Links zu weiteren Informationen zu erhalten.
+In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
 > [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

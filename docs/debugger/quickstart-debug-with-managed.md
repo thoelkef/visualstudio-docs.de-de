@@ -1,6 +1,6 @@
 ---
-title: Debuggen des verwalteten Codes | Microsoft-Dokumentation
-description: Debuggen von c# oder Visual Basic in Visual Studio-debugger
+title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
+description: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -15,28 +15,28 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
 ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/08/2018
 ms.locfileid: "39637522"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen Sie mit verwaltetem Code mithilfe von Visual Studio-debugger
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit verwaltetem Code mithilfe des Visual Studio-Debuggers
 
-Visual Studio-Debugger bietet viele leistungsstarke Features, damit Sie Ihre apps Debuggen können. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
+Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
-2. Klicken Sie unter **Visual C#-** oder **Visual Basic**, wählen Sie **.NET Core**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Core)**.
+2. Klicken Sie erst unter **Visual C#** oder **Visual Basic** auf **.NET Core** und dann im mittleren Bereich auf **Console App (.NET Core)** (Konsolen-App (.NET Core)).
 
-     Falls Sie die Projektvorlage **Konsolenanwendung (.NET Core)** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Wählen Sie die **.NET Desktopentwicklung** und **.NET Core** Workload, wählen Sie dann **ändern**.
+     Falls Sie die Projektvorlage **Konsolenanwendung (.NET Core)** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workloads **.NET-Desktopentwicklung** und **.NET Core** aus, und klicken Sie anschließend auf **Ändern**.
 
-3. Geben Sie einen Namen wie **MyDbgApp** , und klicken Sie auf **OK**.
+3. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. In *"Program.cs"* oder *"Module1.vb"*, ersetzen Sie den folgenden Code.
+4. Ersetzen Sie in *Program.cs* oder *Module1.vb* diesen Code
 
     ```csharp
     class Program
@@ -126,62 +126,62 @@ Visual Studio-Debugger bietet viele leistungsstarke Features, damit Sie Ihre app
 
 ## <a name="set-a-breakpoint"></a>Haltepunkt festlegen
 
-Ein *Haltepunkt* ist der code eines Markers, der angibt, in denen Visual Studio die Ausführung angehalten werden soll, können Sie einen Blick auf die Werte von Variablen oder das Verhalten des Arbeitsspeichers oder angibt, ob eine Verzweigung des Codes ausführen erste nutzen. Es ist das grundlegendste Feature beim Debuggen.
+Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anhalten soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. Es handelt sich dabei um ein grundlegendes Debugfeature.
 
-1. Um den Haltepunkt festzulegen, klicken Sie auf den Bundsteg links neben der `doWork` Funktionsaufruf (oder wählen Sie die Codezeile aus, und drücken Sie **F9**).
+1. Wenn Sie einen Breakpoint festlegen möchten, klicken Sie im Bundsteg auf den Bereich links neben dem Funktionsaufruf `doWork`. Alternativ können Sie aber auch die Codezeile auswählen und **F9** drücken.
 
-    ![Festlegen eines Haltepunkts](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Festlegen eines Haltepunkts")
+    ![Breakpoint festlegen](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Set a breakpoint")
 
-2. Drücken Sie nun **F5** (oder wählen Sie **Debuggen > Debuggen starten**).
+2. Drücken Sie dann **F5**, oder klicken Sie auf **Debuggen > Debuggen starten**.
 
-    ![Erreichen eines Haltepunkts](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "erreichen eines Haltepunkts")
+    ![Breakpoint treffen](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Hit a breakpoint")
 
-    Der Debugger hält, in dem Sie den Haltepunkt festgelegt, ist. Die Anweisung, in denen die Debugger und die app-Ausführung angehalten wird, wird durch den gelben Pfeil angegeben. Die Zeile mit der `doWork` Funktionsaufruf noch nicht noch ausgeführt.
+    Der Debugger hält an dem Breakpoint an, den Sie festlegen. Der gelbe Pfeil deutet auf die Anweisung, bei der der Debugger und die App-Ausführung ausgesetzt werden. Die Zeile mit dem Funktionsaufruf `doWork` wurde noch nicht ausgeführt.
 
     > [!TIP]
-    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie viele Haltepunkte, die Sie häufig verfügen schrittweise, Durchlaufen einer [bedingten Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Ein bedingter Haltepunkt kann Zeit sparen, und sie können auch eine einfachere zum Debuggen von Problemen, die schwer reproduzierbar sind.
+    > Verwenden Sie bei Breakpoints in einer Schleife oder Rekursion oder bei sehr vielen Breakpoints, die Sie häufig schrittweise durchlaufen, einen [bedingten Breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression), damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Wenn Sie mit einem bedingten Breakpoint arbeiten, sparen Sie Zeit und erleichtern sich möglicherweise das Debuggen von Problemen, die nur schwierig zu reproduzieren sind.
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle anweisen des Debuggers zum fortfahren. Wir zeigen es sich um einen nützlichen Code Navigationsbefehl die neuen Visual Studio 2017.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren bewegt werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
 
-Während die Ausführung am Haltepunkt angehalten wird, zeigen Sie die Anweisung `c1.AddLast(20)` bis Grün **Ausführung bis Klick** Schaltfläche ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird, und drücken Sie dann die **Ausführung bis Klick** Schaltfläche.
+Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.AddLast(20)`, bis die Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "Run to Click") angezeigt wird, und klicken Sie diese an.
 
-![Ausführung bis Klick](../debugger/media/dbg-qs-run-to-click-csharp.png "Ausführung bis Klick")
+![Ausführen bis Klick](../debugger/media/dbg-qs-run-to-click-csharp.png "Run to Click")
 
-Die app weiterhin Ausführung Aufrufen `doWork`, und hält bei der Codezeile, in dem Sie die Schaltfläche geklickt haben.
+Dann wird die App weiter ausgeführt, ruft `doWork` auf, und wird bei der Codezeile ausgesetzt, bei der Sie die Schaltfläche angeklickt haben.
 
-Allgemeine Tastenkombinationen, die zum Einschließen von Code schrittweise durchlaufen **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Handbuch für Anfänger](../debugger/getting-started-with-the-debugger.md).
+Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchzugehen. Ausführlichere Informationen finden Sie im [Beginner's Guide (Leitfaden für Anfänger)](../debugger/getting-started-with-the-debugger.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Überprüfen von Variablen in einem datatip
+## <a name="inspect-variables-in-a-datatip"></a>Untersuchen von Variablen in einem Datentipp
 
-1. In der aktuellen Zeile des Codes (gekennzeichnet durch die gelbe Ausführungszeiger), zeigen Sie auf die `c1` Objekt mit der Maus auf einen Datatip angezeigt.
+1. Zeigen Sie in der aktuellen Codezeile (zu erkennen an dem Ausführungszeiger in gelb) mit der Maus auf das `c1`-Objekt, um Datentipps anzuzeigen.
 
-    ![Zeigen Sie einen Datatip](../debugger/media/dbg-qs-data-tip-csharp.png "einen Datatip anzeigen")
+    ![Datentipp anzeigen](../debugger/media/dbg-qs-data-tip-csharp.png "View a datatip")
 
-    Der Datatip erfahren Sie, den aktuellen Wert des der `c1` Variablen und ermöglicht Ihnen, ihre Eigenschaften zu überprüfen. Beim Debuggen, wenn einen Wert angezeigt wird, die, den Sie nicht erwarten, müssen Sie wahrscheinlich einen Fehler in den vorhergehenden oder die aufrufenden Codezeilen. 
+    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
 
-2. Erweitern Sie den Datatip Betrachten der aktuellen Eigenschaftswerte für die `c1` Objekt.
+2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c1`-Objekts einzusehen.
 
-3. Sollten Sie den Datatip anzuheften, damit Sie fortfahren können, um den Wert der anzuzeigen `c1` während Sie Code ausführen, klicken Sie auf das kleine Pinsymbol. (Sie können den angehefteten Datatip an einem geeigneten Speicherort verschieben.)
+3. Wenn Sie den Datentipp anheften möchten, damit bei der Codeausführung weiterhin der Wert von `c1` angezeigt wird, klicken Sie auf das Stecknadelsymbol. (Sie können den angehefteten Datentipp an eine geeignete Stelle verschieben.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Bearbeiten von Code und Fortsetzen des Debuggens
 
-Wenn Sie eine Änderung, die Sie in Ihrem Code während einer Debugsitzung testen möchten identifizieren, können Sie dies, zu tun.
+Wenn Sie in einer Debugsitzung eine Änderung feststellen, die Sie in Ihrem Code testen möchten, ist dies auch kein Problem.
 
-1. Klicken Sie auf der zweiten Instanz von `c2.First.Value` , und ändern Sie `c2.First.Value` zu `c2.Last.Value`.
+1. Klicken Sie auf die zweite Instanz von `c2.First.Value`, und ändern Sie `c2.First.Value` in `c2.Last.Value`.
 
-2. Drücken Sie **F10** (oder **Debuggen > Prozedurschritt**) mehrmals fahren fort, um den Debugger, und führen Sie den bearbeiteten Code.
+2. Drücken Sie wiederholt **F10** (oder klicken Sie auf **Debuggen > Prozedurschritt**), um den Debugger fortzusetzen und den bearbeiteten Code auszuführen.
 
-    ![Bearbeiten und Fortfahren](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "bearbeiten und fortfahren")
+    ![Bearbeiten und fortfahren](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Edit and continue")
 
-    **F10** wechselt die eine Debuggeranweisung auf eine Zeit, doch die Schritte für Funktionen, anstatt den Einzelschritt in diese (der Code, den Sie überspringen, immer noch ausgeführt).
+    Wenn Sie **F10** drücken, führt der Debugger jeweils nur eine Anweisung aus, überspringt Funktionen aber, anstatt diese schrittweise auszuführen (der Code, den Sie überspringen, wird weiter ausgeführt).
 
-Weitere Informationen zur Verwendung von bearbeiten und fortfahren und Einschränkungen für Funktionen, finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von Features finden Sie unter [Edit and Continue (Bearbeiten und Fortfahren)](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und untersuchen Sie Variablen. Sie sollten einen allgemeinen Überblick über die Debugger-Features sowie Links zu weiteren Informationen zu erhalten.
+In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Funktionen verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
 > [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

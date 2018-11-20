@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224110"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294018"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Erstellen und Bearbeiten einer benutzerdefinierten EditorConfig-Datei
 
 In Visual Studio für Mac können Sie Ihrem Projekt oder Ihrer Projektmappe eine [EditorConfig](http://editorconfig.org/)-Datei hinzufügen, um einheitliche Codierungskonventionen für alle Benutzer durchzusetzen, die an der Codebasis arbeiten. Die in der EditorConfig-Datei deklarierten Einstellungen haben Vorrang vor den globalen Einstellungen des Visual Studio für Mac-Text-Editors. Die Verwendung einer EditorConfig-Datei in Ihrem Projekt oder Ihrer Codebase ermöglicht Ihnen, Codierungskonventionen, Einstellungen und Warnungen für Ihr Projekt festzulegen. Da die Datei Teil Ihrer Codebasis ist, ist es für alle Benutzer einfacher, sich an die Codierungspraktiken eines Projekts zu halten, unabhängig davon, welche IDE oder welchen Code-Editor sie verwenden.
 
-[EditorConfig](http://editorconfig.org/)-Dateien werden von vielen IDEs und Code-Editoren unterstützt, einschließlich Visual Studio 2017. 
+[EditorConfig](http://editorconfig.org/)-Dateien werden von vielen IDEs und Code-Editoren unterstützt, einschließlich Visual Studio 2017.
 
 ## <a name="supported-settings"></a>Unterstützte Einstellungen
 
@@ -33,15 +33,15 @@ Der Editor in Visual Studio für Mac unterstützt die gebräuchlichsten [EditorC
 - `insert_final_newline`
 - `root`
 
-Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) in C#.
+Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](/visualstudio/ide/editorconfig-code-style-settings-reference) in C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>Hinzufügen einer EditorConfig-Datei zu einem Projekt
 
 ### <a name="adding-a-new-editorconfig-file"></a>Hinzufügen einer neuen EditorConfig-Datei
 
-1. Öffnen Sie Ihr Projekt in Visual Studio für Mac. Wählen Sie entweder den Projektmappen- oder den Projektknoten aus, zu dem Sie die EditorConfig-Datei hinzufügen möchten. Durch das Hinzufügen der Datei zum Projektmappenverzeichnis werden die Einstellungen aus .editorconfig auf alle Projekte in der Projektmappe angewendet. 
+1. Öffnen Sie Ihr Projekt in Visual Studio für Mac. Wählen Sie entweder den Projektmappen- oder den Projektknoten aus, zu dem Sie die EditorConfig-Datei hinzufügen möchten. Durch das Hinzufügen der Datei zum Projektmappenverzeichnis werden die Einstellungen aus .editorconfig auf alle Projekte in der Projektmappe angewendet.
 
-2. Klicken Sie mit der rechten Maustaste auf den Knoten, und wählen Sie dann **Hinzufügen > Neue Datei...** aus. Das Dialogfeld **Neue Datei** wird geöffnet:
+2. Klicken Sie mit der rechten Maustaste auf den Knoten, und wählen Sie anschließend **Hinzufügen > Neue Datei** aus, um das Dialogfeld **Neue Datei** zu öffnen:
 
     ![Inhalt der Menüelemente](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](https://docs
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Hinzufügen einer vorhandenen EditorConfig-Datei
 
-Wenn Sie mit einem Projekt oder einer Projektmappe arbeiten, die bereits eine `.editorconfig`-Datei enthält, müssen Sie nichts tun, um diese Einstellungen anzuwenden. Neue Codezeilen werden gemäß den EditorConfig-Einstellungen formatiert. 
+Wenn Sie mit einem Projekt oder einer Projektmappe arbeiten, die bereits eine `.editorconfig`-Datei enthält, müssen Sie nichts tun, um diese Einstellungen anzuwenden. Neue Codezeilen werden gemäß den EditorConfig-Einstellungen formatiert.
 
 Sie sollten eine vorhandene `.editorconfig`-Datei in Ihrem Projekt wiederverwenden. Um eine vorhandene Datei hinzuzufügen, führen Sie folgende Schritte aus:
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner, dem Sie sie hinzufügen möchten, und wählen Sie **Hinzufügen > Dateien hinzufügen...** aus.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner, zu dem die Datei hinzugefügt werden soll, und wählen Sie **Hinzufügen > Dateien hinzufügen** aus.
 
-2. Navigieren Sie zum Verzeichnis der gewünschten Datei. 
+2. Navigieren Sie zum Verzeichnis der gewünschten Datei.
 
 3. Dateien, die mit `.` beginnen (z.B. `.editorconfig`) sind versteckte Dateien in macOS, drücken Sie daher auf **cmd+UMSCHALT+ .**, um die `.editorconfig`-Datei sichtbar zu machen.
 
@@ -104,9 +104,7 @@ Wählen Sie den Projektmappenknoten aus, und klicken Sie in der Menüleiste auf 
 
 ## <a name="editing-an-editorconfig-file"></a>Bearbeiten von EditorConfig-Dateien
 
-
 EditorConfig-Dateien verwenden ein einfaches Dateilayout zum Angeben von Einstellungen, was im Folgenden unter Verwendung eines vorherigen Beispiels erläutert wird:
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -123,7 +121,7 @@ trim_trailing_whitespace = false
 csharp_new_line_before_open_brace = none
 ```
 
-Das Festlegen von `root` auf `true` markiert diese Datei als die oberste Datei der Codebase, und alle höheren `.editorconfig`-Dateien im Projekt werden ignoriert, wie im Abschnitt [Überschreiben der EditorConfig-Einstellungen](#override-editorconfig-settings) erläutert wird.
+Durch Festlegen von `root` auf `true` wird diese Datei als oberste Datei der Codebase markiert, und alle höheren `.editorconfig`-Dateien im Projekt werden ignoriert, wie im Abschnitt [Überschreiben der EditorConfig-Einstellungen](#override-editorconfig-settings) erläutert wird.
 
 Jeder Abschnitt wird durch ein Quadrat (**[ ]**) gekennzeichnet und gibt Informationen zu den Arten von Dateien an, auf die die folgenden Eigenschaften sich beziehen.
 
@@ -137,11 +135,11 @@ Im obigen Beispiel werden einige Einstellungen auf alle Dateien im Projekt angew
 
 ![Nachdem die EditorConfig-Einstellungen angewendet wurden](media/editorconfig-image5.png)
 
-Weitere Informationen über die verfügbaren EditorConfig-Einstellungen finden Sie im Artikel [Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) und im Abschnitt [Supported Properties (Unterstützte Eigenschaften)](http://editorconfig.org/#supported-properties) der offiziellen Dokumentation.
+Weitere Informationen über die verfügbaren EditorConfig-Einstellungen finden Sie im Artikel [Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“](/visualstudio/ide/editorconfig-code-style-settings-reference) und im Abschnitt [Supported Properties (Unterstützte Eigenschaften)](http://editorconfig.org/#supported-properties) der offiziellen Dokumentation.
 
 ## <a name="override-editorconfig-settings"></a>Überschreiben von EditorConfig-Einstellungen
 
-Es ist möglich, dass mehr als eine `.editorconfig`-Datei in einer Projektmappe enthalten ist. Visual Studio für Mac liest `.editorconfig`-Dateien in der Projektmappe von oben nach unten, wobei Einstellungen hinzugefügt und überschrieben werden. Dabei haben die Einstellungen in der `.editorconfig`-Datei, die der von Ihnen bearbeiteten Datei am _nächsten_ liegen, Vorrang. Die Einstellungen werden aus der `.editorconfig`-Datei im gleichen Ordner (falls vorhanden), dann aus der `.editorconfig`-Datei im übergeordneten Ordner (falls vorhanden) usw. übernommen, bis `root=true` gefunden wird.  
+Es ist möglich, dass mehr als eine `.editorconfig`-Datei in einer Projektmappe enthalten ist. Visual Studio für Mac liest `.editorconfig`-Dateien in der Projektmappe von oben nach unten, wobei Einstellungen hinzugefügt und überschrieben werden. Dabei haben die Einstellungen in der `.editorconfig`-Datei, die der von Ihnen bearbeiteten Datei am _nächsten_ liegen, Vorrang. Die Einstellungen werden aus der `.editorconfig`-Datei im gleichen Ordner (falls vorhanden), dann aus der `.editorconfig`-Datei im übergeordneten Ordner (falls vorhanden) usw. übernommen, bis `root=true` gefunden wird.
 
 Wenn Sie sicherstellen möchten, dass _keine_ Einstellungen von übergeordneten `.editorconfig`-Dateien auf diesen Teil der Codebase angewendet werden, fügen Sie die `root=true`-Eigenschaft oben in der untergeordneten `.editorconfig`-Datei ein:
 
@@ -149,3 +147,7 @@ Wenn Sie sicherstellen möchten, dass _keine_ Einstellungen von übergeordneten 
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Erstellen von benutzerdefinierten Editor-Einstellungen mit „EditorConfig“ (Visual Studio unter Windows)](/visualstudio/ide/create-portable-custom-editor-options)

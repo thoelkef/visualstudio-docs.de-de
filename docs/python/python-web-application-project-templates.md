@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219847"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349334"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
 Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Bottle-, Flask- und Django-Frameworks mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandeln kann. Diese Vorlagen enthalten eine *requirements.txt*-Datei, um die erforderlichen Abhängigkeiten zu deklarieren. Wenn Sie ein Projekt aus einer dieser Vorlagen erstellen, fordert Visual Studio Sie dazu auf, diese Pakete zu installieren (siehe [Projektanforderungen installieren](#install-project-requirements) weiter unten in diesem Artikel).
 
-Sie können auch die generische Vorlage **Webprojekt** für andere Frameworks wie z.B Pyramid verwenden. In diesem Fall werden keine Frameworks mit der Vorlage installiert. Installieren Sie stattdessen die erforderlichen Pakete in der Umgebung, die Sie für das Projekt verwenden (siehe [Verwalten von Python-Umgebungen](managing-python-environments-in-visual-studio.md)).
+Sie können auch die generische Vorlage **Webprojekt** für andere Frameworks wie z.B Pyramid verwenden. In diesem Fall werden keine Frameworks mit der Vorlage installiert. Installieren Sie stattdessen die erforderlichen Pakete in der Umgebung, die Sie für das Projekt verwenden (siehe [Fenster „Python-Umgebungen“ – Registerkarte „Paket“](python-environments-window-tab-reference.md#packages-tab)).
 
 Weitere Informationen zum Bereitstellen einer Python-Web-App in Azure finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

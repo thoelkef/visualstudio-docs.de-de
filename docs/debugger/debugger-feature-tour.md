@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte zum Debuggen in Visual Studio 2017
-description: Erste Schritte zum Debuggen von Anwendungen mit Visual Studio-debugger
+title: Erste Schritte beim Debuggen in Visual Studio 2017
+description: Erste Schritte beim Debuggen von Anwendungen mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 06/15/2018
 ms.technology: vs-ide-debug
@@ -15,207 +15,207 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49882665"
 ---
-# <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf die Visual Studio-Debugger
+# <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
-Dieses Thema führt die Debugger-Tools von Visual Studio bereitgestellt. Im Visual Studio-Kontext bei der Sie *Debuggen Ihrer app*, es in der Regel bedeutet, dass Sie die Anwendung mit dem angefügten Debugger ausgeführt werden (d. h. im Debuggermodus). Wenn Sie dies tun, wird der Debugger bietet viele Möglichkeiten, um festzustellen, was den Status Ihres Codes während der Ausführung. Sie können den Code schrittweise durchlaufen und die Werte in Variablen gespeicherten, Sie können Überwachungen Variablen angezeigt, wenn die Werte ändern, können Sie den Ausführungspfad des Codes untersuchen Et al. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) vor dem Durcharbeiten dieses Themas.
+Dieser Artikel stellt eine Einführung in die Debuggertools dar, die in Visual Studio enthalten sind. Wenn Sie *Ihre App in Visual Studio debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger (also im Debugmodus) ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können unter anderem den Ausführungspfad Ihres Codes prüfen. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
 
-Die hier beschriebenen Features gelten für c#, C++, Visual Basic, JavaScript und anderen (außer den) von Visual Studio unterstützten Sprachen zur Verfügung.
+Die hier beschriebenen Features gelten für C#, C++, Visual Basic, JavaScript und andere von Visual Studio unterstützten Programmiersprachen (sofern nicht anderweitig angegeben).
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Haltepunkts und starten Sie den debugger
+## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Breakpoints und Starten des Debuggers
 
-Um zu debuggen, müssen Sie Ihre app mit dem an den app-Prozess angefügten Debugger zu starten. **F5** (**Debuggen > Debuggen starten**) ist die gängigste Methode dafür. Jedoch jetzt Sie keine Haltepunkte, überprüfen Sie Ihre app festgelegt haben, können code, sodass wir zuerst und dann das debugging starten. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+Sie müssen Ihre App mit dem an den App-Prozess angefügten Debugger starten, um diese zu debuggen. Am häufigsten wird hierfür die Taste **F5** (alternativ: **Debuggen > Debuggen starten**) verwendet. Bisher haben Sie jedoch wahrscheinlich noch keine Breakpoints für die Untersuchung Ihres App-Codes festgelegt, deshalb werden Sie dies tun, bevor Sie mit dem Debuggen beginnen. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
 
-Wenn Sie eine Datei im Code-Editor geöffnet haben, können Sie einen Haltepunkt festlegen, indem Sie auf den Rand links neben einer Codezeile.
+Wenn Sie eine Datei im Code-Editor geöffnet haben, können Sie einen Breakpoint festlegen, indem Sie auf den Rand links neben einer Codezeile klicken.
 
-![Festlegen eines Haltepunkts](../debugger/media/dbg-tour-set-a-breakpoint.gif "Festlegen eines Haltepunkts")
+![Breakpoint festlegen](../debugger/media/dbg-tour-set-a-breakpoint.gif "Set a breakpoint")
 
-Drücken Sie **F5** (**Debuggen > Debuggen starten**) oder die **Debuggen starten** Schaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten ") in der Symbolleiste Debuggen und der Debugger ausgeführt wird, bis zum ersten Breakpoint, der es auftritt. Wenn die app noch nicht ausgeführt wird, wird von F5 wird der Debugger gestartet und wird am ersten Haltepunkt angehalten.
+Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging"). Der Debugger wird anschließend bis zum ersten Breakpoint ausgeführt. Wenn die App noch nicht ausgeführt wird, kann der Debugger durch Drücken der Taste F5 gestartet werden und hält am ersten Breakpoint an.
 
-Haltepunkte sind eine nützliche Funktion, wenn Sie wissen, die Zeile des Codes oder des Codeabschnitts, die Sie genauer untersuchen möchten.
+Breakpoints sind eine nützliche Funktion, wenn Ihnen die Codezeile oder der Codeabschnitt bekannt ist, die bzw. den Sie genauer untersuchen möchten.
 
-## <a name="navigate"></a> Navigieren Sie im Code im Debugger verwenden diese Befehle
+## <a name="navigate"></a> Navigieren durch Code im Debugger mithilfe von Schrittbefehlen
 
-Geben wir die Tastenkombinationen für die meisten Befehle, da sie Navigation durch Ihren app-Code beschleunigen. (Die entsprechende Befehle z. B. Menübefehle in Klammern angezeigt werden.)
+Für die meisten Befehle gibt es Tastenkombinationen, da Sie mit diesen schneller durch den Code Ihrer App navigieren können. (Die entsprechenden Befehle, z.B. Menübefehle, werden in Klammern angegeben.)
 
-Um Ihre app mit dem angefügten Debugger zu starten, drücken Sie die **F11** (**Debuggen > Einzelschritt**). F11 wird die **Einzelschritt** -Befehl aus, und setzt die app Ausführung einer Anweisung zu einem Zeitpunkt. Wenn Sie die app durch Drücken von F11 starten, unterbricht der Debugger, bei der ersten Anweisung, die ausgeführt wird.
+Drücken Sie **F11** (**Debuggen > Einzelschritt**), um Ihre App mit angefügtem Debugger zu starten. Durch Drücken der Taste F11 wird der Befehl **Einzelschritt** ausgeführt, und die App wird Anweisung für Anweisung ausgeführt. Wenn Sie die App mit F11 starten, hält der Debugger bei der ersten Anweisung an, die ausgeführt wird.
 
-![F11 Einzelschritt](../debugger/media/dbg-tour-f11.png "F11 Einzelschritt")
+![F11 – Einzelschritt](../debugger/media/dbg-tour-f11.png "F11 Step Into")
 
-Der gelbe Pfeil stellt die Anweisung auf der der Debugger angehalten ist, die auch app-Ausführung an der gleichen Stelle unterbricht (diese Anweisung wurde noch nicht ausgeführt).
+Der gelbe Pfeil stellt die Anweisung dar, an der der Debugger angehalten hat. An der gleichen Stelle wird auch die Ausführung der App unterbrochen (diese Anweisung wurde noch nicht ausgeführt).
 
-F11 ist eine gute Möglichkeit, den Ausführungsablauf in die meisten Details zu überprüfen. (Um im Code schneller zu verschieben, zeigen wir Ihnen einige weitere Optionen.) Standardmäßig überspringt der Debugger nicht benutzerseitiger Code (Sie weitere Informationen finden Sie unter [nur mein Code](../debugger/just-my-code.md)).
+Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. (Es werden auch einige andere Optionen vorgestellt, mit denen Sie den Code schneller durchlaufen können.) Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../debugger/just-my-code.md)).
 
 >[!NOTE]
-> In verwaltetem Code sehen Sie ein Dialogfeld gefragt, wenn Sie benachrichtigt werden, wenn Sie automatisch Eigenschaften und Operatoren überspringen (Standardverhalten) ausführen möchten. Wenn Sie die Einstellung ändern möchten später deaktivieren **Eigenschaften und Operatoren überspringen** festlegen in der **Tools > Optionen** Menü unter **Debuggen**.
+> In verwaltetem Code wird ein Dialogfeld angezeigt, in dem Sie auswählen können, ob Sie benachrichtigt werden, wenn Eigenschaften und Operatoren automatisch übersprungen werden (Standardverhalten). Wenn Sie diese Einstellung im Nachhinein ändern möchten, deaktivieren Sie die Einstellung **Eigenschaften und Operatoren überspringen** im Menü **Extras > Optionen** unter **Debuggen**.
 
-## <a name="step-over-code-to-skip-functions"></a>Prozedurschritt für Code, um Funktionen zu überspringen.
+## <a name="step-over-code-to-skip-functions"></a>Prozedurschritt im Code zum Überspringen von Funktionen
 
-Wenn Sie eine einzige Zeile Code, die eine Funktion oder ein Methodenaufruf ist verwenden, drücken Sie **F10** (**Debuggen > Prozedurschritt**) anstelle von F11.
+In einer Codezeile, die eine Funktion oder einen Methodenaufruf enthält, können Sie **F10** (**Debuggen > Prozedurschritt**) anstelle von F11 verwenden.
 
-F10 wechselt den Debugger ohne einen Einzelschritt in die Funktionen oder Methoden in Ihrem app-Code (der Code wird immer noch ausgeführt). Durch Drücken von F10, können Sie über Code überspringen, denen Sie nicht interessiert sind. Auf diese Weise können Sie schnell Code abrufen, denen Sie interessant sind.
+Durch Drücken der Taste F10 fährt der Debugger in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird immer noch ausgeführt). Sie können Code überspringen, der für Sie nicht relevant ist, indem Sie F10 drücken. Dadurch gelangen Sie schnell zum relevanten Code.
 
-## <a name="step-into-a-property"></a>Einzelschritt in eine Eigenschaft
+## <a name="step-into-a-property"></a>Einzelschritt zu einer Eigenschaft
 
-Erwähnt, wird standardmäßig der Debugger überspringt aus verwalteten Eigenschaften und Felder, aber die **Einzelschritt in Angabe** Befehl können Sie dieses Verhalten außer Kraft zu setzen.
+Wie zuvor erwähnt überspringt der Debugger standardmäßig verwaltete Eigenschaften und Felder. Mit dem Befehl **Einzelschritt in Angabe** können Sie dieses Verhalten jedoch außer Kraft setzen.
 
-Mit der rechten Maustaste auf eine Eigenschaft oder ein Feld, und wählen Sie **Einzelschritt in Angabe**, wählen Sie dann eine der verfügbaren Optionen.
+Klicken Sie mit der rechten Maustaste auf eine Eigenschaft oder ein Feld, klicken Sie auf **Einzelschritt in Angabe**, und wählen Sie eine der verfügbaren Optionen aus.
 
-![Einzelschritt in die spezifische](../debugger/media/dbg-tour-step-into-specific.png "Einzelschritt in Angabe")
+![Einzelschritt in Angabe](../debugger/media/dbg-tour-step-into-specific.png "Step Into Specific")
 
-In diesem Beispiel **Einzelschritt in Angabe** bringt uns auf den Code für `Path.set`.
+In diesem Beispiel springt **Einzelschritt in Angabe** zum Code für `Path.set`.
 
-![Einzelschritt in die spezifische](../debugger/media/dbg-tour-step-into-specific-2.png "Einzelschritt in Angabe")
+![Einzelschritt in Angabe](../debugger/media/dbg-tour-step-into-specific-2.png "Step Into Specific")
 
-## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Führen Sie auf einen Zeitpunkt in Ihrem Code schnell mit der Maus
+## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Schnelles Ausführen bis zu einer bestimmten Stelle im Code mithilfe der Maus
 
-Zeigen Sie im Debugger, die eine einzige Zeile Code, bis die **Ausführung bis Klick** (Ausführung bis hier ausführen) Schaltfläche ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") auf der linken Seite angezeigt wird.
+Zeigen Sie auf eine Codezeile, während der Debugger ausgeführt wird, bis die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen) ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") auf der linken Seite angezeigt wird.
 
-![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click-2.png "Ausführung bis Klick")
+![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
 
 > [!NOTE]
-> Die **Ausführung bis Klick** (Ausführung bis hier ausführen) Schaltfläche ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen) ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-Klicken Sie auf die **Ausführung bis Klick** Schaltfläche "(Ausführung bis hier ausführen)". Der Debugger setzt auf die Zeile des Codes, auf Sie geklickt hat.
+Klicken Sie auf die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen). Der Debugger wechselt zu der Codezeile, auf die Sie geklickt haben.
 
-Mit dieser Schaltfläche ähnelt der als temporären Haltepunkt festlegen. Dieser Befehl ist auch nützlich für die Umgehung sich schnell innerhalb eines sichtbaren Bereichs des app-Codes. Sie können **Ausführung bis Klick** in einer geöffneten Datei.
+Die Verwendung dieser Schaltfläche ist mit dem Festlegen eines temporären Breakpoints vergleichbar. Dieser Befehl ist zudem nützlich, wenn Sie eine sichtbare Region Ihres App-Codes schnell durchlaufen möchten. Sie können **Ausführung bis Klick** in jeder geöffneten Datei verwenden.
 
-## <a name="advance-the-debugger-out-of-the-current-function"></a>Fahren Sie fort, den Debugger aus der aktuellen Funktion
+## <a name="advance-the-debugger-out-of-the-current-function"></a>Fortsetzen des Debuggers außerhalb der aktuellen Funktion
 
-In einigen Fällen möchten Sie die Debugsitzung weiterhin, sondern fahren Sie fort, den Debugger über die aktuelle Funktion bis hin.
+In einigen Fällen möchten Sie Ihre Debugsitzung fortsetzen, der Debugger soll die aktuelle Funktion jedoch durchlaufen.
 
-Drücken Sie **UMSCHALT + F11** (oder **Debuggen > Ausführen bis Rücksprung**).
+Drücken Sie **UMSCHALT + F11** (alternativ: **Debuggen > Ausführen bis Rücksprung**).
 
-Mit diesem Befehl wird die app-Ausführung fortgesetzt (und den Debugger wechselt), bis die aktuelle Funktion zurückkehrt.
+Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Debugger weiter ausgeführt), bis die aktuelle Funktion wieder ausgeführt wird.
 
 ## <a name="run-to-cursor"></a>Ausführen bis Cursor
 
-Beenden Sie den Debugger durch Drücken der **Debuggen beenden** rote Schaltfläche ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") oder **UMSCHALT**  +  **F5**.
+Beenden Sie den Debugger, indem Sie auf die rote Schaltfläche **Debuggen beenden** ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") drücken oder die Tastenkombination **UMSCHALT** + **F5** verwenden.
 
-Klicken Sie auf eine Zeile des Codes in Ihrer app, und wählen Sie **Ausführen bis Cursor**. Dieser Befehl startet das debugging und legt einen temporären Haltepunkt für die aktuelle Zeile des Codes.
+Klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie **Ausführen bis Cursor** aus. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
 
-![Ausführen bis Cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ausführen bis Cursor")
+![Ausführen bis Cursor](../debugger/media/dbg-tour-run-to-cursor.png "Run to Cursor")
 
-Wenn Sie Haltepunkte festgelegt haben, hält sich der Debugger am ersten Haltepunkt, den er erreicht.
+Wenn Sie Breakpoints festgelegt haben, hält der Debugger am ersten Breakpoint an, den er erreicht.
 
-Drücken Sie **F5** aus, bis Sie die Zeile des Codes ausgewählt, in dem Sie **Ausführen bis Cursor**.
+Drücken Sie **F5**, bis Sie die Codezeile erreichen, für die Sie **Ausführen bis Cursor** festgelegt haben.
 
-Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporären Haltepunkt festlegen und starten Sie den Debugger zur gleichen Zeit möchten.
+Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporären Breakpoint festlegen möchten, während gleichzeitig der Debugger gestartet wird.
 
 > [!NOTE]
-> Sie können **Ausführen bis Cursor** in die **Aufrufliste** Fenster während des Debuggens.
+> Sie können **Ausführen bis Cursor** während des Debuggens im Fenster **Aufrufliste** verwenden.
 
-## <a name="restart-your-app-quickly"></a>Starten Sie Ihre app schnell neu.
+## <a name="restart-your-app-quickly"></a>Schnelles Neustarten Ihrer App
 
-Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "App neu starten") der Debug-Symbolleiste (**STRG + UMSCHALT + F5**).
+Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG + UMSCHALT + F5**).
 
-Beim Drücken **Neustart**, denn Sie spart Zeit und beenden die app und erneutes Starten des Debuggers. Der Debugger hält am ersten Haltepunkt, der erreicht wird, indem Sie Code ausführen.
+Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
-Wenn Sie den Debugger beenden und in den Codeeditor zu erhalten möchten, können Sie das rote Beenden drücken ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Debuggen beenden") Schaltfläche anstelle von **Neustart**.
+Wenn Sie den Debugger beenden und zum Code-Editor zurückkehren möchten, können Sie anstelle von **Neu starten** auf die rote Schaltfläche „Beenden“ ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") drücken.
 
-## <a name="inspect-variables-with-data-tips"></a>Untersuchen Sie Variablen mit den Datentipps
+## <a name="inspect-variables-with-data-tips"></a>Untersuchen von Variablen mithilfe von Datentipps
 
-Nun, dass Sie Ihr ein wenig vertraut sind, müssen Sie eine gute Gelegenheit, starten Sie den app-Status (Variablen) mit dem Debugger überprüfen. Funktionen, die Ihnen ermöglichen, Variablen untersuchen sind einige der nützlichsten Funktionen des Debuggers, und es gibt verschiedene Möglichkeiten dafür. Häufig, wenn Sie versuchen, ein Problem debuggen können, sind Sie versucht, finden Sie heraus, ob Variablen die Werte speichern, die voraussichtlich in einem bestimmten app-Zustand über.
+Da Sie sich nun ein wenig auskennen, können Sie damit beginnen, den Zustand Ihrer App (Variablen) mit dem Debugger zu überprüfen. Die Features, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Einsatzgebieten des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems müssen Sie häufig herausfinden, ob Variablen die Werte speichern, die diese bei einem bestimmten App-Zustand aufweisen sollten.
 
-Während im Debugger angehalten wird, zeigen Sie ein Objekt mit der Maus, und Sie sehen, dass der Standardwert der Eigenschaft (in diesem Beispiel ist der Dateiname `market 031.jpg` ist der Standardwert der Eigenschaft).
+Zeigen Sie mit der Maus auf ein Objekt, während der Debugger pausiert ist, um den Standardeigenschaftswert anzuzeigen. In diesem Beispiel ist der Dateiname `market 031.jpg` der Standardeigenschaftswert.
 
-![Anzeigen eines Datentipps](../debugger/media/dbg-tour-data-tips.gif "einen Datentipp anzeigen")
+![Anzeigen eines Datentipps](../debugger/media/dbg-tour-data-tips.gif "View a Data Tip")
 
-Erweitern Sie das Objekt, um alle ihre Eigenschaften anzuzeigen (z. B. die `FullPath` in diesem Beispiel).
+Erweitern Sie das Objekt, um alle Eigenschaften anzuzeigen (wie z.B. die Eigenschaft `FullPath`).
 
-Häufig, wenn Debuggen, sollten Sie eine schnelle Möglichkeit zum Überprüfen der Eigenschaftswerte für Objekte, und der Datentipps sind eine gute Möglichkeit dafür.
+Beim Debuggen möchten Sie die Eigenschaftswerte für Objekte häufig schnell überprüfen. Die Datentipps stellen eine gute Methode hierfür dar.
 
 > [!TIP]
-> Die meisten unterstützten Sprachen können Sie Code in der Mitte einer Debugsitzung bearbeiten. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+> In den meisten unterstützten Sprachen können Sie Code während einer Debugsitzung bearbeiten. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
 
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Untersuchen Sie Variablen mit den Fenstern "Auto" und "lokal"
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Untersuchen von Variablen über die Fenster „Auto“ und „Lokal“
 
-Betrachten Sie während des Debuggens die **"Auto"** Fenster am unteren Rand der Code-Editor.
+Sehen Sie sich das Fenster **Auto** während des Debuggens unten im Code-Editor an.
 
-![Fenster Auto Fenster](../debugger/media/dbg-tour-autos-window.png "Fenster \"Auto\"")
+![Fenster „Auto“](../debugger/media/dbg-tour-autos-window.png "Autos window")
 
-In der **"Auto"** angezeigt Variablen zusammen mit ihren aktuellen Wert und deren Typ. Die **"Auto"** Fenster zeigt alle Variablen, die in der aktuellen Zeile oder die vorangehende Zeile verwendet wird (In C++ wird das Fenster zeigt Variablen in den vorherigen drei Zeilen des Codes. Dokumentation für die sprachspezifisches Verhalten).
-
-> [!NOTE]
-> In JavaScript die **"lokal"** Fenster wird nicht unterstützt die **"Auto"** Fenster.
-
-Betrachten Sie als Nächstes die **"lokal"** Fenster. Die **"lokal"** Fenster zeigt die Variablen, die derzeit im Gültigkeitsbereich befinden.
-
-![Fenster "lokal"](../debugger/media/dbg-tour-locals-window.png "Fenster \"lokal\"")
-
-In diesem Beispiel die `this` Objekt und das Objekt `f` befinden sich im Gültigkeitsbereich. Weitere Informationen finden Sie unter [Überprüfen von Variablen in der "Auto" und "lokal" Windows](../debugger/autos-and-locals-windows.md).
-
-## <a name="set-a-watch"></a>Set a Watch festlegen
-
-Können Sie eine **Watch** Fenster, geben auf eine Variable (oder eines Ausdrucks), die Sie im Auge zu behalten möchten.
-
-Während des Debuggens mit der rechten Maustaste ein Objekt, und wählen Sie **Überwachung hinzufügen**.
-
-![Überwachung (Fenster)](../debugger/media/dbg-tour-watch-window.png "Fenster \"überwachen\"")
-
-In diesem Beispiel haben Sie eine Überwachung, legen Sie für die `f` -Objekt, und Sie sehen den Wert ändern, wie Sie den Debugger verschieben. Im Gegensatz zu anderen Variablenfenstern die **Watch** Windows den Variablen immer anzeigen, dass Sie überwachen (sie sind ausgegraut, wenn außerhalb des gültigen Bereichs).
-
-Weitere Informationen finden Sie unter [festlegen eine Überwachung mit dem überwachen und Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)
-
-## <a name="examine-the-call-stack"></a>Die Aufrufliste überprüfen
-
-Klicken Sie auf die **Aufrufliste** Fenster während des Debuggens, die standardmäßig in der unteren rechten Bereich geöffnet ist.
-
-![Überprüfen Sie die Aufrufliste](../debugger/media/dbg-tour-call-stack.png "die Aufrufliste überprüfen")
-
-Die **Aufrufliste** Fenster zeigt die Reihenfolge, in dem Methoden und Funktionen werden aufgerufen. Der obersten Zeile wird die aktuelle Funktion (der `Update` -Methode in diesem Beispiel). Die zweite Zeile zeigt, dass `Update` aufgerufen wurde, aus der `Path.set` -Eigenschaft, und So weiter. Die Aufrufliste ist eine gute Möglichkeit zum Untersuchen und verstehen, den Ausführungsablauf der app.
+Im Fenster **Auto** werden Ihnen Variablen, deren Typ und der aktuelle Wert angezeigt. Im Fenster **Auto** werden sämtliche Variablen angezeigt, die in der aktuellen Zeile oder der vorangehenden Zeile verwendet werden (in C++ werden in den vorangehenden drei Codezeilen Variablen angezeigt. In der Dokumentation finden Sie Informationen zum sprachspezifischen Verhalten).
 
 > [!NOTE]
-> Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
+> In JavaScript wird das Fenster **Lokal** nicht unterstützt, das Fenster **Auto** jedoch schon.
 
-Doppelklicken Sie auf eine einzige Zeile Code zu diesem Quellcode betrachten und ändert, die ebenfalls den aktuellen Bereich, der vom Debugger überprüft werden. Dies ist den Debugger nicht weitergeführt.
+Sehen Sie sich als Nächstes das Fenster **Lokal** an. Im Fenster **Lokal** werden Ihnen die Variablen angezeigt, die sich derzeit im Gültigkeitsbereich befinden.
 
-Sie können auch die Kontextmenüs von der **Aufrufliste** Fenster aus, um andere Dinge tun. Sie können z. B. Haltepunkte in bestimmten Funktionen einzufügen, Ihrer app über einen Neustart **Ausführen bis Cursor**, und wechseln Quellcode untersuchen. Finden Sie unter [Vorgehensweise: untersuchen die Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).
+![Fenster „Lokal“](../debugger/media/dbg-tour-locals-window.png "Locals window")
+
+In diesem Beispiel befinden sich die Objekte `this` und `f` im Gültigkeitsbereich. Weitere Informationen finden Sie unter [Inspect Variables in the Autos and Locals Windows (Überprüfen von Variablen in den Fenstern „Auto“ und „Lokal“)](../debugger/autos-and-locals-windows.md).
+
+## <a name="set-a-watch"></a>Festlegen von Überwachung
+
+Sie können über das Fenster **Überwachung** eine Variable (oder einen Ausdruck) angeben, die Sie im Auge behalten möchten.
+
+Klicken Sie während des Debuggens mit der rechten Maustaste auf ein Objekt, und wählen Sie **Überwachung hinzufügen** aus.
+
+![Fenster „Überwachung“](../debugger/media/dbg-tour-watch-window.png "Watch window")
+
+In diesem Beispiel wurde festgelegt, dass das Objekt `f` überwacht werden soll, und Sie können seine Wertänderung sehen, wenn Sie durch den Debugger navigieren. Im Gegensatz zu den anderen Variablenfenstern werden im Fenster **Überwachung** immer die Variablen angezeigt, die von Ihnen überwacht werden (wenn sie außerhalb des gültigen Bereichs liegen, sind sie ausgegraut).
+
+Weitere Informationen finden Sie unter [Set a Watch using the Watch and QuickWatch Windows (Festlegen einer Überwachung mithilfe der Fenster „Überwachung“ und „Schnellüberwachung“)](../debugger/watch-and-quickwatch-windows.md).
+
+## <a name="examine-the-call-stack"></a>Überprüfen der Aufrufliste
+
+Klicken Sie während des Debuggens auf das Fenster **Aufrufliste**. Dieses Fenster ist standardmäßig im unteren rechten Bereich geöffnet.
+
+![Überprüfen der Aufrufliste](../debugger/media/dbg-tour-call-stack.png "Examine the call stack")
+
+Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. In der obersten Zeile wird die aktuelle Funktion (in diesem Beispiel die `Update`-Methode) angezeigt. In der zweiten Zeile wird angezeigt, dass `Update` über die `Path.set`-Eigenschaft aufgerufen wurde usw. Die Aufrufliste bietet eine nützliche Möglichkeit zum Untersuchen und Verstehen des Ausführungsablaufs einer App.
+
+> [!NOTE]
+> Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar.
+
+Sie können auf eine Codezeile doppelklicken, um den Quellcode anzuzeigen. Dadurch wird auch der aktuelle Bereich geändert, der vom Debugger untersucht wird. Dadurch wird der Debugger nicht weiter ausgeführt.
+
+Sie können auch über die Kontextmenüs im Fenster **Aufrufliste** weitere Aktionen ausführen. So können Sie beispielsweise Breakpoints in bestimmte Funktionen einfügen, Ihre App mithilfe von **Ausführen bis Cursor** neu starten und Quellcode untersuchen. Weitere Informationen finden Sie unter [How to: Examine the Call Stack (Vorgehensweise: Untersuchen der Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Untersuchen einer Ausnahme
 
-Wenn Ihre app eine Ausnahme auslöst, ruft der Debugger die Codezeile, die die Ausnahme ausgelöst hat.
+Wenn Ihre App eine Ausnahme auslöst, springt der Debugger in die Codezeile, die diese verursacht hat.
 
-![Ausnahmen-Hilfe](../debugger/media/dbg-tour-exception-helper.png "Ausnahmen-Hilfe")
+![Ausnahmen-Hilfe](../debugger/media/dbg-tour-exception-helper.png "Exception Helper")
 
-In diesem Beispiel die **Ausnahmehilfsprogramm** erfahren Sie, eine `System.Argument` Ausnahme und eine Fehlermeldung, die besagt, dass der Pfad kein ungültiges Format. Wir wissen also, dass der Fehler aufgetreten ist, auf eine Methode oder Funktion-Argument.
+In diesem Beispiel zeigt die **Ausnahmen-Hilfe** eine `System.Argument`-Ausnahme und eine Fehlermeldung an, die besagt, dass der Pfad in einem ungültigen Format vorliegt. Es ist also bekannt, dass der Fehler bei einer Methode oder einem Funktionsargument aufgetreten ist.
 
-In diesem Beispiel die `DirectoryInfo` Aufruf hat den Fehler, auf die leere Zeichenfolge, die in der `value` Variable.
+In diesem Beispiel hat der `DirectoryInfo`-Aufruf den Fehler für eine leere Zeichenfolge zurückgegeben, die in der `value`-Variable gespeichert ist.
 
-Die Ausnahmen-Hilfe ist eine großartige Funktion, die Sie das Debuggen von Fehlern unterstützen. Sie können auch Dinge wie Ansicht Fehlerdetails und Hinzufügen einer Überwachung aus der Ausnahme-Hilfe. Oder, bei Bedarf können Sie Bedingungen für eine bestimmte Ausnahme ändern.
+Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen.
 
 > [!NOTE]
-> Die Ausnahmen-Hilfe, ersetzt der Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Die Ausnahmen-Hilfe ersetzt den Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-Erweitern Sie die **Ausnahmeeinstellungen** Knoten finden weitere Möglichkeiten zum Behandeln dieser Ausnahmetyp, aber Sie müssen nicht alles für diesen Überblick zu ändern.
+Erweitern Sie den Knoten **Ausnahmeeinstellungen**, um weitere Optionen zu diesem Ausnahmetyp anzuzeigen. Für dieses Tutorial müssen Sie dort jedoch keine Änderungen vornehmen.
 
-## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debug live ASP.NET-Apps in Azure App Service
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debuggen von ASP.NET-Live-Apps in Azure App Service
 
-die **Momentaufnahmedebugger** eine Momentaufnahme Ihrer Apps in der Produktion bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+Der **Momentaufnahmedebugger** erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie relevant ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
-![Starten Sie den momentaufnahmedebugger](../debugger/media/snapshot-launch.png "der Snapshot-Debugger")
+![Momentaufnahmedebugger starten](../debugger/media/snapshot-launch.png "Launch the snapshot debugger")
 
-Erfassung von Momentaufnahmen ist verfügbar für ASP.NET-Anwendungen in Azure App Service ausgeführt. ASP.NET-Anwendungen müssen ausgeführt werden, auf .NET Framework 4.6.1 oder höher, und ASP.NET Core-Anwendungen müssen auf .NET Core 2.0 oder höher unter Windows ausgeführt werden.
+Die Momentaufnahmensammlung ist für ASP.NET-Apps verfügbar, die in Azure App Service ausgeführt werden. ASP.NET-Apps müssen mit .NET Framework 4.6.1 oder höher ausgeführt werden, und ASP.NET Core-Apps müssen unter Windows mit .NET Core 2.0 oder höher ausgeführt werden.
 
-Weitere Informationen finden Sie unter [Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md).
+Weitere Informationen finden Sie unter [Debug live ASP.NET apps using the Snapshot Debugger (Debuggen von ASP.NET-Live-Apps mithilfe des Momentaufnahmedebuggers)](../debugger/debug-live-azure-applications.md).
 
-## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Anzeigen von Momentaufnahmen mit IntelliTrace Rückschritt (Visual Studio Enterprise)
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Anzeigen von Momentaufnahmen mit dem IntelliTrace-Feature „Schritt zurück“ (Visual Studio Enterprise)
 
-**IntelliTrace Rückschritt** automatisch eine Momentaufnahme Ihrer Anwendung in jedem Breakpoint und Debuggerschritt Schrittereignis. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+Das **IntelliTrace-Feature „Schritt zurück“** nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
 Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
 
-![Schrittweise rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png  "Schritt rückwärts und Vorwärts-Schaltflächen")
+![Schaltflächen „Schritt zurück“ und „Schritt vorwärts“](../debugger/media/intellitrace-step-back-icons-description.png  "Step Backward and Step Forward buttons")
 
-Weitere Informationen finden Sie unter den [überprüfen Sie die vorherigen app-Status, die mithilfe von IntelliTrace](../debugger/view-historical-application-state.md) Seite.
+Weitere Informationen finden Sie auf der Seite [Inspect previous app states using IntelliTrace (Untersuchen vorheriger App-Zustände mithilfe von IntelliTrace)](../debugger/view-historical-application-state.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie einen kurzen Blick auf zahlreiche Debuggerfunktionen mussten. Sie sollten eine eingehendere Betrachtung diese Funktionen mit einer beispielanwendung
+In diesem Tutorial haben Sie einen ersten Einblick in die zahlreichen Features des Debuggers erhalten. Klicken Sie auf den folgenden Link, wenn Sie diese Features anhand einer Beispielanwendung näher kennenlernen möchten.
 
 > [!div class="nextstepaction"]
 > [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)

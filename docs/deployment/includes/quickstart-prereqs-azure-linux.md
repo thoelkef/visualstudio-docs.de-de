@@ -1,10 +1,10 @@
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) mit den entsprechenden Workloads installiert:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) mit den passenden Workloads:
   * ASP.NET: **ASP.NET und Webentwicklung**
 
-* Ein Azure-Abonnement. Wenn Sie noch nicht über Abonnements verfügen [melden Sie sich jetzt](https://azure.microsoft.com/free/dotnet/), wozu 200 US-Dollar Guthaben für 30 Tage sowie 12 Monate lang beliebte kostenlose Dienste.
+* Ein Azure-Abonnement. [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.
 
-* Ein ASP.NET Core-Projekt. Wenn Sie eine noch nicht, führen Sie die [Schnellstart: Verwenden Sie Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-app](../../ide/quickstart-aspnet-core.md), oder verwenden Sie **Datei** > **neues Projekt**, wählen **Visual C#-** > **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung**. Wählen Sie bei Aufforderung die **Webanwendung (Model-View-Controller)** Vorlage stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und wählen Sie dann **OK**.
+* Ein ASP.NET Core-Projekt. Wenn Sie noch nicht über ein ASP.NET Core-Projekt verfügen, führen Sie die unter [Schnellstart: Erstellen Ihrer ersten ASP.NET Core-Web-App mithilfe von Visual Studio](../../ide/quickstart-aspnet-core.md) beschriebenen Schritte aus, oder klicken Sie auf **Datei** > **Neues Projekt**, und wählen Sie **Visual C#** > **.NET Core** und anschließend **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)**, vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
 
-* Stellen Sie sicher, dass Sie erstellen das Projekt mit der **erstellen > Projektmappe erstellen** Menübefehl, bevor Sie die folgenden Bereitstellungsschritte aus.
+* Erstellen Sie das Projekt über den Menübefehl **Erstellen > Projektmappe erstellen**, bevor Sie mit der Bereitstellung beginnen.

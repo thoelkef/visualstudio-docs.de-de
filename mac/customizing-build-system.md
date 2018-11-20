@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223983"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296306"
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
-MSBuild ist eine von Microsoft entwickelte Build-Engine, mit der hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung der Build-Engine von Microsoft mit dem Namen **xbuild**. xbuild wurde allerdings auslaufen gelassen, um auf allen Betriebssystemen Platz für MSBuild zu machen.
+MSBuild ist eine von Microsoft entwickelte Build-Engine, mit der hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung der Build-Engine von Microsoft mit dem Namen **xbuild**. xbuild wurde jedoch abgeschafft, damit MSBuild unter sämtlichen Betriebssystemen ausgeführt werden kann.
 
-**MSBuild** wird hauptsächlich für Buildsysteme für Projekte in Visual Studio für Mac verwendet. 
+**MSBuild** wird hauptsächlich für Buildsysteme für Projekte in Visual Studio für Mac verwendet.
 
-MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt diese in Ausgaben um, wie z.B. ausführbare Dateien. Diese Ausgabe wird durch den Aufruf von Tools wie dem Compiler erzielt. 
-
+MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt diese in Ausgaben um, wie z.B. ausführbare Dateien. Diese Ausgabe wird durch den Aufruf von Tools wie dem Compiler erzielt.
 
 ## <a name="msbuild-file"></a>MSBuild-Datei
 
-MSBuild verwendet eine XML-Datei, die die *Elemente* definiert, die Teil Ihres Projekts sind (wie z.B. Bildressourcen) sowie die *Eigenschaften*, die zum Erstellen Ihres Projekts erforderlich sind. Diese Projektdatei hat immer eine Dateiendung mit `proj`, wie z.B. `.csproj` für C#-Projekte. 
+MSBuild verwendet eine XML-Datei, die die *Elemente* definiert, die Teil Ihres Projekts sind (wie z.B. Bildressourcen) sowie die *Eigenschaften*, die zum Erstellen Ihres Projekts erforderlich sind. Diese Projektdatei hat immer eine Dateiendung mit `proj`, wie z.B. `.csproj` für C#-Projekte.
 
 ### <a name="viewing-the-msbuild-file"></a>Anzeigen der MSBuild-Datei
 
@@ -61,7 +60,7 @@ Es gibt zwei grundlegende Datentypen in MSBuild: *Elemente* und *Eigenschaften*,
 
 Eigenschaften sind Schlüssel-Wert-Paare, die verwendet werden, um Einstellungen zu speichern, die die Kompilierung beeinträchtigen, wie z.B. Compileroptionen.
 
-Sie werden mit einer Eigenschaftengruppe festgelegt und können wiederum beliebig viele Eigenschaftengruppen enthalten, die beliebig viele Eigenschaften enthalten können. 
+Sie werden mit einer Eigenschaftengruppe festgelegt und können wiederum beliebig viele Eigenschaftengruppen enthalten, die beliebig viele Eigenschaften enthalten können.
 
 Die Eigenschaftengruppe einer einfachen Konsolenanwendung kann z.B. wie die folgende XML-Datei aussehen:
 
@@ -83,7 +82,7 @@ Auf Eigenschaften kann von Ausdrücken aus mit `$()`-Syntax verwiesen werden. `$
 
 Elemente bieten eine Möglichkeit zum Verarbeiten von Eingaben in einem Buildsystem als Listen oder Mengen und stellen normalerweise Dateien dar. Jedes Element hat einen *Elementtyp*, eine *Elementspezifikation* und optionale willkürliche *Metadaten*. Beachten Sie, dass MSBuild keine einzelnen Elemente verarbeitet, sondern alle Elemente eines angegebenen Typs akzeptiert: Dies wird als *Elementmenge* bezeichnet.
 
-Elemente werden durch die Deklaration einer `ItemGroup` erstellt. Es kann eine beliebige Zahl an Elementgruppen geben, die wiederum eine beliebige Zahl an Elementen enthalten können. 
+Elemente werden durch die Deklaration einer `ItemGroup` erstellt. Es kann eine beliebige Zahl an Elementgruppen geben, die wiederum eine beliebige Zahl an Elementen enthalten können.
 
 Durch den folgenden Codeabschnitt werden z.B. die iOS-Startbildschirme erstellt. Die Startbildschirme haben den Buildtyp `BundleResource` mit der Spezifikation wie der Pfad zu dem Image:
 
@@ -104,5 +103,5 @@ Durch den folgenden Codeabschnitt werden z.B. die iOS-Startbildschirme erstellt.
 
 Schauen Sie sich die folgenden Ressourcen an, um mehr über MSBuild zu erfahren:
 
-* [MSDN – Übersicht](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN – Konzepte](https://msdn.microsoft.com/library/dd637714.aspx)
+* [Übersicht über MSBuild](/visualstudio/msbuild/msbuild)
+* [MSBuild-Grundlagen](/visualstudio/msbuild/msbuild-concepts)

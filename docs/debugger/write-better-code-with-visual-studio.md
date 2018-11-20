@@ -1,6 +1,6 @@
 ---
 title: Lassen Sie Visual Studio-Hilfe, die Sie schreiben C# Code mit weniger Fehlern
-description: Verwenden Sie den Debugger zum Debuggen Ihrer app verstehen
+description: Erfahren Sie, wie, besseren Code mit weniger Fehlern schreiben
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561834"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948958"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Schreiben Sie besser C# code mithilfe von Visual Studio
 
@@ -33,7 +33,7 @@ In diesem Artikel sprechen wir über die IDE, um den Debugsitzungen produktiver 
 
 * Wenn Sie den Debugger verwenden
 
-Um diese Aufgaben zu demonstrieren, zeigen wir nur einige der am häufigsten verwendeten Typen von Fehlern und Fehlern, die Sie beim Debuggen Ihrer apps begegnen. Obwohl der Beispielcode ist C#konzeptuelle Informationen gilt im Allgemeinen in C++, Visual Basic, JavaScript und anderen Sprachen, die von Visual Studio (außer den) unterstützt. Die Screenshots sind in C# geschrieben.
+Um diese Aufgaben zu demonstrieren, zeigen wir nur einige der am häufigsten verwendeten Typen von Fehlern und Fehlern, die Sie beim Debuggen Ihrer apps begegnen. Obwohl der Beispielcode ist C#konzeptuelle Informationen gilt im Allgemeinen in C++, Visual Basic, JavaScript und anderen Sprachen, die von Visual Studio (außer den) unterstützt. Die Screenshots wurden in C# erstellt.
 
 ## <a name="follow-along-using-the-sample-app"></a>Mithilfe der Beispiel-app
 
@@ -42,7 +42,7 @@ Falls gewünscht, können Sie eine .NET Framework oder .NET Core-Konsolenanwendu
 Um die app zu erstellen, öffnen Sie Visual Studio, und wählen Sie **Datei > Neues Projekt**. Klicken Sie unter **Visual C#** , wählen Sie **Windows Desktop** oder **.NET Core**, und wählen Sie dann im mittleren Bereich eine **Konsolen-App**. Geben Sie einen Namen wie **Console_Parse_JSON** , und klicken Sie auf **OK**. Visual Studio erstellt daraufhin das Projekt. Fügen Sie der [Beispielcode](#sample-code) des Projekts *"Program.cs"* Datei.
 
 > [!NOTE]
-> Wenn Sie nicht angezeigt wird der **Konsolenanwendung** -Projektvorlage aus, klicken Sie auf die **Visual Studio-Installer öffnen** Link im linken Bereich des der **neues Projekt** Dialogfeld. Der Visual Studio-Installer wird gestartet. Wählen Sie die **.NET Desktopentwicklung** oder **plattformübergreifende Entwicklung mit .NET Core** Workload, wählen Sie dann **ändern**.
+> Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die **.NET Desktopentwicklung** oder **plattformübergreifende Entwicklung mit .NET Core** Workload, wählen Sie dann **ändern**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Suchen Sie die roten und grünen Wellenlinien!
 
@@ -166,13 +166,13 @@ Hier sind ein paar wichtige Tipps für die Ausnahmebehandlung:
     }
     ```
 
-* Überprüfen Sie für nicht vertraut sind Methoden, die Sie in Ihrer app einschließen die Dokumentation, um zu sehen, welche Ausnahmen die Methode auslösen. Dies kann es sich um wichtige Informationen für die richtige Fehlerbehandlung und zum Debuggen Ihrer app sein.
+* Überprüfen Sie für nicht vertraut sind Funktionen, die Sie in Ihrer app Expecially Interaktion mit externen Daten (z. B. eine webanforderung) enthält die Dokumentation, um zu sehen, welche Ausnahmen die Funktion auslösen. Dies kann es sich um wichtige Informationen für die richtige Fehlerbehandlung und zum Debuggen Ihrer app sein.
 
 Beheben Sie die Beispiel-app, die `SerializationException` in die `GetJsonData` Methode ändern `4o` zu `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Verdeutlichen Sie Ihre Absicht Code mithilfe der assert
 
-Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**). Die app in weniger Schritten neu gestartet. Daraufhin wird die folgende Ausgabe im Konsolenfenster angezeigt.
+Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**). Die app in weniger Schritten neu gestartet. Daraufhin wird die folgende Ausgabe im Konsolenfenster angezeigt.
 
 ![NULL-Wert in der Ausgabe](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ Durch Hinzufügen von `assert` Anweisungen wie folgt an Ihre Funktionen während
 
 Mit Absicht auf diese Weise zu verwenden, erzwingen Sie Ihren Anforderungen. Dies ist eine einfache und praktische Methode, mit denen Sie Surface-Fehler während der Entwicklung. (`assert` Anweisungen sind auch als das Hauptelement in Komponententests verwendet.)
 
-Klicken Sie auf die **Neustart** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") der Debug-Symbolleiste (**STRG** + **UMSCHALT**   +  **F5**).
+Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**).
 
 > [!NOTE]
 > Die `assert` Code nur in einem Debugbuild aktiv ist.
@@ -217,7 +217,10 @@ Wenn Sie neu starten, hält der Debugger bei der `assert` -Anweisung, da der Aus
 
 ![Assert-aufgelöst wird, auf "false"](../debugger/media/write-better-code-using-assert.png)
 
-Die `assert` Fehler gibt an, dass ein Problem auftritt, die Sie untersuchen möchten. `assert` können viele Szenarien abdecken, in dem Sie unbedingt eine Ausnahme nicht angezeigt. In diesem Beispiel nicht der Benutzer eine Ausnahme angezeigt (in anderen Szenarios eine `NullReferenceException` auftreten), und ein `null` Wert wird als hinzugefügt `firstname` in der Datenbank. Dies kann zu Problemen führen später (z. B. in der Konsolenausgabe angezeigt) und möglicherweise schwieriger zu debuggen.
+Die `assert` Fehler gibt an, dass ein Problem auftritt, die Sie untersuchen möchten. `assert` können viele Szenarien abdecken, in dem Sie unbedingt eine Ausnahme nicht angezeigt. In diesem Beispiel wird nicht dem Benutzer angezeigt, eine Ausnahme aus, und ein `null` Wert wird als hinzugefügt `firstname` in Ihrer Liste mit Datensätzen. Dies kann zu Problemen führen später (z. B. in der Konsolenausgabe angezeigt) und möglicherweise schwieriger zu debuggen.
+
+> [!NOTE]
+> In Szenarien, in dem Sie eine Methode aufrufen, auf, die `null` Wert eine `NullReferenceException` Ergebnisse. Der Regel sollten Sie vermeiden Sie mithilfe einer `try/catch` block für eine allgemeine Ausnahme ist, d. h. eine Ausnahme, die nicht an die Funktion für die Bibliothek gebunden ist. Jedes Objekt kann Auslösen einer `NullReferenceException`. Überprüfen Sie die Dokumentation für die Bibliotheksfunktion, wenn Sie nicht sicher sind.
 
 Während des Debuggens, es ist ratsam, einen bestimmten halten `assert` Anweisung aus, bis Sie wissen, müssen Sie ihn durch einen tatsächlichen Codefehlerbehebung zu ersetzen. Nehmen wir an, dass Sie entscheiden, dass der Benutzer die Ausnahme in einem Releasebuild der app auftreten kann. In diesem Fall müssen Sie Code, um sicherzustellen, dass Ihre app keine schwerwiegende Ausnahme auslösen oder ein anderer Fehler dazu führen, Umgestalten. Also, um diesen Code zu beheben, ersetzen Sie den folgenden Code ein:
 
@@ -276,7 +279,7 @@ Fehler mit einer anderen Art enthalten, ineffizienten Code, der bewirkt, dass Ih
 
 ## <a name="sample-code"></a> Beispielcode
 
-Der folgende Code verfügt über einige Fehler, die Sie beheben können, mit der Visual Studio-IDE. Hier der app handelt es sich um eine einfache app, die JSON-Daten aus einen Vorgang, Deserialisieren der Daten auf ein Objekt, und aktualisieren eine einfache in-Memory-Datenbank mit den neuen Daten simuliert.
+Der folgende Code verfügt über einige Fehler, die Sie beheben können, mit der Visual Studio-IDE. Hier der app handelt es sich um eine einfache app, die JSON-Daten aus einen Vorgang, Deserialisieren der Daten auf ein Objekt, und aktualisieren eine einfache Liste mit den neuen Daten simuliert.
 
 ```csharp
 using System;
