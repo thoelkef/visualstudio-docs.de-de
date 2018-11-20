@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746311"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349243"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
@@ -25,6 +25,9 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
 .NET-Projekte haben womöglich außerdem einen Eigenschaftenknoten in der Projektstruktur selbst.
 
 ![Knoten "Eigenschaften" in der Struktur des Projektmappen-Explorers](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Verwalten von Projektmappen und Projekteigenschaften (Visual Studio für Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
@@ -56,3 +59,4 @@ Um auf Eigenschaften für die Projektmappe zuzugreifen, klicken Sie mit der rech
 ## <a name="see-also"></a>Siehe auch
 
 - [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Verwalten von Projektmappen und Projekteigenschaften (Visual Studio für Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

@@ -5,21 +5,21 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 7f076d10b0c884f39fa887547e883ec4215fd74c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 2d3134d4016c6eb86f37832ba9998010bddd3f13
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224133"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295406"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio für Mac-Workloads
 
-Visual Studio für Mac enthält für folgende Programme vorinstallierte Workloads:
+Visual Studio für Mac enthält für die Entwicklung folgender App-Typen vorinstallierte Workloads:
 
 * Plattformübergreifende mobile Apps mit .NET: Android, iOS, tvOS, watchOS
 * Mac-Desktop-Apps
-* .NET Core-Anwendungen
-* ASP.NET Core-Webanwendungen
+* .NET Core-Apps
+* ASP.NET Core-Web-Apps
 * Plattformübergreifende Unity-Spiele
 
 ## <a name="xamarin"></a>Xamarin
@@ -30,7 +30,7 @@ Informationen zur Verwendung von Xamarin in Visual Studio für Mac finden Sie im
 
 ## <a name="net-core-applications"></a>.NET Core-Anwendungen
 
-Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der [Dokumentation](https://docs.microsoft.com/dotnet/core/).
+Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der [Dokumentation](/dotnet/core/).
 
 ## <a name="aspnet-core-web-applications"></a>ASP.NET Core-Webanwendungen
 

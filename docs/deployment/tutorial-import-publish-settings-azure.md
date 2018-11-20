@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichen in Azure durch Importieren der veröffentlichungseinstellungen
+title: Veröffentlichen in Azure durch Importieren von Veröffentlichungseinstellungen
 ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
@@ -13,62 +13,62 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/11/2018
 ms.locfileid: "38808320"
 ---
-# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in Azure App Service Importieren von veröffentlichungseinstellungen in Visual Studio
+# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in Azure App Service durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
-Sie können die **veröffentlichen** Tool zum Importieren von veröffentlichungseinstellungen aus, und klicken Sie dann Ihre app bereitstellen. In diesem Artikel verwenden wir die veröffentlichungseinstellungen für Azure App Service, jedoch können Sie ähnliche Schritte zum Importieren der veröffentlichungseinstellungen von [IIS](../deployment/tutorial-import-publish-settings-iis.md). Verwenden Sie in einigen Szenarien, der ein veröffentlichen, die schneller als manuell konfigurierte Bereitstellung für den Dienst bei jeder Installation von Visual Studio Profils werden kann.
+Sie können das Tool **Veröffentlichen** zum Importieren von Veröffentlichungseinstellungen verwenden. Anschließend können Sie die App bereitstellen. In diesem Artikel werden Veröffentlichungseinstellungen für Azure App Service verwendet, allerdings können Sie die gleiche Vorgehensweise zum Importieren von Veröffentlichungseinstellungen aus [IIS](../deployment/tutorial-import-publish-settings-iis.md) verwenden. Die Verwendung eines Veröffentlichungseinstellungsprofils kann sich in einigen Szenarios als schneller als das manuelle Konfigurieren der Bereitstellung in den Dienst für jede Installation von Visual Studio erweisen.
 
-Diese Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-apps in Visual Studio. Sie können auch Importieren der veröffentlichungseinstellungen für [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) apps. Die Schritte entsprechen den Visual Studio 2017 Version 15.6.
+Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio. Sie können auch Veröffentlichungseinstellungen für [Python-Apps](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) importieren. Die Schritte sind auf dem Stand von Visual Studio 2017, Version 15.6.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
-> * Generieren Sie eine Datei mit veröffentlichungseinstellungen von Azure App Service
-> * In Visual Studio die Datei mit veröffentlichungseinstellungen importieren
-> * Bereitstellen der app in Azure App Service
+> * Generieren einer Veröffentlichungseinstellungsdatei aus Azure App Service
+> * Importieren der Veröffentlichungseinstellungsdatei in Visual Studio
+> * Bereitstellen der App in Azure App Service
 
-Eine Datei mit veröffentlichungseinstellungen (*\*.publishsettings*) unterscheidet sich ein Veröffentlichungsprofil (*\*pubxml*) in Visual Studio erstellt. Eine Datei mit veröffentlichungseinstellungen wird von Azure App Service erstellt, und klicken Sie dann in Visual Studio importiert werden können.
+Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet sich von einem in Visual Studio erstellten Veröffentlichungsprofil (*\*.pubxml*). Eine Veröffentlichungseinstellungsdatei wird von Azure App Service erstellt und kann anschließend in Visual Studio importiert werden.
 
 > [!NOTE]
-> Wenn Sie lediglich ein Visual Studio mit dem Veröffentlichungsprofil zu kopieren (*\*pubxml* Datei) von einer Installation von Visual Studio in eine andere finden Sie das Veröffentlichungsprofil,  *\<Profilename\>pubxml*in die  *\\< Projectname\>\Properties\PublishProfiles* Ordner für verwaltete Projekttypen zur Verfügung. Für Websites, suchen Sie unter den *\App_Data* Ordner. Die Veröffentlichungsprofile handelt es sich um MSBuild XML-Dateien.
+> Sie müssen lediglich ein Visual Studio-Veröffentlichungsprofil (*\*.pubxml*-Datei) aus einer Installation von Visual Studio in eine andere kopieren. Das Veröffentlichungsprofil *\<Profilname\>.pubxml* finden Sie im Ordner *\\<Projektname\>\Properties\PublishProfiles* für verwaltete Projekttypen. Für Websites durchsuchen Sie den Ordner *\App_Data*. Die Veröffentlichungsprofile sind XML-Dateien von MSBuild.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 installiert haben und die **ASP.NET** und. **NET Framework** entwicklungsworkload. Für eine .NET Core-app müssen Sie auch die. **NET Core** arbeitsauslastung.
+* Sie müssen Visual Studio 2017 und die Workloads für die **ASP.NET**- und **.NET Framework**-Entwicklung installiert haben. Für eine .NET Core-App benötigen Sie außerdem die **.NET Core**-Workload.
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
-* Erstellen einer Azure App Service. Ausführliche Anweisungen finden Sie unter [bereitstellen eine ASP.NET Core-Web-app in Azure mithilfe von Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+* Erstellen von Azure App Service. Ausführliche Anweisungen finden Sie unter [Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 
-1. Wählen Sie auf dem Computer mit Visual Studio, **Datei** > **neues Projekt**.
+1. Klicken Sie auf dem Computer, auf dem Visual Studio ausgeführt wird, auf **Datei** > **Neues Projekt**.
 
-1. Klicken Sie unter **Visual C#-** oder **Visual Basic**, wählen Sie **Web**, und wählen Sie dann im mittleren Bereich entweder **ASP.NET-Webanwendung ((.NET Framework)** oder (nur c#) **ASP.NET Core-Webanwendung**, und klicken Sie dann auf **OK**.
+1. Klicken Sie in **Visual C#** oder **Visual Basic** auf **Web**, wählen Sie dann im mittleren Bereich entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur bei C#) aus, und klicken Sie anschließend auf **OK**.
 
-    Wenn die angegebene-Projektvorlagen nicht angezeigt wird, klicken Sie auf die **Visual Studio-Installer öffnen** Link im linken Bereich des der **neues Projekt** Dialogfeld. Der Visual Studio-Installer wird gestartet. Siehe die Voraussetzungen in diesem Artikel sind die erforderlichen Visual Studio-arbeitsauslastungen, die installiert werden muss.
+    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Anhand der in diesem Artikel genannten Voraussetzungen können Sie die erforderlichen Visual Studio-Workloads identifizieren, die Sie installieren müssen.
 
-1. Wählen Sie entweder **MVC** ((.NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core), und stellen Sie sicher, dass **keine Authentifizierung** ausgewählt ist, und klicken Sie dann auf **OK**.
+1. Wählen Sie entweder **MVC** (für .NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core) aus, und stellen Sie sicher, dass **Keine Authentifizierung** ausgewählt ist, klicken Sie anschließend auf **OK**.
 
-1. Geben Sie einen Namen wie **MyWebApp** , und klicken Sie auf **OK**.
+1. Geben Sie einen Namen wie **MyWebApp** ein, und klicken Sie auf **OK**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-1. Wählen Sie **erstellen** > **Projektmappe** zum Erstellen des Projekts.
+1. Klicken Sie auf **Erstellen** > **Projektmappe erstellen**, um das Projekt zu erstellen.
 
-## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Erstellen Sie die Datei mit veröffentlichungseinstellungen in Azure App Service
+## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Erstellen der Veröffentlichungseinstellungsdatei in Azure App Service
 
-1. Öffnen Sie im Azure-Portal Azure App Service aus.
+1. Öffnen Sie Azure App Service im Azure-Portal.
 
-1. Klicken Sie auf **Veröffentlichungsprofil abrufen** und speichern Sie das Profil lokal.
+1. Klicken Sie auf **Veröffentlichungsprofil abrufen**, und speichern Sie das Profil lokal.
 
     ![Abrufen des Veröffentlichungsprofils](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 
-    Eine Datei mit einem *.publishsettings* Dateierweiterung generiert wurde, in dem Speicherort, in dem Sie gespeichert. Der folgende Code zeigt ein teilbeispiel des der Datei (in einem besser lesbaren Formatierung).
+    Eine Datei mit der Erweiterung *.publishsettings* wurde an dem Speicherort generiert, an dem Sie das Profil gespeichert haben. Im folgenden Code wird ein unvollständiges Beispiel der Datei gezeigt (mit einer lesbaren Formatierung).
 
     ```xml
     <publishData>
@@ -89,15 +89,15 @@ Eine Datei mit veröffentlichungseinstellungen (*\*.publishsettings*) unterschei
       </publishProfile>
     </publishData>
     ```
-    Die oben angegebene *.PUBLISHSETTINGS-Datei enthält in der Regel zwei Veröffentlichungsprofile, die Sie in Visual Studio, eine Bereitstellung mithilfe von Web Deploy und eine zum Bereitstellen über FTP verwenden können. Der vorhergehende Code zeigt das Profil Web Deploy. Beide Profile werden später importiert werden, wenn Sie das Profil importieren.
+    In der Regel enthält die genannte Datei „*.publishsettings“ zwei Veröffentlichungsprofile, die Sie in Visual Studio verwenden können. Ein Profil dient zum Bereitstellen mit Web Deploy und das andere zum Bereitstellen mit FTP. Im vorhergehenden Code wird das Web Deploy-Profil dargestellt. Wenn Sie das Profil importieren, werden zu einem späteren Zeitpunkt beide Profile importiert.
 
-## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Die Einstellungen für die Veröffentlichung in Visual Studio importieren und bereitstellen
+## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importieren und Bereitstellen der Veröffentlichungseinstellungen in Visual Studio
 
 [!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie erstellt eine Datei mit veröffentlichungseinstellungen importiert es in Visual Studio und eine ASP.NET-App in Azure App Service bereitgestellt. Sie sollten einen Überblick über Veröffentlichungsoptionen in Visual Studio.
+In diesem Tutorial haben Sie eine Veröffentlichungseinstellungsdatei erstellt, diese in Visual Studio importiert und eine ASP.NET-App in Azure App Service bereitgestellt. Sie sollten sich einen Überblick über Veröffentlichungsoptionen in Visual Studio verschaffen.
 
 > [!div class="nextstepaction"]
 > [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md)

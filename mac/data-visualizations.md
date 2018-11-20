@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224409"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349438"
 ---
 # <a name="data-visualizations"></a>Datenvisualisierungen
 
@@ -19,50 +19,46 @@ Visual Studio für Mac beinhaltet eine UI-Unterstützung für den Debugger, durc
 
 Die Schnellansichten im Debugpad **Local** (Lokal) können angezeigt werden, indem Sie auf das Vorschausymbol klicken, das rechts des Werts angezeigt wird, wenn der Benutzer den Mauszeiger über die Reihe bewegt:
 
- ![Pad „Lokal“](media/data-visualizations-image9.png)
+![Pad „Lokal“](media/data-visualizations-image9.png)
 
 Die nachfolgende Liste behandelt viele der neuen Visualisierungen, die beim Debuggen in Visual Studio für Mac verfügbar sind.
 
 ## <a name="point"></a>Punkt
 Ein Point, PointF oder CGPoint unter iOS und Mac wird als Tupel gerendert, der die X- und Y-Werte im Debugpad anzeigt:
 
- ![Punktvisualisierung](media/data-visualizations-image10.png)
+![Punktvisualisierung](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>Größe
-Eine Size, SizeF oder CGSize unter iOS und Mac wird als Rechteck gerendert. Dieses wird maßstabsgetreu gezeichnet, bis eine Dimension 250px überschreitet. An diesem Punkt wird das Rechteck auf eine Größe von 250x für die größte Dimension skaliert:
+Eine Size, SizeF oder CGSize unter iOS und Mac wird als Rechteck gerendert. Dieses wird maßstabsgetreu gezeichnet, bis eine Dimension 250 px überschreitet. An diesem Punkt wird das Rechteck auf eine Größe von 250 px für die größte Dimension skaliert:
 
-![Größenvisualisierung](media/data-visualizations-image11.png)
-
+[Größenvisualisierung](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Rechteck
-Ein Rectangle, RectangleF oder CGRect unter iOS und Mac zeigt die Dimensionen und den Ursprung an. Ähnlich wie bei der Größe wird es maßstabsgetreu gezeichnet, bis eine Dimension 250px überschreitet:
+Ein Rectangle, RectangleF oder CGRect unter iOS und Mac zeigt die Dimensionen und den Ursprung an. Ähnlich wie bei der Größe wird es maßstabsgetreu gezeichnet, bis eine Dimension 250 px überschreitet:
 
- ![Rechteckvisualisierung](media/data-visualizations-image12.png)
+![Rechteckvisualisierung](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>Koordinaten
 Die Koordinaten werden auf einer Karte eingezeichnet und der Standort wird an die Mitte angeheftet:
 
-![Koordinatenvisualisierung](media/data-visualizations-image13.png)
+[Koordinatenvisualisierung](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>Farbe
 Hierdurch werden die Eigenschaften von UIColor, CGColor und Color angezeigt, wodurch die Farbvorschau, RGBA-Komponenten, die Werte für Farbton, Sättigung und Helligkeit und der Farbtonwert dargestellt werden:
 
 ![Farbvisualisierung](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>Bilder
 
-Medien werden bis zu einer maximalen Dimension von 250px maßstabsgetreu gerendert. Wenn das Bild größer als 250px ist, wird es passend skaliert:
+Medien werden bis zu einer maximalen Dimension von 250 px maßstabsgetreu gerendert. Wenn das Bild größer als 250 px ist, wird es passend skaliert:
 
- ![Bildvisualisierung](media/data-visualizations-image15.png)
-
+![Bildvisualisierung](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>Bezier-Kurven
 
 Die Schnellansicht zeigt eine `NSBezierPath` an:
 
 ![Visualisierung der Bezier-Kurve](media/data-visualizations-image16.png)
-
 
 ## <a name="string"></a>Zeichenfolge
 
@@ -78,7 +74,7 @@ Eine Zeichenfolge mit weniger als 100 Zeichen wird vollständig und ohne Vorscha
 
 ### <a name="editor"></a>Editor:
 
- ![Editorvisualisierung](media/data-visualizations-image21.png)
+![Editorvisualisierung](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumberable zählt alle Werte auf und jeder Wert kann angezeigt werden, indem S
 
 Einige andere Typen, die ebenfalls über ihre eigenen Inline-Schnellansichten verfügen, werden im Folgenden aufgelistet:
 
- ![Andere Visualisierung](media/data-visualizations-image23.png)
+![Andere Visualisierung](media/data-visualizations-image23.png)
 
 *   **Primitive**
     *   Dadurch wird der Rohwert des primitiven Typs angezeigt.
@@ -104,3 +100,8 @@ Einige andere Typen, die ebenfalls über ihre eigenen Inline-Schnellansichten ve
     *   Dadurch wird ein anklickbarer Link angezeigt.
 *   **IntPtr**
     *   Dadurch wird eine hexadezimale Darstellung des IntPtr angezeigt.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Untersuchen von Variablen in den Fenstern „Auto“ und „Lokal“ (Visual Studio unter Windows)](/visualstudio/debugger/autos-and-locals-windows)
+- [Anzeigen von Zeichenfolgen in einer Schnellansicht (Visual Studio unter Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

@@ -6,23 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224109"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295292"
 ---
 # <a name="debugging-with-xamarin"></a>Debuggen mit Xamarin
 
-
 Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt.
+
 Visual Studio für Mac verwendet den [*Soft-Debugger von Mono*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen.
 
 ## <a name="the-debugger"></a>Der Debugger
 
 Visual Studio für Mac verwendet den Soft-Debugger von Mono, um verwalteten Code (C# oder F#) für alle Xamarin-Anwendungen zu debuggen. Der Soft-Debugger von Mono unterscheidet sich insofern von gewöhnlichen Debuggern, dass es sich um einen kooperativen und in die Mono-Laufzeit integrierten Debugger handelt. Der generierte Code und die Mono-Laufzeit kooperieren mit der IDE, um für ein benutzerfreundliches Debuggen zu sorgen. Die Mono-Laufzeit stellt die Debugfunktion über ein Versandprotokoll zur Verfügung. Weitere Informationen dazu finden Sie [in der Mono-Dokumentation](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
-
 
 Hard-Debugger, zum Beispiel [LLDB]( http://lldb.llvm.org/index.html) oder [GDB]( https://www.gnu.org/software/gdb/), steuern ein Programm ohne das Wissen oder die Kooperation des gedebuggten Programms. Diese können aber dennoch beim Debuggen von Xamarin-Anwendungen hilfreich sein, falls Sie nativen iOS- oder Android-Code debuggen müssen.
 
@@ -38,11 +37,9 @@ Klicken Sie zum Festlegen eines Haltepunkts in Ihrer IDE im Randbereich Ihres Ed
 
 ![Festlegen eines Haltepunkts am Rand](media/debugging-image0.png)
 
-
 Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie zum **Pad für Haltepunkte** navigieren:
 
 ![Liste der Haltepunkte](media/debugging-image0a.png)
-
 
 ## <a name="start-debugging"></a>Debugging starten
 
@@ -62,17 +59,13 @@ Debugtools wie zum Beispiel das, was zur Überprüfung der Werte eines Objekts v
 
 Sie können auch Regeln festlegen, durch die die Umstände bestimmt werden, unter denen ein Haltepunkt auftreten soll. Dies wird als das Hinzufügen eines *bedingten Haltepunkts* bezeichnet. Greifen Sie auf das **Fenster für Haltepunkteigenschaften** zu, um einen bedingten Haltepunkt festzulegen. Dazu gibt es zwei Möglichkeiten:
 
-
 * Um einen neuen bedingten Haltepunkt hinzuzufügen, klicken Sie mit der rechten Maustaste links der Zeilennummer des Codes, an der Sie einen Haltepunkt setzen möchten, auf den Rand des Editors, und wählen Sie „Neuer Haltepunkt“:
-
 
  ![Kontextmenü des Haltepunkts](media/debugging-image4.png)
 
 * Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und klicken Sie auf **Haltepunkteigenschaften**, um eine Bedingung zu einem bestehenden Haltepunkt hinzuzufügen. Sie können auch auf die unten dargestellte Schaltfläche „Haltepunkt bearbeiten“ im **Pad für Haltepunkte** klicken:
 
-
  ![Bearbeiten eines bestehenden Haltepunkts im Pad für Haltepunkte](media/debugging-image5.png)
-
 
 Anschließend können Sie die Bedingung eingeben, unter der der Haltepunkt auftreten soll:
 
@@ -91,12 +84,16 @@ Hier sind die vier Schaltflächen:
 *   **Einzelschritt**: Dadurch wird ebenfalls die nächste Codezeile ausgeführt. Wenn die nächste Zeile ein Funktionsaufruf ist, wird der Einzelschritt in der ersten Zeile der Funktion anhalten, wodurch Sie die Funktion dann Zeile für Zeile debuggen können. Wenn die nächste Zeile keine Funktion ist, funktioniert diese Schaltfläche genauso wie der Prozedurschritt.
 *   **Rücksprung**: Dadurch wird zu der Zeile zurückgekehrt, in der die aktuelle Funktion aufgerufen wurde.
 
-
 ## <a name="debugging-monos-class-libraries"></a>Debuggen der Mono-Klassenbibliotheken
+
 Xamarin-Produkte enthalten den Quellcode für die Mono-Klassenbibliotheken, die Sie verwenden können, um in einem einzigen Schritt vom Debugger zu einer Überprüfung der Vorgänge im Hintergrund zu gelangen.
 
 Da dieses Feature während des Debuggens mehr Arbeitsspeicher benötigt, ist es standardmäßig deaktiviert.
 
 Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Studio für Mac > Einstellungen > Debugger), um dieses Feature zu aktivieren und versichern Sie sich, dass die Option „**Debug project code only; do not step into framework code.**“ („Nur Projektcode debuggen, keinen Einzelschritt in Frameworkcode ausführen.“) wie unten dargestellt **nicht ausgewählt** ist.
 
- ![Option „Keinen Einzelschritt in Frameworkcode ausführen“](media/debugging-image8.png)
+![Option „Keinen Einzelschritt in Frameworkcode ausführen“](media/debugging-image8.png)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Debuggen in Visual Studio (unter Windows)](/visualstudio/debugger/)

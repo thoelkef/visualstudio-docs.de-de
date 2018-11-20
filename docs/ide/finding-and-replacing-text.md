@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384239"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349100"
 ---
 # <a name="find-and-replace-text"></a>Suchen und Ersetzen von Text
 
@@ -93,6 +93,9 @@ Sie können Komponentensätze als Suchbereich definieren, indem Sie auf die Scha
 
 ## <a name="multi-caret-selection"></a>Auswählen mehrerer Caretzeichen
 
+> [!NOTE]
+> Dieser Abschnitt gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Blockauswahl](/visualstudio/mac/block-selection).
+
 **Neu in Visual Studio 2017 Version 15.8**
 
 Durch das *Auswählen mehrerer Caretzeichen* können Sie dieselbe Änderung gleichzeitig an unterschiedlichen Stellen durchführen. Beispielsweise können Sie Text hinzufügen oder vorhandenen Text bearbeiten. Die Änderungen werden gleichzeitig an mehreren Stellen übernommen.
@@ -130,3 +133,4 @@ Einige der Befehle sind auch im Menü **Bearbeiten** unter **Multiple Carets** (
 
 - [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactoring von Code in Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Blockauswahl (Visual Studio für Mac)](/visualstudio/mac/block-selection)

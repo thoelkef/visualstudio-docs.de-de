@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228862"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295682"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio für Mac: Überblick
 
@@ -56,13 +56,13 @@ Hier werden Dateien für den Quellcode, Ressourcen, Benutzeroberflächen und Abh
 Weitere Informationen zum Verwenden von Projekten und Projektmappen in Visual Studio für Mac finden Sie im Artikel [Projektmappen und Projekte](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Assemblyverweise
- 
+
 Assemblyverweise für jedes Projekt stehen im Ordner „Verweise“ zu Verfügung:
 
 ![Ordner „Verweise“ im Projektmappenpad](media/ide-tour-image19.png)
 
 Sie können mit dem Dialogfeld **Verweise bearbeiten** zusätzliche Verweise hinzufügen. Dieses kann durch Doppelklicken auf den Ordner „Verweise“ angezeigt werden, oder indem Sie auf **Verweise bearbeiten** in den Kontextmenüaktionen klicken:
- 
+
 ![Dialogfeld „Verweise bearbeiten“](media/ide-tour-image20.png)
 
 Weitere Informationen zum Verwenden von Verweisen in Visual Studio für Mac finden Sie im Artikel [Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md).
@@ -93,7 +93,7 @@ Weitere Informationen zu den Datenschnellansichten des Debuggers finden Sie im A
 
 ## <a name="version-control"></a>Quellcodeverwaltung
 
-Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversion integriert werden. Projekte unter Quellcodeverwaltung werden mit dem Branch bezeichnet, der neben dem Namen der Projektmappe angezeigt wird: 
+Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversion integriert werden. Projekte unter Quellcodeverwaltung werden mit dem Branch bezeichnet, der neben dem Namen der Projektmappe angezeigt wird:
 
 ![Branchname, der ein Projekt unter Quellcodeverwaltung angibt](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Die Symbole von Dateien mit nicht committeten Änderungen sind im Projektmappenb
 ![Ausgecheckte Dateien im Projektmappenpad](media/ide-tour-image23.png)
 
 Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finden Sie im Artikel [Versionskontrolle](version-control.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Visual Studio-IDE (unter Windows)](/visualstudio/ide/visual-studio-ide)

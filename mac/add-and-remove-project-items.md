@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: d7401395d817d4c07b179c0d096612469fed6291
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224377"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296293"
 ---
 # <a name="adding-and-removing-project-items"></a>Hinzufügen und Entfernen von Projektelementen
 
@@ -26,7 +26,6 @@ Dies öffnet das Dialogfeld „“, das zusätzlich zu den Standardvorlagen Date
 
 Sie können Ihrem Projekt vorhandene Dateien hinzufügen, indem Sie mit der rechten Maustaste auf den Projektknoten klicken und dann auf **Hinzufügen > Datei hinzufügen...**. Alternativ können Sie auch einen ganzen Ordner hinzufügen, indem Sie auf **Hinzufügen > Vorhandenen Ordner hinzufügen...** klicken. Dies öffnet den Dateibrowser, über den Sie Ihr System nach dem hinzuzufügenden Element durchsuchen können.
 
-
 ## <a name="removing-items"></a>Entfernen von Elementen
 
 Um ein Element aus Ihrem aktuellen Projekt zu entfernen, klicken Sie mit der rechten Maustaste auf das Element und dann auf **Entfernen**.
@@ -37,5 +36,9 @@ Dies öffnet das Dialogfeld „Element löschen“. Wählen Sie eine dieser Opti
 
 ![Dialogfeld „Element löschen“](media/add-and-remove-project-items-image4.png)
 
-* **Löschen**: Entfernt Elemente aus dem Projekt und vom Datenträger
-* **Aus Projekt löschen**: Entfernt Elemente aus dem Projekt, aber nicht vom Datenträger 
+* **Löschen**: Entfernt Elemente aus dem Projekt und vom Datenträger.
+* **Aus Projekt löschen**: Entfernt Elemente aus dem Projekt, aber nicht vom Datenträger
+
+## <a name="see-also"></a>Siehe auch
+
+* [Projektmappen und Projekte in Visual Studio (unter Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

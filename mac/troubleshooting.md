@@ -1,17 +1,17 @@
 ---
-title: Problembehandlung für Visual Studio für Mac
+title: Problembehandlung
 description: Häufige Probleme und deren mögliche Lösungen für Visual Studio für Mac-Benutzer
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224378"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294642"
 ---
 # <a name="troubleshooting"></a>Problembehandlung
 
@@ -23,7 +23,7 @@ Protokolle können Sie über das Menüelement **Hilfe > Protokollverzeichnis öf
 
 ## <a name="viewing-exceptions"></a>Anzeigen von Ausnahmen
 
-Wenn eine Ausnahme abgefangen wurde, wird eine Ausnahmenblase angezeigt. Um mehr Details anzuzeigen, wählen Sie **Details anzeigen** aus:
+Wenn eine Ausnahme abgefangen wird, wird eine Ausnahmenblase angezeigt. Um mehr Details anzuzeigen, wählen Sie **Details anzeigen** aus:
 
 ![Weitere Details zu einer Ausnahme](media/troubleshooting-image2.png)
 
@@ -46,3 +46,7 @@ Wichtige Abschnitte des Dialogfelds sind in der oberen Abbildung nummeriert, und
 11. Eine Kopierschaltfläche, damit die `exception.ToString()`-Ausgabe im die Zwischenablage kopiert wird.
 
 Beachten Sie, dass einige dieser Abschnitte nur sichtbar sind, wenn die Ausnahme eine innere Ausnahme hat.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Ressourcen für die Problembehandlung bei IDE-Fehlern (Visual Studio unter Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

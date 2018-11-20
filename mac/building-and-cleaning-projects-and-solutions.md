@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224406"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294239"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Erstellen und Bereinigen von Projekten und Projektmappen
 
@@ -32,17 +32,18 @@ So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinige
     * **Rebuild All** (Alles neu erstellen): Bereinigt die Projektmappe und erstellt diese dann.
     * **Clean All** (Alle bereinigen): Entfernt alle Build-Produkte aus Ihrer Projektmappe.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>So erstellen Sie ein einzelnes Projekt oder erstellen es neu
 
 1. Wählen Sie im Projektmappenpad das Projekt aus.
 
 2. Klicken Sie in der Menüleiste auf „Erstellen“, und wählen Sie dann Erstellen [Projektname], Neu erstellen [Projektname] oder Bereinigen [Projektname].
 
-
 ## <a name="to-stop-a-build"></a>So beenden Sie einen Build
 
 Klicken Sie auf das rote Quadrat im Statusbereich, um einen Build zu beenden:
 
- ![Klicken auf das rote Quadrat, um den Build zu beenden](media/compiling-and-building-image3.png)
+![Klicken auf das rote Quadrat, um den Build zu beenden](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Erstellen und Bereinigen von Projekten und Projektmappen (Visual Studio unter Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

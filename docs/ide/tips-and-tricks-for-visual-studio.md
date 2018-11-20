@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220852"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348942"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -22,6 +22,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 > [!TIP]
 > Die hier aufgelisteten Tastenkombinationen sind nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Standardtastenkombinationen in Visual Studio für Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Fensterverwaltung
 
@@ -136,4 +139,5 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tastenkombinationen (Azure DevOps Services und TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog mit Tipps und Tricks zu Visual Studio](https://blogs.msdn.com/b/zainnab)
+- [Blog mit Tipps und Tricks zu Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Standardtastenkombinationen in Visual Studio für Mac](/visualstudio/mac/keyboard-shortcuts)

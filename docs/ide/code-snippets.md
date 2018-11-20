@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117211"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348486"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
 Codeausschnitte sind kleine Blöcke mit wiederverwendbarem Code, die in einer Codedatei über einen Befehl im Kontextmenü oder eine Kombination von Hotkeys eingefügt werden können. Sie enthalten normalerweise häufig verwendete Codeblöcke, wie z.B. `try-finally`- oder `if-else`-Blöcke, können aber zum Einfügen von ganzen Klassen oder Methoden verwendet werden.
+
+> [!NOTE]
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Codeausschnitte (Visual Studio für Mac)](/visualstudio/mac/snippets).
 
 Codeausschnitte sind für viele Sprachen verfügbar, einschließlich C#, C++, Visual Basic, XML und T-SQL. Öffnen Sie den **Codeausschnitt-Manager** in Visual Studio über das Menü **Extras**, und wählen Sie aus der Dropdownliste im oberen Bereich eine Sprache aus. Dann werden Ihnen alle verfügbaren installierten Codeausschnitte für die jeweilige Sprache angezeigt.
 
@@ -103,3 +106,4 @@ Wenn Sie `newPropertyValue` in `m_property` ändern, wird jede Instanz von `newP
 - [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
 - [Visual C#-Codeausschnitte](../ide/visual-cpp-code-snippets.md)
 - [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)
+- [Codeausschnitte (Visual Studio für Mac)](/visualstudio/mac/snippets)

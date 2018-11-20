@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224196"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295279"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -27,9 +27,9 @@ Darüber hinaus können zu jedem Projekt auch Webverweise und native Verweise hi
 
 ## <a name="assembly-references"></a>Assemblyverweise
 
-Jedes Framework innerhalb von Xamarin umfasst über ein Dutzend Assemblys. Nicht auf alle dieser Assemblypakete wird standardmäßig in Ihrem Projekt verwiesen. 
+Jedes Framework innerhalb von Xamarin umfasst über ein Dutzend Assemblys. Nicht auf alle dieser Assemblypakete wird standardmäßig in Ihrem Projekt verwiesen.
 
-Verwenden Sie das Dialogfeld _Verweise bearbeiten_, um Pakete zu bearbeiten, auf die in Ihrem Projekt verwiesen wird. Dieses kann durch Doppelklicken auf den Ordner „Verweise“ angezeigt werden oder indem sie auf „Verweise bearbeiten“ in den Kontextmenüaktionen klicken:
+Sie können über das Dialogfeld **Verweise bearbeiten** Pakete bearbeiten, auf die in Ihrem Projekt verwiesen wird. Das Dialogfeld kann durch Doppelklicken auf den Ordner „Verweise“ angezeigt werden oder indem Sie in den Kontextmenüaktionen auf **Verweise bearbeiten** klicken:
 
 ![Dialogfeld „Assemblyverweise“](media/projects-and-solutions-image11.png)
 
@@ -42,3 +42,8 @@ NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung. Die NuGet-Unt
 Klicken Sie dazu mit der rechten Maustaste auf den Ordner **Pakete** im Projektmappenpad, und klicken Sie dann auf „Pakete hinzufügen“.
 
 Weitere Informationen zur Verwendung eines NuGet-Pakets finden Sie in der exemplarischen Vorgehensweise [Including a NuGet package in your Project (Einfügen eines NuGet-Pakets in Ihr Projekt)](nuget-walkthrough.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verwalten von Verweisen (Visual Studio unter Windows)](/visualstudio/ide/managing-references-in-a-project)
+- [Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung (Visual Studio unter Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

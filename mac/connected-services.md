@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224354"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295175"
 ---
 # <a name="connected-services-walkthrough"></a>Exemplarische Vorgehensweise für verbundene Dienste
 
@@ -18,8 +18,7 @@ Mit dem Workflow für verbundene Dienste wird der Workflow für das Azure-Portal
 
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines Azure-Back-End-Diensts. Dadurch werden Clouddatenspeicher, Authentifizierung und Pushbenachrichtigungen in eine plattformübergreifende Xamarin.Forms-PCL-Anwendung (Portable Class Library, portable Klassenbibliothek) eingebunden.
 
-
-1.  Doppelklicken Sie zunächst in der Projektmappe auf den Knoten **Verbundene Dienste**. Dadurch wird der Katalog der **Dienste** geöffnet.
+1. Doppelklicken Sie zunächst in der Projektmappe auf den Knoten **Verbundene Dienste**. Dadurch wird der Katalog der **Dienste** geöffnet.
   Dies ist eine Liste aller verfügbaren Dienste für den Anwendungstyp. Wählen Sie einen Dienst aus (z.B. **Mobiles Back-End mit Azure App Service**), indem Sie darauf klicken.
 
     [![Knoten „Verbundene Dienste“ in Visual Studio für Mac](media/connected-services-image001-sml.png "Knoten „Verbundene Dienste“ in Visual Studio für Mac")](media/connected-services-image001.png#lightbox)
@@ -68,7 +67,11 @@ Folgende Parameter sind für einen neuen Dienst erforderlich:
 
 -   **Name des App-Diensts**: Eindeutiger Name/eindeutige ID für den Plan
 -   **Abonnement**: Das Abonnement, mit dem Sie für den Dienst bezahlen möchten
--   **Ressourcengruppe**: Eine Möglichkeit, alle Azure-Ressourcen für ein Projekt zu organisieren. Es gibt die Option, eine vorhandene zu verwenden oder eine neue zu erstellen. Wenn dies Ihr erster Azure-Dienst ist, erstellen Sie eine neue.
+-   **Ressourcengruppe**: Eine Möglichkeit, alle Azure-Ressourcen für ein Projekt zu organisieren. Es gibt die Option, einen vorhandenen zu verwenden oder einen neuen zu erstellen. Wenn dies Ihr erster Azure-Dienst ist, erstellen Sie eine neue.
 -   **Dienstplan**: Bestimmt den Speicherort und die Kosten aller Ressourcen, die ihn verwenden. Es gibt die Option, einen vorhandenen zu verwenden oder einen neuen zu erstellen. Wenn dies Ihr erster Azure-Dienst ist, verwenden Sie den Standard, oder erstellen Sie einen neuen im Free-Tarif (F1).
 
-Weitere Informationen finden Sie in der [Azure App Service-Dokumentation](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/).
+Weitere Informationen finden Sie in der [Dokumentation für mobile Apps](/azure/app-service-mobile/).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verbundene Dienste (Visual Studio unter Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)
