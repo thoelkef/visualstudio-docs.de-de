@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Starten von Spy++ | Microsoft Docs'
+title: 'Vorgehensweise: Starten von Spy++ | Microsoft-Dokumentation'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 064a78f9665d2a700a328979b8de169733c09d93
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e2e5ffabbb560165bd19bb3d52b940a5cc9e858
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473857"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257162"
 ---
 # <a name="how-to-start-spy"></a>Gewusst wie: Starten von Spy++
 Sie können Spy++ aus Visual Studio oder an einer Eingabeaufforderung starten.  
   
- Beim start Spy++, wenn eine Meldung angezeigt wird, um bitten, nehmen Sie Änderungen an den Computer, klicken Sie auf **Ja**.  
+ Wenn Sie Starten von Spy++, wenn eine Nachricht angezeigt wird, um zu Fragen, berechtigt, Änderungen auf dem Computer, auf **Ja**.  
   
 > [!NOTE]
->  Sie können nur eine Instanz von Spy++ ausführen. Wenn Sie versuchen, eine andere Instanz ausgeführt werden, wird dadurch lediglich die gerade ausgeführte Instanz auf den Fokus erhalten.  
+>  Sie können nur eine Instanz von Spy++ ausführen. Wenn Sie versuchen, eine zweite Instanz gestartet, wird nur die aktuell ausgeführte Instanz aus, um den Fokus erhalten.  
   
-### <a name="to-start-spy-from-visual-studio"></a>So starten Sie Spy++ über Visual Studio  
+### <a name="start-spy-from-visual-studio"></a>Starten von Spy++ aus Visual Studio  
   
--   Auf der **Tools** Menü klicken Sie auf **Spy++**.  
+Auf der **Tools** , wählen Sie im Menü **Spy++**.  
   
-     Da Spy++ unabhängig davon ausgeführt wird, nachdem Sie ihn starten, können Sie Visual Studio schließen.  
+Da Spy++ unabhängig voneinander ausgeführt wird, nachdem Sie ihn starten, können Sie Visual Studio schließen.  
   
-    > [!NOTE]
-    >  Wenn Sie Nachrichten mit Spy++, führt dies möglicherweise langsamer ausgeführt, das Betriebssystem.  
+> [!NOTE]
+>  Wenn Sie Nachrichten mit Spy++, führt dies möglicherweise langsamer ausgeführt, das Betriebssystem.  
   
-### <a name="to-start-spy-at-a-command-prompt"></a>Starten von Spy++ an einer Eingabeaufforderung  
+### <a name="start-spy-at-a-command-prompt"></a>Starten von Spy++ an einer Eingabeaufforderung  
   
-1.  Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel wird der Pfad dieses Ordners... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.  
+1.  Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel ist der Pfad zu diesem Ordner... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.  
   
-2.  Typ **spyxx.exe** und drücken Sie dann die EINGABETASTE.  
+2.  Geben Sie **spyxx.exe**. 
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)   

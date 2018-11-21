@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348890"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257237"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Anzuzeigen Sie die Aufrufliste, und verwenden Sie das Fenster "Aufrufliste" im debugger
 
-Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufrufen, die derzeit auf dem Stapel vorhanden sind. Die **Aufrufliste** Fenster zeigt die Reihenfolge, in dem Methoden und Funktionen werden aufgerufen. Die Aufrufliste ist eine gute Möglichkeit zum Untersuchen und verstehen, den Ausführungsablauf der app.
+Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufrufen, die derzeit auf dem Stapel vorhanden sind. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Die Aufrufliste bietet eine nützliche Möglichkeit zum Untersuchen und Verstehen des Ausführungsablaufs einer App.
   
 Wenn [Debugsymbole](#bkmk_symbols) sind nicht verfügbar für einen Teil einer Aufrufliste, die **Aufrufliste** Fenster ist möglicherweise nicht in der richtigen Informationen für diesen Teil der Aufrufliste angezeigt, stattdessen anzeigen:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse. 
+> Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar. 
 > 
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Wählen Sie zum Ändern Ihrer Einstellungen **Einstellungen importieren und exportieren** auf die **Tools** Menü.  Finden Sie unter [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -103,7 +103,7 @@ In Visual Studio Enterprise (nur) können Sie Code Maps für die Aufrufliste bei
 
 ![Aufrufliste auf Code Map anzeigen](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Zeigen Sie den Disassemblierungscode für eine Funktion in der Aufrufliste  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zeigen Sie den Disassemblierungscode für eine Funktion in der Aufrufliste (C#, C++, Visual Basic F#) 
   
 -   In der **Aufrufliste** der rechten Maustaste auf die Funktion, deren Disassemblycode Sie, anzeigen möchten und wählen Sie **Gehe zu Disassembly**.    
 
@@ -111,7 +111,8 @@ In Visual Studio Enterprise (nur) können Sie Code Maps für die Aufrufliste bei
   
 -   Mit der rechten Maustaste den **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.  
   
-## <a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul
+## <a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul (C#, C++, Visual Basic F#)
+
 In der **Aufrufliste** Fenster können Sie laden die Debugsymbole für Code, der derzeit keine Symbole geladen sind. .NET Framework oder Systemsymbole, die von den öffentlichen Microsoft-Symbolservern heruntergeladen oder Symbole in einem Symbolpfad auf dem Computer, den Sie Debuggen, können diese Symbole sein.  
   
 Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

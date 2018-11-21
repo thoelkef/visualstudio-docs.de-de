@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612726"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257354"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -54,16 +54,16 @@ Ist es schwierig oder zeitaufwändig ist, um einen bestimmten Status in Ihrer ap
 
 3. Wenn Sie einen anderen Typ der Bedingung interessiert sind, wählen Sie **Filter** anstelle von **Bedingungsausdruck** in die **Haltepunkteinstellungen** (Dialogfeld), und führen Sie dann die Filter-Tipps.
 
-## <a name="change-the-execution-flow"></a>Ändern Sie den Ausführungsablauf
+## <a name="change-the-execution-flow"></a>Ändern des Ausführungsablaufs
 
 Mit dem Debugger auf eine einzige Zeile Code angehalten, verwenden Sie die Maus auf um den gelben Pfeilzeiger auf der linken Seite zu erfassen. Bewegen Sie den gelben Pfeil-Zeiger zu einem anderen Zeitpunkt im Code Ausführungspfad. Anschließend verwenden Sie F5, oder ein Befehl, der die app weiter auszuführen.
 
 ![Verschieben der Ausführungszeiger](../debugger/media/dbg-tour-move-the-execution-pointer.gif "der Ausführungszeiger verschieben")
 
-Ändern Sie den Ausführungsablauf, können Sie z. B. Ausführungspfade für anderen Code zu testen, oder führen Sie ohne Neustart des Debuggers den Code erneut ausführen.
+Durch Ändern des Ausführungsablaufs können Sie Aktionen ausführen wie das Testen verschiedener Pfade für die Codeausführung oder das erneute Ausführen von Code ohne Neustarten des Debuggers.
 
 > [!WARNING]
-> Häufig müssen Sie diese Funktion vorsichtig sein, und Sie wird eine Warnung in der QuickInfo angezeigt. Sie können andere Warnungen, zu sehen. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
+> Bei dieser Funktion müssen Sie häufig vorsichtig vorgehen. Sie werden durch eine Warnung in der QuickInfo auf Probleme aufmerksam gemacht. Möglicherweise werden Ihnen auch andere Warnungen angezeigt. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs, (c#, Visual Basic)
 
@@ -145,7 +145,7 @@ Wählen Sie einen Vorgang in der Ansicht „Zusammenfassung“ aus, um mehr Deta
 
 Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt
+## <a name="modules_window"></a> Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt (C#, C++, Visual Basic F#)
 
 Zum Anfügen an der ausgeführten app lädt der Debugger Symboldateien (.pdb) generierte Dateien für die exakt demselben Build von der app, die Sie debuggen möchten. In einigen Fällen kann ein wenig wissen von Symboldateien hilfreich sein. Sie können überprüfen, wie Symboldateien, die mithilfe von Visual Studio lädt die **Module** Fenster.
 

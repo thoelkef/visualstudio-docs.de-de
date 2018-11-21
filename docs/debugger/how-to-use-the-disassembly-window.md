@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671143"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257042"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Anzeigen von Disassemblierungscode in Visual Studio-debugger
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Anzeigen der Disassembly-Code in Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
 Die **Disassembly** Fenster zeigt Assemblycode, der den vom Compiler erstellten Anweisungen entspricht. Wenn Sie verwalteten Code Debuggen, entsprechen diese Assemblyanweisungen durch den Just-in-Time (JIT)-Compiler, nicht die Microsoft intermediate Language (MSIL) erstellt, die von der Visual Studio-Compiler erstellten nativen Code.  
   
@@ -41,7 +41,7 @@ Dieses Feature ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert ist. 
 
 Neben den Assemblyanweisungen der **Disassembly** Fenster kann die folgende optionale Informationen anzeigen:  
   
-- Speicheradresse, an der sich die einzelnen Anweisungen befinden. Für native Anwendungen ist es die eigentliche Speicheradresse. In Visual Basic C#, oder verwalteten Code, es ist ein Offset vom Beginn der Funktion.  
+- Speicheradresse, an der sich die einzelnen Anweisungen befinden. Für native Anwendungen ist es die eigentliche Speicheradresse. Für Visual Basic oder C#, Offset vom Anfang der Funktion ist.  
   
 - Quellcode, aus dem der Assemblercode abgeleitet wird.  
   
