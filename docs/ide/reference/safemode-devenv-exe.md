@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704147"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948737"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und -dienste
@@ -33,7 +33,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>Hinweise
  Dieser Schalter verhindert, dass beim Start von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackages von Drittanbietern geladen werden und stellt dadurch eine stabile Ausführung sicher.
 
-## <a name="description"></a>description
+## <a name="description"></a>Beschreibung 
  Das folgende Beispiel zeigt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherter Modus.
 
 ## <a name="code"></a>Code

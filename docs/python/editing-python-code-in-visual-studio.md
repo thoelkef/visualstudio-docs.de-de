@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von Python-Code
 description: Beim Bearbeiten von Python in Visual Studio stehen IntelliSense, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774764"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001268"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -26,7 +26,7 @@ Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
 
 Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliedern](../ide/outlining.md), um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
 

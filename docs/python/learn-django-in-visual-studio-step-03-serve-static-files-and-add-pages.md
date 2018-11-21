@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 3'
 description: Eine exemplarische Vorgehensweise der Grundlagen von Django im Kontext von Visual Studio-Projekten, die zeigt, wie Sie statische Dateien bereitstellen, Seiten zur App hinzufügen, und die Vorlagenvererbung verwenden
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626823"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001294"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
