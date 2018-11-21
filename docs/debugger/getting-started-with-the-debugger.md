@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826777"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Informationen zum Debuggen mit Visual Studio
 
@@ -297,7 +297,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
 
-6. Wenn Sie die Taste **F5** drücken oder auf die Schaltfläche **Debuggen starten** klicken, wird die App gestartet, und der Debugger geht zu der Codezeile, in der Sie den Haltepunkt festgelegt haben.
+2. Wenn Sie die Taste **F5** drücken oder auf die Schaltfläche **Debuggen starten** klicken, wird die App gestartet, und der Debugger geht zu der Codezeile, in der Sie den Haltepunkt festgelegt haben.
 
     ![Festlegen und Treffen eines Haltepunkts](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
 ## <a name="navigate-code-using-run-to-click"></a>Navigieren durch Code mithilfe von „Ausführung bis Klick“
 
-5. Scrollen Sie im Code-Editor nach unten und bewegen Sie den Cursor so lange über die `Console.WriteLine`-Methode (`std::cout` in C++) in der `Triangle`-Klasse, bis auf der linken Seite die grüne Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird.
+1. Scrollen Sie im Code-Editor nach unten und bewegen Sie den Cursor so lange über die `Console.WriteLine`-Methode (`std::cout` in C++) in der `Triangle`-Klasse, bis auf der linken Seite die grüne Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird.
 
      ![Verwenden der Funktion „Ausführung bis Klick“](../debugger/media/get-started-run-to-click.png "Ausführung bis Klick")
 
    > [!NOTE]
    > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
 
-6. Klicken Sie auf die Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Klicken Sie auf die Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Die Verwendung dieser Schaltfläche ist vergleichbar mit dem Festlegen eines temporären Haltepunkts. **Ausführung bis Klick** ist praktisch, um schnell durch einen sichtbaren Bereich mit App-Code zu navigieren (Sie können in eine beliebige geöffnete Datei klicken).
 
@@ -444,7 +444,7 @@ Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlic
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Funktionen verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
+In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Tipps und Tricks zum Debugger](../debugger/debugger-tips-and-tricks.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

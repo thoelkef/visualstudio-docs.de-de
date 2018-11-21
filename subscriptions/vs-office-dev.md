@@ -9,12 +9,12 @@ description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, di
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858341"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758395"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
@@ -28,19 +28,19 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
 
 3. Sobald der Anmeldevorgang abgeschlossen ist, sollte die Seite mit den Abonnementvorteilen angezeigt werden.  Wenn Sie über mehrere Abonnements verfügen, können Sie dazwischen wechseln, indem Sie auf den Dropdownpfeil in der oberen rechten Ecke unterhalb des schwarzen Menübands klicken.  Die Kachel „Vorteile“ für das Office 365-Entwicklerabonnement finden Sie in der Kategorie „Tools“ (Extras).  Verwenden Sie den Pfeil rechts neben der Zeile mit den Kacheln, und scrollen Sie zur Kachel „Office“.
 
-4. Klicken Sie auf den Link **Aktivieren** im unteren Bereich der Kachel „Vorteil“.   
+4. Klicken Sie auf den Link **Aktivieren** im unteren Bereich der Kachel „Vorteil“.
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „Office 365 für Entwickler“](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. Erstellen Sie im nächsten Schritt ein Konto.  Ihr Name und Ihre E-Mail-Adresse für die Anmeldung werden angezeigt.  
+5. Erstellen Sie im nächsten Schritt ein Konto.  Ihr Name und Ihre E-Mail-Adresse für die Anmeldung werden angezeigt.
 6. Wählen Sie ein Land aus.
-7. Geben Sie den Namen Ihres Unternehmens ein. 
-8. Klicken Sie auf das erste Kontrollkästchen, um die Bestimmungen zu akzeptieren. 
+7. Geben Sie den Namen Ihres Unternehmens ein.
+8. Klicken Sie auf das erste Kontrollkästchen, um die Bestimmungen zu akzeptieren.
 9. Klicken Sie auf **Weiter**.
    > [!div class="mx-imgBorder"]
    > ![Anmelden in Office 365 für Entwickler](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. Geben Sie die gewünschten Einstellungen und Kategorien an, und klicken Sie auf **Abonnement aktivieren**.   
+10. Geben Sie die gewünschten Einstellungen und Kategorien an, und klicken Sie auf **Abonnement aktivieren**.
     > [!div class="mx-imgBorder"]
     > ![Einstellungen für Office 365 für Entwickler](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
     > [!div class="mx-imgBorder"]
     > ![Benutzername und Domäne für Office 365 für Entwickler](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. Geben Sie Ihre Telefonnummer ein, und klicken Sie auf **Code senden**.  So wird sichergestellt, dass das Konto von einer echten Person erstellt wird. 
+12. Geben Sie Ihre Telefonnummer ein, und klicken Sie auf **Code senden**.  So wird sichergestellt, dass das Konto von einer echten Person erstellt wird.
     > [!div class="mx-imgBorder"]
     > ![Rufnummerüberprüfung für Office 365 für Entwickler](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,13 +56,13 @@ Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die O
     > [!div class="mx-imgBorder"]
     > ![Codeüberprüfung für Office 365 für Entwickler](_img/vs-office-dev/vs-office-dev-setup.png)
 
-Das ist alles!  Es wird eine Seite mit Informationen angezeigt, die Ihren Einstellungen entsprechen.  
+Das ist alles!  Es wird eine Seite mit Informationen angezeigt, die Ihren Einstellungen entsprechen.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Um auf Ihr Entwicklerabonnement zuzugreifen, rufen Sie [office.com](https://www.office.com) auf, und melden Sie sich mit der Benutzer-ID und dem Kennwort an, das Sie soeben erstellt haben.
 
-Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ: Office 365-Entwicklerprogramm](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
-
+Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ: Office 365-Entwicklerprogramm](/office/developer-program/office-365-developer-program-faq).
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -79,9 +79,8 @@ Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ:
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-
-
 ## <a name="support-resources"></a>Supportressourcen
+
 -  Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 -  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

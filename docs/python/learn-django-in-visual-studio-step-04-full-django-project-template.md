@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 4'
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Features, die durch die Vorlage „Django-Webprojekt“ bereitgestellt werden.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627078"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001203"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 
