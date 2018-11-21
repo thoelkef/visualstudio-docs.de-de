@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180177"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257198"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Debuggen Sie zur Entwurfszeit in Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Debuggen zur Entwurfszeit in Visual Studio (C#, C++, Visual Basic F#)
 
 In einigen Szenarios sollten Sie so Debuggen Sie Code zur Entwurfszeit anstelle von Zeit, während die Anwendung ausgeführt wird. Hierzu können Sie mithilfe der **direkt** Fenster. Sollten Sie das Debuggen von XAML-Code, mit der interagiert mit anderen Code, z. B. Code für die Datenbindung, können Sie **Debuggen** > **an den Prozess anhängen** dafür.
   
@@ -32,7 +32,7 @@ In einigen Szenarios sollten Sie so Debuggen Sie Code zur Entwurfszeit anstelle 
 
 Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterroutine ausführen, während die Anwendung nicht ausgeführt wird. Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Diese Funktion wird „Debuggen zur Entwurfszeit“ genannt.  
 
-Im folgende Beispiel wird in Visual Basic jedoch **direkt** Fenster wird auch in c# und C++-Anwendungen unterstützt.
+Im folgende Beispiel wird in Visual Basic. Verwenden der **direkt** Fenster zur Entwurfszeit wird auch in unterstützt C#, C++ und F# Anwendungen.
   
 1.  Fügen Sie den folgenden Code in eine Visual Basic-Konsolenanwendung ein:  
   

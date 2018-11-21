@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843261"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257341"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **an den Prozess anhängen** , oder drücken Sie **STRG**+**Alt** + **P** in Visual Studio, und die Verwendung der **an den Prozess anhängen** Dialogfeld, um den Debugger an den Prozess anzuhängen.
@@ -153,7 +153,7 @@ Für einige app-Typen, wie apps der universellen Windows-App (UWP), Sie nicht di
 
 Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) -Linkeroption herstellen.
 
-Für Client-seitige Skript Debuggen muss das Skriptdebugging im Browser aktiviert sein. Wählen Sie für das Debuggen des clientseitigen Skripts in Chrome **Webkit** als den Codetyp aus, und je nach Ihren app-Typ, müssen Sie möglicherweise den Browser zu starten, im Debugmodus befindet (Typ `chrome.exe --remote-debugging-port=9222` über die Befehlszeile).
+Für Client-seitige Skript Debuggen muss das Skriptdebugging im Browser aktiviert sein. Wählen Sie für das Debuggen des clientseitigen Skripts in Chrome **Webkit** als den Codetyp aus, und je nach Ihren app-Typ, müssen Sie möglicherweise schließen Sie alle Chrome-Instanzen, und starten den Browser im Debugmodus (Typ `chrome.exe --remote-debugging-port=9222` über die Befehlszeile).
 
 Geben Sie einen laufenden Prozess anfügen, in Visual Studio schnell auf **STRG**+**Alt**+**P**, und geben Sie dann auf den ersten Buchstaben der Name des Prozesses.
 

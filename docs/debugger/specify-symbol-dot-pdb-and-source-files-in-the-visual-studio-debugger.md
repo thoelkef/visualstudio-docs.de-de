@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349490"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257380"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
 Programmdatenbank (*PDB*) Dateien, Symboldateien, so genannte zuordnen, Bezeichner und die Anweisungen im Quellcode Ihres Projekts, zu der entsprechenden IDs und die Anweisungen im kompilierten apps. 
 

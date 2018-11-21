@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296267"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257289"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>DLLs und ausführbare Dateien in das Fenster "Module" anzeigen
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Anzeigen von DLLs und ausführbare Dateien in das Fenster "Module" (C#, C++, Visual Basic F#)
  
 Während des Debuggens Visual Studio die **Module** Fenster listet auf und zeigt Informationen zu den DLLs und ausführbare Dateien (*.exe* Dateien) Ihrer app verwendet. 
 

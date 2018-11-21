@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: anzeigen und Ausblenden von Registergruppen | Microsoft Docs'
+title: 'Vorgehensweise: anzeigen und Ausblenden von Registergruppen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,17 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a98927d0132402e2977d5d8f1f28cbba43da636c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474088"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257146"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Gewusst wie: Anzeigen und Ausblenden von Registergruppen
-Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **allgemeine**Kategorie.  
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Vorgehensweise: anzeigen und Ausblenden von Registergruppen (C#, C++, Visual Basic F#)
+
+Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **Allgemein**Kategorie.  
   
- Übersichtlichkeit der **registriert** Fenster Register in Gruppen organisiert. Wenn Sie mit der rechten Maustaste die **registriert** Fenster sehen Sie ein Kontextmenü mit diesen Gruppen, die Sie anzeigen oder Ausblenden der Bedarf nach dem folgenden Verfahren können.  
+ Übersichtlichkeit der **registriert** in Gruppen organisiert Fenster. Wenn Sie mit der rechten Maustaste die **registriert** Fenster sehen Sie ein Kontextmenü mit diesen Gruppen, die ein- und Ausblenden von Bedarf wie unten beschrieben werden können.  
   
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
