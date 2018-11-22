@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219509"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257071"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Gewusst wie: Anwenden von Bearbeitungen im Unterbrechungsmodus mithilfe von "Bearbeiten und Fortfahren"
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und Fortfahren (Visual Basic)
 Sie können mit Bearbeiten und Fortfahren den Code im Unterbrechungsmodus bearbeiten und anschließend fortfahren, ohne die Codeausführung anzuhalten und erneut starten zu müssen.  
   
 Einschränkungen zur Verwendung von während des Debuggens bearbeiten und fortfahren, finden Sie unter [Supported Code Changes (C# und Visual Basic](../debugger/supported-code-changes-csharp.md)]
