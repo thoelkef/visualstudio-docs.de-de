@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829639"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281848"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Das Dataset ist eine in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, is
 ## <a name="two-stage-updates"></a>Zweistufige Aktualisierungen  
  Aktualisieren einer Datenquelle ist ein zweistufiger Prozess. Der erste Schritt ist das Dataset mit neuen Datensätzen, geänderten Datensätze oder gelöschten Datensätze zu aktualisieren. Wenn Ihre Anwendung diese Änderungen nicht zurück an die Datenquelle gesendet werden, sind Sie das Update nicht mehr benötigen.  
   
- Wenn Sie die Änderungen zurück in die Datenbank senden, ist ein zweiter Schritt erforderlich. Wenn Sie nicht von datengebundenen Steuerelementen verwenden, müssen Sie manuell die TableAdapter (oder Datenadapters) die Update-Methode aufrufen, mit denen Sie das Dataset zu füllen. Allerdings können Sie verschiedene Adaptern, z. B. auch zum Verschieben von Daten aus einer Datenquelle in eine andere oder zum Aktualisieren mehrerer Datenquellen verwenden. Wenn Sie sind nicht mit der Datenbindung und Änderungen an verknüpften Tabellen speichern, müssen Sie eine Variable, der automatisch generierten TableAdapterManager-Klasse manuell instanziieren und rufen Sie dann die UdpateAll-Methode.  
+ Wenn Sie die Änderungen zurück in die Datenbank senden, ist ein zweiter Schritt erforderlich. Wenn Sie nicht von datengebundenen Steuerelementen verwenden, müssen Sie manuell die TableAdapter (oder Datenadapters) die Update-Methode aufrufen, mit denen Sie das Dataset zu füllen. Allerdings können Sie verschiedene Adaptern, z. B. auch zum Verschieben von Daten aus einer Datenquelle in eine andere oder zum Aktualisieren mehrerer Datenquellen verwenden. Wenn Sie sind nicht mit der Datenbindung und Änderungen an verknüpften Tabellen speichern, müssen Sie eine Variable, der automatisch generierten TableAdapterManager-Klasse manuell instanziieren und rufen Sie dann die UpdateAll-Methode.  
   
  ![Visual Basic-Dataset-Aktualisierungen](../data-tools/media/vbdatasetupdates.gif "VbDatasetUpdates")  
 Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in einer erfolgreichen Aktualisierung  
