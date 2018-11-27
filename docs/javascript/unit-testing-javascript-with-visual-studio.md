@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219379"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766539"
 ---
 # <a name="unit-testing-in-nodejs"></a>Unittests in Node.js
 
@@ -33,7 +33,7 @@ Folgende Frameworks werden unterstützt:
 > [!WARNING]
 > Ein Problem in Tape verhindert derzeit die Ausführung von Tape-Tests. Mit der Zusammenführung von [PR 361](https://github.com/substack/tape/pull/361) sollte das Problem behoben sein.
 
-Wenn Ihr bevorzugtes Framework nicht unterstützt wird, finden Sie unter [Add support for a unit test framework (Hinzufügen der Unterstützung für ein Komponententest-Framework)](#addingFramework) Informationen zum Hinzufügen der Unterstützung. 
+Wenn Ihr bevorzugtes Framework nicht unterstützt wird, finden Sie unter [Add support for a unit test framework (Hinzufügen der Unterstützung für ein Komponententest-Framework)](#addingFramework) Informationen zum Hinzufügen der Unterstützung.
 
 ## <a name="write-unit-tests"></a>Schreiben von Komponententests
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Wenn eine Fehlermeldung angezeigt wird, die besagt, dass *vstest.console.exe* nicht gefunden werden kann, prüfen Sie, ob Sie tatsächlich die Developer-Eingabeaufforderung und nicht nur eine gewöhnliche Eingabeaufforderung geöffnet haben. 
+> Wenn eine Fehlermeldung angezeigt wird, die besagt, dass *vstest.console.exe* nicht gefunden werden kann, prüfen Sie, ob Sie tatsächlich die Developer-Eingabeaufforderung und nicht nur eine gewöhnliche Eingabeaufforderung geöffnet haben.
 
 ## <a name="addingFramework"></a>Hinzufügen der Unterstützung für ein Komponententest-Framework
 
@@ -149,7 +149,7 @@ Ein gutes Beispiel für die Implementierungen von `find_tests` und `run_tests` f
 Verfügbare Testframeworks werden beim Start von Visual Studio ermittelt. Wenn ein Framework hinzugefügt wird, während Visual Studio ausgeführt wird, muss Visual Studio neu gestartet werden, damit das Framework erkannt wird. Wenn Sie an der Implementierung Änderungen vornehmen, müssen Sie jedoch keinen Neustart durchführen.
 
 ## <a name="unit-tests-in-other-project-types"></a>Komponententests in anderen Projekttypen
-Beim Schreiben von Komponententests sind Sie nicht nur auf Ihre Node.js-Projekte beschränkt. Wenn Sie die Eigenschaften „TestFramework“ und „TestRoot“ zu einem C#- oder VB-Projekt hinzufügen, werden die Tests aufgelistet, und Sie können sie über das Fenster „Test-Explorer“ ausführen.
+Beim Schreiben von Komponententests sind Sie nicht nur auf Ihre Node.js-Projekte beschränkt. Wenn Sie die Eigenschaften „TestFramework“ und „TestRoot“ zu einem C#- oder Visual Basic-Projekt hinzufügen, werden die Tests aufgelistet, und Sie können sie über das Fenster „Test-Explorer“ ausführen.
 
 Klicken Sie dazu im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, klicken Sie auf **Projekt entladen**, und wählen Sie dann **Edit Project** (Projekt bearbeiten) aus. Fügen Sie anschließend in der Projektdatei die folgenden zwei Elemente zu einer Eigenschaftengruppe hinzu.
 

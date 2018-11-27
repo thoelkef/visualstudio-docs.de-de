@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d894c033d466d84409c46a2d2849650bf32a119
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70c00a9c0de4afd9f54062e1c2ffabcc2911a538
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870301"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305571"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem server
   Sie können die Daten in einer Anpassung auf Dokumentebene programmieren, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden. Dies bedeutet, Sie können Daten in einem Dokument auf einem Server, die nicht Word oder Excel installiert. Code wird z. B. auf einem Server (beispielsweise eine [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seite) die Daten in einem Dokument angepasst und angepasste Dokument kann an einen Endbenutzer gesendet. Wenn der Endbenutzer das Dokument öffnet, bindet Datenbindungscode in die Projektmappenassembly benutzerdefinierten Daten in das Dokument. Dies ist möglich, da die Daten im Dokument von der Benutzeroberfläche getrennt sind. Weitere Informationen finden Sie unter [zwischengespeicherten Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md).  

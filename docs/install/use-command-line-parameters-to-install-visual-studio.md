@@ -2,7 +2,7 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768514"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -55,6 +55,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `update` | Aktualisiert ein installiertes Produkt. |
 | `repair` | Repariert ein installiertes Produkt. |
 | `uninstall` | Deinstalliert ein installiertes Produkt. |
+| `export` | **Neu in 15.9**: Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei |
 
 | **Option installieren** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--nickname <name>` | **Optional**: Definiert den Spitznamen, der einem installierten Produkt zugewiesen wird. Der Spitzname darf nicht länger als 10 Zeichen sein.  |
 | `--productKey` | **Optional**: Legt den Product Key fest, der für ein installiertes Produkt verwendet wird. Er besteht aus 25 alphanumerischen Zeichen im Format `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` oder `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Eine Offline-Version dieser Seite wird angezeigt. |
+| `--config <path>` | **Optional** und **Neu in 15.9**: Während eines Installations- oder Änderungsvorgangs werden die hinzuzufügenden Workloads und Komponenten basierend auf einer zuvor gespeicherten Installationskonfigurationsdatei ermittelt. Dieser Vorgang ist optional und entfernt keine Workloads oder Komponenten, wenn diese nicht in der Datei vorhanden sind. Außerdem werden Elemente, die nicht für das Produkt gelten, nicht hinzugefügt. Während eines Exportvorgangs wird der Speicherort bestimmt, an dem die Installationskonfigurationsdatei gespeichert wird. |
 
 > Hinweis: Wenn Sie mehrere Arbeitsauslastungen und Komponenten angeben, müssen Sie den `--add`- oder `--remove`-Befehlszeilenwechsel für jedes Element wiederholen.
 

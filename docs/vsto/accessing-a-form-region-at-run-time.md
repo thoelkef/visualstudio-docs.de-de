@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Inspectors [Office development in Visual Studio]
 - Explorers [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], accessing at runtime
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0cdea460b2a50819aff3c300b8510ffd577c8f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262068"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304479"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Zugriff auf einen Formularbereich zur Laufzeit
 
@@ -58,7 +58,7 @@ ms.locfileid: "34262068"
  [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]  
 
-## <a name="access-controls-on-a-form-region"></a>Access-Steuerelemente in einem Formularbereich  
+## <a name="access-controls-on-a-form-region"></a>Zugriffssteuerung in einem Formularbereich  
  Für den Zugriff auf Steuerelemente in einem Formularbereich mithilfe der `Globals` -Klasse müssen Sie die Steuerelemente für Code außerhalb der Formularbereich-Codedatei zugänglich machen.  
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>In der Formularbereich-Designer entworfene Formularbereiche  
@@ -71,17 +71,17 @@ ms.locfileid: "34262068"
 
  Um den Zugriff auf ein Steuerelement von außerhalb der Formularbereich-Codedatei zu ermöglichen, erstellen Sie in der Formularbereich-Codedatei eine Eigenschaft, um dieses Steuerelement zurückzugeben.  
 
- Weitere Informationen zum Erstellen von Eigenschaften in c# finden Sie unter [wie: Deklarieren und verwenden, lesen Sie die Eigenschaften schreiben &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Weitere Informationen zum Erstellen von Eigenschaften in C#, finden Sie unter [wie: Deklarieren und verwenden, lesen Sie die Eigenschaften schreiben &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Weitere Informationen zum Erstellen von Eigenschaften in Visual Basic finden Sie unter [Vorgehensweise: erstellen eine Eigenschaft (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Weitere Informationen über das Erstellen von Eigenschaften in Visual Basic finden Sie unter [Vorgehensweise: Erstellen Sie eine Eigenschaft (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Siehe auch  
  [Richtlinien zum Erstellen von Outlook-Formularbereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Gewusst wie: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Benutzerdefinierte Aktionen in Outlook-Formularbereichen](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Exemplarische Vorgehensweise: Importieren eines, das in Outlook entworfenen Formularbereichs](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Vorgehensweise: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Exemplarische Vorgehensweise: Importieren eines Formularbereichs, das in Outlook entworfen wurde](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
- [Zugriff auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)  

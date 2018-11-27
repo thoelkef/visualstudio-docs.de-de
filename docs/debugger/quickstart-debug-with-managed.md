@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637522"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257185"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit verwaltetem Code mithilfe des Visual Studio-Debuggers
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
@@ -143,7 +143,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren bewegt werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
 
 Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.AddLast(20)`, bis die Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "Run to Click") angezeigt wird, und klicken Sie diese an.
 
@@ -151,7 +151,7 @@ Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c
 
 Dann wird die App weiter ausgeführt, ruft `doWork` auf, und wird bei der Codezeile ausgesetzt, bei der Sie die Schaltfläche angeklickt haben.
 
-Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchzugehen. Ausführlichere Informationen finden Sie im [Beginner's Guide (Leitfaden für Anfänger)](../debugger/getting-started-with-the-debugger.md).
+Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchzugehen. Ausführlichere Informationen finden Sie im [Leitfaden für Einsteiger](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Untersuchen von Variablen in einem Datentipp
 
@@ -181,7 +181,7 @@ Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Funktionen verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
+In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
 > [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
