@@ -9,12 +9,12 @@ description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854467"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817437"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -24,7 +24,7 @@ Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnem
 
 Der Begriff „Aliasing“ bezieht sich auf Benutzer, die über verschiedene Identitäten für die Anmeldung bei Windows (oder Ihrem Active Directory) und den Zugriff auf E-Mails verfügen.
 
-Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Service für die Verzeichnisanmeldung verfügt, wie z.B. JohnD@contoso.com, aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen, z.B. John.Doe@contoso.com, zugreifen.  Für viele Kunden, die ihre Abonnements über das Volume Licensing Service Center (VLSC) verwalten, kann dies zu einer erfolglosen Anmeldung führen. Dies liegt daran, dass die angegebene E-Mail-Adresse (John.Doe@contoso.com) nicht mit der Verzeichnisadresse (JohnD@contoso.com) übereinstimmt, die für eine erfolgreiche Authentifizierung über die Option „Geschäfts-, Schul- oder Unikonto“ erforderlich ist.
+Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Service für die Verzeichnisanmeldung verfügt, wie z.B. JohnD@contoso.com, aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen, z.B. John.Doe@contoso.com, zugreifen. Für viele Kunden, die ihre Abonnements über das Volume Licensing Service Center (VLSC) verwalten, kann dies zu einer erfolglosen Anmeldung führen. Dies liegt daran, dass die angegebene E-Mail-Adresse (John.Doe@contoso.com) nicht mit der Verzeichnisadresse (JohnD@contoso.com) übereinstimmt, die für eine erfolgreiche Authentifizierung über die Option „Geschäfts-, Schul- oder Unikonto“ erforderlich ist.
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Administrator?
 
@@ -33,15 +33,15 @@ Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die An
 - Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auch Microsoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
 
 > [!NOTE]
-> Sobald Ihr Unternehmen zum neuen [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements migriert ist, können Sie die Vorteile der neuen Administrationsfunktionen nutzen. Diese ermöglichen es Ihnen, sowohl Verzeichnis- als auch E-Mail-Adressen als Teil des Abonnentenprofils anzugeben.  Weitere Informationen zur [Migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Sobald Ihr Unternehmen zum neuen [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements migriert ist, können Sie die Vorteile der neuen Administrationsfunktionen nutzen. Diese ermöglichen es Ihnen, sowohl Verzeichnis- als auch E-Mail-Adressen als Teil des Abonnentenprofils anzugeben. Weitere Informationen zur [Migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Welche Möglichkeiten habe ich als Abonnent?
 
-Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen.  Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen.  Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion.  Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
+Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen. Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen. Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion. Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account).
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Zuweisen von Abonnenten zu einem Verzeichniskonto
 
-In jedem Fall muss der Abonnement-Manager im Volume Licensing Service Center (VLSC) die Verzeichnisadresse für neue Abonnenten verwenden oder die E-Mail-Adresse für „vorhandene“ Abonnenten aktualisieren.  Dabei ist zu beachten, dass bei Verwendung der Verzeichnisadresse neue Abonnenten keine Begrüßungs-E-Mail erhalten und der Administrator die Abonnenten darüber informieren muss, dass ihnen ein Abonnement zugewiesen wurde.  Nachdem Sie die folgenden Schritte ausgeführt haben, können Sie auch die [E-Mail-Vorlage](#notifying-your-subscribers-with-directory-addresses) verwenden, um Ihre Abonnenten zu benachrichtigen und ihnen bei der Anmeldung zu helfen.
+In jedem Fall muss der Abonnement-Manager im Volume Licensing Service Center (VLSC) die Verzeichnisadresse für neue Abonnenten verwenden oder die E-Mail-Adresse für „vorhandene“ Abonnenten aktualisieren. Dabei ist zu beachten, dass bei Verwendung der Verzeichnisadresse neue Abonnenten keine Begrüßungs-E-Mail erhalten und der Administrator die Abonnenten darüber informieren muss, dass ihnen ein Abonnement zugewiesen wurde. Nachdem Sie die folgenden Schritte ausgeführt haben, können Sie auch die [E-Mail-Vorlage](#notifying-your-subscribers-with-directory-addresses) verwenden, um Ihre Abonnenten zu benachrichtigen und ihnen bei der Anmeldung zu helfen.
 
 ### <a name="adding-new-subscribers"></a>Hinzufügen neuer Abonnenten
 
@@ -88,7 +88,7 @@ Da die Begrüßungs-E-Mail Ihren Abonnenten nicht erfolgreich erreichen wird, ko
 
 Hallo %ABONNENTENNAME%,
 
-Ihnen wurde ein Visual Studio-Abonnement zugewiesen.  Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen.
+Ihnen wurde ein Visual Studio-Abonnement zugewiesen. Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen.
 
 Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
 
@@ -99,8 +99,6 @@ Wählen Sie unten auf der Seite Folgendes aus:
    - Wählen Sie die gewünschte Option für persönlichen Support.
 
 ----------- Textende -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto
 

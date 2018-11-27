@@ -1,5 +1,5 @@
 ---
-title: Roslyn-Analysetools in Visual Studio
+title: Codeanalyse mithilfe von Roslyn-Analysetools
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511421"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948841"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Übersicht über .NET Compiler Platform-Analysetools
 
-Visual Studio 2017 enthält integrierte .NET Compiler Platform-Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder projektbezogen als NuGet-Paket installieren. Analysetools untersuchen das Codeformat, die Qualität und Wartbarkeit des Codes, den Codeentwurf und andere Probleme.
+Visual Studio 2017 enthält integrierte .NET Compiler Platform-Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Analysetools untersuchen das Codeformat, die Qualität und Wartbarkeit des Codes, den Codeentwurf und andere Probleme. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder projektbezogen als NuGet-Paket installieren.
 
 Wenn von einem Analysetool Verstöße gegen Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer *Wellenlinie* unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
 

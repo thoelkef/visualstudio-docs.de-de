@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612674"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257367"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -80,7 +80,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, was für eine App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
@@ -325,11 +325,11 @@ Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, 
 * Überprüfen Sie, ob die Anwendung den Code ausführt, den Sie erwarten. (In der Beispielanwendung haben Sie beispielsweise erwartet, dass der Code für die switch-Anweisung den Galaxietyp auf „Irregular“ festlegt, aber die App hat den Code wegen eines Tippfehlers übersprungen.)
 
 > [!TIP]
-> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md).
+> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Nun können Sie lernen, wie das Debuggen mithilfe von Visual Studio funktioniert.
+In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes erfahren Sie mehr über den Debugger.
 
 > [!div class="nextstepaction"]
 > [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)

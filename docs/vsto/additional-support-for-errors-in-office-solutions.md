@@ -54,25 +54,25 @@ helpviewer_keywords:
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
 - Office development in Visual Studio, errors
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbb9c5676ec3d9f06802f071c842f9e2a396703e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267831"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304453"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Zusätzliche Unterstützung für Fehler in Office-Projektmappen
-  Sie können die folgenden Ressourcen verwenden, können Sie Antworten auf Probleme zu finden, die beim Erstellen von Office-Projektmappen in Visual Studio auftreten.  
+  Sie können die folgenden Ressourcen verwenden, mit denen Sie Antworten auf Probleme, die auftreten, wie Sie Office-Projektmappen in Visual Studio erstellen.  
   
-## <a name="troubleshoot-specific-errors"></a>Problembehandlung für bestimmte Fehler  
+## <a name="troubleshoot-specific-errors"></a>Problembehandlung bei bestimmten Fehlern  
  Unterstützung für einige häufige Fehler in Office-Projektmappen finden Sie unter den folgenden Themen:  
   
--   [Problembehandlung von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
 -   [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)  
   
@@ -86,10 +86,10 @@ ms.locfileid: "34267831"
  Bietet Zugriff auf Knowledge Base-Artikel, Downloads und Updates, Support-WebCasts und andere Dienste.  
   
  [Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)  
- Stellt Links zu weiteren Ressourcen für Weitere Informationen zum Entwickeln von Office-Projektmappen und Office-Entwicklung in Visual Studio bereit.  
+ Enthält Links zu weiteren Ressourcen für Weitere Informationen zum Entwickeln von Office-Projektmappen und Office-Entwicklung mit Visual Studio.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Problembehandlung von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)   
+ [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
  [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)   
  [Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)  

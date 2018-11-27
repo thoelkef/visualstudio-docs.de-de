@@ -1,5 +1,5 @@
 ---
-title: '&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;Add-in&gt; -Element (Office-Entwicklung in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262381"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304466"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio)
-  Die **-Add-in** Element von der `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurde.  
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Add-in&gt; -Element (Office-Entwicklung in Visual Studio)
+  Die **-Add-in** Element der `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurden.  
 
 ## <a name="syntax"></a>Syntax  
 
@@ -52,28 +52,28 @@ ms.locfileid: "34262381"
 ```  
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die **-Add-in** Element von der `vstav3` -Namespace enthält Informationen zu Office-Projektmappe, und Microsoft Office-Anwendung. Dieses Element muss sich im folgenden Namespace befinden: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Untergeordnete Elemente müssen sich ebenfalls in diesem Namespace befinden.  
+ Die **-Add-in** Element der `vstav3` -Namespace enthält Informationen zu Office-Projektmappe, und Microsoft Office-Anwendung. Dieses Element muss sich im folgenden Namespace befinden: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Untergeordnete Elemente müssen sich ebenfalls in diesem Namespace befinden.  
 
  Das `addin` -Element weist keine Attribute auf.  
 
  Das `addin` -Element weist die folgenden untergeordneten Elemente auf:  
 
 ### <a name="entrypoints"></a>entryPoints  
- Erforderlich. Die **EntryPoints** Element wird in der beschriebenen [ &#60;EntryPoints&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **EntryPoints** Element finden Sie im [ &#60;EntryPoints&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>aktualisieren  
- Erforderlich. Die **aktualisieren** Element wird in der beschriebenen [ &#60;aktualisieren&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **aktualisieren** Element finden Sie im [ &#60;aktualisieren&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postActions  
- Dies ist optional. Die **PostActions** Element wird in der beschriebenen [ &#60;PostActions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Dies ist optional. Die **PostActions** Element finden Sie im [ &#60;PostActions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>Anwendung  
- Erforderlich. Die **Anwendung** Element wird in der beschriebenen [ &#60;Anwendung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die **Anwendung** Element finden Sie im [ &#60;Anwendung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
 
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer mithilfe von Office-Projektmappe auf Dokumentebene [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer Anwendungsebene Office-Projektmappe, die mithilfe von [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Code  
 
@@ -137,7 +137,7 @@ ms.locfileid: "34262381"
 ## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
 
 ### <a name="description"></a>Beschreibung  
- Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer mithilfe von Office-Projektmappe auf Anwendungsebene [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
+ Das folgende Codebeispiel veranschaulicht die **-Add-in** Element in einer Anwendungsebene Office-Projektmappe, die mithilfe von [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Code  
 
