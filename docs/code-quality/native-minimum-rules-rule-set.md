@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225047"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389013"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Regelsatz für systemeigene Mindestregeln
 Die Native Microsoft-Mindestregeln konzentrieren sich auf die kritischsten Probleme in Ihrem nativen Code, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.
@@ -102,7 +102,7 @@ Die Native Microsoft-Mindestregeln konzentrieren sich auf die kritischsten Probl
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
 |[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|
-|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt der Parameter der Anwendung nicht mit dem in der Datei gefundenen überein|
+|[C28218](../code-quality/c28218.md)|Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht|
 |[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|
 |[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|
 |[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|

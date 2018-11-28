@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948425"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389311"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die statische Codeanalyse für verwalteten Code in Visual Studio
 
@@ -51,7 +51,7 @@ Es kann häufig hilfreich sein anzugeben, dass eine Warnung nicht zutreffend ist
 Unterdrückung von Warnungen im Quellcode wird über benutzerdefinierte Attribute implementiert. Fügen Sie zum Unterdrücken einer Warnung das Attribut `SuppressMessage` zum Quellcode hinzu, wie im folgenden Beispiel dargestellt:
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945987"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388935"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen zu unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
@@ -96,7 +96,7 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
 |[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|
-|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt der Parameter der Anwendung nicht mit dem in der Datei gefundenen überein|
+|[C28218](../code-quality/c28218.md)|Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht|
 |[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|
 |[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|
 |[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|
