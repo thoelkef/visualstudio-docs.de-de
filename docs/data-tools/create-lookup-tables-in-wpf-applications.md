@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924199"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305480"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
+
 Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle, die anhand des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt. Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer übergeordneten Tabelle ziehen oder-Objekts in die **Datenquellen** auf ein Steuerelement, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
 
 Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in die `Orders` Tabelle enthält eine `CustomerID` , der angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in zeigt die `Customers` Tabelle. Wenn Sie eine Liste der Bestellungen Anzeigen der `Orders` Tabelle, Sie können anstelle von den tatsächlichen Kundennamen anzeigen möchten die `CustomerID`. Da der Kundenname wird die `Customers` Tabelle müssen Sie eine Nachschlagetabelle, um die Namen der Kunden zu erstellen. Die Lookup-Tabelle verwendet den `CustomerID` Wert in der `Orders` aufzeichnen, um die Beziehung zu navigieren, und geben Sie den Namen des Kunden zurück.
@@ -38,21 +39,21 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
     -   WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   -Objekte. Weitere Informationen finden Sie unter [Binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
+    -   Objekte Weitere Informationen finden Sie unter [Binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei zusammengehörige Tabellen oder Objekte als Datenquelle für das Projekt vorhanden.
+    > Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei zusammengehörige Tabellen oder Objekte als Datenquelle für das Projekt vorhanden.
 
 2.  Öffnen der **WPF-Designer**, und stellen Sie sicher, dass der Designer ein Container enthält, die für Elemente in ein gültiges Ablageziel ist die **Datenquellen** Fenster.
 
      Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Auf der **Daten** Menü klicken Sie auf **Datenquellen anzeigen** zum Öffnen der **Datenquellen** Fenster.
+3.  Klicken Sie im Menü Daten **auf Datenquellen anzeigen**, um das Datenquellenfenster** zu öffnen.
 
 4.  Erweitern Sie die Knoten in der **Datenquellen** Fenster, bis die übergeordnete Tabelle oder Objekt und die zugehörige untergeordnete Tabelle oder das Objekt angezeigt werden.
 
     > [!NOTE]
-    >  Zugehörige untergeordnete Tabelle oder des Objekts ist der Knoten, der als ein erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder ein Objekt angezeigt wird.
+    > Zugehörige untergeordnete Tabelle oder des Objekts ist der Knoten, der als ein erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder ein Objekt angezeigt wird.
 
 5.  Klicken Sie auf das Dropdownmenü für den untergeordneten Knoten, und wählen **Details**.
 
@@ -67,12 +68,12 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     -   **ListView**
 
         > [!NOTE]
-        >  Wenn die **ListBox** oder **ListView** Steuerelement erscheint nicht in der Liste, Sie können diese Steuerelemente hinzufügen, um die Liste. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Wenn die **ListBox** oder **ListView** Steuerelement erscheint nicht in der Liste, Sie können diese Steuerelemente hinzufügen, um die Liste. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Jedes benutzerdefinierten Steuerelements, die von abgeleitet <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Für Informationen zur Vorgehensweise beim Hinzufügen der benutzerdefinierten Steuerelemente auf die Liste der Steuerelemente Sie, für Elemente in auswählen kann der **Datenquellen** Fenster finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Für Informationen zur Vorgehensweise beim Hinzufügen der benutzerdefinierten Steuerelemente auf die Liste der Steuerelemente Sie, für Elemente in auswählen kann der **Datenquellen** Fenster finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Ziehen Sie den untergeordneten Knoten aus der **Datenquellen** auf einen Container im WPF-Designer. (Im vorherigen Beispiel ist der untergeordnete Knoten ist der **Bestellungen** Knoten.)
 

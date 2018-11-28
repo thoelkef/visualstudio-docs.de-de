@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175698"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305012"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Gewusst wie: Verbinden mit Daten in einem Dienst
+# <a name="how-to-connect-to-data-in-a-service"></a>Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst
 
 Sie verbinden Ihrer Anwendung für die Daten von einem Dienst zurückgegeben wird, mit der [Assistenten zur Datenquellenkonfiguration](../data-tools/media/data-source-configuration-wizard.png) , und wählen **Service** auf die **wählen Sie einen Datenquellentyp**Seite.
 
-Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt und ist sofort verfügbar ist, in der [Fensters "Datenquellen"](add-new-data-sources.md).
+Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt und ist sofort verfügbar ist, in der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Die Elemente in der **Datenquellen** hängen von den Informationen, die der Dienst zurückgibt. Einige Dienste möglicherweise nicht genug Informationen bieten die **Assistenten zur Datenquellenkonfiguration** bindbare Objekte erstellen. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Fensters "Datenquellen"** nach Abschluss des Assistenten. Das liegt nicht typisierte Datasets kein Schema angeben, damit der Assistent nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
+> Die im Fenster Datenquellen** angezeigten Elemente hängen von den vom Dienst zurückgegebenen Informationen ab. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** Fenster nach Abschluss des Assistenten. Das liegt nicht typisierte Datasets kein Schema angeben, damit der Assistent nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +53,7 @@ Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt u
 
 6.  Klicken Sie auf **Fertig stellen**.
 
-     Die Datenquelle wird hinzugefügt, um die **Datenquellen** Fenster.
+     Die **-Datenquelle wird dem Fenster Datenquellen** hinzugefügt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -62,4 +62,4 @@ Um Funktionen zu Ihrer Anwendung hinzuzufügen, wählen Sie ein Element in der *
 ## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Windows Communication Foundation-Dienste und WCF-Datendienste in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

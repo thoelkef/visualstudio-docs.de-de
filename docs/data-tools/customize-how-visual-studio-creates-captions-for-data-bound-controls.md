@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
+title: Anpassen von Beschriftungen für datengebundene Steuerelemente
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758419"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305584"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
-Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](add-new-data-sources.md) auf einen Designer, der eine besondere Überlegungen kommt ins Spiel: die Spaltennamen in den sind neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können anpassen, dass die Möglichkeit, die in der diese Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte im die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.
+Beim Ziehen von Elementen aus der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window) auf einen Designer, der eine besondere Überlegungen kommt ins Spiel: die Spaltennamen in den sind neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können anpassen, dass die Möglichkeit, die in der diese Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte im die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.
 
 > [!NOTE]
 > Dieser Registrierungsschlüssel ist nicht vorhanden, bis Sie ihn erstellen.
@@ -33,7 +33,7 @@ Smart-captioning wird gesteuert, mit dem regulären Ausdruck eingegeben haben, i
 
 Die folgende Tabelle beschreibt die Registrierungswerte, die die Beschriftung Bezeichnungen zu steuern.
 
-|Registrierungselement|Beschreibung|
+|Registrierungselement|Beschreibung |
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Der reguläre Ausdruck, die, den Sie verwenden, um Ihre Muster übereinstimmen.|
 |**SmartCaptionReplacement**|Das Format, das Gruppen angezeigt werden die **SmartCaptionExpression**.|
@@ -44,7 +44,7 @@ In der folgende Tabelle sind die internen Standardeinstellungen für diese Regis
 |Registrierungselement|Standardwert|Erklärung|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Entspricht einem Kleinbuchstaben Zeichen gefolgt von einem Großbuchstaben oder ein Unterstrich.|
-|**SmartCaptionReplacement**|**$1 $2**|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
+|**SmartCaptionReplacement**|"$1"|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
 |**SmartCaptionSuffix**|**:**|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Wenn die Beschriftung wird z. B. `Company Name`, erleichtert das Suffix `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ In der folgende Tabelle sind die internen Standardeinstellungen für diese Regis
 
 3.  Erweitern Sie die **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**Knoten.
 
-7.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
+4.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
+5.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Mit der rechten Maustaste die **SmartCaptionExpression** Wert ein, und wählen Sie **ändern**.
+6. Mit der rechten Maustaste die **SmartCaptionExpression** Wert ein, und wählen Sie **ändern**.
 
-12. Geben Sie den regulären Ausdruck sollen die **Datenquellen** Fenster verwenden.
+7. Geben Sie den regulären Ausdruck sollen die **Datenquellen** Fenster verwenden.
 
-13. Mit der rechten Maustaste die **SmartCaptionReplacement** Wert ein, und wählen Sie **ändern**.
+8. Mit der rechten Maustaste die **SmartCaptionReplacement** Wert ein, und wählen Sie **ändern**.
 
-14. Geben Sie die Ersetzung formatierte Zeichenfolge die Möglichkeit, die den regulären Ausdruck übereinstimmenden Muster angezeigt werden soll.
+9. Geben Sie die Ersetzung formatierte Zeichenfolge die Möglichkeit, die den regulären Ausdruck übereinstimmenden Muster angezeigt werden soll.
 
-15. Mit der rechten Maustaste die **SmartCaptionSuffix** Wert ein, und wählen Sie **ändern**.
+10. Mit der rechten Maustaste die **SmartCaptionSuffix** Wert ein, und wählen Sie **ändern**.
 
-16. Geben Sie alle Zeichen, die am Ende der Beschriftung angezeigt werden sollen.
+11. Geben Sie alle Zeichen, die am Ende der Beschriftung angezeigt werden sollen.
 
     Das nächste Mal ziehen Sie Elemente aus der **Datenquellen** , die Beschriftungstitel werden erstellt unter Verwendung der neuen Registrierungswerte bereitgestellt.
 
@@ -90,21 +90,21 @@ In der folgende Tabelle sind die internen Standardeinstellungen für diese Regis
 
 3.  Erweitern Sie die **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**Knoten.
 
-7.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
+4.  Mit der rechten Maustaste die **15.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
+5.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie drei neue Zeichenfolgenwerte:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie **ändern**.
+6. Mit der rechten Maustaste die **SmartCaptionExpression** Element aus, und wählen Sie **ändern**.
 
-12. Geben Sie `(.*)` für den Wert. Dadurch wird die gesamte Zeichenfolge übereinstimmen.
+7. Geben Sie `(.*)` für den Wert. Dadurch wird die gesamte Zeichenfolge übereinstimmen.
 
-13. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie **ändern**.
+8. Mit der rechten Maustaste die **SmartCaptionReplacement** Element aus, und wählen Sie **ändern**.
 
-14. Geben Sie `$1` für den Wert. Dies ersetzt die Zeichenfolge, mit der übereinstimmende Wert, der die gesamte Zeichenfolge ist, sodass es unverändert bleiben.
+9. Geben Sie `$1` für den Wert. Dies ersetzt die Zeichenfolge, mit der übereinstimmende Wert, der die gesamte Zeichenfolge ist, sodass es unverändert bleiben.
 
     Das nächste Mal ziehen Sie Elemente aus der **Datenquellen** Fenster werden die Beschriftungstitel mit unveränderter Beschriftung erstellt.
 
