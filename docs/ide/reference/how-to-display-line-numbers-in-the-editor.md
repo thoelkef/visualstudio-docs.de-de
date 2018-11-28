@@ -15,24 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747494"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388849"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Gewusst wie: Anzeigen von Zeilennummern im Editor
+
 Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 
-> [!NOTE]
-> Abhängig von den aktiven Einstellungen unterscheiden sich die Dialogfelder und Menübefehle auf dem Bildschirm unter Umständen von den hier beschriebenen Dialogfeldern und Menübefehlen. Klicken Sie im Menü **Extras > Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="display-line-numbers-in-code"></a>Anzeigen von Zeilennummern im Code
- Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.
 
-#### <a name="to-display-line-numbers-in-code"></a>So lassen Sie Zeilennummern für den Code anzeigen
+Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.
+
+### <a name="to-display-line-numbers-in-code"></a>So lassen Sie Zeilennummern für den Code anzeigen
 
 1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**. Erweitern Sie den Knoten **Text-Editor**, und wählen Sie entweder den Knoten für die Sprache, die Sie verwenden, oder **Alle Sprachen** aus, um die Zeilennummern in allen Sprachen zu aktivieren. Sie können die **Zeilennummer** auch im Feld **Schnellstart** eingeben.
 
@@ -42,7 +40,6 @@ Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 
 > [!NOTE]
 > Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.
-
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930543"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388766"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
+
 Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.
-
-> [!NOTE]
-> Die auf Ihrem Computer angezeigten Dialogfelder und Menübefehle können sich abhängig von den aktiven Einstellungen und Ihrer Edition von Visual Studio von den Dialogfeldern und Menübefehlen unterscheiden, die in der Hilfe beschrieben sind. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Vorgehensweise|Siehe|
 | - |---------|

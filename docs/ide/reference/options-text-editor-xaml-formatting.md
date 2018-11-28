@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672187"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388987"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
+
 Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Elemente und Attribute in Ihren XAML-Dokumenten formatiert werden. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die Eigenschaftenseite **Formatierung** den Knoten **Text-Editor** > **XAML** > **Formatierung**.
 
-> [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="auto-formatting-events"></a>Autoformatierungsereignisse
+
 Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereignisse erkannt wird.
 
 -   Bei Vervollständigung des Endtags oder eines einfachen Tags
@@ -57,106 +56,124 @@ Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereigniss
 
 Sie können angeben, welche Ereignisse automatische Formatierung verursachen.
 
-**Bei Vervollständigung des Endtags oder eines einfachen Tags**  
+**Bei Vervollständigung des Endtags oder eines einfachen Tags**
+
 Die automatische Formatierung tritt auf, wenn Sie ein Endtag oder ein einfaches Tag eingegeben haben. Ein einfaches Tag verfügt über keine Attribute, z.B. `<Button />`.
 
-**Bei Vervollständigung des Starttags**  
+**Bei Vervollständigung des Starttags**
+
 Die automatische Formatierung tritt auf, wenn Sie ein Starttag eingegeben haben.
 
-**Bei Einfügen aus der Zwischenablage**  
+**Bei Einfügen aus der Zwischenablage**
+
 Die automatische Formatierung tritt auf, wenn Sie XAML aus der Zwischenablage in die XAML-Ansicht einfügen.
 
 ## <a name="quotation-mark-style"></a>Anführungszeichenformat
+
 Diese Einstellung gibt an, ob Attributwerte in einfache oder doppelte Anführungszeichen eingeschlossen werden. Die automatische Formatierung und die automatische Vervollständigung von IntelliSense verwenden diese Einstellung.
 
 Nachdem Sie diese Option festgelegt haben, sind nur Attribute betroffen, die später entweder mithilfe des Designers oder manuell in die XAML-Ansicht hinzugefügt werden.
 
-**Doppelte Anführungszeichen (")**  
-Attributwerte werden in doppelte Anführungszeichen eingeschlossen.  
+**Doppelte Anführungszeichen (")**
+
+Attributwerte werden in doppelte Anführungszeichen eingeschlossen.
 `<Button Name="button1">Hello</Button>`
 
-**Einfache Anführungszeichen (')**  
-Attributwerte werden in einfache Anführungszeichen eingeschlossen.  
+**Einfache Anführungszeichen (')**
+
+Attributwerte werden in einfache Anführungszeichen eingeschlossen.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Tagumbrüche
+
 Sie können eine Zeilenlänge für Tagumbrüche angeben. Wenn Tagumbrüche aktiviert sind, wird jedes XAML, das später mithilfe des Designers hinzugefügt wird, entsprechend umgebrochen.
 
-**Tags bei Überschreitung der angegebenen Länge umbrechen**  
+**Tags bei Überschreitung der angegebenen Länge umbrechen**
+
 Gibt an, ob Zeilen bei der durch **Länge** angegebenen Zeilenlänge umgebrochen werden.
 
-**Länge**  
+**Länge**
+
 Die Anzahl der Zeichen, die eine Zeile enthalten kann. Falls erforderlich, könnten einige XAML-Zeilen die angegebene Zeilenlänge überschreiten.
 
 ## <a name="attribute-spacing"></a>Attributabstand
+
 Mit dieser Einstellung können Sie steuern, wie Attribute im XAML-Dokument angeordnet sind
 
-**Neue Zeilen und Leerzeichen zwischen Attributen beibehalten**  
+**Neue Zeilen und Leerzeichen zwischen Attributen beibehalten**
+
 Neue Zeilen und Leerzeichen zwischen Attributen sind von der automatischen Formatierung nicht betroffen.
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Ein Leerzeichen zwischen Attributen einfügen**  
+**Ein Leerzeichen zwischen Attributen einfügen**
+
 Attribute umfassen eine Zeile mit durch ein Leerzeichen getrennten benachbarten Attributen. Die Einstellungen für Tagumbrüche werden angewendet.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**Jedes Attribut in einer eigenen Zeile anordnen**  
-Jedes Attribut befindet sich in einer eigenen Zeile, was nützlich ist, wenn viele Attribute vorhanden sind.  
+**Jedes Attribut in einer eigenen Zeile anordnen**
+
+Jedes Attribut befindet sich in einer eigenen Zeile, was nützlich ist, wenn viele Attribute vorhanden sind.
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Erstes Attribut in derselben Zeile wie Starttag positionieren**  
-Wenn dieses Kontrollkästchen aktiviert ist, wird das erste Attribut auf derselben Zeile wie der Starttag des Elements angezeigt.  
+**Erstes Attribut in derselben Zeile wie Starttag positionieren**
+
+Wenn dieses Kontrollkästchen aktiviert ist, wird das erste Attribut auf derselben Zeile wie der Starttag des Elements angezeigt.
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>Elementabstand
+
 Mit dieser Einstellung können Sie steuern, wie Attribute in Ihrem XAML-Dokument angeordnet sind.
 
-**Neue Zeilen im Inhalt beibehalten**  
-Leerzeilen im Elementinhalt werden nicht entfernt.  
+**Neue Zeilen im Inhalt beibehalten**
+
+Leerzeilen im Elementinhalt werden nicht entfernt.
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Mehrere Leerzeilen im Inhalt auf eine Zeile reduzieren**  
-Leerzeilen im Elementinhalt werden zu einer einzelnen Zeile reduziert.  
+**Mehrere Leerzeilen im Inhalt auf eine Zeile reduzieren**
+
+Leerzeilen im Elementinhalt werden zu einer einzelnen Zeile reduziert.
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Leerzeilen im Inhalt entfernen**  
-Alle Leerzeilen im Elementinhalt werden entfernt.  
+**Leerzeilen im Inhalt entfernen**
+
+Alle Leerzeilen im Elementinhalt werden entfernt.
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843990"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388948"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld „Optionen“
 
 Legt das Visual Studio-Verhalten im Zusammenhang mit Projekten und Projektmappen fest. Klicken Sie zum Zugriff auf diese Optionen auf **Extras** > **Optionen**, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
 
 Die Standardpfade für Projekt- und Vorlagenordner werden über die Registerkarte **Speicherorte** im gleichen Dialogfeld festgelegt.
-
-> [!NOTE]
-> Die Optionen, die auf der Benutzeroberfläche verfügbar sind, können sich abhängig von den aktiven Einstellungen oder der Edition von den hier beschriebenen unterscheiden. Dieser Artikel wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Seite „Allgemein“
 
