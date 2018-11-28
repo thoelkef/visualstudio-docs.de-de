@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264661"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304870"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)
-  Die **AppAddin** Element von der `vstov4` Namespace werden anpassungsspezifische Informationen für VSTO-Add-ins gespeichert.  
+  Die **AppAddin** Element der `vstov4` Namespace werden anpassungsspezifische Informationen für VSTO-Add-ins gespeichert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,26 +39,26 @@ ms.locfileid: "34264661"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die **AppAddin** Element ist erforderlich und befindet sich in der `vstov4` Namespace. Es Gib nur ein **AppAddin** Element in einem Anwendungsmanifest definiert.  
+ Die **AppAddin** Element ist erforderlich und befindet sich in der `vstov4` Namespace. Es gibt nur ein **AppAddin** Elements, das in einem Anwendungsmanifest definiert.  
   
  Die **AppAddin** Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |**Anwendung**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Einer der folgenden Werte ist möglich: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|  
-|**loadBehavior**|Dies ist optional. Wird standardmäßig die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**LoadBehavior**|Dies ist optional. In der Standardeinstellung die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
 |**Schlüsselname**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- Die **AppAddin** -Element weist die folgenden untergeordneten Elemente.  
+ Die **AppAddin** Element hat die folgenden untergeordneten Elemente.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Dies ist optional. Die **FriendlyName** Element wird erläutert [ &#60;FriendlyName&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Dies ist optional. Die **FriendlyName** Element wird in erläutert [ &#60;FriendlyName&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
-### <a name="description"></a>Beschreibung  
- Dies ist optional. Die **Beschreibung** Element wird erläutert [ &#60;Beschreibung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+### <a name="description"></a>description  
+ Dies ist optional. Die **Beschreibung** Element wird in erläutert [ &#60;Beschreibung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Nur für Outlook-VSTO-Add-Ins erforderlich, die Formularbereiche enthalten. Die **FormRegions** Element wird erläutert [ &#60;FormRegions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Nur für Outlook-VSTO-Add-Ins erforderlich, die Formularbereiche enthalten. Die **FormRegions** Element wird in erläutert [ &#60;FormRegions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in  
   
