@@ -1,6 +1,8 @@
 ---
-title: Datasettools in Visual Studio
-ms.date: 11/04/2016
+title: Datasettools
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,16 +47,14 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582459"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304986"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 
@@ -63,7 +63,7 @@ ms.locfileid: "39582459"
 
 Ein `DataSet` Objekt ist ein in-Memory-Objekt, das im Wesentlichen eine Mini-Datenbank ist. Es enthält `DataTable`, `DataColumn`, und `DataRow` Objekte in der Sie speichern und Ändern von Daten aus einer oder mehreren Datenbanken ohne eine geöffnete Verbindung verwalten zu müssen. Das Dataset enthält Informationen zu Änderungen an Daten, damit Updates zurück an die Datenbank gesendet werden, wenn Ihre Anwendung die Verbindung wiederhergestellt wird und nachverfolgt werden können.
 
-Datasets und verknüpften Klassen sind in definiert die *"System.Data"* Namespace in der .NET Framework-Klassenbibliothek. Sie können erstellen und ändern die Datasets dynamisch im Code mithilfe von ADO.NET. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Datasets, die mithilfe von Designern erstellt werden **TableAdapter** Objekte für die Interaktion mit der Datenbank. Verwenden Sie die Datasets, die programmgesteuert erstellt werden **DataAdapter** Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Datasets und verknüpften Klassen sind in definiert die <xref:System.Data?displayProperty=fullName> Namespace in der .NET Framework-Klassenbibliothek. Sie können erstellen und ändern die Datasets dynamisch im Code mithilfe von ADO.NET. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Datasets, die mithilfe von Designern erstellt werden **TableAdapter** Objekte für die Interaktion mit der Datenbank. Verwenden Sie die Datasets, die programmgesteuert erstellt werden **DataAdapter** Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Wenn Ihre Anwendung muss nur das Lesen von Daten aus einer Datenbank und nicht ausgeführt werden, Updates, hinzufügt oder löscht, in der Regel erhalten Sie eine bessere Leistung mit einem `DataReader` Objekt zum Abrufen von Daten in eine generische `List` Objekt oder ein anderes Auflistungsobjekt. Wenn Sie die Daten anzeigen, Sie können die Benutzeroberfläche der Auflistung Datenbindung.
 
@@ -71,7 +71,7 @@ Wenn Ihre Anwendung muss nur das Lesen von Daten aus einer Datenbank und nicht a
 
 Visual Studio bietet Tools zum Arbeiten mit Datasets zu vereinfachen. Der grundlegende Workflow für die End-to-End ist:
 
-- Verwenden der **Datenquelle** um ein neues Dataset aus einem oder mehreren Datenquellen zu erstellen. Verwenden der **Dataset-Designer** , konfigurieren das Dataset und seine Eigenschaften festlegen. Beispielsweise müssen Sie angeben, Tabellen, zwischen denen aus der Datenquelle eingeschlossen werden und welche Spalten aus jeder Tabelle. Wählen Sie sorgfältig, um die Menge an Arbeitsspeicher zu sparen, die das Dataset erforderlich sind. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Verwenden der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window) um ein neues Dataset aus einem oder mehreren Datenquellen zu erstellen. Verwenden der **Dataset-Designer** , konfigurieren das Dataset und seine Eigenschaften festlegen. Beispielsweise müssen Sie angeben, Tabellen, zwischen denen aus der Datenquelle eingeschlossen werden und welche Spalten aus jeder Tabelle. Wählen Sie sorgfältig, um die Menge an Arbeitsspeicher zu sparen, die das Dataset erforderlich sind. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Geben Sie die Beziehungen zwischen den Tabellen, sodass Fremdschlüssel richtig behandelt werden. Weitere Informationen finden Sie unter [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 

@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750811"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388737"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -45,9 +45,9 @@ Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
 6. Ändern Sie den gleichen Datensatz auf einen anderen Wert, aktualisieren Sie das Dataset und versuchen Sie, die Änderungen in der Datenbank zu schreiben, was zu einem Parallelitätsfehler führt.
 
-7. Fangen Sie den Fehler, und anzuzeigen Sie die verschiedenen Versionen des Datensatzes, damit der Benutzer bestimmen, ob weiterhin, und Aktualisieren der Datenbank, oder Abbrechen Sie das Update.
+7. Fangen Sie den Fehler ab, und zeigen Sie anschließend die verschiedenen Versionen des Datensatzes an, um festzulegen, ob die Aktualisierung der Datenbank fortgesetzt oder abgebrochen werden soll.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
@@ -65,16 +65,13 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
-> [!NOTE]
-> Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
 Beginnen Sie mit der Erstellung einer neuen Windows Forms-Anwendung:
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -88,7 +85,7 @@ Als Nächstes erstellen Sie ein Dataset namens **NorthwindDataSet**:
 
 1. Auf der **Daten** Menü wählen **neue Datenquelle hinzufügen**.
 
-   Der Konfigurations-Assistent wird geöffnet.
+   Der Assistent zum Konfigurieren von Datenquellen wird geöffnet.
 
 2. Auf der **wählen Sie einen Datenquellentyp** auf **Datenbank**.
 
@@ -109,7 +106,7 @@ Als Nächstes erstellen Sie ein Dataset namens **NorthwindDataSet**:
 
 In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> durch Ziehen der **Kunden** Element aus der **Datenquellen** auf das Windows-Formular.
 
-1. Auf der **Daten** im Menü wählen **Datenquellen anzeigen** zum Öffnen der **Fensters "Datenquellen"**.
+1. Zum Öffnen der **Datenquellen** Fenster auf die **Daten** im Menü wählen **Datenquellen anzeigen**.
 
 2. In der **Datenquellen** Fenster, erweitern Sie die **NorthwindDataSet** Knoten, und wählen Sie dann die **Kunden** Tabelle.
 
@@ -121,7 +118,7 @@ In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?d
 
 ## <a name="test-the-form"></a>Testen Sie das Formular
 
-Sie können nun testen, dass das Formular, um sicherzustellen, dass sie sich bis zu diesem Zeitpunkt erwartungsgemäß verhält:
+Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bisher wie erwartet ausfällt.
 
 1. Wählen Sie **F5** zum Ausführen der Anwendung.
 
@@ -135,13 +132,13 @@ Wie Sie Fehler behandeln, hängt von den jeweiligen Geschäftsregeln, die Ihre A
 
 Die Anwendung stellt dem Benutzer drei Versionen des Datensatzes:
 
-- Der aktuelle Datensatz in der Datenbank
+- Den aktuellen Datensatz in der Datenbank
 
 - Der ursprüngliche Datensatz, der in das Dataset geladen wird
 
-- Die vorgeschlagenen Änderungen im dataset
+- Die vorgeschlagenen Änderungen im Dataset
 
-Der Benutzer kann dann die Datenbank mit der vorgeschlagenen Version überschreiben oder die Aktualisierung abzubrechen und das Dataset mit den neuen Werten aus der Datenbank aktualisieren.
+Der Benutzer kann dann die Datenbank mit der vorgeschlagenen Version überschreiben oder aber die Aktualisierung abbrechen und das Dataset mit den neuen Werten aus der Datenbank aktualisieren.
 
 ### <a name="to-enable-the-handling-of-concurrency-errors"></a>So aktivieren Sie die Behandlung von Parallelitätsfehlern
 
@@ -170,11 +167,11 @@ Wenn Sie versuchen, ein Update ausführen und eine Ausnahme ausgelöst wird, mö
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Optionen für den Benutzer anzeigen
+### <a name="display-choices-to-the-user"></a>Zeigen Sie die Auswahloptionen für den Benutzer an.
 
 Durch den soeben geschriebenen Code wird die `CreateMessage`-Prozedur aufgerufen, um Fehlerinformationen für den Benutzer anzuzeigen. In dieser exemplarischen Vorgehensweise verwenden Sie ein Meldungsfeld, um die verschiedenen Versionen des Datensatzes für den Benutzer anzuzeigen. Dadurch kann der Benutzer auswählen, ob der Datensatz mit den Änderungen überschreiben oder die Bearbeitung abbricht. Wenn der Benutzer durch Klicken auf eine Schaltfläche eine Option im Meldungsfeld ausgewählt hat, wird die Antwort an die `ProcessDialogResult`-Methode übergeben.
 
-Erstellen der Nachricht durch den folgenden Code zum Hinzufügen der **Code-Editor**. Geben Sie diesen Code unter der `UpdateDatabase` Methode:
+Erstellen Sie die Meldung, indem Sie dem Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein.
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
@@ -198,7 +195,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 3. Auf der **Ansicht** Menü wählen **Server-Explorer**.
 
-4. In **Server-Explorer**, erweitern Sie die Verbindung Ihrer Anwendung verwenden, und erweitern Sie dann die **Tabellen** Knoten.
+4. Erweitern Sie im Server-Explorer **die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten Tabellen**.
 
 5. Mit der rechten Maustaste die **Kunden** Tabelle, und wählen Sie dann **Tabellendaten anzeigen**.
 

@@ -25,25 +25,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da15793027eb643078771d33464258fea73fec9d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: af8856a4356a829b37a4a624b86f7b29dd965f9c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283391"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389457"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Gewusst wie: Zurückkehren zur Funktion, die MFC aufgerufen hat, wenn die Ausführung angehalten wurde
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Bei Verwendung der **unterbrechen** Befehl die **Debuggen** im Menü des Programms angehalten jetzt in MFC, und Sie sind Sie sicher, dass das Problem in Ihrem Code können Sie das Fenster "Aufrufliste" zum Navigieren zu Ihrer Funktion zurück. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).  
-  
- Manchmal wird der Code in der Meldungsverteilschleife unterbrochen. In diesem Fall ist kein Benutzercode in der Aufrufliste vorhanden. Sie können Haltepunkte (möglicherweise mit Bedingungen und Trefferanzahl) anstelle von verwenden, um dieses Problem zu vermeiden, die **unterbrechen** Befehl. Weitere Informationen finden Sie unter [Haltepunkte und Ablaufverfolgungspunkte](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
-  
-### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>So navigieren Sie zu der Funktion, von der MFC aufgerufen wurde  
-  
--   Verwenden der **Aufrufliste** Fenster.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+
+Wenn Sie zum Abbrechen des Programms im Menü Debuggen **den Befehl Unterbrechen** verwendet haben, sich jetzt in MFC befinden und sicher sind, dass das Problem in Ihrem Code liegt, können sie mithilfe des Fensters "Aufrufliste" zu Ihrer Funktion zurück navigieren. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).
+
+Manchmal wird der Code in der Meldungsverteilschleife unterbrochen. In diesem Fall ist kein Benutzercode in der Aufrufliste vorhanden. Um diesen Fehler zu vermeiden, können Haltepunkte (möglicherweise mit Bedingungen und Trefferanzahl) anstelle des Befehls Unterbrechen** verwendet werden. Weitere Informationen finden Sie unter [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+
+## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Navigieren Sie zu der Funktion, die von der MFC aufgerufen wurde
+
+-   Verwenden Sie das Fenster Aufrufliste **.
+
+## <a name="see-also"></a>Siehe auch
+
+- [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)

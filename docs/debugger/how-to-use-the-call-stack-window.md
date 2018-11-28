@@ -30,117 +30,118 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257237"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388024"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Anzuzeigen Sie die Aufrufliste, und verwenden Sie das Fenster "Aufrufliste" im debugger
 
-Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufrufen, die derzeit auf dem Stapel vorhanden sind. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Die Aufrufliste bietet eine nützliche Möglichkeit zum Untersuchen und Verstehen des Ausführungsablaufs einer App.
-  
-Wenn [Debugsymbole](#bkmk_symbols) sind nicht verfügbar für einen Teil einer Aufrufliste, die **Aufrufliste** Fenster ist möglicherweise nicht in der richtigen Informationen für diesen Teil der Aufrufliste angezeigt, stattdessen anzeigen:  
-  
+Mithilfe des Fensters Aufrufliste** können Sie die Funktions- und Prozeduraufrufe anzeigen, die sich derzeit im Stapel befinden. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Die Aufrufliste bietet eine nützliche Möglichkeit zum Untersuchen und Verstehen des Ausführungsablaufs einer App.
+
+Wenn [Debugsymbole](#bkmk_symbols) sind nicht verfügbar für einen Teil einer Aufrufliste, die **Aufrufliste** Fenster ist möglicherweise nicht in der richtigen Informationen für diesen Teil der Aufrufliste angezeigt, stattdessen anzeigen:
+
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar. 
-> 
+> Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar.
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Wählen Sie zum Ändern Ihrer Einstellungen **Einstellungen importieren und exportieren** auf die **Tools** Menü.  Finden Sie unter [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md).
-  
-## <a name="view-the-call-stack-while-in-the-debugger"></a>Anzeigen der Aufrufliste im debugger 
-  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Um die Einstellungen zu ändern, wählen Sie im Menü Extras **die Option Einstellungen importieren und exportieren** aus.  Finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+
+## <a name="view-the-call-stack-while-in-the-debugger"></a>Anzeigen der Aufrufliste im debugger
+
 - Während des Debuggens in der **Debuggen** , wählen Sie im Menü **Windows > Aufrufliste**.
 
   ![Fenster "Aufrufliste"](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig diesen Stapelrahmen Informationen wird angezeigt, in der Quelle **"lokal"**, **"Auto"**, **Watch**, und **Disassembly** Windows. So ändern Sie die Debuggerkontext zu einem anderen Frame im Stapel [wechseln zu anderem Stapelrahmen](#bkmk_switch).   
-  
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Nicht benutzerseitiger Code angezeigt, in dem Fenster "Aufrufliste"  
-  
--   Mit der rechten Maustaste die **Aufrufliste** Fenster, und wählen **externen Code anzeigen**.
+Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig diesen Stapelrahmen Informationen wird angezeigt, in der Quelle **"lokal"**, **"Auto"**, **Watch**, und **Disassembly** Windows. So ändern Sie die Debuggerkontext zu einem anderen Frame im Stapel [wechseln zu anderem Stapelrahmen](#bkmk_switch).
 
-Nicht benutzerseitiger Code ist Code, der nicht Wenn angezeigt wird [nur mein Code](../debugger/just-my-code.md) aktiviert ist. In verwaltetem Code sind nicht benutzerseitiger Codeframes standardmäßig ausgeblendet. Die folgende Notation wird anstelle der Frames nicht benutzerseitiger Code angezeigt:  
-  
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Nicht benutzerseitiger Code angezeigt, in dem Fenster "Aufrufliste"
+
+-   Klicken Sie mit der rechten Maustaste auf das Fenster Aufrufliste **, und wählen Sie Externen Code anzeigen** aus.
+
+Nicht benutzerseitiger Code ist Code, der nicht Wenn angezeigt wird [nur mein Code](../debugger/just-my-code.md) aktiviert ist. In verwaltetem Code sind nicht benutzerseitiger Codeframes standardmäßig ausgeblendet. Die folgende Notation wird anstelle der Frames nicht benutzerseitiger Code angezeigt:
+
 `[<External Code>]`
-  
+
 ## <a name="bkmk_switch"></a> Wechseln Sie zu anderem Stapelrahmen (Ändern des Debugkontexts)
-  
+
 1.  In der **Aufrufliste** der rechten Maustaste auf der Stapel Rahmen, dessen Code und Daten, die Sie anzeigen möchten.
 
-    Sie können auch auf den Frame Doppelklicken der **Aufrufliste** Fenster, wechseln Sie zu diesem Frame. 
-  
-2.  Wählen Sie **zu Rahmen wechseln**.  
-  
-     Neben den Stapelrahmen, die, den Sie ausgewählt haben, wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Bei Auswahl von **Schritt** oder **Weiter** aus der **Debuggen** Menü Ausführung wird im ursprünglichen Rahmen fortgesetzt, die nicht im neu ausgewählten.  
-  
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Den Quellcode für eine Funktion in der Aufrufliste anzeigen  
-  
--   In der **Aufrufliste** der rechten Maustaste auf die Funktion, deren Quellcode Sie, anzeigen möchten und wählen Sie **Gehe zu Quellcode**.
+    Sie können auch auf den Frame Doppelklicken der **Aufrufliste** Fenster, wechseln Sie zu diesem Frame.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Führen Sie an eine bestimmte Funktion aus dem Fenster "Aufrufliste"  
-  
--  In der **Aufrufliste** Fenster, wählen Sie die Funktion, mit der rechten Maustaste, und wählen Sie dann **Ausführen bis Cursor**.  
-  
-## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Legen Sie einen Haltepunkt am Exitpunkt eines Funktionsaufrufs  
-  
+2.  Wählen Sie Zu Rahmen wechseln** aus.
+
+     Neben den Stapelrahmen, die, den Sie ausgewählt haben, wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Wenn Sie im Menü Debuggen **den Befehl Schritt** oder Weiter** auswählen, wird die Ausführung nicht im neu ausgewählten, sondern im ursprünglichen Rahmen fortgesetzt.
+
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Den Quellcode für eine Funktion in der Aufrufliste anzeigen
+
+-   Klicken Sie im Fenster Aufrufliste **mit der rechten Maustaste auf die Funktion, deren Quellcode Sie anzeigen möchten, und wählen Sie Gehe zu Quellcode** aus.
+
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Führen Sie an eine bestimmte Funktion aus dem Fenster "Aufrufliste"
+
+-  In der **Aufrufliste** Fenster, wählen Sie die Funktion, mit der rechten Maustaste, und wählen Sie dann **Ausführen bis Cursor**.
+
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Legen Sie einen Haltepunkt am Exitpunkt eines Funktionsaufrufs
+
 -   Finden Sie unter [Festlegen eines Haltepunkts in einer Call Stack-Funktion](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
-## <a name="display-calls-to-or-from-another-thread"></a>Anzeigen von Anrufen zu oder von einem anderen thread  
-  
--   Mit der rechten Maustaste die **Aufrufliste** Fenster, und wählen **Aufrufe zu/von anderen Threads einschließen**.   
-  
-## <a name="visually-trace-the-call-stack"></a>Die Aufrufliste visuell zu verfolgen  
+## <a name="display-calls-to-or-from-another-thread"></a>Anzeigen von Anrufen zu oder von einem anderen thread
+
+-   Klicken Sie mit der rechten Maustaste auf das Fenster Aufrufliste **, und wählen Sie Aufrufe zu/von anderen Threads einschließen** aus.
+
+## <a name="visually-trace-the-call-stack"></a>Die Aufrufliste visuell zu verfolgen
 
 In Visual Studio Enterprise (nur) können Sie Code Maps für die Aufrufliste beim Debuggen anzeigen.
 
-- In der **Aufrufliste** Fenster, das Kontextmenü zu öffnen. Wählen Sie **Aufrufliste auf Code Map anzeigen** (**STRG** + **UMSCHALT** + **`**).  
-  
+- Öffnen Sie das Kontextmenü im Fenster Aufrufliste **. Wählen Sie **Aufrufliste auf Code Map anzeigen** (**STRG** + **UMSCHALT** + **`**).
+
     Weitere Informationen finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Aufrufliste auf Code Map anzeigen](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
-  
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zeigen Sie den Disassemblierungscode für eine Funktion in der Aufrufliste (C#, C++, Visual Basic F#) 
-  
--   In der **Aufrufliste** der rechten Maustaste auf die Funktion, deren Disassemblycode Sie, anzeigen möchten und wählen Sie **Gehe zu Disassembly**.    
 
-## <a name="change-the-optional-information-displayed"></a>Ändern Sie die Anzeige optionale Informationen  
-  
--   Mit der rechten Maustaste den **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.  
-  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zeigen Sie den Disassemblierungscode für eine Funktion in der Aufrufliste (C#, C++, Visual Basic F#)
+
+-   Klicken Sie im Fenster Aufrufliste **mit der rechten Maustaste auf die Funktion, deren Disassemblycode Sie anzeigen möchten, und wählen Sie Gehe zu Disassembly** aus.
+
+## <a name="change-the-optional-information-displayed"></a>Ändern Sie die Anzeige optionale Informationen
+
+-   Mit der rechten Maustaste den **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.
+
 ## <a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul (C#, C++, Visual Basic F#)
 
-In der **Aufrufliste** Fenster können Sie laden die Debugsymbole für Code, der derzeit keine Symbole geladen sind. .NET Framework oder Systemsymbole, die von den öffentlichen Microsoft-Symbolservern heruntergeladen oder Symbole in einem Symbolpfad auf dem Computer, den Sie Debuggen, können diese Symbole sein.  
-  
-Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-### <a name="to-load-symbols"></a>So laden Sie Symbole  
-  
-1.  In der **Aufrufliste** der rechten Maustaste auf der Stapelrahmen, für welche Symbole nicht geladen werden. Der Rahmen wird abgeblendet.  
-  
-2.  Zeigen Sie auf **Symbole laden** und wählen Sie dann **Microsoft-Symbolserver** (falls verfügbar), oder navigieren Sie zu den Symbolpfad.  
-  
-### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest  
-  
-1.  In der **Aufrufliste** Fenster wählen **Symboleinstellungen** aus dem Kontextmenü.  
-  
-     Die **Optionen** Dialogfeld wird geöffnet und die **Symbole** angezeigt wird.  
-  
-2.  Wählen Sie **Symboleinstellungen**.  
-  
-3.  In der **Optionen** Dialogfeld klicken Sie auf das Ordnersymbol.  
-  
-     In der **Symboldateien (.pdb) Orte für Symboldateien** Feld ein Cursor angezeigt.  
-  
+Im Fenster Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET Framework-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.
+
+Weitere Informationen finden Sie unter [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+### <a name="to-load-symbols"></a>So laden Sie Symbole
+
+1.  In der **Aufrufliste** der rechten Maustaste auf der Stapelrahmen, für welche Symbole nicht geladen werden. Der Rahmen wird abgeblendet.
+
+2.  Zeigen Sie auf **Symbole laden** und wählen Sie dann **Microsoft-Symbolserver** (falls verfügbar), oder navigieren Sie zu den Symbolpfad.
+
+### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest
+
+1.  Wählen Sie im Fenster Aufrufliste **im Kontextmenü die Option Symboleinstellungen** aus.
+
+     Das Dialogfeld Optionen **wird geöffnet, und die Seite Symbole** wird angezeigt.
+
+2.  Wählen Sie **Symboleinstellungen**.
+
+3.  Klicken Sie im Dialogfeld Optionen** auf das Ordnersymbol.
+
+     Im Feld Speicherorte für Symboldateien (.pdb)** wird ein Cursor angezeigt.
+
 4.  Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer, den Sie debuggen. Für lokale und remote zu Debuggen ist dies ein Pfad auf dem lokalen Computer.
-  
-5.  Wählen Sie **OK** schließen die **Optionen** Dialogfeld.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Gemischter Code und fehlende Daten im Fenster "Aufrufliste"](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  
- [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
+
+5.  Wählen Sie **OK** schließen die **Optionen** Dialogfeld.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Gemischter Code und fehlende Daten im Fenster "Aufrufliste"](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)
+- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
