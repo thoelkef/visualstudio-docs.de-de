@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673236"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388831"
 ---
 # <a name="options-text-editor-cc-view"></a>Optionen, Text-Editor, C/C++, Ansicht
 
 Verwenden Sie diesen Eigenschaftenseiten, um das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.
 
 Wählen Sie **Tools** > **Optionen** aus, erweitern Sie **Text-Editor** und dann **C/C++**, und wählen Sie **Ansicht** aus, um auf diese Eigenschaftenseite zuzugreifen.
-
-> [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="code-squiggles"></a>Wellenlinien im Code
 
@@ -49,7 +46,7 @@ Sie können die folgenden Einstellungen aktivieren oder deaktivieren, um festzul
 
 - **Kommentaraufgaben aufzählen:** Quelldateien auf VS-Token prüfen und Vorkommnisse im Aufgabenlistenfenster aufführen.
 
-- **Übereinstimmende Token hervorheben:** Einschließende Klammern oder Syntax werden hervorgehoben, wenn der Cursor über ein übereinstimmendes Element bewegt wird. 
+- **Übereinstimmende Token hervorheben:** Einschließende Klammern oder Syntax werden hervorgehoben, wenn der Cursor über ein übereinstimmendes Element bewegt wird.
 
 ## <a name="outlining"></a>Gliedern
 

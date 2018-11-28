@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673219"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388633"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Optionen, Text-Editor, XAML, Sonstiges
+
 Verwenden Sie die Eigenschaftenseite **Sonstiges**, um anzugeben, wie Elemente und Attribute in Ihren XAML-Dokumenten formatiert werden. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die Eigenschaftenseite **Sonstiges** den Knoten **Text-Editor** > **XAML** > **Sonstiges**.
 
-> [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Automatisch einfügen
- Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen automatisch generiert werden.
+
+Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen automatisch generiert werden.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Verwenden Sie die Eigenschaftenseite **Sonstiges**, um anzugeben, wie Elemente u
 |**Kommas zum Trennen von MarkupExtension-Parametern**|Gibt an, ob Kommas generiert werden, wenn Sie mehr als einen Parameter in einer Markuperweiterung eingeben.|
 
 ## <a name="errors-and-warnings"></a>Fehler und Warnungen
- Verwenden Sie diese Einstellung, um zu steuern, wann Fehler und Warnungen automatisch generiert werden. Weitere Informationen finden Sie unter [XAML-Fehler und -Warnungen](../../designers/xaml-errors-warnings.md).
+
+Verwenden Sie diese Einstellung, um zu steuern, wann Fehler und Warnungen automatisch generiert werden. Weitere Informationen finden Sie unter [XAML-Fehler und -Warnungen](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Siehe auch
 
