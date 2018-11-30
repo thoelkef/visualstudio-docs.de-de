@@ -1,16 +1,13 @@
 ---
-title: 'Vorgehensweise: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen'
-ms.date: 11/04/2016
+title: Verwalten von Buildkonfigurationen mit Visual Basic-Entwicklereinstellungen
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio, building with Visual Basic settings
-- MSBuild, debug build
 - advanced build configurations
-- building with Visual Basic developer settings
+- building with Visual Basic developer settings (Visual Studio)
 - debug builds
-- MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
@@ -18,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987419e62d54b44a21a70f625e2a240bd7aecc21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946259"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388685"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Vorgehensweise: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen
 
-Standardmäßig werden alle Optionen für die Buildkonfiguration ausgeblendet, wenn die Visual Basic-Entwicklereinstellungen aktiviert sind. In diesem Thema wird erläutert, wie Sie diese Einstellungen manuell aktivieren.
+Standardmäßig werden alle Optionen für die Buildkonfiguration ausgeblendet, wenn die Visual Basic-Entwicklereinstellungen aktiviert sind. In diesem Artikel wird erläutert, wie Sie diese Buildeinstellungen manuell aktivieren.
 
 ## <a name="enable-advanced-build-configurations"></a>Aktivieren von erweiterten Buildkonfigurationen
 
-Standardmäßig blenden die Visual Basic-Entwicklereinstellungen die Option aus, das Dialogfeld **Konfigurations-Manager** und die Listen **Konfiguration** und **Plattform** im [Projekt-Designer](..//ide/reference/application-page-project-designer-visual-basic.md) zu öffnen.
+Standardmäßig blenden die Visual Basic-Entwicklereinstellungen die Option aus, das Dialogfeld **Konfigurations-Manager** und die Listen **Konfiguration** und **Plattform** im [Projekt-Designer](../ide/reference/application-page-project-designer-visual-basic.md) zu öffnen.
 
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.
 
@@ -50,3 +47,4 @@ Standardmäßig blenden die Visual Basic-Entwicklereinstellungen die Option aus,
 
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
+- [Umgebungseinstellungen](../ide/environment-settings.md)

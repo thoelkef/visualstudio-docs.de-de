@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348642"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389616"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Entwerfen von XAML-Code in Visual Studio
 
@@ -48,7 +48,7 @@ Für die meisten grundlegenden Aufgaben teilen sich die IDE für Visual Studio u
 
      ![Oberfläche für erneutes Laden einer Datei](../designers/media/blendfilereload.png)
 
-- **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Tool-Fensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen computerübergreifend sowohl für Visual Studio als auch für Blend für Visual Studio, wenn Sie sich beim selben Microsoft-Konto anmelden. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+- **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Tool-Fensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen computerübergreifend sowohl für Visual Studio als auch für Blend für Visual Studio, wenn Sie sich beim selben Microsoft-Konto anmelden. Weitere Informationen finden Sie unter[Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Ein gemeinsamer Projektmappen-Explorer:** **Der Projektmappen-Explorer** bietet eine strukturierte Ansicht für Ihre Projekte und Dateien sowie einen schnellen Zugriff auf die zugehörigen Befehle. Mit dem Projektmappen-Explorer ist es einfacher, mit großen Firmenprojekten zu arbeiten. Weitere Informationen finden Sie unter [Solutions and Projects (Projektmappen und Projekte)](../ide/solutions-and-projects-in-visual-studio.md).
 

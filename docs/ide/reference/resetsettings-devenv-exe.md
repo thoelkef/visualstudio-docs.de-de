@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948062"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388668"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ Stellt die Standardeinstellungen von Visual Studio wieder her und startet die Vi
 Die Standardeinstellungen werden von dem Profil bestimmt, das ausgewählt war, als Visual Studio zum ersten Mal gestartet wurde.
 
 > [!TIP]
-> Weitere Informationen zum Zurücksetzen von Einstellungen mithilfe der integrierten Entwicklungsumgebung (IDE) finden Sie unter [Zurücksetzen von Einstellungen](../synchronized-settings-in-visual-studio.md#reset-settings).
+> Weitere Informationen zum Zurücksetzen von Einstellungen mithilfe der integrierten Entwicklungsumgebung (IDE) finden Sie unter [Zurücksetzen von Einstellungen](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zurücksetzen von Einstellungen](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [Umgebungseinstellungen](../environment-settings.md)
 - [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
