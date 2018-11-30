@@ -17,50 +17,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb43dfa414d29f614c1ee188c38467ba288b33
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218427"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389039"
 ---
 # <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
+
 Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit bestimmten Dateierweiterungen von der integrierten Entwicklungsumgebung (IDE) in Visual Studio behandelt werden. Für jede **Erweiterung**, die Sie eingeben, können Sie eine Bearbeitungsmöglichkeit auswählen. Dadurch können Sie auf den Editor oder Designer der integrierten Entwicklungsumgebung zugreifen, in dem Dokumente eines bestimmten Typs geöffnet werden. Wählen Sie zum Anzeigen dieser Optionen im Menü **Extras** **Optionen** aus, erweitern Sie den Knoten **Text-Editor**, und wählen Sie **Dateierweiterung** aus.
 
- Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieses Typs öffnen, in dem Sie ein Codierungsschema für dieses Dokument auswählen können. Dies ist nützlich, wenn Sie Versionen Ihrer Projektdokumente für die Verwendung auf verschiedenen Plattformen oder in verschiedenen Zielsprachen vorbereiten.
-
-> [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
+Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieses Typs öffnen, in dem Sie ein Codierungsschema für dieses Dokument auswählen können. Dies ist nützlich, wenn Sie Versionen Ihrer Projektdokumente für die Verwendung auf verschiedenen Plattformen oder in verschiedenen Zielsprachen vorbereiten.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- **Erweiterung**
 
- Geben Sie die Dateierweiterung ein, deren Bearbeitungsmöglichkeit Sie in der IDE definieren möchten.
+**Erweiterung**
 
- **Editor**
+Geben Sie die Dateierweiterung ein, deren Bearbeitungsmöglichkeit Sie in der IDE definieren möchten.
 
- Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente mit dieser Dateierweiterung geöffnet werden. Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieser Art öffnen, in dem Sie ein Codierungsschema auswählen können.
+**Editor**
 
- **Add**
+ Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente mit dieser Dateierweiterung geöffnet werden. Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, immer wenn Sie ein Dokument dieser Art öffnen, in dem Sie ein Codierungsschema auswählen können.
 
- Fügt einen Eintrag hinzu, der die angegebene **Erweiterung** und **Bearbeitungsmöglichkeit** zur Liste der Erweiterungen hinzufügt.
+**Add**
 
- **Entfernen**
+Fügt einen Eintrag hinzu, der die angegebene **Erweiterung** und **Bearbeitungsmöglichkeit** zur Liste der Erweiterungen hinzufügt.
 
- Löscht den ausgewählten Eintrag aus der Liste der Erweiterungen.
+**Entfernen**
 
- **Liste der Erweiterungen**
+Löscht den ausgewählten Eintrag aus der Liste der Erweiterungen.
 
- Listet alle Erweiterungen auf, für die eine Bearbeitungsart angegeben wurde.
+**Liste der Erweiterungen**
 
- **Dateien ohne Erweiterung zuordnen zu**
+Listet alle Erweiterungen auf, für die eine Bearbeitungsart angegeben wurde.
 
- Aktivieren Sie diese Option, wenn Sie angeben möchten, wie Dateien ohne Erweiterung von der IDE behandelt werden sollen.
+**Dateien ohne Erweiterung zuordnen zu**
 
- **Extensionless file options** (Optionen für Dateien ohne Erweiterung)
+Aktivieren Sie diese Option, wenn Sie angeben möchten, wie Dateien ohne Erweiterung von der IDE behandelt werden sollen.
 
- Stellt dieselbe Liste wie **Editor** bereit. Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente ohne Dateierweiterung geöffnet werden.
+**Extensionless file options** (Optionen für Dateien ohne Erweiterung)
+
+Stellt dieselbe Liste wie **Editor** bereit. Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente ohne Dateierweiterung geöffnet werden.
 
 ## <a name="see-also"></a>Siehe auch
 
