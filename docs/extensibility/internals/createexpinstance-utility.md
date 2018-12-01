@@ -59,7 +59,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  Im folgenden Beispiel wird die Standardwert für die experimentellen Instanz von Visual Studio:  
   
- **CreateExpInstance.exe/Reset /VSInstance = 14.0/rootsuffix Exp =**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /rootsuffix=Exp**  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../../extensibility/internals/vspackages.md)
