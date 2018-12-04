@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8946647c67c2949523411cc7be43463798d47c9
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966803"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821291"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analysetools
 
@@ -37,6 +37,7 @@ Mit live-projektbasierten codeanalysemodulen in Visual Studio können die API-Au
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über die Roslyn-Analyzer](../code-quality/roslyn-analyzers-overview.md)
+- [Tutorial: Schreiben Sie Ihre erste Lösung für Analyzer und code](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET Compiler Platform-Version-Paketverweis](roslyn-version-support.md)
 - [Weitere-Dokumentation auf der GitHub-OSS-Website](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [FxCop-Regeln, die mit Roslyn-Analysetools auf GitHub implementiert](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
