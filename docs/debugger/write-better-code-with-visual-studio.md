@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389376"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621590"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Beheben von Fehlern durch das Schreiben von besser C# code mithilfe von Visual Studio
 
-Debuggen von Code kann ein zeitraubender – und manchmal frustrierend--Task. Dauert einige Zeit, zu erfahren, wie auf effiziente Weise zu debuggen. Eine leistungsfähige IDE wie Visual Studio kann die Ihres Auftrags entscheidend vereinfachen. Eine IDE können Sie Ihren Code schneller zu debuggen und nicht nur, aber es kann auch helfen, die Sie besseren Code mit weniger Fehlern schreiben. Unser Ziel in diesem Artikel ist um einen ganzheitlichen Überblick über den Debugprozess, zu gewähren, damit Sie wissen werden, wenn Sie den Code-Analyzer einsetzen, verwenden Sie den Debugger, und andere Tools verwenden.
+Debuggen von Code kann ein zeitraubender – und manchmal frustrierend--Task. Dauert einige Zeit, zu erfahren, wie auf effiziente Weise zu debuggen kann, aber eine leistungsfähige IDE wie Visual Studio Ihr Auftrag viel einfacher. Eine IDE können Sie Ihren Code schneller zu debuggen und nicht nur, aber es kann auch helfen, die Sie besseren Code mit weniger Fehlern schreiben. Unser Ziel in diesem Artikel ist um einen ganzheitlichen Überblick über den Debugprozess, zu gewähren, damit Sie wissen werden, wenn Sie den Code-Analyzer einsetzen, verwenden Sie den Debugger, und andere Tools verwenden.  
 
 In diesem Artikel sprechen wir über die IDE, um den Debugsitzungen produktiver nutzen. Wir angeschnitten mehrere Tasks ein, z. B. ein:
 
