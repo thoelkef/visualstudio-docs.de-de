@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813856"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895625"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurieren der Laufzeiteinstellungen für Auslastungstests
 
 *Laufzeiteinstellungen* stellen mehrere Eigenschaften dar, die die Art der Ausführung eines Auslastungstests beeinflussen. Laufzeiteinstellungen werden nach Kategorien im **Eigenschaftenfenster** strukturiert.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Sie können mehr als eine Laufzeiteinstellung in einem Auslastungstest verwenden, jedoch kann nur eine der Laufzeiteinstellungen pro Ausführung aktiv sein. Die anderen Laufzeiteinstellungen bieten eine schnelle Möglichkeit zur Auswahl einer alternativen Einstellung für nachfolgende Testläufe.
 

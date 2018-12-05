@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909771"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895833"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
 Das <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> ermöglicht das Ändern eines aufgezeichneten Webleistungstests. Die Änderung wird vorgenommen, nachdem Sie in der Symbolleiste der **Webleistungstest-Aufzeichnung** auf **Beenden** klicken, jedoch vor dem Speichern und Anzeigen des Tests im Webleistungstest-Editor.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Ein Aufzeichnungs-Plug-In ermöglicht Ihnen, Ihre eigene benutzerdefinierte Korrelation auf dynamische Parameter auszuführen. Durch die integrierte Korrelationsfunktion erkennen Webleistungstests die dynamischen Parameter in der Webaufzeichnung nach ihrer Ausführung oder bei Auswahl der Option **Dynamische Parameter auf Webtestparameter hochstufen** in der Symbolleiste des **Webleistungstest-Editors**. Die integrierte Erkennungsfunktion findet jedoch nicht immer alle dynamischen Parameter. Eine Sitzungs-ID, deren Wert normalerweise innerhalb von 5 bis 30 Minuten geändert wird, wird z. B. nicht gefunden. Daher müssen Sie den Korrelationsprozess manuell ausführen.
 

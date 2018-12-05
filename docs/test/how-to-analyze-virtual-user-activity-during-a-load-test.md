@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881702"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895235"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer
 
 Zeigen Sie die Aktivität des virtuellen Benutzers an, der mit Ihrem Auslastungstest verknüpft ist, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das **Diagramm für Aktivitäten virtueller Benutzer** gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. Sie können Benutzeraktivitäts- und Auslastungsmuster erkennen, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen bei anderen Aktivitäten virtueller Benutzer anzeigen. Das **Diagramm für die Aktivitäten virtueller Benutzer** ist erst nach dem Ausführen des Auslastungstests verfügbar.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Aktivitäten virtueller Benutzer**, das Überprüfen einer Aktivität eines bestimmten Benutzers und das Verwenden der Filterung.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>So zeigen Sie das Diagramm für Aktivitäten virtueller Benutzer in den Auslastungstestergebnissen an
 
-1.  Konfigurieren Sie zum Anzeigen der virtuellen Benutzerdaten zunächst die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung**, die dem Auslastungstest zugeordnet ist. Führen Sie anschließend den Auslastungstest aus. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Erfassung aller Details zur Verwendung des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Konfigurieren Sie zum Anzeigen der virtuellen Benutzerdaten zunächst die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung**, die dem Auslastungstest zugeordnet ist. Führen Sie anschließend den Auslastungstest aus.
 
 2.  Nach dem Ausführen des Auslastungstests wird die Zusammenfassungsseite mit den Testergebnissen angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Benutzerdetails**.
 

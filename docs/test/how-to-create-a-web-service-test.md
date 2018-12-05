@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380667"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894468"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Vorgehensweise: Erstellen eines Webdiensttests
 
 Sie können Webleistungstests verwenden, um Webdienste zu testen. Sie können im **Webleistungstest-Editor** mithilfe der Optionen **Anforderung einfügen** und **Webdienstanforderung einfügen** einzelne Anforderungen anpassen, um Webdienstseiten zu suchen. Im Allgemeinen werden diese Seiten nicht in der Webanwendung angezeigt. Deshalb müssen Sie die Anforderung anpassen, um Zugriff auf diese Seiten zu erhalten.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starter Kit enthalten ist. Sie können ihn mit dem [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) herunterladen.
 
- **Anforderungen**
+**Anforderungen**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>So testen Sie einen Webdienst
 

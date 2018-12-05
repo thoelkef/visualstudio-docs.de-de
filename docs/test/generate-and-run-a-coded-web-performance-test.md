@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f57d22963aa5078d3947bc94d3077c1e24534481
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295565"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895508"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
 Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die Tests sind in Auslastungstests enthalten, um die Leistung der Webanwendung unter der Last mehrerer Benutzer zu messen. Ein Webleistungstest kann in ein codebasiertes Skript konvertiert werden, das Sie wie jeden anderen Quellcode bearbeiten und anpassen können. Beispielsweise können Sie Schleifen- und Verzweigungskonstrukte hinzufügen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>Einen codierten Webleistungstest generieren
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296085"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895469"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
 
 Konfigurieren Sie *Testeinstellungen* für Ihre Auslastungstests, sodass Sie diese Tests mithilfe von Test-Agents und Testcontrollern auf mehrere Computer verteilen können. Sie können zudem Testeinstellungen für die Verwendung von *Adaptern für diagnostische Daten* konfigurieren, die die Arten der zu sammelnden Daten angeben oder welche Auswirkung auf die Testcomputer erzielt wird, wenn Sie Ihre Auslastungstests in Visual Studio ausführen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Sie können z. B. den Adapter für diagnostische Daten des ASP.NET-Profilers verwenden, um den Leistungsstrukturplan des Codes zu sammeln. Darüber hinaus können Diagnosedatenadapter verwendet werden, um auf dem Testcomputer potenzielle Engpässe zu simulieren oder den verfügbaren Systemspeicher zu reduzieren.
 

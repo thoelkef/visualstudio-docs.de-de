@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645184"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895599"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
 
@@ -30,6 +30,8 @@ Manche Websites verwenden dynamische Parameter, um einige ihrer Webanforderungen
 -   Dynamische Parameterwerte, die als Abfragezeichenfolge und Formularbereitstellungsparameter festgelegt werden. Diese werden durch Erkennung dynamischer Parameter verarbeitet, nachdem Sie einen Webleistungstest aufgezeichnet haben.
 
 Einige Typen dynamischer Parameter werden nicht erkannt. Ein unerkannter dynamischer Parameter führt dazu, dass der Webleistungstest bei der Ausführung fehlschlagt, da der dynamische Wert bei jeder Ausführung des Tests unterschiedlich ist. Damit diese Parameter korrekt verarbeitet werden, können Sie den dynamischen Parametern in Webleistungstests Extraktionsregeln manuell hinzufügen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Erstellen und Ausführen einer Web-App mit dynamischen Parametern
 

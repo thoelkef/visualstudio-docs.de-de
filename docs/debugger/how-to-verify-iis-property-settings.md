@@ -21,62 +21,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6eb30c411b7a863d4ba9522159d6100abb48cb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884848"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389486"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Gewusst wie: Überprüfen von IIS-Eigenschafteneinstellungen
-Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool festlegen. Diese Eigenschaften müssen korrekt festgelegt sein, damit die Anwendung ausgeführt werden kann. Das Überprüfen dieser Einstellungen ist daher ein häufig erforderlicher Schritt bei der Fehlerbehebung.  
-  
+
+Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool festlegen. Diese Eigenschaften müssen korrekt festgelegt sein, damit die Anwendung ausgeführt werden kann. Das Überprüfen dieser Einstellungen ist daher ein häufig erforderlicher Schritt bei der Fehlerbehebung.
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-check-iis-settings-for-the-web-application"></a>So überprüfen Sie die IIS-Einstellungen der Webanwendung  
-  
-1. Öffnen der **Verwaltung** Fenster: auf die **starten** , zeigen Sie auf **Programme**, und klicken Sie dann auf **Verwaltung**. Wenn **Verwaltung** erscheint nicht in der **Programme** Menü und dann befindet er sich in der **Systemsteuerung**.  
-  
-   -   Wählen Sie auf Windows 2000, **Internetdienste-Manager**.  
-  
-   -   Wählen Sie unter Windows XP **Internet Information Services**.  
-  
-   -   Doppelklicken Sie auf Windows Server 2003 auf **Serververwaltung**.  
-  
-        Die **Serververwaltung** Fenster wird geöffnet. Klicken Sie unter **Anwendungsserver**, klicken Sie auf **diesen Anwendungsserver verwalten**.  
-  
-        Die **Anwendungsserver** Fenster wird geöffnet. Öffnen der **(Internet Information Services, IIS) Manager** im linken Bereich den Knoten.  
-  
-2. Klicken Sie im Dialogfeld in der Strukturansicht auf den Knoten für den Computer. Klicken Sie auf die **Websites** Knoten, und wählen Sie die Webanwendung aus. Sie werden entweder ein Websiteknoten und somit ein gleichgeordnetes Element von der **Default Web Site** Knoten oder ein virtueller Verzeichnisknoten unter einem vorhandenen Websiteknoten.  
-  
-3. Mit der rechten Maustaste in der Webanwendung, und klicken Sie im Kontextmenü auf **Eigenschaften**.  
-  
-4. Überprüfen Sie die Sicherheitseinstellungen für die Webanwendung:  
-  
-   1.  In der Webanwendung **Eigenschaften** Fenster, klicken Sie auf die **Verzeichnissicherheit** Registerkarte, und klicken Sie auf **bearbeiten**.  
-  
-   2.  In der **Authentifizierungsmethoden** wählen Sie im Dialogfeld **anonymen Zugriff aktivieren** und **integrierte Windows-Authentifizierung** , wenn sie nicht bereits aktiviert sind.  
-  
-   3.  Klicken Sie auf **OK** schließen die **Authentifizierungsmethoden** Dialogfeld.  
-  
-5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen von DEBUG Verb mit der Erweiterung](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).  
-  
-6. Für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung, stellen Sie sicher des virtuellen Ordners ist für die Anwendung einen Anwendungsnamen ein, legen Sie in hat **(Internet Information Services, IIS) Manager**, **Internetdienste-Manager** oder  **Internet-Informationsdienste**.  
-  
-   1.  In der Webanwendung **Eigenschaften** wählen Sie im Fenster der **Directory** Registerkarte, wenn die Anwendung in einem virtuellen Verzeichnis befindet oder der **Basisverzeichnis** Registerkarte, wenn die Anwendung in eine Website.  
-  
-   2.  Überprüfen Sie, ob der Name in der **lokaler Pfad** entspricht dem Namen des Verzeichnisses, in dem die Anwendung bereitgestellt wurde.  
-  
-   3.  Klicken Sie unter **Anwendungseinstellungen**, geben Sie den Namen des Stammverzeichnisses, der Anwendung enthält.  
-  
-   4.  Klicken Sie auf **OK** schließen die **Eigenschaften** Dialogfeld.  
-  
-7. Für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung, klicken Sie auf die **ASP.NET** Registerkarte, und überprüfen Sie, ob die richtige Version der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] angegeben ist.  
-  
-8. Klicken Sie auf **OK** schließen die **Eigenschaften** Dialogfeld.  
-  
-9. Klicken Sie auf **OK** schließen die **(Internet Information Services, IIS) Manager**, **Internetdienste-Manager**, oder **Internet Information Services**Dialogfeld.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
+
+## <a name="to-check-iis-settings-for-the-web-application"></a>So überprüfen Sie die IIS-Einstellungen der Webanwendung
+
+1. Öffnen Sie das Fenster **Verwaltung**. Zeigen Sie dazu im **Startmenü** auf **Programme**, und klicken Sie dann auf **Verwaltung**. Falls der Eintrag **Verwaltung** nicht im Menü **Programme** vorhanden ist, befindet er sich in der **Systemsteuerung**.
+
+   -   Unter Windows 2000 klicken Sie auf **Internetdienste-Manager**.
+
+   -   Unter Windows XP wählen Sie **Internetinformationsdienste**.
+
+   -   Unter Windows Server 2003 doppelklicken Sie auf **Serververwaltung**.
+
+        Das Fenster **Serververwaltung** wird geöffnet. Klicken Sie im Bereich **Anwendungsserver** auf **Diesen Anwendungsserver verwalten**.
+
+        Das Fenster **Anwendungsserver** wird geöffnet. Erweitern Sie im linken Bereich den Knoten **Internetinformationsdienste-Manager**.
+
+2. Klicken Sie im Dialogfeld in der Strukturansicht auf den Knoten für den Computer. Klicken Sie auf den Knoten **Websites**, und wählen Sie den Knoten der Webanwendung aus. Dies ist entweder ein Websiteknoten (also ein gleichgeordneter Knoten des Knotens **Standardwebsite**) oder ein virtueller Verzeichnisknoten unter einem vorhandenen Websiteknoten.
+
+3. Klicken Sie mit der rechten Maustaste auf die Webanwendung, und klicken Sie im Kontextmenü auf **Eigenschaften**.
+
+4. Überprüfen Sie die Sicherheitseinstellungen für die Webanwendung:
+
+   1.  Wählen Sie im **Eigenschaftenfenster** der Webanwendung die Registerkarte **Verzeichnissicherheit** aus, und klicken Sie auf **Bearbeiten**.
+
+   2.  Aktivieren Sie im Dialogfeld **Authentifizierungsmethoden** die Optionen **Anonymen Zugriff aktivieren** und **Integrierte Windows-Authentifizierung**, falls sie nicht bereits aktiviert sind.
+
+   3.  Klicken Sie auf **OK**, um das Dialogfeld **Authentifizierungsmethoden** zu schließen.
+
+5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen von DEBUG Verb mit der Erweiterung](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+
+6. Stellen Sie bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung sicher, dass für das virtuelle Verzeichnis der Anwendung in **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** ein Anwendungsname festgelegt ist.
+
+   1.  Klicken Sie im **Eigenschaftenfenster** der Webanwendung auf die Registerkarte **Verzeichnis**, wenn sich die Anwendung in einem virtuellen Verzeichnis befindet, bzw. auf die Registerkarte **Basisverzeichnis**, wenn sich die Anwendung in einer Website befindet.
+
+   2.  Vergewissern Sie sich, dass der Name in **Lokaler Pfad** mit dem Namen des Verzeichnisses übereinstimmt, in dem die Anwendung bereitgestellt wurde.
+
+   3.  Geben Sie unter **Anwendungseinstellungen** den Namen des Stammverzeichnisses ein, in dem die Anwendung enthalten ist.
+
+   4.  Klicken Sie auf **OK**, um das Dialogfeld **Eigenschaften** zu schließen.
+
+7. Klicken Sie bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung auf die Registerkarte **ASP.NET**, und vergewissern Sie sich, dass die richtige Version von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] angegeben ist.
+
+8. Klicken Sie auf **OK**, um das Dialogfeld **Eigenschaften** zu schließen.
+
+9. Klicken Sie auf **OK**, um das Dialogfeld **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** zu schließen.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)

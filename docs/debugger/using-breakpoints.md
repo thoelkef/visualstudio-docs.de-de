@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Haltepunkten in Visual Studio-Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,20 +36,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826842"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389136"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
   
 ##  <a name="BKMK_Overview"></a> Setzen Sie Haltepunkte im Quellcode  
- Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. im folgenden C#-Code, Sie können einen Haltepunkt festlegen der Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.  
+ Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. in der folgenden C# Code können Sie einen Haltepunkt festlegen, die Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.  
 
  Klicken Sie in den linken Rand neben einer Codezeile, zum Festlegen eines Haltepunkts im Quellcode. Sie können auch auswählen, die Zeile, und drücken Sie **F9**Option **Debuggen** > **Haltepunkt ein/aus**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt**  >  **Haltepunkt einfügen**. Der Haltepunkt wird als ein roter Punkt am linken Rand angezeigt.  
+
+In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatisch hervorgehoben. Für C++-Code können Sie auf die Herausarbeitung der Haltepunkt und die aktuellen Zeilen durch Auswahl aktivieren **Tools** (oder **Debuggen**) > **Optionen**  >   **Debuggen von** >  **bei Haltepunkten und aktueller Anweisung (nur C++) gesamte Quellcodezeile markieren**. 
   
  ![Festlegen eines Haltepunkts](../debugger/media/basicbreakpoint.png "grundlegende Haltepunkt")  
   
@@ -59,7 +61,7 @@ Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwic
   
  ![Haltepunktausführung beendet](../debugger/media/breakpointexecution.png "haltepunktausführung")  
   
- Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).  
+ Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Der Haltepunkt ist eine Umschaltoption. Sie klicken Sie darauf, drücken Sie die **F9**, oder verwenden Sie **Debuggen** > **Haltepunkt ein/aus** zu löschen oder erneut eingefügt werden.
   
@@ -87,7 +89,7 @@ Wird der aufruflistenhaltepunkt angezeigt, der **Haltepunkte** -Fenster als eine
 
 Der Debugger bei der Anweisung.  
 
-Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md). 
+Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md). 
 
 Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -113,11 +115,11 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
    
    - Verwenden Sie den vollqualifizierten Funktionsnamen. 
      
-     Beispiel:  `Namespace1.ClassX.MethodA()`
+     Beispiel: `Namespace1.ClassX.MethodA()`
      
    - Fügen Sie die Parametertypen einer überladenen Funktion hinzu. 
      
-     Beispiel:  `MethodA(int, string)`
+     Beispiel: `MethodA(int, string)`
      
    - Verwenden der "!" Symbol für das Modul angeben.
      
@@ -158,19 +160,19 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
     Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster.
   
-2.  In der **Adresse** geben eine Speicheradresse oder einen Ausdruck, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.  
+2.  Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.  
   
 3.  Geben Sie im Feld **Byteanzahl** die Anzahl der Bytes an, die der Debugger überwachen soll. Wenn Sie beispielsweise **4**auswählen, überwacht der Debugger vier Bytes ab `&avar` und unterbricht, wenn eines dieser Bytes seinen Wert ändert.  
 
 Datenhaltepunkte funktionieren nicht unter den folgenden Bedingungen:  
--   Ein Prozess, der nicht gedebuggt wird, die in der Speicheradresse geschrieben werden.  
--   Die Speicheradresse wird zwischen zwei oder mehr Prozessen gemeinsam genutzt.  
+-   Ein Prozess, der nicht gedebuggt wird, wird in einen Speicherbereich geschrieben.  
+-   Der Speicherbereich wird von mindestens zwei Prozessen gemeinsam verwendet.  
 -   Der Speicherort wird innerhalb des Kernels aktualisiert. Wenn Speicher an der 32-Bit-Windows übergeben wird z. B. `ReadFile` -Funktion, der Speicher vom Kernelmodus, damit das Update der Debugger unterbricht aktualisiert.  
 
 >[!NOTE]
 >- Datenhaltepunkte richten sich nach spezifischen Speicheradressen. Die Adresse einer Variablen ändert sich von einer Debugsitzung zur nächsten, sodass Datenhaltepunkte am Ende einer Debugsitzung automatisch deaktiviert werden.  
 >  
->- Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, der Breakpoint bleibt aktiviert, wenn die Funktion beendet wird, die Speicheradresse ist jedoch nicht mehr zutreffend, daher ist das Verhalten des Haltepunkts unvorhersehbar. Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, sollten Sie löschen oder deaktivieren diesen vor dem Ende der Funktion.  
+>- Wenn Sie einen Datenhaltepunkt bei einer lokalen Variable festlegen, bleibt der Haltepunkt aktiviert, wenn die Funktion beendet wird, die Speicheradresse ist jedoch nicht mehr gültig, und das Verhalten des Haltepunkts ist unvorhersehbar. Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, sollten Sie löschen oder deaktivieren diesen vor dem Ende der Funktion.  
 
 ##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten im Haltepunktefenster 
 
@@ -199,7 +201,7 @@ Sie können Bezeichnungen zu sortieren und Filtern Sie die Liste von Haltepunkte
 - Zum Importieren von Haltepunkten, in der **Haltepunkte** wählen Sie im Fenster der **Haltepunkte aus einer Datei importieren** Symbol, um den Speicherort der XML-Datei navigieren, und wählen **öffnen**. 
 
 ##  <a name="breakpoint-conditions"></a>Haltepunktbedingungen  
- Sie können steuern, wann und wo ein Haltepunkt ausgeführt wird, indem Sie Bedingungen festlegen. Die Bedingung kann jeder gültige Ausdruck sein, den der Debugger erkennt. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Ausdrücke im Debugger](../debugger/expressions-in-the-debugger.md).  
+ Sie können steuern, wann und wo ein Haltepunkt ausgeführt wird, indem Sie Bedingungen festlegen. Die Bedingung kann jeder gültige Ausdruck sein, den der Debugger erkennt. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Expressions in the Debugger (Ausdrücke im Debugger)](../debugger/expressions-in-the-debugger.md).  
 
 **Um eine Bedingung für Haltepunkt festzulegen:**
 
@@ -231,12 +233,12 @@ Bei der Auswahl **Bedingungsausdruck**, können Sie zwischen zwei Bedingungen: *
  Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort eine Warnmeldung angezeigt. Wenn Sie eine Haltepunktbedingung mit gültiger Syntax aber ungültiger Semantik angeben, wird beim ersten Erreichen des Haltepunkts eine Warnmeldung angezeigt. In jedem Fall unterbricht der Debugger auf, wenn er den ungültigen Breakpoint erreicht. Der Haltepunkt wird nur übersprungen, wenn die Bedingung gültig ist mit `false`bewertet wird.  
   
  >[!NOTE]
- >Das Verhalten der **Änderung** Feld unterscheidet sich für verschiedene Programmiersprachen. 
+ >Das Verhalten des Felds **Bei Änderung** unterscheidet sich je nach Programmiersprache. 
  >- Für nativen Code betrachtet nicht Debugger die erste Auswertung der Bedingung, sodass der Haltepunkt bei der ersten Auswertung kein Änderung. 
  >- Für verwalteten Code, trifft der Debugger den Breakpoint in der ersten Auswertung nach **Änderung** ausgewählt ist.  
   
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Verwenden von Objekt-IDs in bedingten Ausdrücken (C# und F# nur)  
- Es gibt Situationen, wenn Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise empfiehlt es sich um herauszufinden, warum ein Objekt mehr als einmal in einer Auflistung eingefügt wurde. In C# und F#, können Sie Objekt-IDs für bestimmte Instanzen von erstellen [Verweistypen](/dotnet/csharp/language-reference/keywords/reference-types), und in haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
+ Es gibt Situationen, wenn Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise empfiehlt es sich um herauszufinden, warum ein Objekt mehr als einmal in einer Auflistung eingefügt wurde. In C# und F# können Sie Objekt-IDs für bestimmte Instanzen von [Verweistypen](/dotnet/csharp/language-reference/keywords/reference-types) erstellen und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
 
 **So erstellen Sie eine Objekt-ID:** 
   
@@ -248,9 +250,9 @@ Bei der Auswahl **Bedingungsausdruck**, können Sie zwischen zwei Bedingungen: *
    
    Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Dies ist die Objekt-ID.  
    
-3. Fügen Sie einen neuen Haltepunkt, an dem Punkt, die, den Sie untersuchen möchten; z. B. wenn das Objekt ist, das der Auflistung hinzugefügt werden. Mit der rechten Maustaste des Haltepunkts, und wählen Sie **Bedingungen**.  
+3. Fügen Sie einen neuen Haltepunkt, an dem Punkt, die, den Sie untersuchen möchten; z. B. wenn das Objekt ist, das der Auflistung hinzugefügt werden. Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und wählen Sie **Bedingungen** aus.  
    
-4. Verwenden Sie die Objekt-ID in der **Bedingungsausdruck** Feld. Z. B. wenn die Variable `item` ist das Objekt der Auflistung, die Option hinzugefügt werden **ist "true"** und **item == $\<n >**, wobei \<n > ist die Objekt-ID-Nummer .  
+4. Verwenden Sie die Objekt-ID im Feld **Bedingter Ausdruck**. Z. B. wenn die Variable `item` ist das Objekt der Auflistung, die Option hinzugefügt werden **ist "true"** und **item == $\<n >**, wobei \<n > ist die Objekt-ID-Nummer .  
    
    Die Ausführung wird an dem Punkt unterbrochen, an dem dieses Objekt der Auflistung hinzugefügt werden soll.  
    
@@ -280,13 +282,13 @@ Klicken Sie unter **Bedingungen** in die **Haltepunkteinstellungen** wählen Sie
 Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können Klauseln mit `&` (AND), `||` (OR), `!` (NOT), und Klammern kombinieren.  
   
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte  
- Ein *Ablaufverfolgungspunkt* ein Haltepunkt, der eine Meldung ausgibt, wird die **Ausgabe** Fenster. Ein Ablaufverfolgungspunkt kann wie eine temporäre Trace-Anweisung in der Programmiersprache reagieren.  
+ Beim *Ablaufverfolgungspunkt* handelt es sich um einen Haltepunkt, der eine Meldung im Fenster **Ausgabe** ausgibt. Ein Ablaufverfolgungspunkt kann wie eine temporäre Trace-Anweisung in der Programmiersprache reagieren.  
   
 **So legen Sie einen Ablaufverfolgungspunkt fest:**
 
 1. Mit der rechten Maustaste eines Haltepunkts, und wählen Sie **Aktionen**. Oder im der **Haltepunkteinstellungen** Fenster, zeigen Sie auf den Haltepunkt, wählen Sie die **Einstellungen** Symbol, und wählen Sie dann **Aktionen**.  
    
-1. Geben Sie eine Nachricht in die **Meldung im Ausgabefenster protokollieren** Feld. Die Nachricht kann generische Textzeichenfolgen, die Werte der Variablen oder Ausdrücke in geschweiften Klammern und Formatbezeichner enthalten ([c#](../debugger/format-specifiers-in-csharp.md) und [C++](../debugger/format-specifiers-in-cpp.md)) für die Werte.
+1. Geben Sie eine Nachricht in die **Meldung im Ausgabefenster protokollieren** Feld. Die Nachricht kann generische Textzeichenfolgen, die Werte der Variablen oder Ausdrücke in geschweiften Klammern und Formatbezeichner enthalten ([ C# ](../debugger/format-specifiers-in-csharp.md) und [C++](../debugger/format-specifiers-in-cpp.md)) für die Werte.
    
    Sie können auch die folgenden speziellen Schlüsselwörter in der Nachricht verwenden:  
    
@@ -305,7 +307,7 @@ Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können
 Ablaufverfolgungspunkte werden als rote Diamanten in den linken Rand des Quellcodes angezeigt und **Haltepunkte** Windows. 
   
 ## <a name="see-also"></a>Siehe auch  
- [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
+ [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)  
  [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)  
  [Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)  

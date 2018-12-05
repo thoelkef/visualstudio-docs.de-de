@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380693"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895612"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
 
 Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie Daten aus der Ansicht der Zusammenfassung der Auslastungstestergebnisse und der Diagrammansicht kopieren und einfügen. Die in der Zusammenfassungsansicht und Diagrammansicht dargestellten Daten werden beim Kopieren im HTML-Format eingefügt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Sie können Nur-Text aus der Tabellenansicht und aus Screenshots aus der Detailansicht in Microsoft Word kopieren. Dann wird jedoch kein HTML-Format angewendet, und zusätzliches Formatieren und Bearbeiten ist erforderlich.

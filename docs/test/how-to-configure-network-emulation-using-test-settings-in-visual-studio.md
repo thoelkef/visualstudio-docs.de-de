@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829286"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896301"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
@@ -24,7 +24,9 @@ Sie können den Adapter für diagnostische Daten für das Testen einer Anwendung
 > [!WARNING]
 > Wenn Sie die Tests auf einem realen Netzwerk ausführen, das langsamer ist als das Netzwerk, das Sie emulieren, wird der Test weiterhin mit der langsameren Netzwerkgeschwindigkeit ausgeführt. Die Emulation kann die Netzwerkumgebung nur verlangsamen, sie jedoch nicht schneller machen.
 
- Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und Visual Studio.
 
 > [!NOTE]
 > Der Adapter für diagnostische Daten für die Netzwerkemulation gilt nur für Visual Studio-Testeinstellungen. Er wird nicht für Testeinstellungen in Microsoft Test Manager verwendet.
@@ -34,9 +36,9 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 > [!NOTE]
 > Das Netzwerkdienstkonto, das das Standardkonto für den Test-Agent ist, ist kein Mitglied der Administratorgruppe.
 
- **Wahre Netzwerkemulation**
+**Wahre Netzwerkemulation**
 
- Visual Studio verwendet softwarebasierte wahre Netzwerkemulation für alle Testtypen. Das gilt auch für Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
+Visual Studio verwendet softwarebasierte wahre Netzwerkemulation für alle Testtypen. Das gilt auch für Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
 
 - Roundtripzeit für das Netzwerk (Wartezeit)
 
@@ -50,12 +52,13 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 
 - Fehlerweitergabe
 
-  Wahre Netzwerkemulation bietet auch Flexibilität beim Filtern von Netzwerkpaketen auf Grundlage von IP-Adressen oder Protokollen, z. B. TCP, UDP und ICMP.
+Wahre Netzwerkemulation bietet auch Flexibilität beim Filtern von Netzwerkpaketen auf Grundlage von IP-Adressen oder Protokollen, z. B. TCP, UDP und ICMP.
 
-  Wahre Netzwerkemulation kann von netzwerkbasierten Entwicklern und Testern dazu verwendet werden, eine gewünschte Testumgebung zu emulieren, die Leistung zu bewerten, die Auswirkungen auf Änderung zu prognostizieren oder Entscheidungen zur Technologieoptimierung zu treffen. Im Vergleich zu Hardwareprüfständen ist wahre Netzwerkemulation eine weitaus günstigere und flexiblere Lösung.
+Wahre Netzwerkemulation kann von netzwerkbasierten Entwicklern und Testern dazu verwendet werden, eine gewünschte Testumgebung zu emulieren, die Leistung zu bewerten, die Auswirkungen auf Änderung zu prognostizieren oder Entscheidungen zur Technologieoptimierung zu treffen. Im Vergleich zu Hardwareprüfständen ist wahre Netzwerkemulation eine weitaus günstigere und flexiblere Lösung.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Konfigurieren der Netzwerkemulation für die Testeinstellungen
- Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio öffnen und dann die Seite **Daten und Diagnose** auswählen.
+
+Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio öffnen und dann die Seite **Daten und Diagnose** auswählen.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>So konfigurieren Sie die Netzwerkemulation für die Testeinstellungen
 

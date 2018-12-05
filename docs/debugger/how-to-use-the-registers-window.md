@@ -1,7 +1,7 @@
 ---
-title: Anzeigen von Registerwerten in Visual Studio-Debugger | Microsoft-Dokumentation
+title: Ansicht Registerwerte in Visual Studio-Debugger | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,35 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257168"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389324"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Anzeigen von Werten zu registrieren und verwenden Sie das Fenster "Register" in Visual Studio Debugger (C#, C++, Visual Basic F#)
-Das Fenster Register ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **allgemeine** Kategorie.  
-  
- Die **registriert** im Fenster Register angezeigt. Wenn Sie behalten die **registriert** Fenster geöffnet, denn Sie des Programms durchgehen, sehen Sie registrieren Sie sich Werte ändern, wie Ihr Code ausgeführt wird. Kürzlich geänderte Werte werden rot angezeigt. Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten eines Registerwerts](../debugger/how-to-edit-a-register-value.md).  
-  
- Übersichtlichkeit der **registriert** in Gruppen, die je nach Plattform und Prozessortyp variieren organisiert Fenster Typ. Je nach Bedarf können Sie Gruppen anzeigen oder ausblenden. Weitere Informationen finden Sie unter [Vorgehensweise: anzeigen und Ausblenden von Registergruppen](../debugger/how-to-display-and-hide-register-groups.md).  
-  
- Eine allgemeine Einführung in verbundenen Konzepte und das Fenster "Register", finden Sie unter [Grundlagen des Debuggens: Fenster Register](../debugger/debugging-basics-registers-window.md).  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ansicht Registerwerte in das Fenster "Register" (C#, C++, Visual Basic F#)
+
+Die **registriert** Fenster zeigt Registerinhalt während des Debuggens von Visual Studio. Eine allgemeine Einführung in Konzepte hinter Register und die **registriert** Fenster finden Sie unter [Grundlagen des Debuggens: Fenster "Register"](../debugger/debugging-basics-registers-window.md).
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-the-registers-window"></a>So öffnen Sie das Fenster "Register"  
-  
--   Auf der **Debuggen** Menü wählen **Windows**, und wählen Sie dann **registriert** (oder wählen Sie **STRG** + **Alt**   +  **G**).  
-  
-     Der Debugger muss ausgeführt werden oder sich im Unterbrechungsmodus befinden.  
-  
-    > [!NOTE]
-    >  Registerinformationen sind für Skript- und SQL-Anwendungen nicht verfügbar.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Grundlagen des Debuggens: Fenster „Register“](../debugger/debugging-basics-registers-window.md)   
- [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Grundlagen des Debuggens: Fenster "Register"](../debugger/debugging-basics-registers-window.md)
+> Registerinformationen ist nicht für Skriptsprachen oder SQL-apps verfügbar.
+
+Registrieren Sie während des Debuggens geändert werden, während Code in Ihrer app ausgeführt wird. Kürzlich geänderte Werte angezeigt, in Rot der **registriert** Fenster.
+
+Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** nach Gruppen eingeteilt, die sich je nach Plattform und Prozessortyp unterscheiden. Sie können anzeigen oder Ausblenden von Registergruppen. Weitere Informationen finden Sie unter [How to: Display and hide register groups (Vorgehensweise: Anzeigen und Ausblenden von Registergruppen)](../debugger/how-to-display-and-hide-register-groups.md).
+
+Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten eines Registerwerts](../debugger/how-to-edit-a-register-value.md).
+
+**Um das Fenster "Register" zu öffnen.**
+
+1. Aktivieren von debugging auf Adressebene dazu **Debuggen auf Adressebene aktivieren** in **Tools** (oder **Debuggen**) > **Optionen**  >  **Debuggen**.
+
+1. Wählen Sie beim Debuggen ausgeführt werden oder sich an einem Haltepunkt ist, **Debuggen** > **Windows** > **registriert**, oder drücken Sie **Alt** + **5**.
+
+>[!NOTE]
+>Dialogfelder und Menübefehle unterscheiden sich abhängig von der Visual Studio-Edition oder die Einstellungen. Wählen Sie zum Ändern Ihrer Einstellungen **Einstellungen importieren und exportieren** auf der Visual Studio **Tools** Menü. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
+
+### <a name="see-also"></a>Siehe auch
+
+- [Debugging basics: Registers window (Grundlagen des Debuggens: Das Registerfenster)](../debugger/debugging-basics-registers-window.md)
+- [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)

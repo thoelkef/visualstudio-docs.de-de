@@ -12,16 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92685b4ed7f3ea9bfbaaad70d3bb61786bcc82a0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845434"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896665"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen mithilfe des Auslastungstest-Analyzers
 
-Mit dem **Auslastungstest-Analyzer** können Engpässe gesucht, Fehler ermittelt und Verbesserungen in Ihrer App gemessen werden. Analysieren Sie Auslastungstestergebnisse wie folgt:
+Mit dem **Auslastungstest-Analyzer** können Engpässe gesucht, Fehler ermittelt und Verbesserungen in Ihrer App gemessen werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Analysieren Sie Auslastungstestergebnisse wie folgt:
 
 -   Überwachen eines Auslastungstests während der Ausführung
 
@@ -46,6 +50,6 @@ Sie können diese Aufgaben unabhängig davon vornehmen, ob der Auslastungstest i
 |Aufgaben|Verwandte Themen|
 |-|-|
 |**Zugriff auf die Ergebnisse des Auslastungstests:** Wenn Sie einen Auslastungstest im Auslastungstest-Editor ausführen, werden die Auslastungstestergebnisse automatisch geöffnet, und der laufende Test wird im **Auslastungstest-Analyzer** angezeigt.|-   [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Hinzufügen von Analysenotizen zum Auslastungstest:** Sie können dem Auslastungstest Kommentare hinzufügen, wenn Sie die Analyse durchführen. Die Kommentare werden zusammen mit dem Auslastungstestergebnis permanent gespeichert. Die eingegebene Beschreibung wird auch in der Spalte **Beschreibung** für den Auslastungstest im Dialogfeld **Open and Manage Test Results** (Auslastungstestergebnisse öffnen und verwalten) im Auslastungstest-Editor angezeigt.<br /><br /> Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Darüber hinaus werden die Kommentare angezeigt, wenn Sie einen Excel-Bericht für die Auslastungstestergebnisse erstellen.<br /><br /> Weitere Informationen finden Sie unter [Reporting Load Tests Results for Test Comparisons or Trend Analysis (Berichterstellung für Auslastungstestergebnisse für Testvergleiche oder die Trendanalyse)](../test/compare-load-test-results.md).|-   [How to: Add Comments while Analyzing a Completed Load Test (Vorgehensweise: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests)](../test/how-to-add-comments-on-a-completed-load-test.md)|
+|**Hinzufügen von Analysenotizen zum Auslastungstest:** Sie können dem Auslastungstest Kommentare hinzufügen, wenn Sie die Analyse durchführen. Die Kommentare werden zusammen mit dem Auslastungstestergebnis permanent gespeichert. Die eingegebene Beschreibung wird auch in der Spalte **Beschreibung** für den Auslastungstest im Dialogfeld **Open and Manage Test Results** (Auslastungstestergebnisse öffnen und verwalten) im Auslastungstest-Editor angezeigt.<br /><br /> Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Darüber hinaus werden die Kommentare angezeigt, wenn Sie einen Excel-Bericht für die Auslastungstestergebnisse erstellen.<br /><br /> Weitere Informationen finden Sie unter [Reporting Load Tests Results for Test Comparisons or Trend Analysis (Berichterstellung für Auslastungstestergebnisse für Testvergleiche oder die Trendanalyse)](../test/compare-load-test-results.md).||
 |**Analysieren der Ergebnisse des Auslastungstests:** Nach dem Zugriff auf die Daten des Auslastungstestlaufs können die dabei gesammelten Daten analysiert werden. Sie können eine Zusammenfassung des Auslastungstests anzeigen, um einen schnellen Überblick über die Ergebnisse zu erhalten. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt.<br /><br /> Sie können die Zusammenfassung des Auslastungstests ausdrucken. Dies ist hilfreich, wenn Sie Ergebnisse an Projektbeteiligte weitergeben möchten.<br /><br /> Sie können die Details der Auslastungstestergebnisse mithilfe der Diagramme und Tabellen in den Ergebnissen analysieren. Dazu zählen die Tabellen**Errors**, **Pages**, **Requests**, **SQL Trace**, **Tests**, **Thresholds** und **Transactions**.|-   [Load Test Results Summary Overview (Zusammenfassung der Auslastungstestergebnisse – Übersicht)](../test/load-test-results-summary-overview.md)<br />-   [How to: View Web Page Response (Vorgehensweise: Anzeigen der Antwortzeit von Webseiten)](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analyzing Threshold Rule Violations (Analysieren von Verstößen gegen die Schwellenwertregel)](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**Analysieren der Aktivität virtueller Benutzer in den Auslastungstestergebnissen zur Isolierung von Leistungsproblemen:** Mit dem Diagramm für die Aktivitäten virtueller Benutzer können die Aktionen virtueller Benutzer während eines Auslastungstests grafisch dargestellt werden. So können Sie Spitzen in der CPU-Auslastung oder Rückgänge bei den Anforderungen pro Sekunde isolieren und feststellen, welche Tests oder Seiten während der jeweiligen Phasen ausgeführt werden.|-   [Analyzing Virtual User Activity in the Details View (Analysieren der Aktivität virtueller Benutzer in der Detailansicht)](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

@@ -1,7 +1,7 @@
 ---
 title: Angeben von Symbol(PDB)- und Quelldateien im Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257380"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389175"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -49,7 +49,7 @@ Die *PDB* -Datei enthält, Debuggen und projekstatusinformationen, die inkrement
 
 Symboldateien zeigen auch den Speicherort der Quelldateien und optional den Server aus, um daraus abzurufen.
   
-Der Debugger nur lädt *PDB-Datei* Dateien, die genau entsprechen der *PDB-Datei* Dateien erstellt, wenn eine app erstellt wurde (d. h. das Original *PDB-Datei* Dateien oder Kopien). Diese genaue Duplizierung ist erforderlich, da das Layout von apps ändern kann, selbst wenn der Code selbst nicht geändert hat. Weitere Informationen finden Sie unter [Why Visual Studio require Debugger Symbol-Dateien zu genau den Binärdateien bereitgestellt, die mit der sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+Der Debugger nur lädt *PDB-Datei* Dateien, die genau entsprechen der *PDB-Datei* Dateien erstellt, wenn eine app erstellt wurde (d. h. das Original *PDB-Datei* Dateien oder Kopien). Diese genaue Duplizierung ist erforderlich, da das Layout von apps ändern kann, selbst wenn der Code selbst nicht geändert hat. Weitere Informationen finden Sie unter [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (Wieso benötigt Visual Studio Debugsymboldateien, die mit den Binärdateien für die Erstellung exakt übereinstimmen?)](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 > [!TIP]
 > Zum Debuggen von Code außerhalb von Projekt-Quellcode, z. B. Windows-Code oder Drittanbieter-code die projektaufrufe müssen Sie den Speicherort des externen Codes angeben *PDB* (und optional die Quelldateien), die muss genau übereinstimmen. die Builds in Ihrer app. 
@@ -71,7 +71,7 @@ Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
    
 3. Alle Standorte in den Debuggeroptionen nach Symboldateien angegeben. Zum Hinzufügen und aktivieren die Speicherorte für Symboldateien, finden Sie unter [Orte für Symboldateien konfigurieren, und Laden Sie die Optionen](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-   - Alle lokalen Symbolcache-Cacheordner.  
+   - Ein beliebiger Symbolcacheordner.  
   
    - Netzwerk, Internet oder lokale Symbolserver und Speicherorte, z. B. die Microsoft-Symbolserver angegeben werden, wenn ausgewählt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann Debugsymboldateien von Symbolservern, die implementieren Herunterladen der `symsrv` Protokoll. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) und [Debugging-Tools für Windows](/windows-hardware/drivers/debugger/index) sind zwei Tools, die Symbolserver verwenden können.
       
@@ -139,7 +139,7 @@ Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
   
 Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen** > **Debuggen** > **Allgemein** (oder **Debuggen** > **Optionen** > **allgemeine**):  
 
-- **DLL-Exporte laden (nur systemeigen)**  
+- **DLL-Exporte laden (nur native)**  
   
   C/C++-export Tabellen geladen. Weitere Informationen finden Sie unter [DLL-Exporttabellen](#use-dumpbin-exports). Lesen von DLL-Exportinformationen umfasst ein gewisser Overhead –, damit das Laden von Exporttabellen in der Standardeinstellung deaktiviert ist. Sie können auch `dumpbin /exports` in einer C/C++-Build-Befehlszeile.  
   
@@ -156,7 +156,7 @@ Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen**
   Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Jeder Versuch zum Ausführen eines Befehls, die nicht in der *srcsvr.ini* Datei bewirkt, dass ein Bestätigungsdialogfeld angezeigt werden. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.  
   
@@ -176,13 +176,13 @@ Wenn Sie ein Projekt erstellen, aus der Visual Studio-IDE mit dem Standard **Deb
   
   Wenn Sie die C/C++-Anwendung mithilfe einer Makefile erstellen, und Sie geben **"/ Zi"** oder **"/ Zi"** ohne **/FD**, erstellt der Compiler zwei *PDB*Dateien:  
   
-  - *VC\<x > pdb*, wobei  *\<x >* steht für die Version von Visual C++, z. B. *VC11.pdb* 
+  - *VC\<x.pdb*, wobei *\<x>* die Visual C++-Version darstellt, beispielsweise *VC11.pdb*. 
     
-    Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >*, die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügte Informationen Typinformationen enthält, jedoch keine Symbolinformationen, wie Funktionsdefinitionen.  
+    Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >*, die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.  
   
   - *\<Projekt > PDB-Datei* 
     
-    Die  *\<Projekt > pdb* Datei werden alle Debuginformationen für des Projekts des *.exe* Datei, und befindet sich in der *\debug* Unterverzeichnis. Die  *\<Projekt > pdb* -Datei enthält Debuginformationen, einschließlich der Funktionsprototypen nicht nur die Typinformationen finden Sie in *VC\<x > pdb*. 
+    Die  *\<Projekt > pdb* Datei werden alle Debuginformationen für des Projekts des *.exe* Datei, und befindet sich in der *\debug* Unterverzeichnis. Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. 
   
   Sowohl die *VC\<x > pdb* und  *\<Projekt > pdb* Dateien unterstützen inkrementelle Aktualisierungen. Der Linker bettet den Pfad zu der *PDB-Datei* Dateien in die *.exe* oder *DLL* Datei, die sie erstellt.  
   
@@ -194,7 +194,7 @@ Wenn Sie ein Projekt erstellen, aus der Visual Studio-IDE mit dem Standard **Deb
   
 ### <a name="net-framework-options"></a>.NET Framework-Optionen 
   
-Erstellen Sie mit **/debug** zum Erstellen einer *PDB* Datei. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Erstellen von Builds mit **/Debug: pdbonly** generiert *PDB* -Dateien, nicht jedoch die `DebuggableAttribute` zeigt dem JIT-Compiler, dass Debuginformationen verfügbar sind. Verwendung **/Debug: pdbonly** , wenn Sie generieren möchten *PDB* für eine Freigabe erstellen, dass Sie nicht, debugfähig sein soll möchten. Weitere Informationen finden Sie unter [/Debug (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder ["/ Debug" (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Erstellen Sie mit **/debug** zum Erstellen einer *PDB* Datei. Sie können Anwendungsentwicklung mit **/debug:full** oder **/debug:pdbonly**erstellen. Beim Erstellen mit **/debug:full** wird debugfähiger Code generiert. Beim Erstellen mit **/debug:pdbonly** werden *PDB*-Dateien generiert, nicht jedoch das `DebuggableAttribute`-Attribut, das den JIT-Compiler darüber informiert, dass die Debuginformationen verfügbar sind. Verwenden Sie **/debug:pdbonly**, wenn Sie *PDB*-Dateien für einen Releasebuild generieren möchten, der nicht debugfähig sein soll. Weitere Informationen finden Sie unter [/debug (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) oder [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
 ### <a name="web-applications"></a>Webanwendungen  
   
@@ -214,7 +214,7 @@ Während des Debuggens die **Module** Fenster zeigt die Codemodule, die der Debu
 1. In der **Module** Fenster mit der rechten Maustaste die **Symbolstatus** oder **Symboldatei** Header oder jedes Modul. 
 1. Wählen Sie im Kontextmenü eine der folgenden Optionen aus:  
   
-|Option|Beschreibung|  
+|Option|Beschreibung |  
 |------------|-----------------|  
 |**Symbole laden**|Wird für Module mit wurde übersprungen, wurde nicht gefunden oder nicht geladenen Symbole angezeigt. Lädt Symbole von den Speicherorten auf dem **Optionen** > **Debuggen** > **Symbole** Seite. Wenn die Symboldatei wurde nicht gefunden oder nicht geladen wird, startet **Datei-Explorer** damit Sie einen neuen zu suchenden Speicherort angeben können.|  
 |**Symbolladeinformationen**|Zeigt den Speicherort einer geladenen Symboldatei oder die Speicherorte, die durchsucht wurden, wenn der Debugger die Datei nicht finden.|  
@@ -265,4 +265,4 @@ Sie können Geben Sie die Speicherorte, die der Debugger nach Quelldateien sucht
 ## <a name="see-also"></a>Siehe auch  
 [Grundlegendes zu Symboldateien und symboleinstellungen für Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET remote Symbol-Laden von Änderungen in Visual Studio 2012 und 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[.NET remote symbol loading changes in Visual Studio 2012 and 2013 (Änderungen am Remoteladen von Symboldateien mit .NET in Visual Studio 2012 und 2013)](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

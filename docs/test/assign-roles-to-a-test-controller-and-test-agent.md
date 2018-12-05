@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370730"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895339"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Zuweisen von Rollen an einen Testcontroller und einen Test-Agent
 
 In dieser exemplarischen Vorgehensweise werden außerdem die Erstellung und Konfiguration einer Testeinstellung veranschaulicht, in der mithilfe eines Testcontrollers und eines Test-Agents Tests auf mehreren Computern verteilt werden, die Visual Studio verwenden. Darüber hinaus wird hier erläutert, wie der Testeinstellung Diagnose- und Datenadapter hinzugefügt werden.
 
-Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:
-
--   Erstellen einer Testeinstellung.
-
--   Zuweisen von Rollen zu einem Testcontroller und Test-Agents.
-
--   Zuweisen der Testeinstellung zu einem Diagnose- und Datenadapter.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 

@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826972"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895755"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests
 
 In einem benutzerdefinierten Plug-In wird Code verwendet, den Sie schreiben und an einen Auslastungs- oder Webleistungstest anfügen. Sie können die Auslastungstest-API und die Webleistungstest-API verwenden, um benutzerdefinierte Plug-Ins für Tests zu erstellen, die auf die integrierte Funktion erweitert werden sollen. Sie können dem Auslastungstest mehrere Plug-Ins hinzufügen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Aufgaben
 
