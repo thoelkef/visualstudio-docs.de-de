@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380165"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894520"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins
 
 Webleistungstest-Plug-Ins ermöglichen Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Mit einem benutzerdefinierten Webleistungstest-Plug-In können Sie bei Ausführung des Webleistungstests einen Teil des Codes aufrufen. Das Webleistungstest-Plug-In wird bei jeder Testiteration einmal ausgeführt. Wenn Sie außerdem die PreRequest-Methode oder PostRequest-Methode im Test-Plug-In überschreiben, werden diese Anforderungs-Plug-Ins jeweils vor bzw. nach den einzelnen Anforderungen ausgeführt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Sie können ein benutzerdefiniertes Webleistungstest-Plug-In erstellen, indem Sie die eigene Klasse von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>-Basisklasse ableiten.
 

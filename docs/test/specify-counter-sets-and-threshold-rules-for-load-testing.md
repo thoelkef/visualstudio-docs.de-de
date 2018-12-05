@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879838"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894507"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
 Auslastungstests stellen benannte Indikatorensätze zur Verfügung, die bei der Analyse von Leistungsindikatordaten von Nutzen sind. Die Indikatorensätze sind nach Technologie organisiert und umfassen "Anwendung", "ASP.NET", ".NET-Anwendung", "IIS" und "SQL". Wenn Sie mit dem **Assistenten für neuen Auslastungstest** einen Auslastungstest erstellen, fügen Sie einen anfänglichen Satz von Indikatoren hinzu. Dadurch erhalten Sie einen Satz vordefinierter wichtiger Indikatorensätze für den Auslastungstest. Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Bei der Verteilung der Auslastungstests auf mehrere Remotecomputer werden Indikatoren für Controller und Agents den Controller- und Agent-Indikatorensätzen zugeordnet. Weitere Informationen zur Verwendung von Remotecomputern im Auslastungstest finden Sie unter [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
@@ -42,7 +44,7 @@ Es ist wichtig, dass Sie die zu testenden Server der Liste von Computern hinzuf�
 |**Verwalten der Indikatorensätze für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie den Indikatorensatz im Auslastungstest-Editor bearbeiten. Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die Leistungsdaten gesammelt werden, und das Zuweisen von Indikatorensätzen, die auf jedem der Computer erfasst werden. Sie können die Indikatoren im Auslastungstest-Editor verwalten.|-   [Vorgehensweise: Verwalten von Indikatorensätzen](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Hinzufügen von Indikatorensätzen zum Auslastungstest**: Wenn Sie einen Auslastungstest mit dem **Assistenten für neuen Auslastungstest** erstellen, fügen Sie einen ersten Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen mithilfe des Auslastungstest-Editors neue Indikatoren hinzufügen.|-   [Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Vorgehensweise: Hinzufügen von benutzerdefinierten Indikatorensätzen](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Angeben einer Schwellenwertregel mithilfe von Indikatoren für den Auslastungstest**: Eine Schwellenwertregel ist eine Regel, die für einen einzelnen Leistungsindikator festgelegt wird, um die Systemressourcenauslastung während eines Auslastungstests zu überwachen. Die Indikatorsatzdefinitionen enthalten vordefinierte Schwellenwertregeln für viele wichtige Leistungsindikatoren. In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwerte entweder mit einem konstanten Wert oder mit einem anderen Leistungsindikatorwert verglichen.|-   [Vorgehensweise: Hinzufügen einer Schwellenwertregel](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Zuweisen von Anzeigenamen für die Computer, denen Indikatorensätze zugeordnet werden**: Sie können Computertags hinzufügen, mit deren Hilfe Sie einem Computer einen leicht erkennbaren Namen zuweisen können. Die Tags werden im Knoten **Indikatorensatzzuordnungen** der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können, z. B. „Webserver1 in Lab2“ oder „SQL Server2 im Phoenix-Büro“.<br /><br /> Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).|-   [Vorgehensweise: Hinzufügen von Computertags zu Indikatorensatzzuordnungen](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Zuweisen von Anzeigenamen für die Computer, denen Indikatorensätze zugeordnet werden**: Sie können Computertags hinzufügen, mit deren Hilfe Sie einem Computer einen leicht erkennbaren Namen zuweisen können. Die Tags werden im Knoten **Indikatorensatzzuordnungen** der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können, z. B. „Webserver1 in Lab2“ oder „SQL Server2 im Phoenix-Büro“.<br /><br /> Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Verwenden von Indikatorensätzen
 
