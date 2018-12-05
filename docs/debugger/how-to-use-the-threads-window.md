@@ -1,8 +1,8 @@
 ---
-title: Debuggen einer Multithreadanwendung
+title: Debuggen einer Multithread-app
 description: Debuggen Sie mithilfe des Fensters Threads und die Symbolleiste Debuggen in Visual Studio
 ms.custom: ''
-ms.date: 05/18/2017
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,246 +19,173 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219886"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389402"
 ---
-# <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung in Visual Studio mithilfe des Fensters Threads
-Visual Studio bietet eine **Threads** Fenster und andere Elemente können Sie das Debuggen von Multithreadanwendungen der Benutzeroberfläche. In diesem Tutorial wird gezeigt, wie mit der **Threads** Fenster und die **Debugspeicherort** Symbolleiste. Weitere Informationen zu den anderen Tools finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). Dieses Tutorial dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen.   
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithread-app mithilfe des Fensters Threads
+
+Einige Benutzeroberflächenelemente von Visual Studio helfen Ihnen beim Debuggen von Multithreadanwendungen. In diesem Artikel wird die Multithread-debugging-Funktionen im Code-Editor-Fenster, **Debugspeicherort** Symbolleiste und **Threads** Fenster. Weitere Informationen zu anderen Tools zum Debuggen von Multithreadanwendungen, finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). 
   
-Um zu Beginn dieses Lernprogramms benötigen Sie ein Multithreadanwendungsprojekt. Befolgen Sie die hier aufgeführten Schritte, um das Projekt zu erstellen.  
+Abschluss dieses Tutorials dauert nur wenige Minuten, und erfahren Sie, wie mit den Grundlagen des Debuggens von Multithreadanwendungen.
+
+## <a name="create-a-multithreaded-app-project"></a>Erstellen Sie ein Multithread-app-Projekt  
+
+Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden: 
   
-#### <a name="to-create-the-multithreaded-app-project"></a>So erstellen Sie die Multithread-app-Projekt  
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.  
+   
+1. In der **neues Projekt** Dialogfeld:
+   - Für eine C# app, und wählen **Visual C#**    >  **Konsolen-App ((.NET Framework)**.  
+   - Wählen Sie für eine C++-app **Visual C++** > **Windows-Konsolenanwendung**.
+   
+1. Benennen Sie die app MyThreadWalkthroughApp ein, und wählen Sie dann **OK**.  
+   
+   Das neue Projekt wird im **Projektmappen-Explorer**, und eine Quelldatei namens *"Program.cs"* oder *MyThreadWalkthroughApp.cpp* wird im Quellcodefenster geöffnet.  
+   
+1. Ersetzen Sie den Code in der Quelldatei mit der C# oder C++-Beispielcode von [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md).  
+   
+1. Wählen Sie **Datei** > **alle speichern**.  
   
-1.  Auf der **Datei** Menü wählen **neu** , und klicken Sie dann auf **Projekt**.  
-  
-     Das Dialogfeld **Neues Projekt** wird angezeigt.  
-  
-2.  In der **Projekttypen** klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#** , oder **Visual C++**.  
-  
-3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.  
-  
-4.  In der **Namen** geben den Namen MyThreadWalkthroughApp ein.  
-  
-5.  Klicken Sie auf **OK**.  
-  
-     Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt. Abhängig von der ausgewählten Programmiersprache hat die Quelldatei die Bezeichnung Module1.vb, Program.cs oder MyThreadWalkthroughApp.cpp.  
-  
-6.  Löschen Sie den Code, der in der Quelldatei angezeigt wird, und Ersetzen Sie ihn durch den Beispielcode, der im Abschnitt "Erstellen eines Threads" des Themas angezeigt wird [Erstellen von Threads und übergeben von Daten zur Startzeit](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time).  
-  
-7.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
-  
-#### <a name="to-begin-the-tutorial"></a>Um das Lernprogramm zu starten.  
-  
--   Suchen Sie in der Quellcode-Editor nach den folgenden Code:  
-  
-    ```VB  
-    Thread.Sleep(3000)   
-    Console.WriteLine()
-    ```  
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
-    Thread::Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-#### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
-  
-1. Klicken Sie im linken Bundsteg des der `Console.WriteLine` Anweisung, um einen neuen Haltepunkt einzufügen.  
-  
-    Im Bundsteg auf der linken Seite von der Quellcode-Editor wird ein roter Kreis. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde.  
-  
-2. Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** (**F5**).  
-  
-    Der Debugvorgang beginnt, die Konsolenanwendung wird gestartet und hält dann am Haltepunkt an.  
-  
-3. Wenn sich der Fokus zu diesem Zeitpunkt im Fenster der Konsolenanwendung befindet, klicken Sie in das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fenster, um den Fokus wieder an [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zurückzugeben.  
-  
-4. Suchen Sie in der Quellcode-Editor nach der Zeile mit den folgenden Code:  
-  
-   ```VB  
-   Thread.Sleep(5000)   
-   ```  
-  
+## <a name="start-debugging"></a>Debugging starten 
+
+1. Suchen Sie die folgenden Zeilen im Quellcode:  
+   
    ```csharp  
-   Thread.Sleep(3000);  
+   Thread.Sleep(3000); 
+   Console.WriteLine();
    ```  
-  
-   ```C++  
-   Thread::Sleep(3000);  
+   
+   ```C++ 
+   Thread::Sleep(3000); 
+   Console.WriteLine(); 
    ```
-  
-#### <a name="to-discover-the-thread-marker"></a>So ermitteln Sie den Threadmarker  
+   
+1. Legen Sie einen Haltepunkt auf der `Console.WriteLine();` Zeile, indem Sie auf im linken Bundsteg, oder Sie die Zeile auswählen und **F9**.  
+   
+   Der Haltepunkt wird als ein roter Kreis im linken Bundsteg neben der Codezeile angezeigt.  
+   
+1. Wählen Sie **Debuggen** > **Debuggen starten**, oder drücken Sie **F5**.  
+   
+   Die app wird im Debugmodus gestartet und die Ausführung am Haltepunkt angehalten wird.  
+   
+1. Öffnen Sie im Unterbrechungsmodus, der **Threads** Fenster durch Auswahl **Debuggen** > **Windows** > **Threads**. Sie muss in einer Debugsitzung zu öffnen, oder finden Sie unter den **Threads** und andere debugging-Fenster. 
+   
+## <a name="examine-thread-markers"></a>Überprüfen Sie die Threadmarker
 
-1.  Klicken Sie in der Debug-Symbolleiste auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker"). 
-  
-2.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.  
-  
-3.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads. In diesem Fall gibt es nur einen Thread, dessen Name wahrscheinlich `<noname>` lautet.  
+1. Suchen Sie im Quellcode an, die `Console.WriteLine();` Zeile. 
+   
+   1. Mit der rechten Maustaste den **Threads** , und wählen **Threads in Quelle anzeigen** ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") aus dem Menü.
+   
+   Im Bundsteg neben den Quellcode Zeile zeigt nun eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "Threadmarker"). Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde. Wenn mehr als einen angehaltenen Thread vorhanden, an der Position ist der ![mehrere Threads](../debugger/media/dbg-multithreaded-show-threads.png "mehrere Threads") Symbol angezeigt wird.
+   
+1. Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt, die die Namen und die Thread-ID-Nummer für die angehaltenen Threads oder Threads angezeigt. Die Threadnamen möglicherweise `<No Name>`.  
 
-    > [!TIP]
-    > Möglicherweise finden Sie es hilfreich, namenlosen Threads zu identifizieren, indem Sie Sie umbenennen. Wählen Sie im Fenster Threads **umbenennen** nach mit der rechten Maustaste auf die **Namen** Spalte in der Zeile Thread.
+   >[!TIP]
+   >Um namenlosen Threads zu ermitteln, können Sie umbenennen, in der **Threads** Fenster. Mit der rechten Maustaste im Threads aus, und wählen Sie **umbenennen**.
   
-4.  Mit der rechten Maustaste in des Thread-Markers, um die verfügbaren Optionen im Kontextmenü anzuzeigen. 
-    
-  
-## <a name="flagging-and-unflagging-threads"></a>Kennzeichnen von Threads und Aufheben der Kennzeichnung  
-Sie können Threads kennzeichnen, die besondere Aufmerksamkeit erhalten sollen. Das Kennzeichnen von Threads ist eine gute Möglichkeit zum Nachverfolgen wichtiger Threads und Threads zu ignorieren, denen Sie nicht interessiert.  
-  
-#### <a name="to-flag-threads"></a>So kennzeichnen Sie Threads   
+1. Mit der rechten Maustaste in des Threadmarker im Quellcode und die verfügbaren Optionen im Kontextmenü anzuzeigen. 
 
-1.  Auf **Ansicht** Startmenü **Symbolleisten**.  
-  
-    Stellen Sie sicher, dass die **Debugspeicherort** Symbolleiste ausgewählt ist.
+## <a name="flag-and-unflag-threads"></a>Kennzeichnen von Threads und Aufheben der Kennzeichnung 
 
-2.  Wechseln Sie zu der **Debugspeicherort** Symbolleiste, und klicken Sie auf die **Thread** Liste.  
-  
-    > [!NOTE]
-    >  Sie können diese Symbolleiste erkennen, drei gut sichtbaren Listen: **Prozess**, **Thread**, und **Stapelrahmen**.  
-  
-3.  Beachten Sie, wie viele Threads in der Liste angezeigt werden.  
-  
-4.  Wechseln Sie zurück zu dem Quellcode-Editor der rechten Maustaste auf den Threadmarker ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") erneut aus.  
-  
-5.  Zeigen Sie im Kontextmenü auf **Flag**, und klicken Sie dann auf den Threadnamen und die ID-Nummer.  
-  
-6.  Wechseln Sie zurück zur **Debugspeicherort** Symbolleiste, und suchen die **nur gekennzeichnete Threads anzeigen** Symbol ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker") auf der rechts von der **Thread** Liste.  
-  
-    Das Symbol "Flags" auf die Schaltfläche war zuvor abgeblendet. Jetzt ist es eine aktive Schaltfläche.  
-  
-7.  Klicken Sie auf die **nur gekennzeichnete Threads anzeigen** Symbol.  
-  
-    Jetzt wird nur der gekennzeichnete Thread in der Liste angezeigt. (Sie können die Schaltfläche einzigen Flag zum Umschalten der zurück zur **alle Threads anzeigen** Modus.)
+Sie können Threads kennzeichnen zum Nachverfolgen Threads besondere Aufmerksamkeit werden sollen. 
 
-8. Öffnen Sie durch Auswahl des Fensters Threads **Debuggen > Windows > Threads**.
+Kennzeichnen und Kennzeichnung von Threads aus dem Quellcode-Editor oder die **Threads** Fenster. Wählen Sie, ob angezeigt wird, nur gekennzeichnete von Threads oder alle Threads aus dem **Debugspeicherort** oder **Threads** Symbolleisten des Toolfensters. Auswahl von einem beliebigen Standort wirken sich auf alle Speicherorte. 
 
-    ![Fenster "Threads"](../debugger/media/dbg-threads-window.png "ThreadsWindow")  
-  
-    In der **Threads** Fenster, der gekennzeichnete Thread hat eine rote Kennzeichnungssymbol zuzuweisen.
+### <a name="flag-and-unflag-threads-in-source-code"></a>Kennzeichnen und Kennzeichnung von Threads im Quellcode 
 
-    > [!TIP]
-    > Wenn Sie einige Threads gekennzeichnet haben, können Sie mit der rechten Maustaste in einer einzige Zeile Code im Code-Editor und wählen Sie **gekennzeichnete Threads bis zum Cursor ausführen** (Stellen Sie sicher, dass Sie auswählen, Code, der alle gekennzeichnete Threads erreicht wird). Dies hält die Threads in der ausgewählten Zeile des Codes, wodurch es einfacher steuern, die Reihenfolge der Ausführung von [sperren und Entsperren von Threads](#bkmk_freeze).
-  
-11. Der Quellcode-Editor mit der Maustaste des Threadmarker erneut aus.  
-  
-     Beachten Sie, welche Auswahlen jetzt im Kontextmenü verfügbar sind. Anstelle von **Flag**, sehen Sie jetzt **Flag**. Klicken Sie nicht auf **Flag**.  
+1. Öffnen der **Debugspeicherort** Symbolleiste dazu **Ansicht** > **Symbolleisten** > **Debugspeicherort**. Sie können auch mit der rechten Maustaste auf der Symbolleiste angezeigt, und wählen Sie **Debugspeicherort**. 
+   
+1. Die **Debugspeicherort** Symbolleiste verfügt über drei Felder: **Prozess**, **Thread**, und **Stapelrahmen**. Öffnen Sie die Dropdownliste der **Thread** aus, und beachten Sie, wie viele Threads vorhanden sind. In der **Thread** Liste der aktuell ausgeführte Thread ist gekennzeichnet durch einen **>** Symbol. 
+   
+1. Klicken Sie im Quellcodefenster zeigen Sie auf eine Thread-Marker-Symbol im Bundsteg angezeigt, und wählen Sie das Flaggensymbol klicken (oder eines der Symbole leere Flag) in einem DataTip. Das Flaggensymbol klicken, wird rot angezeigt. 
+   
+   Sie können auch mit der rechten Maustaste ein Thread-Marker-Symbol, zeigen Sie auf **Flag**, und wählen Sie dann einen Thread so kennzeichnen Sie aus dem Kontextmenü.  
+   
+1. Auf der **Debugspeicherort** -Symbolleiste auf die **nur gekennzeichnete Threads anzeigen** Symbol ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "gekennzeichnete Threads anzeigen"), in der rechts von der **Thread** Feld. Das Symbol ist ausgegraut, es sei denn, ein oder mehrere Threads gekennzeichnet sind.  
+   
+   Nur der gekennzeichnete Thread wird jetzt in der **Thread** Dropdownfeld in der Symbolleiste. Um wieder alle Threads anzuzeigen, wählen Sie die **nur gekennzeichnete Threads anzeigen** Symbol erneut aus.
+   
+   >[!TIP]
+   >Nachdem Sie einige Threads gekennzeichnet haben, können Sie den Cursor in die Code-Editor, mit der rechten Maustaste und wählen Sie platzieren **gekennzeichnete Threads bis zum Cursor ausführen**. Stellen Sie sicher, um auszuwählen, dass Code, der alle gekennzeichnete Threads erreicht wird. **Ausführen von gekennzeichnete Threads bis Cursor** hält Threads in der ausgewählten Zeile des Codes, erleichtert Ihnen die Steuerung die Reihenfolge der Ausführung von [sperren und Entsperren von Threads](#bkmk_freeze).
+   
+1. Um den markierten oder nicht gekennzeichnet Status des aktuell ausgeführten Thread zu wechseln, wählen Sie den einzigen Flag **aktuellen Thread gekennzeichnete Umschaltstatus** Symbolleisten-Schaltfläche, auf der linken Seite von der **nur gekennzeichnete Threads anzeigen** Schaltfläche ". Kennzeichnen den aktuellen Thread eignet sich für die Suche nach den aktuellen Thread, wenn nur gekennzeichnete Threads angezeigt werden. 
+   
+1. Klicken Sie zum Aufheben der Kennzeichnung eines Threads, zeigen Sie auf den Threadmarker im Quellcode, und wählen Sie das rote Kennzeichnungssymbol deaktivieren, oder mit der rechten Maustaste des Threadmarker aus, und wählen Sie **Flag**.  
 
-     Um herauszufinden, wie Sie die Kennzeichnung von Threads, fahren Sie mit der nächsten Prozedur.  
-  
-#### <a name="to-unflag-threads"></a>So heben Sie die Kennzeichnung von Threads auf  
-  
-1.  In der **Threads** Fenster mit der rechten Maustaste in der Zeile, die dem gekennzeichneten Thread entspricht.  
-  
-     Ein Kontextmenü wird angezeigt. Bietet die Optionen **Flag** und **Kennzeichnung aller Threads**.  
-  
-2.  Um den Thread Kennzeichnung aufzuheben, klicken Sie auf **Flag**.  
+### <a name="flag-and-unflag-threads-in-the-threads-window"></a>Kennzeichnen und Kennzeichnung von Threads im Fenster Threads 
 
-    Sehen Sie sich die **Debugspeicherort** Symbolleiste erneut. Die **nur gekennzeichnete Threads anzeigen** Schaltfläche ist wieder abgeblendet. Sie haben die Kennzeichnung des einzigen gekennzeichneten Threads aufgehoben. Da keine gekennzeichneten Threads vorhanden sind, die Symbolleiste ist wieder auf **alle Threads anzeigen** Modus. Klicken Sie auf die **Thread** aus, und stellen Sie sicher, dass Sie alle Threads angezeigt werden.  
-  
-5.  Wechseln Sie zurück zu den **Threads** Fenster, und untersuchen Sie die Informationsspalten.  
-  
-    In der ersten Spalte bemerken Sie eine Gliederung Flaggensymbol in jeder Zeile, der Threadliste angezeigt. (Die Gliederung bedeutet, dass der Thread nicht gekennzeichnet ist.)  
-  
-6.  Klicken Sie auf die Flag Gliederung-Symbole für zwei Threads, die zweite und dritte zwischen dem unteren Rand der Liste. 
+In der **Threads** Fenster gekennzeichneten Threads haben Red Symbole neben dem Namen, bei der nicht gekennzeichnete Threads kennzeichnen, ob angezeigt, die leere Symbole haben.
 
-    Die Kennzeichensymbole werden in der Volltonfarbe Rot und nicht als leere Umrisslinien dargestellt.  
+![Fenster "Threads"](../debugger/media/dbg-threads-window.png "Fenster \"Threads\"")  
   
-7.  Klicken Sie auf die Schaltfläche oben in der Kennzeichenspalte.  
-  
-    Die Reihenfolge der Threadliste wurde geändert, als Sie auf die Schaltfläche geklickt haben. Die Threadliste ist jetzt neu sortiert, und die gekennzeichneten Threads befinden sich am Anfang.  
-  
-8.  Klicken Sie erneut auf die Schaltfläche am Anfang der Kennzeichenspalte.  
-  
-    Die Sortierreihenfolge wurde wieder geändert.  
-  
-## <a name="more-about-the-threads-window"></a>Weitere Informationen zum Threadfenster  
-  
-#### <a name="to-learn-more-about-the-threads-window"></a>Weitere Informationen zum Threadfenster  
-  
-1.  In der **Threads** Fenster, überprüfen Sie die dritte Spalte von links. Die Schaltfläche am Anfang dieser Spalte daneben **ID**.  
-  
-2.  Klicken Sie auf **ID**.  
-  
-     Die Threadliste wird jetzt nach Thread-ID sortiert.  
-  
-3.  Klicken Sie mit der rechten Maustaste auf einen beliebigen Thread in der Liste. Klicken Sie im Kontextmenü auf **Hexadezimale Anzeige**.  
-  
-     Das Format der Thread-IDs wird geändert.  
-  
-4.  Zeigen Sie mit der Maus die **Speicherort** Spalte für einen beliebigen Thread in der Liste.  
-  
-     Nach einer kurzen Verzögerung wird ein DataTip eingeblendet. Er enthält eine teilweise Aufrufliste für den Thread.
+Wählen Sie ein Flaggensymbol der Threadzustand gekennzeichnet oder nicht gekennzeichnet, abhängig von ihrem aktuellen Zustand zu ändern. 
 
-     > [!TIP]
-     > Öffnen Sie für eine grafische Darstellung der Aufruflisten für Threads, die [parallele Stapel](../debugger/using-the-parallel-stacks-window.md) Fenster (Wählen Sie während des Debuggens **Debuggen / Windows / parallele Stapel**).  
-  
-5.  Betrachten Sie die vierte Spalte von links, mit der Bezeichnung **Kategorie**. Die Threads werden in Kategorien klassifiziert.  
-  
-     Der erste in einem Prozess erstellte Thread wird als Hauptthread bezeichnet. Suchen Sie ihn in der Threadliste.  
-  
-6.  Mit der rechten Maustaste in des Hauptthreads, und klicken Sie dann auf **zu Thread wechseln**.  
-  
-     Ein **im Unterbrechungsmodus** Fenster wird angezeigt. Sie werden darüber informiert, dass der Debugger keiner Code derzeit ausgeführt wird, die sie anzeigen kann (da es sich um den Hauptthread ist).   
-  
-7.  Sehen Sie sich die **Aufrufliste** Fenster und die **Debugspeicherort** Symbolleiste.  
-  
-     Den Inhalt der **Aufrufliste** Fenster geändert haben. 
+Sie können auch mit der rechten Maustaste einer Zeile, und wählen Sie **Flag**, **Flag**, oder **Kennzeichnung aller Threads** aus dem Kontextmenü. 
 
-## <a name="bkmk_freeze"></a> Sperren und Entsperren der Threadausführung 
+Die **Threads** Symbolleiste des Fensters verfügt auch über eine **nur gekennzeichnete Threads anzeigen Threads** Schaltfläche, die der eines der zwei Kennzeichnungsymbole-Link ist. Es funktioniert genauso wie die Schaltfläche auf der **Debugspeicherort** Symbolleiste, und eine der Schaltflächen steuert die Anzeige der an beiden Standorten. 
 
-Sie können Einfrieren und reaktivieren (anhalten und fortsetzen) Threads zur Steuerung der Reihenfolge, in denen Threads Arbeiten ausführen. Damit können Sie beheben Parallelitätsprobleme wie Deadlocks und Racebedingungen.
+### <a name="other-threads-window-features"></a>Andere Funktionen des Fensters Threads
+
+In der **Threads** Fenster, wählen Sie die Überschrift einer beliebigen Spalte sortiert Threads nach dieser Spalte. Wählen Sie erneut, um die Sortierreihenfolge umzukehren. Wenn alle Threads angezeigt werden, sortiert die Spalte zur Kennzeichnung Symbol auswählen der Threads ein, nach Status gekennzeichnet oder nicht gekennzeichnet. 
+
+Die zweite Spalte von der **Threads** Fenster (mit keinen Header) ist die **aktuellen Thread** Spalte. In dieser Spalte ein gelber Pfeil kennzeichnet den aktuellen Ausführungspunkt an. 
+
+Die **Speicherort** Spalte wird angezeigt, wobei jeder Thread im Quellcode angezeigt wird. Aktivieren Sie den Erweiterungspfeil neben der **Speicherort** Eintrag oder zeigen Sie auf den Eintrag, um eine teilweise Aufrufliste für diesen Thread anzuzeigen. 
+
+>[!TIP]
+>Verwenden Sie für eine grafische Darstellung der Aufruflisten für Threads, die [parallele Stapel](../debugger/using-the-parallel-stacks-window.md) Fenster. Wählen Sie zum Öffnen im Fensters während des Debuggens **Debuggen**> **Windows** > **parallele Stapel**.  
+
+Zusätzlich zu **Flag**, **Flag**, und **Kennzeichnung aller Threads**, das Rechtsklick-Kontextmenü für **Thread** Fenster Elemente enthält:
+
+- Die **Threads in Quelle anzeigen** Schaltfläche.
+- **Hexadezimale Anzeige**, welche Änderungen an der **Thread-ID**s in der **Threads** Fenster von Dezimal in hexadezimal-Format. 
+- [Zu Thread wechseln](#switch-to-another-thread), die sofort die Ausführung zu diesem Thread wechselt. 
+- **Benennen Sie**, sodass Sie den Threadnamen zu ändern. 
+- [Einfrieren und reaktivieren](#bkmk_freeze) Befehle.
+
+## <a name="bkmk_freeze"></a> Einfrieren Sie und reaktivieren Sie die Ausführung des Threads 
+
+Sie Einfrieren und reaktivieren, oder anhalten und fortsetzen, Threads zu steuern, die Reihenfolge, in dem die Threads Arbeit ausführen. Sperren und Entsperren von Threads können Sie beheben von Parallelitätsproblemen wie Deadlocks und Racebedingungen.
 
 > [!TIP]
-> Wenn Sie verwenden möchten, führen einen einzelnen Thread ohne Sperren anderer Threads (auch einen häufig Debuggen Szenario), finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
+> Um folgen zu einen einzelnen Thread ohne andere Threads Einfrieren ist ein häufiges Szenario für Debuggen, finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>So sperren und entsperren Sie Threads  
+**So fixieren Sie Threads und heben die Fixierung auf:**  
   
-1.  In der **Threads** mit der rechten Maustaste auf einen beliebigen Thread, und klicken Sie dann auf **fixieren**.  
+1. In der **Threads** mit der rechten Maustaste auf einen beliebigen Thread, und wählen Sie dann **fixieren**. Ein **anhalten** Symbol in der **aktuellen Thread** Spalte gibt an, dass der Thread gesperrt ist.  
+   
+1. Wählen Sie **Spalten** in die **Threads** Symbolleiste des Fensters, und wählen Sie dann **angehaltene Anzahl** zum Anzeigen der **angehaltene Anzahl** Spalte. Der Unterbrechungszähler-Wert für den gesperrten Thread ist **1**.  
+   
+1. Mit der rechten Maustaste in des gesperrten Threads, und wählen Sie **reaktivieren**.  
   
-2.  Sehen Sie sich die zweite Spalte (der aktuelle Thread-Spalte). Das Symbol "Anhalten" wird nun hier angezeigt. Diese Pausensymbol gibt an, dass der Thread gesperrt ist.  
+   Die **anhalten** Symbol wird ausgeblendet, und die **angehaltene Anzahl** Wert ändert sich in **0**. 
   
-3.  Anzeigen der **angehaltene Anzahl** Spalte dazu in der **Spalten** Liste.
+## <a name="switch-to-another-thread"></a>Wechseln Sie zu einem anderen thread 
 
-    Der Unterbrechungszähler für den Thread lautet jetzt 1.  
+Möglicherweise eine **der Anwendung befindet sich im Unterbrechungsmodus** Fenster, wenn Sie versuchen, wechseln Sie zu einem anderen Thread. In diesem Fenster Aufschluss darüber, dass der Thread keiner Code, der der aktuelle Debugger angezeigt werden kann. Angenommen, Sie verwalteten Code Debuggen, aber der Thread ist systemeigener Code. Das Fenster bietet Vorschläge zur Behebung des Problems. 
   
-4.  Mit der rechten Maustaste in des gesperrten Threads, und klicken Sie dann auf **reaktivieren**.  
-  
-     Die Spalte mit dem aktuellen Thread und die **angehaltene Anzahl** ändert sich die Spalte. 
-  
-## <a name="switching-the-to-another-thread"></a>Wechseln der zu einem anderen Thread 
-  
-#### <a name="to-switch-threads"></a>So wechseln Sie zwischen Threads  
-  
-1.  In der **Threads** Fenster, überprüfen Sie die zweite Spalte von links (der aktuelle Thread-Spalte). Die Schaltfläche am Anfang dieser Spalte weist keinen Text bzw. kein Symbol auf.
-  
-2.  Sehen Sie sich die Spalte mit dem aktuellen Thread, und beachten Sie, dass ein Thread einen gelben Pfeil verfügt. Der gelbe Pfeil gibt an, dass dieser Thread der aktuelle Thread befindet (Dies ist die aktuelle Position des Zeigers Ausführung).
-  
-    Notieren Sie sich die Thread-ID-Nummer, in dem der aktuelle Thread-Symbol angezeigt. Verschieben Sie das Symbol für den aktuellen Thread zu einem anderen Thread, aber Sie müssen dies ein potenzielles zurück, wenn Sie fertig sind. 
-  
-3.  Mit der rechten Maustaste in einem anderen Thread aus, und klicken Sie dann auf **zu Thread wechseln**.  
-  
-4.  Sehen Sie sich die **Aufrufliste** Fenster in der Quellcode-Editor. Der Inhalt hat sich geändert.  
-  
-5.  Sehen Sie sich die **Debugspeicherort** Symbolleiste. Symbol für den aktuellen Thread wurde, zu geändert.  
-  
-6.  Wechseln Sie zu der **Debugspeicherort** Symbolleiste. Wählen Sie einen anderen Thread aus dem **Thread** Liste.  
-  
-7.  Sehen Sie sich die **Threads** Fenster. Symbol für den aktuellen Thread wurde geändert.  
-  
-8. Klicken Sie in der Quellcode-Editor einen Threadmarker. Zeigen Sie im Kontextmenü auf **zu Thread wechseln** , und klicken Sie auf einen Threadnamen/eine Thread-ID.  
-  
-     Sie haben nun gesehen, drei Möglichkeiten, ändern das Symbol für den aktuellen Thread zu einem anderen Thread: Verwenden der **Threads** Fenster die **Thread** Liste der **Debugspeicherort** Symbolleiste und die Threadmarker in der Quellcode-Editor.  
-  
-     Mit den Threadmarker können Sie nur zu Threads wechseln, die an einer bestimmten Position beendet wurden. Mithilfe der **Threads** Fenster und **Debugspeicherort** -Symbolleiste, die Sie an einen beliebigen Thread wechseln können.   
+**Wechseln Sie zu einem anderen Thread:**
+
+1. In der **Threads** Fenster, notieren Sie die aktuellen Thread-ID, dies ist der Thread mit einem gelben Pfeil in der **aktuellen Thread** Spalte. Sie sollten so wechseln Sie an diesen Thread aus, um Ihre app den Vorgang fortzusetzen. 
+   
+1. Mit der rechten Maustaste in eines anderen Threads aus, und wählen Sie **Switch zum Thread** aus dem Kontextmenü.  
+   
+1. Beachten Sie, dass der gelbe Pfeil-Speicherort im geändert hat die **Threads** Fenster. Der ursprünglichen und aktuellen Threadmarker hat, auch als Gliederung bleibt. 
+   
+   Sehen Sie sich die QuickInfo auf den Threadmarker im Quellen-Editor für Code und die Liste in der **Thread** Dropdownliste auf der **Debugspeicherort** Symbolleiste. Beachten Sie, dass der aktuelle Thread auch es geändert wurde. 
+   
+1. Auf der **Debugspeicherort** Symbolleiste wählen Sie einen anderen Thread aus dem **Thread** Liste. Beachten Sie, dass der aktuelle Thread auch in den anderen beiden Speicherorten geändert wird. 
+   
+1. Der Quellcode-Editor, mit der Maustaste eines Threadmarker, zeigen Sie auf **Switch zum Thread**, und wählen Sie einen anderen Thread aus der Liste. Beachten Sie, dass der aktuelle Thread in allen drei Speicherorten geändert.  
+   
+Mit den Threadmarker in den Quellcode einfügen können Sie nur zu Threads wechseln, die an dieser Stelle beendet wurden. Über das **Threadfenster** und die Symbolleiste **Debugspeicherort** können Sie zu jedem beliebigen Thread wechseln.   
+
+Sie haben nun die Grundlagen des Debuggens von Multithreadanwendungen kennengelernt. Sie können beobachten, flag und Aufheben der Kennzeichnung, und Einfrieren und Threads reaktivieren, mit der **Threads** Fenster die **Thread** Liste der **Debugspeicherort** Symbolleiste oder Threadmarker in der Quellcode-Editor.
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Debug multithreaded applications (Debuggen von Multithreadanwendungen)](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)

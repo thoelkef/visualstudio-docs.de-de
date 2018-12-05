@@ -10,36 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830053"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388107"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Gewusst wie: veröffentlichen eine WPF-Anwendung mit aktivierten visuellen Stilen
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Designs
 Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Grundlage des vom Benutzer ausgewählten Designs geändert werden. Standardmäßig werden keine visuellen Stile für WPF-Anwendungen (Windows Presentation Foundation) aktiviert. Daher müssen Sie sie manuell aktivieren. Allerdings tritt bei der Veröffentlichung der Projektmappe ein Fehler auf, wenn visuelle Stile für eine WPF-Anwendung aktiviert sind. In diesem Thema wird beschrieben, wie dieser Fehler zu beheben ist und wie eine WPF-Anwendung mit aktivierten visuellen Stilen veröffentlicht werden kann. Weitere Informationen zu visuellen Stilen finden Sie unter [Übersicht über die visuelle Stile](/windows/desktop/Controls/visual-styles-overview). Weitere Informationen zur Fehlermeldung finden Sie unter [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Um den Fehler zu beheben und die Projektmappe zu veröffentlichen, müssen Sie die folgenden Aufgaben ausführen:  
   
-- [Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile](#publish-the-solution-without-visual-styles-enabled).  
+- [Veröffentlichen der Projektmappe ohne aktivierten visuellen Designs](#publish-the-solution-without-visual-styles-enabled)  
   
-- [Erstellen Sie eine Manifestdatei](#create-a-manifest-file).  
+- [Erstellen einer Manifestdatei](#create-a-manifest-file)  
   
-- [Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+- [Einbetten der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution)  
   
-- [Die Anwendungs- und Bereitstellungsmanifeste zu signieren](#sign-the-application-and-deployment-manifests).  
+- [Signieren der Anwendungs- und Bereitstellungsmanifeste](#sign-the-application-and-deployment-manifests)  
   
   Anschließend können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem Endbenutzer die Anwendung installieren sollen.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>So veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile  
   
-1.  Stellen Sie sicher, dass visuelle Stile für das Projekt nicht aktiviert sind. Überprüfen Sie zunächst die manifest-Datei des Projekts für die folgenden XML-Code. Wenn der XML-Code vorhanden ist, schließen Sie ihn in ein Kommentartag ein.  
+1.  Stellen Sie sicher, dass visuelle Stile für das Projekt nicht aktiviert sind. Überprüfen Sie zunächst die Manifestdatei des Projekts auf folgenden XML-Code. Wenn der XML-Code vorhanden ist, schließen Sie ihn in ein Kommentartag ein.  
   
      Visuelle Stile sind standardmäßig nicht aktiviert.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Die folgenden Prozeduren zeigen, wie die Manifestdatei geöffnet wird, die Ihrem Projekt zugeordnet ist.  
@@ -50,9 +54,9 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.  
   
-    2.  Auf der **Anwendung** Registerkarte **Windows-Anzeigeeinstellungen**.  
+    2.  Klicken Sie in der Registerkarte **Anwendung** auf **Windows-Einstellungen anzeigen**.  
   
-         Die Datei "app.manifest" wird geöffnet, der **Code-Editor**.  
+         Die Datei „app.manifest“ wird im **Code-Editor** geöffnet.  
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>So öffnen Sie die Manifestdatei in einem C#-Projekt  
   
@@ -60,12 +64,12 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.  
   
-    2.  Auf der **Anwendung** Registerkarte, notieren Sie sich mit dem Namen, der im manifestfeld angezeigt wird. Dies ist der Name des Manifests, das dem Projekt zugeordnet ist.  
+    2.  Beachten Sie auf der Registerkarte **Anwendung** den Namen, der im Manifestfeld angezeigt wird. Dies ist der Name des Manifests, das dem Projekt zugeordnet ist.  
   
         > [!NOTE]
-        >  Wenn **Manifest mit Standardeinstellungen einbetten** oder **Anwendung ohne Manifest erstellen** angezeigt im manifestfeld, visuelle Stile nicht aktiviert sind. Wenn der Name einer Manifestdatei im Manifestfeld angezeigt wird, wechseln Sie zum nächsten Schritt in diesem Verfahren.  
+        >  Wenn **Manifest mit Standardeinstellungen einbetten** oder **Anwendung ohne Manifest erstellen** im Manifestfeld angezeigt wird, werden visuelle Designs nicht aktiviert. Wenn der Name einer Manifestdatei im Manifestfeld angezeigt wird, wechseln Sie zum nächsten Schritt in diesem Verfahren.  
   
-    3.  In **Projektmappen-Explorer**, wählen Sie **alle Dateien anzeigen**.  
+    3.  Klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.  
   
          Mit dieser Schaltfläche werden alle Projektelemente angezeigt, einschließlich der ausgeschlossen und derjenigen, die normalerweise ausgeblendet werden. Die Manifestdatei erscheint als Projektelement.  
   
@@ -78,30 +82,41 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
      Dieser XML-Code beschreibt die Assembly, die Steuerelemente enthält, die visuelle Stile unterstützen.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
-2.  Klicken Sie im Editor, **Datei**, und klicken Sie dann auf **speichern**.  
+2.  Klicken Sie im Editor auf **Datei**, und klicken Sie dann auf **Speichern unter...**  
   
-3.  In der **speichern** Dialogfeld die **Dateityp** Dropdown-Liste **alle Dateien**.  
+3.  Klicken Sie im Dialogfeld **Speichern unter** auf die Dropdownliste **Dateityp**, und wählen Sie **Alle Dateien** aus.  
   
-4.  In der **Dateiname** Feld, nennen Sie die Datei aus, und fügen Sie *". manifest"* bis zum Ende des Dateinamens. Zum Beispiel: *"Themes.manifest"*.  
+4.  Geben Sie im Feld **Dateiname** einen Namen für die Datei ein, und fügen Sie dem Ende des Namens *.manifest* an. Beispiel: *themes.manifest*.  
   
-5.  Wählen Sie die **Ordner durchsuchen** , wählen Sie einen Ordner, und klicken Sie dann auf **speichern**.  
+5.  Klicken Sie auf die Schaltfläche **Ordner durchsuchen**, wählen Sie einen beliebigen Ordner aus, und klicken Sie dann auf **Speichern**.  
   
     > [!NOTE]
-    >  Die verbleibenden Verfahren wird davon ausgegangen, dass der Name dieser Datei *"Themes.manifest"* und, die die Datei wird gespeichert, um die *C:\temp* Verzeichnis auf Ihrem Computer.  
+    >  Im verbleibenden Verfahren wird davon ausgegangen, dass der Name dieser Datei *themes.manifest* ist und auf dem Computer im Verzeichnis *C:\temp* gespeichert wird.  
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>So fügen Sie die Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe ein  
   
-1. Öffnen der **Visual Studio-Eingabeaufforderung**.  
+1. Öffnen Sie die **Visual Studio-Eingabeaufforderung**.  
   
     Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung**, finden Sie unter [eingabeaufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
    > [!NOTE]
    >  In den verbleibenden Schritten werden die folgenden Annahmen über die Projektmappe gemacht:  
    > 
-   > - Der Name der Lösung ist **"mywpfproject"**.  
+   > - Der Name der Projektmappe ist **MyWPFProject**.  
    >   -   Die Projektmappe befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
    > 
    >   Die Lösung wird im folgenden Verzeichnis veröffentlicht: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
@@ -163,7 +178,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
 ## <a name="see-also"></a>Siehe auch
 
--[Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Troubleshooting Specific Errors in ClickOnce Deployments (Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen)](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Übersicht über die visuelle Stile](/windows/desktop/Controls/visual-styles-overview)
-- [Aktivieren von visuellen Stilen](/windows/desktop/Controls/cookbook-overview)
+- [Enabling Visual Styles (Aktivieren von visuellen Designs)](/windows/desktop/Controls/cookbook-overview)
 - [Eingabeaufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs)

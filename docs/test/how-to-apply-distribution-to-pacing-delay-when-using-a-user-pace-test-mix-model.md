@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204075"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896190"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit
 
 Nachdem Sie den Auslastungstest mithilfe des **Auslastungstest-Assistenten** erstellt haben, können Sie die Szenarioeigenschaften mit dem Auslastungstest-Editor entsprechend Ihren Testanforderungen und -zielen ändern.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** wird mit dem **Eigenschaftenfenster** festgelegt. Eigenschaften für Auslastungstestszenarien werden mit dem Auslastungstest-Editor geändert.
 

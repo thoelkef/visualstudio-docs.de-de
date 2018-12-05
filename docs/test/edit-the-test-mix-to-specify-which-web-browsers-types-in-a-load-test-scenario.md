@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176761"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896470"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario
 
 Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario realistischer simuliert werden. Die Auslastung wird dabei nicht durch einen einzelnen Webbrowser, sondern durch eine heterogene Webbrowsermischung erzeugt. Dies ergibt eine bessere Annäherung an die Auslastung durch die Webbrowser, die im Normalfall mit Ihren Anwendungen verwendet werden.
 
- Ein Browsermix legt die Wahrscheinlichkeit fest, mit der ein virtueller Benutzer einen bestimmten Webbrowsertyp in einem Auslastungstestszenario verwendet. Beim Erstellen eines Auslastungstests möchten Sie ggf. simulieren, dass die Auslastung durch verschiedene Webbrowser generiert wird. Wenn Sie der Mischung einen Webbrowsertyp aus den verfügbaren Webbrowsern hinzufügen, wird allen HTTP-Anforderungen, die von einem Webleistungstest gesendet werden, ein diesem Webbrowser zugeordneter Satz an Headern hinzugefügt.
+Ein Browsermix legt die Wahrscheinlichkeit fest, mit der ein virtueller Benutzer einen bestimmten Webbrowsertyp in einem Auslastungstestszenario verwendet. Beim Erstellen eines Auslastungstests möchten Sie ggf. simulieren, dass die Auslastung durch verschiedene Webbrowser generiert wird. Wenn Sie der Mischung einen Webbrowsertyp aus den verfügbaren Webbrowsern hinzufügen, wird allen HTTP-Anforderungen, die von einem Webleistungstest gesendet werden, ein diesem Webbrowser zugeordneter Satz an Headern hinzugefügt.
 
- Der Browsermix funktioniert wie andere Mischoptionen. Einem virtuellen Benutzer wird auf Grundlage des Browsermix zufällig ein Webbrowsertyp zugeordnet. Die Tests dieses Benutzers werden auf einem bestimmten Webbrowser ausgeführt, basierend auf der Wahrscheinlichkeit, die in der Mischung angegeben wurde.
+Der Browsermix funktioniert wie andere Mischoptionen. Einem virtuellen Benutzer wird auf Grundlage des Browsermix zufällig ein Webbrowsertyp zugeordnet. Die Tests dieses Benutzers werden auf einem bestimmten Webbrowser ausgeführt, basierend auf der Wahrscheinlichkeit, die in der Mischung angegeben wurde.
 
- Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung des Browsermixes geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
+Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung des Browsermixes geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Hinzufügen neuer Browser zu einem Szenario
 

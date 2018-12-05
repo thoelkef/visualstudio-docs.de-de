@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
+title: Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822071"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305610"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
 Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer einfachen "Forms over Data"-Anwendung in Visual Studio. Die app verwendet SQL Server LocalDB, die Northwind-Datenbank, Entity Framework 6 und Windows Presentation Foundation. Es zeigt, wie Sie einfache Datenbindung mit einer Master / Detail-Ansicht, und sie hat auch eine benutzerdefinierte Bindung Navigator mit Schaltflächen für die **nächste verschieben**, **vorherige verschieben**, **abans**, **Ans Ende**, **Update** und **löschen**.
 
@@ -46,7 +46,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 
-1.  Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt** und erstellen Sie eine neue C#-WPF-Anwendung.
+1.  Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt** und erstellen Sie ein neues C# WPF-Anwendung.
 
 2.  Als Nächstes fügen Sie das NuGet-Paket für Entity Framework 6 hinzu. In **Projektmappen-Explorer**, wählen Sie den Projektknoten aus. Wählen Sie im Hauptmenü **Projekt** > **NuGet-Pakete verwalten**.
 
@@ -60,11 +60,11 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie im linken Bereich unter dem C#-Knoten **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
+1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Klicken Sie im linken Bereich unter der C# Knoten, wählen Sie **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
 
    ![Entity Framework Model Elemente bei neuen Projekten](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Rufen Sie das Modell `Northwind_model` , und wählen Sie **OK**. Die **Entity Data Model-Assistenten** wird geöffnet. Wählen Sie **EF Designer aus Datenbank** , und klicken Sie dann auf **Weiter**.
+2. Rufen Sie das Modell `Northwind_model` , und wählen Sie **OK**. Der **Assistent für Entity Data Model** wird geöffnet. Wählen Sie **EF Designer aus Datenbank** , und klicken Sie dann auf **Weiter**.
 
    ![EF-Modell aus der Datenbank](../data-tools/media/raddata-ef-model-from-database.png)
 
@@ -74,7 +74,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind plain old C#-Klassen und sind wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
+5. Der Assistent generiert die C# Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind einfache alte C# Klassen und sie werden wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
 
       ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 

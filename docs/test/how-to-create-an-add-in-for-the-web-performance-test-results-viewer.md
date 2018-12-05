@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949310"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896061"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer
 
@@ -28,7 +28,9 @@ Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer**
 
 Darüber hinaus müssen Sie einen Verweis auf die LoadTestPackage-DLL hinzufügen, die sich im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* befindet.
 
--   Erstellen Sie zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** erforderlichen Klassen implementiert werden.
+Erstellen Sie zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** erforderlichen Klassen implementiert werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Erstellen oder Öffnen einer Projektmappe, die eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt enthält
 

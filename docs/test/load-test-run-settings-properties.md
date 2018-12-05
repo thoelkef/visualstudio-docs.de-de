@@ -1,5 +1,5 @@
 ---
-title: Laufzeiteinstellungen für Auslastungstests in Visual Studio
+title: Laden von Laufzeiteinstellungen
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817386"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895495"
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
 Mit den Laufzeiteinstellungen eines Auslastungstests wird eine Vielzahl anderer Einstellungen festgelegt, einschließlich der Dauer des Tests, der Detailstufe der Ergebniserfassung und der während des Testlaufs erfassten Indikatorensätze. Sie können für jeden Auslastungstest mehrere Laufzeiteinstellungen erstellen und speichern. Anschließend können Sie eine bestimmte Einstellung auswählen, die beim Ausführen des Tests verwendet werden soll. Eine Ausgangseinstellung für Testläufe wird beim Erstellen des Auslastungstests mit dem **neuen Auslastungstest-Assistenten** zum Auslastungstest hinzugefügt.
 
- In den folgenden Tabellen werden die verschiedenen Eigenschaften für Auslastungslaufzeiteinstellungen beschrieben. Sie können diese Eigenschaften ändern, um bestimmte Auslastungstestanforderungen zu erfüllen.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md).
+In den folgenden Tabellen werden die verschiedenen Eigenschaften für Auslastungslaufzeiteinstellungen beschrieben. Sie können diese Eigenschaften ändern, um bestimmte Auslastungstestanforderungen zu erfüllen.
+
+Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Allgemeine Eigenschaften
 
@@ -42,7 +44,7 @@ Mit den Laufzeiteinstellungen eines Auslastungstests wird eine Vielzahl anderer 
 |Eigenschaft|Definition|
 |-|----------------|
 |**Maximale Testprotokolle**|Gibt die maximale Anzahl von Testprotokollen an, die für den Auslastungstest gespeichert werden sollen. Wenn der für die maximale Anzahl von Testprotokollen eingegebene Wert erreicht wird, wird das Sammeln von Protokollen durch den Auslastungstest beendet. Daher werden die Protokolle am Anfang des Tests gesammelt, und nicht am Ende. Der Auslastungstest wird weiterhin ausgeführt, bis er abgeschlossen ist.|
-|**Protokollhäufigkeit für abgeschlossene Tests speichern**|Gibt die Häufigkeit an, mit der das Testprotokoll geschrieben wird. Die Zahl gibt an, dass von jeder eingegebenen Anzahl von Tests jeweils ein Test im Testprotokoll gespeichert wird. Durch Eingabe des Werts zehn wird z. B. angegeben, dass der zehnte, zwanzigste und dreißigste Test in das Testprotokoll geschrieben wird. Wenn Sie den Wert auf "0" festlegen, werden keine Testprotokolle gespeichert.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Speicherungshäufigkeit von Testprotokollen](../test/how-to-specify-how-frequently-test-logs-are-saved.md).|
+|**Protokollhäufigkeit für abgeschlossene Tests speichern**|Gibt die Häufigkeit an, mit der das Testprotokoll geschrieben wird. Die Zahl gibt an, dass von jeder eingegebenen Anzahl von Tests jeweils ein Test im Testprotokoll gespeichert wird. Durch Eingabe des Werts zehn wird z. B. angegeben, dass der zehnte, zwanzigste und dreißigste Test in das Testprotokoll geschrieben wird. Wenn Sie den Wert auf "0" festlegen, werden keine Testprotokolle gespeichert.|
 |**Protokoll bei Testfehler speichern**|Ein boolescher Wert, der bestimmt, ob Testprotokolle gespeichert werden, wenn ein Test in einem Auslastungstest fehlschlägt. Die Standardeinstellung ist `True`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md).|
 
  Weitere Informationen finden Sie unter [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md).

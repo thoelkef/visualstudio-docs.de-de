@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381015"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895378"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält
 
 In dieser exemplarischen Vorgehensweise erstellen Sie einen Auslastungstest, der Komponententests enthält.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Erstellen und Ausführen eines Auslastungstests mithilfe von Visual Studio Enterprise. Ein Auslastungstest ist ein Container für Webleistungs- und Komponententests. Auslastungstests werden mit dem **neuen Auslastungstest-Assistenten** erstellt.
 

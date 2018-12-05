@@ -1,5 +1,5 @@
 ---
-title: Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen in Visual Studio
+title: Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865348"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895209"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen
 
@@ -32,6 +32,8 @@ Sie können *Testeinstellungen* in Visual Studio verwenden, um zusätzliche Date
 -   Sammeln von IntelliTrace-Daten, um bei der Isolierung nicht reproduzierbarer Fehler zu helfen
 
 Adapter für diagnostische Daten können auch verwendet werden, um das Verhalten eines Testcomputers zu ändern. So können Sie beispielsweise mit einer Testeinstellung in Visual Studio verschiedene Engpässe in der Netzwerktopologie emulieren, um die Leistung der Anwendung Ihres Teams auszuwerten.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Verwenden von Testeinstellungen mit Visual Studio
 

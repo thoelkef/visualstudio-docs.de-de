@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950016"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895456"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Verwalten von Auslastungstestergebnissen im Repository für Auslastungstestergebnisse
 
 Informationen, die während eines Auslastungstests erfasst wurden, können im *Ergebnisrepository für Auslastungstests*, einer SQL-Datenbank, gespeichert werden. Das Ergebnisrepository für Auslastungstests enthält Leistungsindikatordaten und Informationen zu aufgezeichneten Fehlern. Die Ergebnisrepository-Datenbank wird für Controller vom Setup erstellt, oder sie wird bei der ersten lokalen Ausführung eines Auslastungstests automatisch erstellt. Wenn das Auslastungstestschema nicht vorhanden ist, wird die Datenbank bei lokaler Ausführung automatisch erstellt.
 
- Wenn Sie die Verbindungszeichenfolge für Ergebnisrepositorys des Controllers ändern, um einen anderen Server zu verwenden, muss auf dem neuen Server das *loadtestresultsrepository.sql*-Skript ausgeführt werden, damit das Schema erstellt werden kann.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise stellt Indikatorensätze mit Namen zur Verfügung, die häufige Leistungsindikatoren erfassen, deren Grundlage eine bestimmte Technologie ist. Diese Sätze sind bei der Analyse von IIS-Servern, ASP.NET-Servern oder SQL-Servern hilfreich. Alle mit Indikatorensätzen erfassten Daten werden im Ergebnisrepository für Auslastungstests gespeichert.
+Wenn Sie die Verbindungszeichenfolge für Ergebnisrepositorys des Controllers ändern, um einen anderen Server zu verwenden, muss auf dem neuen Server das *loadtestresultsrepository.sql*-Skript ausgeführt werden, damit das Schema erstellt werden kann.
+
+Visual Studio Enterprise stellt Indikatorensätze mit Namen zur Verfügung, die häufige Leistungsindikatoren erfassen, deren Grundlage eine bestimmte Technologie ist. Diese Sätze sind bei der Analyse von IIS-Servern, ASP.NET-Servern oder SQL-Servern hilfreich. Alle mit Indikatorensätzen erfassten Daten werden im Ergebnisrepository für Auslastungstests gespeichert.
 
 > [!IMPORTANT]
 > Es wird zwischen einem Indikatorensatz und den Leistungsindikatordaten unterschieden. Indikatorensätze sind Metadaten. Sie definieren eine Gruppe von Leistungsindikatoren, die von einem Computer erfasst werden, der eine bestimmte Aufgabe erfüllt, beispielsweise ein IIS- oder SQL-Server. Der Indikatorensatz ist ein Teil der Auslastungstestdefinition. Leistungsindikatordaten werden basierend auf den Indikatorensätzen, der Zuordnung der Indikatorensätze zu einem bestimmten Computer und der Samplingrate erfasst.

@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812997"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895430"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
 Schwellenwertregeln sind bestimmten Leistungsindikatoren zugeordnet. Verletzungen weisen darauf hin, dass ein Leistungsindikator einen festgelegten Wert über- oder unterschritten hat. Wenn Sie einen Auslastungstest ausführen, können auftretende Verletzungen der zuvor festgelegten Schwellenwertregeln analysiert werden.
 
 Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** in der Statusleiste des **Auslastungstest-Analyzers** mit der Anzahl der aufgetretenen Verletzungen angegeben. Klicken Sie auf den Link, um die Schwellenwertverletzungs-Tabelle anzuzeigen. Die Schwellenwertverletzungen können auch im Fenster **Indikatoren** und im Diagramm angezeigt werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Anzeigen von Schwellenwertverletzungen in der Tabelle
 
@@ -67,8 +69,6 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
  Optional können Schwellenwertverletzungen auch im Diagramm angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist.
 
  In der Indikatorstruktur werden Symbole für Schwellenwertverletzungen von den einzelnen Indikatorknoten auf den Stammknoten übertragen. So werden Sie auf Verletzungen von Indikatoren hingewiesen, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde.
-
- Weitere Informationen finden Sie unter [Verwenden des Indikatorbereichs in der Diagrammansicht und Tabellenansicht](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Anzeigen von Schwellenwertverletzungen im Diagramm
 

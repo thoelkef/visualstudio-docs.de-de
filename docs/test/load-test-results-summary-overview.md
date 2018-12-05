@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380563"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895014"
 ---
 # <a name="load-test-results-summary-overview"></a>Übersicht der Auslastungstestergebnisse
 
 Nachdem Sie einen Auslastungstest ausgeführt haben, können Sie die Zusammenfassung des Auslastungstests anzeigen, um einen schnellen Überblick über die Ergebnisse zu erhalten. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt. Sie können die Zusammenfassung des Auslastungstests auch ausdrucken. Dies ist hilfreich, wenn Sie Ergebnisse an Projektbeteiligte weitergeben möchten. Die Zusammenfassung des Auslastungstests ist auch die Standardansicht, wenn Sie das Auslastungstestergebnis eines zuvor ausgeführten Auslastungstest öffnen. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Zusammenfassungsansicht](../test/media/ltest_summaryview.png)
+![Zusammenfassungsansicht](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Zusammenfassung des Auslastungstests
 
@@ -127,7 +129,7 @@ Der Abschnitt über Ressourcen für Controller und Agents enthält eine Liste de
 
 ## <a name="errors"></a>Fehler
 
-Der Abschnitt über Fehler enthält eine Liste aller Fehler, die während des Auslastungstests aufgetreten sind. Typ und Untertyp des Fehlers, Anzahl und die letzte Meldung werden angezeigt. Sie können einen Fehler auswählen, um die Tabelle **Fehler** zu öffnen und weitere Fehlerdetails zu überprüfen. Weitere Informationen finden Sie unter [Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) und [Vorgehensweise: Analysieren von Fehlern mithilfe des Indikatorenfensters](../test/how-to-analyze-errors-using-the-counters-panel.md).
+Der Abschnitt über Fehler enthält eine Liste aller Fehler, die während des Auslastungstests aufgetreten sind. Typ und Untertyp des Fehlers, Anzahl und die letzte Meldung werden angezeigt. Sie können einen Fehler auswählen, um die Tabelle **Fehler** zu öffnen und weitere Fehlerdetails zu überprüfen. Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Sie können diesen Abschnitt reduzieren oder erweitern, indem Sie den Pfeil links neben dem Abschnittstitel auswählen.

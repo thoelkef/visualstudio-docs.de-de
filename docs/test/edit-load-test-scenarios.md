@@ -1,5 +1,5 @@
 ---
-title: Szenarios zum Bearbeiten von Auslastungstests in Visual Studio
+title: Auslastungstestszenarien
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837138"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896535"
 ---
 # <a name="edit-load-test-scenarios"></a>Bearbeiten von Auslastungstestszenarios
 
 Ein *Szenario* für einen Auslastungstest gibt das Auslastungsmuster, die Testmischung, der Browsermix und die Netzwerkmischung an. Szenarios sind wichtig, da Sie so Tests zur Simulation komplexer und realistischer Arbeitsauslastungen konfigurieren können.
 
 Sie können z. B. eine E-Commerce-Website testen, deren Internet-Front-End von mehreren hundert Kunden mit vielen unterschiedlichen Verbindungsgeschwindigkeiten und verschiedenen Browsern gleichzeitig genutzt wird. Dieselbe Website verfügt möglicherweise auch über eine Administrationsfunktion, die von internen Mitarbeitern zum Aktualisieren von Produkten und zur Anzeige von Statistiken verwendet wird. Diese internen Benutzer werden i. d. R. über den gleichen Browser und über eine schnelle LAN-Verbindung auf die Website zugreifen. Sie möchten die Eigenschaften dieser beiden verschiedenen Benutzergruppen in unterschiedlichen Szenarien kapseln. Jedes Szenario kann einen virtuellen Benutzertyp enthalten. In diesem Fall kann ein Auslastungstestszenario für die virtuellen Kunden und ein weiteres Szenario für die virtuellen internen Benutzer der Website erstellt werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Szenariokomponenten
 

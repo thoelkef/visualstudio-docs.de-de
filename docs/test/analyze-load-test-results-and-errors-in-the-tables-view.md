@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928671"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896626"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht des Auslastungstest-Analyzers
 
 Für die Auswertung der Ergebnisse eines Auslastungstestlaufs können verschiedene Bereiche angezeigt werden, die unterschiedliche Methoden der Datenanalyse ermöglichen. Sie können die Daten als Diagramm anzeigen, um zeitliche Verläufe zu identifizieren, oder Sie können die Daten als ausführlichen Tabellen anzeigen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Klicken Sie in der **Auslastungstest**-Symbolleiste auf **Tabellen**, um zur Tabellenansicht zu wechseln. Mithilfe der Dropdownliste **Tabelle** auf der Symbolleiste über dem Tabellenraster können Sie die Anzeige der verschiedenen Tabellen wechseln. In der Tabellenansicht können jeweils bis zu vier Tabellen angezeigt werden. Weitere Informationen finden Sie unter [Unterteilen von Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in diesem Thema.
 
@@ -41,14 +43,14 @@ Die meisten numerischen Werte in einer Leistungsindikatortabelle sind während d
 > [!NOTE]
 > Die Spalten mit der Bezeichnung **Letzter** sind nur verfügbar, wenn ein Auslastungstest ausgeführt wird. Nach Abschluss eines Auslastungstests sind diese Spalten nicht verfügbar.
 
- Die meisten Tabellen können sortiert werden, indem Sie den Titel der Spalte wählen, nach der sortiert werden soll. In der Standardeinstellung werden in einigen Tabellen nicht alle verfügbaren Spalten angezeigt. Wenn Spalten verfügbar sind, können Sie diese den Tabellen hinzufügen. Um Spalten hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie anschließend **Spalten hinzufügen/entfernen** aus.
+Die meisten Tabellen können sortiert werden, indem Sie den Titel der Spalte wählen, nach der sortiert werden soll. In der Standardeinstellung werden in einigen Tabellen nicht alle verfügbaren Spalten angezeigt. Wenn Spalten verfügbar sind, können Sie diese den Tabellen hinzufügen. Um Spalten hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie anschließend **Spalten hinzufügen/entfernen** aus.
 
 > [!NOTE]
 > Sie können die Daten aus einer Tabelle in andere Anwendungen, z. B. Excel, kopieren, um zusätzliche Analysen durchzuführen.
 
 ## <a name="the-load-test-tables"></a>Die Auslastungstesttabellen
 
- In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von Auslastungstestläufen verfügbar sind.
+In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von Auslastungstestläufen verfügbar sind.
 
 |Tabellenname|Beschreibung |
 |-|-|

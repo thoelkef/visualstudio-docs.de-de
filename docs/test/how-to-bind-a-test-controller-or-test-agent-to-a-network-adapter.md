@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203962"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896048"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 
@@ -30,6 +30,8 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 > **Error 8110. Can not connect to the specified controller computer or access the controller object** (Fehler 8110. Verbindung zum angegebenen Controllercomputer konnte nicht hergestellt werden, oder auf das Controllerobjekt konnte nicht zugegriffen werden).
 >
 > Dieser Fehler kann bei der Installation des Testcontrollers auf einem Computer mit mehr als einem Netzwerkadapter auftreten. Es ist auch möglich, dass Agents erfolgreich installiert werden können und das Problem erst bei einem Testlauf auftritt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Binden eines Testcontrollers an einen bestimmten Netzwerkadapter
 

@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295097"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896106"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
 Binden Sie Daten, um dem gleichen Test verschiedene Werte bereitzustellen, z. B. um den Formularbereitstellungsparametern verschiedene Werte bereitzustellen.
 
- ![Datenbindung an einen Webleistungstest](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei *ASPX-Seiten*: die Standardseite, die Seite „Red“ und die Seite „Blue“. Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden *ASPX-Seiten* sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
+![Datenbindung an einen Webleistungstest](../test/media/web_test_databinding_conceptual.png)
 
- ![Ausführen der zu testenden Webanwendung](../test/media/web_test_databinding_runwebapp.png)
+Es wird eine ASP.NET-Beispielanwendung verwendet. Sie hat drei *ASPX-Seiten*: die Standardseite, die Seite „Red“ und die Seite „Blue“. Die Standardseite enthält ein Optionsfeld für die Auswahl von "Red" oder "Blue" sowie eine Schaltfläche zum Senden. Die anderen beiden *ASPX-Seiten* sind sehr einfach. Eine hat die Bezeichnung "Red" und die andere die Bezeichnung "Blue". Wenn Sie auf der Standardseite "Senden" auswählen, wird eine der beiden anderen Seiten angezeigt. Sie können das Beispiel [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) herunterladen oder einfach mit Ihrer eigenen Web-App fortfahren.
 
- Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten der Webanwendung durchsucht.
+![Ausführen der zu testenden Webanwendung](../test/media/web_test_databinding_runwebapp.png)
 
- ![Projektmappe mit Webleistungstest](../test/media/web_test_databinding_solution.png)
+Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten der Webanwendung durchsucht.
+
+![Projektmappe mit Webleistungstest](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Erstellen einer SQL-Datenbank
 

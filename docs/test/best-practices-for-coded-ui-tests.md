@@ -1,5 +1,5 @@
 ---
-title: Empfohlene Vorgehensweisen für Tests der programmierten UI in Visual Studio
+title: Empfohlene Vorgehensweisen für Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283275"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896017"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
 In diesem Thema werden einige Empfehlungen für die Entwicklung von Tests der programmierten UI beschrieben.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>Bewährte Methoden
 

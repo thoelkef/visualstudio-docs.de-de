@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175672"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896444"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse
 
 Wenn Sie einen Auslastungstest im Auslastungstest-Editor ausführen, werden die Auslastungstestergebnisse automatisch geöffnet, und der laufende Test wird im **Auslastungstest-Analyzer** angezeigt. Wenn Sie einen Auslastungstest von der Befehlszeile ausführen, müssen Sie auf die Auslastungstestergebnisse manuell zugreifen.
 
 Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Leistungsindikatorsamplings und Fehlerinformationen, die in regelmäßigen Abständen von den Testcomputern erfasst wurden. Im Verlauf eines Auslastungstestlaufs kann eine große Anzahl von Leistungsindikatorsamplings erfasst werden. Die Menge gesammelter Leistungsdaten hängt von der Länge des Testlaufs, dem Samplingintervall, der Anzahl von Testcomputern, der Anzahl erfasster Indikatoren, den konfigurierten Datensammlern und den Protokollierungsebenen ab. Bei einem großen Auslastungstest kann die gesammelte Menge von Leistungsdaten leicht mehrere Gigabytes betragen. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>So greifen Sie auf ein Auslastungstestergebnis zu
 

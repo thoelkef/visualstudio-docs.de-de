@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862462"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896743"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
 Sie können einen benutzerdefinierten Inhalts-Editor erstellen, der Ihnen ermöglicht, den Zeichenfolgentextinhalt oder den binären Textinhalt einer Webdienstanforderung zu bearbeiten (z.B. SOAP, REST, asmx, wcf, RIA und andere Webdienstanforderungstypen).
 
- Sie können diese Arten von Editoren implementieren:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Sie können diese Arten von Editoren implementieren:
 
 -   **Zeichenfolgeninhalts-Editor:** Wird mit der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle implementiert.
 

@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Benutzercode mit nur mein Code | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050338"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389026"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur mein Code Debuggen 
 
@@ -23,7 +23,7 @@ ms.locfileid: "50050338"
 
 Nur mein Code funktioniert anders als in .NET Framework, C++ und JavaScript-Projekten.
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren Sie oder deaktivieren Sie nur mein Code  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren oder Deaktivieren von „Nur eigenen Code“  
 
 Für die meisten Programmiersprachen wird nur mein Code standardmäßig aktiviert. 
 
@@ -56,7 +56,7 @@ In der **Aufrufliste** oder **Aufgaben** nur mein Code-Fenster wird nicht benutz
 
 Durch Doppelklicken auf eine erweiterte externen Code-Zeile in der **Aufrufliste** Fenster werden die aufrufende Codezeile im Quellcode grün hervorgehoben. Für DLLs oder andere Module wurde nicht gefunden oder geladen eine Symbol- oder Quelldateien wurde nicht gefunden Seite öffnen kann.
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Nur eigenen Code für .NET framework 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a> „Nur eigenen Code“ in .NET Framework 
 
 In .NET Framework-Projekten verwendet nur mein Code Symbol (*PDB*) Dateien und programmoptimierungen, um Benutzer-und Nichtbenutzercode zu klassifizieren. Der .NET Framework-Debugger berücksichtigt werden, optimiert der Binärdateien und nicht geladenen *PDB* Dateien nicht benutzerseitiger Code sein.
   
@@ -81,7 +81,7 @@ Wenn ein Ausnahmefehler im Nichtbenutzercode auftritt, unterbricht der Debugger,
   
 Wenn Ausnahmen der ersten Chance für die Ausnahme aktiviert sind, wird der aufrufende benutzercodezeile Grün im Quellcode hervorgehoben. Die **Aufrufliste** Fenster wird angezeigt, den mit Anmerkungen versehenen Frame mit der Bezeichnung **[externer Code]**.  
 
-##  <a name="BKMK_C___Just_My_Code"></a> C++ nur mein Code  
+##  <a name="BKMK_C___Just_My_Code"></a> „Nur eigenen Code“ in C++  
   
 In C++ nur meinen Code aktivieren entspricht der Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter.
 
@@ -117,7 +117,7 @@ Wenn der Debugger eine Ausnahme trifft, wird es, ob es im Benutzer- oder nicht-b
  In C++-Projekten können Sie angeben, Funktionen überspringen sind, indem sie als Nichtbenutzercode in auflisten  *\*natstepfilter* Dateien.  
   
 - Um Nichtbenutzercode für alle lokalen Visual Studio-Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.  
-- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* Ordner.  
+- Fügen Sie dem Ordner *%USERPROFILE%\Eigene Dokumente\Visual Studio 2017\Visualizers* die *NATSTEPFILTER*-Datei hinzu, um Nichtbenutzercode für einen einzelnen Benutzer anzugeben.  
   
 Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:  
   
@@ -137,7 +137,7 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
   
 ```  
   
-|Element|Beschreibung|  
+|Element|Beschreibung |  
 |-------------|-----------------|  
 |`Function`|Erforderlich. Gibt eine oder mehreren Funktionen als Nichtbenutzerfunktionen an.|  
 |`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Zum Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|  
@@ -148,8 +148,8 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 
 Bei C++-Projekten können Sie angeben, die Module, Quelldateien und Funktionen der **Aufrufliste** Fenster als Nichtbenutzercode behandelt, durch Angabe im  *\*natjmc* Dateien.  
   
--   Um Nichtbenutzercode für alle Benutzer des Visual Studio-Computers anzugeben, fügen die *natjmc* -Datei in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.  
--   Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natjmc* -Datei in die *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* Ordner.  
+-   Fügen Sie dem Ordner *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* die *NATJMC*-Datei hinzu, um Nichtbenutzercode aller Benutzer des Visual Studio-Computers anzugeben.  
+-   Fügen Sie dem Ordner *%USERPROFILE%\Eigene Dokumente\Visual Studio 2017\Visualizers* die *NATJMC*-Datei hinzu, um Nichtbenutzercode für einen einzelnen Benutzer anzugeben.  
 
 Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:  
   
@@ -175,28 +175,28 @@ Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
   
  **Modulelementattribute**  
   
-|Attribut|Beschreibung|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
-|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (kein oder ein Zeichen) und `*` (null oder mehr Zeichen). Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an alle Module in behandeln *\3rdParty\UtilLibs* auf einem Laufwerk als externen Code.|  
+|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (kein oder ein Zeichen) und `*` (null oder mehr Zeichen). Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in *\3rdParty\UtilLibs* auf einem Laufwerk als externen Code zu behandeln.|  
 |`Company`|Dies ist optional. Der Name des Unternehmens, das das Modul veröffentlicht, das in die ausführbare Datei eingebettet ist. Sie können dieses Attribut verwenden, um die Module zu unterscheiden.|  
   
  **Dateielementattribute**  
   
-|Attribut|Beschreibung|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Name`|Erforderlich. Der vollständige Pfad der Quelldatei oder -dateien, die als externer Code behandelt werden sollen. Sie können die Windows-Platzhalterzeichen `?` und `*` verwenden, wenn Sie den Pfad angeben.|  
   
  **Funktionselementattribute**  
   
-|Attribut|Beschreibung|  
+|Attribut|Beschreibung |  
 |---------------|-----------------|  
 |`Name`|Erforderlich. Der vollqualifizierte Name der Funktion, die als externer Code behandelt werden soll.|  
 |`Module`|Dies ist optional. Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält. Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|  
 |`ExceptionImplementation`|Bei Festlegung auf `true` zeigt die Aufrufliste die Funktion an, die die Ausnahme und nicht diese Funktion ausgelöst hat.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript nur mein Code  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> „Nur eigenen Code“ in JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Nur mein Code im JavaScript steuert die schrittweise Ausführung und die aufruflistenanzeige durch Kategorisieren von Code in einem der folgenden Klassifizierungen:  
+<a name="BKMK_JS_User_and_non_user_code"></a> „Nur eigenen Code“ in JavaScript steuert die Einzelschrittausführung und die Aufruflistenanzeige durch Kategorisieren von Code in einer dieser Klassifizierungen:  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ Der JavaScript-Debugger klassifiziert Code als Benutzer oder Benutzer in dieser 
   
 Jeder Klassifizierungsschritt überschreibt die vorherigen Schritte. 
 
-Alle anderen Code als klassifiziert **MyCode**.  
+Der restliche Code wird als **MyCode** klassifiziert.  
 
 Sie können die standardklassifizierungen ändern und Klassifizieren von Dateien und URLs für als Benutzer oder eine nicht-benutzerseitiger Code durch Hinzufügen einer *JSON* Datei mit dem Namen *mycode.json* in den Stammordner, der ein JavaScript-Projekt. Finden Sie unter [JavaScript nur mein Code anpassen](#BKMK_JS_Customize_Just_My_Code). 
 
@@ -226,7 +226,7 @@ Sie können die standardklassifizierungen ändern und Klassifizieren von Dateien
 
 - Wenn eine Funktion nicht benutzerseitiger Code ist **Debuggen** > **Einzelschritt** (oder **F11**) verhält sich wie **Debuggen**  >  **Prozedurschritt** (oder **F10**).  
 - Wenn ein Schritt im Nichtbenutzercode beginnt (**LibraryCode** oder **UnrelatedCode**) Code, schrittweise Ausführung kurzfristig verhält, als wenn nur mein Code nicht aktiviert ist. Wenn Sie wechseln zurück zum Benutzercode, nur mein Code schrittweise wieder aktiviert ist.  
-- Wenn ein Benutzer Code Schritts Verlassen des aktuellen Ausführungskontexts, hält der Debugger, bei der nächsten Zeile des ausgeführten Benutzer-Code. Wenn in ein Rückruf ausgeführt wird z. B. **LibraryCode** Code, der Debugger wird fortgesetzt, bis die nächste Zeile des Benutzercodes ausführt.
+- Wenn ein Benutzer Code Schritts Verlassen des aktuellen Ausführungskontexts, hält der Debugger, bei der nächsten Zeile des ausgeführten Benutzer-Code. Wenn beispielsweise ein Rückruf in **LibraryCode**-Code ausgeführt wird, fährt der Debugger fort, bis die nächste Zeile des Benutzercodes ausgeführt wird.
 - **Ausführen bis Rücksprung** (oder **UMSCHALT**+**F11**) in der nächsten Zeile des Benutzercodes beendet. 
 
 Wenn kein Benutzercode für weitere vorhanden ist, Debuggen wird fortgesetzt, bis es beendet, einen weiteren Haltepunkt erreicht oder löst einen Fehler aus. 
@@ -242,7 +242,7 @@ Im Falle eine nicht behandelte Ausnahme **UnrelatedCode**, und **MyCode** oder *
   
 Wenn Ausnahmen für die Ausnahme aktiviert sind, und die Ausnahme tritt auf, **LibraryCode** oder **UnrelatedCode**:  
   
--   Wenn die Ausnahme behandelt wird, unterbrochen nicht der Debugger.  
+-   Wenn die Ausnahme behandelt wird, unterbricht der Debugger nicht.  
 -   Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Anpassen von JavaScript nur mein Code  
@@ -279,28 +279,28 @@ Spezifikationen in dieser Datei überschreiben die standardklassifizierungen und
   
  **Eval, Function und ScriptBlock**  
   
- Die **Eval**, **Funktion**, und **"scriptblock"** Schlüssel-/Wertpaaren bestimmen, wie dynamisch erzeugter Code klassifiziert wird:  
+ Die Schlüsselwertpaare **Eval**, **Function** und **ScriptBlock** bestimmen, wie dynamisch erzeugter Code klassifiziert wird:  
   
 |||  
 |-|-|  
-|**Eval**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die vom Host bereitgestellte `eval`-Funktion übergeben wird. Eval-Skript wird standardmäßig als klassifiziert **MyCode**.|  
-|**Function**|Skript, das ausgeführt wird, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird. Function-Skript wird standardmäßig als klassifiziert **LibraryCode**.|  
-|**"Scriptblock"**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die Funktionen `setTimeout`, `setImmediate` oder `setInterval` übergeben wird. ScriptBlock-Skript wird standardmäßig als klassifiziert **UnrelatedCode**.|  
+|**Eval**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die vom Host bereitgestellte `eval`-Funktion übergeben wird. Standardmäßig wird ein Eval-Skript als **MyCode** klassifiziert.|  
+|**Function**|Skript, das ausgeführt wird, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird. Standardmäßig wird ein Function-Skript als **LibraryCode** klassifiziert.|  
+|**ScriptBlock**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die Funktionen `setTimeout`, `setImmediate` oder `setInterval` übergeben wird. Standardmäßig wird ein ScriptBlock-Skript als **UnrelatedCode** klassifiziert.|  
   
  Sie können den Wert auf eines dieser Schlüsselwörter ändern:  
   
--   `MyCode`  klassifiziert das Skript als **MyCode**.  
--   `Library`  klassifiziert das Skript als **LibraryCode**.  
--   `Unrelated`  klassifiziert das Skript als **UnrelatedCode**.  
+-   `MyCode` klassifiziert das Skript als **MyCode**.  
+-   `Library` klassifiziert das Skript als **LibraryCode**.  
+-   `Unrelated` klassifiziert das Skript als **UnrelatedCode**.  
   
   **MyCode, Libraries und Unrelated**  
   
- Die **MyCode**, **Bibliotheken**, und **Unrelated** Schlüssel-Wert-Paare angeben, die URLs oder Dateien, die Sie in eine Klassifikation einschließen möchten:  
+ Die Schlüsselwertpaare **MyCode**, **Libraries** und **Unrelated** geben die URLs oder Dateien an, die Sie in eine Klassifikation einschließen möchten:  
   
 |||  
 |-|-|  
-|**MyCode**|Ein Array von URLs oder Dateien, die als klassifiziert werden **MyCode**.|  
-|**Bibliotheken**|Ein Array von URLs oder Dateien, die als klassifiziert werden **LibraryCode**.|  
-|**Unabhängig vom stagingstatus**|Ein Array von URLs oder Dateien, die als klassifiziert werden **UnrelatedCode**.|  
+|**MyCode**|Ein Array von URLs oder Dateien, die als **MyCode** klassifiziert werden.|  
+|**Libraries**|Ein Array von URLs oder Dateien, die als **LibraryCode** klassifiziert werden.|  
+|**Unrelated**|Ein Array von URLs oder Dateien, die als **UnrelatedCode** klassifiziert werden.|  
   
  Die URL-Zeichenfolge oder Zeichenfolge möglich, eine oder mehrere `*` Zeichen, die mit NULL oder mehr Zeichen übereinstimmen. `*` ist identisch mit dem regulären Ausdruck `.*`.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380537"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896730"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 
@@ -27,6 +27,8 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
 
 > [!NOTE]
 > Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [How to: Create a Web Performance Test Plug-In (Vorgehensweise: Erstellen eines codierten Webleistungstest-Plug-Ins)](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>So erstellen Sie ein Auslastungstest-Plug-In mit Visual C#
 

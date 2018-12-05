@@ -19,87 +19,88 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a4c1178859a3b5884e0573bde31ed251e8a68f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899005"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388862"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Gewusst wie: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten
-Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung veröffentlichen, mit dem Webpublishing-Assistenten. zusätzliche Eigenschaften, die im Zusammenhang mit der Veröffentlichung stehen für die **veröffentlichen** auf der Seite die **Projekt-Designer**. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md).  
-  
- Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Z. B. Wenn Sie einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, erreichen Sie so die **Signierung** auf der Seite die **Projekt-Designer**. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
-  
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten
+Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlichen. Für die Veröffentlichung stehen im **Projekt-Designer** auf der Seite **Veröffentlichen** zusätzliche Eigenschaften zur Verfügung. Weitere Informationen finden Sie unter [Publishing ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md).
+
+Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Wenn Sie z.B. einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, können Sie dies im **Projekt-Designer** auf der Seite **Signierung** vornehmen. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
+
 > [!NOTE]
->  Wenn Sie mehrere Versionen einer Anwendung mithilfe von ClickOnce installieren, verschiebt die Installation frühere Versionen der Anwendung in einen Ordner mit dem Namen *Archiv*, in den Veröffentlichungsort, den Sie angeben. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.  
-  
+> Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen *Archiv* in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.
+
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-publish-to-a-file-share-or-path"></a>So veröffentlichen Sie auf einer Dateifreigabe oder unter einem Pfad  
-  
-1. In **Projektmappen-Explorer**, wählen Sie das Anwendungsprojekt.  
-  
-2. Auf der **erstellen** Menü klicken Sie auf **veröffentlichen** *Projectname*.  
-  
-    Der Webpublishing-Assistent wird angezeigt.  
-  
-3. In der **Wo möchten Sie die Anwendung veröffentlichen?** Seite Geben Sie eine gültige FTP-Serveradresse oder einen gültigen Dateipfad mithilfe eines der gezeigten Formate, und klicken Sie dann auf **Weiter**.  
-  
-4. In der **wie werden Benutzer die Anwendung installieren?** Seite, wählen Sie den Speicherort, in denen Benutzer aufrufen, die um die Anwendung zu installieren:  
-  
-   -   Wenn der Benutzer auf einer Website installieren, klicken Sie auf **von einer Website** , und geben Sie eine URL, entspricht der im vorherigen Schritt eingegebenen Dateipfad. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)  
-  
-   -   Wenn der Benutzer die Anwendung direkt von der Dateifreigabe installieren, klicken Sie auf **von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Dies ist für die Veröffentlichung von Standorten des Formulars *c:\deploy\myapp* oder  *\\\server\myapp*.)  
-  
-   -   Wenn der Benutzer von Wechselmedien installieren, klicken Sie auf **von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
-  
-5. Auf der **wird die Anwendung offline verfügbar sein?** klicken Sie auf die entsprechende Option:  
-  
-   - Sollten Sie die Anwendung ausgeführt werden kann bei der Benutzer wird getrennt vom Netzwerk aus, klicken Sie auf **Ja, diese Anwendung stehen online oder offline**. Eine Verknüpfung auf die **starten** Menü für die Anwendung erstellt werden.  
-  
-   - Wenn Sie die Anwendung direkt vom Ort Veröffentlichung ausführen möchten, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar**. Eine Verknüpfung auf die **starten** Menü wird nicht erstellt werden.  
-  
-     Klicken Sie auf **Weiter**, um fortzufahren.  
-  
-6. Klicken Sie auf **Fertig stellen** zum Veröffentlichen der Anwendung.  
-  
-    Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.  
-  
-### <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>So veröffentlichen Sie auf einer CD-ROM oder DVD-ROM  
-  
-1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Anwendungsprojekt, und klicken Sie auf **Eigenschaften**.  
-  
-    Der **Projekt-Designer** wird angezeigt.  
-  
-2. Klicken Sie auf die **veröffentlichen** Registerkarte Öffnen der **veröffentlichen** auf der Seite die **Projekt-Designer**, und klicken Sie auf die **Veröffentlichungs-Assistenten** Schaltfläche.  
-  
-    Der Webpublishing-Assistent wird angezeigt.  
-  
-3. In der **Wo möchten Sie die Anwendung veröffentlichen?** Seite, geben Sie den Dateipfad oder den FTP-Speicherort, in dem die Anwendung, z. B. veröffentlicht werden *d:\deploy*. Klicken Sie dann auf **Weiter** um den Vorgang fortzusetzen.  
-  
-4. Auf der **wie werden Benutzer die Anwendung installieren?** Seite, klicken Sie auf eine **CD-ROM oder DVD-ROM-**, und klicken Sie dann auf **Weiter**.  
-  
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
+
+## <a name="to-publish-to-a-file-share-or-path"></a>So veröffentlichen Sie auf einer Dateifreigabe oder unter einem Pfad
+
+1. Wählen Sie im **Projektmappen-Explorer** das Anwendungsprojekt aus.
+
+2. Auf der **erstellen** Menü klicken Sie auf **veröffentlichen** *Projectname*.
+
+    Der Webpublishing-Assistent wird angezeigt.
+
+3. Geben Sie auf der Seite **Wo möchten Sie die Anwendung veröffentlichen?** eine gültige FTP-Server-Adresse oder einen gültigen Dateipfad mithilfe eines der gezeigten Formate ein, und klicken Sie dann auf **Weiter**.
+
+4. Wählen Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** den Speicherort aus, auf den Benutzer beim Installieren der Anwendung zugreifen:
+
+   -   Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)
+
+   -   Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Hiermit können Veröffentlichungsorte im Format *c:\deploy\myapp* oder *\\\server\myapp* verwendet werden.)
+
+   -   Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
+
+5. Wählen Sie auf der Seite **Wird die Anwendung offline verfügbar sein?** die gewünschte Option aus:
+
+   - Falls die Anwendung auch ausgeführt werden soll, wenn der Benutzer vom Netzwerk getrennt ist, klicken Sie auf **Yes, this application will be available online or offline** (Ja, diese Anwendung ist online und offline verfügbar). Im **Startmenü** wird eine Verknüpfung für die Anwendung erstellt.
+
+   - Wenn die Anwendung direkt vom Ort der Veröffentlichung gestartet werden soll, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar.** Es wird keine Verknüpfung im **Startmenü** erstellt.
+
+     Klicken Sie auf **Weiter**, um fortzufahren.
+
+6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
+
+    Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.
+
+## <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>So veröffentlichen Sie auf einer CD-ROM oder DVD-ROM
+
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Anwendungsprojekt, und klicken Sie dann auf **Eigenschaften**.
+
+    Der **Projekt-Designer** wird angezeigt.
+
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**, um im **Projekt-Designer** die Seite **Veröffentlichen** zu öffnen, und klicken Sie auf die Schaltfläche **Veröffentlichungs-Assistent**.
+
+    Der Webpublishing-Assistent wird angezeigt.
+
+3. Geben Sie auf der Seite **Wo möchten Sie die Anwendung veröffentlichen?** den Dateipfad oder den FTP-Speicherort an, an dem die Anwendung veröffentlicht wird, zum Beispiel: *d:\deploy*. Klicken Sie dann zum Fortfahren auf **Weiter**.
+
+4. Klicken Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
+
    > [!NOTE]
-   >  Wenn die Installation automatisch ausgeführt werden sollen beim die CD-ROM einfügen in das Laufwerk, das Öffnen der **veröffentlichen** auf der Seite die **Projekt-Designer** , und klicken Sie auf die **Optionen** Schaltfläche, und klicken Sie dann in der **Veröffentlichungsoptionen** Assistenten **für CD-Installationen automatisch Setup starten, wenn CD eingelegt wird**.  
-  
-5. Wenn Sie Ihre Anwendung auf einer CD-ROM veröffentlichen, können Sie dennoch Updates auf einer Website zur Verfügung stellen. In der **, in dem die Anwendung sucht nach Updates?** Seite, wählen Sie eine Updateoption:  
-  
-   - Wenn die Anwendung nach Updates suchen soll, klicken Sie auf **der Anwendung überprüft folgenden Speicherort auf Updates** und geben Sie den Speicherort, in denen Updates veröffentlicht werden. Der Speicherort kann ein Dateipfad, eine Website oder ein FTP-Server sein.  
-  
-   - Wenn die Anwendung nicht nach Updates suchen soll, klicken Sie auf **die Anwendung wird nicht nach Updates suchen**.  
-  
-     Klicken Sie auf **Weiter**, um fortzufahren.  
-  
-6. Klicken Sie auf **Fertig stellen** zum Veröffentlichen der Anwendung.  
-  
-    Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.  
-  
+   >  Falls Sie die Installation ausgeführt werden soll, wenn die CD-ROM in das Laufwerk eingelegt wird, öffnen Sie im **Projekt-Designer** die Seite **Veröffentlichen** und klicken auf die Schaltfläche **Optionen**. Wählen Sie in den **Veröffentlichungsoptionen** des Assistenten dann die Option **Bei CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** aus.
+
+5. Wenn Sie Ihre Anwendung auf einer CD-ROM veröffentlichen, können Sie dennoch Updates auf einer Website zur Verfügung stellen. Wählen Sie auf der Seite **Die Anwendung überprüft folgenden Speicherort auf Updates** eine Updateoption aus:
+
+   - Wenn die Anwendung nach Updates sucht, klicken Sie auf **Die Anwendung überprüft folgenden Speicherort auf Updates** und geben den Speicherort ein, an dem Updates veröffentlicht werden. Der Speicherort kann ein Dateipfad, eine Website oder ein FTP-Server sein.
+
+   - Wenn die Anwendung nicht nach Updates sucht, klicken Sie auf **Anwendung sucht nicht nach Updates**.
+
+     Klicken Sie auf **Weiter**, um fortzufahren.
+
+6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
+
+    Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.
+
    > [!NOTE]
-   >  Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
- [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Bereitstellen einer Office-Projektmappe mit ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+   >  Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.
+
+## <a name="see-also"></a>Siehe auch
+
+- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+- [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
+- [Deploying an Office solution by using ClickOnce (Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce)](../vsto/deploying-an-office-solution-by-using-clickonce.md)
