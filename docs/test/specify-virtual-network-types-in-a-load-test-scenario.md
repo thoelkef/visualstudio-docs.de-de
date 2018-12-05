@@ -1,5 +1,5 @@
 ---
-title: Angeben von virtuellen Netzwerktypen in einem Auslastungstestszenario in Visual Studio
+title: Angeben von virtuellen Netzwerktypen in einem Auslastungstestszenario
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380227"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894676"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Angeben von virtuellen Netzwerktypen in einem Auslastungstestszenario
 
 Mithilfe der *Netzwerkmischung* kann die Auslastung in einem Auslastungstestszenario realistischer simuliert werden. Die Auslastung wird durch Verwendung einer heterogenen Mischung von Netzwerktypen anstelle eines einzigen generiert. Sie erreichen so eine bessere Annäherung an die Interaktion zwischen Endbenutzern und Anwendungen.
 
- Die Netzwerkmischung gibt die Wahrscheinlichkeit an, mit der ein virtueller Benutzer ein bestimmtes *Netzwerkprofil* ausführt. Ein Netzwerkprofil ist eine Simulation der Netzwerkbandbreite auf Anwendungsebene. Netzwerklatenz wird nicht simuliert.
+Die Netzwerkmischung gibt die Wahrscheinlichkeit an, mit der ein virtueller Benutzer ein bestimmtes *Netzwerkprofil* ausführt. Ein Netzwerkprofil ist eine Simulation der Netzwerkbandbreite auf Anwendungsebene. Netzwerklatenz wird nicht simuliert.
 
- Beim Erstellen eines Auslastungstests sollten Sie die Auslastung mit mehr als einem Typ von Netzwerkverbindung simulieren. Die Netzwerkmischung umfasst mehrere Netzwerktypen. Die verschiedenen Netzwerkverbindungen werden simuliert. Wenn Sie eine Option wie `Cable-DSL 1.5Mbps` auswählen, werden Wartezeiten in den Test eingefügt, um die ausgewählte Bandbreite zu simulieren.
+Beim Erstellen eines Auslastungstests sollten Sie die Auslastung mit mehr als einem Typ von Netzwerkverbindung simulieren. Die Netzwerkmischung umfasst mehrere Netzwerktypen. Die verschiedenen Netzwerkverbindungen werden simuliert. Wenn Sie eine Option wie `Cable-DSL 1.5Mbps` auswählen, werden Wartezeiten in den Test eingefügt, um die ausgewählte Bandbreite zu simulieren.
 
- Die Netzwerkmischung arbeitet nach dem gleichen Prinzip wie die anderen Mischungsoptionen. Ein ausgewählter Netzwerktyp wird auf Grundlage der Netzwerkmischung nach dem Zufallsprinzip einem virtuellen Benutzer zugeordnet. Die Tests für den Benutzer werden mit einem Netzwerktyp ausgeführt, der entsprechend der in der Mischung angegebenen Wahrscheinlichkeit ausgewählt wird.
+Die Netzwerkmischung arbeitet nach dem gleichen Prinzip wie die anderen Mischungsoptionen. Ein ausgewählter Netzwerktyp wird auf Grundlage der Netzwerkmischung nach dem Zufallsprinzip einem virtuellen Benutzer zugeordnet. Die Tests für den Benutzer werden mit einem Netzwerktyp ausgeführt, der entsprechend der in der Mischung angegebenen Wahrscheinlichkeit ausgewählt wird.
 
- Nachdem Sie eine Netzwerkmischung angegeben haben, können Sie Netzwerktypen hinzufügen oder entfernen. Sie können auch die Verteilung der Netzwerkmischung über die Mischungssteuerung ändern.
+Nachdem Sie eine Netzwerkmischung angegeben haben, können Sie Netzwerktypen hinzufügen oder entfernen. Sie können auch die Verteilung der Netzwerkmischung über die Mischungssteuerung ändern.
 
- Mit der Mischungssteuerung können Sie die Verteilung der Netzwerke in einem Szenario auf einfache Weise anpassen.
+Mit der Mischungssteuerung können Sie die Verteilung der Netzwerke in einem Szenario auf einfache Weise anpassen.
 
- Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Wahre Netzwerkemulation
 
- Visual Studio verwendet eine softwarebasierte echte Netzwerkemulation für alle Testtypen, einschließlich Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
+Visual Studio verwendet eine softwarebasierte echte Netzwerkemulation für alle Testtypen, einschließlich Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
 
 -   Round-Trip-Zeit für das Netzwerk (Wartezeit)
 

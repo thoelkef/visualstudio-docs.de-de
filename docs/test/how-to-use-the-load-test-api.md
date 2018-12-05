@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282743"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894396"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Vorgehensweise: Verwenden der Auslastungstest-API
 
 Visual Studio unterstützt Auslastungstest-Plug-Ins zum Steuern oder Erweitern der Funktionen eines Auslastungstests. Auslastungstest-Plug-Ins sind benutzerdefinierte Klassen, die die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle des <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace implementieren. Auslastungstest-Plug-Ins ermöglichen die benutzerdefinierte Steuerung von Auslastungstests, z. B. das Abbrechen eines Auslastungstests beim Erreichen eines bestimmten Indikator- oder Fehlerschwellenwerts. Verwenden Sie die Eigenschaften der <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>-Klasse zum Abrufen oder Festlegen von Auslastungstestparametern im benutzerdefinierten Code. Verwenden Sie die Ereignisse der <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>-Klasse, um Delegate für Benachrichtigungen anzufügen, die während der Ausführung des Auslastungstests ausgegeben werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Verwenden Sie den Objektkatalog, um den <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace zu durchsuchen. Sowohl der Visual C#- als auch der Visual Basic-Editor bieten IntelliSense-Unterstützung für das Schreiben von Code mit den Klassen im Namespace.

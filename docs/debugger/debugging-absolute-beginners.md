@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257367"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821369"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -244,7 +244,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     ![Syntaxfehler](../debugger/media/beginners-no-definition.png)
 
-    Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
+    Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MyGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
 
 1. Wenn Sie den Code betrachten, der für das Festlegen des Galaxietyps verwendet wird, werden Sie feststellen, dass die `GalaxyType`-Eigenschaft der `Galaxy`-Klasse auf `object` statt `GType` festgelegt ist.
 

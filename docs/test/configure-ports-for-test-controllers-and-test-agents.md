@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297595"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894533"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurieren von Ports für Testcontroller und Test-Agents
 
 Sie können die vom Testcontroller, Test-Agent und Client verwendeten Standardports ändern. Dies ist möglicherweise erforderlich, wenn Sie den Testcontroller, Test-Agent oder Client zusammen mit anderer Software verwenden möchte, bei der ein Konflikt mit den Porteinstellungen auftritt. Ein weiterer Grund zum Ändern der Ports besteht in der Firewalleinschränkung zwischen dem Testcontroller und dem Client. In diesem Fall können Sie den Port manuell konfigurieren, um eine Firewall zuzulassen, damit der Testcontroller Ergebnisse an den Client senden kann.
 
- Die folgende Abbildung zeigt die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client an. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Ports und Sicherheit von Testcontrollern und Test-Agents](../test/media/test-controller-agent-firewall.png)
+Die folgende Abbildung zeigt die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client an. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
+
+![Ports und Sicherheit von Testcontrollern und Test-Agents](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Eingehende Verbindungen
 
