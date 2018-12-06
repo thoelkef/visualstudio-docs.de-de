@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388159"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621538"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten in DataTips im Code-editor
 
-DataTips sind es sich um eine einfache Möglichkeit zum Anzeigen von Informationen zu Variablen in Ihrer app während des Debuggens. 
+DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen. Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
 
 Ist dies Ihre erste Time-Debuggen, sollten Sie zum Lesen [besser schreiben C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) vor der Lektüre dieses Artikels.
   
@@ -127,8 +127,8 @@ Sie können DataTips in eine XML-Datei exportieren, die Sie freigeben oder mit e
 
 ## <a name="see-also"></a>Siehe auch  
  [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)  
- [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)   
- [View data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)   
- [Watch and QuickWatch windows (Fenster „Überwachen“ und „Schnellüberwachung“)](../debugger/watch-and-quickwatch-windows.md)   
- [Create custom visualizers (Erstellen benutzerdefinierter Schnellansichten)](../debugger/create-custom-visualizers-of-data.md)   
+ [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
+ [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Fenster „Überwachen“ und „Schnellüberwachung“](../debugger/watch-and-quickwatch-windows.md)   
+ [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
+

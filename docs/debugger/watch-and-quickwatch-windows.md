@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826790"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621642"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung 
 
 Während des Debuggens, können Sie **Watch** Windows und **Schnellüberwachung** , Variablen und Ausdrücke zu beobachten. Die Windows sind nur verfügbar, während einer Debugsitzung.
 
 **Sehen Sie sich** Windows können mehrere Variablen zu einem Zeitpunkt während des Debuggens angezeigt. Die **Schnellüberwachung** Dialogfeld zeigt eine einzelne Variable an, und muss geschlossen werden, bevor Sie mit dem Debuggen fortfahren kann.
+
+Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Beobachten Sie Variablen mit einem Überwachungsfenster
 
@@ -142,11 +144,11 @@ Ein Ausdruck mit Nebeneffekten wird nur einmal bei der ersten Eingabe ausgewerte
 
 Werden, dass eine Möglichkeit, die die Bezeichnung Nebeneffekte zu verhindern, dass die automatische funktionsauswertung zu deaktivieren. In **Tools** > **Optionen** > **Debuggen** > **allgemeine**, deaktivieren Sie **Eigenschaftenauswertung und andere implizite Funktionsaufrufe**.
 
-Für C# nur, wenn die Auswertung von Eigenschaften oder impliziten Funktionen deaktiviert ist, Sie können die Auswertung erzwingen durch Hinzufügen der **Ac** Formatmodifizierers auf eine Variable **Namen** in die **ansehen**  Fenster. Finden Sie unter [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md).
+Für C# nur, wenn die Auswertung von Eigenschaften oder impliziten Funktionen deaktiviert ist, Sie können die Auswertung erzwingen durch Hinzufügen der **Ac** Formatmodifizierers auf eine Variable **Namen** in die **ansehen**  Fenster. Weitere Informationen finden Sie unter [Formatieren von Spezifizierern in C#](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="bkmk_objectIds"></a> Verwenden von Objekt-IDs in das Fenster "überwachen" (C# und Visual Basic)
 
-Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Beispielsweise empfiehlt es sich um ein Objekt, das auf eine lokale Variable verweist, nachdem diese Variable den Gültigkeitsbereich verlassen hat nachzuverfolgen. In C# und Visual Basic, Sie können Objekt-IDs für bestimmte Instanzen von Verweistypen erstellen und verwenden sie in der **Watch** Fenster und in haltepunktbedingungen. Die Objekt-ID von der common Language Runtime (CLR), das Debuggen von Diensten generiert und dem Objekt zugeordnet.
+Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Beispielsweise empfiehlt es sich um ein Objekt, das auf eine lokale Variable verweist, nachdem diese Variable den Gültigkeitsbereich verlassen hat nachzuverfolgen. In C# und Visual Basic können Sie Objekt-IDs für bestimmte Instanzen von Verweistypen erstellen und diese im Fenster **Überwachen** und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.
 
 > [!NOTE]
 > Objekt-IDs erstellen weak-Verweise, die das Objekt nicht nicht von der Garbage collection. Sie gelten nur für die aktuelle Debugsitzung.
@@ -217,13 +219,13 @@ Aktualisieren **dynamische Ansicht** Werte, die auf die [Aktualisierungssymbol](
 
 Zur Anzeige der **dynamische Ansicht** für ein Objekt hinzufügen eine **dynamische** Formatbezeichner nach dem Namen des dynamischen Objekts in der **Watch** Fenster:
 
-- Für c#: `ObjectName, dynamic`
+- Für C#: `ObjectName, dynamic`
 - Für Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Die C# Debugger nicht automatisch erneut auswerten, die Werte in der **dynamische Ansicht** Wenn Sie wechseln zur nächsten Zeile des Codes. 
 >- Der Debugger von Visual Basic automatisch aktualisiert wird, Ausdrücke, die hinzugefügt werden, über die **dynamische Ansicht**.
->- Auswerten der Member ein **dynamische Ansicht** können [Nebeneffekte](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- Wenn Sie die Member einer **dynamischen Ansicht** auswerten, kann das zu [Nebenwirkungen](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)) führen. 
 
 **Wenn Sie eine neue Überwachung einfügen wandelt Variable, die ein Objekt in ein dynamisches Objekt:**
   
@@ -278,6 +280,6 @@ Beobachten der `a` -Variable
 1. Debuggen fortsetzen. Sie können beobachten, dass die Variable in der **Watch** Fenster.
 
 ## <a name="see-also"></a>Siehe auch
- [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
- [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)  
+ [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)

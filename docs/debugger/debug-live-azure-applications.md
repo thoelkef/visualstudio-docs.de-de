@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b9162b1e0cc6b1e4e0a5292825dbdebfeff1ae5f
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154462"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821421"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug live ASP.NET-Azure-apps, die mit dem Momentaufnahmedebugger
 
@@ -36,7 +36,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **ASP.NET und Web-entwicklungsworkload**. Für ASP.NET Core, müssen Sie auch die. **NET-Core-Entwicklung** arbeitsauslastung installiert.
+* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **ASP.NET und Web-entwicklungsworkload**. Für ASP.NET Core, müssen Sie auch die **.NET Core-Entwicklung** arbeitsauslastung installiert.
 
     Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise-Version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aktualisieren, führen Sie den Visual Studio-Installer, und überprüfen Sie die Snapshot-Debugger-Komponente in der **ASP.NET und Web-entwicklungsworkload**.
 
@@ -84,7 +84,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
     > [!TIP]
     > Sie können nicht schrittweise, wenn Sie eine Momentaufnahme anzeigen, aber Sie können mehrere andockpunkte platzieren, im Code, um die Ausführung auf verschiedene Codezeilen folgen. Wenn Sie mehrere andockpunkte in Ihrem Code verfügen, wird der Snapshot Debugger sichergestellt, dass die zugehörigen Momentaufnahmen aus der gleichen endbenutzersitzung. Der Momentaufnahmedebugger wird auch wenn viele Benutzer, die Ihrer app vorhanden sind.
 
-## <a name="take-a-snapshot"></a>Erstellen einer Momentaufnahme
+## <a name="take-a-snapshot"></a>Momentaufnahme erstellen
 
 Wenn Sie ein andockpunkt aktiviert ist, wird es eine Momentaufnahme erfasst wird, wenn die Codezeile aus der Platzierung der andockpunkt ausgeführt wird. Diese Ausführung kann von einer echten Anforderung auf dem Server verursacht werden. Erforderlich, um Ihre andockpunkt erreicht, wechseln zu der Browseransicht Ihrer Website und keine Aktionen zu erzwingen, dass dazu führen, dass Ihre andockpunkt erreicht wird.
 
@@ -114,7 +114,7 @@ Ist es schwierig, einen bestimmten Status in Ihrer app neu zu erstellen, berück
 
 1. Mit der rechten Maustaste ein andockpunkt-Symbol (der Ball), und wählen Sie **Einstellungen**.
 
-   ![Wählen Sie die Einstellungen](../debugger/media/snapshot-snappoint-settings.png)
+   ![Einstellung auswählen](../debugger/media/snapshot-snappoint-settings.png)
 
 1. Geben Sie im Fenster andockpunkt einen Ausdruck ein.
 
