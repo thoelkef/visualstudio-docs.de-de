@@ -1,14 +1,14 @@
 items:
 - name: Visual Studio-Dokumentation
   href: ide/index.md
-- name: Überblick
+- name: Übersicht
   items:
   - name: Informationen zu Visual Studio 2017
     href: ide/visual-studio-ide.md
   - name: Informationen zum Code-Editor
-    href: ide/quickstart-editor.md
+    href: get-started/tutorial-editor.md
   - name: Informationen zu Projekte und Projektmappen
-    href: ide/quickstart-projects-solutions.md
+    href: get-started/tutorial-projects-solutions.md
   - name: Weitere Visual Studio-Features
     href: ide/advanced-feature-overview.md
   expanded: true
@@ -90,7 +90,7 @@ items:
         href: ide/command-line-arguments-for-the-help-content-manager.md
       - name: Überschreibungen durch den Hilfeinhalts-Manager
         href: ide/help-content-manager-overrides.md
-    - name: Verweis
+    - name: Referenz
       items:
       - name: Arbeitsauslastung und Komponenten-IDs von Visual Studio
         href: install/workload-and-component-ids.md
@@ -146,7 +146,7 @@ items:
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: Erstellen einer Konsolenanwendung'
     href: ide/quickstart-visual-basic-console.md
-- name: Lernprogramme
+- name: Tutorials
   items:
   - name: C++ in Visual Studio...
     href: /cpp/build/vscpp-step-0-installation
@@ -180,6 +180,8 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: Portieren, Migrieren und Aktualisieren von Projekten
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+      - name: Übertragung, Migration und Upgrade von Projekten in Visual Studio 2019 (Vorschau)
+        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Verwalten von Projekt- und Projektmappeneigenschaften
         href: ide/managing-project-and-solution-properties.md
       - name: Verwalten von Verweisen in einem Projekt
@@ -243,6 +245,8 @@ items:
       items:
       - name: Anpassen von Build- und Debugtasks
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Herstellen einer Verbindung mit einem Projekt oder Repository
+      href: ide/connect-team-project.md
     - name: Verwenden des Editors
       href: ide/writing-code-in-the-code-and-text-editor.md
       items:
@@ -519,7 +523,7 @@ items:
         - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
+          - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
             href: ide/step-1-create-a-windows-forms-application-project.md
           - name: 'Schritt 2: Ausführen des Programms'
             href: ide/step-2-run-your-program.md
@@ -527,7 +531,7 @@ items:
             href: ide/step-3-set-your-form-properties.md
           - name: 'Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
+          - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
             href: ide/step-5-add-controls-to-your-form.md
           - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
             href: ide/step-6-name-your-button-controls.md
@@ -546,17 +550,17 @@ items:
           items:
           - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
+          - name: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
             href: ide/step-2-create-a-random-addition-problem.md
           - name: 'Schritt 3: Hinzufügen eines Countdowntimers'
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
+          - name: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
+          - name: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 'Schritt 6: Hinzufügen einer Subtraktionsaufgabe'
+          - name: 'Schritt 6: Hinzufügen einer Subtraktionsaufgabe'
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
+          - name: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
             href: ide/step-7-add-multiplication-and-division-problems.md
           - name: 'Schritt 8: Anpassen des Quiz'
             href: ide/step-8-customize-the-quiz.md
@@ -721,7 +725,7 @@ items:
         href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
     - name: Erstellen von Apps in bidirektionalen Sprachen
       href: ide/creating-applications-in-bi-directional-languages.md
-- name: Verweis
+- name: Referenz
   items:
   - name: Projekt- und Elementvorlagen
     items:
@@ -739,9 +743,9 @@ items:
       href: ide/reference/code-snippet-picker.md
     - name: Befehlsfenster
       href: ide/reference/command-window.md
-    - name: Dialogfeld "Konvertieren"
+    - name: Konvertieren (Dialogfeld)
       href: ide/reference/convert-dialog-box.md
-    - name: Fenster "Fehlerliste"
+    - name: Fehlerliste (Fenster)
       href: ide/reference/error-list-window.md
     - name: Dateieigenschaften, JavaScript
       href: ide/reference/file-properties-javascript.md
@@ -749,7 +753,7 @@ items:
       href: ide/reference/go-to-line.md
     - name: Direktfenster
       href: ide/reference/immediate-window.md
-    - name: Sonstige Dateien
+    - name: Verschiedene Dateien
       href: ide/reference/miscellaneous-files.md
     - name: Dialogfeld "Optionen"
       href: ide/reference/options-dialog-box-visual-studio.md
@@ -858,10 +862,10 @@ items:
       items:
       - name: Seite „Anwendung“, Projekt-Designer (UWP)
         href: ide/reference/application-page-project-designer-uwp.md
-      - name: Seite "Anwendung", Projekt-Designer (Visual Basic)
+      - name: Application Page, Project Designer (Visual Basic)
         href: ide/reference/application-page-project-designer-visual-basic.md
         items:
-        - name: Dialogfeld "Assemblyinformationen"
+        - name: Assemblyinformationen (Dialogfeld)
           href: ide/reference/assembly-information-dialog-box.md
       - name: Seite "Anwendung", Projekt-Designer (C#)
         href: ide/reference/application-page-project-designer-csharp.md
@@ -898,7 +902,7 @@ items:
       - name: Seite "Sicherheit", Projekt-Designer
         href: ide/reference/security-page-project-designer.md
         items:
-        - name: Dialogfeld "Erweiterte Sicherheitseinstellungen"
+        - name: Erweiterte Sicherheitseinstellungen (Dialogfeld)
           href: ide/reference/advanced-security-settings-dialog-box.md
       - name: Services-Seite, Projekt-Designer
         href: ide/reference/services-page-project-designer.md
@@ -913,12 +917,14 @@ items:
       href: ide/reference/property-pages-javascript.md
     - name: Eigenschaftenfenster
       href: ide/reference/properties-window.md
-    - name: Toolbox
+    - name: Team Explorer-Referenz
+      href: ide/reference/team-explorer-reference.md
+    - name: Werkzeugkasten
       href: ide/reference/toolbox.md
       items:
       - name: Toolbox, Registerkarte „Komponenten“
         href: ide/reference/toolbox-components-tab.md
-      - name: Toolbox, Registerkarte „Daten“
+      - name: Toolbox, Daten (Registerkarte )
         href: ide/reference/toolbox-data-tab.md
       - name: Toolbox, Registerkarte „HTML“
         href: ide/reference/toolbox-html-tab.md
@@ -972,7 +978,7 @@ items:
   - name: Visual Studio-Befehle
     href: ide/reference/visual-studio-commands.md
     items:
-    - name: Visual Studio-Befehlsaliase
+    - name: Visual Studio Command Aliases
       href: ide/reference/visual-studio-command-aliases.md
     - name: Befehl "Vorhandenes Element hinzufügen"
       href: ide/reference/add-existing-item-command.md
@@ -1127,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Sprechen Sie mit uns
     href: ide/talk-to-us.md
-ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895547"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027444"
