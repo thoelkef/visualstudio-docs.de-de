@@ -192,7 +192,7 @@ Als Nächstes führen Sie die App mit dem angefügten Visual Studio-Debugger aus
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-1. Wählen Sie das Debugziel in der Debug-Symbolleiste aus, z.B. Edge oder Chrome.
+1. Wählen Sie das Debugziel in der Debug-Symbolleiste aus, z.B. Microsoft Edge oder Chrome.
 
     ![Debugziel auswählen](../javascript/media/tutorial-nodejs-deploy-target.png)
 
