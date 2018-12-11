@@ -1,5 +1,5 @@
 ---
-title: Konfigurationen und Plattformen für Tests der programmierten UI in Visual Studio
+title: Konfigurationen und Plattformen für Tests der programmierten UI
 ms.date: 2015-10-04
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b56f83a7a1ec74235e66f18e8134f72bfd14a2ef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e4eb09bf1b5477c609dc2b9e3b1502274bc9b931
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295916"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894378"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 
@@ -25,8 +25,9 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 > [!NOTE]
 > Der Prozess für den Test der codierten UI muss über die gleichen Rechte wie die getestete App verfügen.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Anforderungen**
+**Anforderungen**
 
 -   Visual Studio Enterprise
 

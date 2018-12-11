@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Indikatoren zu Indikatorensätzen für Auslastungstests in Visual Studio
+title: Hinzufügen von Indikatoren zu Indikatorensätzen für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203637"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894702"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen mit dem Auslastungstest-Editor
 
 Wenn Sie mithilfe des **Auslastungstest-Assistenten** einen Auslastungstest erstellen, fügen Sie einen Anfangssatz von Indikatoren hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Weitere Informationen finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
 > Bei der Verteilung der Auslastungstests auf mehrere Remotecomputer werden Indikatoren für Controller und Agents den Controller- und Agent-Indikatorensätzen zugeordnet. Weitere Informationen zur Verwendung von Remotecomputern im Auslastungstest finden Sie unter [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
-
- Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten. Dem Test bereits hinzugefügte Indikatorensätze werden im Knoten **Indikatorensätze** des Auslastungstests angezeigt. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen neue Indikatoren hinzufügen.
+Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten. Dem Test bereits hinzugefügte Indikatorensätze werden im Knoten **Indikatorensätze** des Auslastungstests angezeigt. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen neue Indikatoren hinzufügen.
 
 ## <a name="to-add-counters-to-a-counter-set"></a>So fügen Sie einem Indikatorensatz Indikatoren hinzu
 

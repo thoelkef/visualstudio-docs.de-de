@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Diagramms für Aktivitäten virtueller Benutzer bei Auslastungstests in Visual Studio
+title: Verwenden des Diagramms für Aktivitäten virtueller Benutzer bei Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295789"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895924"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -24,17 +24,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit dem Diagramm f
 
 Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten von virtuellen Benutzern dargestellt werden, die dem Auslastungstest zugeordnet sind. Jede Zeile im Diagramm stellt einen einzelnen virtuellen Benutzer dar. Das Diagramm für Aktivitäten virtueller Benutzer gibt genauen Aufschluss über die Aktionen der einzelnen virtuellen Benutzer während des Tests. So können Sie Leistungsprobleme isolieren, indem Sie Muster der Benutzeraktivität anzeigen, Muster laden, fehlgeschlagene oder langsame Tests in Zusammenhang setzen und Anforderungen mit anderen Aktivitäten virtueller Benutzer anzeigen. Das Diagramm für die Aktivitäten virtueller Benutzer ist erst nach dem Ausführen des Auslastungstests verfügbar.
 
-Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:
-
--   Erfahren Sie, wie Sie die folgenden Tools verwenden, die dem Diagramm für die Aktivitäten der virtuellen Benutzer zugeordnet sind:
-
-    -   Verwenden Sie das Tool **Zoom zum Zeitraum**, um einen bestimmten Zeitraum im Diagramm anzugeben, den Sie analysieren möchten.
-
-    -   Verwenden Sie die Bereiche **Detaillegende** und **Filterergebnisse**, um Filter auf das Diagramm anzuwenden und so Probleme leichter zu isolieren.
-
--   Analysieren Sie mithilfe des Diagramms für die Aktivitäten der virtuellen Benutzer einen Fehler, der für einen bestimmten virtuellen Benutzer aufgetreten ist, und zeigen Sie die Details zum problematischen Fehlertyp an.
-
-Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -47,8 +37,6 @@ Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Be
     -   [Erstellen und Ausführen eines Auslastungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Öffnen der in vorherigen exemplarischen Vorgehensweisen erstellten Projektmappe „ColorWebApp“
-
-### <a name="open-the-solution"></a>Öffnen der Projektmappe
 
 1.  Starten Sie Visual Studio.
 

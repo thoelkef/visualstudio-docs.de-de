@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388620"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894546"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Vorgehensweise: Ändern der im Editor in Visual Studio 2017 verwendeten Schriftarten und Farben
 
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie Folgendes beachten:
 

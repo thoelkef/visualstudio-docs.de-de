@@ -5,26 +5,30 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 19223bf7c2a0c1645842aa57476af283f3e0d1f1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 1e3c14687fe48b3929488f539378d49bf2d43e65
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257328"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895404"
 ---
-# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
+# <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
+
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichungstermine für Visual Studio 2017 aufgeführt.
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.3 | Vorschauversion 1 | 28. November 2018 | 15.9.28307.145 |
+| 15.9.3 | Release | 28. November 2018 | 15.9.28307.145 |
 | 15.9.2 | Release | 19. November 2018 | 15.9.28307.108 |
 | 15.9.1 | Release | 15. November 2018 | 15.9.28307.105 |
 | 15.9.0 | Release | 13. November 2018 | 15.9.28307.53 |
@@ -84,35 +88,35 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.6.0 Vorschauversion 7 | Vorschau | 02. März 2018 | 15.6.27428.1 |
 | 15.6.0 Vorschauversion 6 | Vorschau | 23. Februar 2018 | 15.6.27421.1 |
 | 15.0.10 | Release | 21. Februar 2018 | 15.0.26228.28 |
-| 15.5.7 | Release | 20. Februar 2018 | 15.5.27130.2036 |
+| 15.5.7 | Release | 20. Februar 2018 | 15.0.27130.2036 |
 | 15.6.0 Vorschauversion 5 | Vorschau | 14. Februar 2018 | 15.6.27413.0 |
 | 15.6.0 Vorschauversion 4 | Vorschau | 7. Februar 2018 | 15.6.27406.0 |
 | 15.0.9 | Release | 2. Februar 2018 | 15.0.26228.23 |
-| 15.5.6 | Release | 29. Januar 2018 | 15.5.27130.2027 |
-| 15.5.5 | Release | 25. Januar 2018 | 15.5.27130.2026 |
+| 15.5.6 | Release | 29. Januar 2018 | 15.0.27130.2027 |
+| 15.5.5 | Release | 25. Januar 2018 | 15.0.27130.2026 |
 | 15.6.0 Vorschauversion 3 | Vorschau | 25. Januar 2018 | 15.6.27323.2 |
-| 15.5.4 | Release | 16. Januar 2018 | 15.5.27130.2024 |
+| 15.5.4 | Release | 16. Januar 2018 | 15.0.27130.2024 |
 | 15.6.0 Vorschauversion 2 | Vorschau | 10. Januar 2018 | 15.6.27309.0 |
-| 15.5.3 | Release |  9. Januar 2018 | 15.5.27130.2020 |
+| 15.5.3 | Release |  9. Januar 2018 | 15.0.27130.2020 |
 | 15.0.8 | Release |  9. Januar 2018 | 15.0.26228.21 |
-| 15.5.2 | Release | 14. Dezember 2017 | 15.5.27130.2010 |
+| 15.5.2 | Release | 14. Dezember 2017 | 15.0.27130.2010 |
 | 15.6.0 Vorschauversion 1 | Vorschau | 14. Dezember 2017 | 15.6.27205.2004 |
-| 15.5.1 | Release | 7. Dezember 2017 | 15.5.27130.2003 |
+| 15.5.1 | Release | 7. Dezember 2017 | 15.0.27130.2003 |
 | 15.6.0 Vorschauversion 1 | Vorschau | 7. Dezember 2017 | 15.6.27205.0 |
 | 15.0.7 | Release | 6. Dezember 2017 | 15.0.26228.18 |
-| 15.5 | Release | 4. Dezember 2017 | 15.5.27130.0 |
-| 15.5.0 Vorschauversion 5 | Vorschau | 30. November 2017 | 15.5.27128.1 |
-| 15.4.5 | Release | 27. November 2017 | 15.4.27004.2010 |
-| 15.5.0 Vorschauversion 4 | Vorschau | 14. November 2017 | 15.5.27110.0 |
-| 15.4.4 | Release | 14. November 2017 | 15.4.27004.2009 |
+| 15.5 | Release | 4. Dezember 2017 | 15.0.27130.0 |
+| 15.5.0 Vorschauversion 5 | Vorschau | 30. November 2017 | 15.0.27128.1 |
+| 15.4.5 | Release | 27. November 2017 | 15.0.27004.2010 |
+| 15.5.0 Vorschauversion 4 | Vorschau | 14. November 2017 | 15.0.27110.0 |
+| 15.4.4 | Release | 14. November 2017 | 15.0.27004.2009 |
 | 15.0.6 | Release | 14. November 2017 | 15.0.26228.17 |
-| 15.4.3 | Release | 8. November 2017 | 15.4.27004.2008 |
-| 15.5.0 Vorschauversion 3 | Vorschau | 6. November 2017 | 15.5.27102.0 |
-| 15.4.2 | Release | 31. Oktober 2017 | 15.4.27004.2006 |
-| 15.5.0 Vorschauversion 2 | Vorschau | 23. Oktober 2017 | 15.5.27019.1 |
-| 15.4.1 | Release | 19. Oktober 2017 | 15.4.27004.2005 |
+| 15.4.3 | Release | 8. November 2017 | 15.0.27004.2008 |
+| 15.5.0 Vorschauversion 3 | Vorschau | 6. November 2017 | 15.0.27102.0 |
+| 15.4.2 | Release | 31. Oktober 2017 | 15.0.27004.2006 |
+| 15.5.0 Vorschauversion 2 | Vorschau | 23. Oktober 2017 | 15.0.27019.1 |
+| 15.4.1 | Release | 19. Oktober 2017 | 15.0.27004.2005 |
 | 15.5 Vorschauversion 1 | Vorschau | 11. Oktober 2017 | 15.0.27009.1 |
-| 15.4 | Release | 9. Oktober 2017 | 15.0.27004.20002 |
+| 15.4 | Release | 9. Oktober 2017 | 15.0.27004.2002 |
 | 15.4 Vorschauversion 6 | Vorschau | 9. Oktober 2017| 15.0.27004.20002 |
 | 15.4 Vorschauversion 5 | Vorschau | 6. Oktober 2017 | 15.0.27004.2000 |
 | 15.4 Vorschauversion 4 | Vorschau | 2. Oktober 2017 | 15.0.26929.2 |
@@ -127,7 +131,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.3.1 | Release | 18. August 2017 | 15.0.26730.08 |
 | 15.3.1 Vorschauversion 1 | Vorschau | 18. August 2017 | 15.0.26730.08 |
 | 15.3.1  | Release | 18. August 2017 | 15.0.26730.08 |
-| 15.4 Vorschauversion 1 | Vorschau | 24. August 2017 | 15.4.26823.1 |
+| 15.4 Vorschauversion 1 | Vorschau | 24. August 2017 | 15.0.26823.1 |
 | 15.3 | Release | 14. August 2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7.1 | Vorschau | 11. August 2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7 | Vorschau | 1. August 2017 | 15.0.26730.0 |
@@ -161,6 +165,14 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.0.1  | Release | 14. März 2017 | 15.0.26228.9 |
 | 15.1 Vorschauversion 1 | Vorschau | 7. März 2017 | 15.0.26304.0 |
 | 15.0.0 | Release | 7. März 2017 | 15.0.26228.4 |
+
+## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Vorschauversion
+
+In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichungstermine für die Vorschauversion von Visual Studio 2019 aufgeführt.
+
+| **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Vorschauversion 1 | 4. Dezember 2018 | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

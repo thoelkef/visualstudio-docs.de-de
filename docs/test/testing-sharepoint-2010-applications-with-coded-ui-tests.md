@@ -1,5 +1,5 @@
 ---
-title: Testen von SharePoint-Anwendungen mit Tests der programmierten UI in Visual Studio
+title: Testen von SharePoint-Anwendungen mit Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379711"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895443"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testen von SharePoint-Anwendungen mit Tests der programmierten UI
 
 Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwendung können Sie sicherstellen, dass die gesamte Anwendung, einschließlich der zugehörigen Benutzeroberflächen-Steuerelemente, richtig funktioniert. Tests der programmierten UI können zudem Werte und Logik auf der Benutzeroberfläche validieren .
 
 Weitere Informationen über die Vorteile von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Anforderungen**
 

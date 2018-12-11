@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379805"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895196"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio
 
 Sie können den Adapter für diagnostische Daten des ASP.NET-Profilers verwenden, um ASP.NET-Profilerinformationen zu sammeln. Dieser Adapter für diagnostische Daten erfasst Leistungsdaten für ASP.NET-Anwendungen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Dieser Adapter für diagnostische Daten kann nicht für Tests verwendet werden, die mit Microsoft Test Manager ausgeführt werden. Der Diagnoseadapter des ASP.NET-Profilers kann nur für Auslastungstests mit Websites verwendet werden, für die Visual Studio Enterprise erforderlich ist.
@@ -31,13 +33,9 @@ Mit dem Adapter für diagnostische Daten des ASP.NET-Profilers können ASP.NET-P
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-In der folgenden Prozedur wird beschrieben, wie Sie den Adapter für diagnostische Daten des ASP.NET-Profilers konfigurieren.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>So konfigurieren Sie den ASP.NET-Profiler für die Testeinstellungen
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Konfigurieren des ASP.NET-Profilers für die Testeinstellungen
 
 Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio und dann die Seite **Daten und Diagnose** öffnen.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>So konfigurieren Sie den ASP.NET-Profiler für die Testeinstellungen
 
 1.  Wählen Sie die Rolle aus, die zum Erfassen der ASP.NET-Profilerdaten verwendet werden soll.
 

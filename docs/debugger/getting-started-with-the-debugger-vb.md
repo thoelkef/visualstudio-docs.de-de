@@ -1,5 +1,5 @@
 ---
-title: Informationen zum Debuggen von C#-Code mithilfe des Visual Studio-Debuggers
+title: Debuggen von Visual Basic-Code mithilfe des Visual Studio-Debuggers
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
 ms.date: 11/27/2018
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 7f568c5785af1917827646d232ef3c6c8f0ad41b
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821304"
+ms.locfileid: "52825971"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Informationen zum Debuggen von C#-Code mit Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Informationen zum Debuggen von Visual Basic-Code mit Visual Studio
 
-In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Einen allgemeineren Überblick über die Funktionen des Debuggers finden Sie unter [Übersicht über die Funktionen des Debuggers](../debugger/debugger-feature-tour.md). Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 | | |
 |---------|---------|
 | ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Zum Debuggen können Sie sich ein [Video ansehen](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171), in dem ähnliche Schritte beschrieben werden. |
-
-Auch wenn die Demo-App C# verwendet, beziehen sich die meisten Funktionen auf C++, Visual Basic, F#, Python, JavaScript und andere von Visual Studio unterstützten Programmiersprachen (F# unterstützt „Bearbeiten und Fortfahren“ nicht. Das Fenster **Auto** wird weder von JavaScript noch F# unterstützt). Die Screenshots wurden in C# erstellt.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -52,7 +50,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
-2. Klicken Sie unter **Visual C#** auf **Windows-Desktop** und dann im mittleren Bereich auf **Konsolen-App**.
+2. Klicken Sie unter **Visual Basic** auf **Windows-Desktop** und dann im mittleren Bereich auf **Konsolen-App**.
 
     Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload *.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
@@ -62,107 +60,121 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 4. Ersetzen Sie in *Program.cs* den folgenden Code:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    ```vb
+    Module Module1
 
-    namespace get_started_debugging
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
-    }
+        Sub Main()
+        End Sub
+
+    End Module
     ```
 
     durch den folgenden:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
 
-    public class Shape
-    {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
-        // Virtual method
-        public virtual void Draw()
-        {
-            Console.WriteLine("Performing base class drawing tasks");
-        }
-    }
+    Public Class Shape
 
-    class Circle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
-        }
-    }
+      ' A few example members
+        Public Property X As Integer
+            Get
+                Return X
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Rectangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
-        }
-    }
+        Public Property Y As Integer
+            Get
+                Return Y
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Triangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
-        }
-    }
+        Public Property Height As Integer
+            Get
+                Return Height
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
+        Public Property Width As Integer
+            Get
+                Return Width
+            End Get
+            Set
+            End Set
+        End Property
 
-            var shapes = new List<Shape>
+        ' Virtual method
+        Public Overridable Sub Draw()
+            Console.WriteLine("Performing base class drawing tasks")
+        End Sub
+    End Class
+
+    Public Class Circle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a circle...
+            Console.WriteLine("Drawing a circle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Rectangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a rectangle...
+            Console.WriteLine("Drawing a rectangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Triangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a triangle...
+            Console.WriteLine("Drawing a trangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Module Module1
+
+        Sub Main(ByVal args() As String)
+
+            Dim shapes = New List(Of Shape) From
             {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
+                New Rectangle,
+                New Triangle,
+                New Circle
             }
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
+            For Each shape In shapes
+                shape.Draw()
+            Next
+            ' Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.")
+            Console.ReadKey()
 
-    }
+        End Sub
 
-    /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
-    */
+    End Module
+
+    ' Output:
+    '    Drawing a rectangle
+    '    Performing base class drawing tasks
+    '    Drawing a triangle
+    '    Performing base class drawing tasks
+    '    Drawing a circle
+    '    Performing base class drawing tasks
     ```
 
 ## <a name="start-the-debugger"></a>Starten Sie den Debugger.
@@ -186,17 +198,19 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Breakpoints und Starten des Debuggers
 
-1. Legen Sie in der `foreach`-Schleife der Funktion `Main` einen Breakpoint fest, indem Sie auf den linken Rand der folgenden Codezeile klicken:
+1. Legen Sie in der `For Each`-Schleife der Funktion `Main` einen Breakpoint fest, indem Sie auf den linken Rand der folgenden Codezeile klicken:
 
     `shape.Draw()`
 
     An der Stelle des Haltepunkts wird ein roter Kreis angezeigt.
 
+    ![Haltepunkt festlegen](../debugger/media/get-started-set-breakpoint-vb.png)
+
     Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
 
 2. Wenn Sie die Taste **F5** drücken oder auf die Schaltfläche **Debuggen starten** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging" klicken, wird die App gestartet, und der Debugger geht zu der Codezeile, in der Sie den Haltepunkt festgelegt haben.
 
-    ![Festlegen und Treffen eines Haltepunkts](../debugger/media/get-started-set-breakpoint.gif)
+    ![Treffen eines Haltepunkts](../debugger/media/get-started-hit-breakpoint-vb.png)
 
     Der gelbe Pfeil stellt die Anweisung dar, an der der Debugger angehalten hat. An der gleichen Stelle wird auch die Ausführung der App unterbrochen (diese Anweisung wurde noch nicht ausgeführt).
 
@@ -208,23 +222,23 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese Weise eine schnelle Ausführung Ihrer App im Debugger möglich ist (entsprechende Befehle, wie z.B. Menübefehle, werden in Klammern angezeigt).
 
-1. Drücken Sie, während der `shape.Draw`-Methodenaufruf in der `Main`-Methode angehalten wurde, die Taste **F11** (oder klicken Sie auf **Debuggen > Schrittweise ausführen**), um den Code für die `Rectangle`-Klasse anzuzeigen.
+1. Drücken Sie, während der `shape.Draw`-Methodenaufruf in der `Main`-Funktion angehalten wurde, die Taste **F11** (oder klicken Sie auf **Debuggen > Schrittweise ausführen**), um den Code für die `Rectangle`-Klasse anzuzeigen.
 
-     ![Verwenden von F11 für schrittweise Codeausführung](../debugger/media/get-started-f11.png "F11: Schrittweise ausführen")
+     ![Verwenden von F11 für schrittweise Codeausführung](../debugger/media/get-started-f11-vb.png "F11: Schrittweise ausführen")
 
      Durch Drücken der Taste F11 wird der Befehl **Schrittweise ausführen** gesendet und die App Anweisung für Anweisung ausgeführt. Das Drücken der Taste F11 bietet eine gute Möglichkeit, den Ausführungsablauf am ausführlichsten zu überprüfen. (Wenn Sie den Code schneller durchlaufen möchten, zeigen wir Ihnen auch einige andere Optionen.) Standardmäßig überspringt der Debugger Nichtbenutzercode (weitere Einzelheiten hierzu finden Sie unter [Nur eigenen Code](../debugger/just-my-code.md)).
 
-2. Drücken Sie so lange die Taste **F10** (oder klicken Sie auf **Debuggen > Step Over (Überspringen)**), bis der Debugger beim `base.Draw`-Methodenaufruf anhält. Drücken Sie anschließend erneut die Taste **F10**.
+2. Drücken Sie so lange die Taste **F10** (oder klicken Sie auf **Debuggen > Step Over (Überspringen)**), bis der Debugger beim `MyBase.Draw`-Methodenaufruf anhält. Drücken Sie anschließend erneut die Taste **F10**.
 
-     ![Verwenden von F10 zum Überspringen von Code](../debugger/media/get-started-step-over.png "F10 – Überspringen")
+     ![Verwenden von F10 zum Überspringen von Code](../debugger/media/get-started-step-over-vb.png "F10 – Überspringen")
 
-     Beachten Sie, dass der Debugger die `Draw`-Methode der Basisklasse (`Shape`) dieses Mal nicht schrittweise ausführt. Durch Drücken der Taste **F10** fährt der Debugger in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird immer noch ausgeführt). Durch Drücken der Taste F10 im `base.Draw`-Methodenaufruf (anstelle der Taste **F11**) wurde der Implementierungscode für `base.Draw` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist).
+     Beachten Sie, dass der Debugger die `Draw`-Methode der Basisklasse (`Shape`) dieses Mal nicht schrittweise ausführt. Durch Drücken der Taste **F10** fährt der Debugger in Ihrem App-Code fort, ohne dass Funktionen oder Methoden schrittweise ausgeführt werden (der Code wird immer noch ausgeführt). Durch Drücken der Taste F10 im `MyBase.Draw`-Methodenaufruf (anstelle der Taste **F11**) wurde der Implementierungscode für `MyBase.Draw` übersprungen (der für uns gerade möglicherweise nicht von Interesse ist).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navigieren durch Code mithilfe von „Ausführung bis Klick“
 
 1. Scrollen Sie im Code-Editor nach unten und bewegen Sie den Cursor so lange über die `Console.WriteLine`-Methode in der `Triangle`-Klasse, bis auf der linken Seite die grüne Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "Ausführung bis Klick") angezeigt wird.
 
-     ![Verwenden der Funktion „Ausführung bis Klick“](../debugger/media/get-started-run-to-click.png "Ausführung bis Klick")
+     ![Verwenden der Funktion „Ausführung bis Klick“](../debugger/media/get-started-run-to-click-vb.png "Ausführung bis Klick")
 
    > [!NOTE]
    > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
@@ -254,7 +268,7 @@ Angenommen Sie haben die `Draw`-Methode in der `Triangle`-Klasse fertig untersuc
 
      Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Debugger weiter ausgeführt), bis die aktuelle Funktion wieder ausgeführt wird.
 
-     Jetzt sollten Sie sich wieder in der `foreach`-Schleife in der `Main`-Methode befinden.
+     Jetzt sollten Sie sich wieder in der `For Each`-Schleife in der `Main`-Methode befinden.
 
 ## <a name="restart-your-app-quickly"></a>Schnelles Neustarten Ihrer App
 
@@ -268,31 +282,25 @@ Der Debugger hält erneut an dem von Ihnen festgelegten Breakpoint an, bei der `
 
 Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlichsten Funktionen des Debuggers. Es gibt verschiedene Möglichkeiten, Variablen zu untersuchen. Beim Debuggen eines Problems wird häufig versucht herauszufinden, ob Variablen die Werte speichern, die diese zu einem bestimmten Zeitpunkt erwartungsgemäß aufweisen.
 
-1. Während der Debugger bei der `shape.Draw()`-Methode anhält und Sie den Cursor über das Objekt `shape` bewegen, wird Ihnen der zugehörige Standardeigenschaftswert, der Objekttyp `Rectangle`, angezeigt.
+1. Während der Debugger bei der `shape.Draw()`-Methode anhält und Sie den Cursor über das Objekt `shapes` bewegen, wird Ihnen der zugehörige Standardeigenschaftswert, die Eigenschaft `Count`, angezeigt.
 
-1. Erweitern Sie das Objekt `shape`, um dessen Eigenschaften anzuzeigen (wie z.B. die Eigenschaft `Height`, die den Wert 0 besitzt).
+1. Erweitern Sie das Objekt `shapes`, um sämtliche zugehörige Eigenschaften anzuzeigen, wie z. B. den ersten Index des Arrays `[0]` mit dem Wert `Rectangle`.
 
-1. Drücken Sie mehrmals die Taste **F10** (oder alternativ **Debuggen** > **Überspringen**), um die `foreach`-Schleife einmal zu durchlaufen und wieder bei `shape.Draw()` anzuhalten.
+     ![Anzeigen eines Datentipps](../debugger/media/get-started-data-tip-vb.png "View a Data Tip")
 
-1. Zeigen Sie erneut auf das Shape-Objekt. Dieses Mal sehen Sie, dass ein neues Objekt mit einem Typ `Triangle` vorhanden ist.
+    Sie können Objekte weiter erweitern, um die zugehörigen Eigenschaften anzuzeigen, wie z.B. die Eigenschaft `Height` des Rechtecks.
 
-     ![Anzeigen eines Datentipps](../debugger/media/get-started-data-tip.gif "View a Data Tip")
-
-    Beim Debuggen möchten Sie häufig Eigenschaftswerte von Variablen schnell überprüfen können, um zu sehen, ob sie die Werte speichern, die sie speichern möchten. Die Datentipps sind eine gute Möglichkeit dafür.
+    Beim Debuggen möchten Sie häufig eine schnelle Möglichkeit zum Überprüfen der Eigenschaftswerte für Objekte. Die Datentipps stellen eine gute Methode hierfür dar.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Untersuchen von Variablen über die Fenster „Auto“ und „Lokal“
 
 1. Schauen Sie sich das Fenster **Auto** unten im Code-Editor an.
 
-    Falls dieses geschlossen ist, öffnen Sie es während einer Unterbrechung im Debugger. Klicken Sie dazu auf **Debuggen** > **Fenster** > **Auto**.
-
-1. Erweitern Sie das `shapes`-Objekt.
-
-     ![Untersuchen von Variablen im Fenster „Auto“](../debugger/media/get-started-autos-window.png "Fenster „Auto“")
+     ![Untersuchen von Variablen im Fenster „Auto“](../debugger/media/get-started-autos-window-vb.png "Fenster „Auto“")
 
     Im Fenster **Auto** werden Ihnen Variablen und der zugehörige aktuelle Wert angezeigt. Im **Auto**-Fenster werden alle Variablen angezeigt, die auf der aktuellen Zeile oder der vorangehenden Zeile verwendet werden (lesen Sie dazu die Dokumentation für sprachspezifisches Verhalten).
 
-1. Schauen Sie sich als Nächstes das Fenster **Lokal** auf einer Registerkarte neben dem Fenster **Auto** an.
+2. Schauen Sie sich als Nächstes das Fenster **Lokal** auf einer Registerkarte neben dem Fenster **Auto** an.
 
     Im Fenster **Lokal** werden Ihnen die Variablen angezeigt, die sich im aktuellen [Bereich](https://www.wikipedia.org/wiki/Scope_(computer_science)) befinden, also im aktuellen Ausführungskontext.
 
@@ -306,15 +314,13 @@ Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlic
 
 ## <a name="examine-the-call-stack"></a>Überprüfen der Aufrufliste
 
-1. Klicken Sie, nachdem in der `foreach`-Schleife angehalten wurde, auf das Fenster **Aufrufliste**. Dieses Fenster ist standardmäßig im unteren rechten Bereich geöffnet.
+1. Klicken Sie, nachdem in der `For Each`-Schleife angehalten wurde, auf das Fenster **Aufrufliste**. Dieses Fenster ist standardmäßig im unteren rechten Bereich geöffnet.
 
-    Falls dieses geschlossen ist, öffnen Sie es während einer Unterbrechung im Debugger. Klicken Sie dazu auf **Debuggen** > **Fenster** > **Aufrufliste**.
+2. Drücken Sie einige Male die Taste **F11**, bis der Debugger bei der `MyBase.Draw`-Methode der Klasse `Rectangle` im Code-Editor anhält. Schauen Sie sich das Fenster **Aufrufliste** an.
 
-2. Drücken Sie einige Male die Taste **F11**, bis der Debugger für die `Triangle`-Klasse bei der `Base.Draw`-Methode im Code-Editor anhält. Schauen Sie sich das Fenster **Aufrufliste** an.
+    ![Überprüfen der Aufrufliste](../debugger/media/get-started-call-stack-vb.png "ExamineCallStack")
 
-    ![Überprüfen der Aufrufliste](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. In der obersten Zeile wird die aktuelle Funktion (in dieser App die `Triangle.Draw`-Methode) angezeigt. In der zweiten Zeile wird angezeigt, dass `Triangle.Draw` über die `Main`-Methode aufgerufen wurde usw.
+    Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. In der obersten Zeile wird die aktuelle Funktion (in dieser App die `Rectangle.Draw`-Methode) angezeigt. In der zweiten Zeile wird angezeigt, dass `Rectangle.Draw` über die `Main`-Funktion aufgerufen wurde usw.
 
    > [!NOTE]
    > Das Fenster **Aufrufliste** ist mit der Debugperspektive in einigen IDEs wie Eclipse vergleichbar.
@@ -327,11 +333,11 @@ Funktionen, mit denen Sie Variablen untersuchen können, zählen zu den nützlic
 
 ## <a name="change-the-execution-flow"></a>Ändern des Ausführungsablaufs
 
-1. Wenn der Debugger im Methodenaufruf `Circle.Draw` angehalten wurde, ziehen Sie den gelben Pfeil (den Ausführungszeiger) mit der Maus nach links und um eine Zeile nach oben in den `Console.WriteLine`-Methodenaufruf.
+1. Wenn der Debugger im Methodenaufruf `MyBase.Draw` der Klasse `Rectangle` angehalten wurde, ziehen Sie den gelben Pfeil (den Ausführungszeiger) mit der Maus nach links und um eine Zeile nach oben in den `Console.WriteLine`-Methodenaufruf.
 
 1. Drücken Sie die Taste **F11**.
 
-    Der Debugger führt die `Console.WriteLine`-Methode erneut aus (dies wird Ihnen in der Ausgabe im Konsolenfenster angezeigt).
+    Der Debugger führt die `Console.WriteLine`-Methode erneut aus (die doppelte Ausgabe wird im Konsolenfenster angezeigt).
 
     Durch Ändern des Ausführungsablaufs können Sie Aktionen ausführen wie das Testen verschiedener Pfade für die Codeausführung oder das erneute Ausführen von Code ohne Neustarten des Debuggers.
 

@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821837"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895261"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
 Die Zeit, die Websites benötigen, bis sie vollständig geladen sind, wird *Antwortzeit* genannt. Beim Erstellen eines Webleistungstests können Sie für jede Webseitenanforderung im Webleistungstest ein Antwortzeitziel festlegen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt wird, können für jede Seite folgende Informationen analysiert werden:
 
@@ -36,8 +38,6 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 -   Analysieren der Antwortzeiten von Webseiten in der Diagrammansicht
 
 ## <a name="view-response-time-data-in-a-table"></a>Anzeigen der Antwortzeitdaten in einer Tabelle
-
-### <a name="to-view-response-time-data-in-a-table"></a>So zeigen Sie Antwortzeitdaten in einer Tabelle an
 
 1. Klicken Sie im Fenster **Auslastungstest-Analyzer** auf der Symbolleiste auf **Tabellen**, um sicherzustellen, dass das Tabellenraster angezeigt wird.
 
@@ -70,7 +70,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können Sie die Änderungen während des Auslastungstests verfolgen. Diese Funktion ist besonders hilfreich, wenn sich das Auslastungsmuster im Verlauf des Tests erhöht (was z. B. bei einem schrittweisen Auslastungsmuster der Fall ist). Weitere Informationen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>So zeigen Sie Antwortzeitdaten in einem Diagramm an
+So zeigen Sie Antwortzeitdaten in einem Diagramm an:
 
 1. Klicken Sie im Fenster **Auslastungstest-Analyzer** in der Symbolleiste auf **Diagramme**, um sicherzustellen, dass das Diagramm angezeigt wird.
 
