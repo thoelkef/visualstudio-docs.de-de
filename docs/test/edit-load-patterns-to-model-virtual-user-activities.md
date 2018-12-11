@@ -1,5 +1,5 @@
 ---
-title: Auslastungsmuster für Auslastungstests in Visual Studio
+title: Auslastungsmuster für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862501"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895300"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -27,6 +27,8 @@ Bei dem Auslastungsmuster handelt es sich um die Komponente eines Szenarios. Die
 
 > [!NOTE]
 > In allen Auslastungsmustern ist die von Visual Studio generierte Last eine simulierte Auslastung der virtuellen Benutzer.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>Auslastungsmuster
 

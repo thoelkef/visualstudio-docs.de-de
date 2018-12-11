@@ -1,5 +1,5 @@
 ---
-title: Testmischung für ein Auslastungstestszenario in Visual Studio
+title: Testmischung für ein Auslastungstestszenario
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179514"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895989"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zum Angeben, welche Webleistungstests, Komponententests und Tests der programmierten UI in ein Auslastungstestszenario einbezogen werden sollen
 
 Die *Testmischung* eines Szenarios ergibt sich aus einer Kombination verschiedener Faktoren, beispielsweise der Auswahl von Webleistungs- und Komponententests, die im Szenario enthalten sind, und der Verteilung dieser Tests im Szenario. Bei der Verteilung handelt es sich um eine Einstellung, die Sie für die Wahrscheinlichkeit angeben können, dass ein bestimmter Test während eines Auslastungstestlaufs von einem virtuellen Benutzer ausgewählt wird.
 
- Nachdem Sie einem Auslastungstest eine Reihe von Tests hinzugefügt haben, funktioniert die *Testmischung* wie andere Mischungsoptionen. Ein virtueller Benutzer wählt zufallsgesteuert auf Grundlage der in der Mischung angegebenen Wahrscheinlichkeit einen Test aus. Wenn beispielsweise zwei Tests vorhanden sind, deren Wahrscheinlichkeit in der Mischung jeweils 50 Prozent beträgt, wird der erste Test von einem virtuellen Benutzer während ungefähr der Hälfte der Zeit ausgeführt. Wenn in einer 50/50-Mischung ein langer und ein kurzer Test vorhanden sind, wird durch den langen Test eine höhere Auslastung hervorgerufen.
+Nachdem Sie einem Auslastungstest eine Reihe von Tests hinzugefügt haben, funktioniert die *Testmischung* wie andere Mischungsoptionen. Ein virtueller Benutzer wählt zufallsgesteuert auf Grundlage der in der Mischung angegebenen Wahrscheinlichkeit einen Test aus. Wenn beispielsweise zwei Tests vorhanden sind, deren Wahrscheinlichkeit in der Mischung jeweils 50 Prozent beträgt, wird der erste Test von einem virtuellen Benutzer während ungefähr der Hälfte der Zeit ausgeführt. Wenn in einer 50/50-Mischung ein langer und ein kurzer Test vorhanden sind, wird durch den langen Test eine höhere Auslastung hervorgerufen.
 
- Wenn Sie einer Mischung Tests hinzugefügt haben, können Sie diese wieder entfernen. Über die Mischungssteuerung können Sie auch die Verteilung der Testmischung ändern. Mit der Mischungssteuerung können Sie die Verteilung der Tests in einem Szenario auf einfache Weise anpassen.
+Wenn Sie einer Mischung Tests hinzugefügt haben, können Sie diese wieder entfernen. Über die Mischungssteuerung können Sie auch die Verteilung der Testmischung ändern. Mit der Mischungssteuerung können Sie die Verteilung der Tests in einem Szenario auf einfache Weise anpassen.
 
 > [!NOTE]
 > Die Verteilung ist ein Maßstab für die Wahrscheinlichkeit, dass ein bestimmter Test während eines Auslastungstestlaufs von einem virtuellen Benutzer ausgewählt wird. Die Verteilung wird in Prozent angegeben. Daher lautet die Summe der Verteilungen für alle in einem Szenario enthaltenen Tests 100. Wenn ein Szenario z. B. nur einen Test enthält, beträgt die Verteilung für diesen Test 100 Prozent.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Hinzufügen neuer Tests zu einer Testmischung in einem vorhandenen Szenario
 

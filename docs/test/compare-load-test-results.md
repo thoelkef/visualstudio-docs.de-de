@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834280"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895027"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
 
-Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren. Zwei Typen von Auslastungstestberichten sind verfügbar:
+Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Zwei Typen von Auslastungstestberichten sind verfügbar:
 
 - Vergleich ausführen&mdash;: Bei diesem Bericht handelt es sich eigentlich um zwei Berichte, mit denen anhand von Tabellen und Balkendiagrammen Vergleichsdaten nebeneinander angezeigt werden.
 
@@ -33,7 +37,7 @@ Berichtsdefinitionen werden in der Auslastungstestdatenbank gespeichert. Wenn ei
 Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit diese zum Anzeigen des Berichts keine Verbindung mit der Datenbank herstellen müssen.
 
 > [!NOTE]
-> Wenn Sie einem Auslastungstest Kommentare hinzufügen, werden sie im Excel-Bericht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Wenn Sie einem Auslastungstest Kommentare hinzufügen, werden sie im Excel-Bericht angezeigt.
 
 ## <a name="tasks"></a>Aufgaben
 

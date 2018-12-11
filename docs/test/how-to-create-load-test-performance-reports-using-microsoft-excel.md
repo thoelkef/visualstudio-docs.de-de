@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861916"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896561"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
-Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren. Zwei Typen von Auslastungstestberichten sind verfügbar:
+Sie können Microsoft Excel-Auslastungstestberichte generieren, die auf zwei oder mehr Testergebnissen basieren.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Zwei Typen von Auslastungstestberichten sind verfügbar:
 
 -   **Vergleich ausführen;** Mit diesem Befehl wird eine Reihe von Berichten erstellt, in denen die Daten von zwei Auslastungstestergebnissen mithilfe von Tabellen und Säulendiagrammen verglichen werden.
 
@@ -45,7 +49,7 @@ Die folgende Abbildung zeigt ein Beispiel für einen Bericht, in dem ein Zusamme
 Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken auf die Schaltfläche **Excel-Bericht erstellen** in der Symbolleiste oder in Excel über die Option **Auslastungstestbericht** auf der Registerkarte **Auslastungstest** des **Office**-Menübands generiert werden.
 
 > [!NOTE]
-> Wenn Sie einem Auslastungstest Kommentare hinzufügen, werden sie im Excel-Bericht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Kommentaren während der Analyse eines abgeschlossenen Auslastungstests](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Wenn Sie einem Auslastungstest Kommentare hinzufügen, werden sie im Excel-Bericht angezeigt.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>So generieren Sie mit Excel Vergleichsberichte für Auslastungstests
 

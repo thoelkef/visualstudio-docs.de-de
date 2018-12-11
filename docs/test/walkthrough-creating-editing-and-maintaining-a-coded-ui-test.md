@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Tests für die programmierte Benutzeroberfläche in Visual Studio
+title: Erstellen eines Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6fa58bea73bcbc10f0392bb0e8b135e39fc605b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296358"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895521"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI
 
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der programmierten UI für eine WPF-App (Windows Presentation Foundation) erstellen, bearbeiten und verwalten. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und dem Refactoring von Steuerelementen nicht mehr funktionieren.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>Erstellen einer WPF-App
 

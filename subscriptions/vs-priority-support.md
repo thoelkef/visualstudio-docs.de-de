@@ -1,26 +1,24 @@
 ---
-title: Priority Support-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Vorteil der Entwicklercommunity in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Weitere Informationen zum Priority Support-Vorteil, der in Visual Studio-Abonnements enthalten ist.
+description: Erfahren Sie mehr über den Vorteil der Entwicklercommunity, der in Visual Studio-Abonnements enthalten ist.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866739"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896652"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Priority Support in Visual Studio-Abonnements
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Entwicklercommunitysupport in Visual Studio-Abonnements
 
-Der Priority Support-Vorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können.  Wenn die Community nicht innerhalb von zwei Tagen auf Ihre Frage antwortet, erhalten Sie vom Microsoft-Supportteam eine Rückmeldung.
-
-Benutzer mit ausgewählten Visual Studio-Abonnements sind berechtigt, über eine Vielzahl von Foren zu den unterschiedlichsten Themen Prioritätssupport zu erhalten.  Klicken Sie auf einen der nachfolgenden Links, um direkt zu diesem Forum zu wechseln.  
+Der Entwicklercommunityvorteil bietet Zugriff auf verschiedene Communityforen, in denen Sie vorhandene Beiträge durchsuchen oder selbst Fragen stellen können. Klicken Sie auf einen der nachfolgenden Links, um direkt zu diesem Forum zu wechseln.  
 
 ## <a name="included-forums"></a>Enthaltene Foren
 

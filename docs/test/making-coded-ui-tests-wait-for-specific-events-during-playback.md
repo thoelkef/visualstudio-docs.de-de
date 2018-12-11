@@ -1,5 +1,5 @@
 ---
-title: Festlegen einer Wartezeit auf bestimmte Ereignisse für Tests der programmierten UI in Visual Studio
+title: Festlegen, dass Tests der programmierten UI auf bestimmte Ereignisse warten
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295123"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894767"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
 Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Verwenden Sie hierzu die entsprechende „UITestControl.WaitForControlXXX()“-Methode, wie in der folgenden Tabelle beschrieben. Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Anforderungen**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Anforderungen**
+
+Visual Studio Enterprise
 
 > [!TIP]
 > Sie können mithilfe des Test-Editors der programmierten UI zudem Verzögerungen vor Aktionen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Editors für Tests der programmierten UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**UITestControl.WaitForControlXXX()-Methoden**
 
- **UITestControl.WaitForControlXXX()-Methoden**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Wartet darauf, dass das Steuerelement bereit ist, Maus- und Tastatureingaben zu akzeptieren. Die Engine ruft diese API für alle Aktionen dahingehend implizit auf, dass darauf gewartet werden soll, dass das Steuerelement bereit ist, bevor ein Vorgang ausgeführt wird. Allerdings in bestimmten vertraulichen Szenarien müssen Sie möglicherweise einen expliziten Aufruf ausführen.
 
- Wartet darauf, dass das Steuerelement bereit ist, Maus- und Tastatureingaben zu akzeptieren. Die Engine ruft diese API für alle Aktionen dahingehend implizit auf, dass darauf gewartet werden soll, dass das Steuerelement bereit ist, bevor ein Vorgang ausgeführt wird. Allerdings in bestimmten vertraulichen Szenarien müssen Sie möglicherweise einen expliziten Aufruf ausführen.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Wartet auf die Aktivierung des Steuerelements, wenn der Assistent einige asynchrone Validierungen der Eingabe durch das Ausführen von Aufrufen am Server vornimmt. Beispielsweise können Sie eine Methode ausstellen, um auf die Aktivierung der Schaltfläche **Weiter** des Assistenten zu warten. Ein Beispiel dieser Methode finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Wartet auf die Aktivierung des Steuerelements, wenn der Assistent einige asynchrone Validierungen der Eingabe durch das Ausführen von Aufrufen am Server vornimmt. Beispielsweise können Sie eine Methode ausstellen, um auf die Aktivierung der Schaltfläche **Weiter** des Assistenten zu warten. Ein Beispiel dieser Methode finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Wartet darauf, dass das Steuerelement auf der Benutzeroberfläche angezeigt wird. Beispielsweise, wenn Sie ein Fehlerdialogfeld erwarten, nachdem die Anwendung die Validierung der Parameter abgeschlossen hat. Die für die Validierung in Anspruch genommene Zeit ist variabel. Sie können diese Methode verwenden, um auf das Fehlerdialogfeld zu warten.
 
- Wartet darauf, dass das Steuerelement auf der Benutzeroberfläche angezeigt wird. Beispielsweise, wenn Sie ein Fehlerdialogfeld erwarten, nachdem die Anwendung die Validierung der Parameter abgeschlossen hat. Die für die Validierung in Anspruch genommene Zeit ist variabel. Sie können diese Methode verwenden, um auf das Fehlerdialogfeld zu warten.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Wartet darauf, dass das Steuerelement auf der Benutzeroberfläche verschwindet. Beispielsweise können Sie auf das Verschwinden der Statusanzeige warten.
 
- Wartet darauf, dass das Steuerelement auf der Benutzeroberfläche verschwindet. Beispielsweise können Sie auf das Verschwinden der Statusanzeige warten.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Wartet darauf, dass die angegebene Eigenschaft des Steuerelements den angegebenen Wert aufweist. Beispielsweise, wenn Sie darauf warten, dass der Statustext zu **Fertig** geändert wird.
 
- Wartet darauf, dass die angegebene Eigenschaft des Steuerelements den angegebenen Wert aufweist. Beispielsweise, wenn Sie darauf warten, dass der Statustext zu **Fertig** geändert wird.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Wartet darauf, dass die angegebene Eigenschaft des Steuerelements das Gegenteil eines angegebenen Werts aufweist. Beispielsweise, wenn Sie darauf warten, dass das Bearbeitungsfeld nicht länger schreibgeschützt ist, also bearbeitet werden kann.
 
- Wartet darauf, dass die angegebene Eigenschaft des Steuerelements das Gegenteil eines angegebenen Werts aufweist. Beispielsweise, wenn Sie darauf warten, dass das Bearbeitungsfeld nicht länger schreibgeschützt ist, also bearbeitet werden kann.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Wartet darauf, dass das angegebene Prädikat wieder `true` ist. Dies kann für einen komplexen „wait“-Vorgang (wie OR-Bedingungen) in einem angegebenen Steuerelement verwendet werden. Beispielsweise, wenn Sie darauf warten, bis der Statustext **Erfolgreich** oder **Fehlerhaft** lautet, wie dies im folgenden Code gezeigt wird:
+Wartet darauf, dass das angegebene Prädikat wieder `true` ist. Dies kann für einen komplexen „wait“-Vorgang (wie OR-Bedingungen) in einem angegebenen Steuerelement verwendet werden. Beispielsweise, wenn Sie darauf warten, bis der Statustext **Erfolgreich** oder **Fehlerhaft** lautet, wie dies im folgenden Code gezeigt wird:
 
 ```csharp
 

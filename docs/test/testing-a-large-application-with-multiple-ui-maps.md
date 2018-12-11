@@ -1,5 +1,5 @@
 ---
-title: Testen einer großen Anwendung mit mehreren UI-Zuordnungen in Visual Studio
+title: Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891023"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895131"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 
 In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Testen einer großen Anwendung mithilfe mehrerer UI-Zuordnungen einsetzen lassen.
 
- **Anforderungen**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Anforderungen**
 
 - Visual Studio Enterprise
 
-  Beim Erstellen eines neuen Tests der programmierten UI erstellt das Visual Studio-Testframework den Code für den Test standardmäßig in einer <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).
+Beim Erstellen eines neuen Tests der programmierten UI erstellt das Visual Studio-Testframework den Code für den Test standardmäßig in einer <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).
 
-  Der erzeugte Code für die UI-Zuordnung enthält eine Klasse für jedes Objekt mit der der Test interagiert. Für jede erzeugte Methode wird speziell für diese Methode eine Begleitklasse für Methodenparameter erzeugt. Wenn es eine große Menge an Objekten, Seiten, Formularen und Steuerelementen in der Anwendung gibt, kann die UI-Zuordnung sehr groß werden. Auch wird die Anwendung sehr unhandlich, wenn mehrere Personen an Tests mit einer einzigen, großen UI-Zuordnungsdatei arbeiten.
+Der erzeugte Code für die UI-Zuordnung enthält eine Klasse für jedes Objekt mit der der Test interagiert. Für jede erzeugte Methode wird speziell für diese Methode eine Begleitklasse für Methodenparameter erzeugt. Wenn es eine große Menge an Objekten, Seiten, Formularen und Steuerelementen in der Anwendung gibt, kann die UI-Zuordnung sehr groß werden. Auch wird die Anwendung sehr unhandlich, wenn mehrere Personen an Tests mit einer einzigen, großen UI-Zuordnungsdatei arbeiten.
 
-  Mit mehreren UI-Zuordnungsdateien zu arbeiten hat die folgenden Vorteile:
+Mit mehreren UI-Zuordnungsdateien zu arbeiten hat die folgenden Vorteile:
 
 - Jede Karte kann einer logischen Teilmenge der Anwendung zugeordnet werden. Damit sind Änderungen einfacher verwaltbar.
 
