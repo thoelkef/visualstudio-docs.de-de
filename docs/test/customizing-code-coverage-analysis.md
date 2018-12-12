@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Code Coverage-Analyse in Visual Studio
+title: Anpassen der Code Coverage-Analyse
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52e2465a1e0a25e852073dc39a8aee18a6b47d7e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295346"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054938"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -61,7 +61,7 @@ Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforde
 
 ### <a name="exclude-and-include"></a>„Include“ und „Exclude“
 
-Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Zum Beispiel:
+Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Beispiel:
 
 ```xml
 <ModulePaths>
@@ -137,7 +137,7 @@ Zum Beispiel:
 
 - **Attribute**: gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs ein, und schließen Sie „Attribut“ am Ende des Namens ein.
 
-- **Function**: gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab. Für den Abgleich mit einem Funktionsnamen muss der reguläre Ausdruck mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klassenname, Methodenname und Parameterliste, übereinstimmen. Zum Beispiel:
+- **Function**: gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab. Für den Abgleich mit einem Funktionsnamen muss der reguläre Ausdruck mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klassenname, Methodenname und Parameterliste, übereinstimmen. Beispiel:
 
    ```csharp
    Fabrikam.Math.LocalMath.SquareRoot(double);

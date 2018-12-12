@@ -1,7 +1,8 @@
 ---
 title: Schreiben von JavaScript-Code in Visual Studio ohne Projektmappe oder Projekt
+titleSuffix: ''
 description: Visual Studio unterstützt die Erstellung von Code ohne Abhängigkeit von einer Projekt- oder Projektmappendatei.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
@@ -13,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168330"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058453"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
