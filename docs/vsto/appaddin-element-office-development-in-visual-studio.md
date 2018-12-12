@@ -1,5 +1,6 @@
 ---
 title: '&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3160f153bb6775cf5b2541abf4f75069c818f82b
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304870"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248071"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)
   Die **AppAddin** Element der `vstov4` Namespace werden anpassungsspezifische Informationen für VSTO-Add-ins gespeichert.  
@@ -45,7 +46,7 @@ ms.locfileid: "52304870"
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|**Anwendung**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Einer der folgenden Werte ist möglich: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|  
+|**Anwendung**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Der Wert kann in folgenden Formen vorliegen: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|  
 |**LoadBehavior**|Dies ist optional. In der Standardeinstellung die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
 |**Schlüsselname**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
   

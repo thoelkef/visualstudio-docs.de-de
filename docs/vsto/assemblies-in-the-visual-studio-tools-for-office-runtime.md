@@ -1,5 +1,6 @@
 ---
 title: Assemblys in Visual Studio Tools for Office-Laufzeit
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050208"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248111"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblys in Visual Studio Tools for Office-Laufzeit
   Wenn Sie ein Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Assemblys hinzu, die für den Projekttyp und das Ziel-.NET Framework des Projekts verwendet werden. In den Office-Erweiterungen für .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]und [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]sind verschiedene Assemblys vorhanden. Weitere Informationen zu den Office-Erweiterungen, finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050208"
   
 |Assemblyname|Beschreibung|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Stellt folgende Typen bereit:<br /><br /> -Typen zum Erstellen von menübandanpassungen und Smarttags. **Hinweis:** Smarttags sind veraltet [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Typen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokumentebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-Ins.|  
+|Microsoft.Office.Tools.Common.dll|Stellt folgende Typen bereit:<br /><br /> -Typen zum Erstellen von menübandanpassungen und Smarttags. **Hinweis**:      Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.<br />-Typen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokumentebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-Ins.|  
 |Microsoft.Office.Tools.Excel.dll|Stellt Schnittstellen bereit, die Hostelemente und Hoststeuerelemente für Excel-Projekte und unterstützende Typen darstellen. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Enthält Typen, mit denen Sie benutzerdefinierte Formularbereiche in VSTO-Add-Ins für Outlook erstellen können.|  
 |Microsoft.Office.Tools.Word.dll|Stellt Schnittstellen bereit, die Hostelemente und Hoststeuerelemente für Word-Projekte und unterstützende Typen darstellen. Weitere Informationen finden Sie unter [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050208"
   
 |Assemblyname|Beschreibung|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Stellt folgende Typen bereit:<br /><br /> -Die Microsoft.Office.Tools.AddIn-Basisklasse für VSTO-Add-ins.<br />-Klassen zum Erstellen von menübandanpassungen und Smarttags. **Hinweis:** Smarttags sind veraltet [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Klassen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokumentebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-ins.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Stellt folgende Typen bereit:<br /><br /> -Die Microsoft.Office.Tools.AddIn-Basisklasse für VSTO-Add-ins.<br />-Klassen zum Erstellen von menübandanpassungen und Smarttags. **Hinweis**:      Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.<br />-Klassen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokumentebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-ins.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Stellt Hostelemente und Hoststeuerelemente für Excel-Lösungen bereit. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Stellt Klassen bereit, mit denen Sie benutzerdefinierte Formularbereiche in Outlook-VSTO-Add-Ins erstellen können.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Stellt Hostelemente und Hoststeuerelemente für Word--Lösungen bereit. Weitere Informationen finden Sie unter [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md).|  
