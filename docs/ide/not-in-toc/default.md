@@ -11,12 +11,12 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "34335706"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160048"
 ---
 # <a name="f1-help"></a>F1-Hilfe
 
@@ -28,7 +28,7 @@ Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten
 
 ## <a name="useful-links"></a>Nützliche Links
 
-- Allgemeine Informationen zu Visual Studio finden Sie unter [Überblick über Visual Studio](../../ide/visual-studio-ide.md).
+- Allgemeine Informationen zu Visual Studio finden Sie unter [Überblick über Visual Studio](../../get-started/visual-studio-ide.md).
 - Unterstützung zum Text-Editor von Visual Studio finden Sie unter [Verwendung des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md).
 - Unterstützung zu C# finden Sie im [C#-Leitfaden](/dotnet/csharp/index).
 - Unterstützung zu Visual Basic finden Sie im [Visual Basic-Leitfaden](/dotnet/visual-basic/).

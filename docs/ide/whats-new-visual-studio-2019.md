@@ -1,10 +1,11 @@
 ---
 title: Neues in der Vorschauversion von Visual Studio 2019
+titleSuffix: ''
 description: Informationen zu den neuen Features in der Vorschauversion von Visual Studio 2019
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897242"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159749"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
@@ -86,7 +87,7 @@ In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Verwalten von Pull Requests (PRs) über die IDE
 
-Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit der Vorschauversion von Visual Studio 2019 herunterladen können. Mit dieser neuen Erweiterung können Sie Pull Requests Ihres Teams überprüfen, ausführen und sogar debuggen, ohne die Visual Studio IDE [(Integrated Development Environment, integrierte Entwicklungsumgebung)](../ide/visual-studio-ide.md) verlassen zu müssen. Aktuell wird Code in Azure Repos unterstützt. Es wird jedoch eine Erweiterung auf die Unterstützung von GitHub durchgeführt. Zudem wird die Benutzerfreundlichkeit insgesamt verbessert.
+Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit der Vorschauversion von Visual Studio 2019 herunterladen können. Mit dieser neuen Erweiterung können Sie Pull Requests Ihres Teams überprüfen, ausführen und sogar debuggen, ohne die Visual Studio IDE [(Integrated Development Environment, integrierte Entwicklungsumgebung)](../get-started/visual-studio-ide.md) verlassen zu müssen. Aktuell wird Code in Azure Repos unterstützt. Es wird jedoch eine Erweiterung auf die Unterstützung von GitHub durchgeführt. Zudem wird die Benutzerfreundlichkeit insgesamt verbessert.
 
 Als erste Schritte laden Sie die [Pull Requests für Visual Studio](https://aka.ms/pr4vs)-Erweiterung aus dem Visual Studio Marketplace herunter.
 

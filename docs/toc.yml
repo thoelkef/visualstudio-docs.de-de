@@ -4,7 +4,7 @@ items:
 - name: Übersicht
   items:
   - name: Informationen zu Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: Informationen zum Code-Editor
     href: get-started/tutorial-editor.md
   - name: Informationen zu Projekte und Projektmappen
@@ -81,7 +81,7 @@ items:
         href: install/tools-for-managing-visual-studio-instances.md
     - name: Abonnements verwalten
       items:
-      - name: 'Visual Studio-Abonnements: Administrator – Übersicht'
+      - name: 'Visual Studio-Abonnements: Übersicht für Administratoren'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Help Viewer-Administratorhandbuch
       href: ide/help-viewer-administrator-guide.md
@@ -144,7 +144,7 @@ items:
     href: ide/quickstart-uwp-csharp.md
   - name: 'C#: Erstellen einer Konsolenanwendung'
     href: ide/quickstart-csharp-console.md
-  - name: 'Visual Basic: Erstellen einer Konsolenanwendung'
+  - name: 'Visual Basic: Erstellen einer Konsolenanwendung'
     href: ide/quickstart-visual-basic-console.md
 - name: Tutorials
   items:
@@ -523,27 +523,27 @@ items:
         - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
+          - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
             href: ide/step-1-create-a-windows-forms-application-project.md
           - name: 'Schritt 2: Ausführen des Programms'
             href: ide/step-2-run-your-program.md
-          - name: 'Schritt 3: Festlegen der Formulareigenschaften'
+          - name: 'Schritt 3: Festlegen der Formulareigenschaften'
             href: ide/step-3-set-your-form-properties.md
-          - name: 'Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
+          - name: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
           - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
+          - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
             href: ide/step-6-name-your-button-controls.md
-          - name: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
+          - name: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche "Bild anzeigen"'
+          - name: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“'
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
           - name: 'Schritt 9: Überprüfen, Kommentieren und Testen des Codes'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 'Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen'
+          - name: 'Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: 'Schritt 11: Führen Sie das Programms aus und probieren Sie weitere Funktionen aus'
+          - name: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
             href: ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
@@ -571,19 +571,19 @@ items:
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
           - name: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: 'Schritt 3: Zuweisen eines zufällig ausgewählten Symbols zu jeder Bezeichnung'
+          - name: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
             href: ide/step-3-assign-a-random-icon-to-each-label.md
           - name: 'Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung'
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
           - name: 'Schritt 5: Hinzufügen von Bezeichnungsverweisen'
             href: ide/step-5-add-label-references.md
-          - name: 'Schritt 6: Hinzufügen eines Timers'
+          - name: 'Schritt 6: Hinzufügen von Timern'
             href: ide/step-6-add-a-timer.md
           - name: 'Schritt 7: Beibehalten der Sichtbarkeit von Paaren'
             href: ide/step-7-keep-pairs-visible.md
-          - name: 'Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat'
+          - name: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: 'Schritt 9: Ausprobieren weiterer Funktionen'
+          - name: 'Schritt 9: Ausprobieren weiterer Features'
             href: ide/step-9-try-other-features.md
   - name: Zugriff auf Daten...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -660,7 +660,7 @@ items:
   - name: Anpassen der IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Schnellstart: Personalisieren von Design und Textfarben'
+    - name: 'Schnellstart: Personalisieren Sie Design und Textfarben'
       href: ide/quickstart-personalize-the-ide.md
     - name: Umgebungseinstellungen
       href: ide/environment-settings.md
@@ -1120,7 +1120,7 @@ items:
       href: ide/developer-community-privacy.md
   - name: Melden eines Problems in Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Übersicht: Melden eines Problems'
+  - name: 'Übersicht: Problem melden'
     href: ide/report-a-problem.md
   - name: 'Übersicht: Vorschlagen eines Features'
     href: ide/suggest-a-feature.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Sprechen Sie mit uns
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027444"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160074"
