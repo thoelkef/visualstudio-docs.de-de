@@ -1,5 +1,6 @@
 ---
 title: Visual Studio-Dokumentation
+titleSuffix: ''
 description: Erfahren Sie, wie Visual Studio Ihnen mit einer Vielzahl von Programmiersprachen beim Entwickeln von Apps hilft.
 ms.date: 01/01/2018
 layout: LandingPage
@@ -10,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e4378cad8706648a6412fcce649077ca479dfb67
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: b9b3c4417506fc08f4fa048b051d0406a460cbb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027275"
+ms.locfileid: "53060024"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio-Dokumentation
 
