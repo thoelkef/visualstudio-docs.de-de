@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846888"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248118"
 ---
 # <a name="cache-data"></a>Zwischenspeichern von Daten
   Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, damit die Daten offline oder ohne Öffnen Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts, muss das Objekt über einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich der <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846888"
  Wenn Sie ein Objekt mit Hinzufügen einer **null** Wert für den Datencache mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, um die zwischengespeicherten Daten zu Objekten, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word- oder Excel installiert haben, bevor das Dokument, von einem Endbenutzer geöffnet wird initialisieren möchten. Weitere Informationen finden Sie unter [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

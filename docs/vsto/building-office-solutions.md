@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847577"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248230"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Projektmappen
   Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -112,8 +112,8 @@ ms.locfileid: "49847577"
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Debuggen von Office-Projekten](../vsto/debugging-office-projects.md)|Beschreibt Probleme beim Debuggen von Office-Projekten.|  
-|[Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|  
-|[Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.|  
+|[Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|  
+|[Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.|  
 |[Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|  
   
   

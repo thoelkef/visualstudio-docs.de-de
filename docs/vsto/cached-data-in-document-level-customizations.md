@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], cache
 - data [Office development in Visual Studio], document-level solutions
 - document-level customizations [Office development in Visual Studio], data model
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0710f196e6572cf6bc9851d8a765758fcb43326d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673208"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248295"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokumentebene
   Ein primäres Ziel von Anpassungen auf Dokumentebene ist, Daten aus der Ansicht in Office-Dokumenten zu trennen. Daten bezieht sich auf die Informationen, die in das Dokument, einschließlich der Zahlen und Text gespeichert ist. Ansicht bezieht sich auf die Benutzeroberfläche und das Objektmodell der Microsoft Office Word und Microsoft Office Excel.  
