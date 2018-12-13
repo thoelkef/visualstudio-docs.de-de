@@ -1,5 +1,6 @@
 ---
-title: Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen | Microsoft-Dokumentation
+title: Problembehandlung beim Debuggen der Momentaufnahme | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284106"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059826"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
@@ -48,14 +49,14 @@ Führen Sie diese Schritte aus:
 
 - Alternativ verwenden Sie Ihre Organisation verwendet einen Symbolserver oder löscht Symbole in einen anderen Pfad, den symboleinstellungen Laden Sie die richtigen Symbole für die Bereitstellung.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: die Option "Snapshot Debugger anfügen" in der Cloud-Explorer nicht angezeigt werden.
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: Die Option "Snapshot Debugger anfügen" in der Cloud-Explorer nicht angezeigt werden.
 
 Führen Sie diese Schritte aus:
 
 - Stellen Sie sicher, dass die Snapshot-Debugger-Komponente installiert ist. Öffnen Sie Visual Studio-Installer aus, und überprüfen Sie die **Momentaufnahmedebugger** -Komponente in der Azure-Workload.
 - Stellen Sie sicher, dass Ihre app unterstützt wird. Derzeit nur ASP.NET (4.6.1+) und ASP.NET Core (2.0 und höher)-apps, die in Azure App Service bereitgestellt werden unterstützt.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: ich sehen nur eingeschränkt Momentaufnahmen in den Diagnosetools
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: Ich sehen nur eingeschränkt Momentaufnahmen in den Diagnosetools
 
 ![Gedrosselte andockpunkt](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "gedrosselt andockpunkt")
 

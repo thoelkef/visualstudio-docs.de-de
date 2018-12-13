@@ -1,6 +1,6 @@
 ---
-title: Starten eine Debugsitzung für UWP-Apps in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Starten einer Debugsitzung für UWP-Apps | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b1cc89673558fdaa47fa48756902f44738edf734
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305298"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062408"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Starten einer Debugsitzung für eine UWP-App
   

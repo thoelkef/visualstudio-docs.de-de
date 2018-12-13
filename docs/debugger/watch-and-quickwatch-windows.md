@@ -1,6 +1,6 @@
 ---
-title: Festlegen eines überwachungselements für Variablen in Visual Studio | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+title: Festlegen eines überwachungselements für Variablen | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 10/11/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621642"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059482"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung 
 
@@ -280,6 +280,6 @@ Beobachten der `a` -Variable
 1. Debuggen fortsetzen. Sie können beobachten, dass die Variable in der **Watch** Fenster.
 
 ## <a name="see-also"></a>Siehe auch
- [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)  
+ [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
  [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)

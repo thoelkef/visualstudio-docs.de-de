@@ -1,6 +1,6 @@
 ---
-title: 'Vorbereitung zum Debuggen: C#, f# und Visual Basic-Projekttypen | Microsoft Docs'
-ms.custom: ''
+title: Vorbereitung zum Debuggen C#, F#, und VB-Projekte | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,17 +22,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479215"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063447"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung zum Debugging: C#-, F#- und Visual Basic-Projekttypen
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung zum Debuggen: C#-, F#- und Visual Basic-Projekttypen
 In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekttypen debuggen, die mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagen erstellt wurden.  
   
- Beachten Sie, die in diese Projekttypen, die DLLs als Ausgabe erstellen gruppiert wurden [DLL-Projekte Debuggen](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
+ Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Empfohlene Eigenschafteneinstellungen](../debugger/managed-debugging-recommended-property-settings.md)  

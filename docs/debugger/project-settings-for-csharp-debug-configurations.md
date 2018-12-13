@@ -1,6 +1,6 @@
 ---
-title: Projekteinstellungen für C# Debugkonfigurationen | Microsoft-Dokumentation
-ms.custom: ''
+title: Projekteinstellungen für eine C# Config Debuggen | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388970"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059271"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
 
@@ -42,7 +42,7 @@ Weitere Informationen finden Sie unter [Debug and release configurations (Debug-
   
 ## <a name="debug-tab"></a>Registerkarte "Debuggen"  
   
-|Einstellung|Beschreibung |
+|Einstellung|Beschreibung|
 |-------------------------------------| - |
 | **Konfiguration** | Legt den Modus zum Erstellen der app. Wählen Sie **aktiv (Debuggen)**, **Debuggen**, **Version**, oder **alle Konfigurationen** aus der Dropdownliste aus. |
 | **Startaktion** | Gibt die Aktion an, bei der Auswahl **starten** in einem Debug-Konfiguration.<br />- Durch den Standardwert **Projekt starten**, wird das Startprojekt zum Debuggen gestartet. Weitere Informationen finden Sie unter [auswählen des Startprojekts](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Externes Programm starten** startet und wird an eine app, die nicht Teil einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse mit dem Debugger](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Browser mit URL starten** können Sie eine Web-app zu debuggen. |
@@ -54,7 +54,7 @@ Weitere Informationen finden Sie unter [Debug and release configurations (Debug-
   
 ## <a name="build-tab"></a>Registerkarte "Erstellen"  
   
-|Einstellung|Beschreibung |  
+|Einstellung|Beschreibung|  
 |-------------|-----------------|  
 |**Allgemeine** > **Symbole für bedingte Kompilierung**|Wenn ausgewählt, definieren Sie die Konstanten DEBUG und TRACE.<br /><br /> Diese Konstanten ermöglichen das Kompilieren der [Debug-](/dotnet/api/system.diagnostics.debug) und [Trace-Klassen](/dotnet/api/system.diagnostics.trace). Wenn diese Konstanten definiert sind, generieren die Klassenmethoden „Debug“ und „Trace“ eine Ausgabe im [Ausgabefenster](../ide/reference/output-window.md). Ohne diese Konstanten werden die Klassenmethoden Debug und Trace nicht kompiliert und keine Ausgabe erzeugt.<br /><br />DEBUGGEN ist in der Regel in der Debugversion eines Builds definiert und in der Releaseversion nicht definiert. ABLAUFVERFOLGUNG wird in sowohl der Debug-und Releaseversionen definiert.|  
 |**Allgemeine** > **Code optimieren**|Wenn ein Fehler nur im optimierten Code angezeigt wird, behalten Sie für diese Einstellung für Debugbuilds Auswahl aufgehoben wurde. Optimierter Code ist schwieriger zu debuggen, da Anweisungen nicht direkt mit den Anweisungen im Quellcode übereinstimmen.|  

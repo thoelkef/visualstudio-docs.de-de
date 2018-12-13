@@ -1,6 +1,6 @@
 ---
-title: Navigieren im Code mit Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+title: Navigieren im Code mit dem Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621525"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068272"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
@@ -80,7 +80,7 @@ Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefste
 
 Sie möglicherweise nicht über eine Funktion wichtig, beim Debuggen aus, oder Sie wissen es funktioniert, wie gut getestete Bibliothekscode. Sie können die folgenden Befehle verwenden, mithilfe von Code zu überspringen. Die Funktionen weiterhin auszuführen, aber der Debugger überspringt sie.  
   
-|Tastenkombination|Kontextmenübefehl von "" Debuggen|Beschreibung |  
+|Tastenkombination|Kontextmenübefehl von "" Debuggen|Beschreibung|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Prozedurschritt**|Wenn die aktuelle Zeile einen Funktionsaufruf enthält **Prozedurschritt** führt den Code, und klicken Sie dann in der ersten Zeile des Codes angehalten, wenn die aufgerufene Funktion zurückkehrt.|  
 |**UMSCHALT**+**F11**|**Ausführen bis Rücksprung**|**Ausführen bis Rücksprung** setzt die Ausführung von Code und hält bei Rückgabe der aktuelle Funktion. Der Debugger überspringt über die aktuelle Funktion.|  
