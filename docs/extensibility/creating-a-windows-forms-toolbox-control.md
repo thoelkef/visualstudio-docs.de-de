@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936037"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307705"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
 Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird, die Toolbox-Steuerelement von Windows Forms-Elementvorlage, die in Visual Studio-Erweiterbarkeitstools (VS SDK) enthalten ist das **Toolbox** beim Installieren der Erweiterung. In diesem Thema wird gezeigt, wie die Vorlage zu verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie für andere Benutzer verteilen können.  
@@ -77,16 +77,16 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
 3.  Erstellen Sie die folgenden Deklarationen für die öffentliche Eigenschaft.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
 4.  Platzieren Sie den folgenden Code in die `Load` Ereignis für das Steuerelement.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
 5.  Erstellen Sie die folgende öffentliche Methode, um den Zähler zu erhöhen.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
 6.  Fügen Sie eine Deklaration für die `Incremented` Ereignis, um die Control-Klasse.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Aufrufer können Handler für dieses Ereignis reagieren auf Änderungen in den Wert des Zählers hinzufügen.  
@@ -131,7 +131,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
 7.  Wechseln Sie zurück zur Entwurfsansicht, und doppelklicken Sie auf die **zurücksetzen** Schaltfläche zum Generieren der `btnReset_Click` Ereignishandler, und füllen Sie es dann darüber, wie im folgenden Beispiel gezeigt.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Testen Sie das Steuerelement  
@@ -190,7 +190,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
   
      Das Formular wird geöffnet. Die `Counter` Steuerelement zeigt den folgenden Text.  
   
-     **Anzahl: 0**  
+     **Anzahl von: 0**  
   
 14. Klicken Sie auf **Test**.  
   
@@ -209,7 +209,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
      Der Leistungsindikator wird zurückgesetzt, um **0**.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Beim Erstellen einer **Toolbox** -Steuerelement, das Visual Studio erstellt eine Datei namens *ProjectName.vsix* in die <em>\bin\debug\* Ordner des Projekts. Sie können das Steuerelement bereitstellen, durch das Hochladen der VSIX</em> -Datei mit einem Netzwerk oder auf einer Website. Wenn ein Benutzer öffnet die *VSIX* Datei, die das Steuerelement installiert ist, und Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie hochladen, die *VSIX* -Datei in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie finden können der **Tools**  >  **Erweiterungen und Updates** Dialogfeld.  
+ Beim Erstellen einer **Toolbox** -Steuerelement, das Visual Studio erstellt eine Datei namens *ProjectName.vsix* in der "\bin\debug\" des Projekts. Sie können das Steuerelement bereitstellen, durch das Hochladen der *VSIX* -Datei mit einem Netzwerk oder auf einer Website. Wenn ein Benutzer öffnet die *VSIX* Datei, die das Steuerelement installiert ist, und Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie hochladen, die *VSIX* Datei [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) , damit Benutzer sie finden können der **Tools**  >   **Erweiterungen und Updates** Dialogfeld.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
