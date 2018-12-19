@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862338"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282312"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -24,52 +24,51 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 
 ## <a name="eligibility"></a>Berechtigung
 
-|                 Abonnementstufe/Programm                 |           Vorteil           |                         Erneuerbar?                          |
-|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 USD monatliches Guthaben     |                             Ja                             |
-|               Visual Studio Enterprise – Jahresabonnement                |     150 USD monatliches Guthaben     |                             Ja                             |
-|               Visual Studio Enterprise – Monatsabonnement               |        Nicht verfügbar        |                                                             |
-|             Visual Studio Professional Standard              |     50 USD monatliches Guthaben      |                             Ja                             |
-|              Visual Studio Professional – Jahresabonnement               |     50 USD monatliches Guthaben      |                             Ja                             |
-|              Visual Studio Professional – Monatsabonnement              |        Nicht verfügbar        |                                                             |
-|                    Visual Studio Test Pro                    |     50 USD monatliches Guthaben      |                             Ja                             |
-|                        MSDN Platforms                        |     100 USD monatliches Guthaben     |                             Ja                             |
-|                 Visual Studio Dev Essentials                 | Kostenlose Dienste + 200 USD Guthaben | Kostenlose Dienste sind unbefristet.  Das Guthaben über 200 USD ist ein einmaliger Betrag. |
-|               Visual Studio Enterprise – NFR\*               |     150 USD monatliches Guthaben     |                             Ja                             |
-|                Visual Studio Enterprise – FTE                |     150 USD monatliches Guthaben     |                             Ja                             |
-|     Visual Studio Enterprise – Microsoft Partner Network     |     150 USD monatliches Guthaben     |                             Ja                             |
-|    Visual Studio Professional – Microsoft Partner Network    |        Nicht verfügbar        |                                                             |
-|        Visual Studio Enterprise – Imagine (Standard)         |        Nicht verfügbar        |                                                             |
-|         Visual Studio Enterprise – Imagine (Premium)         |        Nicht verfügbar        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     150 USD monatliches Guthaben     |                             Ja                             |
-|      Visual Studio Enterprise – MCT Software & Services      |     100 USD monatliches Guthaben     |                             Ja                             |
-| Visual Studio Enterprise – MCT Software & Services, Developer |     150 USD monatliches Guthaben     |                             Ja                             |
-
-*Umfasst Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
+| Abonnementstufe/Programm                                 | Vorteil                     | Erneuerbar?                                                   |
+|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
+| Visual Studio Enterprise Standard                            | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – Jahresabonnement                              | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – Monatsabonnement                             | Nicht verfügbar               |                                                              |
+| Visual Studio Professional Standard                          | 50 USD monatliches Guthaben          |   Ja                                                        |
+| Visual Studio Professional – Jahresabonnement                            | 50 USD monatliches Guthaben          |   Ja                                                        |
+| Visual Studio Professional – Monatsabonnement                           | Nicht verfügbar               |                                                              |
+| Visual Studio Test Pro                                       | 50 USD monatliches Guthaben          |   Ja                                                        |
+| MSDN Platforms                                               | 100 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Dev Essentials                                 | Kostenlose Dienste + 200 USD Guthaben | Kostenlose Dienste sind unbefristet.  Das Guthaben über 200 USD ist ein einmaliger Betrag.  |
+| Visual Studio Enterprise – NFR*                              | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – FTE                               | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – Microsoft Partner Network         | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Professional – Microsoft Partner Network       | Nicht verfügbar               |                                                              |
+| Visual Studio Enterprise – Imagine (Standard)                | Nicht verfügbar               |                                                              |
+| Visual Studio Enterprise – Imagine (Premium)                 | Nicht verfügbar               |                                                              |
+| Visual Studio Enterprise – BizSpark                          | 150 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – MCT Software & Services           | 100 USD monatliches Guthaben         |   Ja                                                        |
+| Visual Studio Enterprise – MCT Software & Services, Developer | 150 USD monatliches Guthaben         |   Ja                                                        |
+*Umfasst Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
-1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
+1.  Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Kachel](_img/vs-azure/vs-azure-tile.png)
+2.  Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
+    > [!div class="mx-imgBorder"]
+    > ![Azure-Kachel](_img\vs-azure\vs-azure-tile.png)
 
-3. Füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die allgemeinen Geschäftsbedingungen zu akzeptieren, und klicken Sie auf **Registrieren**:
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Registrierung](_img/vs-azure/vs-azure-sign-up-cropped.png)
+3.  Füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die allgemeinen Geschäftsbedingungen zu akzeptieren, und klicken Sie auf **Registrieren**:
+    > [!div class="mx-imgBorder"]
+    > ![Azure-Registrierung](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
-4. Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.
-   > [!div class="mx-imgBorder"]
-   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+4.  Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.
+    > [!div class="mx-imgBorder"]
+    > ![Erste Schritte mit Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
-5. Das Azure-Dashboard wird geladen. Wenn Sie sich zum ersten Mal anmelden, können Sie eine Tour machen.  Die Tour besteht aus mehreren Bildschirmtipps, in denen erklärt wird, wie Sie verschiedene Aktionen durchführen und die für Sie relevanten Informationen finden.  Nach Abschluss der Tour wird das Azure-Dashboard angezeigt.
+5.  Das Azure-Dashboard wird geladen. Wenn Sie sich zum ersten Mal anmelden, können Sie eine Tour machen.  Die Tour besteht aus mehreren Bildschirmtipps, in denen erklärt wird, wie Sie verschiedene Aktionen durchführen und die für Sie relevanten Informationen finden.  Nach Abschluss der Tour wird das Azure-Dashboard angezeigt.
 
-6. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Dashboard](_img/vs-azure/vs-azure-dashboard-cropped.png)
+6.  Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
+    > [!div class="mx-imgBorder"]
+    > ![Azure-Dashboard](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>FAQ
 
@@ -114,4 +113,4 @@ Wenn Sie der Meinung sind, dass Sie diese E-Mail irrtümlich erhalten haben, wen
     - Technischer Support: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure-Dokumentation](/azure/)
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+-  Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
