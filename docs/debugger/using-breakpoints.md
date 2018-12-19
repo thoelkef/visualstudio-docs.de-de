@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Haltepunkten in Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+title: Verwenden Sie Haltepunkte im Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389136"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068447"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
@@ -61,7 +61,7 @@ In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatis
   
  ![Haltepunktausführung beendet](../debugger/media/breakpointexecution.png "haltepunktausführung")  
   
- Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md).  
+ Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Der Haltepunkt ist eine Umschaltoption. Sie klicken Sie darauf, drücken Sie die **F9**, oder verwenden Sie **Debuggen** > **Haltepunkt ein/aus** zu löschen oder erneut eingefügt werden.
   
@@ -89,7 +89,7 @@ Wird der aufruflistenhaltepunkt angezeigt, der **Haltepunkte** -Fenster als eine
 
 Der Debugger bei der Anweisung.  
 
-Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md). 
+Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster Aufrufliste. 
 
 Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +220,7 @@ Haltepunkte mit Bedingungen werden mit einem **+** Symbol im Quellcode und **Hal
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Bedingter Ausdruck
 
-Bei der Auswahl **Bedingungsausdruck**, können Sie zwischen zwei Bedingungen: **ist "true"** oder **Änderung**. Wählen Sie **ist "true"** zu unterbrechen, wenn der Ausdruck erfüllt ist, oder **Änderung** zu unterbrechen, wenn der Wert des Ausdrucks geändert hat.  
+Bei der Auswahl **Bedingungsausdruck**, Sie können zwischen zwei Bedingungen auswählen: **Ist "true"** oder **Änderung**. Wählen Sie **ist "true"** zu unterbrechen, wenn der Ausdruck erfüllt ist, oder **Änderung** zu unterbrechen, wenn der Wert des Ausdrucks geändert hat.  
   
  Im folgenden Beispiel wird der Haltepunkt erreicht nur, wenn der Wert des `testInt` ist **4**:  
   
@@ -307,7 +307,7 @@ Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können
 Ablaufverfolgungspunkte werden als rote Diamanten in den linken Rand des Quellcodes angezeigt und **Haltepunkte** Windows. 
   
 ## <a name="see-also"></a>Siehe auch  
- [What is debugging? (Was bedeutet „Debuggen“?)](../debugger/what-is-debugging.md)  
+ [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
  [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)  
  [Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)  
