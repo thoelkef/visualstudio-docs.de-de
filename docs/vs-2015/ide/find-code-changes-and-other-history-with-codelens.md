@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49825670"
@@ -24,7 +24,7 @@ ms.locfileid: "49825670"
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Codeverweise und -änderungen, verknüpfte Fehler, Arbeitsaufgaben, Codeüberprüfungen und Komponententests.  
+Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Codeverweise und -änderungen, verknüpfte Fehler, Arbeitselemente, Codeüberprüfungen und Komponententests.  
   
 > [!NOTE]
 >  CodeLens steht nur in Visual Studio Enterprise- und Visual Studio Professional-Versionen zur Verfügung. Es ist nicht in Visual Studio Community verfügbar.  
@@ -71,7 +71,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 - [Lync 2010 oder höher oder Skype for Business](http://technet.microsoft.com/lync)für das Kontaktieren Ihres Teams aus dem Code-Editor  
   
-  Detaillierte Informationen zu CodeLens für Visual C# .NET- oder Visual Basic .NET-Code, der mit Team Foundation-Versionskontrolle (TFVC) oder Git gespeichert ist, finden Sie auf den Klassen- und Methodenebenen (*Codeindikatoren auf Elementebene* ). Wenn Ihr Git-Repository in TfGit gehostet ist, finden Sie auch Links zu TFS-Arbeitsaufgaben.  
+  Detaillierte Informationen zu CodeLens für Visual C# .NET- oder Visual Basic .NET-Code, der mit Team Foundation-Versionskontrolle (TFVC) oder Git gespeichert ist, finden Sie auf den Klassen- und Methodenebenen (*Codeindikatoren auf Elementebene* ). Wenn Ihr Git-Repository in TfGit gehostet ist, finden Sie auch Links zu TFS-Arbeitselementen.  
   
   ![Codeelement: Ebenenindikatoren](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
@@ -164,7 +164,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
 |![CodeLens: Symbol für Merge aus einem untergeordneten Branch](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|  
 |![CodeLens: Symbol für Merge aus einem nicht zugeordneten Branch](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|  
   
-### <a name="find-linked-work-items"></a>Suchen von verknüpften Arbeitsaufgaben  
+### <a name="find-linked-work-items"></a>Suchen von verknüpften Arbeitselementen  
  ![CodeLens: Ermitteln von Arbeitsaufgaben für bestimmten Code](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
   
 ### <a name="find-linked-code-reviews"></a>Verknüpfte Codeüberprüfungen suchen  
@@ -229,12 +229,12 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 -   Wenn Ihr Code in TFS gespeichert ist, stellen Sie sicher, dass die Codeindizierung aktiviert ist. Verwenden Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   TFS-bezogene Indikatoren werden nur angezeigt, wenn Arbeitsaufgaben mit dem Code verknüpft sind und wenn Sie über Berechtigungen zum Öffnen verknüpfter Arbeitsaufgaben verfügen. [Überprüfen Sie, ob Sie über Teammitgliedsberechtigungen verfügen.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   TFS-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und wenn Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. [Überprüfen Sie, ob Sie über Teammitgliedsberechtigungen verfügen.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
   
 -   Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe (**STRG+UMSCHALT+B**) zu erstellen.  
   
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>F: Warum sehe ich keine Arbeitsaufgabendetails für einen Commit?  
- **A:** Dies kann passieren, wenn CodeLens die Arbeitsaufgaben in TFS nicht finden kann. Überprüfen Sie, dass Sie mit dem Teamprojekt verbunden sind, das die Arbeitsaufgaben beinhaltet und dass Sie zum Anzeigen dieser Arbeitsaufgaben berechtigt sind. Dies kann auch vorkommen, wenn die Commit-Beschreibung falsche Informationen über die Arbeitsaufgaben-IDs in TFS enthält.  
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>F: Warum sehe ich keine Arbeitselementdetails für einen Commit?  
+ **A:** Dies kann passieren, wenn CodeLens die Arbeitsaufgaben in TFS nicht finden kann. Überprüfen Sie, dass Sie mit dem Teamprojekt verbunden sind, das die Arbeitselemente beinhaltet und dass Sie zum Anzeigen dieser Arbeitselemente berechtigt sind. Dies kann auch vorkommen, wenn die Commit-Beschreibung falsche Informationen über die Arbeitselement-IDs in TFS enthält.  
   
 ###  <a name="NoLync"></a> F: Warum sehe ich keine Lync- bzw. Skype-Indikatoren?  
  **A:** Wenn Sie nicht bei Lync oder Skype for Business angemeldet sind, es nicht installiert haben oder über keine unterstützte Konfiguration verfügen, werden diese Indikatoren nicht angezeigt. Sie können jedoch weiterhin E-Mails senden:  

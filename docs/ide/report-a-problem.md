@@ -20,7 +20,7 @@ ms.locfileid: "53159827"
 ---
 # <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
 
-Mithilfe des Tools „Problem melden“ kann die Visual Studio-Entwicklercommunity Probleme einreichen. Jeder Ihrer Problemberichte wird zu einer Arbeitsaufgabe in unserem zentralen Engineering-Team, sodass Sie sich direkt in unsere Produktteams einbringen und uns dabei helfen können, bedeutende Probleme ausfindig zu machen und zu lösen. Ihr Feedback, das Sie mit umfassenden Diagnoseinformationen übermitteln, spielt eine entscheidende Rolle bei der Verbesserung der Visual Studio-Produktfamilie. Wir schätzen es sehr, dass Sie sich die Zeit nehmen, um Probleme zu melden.
+Mithilfe des Tools „Problem melden“ kann die Visual Studio-Entwicklercommunity Probleme einreichen. Jeder Ihrer Problemberichte wird zu einem Arbeitselement in unserem zentralen Engineering-Team, sodass Sie sich direkt in unsere Produktteams einbringen und uns dabei helfen können, bedeutende Probleme ausfindig zu machen und zu lösen. Ihr Feedback, das Sie mit umfassenden Diagnoseinformationen übermitteln, spielt eine entscheidende Rolle bei der Verbesserung der Visual Studio-Produktfamilie. Wir schätzen es sehr, dass Sie sich die Zeit nehmen, um Probleme zu melden.
 
 Zudem können Sie das Feedback anderer Communitymitglieder bewerten und so mehr Aufmerksamkeit auf ein Problem lenken, damit es schneller gelöst wird.
 
