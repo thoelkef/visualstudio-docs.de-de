@@ -67,7 +67,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49838685"
@@ -140,7 +140,7 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 |Peek-Definition|(Kontextmenü oder ALT+F12): sucht die Definition des ausgewählten Elements und zeigt sie in einem Popupfenster an. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Nächste Methode, Vorherige Methode|(**Bearbeiten > Nächste Methode, Vorherige Methode**): Verwenden Sie diese Befehle in Visual Basic-Codedateien, um die Einfügemarke zu den verschiedenen Methoden zu verschieben.|  
 |Markieren von Verweisen|Wenn Sie auf ein Symbol im Quellcode klicken, werden alle Instanzen dieses Symbols im Dokument hervorgehoben. Die markierten Symbole können Deklarationen und Verweise sowie weitere Symbole umfassen, die von **Alle Verweise suchen** zurückgegeben werden können. Dazu zählen die Namen von Klassen, Objekten, Variablen, Methoden und Eigenschaften. In Visual Basic-Code werden auch Schlüsselwörter für viele Steuerungsstrukturen hervorgehoben. Um zum nächsten oder vorherigen hervorgehobenen Symbol zu springen, drücken Sie STRG+UMSCHALTTASTE+NACH-UNTEN-TASTE bzw. STRG+UMSCHALTTASTE+NACH-OBEN-TASTE. Sie können die Hervorhebungsfarbe in **Extras > Optionen > Umgebung > Schriftarten und Farben > Hervorgehobener Verweis**ändern.|  
-|Suchen von codebezogenen Informationen|Sie können Informationen über bestimmten Code, wie Änderungen und wer diese Änderungen vorgenommen hat, Verweise, Fehler, Arbeitsaufgaben und Codeüberprüfungen sowie Komponententeststatus anzeigen, wenn Sie CodeLens im Code-Editor verwenden. CodeLens funktioniert wie ein Heads-up-Display, wenn Sie Visual Studio Enterprise mit Team Foundation Server verwenden. Weitere Informationen finden Sie unter [Ermitteln von Änderungen am Code und anderer Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md).|  
+|Suchen von codebezogenen Informationen|Sie können Informationen über bestimmten Code, wie Änderungen und wer diese Änderungen vorgenommen hat, Verweise, Fehler, Arbeitselemente und Codeüberprüfungen sowie Komponententeststatus anzeigen, wenn Sie CodeLens im Code-Editor verwenden. CodeLens funktioniert wie ein Heads-up-Display, wenn Sie Visual Studio Enterprise mit Team Foundation Server verwenden. Weitere Informationen finden Sie unter [Ermitteln von Änderungen am Code und anderer Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md).|  
 
  Sie können zum Navigieren in einer Codedatei ebenfalls die **Navigationsleiste**verwenden, d. h. die beiden Dropdownfelder, die im oberen Bereich des Codefensters angezeigt werden. Mit dieser Leiste können Sie direkt zu einem bestimmten Typ oder zu einem der Member innerhalb eines Typs navigieren. Die Navigationsleiste wird mit Codedateien von Visual Basic, C# und C++ angezeigt.  
 

@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51794763"
@@ -98,9 +98,9 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
  Weitere Informationen finden Sie unter [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md).  
   
 ## <a name="team-foundation-server-integration"></a>Team Foundation Server-Integration  
- Sie können Arbeitsaufgaben mit Modellelementen verknüpfen und programmgesteuert auf die verknüpften Elemente zugreifen.  
+ Sie können Arbeitselemente mit Modellelementen verknüpfen und programmgesteuert auf die verknüpften Elemente zugreifen.  
   
- Die Toolentwickler von Fabrikam schreiben ein Tool, das für jedes Flughafenprojekt einen Arbeitsplan generiert. Die Arbeitsaufgaben im Zeitplan sind mit den Modellelementen verknüpft.  
+ Die Toolentwickler von Fabrikam schreiben ein Tool, das für jedes Flughafenprojekt einen Arbeitsplan generiert. Die Arbeitselemente im Zeitplan sind mit den Modellelementen verknüpft.  
   
  Weitere Informationen finden Sie unter [definieren ein linkhandlers für Arbeitsaufgaben](../modeling/define-a-work-item-link-handler.md).  
   

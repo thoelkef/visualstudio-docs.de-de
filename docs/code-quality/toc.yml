@@ -57,7 +57,7 @@ items:
       href: how-to-customize-the-code-analysis-dictionary.md
     - name: Anonyme Methoden und Codeanalyse
       href: anonymous-methods-and-code-analysis.md
-    - name: Erstellen einer Arbeitsaufgabe für einen Fehler in verwaltetem Code
+    - name: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
       href: how-to-create-a-work-item-for-a-managed-code-defect.md
   - name: Codeanalyse für C/C++
     items:

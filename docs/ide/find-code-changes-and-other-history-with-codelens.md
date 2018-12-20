@@ -20,7 +20,7 @@ ms.locfileid: "50220299"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
-Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitsaufgaben, Code Reviews und Komponententests.
+Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitselemente, Code Reviews und Komponententests.
 
 > [!NOTE]
 > CodeLens steht nur in Visual Studio Enterprise- und Visual Studio Professional-Versionen zur Verfügung. Es ist nicht in Visual Studio Community verfügbar.
@@ -70,7 +70,7 @@ Sie benötigen Folgendes:
 
 - [Skype for Business](/skypeforbusiness/) für das Kontaktieren Ihres Teams über den Code-Editor
 
-Detaillierte Informationen zu CodeLens für C#- oder Visual Basic-Code, der mit der Team Foundation-Versionskontrolle (TFVC) oder Git gespeichert ist, finden Sie auf den Klassen- und Methodenebenen (*Codeindikatoren auf Elementebene*). Wenn Ihr Git-Repository in TfGit gehostet ist, finden Sie auch Links zu TFS-Arbeitsaufgaben.
+Detaillierte Informationen zu CodeLens für C#- oder Visual Basic-Code, der mit der Team Foundation-Versionskontrolle (TFVC) oder Git gespeichert ist, finden Sie auf den Klassen- und Methodenebenen (*Codeindikatoren auf Elementebene*). Wenn Ihr Git-Repository in TfGit gehostet ist, finden Sie auch Links zu TFS-Arbeitselementen.
 
 ![Codeindikatoren auf Elementebene](../ide/media/codelens-element-level-indicators.png)
 
@@ -176,7 +176,7 @@ Das Symbol in der Spalte **Branch** gibt die Beziehung des Branches zu dem Branc
 
 ## <a name="linked-work-items"></a>Verknüpfte Arbeitsaufgaben
 
-Suchen Sie verknüpfte Arbeitsaufgaben, indem Sie auf den Indikator **Arbeitsaufgaben** klicken oder **ALT**+**8** drücken.
+Suchen Sie verknüpfte Arbeitselemente, indem Sie auf den Indikator **Arbeitselemente** klicken oder **ALT**+**8** drücken.
 
 ![CodeLens – Arbeitselemente für bestimmten Code suchen](../ide/media/codelens-work-items.png)
 
@@ -259,13 +259,13 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 - Wenn Ihr Code in TFS gespeichert ist, stellen Sie sicher, dass die Codeindizierung aktiviert ist. Verwenden Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- DevOps-bezogene Indikatoren werden nur angezeigt, wenn Arbeitsaufgaben mit dem Code verknüpft sind und Sie über Berechtigungen zum Öffnen verknüpfter Arbeitsaufgaben verfügen. Stellen Sie sicher, dass Sie über [Teammitgliedsberechtigungen](/azure/devops/organizations/security/view-permissions?view=vsts) verfügen.
+- DevOps-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. Stellen Sie sicher, dass Sie über [Teammitgliedsberechtigungen](/azure/devops/organizations/security/view-permissions?view=vsts) verfügen.
 
 - Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie wissen, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe zu erstellen (**STRG**+**UMSCHALT**+**B**).
 
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>F: Warum sehe ich keine Arbeitsaufgabendetails für einen Commit?
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>F: Warum sehe ich keine Arbeitselementdetails für einen Commit?
 
-**A:** Dies kann passieren, wenn CodeLens die Arbeitsaufgaben in Azure Boards oder TFS nicht finden kann. Stellen Sie sicher, dass Sie mit dem Projekt verbunden sind, das diese Arbeitsaufgaben enthält, und dass Sie über die erforderlichen Berechtigungen verfügen, diese Arbeitsaufgaben anzuzeigen. Arbeitsaufgabendetails werden möglicherweise ebenfalls nicht angezeigt, wenn die Commitbeschreibung falsche Informationen zu den Arbeitsaufgaben-IDs in Azure Boards oder TFS enthält.
+**A:** Dies kann passieren, wenn CodeLens die Arbeitsaufgaben in Azure Boards oder TFS nicht finden kann. Stellen Sie sicher, dass Sie mit dem Projekt verbunden sind, das diese Arbeitselemente enthält, und dass Sie über die erforderlichen Berechtigungen verfügen, diese Arbeitselemente anzuzeigen. Arbeitselementdetails werden möglicherweise ebenfalls nicht angezeigt, wenn die Commitbeschreibung falsche Informationen zu den Arbeitselement-IDs in Azure Boards oder TFS enthält.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>F: Warum sehe ich keine Skype-Indikatoren?
 

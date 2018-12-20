@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51776485"
@@ -60,8 +60,8 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.|[Definieren von Begriffen verwendet, um Anforderungen beschreiben.](#RequirementsClasses)|  
 |Aktivitätsdiagramm|Arbeitsablauf und Informationsfluss zwischen den Aktivitäten, die von Benutzern und dem System oder seinen Teilen durchgeführt werden.|[Darstellen des Arbeitsablaufs zwischen Benutzern und dem system](#Workflow)|  
 |Sequenzdiagramm|Die Sequenz der Interaktionen zwischen Benutzern und dem System oder seinen Teilen. Eine alternative Ansicht zum Aktivitätsdiagramm.|[Darstellen der Interaktionen zwischen Benutzern und dem system](#Sequences)|  
-|Zusätzliche Dokumente oder Arbeitsaufgaben|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|  
-|Zusätzliche Dokumente oder Arbeitsaufgaben|Einschränkungen und Regeln, die nicht spezifisch für einen bestimmten Anwendungsfall sind|[Anzeigen von Geschäftsregeln](#BusinessRules)|  
+|Zusätzliche Dokumente oder Arbeitselemente|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|  
+|Zusätzliche Dokumente oder Arbeitselemente|Einschränkungen und Regeln, die nicht spezifisch für einen bestimmten Anwendungsfall sind|[Anzeigen von Geschäftsregeln](#BusinessRules)|  
   
  Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Einen Überblick über die Diagrammtypen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md). Grundlegende Informationen zum Zeichnen von Diagrammen finden Sie [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   

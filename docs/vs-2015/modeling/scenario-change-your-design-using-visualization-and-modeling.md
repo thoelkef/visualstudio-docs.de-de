@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 4dface8e157e44aa09b271446dba68b2779d0a6b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745773"
@@ -148,7 +148,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - Dokumentieren von Aktualisierungen am System  
   
-  Die Diagramme sind in Team Foundation Server integriert, sodass die Teams ihre Arbeit leichter planen, verwalten und verfolgen können. Beispielsweise verwenden sie Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, sodass sie den Fortschritt überwachen sowie sicherstellen können, dass das System die Anforderungen der Benutzer erfüllt. Beispielsweise werden Anwendungsfälle mit Testfallarbeitsaufgaben verknüpft, um sehen zu können, dass Anwendungsfälle erfüllt werden, wenn alle Tests erfolgreich verlaufen.  
+  Die Diagramme sind in Team Foundation Server integriert, sodass die Teams ihre Arbeit leichter planen, verwalten und verfolgen können. Beispielsweise verwenden sie Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne verknüpft Team Foundation Server-Arbeitselemente mit Modellelementen, sodass sie den Fortschritt überwachen sowie sicherstellen können, dass das System die Anforderungen der Benutzer erfüllt. Beispielsweise werden Anwendungsfälle mit Testfallarbeitselementen verknüpft, um sehen zu können, dass Anwendungsfälle erfüllt werden, wenn alle Tests erfolgreich verlaufen.  
   
   Bevor Teams ihre Änderungen einchecken, überprüfen sie den Code anhand der Tests und des Entwurfs durch das Ausführen von Builds, die Ebenenvalidierung und automatisierte Tests beinhalten. Dadurch wird sichergestellt, dass der aktualisierte Code dem Entwurf nicht widerspricht und Funktionen, die bereits funktionieren, nicht beeinträchtigt werden.  
   
@@ -227,7 +227,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 ###  <a name="CreatingTests"></a> Erstellen von Tests aus Modellen  
  Beide Teams stimmen darin überein, dass sie einen vollständigen Satz von Tests für das System und seine Komponenten benötigen, bevor sie Änderungen vornehmen können. Lucerne verfügt über ein spezialisiertes Team, das Tests auf System- und Komponentenebene durchführt. Die von Dinner Now erstellten Tests werden wiederverwendet und mithilfe von UML-Diagrammen strukturiert:  
   
-- Jeder Anwendungsfall wird durch einen oder mehrere Tests dargestellt. Die Elemente im Anwendungsfalldiagramm sind mit Testfallarbeitsaufgaben in Team Foundation Server verknüpft.  
+- Jeder Anwendungsfall wird durch einen oder mehrere Tests dargestellt. Die Elemente im Anwendungsfalldiagramm sind mit Testfallarbeitselementen in Team Foundation Server verknüpft.  
   
 - Jeder Ablauf in einem Aktivitätsdiagramm oder einem Sequenzdiagramm auf Systemebene wird mindestens mit einem Test verknüpft. Das Testteam stellt systematisch sicher, dass jeder mögliche Pfad durch das Aktivitätsdiagramm getestet wird.  
   
@@ -329,9 +329,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   Finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
 ###  <a name="PlanningTracking"></a> Planning and Tracking Work  
- Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, sodass Sie Arbeit leichter planen, verwalten und nachverfolgen können. Beide Teams verwenden Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne erstellt und verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, wie z. B. Anwendungsfälle oder Komponenten. Auf diese Weise kann der Status überwacht werden, und die Arbeit kann bis zu den Benutzeranforderungen zurückverfolgt werden. Somit wird sichergestellt, dass die Änderungen stets den Anforderungen entsprechen.  
+ Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, sodass Sie Arbeit leichter planen, verwalten und nachverfolgen können. Beide Teams verwenden Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne erstellt und verknüpft Team Foundation Server-Arbeitselemente mit Modellelementen, wie z. B. Anwendungsfälle oder Komponenten. Auf diese Weise kann der Status überwacht werden, und die Arbeit kann bis zu den Benutzeranforderungen zurückverfolgt werden. Somit wird sichergestellt, dass die Änderungen stets den Anforderungen entsprechen.  
   
- Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitsaufgaben, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:  
+ Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitselemente, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:  
   
 - Tägliche *Burndownberichte* , die angeben, ob die geplante Arbeit in der erwarteten Zeit angeschlossen wird. Es werden andere ähnliche Berichte in Team Foundation Server generiert, um den Status von Fehlern zu verfolgen.  
   
@@ -630,7 +630,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
   **Code Map für das Zahlungssystem von Lucerne**  
   
-  Beide Teams arbeiten zusammen, um die Änderungen zu ermitteln, die zum Integrieren der beiden Systeme erforderlich sind. Es wird entschieden, einen Teil des Codes umzugestalten, damit er einfacher zu aktualisieren ist. Die PaymentApprover-Klasse wird in den DinnerNow.Business-Namespace verschoben und erfordert einige neue Methoden. Die Dinner Now-Klassen, die Transaktionen behandeln, erhalten einen eigenen Namespace. Die Teams erstellen und verwenden Arbeitsaufgaben, um ihre Arbeit zu planen, zu organisieren und nachzuverfolgen. Wo sinnvoll, werden Arbeitsaufgaben mit Modellelementen verknüpft.  
+  Beide Teams arbeiten zusammen, um die Änderungen zu ermitteln, die zum Integrieren der beiden Systeme erforderlich sind. Es wird entschieden, einen Teil des Codes umzugestalten, damit er einfacher zu aktualisieren ist. Die PaymentApprover-Klasse wird in den DinnerNow.Business-Namespace verschoben und erfordert einige neue Methoden. Die Dinner Now-Klassen, die Transaktionen behandeln, erhalten einen eigenen Namespace. Die Teams erstellen und verwenden Arbeitselemente, um ihre Arbeit zu planen, zu organisieren und nachzuverfolgen. Wo sinnvoll, werden Arbeitselemente mit Modellelementen verknüpft.  
   
   Nach der Neuorganisation des Codes generieren die Teams eine neue Code Map, um die aktualisierte Struktur und die Beziehungen anzuzeigen:  
   

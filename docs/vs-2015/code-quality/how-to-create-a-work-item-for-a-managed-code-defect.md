@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49235084"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen einer Arbeitsaufgabe für einen Fehler in verwaltetem Code
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Können Sie das Arbeitselement, die nachverfolgung von Abfrageausführungsinformationen Log Arbeitselement aus [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Um dieses Feature verwenden zu können, muss Ihr Projekt Teil eines Teamprojekts in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  

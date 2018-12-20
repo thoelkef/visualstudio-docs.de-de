@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Erstellen einer Arbeitsaufgabe für einen Fehler in verwaltetem Code'
+title: 'Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/10/2018
 ms.locfileid: "44279473"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen einer Arbeitsaufgabe für einen Fehler in verwaltetem Code
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 
 Sie können die Arbeit Element-Überwachungsfunktion mit Protokolldatei für eine Arbeitsaufgabe aus in Visual Studio verwenden. Um dieses Feature verwenden zu können, muss Ihr Projekt Teil eines Azure DevOps-Projekts in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 
