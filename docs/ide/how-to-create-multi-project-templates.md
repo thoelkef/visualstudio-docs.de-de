@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Vorlagen mit mehreren Projekten für Visual Studio
+title: Erstellen von Vorlagen mit mehreren Projekten
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978384"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049664"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -48,14 +48,14 @@ Eine *ZIP*-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte ent
 
 Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:
 
-- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Zum Beispiel:
+- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Beispiel:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Zum Beispiel:
+- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Beispiel:
 
     ```xml
     <TemplateContent>

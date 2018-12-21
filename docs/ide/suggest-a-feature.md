@@ -1,5 +1,5 @@
 ---
-title: 'Übersicht: Vorschlagen eines Features für Visual Studio'
+title: Vorschlagen eines Features
 description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag unterbreiten können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826691"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160035"
 ---
-# <a name="overview-suggest-a-feature"></a>Übersicht: Vorschlagen eines Features
+# <a name="overview-suggest-a-feature"></a>Übersicht: Vorschlagen einer Features
 
 Wir haben eine völlig neue Benutzererfahrung mit dem Vorschlagen von Features neben der aktuellen Möglichkeit eingeführt, Probleme in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com) zu melden. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
 
-Bis jetzt haben Benutzer von Visual Studio das Benutzerfeedback-Forum verwendet, um neue Ideen für Features vorzuschlagen. Die Benutzeroberfläche *Feature vorschlagen* in der Entwicklercommunity ermöglicht es Ihnen, vom Benutzerfeedback-Forum auf eine einzige Plattform für all Ihr Feedback zu wechseln, die direkt mit den Visual Studio Produktteams zusammenarbeitet.  
+Bis jetzt haben Benutzer von Visual Studio das Benutzerfeedback-Forum verwendet, um neue Ideen für Features vorzuschlagen. Die Benutzeroberfläche *Feature vorschlagen* in der Entwicklercommunity ermöglicht es Ihnen, vom Benutzerfeedback-Forum auf eine einzige Plattform für all Ihr Feedback zu wechseln, die direkt mit den Visual Studio Produktteams zusammenarbeitet.
 
 Wir haben eine anfängliche Sammlung von Ideen aus dem Benutzerfeedback-Forum in die Entwicklercommunity migriert. Die Migration erfolgte auf der Grundlage der Auswirkungen des Feedbacks auf die Community und der Prioritäten unserer Produktroadmap. Wenn Sie erwartet haben, hier einen Vorschlag zu sehen, den wir vielleicht verpasst haben, sollten Sie ihn unbedingt der Entwicklercommunity hinzufügen.
 
 ## <a name="votes"></a>Abstimmungen
 
-Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung in der Entwicklercommunity. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.  
+Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung in der Entwicklercommunity. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.
 
 ## <a name="user-voice"></a>Benutzerfeedback
 
@@ -77,7 +77,7 @@ Ein Featurevorschlag mit der Markierung **Weitere Informationen erforderlich** b
 
 - - -
 
-![Statusangabe „Geschlossen – nicht genügend Informationen“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Statusangabe „Geschlossen – nicht genügend Informationen“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Geschlossen – nicht genügend Informationen** gibt an, dass wir nach mehreren Versuchen nicht genügend Informationen zum vollständigen Verständnis Ihres Featurevorschlags erhalten haben. Wir müssen den Vorschlag für ein neues Feature schließen, da wir zum jetzigen Zeitpunkt keine weiteren Maßnahmen ergreifen können.
 

@@ -1,6 +1,6 @@
 ---
 title: Webanwendungsvorlagen für Python
-description: Eine Übersicht der Visual Studio-Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen, einschließlich Debugkonfigurationen und Veröffentlichung im Azure App Service.
+description: Visual Studio stellt Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen zur Verfügung. Der Support schließt Debugkonfigurationen und die Veröffentlichung in Azure App Service mit ein.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349334"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068327"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -34,23 +35,23 @@ Erstellen Sie mit **Datei** > **Neu** > **Projekt** ein neues Projekt aus einer 
 
 Die zuvor erwähnte allgemeine Vorlage **Webprojekt** stellt nur ein leeres Visual Studio-Projekt ohne Code bereit, das keine Annahmen trifft, außer dass es ein Python-Projekt ist. Ausführliche Informationen zur Vorlage **Azure Cloud Service** finden Sie unter [Projekte für Azure-Clouddienste für Python](python-azure-cloud-service-project-template.md).
 
-Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django und fallen in die drei Gruppen, die in den folgenden Abschnitten beschrieben werden. Apps, die mit diesen Vorlagen erstellt werden, enthalten ausreichend Code, um sie lokal auszuführen und zu debuggen. Jede Vorlage stellt auch das erforderliche [WSGI-App-Objekt](http://www.python.org/dev/peps/pep-3333/) (python.org) für die Verwendung mit Produktionswebservern zur Verfügung.
+Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django und fallen in die drei Gruppen, die in den folgenden Abschnitten beschrieben werden. Apps, die mit diesen Vorlagen erstellt werden, enthalten ausreichend Code, um sie lokal auszuführen und zu debuggen. Jede Vorlage stellt auch das erforderliche [WSGI-App-Objekt](https://www.python.org/dev/peps/pep-3333/) (python.org) für die Verwendung mit Produktionswebservern zur Verfügung.
 
 ### <a name="blank-group"></a>Leere Gruppe
 
 Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen Abhängigkeiten, die in einer *requirements.txt.*-Datei deklariert sind.
 
-| Vorlage | Beschreibung  |
+| Vorlage | Beschreibung |
 | --- | --- |
 | **Leeres Bottle-Webprojekt** | Generiert eine minimale App in *app.py* mit einer Homepage für `/` und einer `/hello/<name>`-Seite, die `<name>` mithilfe einer sehr kurzen Vorlage für eine Inline-Seite zurückgibt. |
 | **Leeres Django-Webprojekt** | Generiert ein Django-Projekt mit der grundlegenden Django-Websitestruktur, aber ohne Django-Apps. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und im [Django Tutorial (Schritt 1)](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt dem Ergebnis der detaillierten exemplarischen Vorgehensweise unter [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
+| **Leeres Flask-Webprojekt** | Generiert eine minimale App mit einer einzelnen „Hallo Welt!“-Website für `/`. Diese App ähnelt der, die anhand der Schritte in folgendem Artikel erstellten wurde: [Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Weitere Informationen finden Sie im [Flask-Tutorial (Schritt 1)](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web-Gruppe
 
 Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem identischen Design, unabhängig vom ausgewählten Framework. Die App verfügt über die Seiten „Home“, „Info“ und „Kontakte“ sowie einer Navigationsleiste und reaktives Design über Bootstrap. Jede App wird entsprechend der statischen Serverdateien (CSS, JavaScript und Schriftarten) konfiguriert und verwendet einen Seitenvorlagenmechanismus entsprechend dem Framework.
 
-| Vorlage | Beschreibung  |
+| Vorlage | Beschreibung |
 | --- | --- |
 | **Bottle-Webprojekt** | Generiert eine App, bei der die statischen Dateien im Ordner *Static* enthalten sind und durch den Code in *app.py* verarbeitet werden. Das Routing für die einzelnen Seiten ist in *routes.py* enthalten, und der Ordner *Views* (Ansichten) enthält die Seitenvorlagen.|
 | **Django-Webprojekt** | Generiert ein Django-Projekt und eine Django-App mit drei Seiten, Authentifizierungsunterstützung und einer SQLite-Datenbank (jedoch ohne Datenmodelle). Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und im [Django Tutorial (Schritt 4)](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -61,7 +62,7 @@ Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem
 
 Die Vorlagen **Framework>-Webprojekt für** Umfragen\< erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
 
-| Vorlage | Beschreibung  |
+| Vorlage | Beschreibung |
 | --- | --- |
 | **Bottle-Webprojekt für Umfragen** | Generiert eine App, die für eine In-Memory Database, für MongoDB oder für Azure Table Storage ausgeführt werden kann, die mithilfe der Umgebungsvariable `REPOSITORY_NAME` konfiguriert wird. Die Codes für Datenmodelle und Datenspeicher sind im Ordner *Models* enthalten. Die Datei *settings.py* enthält Code, um zu bestimmen, welcher Datenspeicher verwendet wird. |
 | **Django-Webprojekt für Umfragen** | Generiert ein Django-Projekt und eine Django-App mit drei Seiten und einer SQLite-Datenbank. Enthält Anpassungen an der Django-Verwaltungsschnittstelle, um einem authentifizierten Administrator zu berechtigen, Umfragen zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Django-Vorlagen](python-django-web-application-project-template.md) und im [Django Tutorial (Schritt 6)](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
@@ -123,7 +124,7 @@ Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debu
 Pyramid-Apps werden derzeit am besten über das `pcreate`-Befehlszeilentool erstellt. Nachdem eine App erstellt wurde, kann sie mithilfe der Vorlage [**Aus vorhandenem Python-Code**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) importiert werden. Wählen Sie danach die Anpassung **Generisches Webprojekt**, um die Optionen zu konfigurieren. Bei diesen Einstellungen wird davon ausgegangen, dass Pyramid in einer virtuellen Umgebung unter `..\env` installiert ist.
 
 - Gruppe **Debuggen**:
-  - **Serverport**: 6543 (bzw. entsprechend der Konfiguration in den *.ini*-Dateien)
+  - **Serverport:** 6543 (bzw. entsprechend der Konfiguration in den *INI*-Dateien)
 
 - Gruppe **Serverbefehl ausführen**:
   - Befehl: `..\env\scripts\pserve-script.py` (Skript)

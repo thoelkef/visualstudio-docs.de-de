@@ -1,5 +1,5 @@
 ---
-title: Referenz zu Visual Studio-Vorlagen | Microsoft-Dokumentation
+title: Referenz zu Vorlagen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,36 +17,30 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 825bc17d12b7a688e17a5957996b9fa9a1484e38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249937"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059920"
 ---
 # <a name="visual-studio-template-reference"></a>Referenz zu Visual Studio-Vorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die folgenden Links enthalten Informationen über die verschiedenen Aspekte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt- und Elementvorlagen.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)  
- Beschreibt die XML-Elemente, die in VSTEMPLATE-Dateien verwendet werden.  
-  
- [Vorlagenparameter](../ide/template-parameters.md)  
- Beschreibt die verfügbaren Parameter für Projekt- und Elementvorlagen.  
-  
- <xref:Microsoft.VisualStudio.TemplateWizard>  
- Beschreibt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> -Schnittstelle und verwandte Typen.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
-  
- [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
-  
- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)  
-  
- [Gewusst wie: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md)
+Die folgenden Links enthalten Informationen über die verschiedenen Aspekte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt- und Elementvorlagen.
 
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) beschreibt die XML-Elemente, die in der VSTEMPLATE-Dateien verwendet.
 
+ [Vorlagenparameter](../ide/template-parameters.md) beschreibt die verfügbaren Parameter für Projekt- und Elementvorlagen.
 
+ <xref:Microsoft.VisualStudio.TemplateWizard> Beschreibt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle und verwandte Typen.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [How to: Create Project Templates (Vorgehensweise: Erstellen von Projektvorlagen)](../ide/how-to-create-project-templates.md)
+
+ [How to: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)
+
+ [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
+
+ [How to: Create Starter Kits (Vorgehensweise: Erstellen von Starter Kits)](../ide/how-to-create-starter-kits.md)

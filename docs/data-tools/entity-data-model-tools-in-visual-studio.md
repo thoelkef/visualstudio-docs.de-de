@@ -1,5 +1,5 @@
 ---
-title: Entity Framework-Tools in Visual Studio
+title: Entity Framework-Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819094"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066796"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework-Tools in Visual Studio
+
 Entitätsframework ist eine objektrelationale zuordnungstechnologie, die .NET-Entwicklern arbeiten mit relationalen Daten mithilfe von domänenspezifischen Objekten ermöglicht. In EF Core ist der Großteil des Datenzugriffscodes, den Entwickler in der Regel schreiben müssen, nicht mehr erforderlich. Entitätsframework ist die empfohlene objektrelationales Mapping (ORM) Modellieren der Technologie für neue Anwendungen für .NET.
 
 Entity Framework-Tools dienen können Sie die Entity Framework (EF)-Anwendungen zu erstellen. Die vollständige Dokumentation für Entity Framework ist hier: [EF Core und EF 6](/ef/).
 
 Mit Entity Framework-Tools, Sie erstellen eine *Konzeptmodell* aus einer vorhandenen Datenbank und anschließend grafisch visualisieren und bearbeiten Sie das konzeptionelle Modell. Oder Sie können zuerst ein konzeptionelles Modell grafisch erstellen und anschließend eine Datenbank generieren, die das Modell unterstützt. In beiden Fällen können Sie das Modell automatisch aktualisieren, sobald sich die zugrunde liegende Datenbank ändert, und Sie können automatisch Code auf Objektebene für die Anwendung erstellen. Datenbank- und Codegenerierung auf Objektebene sind vom Benutzer anpassbar.
 
-Die Entity Framework-Tools installiert sind, als Teil der **datenspeicherung und-Verarbeitung** Workload im Visual Studio-Installer. Sie können diese auch als Komponente Indvidual unter Installieren der **SDKs, Bibliotheken und Frameworks** Kategorie.
+Die Entity Framework-Tools installiert sind, als Teil der **datenspeicherung und-Verarbeitung** Workload im Visual Studio-Installer. Sie können diese auch als einzelne Komponente unter Installieren der **SDKs, Bibliotheken und Frameworks** Kategorie.
 
 Dies sind die spezifischen Tools, die Entity Framework-Tools in Visual Studio bilden:
 
@@ -37,7 +38,7 @@ Dies sind die spezifischen Tools, die Entity Framework-Tools in Visual Studio bi
 - Sie können die **Modellaktualisierungs-Assistenten** Ihrer konzeptionellen Modell, Speichermodell und Zuordnungen aktualisieren, wenn Änderungen der zugrunde liegenden Datenbank vorgenommen wurden.
 
   > [!NOTE]
-  >  Ab Visual Studio 2010, Entity Framework-Tools unterstützen keine [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > Ab Visual Studio 2010, Entity Framework-Tools unterstützen keine [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Die Tools generieren oder Ändern einer *EDMX* Datei. Dies *EDMX* -Datei enthält Informationen, die das konzeptionelle Modell, Speichermodell und die Zuordnungen zwischen ihnen zu beschreiben. Weitere Informationen finden Sie unter [EDMX-Datei](https://docs.microsoft.com/ef/ef6/).
 

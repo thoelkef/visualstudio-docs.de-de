@@ -1,23 +1,24 @@
 ---
 title: Konfigurieren von Python-Web-Apps für IIS
 description: Konfigurieren von Python-Web-Apps für die Ausführung mit Internetinformationsdienste (Internet Information Services, IIS) von einem virtuellen Windows-Computer aus.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459553"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062897"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurieren von Python-Web-Apps für IIS
 
@@ -113,7 +114,7 @@ Um die Schnittstelle zu verwenden, installieren und konfigurieren Sie zunächst 
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask:** Ändern Sie den Wert `WSGI_HANDLER` auf `<project_name>.app`, wobei das `<project_name>`-Element dem Namen Ihres Projekts entspricht. Den genauen Identifizierer können Sie ermitteln, indem Sie sich die Anweisung `from <project_name> import app` im *runserver.py*-Objekt ansehen. Wenn das Projekt z.B. den Namen „FlaskAzurePublishExample“ hat, sieht der Eintrag wie folgt aus:
+    - **Flask:** Ändern Sie den Wert `WSGI_HANDLER` in `<project_name>.app`, wobei das `<project_name>`-Element dem Namen Ihres Projekts entspricht. Den genauen Identifizierer können Sie ermitteln, indem Sie sich die Anweisung `from <project_name> import app` im *runserver.py*-Objekt ansehen. Wenn das Projekt z.B. den Namen „FlaskAzurePublishExample“ hat, sieht der Eintrag wie folgt aus:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
@@ -133,7 +134,7 @@ Um die Schnittstelle zu verwenden, installieren und konfigurieren Sie zunächst 
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Nur für Django-Anwendungen**: Fügen Sie in der Datei *settings.py* des Django-Projekts die Domäne Ihrer Website-URL oder Ihre IP-Adresse wie unten gezeigt zu `ALLOWED_HOSTS` hinzu, und ersetzen Sie „1.2.3.4“ durch Ihre URL oder IP-Adresse:
+1. **Nur für Django-Anwendungen:** Fügen Sie in der Datei *settings.py* des Django-Projekts die Domäne Ihrer Website-URL oder Ihre IP-Adresse wie unten gezeigt zu `ALLOWED_HOSTS` hinzu, und ersetzen Sie „1.2.3.4“ durch Ihre URL oder IP-Adresse:
 
     ```python
     # Change the URL or IP address to your specific site

@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
+title: Hinzufügen der Editor-Unterstützung für andere Sprachen
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244475"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062094"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -76,7 +76,7 @@ Fügen Sie eventuelle neue TextMate-Grammatiken für Visual Studio im folgenden 
 
 Fügen Sie unter diesem Basispfad die folgenden Ordner hinzu, wenn sie für Ihren Fall zutreffend sind:
 
-|Ordnername|Beschreibung |
+|Ordnername|Beschreibung|
 |-----------------|-----------------|
 |\\*\<Sprachenname*|Der Sprachordner. Ersetzen Sie *\<Sprachenname* durch den Namen der Sprache. Beispiel: *\Matlab*.|
 |*\Syntaxes*|Der Grammatikordner. Enthält die *JSON*-Grammatikdateien für die Sprache, wie etwa *Matlab.json*.|
@@ -84,9 +84,9 @@ Fügen Sie unter diesem Basispfad die folgenden Ordner hinzu, wenn sie für Ihre
 
 Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<Benutzername>* aufgelöst. Wenn der Erweiterungsordner auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
 
-Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Einführung in Sprachgrammatiken: Hinzufügen von Quellcode-Syntaxhervorhebung mit Einbettung in HTML) und [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Anmerkungen zum Erstellen einer Sprachgrammatik und eines benutzerdefinierten Designs für ein TextMate-Paket).
+Weitere Informationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (Text Mate – Einführung in Sprachen: Hinzufügen von Quellcode-Syntaxhervorhebungen mit Einbettung in HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) und unter [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Anmerkungen zum Erstellen einer Sprache und eines benutzerdefinierten Designs für ein TextMate-Paket)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
+- [Walkthrough: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)

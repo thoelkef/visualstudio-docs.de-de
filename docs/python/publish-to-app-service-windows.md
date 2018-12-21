@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichen einer Python-App in Azure App Service unter Windows
+title: Veröffentlichen einer Python-App auf Azure App Service unter Windows
 description: Direktes Veröffentlichen einer Python-Web-Anwendung aus Visual Studio in Azure App Service unter Windows, einschließlich der erforderlichen Inhalte für die Datei „web.config“.
 ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459958"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248204"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Veröffentlichen in Azure App Service unter Windows
 
@@ -80,7 +81,7 @@ Fall gewünscht, können Sie auch das `bottle`-Paket installieren, indem Sie die
 
 Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen, werden nur die Dateien in Ihrem Projekt auf den Server kopiert. Aus diesem Grund ist es notwendig, die benötigten Dateien zu erstellen, um die Serverumgebung zu konfigurieren.
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt und auf **Hinzufügen > Neues Element…*. Klicken Sie in dem angezeigten Dialogfeld auf die Vorlage „Azure web.config (Fast CGI)“ und dann auf „OK“. Dadurch erstellen Sie eine `web.config`-Datei in Ihrem Projektstamm.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt und auf **Hinzufügen > Neues Element…**. Klicken Sie in dem angezeigten Dialogfeld auf die Vorlage „Azure web.config (Fast CGI)“ und dann auf „OK“. Dadurch erstellen Sie eine `web.config`-Datei in Ihrem Projektstamm.
 
 1. Bearbeiten Sie den `PythonHandler`-Eintrag in `web.config` so, dass der Pfad mit der Python-Installation auf dem Server übereinstimmt (genaue Details finden Sie in der [Referenz zur IIS-Konfiguration](https://www.iis.net/configreference) (iis.net)). Für Python 3.6.1 x64 sollte der Eintrag wie folgt aussehen:
 
@@ -103,7 +104,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask:** Ändern Sie den Wert `WSGI_HANDLER` auf `<project_name>.app`, wobei das `<project_name>`-Element dem Namen Ihres Projekts entspricht. Den genauen Identifizierer können Sie ermitteln, indem Sie sich die Anweisung `from <project_name> import app` im `runserver.py`-Objekt ansehen. Wenn das Projekt z.B. den Namen „FlaskAzurePublishExample“ hat, sieht der Eintrag wie folgt aus:
+    - **Flask:** Ändern Sie den Wert `WSGI_HANDLER` in `<project_name>.app`, wobei das `<project_name>`-Element dem Namen Ihres Projekts entspricht. Den genauen Identifizierer können Sie ermitteln, indem Sie sich die Anweisung `from <project_name> import app` im `runserver.py`-Objekt ansehen. Wenn das Projekt z.B. den Namen „FlaskAzurePublishExample“ hat, sieht der Eintrag wie folgt aus:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->

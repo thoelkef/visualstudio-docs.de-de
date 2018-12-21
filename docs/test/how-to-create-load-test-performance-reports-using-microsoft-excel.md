@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel in Visual Studio
+title: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896561"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064995"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
@@ -104,7 +104,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
    - **Fehlervergleich:** Vergleicht die bei den zwei Testläufen gefundenen Fehlertypen und die Anzahl von Vorkommen.
 
      > [!TIP]
-     > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: "Ziel" und "Berichtsname". Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter „Indikatorensätze verwalten“ die Eigenschaft „Computertags“ in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
+     > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter „Indikatorensätze verwalten“ die Eigenschaft „Computertags“ in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>So generieren Sie mit Excel Trendberichte für Auslastungstests
 
@@ -144,7 +144,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 9. Der Bericht wird mit einem Inhaltsverzeichnis generiert, das Links zu den verschiedenen Excel-Arbeitsmappenregisterkarten im Bericht enthält. Die Links basieren auf den für den Trendbericht ausgewählten Indikatoren. Wenn Sie in Schritt 7 z. B. die Standardindikatoren übernommen haben, werden Daten für jeden der in Schritt 7 aufgeführten Indikatoren generiert und auf separaten Registerkarten in Excel dargestellt. Die für die einzelnen Indikatoren generierten Daten werden in Trenddiagrammen dargestellt.
 
    > [!TIP]
-   > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: "Ziel" und "Berichtsname". Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter „Indikatorensätze verwalten“ die Eigenschaft „Computertags“ in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
+   > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter „Indikatorensätze verwalten“ die Eigenschaft „Computertags“ in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 

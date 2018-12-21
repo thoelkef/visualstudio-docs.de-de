@@ -1,5 +1,5 @@
 ---
-title: Web-API für Leistungstests in Visual Studio
+title: Webleistungstest-API
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eacdcf65619909c052f786a8b22b61b4d48292d9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896457"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064497"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Vorgehensweise: Verwenden der Webleistungstest-API
 

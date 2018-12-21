@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813836"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248282"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -39,7 +39,7 @@ Die *RHISTORY*-Datei zeichnet alle Befehle auf, die Sie im Fenster [R Interactiv
 
 Die Datei *rproject.rproj* behält bestimmte R-spezifische Projekteinstellungen bei, die anderweitig nicht von Visual Studio verwaltet werden:
 
-| Eigenschaft | Standard | Beschreibung  |
+| Eigenschaft | Standard | Beschreibung |
 | --- | --- | --- |
 | Version | 1.0 | Die Version von R Tools für Visual Studio, die für die Projekterstellung verwendet wurde |
 | RestoreWorkspace | Standard | Lädt automatisch vorherige Arbeitsbereichsvariablen aus der Datei `.RData` im Projektverzeichnis |
@@ -63,10 +63,10 @@ Führen Sie die folgenden Schritte aus, wenn Sie einen vorhandenen Ordner mit *R
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
-Klicken sie zum Öffnen der Seiten mit den Projekteigenschaften mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer**, und wählen Sie **Eigenschaften** oder das Menüelement *Projekt > (Projektname) > Eigenschaften* aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
+Klicken Sie zum Öffnen der Eigenschaftenseiten des Projekts im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** oder das Menüelement **Projekt > (Projektname)-Eigenschaften** aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
 
 
-| Registerkarte | Eigenschaft | Beschreibung  | 
+| Registerkarte | Eigenschaft | Beschreibung | 
 | --- | --- | --- | 
 | Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen** > **Debuggen starten** oder **Debuggen** > **Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. | 
 | | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. | 
@@ -79,7 +79,7 @@ Klicken sie zum Öffnen der Seiten mit den Projekteigenschaften mit der rechten 
 
 Visual Studio-Projekte unterstützen sowohl über das Kontextmenü als auch über das **Projektmenü** eine Reihe von allgemeinen Befehlen. Weitere Informationen zu diesen allgemeinen Funktionen finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Bedenken Sie jedoch, dass R Tools für Visual Studio (RTVS) eine Reihe eigener Befehle zum Kontextmenü eines R-Projekts sowie Dateien und Ordner innerhalb des Projekts hinzufügt.
 
-| Befehl | Beschreibung  |
+| Befehl | Beschreibung |
 | --- | --- |
 | Arbeitsverzeichnis hier festlegen | Legt das Arbeitsverzeichnis des Fensters von R Interactive auf den Projektordner fest, der auch für jeden Unterordner eines Projekts verwendet werden kann. |
 | Enthaltenden Ordner öffnen | Öffnet den Windows-Explorer am Speicherort der ausgewählten Datei |
@@ -94,7 +94,7 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Sie können auf 
 > [!Note]
 > Die Befehle **Hinzufügen** > **Neues Element** zeigen auch allgemeine Dateitypen an, die in der Tabelle nicht aufgelistet sind. Mit **Datei** > **Neu** > **Datei** werden diese Typen stattdessen auf der Registerkarte **Allgemein** aufgeführt.
 
-| Dateityp | Beschreibung  |
+| Dateityp | Beschreibung |
 | --- | --- |
 | R-Skript | Eine Textdatei, die dieselben Befehle enthält, die in der R-Befehlszeile eingegeben werden können |
 | R Markdown | Eine Datei mit einem [R Markdown](rmarkdown-with-r-in-visual-studio.md)-Dokument |

@@ -1,5 +1,5 @@
 ---
-title: Konvertieren von Text in Großschreibung oder Kleinschreibung im Visual Studio-Editor
+title: Konvertieren von Text in Groß- oder Kleinschreibung
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7165ea27c18e78fc7f9ee2ac790ff6d4d9e52c13
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446061"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059284"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung von Text im Editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
 
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.
 
@@ -46,4 +46,4 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
 
 - [Anpassen des Editors](../ide/customizing-the-editor.md)
 - [Dialogfeld „Optionen“ des Text-Editors](../ide/reference/text-editor-options-dialog-box.md)
-- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

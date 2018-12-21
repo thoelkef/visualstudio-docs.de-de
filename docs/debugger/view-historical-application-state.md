@@ -1,7 +1,7 @@
 ---
-title: Anzeigen des vorherigen Anwendungszustands über IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+title: Anzeigen des vorherigen App-Zustands mithilfe von IntelliTrace
+description: Informationen zum Aufnehmen von Momentaufnahmen und Anzeigen von Momentaufnahmen mit der IntelliTrace-Funktion „Schritt zurück“
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846862"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060144"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio
 
@@ -96,9 +96,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 Im IntelliTrace-Modus zum ausschließlichen Verwenden von Ereignissen ist das Aktivieren des verlaufsbezogenen Debuggens von Einzelschritten und Breakpoints nicht gestattet. IntelliTrace erfasst jedoch nur Daten in den Fenstern **Locals** (Lokale) und **Autos**, falls diese geöffnet sind. Es werden zudem ausschließlich Daten erfasst, die erweitert sind und sich in der Ansicht befinden. Im Modus zum ausschließlichen Verwenden von Ereignissen haben Sie selten eine vollständige Ansicht der Variablen und komplexen Objekte. Zusätzlich werden die Ausdrucksauswertung und das Anzeigen von Daten im **Überwachungsfenster** nicht unterstützt. 
 
-Wenn sich IntelliTrace im Ereignis- und Momentaufnahmemodus befindet, wird die gesamte Momentaufnahme des Anwendungsprozesses erfasst, einschließlich der komplexen Objekte. In einer Codezeile werden die gleichen Informationen wie beim Anhalten an einem Breakpoint (dabei ist es egal, ob Sie die Informationen zuvor erweitert hatten). Die Ausdrucksauswertung wird auch beim Anzeigen einer Momentaufnahme unterstützt.  
+Wenn sich IntelliTrace im Ereignis- und Momentaufnahmemodus befindet, wird die gesamte Momentaufnahme des Anwendungsprozesses erfasst, einschließlich der komplexen Objekte. In einer Codezeile werden die gleichen Informationen wie beim Anhalten an einem Breakpoint (dabei ist es egal, ob Sie die Informationen zuvor erweitert hatten). Die Ausdrucksauswertung wird auch beim Anzeigen einer Momentaufnahme unterstützt.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Wie wirkt sich dieses Feature auf die Leistung aus? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Wie wirkt sich dieses Feature auf die Leistung aus? 
 
 Die Auswirkung auf die gesamte Steppingleistung hängt von Ihrer Anwendung ab. Der Mehraufwand, der für das Erstellen einer Momentaufnahme aufgewendet werden muss, beträgt etwa 30 ms. Wenn eine Momentaufnahme erstellt wird, wird der App-Prozess aufgespalten, und die verzweigte Kopie wird angehalten. Wenn Sie eine Momentaufnahme anzeigen, fügt Visual Studio diese zur verzweigten Kopie des Prozesses hinzu. Visual Studio kopiert für jede Momentaufnahme nur die Seitentabelle und legt Copy-on-Write für Seiten fest (beim Schreibvorgang kopieren). Wenn sich Objekte auf dem Heap zwischen den Debuggerschritten mit zugeordneten Momentaufnahmen ändern, wird die jeweilige Seitentabelle daraufhin kopiert, wodurch nur minimale Arbeitsspeicherkosten entstehen. Sollte Visual Studio erkennen, dass nicht genügend Arbeitsspeicher zum Erstellen einer Momentaufnahme verfügbar ist, wird keine erstellt.
  
@@ -112,7 +112,7 @@ Die Auswirkung auf die gesamte Steppingleistung hängt von Ihrer Anwendung ab. D
   * Alternative Vorgehensweise: 
     1. Installieren Sie das Toolset VC++ 2015.3 v140 für Desktop (x86, x64) aus dem Visual Studio-Installer.
     2. Erstellen Sie die Zielanwendung.
-    3. Verwenden Sie das EDITBIN-Tool aus der Befehlszeile, um das Tag `Largeaddressaware` für das Ziel als ausführbar festzulegen. Sie können z.B. den folgenden Befehl verwenden (nach Update des Pfads): „C:\Programme (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe“ /Largeaddressaware „C:\Path\To\Application\app.exe“.
+    3. Verwenden Sie das EDITBIN-Tool aus der Befehlszeile, um das Tag `Largeaddressaware` für das Ziel als ausführbar festzulegen. Sie können beispielsweise den folgenden Befehl (nach dem Update des Pfads) verwenden: "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Jetzt werden Momentaufnahmen von Einzelschritten des Debuggers und Breakpoints gemacht.
 
        > [!Note]

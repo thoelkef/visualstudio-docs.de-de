@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen und Löschen von Zählern zu bzw. aus Diagrammen in Auslastungstestergebnissen in Visual Studio
+title: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896522"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049939"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>How to: Add and Delete Counters on Graphs in Load Test Results
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 
 Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsindikatoren hinzuzufügen.
 
@@ -30,7 +30,7 @@ Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsind
 
 **Überlegungen zum Samplingintervall von Leistungsindikatoren**
 
-Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
@@ -49,7 +49,7 @@ Zum Aktivieren der Eigenschaft **Speicher für Details der zeitlichen Steuerung*
 
 Insbesondere bei langen Auslastungstests kann sehr viel Speicherplatz erforderlich sein, um Detaildaten der zeitlichen Steuerung im Ergebnisrepository für Auslastungstests zu speichern. Zudem nimmt das Speichern der Daten im Ergebnisrepository für Auslastungstests am Ende des Tests mehr Zeit in Anspruch, da die Daten bis zum Abschluss der Ausführung auf den Auslastungstests-Agents gespeichert werden. Bei der Beendigung des Auslastungstests werden die Daten im Repository gespeichert. Die Eigenschaft **Speicher für Details der zeitlichen Steuerung** ist standardmäßig aktiviert. Falls dies in Ihrer Testumgebung ein Problem ist, sollten Sie **Speicher für Details der zeitlichen Steuerung** auf **Keine** festlegen.
 
-Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>So zeigen Sie einen bestimmten Leistungsindikator in einem Auslastungstestdiagramm an
 
@@ -87,4 +87,4 @@ Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „
 ## <a name="see-also"></a>Siehe auch
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen](../test/how-to-create-custom-graphs-in-load-test-results.md)

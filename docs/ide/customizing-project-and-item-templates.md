@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Projekt- und Elementvorlagen in Visual Studio
+title: Anpassen von Projekt- und Elementvorlagen
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571876"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051755"
 ---
 # <a name="customize-project-and-item-templates"></a>Anpassen von Projekt- und Elementvorlagen
 
@@ -35,7 +35,7 @@ Sie können z. B. folgende Aufgaben ausführen:
 
 - Anpassen der Assistenten, die Projekte aus Vorlagen erstellen
 
-   Weitere Informationen finden Sie unter [How to: Use Wizards with Project Templates (Extensibility) (Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen (Erweiterbarkeit))](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md).
 
 ## <a name="see-also"></a>Siehe auch
 

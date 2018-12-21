@@ -1,5 +1,5 @@
 ---
-title: Features des Code-Editors in Visual Studio
+title: Neue Funktionen im Code-Editor
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349074"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160113"
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
@@ -60,8 +60,8 @@ Einige erweiterte Funktionen befinden sich auf der Symbolleiste im Menü **Bearb
 |Tabstopps aus ausgewählten Zeilen entfernen|Ändert führende Tabstopps in Leerzeichen. Wenn Sie in einer Datei alle Leerzeichen in Tabstopps (oder alle Tabstopps in Leerzeichen) konvertieren möchten, können Sie dazu die Befehle `Edit.ConvertSpacesToTabs` und `Edit.ConvertTabsToSpaces` verwenden. Diese Befehle werden nicht in Visual Studio-Menüs angezeigt. Sie können sie jedoch über das **Schnellzugriffsfenster** oder das Befehlsfenster aufrufen.|
 |In Großbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Großbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Großbuchstaben dargestellt.|
 |In Kleinbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Kleinbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Kleinbuchstaben dargestellt.|
-|Ausgewählte Zeilen nach oben verschieben|Verschiebt die ausgewählte Zeilen um eine Zeile nach oben Tastenkombination: **ALT**+**NACH-OBEN-TASTE**.|
-|Ausgewählte Zeilen nach unten verschieben|Verschiebt die ausgewählte Zeile um eine Zeile nach unten. Tastenkombination: **ALT**+**NACH-UNTEN-TASTE**.|
+|Ausgewählte Zeilen nach oben verschieben|Verschiebt die ausgewählte Zeilen um eine Zeile nach oben Tastenkombination: **ALT**+**NACH-OBEN-TASTE**|
+|Ausgewählte Zeilen nach unten verschieben|Verschiebt die ausgewählte Zeile um eine Zeile nach unten. Tastenkombination: **ALT**+**NACH-UNTEN-TASTE**|
 |Horizontale Leerstelle löschen|Löscht Tabstopps oder Leerzeichen am Ende der aktuellen Zeile.|
 |Leerstelle anzeigen|Zeigt Leerzeichen als Hochpunkte und Tabstopps als Pfeile an. Das Ende einer Datei wird als rechteckiges Symbol angezeigt. Wenn die Option **Tools** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **Zeilenumbruch** > **Sichtbare Glyphen für Zeilenumbruch anzeigen** ausgewählt ist, wird diese Glyphe ebenfalls angezeigt.|
 |Zeilenumbruch|Bewirkt, dass alle Zeilen in einem Dokument im Codefenster sichtbar sind. Sie können den Zeilenumbruch in den **Text-Editor-Einstellungen für alle Sprachen** aktivieren und deaktivieren (**Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen**).|
@@ -91,7 +91,7 @@ Weitere Informationen zum Anpassen des Editors finden Sie unter [Anpassen des Ed
 ## <a name="see-also"></a>Siehe auch
 
 - [Quellcode-Editor (Visual Studio für Mac)](/visualstudio/mac/source-editor)
-- [Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Erste Schritte mit C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Erste Schritte mit C# und ASP.NET in Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Erste Schritte mit Python in Visual Studio](../ide/quickstart-python.md)

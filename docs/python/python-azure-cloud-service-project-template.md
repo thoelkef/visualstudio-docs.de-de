@@ -1,6 +1,6 @@
 ---
 title: Projektvorlage für Azure-Clouddienste für Python
-description: Übersicht der in Python geschriebenen Visual Studio-Vorlage für Azure-Clouddienste einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung.
+description: Visual Studio stellt in Python geschriebene Vorlagen einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung für Azure-Clouddienste bereit.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,22 +8,23 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1bcb8123ace6f4671f2127ba80377ef88891bdc8
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607730"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068525"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
 Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Services mithilfe von Python helfen.
 
-Ein [Clouddienst](https://docs.microsoft.com/azure/cloud-services/) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. In der Regel verwenden sie die Pakete im Paket „azure“, das mit [`pip install azure`](http://pypi.org/project/azure) installiert wird.
+Ein [Clouddienst](https://docs.microsoft.com/azure/cloud-services/) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. In der Regel verwenden sie die Pakete im Paket „azure“, das mit [`pip install azure`](https://pypi.org/project/azure) installiert wird.
 
 Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](https://docs.microsoft.com/python/azure/?view=azure-python).
 

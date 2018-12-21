@@ -1,5 +1,5 @@
 ---
-title: Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests in Visual Studio
+title: Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895430"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061810"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -36,10 +36,10 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
 
  In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|Beschreibung |In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
-|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**: Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
+|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**:  Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
 |Kategorie|Die Kategorie des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Zähler|Der Name des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Instanz|Die Instanz des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|

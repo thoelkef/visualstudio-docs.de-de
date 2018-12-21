@@ -1,6 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic | Microsoft-Dokumentation'
-ms.custom: ''
+title: Schreiben eine Schnellansicht in Visual Basic | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69eebb38fc1717466203448c266ee1af5e99d555
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 69534dbcd3a51ce5c6e4478c6fcc40a770de2548
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388373"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065447"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Nach dem Muster dieser einfachen Zeichenfolgen-Schnellansicht können Sie auch Schnellansichten für andere Datentypen erstellen, die Sie in Ihren Projekten benötigen.
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü Extras **die Option Importieren und Exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Importieren und Exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb besteht der erste Schritt darin, ein Klassenbibliotheksprojekt für die DLL zu erstellen.
 
@@ -37,13 +37,13 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-create-a-class-library-project"></a>So erstellen Sie ein Klassenbibliotheksprojekt
 
-1. Wählen Sie im Menü Datei **die Option Neu** aus, und klicken Sie auf Neues Projekt **.
+1. Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie auf **Neues Projekt**.
 
 2. In der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic**.
 
 3. Klicken Sie unter **.NET Standard**, klicken Sie auf **Klassenbibliothek**.
 
-4. Geben Sie im Feld Name** für die Klassenbibliothek einen entsprechenden Namen ein, zum Beispiel MyFirstVisualizer.
+4. Geben Sie im Feld **Name** einen entsprechenden Namen für die Klassenbibliothek ein, zum Beispiel **MyFirstVisualizer**.
 
 5. Klicken Sie auf **OK**.
 
@@ -51,16 +51,16 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>So benennen Sie "Class1.vb" um und fügen "Microsoft.VisualStudio.DebuggerVisualizers" hinzu
 
-1. Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf Class1.vb** und dann im Kontextmenü auf Umbenennen **.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Class1.vb** und dann im Kontextmenü auf **Umbenennen**.
 
 2. Ändern Sie den Namen von Class1.vb in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.vb.
 
    > [!NOTE]
    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in DebuggerSide.vb automatisch an den neuen Dateinamen an.
 
-3. Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf MyFirstVisualizer**, und klicken Sie dann im Kontextmenü auf Verweis hinzufügen **.
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyFirstVisualizer**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-4. Wählen Sie im Dialogfeld Verweis hinzufügen **auf der Registerkarte .NET** den Eintrag Microsoft.VisualStudio.DebuggerVisualizers.DLL aus.
+4. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers.DLL“ aus.
 
 5. Klicken Sie auf **OK**.
 
@@ -104,9 +104,9 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-add-systemwindowsforms"></a>So fügen Sie System.Windows.Forms hinzu
 
-1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf Verweise**, und klicken Sie dann im Kontextmenü auf Verweis hinzufügen **.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-2.  Klicken Sie im Dialogfeld Verweis hinzufügen **auf der Registerkarte .NET** auf den Eintrag System.Windows.Forms **.
+2.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** auf den Eintrag **System.Windows.Forms**.
 
 3.  Klicken Sie auf **OK**.
 
@@ -129,7 +129,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
      Dieser Beispielcode enthält keine Fehlerbehandlung. Sie sollten die Fehlerbehandlung in einer echten Schnellansicht oder in anderen Anwendungen berücksichtigen.
 
-2.  Klicken Sie im Menü Erstellen **auf MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
+2.  Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
 
 ## <a name="add-the-necessary-attribute"></a>Hinzufügen des erforderlichen Attributs
  Damit sind wir mit dem Code für den Debugger fertig. Ein Schritt fehlt allerdings noch: Das Attribut, das der zu debuggenden Seite mitteilt, welche Auflistung von Klassen die Schnellansicht enthält.
@@ -142,7 +142,7 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  Klicken Sie im Menü Erstellen **auf MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
+2.  Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
 
 ## <a name="create-a-test-harness"></a>Erstellen einer Testumgebung
  Damit ist das Erstellen Ihrer ersten Schnellansicht abgeschlossen. Wenn Sie alle Schritte richtig befolgt haben, können Sie die Schnellansicht problemlos erstellen und in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installieren. Bevor Sie eine Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installieren, sollten Sie jedoch durch Tests sicherstellen, dass sie ordnungsgemäß funktioniert. Als Nächstes erstellen Sie eine Testumgebung, in der Sie die Schnellansicht ohne Installation in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausführen können.
@@ -158,17 +158,17 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
    End Sub
    ```
 
-2. Klicken Sie im Menü Erstellen **auf MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
+2. Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.
 
    Als Nächstes müssen Sie ein ausführbares Projekt erstellen, um die Schnellansichts-DLL aufzurufen. Verwenden Sie der Einfachheit halber ein Konsolenanwendungsprojekt.
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>So fügen Sie der Projektmappe ein Konsolenanwendungsprojekt hinzu
 
-1. Klicken Sie im Menü Datei **auf Hinzufügen**, und klicken Sie dann auf Neues Projekt **.
+1. Klicken Sie im Menü **Datei** auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt**.
 
 2. In der **neues Projekt hinzufügen** wählen Sie im Dialogfeld **Visual Basic**, und klicken Sie dann auf **Konsolenanwendung**.
 
-3. Geben Sie im Feld Name** einen aussagekräftigen Namen für die Konsolenanwendung ein, zum Beispiel MyTestConsole.
+3. Geben Sie im Feld **Name** einen aussagekräftigen Namen für die Konsolenanwendung ein, zum Beispiel **MyTestConsole**.
 
 4. Klicken Sie auf **OK**.
 
@@ -176,15 +176,15 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>So fügen Sie MyTestConsole die erforderlichen Verweise hinzu
 
-1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf MyTestConsole**, und klicken Sie dann im Kontextmenü auf Verweis hinzufügen **.
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.
 
-2.  Wählen Sie im Dialogfeld Verweis hinzufügen **auf der Registerkarte .NET** den Eintrag Microsoft.VisualStudio.DebuggerVisualizers aus.
+2.  Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers“ aus.
 
 3.  Klicken Sie auf **OK**.
 
-4.  Klicken Sie mit der rechten Maustaste auf MyTestConsole **, und klicken Sie erneut auf Verweis hinzufügen**.
+4.  Klicken Sie mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie erneut auf **Verweis hinzufügen**.
 
-5.  Klicken Sie im Dialogfeld Verweis hinzufügen **auf die Registerkarte Projekte**, und wählen Sie dann MyFirstVisualizer aus.
+5.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Projekte**, und wählen Sie dann „MyFirstVisualizer“ aus.
 
 6.  Klicken Sie auf **OK**.
 
@@ -193,9 +193,9 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-add-code-to-mytestconsole"></a>So fügen Sie MyTestConsole Code hinzu
 
-1. Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf Program.vb** und dann im Kontextmenü auf Umbenennen **.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Program.vb** und dann im Kontextmenü auf **Umbenennen**.
 
-2. Ändern Sie den Namen Module1.vb in einen passenden Namen, z. B. TestConsole.vb.
+2. Ändern Sie den Namen „Module1.vb“ in einen passenden Namen, z.B. **TestConsole.vb**.
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.
 
@@ -216,18 +216,18 @@ Der Code für eine Schnellansicht muss in eine DLL eingefügt werden, die vom De
 
 ### <a name="to-test-the-visualizer"></a>So testen Sie die Schnellansicht
 
-1. Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf MyTestConsole**, und klicken Sie im Kontextmenü auf Als Startprojekt festlegen **.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie im Kontextmenü auf **Als Startprojekt festlegen**.
 
-2. Klicken Sie im Menü Debuggen **auf Starten**.
+2. Klicken Sie im Menü **Debuggen** auf **Starten**.
 
     Die Konsolenanwendung wird gestartet. Die Schnellansicht wird mit der Zeichenfolge "Hello, World" angezeigt.
 
    Herzlichen Glückwunsch! Sie haben soeben Ihre erste Schnellansicht erstellt und getestet.
 
-   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md).
+   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [How to: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)
-- [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)
+- [How to: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

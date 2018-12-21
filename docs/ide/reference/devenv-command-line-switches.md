@@ -1,5 +1,5 @@
 ---
-title: Devenv-Befehlszeilenparameter in Visual Studio
+title: Devenv-Befehlszeilenschalter
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948893"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063395"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenparameter
 
@@ -60,7 +60,7 @@ Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszei
 
 Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebene Aufgabe aus.
 
-|Befehlszeilenschalter|Beschreibung |
+|Befehlszeilenschalter|Beschreibung|
 | - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Startet die IDE und führt den angegebenen Befehl aus.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Lädt eine ausführbare C++-Datei unter der Kontrolle des Debuggers. Dieser Schalter ist für ausführbare Visual Basic- oder C#-Dateien nicht verfügbar. Weitere Informationen finden Sie unter [Prozess im Debugger automatisch starten](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -76,13 +76,13 @@ Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebe
 
 Durch die folgenden Befehlszeilenschalter wird die IDE nicht angezeigt.
 
-|Befehlszeilenschalter|Beschreibung |
+|Befehlszeilenschalter|Beschreibung|
 | - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Zeigt Hilfe für devenv-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> `devenv /?`|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Löscht vom Buildbefehl erstellte Dateien, ohne die Quelldateien zu beeinflussen.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Erstellt die Lösung mit für die Bereitstellung notwendigen Dateien gemäß der Lösungskonfiguration.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Vergleicht zwei Dateien. Benötigt vier Parameter: SourceFile, TargetFile, SourceDisplayName (optional), TargetDisplayName (optional).|
+|[/Diff](../../ide/reference/diff.md)|Vergleicht zwei Dateien. Erfordert vier Parameter: SourceFile, TargetFile, SourceDisplayName (optional), TargetDisplayName (optional).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Ermöglicht die Angabe einer Datei für Fehlermeldungen, wenn ein Build erstellt wird.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Das zu erstellende, bereinigende oder bereitzustellende Projekt. Dieser Schalter kann nur verwendet werden, wenn auch einer der Schalter /build, /rebuild, /clean oder /deploy angegeben wurde.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Gibt die zu erstellende oder bereitzustellende Projektkonfiguration an. Dieser Schalter kann nur verwendet werden, wenn auch der Schalter /project angegeben wurde.|

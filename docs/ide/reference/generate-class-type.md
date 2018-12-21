@@ -1,5 +1,5 @@
 ---
-title: Generieren einer Klasse oder eines Typs in Visual Studio
+title: Generieren einer Klasse oder eines Typs
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296280"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065473"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
 
@@ -29,9 +29,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie sofort den Code für eine Klasse oder einen Typ generieren.
+**Beschreibung:** Hiermit können Sie sofort den Code für eine Klasse oder einen Typ generieren.
 
-**Hintergrund**: Sie führen eine neue Klasse oder einen neuen Typ ein, die bzw. der ordnungsgemäß automatisch deklariert werden soll.
+**Hintergrund:** Sie führen eine neue Klasse oder einen neuen Typ ein, die bzw. der ordnungsgemäß automatisch deklariert werden soll.
 
 **Vorteile**: Sie können die Klasse oder den Typ vor der Verwendung zwar deklarieren, bei diesem Feature wird die Klasse bzw. der Typ jedoch automatisch generiert.
 
@@ -72,7 +72,7 @@ Diese Codegenerierung gilt für:
 
    ![Typ generieren](media/class-newtype-cs.png)
 
-   Auswahl | Beschreibung 
+   Auswahl | Beschreibung
    --- | ---
    Zugriff | Legen Sie den Zugriffstyp auf *Standard*, *Intern* oder *Öffentlich* fest.
    Art | Dieses Element kann auf *Klasse* oder *Struktur* festgelegt werden.

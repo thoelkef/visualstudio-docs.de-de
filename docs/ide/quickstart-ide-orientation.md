@@ -1,5 +1,6 @@
 ---
 title: Einführung in die Visual Studio-IDE
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626528"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159567"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
 In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
 
@@ -105,13 +106,13 @@ Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verb
 Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit der Benutzeroberfläche vertraut zu machen. Weitere mögliche Schritte:
 
 > [!div class="nextstepaction"]
-> [Erfahren Sie mehr über den Code-Editor](../ide/quickstart-editor.md)
+> [Erfahren Sie mehr über den Code-Editor](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Erfahren Sie mehr über Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)
+> [Erfahren Sie mehr über Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht der Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Übersicht der Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Weitere Features von Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Ändern von Design und Schriftfarben](../ide/quickstart-personalize-the-ide.md)

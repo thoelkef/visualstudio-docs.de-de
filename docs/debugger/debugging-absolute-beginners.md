@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821369"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160022"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -66,7 +66,7 @@ Wenn Sie eine App ausführen, sehen Sie Fehler und falsche Ergebnisse normalerwe
 
 Das Ausführen einer App in einem Debugger (auch als *Debugmodus* bezeichnet) bedeutet, dass der Debugger alle Vorgänge während der Ausführung des Programms überwacht. Sie können die App zudem jederzeit pausieren, um ihren Zustand zu überprüfen, und den Code anschließend schrittweise durchlaufen, um jedes Detail in Echtzeit zu beobachten.
 
-In Visual Studio starten Sie den Debugmodus, indem Sie auf **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
+In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
 
 Wenn keine Ausnahme ausgelöst wurde, haben Sie möglicherweise dennoch eine Idee, an welcher Stelle im Code Sie nach dem Problem suchen müssen. Hierfür verwenden Sie *Breakpoints* mit dem Debugger, damit Sie den Code gründlicher untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Breakpoint gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie die Werte von Variablen, das Verhalten des Arbeitsspeichers oder die Sequenz, in der der Code ausgeführt wird, überprüfen.
 
@@ -78,7 +78,7 @@ Zur Veranschaulichung dieser Konzepte werden Sie durch Beispielcode geführt, de
 
 Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
-1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, was für eine App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
+1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 

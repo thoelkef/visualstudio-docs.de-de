@@ -1,8 +1,10 @@
 ---
 title: Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
+titleSuffix: ''
 description: Erfahren Sie mehr über die Tools, die Sie zum Erkennen und Verwalten von Visual Studio-Installationen auf Clientcomputern verwenden können.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d0f283542445335496e3cbb7b98955df02b05
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672612"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158566"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
 
@@ -30,8 +32,8 @@ Es gibt mehrere Tools, die Sie zum Erkennen und Verwalten von Visual Studio-Inst
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten können:
 
 * [VSWhere](https://github.com/microsoft/vswhere): eine ausführbare Datei, die entweder in Visual Studio integriert oder zur separaten Verteilung verfügbar ist und Ihnen dabei hilft, die Speicherorte aller Visual Studio-Instanzen auf einem bestimmten Computer zu finden.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): PowerShell-Skripts, die die Setupkonfigurations-API zum Identifizieren der installierten Instanzen von Visual Studio verwenden.
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): C#- und C++-Beispiele, die veranschaulichen, wie Sie die Setupkonfigurations-API zum Abfragen einer vorhandene Installation verwenden.
+* [vssetup.powershell:](https://github.com/microsoft/vssetup.powershell) PowerShell-Skripts, die mithilfe der Setupkonfigurations-API installierte Visual Studio-Instanzen ermitteln.
+* [vs-setup-samples:](https://github.com/microsoft/vs-setup-samples) C#- und C++-Beispiele, die veranschaulichen, wie Sie eine vorhandene Installation mit der Setupkonfigurations-API abfragen.
 
 Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudio.Setup.Configuration>) Schnittstellen für Entwickler bereit, die eigene Hilfsprogramme zum Abfragen von Visual Studio-Instanzen erstellen möchten.
 
@@ -46,7 +48,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 >[!TIP]
 >Weitere Informationen zur Installation von Visual Studio 2017 finden in den [Blogbeiträgen von Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
-
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Bearbeiten der Registrierung einer Visual Studio-Instanz
 
 In Visual Studio 2017 werden Registrierungseinträge in einem privaten Speicherort gespeichert, was ermöglicht, dass sich mehrere Instanzen derselben Version von Visual Studio auf demselben Computer befinden.
@@ -56,7 +57,7 @@ Da diese Einträge nicht in der globalen Registrierung gespeichert werden, gibt 
 1. Wenn Sie eine Instanz Visual Studio-2017 geöffnet haben, schließen Sie sie.
 2. Starten Sie `regedit.exe`.
 3. Wählen Sie den Knoten `HKEY_LOCAL_MACHINE` aus.
-4. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei -> Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Zum Beispiel:
+4. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei -> Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Beispiel:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

@@ -1,6 +1,6 @@
 ---
-title: 'Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto | Microsoft-Dokumentation'
-ms.custom: ''
+title: Ausführen von Arbeitsprozessen unter einem Benutzerkonto | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939111"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067815"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto
 Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess (aspnet_wp.exe oder w3wp.exe) unter einem Benutzerkonto ausgeführt werden kann, führen Sie folgende Schritte aus:  
 
  > [!IMPORTANT]
@@ -40,21 +40,21 @@ Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/
   
 1. Öffnen Sie die Datei machine.config. Sie befindet sich auf dem Computer im Ordner CONFIG und wurde unter demselben Pfad gespeichert, unter dem die Laufzeit installiert wurde.  
   
-2. Suchen der &lt;ProcessModel&gt; Abschnitt, und ändern Sie die Attribute für Benutzernamen und Kennwort des mit dem Namen und das Kennwort des Benutzerkontos aspnet_wp.exe unter ausgeführt werden soll.  
+2. Suchen Sie den Abschnitt &lt;processModel&gt;, und verwenden Sie für die Attribute „user“ und „password“ den Benutzernamen und das Kennwort des Benutzerkontos, unter dem „aspnet_wp.exe“ ausgeführt werden soll.  
   
 3. Speichern Sie die Datei machine.config.  
   
 4. Unter [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] wird IIS 6.0 standardmäßig installiert. Der entsprechende Arbeitsprozess ist "w3wp.exe". Führen Sie folgende Schritte aus, um "aspnet_wp.exe" als Arbeitsprozess im IIS 6.0-Modus auszuführen:  
   
-   1.  Klicken Sie auf **starten**, klicken Sie auf **Verwaltung** und wählen Sie dann **Internet Information Services**.  
+   1.  Klicken Sie auf **Start** und dann auf **Verwaltung**. Wählen Sie anschließend **Internetinformationsdienste** aus.  
   
-   2.  In der **Internet Information Services** im Dialogfeld mit der rechten Maustaste die **Websites** Ordner, und wählen Sie **Eigenschaften**.  
+   2.  Klicken Sie im Dialogfeld **Internetinformationsdienste** mit der rechten Maustaste auf den Ordner **Web Sites** (Websites), und wählen Sie **Eigenschaften** aus.  
   
-   3.  In der **Websiteeigenschaften** Dialogfeld wählen **Service**.  
+   3.  Wählen Sie im Dialogfeld **Web Sites Properties**  (Eigenschaften von Websites) die Option **Service** (Dienst) aus.  
   
-   4.  Wählen Sie **ausführen WWW-Dienst in IIS 6.0-Isolationsmodus**.  
+   4.  Wählen Sie **Run WWW service in IIS6.0 isolation mode** (WWW-Dienst im IIS 6.0-Isolationsmodus ausführen) aus.  
   
-   5.  Schließen der **Eigenschaften** Dialogfeld und **Internetdienste-Manager**.  
+   5.  Schließen Sie das Dialogfeld **Eigenschaften** und den **Internetdienste-Manager**.  
   
 5. Öffnen Sie eine Eingabeaufforderung von Windows, und setzen Sie den Server zurück, indem Sie Folgendes ausführen:  
   
@@ -68,25 +68,25 @@ Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/
    net start w3svc  
    ```  
   
-6. Suchen Sie den Ordner Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files. Er sollte sich im selben Pfad befinden wie der Ordner CONFIG. Mit der rechten Maustaste in des temporäres [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Ordner für Aktualisierungsdateien, und wählen Sie **Eigenschaften** im Kontextmenü auf.  
+6. Suchen Sie den Ordner Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files. Er sollte sich im selben Pfad befinden wie der Ordner CONFIG. Klicken Sie mit der rechten Maustaste auf den Ordner „Temporäre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Dateien“, und wählen Sie im Kontextmenü die Option **Eigenschaften** aus.  
   
-7. In der **Eigenschaften von Temporary ASP.NET Files** Dialogfeld klicken Sie auf die **Sicherheit** Registerkarte.  
+7. Klicken Sie im Dialogfeld **Temporary ASP.NET Files Properties** (Eigenschaften temporärer ASP.NET-Dateien) auf die Registerkarte **Sicherheit**.  
   
-8. Klicken Sie auf **erweiterte**.  
+8. Klicken Sie auf **Erweitert**.  
   
-9. In der **erweiterte Sicherheitseinstellungen für Temporary ASP.Net Files** Dialogfeld klicken Sie auf **hinzufügen**.  
+9. Klicken Sie im Dialogfeld **Advanced Security Settings for Temporary ASP.Net Files** (Erweiterte Sicherheitseinstellungen für temporäre ASP.NET-Dateien) auf **Hinzufügen**.  
   
-    Die **im Dialogfeld Benutzer, Computer oder Gruppe** angezeigt wird.  
+    Das Dialogfeld **Select User, Computer, or Group** (Benutzer, Computer oder Gruppen auswählen) wird angezeigt.  
   
-10. Geben Sie den Benutzernamen in der **Geben Sie den zu verwendenden Objektnamen** ein, und klicken Sie dann auf **OK**. Der Benutzername muss folgendes Format aufweisen: Domänenname\Benutzername.  
+10. Geben Sie den Benutzernamen in das Feld **Namen des auszuwählenden Objekts eingeben** ein, und klicken Sie auf **OK**. Der Benutzername muss das folgende Format aufweisen: Domänenname\benutzername.  
   
-11. In der **Berechtigungseintrag für temporäre ASP.NET-Dateien** Dialogfeld gewähren Sie den Benutzer **Vollzugriff**, und klicken Sie dann auf **OK** zu schließen die **Eintrag für temporäre ASP .NET Dateien** Dialogfeld.  
+11. Gewähren Sie dem Benutzer im Dialogfeld **Permission Entry for Temporary ASP.NET Files** (Berechtigungseintrag für temporäre ASP.NET-Dateien) **Full Control** (Vollzugriff), und klicken Sie dann auf **OK**, um das Dialogfeld **Entry for Temporary ASP.NET Files** (Eintrag für temporäre ASP.NET-Dateien) zu schließen.  
   
-12. Ein **Sicherheit** Dialogfeld wird angezeigt, und fragt, ob Sie wirklich die Berechtigungen für einen Systemordner ändern möchten. Klicken Sie auf **Ja**.  
+12. Das Dialogfeld **Sicherheit** wird angezeigt, und Sie werden gefragt, ob Sie wirklich die Berechtigungen für einen Systemordner ändern möchten. Klicken Sie auf **Ja**.  
   
-13. Klicken Sie auf **OK** schließen die **Eigenschaften von Temporary ASP.NET Files** Dialogfeld.  
+13. Klicken Sie auf **OK**, um das Dialogfeld **Temporary ASP.NET Files Properties** (Eigenschaften temporärer ASP.NET-Dateien) zu schließen.  
   
 ## <a name="see-also"></a>Siehe auch  
-[Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Debug ASP.NET Applications (Debuggen von ASP.NET-Anwendungen)](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [ASP.NET-Debugging: Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)  
   

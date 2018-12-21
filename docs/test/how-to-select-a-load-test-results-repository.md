@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests in Visual Studio'
+title: 'Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895651"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059972"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests
+# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse
 
 Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Agents können zusammen mit einem Controller eine größere simulierte Last generieren als jeder einzelne Computer. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 

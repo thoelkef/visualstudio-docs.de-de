@@ -1,6 +1,6 @@
 ---
 title: Formatieren von Python-Code
-description: Automatisches Neuformatieren von Python-Code in Visual Studio einschließlich Leerzeichen, Anweisungen, Umbruch und Kommentaren.
+description: Visual Studio kann Python-Code einschließlich Zeichenabstände, Anweisungen, Zeilenumbrüche und Kommentare, automatisch neu formatieren.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219548"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052192"
 ---
 # <a name="format-python-code"></a>Formatieren von Python-Code
 
@@ -29,7 +30,7 @@ Optionen werden über **Extras** > **Optionen** > **Text-Editor** > **Python** >
 
 ![Python-Formatierungsoptionen in Visual Studio](media/options-editor-formatting.png)
 
-Für Formatierungsoptionen ist standardmäßig festgelegt, dass sie mit einem Superset des [PEP 8 Style Guide](http://www.python.org/dev/peps/pep-0008/) übereinstimmen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Artikel beschrieben.
+Für Formatierungsoptionen ist standardmäßig festgelegt, dass sie mit einem Superset des [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/) übereinstimmen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Artikel beschrieben.
 
 Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) fügt wie in einem späteren Abschnitt beschrieben dem Menü **Bearbeiten** > **Erweitert** auch den nützlichen Befehl [**Kommentarabsatz ausfüllen**](#fill-comment-paragraph-command) hinzu.
 
@@ -112,7 +113,7 @@ Durch einen **Umbruch** können Sie die **maximale Kommentarbreite** festlegen (
 
 Der Befehl **Bearbeiten** > **Erweitert** > **Kommentarabsatz ausfüllen** (**STRG**+**E** > **P**) formatiert Kommentartext und für einen dynamischen Umbruch durch, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
 
-Zum Beispiel:
+Beispiel:
 
 ```python
 # foo

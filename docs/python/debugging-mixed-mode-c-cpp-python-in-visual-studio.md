@@ -1,6 +1,6 @@
 ---
 title: Debuggen im gemischten Modus für Python
-description: Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken.
+description: Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607834"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052234"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
 
@@ -35,11 +36,11 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 - Anzeigen von Python-Darstellungen von Objekten in nativen Frames und umgekehrt
 - Das Debuggen im Kontext eines Python-Projekts oder eines C++-Projekts
 
-![Debuggen im gemischten Modus](media/mixed-mode-debugging.png)
+![Debuggen im gemischten Modus für Python in Visual Studio](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Ausführliche Erläuterungen: Erstellen nativer Module) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie im Video [Deep Dive: Create Native Modules (Ausführliche Erläuterungen: Erstellen nativer Module)](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Aktivieren des Debuggens im gemischten Modus in einem Python-Projekt
 
@@ -96,7 +97,7 @@ Für alle vorherigen Versionen von Visual Studio ist das Debuggen im gemischten 
 
 Das **Aufruflistenfenster** zeigt die Stapelrahmen für den nativen und den Python-Code überlappend und mit markierten Übergängen zwischen beiden Codetypen an:
 
-![Kombinierte Aufrufliste](media/mixed-mode-debugging-call-stack.png)
+![Kombinierte Aufrufliste mit Debuggen im gemischten Modus](media/mixed-mode-debugging-call-stack.png)
 
 Übergänge werden ohne Angabe der Übergangsrichtung als **[Externer Code]** angezeigt, wenn die Option **Extras** > **Optionen** > **Debuggen** > **Allgemein** > **Nur meinen Code aktivieren** festgelegt ist.
 
@@ -110,11 +111,11 @@ Beim Verwenden der Befehle **Einzelschritt** (**F11**) oder **Ausführen bis Rü
 
 Wenn ein nativer Frame (C oder C++) aktiv ist, werden die zugehörigen lokalen Variablen im **Lokalfenster** des Debuggers angezeigt. In nativen Python-Erweiterungsmodulen weisen viele dieser Variablen den Typ `PyObject` (eine typedef für `_object`) oder einen anderen grundlegenden Python-Typ auf (siehe unten stehende Liste). Beim Debuggen im gemischten Modus zeigen diese Werte einen zusätzlichen untergeordneten Knoten mit der Bezeichnung **[Python-Ansicht]** an. Nach Erweitern zeigt dieser Knoten die Python-Darstellung der Variablen an – wenn eine lokale Variable, die auf dasselbe Objekt verweist, in einem Python-Rahmen vorhanden wäre, wäre die Darstellung die gleiche. Die untergeordneten Elemente dieses Knotens können bearbeitet werden.
 
-![Python-Ansicht](media/mixed-mode-debugging-python-view.png)
+![Python-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-python-view.png)
 
 Um diese Funktion zu deaktivieren, klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im **Lokalfenster**, und deaktivieren Sie die Menüoption **Python** > **Python-Ansichtsknoten anzeigen**:
 
-![Aktivieren der Python-Ansicht](media/mixed-mode-debugging-enable-python-view.png)
+![Aktivieren der Python-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-enable-python-view.png)
 
 C-Typen, die **[Python-Ansicht]**-Knoten anzeigen (sofern aktiviert):
 
@@ -143,11 +144,11 @@ Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3
 
 Ähnlich wie im vorherigen Abschnitt können Sie eine **[C++ View]**-Ansicht für native Werte im **Lokalfenster** aktivieren, wenn ein Python-Frame aktiv ist. Diese Funktion ist nicht standardmäßig aktiviert. Klicken Sie mit der rechten Maustaste auf das **Lokalfenster**, und aktivieren Sie die Menüoption **Python** > **C++-Ansichtsknoten anzeigen**.
 
-![Aktivieren der C++-Ansicht](media/mixed-mode-debugging-enable-cpp-view.png)
+![Aktivieren der C++-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-enable-cpp-view.png)
 
 Der **[C++ View]**-Knoten bietet eine Darstellung der zugrunde liegenden C/C++-Struktur für einen Wert. Dies entspricht der Darstellung, die in einem nativen Frame angezeigt werden würde. Der Knoten zeigt eine Instanz von `_longobject` (wofür `PyLongObject` eine typedef ist) für einen langen ganzzahligen Python-Wert an und versucht, Typen für native Klassen abzuleiten, die Sie selbst erstellt haben. Die untergeordneten Elemente dieses Knotens können bearbeitet werden.
 
-![C++-Ansicht](media/mixed-mode-debugging-cpp-view.png)
+![C++-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-cpp-view.png)
 
 Wenn ein untergeordnetes Feld eines Objekts den Typ `PyObject` oder einen der anderen unterstützten Typen aufweist, enthält es einen **[Python-Ansicht]**-Darstellungsknoten (sofern diese Darstellungen aktiviert sind). Auf diese Weise können Sie in Objektdiagrammen navigieren, wenn Links nicht direkt in Python verfügbar sind.
 
@@ -169,8 +170,8 @@ Der Debugger für den gemischten Modus unterscheidet sich vom [Python-Standardde
 
 - Nicht unterstützte Funktionen: Bedingte Haltepunkte, **Fenster zum interaktiven Debuggen** und plattformübergreifendes Remotedebuggen.
 - **Direktfenster**: Ist verfügbar, allerdings mit eingeschränkter Funktionalität – einschließlich aller hier aufgeführten Einschränkungen.
-- Unterstützte Python-Versionen: Nur CPython 2.7 und 3.3+.
-- Visual Studio Shell: Bei Verwendung von Python mit Visual Studio Shell (wenn Sie Python beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
+- Unterstützte Python-Versionen: Nur CPython 2.7 und 3.3 (und höher)
+- Visual Studio Shell: Wenn Sie Python mit Visual Studio Shell (wenn Sie Python beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) verwenden, kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
 - Anzeigen und Erweitern von Objekten: Beim Anzeigen von Python-Objekten in den Toolfenstern **Lokal** und **Überwachung** des Debuggers zeigt der Debugger im gemischten Modus nur die Struktur der Objekte an. Es werden weder automatisch Eigenschaften ausgewertet noch berechnete Attribute angezeigt. Bei Auflistungen werden nur Elemente für integrierte Auflistungstypen angezeigt (`tuple`, `list`, `dict`, `set`). Benutzerdefinierte Auflistungstypen werden nur dann als Auflistungen visualisiert, wenn sie von einem integrierten Auflistungstyp vererbt werden.
 - Ausdrucksauswertung: Siehe oben.
 

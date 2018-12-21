@@ -1,10 +1,11 @@
 ---
 title: Neues in Visual Studio 2017
+titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2017
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895768"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160191"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
 **Für [Release 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) aktualisiert**
 
-Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen Folgendes: beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
+Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen folgende Vorteile: Beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
 Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorherigen Version, Visual Studio 2015, vorgenommen wurden:
 
@@ -64,7 +65,7 @@ Und Sie verfügen ferner über Optionen, um die Installation zu optimieren:
 
 * Möchten Sie Ihre Komponenten lieber selbst aussuchen, statt Arbeitsauslastungen zu verwenden? Wählen Sie im Installationsprogramm die Registerkarte **Einzelne Komponenten** aus.
 * Möchten Sie Sprachpakete installieren, ohne zugleich auch die eingestellte Sprache für Windows ändern zu müssen? Wählen Sie die Registerkarte **Sprachpakete** des Installationsprogramms aus.
-* **Neues in 15.7**: Soll der Speicherort für die Installation von Visual Studio geändert werden? Wählen Sie die Registerkarte **Installationsoptionen** des Installationsprogramms aus.
+* **Neues in 15.7:** Soll der Speicherort für die Installation von Visual Studio geändert werden? Wählen Sie die Registerkarte **Installationsoptionen** des Installationsprogramms aus.
 
 Weitere Informationen zur neuen Installationsoberfläche sowie ausführliche Anweisungen, die Sie durch die Installation führen, finden Sie auf der Seite [Installieren von Visual Studio](../install/install-visual-studio.md).
 
@@ -106,11 +107,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „In Roamingliste enthalten“](../ide/media/vs2017ide-roamedicon.png) **_In Roamingliste enthalten_**: eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](../ide/media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „In Roamingliste enthalten und installiert“](../ide/media/vs2017ide-roamedinstalledicon.png) **_In Roamingliste enthalten und installiert_**: alle Erweiterungen, die Teil dieser Roamingliste und in Ihrer Entwicklungsumgebung installiert sind.
+* ![Symbol „Roaming und Installation erfolgt“](../ide/media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](../ide/media/vs2017ide-installedicon.png) **_Installiert_**: alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol „Installiert](../ide/media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -137,13 +138,13 @@ Weitere Informationen zu Neuigkeiten in der DevLabs-Erweiterung [Continuous Deli
 
 #### <a name="multi-caret-editing"></a>Bearbeiten mit mehreren Caretzeichen
 
-**Neu in 15.8:** Das gleichzeitige Bearbeiten von mehreren Stellen in einer Datei ist jetzt ganz einfach. Erstellen Sie zunächst an mehreren Stellen in einer Datei Einfügemarken und Auswahlpunkte. Nehmen Sie dann mithilfe des Features zum Bearbeiten mit mehreren Caretzeichen dieselbe Änderung an zwei oder mehr Stellen gleichzeitig vor.
+**Neues in 15.8:** Das gleichzeitige Bearbeiten von mehreren Stellen in einer Datei ist jetzt ganz einfach. Erstellen Sie zunächst an mehreren Stellen in einer Datei Einfügemarken und Auswahlpunkte. Nehmen Sie dann mithilfe des Features zum Bearbeiten mit mehreren Caretzeichen dieselbe Änderung an zwei oder mehr Stellen gleichzeitig vor.
 
 Weitere Informationen finden Sie im Abschnitt [Multi-caret selection](finding-and-replacing-text.md#multi-caret-selection) (Auswählen mehrerer Caretzeichen) auf der Seite [Suchen und Ersetzen von Text](finding-and-replacing-text.md).
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Konsistente Tastenzuordnungsprofile
 
-**Neu in 15.8:** Achten Sie darauf, dass Ihre Tastenzuordnungen mit den zwei neuen Tastaturprofilen konsistent bleiben: Visual Studio Code und ReSharper (Visual Studio). Diese Schemas finden Sie unter **Extras** > **Optionen** > **Allgemein** > **Tastatur** und über das oberste Dropdownmenü.
+**Neues in 15.8:** Nun können Sie darauf achten, dass Ihre Tastenzuordnungen mit den zwei neuen Tastaturprofilen konsistent bleiben: Visual Studio Code und ReSharper (Visual Studio). Diese Schemas finden Sie unter **Extras** > **Optionen** > **Allgemein** > **Tastatur** und über das oberste Dropdownmenü.
 
   ![Neue Tastenzuordnungsprofile für Visual Studio Code und ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Wenn Sie in Visual Studio an einem Projekt arbeiten, können Sie Ihren Code für
 
 Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit größerer Sicherheit und weniger Ablenkung von A nach B gelangen.
 
-* **Neu in 15.4:** **Gehe zu Definition** (**Strg**+**Klicken** oder **F12**) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **Strg** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](../ide/go-to-and-peek-definition.md).
+* **Neues in 15.4:** **Gehe zu Definition** (**STRG**+**Klicken** oder **F12**) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **STRG** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](../ide/go-to-and-peek-definition.md).
 
 * **Zur Implementierung wechseln** (**Strg**+**F12**) &ndash; Navigieren Sie von jedem Basistyp oder Member zu dessen verschiedenen Implementierungen.
 
@@ -216,7 +217,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper 
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Momentaufnahmen und das IntelliTrace-Feature „Step-back“
 
-**Neues in Version 15.5:** Das IntelliTrace-Feature „Step-back“ nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+**Neues in Version 15.5**: Das IntelliTrace-Feature „Schritt zurück“ nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
 Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vorwärts** in der **Debug**-Symbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
 
@@ -245,7 +246,7 @@ Weitere Informationen finden Sie auf der Seite [Azure Functions-Tools für Visua
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debuggen von ASP.NET-Live-Apps mithilfe von Andockpunkten und Protokollpunkten in Azure-Live-Apps
 
-**Neues in Version 15.5:** Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie von Interesse ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+**Neues in Version 15.5**: Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie relevant ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
 Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
 
@@ -264,7 +265,7 @@ Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie k
 
 Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
 
-**Neues in Version 15.5.:** Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
+**Neues in Version 15.5**: Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
 
 * **Unterstützung für .NET Standard 2.0**<br/>Zusätzlich zur optimierten App-Entwicklung ist das Windows 10 Fall Creators Update das erste Release von Windows 10, das Unterstützung für .NET Standard 2.0 bietet. [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) ist eine Referenzimplementierung der Basisklassenbibliothek, die jede .NET-Plattform implementieren kann. Das Ziel von .NET Standard besteht darin, das Freigeben von Code für .NET-Entwickler für jede .NET-Plattform, mit der sie arbeiten möchten, so einfach wie möglich zu gestalten.
 * **Das Beste aus UWP und Win32**<br/>Die Windows 10-Plattform wurde durch die [Desktop-Brücke](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) verbessert, um Windows 10 für alle .NET-Entwickler unabhängig davon zu verbessern, ob der derzeitige Fokus auf UWP, WPF, Windows Forms oder Xamarin liegt. Mit dem neuen Projekttyp für das Packen von Apps in Version 15.5 von Visual Studio 2017 können Sie Windows-App-Pakete für Ihre Windows Presentation Foundation- oder Windows Forms-Projekte genau wie für UWP-Projekte erstellen. Nachdem Sie Ihre App gepackt haben, erhalten Sie alle Vorteile von Windows 10 für die App-Entwicklung und können diese über Microsoft Store (bei Verbraucher-Apps) oder Microsoft Store für Unternehmen und Bildungseinrichtungen verteilen. Da gepackte Apps über Zugriff auf die vollständige UWP-API-Oberfläche und auf die Win32-APIs auf dem Desktop verfügen, können Sie Ihre Windows Presentation Foundation- und Windows Forms-Apps nach und nach mit den UWP-APIs und den Windows 10-Features modernisieren. Darüber hinaus können Sie Ihre Win32-Komponenten mit allen Win32-Funktionen in Ihre UWP-Anwendungen integrieren, die auf dem Desktop gekennzeichnet sind.
@@ -281,7 +282,7 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](../cross-plat
 
 ### <a name="entitlements-editor"></a>Berechtigungs-Editor
 
-**Neues in Version 15.3:** Für Ihre iOS-Entwicklungsanforderungen haben wir einen eigenständigen Berechtigungs-Editor hinzugefügt. Er enthält eine benutzerfreundliche Benutzeroberfläche, die problemlos durchsucht werden kann. Doppelklicken Sie auf die Datei *entitlements.plist*, um ihn zu starten.
+**Neues in 15.3:** Für Ihre iOS-Entwicklungsanforderungen haben wir einen eigenständigen Berechtigungs-Editor hinzugefügt. Er enthält eine benutzerfreundliche Benutzeroberfläche, die problemlos durchsucht werden kann. Doppelklicken Sie auf die Datei *entitlements.plist*, um ihn zu starten.
 
 ![Berechtigungs-Editor für Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
@@ -293,13 +294,13 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](../cross-plat
 
 ### <a name="support-for-google-android-emulator"></a>Support für den Google Android-Emulator
 
-**Neu in 15.8:** Wenn Sie Hyper-V verwenden, können Sie den Android-Emulator von Google nun parallel mit anderen Hyper-V-basierten Technologien verwenden, einschließlich Hyper-V-VMs, Docker-Tools und dem HoloLens-Emulator. (Diese Funktion erfordert Windows 10 April 2018 Update oder höher.)
+**Neues in 15.8:** Wenn Sie Hyper-V verwenden, können Sie den Android-Emulator von Google nun parallel mit anderen Hyper-V-basierten Technologien verwenden, einschließlich Hyper-V-VMs, Docker-Tools und dem HoloLens-Emulator. (Diese Funktion erfordert Windows 10 April 2018 Update oder höher.)
 
 ![Der Google Android-Emulator mit Hyper-V-Technologien](../ide/media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Editor mit geteilter Ansicht für den Xamarin.Android-Designer
 
-**Neu in 15.8:** Für Xamarin.Android wurden wichtige Verbesserungen am Designer durchgeführt. Ein Editor mit geteilter Ansicht wurde eingeführt, mit dem Sie Layouts gleichzeitig erstellen, bearbeiten und eine Vorschau dafür erstellen können.
+Ebenso **neu in 15.8:** Für Xamarin.Android wurden wichtige Verbesserungen am Designer durchgeführt. Ein Editor mit geteilter Ansicht wurde eingeführt, mit dem Sie Layouts gleichzeitig erstellen, bearbeiten und eine Vorschau dafür erstellen können.
 
 ![Der Editor mit geteilter Ansicht für den Xamarin.Android-Designer](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ Weitere Informationen finden Sie unter [Hardwarebeschleunigung für verbesserte 
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Neues in 15.5:** Visual Studio App Center ist nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, des Testens auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
+**Neues in Version 15.5**: Visual Studio App Center ist &mdash;nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar&mdash; und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, Tests auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
 
   ![Testumgebung von Visual Studio App Center](../ide/media/app-center-test-env.png)
 
-Weitere Informationen finden Sie im Blogbeitrag [Introducing App Center: Build, Test, Distribute and Monitor Apps in the Cloud (Einführung in App Center: Erstellen, Testen, Verteilen und Überwachen von Apps in der Cloud)](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/).
+Weitere Informationen finden Sie im Blogbeitrag [Introducing App Center: Build, test, distribute and monitor apps in the cloud (Einführung in App Center: Erstellen, testen, verteilen und überwachen von Apps in der Cloud)](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/).
 
 ## <a name="cross-platform-development"></a>Plattformübergreifende Entwicklung
 
@@ -334,11 +335,11 @@ Weitere Informationen finden Sie im Blogbeitrag [Redgate Data Tools in Visual St
 
 .NET Core ist eine allgemeine, modulare, plattformübergreifende Open Source-Implementierung des .NET-Standards und enthält vieler der gleichen APIs wie das .NET Framework.
 
-Die .NET Core-Plattform besteht aus mehreren Komponenten, die den verwalteten Compiler, die Runtime, die Basisklassenbibliotheken sowie zahlreiche Anwendungsmodelle wie ASP.NET Core umfassen. .NET Core unterstützt derzeit die drei Hauptbetriebssysteme: Windows, Linux und macOS. Sie können .NET Core in Geräte-, Cloud- und eingebetteten/IoT-Szenarien verwenden.
+Die .NET Core-Plattform besteht aus mehreren Komponenten, die den verwalteten Compiler, die Runtime, die Basisklassenbibliotheken sowie zahlreiche Anwendungsmodelle wie ASP.NET Core umfassen. .NET Core unterstützt derzeit die drei Hauptbetriebssysteme: Windows, Linux und macOS Sie können .NET Core in Geräte-, Cloud- und eingebetteten/IoT-Szenarien verwenden.
 
 Außerdem enthält es nun Unterstützung für Docker.
 
-**Neues in Version 15.3**: Visual Studio 2017 Version 15.3 unterstützt die .NET Core 2.0-Entwicklung. Wenn .NET Core 2.0 verwendet wird, muss das .NET Core 2.0 SDK separat heruntergeladen und installiert werden.
+**Neues in 15.3:** Visual Studio 2017 Version 15.3 unterstützt die .NET Core 2.0-Entwicklung. Wenn .NET Core 2.0 verwendet wird, muss das .NET Core 2.0 SDK separat heruntergeladen und installiert werden.
 
 Weitere Informationen finden Sie im [Leitfaden für .NET Core](/dotnet/core/index).
 
@@ -354,7 +355,7 @@ Weitere Informationen finden Sie unter [Visual Studio Tools für Unity](../cross
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
-**Neues in Version 15.5:** Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten für lokale Variablen und Modelle verwenden.
+**Neues in Version 15.5**: Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten für lokale Variablen und Modelle verwenden.
 
   ![Deep Learning-IDE](../ai/media/about/ide.png)
 
