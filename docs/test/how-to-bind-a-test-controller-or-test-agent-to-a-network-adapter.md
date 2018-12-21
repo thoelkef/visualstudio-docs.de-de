@@ -1,5 +1,5 @@
 ---
-title: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter in Visual Studio
+title: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896048"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065946"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 
@@ -136,4 +136,4 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

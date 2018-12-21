@@ -1,5 +1,5 @@
 ---
-title: Auswählen der Laufzeiteinstellung für einen Auslastungstest in Visual Studio
+title: Auswählen der Laufzeiteinstellung für einen Auslastungstest
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895326"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067384"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest
 

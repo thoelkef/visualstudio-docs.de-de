@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349360"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063210"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -57,7 +57,9 @@ In jedem Fall wird das Fenster **Python-Umgebungen** mit dem **Projektmappen-Exp
 
 Visual Studio sucht mithilfe der Registrierung nach installierten globalen Umgebungen (gemäß [PEP 514](https://www.python.org/dev/peps/pep-0514/)) sowie nach virtuellen Umgebungen und Conda-Umgebungen (siehe [Typen von Umgebungen](#types-of-environments)). Wenn eine Umgebung wider Erwarten nicht in der Liste angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identify-an-existing-environment).
 
-Wenn Sie eine Umgebung in der Liste auswählen, werden in Visual Studio verschiedene Eigenschaften und Befehle der Umgebung auf der Registerkarte **Übersicht** angezeigt. Wie Sie beispielsweise im obigen Bild sehen können, ist der Speicherort des Interpreters *C:\Python36-32*. Verwenden Sie die Dropdownliste unter der Liste von Umgebungen, um zu verschiedenen Registerkarten wie **Pakete** oder **IntelliSense** zu wechseln. Diese Registerkarten werden in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben.
+Wenn Sie eine Umgebung in der Liste auswählen, werden in Visual Studio verschiedene Eigenschaften und Befehle der Umgebung auf der Registerkarte **Übersicht** angezeigt. Wie Sie beispielsweise im obigen Bild sehen können, ist der Speicherort des Interpreters *C:\Python36-32*. Die vier Befehle am unteren Rand der Registerkarte **Übersicht** öffnen jeweils eine Eingabeaufforderung, in der der Interpreter ausgeführt wird. Weitere Informationen finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“: Übersicht](python-environments-window-tab-reference.md#overview-tab).
+
+Verwenden Sie die Dropdownliste unter der Liste von Umgebungen, um zu verschiedenen Registerkarten wie **Pakete** oder **IntelliSense** zu wechseln. Diese Registerkarten werden auch in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben.
 
 Die Beziehung einer Umgebung zu Projekten wird nicht beeinflusst, wenn Sie sie auswählen. Die Standardumgebung, die in der Liste in Fettschrift aufgeführt wird, ist die, die Visual Studio für alle neuen Projekte verwendet. Verwenden Sie den Befehl **Als Standardumgebung für neue Projekte festlegen**, um eine andere Umgebung für neue Projekte zu verwenden. Sie können innerhalb des Kontexts eines Projekts immer eine spezifische Umgebung auswählen. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 

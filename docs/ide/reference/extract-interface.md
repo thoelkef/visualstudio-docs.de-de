@@ -1,5 +1,5 @@
 ---
-title: Refactoring des Extrahierens einer Schnittstelle in Visual Studio
+title: Refactoring des Extrahierens einer Schnittstelle
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849880"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061655"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
@@ -29,9 +29,9 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie eine Schnittstelle mit vorhandenen Membern einer Klasse, Struktur oder Schnittstelle erstellen.
+**Beschreibung:** Hiermit können Sie eine Schnittstelle mit vorhandenen Membern einer Klasse, Struktur oder Schnittstelle erstellen.
 
-**Hintergrund**: Sie haben mehrere Klassen, Strukturen oder Schnittstellen mit Methoden, die allgemeingültig gestaltet und von anderen Klassen, Strukturen oder Schnittstellen verwendet werden könnten.
+**Hintergrund:** Sie haben mehrere Klassen, Strukturen oder Schnittstellen mit Methoden, die allgemeingültig gestaltet und von anderen Klassen, Strukturen oder Schnittstellen verwendet werden könnten.
 
 **Vorteile**: Schnittstellen stellen hervorragende Konstrukte für objektorientierte Entwürfe dar. Stellen Sie sich vor, es gäbe Klassen für verschiedene Tiere (Hunde, Katzen, Vögel) mit häufig verwendeten Methoden wie Fressen, Trinken und Schlafen. Mit einer Schnittstelle wie IAnimal würden Hunden, Katzen und Vögeln eine gemeinsame „Signatur“ für diese Methoden zugewiesen werden.
 
@@ -61,7 +61,7 @@ Dieses Refactoring gilt für:
    ![Schnittstelle extrahieren](media/extractinterface-dialog-cs.png)
 
 
-   | Feld | Beschreibung  |
+   | Feld | Beschreibung |
    | - | - |
    | **Name der neuen Schnittstelle** | Der Name der zu erstellenden Schnittstelle. Dies ist standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
    | **Neuer Dateiname** | Der Name der generierten Datei, die die Schnittstelle enthält. Wie beim Namen der Schnittstelle ist dies standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |

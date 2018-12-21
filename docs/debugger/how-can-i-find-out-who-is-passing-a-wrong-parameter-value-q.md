@@ -1,6 +1,6 @@
 ---
-title: Wie wird festgestellt, woher der falsche Parameterwert stammt? | Microsoft-Dokumentation
-ms.custom: ''
+title: Erfahren Sie, die eine falsche Parameterwert stammt | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059365"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Wie wird festgestellt, woher der falsche Parameterwert stammt?
 ## <a name="problem-description"></a>Problembeschreibung  
@@ -40,19 +40,19 @@ ms.locfileid: "44284171"
   
 1.  Legen Sie am Anfang der Funktion einen Positionshaltepunkt fest.  
   
-2.  Mit der rechten Maustaste des Haltepunkts, und wählen Sie **Bedingung**.  
+2.  Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und wählen Sie **Bedingung** aus.  
   
-3.  In der **Haltepunktbedingung** (Dialogfeld), klicken Sie auf die **Bedingung** Kontrollkästchen. Finden Sie unter [erweiterter Haltepunkte](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  Aktivieren Sie im Dialogfeld **Bedingung für Haltepunkt** das Kontrollkästchen **Bedingung**. Finden Sie unter [erweiterter Haltepunkte](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Geben Sie einen Ausdruck, z. B. `Var==3`, in das Textfeld ein, wobei `Var` der Name des Parameters ist, der den falschen Wert enthält, und `3` der übergebene falsche Wert.  
   
-5.  Wählen Sie die **ist "true"** Optionsfeld aus, und klicken Sie auf die **OK** Schaltfläche.  
+5.  Aktivieren Sie das Optionsfeld **is True** (ist TRUE), und klicken Sie auf die Schaltfläche **OK**.  
   
 6.  Führen Sie nun das Programm erneut aus. Der Haltepunkt bewirkt, dass das Programm am Funktionsanfang anhält, sobald `Var` den Wert `3` hat.  
   
-7.  Im Fenster Aufrufliste sehen Sie die aufrufende Funktion und können zu ihrem Quellcode navigieren. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Im Fenster Aufrufliste sehen Sie die aufrufende Funktion und können zu ihrem Quellcode navigieren. Weitere Informationen finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
- [Haltepunkte](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
+ [Breakpoints (Haltepunkte)](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

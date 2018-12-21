@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 4'
+title: 'Tutorial „Lernen von Flask“, Visual Studio-Schritt 4: Vorlagen für Webprojekte'
+titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Features, die durch die Vorlagen „Flask-Webprojekt“ und „Flask/Jade-Webprojekt“ bereitgestellt werden.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775957"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051700"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
-**Vorheriger Schritt: [Serve static files, add pages, and use template inheritance (Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung)](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Vorheriger Schritt: [Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Nachdem Sie sich mit den grundlegenden Funktionen von Flask vertraut gemacht und eine App auf Grundlage der Vorlage „Leeres Flask-App-Projekt“ in Visual Studio erstellt haben, erhalten Sie nun weitere Informationen zu umfangreicheren Funktionen der App über die Vorlage „Flask-Webprojekt“.
 
@@ -33,7 +35,7 @@ In diesem Schritt werden Sie Informationen zu folgenden Inhalten erhalten:
 
 Dieser Artikel gilt ebenfalls für die Vorlage „Flask/Jade-Webprojekt“, die mithilfe der Jade-Vorlagen-Engine anstelle von Jinja eine App erstellt, die mit der durch „Flask-Webprojekt“ erstellten identisch ist. Weitere Details finden Sie am Ende dieses Artikels.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Schritt 4-1: Erstellen eines Projekts aus der Vorlage
+## <a name="step-4-1-create-a-project-from-the-template"></a>Schritt 4.1: Erstellen eines neuen Projekts aus der Vorlage
 
 1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningFlask**, die Sie in diesem Tutorial bereits erstellt haben, und klicken Sie auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
@@ -84,7 +86,7 @@ Wenn Sie dennoch eine vorhandene virtuelle Umgebung verwenden möchten, führen 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Python-Umgebungen**, und wählen Sie die Option **Vorhandene virtuelle Umgebung hinzufügen** aus.
 1. Navigieren Sie zum Ordner mit der virtuellen Umgebung, wählen Sie ihn aus, und klicken Sie anschließend auf **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 4-2: Informationen zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 4.2: Grundlegendes zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
 
 Wie Sie beim Ausführen des Projekts festgestellt haben, verfügt die App über drei Ansichten: „Startseite“, „Info“ und „Kontakt“. Der Code für diese Ansichten befindet sich im Ordner *FlaskWeb/views.py*. Jede Ansichtsfunktion ruft einfach `flask.render_template` mit dem Pfad zu einer Vorlage und einer Variablenliste mit Argumenten für die Werte auf, die an die Vorlage übergeben werden sollen. Beispielsweise wird die Seite „Info“ von der Funktion `about` verarbeitet, deren Decorator das URL-Routing bereitstellt:
 
@@ -235,4 +237,4 @@ Probieren Sie die Syntax von Jinja und Jade aus, um festzustellen, welche am bes
 
 - [Writing your first Django app, part 4 - forms and generic views (Erstellen Ihrer ersten Flask-App – Teil 4: Formulare und allgemeine Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade auf GitHub (Dokumentation)](https://github.com/liuliqiang/pyjade) (github.com)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

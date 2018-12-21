@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Arbeiten mit Python, Schritt 2: Schreiben und Ausführen von Code'
+title: 'Tutorial „Python in Visual Studio“, Schritt 2: Schreiben und Ausführen von Code'
+titleSuffix: ''
 description: Dies ist Schritt 2 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Bearbeiten von Code und Ausführen eines Projekts erläutert wird.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219418"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054799"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
-**Vorheriger Schritt: [Erstellen eines neuen Python-Objekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Vorheriger Schritt: [Erstellen eines neuen Python-Projekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten Sie mit dem *Inhalt* der Dateien, z.B. mit dem Quellcode, in der Regel im *Editor*-Fenster. Der Editor erkennt kontextbezogen den Typ der Datei, die Sie bearbeiten, einschließlich der Programmiersprache (basierend auf der Dateierweiterung) und bietet für diese Sprache angemessene Funktionen, z.B. Syntaxfarben und automatische Vervollständigung mithilfe von IntelliSense.
 

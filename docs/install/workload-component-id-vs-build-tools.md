@@ -1,5 +1,6 @@
 ---
 title: Workload- und Komponenten-IDs in Visual Studio Build Tools 2017
+titleSuffix: ''
 description: Verwenden von Arbeitsauslastungs- und Komponenten-IDs in Visual Studio zum Erstellen klassischer Windows-basierter Anwendungen
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607860"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063045"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017-Komponentenverzeichnis
 
@@ -35,7 +36,7 @@ Beachten Sie zudem Folgendes im Hinblick auf die Seite:
 * Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
 * Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
 
-Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie auf der Seite [Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie unter [How to: Migrate Extensibility Projects to Visual Studio 2017 (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
 
@@ -43,7 +44,7 @@ Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwen
 
 **ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Beschreibung:** MSBuild-Aufgaben und -Ziele zum Erstellen von Azure-Anwendungen.
+**Beschreibung:** MSBuild-Tasks und -Ziele für das Erstellen von Azure-Anwendungen.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -87,7 +88,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Beschreibung:** SQL Server-Datenbankprojekte erstellen
+**Beschreibung:** Erstellen Sie SQL Server-Datenbankprojekte
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F#-Compiler | 15.8.27825.0 | O
 
 **ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Beschreibung:** Stellt die erforderlichen Tools zum Erstellen von MSBuild-basierten Anwendungen bereit.
+**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von auf MSBuild basierenden Anwendungen erforderlich sind.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -164,7 +165,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-C
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**Beschreibung:** Tools zum Erstellen von Anwendungen über .NET Core, ASP.NET Core, HTML/JavaScript und Container.
+**Beschreibung:** Tools zum Erstellen von Anwendungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 – 1.1-Entwicklungstools | 
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Beschreibung:** MSBuild-Tasks und -Ziele zum Erstellen von skalierbaren Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Laufzeit.
+**Beschreibung:** MSBuild-Tasks und -Ziele zum Erstellen von skalierbaren Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -233,7 +234,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von Anwendungen für die universelle Windows-Plattform erforderlich sind.
+**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von Anwendungen für die Universelle Windows-Plattform erforderlich sind.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -312,7 +313,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Beschreibung:** Tools zum Erstellen von Add-Ons und Erweiterungen für Visual Studio, z.B. neue Befehle, Codeanalysetools und Toolfenster.
+**Beschreibung:** Tools zum Erstellen von Add-Ons und Erweiterungen für Visual Studio, z. B. neue Befehle, Codeanalysetools und Toolfenster.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -338,7 +339,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Neueste v141-Tools in VC++ 2
 
 **ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Beschreibung:** MSBuild-Aufgaben und -Ziele zum Erstellen von Webanwendungen.
+**Beschreibung:** MSBuild-Tasks und -Ziele für das Erstellen von Webanwendungen.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 

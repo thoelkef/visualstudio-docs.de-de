@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines benutzerdefinierten HTTP-Text-Editors für den Webleistungstest-Editor in Visual Studio
+title: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896743"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068408"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -332,4 +332,4 @@ Weitere Informationen finden Sie unter [Seite „Anwendung“, Projekt-Designer 
 - [Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
 - [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

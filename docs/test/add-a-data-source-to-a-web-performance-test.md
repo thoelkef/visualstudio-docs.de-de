@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen einer Datenquelle zu einem Webleistungstest in Visual Studio
+title: Hinzufügen einer Datenquelle für einen Webleistungstest
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896106"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065206"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -124,9 +124,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 ## <a name="q--a"></a>Fragen und Antworten
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>F: Welche Datenbanken kann ich als Datenquelle verwenden?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Frage: Welche Datenbanken kann ich als Datenquelle verwenden?
 
-**A:** Es stehen Ihnen folgende Möglichkeiten zur Verfügung:
+**Antwort:** Es stehen Ihnen folgende Möglichkeiten zur Verfügung:
 
 - Microsoft SQL Azure.
 
@@ -140,9 +140,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 - Oracle 7.3, 8i, 9i oder 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>F: Wie verwende ich eine CSV-Textdatei (Comma Separated Value) als Datenquelle?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Frage: Wie verwende ich eine CSV-Textdatei (Comma Separated Value) als Datenquelle?
 
-**A:** Gehen Sie folgendermaßen vor:
+**Antwort:** Gehen Sie dabei folgendermaßen vor:
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
@@ -164,9 +164,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Namen eingeben und CSV-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>F: Was muss ich tun, wenn die vorhandene CSV-Datei keine Spaltenüberschriften enthält?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Frage: Was muss ich tun, wenn die vorhandene CSV-Datei keine Spaltenheader enthält?
 
-**A:** Wenn Sie keine Spaltenüberschriften hinzufügen können, können Sie eine Schemabeschreibungsdatei verwenden und die CSV-Datei wie eine Datenbank behandeln.
+**Antwort:** Wenn Sie keine Spaltenheader hinzufügen können, können Sie eine Schemabeschreibungsdatei verwenden und die CSV-Datei wie eine Datenbank behandeln.
 
 1. Fügen Sie eine neue Textdatei namens *schema.ini* hinzu.
 
@@ -215,9 +215,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Zum Test hinzugefügte Datenquelle](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>F: Wie verwende ich eine XML-Datei als Datenquelle?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Frage: Wie verwende ich eine XML-Datei als Datenquelle?
 
-**A:** Ja.
+**Antwort:** Ja.
 
 1. Erstellen Sie einen Ordner zur Organisation der Projektdatenbankartefakte, und fügen Sie ein Element hinzu.
 
@@ -247,9 +247,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
      ![Namen eingeben und XML-Datei auswählen](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>F: Kann ich einer Webdienstanforderung, die SOAP verwendet, eine Datenbindung hinzufügen?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Frage: Kann ich einer Webdienstanforderung, die SOAP verwendet, eine Datenbindung hinzufügen?
 
-**A:** Ja; Sie müssen den SOAP-XML-Code manuell ändern.
+**Antwort:** Ja; Sie müssen den SOAP-XML-Code manuell ändern.
 
 1. Wählen Sie in der Anforderungsstruktur die Webdienstanforderung und im Fenster „Eigenschaften“ die Auslassungszeichen (...) in der Eigenschaft „Zeichenfolgentext“.
 

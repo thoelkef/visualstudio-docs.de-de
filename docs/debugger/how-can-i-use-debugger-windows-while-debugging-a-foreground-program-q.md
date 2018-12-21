@@ -1,6 +1,6 @@
 ---
-title: Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet? | Microsoft-Dokumentation
-ms.custom: ''
+title: Mithilfe der Debuggerfenster beim Debuggen einer Vordergrund-app | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26654d13053c963ad86d46bee5a6fe6ed0d4d85d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6497a2a21c85e7889b3b6538dace0f8c22f24944
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473052"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063767"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet?
 ## <a name="problem-description"></a>Problembeschreibung  
@@ -38,5 +38,5 @@ ms.locfileid: "31473052"
  Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remotedebuggen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

@@ -1,6 +1,6 @@
 ---
-title: Wie kann festgestellt werden, bei welchem Aufruf ein Fehler aufgetreten ist, wenn eine Funktion sehr häufig aufgerufen wird? | Microsoft-Dokumentation
-ms.custom: ''
+title: Suchen Sie die fehlgeschlagenen aufrufen, wenn eine Funktion häufig aufgerufen | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b552e7a81c43ec67951cac584b215f38f06c12
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3fec492a8cba6ac61cc18a3ff0b68abbe734413d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284022"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064691"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Wie kann festgestellt werden, bei welchem Aufruf ein Fehler aufgetreten ist, wenn eine Funktion sehr häufig aufgerufen wird?
 ## <a name="problem-description"></a>Problembeschreibung  
  Das Programm schlägt bei einem Aufruf einer bestimmten Funktion mit dem Namen `CnvtV` fehl. Zuvor hat das Programm die Funktion jedoch mehrere Hundert Male aufgerufen. Wenn ein Positionshaltepunkt für `CnvtV` festgelegt wird, hält das Programm bei jedem Aufruf der Funktion an, was nicht beabsichtigt ist. Da nicht bekannt ist, welche Bedingungen den fehlschlagenden Aufruf verursachen, kann kein bedingter Haltepunkt festgelegt werden. Welche Möglichkeiten gibt es?  
   
 ## <a name="solution"></a>Lösung  
- Sie können einen Haltepunkt festlegen, für die Funktion der **Trefferanzahl** Feld auf einen Wert, der so hoch, dass es nie erreicht wird. In diesem Fall, weil Sie glauben, die Funktion dass `CnvtV` wird aufgerufen, ein paar Hundert Male, Sie können festlegen, **Trefferanzahl** zu 1.000 oder mehr. Führen Sie dann das Programm aus, und warten Sie, bis der Aufruf fehlschlägt. Sobald dies der Fall ist, öffnen Sie das Fenster "Haltepunkte" und überprüfen die Haltepunktliste. Der für `CnvtV` festgelegte Haltepunkt wird, gefolgt von der Trefferanzahl und der Anzahl der noch verbleibenden Iterationen, angezeigt:  
+ Mithilfe des Felds **Trefferanzahl** können Sie einen Haltepunkt für die Funktion auf einen hohen Wert festlegen, der niemals erreicht wird. Da Sie davon ausgehen, dass die `CnvtV`-Funktion einige Hundert Male aufgerufen wird, könnten Sie **Trefferanzahl** auf einen Wert von mindestens 1000 festlegen. Führen Sie dann das Programm aus, und warten Sie, bis der Aufruf fehlschlägt. Sobald dies der Fall ist, öffnen Sie das Fenster "Haltepunkte" und überprüfen die Haltepunktliste. Der für `CnvtV` festgelegte Haltepunkt wird, gefolgt von der Trefferanzahl und der Anzahl der noch verbleibenden Iterationen, angezeigt:  
   
 ```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  
@@ -50,6 +50,6 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
  Jetzt wissen Sie, dass die Funktion bei Aufruf Nr. 101 fehlgeschlagen ist. Wenn Sie nun den Haltepunkt auf eine Trefferanzahl von 101 zurücksetzen und das Programm erneut ausführen, hält es an dem `CnvtV`-Aufruf an, der zuvor den Fehler verursacht hat.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
- [Festlegen von Haltepunkten](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
+ [Setting Breakpoints (Setzen von Haltepunkten)](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

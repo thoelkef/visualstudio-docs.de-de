@@ -1,5 +1,5 @@
 ---
-title: Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
+title: Problembehandlung von Netzwerk- oder Proxyfehlern
 description: Finden Sie Lösungen für netzwerk- oder proxybezogene Fehler, die beim Installieren oder Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver auftreten können.
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672313"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047615"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -71,11 +71,11 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 - Folgen Sie außerdem den Anweisungen im Blog [How to connect to TFS through an authentication Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Verbindungsherstellung mit TFS über einen Webproxy für die Authentifizierung), um Code hinzuzufügen, mit dem Sie den Proxy verwenden können.
 
-## <a name="error-the-underlying-connection-was-closed"></a>Fehler; „Die zugrunde liegende Verbindung wurde geschlossen“
+## <a name="error-the-underlying-connection-was-closed"></a>Fehler: „The underlying connection was closed.“ (Die zugrunde liegende Verbindung wurde geschlossen)
 
 Wenn Sie Visual Studio in einem privaten Netzwerk mit einer Firewall verwenden, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Dies kann auch Azure DevOps Services für Anmeldung und Lizenzierung, NuGet und Azure-Dienste betreffen. Falls Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird möglicherweise die folgende Fehlermeldung angezeigt:
 
-  **The underlying connection was closed: An unexpected error occurred on send** (Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.)
+  **The underlying connection was closed: An unexpected error occurred on send (Die zugrunde liegende Verbindung wurde geschlossen: Unerwarteter Fehler beim Senden.)**
 
 Visual Studio verwendet das Protokoll Transport Layer Security (TLS) 1.2 für die Verbindung mit Netzwerkressourcen. Sicherheitsappliances blockieren in einigen privaten Netzwerken bestimmte Serververbindungen, wenn Visual Studio TLS 1.2 verwendet.
 

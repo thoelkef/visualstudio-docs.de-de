@@ -1,5 +1,6 @@
 ---
 title: Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890141"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059859"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 
@@ -46,7 +47,7 @@ Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in I
 |![Objekttools](../designers/media/b1_5.png)|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5_label_e.png)|**Textsteuerelemente**|
 |||![Legende F](../designers/media/b5_label_f.png)|**Allgemeine Steuerelemente**|
 
-**Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Die Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
+**Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png)[Die Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
 
 ## <a name="tour-of-the-assets-panel"></a>Überblick über den Objektbereich
 
@@ -60,7 +61,7 @@ Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visu
 |![Rastermodus und Listenmodus](../designers/media/b1_2.png)|**Gittermodus und Listenmodus** Wechseln Sie zwischen der Ansicht **Gittermodus** und **Listenmodus** der Objekte.|
 |![Objektkategorien](../designers/media/b1_3.png)|**Objektkategorien** Klicken Sie auf eine Kategorie oder Unterkategorie, um die Liste der Objekte in dieser Kategorie anzuzeigen.|
 |![Stile](../designers/media/b1_4.png)|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
-|![Beschreibung ](../designers/media/b1_5.png)|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
+|![Beschreibung](../designers/media/b1_5.png)|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>Überblick über die Bereiche Objekte und Zeitachse
 
@@ -115,7 +116,7 @@ Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und 
 |![Legende 16](../designers/media/b5_label_16.png)|**Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.|
 |![Erweiterte Eigenschaften anzeigen](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.|
 
-**Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
+**Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png)[Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels'
+title: 'Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924160"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159775"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
 
 In diesem Thema wird gezeigt, wie Sie das Visual Studio-<legacyBold>LinqToXmlDataBinding</legacyBold>-Projekt erstellen und das resultierende WPF-<legacyBold>LinqToXmlDataBinding</legacyBold>-Beispielprogramm ausführen können.
 
-Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Visual Studio-IDE](../ide/visual-studio-ide.md).
+Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Visual Studio-IDE](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Erstellen und Auffüllen des Projekts
 
@@ -82,4 +82,4 @@ Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ermöglicht es dem Be
 
 - [Beispiel für die WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)

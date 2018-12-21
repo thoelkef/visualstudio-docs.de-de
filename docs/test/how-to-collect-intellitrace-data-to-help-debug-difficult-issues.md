@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace in Visual Studio
+title: IntelliTrace-Daten
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894637"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064756"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Sammeln von IntelliTrace-Daten zum Beheben schwieriger Probleme
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
 Sie können den Adapter für diagnostische Daten für IntelliTrace konfigurieren, um bestimmte Informationen der Diagnoseablaufverfolgung in Visual Studio zu erfassen. Dieser Adapter kann für Tests verwendet werden. Während des Tests können signifikante Diagnoseereignisse für die Anwendung gesammelt werden, die ein Entwickler später verwenden kann, um die Ursache eines Fehlers im Code zu finden. Der Adapter für diagnostische Daten für IntelliTrace kann mit manuellen oder automatisierten Tests verwendet werden.
 

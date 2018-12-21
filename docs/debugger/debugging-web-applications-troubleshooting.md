@@ -1,6 +1,6 @@
 ---
-title: 'Debuggen von Webanwendungen: Problembehandlung | Microsoft Docs'
-ms.custom: ''
+title: Debuggen von Web-apps – Problembehandlung | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,23 +19,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470854"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063994"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Problembehandlung beim Debuggen von Webanwendungen
+# <a name="debugging-web-applications-troubleshooting"></a>Debuggen von Webanwendungen: Problembehandlung
 Dieser Abschnitt enthält allgemeine Prozeduren, die zur Fehlerbehebung verwendet werden können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Überprüfen von IIS-Eigenschafteneinstellungen](../debugger/how-to-verify-iis-property-settings.md)  
+ [Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen](../debugger/how-to-verify-iis-property-settings.md)  
  Erklärt, wie die Eigenschaften in IIS ordnungsgemäß festgelegt werden, um Debuggen zu aktivieren.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
- Erläutert das Behandeln und Beheben von Fehlern.  
+ Erläutert das Behandeln und Auflösen von Fehlern.  
   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)  
  Übersicht über das Debuggen von Webanwendungen wie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], XML-Webdiensten und ATL-Server-Projekten.

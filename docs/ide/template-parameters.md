@@ -1,5 +1,5 @@
 ---
-title: Projekt- und Elementvorlagenparameter für Visual Studio
+title: Projekt- und Elementvorlagenparameter
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178633"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067667"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -25,7 +25,7 @@ Wenn die Vorlage instanziiert wird, können Sie die darin erhaltenen Werte erset
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern
 
-Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
+Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 - $safeprojectname$
 
@@ -49,7 +49,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:
 
 In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können.
 
-|Parameter|Beschreibung |
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 
 Neben den reservierten Standardvorlagenparametern, die während dem Ersetzen von Parametern verwendet werden, können Sie eigene Vorlagenparameter und -werte angeben. Weitere Informationen finden Sie unter [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für einen Dateinamen
+## <a name="example-use-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für den Dateinamen
 
 Sie können variable Dateinamen für Projektelemente festlegen, indem Sie einen Parameter im `TargetFileName`-Attribut verwenden.
 

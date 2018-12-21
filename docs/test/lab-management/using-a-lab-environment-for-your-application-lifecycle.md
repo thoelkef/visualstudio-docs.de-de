@@ -1,5 +1,5 @@
 ---
-title: Verwenden einer Laborumgebung für DevOps in Visual Studio
+title: Verwenden einer Laborumgebung für DevOps
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837112"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061150"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -30,7 +30,7 @@ Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie 
 
 Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 
-| Topologie | Beschreibung  |
+| Topologie | Beschreibung |
 |---|---|
 |![Topologie "Nur Server"](../media/topology_backend.png)| Diese Lab-Umgebung weist eine *Servertopologie*auf, die oft verwendet wird, um manuelle Tests auf Serveranwendungen auszuführen. Sie ermöglicht Testern, die eigenen Clientcomputer zu verwenden, um Fehler in der Umgebung zu überprüfen. In einer Back-End-Topologie enthält Ihre Lab-Umgebung nur Server. Wenn Sie diesen Topologietyp verwenden, stellen Sie für gewöhnlich mithilfe eines Clientcomputers, der nicht Bestandteil der Umgebung ist, eine Verbindung zu den Servern in der Lab-Umgebung her.|
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen.|
@@ -77,13 +77,13 @@ Es gibt zwei Lab-Umgebungstypen, die Sie mit Visual Studio Lab Management erstel
 
 **SCVMM-Umgebungen**: Diese können nur virtuelle Computer enthalten, die von SCVMM (System Center Virtual Machine Manager) verwaltet werden, sodass die virtuellen Computer in SCVMM-Umgebungen nur auf dem Hyper-V-Virtualisierungsframework ausgeführt werden können. SCVMM-Umgebungen stellen jedoch die folgenden Automatisierungs- und Verwaltungsfunktionen bereit, die in Standardumgebungen nicht verfügbar sind:
 
-- **Umgebungsmomentaufnahmen**: Diese enthalten den Status einer Lab-Umgebung, sodass Sie schnell eine Umgebung im Grundzustand wiederherstellen oder den Status einer geänderten Umgebung speichern können. Sie können auch einen Workflow zum Erstellen, Bereitstellen und Testen verwenden, um den Vorgang der Speicherung und Wiederherstellung von Umgebungsmomentaufnahmen zu automatisieren.
+- **Umgebungsmomentaufnahmen:** Diese enthalten den Status einer Laborumgebung, sodass Sie schnell eine Umgebung im Grundzustand wiederherstellen oder den Status einer geänderten Umgebung speichern können. Sie können auch einen Workflow zum Erstellen, Bereitstellen und Testen verwenden, um den Vorgang der Speicherung und Wiederherstellung von Umgebungsmomentaufnahmen zu automatisieren.
 
-- **Gespeicherte Umgebungen**: Sie können eine Kopie einer SCVMM-Umgebung speichern und anschließend mehrere Kopien dieser Umgebung bereitstellen.
+- **Gespeicherte Umgebungen:** Sie können eine Kopie einer SCVMM-Umgebung speichern und anschließend mehrere Kopien dieser Umgebung bereitstellen.
 
-- **Netzwerkisolation**: Diese ermöglicht Ihnen, gleichzeitig mehrere identische Kopien einer SCVMM-Umgebung ohne Computernamenkonflikte auszuführen.
+- **Netzwerkisolation:** Die Netzwerkisolation ermöglicht Ihnen, gleichzeitig mehrere identische Kopien einer SCVMM-Umgebung ohne Computernamenskonflikte auszuführen.
 
-- **Vorlagen für virtuelle Computer**: Eine Vorlage für virtuelle Computer ist ein virtueller Computer, bei dem der Name und andere IDs entfernt wurden. Wenn eine Vorlage für virtuelle Computer in einer SCVMM-Umgebung bereitgestellt wird, generiert neue IDs. Dadurch können Sie mehrere Kopien eines virtuellen Computers in derselben Umgebung oder in mehrere Umgebungen bereitstellen und die virtuellen Computer anschließend gleichzeitig ausführen.
+- **Vorlagen für virtuelle Computer:** Eine Vorlage für virtuelle Computer ist ein virtueller Computer, dessen Name sowie andere Bezeichner entfernt wurden. Wenn eine Vorlage für virtuelle Computer in einer SCVMM-Umgebung bereitgestellt wird, generiert neue IDs. Dadurch können Sie mehrere Kopien eines virtuellen Computers in derselben Umgebung oder in mehrere Umgebungen bereitstellen und die virtuellen Computer anschließend gleichzeitig ausführen.
 
 - **Gespeicherte virtuelle Computer:** ein in Ihrer Projektbibliothek gespeicherter virtueller Computer, der eindeutige Bezeichner umfasst.
 
@@ -116,7 +116,7 @@ Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müs
 
 Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut sein sollten, bevor Sie fortfahren:
 
-|Begriff|Beschreibung |
+|Begriff|Beschreibung|
 |-|-----------------|
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|
 |Azure DevOps-Projekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|

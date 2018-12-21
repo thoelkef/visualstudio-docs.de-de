@@ -1,5 +1,5 @@
 ---
-title: Schreiben von Komponententests für C/C++ in Visual Studio
+title: Schreiben von Komponententests für C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879223"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053743"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -73,7 +73,7 @@ Fügen Sie als Nächstes in der *CPP*-Datei in Ihrem Komponententest eine `#incl
 ### <a name="write-test-methods"></a>Schreiben von Testmethoden
 
 > [!NOTE]
-> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die Dokumentation finden Sie unter: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference (Referenz für die Microsoft.VisualStudio.TestTools.CppUnitTestFramework-API)](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Die Dokumentation zu Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Die Dokumentation zu Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests)](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> In diesem Abschnitt wird die Syntax von Microsoft Unittest-Frameworks für C/C++ dargestellt. Die entsprechende Dokumentation finden Sie hier: [Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md) Die Dokumentation zu Google Test finden Sie unter [Google Test Primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Die Dokumentation zu Boost.Test finden Sie unter [Boost Test Library: The Unit Test Framework (Boost Test-Bibliothek: Das Framework für Komponententests).](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)
 
 Die *CPP*-Datei in Ihrem Testprojekt verfügt über eine Stubklasse und -methode, die als Beispiel für das Schreiben von Testcode definiert sind. Beachten Sie, dass die Signaturen die Makros TEST_CLASS und TEST_METHOD verwenden, wodurch Sie die Methoden über das Fenster **Test-Explorer** finden können.
 
@@ -119,7 +119,7 @@ Bewährte Methoden im Zusammenhang mit Komponententests finden Sie unter [Grundl
 
 ## <a name="use-codelens"></a>Verwenden von CodeLens
 
-**Visual Studio 2017 Version 15.7, nur Professional und Enterprise Edition**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) ermöglicht es Ihnen, den Status eines Komponententests schnell anzuzeigen, ohne den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
+**Visual Studio 2017 Version 15.7 (nur für „Professional“ und „Enterprise“):** Mit [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) können Sie sich den Status eines Komponententests ansehen, ohne dazu den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
 
 - Bearbeiten und erstellen Sie Ihr Testprojekt oder Ihre -projektmappe.
 - Erstellen Sie Ihr Projekt oder die Projektmappe erneut.

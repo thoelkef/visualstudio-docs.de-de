@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Bildbibliothek
+title: Bildbibliothek
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078900"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062848"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio-Bildbibliothek
 
@@ -31,7 +31,7 @@ Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Vis
 
 [Laden Sie die Visual Studio-Bildbibliothek herunter](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
+Die Bibliothek ist in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
 
 ## <a name="see-also"></a>Siehe auch
 

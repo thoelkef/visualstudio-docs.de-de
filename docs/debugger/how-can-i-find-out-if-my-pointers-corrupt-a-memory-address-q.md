@@ -1,6 +1,6 @@
 ---
-title: Wie wird festgestellt, ob Zeiger eine Speicheradresse zerstören? | Microsoft-Dokumentation
-ms.custom: ''
+title: Feststellen, ob Zeiger beschädigt eine Speicheradresse | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8965ec268e5d236b9a33e5c3e8acfa35e51dcdb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 966a21bfbe5e6813bd4ea1cd6f11c682deea2d0f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479311"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062968"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Wie wird festgestellt, ob Zeiger eine Speicheradresse zerstören?
 ## <a name="problem-description"></a>Problembeschreibung  
@@ -41,10 +41,10 @@ ms.locfileid: "31479311"
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>So finden Sie die geänderte Stelle der Speicheradresse  
   
-1.  Legen Sie einen Datenhaltepunkt bei 0x00408000 fest. Finden Sie unter [festlegen ein Haltepunkts für datenänderungen (nur systemeigener C++-)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
+1.  Legen Sie einen Datenhaltepunkt bei 0x00408000 fest. Weitere Informationen finden Sie unter [Set a data change breakpoint (native C++ only) (Festlegen eines Haltepunkts für Datenänderungen (nur nativer C++-Code))](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
   
-2.  Wenn der Haltepunkt erreicht wird, verwenden Sie die **Arbeitsspeicher** Fenster zum Anzeigen des Speichers Inhalt beginnend mit 0 x 00408000 fest. Weitere Informationen finden Sie unter [Fenster "Arbeitsspeicher"](../debugger/memory-windows.md).  
+2.  Zeigen Sie den Speicherinhalt bei Erreichen eines Haltepunkts im Fenster **Speicher** ab Adresse 0x00408000 an. Weitere Informationen finden Sie unter [Arbeitsspeicher Windows](../debugger/memory-windows.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

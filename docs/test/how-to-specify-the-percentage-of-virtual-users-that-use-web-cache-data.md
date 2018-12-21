@@ -1,5 +1,5 @@
 ---
-title: Angeben des Prozentanteils virtueller Benutzer, die Webcachedaten für Auslastungstests in Visual Studio verwenden
+title: Angeben des Prozentanteils virtueller Benutzer, die Webcachedaten für Auslastungstests verwenden
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895573"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060238"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Vorgehensweise: Angeben des Prozentsatzes virtueller Benutzer, die auf Webcachedaten zugreifen
 
@@ -51,7 +51,7 @@ Wenn Sie einen Auslastungstest für eine Website ausführen, die eine erhebliche
 ## <a name="see-also"></a>Siehe auch
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
+- [Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)
 - [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md)

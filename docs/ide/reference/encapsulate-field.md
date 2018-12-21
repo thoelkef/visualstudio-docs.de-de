@@ -1,5 +1,5 @@
 ---
-title: Refactoring eines Felds in eine Eigenschaft in Visual Studio
+title: Refactoring eines Felds in eine Eigenschaft
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942919"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049930"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring des Kapselns eines Felds
 
@@ -29,9 +29,9 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Sie können ein Feld in eine Eigenschaft umwandeln und alle Verwendungen dieses Felds auf die neu erstellte Eigenschaft aktualisieren.
+**Beschreibung:** Sie können ein Feld in eine Eigenschaft umwandeln und alle Verwendungen dieses Felds auf die neu erstellte Eigenschaft aktualisieren.
 
-**Hintergrund**: Sie möchten ein Feld in eine Eigenschaft verschieben und alle Verweise auf dieses Feld aktualisieren.
+**Hintergrund:** Sie möchten ein Feld in eine Eigenschaft verschieben und alle Verweise auf dieses Feld aktualisieren.
 
 **Vorteile**: Sie möchten anderen Klassen Zugriff auf ein Feld gewähren, die Klassen sollen aber nicht direkt zugreifen können.  Indem Sie das Feld mit einer Eigenschaft umschließen, können Sie z.B. Code schreiben, um den Wert zu überprüfen, der zugewiesen wird.
 
@@ -56,7 +56,7 @@ Dieses Refactoring gilt für:
       - Wählen Sie **Bearbeiten > Umgestalten > Feld kapseln** aus.
       - Klicken Sie mit der rechten Maustaste auf den Code, wählen Sie das Menü **Schnellaktionen und Refactorings** aus, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
 
-   Auswahl | Beschreibung 
+   Auswahl | Beschreibung
    --------- | -----------
    **Feld kapseln (und Eigenschaft verwenden)** | Kapselt das Feld mit einer Eigenschaft und aktualisiert alle Verwendungen des Felds so, dass die generierte Eigenschaft verwendet wird.
    **Feld kapseln (Feld jedoch weiterhin verwenden)** | Kapselt das Feld mit einer Eigenschaft, lässt aber alle Verwendungen des Felds unverändert.

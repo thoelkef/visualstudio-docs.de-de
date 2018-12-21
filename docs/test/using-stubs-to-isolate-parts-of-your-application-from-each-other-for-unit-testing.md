@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Stubs, um für Unittests in Visual Studio Teile der Anwendung zu isolieren
+title: Verwenden von Stubs, um Teile der Anwendung für Unittests zu isolieren
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382567"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065531"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 
@@ -396,7 +396,7 @@ Ruft der Code `GetValue<T>` mit einer anderen Instanziierung auf, würde der Stu
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs von virtuellen Klassen
 
-In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt. Zum Beispiel:
+In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt. Beispiel:
 
 ```csharp
 // Base class in application under test
